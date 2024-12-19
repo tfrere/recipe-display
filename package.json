@@ -1,0 +1,48 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^6.2.1",
+    "@mui/material": "^6.2.1",
+    "@mui/x-date-pickers": "^7.23.2",
+    "@visx/visx": "^3.12.0",
+    "d3": "^7.8.5",
+    "d3-array": "^3.2.4",
+    "d3-time-format": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "react": "^18.2.0",
+    "react-chrono": "^2.3.1",
+    "react-dom": "^18.2.0",
+    "react-virtualized": "^9.22.5",
+    "react-window": "^1.8.11",
+    "react-window-infinite-loader": "^1.0.9",
+    "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^6.0.3"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
