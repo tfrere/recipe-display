@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recipe Schema",
+  "description": "Schema for recipe files",
+  "type": "object",
+  "required": ["metadata", "ingredients", "tools", "subRecipes"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "servings",
+        "difficulty",
+        "totalTime"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Titre de la recette"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description générale de la recette"
+        },
+        "servings": {
+          "type": "string",
+          "description": "Nombre de portions"
+        },
+        "difficulty": {
+          "type": "string",
+          "description": "Niveau de difficulté"
+        },
+        "totalTime": {
+          "type": "string",
+          "description": "Temps total de préparation"
+        },
+        "details": {
+          "type": "object",
+          "description": "Détails additionnels sur la recette",
+          "properties": {
+            "preparationTime": {
+              "type": "string",
+              "description": "Temps de préparation"
+            },
+            "cookingTime": {
+              "type": "string",
+              "description": "Temps de cuisson"
+            }
+          }
+        }
+      }
+    },
+    "ingredients": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "type": "object",
+          "required": ["name", "unit", "category"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Nom de l'ingrédient"
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unité de mesure"
+            },
+            "category": {
+              "type": "string",
+              "description": "Catégorie de l'ingrédient"
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "type": "object",
+          "required": ["name", "type"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Nom de l'ustensile"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type d'ustensile (cuisson, préparation, etc.)"
+            }
+          }
+        }
+      }
+    },
+    "subRecipes": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "type": "object",
+          "required": ["title", "steps"],
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Titre de la sous-recette"
+            },
+            "warning": {
+              "type": "string",
+              "description": "Avertissement ou note importante"
+            },
+            "ingredients": {
+              "type": "object",
+              "patternProperties": {
+                "^.*$": {
+                  "type": "object",
+                  "required": ["amount"],
+                  "properties": {
+                    "amount": {
+                      "type": "number",
+                      "description": "Quantité nécessaire"
+                    }
+                  }
+                }
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "action", "output"],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Identifiant unique de l'étape"
+                  },
+                  "action": {
+                    "type": "string",
+                    "description": "Description de l'action à effectuer"
+                  },
+                  "time": {
+                    "type": "string",
+                    "description": "Temps nécessaire pour cette étape"
+                  },
+                  "tools": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Liste des ustensiles nécessaires"
+                  },
+                  "inputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["type", "ref"],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": ["ingredient", "state"],
+                          "description": "Type d'entrée (ingrédient ou état)"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "Référence à l'ingrédient ou à l'état"
+                        }
+                      }
+                    }
+                  },
+                  "output": {
+                    "type": "object",
+                    "required": ["state", "description"],
+                    "properties": {
+                      "state": {
+                        "type": "string",
+                        "description": "État résultant de l'étape"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Description du résultat attendu"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

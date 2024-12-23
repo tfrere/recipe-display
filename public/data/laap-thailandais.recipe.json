@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "title": "Laap Thailandais aux Choux",
+    "description": "Une version végétarienne du célèbre laap thaïlandais, préparée avec du seitan et accompagnée de choux. Un plat parfumé aux herbes et épices traditionnelles thaïlandaises.",
+    "servings": "4 personnes",
+    "difficulty": "hard",
+    "totalTime": "3h30",
+    "details": {
+      "preparationTime": "1h30",
+      "cookingTime": "2h"
+    }
+  },
+  "ingredients": {
+    "seitan": {
+      "name": "Seitan",
+      "unit": "g",
+      "category": "protéine"
+    },
+    "combawa": {
+      "name": "Feuilles de citron combawa",
+      "unit": "feuille",
+      "category": "aromate"
+    },
+    "citronnelle": {
+      "name": "Citronnelle",
+      "unit": "bâton",
+      "category": "aromate"
+    },
+    "menthe": {
+      "name": "Menthe fraîche",
+      "unit": "poignée",
+      "category": "herbe"
+    },
+    "coriandre": {
+      "name": "Coriandre",
+      "unit": "botte",
+      "category": "herbe"
+    },
+    "galanga": {
+      "name": "Racine de galanga",
+      "unit": "cm",
+      "category": "aromate"
+    },
+    "miso-lentille": {
+      "name": "Miso de lentille",
+      "unit": "c.à.s",
+      "category": "condiment"
+    },
+    "ail": {
+      "name": "Ail",
+      "unit": "gousse",
+      "category": "aromate"
+    },
+    "piment": {
+      "name": "Piment rouge",
+      "unit": "pièce",
+      "category": "épice"
+    },
+    "riz-gluant": {
+      "name": "Riz gluant",
+      "unit": "c.à.s",
+      "category": "céréale"
+    },
+    "sucre": {
+      "name": "Sucre",
+      "unit": "g",
+      "category": "sucre"
+    },
+    "tamari": {
+      "name": "Tamari strong",
+      "unit": "cl",
+      "category": "condiment"
+    },
+    "huile-neutre": {
+      "name": "Huile neutre",
+      "unit": "cl",
+      "category": "huile"
+    },
+    "citron-vert": {
+      "name": "Citron vert",
+      "unit": "pièce",
+      "category": "agrume"
+    },
+    "fleur-sel": {
+      "name": "Fleur de sel",
+      "unit": "pincée",
+      "category": "assaisonnement"
+    },
+    "chou-vert": {
+      "name": "Chou vert frisé",
+      "unit": "pièce",
+      "category": "légume"
+    },
+    "vbeur": {
+      "name": "VBeur",
+      "unit": "c.à.s",
+      "category": "matière-grasse"
+    },
+    "bouillon": {
+      "name": "Bouillon de légumes",
+      "unit": "cl",
+      "category": "liquide"
+    },
+    "vin-rouge": {
+      "name": "Vin rouge",
+      "unit": "cl",
+      "category": "liquide"
+    },
+    "poivre-long": {
+      "name": "Poivre long",
+      "unit": "pièce",
+      "category": "épice"
+    },
+    "crosnes": {
+      "name": "Crosnes",
+      "unit": "g",
+      "category": "légume"
+    },
+    "huile-noisette": {
+      "name": "Huile de noisette",
+      "unit": "cl",
+      "category": "huile"
+    },
+    "epinards": {
+      "name": "Épinards",
+      "unit": "g",
+      "category": "légume"
+    },
+    "liveche": {
+      "name": "Livèche",
+      "unit": "poignée",
+      "category": "herbe"
+    },
+    "echalotes": {
+      "name": "Échalotes",
+      "unit": "pièce",
+      "category": "aromate"
+    },
+    "ail-noir": {
+      "name": "Ail noir",
+      "unit": "gousse",
+      "category": "aromate"
+    },
+    "miso-pois-chiche": {
+      "name": "Miso de pois chiche",
+      "unit": "c.à.c",
+      "category": "condiment"
+    },
+    "farine-manioc": {
+      "name": "Farine de manioc",
+      "unit": "g",
+      "category": "farine"
+    },
+    "citron-bouddha": {
+      "name": "Main de Bouddha",
+      "unit": "zeste",
+      "category": "agrume"
+    }
+  },
+  "tools": {
+    "mixeur": {
+      "name": "Mixeur",
+      "type": "électrique"
+    },
+    "poele": {
+      "name": "Poêle",
+      "type": "cuisson"
+    },
+    "casserole": {
+      "name": "Casserole",
+      "type": "cuisson"
+    },
+    "emporte-piece": {
+      "name": "Emporte-pièce rond",
+      "type": "découpe"
+    },
+    "blender": {
+      "name": "Blender",
+      "type": "électrique"
+    },
+    "four": {
+      "name": "Four",
+      "type": "cuisson"
+    },
+    "tapis-cuisson": {
+      "name": "Tapis de cuisson",
+      "type": "cuisson"
+    }
+  },
+  "subRecipes": {
+    "laap": {
+      "title": "Laap Thailandais",
+      "ingredients": {
+        "seitan": { "amount": 500 },
+        "combawa": { "amount": 10 },
+        "citronnelle": { "amount": 3 },
+        "menthe": { "amount": 1 },
+        "coriandre": { "amount": 0.5 },
+        "galanga": { "amount": 3 },
+        "miso-lentille": { "amount": 1 },
+        "ail": { "amount": 2 },
+        "piment": { "amount": 1 },
+        "riz-gluant": { "amount": 2 },
+        "sucre": { "amount": 2 },
+        "tamari": { "amount": 5 },
+        "huile-neutre": { "amount": 3 },
+        "citron-vert": { "amount": 2 }
+      },
+      "steps": [
+        {
+          "id": "aromatics-1",
+          "action": "Hacher très finement tous les aromates",
+          "time": "10 min",
+          "tools": ["couteau"],
+          "inputs": [
+            { "type": "ingredient", "ref": "citronnelle" },
+            { "type": "ingredient", "ref": "galanga" },
+            { "type": "ingredient", "ref": "combawa" },
+            { "type": "ingredient", "ref": "ail" },
+            { "type": "ingredient", "ref": "piment" },
+            { "type": "ingredient", "ref": "coriandre" },
+            { "type": "ingredient", "ref": "menthe" }
+          ],
+          "output": {
+            "state": "aromatics-haches",
+            "description": "Mélange d'aromates hachés"
+          }
+        },
+        {
+          "id": "seitan-1",
+          "action": "Hacher finement le seitan",
+          "time": "5 min",
+          "tools": ["mixeur"],
+          "inputs": [{ "type": "ingredient", "ref": "seitan" }],
+          "output": {
+            "state": "seitan-hache",
+            "description": "Seitan finement haché"
+          }
+        },
+        {
+          "id": "riz-1",
+          "action": "Griller le riz gluant et le réduire en poudre",
+          "time": "10 min",
+          "tools": ["poele", "mixeur"],
+          "inputs": [{ "type": "ingredient", "ref": "riz-gluant" }],
+          "output": {
+            "state": "poudre-riz",
+            "description": "Poudre de riz grillé"
+          }
+        },
+        {
+          "id": "final-laap",
+          "action": "Mélanger tous les ingrédients",
+          "time": "5 min",
+          "tools": ["saladier"],
+          "inputs": [
+            { "type": "state", "ref": "seitan-hache" },
+            { "type": "state", "ref": "aromatics-haches" },
+            { "type": "state", "ref": "poudre-riz" },
+            { "type": "ingredient", "ref": "tamari" },
+            { "type": "ingredient", "ref": "huile-neutre" },
+            { "type": "ingredient", "ref": "citron-vert" },
+            { "type": "ingredient", "ref": "sucre" }
+          ],
+          "output": {
+            "state": "laap-final",
+            "description": "Laap thailandais assaisonné"
+          }
+        }
+      ]
+    },
+    "chou-farci": {
+      "title": "Choux farcis au laap",
+      "ingredients": {
+        "chou-vert": { "amount": 1 },
+        "vbeur": { "amount": 2 },
+        "bouillon": { "amount": 20 }
+      },
+      "steps": [
+        {
+          "id": "chou-1",
+          "action": "Blanchir les feuilles de chou",
+          "time": "5 min",
+          "tools": ["casserole"],
+          "inputs": [{ "type": "ingredient", "ref": "chou-vert" }],
+          "output": {
+            "state": "feuilles-blanchies",
+            "description": "Feuilles de chou blanchies"
+          }
+        },
+        {
+          "id": "chou-2",
+          "action": "Découper des disques et former les boules farcies",
+          "time": "20 min",
+          "tools": ["emporte-piece"],
+          "inputs": [
+            { "type": "state", "ref": "feuilles-blanchies" },
+            { "type": "subRecipe", "ref": "laap/laap-final" }
+          ],
+          "output": {
+            "state": "choux-crus",
+            "description": "Choux farcis crus"
+          }
+        },
+        {
+          "id": "chou-3",
+          "action": "Poêler et lustrer les choux au bouillon",
+          "time": "10 min",
+          "temperature": "moyen",
+          "tools": ["poele"],
+          "inputs": [
+            { "type": "state", "ref": "choux-crus" },
+            { "type": "ingredient", "ref": "vbeur" },
+            { "type": "ingredient", "ref": "bouillon" }
+          ],
+          "output": {
+            "state": "choux-lustres",
+            "description": "Choux farcis lustrés et chauds"
+          }
+        }
+      ]
+    },
+    "caramel-vin": {
+      "title": "Caramel de vin rouge",
+      "ingredients": {
+        "sucre": { "amount": 100 },
+        "vin-rouge": { "amount": 50 },
+        "poivre-long": { "amount": 2 }
+      },
+      "steps": [
+        {
+          "id": "caramel-1",
+          "action": "Réaliser un caramel à sec",
+          "time": "5 min",
+          "tools": ["casserole"],
+          "inputs": [{ "type": "ingredient", "ref": "sucre" }],
+          "output": {
+            "state": "caramel-sec",
+            "description": "Caramel ambré"
+          }
+        },
+        {
+          "id": "caramel-2",
+          "action": "Déglacer au vin et réduire",
+          "time": "15 min",
+          "tools": ["casserole"],
+          "inputs": [
+            { "type": "state", "ref": "caramel-sec" },
+            { "type": "ingredient", "ref": "vin-rouge" },
+            { "type": "ingredient", "ref": "poivre-long" }
+          ],
+          "output": {
+            "state": "reduction-vin",
+            "description": "Réduction de vin caramélisée"
+          }
+        }
+      ]
+    },
+    "crosnes": {
+      "title": "Crosnes poêlés",
+      "ingredients": {
+        "crosnes": { "amount": 400 },
+        "sucre": { "amount": 1 },
+        "huile-noisette": { "amount": 2 }
+      },
+      "steps": [
+        {
+          "id": "crosnes-1",
+          "action": "Cuire les crosnes à la vapeur",
+          "time": "10 min",
+          "tools": ["casserole"],
+          "inputs": [{ "type": "ingredient", "ref": "crosnes" }],
+          "output": {
+            "state": "crosnes-vapeur",
+            "description": "Crosnes légèrement croquants"
+          }
+        },
+        {
+          "id": "crosnes-2",
+          "action": "Poêler et caraméliser les crosnes",
+          "time": "8 min",
+          "tools": ["poele"],
+          "inputs": [
+            { "type": "state", "ref": "crosnes-vapeur" },
+            { "type": "ingredient", "ref": "sucre" },
+            { "type": "ingredient", "ref": "huile-noisette" }
+          ],
+          "output": {
+            "state": "crosnes-dores",
+            "description": "Crosnes dorés à l'huile de noisette"
+          }
+        }
+      ]
+    },
+    "creme-epinards": {
+      "title": "Crème d'épinards à la livèche",
+      "ingredients": {
+        "epinards": { "amount": 800 },
+        "liveche": { "amount": 1 },
+        "echalotes": { "amount": 2 },
+        "ail-noir": { "amount": 5 },
+        "miso-pois-chiche": { "amount": 1 },
+        "huile-neutre": { "amount": 5 },
+        "vbeur": { "amount": 1 }
+      },
+      "steps": [
+        {
+          "id": "epinards-1",
+          "action": "Cuire les épinards et la livèche",
+          "time": "3 min",
+          "tools": ["casserole"],
+          "inputs": [
+            { "type": "ingredient", "ref": "epinards" },
+            { "type": "ingredient", "ref": "liveche" }
+          ],
+          "output": {
+            "state": "epinards-cuits",
+            "description": "Épinards et livèche cuits et refroidis"
+          }
+        },
+        {
+          "id": "echalotes-1",
+          "action": "Faire revenir les échalotes",
+          "time": "5 min",
+          "tools": ["poele"],
+          "inputs": [
+            { "type": "ingredient", "ref": "echalotes" },
+            { "type": "ingredient", "ref": "vbeur" }
+          ],
+          "output": {
+            "state": "echalotes-fondues",
+            "description": "Échalotes translucides"
+          }
+        },
+        {
+          "id": "creme-1",
+          "action": "Mixer tous les ingrédients",
+          "time": "5 min",
+          "tools": ["blender"],
+          "inputs": [
+            { "type": "state", "ref": "epinards-cuits" },
+            { "type": "state", "ref": "echalotes-fondues" },
+            { "type": "ingredient", "ref": "ail-noir" },
+            { "type": "ingredient", "ref": "miso-pois-chiche" },
+            { "type": "ingredient", "ref": "huile-neutre" }
+          ],
+          "output": {
+            "state": "creme-epinards",
+            "description": "Crème d'épinards onctueuse"
+          }
+        }
+      ]
+    },
+    "tuile-manioc": {
+      "title": "Tuile de manioc",
+      "ingredients": {
+        "farine-manioc": { "amount": 100 },
+        "citron-bouddha": { "amount": 0.25 }
+      },
+      "steps": [
+        {
+          "id": "pate-1",
+          "action": "Préparer la pâte de manioc",
+          "time": "10 min",
+          "tools": ["casserole"],
+          "inputs": [{ "type": "ingredient", "ref": "farine-manioc" }],
+          "output": {
+            "state": "pate-manioc",
+            "description": "Pâte de manioc translucide"
+          }
+        },
+        {
+          "id": "tuile-1",
+          "action": "Étaler et cuire la tuile",
+          "time": "1h",
+          "temperature": "80°C",
+          "tools": ["four", "tapis-cuisson"],
+          "inputs": [
+            { "type": "state", "ref": "pate-manioc" },
+            { "type": "ingredient", "ref": "citron-bouddha" }
+          ],
+          "output": {
+            "state": "tuile-finale",
+            "description": "Tuile de manioc croustillante"
+          }
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "title": "Dressage final",
+    "description": "Assemblage harmonieux des différentes préparations",
+    "steps": [
+      {
+        "id": "dressage-1",
+        "action": "Dresser l'assiette avec tous les éléments",
+        "time": "5 min",
+        "tools": ["cuillere"],
+        "inputs": [
+          { "type": "subRecipe", "ref": "creme-epinards/creme-epinards" },
+          { "type": "subRecipe", "ref": "chou-farci/choux-lustres" },
+          { "type": "subRecipe", "ref": "crosnes/crosnes-dores" },
+          { "type": "subRecipe", "ref": "caramel-vin/reduction-vin" },
+          { "type": "subRecipe", "ref": "tuile-manioc/tuile-finale" }
+        ],
+        "output": {
+          "state": "assiette-dressee",
+          "description": "Assiette finale dressée"
+        }
+      }
+    ]
+  }
+}
