@@ -1,14 +1,11 @@
 {
   "metadata": {
-    "title": "Laap Thailandais aux Choux",
-    "description": "Une version végétarienne du célèbre laap thaïlandais, préparée avec du seitan et accompagnée de choux. Un plat parfumé aux herbes et épices traditionnelles thaïlandaises.",
+    "title": "Laap Thailandais",
+    "description": "Un plat traditionnel thaïlandais à base de poulet haché, d'herbes fraîches et d'épices.",
     "servings": "4 personnes",
-    "difficulty": "hard",
-    "totalTime": "3h30",
-    "details": {
-      "preparationTime": "1h30",
-      "cookingTime": "2h"
-    }
+    "difficulty": "medium",
+    "totalTime": "45min",
+    "image": "laap.jpg"
   },
   "ingredients": {
     "seitan": {
@@ -185,6 +182,18 @@
     "tapis-cuisson": {
       "name": "Tapis de cuisson",
       "type": "cuisson"
+    },
+    "couteau": {
+      "name": "Couteau",
+      "type": "ustensile"
+    },
+    "saladier": {
+      "name": "Saladier",
+      "type": "preparation"
+    },
+    "cuillere": {
+      "name": "Cuillère",
+      "type": "ustensile"
     }
   },
   "subRecipes": {
@@ -209,6 +218,7 @@
       "steps": [
         {
           "id": "aromatics-1",
+          "type": "preparation",
           "action": "Hacher très finement tous les aromates",
           "time": "10 min",
           "tools": ["couteau"],
@@ -228,6 +238,7 @@
         },
         {
           "id": "seitan-1",
+          "type": "preparation",
           "action": "Hacher finement le seitan",
           "time": "5 min",
           "tools": ["mixeur"],
@@ -239,6 +250,7 @@
         },
         {
           "id": "riz-1",
+          "type": "cooking",
           "action": "Griller le riz gluant et le réduire en poudre",
           "time": "10 min",
           "tools": ["poele", "mixeur"],
@@ -250,6 +262,7 @@
         },
         {
           "id": "final-laap",
+          "type": "assembly",
           "action": "Mélanger tous les ingrédients",
           "time": "5 min",
           "tools": ["saladier"],
@@ -279,6 +292,7 @@
       "steps": [
         {
           "id": "chou-1",
+          "type": "cooking",
           "action": "Blanchir les feuilles de chou",
           "time": "5 min",
           "tools": ["casserole"],
@@ -290,6 +304,7 @@
         },
         {
           "id": "chou-2",
+          "type": "preparation",
           "action": "Découper des disques et former les boules farcies",
           "time": "20 min",
           "tools": ["emporte-piece"],
@@ -304,6 +319,7 @@
         },
         {
           "id": "chou-3",
+          "type": "cooking",
           "action": "Poêler et lustrer les choux au bouillon",
           "time": "10 min",
           "temperature": "moyen",
@@ -330,6 +346,7 @@
       "steps": [
         {
           "id": "caramel-1",
+          "type": "cooking",
           "action": "Réaliser un caramel à sec",
           "time": "5 min",
           "tools": ["casserole"],
@@ -341,6 +358,7 @@
         },
         {
           "id": "caramel-2",
+          "type": "cooking",
           "action": "Déglacer au vin et réduire",
           "time": "15 min",
           "tools": ["casserole"],
@@ -366,6 +384,7 @@
       "steps": [
         {
           "id": "crosnes-1",
+          "type": "cooking",
           "action": "Cuire les crosnes à la vapeur",
           "time": "10 min",
           "tools": ["casserole"],
@@ -377,6 +396,7 @@
         },
         {
           "id": "crosnes-2",
+          "type": "cooking",
           "action": "Poêler et caraméliser les crosnes",
           "time": "8 min",
           "tools": ["poele"],
@@ -406,6 +426,7 @@
       "steps": [
         {
           "id": "epinards-1",
+          "type": "cooking",
           "action": "Cuire les épinards et la livèche",
           "time": "3 min",
           "tools": ["casserole"],
@@ -420,6 +441,7 @@
         },
         {
           "id": "echalotes-1",
+          "type": "cooking",
           "action": "Faire revenir les échalotes",
           "time": "5 min",
           "tools": ["poele"],
@@ -434,6 +456,7 @@
         },
         {
           "id": "creme-1",
+          "type": "preparation",
           "action": "Mixer tous les ingrédients",
           "time": "5 min",
           "tools": ["blender"],
@@ -460,6 +483,7 @@
       "steps": [
         {
           "id": "pate-1",
+          "type": "preparation",
           "action": "Préparer la pâte de manioc",
           "time": "10 min",
           "tools": ["casserole"],
@@ -471,6 +495,7 @@
         },
         {
           "id": "tuile-1",
+          "type": "cooking",
           "action": "Étaler et cuire la tuile",
           "time": "1h",
           "temperature": "80°C",
@@ -493,6 +518,7 @@
     "steps": [
       {
         "id": "dressage-1",
+        "type": "assembly",
         "action": "Dresser l'assiette avec tous les éléments",
         "time": "5 min",
         "tools": ["cuillere"],

@@ -1,8 +1,8 @@
 import React from "react";
 import { Handle, Position } from "reactflow";
-import { Box, Typography, Chip, Checkbox } from "@mui/material";
-import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
+import { Box, Typography, Checkbox } from "@mui/material";
 import { useRecipe } from "../../../contexts/RecipeContext";
+import RecipeChip, { CHIP_TYPES } from "../../common/RecipeChip";
 
 const getNodeStyle = (type, isCompleted, isUnused = false) => {
   const baseStyle = {
@@ -63,6 +63,7 @@ const getNodeStyle = (type, isCompleted, isUnused = false) => {
 };
 
 export const CustomNode = ({ data }) => {
+  const { formatMinutesToTime } = useRecipe();
   const {
     label,
     type,
@@ -75,6 +76,9 @@ export const CustomNode = ({ data }) => {
     isUnused,
   } = data;
   const style = getNodeStyle(type, isCompleted, isUnused);
+
+  // Convertir le temps en minutes si nécessaire
+  const timeInMinutes = time ? parseInt(time.match(/\d+/)[0]) : 0;
 
   return (
     <div style={style}>
@@ -160,25 +164,30 @@ export const CustomNode = ({ data }) => {
 
       {type === "action" && (
         <>
-          {time && (
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 0.5,
-                color: isCompleted ? "#9e9e9e" : "#666",
-              }}
-            >
-              <TimerOutlinedIcon
-                sx={{
-                  fontSize: 18,
-                  color: isCompleted ? "#9e9e9e" : "#666",
-                }}
-              />
-              <Typography variant="body2" color="inherit">
-                {time}
-              </Typography>
-            </Box>
+          <RecipeChip
+            label={
+              data.type === "cooking"
+                ? "Cuisson"
+                : data.type === "preparation"
+                ? "Préparation"
+                : "Assemblage"
+            }
+            type={
+              data.type === "cooking"
+                ? CHIP_TYPES.ACTION_COOKING
+                : data.type === "preparation"
+                ? CHIP_TYPES.ACTION_PREPARATION
+                : CHIP_TYPES.ACTION_ASSEMBLY
+            }
+            isUnused={isCompleted}
+          />
+
+          {timeInMinutes > 0 && (
+            <RecipeChip
+              label={formatMinutesToTime(timeInMinutes)}
+              type={CHIP_TYPES.STATE}
+              isUnused={isCompleted}
+            />
           )}
 
           {tools && tools.length > 0 && (
@@ -193,20 +202,11 @@ export const CustomNode = ({ data }) => {
               }}
             >
               {tools.map((tool, index) => (
-                <Chip
+                <RecipeChip
                   key={index}
                   label={tool}
-                  size="small"
-                  sx={{
-                    backgroundColor: isCompleted
-                      ? "rgba(189, 189, 189, 0.1)"
-                      : "rgba(255, 183, 77, 0.1)",
-                    borderColor: isCompleted ? "#bdbdbd" : "#ffb74d",
-                    color: isCompleted ? "#9e9e9e" : "#666",
-                    fontSize: "12px",
-                    height: "20px",
-                  }}
-                  variant="outlined"
+                  type={CHIP_TYPES.TOOL}
+                  isUnused={isCompleted}
                 />
               ))}
             </Box>

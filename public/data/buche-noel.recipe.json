@@ -4,7 +4,8 @@
     "description": "Une bûche de Noël traditionnelle avec une génoise moelleuse, une crème pâtissière aux noisettes et une crème italienne au chocolat",
     "servings": "8-10 personnes",
     "difficulty": "hard",
-    "totalTime": "3h"
+    "totalTime": "3h",
+    "image": "buche.jpg"
   },
   "ingredients": {
     "chocolat-noir": {
@@ -131,6 +132,7 @@
       "steps": [
         {
           "id": "choc-1",
+          "type": "cooking",
           "action": "Faire fondre le chocolat au bain-marie jusqu'à obtention d'une crème épaisse",
           "time": "10 min",
           "tools": ["bain-marie"],
@@ -142,6 +144,7 @@
         },
         {
           "id": "sirop-1",
+          "type": "cooking",
           "action": "Faire cuire le sucre avec très peu d'eau jusqu'à ce que le sirop fasse le fil",
           "time": "5 min",
           "tools": ["casserole"],
@@ -179,6 +182,7 @@
         },
         {
           "id": "final-1",
+          "type": "preparation",
           "action": "Incorporer le beurre en morceaux et travailler à froid jusqu'à épaississement",
           "time": "15 min",
           "tools": ["fouet"],
@@ -205,6 +209,7 @@
       "steps": [
         {
           "id": "sep-1",
+          "type": "preparation",
           "action": "Séparer les blancs des jaunes d'œufs",
           "time": "2 min",
           "tools": ["saladier"],
@@ -216,6 +221,7 @@
         },
         {
           "id": "jaunes-2",
+          "type": "preparation",
           "action": "Battre le sucre avec les jaunes",
           "time": "5 min",
           "tools": ["fouet"],
@@ -230,6 +236,7 @@
         },
         {
           "id": "farine-1",
+          "type": "preparation",
           "action": "Tamiser ensemble la farine et la maïzena",
           "time": "2 min",
           "inputs": [
@@ -243,6 +250,7 @@
         },
         {
           "id": "melange-2",
+          "type": "preparation",
           "action": "Incorporer le mélange de farines aux jaunes battus avec le sucre",
           "time": "3 min",
           "tools": ["spatule"],
@@ -258,6 +266,7 @@
         },
         {
           "id": "blancs-1",
+          "type": "preparation",
           "action": "Battre les blancs en neige très ferme",
           "time": "5 min",
           "tools": ["fouet"],
@@ -269,6 +278,7 @@
         },
         {
           "id": "melange-3",
+          "type": "preparation",
           "action": "Incorporer délicatement les blancs à la pâte",
           "time": "3 min",
           "tools": ["spatule"],
@@ -283,6 +293,7 @@
         },
         {
           "id": "cuisson-1",
+          "type": "cooking",
           "action": "Étaler la pâte sur une plaque recouverte de papier sulfurisé et cuire à 210°C",
           "time": "12 min",
           "tools": ["plaque", "papier-sulfurise"],
@@ -294,6 +305,7 @@
         },
         {
           "id": "refroid-1",
+          "type": "preparation",
           "action": "Enrouler la génoise dans un torchon humide et laisser refroidir",
           "time": "30 min",
           "tools": ["torchon"],
@@ -317,6 +329,7 @@
       "steps": [
         {
           "id": "nois-1",
+          "type": "cooking",
           "action": "Faire griller les noisettes puis les hacher finement",
           "time": "5 min",
           "tools": ["poele", "couteau"],
@@ -328,6 +341,7 @@
         },
         {
           "id": "lait-1",
+          "type": "cooking",
           "action": "Faire bouillir le lait avec les noisettes puis filtrer",
           "time": "10 min",
           "tools": ["casserole", "passoire"],
@@ -342,6 +356,7 @@
         },
         {
           "id": "app-1",
+          "type": "preparation",
           "action": "Délayer la farine avec un peu d'eau froide, ajouter les œufs battus et le sucre",
           "time": "5 min",
           "tools": ["fouet"],
@@ -357,6 +372,7 @@
         },
         {
           "id": "cuis-1",
+          "type": "cooking",
           "action": "Mélanger avec le lait et faire bouillir en remuant jusqu'à épaississement",
           "time": "10 min",
           "tools": ["casserole", "fouet"],
@@ -371,6 +387,7 @@
         },
         {
           "id": "refroid-2",
+          "type": "preparation",
           "action": "Laisser refroidir la crème",
           "time": "30 min",
           "inputs": [{ "type": "state", "ref": "creme-patissiere" }],
@@ -386,6 +403,7 @@
       "steps": [
         {
           "id": "ass-1",
+          "type": "assembly",
           "action": "Dérouler la génoise avec le torchon humide",
           "time": "2 min",
           "tools": ["torchon"],
@@ -397,7 +415,8 @@
         },
         {
           "id": "ass-2",
-          "action": "Étaler la crème pâtissière sur toute la surface de la génoise",
+          "type": "assembly",
+          "action": "Étaler la crème pâtissière sur toute la surface",
           "time": "5 min",
           "tools": ["spatule"],
           "inputs": [
@@ -414,7 +433,8 @@
         },
         {
           "id": "ass-3",
-          "action": "Rouler la génoise avec la crème et couper les bords en diagonale",
+          "type": "assembly",
+          "action": "Rouler la bûche en serrant bien",
           "time": "5 min",
           "tools": ["couteau"],
           "inputs": [{ "type": "state", "ref": "genoise-garnie" }],
@@ -425,6 +445,7 @@
         },
         {
           "id": "ass-4",
+          "type": "assembly",
           "action": "Recouvrir entièrement de crème italienne au chocolat",
           "time": "10 min",
           "tools": ["spatule"],
@@ -439,6 +460,7 @@
         },
         {
           "id": "ass-5",
+          "type": "assembly",
           "action": "Strier la surface avec une fourchette pour imiter l'écorce",
           "time": "5 min",
           "tools": ["fourchette"],
@@ -450,6 +472,7 @@
         },
         {
           "id": "ass-6",
+          "type": "assembly",
           "action": "Saupoudrer légèrement de sucre glace",
           "time": "1 min",
           "inputs": [

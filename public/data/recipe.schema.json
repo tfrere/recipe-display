@@ -127,7 +127,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["id", "action", "output"],
+                "required": ["id", "action", "output", "type"],
                 "properties": {
                   "id": {
                     "type": "string",
@@ -140,6 +140,11 @@
                   "time": {
                     "type": "string",
                     "description": "Temps nécessaire pour cette étape"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": ["preparation", "cooking", "assembly"],
+                    "description": "Type d'étape (préparation, cuisson, assemblage)"
                   },
                   "tools": {
                     "type": "array",
@@ -156,12 +161,12 @@
                       "properties": {
                         "type": {
                           "type": "string",
-                          "enum": ["ingredient", "state"],
-                          "description": "Type d'entrée (ingrédient ou état)"
+                          "enum": ["ingredient", "state", "subRecipe"],
+                          "description": "Type d'entrée (ingrédient, état ou sous-recette)"
                         },
                         "ref": {
                           "type": "string",
-                          "description": "Référence à l'ingrédient ou à l'état"
+                          "description": "Référence à l'ingrédient, l'état ou la sous-recette"
                         }
                       }
                     }

@@ -3,21 +3,82 @@ import {
   Box,
   Typography,
   Paper,
-  Chip,
   Stack,
-  alpha,
   Grid,
   Checkbox,
   IconButton,
 } from "@mui/material";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import KitchenIcon from "@mui/icons-material/Kitchen";
-import InputIcon from "@mui/icons-material/Input";
-import OutputIcon from "@mui/icons-material/Output";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { useRecipe } from "../../contexts/RecipeContext";
+import RecipeChip, { CHIP_TYPES } from "../common/RecipeChip";
+
+const highlightMatches = (text, recipe, step) => {
+  if (!text || !recipe) return text;
+
+  // Create arrays of names to match
+  const ingredientNames = step.inputs
+    .filter((input) => input.type === "ingredient")
+    .map((input) => recipe.ingredients[input.ref]?.name)
+    .filter(Boolean);
+
+  const toolNames = (step.tools || [])
+    .map((toolId) => recipe.tools[toolId]?.name)
+    .filter(Boolean);
+
+  const stateNames = [
+    ...step.inputs
+      .filter((input) => input.type === "state")
+      .map((input) => input.ref),
+    step.output ? step.output.description : null,
+  ].filter(Boolean);
+
+  // Combine all terms to match
+  const terms = [...ingredientNames, ...toolNames, ...stateNames]
+    .map((term) => term.toLowerCase().split(/\s+/))
+    .flat()
+    .filter((term) => term.length >= 3);
+
+  // Sort terms by length (longest first) to avoid partial matches
+  terms.sort((a, b) => b.length - a.length);
+
+  // Split the text into segments and create spans for matches
+  let segments = [{ text, isMatch: false }];
+
+  terms.forEach((term) => {
+    segments = segments.flatMap((segment) => {
+      if (segment.isMatch) return [segment];
+
+      // Create a regex that matches the exact term within word boundaries
+      const regex = new RegExp(`(${term})`, "gi");
+      const parts = segment.text.split(regex);
+
+      // Reconstruct the segments with matches
+      return parts.map((part) => ({
+        text: part,
+        isMatch: part.toLowerCase() === term.toLowerCase(),
+      }));
+    });
+  });
+
+  // Return the text with highlighted matches
+  return (
+    <span>
+      {segments.map((segment, index) =>
+        segment.isMatch ? (
+          <span
+            key={index}
+            style={{ fontWeight: "bold", color: "primary.main" }}
+          >
+            {segment.text}
+          </span>
+        ) : (
+          segment.text
+        )
+      )}
+    </span>
+  );
+};
 
 const StepCard = ({
   step,
@@ -26,7 +87,7 @@ const StepCard = ({
   isExpanded,
   onToggleExpand,
 }) => {
-  const { recipe, selectedSubRecipe } = useRecipe();
+  const { recipe, selectedSubRecipe, completedSteps } = useRecipe();
   const subRecipe = recipe.subRecipes[selectedSubRecipe];
 
   const getIngredientInfo = (input) => {
@@ -76,10 +137,9 @@ const StepCard = ({
         overflow: "hidden",
         opacity: isCompleted ? 0.7 : 1,
         transition: "opacity 0.2s",
-        bgcolor: "background.paper",
+        bgcolor: isCompleted ? "grey.50" : "background.paper",
       }}
     >
-      {/* En-tête de l'étape */}
       <Box
         sx={{
           display: "flex",
@@ -96,26 +156,37 @@ const StepCard = ({
           onChange={(e) => onToggleComplete(e.target.checked)}
           sx={{ ml: -1 }}
         />
-        <Typography
-          variant="subtitle1"
-          sx={{
-            fontWeight: 500,
-            textDecoration: isCompleted ? "line-through" : "none",
-            color: isCompleted ? "grey.600" : "grey.900",
-            flex: 1,
-          }}
-        >
-          {step.action}
-        </Typography>
-        {step.time && (
-          <Chip
-            icon={<AccessTimeIcon />}
-            label={step.time}
-            size="small"
-            variant="outlined"
-            sx={{ mr: 1 }}
+        <Box sx={{ flex: 1 }}>
+          <Typography
+            variant="body1"
+            sx={{
+              textDecoration: completedSteps[step.id] ? "line-through" : "none",
+            }}
+          >
+            {highlightMatches(step.action, recipe, step)}
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <RecipeChip
+            label={
+              step.type === "cooking"
+                ? "Cuisson"
+                : step.type === "preparation"
+                ? "Préparation"
+                : "Assemblage"
+            }
+            type={
+              step.type === "cooking"
+                ? CHIP_TYPES.ACTION_COOKING
+                : step.type === "preparation"
+                ? CHIP_TYPES.ACTION_PREPARATION
+                : CHIP_TYPES.ACTION_ASSEMBLY
+            }
           />
-        )}
+          {step.time && (
+            <RecipeChip label={step.time} type={CHIP_TYPES.STATE} />
+          )}
+        </Box>
         <IconButton
           size="small"
           onClick={onToggleExpand}
@@ -147,28 +218,19 @@ const StepCard = ({
                 {step.inputs.map((input, idx) => {
                   const info = getIngredientInfo(input);
                   return (
-                    <Chip
+                    <RecipeChip
                       key={idx}
                       label={
                         info.amount
                           ? `${info.name} (${info.amount})`
                           : info.name
                       }
-                      size="small"
-                      variant="outlined"
-                      color={
-                        info.error
-                          ? "error"
-                          : info.type === "ingredient"
-                          ? "primary"
-                          : "secondary"
+                      type={
+                        info.type === "ingredient"
+                          ? CHIP_TYPES.INGREDIENT
+                          : CHIP_TYPES.STATE
                       }
-                      sx={{
-                        mb: 0.5,
-                        ...(info.error && {
-                          borderStyle: "dashed",
-                        }),
-                      }}
+                      isUnused={info.error}
                     />
                   );
                 })}
@@ -206,13 +268,10 @@ const StepCard = ({
                 sx={{ minHeight: "40px" }}
               >
                 {(step.tools || []).map((toolId) => (
-                  <Chip
+                  <RecipeChip
                     key={toolId}
                     label={recipe.tools[toolId].name}
-                    size="small"
-                    variant="outlined"
-                    color="warning"
-                    sx={{ mb: 0.5 }}
+                    type={CHIP_TYPES.TOOL}
                   />
                 ))}
               </Stack>
@@ -248,15 +307,10 @@ const StepCard = ({
                     alignItems: "center",
                   }}
                 >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "text.primary",
-                      fontWeight: 600,
-                    }}
-                  >
-                    {step.output.description}
-                  </Typography>
+                  <RecipeChip
+                    label={step.output.description}
+                    type={CHIP_TYPES.STATE}
+                  />
                 </Box>
               )}
             </Grid>

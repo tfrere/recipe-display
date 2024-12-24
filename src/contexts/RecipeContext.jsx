@@ -308,6 +308,41 @@ const recipeReducer = (state, action) => {
   }
 };
 
+// Fonctions utilitaires pour la gestion du temps
+const parseTimeToMinutes = (timeStr) => {
+  if (!timeStr) return 0;
+
+  // Format "Xh" ou "XhY"
+  const hourMatch = timeStr.match(/(\d+)h(?:(\d+))?/);
+  if (hourMatch) {
+    const hours = parseInt(hourMatch[1]);
+    const minutes = hourMatch[2] ? parseInt(hourMatch[2]) : 0;
+    return hours * 60 + minutes;
+  }
+
+  // Format "X min"
+  const minuteMatch = timeStr.match(/(\d+)\s*min/);
+  if (minuteMatch) {
+    return parseInt(minuteMatch[1]);
+  }
+
+  return 0;
+};
+
+const formatMinutesToTime = (minutes) => {
+  if (!minutes) return "0 min";
+
+  const hours = Math.floor(minutes / 60);
+  const remainingMinutes = minutes % 60;
+
+  if (hours === 0) {
+    return `${remainingMinutes} min`;
+  }
+
+  // Format hh:mm
+  return `${hours}:${remainingMinutes.toString().padStart(2, "0")}`;
+};
+
 export const RecipeProvider = ({ children }) => {
   const [storedCompletedSteps, setStoredCompletedSteps] = useLocalStorage(
     "recipe-completed-steps",
@@ -415,10 +450,7 @@ export const RecipeProvider = ({ children }) => {
       if (subRecipe.steps) {
         subRecipe.steps.forEach((step) => {
           if (!state.completedSteps[step.id] && step.time) {
-            const match = step.time.match(/(\d+)\s*min/);
-            if (match) {
-              totalTime += parseInt(match[1]);
-            }
+            totalTime += parseTimeToMinutes(step.time);
           }
         });
       }
@@ -426,6 +458,17 @@ export const RecipeProvider = ({ children }) => {
 
     return totalTime;
   }, [state.recipe, state.completedSteps]);
+
+  const getSubRecipeRemainingTime = (subRecipeId) => {
+    if (!state.recipe || !state.recipe.subRecipes[subRecipeId]) return 0;
+    const subRecipe = state.recipe.subRecipes[subRecipeId];
+    return (
+      subRecipe.steps?.reduce((total, step) => {
+        if (!step.time || state.completedSteps[step.id]) return total;
+        return total + parseTimeToMinutes(step.time);
+      }, 0) || 0
+    );
+  };
 
   const value = React.useMemo(
     () => ({
@@ -439,6 +482,8 @@ export const RecipeProvider = ({ children }) => {
       getSubRecipeProgress,
       getTotalProgress,
       getRemainingTime,
+      parseTimeToMinutes,
+      formatMinutesToTime,
       isIngredientUnused: (ingredientId) =>
         state.unusedIngredients[ingredientId],
       isToolUnused: (toolId) => state.unusedTools[toolId],
@@ -450,6 +495,7 @@ export const RecipeProvider = ({ children }) => {
           state.completedSteps,
           state.selectedSubRecipe
         ),
+      getSubRecipeRemainingTime,
     }),
     [
       state,
@@ -460,6 +506,7 @@ export const RecipeProvider = ({ children }) => {
       getSubRecipeProgress,
       getTotalProgress,
       getRemainingTime,
+      getSubRecipeRemainingTime,
     ]
   );
 

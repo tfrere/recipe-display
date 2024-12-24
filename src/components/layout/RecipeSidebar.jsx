@@ -14,34 +14,18 @@ const RecipeSidebar = ({ layout }) => {
     setSelectedSubRecipe,
     getTotalProgress,
     getRemainingTime,
+    parseTimeToMinutes,
+    formatMinutesToTime,
+    getSubRecipeRemainingTime,
   } = useRecipe();
 
   if (!recipe) return null;
 
   const totalProgress = getTotalProgress();
   const remainingTime = getRemainingTime();
-  const totalTimeInMinutes = (() => {
-    const match = recipe.metadata.totalTime.match(/(\d+)h(?:(\d+))?/);
-    if (match) {
-      const hours = parseInt(match[1]);
-      const minutes = match[2] ? parseInt(match[2]) : 0;
-      return hours * 60 + minutes;
-    }
-    return 0;
-  })();
-
-  // Fonction pour formater le temps
-  const formatTime = (minutes) => {
-    if (minutes < 60) {
-      return `${minutes} min`;
-    }
-    const hours = Math.floor(minutes / 60);
-    const remainingMinutes = minutes % 60;
-    if (remainingMinutes === 0) {
-      return `${hours}h`;
-    }
-    return `${hours}h${remainingMinutes}`;
-  };
+  const totalTimeInMinutes = recipe.metadata.totalTime
+    ? parseTimeToMinutes(recipe.metadata.totalTime)
+    : 0;
 
   return (
     <Box
@@ -52,18 +36,49 @@ const RecipeSidebar = ({ layout }) => {
         borderRight: 1,
         borderColor: "divider",
         overflow: "auto",
-        p: layout.spacing,
         bgcolor: "background.paper",
       }}
     >
       <Box
         sx={{
+          height: "225px",
+          width: "100%",
+          bgcolor: "grey.100",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          borderBottom: 1,
+          borderColor: "divider",
+          overflow: "hidden",
+          position: "relative",
+        }}
+      >
+        {recipe?.metadata?.image ? (
+          <img
+            src={`/images/${recipe.metadata.image}`}
+            alt={recipe.metadata.title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        ) : (
+          <Typography variant="body2" color="text.secondary">
+            Image de couverture
+          </Typography>
+        )}
+      </Box>
+
+      <Box
+        sx={{
           display: "flex",
           flexDirection: "column",
           gap: layout.spacing,
+          p: layout.spacing,
         }}
       >
-        <Box sx={{ mb: 3 }}>
+        <Box>
           <Typography
             variant="h4"
             sx={{
@@ -102,7 +117,7 @@ const RecipeSidebar = ({ layout }) => {
                       : 400,
                 }}
               >
-                {formatTime(remainingTime)} restant
+                {formatMinutesToTime(remainingTime)} restant
               </Typography>
             </Box>
 
@@ -169,18 +184,14 @@ const RecipeSidebar = ({ layout }) => {
           </Box>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
             {Object.entries(recipe.subRecipes).map(([id, subRecipe]) => {
-              const totalTime = subRecipe.steps?.reduce((total, step) => {
-                if (!step.time) return total;
-                const match = step.time.match(/(\d+)\s*min/);
-                return total + (match ? parseInt(match[1]) : 0);
-              }, 0);
+              const remainingTime = getSubRecipeRemainingTime(id);
 
               return (
                 <RecipeStageButton
                   key={id}
                   id={id}
                   title={subRecipe.title || id}
-                  time={totalTime}
+                  time={remainingTime}
                   selected={selectedSubRecipe === id}
                   onClick={() => setSelectedSubRecipe(id)}
                 />

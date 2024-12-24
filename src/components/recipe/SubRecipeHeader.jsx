@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Typography, Chip, Grid } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import { useRecipe } from "../../contexts/RecipeContext";
+import RecipeChip, { CHIP_TYPES } from "../common/RecipeChip";
 
 const SubRecipeHeader = () => {
   const { recipe, selectedSubRecipe, isIngredientUnused, isToolUnused } =
@@ -26,7 +27,6 @@ const SubRecipeHeader = () => {
         borderColor: "divider",
       }}
     >
-      {/* Titre */}
       <Box sx={{ p: 3, pb: 0 }}>
         <Typography
           variant="h4"
@@ -40,10 +40,8 @@ const SubRecipeHeader = () => {
         </Typography>
       </Box>
 
-      {/* Listes */}
       <Box sx={{ px: 3, pb: 3 }}>
         <Grid container spacing={3}>
-          {/* Ingrédients */}
           <Grid item xs={6}>
             <Typography
               variant="subtitle2"
@@ -55,28 +53,18 @@ const SubRecipeHeader = () => {
             >
               Ingrédients nécessaires
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mt: 1 }}>
               {Object.entries(subRecipe.ingredients || {}).map(
                 ([id, details]) => {
                   const ingredient = recipe.ingredients[id];
                   const isUnused = isIngredientUnused(id);
                   if (!ingredient) return null;
                   return (
-                    <Chip
+                    <RecipeChip
                       key={id}
                       label={`${ingredient.name} (${details.amount}${ingredient.unit})`}
-                      size="small"
-                      variant="outlined"
-                      color={isUnused ? "default" : "primary"}
-                      sx={{
-                        mb: 0.5,
-                        opacity: isUnused ? 0.6 : 1,
-                        "& .MuiChip-label": {
-                          px: 2,
-                          py: 2,
-                        },
-                        borderRadius: "6px",
-                      }}
+                      type={CHIP_TYPES.INGREDIENT}
+                      isUnused={isUnused}
                     />
                   );
                 }
@@ -84,7 +72,6 @@ const SubRecipeHeader = () => {
             </Box>
           </Grid>
 
-          {/* Ustensiles */}
           <Grid item xs={6}>
             <Typography
               variant="subtitle2"
@@ -96,27 +83,17 @@ const SubRecipeHeader = () => {
             >
               Ustensiles nécessaires
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mt: 1 }}>
               {Array.from(uniqueTools).map((toolId) => {
                 const tool = recipe.tools[toolId];
                 const isUnused = isToolUnused(toolId);
                 if (!tool) return null;
                 return (
-                  <Chip
+                  <RecipeChip
                     key={toolId}
                     label={tool.name}
-                    size="small"
-                    variant="outlined"
-                    color={isUnused ? "default" : "warning"}
-                    sx={{
-                      mb: 0.5,
-                      opacity: isUnused ? 0.6 : 1,
-                      "& .MuiChip-label": {
-                        px: 2,
-                        py: 2,
-                      },
-                      borderRadius: "6px",
-                    }}
+                    type={CHIP_TYPES.TOOL}
+                    isUnused={isUnused}
                   />
                 );
               })}

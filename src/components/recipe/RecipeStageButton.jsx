@@ -8,6 +8,7 @@ const RecipeStageButton = ({ id, title, time, selected, onClick }) => {
     completedSubRecipes,
     toggleSubRecipeCompletion,
     getSubRecipeProgress,
+    formatMinutesToTime,
   } = useRecipe();
   const isCompleted = completedSubRecipes[id] || false;
   const progress = getSubRecipeProgress(id);
@@ -81,7 +82,7 @@ const RecipeStageButton = ({ id, title, time, selected, onClick }) => {
           }}
         >
           <AccessTimeIcon fontSize="small" />
-          <Typography variant="body2">{time} min</Typography>
+          <Typography variant="body2">{formatMinutesToTime(time)}</Typography>
         </Box>
       )}
     </Box>

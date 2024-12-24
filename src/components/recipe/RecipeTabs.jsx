@@ -10,7 +10,6 @@ const RecipeTabs = ({ activeTab, onTabChange }) => {
         aria-label="recipe visualization tabs"
       >
         <Tab label="Étapes" value="steps" />
-        <Tab label="Timeline" value="timeline" />
         <Tab label="Graph" value="graph" />
       </Tabs>
     </Box>

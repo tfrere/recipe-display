@@ -1,37 +1,34 @@
 {
   "name": "recipe-display",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.2.1",
-    "@mui/lab": "^6.0.0-beta.20",
-    "@mui/material": "^6.2.1",
-    "@types/dagre": "^0.7.52",
-    "d3": "^7.9.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "d3": "^7.8.5",
     "dagre": "^0.8.5",
-    "interactjs": "^1.10.27",
-    "lucide-react": "^0.468.0",
-    "moment": "^2.30.1",
     "react": "^18.2.0",
-    "react-calendar-timeline": "^0.30.0-beta.2",
     "react-dom": "^18.2.0",
-    "reactflow": "^11.11.4",
-    "vis-data": "^7.1.9",
-    "vis-timeline": "^7.7.3"
+    "react-router-dom": "^7.1.1",
+    "reactflow": "^11.10.4"
   },
   "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
-    "gh-pages": "^6.1.1",
-    "vite": "^5.1.0"
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.1.4"
   }
 }
