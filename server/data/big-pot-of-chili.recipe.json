@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "Big Pot of Chili",
+    "description": "Simple, hearty, and warm: A big pot of chili makes for a satisfying dinner any night of the week. Enjoy this on its own or serve it as a plant-based entrée at a casual party. You can also add toppings like guacamole, diced onions, and roasted corn. This will become a staple in your healthy cooking repertoire.",
+    "servings": 12,
+    "difficulty": "easy",
+    "totalTime": "50min",
+    "image": "big-pot-of-chili.jpg"
+  },
+  "ingredients": {
+    "onions": {
+      "name": "Oignons moyens",
+      "unit": "",
+      "category": "base"
+    },
+    "garlic": {
+      "name": "Gousses d'ail",
+      "unit": "",
+      "category": "épices"
+    },
+    "green-bell-pepper": {
+      "name": "Poivron vert",
+      "unit": "",
+      "category": "base"
+    },
+    "red-bell-pepper": {
+      "name": "Poivron rouge",
+      "unit": "",
+      "category": "base"
+    },
+    "beans": {
+      "name": "Haricots en conserve - pinto, roses ou noirs",
+      "unit": "g",
+      "category": "base"
+    },
+    "diced-tomatoes": {
+      "name": "Tomates concassées en conserve",
+      "unit": "g",
+      "category": "base"
+    },
+    "jalapeno": {
+      "name": "Piment jalapeño",
+      "unit": "",
+      "category": "épices"
+    },
+    "chili-powder": {
+      "name": "Poudre de chili",
+      "unit": "c.à.s",
+      "category": "épices"
+    },
+    "cocoa-powder": {
+      "name": "Poudre de cacao non sucrée",
+      "unit": "c.à.s",
+      "category": "chocolat"
+    },
+    "oregano": {
+      "name": "Origan séché",
+      "unit": "c.à.c",
+      "category": "épices"
+    },
+    "tomato-sauce": {
+      "name": "Sauce tomate",
+      "unit": "g",
+      "category": "base"
+    },
+    "cumin": {
+      "name": "Cumin moulu",
+      "unit": "c.à.c",
+      "category": "épices"
+    }
+  },
+  "tools": {
+    "large-pot": {
+      "name": "Grande marmite",
+      "type": "cuisson"
+    },
+    "cutting-board": {
+      "name": "Planche à découper",
+      "type": "preparation"
+    },
+    "knife": {
+      "name": "Couteau",
+      "type": "ustensile"
+    },
+    "wooden-spoon": {
+      "name": "Cuillère en bois",
+      "type": "ustensile"
+    }
+  },
+  "subRecipes": {
+    "chili": {
+      "title": "Chili végétarien",
+      "ingredients": {
+        "onions": { "amount": 2 },
+        "garlic": { "amount": 5 },
+        "green-bell-pepper": { "amount": 1 },
+        "red-bell-pepper": { "amount": 1 },
+        "beans": { "amount": 2380 },
+        "diced-tomatoes": { "amount": 800 },
+        "jalapeno": { "amount": 1 },
+        "chili-powder": { "amount": 1 },
+        "cocoa-powder": { "amount": 1 },
+        "oregano": { "amount": 2 },
+        "tomato-sauce": { "amount": 450 },
+        "cumin": { "amount": 2 }
+      },
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "Faire chauffer une grande marmite à feu moyen.",
+          "tools": ["large-pot"]
+        },
+        {
+          "id": "step-2",
+          "action": "Faire revenir les oignons à feu moyen-doux jusqu'à ce qu'ils soient translucides.",
+          "time": "5min",
+          "inputs": [
+            { "type": "ingredient", "ref": "onions" }
+          ],
+          "tools": ["large-pot", "wooden-spoon"],
+          "output": { "state": "oignons-translucides" }
+        },
+        {
+          "id": "step-3",
+          "action": "Ajouter l'ail et faire revenir jusqu'à ce que les oignons soient dorés.",
+          "time": "2min",
+          "inputs": [
+            { "type": "ingredient", "ref": "garlic" },
+            { "type": "state", "ref": "oignons-translucides" }
+          ],
+          "tools": ["large-pot", "wooden-spoon"],
+          "output": { "state": "oignons-dores" }
+        },
+        {
+          "id": "step-4",
+          "action": "Ajouter tous les ingrédients restants : les poivrons, les haricots, les tomates concassées, la sauce tomate, le jalapeño et toutes les épices.",
+          "inputs": [
+            { "type": "ingredient", "ref": "green-bell-pepper" },
+            { "type": "ingredient", "ref": "red-bell-pepper" },
+            { "type": "ingredient", "ref": "beans" },
+            { "type": "ingredient", "ref": "diced-tomatoes" },
+            { "type": "ingredient", "ref": "jalapeno" },
+            { "type": "ingredient", "ref": "chili-powder" },
+            { "type": "ingredient", "ref": "cocoa-powder" },
+            { "type": "ingredient", "ref": "oregano" },
+            { "type": "ingredient", "ref": "tomato-sauce" },
+            { "type": "ingredient", "ref": "cumin" },
+            { "type": "state", "ref": "oignons-dores" }
+          ],
+          "tools": ["large-pot", "wooden-spoon"],
+          "output": { "state": "melange-chili" }
+        },
+        {
+          "id": "step-5",
+          "action": "Couvrir et porter à ébullition.",
+          "inputs": [
+            { "type": "state", "ref": "melange-chili" }
+          ],
+          "tools": ["large-pot"],
+          "output": { "state": "chili-ebullition" }
+        },
+        {
+          "id": "step-6",
+          "action": "Réduire le feu et laisser mijoter doucement pendant 30 minutes, en remuant de temps en temps, jusqu'à ce que les poivrons soient tendres et que les saveurs se soient mélangées.",
+          "time": "30min",
+          "inputs": [
+            { "type": "state", "ref": "chili-ebullition" }
+          ],
+          "tools": ["large-pot", "wooden-spoon"],
+          "output": { "state": "chili-cuit" }
+        },
+        {
+          "id": "step-7",
+          "action": "Assaisonner avec du sel et du poivre, puis servir.",
+          "inputs": [
+            { "type": "state", "ref": "chili-cuit" }
+          ]
+        }
+      ]
+    }
+  }
+}
