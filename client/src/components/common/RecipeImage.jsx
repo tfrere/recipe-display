@@ -1,10 +1,12 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
+const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
+
 const RecipeImage = ({ imageName, size = 'medium', sx = {} }) => {
   if (!imageName) return null;
 
-  const baseUrl = 'http://localhost:8080/api/images';
+  const baseUrl = `${API_BASE_URL}/api/images`;
   const imageUrl = `${baseUrl}/${size}/${imageName}`;
 
   return (

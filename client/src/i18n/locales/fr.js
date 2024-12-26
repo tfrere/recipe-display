@@ -28,5 +28,15 @@ export default {
         total: "Total"
       }
     }
+  },
+  addRecipe: {
+    title: "Ajouter une recette",
+    sourceLabel: "URL ou texte de la recette",
+    sourcePlaceholder: "Entrez l'URL d'un site de recettes ou le texte d'une recette",
+    sourceHelper: "Copiez le lien ou le texte de la recette que vous souhaitez ajouter",
+    submit: "Générer la recette"
+  },
+  common: {
+    cancel: "Annuler"
   }
 };

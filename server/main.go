@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
+	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -10,9 +13,11 @@ import (
 	"regexp"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/disintegration/imaging"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 	"github.com/kolesa-team/go-webp/encoder"
 	"github.com/kolesa-team/go-webp/webp"
 )
@@ -54,14 +59,6 @@ func createSlug(input string) string {
 	slug = strings.Trim(slug, "-")
 	
 	return slug
-}
-
-// Middleware for logging requests
-func loggingMiddleware(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("Request: %s %s", r.Method, r.URL.Path)
-		next.ServeHTTP(w, r)
-	})
 }
 
 func getAllRecipes(w http.ResponseWriter, r *http.Request) {
@@ -140,10 +137,13 @@ func getRecipeBySlug(w http.ResponseWriter, r *http.Request) {
 
 	recipeData, err := findRecipeBySlug(slug)
 	if err != nil {
-		log.Printf("Recipe not found for slug: %s", slug)
+		log.Printf("Recipe not found for slug: %s. Error: %v", slug, err)
 		http.Error(w, "Recipe not found", http.StatusNotFound)
 		return
 	}
+
+	// Log the raw recipe data for debugging
+	log.Printf("Found recipe data for slug %s: %s", slug, recipeData)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(recipeData))
@@ -255,105 +255,315 @@ func resizeImage(originalPath string, size ImageSize) (string, error) {
 	return resizedPath, nil
 }
 
-// serveImage gère les requêtes d'images
 func serveImage(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	imageName := vars["image"]
 	size := vars["size"]
+	filename := vars["filename"]
 
-	// Vérifier si la taille demandée est valide
-	var targetSize ImageSize
-	validSize := false
-	for _, s := range imageSizes {
-		if s.Name == size {
-			targetSize = s
-			validSize = true
-			break
-		}
+	// Validate size
+	validSizes := map[string]bool{
+		"small":     true,
+		"medium":    true,
+		"large":     true,
+		"thumbnail": true,
 	}
-
-	if !validSize {
-		http.Error(w, "Invalid size parameter", http.StatusBadRequest)
+	if !validSizes[size] {
+		http.Error(w, "Invalid image size", http.StatusBadRequest)
 		return
 	}
 
-	// Construire le chemin de l'image originale
-	originalPath := filepath.Join("./data/images/original", imageName)
+	// Construct original image path
+	originalPath := filepath.Join("./data/images/original", filename)
 
-	// Si l'image n'existe pas directement, chercher avec différentes extensions
+	// If image doesn't exist, try different extensions
 	if _, err := os.Stat(originalPath); os.IsNotExist(err) {
-		found := false
-		baseFilename := strings.TrimSuffix(imageName, filepath.Ext(imageName))
-		validExtensions := []string{".jpg", ".jpeg", ".png", ".webp", ".gif"}
-		
-		for _, ext := range validExtensions {
-			testPath := filepath.Join("./data/images/original", baseFilename + ext)
+		for _, ext := range []string{".jpg", ".jpeg", ".png", ".webp", ".gif"} {
+			baseFilename := strings.TrimSuffix(filename, filepath.Ext(filename))
+			testPath := filepath.Join("./data/images/original", baseFilename+ext)
 			if _, err := os.Stat(testPath); err == nil {
 				originalPath = testPath
-				found = true
 				break
 			}
 		}
-
-		if !found {
-			http.Error(w, "Image not found", http.StatusNotFound)
-			return
-		}
 	}
 
-	// Vérifier si le format est valide
-	if !isValidImageFormat(originalPath) {
-		http.Error(w, "Invalid image format", http.StatusBadRequest)
-		return
-	}
-
-	// Redimensionner l'image si nécessaire
-	resizedPath, err := resizeImage(originalPath, targetSize)
+	// Resize image to requested size
+	resizedPath, err := resizeImage(originalPath, ImageSize{Name: size, Width: 800, Height: 800})
 	if err != nil {
 		log.Printf("Error resizing image: %v", err)
 		http.Error(w, "Error processing image", http.StatusInternalServerError)
 		return
 	}
 
-	// Définir les en-têtes de cache et de type MIME
-	w.Header().Set("Cache-Control", "public, max-age=31536000")
-	w.Header().Set("Content-Type", "image/webp")
+	// Serve the image
 	http.ServeFile(w, r, resizedPath)
 }
 
-func main() {
-	// Initialiser les dossiers d'images
-	if err := setupImageDirectories(); err != nil {
-		log.Fatal(err)
+func fetchWebPageContent(urlStr string) (string, error) {
+	// Create a new HTTP client
+	client := &http.Client{
+		Timeout: 10 * time.Second,
 	}
 
+	// Create the request
+	req, err := http.NewRequest("GET", urlStr, nil)
+	if err != nil {
+		return "", fmt.Errorf("error creating request: %v", err)
+	}
+
+	// Set a user agent to mimic a browser
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36")
+
+	// Send the request
+	resp, err := client.Do(req)
+	if err != nil {
+		return "", fmt.Errorf("error fetching URL: %v", err)
+	}
+	defer resp.Body.Close()
+
+	// Check response status
+	if resp.StatusCode != http.StatusOK {
+		return "", fmt.Errorf("bad status code: %d", resp.StatusCode)
+	}
+
+	// Read the body
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return "", fmt.Errorf("error reading response body: %v", err)
+	}
+
+	return string(body), nil
+}
+
+func callOpenAIRecipeGeneration(htmlContent, sourceURL string) (map[string]interface{}, error) {
+	// Prepare the API request to OpenAI
+	openaiAPIKey := os.Getenv("OPENAI_API_KEY")
+	if openaiAPIKey == "" {
+		return nil, fmt.Errorf("OpenAI API key not set")
+	}
+
+	// Construct the prompt with clear instructions
+	prompt := fmt.Sprintf(`
+	Parse the following HTML and generate a structured recipe JSON that exactly matches this schema:
+	- Must have a 'metadata' section with title, description, servings, difficulty, totalTime, and image
+	- 'ingredients' should be a map with detailed ingredient objects
+	- Include a 'subRecipes' section if applicable
+	- Provide full 'instructions' list
+	- Add source URL in 'data' section
+
+	Source URL: %s
+	HTML Content:
+	%s
+	`, sourceURL, htmlContent)
+
+	// Prepare the request body
+	requestBody := map[string]interface{}{
+		"model": "gpt-4o",
+		"messages": []map[string]string{
+			{
+				"role":    "system",
+				"content": "You are a recipe parsing assistant. Return a JSON that exactly matches the specified schema.",
+			},
+			{
+				"role":    "user",
+				"content": prompt,
+			},
+		},
+		"response_format": map[string]string{
+			"type": "json_object",
+		},
+	}
+
+	jsonBody, _ := json.Marshal(requestBody)
+
+	// Create HTTP request to OpenAI
+	req, err := http.NewRequest("POST", "https://api.openai.com/v1/chat/completions", bytes.NewBuffer(jsonBody))
+	if err != nil {
+		return nil, fmt.Errorf("error creating OpenAI request: %v", err)
+	}
+
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Bearer "+openaiAPIKey)
+
+	// Send request
+	client := &http.Client{Timeout: 30 * time.Second}
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("error sending request to OpenAI: %v", err)
+	}
+	defer resp.Body.Close()
+
+	// Read response
+	responseBody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error reading OpenAI response: %v", err)
+	}
+
+	// Parse the response
+	var openaiResponse map[string]interface{}
+	if err := json.Unmarshal(responseBody, &openaiResponse); err != nil {
+		return nil, fmt.Errorf("error parsing OpenAI response: %v", err)
+	}
+
+	// Extract the generated recipe
+	choices, ok := openaiResponse["choices"].([]interface{})
+	if !ok || len(choices) == 0 {
+		return nil, fmt.Errorf("no recipe generated")
+	}
+
+	choice := choices[0].(map[string]interface{})
+	message := choice["message"].(map[string]interface{})
+	
+	// Parse the recipe JSON
+	var recipe map[string]interface{}
+	if err := json.Unmarshal([]byte(message["content"].(string)), &recipe); err != nil {
+		return nil, fmt.Errorf("error parsing recipe JSON: %v", err)
+	}
+
+	return recipe, nil
+}
+
+func generateRecipeHandler(w http.ResponseWriter, r *http.Request) {
+	// Start timing the request
+	startTime := time.Now()
+
+	// Parse the incoming JSON request
+	var requestBody struct {
+		Source string `json:"source"`
+	}
+
+	// Read request body
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Printf(" [Recipe Generation] Error reading request body: %v", err)
+		http.Error(w, "Error reading request body", http.StatusBadRequest)
+		return
+	}
+
+	// Decode the request body
+	if err := json.Unmarshal(body, &requestBody); err != nil {
+		log.Printf(" [Recipe Generation] Error parsing request body: %v", err)
+		http.Error(w, "Invalid request body", http.StatusBadRequest)
+		return
+	}
+
+	// Validate source URL
+	if requestBody.Source == "" {
+		log.Printf(" [Recipe Generation] Empty source URL")
+		http.Error(w, "Source URL is required", http.StatusBadRequest)
+		return
+	}
+
+	// Fetch web page content
+	htmlContent, err := fetchWebPageContent(requestBody.Source)
+	if err != nil {
+		log.Printf(" [Recipe Generation] Error fetching web page: %v", err)
+		http.Error(w, "Error fetching recipe webpage", http.StatusInternalServerError)
+		return
+	}
+
+	// Generate recipe using OpenAI
+	recipe, err := callOpenAIRecipeGeneration(htmlContent, requestBody.Source)
+	if err != nil {
+		log.Printf(" [Recipe Generation] Error generating recipe: %v", err)
+		http.Error(w, "Error generating recipe", http.StatusInternalServerError)
+		return
+	}
+
+	// Generate a slug for the recipe
+	var slug string
+	if title, ok := recipe["metadata"].(map[string]interface{})["title"].(string); ok && title != "" {
+		slug = createSlug(title)
+	} else {
+		// Fallback to creating slug from source URL if title is not available
+		slug = createSlug(requestBody.Source)
+	}
+	log.Printf(" [Recipe Generation] Generated slug: %s", slug)
+
+	// Prepare file path for saving
+	recipeFilePath := filepath.Join("./data", slug+".recipe.json")
+
+	// Encode the recipe to JSON
+	jsonData, err := json.MarshalIndent(recipe, "", "  ")
+	if err != nil {
+		log.Printf(" [Recipe Generation] Error marshaling recipe: %v", err)
+		http.Error(w, "Error generating recipe", http.StatusInternalServerError)
+		return
+	}
+
+	// Save the recipe to a file
+	err = ioutil.WriteFile(recipeFilePath, jsonData, 0644)
+	if err != nil {
+		log.Printf(" [Recipe Generation] Error saving recipe file: %v", err)
+		http.Error(w, "Error saving recipe", http.StatusInternalServerError)
+		return
+	}
+
+	// Log successful generation
+	duration := time.Since(startTime)
+	log.Printf(" [Recipe Generation] Successfully generated recipe from %s in %v", requestBody.Source, duration)
+
+	// Send the recipe back to the client
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(jsonData)
+}
+
+func main() {
+	// Setup logging
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	
+	// Load environment variables
+	err := godotenv.Load()
+	if err != nil {
+		log.Println("Error loading .env file, using system environment")
+	}
+
+	// Setup image directories
+	if err := setupImageDirectories(); err != nil {
+		log.Fatalf("Failed to setup image directories: %v", err)
+	}
+
+	// Create router
 	r := mux.NewRouter()
 
-	// Add logging middleware
-	r.Use(loggingMiddleware)
-
-	// Enable CORS
+	// Add middleware
 	r.Use(func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.Header().Set("Access-Control-Allow-Origin", "*")
-			w.Header().Set("Access-Control-Allow-Methods", "GET, OPTIONS")
-			w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-			if r.Method == "OPTIONS" {
-				w.WriteHeader(http.StatusOK)
-				return
-			}
+			log.Printf("REQUEST: %s %s", r.Method, r.URL.Path)
 			next.ServeHTTP(w, r)
 		})
 	})
 
-	// API routes
-	api := r.PathPrefix("/api").Subrouter()
-	api.HandleFunc("/recipes", getAllRecipes).Methods("GET", "OPTIONS")
-	api.HandleFunc("/recipe/{slug}", getRecipeBySlug).Methods("GET", "OPTIONS")
-	
-	// Route pour les images
-	api.HandleFunc("/images/{size}/{image}", serveImage).Methods("GET")
+	// CORS middleware
+	r.Use(func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+			w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+			
+			if r.Method == "OPTIONS" {
+				w.WriteHeader(http.StatusOK)
+				return
+			}
+			
+			next.ServeHTTP(w, r)
+		})
+	})
 
-	log.Println("Server starting on :8080")
-	log.Fatal(http.ListenAndServe(":8080", r))
+	// Recipe routes
+	r.HandleFunc("/api/recipes", getAllRecipes).Methods("GET")
+	r.HandleFunc("/api/recipes/{slug}", getRecipeBySlug).Methods("GET")
+	r.HandleFunc("/api/recipes/generate", generateRecipeHandler).Methods("POST", "OPTIONS")
+
+	// Image routes
+	r.HandleFunc("/api/images/{size}/{filename}", serveImage).Methods("GET")
+
+	// Start server
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3001"
+	}
+
+	log.Printf(" Server starting on port %s", port)
+	log.Fatal(http.ListenAndServe(":"+port, r))
 }

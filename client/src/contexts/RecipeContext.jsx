@@ -6,6 +6,7 @@ import React, {
   useCallback,
   useState,
 } from "react";
+const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
 import useLocalStorage from "../hooks/useLocalStorage";
 import { 
   scaleIngredientAmount, 
@@ -410,11 +411,22 @@ export const RecipeProvider = ({ children }) => {
   const loadRecipe = useCallback(async (slug) => {
     dispatch({ type: actions.SET_LOADING, payload: true });
     try {
-      const response = await fetch(`http://localhost:8080/api/recipe/${slug}`);
+      const fullUrl = `${API_BASE_URL}/api/recipes/${slug}`;
+      console.log('Fetching recipe from URL:', fullUrl);
+      
+      const response = await fetch(fullUrl);
+      
+      console.log('Response status:', response.status);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+      
+      const responseText = await response.text();
+      console.log('Raw response text:', responseText);
+      
       if (!response.ok) {
-        throw new Error('Recipe not found');
+        throw new Error(`Recipe not found. Status: ${response.status}, Response: ${responseText}`);
       }
-      const data = await response.json();
+      
+      const data = JSON.parse(responseText);
       dispatch({ type: actions.SET_RECIPE, payload: data });
       dispatch({ type: actions.SET_ERROR, payload: null });
     } catch (error) {
@@ -422,6 +434,23 @@ export const RecipeProvider = ({ children }) => {
       dispatch({ type: actions.SET_ERROR, payload: error.message });
     } finally {
       dispatch({ type: actions.SET_LOADING, payload: false });
+    }
+  }, []);
+
+  const generateRecipe = useCallback(async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/recipes/generate`, {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to generate recipe');
+      }
+      const data = await response.json();
+      dispatch({ type: actions.SET_RECIPE, payload: data });
+      dispatch({ type: actions.SET_ERROR, payload: null });
+    } catch (error) {
+      console.error("Error generating recipe:", error);
+      dispatch({ type: actions.SET_ERROR, payload: error.message });
     }
   }, []);
 
@@ -599,6 +628,7 @@ export const RecipeProvider = ({ children }) => {
     error: state.error,
     selectedView: state.selectedView,
     loadRecipe,
+    generateRecipe,
     setSelectedSubRecipe,
     toggleStepCompletion,
     toggleSubRecipeCompletion,

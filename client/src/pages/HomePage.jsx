@@ -12,6 +12,8 @@ import { Link } from "react-router-dom";
 import RecipeImage from "../components/common/RecipeImage";
 import { useTranslation } from 'react-i18next';
 
+const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
+
 const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -20,7 +22,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/recipes');
+        const response = await fetch(`${API_BASE_URL}/api/recipes`);
         const data = await response.json();
         setRecipes(data);
       } catch (error) {
