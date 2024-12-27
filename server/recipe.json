@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "Roasted kohlrabi with tomato, hazelnuts and tarragon gremolata",
+    "description": "A flavorful side dish featuring roasted kohlrabi with tomato, hazelnuts, and a tarragon gremolata, ideal for those who appreciate bold, rich flavors in both raw and cooked forms of the mild-flavored kohlrabi.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "45min",
+    "image": "roasted-kohlrabi-with-tomato-hazelnuts-and-tarragon-gremolata.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/roasted-kohlrabi-with-tomato-hazelnuts-and-tarragon-gremolata/images/roasted-kohlrabi-with-tomato-hazelnuts-and-tarragon-gremolata.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/roasted-kohlrabi-with-tomato-hazelnuts-and-tarragon-gremolata/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ingredient1",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 75
+    },
+    {
+      "id": "ingredient2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ingredient3",
+      "name": "kohlrabi",
+      "unit": "g",
+      "amount": 1000
+    },
+    {
+      "id": "ingredient4",
+      "name": "caraway seeds",
+      "unit": "tsp",
+      "amount": 2
+    },
+    {
+      "id": "ingredient5",
+      "name": "tomato paste",
+      "unit": "tsp",
+      "amount": 2
+    },
+    {
+      "id": "ingredient6",
+      "name": "datterini or cherry tomatoes",
+      "unit": "g",
+      "amount": 300
+    },
+    {
+      "id": "ingredient7",
+      "name": "light soft brown sugar",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient8",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ingredient9",
+      "name": "double cream",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ingredient10",
+      "name": "blanched hazelnuts",
+      "unit": "g",
+      "amount": 30
+    },
+    {
+      "id": "ingredient11",
+      "name": "salt",
+      "unit": "",
+      "amount": 0
+    },
+    {
+      "id": "ingredient12",
+      "name": "black pepper",
+      "unit": "",
+      "amount": 0
+    },
+    {
+      "id": "ingredient13",
+      "name": "picked parsley leaves",
+      "unit": "g",
+      "amount": 5
+    },
+    {
+      "id": "ingredient14",
+      "name": "picked tarragon leaves",
+      "unit": "g",
+      "amount": 5
+    },
+    {
+      "id": "ingredient15",
+      "name": "finely grated orange zest",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ingredient16",
+      "name": "garlic clove",
+      "unit": "",
+      "amount": 1
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasted kohlrabi with tomato, hazelnuts and tarragon gremolata",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 220°C fan.",
+          "time": "N/A",
+          "tools": [
+            "oven"
+          ],
+          "output": {
+            "state": "preheated oven",
+            "description": "Oven preheated to 220°C fan"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Put the butter, oil, kohlrabi, caraway, tomato paste, tomatoes, sugar, 90ml of water, salt, and a good grind of pepper into a large roasting tin. Toss everything together and roast for 45 minutes, stirring about four times throughout, until softened, browned in places and the tomatoes have completely broken down. Remove from the oven and add the lemon juice.",
+          "time": "45min",
+          "tools": [
+            "roasting tin"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient12"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Kohlrabi mixture roasted and lemon juice added"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Make the tarragon gremolata by combining the parsley, tarragon, orange zest, and chopped garlic together in a bowl.",
+          "time": "N/A",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient16"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Tarragon gremolata prepared"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "When ready to serve, transfer the mixture to a serving plate with a lip. Drizzle over the cream, then top with the hazelnuts and gremolata and serve warm.",
+          "time": "N/A",
+          "tools": [
+            "serving plate"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient10"
+            }
+          ],
+          "output": {
+            "state": "final",
+            "description": "Dish is ready to be served warm with cream, hazelnuts, and gremolata on top"
+          }
+        }
+      ]
+    }
+  ]
+}

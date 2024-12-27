@@ -5,10 +5,12 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"path/filepath"
 	"strings"
 
 	"recipe-display/server/internal/utils"
+	recipegenerator "recipe-display/server/pkg/recipe-generator"
 )
 
 type RecipeService struct {
@@ -141,6 +143,63 @@ func (s *RecipeService) FindRecipeBySlug(slug string) (string, error) {
 	}
 
 	return "", fmt.Errorf("recipe with slug %s not found", slug)
+}
+
+func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, error) {
+	// Créer un nouveau générateur de recettes
+	generator := recipegenerator.NewRecipeGenerator()
+
+	// Récupérer le contenu de la page web et générer la recette
+	recipe, err := generator.GenerateFromWebContent("", url, nil)
+	if err != nil {
+		return nil, fmt.Errorf("failed to generate recipe: %v", err)
+	}
+
+	// Créer le slug à partir du titre
+	slug := utils.CreateSlug(recipe.Metadata.Title)
+
+	// Préparer les chemins de fichiers
+	imagePath := filepath.Join(s.dataDir, "images", "original", slug+filepath.Ext(recipe.Metadata.ImageUrl))
+	recipePath := filepath.Join(s.dataDir, slug+".recipe.json")
+
+	// Télécharger l'image si disponible
+	if recipe.Metadata.ImageUrl != "" {
+		if err := utils.DownloadFile(recipe.Metadata.ImageUrl, imagePath); err != nil {
+			log.Printf("WARNING: Failed to download image: %v", err)
+		} else {
+			// Mettre à jour le chemin de l'image dans la recette
+			recipe.Metadata.Image = slug + filepath.Ext(recipe.Metadata.ImageUrl)
+		}
+	}
+
+	// Convertir la recette en JSON
+	jsonData, err := recipe.ToJSON()
+	if err != nil {
+		return nil, fmt.Errorf("failed to convert recipe to JSON: %v", err)
+	}
+
+	// S'assurer que le dossier existe
+	if err := os.MkdirAll(filepath.Dir(recipePath), 0755); err != nil {
+		return nil, fmt.Errorf("failed to create directory: %v", err)
+	}
+
+	// Sauvegarder la recette
+	if err := os.WriteFile(recipePath, jsonData, 0644); err != nil {
+		return nil, fmt.Errorf("failed to save recipe: %v", err)
+	}
+
+	// Préparer la réponse
+	response := map[string]interface{}{
+		"title":       recipe.Metadata.Title,
+		"description": recipe.Metadata.Description,
+		"image":       recipe.Metadata.Image,
+		"slug":        slug,
+		"servings":    recipe.Metadata.Servings,
+		"difficulty":  recipe.Metadata.Difficulty,
+		"totalTime":   recipe.Metadata.TotalTime,
+	}
+
+	return &response, nil
 }
 
 // Fonctions utilitaires pour gérer les conversions de type
