@@ -7,484 +7,374 @@
     "totalTime": "3h",
     "image": "legendaire-buche-de-noel.jpg"
   },
-  "ingredients": {
-    "chocolat-noir": {
+  "ingredientsList": [
+    {
+      "id": "chocolat-noir",
       "name": "Chocolat noir",
       "unit": "g",
-      "category": "chocolat"
+      "amount": 120
     },
-    "sucre": {
+    {
+      "id": "sucre",
       "name": "Sucre",
       "unit": "g",
-      "category": "sucre"
+      "amount": 160
     },
-    "sucre-poudre": {
+    {
+      "id": "sucre-poudre",
       "name": "Sucre en poudre",
       "unit": "g",
-      "category": "sucre"
+      "amount": 150
     },
-    "beurre": {
+    {
+      "id": "beurre",
       "name": "Beurre",
       "unit": "g",
-      "category": "produit-laitier"
+      "amount": 250
     },
-    "oeufs": {
+    {
+      "id": "oeufs",
       "name": "Œufs",
       "unit": "unité",
-      "category": "œuf"
+      "amount": 7
     },
-    "jaunes": {
+    {
+      "id": "jaunes",
       "name": "Jaunes d'œuf",
       "unit": "unité",
-      "category": "œuf"
+      "amount": 2
     },
-    "farine": {
+    {
+      "id": "farine",
       "name": "Farine",
       "unit": "g",
-      "category": "farine"
+      "amount": 135
     },
-    "maizena": {
+    {
+      "id": "maizena",
       "name": "Maïzena",
       "unit": "g",
-      "category": "farine"
+      "amount": 15
     },
-    "sel": {
+    {
+      "id": "sel",
       "name": "Sel",
       "unit": "pincée",
-      "category": "assaisonnement"
+      "amount": 1
     },
-    "noisettes": {
-      "name": "Noisettes",
-      "unit": "poignée",
-      "category": "fruit-sec"
+    {
+      "id": "vanille",
+      "name": "Gousse de vanille",
+      "unit": "unité",
+      "amount": 1
     },
-    "lait": {
+    {
+      "id": "lait",
       "name": "Lait",
       "unit": "cl",
-      "category": "produit-laitier"
+      "amount": 50
     },
-    "sucre-glace": {
-      "name": "Sucre glace",
+    {
+      "id": "poudre-noisette",
+      "name": "Poudre de noisette",
       "unit": "g",
-      "category": "sucre"
+      "amount": 50
     }
-  },
-  "tools": {
-    "bain-marie": {
-      "name": "Bain-marie",
-      "type": "cuisson"
-    },
-    "casserole": {
+  ],
+  "toolsList": [
+    {
+      "id": "casserole",
       "name": "Casserole",
-      "type": "cuisson"
+      "type": "cooking"
     },
-    "saladier": {
-      "name": "Saladier",
-      "type": "preparation"
+    {
+      "id": "bol",
+      "name": "Bol",
+      "type": "utensil"
     },
-    "fouet": {
+    {
+      "id": "fouet",
       "name": "Fouet",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "spatule": {
-      "name": "Spatule",
-      "type": "ustensile"
+    {
+      "id": "four",
+      "name": "Four",
+      "type": "cooking"
     },
-    "plaque": {
+    {
+      "id": "plaque",
       "name": "Plaque de cuisson",
-      "type": "cuisson"
+      "type": "cooking"
     },
-    "papier-sulfurise": {
-      "name": "Papier sulfurisé",
-      "type": "preparation"
+    {
+      "id": "spatule",
+      "name": "Spatule",
+      "type": "utensil"
     },
-    "torchon": {
-      "name": "Torchon humide",
-      "type": "preparation"
-    },
-    "poele": {
-      "name": "Poêle",
-      "type": "cuisson"
-    },
-    "couteau": {
-      "name": "Couteau",
-      "type": "ustensile"
-    },
-    "passoire": {
-      "name": "Passoire",
-      "type": "ustensile"
-    },
-    "fourchette": {
-      "name": "Fourchette",
-      "type": "ustensile"
+    {
+      "id": "torchon",
+      "name": "Torchon",
+      "type": "utensil"
     }
-  },
-  "subRecipes": {
-    "creme-italienne": {
+  ],
+  "subRecipes": [
+    {
+      "id": "creme-italienne",
       "title": "Crème italienne au chocolat",
-      "warning": "À faire en premier - nécessite du temps de refroidissement",
-      "ingredients": {
-        "jaunes": { "amount": 2 },
-        "sucre": { "amount": 80 },
-        "chocolat-noir": { "amount": 120 },
-        "beurre": { "amount": 250 }
-      },
       "steps": [
         {
-          "id": "choc-1",
-          "type": "cooking",
-          "action": "Faire fondre le chocolat au bain-marie jusqu'à obtention d'une crème épaisse",
-          "time": "10 min",
-          "tools": ["bain-marie"],
-          "inputs": [{ "type": "ingredient", "ref": "chocolat-noir" }],
+          "id": "chocolat",
+          "action": "Faire fondre le chocolat au bain-marie",
+          "time": "10min",
+          "tools": ["casserole", "bol"],
+          "inputs": [
+            {"type": "ingredient", "ref": "chocolat-noir"}
+          ],
           "output": {
-            "state": "chocolat-fondu",
+            "state": "fondu",
             "description": "Chocolat fondu en crème épaisse"
           }
         },
         {
-          "id": "sirop-1",
-          "type": "cooking",
-          "action": "Faire cuire le sucre avec très peu d'eau jusqu'à ce que le sirop fasse le fil",
-          "time": "5 min",
-          "tools": ["casserole"],
-          "inputs": [{ "type": "ingredient", "ref": "sucre" }],
-          "output": {
-            "state": "sirop-sucre",
-            "description": "Sirop qui fait le fil"
-          }
-        },
-        {
-          "id": "jaunes-1",
-          "action": "Mettre les jaunes dans un saladier placé dans une casserole très chaude",
-          "time": "2 min",
-          "tools": ["saladier", "casserole"],
-          "inputs": [{ "type": "ingredient", "ref": "jaunes" }],
-          "output": {
-            "state": "jaunes-chauds",
-            "description": "Jaunes d'œufs prêts à recevoir le sirop"
-          }
-        },
-        {
-          "id": "melange-1",
-          "action": "Ajouter progressivement le sirop puis le chocolat, laisser cuire au bain-marie en remuant",
-          "time": "10 min",
-          "tools": ["fouet", "bain-marie"],
+          "id": "sirop",
+          "action": "Cuire le sirop de sucre",
+          "time": "10min",
+          "tools": ["casserole", "thermomètre"],
           "inputs": [
-            { "type": "state", "ref": "jaunes-chauds" },
-            { "type": "state", "ref": "sirop-sucre" },
-            { "type": "state", "ref": "chocolat-fondu" }
+            {"type": "ingredient", "ref": "sucre"}
           ],
           "output": {
-            "state": "melange-cuit",
-            "description": "Mélange cuit au bain-marie"
+            "state": "sirop",
+            "description": "Sirop de sucre à 121°C"
           }
         },
         {
-          "id": "final-1",
-          "type": "preparation",
-          "action": "Incorporer le beurre en morceaux et travailler à froid jusqu'à épaississement",
-          "time": "15 min",
-          "tools": ["fouet"],
+          "id": "jaunes-montes",
+          "action": "Monter les jaunes d'œufs",
+          "time": "5min",
+          "tools": ["batteur"],
           "inputs": [
-            { "type": "state", "ref": "melange-cuit" },
-            { "type": "ingredient", "ref": "beurre" }
+            {"type": "ingredient", "ref": "jaunes"}
           ],
           "output": {
-            "state": "creme-italienne",
-            "description": "Crème italienne au chocolat épaisse"
+            "state": "monté",
+            "description": "Jaunes montés mousseux"
+          }
+        },
+        {
+          "id": "creme-italienne",
+          "action": "Verser le sirop sur les jaunes et monter au batteur",
+          "time": "10min",
+          "tools": ["batteur"],
+          "inputs": [
+            {"type": "step", "ref": "jaunes-montes"},
+            {"type": "step", "ref": "sirop"}
+          ],
+          "output": {
+            "state": "monté",
+            "description": "Crème italienne montée et refroidie"
+          }
+        },
+        {
+          "id": "creme-chocolat",
+          "action": "Incorporer le chocolat fondu à la crème italienne",
+          "time": "5min",
+          "tools": ["spatule"],
+          "inputs": [
+            {"type": "step", "ref": "creme-italienne"},
+            {"type": "step", "ref": "chocolat"}
+          ],
+          "output": {
+            "state": "mélangé",
+            "description": "Crème italienne au chocolat"
           }
         }
       ]
     },
-    "genoise": {
+    {
+      "id": "genoise",
       "title": "Génoise",
-      "ingredients": {
-        "sucre-poudre": { "amount": 150 },
-        "farine": { "amount": 75 },
-        "maizena": { "amount": 25 },
-        "oeufs": { "amount": 5 },
-        "sel": { "amount": 1 }
-      },
       "steps": [
         {
-          "id": "sep-1",
-          "type": "preparation",
-          "action": "Séparer les blancs des jaunes d'œufs",
-          "time": "2 min",
-          "tools": ["saladier"],
-          "inputs": [{ "type": "ingredient", "ref": "oeufs" }],
-          "output": {
-            "state": "oeufs-separes",
-            "description": "Blancs et jaunes séparés"
-          }
-        },
-        {
-          "id": "jaunes-2",
-          "type": "preparation",
-          "action": "Battre le sucre avec les jaunes",
-          "time": "5 min",
-          "tools": ["fouet"],
+          "id": "oeufs-sucre",
+          "action": "Monter les œufs avec le sucre",
+          "time": "10min",
+          "tools": ["batteur"],
           "inputs": [
-            { "type": "state", "ref": "oeufs-separes" },
-            { "type": "ingredient", "ref": "sucre-poudre" }
+            {"type": "ingredient", "ref": "oeufs"},
+            {"type": "ingredient", "ref": "sucre-poudre"}
           ],
           "output": {
-            "state": "melange-jaunes",
-            "description": "Mélange jaunes et sucre"
+            "state": "monté",
+            "description": "Œufs montés mousseux"
           }
         },
         {
-          "id": "farine-1",
-          "type": "preparation",
-          "action": "Tamiser ensemble la farine et la maïzena",
-          "time": "2 min",
+          "id": "farine-tamis",
+          "action": "Tamiser la farine avec la maïzena",
+          "time": "5min",
+          "tools": ["tamis"],
           "inputs": [
-            { "type": "ingredient", "ref": "farine" },
-            { "type": "ingredient", "ref": "maizena" }
+            {"type": "ingredient", "ref": "farine"},
+            {"type": "ingredient", "ref": "maizena"}
           ],
           "output": {
-            "state": "farine-tamisee",
-            "description": "Farine et maïzena tamisées"
+            "state": "tamisé",
+            "description": "Mélange de farines tamisé"
           }
         },
         {
-          "id": "melange-2",
-          "type": "preparation",
-          "action": "Incorporer le mélange de farines aux jaunes battus avec le sucre",
-          "time": "3 min",
+          "id": "genoise",
+          "action": "Incorporer délicatement les farines aux œufs montés",
+          "time": "5min",
           "tools": ["spatule"],
           "inputs": [
-            { "type": "state", "ref": "melange-jaunes" },
-            { "type": "state", "ref": "farine-tamisee" },
-            { "type": "ingredient", "ref": "sel" }
+            {"type": "step", "ref": "oeufs-sucre"},
+            {"type": "step", "ref": "farine-tamis"}
           ],
           "output": {
-            "state": "pate-base",
-            "description": "Pâte de base"
+            "state": "mélangé",
+            "description": "Pâte à génoise prête"
           }
         },
         {
-          "id": "blancs-1",
-          "type": "preparation",
-          "action": "Battre les blancs en neige très ferme",
-          "time": "5 min",
-          "tools": ["fouet"],
-          "inputs": [{ "type": "state", "ref": "oeufs-separes" }],
-          "output": {
-            "state": "blancs-montes",
-            "description": "Blancs montés en neige ferme"
-          }
-        },
-        {
-          "id": "melange-3",
-          "type": "preparation",
-          "action": "Incorporer délicatement les blancs à la pâte",
-          "time": "3 min",
-          "tools": ["spatule"],
+          "id": "cuisson-genoise",
+          "action": "Cuire la génoise",
+          "time": "12min",
+          "tools": ["four", "plaque"],
           "inputs": [
-            { "type": "state", "ref": "pate-base" },
-            { "type": "state", "ref": "blancs-montes" }
+            {"type": "step", "ref": "genoise"}
           ],
           "output": {
-            "state": "pate-finale",
-            "description": "Pâte à génoise prête à cuire"
-          }
-        },
-        {
-          "id": "cuisson-1",
-          "type": "cooking",
-          "action": "Étaler la pâte sur une plaque recouverte de papier sulfurisé et cuire à 210°C",
-          "time": "12 min",
-          "tools": ["plaque", "papier-sulfurise"],
-          "inputs": [{ "type": "state", "ref": "pate-finale" }],
-          "output": {
-            "state": "genoise-cuite",
-            "description": "Génoise cuite"
-          }
-        },
-        {
-          "id": "refroid-1",
-          "type": "preparation",
-          "action": "Enrouler la génoise dans un torchon humide et laisser refroidir",
-          "time": "30 min",
-          "tools": ["torchon"],
-          "inputs": [{ "type": "state", "ref": "genoise-cuite" }],
-          "output": {
-            "state": "genoise-froide",
-            "description": "Génoise froide et souple"
+            "state": "cuit",
+            "description": "Génoise cuite et dorée"
           }
         }
       ]
     },
-    "creme-patissiere": {
+    {
+      "id": "creme-patissiere",
       "title": "Crème pâtissière aux noisettes",
-      "ingredients": {
-        "oeufs": { "amount": 2 },
-        "farine": { "amount": 60 },
-        "lait": { "amount": 40 },
-        "sucre": { "amount": 80 },
-        "noisettes": { "amount": 2 }
-      },
       "steps": [
         {
-          "id": "nois-1",
-          "type": "cooking",
-          "action": "Faire griller les noisettes puis les hacher finement",
-          "time": "5 min",
-          "tools": ["poele", "couteau"],
-          "inputs": [{ "type": "ingredient", "ref": "noisettes" }],
-          "output": {
-            "state": "noisettes-grillees",
-            "description": "Noisettes grillées et hachées"
-          }
-        },
-        {
-          "id": "lait-1",
-          "type": "cooking",
-          "action": "Faire bouillir le lait avec les noisettes puis filtrer",
-          "time": "10 min",
-          "tools": ["casserole", "passoire"],
+          "id": "vanille-lait",
+          "action": "Infuser la vanille dans le lait",
+          "time": "15min",
+          "tools": ["casserole"],
           "inputs": [
-            { "type": "ingredient", "ref": "lait" },
-            { "type": "state", "ref": "noisettes-grillees" }
+            {"type": "ingredient", "ref": "lait"},
+            {"type": "ingredient", "ref": "vanille"}
           ],
           "output": {
-            "state": "lait-noisette",
-            "description": "Lait parfumé aux noisettes"
+            "state": "infusé",
+            "description": "Lait vanillé chaud"
           }
         },
         {
-          "id": "app-1",
-          "type": "preparation",
-          "action": "Délayer la farine avec un peu d'eau froide, ajouter les œufs battus et le sucre",
-          "time": "5 min",
+          "id": "jaunes-sucre",
+          "action": "Blanchir les jaunes avec le sucre",
+          "time": "5min",
           "tools": ["fouet"],
           "inputs": [
-            { "type": "ingredient", "ref": "farine" },
-            { "type": "ingredient", "ref": "oeufs" },
-            { "type": "ingredient", "ref": "sucre" }
+            {"type": "ingredient", "ref": "jaunes"},
+            {"type": "ingredient", "ref": "sucre"}
           ],
           "output": {
-            "state": "appareil-creme",
-            "description": "Appareil à crème pâtissière"
+            "state": "blanchi",
+            "description": "Mélange jaunes-sucre blanchi"
           }
         },
         {
-          "id": "cuis-1",
-          "type": "cooking",
-          "action": "Mélanger avec le lait et faire bouillir en remuant jusqu'à épaississement",
-          "time": "10 min",
+          "id": "creme-base",
+          "action": "Cuire la crème pâtissière",
+          "time": "10min",
           "tools": ["casserole", "fouet"],
           "inputs": [
-            { "type": "state", "ref": "appareil-creme" },
-            { "type": "state", "ref": "lait-noisette" }
+            {"type": "step", "ref": "vanille-lait"},
+            {"type": "step", "ref": "jaunes-sucre"},
+            {"type": "ingredient", "ref": "farine"}
           ],
           "output": {
-            "state": "creme-patissiere",
-            "description": "Crème pâtissière aux noisettes"
+            "state": "cuit",
+            "description": "Crème pâtissière de base"
           }
         },
         {
-          "id": "refroid-2",
-          "type": "preparation",
-          "action": "Laisser refroidir la crème",
-          "time": "30 min",
-          "inputs": [{ "type": "state", "ref": "creme-patissiere" }],
+          "id": "creme-noisette",
+          "action": "Incorporer la poudre de noisette",
+          "time": "5min",
+          "tools": ["spatule"],
+          "inputs": [
+            {"type": "step", "ref": "creme-base"},
+            {"type": "ingredient", "ref": "poudre-noisette"}
+          ],
           "output": {
-            "state": "creme-patissiere-froide",
-            "description": "Crème pâtissière refroidie"
+            "state": "mélangé",
+            "description": "Crème pâtissière aux noisettes"
           }
         }
       ]
     },
-    "assemblage": {
-      "title": "Assemblage de la bûche",
+    {
+      "id": "dressage",
+      "title": "Dressage",
       "steps": [
         {
-          "id": "ass-1",
-          "type": "assembly",
-          "action": "Dérouler la génoise avec le torchon humide",
-          "time": "2 min",
+          "id": "deroulage",
+          "action": "Dérouler délicatement la génoise",
+          "time": "5min",
           "tools": ["torchon"],
-          "inputs": [{ "type": "subRecipe", "ref": "genoise/genoise-froide" }],
+          "inputs": [
+            {"type": "step", "ref": "cuisson-genoise"}
+          ],
           "output": {
-            "state": "genoise-deroulee",
-            "description": "Génoise déroulée"
+            "state": "déroulé",
+            "description": "Génoise déroulée et prête"
           }
         },
         {
-          "id": "ass-2",
-          "type": "assembly",
-          "action": "Étaler la crème pâtissière sur toute la surface",
-          "time": "5 min",
+          "id": "etaler-creme",
+          "action": "Étaler la crème pâtissière",
+          "time": "5min",
           "tools": ["spatule"],
           "inputs": [
-            { "type": "state", "ref": "genoise-deroulee" },
-            {
-              "type": "subRecipe",
-              "ref": "creme-patissiere/creme-patissiere-froide"
-            }
+            {"type": "step", "ref": "deroulage"},
+            {"type": "step", "ref": "creme-noisette"}
           ],
           "output": {
-            "state": "genoise-garnie",
-            "description": "Génoise garnie de crème"
+            "state": "étalé",
+            "description": "Crème étalée uniformément"
           }
         },
         {
-          "id": "ass-3",
-          "type": "assembly",
-          "action": "Rouler la bûche en serrant bien",
-          "time": "5 min",
-          "tools": ["couteau"],
-          "inputs": [{ "type": "state", "ref": "genoise-garnie" }],
+          "id": "roulage",
+          "action": "Rouler la bûche",
+          "time": "5min",
+          "tools": ["torchon"],
+          "inputs": [
+            {"type": "step", "ref": "etaler-creme"}
+          ],
           "output": {
-            "state": "buche-base",
-            "description": "Bûche roulée avec bords coupés"
+            "state": "roulé",
+            "description": "Bûche roulée"
           }
         },
         {
-          "id": "ass-4",
-          "type": "assembly",
-          "action": "Recouvrir entièrement de crème italienne au chocolat",
-          "time": "10 min",
+          "id": "nappage",
+          "action": "Napper avec la crème au chocolat et décorer",
+          "time": "10min",
           "tools": ["spatule"],
           "inputs": [
-            { "type": "state", "ref": "buche-base" },
-            { "type": "subRecipe", "ref": "creme-italienne/creme-italienne" }
+            {"type": "step", "ref": "roulage"},
+            {"type": "step", "ref": "creme-chocolat"}
           ],
           "output": {
-            "state": "buche-recouverte",
-            "description": "Bûche recouverte de crème au chocolat"
-          }
-        },
-        {
-          "id": "ass-5",
-          "type": "assembly",
-          "action": "Strier la surface avec une fourchette pour imiter l'écorce",
-          "time": "5 min",
-          "tools": ["fourchette"],
-          "inputs": [{ "type": "state", "ref": "buche-recouverte" }],
-          "output": {
-            "state": "buche-striee",
-            "description": "Bûche avec motifs d'écorce"
-          }
-        },
-        {
-          "id": "ass-6",
-          "type": "assembly",
-          "action": "Saupoudrer légèrement de sucre glace",
-          "time": "1 min",
-          "inputs": [
-            { "type": "state", "ref": "buche-striee" },
-            { "type": "ingredient", "ref": "sucre-glace" }
-          ],
-          "output": {
-            "state": "buche-finale",
-            "description": "Bûche de Noël terminée"
+            "state": "nappé",
+            "description": "Bûche nappée et décorée"
           }
         }
       ]
     }
-  }
+  ]
 }

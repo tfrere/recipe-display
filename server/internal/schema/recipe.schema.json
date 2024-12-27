@@ -1,0 +1,142 @@
+{
+  "name": "recipe_formatter",
+  "description": "Format recipe data into structured output",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "servings": { "type": "number" },
+          "image": { "type": "string" },
+          "imageUrl": { "type": "string" },
+          "sourceUrl": { "type": "string" },
+          "difficulty": { 
+            "type": "string",
+            "enum": ["easy", "medium", "hard"]
+          }
+        },
+        "required": ["title", "description", "servings", "difficulty"],
+        "additionalProperties": false
+      },
+      "ingredientsList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "unit": { "type": "string" },
+            "amount": { "type": "number" }
+          },
+          "required": ["id", "name", "unit", "amount"],
+          "additionalProperties": false
+        }
+      },
+      "subRecipes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "action": { "type": "string" },
+                  "time": { "type": "string" },
+                  "tools": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "inputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": { 
+                          "type": "string",
+                          "enum": ["ingredient", "state"]
+                        },
+                        "ref": { "type": "string" }
+                      },
+                      "required": ["type", "ref"],
+                      "additionalProperties": false
+                    }
+                  },
+                  "output": {
+                    "type": "object",
+                    "properties": {
+                      "state": { "type": "string" },
+                      "description": { "type": "string" }
+                    },
+                    "required": ["state", "description"],
+                    "additionalProperties": false
+                  }
+                },
+                "required": ["id", "action", "time", "inputs", "output"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["id", "title", "steps"],
+          "additionalProperties": false
+        }
+      },
+      "toolsList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "type": { "type": "string" }
+          },
+          "required": ["id", "name", "type"],
+          "additionalProperties": false
+        }
+      },
+      "stepsList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "action": { "type": "string" },
+            "time": { "type": "string" },
+            "inputIds": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "toolIds": {
+              "type": "array", 
+              "items": { "type": "string" }
+            },
+            "outputStateId": { "type": "string" }
+          },
+          "required": ["id", "action", "inputIds", "outputStateId"],
+          "additionalProperties": false
+        }
+      },
+      "states": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "description": { "type": "string" }
+          },
+          "required": ["id", "description"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["metadata", "ingredientsList", "subRecipes", "toolsList", "stepsList", "states"],
+    "additionalProperties": false
+  }
+}

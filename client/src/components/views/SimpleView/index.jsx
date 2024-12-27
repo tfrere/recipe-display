@@ -46,19 +46,19 @@ const PrintableRecipe = ({ recipe }) => (
   }}>
     {/* En-tête */}
     <Typography variant="h1" component="h1">
-      {recipe.metadata.title}
+      {recipe.title}
     </Typography>
     
-    {recipe.metadata.description && (
+    {recipe.description && (
       <Typography sx={{ mb: 2 }}>
-        {recipe.metadata.description}
+        {recipe.description}
       </Typography>
     )}
     
     <Typography variant="body2" sx={{ mb: 3 }}>
-      Pour {recipe.metadata.servings} personnes
-      {recipe.metadata.difficulty && ` • ${recipe.metadata.difficulty}`}
-      {recipe.metadata.totalTime && ` • ${recipe.metadata.totalTime}`}
+      Pour {recipe.servings} personnes
+      {recipe.difficulty && ` • ${recipe.difficulty}`}
+      {recipe.totalTime && ` • ${recipe.totalTime}`}
     </Typography>
 
     {/* Ingrédients */}
@@ -139,7 +139,7 @@ const SimpleView = () => {
         '@media print': { display: 'none' }
       }}>
         <Container maxWidth="md" sx={{ maxWidth: '1000px !important' }}>
-          <RecipeHeader recipe={recipe.metadata} onPrint={handlePrint} />
+          <RecipeHeader recipe={recipe} onPrint={handlePrint} />
           <Divider sx={{ my: 4 }} />
           <IngredientsList 
             recipe={recipe}

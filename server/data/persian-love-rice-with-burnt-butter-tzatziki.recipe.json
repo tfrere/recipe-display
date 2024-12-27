@@ -7,214 +7,215 @@
     "totalTime": "2h",
     "image": "persian-love-rice-with-burnt-butter-tzatziki.jpg"
   },
-  "ingredients": {
-    "petales-rose": {
+  "ingredientsList": [
+    {
+      "id": "petales-rose",
       "name": "Pétales de rose séchés",
       "unit": "c.à.s",
-      "category": "épice"
+      "amount": 1
     },
-    "coriandre-graines": {
+    {
+      "id": "coriandre-graines",
       "name": "Graines de coriandre",
       "unit": "c.à.s",
-      "category": "épice"
+      "amount": 1
     },
-    "cardamome": {
+    {
+      "id": "cardamome",
       "name": "Cardamome moulue",
       "unit": "c.à.c",
-      "category": "épice"
+      "amount": 0.75
     },
-    "muscade": {
+    {
+      "id": "muscade",
       "name": "Noix de muscade",
       "unit": "pincée",
-      "category": "épice"
+      "amount": 0.25
     },
-    "cannelle": {
+    {
+      "id": "cannelle",
       "name": "Cannelle moulue",
       "unit": "c.à.c",
-      "category": "épice"
+      "amount": 0.25
     },
-    "poivre-noir": {
+    {
+      "id": "poivre-noir",
       "name": "Poivre noir grossier",
       "unit": "c.à.c",
-      "category": "épice"
+      "amount": 0.25
     },
-    "courgettes": {
+    {
+      "id": "courgettes",
       "name": "Courgettes",
       "unit": "pièce",
-      "category": "légume"
+      "amount": 2
     },
-    "yaourt-grec": {
+    {
+      "id": "yaourt-grec",
       "name": "Yaourt grec",
       "unit": "g",
-      "category": "produit-laitier"
+      "amount": 500
     },
-    "jus-citron": {
+    {
+      "id": "jus-citron",
       "name": "Jus de citron",
-      "unit": "c.à.c",
-      "category": "condiment"
-    },
-    "ciboulette": {
-      "name": "Ciboulette",
-      "unit": "g",
-      "category": "herbe"
-    },
-    "menthe": {
-      "name": "Feuilles de menthe",
-      "unit": "g",
-      "category": "herbe"
-    },
-    "beurre": {
-      "name": "Beurre doux",
-      "unit": "g",
-      "category": "produit-laitier"
-    },
-    "mures-seches": {
-      "name": "Mûres séchées",
-      "unit": "g",
-      "category": "fruit-sec"
-    },
-    "baies-berberes": {
-      "name": "Baies de berbéris",
-      "unit": "g",
-      "category": "fruit-sec"
-    },
-    "feuilles-vigne": {
-      "name": "Feuilles de vigne",
-      "unit": "pièce",
-      "category": "légume"
-    },
-    "huile-olive": {
-      "name": "Huile d'olive",
       "unit": "c.à.s",
-      "category": "huile"
+      "amount": 1.5
     },
-    "oignon": {
-      "name": "Oignon",
-      "unit": "pièce",
-      "category": "légume"
+    {
+      "id": "ciboulette",
+      "name": "Ciboulette",
+      "unit": "botte",
+      "amount": 0.5
     },
-    "ail": {
-      "name": "Gousses d'ail",
-      "unit": "pièce",
-      "category": "aromate"
+    {
+      "id": "menthe",
+      "name": "Menthe",
+      "unit": "botte",
+      "amount": 0.5
     },
-    "gingembre": {
-      "name": "Gingembre frais",
-      "unit": "cm",
-      "category": "aromate"
+    {
+      "id": "beurre",
+      "name": "Beurre",
+      "unit": "g",
+      "amount": 100
     },
-    "safran": {
-      "name": "Safran",
-      "unit": "pincée",
-      "category": "épice"
-    },
-    "riz-basmati": {
+    {
+      "id": "riz-basmati",
       "name": "Riz basmati",
       "unit": "g",
-      "category": "céréale"
+      "amount": 300
     },
-    "bouillon-legumes": {
+    {
+      "id": "oignon",
+      "name": "Oignon",
+      "unit": "pièce",
+      "amount": 1
+    },
+    {
+      "id": "ail",
+      "name": "Gousses d'ail",
+      "unit": "pièce",
+      "amount": 3
+    },
+    {
+      "id": "gingembre",
+      "name": "Gingembre frais",
+      "unit": "cm",
+      "amount": 3
+    },
+    {
+      "id": "huile-olive",
+      "name": "Huile d'olive",
+      "unit": "c.à.s",
+      "amount": 2
+    },
+    {
+      "id": "safran",
+      "name": "Safran",
+      "unit": "g",
+      "amount": 0.5
+    },
+    {
+      "id": "bouillon-legumes",
       "name": "Bouillon de légumes",
       "unit": "ml",
-      "category": "liquide"
+      "amount": 500
     },
-    "carotte": {
-      "name": "Carotte",
-      "unit": "pièce",
-      "category": "légume"
-    },
-    "amandes": {
+    {
+      "id": "amandes",
       "name": "Amandes effilées",
       "unit": "g",
-      "category": "fruit-sec"
+      "amount": 50
     },
-    "pistaches": {
+    {
+      "id": "pistaches",
       "name": "Pistaches",
       "unit": "g",
-      "category": "fruit-sec"
+      "amount": 50
     },
-    "huile-tournesol": {
-      "name": "Huile de tournesol",
-      "unit": "c.à.s",
-      "category": "huile"
+    {
+      "id": "mures-seches",
+      "name": "Mûres séchées",
+      "unit": "g",
+      "amount": 30
+    },
+    {
+      "id": "baies-berberes",
+      "name": "Baies de berbéris",
+      "unit": "g",
+      "amount": 40
     }
-  },
-  "tools": {
-    "mortier": {
+  ],
+  "toolsList": [
+    {
+      "id": "mortier",
       "name": "Mortier",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "pilon": {
+    {
+      "id": "pilon",
       "name": "Pilon",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "saladier": {
-      "name": "Saladier",
-      "type": "preparation"
-    },
-    "passoire": {
+    {
+      "id": "passoire",
       "name": "Passoire",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "rape": {
+    {
+      "id": "rape",
       "name": "Râpe",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "casserole": {
+    {
+      "id": "casserole",
       "name": "Casserole",
-      "type": "cuisson"
+      "type": "cooking"
     },
-    "fouet": {
+    {
+      "id": "saladier",
+      "name": "Saladier",
+      "type": "utensil"
+    },
+    {
+      "id": "fouet",
       "name": "Fouet",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "couteau": {
+    {
+      "id": "couteau",
       "name": "Couteau",
-      "type": "ustensile"
+      "type": "utensil"
     },
-    "poele": {
+    {
+      "id": "poele",
       "name": "Poêle",
-      "type": "cuisson"
+      "type": "cooking"
     },
-    "torchon": {
-      "name": "Torchon",
-      "type": "ustensile"
-    },
-    "couvercle": {
-      "name": "Couvercle",
-      "type": "ustensile"
-    },
-    "fourchette": {
-      "name": "Fourchette",
-      "type": "ustensile"
+    {
+      "id": "plat-service",
+      "name": "Plat de service",
+      "type": "utensil"
     }
-  },
-  "subRecipes": {
-    "melange-epices": {
+  ],
+  "subRecipes": [
+    {
+      "id": "epices",
       "title": "Mélange d'épices persan",
-      "ingredients": {
-        "petales-rose": { "amount": 1 },
-        "coriandre-graines": { "amount": 1 },
-        "cardamome": { "amount": 0.75 },
-        "muscade": { "amount": 0.25 },
-        "cannelle": { "amount": 0.25 },
-        "poivre-noir": { "amount": 0.25 }
-      },
       "steps": [
         {
           "id": "epices-1",
-          "type": "preparation",
-          "name": "Mélanger et moudre tous les ingrédients pour le mélange d'épices persan",
           "action": "Mélanger et moudre tous les ingrédients pour le mélange d'épices persan",
           "time": "5min",
           "tools": ["mortier", "pilon"],
           "inputs": [
-            { "type": "ingredient", "ref": "petales-rose" },
-            { "type": "ingredient", "ref": "coriandre-graines" },
-            { "type": "ingredient", "ref": "cardamome" },
-            { "type": "ingredient", "ref": "muscade" },
-            { "type": "ingredient", "ref": "cannelle" },
-            { "type": "ingredient", "ref": "poivre-noir" }
+            {"type": "ingredient", "ref": "petales-rose"},
+            {"type": "ingredient", "ref": "coriandre-graines"},
+            {"type": "ingredient", "ref": "cardamome"},
+            {"type": "ingredient", "ref": "muscade"},
+            {"type": "ingredient", "ref": "cannelle"},
+            {"type": "ingredient", "ref": "poivre-noir"}
           ],
           "output": {
             "state": "melange-epices-pret",
@@ -223,26 +224,17 @@
         }
       ]
     },
-    "tzatziki": {
+    {
+      "id": "tzatziki",
       "title": "Tzatziki au beurre noisette",
-      "ingredients": {
-        "courgettes": { "amount": 2 },
-        "yaourt-grec": { "amount": 200 },
-        "jus-citron": { "amount": 2 },
-        "ciboulette": { "amount": 10 },
-        "menthe": { "amount": 10 },
-        "beurre": { "amount": 30 }
-      },
       "steps": [
         {
           "id": "tzatziki-1",
-          "type": "preparation",
-          "name": "Râper les courgettes et les égoutter dans une passoire avec du sel",
           "action": "Râper les courgettes et les égoutter dans une passoire avec du sel",
           "time": "30min",
           "tools": ["passoire", "rape"],
           "inputs": [
-            { "type": "ingredient", "ref": "courgettes" }
+            {"type": "ingredient", "ref": "courgettes"}
           ],
           "output": {
             "state": "courgettes-egouttes",
@@ -251,13 +243,11 @@
         },
         {
           "id": "tzatziki-2",
-          "type": "cooking",
-          "name": "Faire un beurre noisette : faire fondre le beurre jusqu'à ce qu'il devienne doré et dégage une odeur de noisette",
           "action": "Faire un beurre noisette : faire fondre le beurre jusqu'à ce qu'il devienne doré et dégage une odeur de noisette",
           "time": "5min",
           "tools": ["casserole"],
           "inputs": [
-            { "type": "ingredient", "ref": "beurre" }
+            {"type": "ingredient", "ref": "beurre"}
           ],
           "output": {
             "state": "beurre-noisette",
@@ -266,17 +256,15 @@
         },
         {
           "id": "tzatziki-3",
-          "type": "preparation",
-          "name": "Mélanger le yaourt grec avec les courgettes égouttées, le jus de citron, la ciboulette et la menthe ciselées",
           "action": "Mélanger le yaourt grec avec les courgettes égouttées, le jus de citron, la ciboulette et la menthe ciselées",
           "time": "5min",
           "tools": ["saladier"],
           "inputs": [
-            { "type": "state", "ref": "courgettes-egouttes" },
-            { "type": "ingredient", "ref": "yaourt-grec" },
-            { "type": "ingredient", "ref": "jus-citron" },
-            { "type": "ingredient", "ref": "ciboulette" },
-            { "type": "ingredient", "ref": "menthe" }
+            {"type": "ingredient", "ref": "yaourt-grec"},
+            {"type": "ingredient", "ref": "jus-citron"},
+            {"type": "ingredient", "ref": "ciboulette"},
+            {"type": "ingredient", "ref": "menthe"},
+            {"type": "state", "ref": "courgettes-egouttes"}
           ],
           "output": {
             "state": "tzatziki-base",
@@ -285,14 +273,12 @@
         },
         {
           "id": "tzatziki-4",
-          "type": "assembly",
-          "name": "Incorporer le beurre noisette refroidi au tzatziki",
           "action": "Incorporer le beurre noisette refroidi au tzatziki",
           "time": "2min",
           "tools": ["fouet"],
           "inputs": [
-            { "type": "state", "ref": "tzatziki-base" },
-            { "type": "state", "ref": "beurre-noisette" }
+            {"type": "state", "ref": "beurre-noisette"},
+            {"type": "state", "ref": "tzatziki-base"}
           ],
           "output": {
             "state": "tzatziki-final",
@@ -301,34 +287,17 @@
         }
       ]
     },
-    "riz-persan": {
+    {
+      "id": "riz",
       "title": "Riz aux fruits secs et épices",
-      "ingredients": {
-        "mures-seches": { "amount": 30 },
-        "baies-berberes": { "amount": 40 },
-        "feuilles-vigne": { "amount": 8 },
-        "huile-olive": { "amount": 2 },
-        "oignon": { "amount": 1 },
-        "ail": { "amount": 3 },
-        "gingembre": { "amount": 3 },
-        "safran": { "amount": 1 },
-        "riz-basmati": { "amount": 300 },
-        "bouillon-legumes": { "amount": 550 },
-        "carotte": { "amount": 1 },
-        "amandes": { "amount": 50 },
-        "pistaches": { "amount": 50 },
-        "huile-tournesol": { "amount": 3 }
-      },
       "steps": [
         {
           "id": "riz-1",
-          "type": "preparation",
-          "name": "Faire tremper le riz 30 minutes dans l'eau froide puis égoutter",
           "action": "Faire tremper le riz 30 minutes dans l'eau froide puis égoutter",
           "time": "30min",
           "tools": ["saladier", "passoire"],
           "inputs": [
-            { "type": "ingredient", "ref": "riz-basmati" }
+            {"type": "ingredient", "ref": "riz-basmati"}
           ],
           "output": {
             "state": "riz-trempe",
@@ -337,15 +306,13 @@
         },
         {
           "id": "riz-2",
-          "type": "preparation",
-          "name": "Émincer l'oignon, l'ail et râper le gingembre",
           "action": "Émincer l'oignon, l'ail et râper le gingembre",
           "time": "10min",
           "tools": ["couteau", "rape"],
           "inputs": [
-            { "type": "ingredient", "ref": "oignon" },
-            { "type": "ingredient", "ref": "ail" },
-            { "type": "ingredient", "ref": "gingembre" }
+            {"type": "ingredient", "ref": "oignon"},
+            {"type": "ingredient", "ref": "ail"},
+            {"type": "ingredient", "ref": "gingembre"}
           ],
           "output": {
             "state": "aromates-prepares",
@@ -354,15 +321,13 @@
         },
         {
           "id": "riz-3",
-          "type": "cooking",
-          "name": "Faire revenir les aromates dans l'huile d'olive avec le safran",
           "action": "Faire revenir les aromates dans l'huile d'olive avec le safran",
           "time": "5min",
           "tools": ["casserole"],
           "inputs": [
-            { "type": "state", "ref": "aromates-prepares" },
-            { "type": "ingredient", "ref": "huile-olive" },
-            { "type": "ingredient", "ref": "safran" }
+            {"type": "state", "ref": "aromates-prepares"},
+            {"type": "ingredient", "ref": "huile-olive"},
+            {"type": "ingredient", "ref": "safran"}
           ],
           "output": {
             "state": "aromates-revenus",
@@ -371,15 +336,13 @@
         },
         {
           "id": "riz-4",
-          "type": "cooking",
-          "name": "Ajouter le riz égoutté et le bouillon, cuire à feu doux 18-20 minutes",
           "action": "Ajouter le riz égoutté et le bouillon, cuire à feu doux 18-20 minutes",
           "time": "20min",
           "tools": ["casserole"],
           "inputs": [
-            { "type": "state", "ref": "aromates-revenus" },
-            { "type": "state", "ref": "riz-trempe" },
-            { "type": "ingredient", "ref": "bouillon-legumes" }
+            {"type": "state", "ref": "riz-trempe"},
+            {"type": "state", "ref": "aromates-revenus"},
+            {"type": "ingredient", "ref": "bouillon-legumes"}
           ],
           "output": {
             "state": "riz-cuit",
@@ -388,14 +351,12 @@
         },
         {
           "id": "riz-5",
-          "type": "preparation",
-          "name": "Torréfier les amandes et les pistaches",
           "action": "Torréfier les amandes et les pistaches",
           "time": "5min",
           "tools": ["poele"],
           "inputs": [
-            { "type": "ingredient", "ref": "amandes" },
-            { "type": "ingredient", "ref": "pistaches" }
+            {"type": "ingredient", "ref": "amandes"},
+            {"type": "ingredient", "ref": "pistaches"}
           ],
           "output": {
             "state": "fruits-secs-torrefies",
@@ -404,17 +365,15 @@
         },
         {
           "id": "riz-6",
-          "type": "assembly",
-          "name": "Mélanger le riz avec les fruits secs, les mûres, les baies de berbéris et le mélange d'épices",
           "action": "Mélanger le riz avec les fruits secs, les mûres, les baies de berbéris et le mélange d'épices",
           "time": "5min",
           "tools": ["saladier"],
           "inputs": [
-            { "type": "state", "ref": "riz-cuit" },
-            { "type": "state", "ref": "fruits-secs-torrefies" },
-            { "type": "ingredient", "ref": "mures-seches" },
-            { "type": "ingredient", "ref": "baies-berberes" },
-            { "type": "subRecipe", "ref": "melange-epices" }
+            {"type": "state", "ref": "riz-cuit"},
+            {"type": "state", "ref": "fruits-secs-torrefies"},
+            {"type": "ingredient", "ref": "mures-seches"},
+            {"type": "ingredient", "ref": "baies-berberes"},
+            {"type": "state", "ref": "melange-epices-pret"}
           ],
           "output": {
             "state": "riz-final",
@@ -422,6 +381,26 @@
           }
         }
       ]
+    },
+    {
+      "id": "dressage",
+      "title": "Dressage",
+      "steps": [
+        {
+          "id": "dressage-1",
+          "action": "Dresser le riz dans un plat de service et servir le tzatziki à part",
+          "time": "5min",
+          "tools": ["plat-service"],
+          "inputs": [
+            {"type": "step", "ref": "riz-6"},
+            {"type": "step", "ref": "tzatziki-4"}
+          ],
+          "output": {
+            "state": "dressé",
+            "description": "Riz persan dressé avec son tzatziki au beurre noisette"
+          }
+        }
+      ]
     }
-  }
+  ]
 }

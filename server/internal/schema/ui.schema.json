@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["title", "description", "servings", "difficulty", "totalTime", "image", "ingredients", "subRecipes"],
+  "properties": {
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "servings": { "type": "number" },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"]
+    },
+    "totalTime": { "type": "string" },
+    "image": { "type": "string" },
+    "ingredients": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9-]+$": {
+          "type": "object",
+          "required": ["name", "unit", "category"],
+          "properties": {
+            "name": { "type": "string" },
+            "unit": { "type": "string" },
+            "category": { 
+              "type": "string",
+              "enum": [
+                "base",
+                "farine",
+                "sucre",
+                "œuf",
+                "produit-laitier",
+                "chocolat",
+                "fruit-sec",
+                "épices",
+                "autres"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "subRecipes": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9-]+$": {
+          "type": "object",
+          "required": ["title", "ingredients", "steps"],
+          "properties": {
+            "title": { "type": "string" },
+            "warning": { "type": "string" },
+            "ingredients": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9-]+$": {
+                  "type": "object",
+                  "required": ["amount"],
+                  "properties": {
+                    "amount": { "type": "number" }
+                  }
+                }
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "action"],
+                "properties": {
+                  "id": { "type": "string" },
+                  "type": { 
+                    "type": "string",
+                    "enum": ["preparation", "cooking"]
+                  },
+                  "action": { "type": "string" },
+                  "time": { "type": "string" },
+                  "tools": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "inputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["type", "ref"],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": ["ingredient", "state"]
+                        },
+                        "ref": { "type": "string" }
+                      }
+                    }
+                  },
+                  "output": {
+                    "type": "object",
+                    "required": ["state", "description"],
+                    "properties": {
+                      "state": { "type": "string" },
+                      "description": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

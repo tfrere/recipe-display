@@ -36,10 +36,10 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       setSuccessMessage('Récupération de la recette en cours...');
 
       const response = await axios.post(`${API_BASE_URL}/api/recipes/generate`, { 
-        source: recipeSource 
+        prompt: recipeSource 
       }, {
-        // Add a timeout to handle long-running requests
-        timeout: 30000 
+        // 5 minutes timeout
+        timeout: 300000 
       });
 
       // Show success message

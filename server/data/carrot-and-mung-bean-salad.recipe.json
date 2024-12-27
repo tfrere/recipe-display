@@ -1,83 +1,242 @@
 {
-  "data": {
-    "sourceURL": "http://recipes.tfrere.com/recipes/carrot-and-mung-bean-salad/index.html"
-  },
-  "ingredients": {
-    "1": {
-      "name": "dried green mung beans",
-      "quantity": "140g"
-    },
-    "10": {
-      "name": "caster sugar",
-      "quantity": "½ tsp"
-    },
-    "11": {
-      "extra": "chopped",
-      "name": "coriander",
-      "quantity": "20g"
-    },
-    "12": {
-      "extra": "grated",
-      "name": "lemon",
-      "quantity": "zest of 1"
-    },
-    "13": {
-      "extra": "broken into 2cm chunks",
-      "name": "feta",
-      "quantity": "140g"
-    },
-    "14": {
-      "name": "salt",
-      "quantity": "to taste"
-    },
-    "2": {
-      "extra": "plus extra for drizzling",
-      "name": "olive oil",
-      "quantity": "60ml"
-    },
-    "3": {
-      "name": "cumin seeds",
-      "quantity": "1 tsp"
-    },
-    "4": {
-      "name": "caraway seeds",
-      "quantity": "1 tsp"
-    },
-    "5": {
-      "name": "fennel seeds",
-      "quantity": "1 tsp"
-    },
-    "6": {
-      "extra": "crushed",
-      "name": "garlic cloves",
-      "quantity": "2"
-    },
-    "7": {
-      "name": "white wine vinegar",
-      "quantity": "2 tbsp"
-    },
-    "8": {
-      "name": "chilli flakes",
-      "quantity": "½ tsp"
-    },
-    "9": {
-      "extra": "peeled and cut into 5cm x 1cm batons (320g)",
-      "name": "large carrots",
-      "quantity": "3"
-    }
-  },
-  "instructions": [
-    "Pre-heat the oven to 220°C/200°C fan/gas mark 7.",
-    "Bring a medium saucepan of water to the boil, add the mung beans and simmer for 20-25 minutes, until the beans are cooked but still retain a bite. Drain, shake well and transfer to a large mixing bowl. About 3 minutes before the beans are cooked, heat 2 tablespoons of the olive oil in a small frying pan and add the cumin, caraway and fennel seeds. Cook on a medium heat, stirring often, until the seeds start to pop – about 3 minutes. Pour the oil and seeds over the hot beans, and add the garlic, vinegar, chilli flakes and ½ teaspoon of salt. Set aside to cool.",
-    "While the beans are cooking, mix the carrots in a bowl with 150ml of water, the remaining olive oil, the sugar and ½ teaspoon of salt. Pour into a medium (20cm x 30cm) high-sided baking tray and place in the oven for 25-30 minutes until all the water has evaporated and the carrots are nicely roasted and slightly caramelised. Remove from the oven and add to the mung beans along with the coriander and stir gently. Transfer to a large platter, sprinkle over the lemon zest, dot with feta, finish with a final drizzle of oil and serve."
-  ],
   "metadata": {
-    "description": "mung beans are the abba of the food world. hearty and healthy but intrinsically bland and forever stuck in the 1970s i’ll leave abba fans to fight the band’s corner but the reputation of mung beans i can help to redress. used right, mung beans soak up loads of flavour, pack a real punch and just taste fantastic. to keep this dairy-free, omit the feta.",
-    "difficulty": "Intermediate",
-    "image": "http://recipes.tfrere.com/recipes/carrot-and-mung-bean-salad/images/carrot-and-mung-bean-salad.jpg",
-    "servings": "4",
     "title": "Carrot and Mung Bean Salad",
-    "totalTime": "Approximately 1 hour"
+    "description": "A refreshing and nutritious salad made with grated carrots, cooked mung beans, and a zesty dressing.",
+    "servings": 4,
+    "difficulty": "easy",
+    "totalTime": "30min",
+    "image": "carrot-and-mung-bean-salad.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
   },
-  "subRecipes": []
+  "ingredientsList": [
+    {
+      "id": "ingredient2",
+      "name": "mung beans",
+      "unit": "g",
+      "amount": 150
+    },
+    {
+      "id": "ingredient4",
+      "name": "fennel seeds",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient5",
+      "name": "mustard seeds",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient6",
+      "name": "white wine vinegar",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ingredient10",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient11",
+      "name": "pepper",
+      "unit": "tsp",
+      "amount": 0.5
+    },
+    {
+      "id": "ingredient1",
+      "name": "carrots",
+      "unit": "g",
+      "amount": 300
+    },
+    {
+      "id": "ingredient3",
+      "name": "cumin seeds",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient7",
+      "name": "extra virgin olive oil",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ingredient8",
+      "name": "honey",
+      "unit": "tbsp",
+      "amount": 1
+    },
+    {
+      "id": "ingredient9",
+      "name": "fresh cilantro",
+      "unit": "g",
+      "amount": 15
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Carrot and Mung Bean Salad",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Rinse the mung beans and soak them in water for at least 4 hours.",
+          "time": "4h",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient2"
+            }
+          ],
+          "output": {
+            "state": "soaked",
+            "description": "Soaked mung beans"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Drain the soaked mung beans and cook them in boiling water until tender, then drain and let them cool.",
+          "time": "20min",
+          "tools": [
+            "pot",
+            "strainer"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient2"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Cooked mung beans"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Grate the carrots and set aside.",
+          "time": "5min",
+          "tools": [
+            "grater"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient1"
+            }
+          ],
+          "output": {
+            "state": "grated",
+            "description": "Grated carrots"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Toast the cumin, fennel, and mustard seeds in a dry pan until fragrant.",
+          "time": "5min",
+          "tools": [
+            "pan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient5"
+            }
+          ],
+          "output": {
+            "state": "toasted",
+            "description": "Toasted seeds"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Whisk together the white wine vinegar, olive oil, honey, and toasted seeds to make the dressing.",
+          "time": "5min",
+          "tools": [
+            "bowl",
+            "whisk"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient5"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Salad dressing"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Combine the cooked mung beans, grated carrots, chopped cilantro, and dressing in a large bowl, and season with salt and pepper.",
+          "time": "5min",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ingredient1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ingredient11"
+            }
+          ],
+          "output": {
+            "state": "final",
+            "description": "Carrot and Mung Bean Salad ready to serve"
+          }
+        }
+      ]
+    }
+  ]
 }

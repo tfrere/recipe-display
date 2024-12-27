@@ -8,175 +8,215 @@
     "image": "big-pot-of-chili.jpg"
   },
   "ingredients": {
-    "onions": {
-      "name": "Oignons moyens",
-      "unit": "",
-      "category": "base"
-    },
-    "garlic": {
-      "name": "Gousses d'ail",
-      "unit": "",
-      "category": "épices"
-    },
-    "green-bell-pepper": {
-      "name": "Poivron vert",
-      "unit": "",
-      "category": "base"
-    },
-    "red-bell-pepper": {
-      "name": "Poivron rouge",
-      "unit": "",
-      "category": "base"
-    },
     "beans": {
       "name": "Haricots en conserve - pinto, roses ou noirs",
       "unit": "g",
-      "category": "base"
-    },
-    "diced-tomatoes": {
-      "name": "Tomates concassées en conserve",
-      "unit": "g",
-      "category": "base"
-    },
-    "jalapeno": {
-      "name": "Piment jalapeño",
-      "unit": "",
-      "category": "épices"
+      "category": "autres",
+      "amount": 2380
     },
     "chili-powder": {
       "name": "Poudre de chili",
       "unit": "c.à.s",
-      "category": "épices"
+      "category": "autres",
+      "amount": 1
     },
     "cocoa-powder": {
       "name": "Poudre de cacao non sucrée",
       "unit": "c.à.s",
-      "category": "chocolat"
-    },
-    "oregano": {
-      "name": "Origan séché",
-      "unit": "c.à.c",
-      "category": "épices"
-    },
-    "tomato-sauce": {
-      "name": "Sauce tomate",
-      "unit": "g",
-      "category": "base"
+      "category": "autres",
+      "amount": 1
     },
     "cumin": {
       "name": "Cumin moulu",
       "unit": "c.à.c",
-      "category": "épices"
+      "category": "autres",
+      "amount": 2
+    },
+    "diced-tomatoes": {
+      "name": "Tomates concassées en conserve",
+      "unit": "g",
+      "category": "autres",
+      "amount": 800
+    },
+    "garlic": {
+      "name": "Gousses d'ail",
+      "unit": "pièce",
+      "category": "autres",
+      "amount": 5
+    },
+    "green-bell-pepper": {
+      "name": "Poivron vert",
+      "unit": "pièce",
+      "category": "autres",
+      "amount": 1
+    },
+    "jalapeno": {
+      "name": "Piment jalapeño",
+      "unit": "pièce",
+      "category": "autres",
+      "amount": 1
+    },
+    "onions": {
+      "name": "Oignons moyens",
+      "unit": "pièce",
+      "category": "autres",
+      "amount": 2
+    },
+    "oregano": {
+      "name": "Origan séché",
+      "unit": "c.à.c",
+      "category": "autres",
+      "amount": 2
+    },
+    "red-bell-pepper": {
+      "name": "Poivron rouge",
+      "unit": "pièce",
+      "category": "autres",
+      "amount": 1
+    },
+    "tomato-sauce": {
+      "name": "Sauce tomate",
+      "unit": "g",
+      "category": "autres",
+      "amount": 450
     }
   },
   "tools": {
     "large-pot": {
       "name": "Grande marmite",
-      "type": "cuisson"
-    },
-    "cutting-board": {
-      "name": "Planche à découper",
-      "type": "preparation"
-    },
-    "knife": {
-      "name": "Couteau",
-      "type": "ustensile"
+      "type": "cooking"
     },
     "wooden-spoon": {
       "name": "Cuillère en bois",
-      "type": "ustensile"
+      "type": "utensil"
+    },
+    "cutting-board": {
+      "name": "Planche à découper",
+      "type": "utensil"
+    },
+    "knife": {
+      "name": "Couteau",
+      "type": "utensil"
     }
   },
-  "subRecipes": {
-    "chili": {
-      "title": "Chili végétarien",
-      "ingredients": {
-        "onions": { "amount": 2 },
-        "garlic": { "amount": 5 },
-        "green-bell-pepper": { "amount": 1 },
-        "red-bell-pepper": { "amount": 1 },
-        "beans": { "amount": 2380 },
-        "diced-tomatoes": { "amount": 800 },
-        "jalapeno": { "amount": 1 },
-        "chili-powder": { "amount": 1 },
-        "cocoa-powder": { "amount": 1 },
-        "oregano": { "amount": 2 },
-        "tomato-sauce": { "amount": 450 },
-        "cumin": { "amount": 2 }
-      },
+  "subRecipes": [
+    {
+      "id": "base-aromatique",
+      "title": "Base aromatique",
       "steps": [
         {
-          "id": "step-1",
-          "action": "Faire chauffer une grande marmite à feu moyen.",
-          "tools": ["large-pot"]
-        },
-        {
-          "id": "step-2",
-          "action": "Faire revenir les oignons à feu moyen-doux jusqu'à ce qu'ils soient translucides.",
-          "time": "5min",
-          "inputs": [
-            { "type": "ingredient", "ref": "onions" }
-          ],
-          "tools": ["large-pot", "wooden-spoon"],
-          "output": { "state": "oignons-translucides" }
-        },
-        {
-          "id": "step-3",
-          "action": "Ajouter l'ail et faire revenir jusqu'à ce que les oignons soient dorés.",
+          "id": "chauffer",
+          "action": "Faire chauffer une grande marmite à feu moyen",
           "time": "2min",
-          "inputs": [
-            { "type": "ingredient", "ref": "garlic" },
-            { "type": "state", "ref": "oignons-translucides" }
-          ],
-          "tools": ["large-pot", "wooden-spoon"],
-          "output": { "state": "oignons-dores" }
-        },
-        {
-          "id": "step-4",
-          "action": "Ajouter tous les ingrédients restants : les poivrons, les haricots, les tomates concassées, la sauce tomate, le jalapeño et toutes les épices.",
-          "inputs": [
-            { "type": "ingredient", "ref": "green-bell-pepper" },
-            { "type": "ingredient", "ref": "red-bell-pepper" },
-            { "type": "ingredient", "ref": "beans" },
-            { "type": "ingredient", "ref": "diced-tomatoes" },
-            { "type": "ingredient", "ref": "jalapeno" },
-            { "type": "ingredient", "ref": "chili-powder" },
-            { "type": "ingredient", "ref": "cocoa-powder" },
-            { "type": "ingredient", "ref": "oregano" },
-            { "type": "ingredient", "ref": "tomato-sauce" },
-            { "type": "ingredient", "ref": "cumin" },
-            { "type": "state", "ref": "oignons-dores" }
-          ],
-          "tools": ["large-pot", "wooden-spoon"],
-          "output": { "state": "melange-chili" }
-        },
-        {
-          "id": "step-5",
-          "action": "Couvrir et porter à ébullition.",
-          "inputs": [
-            { "type": "state", "ref": "melange-chili" }
-          ],
           "tools": ["large-pot"],
-          "output": { "state": "chili-ebullition" }
+          "inputs": [],
+          "output": {
+            "state": "chaud",
+            "description": "La marmite est chaude et prête à l'emploi"
+          }
         },
         {
-          "id": "step-6",
-          "action": "Réduire le feu et laisser mijoter doucement pendant 30 minutes, en remuant de temps en temps, jusqu'à ce que les poivrons soient tendres et que les saveurs se soient mélangées.",
-          "time": "30min",
-          "inputs": [
-            { "type": "state", "ref": "chili-ebullition" }
-          ],
+          "id": "oignons",
+          "action": "Faire revenir les oignons à feu moyen-doux jusqu'à ce qu'ils soient translucides",
+          "time": "5min",
           "tools": ["large-pot", "wooden-spoon"],
-          "output": { "state": "chili-cuit" }
+          "inputs": [
+            {"type": "ingredient", "ref": "onions"}
+          ],
+          "output": {
+            "state": "translucide",
+            "description": "Les oignons sont translucides"
+          }
         },
         {
-          "id": "step-7",
-          "action": "Assaisonner avec du sel et du poivre, puis servir.",
+          "id": "ail",
+          "action": "Ajouter l'ail et faire revenir jusqu'à ce que les oignons soient dorés",
+          "time": "2min",
+          "tools": ["large-pot", "wooden-spoon"],
           "inputs": [
-            { "type": "state", "ref": "chili-cuit" }
-          ]
+            {"type": "ingredient", "ref": "garlic"},
+            {"type": "step", "ref": "oignons"}
+          ],
+          "output": {
+            "state": "doré",
+            "description": "Les oignons sont dorés et l'ail est revenu"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chili",
+      "title": "Chili",
+      "steps": [
+        {
+          "id": "melange",
+          "action": "Ajouter tous les ingrédients : les poivrons, les haricots, les tomates concassées, la sauce tomate, le jalapeño et toutes les épices",
+          "time": "5min",
+          "tools": ["large-pot", "wooden-spoon"],
+          "inputs": [
+            {"type": "step", "ref": "ail"},
+            {"type": "ingredient", "ref": "green-bell-pepper"},
+            {"type": "ingredient", "ref": "red-bell-pepper"},
+            {"type": "ingredient", "ref": "beans"},
+            {"type": "ingredient", "ref": "diced-tomatoes"},
+            {"type": "ingredient", "ref": "jalapeno"},
+            {"type": "ingredient", "ref": "chili-powder"},
+            {"type": "ingredient", "ref": "cocoa-powder"},
+            {"type": "ingredient", "ref": "oregano"},
+            {"type": "ingredient", "ref": "tomato-sauce"},
+            {"type": "ingredient", "ref": "cumin"}
+          ],
+          "output": {
+            "state": "mélangé",
+            "description": "Tous les ingrédients sont mélangés dans la marmite"
+          }
+        },
+        {
+          "id": "ebullition",
+          "action": "Couvrir et porter à ébullition",
+          "time": "10min",
+          "tools": ["large-pot"],
+          "inputs": [
+            {"type": "step", "ref": "melange"}
+          ],
+          "output": {
+            "state": "bouillant",
+            "description": "Le chili est à ébullition"
+          }
+        },
+        {
+          "id": "mijoter",
+          "action": "Réduire le feu et laisser mijoter doucement, en remuant de temps en temps, jusqu'à ce que les poivrons soient tendres et que les saveurs se soient mélangées",
+          "time": "30min",
+          "tools": ["large-pot", "wooden-spoon"],
+          "inputs": [
+            {"type": "step", "ref": "ebullition"}
+          ],
+          "output": {
+            "state": "cuit",
+            "description": "Le chili a mijoté et les poivrons sont tendres"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dressage",
+      "title": "Dressage",
+      "steps": [
+        {
+          "id": "servir",
+          "action": "Assaisonner avec du sel et du poivre, puis servir",
+          "time": "2min",
+          "tools": [],
+          "inputs": [
+            {"type": "step", "ref": "mijoter"}
+          ],
+          "output": {
+            "state": "servi",
+            "description": "Le chili est assaisonné et servi"
+          }
         }
       ]
     }
-  }
+  ]
 }

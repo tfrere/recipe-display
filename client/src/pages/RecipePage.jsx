@@ -11,12 +11,14 @@ const VIEWS = {
 };
 
 const RecipePage = ({ currentView }) => {
-  const { recipeId } = useParams();
+  const { slug } = useParams();
   const { recipe, loadRecipe } = useRecipe();
 
   useEffect(() => {
-    loadRecipe(recipeId);
-  }, [recipeId, loadRecipe]);
+    if (slug) {
+      loadRecipe(slug);
+    }
+  }, [slug, loadRecipe]);
 
   const renderView = () => {
     switch (currentView) {
@@ -29,7 +31,7 @@ const RecipePage = ({ currentView }) => {
 
   return (
     <Box sx={{ 
-      height: 'calc(100vh - 64px)', // hauteur totale moins la hauteur de la navbar
+      height: 'calc(100vh - 64px)', 
       overflow: "hidden",
       display: 'flex',
       flexDirection: 'column'

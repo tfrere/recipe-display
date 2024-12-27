@@ -8,7 +8,6 @@ export const highlightMatches = (text, recipe, step) => {
     .filter(Boolean) || [];
 
   const toolNames = (step.tools || [])
-    .map((toolId) => recipe.tools[toolId]?.name)
     .filter(Boolean);
 
   const stateNames = [

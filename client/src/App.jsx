@@ -29,7 +29,7 @@ function App() {
                 <Navigation currentView={currentView} onViewChange={setCurrentView} />
                 <Routes>
                   <Route path="/" element={<HomePage />} />
-                  <Route path="/recipe/:recipeId" element={<RecipePage currentView={currentView} />} />
+                  <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />
                 </Routes>
               </Box>
             </Router>

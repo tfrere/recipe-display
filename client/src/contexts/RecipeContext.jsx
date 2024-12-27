@@ -546,7 +546,7 @@ export const RecipeProvider = ({ children }) => {
   const updateServings = useCallback((newServings) => {
     if (!state.recipe) return;
     
-    const originalServings = state.recipe.metadata.servings;
+    const originalServings = state.recipe.servings;
     const multiplier = newServings / originalServings;
     
     dispatch({
@@ -640,7 +640,7 @@ export const RecipeProvider = ({ children }) => {
     getSubRecipeRemainingTime,
     getSubRecipeStats,
     getCompletedSubRecipesCount,
-    currentServings: state.recipe ? Math.round((state.recipe.metadata.servings || 4) * state.servingsMultiplier) : 0,
+    currentServings: state.recipe ? Math.round((state.recipe.servings || 4) * state.servingsMultiplier) : 0,
     calculateUnusedItems: () => calculateUnusedItems(state.recipe, state.completedSteps),
     getTotalProgress,
     getTotalProgressPercentage,

@@ -3,6 +3,14 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
   const links = [];
   const processedNodes = new Set();
 
+  // Créer un objet tools à partir de toolsList pour une recherche plus facile
+  const toolsMap = {};
+  if (recipe.toolsList) {
+    recipe.toolsList.forEach(tool => {
+      toolsMap[tool.id] = tool;
+    });
+  }
+
   // Ajouter les ingrédients
   if (subRecipe.ingredients) {
     Object.entries(subRecipe.ingredients).forEach(([ingredientId, data]) => {
@@ -27,7 +35,7 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
       type: "action",
       time: step.time,
       temperature: step.temperature,
-      tools: step.tools?.map((toolId) => recipe.tools[toolId].name),
+      tools: step.tools?.map((toolId) => toolsMap[toolId]?.name || toolId),
     });
     processedNodes.add(step.id);
 
