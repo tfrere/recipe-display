@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { highlightMatches } from '../../../utils/textUtils.jsx';
+import { useTranslation } from 'react-i18next';
 
 const parseTime = (timeString) => {
   if (!timeString) return 0;
@@ -10,12 +11,14 @@ const parseTime = (timeString) => {
 };
 
 export const TimeDisplay = ({ minutes, sx = {} }) => {
+  const { t } = useTranslation();
+  
   if (!minutes) return null;
   
   if (minutes < 60) {
     return (
       <Box component="span" sx={{ display: 'inline', ...sx }}>
-        {minutes} min
+        {t('recipe.time.minute', { count: minutes })}
       </Box>
     );
   }
@@ -26,14 +29,14 @@ export const TimeDisplay = ({ minutes, sx = {} }) => {
   if (remainingMinutes === 0) {
     return (
       <Box component="span" sx={{ display: 'inline', ...sx }}>
-        {hours} {hours === 1 ? 'hour' : 'hours'}
+        {t('recipe.time.hour', { count: hours })}
       </Box>
     );
   }
   
   return (
     <Box component="span" sx={{ display: 'inline', ...sx }}>
-      {hours} {hours === 1 ? 'hour' : 'hours'} {remainingMinutes} min
+      {t('recipe.time.hourMinute', { count: hours, minutes: remainingMinutes })}
     </Box>
   );
 };
@@ -48,6 +51,7 @@ const PreparationSteps = ({ recipe }) => {
     getSubRecipeStats,
     getCompletedSubRecipesCount
   } = useRecipe();
+  const { t } = useTranslation();
 
   const handleSubRecipeClick = (subRecipeId, steps) => {
     const isCompleted = !completedSubRecipes[subRecipeId];
@@ -81,7 +85,7 @@ const PreparationSteps = ({ recipe }) => {
         gap: 1
       }}>
         <Typography variant="h5" component="span">
-          Préparation
+          {t('recipe.sections.preparation')}
         </Typography>
         {isSingleSubRecipe ? (
           <Typography 

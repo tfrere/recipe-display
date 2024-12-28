@@ -1,89 +1,108 @@
-import React from 'react';
-import { Box, Typography, Button, Switch, FormControlLabel, IconButton } from '@mui/material';
+import React, { useMemo } from 'react';
+import { Box, Typography, Button, Switch, FormControlLabel, IconButton, Tooltip } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { GRAM_UNITS } from '../../../utils/ingredientScaling';
+import { useTranslation } from 'react-i18next';
 
 const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
+  const { t } = useTranslation();
   const { getAdjustedAmount, formatAmount, isIngredientUnused, completedSteps } = useRecipe();
-  
-  const subRecipeOrder = Object.entries(recipe.subRecipes || {}).map(([id]) => id);
-  const allIngredients = Object.entries(recipe.subRecipes || {}).reduce((acc, [subRecipeId, subRecipe]) => {
-    Object.entries(subRecipe.ingredients || {}).forEach(([ingredientId, data]) => {
-      const ingredient = recipe.ingredients[ingredientId];
-      const adjustedAmount = getAdjustedAmount(data.amount, ingredient.unit, ingredient.category);
-      acc.push({
-        id: ingredientId,
-        name: ingredient.name,
-        amount: adjustedAmount,
-        unit: ingredient.unit,
-        subRecipeId,
-        subRecipeTitle: subRecipe.title,
-        category: ingredient.category || 'autres',
-        displayAmount: formatAmount(adjustedAmount, ingredient.unit)
+
+  // Call all hooks at the top level
+  const subRecipeOrder = useMemo(() => {
+    return Object.entries(recipe.subRecipes || {}).map(([id]) => id);
+  }, [recipe.subRecipes]);
+
+  const allIngredients = useMemo(() => {
+    if (!recipe.subRecipes || !recipe.ingredients) return [];
+    
+    return Object.entries(recipe.subRecipes).reduce((acc, [subRecipeId, subRecipe]) => {
+      if (!subRecipe.ingredients) return acc;
+      
+      Object.entries(subRecipe.ingredients).forEach(([ingredientId, data]) => {
+        const ingredient = recipe.ingredients[ingredientId];
+        if (!ingredient) return;
+
+        const adjustedAmount = getAdjustedAmount(data.amount, ingredient.unit, ingredient.category);
+        acc.push({
+          id: ingredientId,
+          name: ingredient.name,
+          amount: adjustedAmount,
+          unit: ingredient.unit,
+          subRecipeId,
+          subRecipeTitle: subRecipe.title,
+          category: ingredient.category || 'autres',
+        });
       });
-    });
-    return acc;
-  }, []);
-
-  const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
-  const remainingIngredients = allIngredients.filter(ing => !isIngredientUnused(ing.name)).length;
-
-  let sortedIngredients;
-  if (sortByCategory) {
-    const categoryOrder = [
-      'base',
-      'farine',
-      'sucre',
-      'œuf',
-      'produit-laitier',
-      'chocolat',
-      'fruit-sec',
-      'épices',
-      'autres'
-    ];
-
-    // Agrégation des ingrédients par nom et unité
-    const aggregatedIngredients = allIngredients.reduce((acc, ingredient) => {
-      // Crée une clé unique pour chaque combinaison nom+unité
-      const key = `${ingredient.name}|${ingredient.unit || ''}|${ingredient.category}`;
-      if (!acc[key]) {
-        acc[key] = {
-          ...ingredient,
-          amount: 0,
-        };
-      }
-      acc[key].amount += ingredient.amount;
-      // Recalcule le displayAmount avec la nouvelle quantité totale
-      acc[key].displayAmount = formatAmount(acc[key].amount, ingredient.unit);
       return acc;
-    }, {});
+    }, []);
+  }, [recipe.subRecipes, recipe.ingredients, getAdjustedAmount]);
 
-    const groupedByCategory = Object.values(aggregatedIngredients).reduce((acc, ingredient) => {
-      const category = ingredient.category;
-      if (!acc[category]) {
-        acc[category] = [];
-      }
-      acc[category].push(ingredient);
-      return acc;
-    }, {});
+  const formattedIngredients = useMemo(() => {
+    return allIngredients.map(ingredient => ({
+      ...ingredient,
+      displayAmount: formatAmount(ingredient.amount, ingredient.unit)
+    }));
+  }, [allIngredients, formatAmount]);
 
-    Object.values(groupedByCategory).forEach(ingredients => {
-      ingredients.sort((a, b) => a.name.localeCompare(b.name));
-    });
+  const categoryOrder = useMemo(() => [
+    'base',
+    'farine',
+    'sucre',
+    'œuf',
+    'produit-laitier',
+    'chocolat',
+    'fruit-sec',
+    'épices',
+    'autres'
+  ], []);
 
-    sortedIngredients = Object.entries(groupedByCategory)
-      .sort(([catA], [catB]) => {
-        const indexA = categoryOrder.indexOf(catA);
-        const indexB = categoryOrder.indexOf(catB);
-        if (indexA === -1 && indexB === -1) return catA.localeCompare(catB);
-        if (indexA === -1) return 1;
-        if (indexB === -1) return -1;
-        return indexA - indexB;
-      })
-      .flatMap(([category, ingredients]) => ingredients);
-  } else {
-    sortedIngredients = allIngredients.sort((a, b) => {
+  const sortedIngredients = useMemo(() => {
+    if (!formattedIngredients.length) return [];
+
+    if (sortByCategory) {
+      // Agrégation des ingrédients par nom et unité
+      const aggregatedIngredients = formattedIngredients.reduce((acc, ingredient) => {
+        const key = `${ingredient.name}|${ingredient.unit || ''}|${ingredient.category}`;
+        if (!acc[key]) {
+          acc[key] = { ...ingredient };
+        } else {
+          acc[key].amount += ingredient.amount;
+          acc[key].displayAmount = formatAmount(acc[key].amount, acc[key].unit);
+        }
+        return acc;
+      }, {});
+
+      const groupedByCategory = Object.values(aggregatedIngredients).reduce((acc, ingredient) => {
+        const category = ingredient.category || 'autres';
+        if (!acc[category]) {
+          acc[category] = [];
+        }
+        acc[category].push(ingredient);
+        return acc;
+      }, {});
+
+      // Sort ingredients within each category
+      Object.values(groupedByCategory).forEach(ingredients => {
+        ingredients.sort((a, b) => a.name.localeCompare(b.name));
+      });
+
+      return Object.entries(groupedByCategory)
+        .sort(([catA], [catB]) => {
+          const indexA = categoryOrder.indexOf(catA);
+          const indexB = categoryOrder.indexOf(catB);
+          if (indexA === -1 && indexB === -1) return catA.localeCompare(catB);
+          if (indexA === -1) return 1;
+          if (indexB === -1) return -1;
+          return indexA - indexB;
+        })
+        .flatMap(([_, ingredients]) => ingredients);
+    }
+
+    // Sort by subRecipe order
+    return formattedIngredients.sort((a, b) => {
       const indexA = subRecipeOrder.indexOf(a.subRecipeId);
       const indexB = subRecipeOrder.indexOf(b.subRecipeId);
       if (indexA === indexB) {
@@ -91,7 +110,10 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       }
       return indexA - indexB;
     });
-  }
+  }, [formattedIngredients, sortByCategory, subRecipeOrder, categoryOrder, formatAmount]);
+
+  const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
+  const remainingIngredients = allIngredients.filter(ing => !isIngredientUnused(ing.name)).length;
 
   const distributeInColumns = (items, columnCount) => {
     const itemsPerColumn = Math.ceil(items.length / columnCount);
@@ -128,7 +150,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexGrow: 1 }}>
           <Typography variant="h5" component="span">
-            Ingrédients
+            {t('recipe.sections.ingredients')}
           </Typography>
           <Typography 
             variant="body2" 
@@ -143,24 +165,23 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           </Typography>
         </Box>
         {sortByCategory && (
-          <Button
-            variant="outlined"
-            color="inherit"
-            size="small"
-            onClick={handleCopyIngredients}
-            startIcon={<ContentCopyIcon sx={{ fontSize: '1.1rem' }} />}
-            sx={{ 
-              color: 'text.secondary',
-              borderColor: 'divider',
-              '&:hover': {
-                bgcolor: 'action.hover',
-                borderColor: 'text.secondary'
-              },
-              py: 0.5
-            }}
-          >
-            Copier la liste
-          </Button>
+          <Tooltip title={t('recipe.actions.copyIngredients')}>
+            <IconButton
+              onClick={handleCopyIngredients}
+              size="small"
+              color="default"
+              aria-label={t('recipe.actions.copyIngredients')}
+              sx={{
+                border: '1px solid',
+                borderColor: 'divider',
+                '&:hover': {
+                  borderColor: 'action.hover'
+                }
+              }}
+            >
+              <ContentCopyOutlinedIcon fontSize="small" />
+            </IconButton>
+          </Tooltip>
         )}
         <FormControlLabel
           control={
@@ -195,11 +216,9 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           label={
             <Typography 
               variant="body2" 
-              sx={{ 
-                color: 'text.secondary'
-              }}
+              color="text.secondary"
             >
-              Mode liste de courses
+              {sortByCategory ? t('recipe.modes.shoppingList') : t('recipe.modes.ingredients')}
             </Typography>
           }
           sx={{
@@ -221,7 +240,21 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
         }}
       >
         {columns.map((column, columnIndex) => (
-          <Box key={columnIndex} sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+          <Box 
+            key={columnIndex} 
+            sx={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              gap: 0.5,
+              borderRight: columnIndex < columns.length - 1 ? '1px solid' : 'none',
+              borderColor: 'divider',
+              pr: 3,
+              '@media (max-width: 600px)': {
+                borderRight: 'none',
+                pr: 0
+              }
+            }}
+          >
             {column.map((ingredient, index) => {
               const categoryKey = sortByCategory ? ingredient.category : ingredient.subRecipeId;
               const showHeader = !displayedCategories.has(categoryKey);

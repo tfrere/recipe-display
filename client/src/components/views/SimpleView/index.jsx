@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
-import { Box, Divider, Container, Typography } from '@mui/material';
+import React from 'react';
+import { Box, Typography, Container, Divider } from '@mui/material';
 import { useRecipe } from '../../../contexts/RecipeContext';
+import { useLayout, LAYOUT_MODES } from '../../../contexts/LayoutContext';
 import RecipeHeader from './RecipeHeader';
 import IngredientsList from './IngredientsList';
 import ToolsList from './ToolsList';
 import PreparationSteps from './PreparationSteps';
+import SingleColumnLayout from '../../layouts/SingleColumnLayout';
+import TwoColumnLayout from '../../layouts/TwoColumnLayout';
 
 const PrintableRecipe = ({ recipe }) => (
   <Box className="printable-recipe" sx={{
@@ -119,43 +122,61 @@ const PrintableRecipe = ({ recipe }) => (
 
 const SimpleView = () => {
   const { recipe } = useRecipe();
-  const [sortByCategory, setSortByCategory] = useState(false);
+  const { layoutMode } = useLayout();
+  const [sortByCategory, setSortByCategory] = React.useState(false);
 
-  const handlePrint = () => {
-    window.print();
-  };
+  if (!recipe) return null;
 
-  if (!recipe) {
-    return null;
-  }
+  const header = (
+    <RecipeHeader recipe={recipe} />
+  );
 
-  return (
+  const content = layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? (
     <>
-      <Box sx={{ 
-        height: '100%',
-        overflow: 'auto',
-        bgcolor: 'background.paper',
-        p: { xs: 2, sm: 3, md: 4 },
-        '@media print': { display: 'none' }
-      }}>
-        <Container maxWidth="md" sx={{ maxWidth: '1000px !important' }}>
-          <RecipeHeader recipe={recipe} onPrint={handlePrint} />
-          <Divider sx={{ my: 4 }} />
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <IngredientsList 
-            recipe={recipe}
-            sortByCategory={sortByCategory}
+            recipe={recipe} 
+            sortByCategory={sortByCategory} 
             setSortByCategory={setSortByCategory}
           />
-          <Box sx={{ my: 4 }}>
-            <ToolsList recipe={recipe} />
-          </Box>
-          <Divider sx={{ my: 4 }} />
-          <PreparationSteps recipe={recipe} />
-        </Container>
+          <ToolsList recipe={recipe} />
+        </Box>
+        <Divider />
+        <PreparationSteps recipe={recipe} />
       </Box>
-
       <PrintableRecipe recipe={recipe} />
     </>
+  ) : (
+    <>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <IngredientsList 
+            recipe={recipe} 
+            sortByCategory={sortByCategory} 
+            setSortByCategory={setSortByCategory}
+          />
+          <ToolsList recipe={recipe} />
+        </Box>
+        <Divider />
+        <PreparationSteps recipe={recipe} />
+      </Box>
+      <PrintableRecipe recipe={recipe} />
+    </>
+  );
+
+  return layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? (
+    <SingleColumnLayout 
+      header={
+        <>
+          {header}
+          <Divider sx={{ my: 3 }} />
+        </>
+      } 
+      content={content} 
+    />
+  ) : (
+    <TwoColumnLayout header={header} content={content} />
   );
 };
 

@@ -6,6 +6,7 @@ import RecipePage from "./pages/RecipePage";
 import { RecipeProvider } from "./contexts/RecipeContext";
 import { ThemeProvider } from './contexts/ThemeContext';
 import { PreferencesProvider } from './contexts/PreferencesContext';
+import { LayoutProvider } from './contexts/LayoutContext';
 import Navigation from './components/common/Navigation';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
@@ -22,18 +23,20 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <ThemeProvider>
         <PreferencesProvider>
-          <RecipeProvider>
-            <CssBaseline />
-            <Router>
-              <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
-                <Navigation currentView={currentView} onViewChange={setCurrentView} />
-                <Routes>
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />
-                </Routes>
-              </Box>
-            </Router>
-          </RecipeProvider>
+          <LayoutProvider>
+            <RecipeProvider>
+              <CssBaseline />
+              <Router>
+                <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
+                  <Navigation currentView={currentView} onViewChange={setCurrentView} />
+                  <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />
+                  </Routes>
+                </Box>
+              </Router>
+            </RecipeProvider>
+          </LayoutProvider>
         </PreferencesProvider>
       </ThemeProvider>
     </I18nextProvider>

@@ -12,6 +12,8 @@ import RecipeImage from '../../common/RecipeImage';
 import RecipeChip, { CHIP_TYPES } from '../../common/RecipeChip';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { useTheme } from '../../../contexts/ThemeContext';
+import { useLayout, LAYOUT_MODES } from '../../../contexts/LayoutContext';
+import { useTranslation } from 'react-i18next';
 import { TimeDisplay } from './PreparationSteps';
 
 const formatTime = (minutes) => {
@@ -32,9 +34,11 @@ const formatTime = (minutes) => {
   return `${hours}h${remainingMinutes}`;
 };
 
-const RecipeHeader = ({ recipe, onPrint }) => {
+const RecipeHeader = ({ recipe }) => {
   const { currentServings, updateServings, getRemainingTime, resetRecipeState, isRecipePristine, completedSteps } = useRecipe();
   const { darkMode, toggleDarkMode } = useTheme();
+  const { layoutMode } = useLayout();
+  const { t } = useTranslation();
 
   const handleServingsChange = (delta) => {
     const newServings = currentServings + delta;
@@ -98,7 +102,11 @@ ${Object.entries(recipe.steps || {})
           gap: 2,
           '@media print': { display: 'none' }
         }}>
-          <Typography variant="h3" component="h1" align="center">
+          <Typography 
+            variant={layoutMode === LAYOUT_MODES.TWO_COLUMN ? "h4" : "h3"} 
+            component="h1" 
+            align="center"
+          >
             {title}
           </Typography>
           
@@ -112,13 +120,20 @@ ${Object.entries(recipe.steps || {})
         {/* Metadata and Controls */}
         <Box sx={{ 
           display: 'flex',
+          flexDirection: layoutMode === LAYOUT_MODES.TWO_COLUMN ? 'column' : 'row',
           gap: 2,
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
           '@media print': { display: 'none' }
         }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+          <Box sx={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: 2,
+            width: layoutMode === LAYOUT_MODES.TWO_COLUMN ? '100%' : 'auto',
+            justifyContent: layoutMode === LAYOUT_MODES.TWO_COLUMN ? 'space-between' : 'flex-start'
+          }}>
             {/* Temps */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <AccessTimeIcon fontSize="small" color="action" />
@@ -133,11 +148,7 @@ ${Object.entries(recipe.steps || {})
                   const remainingTime = getRemainingTime();
                   const hasCompletedSteps = Object.keys(completedSteps).length > 0;
                   if (remainingTime !== null && hasCompletedSteps) {
-                    return (
-                      <>
-                        <TimeDisplay minutes={remainingTime} /> restantes
-                      </>
-                    );
+                    return t('recipe.time.remaining', { count: <TimeDisplay minutes={remainingTime} /> });
                   }
                   const totalTime = recipe.totalTime.match(/(\d+)h?/)?.[1] * (recipe.totalTime.includes('h') ? 60 : 1) || 0;
                   return <TimeDisplay minutes={totalTime} />;
@@ -145,7 +156,21 @@ ${Object.entries(recipe.steps || {})
               </Typography>
             </Box>
 
-            <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+            {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
+              <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+            )}
+
+            {/* Difficulté */}
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <SignalCellularAltIcon fontSize="small" color="action" />
+              <Typography variant="body2" color="text.secondary" sx={{ textTransform: 'capitalize' }}>
+                {recipe.difficulty}
+              </Typography>
+            </Box>
+
+            {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
+              <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+            )}
 
             {/* Personnes */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
@@ -157,9 +182,9 @@ ${Object.entries(recipe.steps || {})
                   fontWeight: currentServings !== recipe.servings ? 700 : 400 
                 }}
               >
-                {currentServings} {currentServings > 1 ? 'personnes' : 'personne'}
+                {t('recipe.servings.' + (currentServings > 1 ? 'multiple' : 'single'), { count: currentServings })}
               </Typography>
-              <Tooltip title="Réduire les portions">
+              <Tooltip title={t('recipe.actions.decreaseServings')}>
                 <IconButton 
                   size="small"
                   onClick={() => handleServingsChange(-1)}
@@ -175,7 +200,7 @@ ${Object.entries(recipe.steps || {})
                   <RemoveIcon sx={{ fontSize: '1rem' }} />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Augmenter les portions">
+              <Tooltip title={t('recipe.actions.increaseServings')}>
                 <IconButton 
                   size="small"
                   onClick={() => handleServingsChange(1)}
@@ -191,26 +216,89 @@ ${Object.entries(recipe.steps || {})
                 </IconButton>
               </Tooltip>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+          </Box>
 
-            {/* Difficulté */}
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <SignalCellularAltIcon fontSize="small" color="action" />
-              <Typography variant="body2" color="text.secondary" sx={{ textTransform: 'capitalize' }}>
-                {recipe.difficulty}
-              </Typography>
+          {layoutMode === LAYOUT_MODES.TWO_COLUMN && (
+            <Box sx={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: 2,
+              width: '100%',
+              justifyContent: 'center'
+            }}>
+              {/* Boutons d'action */}
+              <Box sx={{ display: 'flex', gap: 1 }}>
+                <Tooltip title={t('recipe.actions.print')}>
+                  <IconButton 
+                    onClick={() => window.print()} 
+                    size="small"
+                    color="default"
+                    aria-label={t('recipe.actions.print')}
+                    sx={{
+                      border: '1px solid',
+                      borderColor: 'divider',
+                      '&:hover': {
+                        borderColor: 'action.hover'
+                      }
+                    }}
+                  >
+                    <PrintOutlinedIcon fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title={t('recipe.actions.copy')}>
+                  <IconButton
+                    onClick={copyRecipeToClipboard}
+                    size="small"
+                    color="default"
+                    aria-label={t('recipe.actions.copy')}
+                    sx={{
+                      border: '1px solid',
+                      borderColor: 'divider',
+                      '&:hover': {
+                        borderColor: 'action.hover'
+                      }
+                    }}
+                  >
+                    <ContentCopyOutlinedIcon fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title={t('recipe.actions.reset')}>
+                  <span>
+                    <IconButton
+                      onClick={resetRecipeState}
+                      size="small"
+                      color="default"
+                      disabled={isRecipePristine()}
+                      aria-label={t('recipe.actions.reset')}
+                      sx={{
+                        border: '1px solid',
+                        borderColor: 'divider',
+                        '&:hover': {
+                          borderColor: 'action.hover'
+                        }
+                      }}
+                    >
+                      <RestartAltIcon fontSize="small" />
+                    </IconButton>
+                  </span>
+                </Tooltip>
+              </Box>
             </Box>
+          )}
 
+          {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
             <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+          )}
 
-            {/* Boutons d'action */}
+          {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
+            /* Boutons d'action */
             <Box sx={{ display: 'flex', gap: 1 }}>
-              <Tooltip title="Imprimer la recette">
+              <Tooltip title={t('recipe.actions.print')}>
                 <IconButton 
                   onClick={() => window.print()} 
                   size="small"
                   color="default"
-                  aria-label="Imprimer la recette"
+                  aria-label={t('recipe.actions.print')}
                   sx={{
                     border: '1px solid',
                     borderColor: 'divider',
@@ -222,12 +310,12 @@ ${Object.entries(recipe.steps || {})
                   <PrintOutlinedIcon fontSize="small" />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Copier la recette">
+              <Tooltip title={t('recipe.actions.copy')}>
                 <IconButton
                   onClick={copyRecipeToClipboard}
                   size="small"
                   color="default"
-                  aria-label="Copier la recette"
+                  aria-label={t('recipe.actions.copy')}
                   sx={{
                     border: '1px solid',
                     borderColor: 'divider',
@@ -239,14 +327,14 @@ ${Object.entries(recipe.steps || {})
                   <ContentCopyOutlinedIcon fontSize="small" />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Réinitialiser la recette">
+              <Tooltip title={t('recipe.actions.reset')}>
                 <span>
                   <IconButton
                     onClick={resetRecipeState}
                     size="small"
                     color="default"
                     disabled={isRecipePristine()}
-                    aria-label="Réinitialiser la recette"
+                    aria-label={t('recipe.actions.reset')}
                     sx={{
                       border: '1px solid',
                       borderColor: 'divider',
@@ -260,7 +348,7 @@ ${Object.entries(recipe.steps || {})
                 </span>
               </Tooltip>
             </Box>
-          </Box>
+          )}
         </Box>
       </Box>
     </Container>

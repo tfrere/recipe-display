@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { IconButton, Menu, MenuItem, ListItemIcon, ListItemText, Divider, Typography, Select } from '@mui/material';
+import { IconButton, Menu, MenuItem, ListItemIcon, ListItemText, Divider, Typography, Select, Box } from '@mui/material';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ViewStreamOutlinedIcon from '@mui/icons-material/ViewStreamOutlined';
 import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
+import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
+import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import { usePreferences } from '../../contexts/PreferencesContext';
+import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
 import { useTranslation } from 'react-i18next';
 
 const VIEWS = {
@@ -11,9 +16,10 @@ const VIEWS = {
   SIMPLE: 'simple'
 };
 
-const SettingsMenu = ({ currentView, onViewChange, isRecipePage }) => {
+const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, onToggleDarkMode }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const { unitSystem, toggleUnitSystem } = usePreferences();
+  const { layoutMode, toggleLayout } = useLayout();
   const { t, i18n } = useTranslation();
   const open = Boolean(anchorEl);
 
@@ -62,11 +68,38 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage }) => {
         open={open}
         onClose={handleClose}
         PaperProps={{
+          elevation: 3,
           sx: {
-            minWidth: 200,
+            minWidth: 250,
+            overflow: 'visible',
+            mt: 1.5,
+            '&:before': {
+              content: '""',
+              display: 'block',
+              position: 'absolute',
+              top: 0,
+              right: 14,
+              width: 10,
+              height: 10,
+              bgcolor: 'background.paper',
+              transform: 'translateY(-50%) rotate(45deg)',
+              zIndex: 0,
+            },
             '& .MuiMenuItem-root': {
-              py: 1,
-              px: 2
+              py: 1.5,
+              px: 2.5
+            },
+            '& .MuiDivider-root': {
+              my: 1
+            },
+            '& .MuiTypography-root.menu-section': {
+              px: 2.5,
+              py: 1.5,
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              letterSpacing: '0.5px',
+              textTransform: 'uppercase',
+              color: 'text.secondary'
             }
           }
         }}
@@ -75,7 +108,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage }) => {
       >
         {isRecipePage && (
           <>
-            <Typography variant="body2" color="text.secondary" sx={{ px: 2, py: 1 }}>
+            <Typography variant="body2" color="text.secondary" className="menu-section">
               {t('navigation.settings.view')}
             </Typography>
             <MenuItem 
@@ -96,40 +129,107 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage }) => {
               </ListItemIcon>
               <ListItemText>{t('navigation.views.graph')}</ListItemText>
             </MenuItem>
-            <Divider sx={{ my: 1 }} />
+            <Divider />
           </>
         )}
 
-        <Typography variant="body2" color="text.secondary" sx={{ px: 2, py: 1 }}>
-          {t('navigation.settings.units')}
+        {isRecipePage && currentView === VIEWS.SIMPLE && (
+          <>
+            <Typography variant="body2" color="text.secondary" className="menu-section">
+              {t('navigation.settings.layout')}
+            </Typography>
+            <MenuItem onClick={toggleLayout}>
+              <ListItemIcon>
+                {layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? 
+                  <ViewColumnOutlinedIcon fontSize="small" /> : 
+                  <ViewAgendaOutlinedIcon fontSize="small" />
+                }
+              </ListItemIcon>
+              <ListItemText>
+                {layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? 
+                  t('navigation.settings.twoColumns') : 
+                  t('navigation.settings.oneColumn')
+                }
+              </ListItemText>
+            </MenuItem>
+            <Divider />
+          </>
+        )}
+
+        <Typography variant="body2" color="text.secondary" className="menu-section">
+          {t('navigation.settings.preferences')}
         </Typography>
-        <MenuItem>
-          <Select
-            value={unitSystem}
-            onChange={handleUnitChange}
-            size="small"
-            fullWidth
-            variant="standard"
-          >
-            <MenuItem value="metric">{t('navigation.settings.unitsSystem.metric')}</MenuItem>
-            <MenuItem value="imperial">{t('navigation.settings.unitsSystem.imperial')}</MenuItem>
-          </Select>
+
+        <MenuItem onClick={onToggleDarkMode}>
+          <ListItemIcon>
+            {darkMode ? 
+              <DarkModeOutlinedIcon fontSize="small" /> : 
+              <LightModeOutlinedIcon fontSize="small" />
+            }
+          </ListItemIcon>
+          <ListItemText>
+            {darkMode ? t('navigation.settings.lightMode') : t('navigation.settings.darkMode')}
+          </ListItemText>
         </MenuItem>
 
-        <Typography variant="body2" color="text.secondary" sx={{ px: 2, py: 1 }}>
+        <MenuItem onClick={handleUnitChange}>
+          <ListItemIcon>
+            <Box component="span" sx={{ 
+              width: 20, 
+              height: 20, 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              fontSize: '0.75rem',
+              fontWeight: 600
+            }}>
+              {unitSystem === 'metric' ? 'g' : 'oz'}
+            </Box>
+          </ListItemIcon>
+          <ListItemText>
+            {unitSystem === 'metric' ? 
+              t('navigation.settings.imperialUnits') : 
+              t('navigation.settings.metricUnits')
+            }
+          </ListItemText>
+        </MenuItem>
+
+        <Divider />
+
+        <Typography variant="body2" color="text.secondary" className="menu-section">
           {t('navigation.settings.language')}
         </Typography>
-        <MenuItem>
-          <Select
-            value={i18n.language}
-            onChange={handleLanguageChange}
-            size="small"
-            fullWidth
-            variant="standard"
-          >
-            <MenuItem value="fr">Français</MenuItem>
-            <MenuItem value="en">English</MenuItem>
-          </Select>
+        <MenuItem onClick={() => i18n.changeLanguage('fr')} selected={i18n.language === 'fr'}>
+          <ListItemIcon>
+            <Box component="span" sx={{ 
+              width: 20, 
+              height: 20, 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              fontSize: '0.75rem',
+              fontWeight: 600
+            }}>
+              FR
+            </Box>
+          </ListItemIcon>
+          <ListItemText>Français</ListItemText>
+        </MenuItem>
+        <MenuItem onClick={() => i18n.changeLanguage('en')} selected={i18n.language === 'en'}>
+          <ListItemIcon>
+            <Box component="span" sx={{ 
+              width: 20, 
+              height: 20, 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              fontSize: '0.75rem',
+              fontWeight: 600
+            }}>
+              EN
+            </Box>
+          </ListItemIcon>
+          <ListItemText>English</ListItemText>
         </MenuItem>
       </Menu>
     </>

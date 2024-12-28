@@ -1,11 +1,25 @@
+import i18next from 'i18next';
+
 // Unités qui doivent être arrondies à l'entier le plus proche
-export const INTEGER_UNITS = new Set(['unité', 'pièce']);
+export const INTEGER_UNITS = new Set([
+  'recipe.units.integer.unit',
+  'recipe.units.integer.piece'
+]);
 
 // Unités qui utilisent des grammes
-export const GRAM_UNITS = new Set(['g', 'gramme', 'grammes']);
+export const GRAM_UNITS = new Set([
+  'recipe.units.weight.g',
+  'recipe.units.weight.gram',
+  'recipe.units.weight.grams'
+]);
 
 // Unités qui doivent être arrondies à des fractions pratiques (1/2, 1/4, etc.)
-export const FRACTION_UNITS = new Set(['cuillère à soupe', 'cuillère à café', 'tasse', 'verre']);
+export const FRACTION_UNITS = new Set([
+  'recipe.units.volume.tablespoon',
+  'recipe.units.volume.teaspoon',
+  'recipe.units.volume.cup',
+  'recipe.units.volume.glass'
+]);
 
 // Catégories qui ne devraient pas augmenter proportionnellement
 const SCALING_FACTORS = {
@@ -75,9 +89,13 @@ export const getFractionDisplay = (value) => {
 // Fonction pour normaliser l'affichage des grammes
 export const normalizeGramsDisplay = (amount) => {
   if (amount >= 1600) {
-    return `${(amount / 1000).toFixed(1).replace('.', ',')} kg`;
+    return i18next.t('recipe.units.display.kilogram', {
+      count: (amount / 1000).toFixed(1).replace('.', ',')
+    });
   }
-  return `${Math.round(amount)} g`;
+  return i18next.t('recipe.units.display.gram', {
+    count: Math.round(amount)
+  });
 };
 
 export const scaleIngredientAmount = (amount, unit, category, ratio) => {

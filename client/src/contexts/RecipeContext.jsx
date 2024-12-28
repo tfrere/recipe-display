@@ -16,6 +16,8 @@ import {
 import { normalizeAmount } from '../utils/unitNormalization';
 import { usePreferences, UNIT_SYSTEMS } from './PreferencesContext';
 import { convertToImperial } from '../utils/unitConversion';
+import { mapUnitToTranslationKey } from '../utils/unitMapping';
+import { useTranslation } from 'react-i18next';
 
 const RecipeContext = createContext();
 
@@ -377,6 +379,8 @@ const formatMinutesToTime = (minutes) => {
 };
 
 export const RecipeProvider = ({ children }) => {
+  const { t } = useTranslation();
+  const { unitSystem } = usePreferences();
   const [storedCompletedSteps, setStoredCompletedSteps] = useLocalStorage(
     "recipe-completed-steps",
     {}
@@ -387,8 +391,6 @@ export const RecipeProvider = ({ children }) => {
     const savedView = localStorage.getItem('selectedView');
     return savedView || 'simple';
   });
-
-  const { unitSystem } = usePreferences();
 
   const [state, dispatch] = useReducer(recipeReducer, {
     ...initialState,
@@ -582,8 +584,12 @@ export const RecipeProvider = ({ children }) => {
     // Suppression des zéros inutiles après la virgule
     formattedAmount = Number(formattedAmount).toString();
 
-    return `${formattedAmount}${unit ? ' ' + unit : ''}`;
-  }, [unitSystem]);
+    // Convertir l'unité en clé de traduction et la traduire
+    const translationKey = mapUnitToTranslationKey(unit);
+    const translatedUnit = t(`recipe.units.${translationKey}`, { defaultValue: unit });
+
+    return `${formattedAmount}${translatedUnit ? ' ' + translatedUnit : ''}`;
+  }, [unitSystem, t]);
 
   const getTotalProgressPercentage = useCallback(() => {
     if (!state.recipe) return 0;

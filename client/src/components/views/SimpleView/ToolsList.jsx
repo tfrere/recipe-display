@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useRecipe } from '../../../contexts/RecipeContext';
+import { useTranslation } from 'react-i18next';
 
 const ToolsList = ({ recipe }) => {
   const { isToolUnused, completedSteps } = useRecipe();
+  const { t } = useTranslation();
   
   // Récupérer tous les outils utilisés dans la recette
   const allTools = Object.entries(recipe.tools || {}).map(([toolId, tool]) => ({
@@ -26,7 +28,7 @@ const ToolsList = ({ recipe }) => {
         gap: 1
       }}>
         <Typography variant="h5" component="span">
-          Ustensiles
+          {t('recipe.sections.tools')}
         </Typography>
         <Typography 
           variant="body2" 

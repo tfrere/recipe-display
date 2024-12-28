@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { AppBar, Toolbar, Box, IconButton, Button } from '@mui/material';
+import { AppBar, Toolbar, Box, Button } from '@mui/material';
 import { useTheme } from '../../contexts/ThemeContext';
+import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
@@ -14,6 +15,7 @@ const Navigation = ({ currentView, onViewChange }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { darkMode, toggleDarkMode } = useTheme();
+  const { layoutMode } = useLayout();
   const isRecipePage = location.pathname.startsWith('/recipe/');
   const { t } = useTranslation();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
@@ -26,6 +28,8 @@ const Navigation = ({ currentView, onViewChange }) => {
         sx={{ 
           bgcolor: 'background.paper',
           color: 'text.primary',
+          borderBottom: (theme) => layoutMode === LAYOUT_MODES.TWO_COLUMN ? 
+            `1px solid ${theme.palette.divider}` : 'none',
           '@media print': {
             display: 'none'
           }
@@ -50,9 +54,11 @@ const Navigation = ({ currentView, onViewChange }) => {
           )}
           
           <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center', gap: 1 }}>
-            <IconButton
+            <Button
               onClick={() => setIsAddRecipeModalOpen(true)}
+              startIcon={<AddOutlinedIcon />}
               sx={{
+                textTransform: 'none',
                 color: 'text.secondary',
                 '& .MuiSvgIcon-root': {
                   fontSize: '1.25rem',
@@ -64,31 +70,16 @@ const Navigation = ({ currentView, onViewChange }) => {
                 }
               }}
             >
-              <AddOutlinedIcon />
-            </IconButton>
+              {t('navigation.addRecipe')}
+            </Button>
 
-            <SettingsMenu currentView={currentView} onViewChange={onViewChange} isRecipePage={isRecipePage} />
-            
-            <IconButton 
-              onClick={toggleDarkMode} 
-              color="inherit"
-              disableRipple
-              sx={{
-                color: 'text.secondary',
-                '& .MuiSvgIcon-root': {
-                  transition: 'transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-                  fontSize: '1.25rem',
-                },
-                '&:hover': {
-                  color: 'text.primary',
-                  '& .MuiSvgIcon-root': {
-                    transform: 'rotate(12deg)'
-                  }
-                }
-              }}
-            >
-              {darkMode ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}
-            </IconButton>
+            <SettingsMenu 
+              currentView={currentView} 
+              onViewChange={onViewChange} 
+              isRecipePage={isRecipePage}
+              darkMode={darkMode}
+              onToggleDarkMode={toggleDarkMode}
+            />
           </Box>
         </Toolbar>
       </AppBar>
