@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "title": "French Beans and Mangetout with Hazelnut and Orange",
+    "description": "A vibrant and refreshing salad combining french beans and mangetout with the crunch of hazelnuts and the zest of orange, perfect for festive gatherings.",
+    "servings": 6,
+    "difficulty": "easy",
+    "totalTime": "35min",
+    "image": "french-beans-and-mangetout-with-hazelnut-and-orange.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/french-beans-and-mangetout-with-hazelnut-and-orange/images/french-beans-and-mangetout-with-hazelnut-and-orange.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/french-beans-and-mangetout-with-hazelnut-and-orange/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "french beans",
+      "unit": "g",
+      "amount": 400,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing2",
+      "name": "mangetout",
+      "unit": "g",
+      "amount": 400,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing3",
+      "name": "unskinned hazelnuts",
+      "unit": "g",
+      "amount": 70,
+      "category": "epicerie-sucree"
+    },
+    {
+      "id": "ing4",
+      "name": "orange",
+      "unit": "unit",
+      "amount": 1,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing5",
+      "name": "chives",
+      "unit": "g",
+      "amount": 20,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing6",
+      "name": "garlic clove",
+      "unit": "unit",
+      "amount": 1,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing7",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "condiments"
+    },
+    {
+      "id": "ing8",
+      "name": "hazelnut oil",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing9",
+      "name": "flaky sea salt",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing10",
+      "name": "black pepper",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "condiments"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Preparation of Ingredients",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 200°C/180°C fan/gas mark 6.",
+          "time": "10min",
+          "tools": [
+            "oven"
+          ],
+          "output": {
+            "state": "preheated",
+            "description": "Oven preheated to the required temperature"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Trim the stalk ends off the french beans and the mangetout.",
+          "time": "5min",
+          "tools": [
+            "knife"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            }
+          ],
+          "output": {
+            "state": "trimmed",
+            "description": "French beans and mangetout trimmed and kept separate"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Blanch the french beans in boiling unsalted water for 4 minutes, then drain and run under cold tap water. Repeat with the mangetout for 1 minute.",
+          "time": "10min",
+          "tools": [
+            "saucepan",
+            "colander"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "blanched",
+            "description": "French beans and mangetout blanched, drained, and cooled"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Roast the hazelnuts in the oven for 10 minutes, then rub them in a clean tea-towel to remove most of the skin and chop roughly.",
+          "time": "15min",
+          "tools": [
+            "oven",
+            "baking tray",
+            "tea-towel",
+            "knife"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            }
+          ],
+          "output": {
+            "state": "roasted-chopped",
+            "description": "Hazelnuts roasted, skinned, and roughly chopped"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Remove the zest from the orange in strips and slice into very thin strips.",
+          "time": "5min",
+          "tools": [
+            "vegetable peeler",
+            "knife"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "zested",
+            "description": "Orange zest removed and cut into very thin strips"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step6",
+          "action": "Mix all the ingredients together in a bowl, toss gently, then taste and adjust the seasoning with flaky sea salt and a good grind of black pepper.",
+          "time": "5min",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "state",
+              "ref": "step5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "All ingredients mixed, seasoned, and ready to be served at room temperature"
+          }
+        }
+      ]
+    }
+  ]
+}

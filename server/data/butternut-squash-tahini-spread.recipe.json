@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "title": "Butternut Squash \u0026 Tahini Spread",
+    "description": "A rich and flavorful spread made from roasted butternut squash and tahini, perfect for appetizers or as a unique condiment.",
+    "servings": 6,
+    "difficulty": "medium",
+    "totalTime": "1h50min",
+    "image": "butternut-squash-tahini-spread.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/butternut-squash-tahini-spread/images/butternut-squash-tahini-spread.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/butternut-squash-tahini-spread/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "butternut squash",
+      "unit": "g",
+      "amount": 1200
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ing3",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ing4",
+      "name": "light tahini paste",
+      "unit": "g",
+      "amount": 70
+    },
+    {
+      "id": "ing5",
+      "name": "greek yoghurt",
+      "unit": "g",
+      "amount": 120
+    },
+    {
+      "id": "ing6",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 2
+    },
+    {
+      "id": "ing7",
+      "name": "mixed sesame seeds",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ing8",
+      "name": "date syrup",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ing9",
+      "name": "chopped coriander",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasting the Butternut Squash",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 200°C (180°C fan/gas mark 6).",
+          "time": "10min",
+          "tools": [
+            "oven"
+          ],
+          "output": {
+            "state": "preheated",
+            "description": "Oven preheated to the correct temperature"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Spread the squash out in a medium roasting tin. Pour over the olive oil and sprinkle on the cinnamon and salt. Mix together well, cover the tray tightly with foil and roast in the oven for 70 minutes, stirring once during the cooking. Remove from the oven and leave to cool.",
+          "time": "1h20min",
+          "tools": [
+            "roasting tin",
+            "foil"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Butternut squash is roasted and cooled"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Making the Spread",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Transfer the roasted squash to a food processor bowl, along with the tahini, yoghurt, and crushed garlic. Roughly pulse to combine into a coarse paste.",
+          "time": "10min",
+          "tools": [
+            "food processor"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            }
+          ],
+          "output": {
+            "state": "pulsed",
+            "description": "Ingredients combined into a coarse paste"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Spread the butternut mixture in a wavy pattern over a flat plate and sprinkle with the sesame seeds, drizzle over the syrup and finish with the chopped coriander.",
+          "time": "10min",
+          "tools": [
+            "plate"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "Butternut squash \u0026 tahini spread ready to be served"
+          }
+        }
+      ]
+    }
+  ]
+}

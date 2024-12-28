@@ -21,20 +21,7 @@
           "properties": {
             "name": { "type": "string" },
             "unit": { "type": "string" },
-            "category": { 
-              "type": "string",
-              "enum": [
-                "base",
-                "farine",
-                "sucre",
-                "œuf",
-                "produit-laitier",
-                "chocolat",
-                "fruit-sec",
-                "épices",
-                "autres"
-              ]
-            }
+            "category": { "type": "string" }
           }
         }
       }

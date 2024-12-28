@@ -242,7 +242,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
                     mb: isLastInCategory ? 4 : 0
                   }}
                 >
-                  {showHeader && (
+                  {showHeader && (sortByCategory || Object.keys(recipe.subRecipes).length > 1) && (
                     <Typography 
                       variant="body1" 
                       sx={{ 

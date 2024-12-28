@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "title": "Blackened Chicken with Caramel and Clementine Dressing",
+    "description": "A flavorful dish featuring blackened chicken with a vibrant caramel and clementine dressing, perfect for an intense and punchy eating experience.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "1h30min",
+    "image": "blackened-chicken-with-caramel-and-clementine-dressing.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/blackened-chicken-with-caramel-and-clementine-dressing/images/blackened-chicken-with-caramel-and-clementine-dressing.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/blackened-chicken-with-caramel-and-clementine-dressing/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "large chicken thighs, boneless and skin on",
+      "unit": "g",
+      "amount": 1000
+    },
+    {
+      "id": "ing2",
+      "name": "ground turmeric",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ing3",
+      "name": "chilli flakes",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ing4",
+      "name": "fish sauce",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ing5",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ing6",
+      "name": "spring onions",
+      "unit": "g",
+      "amount": 180
+    },
+    {
+      "id": "ing7",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 1
+    },
+    {
+      "id": "ing8",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 85
+    },
+    {
+      "id": "ing9",
+      "name": "fresh ginger",
+      "unit": "g",
+      "amount": 30
+    },
+    {
+      "id": "ing10",
+      "name": "red chillies",
+      "unit": "g",
+      "amount": 20
+    },
+    {
+      "id": "ing11",
+      "name": "rice wine vinegar",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ing12",
+      "name": "limes",
+      "unit": "unit",
+      "amount": 3
+    },
+    {
+      "id": "ing13",
+      "name": "clementines",
+      "unit": "g",
+      "amount": 200
+    },
+    {
+      "id": "ing14",
+      "name": "fresh coriander",
+      "unit": "g",
+      "amount": 5
+    },
+    {
+      "id": "ing15",
+      "name": "water",
+      "unit": "ml",
+      "amount": 90
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Marinate and Cook Chicken",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Marinate the chicken thighs with ground turmeric, chilli flakes, fish sauce, olive oil, and salt.",
+          "time": "1h",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            }
+          ],
+          "output": {
+            "state": "marinated",
+            "description": "Chicken thighs are well marinated with spices and fish sauce."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Blacken the chicken thighs in a hot cast-iron sauté pan.",
+          "time": "16min",
+          "tools": [
+            "cast-iron sauté pan"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "blackened",
+            "description": "Chicken thighs are charred and blackened with crispy skin."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Cook the chicken with spring onions and water until tender.",
+          "time": "8min",
+          "tools": [
+            "cast-iron sauté pan",
+            "tongs"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Chicken is tender and cooked through, nestled into the spring onions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Prepare Caramel and Clementine Dressing",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Make the caramel and clementine dressing with sugar, ginger, chillies, vinegar, lime juice, and fish sauce.",
+          "time": "15min",
+          "tools": [
+            "saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "dressing-prepared",
+            "description": "Caramel and clementine dressing is deeply golden and well combined."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Final Assembly",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Slice the clementines and incorporate them into the dressing.",
+          "time": "5min",
+          "tools": [
+            "knife"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "dressing-finished",
+            "description": "Clementine slices are added to the caramel dressing, ready for serving."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Serve the chicken on a platter with spring onions and dressing, topped with coriander and lime juice.",
+          "time": "5min",
+          "tools": [
+            "platter",
+            "spatula"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "served",
+            "description": "Chicken and spring onions are beautifully plated, drizzled with dressing, and garnished with coriander and lime."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "Tagliatelle with Walnuts and Lemon",
+    "description": "A rich and flavorful pasta dish with walnuts, lemon, and parmesan cheese.",
+    "servings": 2,
+    "difficulty": "easy",
+    "totalTime": "25min",
+    "image": "tagliatelle-with-walnuts-and-lemon.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/tagliatelle-with-walnuts-and-lemon/images/tagliatelle-with-walnuts-and-lemon.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/tagliatelle-with-walnuts-and-lemon/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "walnuts, roughly broken up",
+      "unit": "g",
+      "amount": 60
+    },
+    {
+      "id": "ing2",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 30
+    },
+    {
+      "id": "ing3",
+      "name": "sage leaves, finely shredded",
+      "unit": "g",
+      "amount": 10
+    },
+    {
+      "id": "ing4",
+      "name": "grated zest of lemon",
+      "unit": "unit",
+      "amount": 1
+    },
+    {
+      "id": "ing5",
+      "name": "double cream",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ing6",
+      "name": "dried tagliatelle",
+      "unit": "g",
+      "amount": 300
+    },
+    {
+      "id": "ing7",
+      "name": "parmesan, shaved",
+      "unit": "g",
+      "amount": 50
+    },
+    {
+      "id": "ing8",
+      "name": "parsley, chopped",
+      "unit": "g",
+      "amount": 15
+    },
+    {
+      "id": "ing9",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 2
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5
+    },
+    {
+      "id": "ing11",
+      "name": "black pepper",
+      "unit": "tsp",
+      "amount": 0.25
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasting Walnuts",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 160°C/140°C fan/gas mark 2.",
+          "time": "10min",
+          "tools": [
+            "oven"
+          ],
+          "output": {
+            "state": "preheated",
+            "description": "Oven is preheated"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Spread out the walnuts on a baking tray and roast in the preheated oven for 15 minutes. Remove and set aside to cool.",
+          "time": "15min",
+          "tools": [
+            "baking tray"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Walnuts are roasted and set aside to cool"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Sauce Preparation",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Place a medium frying pan on high heat and add the butter. Cook for a minute, add the sage and fry for about 2 minutes, until the butter starts to brown. Add the lemon zest, cream, salt, and plenty of black pepper, stir and cook for a few seconds so the sauce thickens a little. Remove from the heat at once so the cream doesn’t split. Set aside until ready to use.",
+          "time": "3min",
+          "tools": [
+            "frying pan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "sauce_prepared",
+            "description": "Sauce is thickened and set aside"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Pasta Cooking",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Bring a large pan of salted water to the boil and add the pasta. Cook for 8 minutes, or according to the packet instructions, until al dente. Drain, reserving a few tablespoons of the cooking liquid, and place in a large bowl.",
+          "time": "8min",
+          "tools": [
+            "large pan",
+            "large bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "pasta_cooked",
+            "description": "Pasta is cooked al dente and placed in a large bowl"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Warm the sauce, adding some of the pasta cooking liquid if it has become very thick, before adding it to the pasta, along with the walnuts, parmesan, and parsley. Stir in the lemon juice and serve at once.",
+          "time": "2min",
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "dish_assembled",
+            "description": "Pasta mixed with sauce, walnuts, parmesan, parsley, and lemon juice, ready to serve"
+          }
+        }
+      ]
+    }
+  ]
+}

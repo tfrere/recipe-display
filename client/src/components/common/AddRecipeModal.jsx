@@ -30,13 +30,13 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
     setSuccessMessage(null);
 
     try {
-      console.log('Sending recipe generation request to:', `${API_BASE_URL}/api/recipes/generate`);
+      console.log('Sending recipe generation request to:', `${API_BASE_URL}/api/recipe/add`);
       
       // Show initial loading message
       setSuccessMessage('Récupération de la recette en cours...');
 
-      const response = await axios.post(`${API_BASE_URL}/api/recipes/generate`, { 
-        prompt: recipeSource 
+      const response = await axios.post(`${API_BASE_URL}/api/recipe/add`, { 
+        source: recipeSource 
       }, {
         // 5 minutes timeout
         timeout: 300000 

@@ -2,22 +2,21 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
-	"sync"
 	"time"
 
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 	"github.com/rs/cors"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/joho/godotenv"
 
 	"recipe-display/server/internal/models"
 	"recipe-display/server/internal/services"
-	"recipe-display/server/internal/utils"
 )
 
 var (
@@ -284,6 +283,24 @@ func main() {
 
 	// API endpoints
 	r.HandleFunc("/api/recipes", getAllRecipes).Methods("GET")
+	r.HandleFunc("/api/recipe/add", func(w http.ResponseWriter, r *http.Request) {
+		var req models.GenerateRecipeRequest
+		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+			log.Error().Err(err).Msg("Error decoding request")
+			http.Error(w, "Invalid request", http.StatusBadRequest)
+			return
+		}
+
+		recipe, err := recipeService.AddRecipeFromUrl(req.Source)
+		if err != nil {
+			log.Error().Err(err).Msg("Error generating recipe")
+			http.Error(w, fmt.Sprintf("Error generating recipe: %v", err), http.StatusInternalServerError)
+			return
+		}
+
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(recipe)
+	}).Methods("POST")
 	r.HandleFunc("/api/recipes/{slug}", getRecipeBySlug).Methods("GET")
 	r.HandleFunc("/api/recipes", func(w http.ResponseWriter, r *http.Request) {
 		startTime := time.Now()
@@ -325,7 +342,7 @@ func main() {
 
 	log.Info().Str("port", port).Msg("Starting server")
 	handler := corsHandler.Handler(r)
-	
+
 	srv := &http.Server{
 		Addr:         ":" + port,
 		Handler:      handler,

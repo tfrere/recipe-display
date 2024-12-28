@@ -6,10 +6,15 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
+	"strings"
 	"time"
 
+	"recipe-display/server/internal/utils"
+
 	"github.com/rs/zerolog/log"
+	"github.com/xeipuuv/gojsonschema"
 )
 
 // Recipe représente la structure de données conforme à recipe.schema.json
@@ -25,10 +30,11 @@ type Recipe struct {
 		SourceUrl   string `json:"sourceUrl"`
 	} `json:"metadata"`
 	IngredientsList []struct {
-		ID     string      `json:"id"`
-		Name   string      `json:"name"`
-		Unit   string      `json:"unit"`
-		Amount interface{} `json:"amount"` // Changé en interface{} pour accepter string et float64
+		ID       string      `json:"id"`
+		Name     string      `json:"name"`
+		Unit     string      `json:"unit"`
+		Amount   interface{} `json:"amount"` // Changé en interface{} pour accepter string et float64
+		Category string      `json:"category"`
 	} `json:"ingredientsList"`
 	SubRecipes []struct {
 		ID    string `json:"id"`
@@ -72,10 +78,57 @@ func (g *RecipeGenerator) GenerateFromWebContent(content string, sourceUrl strin
 		return nil, fmt.Errorf("OPENAI_API_KEY is not set")
 	}
 
+	// Parser l'URL source pour résoudre les URLs relatives
+	baseURL, err := url.Parse(sourceUrl)
+	if err != nil {
+		return nil, fmt.Errorf("invalid source URL: %v", err)
+	}
+
+	// Si le contenu n'est pas fourni, le récupérer depuis l'URL
+	if content == "" && sourceUrl != "" {
+		var err error
+		content, err = utils.FetchWebPageContent(sourceUrl)
+		if err != nil {
+			return nil, fmt.Errorf("failed to fetch web content: %v", err)
+		}
+	}
+
+	// Extraire le contenu pertinent du HTML
+	webContent, err := utils.ExtractWebContent(content)
+	if err != nil {
+		return nil, fmt.Errorf("failed to extract web content: %v", err)
+	}
+
+	// Résoudre les URLs relatives des images
+	for i, imgURL := range webContent.ImageURLs {
+		if strings.HasPrefix(imgURL, "//") {
+			// URL protocol-relative (//example.com/image.jpg)
+			webContent.ImageURLs[i] = baseURL.Scheme + ":" + imgURL
+		} else if strings.HasPrefix(imgURL, "/") {
+			// URL absolute path (/image.jpg)
+			webContent.ImageURLs[i] = baseURL.Scheme + "://" + baseURL.Host + imgURL
+		} else if !strings.HasPrefix(imgURL, "http") {
+			// URL relative (image.jpg ou ../image.jpg)
+			ref, err := url.Parse(imgURL)
+			if err != nil {
+				continue
+			}
+			webContent.ImageURLs[i] = baseURL.ResolveReference(ref).String()
+		}
+	}
+
+	// Utiliser les images extraites si aucune n'est fournie
+	if len(imageUrls) == 0 && len(webContent.ImageURLs) > 0 {
+		imageUrls = webContent.ImageURLs
+	}
+
 	// Préparer le prompt pour GPT-4
 	systemMessage := fmt.Sprintf(`You are a helpful cooking assistant that transforms webpage content into a structured recipe.
 
 TASK: Convert the following webpage content into a valid recipe JSON following the provided schema.
+
+WEBPAGE TITLE:
+%s
 
 WEBPAGE CONTENT:
 %s
@@ -83,8 +136,34 @@ WEBPAGE CONTENT:
 IMPORTANT RULES:
 1. Your response MUST be a valid JSON object matching the Recipe schema
 2. Extract recipe details from the webpage content
-3. If information is missing, use reasonable defaults
-4. Ensure all required fields are filled
+3. NEVER leave any ingredient without a specific quantity:
+   - ALL ingredients MUST have both a unit and an amount
+   - Use standard units (g, ml, tsp, tbsp, unit) and precise numbers
+   - If a quantity is missing, estimate a reasonable amount
+   - For seasonings (salt, pepper), estimate in tsp
+   - For liquids "to taste" or "for frying", estimate in ml
+   - EVERY ingredient MUST have a category matching its supermarket aisle:
+     * "fruits-legumes": Fresh fruits and vegetables
+     * "viande": Meat and poultry
+     * "poisson": Fish and seafood
+     * "cremerie": Dairy, eggs, butter, cream
+     * "epicerie-salee": Canned goods, pasta, rice, savory groceries
+     * "epicerie-sucree": Sugar, flour, baking needs, sweet groceries
+     * "surgele": Frozen foods
+     * "condiments": Spices, herbs, seasonings, oils, vinegars
+     * "boissons": Drinks and beverages
+4. Structure the recipe steps properly:
+   - Group related steps into logical subRecipes (e.g., "Sauce", "Main Dish", "Assembly")
+   - EVERY step MUST have a time field (e.g., "5min", "1h30min")
+   - EVERY step MUST have an inputs array (NEVER null):
+     * For steps without ingredients, use an empty array []
+     * List ALL ingredients used in the step as "type": "ingredient"
+     * Reference previous steps' outputs as "type": "state"
+   - EVERY step MUST have a clear output:
+     * "state": short description of result (e.g., "mixed", "baked", "chopped")
+     * "description": detailed description of the result
+   - Chain steps together using state references:
+     * If step2 uses the result of step1, include {"type": "state", "ref": "step1"} in step2's inputs
 5. Create unique IDs for ingredients and steps
 6. Estimate servings, difficulty, and total time based on the content
 7. If no clear recipe is found, return an error message
@@ -92,48 +171,60 @@ IMPORTANT RULES:
 EXAMPLE SCHEMA:
 {
   "metadata": {
-    "title": "Recipe Title",
-    "description": "Recipe description",
-    "servings": 4,
-    "difficulty": "medium",
+    "title": "Chocolate Chip Cookies",
+    "description": "Classic American cookies with crispy edges and a soft center",
+    "servings": 24,
+    "difficulty": "easy",
     "totalTime": "45min",
-    "image": "recipe-image.jpg",
-    "imageUrl": "https://example.com/image.jpg",
-    "sourceUrl": "https://example.com/recipe"
+    "image": "chocolate-chip-cookies.jpg",
+    "imageUrl": "https://example.com/images/chocolate-chip-cookies.jpg",
+    "sourceUrl": "https://example.com/recipes/chocolate-chip-cookies"
   },
   "ingredientsList": [
     {
-      "id": "ingredient1",
-      "name": "Ingredient Name",
+      "id": "ing1",
+      "name": "all-purpose flour",
       "unit": "g",
-      "amount": 200
+      "amount": 250,
+      "category": "epicerie-sucree"
     }
   ],
   "subRecipes": [
     {
       "id": "sub1",
-      "title": "Main Recipe",
+      "title": "Preparation",
       "steps": [
         {
           "id": "step1",
-          "action": "Step description",
+          "action": "Preheat oven to 375°F (190°C)",
           "time": "10min",
-          "tools": ["tool1"],
+          "tools": ["oven"],
+          "inputs": [],
+          "output": {
+            "state": "preheated",
+            "description": "Oven preheated to correct temperature"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Mix flour and other dry ingredients",
+          "time": "2min",
+          "tools": ["bowl", "whisk"],
           "inputs": [
             {
               "type": "ingredient",
-              "ref": "ingredient1"
+              "ref": "ing1"
             }
           ],
           "output": {
-            "state": "final",
-            "description": "Result description"
+            "state": "mixed",
+            "description": "Dry ingredients well combined"
           }
         }
       ]
     }
   ]
-}`, content)
+}`, webContent.Title, webContent.MainContent)
 
 	requestBody := map[string]interface{}{
 		"model": "gpt-4-1106-preview",
@@ -163,7 +254,7 @@ EXAMPLE SCHEMA:
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+g.openAIKey)
 
-	client := &http.Client{Timeout: 300 * time.Second}  // 5 minutes
+	client := &http.Client{Timeout: 300 * time.Second} // 5 minutes
 	resp, err := client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("error making request: %v", err)
@@ -197,10 +288,28 @@ EXAMPLE SCHEMA:
 
 	// Parse la recette générée
 	var recipe Recipe
-	log.Info().Str("content", openaiResponse.Choices[0].Message.Content).Msg("OpenAI response content")
-	
-	if err := json.Unmarshal([]byte(openaiResponse.Choices[0].Message.Content), &recipe); err != nil {
-		log.Error().Err(err).Str("content", openaiResponse.Choices[0].Message.Content).Msg("Error unmarshaling recipe")
+	recipeContent := openaiResponse.Choices[0].Message.Content
+	log.Info().Str("content", recipeContent).Msg("OpenAI response content")
+
+	// Valider le JSON par rapport au schéma
+	schemaLoader := gojsonschema.NewReferenceLoader("file://internal/schema/recipe.schema.json")
+	documentLoader := gojsonschema.NewStringLoader(recipeContent)
+
+	result, err := gojsonschema.Validate(schemaLoader, documentLoader)
+	if err != nil {
+		return nil, fmt.Errorf("error validating recipe schema: %v", err)
+	}
+
+	if !result.Valid() {
+		var errors []string
+		for _, desc := range result.Errors() {
+			errors = append(errors, desc.String())
+		}
+		return nil, fmt.Errorf("recipe does not match schema: %v", errors)
+	}
+
+	if err := json.Unmarshal([]byte(recipeContent), &recipe); err != nil {
+		log.Error().Err(err).Str("content", recipeContent).Msg("Error unmarshaling recipe")
 		return nil, fmt.Errorf("error parsing recipe: %v", err)
 	}
 
@@ -235,6 +344,6 @@ func (r *Recipe) ToJSON() ([]byte, error) {
 			r.IngredientsList[i].Amount = 0.0
 		}
 	}
-	
+
 	return json.MarshalIndent(r, "", "  ")
 }

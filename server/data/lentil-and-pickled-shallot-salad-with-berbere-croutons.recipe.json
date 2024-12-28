@@ -1,0 +1,309 @@
+{
+  "metadata": {
+    "title": "Lentil and Pickled Shallot Salad with Berbere Croutons",
+    "description": "A wholesome salad featuring puy lentils, pickled shallots, and homemade berbere spiced croutons, inspired by Ottolenghi's creation at NOPI.",
+    "servings": 6,
+    "difficulty": "medium",
+    "totalTime": "1h",
+    "image": "lentil-and-pickled-shallot-salad-with-berbere-croutons.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/lentil-and-pickled-shallot-salad-with-berbere-croutons/images/lentil-and-pickled-shallot-salad-with-berbere-croutons.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/lentil-and-pickled-shallot-salad-with-berbere-croutons/index.html"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "puy lentils",
+      "unit": "g",
+      "amount": 300
+    },
+    {
+      "id": "ing2",
+      "name": "banana shallots, thinly sliced",
+      "unit": "unit",
+      "amount": 8
+    },
+    {
+      "id": "ing3",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 75
+    },
+    {
+      "id": "ing4",
+      "name": "valdespino sherry vinegar",
+      "unit": "tbsp",
+      "amount": 3
+    },
+    {
+      "id": "ing5",
+      "name": "crustless sourdough bread, roughly torn into chunks",
+      "unit": "g",
+      "amount": 150
+    },
+    {
+      "id": "ing6",
+      "name": "berbere spice",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ing7",
+      "name": "coriander leaves",
+      "unit": "g",
+      "amount": 25
+    },
+    {
+      "id": "ing8",
+      "name": "rocket, roughly chopped",
+      "unit": "g",
+      "amount": 20
+    },
+    {
+      "id": "ing9",
+      "name": "golden beetroot, sliced",
+      "unit": "g",
+      "amount": 150
+    },
+    {
+      "id": "ing10",
+      "name": "black radish, sliced (optional)",
+      "unit": "g",
+      "amount": 80
+    },
+    {
+      "id": "ing11",
+      "name": "red radishes, sliced",
+      "unit": "g",
+      "amount": 80
+    },
+    {
+      "id": "ing12",
+      "name": "coarse sea salt",
+      "unit": "tsp",
+      "amount": 2
+    },
+    {
+      "id": "ing13",
+      "name": "black pepper",
+      "unit": "tsp",
+      "amount": 0.5
+    },
+    {
+      "id": "ing14",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 1
+    },
+    {
+      "id": "ing15",
+      "name": "dijon mustard",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ing16",
+      "name": "orange blossom honey",
+      "unit": "tsp",
+      "amount": 1.5
+    },
+    {
+      "id": "ing17",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 3
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Lentil Preparation",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Rinse the lentils and cook until they retain a bite",
+          "time": "20min",
+          "tools": [
+            "saucepan",
+            "strainer"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Lentils cooked but still retaining a bite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Shallots and Croutons",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Preheat the oven and prepare shallots for roasting",
+          "time": "12min",
+          "tools": [
+            "oven",
+            "mixing bowl",
+            "baking tray"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Shallots are soft without taking on any colour"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Mix and roast sourdough with berbere spice for croutons",
+          "time": "15min",
+          "tools": [
+            "mixing bowl",
+            "baking tray"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Sourdough croutons are crusty and light golden-brown"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Dressing",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Prepare the dressing",
+          "time": "5min",
+          "tools": [
+            "bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Dressing well combined"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Salad Assembly",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Combine lentils, pickled shallots, and remaining ingredients, add dressing and serve",
+          "time": "10min",
+          "tools": [
+            "bowl",
+            "platter"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "Salad assembled with all ingredients and dressing, topped with croutons"
+          }
+        }
+      ]
+    }
+  ]
+}

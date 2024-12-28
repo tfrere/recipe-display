@@ -15,10 +15,11 @@ type Recipe struct {
 		SourceUrl   string `json:"sourceUrl"`
 	} `json:"metadata"`
 	IngredientsList []struct {
-		ID     string  `json:"id"`
-		Name   string  `json:"name"`
-		Unit   string  `json:"unit"`
-		Amount float64 `json:"amount"`
+		ID       string  `json:"id"`
+		Name     string  `json:"name"`
+		Unit     string  `json:"unit"`
+		Amount   float64 `json:"amount"`
+		Category string  `json:"category"`
 	} `json:"ingredientsList"`
 	SubRecipes []struct {
 		ID    string `json:"id"`
@@ -115,7 +116,7 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 		}),
 	}
 
-	// Remplir les ingrédients globaux
+	// Convertir les ingrédients
 	for _, ingredient := range r.IngredientsList {
 		ui.Ingredients[ingredient.ID] = struct {
 			Name     string `json:"name"`
@@ -124,7 +125,7 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 		}{
 			Name:     ingredient.Name,
 			Unit:     ingredient.Unit,
-			Category: determineCategory(ingredient.Name),
+			Category: ingredient.Category,
 		}
 	}
 

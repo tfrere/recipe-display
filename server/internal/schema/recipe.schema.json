@@ -29,9 +29,10 @@
             "id": { "type": "string" },
             "name": { "type": "string" },
             "unit": { "type": "string" },
-            "amount": { "type": "number" }
+            "amount": { "type": "number" },
+            "category": { "type": "string" }
           },
-          "required": ["id", "name", "unit", "amount"],
+          "required": ["id", "name", "unit", "amount", "category"],
           "additionalProperties": false
         }
       },

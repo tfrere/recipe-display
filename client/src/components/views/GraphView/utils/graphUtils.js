@@ -87,12 +87,12 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
     style: {
       stroke:
         link.type === "ingredient"
-          ? "#90caf9"
+          ? "#5c6bc0"  // Bleu plus foncé
           : link.type === "state"
-          ? "#ce93d8"
+          ? "#9c27b0"  // Violet plus foncé
           : link.type === "subRecipe"
-          ? "#ffd54f"
-          : "#ce93d8",
+          ? "#ff8f00"  // Orange plus foncé
+          : "#9c27b0",  // Violet plus foncé par défaut
       strokeWidth: 2,
     },
     markerEnd: {
@@ -101,12 +101,12 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
       height: 20,
       color:
         link.type === "ingredient"
-          ? "#90caf9"
+          ? "#5c6bc0"  // Bleu plus foncé
           : link.type === "state"
-          ? "#ce93d8"
+          ? "#9c27b0"  // Violet plus foncé
           : link.type === "subRecipe"
-          ? "#ffd54f"
-          : "#ce93d8",
+          ? "#ff8f00"  // Orange plus foncé
+          : "#9c27b0",  // Violet plus foncé par défaut
     },
     animated: false,
   }));
