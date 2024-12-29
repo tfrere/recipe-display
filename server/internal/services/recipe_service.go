@@ -57,6 +57,7 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 		var diet = "normal"      // Default value
 		var season = "spring"    // Default value
 		var recipeType = "main"  // Default value
+		var quick = false        // Default value
 
 		if metadata, ok := recipe["metadata"].(map[string]interface{}); ok {
 			// New format with metadata
@@ -84,6 +85,9 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 			if t, ok := metadata["recipeType"].(string); ok {
 				recipeType = t
 			}
+			if q, ok := metadata["quick"].(bool); ok {
+				quick = q
+			}
 		} else {
 			// Old format
 			title = filepath.Base(file.Name())
@@ -103,6 +107,7 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 			"diet":        diet,
 			"season":      season,
 			"recipeType":  recipeType,
+			"quick":       quick,
 		})
 	}
 

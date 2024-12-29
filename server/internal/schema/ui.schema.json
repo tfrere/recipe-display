@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["title", "description", "servings", "difficulty", "image", "ingredients", "subRecipes", "diet", "season"],
+  "required": ["title", "description", "servings", "difficulty", "image", "ingredients", "subRecipes", "diet", "season", "quick"],
   "properties": {
     "title": { "type": "string" },
     "description": { "type": "string" },
@@ -17,6 +17,10 @@
     "season": {
       "type": "string",
       "enum": ["spring", "summer", "autumn", "winter"]
+    },
+    "quick": {
+      "type": "boolean",
+      "description": "Indicates if the recipe can be made in less than 30 minutes"
     },
     "image": { "type": "string" },
     "ingredients": {

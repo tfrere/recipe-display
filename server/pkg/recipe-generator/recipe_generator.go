@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"regexp"
+	"strconv"
 	"strings"
 	"time"
 
@@ -31,6 +33,7 @@ type Recipe struct {
 		Diet        string `json:"diet"`
 		Season      string `json:"season"`
 		RecipeType  string `json:"recipeType"`
+		Quick       bool   `json:"quick"`
 	} `json:"metadata"`
 	IngredientsList []struct {
 		ID       string      `json:"id"`
@@ -344,6 +347,29 @@ EXAMPLE SCHEMA:
 		log.Error().Err(err).Str("content", recipeContent).Msg("Error unmarshaling recipe")
 		return nil, fmt.Errorf("error parsing recipe: %v", err)
 	}
+
+	// Calculer le temps total de la recette
+	totalMinutes := 0
+	for _, subRecipe := range recipe.SubRecipes {
+		for _, step := range subRecipe.Steps {
+			// Parse le temps de l'étape
+			if step.Time != "" {
+				// Parse hours if present
+				if hourMatch := regexp.MustCompile(`(\d+)h`).FindStringSubmatch(step.Time); len(hourMatch) > 1 {
+					hours, _ := strconv.Atoi(hourMatch[1])
+					totalMinutes += hours * 60
+				}
+				// Parse minutes if present
+				if minMatch := regexp.MustCompile(`(\d+)min`).FindStringSubmatch(step.Time); len(minMatch) > 1 {
+					minutes, _ := strconv.Atoi(minMatch[1])
+					totalMinutes += minutes
+				}
+			}
+		}
+	}
+
+	// Définir si la recette est rapide (moins de 30 minutes)
+	recipe.Metadata.Quick = totalMinutes <= 30
 
 	// Ajouter l'URL source et l'image s'ils sont fournis
 	recipe.Metadata.SourceUrl = sourceUrl

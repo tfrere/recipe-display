@@ -28,9 +28,13 @@
           "recipeType": {
             "type": "string",
             "enum": ["appetizer", "starter", "main", "dessert"]
+          },
+          "quick": {
+            "type": "boolean",
+            "description": "Indicates if the recipe can be made in less than 30 minutes"
           }
         },
-        "required": ["title", "description", "servings", "difficulty", "diet", "season", "recipeType"],
+        "required": ["title", "description", "servings", "difficulty", "diet", "season", "recipeType", "quick"],
         "additionalProperties": false
       },
       "ingredientsList": {
