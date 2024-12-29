@@ -28,7 +28,7 @@ const Navigation = ({ currentView, onViewChange }) => {
         sx={{ 
           bgcolor: 'background.paper',
           color: 'text.primary',
-          borderBottom: (theme) => layoutMode === LAYOUT_MODES.TWO_COLUMN ? 
+          borderBottom: (theme) => layoutMode === LAYOUT_MODES.TWO_COLUMN && isRecipePage ? 
             `1px solid ${theme.palette.divider}` : 'none',
           '@media print': {
             display: 'none'

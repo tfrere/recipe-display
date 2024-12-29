@@ -54,7 +54,9 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 		var title, description, image string
 		var servings float64 = 4 // Default value
 		var difficulty = "medium" // Default value
-		var totalTime = "30min"  // Default value
+		var diet = "normal"      // Default value
+		var season = "spring"    // Default value
+		var recipeType = "main"  // Default value
 
 		if metadata, ok := recipe["metadata"].(map[string]interface{}); ok {
 			// New format with metadata
@@ -73,8 +75,14 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 			if d, ok := metadata["difficulty"].(string); ok {
 				difficulty = d
 			}
-			if t, ok := metadata["totalTime"].(string); ok {
-				totalTime = t
+			if d, ok := metadata["diet"].(string); ok {
+				diet = d
+			}
+			if s, ok := metadata["season"].(string); ok {
+				season = s
+			}
+			if t, ok := metadata["recipeType"].(string); ok {
+				recipeType = t
 			}
 		} else {
 			// Old format
@@ -92,7 +100,9 @@ func (s *RecipeService) GetAllRecipes() ([]map[string]interface{}, error) {
 			"slug":        slug,
 			"servings":    servings,
 			"difficulty":  difficulty,
-			"totalTime":   totalTime,
+			"diet":        diet,
+			"season":      season,
+			"recipeType":  recipeType,
 		})
 	}
 
@@ -196,7 +206,6 @@ func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, e
 		"slug":        slug,
 		"servings":    recipe.Metadata.Servings,
 		"difficulty":  recipe.Metadata.Difficulty,
-		"totalTime":   recipe.Metadata.TotalTime,
 	}
 
 	return &response, nil

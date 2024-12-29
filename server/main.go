@@ -30,7 +30,7 @@ var (
 	}
 
 	// Configuration des chemins
-	dataDir     = "./data"
+	dataDir     = "data"
 	imagesDir   = filepath.Join(dataDir, "images")
 	originalDir = filepath.Join(imagesDir, "original")
 )
@@ -39,7 +39,7 @@ func init() {
 	// Configure zerolog
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stderr})
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
-	zerolog.SetGlobalLevel(zerolog.InfoLevel)
+	zerolog.SetGlobalLevel(zerolog.DebugLevel)
 
 	// Créer les dossiers nécessaires
 	for _, dir := range []string{dataDir, imagesDir, originalDir} {
@@ -53,16 +53,31 @@ func serveImage(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	size := vars["size"]
 	filename := vars["filename"]
-
+	
 	imageService := services.NewImageService(imagesDir)
 
-	if !imageService.IsValidImageFormat(filename) {
-		log.Error().Str("filename", filename).Msg("Invalid image format")
-		http.Error(w, "Invalid image format", http.StatusBadRequest)
+	// Essayer toutes les extensions possibles
+	baseFilename := strings.TrimSuffix(filename, filepath.Ext(filename))
+	extensions := []string{".jpg", ".jpeg", ".png", ".gif", ".webp"}
+	
+	var originalPath string
+	var originalFound bool
+	
+	for _, ext := range extensions {
+		testPath := filepath.Join(originalDir, baseFilename+ext)
+		if _, err := os.Stat(testPath); err == nil {
+			originalPath = testPath
+			originalFound = true
+			break
+		}
+	}
+
+	if !originalFound {
+		log.Error().Str("filename", filename).Msg("Image not found")
+		http.Error(w, "Image not found", http.StatusNotFound)
 		return
 	}
 
-	originalPath := filepath.Join(originalDir, filename)
 	resizedPath := originalPath
 
 	// Si une taille est spécifiée, redimensionner l'image
@@ -76,6 +91,8 @@ func serveImage(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
+	// Définir le type MIME pour WebP
+	w.Header().Set("Content-Type", "image/webp")
 	http.ServeFile(w, r, resizedPath)
 }
 
@@ -254,36 +271,57 @@ func corsMiddleware(next http.Handler) http.Handler {
 func main() {
 	// Charger les variables d'environnement
 	if err := godotenv.Load(); err != nil {
-		log.Error().Err(err).Msg("Error loading .env file")
+		log.Warn().Err(err).Msg("Error loading .env file")
 	}
 
-	// Créer le router
-	r := mux.NewRouter()
+	// Initialiser les services
+	recipeService := services.NewRecipeService(dataDir)
+	searchService, err := services.NewSearchService(dataDir)
+	if err != nil {
+		log.Fatal().Err(err).Msg("Failed to initialize search service")
+	}
 
-	// Middleware CORS
-	corsHandler := cors.New(cors.Options{
-		AllowedOrigins: []string{"*"},
-		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-		AllowedHeaders: []string{"Content-Type", "Authorization"},
-	})
+	// Reconstruire l'index de recherche au démarrage
+	if err := searchService.RebuildIndex(); err != nil {
+		log.Fatal().Err(err).Msg("Failed to rebuild search index")
+	}
+
+	r := mux.NewRouter()
 
 	// Middleware pour le logging
 	r.Use(loggingMiddleware)
 	r.Use(corsMiddleware)
 
-	// Routes statiques
-	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	// Routes API
+	api := r.PathPrefix("/api").Subrouter()
 
-	// Image routes
-	r.HandleFunc("/api/images/{size}/{filename}", serveImage).Methods("GET")
-	r.HandleFunc("/api/images/{filename}", serveImage).Methods("GET")
+	// Routes existantes
+	api.HandleFunc("/recipes", getAllRecipes).Methods("GET", "OPTIONS")
+	
+	// Route de recherche (doit être avant la route avec {slug})
+	api.HandleFunc("/recipes/search", func(w http.ResponseWriter, r *http.Request) {
+		query := r.URL.Query().Get("q")
+		if query == "" {
+			log.Error().Msg("Empty search query")
+			http.Error(w, "Search query is required", http.StatusBadRequest)
+			return
+		}
 
-	// Recipe service
-	recipeService := services.NewRecipeService(dataDir)
+		results, err := searchService.Search(query)
+		if err != nil {
+			log.Error().Err(err).Msg("Search failed")
+			http.Error(w, fmt.Sprintf("Search failed: %v", err), http.StatusInternalServerError)
+			return
+		}
 
-	// API endpoints
-	r.HandleFunc("/api/recipes", getAllRecipes).Methods("GET")
-	r.HandleFunc("/api/recipe/add", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(results)
+	}).Methods("GET", "OPTIONS")
+
+	// Route avec paramètre {slug} doit être après les routes spécifiques
+	api.HandleFunc("/recipes/{slug}", getRecipeBySlug).Methods("GET", "OPTIONS")
+
+	api.HandleFunc("/recipes/url", func(w http.ResponseWriter, r *http.Request) {
 		var req models.GenerateRecipeRequest
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 			log.Error().Err(err).Msg("Error decoding request")
@@ -300,9 +338,8 @@ func main() {
 
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(recipe)
-	}).Methods("POST")
-	r.HandleFunc("/api/recipes/{slug}", getRecipeBySlug).Methods("GET")
-	r.HandleFunc("/api/recipes", func(w http.ResponseWriter, r *http.Request) {
+	}).Methods("POST", "OPTIONS")
+	api.HandleFunc("/recipes", func(w http.ResponseWriter, r *http.Request) {
 		startTime := time.Now()
 		defer func() {
 			log.Info().Dur("duration", time.Since(startTime)).Msg("POST /api/recipes")
@@ -332,7 +369,25 @@ func main() {
 			http.Error(w, "Error encoding response", http.StatusInternalServerError)
 			return
 		}
-	}).Methods("POST")
+	}).Methods("POST", "OPTIONS")
+
+	// Nouvelle route pour la recherche
+	api.HandleFunc("/recipes/rebuild-index", func(w http.ResponseWriter, r *http.Request) {
+		if err := searchService.RebuildIndex(); err != nil {
+			log.Error().Err(err).Msg("Failed to rebuild index")
+			http.Error(w, "Failed to rebuild index", http.StatusInternalServerError)
+			return
+		}
+
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(map[string]string{
+			"status": "Index rebuilt successfully",
+		})
+	}).Methods("POST", "OPTIONS")
+
+	// Route pour les images
+	api.HandleFunc("/images/{size}/{filename}", serveImage).Methods("GET", "OPTIONS")
+	api.HandleFunc("/images/{filename}", serveImage).Methods("GET", "OPTIONS")
 
 	// Démarrer le serveur
 	port := os.Getenv("PORT")
@@ -341,7 +396,11 @@ func main() {
 	}
 
 	log.Info().Str("port", port).Msg("Starting server")
-	handler := corsHandler.Handler(r)
+	handler := cors.New(cors.Options{
+		AllowedOrigins: []string{"*"},
+		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowedHeaders: []string{"Content-Type", "Authorization"},
+	}).Handler(r)
 
 	srv := &http.Server{
 		Addr:         ":" + port,

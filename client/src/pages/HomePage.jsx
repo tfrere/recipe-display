@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   Box,
-  TextField,
   Typography,
   Card,
   CardContent,
@@ -11,11 +10,11 @@ import {
 import { Link } from "react-router-dom";
 import RecipeImage from "../components/common/RecipeImage";
 import { useTranslation } from 'react-i18next';
+import SearchBarWithResults from '../components/SearchBar';
 
 const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
 
 const HomePage = () => {
-  const [searchTerm, setSearchTerm] = useState("");
   const [recipes, setRecipes] = useState([]);
   const { t } = useTranslation();
 
@@ -32,27 +31,16 @@ const HomePage = () => {
     fetchRecipes();
   }, []);
 
-  const filteredRecipes = recipes.filter((recipe) =>
-    recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Typography variant="h3" component="h1" gutterBottom>
-        {t('home.title')}
-      </Typography>
+      <Box sx={{ pt: 8, pb: 4 }}>
+        <SearchBarWithResults
+          recipes={recipes}
+        />
+      </Box>
 
-      <TextField
-        fullWidth
-        variant="outlined"
-        placeholder={t('home.search')}
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        sx={{ mb: 4 }}
-      />
-
-      <Grid container spacing={3}>
-        {filteredRecipes.map((recipe) => (
+      <Grid container spacing={3} sx={{ mt: 4 }}>
+        {recipes.map((recipe) => (
           <Grid item xs={12} sm={6} md={4} key={recipe.slug}>
             <Card
               component={Link}
@@ -70,7 +58,8 @@ const HomePage = () => {
             >
               <Box sx={{ position: 'relative', paddingTop: '56.25%' }}>
                 <RecipeImage
-                  imageName={recipe.image}
+                  slug={recipe.slug}
+                  title={recipe.title}
                   size="medium"
                   sx={{
                     position: 'absolute',

@@ -35,7 +35,7 @@ const formatTime = (minutes) => {
 };
 
 const RecipeHeader = ({ recipe }) => {
-  const { currentServings, updateServings, getRemainingTime, resetRecipeState, isRecipePristine, completedSteps } = useRecipe();
+  const { currentServings, updateServings, getRemainingTime, resetRecipeState, isRecipePristine, calculateTotalTime } = useRecipe();
   const { darkMode, toggleDarkMode } = useTheme();
   const { layoutMode } = useLayout();
   const { t } = useTranslation();
@@ -90,7 +90,7 @@ ${Object.entries(recipe.steps || {})
             overflow: 'hidden',
             '@media print': { display: 'none' } 
           }}>
-            <RecipeImage imageName={image} />
+            <RecipeImage slug={image} title={title} size="large" />
           </Box>
         )}
 
@@ -137,22 +137,8 @@ ${Object.entries(recipe.steps || {})
             {/* Temps */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <AccessTimeIcon fontSize="small" color="action" />
-              <Typography 
-                variant="body2" 
-                color="text.secondary"
-                sx={{ 
-                  fontWeight: getRemainingTime() !== null && Object.keys(completedSteps).length > 0 ? 700 : 400 
-                }}
-              >
-                {(() => {
-                  const remainingTime = getRemainingTime();
-                  const hasCompletedSteps = Object.keys(completedSteps).length > 0;
-                  if (remainingTime !== null && hasCompletedSteps) {
-                    return t('recipe.time.remaining', { count: <TimeDisplay minutes={remainingTime} /> });
-                  }
-                  const totalTime = recipe.totalTime.match(/(\d+)h?/)?.[1] * (recipe.totalTime.includes('h') ? 60 : 1) || 0;
-                  return <TimeDisplay minutes={totalTime} />;
-                })()}
+              <Typography variant="body2" color="text.secondary">
+                {calculateTotalTime(recipe)}
               </Typography>
             </Box>
 
@@ -166,6 +152,29 @@ ${Object.entries(recipe.steps || {})
               <Typography variant="body2" color="text.secondary" sx={{ textTransform: 'capitalize' }}>
                 {recipe.difficulty}
               </Typography>
+            </Box>
+
+            {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
+              <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
+            )}
+
+            {/* Régime alimentaire et Saison */}
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <RecipeChip 
+                label={t(`recipe.diet.${recipe.diet || 'normal'}`)} 
+                type={CHIP_TYPES.DIET}
+                size="small"
+              />
+              <RecipeChip 
+                label={t(`recipe.season.${recipe.season || 'spring'}`)} 
+                type={CHIP_TYPES.SEASON}
+                size="small"
+              />
+              <RecipeChip 
+                label={t(`recipe.type.${recipe.recipeType || 'main'}`)} 
+                type={CHIP_TYPES.RECIPE_TYPE}
+                size="small"
+              />
             </Box>
 
             {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (

@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "title": "Carrot and Peas",
+    "description": "A vibrant dish featuring carrots and peas with a sweet sauce, perfect as a light spring salad or a colorful addition to a festive meal.",
+    "servings": 6,
+    "difficulty": "medium",
+    "totalTime": "1h10min",
+    "image": "carrot-and-peas.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/carrot-and-peas/images/carrot-and-peas.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/carrot-and-peas/index.html",
+    "diet": "vegan",
+    "season": "spring",
+    "recipeType": "main"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "orange juice",
+      "unit": "ml",
+      "amount": 130,
+      "category": "boissons"
+    },
+    {
+      "id": "ing2",
+      "name": "red wine",
+      "unit": "ml",
+      "amount": 60,
+      "category": "boissons"
+    },
+    {
+      "id": "ing3",
+      "name": "honey",
+      "unit": "g",
+      "amount": 50,
+      "category": "epicerie-sucree"
+    },
+    {
+      "id": "ing4",
+      "name": "cinnamon sticks",
+      "unit": "unit",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing5",
+      "name": "star anise",
+      "unit": "unit",
+      "amount": 4,
+      "category": "condiments"
+    },
+    {
+      "id": "ing6",
+      "name": "coriander seeds",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing7",
+      "name": "carrots",
+      "unit": "g",
+      "amount": 1000,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing8",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 90,
+      "category": "condiments"
+    },
+    {
+      "id": "ing9",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 3,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing10",
+      "name": "podded peas",
+      "unit": "g",
+      "amount": 450,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing11",
+      "name": "pea shoots",
+      "unit": "g",
+      "amount": 75,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing12",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing13",
+      "name": "black pepper",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "condiments"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Sweet Sauce Preparation",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Start by making the sweet sauce for roasting the carrots.",
+          "time": "40min",
+          "tools": [
+            "saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "reduced",
+            "description": "The mixture is simmered until reduced to about a third."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Carrot Preparation",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Preheat the oven and prepare the carrots with spices and seasoning.",
+          "time": "15min",
+          "tools": [
+            "oven",
+            "frying pan",
+            "bowl",
+            "baking tray"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "The carrots are mixed with the spices, seasoning, and olive oil, spread on a baking tray, and roasted until they start to color."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Finish roasting the carrots with the sweet sauce.",
+          "time": "7min",
+          "tools": [
+            "oven"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "The sweet sauce is added to the carrots and returned to the oven until the carrots are cooked through but still have a bite."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Peas Preparation",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Boil and cool the peas.",
+          "time": "2min",
+          "tools": [
+            "pot",
+            "colander"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "boiled",
+            "description": "The peas are boiled briefly, then drained and rinsed under cold water to stop the cooking."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Combine the carrots and peas and serve with pea shoots.",
+          "time": "5min",
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "The roasted carrots and boiled peas are gently stirred together, seasoned if necessary, and served with pea shoots on top."
+          }
+        }
+      ]
+    }
+  ]
+}

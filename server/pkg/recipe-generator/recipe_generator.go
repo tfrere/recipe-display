@@ -28,6 +28,9 @@ type Recipe struct {
 		Image       string `json:"image"`
 		ImageUrl    string `json:"imageUrl"`
 		SourceUrl   string `json:"sourceUrl"`
+		Diet        string `json:"diet"`
+		Season      string `json:"season"`
+		RecipeType  string `json:"recipeType"`
 	} `json:"metadata"`
 	IngredientsList []struct {
 		ID       string      `json:"id"`
@@ -136,7 +139,11 @@ WEBPAGE CONTENT:
 IMPORTANT RULES:
 1. Your response MUST be a valid JSON object matching the Recipe schema
 2. Extract recipe details from the webpage content
-3. NEVER leave any ingredient without a specific quantity:
+3. ALL RECIPE TEXT MUST BE IN ENGLISH:
+   - Translate all ingredients, steps, and descriptions to English
+   - Keep measurements in metric units
+   - Maintain clarity and accuracy in translation
+4. NEVER leave any ingredient without a specific quantity:
    - ALL ingredients MUST have both a unit and an amount
    - Use standard units (g, ml, tsp, tbsp, unit) and precise numbers
    - If a quantity is missing, estimate a reasonable amount
@@ -152,9 +159,10 @@ IMPORTANT RULES:
      * "surgele": Frozen foods
      * "condiments": Spices, herbs, seasonings, oils, vinegars
      * "boissons": Drinks and beverages
-4. Structure the recipe steps properly:
+5. Structure the recipe steps properly:
    - Group related steps into logical subRecipes (e.g., "Sauce", "Main Dish", "Assembly")
    - EVERY step MUST have a time field (e.g., "5min", "1h30min")
+   - The total recipe time MUST be the sum of all step times
    - EVERY step MUST have an inputs array (NEVER null):
      * For steps without ingredients, use an empty array []
      * List ALL ingredients used in the step as "type": "ingredient"
@@ -164,9 +172,30 @@ IMPORTANT RULES:
      * "description": detailed description of the result
    - Chain steps together using state references:
      * If step2 uses the result of step1, include {"type": "state", "ref": "step1"} in step2's inputs
-5. Create unique IDs for ingredients and steps
-6. Estimate servings, difficulty, and total time based on the content
-7. If no clear recipe is found, return an error message
+6. ENSURE ALL INGREDIENTS AND TOOLS ARE USED:
+   - EVERY ingredient in ingredientsList MUST be used in at least one step
+   - EVERY tool in toolsList MUST be used in at least one step
+   - Double-check all ingredients and tools are referenced in steps
+7. Calculate total time accurately:
+   - Sum up the time of all steps
+   - Include both active (preparation) and passive (cooking) time
+   - Format as "XXhYYmin" for times over an hour, "XXmin" for under an hour
+8. ALWAYS set the diet field in metadata to one of:
+   - "normal": For recipes with any ingredients
+   - "vegetarian": For recipes without meat or fish but may include dairy and eggs
+   - "vegan": For recipes with no animal products
+9. ALWAYS set the season field in metadata to one of:
+   - "spring": For spring recipes (March-May)
+   - "summer": For summer recipes (June-August)
+   - "autumn": For autumn recipes (September-November)
+   - "winter": For winter recipes (December-February)
+   Base the season on the main ingredients (in France)
+10. ALWAYS set the recipeType field in metadata to one of:
+    - "appetizer": For small bites and nibbles served before a meal
+    - "starter": For first courses and light dishes to start a meal
+    - "main": For main course dishes
+    - "dessert": For sweet dishes served at the end of a meal
+11. If no clear recipe is found, return an error message
 
 EXAMPLE SCHEMA:
 {
@@ -178,7 +207,10 @@ EXAMPLE SCHEMA:
     "totalTime": "45min",
     "image": "chocolate-chip-cookies.jpg",
     "imageUrl": "https://example.com/images/chocolate-chip-cookies.jpg",
-    "sourceUrl": "https://example.com/recipes/chocolate-chip-cookies"
+    "sourceUrl": "https://example.com/recipes/chocolate-chip-cookies",
+    "diet": "vegetarian",
+    "season": "winter",
+    "recipeType": "dessert"
   },
   "ingredientsList": [
     {

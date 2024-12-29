@@ -27,7 +27,7 @@ export default {
   },
   recipe: {
     time: {
-      remaining: "{{count}} remaining",
+      remaining: "{{time}} remaining",
       total: "Total",
       hour_one: "{{count}} hour",
       hour_other: "{{count}} hours",
@@ -55,6 +55,23 @@ export default {
       shoppingList: "Shopping list mode",
       ingredients: "Ingredients mode"
     },
+    diet: {
+      normal: "Regular",
+      vegetarian: "Vegetarian",
+      vegan: "Vegan"
+    },
+    season: {
+      spring: "Spring",
+      summer: "Summer",
+      autumn: "Autumn",
+      winter: "Winter"
+    },
+    type: {
+      appetizer: "Appetizer",
+      starter: "Starter",
+      main: "Main",
+      dessert: "Dessert"
+    },
     units: {
       // Base units
       g: "g",
@@ -74,6 +91,9 @@ export default {
       teaspoons: "teaspoons",
       glass: "glass",
       glasses: "glasses",
+      // Short units
+      tsp: "tsp",
+      tbsp: "tbsp",
       // Integer units
       unit: "unit",
       units: "units",
@@ -86,10 +106,14 @@ export default {
       kilograms: "kilograms"
     }
   },
+  search: {
+    placeholder: 'Search for a recipe...',
+    noResults: 'No recipes found',
+    results_one: '1 recipe found',
+    results_other: '{{count}} recipes found'
+  },
   home: {
     title: "My Recipes",
-    search: "Search for a recipe...",
-    noRecipes: "No recipes found",
     recipeCard: {
       servings: "{{count}} servings",
       time: {

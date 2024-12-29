@@ -33,6 +33,7 @@ const initialState = {
   error: null,
   selectedView: 'simple',
   servingsMultiplier: 1,
+  tools: []
 };
 
 // Actions
@@ -160,6 +161,26 @@ const calculateUnusedItems = (recipe, completedSteps) => {
   });
 
   return { unusedIngredients, unusedTools, unusedStates };
+};
+
+// Fonction utilitaire pour extraire les outils des steps
+const extractToolsFromSteps = (recipe) => {
+  const toolsSet = new Set();
+  
+  // Parcourir toutes les sous-recettes
+  Object.values(recipe.subRecipes || {}).forEach(subRecipe => {
+    // Parcourir toutes les étapes de la sous-recette
+    Object.values(subRecipe.steps || {}).forEach(step => {
+      // Ajouter chaque outil à l'ensemble
+      (step.tools || []).forEach(tool => toolsSet.add(tool));
+    });
+  });
+
+  // Convertir l'ensemble en tableau et créer les objets d'outils
+  return Array.from(toolsSet).map(toolName => ({
+    id: toolName.toLowerCase().replace(/\s+/g, '-'),
+    name: toolName
+  }));
 };
 
 // Reducer
@@ -391,6 +412,7 @@ export const RecipeProvider = ({ children }) => {
     const savedView = localStorage.getItem('selectedView');
     return savedView || 'simple';
   });
+  const [tools, setTools] = useState([]);
 
   const [state, dispatch] = useReducer(recipeReducer, {
     ...initialState,
@@ -409,6 +431,13 @@ export const RecipeProvider = ({ children }) => {
 
     return () => clearTimeout(timeoutId);
   }, [state.completedSteps, state.completedSubRecipes, state.selectedView]);
+
+  useEffect(() => {
+    if (state.recipe) {
+      const extractedTools = extractToolsFromSteps(state.recipe);
+      setTools(extractedTools);
+    }
+  }, [state.recipe]);
 
   const loadRecipe = useCallback(async (slug) => {
     dispatch({ type: actions.SET_LOADING, payload: true });
@@ -627,12 +656,48 @@ export const RecipeProvider = ({ children }) => {
     );
   }, [state.recipe, state.completedSteps, state.completedSubRecipes, state.unusedIngredients, state.unusedTools, state.unusedStates, state.servingsMultiplier]);
 
+  const calculateTotalTime = useCallback((recipe) => {
+    if (!recipe || !recipe.subRecipes) return '0min';
+
+    let totalMinutes = 0;
+    // Iterate over subRecipes object
+    Object.values(recipe.subRecipes).forEach(subRecipe => {
+      if (!subRecipe.steps) return;
+      
+      subRecipe.steps.forEach(step => {
+        const time = step.time;
+        if (!time) return;
+
+        // Parse hours if present
+        const hourMatch = time.match(/(\d+)h/);
+        if (hourMatch) {
+          totalMinutes += parseInt(hourMatch[1]) * 60;
+        }
+
+        // Parse minutes if present
+        const minuteMatch = time.match(/(\d+)min/);
+        if (minuteMatch) {
+          totalMinutes += parseInt(minuteMatch[1]);
+        }
+      });
+    });
+
+    // Format the total time
+    if (totalMinutes >= 60) {
+      const hours = Math.floor(totalMinutes / 60);
+      const minutes = totalMinutes % 60;
+      return minutes > 0 ? `${hours}h${minutes}min` : `${hours}h`;
+    }
+    return `${totalMinutes}min`;
+  }, []);
+
   const value = {
     ...state,
     recipe: state.recipe,
     loading: state.loading,
     error: state.error,
     selectedView: state.selectedView,
+    tools,
     loadRecipe,
     generateRecipe,
     setSelectedSubRecipe,
@@ -656,6 +721,7 @@ export const RecipeProvider = ({ children }) => {
     getSubRecipeProgress,
     resetRecipeState,
     isRecipePristine,
+    calculateTotalTime,
   };
 
   return (

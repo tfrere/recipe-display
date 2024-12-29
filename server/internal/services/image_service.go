@@ -120,7 +120,7 @@ func (s *ImageService) ResizeImage(originalPath string, size ImageSize) (string,
 	filename := filepath.Base(originalPath)
 	filenameWithoutExt := strings.TrimSuffix(filename, filepath.Ext(filename))
 	outputPath := filepath.Join(s.baseDir, size.Name, filenameWithoutExt+".webp")
-	
+
 	err = os.MkdirAll(filepath.Dir(outputPath), os.ModePerm)
 	if err != nil {
 		return "", fmt.Errorf("failed to create output directory: %v", err)

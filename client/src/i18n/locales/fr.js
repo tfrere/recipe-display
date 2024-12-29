@@ -29,6 +29,12 @@ export default {
     twoColumnLayout: "Vue en deux colonnes",
     singleColumnLayout: "Vue en une colonne"
   },
+  search: {
+    placeholder: 'Rechercher une recette...',
+    noResults: 'Aucune recette trouvée',
+    results_one: '1 recette trouvée',
+    results_other: '{{count}} recettes trouvées'
+  },
   home: {
     title: "Mes Recettes",
     search: "Rechercher une recette...",
@@ -78,6 +84,23 @@ export default {
     modes: {
       shoppingList: "Mode liste de courses",
       ingredients: "Mode ingrédients"
+    },
+    diet: {
+      normal: "Normal",
+      vegetarian: "Végétarien",
+      vegan: "Végétalien"
+    },
+    season: {
+      spring: "Printemps",
+      summer: "Été",
+      autumn: "Automne",
+      winter: "Hiver"
+    },
+    type: {
+      appetizer: "Apéritif",
+      starter: "Entrée",
+      main: "Plat",
+      dessert: "Dessert"
     },
     units: {
       // Unités de base

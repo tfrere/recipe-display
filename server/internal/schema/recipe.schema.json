@@ -16,9 +16,21 @@
           "difficulty": { 
             "type": "string",
             "enum": ["easy", "medium", "hard"]
+          },
+          "diet": {
+            "type": "string",
+            "enum": ["normal", "vegetarian", "vegan"]
+          },
+          "season": {
+            "type": "string",
+            "enum": ["spring", "summer", "autumn", "winter"]
+          },
+          "recipeType": {
+            "type": "string",
+            "enum": ["appetizer", "starter", "main", "dessert"]
           }
         },
-        "required": ["title", "description", "servings", "difficulty"],
+        "required": ["title", "description", "servings", "difficulty", "diet", "season", "recipeType"],
         "additionalProperties": false
       },
       "ingredientsList": {

@@ -4,20 +4,13 @@ import { useRecipe } from '../../../contexts/RecipeContext';
 import { useTranslation } from 'react-i18next';
 
 const ToolsList = ({ recipe }) => {
-  const { isToolUnused, completedSteps } = useRecipe();
+  const { isToolUnused, completedSteps, tools } = useRecipe();
   const { t } = useTranslation();
   
-  // Récupérer tous les outils utilisés dans la recette
-  const allTools = Object.entries(recipe.tools || {}).map(([toolId, tool]) => ({
-    id: toolId,
-    name: tool.name,
-    isUnused: isToolUnused(toolId)
-  }));
-
-  if (allTools.length === 0) return null;
+  if (tools.length === 0) return null;
 
   const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
-  const remainingTools = allTools.filter(tool => !tool.isUnused).length;
+  const remainingTools = tools.filter(tool => !isToolUnused(tool.id)).length;
 
   return (
     <>
@@ -39,7 +32,7 @@ const ToolsList = ({ recipe }) => {
             gap: 0.5
           }}
         >
-          • {hasCompletedSteps ? `${remainingTools}/` : ''}{allTools.length}
+          • {hasCompletedSteps ? `${remainingTools}/` : ''}{tools.length}
         </Typography>
       </Box>
 
@@ -49,18 +42,18 @@ const ToolsList = ({ recipe }) => {
         gap: 1,
         alignItems: 'center'
       }}>
-        {allTools.map((tool, index) => (
+        {tools.map((tool, index) => (
           <React.Fragment key={tool.id}>
-            <Typography 
+            <Typography
               variant="body1"
-              sx={{ 
-                textDecoration: tool.isUnused ? 'line-through' : 'none',
-                color: tool.isUnused ? 'text.disabled' : 'text.primary'
+              sx={{
+                color: isToolUnused(tool.id) ? 'text.disabled' : 'text.primary',
+                textDecoration: isToolUnused(tool.id) ? 'line-through' : 'none'
               }}
             >
               {tool.name}
             </Typography>
-            {index < allTools.length - 1 && (
+            {index < tools.length - 1 && (
               <Typography 
                 variant="body2" 
                 sx={{ color: 'text.disabled' }}

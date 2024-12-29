@@ -3,6 +3,9 @@ import { Chip } from "@mui/material";
 import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
 import RestaurantOutlinedIcon from "@mui/icons-material/RestaurantOutlined";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
+import GrassIcon from '@mui/icons-material/Grass';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 
 // Types de chips possibles
 export const CHIP_TYPES = {
@@ -13,6 +16,9 @@ export const CHIP_TYPES = {
   ACTION_COOKING: "action_cooking",
   ACTION_PREPARATION: "action_preparation",
   ACTION_ASSEMBLY: "action_assembly",
+  DIET: "diet",
+  SEASON: "season",
+  RECIPE_TYPE: "recipe_type",
 };
 
 // Configuration des couleurs par type
@@ -51,9 +57,27 @@ const CHIP_COLORS = {
   },
   [CHIP_TYPES.ACTION_ASSEMBLY]: {
     color: "info",
-    baseColor: "#29b6f6",
-    bgColor: "rgba(41, 182, 246, 0.08)",
+    baseColor: "#4fc3f7",
+    bgColor: "rgba(79, 195, 247, 0.08)",
     icon: ConstructionOutlinedIcon,
+  },
+  [CHIP_TYPES.DIET]: {
+    color: "success",
+    baseColor: "#81c784",
+    bgColor: "rgba(129, 199, 132, 0.08)",
+    icon: GrassIcon,
+  },
+  [CHIP_TYPES.SEASON]: {
+    color: "warning",
+    baseColor: "#ffd54f",
+    bgColor: "rgba(255, 213, 79, 0.08)",
+    icon: WbSunnyIcon,
+  },
+  [CHIP_TYPES.RECIPE_TYPE]: {
+    color: "secondary",
+    baseColor: "#ba68c8",
+    bgColor: "rgba(186, 104, 200, 0.08)",
+    icon: RestaurantMenuIcon,
   },
 };
 

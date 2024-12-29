@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["title", "description", "servings", "difficulty", "totalTime", "image", "ingredients", "subRecipes"],
+  "required": ["title", "description", "servings", "difficulty", "image", "ingredients", "subRecipes", "diet", "season"],
   "properties": {
     "title": { "type": "string" },
     "description": { "type": "string" },
@@ -10,7 +10,14 @@
       "type": "string",
       "enum": ["easy", "medium", "hard"]
     },
-    "totalTime": { "type": "string" },
+    "diet": {
+      "type": "string",
+      "enum": ["normal", "vegetarian", "vegan"]
+    },
+    "season": {
+      "type": "string",
+      "enum": ["spring", "summer", "autumn", "winter"]
+    },
     "image": { "type": "string" },
     "ingredients": {
       "type": "object",
