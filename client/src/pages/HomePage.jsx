@@ -1,46 +1,58 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Box,
   Typography,
   Card,
   CardContent,
   Grid,
-  Container
+  Container,
+  CircularProgress,
+  Alert
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import RecipeImage from "../components/common/RecipeImage";
 import { useTranslation } from 'react-i18next';
-import SearchBarWithResults from '../components/SearchBar';
-
-const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
+import SearchBar from '../components/SearchBar';
+import FilterTags from '../components/FilterTags';
+import ResultsLabel from '../components/ResultsLabel';
+import { useRecipeList } from '../contexts/RecipeListContext';
 
 const HomePage = () => {
-  const [recipes, setRecipes] = useState([]);
   const { t } = useTranslation();
+  const { filteredRecipes, loading, error } = useRecipeList();
 
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      try {
-        const response = await fetch(`${API_BASE_URL}/api/recipes`);
-        const data = await response.json();
-        setRecipes(data);
-      } catch (error) {
-        console.error('Error fetching recipes:', error);
-      }
-    };
-    fetchRecipes();
-  }, []);
+  if (loading) {
+    return (
+      <Container sx={{ display: 'flex', justifyContent: 'center', py: 8 }}>
+        <CircularProgress />
+        <Typography sx={{ ml: 2 }}>{t('common.loading')}</Typography>
+      </Container>
+    );
+  }
+
+  if (error) {
+    return (
+      <Container sx={{ py: 8 }}>
+        <Alert severity="error">{t('common.error')}</Alert>
+      </Container>
+    );
+  }
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ pt: 8, pb: 4 }}>
-        <SearchBarWithResults
-          recipes={recipes}
-        />
+        <SearchBar />
+        <Box sx={{ mt: 2 }}>
+          <FilterTags />
+        </Box>
       </Box>
 
-      <Grid container spacing={3} sx={{ mt: 4 }}>
-        {recipes.map((recipe) => (
+      <Box sx={{ display: 'flex', justifyContent: 'flex-start', mb: 1 }}>
+        <ResultsLabel />
+      </Box>
+
+      <Grid container spacing={3}>
+        {filteredRecipes.map((recipe) => (
           <Grid item xs={12} sm={6} md={4} key={recipe.slug}>
             <Card
               component={Link}
@@ -65,31 +77,28 @@ const HomePage = () => {
                     position: 'absolute',
                     top: 0,
                     left: 0,
-                    right: 0,
-                    bottom: 0,
-                    borderRadius: '4px 4px 0 0',
+                    width: '100%',
+                    height: '100%',
                   }}
                 />
               </Box>
               <CardContent>
                 <Typography variant="h5" component="h2" gutterBottom>
-                  {recipe.title}
+                  {t(`recipes.${recipe.slug}.title`, recipe.title)}
                 </Typography>
-                {recipe.description && (
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: '-webkit-box',
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: 'vertical',
-                    }}
-                  >
-                    {recipe.description}
-                  </Typography>
-                )}
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  {t(`recipes.${recipe.slug}.description`, recipe.metadata.description)}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>

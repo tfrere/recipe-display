@@ -108,12 +108,60 @@ export default {
   },
   search: {
     placeholder: 'Search for a recipe...',
+    byIngredients: "Search by ingredients...",
     noResults: 'No recipes found',
     results_one: '1 recipe found',
     results_other: '{{count}} recipes found'
   },
+  filters: {
+    diet: "Diet",
+    difficulty: "Difficulty",
+    season: "Season",
+    quick: "Preparation time",
+    quickRecipes: "Quick recipes",
+    other: "Other filters"
+  },
+  results: {
+    randomSeasonal: "Random {{season}} Recipes",
+    filtered: "Filtered Results"
+  },
+  diet: {
+    vegan: "Vegan",
+    vegetarian: "Vegetarian",
+    normal: "Regular",
+    pescatarian: "Pescatarian"
+  },
+  difficulty: {
+    easy: "Easy",
+    medium: "Medium",
+    hard: "Hard"
+  },
+  season: {
+    spring: "Spring",
+    summer: "Summer",
+    autumn: "Autumn",
+    winter: "Winter",
+    all: "All seasons"
+  },
+  recipeType: {
+    main: "Main course",
+    side: "Side dish",
+    dessert: "Dessert",
+    appetizer: "Appetizer",
+    breakfast: "Breakfast",
+    snack: "Snack",
+    drink: "Drink"
+  },
+  common: {
+    cancel: "Cancel",
+    loading: "Loading...",
+    error: "An error occurred"
+  },
   home: {
     title: "My Recipes",
+    subtitle: "Discover a collection of delicious recipes",
+    search: "Search for a recipe...",
+    noRecipes: "No recipes found",
     recipeCard: {
       servings: "{{count}} servings",
       time: {
@@ -129,8 +177,5 @@ export default {
     sourcePlaceholder: "Enter a recipe website URL or recipe text",
     sourceHelper: "Copy the link or text of the recipe you want to add",
     submit: "Generate recipe"
-  },
-  common: {
-    cancel: "Cancel"
   }
 };

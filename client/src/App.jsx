@@ -4,6 +4,7 @@ import { Box, CssBaseline } from '@mui/material';
 import HomePage from "./pages/HomePage";
 import RecipePage from "./pages/RecipePage";
 import { RecipeProvider } from "./contexts/RecipeContext";
+import { RecipeListProvider } from "./contexts/RecipeListContext"; // Added import statement
 import { ThemeProvider } from './contexts/ThemeContext';
 import { PreferencesProvider } from './contexts/PreferencesContext';
 import { LayoutProvider } from './contexts/LayoutContext';
@@ -25,16 +26,18 @@ function App() {
         <PreferencesProvider>
           <LayoutProvider>
             <RecipeProvider>
-              <CssBaseline />
-              <Router>
-                <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
-                  <Navigation currentView={currentView} onViewChange={setCurrentView} />
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />
-                  </Routes>
-                </Box>
-              </Router>
+              <RecipeListProvider>
+                <CssBaseline />
+                <Router>
+                  <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
+                    <Navigation currentView={currentView} onViewChange={setCurrentView} />
+                    <Routes>
+                      <Route path="/" element={<HomePage />} />
+                      <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />
+                    </Routes>
+                  </Box>
+                </Router>
+              </RecipeListProvider>
             </RecipeProvider>
           </LayoutProvider>
         </PreferencesProvider>

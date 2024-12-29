@@ -9,12 +9,35 @@ import (
 	"path/filepath"
 	"strings"
 
+	"recipe-display/server/internal/models"
 	"recipe-display/server/internal/utils"
 	recipegenerator "recipe-display/server/pkg/recipe-generator"
 )
 
 type RecipeService struct {
 	dataDir string
+}
+
+type RecipeListItem struct {
+	Title       string   `json:"title"`
+	Slug        string   `json:"slug"`
+	Metadata    Metadata `json:"metadata"`
+	Ingredients []string `json:"ingredients"`
+	Diet        string   `json:"diet"`
+}
+
+type Metadata struct {
+	Description string `json:"description"`
+	Servings    int    `json:"servings"`
+	Difficulty  string `json:"difficulty"`
+	TotalTime   string `json:"totalTime"`
+	Image       string `json:"image"`
+	ImageUrl    string `json:"imageUrl"`
+	SourceUrl   string `json:"sourceUrl"`
+	Diet        string `json:"diet"`
+	Season      string `json:"season"`
+	RecipeType  string `json:"recipeType"`
+	Quick       bool   `json:"quick"`
 }
 
 func NewRecipeService(dataDir string) *RecipeService {
@@ -160,6 +183,62 @@ func (s *RecipeService) FindRecipeBySlug(slug string) (string, error) {
 	return "", fmt.Errorf("recipe with slug %s not found", slug)
 }
 
+func (s *RecipeService) GetRecipeList() ([]RecipeListItem, error) {
+	files, err := ioutil.ReadDir(s.dataDir)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read data directory: %v", err)
+	}
+
+	var items []RecipeListItem
+	for _, file := range files {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".recipe.json") || file.Name() == "recipe.schema.json" {
+			continue
+		}
+
+		filePath := filepath.Join(s.dataDir, file.Name())
+		recipeData, err := ioutil.ReadFile(filePath)
+		if err != nil {
+			log.Printf("ERROR: Could not read recipe file %s: %v", file.Name(), err)
+			continue
+		}
+
+		var recipe models.Recipe
+		if err := json.Unmarshal(recipeData, &recipe); err != nil {
+			log.Printf("ERROR: Could not parse recipe file %s: %v", file.Name(), err)
+			continue
+		}
+
+		// Extraire les noms des ingrédients
+		ingredients := make([]string, 0, len(recipe.IngredientsList))
+		for _, ing := range recipe.IngredientsList {
+			ingredients = append(ingredients, ing.Name)
+		}
+
+		// Créer l'item de liste
+		item := RecipeListItem{
+			Title: recipe.Metadata.Title,
+			Slug:  s.GenerateSlug(recipe.Metadata.Title),
+			Metadata: Metadata{
+				Description: recipe.Metadata.Description,
+				Servings:    recipe.Metadata.Servings,
+				Difficulty:  recipe.Metadata.Difficulty,
+				TotalTime:   recipe.Metadata.TotalTime,
+				Image:       recipe.Metadata.Image,
+				ImageUrl:    recipe.Metadata.ImageUrl,
+				SourceUrl:   recipe.Metadata.SourceUrl,
+				Diet:        recipe.Metadata.Diet,
+				Season:      recipe.Metadata.Season,
+				RecipeType:  recipe.Metadata.RecipeType,
+				Quick:       recipe.Metadata.Quick,
+			},
+			Ingredients: ingredients,
+		}
+		items = append(items, item)
+	}
+
+	return items, nil
+}
+
 func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, error) {
 	// Créer un nouveau générateur de recettes
 	generator := recipegenerator.NewRecipeGenerator()
@@ -211,6 +290,7 @@ func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, e
 		"slug":        slug,
 		"servings":    recipe.Metadata.Servings,
 		"difficulty":  recipe.Metadata.Difficulty,
+		"diet":        recipe.Metadata.Diet,
 	}
 
 	return &response, nil
@@ -233,4 +313,43 @@ func getStringValue(v interface{}) string {
 		return str
 	}
 	return ""
+}
+
+// GenerateSlug génère un slug à partir d'un titre
+func (s *RecipeService) GenerateSlug(title string) string {
+	// Convertir en minuscules
+	slug := strings.ToLower(title)
+	
+	// Remplacer les caractères spéciaux et espaces par des tirets
+	slug = strings.Map(func(r rune) rune {
+		switch {
+		case r >= 'a' && r <= 'z':
+			return r
+		case r >= '0' && r <= '9':
+			return r
+		case r == ' ' || r == '-' || r == '_':
+			return '-'
+		case r == 'é' || r == 'è' || r == 'ê' || r == 'ë':
+			return 'e'
+		case r == 'à' || r == 'â' || r == 'ä':
+			return 'a'
+		case r == 'ù' || r == 'û' || r == 'ü':
+			return 'u'
+		case r == 'î' || r == 'ï':
+			return 'i'
+		case r == 'ô' || r == 'ö':
+			return 'o'
+		case r == 'ç':
+			return 'c'
+		default:
+			return -1
+		}
+	}, slug)
+	
+	// Remplacer les multiples tirets par un seul
+	slug = strings.Join(strings.FieldsFunc(slug, func(r rune) bool {
+		return r == '-'
+	}), "-")
+	
+	return slug
 }

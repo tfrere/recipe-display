@@ -31,9 +31,54 @@ export default {
   },
   search: {
     placeholder: 'Rechercher une recette...',
+    byIngredients: "Rechercher par ingrédients...",
     noResults: 'Aucune recette trouvée',
     results_one: '1 recette trouvée',
     results_other: '{{count}} recettes trouvées'
+  },
+  filters: {
+    diet: "Régime alimentaire",
+    difficulty: "Difficulté",
+    season: "Saison",
+    quick: "Temps de préparation",
+    quickRecipes: "Recettes rapides",
+    other: "Autres filtres"
+  },
+  results: {
+    randomSeasonal: "Recettes aléatoires de {{season}}",
+    filtered: "Résultats filtrés"
+  },
+  diet: {
+    vegan: "Végan",
+    vegetarian: "Végétarien",
+    normal: "Classique",
+    pescatarian: "Pescétarien"
+  },
+  difficulty: {
+    easy: "Facile",
+    medium: "Moyen",
+    hard: "Difficile"
+  },
+  season: {
+    spring: "Printemps",
+    summer: "Été",
+    autumn: "Automne",
+    winter: "Hiver",
+    all: "Toute saison"
+  },
+  recipeType: {
+    main: "Plat principal",
+    side: "Accompagnement",
+    dessert: "Dessert",
+    appetizer: "Entrée",
+    breakfast: "Petit-déjeuner",
+    snack: "En-cas",
+    drink: "Boisson"
+  },
+  common: {
+    cancel: "Annuler",
+    loading: "Chargement...",
+    error: "Une erreur est survenue"
   },
   home: {
     title: "Mes Recettes",
@@ -132,8 +177,5 @@ export default {
       kilogram: "kilogramme",
       kilograms: "kilogrammes"
     }
-  },
-  common: {
-    cancel: "Annuler"
   }
 };

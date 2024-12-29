@@ -13,6 +13,10 @@ type Recipe struct {
 		Image       string `json:"image"`
 		ImageUrl    string `json:"imageUrl"`
 		SourceUrl   string `json:"sourceUrl"`
+		Diet        string `json:"diet"`
+		Season      string `json:"season"`
+		RecipeType  string `json:"recipeType"`
+		Quick       bool   `json:"quick"`
 	} `json:"metadata"`
 	IngredientsList []struct {
 		ID       string  `json:"id"`

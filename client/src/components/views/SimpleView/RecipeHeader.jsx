@@ -161,17 +161,17 @@ ${Object.entries(recipe.steps || {})
             {/* Régime alimentaire et Saison */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <RecipeChip 
-                label={t(`recipe.diet.${recipe.diet || 'normal'}`)} 
+                label={t(`diet.${recipe.diet || 'normal'}`)} 
                 type={CHIP_TYPES.DIET}
                 size="small"
               />
               <RecipeChip 
-                label={t(`recipe.season.${recipe.season || 'spring'}`)} 
+                label={t(`season.${recipe.season || 'spring'}`)} 
                 type={CHIP_TYPES.SEASON}
                 size="small"
               />
               <RecipeChip 
-                label={t(`recipe.type.${recipe.recipeType || 'main'}`)} 
+                label={t(`recipeType.${recipe.recipeType || 'main'}`)} 
                 type={CHIP_TYPES.RECIPE_TYPE}
                 size="small"
               />
