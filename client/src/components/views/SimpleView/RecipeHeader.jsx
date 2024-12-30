@@ -81,16 +81,46 @@ ${Object.entries(recipe.steps || {})
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
         {/* Image */}
         {image && (
-          <Box sx={{ 
-            width: '100%', 
-            maxWidth: 600, 
-            height: 300, 
-            position: 'relative',
-            borderRadius: 2,
-            overflow: 'hidden',
-            '@media print': { display: 'none' } 
-          }}>
-            <RecipeImage slug={image} title={title} size="large" />
+          <Box
+            sx={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: '1200px',
+              aspectRatio: '21/9',
+              overflow: 'hidden',
+              borderRadius: { xs: 0, sm: '16px' },
+              mt: 8, // Ajouté une marge supérieure de 4 unités (32px)
+              mb: 2,
+              boxShadow: (theme) => 
+                theme.palette.mode === 'dark' 
+                  ? '0 8px 32px rgba(0, 0, 0, 0.5)'
+                  : '0 8px 32px rgba(0, 0, 0, 0.1)',
+              '&::after': {
+                content: '""',
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: '30%',
+                background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0))',
+                pointerEvents: 'none'
+              }
+            }}
+          >
+            <RecipeImage 
+              slug={image} 
+              title={title} 
+              size="large"
+              sx={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+                transition: 'transform 0.3s ease-in-out',
+                '&:hover': {
+                  transform: 'scale(1.02)'
+                }
+              }}
+            />
           </Box>
         )}
 
@@ -158,23 +188,22 @@ ${Object.entries(recipe.steps || {})
               <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.5 }}>•</Typography>
             )}
 
-            {/* Régime alimentaire et Saison */}
+            {/* Régime alimentaire, Saison et Type de plat */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <RecipeChip 
-                label={t(`diet.${recipe.diet || 'normal'}`)} 
-                type={CHIP_TYPES.DIET}
-                size="small"
-              />
-              <RecipeChip 
-                label={t(`season.${recipe.season || 'spring'}`)} 
-                type={CHIP_TYPES.SEASON}
-                size="small"
-              />
-              <RecipeChip 
-                label={t(`recipeType.${recipe.recipeType || 'main'}`)} 
-                type={CHIP_TYPES.RECIPE_TYPE}
-                size="small"
-              />
+              <Typography 
+                variant="body2" 
+                color="text.secondary"
+                sx={{ 
+                  fontWeight: 600,
+                  textTransform: 'capitalize'
+                }}
+              >
+                {t(`diet.${recipe.metadata?.diet || 'normal'}`)}
+                {" • "}
+                {t(`season.${recipe.metadata?.season || 'all'}`)}
+                {" • "}
+                {t(`recipeType.${recipe.metadata?.type || 'main'}`)}
+              </Typography>
             </Box>
 
             {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (

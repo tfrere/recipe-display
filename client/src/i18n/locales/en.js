@@ -52,11 +52,11 @@ export default {
       increaseServings: "Increase servings"
     },
     modes: {
-      shoppingList: "Shopping list mode",
-      ingredients: "Ingredients mode"
+      shoppingList: "Shopping List",
+      ingredients: "Shopping List"
     },
     diet: {
-      normal: "Regular",
+      normal: "Normal",
       vegetarian: "Vegetarian",
       vegan: "Vegan"
     },
@@ -66,11 +66,29 @@ export default {
       autumn: "Autumn",
       winter: "Winter"
     },
+    dishType: {
+      appetizer: "Appetizer",
+      starter: "Starter",
+      main: "Main Course",
+      side: "Side Dish",
+      dessert: "Dessert",
+      snack: "Snack",
+      breakfast: "Breakfast",
+      drink: "Drink"
+    },
     type: {
       appetizer: "Appetizer",
       starter: "Starter",
       main: "Main",
       dessert: "Dessert"
+    },
+    categories: {
+      produce: "Produce",
+      dairy: "Dairy",
+      "pantry-savory": "Pantry - Savory",
+      "pantry-sweet": "Pantry - Sweet",
+      condiments: "Condiments",
+      beverages: "Beverages"
     },
     units: {
       // Base units
@@ -111,9 +129,11 @@ export default {
     byIngredients: "Search by ingredients...",
     noResults: 'No recipes found',
     results_one: '1 recipe found',
-    results_other: '{{count}} recipes found'
+    results_other: '{{count}} recipes found',
+    reset_filters: 'Reset filters',
   },
   filters: {
+    filterBy: 'Filter by',
     diet: "Diet",
     difficulty: "Difficulty",
     season: "Season",
@@ -155,13 +175,16 @@ export default {
   common: {
     cancel: "Cancel",
     loading: "Loading...",
-    error: "An error occurred"
+    error: "An error occurred",
+    back: "Back"
   },
   home: {
     title: "My Recipes",
     subtitle: "Discover a collection of delicious recipes",
     search: "Search for a recipe...",
     noRecipes: "No recipes found",
+    no_recipes: 'No recipes found',
+    no_recipes_description: 'Try modifying your filters or search to find recipes.',
     recipeCard: {
       servings: "{{count}} servings",
       time: {

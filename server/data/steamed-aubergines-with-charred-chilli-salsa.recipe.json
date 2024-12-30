@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "title": "Steamed Aubergines with Charred Chilli Salsa",
+    "description": "Aubergines become fantastically silky and soak up the aromas of chilli, garlic, and ginger, served with a flavorful charred chilli salsa.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "58min",
+    "image": "steamed-aubergines-with-charred-chilli-salsa.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/steamed-aubergines-with-charred-chilli-salsa/images/steamed-aubergines-with-charred-chilli-salsa.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/steamed-aubergines-with-charred-chilli-salsa/index.html",
+    "diet": "vegan",
+    "season": "summer",
+    "recipeType": "appetizer",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "aubergines",
+      "unit": "g",
+      "amount": 700,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "spring onions",
+      "unit": "g",
+      "amount": 15,
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "ready-roasted and salted almonds",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "coriander leaves",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "flaked sea salt",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing6",
+      "name": "mild red chillies",
+      "unit": "g",
+      "amount": 30,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "datterini cherry tomatoes",
+      "unit": "g",
+      "amount": 140,
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "sherry vinegar",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing9",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 40,
+      "category": "condiments"
+    },
+    {
+      "id": "ing10",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "fresh ginger",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "produce"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Charred Chilli Salsa",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Char the chillies and prepare the salsa",
+          "time": "20min",
+          "tools": [
+            "frying pan",
+            "small bowl",
+            "saucer"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "salsa prepared",
+            "description": "Chillies charred and salsa mixed with tomatoes, vinegar, and salt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Garlic and Ginger Oil",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Prepare the garlic and ginger oil",
+          "time": "8min",
+          "tools": [
+            "small pan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "oil prepared",
+            "description": "Garlic and ginger softened in gently heated olive oil with salt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Steamed Aubergines",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Prepare and steam the aubergines",
+          "time": "30min",
+          "tools": [
+            "large bowl",
+            "steaming basket",
+            "large saucepan",
+            "lid",
+            "foil"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "aubergines steamed",
+            "description": "Aubergines cut, salted, and steamed until soft but still holding their shape."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Assemble the dish",
+          "time": "0min",
+          "tools": [
+            "platter"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "aubergines steamed"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "state",
+              "ref": "salsa prepared"
+            },
+            {
+              "type": "state",
+              "ref": "oil prepared"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "dish assembled",
+            "description": "Steamed aubergines seasoned and topped with spring onions, salsa, garlic and ginger oil, almonds, and coriander."
+          }
+        }
+      ]
+    }
+  ]
+}

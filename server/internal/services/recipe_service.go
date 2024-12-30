@@ -3,8 +3,10 @@ package services
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -162,7 +164,7 @@ func (s *RecipeService) FindRecipeBySlug(slug string) (string, error) {
 			continue
 		}
 
-		// Get title from either format
+		// Get title and create metadata
 		var title string
 		if metadata, ok := recipe["metadata"].(map[string]interface{}); ok {
 			if t, ok := metadata["title"].(string); ok {
@@ -176,7 +178,30 @@ func (s *RecipeService) FindRecipeBySlug(slug string) (string, error) {
 		}
 
 		if utils.CreateSlug(title) == slug {
-			return string(recipeData), nil
+			// Ensure metadata exists in recipe
+			if _, ok := recipe["metadata"]; !ok {
+				metadata := map[string]interface{}{
+					"description": recipe["description"],
+					"servings":    recipe["servings"],
+					"difficulty":  recipe["difficulty"],
+					"totalTime":   recipe["totalTime"],
+					"image":       recipe["image"],
+					"imageUrl":    recipe["imageUrl"],
+					"sourceUrl":   recipe["sourceUrl"],
+					"diet":        recipe["diet"],
+					"season":      recipe["season"],
+					"recipeType":  recipe["recipeType"],
+					"quick":       recipe["quick"],
+				}
+				recipe["metadata"] = metadata
+			}
+			
+			// Convert back to JSON string
+			resultJSON, err := json.Marshal(recipe)
+			if err != nil {
+				return "", fmt.Errorf("failed to marshal recipe: %v", err)
+			}
+			return string(resultJSON), nil
 		}
 	}
 
@@ -239,31 +264,68 @@ func (s *RecipeService) GetRecipeList() ([]RecipeListItem, error) {
 	return items, nil
 }
 
-func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, error) {
-	// Créer un nouveau générateur de recettes
-	generator := recipegenerator.NewRecipeGenerator()
+func (s *RecipeService) AddRecipeFromUrl(urlString string) (*map[string]interface{}, error) {
+	// Créer un dossier temporaire pour les opérations
+	tempDir, err := os.MkdirTemp("", "recipe-*")
+	if err != nil {
+		return nil, fmt.Errorf("failed to create temp directory: %v", err)
+	}
+	defer os.RemoveAll(tempDir) // Nettoyer le dossier temporaire à la fin
 
-	// Récupérer le contenu de la page web et générer la recette
-	recipe, err := generator.GenerateFromWebContent("", url, nil)
+	// Récupérer le contenu de la page
+	content, err := utils.FetchWebPageContent(urlString)
+	if err != nil {
+		return nil, fmt.Errorf("failed to fetch URL content: %v", err)
+	}
+
+	// Extraire le contenu pertinent du HTML
+	webContent, err := utils.ExtractWebContent(content)
+	if err != nil {
+		return nil, fmt.Errorf("failed to extract web content: %v", err)
+	}
+
+	// Générer la recette
+	generator := recipegenerator.NewRecipeGenerator()
+	recipe, err := generator.GenerateFromWebContent(webContent, urlString, webContent.ImageURLs)
 	if err != nil {
 		return nil, fmt.Errorf("failed to generate recipe: %v", err)
 	}
 
-	// Créer le slug à partir du titre
-	slug := utils.CreateSlug(recipe.Metadata.Title)
+	// Générer le slug
+	slug := s.GenerateSlug(recipe.Metadata.Title)
+	recipe.Metadata.Image = fmt.Sprintf("%s.jpg", slug)
 
-	// Préparer les chemins de fichiers
-	imagePath := filepath.Join(s.dataDir, "images", "original", slug+filepath.Ext(recipe.Metadata.ImageUrl))
-	recipePath := filepath.Join(s.dataDir, slug+".recipe.json")
-
-	// Télécharger l'image si disponible
+	// S'assurer que l'URL de l'image a un protocole
 	if recipe.Metadata.ImageUrl != "" {
-		if err := utils.DownloadFile(recipe.Metadata.ImageUrl, imagePath); err != nil {
-			log.Printf("WARNING: Failed to download image: %v", err)
-		} else {
-			// Mettre à jour le chemin de l'image dans la recette
-			recipe.Metadata.Image = slug + filepath.Ext(recipe.Metadata.ImageUrl)
+		if !strings.HasPrefix(recipe.Metadata.ImageUrl, "http://") && !strings.HasPrefix(recipe.Metadata.ImageUrl, "https://") {
+			// Si l'URL commence par //, ajouter https:
+			if strings.HasPrefix(recipe.Metadata.ImageUrl, "//") {
+				recipe.Metadata.ImageUrl = "https:" + recipe.Metadata.ImageUrl
+			} else if strings.HasPrefix(recipe.Metadata.ImageUrl, "/") {
+				// Si l'URL est absolue, ajouter le domaine
+				sourceURL, err := url.Parse(urlString)
+				if err == nil {
+					recipe.Metadata.ImageUrl = fmt.Sprintf("%s://%s%s", sourceURL.Scheme, sourceURL.Host, recipe.Metadata.ImageUrl)
+				}
+			} else {
+				// Si l'URL est relative, la construire à partir de l'URL de base
+				sourceURL, err := url.Parse(urlString)
+				if err == nil {
+					baseURL := fmt.Sprintf("%s://%s", sourceURL.Scheme, sourceURL.Host)
+					if strings.HasSuffix(baseURL, "/") {
+						recipe.Metadata.ImageUrl = baseURL + recipe.Metadata.ImageUrl
+					} else {
+						recipe.Metadata.ImageUrl = baseURL + "/" + recipe.Metadata.ImageUrl
+					}
+				}
+			}
 		}
+	}
+
+	// Télécharger l'image dans le dossier temporaire
+	tempImagePath := filepath.Join(tempDir, recipe.Metadata.Image)
+	if err := utils.DownloadFile(recipe.Metadata.ImageUrl, tempImagePath); err != nil {
+		return nil, fmt.Errorf("failed to download image: %v", err)
 	}
 
 	// Convertir la recette en JSON
@@ -272,13 +334,42 @@ func (s *RecipeService) AddRecipeFromUrl(url string) (*map[string]interface{}, e
 		return nil, fmt.Errorf("failed to convert recipe to JSON: %v", err)
 	}
 
-	// S'assurer que le dossier existe
-	if err := os.MkdirAll(filepath.Dir(recipePath), 0755); err != nil {
-		return nil, fmt.Errorf("failed to create directory: %v", err)
+	// Préparer les chemins finaux
+	recipePath := filepath.Join(s.dataDir, fmt.Sprintf("%s.recipe.json", slug))
+	imagePath := filepath.Join(s.dataDir, "images", "original", recipe.Metadata.Image)
+
+	// Vérifier si la recette existe déjà
+	if _, err := os.Stat(recipePath); err == nil {
+		return nil, fmt.Errorf("recipe already exists: %s", slug)
+	}
+
+	// Créer le dossier images/original s'il n'existe pas
+	imagesDir := filepath.Join(s.dataDir, "images", "original")
+	if err := os.MkdirAll(imagesDir, 0755); err != nil {
+		return nil, fmt.Errorf("failed to create images directory: %v", err)
+	}
+
+	// Copier l'image du dossier temporaire vers le dossier final
+	srcFile, err := os.Open(tempImagePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to open source image: %v", err)
+	}
+	defer srcFile.Close()
+
+	dstFile, err := os.Create(imagePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create destination image: %v", err)
+	}
+	defer dstFile.Close()
+
+	if _, err := io.Copy(dstFile, srcFile); err != nil {
+		return nil, fmt.Errorf("failed to copy image: %v", err)
 	}
 
 	// Sauvegarder la recette
 	if err := os.WriteFile(recipePath, jsonData, 0644); err != nil {
+		// Si l'écriture de la recette échoue, supprimer l'image
+		os.Remove(imagePath)
 		return nil, fmt.Errorf("failed to save recipe: %v", err)
 	}
 

@@ -81,7 +81,8 @@ const PreparationSteps = ({ recipe }) => {
       <Box sx={{ 
         display: 'flex', 
         alignItems: 'center',
-        mb: 4,
+        mb: 6,
+        mt:2,
         gap: 1
       }}>
         <Typography variant="h5" component="span">

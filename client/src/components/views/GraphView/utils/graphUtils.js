@@ -27,47 +27,48 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
   }
 
   // Ajouter les actions et leurs liens
-  subRecipe.steps.forEach((step) => {
-    // Ajouter l'action
-    nodes.push({
-      id: step.id,
-      label: step.action,
-      type: "action",
-      time: step.time,
-      temperature: step.temperature,
-      tools: step.tools?.map((toolId) => toolsMap[toolId]?.name || toolId),
-    });
-    processedNodes.add(step.id);
-
-    // Ajouter les liens d'entrée
-    step.inputs.forEach((input) => {
-      const sourceId =
-        input.type === "ingredient" ? `${subRecipeId}-${input.ref}` : input.ref;
-
-      links.push({
-        source: sourceId,
-        target: step.id,
-        type: input.type,
-      });
-    });
-
-    // Ajouter les liens de sortie
-    if (step.output) {
-      const stateId = step.output.state;
+  if (subRecipe.steps) {
+    subRecipe.steps.filter(step => step).forEach((step) => {
+      // Ajouter l'action
       nodes.push({
-        id: stateId,
-        label: step.output.description,
-        type: "state",
+        id: step.id,
+        label: step.action,
+        type: "action",
+        time: step.time,
+        temperature: step.temperature,
+        tools: step.tools?.map((toolId) => toolsMap[toolId]?.name || toolId),
       });
-      processedNodes.add(stateId);
+      processedNodes.add(step.id);
 
-      links.push({
-        source: step.id,
-        target: stateId,
-        type: "state",
-      });
-    }
-  });
+      // Ajouter les liens d'entrée
+      if (step.inputs) {
+        step.inputs.forEach((input) => {
+          const sourceId =
+            input.type === "ingredient" ? `${subRecipeId}-${input.ref}` : input.ref;
+
+          links.push({
+            source: sourceId,
+            target: step.id,
+            type: input.type,
+          });
+        });
+      }
+
+      // Ajouter les liens de sortie
+      if (step.outputs) {
+        step.outputs.forEach((output) => {
+          const targetId =
+            output.type === "ingredient" ? `${subRecipeId}-${output.ref}` : output.ref;
+
+          links.push({
+            source: step.id,
+            target: targetId,
+            type: output.type,
+          });
+        });
+      }
+    });
+  }
 
   // Identifier le nœud final
   const allTargets = new Set(links.map((link) => link.target));

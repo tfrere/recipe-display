@@ -11,14 +11,17 @@ import { LayoutProvider } from './contexts/LayoutContext';
 import Navigation from './components/common/Navigation';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
-
-const VIEWS = {
-  GRAPH: 'graph',
-  SIMPLE: 'simple'
-};
+import { VIEWS } from './constants/views';
 
 function App() {
   const [currentView, setCurrentView] = React.useState(VIEWS.SIMPLE);
+
+  // Ensure view state is properly managed
+  const handleViewChange = (view) => {
+    if (Object.values(VIEWS).includes(view)) {
+      setCurrentView(view);
+    }
+  };
 
   return (
     <I18nextProvider i18n={i18n}>
@@ -30,7 +33,7 @@ function App() {
                 <CssBaseline />
                 <Router>
                   <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
-                    <Navigation currentView={currentView} onViewChange={setCurrentView} />
+                    <Navigation currentView={currentView} onViewChange={handleViewChange} />
                     <Routes>
                       <Route path="/" element={<HomePage />} />
                       <Route path="/recipe/:slug" element={<RecipePage currentView={currentView} />} />

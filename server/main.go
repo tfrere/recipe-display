@@ -104,10 +104,24 @@ type RecipeResponse struct {
 	TotalTime   string `json:"totalTime"`
 	Image       string `json:"image"`
 	Slug        string `json:"slug"`
+	Metadata    struct {
+		Description string `json:"description"`
+		Servings    int    `json:"servings"`
+		Difficulty  string `json:"difficulty"`
+		TotalTime   string `json:"totalTime"`
+		Image       string `json:"image"`
+		ImageUrl    string `json:"imageUrl"`
+		SourceUrl   string `json:"sourceUrl"`
+		Diet        string `json:"diet"`
+		Season      string `json:"season"`
+		RecipeType  string `json:"recipeType"`
+		Quick       bool   `json:"quick"`
+	} `json:"metadata"`
 	Ingredients map[string]struct {
 		Name     string `json:"name"`
 		Unit     string `json:"unit"`
 		Category string `json:"category"`
+		State    string `json:"state"`
 	} `json:"ingredients"`
 	SubRecipes map[string]struct {
 		Title       string `json:"title"`
@@ -141,6 +155,31 @@ func toRecipeResponse(uiRecipe *models.UIRecipe, slug string) *RecipeResponse {
 		TotalTime:   uiRecipe.TotalTime,
 		Image:       uiRecipe.Image,
 		Slug:        slug,
+		Metadata: struct {
+			Description string `json:"description"`
+			Servings    int    `json:"servings"`
+			Difficulty  string `json:"difficulty"`
+			TotalTime   string `json:"totalTime"`
+			Image       string `json:"image"`
+			ImageUrl    string `json:"imageUrl"`
+			SourceUrl   string `json:"sourceUrl"`
+			Diet        string `json:"diet"`
+			Season      string `json:"season"`
+			RecipeType  string `json:"recipeType"`
+			Quick       bool   `json:"quick"`
+		}{
+			Description: uiRecipe.Description,
+			Servings:    uiRecipe.Servings,
+			Difficulty:  uiRecipe.Difficulty,
+			TotalTime:   uiRecipe.TotalTime,
+			Image:       uiRecipe.Image,
+			ImageUrl:    uiRecipe.ImageUrl,
+			SourceUrl:   uiRecipe.SourceUrl,
+			Diet:        uiRecipe.Diet,
+			Season:      uiRecipe.Season,
+			RecipeType:  uiRecipe.RecipeType,
+			Quick:       uiRecipe.Quick,
+		},
 		Ingredients: uiRecipe.Ingredients,
 		SubRecipes:  uiRecipe.SubRecipes,
 	}

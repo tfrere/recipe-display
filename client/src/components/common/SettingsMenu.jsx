@@ -10,13 +10,9 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import { usePreferences } from '../../contexts/PreferencesContext';
 import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
 import { useTranslation } from 'react-i18next';
+import { VIEWS } from '../../constants/views';
 
-const VIEWS = {
-  GRAPH: 'graph',
-  SIMPLE: 'simple'
-};
-
-const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, onToggleDarkMode }) => {
+const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggleDarkMode }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const { unitSystem, toggleUnitSystem } = usePreferences();
   const { layoutMode, toggleLayout } = useLayout();
@@ -160,7 +156,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, onTog
           {t('navigation.settings.preferences')}
         </Typography>
 
-        <MenuItem onClick={onToggleDarkMode}>
+        <MenuItem onClick={toggleDarkMode}>
           <ListItemIcon>
             {darkMode ? 
               <DarkModeOutlinedIcon fontSize="small" /> : 

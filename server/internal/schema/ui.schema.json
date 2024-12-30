@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["title", "description", "servings", "difficulty", "image", "ingredients", "subRecipes", "diet", "season", "quick"],
+  "required": ["title", "description", "servings", "difficulty", "image", "ingredients", "subRecipes", "diet", "season", "quick", "metadata"],
   "properties": {
     "title": { "type": "string" },
     "description": { "type": "string" },
@@ -23,6 +23,23 @@
       "description": "Indicates if the recipe can be made in less than 30 minutes"
     },
     "image": { "type": "string" },
+    "metadata": {
+      "type": "object",
+      "required": ["description", "servings", "difficulty", "totalTime", "image", "imageUrl", "sourceUrl", "diet", "season", "recipeType", "quick"],
+      "properties": {
+        "description": { "type": "string" },
+        "servings": { "type": "number" },
+        "difficulty": { "type": "string" },
+        "totalTime": { "type": "string" },
+        "image": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "sourceUrl": { "type": "string" },
+        "diet": { "type": "string" },
+        "season": { "type": "string" },
+        "recipeType": { "type": "string" },
+        "quick": { "type": "boolean" }
+      }
+    },
     "ingredients": {
       "type": "object",
       "patternProperties": {
@@ -32,7 +49,12 @@
           "properties": {
             "name": { "type": "string" },
             "unit": { "type": "string" },
-            "category": { "type": "string" }
+            "category": { "type": "string" },
+            "state": {
+              "type": "string",
+              "title": "Preparation State",
+              "description": "How the ingredient should be prepared (optional)"
+            }
           }
         }
       }

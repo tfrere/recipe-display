@@ -223,16 +223,43 @@
           "id": "aromates",
           "action": "Préparer les aromates",
           "time": "10min",
-          "tools": ["couteau", "planche à découper"],
+          "tools": [
+            "couteau",
+            "planche à découper"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "combawa"},
-            {"type": "ingredient", "ref": "citronnelle"},
-            {"type": "ingredient", "ref": "menthe"},
-            {"type": "ingredient", "ref": "coriandre"},
-            {"type": "ingredient", "ref": "galanga"},
-            {"type": "ingredient", "ref": "ail"},
-            {"type": "ingredient", "ref": "piment"},
-            {"type": "ingredient", "ref": "gingembre"}
+            {
+              "type": "ingredient",
+              "ref": "combawa"
+            },
+            {
+              "type": "ingredient",
+              "ref": "citronnelle"
+            },
+            {
+              "type": "ingredient",
+              "ref": "menthe"
+            },
+            {
+              "type": "ingredient",
+              "ref": "coriandre"
+            },
+            {
+              "type": "ingredient",
+              "ref": "galanga"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ail"
+            },
+            {
+              "type": "ingredient",
+              "ref": "piment"
+            },
+            {
+              "type": "ingredient",
+              "ref": "gingembre"
+            }
           ],
           "output": {
             "state": "haché",
@@ -243,10 +270,20 @@
           "id": "seitan",
           "action": "Préparer le seitan",
           "time": "10min",
-          "tools": ["couteau", "planche à découper", "poêle"],
+          "tools": [
+            "couteau",
+            "planche à découper",
+            "poêle"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "seitan"},
-            {"type": "ingredient", "ref": "huile-vegetale"}
+            {
+              "type": "ingredient",
+              "ref": "seitan"
+            },
+            {
+              "type": "ingredient",
+              "ref": "huile-vegetale"
+            }
           ],
           "output": {
             "state": "haché et cuit",
@@ -257,9 +294,14 @@
           "id": "riz",
           "action": "Griller le riz",
           "time": "5min",
-          "tools": ["poêle"],
+          "tools": [
+            "poêle"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "riz"}
+            {
+              "type": "ingredient",
+              "ref": "riz"
+            }
           ],
           "output": {
             "state": "grillé",
@@ -270,9 +312,14 @@
           "id": "choux",
           "action": "Préparer les choux",
           "time": "15min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "choux"}
+            {
+              "type": "ingredient",
+              "ref": "choux"
+            }
           ],
           "output": {
             "state": "blanchi",
@@ -283,10 +330,18 @@
           "id": "epinards",
           "action": "Cuire les épinards et la livèche",
           "time": "5min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "epinard"},
-            {"type": "ingredient", "ref": "liveche"}
+            {
+              "type": "ingredient",
+              "ref": "epinard"
+            },
+            {
+              "type": "ingredient",
+              "ref": "liveche"
+            }
           ],
           "output": {
             "state": "blanchi",
@@ -297,10 +352,18 @@
           "id": "creme-epinard",
           "action": "Réaliser la crème d'épinards",
           "time": "10min",
-          "tools": ["blender"],
+          "tools": [
+            "blender"
+          ],
           "inputs": [
-            {"type": "step", "ref": "epinards"},
-            {"type": "ingredient", "ref": "creme"}
+            {
+              "type": "step",
+              "ref": "epinards"
+            },
+            {
+              "type": "ingredient",
+              "ref": "creme"
+            }
           ],
           "output": {
             "state": "mixé",
@@ -311,13 +374,30 @@
           "id": "assemblage-laap",
           "action": "Assembler le laap",
           "time": "5min",
-          "tools": ["saladier"],
+          "tools": [
+            "saladier"
+          ],
           "inputs": [
-            {"type": "step", "ref": "aromates"},
-            {"type": "step", "ref": "seitan"},
-            {"type": "step", "ref": "riz"},
-            {"type": "ingredient", "ref": "sauce-soja"},
-            {"type": "ingredient", "ref": "miso-lentille"}
+            {
+              "type": "step",
+              "ref": "aromates"
+            },
+            {
+              "type": "step",
+              "ref": "seitan"
+            },
+            {
+              "type": "step",
+              "ref": "riz"
+            },
+            {
+              "type": "ingredient",
+              "ref": "sauce-soja"
+            },
+            {
+              "type": "ingredient",
+              "ref": "miso-lentille"
+            }
           ],
           "output": {
             "state": "mélangé",
@@ -334,9 +414,14 @@
           "id": "caramel-base",
           "action": "Réaliser le caramel",
           "time": "10min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "sucre"}
+            {
+              "type": "ingredient",
+              "ref": "sucre"
+            }
           ],
           "output": {
             "state": "caramélisé",
@@ -347,10 +432,18 @@
           "id": "deglacage",
           "action": "Déglacer au vin rouge",
           "time": "5min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "step", "ref": "caramel-base"},
-            {"type": "ingredient", "ref": "vin-rouge"}
+            {
+              "type": "step",
+              "ref": "caramel-base"
+            },
+            {
+              "type": "ingredient",
+              "ref": "vin-rouge"
+            }
           ],
           "output": {
             "state": "réduit",
@@ -361,9 +454,14 @@
           "id": "echalotes",
           "action": "Sauter les échalotes",
           "time": "10min",
-          "tools": ["poêle"],
+          "tools": [
+            "poêle"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "echalote"}
+            {
+              "type": "ingredient",
+              "ref": "echalote"
+            }
           ],
           "output": {
             "state": "caramélisé",
@@ -374,9 +472,14 @@
           "id": "crosnes",
           "action": "Préparer les crosnes",
           "time": "15min",
-          "tools": ["poêle"],
+          "tools": [
+            "poêle"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "crosne"}
+            {
+              "type": "ingredient",
+              "ref": "crosne"
+            }
           ],
           "output": {
             "state": "caramélisé",
@@ -393,10 +496,19 @@
           "id": "pate-tuile",
           "action": "Préparer la pâte",
           "time": "10min",
-          "tools": ["bol", "fouet"],
+          "tools": [
+            "bol",
+            "fouet"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "farine-manioc"},
-            {"type": "ingredient", "ref": "citron-bouddha"}
+            {
+              "type": "ingredient",
+              "ref": "farine-manioc"
+            },
+            {
+              "type": "ingredient",
+              "ref": "citron-bouddha"
+            }
           ],
           "output": {
             "state": "mélangé",
@@ -407,9 +519,15 @@
           "id": "cuisson-tuile",
           "action": "Cuire les tuiles",
           "time": "15min",
-          "tools": ["plaque de cuisson", "papier sulfurisé"],
+          "tools": [
+            "plaque de cuisson",
+            "papier sulfurisé"
+          ],
           "inputs": [
-            {"type": "step", "ref": "pate-tuile"}
+            {
+              "type": "step",
+              "ref": "pate-tuile"
+            }
           ],
           "output": {
             "state": "cuit",
@@ -426,14 +544,34 @@
           "id": "dressage-final",
           "action": "Dresser l'assiette",
           "time": "5min",
-          "tools": ["assiette"],
+          "tools": [
+            "assiette"
+          ],
           "inputs": [
-            {"type": "step", "ref": "assemblage-laap"},
-            {"type": "step", "ref": "deglacage"},
-            {"type": "step", "ref": "cuisson-tuile"},
-            {"type": "step", "ref": "creme-epinard"},
-            {"type": "step", "ref": "echalotes"},
-            {"type": "step", "ref": "crosnes"}
+            {
+              "type": "step",
+              "ref": "assemblage-laap"
+            },
+            {
+              "type": "step",
+              "ref": "deglacage"
+            },
+            {
+              "type": "step",
+              "ref": "cuisson-tuile"
+            },
+            {
+              "type": "step",
+              "ref": "creme-epinard"
+            },
+            {
+              "type": "step",
+              "ref": "echalotes"
+            },
+            {
+              "type": "step",
+              "ref": "crosnes"
+            }
           ],
           "output": {
             "state": "dressé",

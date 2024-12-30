@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { AppBar, Toolbar, Box, Button } from '@mui/material';
+import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { useTheme } from '../../contexts/ThemeContext';
 import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import SettingsMenu from './SettingsMenu';
 import AddRecipeModal from './AddRecipeModal';
 import { useTranslation } from 'react-i18next';
@@ -19,6 +20,13 @@ const Navigation = ({ currentView, onViewChange }) => {
   const isRecipePage = location.pathname.startsWith('/recipe/');
   const { t } = useTranslation();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
+
+  // Ensure currentView and onViewChange are defined
+  const handleViewChange = (view) => {
+    if (onViewChange && typeof onViewChange === 'function') {
+      onViewChange(view);
+    }
+  };
 
   return (
     <>
@@ -36,23 +44,31 @@ const Navigation = ({ currentView, onViewChange }) => {
         }}
       >
         <Toolbar>
-          {isRecipePage && (
-            <Button
-              onClick={() => navigate('/')}
-              startIcon={<KeyboardBackspaceOutlinedIcon />}
-              sx={{ 
-                textTransform: 'none',
-                color: 'text.secondary',
-                ml: 2,
-                '&:hover': {
-                  color: 'text.primary'
-                }
-              }}
-            >
-              {t('navigation.backToRecipes')}
-            </Button>
-          )}
-          
+          <Box sx={{ display: 'flex', alignItems: 'center', flex: 1 }}>
+            {isRecipePage ? (
+              <Button
+                onClick={() => navigate('/')}
+                startIcon={<KeyboardBackspaceOutlinedIcon />}
+                sx={{ 
+                  textTransform: 'none',
+                  color: 'text.secondary',
+                  '&:hover': {
+                    color: 'text.primary'
+                  }
+                }}
+              >
+                {t('common.back')}
+              </Button>
+            ) : (
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <AutoStoriesOutlinedIcon sx={{ mr: 1, color: 'text.secondary' }} />
+                <Typography variant="h6" color="text.secondary" sx={{ fontWeight: 500 }}>
+                  Cookbook
+                </Typography>
+              </Box>
+            )}
+          </Box>
+
           <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center', gap: 1 }}>
             <Button
               onClick={() => setIsAddRecipeModalOpen(true)}
@@ -74,11 +90,11 @@ const Navigation = ({ currentView, onViewChange }) => {
             </Button>
 
             <SettingsMenu 
-              currentView={currentView} 
-              onViewChange={onViewChange} 
+              currentView={currentView}
+              onViewChange={handleViewChange}
               isRecipePage={isRecipePage}
               darkMode={darkMode}
-              onToggleDarkMode={toggleDarkMode}
+              toggleDarkMode={toggleDarkMode}
             />
           </Box>
         </Toolbar>

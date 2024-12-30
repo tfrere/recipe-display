@@ -34,7 +34,8 @@ export default {
     byIngredients: "Rechercher par ingrédients...",
     noResults: 'Aucune recette trouvée',
     results_one: '1 recette trouvée',
-    results_other: '{{count}} recettes trouvées'
+    results_other: '{{count}} recettes trouvées',
+    reset_filters: 'Réinitialiser les filtres',
   },
   filters: {
     diet: "Régime alimentaire",
@@ -42,7 +43,8 @@ export default {
     season: "Saison",
     quick: "Temps de préparation",
     quickRecipes: "Recettes rapides",
-    other: "Autres filtres"
+    other: "Autres filtres",
+    filterBy: 'Filtrer par'
   },
   results: {
     randomSeasonal: "Recettes aléatoires de {{season}}",
@@ -83,7 +85,8 @@ export default {
   home: {
     title: "Mes Recettes",
     search: "Rechercher une recette...",
-    noRecipes: "Aucune recette trouvée",
+    no_recipes: 'Aucune recette trouvée',
+    no_recipes_description: 'Essayez de modifier vos filtres ou votre recherche pour trouver des recettes.',
     recipeCard: {
       servings: "{{count}} personnes",
       time: {
@@ -95,10 +98,24 @@ export default {
   },
   addRecipe: {
     title: "Ajouter une recette",
-    sourceLabel: "URL ou texte de la recette",
-    sourcePlaceholder: "Entrez l'URL d'un site de recettes ou le texte d'une recette",
-    sourceHelper: "Copiez le lien ou le texte de la recette que vous souhaitez ajouter",
-    submit: "Générer la recette"
+    sourceLabel: "URL de la recette",
+    sourcePlaceholder: "https://example.com/recipe",
+    sourceHelper: "Collez l'URL d'une recette que vous souhaitez ajouter",
+    submit: "Ajouter",
+    success: "Recette ajoutée avec succès !",
+    error: {
+      generation: "Erreur lors de la génération de la recette",
+      noResponse: "Pas de réponse du serveur. Vérifiez votre connexion.",
+      request: "Erreur de configuration de la requête"
+    },
+    steps: {
+      fetchingUrl: "Récupération de la page web...",
+      analyzingContent: "Analyse du contenu...",
+      extractingRecipe: "Extraction de la recette...",
+      translating: "Traduction en français...",
+      processingImages: "Traitement des images...",
+      savingRecipe: "Enregistrement de la recette..."
+    }
   },
   recipe: {
     time: {
@@ -127,13 +144,13 @@ export default {
       increaseServings: "Augmenter les portions"
     },
     modes: {
-      shoppingList: "Mode liste de courses",
-      ingredients: "Mode ingrédients"
+      ingredients: "Liste de courses",
+      shoppingList: "Liste de courses"
     },
     diet: {
       normal: "Normal",
       vegetarian: "Végétarien",
-      vegan: "Végétalien"
+      vegan: "Vegan"
     },
     season: {
       spring: "Printemps",
@@ -141,11 +158,33 @@ export default {
       autumn: "Automne",
       winter: "Hiver"
     },
+    dishType: {
+      appetizer: "Entrée",
+      starter: "Entrée",
+      main: "Plat principal",
+      side: "Accompagnement",
+      dessert: "Dessert",
+      snack: "En-cas",
+      breakfast: "Petit-déjeuner",
+      drink: "Boisson"
+    },
+    quick: "Recettes rapides",
     type: {
       appetizer: "Apéritif",
       starter: "Entrée",
       main: "Plat",
       dessert: "Dessert"
+    },
+    categories: {
+      produce: "Fruits et Légumes",
+      dairy: "Crèmerie",
+      meat: "Boucherie",
+      fish: "Poissonnerie",
+      frozen: "Surgelés",
+      "pantry-savory": "Épicerie Salée",
+      "pantry-sweet": "Épicerie Sucrée",
+      condiments: "Condiments",
+      beverages: "Boissons"
     },
     units: {
       // Unités de base

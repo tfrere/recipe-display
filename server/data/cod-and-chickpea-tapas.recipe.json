@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "title": "Cod and Chickpea Tapas",
+    "description": "A flavorful tapas dish featuring marinated cod, chickpeas, and aromatic spices, perfect for a shared meal.",
+    "servings": 2,
+    "difficulty": "medium",
+    "totalTime": "25min",
+    "image": "cod-and-chickpea-tapas.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/rose-harissa-chickpeas-with-flaked-cod/images/rose-harissa-chickpeas-with-flaked-cod.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/rose-harissa-chickpeas-with-flaked-cod/index.html",
+    "diet": "normal",
+    "season": "spring",
+    "recipeType": "appetizer",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "cod",
+      "unit": "g",
+      "amount": 200,
+      "category": "pantry-savory",
+      "state": "skinless, boneless, cut into 3cm pieces"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 2.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cumin",
+      "unit": "tsp",
+      "amount": 0.33,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce",
+      "state": "1 crushed, 1 thinly sliced"
+    },
+    {
+      "id": "ing5",
+      "name": "onion",
+      "unit": "g",
+      "amount": 100,
+      "category": "produce",
+      "state": "finely chopped"
+    },
+    {
+      "id": "ing6",
+      "name": "cardamom pods",
+      "unit": "unit",
+      "amount": 2,
+      "category": "pantry-savory",
+      "state": "bashed"
+    },
+    {
+      "id": "ing7",
+      "name": "rose harissa",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing8",
+      "name": "tomato paste",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "preserved lemons",
+      "unit": "unit",
+      "amount": 1.5,
+      "category": "pantry-savory",
+      "state": "skin finely chopped"
+    },
+    {
+      "id": "ing10",
+      "name": "chickpeas",
+      "unit": "g",
+      "amount": 240,
+      "category": "pantry-savory",
+      "state": "drained, rinsed"
+    },
+    {
+      "id": "ing11",
+      "name": "vegetable stock",
+      "unit": "ml",
+      "amount": 200,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing12",
+      "name": "coriander",
+      "unit": "g",
+      "amount": 5,
+      "category": "produce",
+      "state": "roughly chopped"
+    },
+    {
+      "id": "ing13",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.33,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Marinating the Cod",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Marinate the cod",
+          "time": "15min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            }
+          ],
+          "output": {
+            "state": "marinated",
+            "description": "The cod is mixed with olive oil, ground cumin, crushed garlic, and salt to marinate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Preparing the Chickpea Mixture",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Cook the onion and garlic",
+          "time": "6min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "softened",
+            "description": "The onion is fried until soft and golden-brown, then thinly sliced garlic is cooked for an additional minute."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Add the spices and chickpeas",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "thickened",
+            "description": "The cardamom pods, rose harissa, tomato paste, preserved lemon skin, chickpeas, and vegetable stock are added, with some chickpeas crushed to thicken the sauce."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Cooking the Cod",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Cook the marinated fish",
+          "time": "4min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "The marinated fish is added to the pan and cooked until it is flaking apart, with the cardamom pods removed at the end."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Final Touches",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Garnish and serve",
+          "time": "1min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "garnished",
+            "description": "The dish is sprinkled with roughly chopped coriander before serving."
+          }
+        }
+      ]
+    }
+  ]
+}

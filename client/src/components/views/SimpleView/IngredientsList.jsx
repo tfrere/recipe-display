@@ -10,6 +10,8 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
   const { t } = useTranslation();
   const { getAdjustedAmount, formatAmount, isIngredientUnused, completedSteps } = useRecipe();
 
+  console.log('Full recipe structure:', recipe);
+
   // Call all hooks at the top level
   const subRecipeOrder = useMemo(() => {
     return Object.entries(recipe.subRecipes || {}).map(([id]) => id);
@@ -23,6 +25,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       
       Object.entries(subRecipe.ingredients).forEach(([ingredientId, data]) => {
         const ingredient = recipe.ingredients[ingredientId];
+        console.log('Raw ingredient from recipe:', ingredientId, ingredient);
         if (!ingredient) return;
 
         const adjustedAmount = getAdjustedAmount(data.amount, ingredient.unit, ingredient.category);
@@ -31,6 +34,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           name: ingredient.name,
           amount: adjustedAmount,
           unit: ingredient.unit,
+          state: ingredient.state, // L'état vient directement de l'ingrédient
           subRecipeId,
           subRecipeTitle: subRecipe.title,
           category: ingredient.category || 'autres',
@@ -41,11 +45,14 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
   }, [recipe.subRecipes, recipe.ingredients, getAdjustedAmount]);
 
   const formattedIngredients = useMemo(() => {
-    return allIngredients.map(ingredient => ({
+    const formatted = allIngredients.map(ingredient => ({
       ...ingredient,
-      displayAmount: formatAmount(ingredient.amount, ingredient.unit)
+      displayAmount: formatAmount(ingredient.amount, ingredient.unit),
+      isUnused: isIngredientUnused(ingredient.id, ingredient.subRecipeId)
     }));
-  }, [allIngredients, formatAmount]);
+    console.log('Formatted ingredients with state:', formatted);
+    return formatted;
+  }, [allIngredients, formatAmount, isIngredientUnused]);
 
   const categoryOrder = useMemo(() => [
     'base',
@@ -113,13 +120,47 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
   }, [formattedIngredients, sortByCategory, subRecipeOrder, categoryOrder, formatAmount]);
 
   const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
-  const remainingIngredients = allIngredients.filter(ing => !isIngredientUnused(ing.name)).length;
+  const remainingIngredients = allIngredients.filter(ing => !ing.isUnused).length;
 
   const distributeInColumns = (items, columnCount) => {
-    const itemsPerColumn = Math.ceil(items.length / columnCount);
-    return Array(columnCount)
-      .fill()
-      .map((_, index) => items.slice(index * itemsPerColumn, (index + 1) * itemsPerColumn));
+    // Grouper les ingrédients par catégorie ou sous-recette
+    const groups = items.reduce((acc, item) => {
+      const key = sortByCategory ? item.category : item.subRecipeId;
+      if (!acc[key]) {
+        acc[key] = {
+          key: key,
+          title: sortByCategory ? key.replace(/-/g, ' ') : recipe.subRecipes[key].title,
+          items: []
+        };
+      }
+      acc[key].items.push(item);
+      return acc;
+    }, {});
+
+    // Convertir l'objet en tableau de groupes et trier par taille décroissante
+    const groupsList = Object.values(groups)
+      .sort((a, b) => b.items.length - a.items.length);
+
+    // Initialiser les colonnes avec leurs tailles
+    const columns = Array(columnCount).fill().map(() => ({
+      groups: [],
+      totalItems: 0
+    }));
+
+    // Distribuer les groupes
+    groupsList.forEach(group => {
+      // Trouver la colonne avec le moins d'items
+      const targetColumn = columns.reduce((min, col, index) => 
+        col.totalItems < columns[min].totalItems ? index : min
+      , 0);
+
+      // Ajouter le groupe à cette colonne
+      columns[targetColumn].groups.push(group);
+      columns[targetColumn].totalItems += group.items.length;
+    });
+
+    // Retourner juste les groupes de chaque colonne
+    return columns.map(col => col.groups);
   };
 
   const columns = distributeInColumns(sortedIngredients, 3);
@@ -136,9 +177,6 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
     
     navigator.clipboard.writeText(ingredientsList);
   };
-
-  // Set pour suivre les catégories déjà affichées
-  const displayedCategories = new Set();
 
   return (
     <>
@@ -218,12 +256,14 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
               variant="body2" 
               color="text.secondary"
             >
-              {sortByCategory ? t('recipe.modes.shoppingList') : t('recipe.modes.ingredients')}
+              {t('recipe.modes.shoppingList')}
             </Typography>
           }
+          labelPlacement="start"
           sx={{
             ml: 1,
-            mr: 0
+            mr: 0,
+            gap: 1
           }}
         />
       </Box>
@@ -239,7 +279,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           gap: 3
         }}
       >
-        {columns.map((column, columnIndex) => (
+        {columns.map((columnGroups, columnIndex) => (
           <Box 
             key={columnIndex} 
             sx={{ 
@@ -255,68 +295,73 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
               }
             }}
           >
-            {column.map((ingredient, index) => {
-              const categoryKey = sortByCategory ? ingredient.category : ingredient.subRecipeId;
-              const showHeader = !displayedCategories.has(categoryKey);
-              if (showHeader) {
-                displayedCategories.add(categoryKey);
-              }
-
-              // Vérifie si c'est le dernier élément de sa catégorie dans la colonne
-              const isLastInCategory = index === column.length - 1 || 
-                (sortByCategory ? 
-                  column[index + 1]?.category !== ingredient.category :
-                  column[index + 1]?.subRecipeId !== ingredient.subRecipeId);
-
-              return (
-                <Box 
-                  key={`${ingredient.subRecipeId}-${ingredient.name}`}
-                  sx={{
-                    mb: isLastInCategory ? 4 : 0
-                  }}
-                >
-                  {showHeader && (sortByCategory || Object.keys(recipe.subRecipes).length > 1) && (
+            {columnGroups.map((group) => (
+              <Box key={group.key} sx={{ mb: 4 }}>
+                {(sortByCategory || Object.keys(recipe.subRecipes).length > 1) && (
+                  <Typography 
+                    variant="body1" 
+                    sx={{ 
+                      color: 'text.primary',
+                      mb: 1.5,
+                      fontStyle: 'italic',
+                      textTransform: 'capitalize',
+                      fontWeight: 600
+                    }}
+                  >
+                    {group.title}
+                  </Typography>
+                )}
+                {group.items.map((ingredient) => {
+                  console.log('Rendering ingredient:', ingredient);
+                  return (
+                  <Box 
+                    key={`${ingredient.subRecipeId}-${ingredient.name}`}
+                    sx={{ 
+                      display: 'grid',
+                      gridTemplateColumns: '0.3fr 0.7fr',
+                      gap: 2,
+                      alignItems: 'start',
+                      py: 0.25,
+                      mb: 0.75,  
+                      opacity: ingredient.isUnused ? 0.5 : 1,
+                      textDecoration: ingredient.isUnused ? 'line-through' : 'none'
+                    }}
+                  >
                     <Typography 
                       variant="body1" 
                       sx={{ 
-                        gridColumn: '1/-1',
-                        color: 'text.primary',
-                        mb: 1.5,
-                        fontStyle: 'italic',
-                        textTransform: 'capitalize',
-                        fontWeight: 600
-                      }}
-                    >
-                      {sortByCategory ? ingredient.category.replace(/-/g, ' ') : ingredient.subRecipeTitle}
-                    </Typography>
-                  )}
-                  <Box sx={{ 
-                    display: 'grid',
-                    gridTemplateColumns: '0.4fr 0.6fr',
-                    gap: 2,
-                    alignItems: 'center',
-                    py: 0.25,
-                    opacity: isIngredientUnused(ingredient.name) ? 0.5 : 1,
-                    textDecoration: isIngredientUnused(ingredient.name) ? 'line-through' : 'none'
-                  }}>
-                    <Typography 
-                      variant="body1"
-                      sx={{ 
                         color: 'text.secondary',
-                        whiteSpace: 'nowrap'
+                        textAlign: 'left'
                       }}
                     >
                       {ingredient.displayAmount}
                     </Typography>
-                    <Typography
-                      variant="body1"
-                    >
-                      {ingredient.name}
-                    </Typography>
+                    <Box>
+                      <Typography 
+                        variant="body1" 
+                        component="span"
+                      >
+                        {ingredient.name}
+                      </Typography>
+                      {ingredient.state && (
+                        <Typography 
+                          variant="body1" 
+                          component="span" 
+                          sx={{ 
+                            ml: 1,
+                            color: 'text.secondary',
+                            fontStyle: 'italic'
+                          }}
+                        >
+                          ({ingredient.state})
+                        </Typography>
+                      )}
+                    </Box>
                   </Box>
-                </Box>
-              );
-            })}
+                  );
+                })}
+              </Box>
+            ))}
           </Box>
         ))}
       </Box>

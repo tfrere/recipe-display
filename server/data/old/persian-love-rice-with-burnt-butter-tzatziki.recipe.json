@@ -208,14 +208,35 @@
           "id": "epices-1",
           "action": "Mélanger et moudre tous les ingrédients pour le mélange d'épices persan",
           "time": "5min",
-          "tools": ["mortier", "pilon"],
+          "tools": [
+            "mortier",
+            "pilon"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "petales-rose"},
-            {"type": "ingredient", "ref": "coriandre-graines"},
-            {"type": "ingredient", "ref": "cardamome"},
-            {"type": "ingredient", "ref": "muscade"},
-            {"type": "ingredient", "ref": "cannelle"},
-            {"type": "ingredient", "ref": "poivre-noir"}
+            {
+              "type": "ingredient",
+              "ref": "petales-rose"
+            },
+            {
+              "type": "ingredient",
+              "ref": "coriandre-graines"
+            },
+            {
+              "type": "ingredient",
+              "ref": "cardamome"
+            },
+            {
+              "type": "ingredient",
+              "ref": "muscade"
+            },
+            {
+              "type": "ingredient",
+              "ref": "cannelle"
+            },
+            {
+              "type": "ingredient",
+              "ref": "poivre-noir"
+            }
           ],
           "output": {
             "state": "melange-epices-pret",
@@ -232,9 +253,15 @@
           "id": "tzatziki-1",
           "action": "Râper les courgettes et les égoutter dans une passoire avec du sel",
           "time": "30min",
-          "tools": ["passoire", "rape"],
+          "tools": [
+            "passoire",
+            "rape"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "courgettes"}
+            {
+              "type": "ingredient",
+              "ref": "courgettes"
+            }
           ],
           "output": {
             "state": "courgettes-egouttes",
@@ -245,9 +272,14 @@
           "id": "tzatziki-2",
           "action": "Faire un beurre noisette : faire fondre le beurre jusqu'à ce qu'il devienne doré et dégage une odeur de noisette",
           "time": "5min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "beurre"}
+            {
+              "type": "ingredient",
+              "ref": "beurre"
+            }
           ],
           "output": {
             "state": "beurre-noisette",
@@ -258,13 +290,30 @@
           "id": "tzatziki-3",
           "action": "Mélanger le yaourt grec avec les courgettes égouttées, le jus de citron, la ciboulette et la menthe ciselées",
           "time": "5min",
-          "tools": ["saladier"],
+          "tools": [
+            "saladier"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "yaourt-grec"},
-            {"type": "ingredient", "ref": "jus-citron"},
-            {"type": "ingredient", "ref": "ciboulette"},
-            {"type": "ingredient", "ref": "menthe"},
-            {"type": "state", "ref": "courgettes-egouttes"}
+            {
+              "type": "ingredient",
+              "ref": "yaourt-grec"
+            },
+            {
+              "type": "ingredient",
+              "ref": "jus-citron"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ciboulette"
+            },
+            {
+              "type": "ingredient",
+              "ref": "menthe"
+            },
+            {
+              "type": "state",
+              "ref": "courgettes-egouttes"
+            }
           ],
           "output": {
             "state": "tzatziki-base",
@@ -275,10 +324,18 @@
           "id": "tzatziki-4",
           "action": "Incorporer le beurre noisette refroidi au tzatziki",
           "time": "2min",
-          "tools": ["fouet"],
+          "tools": [
+            "fouet"
+          ],
           "inputs": [
-            {"type": "state", "ref": "beurre-noisette"},
-            {"type": "state", "ref": "tzatziki-base"}
+            {
+              "type": "state",
+              "ref": "beurre-noisette"
+            },
+            {
+              "type": "state",
+              "ref": "tzatziki-base"
+            }
           ],
           "output": {
             "state": "tzatziki-final",
@@ -295,9 +352,15 @@
           "id": "riz-1",
           "action": "Faire tremper le riz 30 minutes dans l'eau froide puis égoutter",
           "time": "30min",
-          "tools": ["saladier", "passoire"],
+          "tools": [
+            "saladier",
+            "passoire"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "riz-basmati"}
+            {
+              "type": "ingredient",
+              "ref": "riz-basmati"
+            }
           ],
           "output": {
             "state": "riz-trempe",
@@ -308,11 +371,23 @@
           "id": "riz-2",
           "action": "Émincer l'oignon, l'ail et râper le gingembre",
           "time": "10min",
-          "tools": ["couteau", "rape"],
+          "tools": [
+            "couteau",
+            "rape"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "oignon"},
-            {"type": "ingredient", "ref": "ail"},
-            {"type": "ingredient", "ref": "gingembre"}
+            {
+              "type": "ingredient",
+              "ref": "oignon"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ail"
+            },
+            {
+              "type": "ingredient",
+              "ref": "gingembre"
+            }
           ],
           "output": {
             "state": "aromates-prepares",
@@ -323,11 +398,22 @@
           "id": "riz-3",
           "action": "Faire revenir les aromates dans l'huile d'olive avec le safran",
           "time": "5min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "state", "ref": "aromates-prepares"},
-            {"type": "ingredient", "ref": "huile-olive"},
-            {"type": "ingredient", "ref": "safran"}
+            {
+              "type": "state",
+              "ref": "aromates-prepares"
+            },
+            {
+              "type": "ingredient",
+              "ref": "huile-olive"
+            },
+            {
+              "type": "ingredient",
+              "ref": "safran"
+            }
           ],
           "output": {
             "state": "aromates-revenus",
@@ -338,11 +424,22 @@
           "id": "riz-4",
           "action": "Ajouter le riz égoutté et le bouillon, cuire à feu doux 18-20 minutes",
           "time": "20min",
-          "tools": ["casserole"],
+          "tools": [
+            "casserole"
+          ],
           "inputs": [
-            {"type": "state", "ref": "riz-trempe"},
-            {"type": "state", "ref": "aromates-revenus"},
-            {"type": "ingredient", "ref": "bouillon-legumes"}
+            {
+              "type": "state",
+              "ref": "riz-trempe"
+            },
+            {
+              "type": "state",
+              "ref": "aromates-revenus"
+            },
+            {
+              "type": "ingredient",
+              "ref": "bouillon-legumes"
+            }
           ],
           "output": {
             "state": "riz-cuit",
@@ -353,10 +450,18 @@
           "id": "riz-5",
           "action": "Torréfier les amandes et les pistaches",
           "time": "5min",
-          "tools": ["poele"],
+          "tools": [
+            "poele"
+          ],
           "inputs": [
-            {"type": "ingredient", "ref": "amandes"},
-            {"type": "ingredient", "ref": "pistaches"}
+            {
+              "type": "ingredient",
+              "ref": "amandes"
+            },
+            {
+              "type": "ingredient",
+              "ref": "pistaches"
+            }
           ],
           "output": {
             "state": "fruits-secs-torrefies",
@@ -367,13 +472,30 @@
           "id": "riz-6",
           "action": "Mélanger le riz avec les fruits secs, les mûres, les baies de berbéris et le mélange d'épices",
           "time": "5min",
-          "tools": ["saladier"],
+          "tools": [
+            "saladier"
+          ],
           "inputs": [
-            {"type": "state", "ref": "riz-cuit"},
-            {"type": "state", "ref": "fruits-secs-torrefies"},
-            {"type": "ingredient", "ref": "mures-seches"},
-            {"type": "ingredient", "ref": "baies-berberes"},
-            {"type": "state", "ref": "melange-epices-pret"}
+            {
+              "type": "state",
+              "ref": "riz-cuit"
+            },
+            {
+              "type": "state",
+              "ref": "fruits-secs-torrefies"
+            },
+            {
+              "type": "ingredient",
+              "ref": "mures-seches"
+            },
+            {
+              "type": "ingredient",
+              "ref": "baies-berberes"
+            },
+            {
+              "type": "state",
+              "ref": "melange-epices-pret"
+            }
           ],
           "output": {
             "state": "riz-final",
@@ -390,10 +512,18 @@
           "id": "dressage-1",
           "action": "Dresser le riz dans un plat de service et servir le tzatziki à part",
           "time": "5min",
-          "tools": ["plat-service"],
+          "tools": [
+            "plat-service"
+          ],
           "inputs": [
-            {"type": "step", "ref": "riz-6"},
-            {"type": "step", "ref": "tzatziki-4"}
+            {
+              "type": "step",
+              "ref": "riz-6"
+            },
+            {
+              "type": "step",
+              "ref": "tzatziki-4"
+            }
           ],
           "output": {
             "state": "dressé",

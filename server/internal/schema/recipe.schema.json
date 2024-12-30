@@ -46,7 +46,21 @@
             "name": { "type": "string" },
             "unit": { "type": "string" },
             "amount": { "type": "number" },
-            "category": { "type": "string" }
+            "category": { "type": "string" },
+            "state": {
+              "type": "string",
+              "description": "Optional preparation state of the ingredient (e.g., 'finely diced', 'room temperature', 'julienned')",
+              "examples": [
+                "finely diced",
+                "roughly chopped",
+                "julienned",
+                "brunoise",
+                "minced",
+                "room temperature",
+                "cold, cubed",
+                "boiled, medium dice"
+              ]
+            }
           },
           "required": ["id", "name", "unit", "amount", "category"],
           "additionalProperties": false

@@ -24,6 +24,7 @@ type Recipe struct {
 		Unit     string  `json:"unit"`
 		Amount   float64 `json:"amount"`
 		Category string  `json:"category"`
+		State    string  `json:"state"`
 	} `json:"ingredientsList"`
 	SubRecipes []struct {
 		ID    string `json:"id"`
@@ -53,11 +54,18 @@ type UIRecipe struct {
 	Difficulty  string `json:"difficulty"`
 	TotalTime   string `json:"totalTime"`
 	Image       string `json:"image"`
+	ImageUrl    string `json:"imageUrl"`
+	SourceUrl   string `json:"sourceUrl"`
+	Diet        string `json:"diet"`
+	Season      string `json:"season"`
+	RecipeType  string `json:"recipeType"`
+	Quick       bool   `json:"quick"`
 	Slug        string `json:"slug"`
 	Ingredients map[string]struct {
 		Name     string `json:"name"`
 		Unit     string `json:"unit"`
 		Category string `json:"category"`
+		State    string `json:"state"`
 	} `json:"ingredients"`
 	SubRecipes map[string]struct {
 		Title string `json:"title"`
@@ -91,11 +99,18 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 		Difficulty:  r.Metadata.Difficulty,
 		TotalTime:   r.Metadata.TotalTime,
 		Image:       r.Metadata.Image,
+		ImageUrl:    r.Metadata.ImageUrl,
+		SourceUrl:   r.Metadata.SourceUrl,
+		Diet:        r.Metadata.Diet,
+		Season:      r.Metadata.Season,
+		RecipeType:  r.Metadata.RecipeType,
+		Quick:       r.Metadata.Quick,
 		Slug:        strings.ToLower(strings.ReplaceAll(r.Metadata.Title, " ", "-")),
 		Ingredients: make(map[string]struct {
 			Name     string `json:"name"`
 			Unit     string `json:"unit"`
 			Category string `json:"category"`
+			State    string `json:"state"`
 		}),
 		SubRecipes: make(map[string]struct {
 			Title string `json:"title"`
@@ -126,10 +141,12 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 			Name     string `json:"name"`
 			Unit     string `json:"unit"`
 			Category string `json:"category"`
+			State    string `json:"state"`
 		}{
 			Name:     ingredient.Name,
 			Unit:     ingredient.Unit,
 			Category: ingredient.Category,
+			State:    ingredient.State,
 		}
 	}
 

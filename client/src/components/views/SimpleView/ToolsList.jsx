@@ -40,7 +40,8 @@ const ToolsList = ({ recipe }) => {
         display: 'flex',
         flexWrap: 'wrap',
         gap: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        mb: 4
       }}>
         {tools.map((tool, index) => (
           <React.Fragment key={tool.id}>

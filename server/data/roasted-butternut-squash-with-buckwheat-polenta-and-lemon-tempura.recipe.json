@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "title": "Roasted Butternut Squash with Buckwheat Polenta and Lemon Tempura",
+    "description": "A dish featuring roasted butternut squash with aromatic spices served over creamy buckwheat polenta, topped with crisp lemon tempura.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "1h30min",
+    "image": "roasted-butternut-squash-with-buckwheat-polenta-and-lemon-tempura.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/butternut-squash-with-buckwheat-polenta-and-tempura-lemon/images/butternut-squash-with-buckwheat-polenta-and-tempura-lemon.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/butternut-squash-with-buckwheat-polenta-and-tempura-lemon/index.html",
+    "diet": "vegetarian",
+    "season": "autumn",
+    "recipeType": "main",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "large butternut squash",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "condiments"
+    },
+    {
+      "id": "ing3",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 85,
+      "category": "dairy"
+    },
+    {
+      "id": "ing4",
+      "name": "vegetable stock",
+      "unit": "ml",
+      "amount": 1200,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "whole oregano sprigs",
+      "unit": "g",
+      "amount": 10,
+      "category": "condiments"
+    },
+    {
+      "id": "ing6",
+      "name": "black peppercorns",
+      "unit": "unit",
+      "amount": 15,
+      "category": "condiments"
+    },
+    {
+      "id": "ing7",
+      "name": "allspice berries",
+      "unit": "unit",
+      "amount": 8,
+      "category": "condiments"
+    },
+    {
+      "id": "ing8",
+      "name": "cardamom pods",
+      "unit": "unit",
+      "amount": 6,
+      "category": "condiments"
+    },
+    {
+      "id": "ing9",
+      "name": "bay leaves",
+      "unit": "unit",
+      "amount": 6,
+      "category": "condiments"
+    },
+    {
+      "id": "ing10",
+      "name": "thyme sprigs",
+      "unit": "unit",
+      "amount": 6,
+      "category": "condiments"
+    },
+    {
+      "id": "ing11",
+      "name": "orange, long shaved strips",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing12",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 8,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing14",
+      "name": "kasha (roasted buckwheat) or buckwheat groats",
+      "unit": "g",
+      "amount": 30,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing15",
+      "name": "full-fat milk",
+      "unit": "ml",
+      "amount": 150,
+      "category": "dairy"
+    },
+    {
+      "id": "ing16",
+      "name": "oregano leaves, roughly chopped",
+      "unit": "g",
+      "amount": 10,
+      "category": "condiments"
+    },
+    {
+      "id": "ing17",
+      "name": "thyme leaves",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing18",
+      "name": "lemon, shaved skin",
+      "unit": "unit",
+      "amount": 0.5,
+      "category": "produce"
+    },
+    {
+      "id": "ing19",
+      "name": "traditional polenta",
+      "unit": "g",
+      "amount": 120,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing20",
+      "name": "white pepper",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "condiments"
+    },
+    {
+      "id": "ing21",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 35,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing22",
+      "name": "cornflour",
+      "unit": "g",
+      "amount": 25,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing23",
+      "name": "cold soda water",
+      "unit": "ml",
+      "amount": 75,
+      "category": "beverages"
+    },
+    {
+      "id": "ing24",
+      "name": "sunflower oil for frying",
+      "unit": "ml",
+      "amount": 500,
+      "category": "condiments"
+    },
+    {
+      "id": "ing25",
+      "name": "medium lemon, sliced",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasting the Butternut Squash",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven and prepare the butternut squash.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "squash prepared",
+            "description": "The top and bottom trimmed off the butternut squash, cut in half lengthways, seeds discarded, and each half cut into 3 long wedges, leaving the skin on."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Combine squash with roasting ingredients and roast.",
+          "time": "50min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            }
+          ],
+          "output": {
+            "state": "squash roasted",
+            "description": "The butternut squash wedges tossed with olive oil, butter, stock, and various aromatics, roasted for 50 minutes, and basted regularly."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Preparing Buckwheat and Polenta",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Toast and crush the kasha or buckwheat groats.",
+          "time": "10min",
+          "tools": [
+            "pestle and mortar"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "kasha toasted and crushed",
+            "description": "The kasha or buckwheat groats toasted in the oven and then lightly crushed with a pestle and mortar."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Cook the polenta with buckwheat and aromatics.",
+          "time": "40min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing18"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing20"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing19"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            }
+          ],
+          "output": {
+            "state": "polenta cooked",
+            "description": "The polenta and buckwheat cooked in a mixture of vegetable stock with milk and aromatics until thick and creamy, with butter stirred in. Covered with cling film to keep warm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Making the Lemon Tempura",
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Prepare the tempura batter and let it rest over ice.",
+          "time": "45min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing21"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing22"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing23"
+            }
+          ],
+          "output": {
+            "state": "batter prepared",
+            "description": "The tempura batter made by mixing plain flour and cornflour, then whisking in cold soda water until smooth, and kept over ice."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Fry the lemon slices in batter.",
+          "time": "10min",
+          "tools": [
+            "medium saucepan for frying"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing24"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing25"
+            },
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "lemon tempura fried",
+            "description": "The lemon slices dipped in tempura batter and fried in hot sunflower oil until crispy, then drained and sprinkled with salt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step7",
+          "action": "Assemble the dish.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "state",
+              "ref": "step6"
+            }
+          ],
+          "output": {
+            "state": "dish assembled",
+            "description": "The dish assembled with a spoonful of warm polenta on each plate, topped with a piece of roasted butternut squash and some baked aromatics, finished with a lemon tempura slice."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -7,15 +7,46 @@ import {
   Grid,
   Container,
   CircularProgress,
-  Alert
+  Alert,
+  Paper,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import RecipeImage from "../components/common/RecipeImage";
 import { useTranslation } from 'react-i18next';
-import SearchBar from '../components/SearchBar';
+import SearchBarWithResults from '../components/SearchBar/index';
 import FilterTags from '../components/FilterTags';
 import ResultsLabel from '../components/ResultsLabel';
 import { useRecipeList } from '../contexts/RecipeListContext';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import BoltIcon from '@mui/icons-material/Bolt';
+import RecipeHeader from '../components/views/SimpleView/RecipeHeader';
+
+const NoRecipes = () => {
+  const { t } = useTranslation();
+  return (
+    <Paper 
+      elevation={0}
+      sx={{ 
+        py: 8,
+        px: 4,
+        textAlign: 'center',
+        bgcolor: 'transparent',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 2
+      }}
+    >
+      <RestaurantIcon sx={{ fontSize: 64, color: 'text.secondary', opacity: 0.5 }} />
+      <Typography variant="h6" color="text.secondary">
+        {t('home.no_recipes')}
+      </Typography>
+      <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 500 }}>
+        {t('home.no_recipes_description')}
+      </Typography>
+    </Paper>
+  );
+};
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -40,8 +71,8 @@ const HomePage = () => {
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Box sx={{ pt: 8, pb: 4 }}>
-        <SearchBar />
+      <Box sx={{ pt: 8, pb: 4, width: '100%' }}>
+        <SearchBarWithResults recipes={filteredRecipes} />
         <Box sx={{ mt: 2 }}>
           <FilterTags />
         </Box>
@@ -51,59 +82,101 @@ const HomePage = () => {
         <ResultsLabel />
       </Box>
 
-      <Grid container spacing={3}>
-        {filteredRecipes.map((recipe) => (
-          <Grid item xs={12} sm={6} md={4} key={recipe.slug}>
-            <Card
-              component={Link}
-              to={`/recipe/${recipe.slug}`}
-              sx={{
-                height: "100%",
-                textDecoration: "none",
-                transition: "transform 0.2s",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                },
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
-              <Box sx={{ position: 'relative', paddingTop: '56.25%' }}>
-                <RecipeImage
-                  slug={recipe.slug}
-                  title={recipe.title}
-                  size="medium"
-                  sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </Box>
-              <CardContent>
-                <Typography variant="h5" component="h2" gutterBottom>
-                  {t(`recipes.${recipe.slug}.title`, recipe.title)}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                  }}
-                >
-                  {t(`recipes.${recipe.slug}.description`, recipe.metadata.description)}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+      {filteredRecipes.length === 0 ? (
+        <NoRecipes />
+      ) : (
+        <Grid container spacing={3}>
+          {filteredRecipes.map((recipe) => (
+            <Grid item xs={12} sm={6} md={4} key={recipe.slug}>
+              <Card
+                component={Link}
+                to={`/recipe/${recipe.slug}`}
+                sx={{
+                  height: "100%",
+                  textDecoration: "none",
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: (theme) => theme.shadows[8],
+                  },
+                  display: 'flex',
+                  flexDirection: 'column',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+              >
+                <Box sx={{ position: 'relative', paddingTop: '66.67%', width: '100%' }}>
+                  <RecipeImage
+                    slug={recipe.slug}
+                    title={recipe.title}
+                    size="medium"
+                    sx={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      position: 'absolute',
+                      top: 12,
+                      right: 12,
+                      display: 'flex',
+                      gap: 1,
+                      alignItems: 'center',
+                    }}
+                  >
+                    {recipe.metadata?.totalTime && (
+                      <Box
+                        sx={{
+                          bgcolor: 'background.paper',
+                          color: 'text.primary',
+                          px: 1,
+                          py: 0.5,
+                          borderRadius: 1,
+                          fontSize: '0.75rem',
+                          fontWeight: 'medium',
+                          boxShadow: 1,
+                        }}
+                      >
+                        {recipe.metadata.totalTime}
+                      </Box>
+                    )}
+                    {recipe.metadata?.quick && (
+                      <Box
+                        sx={{
+                          bgcolor: 'primary.main',
+                          color: 'primary.contrastText',
+                          p: 0.5,
+                          borderRadius: 1,
+                          display: 'flex',
+                          alignItems: 'center',
+                          boxShadow: 1,
+                        }}
+                      >
+                        <BoltIcon sx={{ fontSize: '1rem' }} />
+                      </Box>
+                    )}
+                  </Box>
+                </Box>
+                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: 1 }}>
+                  <Typography variant="h6" component="h2" sx={{ mb: 1 }}>
+                    {recipe.title}
+                  </Typography>
+                  {recipe.metadata?.difficulty && (
+                    <Typography variant="body2" color="text.secondary" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                      {t(`recipe.difficulty.${recipe.metadata.difficulty}`)}
+                    </Typography>
+                  )}
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      )}
     </Container>
   );
 };

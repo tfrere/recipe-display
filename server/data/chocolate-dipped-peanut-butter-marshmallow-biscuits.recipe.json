@@ -1,0 +1,435 @@
+{
+  "metadata": {
+    "title": "Chocolate-Dipped Peanut Butter Marshmallow Biscuits",
+    "description": "A delightful treat combining homemade biscuits with peanut butter, marshmallow, and a chocolate dip, garnished with chopped peanuts and sea salt.",
+    "servings": 22,
+    "difficulty": "medium",
+    "totalTime": "3h",
+    "image": "chocolate-dipped-peanut-butter-marshmallow-biscuits.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/chocolate-and-peanut-butter-smores/images/chocolate-and-peanut-butter-smores.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/chocolate-and-peanut-butter-smores/index.html",
+    "diet": "vegetarian",
+    "season": "winter",
+    "recipeType": "dessert",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "unsalted butter, at room temperature",
+      "unit": "g",
+      "amount": 150,
+      "category": "dairy"
+    },
+    {
+      "id": "ing2",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 165,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing3",
+      "name": "large egg yolk",
+      "unit": "unit",
+      "amount": 1,
+      "category": "dairy"
+    },
+    {
+      "id": "ing4",
+      "name": "maple syrup",
+      "unit": "g",
+      "amount": 40,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing5",
+      "name": "roasted (unsalted) peanuts, finely ground",
+      "unit": "g",
+      "amount": 50,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing6",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 260,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing7",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.125,
+      "category": "condiments"
+    },
+    {
+      "id": "ing8",
+      "name": "platinum gelatine",
+      "unit": "sheets",
+      "amount": 1.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing9",
+      "name": "cold water",
+      "unit": "ml",
+      "amount": 85,
+      "category": "beverages"
+    },
+    {
+      "id": "ing10",
+      "name": "liquid glucose",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing11",
+      "name": "vanilla pod seeds",
+      "unit": "unit",
+      "amount": 0.25,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing12",
+      "name": "egg whites",
+      "unit": "g",
+      "amount": 30,
+      "category": "dairy"
+    },
+    {
+      "id": "ing13",
+      "name": "crunchy peanut butter",
+      "unit": "g",
+      "amount": 140,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing14",
+      "name": "roasted (unsalted) peanuts, roughly chopped",
+      "unit": "g",
+      "amount": 15,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing15",
+      "name": "flaky sea salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "condiments"
+    },
+    {
+      "id": "ing16",
+      "name": "dark cooking chocolate (70% cocoa solids)",
+      "unit": "g",
+      "amount": 130,
+      "category": "pantry-sweet"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Biscuit Dough Preparation",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Combine the butter and 75g of caster sugar in an electric mixer and beat until light and fluffy.",
+          "time": "2min",
+          "tools": [
+            "Electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            }
+          ],
+          "output": {
+            "state": "creamed",
+            "description": "The butter and sugar are creamed together until light and fluffy using an electric mixer with the paddle attachment."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Add the egg yolk, maple syrup, and ground peanuts to the creamed mixture and combine.",
+          "time": "3min",
+          "tools": [
+            "Electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "The egg yolk, maple syrup, and ground peanuts are added to the creamed butter and sugar mixture and combined using the electric mixer."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Sift in the flour and salt, and mix until a dough forms. Knead gently, wrap, and refrigerate.",
+          "time": "10min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "chilled dough",
+            "description": "The flour and salt are sifted into the mixture, then mixed until a dough forms. The dough is kneaded gently, wrapped in cling film, and refrigerated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Biscuit Baking",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Preheat the oven and prepare baking trays with parchment.",
+          "time": "10min",
+          "tools": null,
+          "inputs": [],
+          "output": {
+            "state": "preheated oven",
+            "description": "The oven is preheated to 190°C/170°C fan/gas mark 5, and two baking trays are lined with parchment."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Roll out the dough, cut out circles, and bake until golden.",
+          "time": "15min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "baked biscuits",
+            "description": "The chilled dough is rolled out and cut into circles using a round cutter. The biscuits are baked until golden at the edges."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Spread peanut butter on half the biscuits.",
+          "time": "5min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "peanut butter spread",
+            "description": "Half of the baked biscuits have crunchy peanut butter spread on the underside."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Marshmallow Preparation",
+      "steps": [
+        {
+          "id": "step7",
+          "action": "Soak the gelatine in water.",
+          "time": "5min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "soaked gelatine",
+            "description": "The gelatine sheets are soaked in 40ml of cold water to soften."
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Combine sugar, glucose, vanilla, and water in a saucepan and boil until amber.",
+          "time": "10min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "cooked syrup",
+            "description": "The remaining caster sugar, glucose, vanilla seeds, and water are combined in a saucepan and boiled until the mixture reaches a light amber color and thickens."
+          }
+        },
+        {
+          "id": "step9",
+          "action": "Beat egg whites to stiff peaks and whisk in the sugar syrup with gelatine.",
+          "time": "15min",
+          "tools": [
+            "Electric mixer"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "state",
+              "ref": "step7"
+            },
+            {
+              "type": "state",
+              "ref": "step8"
+            }
+          ],
+          "output": {
+            "state": "marshmallow",
+            "description": "The egg whites are beaten to stiff peaks using an electric mixer. The cooked syrup with the softened gelatine is then gradually poured over while whisking until the mixture becomes glossy and thick."
+          }
+        },
+        {
+          "id": "step10",
+          "action": "Pipe marshmallow onto the non-peanut butter biscuits and sandwich together.",
+          "time": "15min",
+          "tools": [
+            "Piping bag"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            },
+            {
+              "type": "state",
+              "ref": "step9"
+            }
+          ],
+          "output": {
+            "state": "sandwiched biscuits",
+            "description": "The marshmallow is piped onto the non-peanut butter biscuits using a piping bag, and then the biscuits are sandwiched together with the peanut butter spread biscuits."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Finishing Touches",
+      "steps": [
+        {
+          "id": "step11",
+          "action": "Mix chopped peanuts and sea salt.",
+          "time": "2min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            }
+          ],
+          "output": {
+            "state": "peanut and salt mix",
+            "description": "The roasted peanuts are roughly chopped and mixed with flaky sea salt in a bowl."
+          }
+        },
+        {
+          "id": "step12",
+          "action": "Melt the chocolate and dip the marshmallow side of each sandwich into it.",
+          "time": "10min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "state",
+              "ref": "step10"
+            }
+          ],
+          "output": {
+            "state": "chocolate-dipped",
+            "description": "The dark cooking chocolate is melted in a bowl over simmering water. The marshmallow side of each sandwich biscuit is dipped into the melted chocolate."
+          }
+        },
+        {
+          "id": "step13",
+          "action": "Sprinkle with peanut and salt mix and let set before serving.",
+          "time": "5min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step11"
+            },
+            {
+              "type": "state",
+              "ref": "step12"
+            }
+          ],
+          "output": {
+            "state": "finished biscuits",
+            "description": "The chocolate-dipped side of each sandwich biscuit is sprinkled with the peanut and salt mix. The biscuits are allowed to set before serving."
+          }
+        }
+      ]
+    }
+  ]
+}

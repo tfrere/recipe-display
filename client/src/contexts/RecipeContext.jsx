@@ -26,7 +26,9 @@ const initialState = {
   selectedSubRecipe: null,
   completedSteps: {},
   completedSubRecipes: {},
-  unusedIngredients: {},
+  unusedIngredients: {
+    bySubRecipe: {}
+  },
   unusedTools: {},
   unusedStates: new Set(),
   loading: false,
@@ -53,12 +55,17 @@ const actions = {
 
 // Fonction utilitaire pour calculer les éléments non utilisés
 const calculateUnusedItems = (recipe, completedSteps) => {
-  const unusedIngredients = {};
+  const unusedIngredients = {
+    bySubRecipe: {}
+  };
   const unusedTools = {};
   const unusedStates = new Set();
 
   // Traiter toutes les sous-recettes
   Object.entries(recipe.subRecipes || {}).forEach(([subRecipeId, subRecipe]) => {
+    // Initialiser le tableau des ingrédients inutilisés pour cette sous-recette
+    unusedIngredients.bySubRecipe[subRecipeId] = {};
+
     // Construire un graphe de dépendances
     const graph = new Map(); // Map<nodeId, Set<nodeId>> (nodeId -> ses successeurs)
     const reverseGraph = new Map(); // Map<nodeId, Set<nodeId>> (nodeId -> ses prédécesseurs)
@@ -141,7 +148,8 @@ const calculateUnusedItems = (recipe, completedSteps) => {
               const ingredientId = currentId.replace("ingredient-", "");
               const ingredient = recipe.ingredients[ingredientId];
               if (ingredient) {
-                unusedIngredients[ingredient.name] = true;
+                // Marquer l'ingrédient comme inutilisé uniquement pour cette sous-recette
+                unusedIngredients.bySubRecipe[subRecipeId][ingredientId] = true;
               }
             } else if (currentId.startsWith("tool-")) {
               unusedTools[currentId.replace("tool-", "")] = true;
@@ -193,7 +201,9 @@ const recipeReducer = (state, action) => {
         selectedSubRecipe: action.payload?.subRecipes
           ? Object.keys(action.payload.subRecipes)[0]
           : null,
-        unusedIngredients: {},
+        unusedIngredients: {
+          bySubRecipe: {}
+        },
         unusedTools: {},
         unusedStates: new Set(),
       };
@@ -353,7 +363,9 @@ const recipeReducer = (state, action) => {
         ...state,
         completedSteps: {},
         completedSubRecipes: {},
-        unusedIngredients: {},
+        unusedIngredients: {
+          bySubRecipe: {}
+        },
         unusedTools: {},
         unusedStates: new Set(),
         servingsMultiplier: 1,
@@ -402,16 +414,27 @@ const formatMinutesToTime = (minutes) => {
 export const RecipeProvider = ({ children }) => {
   const { t } = useTranslation();
   const { unitSystem } = usePreferences();
+  
+  // État local pour stocker le slug de la recette actuelle
+  const [currentRecipeSlug, setCurrentRecipeSlug] = useState(null);
+  
+  // Utiliser des clés de stockage basées sur le slug
+  const getStorageKey = (key) => currentRecipeSlug ? `recipe-${currentRecipeSlug}-${key}` : null;
+  
   const [storedCompletedSteps, setStoredCompletedSteps] = useLocalStorage(
-    "recipe-completed-steps",
+    getStorageKey("completed-steps") || "temp-completed-steps",
     {}
   );
-  const [storedCompletedSubRecipes, setStoredCompletedSubRecipes] =
-    useLocalStorage("recipe-completed-subrecipes", {});
+  const [storedCompletedSubRecipes, setStoredCompletedSubRecipes] = useLocalStorage(
+    getStorageKey("completed-subrecipes") || "temp-completed-subrecipes",
+    {}
+  );
+  
   const [selectedView, setSelectedView] = useState(() => {
     const savedView = localStorage.getItem('selectedView');
     return savedView || 'simple';
   });
+  
   const [tools, setTools] = useState([]);
 
   const [state, dispatch] = useReducer(recipeReducer, {
@@ -421,16 +444,40 @@ export const RecipeProvider = ({ children }) => {
     selectedView,
   });
 
+  // Réinitialiser les étapes complétées quand on change de recette
+  useEffect(() => {
+    if (currentRecipeSlug) {
+      const completedStepsKey = getStorageKey("completed-steps");
+      const completedSubRecipesKey = getStorageKey("completed-subrecipes");
+      
+      const savedCompletedSteps = JSON.parse(localStorage.getItem(completedStepsKey) || "{}");
+      const savedCompletedSubRecipes = JSON.parse(localStorage.getItem(completedSubRecipesKey) || "{}");
+      
+      dispatch({ 
+        type: actions.BATCH_UPDATE, 
+        payload: {
+          completedSteps: savedCompletedSteps,
+          completedSubRecipes: savedCompletedSubRecipes
+        }
+      });
+    }
+  }, [currentRecipeSlug]);
+
   // Synchroniser les changements avec le localStorage de manière optimisée
   useEffect(() => {
+    if (!currentRecipeSlug) return;
+    
     const timeoutId = setTimeout(() => {
-      setStoredCompletedSteps(state.completedSteps);
-      setStoredCompletedSubRecipes(state.completedSubRecipes);
+      const completedStepsKey = getStorageKey("completed-steps");
+      const completedSubRecipesKey = getStorageKey("completed-subrecipes");
+      
+      localStorage.setItem(completedStepsKey, JSON.stringify(state.completedSteps));
+      localStorage.setItem(completedSubRecipesKey, JSON.stringify(state.completedSubRecipes));
       localStorage.setItem('selectedView', state.selectedView);
     }, 500);
 
     return () => clearTimeout(timeoutId);
-  }, [state.completedSteps, state.completedSubRecipes, state.selectedView]);
+  }, [state.completedSteps, state.completedSubRecipes, state.selectedView, currentRecipeSlug]);
 
   useEffect(() => {
     if (state.recipe) {
@@ -447,17 +494,12 @@ export const RecipeProvider = ({ children }) => {
       
       const response = await fetch(fullUrl);
       
-      console.log('Response status:', response.status);
-      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
-      
-      const responseText = await response.text();
-      console.log('Raw response text:', responseText);
-      
       if (!response.ok) {
-        throw new Error(`Recipe not found. Status: ${response.status}, Response: ${responseText}`);
+        throw new Error(`Recipe not found. Status: ${response.status}`);
       }
       
-      const data = JSON.parse(responseText);
+      const data = await response.json();
+      setCurrentRecipeSlug(slug); // Mettre à jour le slug de la recette actuelle
       dispatch({ type: actions.SET_RECIPE, payload: data });
       dispatch({ type: actions.SET_ERROR, payload: null });
     } catch (error) {
@@ -468,6 +510,12 @@ export const RecipeProvider = ({ children }) => {
     }
   }, []);
 
+  // Réinitialiser l'état quand on change de recette
+  const resetRecipeState = useCallback(() => {
+    setCurrentRecipeSlug(null);
+    dispatch({ type: actions.RESET_RECIPE_STATE });
+  }, []);
+  
   const generateRecipe = useCallback(async () => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/recipes/generate`, {
@@ -627,10 +675,10 @@ export const RecipeProvider = ({ children }) => {
     return totalSteps > 0 ? (completedSteps / totalSteps) * 100 : 0;
   }, [state.recipe, state.completedSteps]);
 
-  const isIngredientUnused = useCallback((ingredientId) => {
+  const isIngredientUnused = useCallback((ingredientId, subRecipeId) => {
     if (!state.recipe) return false;
     const { unusedIngredients } = calculateUnusedItems(state.recipe, state.completedSteps);
-    return unusedIngredients[ingredientId] || false;
+    return unusedIngredients.bySubRecipe[subRecipeId] && unusedIngredients.bySubRecipe[subRecipeId][ingredientId] || false;
   }, [state.recipe, state.completedSteps]);
 
   const isToolUnused = useCallback((toolId) => {
@@ -638,23 +686,6 @@ export const RecipeProvider = ({ children }) => {
     const { unusedTools } = calculateUnusedItems(state.recipe, state.completedSteps);
     return unusedTools[toolId] || false;
   }, [state.recipe, state.completedSteps]);
-
-  const resetRecipeState = useCallback(() => {
-    dispatch({ type: actions.RESET_RECIPE_STATE });
-  }, []);
-
-  const isRecipePristine = useCallback(() => {
-    if (!state.recipe) return true;
-    
-    return (
-      Object.keys(state.completedSteps).length === 0 &&
-      Object.keys(state.completedSubRecipes).length === 0 &&
-      Object.keys(state.unusedIngredients).length === 0 &&
-      Object.keys(state.unusedTools).length === 0 &&
-      state.unusedStates.size === 0 &&
-      state.servingsMultiplier === 1
-    );
-  }, [state.recipe, state.completedSteps, state.completedSubRecipes, state.unusedIngredients, state.unusedTools, state.unusedStates, state.servingsMultiplier]);
 
   const calculateTotalTime = useCallback((recipe) => {
     if (!recipe || !recipe.subRecipes) return '0min';
@@ -720,7 +751,18 @@ export const RecipeProvider = ({ children }) => {
     parseTimeToMinutes,
     getSubRecipeProgress,
     resetRecipeState,
-    isRecipePristine,
+    isRecipePristine: () => {
+      if (!state.recipe) return true;
+      
+      return (
+        Object.keys(state.completedSteps).length === 0 &&
+        Object.keys(state.completedSubRecipes).length === 0 &&
+        Object.keys(state.unusedIngredients.bySubRecipe).length === 0 &&
+        Object.keys(state.unusedTools).length === 0 &&
+        state.unusedStates.size === 0 &&
+        state.servingsMultiplier === 1
+      );
+    },
     calculateTotalTime,
   };
 

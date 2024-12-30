@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "title": "Pomelo Salad",
+    "description": "A refreshing and aromatic salad featuring pomelo, mango, and a variety of fresh herbs, dressed with a sweet and tangy marinade.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "45min",
+    "image": "pomelo-salad.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/pomelo-salad/images/pomelo-salad.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/pomelo-salad/index.html",
+    "diet": "vegan",
+    "season": "winter",
+    "recipeType": "starter",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "rice wine vinegar",
+      "unit": "ml",
+      "amount": 75,
+      "category": "condiments"
+    },
+    {
+      "id": "ing2",
+      "name": "palm sugar or caster sugar",
+      "unit": "g",
+      "amount": 40,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing3",
+      "name": "orange blossom water",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing4",
+      "name": "star anise",
+      "unit": "unit",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing5",
+      "name": "cinnamon stick",
+      "unit": "unit",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing6",
+      "name": "fresh root ginger",
+      "unit": "g",
+      "amount": 10,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "red chillies",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "pomelo",
+      "unit": "g",
+      "amount": 350,
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "green mango or regular mango",
+      "unit": "g",
+      "amount": 140,
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "coriander leaves",
+      "unit": "g",
+      "amount": 10,
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "mint leaves",
+      "unit": "g",
+      "amount": 10,
+      "category": "produce"
+    },
+    {
+      "id": "ing12",
+      "name": "baby red shallots or regular shallots",
+      "unit": "g",
+      "amount": 40,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "watercress",
+      "unit": "g",
+      "amount": 60,
+      "category": "produce"
+    },
+    {
+      "id": "ing14",
+      "name": "groundnut oil",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing15",
+      "name": "lime juice",
+      "unit": "tbsp",
+      "amount": 0.75,
+      "category": "produce"
+    },
+    {
+      "id": "ing16",
+      "name": "black sesame seeds",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "condiments"
+    },
+    {
+      "id": "ing17",
+      "name": "roasted unsalted peanuts",
+      "unit": "g",
+      "amount": 40,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing18",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "condiments"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Marinade",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Prepare the marinade",
+          "time": "10min",
+          "tools": [
+            "saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            }
+          ],
+          "output": {
+            "state": "marinade-prepared",
+            "description": "The marinade is prepared with dissolved sugar and infused with spices."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Pomelo Preparation",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Marinate the pomelo",
+          "time": "30min",
+          "tools": [
+            "knife",
+            "shallow dish"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "pomelo-marinated",
+            "description": "The pomelo is peeled, segmented, and marinated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Salad Assembly",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Assemble the salad",
+          "time": "5min",
+          "tools": [
+            "bowl",
+            "spoon"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing18"
+            }
+          ],
+          "output": {
+            "state": "salad-assembled",
+            "description": "The salad is assembled with fresh ingredients, dressed with marinade juice, and garnished with sesame seeds and peanuts."
+          }
+        }
+      ]
+    }
+  ]
+}

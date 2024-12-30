@@ -1,19 +1,20 @@
 import React from 'react';
-import { Box, TextField, InputAdornment, IconButton } from '@mui/material';
+import { Box, TextField, InputAdornment, IconButton, Typography, Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import ClearIcon from '@mui/icons-material/Clear';
+import RefreshIcon from '@mui/icons-material/Refresh';
 import { useTranslation } from 'react-i18next';
+import { useRecipeList } from '../../contexts/RecipeListContext';
 
-const SearchBar = ({ value, onChange, onClear }) => {
+const SearchBar = ({ value, onChange, filteredCount, totalCount, hasActiveFilters }) => {
   const { t } = useTranslation();
+  const { resetFilters } = useRecipeList();
 
-  const handleClear = () => {
-    onChange('');
-    onClear?.();
-  };
+  const showCount = typeof filteredCount === 'number' && typeof totalCount === 'number';
+  const isPristine = !value && !hasActiveFilters;
+  const showRefresh = !isPristine;
 
   return (
-    <Box sx={{ width: '100%', maxWidth: 800, mx: 'auto', mb: 3 }}>
+    <Box sx={{ width: '100%', mb: 2 }}>
       <TextField
         fullWidth
         value={value}
@@ -27,18 +28,40 @@ const SearchBar = ({ value, onChange, onClear }) => {
               <SearchIcon color="action" fontSize="large" />
             </InputAdornment>
           ),
-          endAdornment: value ? (
-            <InputAdornment position="end">
-              <IconButton
-                aria-label="clear search"
-                onClick={handleClear}
-                edge="end"
-                size="medium"
-              >
-                <ClearIcon fontSize="medium" />
-              </IconButton>
-            </InputAdornment>
-          ) : null,
+          endAdornment: (
+            <>
+              {showCount && (
+                <InputAdornment position="end">
+                  <Typography 
+                    variant="body2" 
+                    color={isPristine ? "text.secondary" : "primary"}
+                    sx={{ 
+                      fontWeight: isPristine ? 400 : 700,
+                      minWidth: 80,
+                      textAlign: 'right',
+                      mr: showRefresh ? 1 : 0
+                    }}
+                  >
+                    {isPristine ? totalCount : `${filteredCount} / ${totalCount}`}
+                  </Typography>
+                </InputAdornment>
+              )}
+              {showRefresh && (
+                <InputAdornment position="end">
+                  <Tooltip title={t('search.reset_filters')} placement="top">
+                    <IconButton
+                      aria-label="reset filters"
+                      onClick={resetFilters}
+                      edge="end"
+                      size="medium"
+                    >
+                      <RefreshIcon fontSize="medium" />
+                    </IconButton>
+                  </Tooltip>
+                </InputAdornment>
+              )}
+            </>
+          ),
           sx: {
             borderRadius: 2,
             bgcolor: 'background.paper',
@@ -47,6 +70,7 @@ const SearchBar = ({ value, onChange, onClear }) => {
             },
             height: '64px', 
             fontSize: '1.2rem', 
+            paddingRight: '24px', // Double du padding par défaut
           },
         }}
         sx={{
@@ -55,7 +79,7 @@ const SearchBar = ({ value, onChange, onClear }) => {
               borderColor: 'divider',
             },
             '&:hover fieldset': {
-              borderColor: 'primary.main',
+              borderColor: 'divider',
             },
             '&.Mui-focused fieldset': {
               borderColor: 'primary.main',

@@ -4,11 +4,7 @@ import { useParams } from "react-router-dom";
 import { useRecipe } from "../contexts/RecipeContext";
 import GraphView from "../components/views/GraphView";
 import SimpleView from "../components/views/SimpleView/index";
-
-const VIEWS = {
-  GRAPH: 'graph',
-  SIMPLE: 'simple'
-};
+import { VIEWS } from '../constants/views';
 
 const RecipePage = ({ currentView }) => {
   const { slug } = useParams();
@@ -24,6 +20,7 @@ const RecipePage = ({ currentView }) => {
     switch (currentView) {
       case VIEWS.GRAPH:
         return <GraphView />;
+      case VIEWS.SIMPLE:
       default:
         return <SimpleView />;
     }

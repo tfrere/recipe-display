@@ -1,0 +1,462 @@
+{
+  "metadata": {
+    "title": "Roasted Oyster Mushrooms with Homemade Tortillas and Pickles",
+    "description": "A flavorful vegan dish featuring roasted oyster mushrooms served with homemade tortillas, pickles, and a creamy avocado crema.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "1h",
+    "image": "roasted-oyster-mushrooms-with-homemade-tortillas-and-pickles.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/oyster-mushroom-tacos-with-all-or-some-of-the-trimmings/images/oyster-mushroom-tacos-with-all-or-some-of-the-trimmings.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/oyster-mushroom-tacos-with-all-or-some-of-the-trimmings/index.html",
+    "diet": "vegan",
+    "season": "autumn",
+    "recipeType": "main",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "oyster mushrooms",
+      "unit": "g",
+      "amount": 700,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "soy sauce",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "condiments"
+    },
+    {
+      "id": "ing4",
+      "name": "maple syrup",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing5",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 105,
+      "category": "condiments"
+    },
+    {
+      "id": "ing6",
+      "name": "cumin seeds",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing7",
+      "name": "dried cascabel chillies",
+      "unit": "unit",
+      "amount": 4,
+      "category": "condiments"
+    },
+    {
+      "id": "ing8",
+      "name": "allspice berries",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing9",
+      "name": "masa harina",
+      "unit": "g",
+      "amount": 125,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "limes",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 1.25,
+      "category": "condiments"
+    },
+    {
+      "id": "ing12",
+      "name": "red onion",
+      "unit": "g",
+      "amount": 150,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "oranges",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing14",
+      "name": "hibiscus tea bags",
+      "unit": "unit",
+      "amount": 2,
+      "category": "beverages"
+    },
+    {
+      "id": "ing15",
+      "name": "allspice berries",
+      "unit": "unit",
+      "amount": 10,
+      "category": "condiments"
+    },
+    {
+      "id": "ing16",
+      "name": "white wine vinegar",
+      "unit": "ml",
+      "amount": 60,
+      "category": "condiments"
+    },
+    {
+      "id": "ing17",
+      "name": "caster sugar",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing18",
+      "name": "avocado",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing19",
+      "name": "coconut cream",
+      "unit": "g",
+      "amount": 90,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing20",
+      "name": "coriander",
+      "unit": "g",
+      "amount": 10,
+      "category": "produce"
+    },
+    {
+      "id": "ing21",
+      "name": "kohlrabi",
+      "unit": "g",
+      "amount": 120,
+      "category": "produce"
+    },
+    {
+      "id": "ing22",
+      "name": "lime juice",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "beverages"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Pickles",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Combine the red onion, orange skin strips, orange juice, hibiscus tea bags, allspice berries, white wine vinegar, caster sugar, and salt to pickle.",
+          "time": "5min",
+          "tools": [
+            "small serving bowl",
+            "knife",
+            "cutting board"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "pickled",
+            "description": "The pickles are prepared and set aside to pickle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Avocado Crema",
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Blend the avocado, coconut cream, coriander, salt, and water until smooth.",
+          "time": "5min",
+          "tools": [
+            "small food processor"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing18"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing19"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing20"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "blended",
+            "description": "The avocado crema is smooth and transferred to a serving bowl."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Kohlrabi Mix",
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Toss the kohlrabi with lime juice and salt.",
+          "time": "5min",
+          "tools": [
+            "small serving bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing21"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing22"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "tossed",
+            "description": "The kohlrabi is seasoned and set aside."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Roasted Oyster Mushrooms",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Preheat the oven to 200°C fan. Combine mushrooms, garlic, soy sauce, maple syrup, part of the olive oil, and salt. Grind cumin seeds, chillies, and allspice into a powder and mix with mushrooms and the rest of the olive oil for serving.",
+          "time": "15min",
+          "tools": [
+            "oven",
+            "large mixing bowl",
+            "spice grinder",
+            "small bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Mushroom mixture is ready and spice oil is set aside for serving."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Spread the mushrooms on two parchment-lined baking trays and roast for 20 minutes, then combine on one tray and roast for another 8 minutes until crisp and browned.",
+          "time": "28min",
+          "tools": [
+            "two large baking trays",
+            "parchment paper"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Mushrooms are roasted and crisp."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub5",
+      "title": "Homemade Tortillas",
+      "steps": [
+        {
+          "id": "step6",
+          "action": "Mix masa harina and salt, add boiling water, knead into a ball, divide into pieces, and roll each into a ball covered with a damp cloth.",
+          "time": "15min",
+          "tools": [
+            "medium mixing bowl",
+            "spatula",
+            "tea towel"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "dough prepped",
+            "description": "Tortilla dough is ready and divided into balls."
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Press each dough ball into a circle and cook in a hot pan until browned on both sides.",
+          "time": "20min",
+          "tools": [
+            "large non-stick frying pan",
+            "greaseproof paper",
+            "heavy-based pan or tortilla press",
+            "tea towel"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Tortillas are cooked and kept warm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub6",
+      "title": "Assembly",
+      "steps": [
+        {
+          "id": "step8",
+          "action": "Warm the mushrooms if necessary. Serve mushrooms drizzled with reserved chilli oil, accompanied by tortillas, lime wedges, crema, and pickles.",
+          "time": "10min",
+          "tools": [
+            "oven",
+            "platter"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            },
+            {
+              "type": "state",
+              "ref": "step7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "Dish is fully assembled and ready to serve."
+          }
+        }
+      ]
+    }
+  ]
+}

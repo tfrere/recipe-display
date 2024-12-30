@@ -96,6 +96,7 @@ const FilterTag = ({
         borderStyle: "solid",
         cursor: "pointer",
         pl: showCheckbox ? 0.5 : 0,
+        pr: 0.25,
         mr: 0.5,
         mb: 0.5,
         transition: "opacity 0.2s ease, border-color 0.2s ease",

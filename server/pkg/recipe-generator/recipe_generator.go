@@ -6,11 +6,9 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"net/url"
 	"os"
 	"regexp"
 	"strconv"
-	"strings"
 	"time"
 
 	"recipe-display/server/internal/utils"
@@ -18,49 +16,6 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/xeipuuv/gojsonschema"
 )
-
-// Recipe représente la structure de données conforme à recipe.schema.json
-type Recipe struct {
-	Metadata struct {
-		Title       string `json:"title"`
-		Description string `json:"description"`
-		Servings    int    `json:"servings"`
-		Difficulty  string `json:"difficulty"`
-		TotalTime   string `json:"totalTime"`
-		Image       string `json:"image"`
-		ImageUrl    string `json:"imageUrl"`
-		SourceUrl   string `json:"sourceUrl"`
-		Diet        string `json:"diet"`
-		Season      string `json:"season"`
-		RecipeType  string `json:"recipeType"`
-		Quick       bool   `json:"quick"`
-	} `json:"metadata"`
-	IngredientsList []struct {
-		ID       string      `json:"id"`
-		Name     string      `json:"name"`
-		Unit     string      `json:"unit"`
-		Amount   interface{} `json:"amount"` // Changé en interface{} pour accepter string et float64
-		Category string      `json:"category"`
-	} `json:"ingredientsList"`
-	SubRecipes []struct {
-		ID    string `json:"id"`
-		Title string `json:"title"`
-		Steps []struct {
-			ID     string   `json:"id"`
-			Action string   `json:"action"`
-			Time   string   `json:"time,omitempty"`
-			Tools  []string `json:"tools,omitempty"`
-			Inputs []struct {
-				Type string `json:"type"`
-				Ref  string `json:"ref"`
-			} `json:"inputs,omitempty"`
-			Output struct {
-				State       string `json:"state"`
-				Description string `json:"description"`
-			} `json:"output,omitempty"`
-		} `json:"steps"`
-	} `json:"subRecipes"`
-}
 
 // RecipeGenerator est responsable de la génération de recettes
 type RecipeGenerator struct {
@@ -79,188 +34,118 @@ func NewRecipeGenerator() *RecipeGenerator {
 }
 
 // GenerateFromWebContent génère une recette à partir du contenu d'une page web
-func (g *RecipeGenerator) GenerateFromWebContent(content string, sourceUrl string, imageUrls []string) (*Recipe, error) {
-	if g.openAIKey == "" {
+func (rg *RecipeGenerator) GenerateFromWebContent(webContent *utils.WebContent, sourceUrl string, imageUrls []string) (*Recipe, error) {
+	if webContent == nil {
+		return nil, fmt.Errorf("web content is nil")
+	}
+
+	if rg.openAIKey == "" {
 		return nil, fmt.Errorf("OPENAI_API_KEY is not set")
 	}
 
-	// Parser l'URL source pour résoudre les URLs relatives
-	baseURL, err := url.Parse(sourceUrl)
+	// Première étape : nettoyer et organiser le contenu de la recette
+	cleanedContent, err := rg.cleanupRecipeContent(webContent)
 	if err != nil {
-		return nil, fmt.Errorf("invalid source URL: %v", err)
+		return nil, fmt.Errorf("failed to cleanup recipe content: %w", err)
 	}
 
-	// Si le contenu n'est pas fourni, le récupérer depuis l'URL
-	if content == "" && sourceUrl != "" {
-		var err error
-		content, err = utils.FetchWebPageContent(sourceUrl)
-		if err != nil {
-			return nil, fmt.Errorf("failed to fetch web content: %v", err)
-		}
-	}
-
-	// Extraire le contenu pertinent du HTML
-	webContent, err := utils.ExtractWebContent(content)
+	// Deuxième étape : générer la recette structurée
+	recipe, err := rg.generateStructuredRecipe(cleanedContent, sourceUrl, imageUrls)
 	if err != nil {
-		return nil, fmt.Errorf("failed to extract web content: %v", err)
+		return nil, fmt.Errorf("failed to generate structured recipe: %w", err)
 	}
 
-	// Résoudre les URLs relatives des images
-	for i, imgURL := range webContent.ImageURLs {
-		if strings.HasPrefix(imgURL, "//") {
-			// URL protocol-relative (//example.com/image.jpg)
-			webContent.ImageURLs[i] = baseURL.Scheme + ":" + imgURL
-		} else if strings.HasPrefix(imgURL, "/") {
-			// URL absolute path (/image.jpg)
-			webContent.ImageURLs[i] = baseURL.Scheme + "://" + baseURL.Host + imgURL
-		} else if !strings.HasPrefix(imgURL, "http") {
-			// URL relative (image.jpg ou ../image.jpg)
-			ref, err := url.Parse(imgURL)
-			if err != nil {
-				continue
-			}
-			webContent.ImageURLs[i] = baseURL.ResolveReference(ref).String()
-		}
+	return recipe, nil
+}
+
+// cleanupRecipeContent nettoie et organise le contenu de la recette
+func (rg *RecipeGenerator) cleanupRecipeContent(webContent *utils.WebContent) (*utils.WebContent, error) {
+	// Préparer le prompt pour le nettoyage
+	cleanupMessage := fmt.Sprintf(CleanupPrompt, webContent.Title, webContent.MainContent)
+
+	// Préparer la requête pour l'API d'OpenAI
+	requestBody := map[string]interface{}{
+		"model": "gpt-4-1106-preview",
+		"messages": []map[string]string{
+			{
+				"role":    "system",
+				"content": cleanupMessage,
+			},
+		},
+		"temperature": 0.3, // Température plus basse pour être plus conservateur
+		"max_tokens":  4000,
 	}
 
-	// Utiliser les images extraites si aucune n'est fournie
-	if len(imageUrls) == 0 && len(webContent.ImageURLs) > 0 {
-		imageUrls = webContent.ImageURLs
+	jsonBody, err := json.Marshal(requestBody)
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal request body: %w", err)
 	}
 
+	// Créer la requête HTTP
+	req, err := http.NewRequest("POST", "https://api.openai.com/v1/chat/completions", bytes.NewBuffer(jsonBody))
+	if err != nil {
+		return nil, fmt.Errorf("failed to create request: %w", err)
+	}
+
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Bearer "+rg.openAIKey)
+
+	// Envoyer la requête
+	client := &http.Client{Timeout: 30 * time.Second}
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("failed to send request: %w", err)
+	}
+	defer resp.Body.Close()
+
+	// Lire la réponse
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %w", err)
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("API request failed with status %d: %s", resp.StatusCode, string(body))
+	}
+
+	// Décoder la réponse
+	var response struct {
+		Choices []struct {
+			Message struct {
+				Content string `json:"content"`
+			} `json:"message"`
+		} `json:"choices"`
+	}
+
+	if err := json.Unmarshal(body, &response); err != nil {
+		return nil, fmt.Errorf("failed to unmarshal response: %w", err)
+	}
+
+	if len(response.Choices) == 0 {
+		return nil, fmt.Errorf("no response choices available")
+	}
+
+	// Créer un nouveau WebContent avec le contenu nettoyé
+	cleanedContent := &utils.WebContent{
+		Title:       webContent.Title,
+		MainContent: response.Choices[0].Message.Content,
+		ImageURLs:   webContent.ImageURLs,
+	}
+
+	log.Info().
+		Str("title", cleanedContent.Title).
+		Str("cleaned_content", cleanedContent.MainContent).
+		Msg("Recipe content after cleanup")
+
+	return cleanedContent, nil
+}
+
+// generateStructuredRecipe génère une recette structurée à partir du contenu nettoyé
+func (rg *RecipeGenerator) generateStructuredRecipe(webContent *utils.WebContent, sourceUrl string, imageUrls []string) (*Recipe, error) {
 	// Préparer le prompt pour GPT-4
-	systemMessage := fmt.Sprintf(`You are a helpful cooking assistant that transforms webpage content into a structured recipe.
+	systemMessage := fmt.Sprintf(SystemPrompt, webContent.Title, webContent.MainContent)
 
-TASK: Convert the following webpage content into a valid recipe JSON following the provided schema.
-
-WEBPAGE TITLE:
-%s
-
-WEBPAGE CONTENT:
-%s
-
-IMPORTANT RULES:
-1. Your response MUST be a valid JSON object matching the Recipe schema
-2. Extract recipe details from the webpage content
-3. ALL RECIPE TEXT MUST BE IN ENGLISH:
-   - Translate all ingredients, steps, and descriptions to English
-   - Keep measurements in metric units
-   - Maintain clarity and accuracy in translation
-4. NEVER leave any ingredient without a specific quantity:
-   - ALL ingredients MUST have both a unit and an amount
-   - Use standard units (g, ml, tsp, tbsp, unit) and precise numbers
-   - If a quantity is missing, estimate a reasonable amount
-   - For seasonings (salt, pepper), estimate in tsp
-   - For liquids "to taste" or "for frying", estimate in ml
-   - EVERY ingredient MUST have a category matching its supermarket aisle:
-     * "fruits-legumes": Fresh fruits and vegetables
-     * "viande": Meat and poultry
-     * "poisson": Fish and seafood
-     * "cremerie": Dairy, eggs, butter, cream
-     * "epicerie-salee": Canned goods, pasta, rice, savory groceries
-     * "epicerie-sucree": Sugar, flour, baking needs, sweet groceries
-     * "surgele": Frozen foods
-     * "condiments": Spices, herbs, seasonings, oils, vinegars
-     * "boissons": Drinks and beverages
-5. Structure the recipe steps properly:
-   - Group related steps into logical subRecipes (e.g., "Sauce", "Main Dish", "Assembly")
-   - EVERY step MUST have a time field (e.g., "5min", "1h30min")
-   - The total recipe time MUST be the sum of all step times
-   - EVERY step MUST have an inputs array (NEVER null):
-     * For steps without ingredients, use an empty array []
-     * List ALL ingredients used in the step as "type": "ingredient"
-     * Reference previous steps' outputs as "type": "state"
-   - EVERY step MUST have a clear output:
-     * "state": short description of result (e.g., "mixed", "baked", "chopped")
-     * "description": detailed description of the result
-   - Chain steps together using state references:
-     * If step2 uses the result of step1, include {"type": "state", "ref": "step1"} in step2's inputs
-6. ENSURE ALL INGREDIENTS AND TOOLS ARE USED:
-   - EVERY ingredient in ingredientsList MUST be used in at least one step
-   - EVERY tool in toolsList MUST be used in at least one step
-   - Double-check all ingredients and tools are referenced in steps
-7. Calculate total time accurately:
-   - Sum up the time of all steps
-   - Include both active (preparation) and passive (cooking) time
-   - Format as "XXhYYmin" for times over an hour, "XXmin" for under an hour
-8. ALWAYS set the diet field in metadata to one of:
-   - "normal": For recipes with any ingredients
-   - "vegetarian": For recipes without meat or fish but may include dairy and eggs
-   - "vegan": For recipes with no animal products
-9. ALWAYS set the season field in metadata to one of:
-   - "spring": For spring recipes (March-May)
-   - "summer": For summer recipes (June-August)
-   - "autumn": For autumn recipes (September-November)
-   - "winter": For winter recipes (December-February)
-   Base the season on the main ingredients (in France)
-10. ALWAYS set the recipeType field in metadata to one of:
-    - "appetizer": For small bites and nibbles served before a meal
-    - "starter": For first courses and light dishes to start a meal
-    - "main": For main course dishes
-    - "dessert": For sweet dishes served at the end of a meal
-11. If no clear recipe is found, return an error message
-
-EXAMPLE SCHEMA:
-{
-  "metadata": {
-    "title": "Chocolate Chip Cookies",
-    "description": "Classic American cookies with crispy edges and a soft center",
-    "servings": 24,
-    "difficulty": "easy",
-    "totalTime": "45min",
-    "image": "chocolate-chip-cookies.jpg",
-    "imageUrl": "https://example.com/images/chocolate-chip-cookies.jpg",
-    "sourceUrl": "https://example.com/recipes/chocolate-chip-cookies",
-    "diet": "vegetarian",
-    "season": "winter",
-    "recipeType": "dessert"
-  },
-  "ingredientsList": [
-    {
-      "id": "ing1",
-      "name": "all-purpose flour",
-      "unit": "g",
-      "amount": 250,
-      "category": "epicerie-sucree"
-    }
-  ],
-  "subRecipes": [
-    {
-      "id": "sub1",
-      "title": "Preparation",
-      "steps": [
-        {
-          "id": "step1",
-          "action": "Preheat oven to 375°F (190°C)",
-          "time": "10min",
-          "tools": ["oven"],
-          "inputs": [],
-          "output": {
-            "state": "preheated",
-            "description": "Oven preheated to correct temperature"
-          }
-        },
-        {
-          "id": "step2",
-          "action": "Mix flour and other dry ingredients",
-          "time": "2min",
-          "tools": ["bowl", "whisk"],
-          "inputs": [
-            {
-              "type": "ingredient",
-              "ref": "ing1"
-            }
-          ],
-          "output": {
-            "state": "mixed",
-            "description": "Dry ingredients well combined"
-          }
-        }
-      ]
-    }
-  ]
-}`, webContent.Title, webContent.MainContent)
-
+	// Préparer la requête pour l'API d'OpenAI
 	requestBody := map[string]interface{}{
 		"model": "gpt-4-1106-preview",
 		"messages": []map[string]string{
@@ -269,10 +154,11 @@ EXAMPLE SCHEMA:
 				"content": systemMessage,
 			},
 		},
-		"response_format": map[string]interface{}{
+		"response_format": map[string]string{
 			"type": "json_object",
 		},
 		"temperature": 0.7,
+		"max_tokens":  4000,
 	}
 
 	jsonBody, err := json.Marshal(requestBody)
@@ -287,7 +173,7 @@ EXAMPLE SCHEMA:
 	}
 
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer "+g.openAIKey)
+	req.Header.Set("Authorization", "Bearer "+rg.openAIKey)
 
 	client := &http.Client{Timeout: 300 * time.Second} // 5 minutes
 	resp, err := client.Do(req)
@@ -383,23 +269,19 @@ EXAMPLE SCHEMA:
 // ToJSON convertit la recette en JSON
 func (r *Recipe) ToJSON() ([]byte, error) {
 	// Convertir les amounts en float64 quand c'est possible
-	for i, ingredient := range r.IngredientsList {
-		switch v := ingredient.Amount.(type) {
-		case string:
-			if v == "" {
-				r.IngredientsList[i].Amount = 0.0
-			} else {
-				// Si c'est une chaîne non vide, on la garde telle quelle
-				r.IngredientsList[i].Amount = v
-			}
+	for i := range r.IngredientsList {
+		// Convert amount to float64
+		switch v := r.IngredientsList[i].Amount.(type) {
 		case float64:
-			// Garder le float64 tel quel
-		case int:
-			// Convertir les entiers en float64
-			r.IngredientsList[i].Amount = float64(v)
+			r.IngredientsList[i].Amount = v
+		case string:
+			floatVal, err := strconv.ParseFloat(v, 64)
+			if err != nil {
+				return nil, fmt.Errorf("error converting amount to float64: %v", err)
+			}
+			r.IngredientsList[i].Amount = floatVal
 		default:
-			// Pour tout autre type, mettre 0.0
-			r.IngredientsList[i].Amount = 0.0
+			return nil, fmt.Errorf("unexpected type for amount: %T", v)
 		}
 	}
 

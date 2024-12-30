@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "title": "Stuffed Courgettes with Pine Nut Salsa",
+    "description": "Stuffed vegetables would definitely be part of my last meal – I love them! Traditionally, stuffing vegetables has always been a bit of a labour of love but, here, a lot of labour has been removed without cost to the love. Try to get large courgettes, if you can: you’ll be able to scrape them more easily without damaging them and have plenty of flesh to stuff back inside. A mix of yellow and green courgettes also looks great, if you can get hold of both. You can make the stuffing a day ahead so that the courgettes are ready to be stuffed and grilled.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "25min",
+    "image": "stuffed-courgettes-with-pine-nut-salsa.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/stuffed-courgettes-with-pine-nut-salsa/images/stuffed-courgettes-with-pine-nut-salsa.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/stuffed-courgettes-with-pine-nut-salsa/index.html",
+    "diet": "vegetarian",
+    "season": "summer",
+    "recipeType": "main",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "large courgettes, halved lengthways",
+      "unit": "g",
+      "amount": 500,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing2",
+      "name": "garlic clove, crushed",
+      "unit": "unit",
+      "amount": 0.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing3",
+      "name": "large egg, beaten",
+      "unit": "unit",
+      "amount": 1,
+      "category": "cremerie"
+    },
+    {
+      "id": "ing4",
+      "name": "parmesan (or pecorino), finely grated",
+      "unit": "g",
+      "amount": 40,
+      "category": "cremerie"
+    },
+    {
+      "id": "ing5",
+      "name": "fresh sourdough breadcrumbs",
+      "unit": "g",
+      "amount": 40,
+      "category": "epicerie-salee"
+    },
+    {
+      "id": "ing6",
+      "name": "cherry tomatoes, quartered",
+      "unit": "g",
+      "amount": 100,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing7",
+      "name": "lemon zest",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing8",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "fruits-legumes"
+    },
+    {
+      "id": "ing9",
+      "name": "finely chopped oregano leaves",
+      "unit": "tbsp",
+      "amount": 4,
+      "category": "condiments"
+    },
+    {
+      "id": "ing10",
+      "name": "pine nuts, lightly toasted",
+      "unit": "g",
+      "amount": 35,
+      "category": "epicerie-salee"
+    },
+    {
+      "id": "ing11",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "condiments"
+    },
+    {
+      "id": "ing12",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.375,
+      "category": "condiments"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Courgette Preparation",
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 230°C fan.",
+          "time": "10min",
+          "tools": [
+            "oven"
+          ],
+          "output": {
+            "state": "preheated",
+            "description": "Oven preheated to 230°C"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Hollow out the flesh of the courgettes to make them into canoe shapes.",
+          "time": "5min",
+          "tools": [
+            "dessertspoon",
+            "sieve"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "hollowed",
+            "description": "Courgettes hollowed out to about 1cm thickness"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Combine the courgette flesh with garlic, egg, parmesan, breadcrumbs, crushed tomatoes, and salt.",
+          "time": "5min",
+          "tools": [
+            "medium bowl"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "combined",
+            "description": "Courgette mixture combined and ready for stuffing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Pine Nut Salsa",
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Mix lemon zest, oregano, and pine nuts for the salsa and the stuffing.",
+          "time": "2min",
+          "tools": [
+            "separate bowl"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Lemon zest, oregano, and pine nuts mixed"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Stuff and bake the courgettes, then prepare the salsa with the remaining mixture.",
+          "time": "15min",
+          "tools": [
+            "baking tray",
+            "oven"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "baked & salsa prepped",
+            "description": "Courgettes are baked until the filling is set and golden-brown and the salsa is ready"
+          }
+        }
+      ]
+    }
+  ]
+}
