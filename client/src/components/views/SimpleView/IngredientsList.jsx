@@ -1,15 +1,28 @@
-import React, { useMemo } from 'react';
-import { Box, Typography, Button, Switch, FormControlLabel, IconButton, Tooltip } from '@mui/material';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
-import { useRecipe } from '../../../contexts/RecipeContext';
-import { GRAM_UNITS } from '../../../utils/ingredientScaling';
-import { CATEGORY_ORDER, CATEGORY_LABELS } from '@shared/constants/ingredients';
+import React, { useState, useMemo } from "react";
+import {
+  Box,
+  Typography,
+  IconButton,
+  Tooltip,
+  Snackbar,
+  Alert,
+  Checkbox,
+  FormControlLabel,
+} from "@mui/material";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { useRecipe } from "../../../contexts/RecipeContext";
+import constants from "@shared/constants.json";
+
+const { weight: { gram: GRAM_UNITS } } = constants.units;
+const CATEGORY_ORDER = constants.ingredients.categories.map(cat => cat.id);
+const CATEGORY_LABELS = Object.fromEntries(
+  constants.ingredients.categories.map(cat => [cat.id, cat.label])
+);
 
 const INGREDIENTS_TEXTS = {
-  TITLE: 'Ingredients',
-  COPY_INGREDIENTS: 'Copy ingredients list',
-  SHOPPING_LIST_MODE: 'Shopping list mode'
+  TITLE: "Ingredients",
+  COPY_SUCCESS: "Ingredients copied to clipboard!",
+  SHOPPING_MODE: "Shopping mode"
 };
 
 const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
@@ -189,6 +202,15 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
   const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
   const remainingIngredients = allIngredients.filter(ing => !ing.isUnused).length;
 
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpenSnackbar(false);
+  };
+
   return (
     <>
       <Box sx={{ 
@@ -214,12 +236,15 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           </Typography>
         </Box>
         {sortByCategory && (
-          <Tooltip title={INGREDIENTS_TEXTS.COPY_INGREDIENTS}>
+          <Tooltip title="Copy ingredients list">
             <IconButton
-              onClick={handleCopyIngredients}
+              onClick={() => {
+                handleCopyIngredients();
+                setOpenSnackbar(true);
+              }}
               size="small"
               color="default"
-              aria-label={INGREDIENTS_TEXTS.COPY_INGREDIENTS}
+              aria-label="Copy ingredients list"
               sx={{
                 border: '1px solid',
                 borderColor: 'divider',
@@ -228,13 +253,13 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
                 }
               }}
             >
-              <ContentCopyOutlinedIcon fontSize="small" />
+              <ContentCopyIcon fontSize="small" />
             </IconButton>
           </Tooltip>
         )}
         <FormControlLabel
           control={
-            <Switch
+            <Checkbox
               size="small"
               checked={sortByCategory}
               onChange={(e) => setSortByCategory(e.target.checked)}
@@ -267,7 +292,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
               variant="body2" 
               color="text.secondary"
             >
-              {INGREDIENTS_TEXTS.SHOPPING_LIST_MODE}
+              {INGREDIENTS_TEXTS.SHOPPING_MODE}
             </Typography>
           }
           labelPlacement="start"
@@ -376,6 +401,15 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           </Box>
         ))}
       </Box>
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+      >
+        <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
+          {INGREDIENTS_TEXTS.COPY_SUCCESS}
+        </Alert>
+      </Snackbar>
     </>
   );
 };

@@ -69,7 +69,7 @@
               "description": "Category of the ingredient for sorting and organization"
             }
           },
-          "required": ["id", "name", "unit", "amount", "category"],
+          "required": ["id", "name", "unit", "category"],
           "additionalProperties": false
         }
       },

@@ -1,18 +1,28 @@
 // Constantes pour les unités
+import constants from '@shared/constants.json';
+
+const { volume: { spoons: SPOON_UNITS } } = constants.units;
+
+const UNIT_MAPPING = {
+  'c.à.s': 'cuillère à soupe',
+  'c.à.c': 'cuillère à café',
+  'c à s': 'cuillère à soupe',
+  'c à c': 'cuillère à café',
+  'cas': 'cuillère à soupe',
+  'cac': 'cuillère à café',
+  'cuillere a soupe': 'cuillère à soupe',
+  'cuillere a cafe': 'cuillère à café',
+  'cuillères à soupe': 'cuillère à soupe',
+  'cuillères à café': 'cuillère à café'
+};
+
 export const VOLUME_UNITS = new Set(['ml', 'millilitre', 'millilitres']);
 export const MASS_UNITS = new Set(['g', 'gramme', 'grammes']);
-export const SPOON_UNITS = new Set(['cuillère à soupe', 'cuillère à café', 'c.à.s', 'c.à.c']);
 
 // Seuils de conversion
 const THRESHOLDS = {
   VOLUME: 1000, // ml -> L
   MASS: 1000,   // g -> kg
-};
-
-// Mapping des abréviations de cuillères
-const SPOON_MAPPING = {
-  'cuillère à soupe': 'c.à.s',
-  'cuillère à café': 'c.à.c'
 };
 
 /**
@@ -42,7 +52,7 @@ export const normalizeAmount = (amount, unit) => {
 
   // Pour les cuillères, utiliser les abréviations
   if (SPOON_UNITS.has(unit)) {
-    const normalizedUnit = SPOON_MAPPING[unit] || unit;
+    const normalizedUnit = UNIT_MAPPING[unit] || unit;
     return `${amount} ${normalizedUnit}`;
   }
 

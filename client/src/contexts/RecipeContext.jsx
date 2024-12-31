@@ -6,12 +6,15 @@ import React, {
   useCallback,
   useState,
 } from "react";
+import constants from '@shared/constants.json';
+const { volume: { spoons: SPOON_UNITS, containers: CONTAINER_UNITS } } = constants.units;
+const FRACTION_UNITS = [...SPOON_UNITS, ...CONTAINER_UNITS];
+
 const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
 import useLocalStorage from "../hooks/useLocalStorage";
 import { 
   scaleIngredientAmount, 
   getFractionDisplay,
-  FRACTION_UNITS
 } from '../utils/ingredientScaling';
 import { normalizeAmount } from '../utils/unitNormalization';
 import { usePreferences, UNIT_SYSTEMS } from './PreferencesContext';

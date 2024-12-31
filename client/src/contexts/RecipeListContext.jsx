@@ -1,4 +1,8 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { usePreferences } from './PreferencesContext';
+import { useTheme } from './ThemeContext';
+import constants from '@shared/constants.json';
 
 const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
 
@@ -156,67 +160,56 @@ export const RecipeListProvider = ({ children }) => {
     };
 
     // Calculer les stats pour chaque catégorie
-    const dietStats = new Map();
-    const seasonStats = new Map();
-    const dishTypeStats = new Map();
-    let quickCount = 0;
+    const computeStats = (recipes) => {
+      const typeStats = new Map();
+      const dietStats = new Map();
+      const seasonStats = new Map();
 
-    // Initialiser tous les régimes possibles avec 0
-    const allDiets = ['normal', 'vegetarian', 'vegan'];
-    allDiets.forEach(diet => dietStats.set(diet, 0));
+      // Initialize maps with all possible values
+      const allTypes = constants.recipe_types.map(type => type.id);
+      allTypes.forEach(type => typeStats.set(type, 0));
 
-    // Stats pour les régimes (en excluant le filtre diet)
-    const recipesForDiet = getFilteredRecipesExcept('diet');
-    recipesForDiet.forEach(recipe => {
-      const diet = recipe.metadata.diet || 'normal';
-      dietStats.set(diet, (dietStats.get(diet) || 0) + 1);
-    });
+      const allDiets = constants.diets.map(diet => diet.id);
+      allDiets.forEach(diet => dietStats.set(diet, 0));
 
-    // Initialiser toutes les saisons avec 0
-    const allSeasons = ['spring', 'summer', 'autumn', 'winter'];
-    allSeasons.forEach(season => seasonStats.set(season, 0));
+      const allSeasons = constants.seasons.map(season => season.id);
+      allSeasons.forEach(season => seasonStats.set(season, 0));
 
-    // Stats pour les saisons (en excluant le filtre season)
-    const recipesForSeason = getFilteredRecipesExcept('season');
-    recipesForSeason.forEach(recipe => {
-      const recipeSeason = recipe.metadata.season || 'all';
-      if (recipeSeason === 'all') {
-        // Si la recette est pour toutes les saisons, l'ajouter à chaque saison
-        allSeasons.forEach(season => {
-          seasonStats.set(season, seasonStats.get(season) + 1);
-        });
-      } else {
-        // Sinon, l'ajouter uniquement à sa saison
-        seasonStats.set(recipeSeason, seasonStats.get(recipeSeason) + 1);
-      }
-    });
+      recipes.forEach(recipe => {
+        const type = recipe.metadata.type || 'main';
+        typeStats.set(type, (typeStats.get(type) || 0) + 1);
 
-    // Initialiser tous les types de plats avec 0
-    const allDishTypes = ['appetizer', 'starter', 'main', 'dessert'];
-    allDishTypes.forEach(type => dishTypeStats.set(type, 0));
+        const diet = recipe.metadata.diet || 'normal';
+        dietStats.set(diet, (dietStats.get(diet) || 0) + 1);
 
-    // Stats pour les types de plats (en excluant le filtre dishType)
-    const recipesForDishType = getFilteredRecipesExcept('dishType');
-    recipesForDishType.forEach(recipe => {
-      const dishType = recipe.metadata.recipeType || 'main';
-      dishTypeStats.set(dishType, (dishTypeStats.get(dishType) || 0) + 1);
-    });
+        const season = recipe.metadata.season || 'all';
+        seasonStats.set(season, (seasonStats.get(season) || 0) + 1);
+      });
 
-    // Stats pour les recettes rapides (en excluant le filtre quick)
-    const recipesForQuick = getFilteredRecipesExcept('quick');
-    quickCount = recipesForQuick.filter(recipe => recipe.metadata.quick).length;
+      const mapToSortedArray = (map, order) => {
+        return order.map(key => ({
+          key,
+          count: map.get(key) || 0
+        }));
+      };
 
-    const mapToSortedArray = (map, order) => {
-      return order.map(key => ({
-        key,
-        count: map.get(key) || 0
-      }));
+      return {
+        diet: mapToSortedArray(dietStats, allDiets),
+        season: mapToSortedArray(seasonStats, allSeasons),
+        dishType: mapToSortedArray(typeStats, allTypes),
+        quick: { count: recipes.filter(recipe => recipe.metadata.quick).length, total: filteredRecipes.length }
+      };
     };
 
+    const dietStats = computeStats(getFilteredRecipesExcept('diet'));
+    const seasonStats = computeStats(getFilteredRecipesExcept('season'));
+    const dishTypeStats = computeStats(getFilteredRecipesExcept('dishType'));
+    const quickCount = getFilteredRecipesExcept('quick').filter(recipe => recipe.metadata.quick).length;
+
     return {
-      diet: mapToSortedArray(dietStats, allDiets),
-      season: mapToSortedArray(seasonStats, allSeasons),
-      dishType: mapToSortedArray(dishTypeStats, allDishTypes),
+      diet: dietStats.diet,
+      season: seasonStats.season,
+      dishType: dishTypeStats.dishType,
       quick: { count: quickCount, total: filteredRecipes.length }
     };
   }, [allRecipes, selectedDiet, selectedSeason, selectedType, selectedDishType, searchQuery, isQuickOnly, filteredRecipes]);

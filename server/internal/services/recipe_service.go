@@ -264,7 +264,46 @@ func (s *RecipeService) GetRecipeList() ([]RecipeListItem, error) {
 	return items, nil
 }
 
+func (s *RecipeService) findRecipeBySourceUrl(sourceUrl string) (bool, error) {
+	files, err := ioutil.ReadDir(s.dataDir)
+	if err != nil {
+		return false, fmt.Errorf("failed to read data directory: %v", err)
+	}
+
+	for _, file := range files {
+		if file.IsDir() || !strings.HasSuffix(file.Name(), ".recipe.json") || file.Name() == "recipe.schema.json" {
+			continue
+		}
+
+		filePath := filepath.Join(s.dataDir, file.Name())
+		recipeData, err := ioutil.ReadFile(filePath)
+		if err != nil {
+			continue
+		}
+
+		var recipe models.Recipe
+		if err := json.Unmarshal(recipeData, &recipe); err != nil {
+			continue
+		}
+
+		if recipe.Metadata.SourceUrl == sourceUrl {
+			return true, nil
+		}
+	}
+
+	return false, nil
+}
+
 func (s *RecipeService) AddRecipeFromUrl(urlString string) (*map[string]interface{}, error) {
+	// Vérifier si la recette existe déjà
+	exists, err := s.findRecipeBySourceUrl(urlString)
+	if err != nil {
+		return nil, fmt.Errorf("failed to check for existing recipe: %v", err)
+	}
+	if exists {
+		return nil, fmt.Errorf("recipe already exists")
+	}
+
 	// Créer un dossier temporaire pour les opérations
 	tempDir, err := os.MkdirTemp("", "recipe-*")
 	if err != nil {

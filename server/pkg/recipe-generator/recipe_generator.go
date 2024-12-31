@@ -9,6 +9,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	"text/template"
 	"time"
 
 	"recipe-display/server/internal/utils"
@@ -20,6 +21,7 @@ import (
 // RecipeGenerator est responsable de la génération de recettes
 type RecipeGenerator struct {
 	openAIKey string
+	constants *Constants
 }
 
 // NewRecipeGenerator crée une nouvelle instance de RecipeGenerator
@@ -28,8 +30,16 @@ func NewRecipeGenerator() *RecipeGenerator {
 	if openAIKey == "" {
 		log.Error().Msg("OPENAI_API_KEY is not set")
 	}
+
+	// Charger les constantes
+	constants, err := loadConstants()
+	if err != nil {
+		log.Error().Err(err).Msg("Failed to load constants")
+	}
+
 	return &RecipeGenerator{
 		openAIKey: openAIKey,
+		constants: constants,
 	}
 }
 
@@ -143,7 +153,19 @@ func (rg *RecipeGenerator) cleanupRecipeContent(webContent *utils.WebContent) (*
 // generateStructuredRecipe génère une recette structurée à partir du contenu nettoyé
 func (rg *RecipeGenerator) generateStructuredRecipe(webContent *utils.WebContent, sourceUrl string, imageUrls []string) (*Recipe, error) {
 	// Préparer le prompt pour GPT-4
-	systemMessage := fmt.Sprintf(SystemPrompt, webContent.Title, webContent.MainContent)
+	tmpl, err := template.New("prompt").Parse(SystemPrompt)
+	if err != nil {
+		return nil, fmt.Errorf("error parsing template: %v", err)
+	}
+
+	// Exécuter le template avec les constantes
+	var buf bytes.Buffer
+	err = tmpl.Execute(&buf, rg.constants.formatForTemplate())
+	if err != nil {
+		return nil, fmt.Errorf("error executing template: %v", err)
+	}
+
+	systemMessage := fmt.Sprintf(buf.String(), webContent.Title, webContent.MainContent)
 
 	// Préparer la requête pour l'API d'OpenAI
 	requestBody := map[string]interface{}{

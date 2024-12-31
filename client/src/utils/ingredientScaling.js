@@ -1,36 +1,12 @@
+import constants from '@shared/constants.json';
 
-// Unités qui doivent être arrondies à l'entier le plus proche
-export const INTEGER_UNITS = new Set([
-  'unit',
-  'piece'
-]);
+const { integer: INTEGER_UNITS, weight: { gram: GRAM_UNITS }, volume: { spoons: SPOON_UNITS, containers: CONTAINER_UNITS } } = constants.units;
+const INTEGER_UNITS_SET = new Set(INTEGER_UNITS);
 
-// Unités qui utilisent des grammes
-export const GRAM_UNITS = new Set([
-  'g',
-  'gram',
-  'grams'
-]);
-
-// Unités qui doivent être arrondies à des fractions pratiques (1/2, 1/4, etc.)
-export const FRACTION_UNITS = new Set([
-  'tablespoon',
-  'teaspoon',
-  'cup',
-  'glass'
-]);
-
-// Catégories qui ne devraient pas augmenter proportionnellement
-const SCALING_FACTORS = {
-  'épices': (ratio) => Math.pow(ratio, 0.8),
-  'assaisonnement': (ratio) => Math.pow(ratio, 0.8),
-  'levure': (ratio) => Math.pow(ratio, 0.9),
-};
-
-const UNIT_TEXTS = {
-  KILOGRAM: (count) => `${count} kg`,
-  GRAM: (count) => `${count} g`
-};
+const SCALING_FACTORS = Object.entries(constants.scaling_factors).reduce((acc, [category, factor]) => {
+  acc[category] = (ratio) => Math.pow(ratio, factor);
+  return acc;
+}, {});
 
 // Fonction pour arrondir les grammes de façon adaptative
 const roundGrams = (value) => {
@@ -92,39 +68,34 @@ export const getFractionDisplay = (value) => {
 
 // Fonction pour normaliser l'affichage des grammes
 export const normalizeGramsDisplay = (amount) => {
+  const { display } = constants.units.weight;
   if (amount >= 1600) {
-    return UNIT_TEXTS.KILOGRAM((amount / 1000).toFixed(1).replace('.', ','));
+    return display.kilogram.replace('{count}', (amount / 1000).toFixed(1).replace('.', ','));
   }
-  return UNIT_TEXTS.GRAM(Math.round(amount));
+  return display.gram.replace('{count}', Math.round(amount));
 };
 
 export const scaleIngredientAmount = (amount, unit, category, ratio) => {
-  if (!amount) return amount;
+  // Si pas d'unité ou pas de ratio, on retourne la valeur telle quelle
+  if (!unit || !ratio) return amount;
 
-  // Appliquer le facteur d'échelle spécial pour certaines catégories
+  // Appliquer le facteur d'échelle spécifique à la catégorie si disponible
   const scalingFactor = SCALING_FACTORS[category] || ((r) => r);
-  const adjustedRatio = scalingFactor(ratio);
-  
-  // Calculer la nouvelle quantité
-  let scaledAmount = amount * adjustedRatio;
+  const scaledAmount = amount * scalingFactor(ratio);
 
-  // Arrondir selon l'unité
-  if (INTEGER_UNITS.has(unit)) {
-    // Pour les œufs et autres unités entières, arrondir à l'entier le plus proche
-    // mais jamais en dessous de 1
-    return Math.max(1, Math.round(scaledAmount));
+  // Arrondir selon le type d'unité
+  if (INTEGER_UNITS_SET.has(unit)) {
+    return Math.round(scaledAmount);
   }
 
-  if (GRAM_UNITS.has(unit)) {
-    // Pour les grammes, utiliser l'arrondi adaptatif
+  if (GRAM_UNITS.includes(unit)) {
     return roundGrams(scaledAmount);
   }
 
-  if (FRACTION_UNITS.has(unit)) {
-    // Pour les unités qui utilisent des fractions pratiques
+  if ([...SPOON_UNITS, ...CONTAINER_UNITS].includes(unit)) {
     return roundToFraction(scaledAmount);
   }
 
-  // Pour les autres unités, arrondir à une décimale
-  return Math.round(scaledAmount * 10) / 10;
+  // Pour les autres unités, arrondir à 2 décimales
+  return Math.round(scaledAmount * 100) / 100;
 };

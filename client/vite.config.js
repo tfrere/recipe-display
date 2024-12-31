@@ -8,10 +8,12 @@ export default defineConfig({
     port: 3000,
   },
   publicDir: "public",
-  assetsInclude: ["**/*.json"],
   resolve: {
     alias: {
       '@shared': path.resolve(__dirname, '../shared')
     }
+  },
+  optimizeDeps: {
+    include: ['@shared/constants.json']
   }
 });

@@ -1,3 +1,32 @@
+import React from 'react';
+import { Box, Typography, Container, IconButton, Tooltip } from '@mui/material';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import GroupIcon from '@mui/icons-material/Group';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+import PrintOutlinedIcon from '@mui/icons-material/PrintOutlined';
+import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
+import RecipeImage from '../../common/RecipeImage';
+import RecipeChip, { CHIP_TYPES } from '../../common/RecipeChip';
+import { useRecipe } from '../../../contexts/RecipeContext';
+import { useTheme } from '../../../contexts/ThemeContext';
+import { useLayout, LAYOUT_MODES } from '../../../contexts/LayoutContext';
+import { TimeDisplay } from './PreparationSteps';
+import constants from '@shared/constants.json';
+
+// Convert arrays to lookup objects for easy access
+const RECIPE_TYPE_LABELS = Object.fromEntries(
+  constants.recipe_types.map(type => [type.id, type.label])
+);
+const DIET_LABELS = Object.fromEntries(
+  constants.diets.map(diet => [diet.id, diet.label])
+);
+const SEASON_LABELS = Object.fromEntries(
+  constants.seasons.map(season => [season.id, season.label])
+);
+
 const HEADER_TEXTS = {
   ACTIONS: {
     PRINT: 'Print recipe',
@@ -9,45 +38,8 @@ const HEADER_TEXTS = {
   SERVINGS: {
     SINGLE: '1 serving',
     MULTIPLE: (count) => `${count} servings`
-  },
-  DIET: {
-    NORMAL: 'Regular',
-    VEGETARIAN: 'Vegetarian',
-    VEGAN: 'Vegan'
-  },
-  SEASON: {
-    ALL: 'All seasons',
-    SPRING: 'Spring',
-    SUMMER: 'Summer',
-    FALL: 'Fall',
-    WINTER: 'Winter'
-  },
-  RECIPE_TYPE: {
-    MAIN: 'Main dish',
-    DESSERT: 'Dessert',
-    APPETIZER: 'Appetizer',
-    SIDE: 'Side dish',
-    BREAKFAST: 'Breakfast',
-    SNACK: 'Snack'
   }
 };
-
-import React from 'react';
-import { Box, Typography, Container, IconButton, Tooltip } from '@mui/material';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import GroupIcon from '@mui/icons-material/Group';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
-import PrintOutlinedIcon from '@mui/icons-material/PrintOutlined';
-import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
-import RestartAltIcon from '@mui/icons-material/RestartAlt';
-import RecipeImage from '../../common/RecipeImage';
-import RecipeChip, { CHIP_TYPES } from '../../common/RecipeChip';
-import { useRecipe } from '../../../contexts/RecipeContext';
-import { useTheme } from '../../../contexts/ThemeContext';
-import { useLayout, LAYOUT_MODES } from '../../../contexts/LayoutContext';
-import { TimeDisplay } from './PreparationSteps';
 
 const formatTime = (minutes) => {
   // Arrondir au multiple de 5 le plus proche
@@ -226,11 +218,11 @@ ${Object.entries(recipe.steps || {})
                   textTransform: 'capitalize'
                 }}
               >
-                {HEADER_TEXTS.DIET[recipe.metadata?.diet?.toUpperCase() || 'NORMAL']}
+                {DIET_LABELS[recipe.metadata?.diet || 'normal']}
                 {" • "}
-                {HEADER_TEXTS.SEASON[recipe.metadata?.season?.toUpperCase() || 'ALL']}
+                {SEASON_LABELS[recipe.metadata?.season || 'all']}
                 {" • "}
-                {HEADER_TEXTS.RECIPE_TYPE[recipe.metadata?.type?.toUpperCase() || 'MAIN']}
+                {RECIPE_TYPE_LABELS[recipe.metadata?.type || 'main']}
               </Typography>
             </Box>
 

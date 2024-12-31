@@ -1,4 +1,5 @@
 export const VIEWS = {
-  GRAPH: 'graph',
-  SIMPLE: 'simple'
-};
+    GRAPH: 'graph',
+    SIMPLE: 'simple'
+  };
+  

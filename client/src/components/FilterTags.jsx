@@ -1,34 +1,38 @@
-const FILTER_TEXTS = {
-  FILTER_BY: 'Filter by',
-  QUICK_RECIPES: 'Quick recipes',
-  DISH_TYPE: {
-    APPETIZER: 'Appetizer',
-    STARTER: 'Starter',
-    MAIN: 'Main dish',
-    DESSERT: 'Dessert'
-  },
-  DIET: {
-    NORMAL: 'Regular',
-    VEGETARIAN: 'Vegetarian',
-    VEGAN: 'Vegan'
-  },
-  SEASON: {
-    ALL: 'All seasons',
-    SPRING: 'Spring',
-    SUMMER: 'Summer',
-    FALL: 'Fall',
-    WINTER: 'Winter'
-  }
-};
-
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useRecipeList } from '../contexts/RecipeListContext';
 import FilterTag from './common/FilterTag';
+import constants from '@shared/constants.json';
+
+const RECIPE_TYPE_LABELS = Object.fromEntries(
+  constants.recipe_types.map(type => [type.id, type.label])
+);
+const DIET_LABELS = Object.fromEntries(
+  constants.diets.map(diet => [diet.id, diet.label])
+);
+const SEASON_LABELS = Object.fromEntries(
+  constants.seasons.map(season => [season.id, season.label])
+);
+
+const FILTER_TEXTS = {
+  FILTER_BY: 'Filter by',
+  QUICK_RECIPES: 'Quick recipes',
+  ALL: 'All seasons'
+};
 
 const getTranslation = (prefix, key) => {
-  const section = prefix.split('.')[1].toUpperCase();
-  return FILTER_TEXTS[section]?.[key.toUpperCase()] || key;
+  if (!key) return '';
+  
+  switch(prefix) {
+    case 'recipe.dishType':
+      return RECIPE_TYPE_LABELS[key] || key;
+    case 'recipe.diet':
+      return DIET_LABELS[key] || key;
+    case 'recipe.season':
+      return SEASON_LABELS[key] || key;
+    default:
+      return key;
+  }
 };
 
 const FilterSection = ({ items, selectedValue, onSelect, translatePrefix, type }) => {

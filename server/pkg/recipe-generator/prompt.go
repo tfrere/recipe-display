@@ -194,54 +194,39 @@ IMPORTANT RULES:
    - Maintain clarity and accuracy in translation
 4. For each ingredient in ingredientsList:
    - Set "name" to the ingredient name (e.g., "onion", "carrot")
-   - Set "amount" to the numerical quantity:
-     * MUST be a number (float64)
-     * If no quantity is specified, use 1.0
-     * NEVER use text or strings for amounts
-     * Examples:
-       - "2 onions" -> amount: 2.0, unit: "whole"
-       - "a pinch of salt" -> amount: 1.0, unit: "pinch"
-       - "some parsley" -> amount: 1.0, unit: "bunch"
-   - Set "unit" to the appropriate unit of measurement
-   - Set "category" based on ingredient type (e.g., "vegetable", "spice", "meat", "produce", "dairy", "pantry-savory", "pantry-sweet", "condiments", "beverages", "autres")
-   - DO NOT set any preparation state here
-   - Example:
-     {
-       "name": "onion",
-       "amount": 2.0,
-       "unit": "whole",
-       "category": "vegetable"
-     }
+   - Set "unit" to one of: ["g", "ml", "unit", "tbsp", "tsp", "pinch"]
+   - Set "category" to one of:
+     * "meat": For all meat and poultry
+     * "produce": For fresh fruits and vegetables
+     * "dairy": For milk, cheese, eggs, etc.
+     * "pantry-savory": For dry goods like flour, rice, pasta
+     * "pantry-sweet": For sugar, chocolate, etc.
+     * "spice": For herbs, spices, and seasonings
+     * "condiments": For sauces, oils, vinegars
+     * "beverages": For water, wine, etc.
+     * "autres": For anything that doesn't fit above
+   - Set "id" to a unique identifier (e.g., "ing1", "ing2")
 5. For each subRecipe:
    - Group related steps into logical subRecipes (e.g., "Sauce", "Main Dish", "Assembly")
    - Create an ingredients map for each subRecipe:
      * Key is the ingredient ID (e.g., "ing1")
      * Value MUST contain:
        - "name": String, the ingredient name
-       - "unit": String, one of: "g", "ml", "unit", "tbsp", "tsp", "pinch"
+       - "unit": String, one of: "g", "ml", "tsp", "tbsp", "unit"
        - "amount": Number, the quantity needed
-       - "category": String, MUST be one of:
-         * "meat": For all meats and poultry
-         * "produce": For all fruits, vegetables, and fresh herbs
-         * "dairy": For dairy products
-         * "pantry-savory": For savory pantry items (oils, vinegars, canned goods)
-         * "pantry-sweet": For sweet pantry items (sugar, honey, chocolate)
-         * "spice": For spices and dried herbs
-         * "condiments": For condiments (mustard, soy sauce)
-         * "beverages": For drinks and liquids (water, wine, stock)
-         * "autres": For anything that doesn't fit in the above categories
+       - "category": String, MUST be one of: {{.IngredientCategories}}
    - Example subRecipe:
      {
        "id": "sub1",
-       "title": "Roasted Vegetables",
+       "title": "string",
        "ingredients": {
          "ing1": {
-           "amount": 500,
-           "state": "cut into florets"
+           "amount": 2,
+           "state": "finely diced"
          },
          "ing2": {
            "amount": 100,
-           "state": ""  // No specific preparation needed
+           "state": "room temperature"
          }
        }
      }
@@ -298,22 +283,14 @@ IMPORTANT RULES:
      * Verify that each tool serves a clear purpose in the recipe
 
 9. ALWAYS set the diet field in metadata to one of:
-   - "normal": For recipes with any ingredients
-   - "vegetarian": For recipes without meat or fish but may include dairy and eggs
-   - "vegan": For recipes with no animal products
+   - {{.DietTypes}}
 
 10. ALWAYS set the season field in metadata to one of:
-   - "spring": For spring recipes (March-May)
-   - "summer": For summer recipes (June-August)
-   - "autumn": For autumn recipes (September-November)
-   - "winter": For winter recipes (December-February)
+   - {{.Seasons}}
    Base the season on the main ingredients (in France)
 
 11. ALWAYS set the recipeType field in metadata to one of:
-   - "appetizer": For small bites and nibbles served before a meal
-   - "starter": For first courses and light dishes to start a meal
-   - "main": For main course dishes
-   - "dessert": For sweet dishes served at the end of a meal
+   - {{.RecipeTypes}}
 
 EXAMPLE SCHEMA:
 {
@@ -326,9 +303,9 @@ EXAMPLE SCHEMA:
     "image": "string",
     "imageUrl": "string",
     "sourceUrl": "string",
-    "diet": "normal|vegetarian|vegan",
-    "season": "spring|summer|autumn|winter",
-    "recipeType": "appetizer|starter|main|dessert",
+    "diet": {{.DietTypes}},
+    "season": {{.Seasons}},
+    "recipeType": {{.RecipeTypes}},
     "quick": false,
     "notes": "string"
   },
@@ -337,8 +314,7 @@ EXAMPLE SCHEMA:
       "id": "ing1",
       "name": "string",
       "unit": "g|ml|tsp|tbsp|unit",
-      "amount": 100,
-      "category": "produce|dairy|pantry-savory|pantry-sweet|condiments|beverages|autres"
+      "category": {{.IngredientCategories}}
     }
   ],
   "subRecipes": [

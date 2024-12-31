@@ -20,12 +20,11 @@ type Recipe struct {
 		Notes       string `json:"notes"`
 	} `json:"metadata"`
 	IngredientsList []struct {
-		ID       string      `json:"id"`
-		Name     string      `json:"name"`
-		Unit     string      `json:"unit"`
-		Amount   interface{} `json:"amount"`
-		Category string      `json:"category"`
-		State    string      `json:"state"`
+		ID       string `json:"id"`
+		Name     string `json:"name"`
+		Unit     string `json:"unit"`
+		Category string `json:"category"`
+		State    string `json:"state"`
 	} `json:"ingredientsList"`
 	SubRecipes []struct {
 		ID          string `json:"id"`
