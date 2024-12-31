@@ -2,7 +2,15 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { highlightMatches } from '../../../utils/textUtils.jsx';
-import { useTranslation } from 'react-i18next';
+
+const PREPARATION_TEXTS = {
+  TITLE: 'Preparation',
+  TIME: {
+    MINUTE: (count) => count === 1 ? '1 minute' : `${count} minutes`,
+    HOUR: (count) => count === 1 ? '1 hour' : `${count} hours`,
+    HOUR_MINUTE: (hours, minutes) => `${hours} ${hours === 1 ? 'hour' : 'hours'} ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`
+  }
+};
 
 const parseTime = (timeString) => {
   if (!timeString) return 0;
@@ -11,14 +19,12 @@ const parseTime = (timeString) => {
 };
 
 export const TimeDisplay = ({ minutes, sx = {} }) => {
-  const { t } = useTranslation();
-  
   if (!minutes) return null;
   
   if (minutes < 60) {
     return (
       <Box component="span" sx={{ display: 'inline', ...sx }}>
-        {t('recipe.time.minute', { count: minutes })}
+        {PREPARATION_TEXTS.TIME.MINUTE(minutes)}
       </Box>
     );
   }
@@ -29,14 +35,14 @@ export const TimeDisplay = ({ minutes, sx = {} }) => {
   if (remainingMinutes === 0) {
     return (
       <Box component="span" sx={{ display: 'inline', ...sx }}>
-        {t('recipe.time.hour', { count: hours })}
+        {PREPARATION_TEXTS.TIME.HOUR(hours)}
       </Box>
     );
   }
   
   return (
     <Box component="span" sx={{ display: 'inline', ...sx }}>
-      {t('recipe.time.hourMinute', { count: hours, minutes: remainingMinutes })}
+      {PREPARATION_TEXTS.TIME.HOUR_MINUTE(hours, remainingMinutes)}
     </Box>
   );
 };
@@ -51,7 +57,6 @@ const PreparationSteps = ({ recipe }) => {
     getSubRecipeStats,
     getCompletedSubRecipesCount
   } = useRecipe();
-  const { t } = useTranslation();
 
   const handleSubRecipeClick = (subRecipeId, steps) => {
     const isCompleted = !completedSubRecipes[subRecipeId];
@@ -86,7 +91,7 @@ const PreparationSteps = ({ recipe }) => {
         gap: 1
       }}>
         <Typography variant="h5" component="span">
-          {t('recipe.sections.preparation')}
+          {PREPARATION_TEXTS.TITLE}
         </Typography>
         {isSingleSubRecipe ? (
           <Typography 

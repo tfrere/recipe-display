@@ -15,17 +15,43 @@ import {
   Fade
 } from '@mui/material';
 import axios from 'axios';
-import { useTranslation } from 'react-i18next';
 
 const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
 
+const MODAL_TEXTS = {
+  TITLE: 'Add a recipe',
+  SOURCE: {
+    LABEL: 'Recipe source',
+    PLACEHOLDER: 'Enter a URL to a recipe',
+    HELPER: 'Paste a URL to a recipe from your favorite cooking website'
+  },
+  STEPS: {
+    FETCHING_URL: 'Fetching recipe from URL...',
+    ANALYZING_CONTENT: 'Analyzing content...',
+    EXTRACTING_RECIPE: 'Extracting recipe data...',
+    TRANSLATING: 'Translating recipe...',
+    PROCESSING_IMAGES: 'Processing images...',
+    SAVING_RECIPE: 'Saving recipe...'
+  },
+  SUCCESS: 'Recipe successfully added!',
+  ERROR: {
+    GENERATION: 'Error generating recipe. Please try again.',
+    NO_RESPONSE: 'No response from server. Please check your connection.',
+    REQUEST: 'Error sending request. Please try again.'
+  },
+  BUTTONS: {
+    CANCEL: 'Cancel',
+    ADD: 'Add'
+  }
+};
+
 const loadingSteps = [
-  { key: 'fetch', message: 'addRecipe.steps.fetchingUrl', duration: 2000 },
-  { key: 'analyze', message: 'addRecipe.steps.analyzingContent', duration: 2000 },
-  { key: 'extract', message: 'addRecipe.steps.extractingRecipe', duration: 2000 },
-  { key: 'translate', message: 'addRecipe.steps.translating', duration: 2000 },
-  { key: 'images', message: 'addRecipe.steps.processingImages', duration: 2000 },
-  { key: 'save', message: 'addRecipe.steps.savingRecipe', duration: 1000 },
+  { key: 'fetch', message: MODAL_TEXTS.STEPS.FETCHING_URL, duration: 2000 },
+  { key: 'analyze', message: MODAL_TEXTS.STEPS.ANALYZING_CONTENT, duration: 2000 },
+  { key: 'extract', message: MODAL_TEXTS.STEPS.EXTRACTING_RECIPE, duration: 2000 },
+  { key: 'translate', message: MODAL_TEXTS.STEPS.TRANSLATING, duration: 2000 },
+  { key: 'images', message: MODAL_TEXTS.STEPS.PROCESSING_IMAGES, duration: 2000 },
+  { key: 'save', message: MODAL_TEXTS.STEPS.SAVING_RECIPE, duration: 1000 },
 ];
 
 const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
@@ -35,7 +61,6 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
   const [successMessage, setSuccessMessage] = useState(null);
   const [currentStep, setCurrentStep] = useState(0);
   const [progress, setProgress] = useState(0);
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (!isLoading) {
@@ -95,7 +120,7 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       });
 
       // Show success message
-      setSuccessMessage(t('addRecipe.success'));
+      setSuccessMessage(MODAL_TEXTS.SUCCESS);
 
       // Optional: call a callback to refresh recipe list
       if (onRecipeAdded) {
@@ -111,11 +136,11 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       console.error('Error generating recipe:', err.response?.data || err.message);
       
       if (err.response) {
-        setError(err.response.data || t('addRecipe.error.generation'));
+        setError(err.response.data || MODAL_TEXTS.ERROR.GENERATION);
       } else if (err.request) {
-        setError(t('addRecipe.error.noResponse'));
+        setError(MODAL_TEXTS.ERROR.NO_RESPONSE);
       } else {
-        setError(t('addRecipe.error.request'));
+        setError(MODAL_TEXTS.ERROR.REQUEST);
       }
     } finally {
       setIsLoading(false);
@@ -130,7 +155,7 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
   return (
     <>
       <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-        <DialogTitle>{t('addRecipe.title')}</DialogTitle>
+        <DialogTitle>{MODAL_TEXTS.TITLE}</DialogTitle>
         <DialogContent>
           {error && (
             <Alert severity="error" sx={{ mb: 2 }}>
@@ -140,13 +165,13 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
           <TextField
             autoFocus
             margin="dense"
-            label={t('addRecipe.sourceLabel')}
+            label={MODAL_TEXTS.SOURCE.LABEL}
             fullWidth
             variant="outlined"
             value={recipeSource}
             onChange={(e) => setRecipeSource(e.target.value)}
-            placeholder={t('addRecipe.sourcePlaceholder')}
-            helperText={t('addRecipe.sourceHelper')}
+            placeholder={MODAL_TEXTS.SOURCE.PLACEHOLDER}
+            helperText={MODAL_TEXTS.SOURCE.HELPER}
             disabled={isLoading}
           />
           {isLoading && (
@@ -164,7 +189,7 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                       <CircularProgress size={20} />
                       <Typography>
-                        {t(step.message)}
+                        {step.message}
                       </Typography>
                     </Box>
                   </Fade>
@@ -175,14 +200,14 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose} disabled={isLoading}>
-            {t('common.cancel')}
+            {MODAL_TEXTS.BUTTONS.CANCEL}
           </Button>
           <Button 
             onClick={handleAddRecipe} 
             variant="contained" 
             disabled={!recipeSource || isLoading}
           >
-            {t('common.add')}
+            {MODAL_TEXTS.BUTTONS.ADD}
           </Button>
         </DialogActions>
       </Dialog>

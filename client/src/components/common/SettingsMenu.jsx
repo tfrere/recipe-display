@@ -9,14 +9,33 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import { usePreferences } from '../../contexts/PreferencesContext';
 import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
-import { useTranslation } from 'react-i18next';
 import { VIEWS } from '../../constants/views';
+
+const SETTINGS_TEXTS = {
+  VIEW: {
+    TITLE: 'View',
+    SIMPLE: 'Simple view',
+    GRAPH: 'Graph view'
+  },
+  LAYOUT: {
+    TITLE: 'Layout',
+    ONE_COLUMN: 'One column',
+    TWO_COLUMNS: 'Two columns'
+  },
+  PREFERENCES: {
+    TITLE: 'Preferences',
+    LIGHT_MODE: 'Light mode',
+    DARK_MODE: 'Dark mode',
+    METRIC_UNITS: 'Metric units',
+    IMPERIAL_UNITS: 'Imperial units'
+  }
+};
 
 const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggleDarkMode }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const { unitSystem, toggleUnitSystem } = usePreferences();
   const { layoutMode, toggleLayout } = useLayout();
-  const { t, i18n } = useTranslation();
+
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
@@ -30,10 +49,6 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
   const handleViewChange = (view) => {
     onViewChange?.(view);
     handleClose();
-  };
-
-  const handleLanguageChange = (event) => {
-    i18n.changeLanguage(event.target.value);
   };
 
   const handleUnitChange = (event) => {
@@ -105,7 +120,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
         {isRecipePage && (
           <>
             <Typography variant="body2" color="text.secondary" className="menu-section">
-              {t('navigation.settings.view')}
+              {SETTINGS_TEXTS.VIEW.TITLE}
             </Typography>
             <MenuItem 
               onClick={() => handleViewChange(VIEWS.SIMPLE)}
@@ -114,7 +129,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
               <ListItemIcon>
                 <ViewStreamOutlinedIcon fontSize="small" />
               </ListItemIcon>
-              <ListItemText>{t('navigation.views.simple')}</ListItemText>
+              <ListItemText>{SETTINGS_TEXTS.VIEW.SIMPLE}</ListItemText>
             </MenuItem>
             <MenuItem 
               onClick={() => handleViewChange(VIEWS.GRAPH)}
@@ -123,7 +138,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
               <ListItemIcon>
                 <AccountTreeOutlinedIcon fontSize="small" />
               </ListItemIcon>
-              <ListItemText>{t('navigation.views.graph')}</ListItemText>
+              <ListItemText>{SETTINGS_TEXTS.VIEW.GRAPH}</ListItemText>
             </MenuItem>
             <Divider />
           </>
@@ -132,7 +147,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
         {isRecipePage && currentView === VIEWS.SIMPLE && (
           <>
             <Typography variant="body2" color="text.secondary" className="menu-section">
-              {t('navigation.settings.layout')}
+              {SETTINGS_TEXTS.LAYOUT.TITLE}
             </Typography>
             <MenuItem onClick={toggleLayout}>
               <ListItemIcon>
@@ -143,8 +158,8 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
               </ListItemIcon>
               <ListItemText>
                 {layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? 
-                  t('navigation.settings.twoColumns') : 
-                  t('navigation.settings.oneColumn')
+                  SETTINGS_TEXTS.LAYOUT.TWO_COLUMNS : 
+                  SETTINGS_TEXTS.LAYOUT.ONE_COLUMN
                 }
               </ListItemText>
             </MenuItem>
@@ -153,7 +168,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
         )}
 
         <Typography variant="body2" color="text.secondary" className="menu-section">
-          {t('navigation.settings.preferences')}
+          {SETTINGS_TEXTS.PREFERENCES.TITLE}
         </Typography>
 
         <MenuItem onClick={toggleDarkMode}>
@@ -164,7 +179,7 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
             }
           </ListItemIcon>
           <ListItemText>
-            {darkMode ? t('navigation.settings.lightMode') : t('navigation.settings.darkMode')}
+            {darkMode ? SETTINGS_TEXTS.PREFERENCES.LIGHT_MODE : SETTINGS_TEXTS.PREFERENCES.DARK_MODE}
           </ListItemText>
         </MenuItem>
 
@@ -184,49 +199,13 @@ const SettingsMenu = ({ currentView, onViewChange, isRecipePage, darkMode, toggl
           </ListItemIcon>
           <ListItemText>
             {unitSystem === 'metric' ? 
-              t('navigation.settings.imperialUnits') : 
-              t('navigation.settings.metricUnits')
+              SETTINGS_TEXTS.PREFERENCES.IMPERIAL_UNITS : 
+              SETTINGS_TEXTS.PREFERENCES.METRIC_UNITS
             }
           </ListItemText>
         </MenuItem>
 
         <Divider />
-
-        <Typography variant="body2" color="text.secondary" className="menu-section">
-          {t('navigation.settings.language')}
-        </Typography>
-        <MenuItem onClick={() => i18n.changeLanguage('fr')} selected={i18n.language === 'fr'}>
-          <ListItemIcon>
-            <Box component="span" sx={{ 
-              width: 20, 
-              height: 20, 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center',
-              fontSize: '0.75rem',
-              fontWeight: 600
-            }}>
-              FR
-            </Box>
-          </ListItemIcon>
-          <ListItemText>Français</ListItemText>
-        </MenuItem>
-        <MenuItem onClick={() => i18n.changeLanguage('en')} selected={i18n.language === 'en'}>
-          <ListItemIcon>
-            <Box component="span" sx={{ 
-              width: 20, 
-              height: 20, 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center',
-              fontSize: '0.75rem',
-              fontWeight: 600
-            }}>
-              EN
-            </Box>
-          </ListItemIcon>
-          <ListItemText>English</ListItemText>
-        </MenuItem>
       </Menu>
     </>
   );

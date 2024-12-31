@@ -1,12 +1,37 @@
+const FILTER_TEXTS = {
+  FILTER_BY: 'Filter by',
+  QUICK_RECIPES: 'Quick recipes',
+  DISH_TYPE: {
+    APPETIZER: 'Appetizer',
+    STARTER: 'Starter',
+    MAIN: 'Main dish',
+    DESSERT: 'Dessert'
+  },
+  DIET: {
+    NORMAL: 'Regular',
+    VEGETARIAN: 'Vegetarian',
+    VEGAN: 'Vegan'
+  },
+  SEASON: {
+    ALL: 'All seasons',
+    SPRING: 'Spring',
+    SUMMER: 'Summer',
+    FALL: 'Fall',
+    WINTER: 'Winter'
+  }
+};
+
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import { useRecipeList } from '../contexts/RecipeListContext';
 import FilterTag from './common/FilterTag';
 
-const FilterSection = ({ items, selectedValue, onSelect, translatePrefix, type }) => {
-  const { t } = useTranslation();
+const getTranslation = (prefix, key) => {
+  const section = prefix.split('.')[1].toUpperCase();
+  return FILTER_TEXTS[section]?.[key.toUpperCase()] || key;
+};
 
+const FilterSection = ({ items, selectedValue, onSelect, translatePrefix, type }) => {
   // Ne pas afficher la section uniquement si c'est la saison et qu'il n'y a pas d'items
   if (type === 'season' && items.length === 0) return null;
 
@@ -33,7 +58,7 @@ const FilterSection = ({ items, selectedValue, onSelect, translatePrefix, type }
       {displayItems.map(({ key, count }) => (
         <FilterTag
           key={key}
-          label={t(`${translatePrefix}.${key.toLowerCase()}`)}
+          label={getTranslation(translatePrefix, key)}
           count={count}
           checked={selectedValue === key}
           onChange={() => onSelect(selectedValue === key ? null : key)}
@@ -45,7 +70,6 @@ const FilterSection = ({ items, selectedValue, onSelect, translatePrefix, type }
 };
 
 const FilterTags = () => {
-  const { t } = useTranslation();
   const { 
     selectedDiet,
     setSelectedDiet,
@@ -61,7 +85,7 @@ const FilterTags = () => {
   return (
     <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 4, mt: 1 }}>
       <Typography variant="body1" color="text.secondary" sx={{ whiteSpace: 'nowrap', mt: 1 }}>
-        {t('filters.filterBy')}
+        {FILTER_TEXTS.FILTER_BY}
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -94,7 +118,7 @@ const FilterTags = () => {
             type="season"
           />
           <FilterTag
-            label={t('filters.quickRecipes')}
+            label={FILTER_TEXTS.QUICK_RECIPES}
             count={stats.quick?.count}
             checked={isQuickOnly}
             onChange={() => setIsQuickOnly(!isQuickOnly)}

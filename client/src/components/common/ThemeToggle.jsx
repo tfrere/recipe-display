@@ -1,3 +1,8 @@
+const THEME_TEXTS = {
+  LIGHT_MODE: "Light mode",
+  DARK_MODE: "Dark mode"
+};
+
 import React from 'react';
 import { IconButton, Tooltip } from '@mui/material';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
@@ -8,7 +13,7 @@ const ThemeToggle = () => {
   const { darkMode, toggleDarkMode } = useTheme();
 
   return (
-    <Tooltip title={darkMode ? "Mode clair" : "Mode sombre"}>
+    <Tooltip title={darkMode ? THEME_TEXTS.LIGHT_MODE : THEME_TEXTS.DARK_MODE}>
       <IconButton 
         onClick={toggleDarkMode}
         size="large"

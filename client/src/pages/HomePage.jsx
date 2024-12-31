@@ -1,3 +1,14 @@
+const HOME_TEXTS = {
+  NO_RECIPES: {
+    TITLE: 'No recipes found',
+    DESCRIPTION: 'Try adding a new recipe by clicking the + button in the top right corner'
+  },
+  COMMON: {
+    LOADING: 'Loading...',
+    ERROR: 'An error occurred while loading recipes'
+  }
+};
+
 import React from "react";
 import {
   Box,
@@ -12,7 +23,6 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import RecipeImage from "../components/common/RecipeImage";
-import { useTranslation } from 'react-i18next';
 import SearchBarWithResults from '../components/SearchBar/index';
 import FilterTags from '../components/FilterTags';
 import ResultsLabel from '../components/ResultsLabel';
@@ -22,7 +32,6 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import RecipeHeader from '../components/views/SimpleView/RecipeHeader';
 
 const NoRecipes = () => {
-  const { t } = useTranslation();
   return (
     <Paper 
       elevation={0}
@@ -39,24 +48,23 @@ const NoRecipes = () => {
     >
       <RestaurantIcon sx={{ fontSize: 64, color: 'text.secondary', opacity: 0.5 }} />
       <Typography variant="h6" color="text.secondary">
-        {t('home.no_recipes')}
+        {HOME_TEXTS.NO_RECIPES.TITLE}
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 500 }}>
-        {t('home.no_recipes_description')}
+        {HOME_TEXTS.NO_RECIPES.DESCRIPTION}
       </Typography>
     </Paper>
   );
 };
 
 const HomePage = () => {
-  const { t } = useTranslation();
   const { filteredRecipes, loading, error } = useRecipeList();
 
   if (loading) {
     return (
       <Container sx={{ display: 'flex', justifyContent: 'center', py: 8 }}>
         <CircularProgress />
-        <Typography sx={{ ml: 2 }}>{t('common.loading')}</Typography>
+        <Typography sx={{ ml: 2 }}>{HOME_TEXTS.COMMON.LOADING}</Typography>
       </Container>
     );
   }
@@ -64,7 +72,7 @@ const HomePage = () => {
   if (error) {
     return (
       <Container sx={{ py: 8 }}>
-        <Alert severity="error">{t('common.error')}</Alert>
+        <Alert severity="error">{HOME_TEXTS.COMMON.ERROR}</Alert>
       </Container>
     );
   }

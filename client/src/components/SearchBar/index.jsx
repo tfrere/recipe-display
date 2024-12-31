@@ -1,11 +1,9 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import SearchBar from './SearchBar';
 import { useRecipeList } from '../../contexts/RecipeListContext';
 
 const SearchBarWithResults = () => {
-  const { t } = useTranslation();
   const {
     searchQuery,
     setSearchQuery,

@@ -1,3 +1,37 @@
+const HEADER_TEXTS = {
+  ACTIONS: {
+    PRINT: 'Print recipe',
+    COPY: 'Copy recipe',
+    RESET: 'Reset recipe progress',
+    INCREASE_SERVINGS: 'Increase servings',
+    DECREASE_SERVINGS: 'Decrease servings'
+  },
+  SERVINGS: {
+    SINGLE: '1 serving',
+    MULTIPLE: (count) => `${count} servings`
+  },
+  DIET: {
+    NORMAL: 'Regular',
+    VEGETARIAN: 'Vegetarian',
+    VEGAN: 'Vegan'
+  },
+  SEASON: {
+    ALL: 'All seasons',
+    SPRING: 'Spring',
+    SUMMER: 'Summer',
+    FALL: 'Fall',
+    WINTER: 'Winter'
+  },
+  RECIPE_TYPE: {
+    MAIN: 'Main dish',
+    DESSERT: 'Dessert',
+    APPETIZER: 'Appetizer',
+    SIDE: 'Side dish',
+    BREAKFAST: 'Breakfast',
+    SNACK: 'Snack'
+  }
+};
+
 import React from 'react';
 import { Box, Typography, Container, IconButton, Tooltip } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -13,7 +47,6 @@ import RecipeChip, { CHIP_TYPES } from '../../common/RecipeChip';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { useTheme } from '../../../contexts/ThemeContext';
 import { useLayout, LAYOUT_MODES } from '../../../contexts/LayoutContext';
-import { useTranslation } from 'react-i18next';
 import { TimeDisplay } from './PreparationSteps';
 
 const formatTime = (minutes) => {
@@ -38,7 +71,6 @@ const RecipeHeader = ({ recipe }) => {
   const { currentServings, updateServings, getRemainingTime, resetRecipeState, isRecipePristine, calculateTotalTime } = useRecipe();
   const { darkMode, toggleDarkMode } = useTheme();
   const { layoutMode } = useLayout();
-  const { t } = useTranslation();
 
   const handleServingsChange = (delta) => {
     const newServings = currentServings + delta;
@@ -194,11 +226,11 @@ ${Object.entries(recipe.steps || {})
                   textTransform: 'capitalize'
                 }}
               >
-                {t(`diet.${recipe.metadata?.diet || 'normal'}`)}
+                {HEADER_TEXTS.DIET[recipe.metadata?.diet?.toUpperCase() || 'NORMAL']}
                 {" • "}
-                {t(`season.${recipe.metadata?.season || 'all'}`)}
+                {HEADER_TEXTS.SEASON[recipe.metadata?.season?.toUpperCase() || 'ALL']}
                 {" • "}
-                {t(`recipeType.${recipe.metadata?.type || 'main'}`)}
+                {HEADER_TEXTS.RECIPE_TYPE[recipe.metadata?.type?.toUpperCase() || 'MAIN']}
               </Typography>
             </Box>
 
@@ -216,9 +248,9 @@ ${Object.entries(recipe.steps || {})
                   fontWeight: currentServings !== recipe.servings ? 700 : 400 
                 }}
               >
-                {t('recipe.servings.' + (currentServings > 1 ? 'multiple' : 'single'), { count: currentServings })}
+                {currentServings === 1 ? HEADER_TEXTS.SERVINGS.SINGLE : HEADER_TEXTS.SERVINGS.MULTIPLE(currentServings)}
               </Typography>
-              <Tooltip title={t('recipe.actions.decreaseServings')}>
+              <Tooltip title={HEADER_TEXTS.ACTIONS.DECREASE_SERVINGS}>
                 <IconButton 
                   size="small"
                   onClick={() => handleServingsChange(-1)}
@@ -234,7 +266,7 @@ ${Object.entries(recipe.steps || {})
                   <RemoveIcon sx={{ fontSize: '1rem' }} />
                 </IconButton>
               </Tooltip>
-              <Tooltip title={t('recipe.actions.increaseServings')}>
+              <Tooltip title={HEADER_TEXTS.ACTIONS.INCREASE_SERVINGS}>
                 <IconButton 
                   size="small"
                   onClick={() => handleServingsChange(1)}
@@ -262,12 +294,12 @@ ${Object.entries(recipe.steps || {})
             }}>
               {/* Boutons d'action */}
               <Box sx={{ display: 'flex', gap: 1 }}>
-                <Tooltip title={t('recipe.actions.print')}>
+                <Tooltip title={HEADER_TEXTS.ACTIONS.PRINT}>
                   <IconButton 
                     onClick={() => window.print()} 
                     size="small"
                     color="default"
-                    aria-label={t('recipe.actions.print')}
+                    aria-label={HEADER_TEXTS.ACTIONS.PRINT}
                     sx={{
                       border: '1px solid',
                       borderColor: 'divider',
@@ -279,12 +311,12 @@ ${Object.entries(recipe.steps || {})
                     <PrintOutlinedIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title={t('recipe.actions.copy')}>
+                <Tooltip title={HEADER_TEXTS.ACTIONS.COPY}>
                   <IconButton
                     onClick={copyRecipeToClipboard}
                     size="small"
                     color="default"
-                    aria-label={t('recipe.actions.copy')}
+                    aria-label={HEADER_TEXTS.ACTIONS.COPY}
                     sx={{
                       border: '1px solid',
                       borderColor: 'divider',
@@ -296,14 +328,14 @@ ${Object.entries(recipe.steps || {})
                     <ContentCopyOutlinedIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title={t('recipe.actions.reset')}>
+                <Tooltip title={HEADER_TEXTS.ACTIONS.RESET}>
                   <span>
                     <IconButton
                       onClick={resetRecipeState}
                       size="small"
                       color="default"
                       disabled={isRecipePristine()}
-                      aria-label={t('recipe.actions.reset')}
+                      aria-label={HEADER_TEXTS.ACTIONS.RESET}
                       sx={{
                         border: '1px solid',
                         borderColor: 'divider',
@@ -327,12 +359,12 @@ ${Object.entries(recipe.steps || {})
           {layoutMode !== LAYOUT_MODES.TWO_COLUMN && (
             /* Boutons d'action */
             <Box sx={{ display: 'flex', gap: 1 }}>
-              <Tooltip title={t('recipe.actions.print')}>
+              <Tooltip title={HEADER_TEXTS.ACTIONS.PRINT}>
                 <IconButton 
                   onClick={() => window.print()} 
                   size="small"
                   color="default"
-                  aria-label={t('recipe.actions.print')}
+                  aria-label={HEADER_TEXTS.ACTIONS.PRINT}
                   sx={{
                     border: '1px solid',
                     borderColor: 'divider',
@@ -344,12 +376,12 @@ ${Object.entries(recipe.steps || {})
                   <PrintOutlinedIcon fontSize="small" />
                 </IconButton>
               </Tooltip>
-              <Tooltip title={t('recipe.actions.copy')}>
+              <Tooltip title={HEADER_TEXTS.ACTIONS.COPY}>
                 <IconButton
                   onClick={copyRecipeToClipboard}
                   size="small"
                   color="default"
-                  aria-label={t('recipe.actions.copy')}
+                  aria-label={HEADER_TEXTS.ACTIONS.COPY}
                   sx={{
                     border: '1px solid',
                     borderColor: 'divider',
@@ -361,14 +393,14 @@ ${Object.entries(recipe.steps || {})
                   <ContentCopyOutlinedIcon fontSize="small" />
                 </IconButton>
               </Tooltip>
-              <Tooltip title={t('recipe.actions.reset')}>
+              <Tooltip title={HEADER_TEXTS.ACTIONS.RESET}>
                 <span>
                   <IconButton
                     onClick={resetRecipeState}
                     size="small"
                     color="default"
                     disabled={isRecipePristine()}
-                    aria-label={t('recipe.actions.reset')}
+                    aria-label={HEADER_TEXTS.ACTIONS.RESET}
                     sx={{
                       border: '1px solid',
                       borderColor: 'divider',

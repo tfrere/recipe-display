@@ -4,11 +4,15 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { GRAM_UNITS } from '../../../utils/ingredientScaling';
-import { useTranslation } from 'react-i18next';
 import { CATEGORY_ORDER, CATEGORY_LABELS } from '@shared/constants/ingredients';
 
+const INGREDIENTS_TEXTS = {
+  TITLE: 'Ingredients',
+  COPY_INGREDIENTS: 'Copy ingredients list',
+  SHOPPING_LIST_MODE: 'Shopping list mode'
+};
+
 const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
-  const { t } = useTranslation();
   const { getAdjustedAmount, formatAmount, isIngredientUnused, completedSteps } = useRecipe();
 
   // 1. Ordre des sous-recettes tel que défini dans la recette
@@ -195,7 +199,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexGrow: 1 }}>
           <Typography variant="h5" component="span">
-            {t('recipe.sections.ingredients')}
+            {INGREDIENTS_TEXTS.TITLE}
           </Typography>
           <Typography 
             variant="body2" 
@@ -210,12 +214,12 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           </Typography>
         </Box>
         {sortByCategory && (
-          <Tooltip title={t('recipe.actions.copyIngredients')}>
+          <Tooltip title={INGREDIENTS_TEXTS.COPY_INGREDIENTS}>
             <IconButton
               onClick={handleCopyIngredients}
               size="small"
               color="default"
-              aria-label={t('recipe.actions.copyIngredients')}
+              aria-label={INGREDIENTS_TEXTS.COPY_INGREDIENTS}
               sx={{
                 border: '1px solid',
                 borderColor: 'divider',
@@ -263,7 +267,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
               variant="body2" 
               color="text.secondary"
             >
-              {t('recipe.modes.shoppingList')}
+              {INGREDIENTS_TEXTS.SHOPPING_LIST_MODE}
             </Typography>
           }
           labelPlacement="start"

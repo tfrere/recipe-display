@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "title": "Roasted Carrot and Mung Bean Salad",
+    "description": "A vibrant and flavorful salad featuring roasted carrots, mung beans, and a medley of spices.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "55min",
+    "image": "roasted-carrot-and-mung-bean-salad.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/carrot-and-mung-bean-salad/images/carrot-and-mung-bean-salad.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/carrot-and-mung-bean-salad/index.html",
+    "diet": "vegetarian",
+    "season": "autumn",
+    "recipeType": "main",
+    "quick": false,
+    "notes": "Mung beans are hearty and healthy but can be bland; this recipe ensures they are flavorful and punchy. To make this recipe dairy-free, omit the feta."
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "dried green mung beans",
+      "unit": "g",
+      "amount": 140,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 60,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "cumin seeds",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "caraway seeds",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "fennel seeds",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "white wine vinegar",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing8",
+      "name": "chilli flakes",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "spice"
+    },
+    {
+      "id": "ing9",
+      "name": "carrots",
+      "unit": "unit",
+      "amount": 3,
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "caster sugar",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing11",
+      "name": "coriander",
+      "unit": "g",
+      "amount": 20,
+      "category": "produce"
+    },
+    {
+      "id": "ing12",
+      "name": "lemon",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "feta",
+      "unit": "g",
+      "amount": 140,
+      "category": "dairy"
+    },
+    {
+      "id": "ing14",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Mung Bean and Seed Mix",
+      "ingredients": {
+        "ing1": {
+          "amount": 140,
+          "state": "cooked"
+        },
+        "ing14": {
+          "amount": 0.5,
+          "state": "tsp"
+        },
+        "ing2": {
+          "amount": 2,
+          "state": "tbsp"
+        },
+        "ing3": {
+          "amount": 1,
+          "state": "tsp"
+        },
+        "ing4": {
+          "amount": 1,
+          "state": "tsp"
+        },
+        "ing5": {
+          "amount": 1,
+          "state": "tsp"
+        },
+        "ing6": {
+          "amount": 2,
+          "state": "crushed"
+        },
+        "ing7": {
+          "amount": 2,
+          "state": "tbsp"
+        },
+        "ing8": {
+          "amount": 0.5,
+          "state": "tsp"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Boil the mung beans until cooked but still with a bite.",
+          "time": "25min",
+          "tools": [
+            "Medium saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Boiled mung beans drained and shaken well."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Heat olive oil and cook the seeds until they start to pop.",
+          "time": "3min",
+          "tools": [
+            "Small frying pan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Seeds cooked in olive oil until popping."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Combine the cooked beans with garlic, vinegar, chilli flakes, and salt.",
+          "time": "3min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Mung bean mixture with oil, seeds, garlic, vinegar, chilli flakes, and salt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Roasted Carrots",
+      "ingredients": {
+        "ing10": {
+          "amount": 0.5,
+          "state": "tsp"
+        },
+        "ing14": {
+          "amount": 0.5,
+          "state": "tsp"
+        },
+        "ing2": {
+          "amount": 60,
+          "state": "ml"
+        },
+        "ing9": {
+          "amount": 3,
+          "state": "peeled and cut into batons"
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Roast the carrots until caramelised.",
+          "time": "30min",
+          "tools": [
+            "Medium high-sided baking tray"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Carrots roasted with olive oil, water, sugar, and salt until caramelised."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Salad Assembly",
+      "ingredients": {
+        "ing11": {
+          "amount": 20,
+          "state": "chopped"
+        },
+        "ing12": {
+          "amount": 1,
+          "state": "zested"
+        },
+        "ing13": {
+          "amount": 140,
+          "state": "broken into chunks"
+        },
+        "ing2": {
+          "amount": 60,
+          "state": "for drizzling"
+        }
+      },
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Combine the mung bean mixture with roasted carrots and coriander.",
+          "time": "5min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "combined",
+            "description": "Mung bean and carrot mixture combined with coriander."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Finish the salad with lemon zest, feta, and a drizzle of olive oil.",
+          "time": "2min",
+          "tools": null,
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "Salad topped with lemon zest, feta chunks, and a drizzle of olive oil."
+          }
+        }
+      ]
+    }
+  ]
+}

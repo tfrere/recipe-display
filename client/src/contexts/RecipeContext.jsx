@@ -17,7 +17,28 @@ import { normalizeAmount } from '../utils/unitNormalization';
 import { usePreferences, UNIT_SYSTEMS } from './PreferencesContext';
 import { convertToImperial } from '../utils/unitConversion';
 import { mapUnitToTranslationKey } from '../utils/unitMapping';
-import { useTranslation } from 'react-i18next';
+
+const RECIPE_TEXTS = {
+  UNITS: {
+    GRAMS: 'g',
+    KILOGRAMS: 'kg',
+    MILLILITERS: 'ml',
+    LITERS: 'l',
+    TEASPOON: 'tsp',
+    TABLESPOON: 'tbsp',
+    CUP: 'cup',
+    PINCH: 'pinch',
+    PIECE: 'pc',
+    BUNCH: 'bunch',
+    CLOVE: 'clove',
+    SLICE: 'slice',
+    POUND: 'lb',
+    OUNCE: 'oz',
+    FLUID_OUNCE: 'fl oz',
+    QUART: 'qt',
+    PINT: 'pt',
+  }
+};
 
 const RecipeContext = createContext();
 
@@ -412,7 +433,6 @@ const formatMinutesToTime = (minutes) => {
 };
 
 export const RecipeProvider = ({ children }) => {
-  const { t } = useTranslation();
   const { unitSystem } = usePreferences();
   
   // État local pour stocker le slug de la recette actuelle
@@ -643,6 +663,7 @@ export const RecipeProvider = ({ children }) => {
     if (!amount && amount !== 0) return '-';
     if (unit && amount === '') return '-';
     if (!unit) return '-';
+    
     // Conversion si nécessaire
     if (unitSystem === UNIT_SYSTEMS.IMPERIAL) {
       const { value: convertedAmount, unit: convertedUnit } = convertToImperial(amount, unit);
@@ -662,12 +683,11 @@ export const RecipeProvider = ({ children }) => {
     // Suppression des zéros inutiles après la virgule
     formattedAmount = Number(formattedAmount).toString();
 
-    // Convertir l'unité en clé de traduction et la traduire
-    const translationKey = mapUnitToTranslationKey(unit);
-    const translatedUnit = t(`recipe.units.${translationKey}`, { defaultValue: unit });
+    // Get the unit from our constants
+    const translatedUnit = RECIPE_TEXTS.UNITS[mapUnitToTranslationKey(unit).toUpperCase()] || unit;
 
     return `${formattedAmount}${translatedUnit ? ' ' + translatedUnit : ''}`;
-  }, [unitSystem, t]);
+  }, [unitSystem]);
 
   const getTotalProgressPercentage = useCallback(() => {
     if (!state.recipe) return 0;

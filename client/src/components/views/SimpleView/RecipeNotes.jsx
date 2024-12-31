@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Typography, Paper } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import NotesIcon from '@mui/icons-material/Notes';
 
-const RecipeNotes = ({ notes }) => {
-  const { t } = useTranslation();
+const NOTES_TEXTS = {
+  TITLE: 'Notes'
+};
 
+const RecipeNotes = ({ notes }) => {
   if (!notes) return null;
 
   return (
@@ -22,7 +23,7 @@ const RecipeNotes = ({ notes }) => {
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
         <NotesIcon color="action" />
         <Typography variant="h6" component="h2">
-          {t('recipe.notes')}
+          {NOTES_TEXTS.TITLE}
         </Typography>
       </Box>
       <Typography 

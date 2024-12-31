@@ -11,7 +11,12 @@ import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import SettingsMenu from './SettingsMenu';
 import AddRecipeModal from './AddRecipeModal';
-import { useTranslation } from 'react-i18next';
+
+const NAVIGATION_TEXTS = {
+  BACK: 'Back',
+  ADD_RECIPE: 'Add recipe',
+  COOKBOOK: 'Cookbook'
+};
 
 const Navigation = ({ currentView, onViewChange }) => {
   const navigate = useNavigate();
@@ -19,7 +24,6 @@ const Navigation = ({ currentView, onViewChange }) => {
   const { darkMode, toggleDarkMode } = useTheme();
   const { layoutMode } = useLayout();
   const isRecipePage = location.pathname.startsWith('/recipe/');
-  const { t } = useTranslation();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
   const { 
     setSelectedDiet,
@@ -77,7 +81,7 @@ const Navigation = ({ currentView, onViewChange }) => {
                   }
                 }}
               >
-                {t('common.back')}
+                {NAVIGATION_TEXTS.BACK}
               </Button>
             ) : (
               <Box 
@@ -93,7 +97,7 @@ const Navigation = ({ currentView, onViewChange }) => {
               >
                 <AutoStoriesOutlinedIcon sx={{ mr: 1, color: 'text.secondary' }} />
                 <Typography variant="h6" component="div" color="text.secondary" sx={{ fontWeight: 500 }}>
-                  Cookbook
+                  {NAVIGATION_TEXTS.COOKBOOK}
                 </Typography>
               </Box>
             )}
@@ -116,7 +120,7 @@ const Navigation = ({ currentView, onViewChange }) => {
                 }
               }}
             >
-              {t('navigation.addRecipe')}
+              {NAVIGATION_TEXTS.ADD_RECIPE}
             </Button>
 
             <SettingsMenu 

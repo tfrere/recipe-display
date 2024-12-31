@@ -1,11 +1,13 @@
+const TOOLS_TEXTS = {
+  TITLE: 'Tools'
+};
+
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useRecipe } from '../../../contexts/RecipeContext';
-import { useTranslation } from 'react-i18next';
 
 const ToolsList = ({ recipe }) => {
   const { isToolUnused, completedSteps, tools } = useRecipe();
-  const { t } = useTranslation();
   
   if (tools.length === 0) return null;
 
@@ -21,7 +23,7 @@ const ToolsList = ({ recipe }) => {
         gap: 1
       }}>
         <Typography variant="h5" component="span">
-          {t('recipe.sections.tools')}
+          {TOOLS_TEXTS.TITLE}
         </Typography>
         <Typography 
           variant="body2" 
