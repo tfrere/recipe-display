@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "title": "Mediterranean Cheese and Egg Pastries",
+    "description": "A delightful pastry dish featuring a trio of cheeses and topped with a baked egg, perfect for a brunch or light meal.",
+    "servings": 6,
+    "difficulty": "medium",
+    "totalTime": "2h20min",
+    "image": "mediterranean-cheese-and-egg-pastries.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/acharuli-khachapuri/images/acharuli-khachapuri.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/acharuli-khachapuri/index.html",
+    "diet": "vegetarian",
+    "season": "spring",
+    "recipeType": "appetizer",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "strong white flour",
+      "unit": "g",
+      "amount": 250,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "fast-action dried yeast",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "free-range egg",
+      "unit": "unit",
+      "amount": 1,
+      "category": "dairy"
+    },
+    {
+      "id": "ing4",
+      "name": "Greek yoghurt",
+      "unit": "g",
+      "amount": 110,
+      "category": "dairy"
+    },
+    {
+      "id": "ing5",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing6",
+      "name": "halloumi cheese",
+      "unit": "g",
+      "amount": 40,
+      "category": "dairy"
+    },
+    {
+      "id": "ing7",
+      "name": "feta",
+      "unit": "g",
+      "amount": 20,
+      "category": "dairy"
+    },
+    {
+      "id": "ing8",
+      "name": "ricotta",
+      "unit": "g",
+      "amount": 60,
+      "category": "dairy"
+    },
+    {
+      "id": "ing9",
+      "name": "crushed black pepper",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.125,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing11",
+      "name": "chopped thyme",
+      "unit": "tbsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing12",
+      "name": "za’atar",
+      "unit": "tbsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing13",
+      "name": "lemon zest",
+      "unit": "unit",
+      "amount": 0.5,
+      "category": "produce"
+    },
+    {
+      "id": "ing14",
+      "name": "free-range eggs",
+      "unit": "unit",
+      "amount": 6,
+      "category": "dairy"
+    },
+    {
+      "id": "ing15",
+      "name": "olive oil",
+      "unit": "to serve",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing16",
+      "name": "lukewarm water",
+      "unit": "as needed",
+      "amount": 1,
+      "category": "beverages"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Dough Preparation",
+      "ingredients": {
+        "ing1": {
+          "amount": 250,
+          "state": ""
+        },
+        "ing16": {
+          "amount": 1,
+          "state": "lukewarm"
+        },
+        "ing2": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 0.5,
+          "state": "beaten"
+        },
+        "ing4": {
+          "amount": 110,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 0.5,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Sift the flour and add yeast, then mix lightly. Create a well and pour in half the beaten egg, Greek yoghurt, and lukewarm water. Sprinkle salt around the well and start stirring.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "A rough dough has formed in the bowl."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Knead the dough for 10 minutes on a work surface until soft and elastic. Let it rise until doubled in size.",
+          "time": "1h10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "risen dough",
+            "description": "The dough is now soft, elastic, and doubled in size."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Knead the dough again to knock out the air, divide into balls, and let rise for 30 minutes.",
+          "time": "40min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "divided and risen dough",
+            "description": "Dough balls have risen on a lightly floured surface."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Cheese Filling and Baking",
+      "ingredients": {
+        "ing10": {
+          "amount": 0.125,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 0.5,
+          "state": "chopped"
+        },
+        "ing12": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing13": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing14": {
+          "amount": 6,
+          "state": ""
+        },
+        "ing15": {
+          "amount": 1,
+          "state": "to serve"
+        },
+        "ing3": {
+          "amount": 0.5,
+          "state": "beaten"
+        },
+        "ing6": {
+          "amount": 40,
+          "state": "cut into 0.5cm cubes"
+        },
+        "ing7": {
+          "amount": 20,
+          "state": "crumbled"
+        },
+        "ing8": {
+          "amount": 60,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 0.25,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Prepare the filling by mixing the cheeses, pepper, salt, thyme, za’atar, and lemon zest. Preheat the oven.",
+          "time": "15min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            }
+          ],
+          "output": {
+            "state": "prepared filling",
+            "description": "Cheese filling is well mixed and seasoned, ready to be used."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Roll dough into flat circles and spoon the filling onto each. Shape into boat-shaped pastries and brush with egg.",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            }
+          ],
+          "output": {
+            "state": "filled and brushed pastries",
+            "description": "Pastries are shaped and have filling in the center, brushed with egg and sprinkled with thyme."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Bake the pastries for 15 minutes until golden.",
+          "time": "15min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "baked pastries",
+            "description": "Pastries are golden and partially baked, ready for the eggs to be added."
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Add an egg to each pastry and bake until the whites are set and yolks are runny.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "final baked pastries",
+            "description": "Pastries are fully baked with eggs set, yolks runny, and cooled slightly."
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Drizzle with olive oil, sprinkle with salt, and serve.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            }
+          ],
+          "output": {
+            "state": "finished pastries",
+            "description": "Pastries are drizzled with olive oil and seasoned with salt, ready to be served."
+          }
+        }
+      ]
+    }
+  ]
+}

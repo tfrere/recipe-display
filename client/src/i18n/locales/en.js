@@ -122,7 +122,13 @@ export default {
       grams: "grams",
       kilogram: "kilogram",
       kilograms: "kilograms"
-    }
+    },
+    difficulty: {
+      easy: 'Easy',
+      medium: 'Medium',
+      hard: 'Hard'
+    },
+    notes: 'Author\'s Notes'
   },
   search: {
     placeholder: 'Search for a recipe...',

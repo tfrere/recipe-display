@@ -59,13 +59,26 @@ const FilterTags = () => {
   } = useRecipeList();
 
   return (
-    <Box sx={{ display: 'flex', alignItems: 'center', gap: 4, mt: 1 }}>
-      <Typography variant="body1" color="text.secondary" sx={{ whiteSpace: 'nowrap' }}>
+    <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 4, mt: 1 }}>
+      <Typography variant="body1" color="text.secondary" sx={{ whiteSpace: 'nowrap', mt: 1 }}>
         {t('filters.filterBy')}
       </Typography>
 
-      <Box sx={{ display: 'flex', gap: 4, alignItems: 'center' }}>
-        <Box sx={{ mt: 0, display: 'flex', gap: 4, flexWrap: 'wrap', alignItems: 'flex-start' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        <FilterSection
+          items={stats.dishType}
+          selectedValue={selectedDishType}
+          onSelect={setSelectedDishType}
+          translatePrefix="recipe.dishType"
+          type="dishType"
+        />
+        <Box sx={{ 
+          display: 'flex', 
+          gap: 2, 
+          columnGap: 4,
+          flexWrap: 'wrap', 
+          alignItems: 'flex-start' 
+        }}>
           <FilterSection
             items={stats.diet}
             selectedValue={selectedDiet}
@@ -79,13 +92,6 @@ const FilterTags = () => {
             onSelect={setSelectedSeason}
             translatePrefix="recipe.season"
             type="season"
-          />
-          <FilterSection
-            items={stats.dishType}
-            selectedValue={selectedDishType}
-            onSelect={setSelectedDishType}
-            translatePrefix="recipe.dishType"
-            type="dishType"
           />
           <FilterTag
             label={t('filters.quickRecipes')}

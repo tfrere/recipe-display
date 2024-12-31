@@ -87,7 +87,7 @@ const HomePage = () => {
       ) : (
         <Grid container spacing={3}>
           {filteredRecipes.map((recipe) => (
-            <Grid item xs={12} sm={6} md={4} key={recipe.slug}>
+            <Grid item xs={12} sm={6} md={3} key={recipe.slug}>
               <Card
                 component={Link}
                 to={`/recipe/${recipe.slug}`}
@@ -105,7 +105,7 @@ const HomePage = () => {
                   overflow: 'hidden',
                 }}
               >
-                <Box sx={{ position: 'relative', paddingTop: '66.67%', width: '100%' }}>
+                <Box sx={{ position: 'relative', paddingTop: '80%', width: '100%' }}>
                   <RecipeImage
                     slug={recipe.slug}
                     title={recipe.title}
@@ -163,14 +163,9 @@ const HomePage = () => {
                   </Box>
                 </Box>
                 <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: 1 }}>
-                  <Typography variant="h6" component="h2" sx={{ mb: 1 }}>
+                  <Typography variant="h6" component="h2">
                     {recipe.title}
                   </Typography>
-                  {recipe.metadata?.difficulty && (
-                    <Typography variant="body2" color="text.secondary" sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                      {t(`recipe.difficulty.${recipe.metadata.difficulty}`)}
-                    </Typography>
-                  )}
                 </CardContent>
               </Card>
             </Grid>

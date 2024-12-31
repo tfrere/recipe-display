@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "title": "Roasted Celeriac Steaks with Caramelized Butter Sauce",
+    "description": "Savory celeriac steaks grilled to perfection and served with a rich, caramelized butter sauce infused with herbs and a hint of spice.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "30min",
+    "image": "roasted-celeriac-steaks-with-caramelized-butter-sauce.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/3-celeriac-steaks-with-cafe-de-paris-sauce/images/3-celeriac-steaks-with-cafe-de-paris-sauce.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/3-celeriac-steaks-with-cafe-de-paris-sauce/index.html",
+    "diet": "vegetarian",
+    "season": "autumn",
+    "recipeType": "main",
+    "quick": true
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "roasted celeriac",
+      "unit": "unit",
+      "amount": 2,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing2",
+      "name": "flaked sea salt",
+      "unit": "",
+      "amount": 0,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "black pepper",
+      "unit": "",
+      "amount": 0,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 110,
+      "category": "dairy"
+    },
+    {
+      "id": "ing5",
+      "name": "banana shallot",
+      "unit": "g",
+      "amount": 25,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing6",
+      "name": "garlic clove",
+      "unit": "unit",
+      "amount": 1,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing7",
+      "name": "anchovy fillets",
+      "unit": "unit",
+      "amount": 3,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing8",
+      "name": "medium curry powder",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "cayenne pepper",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "mustard powder",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing11",
+      "name": "baby capers",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing12",
+      "name": "chives",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing13",
+      "name": "tarragon leaves",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing14",
+      "name": "parsley",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing15",
+      "name": "thyme leaves",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing16",
+      "name": "single or whipping cream",
+      "unit": "ml",
+      "amount": 110,
+      "category": "dairy"
+    },
+    {
+      "id": "ing17",
+      "name": "lemon juice",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "beverages"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Caramelized Butter Sauce",
+      "ingredients": {
+        "ing10": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 2,
+          "state": "finely chopped"
+        },
+        "ing13": {
+          "amount": 2,
+          "state": "finely chopped"
+        },
+        "ing14": {
+          "amount": 1,
+          "state": "finely chopped"
+        },
+        "ing15": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing16": {
+          "amount": 110,
+          "state": ""
+        },
+        "ing17": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 110,
+          "state": "cut into 2cm cubes"
+        },
+        "ing5": {
+          "amount": 25,
+          "state": "finely chopped"
+        },
+        "ing6": {
+          "amount": 1,
+          "state": "crushed"
+        },
+        "ing7": {
+          "amount": 3,
+          "state": "finely chopped"
+        },
+        "ing8": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 0.25,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Cook the butter mixture.",
+          "time": "6min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Cook the butter with shallot, garlic, anchovies, curry powder, cayenne pepper, mustard powder, and salt until the shallots have softened and the butter has turned golden and caramelized."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Add herbs and capers.",
+          "time": "1min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Stir in the capers, chives, tarragon, parsley, and thyme into the cooked butter mixture."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Finish the sauce.",
+          "time": "3min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "finished sauce",
+            "description": "Warm the sauce on medium heat, add cream and lemon juice, and swirl until warm but not mixed too much as the sauce should be split, not emulsified."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Grilled Celeriac Steaks",
+      "ingredients": {
+        "ing1": {
+          "amount": 2,
+          "state": "cut widthways into 2½cm-thick steaks"
+        },
+        "ing2": {
+          "amount": 0,
+          "state": "to taste"
+        },
+        "ing3": {
+          "amount": 0,
+          "state": "generous grind"
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Grill the celeriac steaks.",
+          "time": "6-8min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "grilled",
+            "description": "Grill the celeriac steaks on the top shelf of the oven until they are golden-brown on top."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Serve the dish.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "served",
+            "description": "Pour the sauce onto a platter and arrange the grilled celeriac steaks on top. Sprinkle with flaked salt and black pepper."
+          }
+        }
+      ]
+    }
+  ]
+}

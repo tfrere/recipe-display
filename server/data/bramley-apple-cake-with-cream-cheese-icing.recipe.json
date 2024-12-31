@@ -1,0 +1,453 @@
+{
+  "metadata": {
+    "title": "Bramley Apple Cake with Cream Cheese Icing",
+    "description": "A moist and flavorful apple cake with a hint of cinnamon, complemented by a rich cream cheese icing.",
+    "servings": 8,
+    "difficulty": "medium",
+    "totalTime": "2h",
+    "image": "bramley-apple-cake-with-cream-cheese-icing.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/apple-and-olive-oil-cake-with-maple-icing/images/apple-and-olive-oil-cake-with-maple-icing.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/apple-and-olive-oil-cake-with-maple-icing/index.html",
+    "diet": "vegetarian",
+    "season": "autumn",
+    "recipeType": "dessert",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "sultanas",
+      "unit": "g",
+      "amount": 80,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing2",
+      "name": "water",
+      "unit": "ml",
+      "amount": 60,
+      "category": "beverages"
+    },
+    {
+      "id": "ing3",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 280,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing5",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing6",
+      "name": "baking powder",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing7",
+      "name": "bicarbonate of soda",
+      "unit": "tsp",
+      "amount": 1.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing8",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 120,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 160,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing10",
+      "name": "vanilla pod",
+      "unit": "unit",
+      "amount": 0.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing11",
+      "name": "eggs",
+      "unit": "unit",
+      "amount": 2,
+      "category": "dairy"
+    },
+    {
+      "id": "ing12",
+      "name": "Bramley apples",
+      "unit": "unit",
+      "amount": 3,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "lemon",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing14",
+      "name": "egg whites",
+      "unit": "unit",
+      "amount": 2,
+      "category": "dairy"
+    },
+    {
+      "id": "ing15",
+      "name": "icing sugar",
+      "unit": "for dusting",
+      "amount": 0,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing16",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 100,
+      "category": "dairy"
+    },
+    {
+      "id": "ing17",
+      "name": "light muscovado sugar",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing18",
+      "name": "maple syrup",
+      "unit": "ml",
+      "amount": 85,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing19",
+      "name": "cream cheese",
+      "unit": "g",
+      "amount": 220,
+      "category": "dairy"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Cake Batter",
+      "ingredients": {
+        "ing1": {
+          "amount": 80,
+          "state": ""
+        },
+        "ing10": {
+          "amount": 0.5,
+          "state": "seeds scraped"
+        },
+        "ing11": {
+          "amount": 2,
+          "state": "lightly beaten, room temperature"
+        },
+        "ing12": {
+          "amount": 3,
+          "state": "peeled, cored, and cut into 1cm dice"
+        },
+        "ing13": {
+          "amount": 1,
+          "state": "finely grated zest"
+        },
+        "ing14": {
+          "amount": 2,
+          "state": "soft meringue consistency"
+        },
+        "ing2": {
+          "amount": 60,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 280,
+          "state": "sifted"
+        },
+        "ing4": {
+          "amount": 0.5,
+          "state": "sifted"
+        },
+        "ing5": {
+          "amount": 0.25,
+          "state": "sifted"
+        },
+        "ing6": {
+          "amount": 0.5,
+          "state": "sifted"
+        },
+        "ing7": {
+          "amount": 1.25,
+          "state": "sifted"
+        },
+        "ing8": {
+          "amount": 120,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 160,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Simmer the sultanas and water until the water is absorbed.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            }
+          ],
+          "output": {
+            "state": "simmered",
+            "description": "The sultanas are simmered with water until all the water has been absorbed and allowed to cool."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Sift the dry ingredients and set aside.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            }
+          ],
+          "output": {
+            "state": "sifted",
+            "description": "The flour, cinnamon, salt, baking powder, and bicarbonate of soda are sifted together and set aside."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Beat oil, sugar, and vanilla seeds; add eggs, apples, sultanas, zest, and fold in dry ingredients.",
+          "time": "15min",
+          "tools": [
+            "freestanding electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "The olive oil, caster sugar, and vanilla seeds are beaten together. Gradually, eggs are added until the mixture is smooth and thick. Diced apples, sultanas, and lemon zest are mixed in, then the sifted dry ingredients are folded into the batter."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Whisk egg whites and fold into the batter.",
+          "time": "10min",
+          "tools": [
+            "freestanding electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "folded",
+            "description": "Egg whites are whisked until they reach a soft meringue consistency and then folded into the batter in two additions to keep as much air as possible."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Bake the cake batter in the prepared tin.",
+          "time": "1h30min",
+          "tools": [
+            "20cm springform cake tin"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "The batter is poured into the lined cake tin, leveled, and baked until a skewer inserted in the center comes out clean. The cake is left to cool in the tin."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Cream Cheese Icing",
+      "ingredients": {
+        "ing16": {
+          "amount": 100,
+          "state": "room temperature"
+        },
+        "ing17": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing18": {
+          "amount": 85,
+          "state": ""
+        },
+        "ing19": {
+          "amount": 220,
+          "state": "room temperature"
+        }
+      },
+      "steps": [
+        {
+          "id": "step6",
+          "action": "Beat butter, sugar, and syrup; add cream cheese.",
+          "time": "15min",
+          "tools": [
+            "freestanding electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing18"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing19"
+            }
+          ],
+          "output": {
+            "state": "beaten",
+            "description": "The butter, muscovado sugar, and maple syrup are beaten until light and airy. Cream cheese is added and beaten until the mixture is smooth."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Assembly",
+      "ingredients": {
+        "ing15": {
+          "amount": 0,
+          "state": "for dusting"
+        }
+      },
+      "steps": [
+        {
+          "id": "step7",
+          "action": "Cut the cake in half and level the top if necessary.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "cut",
+            "description": "The completely cooled cake is removed from the tin and cut horizontally in half to create two similar discs. If necessary, the top half is leveled."
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Spread icing on the bottom cake layer, add the top layer, and finish with icing on top.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            },
+            {
+              "type": "state",
+              "ref": "step7"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "A 1cm-thick layer of icing is spread over the bottom half of the cake. The top half is placed on it, then the rest of the icing is spooned on top, creating a pattern. Optionally, the cake is dusted with icing sugar."
+          }
+        }
+      ]
+    }
+  ]
+}

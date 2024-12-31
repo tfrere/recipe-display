@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "title": "Almond and Orange Florentines",
+    "description": "Light and lace-like almond and orange florentines, perfect for a quick treat using leftover egg whites.",
+    "servings": 4,
+    "difficulty": "easy",
+    "totalTime": "20min",
+    "image": "almond-and-orange-florentines.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/almond-and-orange-florentines/images/almond-and-orange-florentines.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/almond-and-orange-florentines/index.html",
+    "diet": "vegetarian",
+    "season": "winter",
+    "recipeType": "dessert",
+    "quick": true
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "vegetable oil",
+      "unit": "for brushing",
+      "amount": 1,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "egg whites",
+      "unit": "unit",
+      "amount": 2,
+      "category": "dairy"
+    },
+    {
+      "id": "ing3",
+      "name": "icing sugar",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing4",
+      "name": "flaked almonds",
+      "unit": "g",
+      "amount": 260,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "orange zest",
+      "unit": "from 1 orange",
+      "amount": 1,
+      "category": "produce"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Almond and Orange Florentines",
+      "ingredients": {
+        "ing1": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 260,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 1,
+          "state": "finely grated"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven and prepare the baking tray.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "tray prepared",
+            "description": "Oven preheated to 170°C/150°C fan/gas mark 3 and baking tray lined with parchment and brushed with vegetable oil."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Mix the ingredients for the biscuits.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Egg whites, icing sugar, flaked almonds, and orange zest gently mixed together."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Form and flatten the biscuits on the tray.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "biscuits formed",
+            "description": "Little mounds of the mixture formed on the tray and flattened with a wet fork to about 8cm in diameter."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Bake the biscuits.",
+          "time": "12min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "Biscuits baked until golden brown and cooked through."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Cool and store the biscuits.",
+          "time": "3min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "cooled and stored",
+            "description": "Biscuits allowed to cool, gently removed from the baking sheet, and stored in a sealed jar."
+          }
+        }
+      ]
+    }
+  ]
+}

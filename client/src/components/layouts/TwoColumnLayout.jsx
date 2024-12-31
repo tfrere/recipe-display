@@ -6,7 +6,7 @@ const TwoColumnLayout = ({ header, content }) => {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: '500px 1fr', // Modification de la largeur de la colonne de gauche
+        gridTemplateColumns: '1fr 1fr', // Deux colonnes égales
         height: 'calc(100vh - 64px)', // Hauteur totale moins la navbar
         overflow: 'hidden'
       }}

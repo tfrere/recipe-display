@@ -21,6 +21,7 @@ type RecipeMetadata struct {
 	Season      string `json:"season"`
 	RecipeType  string `json:"recipeType"`
 	Quick       bool   `json:"quick"`
+	Notes       string `json:"notes"`
 }
 
 // Ingredient représente un ingrédient dans la recette
@@ -28,16 +29,23 @@ type Ingredient struct {
 	ID       string      `json:"id"`
 	Name     string      `json:"name"`
 	Unit     string      `json:"unit"`
-	Amount   interface{} `json:"amount"` // Accepte temporairement string et float64
+	Amount   interface{} `json:"amount"`
 	Category string      `json:"category"`
 	State    string      `json:"state,omitempty"`
 }
 
 // SubRecipe représente une sous-recette avec ses étapes
 type SubRecipe struct {
-	ID    string `json:"id"`
-	Title string `json:"title"`
-	Steps []Step `json:"steps"`
+	ID          string                    `json:"id"`
+	Title       string                    `json:"title"`
+	Ingredients map[string]SubIngredient  `json:"ingredients"`
+	Steps       []Step                    `json:"steps"`
+}
+
+// SubIngredient représente un ingrédient dans une sous-recette
+type SubIngredient struct {
+	Amount interface{} `json:"amount"`
+	State  string     `json:"state"`
 }
 
 // Step représente une étape dans une sous-recette

@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "title": "Grilled Vegetables with Mustard-Parmesan Dressing",
+    "description": "A colorful array of grilled vegetables dressed with a zesty mustard-parmesan dressing, perfect for a light and healthy meal.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "45min",
+    "image": "grilled-vegetables-with-mustard-parmesan-dressing.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/any-grilled-veg-with-mustard-and-parmesan-dressing/images/any-grilled-veg-with-mustard-and-parmesan-dressing.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/any-grilled-veg-with-mustard-and-parmesan-dressing/index.html",
+    "diet": "vegetarian",
+    "season": "spring",
+    "recipeType": "main",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "baking potato",
+      "unit": "g",
+      "amount": 250,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "asparagus",
+      "unit": "g",
+      "amount": 400,
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "red peppers",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "red onions",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 135,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing6",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "amount": 8,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "baby gem lettuces",
+      "unit": "unit",
+      "amount": 2,
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "parsley leaves",
+      "unit": "g",
+      "amount": 5,
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "fennel seeds",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "Dijon mustard",
+      "unit": "tbsp",
+      "amount": 0.75,
+      "category": "condiments"
+    },
+    {
+      "id": "ing11",
+      "name": "parmesan",
+      "unit": "g",
+      "amount": 25,
+      "category": "dairy"
+    },
+    {
+      "id": "ing12",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing14",
+      "name": "black pepper",
+      "unit": "to taste",
+      "amount": 0,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Grilled Vegetables",
+      "ingredients": {
+        "ing1": {
+          "amount": 1,
+          "state": "sliced into 1cm slices"
+        },
+        "ing14": {
+          "amount": 0,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 400,
+          "state": "woody ends trimmed"
+        },
+        "ing3": {
+          "amount": 2,
+          "state": "quartered"
+        },
+        "ing4": {
+          "amount": 2,
+          "state": "cut into 4 x 1½cm-thick rounds"
+        },
+        "ing5": {
+          "amount": 60,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 6,
+          "state": "peeled"
+        },
+        "ing9": {
+          "amount": 0.5,
+          "state": "toasted and roughly crushed"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Toss the sliced potato, asparagus, quartered peppers, and onion rounds with olive oil and seasoning.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "tossed",
+            "description": "All vegetables are tossed with olive oil, salt, and pepper."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Grill each type of vegetable on a well-greased griddle pan until charred and softened.",
+          "time": "30min",
+          "tools": [
+            "griddle pan"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            }
+          ],
+          "output": {
+            "state": "grilled",
+            "description": "Vegetables are grilled separately on a griddle pan until nicely charred and softened."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Mustard-Parmesan Dressing",
+      "ingredients": {
+        "ing10": {
+          "amount": 0.75,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 25,
+          "state": "finely grated"
+        },
+        "ing12": {
+          "amount": 3,
+          "state": ""
+        },
+        "ing13": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing14": {
+          "amount": 0,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 75,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 2,
+          "state": "crushed"
+        }
+      },
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Combine the dressing ingredients and whisk until well combined.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Dressing is well combined with all ingredients mixed together."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Assembly",
+      "ingredients": {
+        "ing7": {
+          "amount": 2,
+          "state": "core removed, leaves separated"
+        },
+        "ing8": {
+          "amount": 5,
+          "state": "with some stem attached"
+        },
+        "ing9": {
+          "amount": 0.5,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Toss the lettuce and parsley leaves in the remaining dressing.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            }
+          ],
+          "output": {
+            "state": "tossed",
+            "description": "Lettuce and parsley leaves are tossed in the remaining dressing."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Arrange the grilled vegetables on a plate, dress them with the dressing, and sprinkle with toasted fennel seeds.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "arranged and dressed",
+            "description": "Grilled vegetables are arranged on a plate, dressed with the mustard-parmesan dressing, and sprinkled with toasted and roughly crushed fennel seeds."
+          }
+        }
+      ]
+    }
+  ]
+}

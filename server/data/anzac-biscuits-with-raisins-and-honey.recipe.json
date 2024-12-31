@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "Anzac Biscuits with Raisins and Honey",
+    "description": "These 'Anzac' biscuits are a twist on the traditional recipe, with the addition of raisins and honey for chewiness and bran flakes for a malty flavor. The cookies should be crispy on the outside but still retain a chew on the inside.",
+    "servings": 24,
+    "difficulty": "easy",
+    "totalTime": "40min",
+    "image": "anzac-biscuits-with-raisins-and-honey.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/anzac-biscuits-aka-honey-oat-and-raisin-cookies/images/anzac-biscuits-aka-honey-oat-and-raisin-cookies.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/anzac-biscuits-aka-honey-oat-and-raisin-cookies/index.html",
+    "diet": "vegetarian",
+    "season": "autumn",
+    "recipeType": "dessert",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "rolled oats",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "bran flakes",
+      "unit": "g",
+      "amount": 50,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "desiccated coconut",
+      "unit": "g",
+      "amount": 90,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 185,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing6",
+      "name": "soft light brown sugar",
+      "unit": "g",
+      "amount": 40,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing7",
+      "name": "raisins",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing8",
+      "name": "lemon zest",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 185,
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "runny honey",
+      "unit": "g",
+      "amount": 60,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing11",
+      "name": "water",
+      "unit": "ml",
+      "amount": 30,
+      "category": "beverages"
+    },
+    {
+      "id": "ing12",
+      "name": "bicarbonate of soda",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Anzac Biscuit Dough",
+      "ingredients": {
+        "ing1": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing10": {
+          "amount": 60,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 30,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 50,
+          "state": "lightly crushed by hand"
+        },
+        "ing3": {
+          "amount": 90,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 185,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 40,
+          "state": ""
+        },
+        "ing7": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing8": {
+          "amount": 1,
+          "state": "finely grated"
+        },
+        "ing9": {
+          "amount": 185,
+          "state": "melted"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven and prepare baking trays.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [],
+          "output": {
+            "state": "preheated oven",
+            "description": "Preheat the oven to 170°C/150°C fan/gas mark 3 and line two large baking trays with baking parchment."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Combine dry ingredients.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            }
+          ],
+          "output": {
+            "state": "mixed dry ingredients",
+            "description": "Combine the oats, bran flakes, coconut, flour, caster sugar, brown sugar, raisins, and lemon zest in a large bowl."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Melt butter with honey and water.",
+          "time": "5min",
+          "tools": [
+            "saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "melted mixture",
+            "description": "Heat the butter, honey, and water in a small saucepan over low heat until the butter melts."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Stir in bicarbonate of soda to the melted mixture.",
+          "time": "1min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "frothy mixture",
+            "description": "Remove the saucepan from the heat and quickly stir in the bicarbonate of soda for about 15 seconds, until the mixture becomes light and frothy."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Combine wet and dry ingredients.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step4"
+            }
+          ],
+          "output": {
+            "state": "biscuit dough",
+            "description": "Pour the butter mixture into the dry ingredients and mix thoroughly."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Shape and bake the biscuits.",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "baked biscuits",
+            "description": "Roll the mixture into golf-ball-sized balls, about 40g each, and place them on the prepared baking trays, spaced about 5cm apart. Bake for 18–20 minutes, until the cookies are golden brown but still slightly soft."
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Cool the biscuits.",
+          "time": "10min",
+          "tools": [
+            "wire rack"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            }
+          ],
+          "output": {
+            "state": "cooled biscuits",
+            "description": "Remove from the oven and allow to rest for 5 minutes on the tray before transferring them to a wire rack to cool completely."
+          }
+        }
+      ]
+    }
+  ]
+}

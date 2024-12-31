@@ -116,6 +116,7 @@ type RecipeResponse struct {
 		Season      string `json:"season"`
 		RecipeType  string `json:"recipeType"`
 		Quick       bool   `json:"quick"`
+		Notes       string `json:"notes"`
 	} `json:"metadata"`
 	Ingredients map[string]struct {
 		Name     string `json:"name"`
@@ -127,6 +128,7 @@ type RecipeResponse struct {
 		Title       string `json:"title"`
 		Ingredients map[string]struct {
 			Amount float64 `json:"amount"`
+			State  string  `json:"state"`
 		} `json:"ingredients"`
 		Steps []struct {
 			ID     string   `json:"id"`
@@ -167,6 +169,7 @@ func toRecipeResponse(uiRecipe *models.UIRecipe, slug string) *RecipeResponse {
 			Season      string `json:"season"`
 			RecipeType  string `json:"recipeType"`
 			Quick       bool   `json:"quick"`
+			Notes       string `json:"notes"`
 		}{
 			Description: uiRecipe.Description,
 			Servings:    uiRecipe.Servings,
@@ -179,6 +182,7 @@ func toRecipeResponse(uiRecipe *models.UIRecipe, slug string) *RecipeResponse {
 			Season:      uiRecipe.Season,
 			RecipeType:  uiRecipe.RecipeType,
 			Quick:       uiRecipe.Quick,
+			Notes:       uiRecipe.Notes,
 		},
 		Ingredients: uiRecipe.Ingredients,
 		SubRecipes:  uiRecipe.SubRecipes,
@@ -351,6 +355,10 @@ func main() {
 
 		recipe, err := recipeService.AddRecipeFromUrl(req.Source)
 		if err != nil {
+			if strings.Contains(err.Error(), "recipe already exists") {
+				http.Error(w, "Recipe already exists", http.StatusConflict)
+				return
+			}
 			log.Error().Err(err).Msg("Error generating recipe")
 			http.Error(w, fmt.Sprintf("Error generating recipe: %v", err), http.StatusInternalServerError)
 			return
@@ -378,6 +386,10 @@ func main() {
 		// Générer la recette à partir de l'URL
 		recipe, err := recipeService.AddRecipeFromUrl(req.Url)
 		if err != nil {
+			if strings.Contains(err.Error(), "recipe already exists") {
+				http.Error(w, "Recipe already exists", http.StatusConflict)
+				return
+			}
 			log.Error().Err(err).Msg("Error generating recipe")
 			http.Error(w, "Error generating recipe", http.StatusInternalServerError)
 			return

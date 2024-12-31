@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "title": "Roasted Celeriac with Pickled Celery and Chilli Garlic Dressing",
+    "description": "An elegant dish featuring roasted celeriac wedges topped with a spicy chilli garlic dressing, pickled celery, and fresh herbs.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "2h30min",
+    "image": "roasted-celeriac-with-pickled-celery-and-chilli-garlic-dressing.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/1-roasted-and-pickled-celeriac-with-sweet-chilli-dressing/images/1-roasted-and-pickled-celeriac-with-sweet-chilli-dressing.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/1-roasted-and-pickled-celeriac-with-sweet-chilli-dressing/index.html",
+    "diet": "vegan",
+    "season": "winter",
+    "recipeType": "main",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "celeriac",
+      "unit": "whole",
+      "amount": 1,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing2",
+      "name": "spring onions",
+      "unit": "unit",
+      "amount": 2,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing3",
+      "name": "Thai basil leaves",
+      "unit": "g",
+      "amount": 5,
+      "category": "herb"
+    },
+    {
+      "id": "ing4",
+      "name": "flaked sea salt",
+      "unit": "g",
+      "amount": 20,
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "medium celeriac",
+      "unit": "g",
+      "amount": 500,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing6",
+      "name": "celery sticks",
+      "unit": "g",
+      "amount": 120,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing7",
+      "name": "garlic",
+      "unit": "cloves",
+      "amount": 5,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing8",
+      "name": "limes",
+      "unit": "unit",
+      "amount": 3,
+      "category": "fruit"
+    },
+    {
+      "id": "ing9",
+      "name": "rice vinegar",
+      "unit": "ml",
+      "amount": 150,
+      "category": "condiments"
+    },
+    {
+      "id": "ing10",
+      "name": "sunflower oil",
+      "unit": "ml",
+      "amount": 120,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing11",
+      "name": "red chillies",
+      "unit": "g",
+      "amount": 30,
+      "category": "vegetable"
+    },
+    {
+      "id": "ing12",
+      "name": "star anise",
+      "unit": "whole",
+      "amount": 2,
+      "category": "spice"
+    },
+    {
+      "id": "ing13",
+      "name": "sesame seeds",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "spice"
+    },
+    {
+      "id": "ing14",
+      "name": "maple syrup",
+      "unit": "tbsp",
+      "amount": 2.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing15",
+      "name": "soy sauce",
+      "unit": "ml",
+      "amount": 60,
+      "category": "condiments"
+    },
+    {
+      "id": "ing16",
+      "name": "chives",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "herb"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Pickled Celeriac Mixture",
+      "ingredients": {
+        "ing4": {
+          "amount": 20,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 500,
+          "state": "cut into 6cm-long batons"
+        },
+        "ing6": {
+          "amount": 120,
+          "state": "cut into 6cm-long batons"
+        },
+        "ing7": {
+          "amount": 5,
+          "state": "crushed"
+        },
+        "ing8": {
+          "amount": 3,
+          "state": "finely shave the skin to get 6 strips, then juice"
+        },
+        "ing9": {
+          "amount": 150,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Combine the pickling ingredients and set aside.",
+          "time": "2h",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "pickled",
+            "description": "The celeriac and celery batons are combined with crushed garlic, lime strips, rice vinegar, and salt to pickle for at least 2 hours."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Chilli Garlic Dressing",
+      "ingredients": {
+        "ing10": {
+          "amount": 120,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 30,
+          "state": "finely sliced into rounds"
+        },
+        "ing12": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing13": {
+          "amount": 1.5,
+          "state": "toasted"
+        },
+        "ing14": {
+          "amount": 2.5,
+          "state": ""
+        },
+        "ing15": {
+          "amount": 60,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Fry the garlic and chillies in sunflower oil.",
+          "time": "2.5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "fried",
+            "description": "Heat the sunflower oil, then add sliced garlic, chillies, and star anise to fry until the garlic is crisp and pale golden."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Prepare the dressing.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            }
+          ],
+          "output": {
+            "state": "dressing prepared",
+            "description": "Strain the fried garlic and chillies, then combine the aromatic oil with sesame seeds, maple syrup, rice vinegar, and soy sauce to make the dressing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Roasted Celeriac Wedges",
+      "ingredients": {
+        "ing1": {
+          "amount": 1,
+          "state": "roasted, cut into 8 wedges"
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Preheat the oven and prepare the celeriac for roasting.",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Brush the roasted celeriac wedges with their cooking oil and roast until golden-brown."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub4",
+      "title": "Assembly",
+      "ingredients": {
+        "ing1": {
+          "amount": 1,
+          "state": "roasted, cut into 8 wedges"
+        },
+        "ing2": {
+          "amount": 2,
+          "state": "finely sliced at an angle"
+        },
+        "ing3": {
+          "amount": 5,
+          "state": "picked"
+        },
+        "ing4": {
+          "amount": 20,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 200,
+          "state": "from pickled mixture, avoiding the pickling liquid, garlic, and lime skin"
+        }
+      },
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Arrange the roasted celeriac on a platter and season.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "arranged and seasoned",
+            "description": "Place the roasted celeriac wedges on a platter and sprinkle with a little flaked salt."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Finish the assembly by adding the dressing and toppings.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "assembled",
+            "description": "Top the celeriac with the pickled celeriac mixture, dressing, spring onions, and Thai basil leaves."
+          }
+        }
+      ]
+    }
+  ]
+}

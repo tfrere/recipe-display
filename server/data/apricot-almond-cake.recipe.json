@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "title": "Apricot Almond Cake",
+    "description": "A delightful cake featuring a rich almond base topped with fresh or tinned apricots and a cinnamon-sugar topping",
+    "servings": 8,
+    "difficulty": "medium",
+    "totalTime": "1h25min",
+    "image": "apricot-almond-cake.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/apricot-and-almond-cake-with-cinnamon-topping/images/apricot-and-almond-cake-with-cinnamon-topping.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/apricot-and-almond-cake-with-cinnamon-topping/index.html",
+    "diet": "vegetarian",
+    "season": "summer",
+    "recipeType": "dessert",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 145,
+      "category": "dairy"
+    },
+    {
+      "id": "ing2",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 300,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing4",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "large eggs",
+      "unit": "unit",
+      "amount": 4,
+      "category": "dairy"
+    },
+    {
+      "id": "ing6",
+      "name": "lemon zest",
+      "unit": "tsp",
+      "amount": 0.75,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "vanilla extract",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing8",
+      "name": "almond extract",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing9",
+      "name": "self-raising flour",
+      "unit": "g",
+      "amount": 220,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "soured cream",
+      "unit": "g",
+      "amount": 160,
+      "category": "dairy"
+    },
+    {
+      "id": "ing11",
+      "name": "ground almonds",
+      "unit": "g",
+      "amount": 35,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing12",
+      "name": "apricots",
+      "unit": "g",
+      "amount": 500,
+      "category": "produce"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Topping",
+      "ingredients": {
+        "ing1": {
+          "amount": 60,
+          "state": "room temperature"
+        },
+        "ing2": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 0.125,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 2,
+          "state": "lightly beaten"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Combine and cook the topping ingredients",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Melt the butter, add sugar, cinnamon, and salt, then combine with eggs to make the topping"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Cake",
+      "ingredients": {
+        "ing1": {
+          "amount": 85,
+          "state": "room temperature"
+        },
+        "ing10": {
+          "amount": 160,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 35,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 500,
+          "state": "halved and stoned"
+        },
+        "ing2": {
+          "amount": 200,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 0.125,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 2,
+          "state": "room temperature"
+        },
+        "ing6": {
+          "amount": 0.75,
+          "state": "finely grated"
+        },
+        "ing7": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing8": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 220,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Prepare the cake batter",
+          "time": "15min",
+          "tools": [
+            "electric mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "batter prepared",
+            "description": "Cream butter and sugar, then add eggs, flavors, and alternating additions of flour and soured cream to make the cake batter using an electric mixer with paddle attachment"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Assemble and bake the cake",
+          "time": "1h",
+          "tools": [
+            "23cm round springform tin"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "Pour batter into prepared tin, top with almonds and apricots, then add cinnamon topping. Bake until a skewer comes out clean using the 23cm round springform tin"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Cool the cake",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "cooled",
+            "description": "Allow the cake to cool in the tin before serving"
+          }
+        }
+      ]
+    }
+  ]
+}

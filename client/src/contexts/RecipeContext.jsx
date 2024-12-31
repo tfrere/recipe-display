@@ -640,8 +640,9 @@ export const RecipeProvider = ({ children }) => {
   }, [state.recipe, state.servingsMultiplier]);
 
   const formatAmount = useCallback((amount, unit) => {
-    if (!amount || !unit) return '';
-
+    if (!amount && amount !== 0) return '-';
+    if (unit && amount === '') return '-';
+    if (!unit) return '-';
     // Conversion si nécessaire
     if (unitSystem === UNIT_SYSTEMS.IMPERIAL) {
       const { value: convertedAmount, unit: convertedUnit } = convertToImperial(amount, unit);

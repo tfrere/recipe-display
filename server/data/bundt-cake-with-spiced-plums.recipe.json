@@ -1,0 +1,404 @@
+{
+  "metadata": {
+    "title": "Bundt Cake with Spiced Plums",
+    "description": "A delightful bundt cake paired with soft, spiced plums, featuring the warmth of cardamom and the brightness of orange zest.",
+    "servings": 8,
+    "difficulty": "medium",
+    "totalTime": "1h55min",
+    "image": "bundt-cake-with-spiced-plums.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/almond-butter-cake-with-cardamom-and-baked-plums/images/almond-butter-cake-with-cardamom-and-baked-plums.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/almond-butter-cake-with-cardamom-and-baked-plums/index.html",
+    "diet": "vegetarian",
+    "season": "summer",
+    "recipeType": "dessert",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "plums",
+      "unit": "g",
+      "amount": 650,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "dry white wine",
+      "unit": "ml",
+      "amount": 100,
+      "category": "beverages"
+    },
+    {
+      "id": "ing3",
+      "name": "caster sugar",
+      "unit": "g",
+      "amount": 160,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing4",
+      "name": "cardamom pods",
+      "unit": "whole",
+      "amount": 10,
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "orange peel",
+      "unit": "strip",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "water",
+      "unit": "ml",
+      "amount": 100,
+      "category": "beverages"
+    },
+    {
+      "id": "ing8",
+      "name": "almond paste",
+      "unit": "g",
+      "amount": 200,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing9",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 250,
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "orange zest",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "freshly ground cardamom",
+      "unit": "tsp",
+      "amount": 0.75,
+      "category": "spice"
+    },
+    {
+      "id": "ing12",
+      "name": "eggs",
+      "unit": "large",
+      "amount": 6,
+      "category": "dairy"
+    },
+    {
+      "id": "ing13",
+      "name": "almond extract",
+      "unit": "tsp",
+      "amount": 0.125,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing14",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 140,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing15",
+      "name": "cornflour",
+      "unit": "g",
+      "amount": 20,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing16",
+      "name": "baking powder",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing17",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Spiced Plums",
+      "ingredients": {
+        "ing1": {
+          "amount": 650,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 80,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 10,
+          "state": "roughly crushed"
+        },
+        "ing5": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing7": {
+          "amount": 100,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven and prepare the plums.",
+          "time": "5min",
+          "tools": [
+            "ovenproof baking dish"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "prepared",
+            "description": "Oven preheated to 200°C/180°C fan/gas mark 6 and plums placed in an ovenproof baking dish."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Cook the spiced syrup and bake the plums.",
+          "time": "40min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "Plums baked in a spiced syrup until soft but still whole."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Bundt Cake",
+      "ingredients": {
+        "ing10": {
+          "amount": 1,
+          "state": "finely grated"
+        },
+        "ing11": {
+          "amount": 0.75,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 6,
+          "state": "room temperature"
+        },
+        "ing13": {
+          "amount": 0.125,
+          "state": ""
+        },
+        "ing14": {
+          "amount": 140,
+          "state": ""
+        },
+        "ing15": {
+          "amount": 20,
+          "state": ""
+        },
+        "ing16": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing17": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 80,
+          "state": ""
+        },
+        "ing8": {
+          "amount": 200,
+          "state": "broken into pieces"
+        },
+        "ing9": {
+          "amount": 250,
+          "state": "room temperature"
+        }
+      },
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Reduce oven temperature and prepare the bundt tin.",
+          "time": "5min",
+          "tools": [
+            "bundt tin"
+          ],
+          "inputs": [],
+          "output": {
+            "state": "prepared",
+            "description": "Oven temperature reduced to 180°C/160°C fan/gas mark 4 and 23cm bundt tin greased and floured."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Cream almond paste, sugar, and butter.",
+          "time": "3min",
+          "tools": [
+            "stand mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            }
+          ],
+          "output": {
+            "state": "creamed",
+            "description": "Almond paste, sugar, and butter creamed together in a stand mixer."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Add eggs, almond extract, and dry ingredients.",
+          "time": "10min",
+          "tools": [
+            "stand mixer with paddle attachment"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            }
+          ],
+          "output": {
+            "state": "batter ready",
+            "description": "Eggs, almond extract, and sifted dry ingredients added to the creamed mixture to form a cake batter."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Bake the cake.",
+          "time": "55min",
+          "tools": [
+            "bundt tin"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "Cake batter poured into the bundt tin and baked until a skewer comes out clean."
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Cool and serve the cake with baked plums.",
+          "time": "15min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step6"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "served",
+            "description": "Cake cooled in the tin and then inverted onto a cake platter, served with the baked plums and juices alongside."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -49,12 +49,7 @@
           "properties": {
             "name": { "type": "string" },
             "unit": { "type": "string" },
-            "category": { "type": "string" },
-            "state": {
-              "type": "string",
-              "title": "Preparation State",
-              "description": "How the ingredient should be prepared (optional)"
-            }
+            "category": { "type": "string" }
           }
         }
       }
@@ -73,9 +68,23 @@
               "patternProperties": {
                 "^[a-zA-Z0-9-]+$": {
                   "type": "object",
-                  "required": ["amount"],
+                  "required": ["amount", "state"],
                   "properties": {
-                    "amount": { "type": "number" }
+                    "amount": { "type": "number" },
+                    "state": {
+                      "type": "string",
+                      "description": "Preparation state specific to this sub-recipe",
+                      "examples": [
+                        "finely diced",
+                        "roughly chopped",
+                        "julienned",
+                        "brunoise",
+                        "minced",
+                        "room temperature",
+                        "cold, cubed",
+                        "boiled, medium dice"
+                      ]
+                    }
                   }
                 }
               }
@@ -109,14 +118,6 @@
                         },
                         "ref": { "type": "string" }
                       }
-                    }
-                  },
-                  "output": {
-                    "type": "object",
-                    "required": ["state", "description"],
-                    "properties": {
-                      "state": { "type": "string" },
-                      "description": { "type": "string" }
                     }
                   }
                 }

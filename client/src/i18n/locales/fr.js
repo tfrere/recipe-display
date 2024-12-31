@@ -215,6 +215,12 @@ export default {
       grams: "grammes",
       kilogram: "kilogramme",
       kilograms: "kilogrammes"
-    }
+    },
+    difficulty: {
+      easy: 'Facile',
+      medium: 'Moyen',
+      hard: 'Difficile'
+    },
+    notes: 'Notes de l\'auteur'
   }
 };

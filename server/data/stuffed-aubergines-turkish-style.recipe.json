@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "title": "Stuffed Aubergines Turkish-Style",
+    "description": "A traditional Kurdish recipe with a Turkish influence featuring stuffed aubergines with a lamb and pine nut filling, seasoned with a blend of spices.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "2h15min",
+    "image": "stuffed-aubergines-turkish-style.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/stuffed-aubergine-with-lamb-pine-nuts/images/stuffed-aubergine-with-lamb-pine-nuts.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/stuffed-aubergine-with-lamb-pine-nuts/index.html",
+    "diet": "normal",
+    "season": "autumn",
+    "recipeType": "main",
+    "quick": false,
+    "notes": "Elran Shrefler, from Azura restaurant, inspired this dish. It's a part of the Slow Food movement and reflects traditional cooking methods."
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "aubergines",
+      "unit": "unit",
+      "amount": 4,
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 10,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cumin",
+      "unit": "tsp",
+      "amount": 3,
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "sweet paprika",
+      "unit": "tbsp",
+      "amount": 3,
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "ground cinnamon",
+      "unit": "tbsp",
+      "amount": 2,
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "onions",
+      "unit": "g",
+      "amount": 340,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "minced lamb",
+      "unit": "g",
+      "amount": 500,
+      "category": "meat"
+    },
+    {
+      "id": "ing8",
+      "name": "pine nuts",
+      "unit": "g",
+      "amount": 50,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "flat-leaf parsley",
+      "unit": "g",
+      "amount": 20,
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "tomato purée",
+      "unit": "tsp",
+      "amount": 2,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing11",
+      "name": "caster sugar",
+      "unit": "tsp",
+      "amount": 4,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing12",
+      "name": "water",
+      "unit": "ml",
+      "amount": 150,
+      "category": "beverages"
+    },
+    {
+      "id": "ing13",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "condiments"
+    },
+    {
+      "id": "ing14",
+      "name": "tamarind paste",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing15",
+      "name": "cinnamon sticks",
+      "unit": "unit",
+      "amount": 4,
+      "category": "spice"
+    },
+    {
+      "id": "ing16",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 2.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing17",
+      "name": "black pepper",
+      "unit": "",
+      "amount": 1,
+      "category": "spice"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasted Aubergines",
+      "ingredients": {
+        "ing1": {
+          "amount": 4,
+          "state": "halved lengthways"
+        },
+        "ing16": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing17": {
+          "amount": 1,
+          "state": "plenty"
+        },
+        "ing2": {
+          "amount": 4,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven and prepare the aubergines for roasting.",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            }
+          ],
+          "output": {
+            "state": "roasted",
+            "description": "Aubergine halves are brushed with olive oil, seasoned with salt and black pepper, and roasted until golden brown."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Lamb Stuffing",
+      "ingredients": {
+        "ing10": {
+          "amount": 2,
+          "state": ""
+        },
+        "ing11": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing16": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing17": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 6,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 340,
+          "state": "finely chopped"
+        },
+        "ing7": {
+          "amount": 500,
+          "state": ""
+        },
+        "ing8": {
+          "amount": 50,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 20,
+          "state": "chopped"
+        }
+      },
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Cook the onions with spice mix.",
+          "time": "8min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Onions are sautéed with a mix of cumin, paprika, and cinnamon until golden."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Complete the stuffing with lamb and other ingredients.",
+          "time": "8min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing17"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "The lamb, pine nuts, parsley, tomato purée, sugar, salt, and black pepper are added and cooked until the meat is done."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Sauce and Baking",
+      "ingredients": {
+        "ing11": {
+          "amount": 3,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 150,
+          "state": ""
+        },
+        "ing13": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing14": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing15": {
+          "amount": 4,
+          "state": ""
+        },
+        "ing16": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 1,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Prepare the sauce and bake the stuffed aubergines.",
+          "time": "1h30min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing13"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing14"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing15"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing16"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "baked",
+            "description": "The remaining spice mix, water, lemon juice, tamarind paste, sugar, cinnamon sticks, and salt are mixed and poured into the aubergine roasting tin. The lamb mixture is spooned on top of each aubergine half, covered with foil, and roasted until the aubergines are soft and the sauce is thick."
+          }
+        }
+      ]
+    }
+  ]
+}

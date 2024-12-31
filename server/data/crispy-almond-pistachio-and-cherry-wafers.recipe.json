@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "title": "Crispy Almond Pistachio and Cherry Wafers",
+    "description": "Thin and crispy wafers loaded with almonds, pistachios, and dried sour cherries, perfect as a snack with tea or coffee.",
+    "servings": 55,
+    "difficulty": "medium",
+    "totalTime": "Several hours",
+    "image": "crispy-almond-pistachio-and-cherry-wafers.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/almond-pistachio-and-sour-cherry-wafers/images/almond-pistachio-and-sour-cherry-wafers.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/almond-pistachio-and-sour-cherry-wafers/index.html",
+    "diet": "vegetarian",
+    "season": "winter",
+    "recipeType": "appetizer",
+    "quick": false
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "plain flour",
+      "unit": "g",
+      "amount": 400,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "bicarbonate of soda",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing4",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "unsalted butter",
+      "unit": "g",
+      "amount": 100,
+      "category": "dairy"
+    },
+    {
+      "id": "ing6",
+      "name": "soft dark brown sugar",
+      "unit": "g",
+      "amount": 240,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing7",
+      "name": "water",
+      "unit": "ml",
+      "amount": 70,
+      "category": "beverages"
+    },
+    {
+      "id": "ing8",
+      "name": "whole almonds",
+      "unit": "g",
+      "amount": 150,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "shelled pistachio kernels",
+      "unit": "g",
+      "amount": 90,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing10",
+      "name": "dried sour cherries",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Dough Preparation",
+      "ingredients": {
+        "ing1": {
+          "amount": 400,
+          "state": ""
+        },
+        "ing10": {
+          "amount": 100,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 100,
+          "state": "cubed"
+        },
+        "ing6": {
+          "amount": 240,
+          "state": ""
+        },
+        "ing7": {
+          "amount": 70,
+          "state": ""
+        },
+        "ing8": {
+          "amount": 150,
+          "state": "skin on"
+        },
+        "ing9": {
+          "amount": 90,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Line the base and sides of a regular 900g loaf tin with baking parchment.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [],
+          "output": {
+            "state": "lined tin",
+            "description": "The loaf tin is now lined with baking parchment, ready for the dough to be placed in."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Sift the flour, bicarbonate of soda, cinnamon, and salt into a large bowl.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            }
+          ],
+          "output": {
+            "state": "sifted dry ingredients",
+            "description": "The dry ingredients are sifted together into a homogeneous mixture."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Cook the butter, sugar, and water over medium-low heat until the sugar has dissolved.",
+          "time": "5min",
+          "tools": [
+            "saucepan"
+          ],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            }
+          ],
+          "output": {
+            "state": "butter-sugar mixture",
+            "description": "The butter and sugar have melted together and the sugar has dissolved to form a smooth syrup."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Mix the syrup into the dry ingredients, along with the almonds, pistachios, and cherries to form a dough.",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "dough",
+            "description": "A smooth, glossy dough has been formed with almonds, pistachios, and cherries evenly distributed throughout."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Press the dough into the prepared tin and cover with baking parchment, then chill.",
+          "time": "Several hours",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "chilled dough",
+            "description": "The dough is now firmly pressed into the tin, covered with parchment, and chilled until cold but pliable."
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Preheat the oven and line a baking tray with baking parchment.",
+          "time": "10min",
+          "tools": [
+            "oven",
+            "baking tray"
+          ],
+          "inputs": [],
+          "output": {
+            "state": "preheated oven",
+            "description": "The oven is preheated and ready for baking, and the baking tray is lined with parchment."
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Slice the chilled dough as thinly as possible and lay out on the prepared tray.",
+          "time": "20min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step5"
+            }
+          ],
+          "output": {
+            "state": "sliced dough",
+            "description": "The chilled dough is thinly sliced and arranged on the parchment-lined baking tray."
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Bake the sliced dough in batches until golden brown, then allow to cool.",
+          "time": "14min",
+          "tools": [
+            "oven"
+          ],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step7"
+            }
+          ],
+          "output": {
+            "state": "baked wafers",
+            "description": "The wafer-thin slices have been baked to a golden brown and are set aside to cool and crisp up."
+          }
+        }
+      ]
+    }
+  ]
+}

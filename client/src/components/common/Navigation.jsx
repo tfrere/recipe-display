@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { useTheme } from '../../contexts/ThemeContext';
 import { useLayout, LAYOUT_MODES } from '../../contexts/LayoutContext';
+import { useRecipeList } from '../../contexts/RecipeListContext';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
@@ -20,6 +21,25 @@ const Navigation = ({ currentView, onViewChange }) => {
   const isRecipePage = location.pathname.startsWith('/recipe/');
   const { t } = useTranslation();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
+  const { 
+    setSelectedDiet,
+    setSelectedDifficulty,
+    setSelectedSeason,
+    setSelectedType,
+    setSelectedDishType,
+    setIsQuickOnly,
+    setSearchQuery
+  } = useRecipeList();
+
+  const resetFilters = () => {
+    setSelectedDiet(null);
+    setSelectedDifficulty(null);
+    setSelectedSeason(null);
+    setSelectedType(null);
+    setSelectedDishType(null);
+    setIsQuickOnly(false);
+    setSearchQuery('');
+  };
 
   // Ensure currentView and onViewChange are defined
   const handleViewChange = (view) => {
@@ -60,9 +80,19 @@ const Navigation = ({ currentView, onViewChange }) => {
                 {t('common.back')}
               </Button>
             ) : (
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <Box 
+                sx={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  cursor: 'pointer' 
+                }}
+                onClick={() => {
+                  navigate('/');
+                  resetFilters();
+                }}
+              >
                 <AutoStoriesOutlinedIcon sx={{ mr: 1, color: 'text.secondary' }} />
-                <Typography variant="h6" color="text.secondary" sx={{ fontWeight: 500 }}>
+                <Typography variant="h6" component="div" color="text.secondary" sx={{ fontWeight: 500 }}>
                   Cookbook
                 </Typography>
               </Box>

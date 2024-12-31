@@ -5,18 +5,21 @@ import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import { useRecipe } from '../../../contexts/RecipeContext';
 import { GRAM_UNITS } from '../../../utils/ingredientScaling';
 import { useTranslation } from 'react-i18next';
+import { CATEGORY_ORDER, CATEGORY_LABELS } from '@shared/constants/ingredients';
 
 const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
   const { t } = useTranslation();
   const { getAdjustedAmount, formatAmount, isIngredientUnused, completedSteps } = useRecipe();
 
-  console.log('Full recipe structure:', recipe);
-
-  // Call all hooks at the top level
+  // 1. Ordre des sous-recettes tel que défini dans la recette
   const subRecipeOrder = useMemo(() => {
     return Object.entries(recipe.subRecipes || {}).map(([id]) => id);
   }, [recipe.subRecipes]);
 
+  // 2. Ordre des catégories pour le tri
+  const categoryOrder = useMemo(() => CATEGORY_ORDER, []);
+
+  // 3. Construction de la liste complète des ingrédients avec leurs propriétés
   const allIngredients = useMemo(() => {
     if (!recipe.subRecipes || !recipe.ingredients) return [];
     
@@ -25,16 +28,17 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       
       Object.entries(subRecipe.ingredients).forEach(([ingredientId, data]) => {
         const ingredient = recipe.ingredients[ingredientId];
-        console.log('Raw ingredient from recipe:', ingredientId, ingredient);
         if (!ingredient) return;
 
-        const adjustedAmount = getAdjustedAmount(data.amount, ingredient.unit, ingredient.category);
+        // Log pour voir la catégorie de chaque ingrédient
+        console.log(`Ingrédient ${ingredient.name}: catégorie = ${ingredient.category}`);
+
         acc.push({
           id: ingredientId,
           name: ingredient.name,
-          amount: adjustedAmount,
+          amount: getAdjustedAmount(data.amount, ingredient.unit, ingredient.category),
           unit: ingredient.unit,
-          state: ingredient.state, // L'état vient directement de l'ingrédient
+          state: data.state,
           subRecipeId,
           subRecipeTitle: subRecipe.title,
           category: ingredient.category || 'autres',
@@ -44,33 +48,23 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
     }, []);
   }, [recipe.subRecipes, recipe.ingredients, getAdjustedAmount]);
 
+  // 4. Formatage des ingrédients (quantités, états, etc.)
   const formattedIngredients = useMemo(() => {
-    const formatted = allIngredients.map(ingredient => ({
+    return allIngredients.map(ingredient => ({
       ...ingredient,
       displayAmount: formatAmount(ingredient.amount, ingredient.unit),
-      isUnused: isIngredientUnused(ingredient.id, ingredient.subRecipeId)
+      isUnused: isIngredientUnused(ingredient.id, ingredient.subRecipeId),
+      displayState: ingredient.state
     }));
-    console.log('Formatted ingredients with state:', formatted);
-    return formatted;
   }, [allIngredients, formatAmount, isIngredientUnused]);
 
-  const categoryOrder = useMemo(() => [
-    'base',
-    'farine',
-    'sucre',
-    'œuf',
-    'produit-laitier',
-    'chocolat',
-    'fruit-sec',
-    'épices',
-    'autres'
-  ], []);
-
+  // 5. Tri des ingrédients selon le mode (shopping list ou sous-recettes)
   const sortedIngredients = useMemo(() => {
     if (!formattedIngredients.length) return [];
 
     if (sortByCategory) {
-      // Agrégation des ingrédients par nom et unité
+      // Mode shopping list : grouper par catégorie
+      // 5.a. Agréger les ingrédients identiques
       const aggregatedIngredients = formattedIngredients.reduce((acc, ingredient) => {
         const key = `${ingredient.name}|${ingredient.unit || ''}|${ingredient.category}`;
         if (!acc[key]) {
@@ -82,48 +76,47 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
         return acc;
       }, {});
 
+      // 5.b. Grouper par catégorie
       const groupedByCategory = Object.values(aggregatedIngredients).reduce((acc, ingredient) => {
         const category = ingredient.category || 'autres';
-        if (!acc[category]) {
-          acc[category] = [];
-        }
+        if (!acc[category]) acc[category] = [];
         acc[category].push(ingredient);
         return acc;
       }, {});
 
-      // Sort ingredients within each category
+      // 5.c. Trier les ingrédients dans chaque catégorie
       Object.values(groupedByCategory).forEach(ingredients => {
         ingredients.sort((a, b) => a.name.localeCompare(b.name));
       });
 
+      // 5.d. Trier les catégories et aplatir la liste
       return Object.entries(groupedByCategory)
         .sort(([catA], [catB]) => {
-          const indexA = categoryOrder.indexOf(catA);
-          const indexB = categoryOrder.indexOf(catB);
-          if (indexA === -1 && indexB === -1) return catA.localeCompare(catB);
-          if (indexA === -1) return 1;
-          if (indexB === -1) return -1;
+          const indexA = categoryOrder.indexOf(catA || 'autres');
+          const indexB = categoryOrder.indexOf(catB || 'autres');
           return indexA - indexB;
         })
         .flatMap(([_, ingredients]) => ingredients);
     }
 
-    // Sort by subRecipe order
-    return formattedIngredients.sort((a, b) => {
-      const indexA = subRecipeOrder.indexOf(a.subRecipeId);
-      const indexB = subRecipeOrder.indexOf(b.subRecipeId);
-      if (indexA === indexB) {
-        return a.name.localeCompare(b.name);
-      }
-      return indexA - indexB;
-    });
+    // Mode sous-recettes : grouper par sous-recette
+    const groupedBySubRecipe = formattedIngredients.reduce((acc, ingredient) => {
+      const subRecipeId = ingredient.subRecipeId;
+      if (!acc[subRecipeId]) acc[subRecipeId] = [];
+      acc[subRecipeId].push(ingredient);
+      return acc;
+    }, {});
+
+    // Trier les sous-recettes selon l'ordre défini
+    return subRecipeOrder
+      .filter(id => groupedBySubRecipe[id])
+      .flatMap(id => groupedBySubRecipe[id]);
+
   }, [formattedIngredients, sortByCategory, subRecipeOrder, categoryOrder, formatAmount]);
 
-  const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
-  const remainingIngredients = allIngredients.filter(ing => !ing.isUnused).length;
-
+  // 6. Distribution des ingrédients en colonnes pour l'affichage
   const distributeInColumns = (items, columnCount) => {
-    // Grouper les ingrédients par catégorie ou sous-recette
+    // 6.a. Grouper par sous-recette ou catégorie selon le mode
     const groups = items.reduce((acc, item) => {
       const key = sortByCategory ? item.category : item.subRecipeId;
       if (!acc[key]) {
@@ -137,29 +130,40 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
       return acc;
     }, {});
 
-    // Convertir l'objet en tableau de groupes et trier par taille décroissante
-    const groupsList = Object.values(groups)
-      .sort((a, b) => b.items.length - a.items.length);
+    // 6.b. En mode sous-recette, trier les ingrédients de chaque groupe par catégorie
+    if (!sortByCategory) {
+      Object.values(groups).forEach(group => {
+        console.log('Avant tri - Ingrédients du groupe:', group.title, group.items.map(i => ({ name: i.name, category: i.category })));
+        // Trier les ingrédients par catégorie puis par nom
+        const sortedItems = group.items.sort((a, b) => {
+          const catIndexA = categoryOrder.indexOf(a.category || 'autres');
+          const catIndexB = categoryOrder.indexOf(b.category || 'autres');
+          console.log(`Comparaison: ${a.name}(${a.category}, ${catIndexA}) vs ${b.name}(${b.category}, ${catIndexB})`);
+          if (catIndexA === catIndexB) {
+            return a.name.localeCompare(b.name);
+          }
+          return catIndexA - catIndexB;
+        });
+        group.items = sortedItems;
+        console.log('Après tri - Ingrédients du groupe:', group.title, group.items.map(i => ({ name: i.name, category: i.category })));
+      });
+    }
 
-    // Initialiser les colonnes avec leurs tailles
+    // 6.c. Répartir les groupes en colonnes équilibrées
+    const groupsList = Object.values(groups).sort((a, b) => b.items.length - a.items.length);
     const columns = Array(columnCount).fill().map(() => ({
       groups: [],
       totalItems: 0
     }));
 
-    // Distribuer les groupes
     groupsList.forEach(group => {
-      // Trouver la colonne avec le moins d'items
       const targetColumn = columns.reduce((min, col, index) => 
         col.totalItems < columns[min].totalItems ? index : min
       , 0);
-
-      // Ajouter le groupe à cette colonne
       columns[targetColumn].groups.push(group);
       columns[targetColumn].totalItems += group.items.length;
     });
 
-    // Retourner juste les groupes de chaque colonne
     return columns.map(col => col.groups);
   };
 
@@ -177,6 +181,9 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
     
     navigator.clipboard.writeText(ingredientsList);
   };
+
+  const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
+  const remainingIngredients = allIngredients.filter(ing => !ing.isUnused).length;
 
   return (
     <>
@@ -312,7 +319,6 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
                   </Typography>
                 )}
                 {group.items.map((ingredient) => {
-                  console.log('Rendering ingredient:', ingredient);
                   return (
                   <Box 
                     key={`${ingredient.subRecipeId}-${ingredient.name}`}
@@ -341,19 +347,20 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
                         variant="body1" 
                         component="span"
                       >
-                        {ingredient.name}
+                        {ingredient.name}{ingredient.displayState && `,`}
                       </Typography>
-                      {ingredient.state && (
+                      {ingredient.displayState && (
                         <Typography 
                           variant="body1" 
-                          component="span" 
+                          component="div" 
                           sx={{ 
-                            ml: 1,
                             color: 'text.secondary',
-                            fontStyle: 'italic'
+                            fontSize: '0.95em',
+                            mt: -0.5,
+                            ml: 0
                           }}
                         >
-                          ({ingredient.state})
+                          {ingredient.displayState}
                         </Typography>
                       )}
                     </Box>

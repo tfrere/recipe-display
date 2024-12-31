@@ -1,0 +1,292 @@
+{
+  "metadata": {
+    "title": "A'ja (Tripolitan Bread Fritters)",
+    "description": "These bread fritters, known as A'ja, are a versatile Tripolitan dish that can be filled with seasonal vegetables and are perfect for a quick meal or a convenient lunch box addition.",
+    "servings": 4,
+    "difficulty": "easy",
+    "totalTime": "20min",
+    "image": "aja-tripolitan-bread-fritters.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/a-ja-bread-fritters/images/a-ja-bread-fritters.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/a-ja-bread-fritters/index.html",
+    "diet": "vegetarian",
+    "season": "spring",
+    "recipeType": "appetizer",
+    "quick": true
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "white bread",
+      "unit": "g",
+      "amount": 80,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "free-range eggs",
+      "unit": "unit",
+      "amount": 4,
+      "category": "dairy"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cumin",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "sweet paprika",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "cayenne pepper",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "chives",
+      "unit": "g",
+      "amount": 25,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "flat-leaf parsley",
+      "unit": "g",
+      "amount": 25,
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "tarragon",
+      "unit": "g",
+      "amount": 10,
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "feta cheese",
+      "unit": "g",
+      "amount": 40,
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "sunflower oil",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "condiments"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing12",
+      "name": "freshly ground black pepper",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "spice"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Bread Fritter Mixture",
+      "ingredients": {
+        "ing1": {
+          "amount": 80,
+          "state": "soaked in cold water and squeezed"
+        },
+        "ing11": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing12": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 4,
+          "state": "room temperature"
+        },
+        "ing3": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 0.5,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 25,
+          "state": "chopped"
+        },
+        "ing7": {
+          "amount": 25,
+          "state": "chopped"
+        },
+        "ing8": {
+          "amount": 10,
+          "state": "chopped"
+        },
+        "ing9": {
+          "amount": 40,
+          "state": "crumbled"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Soak and prepare the bread",
+          "time": "1min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            }
+          ],
+          "output": {
+            "state": "soaked and squeezed",
+            "description": "Soak the bread slices in cold water for 1 minute, then squeeze out the excess water thoroughly."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Combine soaked bread with seasonings and eggs",
+          "time": "3min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing11"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing12"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Crumble the soaked bread into a medium bowl. Add the eggs, ground cumin, sweet paprika, cayenne pepper, ½ teaspoon of salt, and ¼ teaspoon of black pepper. Whisk the mixture well."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Stir in herbs and cheese",
+          "time": "2min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "combined",
+            "description": "Stir in the chopped chives, parsley, tarragon, and crumbled feta cheese until combined."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Frying the Fritters",
+      "ingredients": {
+        "ing10": {
+          "amount": 1,
+          "state": "heated in pan"
+        }
+      },
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Fry fritters",
+          "time": "15min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "fried",
+            "description": "Heat 1 tablespoon of sunflower oil in a medium frying pan over medium-high heat. Spoon about 3 tablespoons of the mixture into the center of the pan and flatten it with the underside of the spoon to form fritters that are 2-3cm thick. Fry each fritter for 2-3 minutes on each side or until golden brown. Repeat this process with the remaining batter to make about 8 fritters."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Alternative frying method",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step3"
+            }
+          ],
+          "output": {
+            "state": "fried",
+            "description": "Alternatively, you can fry all the batter at once, similar to cooking a large omelette. Slice and serve the fritters warm or at room temperature."
+          }
+        }
+      ]
+    }
+  ]
+}

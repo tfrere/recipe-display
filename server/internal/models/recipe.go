@@ -17,18 +17,23 @@ type Recipe struct {
 		Season      string `json:"season"`
 		RecipeType  string `json:"recipeType"`
 		Quick       bool   `json:"quick"`
+		Notes       string `json:"notes"`
 	} `json:"metadata"`
 	IngredientsList []struct {
-		ID       string  `json:"id"`
-		Name     string  `json:"name"`
-		Unit     string  `json:"unit"`
-		Amount   float64 `json:"amount"`
-		Category string  `json:"category"`
-		State    string  `json:"state"`
+		ID       string      `json:"id"`
+		Name     string      `json:"name"`
+		Unit     string      `json:"unit"`
+		Amount   interface{} `json:"amount"`
+		Category string      `json:"category"`
+		State    string      `json:"state"`
 	} `json:"ingredientsList"`
 	SubRecipes []struct {
-		ID    string `json:"id"`
-		Title string `json:"title"`
+		ID          string `json:"id"`
+		Title       string `json:"title"`
+		Ingredients map[string]struct {
+			Amount float64 `json:"amount"`
+			State  string  `json:"state"`
+		} `json:"ingredients"`
 		Steps []struct {
 			ID     string `json:"id"`
 			Action string `json:"action"`
@@ -60,6 +65,7 @@ type UIRecipe struct {
 	Season      string `json:"season"`
 	RecipeType  string `json:"recipeType"`
 	Quick       bool   `json:"quick"`
+	Notes       string `json:"notes"`
 	Slug        string `json:"slug"`
 	Ingredients map[string]struct {
 		Name     string `json:"name"`
@@ -71,6 +77,7 @@ type UIRecipe struct {
 		Title string `json:"title"`
 		Ingredients map[string]struct {
 			Amount float64 `json:"amount"`
+			State  string  `json:"state"`
 		} `json:"ingredients"`
 		Steps []struct {
 			ID     string `json:"id"`
@@ -105,6 +112,7 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 		Season:      r.Metadata.Season,
 		RecipeType:  r.Metadata.RecipeType,
 		Quick:       r.Metadata.Quick,
+		Notes:       r.Metadata.Notes,
 		Slug:        strings.ToLower(strings.ReplaceAll(r.Metadata.Title, " ", "-")),
 		Ingredients: make(map[string]struct {
 			Name     string `json:"name"`
@@ -116,6 +124,7 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 			Title string `json:"title"`
 			Ingredients map[string]struct {
 				Amount float64 `json:"amount"`
+				State  string  `json:"state"`
 			} `json:"ingredients"`
 			Steps []struct {
 				ID     string `json:"id"`
@@ -200,6 +209,7 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 			Title string `json:"title"`
 			Ingredients map[string]struct {
 				Amount float64 `json:"amount"`
+				State  string  `json:"state"`
 			} `json:"ingredients"`
 			Steps []struct {
 				ID     string `json:"id"`
@@ -218,29 +228,8 @@ func (r *Recipe) ConvertToUIRecipe() *UIRecipe {
 			} `json:"steps"`
 		}{
 			Title: subRecipe.Title,
-			Ingredients: make(map[string]struct {
-				Amount float64 `json:"amount"`
-			}),
+			Ingredients: subRecipe.Ingredients, // Utiliser directement la map d'ingrédients existante
 			Steps: steps,
-		}
-
-		// Trouver les ingrédients utilisés dans les étapes de cette sous-recette
-		for _, step := range subRecipe.Steps {
-			for _, input := range step.Inputs {
-				if input.Type == "ingredient" {
-					// Trouver la quantité dans IngredientsList
-					for _, ingredient := range r.IngredientsList {
-						if ingredient.ID == input.Ref {
-							ui.SubRecipes[subRecipe.ID].Ingredients[input.Ref] = struct {
-								Amount float64 `json:"amount"`
-							}{
-								Amount: ingredient.Amount,
-							}
-							break
-						}
-					}
-				}
-			}
 		}
 	}
 

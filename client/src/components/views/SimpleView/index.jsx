@@ -6,6 +6,7 @@ import RecipeHeader from './RecipeHeader';
 import IngredientsList from './IngredientsList';
 import ToolsList from './ToolsList';
 import PreparationSteps from './PreparationSteps';
+import RecipeNotes from './RecipeNotes';
 import SingleColumnLayout from '../../layouts/SingleColumnLayout';
 import TwoColumnLayout from '../../layouts/TwoColumnLayout';
 
@@ -127,10 +128,6 @@ const SimpleView = () => {
 
   if (!recipe) return null;
 
-  const header = (
-    <RecipeHeader recipe={recipe} />
-  );
-
   const content = layoutMode === LAYOUT_MODES.SINGLE_COLUMN ? (
     <>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -143,25 +140,49 @@ const SimpleView = () => {
           <ToolsList recipe={recipe} />
         </Box>
         <Divider />
-        <PreparationSteps recipe={recipe} />
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <PreparationSteps recipe={recipe} />
+          {recipe.metadata.notes && recipe.metadata.notes.trim() !== '' && (
+            <>
+              <Divider />
+              <RecipeNotes notes={recipe.metadata.notes} />
+            </>
+          )}
+        </Box>
       </Box>
       <PrintableRecipe recipe={recipe} />
     </>
   ) : (
     <>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-          <IngredientsList 
-            recipe={recipe} 
-            sortByCategory={sortByCategory} 
-            setSortByCategory={setSortByCategory}
-          />
-          <ToolsList recipe={recipe} />
-        </Box>
-        <Divider />
         <PreparationSteps recipe={recipe} />
+        {recipe.metadata.notes && recipe.metadata.notes.trim() !== '' && (
+          <>
+            <Divider />
+            <RecipeNotes notes={recipe.metadata.notes} />
+          </>
+        )}
       </Box>
       <PrintableRecipe recipe={recipe} />
+    </>
+  );
+
+  const header = (
+    <>
+      <RecipeHeader recipe={recipe} />
+      {layoutMode === LAYOUT_MODES.TWO_COLUMN && (
+        <>
+          <Divider sx={{ my: 3 }} />
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+            <IngredientsList 
+              recipe={recipe} 
+              sortByCategory={sortByCategory} 
+              setSortByCategory={setSortByCategory}
+            />
+            <ToolsList recipe={recipe} />
+          </Box>
+        </>
+      )}
     </>
   );
 

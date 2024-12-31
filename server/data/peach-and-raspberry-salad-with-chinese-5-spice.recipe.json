@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "title": "Peach and Raspberry Salad with Chinese 5-Spice",
+    "description": "A refreshing and aromatic fruit salad with a hint of Chinese 5-spice, perfect as a side dish for barbecue meals.",
+    "servings": 4,
+    "difficulty": "easy",
+    "totalTime": "10min",
+    "image": "peach-and-raspberry-salad-with-chinese-5-spice.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/5-spice-peach-and-raspberry-salad/images/5-spice-peach-and-raspberry-salad.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/5-spice-peach-and-raspberry-salad/index.html",
+    "diet": "vegan",
+    "season": "summer",
+    "recipeType": "starter",
+    "quick": true
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "cider vinegar",
+      "unit": "tbsp",
+      "amount": 1.5,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing2",
+      "name": "maple syrup",
+      "unit": "tsp",
+      "amount": 1,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing3",
+      "name": "Chinese 5-spice",
+      "unit": "tsp",
+      "amount": 0.25,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing4",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "amount": 1,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing5",
+      "name": "shallot",
+      "unit": "g",
+      "amount": 20,
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "raspberries",
+      "unit": "g",
+      "amount": 100,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "peaches",
+      "unit": "g",
+      "amount": 290,
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "watercress",
+      "unit": "g",
+      "amount": 40,
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "radicchio",
+      "unit": "g",
+      "amount": 50,
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "tsp",
+      "amount": 0.33,
+      "category": "pantry-savory"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Salad Dressing and Tossing",
+      "ingredients": {
+        "ing1": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing10": {
+          "amount": 0.33,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing3": {
+          "amount": 0.25,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 20,
+          "state": "thinly sliced"
+        },
+        "ing6": {
+          "amount": 100,
+          "state": "crushed"
+        },
+        "ing7": {
+          "amount": 290,
+          "state": "cut into ½cm wedges"
+        },
+        "ing8": {
+          "amount": 40,
+          "state": ""
+        },
+        "ing9": {
+          "amount": 50,
+          "state": "cut into 2cm wide slices"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Mix the cider vinegar, maple syrup, Chinese 5-spice, olive oil, and thinly sliced shallot with salt.",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing10"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "The dressing is well combined with the shallots."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Gently crush the raspberries and add them to the bowl with the dressing.",
+          "time": "2min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "mixed",
+            "description": "Raspberries are crushed and incorporated into the dressing."
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Add the peach wedges, watercress, and radicchio slices to the bowl and mix well.",
+          "time": "3min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "combined",
+            "description": "Salad ingredients are well mixed and the salad is ready to serve."
+          }
+        }
+      ]
+    }
+  ]
+}

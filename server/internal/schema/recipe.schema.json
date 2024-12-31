@@ -32,9 +32,13 @@
           "quick": {
             "type": "boolean",
             "description": "Indicates if the recipe can be made in less than 30 minutes"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Author's notes, stories, or anecdotes about the recipe"
           }
         },
-        "required": ["title", "description", "servings", "difficulty", "diet", "season", "recipeType", "quick"],
+        "required": ["title", "description", "servings", "difficulty", "diet", "season", "recipeType", "quick", "notes"],
         "additionalProperties": false
       },
       "ingredientsList": {
@@ -44,22 +48,25 @@
           "properties": {
             "id": { "type": "string" },
             "name": { "type": "string" },
-            "unit": { "type": "string" },
-            "amount": { "type": "number" },
-            "category": { "type": "string" },
-            "state": {
+            "unit": { 
               "type": "string",
-              "description": "Optional preparation state of the ingredient (e.g., 'finely diced', 'room temperature', 'julienned')",
-              "examples": [
-                "finely diced",
-                "roughly chopped",
-                "julienned",
-                "brunoise",
-                "minced",
-                "room temperature",
-                "cold, cubed",
-                "boiled, medium dice"
-              ]
+              "enum": ["g", "ml", "unit", "tbsp", "tsp", "pinch"]
+            },
+            "amount": { "type": "number" },
+            "category": { 
+              "type": "string",
+              "enum": [
+                "meat",
+                "produce",
+                "dairy",
+                "pantry-savory",
+                "pantry-sweet",
+                "spice",
+                "condiments",
+                "beverages",
+                "autres"
+              ],
+              "description": "Category of the ingredient for sorting and organization"
             }
           },
           "required": ["id", "name", "unit", "amount", "category"],
@@ -73,6 +80,30 @@
           "properties": {
             "id": { "type": "string" },
             "title": { "type": "string" },
+            "ingredients": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "amount": { "type": "number" },
+                  "state": {
+                    "type": "string",
+                    "description": "Preparation state specific to this sub-recipe",
+                    "examples": [
+                      "finely diced",
+                      "roughly chopped",
+                      "julienned",
+                      "brunoise",
+                      "minced",
+                      "room temperature",
+                      "cold, cubed",
+                      "boiled, medium dice"
+                    ]
+                  }
+                },
+                "required": ["amount", "state"]
+              }
+            },
             "steps": {
               "type": "array",
               "items": {
@@ -96,8 +127,7 @@
                         },
                         "ref": { "type": "string" }
                       },
-                      "required": ["type", "ref"],
-                      "additionalProperties": false
+                      "required": ["type", "ref"]
                     }
                   },
                   "output": {
@@ -106,16 +136,14 @@
                       "state": { "type": "string" },
                       "description": { "type": "string" }
                     },
-                    "required": ["state", "description"],
-                    "additionalProperties": false
+                    "required": ["state", "description"]
                   }
                 },
-                "required": ["id", "action", "time", "inputs", "output"],
-                "additionalProperties": false
+                "required": ["id", "action", "time", "inputs", "output"]
               }
             }
           },
-          "required": ["id", "title", "steps"],
+          "required": ["id", "title", "ingredients", "steps"],
           "additionalProperties": false
         }
       },

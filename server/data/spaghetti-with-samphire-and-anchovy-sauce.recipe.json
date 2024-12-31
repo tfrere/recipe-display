@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "title": "Spaghetti with Samphire and Anchovy Sauce",
+    "description": "A delightful pasta dish featuring spaghetti with a rich and savory anchovy sauce, complemented by the fresh taste of samphire and a hint of chilli and lemon.",
+    "servings": 4,
+    "difficulty": "medium",
+    "totalTime": "20min",
+    "image": "spaghetti-with-samphire-and-anchovy-sauce.jpg",
+    "imageUrl": "http://recipes.tfrere.com/recipes/anchovy-and-samphire-spaghetti/images/anchovy-and-samphire-spaghetti.jpg",
+    "sourceUrl": "http://recipes.tfrere.com/recipes/anchovy-and-samphire-spaghetti/index.html",
+    "diet": "normal",
+    "season": "summer",
+    "recipeType": "main",
+    "quick": true
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "olive oil",
+      "unit": "ml",
+      "amount": 75,
+      "category": "condiments"
+    },
+    {
+      "id": "ing2",
+      "name": "anchovy fillets in oil",
+      "unit": "g",
+      "amount": 30,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing3",
+      "name": "Aleppo chilli flakes",
+      "unit": "tsp",
+      "amount": 1.5,
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "garlic",
+      "unit": "clove",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "lemon",
+      "unit": "unit",
+      "amount": 1,
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "parsley",
+      "unit": "g",
+      "amount": 20,
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "dry white wine",
+      "unit": "ml",
+      "amount": 100,
+      "category": "beverages"
+    },
+    {
+      "id": "ing8",
+      "name": "spaghetti",
+      "unit": "g",
+      "amount": 250,
+      "category": "pantry-savory"
+    },
+    {
+      "id": "ing9",
+      "name": "samphire",
+      "unit": "g",
+      "amount": 250,
+      "category": "produce"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Anchovy Sauce",
+      "ingredients": {
+        "ing1": {
+          "amount": 75,
+          "state": ""
+        },
+        "ing2": {
+          "amount": 30,
+          "state": "drained and finely chopped"
+        },
+        "ing3": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing4": {
+          "amount": 1,
+          "state": "crushed"
+        },
+        "ing5": {
+          "amount": 1,
+          "state": "zest finely grated to get 1 tsp"
+        },
+        "ing6": {
+          "amount": 10,
+          "state": "finely chopped"
+        },
+        "ing7": {
+          "amount": 100,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Sauté anchovy sauce ingredients",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            }
+          ],
+          "output": {
+            "state": "sautéed",
+            "description": "Anchovies have melted into the oil with the flavors of chilli, garlic, lemon zest, parsley, and black pepper."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Reduce wine in the sauce",
+          "time": "5min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing7"
+            },
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "reduced",
+            "description": "The sauce has thickened and reduced after adding the white wine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Spaghetti with Samphire",
+      "ingredients": {
+        "ing3": {
+          "amount": 1.5,
+          "state": ""
+        },
+        "ing5": {
+          "amount": 1,
+          "state": ""
+        },
+        "ing6": {
+          "amount": 10,
+          "state": "finely chopped"
+        },
+        "ing8": {
+          "amount": 250,
+          "state": "cooked until al dente"
+        },
+        "ing9": {
+          "amount": 250,
+          "state": "boiled"
+        }
+      },
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Cook pasta and samphire",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing8"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing9"
+            }
+          ],
+          "output": {
+            "state": "cooked",
+            "description": "Spaghetti is al dente and samphire is just tender after being added to the pot in the last 30 seconds."
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Combine pasta with the sauce",
+          "time": "2min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step2"
+            },
+            {
+              "type": "state",
+              "ref": "step3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing6"
+            }
+          ],
+          "output": {
+            "state": "combined",
+            "description": "Cooked spaghetti and samphire are tossed with the anchovy sauce, and the remaining parsley is stirred through."
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Serve the pasta",
+          "time": "3min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step4"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing5"
+            }
+          ],
+          "output": {
+            "state": "served",
+            "description": "The spaghetti is divided between four plates, sprinkled with extra Aleppo chilli flakes, and served with a lemon wedge on the side."
+          }
+        }
+      ]
+    }
+  ]
+}

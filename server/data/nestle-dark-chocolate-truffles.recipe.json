@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "Nestlé Dark Chocolate Truffles",
+    "description": "Decadent dark chocolate truffles made with Nestlé's absolute dark chocolate and rolled in pure unsweetened cocoa powder.",
+    "servings": 4,
+    "difficulty": "easy",
+    "totalTime": "2h10min",
+    "image": "nestle-dark-chocolate-truffles.jpg",
+    "imageUrl": "https://assets.afcdn.com/recipe/20241104/155539_origin.png",
+    "sourceUrl": "https://www.marmiton.org/recettes/recette_truffes-au-chocolat-noir-absolu-nestle-dessert_536465.aspx",
+    "diet": "vegetarian",
+    "season": "winter",
+    "recipeType": "dessert",
+    "quick": false,
+    "notes": "Decorate your cakes simply by pouring melted chocolate into a freezer bag. Cut the corner and let your creativity flow!"
+  },
+  "ingredientsList": [
+    {
+      "id": "ing1",
+      "name": "pure unsweetened cocoa powder",
+      "unit": "g",
+      "amount": 100,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing2",
+      "name": "Nestlé Absolute Dark Chocolate",
+      "unit": "unit",
+      "amount": 1,
+      "category": "pantry-sweet"
+    },
+    {
+      "id": "ing3",
+      "name": "heavy cream",
+      "unit": "ml",
+      "amount": 1,
+      "category": "dairy"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Chocolate Truffle Mixture",
+      "ingredients": {
+        "ing2": {
+          "amount": 1,
+          "state": "melted"
+        },
+        "ing3": {
+          "amount": 1,
+          "state": "mixed with chocolate"
+        }
+      },
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Melt the chocolate with the cream",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing2"
+            },
+            {
+              "type": "ingredient",
+              "ref": "ing3"
+            }
+          ],
+          "output": {
+            "state": "melted",
+            "description": "The chocolate is melted with the cream to form the truffle mixture."
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Place the truffle mixture in the refrigerator",
+          "time": "2h",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "step1"
+            }
+          ],
+          "output": {
+            "state": "chilled",
+            "description": "The truffle mixture is chilled in the refrigerator for 2 hours to set."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Forming and Coating Truffles",
+      "ingredients": {
+        "ing1": {
+          "amount": 100,
+          "state": ""
+        }
+      },
+      "steps": [
+        {
+          "id": "step3",
+          "action": "Shape into truffles and roll in the cocoa powder",
+          "time": "10min",
+          "tools": [],
+          "inputs": [
+            {
+              "type": "ingredient",
+              "ref": "ing1"
+            },
+            {
+              "type": "state",
+              "ref": "step2"
+            }
+          ],
+          "output": {
+            "state": "formed and coated",
+            "description": "The truffles are shaped and then rolled in cocoa powder to finish."
+          }
+        }
+      ]
+    }
+  ]
+}

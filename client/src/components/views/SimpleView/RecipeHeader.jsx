@@ -86,7 +86,7 @@ ${Object.entries(recipe.steps || {})
               position: 'relative',
               width: '100%',
               maxWidth: '1200px',
-              aspectRatio: '21/9',
+              aspectRatio: '16/9',
               overflow: 'hidden',
               borderRadius: { xs: 0, sm: '16px' },
               mt: 8, // Ajouté une marge supérieure de 4 unités (32px)
@@ -114,11 +114,7 @@ ${Object.entries(recipe.steps || {})
               sx={{
                 objectFit: 'cover',
                 width: '100%',
-                height: '100%',
-                transition: 'transform 0.3s ease-in-out',
-                '&:hover': {
-                  transform: 'scale(1.02)'
-                }
+                height: '100%'
               }}
             />
           </Box>
