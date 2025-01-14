@@ -27,7 +27,7 @@ RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
 # Expose port
-EXPOSE 3001
+EXPOSE $PORT
 
 # Run the application
-CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "3001"]
+CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "$PORT"]
