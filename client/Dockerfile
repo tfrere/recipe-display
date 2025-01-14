@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copier les fichiers de dépendances
 COPY package.json yarn.lock ./
-RUN yarn install --production --frozen-lockfile
+RUN yarn install --frozen-lockfile
 
 # Copier le code source du client
 COPY . .
@@ -17,18 +17,16 @@ ENV VITE_API_ENDPOINT=$VITE_API_ENDPOINT
 RUN yarn build
 
 # Production stage
-FROM node:20-alpine
+FROM nginx:alpine
 
-WORKDIR /app
+# Copier les fichiers buildés dans le répertoire par défaut de Nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copier les fichiers nécessaires depuis l'étape de build
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/yarn.lock ./yarn.lock
+# Copier le fichier de configuration Nginx
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Exposer le port
-ENV PORT=3000
-EXPOSE 3000
+EXPOSE 80
 
-# Démarrer le serveur de preview Vite
-CMD ["yarn", "preview", "--host", "--port", "3000"]
+# Démarrer Nginx
+CMD ["nginx", "-g", "daemon off;"]
