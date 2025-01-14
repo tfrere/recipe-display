@@ -18,15 +18,7 @@ app = FastAPI(title="Recipe API")
 # Configuration CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://recipes.tfrere.com",
-        "http://recipes.tfrere.com",
-        "https://recipes-api.tfrere.com",
-        "http://recipes-api.tfrere.com",
-        "https://recipe-display-production.up.railway.app",
-        "*"  # Temporairement pour debug
-    ],
+    allow_origins=["*"],  # Temporairement autoriser toutes les origines pour debug
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -19,6 +19,9 @@ COPY pyproject.toml poetry.lock ./
 # Copy project files
 COPY . .
 
+# Ensure data directory exists and has correct permissions
+RUN mkdir -p /app/data && chmod -R 755 /app/data
+
 # Install dependencies
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
