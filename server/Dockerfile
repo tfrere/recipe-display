@@ -30,4 +30,4 @@ RUN poetry config virtualenvs.create false \
 EXPOSE $PORT
 
 # Run the application
-CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}

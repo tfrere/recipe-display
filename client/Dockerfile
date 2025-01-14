@@ -1,32 +1,23 @@
-# Build stage
-FROM node:20-alpine as builder
+FROM node:20-alpine
 
 WORKDIR /app
 
-# Copier les fichiers de dépendances
+# Copy package files
 COPY package.json yarn.lock ./
+
+# Install dependencies
 RUN yarn install --frozen-lockfile
 
-# Copier le code source du client
+# Copy source code
 COPY . .
 
-# Build l'application
-ENV NODE_ENV=production
+# Build the app with the API endpoint from build arg
 ARG VITE_API_ENDPOINT
 ENV VITE_API_ENDPOINT=$VITE_API_ENDPOINT
 RUN yarn build
 
-# Production stage
-FROM nginx:alpine
+# Install serve globally with yarn
+RUN yarn global add serve
 
-# Copier les fichiers buildés dans le répertoire par défaut de Nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Copier le fichier de configuration Nginx
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Exposer le port
-EXPOSE 3000
-
-# Démarrer Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Start the application
+CMD serve -s dist -p ${PORT:-3000}
