@@ -22,6 +22,8 @@ app.add_middleware(
         "http://localhost:3000",
         "https://recipes.tfrere.com",
         "http://recipes.tfrere.com",
+        "https://recipes-api.tfrere.com",
+        "http://recipes-api.tfrere.com",
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
