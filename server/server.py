@@ -24,9 +24,11 @@ app.add_middleware(
         "http://recipes.tfrere.com",
         "https://recipes-api.tfrere.com",
         "http://recipes-api.tfrere.com",
+        "https://recipe-display-production.up.railway.app",
+        "*"  # Temporairement pour debug
     ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["*"],
     max_age=3600
