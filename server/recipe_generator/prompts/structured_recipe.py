@@ -1,0 +1,575 @@
+"""Structured recipe prompt module."""
+from typing import Dict, Any
+import sys
+import os
+import json
+
+def format_structured_recipe_prompt(content: str) -> str:
+    """Format the structured recipe prompt with the provided data."""
+    prompt_template = """
+TASK: Convert the recipe content into a structured format following these guidelines:
+
+1. CORE REQUIREMENTS:
+   - Your response MUST be a valid JSON object matching the Recipe schema
+   - ALL RECIPE TEXT MUST BE IN ENGLISH:
+     - Translate all ingredients, steps, and descriptions to English
+     - Keep measurements in metric units
+     - Maintain clarity and accuracy in translation
+
+1.1 INGREDIENT REFERENCES VALIDATION:
+   - EVERY ingredient referenced in steps MUST exist in the recipe's ingredients list
+   - EVERY ingredient in the recipe's ingredients list MUST be used in at least one step
+   - When referencing ingredients in steps:
+     * The "ref" field MUST match an existing ingredient ID
+     * The ingredient ID MUST be defined in the same subRecipe or in the main recipe
+     * NO references to non-existent ingredients are allowed
+   - Example:
+     BAD:
+     {
+       "ingredients": [{"id": "ing1", "name": "onion"}],
+       "steps": [{
+         "inputs": [{"ref": "ing2"}]  // BAD: ing2 doesn't exist
+       }]
+     }
+     GOOD:
+     {
+       "ingredients": [{"id": "ing1", "name": "onion"}],
+       "steps": [{
+         "inputs": [{"ref": "ing1"}]  // GOOD: ing1 exists
+       }]
+     }
+
+2. RECIPE METADATA AND CLASSIFICATION:
+   * Recipe Type:
+      - Must be one of: "appetizer", "starter", "main_course", "dessert", "drink", "base"
+      - Choose based on:
+        * appetizer: Small, savory bites served before a meal. Usually cold or room temperature, easy to eat with fingers.
+        * starter: Light first course served at the table. Can be hot or cold, requires cutlery.
+        * main_course: Principal dish of a meal, substantial portion with protein and sides.
+        * dessert: Sweet course served at meal's end. Includes both cold and baked items.
+        * drink: Beverages, both alcoholic and non-alcoholic. Can be hot or cold.
+        * base: Fundamental recipes used as components in other dishes.
+
+3. RECIPE STRUCTURE AND ORGANIZATION:
+   * Base Recipes:
+     - MUST be in their own subRecipe
+     - SHOULD be first in the subRecipes list
+     - MUST have clear, reusable outputs
+     Example:
+     {
+       "subRecipes": [
+         {
+           "title": "Pita Bread",
+           "id": "sub1",
+         },
+         {
+           "title": "Hummus",
+           "id": "sub2",
+         }
+       ]
+     }
+
+   * Component Organization:
+     - Group related steps together
+     - Order from base to final assembly
+     - Keep preparation logical and sequential
+
+   * Recipe Flow:
+     - Start with base preparations
+     - Follow with main components
+     - End with assembly or finishing steps
+
+4. INGREDIENTS AND TOOLS MANAGEMENT:
+   For each ingredient in ingredientsList:
+   - Set "name" to the ingredient name (e.g., "onion", "carrot")
+   - Set "unit" to one of: ["g", "ml", "unit", "tbsp", "tsp", "pinch"]
+   - Set "category" to one of:
+     * "meat": For all meat and poultry
+     * "produce": For fresh fruits and vegetables
+     * "egg": For all types of eggs
+     * "dairy": For milk, cheese, and dairy products
+     * "pantry": For dry goods, flour, rice, pasta, sugar, chocolate, etc.
+     * "spice": For herbs, spices, and seasonings
+     * "condiment": For sauces, oils, vinegars, etc.
+     * "beverage": For drinks and liquid ingredients
+     * "seafood": For fish and seafood
+     * "other": For any ingredient that doesn't fit in the above categories
+     - Set "id" to a unique identifier (e.g., "ing1", "ing2")
+
+   For each tool in toolsList:
+   - Set "name" to the tool name (e.g., "whisk", "oven", "bowl")
+   - Set "id" to a unique identifier (e.g., "tool1", "tool2")
+
+5. STEP STRUCTURE AND FORMATTING:
+   CRITICAL RULES FOR STEPS:
+   1. The 'steps' field in subRecipes MUST NEVER be null or empty array
+   2. EVERY subRecipe MUST have at least one step
+   3. If a subRecipe has ingredients or tools, it MUST have steps explaining how to use them
+   4. EVERY step MUST have a time field in one of these formats:
+      - For minutes only: "XXmin" (e.g., "5min", "30min")
+      - For hours only: "XXh" (e.g., "1h", "2h")
+      - For hours and minutes: "XXhYYmin" (e.g., "1h30min", "2h15min")
+      * Replace XX and YY with actual numbers
+      * Do not use any other format
+      * Do not use spaces
+      * Do not use seconds or other units
+   5. Each step MUST follow this structure exactly:
+      {
+        "id": "step1",
+        "action": "Clear description of what to do",
+        "time": "Duration in format: 5min, 1h30min",
+        "stepType": "prep|combine|cook",
+        "stepMode": "active|passive",
+        "inputs": [
+          {
+            "inputType": "component",
+            "ref": "ingX|toolY",
+            "type": "ingredient|tool",
+            "amount": 100  // Only for ingredients
+          } | {
+            "inputType": "state",
+            "ref": "stepZ",
+            "preparation": "Previous step preparation",
+            "name": "Previous step result"
+          }
+        ],
+        "output": {
+          "inputType": "state",
+          "ref": "stepN",
+          "preparation": "Result preparation description",
+          "name": "Result name"
+        }
+      }
+
+6. STEP TYPE RULES:
+   * "prep": Ingredient preparation without heat
+     - Washing, cutting, measuring ingredients
+     - Mixing dry ingredients
+     - Room temperature preparation
+     Examples:
+       - "Dice the onions finely"
+       - "Measure and mix the spices"
+       - "Beat the eggs"
+
+   * "combine": Mixing two or more ingredients
+     - Cold mixing or blending
+     - Making doughs or batters
+     - Assembling components
+     Examples:
+       - "Mix the flour and water to form a dough"
+       - "Fold the whipped cream into the mixture"
+       - "Layer the ingredients in the dish"
+
+   * "cook": Any step involving heat
+     - All cooking methods (boil, fry, bake, etc.)
+     - Temperature changes
+     - Cooling or chilling
+     Examples:
+       - "Boil the pasta until al dente"
+       - "Bake the cake at 180°C"
+       - "Chill the mixture in the fridge"
+
+7. STEP MODE RULES:
+   * "active": Requires constant attention
+     - Continuous stirring or monitoring
+     - Precise timing needed
+     - Physical manipulation required
+     Examples:
+       - "Stir constantly until thickened"
+       - "Knead the dough for 10 minutes"
+       - "Watch carefully and remove when golden"
+
+   * "passive": Can be left unattended
+     - Baking without intervention
+     - Resting or cooling periods
+     - Slow cooking
+     Examples:
+       - "Let rest for 30 minutes"
+       - "Bake for 45 minutes"
+       - "Refrigerate overnight"
+
+8. PREPARATION AND STATE MANAGEMENT RULES:
+   * Ingredient States:
+     - Use "state" to describe initial ingredient conditions
+     - Common state patterns:
+       > Temperature: "room temperature", "chilled", "frozen"
+       > Size: "diced", "sliced", "whole"
+       > Condition: "ripe", "day-old"
+
+   * Step Preparations:
+     - Use "preparation" to describe the result of a step
+     - Each preparation MUST have:
+       > A clear "preparation" describing what was done (e.g., "mixed", "baked", "whipped")
+       > A descriptive "name" representing the mixture/result (e.g., "Herb mixture", "Cake batter")
+     * Preparation naming guidelines:
+       - Be specific about contents (e.g., "Onion-garlic paste" rather than "Paste")
+       - Include key characteristics (e.g., "Whipped cream mixture", "Reduced sauce")
+       - Keep it concise but informative
+     * CRITICAL: NEVER use quantity terms in preparations:
+       - DO NOT use "pinch", "handful", "some", or other imprecise quantities
+       - Instead, specify the actual preparation result
+       Example:
+         BAD preparation: "Mixed ingredients"
+         GOOD preparation: "Spiced vegetable mixture"
+
+9. STEP DEPENDENCIES AND REFERENCES:
+   * When a step uses the result of a previous step:
+     1. Reference the specific step ID
+     2. Use the exact preparation from that step's output
+
+   * When a step uses the result of a sub-recipe:
+     1. Use a subRecipe reference in the inputs
+     2. Provide a descriptive name for the sub-recipe result
+     Example:
+     {
+       "subRecipes": [
+         {
+           "id": "sub1",
+           "title": "Tomato Sauce",
+           "steps": [
+             // ... steps to make tomato sauce
+           ]
+         },
+         {
+           "id": "sub2",
+           "title": "Pasta Assembly",
+           "steps": [
+             {
+               "id": "step1",
+               "action": "Mix the cooked pasta with the prepared tomato sauce",
+               "inputs": [
+                 {
+                   "inputType": "subRecipe",
+                   "ref": "sub1",
+                   "name": "Prepared tomato sauce"
+                 },
+                 // ... other inputs
+               ],
+               "output": {
+                 "inputType": "state",
+                 "ref": "step1",
+                 "preparation": "mixed",
+                 "name": "Pasta with tomato sauce"
+               }
+             }
+           ]
+         }
+       ]
+     }
+
+   Example sequence:
+     {
+       "steps": [
+         {
+           "id": "step1",
+           "action": "Dice the onions finely",
+           "inputs": [{
+             "inputType": "component",
+             "type": "ingredient",
+             "ref": "ing1",
+             "amount": 1
+           }],
+           "output": {
+             "inputType": "state",
+             "ref": "step1",
+             "preparation": "diced",
+             "name": "Diced onions"
+           }
+         },
+         {
+           "id": "step2",
+           "action": "Sauté the diced onions until golden",
+           "inputs": [
+             {
+               "inputType": "state",
+               "ref": "step1",
+               "preparation": "diced",
+               "name": "Diced onions"
+             },
+             {
+               "inputType": "component",
+               "type": "ingredient",
+               "ref": "ing2",
+               "amount": 30
+             }
+           ],
+           "output": {
+             "inputType": "state",
+             "ref": "step2",
+             "preparation": "sautéed",
+             "name": "Sautéed onions"
+           }
+         }
+       ]
+     }
+
+10. INPUTS AND OUTPUTS MANAGEMENT:
+    - For inputs array (CRITICAL RULES):
+      * The inputs array CAN BE empty for preparation steps that don't use ingredients or tools
+      * When ingredients or tools are used in a step, they MUST be referenced in the inputs array
+      * Each input MUST be either a ComponentRef or StateRef:
+        For ComponentRef (ingredients and tools):
+        - "ref": String, the ID of the ingredient or tool
+        - "type": String, one of: "ingredient", "tool"
+        - "amount": Number, ONLY for ingredients (omit for tools)
+        For StateRef (results from previous steps):
+        - "ref": String, the ID of the step being referenced
+        - "state": String, the state description from that step
+      * For ingredients and tools used in the step:
+        - Add {"type": "ingredient|tool", "ref": "ingX|toolY", "amount": N} for each component
+        - NEVER omit any ingredient or tool mentioned in the step
+      * For results from previous steps:
+        - Add {"ref": "stepY", "state": "state description"} for each used result
+        - NEVER omit any intermediate result used in the step
+      * For equipment preparation steps (e.g., preheating oven):
+        - DO NOT create a separate step for equipment preparation
+        - Instead, include the equipment preparation in the first step that uses it
+        - Example:
+          {
+            "id": "step1",
+            "action": "Preheat the oven to 180°C. While it heats, place the bread slices on a baking sheet",
+            "time": "10min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "ingredient",
+                "ref": "ing1",  // bread slices
+                "amount": 6
+              },
+              {
+                "type": "tool",
+                "ref": "tool1"  // baking sheet
+              }
+            ],
+            "output": {
+              "ref": "step1",
+              "state": "prepared"
+            }
+          }
+      * If a step seems to have no inputs:
+        - Check if you can combine it with the next step that uses the equipment
+        - Check if you missed any ingredients
+        - Check if you need to add ingredients to ingredientsList
+        - Check if you need to reference a previous step's result
+      * For equipment preparation steps:
+        - Include the equipment preparation in the first step that uses it
+        - Make sure the equipment is properly used in the step's text
+        - Verify that the equipment serves a clear purpose in the recipe
+
+    - For output object:
+      * "state": short description of result (e.g., "mixed", "baked", "chopped")
+      * "description": detailed description of the result
+    
+    - In the step's action text:
+      * Be explicit about what ingredients are being mixed
+      * Always mention ingredient names when multiple ingredients are involved
+      * Example: Instead of "Mix the ingredients", write "Mix the flour, sugar, and butter until well combined"
+
+11. EQUIPMENT HANDLING RULES:
+    * Common Equipment vs Special Equipment:
+      - Common equipment (NO NEED to mention in steps):
+        > Bowls, spoons, whisks, measuring cups
+        > Basic pots and pans
+        > Standard utensils
+        > Cutting boards, knives
+      - Special equipment (MUST be mentioned):
+        > Food processor, blender, mixer
+        > Specialty pans (wok, tagine, etc.)
+        > Thermometers, scales
+        > Specific tools (pasta maker, mandoline)
+
+    * How to Reference Equipment:
+      1. First mention: Include full details
+         "Using a food processor fitted with the S-blade..."
+      2. Later mentions: Use shorter reference
+         "Pulse in the food processor until..."
+
+    * Equipment in Steps:
+      - ALWAYS combine equipment setup with ingredient prep
+      - Include both the preheating and the prep in the same step's time
+      Examples:
+        BAD:
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 240°C",
+          "time": "15min"
+        }
+        
+        GOOD:
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 240°C. While it heats, divide the dough into 8 equal portions and shape each into a ball",
+          "time": "15min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "type": "state",
+              "ref": "previousStep" 
+            }
+          ],
+          "output": {
+            "state": "portioned",
+            "description": "8 dough balls ready for rolling, oven preheating"
+          }
+        }
+
+12. TOOLS MANAGEMENT:
+    - Only track special or non-standard equipment:
+      * Include: food processor, stand mixer, spice grinder, special pans/dishes
+      * Exclude: basic tools like knives, bowls, spoons, cutting boards
+    - EVERY special tool MUST be explicitly used in at least one step
+    - EVERY tool's usage MUST be clearly described in the step's text
+
+13. PORTION AND QUANTITY RULES:
+    * Scaling Guidelines:
+      - Use standard metric measurements:
+        > Weight: grams (g)
+        > Volume: milliliters (ml)
+        > Small amounts: teaspoon (tsp), tablespoon (tbsp)
+        > Count: unit
+
+    * Quantity Precision:
+      - For critical ingredients (leaveners, spices):
+        > Use exact measurements
+        > Example: "7g of yeast" not "1 packet of yeast"
+      - For flexible ingredients:
+        > Round to convenient numbers
+        > Example: "500g potatoes" not "485g potatoes"
+
+    * Volume to Weight Conversion:
+      - ALWAYS prefer weight (g) over volume when possible
+      - Standard conversions:
+        > 1 cup flour = 120g
+        > 1 cup sugar = 200g
+        > 1 cup butter = 227g
+        > 1 cup milk = 240ml
+
+    * Unit Selection Rules:
+      - Use "g" for:
+        > All solid ingredients that can be weighed
+        > Dense ingredients (butter, cheese)
+        > Dry ingredients (flour, sugar)
+      - Use "ml" for:
+        > All liquid ingredients
+        > Oils, vinegars, sauces
+      - Use "unit" for:
+        > Whole items (eggs, garlic cloves)
+        > Standard-sized items (bread slices)
+      - Use "tsp" or "tbsp" for:
+        > Small amounts of spices
+        > Small amounts of liquid ingredients
+        > When precise small measurements matter
+
+    * Quantity Formatting:
+      - Whole numbers: "100g" not "100.0g"
+      - Decimals: Use only .5 or .25
+        > "2.5 tbsp" is OK
+        > "2.33 tbsp" is NOT OK
+      - Ranges: Use the middle value
+        > "2-3 tbsp" becomes "2.5 tbsp"
+
+    * Special Cases:
+      - "to taste" ingredients:
+        > ALWAYS provide a default amount
+        > Example: "salt to taste" becomes "5g salt, plus more to taste"
+      - "as needed" ingredients:
+        > MUST specify a reasonable amount
+        > Example: "oil for frying" becomes "60ml oil for frying"
+
+14. TEMPERATURE AND PREHEATING RULES:
+    * Temperature Steps:
+      - Create dedicated steps for all temperature changes
+      - Each temperature change MUST be its own step
+      - These steps should have stepType "prep" and stepMode "passive"
+      Example:
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 240°C fan",
+          "time": "15min",
+          "stepType": "prep",
+          "stepMode": "passive"
+        }
+
+    * Temperature Specifications:
+      - ALWAYS include both Celsius and fan setting if relevant:
+        > "240°C fan" or "240°C conventional"
+      - For specific equipment temperatures:
+        > "Heat oil to 180°C" (deep frying)
+        > "Medium-high heat" (stovetop)
+        > "Low and slow" (slow cooking)
+
+    * Critical Rules:
+      1. Temperature changes MUST be in dedicated steps
+      2. NO combining temperature steps with other actions
+      3. Temperature steps MUST specify fan/conventional for ovens
+
+15. TIME FORMAT RULES:
+    * ALWAYS use the format: NUMBER + UNIT without space
+    * Valid units: "min" for minutes, "h" for hours
+    * For combined times: "1h30min" not "1:30" or "90min"
+    * For ranges: Use the maximum time (e.g., "15-20min" becomes "20min")
+    * For "until done" steps: Estimate a reasonable maximum time
+    * Examples:
+      - "5min" for short times
+      - "1h" for exact hours
+      - "1h30min" for combined times
+      - "45min" for 40-45 minutes
+      - "2h" for "about 2 hours"
+    * NEVER use:
+      - Decimal points (use "90min" not "1.5h")
+      - Ranges (use maximum time)
+      - Approximate language ("about", "around")
+
+16. NOTES MANAGEMENT:
+    - The "notes" field in the recipe MUST be an array of strings
+    - Each note MUST be a separate element in the array
+    - Each note are separated by "---", DO NOT include it in the text
+    - DO NOT:
+      * Modify the text in any way
+      * Translate any part of it
+      * Add formatting or markdown
+      * Reorganize or regroup sections
+      * Change punctuation or spacing
+    - Each note should be a pure string
+    - If text is in a non-English language, keep it in that language
+    - If there are no notes, use an empty array
+
+17. VALIDATION AND CROSS-REFERENCING:
+    - For ingredients:
+      * EVERY ingredient in ingredientsList MUST be used in at least one step's inputs array
+      * If an ingredient is never used in any step, REMOVE it from ingredientsList
+    - For special tools:
+      * EVERY tool MUST be explicitly used in at least one step
+      * EVERY tool's usage MUST be clearly described in the step's text
+      * If a tool is listed but not properly used, REMOVE it completely
+      * Verify that each tool serves a clear purpose in the recipe
+
+INPUT CONTENT:
+"""
+    return prompt_template + "/n" + content
+
+
+if __name__ == "__main__":
+    # Example usage
+    example_content = """
+    A delicious chocolate cake recipe.
+    
+    Ingredients:
+    - 200g flour
+    - 100g sugar
+    - 2 eggs
+    
+    Instructions:
+    1. Mix dry ingredients
+    2. Add wet ingredients
+    3. Bake at 180°C for 30 minutes
+    """
+    
+    # Format and print the prompt
+    prompt = format_structured_recipe_prompt(example_content)
+    print("\nSTRUCTURED RECIPE PROMPT:")
+    print("=" * 80)
+    print(prompt)
+    print("=" * 80)

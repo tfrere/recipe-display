@@ -1,0 +1,252 @@
+{
+  "diets": [
+    {
+      "id": "vegetarian",
+      "name": "Végétarien",
+      "description": "Pas de viande ni de poisson",
+      "excludes": ["meat", "fish", "seafood"],
+      "type": "diet"
+    },
+    {
+      "id": "vegan",
+      "name": "Végétalien",
+      "description": "Aucun produit d'origine animale",
+      "excludes": ["meat", "fish", "seafood", "dairy", "eggs", "honey"],
+      "type": "diet"
+    },
+    {
+      "id": "pescatarian",
+      "name": "Pescétarien",
+      "description": "Pas de viande mais poisson autorisé",
+      "excludes": ["meat"],
+      "type": "diet"
+    },
+    {
+      "id": "flexitarian",
+      "name": "Flexitarien",
+      "description": "Alimentation principalement végétarienne avec consommation occasionnelle de viande",
+      "excludes": [],
+      "preferences": ["reduce-meat"],
+      "type": "diet"
+    },
+    {
+      "id": "halal",
+      "name": "Halal",
+      "description": "Conforme aux préceptes de l'Islam",
+      "excludes": ["pork", "alcohol", "non-halal-meat"],
+      "type": "religious"
+    },
+    {
+      "id": "kosher",
+      "name": "Casher",
+      "description": "Conforme aux préceptes du Judaïsme",
+      "excludes": ["pork", "shellfish", "non-kosher-meat", "meat-dairy-mix"],
+      "type": "religious"
+    },
+    {
+      "id": "raw-vegan",
+      "name": "Crudivorisme",
+      "description": "Alimentation végétalienne non cuite (< 42°C)",
+      "excludes": ["meat", "fish", "seafood", "dairy", "eggs", "honey", "cooked-food"],
+      "type": "diet"
+    },
+    {
+      "id": "keto",
+      "name": "Cétogène",
+      "description": "Très pauvre en glucides, riche en graisses",
+      "excludes": ["sugar", "grains", "starchy-vegetables"],
+      "type": "diet"
+    }
+  ],
+  "allergies": [
+    {
+      "id": "gluten",
+      "name": "Sans Gluten",
+      "description": "Allergie ou intolérance au gluten",
+      "excludes": ["wheat", "barley", "rye", "oats", "spelt", "semolina", "couscous"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "lactose",
+      "name": "Sans Lactose",
+      "description": "Intolérance au lactose",
+      "excludes": ["milk", "cream", "cheese", "yogurt", "butter", "ice-cream", "whey"],
+      "severity": "medium",
+      "type": "intolerance"
+    },
+    {
+      "id": "nuts",
+      "name": "Sans Fruits à Coque",
+      "description": "Allergie aux fruits à coque",
+      "excludes": ["peanuts", "almonds", "hazelnuts", "walnuts", "cashews", "pistachios", "pecans", "macadamia"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "shellfish",
+      "name": "Sans Fruits de Mer",
+      "description": "Allergie aux fruits de mer et crustacés",
+      "excludes": ["shrimp", "crab", "lobster", "mussels", "clams", "oysters", "scallops", "squid", "octopus"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "eggs",
+      "name": "Sans Œufs",
+      "description": "Allergie aux œufs",
+      "excludes": ["eggs", "mayonnaise", "meringue", "custard", "egg-pasta"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "soy",
+      "name": "Sans Soja",
+      "description": "Allergie au soja",
+      "excludes": ["soy-sauce", "tofu", "edamame", "soy-lecithin", "miso", "tempeh", "textured-vegetable-protein"],
+      "severity": "medium",
+      "type": "allergy"
+    },
+    {
+      "id": "fish",
+      "name": "Sans Poisson",
+      "description": "Allergie au poisson",
+      "excludes": ["fish", "fish-sauce", "worcestershire-sauce", "caesar-dressing", "anchovy-paste"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "sesame",
+      "name": "Sans Sésame",
+      "description": "Allergie au sésame",
+      "excludes": ["sesame-seeds", "sesame-oil", "tahini", "hummus"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "mustard",
+      "name": "Sans Moutarde",
+      "description": "Allergie à la moutarde",
+      "excludes": ["mustard", "mustard-seeds", "mustard-oil", "dijon-mustard"],
+      "severity": "high",
+      "type": "allergy"
+    },
+    {
+      "id": "celery",
+      "name": "Sans Céleri",
+      "description": "Allergie au céleri",
+      "excludes": ["celery", "celery-seeds", "celery-salt", "celeriac"],
+      "severity": "high",
+      "type": "allergy"
+    }
+  ],
+  "intolerances": [
+    {
+      "id": "fodmap",
+      "name": "FODMAP",
+      "description": "Régime pauvre en FODMAP",
+      "excludes": [
+        "onion",
+        "garlic",
+        "wheat",
+        "legumes",
+        "honey",
+        "high-fructose-fruits",
+        "artificial-sweeteners",
+        "dairy"
+      ],
+      "severity": "medium",
+      "type": "intolerance"
+    },
+    {
+      "id": "histamine",
+      "name": "Sans Histamine",
+      "description": "Intolérance à l'histamine",
+      "excludes": [
+        "fermented-foods",
+        "aged-cheese",
+        "cured-meats",
+        "alcohol",
+        "vinegar",
+        "sauerkraut",
+        "kombucha",
+        "dried-fruits",
+        "avocado",
+        "tomatoes",
+        "spinach"
+      ],
+      "severity": "medium",
+      "type": "intolerance"
+    },
+    {
+      "id": "sulfites",
+      "name": "Sans Sulfites",
+      "description": "Intolérance aux sulfites",
+      "excludes": ["wine", "dried-fruits", "processed-foods", "vinegar", "grape-juice"],
+      "severity": "medium",
+      "type": "intolerance"
+    },
+    {
+      "id": "salicylates",
+      "name": "Sans Salicylates",
+      "description": "Intolérance aux salicylates",
+      "excludes": ["berries", "citrus-fruits", "spices", "honey", "mint", "tea"],
+      "severity": "medium",
+      "type": "intolerance"
+    },
+    {
+      "id": "nightshades",
+      "name": "Sans Solanacées",
+      "description": "Sensibilité aux solanacées",
+      "excludes": ["tomatoes", "peppers", "eggplant", "potatoes", "paprika", "cayenne"],
+      "severity": "medium",
+      "type": "intolerance"
+    }
+  ],
+  "preferences": [
+    {
+      "id": "no-spicy",
+      "name": "Sans Piment",
+      "description": "Pas d'aliments épicés",
+      "excludes": ["chili", "hot-pepper", "cayenne", "tabasco", "wasabi"],
+      "type": "preference"
+    },
+    {
+      "id": "low-carb",
+      "name": "Pauvre en Glucides",
+      "description": "Limitation des glucides",
+      "excludes": ["sugar", "bread", "pasta", "rice", "potatoes", "corn", "sweet-treats"],
+      "type": "preference"
+    },
+    {
+      "id": "low-fat",
+      "name": "Pauvre en Graisses",
+      "description": "Limitation des matières grasses",
+      "excludes": ["fried-foods", "fatty-meats", "cream", "butter", "oils", "nuts"],
+      "type": "preference"
+    },
+    {
+      "id": "low-sodium",
+      "name": "Pauvre en Sel",
+      "description": "Limitation du sodium",
+      "excludes": ["processed-foods", "cured-meats", "salty-snacks", "soy-sauce", "stock-cubes"],
+      "type": "preference"
+    },
+    {
+      "id": "mediterranean",
+      "name": "Régime Méditerranéen",
+      "description": "Basé sur les habitudes alimentaires méditerranéennes",
+      "preferences": ["olive-oil", "vegetables", "fruits", "whole-grains", "fish"],
+      "reduces": ["red-meat", "processed-foods", "added-sugars"],
+      "type": "preference"
+    },
+    {
+      "id": "raw",
+      "name": "Préférence Cru",
+      "description": "Préférence pour les aliments crus ou peu cuits",
+      "preferences": ["raw-vegetables", "raw-fruits", "sprouted-grains"],
+      "reduces": ["cooked-foods"],
+      "type": "preference"
+    }
+  ]
+}

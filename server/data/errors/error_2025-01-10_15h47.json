@@ -1,0 +1,321 @@
+{
+  "error_type": "recipe_validation_error",
+  "error_message": "62 validation errors for Recipe\ningredientsList.1.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='oil', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.2.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='vegetable', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.3.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='grain', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.5.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='other', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.6.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='other', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.7.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='herb', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.8.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='fruit', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\ningredientsList.9.category\n  Input should be 'meat', 'produce', 'dairy', 'pantry-savory', 'pantry-sweet', 'spice', 'condiments', 'beverages' or 'autres' [type=literal_error, input_value='oil', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.ingredients\n  Field required [type=missing, input_value={'id': 'sub1', 'title': '...': 'reserved onions'}}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.0.type\n  Field required [type=missing, input_value={'id': 'ing1', 'amount': 45.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'ing1', 'amount': 45.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.1.type\n  Field required [type=missing, input_value={'id': 'ing2', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.1.ref\n  Field required [type=missing, input_value={'id': 'ing2', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.2.type\n  Field required [type=missing, input_value={'id': 'ing3', 'amount': 2.0, 'unit': 'unit'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.2.ref\n  Field required [type=missing, input_value={'id': 'ing3', 'amount': 2.0, 'unit': 'unit'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.3.type\n  Field required [type=missing, input_value={'id': 'ing6', 'amount': 3.0, 'unit': 'pinch'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.3.ref\n  Field required [type=missing, input_value={'id': 'ing6', 'amount': 3.0, 'unit': 'pinch'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.output.state\n  Field required [type=missing, input_value={'id': 'step1_output', 'name': 'buttered onions'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.output.description\n  Field required [type=missing, input_value={'id': 'step1_output', 'name': 'buttered onions'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.1.inputs.0.type\n  Field required [type=missing, input_value={'id': 'step1', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.1.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'step1', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.1.output.state\n  Field required [type=missing, input_value={'id': 'step2_output', 'name': 'reserved onions'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.1.output.description\n  Field required [type=missing, input_value={'id': 'step2_output', 'name': 'reserved onions'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.ingredients\n  Field required [type=missing, input_value={'id': 'sub2', 'title': '...me': 'smooth purée'}}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.0.type\n  Field required [type=missing, input_value={'id': 'ing4', 'amount': 180.0, 'unit': 'g'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'ing4', 'amount': 180.0, 'unit': 'g'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.1.type\n  Field required [type=missing, input_value={'id': 'ing5', 'amount': 0.5, 'unit': 'tsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.1.ref\n  Field required [type=missing, input_value={'id': 'ing5', 'amount': 0.5, 'unit': 'tsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.2.type\n  Field required [type=missing, input_value={'id': 'ing6', 'amount': 3.0, 'unit': 'pinch'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.inputs.2.ref\n  Field required [type=missing, input_value={'id': 'ing6', 'amount': 3.0, 'unit': 'pinch'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.output.state\n  Field required [type=missing, input_value={'id': 'step3_output', 'n...e': 'simmering mixture'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.0.output.description\n  Field required [type=missing, input_value={'id': 'step3_output', 'n...e': 'simmering mixture'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.1.inputs.0.type\n  Field required [type=missing, input_value={'id': 'step3', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.1.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'step3', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.1.output.state\n  Field required [type=missing, input_value={'id': 'step4_output', 'n...e': 'cooked split peas'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.1.output.description\n  Field required [type=missing, input_value={'id': 'step4_output', 'n...e': 'cooked split peas'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.inputs.0.type\n  Field required [type=missing, input_value={'id': 'step4', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'step4', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.inputs.1.type\n  Field required [type=missing, input_value={'id': 'ing10', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.inputs.1.ref\n  Field required [type=missing, input_value={'id': 'ing10', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.output.state\n  Field required [type=missing, input_value={'id': 'step5_output', 'name': 'smooth purée'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.1.steps.2.output.description\n  Field required [type=missing, input_value={'id': 'step5_output', 'name': 'smooth purée'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.ingredients\n  Field required [type=missing, input_value={'id': 'sub3', 'title': '...name': 'caper salsa'}}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.0.type\n  Field required [type=missing, input_value={'id': 'ing7', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'ing7', 'amount': 30.0, 'unit': 'tbsp'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.1.type\n  Field required [type=missing, input_value={'id': 'ing8', 'amount': 5.0, 'unit': 'g'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.1.ref\n  Field required [type=missing, input_value={'id': 'ing8', 'amount': 5.0, 'unit': 'g'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.2.type\n  Field required [type=missing, input_value={'id': 'ing9', 'amount': 2.0, 'unit': 'unit'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.inputs.2.ref\n  Field required [type=missing, input_value={'id': 'ing9', 'amount': 2.0, 'unit': 'unit'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.output.state\n  Field required [type=missing, input_value={'id': 'step6_output', 'name': 'caper salsa'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.2.steps.0.output.description\n  Field required [type=missing, input_value={'id': 'step6_output', 'name': 'caper salsa'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.ingredients\n  Field required [type=missing, input_value={'id': 'sub4', 'title': '...'name': 'final dish'}}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.0.inputs.0.type\n  Field required [type=missing, input_value={'id': 'step5', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.0.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'step5', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.0.output.state\n  Field required [type=missing, input_value={'id': 'step7_output', 'name': 'assembled dish'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.0.output.description\n  Field required [type=missing, input_value={'id': 'step7_output', 'name': 'assembled dish'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.inputs.0.type\n  Field required [type=missing, input_value={'id': 'step2', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.inputs.0.ref\n  Field required [type=missing, input_value={'id': 'step2', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.inputs.1.type\n  Field required [type=missing, input_value={'id': 'step6', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.inputs.1.ref\n  Field required [type=missing, input_value={'id': 'step6', 'amount': None, 'unit': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.output.state\n  Field required [type=missing, input_value={'id': 'step8_output', 'name': 'final dish'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.3.steps.1.output.description\n  Field required [type=missing, input_value={'id': 'step8_output', 'name': 'final dish'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing",
+  "recipe_json": {
+    "metadata": {
+      "title": "Yellow Split Pea Purée with Buttered Onions and Caper Salsa",
+      "description": "A Mediterranean-inspired purée of yellow split peas served with buttered onions and caper salsa, perfect as a dip or side dish.",
+      "servings": 4,
+      "difficulty": "medium",
+      "diet": [
+        "vegetarian",
+        "omnivorous"
+      ],
+      "season": [
+        "all"
+      ],
+      "recipeType": "starter",
+      "notes": [
+        "Yotam’s love affair with the Mediterranean means those signature staples – fatty olive oil, salty feta, briny capers! – permeate both his home kitchen and the OTK. This purée is a take on fava, a Greek mezze dish of yellow split peas with capers and red onion. It’s fantastic served as a dip, but also works alongside grilled fish or roasted meat.",
+        "Make it your own - Veganise it: swap the butter for olive oil."
+      ],
+      "imageUrl": "",
+      "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/08/035_yellowpeapuree_2025-031-878x1024.jpg",
+      "sourceUrl": "https://books.ottolenghi.co.uk/otk-shelf-love/recipe/yellow-split-pea-puree-with-buttered-onions-and-caper-salsa/",
+      "nationality": "Mediterranean",
+      "author": "Yotam Ottolenghi",
+      "bookTitle": "Ottolenghi Books",
+      "slug": "",
+      "totalTime": 93.0,
+      "quick": false
+    },
+    "ingredientsList": [
+      {
+        "id": "ing1",
+        "name": "unsalted butter",
+        "unit": "tbsp",
+        "category": "dairy",
+        "amount": 45.0
+      },
+      {
+        "id": "ing2",
+        "name": "olive oil",
+        "unit": "tbsp",
+        "category": "oil",
+        "amount": 45.0
+      },
+      {
+        "id": "ing3",
+        "name": "red onions",
+        "unit": "unit",
+        "category": "vegetable",
+        "amount": 2.0
+      },
+      {
+        "id": "ing4",
+        "name": "yellow split peas",
+        "unit": "g",
+        "category": "grain",
+        "amount": 180.0
+      },
+      {
+        "id": "ing5",
+        "name": "ground turmeric",
+        "unit": "tsp",
+        "category": "spice",
+        "amount": 0.5
+      },
+      {
+        "id": "ing6",
+        "name": "salt",
+        "unit": "pinch",
+        "category": "other",
+        "amount": 1.0
+      },
+      {
+        "id": "ing7",
+        "name": "capers",
+        "unit": "tbsp",
+        "category": "other",
+        "amount": 30.0
+      },
+      {
+        "id": "ing8",
+        "name": "parsley",
+        "unit": "g",
+        "category": "herb",
+        "amount": 5.0
+      },
+      {
+        "id": "ing9",
+        "name": "lemon slices",
+        "unit": "unit",
+        "category": "fruit",
+        "amount": 2.0
+      },
+      {
+        "id": "ing10",
+        "name": "olive oil",
+        "unit": "tbsp",
+        "category": "oil",
+        "amount": 30.0
+      }
+    ],
+    "subRecipes": [
+      {
+        "id": "sub1",
+        "title": "Buttered Onions",
+        "steps": [
+          {
+            "id": "step1",
+            "action": "Cook the onions with butter and oil until soft and golden.",
+            "time": "18min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "ing1",
+                "amount": 45.0,
+                "unit": "tbsp"
+              },
+              {
+                "id": "ing2",
+                "amount": 30.0,
+                "unit": "tbsp"
+              },
+              {
+                "id": "ing3",
+                "amount": 2.0,
+                "unit": "unit"
+              },
+              {
+                "id": "ing6",
+                "amount": 3.0,
+                "unit": "pinch"
+              }
+            ],
+            "output": {
+              "id": "step1_output",
+              "name": "buttered onions"
+            }
+          },
+          {
+            "id": "step2",
+            "action": "Transfer half the onions to a bowl and set aside.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "step1",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "id": "step2_output",
+              "name": "reserved onions"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sub2",
+        "title": "Yellow Split Pea Purée",
+        "steps": [
+          {
+            "id": "step3",
+            "action": "Add split peas, turmeric, water, and salt to the pan with remaining onions and bring to a simmer.",
+            "time": "5min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "ing4",
+                "amount": 180.0,
+                "unit": "g"
+              },
+              {
+                "id": "ing5",
+                "amount": 0.5,
+                "unit": "tsp"
+              },
+              {
+                "id": "ing6",
+                "amount": 3.0,
+                "unit": "pinch"
+              }
+            ],
+            "output": {
+              "id": "step3_output",
+              "name": "simmering mixture"
+            }
+          },
+          {
+            "id": "step4",
+            "action": "Cover and cook until split peas are soft and liquid has evaporated.",
+            "time": "45min",
+            "stepType": "cook",
+            "stepMode": "passive",
+            "inputs": [
+              {
+                "id": "step3",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "id": "step4_output",
+              "name": "cooked split peas"
+            }
+          },
+          {
+            "id": "step5",
+            "action": "Blitz the split peas in a food processor until smooth.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "step4",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "id": "ing10",
+                "amount": 30.0,
+                "unit": "tbsp"
+              }
+            ],
+            "output": {
+              "id": "step5_output",
+              "name": "smooth purée"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sub3",
+        "title": "Caper Salsa",
+        "steps": [
+          {
+            "id": "step6",
+            "action": "Combine all ingredients for the caper salsa in a bowl.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "ing7",
+                "amount": 30.0,
+                "unit": "tbsp"
+              },
+              {
+                "id": "ing8",
+                "amount": 5.0,
+                "unit": "g"
+              },
+              {
+                "id": "ing9",
+                "amount": 2.0,
+                "unit": "unit"
+              }
+            ],
+            "output": {
+              "id": "step6_output",
+              "name": "caper salsa"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sub4",
+        "title": "Assembly",
+        "steps": [
+          {
+            "id": "step7",
+            "action": "Spoon the purée into a dish and create a dip in the middle.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "step5",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "id": "step7_output",
+              "name": "assembled dish"
+            }
+          },
+          {
+            "id": "step8",
+            "action": "Mix buttered onions with caper salsa and spoon on top of the purée.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "id": "step2",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "id": "step6",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "id": "step8_output",
+              "name": "final dish"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timestamp": "2025-01-10T15:47:23.662066"
+}

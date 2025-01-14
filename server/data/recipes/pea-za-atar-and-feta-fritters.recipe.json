@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "title": "Pea, Za\u2019atar and Feta Fritters",
+    "description": "A delicious fritter made with green peas, ricotta, za\u2019atar, and feta, perfect for serving warm or at room temperature.",
+    "servings": 4,
+    "recipeType": "starter",
+    "notes": [
+      "This is pretty much a roll-call of my favourite things: green peas, ricotta, za\u2019atar and feta. Add the words fritter and fried and I\u2019m the one at the hob, eating them straight from the pan, all hot and crispy. For those with more restraint, they also work at room temperature, though they lose their crunch. The batter can be made in advance and kept in the fridge for 1 day; just hold back on adding the baking powder and mint until you are ready to start frying. I\u2019ve served them here with a wedge of lemon to squeeze over, but if you want to add an extra twist, make a little soured cream sauce to have instead of (or as well as) the lemon. Just mix 300g soured cream with 10g chopped mint leaves, 2 tsp dried mint, \u00bd tsp finely grated lemon zest and \u00bc tsp salt."
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/021_pea_zaatar_digi-f3a77219-f1c7-4004-971b-69ba5f2bcef8_s1200x0_q80_noupscale-682x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "pea-za-atar-and-feta-fritters",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/pea-zaatar-and-feta-fritters/",
+    "imageUrl": "recipes/images/original/pea-za-atar-and-feta-fritters.webp",
+    "diets": ["vegan", "vegetarian", "omnivorous"],
+    "seasons": ["all"],
+    "peakMonths": [],
+    "totalTime": 5.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "frozen peas, defrosted",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "ricotta",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing3",
+      "name": "large eggs, beaten",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing4",
+      "name": "lemon",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "za'atar",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "plain flour",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing7",
+      "name": "baking powder",
+      "unit": "tsp",
+      "category": "pantry"
+    },
+    {
+      "id": "ing8",
+      "name": "mint leaves, finely shredded",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "feta, crumbled into 2cm pieces",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "sunflower oil, for frying",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing12",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing13",
+      "name": "soured cream",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing14",
+      "name": "mint leaves, chopped",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing15",
+      "name": "dried mint",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing16",
+      "name": "lemon zest",
+      "unit": "tsp",
+      "category": "produce"
+    },
+    {
+      "id": "ing17",
+      "name": "salt for sauce",
+      "unit": "tsp",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "food processor"
+    },
+    {
+      "id": "tool2",
+      "name": "medium saucepan"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Soured Cream Sauce",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing13",
+          "type": "ingredient",
+          "amount": 300.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing14",
+          "type": "ingredient",
+          "amount": 10.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing15",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing16",
+          "type": "ingredient",
+          "amount": 0.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing17",
+          "type": "ingredient",
+          "amount": 0.25
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Mix the soured cream with chopped mint leaves, dried mint, finely grated lemon zest, and salt until well combined.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing13",
+              "type": "ingredient",
+              "amount": 300.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing14",
+              "type": "ingredient",
+              "amount": 10.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing15",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 0.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 0.25
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "mixed",
+            "name": "Soured cream sauce"
+          }
+        }
+      ]
+    }
+  ]
+}

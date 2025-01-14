@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "title": "Courgette and Ciabatta Frittata",
+    "description": "This is a regular feature at home on the weekend, when Karl and I are feeding friends. We tend to serve it with a mixed herb and leaf salad dressed with lemon juice and olive oil and a few chunks of feta crumbled over. The frittata manages to be light, fluffy and comforting in a way that you can only get when you soak bread with milk and cream. Don\u2019t waste the ciabatta crusts: they can be blitzed into fresh breadcrumbs and freeze well. This can be baked about 4 hours in advance and then warmed through for 5 minutes before serving. Ideally it should be eaten on the day it is baked, but it will keep in the fridge for 1 day; just warm through for 10 minutes.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/008_courgette_ciabatta_frittata_digi-c84eb9e2-93c6-47b6-96a1-c5a5c97a5f92_s1200x0_q80_noupscale-683x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "courgette-and-ciabatta-frittata",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/courgette-and-ciabatta-frittata/",
+    "imageUrl": "recipes/images/original/courgette-and-ciabatta-frittata.webp",
+    "diets": ["vegetarian", "omnivorous"],
+    "seasons": ["spring", "winter"],
+    "peakMonths": ["February", "January", "December", "March", "April"],
+    "totalTime": 40.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "ciabatta",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing2",
+      "name": "whole milk",
+      "unit": "ml",
+      "category": "dairy"
+    },
+    {
+      "id": "ing3",
+      "name": "double cream",
+      "unit": "ml",
+      "category": "dairy"
+    },
+    {
+      "id": "ing4",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "large eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing6",
+      "name": "ground cumin",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing7",
+      "name": "Parmesan",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing8",
+      "name": "courgettes",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "basil leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing12",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "medium bowl"
+    },
+    {
+      "id": "tool2",
+      "name": "large bowl"
+    },
+    {
+      "id": "tool3",
+      "name": "20 x 25cm baking dish"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Ciabatta Soaking",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 500.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 200.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 200.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Put the ciabatta, milk and cream into a medium bowl and mix well. Cover and set aside for 30 minutes, for the bread to absorb most of the liquid.",
+          "time": "30min",
+          "stepType": "combine",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 500.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 200.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 200.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "soaked",
+            "name": "Soaked ciabatta mixture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Frittata Mixture",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 6.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 0.75
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 80.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 25.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 1.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Put the garlic, eggs, cumin and 50g of Parmesan into a separate large bowl with \u00be teaspoon of salt and \u00bc teaspoon of pepper. Mix well, then add the bread and any remaining liquid, followed by the courgettes and basil. Stir gently.",
+          "time": "10min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "sub1",
+              "preparation": "soaked",
+              "name": "Soaked ciabatta mixture"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 6.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 0.75
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 50.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 25.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "mixed",
+            "name": "Frittata mixture"
+          }
+        }
+      ]
+    }
+  ]
+}

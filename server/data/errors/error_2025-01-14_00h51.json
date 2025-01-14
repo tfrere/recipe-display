@@ -1,0 +1,423 @@
+{
+  "error_type": "recipe_validation_error",
+  "error_message": "1 validation error for Recipe\nmetadata.sourceImageUrl\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type",
+  "recipe_json": {
+    "metadata": {
+      "title": "30 Best Plant-Based Soups & Stews",
+      "description": "The very best plant-based soups and stews for the whole family! Veggie- and protein-packed, flavorful, cozy and perfect for batch cooking. Whether it’s cold outside or you want to eat more veggies and stay on a budget — plant-based soups are always a win! What’s there not to love about them? They are suitable for beginners, great for batch cooking, super versatile, nutritious, and can hide a whole bunch of veggies. They are among our favorite vegan winter recipes and make for delicious lazy and low-calorie meals! What we love most about soups is that they are so easy to customize with whatever we find in our kitchen and that’s about to go bad in a few days.",
+      "servings": 4,
+      "recipeType": "starter",
+      "notes": [],
+      "sourceImageUrl": null,
+      "nationality": "Various",
+      "author": "Alena Schowalter",
+      "bookTitle": "",
+      "slug": "",
+      "sourceUrl": "",
+      "imageUrl": "",
+      "diets": [
+        "vegetarian",
+        "omnivorous"
+      ],
+      "seasons": [
+        "spring",
+        "winter",
+        "autumn"
+      ],
+      "peakMonths": [
+        "January",
+        "November",
+        "March",
+        "April",
+        "October",
+        "December",
+        "February"
+      ],
+      "totalTime": 38.0,
+      "quick": false
+    },
+    "ingredients": [
+      {
+        "id": "ing1",
+        "name": "garlic",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing2",
+        "name": "fresh ginger",
+        "unit": "tbsp",
+        "category": "produce"
+      },
+      {
+        "id": "ing3",
+        "name": "vegetable broth",
+        "unit": "ml",
+        "category": "beverage"
+      },
+      {
+        "id": "ing4",
+        "name": "pumpkin",
+        "unit": "g",
+        "category": "produce"
+      },
+      {
+        "id": "ing5",
+        "name": "coconut milk",
+        "unit": "ml",
+        "category": "dairy"
+      },
+      {
+        "id": "ing6",
+        "name": "curry powder",
+        "unit": "tsp",
+        "category": "spice"
+      },
+      {
+        "id": "ing7",
+        "name": "cinnamon",
+        "unit": "pinch",
+        "category": "spice"
+      },
+      {
+        "id": "ing8",
+        "name": "salt",
+        "unit": "tsp",
+        "category": "spice"
+      },
+      {
+        "id": "ing9",
+        "name": "pepper",
+        "unit": "pinch",
+        "category": "spice"
+      },
+      {
+        "id": "ing10",
+        "name": "lemon juice",
+        "unit": "ml",
+        "category": "condiment"
+      },
+      {
+        "id": "ing11",
+        "name": "pumpkin seeds",
+        "unit": "g",
+        "category": "produce"
+      },
+      {
+        "id": "ing12",
+        "name": "vegan cream",
+        "unit": "ml",
+        "category": "dairy"
+      }
+    ],
+    "tools": [
+      {
+        "id": "tool1",
+        "name": "pot"
+      },
+      {
+        "id": "tool2",
+        "name": "immersion blender"
+      }
+    ],
+    "subRecipes": [
+      {
+        "id": "sub1",
+        "title": "Pumpkin Soup",
+        "ingredients": [
+          {
+            "inputType": "component",
+            "ref": "ing1",
+            "type": "ingredient",
+            "amount": 2.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing2",
+            "type": "ingredient",
+            "amount": 15.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing3",
+            "type": "ingredient",
+            "amount": 240.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing4",
+            "type": "ingredient",
+            "amount": 600.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing5",
+            "type": "ingredient",
+            "amount": 120.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing6",
+            "type": "ingredient",
+            "amount": 5.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing7",
+            "type": "ingredient",
+            "amount": 1.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing8",
+            "type": "ingredient",
+            "amount": 2.5
+          },
+          {
+            "inputType": "component",
+            "ref": "ing9",
+            "type": "ingredient",
+            "amount": 1.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing10",
+            "type": "ingredient",
+            "amount": 10.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing11",
+            "type": "ingredient",
+            "amount": 30.0
+          },
+          {
+            "inputType": "component",
+            "ref": "ing12",
+            "type": "ingredient",
+            "amount": 30.0
+          }
+        ],
+        "steps": [
+          {
+            "id": "step1",
+            "action": "Add garlic, ginger, and 1 tbsp of the vegetable broth to a pot and sauté for around 2 minutes.",
+            "time": "2min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing1",
+                "type": "ingredient",
+                "amount": 2.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing2",
+                "type": "ingredient",
+                "amount": 15.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing3",
+                "type": "ingredient",
+                "amount": 15.0
+              },
+              {
+                "inputType": "component",
+                "ref": "tool1",
+                "type": "tool",
+                "amount": 1.0
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step1",
+              "preparation": "sautéed",
+              "name": "Sautéed garlic and ginger"
+            }
+          },
+          {
+            "id": "step2",
+            "action": "Add the rest of the vegetable broth and pumpkin to the pot. Bring to a boil.",
+            "time": "5min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step1",
+                "preparation": "sautéed",
+                "name": "Sautéed garlic and ginger"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing4",
+                "type": "ingredient",
+                "amount": 600.0
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step2",
+              "preparation": "boiled",
+              "name": "Pumpkin and broth mixture"
+            }
+          },
+          {
+            "id": "step3",
+            "action": "Reduce heat to medium and add coconut milk, curry powder, cinnamon, salt, and pepper.",
+            "time": "1min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step2",
+                "preparation": "boiled",
+                "name": "Pumpkin and broth mixture"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing5",
+                "type": "ingredient",
+                "amount": 120.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing6",
+                "type": "ingredient",
+                "amount": 5.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing7",
+                "type": "ingredient",
+                "amount": 1.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing8",
+                "type": "ingredient",
+                "amount": 2.5
+              },
+              {
+                "inputType": "component",
+                "ref": "ing9",
+                "type": "ingredient",
+                "amount": 1.0
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "combined",
+              "name": "Spiced pumpkin mixture"
+            }
+          },
+          {
+            "id": "step4",
+            "action": "Let simmer for approximately 20 minutes until the pumpkin is tender and ready to be puréed.",
+            "time": "20min",
+            "stepType": "cook",
+            "stepMode": "passive",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step3",
+                "preparation": "combined",
+                "name": "Spiced pumpkin mixture"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step4",
+              "preparation": "simmered",
+              "name": "Tender pumpkin mixture"
+            }
+          },
+          {
+            "id": "step5",
+            "action": "Take the pot off the stove and use an immersion blender to purée everything until smooth.",
+            "time": "5min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step4",
+                "preparation": "simmered",
+                "name": "Tender pumpkin mixture"
+              },
+              {
+                "inputType": "component",
+                "ref": "tool2",
+                "type": "tool",
+                "amount": 1.0
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step5",
+              "preparation": "puréed",
+              "name": "Smooth pumpkin soup"
+            }
+          },
+          {
+            "id": "step6",
+            "action": "Season with more salt and pepper to taste and divide between serving bowls. Add any optional toppings and enjoy hot!",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step5",
+                "preparation": "puréed",
+                "name": "Smooth pumpkin soup"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing8",
+                "type": "ingredient",
+                "amount": 5.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing9",
+                "type": "ingredient",
+                "amount": 1.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing10",
+                "type": "ingredient",
+                "amount": 10.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing11",
+                "type": "ingredient",
+                "amount": 30.0
+              },
+              {
+                "inputType": "component",
+                "ref": "ing12",
+                "type": "ingredient",
+                "amount": 30.0
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step6",
+              "preparation": "served",
+              "name": "Pumpkin soup with toppings"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timestamp": "2025-01-14T00:51:52.074099"
+}

@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "title": "Braised Eggs with Leek and Za\u2019atar",
+    "description": "This is a quick way to get a very comforting meal on the table in a wonderfully short amount of time. It\u2019s a dish as happily eaten for brunch, with coffee, as it is for a light supper with some crusty white bread and a glass of wine. The leeks and spinach can be made up to a day ahead and kept in the fridge, ready for the eggs to be cracked in and braised.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/004_braised_eggs_a_harissa-omelettes-aff839fe-9b63-4e33-b9ab-409d6c795299_s1200x0_q80_noupscale-1024x683.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "braised-eggs-with-leek-and-za-atar",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/braised-eggs-with-leek-and-zaatar/",
+    "imageUrl": "recipes/images/original/braised-eggs-with-leek-and-za-atar.webp",
+    "diets": ["vegetarian", "omnivorous"],
+    "seasons": ["spring", "winter"],
+    "peakMonths": ["February", "January", "December", "March", "April", "May"],
+    "totalTime": 21.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "unsalted butter",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing3",
+      "name": "leeks",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "cumin seeds",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "preserved lemons",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "vegetable stock",
+      "unit": "ml",
+      "category": "beverage"
+    },
+    {
+      "id": "ing7",
+      "name": "baby spinach leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "large eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing9",
+      "name": "feta",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "za\u2019atar",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing12",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large saut\u00e9 pan with a lid"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Braised Eggs with Leek and Za\u2019atar",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 30.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 30.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 530.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 30.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 300.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 200.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 6.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 90.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 5.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Put the butter and 1 tablespoon of oil into a large saut\u00e9 pan, for which you have a lid, and place on a medium-high heat.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 30.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 30.0
+            },
+            {
+              "inputType": "component",
+              "ref": "tool1",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "heated",
+            "name": "Saut\u00e9 pan with butter and oil"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Once the butter starts to foam, add the leeks, \u00bd teaspoon of salt and plenty of pepper. Fry for 3 minutes, stirring frequently, until the leeks are soft.",
+          "time": "3min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step1",
+              "preparation": "heated",
+              "name": "Saut\u00e9 pan with butter and oil"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 530.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 2.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 5.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "softened",
+            "name": "Soft leeks"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Add the cumin, lemon and vegetable stock and boil rapidly for 4 minutes, until most of the stock has evaporated.",
+          "time": "4min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step2",
+              "preparation": "softened",
+              "name": "Soft leeks"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 30.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 300.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "boiled",
+            "name": "Boiled mixture"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Fold in the spinach and cook for a minute, until wilted, then reduce the heat to medium.",
+          "time": "1min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "boiled",
+              "name": "Boiled mixture"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 200.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "wilted",
+            "name": "Wilted spinach mixture"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Use a large spoon to make six indentations in the mixture and break one egg into each space.",
+          "time": "2min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step4",
+              "preparation": "wilted",
+              "name": "Wilted spinach mixture"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step5",
+            "preparation": "indented",
+            "name": "Indented mixture for eggs"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Sprinkle the eggs with a pinch of salt, dot the feta around the eggs, then cover the pan. Simmer for 4 minutes, until the egg whites are cooked but the yolks are still runny.",
+          "time": "4min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step5",
+              "preparation": "indented",
+              "name": "Indented mixture for eggs"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 90.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 6.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step6",
+            "preparation": "cooked",
+            "name": "Cooked eggs"
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Mix the za\u2019atar with the remaining tablespoon of oil and brush over the eggs. Serve at once, straight from the pan.",
+          "time": "2min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 30.0
+            },
+            {
+              "inputType": "state",
+              "ref": "step6",
+              "preparation": "cooked",
+              "name": "Cooked eggs"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step7",
+            "preparation": "brushed",
+            "name": "Eggs with za\u2019atar"
+          }
+        }
+      ]
+    }
+  ]
+}

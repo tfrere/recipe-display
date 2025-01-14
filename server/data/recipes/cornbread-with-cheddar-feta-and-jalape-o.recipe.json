@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "title": "Cornbread with Cheddar, Feta and Jalape\u00f1o",
+    "description": "This is such a nice thing to bring to the table, served hot from the oven, out of the pan. It\u2019s a stand-alone bread \u2013 delicious as it is \u2013 but also happy to share a plate with rashers of bacon and avocado salad. This bread is best eaten on the day it\u2019s baked, but it\u2019s still fine the next day: just warm it through in the oven. It also freezes well, for up to a month. If you don\u2019t have any fresh corn cobs, you can defrost 150g of frozen corn kernels to be used instead.",
+    "servings": 8,
+    "recipeType": "starter",
+    "notes": [
+      "This is such a nice thing to bring to the table, served hot from the oven, out of the pan. It\u2019s a stand-alone bread \u2013 delicious as it is \u2013 but also happy to share a plate with rashers of bacon and avocado salad. This bread is best eaten on the day it\u2019s baked, but it\u2019s still fine the next day: just warm it through in the oven. It also freezes well, for up to a month. If you don\u2019t have any fresh corn cobs, you can defrost 150g of frozen corn kernels to be used instead.",
+      "\u00a9 Yotam Ottolenghi 2021 \u2014 Photography \u00a9 PEDEN + MUNK"
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/018_cornbread2_cooked-5c72cae5-2ab3-4adf-8b0b-eb3486485929_s1200x0_q80_noupscale-684x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "cornbread-with-cheddar-feta-and-jalape-o",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/cornbread-with-cheddar-feta-and-jalapeno/",
+    "imageUrl": "recipes/images/original/cornbread-with-cheddar-feta-and-jalape-o.webp",
+    "diets": ["vegetarian", "omnivorous"],
+    "seasons": ["spring", "summer", "winter"],
+    "peakMonths": ["August", "February", "January", "December", "July", "May"],
+    "totalTime": 110.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "fresh corn cobs, kernels shaved",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "plain flour",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing3",
+      "name": "baking powder",
+      "unit": "tsp",
+      "category": "pantry"
+    },
+    {
+      "id": "ing4",
+      "name": "bicarbonate of soda",
+      "unit": "tsp",
+      "category": "pantry"
+    },
+    {
+      "id": "ing5",
+      "name": "ground cumin",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "cayenne",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing7",
+      "name": "light brown sugar",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing8",
+      "name": "instant polenta",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing9",
+      "name": "soured cream",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "large eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing11",
+      "name": "olive oil",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing12",
+      "name": "spring onions, roughly chopped",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing13",
+      "name": "coriander leaves, chopped",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing14",
+      "name": "fresh jalape\u00f1o chilli, finely chopped",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing15",
+      "name": "salt and black pepper",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing16",
+      "name": "feta, crumbled (for the topping)",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing17",
+      "name": "mature Cheddar, coarsely grated (for the topping)",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing18",
+      "name": "fresh jalape\u00f1o chilli, cut into thin rounds (for the topping)",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing19",
+      "name": "red onion, cut into \u00bdcm slices (for the topping)",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing20",
+      "name": "nigella seeds (for the topping)",
+      "unit": "tsp",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large ovenproof cast-iron saut\u00e9 pan"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Cornbread Base",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 150.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 140.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 0.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 50.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 180.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 360.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 135.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 4.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing13",
+          "type": "ingredient",
+          "amount": 10.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing14",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing15",
+          "type": "ingredient",
+          "amount": 5.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 170\u00b0C.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "passive",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "preheated",
+            "name": "Oven preheated"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Place a large ovenproof cast-iron saut\u00e9 pan on a high flame. Once hot, add the corn kernels and dry-fry for 4\u20135min, stirring from time to time, until slightly blackened. Remove from the pan and set aside to cool.",
+          "time": "5min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "tool1",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "dry-fried",
+            "name": "Toasted corn"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Sift the flour, baking powder, bicarbonate of soda, cumin and cayenne into a large bowl. Add the sugar, along with 1\u00bd teaspoons of salt and a good grind of pepper. Stir and set aside.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "sifted and mixed",
+            "name": "Dry ingredients mixture"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "In a separate bowl, combine the polenta, soured cream, eggs and 120ml oil and whisk lightly.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "combined",
+            "name": "Wet ingredients mixture"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Add the wet ingredients to the dry ingredients, then fold in the spring onions, coriander, jalape\u00f1o and toasted corn until just combined.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "sifted and mixed",
+              "name": "Dry ingredients mixture"
+            },
+            {
+              "inputType": "state",
+              "ref": "step4",
+              "preparation": "combined",
+              "name": "Wet ingredients mixture"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step5",
+            "preparation": "combined",
+            "name": "Cornbread batter"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Use 1 tablespoon of oil to lightly grease the base and sides of the pan used to toast the corn, then pour in the cornbread mixture and scatter over all the topping ingredients.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "tool1",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step6",
+            "preparation": "prepared",
+            "name": "Cornbread ready for baking"
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Bake for about 40\u201345min, until a skewer comes out clean.",
+          "time": "45min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step6",
+              "preparation": "prepared",
+              "name": "Cornbread ready for baking"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step7",
+            "preparation": "baked",
+            "name": "Baked cornbread"
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Serve the cornbread hot, straight from the oven, or leave to cool for 30 minutes and serve warm or at room temperature the same day. If serving it the next day, warm it through in the oven just before you need it.",
+          "time": "30min",
+          "stepType": "prep",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step7",
+              "preparation": "baked",
+              "name": "Baked cornbread"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step8",
+            "preparation": "served",
+            "name": "Served cornbread"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Ignorer tout
+*
+
+# Sauf les fichiers nécessaires
+!/package.json
+!/yarn.lock
+!/src/**
+!/public/**
+!/index.html
+!/vite.config.js
+!/.env*
+
+# Et le dossier shared
+!/shared/**

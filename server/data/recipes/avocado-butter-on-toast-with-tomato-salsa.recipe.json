@@ -1,0 +1,309 @@
+{
+  "metadata": {
+    "title": "Avocado Butter on Toast with Tomato Salsa",
+    "description": "A creamy avocado butter spread on toasted sourdough, topped with a fresh tomato salsa.",
+    "servings": 4,
+    "recipeType": "starter",
+    "notes": [
+      "The only way to make a creamy, rich avocado even more creamy and rich is, of course, to add some creamy rich butter. Don\u2019t worry that it will be a case of \u2018too much of a good thing\u2019 though: the salsa does what all good salsas do, bringing freshness, sharpness and balance to whatever it sits alongside. Make sure your avocado is nice and ripe and that your butter is super soft so that they blend together properly. Don\u2019t be tempted to speed things along by melting it, though \u2013 this will cause it to separate: just leave it at room temperature for a few hours. Both the salsa and avocado butter can be made a day in advance, if you like: just keep them separate and store in the fridge.",
+      "\u00a9 Yotam Ottolenghi 2021 \u2014 Photography \u00a9 PEDEN + MUNK"
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/015_avocado_butter_toast_digi-d3f63440-1ae7-484b-89bf-4714f7a19b6e_s1200x0_q80_noupscale-684x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "avocado-butter-on-toast-with-tomato-salsa",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/avocado-butter-on-toast-with-tomato-salsa/",
+    "imageUrl": "recipes/images/original/avocado-butter-on-toast-with-tomato-salsa.webp",
+    "diets": ["vegetarian", "omnivorous"],
+    "seasons": ["spring", "summer"],
+    "peakMonths": ["August", "June", "July", "May"],
+    "totalTime": 20.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "ripe avocados",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "unsalted butter",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing3",
+      "name": "lime",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "tarragon leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "dill",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "cherry tomatoes",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "capers",
+      "unit": "tsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing8",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing9",
+      "name": "sourdough bread",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing10",
+      "name": "garlic clove",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "cumin seeds",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing12",
+      "name": "salt",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing13",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "food processor"
+    },
+    {
+      "id": "tool2",
+      "name": "hand-held blender"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Avocado Butter",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 250.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 60.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "tool1",
+          "type": "tool",
+          "amount": 1.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Put the avocado and butter into the food processor with half the lime zest, half the lime juice and \u00bd teaspoon of salt. Blitz until smooth, scraping down the sides of the bowl a couple of times if you need to.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 250.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 60.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 2.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "blended",
+            "name": "Avocado Butter"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Transfer to a small bowl along with two-thirds of both herbs. Fold through, then refrigerate for 10 minutes.",
+          "time": "10min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step1",
+              "preparation": "blended",
+              "name": "Avocado Butter"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 10.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 10.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "chilled",
+            "name": "Chilled Avocado Butter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Tomato Salsa",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 200.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 1.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "To make the salsa, mix together the tomatoes, capers, remaining lime zest, remaining juice and the oil with a good grind of pepper. Set aside until ready to serve.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 200.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "mixed",
+            "name": "Tomato Salsa"
+          }
+        }
+      ]
+    }
+  ]
+}

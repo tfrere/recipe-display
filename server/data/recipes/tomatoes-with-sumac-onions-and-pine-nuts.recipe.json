@@ -1,0 +1,292 @@
+{
+  "metadata": {
+    "title": "Tomatoes with Sumac Onions and Pine Nuts",
+    "description": "A refreshing summer salad featuring ripe tomatoes, sumac-marinated shallots, and toasted pine nuts.",
+    "servings": 4,
+    "recipeType": "starter",
+    "notes": [
+      "The quality of your tomatoes makes all the difference here. They need to be the ripest and sweetest you can find.",
+      "This is my go-to salad in the summer, eaten either as is, with some crusty bread to mop up the juices, or served as part of whatever else is on the table.",
+      "Chunks of ripe avocado are also a nice addition.",
+      "The shallots can be made a day in advance and kept in the fridge.",
+      "If you want to prepare the dish ahead, slice the tomatoes up to 6 hours in advance and store in the fridge, ready for the oil, basil and seasoning to be added when you are ready to serve."
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/035_tomatoes_sumac_onions_digi-088b4983-8012-4614-b47d-c465ae5fd228_s1200x0_q80_noupscale-694x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "tomatoes-with-sumac-onions-and-pine-nuts",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/tomatoes-with-sumac-onions-and-pine-nuts/",
+    "imageUrl": "recipes/images/original/tomatoes-with-sumac-onions-and-pine-nuts.webp",
+    "diets": ["vegan", "vegetarian", "omnivorous"],
+    "seasons": ["summer", "winter"],
+    "peakMonths": ["August", "February", "January", "December", "July"],
+    "totalTime": 50.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "banana shallot",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "sumac",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing3",
+      "name": "white wine vinegar",
+      "unit": "tsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing4",
+      "name": "mixed tomatoes",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing6",
+      "name": "basil leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "pine nuts",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing8",
+      "name": "salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing9",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Sumac Onions",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 70.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 0.5
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Place the shallot in a small bowl with the sumac, vinegar and \u215b teaspoon of salt. Use your hands to mix together \u2013 you want the sumac to really be massaged into the shallots \u2013 then set aside for 30 minutes, to soften.",
+          "time": "30min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 70.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 0.5
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "mixed and softened",
+            "name": "Sumac onions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Tomato Salad Assembly",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 700.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 15.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 25.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 5.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Slice the large tomatoes in half lengthways and then into 1\u20131\u00bdcm wedges and place in a large bowl. Slice the cherry tomatoes in half lengthways and add to the bowl.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "sliced",
+            "name": "Sliced tomatoes"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Pour in the olive oil and mix gently with the basil leaves, \u2153 teaspoon of salt and a generous grind of pepper.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step2",
+              "preparation": "sliced",
+              "name": "Sliced tomatoes"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 15.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 5.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "mixed",
+            "name": "Tomato salad mixture"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Arrange the tomatoes on a large platter and spread over the shallots, pulling some of the tomatoes and basil above the shallots. Sprinkle with the pine nuts and serve.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "mixed",
+              "name": "Tomato salad mixture"
+            },
+            {
+              "inputType": "subRecipe",
+              "ref": "sub1",
+              "name": "Sumac onions"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 25.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "arranged and served",
+            "name": "Tomato salad with sumac onions and pine nuts"
+          }
+        }
+      ]
+    }
+  ]
+}

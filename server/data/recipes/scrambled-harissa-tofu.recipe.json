@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "title": "Scrambled Harissa Tofu",
+    "description": "This was brought on to our menu as a vegan option for breakfast. It\u2019s been flying off the pass to all of our customers, vegan or not, ever since, as an alternative to eggs. We serve it on thick slices of grilled sourdough bread with a fresh green salad alongside. It\u2019s also lovely with a sprinkle of crispy fried shallots, if you are near an Asian supermarket. If you think you\u2019ll get into the habit of making this for breakfast, double or quadruple the harissa onions: a batch keeps well in the fridge for around 5 days and turns this into a meal which can be ready in 5 minutes. Thanks to Claire Hodgson.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/012_scrambled_harissa_tofu_digi-0c5f4b53-3fff-4fbe-9e87-559564751339_s1200x0_q80_noupscale-694x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "scrambled-harissa-tofu",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/scrambled-harissa-tofu/",
+    "imageUrl": "recipes/images/original/scrambled-harissa-tofu.webp",
+    "diets": ["vegan", "vegetarian", "omnivorous"],
+    "seasons": ["summer"],
+    "peakMonths": ["August", "July"],
+    "totalTime": 5.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "olive oil",
+      "unit": "ml",
+      "category": "pantry"
+    },
+    {
+      "id": "ing2",
+      "name": "onions",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "rose harissa",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "silken tofu",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing5",
+      "name": "sourdough bread",
+      "unit": "unit",
+      "category": "other"
+    },
+    {
+      "id": "ing6",
+      "name": "salt",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing7",
+      "name": "cucumber",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "green chillies",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "avocados",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "picked coriander leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "lime juice",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing12",
+      "name": "nigella seeds",
+      "unit": "tsp",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large frying pan"
+    },
+    {
+      "id": "tool2",
+      "name": "potato masher"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Salad Preparation",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 3.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 20.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 15.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Mix all the ingredients for the salad with \u2153 teaspoon of salt and set aside.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "mixed",
+            "name": "Salad mixture"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "error_type": "recipe_validation_error",
+  "error_message": "32 validation errors for Recipe\nsubRecipes.0.steps.0.inputs.0.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.1.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.1.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.2.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.2.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.3.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.3.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.2.inputs.0.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.2.inputs.0.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.2.inputs.1.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.2.inputs.1.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.0.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.0.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.1.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.1.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.2.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.2.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.3.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.1.inputs.3.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.2.inputs.0.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.2.inputs.0.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.2.inputs.1.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.2.inputs.1.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.0.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.0.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.1.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.1.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.2.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.2.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.3.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.1.steps.3.inputs.3.unit\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden",
+  "recipe_json": {
+    "metadata": {
+      "title": "Savoury Oat Porridge with Ginger-Garlic Crumbs",
+      "description": "This porridge gets a savoury twist, thanks to the addition of an umami-rich soy butter and crispy ginger-garlic yumbits.",
+      "servings": 4,
+      "difficulty": "medium",
+      "diet": [
+        "omnivorous"
+      ],
+      "season": [
+        "all"
+      ],
+      "recipeType": "main_course",
+      "notes": [
+        "Breakfasts are a solo affair at the OTK, with each person left to their own devices.",
+        "Feel free to quadruple the amount of said yumbits: they’re so good sprinkled on to eggs, rice and every other food group.",
+        "Make it your own - Skip the charred spring onions and just add some fresh herbs.",
+        "Bulk out your porridge by topping with leftover cooked veggies.",
+        "Make it gluten-free by swapping out the soy with tamari or coconut aminos."
+      ],
+      "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/08/037_savouryoatporridge_017-032-1024x878.jpg",
+      "nationality": "British",
+      "author": "Ottolenghi",
+      "bookTitle": "",
+      "slug": "savoury-oat-porridge",
+      "sourceUrl": "https://books.ottolenghi.co.uk/otk-shelf-love/recipe/savoury-oat-porridge-with-ginger-garlic-crumbs/",
+      "imageUrl": "",
+      "totalTime": 48.0,
+      "quick": false
+    },
+    "ingredientsList": [
+      {
+        "id": "ing1",
+        "name": "spring onions",
+        "unit": "g",
+        "category": "produce"
+      },
+      {
+        "id": "ing2",
+        "name": "olive oil",
+        "unit": "tbsp",
+        "category": "pantry-savory"
+      },
+      {
+        "id": "ing3",
+        "name": "fresh ginger",
+        "unit": "g",
+        "category": "produce"
+      },
+      {
+        "id": "ing4",
+        "name": "garlic cloves",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing5",
+        "name": "large eggs",
+        "unit": "unit",
+        "category": "dairy"
+      },
+      {
+        "id": "ing6",
+        "name": "jumbo rolled oats",
+        "unit": "g",
+        "category": "pantry-savory"
+      },
+      {
+        "id": "ing7",
+        "name": "soy sauce",
+        "unit": "tbsp",
+        "category": "condiments"
+      },
+      {
+        "id": "ing8",
+        "name": "unsalted butter",
+        "unit": "g",
+        "category": "dairy"
+      },
+      {
+        "id": "ing9",
+        "name": "chilli flakes",
+        "unit": "tsp",
+        "category": "spice"
+      },
+      {
+        "id": "ing10",
+        "name": "salt",
+        "unit": "pinch",
+        "category": "spice"
+      },
+      {
+        "id": "ing11",
+        "name": "black pepper",
+        "unit": "pinch",
+        "category": "spice"
+      }
+    ],
+    "subRecipes": [
+      {
+        "id": "sub1",
+        "title": "Ginger-Garlic Crumbs",
+        "ingredients": [
+          {
+            "amount": 80.0,
+            "state": "peeled and finely grated ginger, fresh"
+          },
+          {
+            "amount": 12.0,
+            "state": "crushed garlic cloves"
+          },
+          {
+            "amount": 3.0,
+            "state": "tablespoons olive oil"
+          }
+        ],
+        "steps": [
+          {
+            "id": "step1",
+            "action": "Toss the spring onions in a bowl with olive oil and seasonings.",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "ingredient",
+                "ref": "ing1",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing2",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing10",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing11",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "state": "seasoned spring onions",
+              "description": "Spring onions tossed with olive oil, salt, and pepper."
+            }
+          },
+          {
+            "id": "step2",
+            "action": "Cook the spring onions in a hot pan until softened and charred.",
+            "time": "3min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [],
+            "output": {
+              "state": "charred spring onions",
+              "description": "Spring onions cooked until softened and charred."
+            }
+          },
+          {
+            "id": "step3",
+            "action": "Cook the ginger and garlic in the pan until crispy.",
+            "time": "15min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "ingredient",
+                "ref": "ing3",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing4",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "state": "crispy ginger-garlic mixture",
+              "description": "Ginger and garlic cooked until deeply golden and crispy."
+            }
+          }
+        ]
+      },
+      {
+        "id": "sub2",
+        "title": "Savoury Oat Porridge",
+        "ingredients": [
+          {
+            "amount": 160.0,
+            "state": "jumbo rolled oats"
+          },
+          {
+            "amount": 1.0,
+            "state": "litre of water"
+          },
+          {
+            "amount": 1.0,
+            "state": "teaspoon of salt"
+          },
+          {
+            "amount": 4.0,
+            "state": "large eggs"
+          },
+          {
+            "amount": 50.0,
+            "state": "unsalted butter, fridge cold and cut into cubes"
+          },
+          {
+            "amount": 2.0,
+            "state": "tablespoons soy sauce"
+          },
+          {
+            "amount": 1.0,
+            "state": "teaspoon chilli flakes"
+          },
+          {
+            "amount": 12.0,
+            "state": "charred spring onions"
+          }
+        ],
+        "steps": [
+          {
+            "id": "step4",
+            "action": "Boil the eggs until soft-boiled.",
+            "time": "6min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [],
+            "output": {
+              "state": "soft-boiled eggs",
+              "description": "Eggs boiled until soft and then peeled."
+            }
+          },
+          {
+            "id": "step5",
+            "action": "Cook the oats with water and seasonings.",
+            "time": "4min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "ingredient",
+                "ref": "ing6",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing7",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing10",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing11",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "state": "cooked porridge",
+              "description": "Oats cooked to a loose porridge consistency."
+            }
+          },
+          {
+            "id": "step6",
+            "action": "Prepare the soy butter mixture.",
+            "time": "10min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "ingredient",
+                "ref": "ing8",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing7",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "state": "soy butter mixture",
+              "description": "Soy sauce and butter whisked together to create a smooth mixture."
+            }
+          },
+          {
+            "id": "step7",
+            "action": "Assemble the porridge bowls.",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "type": "state",
+                "ref": "step5",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "state",
+                "ref": "step4",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "state",
+                "ref": "step3",
+                "amount": null,
+                "unit": null
+              },
+              {
+                "type": "ingredient",
+                "ref": "ing9",
+                "amount": null,
+                "unit": null
+              }
+            ],
+            "output": {
+              "state": "assembled porridge bowls",
+              "description": "Porridge topped with soy butter, charred spring onions, and soft-boiled eggs."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timestamp": "2025-01-10T18:03:04.136092"
+}

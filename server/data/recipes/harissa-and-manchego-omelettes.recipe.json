@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "Harissa and Manchego Omelettes",
+    "description": "A delicious omelette made with harissa and Manchego cheese, perfect for brunch or a quick supper.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [
+      "I like to eat this either for brunch or for a speedy supper, with a fresh tomato and avocado salad on the side. The onions can be caramelised 2 days in advance and kept in the fridge, so it is worth making a double batch of these. Add a tablespoonful to scrambled eggs or couscous salad, for example. Make the egg mixture the day before if you like and let it sit in the fridge. Everything is then ready to be poured into the pan.",
+      "\u00a9 Yotam Ottolenghi 2021 \u2014 Photography \u00a9 PEDEN + MUNK"
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/004_braised_eggs_a_harissa-omelettes-2fd6c520-18fe-4c3e-8b91-9b94f42901bb_s1200x0_q80_noupscale-1024x683.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "harissa-and-manchego-omelettes",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/harissa-and-manchego-omelettes/",
+    "imageUrl": "recipes/images/original/harissa-and-manchego-omelettes.webp",
+    "diets": ["vegan", "vegetarian", "omnivorous"],
+    "seasons": ["spring", "winter"],
+    "peakMonths": ["February", "December", "January", "May"],
+    "totalTime": 15.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "olive oil",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing2",
+      "name": "onion",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing4",
+      "name": "whole milk",
+      "unit": "ml",
+      "category": "dairy"
+    },
+    {
+      "id": "ing5",
+      "name": "rose harissa",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing6",
+      "name": "nigella seeds",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing7",
+      "name": "coriander",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "Manchego",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing9",
+      "name": "limes",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "medium ovenproof frying pan"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Caramelised Onions",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 45.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Add 3 tablespoons of olive oil into a medium ovenproof frying pan and place on medium heat. Add the onion and cook until caramelised and deep golden-brown.",
+          "time": "15min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 45.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "caramelised",
+            "name": "Caramelised onions"
+          }
+        }
+      ]
+    }
+  ]
+}

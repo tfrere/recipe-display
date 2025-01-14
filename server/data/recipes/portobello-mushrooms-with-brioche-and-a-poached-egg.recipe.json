@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "title": "Portobello Mushrooms with Brioche and a Poached Egg",
+    "description": "A delicious dish featuring roasted portobello mushrooms served on brioche with a perfectly poached egg.",
+    "servings": 4,
+    "recipeType": "starter",
+    "notes": [
+      "As with all dishes which involve eggs and toast and getting ready in the morning, this is all about timing. Ideally, you want the mushrooms and toast coming out of the oven at about the same time, to both be warm, and the eggs poached and ready soon after. Get the mushrooms cooking first, put the bread into the oven halfway through, and then get the eggs poaching. This works as well as a starter late in the day as it does in the morning. Use duck eggs for an extra-rich twist.",
+      "\u00a9 Yotam Ottolenghi 2021 \u2014 Photography \u00a9 PEDEN + MUNK"
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/010_portobello_mushrooms_poached_egg_digi-ca1746ec-edc2-428e-ab11-c8ea7c838be0_s1200x0_q80_noupscale-685x1024.jpg",
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "portobello-mushrooms-with-brioche-and-a-poached-egg",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/portobello-mushrooms-with-brioche-and-a-poached-egg/",
+    "imageUrl": "recipes/images/original/portobello-mushrooms-with-brioche-and-a-poached-egg.webp",
+    "diets": ["vegan", "vegetarian", "omnivorous"],
+    "seasons": ["spring", "winter"],
+    "peakMonths": ["February", "January", "December", "March", "April"],
+    "totalTime": 40.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "Portobello mushrooms",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing3",
+      "name": "garlic cloves",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "ground cinnamon",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "basil leaves",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "chilli flakes",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing7",
+      "name": "brioche",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing8",
+      "name": "large eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing9",
+      "name": "soured cream",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing10",
+      "name": "flaked sea salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large parchment-lined baking tray"
+    },
+    {
+      "id": "tool2",
+      "name": "medium saucepan"
+    },
+    {
+      "id": "tool3",
+      "name": "slotted spoon"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasted Portobello Mushrooms",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 400.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 75.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 0.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 0.125
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 220\u00b0C.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "passive",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "oven preheated",
+            "name": "Preheated oven"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Mix the mushrooms with 75ml of olive oil, 1 crushed garlic clove, 0.25 tsp of ground cinnamon, 5g of flaked sea salt, and a good grind of black pepper. Spread out on a large parchment-lined baking tray and roast for 15min, stirring halfway, until soft and starting to brown.",
+          "time": "15min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 400.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 75.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 0.25
+            },
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 5.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "roasted",
+            "name": "Roasted mushrooms"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "While the mushrooms are in the oven, mix together the remaining 2 tablespoons of olive oil with the remaining 0.25 tsp of cinnamon, 1 crushed garlic clove, the chilli flakes, and 0.25 tsp of flaked salt. Brush the oil and spices over one side of the brioche slices and place on a separate parchment-lined baking tray, brushed side up. With about 6 or 7 minutes left for the mushrooms, put the bread into the oven alongside the mushrooms and roast until the bread is golden-brown and crisp.",
+          "time": "10min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 30.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 0.25
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 0.125
+            },
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 150.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "brushed and ready for baking",
+            "name": "Brioche slices"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Poached Eggs",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 4.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step4",
+          "action": "Fill a medium saucepan with plenty of water and bring to the boil on high heat. Once boiling, reduce the heat to medium high and carefully break in the eggs. Poach for 1.5min for a runny yolk (or a little longer for a firmer set).",
+          "time": "5min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "poached",
+            "name": "Poached eggs"
+          }
+        }
+      ]
+    }
+  ]
+}
