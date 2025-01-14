@@ -30,4 +30,4 @@ ENV PORT=3001
 EXPOSE 3001
 
 # Run the application
-CMD ["poetry", "run", "python", "server.py"]
+CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "3001"]
