@@ -163,7 +163,7 @@ const Navigation = () => {
           </Box>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            {process.env.NODE_ENV !== "production" && hasPrivateAccess && (
+            {hasPrivateAccess && (
               <>
                 <Tooltip title={NAVIGATION_TEXTS.ACTIONS.ADD_RECIPE}>
                   <Box
