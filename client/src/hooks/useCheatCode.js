@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
 import useLocalStorage from "./useLocalStorage";
 
-// Définition du cheat code : gauche, bas, droite, haut
-const CHEAT_CODE = ["ArrowLeft", "ArrowDown", "ArrowRight", "ArrowUp"];
+// Définition du cheat code : gauche, bas, droite, haut, gauche, bas, droite, haut
+const CHEAT_CODE = [
+  "ArrowLeft",
+  "ArrowDown",
+  "ArrowRight",
+  "ArrowUp",
+  "ArrowLeft",
+  "ArrowDown",
+  "ArrowRight",
+  "ArrowUp"
+];
 
 export default function useCheatCode() {
   const [sequence, setSequence] = useState([]);

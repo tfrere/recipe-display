@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useCallback,
   useMemo,
+  useRef,
 } from "react";
 import { useNavigate } from "react-router-dom";
 import { usePreferences } from "./PreferencesContext";
@@ -47,6 +48,7 @@ export const RecipeListProvider = ({ children }) => {
   const { sortByCategory } = usePreferences();
   const { hasPrivateAccess } = useCheatCode();
   const DEBUG = false; // Flag pour activer/désactiver les logs de débogage
+  const seasonalRecipesOrder = useRef(new Map());
 
   // Attendre que les constantes soient chargées
   if (!constants) {
@@ -470,20 +472,32 @@ export const RecipeListProvider = ({ children }) => {
         return matches;
       });
 
-      // Mélanger les recettes
-      const shuffledRecipes = [...currentSeasonRecipes].sort(
-        () => Math.random() - 0.5
-      );
+      // Vérifier si on a déjà un ordre pour cette saison
+      if (!seasonalRecipesOrder.current.has(currentSeason)) {
+        // Si non, créer un nouvel ordre aléatoire
+        const order = [...currentSeasonRecipes]
+          .sort(() => Math.random() - 0.5)
+          .map((recipe) => recipe.id);
+        seasonalRecipesOrder.current.set(currentSeason, order);
+      }
+
+      // Utiliser l'ordre mémorisé
+      const order = seasonalRecipesOrder.current.get(currentSeason);
+      const orderedRecipes = [...currentSeasonRecipes].sort((a, b) => {
+        const indexA = order.indexOf(a.id);
+        const indexB = order.indexOf(b.id);
+        return indexA - indexB;
+      });
 
       if (DEBUG) {
         console.log("Selected recipes for current season:", {
           currentSeason,
-          fromCurrentSeason: shuffledRecipes.length,
-          titles: shuffledRecipes.map((r) => r.title),
+          fromCurrentSeason: orderedRecipes.length,
+          titles: orderedRecipes.map((r) => r.title),
         });
       }
 
-      return shuffledRecipes;
+      return orderedRecipes;
     }
 
     // Sinon, appliquer les filtres normalement
