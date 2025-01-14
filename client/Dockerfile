@@ -12,6 +12,8 @@ RUN yarn install --frozen-lockfile
 COPY . .
 
 # Build the app
+ARG VITE_API_ENDPOINT
+ENV VITE_API_ENDPOINT=$VITE_API_ENDPOINT
 RUN yarn build
 
 # Install serve globally with yarn
