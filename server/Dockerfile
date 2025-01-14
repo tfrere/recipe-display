@@ -23,8 +23,11 @@ COPY . .
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
+# Set PORT environment variable
+ENV PORT=3001
+
 # Expose port
 EXPOSE 3001
 
 # Run the application
-CMD ["poetry", "run", "python", "server.py"] 
+CMD ["poetry", "run", "python", "server.py"]
