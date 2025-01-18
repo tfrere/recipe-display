@@ -6,11 +6,7 @@ import {
   IconButton,
   Typography,
   useTheme,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  DialogContentText,
+  Link,
 } from "@mui/material";
 import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
 import PrintOutlinedIcon from "@mui/icons-material/PrintOutlined";
@@ -23,15 +19,12 @@ import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { useRecipe } from "../../../contexts/RecipeContext";
 import { useConstants } from "../../../contexts/ConstantsContext";
 import RecipeImage from "../../common/RecipeImage";
 import TimeDisplay from "../../common/TimeDisplay";
-import { calculateTotalTime } from "../../../utils/timeUtils";
-import {
-  printRecipe,
-  copyRecipeToClipboard,
-} from "../../../utils/recipeTextUtils";
+import { copyRecipeToClipboard } from "../../../utils/recipeTextUtils";
 import GraphModal from "../../views/GraphView/GraphModal";
 import PrintableRecipe from "./PrintableRecipe";
 import DeleteConfirmationDialog from "../../common/DeleteConfirmationDialog";
@@ -420,7 +413,8 @@ const RecipeHeader = ({ recipe }) => {
                       {/* Source Info */}
                       {(metadata.nationality ||
                         metadata.author ||
-                        metadata.bookTitle) && (
+                        metadata.bookTitle ||
+                        metadata.sourceUrl) && (
                         <Typography
                           variant="body2"
                           color="text.secondary"
@@ -437,9 +431,34 @@ const RecipeHeader = ({ recipe }) => {
                             metadata.author && `By ${metadata.author}`,
                             metadata.bookTitle &&
                               `From "${metadata.bookTitle}"`,
+                            metadata.sourceUrl && (
+                              <Link
+                                href={metadata.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  gap: 0.5,
+                                  color: "inherit",
+                                  textDecoration: "none",
+                                  "&:hover": {
+                                    textDecoration: "underline",
+                                  },
+                                }}
+                              >
+                                Source
+                                <OpenInNewIcon sx={{ fontSize: "0.9rem" }} />
+                              </Link>
+                            ),
                           ]
                             .filter(Boolean)
-                            .join(" • ")}
+                            .map((item, index, array) => (
+                              <React.Fragment key={index}>
+                                {item}
+                                {index < array.length - 1 && " • "}
+                              </React.Fragment>
+                            ))}
                         </Typography>
                       )}
 
@@ -565,6 +584,7 @@ const RecipeHeader = ({ recipe }) => {
                     <Button
                       onClick={resetServings}
                       variant="outlined"
+                      size="small"
                       startIcon={<RestartAltIcon />}
                       sx={{
                         ml: 1,
@@ -580,17 +600,6 @@ const RecipeHeader = ({ recipe }) => {
                       Reset
                     </Button>
                   )}
-                </Box>
-
-                {/* Action Buttons */}
-                <Box
-                  sx={{
-                    display: "flex",
-                    gap: 1,
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {/* Removed graph toggle button */}
                 </Box>
               </Box>
             </Box>

@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "title": "Hearty Lentil Mushroom Loaf with Walnuts",
+    "description": "This simple vegan lentil mushroom loaf with walnuts is a wonderful plant-based main dish the whole family will love! It\u2019s so hearty, savory and really easy to make with only 10 minutes of prep time. Looking for a scrumptious meatless main the whole family will enjoy? This wonderfully textured lentil mushroom loaf packs lots of nutrients, flavor, and plant-based protein in every single bite. Made with simple ingredients including walnuts, carrots, onion, herbs, and spices, this homemade recipe is perfect during the holidays but can be prepared all throughout the year!",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [
+      "Prepare it ahead of time, enjoy it over the course of a few days and customize this lentil mushroom loaf to your liking. It combines great taste with lots of nutrition and easy preparation! Each serving (2 slices) of this vegan meatloaf offers 19 g of plant-strong protein, 10 g of fiber (that\u2019s \u2153 of what you need per day), and 3.5 g omega-3 \u2014 which is twice your daily requirement.",
+      "Perfect especially during fall and winter, you can add different veggies to this loaf and serve it with an array of delicious sides \u2014 more on that below.",
+      "You can cook the lentils a few days before making this recipe or just buy canned lentils instead. You can also saut\u00e9 the veggies and make the glaze ahead of time so that you just need to throw everything together, add the glaze, and bake your lentil mushroom loaf!",
+      "Be sure that the batter is not too sticky or wet, so drain the saut\u00e9ed vegetables and lentils well before adding everything into your food processor. If necessary, use more oats to help soak up the excess liquid! We also recommend that any veggies you\u2019re using in this vegan meatloaf should be chopped finely or even grated!",
+      "Feel free to add other veggies like celery, zucchini or bell peppers in this recipe! Be sure to finely chop and saut\u00e9 them first."
+    ],
+    "sourceImageUrl": "",
+    "nationality": "",
+    "author": "",
+    "bookTitle": "",
+    "slug": "hearty-lentil-mushroom-loaf-with-walnuts",
+    "sourceUrl": "https://nutriciously.com/vegan-lentil-meatloaf/#recipe",
+    "imageUrl": "",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "peakMonths": [
+      "May",
+      "April",
+      "February",
+      "March",
+      "January",
+      "December"
+    ],
+    "totalTime": 90.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "green lentils",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing2",
+      "name": "mushrooms",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "walnuts",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing4",
+      "name": "carrots",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "onion",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "oats",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing7",
+      "name": "olive oil",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing8",
+      "name": "garlic",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "thyme",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing10",
+      "name": "salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing12",
+      "name": "soy sauce",
+      "unit": "ml",
+      "category": "condiment"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "food processor"
+    },
+    {
+      "id": "tool2",
+      "name": "baking dish"
+    },
+    {
+      "id": "tool3",
+      "name": "pan"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Lentil Preparation",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 200.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Rinse the green lentils under cold water. Place them in a pot with water and bring to a boil. Reduce heat and simmer until tender.",
+          "time": "30min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "cooked",
+            "name": "Cooked lentils"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Vegetable Saut\u00e9",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 150.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 100.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 100.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 15.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step2",
+          "action": "Chop the mushrooms, carrots, onion, and garlic. Heat olive oil in a pan and saut\u00e9 the vegetables until softened.",
+          "time": "10min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 150.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 100.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 100.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 15.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "saut\u00e9ed",
+            "name": "Saut\u00e9ed vegetables"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Lentil Mushroom Loaf Assembly",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 100.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 50.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 30.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step3",
+          "action": "In a food processor, combine the cooked lentils, saut\u00e9ed vegetables, walnuts, oats, thyme, salt, black pepper, and soy sauce. Blend until well mixed but still chunky.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "sub1",
+              "preparation": "cooked",
+              "name": "Cooked lentils"
+            },
+            {
+              "inputType": "state",
+              "ref": "sub2",
+              "preparation": "saut\u00e9ed",
+              "name": "Saut\u00e9ed vegetables"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 100.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 50.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 30.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "mixed",
+            "name": "Lentil mushroom mixture"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Transfer the mixture into a baking dish and shape it into a loaf. Bake in a preheated oven at 180\u00b0C for 45 minutes.",
+          "time": "45min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "mixed",
+              "name": "Lentil mushroom mixture"
+            },
+            {
+              "inputType": "component",
+              "ref": "tool2",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "baked",
+            "name": "Baked lentil mushroom loaf"
+          }
+        }
+      ]
+    }
+  ]
+}
