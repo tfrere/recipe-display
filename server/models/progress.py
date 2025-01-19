@@ -8,15 +8,21 @@ class GenerationStep(BaseModel):
     progress: int = Field(default=0, ge=0, le=100)  # 0-100
     status: str = Field(default="pending")  # "pending", "in_progress", "completed", "error"
     details: Optional[str] = None
+    startedAt: Optional[datetime] = Field(default=None, alias="startedAt", serialization_alias="startedAt")
 
     model_config = ConfigDict(
+        populate_by_name=True,
+        json_encoders={
+            datetime: lambda v: v.isoformat() if v else None
+        },
         json_schema_extra={
             "example": {
                 "step": "fetch_url",
                 "message": "Fetching recipe URL",
                 "progress": 50,
                 "status": "in_progress",
-                "details": "Some details..."
+                "details": "Some details...",
+                "startedAt": "2024-01-01T00:00:00"
             }
         }
     )

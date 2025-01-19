@@ -38,6 +38,13 @@ Only proceed with the recipe cleanup if the content is validated as a proper rec
 
 5. General rules:
    - CRITICAL - TEXT PRESERVATION:
+   - Remove only clearly unrelated content (ads, navigation elements, etc.)
+   - Keep all measurements and temperatures as they are
+   - DO NOT add any new information or change cooking instructions
+   - DO NOT change ingredient quantities or units
+   - DO NOT translate anything
+
+6. Extract recipe notes and metadata:
      * Extract and keep VERBATIM (word for word) ALL text sections that:
        - Describe the recipe
        - Talk about the author
@@ -51,13 +58,6 @@ Only proceed with the recipe cleanup if the content is validated as a proper rec
      * DO NOT modify, summarize, or rewrite ANY of these texts
      * Keep them in their original order of appearance
      * Keep ALL punctuation and formatting exactly as is
-   - Remove only clearly unrelated content (ads, navigation elements, etc.)
-   - Keep all measurements and temperatures as they are
-   - DO NOT add any new information or change cooking instructions
-   - DO NOT change ingredient quantities or units
-   - DO NOT translate anything yet
-
-6. Extract recipe notes and metadata:
    - Look for any introductory text, anecdotes, or additional information about the recipe that appears before the ingredients or instructions.
    - Keep relevant information about:
      * Recipe origin or history
@@ -67,49 +67,14 @@ Only proceed with the recipe cleanup if the content is validated as a proper rec
      * Book title or source (if mentioned)
 
 
-
-
+     
+     
 2. For the INGREDIENTS section:
-   - List each ingredient with its preparation state ONLY when it requires:
-     * Specific cutting technique:
-       - "Julienne" for long, thin strips (matchsticks)
-       - "Brunoise" for very small (1-3mm) cubes
-       - "Small dice" for 6mm cubes
-       - "Medium dice" for 12mm cubes
-       - "Large dice" for 20mm cubes
-       - "Chiffonade" for thin ribbons of leafy vegetables
-       - "Roughly chopped"
-       - "Finely chopped"
-       - "Minced"
-       - "Sliced" (specify thickness if important)
-       - "Quartered"
-       - "Halved"
-     * Specific preparation:
-       - "Toasted" for nuts or spices
-       - "Crushed" for garlic or spices
-       - "Ground" for spices
-       - "Peeled" only if not obvious
-     * Specific temperature:
-       - "Room temperature" for butter, eggs, etc.
-       - "Cold" for ingredients that must be kept cold
-     * DO NOT include:
-       - Quantities (they are handled elsewhere)
-       - Final states like "cooked", "baked", "thickened", "plain", "whole", "solid
-       - Obvious states like "fresh" for herbs
-       - Generic descriptions like "good quality" or "organic"
-       - Preparation states in the ingredient name (e.g., use "black pepper" not "freshly ground black pepper")
    - Keep all quantities and units exactly as they are
    - Group similar ingredients together (e.g., all spices together)
    - Vegetables have to be treated as units (e.g., 1 onion, 2 carrots, 3 potatoes)
    - Remove duplicates but combine their quantities
    - If an ingredient appears in instructions but not in the list, add it
-   - Always specify if ingredients should be:
-     * At room temperature (e.g., "2 eggs, room temperature")
-     * Cold (e.g., "100g butter, cold, cubed")
-     * Pre-cooked (e.g., "2 potatoes, boiled, medium dice")
-
-
-
 
 
 3. For the INSTRUCTIONS section:
@@ -191,6 +156,7 @@ METADATA:
 NATIONALITY: [Recipe nationality or cuisine type, if available]
 AUTHOR: [Recipe author, if mentioned]
 BOOK: [Book title or source, if from a cookbook]
+QUALITY_SCORE: [Recipe quality score, from 0 to 100]
 
 SELECTED IMAGE URL:
 [The most relevant URL or empty string if none are suitable]
@@ -201,8 +167,8 @@ SPECIAL EQUIPMENT:
 ...
 
 INGREDIENTS:
-- [Ingredient 1 with quantity and state if needed]
-- [Ingredient 2 with quantity and state if needed]
+- [Ingredient 1 with quantity]
+- [Ingredient 2 with quantity]
 ...
 
 

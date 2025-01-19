@@ -1,0 +1,909 @@
+{
+  "metadata": {
+    "title": "Blanquette de Veau",
+    "description": "A classic French veal stew with vegetables and a creamy sauce.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [
+      "This recipe is by Philippe Etchebest."
+    ],
+    "sourceImageUrl": "",
+    "nationality": "French",
+    "author": "Philippe Etchebest",
+    "bookTitle": "",
+    "slug": "blanquette-de-veau",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "peakMonths": [
+      "January",
+      "February",
+      "April",
+      "December",
+      "May",
+      "March"
+    ],
+    "totalTime": 230.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "veal",
+      "unit": "g",
+      "category": "meat"
+    },
+    {
+      "id": "ing2",
+      "name": "water",
+      "unit": "ml",
+      "category": "beverage"
+    },
+    {
+      "id": "ing3",
+      "name": "fresh thyme",
+      "unit": "unit",
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "fresh bay leaf",
+      "unit": "unit",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "carrots",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "onions",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "leek",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "garlic",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "lemon",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "fresh chives",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "Paris mushrooms",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing12",
+      "name": "sunflower oil",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing13",
+      "name": "butter",
+      "unit": "g",
+      "category": "dairy"
+    },
+    {
+      "id": "ing14",
+      "name": "flour",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing15",
+      "name": "liquid cream",
+      "unit": "ml",
+      "category": "dairy"
+    },
+    {
+      "id": "ing16",
+      "name": "coarse salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing17",
+      "name": "pepper",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing18",
+      "name": "Espelette pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large pot"
+    },
+    {
+      "id": "tool2",
+      "name": "strainer"
+    },
+    {
+      "id": "tool3",
+      "name": "saucepan"
+    },
+    {
+      "id": "tool4",
+      "name": "whisk"
+    },
+    {
+      "id": "tool5",
+      "name": "frying pan"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Blanquette de Veau Preparation",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 1000.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 3000.0,
+          "preparation": "liquid"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 2.0,
+          "preparation": "sprigs"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 1.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 4.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 2.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 1.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 3.0,
+          "preparation": "cloves"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 1.0,
+          "preparation": "whole"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 10.0,
+          "preparation": "sprigs"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 300.0,
+          "preparation": "g"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 15.0,
+          "preparation": "ml"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing13",
+          "type": "ingredient",
+          "amount": 60.0,
+          "preparation": "g"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing14",
+          "type": "ingredient",
+          "amount": 60.0,
+          "preparation": "g"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing15",
+          "type": "ingredient",
+          "amount": 200.0,
+          "preparation": "ml"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing16",
+          "type": "ingredient",
+          "amount": 10.0,
+          "preparation": "g"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing17",
+          "type": "ingredient",
+          "amount": 5.0,
+          "preparation": "g"
+        },
+        {
+          "inputType": "component",
+          "ref": "ing18",
+          "type": "ingredient",
+          "amount": 5.0,
+          "preparation": "g"
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "In a large pot, blanch the veal, starting with cold water.",
+          "time": "10min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 1000.0,
+              "preparation": "whole"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 3000.0,
+              "preparation": "liquid"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "name": "Blanched veal"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "While the meat is blanching, peel all the vegetables.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "name": "Peeled vegetables"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Cut the carrots in half if they are large, the onions into quarters, the leek in half, and remove the germs from the garlic cloves.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step2",
+              "name": "Peeled vegetables"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "name": "Prepared vegetables"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Remove the impurities from the broth.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step1",
+              "name": "Blanched veal"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "name": "Clean broth"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Add the vegetables, bay leaf, and thyme.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "name": "Prepared vegetables"
+            },
+            {
+              "inputType": "state",
+              "ref": "step4",
+              "name": "Clean broth"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 1.0,
+              "preparation": "whole"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 2.0,
+              "preparation": "sprigs"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step5",
+            "name": "Broth with vegetables"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Add coarse salt and pepper.",
+          "time": "2min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step5",
+              "name": "Broth with vegetables"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 10.0,
+              "preparation": "g"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 5.0,
+              "preparation": "g"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step6",
+            "name": "Seasoned broth"
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Squeeze half a lemon (be careful with the seeds).",
+          "time": "2min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 1.0,
+              "preparation": "whole"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step7",
+            "name": "Lemon juice"
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Let it cook for about 1h30min on low heat.",
+          "time": "1h30min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step6",
+              "name": "Seasoned broth"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step8",
+            "name": "Cooked broth"
+          }
+        },
+        {
+          "id": "step9",
+          "action": "Strain to separate the broth from the vegetables and meat.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step8",
+              "name": "Cooked broth"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step9",
+            "name": "Separated broth"
+          }
+        },
+        {
+          "id": "step10",
+          "action": "Make a roux in a saucepan or a high-sided frying pan.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step10",
+            "name": "Roux"
+          }
+        },
+        {
+          "id": "step11",
+          "action": "Only mix the flour and melted butter, do not cook it any further.",
+          "time": "2min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing14",
+              "type": "ingredient",
+              "amount": 60.0,
+              "preparation": "g"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing13",
+              "type": "ingredient",
+              "amount": 60.0,
+              "preparation": "g"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step11",
+            "name": "Roux mixture"
+          }
+        },
+        {
+          "id": "step12",
+          "action": "Turn off the heat and incorporate some of the broth into the sauce, adding it in small quantities to avoid lumps.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step11",
+              "name": "Roux mixture"
+            },
+            {
+              "inputType": "state",
+              "ref": "step9",
+              "name": "Separated broth"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step12",
+            "name": "Incorporated sauce"
+          }
+        },
+        {
+          "id": "step13",
+          "action": "Mix well, it will thicken, cook on low heat, it should remain very coating.",
+          "time": "10min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step12",
+              "name": "Incorporated sauce"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step13",
+            "name": "Thickened sauce"
+          }
+        },
+        {
+          "id": "step14",
+          "action": "In another saucepan, reduce the rest of the broth.",
+          "time": "20min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step9",
+              "name": "Separated broth"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step14",
+            "name": "Reduced broth"
+          }
+        },
+        {
+          "id": "step15",
+          "action": "Quarter the mushrooms on a bias.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 300.0,
+              "preparation": "g"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step15",
+            "name": "Quartered mushrooms"
+          }
+        },
+        {
+          "id": "step16",
+          "action": "Incorporate the reduced juice into the sauce to enhance the taste.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step13",
+              "name": "Thickened sauce"
+            },
+            {
+              "inputType": "state",
+              "ref": "step14",
+              "name": "Reduced broth"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step16",
+            "name": "Enhanced sauce"
+          }
+        },
+        {
+          "id": "step17",
+          "action": "Whip the cream for 5min to make whipped cream.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing15",
+              "type": "ingredient",
+              "amount": 200.0,
+              "preparation": "ml"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step17",
+            "name": "Whipped cream"
+          }
+        },
+        {
+          "id": "step18",
+          "action": "Add lemon juice to tighten the cream.",
+          "time": "2min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step17",
+              "name": "Whipped cream"
+            },
+            {
+              "inputType": "state",
+              "ref": "step7",
+              "name": "Lemon juice"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step18",
+            "name": "Tightened whipped cream"
+          }
+        },
+        {
+          "id": "step19",
+          "action": "Add Espelette pepper, salt, and pepper to the sauce.",
+          "time": "2min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step16",
+              "name": "Enhanced sauce"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing18",
+              "type": "ingredient",
+              "amount": 5.0,
+              "preparation": "g"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 10.0,
+              "preparation": "g"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 5.0,
+              "preparation": "g"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step19",
+            "name": "Seasoned sauce"
+          }
+        },
+        {
+          "id": "step20",
+          "action": "Incorporate the whipped cream and mix well.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step19",
+              "name": "Seasoned sauce"
+            },
+            {
+              "inputType": "state",
+              "ref": "step18",
+              "name": "Tightened whipped cream"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step20",
+            "name": "Final sauce"
+          }
+        },
+        {
+          "id": "step21",
+          "action": "In a hot frying pan, heat the oil.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 15.0,
+              "preparation": "ml"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step21",
+            "name": "Heated oil"
+          }
+        },
+        {
+          "id": "step22",
+          "action": "When the pan is hot, sear the mushrooms, season with salt and pepper, and caramelize them.",
+          "time": "5min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step15",
+              "name": "Quartered mushrooms"
+            },
+            {
+              "inputType": "state",
+              "ref": "step21",
+              "name": "Heated oil"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 5.0,
+              "preparation": "g"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 5.0,
+              "preparation": "g"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step22",
+            "name": "Sautéed mushrooms"
+          }
+        },
+        {
+          "id": "step23",
+          "action": "Add the pieces of meat and mushrooms to the sauce.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step20",
+              "name": "Final sauce"
+            },
+            {
+              "inputType": "state",
+              "ref": "step22",
+              "name": "Sautéed mushrooms"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step23",
+            "name": "Sauce with meat and mushrooms"
+          }
+        },
+        {
+          "id": "step24",
+          "action": "Cut the cooked carrots into large beveled pieces.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "name": "Prepared vegetables"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step24",
+            "name": "Cut carrots"
+          }
+        },
+        {
+          "id": "step25",
+          "action": "Chop the chives and add them to the sauce along with a zest of lemon.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step10",
+              "name": "Roux"
+            },
+            {
+              "inputType": "state",
+              "ref": "step24",
+              "name": "Cut carrots"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 10.0,
+              "preparation": "sprigs"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 1.0,
+              "preparation": "whole"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step25",
+            "name": "Final dish"
+          }
+        }
+      ]
+    }
+  ]
+}

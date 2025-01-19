@@ -7,30 +7,36 @@ import asyncio
 URL_STEPS = [
     GenerationStep(
         step="cleanup_content",
-        message="Cleaning up content"
+        message="Cleaning up content",
+        startedAt=None
     ),
     GenerationStep(
         step="generate_recipe",
-        message="Generating recipe"
+        message="Generating recipe",
+        startedAt=None
     ),
     GenerationStep(
         step="save_recipe",
-        message="Saving recipe"
+        message="Saving recipe",
+        startedAt=None
     )
 ]
 
 TEXT_IMAGE_STEPS = [
     GenerationStep(
         step="cleanup_content",
-        message="Cleaning up content"
+        message="Cleaning up content",
+        startedAt=None
     ),
     GenerationStep(
         step="generate_recipe",
-        message="Generating recipe"
+        message="Generating recipe",
+        startedAt=None
     ),
     GenerationStep(
         step="save_recipe",
-        message="Saving recipe"
+        message="Saving recipe",
+        startedAt=None
     )
 ]
 
@@ -70,6 +76,19 @@ class ProgressService:
             return
             
         entry = self._progress_entries[progress_id]
+        
+        # If we're starting a new step, mark the previous step as completed
+        if status == "in_progress":
+            current_step = entry.get("currentStep")
+            if current_step and current_step != step:
+                prev_step = next(
+                    (s for s in entry["steps"] if s["step"] == current_step),
+                    None
+                )
+                if prev_step and prev_step["status"] != "completed":
+                    prev_step["status"] = "completed"
+                    prev_step["progress"] = 100
+        
         step_entry = next(
             (s for s in entry["steps"] if s["step"] == step),
             None
@@ -79,6 +98,9 @@ class ProgressService:
             # Add artificial delay for better visualization
             if status == "in_progress" and progress == 0:
                 await asyncio.sleep(0.5)  # 500ms delay when starting a step
+                # Initialize startedAt when the step begins
+                if not step_entry.get("startedAt"):
+                    step_entry["startedAt"] = datetime.now().isoformat()
             elif status == "completed":
                 await asyncio.sleep(0.2)  # 200ms delay when completing a step
             
@@ -90,7 +112,8 @@ class ProgressService:
                 step_entry["details"] = details
             
             # Update current step and timestamp
-            entry["currentStep"] = step
+            if status == "in_progress":
+                entry["currentStep"] = step
             entry["updatedAt"] = datetime.now().isoformat()
             
             # Update global status

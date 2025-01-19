@@ -65,6 +65,7 @@ class ComponentRef(BaseModel):
     ref: str
     type: Literal["ingredient", "tool"]
     amount: float
+    preparation: str
 
     class Config:
         extra = "forbid"
@@ -72,7 +73,6 @@ class ComponentRef(BaseModel):
 class StateRef(BaseModel):
     inputType: Literal["state"]
     ref: str
-    preparation: str
     name: str
 
     class Config:

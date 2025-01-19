@@ -24,41 +24,6 @@ const initialState = {
   loadingMessage: null,
 };
 
-// Pour les URLs
-const urlSteps = [
-  { step: "prepare_content", message: "Preparing content" },
-  { step: "cleanup_content", message: "Cleaning up content" },
-  { step: "generate_recipe", message: "Generating recipe" },
-  { step: "save_recipe", message: "Saving recipe" },
-];
-
-// Pour le texte/image
-const textSteps = [
-  { step: "cleanup_content", message: "Cleaning up content" },
-  { step: "generate_recipe", message: "Generating recipe" },
-  { step: "save_recipe", message: "Saving recipe" },
-];
-
-const getProgressSteps = (type) => {
-  return [
-    {
-      step: "cleanup_content",
-      message: "Cleaning up content...",
-      status: "pending",
-    },
-    {
-      step: "generate_recipe",
-      message: "Generating recipe",
-      status: "pending",
-    },
-    {
-      step: "save_recipe",
-      message: "Saving recipe",
-      status: "pending",
-    },
-  ];
-};
-
 // Reducer
 function reducer(state, action) {
   switch (action.type) {
@@ -77,7 +42,7 @@ function reducer(state, action) {
         progress: {
           id: action.payload.progressId,
           status: "in_progress",
-          steps: getProgressSteps(action.payload.type),
+          steps: [],
           currentStep: null,
           createdAt: new Date().toISOString(),
         },

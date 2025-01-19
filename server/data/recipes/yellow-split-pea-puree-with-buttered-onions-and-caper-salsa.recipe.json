@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "title": "Yellow Split Pea Pur\u00e9e with Buttered Onions and Caper Salsa",
+    "description": "A Mediterranean-inspired pur\u00e9e of yellow split peas served with buttered onions and caper salsa, perfect as a dip or side dish.",
+    "servings": 6,
+    "recipeType": "starter",
+    "notes": [
+      "Make it your own - Veganise it: swap the butter for olive oil.",
+      "Serves 6 as a dip, or 4 as a side",
+      "Yotam\u2019s love affair with the Mediterranean means those signature staples \u2013 fatty olive oil, salty feta, briny capers! \u2013 permeate both his home kitchen and the OTK. This pur\u00e9e is a take on fava, a Greek mezze dish of yellow split peas with capers and red onion. It\u2019s fantastic served as a dip, but also works alongside grilled fish or roasted meat."
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/08/035_yellowpeapuree_2025-031-878x1024.jpg",
+    "nationality": "Mediterranean",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "Ottolenghi Books",
+    "slug": "yellow-split-pea-puree-with-buttered-onions-and-caper-salsa",
+    "sourceUrl": "https://books.ottolenghi.co.uk/otk-shelf-love/recipe/yellow-split-pea-puree-with-buttered-onions-and-caper-salsa/",
+    "imageUrl": "recipes/images/original/yellow-split-pea-puree-with-buttered-onions-and-caper-salsa.webp",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "peakMonths": [
+      "March",
+      "February",
+      "January"
+    ],
+    "totalTime": 5.0,
+    "quick": true
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "unsalted butter",
+      "unit": "tbsp",
+      "category": "dairy"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing3",
+      "name": "red onions",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "yellow split peas",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing5",
+      "name": "ground turmeric",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "salt",
+      "unit": "g",
+      "category": "pantry"
+    },
+    {
+      "id": "ing7",
+      "name": "capers",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing8",
+      "name": "parsley",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "lemon slices",
+      "unit": "unit",
+      "category": "produce"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large saut\u00e9 pan with a lid"
+    },
+    {
+      "id": "tool2",
+      "name": "food processor"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Caper Salsa",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 2.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Combine the capers, parsley, and lemon slices in a small bowl.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "combined",
+            "name": "Caper salsa"
+          }
+        }
+      ]
+    }
+  ]
+}

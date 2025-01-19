@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Chopped Liver",
+    "description": "A traditional Ashkenazi dish made with chicken livers, onions, and hard-boiled eggs, served as a spread or dip.",
+    "servings": 4,
+    "recipeType": "starter",
+    "notes": [
+      "During the days of rationing, in the 1950s, Ashkenazi Jews couldn\u2019t afford to make one of their most loved dishes, chopped liver, second only to gefilte fish in its iconic value. A creative solution was found using aubergines, a cheap and abundant local ingredient, that was \u2018made\u2019 to taste like the real thing. Still, over the years this dish, using an ingredient their Eastern European Ashkenazi ancestors would have thought was a UFO, has become a hit with many and is now sold everywhere, enjoying particular popularity in Orthodox neighbourhoods. The liver has turned into an aubergine within two generations, with the origins of the dish still carried on in the name.",
+      "Our \u2018real\u2019 chicken liver is a fantastic way to start a meal. Serve it with little toasts or with slices of good white bread.",
+      "\u2018Liver-flavour aubergine\u2019 is a weird-sounding yet popular invention, which is probably one of the best products to expose the unique, often paradoxical, history of the city over the last 60 years."
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2022/04/Jerusalem-square-jpeg.jpg",
+    "nationality": "Ashkenazi Jewish",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "slug": "chopped-liver",
+    "sourceUrl": "https://books.ottolenghi.co.uk/jerusalem/recipe/chopped-liver/",
+    "imageUrl": "recipes/images/original/chopped-liver.webp",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "peakMonths": [
+      "February",
+      "January",
+      "May",
+      "December"
+    ],
+    "totalTime": 175.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "melted goose or duck fat",
+      "unit": "ml",
+      "category": "condiment"
+    },
+    {
+      "id": "ing2",
+      "name": "onions",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "chicken livers",
+      "unit": "g",
+      "category": "meat"
+    },
+    {
+      "id": "ing4",
+      "name": "hard-boiled large free-range eggs",
+      "unit": "unit",
+      "category": "egg"
+    },
+    {
+      "id": "ing5",
+      "name": "dessert wine",
+      "unit": "tbsp",
+      "category": "beverage"
+    },
+    {
+      "id": "ing6",
+      "name": "salt",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing7",
+      "name": "coarse ground black pepper",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing8",
+      "name": "spring onions",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "chives",
+      "unit": "tbsp",
+      "category": "produce"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large frying pan"
+    },
+    {
+      "id": "tool2",
+      "name": "meat grinder or food processor"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Chopped Liver Preparation",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 100.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 400.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 400.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 5.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 4.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 0.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 1.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Place two thirds of the goose fat in a large frying pan and fry the onions over a medium heat until dark brown, about 10-15min, stirring occasionally.",
+          "time": "15min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 67.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 400.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "fried",
+            "name": "Dark brown onions"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Remove the onions from the pan, pushing them down a little as you do so, so that you are left with some fat in the pan. Add a little fat if needed.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step1",
+              "preparation": "fried",
+              "name": "Dark brown onions"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "prepared",
+            "name": "Onions removed, fat remaining"
+          }
+        },
+        {
+          "id": "step3",
+          "action": "Add the livers and cook them for up to 10min, stirring from time to time, until they are properly cooked in the middle \u2014 no blood should be coming out at this stage.",
+          "time": "10min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 400.0
+            },
+            {
+              "inputType": "state",
+              "ref": "step2",
+              "preparation": "prepared",
+              "name": "Onions removed, fat remaining"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "cooked",
+            "name": "Cooked chicken livers"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Mix the livers with the onion before chopping them together. The best way to do this is with a meat grinder, processing the mixture twice to get the right texture.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "cooked",
+              "name": "Cooked chicken livers"
+            },
+            {
+              "inputType": "state",
+              "ref": "step1",
+              "preparation": "fried",
+              "name": "Dark brown onions"
+            },
+            {
+              "inputType": "component",
+              "ref": "tool1",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "mixed",
+            "name": "Liver and onion mixture"
+          }
+        },
+        {
+          "id": "step5",
+          "action": "Blitz the onions and liver in two to three batches so the machine bowl isn\u2019t very full. Pulse for 20-30s then check, making sure the liver and onions have turned into a uniformly smooth, yet still \u2018bumpy\u2019 paste. Transfer everything into a large mixing bowl.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step4",
+              "preparation": "mixed",
+              "name": "Liver and onion mixture"
+            },
+            {
+              "inputType": "component",
+              "ref": "tool2",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step5",
+            "preparation": "blitzed",
+            "name": "Smooth liver and onion paste"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Peel the eggs, then grate two of them roughly and another two finely and add them to the liver mixture.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "state",
+              "ref": "step5",
+              "preparation": "blitzed",
+              "name": "Smooth liver and onion paste"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step6",
+            "preparation": "prepared",
+            "name": "Eggs added to liver mixture"
+          }
+        },
+        {
+          "id": "step7",
+          "action": "Add the remaining fat, the dessert wine and the salt and pepper and fold everything together gently.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step6",
+              "preparation": "prepared",
+              "name": "Eggs added to liver mixture"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 33.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 4.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 0.5
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step7",
+            "preparation": "combined",
+            "name": "Liver mixture with eggs and seasoning"
+          }
+        },
+        {
+          "id": "step8",
+          "action": "Transfer the mix into a non-metallic flat dish and cover the surface tightly with cling film. Leave it to cool down, then store in the fridge for at least 2h to firm up a little.",
+          "time": "2h",
+          "stepType": "prep",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step7",
+              "preparation": "combined",
+              "name": "Liver mixture with eggs and seasoning"
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step8",
+            "preparation": "chilled",
+            "name": "Chopped liver ready to serve"
+          }
+        },
+        {
+          "id": "step9",
+          "action": "To serve, finely chop the remaining egg. Spoon some of the chopped liver into serving plates, garnish with the chopped egg and sprinkle with spring onion and chives.",
+          "time": "5min",
+          "stepType": "prep",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "state",
+              "ref": "step8",
+              "preparation": "chilled",
+              "name": "Chopped liver ready to serve"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step9",
+            "preparation": "served",
+            "name": "Chopped liver with garnish"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "metadata": {
+    "title": "Stuffed Aubergine with Lamb & Pine Nuts",
+    "description": "A deliciously hearty dish featuring roasted aubergines stuffed with a savory lamb mixture, seasoned with spices and topped with a rich sauce.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "notes": [
+      "In their book, The Flavor of Jerusalem, Joan Nathan and Judy Stacey Goldman give a slightly unorthodox recipe for stuffed aubergine with calves\u2019 liver and apples. This is the creation of Reverend William Gardiner-Scott who, in the 1970s, was head of St Andrew\u2019s, the only Presbyterian church in Jerusalem. The church was erected in 1927 to commemorate the capture of Jerusalem by the British during the First World War. This is one of only a few culinary marks the Brits have left behind.",
+      "These are deliciously hearty and best served with some bread or simple rice (see basmati rice and orzo, page 103) and some pickles on the side (see pickled turnip and beetroot, page 307).",
+      "Elran Shrefler is the youngest of Ezra and Rachela Shrefler\u2019s nine children, who run Azura, a restaurant in the heart of Machne Yehuda market that serves Jerusalemites traditional Kurdish recipes with a Turkish influence, the area from which Ezra hails. A member of the Slow Food movement, Elran starts work at four every morning and cooks all his food in massive pots on small oil-burning stoves (see picture on pages 122\u20133), just as his family has done for generations. His food, long-cooked stews and hearty soups, is ready for the first customers who arrive at around 8 a.m. (!). It is essentially real fast food \u2014 after the long hours of slow cooking, it takes seconds to plate and serve. Elran showed us how to make his stuffed aubergine, Turkish-style, which is our favourite dish at Azura. This is our interpretation."
+    ],
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2022/04/167_Stuffed-Aubergine-with-Lamb-683x1024.jpg",
+    "nationality": "Jerusalem",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "The Flavor of Jerusalem",
+    "slug": "stuffed-aubergine-with-lamb-pine-nuts",
+    "sourceUrl": "https://books.ottolenghi.co.uk/jerusalem/recipe/stuffed-aubergine-with-lamb-pine-nuts/",
+    "imageUrl": "recipes/images/original/stuffed-aubergine-with-lamb-pine-nuts.webp",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "peakMonths": [
+      "February",
+      "January",
+      "May",
+      "December"
+    ],
+    "totalTime": 141.0,
+    "quick": false
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "aubergines",
+      "unit": "unit",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "olive oil",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing3",
+      "name": "ground cumin",
+      "unit": "tsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "sweet paprika",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "ground cinnamon",
+      "unit": "tbsp",
+      "category": "spice"
+    },
+    {
+      "id": "ing6",
+      "name": "onions",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "minced lamb",
+      "unit": "g",
+      "category": "meat"
+    },
+    {
+      "id": "ing8",
+      "name": "pine nuts",
+      "unit": "g",
+      "category": "other"
+    },
+    {
+      "id": "ing9",
+      "name": "flat-leaf parsley",
+      "unit": "g",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "tomato pur\u00e9e",
+      "unit": "tsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing11",
+      "name": "caster sugar",
+      "unit": "tsp",
+      "category": "pantry"
+    },
+    {
+      "id": "ing12",
+      "name": "water",
+      "unit": "ml",
+      "category": "beverage"
+    },
+    {
+      "id": "ing13",
+      "name": "lemon juice",
+      "unit": "tbsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing14",
+      "name": "tamarind paste",
+      "unit": "tsp",
+      "category": "condiment"
+    },
+    {
+      "id": "ing15",
+      "name": "cinnamon sticks",
+      "unit": "unit",
+      "category": "spice"
+    },
+    {
+      "id": "ing16",
+      "name": "salt",
+      "unit": "g",
+      "category": "spice"
+    },
+    {
+      "id": "ing17",
+      "name": "black pepper",
+      "unit": "g",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool1",
+      "name": "large frying pan"
+    },
+    {
+      "id": "tool2",
+      "name": "roasting tin"
+    }
+  ],
+  "subRecipes": [
+    {
+      "id": "sub1",
+      "title": "Roasted Aubergines",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing1",
+          "type": "ingredient",
+          "amount": 4.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing2",
+          "type": "ingredient",
+          "amount": 6.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing16",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing17",
+          "type": "ingredient",
+          "amount": 5.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step1",
+          "action": "Preheat the oven to 220\u00b0C.",
+          "time": "10min",
+          "stepType": "prep",
+          "stepMode": "passive",
+          "inputs": [],
+          "output": {
+            "inputType": "state",
+            "ref": "step1",
+            "preparation": "preheated",
+            "name": "Oven preheated"
+          }
+        },
+        {
+          "id": "step2",
+          "action": "Place the aubergine halves, skin-side down, in a roasting tin large enough to accommodate them snugly. Brush the flesh with 4 tablespoons of the olive oil and season with 1 teaspoon of salt and plenty of black pepper. Roast for about 20min, until golden brown. Remove from the oven and allow to cool slightly.",
+          "time": "20min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing1",
+              "type": "ingredient",
+              "amount": 4.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 4.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 5.0
+            },
+            {
+              "inputType": "component",
+              "ref": "tool2",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step2",
+            "preparation": "roasted",
+            "name": "Roasted aubergines"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub2",
+      "title": "Lamb Stuffing",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing3",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing4",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing5",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing6",
+          "type": "ingredient",
+          "amount": 340.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing7",
+          "type": "ingredient",
+          "amount": 500.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing8",
+          "type": "ingredient",
+          "amount": 50.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing9",
+          "type": "ingredient",
+          "amount": 20.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing10",
+          "type": "ingredient",
+          "amount": 2.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing11",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing16",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing17",
+          "type": "ingredient",
+          "amount": 5.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step3",
+          "action": "While the aubergines are cooking, start making the stuffing by heating up the remaining olive oil in a large frying pan. Mix together the cumin, paprika and ground cinnamon and add half of this spice mix to the pan, along with the onion. Cook on a medium\u2013high heat for about 8min, stirring often.",
+          "time": "8min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "component",
+              "ref": "ing2",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing3",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing4",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing5",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing6",
+              "type": "ingredient",
+              "amount": 340.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step3",
+            "preparation": "cooked",
+            "name": "Cooked onion and spices"
+          }
+        },
+        {
+          "id": "step4",
+          "action": "Add the lamb, pine nuts, parsley, tomato pur\u00e9e, 1 teaspoon of the sugar, 1 teaspoon of salt and some black pepper to the pan. Continue to cook and stir for another 8min, until the meat is cooked.",
+          "time": "8min",
+          "stepType": "cook",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step3",
+              "preparation": "cooked",
+              "name": "Cooked onion and spices"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing7",
+              "type": "ingredient",
+              "amount": 500.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing8",
+              "type": "ingredient",
+              "amount": 50.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing9",
+              "type": "ingredient",
+              "amount": 20.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing10",
+              "type": "ingredient",
+              "amount": 2.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing11",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing17",
+              "type": "ingredient",
+              "amount": 5.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step4",
+            "preparation": "stuffing mixture",
+            "name": "Lamb stuffing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sub3",
+      "title": "Final Assembly",
+      "ingredients": [
+        {
+          "inputType": "component",
+          "ref": "ing12",
+          "type": "ingredient",
+          "amount": 150.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing13",
+          "type": "ingredient",
+          "amount": 1.5
+        },
+        {
+          "inputType": "component",
+          "ref": "ing14",
+          "type": "ingredient",
+          "amount": 1.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing15",
+          "type": "ingredient",
+          "amount": 4.0
+        },
+        {
+          "inputType": "component",
+          "ref": "ing16",
+          "type": "ingredient",
+          "amount": 1.0
+        }
+      ],
+      "steps": [
+        {
+          "id": "step5",
+          "action": "Place the remaining spice mix in a bowl and add the water, lemon juice, tamarind, remaining sugar, cinnamon sticks and \u00bd teaspoon of salt; mix well.",
+          "time": "5min",
+          "stepType": "combine",
+          "stepMode": "active",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step4",
+              "preparation": "stuffing mixture",
+              "name": "Lamb stuffing"
+            },
+            {
+              "inputType": "component",
+              "ref": "ing12",
+              "type": "ingredient",
+              "amount": 150.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing13",
+              "type": "ingredient",
+              "amount": 1.5
+            },
+            {
+              "inputType": "component",
+              "ref": "ing14",
+              "type": "ingredient",
+              "amount": 1.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing15",
+              "type": "ingredient",
+              "amount": 4.0
+            },
+            {
+              "inputType": "component",
+              "ref": "ing16",
+              "type": "ingredient",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step5",
+            "preparation": "mixed",
+            "name": "Spice mixture"
+          }
+        },
+        {
+          "id": "step6",
+          "action": "Reduce the oven temperature to 195\u00b0C. Pour the spice mix into the bottom of the aubergine roasting tin. Spoon the lamb mixture on top of each aubergine. Cover the tin tightly with foil, return to the oven and roast for 1h30min, by which point the aubergines should be completely soft and the sauce thick; twice through the cooking, remove the foil and baste the aubergines with the sauce, adding some water if the sauce dries out. Serve warm, not hot, or at room temperature.",
+          "time": "1h30min",
+          "stepType": "cook",
+          "stepMode": "passive",
+          "inputs": [
+            {
+              "inputType": "state",
+              "ref": "step5",
+              "preparation": "mixed",
+              "name": "Spice mixture"
+            },
+            {
+              "inputType": "state",
+              "ref": "step2",
+              "preparation": "roasted",
+              "name": "Roasted aubergines"
+            },
+            {
+              "inputType": "component",
+              "ref": "tool2",
+              "type": "tool",
+              "amount": 1.0
+            }
+          ],
+          "output": {
+            "inputType": "state",
+            "ref": "step6",
+            "preparation": "roasted and basted",
+            "name": "Stuffed aubergines"
+          }
+        }
+      ]
+    }
+  ]
+}
