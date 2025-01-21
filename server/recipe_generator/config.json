@@ -1,0 +1,11 @@
+{
+  "temperature": 0.3,
+  "openai_models": {
+    "cleanup": "gpt-3.5-turbo",
+    "structure": "gpt-3.5-turbo"
+  },
+  "anthropic_models": {
+    "cleanup": "claude-3-5-haiku-20241022",
+    "structure": "claude-3-5-haiku-20241022"
+  }
+}

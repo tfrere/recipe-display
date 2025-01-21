@@ -1,0 +1,866 @@
+{
+  "error_type": "recipe_validation_error",
+  "error_message": "165 validation errors for Recipe\nsubRecipes.0.steps.0.inputs.0.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.0.inputs.0.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.0.inputs.0.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.0.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1000.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.0.inputs.0.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.0.inputs.0.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1000.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.0.inputs.0.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.4.inputs.2.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.4.inputs.2.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.4.inputs.2.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=2.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.4.inputs.2.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.4.inputs.2.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=2.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.2.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.4.inputs.3.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.4.inputs.3.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.4.inputs.3.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.4.inputs.3.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.4.inputs.3.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.4.inputs.3.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.5.inputs.1.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.1.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.1.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.1.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.1.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.1.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.5.inputs.2.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.2.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.2.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.2.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.2.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.2.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.5.inputs.3.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.3.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.3.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.5.inputs.3.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.5.inputs.3.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.5.inputs.3.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.13.inputs.0.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.13.inputs.0.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.13.inputs.0.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=200.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.13.inputs.0.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.13.inputs.0.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=200.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.13.inputs.0.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.14.inputs.1.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.14.inputs.1.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.14.inputs.1.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.14.inputs.1.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.14.inputs.1.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.14.inputs.1.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.15.inputs.1.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.1.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.1.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.1.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.1.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.1.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.15.inputs.2.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.2.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.2.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.2.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.2.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.2.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.15.inputs.3.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.3.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.3.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.15.inputs.3.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.15.inputs.3.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.15.inputs.3.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.17.inputs.0.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.17.inputs.0.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.17.inputs.0.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.17.inputs.0.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.17.inputs.0.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.17.inputs.0.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.18.inputs.0.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.18.inputs.0.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.18.inputs.0.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=300.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.18.inputs.0.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.18.inputs.0.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=300.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.18.inputs.0.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.21.inputs.1.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.21.inputs.1.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.21.inputs.1.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=10.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.21.inputs.1.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....0, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.21.inputs.1.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=10.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.1.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.ComponentRef.preparation\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/string_type\nsubRecipes.0.steps.21.inputs.3.StateRef.inputType\n  Input should be 'state' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.21.inputs.3.StateRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.21.inputs.3.StateRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.StateRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.StateRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.SubRecipeRef.inputType\n  Input should be 'subRecipe' [type=literal_error, input_value='component', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/literal_error\nsubRecipes.0.steps.21.inputs.3.SubRecipeRef.name\n  Field required [type=missing, input_value={'inputType': 'component'....5, 'preparation': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.10/v/missing\nsubRecipes.0.steps.21.inputs.3.SubRecipeRef.type\n  Extra inputs are not permitted [type=extra_forbidden, input_value='ingredient', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.SubRecipeRef.amount\n  Extra inputs are not permitted [type=extra_forbidden, input_value=0.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden\nsubRecipes.0.steps.21.inputs.3.SubRecipeRef.preparation\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden",
+  "recipe_json": {
+    "metadata": {
+      "title": "Blanquette de Veau",
+      "description": "A classic French veal stew with creamy sauce and vegetables",
+      "servings": 4,
+      "recipeType": "main_course",
+      "notes": [],
+      "sourceImageUrl": "",
+      "nationality": "French",
+      "author": "Philippe Etchebest",
+      "bookTitle": "Unknown",
+      "slug": "blanquette-de-veau",
+      "sourceUrl": "",
+      "imageUrl": "",
+      "diets": [
+        "omnivorous"
+      ],
+      "seasons": [
+        "winter",
+        "spring",
+        "autumn"
+      ],
+      "peakMonths": [
+        "September",
+        "May",
+        "November",
+        "February",
+        "December",
+        "March",
+        "April",
+        "October",
+        "January"
+      ],
+      "totalTime": 210.0,
+      "quick": false
+    },
+    "ingredients": [
+      {
+        "id": "ing1",
+        "name": "veal",
+        "unit": "g",
+        "category": "meat"
+      },
+      {
+        "id": "ing2",
+        "name": "water",
+        "unit": "ml",
+        "category": "beverage"
+      },
+      {
+        "id": "ing3",
+        "name": "fresh thyme",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing4",
+        "name": "fresh bay leaf",
+        "unit": "unit",
+        "category": "spice"
+      },
+      {
+        "id": "ing5",
+        "name": "carrots",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing6",
+        "name": "onions",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing7",
+        "name": "leek",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing8",
+        "name": "garlic cloves",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing9",
+        "name": "lemon",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing10",
+        "name": "fresh chives",
+        "unit": "unit",
+        "category": "produce"
+      },
+      {
+        "id": "ing11",
+        "name": "button mushrooms",
+        "unit": "g",
+        "category": "produce"
+      },
+      {
+        "id": "ing12",
+        "name": "sunflower oil",
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "id": "ing13",
+        "name": "butter",
+        "unit": "g",
+        "category": "dairy"
+      },
+      {
+        "id": "ing14",
+        "name": "flour",
+        "unit": "g",
+        "category": "pantry"
+      },
+      {
+        "id": "ing15",
+        "name": "heavy cream",
+        "unit": "ml",
+        "category": "dairy"
+      },
+      {
+        "id": "ing16",
+        "name": "coarse salt",
+        "unit": "pinch",
+        "category": "pantry"
+      },
+      {
+        "id": "ing17",
+        "name": "pepper",
+        "unit": "pinch",
+        "category": "spice"
+      },
+      {
+        "id": "ing18",
+        "name": "Espelette pepper",
+        "unit": "pinch",
+        "category": "spice"
+      }
+    ],
+    "tools": [
+      {
+        "id": "tool1",
+        "name": "Chinois"
+      },
+      {
+        "id": "tool2",
+        "name": "Faitout"
+      },
+      {
+        "id": "tool3",
+        "name": "Casserole or high-sided pan"
+      }
+    ],
+    "subRecipes": [
+      {
+        "id": "sub1",
+        "title": "Blanquette de Veau",
+        "ingredients": [
+          {
+            "inputType": "component",
+            "ref": "ing1",
+            "type": "ingredient",
+            "amount": 1000.0,
+            "preparation": "blanched"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing3",
+            "type": "ingredient",
+            "amount": 2.0,
+            "preparation": "removed from stem"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing4",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "removed from stem"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing5",
+            "type": "ingredient",
+            "amount": 4.0,
+            "preparation": "peeled and halved if large"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing6",
+            "type": "ingredient",
+            "amount": 2.0,
+            "preparation": "peeled and quartered"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing7",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "halved"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing8",
+            "type": "ingredient",
+            "amount": 3.0,
+            "preparation": "sprouts removed"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing9",
+            "type": "ingredient",
+            "amount": 0.5,
+            "preparation": "juiced and seeds removed"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing10",
+            "type": "ingredient",
+            "amount": 10.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing11",
+            "type": "ingredient",
+            "amount": 300.0,
+            "preparation": "sliced diagonally"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing12",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing13",
+            "type": "ingredient",
+            "amount": 60.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing14",
+            "type": "ingredient",
+            "amount": 60.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing15",
+            "type": "ingredient",
+            "amount": 200.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing16",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing17",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "-"
+          },
+          {
+            "inputType": "component",
+            "ref": "ing18",
+            "type": "ingredient",
+            "amount": 1.0,
+            "preparation": "-"
+          }
+        ],
+        "steps": [
+          {
+            "id": "step1",
+            "action": "Blanch the veal in cold water",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing1",
+                "type": "ingredient",
+                "amount": 1000.0,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step1",
+              "name": "Blanched veal"
+            }
+          },
+          {
+            "id": "step2",
+            "action": "Peel all the vegetables",
+            "time": "10min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step1",
+                "name": "Blanched veal"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step2",
+              "name": "Peeled vegetables"
+            }
+          },
+          {
+            "id": "step3",
+            "action": "Cut the carrots, onions, leek, and garlic",
+            "time": "10min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step2",
+                "name": "Peeled vegetables"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step3",
+              "name": "Cut vegetables"
+            }
+          },
+          {
+            "id": "step4",
+            "action": "Remove impurities from the broth",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step1",
+                "name": "Blanched veal"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step4",
+              "name": "Clean broth"
+            }
+          },
+          {
+            "id": "step5",
+            "action": "Add vegetables, bay leaf, and thyme to the broth",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step3",
+                "name": "Cut vegetables"
+              },
+              {
+                "inputType": "state",
+                "ref": "step4",
+                "name": "Clean broth"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing3",
+                "type": "ingredient",
+                "amount": 2.0,
+                "preparation": null
+              },
+              {
+                "inputType": "component",
+                "ref": "ing4",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step5",
+              "name": "Vegetable and herb mixture"
+            }
+          },
+          {
+            "id": "step6",
+            "action": "Season with salt and pepper, squeeze lemon juice",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step5",
+                "name": "Vegetable and herb mixture"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing16",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              },
+              {
+                "inputType": "component",
+                "ref": "ing17",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              },
+              {
+                "inputType": "component",
+                "ref": "ing9",
+                "type": "ingredient",
+                "amount": 0.5,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step6",
+              "name": "Seasoned broth"
+            }
+          },
+          {
+            "id": "step7",
+            "action": "Simmer gently for about 1.5 hours",
+            "time": "1h30min",
+            "stepType": "cook",
+            "stepMode": "passive",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step6",
+                "name": "Seasoned broth"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step7",
+              "name": "Simmered broth"
+            }
+          },
+          {
+            "id": "step8",
+            "action": "Strain the broth through a chinois",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step7",
+                "name": "Simmered broth"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step8",
+              "name": "Strained broth"
+            }
+          },
+          {
+            "id": "step9",
+            "action": "Make a roux in a high-sided pan",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing13",
+                "type": "ingredient",
+                "amount": 60.0,
+                "preparation": "melted"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing14",
+                "type": "ingredient",
+                "amount": 60.0,
+                "preparation": "-"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step9",
+              "name": "Roux"
+            }
+          },
+          {
+            "id": "step10",
+            "action": "Gradually incorporate a portion of the broth to thicken the sauce",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step8",
+                "name": "Strained broth"
+              },
+              {
+                "inputType": "state",
+                "ref": "step9",
+                "name": "Roux"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step10",
+              "name": "Thickened sauce"
+            }
+          },
+          {
+            "id": "step11",
+            "action": "Cook over low heat until the sauce coats the back of a spoon",
+            "time": "5min",
+            "stepType": "cook",
+            "stepMode": "passive",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step10",
+                "name": "Thickened sauce"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step11",
+              "name": "Coating sauce"
+            }
+          },
+          {
+            "id": "step12",
+            "action": "Reduce the remaining broth in a separate pan",
+            "time": "10min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step8",
+                "name": "Strained broth"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step12",
+              "name": "Reduced broth"
+            }
+          },
+          {
+            "id": "step13",
+            "action": "Incorporate the reduced broth into the sauce",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step12",
+                "name": "Reduced broth"
+              },
+              {
+                "inputType": "state",
+                "ref": "step11",
+                "name": "Coating sauce"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step13",
+              "name": "Enhanced sauce"
+            }
+          },
+          {
+            "id": "step14",
+            "action": "Whisk the cream for 5 minutes to make whipped cream",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing15",
+                "type": "ingredient",
+                "amount": 200.0,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step14",
+              "name": "Whipped cream"
+            }
+          },
+          {
+            "id": "step15",
+            "action": "Add a dash of lemon juice to thicken the cream",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step14",
+                "name": "Whipped cream"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing9",
+                "type": "ingredient",
+                "amount": 0.5,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step15",
+              "name": "Lemon-flavored cream"
+            }
+          },
+          {
+            "id": "step16",
+            "action": "Season the sauce with Espelette pepper, salt, and pepper",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step13",
+                "name": "Enhanced sauce"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing18",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              },
+              {
+                "inputType": "component",
+                "ref": "ing16",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              },
+              {
+                "inputType": "component",
+                "ref": "ing17",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step16",
+              "name": "Seasoned sauce"
+            }
+          },
+          {
+            "id": "step17",
+            "action": "Incorporate the seasoned sauce into the whipped cream",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step15",
+                "name": "Lemon-flavored cream"
+              },
+              {
+                "inputType": "state",
+                "ref": "step16",
+                "name": "Seasoned sauce"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step17",
+              "name": "Creamy sauce"
+            }
+          },
+          {
+            "id": "step18",
+            "action": "Heat oil in a pan",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing12",
+                "type": "ingredient",
+                "amount": 1.0,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step18",
+              "name": "Heated oil"
+            }
+          },
+          {
+            "id": "step19",
+            "action": "Sear the mushrooms until caramelized",
+            "time": "5min",
+            "stepType": "cook",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "component",
+                "ref": "ing11",
+                "type": "ingredient",
+                "amount": 300.0,
+                "preparation": null
+              },
+              {
+                "inputType": "state",
+                "ref": "step18",
+                "name": "Heated oil"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step19",
+              "name": "Caramelized mushrooms"
+            }
+          },
+          {
+            "id": "step20",
+            "action": "Add the meat and mushrooms to the sauce",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step1",
+                "name": "Blanched veal"
+              },
+              {
+                "inputType": "state",
+                "ref": "step19",
+                "name": "Caramelized mushrooms"
+              },
+              {
+                "inputType": "state",
+                "ref": "step17",
+                "name": "Creamy sauce"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step20",
+              "name": "Meat and mushroom stew"
+            }
+          },
+          {
+            "id": "step21",
+            "action": "Cut the cooked carrots into large pieces",
+            "time": "5min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step5",
+                "name": "Vegetable and herb mixture"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step21",
+              "name": "Large carrot pieces"
+            }
+          },
+          {
+            "id": "step22",
+            "action": "Chop the chives and add to the sauce with lemon zest",
+            "time": "5min",
+            "stepType": "combine",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step21",
+                "name": "Large carrot pieces"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing10",
+                "type": "ingredient",
+                "amount": 10.0,
+                "preparation": null
+              },
+              {
+                "inputType": "state",
+                "ref": "step20",
+                "name": "Meat and mushroom stew"
+              },
+              {
+                "inputType": "component",
+                "ref": "ing9",
+                "type": "ingredient",
+                "amount": 0.5,
+                "preparation": null
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step22",
+              "name": "Final dish"
+            }
+          },
+          {
+            "id": "step23",
+            "action": "Serve and enjoy!",
+            "time": "0min",
+            "stepType": "prep",
+            "stepMode": "active",
+            "inputs": [
+              {
+                "inputType": "state",
+                "ref": "step22",
+                "name": "Final dish"
+              }
+            ],
+            "output": {
+              "inputType": "state",
+              "ref": "step23",
+              "name": "Served dish"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timestamp": "2025-01-19T18:18:35.756769"
+}

@@ -1,182 +1,91 @@
-# Recipe Display
+# Structured LLM
 
-Une application web pour afficher et gérer des recettes de cuisine, avec support pour l'importation automatique depuis divers sites web.
+A provider-agnostic library for generating structured outputs from LLMs using Pydantic and Instructor.
 
-## Fonctionnalités
+## Features
 
-- **Importation automatique** de recettes depuis divers sites web
-- Support de l'authentification pour les sites protégés (ex: Ottolenghi)
-- Gestion des notes de recettes
-- Métadonnées complètes (portions, difficulté, temps, etc.)
-- Gestion des images et conversion automatique en WebP
-- Interface responsive et moderne
-
-## Prérequis
-
-- Go 1.21+
-- Node.js 18+
-- npm ou yarn
+- Provider agnostic (supports Anthropic, Deepseek, and easily extensible)
+- Automatic validation and retry with Pydantic
+- Async support
+- Type-safe with full typing support
+- Easy to extend with new providers
 
 ## Installation
 
-1. Clonez le dépôt :
 ```bash
-git clone https://github.com/votre-username/recipe-display.git
-cd recipe-display
+poetry install
 ```
 
-2. Installez les dépendances du serveur :
-```bash
-cd server
-go mod download
+## Environment Variables
+
+Create a `.env` file with your API keys:
+
+```env
+ANTHROPIC_API_KEY=your_anthropic_key
+DEEPSEEK_API_KEY=your_deepseek_key
 ```
 
-3. Installez les dépendances du client :
-```bash
-cd client
-npm install
+## Usage
+
+Here's a simple example of how to use the library:
+
+```python
+from pydantic import BaseModel, Field
+from structured_llm.providers.anthropic import AnthropicProvider
+from structured_llm.core.generator import StructuredGenerator
+
+# Define your schema
+class Recipe(BaseModel):
+    title: str
+    ingredients: list[str]
+    steps: list[str]
+    prep_time_minutes: int
+    cooking_time_minutes: int
+    difficulty: str
+
+# Create a provider
+provider = AnthropicProvider(
+    model="claude-3-haiku",
+    temperature=0.7
+)
+
+# Create a generator
+generator = StructuredGenerator(provider=provider)
+
+# Generate content
+recipe = await generator.generate(
+    prompt="Generate a recipe for chocolate cake",
+    schema=Recipe
+)
+
+print(recipe.model_dump_json(indent=2))
 ```
 
-4. Configurez les variables d'environnement :
-```bash
-# Dans server/.env
-OPENAI_API_KEY=votre-clé-api
+## Adding a New Provider
+
+To add a new provider, create a new class that inherits from `LLMProvider`:
+
+```python
+from structured_llm.providers.base import LLMProvider
+
+class MyProvider(LLMProvider):
+    async def generate(self, prompt: str, output_schema: Type[T]) -> T:
+        # Implement your provider-specific logic here
+        pass
+
+    def get_model_config(self) -> Dict[str, Any]:
+        return {
+            "model": self.model,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
+            **self.additional_params
+        }
+
+    @property
+    def provider_name(self) -> str:
+        return "my_provider"
 ```
 
-## Lancement
+## Examples
 
-1. Démarrez le serveur :
-```bash
-cd server
-go run main.go
-```
-
-2. Démarrez le client :
-```bash
-cd client
-npm start
-```
-
-L'application sera accessible sur `http://localhost:3000`
-
-## Importation de Recettes
-
-### Configuration des Credentials
-
-Pour importer des recettes depuis des sites protégés, configurez vos credentials dans `server/data/auth_presets.json` :
-
-```json
-{
-  "books.ottolenghi.co.uk": {
-    "id": "ottolenghi",
-    "domain": ".books.ottolenghi.co.uk",
-    "type": "cookie",
-    "values": {
-      "SSESSdcfc4c6f51fcab09b2179daf0e4cc999": "votre-cookie-de-session"
-    },
-    "description": "Ottolenghi",
-    "lastUsed": 0
-  }
-}
-```
-
-### Import Unitaire
-
-Utilisez l'interface web pour importer une recette :
-1. Ouvrez l'application dans votre navigateur
-2. Cliquez sur "Ajouter une recette"
-3. Collez l'URL de la recette
-4. Cliquez sur "Importer"
-
-### Import en Masse
-
-1. Créez un fichier JSON contenant les URLs des recettes :
-```json
-[
-  "https://ottolenghi.co.uk/recipes/recipe1",
-  "https://ottolenghi.co.uk/recipes/recipe2"
-]
-```
-
-2. Utilisez l'outil d'importation :
-```bash
-cd server/cmd/tools
-go run recipe_importer.go -file path/to/your/urls.json -limit 10
-```
-
-Options disponibles :
-- `-file` : Chemin vers votre fichier JSON d'URLs (obligatoire)
-- `-limit` : Nombre maximum de recettes à importer (optionnel)
-
-## Structure des Données
-
-### Format des Recettes
-
-Les recettes sont stockées au format JSON avec la structure suivante :
-
-```json
-{
-  "metadata": {
-    "title": "Nom de la recette",
-    "description": "Description",
-    "servings": 4,
-    "difficulty": "easy|medium|hard",
-    "totalTime": "1h30",
-    "image": "image.webp",
-    "imageUrl": "url-originale",
-    "sourceUrl": "url-source",
-    "diet": "vegetarian|vegan|normal",
-    "season": "spring|summer|fall|winter",
-    "recipeType": "main|dessert|appetizer",
-    "quick": false,
-    "notes": ["Note 1", "Note 2"],
-    "nationality": "Italian",
-    "author": "Chef",
-    "bookTitle": "Livre"
-  },
-  "ingredientsList": [
-    {
-      "id": "section-1",
-      "title": "Pour la sauce",
-      "ingredients": [...]
-    }
-  ],
-  "instructions": [
-    {
-      "id": "section-1",
-      "title": "Préparation",
-      "steps": [...]
-    }
-  ]
-}
-```
-
-## Outils de Développement
-
-### Nettoyage de la Base
-
-Pour nettoyer la base de données des recettes :
-```bash
-cd server/cmd/tools
-go run db_cleanup.go
-```
-
-### Liste des Recettes
-
-Pour lister toutes les recettes :
-```bash
-cd server/cmd/tools
-go run list_recipes.go
-```
-
-## Contribution
-
-1. Fork le projet
-2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push sur la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+Check out the `examples` directory for more usage examples.

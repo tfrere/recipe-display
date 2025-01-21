@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "name": "Blanquette de Veau",
+    "description": "A traditional French veal stew with creamy sauce, tender meat, and caramelized mushrooms",
+    "servings": 4,
+    "recipeType": "main_course",
+    "sourceImageUrl": "",
+    "notes": [
+      "Traditional French veal stew",
+      "Requires careful preparation and slow cooking"
+    ],
+    "nationality": "French",
+    "author": "Philippe Etchebest",
+    "bookTitle": ""
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "Veal",
+      "category": "meat"
+    },
+    {
+      "id": "ing2",
+      "name": "Water",
+      "category": "beverage"
+    },
+    {
+      "id": "ing3",
+      "name": "Thyme",
+      "category": "spice"
+    },
+    {
+      "id": "ing4",
+      "name": "Bay Leaf",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "Carrots",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "Onions",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "Leek",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "Garlic",
+      "category": "produce"
+    },
+    {
+      "id": "ing9",
+      "name": "Lemon",
+      "category": "produce"
+    },
+    {
+      "id": "ing10",
+      "name": "Chives",
+      "category": "produce"
+    },
+    {
+      "id": "ing11",
+      "name": "Mushrooms",
+      "category": "produce"
+    },
+    {
+      "id": "ing12",
+      "name": "Sunflower Oil",
+      "category": "condiment"
+    },
+    {
+      "id": "ing13",
+      "name": "Butter",
+      "category": "dairy"
+    },
+    {
+      "id": "ing14",
+      "name": "Flour",
+      "category": "pantry"
+    },
+    {
+      "id": "ing15",
+      "name": "Cream",
+      "category": "dairy"
+    },
+    {
+      "id": "ing16",
+      "name": "Coarse Salt",
+      "category": "spice"
+    },
+    {
+      "id": "ing17",
+      "name": "Black Pepper",
+      "category": "spice"
+    },
+    {
+      "id": "ing18",
+      "name": "Espelette Pepper",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    "Large pot (faitout)",
+    "Chinois strainer",
+    "Whisk"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Blanch veal in cold water",
+      "time": "15min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "Veal",
+          "amount": 1000.0,
+          "unit": "g",
+          "preparation": "whole pieces"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "Water",
+          "amount": 3000.0,
+          "unit": "cl",
+          "preparation": ""
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "Blanched Veal",
+        "type": "intermediate",
+        "description": ""
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Prepare vegetables",
+      "time": "15min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "Carrots",
+          "amount": 4.0,
+          "unit": "unit",
+          "preparation": "halved if large"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "Onions",
+          "amount": 2.0,
+          "unit": "unit",
+          "preparation": "quartered"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "Leek",
+          "amount": 1.0,
+          "unit": "unit",
+          "preparation": "halved"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "Garlic",
+          "amount": 3.0,
+          "unit": "unit",
+          "preparation": "germ removed"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Prepared Vegetables",
+        "type": "intermediate",
+        "description": ""
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Cook veal and vegetables in broth",
+      "time": "1h30min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Blanched Veal",
+          "amount": 0.0,
+          "unit": "",
+          "preparation": ""
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Prepared Vegetables",
+          "amount": 0.0,
+          "unit": "",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "Thyme",
+          "amount": 2.0,
+          "unit": "unit",
+          "preparation": "fresh branches"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "Bay Leaf",
+          "amount": 1.0,
+          "unit": "unit",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing16",
+          "name": "Coarse Salt",
+          "amount": 1.0,
+          "unit": "pinch",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing17",
+          "name": "Black Pepper",
+          "amount": 1.0,
+          "unit": "pinch",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing18",
+          "name": "Espelette Pepper",
+          "amount": 1.0,
+          "unit": "pinch",
+          "preparation": ""
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Cooked Veal and Vegetables",
+        "type": "intermediate",
+        "description": ""
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Prepare roux and sauce",
+      "time": "20min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "Butter",
+          "amount": 60.0,
+          "unit": "g",
+          "preparation": "melted"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing14",
+          "name": "Flour",
+          "amount": 60.0,
+          "unit": "g",
+          "preparation": ""
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Cooked Veal and Vegetables",
+          "amount": 0.0,
+          "unit": "",
+          "preparation": ""
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Roux and Sauce Prepared",
+        "type": "intermediate",
+        "description": ""
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Prepare mushrooms and finish dish",
+      "time": "15min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "Mushrooms",
+          "amount": 300.0,
+          "unit": "g",
+          "preparation": "sliced diagonally"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "Sunflower Oil",
+          "amount": 1.0,
+          "unit": "tbsp",
+          "preparation": ""
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Roux and Sauce Prepared",
+          "amount": 0.0,
+          "unit": "",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing15",
+          "name": "Cream",
+          "amount": 20.0,
+          "unit": "cl",
+          "preparation": ""
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "Lemon",
+          "amount": 1.0,
+          "unit": "unit",
+          "preparation": "zested"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "Chives",
+          "amount": 1.0,
+          "unit": "unit",
+          "preparation": "finely chopped"
+        }
+      ],
+      "output_state": {
+        "id": "state_final",
+        "name": "Blanquette de Veau",
+        "type": "final",
+        "description": "A creamy French veal stew with tender meat, caramelized mushrooms, and a rich white sauce, garnished with chives and lemon zest"
+      }
+    }
+  ],
+  "final_state": {
+    "id": "state_final",
+    "name": "Blanquette de Veau",
+    "type": "final",
+    "description": "A creamy French veal stew with tender meat, caramelized mushrooms, and a rich white sauce, garnished with chives and lemon zest"
+  }
+}

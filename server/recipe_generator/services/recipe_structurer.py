@@ -1,11 +1,12 @@
 from typing import Optional, Callable, List, Awaitable, Dict, Any, Union, Tuple, Set
-from openai import AsyncOpenAI
 from ..models.web_content import WebContent
-from ..models.recipe import Recipe, OpenAIRecipe
+from ..models.recipe import Recipe, LLMRecipe
 from ..prompts.structured_recipe import format_structured_recipe_prompt
 from ..utils.string_utils import parse_time_to_minutes
 from ..utils.error_utils import save_error_to_file
 from ..config import load_config
+from ..llm.base import LLMProvider
+from ..llm.providers.openai import OpenAIProvider
 import json
 from dataclasses import dataclass
 import aiofiles
@@ -20,8 +21,8 @@ class TextContent:
 class RecipeStructurer:
     """Service for generating structured recipes."""
     
-    def __init__(self, client: AsyncOpenAI):
-        self.client = client
+    def __init__(self, provider: LLMProvider):
+        self.provider = provider
         self.config = load_config()
         self._seasonal_data = None
 
@@ -76,48 +77,6 @@ class RecipeStructurer:
         seasons = self._determine_seasons_from_months(peak_months)
         return seasons, list(peak_months)
 
-    async def _stream_completion(
-        self,
-        messages: list,
-        on_content: Optional[Callable[[str, int], Awaitable[None]]] = None
-    ) -> str:
-        """Stream completion from OpenAI API with structured output."""
-        
-        try:
-            print("\n[DEBUG] Starting stream completion")
-            async with self.client.beta.chat.completions.stream(
-                model=self.config["structure_model"],
-                messages=messages,
-                temperature=self.config["temperature"],
-                response_format=OpenAIRecipe
-            ) as stream:
-                print("[DEBUG] Stream created")
-                async for event in stream:
-                    print(f"[DEBUG] Event type: {event.type}")
-                    if event.type == "content.delta":
-                        print("[DEBUG] Content delta received")
-                        if event.parsed is not None and on_content:
-                            print(f"[DEBUG] Parsed content: {event.parsed}")
-                            await on_content(json.dumps(event.parsed), 50)
-                    elif event.type == "content.done":
-                        print("[DEBUG] Content done received")
-                        final_completion = await stream.get_final_completion()
-                        print("[DEBUG] Final completion received")
-                        final_dict = final_completion.model_dump()
-                        print("[DEBUG] Final dict created")
-                        recipe_data = final_dict['choices'][0]['message']['parsed']
-                        if on_content:
-                            await on_content(json.dumps(recipe_data), 100)
-                        return json.dumps(recipe_data)
-                    elif event.type == "error":
-                        print(f"[DEBUG] Error in stream: {event.error}")
-                        raise ValueError(f"Stream error: {event.error}")
-            
-        except Exception as e:
-            print(f"[ERROR] Error in stream completion: {str(e)}")
-            print(f"[ERROR] Error type: {type(e)}")
-            raise
-
     async def generate_structured_recipe(
         self,
         content: Union[WebContent, TextContent],
@@ -128,86 +87,54 @@ class RecipeStructurer:
     ) -> Dict[str, Any]:
         """Generate a structured recipe from cleaned web content or text content."""
         
-        prompt = format_structured_recipe_prompt(
-            content=content.main_content
-        )
+        # Détermine le modèle à utiliser selon le provider
+        model_key = "openai_models" if isinstance(self.provider, OpenAIProvider) else "anthropic_models"
         
-        # Créer une fonction de callback pour mettre à jour les details de l'étape
-        async def update_progress(content: str, progress: int) -> None:
+        # Récupère le prompt fixe et construit le prompt complet
+        fixed_prompt = format_structured_recipe_prompt("")  # Récupère la partie fixe sans contenu
+        prompt = {
+            "role": "system",
+            "fixed_content": fixed_prompt,  # La partie fixe avec les instructions
+            "content": content.main_content,  # Le contenu de la recette
+            "model": self.config[model_key]["structure"]  # Utilise le bon modèle selon le provider
+        }
+        
+        # Créer une fonction de callback pour streamer le texte généré
+        accumulated_text = ""
+        async def stream_callback(text: str) -> None:
+            nonlocal accumulated_text
+            accumulated_text += text
             if progress_service and progress_id:
                 await progress_service.update_step(
                     progress_id=progress_id,
                     step="generate_recipe",
                     status="in_progress",
-                    progress=progress,
-                    details=content if progress < 100 else None,
-                    message="Generating recipe structure..." if progress < 100 else "Recipe structure generated"
+                    progress=50,  # On garde 50% car il y a encore la validation après
+                    details=accumulated_text,
+                    message="Generating recipe structure..."
                 )
         
-        response = await self._stream_completion(
-            messages=[
-                {
-                    "role": "system",
-                    "content": prompt
-                }
-            ],
-            on_content=update_progress
+        # Générer la recette structurée
+        recipe_json = await self.provider.generate_structured(
+            model=LLMRecipe,
+            prompt=prompt,
+            temperature=self.config["temperature"],
+            progress_callback=stream_callback if progress_service and progress_id else None
         )
         
-        # La réponse est déjà validée par le schéma Pydantic
-        recipe_json = json.loads(response)
+        # Mise à jour finale du progress
+        if progress_service and progress_id:
+            await progress_service.update_step(
+                progress_id=progress_id,
+                step="generate_recipe",
+                status="completed",
+                progress=100,
+                details=None,
+                message="Recipe structure generated"
+            )
         
-        # Add source URL and image URL with default values
-        recipe_json["metadata"]["sourceUrl"] = source_url or ""
-        recipe_json["metadata"]["imageUrl"] = ""
-        recipe_json["metadata"]["sourceImageUrl"] = ""  # Set default empty string
-        if image_urls:
-            recipe_json["metadata"]["sourceImageUrl"] = image_urls[0]
-        elif isinstance(content, WebContent) and content.selected_image_url:
-            recipe_json["metadata"]["sourceImageUrl"] = content.selected_image_url
-            
-        # Set default values for optional fields
-        recipe_json["metadata"]["nationality"] = recipe_json["metadata"].get("nationality")
-        recipe_json["metadata"]["author"] = recipe_json["metadata"].get("author")
-        recipe_json["metadata"]["bookTitle"] = recipe_json["metadata"].get("bookTitle")
-        
-        # Determine diets and seasons based on ingredients
-        recipe_json["metadata"]["diets"] = self._determine_diets(recipe_json)
-        seasons, peak_months = await self._determine_seasons(recipe_json)
-        recipe_json["metadata"]["seasons"] = seasons
-        recipe_json["metadata"]["peakMonths"] = peak_months
-
-        # Calculate total time and quick flag
-        total_time = 0
-        try:
-            for sub_recipe in recipe_json["subRecipes"]:
-                for step in sub_recipe["steps"]:
-                    total_time += parse_time_to_minutes(step["time"])
-        except Exception as e:
-            print(f"[ERROR] Error generating recipe: {str(e)}")
-            await save_error_to_file({
-                "error_type": "time_parsing_error",
-                "error_message": str(e),
-                "recipe_json": recipe_json
-            })
-            raise ValueError(f"Recipe generation failed: {str(e)}")
-        
-        recipe_json["metadata"]["totalTime"] = total_time
-        recipe_json["metadata"]["quick"] = total_time < 30
-        
-        try:
-            # Create the Recipe with all fields
-            recipe = Recipe(**recipe_json)
-            return recipe_json
-        except Exception as e:
-            print(f"Erreur lors de la création de l'objet Recipe : {str(e)}")
-            print("Recipe JSON :", json.dumps(recipe_json, indent=2))
-            await save_error_to_file({
-                "error_type": "recipe_validation_error",
-                "error_message": str(e),
-                "recipe_json": recipe_json
-            })
-            raise
+        # Convert Pydantic model to dict
+        return recipe_json.model_dump()
 
     def _determine_diets(self, recipe_json: Dict[str, Any]) -> List[str]:
         """Determine the diets based on recipe ingredients."""

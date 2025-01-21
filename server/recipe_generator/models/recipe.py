@@ -1,11 +1,9 @@
-"""Pydantic models for recipe schema."""
 from typing import List, Literal
 from pydantic import BaseModel, Field
-
-# METADATA
+from instructor.dsl.partial import PartialLiteralMixin
 
 class Metadata(BaseModel):
-    title: str
+    name: str
     description: str
     servings: int
     diets: List[Literal["omnivorous", "vegetarian", "vegan"]]
@@ -22,239 +20,215 @@ class Metadata(BaseModel):
     totalTime: float
     quick: bool
 
-class OpenAIMetadata(BaseModel):
-    title: str
-    description: str
-    servings: int
-    recipeType: Literal["appetizer", "starter", "main_course", "dessert", "drink", "base"]
-    notes: List[str]
-    sourceImageUrl: str
-    nationality: str
-    author: str
-    bookTitle: str
-    slug: str
-
+class BaseConfigModel(BaseModel):
+    """Base model with extra fields forbidden for all recipe models."""
     class Config:
         extra = "forbid"
 
-# INGREDIENT
+class LLMMetadata(BaseConfigModel, PartialLiteralMixin):
+    """
+    Recipe metadata containing essential information about the recipe.
+    Captures the basic information needed to identify and classify a recipe.
+    """
+    name: str = Field(description="The name of the recipe")
+    description: str = Field(description="Brief description of the recipe")
+    servings: int = Field(description="Number of portions this recipe yields")
+    recipeType: Literal["appetizer", "starter", "main_course", "dessert", "drink", "base"] = Field(
+        description="""
+        Recipe classification:
+        - appetizer: Small, savory bites served before a meal
+        - starter: Light first course served at the table
+        - main_course: Principal dish of a meal
+        - dessert: Sweet course served at end of meal
+        - drink: Beverages, both alcoholic and non-alcoholic
+        - base: Fundamental recipes used as components
+        """
+    )
+    sourceImageUrl: str = Field(description="URL of the recipe's image")
+    notes: List[str] = Field(
+        default=[],
+        description="Additional notes or tips about the recipe"
+    )
+    nationality: str = Field(
+        default="",
+        description="Country or culture of origin for this recipe"
+    )
+    author: str = Field(
+        default="",
+        description="Creator or source of the recipe"
+    )
+    bookTitle: str = Field(
+        default="",
+        description="Book or publication where recipe was found"
+    )
 
-class Ingredient(BaseModel):
-    id: str
-    name: str
-    unit: Literal["g", "ml", "unit", "tbsp", "tsp", "pinch"]
+class Ingredient(BaseConfigModel, PartialLiteralMixin):
+    """
+    Represents a single ingredient in the recipe.
+    Each ingredient must be categorized and have a unique identifier.
+    """
+    id: str = Field(description="Unique identifier for this ingredient (e.g., 'ing1')")
+    name: str = Field(description="Name of the ingredient")
     category: Literal[
         "meat", "produce", "egg", "dairy", "pantry", "spice", "condiment", 
         "beverage", "seafood", "other"
-    ]
+    ] = Field(
+        description="""
+        Ingredient category:
+        - meat: All meat and poultry
+        - produce: Fresh fruits and vegetables
+        - egg: All types of eggs
+        - dairy: Milk, cheese, and dairy products
+        - pantry: Dry goods, flour, rice, pasta, etc.
+        - spice: Herbs, spices, and seasonings
+        - condiment: Sauces, oils, vinegars
+        - beverage: Drinks and liquid ingredients
+        - seafood: Fish and seafood
+        - other: Ingredients not fitting above
+        """
+    )
 
-    class Config:
-        extra = "forbid"
+class State(BaseConfigModel, PartialLiteralMixin):
+    """
+    Represents the state of ingredients at any point in the recipe.
+    Could be intermediate steps, sub-recipes, or the final dish.
+    """
+    id: str = Field(description="Unique identifier for this state (e.g., 'state1')")
+    name: str = Field(description="Descriptive name of this state")
+    type: Literal["intermediate", "subrecipe", "final"] = Field(
+        description="""
+        Type of state:
+        - intermediate: Temporary states during preparation
+        - subrecipe: Major components that could be reused
+        - final: The completed dish
+        """
+    )
+    description: str = Field(
+        default="",
+        description="Optional detailed description of this state"
+    )
 
-class Tool(BaseModel):
-    id: str
-    name: str
+class StepInput(BaseConfigModel, PartialLiteralMixin):
+    """
+    Represents an input to a recipe step.
+    Could be an ingredient, or previous state.
+    """
+    input_type: Literal["ingredient", "state"] = Field(
+        description="Type of input this represents. Tool inputs are optional."
+    )
+    ref_id: str = Field(description="ID reference to the ingredient, or state")
+    name: str = Field(description="Name or description of the input")
+    amount: float = Field(
+        default=0.0,
+        description="Quantity needed, only for ingredients"
+    )
+    unit: str = Field(
+        default="",
+        description="""
+        Unit of measurement:
+        - g: Weight in grams, ALWAYS USE THIS FOR SOLIDS
+        - cl: Volume in centiliters, ALWAYS USE THIS FOR LIQUIDS
+        - unit: Count of items
+        - tbsp: Tablespoons
+        - tsp: Teaspoons
+        - pinch: Very small amount
+        """
+    )
+    preparation: str = Field(
+        default="",
+        description="""
+        How the ingredient should be prepared before this step.
+        
+        Cutting techniques:
+        - "Julienne": Long, thin strips (matchsticks)
+        - "Brunoise": Very small (1-3mm) cubes
+        - "Small dice": 6mm cubes
+        - "Medium dice": 12mm cubes
+        - "Large dice": 20mm cubes
+        - "Chiffonade": Thin ribbons of leafy vegetables
+        - "Roughly chopped"
+        - "Finely chopped"
+        - "Minced"
+        - "Sliced" (specify thickness if important)
+        - "Quartered"
+        - "Halved"
+        
+        Specific preparations:
+        - "Toasted": For nuts or spices
+        - "Crushed": For garlic or spices
+        - "Ground": For spices
+        - "Peeled": Only if not obvious
+        
+        Temperature states:
+        - "Room temperature": For butter, eggs, etc.
+        - "Cold": For ingredients that must be kept cold
+        
+        DO NOT include:
+        - Quantities (handled by amount field)
+        - Final states like "cooked", "baked", "thickened"
+        - Generic states like "fresh", "plain", "whole"
+        - Quality descriptors like "good quality" or "organic"
+        - Preparation states in the ingredient name
+        
+        Examples:
+        - "diced 1cm cubes"
+        - "finely minced"
+        - "roughly chopped and toasted"
+        - "julienned 5cm lengths"
+        - "room temperature and beaten"
+        """
+    )
 
-    class Config:
-        extra = "forbid"
+class Step(BaseConfigModel, PartialLiteralMixin):
+    """
+    Represents a single step in the recipe process.
+    Each step must have clear inputs, outputs, and timing.
+    """
+    id: str = Field(description="Unique identifier for this step")
+    action: str = Field(description="Clear description of what to do in this step")
+    time: str = Field(
+        description="""
+        Duration of the step in format:
+        - Minutes only: "5min"
+        - Hours only: "1h"
+        - Hours and minutes: "1h30min"
+        No spaces allowed.
+        """
+    )
+    stepType: Literal["prep", "combine", "cook"] = Field(
+        description="""
+        Type of action:
+        - prep: Ingredient preparation without heat
+        - combine: Mixing ingredients without heat
+        - cook: Any step involving heat
+        """
+    )
+    stepMode: Literal["active", "passive"] = Field(
+        description="""
+        Level of attention needed:
+        - active: Requires constant attention
+        - passive: Can be left unattended
+        """
+    )
+    inputs: List[StepInput] = Field(description="Ingredients, or states used in this step")
+    output_state: State = Field(description="Resulting state after this step")
 
-# RECIPE REFERENCES
+class LLMRecipe(BaseConfigModel, PartialLiteralMixin):
+    """
+    Complete recipe representation following a flow-based structure.
+    Tracks the progression of ingredients through various states to the final dish.
+    """
+    metadata: LLMMetadata = Field(description="Recipe identification and classification")
+    ingredients: List[Ingredient] = Field(description="All ingredients needed")
+    tools: List[str] = Field(default=[], description="Special equipment required. Only include non-standard items like food processors, stand mixers, etc. Do not include basic items like bowls, spoons, or knives.")
+    steps: List[Step] = Field(description="Sequence of steps to complete the recipe")
+    final_state: State = Field(
+        description="Final state of the completed recipe. Must have type='final'"
+    )
 
-class ComponentRef(BaseModel):
-    inputType: Literal["component"]
-    ref: str
-    type: Literal["ingredient", "tool"]
-    amount: float
-    preparation: str
-
-    class Config:
-        extra = "forbid"
-
-class StateRef(BaseModel):
-    inputType: Literal["state"]
-    ref: str
-    name: str
-
-    class Config:
-        extra = "forbid"
-
-class SubRecipeRef(BaseModel):
-    inputType: Literal["subRecipe"]
-    ref: str  # ID de la sous-recette
-    name: str  # Nom descriptif du résultat de la sous-recette
-
-    class Config:
-        extra = "forbid"
-
-# STEP
-
-class Step(BaseModel):
-    id: str
-    action: str
-    time: str
-    stepType: Literal["prep", "combine", "cook"]
-    stepMode: Literal["active", "passive"]
-    inputs: List[ComponentRef | StateRef | SubRecipeRef]
-    output: StateRef
-
-    class Config:
-        extra = "forbid"
-
-# SUB RECIPE 
-
-class SubRecipe(BaseModel):
-    id: str
-    title: str
-    ingredients: List[ComponentRef]
-    steps: List[Step]
-
-    class Config:
-        extra = "forbid"
-
-# RECIPE 
-
-class Recipe(BaseModel):
+class Recipe(BaseConfigModel):
     metadata: Metadata
     ingredients: List[Ingredient]
-    tools: List[Tool]
-    subRecipes: List[SubRecipe]
-
-    class Config:
-        extra = "forbid"
-
-class OpenAIRecipe(BaseModel):
-    metadata: OpenAIMetadata
-    ingredients: List[Ingredient]
-    tools: List[Tool]
-    subRecipes: List[SubRecipe]
-
-    class Config:
-        extra = "forbid"
-
-# class SubRecipeIngr(BaseModel):
-#     amount: float
-#     state: str
-
-#     class Config:
-#         extra = "forbid"
-
-
-# class Ingr(BaseModel):
-#     id: str
-#     name: str
-#     unit: Literal["g", "ml", "unit", "tbsp", "tsp", "pinch"]
-#     category: Literal[
-#         "meat", "produce", "dairy", "pantry-savory", 
-#         "pantry-sweet", "spice", "condiments", 
-#         "beverages", "autres"
-#     ]
-
-#     class Config:
-#         extra = "forbid"
-
-# class SubRec(BaseModel):
-#     id: str
-#     title: str
-#     ingredients: List[SubRecipeIngr]
-#     steps: List[Step]
-
-#     class Config:
-#         extra = "forbid"
-
-# class OpenAIRecipe(BaseModel):
-#     metadata: OpenAIMetadata
-#     ingredients: List[Ingr]
-#     subRecipes: List[SubRec]
-
-#     class Config:
-#         extra = "forbid"
-
-
-# # Example usage
-if __name__ == "__main__":
-    import asyncio
-    import json
-    from openai import AsyncOpenAI
-    from dotenv import load_dotenv
-    import os
-
-    async def stream_recipe():
-        # Load environment variables
-        load_dotenv()
-        
-        # Initialize OpenAI client
-        client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        
-        # Example content
-        content = """
-        This is a recipe for a delicious chocolate cake.
-        
-        You'll need:
-        - 200g dark chocolate
-        - 200g butter
-        - 200g sugar
-        - 4 eggs
-        - 200g flour
-        - 1 tsp baking powder
-        
-        Instructions:
-        1. Preheat oven to 180°C
-        2. Melt chocolate and butter
-        3. Mix sugar and eggs
-        4. Add melted chocolate mixture
-        5. Add flour and baking powder
-        6. Bake for 25 minutes
-        """
-
-        # Create system message with instructions
-        system_message = """
-        You are a helpful cooking assistant that converts recipe text into structured data.
-        Follow these guidelines:
-        1. Extract all ingredients with their quantities
-        2. Break down the recipe into logical sub-recipes (preparation, cooking, etc.)
-        3. For each step, include precise timing information
-        4. Categorize ingredients appropriately
-        5. Include descriptive metadata about the recipe
-        """
-
-        try:
-            # Stream the completion
-            async with client.beta.chat.completions.stream(
-                model="gpt-4o-mini-2024-07-18",
-                messages=[
-                    {"role": "system", "content": system_message},
-                    {"role": "user", "content": content}
-                ],
-                temperature=0.7,
-                response_format=OpenAIRecipe
-            ) as stream:
-                print("Streaming response...")
-                
-                async for event in stream:
-                    if event.type == "content.delta":
-                        if event.parsed is not None:
-                            # Print the partial response
-                            print("\nPartial response:")
-                            print(json.dumps(event.parsed, indent=2))
-                    elif event.type == "content.done":
-                        # Get the final completion
-                        final_completion = await stream.get_final_completion()
-                        final_dict = final_completion.model_dump()
-                        recipe_data = final_dict['choices'][0]['message']['parsed']
-                        
-                        # Validate with our schema
-                        recipe = OpenAIRecipe(**recipe_data)
-                        print("\nFinal validated recipe:")
-                        print(json.dumps(recipe.model_dump(), indent=2))
-                    elif event.type == "error":
-                        print(f"Error in stream: {event.error}")
-                        raise ValueError(f"Stream error: {event.error}")
-
-        except Exception as e:
-            print(f"Error: {str(e)}")
-            raise
-
-    # Run the example
-    asyncio.run(stream_recipe())
-
-
+    tools: List[str] = Field(default=[])
+    steps: List[Step]
+    final_state: State

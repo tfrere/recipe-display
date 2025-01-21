@@ -4,11 +4,9 @@ import sys
 import os
 
 
-def format_cleanup_recipe_prompt(content: str, image_urls: List[str]) -> str:
+def format_cleanup_recipe_prompt(content: str, image_urls: List[str] | None = None) -> str:
     """Format the cleanup recipe prompt with the provided data."""
-    # Combine all prompts in the correct order
-    # Static content first, dynamic content last
-
+    # La partie fixe du prompt
     prompt = """
 You are a skilled recipe editor. Your task is to clean up and improve the readability of recipe content without changing its core instructions or ingredients.
 
@@ -187,38 +185,5 @@ INSTRUCTIONS:
 [IMPORTANT: Each sub-recipe MUST have its own numbered steps. NEVER leave a sub-recipe without steps.]
 
     """
+    return prompt
 
-    return "\n".join([
-        prompt,
-        "INPUT CONTENT:",
-        content,
-        "AVAILABLE IMAGE URLS:",
-        "\n".join(image_urls) if image_urls else "No images available"
-    ])
-
-if __name__ == "__main__":
-    # Example usage
-    example_content = """
-    A delicious chocolate cake recipe.
-    
-    Ingredients:
-    - 200g flour
-    - 100g sugar
-    - 2 eggs
-    
-    Instructions:
-    1. Mix dry ingredients
-    2. Add wet ingredients
-    3. Bake at 180°C for 30 minutes
-    """
-    example_images = [
-        "https://example.com/image1.jpg",
-        "https://example.com/image2.jpg"
-    ]
-    
-    # Format and print the prompt
-    prompt = format_cleanup_recipe_prompt(example_content, example_images)
-    print("\nCLEANUP RECIPE PROMPT:")
-    print("=" * 80)
-    print(prompt)
-    print("=" * 80)

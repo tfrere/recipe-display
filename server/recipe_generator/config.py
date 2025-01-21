@@ -1,6 +1,10 @@
 from pathlib import Path
 import os
+from typing import Literal
 from dotenv import load_dotenv
+from .llm.providers.openai import OpenAIProvider
+from .llm.providers.anthropic import AnthropicProvider
+import json
 
 # Paths
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -24,28 +28,24 @@ DEFAULT_HEADERS = {
     "Sec-Fetch-User": "?1"
 }
 
-# OpenAI Configuration
-OPENAI_TEMPERATURE = 0.3
+# LLM Configuration
+DEFAULT_TEMPERATURE = 0.3
+ProviderType = Literal["openai", "anthropic"]
 
-def load_config():
-    """Load configuration from environment variables."""
-    # Find and load .env file
-    env_path = Path(__file__).parent.parent / '.env'
-    load_dotenv(env_path)
+def load_config() -> dict:
+    """
+    Charge la configuration depuis le fichier config.json et les variables d'environnement.
     
-    # Check for required environment variables
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError("OPENAI_API_KEY is not set in .env file")
+    Returns:
+        Configuration complète
+    """
+    # Charge la configuration de base depuis le fichier
+    config_file = Path(__file__).parent / "config.json"
+    with open(config_file, "r", encoding="utf-8") as f:
+        config = json.load(f)
     
-    # Load model names from environment
-    cleanup_model = os.getenv("CLEANUP_MODEL", "gpt-4-1106-preview")
-    structure_model = os.getenv("STRUCTURE_MODEL", "gpt-4-1106-preview")
+    # Surcharge avec les variables d'environnement
+    config["openai_api_key"] = os.getenv("OPENAI_API_KEY", "")
+    config["anthropic_api_key"] = os.getenv("ANTHROPIC_API_KEY", "")
     
-    return {
-        "openai_api_key": api_key,
-        "cleanup_model": cleanup_model,
-        "structure_model": structure_model,
-        "temperature": OPENAI_TEMPERATURE,
-        "headers": DEFAULT_HEADERS
-    }
+    return config

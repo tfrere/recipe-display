@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "structured-llm"
+version = "0.1.0"
+description = "A LLM provider agnostic structured output generator"
+authors = ["Thibaud Frere"]
+readme = "README.md"
+packages = [{include = "structured_llm", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.2"
+langchain = "^0.1.12"
+langchain-anthropic = "^0.1.4"
+langchain-openai = "^0.0.8"
+python-dotenv = "^1.0.1"
+anthropic = "^0.19.1"
+openai = "^1.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

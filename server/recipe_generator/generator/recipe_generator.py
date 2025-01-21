@@ -1,12 +1,13 @@
 from typing import Optional, Dict, Any, Callable, Protocol, Union
 from ..models.web_content import WebContent
 from ..models.text_content import TextContent
-from openai import AsyncOpenAI
 from ..models.recipe import Recipe
 from ..services.web_scraper import WebScraper
 from ..services.content_cleaner import ContentCleaner
 from ..services.recipe_structurer import RecipeStructurer
 from ..utils.string_utils import generate_slug
+from ..llm.factory import create_provider
+from ..config import load_config
 import asyncio
 from dataclasses import dataclass
 from enum import Enum
@@ -48,12 +49,24 @@ class GenerationContext:
 class RecipeGenerator:
     """Main service for generating recipes from URLs or text."""
     
-    def __init__(self, api_key: str, base_path: str, images_path: str, recipes_path: str):
+    def __init__(self, base_path: str, images_path: str, recipes_path: str):
         """Initialize the recipe generator with its dependencies."""
-        self.client = AsyncOpenAI(api_key=api_key)
+        # Load configuration
+        self.config = load_config()
+        
+        # Create LLM provider
+        self.provider = create_provider(
+            provider_type=self.config["provider"],
+            api_key=self.config[f"{self.config['provider']}_api_key"],
+            task="cleanup"
+        )
+        
+        # Initialize services
         self.web_scraper = WebScraper()
-        self.content_cleaner = ContentCleaner(self.client)
-        self.recipe_structurer = RecipeStructurer(self.client)
+        self.content_cleaner = ContentCleaner(self.provider)
+        self.recipe_structurer = RecipeStructurer(self.provider)
+        
+        # Set paths
         self.base_path = Path(base_path)
         self.images_path = Path(images_path)
         self.recipes_path = Path(recipes_path)
