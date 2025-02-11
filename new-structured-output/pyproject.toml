@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "new-structured-output"
+version = "0.1.0"
+description = "A structured output generator using pydantic-ai and deepseek"
+authors = ["Thibaud Frere"]
+readme = "README.md"
+packages = [{include = "new_structured_output", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.2"
+pydantic-ai = "^0.0.23"
+openai = "^1.12.0"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
