@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "title": "Chopped salad with tahini and za\u2019atar",
+    "description": "A refreshing chopped salad with tomatoes, cucumbers, and red pepper, topped with creamy tahini and za'atar. Can be served as a starter with feta or alongside grilled lamb or rice with lentils.",
+    "servings": 4,
+    "recipeType": "starter",
+    "sourceImageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/035_tomatoes_sumac_onions_digi-922528f8-779e-4398-a62b-d4a92c8dc921_s1200x0_q80_noupscale-694x1024.jpg",
+    "notes": [
+      "Use a creamy, nutty, and smooth tahini (preferably Israeli, Palestinian, or Lebanese brands).",
+      "The drained tomato liquid can be discarded or drunk."
+    ],
+    "nationality": "Middle Eastern",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "",
+    "sourceUrl": "https://books.ottolenghi.co.uk/simple/recipe/chopped-salad-with-tahini-and-zaatar/",
+    "imageUrl": "https://books.ottolenghi.co.uk/wp-content/uploads/2021/05/035_tomatoes_sumac_onions_digi-922528f8-779e-4398-a62b-d4a92c8dc921_s1200x0_q80_noupscale-694x1024.jpg",
+    "slug": "chopped-salad-with-tahini-and-zaatar",
+    "image": "images/chopped-salad-with-tahini-and-zaatar.jpg",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "plum tomatoes",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "Lebanese cucumbers",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "red pepper",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "spring onions",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "coriander",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "lemon juice",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "olive oil",
+      "category": "condiment"
+    },
+    {
+      "id": "ing8",
+      "name": "feta",
+      "category": "dairy"
+    },
+    {
+      "id": "ing9",
+      "name": "tahini",
+      "category": "condiment"
+    },
+    {
+      "id": "ing10",
+      "name": "za\u2019atar",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "salt",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    "Sieve"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Place the tomatoes in a sieve sitting over a bowl to drain",
+      "time": "20min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "plum tomatoes",
+          "amount": 650.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "Drained tomatoes",
+        "type": "intermediate",
+        "description": "Tomatoes that have been drained of excess liquid for 20 minutes"
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Combine drained tomatoes with cucumbers, red pepper, spring onions, coriander, lemon juice, olive oil and salt in a large bowl",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Drained tomatoes",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "Lebanese cucumbers",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "red pepper",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "spring onions",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "coriander",
+          "amount": 15.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "lemon juice",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "olive oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Mixed vegetable base",
+        "type": "intermediate",
+        "description": "Combination of drained tomatoes, cucumbers, red pepper, spring onions, coriander, lemon juice, olive oil and salt"
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Transfer salad to serving bowl and add feta blocks (if using)",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Mixed vegetable base",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "feta",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Assembled salad with feta",
+        "type": "intermediate",
+        "description": "Vegetable mixture transferred to serving bowl with optional feta blocks added"
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Pour tahini on top and sprinkle with za'atar and salt",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Assembled salad with feta",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "tahini",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "za\u2019atar",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "salt",
+          "amount": 1.0,
+          "unit": "pinch"
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "Finished chopped salad with tahini and za'atar",
+        "type": "final",
+        "description": "Complete chopped salad with tomatoes, cucumbers, red pepper, spring onions, coriander, lemon dressing, optional feta, topped with creamy tahini and za'atar spice blend"
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Finished chopped salad with tahini and za'atar",
+    "type": "final",
+    "description": "Complete chopped salad with tomatoes, cucumbers, red pepper, spring onions, coriander, lemon dressing, optional feta, topped with creamy tahini and za'atar spice blend"
+  }
+}

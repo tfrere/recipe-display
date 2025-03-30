@@ -1,0 +1,349 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Heat 2 tbsp of olive oil in a large, high-sided sauté pan over medium-high heat.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "olive oil",
+          "amount": 30.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "Hot Oil",
+        "type": "intermediate",
+        "description": "Oil is heated and ready for sautéing."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Add garlic, onion, thyme, and ¼ tsp of salt to the hot oil and sauté for 8 minutes, stirring often, until soft and golden.",
+      "time": "8min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Hot Oil",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "garlic",
+          "amount": 3.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "red onion",
+          "amount": 160.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "thyme",
+          "amount": 0.5,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "salt",
+          "amount": 0.25,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Sautéed Garlic and Onion",
+        "type": "intermediate",
+        "description": "Garlic and onion are soft and golden, infused with thyme and salt."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Transfer the garlic and onion mixture to a bowl, leaving the oil behind. Set aside.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Sautéed Garlic and Onion",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Reserved Garlic and Onion",
+        "type": "intermediate",
+        "description": "Garlic and onion mixture is set aside in a bowl."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Season aubergines and tomatoes with ¼ tsp of salt and plenty of pepper.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "aubergine",
+          "amount": 420.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "cherry tomatoes",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "salt",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing14",
+          "name": "black pepper",
+          "amount": 1.0,
+          "unit": "pinch"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Seasoned Aubergines and Tomatoes",
+        "type": "intermediate",
+        "description": "Aubergines and tomatoes are seasoned with salt and pepper."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Add the remaining 1 tbsp of oil to the same pan and heat until very hot.",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "olive oil",
+          "amount": 15.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Hot Oil in Pan",
+        "type": "intermediate",
+        "description": "Pan is heated with the remaining oil."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Add the aubergines and tomatoes to the hot pan and fry for 10 minutes on medium-high heat, turning often until the aubergine is soft and golden-brown and the tomatoes are beginning to blacken.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "Hot Oil in Pan",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Seasoned Aubergines and Tomatoes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Cooked Aubergines and Tomatoes",
+        "type": "intermediate",
+        "description": "Aubergines are soft and golden-brown, tomatoes are beginning to blacken."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Return the garlic and onion to the pan, then add the lentils, stock, wine, 450ml of water and ¾ tsp of salt.",
+      "time": "3min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Cooked Aubergines and Tomatoes",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Reserved Garlic and Onion",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "Puy lentils",
+          "amount": 180.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "vegetable stock",
+          "amount": 500.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "dry white wine",
+          "amount": 80.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "salt",
+          "amount": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "Stew Base",
+        "type": "intermediate",
+        "description": "All ingredients are combined in the pan, ready for simmering."
+      }
+    },
+    {
+      "id": "step8",
+      "action": "Bring the stew to a boil.",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "Stew Base",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "Boiling Stew",
+        "type": "intermediate",
+        "description": "Stew is boiling and ready to simmer."
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Lower the heat to medium and simmer gently for 40 minutes, until the lentils are soft but still retain a bite.",
+      "time": "40min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "Boiling Stew",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "Simmered Stew",
+        "type": "intermediate",
+        "description": "Lentils are soft but still retain a bite, stew is ready to serve."
+      }
+    },
+    {
+      "id": "step10",
+      "action": "Serve the stew warm, or at room temperature, with a dollop of crème fraîche, a drizzle of oil, chilli flakes, and oregano on top.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state9",
+          "name": "Simmered Stew",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "crème fraîche",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "olive oil",
+          "amount": 15.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "Urfa chilli flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "oregano",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "Puy Lentil and Aubergine Stew",
+        "type": "final",
+        "description": "The stew is served warm or at room temperature, topped with crème fraîche, olive oil, chilli flakes, and oregano. It can be enjoyed as a hearty starter, side, or main dish."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Puy Lentil and Aubergine Stew",
+    "type": "final",
+    "description": "The stew is served warm or at room temperature, topped with crème fraîche, olive oil, chilli flakes, and oregano. It can be enjoyed as a hearty starter, side, or main dish."
+  }
+}

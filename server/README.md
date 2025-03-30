@@ -1,27 +1,38 @@
-# Recipe Generator
+# Recipe Server
 
-A Python package to generate structured recipes from web content using OpenAI's GPT models.
+A FastAPI server for managing recipes with scraping and structuring capabilities.
 
 ## Installation
 
 ```bash
-pip install recipe-generator
+# Install dependencies
+poetry install
+
+# Run server
+poetry run uvicorn server.main:app --reload
 ```
 
-## Usage
+## Architecture
 
-```python
-import asyncio
-from recipe_generator import RecipeGenerator
+The server is composed of three main parts:
 
-async def main():
-    generator = RecipeGenerator(api_key="your-openai-api-key")
-    recipe = await generator.generate_from_url("https://example.com/recipe")
-    print(recipe.model_dump_json(indent=2))
+1. **Recipe Server** (this package)
 
-if __name__ == "__main__":
-    asyncio.run(main())
-```
+   - FastAPI server
+   - Recipe management
+   - Progress tracking
+   - Image handling
+
+2. **Recipe Scraper** (package)
+
+   - Web scraping with authentication support
+   - Content extraction
+   - Image extraction
+
+3. **Recipe Structurer** (package)
+   - Content cleaning
+   - Recipe structuring with LLMs
+   - Graph-based step analysis
 
 ## Features
 
@@ -30,3 +41,13 @@ if __name__ == "__main__":
 - Handle authentication for protected recipe sites
 - Generate standardized recipe format
 - Save recipes with associated images
+- Track generation progress
+- Manage recipe metadata
+- Handle recipe images with multiple sizes
+
+## API Documentation
+
+Once the server is running, visit:
+
+- http://localhost:8000/docs for Swagger UI
+- http://localhost:8000/redoc for ReDoc

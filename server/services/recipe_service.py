@@ -5,11 +5,16 @@ import os
 import aiofiles
 import asyncio
 import base64
+import re
+import sys
 from typing import Dict, Any, Optional, List, Literal
-from recipe_generator import RecipeGenerator
+
+# Import our dependencies
+from recipe_structurer import RecipeRejectedError
 from services.progress_service import ProgressService
 from datetime import datetime
 import glob
+import httpx
 
 # Create a single instance of ProgressService to be shared
 _progress_service = ProgressService()
@@ -21,21 +26,12 @@ class RecipeExistsError(Exception):
 class RecipeService:
     def __init__(self, base_path: str = "data"):
         self.base_path = Path(base_path)
-        self.recipes_path = self.base_path / "recipes"
-        self.images_path = self.recipes_path / "images"
+        self.recipes_path = self.base_path / "recipes"  # /server/data/recipes
+        self.images_path = self.recipes_path / "images"  # /server/data/recipes/images
         self.auth_presets_path = self.base_path / "auth_presets.json"
         self._ensure_directories()
         
-        # Initialize services
-        api_key = os.getenv("OPENAI_API_KEY")
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY not found in environment variables")
-        self.generator = RecipeGenerator(
-            api_key=api_key,
-            base_path=self.base_path,
-            images_path=self.images_path,
-            recipes_path=self.recipes_path
-        )
+        # Initialize progress service
         self.progress_service = _progress_service
         
         # Task management
@@ -48,13 +44,12 @@ class RecipeService:
             # Create main directories
             self.base_path.mkdir(parents=True, exist_ok=True)
             self.recipes_path.mkdir(parents=True, exist_ok=True)
+            self.images_path.mkdir(parents=True, exist_ok=True)
             
             # Create image subdirectories
-            images_path = self.recipes_path / "images"
-            images_path.mkdir(parents=True, exist_ok=True)
-            (images_path / "original").mkdir(parents=True, exist_ok=True)
+            (self.base_path / "images" / "original").mkdir(parents=True, exist_ok=True)
             for size in ["thumbnail", "small", "medium", "large"]:
-                (images_path / size).mkdir(parents=True, exist_ok=True)
+                (self.base_path / "images" / size).mkdir(parents=True, exist_ok=True)
             
             # Create errors directory
             (self.recipes_path / "errors").mkdir(parents=True, exist_ok=True)
@@ -101,7 +96,18 @@ class RecipeService:
             
             async with aiofiles.open(self.auth_presets_path, 'r') as f:
                 content = await f.read()
-                return json.loads(content)
+                raw_presets = json.loads(content)
+                
+                # Convert raw presets to AuthPreset format
+                presets = {}
+                for domain, preset in raw_presets.items():
+                    presets[domain] = {
+                        "type": preset["type"],
+                        "domain": preset["domain"],
+                        "values": preset["values"],
+                        "description": preset.get("description", "")
+                    }
+                return presets
                 
         except Exception as e:
             raise HTTPException(
@@ -144,7 +150,7 @@ class RecipeService:
             authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
             with open(authors_file, "r") as f:
                 authors_data = json.load(f)
-                public_authors = authors_data["public"]
+                public_authors = authors_data.get("public", [])
 
             # Read each recipe file
             for recipe_file in recipe_files:
@@ -155,26 +161,28 @@ class RecipeService:
                 try:
                     with open(recipe_file, "r") as f:
                         recipe = json.load(f)
+                        metadata = recipe.get("metadata", {})
                         
                         # Filter recipes by author if not include_private
-                        if not include_private and recipe["metadata"]["author"] not in public_authors:
+                        author = metadata.get("author", "")
+                        if not include_private and author not in public_authors:
                             continue
                             
                         recipes.append({
                             "id": os.path.basename(recipe_file).replace(".recipe.json", ""),
-                            "title": recipe["metadata"]["title"],
-                            "imageUrl": recipe["metadata"]["imageUrl"],
-                            "description": recipe["metadata"]["description"],
-                            "bookTitle": recipe["metadata"].get("bookTitle", ""),
-                            "author": recipe["metadata"]["author"],
-                            "diets": recipe["metadata"]["diets"],
-                            "seasons": recipe["metadata"]["seasons"],
-                            "recipeType": recipe["metadata"]["recipeType"],
-                            "ingredients": [ing["name"] for ing in recipe.get("ingredients", [])],
-                            "totalTime": recipe["metadata"].get("totalTime", 0.0),
-                            "quick": recipe["metadata"].get("quick", False),
-                            "difficulty": recipe["metadata"].get("difficulty", ""),
-                            "slug": os.path.basename(recipe_file).replace(".recipe.json", "")
+                            "title": metadata.get("title", "Untitled"),
+                            "imageUrl": metadata.get("imageUrl", ""),
+                            "description": metadata.get("description", ""),
+                            "bookTitle": metadata.get("bookTitle", ""),
+                            "author": author,
+                            "diets": metadata.get("diets", []),
+                            "seasons": metadata.get("seasons", []),
+                            "recipeType": metadata.get("recipeType", ""),
+                            "ingredients": [ing.get("name", "") for ing in recipe.get("ingredients", [])],
+                            "totalTime": metadata.get("totalTime", 0.0),
+                            "quick": metadata.get("quick", False),
+                            "difficulty": metadata.get("difficulty", ""),
+                            "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
                         })
                 except Exception as e:
                     print(f"Error reading recipe file {recipe_file}: {str(e)}")
@@ -183,6 +191,7 @@ class RecipeService:
             return recipes
 
         except Exception as e:
+            print(f"Error listing recipes: {str(e)}")
             raise HTTPException(
                 status_code=500, detail=f"Error listing recipes: {str(e)}"
             )
@@ -243,81 +252,434 @@ class RecipeService:
         url: str,
         credentials: Optional[Dict[str, Any]] = None
     ) -> None:
-        """Process the recipe generation in background."""
-        print(f"[INFO] Starting recipe generation for progress ID: {progress_id}")
-        
+        """
+        Process recipe generation from a URL using the recipe_scraper CLI.
+        """
         try:
-            # Check if recipe already exists
+            # Update step: check_existence
             await self.progress_service.update_step(
-                progress_id,
-                "check_existence",
-                "in_progress",
-                0,
-                "Checking if recipe already exists..."
-            )
-            
-            existing_recipe = await self._find_recipe_by_url(url)
-            if existing_recipe:
-                await self.progress_service.update_step(
-                    progress_id,
-                    "check_existence",
-                    "completed",
-                    100,
-                    "Recipe already exists"
-                )
-                raise RecipeExistsError("Recipe already exists")
-            
-            await self.progress_service.update_step(
-                progress_id,
-                "check_existence",
-                "completed",
-                100,
-                "Recipe does not exist yet"
+                progress_id=progress_id,
+                step="check_existence",
+                status="in_progress",
+                message="Checking if recipe already exists"
             )
 
-            # Generate recipe
-            recipe = await self.generator.generate_from_url(
-                url,
-                credentials,
-                self.progress_service,
-                progress_id
-            )
+            # Check if recipe already exists
+            existing_recipe = await self._find_recipe_by_url(url)
+            if existing_recipe:
+                slug = existing_recipe.get("metadata", {}).get("slug", "")
+                if slug:
+                    await self.progress_service.update_step(
+                        progress_id=progress_id,
+                        step="check_existence",
+                        status="error",
+                        message=f"Recipe already exists with slug: {slug}"
+                    )
+                    raise RecipeExistsError(f"Recipe from this URL already exists with slug: {slug}")
             
-            # Save recipe
-            slug = recipe.get("metadata", {}).get("slug")
-            if slug:
-                file_path = self.recipes_path / f"{slug}.recipe.json"
-                async with aiofiles.open(file_path, 'w') as f:
-                    await f.write(json.dumps(recipe, indent=2))
-            
-            # Update progress with recipe and complete
-            await self.progress_service.set_recipe(progress_id, recipe)
+            # Mark check_existence as completed
             await self.progress_service.update_step(
-                progress_id,
-                "save_recipe",
-                "completed",
-                100,
-                "Recipe saved successfully"
+                progress_id=progress_id,
+                step="check_existence",
+                status="completed",
+                progress=100,
+                message="Recipe does not exist yet"
+            )
+
+            # Create a temporary credentials file if needed
+            credentials_file = None
+            if credentials:
+                domain = url.split("//")[-1].split("/")[0]
+                credentials_file = self.base_path / f"temp_creds_{progress_id}.json"
+                
+                # Create a credentials file in the format expected by the CLI
+                creds_data = {domain: credentials}
+                async with aiofiles.open(credentials_file, 'w') as f:
+                    await f.write(json.dumps(creds_data))
+                
+                print(f"[DEBUG] Created temporary credentials file at: {credentials_file}")
+
+            # Prepare the command
+            cmd = [
+                "python", "-m", "recipe_scraper.cli",
+                "--mode", "url",
+                "--url", url,
+                "--recipe-output-folder", str(self.recipes_path),
+                "--image-output-folder", str(self.images_path),
+                "--verbose"  # Enable verbose mode for more detailed logs
+            ]
+            
+            # Add credentials if provided
+            if credentials_file:
+                cmd.extend(["--credentials", str(credentials_file)])
+            
+            print(f"[DEBUG] Running command: {' '.join(cmd)}")
+            
+            # Update step: scrape_content
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="scrape_content",
+                status="in_progress",
+                message="Fetching recipe content"
             )
             
-            print(f"[INFO] Recipe generation completed for progress ID: {progress_id}")
+            # Create subprocess
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
             
-        except Exception as e:
-            error_msg = f"Recipe generation failed: {str(e)}"
-            print(f"[ERROR] {error_msg}")
-            await self.progress_service.set_error(progress_id, error_msg)
+            # Process output line by line
+            current_step = "scrape_content"
+            slug = None
             
-            # Update current step status to error
-            progress = await self.progress_service.get_progress(progress_id)
-            if progress and progress.current_step:
-                await self.progress_service.update_step(
+            async for line in process.stdout:
+                line_text = line.decode('utf-8').strip()
+                print(f"CLI output: {line_text}")
+                
+                # Update progress based on log messages
+                if ">>> " in line_text:
+                    message = line_text.split(">>> ")[1].strip()
+                    
+                    if "Fetching web content" in message:
+                        current_step = "scrape_content"
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Structuring" in message:
+                        current_step = "structure_recipe"
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Downloading" in message:
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Enriching" in message:
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Saving" in message or "sauvegarde" in message.lower():
+                        current_step = "save_recipe"
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message="Saving recipe and image"
+                        )
+                
+                # Extract slug from recipe file path
+                if "Recipe successfully saved to:" in line_text:
+                    file_path = line_text.split("Recipe successfully saved to:")[1].strip()
+                    slug = Path(file_path).stem.replace(".recipe", "")
+                    print(f"[DEBUG] Extracted slug: {slug}")
+            
+            # Read stderr in case there were errors
+            stderr_data = await process.stderr.read()
+            stderr_text = stderr_data.decode('utf-8').strip()
+            if stderr_text:
+                print(f"CLI stderr: {stderr_text}")
+            
+            # Wait for the process to complete
+            await process.wait()
+            
+            # Clean up temporary credentials file
+            if credentials_file and credentials_file.exists():
+                credentials_file.unlink()
+                print(f"[DEBUG] Removed temporary credentials file: {credentials_file}")
+            
+            # Check if the process succeeded
+            if process.returncode != 0:
+                error_message = f"Recipe scraper CLI failed with return code {process.returncode}"
+                if stderr_text:
+                    error_message += f": {stderr_text}"
+                
+                await self.progress_service.set_error(
                     progress_id,
-                    progress.current_step,
-                    "error",
-                    0,
-                    error_msg
+                    error_message
                 )
-            raise
+                return
+
+            # Check if we got a slug
+            if not slug:
+                await self.progress_service.set_error(
+                    progress_id,
+                    "Failed to extract recipe slug from CLI output"
+                )
+                return
+            
+            # Mark steps as completed
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="scrape_content",
+                status="completed",
+                progress=100,
+                message="Content successfully retrieved"
+            )
+            
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="structure_recipe",
+                status="completed",
+                progress=100,
+                message="Recipe successfully structured"
+            )
+            
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="save_recipe",
+                status="completed",
+                progress=100,
+                message="Recipe successfully saved"
+            )
+            
+            await self.progress_service.complete(progress_id, {"slug": slug})
+
+        except RecipeExistsError as e:
+            await self.progress_service.set_error(
+                progress_id, 
+                f"Recipe already exists: {str(e)}"
+            )
+        except RecipeRejectedError as e:
+            await self.progress_service.set_error(
+                progress_id, 
+                f"Recipe was rejected: {str(e)}"
+            )
+        except Exception as e:
+            await self.progress_service.set_error(
+                progress_id, 
+                f"Error processing recipe: {str(e)}"
+            )
+
+    async def _process_text_recipe_generation(
+        self,
+        progress_id: str,
+        recipe_text: str,
+        image_url: str
+    ) -> None:
+        """Process a recipe generation from text input using the recipe_scraper CLI"""
+        try:
+            # Update step: generate_recipe
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="generate_recipe",
+                status="in_progress",
+                message="Preparing recipe text"
+            )
+
+            # Create a temporary file for the recipe text
+            temp_text_file = self.base_path / f"temp_recipe_{progress_id}.txt"
+            async with aiofiles.open(temp_text_file, 'w') as f:
+                await f.write(recipe_text)
+            
+            print(f"[DEBUG] Created temporary recipe text file at: {temp_text_file}")
+            
+            # Prepare the command
+            cmd = [
+                "python", "-m", "recipe_scraper.cli",
+                "--mode", "text",
+                "--input-file", str(temp_text_file),
+                "--recipe-output-folder", str(self.recipes_path),
+                "--image-output-folder", str(self.images_path),
+                "--verbose"  # Enable verbose mode for more detailed logs
+            ]
+            
+            print(f"[DEBUG] Running command: {' '.join(cmd)}")
+            
+            # Update step to indicate we're starting processing
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="generate_recipe",
+                status="in_progress",
+                message="Processing recipe text"
+            )
+            
+            # Create subprocess
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            
+            # Process output line by line
+            current_step = "generate_recipe"
+            slug = None
+            
+            async for line in process.stdout:
+                line_text = line.decode('utf-8').strip()
+                print(f"CLI output: {line_text}")
+                
+                # Update progress based on log messages
+                if ">>> " in line_text:
+                    message = line_text.split(">>> ")[1].strip()
+                    
+                    if "Processing recipe" in message or "Starting recipe" in message:
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step="generate_recipe",
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Structuring" in message:
+                        current_step = "structure_recipe"
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Downloading" in message:
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Enriching" in message:
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message=message
+                        )
+                    elif "Saving" in message or "sauvegarde" in message.lower():
+                        current_step = "save_recipe"
+                        await self.progress_service.update_step(
+                            progress_id=progress_id,
+                            step=current_step,
+                            status="in_progress",
+                            message="Saving recipe and image"
+                        )
+                
+                # Extract slug from recipe file path
+                if "Recipe successfully saved to:" in line_text:
+                    file_path = line_text.split("Recipe successfully saved to:")[1].strip()
+                    slug = Path(file_path).stem.replace(".recipe", "")
+                    print(f"[DEBUG] Extracted slug: {slug}")
+            
+            # Read stderr in case there were errors
+            stderr_data = await process.stderr.read()
+            stderr_text = stderr_data.decode('utf-8').strip()
+            if stderr_text:
+                print(f"CLI stderr: {stderr_text}")
+            
+            # Wait for the process to complete
+            await process.wait()
+            
+            # Clean up temporary text file
+            if temp_text_file.exists():
+                temp_text_file.unlink()
+                print(f"[DEBUG] Removed temporary text file: {temp_text_file}")
+            
+            # Handle image URL if provided
+            if slug and image_url:
+                print(f"[DEBUG] Downloading image from URL: {image_url}")
+                
+                try:
+                    # Download the image
+                    async with httpx.AsyncClient(follow_redirects=True) as client:
+                        response = await client.get(image_url)
+                        response.raise_for_status()
+                        
+                        # Determine extension from content-type
+                        content_type = response.headers.get("content-type", "").lower()
+                        ext = "jpg"  # Default extension
+                        
+                        if content_type.startswith("image/"):
+                            mime_ext = content_type.split("/")[1].split(";")[0]
+                            if mime_ext in ["jpeg", "jpg", "png", "gif", "webp"]:
+                                ext = mime_ext if mime_ext != "jpeg" else "jpg"
+                        
+                        # Save image
+                        image_path = self.images_path / f"{slug}.{ext}"
+                        async with aiofiles.open(image_path, "wb") as f:
+                            await f.write(response.content)
+                        
+                        print(f"[DEBUG] Image saved to: {image_path}")
+                        
+                        # Update the recipe JSON with the image path
+                        recipe_file = self.recipes_path / f"{slug}.recipe.json"
+                        if recipe_file.exists():
+                            async with aiofiles.open(recipe_file, "r") as f:
+                                recipe_data = json.loads(await f.read())
+                            
+                            # Update image path
+                            if "metadata" in recipe_data:
+                                recipe_data["metadata"]["image"] = f"images/{slug}.{ext}"
+                                
+                                # Write back the updated recipe
+                                async with aiofiles.open(recipe_file, "w") as f:
+                                    await f.write(json.dumps(recipe_data, indent=2))
+                                
+                                print(f"[DEBUG] Updated recipe file with image path: {recipe_file}")
+                except Exception as e:
+                    print(f"[ERROR] Failed to download and save image: {str(e)}")
+            
+            # Check if the process succeeded
+            if process.returncode != 0:
+                error_message = f"Recipe scraper CLI failed with return code {process.returncode}"
+                if stderr_text:
+                    error_message += f": {stderr_text}"
+                
+                await self.progress_service.set_error(
+                    progress_id,
+                    error_message
+                )
+                return
+            
+            # Check if we got a slug
+            if not slug:
+                await self.progress_service.set_error(
+                    progress_id,
+                    "Failed to extract recipe slug from CLI output"
+                )
+                return
+            
+            # Mark steps as completed
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="generate_recipe",
+                status="completed",
+                progress=100,
+                message="Recipe text successfully processed"
+            )
+            
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="structure_recipe",
+                status="completed",
+                progress=100,
+                message="Recipe successfully structured"
+            )
+            
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="save_recipe",
+                status="completed",
+                progress=100,
+                message="Recipe successfully saved"
+            )
+            
+            await self.progress_service.complete(progress_id, {"slug": slug})
+
+        except Exception as e:
+            await self.progress_service.set_error(
+                progress_id,
+                f"Error processing recipe text: {str(e)}"
+            )
 
     async def generate_recipe(
         self,
@@ -327,180 +689,82 @@ class RecipeService:
         image: Optional[str] = None,
         credentials: Optional[Dict[str, Any]] = None
     ) -> str:
-        """Generate a recipe from either a URL or text content."""
-        print("[DEBUG] Starting recipe generation")
-        print(f"[DEBUG] Import type: {import_type}")
-        print(f"[DEBUG] URL: {url}")
-        print(f"[DEBUG] Text length: {len(text) if text else 0}")
-        print(f"[DEBUG] Has image: {bool(image)}")
+        """
+        Generate a recipe from URL or text. Returns a progress ID.
+        """
+        # Validate input
+        if import_type == "url" and not url:
+            raise HTTPException(status_code=400, detail="URL is required for URL import")
+        elif import_type == "text" and not text:
+            raise HTTPException(status_code=400, detail="Text is required for text import")
         
-        try:
-            # Create progress ID with import type
-            progress_id = await self.progress_service.create_progress(import_type)
-            print(f"[DEBUG] Created progress ID: {progress_id}")
-
-            # Create and start the generation task based on type
-            if import_type == "url":
-                if not url:
-                    raise ValueError("URL is required for URL import type")
-                print("[DEBUG] Starting URL import")
-                task = asyncio.create_task(
-                    self._process_url_recipe_generation(progress_id, url, credentials)
+        # Create a progress ID
+        progress_id = f"recipe-gen-{datetime.now().strftime('%Y%m%d%H%M%S')}-{os.urandom(4).hex()}"
+        
+        # Register the progress
+        await self.progress_service.register(progress_id)
+        
+        # Create a task to process the recipe
+        if import_type == "url":
+            task = asyncio.create_task(
+                self._process_recipe_generation(
+                    progress_id=progress_id,
+                    url=url,
+                    credentials=credentials
                 )
+            )
+        else:  # text
+            task = asyncio.create_task(
+                self._process_text_recipe_generation(
+                    progress_id=progress_id,
+                    recipe_text=text,
+                    image_url=image
+                )
+            )
+        
+        # Store the task and set up cleanup
+        self.generation_tasks[progress_id] = task
+        task.add_done_callback(
+            lambda t: asyncio.create_task(self._cleanup_task(progress_id, t))
+        )
+        
+        return progress_id
+        
+    async def _save_base64_image(self, base64_str: str, slug: str) -> Optional[str]:
+        """
+        Save a base64 encoded image.
+        """
+        try:
+            # Extract image data from base64 string
+            if "," in base64_str:
+                _, base64_data = base64_str.split(",", 1)
             else:
-                if not text:
-                    raise ValueError("Text is required for text import type")
-                print("[DEBUG] Starting text import")
-                task = asyncio.create_task(
-                    self._process_text_recipe_generation(progress_id, text, image)
-                )
-
-            # Store task and set up cleanup
-            self.generation_tasks[progress_id] = task
-            task.add_done_callback(
-                lambda t: asyncio.create_task(self._cleanup_task(progress_id, t))
-            )
-            print(f"[DEBUG] Task created and stored with ID: {progress_id}")
-
-            return progress_id
+                base64_data = base64_str
+                
+            image_data = base64.b64decode(base64_data)
             
+            # Ensure the images directory exists
+            self.images_path.mkdir(parents=True, exist_ok=True)
+            
+            # Save image to the recipes/images directory
+            image_path = self.images_path / f"{slug}.jpg"
+            async with aiofiles.open(image_path, "wb") as f:
+                await f.write(image_data)
+                
+            # Also save a copy to the original images directory for thumbnails
+            original_path = self.base_path / "images" / "original" / f"{slug}.jpg"
+            async with aiofiles.open(original_path, "wb") as f:
+                await f.write(image_data)
+                
+            # Return the relative path to be stored in the recipe
+            return f"images/{slug}.jpg"
+                
         except Exception as e:
-            print(f"[ERROR] Failed to start recipe generation: {str(e)}")
-            print(f"[ERROR] Exception type: {type(e).__name__}")
-            import traceback
-            print(f"[ERROR] Traceback:\n{traceback.format_exc()}")
-            raise
+            print(f"Error saving base64 image: {e}")
+            return None
 
-    async def _process_url_recipe_generation(
-        self,
-        progress_id: str,
-        url: str,
-        credentials: Optional[Dict[str, Any]] = None
-    ) -> None:
-        """Process the recipe generation from URL in background."""
-        try:
-            # Prepare content (includes existence check, URL fetching and content extraction)
-            await self.progress_service.update_step(
-                progress_id,
-                "prepare_content",
-                "in_progress",
-                0,
-                "Preparing content..."
-            )
-            
-            # Check if recipe exists
-            existing_recipe = await self._find_recipe_by_url(url)
-            if existing_recipe:
-                raise RecipeExistsError(
-                    f"Recipe from URL {url} already exists"
-                )
-
-            # Generate recipe from URL
-            recipe = await self.generator.generate_from_url(
-                url=url,
-                credentials=credentials,
-                progress_service=self.progress_service,
-                progress_id=progress_id
-            )
-
-            await self.progress_service.update_step(
-                progress_id,
-                "prepare_content",
-                "completed",
-                100,
-                "Content prepared successfully"
-            )
-
-            # Save recipe in progress
-            await self.progress_service.set_recipe(progress_id, recipe)
-
-        except RecipeExistsError as e:
-            await self.progress_service.set_error(progress_id, str(e))
-            raise
-        except Exception as e:
-            await self.progress_service.set_error(progress_id, str(e))
-            raise
-
-    async def _process_text_recipe_generation(
-        self,
-        progress_id: str,
-        text: str,
-        image: Optional[str] = None
-    ) -> None:
-        """Process the recipe generation from text in background."""
-        try:
-            # Check existence (based on content hash or similar)
-            await self.progress_service.update_step(
-                progress_id,
-                "check_existence",
-                "in_progress",
-                0,
-                "Vérification si la recette existe déjà..."
-            )
-            
-            # TODO: Implement content-based duplicate check
-            
-            await self.progress_service.update_step(
-                progress_id,
-                "check_existence",
-                "completed",
-                20,
-                "Vérification terminée"
-            )
-
-            # Process image if provided
-            image_data = None
-            if image:
-                # Remove data:image/jpeg;base64, prefix if present
-                if "base64," in image:
-                    image = image.split("base64,")[1]
-                image_data = base64.b64decode(image)
-
-            # Generate recipe from text
-            recipe = await self.generator.generate_from_text(
-                text=text,
-                image_data=image_data,
-                progress_service=self.progress_service,
-                progress_id=progress_id
-            )
-
-            # Mark progress as completed
-            await self.progress_service.update_step(
-                progress_id,
-                "save_recipe",
-                "completed",
-                100,
-                "Recette sauvegardée avec succès"
-            )
-            await self.progress_service.set_recipe(progress_id, recipe)
-
-        except Exception as e:
-            await self.progress_service.set_error(progress_id, str(e))
-            raise
-
-    async def cancel_generation(self, progress_id: str) -> None:
-        """Cancel an ongoing recipe generation."""
-        if progress_id in self.generation_tasks:
-            task = self.generation_tasks[progress_id]
-            if not task.done():
-                task.cancel()
-                await self.progress_service.set_error(
-                    progress_id,
-                    "Generation cancelled by user"
-                )
-
-    async def get_generation_progress(self, task_id: str) -> Optional[Dict[str, Any]]:
-        """Get the progress of a recipe generation."""
-        progress = await self.progress_service.get_progress(task_id)
-        if not progress:
-            raise HTTPException(status_code=404, detail=f"Progress not found for ID: {task_id}")
-        
-        # Check if task is still running
-        task = self.generation_tasks.get(task_id)
-        if task and task.done() and task.exception():
-            # If task failed, update progress with error
-            error = str(task.exception())
-            await self.progress_service.set_error(task_id, error)
-            progress = await self.progress_service.get_progress(task_id)
-        
-        return progress
+    async def get_generation_progress(self, task_id: str):
+        """
+        Get the progress of a recipe generation task by task ID.
+        """
+        return await self.progress_service.get_progress(task_id)

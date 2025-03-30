@@ -2,8 +2,14 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse
 from PIL import Image
 import os
+import urllib.parse
+import logging
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
+
+# Configurer le logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/images", tags=["images"])
 
@@ -17,14 +23,14 @@ IMAGE_SIZES = {
 }
 
 # Chemins des dossiers
-DATA_DIR = Path("data")
-RECIPES_DIR = DATA_DIR / "recipes"
-IMAGES_DIR = RECIPES_DIR / "images"
-ORIGINAL_DIR = IMAGES_DIR / "original"
+DATA_DIR = Path("data")  # Chemin relatif depuis server/
+RECIPES_IMAGES_DIR = DATA_DIR / "recipes" / "images"  # Chemin vers les images de recettes
+CACHE_DIR = DATA_DIR / "images" / "cache"  # Dossier pour stocker les versions redimensionnées
 
-# Créer les dossiers nécessaires
+# Créer les dossiers nécessaires pour le cache
 for size in IMAGE_SIZES:
-    (IMAGES_DIR / size).mkdir(parents=True, exist_ok=True)
+    if size != "original":  # Pas besoin de cache pour les originaux
+        (CACHE_DIR / size).mkdir(parents=True, exist_ok=True)
 
 def resize_image(img: Image.Image, size: tuple[int, int]) -> Image.Image:
     """Redimensionne une image en conservant son ratio."""
@@ -44,51 +50,79 @@ def resize_image(img: Image.Image, size: tuple[int, int]) -> Image.Image:
     # Redimensionner avec Lanczos (meilleure qualité)
     return img.resize((new_width, new_height), Image.Resampling.LANCZOS)
 
-def get_image_path(filename: str, size: str) -> Optional[Path]:
-    """Trouve le chemin de l'image pour une taille donnée."""
-    print(f"[DEBUG] get_image_path: Looking for {filename} in size {size}")
+def get_all_image_files() -> List[Path]:
+    """Récupère toutes les images dans le dossier des recettes."""
+    if not RECIPES_IMAGES_DIR.exists():
+        logger.warning(f"Le dossier d'images n'existe pas: {RECIPES_IMAGES_DIR}")
+        return []
     
-    # Pour les originaux
+    all_files = []
+    for ext in [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]:
+        all_files.extend(list(RECIPES_IMAGES_DIR.glob(f"*{ext}")))
+    
+    logger.info(f"Images trouvées: {[f.name for f in all_files]}")
+    return all_files
+
+def get_original_image_path(filename: str) -> Optional[Path]:
+    """Trouve le chemin de l'image originale."""
+    # Décoder l'URL au cas où
+    filename = urllib.parse.unquote(filename)
+    
+    logger.info(f"Recherche de l'image originale: {filename}")
+    logger.info(f"Dossier des images: {RECIPES_IMAGES_DIR}, existe: {RECIPES_IMAGES_DIR.exists()}")
+    
+    # Chercher l'original avec différentes extensions
+    for ext in [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]:
+        # Essayer avec le nom exact
+        original_path = RECIPES_IMAGES_DIR / (filename + ext)
+        logger.info(f"Vérification du chemin: {original_path}, existe: {original_path.exists()}")
+        if original_path.exists():
+            return original_path
+    
+    # Si le fichier n'existe pas, récupérer toutes les images et essayer de trouver
+    # une correspondance partielle (insensible à la casse)
+    all_images = get_all_image_files()
+    filename_lower = filename.lower()
+    
+    for img_path in all_images:
+        # Comparer les noms sans extension
+        if img_path.stem.lower() == filename_lower:
+            logger.info(f"Correspondance exacte trouvée: {img_path}")
+            return img_path
+        
+        # Vérifier si le nom du fichier est un préfixe
+        if img_path.stem.lower().startswith(filename_lower[:40]):
+            logger.info(f"Correspondance par préfixe trouvée: {img_path}")
+            return img_path
+    
+    logger.warning(f"Aucune image trouvée pour: {filename}")
+    return None
+
+def get_cached_image_path(filename: str, size: str) -> Optional[Path]:
+    """Trouve le chemin de l'image dans le cache pour une taille donnée."""
     if size == "original":
-        # Chercher l'original avec différentes extensions
-        for ext in [".svg", ".jpg", ".jpeg", ".png", ".gif", ".webp"]:
-            original_path = ORIGINAL_DIR / (filename + ext)
-            print(f"[DEBUG] Checking original path: {original_path}")
-            if original_path.exists():
-                print(f"[DEBUG] Found original at: {original_path}")
-                return original_path
-        print("[DEBUG] No original found")
-        return None
-
-    # Pour les autres tailles
-    # D'abord vérifier si c'est un SVG dans le dossier original
-    svg_path = ORIGINAL_DIR / (filename + ".svg")
-    print(f"[DEBUG] Checking for SVG: {svg_path}")
-    if svg_path.exists():
-        print(f"[DEBUG] Found SVG at: {svg_path}")
-        return svg_path
-
-    # Sinon chercher la version redimensionnée en WebP
-    webp_path = IMAGES_DIR / size / (filename + ".webp")
-    print(f"[DEBUG] Checking for WebP: {webp_path}")
-    if webp_path.exists():
-        print(f"[DEBUG] Found WebP at: {webp_path}")
-        return webp_path
-
-    print("[DEBUG] No image found")
+        return get_original_image_path(filename)
+    
+    # Pour les autres tailles, chercher dans le cache
+    for ext in [".webp", ".jpg", ".jpeg", ".png"]:
+        cache_path = CACHE_DIR / size / (filename + ext)
+        if cache_path.exists():
+            return cache_path
+    
     return None
 
 async def ensure_resized_version(filename: str, size: str) -> Optional[Path]:
     """S'assure qu'une version redimensionnée existe et la crée si nécessaire."""
     if size == "original":
-        return get_image_path(filename, "original")
+        return get_original_image_path(filename)
 
-    target_path = IMAGES_DIR / size / (filename + ".webp")
-    if target_path.exists():
-        return target_path
+    # Vérifier si l'image est déjà dans le cache
+    cached_path = get_cached_image_path(filename, size)
+    if cached_path:
+        return cached_path
 
     # Trouver l'original
-    original_path = get_image_path(filename, "original")
+    original_path = get_original_image_path(filename)
     if not original_path:
         return None
 
@@ -96,58 +130,62 @@ async def ensure_resized_version(filename: str, size: str) -> Optional[Path]:
     if original_path.suffix.lower() == ".svg":
         return original_path
 
-    # Redimensionner l'image
-    with Image.open(original_path) as img:
-        # Convertir en RGB si nécessaire (pour les images avec transparence)
-        if img.mode in ("RGBA", "LA"):
-            background = Image.new("RGB", img.size, (255, 255, 255))
-            background.paste(img, mask=img.split()[-1])
-            img = background
-        elif img.mode != "RGB":
-            img = img.convert("RGB")
-        
-        target_size = IMAGE_SIZES[size]
-        resized = resize_image(img, target_size)
-        
-        # Créer le dossier de destination si nécessaire
-        target_path.parent.mkdir(parents=True, exist_ok=True)
-        
-        # Sauvegarder en WebP avec une bonne qualité
-        resized.save(target_path, "WEBP", quality=85, method=6)
-        return target_path
+    # Créer le dossier de destination si nécessaire
+    target_dir = CACHE_DIR / size
+    target_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Chemin pour la version redimensionnée en WebP (meilleure compression)
+    target_path = target_dir / (filename + ".webp")
+
+    try:
+        # Redimensionner l'image
+        with Image.open(original_path) as img:
+            # Convertir en RGB si nécessaire (pour les images avec transparence)
+            if img.mode in ("RGBA", "LA"):
+                background = Image.new("RGB", img.size, (255, 255, 255))
+                background.paste(img, mask=img.split()[-1])
+                img = background
+            elif img.mode != "RGB":
+                img = img.convert("RGB")
+            
+            target_size = IMAGE_SIZES[size]
+            resized = resize_image(img, target_size)
+            
+            # Sauvegarder en WebP avec une bonne qualité
+            resized.save(target_path, "WEBP", quality=85, method=6)
+            logger.info(f"Image redimensionnée créée: {target_path}")
+            return target_path
+    except Exception as e:
+        logger.error(f"Erreur lors du redimensionnement de l'image {original_path}: {str(e)}")
+        return original_path  # En cas d'erreur, retourner l'original
 
 @router.get("/{size}/{filename}")
 async def serve_image(size: str, filename: str):
     """Sert une image dans la taille demandée."""
-    print(f"[DEBUG] Serving image: size={size}, filename={filename}")
+    logger.info(f"Demande d'image: size={size}, filename={filename}")
     
     if size not in IMAGE_SIZES:
-        print(f"[DEBUG] Invalid size: {size}")
         raise HTTPException(status_code=400, detail="Invalid size")
 
-    # Vérifier si le nom de fichier est undefined
-    if filename == "undefined":
-        print("[DEBUG] Filename is undefined")
-        raise HTTPException(status_code=404, detail="Image filename is undefined")
+    # Vérifier si le nom de fichier est valide
+    if not filename or filename == "undefined":
+        raise HTTPException(status_code=404, detail="Image filename is invalid")
 
-    # Nettoyer le nom de fichier
-    filename = Path(filename).stem
-    print(f"[DEBUG] Cleaned filename: {filename}")
+    # Décoder l'URL si nécessaire
+    decoded_filename = urllib.parse.unquote(filename)
+    
+    # Nettoyer le nom de fichier (supprimer l'extension si présente)
+    clean_filename = Path(decoded_filename).stem
+    logger.info(f"Nom de fichier nettoyé: {clean_filename}")
 
     # Trouver ou créer l'image dans la bonne taille
-    image_path = await ensure_resized_version(filename, size)
-    print(f"[DEBUG] Image path from ensure_resized_version: {image_path}")
+    image_path = await ensure_resized_version(clean_filename, size)
     
-    if not image_path:
-        print("[DEBUG] Image path is None")
-        raise HTTPException(status_code=404, detail="Image not found")
+    if not image_path or not image_path.exists():
+        logger.warning(f"Image non trouvée: {clean_filename}")
+        raise HTTPException(status_code=404, detail=f"Image not found: {clean_filename}")
 
-    # Vérifier si le fichier existe réellement
-    if not image_path.exists():
-        print(f"[DEBUG] Image file does not exist: {image_path}")
-        raise HTTPException(status_code=404, detail="Image file not found")
-
-    print(f"[DEBUG] Image file exists: {image_path}")
+    logger.info(f"Image trouvée: {image_path}")
 
     # Déterminer le type MIME
     mime_types = {
@@ -159,6 +197,6 @@ async def serve_image(size: str, filename: str):
         ".webp": "image/webp"
     }
     media_type = mime_types.get(image_path.suffix.lower(), "application/octet-stream")
-    print(f"[DEBUG] Media type: {media_type}")
+    logger.info(f"Type MIME: {media_type}")
 
     return FileResponse(image_path, media_type=media_type)

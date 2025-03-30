@@ -4,7 +4,6 @@ import base64
 import tempfile
 import shutil
 import os
-from recipe_generator import RecipeGenerator
 from dotenv import load_dotenv
 
 # Charger les variables d'environnement
@@ -143,14 +142,6 @@ async def test_server(aiohttp_server):
     app.router.add_get('/recipes/{name}', serve_recipe)
     server = await aiohttp_server(app)
     return server
-
-@pytest.fixture
-def generator():
-    """Fixture pour créer un générateur avec une clé API mock."""
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        pytest.skip("OPENAI_API_KEY non définie")
-    return RecipeGenerator(api_key=api_key)
 
 @pytest.fixture
 async def temp_dir():

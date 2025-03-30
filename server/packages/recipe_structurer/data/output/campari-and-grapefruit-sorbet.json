@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "title": "Campari and Grapefruit Sorbet",
+    "description": "A refreshing and party-like sorbet that can be served at various points during a meal.",
+    "servings": 6,
+    "recipeType": "dessert",
+    "sourceImageUrl": "https://www.recipe.com/images/campari-cocktail.png",
+    "notes": [
+      "Use ruby red grapefruit for color and sweetness.",
+      "Can be served with Prosecco, as a palate-cleanser, or with Chocolate-coated Ruby Red Grapefruit Peel.",
+      "Store grapefruit peel in the fridge for up to 3 days if not using immediately."
+    ],
+    "nationality": "Middle Eastern",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": "Ottolenghi Simple"
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "grapefruit",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "grapefruit juice",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "lemon juice",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "orange juice",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "caster sugar",
+      "category": "pantry"
+    },
+    {
+      "id": "ing6",
+      "name": "Campari",
+      "category": "condiment"
+    }
+  ],
+  "tools": [
+    "Ice cream maker",
+    "Food processor or blender",
+    "Fine-mesh sieve",
+    "Small saucepan",
+    "Ice bath or fridge",
+    "Container with lid",
+    "Cling film"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Cut each grapefruit in half and remove the flesh.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "grapefruit",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "Grapefruit flesh",
+        "type": "intermediate",
+        "description": "Grapefruit flesh removed from the peel."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Place the grapefruit flesh in a blender or food processor and blend until the grapefruit is crushed.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Grapefruit flesh",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Crushed grapefruit flesh",
+        "type": "intermediate",
+        "description": "Grapefruit flesh blended into a crushed consistency."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Strain the crushed grapefruit flesh into a bowl through a fine-mesh sieve to extract the juice.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Crushed grapefruit flesh",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Grapefruit juice",
+        "type": "intermediate",
+        "description": "500ml of grapefruit juice extracted from the crushed flesh."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Add the lemon and orange juice to the grapefruit juice and mix together.",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Grapefruit juice",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "lemon juice",
+          "amount": 60.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "orange juice",
+          "amount": 100.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Mixed fruit juices",
+        "type": "intermediate",
+        "description": "Grapefruit, lemon, and orange juices combined into a single mixture."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Pour 250ml of the mixed fruit juices into a small saucepan with the sugar.",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Mixed fruit juices",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "caster sugar",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Juice and sugar mixture",
+        "type": "intermediate",
+        "description": "250ml of mixed fruit juices combined with 200g of caster sugar."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Heat the saucepan over a low heat, stirring until the sugar is dissolved, then set aside to cool for 10 minutes.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "Juice and sugar mixture",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Dissolved sugar mixture",
+        "type": "intermediate",
+        "description": "Sugar fully dissolved in the juice mixture and cooled."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Pour the dissolved sugar mixture into the remaining juice, add the Campari, and chill completely.",
+      "time": "1h",
+      "stepType": "combine",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Dissolved sugar mixture",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Mixed fruit juices",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "Campari",
+          "amount": 80.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "Chilled sorbet base",
+        "type": "intermediate",
+        "description": "Chilled mixture of juices, sugar, and Campari ready for churning."
+      }
+    },
+    {
+      "id": "step8",
+      "action": "Transfer the chilled sorbet base to an ice cream maker and churn until soft waves form.",
+      "time": "20min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "Chilled sorbet base",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "Churned sorbet",
+        "type": "intermediate",
+        "description": "Sorbet base churned into a soft, frozen consistency."
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Transfer the sorbet to a container, cover with cling film, and seal the container.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "Churned sorbet",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "Sealed sorbet",
+        "type": "intermediate",
+        "description": "Sorbet stored in a container with cling film to prevent ice particles from forming."
+      }
+    },
+    {
+      "id": "step10",
+      "action": "Freeze the sorbet until firm enough to scoop into a glass and serve.",
+      "time": "4h",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state9",
+          "name": "Sealed sorbet",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "Campari and Grapefruit Sorbet",
+        "type": "final",
+        "description": "Firm, frozen sorbet ready to be scooped and served."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Campari and Grapefruit Sorbet",
+    "type": "final",
+    "description": "Firm, frozen sorbet ready to be scooped and served."
+  }
+}

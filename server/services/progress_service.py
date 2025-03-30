@@ -6,13 +6,18 @@ import asyncio
 
 URL_STEPS = [
     GenerationStep(
-        step="cleanup_content",
-        message="Cleaning up content",
+        step="check_existence",
+        message="Checking if recipe already exists",
         startedAt=None
     ),
     GenerationStep(
-        step="generate_recipe",
-        message="Generating recipe",
+        step="scrape_content",
+        message="Fetching recipe content",
+        startedAt=None
+    ),
+    GenerationStep(
+        step="structure_recipe",
+        message="Structuring recipe data",
         startedAt=None
     ),
     GenerationStep(
@@ -24,18 +29,18 @@ URL_STEPS = [
 
 TEXT_IMAGE_STEPS = [
     GenerationStep(
-        step="cleanup_content",
-        message="Cleaning up content",
+        step="check_existence",
+        message="Preparing recipe text",
         startedAt=None
     ),
     GenerationStep(
-        step="generate_recipe",
-        message="Generating recipe",
+        step="structure_recipe",
+        message="Structuring recipe data",
         startedAt=None
     ),
     GenerationStep(
         step="save_recipe",
-        message="Saving recipe",
+        message="Saving recipe and image",
         startedAt=None
     )
 ]
@@ -43,6 +48,42 @@ TEXT_IMAGE_STEPS = [
 class ProgressService:
     def __init__(self):
         self._progress_entries: Dict[str, Dict] = {}
+
+    async def register(self, progress_id: str, import_type: Literal["url", "text"] = "url") -> None:
+        """Register a new progress entry with a given ID."""
+        steps = URL_STEPS if import_type == "url" else TEXT_IMAGE_STEPS
+        
+        self._progress_entries[progress_id] = {
+            "id": progress_id,
+            "steps": [step.model_dump() for step in steps],
+            "status": "pending",
+            "error": None,
+            "recipe": None,
+            "currentStep": None,
+            "createdAt": datetime.now().isoformat(),
+            "updatedAt": datetime.now().isoformat()
+        }
+
+    async def update_progress(self, progress_id: str, message: str) -> None:
+        """Update progress with a simple message."""
+        if progress_id not in self._progress_entries:
+            return
+            
+        entry = self._progress_entries[progress_id]
+        entry["progressMessage"] = message
+        entry["updatedAt"] = datetime.now().isoformat()
+
+    async def complete(self, progress_id: str, data: Dict = None) -> None:
+        """Mark a progress entry as completed."""
+        if progress_id not in self._progress_entries:
+            return
+            
+        entry = self._progress_entries[progress_id]
+        entry["status"] = "completed"
+        entry["updatedAt"] = datetime.now().isoformat()
+        
+        if data:
+            entry["result"] = data
 
     async def create_progress(self, import_type: Literal["url", "text"] = "url") -> str:
         """Create a new progress entry with appropriate steps based on import type."""

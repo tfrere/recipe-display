@@ -1,0 +1,103 @@
+{
+  "seasons": [
+    {
+      "id": "winter",
+      "label": "Winter"
+    },
+    {
+      "id": "spring",
+      "label": "Spring"
+    },
+    {
+      "id": "summer",
+      "label": "Summer"
+    },
+    {
+      "id": "autumn",
+      "label": "Autumn"
+    },
+    {
+      "id": "all",
+      "label": "All Seasons"
+    }
+  ],
+  "recipe_types": [
+    {
+      "id": "appetizer",
+      "label": "Appetizer"
+    },
+    {
+      "id": "starter",
+      "label": "Starter"
+    },
+    {
+      "id": "main_course",
+      "label": "Main Course"
+    },
+    {
+      "id": "dessert",
+      "label": "Dessert"
+    },
+    {
+      "id": "drink",
+      "label": "Drink"
+    },
+    {
+      "id": "base",
+      "label": "Base"
+    }
+  ],
+  "diets": [
+    {
+      "id": "omnivorous",
+      "label": "Omnivorous"
+    },
+    {
+      "id": "vegetarian",
+      "label": "Vegetarian"
+    },
+    {
+      "id": "vegan",
+      "label": "Vegan"
+    }
+  ],
+  "units": {
+    "integer": ["unit", "piece"],
+    "weight": {
+      "gram": ["g", "gram", "grams"],
+      "display": {
+        "kilogram": "{count} kg",
+        "gram": "{count} g"
+      }
+    },
+    "volume": {
+      "spoons": ["tablespoon", "teaspoon"],
+      "containers": ["cup", "glass"],
+      "display": {
+        "tablespoon": "{count} tbsp",
+        "teaspoon": "{count} tsp",
+        "cup": "{count} cup(s)",
+        "glass": "{count} glass(es)"
+      }
+    }
+  },
+  "scaling_factors": {
+    "spices": 0.8,
+    "seasoning": 0.8,
+    "yeast": 0.9
+  },
+  "ingredients": {
+    "categories": [
+      { "id": "meat", "label": "Meat" },
+      { "id": "produce", "label": "Fruits & Vegetables" },
+      { "id": "egg", "label": "Eggs" },
+      { "id": "dairy", "label": "Dairy" },
+      { "id": "pantry", "label": "Pantry" },
+      { "id": "spice", "label": "Spices & Herbs" },
+      { "id": "condiment", "label": "Condiments" },
+      { "id": "beverage", "label": "Beverages" },
+      { "id": "seafood", "label": "Seafood" },
+      { "id": "other", "label": "Other" }
+    ]
+  }
+}

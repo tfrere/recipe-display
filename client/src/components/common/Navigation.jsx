@@ -110,7 +110,8 @@ const Navigation = () => {
             <Box sx={{ display: "flex", alignItems: "center", ml: 4 }}>
               {[
                 { path: "/", label: "Recipes" },
-                { path: "/pairings", label: "Pairings" },
+                { path: "/pairings", label: "Ingredient pairing" },
+                { path: "/pairings", label: "Wine pairing" },
               ].map((route, index) => (
                 <React.Fragment key={route.path}>
                   {index > 0 && (

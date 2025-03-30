@@ -1,0 +1,1008 @@
+{
+  "metadata": {
+    "title": "L\u00e9gendaire B\u00fbche de No\u00ebl",
+    "description": "A classic French Christmas dessert featuring a chocolate Italian cream, hazelnut pastry cream, and a rolled g\u00e9noise sponge, decorated with festive touches.",
+    "servings": 10,
+    "recipeType": "dessert",
+    "sourceImageUrl": "",
+    "notes": [
+      "Prepare the chocolate Italian cream first as it needs time to cool.",
+      "Use concentric striations on the sides of the log for a realistic look.",
+      "Decorate with festive ornaments and powdered sugar for a snowy effect."
+    ],
+    "nationality": "French",
+    "author": "",
+    "bookTitle": ""
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "jaunes d\u2019\u0153uf",
+      "category": "egg"
+    },
+    {
+      "id": "ing2",
+      "name": "sucre",
+      "category": "pantry"
+    },
+    {
+      "id": "ing3",
+      "name": "chocolat noir",
+      "category": "pantry"
+    },
+    {
+      "id": "ing4",
+      "name": "beurre",
+      "category": "dairy"
+    },
+    {
+      "id": "ing5",
+      "name": "sucre en poudre",
+      "category": "pantry"
+    },
+    {
+      "id": "ing6",
+      "name": "farine",
+      "category": "pantry"
+    },
+    {
+      "id": "ing7",
+      "name": "ma\u00efzena",
+      "category": "pantry"
+    },
+    {
+      "id": "ing8",
+      "name": "oeufs",
+      "category": "egg"
+    },
+    {
+      "id": "ing9",
+      "name": "sel",
+      "category": "spice"
+    },
+    {
+      "id": "ing10",
+      "name": "pur\u00e9e de vanille",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "lait",
+      "category": "dairy"
+    },
+    {
+      "id": "ing12",
+      "name": "noisettes",
+      "category": "pantry"
+    }
+  ],
+  "tools": [
+    "Bain-marie",
+    "Papier sulfuris\u00e9"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Faire cuire le chocolat au bain-marie jusqu\u2019\u00e0 ce qu\u2019il forme une cr\u00e8me \u00e9paisse.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "chocolat noir",
+          "amount": 120.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "Chocolat fondu",
+        "type": "intermediate",
+        "description": "Chocolat noir fondu au bain-marie, formant une cr\u00e8me \u00e9paisse."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Faire cuire le sucre dans tr\u00e8s peu d\u2019eau jusqu\u2019\u00e0 ce que le sirop fasse le fil.",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "sucre",
+          "amount": 80.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Sirop de sucre",
+        "type": "intermediate",
+        "description": "Sirop de sucre cuit jusqu\u2019\u00e0 ce qu\u2019il fasse le fil."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Mettre les jaunes d\u2019\u0153uf dans un saladier plac\u00e9 dans une casserole tr\u00e8s chaude.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "jaunes d\u2019\u0153uf",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Jaunes d\u2019\u0153uf chauff\u00e9s",
+        "type": "intermediate",
+        "description": "Jaunes d\u2019\u0153uf plac\u00e9s dans un saladier au-dessus d\u2019une casserole tr\u00e8s chaude."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Ajouter le sirop doucement puis le chocolat.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Sirop de sucre",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Chocolat fondu",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Jaunes d\u2019\u0153uf chauff\u00e9s",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "M\u00e9lange chocolat-sirop-jaunes",
+        "type": "intermediate",
+        "description": "M\u00e9lange de sirop de sucre, chocolat fondu et jaunes d\u2019\u0153uf chauff\u00e9s."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Laisser cuire au bain-marie en remuant.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "M\u00e9lange chocolat-sirop-jaunes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Cr\u00e8me cuite",
+        "type": "intermediate",
+        "description": "M\u00e9lange cuit au bain-marie jusqu\u2019\u00e0 \u00e9paississement."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Ajouter le beurre coup\u00e9 en petits morceaux et laisser fondre en remuant.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "beurre",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "Cr\u00e8me cuite",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Cr\u00e8me italienne au chocolat",
+        "type": "subrecipe",
+        "description": "Cr\u00e8me italienne au chocolat pr\u00eate \u00e0 refroidir."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Sortir de l\u2019eau chaude et travailler \u00e0 froid jusqu\u2019\u00e0 ce que la cr\u00e8me soit devenue \u00e9paisse.",
+      "time": "1h",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Cr\u00e8me italienne au chocolat",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "Cr\u00e8me italienne au chocolat refroidie",
+        "type": "subrecipe",
+        "description": "Cr\u00e8me italienne au chocolat refroidie et \u00e9paissie."
+      }
+    },
+    {
+      "id": "step8",
+      "action": "S\u00e9parer les blancs des jaunes d\u2019\u0153ufs.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "oeufs",
+          "amount": 5.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "Blancs et jaunes s\u00e9par\u00e9s",
+        "type": "intermediate",
+        "description": "Blancs et jaunes d\u2019\u0153ufs s\u00e9par\u00e9s."
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Battre le sucre et les jaunes.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "sucre en poudre",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "Blancs et jaunes s\u00e9par\u00e9s",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "M\u00e9lange sucre-jaunes",
+        "type": "intermediate",
+        "description": "M\u00e9lange de sucre en poudre et jaunes d\u2019\u0153ufs battus."
+      }
+    },
+    {
+      "id": "step10",
+      "action": "Tamiser la farine et la ma\u00efzena ensemble.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "farine",
+          "amount": 75.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "ma\u00efzena",
+          "amount": 25.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state10",
+        "name": "M\u00e9lange farine-ma\u00efzena",
+        "type": "intermediate",
+        "description": "Farine et ma\u00efzena tamis\u00e9es ensemble."
+      }
+    },
+    {
+      "id": "step11",
+      "action": "Incorporer le m\u00e9lange au sucre et jaunes.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state9",
+          "name": "M\u00e9lange sucre-jaunes",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state10",
+          "name": "M\u00e9lange farine-ma\u00efzena",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state11",
+        "name": "P\u00e2te de g\u00e9noise",
+        "type": "intermediate",
+        "description": "P\u00e2te de g\u00e9noise pr\u00eate \u00e0 \u00eatre m\u00e9lang\u00e9e avec les blancs en neige."
+      }
+    },
+    {
+      "id": "step12",
+      "action": "Ajouter un peu de pur\u00e9e de vanille (facultatif) et une pinc\u00e9e de sel.",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "pur\u00e9e de vanille",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "sel",
+          "amount": 1.0,
+          "unit": "pinch"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state11",
+          "name": "P\u00e2te de g\u00e9noise",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state12",
+        "name": "P\u00e2te de g\u00e9noise aromatis\u00e9e",
+        "type": "intermediate",
+        "description": "P\u00e2te de g\u00e9noise aromatis\u00e9e \u00e0 la vanille et au sel."
+      }
+    },
+    {
+      "id": "step13",
+      "action": "Battre les blancs en neige tr\u00e8s fermement.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "Blancs et jaunes s\u00e9par\u00e9s",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state13",
+        "name": "Blancs en neige",
+        "type": "intermediate",
+        "description": "Blancs d\u2019\u0153ufs battus en neige tr\u00e8s ferme."
+      }
+    },
+    {
+      "id": "step14",
+      "action": "Incorporer d\u00e9licatement les blancs \u00e0 la p\u00e2te.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state12",
+          "name": "P\u00e2te de g\u00e9noise aromatis\u00e9e",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state13",
+          "name": "Blancs en neige",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state14",
+        "name": "P\u00e2te de g\u00e9noise finale",
+        "type": "intermediate",
+        "description": "P\u00e2te de g\u00e9noise pr\u00eate \u00e0 \u00eatre cuite."
+      }
+    },
+    {
+      "id": "step15",
+      "action": "Mettre du papier sulfuris\u00e9 sur une plaque dans le four.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [],
+      "output_state": {
+        "id": "state15",
+        "name": "Plaque pr\u00e9par\u00e9e",
+        "type": "intermediate",
+        "description": "Plaque de four recouverte de papier sulfuris\u00e9."
+      }
+    },
+    {
+      "id": "step16",
+      "action": "\u00c9taler la p\u00e2te de mani\u00e8re r\u00e9guli\u00e8re.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state14",
+          "name": "P\u00e2te de g\u00e9noise finale",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state15",
+          "name": "Plaque pr\u00e9par\u00e9e",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state16",
+        "name": "P\u00e2te \u00e9tal\u00e9e",
+        "type": "intermediate",
+        "description": "P\u00e2te de g\u00e9noise \u00e9tal\u00e9e de mani\u00e8re r\u00e9guli\u00e8re sur la plaque."
+      }
+    },
+    {
+      "id": "step17",
+      "action": "Pr\u00e9chauffer le four \u00e0 210\u00b0C pendant 15min.",
+      "time": "15min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [],
+      "output_state": {
+        "id": "state17",
+        "name": "Four pr\u00e9chauff\u00e9",
+        "type": "intermediate",
+        "description": "Four pr\u00e9chauff\u00e9 \u00e0 210\u00b0C."
+      }
+    },
+    {
+      "id": "step18",
+      "action": "Faire cuire pendant 7min (tester avec un couteau pour v\u00e9rifier la cuisson).",
+      "time": "7min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state16",
+          "name": "P\u00e2te \u00e9tal\u00e9e",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state17",
+          "name": "Four pr\u00e9chauff\u00e9",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state18",
+        "name": "G\u00e9noise cuite",
+        "type": "intermediate",
+        "description": "G\u00e9noise cuite et pr\u00eate \u00e0 \u00eatre enroul\u00e9e."
+      }
+    },
+    {
+      "id": "step19",
+      "action": "Sortir du four et mettre sur un torchon humide.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state18",
+          "name": "G\u00e9noise cuite",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state19",
+        "name": "G\u00e9noise sur torchon humide",
+        "type": "intermediate",
+        "description": "G\u00e9noise cuite plac\u00e9e sur un torchon humide."
+      }
+    },
+    {
+      "id": "step20",
+      "action": "Enrouler le torchon et la g\u00e9noise sur elle-m\u00eame.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state19",
+          "name": "G\u00e9noise sur torchon humide",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state20",
+        "name": "G\u00e9noise enroul\u00e9e",
+        "type": "intermediate",
+        "description": "G\u00e9noise enroul\u00e9e dans un torchon humide."
+      }
+    },
+    {
+      "id": "step21",
+      "action": "Laisser refroidir.",
+      "time": "30min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state20",
+          "name": "G\u00e9noise enroul\u00e9e",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state21",
+        "name": "G\u00e9noise refroidie",
+        "type": "intermediate",
+        "description": "G\u00e9noise enroul\u00e9e et refroidie."
+      }
+    },
+    {
+      "id": "step22",
+      "action": "Faire griller les noisettes puis les hacher finement.",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "noisettes",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state22",
+        "name": "Noisettes grill\u00e9es et hach\u00e9es",
+        "type": "intermediate",
+        "description": "Noisettes grill\u00e9es et hach\u00e9es finement."
+      }
+    },
+    {
+      "id": "step23",
+      "action": "Faire bouillir le lait en y ajoutant les noisettes.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "lait",
+          "amount": 40.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state22",
+          "name": "Noisettes grill\u00e9es et hach\u00e9es",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state23",
+        "name": "Lait aux noisettes",
+        "type": "intermediate",
+        "description": "Lait bouilli avec des noisettes grill\u00e9es et hach\u00e9es."
+      }
+    },
+    {
+      "id": "step24",
+      "action": "Filtrer les noisettes pour ne garder que le liquide (laisser un peu de noisettes pour la texture).",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state23",
+          "name": "Lait aux noisettes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state24",
+        "name": "Lait filtr\u00e9",
+        "type": "intermediate",
+        "description": "Lait filtr\u00e9 avec quelques morceaux de noisettes pour la texture."
+      }
+    },
+    {
+      "id": "step25",
+      "action": "D\u00e9layer la farine avec un peu d\u2019eau froide et y ajouter les \u0153ufs bien battus.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "farine",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "oeufs",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state25",
+        "name": "M\u00e9lange farine-\u0153ufs",
+        "type": "intermediate",
+        "description": "M\u00e9lange de farine d\u00e9lay\u00e9e avec de l\u2019eau froide et des \u0153ufs battus."
+      }
+    },
+    {
+      "id": "step26",
+      "action": "Ajouter le sucre.",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "sucre",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state25",
+          "name": "M\u00e9lange farine-\u0153ufs",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state26",
+        "name": "M\u00e9lange farine-\u0153ufs-sucre",
+        "type": "intermediate",
+        "description": "M\u00e9lange de farine, \u0153ufs et sucre."
+      }
+    },
+    {
+      "id": "step27",
+      "action": "M\u00e9langer avec le lait et faire bouillir en remuant jusqu\u2019\u00e0 obtenir une consistance de cr\u00e8me p\u00e2tissi\u00e8re.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state26",
+          "name": "M\u00e9lange farine-\u0153ufs-sucre",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state24",
+          "name": "Lait filtr\u00e9",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state27",
+        "name": "Cr\u00e8me p\u00e2tissi\u00e8re aux noisettes",
+        "type": "subrecipe",
+        "description": "Cr\u00e8me p\u00e2tissi\u00e8re aux noisettes pr\u00eate \u00e0 refroidir."
+      }
+    },
+    {
+      "id": "step28",
+      "action": "Laisser refroidir avant de fourrer la g\u00e9noise.",
+      "time": "1h",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state27",
+          "name": "Cr\u00e8me p\u00e2tissi\u00e8re aux noisettes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state28",
+        "name": "Cr\u00e8me p\u00e2tissi\u00e8re refroidie",
+        "type": "subrecipe",
+        "description": "Cr\u00e8me p\u00e2tissi\u00e8re aux noisettes refroidie."
+      }
+    },
+    {
+      "id": "step29",
+      "action": "D\u00e9rouler la g\u00e9noise avec le torchon humide.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state21",
+          "name": "G\u00e9noise refroidie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state29",
+        "name": "G\u00e9noise d\u00e9roul\u00e9e",
+        "type": "intermediate",
+        "description": "G\u00e9noise d\u00e9roul\u00e9e et pr\u00eate \u00e0 \u00eatre garnie."
+      }
+    },
+    {
+      "id": "step30",
+      "action": "Appliquer une couche de cr\u00e8me p\u00e2tissi\u00e8re sur l\u2019enti\u00e8ret\u00e9 de la g\u00e9noise d\u00e9roul\u00e9e.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state29",
+          "name": "G\u00e9noise d\u00e9roul\u00e9e",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state28",
+          "name": "Cr\u00e8me p\u00e2tissi\u00e8re refroidie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state30",
+        "name": "G\u00e9noise garnie",
+        "type": "intermediate",
+        "description": "G\u00e9noise d\u00e9roul\u00e9e et garnie de cr\u00e8me p\u00e2tissi\u00e8re."
+      }
+    },
+    {
+      "id": "step31",
+      "action": "Re-enrouler la g\u00e9noise avec la cr\u00e8me.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state30",
+          "name": "G\u00e9noise garnie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state31",
+        "name": "G\u00e9noise enroul\u00e9e garnie",
+        "type": "intermediate",
+        "description": "G\u00e9noise enroul\u00e9e avec la cr\u00e8me p\u00e2tissi\u00e8re."
+      }
+    },
+    {
+      "id": "step32",
+      "action": "Couper les bords en diagonale (/=====/) et garder les bouts enlev\u00e9s intacts.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state31",
+          "name": "G\u00e9noise enroul\u00e9e garnie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state32",
+        "name": "G\u00e9noise coup\u00e9e",
+        "type": "intermediate",
+        "description": "G\u00e9noise enroul\u00e9e garnie avec les bords coup\u00e9s en diagonale."
+      }
+    },
+    {
+      "id": "step33",
+      "action": "Utiliser un des bords pour former le d\u00e9but d\u2019une branche coup\u00e9e (facultatif).",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state32",
+          "name": "G\u00e9noise coup\u00e9e",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state33",
+        "name": "G\u00e9noise avec branche",
+        "type": "intermediate",
+        "description": "G\u00e9noise enroul\u00e9e garnie avec une branche coup\u00e9e."
+      }
+    },
+    {
+      "id": "step34",
+      "action": "Recouvrir enti\u00e8rement la b\u00fbche de cr\u00e8me italienne au chocolat (\u00e0 temp\u00e9rature ambiante).",
+      "time": "10min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state33",
+          "name": "G\u00e9noise avec branche",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "Cr\u00e8me italienne au chocolat refroidie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state34",
+        "name": "B\u00fbche recouverte de cr\u00e8me",
+        "type": "intermediate",
+        "description": "B\u00fbche enti\u00e8rement recouverte de cr\u00e8me italienne au chocolat."
+      }
+    },
+    {
+      "id": "step35",
+      "action": "Utiliser une fourchette pour dessiner les stries d\u2019un tronc d\u2019arbre.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state34",
+          "name": "B\u00fbche recouverte de cr\u00e8me",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state35",
+        "name": "B\u00fbche stri\u00e9e",
+        "type": "intermediate",
+        "description": "B\u00fbche recouverte de cr\u00e8me avec des stries dessin\u00e9es \u00e0 la fourchette."
+      }
+    },
+    {
+      "id": "step36",
+      "action": "Ajouter des stries concentriques sur les c\u00f4t\u00e9s.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state35",
+          "name": "B\u00fbche stri\u00e9e",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state36",
+        "name": "B\u00fbche d\u00e9cor\u00e9e",
+        "type": "intermediate",
+        "description": "B\u00fbche avec des stries concentriques sur les c\u00f4t\u00e9s."
+      }
+    },
+    {
+      "id": "step37",
+      "action": "Agr\u00e9menter de d\u00e9corations de No\u00ebl et saupoudrer de sucre glace pour faire de la neige.",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state36",
+          "name": "B\u00fbche d\u00e9cor\u00e9e",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "B\u00fbche de No\u00ebl finie",
+        "type": "final",
+        "description": "B\u00fbche de No\u00ebl d\u00e9cor\u00e9e avec des stries concentriques, des d\u00e9corations de No\u00ebl et saupoudr\u00e9e de sucre glace pour un effet neigeux."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "B\u00fbche de No\u00ebl finie",
+    "type": "final",
+    "description": "B\u00fbche de No\u00ebl d\u00e9cor\u00e9e avec des stries concentriques, des d\u00e9corations de No\u00ebl et saupoudr\u00e9e de sucre glace pour un effet neigeux."
+  }
+}

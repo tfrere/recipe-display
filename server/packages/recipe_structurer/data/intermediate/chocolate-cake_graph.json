@@ -1,0 +1,205 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Preheat the oven to 180°C.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [],
+      "output_state": {
+        "id": "state1",
+        "name": "Preheated oven",
+        "type": "intermediate",
+        "description": "The oven is preheated to 180°C."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "In a large bowl, mix the dry ingredients (flour, cocoa powder, sugar, and baking powder).",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "flour",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "cocoa powder",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "sugar",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "baking powder",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Dry ingredients mixed",
+        "type": "intermediate",
+        "description": "The dry ingredients (flour, cocoa powder, sugar, and baking powder) are mixed together."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Add the wet ingredients (eggs, milk, and melted butter) and mix well until combined.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Dry ingredients mixed",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "eggs",
+          "amount": 2.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "milk",
+          "amount": 10.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "butter",
+          "amount": 100.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Batter mixed",
+        "type": "intermediate",
+        "description": "The wet ingredients (eggs, milk, and melted butter) are added to the dry ingredients and mixed well until combined."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Pour the batter into a greased cake tin.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Batter mixed",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Batter in cake tin",
+        "type": "intermediate",
+        "description": "The batter is poured into a greased cake tin."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Bake for 30min or until a toothpick inserted into the center comes out clean.",
+      "time": "30min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Batter in cake tin",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "Preheated oven",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Baked cake",
+        "type": "intermediate",
+        "description": "The cake is baked for 30 minutes or until a toothpick inserted into the center comes out clean."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Let cool in the tin for 10min before transferring to a wire rack.",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "Baked cake",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Cake cooled in tin",
+        "type": "intermediate",
+        "description": "The cake is allowed to cool in the tin for 10 minutes before being transferred to a wire rack."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Allow to cool completely before serving.",
+      "time": "30min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Cake cooled in tin",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "Classic Chocolate Cake",
+        "type": "final",
+        "description": "The classic chocolate cake is fully baked, cooled, and ready to be served."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Classic Chocolate Cake",
+    "type": "final",
+    "description": "The classic chocolate cake is fully baked, cooled, and ready to be served."
+  }
+}
