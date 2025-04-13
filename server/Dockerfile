@@ -21,15 +21,6 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
-# Copy Git LFS configuration first
-COPY .gitattributes .gitattributes
-
-# Copy the entire repository to have access to Git history
-COPY .git .git
-
-# Perform Git LFS pull to retrieve LFS objects
-RUN git lfs pull
-
 # Copy dependency files
 COPY pyproject.toml poetry.lock ./
 
