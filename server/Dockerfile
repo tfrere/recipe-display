@@ -21,41 +21,22 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
-# Copy Git LFS configuration first
-COPY .gitattributes .gitattributes
+# Copy dependency files
+COPY server/pyproject.toml server/poetry.lock ./
 
-# Copy the entire repository to have access to Git history
-COPY .git .git
+# Copy project files
+COPY . .
 
-# Perform Git LFS pull to retrieve LFS objects
-RUN git lfs pull
-
-# Débogage: Vérifier où sont les fichiers LFS
-RUN echo "===== Vérification des fichiers LFS =====" && \
+# Débogage: Vérifier les fichiers après la copie
+RUN echo "===== Vérification des fichiers après COPY =====" && \
     echo "Structure du répertoire de travail:" && \
     ls -la /app/ && \
     echo "Contenu de server/data (s'il existe):" && \
-    ls -la /app/server/data/ || echo "Le répertoire n'existe pas encore" && \
+    ls -la /app/server/data/ || echo "Le répertoire server/data n'existe pas" && \
     echo "Contenu de server/data/recipes (s'il existe):" && \
-    ls -la /app/server/data/recipes/ || echo "Le répertoire n'existe pas encore" && \
-    echo "==== Fin de la vérification ===="
-
-# Copy dependency files
-COPY pyproject.toml poetry.lock ./
-
-# Copy project files (incluant tous les fichiers nécessaires)
-COPY . .
-
-# Débogage: Vérifier à nouveau après la copie complète
-RUN echo "===== Vérification des fichiers après COPY . . =====" && \
-    echo "Structure du répertoire de travail:" && \
-    ls -la /app/ && \
-    echo "Contenu de server/data:" && \
-    ls -la /app/server/data/ && \
-    echo "Contenu de server/data/recipes:" && \
-    ls -la /app/server/data/recipes/ && \
-    echo "Taille d'un fichier JSON exemple (s'il existe):" && \
-    ls -lh /app/server/data/recipes/*.recipe.json | head -n 1 && \
+    ls -la /app/server/data/recipes/ || echo "Le répertoire server/data/recipes n'existe pas" && \
+    echo "Taille des fichiers JSON (s'ils existent):" && \
+    find /app/server/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
     echo "==== Fin de la vérification ===="
 
 # Ensure data directory exists and has correct permissions
