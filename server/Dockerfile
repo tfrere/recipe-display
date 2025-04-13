@@ -21,22 +21,22 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
-# Copy dependency files
-COPY server/pyproject.toml server/poetry.lock ./
+# Copy dependency files - en assumant que la commande est exécutée depuis le répertoire server/
+COPY pyproject.toml poetry.lock ./
 
-# Copy project files
+# Copy all server files - assumant le build depuis le répertoire server/
 COPY . .
 
 # Débogage: Vérifier les fichiers après la copie
 RUN echo "===== Vérification des fichiers après COPY =====" && \
     echo "Structure du répertoire de travail:" && \
     ls -la /app/ && \
-    echo "Contenu de server/data (s'il existe):" && \
-    ls -la /app/server/data/ || echo "Le répertoire server/data n'existe pas" && \
-    echo "Contenu de server/data/recipes (s'il existe):" && \
-    ls -la /app/server/data/recipes/ || echo "Le répertoire server/data/recipes n'existe pas" && \
+    echo "Contenu de data (s'il existe):" && \
+    ls -la /app/data/ || echo "Le répertoire data n'existe pas" && \
+    echo "Contenu de data/recipes (s'il existe):" && \
+    ls -la /app/data/recipes/ || echo "Le répertoire data/recipes n'existe pas" && \
     echo "Taille des fichiers JSON (s'ils existent):" && \
-    find /app/server/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
+    find /app/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
     echo "==== Fin de la vérification ===="
 
 # Ensure data directory exists and has correct permissions
