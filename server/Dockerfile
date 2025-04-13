@@ -21,54 +21,42 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
+# Copy Git LFS configuration first
+COPY .gitattributes .gitattributes
+
+# Copy the entire repository to have access to Git history
+COPY .git .git
+
+# Perform Git LFS pull to retrieve LFS objects
+RUN git lfs pull
+
+# Débogage: Vérifier où sont les fichiers LFS
+RUN echo "===== Vérification des fichiers LFS =====" && \
+    echo "Structure du répertoire de travail:" && \
+    ls -la /app/ && \
+    echo "Contenu de server/data (s'il existe):" && \
+    ls -la /app/server/data/ || echo "Le répertoire n'existe pas encore" && \
+    echo "Contenu de server/data/recipes (s'il existe):" && \
+    ls -la /app/server/data/recipes/ || echo "Le répertoire n'existe pas encore" && \
+    echo "==== Fin de la vérification ===="
+
 # Copy dependency files
 COPY pyproject.toml poetry.lock ./
 
 # Copy project files (incluant tous les fichiers nécessaires)
 COPY . .
 
-# Create startup script to handle Git LFS files
-RUN echo '#!/bin/bash\n\
-set -e\n\
-\n\
-# Check if recipe files are Git LFS pointers\n\
-if grep -q "git-lfs.github.com" /app/data/recipes/*.recipe.json 2>/dev/null; then\n\
-    echo "Detected Git LFS pointers, trying to convert them to actual content..."\n\
-    # Create repo structure to use git lfs\n\
-    mkdir -p /tmp/recipes\n\
-    cd /tmp/recipes\n\
-    git init\n\
-    git lfs install\n\
-    \n\
-    # Copy LFS pointers to a temp location\n\
-    cp /app/data/recipes/*.recipe.json .\n\
-    \n\
-    # Create git attributes file\n\
-    echo "*.recipe.json filter=lfs diff=lfs merge=lfs -text" > .gitattributes\n\
-    \n\
-    # Add files to git\n\
-    git add .\n\
-    git commit -m "Add recipe files"\n\
-    \n\
-    # Try to extract LFS files\n\
-    git lfs pull || true\n\
-    \n\
-    # Copy back the real files if extraction succeeded\n\
-    if ! grep -q "git-lfs.github.com" *.recipe.json 2>/dev/null; then\n\
-        echo "Successfully converted LFS pointers to actual content"\n\
-        cp *.recipe.json /app/data/recipes/\n\
-    else\n\
-        echo "WARNING: Could not convert LFS pointers to actual content"\n\
-    fi\n\
-    \n\
-    # Cleanup\n\
-    cd /app\n\
-    rm -rf /tmp/recipes\n\
-fi\n\
-\n\
-# Start the application\n\
-exec poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}\n\
-' > /app/start.sh && chmod +x /app/start.sh
+# Débogage: Vérifier à nouveau après la copie complète
+RUN echo "===== Vérification des fichiers après COPY . . =====" && \
+    echo "Structure du répertoire de travail:" && \
+    ls -la /app/ && \
+    echo "Contenu de server/data:" && \
+    ls -la /app/server/data/ && \
+    echo "Contenu de server/data/recipes:" && \
+    ls -la /app/server/data/recipes/ && \
+    echo "Taille d'un fichier JSON exemple (s'il existe):" && \
+    ls -lh /app/server/data/recipes/*.recipe.json | head -n 1 && \
+    echo "==== Fin de la vérification ===="
 
 # Ensure data directory exists and has correct permissions
 RUN mkdir -p /app/data && chmod -R 755 /app/data
@@ -80,5 +68,5 @@ RUN poetry config virtualenvs.create false \
 # Expose port
 EXPOSE $PORT
 
-# Run the application using the startup script
-CMD ["/app/start.sh"]
+# Run the application
+CMD poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}

@@ -59,6 +59,10 @@ go.work
 *.swp
 *.swo
 
+# Ne pas ignorer les dossiers shared
+!client/shared/
+!server/shared/
+
 flavor-graph/
 foodb/**/*
 foodb

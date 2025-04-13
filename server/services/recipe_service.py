@@ -29,19 +29,10 @@ class RecipeService:
         self.recipes_path = self.base_path / "recipes"  # /server/data/recipes
         self.images_path = self.recipes_path / "images"  # /server/data/recipes/images
         self.auth_presets_path = self.base_path / "auth_presets.json"
-        
-        # Ajout de logs pour diagnostiquer les problèmes de chemin
-        print(f"[DEBUG] RecipeService initialized with:")
-        print(f"[DEBUG] - base_path: {self.base_path} (absolute: {self.base_path.absolute()})")
-        print(f"[DEBUG] - recipes_path: {self.recipes_path} (absolute: {self.recipes_path.absolute()})")
-        print(f"[DEBUG] - images_path: {self.images_path} (absolute: {self.images_path.absolute()})")
-        print(f"[DEBUG] - auth_presets_path: {self.auth_presets_path} (absolute: {self.auth_presets_path.absolute()})")
+        self._ensure_directories()
         
         # Initialize progress service
         self.progress_service = _progress_service
-        
-        # Ensure all required directories exist
-        self._ensure_directories()
         
         # Task management
         self.generation_tasks: Dict[str, asyncio.Task] = {}
@@ -155,85 +146,18 @@ class RecipeService:
                 detail=f"Error reading recipe: {str(e)}"
             )
 
-    def _is_git_lfs_pointer(self, content: str) -> bool:
-        """Check if content is a Git LFS pointer."""
-        return content.strip().startswith("version https://git-lfs.github.com/spec/")
-
-    def _convert_lfs_pointer_to_json(self, file_path: str, lfs_content: str) -> bool:
-        """
-        Convert a Git LFS pointer to a simple valid JSON file.
-        Returns True if conversion was successful.
-        """
-        try:
-            print(f"[INFO] Converting LFS pointer to JSON: {file_path}")
-            # Extract filename for the title
-            filename = os.path.basename(file_path).replace(".recipe.json", "")
-            title = filename.replace("-", " ").title()
-            
-            # Create a simple valid recipe JSON
-            simple_recipe = {
-                "metadata": {
-                    "title": title,
-                    "slug": filename,
-                    "description": "This recipe was automatically created from a Git LFS pointer.",
-                    "author": "System",
-                    "sourceUrl": "",
-                    "sourceImageUrl": "",
-                    "diets": [],
-                    "seasons": [],
-                    "recipeType": "other",
-                    "totalTime": 0,
-                    "totalCookingTime": 0,
-                    "quick": False,
-                    "difficulty": "medium"
-                },
-                "ingredients": [
-                    {"name": "Placeholder ingredient", "quantity": 1, "unit": "unit"}
-                ],
-                "subRecipes": {
-                    "main": {
-                        "name": "Main",
-                        "steps": [
-                            {"text": "This is a placeholder recipe created from a Git LFS pointer."}
-                        ]
-                    }
-                }
-            }
-            
-            # Save the simple recipe
-            with open(file_path, "w") as f:
-                json.dump(simple_recipe, f, indent=2)
-            
-            print(f"[INFO] Successfully converted LFS pointer to JSON: {file_path}")
-            return True
-        except Exception as e:
-            print(f"[ERROR] Failed to convert LFS pointer to JSON: {file_path} - {str(e)}")
-            return False
-
     async def list_recipes(self, include_private: bool = False) -> List[Dict[str, Any]]:
         """Get list of all recipes with their metadata."""
         try:
             # Get list of all recipe files
-            print(f"[DEBUG] Looking for recipe files in: {self.recipes_path}")
             recipe_files = glob.glob(os.path.join(self.recipes_path, "*.recipe.json"))
-            print(f"[DEBUG] Found {len(recipe_files)} recipe files")
             recipes = []
-            errors = []
 
             # Get list of private authors
             authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
-            print(f"[DEBUG] Looking for authors file at: {authors_file}")
-            try:
-                with open(authors_file, "r") as f:
-                    authors_data = json.load(f)
-                    private_authors = authors_data.get("private", [])
-                    print(f"[DEBUG] Loaded {len(private_authors)} private authors")
-            except FileNotFoundError:
-                print(f"[WARNING] Authors file not found at: {authors_file}")
-                private_authors = []
-            except json.JSONDecodeError:
-                print(f"[WARNING] Authors file could not be parsed: {authors_file}")
-                private_authors = []
+            with open(authors_file, "r") as f:
+                authors_data = json.load(f)
+                private_authors = authors_data.get("private", [])
 
             # Read each recipe file
             for recipe_file in recipe_files:
@@ -241,94 +165,43 @@ class RecipeService:
                 if os.path.basename(recipe_file) == "auth_presets.json":
                     continue
 
-                print(f"[DEBUG] Reading recipe file: {recipe_file}")
-                try:
-                    with open(recipe_file, "r") as f:
-                        file_content = f.read()
-                        if not file_content.strip():
-                            print(f"[ERROR] Recipe file is empty: {recipe_file}")
-                            errors.append(f"Empty file: {recipe_file}")
-                            continue
-                        
-                        # Check if the file is a Git LFS pointer
-                        if self._is_git_lfs_pointer(file_content):
-                            print(f"[ERROR] File is a Git LFS pointer, not a real JSON file: {recipe_file}")
-                            print(f"[ERROR] Content: {file_content.strip()}")
-                            
-                            # Try to convert the LFS pointer to a valid JSON file
-                            if self._convert_lfs_pointer_to_json(recipe_file, file_content):
-                                # Re-read the file after conversion
-                                with open(recipe_file, "r") as f2:
-                                    file_content = f2.read()
-                                    recipe_data = json.loads(file_content)
-                            else:
-                                errors.append(f"Git LFS pointer: {recipe_file}")
-                                continue
-                        else:
-                            print(f"[DEBUG] File content starts with: {file_content[:50]}...")
-                            recipe_data = json.loads(file_content)
-                        
-                        metadata = recipe_data.get("metadata", {})
-                        
-                        # Check if recipe is private (author or sourceUrl contains any private author name)
-                        author = metadata.get("author", "").lower()
-                        source_url = metadata.get("sourceUrl", "")
-                        source_url_lower = source_url.lower() if source_url else ""
-                        is_private = any(
-                            private_author.lower() in author or 
-                            private_author.lower() in source_url_lower 
-                            for private_author in private_authors
-                        )
-                        
-                        # Include recipe if it's public or if private access is granted
-                        if not is_private or include_private:
-                            recipes.append({
-                                "title": metadata.get("title", "Untitled"),
-                                "sourceImageUrl": metadata.get("sourceImageUrl", ""),
-                                "description": metadata.get("description", ""),
-                                "bookTitle": metadata.get("bookTitle", ""),
-                                "author": metadata.get("author", ""),
-                                "diets": metadata.get("diets", []),
-                                "seasons": metadata.get("seasons", []),
-                                "recipeType": metadata.get("recipeType", ""),
-                                "ingredients": [ing.get("name", "") for ing in recipe_data.get("ingredients", [])],
-                                "totalTime": metadata.get("totalTime", 0.0),
-                                "totalCookingTime": metadata.get("totalCookingTime", 0.0),
-                                "quick": metadata.get("quick", False),
-                                "difficulty": metadata.get("difficulty", ""),
-                                "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
-                            })
-                except json.JSONDecodeError as je:
-                    print(f"[ERROR] JSON parsing error in file {recipe_file}: {str(je)}")
-                    print(f"[ERROR] File size: {os.path.getsize(recipe_file)} bytes")
-                    with open(recipe_file, "r") as f:
-                        content_preview = f.read(100)
-                        print(f"[ERROR] File content preview: {repr(content_preview)}")
-                    errors.append(f"JSON error in {recipe_file}: {str(je)}")
-                    # Continue with other files
-                    continue
-                except Exception as e:
-                    print(f"[ERROR] Error reading recipe file {recipe_file}: {str(e)}")
-                    errors.append(f"Error with {recipe_file}: {str(e)}")
-                    # Continue with other files
-                    continue
+                with open(recipe_file, "r") as f:
+                    recipe_data = json.load(f)
+                    metadata = recipe_data.get("metadata", {})
+                    
+                    # Check if recipe is private (author or sourceUrl contains any private author name)
+                    author = metadata.get("author", "").lower()
+                    source_url = metadata.get("sourceUrl", "")
+                    source_url_lower = source_url.lower() if source_url else ""
+                    is_private = any(
+                        private_author.lower() in author or 
+                        private_author.lower() in source_url_lower 
+                        for private_author in private_authors
+                    )
+                    
+                    # Include recipe if it's public or if private access is granted
+                    if not is_private or include_private:
+                        recipes.append({
+                            "title": metadata.get("title", "Untitled"),
+                            "sourceImageUrl": metadata.get("sourceImageUrl", ""),
+                            "description": metadata.get("description", ""),
+                            "bookTitle": metadata.get("bookTitle", ""),
+                            "author": metadata.get("author", ""),
+                            "diets": metadata.get("diets", []),
+                            "seasons": metadata.get("seasons", []),
+                            "recipeType": metadata.get("recipeType", ""),
+                            "ingredients": [ing.get("name", "") for ing in recipe_data.get("ingredients", [])],
+                            "totalTime": metadata.get("totalTime", 0.0),
+                            "totalCookingTime": metadata.get("totalCookingTime", 0.0),
+                            "quick": metadata.get("quick", False),
+                            "difficulty": metadata.get("difficulty", ""),
+                            "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
+                        })
 
-            # Log a summary of errors if any
-            if errors:
-                print(f"[WARNING] Encountered {len(errors)} errors while reading recipes:")
-                for error in errors[:10]:  # Limit to first 10 errors
-                    print(f"[WARNING] - {error}")
-                if len(errors) > 10:
-                    print(f"[WARNING] ... and {len(errors) - 10} more errors")
-
-            print(f"[INFO] Successfully loaded {len(recipes)} recipes")
             return recipes
 
         except Exception as e:
             print(f"Error listing recipes: {str(e)}")
-            # For a more complete error report, include traceback
-            import traceback
-            print(f"Error traceback: {traceback.format_exc()}")
             raise HTTPException(
                 status_code=500, detail=f"Error listing recipes: {str(e)}"
             )
