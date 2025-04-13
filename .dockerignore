@@ -1,0 +1,22 @@
+# Fichiers Node.js
+**/node_modules
+**/dist
+**/.env*
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Fichiers Go
+**/tmp
+**/vendor
+
+# Fichiers système
+.git
+.DS_Store
+**/.DS_Store
+
+# Ne pas ignorer les fichiers importants
+!**/data/recipes/
+!**/data/auth_presets.json
+!shared/
+server/

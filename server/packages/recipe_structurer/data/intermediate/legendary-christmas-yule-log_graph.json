@@ -1,0 +1,994 @@
+{
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Faire cuire le chocolat au bain-marie",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "chocolat noir",
+          "amount": 120.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "chocolat fondu",
+        "type": "intermediate",
+        "description": "Chocolate melted and smooth from bain-marie"
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Laisser réduire jusqu’à ce qu’il forme une crème épaisse",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "chocolat fondu",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "chocolat réduit",
+        "type": "intermediate",
+        "description": "Chocolate reduced to a thick cream consistency"
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Faire cuire le sucre dans très peu d’eau jusqu’à ce que le sirop fasse le fil",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "sucre",
+          "amount": 80.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "sirop de sucre",
+        "type": "intermediate",
+        "description": "Sugar syrup cooked to thread stage"
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Mettre le jaune dans un saladier placé dans une casserole très chaude",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "jaunes d’œuf",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "jaunes chauffés",
+        "type": "intermediate",
+        "description": "Egg yolks warmed in a hot bowl"
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Ajouter le sirop doucement puis le chocolat",
+      "time": "3min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "sirop de sucre",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "chocolat réduit",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "jaunes chauffés",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "mélange chocolat-sirop-jaunes",
+        "type": "intermediate",
+        "description": "Combined mixture of chocolate, syrup, and warmed yolks"
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Laisser un peu cuire au bain-marie en remuant",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "mélange chocolat-sirop-jaunes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "mélange cuit",
+        "type": "intermediate",
+        "description": "Chocolate mixture cooked and slightly thickened"
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Ajouter le beurre coupé en petits morceaux",
+      "time": "2min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "beurre",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "mélange cuit",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "mélange avec beurre",
+        "type": "intermediate",
+        "description": "Butter pieces added to warm chocolate mixture"
+      }
+    },
+    {
+      "id": "step8",
+      "action": "Laisser fondre en remuant toujours",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "mélange avec beurre",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "crème au beurre fondue",
+        "type": "intermediate",
+        "description": "Butter fully melted into chocolate mixture"
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Travailler à froid jusqu’à ce que la crème soit devenue épaisse",
+      "time": "15min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Crème italienne au chocolat",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "crème au beurre fondue",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "crème italienne au chocolat",
+        "type": "subrecipe",
+        "description": "Thickened chocolate Italian cream ready for use"
+      }
+    },
+    {
+      "id": "step10",
+      "action": "Séparer les blancs des jaunes d’oeufs",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "oeufs",
+          "amount": 5.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state10",
+        "name": "blancs et jaunes séparés",
+        "type": "intermediate",
+        "description": "Egg whites and yolks separated for génoise"
+      }
+    },
+    {
+      "id": "step11",
+      "action": "Battre le sucre et les jaunes",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "sucre en poudre",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state10",
+          "name": "blancs et jaunes séparés",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state11",
+        "name": "jaunes et sucre battus",
+        "type": "intermediate",
+        "description": "Egg yolks and sugar beaten until pale and thick"
+      }
+    },
+    {
+      "id": "step12",
+      "action": "Tamiser la farine et la maïzena ensemble",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "farine",
+          "amount": 75.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "maïzena",
+          "amount": 25.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state12",
+        "name": "farine tamisée",
+        "type": "intermediate",
+        "description": "Flour and cornstarch sifted together"
+      }
+    },
+    {
+      "id": "step13",
+      "action": "Incorporer le mélange au sucre / jaune",
+      "time": "3min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state11",
+          "name": "jaunes et sucre battus",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state12",
+          "name": "farine tamisée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state13",
+        "name": "pâte de base",
+        "type": "intermediate",
+        "description": "Base batter with flour incorporated"
+      }
+    },
+    {
+      "id": "step14",
+      "action": "Ajouter un peu de purée de vanille et une pincée de sel",
+      "time": "1min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state13",
+          "name": "pâte de base",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "purée de vanille",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "sel",
+          "amount": 1.0,
+          "unit": "pinch"
+        }
+      ],
+      "output_state": {
+        "id": "state14",
+        "name": "pâte aromatisée",
+        "type": "intermediate",
+        "description": "Batter flavored with vanilla and salt"
+      }
+    },
+    {
+      "id": "step15",
+      "action": "Battre les blancs en neige très fermement",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state10",
+          "name": "blancs et jaunes séparés",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state15",
+        "name": "blancs en neige",
+        "type": "intermediate",
+        "description": "Egg whites beaten to stiff peaks"
+      }
+    },
+    {
+      "id": "step16",
+      "action": "Incorporer délicatement les blancs à la pâte",
+      "time": "3min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state14",
+          "name": "pâte aromatisée",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state15",
+          "name": "blancs en neige",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state16",
+        "name": "pâte finale",
+        "type": "intermediate",
+        "description": "Lightened batter with folded-in egg whites"
+      }
+    },
+    {
+      "id": "step17",
+      "action": "Mettre du papier sulfurisé sur une plaque dans le four",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [],
+      "output_state": {
+        "id": "state17",
+        "name": "plaque préparée",
+        "type": "intermediate",
+        "description": "Baking sheet lined with parchment paper"
+      }
+    },
+    {
+      "id": "step18",
+      "action": "Étaler la pâte de manière régulière",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state16",
+          "name": "pâte finale",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state17",
+          "name": "plaque préparée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state18",
+        "name": "pâte étalée",
+        "type": "intermediate",
+        "description": "Batter evenly spread on prepared baking sheet"
+      }
+    },
+    {
+      "id": "step19",
+      "action": "Préchauffer le four 15min thermostat 7 (210°C)",
+      "time": "15min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "subRecipe": "Génoise",
+      "inputs": [],
+      "output_state": {
+        "id": "state19",
+        "name": "four préchauffé",
+        "type": "intermediate",
+        "description": "Oven preheated to 210°C (410°F)"
+      }
+    },
+    {
+      "id": "step20",
+      "action": "Faire cuire pendant 7min",
+      "time": "7min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state18",
+          "name": "pâte étalée",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state19",
+          "name": "four préchauffé",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state20",
+        "name": "génoise cuite",
+        "type": "intermediate",
+        "description": "Baked sponge cake ready for rolling"
+      }
+    },
+    {
+      "id": "step21",
+      "action": "Sortir du four et mettre sur un torchon humide",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state20",
+          "name": "génoise cuite",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state21",
+        "name": "génoise sur torchon",
+        "type": "intermediate",
+        "description": "Hot sponge cake transferred to damp towel"
+      }
+    },
+    {
+      "id": "step22",
+      "action": "Enrouler torchon et génoise sur elle-même",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state21",
+          "name": "génoise sur torchon",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state22",
+        "name": "génoise roulée",
+        "type": "intermediate",
+        "description": "Sponge cake rolled up in damp towel to cool"
+      }
+    },
+    {
+      "id": "step23",
+      "action": "Laisser refroidir",
+      "time": "30min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "subRecipe": "Génoise",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state22",
+          "name": "génoise roulée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state23",
+        "name": "génoise refroidie",
+        "type": "subrecipe",
+        "description": "Cooled rolled sponge cake ready for filling"
+      }
+    },
+    {
+      "id": "step24",
+      "action": "Faire griller les noisettes puis les hacher finement",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "noisettes",
+          "amount": 2.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state24",
+        "name": "noisettes grillées hachées",
+        "type": "intermediate",
+        "description": "Toasted hazelnuts finely chopped"
+      }
+    },
+    {
+      "id": "step25",
+      "action": "Faire bouillir le lait en mettant les noisettes dedans",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "lait",
+          "amount": 40.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state24",
+          "name": "noisettes grillées hachées",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state25",
+        "name": "lait aux noisettes",
+        "type": "intermediate",
+        "description": "Milk infused with toasted hazelnut flavor"
+      }
+    },
+    {
+      "id": "step26",
+      "action": "Filtrer les noisettes pour ne garder que le liquide",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state25",
+          "name": "lait aux noisettes",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state26",
+        "name": "lait filtré",
+        "type": "intermediate",
+        "description": "Hazelnut-infused milk strained of solids"
+      }
+    },
+    {
+      "id": "step27",
+      "action": "Délayer la farine avec un peu d’eau froide et y ajouter l’oeuf bien battu",
+      "time": "3min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "farine",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "oeufs",
+          "amount": 2.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state27",
+        "name": "mélange farine-oeuf",
+        "type": "intermediate",
+        "description": "Flour and egg mixture for pastry cream base"
+      }
+    },
+    {
+      "id": "step28",
+      "action": "Ajouter ensuite le sucre",
+      "time": "1min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state27",
+          "name": "mélange farine-oeuf",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "sucre",
+          "amount": 80.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state28",
+        "name": "base de crème sucrée",
+        "type": "intermediate",
+        "description": "Sweetened flour and egg mixture for pastry cream"
+      }
+    },
+    {
+      "id": "step29",
+      "action": "Mélanger avec le lait et faire bouillir en remuant sur le feu",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state28",
+          "name": "base de crème sucrée",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state26",
+          "name": "lait filtré",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state29",
+        "name": "crème pâtissière cuite",
+        "type": "intermediate",
+        "description": "Cooked hazelnut pastry cream at proper consistency"
+      }
+    },
+    {
+      "id": "step30",
+      "action": "Laisser refroidir avant de fourrer la génoise avec",
+      "time": "30min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "subRecipe": "Crème pâtissière aux noisettes",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state29",
+          "name": "crème pâtissière cuite",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state30",
+        "name": "crème pâtissière refroidie",
+        "type": "subrecipe",
+        "description": "Cooled hazelnut pastry cream ready for filling"
+      }
+    },
+    {
+      "id": "step31",
+      "action": "Dérouler la génoise avec le torchon humide",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state23",
+          "name": "génoise refroidie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state31",
+        "name": "génoise déroulée",
+        "type": "intermediate",
+        "description": "Unrolled sponge cake ready for filling"
+      }
+    },
+    {
+      "id": "step32",
+      "action": "Appliquer une couche de crème pâtissière sur l’entièreté de la génoise déroulée",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state31",
+          "name": "génoise déroulée",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state30",
+          "name": "crème pâtissière refroidie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state32",
+        "name": "génoise garnie",
+        "type": "intermediate",
+        "description": "Sponge cake spread with hazelnut pastry cream"
+      }
+    },
+    {
+      "id": "step33",
+      "action": "Re-enrouler la génoise avec la crème",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state32",
+          "name": "génoise garnie",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state33",
+        "name": "bûche roulée",
+        "type": "intermediate",
+        "description": "Sponge cake rolled with cream filling"
+      }
+    },
+    {
+      "id": "step34",
+      "action": "Couper les bords en diagonale comme suit /=====/ et garder les bouts enlevés intacts",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state33",
+          "name": "bûche roulée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state34",
+        "name": "bûche taillée",
+        "type": "intermediate",
+        "description": "Log-shaped cake with trimmed ends"
+      }
+    },
+    {
+      "id": "step35",
+      "action": "Recouvrir entièrement l’ensemble de crème italienne au chocolat de manière uniforme",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state34",
+          "name": "bûche taillée",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state9",
+          "name": "crème italienne au chocolat",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state35",
+        "name": "bûche glacée",
+        "type": "intermediate",
+        "description": "Log cake fully coated with chocolate Italian cream"
+      }
+    },
+    {
+      "id": "step36",
+      "action": "Utiliser une fourchette pour dessiner les stries que l’on peut apercevoir sur un tronc d’arbre",
+      "time": "3min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state35",
+          "name": "bûche glacée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state36",
+        "name": "bûche texturée",
+        "type": "intermediate",
+        "description": "Log cake with bark-like texture created"
+      }
+    },
+    {
+      "id": "step37",
+      "action": "Pour les côtés de la bûche, des stries concentriques sont requis",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state36",
+          "name": "bûche texturée",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state37",
+        "name": "bûche finie",
+        "type": "intermediate",
+        "description": "Log cake with complete bark texture on all sides"
+      }
+    },
+    {
+      "id": "step38",
+      "action": "Agrémenter de quelques décorations de Noël et saupoudrer de sucre glace",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "Dressage",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state37",
+          "name": "bûche finie",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "sucre en poudre",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state38",
+        "name": "bûche décorée",
+        "type": "final",
+        "description": "Fully decorated Yule log with Christmas ornaments and powdered sugar snow effect"
+      }
+    }
+  ],
+  "final_state": {
+    "id": "state38",
+    "name": "bûche décorée",
+    "type": "final",
+    "description": "Traditional French Christmas Yule log featuring a hazelnut pastry cream-filled sponge cake rolled to resemble a log, decorated with chocolate Italian cream textured to look like bark, adorned with Christmas decorations and powdered sugar for a snow effect."
+  }
+}

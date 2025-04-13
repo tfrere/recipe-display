@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "title": "Roasted Butternut Squash with Lentils and Dolcelatte",
+    "description": "A warm or room-temperature dish featuring roasted butternut squash, lentils, and dolcelatte cheese, seasoned with herbs and lemon.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "sourceImageUrl": "",
+    "notes": [
+      "Serve warm for slightly melted cheese or at room temperature if made in advance.",
+      "Can be prepared up to 6 hours ahead, adding dolcelatte just before serving.",
+      "Use ready-cooked lentils to skip the simmering step."
+    ],
+    "nationality": "",
+    "author": "Yotam Ottolenghi",
+    "bookTitle": ""
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "butternut squash",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "red onions",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "olive oil",
+      "category": "condiment"
+    },
+    {
+      "id": "ing4",
+      "name": "sage leaves",
+      "category": "spice"
+    },
+    {
+      "id": "ing5",
+      "name": "Puy lentils",
+      "category": "pantry"
+    },
+    {
+      "id": "ing6",
+      "name": "lemon",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "garlic clove",
+      "category": "produce"
+    },
+    {
+      "id": "ing8",
+      "name": "parsley leaves",
+      "category": "spice"
+    },
+    {
+      "id": "ing9",
+      "name": "mint leaves",
+      "category": "spice"
+    },
+    {
+      "id": "ing10",
+      "name": "tarragon leaves",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "dolcelatte",
+      "category": "dairy"
+    },
+    {
+      "id": "ing12",
+      "name": "salt",
+      "category": "spice"
+    },
+    {
+      "id": "ing13",
+      "name": "black pepper",
+      "category": "spice"
+    }
+  ],
+  "tools": [
+    "Large parchment-lined baking tray",
+    "Medium saucepan"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Preheat the oven to 220\u00b0C fan.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [],
+      "output_state": {
+        "id": "state1",
+        "name": "Preheated oven",
+        "type": "intermediate",
+        "description": "Oven is preheated to 220\u00b0C fan, ready for roasting."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Place the squash and onions in a large bowl with 2 tbsp of oil, the sage leaves, \u00be tsp of salt, and plenty of pepper. Mix well, then spread out on a large parchment-lined baking tray.",
+      "time": "10min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "butternut squash",
+          "amount": 950.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "red onions",
+          "amount": 320.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "olive oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "sage leaves",
+          "amount": 10.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "salt",
+          "amount": 0.75,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "black pepper",
+          "amount": 1.0,
+          "unit": "pinch"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Seasoned squash and onions",
+        "type": "intermediate",
+        "description": "Squash and onions are seasoned with oil, sage, salt, and pepper, ready for roasting."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Roast the squash and onions for 25min, until cooked and golden-brown. Remove from the oven and set aside to cool for 10min.",
+      "time": "35min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "Seasoned squash and onions",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Roasted squash and onions",
+        "type": "intermediate",
+        "description": "Squash and onions are roasted until golden-brown and cooked, then cooled slightly."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Fill a medium saucepan half-full of water and place on high heat. Once boiling, add the lentils, reduce the heat to medium, and simmer for 20min, until cooked. Drain, set aside to cool slightly.",
+      "time": "25min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "Puy lentils",
+          "amount": 100.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Cooked lentils",
+        "type": "intermediate",
+        "description": "Lentils are cooked, drained, and slightly cooled."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Stir the cooked lentils with the lemon zest, lemon juice, garlic, herbs, remaining 1 tbsp of oil, and \u00bc tsp of salt.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "Cooked lentils",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "lemon",
+          "amount": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "garlic clove",
+          "amount": 1.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "parsley leaves",
+          "amount": 5.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "mint leaves",
+          "amount": 5.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "tarragon leaves",
+          "amount": 10.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "olive oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "salt",
+          "amount": 0.25,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Seasoned lentils",
+        "type": "intermediate",
+        "description": "Cooked lentils are mixed with lemon zest, lemon juice, garlic, herbs, oil, and salt."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Add the roasted squash and onion to the lentils and stir gently.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "Roasted squash and onions",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "Seasoned lentils",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Combined squash, onions, and lentils",
+        "type": "intermediate",
+        "description": "Roasted squash and onions are gently mixed with seasoned lentils."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Transfer to a serving bowl, dot with dolcelatte, drizzle with oil, and serve.",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Combined squash, onions, and lentils",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "dolcelatte",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "olive oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "final_state",
+        "name": "Roasted Butternut Squash with Lentils and Dolcelatte",
+        "type": "final",
+        "description": "A warm or room-temperature dish featuring roasted butternut squash, lentils, and dolcelatte cheese, seasoned with herbs and lemon. The dish is ready to serve, with the cheese slightly melted if served warm."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Roasted Butternut Squash with Lentils and Dolcelatte",
+    "type": "final",
+    "description": "A warm or room-temperature dish featuring roasted butternut squash, lentils, and dolcelatte cheese, seasoned with herbs and lemon. The dish is ready to serve, with the cheese slightly melted if served warm."
+  }
+}

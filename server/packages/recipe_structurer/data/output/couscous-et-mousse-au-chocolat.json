@@ -1,0 +1,721 @@
+{
+  "metadata": {
+    "title": "Couscous with Chocolate Mousse (Vegan)",
+    "description": "A French-Moroccan inspired dish featuring a hearty vegetable stew served with couscous and a vegan chocolate mousse made from chickpea cooking liquid.",
+    "servings": 6,
+    "recipeType": "main_course",
+    "sourceImageUrl": "",
+    "notes": [
+      "Recipe serves 6 but only makes 4 chocolate mousses",
+      "Total time: 3h (Preparation: 1h, Cooking: 2h)",
+      "You can add the zucchini now, but I read somewhere that they should be added shortly before the end of cooking",
+      "I rarely do this part because I'm lazy"
+    ],
+    "nationality": "French/Moroccan",
+    "author": "",
+    "bookTitle": ""
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "tomatoes",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "onion",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "turnips",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "zucchini",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "carrots",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "celery stalk",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "canned chickpeas",
+      "category": "pantry"
+    },
+    {
+      "id": "ing8",
+      "name": "dark baking chocolate",
+      "category": "pantry"
+    },
+    {
+      "id": "ing9",
+      "name": "cumin",
+      "category": "spice"
+    },
+    {
+      "id": "ing10",
+      "name": "chili powder",
+      "category": "spice"
+    },
+    {
+      "id": "ing11",
+      "name": "ras el-hanout",
+      "category": "spice"
+    },
+    {
+      "id": "ing12",
+      "name": "tomato paste",
+      "category": "condiment"
+    },
+    {
+      "id": "ing13",
+      "name": "olive oil",
+      "category": "condiment"
+    },
+    {
+      "id": "ing14",
+      "name": "salt",
+      "category": "spice"
+    },
+    {
+      "id": "ing15",
+      "name": "water",
+      "category": "beverage"
+    },
+    {
+      "id": "ing16",
+      "name": "couscous",
+      "category": "pantry"
+    }
+  ],
+  "tools": [
+    "Couscoussier (steamer for couscous)",
+    "Bain-marie setup"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Slice the onion into rings",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "onion",
+          "amount": 1.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state1",
+        "name": "sliced onion",
+        "type": "intermediate",
+        "description": "Onion sliced into rings, ready for saut\u00e9ing"
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Roughly chop all vegetables",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "tomatoes",
+          "amount": 3.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "turnips",
+          "amount": 2.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "zucchini",
+          "amount": 2.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "carrots",
+          "amount": 4.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "celery stalk",
+          "amount": 1.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "chopped vegetables",
+        "type": "intermediate",
+        "description": "All vegetables roughly chopped, ready for cooking"
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Drain chickpeas, reserving the cooking liquid",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "canned chickpeas",
+          "amount": 300.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "drained chickpeas and reserved liquid",
+        "type": "intermediate",
+        "description": "Chickpeas drained and cooking liquid reserved for later use"
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Saut\u00e9 onions in olive oil",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state1",
+          "name": "sliced onion",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "olive oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "saut\u00e9ed onions",
+        "type": "intermediate",
+        "description": "Onions saut\u00e9ed in olive oil until translucent"
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Add carrots and turnips to the saut\u00e9ed onions",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "saut\u00e9ed onions",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "chopped vegetables",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "onions, carrots, and turnips mixture",
+        "type": "intermediate",
+        "description": "Carrots and turnips added to saut\u00e9ed onions, ready for further cooking"
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Optionally add zucchini now or wait until later",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "onions, carrots, and turnips mixture",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "chopped vegetables",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "vegetable mixture with optional zucchini",
+        "type": "intermediate",
+        "description": "Vegetable mixture with zucchini optionally added, ready for further cooking"
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Add tomatoes to the vegetable mixture",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "vegetable mixture with optional zucchini",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "chopped vegetables",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "vegetable mixture with tomatoes",
+        "type": "intermediate",
+        "description": "Tomatoes added to the vegetable mixture, ready for further cooking"
+      }
+    },
+    {
+      "id": "step8",
+      "action": "Cover the vegetable mixture with water",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "vegetable mixture with tomatoes",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing15",
+          "name": "water",
+          "amount": 500.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "vegetable mixture covered with water",
+        "type": "intermediate",
+        "description": "Vegetable mixture covered with water, ready for simmering"
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Add chickpeas and celery stalk to the vegetable mixture",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "vegetable mixture covered with water",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "drained chickpeas and reserved liquid",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state2",
+          "name": "chopped vegetables",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "vegetable stew with chickpeas and celery",
+        "type": "intermediate",
+        "description": "Chickpeas and celery stalk added to the vegetable mixture, ready for simmering"
+      }
+    },
+    {
+      "id": "step10",
+      "action": "Mix tomato paste with spices and add to the stew",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state9",
+          "name": "vegetable stew with chickpeas and celery",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "tomato paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "cumin",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "chili powder",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "ras el-hanout",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing14",
+          "name": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state10",
+        "name": "spiced vegetable stew",
+        "type": "intermediate",
+        "description": "Tomato paste and spices mixed into the vegetable stew, ready for simmering"
+      }
+    },
+    {
+      "id": "step11",
+      "action": "Simmer the vegetable stew for at least 1h",
+      "time": "1h",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state10",
+          "name": "spiced vegetable stew",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state11",
+        "name": "simmered vegetable stew",
+        "type": "intermediate",
+        "description": "Vegetable stew simmered for at least 1h, flavors well combined"
+      }
+    },
+    {
+      "id": "step12",
+      "action": "In a large bowl, mix couscous with salt and water",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing16",
+          "name": "couscous",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing14",
+          "name": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing15",
+          "name": "water",
+          "amount": 300.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state12",
+        "name": "couscous mixture",
+        "type": "intermediate",
+        "description": "Couscous mixed with salt and water, ready for swelling"
+      }
+    },
+    {
+      "id": "step13",
+      "action": "Let couscous swell until dried, then separate grains with fingers",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state12",
+          "name": "couscous mixture",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state13",
+        "name": "swelled couscous",
+        "type": "intermediate",
+        "description": "Couscous swelled and grains separated, ready for steaming"
+      }
+    },
+    {
+      "id": "step14",
+      "action": "Transfer couscous to couscoussier steamer and steam for 20min",
+      "time": "20min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state13",
+          "name": "swelled couscous",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state14",
+        "name": "steamed couscous",
+        "type": "intermediate",
+        "description": "Couscous steamed for 20min, ready for further processing"
+      }
+    },
+    {
+      "id": "step15",
+      "action": "Return couscous to bowl, add 2 tablespoons of oil and mix slowly to warm and open grains",
+      "time": "10min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state14",
+          "name": "steamed couscous",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "olive oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state15",
+        "name": "oiled couscous",
+        "type": "intermediate",
+        "description": "Couscous mixed with oil, grains warmed and opened"
+      }
+    },
+    {
+      "id": "step16",
+      "action": "Return couscous to steamer and repeat process twice, replacing oil with water",
+      "time": "20min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state15",
+          "name": "oiled couscous",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing15",
+          "name": "water",
+          "amount": 200.0,
+          "unit": "cl"
+        }
+      ],
+      "output_state": {
+        "id": "state16",
+        "name": "final steamed couscous",
+        "type": "intermediate",
+        "description": "Couscous steamed twice more with water, grains fully opened and fluffy"
+      }
+    },
+    {
+      "id": "step17",
+      "action": "After final steaming, mix vigorously (optional step)",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state16",
+          "name": "final steamed couscous",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state17",
+        "name": "fluffed couscous",
+        "type": "intermediate",
+        "description": "Couscous vigorously mixed, grains fully separated and fluffy"
+      }
+    },
+    {
+      "id": "step18",
+      "action": "Melt dark chocolate using a bain-marie",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "dark baking chocolate",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state18",
+        "name": "melted chocolate",
+        "type": "intermediate",
+        "description": "Dark chocolate melted using a bain-marie, smooth and ready for mixing"
+      }
+    },
+    {
+      "id": "step19",
+      "action": "Whip reserved chickpea cooking liquid until stiff peaks form",
+      "time": "10min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "drained chickpeas and reserved liquid",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state19",
+        "name": "whipped chickpea liquid",
+        "type": "intermediate",
+        "description": "Chickpea cooking liquid whipped to stiff peaks, ready for folding into chocolate"
+      }
+    },
+    {
+      "id": "step20",
+      "action": "Fold whipped liquid into melted chocolate",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state18",
+          "name": "melted chocolate",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state19",
+          "name": "whipped chickpea liquid",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state20",
+        "name": "chocolate mousse mixture",
+        "type": "intermediate",
+        "description": "Whipped chickpea liquid folded into melted chocolate, forming a mousse mixture"
+      }
+    },
+    {
+      "id": "step21",
+      "action": "Pour mousse mixture into serving dishes and refrigerate until set",
+      "time": "1h",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state20",
+          "name": "chocolate mousse mixture",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state21",
+        "name": "set chocolate mousse",
+        "type": "intermediate",
+        "description": "Chocolate mousse mixture poured into serving dishes and refrigerated until set"
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Couscous with Chocolate Mousse (Vegan)",
+    "type": "final",
+    "description": "A hearty vegetable stew served with fluffy couscous and a rich, vegan chocolate mousse made from chickpea cooking liquid. The stew is simmered with a blend of spices and vegetables, while the couscous is steamed to perfection. The chocolate mousse is light and airy, made by folding whipped chickpea liquid into melted dark chocolate and refrigerated until set."
+  }
+}

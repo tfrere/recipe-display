@@ -1,0 +1,82 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+__pycache__
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+dist
+dist-ssr
+*.local
+
+# Testing
+coverage
+
+# Production
+build
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode
+*.swp
+*.swo
+
+# Ne pas ignorer les dossiers shared
+!client/shared/
+!server/shared/
+
+server/data/recipes/images/small
+server/data/recipes/images/medium
+server/data/recipes/images/large
+server/data/recipes/images/thumbnail
+
+# Ignorer tout le dossier des recettes et son contenu
+server/data/recipes/*.json
+server/data/recipes/images/*
+
+flavor-graph/
+foodb/**/*
+foodb
+server/data/images/
+server/data/images/**/* */
+server/data/constants
+server/data/tmp
+server/data/errors

@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "recipe_structurer"
+version = "0.1.0"
+description = "A tool to structure raw recipe text into a standardized JSON format using LLMs"
+authors = ["Thibaud Frere"]
+readme = "README.md"
+packages = [{include = "recipe_structurer", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.0"
+pydantic-ai = "^0.0.23"
+instructor = "^0.4.0"
+python-dotenv = "^1.0.0"
+openai = "^1.0.0"
+typing-extensions = "^4.0.0"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+langchain = "^0.3.15"
+langchain-community = "^0.3.15"
+langchain-core = "^0.3.31"
+huggingface_hub = "^0.30.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+
+[tool.poetry.scripts]
+process-recipe = "scripts.process_recipe:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

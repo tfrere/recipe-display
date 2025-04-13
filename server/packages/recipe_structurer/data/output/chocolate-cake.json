@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "title": "Classic Chocolate Cake",
+    "description": "A rich and moist chocolate cake that serves 8 people.",
+    "servings": 8,
+    "recipeType": "dessert",
+    "sourceImageUrl": "https://www.recipe.com/images/classic-chocolate-cake.png",
+    "notes": [
+      "A rich and moist chocolate cake that serves 8 people."
+    ],
+    "nationality": "",
+    "author": "",
+    "bookTitle": ""
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "flour",
+      "category": "pantry"
+    },
+    {
+      "id": "ing2",
+      "name": "cocoa powder",
+      "category": "pantry"
+    },
+    {
+      "id": "ing3",
+      "name": "sugar",
+      "category": "pantry"
+    },
+    {
+      "id": "ing4",
+      "name": "eggs",
+      "category": "egg"
+    },
+    {
+      "id": "ing5",
+      "name": "milk",
+      "category": "dairy"
+    },
+    {
+      "id": "ing6",
+      "name": "butter",
+      "category": "dairy"
+    },
+    {
+      "id": "ing7",
+      "name": "baking powder",
+      "category": "pantry"
+    }
+  ],
+  "tools": [
+    "greased cake tin",
+    "wire rack"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Preheat the oven",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [],
+      "output_state": {
+        "id": "state1",
+        "name": "preheated oven",
+        "type": "intermediate",
+        "description": "Oven preheated to 180\u00b0C"
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Mix dry ingredients",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "flour",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "cocoa powder",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "sugar",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "baking powder",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "dry mix",
+        "type": "intermediate",
+        "description": "Combined dry ingredients"
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Add wet ingredients",
+      "time": "5min",
+      "stepType": "combine",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "eggs",
+          "amount": 2.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "milk",
+          "amount": 100.0,
+          "unit": "cl"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "butter",
+          "amount": 100.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "cake batter",
+        "type": "intermediate",
+        "description": "Combined cake batter"
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Pour batter into tin",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state3",
+          "name": "cake batter",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "batter in tin",
+        "type": "intermediate",
+        "description": "Batter poured into greased cake tin"
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Bake",
+      "time": "30min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state4",
+          "name": "batter in tin",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "baked cake",
+        "type": "intermediate",
+        "description": "Cake baked at 180\u00b0C for 30 minutes"
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Cool in tin",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state5",
+          "name": "baked cake",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "cooled cake in tin",
+        "type": "intermediate",
+        "description": "Cake cooled in tin for 10 minutes"
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Cool on wire rack",
+      "time": "30min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "cooled cake in tin",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "final cake",
+        "type": "final",
+        "description": "Classic chocolate cake completely cooled and ready to serve"
+      }
+    }
+  ],
+  "final_state": {
+    "id": "state7",
+    "name": "final cake",
+    "type": "final",
+    "description": "Classic chocolate cake completely cooled and ready to serve"
+  }
+}

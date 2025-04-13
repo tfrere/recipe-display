@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "recipe-importer"
+version = "0.1.0"
+description = "Recipe importer for recipe-display"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "recipe_importer" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.0.0"
+aiohttp = "^3.8.0"
+pydantic = "^2.0.0"
+recipe-scraper = {path = "../server/packages/recipe_scraper", develop = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+recipe-importer = "recipe_importer.main:main"

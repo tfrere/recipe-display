@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "title": "Easy Vegan Chickpea Meatloaf (Hearty Dinner) \u2013 Nutriciously",
+    "description": "A healthy, crowd-pleasing vegan chickpea meatloaf perfect for any occasion.",
+    "servings": 4,
+    "recipeType": "main_course",
+    "sourceImageUrl": "https://nutriciously.com/wp-content/uploads/Chickpea-Loaf-by-Nutriciously-Featured-Image.jpg",
+    "notes": [
+      "This healthy vegan chickpea meatloaf is so easy to make and really crowd-pleasing!",
+      "Great for smaller budgets and a hit with vegans and non-vegans alike!"
+    ],
+    "nationality": "American",
+    "author": "Alena Schowalter",
+    "bookTitle": "Nutriciously",
+    "sourceUrl": "https://nutriciously.com/chickpea-meatloaf/",
+    "slug": "easy-vegan-chickpea-meatloaf-hearty-dinner-nutriciously",
+    "image": "images/easy-vegan-chickpea-meatloaf-hearty-dinner-nutriciously.jpg",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 79.0,
+    "totalCookingTime": 34.0
+  },
+  "ingredients": [
+    {
+      "id": "ing1",
+      "name": "white onion",
+      "category": "produce"
+    },
+    {
+      "id": "ing2",
+      "name": "garlic",
+      "category": "produce"
+    },
+    {
+      "id": "ing3",
+      "name": "button mushrooms",
+      "category": "produce"
+    },
+    {
+      "id": "ing4",
+      "name": "carrots",
+      "category": "produce"
+    },
+    {
+      "id": "ing5",
+      "name": "celery",
+      "category": "produce"
+    },
+    {
+      "id": "ing6",
+      "name": "chickpeas",
+      "category": "produce"
+    },
+    {
+      "id": "ing7",
+      "name": "salt",
+      "category": "pantry"
+    },
+    {
+      "id": "ing8",
+      "name": "pepper",
+      "category": "spice"
+    },
+    {
+      "id": "ing9",
+      "name": "thyme",
+      "category": "spice"
+    },
+    {
+      "id": "ing10",
+      "name": "nutritional yeast",
+      "category": "pantry"
+    },
+    {
+      "id": "ing11",
+      "name": "breadcrumbs",
+      "category": "pantry"
+    },
+    {
+      "id": "ing12",
+      "name": "flax seeds",
+      "category": "pantry"
+    },
+    {
+      "id": "ing13",
+      "name": "soy sauce",
+      "category": "condiment"
+    },
+    {
+      "id": "ing14",
+      "name": "tomato paste",
+      "category": "condiment"
+    },
+    {
+      "id": "ing15",
+      "name": "Dijon mustard",
+      "category": "condiment"
+    },
+    {
+      "id": "ing16",
+      "name": "smoked paprika",
+      "category": "spice"
+    },
+    {
+      "id": "ing17",
+      "name": "BBQ sauce",
+      "category": "condiment"
+    },
+    {
+      "id": "ing18",
+      "name": "maple syrup",
+      "category": "condiment"
+    },
+    {
+      "id": "ing19",
+      "name": "apple cider vinegar",
+      "category": "condiment"
+    }
+  ],
+  "tools": [
+    "food processor",
+    "9x5\u201d loaf pan",
+    "large non-stick skillet"
+  ],
+  "steps": [
+    {
+      "id": "step1",
+      "action": "Preheat the oven to 180\u00b0C (350\u00b0F) and line a 9x5\" loaf pan with parchment paper.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [],
+      "output_state": {
+        "id": "state1",
+        "name": "Preheated oven and prepared loaf pan",
+        "type": "intermediate",
+        "description": "Oven preheated to 180\u00b0C (350\u00b0F) and loaf pan lined with parchment paper."
+      }
+    },
+    {
+      "id": "step2",
+      "action": "Saut\u00e9 the diced onion in a splash of water over medium heat until translucent.",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing1",
+          "name": "white onion",
+          "amount": 1.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state2",
+        "name": "Saut\u00e9ed onion",
+        "type": "intermediate",
+        "description": "Onion saut\u00e9ed until translucent."
+      }
+    },
+    {
+      "id": "step3",
+      "action": "Add the garlic and cook for 1 more minute.",
+      "time": "1min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing2",
+          "name": "garlic",
+          "amount": 4.0,
+          "unit": "unit"
+        }
+      ],
+      "output_state": {
+        "id": "state3",
+        "name": "Cooked garlic",
+        "type": "intermediate",
+        "description": "Garlic cooked for 1 minute."
+      }
+    },
+    {
+      "id": "step4",
+      "action": "Add the mushrooms and cook until golden.",
+      "time": "5min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing3",
+          "name": "button mushrooms",
+          "amount": 100.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state4",
+        "name": "Cooked mushrooms",
+        "type": "intermediate",
+        "description": "Mushrooms cooked until golden."
+      }
+    },
+    {
+      "id": "step5",
+      "action": "Add the remaining vegetables and chickpeas, and cook for 5-6 minutes.",
+      "time": "6min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing4",
+          "name": "carrots",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing5",
+          "name": "celery",
+          "amount": 2.0,
+          "unit": "unit"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing6",
+          "name": "chickpeas",
+          "amount": 320.0,
+          "unit": "g"
+        }
+      ],
+      "output_state": {
+        "id": "state5",
+        "name": "Cooked vegetables and chickpeas",
+        "type": "intermediate",
+        "description": "Vegetables and chickpeas cooked for 5-6 minutes."
+      }
+    },
+    {
+      "id": "step6",
+      "action": "Process the mixture in a food processor with spices and breadcrumbs.",
+      "time": "5min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing7",
+          "name": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing8",
+          "name": "pepper",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing9",
+          "name": "thyme",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing10",
+          "name": "nutritional yeast",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing11",
+          "name": "breadcrumbs",
+          "amount": 70.0,
+          "unit": "g"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing12",
+          "name": "flax seeds",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "soy sauce",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing14",
+          "name": "tomato paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state6",
+        "name": "Processed mixture",
+        "type": "intermediate",
+        "description": "Mixture processed in a food processor with spices and breadcrumbs."
+      }
+    },
+    {
+      "id": "step7",
+      "action": "Press the mixture into the prepared loaf pan and bake for 40 minutes.",
+      "time": "40min",
+      "stepType": "cook",
+      "stepMode": "passive",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state6",
+          "name": "Processed mixture",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state7",
+        "name": "Baked loaf",
+        "type": "intermediate",
+        "description": "Loaf baked for 40 minutes."
+      }
+    },
+    {
+      "id": "step8",
+      "action": "Prepare the glaze by whisking together BBQ sauce, maple syrup, apple cider vinegar, and soy sauce.",
+      "time": "2min",
+      "stepType": "prep",
+      "stepMode": "active",
+      "subRecipe": "glaze",
+      "inputs": [
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing17",
+          "name": "BBQ sauce",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing18",
+          "name": "maple syrup",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing19",
+          "name": "apple cider vinegar",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "input_type": "ingredient",
+          "ref_id": "ing13",
+          "name": "soy sauce",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "output_state": {
+        "id": "state8",
+        "name": "Glaze",
+        "type": "intermediate",
+        "description": "Glaze prepared by whisking together ingredients."
+      }
+    },
+    {
+      "id": "step9",
+      "action": "Glaze the loaf and bake for an additional 10 minutes.",
+      "time": "10min",
+      "stepType": "cook",
+      "stepMode": "active",
+      "subRecipe": "main",
+      "inputs": [
+        {
+          "input_type": "state",
+          "ref_id": "state7",
+          "name": "Baked loaf",
+          "amount": null,
+          "unit": null
+        },
+        {
+          "input_type": "state",
+          "ref_id": "state8",
+          "name": "Glaze",
+          "amount": null,
+          "unit": null
+        }
+      ],
+      "output_state": {
+        "id": "state9",
+        "name": "Glazed and baked loaf",
+        "type": "final",
+        "description": "Loaf glazed and baked for an additional 10 minutes."
+      }
+    }
+  ],
+  "final_state": {
+    "id": "final_state",
+    "name": "Easy Vegan Chickpea Meatloaf",
+    "type": "final",
+    "description": "A delicious and hearty vegan chickpea meatloaf, perfect for any occasion."
+  }
+}
