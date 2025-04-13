@@ -22,16 +22,8 @@ WORKDIR /app
 # Copy dependency files
 COPY pyproject.toml poetry.lock ./
 
-# Setup Git LFS and pull files
-COPY .gitattributes .gitattributes
-COPY .git/lfs .git/lfs
-COPY server/data/recipes server/data/recipes
-
-# Copy project files
+# Copy project files (incluant tous les fichiers nécessaires)
 COPY . .
-
-# Pull LFS files
-RUN git lfs pull
 
 # Ensure data directory exists and has correct permissions
 RUN mkdir -p /app/data && chmod -R 755 /app/data
