@@ -4,6 +4,7 @@ from api.routes.recipes import router as recipes_router
 from api.routes.auth import router as auth_router
 from api.routes.images import router as images_router
 from api.routes.constants import router as constants_router
+from api.routes.authors import router as authors_router
 from dotenv import load_dotenv
 import os
 
@@ -37,6 +38,7 @@ app.include_router(recipes_router)
 app.include_router(auth_router)
 app.include_router(images_router)
 app.include_router(constants_router)
+app.include_router(authors_router)
 
 if __name__ == "__main__":
     import uvicorn

@@ -4,7 +4,7 @@ import json
 import os
 import glob
 
-router = APIRouter()
+router = APIRouter(prefix="/api/authors", tags=["authors"])
 
 @router.get("")
 async def get_authors(include_private: bool = Query(default=False)):
