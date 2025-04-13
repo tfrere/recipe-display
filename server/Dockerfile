@@ -40,7 +40,7 @@ RUN echo "===== Vérification des fichiers après COPY =====" && \
     echo "==== Fin de la vérification ===="
 
 # Ensure data directory exists and has correct permissions
-RUN mkdir -p /app/data && chmod -R 755 /app/data
+RUN mkdir -p /app/data/recipes && chmod -R 755 /app/data
 
 # Install dependencies
 RUN poetry config virtualenvs.create false \
@@ -49,5 +49,5 @@ RUN poetry config virtualenvs.create false \
 # Expose port
 EXPOSE $PORT
 
-# Run the application
-CMD poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}
+# Script de démarrage qui exécute le débogage puis lance l'application
+CMD python debug_startup.py && poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}

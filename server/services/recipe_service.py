@@ -154,10 +154,18 @@ class RecipeService:
             recipes = []
 
             # Get list of private authors
+            private_authors = []
             authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
-            with open(authors_file, "r") as f:
-                authors_data = json.load(f)
-                private_authors = authors_data.get("private", [])
+            try:
+                if os.path.exists(authors_file):
+                    with open(authors_file, "r") as f:
+                        authors_data = json.load(f)
+                        private_authors = authors_data.get("private", [])
+                else:
+                    print(f"Warning: authors.json not found at {authors_file}")
+            except Exception as e:
+                print(f"Error reading authors file: {str(e)}")
+                # Continue with empty private_authors list
 
             # Read each recipe file
             for recipe_file in recipe_files:
@@ -165,38 +173,45 @@ class RecipeService:
                 if os.path.basename(recipe_file) == "auth_presets.json":
                     continue
 
-                with open(recipe_file, "r") as f:
-                    recipe_data = json.load(f)
-                    metadata = recipe_data.get("metadata", {})
-                    
-                    # Check if recipe is private (author or sourceUrl contains any private author name)
-                    author = metadata.get("author", "").lower()
-                    source_url = metadata.get("sourceUrl", "")
-                    source_url_lower = source_url.lower() if source_url else ""
-                    is_private = any(
-                        private_author.lower() in author or 
-                        private_author.lower() in source_url_lower 
-                        for private_author in private_authors
-                    )
-                    
-                    # Include recipe if it's public or if private access is granted
-                    if not is_private or include_private:
-                        recipes.append({
-                            "title": metadata.get("title", "Untitled"),
-                            "sourceImageUrl": metadata.get("sourceImageUrl", ""),
-                            "description": metadata.get("description", ""),
-                            "bookTitle": metadata.get("bookTitle", ""),
-                            "author": metadata.get("author", ""),
-                            "diets": metadata.get("diets", []),
-                            "seasons": metadata.get("seasons", []),
-                            "recipeType": metadata.get("recipeType", ""),
-                            "ingredients": [ing.get("name", "") for ing in recipe_data.get("ingredients", [])],
-                            "totalTime": metadata.get("totalTime", 0.0),
-                            "totalCookingTime": metadata.get("totalCookingTime", 0.0),
-                            "quick": metadata.get("quick", False),
-                            "difficulty": metadata.get("difficulty", ""),
-                            "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
-                        })
+                try:
+                    with open(recipe_file, "r") as f:
+                        recipe_data = json.load(f)
+                        metadata = recipe_data.get("metadata", {})
+                        
+                        # Check if recipe is private (author or sourceUrl contains any private author name)
+                        author = metadata.get("author", "").lower()
+                        source_url = metadata.get("sourceUrl", "")
+                        source_url_lower = source_url.lower() if source_url else ""
+                        is_private = any(
+                            private_author.lower() in author or 
+                            private_author.lower() in source_url_lower 
+                            for private_author in private_authors
+                        )
+                        
+                        # Include recipe if it's public or if private access is granted
+                        if not is_private or include_private:
+                            recipes.append({
+                                "title": metadata.get("title", "Untitled"),
+                                "sourceImageUrl": metadata.get("sourceImageUrl", ""),
+                                "description": metadata.get("description", ""),
+                                "bookTitle": metadata.get("bookTitle", ""),
+                                "author": metadata.get("author", ""),
+                                "diets": metadata.get("diets", []),
+                                "seasons": metadata.get("seasons", []),
+                                "recipeType": metadata.get("recipeType", ""),
+                                "ingredients": [ing.get("name", "") for ing in recipe_data.get("ingredients", [])],
+                                "totalTime": metadata.get("totalTime", 0.0),
+                                "totalCookingTime": metadata.get("totalCookingTime", 0.0),
+                                "quick": metadata.get("quick", False),
+                                "difficulty": metadata.get("difficulty", ""),
+                                "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
+                            })
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON in file {recipe_file}: {str(e)}")
+                    # Skip this file and continue with others
+                except Exception as e:
+                    print(f"Error processing recipe file {recipe_file}: {str(e)}")
+                    # Skip this file and continue with others
 
             return recipes
 
