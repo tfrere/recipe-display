@@ -29,10 +29,19 @@ class RecipeService:
         self.recipes_path = self.base_path / "recipes"  # /server/data/recipes
         self.images_path = self.recipes_path / "images"  # /server/data/recipes/images
         self.auth_presets_path = self.base_path / "auth_presets.json"
-        self._ensure_directories()
+        
+        # Ajout de logs pour diagnostiquer les problèmes de chemin
+        print(f"[DEBUG] RecipeService initialized with:")
+        print(f"[DEBUG] - base_path: {self.base_path} (absolute: {self.base_path.absolute()})")
+        print(f"[DEBUG] - recipes_path: {self.recipes_path} (absolute: {self.recipes_path.absolute()})")
+        print(f"[DEBUG] - images_path: {self.images_path} (absolute: {self.images_path.absolute()})")
+        print(f"[DEBUG] - auth_presets_path: {self.auth_presets_path} (absolute: {self.auth_presets_path.absolute()})")
         
         # Initialize progress service
         self.progress_service = _progress_service
+        
+        # Ensure all required directories exist
+        self._ensure_directories()
         
         # Task management
         self.generation_tasks: Dict[str, asyncio.Task] = {}
@@ -150,14 +159,22 @@ class RecipeService:
         """Get list of all recipes with their metadata."""
         try:
             # Get list of all recipe files
+            print(f"[DEBUG] Looking for recipe files in: {self.recipes_path}")
             recipe_files = glob.glob(os.path.join(self.recipes_path, "*.recipe.json"))
+            print(f"[DEBUG] Found {len(recipe_files)} recipe files")
             recipes = []
 
             # Get list of private authors
             authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
-            with open(authors_file, "r") as f:
-                authors_data = json.load(f)
-                private_authors = authors_data.get("private", [])
+            print(f"[DEBUG] Looking for authors file at: {authors_file}")
+            try:
+                with open(authors_file, "r") as f:
+                    authors_data = json.load(f)
+                    private_authors = authors_data.get("private", [])
+                    print(f"[DEBUG] Loaded {len(private_authors)} private authors")
+            except FileNotFoundError:
+                print(f"[WARNING] Authors file not found at: {authors_file}")
+                private_authors = []
 
             # Read each recipe file
             for recipe_file in recipe_files:

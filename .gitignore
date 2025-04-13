@@ -59,16 +59,6 @@ go.work
 *.swp
 *.swo
 
-# Ne pas ignorer les dossiers shared
-!client/shared/
-!server/shared/
-
-# Les dossiers spécifiques d'images peuvent encore être ignorés si nécessaire
-server/data/recipes/images/small
-server/data/recipes/images/medium
-server/data/recipes/images/large
-server/data/recipes/images/thumbnail
-
 flavor-graph/
 foodb/**/*
 foodb

@@ -4,12 +4,16 @@ from models.requests import GenerateRecipeRequest
 from models.responses import RecipeListItem, GenerateRecipeResponse
 from models.progress import GenerationProgress
 from services.recipe_service import RecipeService, RecipeExistsError
+import os
 
 router = APIRouter(prefix="/api/recipes", tags=["recipes"])
 
 def get_recipe_service():
     """Dependency that provides a RecipeService instance."""
-    return RecipeService()
+    # Utiliser la variable d'environnement DATA_PATH si elle existe
+    data_path = os.getenv("DATA_PATH", "data")
+    print(f"[DEBUG] Initializing RecipeService with base_path: {data_path}")
+    return RecipeService(base_path=data_path)
 
 @router.get("/progress/{task_id}", response_model=GenerationProgress)
 async def get_generation_progress(task_id: str, service: RecipeService = Depends(get_recipe_service)):
