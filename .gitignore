@@ -63,14 +63,11 @@ go.work
 !client/shared/
 !server/shared/
 
+# Les dossiers spécifiques d'images peuvent encore être ignorés si nécessaire
 server/data/recipes/images/small
 server/data/recipes/images/medium
 server/data/recipes/images/large
 server/data/recipes/images/thumbnail
-
-# Ignorer tout le dossier des recettes et son contenu
-server/data/recipes/*.json
-server/data/recipes/images/*
 
 flavor-graph/
 foodb/**/*
