@@ -27,8 +27,13 @@ COPY pyproject.toml poetry.lock ./
 # Copy all server files - assumant le build depuis le répertoire server/
 COPY . .
 
-# Récupérer les fichiers LFS
-RUN git lfs pull
+# Récupérer les fichiers LFS si on est sur Railway
+RUN if [ "$RAILWAY_GIT_LFS" = "true" ]; then \
+        git lfs pull; \
+    else \
+        echo "LFS non activé, vérification des fichiers..."; \
+        ls -la /app/data/recipes/ || echo "Le répertoire data/recipes n'existe pas"; \
+    fi
 
 # Débogage: Vérifier les fichiers après la copie
 RUN echo "===== Vérification des fichiers après COPY =====" && \
