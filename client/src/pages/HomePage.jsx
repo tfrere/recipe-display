@@ -32,8 +32,7 @@ import AddIcon from "@mui/icons-material/Add";
 import AddRecipeModal from "../components/common/AddRecipe/AddRecipeModal";
 import AppTransition from "../components/common/AppTransition";
 import { useConstants } from "../contexts/ConstantsContext";
-import { FixedSizeGrid as VirtualGrid } from "react-window";
-import AutoSizer from "react-virtualized-auto-sizer";
+import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
 
 const HOME_TEXTS = {
@@ -116,6 +115,12 @@ const VirtualizedRecipeGrid = memo(
     const isTablet = useMediaQuery(theme.breakpoints.down("md"));
     const isDesktop = useMediaQuery(theme.breakpoints.down("lg"));
 
+    // Référence au conteneur parent
+    const parentRef = useRef(null);
+
+    // État pour stocker la largeur du conteneur (mise à jour au redimensionnement)
+    const [containerWidth, setContainerWidth] = useState(0);
+
     // Nous utilisons directement les recettes filtrées fournies par le contexte
     const filteredRecipes = recipes;
 
@@ -127,68 +132,121 @@ const VirtualizedRecipeGrid = memo(
     };
 
     const columnCount = getColumnCount();
+    const GAP = 24; // 24px de gap entre les éléments
+
+    // Calculer le nombre de lignes nécessaires
     const rowCount = Math.ceil(filteredRecipes.length / columnCount);
-    const GAP = 24; // 16px de gap entre les éléments
 
-    // Utilisation de useCallback avec des dépendances minimales pour éviter
-    // que cette fonction ne soit recréée trop souvent
-    const cellRenderer = useCallback(
-      ({ columnIndex, rowIndex, style }) => {
-        const index = rowIndex * columnCount + columnIndex;
-        if (index >= filteredRecipes.length) return null;
+    // Configurer le virtualiseur pour les lignes
+    const rowVirtualizer = useVirtualizer({
+      count: rowCount,
+      getScrollElement: () => parentRef.current,
+      estimateSize: () => 350, // Estimation initiale de la hauteur de chaque ligne
+      overscan: 3, // Précharger quelques lignes au-dessus et en-dessous
+    });
 
-        const recipe = filteredRecipes[index];
+    // Observer les redimensionnements du conteneur parent
+    useEffect(() => {
+      // Fonction pour mettre à jour la largeur du conteneur
+      const updateContainerWidth = () => {
+        if (parentRef.current) {
+          setContainerWidth(parentRef.current.offsetWidth);
+        }
+      };
 
-        // Calculer une clé unique pour éviter les re-rendus inutiles
-        const key = `recipe-${recipe.id || recipe.slug}`;
+      // Observer initial
+      updateContainerWidth();
 
-        return (
-          <Box key={key}>
-            <RecipeCard
-              recipe={recipe}
-              style={{
-                ...style,
-                height: "auto",
-                margin: 0,
-                left: style.left + columnIndex * GAP,
-                top: style.top,
-              }}
-            />
-          </Box>
-        );
-      },
-      [filteredRecipes, columnCount]
+      // Créer un ResizeObserver pour détecter les changements de taille
+      const resizeObserver = new ResizeObserver(() => {
+        updateContainerWidth();
+      });
+
+      // Observer le conteneur parent
+      if (parentRef.current) {
+        resizeObserver.observe(parentRef.current);
+      }
+
+      // Nettoyage
+      return () => {
+        if (parentRef.current) {
+          resizeObserver.unobserve(parentRef.current);
+        }
+        resizeObserver.disconnect();
+      };
+    }, []);
+
+    // Calculer la largeur des colonnes
+    const columnWidth =
+      containerWidth > 0
+        ? (containerWidth - GAP * (columnCount + 1)) / columnCount
+        : 0;
+
+    // Générer les éléments virtualisés (lignes)
+    const virtualRows = rowVirtualizer.getVirtualItems();
+
+    return (
+      <div
+        ref={parentRef}
+        style={{
+          height: "100%",
+          width: "100%",
+          overflow: "auto",
+          position: "relative",
+        }}
+      >
+        {/* Créer un div pour définir la hauteur totale du scroll */}
+        <div
+          style={{
+            height: `${rowVirtualizer.getTotalSize()}px`,
+            width: "100%",
+            position: "relative",
+          }}
+        >
+          {/* Rendre les lignes virtualisées */}
+          {virtualRows.map((virtualRow) => {
+            const rowIndex = virtualRow.index;
+
+            return (
+              <div
+                ref={rowVirtualizer.measureElement}
+                key={virtualRow.key}
+                data-index={virtualRow.index}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  transform: `translateY(${virtualRow.start}px)`,
+                  padding: `${GAP / 2}px`,
+                  display: "grid",
+                  gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+                  gap: `${GAP}px`,
+                }}
+              >
+                {/* Générer les cartes dans cette ligne */}
+                {Array.from({ length: columnCount }).map((_, colIndex) => {
+                  const recipeIndex = rowIndex * columnCount + colIndex;
+
+                  // Vérifier si l'index est valide
+                  if (recipeIndex >= filteredRecipes.length) {
+                    return <div key={`empty-${colIndex}`} />;
+                  }
+
+                  const recipe = filteredRecipes[recipeIndex];
+
+                  return (
+                    <div key={`recipe-${recipe.id || recipe.slug}`}>
+                      <RecipeCard recipe={recipe} />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     );
-
-    // Mémoiser la grille pour éviter les re-rendus inutiles
-    const gridComponent = useMemo(() => {
-      return (
-        <Box sx={{ height: "100%", width: "100%" }}>
-          <AutoSizer>
-            {({ height, width }) => {
-              const availableWidth = width - GAP * (columnCount - 1);
-              const columnWidth = availableWidth / columnCount;
-
-              return (
-                <VirtualGrid
-                  key={`${columnCount}-${filteredRecipes.length}`}
-                  columnCount={columnCount}
-                  columnWidth={columnWidth}
-                  height={height}
-                  rowCount={rowCount}
-                  rowHeight={400} // Hauteur minimale pour éviter les problèmes de rendu
-                  width={width}
-                >
-                  {cellRenderer}
-                </VirtualGrid>
-              );
-            }}
-          </AutoSizer>
-        </Box>
-      );
-    }, [filteredRecipes, columnCount, rowCount, cellRenderer]);
-
-    return gridComponent;
   },
   (prevProps, nextProps) => {
     // Comparaison personnalisée pour éviter les re-rendus inutiles

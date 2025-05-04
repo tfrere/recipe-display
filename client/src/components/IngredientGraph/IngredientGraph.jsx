@@ -7,17 +7,29 @@ import TitleDescription from "./TitleDescription";
 
 // Catégories principales à colorer distinctement
 const MAIN_CATEGORIES = [
-  "Dairy",
-  "Fruit",
-
   "Plant/Vegetable",
-  "Meat/Animal Product",
+  "Fruit",
   "Cereal/Crop/Bean",
   "Nut/Seed",
+  "Meat/Animal Product",
+  "Dairy",
   "Seafood",
   "Spice",
   "Fungus",
 ];
+
+// Palette de couleurs personnalisée pour les catégories
+const CATEGORY_COLORS = {
+  Dairy: "#D6CFA8", // Blanc cassé encore plus foncé pour les produits laitiers
+  Fruit: "#FFA500", // Orange pour les fruits
+  "Plant/Vegetable": "#4CAF50", // Vert pour les légumes
+  "Meat/Animal Product": "#FF0000", // Rouge pour la viande
+  "Cereal/Crop/Bean": "#F5D742", // Jaune doré pour les céréales
+  "Nut/Seed": "#A0522D", // Marron clair pour les noix
+  Seafood: "#1E90FF", // Bleu pour les fruits de mer
+  Spice: "#FF4500", // Orange pour les épices
+  Fungus: "#3A5F0B", // Vert olive plus foncé pour les champignons, plus distinct du marron des noix
+};
 
 // Positions des étiquettes des catégories principales dans le graphique
 // Ces positions peuvent être facilement ajustées selon les besoins
@@ -104,12 +116,14 @@ const IngredientGraph = ({ data, navHeight = 0 }) => {
     const colorScale = d3
       .scaleOrdinal()
       .domain(existingMainCategories)
-      .range(d3.schemeCategory10.slice(0, existingMainCategories.length));
+      .range(
+        existingMainCategories.map((category) => CATEGORY_COLORS[category])
+      );
 
     // Fonction de couleur qui retourne une couleur spécifique uniquement pour les catégories principales
     const getColor = (d) => {
       if (d.category && existingMainCategories.includes(d.category)) {
-        return colorScale(d.category);
+        return CATEGORY_COLORS[d.category];
       }
       // Pour les autres catégories ou si pas de catégorie, utiliser un gris léger
       return theme.palette.grey[400];
@@ -118,7 +132,7 @@ const IngredientGraph = ({ data, navHeight = 0 }) => {
     setCategoryColors(
       () => (category) =>
         existingMainCategories.includes(category)
-          ? colorScale(category)
+          ? CATEGORY_COLORS[category]
           : theme.palette.grey[300]
     );
 

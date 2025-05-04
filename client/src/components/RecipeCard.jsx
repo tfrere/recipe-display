@@ -67,7 +67,7 @@ const RecipeCard = memo(
         <Box
           sx={{
             position: "relative",
-            paddingTop: "100%",
+            paddingTop: "70%",
             width: "100%",
             overflow: "hidden",
             bgcolor: "grey.100",
@@ -91,13 +91,13 @@ const RecipeCard = memo(
           <Box
             sx={{
               position: "absolute",
-              bottom: 12,
-              left: 12,
+              bottom: 8,
+              left: 8,
               display: "flex",
               gap: 1,
               alignItems: "center",
-              padding: "6px 12px",
-              borderRadius: "8px",
+              padding: "4px 8px",
+              borderRadius: "6px",
               backdropFilter: "blur(8px)",
               backgroundColor: "rgba(0, 0, 0, 0.4)",
               boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
@@ -130,9 +130,9 @@ const RecipeCard = memo(
             flex: "1 1 auto",
             display: "flex",
             flexDirection: "column",
-            p: 2,
+            p: 1.5,
             "&:last-child": {
-              pb: 2,
+              pb: 1.5,
             },
           }}
         >
@@ -141,9 +141,9 @@ const RecipeCard = memo(
             component="h2"
             sx={{
               fontWeight: 600,
-              fontSize: "1rem",
+              fontSize: "0.95rem",
               lineHeight: 1.3,
-              mb: 1,
+              mb: 0.75,
               height: "2.6em",
               display: "-webkit-box",
               WebkitLineClamp: 2,
@@ -153,6 +153,18 @@ const RecipeCard = memo(
             }}
           >
             {recipe.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: "text.secondary",
+              fontSize: "0.8rem",
+              mb: 0.5,
+            }}
+          >
+            {recipe.recipeType == "main_course"
+              ? "main course"
+              : recipe.recipeType}
           </Typography>
           <Box
             sx={{
@@ -168,11 +180,9 @@ const RecipeCard = memo(
               variant="body2"
               sx={{
                 color: "text.secondary",
-                fontSize: "0.75rem",
+                fontSize: "0.7rem",
               }}
             >
-              {recipe.recipeType || "Main"}
-              {" • "}
               {seasonText}
             </Typography>
             <Box
@@ -185,7 +195,7 @@ const RecipeCard = memo(
             >
               <KitchenOutlinedIcon
                 sx={{
-                  fontSize: "1rem",
+                  fontSize: "0.9rem",
                   color: "text.secondary",
                 }}
               />
@@ -193,7 +203,7 @@ const RecipeCard = memo(
                 variant="body2"
                 sx={{
                   color: "text.secondary",
-                  fontSize: "0.875rem",
+                  fontSize: "0.8rem",
                 }}
               >
                 {ingredientsCount}

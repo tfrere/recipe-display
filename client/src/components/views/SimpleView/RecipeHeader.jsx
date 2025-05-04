@@ -104,6 +104,12 @@ const RecipeHeader = ({ recipe }) => {
     return null;
   }
 
+  const seasonText = useMemo(() => {
+    return Array.isArray(recipe.seasons) && recipe.seasons.length > 0
+      ? recipe.seasons.join(", ")
+      : "All Seasons";
+  }, [recipe.seasons]);
+
   const RECIPE_TYPE_LABELS = Object.fromEntries(
     constants.recipe_types.map((type) => [type.id, type.label])
   );
@@ -427,7 +433,7 @@ const RecipeHeader = ({ recipe }) => {
                   >
                     {DIET_LABELS[metadata.diets?.[0]] || "Normal"}
                     {" • "}
-                    {SEASON_LABELS[metadata.seasons?.[0]] || "All Seasons"}
+                    {seasonText}
                     {" • "}
                     {RECIPE_TYPE_LABELS[metadata.recipeType] ||
                       RECIPE_TYPE_LABELS[metadata.type] ||

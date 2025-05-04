@@ -40,7 +40,9 @@ CRITICAL REQUIREMENTS:
    - final_state must have type="final" and a comprehensive description
    - For the subRecipe :
       - Steps within a sub-recipe should have the same subRecipe value (matching the sub-recipe name)
-      - If no explicit sub-recipe is mentioned, use "main" as the subRecipe value
+      - IMPORTANT: Each sub-recipe MUST have its own specific name, even the first one. DO NOT use the main recipe title as a sub-recipe name.
+      - If the recipe has multiple components (like "main dish" and "sauce"), each component should have its specific subRecipe name (e.g., "chicken curry", "yogurt sauce").
+      - If no explicit sub-recipe is mentioned and there's only one recipe component, use "main" as the subRecipe value
       - If you have preheat step, you have to add it at the beginning of the concerned sub-recipe. It's mandatory.
       - If you have a step with "Preheat oven to 180°C (350°F)" you have to add it at the beginning of the concerned sub-recipe. ( often subRecipes where you have an oven step )
 

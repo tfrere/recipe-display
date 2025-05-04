@@ -1,91 +1,18 @@
-# Structured LLM
+# Recipe display
 
-A provider-agnostic library for generating structured outputs from LLMs using Pydantic and Instructor.
+# To do
 
-## Features
+- Feature: il faut pouvoir, en mode import de recette en texte, éviter les doublons
 
-- Provider agnostic (supports Anthropic, Deepseek, and easily extensible)
-- Automatic validation and retry with Pydantic
-- Async support
-- Type-safe with full typing support
-- Easy to extend with new providers
+  - Server : La route import de recette par text prendra maintenant un titre de recette
+  - Batch importer : Le nom du fichier .txt qu'on importe ce sera le nom de la recette a envoyer au serveur
+  - Client : a l'import d'une recette en mode text, on demande un titre en plus du txt
 
-## Installation
+- Faire en sorte que quand on demande au LLM le sub-recipe name, il faut pas que le sub recipe principal soit le nom de la recette, ça doit etre autre chose de cohérent
 
-```bash
-poetry install
-```
+- La liste des ingredients en mode normal, il faut qu'elle se split correctement, là c'est pas le cas
 
-## Environment Variables
+- MUST HAVE : client: Re-rendre visible le stream dans le progress à l'import
 
-Create a `.env` file with your API keys:
-
-```env
-ANTHROPIC_API_KEY=your_anthropic_key
-DEEPSEEK_API_KEY=your_deepseek_key
-```
-
-## Usage
-
-Here's a simple example of how to use the library:
-
-```python
-from pydantic import BaseModel, Field
-from structured_llm.providers.anthropic import AnthropicProvider
-from structured_llm.core.generator import StructuredGenerator
-
-# Define your schema
-class Recipe(BaseModel):
-    title: str
-    ingredients: list[str]
-    steps: list[str]
-    prep_time_minutes: int
-    cooking_time_minutes: int
-    difficulty: str
-
-# Create a provider
-provider = AnthropicProvider(
-    model="claude-3-haiku",
-    temperature=0.7
-)
-
-# Create a generator
-generator = StructuredGenerator(provider=provider)
-
-# Generate content
-recipe = await generator.generate(
-    prompt="Generate a recipe for chocolate cake",
-    schema=Recipe
-)
-
-print(recipe.model_dump_json(indent=2))
-```
-
-## Adding a New Provider
-
-To add a new provider, create a new class that inherits from `LLMProvider`:
-
-```python
-from structured_llm.providers.base import LLMProvider
-
-class MyProvider(LLMProvider):
-    async def generate(self, prompt: str, output_schema: Type[T]) -> T:
-        # Implement your provider-specific logic here
-        pass
-
-    def get_model_config(self) -> Dict[str, Any]:
-        return {
-            "model": self.model,
-            "temperature": self.temperature,
-            "max_tokens": self.max_tokens,
-            **self.additional_params
-        }
-
-    @property
-    def provider_name(self) -> str:
-        return "my_provider"
-```
-
-## Examples
-
-Check out the `examples` directory for more usage examples.
+- Importer 100% des recettes du livre de recettes collaboratif de quentin
+- Importer les recettes ottolenghi

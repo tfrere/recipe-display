@@ -86,25 +86,6 @@ const Legend = ({ categories, categoryColors, theme }) => {
       });
 
       currentY += categories.length * itemHeight + 8;
-
-      // Autres catégories (sans couleur spécifique)
-      legendGroup
-        .append("circle")
-        .attr("cx", padding)
-        .attr("cy", currentY)
-        .attr("r", 6)
-        .attr("fill", theme.palette.grey[300]);
-
-      legendGroup
-        .append("text")
-        .attr("x", padding + textOffset)
-        .attr("y", currentY + 4)
-        .text("Uncategorized")
-        .style("font-size", "13px")
-        .style("font-weight", "300")
-        .style("fill", theme.palette.text.secondary);
-
-      currentY += itemHeight + sectionSpacing;
     } else {
       currentY += headerSpacing;
     }

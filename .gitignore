@@ -63,11 +63,16 @@ go.work
 !client/shared/
 !server/shared/
 
+server/data/old-recipes/**/*
+# Git LFS files - these are managed by LFS, not regular git
+server/data/recipes/**/*.recipe.json
+server/data/images/cache/**/*
+server/data/recipes/images/**/*
+
+# Other data directories to ignore
 flavor-graph/
 foodb/**/*
 foodb
-server/data/images/
-server/data/images/**/* */
 server/data/constants/experiments
 server/data/constants/food-pairing
 server/data/tmp
