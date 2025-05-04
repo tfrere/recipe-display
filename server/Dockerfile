@@ -49,22 +49,8 @@ RUN poetry config virtualenvs.create false && \
     poetry lock && \
     poetry install --no-interaction --no-ansi
 
-# Script de démarrage qui copie les fichiers LFS vers le volume
-RUN echo '#!/bin/sh\n\
-if [ -d "/server/data/recipes" ]; then\n\
-    echo "Volume Railway détecté, copie des fichiers LFS..."\n\
-    cp -r /app/server/data/recipes/* /server/data/recipes/\n\
-    echo "Copie terminée"\n\
-else\n\
-    echo "Volume Railway non détecté, utilisation des fichiers locaux"\n\
-fi\n\
-\n\
-# Lancer l\'application\n\
-poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}' > /app/start.sh && \
-chmod +x /app/start.sh
-
 # Expose port
 EXPOSE $PORT
 
-# Utiliser le script de démarrage
-CMD ["/app/start.sh"]
+# Start the application
+CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "${PORT:-3001}"]
