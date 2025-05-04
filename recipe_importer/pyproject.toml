@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Recipe importer for recipe-display"
 authors = ["Your Name <your.email@example.com>"]
 packages = [
-    { include = "recipe_importer" }
+    { include = "src" }
 ]
 
 [tool.poetry.dependencies]
@@ -19,4 +19,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-recipe-importer = "recipe_importer.main:main"
+recipe-importer = "src.main:run"

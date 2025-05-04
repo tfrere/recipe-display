@@ -16,7 +16,7 @@ async def clear_output_directories(api_url: str, console: Console) -> None:
     # Utiliser des chemins relatifs ou absolus selon que l'API est locale ou distante
     if server_url in ["localhost", "127.0.0.1"]:
         # Pour une API locale, trouver le répertoire du serveur (conventionnellement à côté du répertoire recipe_importer)
-        server_dir = Path(__file__).parent.parent / "server"
+        server_dir = Path(__file__).parent.parent.parent / "server"
         if not server_dir.exists():
             console.print("[yellow]Warning: Could not find local server directory, skipping cleanup[/yellow]")
             return
@@ -185,5 +185,8 @@ async def main():
     except Exception as e:
         console.print(f"[red]Error: {str(e)}[/red]")
 
-if __name__ == "__main__":
+def run():
     asyncio.run(main())
+
+if __name__ == "__main__":
+    run()
