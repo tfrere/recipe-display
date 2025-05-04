@@ -21,33 +21,36 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
-# Copy dependency files
+# Copy dependency files - en assumant que la commande est exécutée depuis le répertoire server/
 COPY pyproject.toml poetry.lock ./
+
+# Copy all server files - assumant le build depuis le répertoire server/
+COPY . .
+
+# Récupérer les fichiers LFS
+RUN git lfs pull
+
+# Débogage: Vérifier les fichiers après la copie
+RUN echo "===== Vérification des fichiers après COPY =====" && \
+    echo "Structure du répertoire de travail:" && \
+    ls -la /app/ && \
+    echo "Contenu de data (s'il existe):" && \
+    ls -la /app/data/ || echo "Le répertoire data n'existe pas" && \
+    echo "Contenu de data/recipes (s'il existe):" && \
+    ls -la /app/data/recipes/ || echo "Le répertoire data/recipes n'existe pas" && \
+    echo "Taille des fichiers JSON (s'ils existent):" && \
+    find /app/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
+    echo "==== Fin de la vérification ===="
+
+# Ensure data directory exists and has correct permissions
+RUN mkdir -p /app/data/recipes && chmod -R 755 /app/data
 
 # Install dependencies
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
-# Copy all server files
-COPY . .
-
-# Ensure data directory exists and has correct permissions
-RUN mkdir -p /app/data/recipes && chmod -R 755 /app/data
-
-# Debug: Check files after copy
-RUN echo "===== Checking files after COPY =====" && \
-    echo "Working directory structure:" && \
-    ls -la /app/ && \
-    echo "Data directory content:" && \
-    ls -la /app/data/ || echo "Data directory does not exist" && \
-    echo "Recipes directory content:" && \
-    ls -la /app/data/recipes/ || echo "Recipes directory does not exist" && \
-    echo "Checking LFS files:" && \
-    git lfs ls-files || echo "No LFS files found" && \
-    echo "==== End of verification ===="
-
 # Expose port
 EXPOSE $PORT
 
-# Start script that runs debugging then launches the application
+# Script de démarrage qui exécute le débogage puis lance l'application
 CMD python debug_startup.py && poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}
