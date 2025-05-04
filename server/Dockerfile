@@ -27,14 +27,6 @@ COPY pyproject.toml poetry.lock ./
 # Copy all server files - assumant le build depuis le répertoire server/
 COPY . .
 
-# Récupérer les fichiers LFS si on est sur Railway
-RUN if [ "$RAILWAY_GIT_LFS" = "true" ]; then \
-        git lfs pull; \
-    else \
-        echo "LFS non activé, vérification des fichiers..."; \
-        ls -la /app/data/recipes/ || echo "Le répertoire data/recipes n'existe pas"; \
-    fi
-
 # Débogage: Vérifier les fichiers après la copie
 RUN echo "===== Vérification des fichiers après COPY =====" && \
     echo "Structure du répertoire de travail:" && \
@@ -54,8 +46,22 @@ RUN mkdir -p /app/data/recipes && chmod -R 755 /app/data
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
+# Script de démarrage qui copie les fichiers LFS vers le volume
+RUN echo '#!/bin/sh\n\
+if [ -d "/server/data/recipes" ]; then\n\
+    echo "Volume Railway détecté, copie des fichiers LFS..."\n\
+    cp -r /app/server/data/recipes/* /server/data/recipes/\n\
+    echo "Copie terminée"\n\
+else\n\
+    echo "Volume Railway non détecté, utilisation des fichiers locaux"\n\
+fi\n\
+\n\
+# Lancer l\'application\n\
+poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}' > /app/start.sh && \
+chmod +x /app/start.sh
+
 # Expose port
 EXPOSE $PORT
 
-# Script de démarrage qui exécute le débogage puis lance l'application
-CMD python debug_startup.py && poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}
+# Utiliser le script de démarrage
+CMD ["/app/start.sh"]
