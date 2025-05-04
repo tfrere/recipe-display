@@ -46,7 +46,7 @@ RUN mkdir -p /app/data/recipes/images && \
 
 # Install dependencies
 RUN poetry config virtualenvs.create false && \
-    poetry lock --no-update && \
+    poetry lock && \
     poetry install --no-interaction --no-ansi
 
 # Script de démarrage qui copie les fichiers LFS vers le volume
