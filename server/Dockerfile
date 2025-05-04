@@ -39,12 +39,15 @@ RUN echo "===== Vérification des fichiers après COPY =====" && \
     find /app/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
     echo "==== Fin de la vérification ===="
 
-# Ensure data directory exists and has correct permissions
-RUN mkdir -p /app/data/recipes && chmod -R 755 /app/data
+# Create data directory with correct permissions
+RUN mkdir -p /app/data/recipes/images && \
+    chown -R nobody:nogroup /app/data && \
+    chmod -R 755 /app/data
 
 # Install dependencies
-RUN poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
+RUN poetry config virtualenvs.create false && \
+    poetry lock --no-update && \
+    poetry install --no-interaction --no-ansi
 
 # Script de démarrage qui copie les fichiers LFS vers le volume
 RUN echo '#!/bin/sh\n\
