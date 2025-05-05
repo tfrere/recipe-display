@@ -2,27 +2,41 @@
 import json
 import os
 from typing import AsyncIterator, Any, Dict, List
-from huggingface_hub import InferenceClient
+from huggingface_hub import InferenceClient, model_info
 from pydantic_ai.settings import ModelSettings
 
 from ..models.recipe import LLMRecipe, LLMRecipeGraph
+from ..utils.get_available_model_provider import get_available_model_provider
 
 class StreamingHuggingFaceModel:
     """Custom model that combines streaming, retries and HuggingFace Inference API"""
     
     def __init__(self, api_key: str, model_name: str = "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"):
         self.model_name = model_name
+        self.api_key = api_key
         
         if not api_key:
             raise ValueError("HF_TOKEN is not set in environment variables")
         
+        # Test providers for this model and get the available provider
+        provider = self._get_available_provider()
+        if not provider:
+            raise ValueError(f"No available provider found for model {model_name}")
+        
+        print(f"Using provider: {provider} for model {model_name}")
+        
         self.client = InferenceClient(
             token=api_key,
-            provider="novita",
+            provider=provider,
         )
         self._current_step = ""
         self._retry_count = 0
         self._max_retries = 5
+    
+    def _get_available_provider(self) -> str:
+        """Test and get the first available provider for the model"""
+        provider = get_available_model_provider(self.model_name, verbose=True)
+        return provider
         
     async def stream_content(self, messages: list[dict[str, str]]) -> tuple[bool, str]:
         """Stream content from the model and return final response"""

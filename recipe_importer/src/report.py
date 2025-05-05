@@ -16,7 +16,9 @@ class ReportGenerator:
         """Affiche un rapport final d'importation."""
         self.console.clear()
         
-        total_time = str(metrics.total_duration).split('.')[0]
+        # Calculer le temps réel écoulé depuis le début de l'importation
+        elapsed_time = datetime.now() - metrics.start_time
+        total_time = str(elapsed_time).split('.')[0]
         
         # Calcule le taux de réussite
         total_imported = metrics.success_count + metrics.failure_count + metrics.skip_count

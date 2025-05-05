@@ -35,3 +35,4 @@ class ImportMetrics(BaseModel):
     failure_count: int = 0
     total_duration: timedelta = timedelta()
     errors: List[RecipeError] = []
+    start_time: datetime = datetime.now()
