@@ -44,10 +44,6 @@ python_files = ["test_*.py"]
 addopts = "-v --cov=server --cov-report=term-missing"
 
 [tool.poetry.scripts]
-volume-clean = "scripts.volume:clean_volume"
-volume-copy = "scripts.volume:copy_to_volume"
-volume-sync = "scripts.volume:sync_volume"
-volume-server = "scripts.volume_uploader:main"
 upload-recipes = "scripts.upload_recipes:upload_recipes"
 clean-recipes = "scripts.clean_recipes:clean_recipes"
 download-recipes = "scripts.download_recipes:download_recipes" 

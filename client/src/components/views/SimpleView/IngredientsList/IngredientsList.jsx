@@ -16,7 +16,7 @@ import { INGREDIENTS_TEXTS, switchStyle } from "./constants";
 /**
  * Main component for displaying recipe ingredients
  */
-const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
+const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
   const [checkedIngredients, setCheckedIngredients] = useState(new Set());
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
@@ -27,7 +27,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
     sortedIngredients,
     hasCompletedSteps,
     remainingIngredients,
-  } = useIngredientsProcessing(recipe, sortByCategory);
+  } = useIngredientsProcessing(recipe, shoppingMode);
 
   // Handle ingredient checkbox state
   const handleIngredientCheck = (ingredient, checked) => {
@@ -92,7 +92,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
         </Box>
 
         {/* Copy button (only in shopping list mode) */}
-        {sortByCategory && (
+        {shoppingMode && (
           <Button
             onClick={handleCopyIngredients}
             size="small"
@@ -117,8 +117,8 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
           control={
             <Switch
               size="small"
-              checked={sortByCategory}
-              onChange={(e) => setSortByCategory(e.target.checked)}
+              checked={shoppingMode}
+              onChange={(e) => setShoppingMode(e.target.checked)}
               sx={switchStyle}
             />
           }
@@ -202,7 +202,7 @@ const IngredientsList = ({ recipe, sortByCategory, setSortByCategory }) => {
                 key={group.key}
                 group={group}
                 recipe={recipe}
-                sortByCategory={sortByCategory}
+                sortByCategory={shoppingMode}
                 checkedIngredients={checkedIngredients}
                 onIngredientCheck={handleIngredientCheck}
               />

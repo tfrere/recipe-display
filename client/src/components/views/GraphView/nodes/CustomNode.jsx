@@ -3,10 +3,7 @@ import { Handle, Position } from "reactflow";
 import { Box, Typography, useTheme } from "@mui/material";
 import { useRecipe } from "../../../../contexts/RecipeContext";
 import RecipeChip, { CHIP_TYPES } from "../../../common/RecipeChip";
-import {
-  parseTimeToMinutes,
-  calculateTotalTime,
-} from "../../../../utils/timeUtils";
+import { parseTimeToMinutes } from "../../../../utils/timeUtils";
 
 const formatMinutesToTime = (minutes) => {
   if (!minutes) return "";

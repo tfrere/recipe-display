@@ -8,7 +8,6 @@ import React, {
   useRef,
 } from "react";
 import { useNavigate } from "react-router-dom";
-import { usePreferences } from "./PreferencesContext";
 import { useTheme } from "./ThemeContext";
 import { useConstants } from "./ConstantsContext";
 import { getRecipes } from "../services/recipeService";
@@ -43,7 +42,7 @@ const normalizeText = (text) => {
 
 export const RecipeListProvider = ({ children }) => {
   const { constants } = useConstants();
-  const { sortByCategory } = usePreferences();
+  const sortByCategory = true;
   const { hasPrivateAccess } = useCheatCode();
   const DEBUG = false; // Flag pour activer/désactiver les logs de débogage
   const seasonalRecipesOrder = useRef(new Map());

@@ -14,7 +14,6 @@ import WinePage from "./pages/WinePage";
 import { RecipeProvider } from "./contexts/RecipeContext";
 import { RecipeListProvider } from "./contexts/RecipeListContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { PreferencesProvider } from "./contexts/PreferencesContext";
 import { ConstantsProvider } from "./contexts/ConstantsContext";
 import { AuthorsProvider } from "./contexts/AuthorsContext";
 import Navigation from "./components/common/Navigation";
@@ -57,15 +56,13 @@ const AppContent = () => {
 function App() {
   return (
     <ThemeProvider>
-      <PreferencesProvider>
-        <ConstantsProvider>
-          <AuthorsProvider>
-            <RecipeListProvider>
-              <AppContent />
-            </RecipeListProvider>
-          </AuthorsProvider>
-        </ConstantsProvider>
-      </PreferencesProvider>
+      <ConstantsProvider>
+        <AuthorsProvider>
+          <RecipeListProvider>
+            <AppContent />
+          </RecipeListProvider>
+        </AuthorsProvider>
+      </ConstantsProvider>
     </ThemeProvider>
   );
 }

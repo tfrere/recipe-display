@@ -25,7 +25,6 @@ import { useConstants } from "../../../contexts/ConstantsContext";
 import RecipeImage from "../../common/RecipeImage";
 import TimeDisplay from "../../common/TimeDisplay";
 import RecipeTimes from "../../common/RecipeTimes";
-import { parseTimeToMinutes } from "../../../utils/timeUtils";
 import { copyRecipeToClipboard } from "../../../utils/recipeTextUtils";
 import GraphModal from "../../views/GraphView/GraphModal";
 import PrintableRecipe from "./PrintableRecipe";
@@ -87,8 +86,6 @@ const RecipeHeader = ({ recipe }) => {
     currentServings,
     resetServings,
     getRemainingTime,
-    calculateTotalTime,
-    calculateTotalCookingTime,
     tools,
   } = useRecipe();
   const { darkMode, toggleDarkMode } = useTheme();
@@ -337,8 +334,10 @@ const RecipeHeader = ({ recipe }) => {
                 </IconButton>
               </Box>
               {/* Time overlay */}
-              {(calculateTotalTime(recipe) ||
-                calculateTotalCookingTime(recipe)) && (
+              {(recipe.metadata?.totalTime ||
+                recipe.totalTime ||
+                recipe.metadata?.totalCookingTime ||
+                recipe.totalCookingTime) && (
                 <Box
                   sx={{
                     position: "absolute",
@@ -354,8 +353,11 @@ const RecipeHeader = ({ recipe }) => {
                 >
                   {/* Temps de cuisson */}
                   <RecipeTimes
-                    totalTime={calculateTotalTime(recipe)}
-                    totalCookingTime={calculateTotalCookingTime(recipe)}
+                    totalTime={recipe.metadata?.totalTime || recipe.totalTime}
+                    totalCookingTime={
+                      recipe.metadata?.totalCookingTime ||
+                      recipe.totalCookingTime
+                    }
                     iconSize="small"
                     sx={{
                       color: "white",

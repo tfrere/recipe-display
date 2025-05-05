@@ -82,7 +82,7 @@ Only proceed with cleaning if the content contains a single, clear recipe. ( car
      * Specific measurements: "Roll out to **1cm** thickness"
      * Heat levels: "Cook over **medium-high** heat"
    - For each sub-recipe (if any):
-     * Start with a clear title in bold: "**For the chimichurri:**"
+     * Start with a clear title in bold: "**Chimichurri:**"
      * MUST include at least one step
      * Number the steps independently
      * Include any specific equipment needed
@@ -153,12 +153,12 @@ INGREDIENTS:
 
 INSTRUCTIONS:
 
-**For [Sub-recipe 1 Title]:**
+**SUBRECIPE : [Sub-recipe 1 Title]:**
 1. [Step 1]
 2. [Step 2]
 ...
 
-**For [Sub-recipe 2 Title]:**
+**SUBRECIPE : [Sub-recipe 2 Title]:**
 1. [Step 1]
 2. [Step 2]
 ...

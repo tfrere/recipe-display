@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRecipe } from "../../../contexts/RecipeContext";
-import { usePreferences } from "../../../contexts/PreferencesContext";
 import RecipeHeader from "./RecipeHeader";
 import IngredientsList from "./IngredientsList/index";
 import PreparationSteps from "./PreparationSteps";
@@ -8,7 +7,7 @@ import { Box, Container, Paper, Divider } from "@mui/material";
 
 const SimpleView = () => {
   const { recipe } = useRecipe();
-  const { sortByCategory, setSortByCategory } = usePreferences();
+  const [shoppingMode, setShoppingMode] = useState(false);
 
   return (
     <Box
@@ -48,8 +47,8 @@ const SimpleView = () => {
             <Divider sx={{ borderStyle: "dashed" }} />
             <IngredientsList
               recipe={recipe}
-              sortByCategory={sortByCategory}
-              setSortByCategory={setSortByCategory}
+              shoppingMode={shoppingMode}
+              setShoppingMode={setShoppingMode}
             />
             <Divider sx={{ borderStyle: "dashed" }} />
             <PreparationSteps recipe={recipe} />

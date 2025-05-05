@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useReducer,
   useCallback,
+  useMemo,
 } from "react";
 import { useConstants } from "./ConstantsContext";
 import useLocalStorage from "../hooks/useLocalStorage";
@@ -13,14 +14,8 @@ import {
   getFractionDisplay,
 } from "../utils/ingredientScaling";
 import { normalizeAmount } from "../utils/unitNormalization";
-import { convertToImperial } from "../utils/unitConversion";
 import { mapUnitToTranslationKey } from "../utils/unitMapping";
-import {
-  parseTimeToMinutes,
-  calculateTotalTime as calculateTotalTimeUtil,
-  calculateTotalCookingTime as calculateTotalCookingTimeUtil,
-} from "../utils/timeUtils";
-import { usePreferences } from "./PreferencesContext";
+import { parseTimeToMinutes, formatTimeCompact } from "../utils/timeUtils";
 
 const RecipeContext = createContext();
 
@@ -820,24 +815,14 @@ const recipeReducer = (state, action) => {
 
 export const RecipeProvider = ({ children }) => {
   const { constants } = useConstants();
-  const { preferences } = usePreferences();
   const [state, dispatch] = useReducer(recipeReducer, initialState);
-  const [unitSystem, setUnitSystem] = useLocalStorage(
-    "unitSystem",
-    constants?.units?.systems?.METRIC || "metric"
-  );
+  // Définir unitSystem directement comme "metric" au lieu d'utiliser useLocalStorage
+  const unitSystem = "metric";
 
   // Attendre que les constantes soient chargées
   if (!constants) {
     return null;
   }
-
-  // Mise à jour du système d'unités en fonction des préférences
-  useEffect(() => {
-    if (preferences?.unitSystem) {
-      setUnitSystem(preferences.unitSystem);
-    }
-  }, [preferences?.unitSystem, setUnitSystem]);
 
   // Définir UNITS et UNIT_CONVERSIONS à partir des données reçues
   const UNITS = {
@@ -1153,14 +1138,7 @@ export const RecipeProvider = ({ children }) => {
 
       console.log(`Formatage avec unité: ${amount} ${unit}`);
 
-      // Conversion si nécessaire
-      if (unitSystem === "imperial") {
-        const { value: convertedAmount, unit: convertedUnit } =
-          convertToImperial(amount, unit);
-        amount = convertedAmount;
-        unit = convertedUnit;
-      }
-
+      // Conversion impériale désactivée, toujours utiliser le système métrique
       // Formatage existant
       let formattedAmount;
       if (amount >= 1000 && (unit === "g" || unit === "ml")) {
@@ -1192,7 +1170,7 @@ export const RecipeProvider = ({ children }) => {
       console.log(`Résultat formaté: ${result}`);
       return result;
     },
-    [unitSystem, UNITS]
+    [UNITS]
   );
 
   const getTotalProgressPercentage = useCallback(() => {
@@ -1758,43 +1736,6 @@ export const RecipeProvider = ({ children }) => {
         state.servingsMultiplier === 1
       );
     },
-    calculateTotalTime: useCallback((recipe) => {
-      if (!recipe || !recipe.subRecipes) return "0min";
-
-      let totalMinutes = 0;
-      // Iterate over subRecipes object
-      recipe.subRecipes.forEach((subRecipe) => {
-        if (!subRecipe.steps) return;
-
-        subRecipe.steps.forEach((step) => {
-          const time = step.time;
-          if (!time) return;
-
-          // Parse hours if present
-          const hourMatch = time.match(/(\d+)h/);
-          if (hourMatch) {
-            totalMinutes += parseInt(hourMatch[1]) * 60;
-          }
-
-          // Parse minutes if present
-          const minuteMatch = time.match(/(\d+)min/);
-          if (minuteMatch) {
-            totalMinutes += parseInt(minuteMatch[1]);
-          }
-        });
-      });
-
-      // Format the total time
-      if (totalMinutes >= 60) {
-        const hours = Math.floor(totalMinutes / 60);
-        const minutes = totalMinutes % 60;
-        return minutes > 0 ? `${hours}h${minutes}min` : `${hours}h`;
-      }
-      return `${totalMinutes}min`;
-    }, []),
-    calculateTotalCookingTime: useCallback((recipe) => {
-      return calculateTotalCookingTimeUtil(recipe);
-    }, []),
     resetAllSteps: () => dispatch({ type: actions.RESET_STEPS }),
     resetServings: () => dispatch({ type: actions.RESET_SERVINGS }),
   };

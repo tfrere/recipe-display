@@ -12,12 +12,9 @@ const IngredientsGroup = ({
   checkedIngredients,
   onIngredientCheck,
 }) => {
-  // Determine if title should be shown
-  // In shopping list mode: always show the category title
-  // In recipe mode: only show if explicitly allowed or if multiple sub-recipes exist
-  const shouldShowTitle =
-    sortByCategory ||
-    (group.showTitle !== false && Object.keys(recipe.subRecipes).length > 1);
+  // En mode normal, on affiche toujours le titre du groupe si showTitle est true
+  // En mode liste de courses, on affiche toujours le titre de la catégorie
+  const shouldShowTitle = sortByCategory || group.showTitle;
 
   // Réduire la marge inférieure lorsqu'il n'y a pas de titre affiché
   const marginBottom = shouldShowTitle ? 3 : 1;

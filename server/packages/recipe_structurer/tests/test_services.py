@@ -32,11 +32,13 @@ Ingredients:
 - 1 tsp baking powder
 
 Instructions:
-1. Preheat oven to 180°C
-2. Mix dry ingredients
-3. Add wet ingredients and mix well
-4. Pour into cake tin
-5. Bake for 30 minutes
+1. Preheat oven to 180°C and grease a 20cm round cake tin
+2. Mix dry ingredients (flour, cocoa powder, sugar, and baking powder) in a large bowl
+3. Add wet ingredients (eggs, milk, and melted butter) and mix well until smooth and combined
+4. Pour the batter into the prepared cake tin and level the surface
+5. Bake for 30 minutes or until a toothpick inserted into the center comes out clean
+6. Let cool in the tin for 10 minutes before transferring to a wire rack
+7. Allow to cool completely before serving or decorating with your favorite frosting
 """
 
 # Sample recipe with SVG image for testing

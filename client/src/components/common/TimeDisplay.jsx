@@ -25,12 +25,12 @@ const TimeDisplay = ({
       typeof timeString === "number"
         ? timeString
         : parseTimeToMinutes(timeString);
+
+    // Arrondir à 5 minutes près seulement si la valeur vient de timeString
+    timeInMinutes = roundToNearestFive(timeInMinutes);
   }
 
   if (!timeInMinutes) return null;
-
-  // Arrondir à 5 minutes près
-  timeInMinutes = roundToNearestFive(timeInMinutes);
 
   return (
     <Typography variant={variant} component={component} sx={sx} {...props}>

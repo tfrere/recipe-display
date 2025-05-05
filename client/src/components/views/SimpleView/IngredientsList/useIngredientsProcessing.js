@@ -203,336 +203,114 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
 
       return columns.map((col) => col.groups);
     } else {
-      // RECIPE MODE - Approche plus simple pour les petites recettes
+      // RECIPE MODE - Nouvelle approche pour répartir les ingrédients avec conservation des sous-recettes
 
-      // 1. Vérifier le nombre total d'ingrédients
-      const totalItems = items.length;
+      // 1. Créer un tableau pour chaque colonne
+      const columns = Array(columnCount)
+        .fill()
+        .map(() => []);
 
-      // Si très peu d'ingrédients, utiliser une approche différente
-      const isSmallRecipe = totalItems <= columnCount * 5;
+      // 2. Calculer le nombre idéal d'ingrédients par colonne
+      const totalIngredients = items.length;
+      const itemsPerColumn = Math.ceil(totalIngredients / columnCount);
 
-      if (isSmallRecipe) {
-        // Pour les petites recettes, utiliser une approche simple basée sur l'index
-        const columns = Array(columnCount)
-          .fill()
-          .map(() => []);
-        const subRecipeMap = {};
+      // 3. Trier les ingrédients par sous-recette (en conservant l'ordre original)
+      const subRecipeMap = {};
 
-        // Regrouper les ingrédients par sous-recette
-        items.forEach((item) => {
-          if (!subRecipeMap[item.subRecipeId]) {
-            subRecipeMap[item.subRecipeId] = {
-              id: item.subRecipeId,
-              title: item.subRecipeTitle,
-              items: [],
-            };
+      // Grouper les ingrédients par sous-recette
+      items.forEach((item) => {
+        if (!subRecipeMap[item.subRecipeId]) {
+          subRecipeMap[item.subRecipeId] = {
+            id: item.subRecipeId,
+            title: item.subRecipeTitle,
+            items: [],
+          };
+        }
+        subRecipeMap[item.subRecipeId].items.push(item);
+      });
+
+      // Trier les sous-recettes selon l'ordre original
+      const orderedSubRecipes = subRecipeOrder
+        .filter((id) => subRecipeMap[id])
+        .map((id) => subRecipeMap[id]);
+
+      // 4. Distribuer les ingrédients dans les colonnes
+      let currentColumn = 0;
+      let currentItemCount = 0;
+      let currentSubRecipeIndex = 0;
+      let currentIngredientIndex = 0;
+
+      // Garder une trace des sous-recettes déjà affichées
+      const displayedSubRecipes = new Set();
+
+      // Déterminer si on doit afficher les titres des sous-recettes (seulement s'il y a plus d'une sous-recette)
+      const shouldDisplaySubRecipeTitles = orderedSubRecipes.length > 1;
+
+      // Parcourir toutes les sous-recettes
+      while (currentSubRecipeIndex < orderedSubRecipes.length) {
+        const subRecipe = orderedSubRecipes[currentSubRecipeIndex];
+
+        // Si on a parcouru tous les ingrédients de cette sous-recette, passer à la suivante
+        if (currentIngredientIndex >= subRecipe.items.length) {
+          currentSubRecipeIndex++;
+          currentIngredientIndex = 0;
+          continue;
+        }
+
+        // Si on a atteint la limite d'ingrédients pour cette colonne et qu'il y a encore des ingrédients
+        if (
+          currentItemCount >= itemsPerColumn &&
+          currentColumn < columnCount - 1
+        ) {
+          currentColumn++;
+          currentItemCount = 0;
+        }
+
+        // Déterminer si on doit créer un nouveau groupe
+        let shouldCreateNewGroup = true;
+
+        // Vérifier si le dernier groupe appartient à la même sous-recette
+        if (columns[currentColumn].length > 0) {
+          const lastGroup =
+            columns[currentColumn][columns[currentColumn].length - 1];
+          if (lastGroup.key.startsWith(subRecipe.id)) {
+            shouldCreateNewGroup = false;
           }
-          subRecipeMap[item.subRecipeId].items.push(item);
-        });
+        }
 
-        // Trier les sous-recettes selon l'ordre original
-        const orderedSubRecipes = subRecipeOrder
-          .filter((id) => subRecipeMap[id])
-          .map((id) => subRecipeMap[id]);
+        // Déterminer si on doit afficher le titre (uniquement pour la première apparition et s'il y a plusieurs sous-recettes)
+        const shouldShowTitle =
+          shouldDisplaySubRecipeTitles &&
+          !displayedSubRecipes.has(subRecipe.id);
 
-        // Distribuer les ingrédients équitablement
-        let currentIndex = 0;
+        // Marquer cette sous-recette comme ayant été affichée
+        if (shouldShowTitle) {
+          displayedSubRecipes.add(subRecipe.id);
+        }
 
-        orderedSubRecipes.forEach((subRecipe) => {
-          // Calculer le nombre d'ingrédients pour chaque colonne
-          const itemsPerColumn = Math.max(
-            1,
-            Math.floor(subRecipe.items.length / columnCount)
-          );
+        // Créer un nouveau groupe ou utiliser le dernier groupe de cette sous-recette
+        let group;
 
-          // Trier les ingrédients par catégorie et nom
-          subRecipe.items.sort((a, b) => {
-            const catIndexA = categoryOrder.indexOf(a.category || "other");
-            const catIndexB = categoryOrder.indexOf(b.category || "other");
-            if (catIndexA === catIndexB) {
-              return a.name.localeCompare(b.name);
-            }
-            return catIndexA - catIndexB;
-          });
+        if (shouldCreateNewGroup) {
+          group = {
+            key: `${subRecipe.id}-${currentColumn}`,
+            title: subRecipe.title,
+            items: [],
+            showTitle: shouldShowTitle,
+          };
+          columns[currentColumn].push(group);
+        } else {
+          // Récupérer le dernier groupe de cette sous-recette
+          group = columns[currentColumn][columns[currentColumn].length - 1];
+        }
 
-          // Distribution équitable sur toutes les colonnes
-          const groups = [];
-          for (let i = 0; i < columnCount; i++) {
-            const startIndex = i * itemsPerColumn;
-            const endIndex =
-              i === columnCount - 1
-                ? subRecipe.items.length
-                : Math.min((i + 1) * itemsPerColumn, subRecipe.items.length);
+        // Ajouter l'ingrédient courant au groupe
+        group.items.push(subRecipe.items[currentIngredientIndex]);
 
-            if (startIndex < endIndex) {
-              groups.push({
-                key: `${subRecipe.id}-${i}`,
-                title: subRecipe.title,
-                items: subRecipe.items.slice(startIndex, endIndex),
-                showTitle: i === 0, // Seulement la première colonne montre le titre
-              });
-            }
-          }
-
-          // Redistribuer les groupes pour équilibrer
-          groups.forEach((group, index) => {
-            columns[index % columnCount].push(group);
-          });
-        });
-
-        return columns;
+        // Passer à l'ingrédient suivant
+        currentIngredientIndex++;
+        currentItemCount++;
       }
-
-      // Pour les recettes plus grandes, utiliser cette approche améliorée
-      // Étape 3: Distribution plus agressive des chunks
-      // Stratégie complètement différente basée sur une répartition en "lames de scie"
-      // Cela garantit un meilleur équilibre, quelle que soit la taille des sous-recettes
-
-      // Nouvelle fonction pour distribuer les ingrédients avec un meilleur équilibrage
-      const distributeIngredientsEvenly = (allIngredients, columnCount) => {
-        // Si très peu d'ingrédients, utiliser une approche différente
-        const isSmallRecipe = allIngredients.length <= columnCount * 5;
-
-        if (isSmallRecipe) {
-          // Pour les petites recettes, utiliser une approche simple basée sur l'index
-          const columns = Array(columnCount)
-            .fill()
-            .map(() => []);
-          const subRecipeMap = {};
-
-          // Regrouper les ingrédients par sous-recette
-          allIngredients.forEach((item) => {
-            if (!subRecipeMap[item.subRecipeId]) {
-              subRecipeMap[item.subRecipeId] = {
-                id: item.subRecipeId,
-                title: item.subRecipeTitle,
-                items: [],
-              };
-            }
-            subRecipeMap[item.subRecipeId].items.push(item);
-          });
-
-          // Trier les sous-recettes selon l'ordre original
-          const orderedSubRecipes = subRecipeOrder
-            .filter((id) => subRecipeMap[id])
-            .map((id) => subRecipeMap[id]);
-
-          // Redistribuer par simple répartition cyclique
-          let currentColIndex = 0;
-
-          orderedSubRecipes.forEach((subRecipe) => {
-            // Trier les ingrédients par catégorie et nom
-            subRecipe.items.sort((a, b) => {
-              const catIndexA = categoryOrder.indexOf(a.category || "other");
-              const catIndexB = categoryOrder.indexOf(b.category || "other");
-              if (catIndexA === catIndexB) {
-                return a.name.localeCompare(b.name);
-              }
-              return catIndexA - catIndexB;
-            });
-
-            // Créer un groupe pour cette sous-recette
-            const group = {
-              key: subRecipe.id,
-              title: subRecipe.title,
-              items: subRecipe.items,
-              showTitle: true,
-            };
-
-            // Ajouter à la colonne courante et passer à la suivante
-            columns[currentColIndex].push(group);
-            currentColIndex = (currentColIndex + 1) % columnCount;
-          });
-
-          return columns;
-        }
-
-        // Pour les recettes plus grandes, utiliser une approche plus sophistiquée
-
-        // 1. Analyser toutes les sous-recettes et leurs tailles
-        const subRecipesById = {};
-        allIngredients.forEach((item) => {
-          if (!subRecipesById[item.subRecipeId]) {
-            subRecipesById[item.subRecipeId] = {
-              id: item.subRecipeId,
-              title: item.subRecipeTitle || "Main recipe",
-              items: [],
-            };
-          }
-          subRecipesById[item.subRecipeId].items.push(item);
-        });
-
-        // 2. Calculer la taille idéale par colonne
-        const totalIngredients = allIngredients.length;
-        const targetPerColumn = Math.ceil(totalIngredients / columnCount);
-
-        // 3. Trier les sous-recettes par ordre puis par taille
-        const orderedSubRecipes = subRecipeOrder
-          .filter((id) => subRecipesById[id])
-          .map((id) => subRecipesById[id]);
-
-        // 4. Préparer les colonnes
-        const columns = Array(columnCount)
-          .fill()
-          .map(() => []);
-        const columnSizes = Array(columnCount).fill(0);
-
-        // 5. Fragmenter les grosses sous-recettes et distribuer équitablement
-        orderedSubRecipes.forEach((subRecipe, subRecipeIndex) => {
-          // Trier les ingrédients par catégorie et nom
-          subRecipe.items.sort((a, b) => {
-            const catIndexA = categoryOrder.indexOf(a.category || "other");
-            const catIndexB = categoryOrder.indexOf(b.category || "other");
-            if (catIndexA === catIndexB) {
-              return a.name.localeCompare(b.name);
-            }
-            return catIndexA - catIndexB;
-          });
-
-          // Analyser la taille relative de cette sous-recette
-          const isLarge = subRecipe.items.length > targetPerColumn * 0.8;
-
-          // Stratégie pour les grandes sous-recettes: fragmenter en plus petits morceaux
-          if (isLarge) {
-            // 5a. Fragmenter par catégorie si possible
-            const categorizedItems = {};
-            subRecipe.items.forEach((item) => {
-              const cat = item.category || "other";
-              if (!categorizedItems[cat]) categorizedItems[cat] = [];
-              categorizedItems[cat].push(item);
-            });
-
-            // 5b. Regrouper en chunks de taille optimale
-            const chunks = [];
-            const optimalChunkSize = Math.max(
-              3,
-              Math.min(5, Math.floor(targetPerColumn * 0.5))
-            );
-            let currentChunk = [];
-            let currentCategory = null;
-
-            // Parcourir les catégories dans l'ordre
-            categoryOrder.forEach((category) => {
-              if (!categorizedItems[category]) return;
-
-              const categoryItems = categorizedItems[category];
-
-              // Si nouvelle catégorie et le chunk précédent n'est pas vide
-              if (currentCategory !== category && currentChunk.length > 0) {
-                chunks.push([...currentChunk]);
-                currentChunk = [];
-              }
-
-              // Ajouter les items de cette catégorie
-              categoryItems.forEach((item) => {
-                currentChunk.push(item);
-
-                // Si le chunk atteint la taille optimale, le finaliser
-                if (currentChunk.length >= optimalChunkSize) {
-                  chunks.push([...currentChunk]);
-                  currentChunk = [];
-                }
-              });
-
-              currentCategory = category;
-            });
-
-            // Ajouter le dernier chunk s'il n'est pas vide
-            if (currentChunk.length > 0) {
-              chunks.push(currentChunk);
-            }
-
-            // 5c. Distribuer les chunks en zigzag pour équilibrer au mieux
-            let chunksAdded = 0;
-            chunks.forEach((itemsChunk, chunkIndex) => {
-              // Toujours choisir la colonne la moins remplie
-              const targetColumn = columnSizes.indexOf(
-                Math.min(...columnSizes)
-              );
-
-              // Créer un groupe pour ce chunk
-              const group = {
-                key: `${subRecipe.id}-${chunkIndex}`,
-                title: subRecipe.title,
-                items: itemsChunk,
-                showTitle: chunksAdded === 0, // Seul le premier chunk montre le titre
-              };
-
-              // Ajouter à la colonne la moins remplie
-              columns[targetColumn].push(group);
-              columnSizes[targetColumn] += itemsChunk.length;
-              chunksAdded++;
-            });
-          }
-          // Stratégie pour les petites sous-recettes: garder entières et placer intelligemment
-          else {
-            // Trouver la colonne la moins remplie
-            const targetColumn = columnSizes.indexOf(Math.min(...columnSizes));
-
-            // Créer un groupe pour cette sous-recette
-            const group = {
-              key: subRecipe.id,
-              title: subRecipe.title,
-              items: subRecipe.items,
-              showTitle: true,
-            };
-
-            // Ajouter à la colonne la moins remplie
-            columns[targetColumn].push(group);
-            columnSizes[targetColumn] += subRecipe.items.length;
-          }
-        });
-
-        // 6. Vérification finale de l'équilibre
-        const maxColumnSize = Math.max(...columnSizes);
-        const minColumnSize = Math.min(...columnSizes);
-        const difference = maxColumnSize - minColumnSize;
-
-        // Si le déséquilibre est trop important, redistribuer
-        if (difference > targetPerColumn * 0.3) {
-          // Extraire tous les groupes, les trier par taille, et redistribuer
-          const allGroups = [];
-          columns.forEach((col) => {
-            col.forEach((group) => {
-              allGroups.push(group);
-            });
-            col.length = 0; // Vider la colonne
-          });
-
-          // Trier par originalIndex (pour préserver l'ordre par sous-recette) puis par taille décroissante
-          allGroups.sort((a, b) => {
-            // Préserver l'ordre des sous-recettes
-            const aId = a.key.split("-")[0];
-            const bId = b.key.split("-")[0];
-            const aIndex = subRecipeOrder.indexOf(aId);
-            const bIndex = subRecipeOrder.indexOf(bId);
-
-            if (aIndex !== bIndex) return aIndex - bIndex;
-
-            // Sinon trier par taille décroissante
-            return b.items.length - a.items.length;
-          });
-
-          // Réinitialiser les tailles de colonne
-          columnSizes.fill(0);
-
-          // Redistribuer en utilisant un algorithme glouton
-          allGroups.forEach((group) => {
-            // Toujours choisir la colonne la moins remplie
-            const targetColumn = columnSizes.indexOf(Math.min(...columnSizes));
-            columns[targetColumn].push(group);
-            columnSizes[targetColumn] += group.items.length;
-          });
-        }
-
-        return columns;
-      };
-
-      // Remplacer la distribution originale par notre nouvelle approche
-      const columns = distributeIngredientsEvenly(
-        sortedIngredients,
-        columnCount
-      );
 
       return columns;
     }

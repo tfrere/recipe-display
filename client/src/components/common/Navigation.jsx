@@ -9,10 +9,6 @@ import {
   Button,
 } from "@mui/material";
 import { useTheme } from "../../contexts/ThemeContext";
-import {
-  usePreferences,
-  UNIT_SYSTEMS,
-} from "../../contexts/PreferencesContext";
 import { useRecipeList } from "../../contexts/RecipeListContext";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -28,10 +24,6 @@ import useCheatCode from "../../hooks/useCheatCode";
 const NAVIGATION_TEXTS = {
   COOKBOOK: "Cookbook",
   ACTIONS: {
-    TOGGLE_UNITS: {
-      METRIC: "Switch to imperial units",
-      IMPERIAL: "Switch to metric units",
-    },
     ADD_RECIPE: "Add recipe",
     TOGGLE_GRAPH: "Toggle graph view",
     LOGOUT: "Logout",
@@ -42,7 +34,6 @@ const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { darkMode, toggleDarkMode } = useTheme();
-  const { unitSystem, toggleUnitSystem } = usePreferences();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
   const { disablePrivateAccess, hasPrivateAccess } = useCheatCode();
   const {
