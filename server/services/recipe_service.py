@@ -25,6 +25,30 @@ class RecipeExistsError(Exception):
 
 class RecipeService:
     def __init__(self, base_path: str = "data"):
+        # Déterminer automatiquement le chemin de base selon l'environnement
+        print(f"[DEBUG] Original base_path: {base_path}")
+        
+        # Vérifier si nous sommes dans un environnement Docker (Railway)
+        if os.path.exists('/app'):
+            print("[DEBUG] Detected Docker/Railway environment (/app exists)")
+            # Si /app/data/recipes existe et contient des fichiers .recipe.json
+            if os.path.exists('/app/data/recipes'):
+                files = glob.glob('/app/data/recipes/*.recipe.json')
+                if files:
+                    print(f"[DEBUG] Found {len(files)} recipe files in /app/data/recipes, using this path")
+                    self.base_path = Path('/app/data')
+                    self.recipes_path = Path('/app/data/recipes')
+                    self.images_path = self.recipes_path / "images"
+                    self.auth_presets_path = self.base_path / "auth_presets.json"
+                    self._ensure_directories()
+                    
+                    # Initialize progress service and task management
+                    self.progress_service = _progress_service
+                    self.generation_tasks: Dict[str, asyncio.Task] = {}
+                    self._cleanup_lock = asyncio.Lock()
+                    return
+        
+        # Si nous arrivons ici, utiliser le chemin par défaut
         self.base_path = Path(base_path)
         self.recipes_path = self.base_path / "recipes"  # /server/data/recipes
         self.images_path = self.recipes_path / "images"  # /server/data/recipes/images
@@ -149,8 +173,31 @@ class RecipeService:
     async def list_recipes(self, include_private: bool = False) -> List[Dict[str, Any]]:
         """Get list of all recipes with their metadata."""
         try:
+            # DEBUG: Print current paths
+            print(f"[DEBUG] Current working directory: {os.getcwd()}")
+            print(f"[DEBUG] Base path: {self.base_path} (absolute: {self.base_path.absolute()})")
+            print(f"[DEBUG] Recipes path: {self.recipes_path} (absolute: {self.recipes_path.absolute()})")
+            print(f"[DEBUG] Searching for recipe files in: {os.path.join(self.recipes_path, '*.recipe.json')}")
+            
             # Get list of all recipe files
             recipe_files = glob.glob(os.path.join(self.recipes_path, "*.recipe.json"))
+            print(f"[DEBUG] Found {len(recipe_files)} recipe files")
+            if len(recipe_files) > 0:
+                print(f"[DEBUG] First few files: {recipe_files[:3]}")
+            else:
+                # Check if directory exists and list its contents
+                if os.path.exists(self.recipes_path):
+                    print(f"[DEBUG] Recipe directory exists, contents: {os.listdir(self.recipes_path)}")
+                else:
+                    print(f"[DEBUG] Recipe directory does not exist!")
+                    
+                # Try alternate paths
+                alt_path = Path('/app/data/recipes')
+                if os.path.exists(alt_path):
+                    print(f"[DEBUG] Alternate path /app/data/recipes exists, contents: {os.listdir(alt_path)}")
+                    recipe_files = glob.glob(os.path.join(alt_path, "*.recipe.json"))
+                    print(f"[DEBUG] Found {len(recipe_files)} recipe files in alternate path")
+            
             recipes = []
 
             # Get list of private authors

@@ -34,12 +34,18 @@ import AppTransition from "../components/common/AppTransition";
 import { useConstants } from "../contexts/ConstantsContext";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
+import useCheatCode from "../hooks/useCheatCode";
 
 const HOME_TEXTS = {
   NO_RECIPES: {
     TITLE: "No recipes found",
     DESCRIPTION:
       "Try adding a new recipe by clicking the + button in the top right corner",
+  },
+  NO_RECIPES_UNAUTHORIZED: {
+    TITLE: "No recipes found",
+    DESCRIPTION:
+      "You need access rights to add new recipes. Try entering the right combination of keys for access.",
   },
   NO_RESULTS: {
     TITLE: "No recipes found for your search",
@@ -53,6 +59,7 @@ const HOME_TEXTS = {
 
 const NoRecipes = memo(({ hasActiveFilters }) => {
   const { openAddRecipeModal } = useRecipeList();
+  const { hasPrivateAccess } = useCheatCode();
 
   return (
     <Paper
@@ -77,9 +84,11 @@ const NoRecipes = memo(({ hasActiveFilters }) => {
       <Typography variant="body1" color="text.secondary">
         {hasActiveFilters
           ? HOME_TEXTS.NO_RESULTS.DESCRIPTION
-          : HOME_TEXTS.NO_RECIPES.DESCRIPTION}
+          : hasPrivateAccess
+          ? HOME_TEXTS.NO_RECIPES.DESCRIPTION
+          : HOME_TEXTS.NO_RECIPES_UNAUTHORIZED.DESCRIPTION}
       </Typography>
-      {!hasActiveFilters && (
+      {!hasActiveFilters && hasPrivateAccess && (
         <Box sx={{ mt: 2 }}>
           <Button
             variant="contained"
