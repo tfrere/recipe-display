@@ -27,7 +27,16 @@ async def options_generation_progress():
 @router.get("", response_model=List[RecipeListItem])
 async def list_recipes(include_private: bool = False, service: RecipeService = Depends(get_recipe_service)):
     """Get list of all recipes with their metadata."""
-    return await service.list_recipes(include_private)
+    print(f"[DEBUG] Route list_recipes called with include_private={include_private}")
+    try:
+        recipes = await service.list_recipes(include_private)
+        print(f"[DEBUG] Route list_recipes returning {len(recipes)} recipes")
+        return recipes
+    except HTTPException as e:
+        if e.status_code == 404 and "Recipe not found" in str(e.detail):
+            print("[DEBUG] No recipes found, returning empty list instead of 404")
+            return []
+        raise
 
 @router.options("")
 async def options_recipes():

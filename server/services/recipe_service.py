@@ -178,6 +178,7 @@ class RecipeService:
             print(f"[DEBUG] Base path: {self.base_path} (absolute: {self.base_path.absolute()})")
             print(f"[DEBUG] Recipes path: {self.recipes_path} (absolute: {self.recipes_path.absolute()})")
             print(f"[DEBUG] Searching for recipe files in: {os.path.join(self.recipes_path, '*.recipe.json')}")
+            print(f"[DEBUG] include_private parameter: {include_private}")
             
             # Get list of all recipe files
             recipe_files = glob.glob(os.path.join(self.recipes_path, "*.recipe.json"))
@@ -208,6 +209,7 @@ class RecipeService:
                     with open(authors_file, "r") as f:
                         authors_data = json.load(f)
                         private_authors = authors_data.get("private", [])
+                        print(f"[DEBUG] Private authors: {private_authors}")
                 else:
                     print(f"Warning: authors.json not found at {authors_file}")
             except Exception as e:
@@ -215,12 +217,17 @@ class RecipeService:
                 # Continue with empty private_authors list
 
             # Read each recipe file
+            total_read = 0
+            total_private = 0
+            total_included = 0
+            
             for recipe_file in recipe_files:
                 # Skip auth presets file
                 if os.path.basename(recipe_file) == "auth_presets.json":
                     continue
 
                 try:
+                    total_read += 1
                     with open(recipe_file, "r") as f:
                         recipe_data = json.load(f)
                         metadata = recipe_data.get("metadata", {})
@@ -229,14 +236,20 @@ class RecipeService:
                         author = metadata.get("author", "").lower()
                         source_url = metadata.get("sourceUrl", "")
                         source_url_lower = source_url.lower() if source_url else ""
+                        
                         is_private = any(
                             private_author.lower() in author or 
                             private_author.lower() in source_url_lower 
                             for private_author in private_authors
                         )
                         
+                        if is_private:
+                            total_private += 1
+                            print(f"[DEBUG] Recipe '{metadata.get('title', 'Unknown')}' is marked as private (author: {author}, url: {source_url})")
+                        
                         # Include recipe if it's public or if private access is granted
                         if not is_private or include_private:
+                            total_included += 1
                             recipes.append({
                                 "title": metadata.get("title", "Untitled"),
                                 "sourceImageUrl": metadata.get("sourceImageUrl", ""),
@@ -260,13 +273,19 @@ class RecipeService:
                     print(f"Error processing recipe file {recipe_file}: {str(e)}")
                     # Skip this file and continue with others
 
+            print(f"[DEBUG] Total recipe files read: {total_read}, private: {total_private}, included in results: {total_included}")
+            
+            # Si aucune recette n'est trouvée, on retourne une liste vide au lieu de lancer une erreur
+            if not recipes and len(recipe_files) > 0:
+                print(f"[WARNING] No recipes included in results despite having {len(recipe_files)} recipe files. include_private={include_private}")
+                
             return recipes
 
         except Exception as e:
             print(f"Error listing recipes: {str(e)}")
-            raise HTTPException(
-                status_code=500, detail=f"Error listing recipes: {str(e)}"
-            )
+            # Retourner une liste vide au lieu d'une erreur
+            print(f"[WARNING] Error occurred but returning empty list instead of error: {str(e)}")
+            return []
 
     async def delete_all_recipes(self) -> None:
         """Delete all recipes and their associated images."""
