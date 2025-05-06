@@ -982,9 +982,11 @@ export const RecipeProvider = ({ children }) => {
       setCurrentRecipeSlug(slug); // Mettre à jour le slug de la recette actuelle
       dispatch({ type: actions.SET_RECIPE, payload: recipe });
       dispatch({ type: actions.SET_ERROR, payload: null });
+      return recipe; // Retourner la recette pour permettre l'enchaînement de promesses
     } catch (error) {
       console.error("Error loading recipe:", error);
       dispatch({ type: actions.SET_ERROR, payload: error.message });
+      throw error; // Propager l'erreur pour permettre la gestion dans .catch()
     } finally {
       dispatch({ type: actions.SET_LOADING, payload: false });
     }

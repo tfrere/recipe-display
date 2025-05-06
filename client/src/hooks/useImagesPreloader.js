@@ -16,11 +16,21 @@ const useImagesPreloader = (slugs = [], size = "medium") => {
   const [errors, setErrors] = useState({});
   const loadedRef = useRef(new Set());
 
+  // Réinitialiser le cache d'images lorsque slugs change complètement
   useEffect(() => {
-    if (slugs.length === 0) {
+    // Si les slugs changent complètement (nouvelle recette), on réinitialise tout
+    if (
+      slugs.length === 0 ||
+      (slugs.length === 1 && !loadedRef.current.has(slugs[0]))
+    ) {
       setLoadedImages(new Set());
       setErrors({});
       loadedRef.current = new Set();
+    }
+  }, [slugs]);
+
+  useEffect(() => {
+    if (slugs.length === 0) {
       return;
     }
 
