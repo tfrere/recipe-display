@@ -102,19 +102,30 @@ const RecipeHeader = ({ recipe }) => {
   }
 
   const seasonText = useMemo(() => {
-    return Array.isArray(recipe.seasons) && recipe.seasons.length > 0
-      ? recipe.seasons.join(", ")
-      : "All Seasons";
-  }, [recipe.seasons]);
+    const { seasons } = constants;
+    const SEASON_LABELS = Object.fromEntries(
+      seasons.map((season) => [season.id, season.label])
+    );
+
+    // Récupérer les saisons depuis metadata ou directement depuis la recette
+    const recipeSeasons = recipe.metadata?.seasons || recipe.seasons;
+
+    if (Array.isArray(recipeSeasons) && recipeSeasons.length > 0) {
+      if (recipeSeasons.includes("all")) {
+        return SEASON_LABELS["all"];
+      }
+      return recipeSeasons
+        .map((seasonId) => SEASON_LABELS[seasonId] || seasonId)
+        .join(", ");
+    }
+    return SEASON_LABELS["all"] || "All Seasons";
+  }, [recipe.metadata?.seasons, recipe.seasons, constants]);
 
   const RECIPE_TYPE_LABELS = Object.fromEntries(
     constants.recipe_types.map((type) => [type.id, type.label])
   );
   const DIET_LABELS = Object.fromEntries(
     constants.diets.map((diet) => [diet.id, diet.label])
-  );
-  const SEASON_LABELS = Object.fromEntries(
-    constants.seasons.map((season) => [season.id, season.label])
   );
 
   // Déstructurer les propriétés de la recette

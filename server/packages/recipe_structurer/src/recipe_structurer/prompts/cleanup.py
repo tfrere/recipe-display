@@ -84,9 +84,13 @@ Only proceed with cleaning if the content contains a single, clear recipe. ( car
    - For each sub-recipe (if any):
      * Start with a clear title in bold: "**Chimichurri:**"
      * MUST include at least one step
+     * MUST have a more specific name than the main recipe title, this is mandatory !
      * Number the steps independently
      * Include any specific equipment needed
      * NEVER leave a sub-recipe without steps
+     * If you have a step with something like "Preheat oven to 180°C (350°F)" you have to add it at the beginning of the concerned sub-recipe. ( often subRecipes where you have an oven step )
+     * If you have preheat step, you have to add it at the beginning of the concerned sub-recipe. It's mandatory.
+
    - Use precise cooking verbs:
      * "Sauté" instead of "cook" for quick pan cooking
      * "Caramelize" for slow browning of sugars

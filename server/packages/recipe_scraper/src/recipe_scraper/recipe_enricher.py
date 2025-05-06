@@ -603,7 +603,7 @@ class RecipeEnricher:
 
     def _determine_diets(self, recipe_json: Dict[str, Any]) -> List[str]:
         """
-        Determine the diets based on recipe ingredients.
+        Determine the diets based on recipe ingredients categories.
         
         Args:
             recipe_json: The recipe data to analyze
@@ -630,26 +630,26 @@ class RecipeEnricher:
         
         for ingredient in ingredients:
             name = ingredient.get("name", "").lower()
+            # Utiliser la catégorie de l'ingrédient plutôt que l'analyse par mots-clés
+            category = ingredient.get("category", "").lower()
+            
             if not name:
                 continue
                 
-            # Check for meat
-            if any(meat in name for meat in ["beef", "pork", "chicken", "turkey", "lamb", "duck", "venison", "bacon", "sausage", "ham"]):
+            # Utilisation des catégories pour la classification
+            if category == "meat":
                 has_meat = True
                 meat_ingredients.append(name)
                 
-            # Check for seafood
-            if any(seafood in name for seafood in ["fish", "salmon", "tuna", "cod", "shrimp", "prawn", "lobster", "crab", "mussel", "oyster", "clam", "scallop"]):
+            elif category == "seafood":
                 has_seafood = True
                 seafood_ingredients.append(name)
                 
-            # Check for dairy
-            if any(dairy in name for dairy in ["milk", "cheese", "butter", "cream", "yogurt", "yoghurt", "curd", "whey", "ricotta", "mozzarella"]):
+            elif category == "dairy":
                 has_dairy = True
                 dairy_ingredients.append(name)
                 
-            # Check for eggs
-            if "egg" in name:
+            elif category == "egg":
                 has_egg = True
                 egg_ingredients.append(name)
         

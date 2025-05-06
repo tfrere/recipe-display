@@ -147,10 +147,16 @@ class UrlRecipeProcessor(RecipeProcessorBase):
         # Timestamp pour détecter les blocages
         waiting_start_time = datetime.now()
         
+        # Incrémenter le compteur des tâches en attente de sémaphore
+        stats["waiting_for_semaphore"] = stats.get("waiting_for_semaphore", 0) + 1
+        
         async with self.semaphore:
             start_time = datetime.now()
             waiting_duration = (start_time - waiting_start_time).total_seconds()
             await updates_queue.put((url, "info", f"Got semaphore after {waiting_duration:.1f}s"))
+            
+            # Décrémenter le compteur des tâches en attente de sémaphore
+            stats["waiting_for_semaphore"] = max(0, stats.get("waiting_for_semaphore", 1) - 1)
             
             # Incrémenter le compteur de tâches en cours
             stats["in_progress"] += 1
@@ -248,10 +254,16 @@ class TextRecipeProcessor(RecipeProcessorBase):
         # Timestamp pour détecter les blocages
         waiting_start_time = datetime.now()
         
+        # Incrémenter le compteur des tâches en attente de sémaphore
+        stats["waiting_for_semaphore"] = stats.get("waiting_for_semaphore", 0) + 1
+        
         async with self.semaphore:
             start_time = datetime.now()
             waiting_duration = (start_time - waiting_start_time).total_seconds()
             await updates_queue.put((str(text_file), "info", f"Got semaphore after {waiting_duration:.1f}s"))
+            
+            # Décrémenter le compteur des tâches en attente de sémaphore
+            stats["waiting_for_semaphore"] = max(0, stats.get("waiting_for_semaphore", 1) - 1)
             
             # Incrémenter le compteur de tâches en cours
             stats["in_progress"] += 1

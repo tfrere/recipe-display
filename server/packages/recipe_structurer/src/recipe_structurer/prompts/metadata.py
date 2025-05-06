@@ -49,7 +49,7 @@ CRITICAL REQUIREMENTS:
      * meat: All meat and poultry
      * produce: Fresh fruits and vegetables
      * egg: All types of eggs
-     * dairy: Milk, cheese, and dairy products
+     * dairy: Milk, cheese, and dairy products ( ex : double cream, whole milk, yogurt, etc. Do not include tofu, soy milk, etc. )
      * pantry: Dry goods, flour, rice, pasta
      * spice: Herbs, spices, seasonings
      * condiment: Sauces, oils, vinegars

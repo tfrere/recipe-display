@@ -52,5 +52,5 @@ RUN poetry config virtualenvs.create false && \
 # Expose port
 EXPOSE $PORT
 
-# Start the application
-CMD ["sh", "-c", "poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001}"]
+# Start the application avec des paramètres de timeout augmentés
+CMD ["sh", "-c", "poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001} --timeout-keep-alive 120 --limit-concurrency 100"]

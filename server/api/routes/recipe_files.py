@@ -4,6 +4,10 @@ import shutil
 import os
 from typing import List
 import logging
+import asyncio
+import zipfile
+import io
+from starlette.responses import JSONResponse
 
 # Configurer le logging
 logging.basicConfig(level=logging.INFO)
@@ -84,8 +88,21 @@ async def upload_recipe_file(file: UploadFile = File(...)):
     try:
         file_path = RECIPES_DIR / file.filename
         logger.info(f"Uploading recipe file to: {file_path}")
-        with open(file_path, "wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
+        logger.info(f"File size: {os.fstat(file.file.fileno()).st_size / 1024:.2f} KB")
+        
+        # Utilisation d'une opération asynchrone pour ne pas bloquer le serveur
+        # lors de l'écriture de fichiers volumineux
+        async def save_file():
+            with open(file_path, "wb") as buffer:
+                # Copier par blocs pour éviter de charger tout le fichier en mémoire
+                chunk_size = 1024 * 64  # 64KB chunks
+                while True:
+                    chunk = await file.read(chunk_size)
+                    if not chunk:
+                        break
+                    buffer.write(chunk)
+        
+        await save_file()
         logger.info(f"File {file.filename} uploaded successfully to {file_path}")
         return {"message": f"File {file.filename} uploaded successfully"}
     except Exception as e:
@@ -98,12 +115,88 @@ async def upload_recipe_image(file: UploadFile = File(...)):
     try:
         file_path = IMAGES_DIR / file.filename
         logger.info(f"Uploading image to: {file_path}")
-        with open(file_path, "wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
+        logger.info(f"Image size: {os.fstat(file.file.fileno()).st_size / 1024:.2f} KB")
+        
+        # Utilisation d'une opération asynchrone pour ne pas bloquer le serveur
+        async def save_image():
+            with open(file_path, "wb") as buffer:
+                # Copier par blocs pour éviter de charger toute l'image en mémoire
+                chunk_size = 1024 * 64  # 64KB chunks
+                while True:
+                    chunk = await file.read(chunk_size)
+                    if not chunk:
+                        break
+                    buffer.write(chunk)
+        
+        await save_image()
         logger.info(f"Image {file.filename} uploaded successfully to {file_path}")
         return {"message": f"Image {file.filename} uploaded successfully"}
     except Exception as e:
         logger.error(f"Error uploading image: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/upload-batch")
+async def upload_recipes_batch(archive: UploadFile = File(...)):
+    """Upload multiple recipe files in a single ZIP archive."""
+    try:
+        logger.info(f"Receiving batch upload via ZIP archive")
+        logger.info(f"Archive size: {os.fstat(archive.file.fileno()).st_size / 1024:.2f} KB")
+        
+        # Lecture du fichier ZIP en mémoire
+        content = await archive.read()
+        zip_bytes = io.BytesIO(content)
+        
+        # Traitement et extraction des fichiers
+        results = {"recipes": [], "images": []}
+        
+        with zipfile.ZipFile(zip_bytes, 'r') as zip_ref:
+            files_list = zip_ref.namelist()
+            logger.info(f"ZIP archive contains {len(files_list)} files")
+            
+            for filename in files_list:
+                try:
+                    # Déterminer si c'est une recette ou une image
+                    if filename.endswith('.recipe.json'):
+                        # Extraire le fichier de recette
+                        file_content = zip_ref.read(filename)
+                        file_path = RECIPES_DIR / os.path.basename(filename)
+                        
+                        with open(file_path, 'wb') as f:
+                            f.write(file_content)
+                        
+                        logger.info(f"Extracted recipe file: {os.path.basename(filename)}")
+                        results["recipes"].append(os.path.basename(filename))
+                    
+                    elif any(filename.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
+                        # Extraire l'image
+                        if '/' in filename:
+                            # Si l'image est dans un sous-dossier (e.g. images/)
+                            img_filename = os.path.basename(filename)
+                        else:
+                            img_filename = filename
+                        
+                        file_content = zip_ref.read(filename)
+                        file_path = IMAGES_DIR / img_filename
+                        
+                        with open(file_path, 'wb') as f:
+                            f.write(file_content)
+                        
+                        logger.info(f"Extracted image file: {img_filename}")
+                        results["images"].append(img_filename)
+                
+                except Exception as e:
+                    logger.error(f"Error extracting {filename}: {str(e)}")
+        
+        logger.info(f"Batch upload completed: {len(results['recipes'])} recipes, {len(results['images'])} images")
+        return {
+            "message": "Batch upload successful",
+            "uploaded_recipes": len(results["recipes"]),
+            "uploaded_images": len(results["images"]),
+            "details": results
+        }
+        
+    except Exception as e:
+        logger.error(f"Error processing batch upload: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.delete("/clean")

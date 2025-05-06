@@ -64,8 +64,9 @@ class ProgressTracker:
         completed = stats["success"] + stats["errors"] + stats["skipped"]
         completion_pct = int((completed / stats["total"]) * 100) if stats["total"] > 0 else 0
         
-        # Calculate waiting tasks
-        stats["waiting"] = stats["total"] - completed - stats["in_progress"]
+        # Calculate waiting tasks (vrai waiting = celles qui n'ont pas encore été lancées)
+        waiting_for_semaphore = stats.get("waiting_for_semaphore", 0)
+        stats["waiting"] = stats["total"] - completed - stats["in_progress"] - waiting_for_semaphore
         
         # Estimate total time based on current progress
         est_total_time = "--:--:--"
@@ -168,7 +169,7 @@ class ProgressTracker:
             f"[red]Errors {stats['errors']}[/red] [dim]|[/dim] "
             f"[yellow]Skipped {stats['skipped']}[/yellow] [dim]|[/dim] "
             f"[blue]In Progress {stats['in_progress']}[/blue] [dim]|[/dim] "
-            f"[dim white]Waiting {stats['waiting']}[/dim white]"
+            f"[magenta]Waiting {waiting_for_semaphore}[/magenta]"
         )
         
         # Ajouter un séparateur double après les compteurs
@@ -254,6 +255,14 @@ class ProgressTracker:
                         step_indicator = "✅"  # Successful import
                         emoji_color = "green"
                         current_step_display = "Importing"
+                    elif "waiting" in message.lower() and "semaphore" in message.lower():
+                        step_indicator = "⏳"  # Waiting for semaphore
+                        emoji_color = "magenta"
+                        current_step_display = "Waiting for semaphore"
+                    elif "error" in message.lower():
+                        step_indicator = "❌"  # Error
+                        emoji_color = "red"
+                        current_step_display = "Error"
                     else:
                         step_indicator = "⏳"  # Generic visual indicator
                         emoji_color = "cyan"

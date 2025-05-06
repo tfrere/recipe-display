@@ -6,7 +6,7 @@ from huggingface_hub import InferenceClient, model_info
 from pydantic_ai.settings import ModelSettings
 
 from ..models.recipe import LLMRecipe, LLMRecipeGraph
-from ..utils.get_available_model_provider import get_available_model_provider
+from ..utils.get_available_model_provider import get_available_model_provider, test_provider, prioritize_providers
 
 class StreamingHuggingFaceModel:
     """Custom model that combines streaming, retries and HuggingFace Inference API"""
@@ -37,6 +37,42 @@ class StreamingHuggingFaceModel:
         """Test and get the first available provider for the model"""
         provider = get_available_model_provider(self.model_name, verbose=True)
         return provider
+        
+    def _get_next_available_provider(self) -> str:
+        """Find the next available provider, excluding the current one"""
+        current_provider = getattr(self.client, "provider", None)
+        
+        # Get all available providers for the model
+        try:
+            info = model_info(self.model_name, token=self.api_key, expand="inferenceProviderMapping")
+            if not hasattr(info, "inference_provider_mapping"):
+                return None
+                
+            providers = list(info.inference_provider_mapping.keys())
+            # Exclure le provider actuel
+            providers = [p for p in providers if p != current_provider]
+            
+            # Prioritiser les providers
+            prioritized_providers = prioritize_providers(providers)
+            
+            print(f"Looking for alternative providers, candidates: {', '.join(prioritized_providers)}")
+            
+            # Tester chaque provider
+            for provider in prioritized_providers:
+                try:
+                    if test_provider(self.model_name, provider, verbose=True):
+                        return provider
+                except Exception as e:
+                    print(f"Provider {provider} test failed: {str(e)}")
+                    continue
+            
+            # Si aucun provider disponible dans la liste normale, essayer la liste de secours
+            from ..utils.get_available_model_provider import _test_fallback_providers
+            return _test_fallback_providers(self.model_name, verbose=True)
+            
+        except Exception as e:
+            print(f"Error finding alternative provider: {str(e)}")
+            return None
         
     async def stream_content(self, messages: list[dict[str, str]]) -> tuple[bool, str]:
         """Stream content from the model and return final response"""
@@ -106,7 +142,27 @@ class StreamingHuggingFaceModel:
                 return True, final_response
                 
         except Exception as e:
-            print(f"\n❌ API Error: {str(e)}")
+            error_str = str(e)
+            # Vérifier si c'est une erreur de rate limit ou timeout
+            if ("rate_limit_exceeded" in error_str or "status_code=429" in error_str or 
+                "timed out" in error_str.lower()):
+                print(f"\n⚠️ Provider {getattr(self.client, 'provider', 'unknown')} rate limited or timed out. Trying another provider...")
+                
+                # Essayer de changer de provider
+                new_provider = self._get_next_available_provider()
+                if new_provider:
+                    print(f"✅ Switching to provider: {new_provider}")
+                    self.client = InferenceClient(
+                        token=self.api_key,
+                        provider=new_provider,
+                    )
+                    # Réessayer avec le nouveau provider
+                    return await self.stream_content(messages)
+                else:
+                    print("❌ No alternative providers available")
+            
+            # Si ce n'est pas une erreur de rate limit ou si aucun autre provider n'est disponible
+            print(f"\n❌ API Error: {error_str}")
             if hasattr(e, 'response'):
                 print(f"Response details: {e.response}")
             raise

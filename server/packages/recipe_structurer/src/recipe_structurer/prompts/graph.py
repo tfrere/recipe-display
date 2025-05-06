@@ -10,7 +10,7 @@ CRITICAL REQUIREMENTS:
    - time: Duration ("5min", "1h", "1h30min")
    - stepType: One of ["prep", "combine", "cook"]
    - stepMode: One of ["active", "passive"]
-   - subRecipe: Name of the sub-recipe this step belongs to (default: "main") ( Just add the main name, no need to add the recipe name before. Ex : "Black lime focaccia with smoky chipotle oil - smoky chipotle oil", you can keep only "smoky chipotle oil" )
+   - subRecipe: Name of the sub-recipe this step belongs to.
    - inputs: List of ingredients or states used, each with:
      * input_type: "ingredient" or "state"
      * ref_id: ID of ingredient or state
@@ -38,11 +38,9 @@ CRITICAL REQUIREMENTS:
    - Each step's output_state must be used as input in a later step (except final)
    - The last step's output_state must be the final_state
    - final_state must have type="final" and a comprehensive description
-   - For the subRecipe :
-      - Steps within a sub-recipe should have the same subRecipe value (matching the sub-recipe name)
-      - If the recipe has multiple components (like "main dish" and "sauce"), each component should have its specific subRecipe name (e.g., "chicken curry", "yogurt sauce").
-      - If you have preheat step, you have to add it at the beginning of the concerned sub-recipe. It's mandatory.
-      - If you have a step with something like "Preheat oven to 180°C (350°F)" you have to add it at the beginning of the concerned sub-recipe. ( often subRecipes where you have an oven step )
+   - For the subRecipe, keep the name of the subRecipe as it is in the original recipe.
+   - For the subRecipe, If you have a step with something like "Preheat oven to 180°C (350°F)" you have to add it at the beginning of the concerned sub-recipe. ( often subRecipes where you have an oven step )
+   - For the subRecipe, If you have preheat step, you have to add it at the beginning of the concerned sub-recipe. It's mandatory.
 
 4. Ingredient initial state:
    - If an ingredient requires preparation before being used (like chopping, slicing, dicing, etc.), indicate this in the "initialState" field

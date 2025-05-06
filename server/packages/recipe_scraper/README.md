@@ -1,54 +1,78 @@
 # Recipe Scraper
 
-Utilitaire en ligne de commande pour extraire des recettes à partir d'URLs ou de fichiers texte, les structurer et les enregistrer au format JSON.
+Outil pour extraire, structurer et enrichir des recettes de cuisine à partir d'URLs ou de fichiers texte.
+
+## Fonctionnalités
+
+- Extraction de recettes depuis des sites web
+- Structuration de recettes à partir de texte brut
+- Enrichissement automatique avec des données nutritionnelles et saisonnières
+- Génération de fichiers JSON standardisés
 
 ## Installation
 
 ```bash
+# Installation du package
 cd server/packages/recipe_scraper
 poetry install
 ```
 
 ## Utilisation
 
-Le scraper peut être utilisé de deux façons :
-
-### Mode URL
-
-Pour extraire une recette à partir d'une URL :
+### Extraction depuis une URL
 
 ```bash
 recipe-scraper --mode url --url https://example.com/recipe --output-folder ./recipes
 ```
 
-Si le site nécessite une authentification, vous pouvez fournir un fichier de paramètres d'authentification :
+Avec authentification :
 
 ```bash
 recipe-scraper --mode url --url https://example.com/recipe --credentials auth_presets.json --output-folder ./recipes
 ```
 
-### Mode Texte
-
-Pour structurer une recette à partir d'un fichier texte :
+### Structuration depuis un fichier texte
 
 ```bash
 recipe-scraper --mode text --input-file recipe.txt --output-folder ./recipes
 ```
 
+### Enrichissement autonome de recettes existantes
+
+Vous pouvez enrichir des recettes déjà structurées en JSON :
+
+```bash
+# Depuis le module principal
+poetry run python -m recipe_scraper.recipe_enricher --recipes_dir ./recipes
+
+# Ou directement depuis l'outil installé
+recipe-enricher --recipes_dir ./recipes --output_dir ./enriched_recipes
+```
+
+L'enrichisseur ajoute automatiquement :
+
+- Classification des régimes alimentaires (omnivore, végétarien, etc.)
+- Données de saisonnalité des ingrédients
+- Calcul des temps de préparation et de cuisson
+
 ## Options
 
 ```
---mode {url,text}        Mode d'extraction : 'url' pour extraction web, 'text' pour traitement de fichiers texte
---url URL                URL à extraire (requis en mode 'url')
---input-file FICHIER     Fichier texte à traiter (requis en mode 'text')
---credentials FICHIER    Chemin vers un fichier JSON contenant les identifiants d'authentification
---output-folder DOSSIER  Dossier pour enregistrer les recettes extraites (par défaut: ./output)
---verbose, -v            Activer la journalisation détaillée
+Extraction de recettes :
+--mode {url,text}        Mode d'extraction : 'url' ou 'text'
+--url URL                URL à extraire (mode 'url')
+--input-file FICHIER     Fichier texte à traiter (mode 'text')
+--credentials FICHIER    Fichier JSON d'identifiants d'authentification
+--output-folder DOSSIER  Dossier de destination (défaut: ./output)
+--verbose, -v            Journalisation détaillée
+
+Enrichissement :
+--recipes_dir DIR        Répertoire contenant les recettes à enrichir
+--output_dir DIR         Répertoire de sortie (optionnel)
+--no-backup              Ne pas créer de sauvegarde des fichiers originaux
 ```
 
-## Format des identifiants
-
-Le fichier de paramètres d'authentification doit suivre le format suivant :
+## Format d'authentification
 
 ```json
 {
@@ -64,4 +88,8 @@ Le fichier de paramètres d'authentification doit suivre le format suivant :
 
 ## Résultat
 
-Le scraper créera un fichier JSON avec les données structurées de la recette et téléchargera une image (si disponible) dans le dossier de sortie spécifié. Le fichier JSON sera nommé en utilisant le slug de la recette : `<slug>.recipe.json`.
+Le processus génère :
+
+- Un fichier JSON structuré (`<slug>.recipe.json`)
+- Une image de la recette (si disponible)
+- Des métadonnées enrichies (régime, saison, temps de préparation)

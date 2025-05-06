@@ -79,8 +79,8 @@ async def main():
         "-c",
         "--concurrent",
         type=int,
-        default=5,
-        help="Number of concurrent imports (default: 5)"
+        default=10,
+        help="Number of concurrent imports (default: 10)"
     )
     parser.add_argument(
         "-a",

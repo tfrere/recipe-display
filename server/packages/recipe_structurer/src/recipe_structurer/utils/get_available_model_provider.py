@@ -1,41 +1,10 @@
 import os
 import logging
-import json
 from huggingface_hub import model_info, InferenceClient
 from dotenv import load_dotenv
 
-
-
-# Definition of preferred providers, used in get_available_model_provider.py
-# PREFERRED_PROVIDERS = ["sambanova", "novita"]
-PREFERRED_PROVIDERS = ["fireworks-ai", "sambanova", "novita"]
-
-# Default models to evaluate for evaluation
-DEFAULT_EVALUATION_MODELS = [
-    "Qwen/QwQ-32B",
-    "Qwen/Qwen2.5-72B-Instruct",
-    "Qwen/Qwen2.5-32B-Instruct",
-    "meta-llama/Llama-3.1-8B-Instruct",
-    "meta-llama/Llama-3.3-70B-Instruct",
-    "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-    "mistralai/Mistral-Small-24B-Instruct-2501",
-]
-
-# Modèles alternatifs à utiliser si le modèle par défaut n'est pas disponible
-ALTERNATIVE_BENCHMARK_MODELS = [
-    "meta-llama/Llama-3.3-70B-Instruct",
-    "meta-llama/Llama-3.1-8B-Instruct",
-    "Qwen/Qwen2.5-72B-Instruct",
-    "mistralai/Mistral-Small-24B-Instruct-2501",
-    # Modèles open-source qui peuvent fonctionner sans authentification
-    "HuggingFaceH4/zephyr-7b-beta",
-    "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-    "microsoft/phi-2",
-]
-
-# Required model for create_bench_config_file.py (only one default model)
-DEFAULT_BENCHMARK_MODEL = "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
-
+# Definition of preferred providers
+PREFERRED_PROVIDERS = ["fireworks-ai", "groq", "nebius", "together", "deepinfra", "cohere", "perplexity", "anthropic", "sambanova", "novita"]
 
 # Load environment variables once at the module level
 load_dotenv()
@@ -60,10 +29,7 @@ def test_provider(model_name: str, provider: str, verbose: bool = False) -> bool
     Returns:
         True if the provider is available, False otherwise
     """
-
     try:
-        load_dotenv()
-        
         # Get HF token from environment
         hf_token = os.environ.get("HF_TOKEN")
         if not hf_token:
@@ -72,12 +38,6 @@ def test_provider(model_name: str, provider: str, verbose: bool = False) -> bool
                 print("WARNING: HF_TOKEN is missing. Most model providers require valid authentication.")
             # Essayer sans token (pour certains providers qui acceptent des requêtes anonymes)
             return _test_provider_without_token(model_name, provider, verbose)
-        
-        # Get HF organization from environment
-        hf_organization = os.environ.get("HF_ORGANIZATION")
-        if not hf_organization:
-            if verbose:
-                logger.warning("HF_ORGANIZATION not defined in environment")
         
         if verbose:
             logger.info(f"Testing provider {provider} for model {model_name}")
@@ -88,7 +48,6 @@ def test_provider(model_name: str, provider: str, verbose: bool = False) -> bool
                 model=model_name,
                 token=hf_token,
                 provider=provider,
-                # bill_to=hf_organization if hf_organization else None,
                 timeout=3  # Increased timeout to allow model loading
             )
                 
@@ -318,7 +277,7 @@ def _test_fallback_providers(model_name, verbose=False):
         Le premier provider disponible ou None
     """
     # Liste de providers à tester en direct
-    default_providers = ["huggingface", "sambanova", "novita", "fireworks-ai", "together", "openai", "anthropic"]
+    default_providers = ["huggingface", "fireworks-ai", "groq", "nebius", "together", "deepinfra", "cohere", "perplexity", "anthropic", "sambanova", "novita", "openai"]
     
     if verbose:
         logger.warning(f"Using fallback providers list for {model_name}: {', '.join(default_providers)}")
@@ -337,194 +296,3 @@ def _test_fallback_providers(model_name, verbose=False):
                 logger.warning(f"FALLBACK: Error testing provider {provider} for {model_name}: {str(e)}")
     
     return None
-
-def test_models(verbose=True):
-    """
-    Test le modèle par défaut et les modèles alternatifs, puis retourne un résumé des résultats.
-    
-    Args:
-        verbose: Afficher les logs détaillés
-        
-    Returns:
-        Un dictionnaire avec les résultats des tests
-    """
-    results = {
-        "default_model": None,
-        "working_model": None,
-        "provider": None,
-        "all_models": {},
-        "available_models": [],
-        "unavailable_models": []
-    }
-    
-    print("\n===== Checking HuggingFace Authentication =====")
-    # Obtenez le jeton HF
-    hf_token = os.environ.get("HF_TOKEN")
-    if hf_token:
-        print("✅ HF_TOKEN is available")
-        
-        # Vérifier si le token a un format valide (vérification simple)
-        if not hf_token.startswith("hf_"):
-            print("⚠️ WARNING: Your HF_TOKEN does not start with 'hf_' which is unusual. Please verify its format.")
-        
-        # Ne montrer aucun caractère du token, juste indiquer sa présence
-        masked_token = "••••••••••"
-        
-        # Vérifier la validité du token en testant directement l'API d'inférence
-        import requests
-        try:
-            # Test avec un modèle public simple (gpt2)
-            test_model = "gpt2"
-            api_url = f"https://api-inference.huggingface.co/models/{test_model}"
-            
-            print(f"Testing token with inference API on public model {test_model}...")
-            
-            headers = {"Authorization": f"Bearer {hf_token}"}
-            payload = {"inputs": "Hello, how are you?"}
-            
-            response = requests.post(api_url, headers=headers, json=payload, timeout=10)
-            
-            if response.status_code in [200, 503]:  # 503 = modèle en cours de chargement, mais le token est accepté
-                print(f"✅ HF_TOKEN validated - Token accepted by the inference API! Status: {response.status_code}")
-                if response.status_code == 503:
-                    print("ℹ️ Model is loading, but token is valid")
-                
-                # Si le token est valide pour l'API d'inférence, vérifions également si nous pouvons obtenir
-                # des informations sur l'utilisateur (mais ce n'est pas bloquant si ça échoue)
-                try:
-                    whoami_response = requests.get(
-                        "https://huggingface.co/api/whoami",
-                        headers={"Authorization": f"Bearer {hf_token}"}
-                    )
-                    
-                    if whoami_response.status_code == 200:
-                        user_info = whoami_response.json()
-                        print(f"✅ Additional info - Authenticated as: {user_info.get('name', 'Unknown user')}")
-                        
-                        # Vérifier si l'utilisateur a accès à des modèles payants
-                        if user_info.get('canPay', False):
-                            print("✅ Your account has payment methods configured - you may have access to premium models")
-                        else:
-                            print("ℹ️ Your account does not have payment methods configured - access to premium models may be limited")
-                except Exception:
-                    # Ignorer les erreurs lors de la récupération des infos utilisateur
-                    pass
-            else:
-                print(f"❌ HF_TOKEN validation failed with status code: {response.status_code}")
-                error_message = "Unknown error"
-                try:
-                    error_data = response.json()
-                    if "error" in error_data:
-                        error_message = error_data["error"]
-                        print(f"❌ Error message: {error_message}")
-                except:
-                    print(f"❌ Error message: {response.text}")
-                
-                print("⚠️ Most model providers will not work with invalid credentials")
-                
-                # Test alternatif avec l'endpoint status
-                try:
-                    print("Attempting alternative validation with status endpoint...")
-                    status_url = "https://api-inference.huggingface.co/status"
-                    status_response = requests.get(status_url, headers=headers, timeout=10)
-                    
-                    if status_response.status_code == 200:
-                        print("✅ Token can access the status endpoint. This is partially good news.")
-                    else:
-                        print(f"❌ Status endpoint test also failed: {status_response.status_code}")
-                except Exception as e:
-                    print(f"❌ Alternative validation also failed: {str(e)}")
-        except Exception as e:
-            print(f"❌ Error validating HF_TOKEN with inference API: {str(e)}")
-    else:
-        print("❌ HF_TOKEN is missing - authentication to HuggingFace API will fail")
-        print("⚠️ Most models and providers require authentication")
-
-    # Obtenez l'organisation HF
-    hf_organization = os.environ.get("HF_ORGANIZATION")
-    if hf_organization:
-        print(f"✅ HF_ORGANIZATION is available: {hf_organization}")
-    else:
-        print("ℹ️ HF_ORGANIZATION is not set")
-    
-    if verbose:
-        print(f"\n===== Testing main default model: {DEFAULT_BENCHMARK_MODEL} =====")
-        
-    # Test du modèle par défaut
-    provider = get_available_model_provider(DEFAULT_BENCHMARK_MODEL, verbose=verbose)
-    
-    if provider:
-        if verbose:
-            print(f"\n✅ SUCCESS: Found provider for default model {DEFAULT_BENCHMARK_MODEL}: {provider}")
-        results["default_model"] = DEFAULT_BENCHMARK_MODEL
-        results["working_model"] = DEFAULT_BENCHMARK_MODEL
-        results["provider"] = provider
-    else:
-        if verbose:
-            print(f"\n❌ DEFAULT MODEL FAILED: No provider found for {DEFAULT_BENCHMARK_MODEL}")
-            print("Trying alternative models...")
-        
-        # Essayer les modèles alternatifs
-        for alt_model in ALTERNATIVE_BENCHMARK_MODELS:
-            if verbose:
-                print(f"\nTrying alternative model: {alt_model}")
-            alt_provider = get_available_model_provider(alt_model, verbose=verbose)
-            if alt_provider:
-                if verbose:
-                    print(f"\n✅ SUCCESS: Found provider for alternative model {alt_model}: {alt_provider}")
-                results["working_model"] = alt_model
-                results["provider"] = alt_provider
-                break
-            elif verbose:
-                print(f"❌ Failed to find provider for alternative model: {alt_model}")
-        else:
-            if verbose:
-                print("\n❌ ALL MODELS FAILED: No provider found for any model")
-                print("\n⚠️ This is likely due to authentication issues with your HF_TOKEN")
-                print("⚠️ Please check your token or try using models that don't require authentication")
-    
-    # Tester tous les modèles pour avoir une vue d'ensemble
-    models = [
-        "Qwen/QwQ-32B",
-        "Qwen/Qwen2.5-72B-Instruct",
-        "Qwen/Qwen2.5-32B-Instruct",
-        "meta-llama/Llama-3.1-8B-Instruct",
-        "meta-llama/Llama-3.3-70B-Instruct",
-        "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-        "mistralai/Mistral-Small-24B-Instruct-2501",
-    ]
-
-    if verbose:
-        print("\n===== Testing all available models =====")
-
-    for model in models:
-        provider = get_available_model_provider(model, verbose)
-        results["all_models"][model] = provider
-        if provider:
-            results["available_models"].append((model, provider))
-        else:
-            results["unavailable_models"].append(model)
-    
-    if verbose:
-        print("\n===== Results Summary =====")
-        if results["available_models"]:
-            print("Models with available providers:")
-            for model, provider in results["available_models"]:
-                print(f"✅ Model: {model}, Provider: {provider}")
-        else:
-            print("❌ No models with available providers found")
-            print("⚠️ Please check your HF_TOKEN and permissions")
-            
-        if results["unavailable_models"]:
-            print("\nModels with no available providers:")
-            for model in results["unavailable_models"]:
-                print(f"❌ {model}")
-        
-        print(f"\nTotal Available Models: {len(results['available_models'])}")
-        print(f"Total Unavailable Models: {len(results['unavailable_models'])}")
-    
-    return results
-        
-if __name__ == "__main__":
-    # Exécuter le test si le script est lancé directement
-    test_results = test_models(verbose=True)

@@ -78,6 +78,7 @@ class RecipeImporter:
             "skipped": 0,
             "in_progress": 0,
             "waiting": 0,  # Nouveau compteur pour les tâches en attente
+            "waiting_for_semaphore": 0,  # Compteur pour les tâches en attente de sémaphore
             "completed": 0,  # Compteur pour les tâches terminées
             "concurrent_imports": self.concurrent_imports
         }
@@ -132,6 +133,7 @@ class RecipeImporter:
             "skipped": 0,
             "in_progress": 0,
             "waiting": 0,  # Nouveau compteur pour les tâches en attente
+            "waiting_for_semaphore": 0,  # Compteur pour les tâches en attente de sémaphore
             "completed": 0,  # Compteur pour les tâches terminées
             "concurrent_imports": self.concurrent_imports
         }
