@@ -10,6 +10,7 @@ import json
 import logging
 import os
 import sys
+import time
 from pathlib import Path
 from typing import Dict, Any, Optional
 
@@ -60,47 +61,41 @@ def parse_credentials(credentials_path: Optional[str]) -> Optional[Dict[str, Any
 
 async def main_async(args: argparse.Namespace) -> int:
     """Asynchronous main function to handle recipe scraping."""
-    # Setup the output folders
-    recipe_output_folder = Path(args.recipe_output_folder)
-    image_output_folder = Path(args.image_output_folder)
-    recipe_output_folder.mkdir(parents=True, exist_ok=True)
-    image_output_folder.mkdir(parents=True, exist_ok=True)
-    
-    logging.info(f"Starting recipe scraper with mode: {args.mode}")
-    logging.info(f"Recipe output folder: {recipe_output_folder.absolute()}")
-    logging.info(f"Image output folder: {image_output_folder.absolute()}")
-    
-    # Create the scraper
-    scraper = RecipeScraper()
-    
-    # Set the output folders for recipes and images
-    scraper._recipe_output_folder = recipe_output_folder
-    scraper._image_output_folder = image_output_folder
-    
-    # Parse credentials if provided
+    # Initialize variables
+    image_path = None
     credentials = None
-    if args.credentials:
-        logging.info(f"Reading authentication credentials from: {args.credentials}")
-        credentials = parse_credentials(args.credentials)
-        if not credentials:
-            logging.warning("No valid credentials found or failed to parse credentials file")
-    
-    # Define the progress callback function
-    async def progress_callback(message: str):
-        # In non-verbose mode, we only print the main stage updates
-        if not args.verbose:
-            print(f">>> {message}")
-        else:
-            # Ensure that all progress messages in verbose mode also use the >>> prefix
-            # so the recipe_service can properly track them
-            if "Fetching" in message or "Structuring" in message or "Processing" in message or \
-               "Saving" in message or "sauvegarde" in message.lower() or "Downloading" in message or \
-               "Enriching" in message:
-                print(f">>> {message}")
-            else:
-                print(f"CLI output: {message}")
     
     try:
+        # Load credentials if provided
+        if args.credentials:
+            try:
+                with open(args.credentials, "r") as f:
+                    credentials = json.load(f)
+                logging.info(f"Reading authentication credentials from: {args.credentials}")
+            except Exception as e:
+                logging.error(f"Failed to read credentials file: {str(e)}")
+                return 1
+
+        # Initialize scraper with correct paths immediately
+        scraper = RecipeScraper()
+        
+        # Convert paths to absolute paths to avoid relative path issues
+        recipe_output_folder = os.path.abspath(args.recipe_output_folder)
+        image_output_folder = os.path.abspath(args.image_output_folder)
+        
+        # Set the paths before any operations that might check for existing recipes
+        scraper._recipe_output_folder = Path(recipe_output_folder)
+        scraper._image_output_folder = Path(image_output_folder)
+        
+        logging.info(f"Recipe output folder: {scraper._recipe_output_folder}")
+        logging.info(f"Image output folder: {scraper._image_output_folder}")
+
+        # Create progress callback if not quiet
+        progress_callback = None
+        if not args.quiet:
+            async def progress_callback(message: str):
+                print(f">>> {message}")
+
         recipe_data = {}
         
         if args.mode == "url":
@@ -147,26 +142,22 @@ async def main_async(args: argparse.Namespace) -> int:
             
             # Process image file if provided
             modified_text_content = text_content
-            image_path = None
             if args.image_file:
                 try:
                     # Check if image file exists
-                    image_file_path = Path(args.image_file)
-                    if not image_file_path.exists():
+                    image_path = Path(args.image_file)
+                    if not image_path.exists():
                         logging.error(f"Image file not found: {args.image_file}")
                         return 1
                     
                     # Reference image in the text content
-                    image_filename = image_file_path.name
-                    image_reference = f"\n\Main recipe image: {image_filename}"
+                    image_filename = image_path.name
+                    image_reference = f"\nMain recipe image: {image_filename}"
                     
                     # Only add the image reference if it's not already mentioned
                     if "Image:" not in text_content:
                         modified_text_content = f"{text_content}{image_reference}"
                         logging.info(f"Added image reference to text: {image_filename}")
-                    
-                    # Store the image path for later processing
-                    image_path = image_file_path
                     
                 except Exception as e:
                     logging.error(f"Error processing image file: {str(e)}")
@@ -179,18 +170,24 @@ async def main_async(args: argparse.Namespace) -> int:
                 progress_callback=progress_callback if not args.quiet else None
             )
             
-            # Check if a duplicate was detected
-            if "error" in recipe_data and recipe_data.get("error") == "Recipe already exists":
+            # Check if recipe already exists (will return None if duplicate)
+            if recipe_data is None:
+                logging.warning(f"Recipe with similar content already exists")
                 if not args.force:
-                    logging.warning(f"Recipe with similar title already exists: {recipe_data.get('file')}")
-                    logging.info(f"Duplicate detected with slug: {recipe_data.get('slug', 'unknown')}")
                     logging.info("Use --force to override this check")
-                    return 0  # Exit with success since it's not an error
+                    # Print a specific error message that can be detected by the service
+                    print("ERROR: Recipe already exists (similar content detected with high similarity)")
+                    # Exit with error code 100 (specific to duplicates)
+                    return 100  # Exit with a specific error code for duplicates
                 else:
-                    logging.info(f"Recipe with similar title exists, but force flag is set. Continuing...")
-                    # We need to re-process but force it to continue
+                    logging.info("Force flag is set. Continuing with recipe generation...")
+                    # Re-attempt the scraping with a modified hash to bypass the check
+                    # Add a timestamp to make the content unique
+                    timestamp = str(time.time())
+                    modified_content = f"{modified_text_content}\n\n<!-- Generated at: {timestamp} -->"
                     recipe_data = await scraper.scrape_from_text(
-                        modified_text_content,
+                        modified_content,
+                        file_name=args.input_file,
                         progress_callback=progress_callback if not args.quiet else None
                     )
         
@@ -208,7 +205,7 @@ async def main_async(args: argparse.Namespace) -> int:
                 recipe_data["totalCookingTime"] = recipe_data["metadata"]["totalCookingTime"]
             
             # Save JSON
-            json_path = recipe_output_folder / f"{slug}.recipe.json" 
+            json_path = scraper._recipe_output_folder / f"{slug}.recipe.json" 
             with open(json_path, 'w') as f:
                 json.dump(recipe_data, f, indent=2)
             
@@ -216,7 +213,7 @@ async def main_async(args: argparse.Namespace) -> int:
             if image_path and image_path.exists():
                 try:
                     # Create image destination path
-                    image_dest = image_output_folder / image_path.name
+                    image_dest = scraper._image_output_folder / image_path.name
                     
                     # Copy the image
                     import shutil
@@ -237,35 +234,40 @@ async def main_async(args: argparse.Namespace) -> int:
                     logging.error(f"Error copying image: {str(e)}")
             
             logging.info(f"Recipe successfully saved to: {json_path}")
-            
-            # Report some stats about the recipe
-            title = recipe_data.get("metadata", {}).get("title", "Untitled recipe")
-            ingredient_count = len(recipe_data.get("ingredients", []))
-            step_count = len(recipe_data.get("steps", []))
-            diets = recipe_data.get("metadata", {}).get("diets", [])
-            seasons = recipe_data.get("metadata", {}).get("seasons", [])
-            
-            logging.info(f"Recipe summary: \"{title}\" - {ingredient_count} ingredients, {step_count} steps")
-            logging.info(f"Diet classifications: {', '.join(diets)}")
-            logging.info(f"Seasonal availability: {', '.join(seasons)}")
-            
             return 0
-        elif "error" in recipe_data:
-            # This is not an error case, just a notification
-            # Make sure to print this in the right format for tracking
-            if "Recipe already exists" in recipe_data.get("error", ""):
-                print(f">>> Recipe already exists: {recipe_data.get('slug', 'unknown')}")
-            return 0  
+        elif recipe_data and "error" in recipe_data:
+            # Vérifier si c'est une erreur de recette existante
+            if "Recipe already exists" in recipe_data["error"]:
+                error_msg = f"Recipe already exists: {recipe_data.get('file', '')}"
+                if "slug" in recipe_data:
+                    error_msg += f", slug: {recipe_data['slug']}"
+                logging.error(error_msg)
+                print(error_msg, file=sys.stderr)
+                return 1
+            else:
+                logging.error(f"Error: {recipe_data['error']}")
+                print(f"Error: {recipe_data['error']}", file=sys.stderr)
+                return 1
         else:
-            logging.error("Failed to process recipe: No data returned from scraper")
+            error_msg = "Failed to generate recipe from text"
+            logging.error(error_msg)
+            print(error_msg, file=sys.stderr)
             return 1
-            
+        
     except Exception as e:
         logging.error(f"An unexpected error occurred: {str(e)}")
-        if args.verbose:
-            import traceback
-            traceback.print_exc()
+        import traceback
+        logging.error(traceback.format_exc())
         return 1
+        
+    finally:
+        # Clean up temporary credentials file
+        if args.credentials and Path(args.credentials).exists():
+            try:
+                Path(args.credentials).unlink()
+                logging.debug(f"Removed temporary credentials file: {args.credentials}")
+            except Exception as e:
+                logging.error(f"Failed to remove temporary credentials file: {str(e)}")
 
 def main() -> int:
     """Main entry point for the command-line interface."""

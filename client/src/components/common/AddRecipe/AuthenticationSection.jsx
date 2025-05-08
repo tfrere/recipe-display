@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   Box,
   FormControl,
@@ -11,13 +11,14 @@ import {
   IconButton,
   Chip,
   Divider,
-} from '@mui/material';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import DeleteIcon from '@mui/icons-material/Delete';
-import axios from 'axios';
+} from "@mui/material";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import DeleteIcon from "@mui/icons-material/Delete";
+import axios from "axios";
 
-const API_BASE_URL = import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001';
+const API_BASE_URL =
+  import.meta.env.VITE_API_ENDPOINT || "http://localhost:3001";
 
 const AuthenticationSection = ({
   showAuth,
@@ -30,12 +31,12 @@ const AuthenticationSection = ({
 }) => {
   const [presets, setPresets] = useState([]);
 
-  // Charger les presets au montage
+  // Load presets on mount
   useEffect(() => {
     const fetchPresets = async () => {
       try {
         const response = await axios.get(`${API_BASE_URL}/api/auth/presets`);
-        // Convertir la map en tableau
+        // Convert map to array
         const presetsArray = Object.entries(response.data).map(
           ([domain, preset]) => ({
             ...preset,
@@ -64,7 +65,7 @@ const AuthenticationSection = ({
     onAuthTypeChange(preset.type);
     onAuthValuesChange({
       ...authValues,
-      // Réinitialiser toutes les valeurs
+      // Reset all values
       cookieName: "",
       cookieValue: "",
       cookieDomain: "",
@@ -72,7 +73,7 @@ const AuthenticationSection = ({
       password: "",
       token: "",
       apiKey: "",
-      // Appliquer les nouvelles valeurs selon le type
+      // Apply new values based on type
       ...(preset.type === "cookie" && {
         cookieName: Object.keys(preset.values)[0] || "",
         cookieValue: Object.values(preset.values)[0] || "",
@@ -95,30 +96,31 @@ const AuthenticationSection = ({
     <Box sx={{ mt: 2 }}>
       <Box
         sx={{
-          display: 'flex',
-          alignItems: 'center',
-          cursor: 'pointer',
+          display: "flex",
+          alignItems: "center",
+          cursor: "pointer",
           mb: 1,
         }}
         onClick={() => !disabled && onToggleAuth()}
       >
-        <IconButton
-          size="small"
-          sx={{ mr: 1 }}
-          disabled={disabled}
-        >
+        <IconButton size="small" sx={{ mr: 1 }} disabled={disabled}>
           {showAuth ? <ExpandLessIcon /> : <ExpandMoreIcon />}
         </IconButton>
-        <Typography variant="body2" color={disabled ? 'text.disabled' : 'text.primary'}>
+        <Typography
+          variant="body2"
+          color={disabled ? "text.disabled" : "text.primary"}
+        >
           Authentication options
         </Typography>
       </Box>
 
       <Collapse in={showAuth}>
         <Box sx={{ mt: 2 }}>
-          {/* Section des presets */}
+          {/* Presets section */}
           <Box sx={{ mb: 2 }}>
-            <Typography variant="body2" sx={{ mb: 1 }}>Saved authentications</Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Saved authentications
+            </Typography>
             {presets.length === 0 ? (
               <Typography variant="body2" color="text.secondary">
                 No saved authentications yet
@@ -141,7 +143,7 @@ const AuthenticationSection = ({
 
           <Divider sx={{ my: 2 }} />
 
-          {/* Formulaire d'authentification */}
+          {/* Authentication form */}
           <FormControl fullWidth sx={{ mb: 2 }}>
             <InputLabel>Authentication type</InputLabel>
             <Select
@@ -156,13 +158,18 @@ const AuthenticationSection = ({
             </Select>
           </FormControl>
 
-          {authType === 'cookie' && (
+          {authType === "cookie" && (
             <>
               <TextField
                 fullWidth
                 label="Cookie name"
                 value={authValues.cookieName}
-                onChange={(e) => onAuthValuesChange({ ...authValues, cookieName: e.target.value })}
+                onChange={(e) =>
+                  onAuthValuesChange({
+                    ...authValues,
+                    cookieName: e.target.value,
+                  })
+                }
                 disabled={disabled}
                 sx={{ mb: 2 }}
               />
@@ -170,7 +177,12 @@ const AuthenticationSection = ({
                 fullWidth
                 label="Cookie value"
                 value={authValues.cookieValue}
-                onChange={(e) => onAuthValuesChange({ ...authValues, cookieValue: e.target.value })}
+                onChange={(e) =>
+                  onAuthValuesChange({
+                    ...authValues,
+                    cookieValue: e.target.value,
+                  })
+                }
                 disabled={disabled}
                 sx={{ mb: 2 }}
               />
@@ -178,19 +190,29 @@ const AuthenticationSection = ({
                 fullWidth
                 label="Cookie domain"
                 value={authValues.cookieDomain}
-                onChange={(e) => onAuthValuesChange({ ...authValues, cookieDomain: e.target.value })}
+                onChange={(e) =>
+                  onAuthValuesChange({
+                    ...authValues,
+                    cookieDomain: e.target.value,
+                  })
+                }
                 disabled={disabled}
               />
             </>
           )}
 
-          {authType === 'basic' && (
+          {authType === "basic" && (
             <>
               <TextField
                 fullWidth
                 label="Username"
                 value={authValues.username}
-                onChange={(e) => onAuthValuesChange({ ...authValues, username: e.target.value })}
+                onChange={(e) =>
+                  onAuthValuesChange({
+                    ...authValues,
+                    username: e.target.value,
+                  })
+                }
                 disabled={disabled}
                 sx={{ mb: 2 }}
               />
@@ -199,28 +221,37 @@ const AuthenticationSection = ({
                 type="password"
                 label="Password"
                 value={authValues.password}
-                onChange={(e) => onAuthValuesChange({ ...authValues, password: e.target.value })}
+                onChange={(e) =>
+                  onAuthValuesChange({
+                    ...authValues,
+                    password: e.target.value,
+                  })
+                }
                 disabled={disabled}
               />
             </>
           )}
 
-          {authType === 'bearer' && (
+          {authType === "bearer" && (
             <TextField
               fullWidth
               label="Token"
               value={authValues.token}
-              onChange={(e) => onAuthValuesChange({ ...authValues, token: e.target.value })}
+              onChange={(e) =>
+                onAuthValuesChange({ ...authValues, token: e.target.value })
+              }
               disabled={disabled}
             />
           )}
 
-          {authType === 'apikey' && (
+          {authType === "apikey" && (
             <TextField
               fullWidth
               label="API Key"
               value={authValues.apiKey}
-              onChange={(e) => onAuthValuesChange({ ...authValues, apiKey: e.target.value })}
+              onChange={(e) =>
+                onAuthValuesChange({ ...authValues, apiKey: e.target.value })
+              }
               disabled={disabled}
             />
           )}

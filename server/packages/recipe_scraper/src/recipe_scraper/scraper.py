@@ -7,11 +7,13 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Dict, Any, Optional, List, Callable
+from typing import Dict, Any, Optional, List, Callable, Tuple
 import uuid
 from dotenv import load_dotenv
 import unicodedata  # Added for handling accents
 from datetime import datetime
+import base64
+import difflib  # Added for text similarity comparison
 
 # Load environment variables
 load_dotenv()
@@ -156,14 +158,12 @@ class RecipeScraper:
         
         logger.debug(f"Web content successfully retrieved. Title: \"{web_content.title}\"")
         
-        # Structure the recipe
-        recipe_data = await self._structure_recipe(web_content, progress_callback)
+        # Créer un dictionnaire de métadonnées avec l'URL source
+        metadata = {"sourceUrl": url}
         
-        # Add the source URL to the recipe metadata
-        if recipe_data and "metadata" in recipe_data:
-            recipe_data["metadata"]["sourceUrl"] = url
-            logger.debug("Source URL added to recipe metadata")
-            
+        # Structure the recipe
+        recipe_data = await self._structure_recipe(web_content, progress_callback, metadata=metadata)
+        
         if progress_callback:
             await progress_callback("Processing completed")
             
@@ -186,6 +186,13 @@ class RecipeScraper:
             
         logger.info("Processing recipe from text input")
         
+        # Check for similar recipes using text similarity
+        similar_recipe_path, similarity = self._find_similar_recipe(text.strip())
+        if similar_recipe_path and similarity >= 0.85:  # 85% similarity threshold
+            logger.warning(f"Recipe with similar content (similarity: {similarity:.2%}) already exists: {similar_recipe_path}")
+            # Return None to match behavior of scrape_from_url when a duplicate is found
+            return None
+        
         # If file_name is provided, check if a recipe with a similar slug already exists
         if file_name:
             # Extract the file name without extension
@@ -196,7 +203,7 @@ class RecipeScraper:
             slug_match = self._check_slug_exists(potential_slug)
             if slug_match:
                 logger.warning(f"Recipe with similar title from file {file_name} already exists: {slug_match}")
-                return {"error": "Recipe already exists", "file": slug_match, "slug": potential_slug}
+                return None
         
         # Create a WebContent object with the provided text
         web_content = WebContent(
@@ -205,16 +212,107 @@ class RecipeScraper:
             image_urls=[]  # No images from text mode
         )
         
+        # Créer un dictionnaire de métadonnées avec le texte original
+        metadata = {
+            "originalContent": text  # Store the original text for similarity comparison
+        }
+        
         # Structure the recipe
-        return await self._structure_recipe(web_content, progress_callback)
+        recipe_data = await self._structure_recipe(web_content, progress_callback, metadata=metadata)
+        
+        return recipe_data
     
-    async def _structure_recipe(self, web_content: WebContent, progress_callback: Optional[Callable[[str], None]] = None) -> Dict[str, Any]:
+    def _find_similar_recipe(self, text: str) -> Tuple[Optional[str], float]:
+        """
+        Find the most similar recipe based on text content.
+        
+        Args:
+            text: The recipe text to compare
+            
+        Returns:
+            A tuple containing the path to the most similar recipe and its similarity score (0-1)
+        """
+        if not self._recipe_output_folder.exists():
+            logger.warning(f"Recipe output folder does not exist: {self._recipe_output_folder}")
+            return None, 0.0
+        
+        logger.info(f"Checking for similar recipes in {self._recipe_output_folder}")
+        
+        # Look for recipe files in the output folder
+        recipe_files = list(self._recipe_output_folder.glob("*.recipe.json"))
+        
+        # If there are no recipe files, return None
+        if not recipe_files:
+            logger.warning(f"No recipe files found in {self._recipe_output_folder}")
+            return None, 0.0
+        
+        logger.info(f"Found {len(recipe_files)} recipe files to check for similarity")
+        
+        # Track the most similar recipe and its score
+        most_similar_recipe = None
+        highest_similarity = 0.0
+        
+        # Check each recipe file for originalContent to compare
+        for recipe_file in recipe_files:
+            try:
+                with open(recipe_file, "r") as f:
+                    recipe_data = json.load(f)
+                    
+                # Get the original content for comparison
+                original_content = recipe_data.get("metadata", {}).get("originalContent")
+                if not original_content:
+                    logger.debug(f"Recipe {recipe_file.name} has no original content to compare")
+                    continue
+                    
+                # Compare the text with the original content
+                similarity = self._calculate_similarity(text, original_content)
+                logger.debug(f"Recipe {recipe_file.name} similarity: {similarity:.2%}")
+                
+                # Update if this is the most similar recipe so far
+                if similarity > highest_similarity:
+                    highest_similarity = similarity
+                    most_similar_recipe = str(recipe_file)
+                    
+            except (json.JSONDecodeError, FileNotFoundError) as e:
+                logger.error(f"Error reading {recipe_file}: {str(e)}")
+                continue
+        
+        if highest_similarity > 0:
+            logger.info(f"Most similar recipe found: {most_similar_recipe} with similarity {highest_similarity:.2%}")
+        else:
+            logger.info("No similar recipes found")
+            
+        return most_similar_recipe, highest_similarity
+    
+    def _calculate_similarity(self, text1: str, text2: str) -> float:
+        """
+        Calculate the similarity between two texts.
+        
+        Args:
+            text1: First text to compare
+            text2: Second text to compare
+            
+        Returns:
+            A similarity score between 0 and 1
+        """
+        # Normalize texts by removing extra spaces and converting to lowercase
+        text1 = " ".join(text1.lower().split())
+        text2 = " ".join(text2.lower().split())
+        
+        # Use difflib's SequenceMatcher to calculate similarity
+        matcher = difflib.SequenceMatcher(None, text1, text2)
+        similarity = matcher.ratio()
+        
+        return similarity
+    
+    async def _structure_recipe(self, web_content: WebContent, progress_callback: Optional[Callable[[str], None]] = None, metadata: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Structure the web content into a recipe and download one image.
         
         Args:
             web_content: The WebContent object containing the scraped data
             progress_callback: Optional callback for streaming progress updates
+            metadata: Optional metadata to add to the recipe
             
         Returns:
             A dictionary containing the structured recipe data
@@ -251,6 +349,11 @@ class RecipeScraper:
                     recipe_data["metadata"] = {}
                 recipe_data["metadata"]["slug"] = slug
                 logger.debug(f"Generated slug for recipe: {slug}")
+            
+            # Add any provided metadata
+            if metadata and "metadata" in recipe_data:
+                recipe_data["metadata"].update(metadata)
+                logger.debug(f"Added custom metadata: {metadata}")
             
             # Get the source image URL from the metadata if available
             source_image_url = recipe_data.get("metadata", {}).get("sourceImageUrl")
@@ -321,7 +424,41 @@ class RecipeScraper:
         """
         logger.info(f"Downloading image from: {image_url}")
         
-        # First try without authentication
+        # Si c'est une data URL, on la traite directement
+        if image_url.startswith("data:"):
+            try:
+                # Extraire le type MIME et les données
+                header, encoded = image_url.split(",", 1)
+                mime_type = header.split(":")[1].split(";")[0]
+                
+                # Déterminer l'extension
+                if mime_type == "image/svg+xml":
+                    ext = "svg"
+                else:
+                    ext = mime_type.split("/")[1]
+                    if ext == "jpeg":
+                        ext = "jpg"
+                
+                # Créer le nom du fichier
+                image_filename = f"{slug}.{ext}"
+                
+                # Créer le dossier de sortie s'il n'existe pas
+                output_dir = self._image_output_folder
+                output_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Sauvegarder l'image
+                image_path = output_dir / image_filename
+                with open(image_path, "wb") as f:
+                    f.write(base64.b64decode(encoded))
+                
+                logger.info(f"Data URL image successfully saved to {image_path}")
+                return f"images/{image_filename}"
+                
+            except Exception as e:
+                logger.error(f"Failed to process data URL image: {str(e)}")
+                return None
+        
+        # Pour les URLs normales, on continue avec le code existant
         try:
             logger.debug("Attempting to download image without authentication")
             async with httpx.AsyncClient(follow_redirects=True) as client:

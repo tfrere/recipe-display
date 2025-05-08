@@ -29,6 +29,7 @@ import { copyRecipeToClipboard } from "../../../utils/recipeTextUtils";
 import GraphModal from "../../views/GraphView/GraphModal";
 import PrintableRecipe from "./PrintableRecipe";
 import DeleteConfirmationDialog from "../../common/DeleteConfirmationDialog";
+import { useRecipeList } from "../../../contexts/RecipeListContext";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_ENDPOINT || "http://localhost:3001";
@@ -88,7 +89,8 @@ const RecipeHeader = ({ recipe }) => {
     getRemainingTime,
     tools,
   } = useRecipe();
-  const { darkMode, toggleDarkMode } = useTheme();
+  const { fetchRecipes } = useRecipeList();
+  const { darkMode } = useTheme();
   const theme = useTheme();
   const { constants } = useConstants();
   const [openGraph, setOpenGraph] = useState(false);
@@ -174,6 +176,7 @@ const RecipeHeader = ({ recipe }) => {
       );
       if (response.ok) {
         setOpenDeleteDialog(false);
+        await fetchRecipes();
         navigate("/");
       } else {
         console.error("Failed to delete recipe");
@@ -535,6 +538,7 @@ const RecipeHeader = ({ recipe }) => {
                               opacity: 0.7,
                               fontSize: "0.875rem",
                               lineHeight: 1.5,
+                              lineBreak: "anywhere",
                             }}
                           >
                             {metadata.notes[0]}
@@ -558,6 +562,7 @@ const RecipeHeader = ({ recipe }) => {
                                           opacity: 0.7,
                                           fontSize: "0.875rem",
                                           lineHeight: 1.5,
+                                          lineBreak: "anywhere",
                                           mb:
                                             index < metadata.notes.length - 2
                                               ? 1.5

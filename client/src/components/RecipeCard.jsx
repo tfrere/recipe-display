@@ -5,7 +5,6 @@ import RecipeImage from "./common/RecipeImage";
 import BoltIcon from "@mui/icons-material/Bolt";
 import KitchenOutlinedIcon from "@mui/icons-material/KitchenOutlined";
 import TimeDisplay from "./common/TimeDisplay";
-import RecipeTimes from "./common/RecipeTimes";
 import { parseTimeToMinutes } from "../utils/timeUtils";
 
 // Extraire les composants qui ne changent pas pour éviter les re-rendus
@@ -32,7 +31,12 @@ const RecipeCard = memo(
   ({ recipe, style }) => {
     // Mémoriser les calculs qui ne changent pas pour ce recipe
     const ingredientsCount = useMemo(() => {
-      return Object.keys(recipe.ingredients || {}).length;
+      // Vérifier si recipe.ingredients est un tableau ou un objet
+      if (Array.isArray(recipe.ingredients)) {
+        return recipe.ingredients.length;
+      } else {
+        return Object.keys(recipe.ingredients || {}).length;
+      }
     }, [recipe.ingredients]);
     const seasonText = useMemo(() => {
       return Array.isArray(recipe.seasons) && recipe.seasons.length > 0
@@ -88,23 +92,24 @@ const RecipeCard = memo(
             }}
           />
           {recipe.quick && <QuickRecipeBadge />}
-          <Box
-            sx={{
-              position: "absolute",
-              bottom: 8,
-              left: 8,
-              display: "flex",
-              gap: 1,
-              alignItems: "center",
-              padding: "4px 8px",
-              borderRadius: "6px",
-              backdropFilter: "blur(8px)",
-              backgroundColor: "rgba(0, 0, 0, 0.4)",
-              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            {/* Complexité de la recette */}
-            {recipe.complexity && (
+          {/* Boîte en bas à gauche uniquement si recipe.complexity existe */}
+          {recipe.complexity && (
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: 8,
+                left: 8,
+                display: "flex",
+                gap: 1,
+                alignItems: "center",
+                padding: "4px 8px",
+                borderRadius: "6px",
+                backdropFilter: "blur(8px)",
+                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+              }}
+            >
+              {/* Complexité de la recette */}
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                 <BoltIcon fontSize="small" sx={{ color: "white" }} />
                 <Typography
@@ -114,16 +119,8 @@ const RecipeCard = memo(
                   {recipe.complexity}
                 </Typography>
               </Box>
-            )}
-
-            {/* Temps de cuisson */}
-            <RecipeTimes
-              totalTime={recipe.totalTime}
-              totalCookingTime={recipe.totalCookingTime}
-              iconSize="small"
-              sx={{ color: "white", fontWeight: 500 }}
-            />
-          </Box>
+            </Box>
+          )}
         </Box>
         <CardContent
           sx={{

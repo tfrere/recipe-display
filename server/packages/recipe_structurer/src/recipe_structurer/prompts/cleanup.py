@@ -143,6 +143,7 @@ QUALITY_SCORE: [Recipe quality score, from 0 to 100]
 
 SELECTED IMAGE URL:
 [The most relevant URL or empty string if none are suitable]
+[If you have "Main recipe image: https://example.com/image.jpg", you MUST use THIS image url. this is mandatory]
 
 SPECIAL EQUIPMENT:
 - [Tool 1]

@@ -381,10 +381,12 @@ export const RecipeListProvider = ({ children }) => {
       });
 
       const mapToArray = (map, items) =>
-        items.map((item) => ({
-          key: item.id,
-          count: map.get(item.id) || 0,
-        }));
+        items
+          .filter((item) => item.id !== "omnivorous") // Exclude omnivorous from stats
+          .map((item) => ({
+            key: item.id,
+            count: map.get(item.id) || 0,
+          }));
 
       const quickRecipes = filterRecipes(
         recipes,

@@ -52,7 +52,6 @@ const FilterSection = ({
     items.length === 0 && type !== "season"
       ? type === "diet"
         ? [
-            { key: "normal", count: 0 },
             { key: "vegetarian", count: 0 },
             { key: "vegan", count: 0 },
           ]
@@ -64,10 +63,12 @@ const FilterSection = ({
             { key: "dessert", count: 0 },
           ]
         : items
+      : type === "diet"
+      ? items.filter((item) => item.key !== "omnivorous")
       : items;
 
   return (
-    <Box sx={{ display: "flex", gap: 0 }}>
+    <Box sx={{ display: "flex", gap: 0, flexWrap: "wrap" }}>
       {displayItems.map(({ key, count }) => {
         const isSelected = Array.isArray(selectedValue)
           ? selectedValue?.includes(key)
@@ -137,32 +138,6 @@ const FilterTags = () => {
           }}
         >
           <FilterSection
-            items={stats.diet}
-            selectedValue={selectedDiet}
-            onSelect={setSelectedDiet}
-            translatePrefix="recipe.diet"
-            type="diet"
-            constants={constants}
-          />
-          <FilterSection
-            items={stats.season}
-            selectedValue={selectedSeason}
-            onSelect={setSelectedSeason}
-            translatePrefix="recipe.season"
-            type="season"
-            constants={constants}
-          />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 2,
-            columnGap: 4,
-            flexWrap: "wrap",
-            alignItems: "flex-start",
-          }}
-        >
-          <FilterSection
             items={stats.dishType}
             selectedValue={selectedDishType}
             onSelect={setSelectedDishType}
@@ -186,6 +161,32 @@ const FilterTags = () => {
               showCheckbox={true}
             />
           </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            columnGap: 4,
+            flexWrap: "wrap",
+            alignItems: "flex-start",
+          }}
+        >
+          <FilterSection
+            items={stats.diet}
+            selectedValue={selectedDiet}
+            onSelect={setSelectedDiet}
+            translatePrefix="recipe.diet"
+            type="diet"
+            constants={constants}
+          />
+          <FilterSection
+            items={stats.season}
+            selectedValue={selectedSeason}
+            onSelect={setSelectedSeason}
+            translatePrefix="recipe.season"
+            type="season"
+            constants={constants}
+          />
         </Box>
       </Box>
     </Box>

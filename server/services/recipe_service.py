@@ -8,6 +8,7 @@ import base64
 import re
 import sys
 from typing import Dict, Any, Optional, List, Literal
+import hashlib
 
 # Import our dependencies
 from recipe_structurer import RecipeRejectedError
@@ -15,6 +16,7 @@ from services.progress_service import ProgressService
 from datetime import datetime
 import glob
 import httpx
+from models.progress import GenerationProgress, GenerationStep
 
 # Create a single instance of ProgressService to be shared
 _progress_service = ProgressService()
@@ -182,23 +184,7 @@ class RecipeService:
             
             # Get list of all recipe files
             recipe_files = glob.glob(os.path.join(self.recipes_path, "*.recipe.json"))
-            print(f"[DEBUG] Found {len(recipe_files)} recipe files")
-            if len(recipe_files) > 0:
-                print(f"[DEBUG] First few files: {recipe_files[:3]}")
-            else:
-                # Check if directory exists and list its contents
-                if os.path.exists(self.recipes_path):
-                    print(f"[DEBUG] Recipe directory exists, contents: {os.listdir(self.recipes_path)}")
-                else:
-                    print(f"[DEBUG] Recipe directory does not exist!")
-                    
-                # Try alternate paths
-                alt_path = Path('/app/data/recipes')
-                if os.path.exists(alt_path):
-                    print(f"[DEBUG] Alternate path /app/data/recipes exists, contents: {os.listdir(alt_path)}")
-                    recipe_files = glob.glob(os.path.join(alt_path, "*.recipe.json"))
-                    print(f"[DEBUG] Found {len(recipe_files)} recipe files in alternate path")
-            
+
             recipes = []
 
             # Get list of private authors
@@ -245,7 +231,7 @@ class RecipeService:
                         
                         if is_private:
                             total_private += 1
-                            print(f"[DEBUG] Recipe '{metadata.get('title', 'Unknown')}' is marked as private (author: {author}, url: {source_url})")
+                            # print(f"[DEBUG] Recipe '{metadata.get('title', 'Unknown')}' is marked as private (author: {author}, url: {source_url})")
                         
                         # Include recipe if it's public or if private access is granted
                         if not is_private or include_private:
@@ -426,9 +412,27 @@ class RecipeService:
             current_step = "scrape_content"
             slug = None
             
+            # Pour stocker les logs complets pour chaque étape
+            step_logs = {
+                "scrape_content": [],
+                "structure_recipe": [],
+                "save_recipe": []
+            }
+            
             async for line in process.stdout:
                 line_text = line.decode('utf-8').strip()
                 print(f"CLI output: {line_text}")
+                
+                # Ajouter la ligne aux logs de l'étape courante
+                step_logs[current_step].append(line_text)
+                
+                # Mettre à jour les détails de l'étape en cours avec tous les logs accumulés
+                await self.progress_service.update_step(
+                    progress_id=progress_id,
+                    step=current_step,
+                    status="in_progress",
+                    details="\n".join(step_logs[current_step])
+                )
                 
                 # Update progress based on log messages
                 if ">>> " in line_text:
@@ -440,7 +444,8 @@ class RecipeService:
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Structuring" in message:
                         current_step = "structure_recipe"
@@ -448,21 +453,24 @@ class RecipeService:
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Downloading" in message:
                         await self.progress_service.update_step(
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Enriching" in message:
                         await self.progress_service.update_step(
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Saving" in message or "sauvegarde" in message.lower():
                         current_step = "save_recipe"
@@ -470,7 +478,8 @@ class RecipeService:
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message="Saving recipe and image"
+                            message="Saving recipe and image",
+                            details="\n".join(step_logs[current_step])
                         )
                 
                 # Extract slug from recipe file path
@@ -484,6 +493,14 @@ class RecipeService:
             stderr_text = stderr_data.decode('utf-8').strip()
             if stderr_text:
                 print(f"CLI stderr: {stderr_text}")
+                # Ajouter stderr aux logs de l'étape actuelle
+                step_logs[current_step].append(f"STDERR: {stderr_text}")
+                await self.progress_service.update_step(
+                    progress_id=progress_id,
+                    step=current_step,
+                    status="in_progress",
+                    details="\n".join(step_logs[current_step])
+                )
             
             # Wait for the process to complete
             await process.wait()
@@ -519,7 +536,8 @@ class RecipeService:
                 step="scrape_content",
                 status="completed",
                 progress=100,
-                message="Content successfully retrieved"
+                message="Content successfully retrieved",
+                details="\n".join(step_logs["scrape_content"])
             )
             
             await self.progress_service.update_step(
@@ -527,7 +545,8 @@ class RecipeService:
                 step="structure_recipe",
                 status="completed",
                 progress=100,
-                message="Recipe successfully structured"
+                message="Recipe successfully structured",
+                details="\n".join(step_logs["structure_recipe"])
             )
             
             await self.progress_service.update_step(
@@ -535,7 +554,8 @@ class RecipeService:
                 step="save_recipe",
                 status="completed",
                 progress=100,
-                message="Recipe successfully saved"
+                message="Recipe successfully saved",
+                details="\n".join(step_logs["save_recipe"])
             )
             
             await self.progress_service.complete(progress_id, {"slug": slug})
@@ -565,6 +585,25 @@ class RecipeService:
         """Process a recipe generation from text input using the recipe_scraper CLI"""
         temp_image_path = None
         try:
+            # Update step: check_existence
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="check_existence",
+                status="in_progress",
+                message="Checking if recipe already exists"
+            )
+            
+            # La vérification d'existence sera effectuée par le CLI recipe_scraper
+            # Nous ne faisons que indiquer l'étape comme complétée
+            await self.progress_service.update_step(
+                progress_id=progress_id,
+                step="check_existence",
+                status="completed",
+                progress=100,
+                message="Checking recipe existence in scraper"
+            )
+            
+            # Continue with recipe generation
             # Update step: generate_recipe
             await self.progress_service.update_step(
                 progress_id=progress_id,
@@ -615,8 +654,8 @@ class RecipeService:
                     print(f"[DEBUG] Temporary image saved at: {temp_image_path}")
                     print(f"[DEBUG] Temporary image URL: {image_url}")
                     
-                    # Append the image URL to the recipe text
-                    modified_recipe_text = f"{recipe_text}\n\nMain recipe image: {image_url}"
+                    # Ne pas modifier le texte de la recette ici, le CLI s'occupera d'ajouter la référence
+                    # à l'image si nécessaire
                     
                 except Exception as e:
                     print(f"[ERROR] Failed to process image: {str(e)}")
@@ -625,19 +664,23 @@ class RecipeService:
             # Create a temporary file for the recipe text
             temp_text_file = self.base_path / "tmp" / f"temp_recipe_{progress_id}.txt"
             async with aiofiles.open(temp_text_file, 'w') as f:
-                await f.write(modified_recipe_text)
+                await f.write(recipe_text)  # Utiliser le texte original sans modification
             
             print(f"[DEBUG] Created temporary recipe text file at: {temp_text_file}")
             
-            # Prepare the command
+            # Prepare and create CLI command
             cmd = [
                 "python", "-m", "recipe_scraper.cli",
                 "--mode", "text",
                 "--input-file", str(temp_text_file),
-                "--recipe-output-folder", str(self.recipes_path),
+                "--recipe-output-folder", str(self.recipes_path),  # Important: use the correct recipe path
                 "--image-output-folder", str(self.images_path),
-                "--verbose"  # Enable verbose mode for more detailed logs
+                "--verbose"  # Enable more detailed logging
             ]
+            
+            # Ajouter le chemin de l'image temporaire si elle existe
+            if temp_image_path and temp_image_path.exists():
+                cmd.extend(["--image-file", str(temp_image_path)])
             
             print(f"[DEBUG] Running command: {' '.join(cmd)}")
             
@@ -660,9 +703,27 @@ class RecipeService:
             current_step = "generate_recipe"
             slug = None
             
+            # Pour stocker les logs complets pour chaque étape
+            step_logs = {
+                "generate_recipe": [],
+                "structure_recipe": [],
+                "save_recipe": []
+            }
+            
             async for line in process.stdout:
                 line_text = line.decode('utf-8').strip()
                 print(f"CLI output: {line_text}")
+                
+                # Ajouter la ligne aux logs de l'étape courante
+                step_logs[current_step].append(line_text)
+                
+                # Mettre à jour les détails de l'étape en cours avec tous les logs accumulés
+                await self.progress_service.update_step(
+                    progress_id=progress_id,
+                    step=current_step,
+                    status="in_progress",
+                    details="\n".join(step_logs[current_step])
+                )
                 
                 # Update progress based on log messages
                 if ">>> " in line_text:
@@ -673,7 +734,8 @@ class RecipeService:
                             progress_id=progress_id,
                             step="generate_recipe",
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Structuring" in message:
                         current_step = "structure_recipe"
@@ -681,21 +743,24 @@ class RecipeService:
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Downloading" in message:
                         await self.progress_service.update_step(
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Enriching" in message:
                         await self.progress_service.update_step(
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message=message
+                            message=message,
+                            details="\n".join(step_logs[current_step])
                         )
                     elif "Saving" in message or "sauvegarde" in message.lower():
                         current_step = "save_recipe"
@@ -703,7 +768,8 @@ class RecipeService:
                             progress_id=progress_id,
                             step=current_step,
                             status="in_progress",
-                            message="Saving recipe and image"
+                            message="Saving recipe and image",
+                            details="\n".join(step_logs[current_step])
                         )
                 
                 # Extract slug from recipe file path
@@ -717,6 +783,14 @@ class RecipeService:
             stderr_text = stderr_data.decode('utf-8').strip()
             if stderr_text:
                 print(f"CLI stderr: {stderr_text}")
+                # Ajouter stderr aux logs de l'étape actuelle
+                step_logs[current_step].append(f"STDERR: {stderr_text}")
+                await self.progress_service.update_step(
+                    progress_id=progress_id,
+                    step=current_step,
+                    status="in_progress",
+                    details="\n".join(step_logs[current_step])
+                )
             
             # Wait for the process to complete
             await process.wait()
@@ -738,10 +812,42 @@ class RecipeService:
                 if stderr_text:
                     error_message += f": {stderr_text}"
                 
-                await self.progress_service.set_error(
-                    progress_id,
-                    error_message
-                )
+                # Check if the error is due to a recipe already existing (via error message or specific return code)
+                recipe_exists = False
+                if "Recipe already exists" in stderr_text:
+                    recipe_exists = True
+                elif process.returncode == 100:
+                    recipe_exists = True
+                
+                # N'essayez pas de lire à nouveau stdout, cela provoquerait une erreur
+                if recipe_exists:
+                    # Extract the slug if present
+                    slug_match = re.search(r"slug: ([a-zA-Z0-9\-]+)", stderr_text)
+                    existing_slug = slug_match.group(1) if slug_match else None
+                    
+                    # Check if it's a similarity-based detection
+                    if "similar content detected" in stderr_text:
+                        error_message = f"Recipe with similar content already exists"
+                    else:
+                        error_message = f"Recipe with identical content already exists"
+                        
+                    if existing_slug:
+                        error_message += f" with slug: {existing_slug}"
+                    
+                    await self.progress_service.update_step(
+                        progress_id=progress_id,
+                        step="check_existence",
+                        status="error",
+                        progress=100,
+                        message=error_message,
+                        details=stderr_text
+                    )
+                    raise RecipeExistsError(error_message)
+                else:
+                    await self.progress_service.set_error(
+                        progress_id,
+                        error_message
+                    )
                 return
             
             # Check if we got a slug
@@ -758,7 +864,8 @@ class RecipeService:
                 step="generate_recipe",
                 status="completed",
                 progress=100,
-                message="Recipe text successfully processed"
+                message="Recipe text successfully processed",
+                details="\n".join(step_logs["generate_recipe"])
             )
             
             await self.progress_service.update_step(
@@ -766,7 +873,8 @@ class RecipeService:
                 step="structure_recipe",
                 status="completed",
                 progress=100,
-                message="Recipe successfully structured"
+                message="Recipe successfully structured",
+                details="\n".join(step_logs["structure_recipe"])
             )
             
             await self.progress_service.update_step(
@@ -774,7 +882,8 @@ class RecipeService:
                 step="save_recipe",
                 status="completed",
                 progress=100,
-                message="Recipe successfully saved"
+                message="Recipe successfully saved",
+                details="\n".join(step_logs["save_recipe"])
             )
             
             await self.progress_service.complete(progress_id, {"slug": slug})

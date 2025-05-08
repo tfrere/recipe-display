@@ -61,7 +61,7 @@ const TextRecipeForm = ({ onSubmit, error }) => {
         fullWidth
         multiline
         rows={6}
-        label="Texte de la recette"
+        label="Recipe text"
         value={recipeText}
         onChange={(e) => setRecipeText(e.target.value)}
         error={!!error}
@@ -119,11 +119,11 @@ const TextRecipeForm = ({ onSubmit, error }) => {
             <CloudUploadIcon sx={{ fontSize: 48, color: "grey.500", mb: 1 }} />
             <Typography variant="body1" color="text.secondary">
               {isDragActive
-                ? "Déposez l'image ici"
-                : "Cliquez ou déposez une image ici"}
+                ? "Drop the image here"
+                : "Click or drop an image here"}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              JPG, PNG ou WebP
+              JPG, PNG or WebP
             </Typography>
           </Box>
         )}
@@ -135,7 +135,7 @@ const TextRecipeForm = ({ onSubmit, error }) => {
           disabled={!recipeText}
           variant="contained"
         >
-          Ajouter
+          Add
         </Button>
       </Box>
     </Box>

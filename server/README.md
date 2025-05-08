@@ -9,7 +9,7 @@ A FastAPI server for managing recipes with scraping and structuring capabilities
 poetry install
 
 # Run server
-poetry run uvicorn server.main:app --reload
+poetry run python server.py
 ```
 
 ## Architecture
@@ -46,8 +46,3 @@ The server is composed of three main parts:
 - Handle recipe images with multiple sizes
 
 ## API Documentation
-
-Once the server is running, visit:
-
-- http://localhost:8000/docs for Swagger UI
-- http://localhost:8000/redoc for ReDoc

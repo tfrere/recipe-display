@@ -63,12 +63,11 @@ const UrlRecipeForm = ({ onSubmit, error }) => {
     <Box>
       <TextField
         fullWidth
-        label="URL de la recette"
+        label="Recipe URL"
         value={recipeSource}
         onChange={(e) => setRecipeSource(e.target.value)}
         error={!!error}
         helperText={error}
-        sx={{ mb: 2 }}
       />
 
       <AuthenticationSection
@@ -80,13 +79,13 @@ const UrlRecipeForm = ({ onSubmit, error }) => {
         onAuthValuesChange={setAuthValues}
       />
 
-      <Box sx={{ mt: 2, display: "flex", justifyContent: "flex-end" }}>
+      <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
         <Button
           onClick={handleSubmit}
           disabled={!recipeSource}
           variant="contained"
         >
-          Ajouter
+          Add
         </Button>
       </Box>
     </Box>

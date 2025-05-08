@@ -47,11 +47,12 @@ if __name__ == "__main__":
     
     # Configuration d'Uvicorn avec des timeouts augmentés
     uvicorn.run(
-        app, 
+        "server:app",  # Utiliser le format d'import string pour permettre le hot reload
         host="0.0.0.0", 
         port=port,
         timeout_keep_alive=120,  # Augmentation du timeout keep-alive (défaut: 5 secondes)
         timeout_graceful_shutdown=60,  # Augmentation du timeout d'arrêt gracieux
         limit_concurrency=100,  # Limite de connexions simultanées
         limit_max_requests=10000,  # Limite de requêtes maximum
+        reload=True,  # Activation du hot reload pour le développement
     )

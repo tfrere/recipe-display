@@ -13,8 +13,6 @@ import {
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ViewStreamOutlinedIcon from "@mui/icons-material/ViewStreamOutlined";
 import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import { VIEWS } from "../../constants/views";
 
 const SETTINGS_TEXTS = {
@@ -22,11 +20,6 @@ const SETTINGS_TEXTS = {
     TITLE: "View",
     SIMPLE: "Simple view",
     GRAPH: "Graph view",
-  },
-  PREFERENCES: {
-    TITLE: "Preferences",
-    LIGHT_MODE: "Light mode",
-    DARK_MODE: "Dark mode",
   },
 };
 
@@ -59,15 +52,17 @@ const SettingsMenu = ({
     <>
       <IconButton
         onClick={handleClick}
+        edge="end"
+        aria-label="settings"
+        aria-controls={open ? "settings-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
         sx={{
-          color: "text.secondary",
-          "& .MuiSvgIcon-root": {
-            fontSize: "1.25rem",
-            strokeWidth: 1,
-            stroke: "currentColor",
-          },
+          color: open ? "primary.main" : "text.secondary",
+          transition: "all 0.2s ease-in-out",
           "&:hover": {
-            color: "text.primary",
+            color: "primary.main",
+            backgroundColor: "transparent",
           },
         }}
       >
@@ -75,9 +70,11 @@ const SettingsMenu = ({
       </IconButton>
 
       <Menu
+        id="settings-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        onClick={handleClose}
         PaperProps={{
           elevation: 3,
           sx: {
@@ -144,32 +141,8 @@ const SettingsMenu = ({
               </ListItemIcon>
               <ListItemText>{SETTINGS_TEXTS.VIEW.GRAPH}</ListItemText>
             </MenuItem>
-            <Divider />
           </>
         )}
-
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          className="menu-section"
-        >
-          {SETTINGS_TEXTS.PREFERENCES.TITLE}
-        </Typography>
-
-        <MenuItem onClick={toggleDarkMode}>
-          <ListItemIcon>
-            {darkMode ? (
-              <DarkModeOutlinedIcon fontSize="small" />
-            ) : (
-              <LightModeOutlinedIcon fontSize="small" />
-            )}
-          </ListItemIcon>
-          <ListItemText>
-            {darkMode
-              ? SETTINGS_TEXTS.PREFERENCES.LIGHT_MODE
-              : SETTINGS_TEXTS.PREFERENCES.DARK_MODE}
-          </ListItemText>
-        </MenuItem>
       </Menu>
     </>
   );

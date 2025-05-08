@@ -304,14 +304,9 @@ class TextRecipeProcessor(RecipeProcessorBase):
                     # Démarrer la génération de la recette
                     await updates_queue.put((str(text_file), "info", "Calling API to start generation"))
                     
-                    # Modifier le texte pour inclure une référence à l'image si elle n'est pas incluse dans le API
-                    modified_recipe_text = recipe_text
-                    if image_base64 and "Image:" not in recipe_text:
-                        # Ajouter une ligne mentionnant l'image (aidant certains modèles LLM)
-                        modified_recipe_text = f"{recipe_text}\n\nmain recipe mage: {recipe_id}.jpg"
-                        await updates_queue.put((str(text_file), "info", "Added image reference to text"))
-
-                    progress_id = await self.api_client.start_text_generation(session, modified_recipe_text, image_base64)
+                    # Ne pas modifier le texte pour inclure une référence à l'image (géré par recipe_scraper)
+                    # Utiliser directement le texte original
+                    progress_id = await self.api_client.start_text_generation(session, recipe_text, image_base64)
                     await updates_queue.put((str(text_file), "info", f"Got progress ID: {progress_id if progress_id else 'None'}"))
                     recipe_progress.progress_id = progress_id
                     
@@ -320,7 +315,13 @@ class TextRecipeProcessor(RecipeProcessorBase):
                         self.metrics.skip_count += 1
                         stats["skipped"] += 1
                         stats["in_progress"] -= 1
-                        await updates_queue.put((str(text_file), "skipped", "Skipped (already exists)"))
+                        
+                        # Message plus clair pour l'utilisateur
+                        skip_message = f"Recette similaire déjà existante (détectée par analyse de similarité textuelle)"
+                        await updates_queue.put((str(text_file), "skipped", skip_message))
+                        
+                        # Journaliser avec plus de détails
+                        print(f"[DUPLICATE] Recette '{recipe_id}' ignorée car du contenu similaire existe déjà")
                         return
                     
                     # Vérifier la progression jusqu'à la fin

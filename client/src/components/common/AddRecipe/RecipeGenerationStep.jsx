@@ -10,6 +10,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { useElapsedTime } from "../../../hooks/useElapsedTime";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
+import CheckCircleIcon from "@mui/icons-material/CheckCircleOutlined";
 
 const STATUS_COLORS = {
   completed: "success",
@@ -26,9 +27,10 @@ const StepDetails = ({ details, onScroll, scrollRef, theme }) => (
       height: "10em",
       overflowY: "auto",
       p: 2,
+      mt: 4,
       bgcolor: theme.palette.mode === "dark" ? "grey.800" : "grey.100",
       borderRadius: 1,
-      mx: 2,
+      mx: 0,
       mb: 2,
       border: 1,
       borderColor: theme.palette.mode === "dark" ? "grey.700" : "grey.200",
@@ -83,7 +85,7 @@ const TimeChip = ({ elapsedTime, status, theme }) => (
   />
 );
 
-const RecipeGenerationStep = ({ step, startTime }) => {
+const RecipeGenerationStep = ({ step, startTime, isLastStep = false }) => {
   const [elapsedTime, setElapsedTime] = useState(0);
   const theme = useTheme();
   const { autoScroll, elementRef, handleScroll } = useAutoScroll(step.details);
@@ -126,15 +128,10 @@ const RecipeGenerationStep = ({ step, startTime }) => {
   return (
     <Box>
       <Paper
-        elevation={isActive ? 1 : 0}
+        elevation={0}
         sx={{
           opacity: isPending ? 0.5 : 1,
-          mb: 2,
-          bgcolor: isActive
-            ? theme.palette.mode === "dark"
-              ? "grey.900"
-              : "grey.50"
-            : "transparent",
+          bgcolor: "transparent",
           transition: "all 0.2s ease-in-out",
         }}
       >
@@ -144,15 +141,19 @@ const RecipeGenerationStep = ({ step, startTime }) => {
             alignItems: "center",
             gap: 2,
             width: "100%",
-            p: isActive ? 1.5 : 1,
+            p: 1,
             borderRadius: 1,
           }}
         >
-          <CircularProgress
-            size={24}
-            variant={isActive ? "indeterminate" : "determinate"}
-            value={isCompleted ? 100 : 0}
-          />
+          {isCompleted ? (
+            <CheckCircleIcon color="success" sx={{ fontSize: 24 }} />
+          ) : (
+            <CircularProgress
+              size={24}
+              variant={isActive ? "indeterminate" : "determinate"}
+              value={0}
+            />
+          )}
           <Typography
             sx={{
               flex: 1,
@@ -179,7 +180,7 @@ const RecipeGenerationStep = ({ step, startTime }) => {
           />
         )}
       </Paper>
-      <Divider sx={{ my: 1 }} />
+      {!isLastStep && <Divider sx={{ my: 1 }} />}
     </Box>
   );
 };

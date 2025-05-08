@@ -3,8 +3,7 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions,
-  Button,
+  IconButton,
   Box,
   ToggleButton,
   ToggleButtonGroup,
@@ -12,6 +11,7 @@ import {
   CircularProgress,
   Alert,
 } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import UrlRecipeForm from "./UrlRecipeForm";
 import TextRecipeForm from "./TextRecipeForm";
 import ProgressTracker from "./ProgressTracker";
@@ -32,22 +32,23 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
   };
 
   const handleClose = () => {
-    // Reset all states
-    setImportType("url");
-    reset();
-    onClose();
+    // Only allow closing if not loading
+    if (!isLoading) {
+      // Reset all states
+      setImportType("url");
+      reset();
+      onClose();
+    }
   };
 
-  // Update useEffect to handle automatic closing
+  // Update useEffect to handle automatic closing only on error
   useEffect(() => {
-    if (!isLoading && !error) {
-      handleClose();
-    } else if (!isLoading && error) {
-      // Si nous avons une erreur et que le chargement est terminé,
-      // fermer la modale après un délai pour que l'utilisateur puisse lire le message
+    if (!isLoading && error) {
+      // If we have an error and loading is finished,
+      // close the modal after a delay so the user can read the message
       const timer = setTimeout(() => {
         handleClose();
-      }, 3000); // 3 secondes
+      }, 3000); // 3 seconds
 
       return () => clearTimeout(timer);
     }
@@ -59,13 +60,26 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       onClose={handleClose}
       maxWidth="sm"
       fullWidth
-      disableEscapeKeyDown={isLoading}
-      onBackdropClick={isLoading ? undefined : handleClose}
-      PaperProps={{
-        sx: { minHeight: "400px" },
-      }}
+      disableEscapeKeyDown={true}
+      onBackdropClick={() => {}}
     >
-      <DialogTitle>Add Recipe</DialogTitle>
+      <DialogTitle sx={{ m: 0, p: 2 }}>
+        Add Recipe
+        {!isLoading && (
+          <IconButton
+            aria-label="close"
+            onClick={handleClose}
+            sx={{
+              position: "absolute",
+              right: 8,
+              top: 8,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        )}
+      </DialogTitle>
       <DialogContent>
         {!isLoading && (
           <Box
@@ -73,15 +87,13 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
               mb: 3,
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
+              alignItems: "start",
             }}
           >
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              Choose import type
-            </Typography>
             <ToggleButtonGroup
               value={importType}
               exclusive
+              fullWidth
               onChange={handleImportTypeChange}
               aria-label="recipe import type"
             >
@@ -130,11 +142,6 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
           </>
         )}
       </DialogContent>
-      <DialogActions>
-        <Button onClick={handleClose} disabled={isLoading}>
-          Close
-        </Button>
-      </DialogActions>
     </Dialog>
   );
 };

@@ -3,6 +3,7 @@ import uuid
 from typing import Dict, Optional, List, Literal
 from models.progress import GenerationProgress, GenerationStep
 import asyncio
+import logging
 
 URL_STEPS = [
     GenerationStep(
@@ -30,6 +31,11 @@ URL_STEPS = [
 TEXT_IMAGE_STEPS = [
     GenerationStep(
         step="check_existence",
+        message="Checking if recipe already exists",
+        startedAt=None
+    ),
+    GenerationStep(
+        step="generate_recipe",
         message="Preparing recipe text",
         startedAt=None
     ),

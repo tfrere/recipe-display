@@ -10,6 +10,7 @@ import sys
 import os
 import argparse
 import glob
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -720,6 +721,20 @@ class RecipeEnricher:
         # Add the enrichment data to the recipe metadata
         if "metadata" not in enriched_recipe:
             enriched_recipe["metadata"] = {}
+            
+        # Ajouter la date de création si elle n'existe pas déjà
+        if "createdAt" not in enriched_recipe["metadata"]:
+            enriched_recipe["metadata"]["createdAt"] = datetime.now().isoformat()
+            
+        # Déterminer le mode de création (text ou url) en fonction des métadonnées existantes
+        if "creationMode" not in enriched_recipe["metadata"]:
+            if "contentHash" in enriched_recipe["metadata"]:
+                enriched_recipe["metadata"]["creationMode"] = "text"
+            elif "sourceUrl" in enriched_recipe["metadata"] and enriched_recipe["metadata"]["sourceUrl"]:
+                enriched_recipe["metadata"]["creationMode"] = "url"
+            else:
+                # Si on ne peut pas déterminer, mettre une valeur par défaut
+                enriched_recipe["metadata"]["creationMode"] = "unknown"
             
         enriched_recipe["metadata"]["diets"] = diets
         enriched_recipe["metadata"]["seasons"] = seasons

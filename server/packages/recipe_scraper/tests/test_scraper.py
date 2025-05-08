@@ -19,6 +19,27 @@ SVG_IMAGE_TEST_URL = "https://books.ottolenghi.co.uk/cookbook/recipe/grilled-aub
 # Chemin vers le fichier d'authentification
 AUTH_FILE = Path("data/auth_presets.json")
 
+# Recette texte exemple pour les tests
+TEST_RECIPE_TEXT = """
+Salade simple
+
+Ingrédients:
+- 1 concombre
+- 2 tomates
+- 1 oignon
+- Huile d'olive
+- Sel
+- Poivre
+
+Préparation:
+1. Coupez tous les légumes en petits dés
+2. Mélangez-les dans un bol
+3. Ajoutez l'huile, le sel et le poivre
+4. Servez immédiatement
+
+Image: https://example.com/salad.jpg
+"""
+
 # Créer un callback pour capturer les messages de progression
 async def mock_progress_callback(message):
     """Capture les messages de progression"""
@@ -210,5 +231,94 @@ async def test_scrape_from_url_with_svg_image():
         assert "<svg" in content.lower(), "Le fichier téléchargé n'est pas un SVG valide"
     
     print("✅ Test complet réussi: Recette avec image SVG correctement traitée")
+    
+    return True 
+
+@pytest.mark.asyncio
+async def test_scrape_from_text_duplicate_detection():
+    """Teste la détection des doublons via similarité textuelle pour la méthode scrape_from_text."""
+    # Créer les dossiers de sortie s'ils n'existent pas
+    TEST_RECIPE_OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
+    TEST_IMAGE_OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
+    
+    # Initialiser le scraper
+    scraper = RecipeScraper()
+    scraper._recipe_output_folder = TEST_RECIPE_OUTPUT_FOLDER
+    scraper._image_output_folder = TEST_IMAGE_OUTPUT_FOLDER
+    
+    print("\n1. Création d'un fichier de recette factice avec le contenu original")
+    
+    # Créer un fichier de recette factice avec le contenu texte original
+    fake_recipe_data = {
+        "metadata": {
+            "title": "Salade simple",
+            "slug": "salade-simple",
+            "originalContent": TEST_RECIPE_TEXT  # Le contenu original pour comparaison de similarité
+        },
+        "ingredients": [
+            {"id": "ing1", "name": "cucumber", "category": "produce"},
+            {"id": "ing2", "name": "tomatoes", "category": "produce"},
+            {"id": "ing3", "name": "onion", "category": "produce"},
+            {"id": "ing4", "name": "olive oil", "category": "condiment"},
+            {"id": "ing5", "name": "salt", "category": "spice"},
+            {"id": "ing6", "name": "pepper", "category": "spice"}
+        ],
+        "steps": [
+            {"id": "step1", "action": "Cut the vegetables", "time": "5min"}
+        ]
+    }
+    
+    # Sauvegarder la recette factice
+    recipe_file = TEST_RECIPE_OUTPUT_FOLDER / f"{fake_recipe_data['metadata']['slug']}.recipe.json"
+    with open(recipe_file, "w") as f:
+        json.dump(fake_recipe_data, f, indent=2)
+    
+    print(f"Recette factice créée: {recipe_file}")
+    
+    print("\n2. Test de similarité élevée: Tentative d'ajouter une recette avec un contenu très similaire")
+    
+    # Tenter d'ajouter une recette avec un contenu très similaire (quelques espaces et une majuscule en plus)
+    duplicate_text = TEST_RECIPE_TEXT.replace("simple", "Simple").replace("concombre", "concombre ")
+    duplicate_result = await scraper.scrape_from_text(
+        duplicate_text,
+        file_name="test-salad-duplicate.txt",
+        progress_callback=mock_progress_callback
+    )
+    
+    # Vérifier que la détection de similarité a fonctionné (retourne None)
+    assert duplicate_result is None, "La détection par similarité n'a pas fonctionné, devrait retourner None"
+    
+    print(f"✅ Test réussi! Doublons par similarité correctement détectés (retourne None)")
+    
+    print("\n3. Test avec modification importante: Modification significative du texte de la recette")
+    
+    # Modifier significativement le texte (ajout d'une section complète)
+    significantly_modified_text = TEST_RECIPE_TEXT + "\n\nVariation:\nVous pouvez ajouter des olives et du fromage feta pour une version méditerranéenne.\nSaupoudrez de persil frais avant de servir."
+    
+    # Tenter d'ajouter une recette avec un texte significativement modifié
+    modified_result = await scraper.scrape_from_text(
+        significantly_modified_text,
+        file_name="test-salad-modified.txt",
+        progress_callback=mock_progress_callback
+    )
+    
+    # Cette recette devrait être considérée comme différente
+    assert modified_result is not None, "La recette significativement modifiée a été incorrectement détectée comme doublon"
+    assert "metadata" in modified_result, "Les métadonnées sont manquantes dans la recette modifiée"
+    
+    print("✅ Test réussi! Recette significativement modifiée correctement traitée comme distincte")
+    
+    # Nettoyer les fichiers de test
+    try:
+        recipe_file.unlink()
+        print(f"Fichier de test nettoyé: {recipe_file}")
+        # Nettoyer également la recette modifiée si elle a été créée
+        if modified_result and "metadata" in modified_result and "slug" in modified_result["metadata"]:
+            modified_file = TEST_RECIPE_OUTPUT_FOLDER / f"{modified_result['metadata']['slug']}.recipe.json"
+            if modified_file.exists():
+                modified_file.unlink()
+                print(f"Fichier de test nettoyé: {modified_file}")
+    except Exception as e:
+        print(f"Erreur lors du nettoyage des fichiers de test: {e}")
     
     return True 

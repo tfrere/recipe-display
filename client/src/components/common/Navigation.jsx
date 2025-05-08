@@ -10,8 +10,6 @@ import {
 } from "@mui/material";
 import { useTheme } from "../../contexts/ThemeContext";
 import { useRecipeList } from "../../contexts/RecipeListContext";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import NoAccountsOutlinedIcon from "@mui/icons-material/NoAccountsOutlined";
@@ -33,7 +31,7 @@ const NAVIGATION_TEXTS = {
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { darkMode, toggleDarkMode } = useTheme();
+  const { darkMode } = useTheme();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
   const { disablePrivateAccess, hasPrivateAccess } = useCheatCode();
   const {
@@ -97,7 +95,7 @@ const Navigation = () => {
                 {NAVIGATION_TEXTS.COOKBOOK}
               </Typography>
             </Box>
-
+            {/* 
             <Box sx={{ display: "flex", alignItems: "center", ml: 4 }}>
               {[
                 { path: "/", label: "Recipes" },
@@ -150,7 +148,7 @@ const Navigation = () => {
                   </Button>
                 </React.Fragment>
               ))}
-            </Box>
+            </Box> */}
           </Box>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -210,25 +208,6 @@ const Navigation = () => {
                 </Tooltip>
               </>
             )}
-            <Box
-              sx={{
-                p: 1,
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-                borderRadius: 1,
-                "&:hover": {
-                  bgcolor: "action.hover",
-                },
-              }}
-              onClick={toggleDarkMode}
-            >
-              {darkMode ? (
-                <LightModeOutlinedIcon sx={{ color: "text.secondary" }} />
-              ) : (
-                <DarkModeOutlinedIcon sx={{ color: "text.secondary" }} />
-              )}
-            </Box>
           </Box>
         </Toolbar>
       </AppBar>

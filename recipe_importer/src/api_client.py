@@ -109,6 +109,7 @@ class RecipeApiClient:
                 timeout=timeout
             ) as response:
                 if response.status == 409:
+                    self.console.print(f"[yellow]Recette déjà existante (statut 409): La recette existe déjà dans la base de données[/yellow]")
                     return None
                 elif response.status == 301 or response.status == 302 or response.status == 307 or response.status == 308:
                     # Gérer les redirections

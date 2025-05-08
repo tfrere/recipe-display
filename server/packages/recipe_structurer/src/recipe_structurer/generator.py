@@ -49,7 +49,7 @@ async def generate_recipe(
         Tuple of (cleaned_recipe_text, recipe_base, recipe_graph)
     """
     if progress_callback:
-        await progress_callback("Nettoyage du texte de la recette")
+        await progress_callback("Cleaning up recipe text")
     
     print(f"[DEBUG] generate_recipe called with provider: {provider}")
     print(f"[DEBUG] Recipe text length: {len(recipe_text)}")
@@ -63,7 +63,7 @@ async def generate_recipe(
     try:
         # Step 1: Clean up the recipe
         if progress_callback:
-            await progress_callback("Nettoyage du texte de la recette")
+            await progress_callback("Cleaning up recipe text")
         
         print("[DEBUG] Starting recipe cleanup...")
         cleaned_text = await cleanup_recipe(model, recipe_text, image_urls)
