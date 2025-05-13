@@ -297,6 +297,7 @@ const RecipeHeader = ({ recipe }) => {
                     "& .MuiSvgIcon-root": {
                       fontSize: "1.3rem",
                     },
+                    display: { xs: "none", md: "flex" },
                   }}
                 >
                   <PrintOutlinedIcon />
@@ -327,6 +328,7 @@ const RecipeHeader = ({ recipe }) => {
                     "& .MuiSvgIcon-root": {
                       fontSize: "1.3rem",
                     },
+                    display: { xs: "none", md: "flex" },
                   }}
                 >
                   <AccountTreeOutlinedIcon />
