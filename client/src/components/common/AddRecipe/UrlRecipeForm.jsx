@@ -79,7 +79,7 @@ const UrlRecipeForm = ({ onSubmit, error }) => {
         onAuthValuesChange={setAuthValues}
       />
 
-      <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+      <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 1 }}>
         <Button
           onClick={handleSubmit}
           disabled={!recipeSource}

@@ -66,8 +66,8 @@ class ProgressService:
             "error": None,
             "recipe": None,
             "currentStep": None,
-            "createdAt": datetime.now().isoformat(),
-            "updatedAt": datetime.now().isoformat()
+            "createdAt": datetime.now().astimezone().isoformat(),
+            "updatedAt": datetime.now().astimezone().isoformat()
         }
 
     async def update_progress(self, progress_id: str, message: str) -> None:
@@ -77,7 +77,7 @@ class ProgressService:
             
         entry = self._progress_entries[progress_id]
         entry["progressMessage"] = message
-        entry["updatedAt"] = datetime.now().isoformat()
+        entry["updatedAt"] = datetime.now().astimezone().isoformat()
 
     async def complete(self, progress_id: str, data: Dict = None) -> None:
         """Mark a progress entry as completed."""
@@ -86,7 +86,7 @@ class ProgressService:
             
         entry = self._progress_entries[progress_id]
         entry["status"] = "completed"
-        entry["updatedAt"] = datetime.now().isoformat()
+        entry["updatedAt"] = datetime.now().astimezone().isoformat()
         
         print(f"[DEBUG] Marking progress {progress_id} as completed with data: {data}")
         
@@ -115,8 +115,8 @@ class ProgressService:
             "error": None,
             "recipe": None,
             "currentStep": None,
-            "createdAt": datetime.now().isoformat(),
-            "updatedAt": datetime.now().isoformat()
+            "createdAt": datetime.now().astimezone().isoformat(),
+            "updatedAt": datetime.now().astimezone().isoformat()
         }
         
         return progress_id
@@ -159,7 +159,7 @@ class ProgressService:
                 await asyncio.sleep(0.5)  # 500ms delay when starting a step
                 # Initialize startedAt when the step begins
                 if not step_entry.get("startedAt"):
-                    step_entry["startedAt"] = datetime.now().isoformat()
+                    step_entry["startedAt"] = datetime.now().astimezone().isoformat()
             elif status == "completed":
                 await asyncio.sleep(0.2)  # 200ms delay when completing a step
             
@@ -173,7 +173,7 @@ class ProgressService:
             # Update current step and timestamp
             if status == "in_progress":
                 entry["currentStep"] = step
-            entry["updatedAt"] = datetime.now().isoformat()
+            entry["updatedAt"] = datetime.now().astimezone().isoformat()
             
             # Update global status
             if status == "error":
@@ -218,13 +218,13 @@ class ProgressService:
             entry = self._progress_entries[progress_id]
             entry["error"] = error
             entry["status"] = "error"
-            entry["updatedAt"] = datetime.now().isoformat()
+            entry["updatedAt"] = datetime.now().astimezone().isoformat()
 
     async def set_recipe(self, progress_id: str, recipe: Dict) -> None:
         """Set the generated recipe for a progress entry."""
         if progress_id in self._progress_entries:
             self._progress_entries[progress_id]["recipe"] = recipe
-            self._progress_entries[progress_id]["updatedAt"] = datetime.now().isoformat()
+            self._progress_entries[progress_id]["updatedAt"] = datetime.now().astimezone().isoformat()
 
     def remove_progress(self, progress_id: str) -> None:
         """Remove a progress entry."""
