@@ -192,8 +192,8 @@ const PreparationSteps = ({ recipe }) => {
                           flexShrink: 0,
                           textAlign: "right",
                           fontSize: "0.875rem",
-                          lineHeight: { xs: 1.2, sm: 1.43 },
-                          mr: { xs: -0.5, sm: 0 },
+                          lineHeight: { xs: 1.2, md: 1.43 },
+                          mr: { xs: -0.5, md: 0 },
                         }}
                       >
                         ○
@@ -202,8 +202,10 @@ const PreparationSteps = ({ recipe }) => {
                         sx={{
                           display: "flex",
                           alignItems: "center",
-                          gap: 2,
+                          gap: 0,
                           width: "100%",
+                          flexDirection: { xs: "column", md: "row" },
+                          alignItems: { xs: "flex-start", md: "center" },
                         }}
                       >
                         <Typography
@@ -216,6 +218,7 @@ const PreparationSteps = ({ recipe }) => {
                               ? "line-through"
                               : "none",
                             flexGrow: 1,
+                            width: { xs: "100%", md: "auto" },
                             transition: "all 0.2s ease-in-out",
                           }}
                         >
@@ -229,10 +232,13 @@ const PreparationSteps = ({ recipe }) => {
                           <Box
                             sx={{
                               display: "flex",
+                              flexDirection: "row",
                               alignItems: "center",
                               gap: 1,
                               flexShrink: 0,
-                              height: "100%",
+                              alignSelf: { xs: "flex-start", md: "auto" },
+                              ml: { xs: 0, md: 0 },
+                              mt: { xs: 0.5, md: 0 },
                             }}
                           >
                             {step.stepMode === "passive" && (
@@ -241,6 +247,7 @@ const PreparationSteps = ({ recipe }) => {
                                 sx={{
                                   color: "text.disabled",
                                   fontStyle: "italic",
+                                  display: { xs: "none", md: "block" },
                                 }}
                               >
                                 passive
@@ -252,6 +259,7 @@ const PreparationSteps = ({ recipe }) => {
                                   variant="body2"
                                   sx={{
                                     color: "text.disabled",
+                                    display: { xs: "none", md: "block" },
                                   }}
                                 >
                                   •
@@ -280,6 +288,7 @@ const PreparationSteps = ({ recipe }) => {
                                   variant="body2"
                                   sx={{
                                     color: "text.disabled",
+                                    display: { xs: "none", md: "block" },
                                   }}
                                 >
                                   •
@@ -292,6 +301,7 @@ const PreparationSteps = ({ recipe }) => {
                                     sx={{
                                       fontSize: "1.2rem",
                                       color: "text.disabled",
+                                      display: { xs: "none", md: "block" },
                                     }}
                                   />
                                 )}
@@ -300,6 +310,7 @@ const PreparationSteps = ({ recipe }) => {
                                     sx={{
                                       fontSize: "1.2rem",
                                       color: "text.disabled",
+                                      display: { xs: "none", md: "block" },
                                     }}
                                   />
                                 )}
@@ -310,6 +321,7 @@ const PreparationSteps = ({ recipe }) => {
                                       color: isCompleted
                                         ? "text.disabled"
                                         : "warning.main",
+                                      display: { xs: "none", md: "block" },
                                     }}
                                   />
                                 )}
