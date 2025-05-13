@@ -37,6 +37,7 @@ import RecipeCard from "../components/RecipeCard";
 import useLongPress from "../hooks/useLongPress";
 import { VIEWS } from "../constants/views";
 import useLocalStorage from "../hooks/useLocalStorage";
+import ScrollShadow from "../components/ScrollShadow";
 
 const HOME_TEXTS = {
   NO_RECIPES: {
@@ -115,6 +116,7 @@ const VirtualizedRecipeGrid = memo(
 
     // Référence au conteneur parent
     const parentRef = useRef(null);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     // État pour stocker la largeur du conteneur (mise à jour au redimensionnement)
     const [containerWidth, setContainerWidth] = useState(0);
@@ -143,7 +145,7 @@ const VirtualizedRecipeGrid = memo(
       overscan: 3, // Précharger quelques lignes au-dessus et en-dessous
     });
 
-    // Observer les redimensionnements du conteneur parent
+    // Observer les redimensionnements du conteneur parent et les événements de défilement
     useEffect(() => {
       // Fonction pour mettre à jour la largeur du conteneur
       const updateContainerWidth = () => {
@@ -152,8 +154,16 @@ const VirtualizedRecipeGrid = memo(
         }
       };
 
+      // Fonction pour détecter le défilement
+      const handleScroll = () => {
+        if (parentRef.current) {
+          setIsScrolled(parentRef.current.scrollTop > 10);
+        }
+      };
+
       // Observer initial
       updateContainerWidth();
+      handleScroll();
 
       // Créer un ResizeObserver pour détecter les changements de taille
       const resizeObserver = new ResizeObserver(() => {
@@ -163,12 +173,15 @@ const VirtualizedRecipeGrid = memo(
       // Observer le conteneur parent
       if (parentRef.current) {
         resizeObserver.observe(parentRef.current);
+        // Ajouter l'écouteur de défilement
+        parentRef.current.addEventListener("scroll", handleScroll);
       }
 
       // Nettoyage
       return () => {
         if (parentRef.current) {
           resizeObserver.unobserve(parentRef.current);
+          parentRef.current.removeEventListener("scroll", handleScroll);
         }
         resizeObserver.disconnect();
       };
@@ -193,6 +206,8 @@ const VirtualizedRecipeGrid = memo(
           position: "relative",
         }}
       >
+        <ScrollShadow scrollRef={parentRef} height={16} />
+
         {/* Créer un div pour définir la hauteur totale du scroll */}
         <div
           style={{
@@ -364,7 +379,7 @@ const HomePage = () => {
             },
           }}
         >
-          <Container maxWidth="lg" sx={{ pb: 4, height: "100%" }}>
+          <Container maxWidth="lg" sx={{ pb: 0, height: "100%" }}>
             {error ? (
               <Alert severity="error" sx={{ m: 4 }}>
                 Une erreur est survenue lors du chargement des recettes.
