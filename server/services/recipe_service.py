@@ -482,12 +482,6 @@ class RecipeService:
                             details="\n".join(step_logs[current_step])
                         )
                 
-                # Extract slug from recipe file path
-                if "Recipe successfully saved to:" in line_text:
-                    file_path = line_text.split("Recipe successfully saved to:")[1].strip()
-                    slug = Path(file_path).stem.replace(".recipe", "")
-                    print(f"[DEBUG] Extracted slug: {slug}")
-            
             # Read stderr in case there were errors
             stderr_data = await process.stderr.read()
             stderr_text = stderr_data.decode('utf-8').strip()
@@ -522,11 +516,27 @@ class RecipeService:
                 )
                 return
 
-            # Check if we got a slug
-            if not slug:
+            # Process succeeded, find the most recently created recipe file
+            try:
+                recipe_files = list(self.recipes_path.glob("*.recipe.json"))
+                if recipe_files:
+                    # Sort by modification time (most recent first)
+                    latest_file = max(recipe_files, key=lambda p: p.stat().st_mtime)
+                    slug = latest_file.stem.replace(".recipe", "")
+                    print(f"[DEBUG] Found latest recipe file: {latest_file}")
+                    print(f"[DEBUG] Extracted slug from filename: {slug}")
+                else:
+                    # No recipe files found
+                    await self.progress_service.set_error(
+                        progress_id,
+                        "No recipe files found after successful generation"
+                    )
+                    return
+            except Exception as e:
+                print(f"[ERROR] Error finding latest recipe file: {str(e)}")
                 await self.progress_service.set_error(
                     progress_id,
-                    "Failed to extract recipe slug from CLI output"
+                    f"Error finding recipe file: {str(e)}"
                 )
                 return
             
@@ -772,12 +782,6 @@ class RecipeService:
                             details="\n".join(step_logs[current_step])
                         )
                 
-                # Extract slug from recipe file path
-                if "Recipe successfully saved to:" in line_text:
-                    file_path = line_text.split("Recipe successfully saved to:")[1].strip()
-                    slug = Path(file_path).stem.replace(".recipe", "")
-                    print(f"[DEBUG] Extracted slug: {slug}")
-            
             # Read stderr in case there were errors
             stderr_data = await process.stderr.read()
             stderr_text = stderr_data.decode('utf-8').strip()
@@ -852,11 +856,29 @@ class RecipeService:
             
             # Check if we got a slug
             if not slug:
-                await self.progress_service.set_error(
-                    progress_id,
-                    "Failed to extract recipe slug from CLI output"
-                )
-                return
+                # Process succeeded, find the most recently created recipe file
+                try:
+                    recipe_files = list(self.recipes_path.glob("*.recipe.json"))
+                    if recipe_files:
+                        # Sort by modification time (most recent first)
+                        latest_file = max(recipe_files, key=lambda p: p.stat().st_mtime)
+                        slug = latest_file.stem.replace(".recipe", "")
+                        print(f"[DEBUG] Found latest recipe file: {latest_file}")
+                        print(f"[DEBUG] Extracted slug from filename: {slug}")
+                    else:
+                        # No recipe files found
+                        await self.progress_service.set_error(
+                            progress_id,
+                            "No recipe files found after successful generation"
+                        )
+                        return
+                except Exception as e:
+                    print(f"[ERROR] Error finding latest recipe file: {str(e)}")
+                    await self.progress_service.set_error(
+                        progress_id,
+                        f"Error finding recipe file: {str(e)}"
+                    )
+                    return
             
             # Mark steps as completed
             await self.progress_service.update_step(

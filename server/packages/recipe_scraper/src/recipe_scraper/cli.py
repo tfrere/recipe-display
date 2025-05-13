@@ -213,21 +213,22 @@ async def main_async(args: argparse.Namespace) -> int:
             if image_path and image_path.exists():
                 try:
                     # Create image destination path
-                    image_dest = scraper._image_output_folder / image_path.name
+                    image_ext = image_path.suffix.lstrip('.')  # Get extension without dot
+                    image_dest = scraper._image_output_folder / f"{slug}.{image_ext}"
                     
                     # Copy the image
                     import shutil
                     shutil.copy2(image_path, image_dest)
                     
-                    # Update the image path in the recipe metadata if not already set
-                    if not recipe_data.get("metadata", {}).get("sourceImageUrl"):
-                        if "metadata" not in recipe_data:
-                            recipe_data["metadata"] = {}
-                        recipe_data["metadata"]["sourceImageUrl"] = image_path.name
-                        
-                        # Update the JSON file again with the image path
-                        with open(json_path, 'w') as f:
-                            json.dump(recipe_data, f, indent=2)
+                    # Update the image path in the recipe metadata
+                    if "metadata" not in recipe_data:
+                        recipe_data["metadata"] = {}
+                    recipe_data["metadata"]["sourceImageUrl"] = f"{slug}.{image_ext}"
+                    recipe_data["metadata"]["image"] = f"images/{slug}.{image_ext}"
+                    
+                    # Update the JSON file again with the image path
+                    with open(json_path, 'w') as f:
+                        json.dump(recipe_data, f, indent=2)
                         
                     logging.info(f"Image copied to: {image_dest}")
                 except Exception as e:

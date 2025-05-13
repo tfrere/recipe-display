@@ -22,8 +22,15 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
   const [importType, setImportType] = useState("url");
 
   // Recipe generation state and logic
-  const { isLoading, error, progress, loadingMessage, generateRecipe, reset } =
-    useRecipeGeneration(onRecipeAdded);
+  const {
+    isLoading,
+    error,
+    success,
+    progress,
+    loadingMessage,
+    generateRecipe,
+    reset,
+  } = useRecipeGeneration(onRecipeAdded);
 
   const handleImportTypeChange = (event, newType) => {
     if (newType !== null) {
@@ -53,6 +60,14 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       return () => clearTimeout(timer);
     }
   }, [isLoading, error]);
+
+  // Add useEffect to handle automatic closing on success
+  useEffect(() => {
+    if (success) {
+      // Close the modal immediately on success, since we are redirecting
+      handleClose();
+    }
+  }, [success]);
 
   return (
     <Dialog

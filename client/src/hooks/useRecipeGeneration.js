@@ -19,6 +19,7 @@ const actions = {
 const initialState = {
   isLoading: false,
   error: null,
+  success: false,
   progressId: null,
   progress: null,
   loadingMessage: null,
@@ -64,6 +65,7 @@ function reducer(state, action) {
     case actions.GENERATION_COMPLETE:
       return {
         ...initialState,
+        success: true,
         loadingMessage: "Generation completed!",
       };
     case actions.RESET:
@@ -153,17 +155,20 @@ export function useRecipeGeneration(onRecipeAdded) {
                 pollingIntervalRef.current = null;
               }
 
+              // Set success state immediately
+              dispatch({ type: actions.GENERATION_COMPLETE });
+
               // Call onRecipeAdded callback
               if (onRecipeAdded) {
                 onRecipeAdded();
               }
 
-              // Navigate to the new recipe
-              navigate(`/recipe/${recipeSlug}`);
-
-              // Reset states after navigation
+              // Add a short delay before navigation to allow modal to close
               setTimeout(() => {
-                dispatch({ type: actions.GENERATION_COMPLETE });
+                // Navigate to the new recipe
+                navigate(`/recipe/${recipeSlug}`);
+
+                // Reset states
                 dispatch({ type: actions.RESET });
               }, 100);
             } else {
@@ -177,21 +182,24 @@ export function useRecipeGeneration(onRecipeAdded) {
                 pollingIntervalRef.current = null;
               }
 
+              // Set success state immediately
+              dispatch({ type: actions.GENERATION_COMPLETE });
+
               // Puisque le serveur indique que la génération est terminée,
               // considérons cela comme un succès et retournons à la page d'accueil
               if (onRecipeAdded) {
                 onRecipeAdded();
               }
 
-              // Naviguer vers la page d'accueil
-              navigate("/");
-
               // Notification simple via console
               console.log("Recette importée avec succès!");
 
-              // Reset states
+              // Add a short delay before navigation
               setTimeout(() => {
-                dispatch({ type: actions.GENERATION_COMPLETE });
+                // Naviguer vers la page d'accueil
+                navigate("/");
+
+                // Reset states
                 dispatch({ type: actions.RESET });
               }, 100);
             }
@@ -272,6 +280,7 @@ export function useRecipeGeneration(onRecipeAdded) {
   return {
     isLoading: state.isLoading,
     error: state.error,
+    success: state.success,
     progress: state.progress,
     loadingMessage: state.loadingMessage,
     generateRecipe,
