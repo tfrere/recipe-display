@@ -14,7 +14,8 @@ const SimpleView = () => {
       sx={{
         height: "calc(100vh - 64px)", // Hauteur totale moins la navbar
         overflow: "auto",
-        p: { xs: 2, sm: 3, md: 4 },
+        p: { xs: 0, sm: 3, md: 4 },
+        pt: { xs: 2, sm: 3, md: 4 },
         "@keyframes fadeIn": {
           "0%": {
             opacity: 0,

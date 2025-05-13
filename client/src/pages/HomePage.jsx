@@ -316,7 +316,7 @@ const HomePage = () => {
         }}
       >
         {/* Section de recherche avec Container */}
-        <Box sx={{ pt: 4, pb: 2 }}>
+        <Box sx={{ pt: { xs: 1, sm: 4 }, pb: { xs: 0, sm: 2 } }}>
           <Container maxWidth="lg">
             <SearchBarWithResults
               sx={{
@@ -327,21 +327,9 @@ const HomePage = () => {
                 },
               }}
             />
-            <FilterTags
-              sx={{
-                backgroundColor: "background.default",
-                borderRadius: 1,
-                width: "100%",
-                mt: 2,
-                "& .MuiChip-root": {
-                  backgroundColor: "background.paper",
-                  "&:hover": {
-                    backgroundColor: "background.paper",
-                    opacity: 0.9,
-                  },
-                },
-              }}
-            />
+            <Box sx={{ pt: { xs: 1, sm: 1, md: 1, lg: 4 } }}>
+              <FilterTags />
+            </Box>
           </Container>
         </Box>
 

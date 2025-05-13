@@ -99,6 +99,7 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
             startIcon={<ContentCopyIcon />}
             variant="outlined"
             sx={{
+              display: { xs: "none", sm: "flex" },
               borderColor: "divider",
               color: "text.secondary",
               textTransform: "none",

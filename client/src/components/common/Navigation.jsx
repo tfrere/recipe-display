@@ -57,7 +57,7 @@ const Navigation = () => {
   return (
     <>
       <AppBar
-        position="sticky"
+        position="relative"
         elevation={0}
         sx={{
           backgroundColor: "background.default",

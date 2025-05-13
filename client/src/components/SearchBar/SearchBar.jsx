@@ -1,24 +1,32 @@
-import React from 'react';
-import { 
-  Box, 
-  TextField, 
-  InputAdornment, 
-  IconButton, 
-  Typography, 
+import React from "react";
+import {
+  Box,
+  TextField,
+  InputAdornment,
+  IconButton,
+  Typography,
   Tooltip,
-} from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import RefreshIcon from '@mui/icons-material/Refresh';
-import { useRecipeList } from '../../contexts/RecipeListContext';
+} from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import RefreshIcon from "@mui/icons-material/Refresh";
+import { useRecipeList } from "../../contexts/RecipeListContext";
 
 const SEARCH_TEXTS = {
-  PLACEHOLDER: 'Search recipes by title, ingredients, author or book (min. 3 chars)',
-  RESET_FILTERS: 'Reset all filters'
+  PLACEHOLDER:
+    "Search recipes by title, ingredients, author or book (min. 3 chars)",
+  RESET_FILTERS: "Reset all filters",
 };
 
-const SearchBar = ({ value, onChange, filteredCount, totalCount, hasActiveFilters }) => {
+const SearchBar = ({
+  value,
+  onChange,
+  filteredCount,
+  totalCount,
+  hasActiveFilters,
+}) => {
   const { resetFilters } = useRecipeList();
-  const showCount = typeof filteredCount === 'number' && typeof totalCount === 'number';
+  const showCount =
+    typeof filteredCount === "number" && typeof totalCount === "number";
   const isPristine = !value && !hasActiveFilters;
   const showRefresh = !isPristine;
 
@@ -27,12 +35,12 @@ const SearchBar = ({ value, onChange, filteredCount, totalCount, hasActiveFilter
   };
 
   const handleReset = () => {
-    onChange('');
+    onChange("");
     resetFilters();
   };
 
   return (
-    <Box sx={{ width: '100%', mb: 2 }}>
+    <Box sx={{ width: "100%" }}>
       <TextField
         fullWidth
         value={value}
@@ -50,17 +58,19 @@ const SearchBar = ({ value, onChange, filteredCount, totalCount, hasActiveFilter
             <>
               {showCount && (
                 <InputAdornment position="end">
-                  <Typography 
-                    variant="body2" 
+                  <Typography
+                    variant="body2"
                     color={isPristine ? "text.secondary" : "primary"}
-                    sx={{ 
+                    sx={{
                       fontWeight: isPristine ? 400 : 700,
                       minWidth: 80,
-                      textAlign: 'right',
-                      mr: showRefresh ? 1 : 0
+                      textAlign: "right",
+                      mr: showRefresh ? 1 : 0,
                     }}
                   >
-                    {isPristine ? totalCount : `${filteredCount} / ${totalCount}`}
+                    {isPristine
+                      ? totalCount
+                      : `${filteredCount} / ${totalCount}`}
                   </Typography>
                 </InputAdornment>
               )}
@@ -82,25 +92,25 @@ const SearchBar = ({ value, onChange, filteredCount, totalCount, hasActiveFilter
           ),
           sx: {
             borderRadius: 6,
-            bgcolor: 'background.paper',
-            '&:hover': {
-              bgcolor: 'background.paper',
+            bgcolor: "background.paper",
+            "&:hover": {
+              bgcolor: "background.paper",
             },
-            height: '64px', 
-            fontSize: '1.2rem',
-            paddingRight: '24px',
+            height: "64px",
+            fontSize: "1.2rem",
+            paddingRight: "24px",
           },
         }}
         sx={{
-          '& .MuiOutlinedInput-root': {
-            '& fieldset': {
-              borderColor: 'divider',
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "divider",
             },
-            '&:hover fieldset': {
-              borderColor: 'divider',
+            "&:hover fieldset": {
+              borderColor: "divider",
             },
-            '&.Mui-focused fieldset': {
-              borderColor: 'primary.main',
+            "&.Mui-focused fieldset": {
+              borderColor: "primary.main",
             },
           },
         }}

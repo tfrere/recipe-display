@@ -214,7 +214,7 @@ const FilterTags = () => {
   );
 
   return (
-    <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, mt: 1 }}>
+    <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}>
       {/* <Typography
         variant="body1"
         color="text.secondary"
@@ -301,7 +301,6 @@ const FilterTags = () => {
                 padding: "12px 16px",
                 border: "1px solid",
                 borderColor: "divider",
-                boxShadow: filtersExpanded ? 1 : 0,
               },
             }}
           >
