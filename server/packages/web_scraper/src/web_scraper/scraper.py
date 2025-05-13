@@ -38,6 +38,10 @@ class WebScraper:
         for img in soup.find_all("img"):
             src = img.get("src", "")
             if src:
+                # Skip SVG data URIs or invalid URL formats that cause problems
+                if src.startswith(("/image/svg+xml", "data:image/svg+xml")):
+                    continue
+                    
                 if not src.startswith(("http://", "https://")):
                     src = urljoin(base_url, src)
                 
@@ -46,7 +50,8 @@ class WebScraper:
                         r = await self.client.head(url)
                         if r.status_code == 200:
                             images.append(url)
-                    except httpx.HTTPError:
+                    except (httpx.HTTPError, ValueError):
+                        # Catch both HTTPError and ValueError (for invalid URLs)
                         pass
 
                 tasks.append(check_image(src))
