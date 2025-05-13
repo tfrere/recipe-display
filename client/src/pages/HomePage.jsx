@@ -105,20 +105,7 @@ const NoRecipes = memo(({ hasActiveFilters }) => {
 });
 
 const VirtualizedRecipeGrid = memo(
-  ({
-    recipes,
-    loadingState,
-    isLoading,
-    // Ces props ne sont plus utilisées pour le filtrage mais sont conservées
-    // pour la fonction de comparaison React.memo
-    searchQuery,
-    selectedDiet,
-    selectedSeason,
-    selectedType,
-    selectedDishType,
-    isQuickOnly,
-    isFewIngredients,
-  }) => {
+  ({ recipes }) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const isTablet = useMediaQuery(theme.breakpoints.down("md"));
@@ -227,7 +214,8 @@ const VirtualizedRecipeGrid = memo(
                   left: 0,
                   width: "100%",
                   transform: `translateY(${virtualRow.start}px)`,
-                  padding: `${GAP / 2}px`,
+                  paddingTop: `${GAP / 2}px`,
+                  paddingBottom: `${GAP / 2}px`,
                   display: "grid",
                   gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
                   gap: `${GAP}px`,
@@ -341,8 +329,10 @@ const HomePage = () => {
             />
             <FilterTags
               sx={{
-                backgroundColor: "background.paper",
+                backgroundColor: "background.default",
                 borderRadius: 1,
+                width: "100%",
+                mt: 2,
                 "& .MuiChip-root": {
                   backgroundColor: "background.paper",
                   "&:hover": {
@@ -363,9 +353,6 @@ const HomePage = () => {
             mt: 1,
             overflowY: "scroll",
             overflowX: "hidden",
-            "&::-webkit-scrollbar": {
-              width: "8px",
-            },
             "&::-webkit-scrollbar-track": {
               background: "transparent",
             },

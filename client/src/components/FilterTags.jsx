@@ -1,14 +1,20 @@
-import React from "react";
-import { Box, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Typography, Collapse, IconButton } from "@mui/material";
 import { useRecipeList } from "../contexts/RecipeListContext";
 import { useConstants } from "../contexts/ConstantsContext";
 import FilterTag from "./common/FilterTag";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import TuneIcon from "@mui/icons-material/Tune";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 const FILTER_TEXTS = {
   FILTER_BY: "Filter",
   QUICK_RECIPES: "Quick recipes",
   LOW_INGREDIENTS: "Few ingr.",
   ALL: "All seasons",
+  SHOW_FILTERS: "Show filters",
+  HIDE_FILTERS: "Hide filters",
 };
 
 const getTranslation = (prefix, key, constants) => {
@@ -117,6 +123,96 @@ const FilterTags = () => {
     stats,
   } = useRecipeList();
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const [filtersExpanded, setFiltersExpanded] = useState(false);
+
+  // Calculate active filters count
+  const activeFiltersCount = [
+    selectedDiet,
+    selectedSeason,
+    selectedDishType,
+    isQuickOnly,
+    isLowIngredientsOnly,
+  ].filter((filter) => {
+    if (Array.isArray(filter)) {
+      return filter.length > 0;
+    } else if (typeof filter === "boolean") {
+      return filter === true;
+    } else {
+      return filter !== null && filter !== undefined;
+    }
+  }).length;
+
+  const toggleFilters = () => {
+    setFiltersExpanded(!filtersExpanded);
+  };
+
+  const FiltersContent = () => (
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          columnGap: 4,
+          flexWrap: "wrap",
+          alignItems: "flex-start",
+        }}
+      >
+        <FilterSection
+          items={stats.dishType}
+          selectedValue={selectedDishType}
+          onSelect={setSelectedDishType}
+          translatePrefix="recipe.dishType"
+          type="dishType"
+          constants={constants}
+        />
+        <Box sx={{ display: "flex", gap: 1 }}>
+          <FilterTag
+            label={FILTER_TEXTS.QUICK_RECIPES}
+            count={stats.quick?.count}
+            checked={isQuickOnly}
+            onChange={() => setIsQuickOnly(!isQuickOnly)}
+            showCheckbox={true}
+          />
+          <FilterTag
+            label={FILTER_TEXTS.LOW_INGREDIENTS}
+            count={stats.lowIngredients?.count}
+            checked={isLowIngredientsOnly}
+            onChange={() => setIsLowIngredientsOnly(!isLowIngredientsOnly)}
+            showCheckbox={true}
+          />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          columnGap: 4,
+          flexWrap: "wrap",
+          alignItems: "flex-start",
+        }}
+      >
+        <FilterSection
+          items={stats.diet}
+          selectedValue={selectedDiet}
+          onSelect={setSelectedDiet}
+          translatePrefix="recipe.diet"
+          type="diet"
+          constants={constants}
+        />
+        <FilterSection
+          items={stats.season}
+          selectedValue={selectedSeason}
+          onSelect={setSelectedSeason}
+          translatePrefix="recipe.season"
+          type="season"
+          constants={constants}
+        />
+      </Box>
+    </Box>
+  );
+
   return (
     <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, mt: 1 }}>
       {/* <Typography
@@ -127,68 +223,94 @@ const FilterTags = () => {
         {FILTER_TEXTS.FILTER_BY}
       </Typography> */}
 
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 2,
-            columnGap: 4,
-            flexWrap: "wrap",
-            alignItems: "flex-start",
-          }}
-        >
-          <FilterSection
-            items={stats.dishType}
-            selectedValue={selectedDishType}
-            onSelect={setSelectedDishType}
-            translatePrefix="recipe.dishType"
-            type="dishType"
-            constants={constants}
-          />
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <FilterTag
-              label={FILTER_TEXTS.QUICK_RECIPES}
-              count={stats.quick?.count}
-              checked={isQuickOnly}
-              onChange={() => setIsQuickOnly(!isQuickOnly)}
-              showCheckbox={true}
-            />
-            <FilterTag
-              label={FILTER_TEXTS.LOW_INGREDIENTS}
-              count={stats.lowIngredients?.count}
-              checked={isLowIngredientsOnly}
-              onChange={() => setIsLowIngredientsOnly(!isLowIngredientsOnly)}
-              showCheckbox={true}
-            />
+      {isMobile ? (
+        <Box sx={{ width: "100%" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              padding: "8px 12px",
+              cursor: "pointer",
+              bgcolor: "background.paper",
+              borderRadius: "8px",
+              border: "1px solid",
+              borderColor: activeFiltersCount > 0 ? "primary.main" : "divider",
+              mb: filtersExpanded ? 1 : 0,
+              transition: "all 0.2s ease",
+              "&:hover": {
+                bgcolor: "action.hover",
+              },
+            }}
+            onClick={toggleFilters}
+          >
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <TuneIcon sx={{ mr: 1, color: "text.primary", opacity: 0.5 }} />
+              <Typography variant="button" color="text.primary">
+                {filtersExpanded
+                  ? FILTER_TEXTS.HIDE_FILTERS
+                  : FILTER_TEXTS.SHOW_FILTERS}
+              </Typography>
+              {activeFiltersCount > 0 && (
+                <Box
+                  sx={{
+                    ml: 1,
+                    bgcolor: "primary.main",
+                    color: "primary.contrastText",
+                    borderRadius: "50%",
+                    width: 24,
+                    height: 24,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "0.75rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {activeFiltersCount}
+                </Box>
+              )}
+            </Box>
+            <IconButton
+              size="small"
+              sx={{
+                p: 0,
+                transition: "transform 0.3s ease",
+                "&:hover": {
+                  transform: "rotate(180deg)",
+                },
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleFilters();
+              }}
+            >
+              {filtersExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+            </IconButton>
           </Box>
+          <Collapse
+            in={filtersExpanded}
+            timeout="auto"
+            unmountOnExit
+            sx={{
+              mt: 1,
+              transition: "all 0.3s ease-in-out",
+              "& .MuiCollapse-wrapperInner": {
+                borderRadius: "8px",
+                bgcolor: "background.paper",
+                padding: "12px 16px",
+                border: "1px solid",
+                borderColor: "divider",
+                boxShadow: filtersExpanded ? 1 : 0,
+              },
+            }}
+          >
+            <FiltersContent />
+          </Collapse>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 2,
-            columnGap: 4,
-            flexWrap: "wrap",
-            alignItems: "flex-start",
-          }}
-        >
-          <FilterSection
-            items={stats.diet}
-            selectedValue={selectedDiet}
-            onSelect={setSelectedDiet}
-            translatePrefix="recipe.diet"
-            type="diet"
-            constants={constants}
-          />
-          <FilterSection
-            items={stats.season}
-            selectedValue={selectedSeason}
-            onSelect={setSelectedSeason}
-            translatePrefix="recipe.season"
-            type="season"
-            constants={constants}
-          />
-        </Box>
-      </Box>
+      ) : (
+        <FiltersContent />
+      )}
     </Box>
   );
 };

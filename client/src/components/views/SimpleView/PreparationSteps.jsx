@@ -179,6 +179,7 @@ const PreparationSteps = ({ recipe }) => {
                         cursor: "pointer",
                         userSelect: "none",
                         p: 1.5,
+                        pl: { xs: 0, sm: 1.5 },
                         borderRadius: 1,
                         transition: "all 0.2s ease-in-out",
                       }}
@@ -187,12 +188,15 @@ const PreparationSteps = ({ recipe }) => {
                         variant="body2"
                         sx={{
                           color: "text.disabled",
-                          width: "24px",
+                          width: "16px",
                           flexShrink: 0,
                           textAlign: "right",
+                          fontSize: "0.875rem",
+                          lineHeight: { xs: 1.2, sm: 1.43 },
+                          mr: { xs: -0.5, sm: 0 },
                         }}
                       >
-                        {stepIndex + 1}.
+                        ○
                       </Typography>
                       <Box
                         sx={{
