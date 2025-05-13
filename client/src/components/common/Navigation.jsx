@@ -17,7 +17,7 @@ import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
 import { VIEWS } from "../../constants/views";
 import { alpha } from "@mui/material/styles";
 import AddRecipeModal from "./AddRecipe/AddRecipeModal";
-import useCheatCode from "../../hooks/useCheatCode";
+import useLongPress from "../../hooks/useLongPress";
 
 const NAVIGATION_TEXTS = {
   COOKBOOK: "Cookbook",
@@ -33,7 +33,8 @@ const Navigation = () => {
   const location = useLocation();
   const { darkMode } = useTheme();
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
-  const { disablePrivateAccess, hasPrivateAccess } = useCheatCode();
+  const { disablePrivateAccess, hasPrivateAccess, pressing, longPressProps } =
+    useLongPress();
   const {
     setSelectedDiet,
     setSelectedDifficulty,
@@ -52,6 +53,16 @@ const Navigation = () => {
     setSelectedDishType(null);
     setIsQuickOnly(false);
     setSearchQuery("");
+  };
+
+  // Fonction pour désactiver l'accès privé
+  const handleDisablePrivateAccess = () => {
+    console.log("[Navigation] Disabling private access");
+    disablePrivateAccess();
+
+    // Recharger la page pour s'assurer que les changements sont reflétés
+    // Nous pouvons supprimer cette ligne si les événements fonctionnent correctement
+    // window.location.reload();
   };
 
   return (
@@ -75,14 +86,20 @@ const Navigation = () => {
                 display: "flex",
                 alignItems: "center",
                 cursor: "pointer",
+                position: "relative",
               }}
               onClick={() => {
                 navigate("/");
                 resetFilters();
               }}
+              {...longPressProps}
             >
               <AutoStoriesOutlinedIcon
-                sx={{ mr: 1, color: "text.secondary" }}
+                sx={{
+                  mr: 1,
+                  color: pressing ? "primary.main" : "text.secondary",
+                  transition: "color 0.2s ease-in-out",
+                }}
               />
               <Typography
                 variant="body1"
@@ -198,10 +215,7 @@ const Navigation = () => {
                         bgcolor: "action.hover",
                       },
                     }}
-                    onClick={() => {
-                      disablePrivateAccess();
-                      window.location.reload();
-                    }}
+                    onClick={handleDisablePrivateAccess}
                   >
                     <NoAccountsOutlinedIcon sx={{ color: "text.secondary" }} />
                   </Box>

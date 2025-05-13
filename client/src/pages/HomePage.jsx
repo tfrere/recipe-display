@@ -34,7 +34,9 @@ import AppTransition from "../components/common/AppTransition";
 import { useConstants } from "../contexts/ConstantsContext";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
-import useCheatCode from "../hooks/useCheatCode";
+import useLongPress from "../hooks/useLongPress";
+import { VIEWS } from "../constants/views";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const HOME_TEXTS = {
   NO_RECIPES: {
@@ -59,7 +61,7 @@ const HOME_TEXTS = {
 
 const NoRecipes = memo(({ hasActiveFilters }) => {
   const { openAddRecipeModal } = useRecipeList();
-  const { hasPrivateAccess } = useCheatCode();
+  const { hasPrivateAccess } = useLongPress();
 
   return (
     <Paper
@@ -304,6 +306,13 @@ const HomePage = () => {
   );
 
   const isLoading = loadingState.recipes;
+
+  const [currentView, setCurrentView] = useLocalStorage(
+    "currentView",
+    VIEWS.SIMPLE
+  );
+  const [filterMenuOpen, setFilterMenuOpen] = useState(false);
+  const { hasPrivateAccess } = useLongPress();
 
   return (
     <AppTransition type="fade" isVisible={!isLoading}>

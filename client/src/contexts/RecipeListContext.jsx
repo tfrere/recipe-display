@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { useTheme } from "./ThemeContext";
 import { useConstants } from "./ConstantsContext";
 import { getRecipes } from "../services/recipeService";
-import useCheatCode from "../hooks/useCheatCode";
+import useLongPress, { PRIVATE_ACCESS_CHANGED } from "../hooks/useLongPress";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_ENDPOINT || "http://localhost:3001";
@@ -43,7 +43,7 @@ const normalizeText = (text) => {
 export const RecipeListProvider = ({ children }) => {
   const { constants } = useConstants();
   const sortByCategory = true;
-  const { hasPrivateAccess } = useCheatCode();
+  const { hasPrivateAccess, onPrivateAccessChange } = useLongPress();
   const DEBUG = false; // Flag pour activer/désactiver les logs de débogage
   const seasonalRecipesOrder = useRef(new Map());
 
@@ -65,6 +65,7 @@ export const RecipeListProvider = ({ children }) => {
   const [isQuickOnly, setIsQuickOnly] = useState(false);
   const [isLowIngredientsOnly, setIsLowIngredientsOnly] = useState(false);
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   // Charger toutes les recettes
   const fetchRecipes = useCallback(async () => {
@@ -97,6 +98,27 @@ export const RecipeListProvider = ({ children }) => {
       }));
     }
   }, [hasPrivateAccess]);
+
+  // Écouter les changements d'état d'accès privé
+  useEffect(() => {
+    console.log("[RecipeListContext] Setting up privateAccess change listener");
+    // S'abonner aux changements d'état d'accès privé
+    const unsubscribe = onPrivateAccessChange((newValue) => {
+      console.log(
+        `[RecipeListContext] Private access changed to: ${newValue}, reloading recipes`
+      );
+      // Recharger les recettes lorsque l'état d'accès privé change
+      fetchRecipes();
+    });
+
+    // Se désabonner lorsque le composant est démonté
+    return () => {
+      console.log(
+        "[RecipeListContext] Cleaning up privateAccess change listener"
+      );
+      unsubscribe();
+    };
+  }, [onPrivateAccessChange, fetchRecipes]);
 
   useEffect(() => {
     fetchRecipes();
