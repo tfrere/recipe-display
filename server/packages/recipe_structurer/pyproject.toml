@@ -9,17 +9,21 @@ packages = [{include = "recipe_structurer", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.12"
 pydantic = "^2.0"
-pydantic-ai = "^0.0.23"
-instructor = "^0.4.0"
+instructor = "^1.14.0"  # V2: Updated to latest version with full async support
 python-dotenv = "^1.0.0"
-openai = "^1.0.0"
+openai = "^2.0.0"
 typing-extensions = "^4.0.0"
 requests = "^2.32.3"
 beautifulsoup4 = "^4.12.3"
+# Legacy dependencies (kept for backwards compatibility with V1)
+pydantic-ai = "^0.0.23"
 langchain = "^0.3.15"
 langchain-community = "^0.3.15"
 langchain-core = "^0.3.31"
 huggingface_hub = "^0.30.2"
+# NER ingredient parsing (Pass 1.5)
+transformers = "^4.47.0"
+torch = "^2.5.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
