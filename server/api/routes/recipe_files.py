@@ -130,7 +130,7 @@ async def upload_recipes_batch(archive: UploadFile = File(...)):
                         dest = RECIPES_DIR / basename
                         await asyncio.to_thread(dest.write_bytes, file_content)
                         results["recipes"].append(basename)
-                    elif any(filename.endswith(ext) for ext in (".jpg", ".jpeg", ".png", ".gif")):
+                    elif any(filename.endswith(ext) for ext in (".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg")):
                         dest = IMAGES_DIR / basename
                         await asyncio.to_thread(dest.write_bytes, file_content)
                         results["images"].append(basename)
