@@ -179,7 +179,7 @@ const Navigation = () => {
                   cursor: "pointer",
                   borderRadius: 1,
                   border: "1px solid",
-                  borderColor: pantrySize > 0 ? "primary.main" : "divider",
+                  borderColor: pantrySize > 0 ? "text.primary" : "divider",
                   "&:hover": {
                     bgcolor: "action.hover",
                   },
@@ -188,27 +188,28 @@ const Navigation = () => {
               >
                 <Badge
                   badgeContent={pantrySize > 0 ? pantrySize : null}
-                  color="primary"
                   max={99}
                   sx={{
                     "& .MuiBadge-badge": {
                       fontSize: "0.65rem",
                       height: 18,
                       minWidth: 18,
+                      bgcolor: "text.primary",
+                      color: "background.paper",
                     },
                   }}
                 >
                   <KitchenOutlinedIcon
                     sx={{
-                      color: pantrySize > 0 ? "primary.main" : "text.secondary",
+                      color: pantrySize > 0 ? "text.primary" : "text.secondary",
                     }}
                   />
                 </Badge>
                 <Typography
                   variant="body2"
                   sx={{
-                    color: pantrySize > 0 ? "primary.main" : "text.secondary",
-                    fontWeight: 500,
+                    color: pantrySize > 0 ? "text.primary" : "text.secondary",
+                    fontWeight: pantrySize > 0 ? 600 : 500,
                     display: { xs: "none", sm: "block" },
                   }}
                 >

@@ -93,19 +93,6 @@ const MealPlannerSetup = ({ config, onConfigChange, availableCount, onGenerate }
           mx: "auto",
         }}
       >
-        {/* ── Header ── */}
-        <Box sx={{ textAlign: "center" }}>
-          <Typography
-            variant="h4"
-            sx={{ fontWeight: 800, mb: 0.5, letterSpacing: "-0.02em" }}
-          >
-            Meal Planner
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Pick recipes that share ingredients to simplify your shopping.
-          </Typography>
-        </Box>
-
         {/* ── Hero row: Meals + Servings ── */}
         <Box
           sx={{
@@ -287,9 +274,10 @@ const MealPlannerSetup = ({ config, onConfigChange, availableCount, onGenerate }
               </Typography>
             </Typography>
             <ToggleButtonGroup
-              value={config.nutritionGoals || []}
-              onChange={(_, newGoals) => {
-                onConfigChange({ nutritionGoals: newGoals });
+              value={config.nutritionGoals?.[0] || null}
+              exclusive
+              onChange={(_, val) => {
+                onConfigChange({ nutritionGoals: val ? [val] : [] });
               }}
               sx={{
                 width: "100%",

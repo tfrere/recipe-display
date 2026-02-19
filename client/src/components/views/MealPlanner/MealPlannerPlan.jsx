@@ -186,7 +186,7 @@ const MealPlannerPlan = ({
         }}
       >
         {plan.map((item, index) => (
-          <Box key={item.recipe.slug}>
+          <Box key={item.recipe.slug} sx={{ display: "flex", flexDirection: "column" }}>
             {/* Day label */}
             <Typography
               variant="overline"
@@ -202,12 +202,14 @@ const MealPlannerPlan = ({
             >
               {useDayLabels ? DAY_LABELS[index] : `Meal ${index + 1}`}
             </Typography>
-            <MealPlannerRecipeCard
-              item={item}
-              isLocked={lockedSlugs.has(item.recipe.slug)}
-              onToggleLock={() => onToggleLock(item.recipe.slug)}
-              onSwap={() => onSwap(index)}
-            />
+            <Box sx={{ flex: 1 }}>
+              <MealPlannerRecipeCard
+                item={item}
+                isLocked={lockedSlugs.has(item.recipe.slug)}
+                onToggleLock={() => onToggleLock(item.recipe.slug)}
+                onSwap={() => onSwap(index)}
+              />
+            </Box>
           </Box>
         ))}
       </Box>

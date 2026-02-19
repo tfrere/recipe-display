@@ -36,11 +36,7 @@ const FilterTag = ({
               sx={{
                 fontSize: "1.1rem",
                 ml: 0.8,
-                color: checked
-                  ? variant === "secondary"
-                    ? "secondary.main"
-                    : "primary.main"
-                  : "text.secondary",
+                color: "text.primary",
               }}
             />
           ) : (
@@ -78,13 +74,7 @@ const FilterTag = ({
       }
       onClick={onChange}
       variant="outlined"
-      color={
-        checked
-          ? variant === "secondary"
-            ? "secondary"
-            : "primary"
-          : "default"
-      }
+      color="default"
       size="small"
       data-checked={checked}
       sx={{
@@ -99,7 +89,7 @@ const FilterTag = ({
         pr: 0.25,
         mr: 0.5,
         mb: 0.5,
-        transition: "opacity 0.2s ease, border-color 0.2s ease",
+        transition: "opacity 0.2s ease, border-color 0.2s ease, background-color 0.2s ease",
         "& .MuiChip-label": {
           px: 0.75,
           pl: showCheckbox ? 0.6 : 0.75,
@@ -111,26 +101,15 @@ const FilterTag = ({
         "&:hover": {
           opacity: 1,
           backgroundColor: checked
-            ? alpha(
-                theme.palette[variant === "secondary" ? "secondary" : "primary"]
-                  .main,
-                theme.palette.mode === "light" ? 0.08 : 0.16
-              )
+            ? alpha(theme.palette.text.primary, theme.palette.mode === "light" ? 0.08 : 0.16)
             : "action.hover",
           borderWidth: "1px",
         },
+        color: checked ? "text.primary" : "text.secondary",
         backgroundColor: checked
-          ? alpha(
-              theme.palette[variant === "secondary" ? "secondary" : "primary"]
-                .main,
-              theme.palette.mode === "light" ? 0.08 : 0.16
-            )
+          ? alpha(theme.palette.text.primary, theme.palette.mode === "light" ? 0.06 : 0.12)
           : "background.paper",
-        borderColor: checked
-          ? variant === "secondary"
-            ? "secondary.main"
-            : "primary.main"
-          : "divider",
+        borderColor: checked ? "text.primary" : "divider",
         ...sx,
       }}
     />

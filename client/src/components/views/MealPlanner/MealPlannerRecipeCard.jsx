@@ -101,11 +101,13 @@ const MealPlannerRecipeCard = memo(({ item, isLocked, onToggleLock, onSwap }) =>
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.25, ease: "easeOut" }}
+        style={{ height: "100%" }}
       >
         <Card
           sx={{
             display: "flex",
             flexDirection: "column",
+            height: "100%",
             position: "relative",
             overflow: "hidden",
             backgroundColor: "background.paper",

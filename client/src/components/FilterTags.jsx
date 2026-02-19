@@ -246,7 +246,7 @@ const FilterTags = () => {
               bgcolor: "background.paper",
               borderRadius: "8px",
               border: "1px solid",
-              borderColor: activeFiltersCount > 0 ? "primary.main" : "divider",
+              borderColor: activeFiltersCount > 0 ? "text.primary" : "divider",
               mb: filtersExpanded ? 1 : 0,
               transition: "all 0.2s ease",
               "&:hover": {
@@ -266,8 +266,8 @@ const FilterTags = () => {
                 <Box
                   sx={{
                     ml: 1,
-                    bgcolor: "primary.main",
-                    color: "primary.contrastText",
+                    bgcolor: "text.primary",
+                    color: "background.paper",
                     borderRadius: "50%",
                     width: 24,
                     height: 24,

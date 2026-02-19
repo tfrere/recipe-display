@@ -8,7 +8,6 @@ import {
   Box,
   Typography,
   Container,
-  CircularProgress,
   Alert,
   Paper,
   Button,
@@ -22,6 +21,7 @@ import RestaurantIcon from "@mui/icons-material/Restaurant";
 import AddIcon from "@mui/icons-material/Add";
 import AddRecipeModal from "../components/common/AddRecipe/AddRecipeModal";
 import AppTransition from "../components/common/AppTransition";
+import RecipeLoader from "../components/common/RecipeLoader";
 import { useConstants } from "../contexts/ConstantsContext";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
@@ -340,8 +340,22 @@ const HomePage = () => {
 
   const { hasPrivateAccess } = useLongPress();
 
+  if (isLoading) {
+    return (
+      <Box
+        sx={{
+          height: "calc(100vh - 64px)",
+          display: "flex",
+          backgroundColor: "background.default",
+        }}
+      >
+        <RecipeLoader />
+      </Box>
+    );
+  }
+
   return (
-    <AppTransition type="fade" isVisible={!isLoading}>
+    <AppTransition type="fade" isVisible>
       <Box
         sx={{
           height: "calc(100vh - 64px)",
@@ -395,10 +409,6 @@ const HomePage = () => {
               <Alert severity="error" sx={{ m: 4 }}>
                 Une erreur est survenue lors du chargement des recettes.
               </Alert>
-            ) : isLoading ? (
-              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
-                <CircularProgress />
-              </Box>
             ) : filteredRecipes?.length === 0 ? (
               <NoRecipes hasActiveFilters={hasActiveFilters} />
             ) : (

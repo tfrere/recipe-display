@@ -215,7 +215,7 @@ const CategorySection = ({ category, hasExactItem, toggleItem }) => {
               label={item}
               size="small"
               onClick={() => toggleItem(item)}
-              variant="filled"
+              variant={isActive ? "filled" : "outlined"}
               sx={{
                 fontWeight: isActive ? 600 : 400,
                 fontSize: "0.78rem",
@@ -225,24 +225,22 @@ const CategorySection = ({ category, hasExactItem, toggleItem }) => {
                 transition: "all 0.15s ease",
                 ...(isActive
                   ? {
-                      bgcolor: "primary.main",
-                      color: "primary.contrastText",
+                      bgcolor: "text.primary",
+                      color: "background.paper",
                       "&:hover": {
-                        bgcolor: "primary.dark",
+                        bgcolor: "text.primary",
+                        opacity: 0.85,
                         transform: "scale(1.03)",
                       },
                     }
                   : {
-                      bgcolor: (theme) =>
-                        theme.palette.mode === "dark"
-                          ? "rgba(255,255,255,0.08)"
-                          : "rgba(0,0,0,0.06)",
-                      color: "text.primary",
+                      borderColor: "divider",
+                      color: "text.secondary",
                       "&:hover": {
                         bgcolor: (theme) =>
                           theme.palette.mode === "dark"
-                            ? "rgba(255,255,255,0.14)"
-                            : "rgba(0,0,0,0.10)",
+                            ? "rgba(255,255,255,0.08)"
+                            : "rgba(0,0,0,0.04)",
                         transform: "scale(1.03)",
                       },
                     }),
@@ -327,7 +325,7 @@ const PantryDrawer = ({ open, onClose }) => {
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-            <KitchenOutlinedIcon sx={{ color: "primary.main" }} />
+            <KitchenOutlinedIcon sx={{ color: "text.primary" }} />
             <Box>
               <Typography variant="h6" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
                 My Pantry
@@ -429,14 +427,15 @@ const PantryDrawer = ({ open, onClose }) => {
                     deleteIcon={
                       <CloseIcon sx={{ fontSize: "0.8rem !important" }} />
                     }
-                    color="primary"
                     sx={{
                       fontWeight: 600,
                       fontSize: "0.78rem",
                       borderRadius: "8px",
                       height: 30,
+                      bgcolor: "text.primary",
+                      color: "background.paper",
                       "& .MuiChip-deleteIcon": {
-                        color: "primary.contrastText",
+                        color: "background.paper",
                         opacity: 0.7,
                         "&:hover": { opacity: 1 },
                       },

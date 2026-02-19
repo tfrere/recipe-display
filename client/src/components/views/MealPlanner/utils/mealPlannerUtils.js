@@ -21,7 +21,6 @@ export { getCurrentSeason, SEASON_EMOJI };
 
 // ─── Nutrition tag definitions ───────────────────────────────────────
 export const NUTRITION_GOALS = [
-  { id: "balanced", label: "Balanced", emoji: "\u2696\uFE0F", description: "Even macro distribution" },
   { id: "high-protein", label: "High Protein", emoji: "\u{1F4AA}", description: "Protein > 25g/serving" },
   { id: "low-calorie", label: "Light", emoji: "\u{1F343}", description: "Under 400 kcal/serving" },
   { id: "high-fiber", label: "High Fiber", emoji: "\u{1F33E}", description: "Fiber > 8g/serving" },

@@ -27,7 +27,7 @@ const MealPlannerPage = () => {
     } catch { /* ignore */ }
 
     return {
-      numberOfMeals: 5,
+      numberOfMeals: 4,
       servingsPerMeal: 4,
       dietPreference: null,
       prioritizeSeasonal: true,
