@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "title": "Frites de carotte au parmesan",
+    "description": "Faites croustiller vos papilles avec ces frites de carotte au parmesan, pr\u00eates en un clin d'\u0153il. Une recette facile, rapide et pleine de peps pour revisiter ce l\u00e9gume du quotidien.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "carotte",
+      "parmesan",
+      "ap\u00e9ro",
+      "accompagnement",
+      "snack",
+      "v\u00e9g\u00e9tarien",
+      "au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/frites-de-carotte-au-parmesan.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaites pour les enfants, elles se mangent avec les doigts et se trempent dans leur sauce pr\u00e9f\u00e9r\u00e9e.",
+      "D\u00e9guster imm\u00e9diatement avec la sauce de votre choix !"
+    ],
+    "slug": "frites-de-carotte-au-parmesan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/frites-de-carotte-au-parmesan.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/05/11/frites-de-carotte-au-parmesan/",
+    "image": "images/frites-de-carotte-au-parmesan.webp",
+    "createdAt": "2026-02-09T22:49:58.506268",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 293.3,
+      "protein": 9.2,
+      "fat": 14.8,
+      "carbs": 34.1,
+      "fiber": 7.5,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "4-5 carottes",
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "cornstarch",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail semoule",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_cut_carrots",
+      "action": "\u00c9plucher et couper les carottes en b\u00e2tonnets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrots"
+      ],
+      "produces": "carrot_sticks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_with_cornstarch",
+      "action": "Placer les b\u00e2tonnets de carotte dans un bol avec la f\u00e9cule de ma\u00efs et m\u00e9langer avec les mains pour bien les enduire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrot_sticks",
+        "cornstarch"
+      ],
+      "produces": "cornstarch_coated_carrots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_seasonings",
+      "action": "Ajouter l'huile d'olive, le parmesan r\u00e2p\u00e9, le paprika fum\u00e9, l'ail semoule et le sel, puis bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cornstarch_coated_carrots",
+        "olive_oil",
+        "parmesan",
+        "smoked_paprika",
+        "garlic_powder",
+        "salt"
+      ],
+      "produces": "seasoned_carrot_sticks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "D\u00e9poser les b\u00e2tonnets sans qu'ils ne se touchent sur une plaque recouverte de papier cuisson et enfourner pour 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_carrot_sticks"
+      ],
+      "produces": "baked_carrot_fries",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster imm\u00e9diatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_carrot_fries"
+      ],
+      "produces": "frites_carotte_parmesan",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "frites_carotte_parmesan",
+  "originalText": "Frites De Carotte Au Parmesan\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 mai 2025\nFrites de carotte au parmesan : la recette express qui croustille\nFaites\ncroustiller\nvos papilles avec ces\nfrites de carotte au parmesan\n, pr\u00eates en un clin d\u2019\u0153il. Une\nrecette facile\n,\nrapide\net pleine de peps pour revisiter ce\nl\u00e9gume\ndu quotidien. On adore les\ntremper\n, les\ngrignoter\n, les\npartager\n(ou pas !) \u00e0 l\u2019heure du\nsnack\nou de l\u2019\nap\u00e9ro\n. Pas besoin d\u2019\nhuile\nen pluie ni de\nfriteuse\n, c\u2019est simple comme bonjour. Envie d\u2019un\naccompagnement\nfun et veggie qui change des classiques ? On vous suit ! Allez, on enfile nos\ntabliers\net on se\nr\u00e9gale\n, sans chichi ni chipotage.\nTable des mati\u00e8res\n1\nLa carotte : notre obsession orange (et pas que pour le teint)\n2\nDes frites, des frites ! Et en version veggie qui claque\n3\nFrites de carotte au parmesan\n4\nUne fa\u00e7on originale de faire aimer les carottes (m\u00eame aux plus petits)\nLa carotte : notre obsession orange (et pas que pour le teint)\nChez nous, la\ncarotte\n, c\u2019est presque une histoire d\u2019amour. Elle est croquante, douce, color\u00e9e, ultra polyvalente\u2026 et elle rend aimable, c\u2019est prouv\u00e9 (ou presque) ! Ce qui ne fait pas de mal, surtout par les temps qui courent\u2026 Bourr\u00e9e de b\u00eata-carot\u00e8ne, elle fait rayonner votre peau et booste votre bonne humeur. Elle soutient la vue, le transit, et donne du pep\u2019s \u00e0 n\u2019importe quelle assiette. Bref, on en met partout, on la d\u00e9cline \u00e0 toutes les sauces, et on ne s\u2019en lasse jamais. La carotte, c\u2019est un peu la star veggie qu\u2019on veut toujours avoir sous la main. Cap ou pas cap d\u2019en faire votre l\u00e9gume chouchou aussi ?\nSi la carotte est devenue votre nouvelle passion (et on vous comprend !), vous allez adorer nos\ncarottes r\u00f4ties au miel et \u00e0 la harissa\n, un m\u00e9lange de douceur et de piquant. Pour un plat complet, nos\ngalettes de lentilles corail et carottes vegan et sans gluten\nferont le job, tout comme nos\ncroquettes v\u00e9g\u00e9tariennes de carottes et feta sans gluten\npour une touche gourmande.\nDes frites, des frites ! Et en version veggie qui claque\nFaire des frites (oui, des frites !) avec des carottes, c\u2019est le combo possible ! On coupe, on assaisonne, on enfourne et bim, c\u2019est pr\u00eat en deux temps trois mouvements. En plus, la carotte, c\u2019est LE l\u00e9gume \u00e9conomique par excellence. Elle coche toutes les cases du kiff malin. Croustillantes \u00e0 souhait, ces frites vont faire fondre petits et grands. Qui a dit qu\u2019on ne pouvait pas se faire plaisir avec trois fois rien ?\nVous voulez encore des frites ? Nous aussi. Si cette recette vous a plu, vous allez adorer nos autres p\u00e9pites croustillantes : les\nfrites au four super croustillantes\n, les\nfrites de patate douce au four\n, les\nfrites au four gros sel et romarin\n, ou encore les\nchurripom cannelle\npour une version sucr\u00e9e ultra r\u00e9confortante. Faites chauffer le four !\nFrites de carotte au parmesan\n4.49\n/5 avec\n60\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n4-5\ncarottes\nenv 450g\n1\nc\u00e0s de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019huile d\u2019olive\n3\nc\u00e0s de parmesan r\u00e2p\u00e9\n1\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c d\u2019ail semoule\n\u00bd\nc\u00e0c de sel\nInstructions\nPr\u00e9chauffer le four \u00e0 190\u00b0C\n\u00c9plucher et couper les carottes en b\u00e2tonnets.\nLes placer dans un bol avec la f\u00e9cule et m\u00e9langer avec les mains pour bien les enduire.\nAjouter le reste des ingr\u00e9dients et bien m\u00e9langer.\nD\u00e9poser les b\u00e2tonnets sans qu\u2019ils ne se touchent sur une plaque recouverte de papier cuisson et enfourner pour 30min.\nD\u00e9guster imm\u00e9diatement avec la sauce de votre choix !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa carotte peut m\u00eame devenir du bacon ! Si vous \u00eates pr\u00eats \u00e0 \u00eatre bluff\u00e9s, d\u00e9couvrez comment faire un\nbacon v\u00e9g\u00e9tal super croustillant\n\u00e0 partir de carottes. Une fa\u00e7on veggie qui pourrait bien changer votre vision du bacon \u00e0 tout jamais !\nUne fa\u00e7on originale de faire aimer les carottes (m\u00eame aux plus petits)\nMarre des b\u00e2tonnets vapeur tristounets ? Ces frites de carotte, c\u2019est la version cool et crousti pour changer la donne. Parfaites pour les enfants, elles se mangent avec les doigts et se trempent dans leur sauce pr\u00e9f\u00e9r\u00e9e. On enrobe nos jolies carottes de f\u00e9cule de ma\u00efs, un peu d\u2019huile d\u2019olive, une pluie de parmesan r\u00e2p\u00e9, du paprika fum\u00e9, une touche d\u2019ail semoule et un soup\u00e7on de sel. Hop au four, et c\u2019est le snack veggie qui met tout le monde d\u2019accord. C\u2019est ludique, color\u00e9, et \u00e7a dispara\u00eet \u00e0 vue d\u2019\u0153il. On parie que vous allez en refaire tr\u00e8s vite ?\nLa carotte se marie aussi tellement bien en version sucr\u00e9e ! D\u00e9couvrez notre d\u00e9licieux\ncarrot cake \u00e0 la p\u00eache\n, ou laissez-vous tenter par notre\ncarrot cake fa\u00e7on Bundt vegan et sans gluten\n.\nEt voil\u00e0, vos frites de carotte au parmesan sont pr\u00eates \u00e0 \u00eatre d\u00e9vor\u00e9es ! Une recette simple, rapide et pleine de saveurs qui va r\u00e9galer toute la famille, petits et grands. Avec leur texture croustillante et leur go\u00fbt irr\u00e9sistible, ces frites de carotte vont vite devenir un incontournable de vos repas. Elles sont parfaites pour les ap\u00e9ros, les snacks ou m\u00eame en accompagnement. On esp\u00e8re que cette recette vous aura donn\u00e9 la frite !\nSi, comme nous, la carotte est devenue votre nouvelle obsession, vous allez adorer d\u00e9couvrir toutes nos autres\nrecettes \u00e0 base de carotte\n. Laissez-vous inspirer par des plats aussi color\u00e9s et que d\u00e9licieux !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nAutomne\n,\nBrunch Sal\u00e9\n,\nCarotte\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes par L\u00e9gume\n,\nRecettes Sal\u00e9es\nSalade de fenouil, roquette et parmesan : pr\u00eate en 10 minutes chrono !\n\u00c9pinards sauce soja et s\u00e9same express : la recette minute pleine de go\u00fbt\n1 thought on \u201cFrites de carotte au parmesan : la recette express qui croustille\u201d\nCreme-fraiche\ndit\u00a0:\n13 mai 2025 \u00e0 16 h 11 min\nJ\u2019avais la m\u00eame recette avec de la patate douce. Mais je vais essayer avec la carotte pour cet \u00e9t\u00e9 !\nchargement\u2026\nR\u00e9pondre\n4.49 from 60 votes (\n59 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

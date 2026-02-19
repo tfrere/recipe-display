@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "title": "Rhum arrang\u00e9 aux mirabelles",
+    "description": "Une mani\u00e8re simple et rapide de prolonger la saison des mirabelles et de garder un peu de lumi\u00e8re dans les mois plus gris. Une id\u00e9e de cadeau fait maison, chaleureux et original.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "drink",
+    "tags": [
+      "boisson",
+      "\u00e9t\u00e9",
+      "prune",
+      "alcool",
+      "cadeau",
+      "mac\u00e9ration"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Rhum-arrange-mirabelles-1-of-1.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pr\u00e9parer maintenant pour profiter d\u00e8s les f\u00eates.",
+      "Se conserve parfaitement une fois ouvert. Peut \u00eatre filtr\u00e9 ou gard\u00e9 avec les fruits.",
+      "Au moins trois mois de mac\u00e9ration sont n\u00e9cessaires, mais plus on attend, meilleur c'est.",
+      "Variantes possibles : mirabelle et romarin, mirabelle et cannelle, mirabelle et badiane.",
+      "Choisir un bon rhum (\u00e0 50\u00b0 minimum) et des fruits m\u00fbrs mais sains."
+    ],
+    "slug": "rhum-arrange-aux-mirabelles",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Rhum-arrange-mirabelles-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/08/23/rhum-arrange-mirabelles/",
+    "image": "images/rhum-arrange-aux-mirabelles.webp",
+    "createdAt": "2026-02-09T23:04:10.119184",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 14.0,
+    "totalCookingTime": 14.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 720.2,
+      "protein": 2.5,
+      "fat": 1.2,
+      "carbs": 72.0,
+      "fiber": 8.8,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 2,
+      "totalIngredients": 3,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition",
+      "liquidRetentionApplied": true
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "mirabelles",
+      "name": "mirabelles",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "d\u00e9noyaut\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mirabelle plums"
+    },
+    {
+      "id": "vanilla_bean",
+      "name": "gousse vanille",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla bean"
+    },
+    {
+      "id": "cane_sugar",
+      "name": "sucre de canne",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cane sugar"
+    },
+    {
+      "id": "white_rum",
+      "name": "rhum blanc",
+      "quantity": 75.0,
+      "unit": "cl",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "minimum 50\u00b0",
+      "optional": false,
+      "name_en": "White rum"
+    }
+  ],
+  "tools": [
+    "Bouteille (avec bouchon)"
+  ],
+  "steps": [
+    {
+      "id": "pit_mirabelles",
+      "action": "D\u00e9noyautez les 400g de mirabelles.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "rhum_arrange",
+      "uses": [
+        "mirabelles"
+      ],
+      "produces": "pitted_mirabelles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_rum_sugar",
+      "action": "Versez le 70g de sucre de canne et le 75cl de rhum blanc dans une bouteille et m\u00e9langez pour dissoudre le sucre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "rhum_arrange",
+      "uses": [
+        "cane_sugar",
+        "white_rum"
+      ],
+      "produces": "rum_sugar_mix",
+      "requires": [],
+      "visualCue": "sucre dissous"
+    },
+    {
+      "id": "add_fruits_vanilla",
+      "action": "Ajoutez les mirabelles d\u00e9noyaut\u00e9es et la 1 gousse de vanille.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "rhum_arrange",
+      "uses": [
+        "pitted_mirabelles",
+        "vanilla_bean",
+        "rum_sugar_mix"
+      ],
+      "produces": "bottled_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "seal_bottle",
+      "action": "Fermez herm\u00e9tiquement la bouteille.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "rhum_arrange",
+      "uses": [
+        "bottled_mixture"
+      ],
+      "produces": "sealed_bottle",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "macerate",
+      "action": "Laissez reposer (mac\u00e9rer) pendant au moins 3 mois dans un placard avant de d\u00e9guster.",
+      "duration": "P3M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "rhum_arrange",
+      "uses": [
+        "sealed_bottle"
+      ],
+      "produces": "macerated_rum",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "macerated_rum",
+  "originalText": "Rhum arrang\u00e9 aux mirabelles : recette facile, parfum\u00e9e et estivale\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 ao\u00fbt 2025\nRhum arrang\u00e9 aux mirabelles : un concentr\u00e9 de soleil \u00e0 partager\nQuand vient la fin de l\u2019\u00e9t\u00e9 et la saison des mirabelles, on cherche mille fa\u00e7ons d\u2019en profiter avant qu\u2019elles ne disparaissent. Tartes, confitures, compotes\u2026 et pourquoi pas une bouteille de rhum arrang\u00e9 aux mirabelles ? C\u2019est une mani\u00e8re simple et rapide de prolonger la saison et de garder un peu de lumi\u00e8re dans les mois plus gris.\nEt si vous pr\u00e9parez votre bouteille maintenant, vous pourrez en profiter d\u00e8s les f\u00eates. Une id\u00e9e de cadeau fait maison, chaleureux et original, \u00e0 offrir ou \u00e0 garder jalousement dans le fond d\u2019un placard.\nTable des mati\u00e8res\n1\nUne tradition des \u00eeles, un fruit du Nord-Est\n2\nUne mani\u00e8re de conserver l\u2019\u00e9t\u00e9\n3\nUne id\u00e9e de cadeau maison, pleine de charme\n4\nFacile \u00e0 faire, facile \u00e0 garder\n5\nUn geste d\u2019anticipation et de plaisir\n6\nDes variantes \u00e0 explorer\n7\nRhum arrang\u00e9 aux mirabelles\n8\nPour aller plus loin\n9\nPour r\u00e9sumer, rhum arrang\u00e9 aux mirabelles\nUne tradition des \u00eeles, un fruit du Nord-Est\nLe rhum arrang\u00e9, on le conna\u00eet surtout pour ses racines tropicales. \u00c0 la R\u00e9union ou aux Antilles, on laisse mac\u00e9rer fruits, \u00e9pices, herbes ou zestes dans du rhum blanc, pour cr\u00e9er des boissons riches en go\u00fbt et en caract\u00e8re. Cette tradition populaire, familiale, parfois improvis\u00e9e, est aussi un geste de transmission.\nMais rien n\u2019emp\u00eache de l\u2019adapter aux tr\u00e9sors de nos r\u00e9gions : poires, prunes, cerises\u2026 ou mirabelles. Ces petites prunes dor\u00e9es, juteuses et sucr\u00e9es, embl\u00e8mes de la Lorraine, sont id\u00e9ales pour parfumer un rhum blanc de qualit\u00e9. Leur parfum subtil, presque floral, se marie \u00e0 merveille avec la vanille. Ils donnent naissance \u00e0 une liqueur douce, fruit\u00e9e et pleine de soleil.\nUne mani\u00e8re de conserver l\u2019\u00e9t\u00e9\nCe que j\u2019aime dans le rhum arrang\u00e9, c\u2019est sa simplicit\u00e9. Quelques ingr\u00e9dients dans une bouteille, un peu de patience, et le temps fait le reste. En laissant infuser doucement les fruits dans l\u2019alcool, on capte les saveurs, on les amplifie, on les fixe.\nC\u2019est une autre fa\u00e7on de faire des r\u00e9serves pour l\u2019hiver. Comme on cong\u00e8le une soupe ou qu\u2019on met des confitures en pot, on met ici l\u2019\u00e9t\u00e9 en bouteille. Quelques semaines plus tard, on ouvre, on verse, et on retrouve les notes douces et sucr\u00e9es d\u2019un fruit estival qu\u2019on croyait d\u00e9j\u00e0 loin.\nUne id\u00e9e de cadeau maison, pleine de charme\nLe rhum arrang\u00e9, gliss\u00e9 dans une belle bouteille, avec une petite \u00e9tiquette, c\u2019est un cadeau qui sent bon les vacances et les ap\u00e9ros partag\u00e9s.\n\u00c0 No\u00ebl, il apporte une touche de chaleur et d\u2019originalit\u00e9. Il change du vin, des chocolats, ou de la bo\u00eete de biscuits. Et si vous aimez composer des paniers gourmands \u00e0 offrir, il s\u2019associe tr\u00e8s bien \u00e0 une confiture maison, une terrine v\u00e9g\u00e9tale ou des sabl\u00e9s aux \u00e9pices.\nFacile \u00e0 faire, facile \u00e0 garder\nC\u00f4t\u00e9 pr\u00e9paration, rien de plus simple : on d\u00e9noyaute les mirabelles, on ajoute une gousse de vanille, un peu de sucre de canne, et on recouvre de rhum blanc. Puis on oublie la bouteille dans un placard pendant quelques mois.\nIl faut compter au moins trois mois de mac\u00e9ration pour que les ar\u00f4mes se diffusent bien, mais plus on attend, meilleur c\u2019est. Une fois ouvert, le rhum se conserve parfaitement. On peut le filtrer ou le garder tel quel, avec les fruits \u00e0 l\u2019int\u00e9rieur pour une touche rustique.\nUn geste d\u2019anticipation et de plaisir\nCe qui est beau avec ce genre de recettes, c\u2019est qu\u2019elles nous apprennent \u00e0 anticiper, \u00e0 patienter, \u00e0 savourer plus tard ce qu\u2019on a cueilli maintenant.\nEt puis, il y a ce petit plaisir de savoir qu\u2019on a mis de c\u00f4t\u00e9 une boisson pour les soir\u00e9es froides, ou les retrouvailles inattendues. Une bouteille entam\u00e9e, un verre partag\u00e9, une histoire racont\u00e9e. \u00c7a peut sembler anodin. Et pourtant\u2026\nDes variantes \u00e0 explorer\nBien s\u00fbr, la version mirabelle n\u2019est qu\u2019un d\u00e9but. Si vous aimez ce principe, libre \u00e0 vous d\u2019explorer d\u2019autres mariages : mirabelle et romarin, mirabelle et cannelle, mirabelle et badiane\u2026 Ou encore de changer de fruit au fil des saisons.\nL\u2019essentiel, c\u2019est de choisir un bon rhum (\u00e0 50\u00b0 minimum), des fruits m\u00fbrs, mais sains, et de laisser le temps faire son \u0153uvre.\nRhum arrang\u00e9 aux mirabelles\n4.55\n/5 avec\n114\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nIngr\u00e9dients\n400\ng\nde mirabelles\n1\ngousse de vanille\n70\ng\nde sucre de canne\n75\ncl\nde rhum blanc minimum 50\u00b0\nInstructions\nD\u00e9noyautez les mirabelles.\nVersez le sucre et le rhum dans une bouteille et m\u00e9langez pour dissoudre le sucre.\nAjoutez les mirabelles et la vanille.\nFermez la bouteille.\nLaissez reposer au moins 3 mois avant de d\u00e9guster.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin\nVous aimez les boissons rafra\u00eechissantes ou fruit\u00e9es, avec ou sans alcool ? Voici quelques id\u00e9es pour prolonger l\u2019esprit estival dans votre verre :\nMocktail au Sober Rum et concombre\n.\nUne boisson sans alcool ultra fra\u00eeche et originale, qui m\u00eale la rondeur du \u201crhum\u201d v\u00e9g\u00e9tal au pep\u2019s du concombre et du citron vert. Id\u00e9al pour trinquer sans mod\u00e9ration.\nAgua fresca past\u00e8que & fraise\n.\nUn classique venu du Mexique, tout en douceur et en fra\u00eecheur. Une infusion fruit\u00e9e, \u00e0 boire glac\u00e9e pendant les journ\u00e9es chaudes ou en ap\u00e9ritif l\u00e9ger.\nFrapp\u00e9 citron-menthe\n.\nUn granit\u00e9 express, entre smoothie et citronnade, qui combine la vivacit\u00e9 du citron \u00e0 la fra\u00eecheur de la menthe. Parfait pour se rafra\u00eechir\u2026 ou accompagner un rhum arrang\u00e9 bien frais.\nCubes immunit\u00e9 au gingembre et curcuma\n.\nDe petites doses de peps et de vitalit\u00e9 \u00e0 glisser dans vos infusions, smoothies ou cocktails. Une fa\u00e7on simple de booster ses boissons maison tout en prenant soin de soi.\nPour r\u00e9sumer, rhum arrang\u00e9 aux mirabelles\nLe rhum arrang\u00e9 aux mirabelles, c\u2019est un peu l\u2019\u00e9t\u00e9 en bouteille : une mani\u00e8re simple et parfum\u00e9e de prolonger la saison des fruits, d\u2019offrir un cadeau fait maison ou de se pr\u00e9parer un petit plaisir \u00e0 partager (avec mod\u00e9ration). Que vous le r\u00e9alisiez pour vous ou pour vos proches, il suffit de quelques ingr\u00e9dients, d\u2019un peu de patience\u2026 et le tour est jou\u00e9. Il ne vous reste plus qu\u2019\u00e0 trouver une jolie bouteille, \u00e0 noter la date sur l\u2019\u00e9tiquette et \u00e0 laisser le temps faire son \u0153uvre. Rendez-vous dans quelques mois pour la d\u00e9gustation !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nBoissons\n,\n\u00c9t\u00e9\n,\nPrune\nCrumble pommes et mirabelles : le dessert crousti-fondant qui sent bon l\u2019\u00e9t\u00e9\nCompot\u00e9e de mirabelles \u00e0 la verveine : simple, rapide et pleine de parfum\n4.55 from 114 votes (\n114 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

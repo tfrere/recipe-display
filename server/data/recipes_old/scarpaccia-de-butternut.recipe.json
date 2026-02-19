@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "title": "Scarpaccia de butternut",
+    "description": "Une recette simple, fondante et dor\u00e9e, inspir\u00e9e d'un plat toscan traditionnel, parfaite pour l'ap\u00e9ro ou en entr\u00e9e.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "italien",
+      "automne",
+      "courge",
+      "butternut",
+      "ap\u00e9ro",
+      "v\u00e9g\u00e9tarien",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/scarpaccia-de-butternut-free-the-pickleScarpaccia-de-courge-butternut-1-of-4-819x1024.jpg",
+    "nationality": "Italian",
+    "author": "Free The Pickle",
+    "source": "Free the Pickle",
+    "notes": [
+      "Se d\u00e9guste aussi bien en bouch\u00e9es \u00e0 l'ap\u00e9ro qu'en entr\u00e9e avec une salade.",
+      "Peut se garnir selon vos envies : salade, feta, chou rouge...",
+      "Se mange ti\u00e8de, \u00e0 la main ou \u00e0 la fourchette.",
+      "Version \"tacos\" : garnir et plier en deux."
+    ],
+    "slug": "scarpaccia-de-butternut",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/scarpaccia-de-butternut-free-the-pickleScarpaccia-de-courge-butternut-1-of-4-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/11/24/scarpaccia-de-butternut/",
+    "image": "images/scarpaccia-de-butternut.webp",
+    "createdAt": "2026-02-09T23:20:42.700561",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "January",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 638.9,
+      "protein": 28.7,
+      "fat": 27.8,
+      "carbs": 69.5,
+      "fiber": 7.2,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "butternut",
+      "name": "butternut",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Butternut squash"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 160.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "R\u00e2pe"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_butternut",
+      "action": "Pelez puis r\u00e2pez la butternut.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butternut"
+      ],
+      "produces": "grated_butternut",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onion",
+      "action": "\u00c9mincez finement l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion"
+      ],
+      "produces": "sliced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_batter",
+      "action": "Dans un saladier, m\u00e9langez la farine, les \u2154 du parmesan, l'\u0153uf, l'eau, le sel, le poivre et l'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "parmesan",
+        "egg",
+        "water",
+        "salt",
+        "pepper",
+        "olive_oil"
+      ],
+      "produces": "batter_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_vegetables",
+      "action": "Ajoutez les l\u00e9gumes r\u00e2p\u00e9s et \u00e9minc\u00e9s au m\u00e9lange et m\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_base",
+        "grated_butternut",
+        "sliced_onion"
+      ],
+      "produces": "complete_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_batter",
+      "action": "Versez la pr\u00e9paration dessus et \u00e9talez-la le plus finement possible.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "complete_batter"
+      ],
+      "produces": "spread_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_toppings",
+      "action": "Saupoudrez avec le reste du parmesan, puis versez un filet d'huile d'olive sur la surface.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spread_batter",
+        "parmesan",
+        "olive_oil"
+      ],
+      "produces": "topped_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez pour 40min.",
+      "duration": "PT40M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "topped_batter"
+      ],
+      "produces": "baked_scarpaccia",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "Les bords doivent \u00eatre croustillants et le centre tendre"
+    },
+    {
+      "id": "cool_and_serve",
+      "action": "Attendez que la scarpaccia ti\u00e9disse avant de la couper et de la servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_scarpaccia"
+      ],
+      "produces": "scarpaccia_de_butternut",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "scarpaccia_de_butternut",
+  "originalText": "Scarpaccia de Butternut | Recette Simple et Fondante de l\u2019Automne\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 novembre 2025\nScarpaccia de butternut\nLa\nscarpaccia de butternut\n, c\u2019est le genre de\nrecette\nqu\u2019on adore chez\nFree the Pickle\n: ultra\nsimple\n,\npleine de l\u00e9gumes\net\nparfaite en toute occasion\n. Inspir\u00e9e d\u2019un\nplat toscan traditionnel\n\u00e0 base de\ncourgettes\n, cette\nversion automnale\nmet la\nbutternut\n\u00e0 l\u2019honneur avec sa\nchair douce\net l\u00e9g\u00e8rement\nsucr\u00e9e\n.\nMoelleuse \u00e0 l\u2019int\u00e9rieur\n,\ndor\u00e9e sur les bords\n, elle se\nd\u00e9guste\naussi bien en\nbouch\u00e9es \u00e0 l\u2019ap\u00e9ro\nqu\u2019en\nentr\u00e9e\navec une\nsalade\n. Une\nrecette du quotidien\nqui fait toujours son petit effet, surtout quand la\ncuisine\nembaume la\ncourge r\u00f4tie\net les\nherbes\n.\nTable des mati\u00e8res\n1\nLa scarpaccia, un petit bijou venu de Toscane\n2\nUne recette toute simple \u00e0 pr\u00e9parer\n3\nScarpaccia de butternut\n4\nLa butternut, star dor\u00e9e de l\u2019automne\n5\nFa\u00e7on tacos, pour une version encore plus gourmande\nLa scarpaccia, un petit bijou venu de Toscane\n\u00c0 l\u2019origine, la scarpaccia est une sp\u00e9cialit\u00e9 toscane. C\u2019est un m\u00e9lange entre une tarte fine et un flan de l\u00e9gumes. Traditionnellement pr\u00e9par\u00e9e avec des courgettes, elle \u00e9tait autrefois le plat \u201canti-gaspi\u201d des grand-m\u00e8res italiennes : quelques l\u00e9gumes du jardin, un peu de farine, d\u2019\u0153uf, d\u2019huile d\u2019olive\u2026 et c\u2019\u00e9tait pr\u00eat. Une recette simple, rustique et pleine de soleil. Ici, on lui donne un twist d\u2019automne avec la butternut, qui apporte douceur et fondant. R\u00e9sultat : une scarpaccia dor\u00e9e, moelleuse et l\u00e9g\u00e8rement sucr\u00e9e, parfaite pour un ap\u00e9ro entre amis ou une entr\u00e9e de saison.\nVous \u00eates fans de cuisine italienne ? Plongez aussi dans nos recettes ensoleill\u00e9es avec la\nparmigiana d\u2019aubergines\n, la\nfocaccia figue, brousse et miel\n, la\nsoupe fa\u00e7on pastina italienne\nou encore les\nboulettes de ricotta \u00e0 l\u2019ail des ours\n.\nUne recette toute simple \u00e0 pr\u00e9parer\nPas besoin d\u2019\u00eatre un chef pour r\u00e9ussir cette scarpaccia de butternut ! C\u2019est une de ces recettes qu\u2019on pr\u00e9pare sans r\u00e9fl\u00e9chir, un soir o\u00f9 on veut quelque chose de bon et de r\u00e9confortant sans passer des heures en cuisine. Quelques l\u00e9gumes r\u00e2p\u00e9s, un peu de parmesan, un \u0153uf, un peu de farine\u2026 et le tour est jou\u00e9. Elle se pr\u00e9pare en un clin d\u2019\u0153il, se cuit au four sans surveillance, et se d\u00e9guste ti\u00e8de, \u00e0 la main ou \u00e0 la fourchette. Et le petit plus ? Vous pouvez la garnir selon vos envies : un peu de salade, de feta, de chou rouge\u2026 ou tout ce qui tra\u00eene dans le frigo. Simple, rapide et toujours d\u00e9licieux.\nPour un repas complet, servez votre scarpaccia avec une salade ! Essayez par exemple la\nsalade d\u2019automne de choux de Bruxelles crus\n, la\nsalade de fenouil, roquette et parmesan\nou encore la\nsalade express de betterave, c\u00e2pres et feta\n.\nScarpaccia de butternut\n4.55\n/5 avec\n115\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde butternut\n1\noignon\n90\ng\nde farine\n90\ng\nde parmesan\n1\noeuf\n160\nml\nd\u2019eau\n1\nc\u00e0s d\u2019huile d\u2019olive\nsel\npoivre\nInstructions\nPelez puis r\u00e2pez la butternut.\n\u00c9mincez finement l\u2019oignon.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nDans un saladier, m\u00e9langez farine, les \u2154 du parmesan, \u0153uf, eau, sel, poivre et huile puis ajoutez les l\u00e9gumes.\nM\u00e9langez bien.\nCouvrez une plaque de cuisson de papier cuisson.\nVersez la pr\u00e9paration dessus et \u00e9talez-la le plus finement possible.\nSaupoudrez avec le reste du parmesan, puis versez un filet d\u2019huile d\u2019olive sur la surface.\nEnfournez pour 30 \u00e0 40min.\nLes bords doivent \u00eatre croustillants et le centre tendre.\nAttendre que la scarpaccia ti\u00e9disse avant de la couper et de la servir.\nJ\u2019aime la garnir (ici avec quelques feuilles de salade, de la feta et du chou rouge) et la manger comme une sorte de tacos.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa butternut, star dor\u00e9e de l\u2019automne\nDouce, fondante et pleine de soleil, la butternut est l\u2019une des stars incontest\u00e9es de la saison froide. Originaire d\u2019Am\u00e9rique du Sud, elle a conquis nos cuisines gr\u00e2ce \u00e0 sa chair tendre, l\u00e9g\u00e8rement sucr\u00e9e et \u00e0 sa belle couleur orang\u00e9e qui illumine n\u2019importe quel plat. Riche en fibres, en b\u00eata-carot\u00e8ne et en vitamines, elle apporte \u00e9nergie et r\u00e9confort tout en douceur. Ce qu\u2019on aime avec la butternut, c\u2019est sa polyvalence. Elle se pr\u00eate \u00e0 toutes les envies : en soupe, r\u00f4tie, en gratin ou, comme ici, dans une scarpaccia dor\u00e9e au four. Son petit go\u00fbt de noisette s\u2019accorde \u00e0 merveille avec les \u00e9pices, le fromage ou les l\u00e9gumineuses.\nPour d\u2019autres id\u00e9es autour de la butternut, testez la\nsoupe de butternut et haricots blancs, picada de noix\n, la\nbutternut et pois chiches fa\u00e7on curry\n, la\nbutternut pan\u00e9e croustillante sans friture\nou encore la\ncourge butternut hasselback \u00e0 la feta\n.\nFa\u00e7on tacos, pour une version encore plus gourmande\nCe que j\u2019adore avec cette scarpaccia de butternut, c\u2019est qu\u2019elle se pr\u00eate \u00e0 toutes les envies. Quand elle est encore ti\u00e8de, je la garnis de tout ce que j\u2019ai sous la main : un peu de feta, quelques feuilles de salade, du chou rouge croquant, parfois m\u00eame un filet de yaourt citronn\u00e9. Puis je la plie en deux, comme un tacos crousti-fondant aux accents italiens. C\u2019est simple, ludique et tellement bon ! Le genre de recette qu\u2019on partage \u00e0 l\u2019ap\u00e9ro et qui dispara\u00eet en un \u00e9clair.\nL\u2019id\u00e9e du \u201ctacos \u00e0 la scarpaccia\u201d vous pla\u00eet ? Allez jeter un \u0153il \u00e0 nos autres recettes dans le genre : les\ntacos aux pleurotes fa\u00e7on pulled pork\n, les\ntacos aux pleurotes fa\u00e7on carnitas\nou encore les\ntacos v\u00e9g\u00e9taliens au quinoa et ma\u00efs sans gluten\n.\nCette scarpaccia de butternut coche toutes les cases : simple, fondante, dor\u00e9e et pleine de douceur. Elle est parfaite \u00e0 l\u2019ap\u00e9ro, en entr\u00e9e ou m\u00eame en plat l\u00e9ger. C\u2019est la recette qu\u2019on ressort volontiers d\u00e8s que les courges pointent le bout de leur nez. Elle se partage facilement, se personnalise \u00e0 l\u2019infini et apporte toujours un petit air d\u2019Italie \u00e0 la table.\nPour encore plus d\u2019id\u00e9es \u00e0 picorer, d\u00e9couvrez\ntoutes nos recettes d\u2019ap\u00e9ros sal\u00e9s\net laissez-vous tenter par nos\nquiches et tartes maison\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAp\u00e9ros\n,\nAutomne\n,\nCourge\n,\nHiver\n,\nPlats & Accompagnements\n,\nRecettes par L\u00e9gume\n,\nRecettes Par Saison\n,\nRecettes Sal\u00e9es\nCake potimarron chocolat : si moelleux\nSalade d\u2019endives, patate douce r\u00f4tie et petit \u00e9peautre : une id\u00e9e d\u2019automne sucr\u00e9e-sal\u00e9e\n4.55 from 115 votes (\n115 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

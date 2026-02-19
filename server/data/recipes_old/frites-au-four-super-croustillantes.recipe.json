@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "title": "Frites au four super croustillantes",
+    "description": "La technique pour avoir des frites au four super croustillantes n'est pas si compliqu\u00e9e ! Il y a juste quelques astuces \u00e0 conna\u00eetre.",
+    "servings": 4,
+    "prepTime": "PT35M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "frites",
+      "frites au four",
+      "frites croustillantes",
+      "sans friture",
+      "pomme de terre",
+      "accompagnement",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/frites-au-four-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Elles seront parfaites avec une petite mayo !",
+      "Servir imm\u00e9diatement avec du sel aux herbes et une mayo vegan !",
+      "Ne les cuisez pas \u00e0 l'avance car elles perdront alors tout leur croustillant !"
+    ],
+    "slug": "frites-au-four-super-croustillantes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/frites-au-four-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/08/frites-au-four-super-croustillantes/",
+    "image": "images/frites-au-four-super-croustillantes.webp",
+    "createdAt": "2026-02-09T21:17:06.384124",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 55.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 260.7,
+      "protein": 5.1,
+      "fat": 7.8,
+      "carbs": 43.9,
+      "fiber": 4.4,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "black_pepper",
+      "name": "poivre noir",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika doux",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail semoule",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "peel_and_cut_potatoes",
+      "action": "\u00c9plucher les pommes de terre et les d\u00e9tailler en frites.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "raw_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rinse_and_soak",
+      "action": "Rincer les frites puis les faire tremper dans l'eau pendant au moins 30min pour \u00f4ter l'amidon.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "raw_fries"
+      ],
+      "produces": "soaked_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 225\u00b0C.",
+      "duration": null,
+      "temperature": 225,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_spices",
+      "action": "Dans un petit bol, m\u00e9langer le sel et toutes les \u00e9pices (poivre, paprika, ail semoule, thym, origan).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "seasoning",
+      "uses": [
+        "salt",
+        "black_pepper",
+        "paprika",
+        "garlic_powder",
+        "thyme",
+        "oregano"
+      ],
+      "produces": "spice_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_and_dry",
+      "action": "\u00c9goutter puis s\u00e9cher les frites dans un torchon propre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "soaked_fries"
+      ],
+      "produces": "dried_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_fries",
+      "action": "Quand elles sont bien s\u00e8ches, les mettre dans un saladier, verser l'huile d'olive et 1 c\u00e0c (ou plus au go\u00fbt) du m\u00e9lange de sel aux herbes. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dried_fries",
+        "olive_oil",
+        "spice_mix"
+      ],
+      "produces": "seasoned_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_baking_sheet",
+      "action": "Transf\u00e9rer les frites sur une plaque recouverte d'un papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_fries"
+      ],
+      "produces": "arranged_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_fries",
+      "action": "Bien r\u00e9partir les frites pour qu'elles ne se chevauchent pas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_fries"
+      ],
+      "produces": "spread_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner pendant 25min.",
+      "duration": "PT25M",
+      "temperature": 225,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "spread_fries"
+      ],
+      "produces": "baked_fries",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir imm\u00e9diatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_fries"
+      ],
+      "produces": "frites_au_four_croustillantes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "frites_au_four_croustillantes",
+  "originalText": "Frites au four super croustillantes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 mai 2022\nFrites au four super croustillantes\nAller \u00e0 la recette\nLa technique pour avoir des frites au four super croustillantes n\u2019est pas si compliqu\u00e9e !\nLoin de l\u00e0 m\u00eame ! Il y a juste quelques astuces \u00e0 conna\u00eetre.\nTable des mati\u00e8res\n1\nDes pommes de terre \u00e0 chair ferme\n2\nLaissez-les tremper et s\u00e9chez-les\n3\nEnduisez-les d\u2019huile\n4\nEn rang d\u2019oignons\n5\nMangez-les tout de suite\n6\nFrites au four super croustillantes\nDes pommes de terre \u00e0 chair ferme\nD\u00e9j\u00e0, choisissez des\npommes de terre \u00e0 chair ferme\n. Dans cette famille, on retrouve les pommes de terre souvent surnomm\u00e9es \u201cpomme de terre vapeur\u201d. Elles sont souvent plus petites et allong\u00e9es. Une peau assez lisse. Contrairement aux pommes des terres \u00e0 chair molle. Qui servent pour la pur\u00e9e ou la soupe. Et qui sont souvent plus grosses et rondes. Et avec une peau moins lisse.\nMa technique pour \u00eatre s\u00fbre de ne pas me tromper. C\u2019est de prendre des pommes de terre rosevalt. Comme elles ont la peau rose, elles sont faciles \u00e0 reconna\u00eetre. Mais vous pouvez utiliser n\u2019importe quel autre type de pommes de terre \u00e0 chair ferme pour cette recette.\nLaissez-les tremper et s\u00e9chez-les\nLa deuxi\u00e8me astuce pour des frites au four super croustillantes est toute aussi simple. Une fois vos frites d\u00e9coup\u00e9es, laissez-les tremper dans de l\u2019eau. Id\u00e9alement, laissez-les au moins 30min. M\u00eame plus longtemps si vous n\u2019\u00eates pas press\u00e9s. Cela permet d\u2019enlever l\u2019amidon. Et c\u2019est ainsi qu\u2019elles deviendront croustillantes en cuisant.\nEt surtout, une fois qu\u2019elles sont tremp\u00e9es, n\u2019oubliez pas de les s\u00e9cher. Le plus simple est de les \u00e9goutter puis de les s\u00e9cher dans un torchon propre. Cela permet d\u2019enlever la pellicule d\u2019eau. Et donc que l\u2019huile colle dessus.\nEnduisez-les d\u2019huile\nProchaine \u00e9tape : les enduire d\u2019huile. Mais pas la peine d\u2019en mettre des tonnes. Pour 1 kg de pommes de terre, il faudra compter 2 cuill\u00e8res \u00e0 soupe d\u2019huile d\u2019olive. Rien \u00e0 voir avec un bain de friture !\nJ\u2019aime ajouter des \u00e9pices et des herbes dans l\u2019huile pour donner encore plus de go\u00fbt \u00e0 mes petites frites. Vous trouverez mon assaisonnement du moment dans la recette ci-dessous. Vous pouvez l\u2019adapter \u00e0 vos go\u00fbts et envies.\nEn rang d\u2019oignons\nEt finalement, quand vous les d\u00e9posez sur la plaque de cuisson, il faut imp\u00e9rativement qu\u2019elles ne se chevauchent pas. A chaque frite sa place. Cela permettra une cuisson uniforme. Et donc un croustillant uniforme. En fonction de votre four, il faudra peut-\u00eatre les retourner \u00e0 mi-cuisson.\nMangez-les tout de suite\nEt finalement, servez vos frites imm\u00e9diatement. Ne les cuisez pas \u00e0 l\u2019avance car elles perdront alors tout leur croustillant !\nEt voil\u00e0, vous connaissez tous les secrets de ces frites super croustillantes !\nElles seront parfaites avec une\npetite mayo\n!\nFrites au four super croustillantes\n4.53\n/5 avec\n59\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps de trempage\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde pommes de terre \u00e0 chair ferme\n2\nc\u00e0s d\u2019huile d\u2019olive\n1/2\nc\u00e0c de sel\n\u00bc\nc\u00e0c de poivre noir\n\u00bc\nc\u00e0c de paprika doux\n\u00bc\nc\u00e0c d\u2019ail semoule\n\u00bc\nc\u00e0c de thym\n\u00bc\nc\u00e0c d\u2019origan\nInstructions\n\u00c9plucher les pommes de terre et les d\u00e9tailler en frites.\nLes rincer puis les faire tremper dans l\u2019eau pendant au moins 30min pour \u00f4ter l\u2019amidon.\nPr\u00e9chauffer le four \u00e0 225\u00b0C.\nDans un petit bol, m\u00e9langer le sel et toutes les \u00e9pices.\n\u00c9goutter puis s\u00e9cher les frites dans un torchon propre.\nQuand elles sont bien s\u00e8ches, les mettre dans un saladier, verser l\u2019huile et 1 c\u00e0c (ou plus au go\u00fbt) de sel aux herbes. Bien m\u00e9langer.\nTransf\u00e9rer sur une plaque recouverte d\u2019un papier cuisson.\nBien r\u00e9partir les frites pour qu\u2019elles ne se chevauchent pas.\nEnfourner 25 min.\nServir imm\u00e9diatement avec du sel aux herbes et une mayo vegan !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPomme de terre\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire frites au four\n,\nfrites\n,\nfrites au four\n,\nfrites croustillantes\n,\nfrites four\n,\nsans friture\nAubergines roul\u00e9es Ricotta et \u00c9pinards\nPains plats aux patates et petits pois\n3 thoughts on \u201cFrites au four super croustillantes\u201d\nYsa\ndit\u00a0:\n9 mai 2022 \u00e0 7 h 06 min\nCoucou mes demoiselles\nPourquoi ne puis je pas enregistrer la recette des frites re\u00e7ue par mail sur Pinterest ?\nJ\u2019aime trop vos recettes et j\u2019ai achet\u00e9 d\u00e9j\u00e0 3 livres\nBien \u00e0 vous et salutation de nouvelle Z\u00e9lande \u2764\ufe0f\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n9 mai 2022 \u00e0 15 h 31 min\nTr\u00e8s app\u00e9tissantes ces frites !\nchargement\u2026\nR\u00e9pondre\nStephanie\ndit\u00a0:\n29 mai 2022 \u00e0 0 h 16 min\nSpice blend was perfect, yum!\nchargement\u2026\nR\u00e9pondre\n4.53 from 59 votes (\n57 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

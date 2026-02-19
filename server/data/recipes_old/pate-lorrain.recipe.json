@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "title": "pâté lorrain",
+    "description": "Un pâté lorrain traditionnel avec viandes marinées au Riesling et gnôle, enveloppé dans une pâte feuilletée maison.",
+    "servings": 6,
+    "prepTime": "PT40M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pâté",
+      "lorrain",
+      "viande",
+      "pâte feuilletée",
+      "français",
+      "traditionnel"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": "la grand mère de quentin",
+    "source": null,
+    "notes": [
+      "La marinade doit durer 24 heures",
+      "Servir tiède ou froid",
+      "Accompagner d'une salade verte"
+    ],
+    "slug": "pate-lorrain",
+    "originalContent": "paté lorrain\nde la grand mère de quentin\n\nIngrédients :\n- 300g de porc en lamelles (épaule)\n- 300g de veau en lamelles\n- Un jaune d'œuf\n- Pâte feuilletée (cf recette suivante)\n\nPour la marinade (24h) :\n- Riesling\n- Une cuillère de gnôle\n- 2 échalotes\n- Baies de Genièvre\n- Une feuille de laurier\n- Sel, poivre\n\nPréparation :\n- On ne garde que la viande\n- On étale un carré de pâte assez épais et on découpe les coins et les côtés pour éviter que ça gonfle\n- On met la viande au milieu et on replie en mouillant un petit peu\n- On fait un couvercle avec la pâte (on dessine dessus)\n- On dore le pâté avec le jaune d'œuf\n- 40min au four préchauffé à 220°C\nMain recipe image: temp_image_recipe-gen-20260208054215-04582bcd.png",
+    "createdAt": "2026-02-08T05:44:01.686309",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 1530.0,
+    "totalCookingTime": 50.0,
+    "sourceImageUrl": "pate-lorrain.png",
+    "image": "images/pate-lorrain.png",
+    "nutritionPerServing": {
+      "calories": 274.4,
+      "protein": 19.4,
+      "fat": 20.4,
+      "carbs": 2.0,
+      "fiber": 0.3,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pork_shoulder",
+      "name": "porc en lamelles (épaule)",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": "en lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "pork shoulder slices"
+    },
+    {
+      "id": "veal",
+      "name": "veau en lamelles",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": "en lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "veal slices"
+    },
+    {
+      "id": "egg_yolk",
+      "name": "jaune d'œuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "puff_pastry",
+      "name": "pâte feuilletée",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cf recette suivante",
+      "optional": false,
+      "name_en": "puff pastry"
+    },
+    {
+      "id": "riesling",
+      "name": "Riesling",
+      "quantity": null,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "Riesling"
+    },
+    {
+      "id": "gnole",
+      "name": "gnôle",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "eau-de-vie"
+    },
+    {
+      "id": "shallots",
+      "name": "échalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "juniper_berries",
+      "name": "baies de Genièvre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "Juniper berries"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "four",
+    "plaque de cuisson",
+    "pinceau",
+    "couteau"
+  ],
+  "steps": [
+    {
+      "id": "prepare_marinade",
+      "action": "Préparer la marinade : mélanger le Riesling, la gnôle, les échalotes émincées, les baies de Genièvre, la feuille de laurier, le sel et le poivre.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "marinade",
+      "uses": [
+        "riesling",
+        "gnole",
+        "shallots",
+        "juniper_berries",
+        "bay_leaf",
+        "salt",
+        "pepper"
+      ],
+      "produces": "marinade_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate_meats",
+      "action": "Ajouter les lamelles de porc et de veau à la marinade. Couvrir et laisser mariner au réfrigérateur pendant 24 heures.",
+      "duration": "PT24H",
+      "temperature": 4,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "marinade",
+      "uses": [
+        "pork_shoulder",
+        "veal",
+        "marinade_base"
+      ],
+      "produces": "marinated_meats",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_meats",
+      "action": "Égoutter les viandes marinées et ne garder que la viande (jeter la marinade).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "viande",
+      "uses": [
+        "marinated_meats"
+      ],
+      "produces": "drained_meats",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_pastry_base",
+      "action": "Étaler un carré de pâte feuilletée assez épais et découper les coins et les côtés pour éviter que ça gonfle.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "puff_pastry"
+      ],
+      "produces": "prepared_pastry_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_pate",
+      "action": "Placer la viande égouttée au milieu de la pâte préparée et replier en mouillant un petit peu les bords pour sceller.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "drained_meats",
+        "prepared_pastry_base"
+      ],
+      "produces": "filled_pate",
+      "requires": [],
+      "visualCue": "bords bien scellés"
+    },
+    {
+      "id": "prepare_pastry_lid",
+      "action": "Préparer un couvercle avec la pâte restante et dessiner des motifs dessus avec la pointe d'un couteau.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "puff_pastry"
+      ],
+      "produces": "decorated_pastry_lid",
+      "requires": [],
+      "visualCue": "motifs dessinés"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 220°C.",
+      "duration": "PT10M",
+      "temperature": 220,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": "four à température"
+    },
+    {
+      "id": "apply_egg_wash",
+      "action": "Dorer le pâté avec le jaune d'œuf battu à l'aide d'un pinceau.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "finition",
+      "uses": [
+        "filled_pate",
+        "egg_yolk"
+      ],
+      "produces": "egg_washed_pate",
+      "requires": [],
+      "visualCue": "bien doré uniformément"
+    },
+    {
+      "id": "assemble_lid",
+      "action": "Poser le couvercle décoré sur le pâté doré et sceller les bords.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "egg_washed_pate",
+        "decorated_pastry_lid"
+      ],
+      "produces": "assembled_pate",
+      "requires": [],
+      "visualCue": "couvercle bien positionné"
+    },
+    {
+      "id": "bake_pate",
+      "action": "Enfourner le pâté assemblé et faire cuire pendant 40 minutes au four préchauffé.",
+      "duration": "PT40M",
+      "temperature": 220,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "assembled_pate"
+      ],
+      "produces": "baked_pate_lorrain",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "pâte bien dorée et croustillante"
+    }
+  ],
+  "finalState": "baked_pate_lorrain",
+  "originalText": "paté lorrain\nde la grand mère de quentin\n\nIngrédients :\n- 300g de porc en lamelles (épaule)\n- 300g de veau en lamelles\n- Un jaune d'œuf\n- Pâte feuilletée (cf recette suivante)\n\nPour la marinade (24h) :\n- Riesling\n- Une cuillère de gnôle\n- 2 échalotes\n- Baies de Genièvre\n- Une feuille de laurier\n- Sel, poivre\n\nPréparation :\n- On ne garde que la viande\n- On étale un carré de pâte assez épais et on découpe les coins et les côtés pour éviter que ça gonfle\n- On met la viande au milieu et on replie en mouillant un petit peu\n- On fait un couvercle avec la pâte (on dessine dessus)\n- On dore le pâté avec le jaune d'œuf\n- 40min au four préchauffé à 220°C\nMain recipe image: temp_image_recipe-gen-20260208054215-04582bcd.png",
+  "totalCookingTime": 50.0
+}

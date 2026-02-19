@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "title": "Sauce tomate maison aux tomates fra\u00eeches",
+    "description": "Une recette ultra simple, parfaite pour prolonger le go\u00fbt de la belle saison dans vos assiettes.",
+    "servings": 10,
+    "prepTime": "PT15M",
+    "cookTime": "PT55M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "tomate",
+      "sauce",
+      "v\u00e9g\u00e9tarien",
+      "base",
+      "conservation"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/sauce-tomate-maison-aux-tomates-fraiches-free-the-pickleSauce-tomate-maison-tomates-fraiches-1-of-2.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pas besoin de peler les tomates.",
+      "Parfaite pour mettre en bocaux ou congeler.",
+      "Se glisse partout : dans vos p\u00e2tes, lasagnes, plats mijot\u00e9s ou tartes sal\u00e9es."
+    ],
+    "slug": "sauce-tomate-maison-aux-tomates-fraiches",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/sauce-tomate-maison-aux-tomates-fraiches-free-the-pickleSauce-tomate-maison-tomates-fraiches-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/10/07/sauce-tomate-maison-aux-tomates-fraiches/",
+    "image": "images/sauce-tomate-maison-aux-tomates-fraiches.webp",
+    "createdAt": "2026-02-09T23:09:31.194838",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 57.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 129.4,
+      "protein": 2.3,
+      "fat": 8.0,
+      "carbs": 14.0,
+      "fiber": 3.9,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tomates_fraiches",
+      "name": "tomates fra\u00eeches m\u00fbres",
+      "quantity": 2.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 5.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "laurier",
+      "name": "feuilles de laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Bay leaves"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "origan",
+      "name": "origan sec",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dried oregano"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "basilic",
+      "name": "basilic frais",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "quelques branches",
+      "optional": false,
+      "name_en": "Basil"
+    }
+  ],
+  "tools": [
+    "faitout",
+    "mixeur",
+    "mixeur plongeant"
+  ],
+  "steps": [
+    {
+      "id": "cut_tomatoes",
+      "action": "Coupez les tomates en gros morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomates_fraiches"
+      ],
+      "produces": "tomates_coupees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_onion_garlic",
+      "action": "Passez l'oignon et l'ail au mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oignons",
+        "ail"
+      ],
+      "produces": "oignon_ail_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pot",
+      "action": "Faites chauffer un faitout avec l'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_dolive"
+      ],
+      "produces": "faitout_chaud",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_garlic",
+      "action": "Faites-y revenir l'oignon et l'ail avec le laurier pendant 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "faitout_chaud",
+        "oignon_ail_haches",
+        "laurier"
+      ],
+      "produces": "oignon_ail_dor\u00e9s",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomatoes_spices",
+      "action": "Ajoutez les tomates, le sucre, l'origan et le sel. Remuez puis couvrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oignon_ail_dor\u00e9s",
+        "tomates_coupees",
+        "sucre",
+        "origan",
+        "sel"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Laissez mijoter 45min \u00e0 feu doux, m\u00e9langez de temps en temps.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_base"
+      ],
+      "produces": "sauce_mijotee",
+      "requires": [],
+      "visualCue": "tomates compl\u00e8tement d\u00e9faites"
+    },
+    {
+      "id": "remove_bay_leaves_blend",
+      "action": "Quand les tomates sont compl\u00e8tement d\u00e9faites, enlevez les feuilles de laurier puis mixez la pr\u00e9paration \u00e0 l'aide d'un mixeur plongeant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_mijotee"
+      ],
+      "produces": "sauce_mixee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_basil_simmer",
+      "action": "Ajoutez les feuilles de basilic et laissez mijoter encore quelques minutes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_mixee",
+        "basilic"
+      ],
+      "produces": "sauce_tomate_finale",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ready",
+      "action": "C'est pr\u00eat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_tomate_finale"
+      ],
+      "produces": "sauce_tomate_maison",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sauce_tomate_maison",
+  "originalText": "Sauce Tomate Maison Aux Tomates Fra\u00eeches | Recette Facile\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n7 octobre 2025\nSauce tomate maison aux tomates fra\u00eeches : la recette simple qui prolonge l\u2019\u00e9t\u00e9\nAh, la fin de l\u2019\n\u00e9t\u00e9\n\u2026 ce moment o\u00f9 les\ntomates\nsont \u00e0 leur apog\u00e9e,\njuteuses\n,\nparfum\u00e9es\n,\ngorg\u00e9es de soleil.\nC\u2019est exactement le bon moment pour pr\u00e9parer\nune sauce tomate maison aux tomates fra\u00eeches\n! Une\nrecette ultra simple\n, parfaite pour prolonger le go\u00fbt de la\nbelle saison\ndans vos\nassiettes\n. Ici, on adore en faire de grandes quantit\u00e9s pour en profiter toute l\u2019ann\u00e9e sur des\np\u00e2tes\n, dans une\npizza\n, une\nmoussaka\nou un\ngratin\n. Rien de tel que d\u2019ouvrir un\npot\nen plein\nhiver\net de retrouver le go\u00fbt de l\u2019\n\u00e9t\u00e9\n.\nTable des mati\u00e8res\n1\nLa sauce qu\u2019on pr\u00e9pare en fin d\u2019\u00e9t\u00e9 (et qu\u2019on savoure tout l\u2019hiver)\n2\nPas besoin de peler les tomates !\n3\nSauce tomate maison aux tomates fra\u00eeches\n4\nLes vertus des tomates : un concentr\u00e9 de soleil et de bienfaits\n5\nLes aromates, le secret d\u2019une sauce tomate pleine de caract\u00e8re\n6\nProlongez l\u2019\u00e9t\u00e9 dans vos assiettes\nLa sauce qu\u2019on pr\u00e9pare en fin d\u2019\u00e9t\u00e9 (et qu\u2019on savoure tout l\u2019hiver)\nFaire sa sauce tomate maison, c\u2019est une petite tradition qu\u2019on aime r\u00e9p\u00e9ter chaque ann\u00e9e. On en pr\u00e9pare des bocaux \u00e0 aligner fi\u00e8rement dans la cuisine ou des portions qu\u2019on cong\u00e8le pour les jours de flemme. C\u2019est la base de plein de recettes et c\u2019est mille fois meilleur que les sauces du commerce. L\u2019odeur des tomates qui mijotent doucement avec l\u2019ail et l\u2019huile d\u2019olive, c\u2019est tout un bonheur ! Et la meilleure partie ? C\u2019est que c\u2019est simple, vraiment simple.\nVous adorez pr\u00e9parer vos condiments maison ? Allez jeter un \u0153il \u00e0 notre s\u00e9lection de\nsauces maison\n: pesto, sauces cr\u00e9meuses, dips parfum\u00e9s\u2026 il y en a pour tous les go\u00fbts !\nPas besoin de peler les tomates !\nPetite astuce maison : on ne p\u00e8le jamais les tomates ! D\u00e9j\u00e0 parce qu\u2019on aime gagner du temps, et ensuite parce qu\u2019on mixe la sauce \u00e0 la fin. R\u00e9sultat : une texture lisse et soyeuse, sans se compliquer la vie. Et puis, la peau contient aussi des fibres et des nutriments int\u00e9ressants, alors pourquoi s\u2019en priver ? On ajoute nos herbes pr\u00e9f\u00e9r\u00e9es (basilic, origan, laurier), et la magie op\u00e8re.\nVous \u00eates fan de tomates, sous toutes leurs formes ? On vous comprend ! Retrouvez toutes nos\nrecettes \u00e0 base de tomates\n: tartes, salades, sauces et plats mijot\u00e9s !\nSauce tomate maison aux tomates fra\u00eeches\n4.50\n/5 avec\n117\nvotes\nImprimer la recette\nPin Recipe\nPortions\n10\npots\nIngr\u00e9dients\n1x\n2x\n3x\n2\nkg\nde tomates fra\u00eeches m\u00fbres\n3\noignons\n5\ngousses d\u2019ail\n5\nc\u00e0s d\u2019huile d\u2019olive\n2\nfeuilles de laurier\n1\nc\u00e0c de sucre\n1\nc\u00e0c d\u2019origan sec\n1\nc\u00e0c de sel\nquelques branches de basilic frais\nInstructions\nCoupez les tomates en gros morceaux.\nPassez l\u2019oignon et l\u2019ail au mixeur.\nFaites chauffer un faitout avec l\u2019huile d\u2019olive.\nFaites-y revenir l\u2019oignon et l\u2019ail avec le laurier pendant 7-8min.\nAjoutez les tomates, le sucre, l\u2019origan et le sel. Remuez puis couvrez.\nLaissez mijoter 45min \u00e0 feu doux, m\u00e9langez de temps en temps.\nQuand les tomates sont compl\u00e8tement d\u00e9faites, enlevez les feuilles de laurier puis mixez la pr\u00e9paration \u00e0 l\u2019aide d\u2019un mixeur plongeant.\nAjoutez les feuilles de basilic et laissez mijoter encore quelques minutes.\nC\u2019est pr\u00eat.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes vertus des tomates : un concentr\u00e9 de soleil et de bienfaits\nLes tomates, ce n\u2019est pas juste un plaisir d\u2019\u00e9t\u00e9. C\u2019est aussi un concentr\u00e9 de vitamines et d\u2019antioxydants ! Riches en lycop\u00e8ne, elles participent \u00e0 la protection des cellules, et leur teneur en vitamine C soutient le syst\u00e8me immunitaire. C\u2019est un l\u00e9gume-fruit bon pour le moral et pour le corps ! Et si vous aimez la cuisiner, on vous conseille aussi de d\u00e9couvrir nos autres recettes autour de la tomate notre\ntarte fine tomate halloumi\n, nos\nmini tatins express de tomates cerises\nou bien encore notre\ngalettes de tomate fa\u00e7on tomatokeftedes\n.\nLes aromates, le secret d\u2019une sauce tomate pleine de caract\u00e8re\nUne bonne sauce tomate maison, c\u2019est avant tout une histoire d\u2019aromates. L\u2019oignon et l\u2019ail forment la base parfum\u00e9e indispensable, relev\u00e9e par la douceur du laurier et de l\u2019origan. Le basilic frais qui sent bon l\u2019\u00e9t\u00e9 vient clore le tout. Ces ingr\u00e9dients simples, mais puissants, suffisent \u00e0 transformer vos tomates m\u00fbres en une sauce riche et \u00e9quilibr\u00e9e. Et si vous voulez prolonger cette magie du go\u00fbt, laissez-vous tenter par notre\ngratin de macaronis \u00e0 la sauce tomate\nou notre\ncake tomates cerises, olives et feta\n.\nProlongez l\u2019\u00e9t\u00e9 dans vos assiettes\nCette sauce tomate maison aux tomates fra\u00eeches se glisse partout : dans vos p\u00e2tes, lasagnes, plats mijot\u00e9s ou\ntartes sal\u00e9es\n. Si vous aimez les recettes \u00e0 base de sauce tomate, plongez aussi dans nos plats mijot\u00e9s \u00e0 la grecque comme les\naubergines \u00e0 la sauce tomate\nou les\ncourgettes \u00e0 la sauce tomate\n. Et si vous pr\u00e9f\u00e9rez un format convivial, nos\nQuesadillas tomate mozzarella express\nsont parfaites pour accompagner vos ap\u00e9ros.\nPr\u00e9parer une sauce tomate maison aux tomates fra\u00eeches, c\u2019est un petit rituel de fin d\u2019\u00e9t\u00e9 qu\u2019on adore. Simple, parfum\u00e9e et pleine de soleil, elle capture toute la g\u00e9n\u00e9rosit\u00e9 des tomates m\u00fbres \u00e0 point. On la mijote doucement, on la met en bocaux ou au cong\u00e9lateur, et on la ressort quand les jours raccourcissent.  Et pour encore plus d\u2019id\u00e9es gourmandes autour de la tomate, explorez\ntoutes nos recettes \u00e0 base de tomates\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nPlats en Sauce\n,\nRecettes par L\u00e9gume\n,\nRecettes Sal\u00e9es\n,\nTomate\nBorani de betterave : un dip simple, frais et haut en couleur\nFocaccia figue brousse miel : la recette facile qui sent bon la fin de l\u2019\u00e9t\u00e9\n4.50 from 117 votes (\n117 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "title": "Tofu au caramel : la recette qui va vous r\u00e9concilier avec le tofu !",
+    "description": "Le tofu au caramel, c'est la recette qui va vous faire changer d'avis sur le tofu ! Une technique magique pour obtenir un tofu croustillant \u00e0 l'ext\u00e9rieur, ultra moelleux \u00e0 l'int\u00e9rieur\u2026 le tout enrob\u00e9 d'une sauce caramel irr\u00e9sistible.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "tofu",
+      "caramel",
+      "vegan",
+      "asian",
+      "baked",
+      "crispy",
+      "sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/tofu-au-caramel-freethepickle.jpg",
+    "nationality": "asian",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Servir avec du riz, de la ciboulette et de la menthe fra\u00eeche.",
+      "Le secret d'un tofu au caramel irr\u00e9sistible : la cuisson au four !",
+      "Presser le tofu pour \u00e9liminer l'exc\u00e8s d'eau est une \u00e9tape essentielle."
+    ],
+    "slug": "tofu-au-caramel-la-recette-qui-va-vous-reconcilier-avec-le-tofu",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/tofu-au-caramel-freethepickle.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/04/14/tofu-au-caramel/",
+    "image": "images/tofu-au-caramel-la-recette-qui-va-vous-reconcilier-avec-le-tofu.webp",
+    "createdAt": "2026-02-09T22:44:59.024640",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 15.0,
+    "nutritionPerServing": {
+      "calories": 115.8,
+      "protein": 7.8,
+      "fat": 0.4,
+      "carbs": 19.9,
+      "fiber": 3.8,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_firme",
+      "name": "bloc de tofu ferme",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "200g",
+      "optional": false,
+      "name_en": "Firm tofu block"
+    },
+    {
+      "id": "fecule_de_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 5.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env \u00bd c\u00e0s",
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "sucre_complet",
+      "name": "sucre complet",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole cane sugar"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "miso_blanc",
+      "name": "miso blanc",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "jus_de_citron_vert",
+      "name": "jus de citron vert",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lime juice"
+    },
+    {
+      "id": "vinaigre_de_riz",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "presser_tofu",
+      "action": "Presser le bloc de tofu dans un torchon avec un poids dessus pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_firme"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "casser_tofu",
+      "action": "Casser le tofu en morceaux avec les doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_presse"
+      ],
+      "produces": "morceaux_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tofu_four",
+      "action": "Recouvrir les morceaux de f\u00e9cule de ma\u00efs, les d\u00e9poser sur une plaque de cuisson, verser un filet d'huile d'olive et enfourner pour 30min.",
+      "duration": "PT30M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "tofu",
+      "uses": [
+        "morceaux_tofu",
+        "fecule_de_mais",
+        "huile_dolive"
+      ],
+      "produces": "tofu_cuit_croustillant",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_legumes",
+      "action": "Pendant la cuisson du tofu, \u00e9mincer l'oignon en lamelles et hacher le gingembre et l'ail. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "oignon",
+        "gingembre_frais",
+        "ail"
+      ],
+      "produces": "legumes_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_sauce",
+      "action": "Dans un bol, m\u00e9langer le sucre complet, la levure malt\u00e9e, le miso blanc, la sauce soja, le jus de citron vert et le vinaigre de riz. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sucre_complet",
+        "levure_maltee",
+        "miso_blanc",
+        "sauce_soja",
+        "jus_de_citron_vert",
+        "vinaigre_de_riz"
+      ],
+      "produces": "melange_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Faire chauffer une po\u00eale avec 1 c\u00e0s d'huile et y faire revenir l'oignon, l'ail et le gingembre pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "legumes_haches",
+        "huile_dolive"
+      ],
+      "produces": "legumes_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduire_sauce",
+      "action": "Quand les oignons sont tendres, verser le m\u00e9lange de sauce dans la po\u00eale et faire r\u00e9duire pendant 5min, jusqu'\u00e0 ce que la sauce \u00e9paississe.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "legumes_revenus",
+        "melange_sauce"
+      ],
+      "produces": "sauce_caramel",
+      "requires": [],
+      "visualCue": "sauce \u00e9paissie"
+    },
+    {
+      "id": "enrober_tofu",
+      "action": "Ajouter le tofu cuit sorti du four et bien m\u00e9langer pour enrober.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "tofu_cuit_croustillant",
+        "sauce_caramel"
+      ],
+      "produces": "tofu_enrobe_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "tofu_enrobe_sauce"
+      ],
+      "produces": "tofu_au_caramel",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tofu_au_caramel",
+  "originalText": "Tofu Au Caramel | Croustillant, Fondant\u2026 Totalement Addictif !\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2025\nTofu au caramel : la recette qui va vous r\u00e9concilier avec le tofu !\nLe\ntofu au caramel\n, c\u2019est la\nrecette\nqui va vous faire changer d\u2019avis sur le\ntofu\n! Ingr\u00e9dient incontournable des\ncuisines v\u00e9g\u00e9\net\nvegan\n, il faut juste savoir le pr\u00e9parer pour r\u00e9v\u00e9ler tout son potentiel. Et ici, on a une\ntechnique magique\npour obtenir un\ntofu croustillant\n\u00e0 l\u2019ext\u00e9rieur,\nultra moelleux\n\u00e0 l\u2019int\u00e9rieur\u2026 le tout\nenrob\u00e9\nd\u2019une\nsauce caramel\nirr\u00e9sistible. Mais quel est donc ce\nsecret de cuisson\n? Venez, on vous am\u00e8ne en cuisine !\nTable des mati\u00e8res\n1\nLe tofu, un incontournable venu d\u2019Asie\n2\nLe secret d\u2019un tofu au caramel irr\u00e9sistible : la cuisson au four !\n3\nTofu au caramel\n4\nUne sauce ultra gourmande pour un tofu au caramel inoubliable !\n5\nEnvie de plus de recettes ultra gourmandes ?\nLe tofu, un incontournable venu d\u2019Asie\nN\u00e9 en Chine il y a plus de 2 000 ans, le tofu a conquis toute l\u2019Asie avant de devenir un pilier des cuisines v\u00e9g\u00e9tarienne et vegan. Fabriqu\u00e9 \u00e0 partir de lait de soja caill\u00e9, il est souvent compar\u00e9 \u00e0 un \u00ab\u00a0cam\u00e9l\u00e9on culinaire\u00a0\u00bb. Son go\u00fbt neutre absorbe \u00e0 merveille les saveurs des sauces et \u00e9pices. Riche en prot\u00e9ines, pauvre en calories et bourr\u00e9 de nutriments (fer, calcium, magn\u00e9sium), il est un alli\u00e9 de taille pour une alimentation \u00e9quilibr\u00e9e. Encore faut-il savoir le cuisiner\u2026 et \u00e7a, on vous montre comment !\nLe secret d\u2019un tofu au caramel irr\u00e9sistible : la cuisson au four !\nPour obtenir ce parfait \u00e9quilibre entre croustillant et moelleux, la cuisson au four est la cl\u00e9 ! Tout commence par une \u00e9tape essentielle : presser le tofu pour \u00e9liminer l\u2019exc\u00e8s d\u2019eau. Ensuite, on l\u2019\u00e9miette et on l\u2019enrobe de f\u00e9cule de ma\u00efs pour une texture ultra croustillante. Puis, on l\u2019\u00e9tale sur une plaque de cuisson. Un filet d\u2019huile, 30 minutes au four \u00e0 180\u00b0C\u2026 et magie ! Le tofu devient dor\u00e9, croustillant dehors, fondant dedans. Pr\u00eat \u00e0 \u00eatre sublim\u00e9 par une sauce caramel \u00e0 tomber !\nLe four, meilleur alli\u00e9 des plats gourmands ! Envie de recettes r\u00e9confortantes, dor\u00e9es et croustillantes ? D\u00e9couvrez tous nos\nplats au four\n: l\u00e9gumes r\u00f4tis, parmentiers, gratins fondants\u2026 Il y a de quoi se r\u00e9galer !\nTofu au caramel\n4.52\n/5 avec\n109\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le tofu\n1\nbloc de tofu ferme de 200g\n1\nc\u00e0s de f\u00e9cule de ma\u00efs\nhuile d\u2019olive\nPour la sauce\n1\noignon\n1\ngousse d\u2019ail\n5\ng\nde gingembre frais\nenv \u00bd c\u00e0s\n3\nc\u00e0s de sucre complet\n1\nc\u00e0s de levure malt\u00e9e\n1\nc\u00e0c de miso blanc\n4\nc\u00e0s de sauce soja\n1\nc\u00e0s de jus de citron vert\n1\nc\u00e0c de vinaigre de riz\nInstructions\nPr\u00e9paration du tofu\nPresser votre bloc de tofu une quinzaine de minutes. Pour cela, le placer dans un torchon et poser quelque chose de lourd par-dessus.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nCasser le tofu en morceaux avec vos doigts.\nLe recouvrir de f\u00e9cule de ma\u00efs puis le d\u00e9poser sur une plaque de cuisson. Verser un filet d\u2019huile par-dessus et enfourner pour 30min.\nPr\u00e9paration de la sauce\nPendant ce temps, \u00e9mincer l\u2019oignon en lamelles. Hacher le gingembre et l\u2019ail. R\u00e9server.\nDans un bol, m\u00e9langer tous les autres ingr\u00e9dients de la sauce. R\u00e9server.\nFaire chauffer une po\u00eale et y faire revenir l\u2019oignon, l\u2019ail et le gingembre dans une c\u00e0s d\u2019huile pendant une dizaine de minutes.\nQuand les oignons sont bien tendres, verser le bol de sauce par-dessus. Faire r\u00e9duire environ 5min, le temps que la sauce \u00e9paississe.\nAjouter le tofu cuit et bien m\u00e9langer.\nServir avec du riz, de la ciboulette et de la menthe fra\u00eeche.\nBon app !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUne sauce ultra gourmande pour un tofu au caramel inoubliable !\nLe secret d\u2019un tofu au caramel savoureux ? La sauce, bien s\u00fbr ! Pendant que le tofu dore au four, on pr\u00e9pare une base ultra parfum\u00e9e : ail, gingembre et oignon revenus doucement dans un peu d\u2019huile jusqu\u2019\u00e0 ce qu\u2019ils deviennent fondants. Ensuite, on verse le m\u00e9lange magique : une sauce sucr\u00e9e-sal\u00e9e, et on laisse r\u00e9duire quelques minutes. R\u00e9sultat ? Une texture sirupeuse et un go\u00fbt intense qui viennent enrober chaque morceau de tofu croustillant\u2026 Pr\u00e9parez-vous \u00e0 vous r\u00e9galer !\nVous aimez le caramel ? Ne vous arr\u00eatez pas en si bon chemin ! D\u00e9couvrez nos autres douceurs ultra gourmandes : le\nclafoutis aux pommes caram\u00e9lis\u00e9es et lait de coco\n, les\nmuffins au caramel\nmoelleux \u00e0 souhait, ou encore notre\ncaramel au beurre sal\u00e9 maison\n\u00e0 tomber. \u00c0 vos cuill\u00e8res !\nEnvie de plus de recettes ultra gourmandes ?\nSi ce tofu au caramel vous a mis l\u2019eau \u00e0 la bouche, vous allez adorer nos autres recettes dans le m\u00eame esprit ! Testez le\ntofu aux \u00e9chalotes\n, tout en douceur et en saveurs, ou les\nnouilles saut\u00e9es au tofu croustillant\n, un combo parfait pour un repas rapide et ultra r\u00e9confortant. Pour une touche originale, laissez-vous tenter par le\ntofu de lentilles corail\nou le brocoli croquant et tofu saut\u00e9 \u00e0 la Mongole, une explosion de saveurs asiatiques. Et si vous voulez varier les plaisirs, notre\nchou-fleur caram\u00e9lis\u00e9 s\u00e9same gingembre\nest la preuve que le chou-fleur peut \u00eatre aussi gourmand que le tofu. Bref, plein d\u2019id\u00e9es pour vous r\u00e9galer !\nAlors, convaincu par ce tofu au caramel ? Avec sa texture parfaite : croustillante dehors, fondante dedans et sa sauce ultra gourmande, impossible de lui r\u00e9sister ! \u00c0 d\u00e9guster avec du riz, de la ciboulette et de la menthe fra\u00eeche ou m\u00eame juste comme \u00e7a\u2026 Et si vous voulez encore plus de recettes dans le m\u00eame style, d\u00e9couvrez toutes nos\nrecettes de plats en sauce\n: riches en go\u00fbt, ultra gourmandes et toujours 100 % v\u00e9g\u00e9tariennes ! Du tofu fondant aux l\u00e9gumes mijot\u00e9s, il y en a pour tous les go\u00fbts.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nSalade betterave crue, roquette & feta : croquante, fra\u00eeche et ultra gourmande !\nQuesadillas aux \u00e9pinards et haricots rouges : le d\u00eener veggie express et prot\u00e9in\u00e9\n3 thoughts on \u201cTofu au caramel : la recette qui va vous r\u00e9concilier avec le tofu !\u201d\nBosha\ndit\u00a0:\n14 avril 2025 \u00e0 23 h 57 min\nSuperbe recette, tr\u00e8s  attirante, je vais vite essayer,  cela doit -\u00eatre succulent, j\u2019ai h\u00e2te \u2026\nTon tofu de lentilles me fait de l\u2019\u0153il aussi, Bravo pour toutes ces belles id\u00e9es, qui nous permette de changer de nos habitudes\u2026\nMille Mercis pour ce beau site\nchargement\u2026\nR\u00e9pondre\nIsabelle\ndit\u00a0:\n15 avril 2025 \u00e0 20 h 14 min\nBonjour.\nCette astuce de cuisson du tofu est absolument merveilleuse.  Merci pour ce pr\u00e9cieux partage.\nchargement\u2026\nR\u00e9pondre\nML\ndit\u00a0:\n17 avril 2025 \u00e0 16 h 44 min\nMerci pour cette recette fort all\u00e9chante ! Puis je vous demander quelle po\u00eale en inox vous utilisez? Cela n\u2019accroche pas pour le caramel? J\u2019aimerais sauter le pas de l\u2019inox mais j\u2019ai peur de gal\u00e9rer.. merci!\nchargement\u2026\nR\u00e9pondre\n4.52 from 109 votes (\n107 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

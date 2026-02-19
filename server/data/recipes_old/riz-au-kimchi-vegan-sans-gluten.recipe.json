@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "title": "Riz au Kimchi (Vegan, Sans Gluten)",
+    "description": "Une recette simplissime et rapide de riz sauté au kimchi, à déguster avec ou sans oeuf.",
+    "servings": 4,
+    "prepTime": null,
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "chou chinois",
+      "kimchi",
+      "recette asiatique",
+      "riz sauté vegan",
+      "vegan",
+      "sans gluten"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Riz-kimchi-1-of-6-scaled.jpg",
+    "nationality": "coréenne",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour ceux qui mangent des oeufs, le plat se marie très bien avec un oeuf au plat par dessus.",
+      "Attention cependant, sauf mention contraire le Kimchi n'est pas vegan 🙁 Dans la fabrication on utilise de la sauce Nuoc-mâm. (Commentaire de Magathe)",
+      "Hello, à ma connaissance le kimchi est coréen et ne contient pas de nuoc nam. Mais effectivement je conseille de toujours vérifier les compos ! (Réponse de Natacha)"
+    ],
+    "slug": "riz-au-kimchi-vegan-sans-gluten",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Riz-kimchi-1-of-6-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/26/riz-au-kimchi-vegan-sans-gluten/",
+    "image": "images/riz-au-kimchi-vegan-sans-gluten.jpg",
+    "createdAt": "2026-02-09T19:41:38.799295",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 15.0,
+    "totalCookingTime": 15.0,
+    "nutritionPerServing": {
+      "calories": 429.7,
+      "protein": 8.3,
+      "fat": 12.8,
+      "carbs": 70.8,
+      "fiber": 3.9,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [],
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "white_rice",
+      "name": "riz blanc",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white rice"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale neutre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "shallot",
+      "name": "échalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincée",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé",
+      "notes": "petit",
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachées",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "kimchi",
+      "name": "kimchi",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "kimchi"
+    },
+    {
+      "id": "chinese_cabbage",
+      "name": "chou chinois frais",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coupé en lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh napa cabbage"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de sésame",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "tamari_sauce",
+      "name": "sauce soja tamari",
+      "quantity": 2.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Wok (ou grande poêle)"
+  ],
+  "steps": [
+    {
+      "id": "cook_rice",
+      "action": "Faites cuire votre riz blanc. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "white_rice"
+      ],
+      "produces": "cooked_rice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Dans une poêle ou un wok, chauffer l'huile végétale à feu vif et faire revenir quelques minutes l'échalote, l'oignon et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_oil",
+        "shallot",
+        "red_onion",
+        "garlic"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_kimchi_cabbage",
+      "action": "Ajouter le kimchi et le chou chinois. Faire revenir encore 4-5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_aromatics",
+        "kimchi",
+        "chinese_cabbage"
+      ],
+      "produces": "kimchi_cabbage_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_rice_seasonings",
+      "action": "Ajouter le riz cuit, l'huile de sésame, la sauce soja et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "kimchi_cabbage_mix",
+        "cooked_rice",
+        "sesame_oil",
+        "tamari_sauce",
+        "pepper"
+      ],
+      "produces": "rice_kimchi_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "stir_fry",
+      "action": "Faire sauter encore 5-10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rice_kimchi_mix"
+      ],
+      "produces": "fried_rice_kimchi",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir chaud, avec un peu de kimchi par dessus s'il vous en reste.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fried_rice_kimchi"
+      ],
+      "produces": "riz_kimchi_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "riz_kimchi_final",
+  "originalText": "Riz au Kimchi (Vegan, Sans Gluten) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 janvier 2020\nRiz au Kimchi (Vegan, Sans Gluten)\nVous connaissez le Kimchi ? Vous connaissez le riz au Kimchi ?\nLe kimchi est une spécialité coréenne, pour faire simple; ce sont des légumes lacto-fermentés avec du piment et de la saumure. Il peut se préparer avec plein de légumes différents, comme les radis ou les carottes, mais le plus souvent, on utilise du chou chinois (ou chou napa).\nPerso, j’adore le kimchi ! Quand je vais manger Coréen, je suis toujours tellement heureuse de manger du bon kimchi fait maison !\nMalheureusement, on n’en trouve pas très facilement dans le commerce et il n’est pas toujours super bon. Généralement, il faut aller dans un supermarché asiatique ou dans les rayons “exotique” des (très) grandes surfaces pour en trouver.\nVous allez me demander pourquoi, moi, qui aime faire un maximum de chose maison, n’essaie pas de faire mon propre kimchi… Et bien honnêtement, ça à l’air assez compliqué et long à faire… et\nla lacto-fermentation\nest un total mystère pour moi, donc lequel je n’ai pas encore trouvé le courage de me plonger.\nBref, tout ça pour dire que l’autre jour, j’étais dans le 13e arrondissement de Paris (où se trouve le quartier asiatique pour ceux qui ne connaissent pas) je suis tombée (par hasard lol) sur un bocal de Kimchi au supermarché (et ça m’a rendu très heureuse ;)).\nDu coup, c’est l’occasion parfaite de vous proposer cette recette de riz au kimchi, qui est simplissime et rapide et tellement bonne !\nA déguster avec ou sans oeuf 🙂\nEt pour d’autres idées de plats d’inspiration asiat, je vous conseille\nle wok de nouilles sauce saté\n, ou l\ne riz de chou fleur sauté\n!\nRiz au Kimchi (Vegan, Sans Gluten)\n4.55\n/5 avec\n118\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n4\npersonnes\nIngrédients\n1x\n2x\n3x\n300\ng\nde riz blanc\n2\nc-à-s d’huile végétale neutre\n1\néchalote émincée\n1\npetit oignon rouge émincé\n2\ngousses d’ails hachées\n200\ng\nde kimchi\n400\ng\nde chou chinois frais coupé en lamelles\n1\nc-à-s d’huile de sésame\n2,5\nc-à-s de sauce soja tamari\npoivre\nInstructions\nFaites cuire votre riz blanc. Réserver.\nDans une poêle ou un wok, chauffer l’huile végétale à feu vif et faire revenir quelques minutes l’échalote, l’oignon et l’ail.\nAjouter le kimchi et le chou chinois. Faire revenir encore 4-5min, puis ajouter le riz, l’huile de sésame, la sauce soja et le poivre.\nFaire sauter encore 5-10min.\nServir chaud, avec un peu de kimchi par dessus s’il vous en reste.\nPour ceux qui mangent des oeufs, le plat se marie très bien avec un oeuf au plat par dessus.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nChoux\n,\nHiver\n,\nNos recettes Véganes\n,\nPlats & Accompagnements\n,\nPrintemps\n,\nRecettes Salées\n,\nWok\nTags:\nchou chinois\n,\nchou napa\n,\nkimchi\n,\nrecette asiatique\n,\nrecette chou\n,\nrecette chou chinois\n,\nrecette chou chinois végétarien\n,\nrecette chou végétarien\n,\nriz au kimchi\n,\nriz sauté vegan\nFlan Pâtissier Vegan\nSauce bolognaise aux Protéines de Soja Texturées\n2 thoughts on “Riz au Kimchi (Vegan, Sans Gluten)”\nMagathe\ndit :\n30 juillet 2023 à 7 h 34 min\nLa recette à l’air délicieuse !\nAttention cependant, sauf  mention contraire le Kimchi n’est pas vegan 🙁 Dans la fabrication on utilise de la sauce Nuoc-mâm.\nchargement…\nRépondre\nNatacha\ndit :\n31 juillet 2023 à 22 h 48 min\nHello, à ma connaissance le kimchi est coréen et ne contient pas de nuoc nam. Mais effectivement je conseille de toujours vérifier les compos !\nchargement…\nRépondre\n4.55 from 118 votes (\n117 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

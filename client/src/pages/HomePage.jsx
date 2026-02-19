@@ -3,24 +3,15 @@ import React, {
   useEffect,
   useRef,
   memo,
-  useCallback,
-  useMemo,
 } from "react";
 import {
   Box,
   Typography,
-  Card,
-  CardContent,
-  Grid,
   Container,
   CircularProgress,
   Alert,
   Paper,
   Button,
-  TextField,
-  Stack,
-  Chip,
-  Divider,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
@@ -35,9 +26,8 @@ import { useConstants } from "../contexts/ConstantsContext";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
 import useLongPress from "../hooks/useLongPress";
-import { VIEWS } from "../constants/views";
-import useLocalStorage from "../hooks/useLocalStorage";
 import ScrollShadow from "../components/ScrollShadow";
+import { getCurrentSeason, SEASON_EMOJI, SEASON_LABELS } from "../utils/seasonUtils";
 
 const HOME_TEXTS = {
   NO_RECIPES: {
@@ -59,6 +49,36 @@ const HOME_TEXTS = {
     ERROR: "An error occurred while loading recipes",
   },
 };
+
+const ResultsLabel = memo(({ resultsType, count }) => {
+  const season = getCurrentSeason();
+  const emoji = SEASON_EMOJI[season] || "";
+  const seasonLabel = SEASON_LABELS[season] || season;
+
+  let text;
+  if (resultsType === "pantry_sorted") {
+    text = `Sorted by pantry match \u2022 ${count} recipe${count !== 1 ? "s" : ""}`;
+  } else if (resultsType === "random_seasonal") {
+    text = `${emoji} ${seasonLabel} recipes`;
+  } else {
+    text = `${count} recipe${count !== 1 ? "s" : ""} found`;
+  }
+
+  return (
+    <Typography
+      variant="body2"
+      sx={{
+        color: "text.secondary",
+        fontWeight: 500,
+        fontSize: "0.8rem",
+        mb: 1,
+        ml: 0.5,
+      }}
+    >
+      {text}
+    </Typography>
+  );
+});
 
 const NoRecipes = memo(({ hasActiveFilters }) => {
   const { openAddRecipeModal } = useRecipeList();
@@ -262,14 +282,7 @@ const VirtualizedRecipeGrid = memo(
       </div>
     );
   },
-  (prevProps, nextProps) => {
-    // Comparaison personnalisée pour éviter les re-rendus inutiles
-    // Ne re-rendre que si les recettes ou l'état de chargement changent
-    const areRecipesEqual = prevProps.recipes === nextProps.recipes;
-    const isLoadingEqual = prevProps.isLoading === nextProps.isLoading;
-
-    return areRecipesEqual && isLoadingEqual;
-  }
+  (prevProps, nextProps) => prevProps.recipes === nextProps.recipes
 );
 
 const HomePage = () => {
@@ -306,27 +319,25 @@ const HomePage = () => {
     selectedType,
     selectedDishType,
     isQuickOnly,
-    isFewIngredients,
+    isLowIngredientsOnly,
+    isPantrySort,
+    resultsType,
   } = useRecipeList();
 
   // Vérifier si des filtres sont actifs
   const hasActiveFilters = Boolean(
     searchQuery ||
       selectedDiet ||
-      selectedSeason ||
+      (selectedSeason?.length > 0) ||
       selectedType ||
       selectedDishType ||
       isQuickOnly ||
-      isFewIngredients
+      isLowIngredientsOnly ||
+      isPantrySort
   );
 
   const isLoading = loadingState.recipes;
 
-  const [currentView, setCurrentView] = useLocalStorage(
-    "currentView",
-    VIEWS.SIMPLE
-  );
-  const [filterMenuOpen, setFilterMenuOpen] = useState(false);
   const { hasPrivateAccess } = useLongPress();
 
   return (
@@ -379,30 +390,27 @@ const HomePage = () => {
             },
           }}
         >
-          <Container maxWidth="lg" sx={{ pb: 0, height: "100%" }}>
+          <Container maxWidth="lg" sx={{ pb: 0, height: "100%", display: "flex", flexDirection: "column" }}>
             {error ? (
               <Alert severity="error" sx={{ m: 4 }}>
                 Une erreur est survenue lors du chargement des recettes.
               </Alert>
             ) : isLoading ? (
-              <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flex: 1 }}>
                 <CircularProgress />
               </Box>
             ) : filteredRecipes?.length === 0 ? (
               <NoRecipes hasActiveFilters={hasActiveFilters} />
             ) : (
-              <VirtualizedRecipeGrid
-                recipes={filteredRecipes}
-                loadingState={loadingState}
-                isLoading={isLoading}
-                searchQuery={searchQuery}
-                selectedDiet={selectedDiet}
-                selectedSeason={selectedSeason}
-                selectedType={selectedType}
-                selectedDishType={selectedDishType}
-                isQuickOnly={isQuickOnly}
-                isFewIngredients={isFewIngredients}
+              <>
+              <ResultsLabel
+                resultsType={resultsType}
+                count={filteredRecipes?.length || 0}
               />
+              <Box sx={{ flex: 1, minHeight: 0 }}>
+                <VirtualizedRecipeGrid recipes={filteredRecipes} />
+              </Box>
+              </>
             )}
           </Container>
         </Box>

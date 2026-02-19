@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "title": "Mini Babkas au Pesto",
+    "description": "Ces petites brioches fa\u00e7on babka au pesto sont carr\u00e9ment addictives. Joliment tress\u00e9es, elles font leur petit effet sur une table pour l'ap\u00e9ro ou un brunch.",
+    "servings": 12,
+    "prepTime": "PT2H",
+    "cookTime": "PT12M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "babka",
+      "brioches",
+      "pesto",
+      "roquette",
+      "ap\u00e9ro",
+      "brunch",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Babka-pesto-1-of-5.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "La p\u00e2te \u00e0 brioche est v\u00e9gane, vous pouvez utiliser une autre recette de pesto si vous voulez que la recette soit enti\u00e8rement v\u00e9gane.",
+      "Si vous utilisez un pesto tout pr\u00eat, il faudra penser \u00e0 enlever un maximum d'huile pour \u00e9viter que les mini babkas soient trop \u00ab grasses \u00bb.",
+      "A d\u00e9guster encore ti\u00e8des ou froides, les brioches se conservent 2 jours dans un contenant herm\u00e9tique, vous pouvez les r\u00e9chauffer quelques minutes au four avant de les d\u00e9guster."
+    ],
+    "slug": "mini-babkas-au-pesto",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Babka-pesto-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/27/mini-babkas-au-pesto/",
+    "image": "images/mini-babkas-au-pesto.webp",
+    "createdAt": "2026-02-09T20:25:40.276587",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 185.0,
+    "totalCookingTime": 25.0,
+    "nutritionPerServing": {
+      "calories": 238.6,
+      "protein": 4.5,
+      "fat": 8.6,
+      "carbs": 35.2,
+      "fiber": 1.4,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 475.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "yeast",
+      "name": "levure de boulanger s\u00e8che",
+      "quantity": 8.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Active dry yeast"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "almond_milk",
+      "name": "lait v\u00e9g\u00e9tal chaud (amande sans sucres)",
+      "quantity": 240.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": "chaud",
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk (unsweetened almond)"
+    },
+    {
+      "id": "pesto",
+      "name": "pesto de roquette",
+      "quantity": 1.0,
+      "unit": "pot",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Arugula pesto"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "olive_oil_glaze",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Batteur (robot p\u00e2tissier)",
+    "Papier cuisson"
+  ],
+  "steps": [
+    {
+      "id": "activate_yeast",
+      "action": "Chauffer le lait d'amande (pas plus de 50\u00b0C) et verser la levure de boulanger s\u00e8che pour la r\u00e9activer. R\u00e9server pendant 10min.",
+      "duration": "PT10M",
+      "temperature": 50,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "almond_milk",
+        "yeast"
+      ],
+      "produces": "activated_yeast_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dough_ingredients",
+      "action": "Dans le bol du batteur ou dans un grand saladier, ajouter la farine, le sel, le sucre, l'huile et le lait ti\u00e8de avec la levure.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "flour",
+        "salt",
+        "sugar",
+        "olive_oil",
+        "activated_yeast_mixture"
+      ],
+      "produces": "dough_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_dough",
+      "action": "P\u00e9trir la p\u00e2te \u00e0 vitesse moyenne jusqu'\u00e0 former une boule (2min) puis \u00e0 haute vitesse encore 6min. Si vous n'avez pas de robot, m\u00e9langer avec une cuill\u00e8re en bois jusqu'\u00e0 former une boule puis p\u00e9trir environ 10min \u00e0 la main.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "dough_mixture"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": "boule form\u00e9e"
+    },
+    {
+      "id": "first_rise",
+      "action": "Former une boule avec la p\u00e2te et la placer dans un grand saladier propre et l\u00e9g\u00e8rement huil\u00e9. Couvrir d'un torchon propre et laisser la p\u00e2te lever pendant 1h30 (elle doit avoir doubl\u00e9 de volume).",
+      "duration": "PT1H30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "kneaded_dough"
+      ],
+      "produces": "risen_dough",
+      "requires": [],
+      "visualCue": "doubl\u00e9 de volume"
+    },
+    {
+      "id": "deflate_dough",
+      "action": "D\u00e9gazer la p\u00e2te et la transf\u00e9rer sur une surface l\u00e9g\u00e8rement farin\u00e9e et p\u00e9trissez la p\u00e2te pour lib\u00e9rer le gaz.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "risen_dough"
+      ],
+      "produces": "deflated_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "divide_dough",
+      "action": "Diviser la p\u00e2te en 12 petites boules (je vous conseille de peser la p\u00e2te pour avoir des boules homog\u00e8nes).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 brioche",
+      "uses": [
+        "deflated_dough"
+      ],
+      "produces": "dough_balls",
+      "requires": [],
+      "visualCue": "12 boules homog\u00e8nes"
+    },
+    {
+      "id": "roll_dough_balls",
+      "action": "Abaisser chaque petite boule pour former un rectangle d'environ 12 cm de large et 20 cm de long.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "dough_balls"
+      ],
+      "produces": "rolled_dough_rectangles",
+      "requires": [],
+      "visualCue": "rectangles de 12x20 cm"
+    },
+    {
+      "id": "spread_pesto",
+      "action": "R\u00e9partir uniform\u00e9ment une cuill\u00e8re \u00e0 soupe de pesto sur la p\u00e2te jusqu'\u00e0 environ 1 cm du bord.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "rolled_dough_rectangles",
+        "pesto"
+      ],
+      "produces": "pesto_spread_dough",
+      "requires": [],
+      "visualCue": "pesto uniform\u00e9ment r\u00e9parti"
+    },
+    {
+      "id": "roll_dough",
+      "action": "Rouler le rectangle de p\u00e2te sur la longueur puis pincer toutes les \u00ab coutures \u00bb et sceller les extr\u00e9mit\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pesto_spread_dough"
+      ],
+      "produces": "rolled_logs",
+      "requires": [],
+      "visualCue": "rouleaux scell\u00e9s"
+    },
+    {
+      "id": "cut_and_twist",
+      "action": "Avec un couteau bien aiguis\u00e9, couper le rouleau de p\u00e2te en deux dans le sens de la longueur, sans aller jusqu'au bout. Ensuite, torsader les deux longueurs ensemble, en gardant le c\u00f4t\u00e9 garniture vers le haut.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "rolled_logs"
+      ],
+      "produces": "twisted_dough",
+      "requires": [],
+      "visualCue": "torsade form\u00e9e"
+    },
+    {
+      "id": "shape_buns",
+      "action": "\u00c9tirer la tresse jusqu'\u00e0 ce qu'elle fasse 25 cm environ. Rapprocher les deux extr\u00e9mit\u00e9s pour former une boucle (en les faisant se chevaucher et en cr\u00e9ant un trou au milieu). Introduire une extr\u00e9mit\u00e9 dans le trou et la pincer avec l'autre extr\u00e9mit\u00e9 vers le bas (sous le bun).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "twisted_dough"
+      ],
+      "produces": "shaped_buns",
+      "requires": [],
+      "visualCue": "boucles form\u00e9es"
+    },
+    {
+      "id": "second_rise",
+      "action": "Laisser reposer les buns pendant 1h ou jusqu'\u00e0 ce qu'ils aient doubl\u00e9 de volume.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "shaped_buns"
+      ],
+      "produces": "proofed_buns",
+      "requires": [],
+      "visualCue": "doubl\u00e9 de volume"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_glaze",
+      "action": "Dans un petit bol, m\u00e9langer le lait et l'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "milk",
+        "olive_oil_glaze"
+      ],
+      "produces": "glaze",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_buns",
+      "action": "Badigeonner d\u00e9licatement le dessus des brioches avec dorure.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "proofed_buns",
+        "glaze"
+      ],
+      "produces": "glazed_buns",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_buns",
+      "action": "Enfourner les brioches et les cuire pendant 12min ou jusqu'\u00e0 ce qu'elles soient dor\u00e9es.",
+      "duration": "PT12M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "glazed_buns"
+      ],
+      "produces": "baked_buns",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "dor\u00e9es"
+    },
+    {
+      "id": "cool_buns",
+      "action": "Sortir du four et les laisser refroidir pendant 5min, puis les transf\u00e9rer d\u00e9licatement sur une grille de refroidissement.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "baked_buns"
+      ],
+      "produces": "cooled_buns",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooled_buns",
+  "originalText": "Mini Babkas au Pesto de Roquette - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n27 juin 2021\nMini Babkas au Pesto\nCa faisait trooop longtemps que je voulais r\u00e9aliser des petites brioches sal\u00e9es. En ce moment, une des grandes mode, c\u2019est la babka au pesto ! Etant donn\u00e9 que je suis quand m\u00eame assez \u00e0 cheval sur les tendances mode, il fallait bien que je teste moi aussi. Je me suis lanc\u00e9e avec ces mini babkas au\npesto de roquette\n. Elles sont plut\u00f4t mignonnes, non?\nAussi bien dans la p\u00e2te \u00e0 brioche que dans le pesto, j\u2019ai utilis\u00e9 la fameuse huile d\u2019olive\nFossatolio\n. Nous vous en avions d\u00e9j\u00e0 parl\u00e9 dans nos articles sur les\ncookies vegan\net l\u2019\norzotto d\u2019asperges\n, ainsi que les\nroul\u00e9s de courgettes aux 3 fromages\n.\u00a0Il s\u2019agit d\u2019une huile d\u2019olive vierge, en cours de labellisation bio. Elle est cultiv\u00e9e \u00e0 la main dans un petit village de Callabre ! Tout est expliqu\u00e9 dans\nce superbe film\n!\nPour vous permettre de r\u00e9aliser ces mini babkas au pesto, on a fait une petite vid\u00e9o de l\u2019assemblage d\u2019une brioche.\nC\u2019est vraiment une recette toute simple que vous pouvez r\u00e9aliser avec un pesto maison ou du commerce. Si vous utilisez un pesto tout pr\u00eat, il faudra penser \u00e0 enlever un maximum d\u2019huile pour \u00e9viter que les mini babkas soient trop \u00ab\u00a0grasses\u00a0\u00bb. La p\u00e2te \u00e0 brioche est v\u00e9gane, vous pouvez utiliser une autre recette de pesto si vous voulez que la recette soit enti\u00e8rement v\u00e9gane.\nMini Babkas au Pesto\nDaniela\nCes petites brioches fa\u00e7on babka au pesto sont carr\u00e9ment addictives. Joliment tress\u00e9es, elles font leur petit effet sur une table pour l\u2019ap\u00e9ro ou un brunch. La garniture au pesto se retrouve dans chaque bouch\u00e9e, un vrai d\u00e9lice !\n4.56\n/5 avec\n102\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n12\nminutes\nmin\nTemps de repos\n2\nheures\nh\n30\nminutes\nmin\nType de plat\nAppetizer, Brunch, Snack\nPortions\n12\nmini babkas\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te \u00e0 brioche :\n475\ng\nde farine\n8\ng\nde levure de boulanger s\u00e8che\n1\nc\u00e0c de sel\n3\nc\u00e0s de sucre\n75\nml\nd\u2019huile d\u2019olive\n240\nml\nde lait v\u00e9g\u00e9tal chaud\nici amande sans sucres\nGarniture :\n1\npot de pesto de roquette\nvoir recette sur le blog\nDorure :\n2\nc\u00e0s de lait\n1\nc\u00e0s d\u2019huile d\u2019olive\nInstructions\nPr\u00e9paration de la p\u00e2te \u00e0 brioche :\nChauffer le lait d\u2019amande (pas plus de 50\u00b0C) et verser la levure de boulanger s\u00e8che pour la r\u00e9activer. R\u00e9server pendant 10 min.\nDans le bol du batteur ou dans un grand saladier, ajouter la farine, le sel, le sucre, l\u2019huile et le lait ti\u00e8de avec la levure.\nP\u00e9trir la p\u00e2te \u00e0 vitesse moyenne jusqu\u2019\u00e0 former une boule (2 ou 3 min) puis \u00e0 haute vitesse encore 6 \u00e0 7 min. Si vous n\u2019avez pas de robot, m\u00e9langer avec une cuill\u00e8re en bois jusqu\u2019\u00e0 former une boule puis p\u00e9trir environ 10 \u00e0 12 min \u00e0 la main.\nFormer une boule avec la p\u00e2te et la placer dans un grand saladier propre et l\u00e9g\u00e8rement huil\u00e9. Couvrir d\u2019un torchon propre et laisser la p\u00e2te lever pendant 1h \u00e0 1h30 (elle doit avoir doubl\u00e9 de volume).\nD\u00e9gazer la p\u00e2te et la transf\u00e9rer sur une surface l\u00e9g\u00e8rement farin\u00e9e et p\u00e9trissez la p\u00e2te pour lib\u00e9rer le gaz.\nDiviser la p\u00e2te en 12 petites boules (je vous conseille de peser la p\u00e2te pour avoir des boules homog\u00e8nes).\nAssemblage des buns :\nAbaisser chaque petite boule pour former un rectangle d\u2019environ 12 cm de large et 20 cm de long.\nR\u00e9partir uniform\u00e9ment une cuill\u00e8re \u00e0 soupe de\npesto\nsur la p\u00e2te jusqu\u2019\u00e0 environ 1 cm du bord.\nRouler le rectangle de p\u00e2te sur la longueur puis pincer toutes les \u00ab\u00a0coutures\u00a0\u00bb et sceller les extr\u00e9mit\u00e9s.\nAvec un couteau bien aiguis\u00e9, couper le rouleau de p\u00e2te en deux dans le sens de la longueur, sans aller jusqu\u2019au bout. Ensuite, torsader les deux longueurs ensemble, en gardant le c\u00f4t\u00e9 garniture vers le haut.\n\u00c9tirer la tresse jusqu\u2019\u00e0 ce qu\u2019elle fasse 25 cm environ. Rapprocher les deux extr\u00e9mit\u00e9s pour former une boucle (en les faisant se chevaucher et en cr\u00e9ant un trou au milieu). Introduire une extr\u00e9mit\u00e9 dans le trou et la pincer avec l\u2019autre extr\u00e9mit\u00e9 vers le bas (sous le bun).\nPlacer le bun sur une plaque recouverte de papier cuisson. R\u00e9p\u00e9ter l\u2019op\u00e9ration avec le reste des boules.\nLaisser reposer les buns pendant 1 heure ou jusqu\u2019\u00e0 ce qu\u2019ils aient doubl\u00e9 de volume.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nDans un petit bol, m\u00e9langer le lait et l\u2019huile. Badigeonner d\u00e9licatement le dessus des brioches avec dorure.\nEnfourner les brioches et les cuire pendant 12 \u00e0 15 minutes ou jusqu\u2019\u00e0 ce qu\u2019elles soient dor\u00e9es.\nSortir du four et les laisser refroidir pendant 5 minutes, puis les transf\u00e9rer d\u00e9licatement sur une grille de refroidissement.\nA d\u00e9guster encore ti\u00e8des ou froides, les brioches se conservent 2 jours dans un contenant herm\u00e9tique, vous pouvez les r\u00e9chauffer quelques minutes au four avant de les d\u00e9guster.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAp\u00e9ros\n,\nBrunch Sal\u00e9\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sal\u00e9es\nTags:\nbabka\n,\nbrioches\n,\npesto\n,\nroquette\nPain \u00e0 l\u2019Ail et au Fromage sur une P\u00e2te \u00e0 Pizza Maison\nF\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises\n1 thought on \u201cMini Babkas au Pesto\u201d\nLadyMilonguera\ndit\u00a0:\n27 juin 2021 \u00e0 15 h 38 min\nMais quelle chouette id\u00e9e ces babkas au pesto !\nchargement\u2026\nR\u00e9pondre\n4.56 from 102 votes (\n101 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 25.0
+}

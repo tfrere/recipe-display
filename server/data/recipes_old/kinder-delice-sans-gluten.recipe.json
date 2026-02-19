@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "title": "Kinder D\u00e9lice Sans Gluten",
+    "description": "Un g\u00e2teau au chocolat au bon go\u00fbt de noisette sans gluten avec un c\u0153ur tout doux comme un petit nuage (dixit Nat), fa\u00e7on \u00ab Kinder D\u00e9lice \u00bb, retour en enfance garanti !",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "chantilly vanille",
+      "chocolat",
+      "kinder d\u00e9lice",
+      "noisette",
+      "sans gluten"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/gateau-kinder-2-of-5.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le g\u00e2teau se conserve au r\u00e9frig\u00e9rateur et se consomme le jour m\u00eame ou le lendemain, le g\u00e2teau a tendance \u00e0 s'ass\u00e9cher assez rapidement.",
+      "Pour le sucre glace, choisir un sucre glace pur additionn\u00e9 d'amidon de pomme de terre ou de ma\u00efs pour garantir l'absence de gluten."
+    ],
+    "slug": "kinder-delice-sans-gluten",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/gateau-kinder-2-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/05/25/kinder-delice-sans-gluten/",
+    "image": "images/kinder-delice-sans-gluten.jpg",
+    "createdAt": "2026-02-09T20:21:53.033602",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 157.0,
+    "totalCookingTime": 62.0,
+    "nutritionPerServing": {
+      "calories": 532.1,
+      "protein": 7.7,
+      "fat": 35.5,
+      "carbs": 45.5,
+      "fiber": 4.1,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "creme_fluide",
+      "name": "cr\u00e8me fluide l\u00e9g\u00e8re 12% MG",
+      "quantity": 250.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "light cream"
+    },
+    {
+      "id": "chocolat_noir_1",
+      "name": "chocolat noir",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "oeufs",
+      "name": "\u0153ufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "levure_chimique",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poudre_noisette",
+      "name": "poudre de noisette",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnut powder"
+    },
+    {
+      "id": "creme_liquide",
+      "name": "cr\u00e8me liquide 30%MG",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": "bien froide",
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "mascarpone",
+      "name": "mascarpone",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid",
+      "notes": null,
+      "optional": false,
+      "name_en": "mascarpone"
+    },
+    {
+      "id": "sucre_glace",
+      "name": "sucre glace",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "poudre_vanille",
+      "name": "poudre de vanille",
+      "quantity": 0.125,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla powder"
+    },
+    {
+      "id": "chocolat_noir_2",
+      "name": "chocolat noir",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "huile_noisette",
+      "name": "huile de noisette",
+      "quantity": 30.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnut oil"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 cake",
+    "Batteur \u00e9lectrique ou robot",
+    "Bain-marie"
+  ],
+  "steps": [
+    {
+      "id": "fondre_chocolat",
+      "action": "Faire chauffer la cr\u00e8me dans une petite casserole \u00e0 feu moyen, ajouter le chocolat noir et m\u00e9langer jusqu'\u00e0 ce qu'il soit compl\u00e8tement fondu, retirer du feu et continuer de m\u00e9langer jusqu'\u00e0 ce que le m\u00e9lange soit homog\u00e8ne et bien lisse. R\u00e9server.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "creme_fluide",
+        "chocolat_noir_1"
+      ],
+      "produces": "chocolat_fondu",
+      "requires": [],
+      "visualCue": "homog\u00e8ne et bien lisse"
+    },
+    {
+      "id": "battre_oeufs_sucre",
+      "action": "Dans un saladier, battre les 3 \u0153ufs avec le sucre et le sucre vanill\u00e9 jusqu'\u00e0 ce que le m\u00e9lange devienne un peu mousseux.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "oeufs",
+        "sucre",
+        "sucre_vanille"
+      ],
+      "produces": "oeufs_mousseux",
+      "requires": [],
+      "visualCue": "un peu mousseux"
+    },
+    {
+      "id": "melanger_pate",
+      "action": "Verser le chocolat fondu dans un grand saladier, puis verser le m\u00e9lange d'\u0153ufs et m\u00e9langer au fouet. Ajouter la poudre de noisette, la f\u00e9cule, la levure et le sel, bien m\u00e9langer.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "chocolat_fondu",
+        "oeufs_mousseux",
+        "poudre_noisette",
+        "fecule_mais",
+        "levure_chimique",
+        "sel"
+      ],
+      "produces": "pate_gateau",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau_chocolat",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chemiser_moule",
+      "action": "Chemiser le moule et y verser la pr\u00e9paration.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "pate_gateau"
+      ],
+      "produces": "moule_rempli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_gateau",
+      "action": "Enfourner \u00e0 mi-hauteur et cuire 40min, v\u00e9rifier la cuisson avec un cure-dent ou la pointe d'un couteau.",
+      "duration": "PT40M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "moule_rempli"
+      ],
+      "produces": "gateau_cuit",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "cure-dent propre"
+    },
+    {
+      "id": "refroidir_gateau",
+      "action": "Laisser refroidir 15min avant de d\u00e9mouler le g\u00e2teau, puis le placer sur une grille pour qu'il refroidisse compl\u00e8tement.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "gateau_chocolat",
+      "uses": [
+        "gateau_cuit"
+      ],
+      "produces": "gateau_refroidi",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "preparer_base_chantilly",
+      "action": "M\u00e9langer la cr\u00e8me liquide bien froide avec le mascarpone froid, le sucre glace et la poudre de vanille dans un cul de poule. Le but \u00e9tant de d\u00e9layer le mascarpone dans la cr\u00e8me.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_mascarpone_vanille",
+      "uses": [
+        "creme_liquide",
+        "mascarpone",
+        "sucre_glace",
+        "poudre_vanille"
+      ],
+      "produces": "base_chantilly",
+      "requires": [],
+      "visualCue": "mascarpone d\u00e9lay\u00e9"
+    },
+    {
+      "id": "monter_chantilly",
+      "action": "A l'aide d'un batteur \u00e9lectrique ou d'un robot, monter la chantilly, doucement au d\u00e9but et plus rapidement lorsqu'elle commence \u00e0 \u00e9paissir. La chantilly est pr\u00eate lorsqu'elle est bien \u00e9paisse et qu'elle forme un bec au bout du fouet. R\u00e9server au frais.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "creme_mascarpone_vanille",
+      "uses": [
+        "base_chantilly"
+      ],
+      "produces": "chantilly_mascarpone",
+      "requires": [],
+      "visualCue": "bien \u00e9paisse, forme un bec"
+    },
+    {
+      "id": "preparer_gla\u00e7age",
+      "action": "Faire fondre 200g de chocolat au bain-marie. Une fois le chocolat fondu, ajouter l'huile et bien m\u00e9langer. R\u00e9server pendant une vingtaine de minutes.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "chocolat_noir_2",
+        "huile_noisette"
+      ],
+      "produces": "gla\u00e7age_prepare",
+      "requires": [],
+      "visualCue": "chocolat fondu"
+    },
+    {
+      "id": "couper_gateau",
+      "action": "Une fois le g\u00e2teau au chocolat bien refroidi, le couper en deux dans le sens de la longueur.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "gateau_refroidi"
+      ],
+      "produces": "gateau_coupe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnir_creme",
+      "action": "D\u00e9poser la partie inf\u00e9rieure sur une grille, puis garnir de cr\u00e8me au mascarpone sur toute la surface. D\u00e9poser ensuite la partie sup\u00e9rieure sur la cr\u00e8me.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "gateau_coupe",
+        "chantilly_mascarpone"
+      ],
+      "produces": "gateau_fourre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_glacage_final",
+      "action": "M\u00e9langer de nouveau le gla\u00e7age avant de le verser.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "gla\u00e7age_prepare"
+      ],
+      "produces": "gla\u00e7age_pret",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_gla\u00e7age",
+      "action": "Verser le gla\u00e7age en comblant les zones non couvertes \u00e0 l'aide d'une cuill\u00e8re ou d'une spatule.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "gateau_fourre",
+        "gla\u00e7age_pret"
+      ],
+      "produces": "gateau_glace",
+      "requires": [],
+      "visualCue": "zones combl\u00e9es"
+    },
+    {
+      "id": "solidifier_gla\u00e7age",
+      "action": "Placer le cake au r\u00e9frig\u00e9rateur pour solidifier le gla\u00e7age environ 20min.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "montage_gla\u00e7age",
+      "uses": [
+        "gateau_glace"
+      ],
+      "produces": "kinder_delice_fini",
+      "requires": [],
+      "visualCue": "gla\u00e7age solidifi\u00e9"
+    }
+  ],
+  "finalState": "kinder_delice_fini",
+  "originalText": "Kinder D\u00e9lice Maison (sans gluten) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 mai 2021\nKinder D\u00e9lice Sans Gluten\nAcc\u00e9der directement \u00e0 la recette\nL\u2019ann\u00e9e derni\u00e8re Nat vous avez propos\u00e9 une recette de\nmoelleux aux chocolat sans farine et sans beurre\n. Vous vous en souvenez? Une vraie petite bombe ce g\u00e2teau, \u00e0 tel point qu\u2019elle le fait \u00e0 chaque \u00ab\u00a0grande\u00a0\u00bb occasion. Mais voil\u00e0 qu\u2019il y a quelques mois, alors qu\u2019elle s\u2019appr\u00eatait \u00e0 r\u00e9aliser son g\u00e2teau chouchou, plusieurs ingr\u00e9dients manquaient \u00e0 l\u2019appel. Aucun probl\u00e8me pour Nat, elle d\u00e9cide bien s\u00fbr de composer avec ce qu\u2019elle a dans ses placards. Ah oui, un jour je vous raconterai l\u2019histoire des placards de Nat\u2026 Mais pour le moment revenons \u00e0 notre g\u00e2teau. En rempla\u00e7ant la poudre d\u2019amande par de la poudre de noisette et la cr\u00e8me de soja par de la cr\u00e8me classique, elle obtient un g\u00e2teau toujours d\u00e9licieux qui lui donne une id\u00e9e. \u00ab\u00a0Daaaaaan, tu voudrais pas faire un Kinder D\u00e9lice sans gluten g\u00e9ant avec ma recette?\u00a0\u00bb\nComment refuser? Et c\u2019est ainsi que naquit la recette du Kinder D\u00e9lice sans gluten.\nAutre particularit\u00e9 de la recette, elle a \u00e9t\u00e9 r\u00e9alis\u00e9 en partenariat avec\nbocoloco\n, notre \u00e9picerie  de vrac en ligne pr\u00e9f\u00e9r\u00e9e ! Nous collaborons avec eux depuis quelques mois et c\u2019est trop cool de voir leur rayon virtuel s\u2019agrandir et proposer toujours plus de produits en vrac.\nRetrouver \u00e9galement d\u2019autres desserts sans gluten : le\ncarrot cake fa\u00e7on bundt\n, les\ncookies s\u00e9same chocolat noir\n(je les adooore) ou encore le\nbanana bread double chocolat\n\u2026\nKinder D\u00e9lice Sans Gluten\nDaniela\nUn g\u00e2teau au chocolat au bon go\u00fbt de noisette sans gluten avec un c\u0153ur tout doux comme un petit nuage (dixit Nat),  fa\u00e7on \u00ab\u00a0Kinder D\u00e9lice\u00a0\u00bb, retour en enfance garanti !\n4.49\n/5 avec\n74\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nTemps de repos\n40\nminutes\nmin\nType de plat\nDessert, Go\u00fbter\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nG\u00e2teau au chocolat :\n250\nml\nde cr\u00e8me fluide l\u00e9g\u00e8re\n12% MG\n200\ng\nde chocolat noir\n3\n\u0153ufs\n70\ng\nde sucre\n1\nsachet de sucre vanill\u00e9\n40\ng\nde f\u00e9cule de ma\u00efs\n1\nsachet de levure chimique\n\u00bd\nc\u00e0c de sel\n100\ng\nde poudre de noisette\nCr\u00e8me mascarpone vanille :\n100\nml\nde cr\u00e8me liquide 30%MG\n75\ng\nde mascarpone\n30\ng\nde sucre glace\n\u215b\nc\u00e0c de poudre de vanille\nou la pointe d\u2019un couteau\nGla\u00e7age chocolat :\n200\ng\nde chocolat noir\n30\nml\nd\u2019huile de noisette\nou huile neutre\nInstructions\nPour le g\u00e2teau au chocolat :\nFaire chauffer la cr\u00e8me dans une petite casserole \u00e0 feu moyen, ajouter le chocolat noir et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019il soit compl\u00e8tement fondu, retirer du feu et continuer de m\u00e9langer jusqu\u2019\u00e0 ce que le m\u00e9lange soit homog\u00e8ne et bien lisse. R\u00e9server.\nDans un saladier, battre les 3 \u0153ufs avec le sucre et le sucre vanill\u00e9 jusqu\u2019\u00e0 ce que le m\u00e9lange devienne un peu mousseux.\nVerser le chocolat dans un grand saladier, puis verser le m\u00e9lange d\u2019\u0153ufs et m\u00e9langer au fouet. Ajouter la poudre d\u2019amande, la f\u00e9cule, la levure et le sel, bien m\u00e9langer.\nPr\u00e9chauffer le four \u00e0 175\u00b0C.\nChemiser le moule et y verser la pr\u00e9paration. L\u2019appareil peut sembler un peu liquide, c\u2019est normal !\nEnfourner \u00e0 mi-hauteur et cuire 40 min, v\u00e9rifier la cuisson avec un cure-dent ou la pointe d\u2019un couteau.\nLaisser refroidir 15 min avant de d\u00e9mouler le g\u00e2teau, puis le placer sur une grille pour qu\u2019il refroidisse compl\u00e8tement avant de le couper pour le garnir.\nPour la cr\u00e8me au mascarpone :\nDans un cul de poule (petite astuce, mettre le cul de poule 15/20min au cong\u00e9lateur avant de pr\u00e9parer la chantilly) m\u00e9langer la cr\u00e8me liquide bien froide avec le mascarpone froid, le sucre glace et la poudre de vanille. Le but \u00e9tant de d\u00e9layer le mascarpone dans la cr\u00e8me.\nA l\u2019aide d\u2019un batteur \u00e9lectrique ou dans d\u2019un robot, monter la chantilly, doucement au d\u00e9but et plus rapidement lorsqu\u2019elle commence \u00e0 \u00e9paissir. La chantilly est pr\u00eate lorsqu\u2019elle est bien \u00e9paisse et qu\u2019elle forme un bec au bout du fouet. R\u00e9server au frais.\nMontage du g\u00e2teau :\nFaire fondre 200g de chocolat au bain-marie. Une fois le chocolat fondu, ajouter l\u2019huile et bien m\u00e9langer. R\u00e9server pendant une vingtaine de minutes.\nUne fois le g\u00e2teau au chocolat bien refroidi, le couper en deux dans le sens de la longueur. D\u00e9poser la partie inf\u00e9rieure sur une grille, puis garnir de cr\u00e8me au mascarpone sur toute la surface. D\u00e9poser ensuite la partie sup\u00e9rieure sur la cr\u00e8me et voil\u00e0 !\nPlacer la grille avec le g\u00e2teau fourr\u00e9 au-dessus d\u2019une feuille de papier sulfuris\u00e9 ou d\u2019un plat permettant de r\u00e9cup\u00e9rer le gla\u00e7age si besoin. M\u00e9langer de nouveau le gla\u00e7age avant de le verser.\nVerser le gla\u00e7age en comblant les zones non couvertes \u00e0 l\u2019aide d\u2019une cuill\u00e8re ou d\u2019une spatule. Si besoin, r\u00e9cup\u00e9rer le gla\u00e7age qui aurait coul\u00e9 sous la grille.\nPlacer le cake au r\u00e9frig\u00e9rateur pour solidifier le gla\u00e7age environ 20 min. Et voil\u00e0, vous obtenez un d\u00e9licieux g\u00e2teau avec une pointe de douceur \u00e0 l\u2019int\u00e9rieur\u2026 Le g\u00e2teau se conserve au r\u00e9frig\u00e9rateur et se consomme le jour m\u00eame ou le lendemain, le g\u00e2teau a tendance \u00e0 s\u2019ass\u00e9cher assez rapidement.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nG\u00e2teaux et Cakes\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nchantilly vanille\n,\nchocolat\n,\nkinder d\u00e9lice\n,\nnoisette\n,\nsans gluten\nCrumble Avoine Fruits Rouges\nD\u00e9couvrez notre nouvel ebook : Free the Chou-fleur\n4 thoughts on \u201cKinder D\u00e9lice Sans Gluten\u201d\nOmbeline\ndit\u00a0:\n27 mai 2021 \u00e0 10 h 40 min\nBonjour  Daniela,\nPeut-on congeler ce g\u00e2teau ?\nMerci beaucoup\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n27 mai 2021 \u00e0 12 h 47 min\nBonjour Ombeline, le g\u00e2teau a tendance vite s\u2019ass\u00e9cher, je doute qu\u2019il supporte bien la cong\u00e9lation. A tester mais sans la chantilly je pense\u2026 D\u00e9sol\u00e9e\nchargement\u2026\nR\u00e9pondre\nZora\ndit\u00a0:\n1 novembre 2023 \u00e0 23 h 31 min\nLe sucre glace contient du gluten\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n2 novembre 2023 \u00e0 13 h 11 min\nPas tous les sucres glaces, il faut en choisir un amylac\u00e9 (c\u2019est \u00e0 dire un sucre glace pur additionn\u00e9 d\u2019amidon de pomme de terre ou de ma\u00efs).\nchargement\u2026\nR\u00e9pondre\n4.49 from 74 votes (\n74 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 62.0
+}

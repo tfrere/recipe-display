@@ -10,14 +10,12 @@ export const ConstantsProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchConstants = async () => {
-      console.log("Fetching constants...");
       try {
         const response = await fetch(`${API_BASE_URL}/api/constants`);
         if (!response.ok) {
           throw new Error("Failed to fetch constants");
         }
         const data = await response.json();
-        console.log("Constants fetched:", data);
         setConstants(data);
         setError(null);
       } catch (err) {
@@ -31,10 +29,7 @@ export const ConstantsProvider = ({ children }) => {
     fetchConstants();
   }, []);
 
-  console.log("ConstantsProvider state:", { loading, error, constants });
-
   if (loading) {
-    console.log("Constants still loading...");
     return null; // ou un composant de chargement si nécessaire
   }
 

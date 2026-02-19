@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "Tranches d'aubergines gratin\u00e9es express",
+    "description": "Un petit kiff super rapide \u00e0 pr\u00e9parer ? J'ai nomm\u00e9 les tranches d'aubergines gratin\u00e9es express ! Cette recette est super simple et rapide \u00e0 r\u00e9aliser, et en 15 minutes, vous allez vous r\u00e9galer.",
+    "servings": 4,
+    "prepTime": "PT5M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "aubergine",
+      "aubergine gratin\u00e9e",
+      "recette rapide aubergine",
+      "ap\u00e9ro",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Aubergines-gratinees-1-of-1-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette introduite par la grand-m\u00e8re paternelle.",
+      "Peut remplacer l'emmental par du comt\u00e9, mozzarella, cheddar ou un m\u00e9lange emmental-parmesan.",
+      "Peut servir en entr\u00e9e, \u00e0 l'ap\u00e9ro (coup\u00e9es en bouch\u00e9es) ou en plat principal avec une salade.",
+      "Cuisson en deux temps possible : cuire les aubergines huil\u00e9es 10-15min, puis ajouter le fromage pour gratiner."
+    ],
+    "slug": "tranches-d-aubergines-gratinees-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Aubergines-gratinees-1-of-1-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/08/12/tranches-daubergines-gratinees-express/",
+    "image": "images/tranches-d-aubergines-gratinees-express.jpg",
+    "createdAt": "2026-02-09T21:51:47.424812",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 15.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 37.5,
+      "protein": 1.5,
+      "fat": 0.3,
+      "carbs": 8.9,
+      "fiber": 4.5,
+      "confidence": "low",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 3,
+      "totalIngredients": 4,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "eggplant",
+      "name": "aubergines",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 550g",
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oregano_or_thyme",
+      "name": "origan ou thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano or thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "emmental",
+      "name": "emmental r\u00e2p\u00e9",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated emmental"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque(s) de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "slice_eggplant",
+      "action": "Couper les aubergines en belles et longues tranches d'environ 5mm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggplant"
+      ],
+      "produces": "sliced_eggplant",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_slices",
+      "action": "Poser les tranches sur une ou 2 plaques de cuisson recouvertes de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_eggplant"
+      ],
+      "produces": "arranged_eggplant_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_and_cheese",
+      "action": "Verser un filet d'huile d'olive par-dessus. Puis saupoudrer d'origan (ou de thym), de sel et de poivre. R\u00e9partir l'emmental r\u00e2p\u00e9 par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_eggplant_slices",
+        "olive_oil",
+        "oregano_or_thyme",
+        "salt",
+        "pepper",
+        "emmental"
+      ],
+      "produces": "seasoned_eggplant_with_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner 15min. L'emmental doit commencer \u00e0 dorer.",
+      "duration": "PT15M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_eggplant_with_cheese"
+      ],
+      "produces": "baked_eggplant_gratin",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "L'emmental doit commencer \u00e0 dorer"
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster imm\u00e9diatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_eggplant_gratin"
+      ],
+      "produces": "tranches_aubergines_gratinees",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tranches_aubergines_gratinees",
+  "originalText": "Tranches d\u2019aubergines gratin\u00e9es express - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 ao\u00fbt 2023\nTranches d\u2019aubergines gratin\u00e9es express\nUn petit kiff super rapide \u00e0 pr\u00e9parer ? J\u2019ai nomm\u00e9 les\ntranches d\u2019aubergines gratin\u00e9es express\n! Cette\nrecette\na \u00e9t\u00e9 introduite dans notre famille par ma grand-m\u00e8re paternelle. Je crois qu\u2019elle l\u2019a d\u00e9couverte dans un magazine, et depuis, c\u2019est devenu un incontournable pour toute la famille ! Chacun y met un peu sa touche : ma petite s\u0153ur adore remplacer l\u2019\nemmental\npar du\ncomt\u00e9\n, et m\u00eame si c\u2019est d\u00e9licieux, je reste fid\u00e8le \u00e0 la version\nemmental\npour un go\u00fbt plus l\u00e9ger. Le comt\u00e9, bien que savoureux, peut \u00eatre un peu trop riche \u00e0 mon go\u00fbt. Cette\nrecette\nest\nsuper simple\net\nrapide\n\u00e0 r\u00e9aliser, et en\n15 minutes\n, vous allez vous r\u00e9galer. Un plat facile, sans prise de t\u00eate, et surtout ultra gourmand !\nTable des mati\u00e8res\n1\nL\u2019aubergine, star m\u00e9diterran\u00e9enne pleine de vertus\n2\nTranches d\u2019aubergines gratin\u00e9es express\n3\nGruy\u00e8re, comt\u00e9\u2026 et d\u2019autres id\u00e9es \u00e0 tester\n4\nUne recette \u00e0 d\u00e9gainer pour toutes les occasions\n5\nLa magie du gratin\u2026 en version express !\nL\u2019aubergine, star m\u00e9diterran\u00e9enne pleine de vertus\nL\u2019aubergine, c\u2019est le l\u00e9gume d\u2019\u00e9t\u00e9 par excellence. Peu calorique, riche en fibres et en antioxydants, elle est aussi excellente pour la digestion et la sant\u00e9 du c\u0153ur. On l\u2019adore pour sa chair fondante et sa capacit\u00e9 \u00e0 absorber toutes les saveurs. Chez Free the Pickle, on lui rend hommage dans plusieurs recettes v\u00e9g\u00e9tariennes ultra savoureuses. Si vous aimez les textures croustillantes, vous allez adorer ces\nrondelles d\u2019aubergines pan\u00e9es au four (sans friture)\n, ou encore notre derni\u00e8re cr\u00e9ation : l\u2019\naubergine pan\u00e9e crousti-fondante\n\u00e0 servir avec une bonne sauce tomate maison. Pour une version plus parfum\u00e9e, laissez-vous tenter par ces\naubergines farcies \u00e0 l\u2019ottomane\n, riches en \u00e9pices et en caract\u00e8re. Autant de mani\u00e8res savoureuses de red\u00e9couvrir ce l\u00e9gume m\u00e9diterran\u00e9en injustement sous-estim\u00e9 !\nTranches d\u2019aubergines gratin\u00e9es express\n4.62\n/5 avec\n71\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\npersonnes en entr\u00e9e\nIngr\u00e9dients\n1x\n2x\n3x\n2\naubergines\nenv 550g\nhuile d\u2019olive\norigan ou thym\nsel\npoivre\n400\ng\nd\u2019emmental r\u00e2p\u00e9\nInstructions\nCouper les aubergines en belles et longues tranches d\u2019environ 5mm d\u2019\u00e9paisseur.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nPoser les tranches sur une ou 2 plaques de cuisson recouvertes de papier cuisson.\nVerser un filet d\u2019huile d\u2019olive par-dessus. Puis saupoudrer d\u2019origan (ou de thym), de sel et de poivre. R\u00e9partir l\u2019emmental r\u00e2p\u00e9 par-dessus.\nEnfourner 15 \u00e0 20min. L\u2019emmental doit commencer \u00e0 dorer.\nD\u00e9guster imm\u00e9diatement.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nGruy\u00e8re, comt\u00e9\u2026 et d\u2019autres id\u00e9es \u00e0 tester\nChez nous, on a une petite pr\u00e9f\u00e9rence pour le gruy\u00e8re. On le trouve moins \u00e9c\u0153urant que le comt\u00e9, surtout quand il est utilis\u00e9 g\u00e9n\u00e9reusement. Le comt\u00e9 a un go\u00fbt plus marqu\u00e9 et plus gras, ce qui peut \u00eatre un peu lourd pour certains. Cela dit, si vous aimez son caract\u00e8re, foncez ! Vous pouvez aussi tenter d\u2019autres fromages : de la mozzarella r\u00e2p\u00e9e pour un r\u00e9sultat bien fondant, du cheddar affin\u00e9 pour un c\u00f4t\u00e9 plus rustique, ou encore un m\u00e9lange emmental-parmesan pour une belle cro\u00fbte gratin\u00e9e et savoureuse. L\u2019important, c\u2019est d\u2019adapter selon vos go\u00fbts\u2026 et ce que vous avez dans le frigo.\nSi, comme nous, vous \u00eates totalement accro au fromage, vous allez adorer ces recettes ultra gourmandes. Les\nroul\u00e9s de courgettes aux 3 fromages\nsont parfaits pour une entr\u00e9e fondante et savoureuse. Le\npain \u00e0 l\u2019ail et au fromage\nest carr\u00e9ment irr\u00e9sistible, surtout quand il sort du four. Et si vous cherchez un plat doudou, foncez sur notre\ngratin de p\u00e2tes aux 3 fromages, artichauts et \u00e9pinards\n. Une vraie tuerie.\nUne recette \u00e0 d\u00e9gainer pour toutes les occasions\nJe pr\u00e9pare ces tranches d\u2019aubergines gratin\u00e9es express pour toutes sortes d\u2019occasions. En entr\u00e9e \u00e0 la bonne franquette, elles font toujours sensation. Je les coupe parfois en bouch\u00e9es pour les servir \u00e0 l\u2019ap\u00e9ro, fa\u00e7on tapas. Et, les soirs de flemme, elles deviennent carr\u00e9ment mon plat principal, accompagn\u00e9es d\u2019une salade verte ou de semoule. Alors oui, ce n\u2019est s\u00fbrement pas la recette la plus l\u00e9g\u00e8re du blog, mais franchement, il faut bien savoir se faire plaisir de temps en temps, non ?\nEt pour d\u2019autres id\u00e9es de recettes avec des aubergines, je vous conseille\ncette recette de lasagnes\n,\ncette recette d\u2019aubergines \u00e0 la sauce tomate\nou encore\nces aubergines \u00e0 la Philippine\n.\nLa magie du gratin\u2026 en version express !\nCe qu\u2019on aime avec ces tranches d\u2019aubergines, c\u2019est leur simplicit\u00e9 redoutablement efficace.\nOn les coupe, on les dispose sur une plaque, un filet d\u2019huile d\u2019olive, quelques herbes s\u00e9ch\u00e9es comme de l\u2019origan ou du thym, sel, poivre\u2026 et puis le moment qu\u2019on attend tous : une belle couche d\u2019emmental r\u00e2p\u00e9. Direction le four pour une quinzaine de minutes, le temps que \u00e7a fonde, que \u00e7a gratine, et que \u00e7a embaume toute la cuisine. On sort les tranches bien dor\u00e9es\u2026 et on se r\u00e9gale aussit\u00f4t ! Et si comme nous vous avez un faible pour tout ce qui est gratin\u00e9, vous allez adorer ces recettes tout aussi r\u00e9confortantes :\ngratin de potimarron au St-Nectaire\npour un twist d\u2019automne ultra fondant,\ngratin de p\u00e2tes, \u00e9pinards, mozzarella et parmesan\npour un d\u00eener v\u00e9g\u00e9tarien complet et gourmand, ou encore le\npastitsio, gratin de p\u00e2tes grec\npour une vir\u00e9e savoureuse en M\u00e9diterran\u00e9e !\nPas besoin d\u2019en faire des tonnes pour se r\u00e9galer. Ces tranches d\u2019aubergines gratin\u00e9es express prouvent qu\u2019avec trois fois rien et une bonne dose de fromage, on peut obtenir un petit plat ultra r\u00e9confortant. Elles ont ce go\u00fbt d\u2019enfance, de cuisine simple et g\u00e9n\u00e9reuse, qui r\u00e9unit tout le monde autour de la table. Envie de continuer \u00e0 cuisiner l\u2019aubergine sous toutes ses formes ? Retrouvez toutes nos recettes \u00e0 base d\u2019aubergine par ici :\nnos recettes \u00e0 base d\u2019aubergine\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nAubergine\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nPlats au Four\nTags:\naubergine\n,\naubergine gratin\u00e9e\n,\nque faire avec des aubergine\n,\nrecette aubergine\n,\nrecette rapide aubergine\nSauce Tomate pour P\u00e2tes Pizzas et Lasagnes\nCourgettes piment\u00e9es \u00e0 la cr\u00e8me de feta : la recette qui r\u00e9veille vos repas d\u2019\u00e9t\u00e9\n5 thoughts on \u201cTranches d\u2019aubergines gratin\u00e9es express\u201d\nRehoboth\ndit\u00a0:\n12 ao\u00fbt 2023 \u00e0 11 h 07 min\nNice recipe\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n12 ao\u00fbt 2023 \u00e0 11 h 24 min\nUne chouette id\u00e9e ces tranches d\u2019aubergine\u2026.\nchargement\u2026\nR\u00e9pondre\nCindy\ndit\u00a0:\n13 mai 2024 \u00e0 22 h 08 min\nTop ! Le fondant de l aubergine avec le croustillant du fromage grill\u00e9, un regal ! Et tr\u00e8s tr\u00e8s rapide ! Merci\nchargement\u2026\nR\u00e9pondre\nveronique\ndit\u00a0:\n10 ao\u00fbt 2025 \u00e0 22 h 06 min\nVraiment d\u00e9licieuse  tr\u00e8s rapide \u00e0 r\u00e9aliser merci\nchargement\u2026\nR\u00e9pondre\nveronique\ndit\u00a0:\n11 ao\u00fbt 2025 \u00e0 13 h 34 min\nj\u2019ai fais la cuisson en 2 temps ,1)aubergine huil\u00e9es un peu + herbes  10/15mn puis j\u2019ai mis le fromage au four pour gratiner\nchargement\u2026\nR\u00e9pondre\n4.62 from 71 votes (\n66 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

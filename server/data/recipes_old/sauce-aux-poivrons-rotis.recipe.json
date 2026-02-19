@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "title": "Sauce aux poivrons r\u00f4tis",
+    "description": "Voici une recette super simple : la sauce aux poivrons r\u00f4tis ! C'est le genre de plat que j'adore pr\u00e9parer. Ils ne demandent que tr\u00e8s peu de temps en cuisine.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "sauce",
+      "sauce pate",
+      "sauce poivron",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Plats en Sauce",
+      "Poivron"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Sauce-poivrons-rotis-2-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette sauce se conserve parfaitement bien dans un bocal au cong\u00e9lateur.",
+      "Peut se garder 3-4 mois au cong\u00e9lateur sans probl\u00e8me.",
+      "A servir avec les p\u00e2tes de votre choix, un peu de basilic, de parmesan etc \u2026"
+    ],
+    "slug": "sauce-aux-poivrons-rotis",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Sauce-poivrons-rotis-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/06/sauce-aux-poivrons-rotis/",
+    "image": "images/sauce-aux-poivrons-rotis.webp",
+    "createdAt": "2026-02-09T21:34:04.622039",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 167.3,
+      "protein": 1.8,
+      "fat": 13.0,
+      "carbs": 12.2,
+      "fiber": 2.4,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "red_peppers",
+      "name": "poivrons rouges",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "3-4 poivrons",
+      "optional": false,
+      "name_en": "Red bell peppers"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me v\u00e9g\u00e9tale ou animale",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cream"
+    }
+  ],
+  "tools": [
+    "mixeur",
+    "plat pour le four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "\u00c9mincer grossi\u00e8rement les poivrons, l'oignon et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "red_peppers",
+        "onion",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_vegetables_with_seasonings",
+      "action": "Mettre les l\u00e9gumes \u00e9minc\u00e9s dans un plat pour le four avec le thym, sel, poivre et l'huile d'olive. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_vegetables",
+        "thyme",
+        "salt",
+        "pepper",
+        "olive_oil"
+      ],
+      "produces": "seasoned_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_vegetables",
+      "action": "Enfourner pour 45min. Remuer \u00e0 mi-cuisson.",
+      "duration": "PT45M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_vegetables"
+      ],
+      "produces": "roasted_vegetables",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "blend_sauce",
+      "action": "Verser les l\u00e9gumes r\u00f4tis dans un mixeur avec la cr\u00e8me et mixer jusqu'\u00e0 obtenir une consistance cr\u00e9meuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_vegetables",
+        "cream"
+      ],
+      "produces": "roasted_pepper_sauce",
+      "requires": [],
+      "visualCue": "consistance cr\u00e9meuse"
+    },
+    {
+      "id": "serve_with_pasta",
+      "action": "Servir avec les p\u00e2tes de votre choix, un peu de parmesan (animal ou v\u00e9g\u00e9tal) et de basilic.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_pepper_sauce"
+      ],
+      "produces": "sauce_aux_poivrons_rotis_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sauce_aux_poivrons_rotis_servie",
+  "originalText": "Sauce aux poivrons r\u00f4tis - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n6 octobre 2022\nSauce aux poivrons r\u00f4tis\nAller \u00e0 la recette\nVoici une recette super simple : la sauce aux poivrons r\u00f4tis !\nC\u2019est le genre de plat que j\u2019adore pr\u00e9parer. Ils ne demandent que tr\u00e8s peu de temps en cuisine. Peuvent se pr\u00e9parer en quantit\u00e9 et supportent tr\u00e8s bien la cong\u00e9lation.\nC\u2019est donc une bonne fa\u00e7on de se lib\u00e9rer du temps et de l\u2019espace mental pour d\u2019autres choses. D\u2019ailleurs, je remarque que plus le temps passe et plus je suis une adepte de la cong\u00e9lation.\nJe cong\u00e8le un peu de tout !\nLes soupes et velout\u00e9 pour commencer, comme\nce velout\u00e9 de potimarron\n.\nJe cong\u00e8le \u00e9videmment\nle yarni\n! La base. J\u2019en ai tout le temps au cong\u00e9lateur pendant la saison. D\u2019ailleurs, j\u2019en stock un maximum en fin de saison !\nEt je cong\u00e8le les sauces \ud83d\ude42 J\u2019ai toujours des bocaux de\nma sauce tomate f\u00e9tiche\nau cong\u00e9lateur. Et j\u2019aime varier les plaisirs, notamment avec cette Sauce aux poivrons r\u00f4tis !\nLa m\u00e9thode fonctionne avec presque tous les l\u00e9gumes d\u2019\u00e9t\u00e9. Vous allez nous manquer !\nEn gros, on met les l\u00e9gumes dans un plat, hop au four avec un peu d\u2019huile et des herbes aromatiques.\nQuand tout est bien ramolli, on mixe. On peut ajouter un peu de cr\u00e8me comme ici. Ou un peu de sauce tomate. Ou rien si la consistance est bonne telle quelle. Et voil\u00e0 !\nA servir avec les p\u00e2tes de votre choix, un peu de basilic, de parmesan etc \u2026\nTrop bon ! Mega r\u00e9confortant, et rapide !\nSauce aux poivrons r\u00f4tis\n4.62\n/5 avec\n71\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n3-4\npoivrons rouges\nenv 400g\n1\noignon\n4\ngousses d\u2019ail\n3\nbranches de thym\nsel\npoivre\n3\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de cr\u00e8me v\u00e9g\u00e9tale ou animale\nInstructions\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\n\u00c9mincer grossi\u00e8rement les poivrons, l\u2019oignon et l\u2019ail.\nLes mettre dans un plat pour le four avec le thym, sel, poivre et l\u2019huile.\nBien m\u00e9langer et enfourner 45min. Remuer \u00e0 mi-cuisson.\nVerser les l\u00e9gumes dans un mixeur avec la cr\u00e8me et mixer jusqu\u2019\u00e0 obtenir une consistance cr\u00e9meuse.\nServir avec les p\u00e2tes de votre choix, un peu de parmesan (animal ou v\u00e9g\u00e9tal) et de basilic.\nCette sauce se conserve parfaitement bien dans un bocal au cong\u00e9lateur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nPoivron\nTags:\nsauce\n,\nsauce pate\n,\nsauce poivron\nCourgettes \u00e0 la sauce tomate \u00e0 la grecque\nCake aux pommes sans mati\u00e8re grasse\n2 thoughts on \u201cSauce aux poivrons r\u00f4tis\u201d\nrick\ndit\u00a0:\n19 novembre 2024 \u00e0 9 h 57 min\nBonjour,\nJe d\u00e9couvre votre monde culinaire : un grand merci pour le voyage.. Votre livre me fait de l\u2019oeil aussi !\nJe me demandais, pour cette sauce, combien de temps peut-on la conserver au cong\u00e9lateur svp =D\nMerci Belle journ\u00e9e Rick\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n24 novembre 2024 \u00e0 13 h 29 min\nMerci Rick ! Tu peux la garder 3-4 mois au congel sans prob ! Je pousse souvent jusqu\u2019\u00e0 7-8 mois et j\u2019ai jamais eu de mauvaise surprise !\nchargement\u2026\nR\u00e9pondre\n4.62 from 71 votes (\n70 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -26,6 +26,8 @@ python-slugify = "^8.0.4"
 requests = "^2.31.0"
 python-multipart = "^0.0.9"
 click = "^8.1.7"
+ingredient-parser-nlp = "^2.5.0"
+langfuse = "^3.14.1"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.0.0"

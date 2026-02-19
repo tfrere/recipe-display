@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Salade de concombre \u00e0 la cacahu\u00e8te",
+    "description": "Cette Salade de concombre \u00e0 la cacahu\u00e8te va tr\u00e8s rapidement devenir votre nouvelle fa\u00e7on pr\u00e9f\u00e9r\u00e9e de manger du concombre !",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT5M",
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "cacahu\u00e8te",
+      "Concombre",
+      "\u00c9t\u00e9",
+      "Printemps",
+      "Salades"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/05/Salade-concombre-cacahuete-2-of-4.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je pr\u00e9f\u00e8re largement cette fa\u00e7on de le pr\u00e9parer que celles d\u00e9j\u00e0 sal\u00e9es et grill\u00e9es du commerce.",
+      "Servez bien frais."
+    ],
+    "slug": "salade-de-concombre-a-la-cacahuete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/05/Salade-concombre-cacahuete-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/05/31/salade-de-concombre-a-la-cacahuete/",
+    "image": "images/salade-de-concombre-a-la-cacahuete.webp",
+    "createdAt": "2026-02-09T22:10:28.116018",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 5.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 320.6,
+      "protein": 11.0,
+      "fat": 28.1,
+      "carbs": 10.7,
+      "fiber": 4.9,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "chili_flakes",
+      "name": "flocons de piment",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili flakes"
+    },
+    {
+      "id": "peanut_butter",
+      "name": "beurre de cacahu\u00e8te",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "grosse",
+      "optional": false,
+      "name_en": "peanut butter"
+    },
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "green_onions",
+      "name": "c\u00e9bettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "ou oignons nouveaux",
+      "optional": false,
+      "name_en": "scallions"
+    },
+    {
+      "id": "raw_peanuts",
+      "name": "cacahu\u00e8tes crues",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "raw peanuts"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "mandoline"
+  ],
+  "steps": [
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "rice_vinegar",
+        "soy_sauce",
+        "sesame_oil",
+        "chili_flakes",
+        "peanut_butter"
+      ],
+      "produces": "peanut_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_cucumber",
+      "action": "\u00c9mincez le concombre en tr\u00e8s fines rondelles \u00e0 l'aide d'une mandoline ou d'un couteau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "cucumber"
+      ],
+      "produces": "sliced_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_green_onions",
+      "action": "Emincez les c\u00e9bettes (vert et blanc).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "green_onions"
+      ],
+      "produces": "sliced_green_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_peanuts",
+      "action": "Faites griller les cacahu\u00e8tes quelques minutes dans une po\u00eale chaude. Puis concassez-les.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "raw_peanuts"
+      ],
+      "produces": "toasted_crushed_peanuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_salad",
+      "action": "Assemblez tous les ingr\u00e9dients de la salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "sliced_cucumber",
+        "sliced_green_onions",
+        "toasted_crushed_peanuts",
+        "sesame_seeds",
+        "peanut_sauce"
+      ],
+      "produces": "assembled_salad",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez bien frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "assembled_salad"
+      ],
+      "produces": "salade_concombre_cacahuete",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_concombre_cacahuete",
+  "originalText": "Salade de concombre \u00e0 la cacahu\u00e8te - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 mai 2024\nSalade de concombre \u00e0 la cacahu\u00e8te\nCette Salade de concombre \u00e0 la cacahu\u00e8te va tr\u00e8s rapidement devenir votre nouvelle fa\u00e7on pr\u00e9f\u00e9r\u00e9e de manger du concombre !\nJ\u2019adore le concombre ! D\u00e8s que la saison commence, j\u2019en ai toujours au frigo ! C\u2019est synonyme de soleil et de fra\u00eecheur pour moi ! Et je me suis rendu compte qu\u2019il y a tr\u00e8s peu de recettes avec du concombre sur le blog. Il y en a 4 pour \u00eatre pr\u00e9cises.\nQue vous trouverez ici.\nDu coup, avec celles-ci, \u00e7a en fera 5. Mais assez avec ces calculs inutiles.\nJ\u2019ai plut\u00f4t l\u2019habitude de cuisiner les concombres en\ntzatziki\n. Ou dans des salades qui s\u2019inspirent plut\u00f4t des cuisines m\u00e9diterran\u00e9ennes.\nL\u00e0, j\u2019ai eu envie d\u2019un peu de changement. Et en ce moment, j\u2019explore de plus en plus les saveurs asiatiques.\nEt je peux vous assurer que cette Salade de concombre \u00e0 la cacahu\u00e8te est une sacr\u00e9e r\u00e9ussite.\nLa cacahu\u00e8te se marie parfaitement avec le concombre. Elle apporte de la richesse et de la gourmandise \u00e0 la sauce. Je l\u2019ai utilis\u00e9 sous forme de beurre de cacahu\u00e8te. Et en cacahu\u00e8tes crues, grill\u00e9es et concass\u00e9es. Je pr\u00e9f\u00e8re largement cette fa\u00e7on de le pr\u00e9parer que celles d\u00e9j\u00e0 sal\u00e9es et grill\u00e9es du commerce.\nVoil\u00e0 ! Sinon, concr\u00e8tement, comme toujours, tout se passe dans la sauce ! Vous trouverez tout le d\u00e9tail juste en dessous !\nSalade de concombre \u00e0 la cacahu\u00e8te\n4.53\n/5 avec\n115\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la sauce\n2\nc\u00e0s de vinaigre de riz\n2\nc\u00e0s de sauce soja\n1\nc\u00e0s d\u2019huile de s\u00e9same\n\u00bd\nc\u00e0c de flocons de piment\n1\ngrosse c\u00e0s de beurre de cacahu\u00e8te\nPour la salade\n1\nconcombre\n2\nc\u00e9bettes\nou oignons nouveaux\n2\nc\u00e0s de cacahu\u00e8tes crues\n2\nc\u00e0s de graines de s\u00e9same\nInstructions\nM\u00e9langez tous les ingr\u00e9dients de la sauce.\n\u00c9mincez le concombre en tr\u00e8s fines rondelles \u00e0 l\u2019aide d\u2019une mandoline ou d\u2019un couteau.\nEmincez les c\u00e9bettes (vert et blanc).\nFaites griller les cacahu\u00e8tes quelques minutes dans une po\u00eale chaude. Puis concassez-le.\nAssemblez tous les ingr\u00e9dients de la salade.\nServez bien frais.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nConcombre\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nSalades\nTags:\ncacahu\u00e8te\nComment faire du bacon v\u00e9g\u00e9tal super croustillant\nTarte fine asperges burrata\n4.53 from 115 votes (\n115 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

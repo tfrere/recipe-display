@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "title": "Buddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous",
+    "description": "Une grande salade \u00e9quilibr\u00e9e autour des pois chiches, avec des l\u00e9gumes estivaux frais, croquants et goutus.",
+    "servings": 2,
+    "prepTime": "PT30M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "buddha bowl",
+      "summer",
+      "salad",
+      "vegetarian",
+      "chickpeas",
+      "hummus"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Buddha-Bowl-de-la-mediterranee-1-of-4.jpg",
+    "nationality": "Mediterranean",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e pour MonBento.",
+      "Si vous avez envie de d\u00e9couvrir d'autres recettes estivales, je vous conseille la salade de past\u00e8que \u00e0 la feta, les roul\u00e9s de courgette aux 3 fromages et les lasagnes aux aubergines et mozzarella !"
+    ],
+    "slug": "buddha-bowl-mediterraneen-au-houmous",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Buddha-Bowl-de-la-mediterranee-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/07/26/buddha-bowl-mediterraneen-au-houmous/",
+    "image": "images/buddha-bowl-mediterraneen-au-houmous.webp",
+    "createdAt": "2026-02-09T20:28:26.304424",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 985.5,
+      "protein": 44.8,
+      "fat": 29.8,
+      "carbs": 148.3,
+      "fiber": 43.1,
+      "confidence": "high",
+      "resolvedIngredients": 14,
+      "matchedIngredients": 15,
+      "totalIngredients": 17,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "dried_chickpeas_hummus",
+      "name": "pois chiches secs (pour le houmous)",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried chickpeas"
+    },
+    {
+      "id": "canned_chickpeas_hummus",
+      "name": "pois chiches en conserve (pour le houmous)",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned chickpeas"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "petite",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini complet",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    },
+    {
+      "id": "lemon_juice_hummus",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "other",
+      "preparation": null,
+      "notes": "un peu",
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "dried_chickpeas_salad",
+      "name": "pois chiches secs (pour la salade)",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried chickpeas"
+    },
+    {
+      "id": "canned_chickpeas_salad",
+      "name": "pois chiches en conserve (pour la salade)",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned chickpeas"
+    },
+    {
+      "id": "bulgur",
+      "name": "boulgour",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "poids cru",
+      "notes": null,
+      "optional": false,
+      "name_en": "bulgur"
+    },
+    {
+      "id": "cherry_tomatoes",
+      "name": "tomates cerises",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "1 petit",
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "\u00bd oignon",
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "olives",
+      "name": "olives noires ou vertes",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black or green olives"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "lemon_juice_dressing",
+      "name": "citron, le jus",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Blender or food processor"
+  ],
+  "steps": [
+    {
+      "id": "soak_chickpeas",
+      "action": "Si vous utilisez des pois chiches secs, mettez-les \u00e0 tremper la veille. Jetez l'eau et rincez-les.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "houmous",
+      "uses": [
+        "dried_chickpeas_hummus",
+        "dried_chickpeas_salad"
+      ],
+      "produces": "soaked_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_chickpeas",
+      "action": "Puis faites-les cuire 45min dans une cocotte avec un grand volume d'eau (ou 2h dans une casserole normale).",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "houmous",
+      "uses": [
+        "soaked_chickpeas"
+      ],
+      "produces": "cooked_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_hummus",
+      "action": "Mixez tous les ingr\u00e9dients du houmous. Ajoutez un peu d'eau pour une consistance plus liquide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "houmous",
+      "uses": [
+        "cooked_chickpeas",
+        "canned_chickpeas_hummus",
+        "garlic",
+        "tahini",
+        "lemon_juice_hummus",
+        "sesame_oil",
+        "water"
+      ],
+      "produces": "hummus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_hummus",
+      "action": "R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "houmous",
+      "uses": [
+        "hummus"
+      ],
+      "produces": "reserved_hummus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_bulgur",
+      "action": "Faites cuire le boulgour suivant les instructions du paquet. Egouttez et laissez-le refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "salade",
+      "uses": [
+        "bulgur"
+      ],
+      "produces": "cooked_bulgur",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_tomatoes",
+      "action": "Pendant ce temps, coupez les tomates cerises en deux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "cherry_tomatoes"
+      ],
+      "produces": "halved_tomatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_cucumber",
+      "action": "Epluchez et coupez le concombre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "cucumber"
+      ],
+      "produces": "cut_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onion",
+      "action": "\u00c9mincez finement l'oignon rouge.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "red_onion"
+      ],
+      "produces": "sliced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crumble_feta",
+      "action": "\u00c9miettez la feta.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "feta"
+      ],
+      "produces": "crumbled_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_salad",
+      "action": "D\u00e9posez tous les ingr\u00e9dients dans votre bol et d\u00e9posez une g\u00e9n\u00e9reuse cuill\u00e8re de houmous par-dessus avec le jus d'un citron, un filet d'huile d'olive et quelques graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "cooked_bulgur",
+        "halved_tomatoes",
+        "cut_cucumber",
+        "sliced_onion",
+        "crumbled_feta",
+        "canned_chickpeas_salad",
+        "olives",
+        "reserved_hummus",
+        "lemon_juice_dressing",
+        "olive_oil",
+        "sesame_seeds"
+      ],
+      "produces": "buddha_bowl",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "buddha_bowl",
+  "originalText": "Buddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 juillet 2021\nBuddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous\nQui est tent\u00e9 par un peu de soleil dans son assiette avec ce Buddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous ?\nVous connaissez ce concept de buddha bowl ? C\u2019est une grande salade, dans laquelle on retrouve un \u00e9quilibre parfait. Et surtout un apport de prot\u00e9ines v\u00e9g\u00e9tales. Ici, j\u2019ai construit le buddha bowl autour des pois chiches. On les retrouve en\nhoumous\net dans le bol lui-m\u00eame. J\u2019ai ajout\u00e9 des l\u00e9gumes estivaux, \u00e0 la fois frais, croquants et goutus !\nVous mettez quoi dans vos buddha bowls vous ?\nSi vous avez envie de d\u00e9couvrir d\u2019autres recettes estivales, je vous conseille la\nsalade de past\u00e8que \u00e0 la feta\n, les\nroul\u00e9s de courgette aux 3 fromages\net les\nlasagnes aux aubergines et mozzarella\n!\nNe laissons pas la pluie nous d\u00e9courager ! C\u2019est l\u2019\u00e9t\u00e9 ! Et m\u00eame si le soleil ne brille pas dans le ciel, il a le droit \u00e0 sa place dans notre assiette !\nEt c\u2019est exactement le r\u00f4le de ce Buddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous que j\u2019ai cr\u00e9\u00e9 pour\nMonBento\n!\nBuddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous\nNatacha\n4.57\n/5 avec\n81\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le houmous\n75\ng\nde pois chiches secs\n150g de pois chiches en conserve\n1\npetite gousse d\u2019ail\n1\nc\u00e0c de tahini complet\n1\nc\u00e0s de jus de citron\n1\nc\u00e0c d\u2019huile de s\u00e9same\nun peu d\u2019eau\nPour la salade\n75\ng\nde pois chiches secs\n150g de pois chiches en conserve\n140\ng\nde boulgour\npoids cru\n250\ng\nde tomates cerises\n200\ng\nde concombre\n1 petit\n80\ng\nd\u2019oignon rouge\n\u00bd oignon\n1\nc\u00e0s d\u2019olives noires ou vertes\n100\ng\nde f\u00eata\nle jus d\u2019un citron\nun filet d\u2019huile d\u2019olive\n1\nc\u00e0s de graines de s\u00e9same\nInstructions\nPour le houmous\nSi vous utilisez des pois chiches secs, mettez-les \u00e0 tremper la veille. Jetez l\u2019eau et rincez-les. Puis faites-les cuire 45min dans une cocotte avec un grand volume d\u2019eau (ou 2h dans une casserole normale).\nMixez tous les ingr\u00e9dients du houmous. Ajoutez un peu d\u2019eau pour une consistance plus liquide.\nR\u00e9servez.\nPour la salade\nFaites cuire le boulgour suivant les instructions du paquet. Egouttez et laissez-le refroidir.\nPendant ce temps, coupez les tomates cerises en deux.\nEpluchez et coupez le concombre.\n\u00c9mincez finement l\u2019oignon rouge.\n\u00c9miettez la feta.\nD\u00e9posez tous les ingr\u00e9dients dans votre bol et d\u00e9posez une g\u00e9n\u00e9reuse cuill\u00e8re de houmous par-dessus avec le jus d\u2019un citron, un filet d\u2019huile d\u2019olive et quelques graines de s\u00e9same.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nbuddha bowl\n,\nbuddha bowl m\u00e9diterraneen\n,\nbuddhabowl \u00e9t\u00e9\n,\nrecette buddha bowl\n,\nsalade \u00e9t\u00e9\nSalade Past\u00e8que Roquette et Feta\nRamen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d\u2019inspiration Japonaise)\n4.57 from 81 votes (\n81 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

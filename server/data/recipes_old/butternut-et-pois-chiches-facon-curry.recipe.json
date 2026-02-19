@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "title": "Butternut et pois chiches fa\u00e7on Curry",
+    "description": "Ce plat de Butternut et pois chiches fa\u00e7on Curry est la recette id\u00e9ale pour sublimer les l\u00e9gumes de saison ! C'est un plat \u00e9quilibr\u00e9, riche en fibres, en prot\u00e9ines v\u00e9g\u00e9tales gr\u00e2ce aux pois chiches, et en vitamines et min\u00e9raux essentiels.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT50M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "automne",
+      "hiver",
+      "courge",
+      "vegan",
+      "curry",
+      "pois chiches"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/butternut-curry-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Accompagn\u00e9 d'un riz ou d'un pain naan, il plaira \u00e0 coup s\u00fbr \u00e0 tout le monde.",
+      "Pour ceux qui aiment les plats relev\u00e9s, je vous conseille d'ajouter du piment !",
+      "Vous pouvez pr\u00e9parer ce plat \u00e0 l'avance. Il se conserve plusieurs jours au frais et se cong\u00e8le tr\u00e8s bien."
+    ],
+    "slug": "butternut-et-pois-chiches-facon-curry",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/butternut-curry-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/12/02/butternut-et-de-pois-chiches-facon-curry/",
+    "image": "images/butternut-et-pois-chiches-facon-curry.jpg",
+    "createdAt": "2026-02-09T22:23:03.949967",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 69.0,
+    "totalCookingTime": 24.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 229.5,
+      "protein": 5.5,
+      "fat": 11.7,
+      "carbs": 28.4,
+      "fiber": 5.7,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "butternut",
+      "name": "butternut",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Butternut squash"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cloves",
+      "name": "clous de girofle",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "mustard_seeds",
+      "name": "graines de moutarde",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mustard seeds"
+    },
+    {
+      "id": "star_anise",
+      "name": "badianes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Star anise"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "fenugreek",
+      "name": "fenugrec",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fenugreek"
+    },
+    {
+      "id": "chili_powder",
+      "name": "piment en poudre ou en flocons",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili powder or flakes"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "coconut_milk",
+      "name": "lait de coco",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Coconut milk"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "chickpeas",
+      "name": "pois chiche en conserve ou d\u00e9j\u00e0 cuits",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Canned or cooked chickpeas"
+    }
+  ],
+  "tools": [
+    "mixeur",
+    "casserole"
+  ],
+  "steps": [
+    {
+      "id": "prepare_vegetables",
+      "action": "Pelez les carottes et la butternut, puis coupez-les en gros morceaux.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butternut",
+        "carrots"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_paste",
+      "action": "Passez l'oignon, le gingembre et l'ail dans un mixeur pour obtenir une p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "ginger",
+        "garlic"
+      ],
+      "produces": "onion_ginger_garlic_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_spices",
+      "action": "Faites chauffer une casserole avec 3 c\u00e0s d'huile v\u00e9g\u00e9tale et d\u00e9posez-y la badiane, les clous de girofle et les graines de moutarde. Ajoutez la p\u00e2te d'oignon, gingembre, ail et toutes les \u00e9pices.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_oil",
+        "star_anise",
+        "cloves",
+        "mustard_seeds",
+        "onion_ginger_garlic_paste",
+        "cumin",
+        "turmeric",
+        "fenugreek",
+        "chili_powder"
+      ],
+      "produces": "spice_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_spice_base",
+      "action": "Faites revenir le tout pendant 5 minutes \u00e0 feu moyen.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spice_base"
+      ],
+      "produces": "sauteed_spice_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_vegetables",
+      "action": "Ajoutez la courge et la carotte, puis versez le lait de coco et l'eau. M\u00e9langez bien et couvrez. Laissez mijoter jusqu'\u00e0 ce que les l\u00e9gumes soient tendres, environ 35 minutes.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_spice_base",
+        "chopped_vegetables",
+        "coconut_milk",
+        "water"
+      ],
+      "produces": "simmered_curry",
+      "requires": [],
+      "visualCue": "l\u00e9gumes tendres"
+    },
+    {
+      "id": "add_chickpeas",
+      "action": "Rincez et \u00e9gouttez les pois chiches, puis ajoutez-les au curry. Laissez mijoter encore une dizaine de minutes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "chickpeas",
+        "simmered_curry"
+      ],
+      "produces": "curry_with_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez avec du riz et de la coriandre fra\u00eeche.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "curry_with_chickpeas"
+      ],
+      "produces": "butternut_pois_chiches_curry",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "butternut_pois_chiches_curry",
+  "originalText": "Butternut et pois chiches fa\u00e7on Curry - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 d\u00e9cembre 2024\nButternut et pois chiches fa\u00e7on Curry\nCe plat de Butternut et pois chiches fa\u00e7on Curry est la recette id\u00e9ale pour sublimer les l\u00e9gumes de saison !\nAvec le froid qui s\u2019installe, on a juste envie de manger des plats chauds et r\u00e9confortants. Et si en plus, ils sont pleins de saveurs, la vie est belle !\nCe curry est facile \u00e0 pr\u00e9parer. Il marie le fondant de la butternut aux des pois chiches, le tout relev\u00e9 par un m\u00e9lange d\u2019\u00e9pices irr\u00e9sistible.C\u2019est un plat \u00e9quilibr\u00e9, riche en fibres, en prot\u00e9ines v\u00e9g\u00e9tales gr\u00e2ce aux pois chiches, et en vitamines et min\u00e9raux essentiels apport\u00e9s par les l\u00e9gumes et les \u00e9pices.\nAccompagn\u00e9 d\u2019un riz ou d\u2019un pain naan, il plaira \u00e0 coup s\u00fbr \u00e0 tout le monde. C\u2019est parfait pour un d\u00eener familial ou un repas entre amis.\nEn plus, il est vegan !\nLes \u00e9pices comme le cumin, le curcuma et la badiane donnent une profondeur incroyable \u00e0 ce curry !Et le lait de coco apporte une onctuosit\u00e9 et une douceur qui \u00e9quilibre les \u00e9pices. Pour ceux qui aiment les plats relev\u00e9s, je vous conseille d\u2019ajouter du piment !\nVous pouvez pr\u00e9parer ce plat de Butternut et pois chiches fa\u00e7on Curry \u00e0 l\u2019avance. Il se conserve plusieurs jours au frais et se cong\u00e8le tr\u00e8s bien.\nPour d\u2019autres id\u00e9es pour cuisiner les butternuts, rendez-vous ici !\nButternut et pois chiches fa\u00e7on Curry\n4.50\n/5 avec\n63\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde butternut\n2\ncarottes\n1\noignon\n10\ng\nde gingembre frais\n4\ngousses d\u2019ail\n2\nclous de girofle\n\u00bd\nc\u00e0c de moutarde\n2\nbadianes\n1\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de curcuma\n1\nc\u00e0c de fenugrec\nPiment en poudre ou en flocons\noptionnel, selon le go\u00fbt\n3\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale\n400\nml\nde lait de coco\n200\nml\nd\u2019eau\n250\ng\nde pois chiche en conserve ou d\u00e9j\u00e0 cuits\nInstructions\nPelez les carottes et la butternut, puis coupez-les en gros morceaux.\nPassez l\u2019oignon, le gingembre et l\u2019ail dans un mixeur pour obtenir une p\u00e2te.\nFaites chauffer une casserole avec 3 c\u00e0s d\u2019huile v\u00e9g\u00e9tale et d\u00e9posez-y la badiane, les clous de girofle et les graines de moutarde. Ajoutez la p\u00e2te d\u2019oignon, gingembre, ail et toutes les \u00e9pices.\nFaites revenir le tout pendant 5 minutes \u00e0 feu moyen.\nAjoutez la courge et la carotte, puis versez le lait de coco et l\u2019eau. M\u00e9langez bien et couvrez. Laissez mijoter jusqu\u2019\u00e0 ce que les l\u00e9gumes soient tendres, environ 35 minutes.\nRincez et \u00e9gouttez les pois chiches, puis ajoutez-les au curry. Laissez mijoter encore une dizaine de minutes.\nServez avec du riz et de la coriandre fra\u00eeche.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourge\n,\nHiver\n,\nPlats en Sauce\nChoux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42\nPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\n2 thoughts on \u201cButternut et pois chiches fa\u00e7on Curry\u201d\nMonia\ndit\u00a0:\n4 d\u00e9cembre 2024 \u00e0 16 h 40 min\nSucculent !!\nJe n\u2019avais pas de butternut, j\u2019ai remplac\u00e9 par du potimarron et de la patate douce.\nchargement\u2026\nR\u00e9pondre\nPatricia\ndit\u00a0:\n10 d\u00e9cembre 2024 \u00e0 19 h 04 min\nMerci pour cette recette test\u00e9e et valid\u00e9e cette semaine, nous nous sommes r\u00e9gal\u00e9s !\nEncore meilleure r\u00e9chauff\u00e9e !!\nchargement\u2026\nR\u00e9pondre\n4.50 from 63 votes (\n61 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 24.0
+}

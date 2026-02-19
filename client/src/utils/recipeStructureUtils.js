@@ -1,11 +1,11 @@
 /**
  * Formate un ingrédient avec sa quantité et son état
  */
-const formatIngredient = (ingredient, ingredientData) => {
-  const amount = ingredientData.amount;
+const formatIngredient = (ingredient, data) => {
+  const amount = data.amount;
   const unit = ingredient.unit;
-  const state = ingredientData.state ? `, ${ingredientData.state}` : "";
-  return `- ${amount !== undefined ? amount + " " : ""}${unit || ""}${
+  const state = data.state ? `, ${data.state}` : "";
+  return `- ${amount != null ? amount + " " : ""}${unit || ""}${
     unit ? " " : ""
   }${ingredient.name}${state}`;
 };
@@ -23,22 +23,20 @@ const formatStep = (step, index) => {
  * Formate les ingrédients d'une sous-recette
  */
 export const formatSubRecipeIngredients = (subRecipe, recipe) => {
-  if (!subRecipe.ingredients || !recipe.ingredientsList) {
-    console.log("Missing ingredients:", { subRecipe, recipe });
+  if (!subRecipe.ingredients || !recipe.ingredients) {
     return [];
   }
 
-  return Object.entries(subRecipe.ingredients)
-    .map(([ingredientId, data]) => {
-      const ingredient = recipe.ingredientsList.find(
-        (ing) => ing.id === ingredientId
-      );
+  // Build ingredients map for quick lookup
+  const ingredientsMap = {};
+  recipe.ingredients.forEach((ing) => {
+    ingredientsMap[ing.id] = ing;
+  });
+
+  return (subRecipe.ingredients || [])
+    .map((data) => {
+      const ingredient = ingredientsMap[data.ref];
       if (!ingredient) {
-        console.log("Missing ingredient:", {
-          ingredientId,
-          data,
-          recipeIngredients: recipe.ingredientsList,
-        });
         return null;
       }
       return formatIngredient(ingredient, data);
@@ -52,7 +50,7 @@ export const formatSubRecipeIngredients = (subRecipe, recipe) => {
 export const formatSubRecipeSteps = (subRecipe) => {
   if (!subRecipe.steps) return [];
 
-  return Object.values(subRecipe.steps)
+  return subRecipe.steps
     .map((step, index) => formatStep(step, index))
     .filter(Boolean);
 };
@@ -77,7 +75,7 @@ export const formatSubRecipe = (subRecipe, recipe) => {
 export const getFormattedSubRecipes = (recipe) => {
   if (!recipe?.subRecipes) return [];
 
-  return Object.entries(recipe.subRecipes).map(([id, subRecipe]) =>
+  return recipe.subRecipes.map((subRecipe) =>
     formatSubRecipe(subRecipe, recipe)
   );
 };

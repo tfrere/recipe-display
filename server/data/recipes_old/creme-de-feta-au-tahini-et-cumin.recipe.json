@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "title": "Cr\u00e8me de Feta au Tahini et Cumin",
+    "description": "Plus qu\u2019un simple dip, c\u2019est une v\u00e9ritable invitation au voyage pour vos papilles. Parfaite pour un ap\u00e9ritif convivial avec des b\u00e2tonnets de l\u00e9gumes.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "dip",
+      "tartinade",
+      "v\u00e9g\u00e9tarien",
+      "ap\u00e9ritif",
+      "feta",
+      "tahini"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/creme-de-feta-au-tahini-et-cumin.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": null,
+    "notes": [
+      "Astuce : vous pouvez opter pour un tahini semi-complet! Sa saveur intense et l\u00e9g\u00e8rement torr\u00e9fi\u00e9e se marie parfaitement avec la feta, donnant une cr\u00e8me \u00e9quilibr\u00e9e, ni trop am\u00e8re, ni trop sal\u00e9e.",
+      "Servir avec de l'huile d'olive de qualit\u00e9, du cumin, paprika et origan grec."
+    ],
+    "slug": "creme-de-feta-au-tahini-et-cumin",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/creme-de-feta-au-tahini-et-cumin.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/01/30/creme-de-feta-au-tahini-et-cumin/",
+    "image": "images/creme-de-feta-au-tahini-et-cumin.webp",
+    "createdAt": "2026-02-09T22:29:57.062114",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 1056.2,
+      "protein": 44.2,
+      "fat": 86.2,
+      "carbs": 26.9,
+      "fiber": 6.7,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini semi complet",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "jus d'un citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "v\u00e9g\u00e9tal ou pas",
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "mint",
+      "name": "menthe",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": "s\u00e9ch\u00e9e ou fra\u00eeche",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "cumin_powder",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "cumin_seeds",
+      "name": "graines de cumin",
+      "quantity": 0.25,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "combine_ingredients",
+      "action": "Mettre tous les ingr\u00e9dients dans un mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta",
+        "tahini",
+        "garlic",
+        "lemon_juice",
+        "milk",
+        "mint",
+        "cumin_powder",
+        "cumin_seeds"
+      ],
+      "produces": "combined_ingredients",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend",
+      "action": "Mixer jusqu'\u00e0 obtenir une consistance qui vous pla\u00eet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_ingredients"
+      ],
+      "produces": "blended_cream",
+      "requires": [],
+      "visualCue": "consistance qui vous pla\u00eet"
+    },
+    {
+      "id": "taste_adjust",
+      "action": "Go\u00fbter et ajuster l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blended_cream"
+      ],
+      "produces": "creme_de_feta_tahini_cumin",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creme_de_feta_tahini_cumin",
+  "originalText": "Cr\u00e8me de Feta au Tahini et Cumin\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 janvier 2025\nCr\u00e8me de Feta au Tahini et Cumin : Le dip qui r\u00e9invente vos ap\u00e9ros\nSi vous aimez les saveurs riches et cr\u00e9meuses, vous allez adorer cette recette de\ncr\u00e8me de feta au tahini et cumin\n. Plus qu\u2019un simple\ndip\n, c\u2019est une v\u00e9ritable invitation au voyage pour vos\npapilles\n. Parfaite pour un\nap\u00e9ritif\nconvivial avec des b\u00e2tonnets de l\u00e9gumes, cette\ncr\u00e8me\nfait aussi des merveilles en\ntartinade\nsur du\npain grill\u00e9\nou\ncomme base gourmande\npour vos\nsandwichs\net\nwraps maison.\nAstuce : vous pouvez opter pour un\ntahini semi-complet\n! Sa saveur intense et l\u00e9g\u00e8rement torr\u00e9fi\u00e9e se marie parfaitement avec la\nfeta\n, donnant une\ncr\u00e8me\n\u00e9quilibr\u00e9e, ni trop am\u00e8re, ni trop sal\u00e9e. Alors, pr\u00eat.es \u00e0 vous lancer dans cette\nrecette\nultra-simple et pleine de caract\u00e8re ?\nTable des mati\u00e8res\n1\nLe Tahini semi-complet : un tr\u00e9sor de saveurs et de bienfaits\n2\nCr\u00e8me de feta tahini et cumin\n3\nLa Feta : un fromage au caract\u00e8re unique\nLe Tahini semi-complet : un tr\u00e9sor de saveurs et de bienfaits\nLe tahini semi-complet, c\u2019est l\u2019ingr\u00e9dient chouchou des amateurs de cuisine saine et gourmande. Fabriqu\u00e9 \u00e0 partir de graines de s\u00e9same l\u00e9g\u00e8rement d\u00e9cortiqu\u00e9es, il a ce petit quelque chose en plus : un go\u00fbt riche et complexe, avec une l\u00e9g\u00e8re note torr\u00e9fi\u00e9e. Contrairement au tahini \u00ab\u00a0blanc\u00a0\u00bb, il conserve une partie de la cosse du s\u00e9same, ce qui lui donne une saveur moins am\u00e8re et plus \u00e9quilibr\u00e9e. Dans cette recette de cr\u00e8me de feta, le tahini semi-complet est la star. Il adoucit la feta, apporte une texture onctueuse et une profondeur vraiment irr\u00e9sistible. En prime, c\u2019est un alli\u00e9 sant\u00e9, bourr\u00e9 de calcium, de magn\u00e9sium et d\u2019acides gras essentiels. Bref, il allie go\u00fbt et bienfaits sans jamais sacrifier le plaisir !\nCr\u00e8me de feta tahini et cumin\n4.55\n/5 avec\n42\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nBol\nIngr\u00e9dients\n1x\n2x\n3x\n200\ng\nde feta\n70\ng\nde tahini semi complet\n1\ngousse d\u2019ail\nle jus d\u2019un citron\n60\nml\nde lait\nv\u00e9g\u00e9tal ou pas\n1\nc\u00e0c de menthe s\u00e9ch\u00e9e ou fra\u00eeche\n\u00bd\nc\u00e0c de cumin en poudre\n\u00bc\nc\u00e0s de graines de cumin\nInstructions\nMettre tous les ingr\u00e9dients dans un mixeur et mixer jusqu\u2019\u00e0 obtenir une consistance qui vous pla\u00eet. Go\u00fbter et ajuster l\u2019assaisonnement.\nServir avec de l\u2019huile d\u2019olive de qualit\u00e9, du cumin, paprika et origan grec.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa Feta : un fromage au caract\u00e8re unique\nAh, la feta ! Ce fromage venu tout droit de Gr\u00e8ce, avec son go\u00fbt sal\u00e9 et l\u00e9g\u00e8rement acidul\u00e9, est un vrai must en cuisine. Sa texture cr\u00e9meuse et friable en fait l\u2019ingr\u00e9dient parfait pour relever n\u2019importe quelle recette, que ce soit en tartinade, en salade ou m\u00eame dans des wraps. En plus, elle est bourr\u00e9e de bonnes choses comme du calcium et des prot\u00e9ines. Bref, la feta, c\u2019est la petite touche gourmande qui ne d\u00e9\u00e7oit jamais !\nD\u00e9couvrez nos autres recettes de cr\u00e8mes de feta et laissez-vous s\u00e9duire par des variations originales et savoureuses qui apporteront une touche cr\u00e9ative \u00e0 vos ap\u00e9ros, tartines et plats v\u00e9g\u00e9tariens ! Il y en a pour tous les go\u00fbts :\ncr\u00e8me de feta, tahini et patates douces\n,\ncr\u00e8me de feta \u00e0 la menthe et pistache\n,\ncr\u00e8me de feta piment\u00e9e\net\ncr\u00e8me de feta \u00e0 la betterave\n!\nLa cr\u00e8me de feta au tahini et cumin est bien plus qu\u2019une simple recette. C\u2019est une invitation \u00e0 sublimer vos ap\u00e9ros, vos sandwichs et vos moments gourmands avec une touche de simplicit\u00e9 et d\u2019originalit\u00e9. Facile \u00e0 pr\u00e9parer, pleine de saveurs et parfaitement \u00e9quilibr\u00e9e, elle deviendra vite un incontournable dans votre cuisine v\u00e9g\u00e9tarienne. Alors, qu\u2019attendez-vous pour la tester ? Vos b\u00e2tonnets de l\u00e9gumes, tartines et wraps n\u2019ont jamais \u00e9t\u00e9 aussi impatients !\nEnvie de plus d\u2019id\u00e9es pour vos ap\u00e9ros gourmands ? D\u00e9couvrez toutes nos\nrecettes sal\u00e9es d\u00e9di\u00e9es aux ap\u00e9ros\n! Des dips, tartinades et bien plus encore pour ravir vos convives.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAp\u00e9ros\n,\nNos recettes V\u00e9ganes\nP\u00e2t\u00e9 aux champignons et noix : l\u2019alternative v\u00e9g\u00e9tarienne gourmande au p\u00e2t\u00e9 traditionnel\nDukkah maison : le m\u00e9lange \u00e9pic\u00e9 \u00e9gyptien pour sublimer vos plats v\u00e9g\u00e9tariens\n4.55 from 42 votes (\n42 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

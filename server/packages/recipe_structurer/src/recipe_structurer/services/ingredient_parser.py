@@ -1,53 +1,41 @@
 """
 Ingredient Parser Service — Pass 1.5 of the pipeline.
 
-Parses ingredient lines from Pass 1 preformatted output into IngredientV2 objects.
+Parses ingredient lines from Pass 1 preformatted output into Ingredient objects.
 Uses a combination of:
-  - Regex to extract annotations ([english_name], {category}, (optionnel))
-  - NER model (edwardjross/xlm-roberta-base-finetuned-recipe-all) to parse qty/unit/name/state
-  - Unit normalization to canonical short forms (g, ml, tbsp, tsp, etc.)
+  - Regex to extract annotations («clean_name», [full english line], {category}, (optionnel))
+  - strangetom/ingredient-parser (CRF model) to parse qty/unit/name from the English translation
   - Fuzzy matching for ID correction (Levenshtein distance)
+
+The LLM (Pass 1) translates each ingredient line to English.
+The CRF parser deterministically extracts structured data from that English line.
+Each component does what it does best: LLM for translation, CRF for structure.
 """
 
 import logging
 import re
-from collections import defaultdict
+from fractions import Fraction
 from typing import Optional
 
-from ..models.recipe_v2 import IngredientV2
+from ..models.recipe import Ingredient
 
 logger = logging.getLogger(__name__)
 
 # ═══════════════════════════════════════════════════════════════════
-# NER MODEL (lazy-loaded singleton)
+# CRF PARSER (lazy-loaded singleton)
 # ═══════════════════════════════════════════════════════════════════
 
-_ner_pipeline = None
-
-NER_MODEL_NAME = "edwardjross/xlm-roberta-base-finetuned-recipe-all"
+_parser_loaded = False
 
 
-def get_ner_pipeline():
-    """Lazy-load the NER model (downloaded once, then cached by HuggingFace)."""
-    global _ner_pipeline
-    if _ner_pipeline is None:
-        logger.info(f"Loading NER model: {NER_MODEL_NAME}")
-        from transformers import (
-            AutoModelForTokenClassification,
-            AutoTokenizer,
-            pipeline,
-        )
-
-        tokenizer = AutoTokenizer.from_pretrained(NER_MODEL_NAME)
-        model = AutoModelForTokenClassification.from_pretrained(NER_MODEL_NAME)
-        _ner_pipeline = pipeline(
-            "token-classification",
-            model=model,
-            tokenizer=tokenizer,
-            aggregation_strategy="simple",
-        )
-        logger.info("NER model loaded successfully")
-    return _ner_pipeline
+def _ensure_parser():
+    """Ensure the ingredient-parser-nlp CRF model is loaded (happens on first import)."""
+    global _parser_loaded
+    if not _parser_loaded:
+        logger.info("Loading ingredient-parser-nlp (CRF model)...")
+        from ingredient_parser import parse_ingredient  # noqa: F401
+        _parser_loaded = True
+        logger.info("ingredient-parser-nlp loaded successfully")
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -62,66 +50,31 @@ UNIT_NORMALIZE = {
     "liters": "l", "liter": "l", "litres": "l", "litre": "l",
     "milliliters": "ml", "milliliter": "ml",
     "centiliters": "cl", "centiliter": "cl",
-    # Poids
+    "deciliters": "dl", "deciliter": "dl",
+    # Weights
     "grams": "g", "gram": "g",
     "kilograms": "kg", "kilogram": "kg",
     "pounds": "lb", "pound": "lb",
     "ounces": "oz", "ounce": "oz",
-    # Comptables (singulariser)
+    # Countable (singularize)
     "cloves": "clove", "sprigs": "sprig", "leaves": "leaf",
     "slices": "slice", "pieces": "piece", "bunches": "bunch",
     "pinches": "pinch", "stalks": "stalk", "heads": "head",
+    "handfuls": "handful", "cans": "can",
+    "small handful": "handful", "small handfuls": "handful",
+    "large handful": "handful", "large handfuls": "handful",
 }
 
 
-def normalize_unit(raw_unit: str) -> Optional[str]:
-    """Normalize a NER unit to its canonical short form."""
-    if not raw_unit:
+def normalize_unit(raw_unit) -> Optional[str]:
+    """Normalize a CRF unit to its canonical short form."""
+    if raw_unit is None:
         return None
-    clean = raw_unit.strip().lower()
+    # The CRF parser may return pint Unit objects — convert to string
+    clean = str(raw_unit).strip().lower()
+    if not clean:
+        return None
     return UNIT_NORMALIZE.get(clean, clean)
-
-
-# ═══════════════════════════════════════════════════════════════════
-# QUANTITY PARSING
-# ═══════════════════════════════════════════════════════════════════
-
-_FRACTION_MAP = {"½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 0.333, "⅔": 0.667}
-
-
-def parse_quantity(qty_str: str) -> Optional[float]:
-    """Convert a quantity string to float."""
-    if not qty_str:
-        return None
-
-    qty_str = qty_str.strip()
-
-    # Unicode fractions
-    for frac, val in _FRACTION_MAP.items():
-        if frac in qty_str:
-            rest = qty_str.replace(frac, "").strip()
-            return float(rest) + val if rest else val
-
-    # Text fractions: "1/2", "3/4"
-    if "/" in qty_str:
-        parts = qty_str.split()
-        total = 0.0
-        for part in parts:
-            if "/" in part:
-                num, den = part.split("/")
-                total += float(num) / float(den)
-            else:
-                total += float(part)
-        return total
-
-    # Range: "1-2" → take the first
-    if "-" in qty_str:
-        return float(qty_str.split("-")[0])
-
-    try:
-        return float(qty_str)
-    except ValueError:
-        return None
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -176,52 +129,22 @@ def fuzzy_match_id(
 
 
 # ═══════════════════════════════════════════════════════════════════
-# REGEX FOR EXTRACTING ANNOTATIONS FROM PASS 1 OUTPUT
-# ═══════════════════════════════════════════════════════════════════
-
-# FR→EN unit translation for building the English NER input
-_UNIT_FR_TO_EN = {
-    "cuillères à soupe": "tablespoons", "cuillère à soupe": "tablespoon",
-    "cuillères à café": "teaspoons", "cuillère à café": "teaspoon",
-    "gousses": "cloves", "gousse": "clove",
-    "branches": "sprigs", "branche": "sprig",
-    "brins": "sprigs", "brin": "sprig",
-    "feuilles": "leaves", "feuille": "leaf",
-    "tranches": "slices", "tranche": "slice",
-}
-
-# Regex to extract qty+unit from the beginning of the cleaned line
-# Long/composite units FIRST, then short units with word boundary
-_QTY_UNIT_RE = re.compile(
-    r"^([\d½¼¾⅓⅔/.,\-\s]+)\s*("
-    r"cuillères?\s+à\s+(?:soupe|café)|"
-    r"gousses?|branches?|brins?|feuilles?|tranches?|"
-    r"tablespoons?|teaspoons?|pounds?|ounces?|cloves?|"
-    r"cups?|pieces?|pinch|bunch|sprigs?|"
-    r"kg\b|ml\b|cl\b|lb\b|oz\b|tbsp\b|tsp\b|"
-    r"g\b|l\b"
-    r")\s+",
-    re.IGNORECASE,
-)
-
-# Quantity only (countable ingredients: "4 carottes", "2 eggs")
-_QTY_ONLY_RE = re.compile(r"^([\d½¼¾⅓⅔/.,\-]+)\s+", re.IGNORECASE)
-
-
-# ═══════════════════════════════════════════════════════════════════
 # MAIN PARSING FUNCTION
 # ═══════════════════════════════════════════════════════════════════
 
-def parse_ingredient_line(line: str) -> Optional[IngredientV2]:
+def parse_ingredient_line(line: str) -> Optional[Ingredient]:
     """
-    Parse a single ingredient line from Pass 1 output into an IngredientV2.
+    Parse a single ingredient line from Pass 1 output into an Ingredient.
 
     Expected format from Pass 1:
-      "250g champignons de Paris [mushrooms] {produce}, émincés [sliced]"
-      "sel [salt] {spice} (à volonté)"
+      "- 250g «champignons de Paris» [250g mushrooms, sliced] {produce}, émincés"
+      "- «sel» [salt] {spice} (à volonté)"
 
-    Uses the NER model to extract qty/unit/name from the English translation,
-    then normalizes units and generates a snake_case ID.
+    Flow:
+      1. Extract «clean_name» → name (original language)
+      2. Extract [full english line] → send to CRF parser
+      3. CRF parser returns: qty, unit, name_en, preparation
+      4. Build Ingredient
     """
     line = line.strip()
     if not line:
@@ -236,10 +159,9 @@ def parse_ingredient_line(line: str) -> Optional[IngredientV2]:
     category_match = re.search(r"\{(\w+)\}", line)
     category = category_match.group(1) if category_match else "other"
 
-    # English translations [english_name], optionally [english_state]
+    # Full English translation [full english line]
     en_matches = re.findall(r"\[([^\]]+)\]", line)
-    name_en = en_matches[0] if en_matches else ""
-    preparation_en = en_matches[1] if len(en_matches) > 1 else None
+    en_full_line = en_matches[0] if en_matches else ""
 
     # Optional flag
     line_lower = line.lower()
@@ -257,92 +179,95 @@ def parse_ingredient_line(line: str) -> Optional[IngredientV2]:
             notes = text
             break
 
-    # ── Clean the line (remove annotations) ────────────────────
-    clean_line = re.sub(r"\{[^}]+\}", "", line)
-    clean_line = re.sub(r"\[[^\]]+\]", "", clean_line)
-    clean_line = re.sub(r"\([^)]+\)", "", clean_line)
-    clean_line = clean_line.strip().rstrip(",").strip()
+    # ── Extract original-language name from «» annotation ──────
+    name_guillemets = re.search(r"«([^»]+)»", line)
+    if name_guillemets:
+        name_original = name_guillemets.group(1).strip()
+    else:
+        # Fallback: use the first part before any annotation
+        first_bracket = line.find("[")
+        raw_part = line[:first_bracket].strip() if first_bracket > 0 else line
+        raw_part = raw_part.split(",")[0].strip()
+        name_original = re.sub(r"^[\d½¼¾⅓⅔/.,\-\s]+", "", raw_part).strip()
+        if not name_original:
+            name_original = raw_part
+        logger.warning(f"No «» annotation found, falling back to raw: '{name_original}'")
 
-    # Extract the original-language name (without qty/unit)
-    name_line = re.sub(
-        r"^[\d½¼¾⅓⅔/.,\-\s]+\s*"
-        r"(?:cuillères?\s+à\s+(?:soupe|café)|"
-        r"gousses?|branches?|brins?|feuilles?|tranches?|"
-        r"tablespoons?|teaspoons?|pounds?|ounces?|cloves?|"
-        r"cups?|pieces?|pinch|bunch|sprigs?|"
-        r"kg\b|ml\b|cl\b|lb\b|oz\b|tbsp\b|tsp\b|g\b|l\b)?\s*",
-        "", clean_line, count=1, flags=re.IGNORECASE,
+    # ── Extract original-language preparation (after annotations + comma) ──
+    preparation_original = None
+    prep_match = re.search(
+        r"\}\s*(?:\((?:optionnel|optional|à volonté)\)\s*)?,\s*(.+?)$",
+        line,
     )
-    name_original = name_line.strip().rstrip(",").strip() if name_line.strip() else clean_line
+    if prep_match:
+        # Clean: remove any remaining annotations from preparation text
+        prep_text = prep_match.group(1).strip()
+        prep_text = re.sub(r"\[[^\]]+\]", "", prep_text).strip().rstrip(",").strip()
+        if prep_text:
+            preparation_original = prep_text
 
-    # ── Build English text for NER ─────────────────────────────
-    en_text_for_ner = ""
-    if name_en:
-        qty_unit_match = _QTY_UNIT_RE.match(clean_line)
-        qty_only_match = None
+    # ── Parse English line with CRF parser ─────────────────────
+    quantity = None
+    unit = None
+    name_en = None
+    preparation_en = None
 
-        if qty_unit_match:
-            qty_str = qty_unit_match.group(1).strip()
-            unit_str = qty_unit_match.group(2).strip()
-            unit_en = _UNIT_FR_TO_EN.get(unit_str.lower(), unit_str)
-            en_text_for_ner = f"{qty_str} {unit_en} {name_en}"
-        else:
-            qty_only_match = _QTY_ONLY_RE.match(clean_line)
-            if qty_only_match:
-                qty_str = qty_only_match.group(1).strip()
-                en_text_for_ner = f"{qty_str} {name_en}"
-            else:
-                en_text_for_ner = name_en
+    if en_full_line:
+        _ensure_parser()
+        from ingredient_parser import parse_ingredient
 
-        if preparation_en:
-            en_text_for_ner += f", {preparation_en}"
+        try:
+            result = parse_ingredient(en_full_line)
 
-    if not en_text_for_ner:
-        en_text_for_ner = clean_line
+            # Extract name
+            if result.name:
+                name_en = result.name[0].text if isinstance(result.name, list) else result.name.text
 
-    # ── NER parsing ────────────────────────────────────────────
-    ner = get_ner_pipeline()
-    results = ner(en_text_for_ner)
+            # Extract quantity
+            if result.amount:
+                amt = result.amount[0]
+                try:
+                    quantity = float(amt.quantity) if amt.quantity is not None else None
+                except (ValueError, TypeError):
+                    # Fraction objects
+                    if isinstance(amt.quantity, Fraction):
+                        quantity = float(amt.quantity)
 
-    entities: dict[str, list[dict]] = defaultdict(list)
-    for entity in results:
-        tag = entity["entity_group"]
-        word = entity["word"].strip()
-        score = entity["score"]
-        entities[tag].append({"text": word, "score": score})
+                unit = normalize_unit(amt.unit)
 
-    # Extract NER values
-    ner_qty_raw = " ".join(e["text"] for e in entities.get("QUANTITY", []))
-    ner_unit_raw = " ".join(e["text"] for e in entities.get("UNIT", []))
-    ner_state = " ".join(e["text"] for e in entities.get("STATE", []))
-    ner_name = " ".join(e["text"] for e in entities.get("NAME", []))
+            # Extract preparation
+            if result.preparation:
+                if isinstance(result.preparation, list):
+                    preparation_en = result.preparation[0].text if result.preparation else None
+                else:
+                    preparation_en = result.preparation.text
 
-    # Confidence
-    all_scores = [e["score"] for ents in entities.values() for e in ents]
-    avg_confidence = sum(all_scores) / len(all_scores) if all_scores else 0.0
+        except Exception as e:
+            logger.error(f"CRF parser failed on '{en_full_line}': {e}")
+            # Fallback: use the English line as name_en
+            name_en = en_full_line
 
-    # ── Build IngredientV2 ─────────────────────────────────────
-    quantity = parse_quantity(ner_qty_raw)
-    unit = normalize_unit(ner_unit_raw)
-    preparation = preparation_en or (ner_state if ner_state else None)
-    final_name_en = name_en if name_en else ner_name
-    ingredient_id = make_ingredient_id(final_name_en) if final_name_en else make_ingredient_id(name_original)
+    # ── Build Ingredient ─────────────────────────────────────
+    preparation = preparation_original or preparation_en
+    final_name_en = name_en or en_full_line or name_original
+    ingredient_id = make_ingredient_id(final_name_en)
 
     # Validate category
     valid_categories = {
         "meat", "poultry", "seafood", "produce", "dairy", "egg",
+        "grain", "legume", "nuts_seeds", "oil", "herb",
         "pantry", "spice", "condiment", "beverage", "other",
     }
     if category not in valid_categories:
-        logger.warning(f"Unknown category '{category}' for '{name_en}', defaulting to 'other'")
+        logger.warning(f"Unknown category '{category}' for '{final_name_en}', defaulting to 'other'")
         category = "other"
 
     logger.debug(
-        f"Parsed ingredient: {name_original} [{final_name_en}] "
-        f"qty={quantity} unit={unit} conf={avg_confidence:.1%}"
+        f"Parsed: «{name_original}» → name_en='{final_name_en}' "
+        f"qty={quantity} unit={unit} prep='{preparation}'"
     )
 
-    return IngredientV2(
+    return Ingredient(
         id=ingredient_id,
         name=name_original,
         name_en=final_name_en or None,
@@ -355,12 +280,12 @@ def parse_ingredient_line(line: str) -> Optional[IngredientV2]:
     )
 
 
-def parse_ingredients_from_preformat(preformatted_text: str) -> list[IngredientV2]:
+def parse_ingredients_from_preformat(preformatted_text: str) -> list[Ingredient]:
     """
     Extract and parse all ingredient lines from a Pass 1 preformatted output.
 
-    Finds the INGREDIENTS section and parses each line using the NER model.
-    Returns a list of IngredientV2 objects with deduplicated IDs.
+    Finds the INGREDIENTS section and parses each line using the CRF parser.
+    Returns a list of Ingredient objects with deduplicated IDs.
     """
     # Find the INGREDIENTS section
     ingredients_match = re.search(
@@ -385,7 +310,7 @@ def parse_ingredients_from_preformat(preformatted_text: str) -> list[IngredientV
     logger.info(f"Found {len(ingredient_lines)} ingredient lines to parse")
 
     # Parse each line
-    parsed: list[IngredientV2] = []
+    parsed: list[Ingredient] = []
     seen_ids: dict[str, int] = {}
 
     for line in ingredient_lines:
@@ -445,9 +370,11 @@ def correct_step_references(
                     corrections += 1
                 else:
                     logger.error(
-                        f"Step '{step.id}' references unknown ID '{ref}', no close match found"
+                        f"Step '{step.id}' references unknown ID '{ref}', "
+                        f"no close match found — dropping reference"
                     )
-                    corrected_uses.append(ref)  # Keep as-is, let Pydantic validation catch it
+                    # Do NOT keep the invalid ref; re-validation will catch
+                    # any resulting graph inconsistencies
 
         step.uses = corrected_uses
 
@@ -465,7 +392,10 @@ def correct_step_references(
                     corrected_requires.append(match)
                     corrections += 1
                 else:
-                    corrected_requires.append(ref)
+                    logger.error(
+                        f"Step '{step.id}' requires unknown state '{ref}', "
+                        f"no close match found — dropping reference"
+                    )
 
         step.requires = corrected_requires
 

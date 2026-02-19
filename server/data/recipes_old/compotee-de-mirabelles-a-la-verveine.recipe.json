@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "Compot\u00e9e de mirabelles \u00e0 la verveine",
+    "description": "Une compot\u00e9e de mirabelles parfum\u00e9e \u00e0 la verveine, moins sucr\u00e9e qu'une confiture, rapide \u00e0 pr\u00e9parer et incroyablement versatile.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "mirabelle",
+      "verveine",
+      "compote",
+      "\u00e9t\u00e9",
+      "fruit",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Compotee-mirabelle-verveine-7-of-8.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Moins sucr\u00e9e qu'une confiture classique.",
+      "Peut se conserver quelques jours au frais ou plusieurs mois au cong\u00e9lateur.",
+      "Id\u00e9ale pour tartes, chaussons, g\u00e2teaux, yaourts ou fromage blanc.",
+      "Pour varier, ajoutez une pointe de cannelle, de cardamome, un trait de jus de gingembre ou de zeste de citron vert."
+    ],
+    "slug": "compotee-de-mirabelles-a-la-verveine",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Compotee-mirabelle-verveine-7-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/08/25/compotee-mirabelles-verveine/",
+    "image": "images/compotee-de-mirabelles-a-la-verveine.webp",
+    "createdAt": "2026-02-09T23:04:14.845621",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 1369.0,
+      "protein": 6.3,
+      "fat": 3.0,
+      "carbs": 330.0,
+      "fiber": 22.0,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 2,
+      "totalIngredients": 4,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "mirabelles",
+      "name": "mirabelles",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": "d\u00e9noyaut\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mirabelle plums"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "jus_citron",
+      "name": "jus de citron",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "verveine",
+      "name": "verveine",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Lemon verbena"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Casserole ou marmite"
+  ],
+  "steps": [
+    {
+      "id": "combine_ingredients",
+      "action": "Mettez les mirabelles d\u00e9noyaut\u00e9es dans une casserole avec le sucre, le jus de citron, les branches de verveine et l'eau.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mirabelles",
+        "sucre",
+        "jus_citron",
+        "verveine",
+        "eau"
+      ],
+      "produces": "raw_compote_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_compote",
+      "action": "Faites mijoter \u00e0 petit feu pendant 30min jusqu'\u00e0 ce que les fruits se d\u00e9fassent.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "raw_compote_mix"
+      ],
+      "produces": "cooked_compote",
+      "requires": [],
+      "visualCue": "fruits se d\u00e9fassent"
+    },
+    {
+      "id": "jar_compote",
+      "action": "Mettez la compot\u00e9e en bocaux. Vous pouvez la congeler ou la conserver au r\u00e9frig\u00e9rateur et la consommer dans les 2 \u00e0 3 semaines.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_compote"
+      ],
+      "produces": "compotee_mirabelles_verveine",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "compotee_mirabelles_verveine",
+  "originalText": "Compot\u00e9e de mirabelles \u00e0 la verveine : une recette facile et rapide\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 ao\u00fbt 2025\nCompot\u00e9e de mirabelles \u00e0 la verveine : simple, rapide et pleine de parfum\nSi vous cherchez une mani\u00e8re simple et parfum\u00e9e de sublimer les mirabelles, cette compot\u00e9e \u00e0 la verveine pourrait bien devenir l\u2019une de vos recettes favorites. Moins sucr\u00e9e qu\u2019une confiture, rapide \u00e0 pr\u00e9parer et incroyablement versatile, elle a tout pour plaire.\n\u00c0 la maison, c\u2019est souvent la premi\u00e8re chose que je fais quand les mirabelliers d\u00e9bordent. En quelques gestes et avec tr\u00e8s peu d\u2019ingr\u00e9dients, on obtient un concentr\u00e9 de soleil \u00e0 glisser dans des tartes, des chaussons ou simplement dans un bol de yaourt. Et avec l\u2019ajout de verveine, on ajoute une note fra\u00eeche et l\u00e9g\u00e8rement citronn\u00e9e qui fait toute la diff\u00e9rence.\nTable des mati\u00e8res\n1\nUne alternative l\u00e9g\u00e8re \u00e0 la confiture\n2\nLe parfum d\u00e9licat de la verveine\n3\nUne base multi-usages\n4\nFacile \u00e0 pr\u00e9parer et \u00e0 stocker\n5\nUne recette rapide, sans tracas\n6\nCompot\u00e9e de mirabelles \u00e0 la verveine\n7\nPour aller plus loin\n8\nPour r\u00e9sumer, la compot\u00e9e de mirabelles \u00e0 la verveine\nUne alternative l\u00e9g\u00e8re \u00e0 la confiture\nContrairement aux confitures classiques qui n\u00e9cessitent souvent des proportions \u00e9gales de fruits et de sucre, cette compot\u00e9e est beaucoup plus l\u00e9g\u00e8re. Elle conserve toute la douceur naturelle de la mirabelle sans \u00eatre \u00e9c\u0153urante, et permet de pr\u00e9server ce petit go\u00fbt acidul\u00e9 qu\u2019on aime tant.\nC\u2019est aussi une super alternative pour les personnes qui souhaitent limiter leur consommation de sucre sans renoncer aux plaisirs fruit\u00e9s. La cuisson lente permet de faire ressortir toute la richesse des mirabelles, m\u00eame avec une quantit\u00e9 de sucre r\u00e9duite.\nLe parfum d\u00e9licat de la verveine\nCe qui transforme cette compot\u00e9e en quelque chose d\u2019un peu plus sp\u00e9cial, c\u2019est la touche de verveine fra\u00eeche.\nC\u2019est un peu l\u2019ingr\u00e9dient secret que je glisse dans plusieurs recettes estivales, surtout lorsqu\u2019il s\u2019agit de fruits jaunes ou de fruits \u00e0 noyau.\nUne base multi-usages\nCe que j\u2019aime avec cette recette, c\u2019est sa polyvalence. Une fois pr\u00e9par\u00e9e, la compot\u00e9e peut se conserver quelques jours au frais ou plusieurs mois au cong\u00e9lateur. Et ensuite, libre \u00e0 vous de l\u2019utiliser comme bon vous semble :\ndans des tartes rustiques ou en fond de tarte avec une p\u00e2te sabl\u00e9e,\ndans des chaussons feuillet\u00e9s maison,\ndans un g\u00e2teau au yaourt ou un cake marbr\u00e9 fruit\u00e9,\nou simplement \u00e0 la cuill\u00e8re, avec un peu de yaourt nature ou du fromage blanc.\nC\u2019est aussi une tr\u00e8s bonne id\u00e9e pour un dessert de derni\u00e8re minute quand on re\u00e7oit : quelques biscuits \u00e9miett\u00e9s, une cuill\u00e8re de compot\u00e9e, un peu de cr\u00e8me mont\u00e9e ou un yaourt v\u00e9g\u00e9tal\u2026 et hop, un dessert improvis\u00e9, mais toujours appr\u00e9ci\u00e9.\nFacile \u00e0 pr\u00e9parer et \u00e0 stocker\nAutre point fort : la compot\u00e9e ne demande aucun mat\u00e9riel particulier. Que vous utilisiez une grande casserole en inox ou une marmite en fonte, \u00e7a fonctionne tr\u00e8s bien. Vous pouvez ensuite la verser dans des bocaux pour la conserver quelques jours au frais, ou dans des petits pots en verre (ou silicone) pour la cong\u00e9lation.\nJe vous recommande d\u2019ailleurs de portionner votre compot\u00e9e si vous en pr\u00e9parez en grande quantit\u00e9. Cela \u00e9vite de tout d\u00e9congeler d\u2019un coup, et vous pourrez toujours en sortir une petite dose pour agr\u00e9menter vos petits d\u00e9jeuners ou go\u00fbters.\nUne recette rapide, sans tracas\nComme beaucoup de recettes que je partage ici, celle-ci a le m\u00e9rite d\u2019\u00eatre rapide et accessible \u00e0 toutes et tous. En une vingtaine de minutes de pr\u00e9paration, vous avez de quoi transformer un exc\u00e9dent de fruits en un accompagnement sain, parfum\u00e9 et r\u00e9confortant.\nEt si vous aimez varier les plaisirs, n\u2019h\u00e9sitez pas \u00e0 jouer avec les saveurs :\nune pointe de cannelle ou de cardamome pour une version plus \u00e9pic\u00e9e,\nun trait de jus de gingembre ou de zeste de citron vert pour une note plus tonique,\nou encore un m\u00e9lange de mirabelles avec d\u2019autres fruits de saison comme la p\u00eache, l\u2019abricot ou la poire.\nCompot\u00e9e de mirabelles \u00e0 la verveine\nNotez cette recette !\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n1\nkg\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde mirabelles\n150\ng\nde sucre\n\u00bd\njus de citron\n1\n\u00e0 2 branches de verveine\noptionnel\n100\nml\nd\u2019eau\nInstructions\nD\u00e9noyautez les mirabelles et mettez-les dans une casserole avec le sucre, le jus de citron, les branches de verveine si vous en utilisez et l\u2019eau.\nFaites mijoter \u00e0 petit feu pendant 30 minutes jusqu\u2019\u00e0 ce que les fruits se d\u00e9fassent.\nMettez la compot\u00e9e en bocaux.\nVous pouvez la congeler ou la conserver au r\u00e9frig\u00e9rateur et la consommer dans les 2 \u00e0 3 semaines.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin\nSi vous avez aim\u00e9 cette compot\u00e9e, vous pourriez aussi vous laisser tenter par d\u2019autres id\u00e9es fruit\u00e9es et estivales :\nTartelettes mirabelles verveine citronn\u00e9e\n.\nUne recette fra\u00eeche et d\u00e9licate, o\u00f9 la douceur des mirabelles rencontre le parfum subtil de la verveine et du citron. Un dessert aussi joli que savoureux.\nPop pies mirabelles romarin\n.\nUne fa\u00e7on ludique et originale de revisiter la tarte aux fruits, avec des mini chaussons feuillet\u00e9s parfum\u00e9s au romarin. Parfaits pour un go\u00fbter ou un pique-nique.\nPanna cotta \u00e0 la compot\u00e9e de brugnons et miel\n.\nUne panna cotta douce et cr\u00e9meuse accompagn\u00e9e d\u2019une compot\u00e9e fruit\u00e9e au miel. Un dessert simple, frais et toujours efficace.\nCompot\u00e9e de cerise\n.\nUne alternative \u00e0 la confiture, avec moins de sucre et plus de fruit. \u00c0 d\u00e9guster avec un yaourt, une glace, ou simplement \u00e0 la cuill\u00e8re.\nPour r\u00e9sumer, la compot\u00e9e de mirabelles \u00e0 la verveine\nCette compot\u00e9e de mirabelles \u00e0 la verveine est une belle mani\u00e8re de profiter pleinement de la saison, sans passer des heures en cuisine ni surcharger vos desserts en sucre. Elle se pr\u00e9pare en quelques gestes simples, se conserve facilement, et peut accompagner \u00e0 merveille vos tartes, vos yaourts ou m\u00eame vos petits-d\u00e9jeuners.\nC\u2019est le genre de recette que j\u2019aime garder sous le coude chaque \u00e9t\u00e9, surtout quand les mirabelliers d\u00e9bordent de fruits dor\u00e9s. Et avec la touche parfum\u00e9e de verveine, elle devient encore plus douce et rafra\u00eechissante.\nN\u2019h\u00e9sitez pas \u00e0 en pr\u00e9parer en grande quantit\u00e9 pour en profiter toute l\u2019ann\u00e9e\u2026 ou pour offrir un peu de soleil en bocal autour de vous.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nCr\u00e8mes et Entremets\n,\n\u00c9t\u00e9\n,\nPrune\nRhum arrang\u00e9 aux mirabelles : un concentr\u00e9 de soleil \u00e0 partager\nGalettes de courgettes grecques (Kolokithokeftedes) : croustillantes, parfum\u00e9es et ultra faciles\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required",
+  "totalCookingTime": 10.0
+}

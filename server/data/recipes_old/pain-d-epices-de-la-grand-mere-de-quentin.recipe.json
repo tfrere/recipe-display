@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "title": "Pain d'épices de la grand-mère de quentin",
+    "description": "Un pain d'épices traditionnel et moelleux, parfumé à l'anis et préparé avec du lait tiède, du miel et de la confiture.",
+    "servings": 8,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pain d'épices",
+      "anisé",
+      "traditionnel",
+      "français",
+      "gâteau"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": "Grand-mère de quentin",
+    "source": null,
+    "notes": [
+      "Servir en tranches épaisses, idéalement avec du beurre ou du fromage frais.",
+      "Se conserve plusieurs jours dans une boîte hermétique."
+    ],
+    "slug": "pain-d-epices-de-la-grand-mere-de-quentin",
+    "originalContent": "Pain d'epices\nde la grand-mère de quentin\n\nIngrédients :\n- 250g de farine\n- 1/4L de lait\n- 2 cas de sucre\n- 3 cas de miel\n- 3 cas de confiture\n- 1 cac de bicarbonate\n- 1 cac de graines d’anis\n\nPréparation :\n- Préchauffer le four à 120°C\n- Verser le lait dans une casserole puis ajouter le sucre, le miel et la confiture puis faire tiédir le mélange\n- Mettre l’anis dans une jatte et ajouter le lait\n- Incorporer la farine et le bicarbonate en la tamisant\n- Verser le mélange dans un moûle beurré\n- Laisser cuire pendant 45 min au four préchauffé à 120°C\n-\nMain recipe image: temp_image_recipe-gen-20260208054215-7fc7f71d.png",
+    "createdAt": "2026-02-08T05:43:45.822490",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 96.0,
+    "totalCookingTime": 21.0,
+    "sourceImageUrl": "pain-d-epices-de-la-grand-mere-de-quentin.png",
+    "image": "images/pain-d-epices-de-la-grand-mere-de-quentin.png",
+    "nutritionPerServing": {
+      "calories": 176.2,
+      "protein": 4.2,
+      "fat": 1.4,
+      "carbs": 36.3,
+      "fiber": 1.0,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 0.25,
+      "unit": "L",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cuillères à soupe",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cuillères à soupe",
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "confiture",
+      "name": "confiture",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cuillères à soupe",
+      "optional": false,
+      "name_en": "jam"
+    },
+    {
+      "id": "bicarbonate",
+      "name": "bicarbonate",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cuillère à café",
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "graines_anis",
+      "name": "graines d'anis",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "cuillère à café",
+      "optional": false,
+      "name_en": "anise seeds"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": "pour beurrer le moule",
+      "notes": "pour beurrer le moule",
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "four",
+    "casserole",
+    "moule à cake",
+    "tamis"
+  ],
+  "steps": [
+    {
+      "id": "prechauffer_four",
+      "action": "Préchauffer le four à 120°C.",
+      "duration": "PT10M",
+      "temperature": 120,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_lait_melange",
+      "action": "Verser le lait dans une casserole puis ajouter le sucre, le miel et la confiture puis faire tiédir le mélange.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lait",
+        "sucre",
+        "miel",
+        "confiture"
+      ],
+      "produces": "lait_tiede_parfume",
+      "requires": [],
+      "visualCue": "tiède mais non bouillant"
+    },
+    {
+      "id": "preparer_anis",
+      "action": "Mettre l'anis dans une jatte et ajouter le lait tiède parfumé.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "graines_anis",
+        "lait_tiede_parfume"
+      ],
+      "produces": "lait_anis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_farine_bicarbonate",
+      "action": "Incorporer la farine et le bicarbonate en la tamisant dans le mélange lait-anis.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine",
+        "bicarbonate",
+        "lait_anis"
+      ],
+      "produces": "pate_pain_epices",
+      "requires": [],
+      "visualCue": "pâte homogène et lisse"
+    },
+    {
+      "id": "beurrer_moule",
+      "action": "Beurrer généreusement un moule à cake.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "moule_beurre",
+      "requires": [],
+      "visualCue": "moule bien beurré"
+    },
+    {
+      "id": "verser_dans_moule",
+      "action": "Verser le mélange de pâte dans le moule beurré.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_pain_epices",
+        "moule_beurre"
+      ],
+      "produces": "moule_rempli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_four",
+      "action": "Laisser cuire pendant 45 min au four préchauffé à 120°C.",
+      "duration": "PT45M",
+      "temperature": 120,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "moule_rempli"
+      ],
+      "produces": "pain_epices_cuit",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "doré et cuit à cœur (test du couteau propre)"
+    },
+    {
+      "id": "demouler_reposer",
+      "action": "Démouler le pain d'épices et laisser refroidir sur une grille.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pain_epices_cuit"
+      ],
+      "produces": "pain_epices_refroidi",
+      "requires": [],
+      "visualCue": "refroidi à température ambiante"
+    }
+  ],
+  "finalState": "pain_epices_refroidi",
+  "originalText": "Pain d'epices\nde la grand-mère de quentin\n\nIngrédients :\n- 250g de farine\n- 1/4L de lait\n- 2 cas de sucre\n- 3 cas de miel\n- 3 cas de confiture\n- 1 cac de bicarbonate\n- 1 cac de graines d’anis\n\nPréparation :\n- Préchauffer le four à 120°C\n- Verser le lait dans une casserole puis ajouter le sucre, le miel et la confiture puis faire tiédir le mélange\n- Mettre l’anis dans une jatte et ajouter le lait\n- Incorporer la farine et le bicarbonate en la tamisant\n- Verser le mélange dans un moûle beurré\n- Laisser cuire pendant 45 min au four préchauffé à 120°C\n-\nMain recipe image: temp_image_recipe-gen-20260208054215-7fc7f71d.png",
+  "totalCookingTime": 21.0
+}

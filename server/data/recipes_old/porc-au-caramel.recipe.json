@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "title": "porc au caramel",
+    "description": "Un plat de porc mijoté dans un caramel salé-sucré parfumé aux épices et à la sauce soja, servi avec du riz.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "porc",
+      "caramel",
+      "vietnamien",
+      "asiatique"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054640-2a7dacba.png",
+    "nationality": "Vietnamese",
+    "author": "la maman de Vincent",
+    "source": null,
+    "notes": [
+      "Servir avec du riz blanc."
+    ],
+    "slug": "porc-au-caramel",
+    "sourceImageUrl": "porc-au-caramel.png",
+    "originalContent": "porc au caramel\nde la maman de Vincent\n\nPour 6 personnes\nIngrédients :\nEntre 1,5 kg ou 2 kg d'échine de porc (ou de filet mais c'est plus cher)\n45 carrés de sucre\n6,5 cuillères à soupe de sauce soja\n65 cl d'eau chaude\n2 bouillon cubes de poule\n1,5 cuillère à soupe de 4 épices\n1,5 cuillère à soupe de gingembre\nRiz\n\nPréparation :\nFaire revenir le porc pendant 5 min (il doit rester saignant) puis réserver\nDans une casserole écraser 2 bouillons cubes dans 65cl d'eau puis ajouter les 4 épices, le gingembre et la sauce soja\nLaver la cocotte dans laquelle on a fait revenir le porc \nY mettre le sucre avec 10 cl d'eau\nFaire un caramel : d'abord à feu fort pour porter à ébullition, faut que ça nappe la cuillère\nAjouter le bouillon (attention aux éclaboussures !)\nBien touiller pour mélanger avec le caramel\nAjouter la viande\nFaire bouillir à feu vif en tournant pour pas que la viande accroché\nQuand le bouillon a réduit c'est prêt\n\nMain recipe image: temp_image_recipe-gen-20260208054640-2a7dacba.png",
+    "createdAt": "2026-02-08T05:48:25.626898",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 73.0,
+    "totalCookingTime": 53.0,
+    "image": "images/porc-au-caramel.png",
+    "nutritionPerServing": {
+      "calories": 11.7,
+      "protein": 1.4,
+      "fat": 0.1,
+      "carbs": 1.5,
+      "fiber": 0.2,
+      "confidence": "low",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 4,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "pork_shoulder",
+      "name": "échine de porc",
+      "quantity": 1.75,
+      "unit": "kg",
+      "category": "meat",
+      "preparation": null,
+      "notes": "entre 1,5 kg et 2 kg, ou filet de porc",
+      "optional": false,
+      "name_en": "Pork neck"
+    },
+    {
+      "id": "sugar_cubes",
+      "name": "carrés de sucre",
+      "quantity": 45.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Sugar cubes"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 6.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "hot_water",
+      "name": "eau chaude",
+      "quantity": 65.0,
+      "unit": "cl",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hot water"
+    },
+    {
+      "id": "chicken_bouillon_cubes",
+      "name": "bouillon cubes de poule",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chicken bouillon cubes"
+    },
+    {
+      "id": "four_spices",
+      "name": "4 épices",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Allspice"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ginger"
+    },
+    {
+      "id": "rice",
+      "name": "riz",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "rice"
+    },
+    {
+      "id": "water_for_caramel",
+      "name": "eau",
+      "quantity": 10.0,
+      "unit": "cl",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le caramel",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "cocotte",
+    "casserole"
+  ],
+  "steps": [
+    {
+      "id": "sear_pork",
+      "action": "Faire revenir le porc pendant 5 minutes (il doit rester saignant) puis réserver.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "porc",
+      "uses": [
+        "pork_shoulder"
+      ],
+      "produces": "seared_pork",
+      "requires": [],
+      "visualCue": "saignant"
+    },
+    {
+      "id": "prepare_broth",
+      "action": "Dans une casserole, écraser 2 bouillons cubes dans 65 cl d'eau chaude puis ajouter les 4 épices, le gingembre et la sauce soja.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "chicken_bouillon_cubes",
+        "hot_water",
+        "four_spices",
+        "ginger",
+        "soy_sauce"
+      ],
+      "produces": "spiced_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_caramel_base",
+      "action": "Dans la cocotte (lavée après avoir fait revenir le porc), mettre le sucre avec 10 cl d'eau.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "caramel",
+      "uses": [
+        "sugar_cubes",
+        "water_for_caramel"
+      ],
+      "produces": "sugar_water_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_caramel",
+      "action": "Faire un caramel : d'abord à feu fort pour porter à ébullition, faut que ça nappe la cuillère.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "caramel",
+      "uses": [
+        "sugar_water_mixture"
+      ],
+      "produces": "caramel",
+      "requires": [],
+      "visualCue": "nappe la cuillère"
+    },
+    {
+      "id": "add_broth_to_caramel",
+      "action": "Ajouter le bouillon épicé au caramel (attention aux éclaboussures !).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "caramel",
+        "spiced_broth"
+      ],
+      "produces": "caramel_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_caramel_broth",
+      "action": "Bien touiller pour mélanger le caramel avec le bouillon.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "caramel_broth"
+      ],
+      "produces": "mixed_caramel_sauce",
+      "requires": [],
+      "visualCue": "bien mélangé"
+    },
+    {
+      "id": "add_pork_to_sauce",
+      "action": "Ajouter la viande dans la sauce caramel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "porc",
+      "uses": [
+        "seared_pork",
+        "mixed_caramel_sauce"
+      ],
+      "produces": "pork_in_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_pork",
+      "action": "Faire bouillir à feu vif en tournant pour pas que la viande accroche.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "porc",
+      "uses": [
+        "pork_in_sauce"
+      ],
+      "produces": "simmering_pork",
+      "requires": [],
+      "visualCue": "sauce bouillonnante"
+    },
+    {
+      "id": "reduce_sauce",
+      "action": "Laisser réduire le bouillon jusqu'à ce que la sauce épaississe.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "porc",
+      "uses": [
+        "simmering_pork"
+      ],
+      "produces": "pork_caramel_finished",
+      "requires": [],
+      "visualCue": "sauce réduite et épaissie"
+    },
+    {
+      "id": "cook_rice",
+      "action": "Préparer le riz selon les instructions du paquet.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "accompagnement",
+      "uses": [
+        "rice"
+      ],
+      "produces": "cooked_rice",
+      "requires": [],
+      "visualCue": "riz cuit"
+    },
+    {
+      "id": "plate",
+      "action": "Servir le porc au caramel avec le riz.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pork_caramel_finished",
+        "cooked_rice"
+      ],
+      "produces": "porc_au_caramel_avec_riz",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "porc_au_caramel_avec_riz",
+  "originalText": "porc au caramel\nde la maman de Vincent\n\nPour 6 personnes\nIngrédients :\nEntre 1,5 kg ou 2 kg d'échine de porc (ou de filet mais c'est plus cher)\n45 carrés de sucre\n6,5 cuillères à soupe de sauce soja\n65 cl d'eau chaude\n2 bouillon cubes de poule\n1,5 cuillère à soupe de 4 épices\n1,5 cuillère à soupe de gingembre\nRiz\n\nPréparation :\nFaire revenir le porc pendant 5 min (il doit rester saignant) puis réserver\nDans une casserole écraser 2 bouillons cubes dans 65cl d'eau puis ajouter les 4 épices, le gingembre et la sauce soja\nLaver la cocotte dans laquelle on a fait revenir le porc \nY mettre le sucre avec 10 cl d'eau\nFaire un caramel : d'abord à feu fort pour porter à ébullition, faut que ça nappe la cuillère\nAjouter le bouillon (attention aux éclaboussures !)\nBien touiller pour mélanger avec le caramel\nAjouter la viande\nFaire bouillir à feu vif en tournant pour pas que la viande accroché\nQuand le bouillon a réduit c'est prêt\n\nMain recipe image: temp_image_recipe-gen-20260208054640-2a7dacba.png",
+  "totalCookingTime": 53.0
+}

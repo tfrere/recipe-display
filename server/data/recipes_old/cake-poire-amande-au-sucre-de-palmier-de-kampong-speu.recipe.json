@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "title": "Cake Poire Amande au sucre de palmier de Kampong Speu",
+    "description": "Un cake moelleux et savoureux \u00e0 la poire recouvert d'un croustillant aux amandes et d'un l\u00e9ger gla\u00e7age au sirop d'\u00e9rable.",
+    "servings": 10,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H8M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "cake",
+      "poire",
+      "amande",
+      "sucre de palmier",
+      "automne"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Cake-Poires-Sucre-de-Palmier-verse-1-of-1.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ma premi\u00e8re recette avec du sucre de palmier de Kampong Speu et certainement pas la derni\u00e8re !",
+      "Le cake \u00e0 la poire se conserve 3 jours au r\u00e9frig\u00e9rateur."
+    ],
+    "slug": "cake-poire-amande-au-sucre-de-palmier-de-kampong-speu",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Cake-Poires-Sucre-de-Palmier-verse-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/24/cake-a-la-poire-et-croustillant-amande-au-sucre-de-palmier/",
+    "image": "images/cake-poire-amande-au-sucre-de-palmier-de-kampong-speu.jpg",
+    "createdAt": "2026-02-09T20:39:16.553706",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 83.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 219.0,
+      "protein": 4.7,
+      "fat": 11.6,
+      "carbs": 24.0,
+      "fiber": 0.8,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 12,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pears_williams",
+      "name": "poires williams pas m\u00fbres",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Williams pears"
+    },
+    {
+      "id": "palm_sugar",
+      "name": "sucre de palmier de Kampong Speu",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Palm sugar"
+    },
+    {
+      "id": "butter",
+      "name": "beurre doux",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "baking_soda",
+      "name": "bicarbonate de soude",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 240.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "almonds",
+      "name": "amandes effil\u00e9es",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "slivered almonds"
+    },
+    {
+      "id": "egg_white",
+      "name": "blanc d'oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg white"
+    },
+    {
+      "id": "palm_sugar_crunch",
+      "name": "sucre de palmier de Kampong Speu",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Palm sugar"
+    },
+    {
+      "id": "cinnamon_crunch",
+      "name": "cannelle",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "powdered_sugar",
+      "name": "sucre glace",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "almond_milk",
+      "name": "lait d'amande",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "honey",
+      "name": "miel ou sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Honey or maple syrup"
+    }
+  ],
+  "tools": [
+    "Batteur \u00e9lectrique (avec batteur plat \u00e0 bords flexibles)",
+    "Moule \u00e0 cake"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "croustillant_amande",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_egg_white",
+      "action": "Dans un saladier, battre le blanc d'\u0153uf jusqu'\u00e0 ce qu'il soit l\u00e9g\u00e8rement mousseux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "egg_white"
+      ],
+      "produces": "beaten_egg_white",
+      "requires": [],
+      "visualCue": "l\u00e9g\u00e8rement mousseux"
+    },
+    {
+      "id": "mix_almond_coating",
+      "action": "Ajouter les amandes effil\u00e9es, le sucre et la cannelle au blanc d'oeuf. M\u00e9langer soigneusement, jusqu'\u00e0 ce que toutes les amandes soient enrob\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "beaten_egg_white",
+        "almonds",
+        "palm_sugar_crunch",
+        "cinnamon_crunch"
+      ],
+      "produces": "almond_coating_mix",
+      "requires": [],
+      "visualCue": "amandes enrob\u00e9es"
+    },
+    {
+      "id": "spread_almond_mix",
+      "action": "Transf\u00e9rer le m\u00e9lange d'amandes sur une plaque recouverte de papier cuisson et l'\u00e9taler en une seule couche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "almond_coating_mix"
+      ],
+      "produces": "spread_almond_mix",
+      "requires": [],
+      "visualCue": "une seule couche"
+    },
+    {
+      "id": "bake_almonds_first",
+      "action": "Enfourner et cuire 5min. Retirer du four et \u00e0 l'aide d'une spatule, d\u00e9coller le m\u00e9lange du papier cuisson et remuer le m\u00e9lange.",
+      "duration": "PT5M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "spread_almond_mix"
+      ],
+      "produces": "partially_baked_almonds",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "bake_almonds_final",
+      "action": "Enfourner de nouveau et cuire encore 8min, jusqu'\u00e0 ce que le m\u00e9lange soit dor\u00e9.",
+      "duration": "PT8M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "partially_baked_almonds"
+      ],
+      "produces": "baked_almonds",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "dor\u00e9"
+    },
+    {
+      "id": "cool_almond_crunch",
+      "action": "Sortir du four et r\u00e9server dans un endroit sec. Le m\u00e9lange va durcir et devenir croustillant une fois bien refroidi.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "croustillant_amande",
+      "uses": [
+        "baked_almonds"
+      ],
+      "produces": "almond_crunch",
+      "requires": [],
+      "visualCue": "croustillant"
+    },
+    {
+      "id": "grate_pears",
+      "action": "Peler, \u00e9p\u00e9piner et r\u00e2per grossi\u00e8rement 2 poires et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "pears_williams"
+      ],
+      "produces": "grated_pears",
+      "requires": [],
+      "visualCue": "r\u00e2p\u00e9es grossi\u00e8rement"
+    },
+    {
+      "id": "cream_sugar_butter",
+      "action": "Battre en cr\u00e8me le sucre et le beurre \u00e0 haute vitesse dans le bol du batteur \u00e9lectrique. R\u00e9duire la vitesse et ajouter les \u0153ufs (un \u00e0 la fois), l'extrait de vanille et les poires r\u00e2p\u00e9es. Continuer \u00e0 m\u00e9langer jusqu'\u00e0 ce que la poire soit bien incorpor\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "palm_sugar",
+        "butter",
+        "eggs",
+        "vanilla_extract",
+        "grated_pears"
+      ],
+      "produces": "wet_mix",
+      "requires": [],
+      "visualCue": "poire bien incorpor\u00e9e"
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un autre saladier, m\u00e9langer la farine, le bicarbonate de soude, la levure, le sel et la cannelle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "flour",
+        "baking_soda",
+        "baking_powder",
+        "salt",
+        "cinnamon"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_wet_dry",
+      "action": "Verser le m\u00e9lange de farine progressivement sur le m\u00e9lange avec les poires r\u00e2p\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "wet_mix",
+        "dry_mix"
+      ],
+      "produces": "batter_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_diced_pear",
+      "action": "Peler, \u00e9p\u00e9piner et couper en d\u00e9s la troisi\u00e8me poire et ajouter au m\u00e9lange puis m\u00e9langer doucement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "pears_williams",
+        "batter_base"
+      ],
+      "produces": "complete_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_pan",
+      "action": "Graisser et fariner le moule \u00e0 cake. Verser la p\u00e2te dans le moule et lisser le dessus pour \u00e9galiser.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "complete_batter"
+      ],
+      "produces": "batter_in_pan",
+      "requires": [],
+      "visualCue": "dessus \u00e9galis\u00e9"
+    },
+    {
+      "id": "bake_cake",
+      "action": "Enfourner et cuire environ 55min, jusqu'\u00e0 ce que la pointe d'un couteau ins\u00e9r\u00e9e au centre du cake en ressorte propre.",
+      "duration": "PT55M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "batter_in_pan"
+      ],
+      "produces": "baked_cake",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "couteau ressort propre"
+    },
+    {
+      "id": "cool_cake",
+      "action": "Sortir du four et laisser refroidir 15min puis transf\u00e9rer sur une grille de refroidissement.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "cake_poire",
+      "uses": [
+        "baked_cake"
+      ],
+      "produces": "cooled_cake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_glaze",
+      "action": "M\u00e9langer le sucre glace, le lait d'amande et le sirop d'\u00e9rable ou le miel et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "gla\u00e7age",
+      "uses": [
+        "powdered_sugar",
+        "almond_milk",
+        "honey"
+      ],
+      "produces": "glaze",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_cake",
+      "action": "Une fois le cake refroidi, recouvrir de gla\u00e7age et saupoudrer de croustillant amande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooled_cake",
+        "glaze",
+        "almond_crunch"
+      ],
+      "produces": "cake_poire_amande",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cake_poire_amande",
+  "originalText": "Cake Poire Amande au sucre de palmier de Kampong Speu - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 octobre 2021\nCake Poire Amande au sucre de palmier de Kampong Speu\nS\u2019il y a bien une chose \u00e0 laquelle je ne m\u2019attendais pas lorsque nous nous sommes lanc\u00e9es dans notre aventure de lib\u00e9ration du cornichon; ce sont les nombreuses rencontres et surtout toutes les d\u00e9couvertes que nous allions faire. Ma fa\u00e7on de cuisiner a beaucoup \u00e9volu\u00e9 en quelques ann\u00e9es. Notamment en ce qui concerne l\u2019utilisation du sucre dans mes recettes. Aujourd\u2019hui, je n\u2019utilise plus de sucre raffin\u00e9 et cela au profit d\u2019autres \u00ab sucres \u00bb. Comme par exemple : le sucre complet muscovado, le sirop d\u2019\u00e9rable, le sucre de coco ou encore le sucre de palmier.\u00a0J\u2019ai d\u00e9couvert ce dernier r\u00e9cemment avec le\nSucre de Palmier de Kampong Speu.\nTable des mati\u00e8res\n1\nUne culture ancestrale\n2\nUne fabrication artisanale\n3\nIGP et IG bas\n4\nSexy & Delicious\n5\nCommerce \u00e9quitable\n6\nCake Poire Amande au sucre de palmier de Kampong Speu\nUne culture ancestrale\nCe sucre est r\u00e9alis\u00e9 \u00e0 partir de la s\u00e8ve des fleurs de palmier \u00e0 sucre Thnot, arbre embl\u00e9matique du Cambodge. Les palmiers \u00e0 sucre Thnot se d\u00e9veloppent naturellement le long des rizi\u00e8res cultiv\u00e9es par les producteurs et autour de leur maison. Il ne faut pas les confondre avec les plantations industrielles de palmiers \u00e0 huile en Indon\u00e9sie.\nUne fabrication artisanale\nLe sucre de palmier de Kampong Speu\nTerra Etica\nest 100% bio et \u00e9quitable.\u00a0Il est cultiv\u00e9 et fabriqu\u00e9 artisanalement dans la coop\u00e9rative de Kampatraco au Cambodge par un groupe de 39 producteurs bio. Activit\u00e9 de contre-saison, le sucre de fleur de palmier apporte aux producteurs un revenu compl\u00e9mentaire \u00e0 la culture du riz, et offre des perspectives \u00e0 la coop\u00e9rative.\nIGP et IG bas\nSaviez-vous que le sucre de palmier\u00a0de Kampong Speu\u00a0poss\u00e8de une indication g\u00e9ographique prot\u00e9g\u00e9e ?\u00a0La deuxi\u00e8me au Cambodge apr\u00e8s le poivre de Kampot ? Celle-ci garantit aux consommateurs la qualit\u00e9 et l\u2019origine du produit. Autre avantage du sucre de palmier: son indice glyc\u00e9mique bas (30 pour le sucre de fleur de palmier contre 65 pour le sucre de canne).\u00a0A noter, qu\u2019il poss\u00e8de un pouvoir sucrant l\u00e9g\u00e8rement sup\u00e9rieur au sucre de canne.\u00a0Si vous \u00eates curieux d\u2019en savoir davantage, visitez le site\u00a0:\nhttp://www.kampongspeupalmsugar.org/fr\nSexy & Delicious\nNon raffin\u00e9, le sucre de palmier de Kampong Speu a une jolie couleur jaune-marron avec une texture douce et a\u00e9rienne. Il a un go\u00fbt caram\u00e9lis\u00e9, l\u00e9g\u00e8rement \u00e9pic\u00e9 et mielleux, ainsi que quelques notes fruit\u00e9es. Il apporte \u00e0 ce cake \u00e0 la poire une texture moelleuse, une jolie couleur dor\u00e9e et un parfum caract\u00e9ristique tr\u00e8s agr\u00e9able. Ce sucre peut \u00eatre utilis\u00e9 dans tous les desserts et pr\u00e9parations sucr\u00e9es : g\u00e2teaux, yaourts\u2026 Je l\u2019ai notamment utilis\u00e9 pour sucrer mon croustillant d\u2019amande.\nCommerce \u00e9quitable\nAu del\u00e0 d\u2019un produit de qualit\u00e9,\nCaf\u00e9 Michel | Terra Etica\ngarantit sa tra\u00e7abilit\u00e9 du producteur au consommateur gr\u00e2ce \u00e0 une fili\u00e8re courte. Le Sucre de Palmier de Kampong Speu est issu du commerce \u00e9quitable, il b\u00e9n\u00e9ficie des labels SPP et WFTO. A travers un prix juste garanti dans la dur\u00e9e, Caf\u00e9 Michel | Terra Etica soutient le savoir-faire traditionnel ancestral des petits producteurs tout en contribuant \u00e0 leur d\u00e9veloppement et leur autonomisation.\nCake Poire Amande au sucre de palmier de Kampong Speu\nDaniela\nUn cake moelleux et savoureux \u00e0 la poire recouvert d\u2019un croustillant aux amandes et d\u2019un l\u00e9ger gla\u00e7age au sirop d\u2019\u00e9rable. Ma premi\u00e8re recette avec du sucre de palmier de Kampong Speu et certainement pas la derni\u00e8re !\n4.51\n/5 avec\n89\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\n10\nminutes\nmin\nType de plat\nBrunch, Dessert, Go\u00fbter\nPortions\n10\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nCake \u00e0 la poire\n3\npoires\nwilliams pas m\u00fbres\n100\ng\nde sucre de palmier de Kampong Speu\n125\ng\nde beurre doux fondu\n2\noeufs\n1\nc\u00e0c de bicarbonate de soude\n1\nc\u00e0c de levure\n\u00bd\nc\u00e0c de sel\n1\nc\u00e0c de cannelle\n\u00bd\nc\u00e0c d\u2019extrait de vanille\n240\ng\nde farine\nCroustillant amande (optionnel)\n90\ng\nd\u2019amandes effil\u00e9es\n1\nblanc d\u2019oeuf\n1\nc\u00e0s de sucre de palmier de Kampong Speu\n\u00bc\nc\u00e0c de cannelle\nGla\u00e7age (optionnel)\n50\ng\nde sucre glace\n1\nc\u00e0s de lait d\u2019amande\n1\nc\u00e0c de miel ou sirop d\u2019\u00e9rable\nInstructions\nPr\u00e9paration du croustillant amande :\nPr\u00e9chauffer le four \u00e0 175\u00b0C.\nCommencer par pr\u00e9parer le croustillant aux amandes. Dans un saladier, battre le blanc d\u2019\u0153uf jusqu\u2019\u00e0 ce qu\u2019il soit l\u00e9g\u00e8rement mousseux.\nAjouter les amandes effil\u00e9es, le sucre et la cannelle au blanc d\u2019oeuf. M\u00e9langer soigneusement, jusqu\u2019\u00e0 ce que toutes les amandes soient enrob\u00e9es.\nTransf\u00e9rer le m\u00e9lange d\u2019amandes sur une plaque recouverte de papier cuisson et l\u2019\u00e9taler en une seule couche.\nEnfourner et cuire 5 minutes. Retirer du four et \u00e0 l\u2019aide d\u2019une spatule, d\u00e9coller le m\u00e9lange du papier cuisson et remuer le m\u00e9lange. Enfourner de nouveau et cuire encore 8 \u00e0 10 minutes, jusqu\u2019\u00e0 ce que le m\u00e9lange soit dor\u00e9.\nSortir du four et r\u00e9server dans un endroit sec. Le m\u00e9lange va durcir et devenir croustillant une fois bien refroidi.\nPr\u00e9paration du cake \u00e0 la poire :\nPeler, \u00e9p\u00e9piner et r\u00e2p\u00e9es grossi\u00e8rement 2 poires et r\u00e9server.\nBattre en cr\u00e8me le sucre et le beurre \u00e0 haute vitesse dans le bol du batteur \u00e9lectrique (\u00e0 l\u2019aide du batteur plat \u00e0 bords flexibles). R\u00e9duire la vitesse et ajouter les \u0153ufs (un \u00e0 la fois), l\u2019extrait de vanille et les poires r\u00e2p\u00e9es. Continuer \u00e0 m\u00e9langer jusqu\u2019\u00e0 ce que la poire soit bien incorpor\u00e9e.\nDans un autre saladier, m\u00e9langer la farine, le bicarbonate de soude, la levure, le sel et la cannelle. Verser le m\u00e9lange de farine progressivement sur le m\u00e9lange avec les poires r\u00e2p\u00e9es.\nPeler, \u00e9p\u00e9piner et couper en d\u00e9s la troisi\u00e8me poire et ajouter au m\u00e9lange puis m\u00e9langer doucement.\nGraisser et fariner le moule \u00e0 cake. Verser la p\u00e2te dans le moule et lisser le dessus pour \u00e9galiser.\nEnfourner et cuire environ 55 minutes, jusqu\u2019\u00e0 ce que la pointe d\u2019un couteau ins\u00e9r\u00e9e au centre du cake en ressorte propre. Sortir du four et laisser refroidir 15 min puis transf\u00e9rer sur une grille de refroidissement.\nPr\u00e9paration du gla\u00e7age :\nM\u00e9langer le sucre glace, le lait d\u2019amande et le sirop d\u2019\u00e9rable ou le miel et r\u00e9server.\nUne fois le cake refroidi, recouvrir de gla\u00e7age et saupoudrer de croustillant amande. Le cake \u00e0 la poire se conserve 3 jours au r\u00e9frig\u00e9rateur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour les fans de cakes, voici quelques unes de mes recettes pr\u00e9f\u00e9r\u00e9es\n: cake pomme cannelle fa\u00e7on pudding\net\ncake chocolat poire poch\u00e9es\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nG\u00e2teaux et Cakes\n,\nNon class\u00e9\n,\nPoire\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncake\n,\ncake aux poires\n,\nid\u00e9e de dessert fruit\n,\nid\u00e9e dessert poire\n,\nid\u00e9e recette poires\n,\nid\u00e9es cake fruits\n,\nque faire avec des poires\n,\nquel dessert faire avec des poires\n,\nsucre de palmier\nCheesecake fa\u00e7on Baklava\nGaufres Sal\u00e9es Butternut et Raclette\n3 thoughts on \u201cCake Poire Amande au sucre de palmier de Kampong Speu\u201d\nElodie\ndit\u00a0:\n24 octobre 2021 \u00e0 18 h 04 min\nCombien de farine ?  \u00c7a m\u2019a l\u2019air d\u00e9licieux\u2026.. Miam. \u00c0 essayer d\u00e8s que j\u2019aurais ma reponse\ud83d\ude1c\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n24 octobre 2021 \u00e0 18 h 31 min\nOooh merci ! On avait oubli\u00e9 ce \u00ab\u00a0petit d\u00e9tail\u00a0\u00bb : 240g ! C\u2019est corrig\u00e9 !\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n24 octobre 2021 \u00e0 20 h 17 min\nTon cake est vraiment magnifique !\nchargement\u2026\nR\u00e9pondre\n4.51 from 89 votes (\n87 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

@@ -1,0 +1,597 @@
+{
+  "metadata": {
+    "title": "Lasagnes",
+    "description": "Des lasagnes traditionnelles avec une sauce bolognaise maison et une béchamel crémeuse, gratinées au four.",
+    "servings": 6,
+    "prepTime": "PT1H",
+    "cookTime": "PT2H",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "lasagnes",
+      "italien",
+      "pâtes",
+      "bolognaise",
+      "béchamel",
+      "gratin"
+    ],
+    "imageUrl": null,
+    "nationality": "Italian",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Planter un couteau pour vérifier si la pâte est cuite.",
+      "La béchamel ne doit être ni trop liquide ni trop épaisse."
+    ],
+    "slug": "lasagnes",
+    "originalContent": "\nLasagnes\n\n\n\nTemps total : minimum 3h\nTemps de préparation : 1h\nTemps de cuisson : 2h\n\nPour 6 personnes\n\nIngrédients :\n\nPâtes à lasagnes\n100g de parmesan\nPp pp\nPour la bolognaise :\nHuile d’olive\nUn gros oignon\nUne branche de céleri\n3-4 carottes\n500g de viande hachée (les vrais mettent moitié porc mais seulement du bœuf c'est cool aussi)\n4-5 tomates\nCoulis de tomate (ou concentré)\n2 gousses d’ail\nCoulis de tomates\nThym, laurier, origan\n\nPour la béchamel :\n50g de beurre\n50g de farine\n1L de lait\nNoix de muscade\nSel, poivre\n\nPréparation :\n- Préparer la bolognaise (cf. Recette sauce bolognaise)\n- Préchauffer le four à 180°C\n- Dans une casserole faire un roux avec le beurre et la farine :\n- Faire fondre le beurre à feu doux\n-  Ajouter la farine tout en remuant avec une cuillère sans laisser colorer, la farine doit juste épaissir\n- Verser le lait progressivement, sans cesser de remuer, jusqu’à ce que la sauce épaississe\n- Assaisonner avec le sel, poivre et la muscade\nN.B. : la béchamel ne doit être trop liquide ni trop épaisse \n- Dans un plat dresser les lasagnes de cette façon :\nSauce béchamel au fond\nPâtes\nSauce bolognaise\nParmesan\nBéchamel\nSauce bolognaise\nParmesan\nBéchamel\nPâtes\nBéchamel\nParmesan\n- Enfourner puis laisser cuire pendant 30/40 min (planter un couteau pour sentir si la pâte est cuite)\nMain recipe image: temp_image_recipe-gen-20260208054535-d01187b7.png",
+    "createdAt": "2026-02-08T05:47:20.491188",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 125.0,
+    "totalCookingTime": 90.0,
+    "sourceImageUrl": "lasagnes.png",
+    "image": "images/lasagnes.png",
+    "nutritionPerServing": {
+      "calories": 531.1,
+      "protein": 28.9,
+      "fat": 33.6,
+      "carbs": 28.8,
+      "fiber": 4.2,
+      "confidence": "medium",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 14,
+      "totalIngredients": 14,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein"
+    ],
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "lasagna_sheets",
+      "name": "Pâtes à lasagnes",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "quantité selon la taille du plat",
+      "optional": false,
+      "name_en": "Lasagna noodles"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "olive_oil",
+      "name": "Huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé",
+      "notes": "gros",
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "celery",
+      "name": "céleri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé",
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées",
+      "notes": "3-4 carottes",
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "ground_meat",
+      "name": "viande hachée",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": null,
+      "notes": "bœuf ou moitié porc/moitié bœuf",
+      "optional": false,
+      "name_en": "Ground beef"
+    },
+    {
+      "id": "tomatoes",
+      "name": "tomates",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées",
+      "notes": "4-5 tomates",
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentré de tomate",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou coulis de tomate",
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressé",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "tomato_sauce",
+      "name": "coulis de tomates",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato sauce"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "laurier",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 1.0,
+      "unit": "L",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": "râpée",
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "casserole",
+    "plat à gratin",
+    "four"
+  ],
+  "steps": [
+    {
+      "id": "make_bolognese",
+      "action": "Préparer la sauce bolognaise selon la recette : faire revenir l'oignon émincé, le céleri coupé et les carottes coupées dans l'huile d'olive. Ajouter la viande hachée et faire revenir. Ajouter les tomates coupées, le concentré de tomate, l'ail pressé, le coulis de tomates, le thym, le laurier et l'origan. Laisser mijoter.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bolognaise",
+      "uses": [
+        "olive_oil",
+        "onion",
+        "celery",
+        "carrots",
+        "ground_meat",
+        "tomatoes",
+        "tomato_paste",
+        "garlic",
+        "tomato_sauce",
+        "thyme",
+        "bay_leaf",
+        "oregano"
+      ],
+      "produces": "sauce_bolognaise",
+      "requires": [],
+      "visualCue": "sauce épaissie et parfumée"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Dans une casserole, faire fondre le beurre à feu doux.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "béchamel",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": "beurre fondu"
+    },
+    {
+      "id": "make_roux",
+      "action": "Ajouter la farine tout en remuant avec une cuillère sans laisser colorer, la farine doit juste épaissir.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "béchamel",
+      "uses": [
+        "melted_butter",
+        "flour"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": "mélange épaissi mais non coloré"
+    },
+    {
+      "id": "add_milk",
+      "action": "Verser le lait progressivement, sans cesser de remuer, jusqu'à ce que la sauce épaississe.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "béchamel",
+      "uses": [
+        "roux",
+        "milk"
+      ],
+      "produces": "béchamel_base",
+      "requires": [],
+      "visualCue": "sauce épaissie"
+    },
+    {
+      "id": "season_béchamel",
+      "action": "Assaisonner avec le sel, poivre et la muscade râpée.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "béchamel",
+      "uses": [
+        "béchamel_base",
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "produces": "béchamel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_layer",
+      "action": "Dans un plat à gratin, déposer une couche de béchamel au fond.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "béchamel"
+      ],
+      "produces": "base_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_layer",
+      "action": "Ajouter une couche de pâtes à lasagnes sur la béchamel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "base_layer",
+        "lasagna_sheets"
+      ],
+      "produces": "pasta_layer_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "third_layer",
+      "action": "Ajouter une couche de sauce bolognaise sur les pâtes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pasta_layer_1",
+        "sauce_bolognaise"
+      ],
+      "produces": "bolognese_layer_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fourth_layer",
+      "action": "Saupoudrer de parmesan râpé.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "bolognese_layer_1",
+        "parmesan"
+      ],
+      "produces": "cheese_layer_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fifth_layer",
+      "action": "Ajouter une couche de béchamel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cheese_layer_1",
+        "béchamel"
+      ],
+      "produces": "béchamel_layer_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sixth_layer",
+      "action": "Ajouter une couche de sauce bolognaise.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "béchamel_layer_1",
+        "sauce_bolognaise"
+      ],
+      "produces": "bolognese_layer_2",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "seventh_layer",
+      "action": "Saupoudrer de parmesan râpé.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "bolognese_layer_2",
+        "parmesan"
+      ],
+      "produces": "cheese_layer_2",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "eighth_layer",
+      "action": "Ajouter une couche de béchamel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cheese_layer_2",
+        "béchamel"
+      ],
+      "produces": "béchamel_layer_2",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ninth_layer",
+      "action": "Ajouter une couche de pâtes à lasagnes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "béchamel_layer_2",
+        "lasagna_sheets"
+      ],
+      "produces": "pasta_layer_2",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "tenth_layer",
+      "action": "Ajouter une couche de béchamel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pasta_layer_2",
+        "béchamel"
+      ],
+      "produces": "béchamel_layer_3",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "eleventh_layer",
+      "action": "Saupoudrer de parmesan râpé.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "béchamel_layer_3",
+        "parmesan"
+      ],
+      "produces": "assembled_lasagna",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_lasagna",
+      "action": "Enfourner et laisser cuire pendant 35 minutes (planter un couteau pour sentir si la pâte est cuite).",
+      "duration": "PT35M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage",
+      "uses": [
+        "assembled_lasagna"
+      ],
+      "produces": "baked_lasagna",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": "doré et gratiné"
+    }
+  ],
+  "finalState": "baked_lasagna",
+  "originalText": "Lasagnes\n\n\n\nTemps total : minimum 3h\nTemps de préparation : 1h\nTemps de cuisson : 2h\n\nPour 6 personnes\n\nIngrédients :\n\nPâtes à lasagnes\n100g de parmesan\nPp pp\nPour la bolognaise :\nHuile d’olive\nUn gros oignon\nUne branche de céleri\n3-4 carottes\n500g de viande hachée (les vrais mettent moitié porc mais seulement du bœuf c'est cool aussi)\n4-5 tomates\nCoulis de tomate (ou concentré)\n2 gousses d’ail\nCoulis de tomates\nThym, laurier, origan\n\nPour la béchamel :\n50g de beurre\n50g de farine\n1L de lait\nNoix de muscade\nSel, poivre\n\nPréparation :\n- Préparer la bolognaise (cf. Recette sauce bolognaise)\n- Préchauffer le four à 180°C\n- Dans une casserole faire un roux avec le beurre et la farine :\n- Faire fondre le beurre à feu doux\n-  Ajouter la farine tout en remuant avec une cuillère sans laisser colorer, la farine doit juste épaissir\n- Verser le lait progressivement, sans cesser de remuer, jusqu’à ce que la sauce épaississe\n- Assaisonner avec le sel, poivre et la muscade\nN.B. : la béchamel ne doit être trop liquide ni trop épaisse \n- Dans un plat dresser les lasagnes de cette façon :\nSauce béchamel au fond\nPâtes\nSauce bolognaise\nParmesan\nBéchamel\nSauce bolognaise\nParmesan\nBéchamel\nPâtes\nBéchamel\nParmesan\n- Enfourner puis laisser cuire pendant 30/40 min (planter un couteau pour sentir si la pâte est cuite)\nMain recipe image: temp_image_recipe-gen-20260208054535-d01187b7.png",
+  "totalCookingTime": 90.0
+}

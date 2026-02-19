@@ -1,0 +1,521 @@
+{
+  "metadata": {
+    "title": "Tourtes Vegan Potimarron et Ch\u00e2taignes",
+    "description": "Une tourte de No\u00ebl 100 % vegan avec une garniture pleine de caract\u00e8re, des saveurs d'hiver et un vrai twist gourmand. Le m\u00e9lange fonctionne \u00e0 merveille : potimarron, shiitak\u00e9s, ch\u00e2taignes, tofu fum\u00e9, \u00e9chalotes et c\u00e9leri.",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "noel",
+      "hiver",
+      "automne",
+      "tourte",
+      "potimarron",
+      "ch\u00e2taigne",
+      "tofu fum\u00e9",
+      "shiitak\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Tourte-sapin-Noel-1-of-5.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La recette supporte parfaitement d'\u00eatre pr\u00e9par\u00e9e la veille.",
+      "On peut les r\u00e9aliser en petit format, en version chausson, ou en grande tourte familiale.",
+      "Servir avec une salade verte ou des l\u00e9gumes racines au four."
+    ],
+    "slug": "tourtes-vegan-potimarron-et-chataignes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Tourte-sapin-Noel-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/12/08/tourtes-vegan-potimarron-et-chataignes/",
+    "image": "images/tourtes-vegan-potimarron-et-chataignes.webp",
+    "createdAt": "2026-02-09T20:51:35.127387",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 127.0,
+    "totalCookingTime": 92.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 117.3,
+      "protein": 3.6,
+      "fat": 4.4,
+      "carbs": 15.9,
+      "fiber": 2.8,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 10,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es",
+      "notes": "env 7",
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "celeri",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9e",
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "shiitakes",
+      "name": "shiitak\u00e9s",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "shiitake mushrooms"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "laurier",
+      "name": "laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuille",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "potimarron",
+      "name": "potimarron cru",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9 et coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "raw hokkaido pumpkin"
+    },
+    {
+      "id": "chataignes",
+      "name": "ch\u00e2taignes cuites",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "grossi\u00e8rement \u00e9miett\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chestnuts"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "tofu_fume",
+      "name": "tofu fum\u00e9",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "\u00e9miett\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked tofu"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "pate_vegan",
+      "name": "p\u00e2te vegan",
+      "quantity": 2.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegan p\u00e2t\u00e9"
+    },
+    {
+      "id": "creme_vegetale",
+      "name": "cr\u00e8me v\u00e9g\u00e9tale",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Non-dairy cream"
+    }
+  ],
+  "tools": [
+    "Emporte-pi\u00e8ce en forme de sapin (ou couteau)",
+    "Moules \u00e0 mini tourtes (pour la version mini tourtes)"
+  ],
+  "steps": [
+    {
+      "id": "prep_vegetables",
+      "action": "\u00c9mincer les \u00e9chalotes, le c\u00e9leri et les shiitak\u00e9s.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "echalotes",
+        "celeri",
+        "shiitakes"
+      ],
+      "produces": "vegetables_chopped",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faire chauffer une po\u00eale avec l'huile d'olive. Faire revenir les \u00e9chalotes, le c\u00e9leri et les shiitak\u00e9s avec le thym, le laurier et les gousses d'ail press\u00e9es.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "vegetables_chopped",
+        "huile_olive",
+        "thym",
+        "laurier",
+        "ail"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_filling",
+      "action": "Ajouter le potimarron en d\u00e9s, les ch\u00e2taignes \u00e9miett\u00e9es et l'eau. Faire revenir \u00e0 couvert en remuant de temps en temps, jusqu'\u00e0 ce que le potimarron se d\u00e9fasse.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "sauteed_vegetables",
+        "potimarron",
+        "chataignes",
+        "eau"
+      ],
+      "produces": "cooked_filling_base",
+      "requires": [],
+      "visualCue": "potimarron se d\u00e9fasse"
+    },
+    {
+      "id": "finish_filling",
+      "action": "En fin de cuisson, ajouter le tofu fum\u00e9 \u00e9miett\u00e9. Saler et poivrer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "cooked_filling_base",
+        "tofu_fume",
+        "sel",
+        "poivre"
+      ],
+      "produces": "filling_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven_sapins",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_sapins",
+      "uses": [],
+      "produces": "oven_preheated_sapins",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_pate_sapins",
+      "action": "\u00c0 l'aide d'un emporte-pi\u00e8ce en forme de sapin ou d'un couteau, d\u00e9couper des formes de sapins dans la p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_sapins",
+      "uses": [
+        "pate_vegan"
+      ],
+      "produces": "pate_sapins",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_sapins",
+      "action": "D\u00e9poser un peu de garniture sur un sapin, le couvrir d'un autre sapin et sceller les bords avec une fourchette.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "minis_sapins",
+      "uses": [
+        "pate_sapins",
+        "filling_complete"
+      ],
+      "produces": "sapins_assembles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_sapins",
+      "action": "D\u00e9poser les sapins sur une plaque couverte de papier cuisson.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_sapins",
+      "uses": [
+        "sapins_assembles"
+      ],
+      "produces": "sapins_on_tray",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_sapins",
+      "action": "Les badigeonner de cr\u00e8me v\u00e9g\u00e9tale et enfourner.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "minis_sapins",
+      "uses": [
+        "sapins_on_tray",
+        "creme_vegetale"
+      ],
+      "produces": "sapins_baked",
+      "requires": [
+        "oven_preheated_sapins"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven_tourtes",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [],
+      "produces": "oven_preheated_tourtes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_pate_disques",
+      "action": "D\u00e9couper des disques de p\u00e2te de la taille des moules. Huiler les moules et d\u00e9poser les disques de p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "pate_vegan"
+      ],
+      "produces": "pate_disques_moules",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_tourtes",
+      "action": "Remplir de garniture.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "pate_disques_moules",
+        "filling_complete"
+      ],
+      "produces": "tourtes_filled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_pate_couvercles",
+      "action": "D\u00e9couper un autre disque et, \u00e0 l'aide d'un emporte-pi\u00e8ce ou d'un couteau, d\u00e9couper un sapin au centre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "pate_vegan"
+      ],
+      "produces": "pate_couvercles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cover_tourtes",
+      "action": "D\u00e9poser ce disque au-dessus de la garniture et sceller les bords avec une fourchette.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "tourtes_filled",
+        "pate_couvercles"
+      ],
+      "produces": "tourtes_couvertes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_tourtes",
+      "action": "Transf\u00e9rer sur une plaque de cuisson, badigeonner de cr\u00e8me v\u00e9g\u00e9tale.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "tourtes_couvertes",
+        "creme_vegetale"
+      ],
+      "produces": "tourtes_on_tray",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tourtes",
+      "action": "Enfourner.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "minis_tourtes",
+      "uses": [
+        "tourtes_on_tray"
+      ],
+      "produces": "tourtes_baked",
+      "requires": [
+        "oven_preheated_tourtes"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "final_assembly",
+      "action": "Servir les sapins de p\u00e2te garnis et les mini tourtes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "sapins_baked",
+        "tourtes_baked"
+      ],
+      "produces": "tourtes_vegan_potimarron_chataignes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tourtes_vegan_potimarron_chataignes",
+  "originalText": "Tourtes Vegan Potimarron et Ch\u00e2taignes | la recette festive parfaite\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 d\u00e9cembre 2021\nTourtes Vegan Potimarron et Ch\u00e2taignes : les petites merveilles qui font No\u00ebl\nLes\ntourtes vegan potimarron et ch\u00e2taignes\n, c\u2019est le genre de\nrecette\nqu\u2019on n\u2019attend pas forc\u00e9ment\u2026 mais qui fait imm\u00e9diatement tilt quand on y\ngo\u00fbte\n. Une\ntourte de No\u00ebl 100 % vegan\navec une\ngarniture pleine de caract\u00e8re\n, des\nsaveurs d\u2019hiver\net un vrai\ntwist gourmand\n. Le m\u00e9lange fonctionne \u00e0 merveille :\npotimarron\n,\nshiitak\u00e9s\n,\nch\u00e2taignes\n,\ntofu fum\u00e9,\n\u00e9chalotes\net\nc\u00e9leri\n. Le tout envelopp\u00e9 dans une\np\u00e2te vegan\nqui\ndore\nparfaitement au\nfour\n. On obtient des\npetites tourtes croustillantes\ndehors,\nfondantes\ndedans\u2026 et irr\u00e9sistiblement\nfestives\n. Ces\nTourtes Vegan Potimarron et Ch\u00e2taignes\nsont id\u00e9ales pour un\nNo\u00ebl sans viande\n. Elles sont\nfaciles \u00e0 servir\n,\n\u00e9l\u00e9gantes dans l\u2019assiette\net\nbluffantes\nsans aucun compromis. En format mini, en\nchaussons\nou en\ngrande tourte familiale\n, elles s\u2019adaptent \u00e0 toutes les envies et \u00e0 toutes les\ntabl\u00e9es\n.\nTable des mati\u00e8res\n1\nLe potimarron, douceur d\u2019hiver et alli\u00e9 des recettes r\u00e9confortantes\n2\nLes champignons, l\u2019ingr\u00e9dient qui apporte toute la profondeur\n3\nTourtes de No\u00ebl Vegan au Potimarron et Ch\u00e2taignes\n4\nLe tofu fum\u00e9, le petit twist qui change tout\n5\nUne p\u00e2te vegan qui dore \u00e0 merveille et fait toute la diff\u00e9rence\n6\nUne recette qui se pr\u00e9pare la veille sans perdre son croustillant\nLe potimarron, douceur d\u2019hiver et alli\u00e9 des recettes r\u00e9confortantes\nLe potimarron, c\u2019est un peu la star discr\u00e8te de la cuisine d\u2019hiver : doux, l\u00e9g\u00e8rement sucr\u00e9, riche en fibres et en b\u00eata-carot\u00e8ne. Il apporte autant de go\u00fbt que de couleur dans les plats. Sa texture fondante une fois cuite est id\u00e9ale pour les tourtes, car elle se m\u00eale parfaitement aux ch\u00e2taignes et aux champignons sans d\u00e9tremper la p\u00e2te. C\u2019est aussi un l\u00e9gume ultra polyvalent, qui passe aussi bien dans les plats sal\u00e9s que dans les desserts. Dans ces tourtes, il apporte cette douceur orang\u00e9e et enveloppante qui fait toute la diff\u00e9rence. Le genre d\u2019ingr\u00e9dient qui met de la chaleur dans l\u2019assiette d\u00e8s la premi\u00e8re bouch\u00e9e.\nEt si, comme nous, vous adorez cuisiner le potimarron, allez faire un tour du c\u00f4t\u00e9 de nos recettes pr\u00e9f\u00e9r\u00e9es ! Le\ngratin de potimarron au St-Nectaire\n, la\nsalade d\u2019automne potimarron, betterave et lentilles\n, le\nvelout\u00e9 de potimarron aux saveurs tha\u00ef\n\u2026 ou m\u00eame le\ncookie g\u00e9ant potimarron chocolat\nsi vous avez envie d\u2019une version sucr\u00e9e hyper moelleuse.\nLes champignons, l\u2019ingr\u00e9dient qui apporte toute la profondeur\nDans ces tourtes, les champignons jouent un r\u00f4le essentiel. Les shiitak\u00e9s, avec leur parfum bois\u00e9 et leur texture un peu ferme, apportent ce c\u00f4t\u00e9 \u201cgourmet\u201d. Ils se m\u00ealent parfaitement au potimarron fondant et aux ch\u00e2taignes pour cr\u00e9er une garniture riche, savoureuse et pleine de relief. Les champignons concentrent les saveurs, am\u00e8nent de l\u2019umami, et donnent \u00e0 la tourte un parfum d\u2019hiver irr\u00e9sistible. Une vraie valeur s\u00fbre pour des recettes festives. Si vous aimez cuisiner les champignons, n\u2019h\u00e9sitez pas \u00e0 explorer d\u2019autres id\u00e9es du blog autour de ce fruit de saison : le\np\u00e2t\u00e9 champignons noix\n, les\nbouch\u00e9es vegan \u00e0 la polenta et champignons caram\u00e9lis\u00e9s\n, ou encore notre autre recette star aux saveurs bois\u00e9es : les\npaupiettes v\u00e9g\u00e9tales aux morilles\n.\nTourtes de No\u00ebl Vegan au Potimarron et Ch\u00e2taignes\nNatacha\n4.50\n/5 avec\n128\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n6\ntourtes de 11.5cm de diam\u00e8tre\nIngr\u00e9dients\n1x\n2x\n3x\n150\ng\nd\u2019\u00e9chalotes\nenv 7\n1\nbranche de c\u00e9leri\n100\ng\nde shiitak\u00e9s\n\u00e0 d\u00e9faut des champignons de paris\n1\nc\u00e0s d\u2019huile d\u2019olive\n\u00bd\nc\u00e0c de thym\n1\nfeuille de laurier\n2\ngousses d\u2019ail\n180\ng\nde potimarron cru\n100\ng\nde ch\u00e2taignes cuites\n100\nml\nd\u2019eau\n50\ng\nde tofu fum\u00e9\nsel\npoivre\n2\nrouleaux de p\u00e2te vegan\n3\nc\u00e0s de cr\u00e8me v\u00e9g\u00e9tale\nou 1 oeuf\nInstructions\nPour la garniture\n\u00c9mincer les \u00e9chalotes, le c\u00e9leri et les shiitak\u00e9s.\nFaire chauffer une po\u00eale avec l\u2019huile d\u2019olive. Faire revenir les \u00e9chalotes, c\u00e9leri et shiitak\u00e9s avec le thym, le laurier et les gousses d\u2019ail press\u00e9es.\n\u00c9plucher et couper le potimarron en d\u00e9s. \u00c9mietter grossi\u00e8rement les ch\u00e2taignes. Les ajouter \u00e0 la po\u00eale avec l\u2019eau. Faire revenir 20min \u00e0 couvert en remuant de temps en temps.\nC\u2019est cuit quand le potimarron se d\u00e9fait.\nEn fin de cuisson, ajouter le tofu fum\u00e9 que vous aurez \u00e9miett\u00e9 au pr\u00e9alable.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPour les minis sapins\nA l\u2019aide d\u2019emporte-pi\u00e8ces en forme de sapins, ou avec un couteau, d\u00e9couper les formes des sapins.\nD\u00e9poser un peu de garniture sur un sapin, le couvrir d\u2019un autre sapin et sceller les bords avec une fourchette.\nD\u00e9poser les sapins sur une plaque couverte d\u2019un papier cuisson.\nLes badigeonner de cr\u00e8me v\u00e9g\u00e9tale et enfourner pour 15min.\nPour les minis tourtes\nD\u00e9couper des disques de p\u00e2tes de la taille de vos moules. Huiler les moules et d\u00e9poser les disques de p\u00e2te par-dessus.\nRemplir de garniture.\nD\u00e9couper un autre disque et, \u00e0 l\u2019aide d\u2019un emporte-pi\u00e8ce ou d\u2019un couteau, d\u00e9couper un sapin.\nD\u00e9poser le disque au-dessus de la garniture et sceller les bords avec une fourchette.\nTransf\u00e9rer sur une plaque de cuisson et badigeonner de cr\u00e8me.\nEnfourner pour 20min\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLe tofu fum\u00e9, le petit twist qui change tout\nDans ces tourtes vegan, le tofu fum\u00e9 joue un r\u00f4le cl\u00e9. Il apporte ce go\u00fbt l\u00e9g\u00e8rement fum\u00e9, presque bois\u00e9. \u00c9miett\u00e9 en fin de cuisson, il se m\u00eale parfaitement aux l\u00e9gumes fondants et aux ch\u00e2taignes, donnant de la profondeur et un vrai relief \u00e0 la garniture. C\u2019est lui qui vient r\u00e9veiller l\u2019ensemble, apporter du peps, et donner ce petit c\u00f4t\u00e9 \u201cr\u00f4ti traditionnel\u201d\u2026 sans viande et sans effort.  Le tofu fum\u00e9 est aussi un excellent alli\u00e9 en cuisine vegan : riche en prot\u00e9ines et facile \u00e0 cuisiner. Si vous aimez son go\u00fbt unique, vous pouvez aussi tester notre\ntofu au caramel\nou encore notre\ntofu au gochujang et haricots verts\n.\nUne p\u00e2te vegan qui dore \u00e0 merveille et fait toute la diff\u00e9rence\nPour ces tourtes, tout repose aussi sur la p\u00e2te. Une bonne p\u00e2te vegan, bien souple, facile \u00e0 travailler, qui dore joliment au four et qui offre ce petit croustillant indispensable dans une tourte de f\u00eate. Elle enveloppe la garniture sans l\u2019alourdir, garde une belle tenue \u00e0 la d\u00e9coupe et apporte ce go\u00fbt d\u00e9licat qui fait vraiment \u201cplat de No\u00ebl\u201d. Vous pouvez utiliser une p\u00e2te du commerce, mais si vous aimez mettre les mains dans la farine, vous trouverez sur le blog plusieurs alternatives maison d\u00e9licieuses et simples \u00e0 pr\u00e9parer : notre\np\u00e2te bris\u00e9e au sarrasin sans gluten\n, la\np\u00e2te \u00e0 tarte bris\u00e9e sal\u00e9e vegan\nou encore la\np\u00e2te bris\u00e9e maison\n, un grand classique toujours fiable.\nUne recette qui se pr\u00e9pare la veille sans perdre son croustillant\nCes tourtes ont un avantage pr\u00e9cieux en p\u00e9riode de f\u00eates. Elles supportent parfaitement d\u2019\u00eatre pr\u00e9par\u00e9es la veille. La garniture n\u2019est pas trop humide, ce qui \u00e9vite de d\u00e9tremper la p\u00e2te, et la cuisson du lendemain redonne tout son croustillant \u00e0 l\u2019ext\u00e9rieur tout en r\u00e9chauffant doucement l\u2019int\u00e9rieur. Elles sont aussi tr\u00e8s flexibles. On peut les r\u00e9aliser en petit format, comme sur les photos, en version chausson pour un service plus ludique, ou en grande tourte familiale \u00e0 partager au centre de la table. Quel que soit le format choisi, il suffit de les glisser au four avant de passer \u00e0 table. Et l\u2019odeur qui s\u2019en d\u00e9gage met instantan\u00e9ment tout le monde dans l\u2019ambiance de No\u00ebl. Vous pouvez avec une salade verte, ou des\nl\u00e9gumes racines au four\n.\nCes tourtes Vegan Potimarron et Ch\u00e2taignes r\u00e9unissent exactement tout ce qu\u2019on aime dans un plat de f\u00eate v\u00e9g\u00e9tal ! Une garniture fondante et parfum\u00e9e, une p\u00e2te dor\u00e9e qui croustille, des ingr\u00e9dients de saison qui se marient parfaitement, et ce petit twist fum\u00e9 qui rend chaque bouch\u00e9e vraiment festive. Faciles \u00e0 servir, simples \u00e0 pr\u00e9parer \u00e0 l\u2019avance et \u00e9l\u00e9gantes dans l\u2019assiette, elles ont tout pour devenir l\u2019un des incontournables d\u2019un repas de No\u00ebl sans viande.\nVous voulez composer un menu complet pour les f\u00eates ? Trouvez de jolies id\u00e9es pour l\u2019\nap\u00e9ritif\net piochez dans\nnos plats pour un No\u00ebl v\u00e9g\u00e9tarien ou vegan\n. Cl\u00f4turez votre repas en beaut\u00e9 avec\nnos desserts vegans de No\u00ebl\n.\nEt si vous avez envie d\u2019encore plus d\u2019inspiration, retrouvez toutes nos id\u00e9es dans notre\neBook sp\u00e9cial recettes de No\u00ebl\n, pens\u00e9 pour vous accompagner dans la cr\u00e9ation d\u2019un repas festif enti\u00e8rement v\u00e9g\u00e9tal, simple et d\u00e9licieux.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourge\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\nidee noel vegetarien\n,\nid\u00e9e plat noel\n,\nidee recette noel\n,\nnoel vegetarien\n,\nplat noel\n,\nrecette pour noel vegetarien\n,\nrecette tourte v\u00e9g\u00e9tarienne de noel\n,\ntourte noel\n,\ntourte vegan\n,\ntourte vegan noel\n,\ntourte vegetarienne\nR\u00f4tis Vegan \u00e0 la Ch\u00e2taigne : le plat bluffant pour un No\u00ebl sans viande\nBaos Po\u00eal\u00e9s V\u00e9g\u00e9tariens Faciles\n4 thoughts on \u201cTourtes Vegan Potimarron et Ch\u00e2taignes : les petites merveilles qui font No\u00ebl\u201d\nLadyMilonguera\ndit\u00a0:\n8 d\u00e9cembre 2021 \u00e0 14 h 50 min\nCette jolie tourte n\u2019est pas pour me d\u00e9plaire.\nchargement\u2026\nR\u00e9pondre\nmicky\ndit\u00a0:\n13 d\u00e9cembre 2021 \u00e0 12 h 44 min\nbonjour je compte bien faire cette tourte bien app\u00e9tissante, mais qu\u2019est ce que de la pate vegan? peut on faire soi m\u00eame une pate maison auquel cas sur quelle type de recette de pate dois je m\u2019orienter (pate feuillet\u00e9e, bris\u00e9e?\u2026) merci pour votre r\u00e9ponse\nchargement\u2026\nR\u00e9pondre\nPing\u00a0:\nR\u00f4ti, paupiettes, tourte : trois plats traditionnels fran\u00e7ais revisit\u00e9s \u00e0 la sauce v\u00e9g\u00e9'\nSalantha\ndit\u00a0:\n22 d\u00e9cembre 2023 \u00e0 21 h 30 min\nBonsoir, peut-on remplacer les champignons par un autre l\u00e9gume?\nMerci\u263a\ufe0f\nchargement\u2026\nR\u00e9pondre\n4.50 from 128 votes (\n126 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 92.0
+}

@@ -1,0 +1,535 @@
+{
+  "metadata": {
+    "title": "Layer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te",
+    "description": "Un layer cake chocolat garni de cr\u00e8me au beurre de cacahu\u00e8te. BOUM ! Laissez-vous tenter par une part de ce g\u00e2teau d\u00e9cadent associant la gourmandise du chocolat et la douceur d'une cr\u00e8me au beurre de cacahu\u00e8te. Un v\u00e9ritable d\u00e9lice !",
+    "servings": 10,
+    "prepTime": "PT45M",
+    "cookTime": "PT35M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "beurre de cacahuete",
+      "chocolat",
+      "cr\u00e8me au beurre de cacahu\u00e8te",
+      "g\u00e2teau d'anniversaire",
+      "layer cake"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Layer-cake-choco-cacahuete-8-of-11.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le g\u00e2teau se conserve 3 jours au r\u00e9frig\u00e9rateur.",
+      "Sortir le g\u00e2teau une ou plusieurs dizaines de minutes avant de servir en fonction du temps qu'il a pass\u00e9 au frais.",
+      "Parfait pour les anniversaires et les occasions sp\u00e9ciales.",
+      "Si vous n'avez pas deux moules, vous pouvez cuire les g\u00e2teaux en 2 temps. Ils doivent avoir compl\u00e8tement refroidis avant le montage."
+    ],
+    "slug": "layer-cake-chocolat-et-creme-au-beurre-de-cacahuete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Layer-cake-choco-cacahuete-8-of-11.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/03/24/layer-cake-chocolat-et-creme-au-beurre-de-cacahuete/",
+    "image": "images/layer-cake-chocolat-et-creme-au-beurre-de-cacahuete.webp",
+    "createdAt": "2026-02-09T21:10:27.412019",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 105.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 451.1,
+      "protein": 8.6,
+      "fat": 23.3,
+      "carbs": 55.8,
+      "fiber": 3.8,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 10,
+      "totalIngredients": 13,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "chocolat_noir",
+      "name": "chocolat noir p\u00e2tissier",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark baking chocolate"
+    },
+    {
+      "id": "cafe",
+      "name": "caf\u00e9 cors\u00e9",
+      "quantity": 160.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": "chaud",
+      "notes": null,
+      "optional": false,
+      "name_en": "Strong coffee"
+    },
+    {
+      "id": "cacao",
+      "name": "cacao en poudre",
+      "quantity": 35.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cocoa powder"
+    },
+    {
+      "id": "lait_ribot",
+      "name": "lait ribot ou ferment\u00e9e",
+      "quantity": 125.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Buttermilk or fermented milk"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "bicarbonate",
+      "name": "bicarbonate de soude",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre_gateau",
+      "name": "beurre doux",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre_canne",
+      "name": "sucre de canne",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cane sugar"
+    },
+    {
+      "id": "vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "oeufs",
+      "name": "\u0153ufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "saint_moret",
+      "name": "Saint Moret",
+      "quantity": 110.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint Moret cheese"
+    },
+    {
+      "id": "beurre_creme",
+      "name": "beurre doux",
+      "quantity": 55.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre_glace",
+      "name": "sucre glace",
+      "quantity": 330.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "beurre_cacahuete",
+      "name": "beurre de cacahu\u00e8te cr\u00e9meux",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Creamy peanut butter"
+    },
+    {
+      "id": "cacahuetes",
+      "name": "cacahu\u00e8tes en brisure",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Peanut pieces"
+    }
+  ],
+  "tools": [
+    "2 moules \u00e0 g\u00e2teaux ronds de 15cm \u00e0 17cm",
+    "Batteur \u00e9lectrique ou batteur sur socle",
+    "Poche \u00e0 douille avec embout rond",
+    "Poche \u00e0 douille avec embout \u00e9toil\u00e9 ou cannel\u00e9 (pour la d\u00e9co)"
+  ],
+  "steps": [
+    {
+      "id": "melt_chocolate",
+      "action": "Faire fondre le chocolat noir au bain marie et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "chocolat_noir"
+      ],
+      "produces": "chocolate_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_cacao_cafe",
+      "action": "M\u00e9langer au fouet la poudre de cacao et le caf\u00e9 chaud jusqu'\u00e0 ce que le m\u00e9lange soit lisse, puis incorporer le lait ribot et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "cacao",
+        "cafe",
+        "lait_ribot"
+      ],
+      "produces": "cafe_mixture",
+      "requires": [],
+      "visualCue": "lisse"
+    },
+    {
+      "id": "sift_dry_ingredients",
+      "action": "Tamiser ensemble la farine, le bicarbonate de soude et le sel et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "farine",
+        "bicarbonate",
+        "sel"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cream_butter_sugar",
+      "action": "Placer le beurre, le sucre et l'extrait de vanille dans un grand bol et fouetter avec un batteur \u00e9lectrique jusqu'\u00e0 ce que le m\u00e9lange soit lisse et cr\u00e9meux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "beurre_gateau",
+        "sucre_canne",
+        "vanille"
+      ],
+      "produces": "creamed_butter_sugar",
+      "requires": [],
+      "visualCue": "lisse et cr\u00e9meux"
+    },
+    {
+      "id": "add_eggs_chocolate",
+      "action": "Incorporer les \u0153ufs un par un, en fouettant bien apr\u00e8s chaque ajout, puis incorporer le chocolat fondu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "creamed_butter_sugar",
+        "oeufs",
+        "chocolate_fondu"
+      ],
+      "produces": "egg_chocolate_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "alternate_mixing",
+      "action": "Incorporer un tiers du m\u00e9lange de farine, puis la moiti\u00e9 du m\u00e9lange au caf\u00e9. Incorporer un autre tiers de la farine, puis le reste du m\u00e9lange au caf\u00e9, puis le reste de la farine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "egg_chocolate_mixture",
+        "dry_mix",
+        "cafe_mixture"
+      ],
+      "produces": "cake_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_cakes",
+      "action": "R\u00e9partir uniform\u00e9ment la p\u00e2te dans les moules et \u00e9galiser la surface. Enfourner et cuire pendant environ 35min jusqu'\u00e0 ce qu'un cure-dent ins\u00e9r\u00e9 au centre en ressorte propre.",
+      "duration": "PT35M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "cake_batter"
+      ],
+      "produces": "baked_cakes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "cure-dent propre"
+    },
+    {
+      "id": "cool_cakes",
+      "action": "Laisser les g\u00e2teaux refroidir dans les moules pendant 10min, puis les retourner d\u00e9licatement sur une grille et laissez-les refroidir compl\u00e8tement.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "g\u00e2teau au chocolat",
+      "uses": [
+        "baked_cakes"
+      ],
+      "produces": "cooled_cakes",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidis"
+    },
+    {
+      "id": "mix_cream_base",
+      "action": "Dans un batteur sur socle, m\u00e9langer le fromage frais, le beurre et l'extrait de vanille. Battre jusqu'\u00e0 ce que le tout soit bien m\u00e9lang\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me au beurre cacahu\u00e8te",
+      "uses": [
+        "saint_moret",
+        "beurre_creme",
+        "vanille"
+      ],
+      "produces": "cream_base",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "add_sugar_glace",
+      "action": "Ajouter le sucre glace progressivement, en raclant les parois du bol, jusqu'\u00e0 obtenir un m\u00e9lange homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me au beurre cacahu\u00e8te",
+      "uses": [
+        "cream_base",
+        "sucre_glace"
+      ],
+      "produces": "sweetened_cream",
+      "requires": [],
+      "visualCue": "homog\u00e8ne"
+    },
+    {
+      "id": "add_peanut_butter",
+      "action": "Incorporer le beurre de cacahu\u00e8tes. M\u00e9langer jusqu'\u00e0 ce que le tout soit homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me au beurre cacahu\u00e8te",
+      "uses": [
+        "sweetened_cream",
+        "beurre_cacahuete"
+      ],
+      "produces": "peanut_butter_cream",
+      "requires": [],
+      "visualCue": "homog\u00e8ne"
+    },
+    {
+      "id": "place_first_cake",
+      "action": "Placer le premier g\u00e2teau sur l'assiette (vous pouvez d\u00e9poser une petite noix de cr\u00e8me au centre de l'assiette pour l'adh\u00e9rence).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "cooled_cakes",
+        "peanut_butter_cream"
+      ],
+      "produces": "first_cake_placed",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_first_layer",
+      "action": "Remplir une poche \u00e0 douille munie d'un embout rond avec la moiti\u00e9 de la cr\u00e8me. Pocher un gros boudin sur les bords du g\u00e2teau, puis r\u00e9partir la cr\u00e8me de mani\u00e8re homog\u00e8ne \u00e0 l'int\u00e9rieur du rond form\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "first_cake_placed",
+        "peanut_butter_cream"
+      ],
+      "produces": "filled_first_layer",
+      "requires": [],
+      "visualCue": "homog\u00e8ne"
+    },
+    {
+      "id": "add_second_cake",
+      "action": "D\u00e9poser le deuxi\u00e8me g\u00e2teau par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "filled_first_layer",
+        "cooled_cakes"
+      ],
+      "produces": "two_layer_cake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decorate_top",
+      "action": "Remplir une deuxi\u00e8me poche \u00e0 douille munie d'un embout \u00e9toil\u00e9 avec le reste de cr\u00e8me. Pocher des petites '\u00e9toiles' sur les bords ou sur toute la surface du g\u00e2teau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "two_layer_cake",
+        "peanut_butter_cream"
+      ],
+      "produces": "decorated_cake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_peanuts",
+      "action": "Terminer en saupoudrant le g\u00e2teau avec des cacahu\u00e8tes concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "decorated_cake",
+        "cacahuetes"
+      ],
+      "produces": "cake_with_peanuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_cake",
+      "action": "Placer au frais pendant 1h ou jusqu'au moment de servir.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "montage du g\u00e2teau",
+      "uses": [
+        "cake_with_peanuts"
+      ],
+      "produces": "layer_cake_chocolat_creme_cacahuete",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "layer_cake_chocolat_creme_cacahuete",
+  "originalText": "Layer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 mars 2022\nLayer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te\nAcc\u00e9der directement \u00e0 la recette\nOk, l\u00e0, c\u2019est s\u00e9rieux. Je suis clairement partie en cacahu\u00e8te avec cette recette (ah ah ah). Oh lala\u2026 Mais cet humour de folie! Bon vous l\u2019aurez compris je suis en m\u00e9ga forme. Tout comme ce g\u00e2teau super sexy : Layer Cake Chocolat et sa cr\u00e8me au Beurre de Cacahu\u00e8te. C\u2019est une association que j\u2019aime beaucoup, remember les\ncookies chocolat coeur \u00e0 la cacahu\u00e8te\n?! Ou encore les\ncookies vegan au beurre de cacahu\u00e8te\n? Ici, je vous avoue que j\u2019avais un peu peur que \u00e7a soit trop lourd, surtout que je ne suis pas hyper fan des cr\u00e8mes au beurre\u2026\nMais que nenni ! En utilisant du beurre de cacahu\u00e8te \u00e0 la place du beurre classique, on est toujours (beaucoup) dans la gourmandise mais sans \u00eatre trop \u00e9c\u0153urant. La cr\u00e8me est donc compos\u00e9e de cream cheese ou de fromage frais \u00e0 tartiner, de beurre de cacahu\u00e8te et de sucre. Le m\u00e9lange est l\u00e9g\u00e8rement addictif, je vous aurais pr\u00e9venu\u2026\nPour le g\u00e2teau dans son ensemble, j\u2019avais envie d\u2019un layer en toute simplicit\u00e9 alors je suis partie sur uniquement 2 \u201c\u00e9tages\u201d. Si vous avez deux moules c\u2019est nickel, sinon personnellement je cuis les g\u00e2teaux en 2 temps. Ils doivent avoir compl\u00e8tement refroidis avant de passer au montage. Pour garnir le g\u00e2teau de cr\u00e8me, j\u2019ai utilis\u00e9 une poche \u00e0 douille avec un embout rond. J\u2019ai form\u00e9 un beau \u201cboudin\u201d tout autour du premier g\u00e2teau. Ensuite, j\u2019ai garni l\u2019int\u00e9rieur en r\u00e9partissant bien la cr\u00e8me. Pour le dessus du g\u00e2teau, j\u2019ai utilis\u00e9 un embout diff\u00e9rent mais vraiment pour la d\u00e9co, vous faites comme vous voulez !\nCe g\u00e2teau est parfait pour les anniversaires tout comme pour n\u2019importe quelle occasion sp\u00e9ciale. H\u00e2te d\u2019avoir vos retours !\nLayer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te\nDaniela\nUn layer cake chocolat garni de cr\u00e8me au beurre de cacahu\u00e8te. BOUM ! Laissez-vous tenter par une part de ce g\u00e2teau d\u00e9cadent associant la gourmandise du chocolat et la douceur d\u2019une cr\u00e8me au beurre de cacahu\u00e8te. Un v\u00e9ritable d\u00e9lice !\n4.51\n/5 avec\n129\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nTemps de repos\n1\nheure\nh\nType de plat\nDessert\nPortions\n10\npersonnes\nEquipment\n1 moule de 17cm\nIngr\u00e9dients\n1x\n2x\n3x\nG\u00e2teau au chocolat :\n80\ng\nde chocolat noir p\u00e2tissier\n160\nml\nde caf\u00e9 cors\u00e9\n35\ng\nde cacao en poudre\n125\nml\nde lait ribot ou ferment\u00e9e\n200\ng\nde farine\n1 \u00bd\ncac de bicarbonate de soude\n\u00bc\ncac de sel\n80\ng\nde beurre doux mou\n200\ng\nsucre de canne\n1\ncac d\u2019extrait de vanille\n2\n\u0153ufs\nCr\u00e8me au beurre de cacahu\u00e8te :\n110\ng\nde Saint Moret \u00e0 temp\u00e9rature ambiante\n55\ng\nde beurre doux mou\n330\ng\nde sucre glace\n120\ng\nde beurre de cacahu\u00e8te cr\u00e9meux\nD\u00e9co :\nCacahu\u00e8tes en brisure\nInstructions\nG\u00e2teau au chocolat :\nGraisser 2 moules \u00e0 g\u00e2teaux ronds de 15cm \u00e0 17cm (ou cuire les g\u00e2teaux en deux fois, c\u2019est ce que je fais) et tapisser le fond de papier sulfuris\u00e9.\nFaire fondre le chocolat noir au bain marie et r\u00e9server.\nM\u00e9langer au fouet la poudre de cacao et le caf\u00e9 chaud jusqu\u2019\u00e0 ce que le m\u00e9lange soit lisse, puis incorporer le lait ribot et r\u00e9server.\nTamiser ensemble la farine, le bicarbonate de soude, le sel et r\u00e9server.\nPlacer le beurre, le sucre et l\u2019extrait de vanille dans un grand bol et fouetter avec un batteur \u00e9lectrique jusqu\u2019\u00e0 ce que le m\u00e9lange soit lisse et cr\u00e9meux. Incorporer les \u0153ufs un par un, en fouettant bien apr\u00e8s chaque ajout, puis incorporer le chocolat fondu.\nIncorporer un tiers du m\u00e9lange de farine, puis la moiti\u00e9 du m\u00e9lange au caf\u00e9. Incorporer un autre tiers de la farine, puis le reste du m\u00e9lange au caf\u00e9, puis le reste de la farine.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nR\u00e9partir uniform\u00e9ment la p\u00e2te dans les moules (j\u2019utilise une balance pour bien r\u00e9partir la p\u00e2te) et \u00e9galiser la surface.\nEnfourner et cuire pendant environ 35 minutes (v\u00e9rifiez au bout de 30 minutes) jusqu\u2019\u00e0 ce qu\u2019un cure dent ou la pointe d\u2019un couteau ins\u00e9r\u00e9e au centre en ressorte propre ou avec quelques miettes humides.\nLaisser les g\u00e2teaux refroidir dans les moules pendant 10 minutes, puis les retourner d\u00e9licatement sur une grille, retirer le papier sulfuris\u00e9 et laissez-les refroidir compl\u00e8tement.\nCr\u00e8me au beurre cacahu\u00e8te :\nLe fromage frais et le beurre doivent \u00eatre \u00e0 la m\u00eame temp\u00e9rature. Souvent je les sors du r\u00e9frig\u00e9rateur d\u00e8s le matin ou la veille pour qu\u2019ils soient \u00e0 la bonne temp\u00e9rature.\nDans un batteur sur socle (ou un batteur \u00e9lectrique \u00e0 main), m\u00e9langer le fromage frais, le beurre et l\u2019extrait de vanille. Battre avec le fouet ou la palette jusqu\u2019\u00e0 ce que le tout soit bien m\u00e9lang\u00e9.\nUtiliser une spatule en caoutchouc pour racler les parois du bol, puis ajouter le sucre glace progressivement, en arr\u00eatant le batteur et en raclant les parois du bol au besoin, jusqu\u2019\u00e0 obtenir un m\u00e9lange homog\u00e8ne.\nEnfin, incorporer le beurre de cacahu\u00e8tes. M\u00e9langer jusqu\u2019\u00e0 ce que le tout soit homog\u00e8ne.\nMontage du g\u00e2teau :\nPlacer le premier g\u00e2teau sur l\u2019assiette (vous pouvez au pr\u00e9alable d\u00e9poser une petite noix de cr\u00e8me au beurre de cacahu\u00e8te au centre de l\u2019assiette pour bien faire adh\u00e9rer le g\u00e2teau).\nR\u00e9partir la cr\u00e8me au beurre en deux et remplir une premi\u00e8re poche \u00e0 douille munie d\u2019un embout rond assez gros. Pocher un gros boudin sur les bords du g\u00e2teau, puis r\u00e9partir la cr\u00e8me au beurre de mani\u00e8re homog\u00e8ne \u00e0 l\u2019int\u00e9rieur du rond form\u00e9 par le boudin.\nD\u00e9poser le deuxi\u00e8me g\u00e2teau par-dessus la couche g\u00e9n\u00e9reuse de cr\u00e8me au beurre. Puis remplir une deuxi\u00e8me poche \u00e0 douille munie d\u2019un embout \u00e9toil\u00e9 ou cannel\u00e9. Vous pouvez pocher des petites \u201c\u00e9toiles\u201d uniquement sur les bords du g\u00e2teau ou sur toute la surface (c\u2019est comme vous voulez).\nTerminer le montage en saupoudrant le g\u00e2teau avec des cacahu\u00e8tes concass\u00e9es ou en brisures.\nPlacer au frais pendant 1h ou jusqu\u2019au moment de servir. N\u00e9anmoins penser \u00e0 sortir le g\u00e2teau une ou plusieurs dizaines de minutes avant de servir en fonction du temps qu\u2019il a pass\u00e9 au frais.\nLe g\u00e2teau se conserve 3 jours au r\u00e9frig\u00e9rateur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nG\u00e2teaux et Cakes\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nbeurre de cacahuete\n,\nchocolat\n,\ncr\u00e8me au beurre de cacahu\u00e8te\n,\ng\u00e2teau d'anniversaire\n,\nlayer cake\nNouvel Ebook Batch Cooking : Recettes de Printemps\nLasagnes aux Blettes\n4 thoughts on \u201cLayer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te\u201d\nCam\ndit\u00a0:\n7 juin 2024 \u00e0 22 h 43 min\nJe suis d\u00e9\u00e7ue j\u2019ai suivi \u00e0 la lettre la recette et la g\u00e9noise n\u2019est pas a\u00e9r\u00e9e il s\u2019agit plus d\u2019un g\u00e2teau au chocolat tout fin. J\u2019ai regard\u00e9 d\u2019autres recettes de g\u00e9noise et layer cake et les blancs sont toujours mont\u00e9s en neige pour que la g\u00e9noise soit a\u00e9r\u00e9e et \u00e9paisse. N\u2019y a t\u2019il pas un \u00e9l\u00e9ment manquant dans la recette ?  Bien \u00e0 vous\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n19 juin 2024 \u00e0 12 h 29 min\nPeut \u00eatre que vous avez utilis\u00e9 un moule trop grand (j\u2019utilise souvent des moules entre 17 et 20cm max) et le g\u00e2teau est donc plus aplati. Je n\u2019ai pas eu besoin de monter mes blancs en neige dans ma recette mais libre \u00e0 vous de le faire pour obtenir une g\u00e2teau plus a\u00e9r\u00e9e !\nchargement\u2026\nR\u00e9pondre\nMax\ndit\u00a0:\n14 septembre 2024 \u00e0 11 h 25 min\nBonjour,\nIdem pour ma part, le g\u00e2teau est tr\u00e8s fin pourtant j\u2019ai utilis\u00e9 les moules \u00e0 la dimension pr\u00e9conis\u00e9s.\nDommage car il manque cruellement de volume !\nchargement\u2026\nR\u00e9pondre\nTasnime\ndit\u00a0:\n20 juin 2025 \u00e0 14 h 16 min\nJ\u2019ai ador\u00e9 cette recette, et elle m\u2019a litt\u00e9ralement sauv\u00e9 la vie pour l\u2019anniversaire de mon fils, succ\u00e8s de la ganache, je n\u2019ai pas mis de caf\u00e9, ni de cacao simplement en rajoutant plus de chocolat! D\u00e9licieux\nchargement\u2026\nR\u00e9pondre\n4.51 from 129 votes (\n127 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

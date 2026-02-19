@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "title": "Pain d’épices Vegan",
+    "description": "Un pain d’épices vegane super moelleux et délicatement parfumé à l’orange. Sucré et épicé juste comme il faut.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "vegan",
+      "noel",
+      "hiver",
+      "gâteau"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/12/pain-epice-vegan-3.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette adaptée d'Aurore du blog the V world.",
+      "Le sucre perlé apporte un côté croquant.",
+      "Badigeonner de sirop d'érable après cuisson pour faire briller (optionnel).",
+      "Vérifier la cuisson avec la pointe d'un couteau."
+    ],
+    "slug": "pain-depices-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/12/pain-epice-vegan-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/12/03/pain-depices-vegan/",
+    "image": "images/pain-depices-vegan.webp",
+    "createdAt": "2026-02-09T20:10:01.702502",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "totalTime": 85.0,
+    "totalCookingTime": 45.0,
+    "peakMonths": [
+      "February",
+      "January",
+      "March"
+    ],
+    "nutritionPerServing": {
+      "calories": 244.3,
+      "protein": 5.0,
+      "fat": 7.7,
+      "carbs": 39.0,
+      "fiber": 5.8,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 11,
+      "totalIngredients": 14,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cinnamon_sticks",
+      "name": "bâtons de cannelle",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon sticks"
+    },
+    {
+      "id": "star_anise",
+      "name": "étoiles de badiane",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "star anise"
+    },
+    {
+      "id": "cardamom_pods",
+      "name": "capsules de cardamome",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cardamom pods"
+    },
+    {
+      "id": "cloves",
+      "name": "clous de girofle",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "ginger_powder",
+      "name": "gingembre en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Ground ginger"
+    },
+    {
+      "id": "cinnamon_powder",
+      "name": "cannelle en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "plant_milk",
+      "name": "lait végétal",
+      "quantity": 250.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk"
+    },
+    {
+      "id": "rye_flour",
+      "name": "farine de seigle",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rye flour"
+    },
+    {
+      "id": "t80_flour",
+      "name": "farine T80",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "type 80 flour"
+    },
+    {
+      "id": "almond_powder",
+      "name": "poudre d'amande",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond powder"
+    },
+    {
+      "id": "vergeoise",
+      "name": "vergoise",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soft brown sugar"
+    },
+    {
+      "id": "orange",
+      "name": "orange bio",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "jus et zeste",
+      "optional": false,
+      "name_en": "organic orange"
+    },
+    {
+      "id": "yeast",
+      "name": "levure",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale neutre",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "pearl_sugar",
+      "name": "sucre perlé",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pearl sugar"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'érable",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": true,
+      "name_en": "maple syrup"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Chinois (tamis fin)",
+    "Moule à cake (ou similaire)",
+    "Grille de refroidissement"
+  ],
+  "steps": [
+    {
+      "id": "infuse_spices",
+      "action": "Dans une casserole, verser 250 ml de lait végétal et ajouter les épices (cannelle bâtons, badiane, cardamome, girofle, gingembre, cannelle en poudre). Porter à ébullition puis éteindre le feu et laisser infuser à couvert pendant 30min minimum.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "infusion_aux_épices",
+      "uses": [
+        "plant_milk",
+        "cinnamon_sticks",
+        "star_anise",
+        "cardamom_pods",
+        "cloves",
+        "ginger_powder",
+        "cinnamon_powder"
+      ],
+      "produces": "spiced_milk",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un saladier, mélanger les ingrédients secs : 150g de farine de seigle, 150g de farine T80, 50g de poudre d'amande, 100g de vergoise, le zeste d'une orange, 1 sachet de levure et 1 pincée de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "rye_flour",
+        "t80_flour",
+        "almond_powder",
+        "vergeoise",
+        "orange",
+        "yeast",
+        "salt"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_wet_ingredients",
+      "action": "Positionner un chinois au-dessus du saladier et verser le lait infusé aux épices pour le filtrer. Ajouter le jus de l'orange et 50ml d'huile végétale neutre. Mélanger jusqu'à obtenir une préparation bien homogène.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "dry_mix",
+        "spiced_milk",
+        "orange",
+        "vegetable_oil"
+      ],
+      "produces": "gingerbread_batter",
+      "requires": [],
+      "visualCue": "préparation bien homogène"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 170°C.",
+      "duration": null,
+      "temperature": 170,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_pan",
+      "action": "Verser la préparation dans un moule préalablement chemisé (huilé et fariné). Saupoudrer de 1 càs de sucre perlé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "gingerbread_batter",
+        "pearl_sugar"
+      ],
+      "produces": "pan_ready_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_gingerbread",
+      "action": "Enfourner et cuire pendant 45min. Vérifier la cuisson avec la pointe d'un couteau.",
+      "duration": "PT45M",
+      "temperature": 170,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "pan_ready_batter"
+      ],
+      "produces": "baked_gingerbread",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "pointe d'un couteau propre"
+    },
+    {
+      "id": "cool_in_pan",
+      "action": "Sortir du four et laisser refroidir 10min avant de démouler.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "baked_gingerbread"
+      ],
+      "produces": "cooled_gingerbread",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "glaze_and_cool",
+      "action": "Une fois démoulé, déposer le pain d'épices sur une grille de refroidissement, badigeonner de sirop d'érable pour le faire briller (optionnel) et laisser refroidir complètement avant la découpe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": true,
+      "subRecipe": "pâte_du_pain_d_épices",
+      "uses": [
+        "cooled_gingerbread",
+        "maple_syrup"
+      ],
+      "produces": "finished_vegan_gingerbread",
+      "requires": [],
+      "visualCue": "brillant"
+    }
+  ],
+  "finalState": "finished_vegan_gingerbread",
+  "originalText": "Pain d'épices Vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 décembre 2020\nPain d’épices Vegan\nAller à la recette\nIl y a deux ans, j’avais repris la recette de\npain d’épices de M. Michalak en version mini\nsur le blog et je dois dire que son pain d’épice est particulièrement incroyable. Il est tellement bon que pendant longtemps je n’ai pas ressenti le besoin de faire ma propre recette, jusqu’à ce que je me motive à proposer une version végane sur le blog !\nJe dois dire que je suis particulièrement contente de l’avoir fait car ça fait déjà trois fois que je réalise cette recette à la demande de ma petite poupette qui en raffole tout simplement. Il s’agit de la recette d’Aurore du blog\nthe V world\noù j’ai modifié quelques ingrédients tout en reprenant les mêmes proportions ! Je suis vraiment contente de la consistance et surtout du dosage des épices où le goût n’est pas trop puissant.\nPour la petite touche finale, j’ai saupoudré la pâte de sucre en perle juste avant d’enfourner. Ca donne un petit côté croquant et sucré qui est très agréable. Le pain d’épice en lui même n’est pas trop sucré. Alors en plus du sucre en perle vous pouvez aussi passer un petit coup de pinceau de sirop d’érable pour le faire briller. Après tout c’est Noël, il faut se faire beau !\nPain d’épices Vegan\nDaniela\nUn pain d’épices vegane super moelleux et délicatement parfumé à l’orange. Sucré et épicé juste comme il faut, il fera le bonheur des petits comme des grands. Ma mini corni en raffole !\n4.48\n/5 avec\n114\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n15\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nType de plat\nBreakfast, Brunch, Dessert, Goûter, Snack\nPortions\n8\npersonnes\nIngrédients\n1x\n2x\n3x\nLes épices :\n2\nbâtons de cannelle\n3\nétoiles de badiane\n10\ncapsules de cardamome\n5\nclous de girofle\n1\ncac de gingembre en poudre\n2\ncàc de cannelle\nLe pain d’épices :\n250\nml\nde lait végétal\n150\ng\nde farine de seigle\n150\ng\nde farine T80\n50\ng\nde poudre d’amande\n100\ng\nde vergoise\nle jus et le zeste d’une orange bio\n1\nsachet de levure\n1\npincée de sel\n50\nml\nd’huile végétale neutre\n1\ncàs de sucre perlé\nsirop d’érable\noptionnel\nInstructions\nDans une casserole, verser le lait et ajouter les épices. Porter à ébullition puis éteindre le feu et laisser infuser à couvert pendant 30 min minimum.\nDans un saladier, mélanger les ingrédients secs : la farine, la poudre d’amande, la levure, le sucre, les zestes d’orange et le sel.\nPositionner un chinois au-dessus du saladier avec les ingrédients secs et verser le lait infusé aux épices. Ajouter le jus d’orange et l’huile, mélanger jusqu’à obtenir une préparation bien homogène.\nPréchauffer le four à 170°C.\nVerser la préparation dans un moule préalablement chemisé (huile + farine). Saupoudrer de sucre perlé.\nEnfourner et cuire 45 minutes. Vérifier la cuisson avec la pointe d’un couteau.\nSortir du four et laisser refroidir 10 min avant de démouler. Une fois démoulé, déposer le pain d’épices sur une grille de refroidissement, badigeonner de sirop d’érable pour le faire briller (optionnel) et laisser refroidir complètement avant la découpe !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nDesserts & Snack\n,\nGâteaux et Cakes\n,\nHiver\n,\nNos recettes Véganes\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nidee recette noel\n,\nidee repas noel\n,\nrecette noel\n,\nvegan\n,\nvégane\nBlesotto aux Champignons Sauvages (blé façon risotto)\nCupcakes Vegan Chocolat Noisette\n4 thoughts on “Pain d’épices Vegan”\nLadyMilonguera\ndit :\n4 décembre 2020 à 12 h 38 min\nTon pain d’épices est superbe !\nchargement…\nRépondre\nVIRY\ndit :\n25 novembre 2021 à 15 h 09 min\nBonjour,\nLe pain d’épices a l’air très bon.\nMais que signifie capsules de cardamome, quel est l’équivalent en poudre, peut-on remplacer également les bâtons de cannelle par de la poudre, si oui quelle quantité?\nMerci d’avance\nBonne journée\nchargement…\nRépondre\nJoe\ndit :\n24 décembre 2022 à 16 h 09 min\n6 capsules équivalent à 1 cuillère à café\nchargement…\nRépondre\nNoemie\ndit :\n28 novembre 2025 à 16 h 14 min\nDélicieux 🤩 Merci pour cette super recette 🙏🏻\nJe me la suis appropriée en remplaçant notamment l’orange par 2 clémentines  👌🏻\nchargement…\nRépondre\n4.48 from 114 votes (\n112 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 45.0
+}

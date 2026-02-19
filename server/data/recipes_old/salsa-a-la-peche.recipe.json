@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "title": "Salsa à la Pêche",
+    "description": "Une salsa classique revisitée où les tomates sont en grande partie remplacées par des pêches bien mûres, parfaite pour l'apéro ou pour accompagner des plats TexMex.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "recette salée avec de la pêche",
+      "recette salsa pêche",
+      "salsa maison",
+      "salsa pêche",
+      "été",
+      "accompagnement",
+      "apéro"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/salsa-peches-1-of-3.jpg",
+    "nationality": "TexMex",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Il est préférable de préparer la sauce un peu à l'avance et de la laisser reposer au frais quelques heures (minimum 30min). Le goût est bien meilleur quand tous les ingrédients ont eu le temps de mariner un peu et que toutes les saveurs ce sont bien développées !",
+      "Vous pouvez la manger tout simplement en apéro avec des tortillas ou alors pour accompagner un plat TexMex !",
+      "Elle se conserve très bien 2 jours dans un récipient hermétique.",
+      "N'hésitez pas à hacher les tiges de coriandre aussi, elles se mangent et ont autant de goût que les feuilles."
+    ],
+    "slug": "salsa-a-la-peche",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/salsa-peches-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/08/29/salsa-a-la-peche/",
+    "image": "images/salsa-a-la-peche.webp",
+    "createdAt": "2026-02-09T20:00:27.612553",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 268.8,
+      "protein": 7.0,
+      "fat": 1.6,
+      "carbs": 65.2,
+      "fiber": 11.1,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "peches",
+      "name": "pêches bien mûres",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "peaches"
+    },
+    {
+      "id": "tomate",
+      "name": "tomate bien mûre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato"
+    },
+    {
+      "id": "oignon",
+      "name": "petit oignon doux",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet onion"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bot",
+      "category": "produce",
+      "preparation": null,
+      "notes": "½ botte",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "piment",
+      "name": "piment concassé",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "crushed chili pepper"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "citron_vert",
+      "name": "citron vert",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lime"
+    },
+    {
+      "id": "vinaigre",
+      "name": "vinaigre d'alcool",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white vinegar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [],
+  "steps": [
+    {
+      "id": "dice_fruits_vegetables",
+      "action": "Couper les pêches, la tomate et l'oignon en tout petits dés.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peches",
+        "tomate",
+        "oignon"
+      ],
+      "produces": "diced_fruits_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_garlic",
+      "action": "Presser la gousse d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ail"
+      ],
+      "produces": "pressed_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_cilantro",
+      "action": "Hacher la coriandre (tiges comprises).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "coriandre"
+      ],
+      "produces": "chopped_cilantro",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "juice_lime",
+      "action": "Presser le citron vert pour obtenir son jus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "citron_vert"
+      ],
+      "produces": "lime_juice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_all_ingredients",
+      "action": "Mettre les dés de fruits et légumes dans un bol avec la gousse d'ail pressée, la coriandre hachée (tiges comprises) et tous les autres ingrédients (piment, cumin, jus de citron vert, vinaigre, sel).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_fruits_vegetables",
+        "pressed_garlic",
+        "chopped_cilantro",
+        "piment",
+        "cumin",
+        "lime_juice",
+        "vinaigre",
+        "sel"
+      ],
+      "produces": "combined_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_and_adjust",
+      "action": "Bien mélanger et rectifier l'assaisonnement si nécessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_salsa"
+      ],
+      "produces": "mixed_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_chill",
+      "action": "Laisser reposer au moins 30min au frais avant de servir.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_salsa"
+      ],
+      "produces": "rested_salsa",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "rested_salsa",
+  "originalText": "Salsa à la Pêche - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 août 2020\nSalsa à la Pêche\nAccéder directement à la recette\nOui, oui, je parle bien d’une salsa à la pêche !\nVous connaissez sans doute la salsa classique à la tomate ?! Eh bien cette fois, j’ai eu envie de changer un peu et de tester la même recette mais en remplaçant les tomates par des pêches ! J’avais vu des gens faire ça en surfant sur\nPinterest\net ça m’a donné super envie. Alors vous me connaissez 🙂\nJ’ai adapté\nma recette de base de salsa classique\npour remplacer une bonne partie des tomates par des pêches, j’en ai tout de même laissé une, mais je pense que ce n’est pas du tout essentiel. Et comme je n’avais que de l’oignon blanc à la maison, j’ai remplacé l’oignon rouge habituel. Et ça passe nickel chrome !\nJe vous conseille de préparer la sauce un peu à l’avance et de la laisser reposer au frais quelques heures (minimum 30min). Le goût est bien meilleur quand tous les ingrédients ont eu le temps de mariner un peu et que toutes les saveurs ce sont bien développées !\nVous pouvez la manger tout simplement en apéro avec des tortillas ou alors pour accompagner un plat TexMex ! Et c’est pas l’inspi qui manque sur le blog 😉\nVous pouvez tester\nles quesadillas végé\n, le chili sin carne ou même les enchiladas !\nSalsa à la Pêche\n4.53\n/5 avec\n53\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nPortions\n1\nbol\nIngrédients\n1x\n2x\n3x\n3\npêches bien mûres\nenv 400g\n1 to\nmate bien mûre\nenv 150g\n1\npetit oignon doux\nblanc ou rouge, env 80g\n1\ngousse d’ail pressée\n½\nbotte de coriandre hachée\nenv 20g, tiges comprises\n¼\nc-à-c de piment concassé\nou en poudre, ou frais\n½\nc-à-c de cumin en poudre\nle jus d’½ citron vert\n1\nc-à-c de vinaigre d’alcool\nsel\nInstructions\nCouper les pêches, la tomate et l’oignon en tout petits dés.\nLes mettre dans un bol avec la gousse d’ail pressée, la coriandre hachée (n’hésitez pas à hacher les tiges aussi, elles se mangent et ont autant de goût que les feuilles) et tous les autres ingrédients.\nBien mélanger et rectifier l’assaisonnement si nécessaire.\nIl est préférable de laisser la salsa reposer au moins 30min avant de la servir. Elle se conserve très bien 2 jours dans un récipient hermétique.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nApéros\n,\nÉté\n,\nPêche\n,\nPlats en Sauce\n,\nRecettes Salées\nTags:\nrecette salée avec de la pêche\n,\nrecette salsa pêche\n,\nsalsa maison\n,\nsalsa pêche\nSalade de Nouilles de Courgette Crue à la Sauce Cacahuète\nChunky Granola Banane Chocolat (Vegan + Sans Gluten)\n2 thoughts on “Salsa à la Pêche”\nStephanie\ndit :\n24 septembre 2020 à 22 h 29 min\nBottled this up as a hostess gift, it was so pretty and so delicious!!\nchargement…\nRépondre\nFree The Pickle\ndit :\n7 octobre 2020 à 8 h 55 min\nThat’s such a good idea !\nchargement…\nRépondre\n4.53 from 53 votes (\n52 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

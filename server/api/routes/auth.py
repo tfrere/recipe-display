@@ -1,10 +1,9 @@
 from fastapi import APIRouter, Depends
+
+from api.dependencies import get_recipe_service
 from services.recipe_service import RecipeService
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
-
-async def get_recipe_service():
-    return RecipeService()
 
 @router.get("/presets")
 async def get_auth_presets(service: RecipeService = Depends(get_recipe_service)):

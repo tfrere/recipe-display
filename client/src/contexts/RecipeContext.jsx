@@ -164,8 +164,10 @@ const calculateUnusedItems = (recipe, completedSteps) => {
               unusedTools[currentId.replace("tool-", "")] = true;
             } else {
               // Si ce n'est ni un ingrédient ni un outil, c'est un état
-              const isState = Object.values(subRecipe.steps || {}).some(
-                (s) => s.output && s.output.state === currentId
+              const isState = (subRecipe.steps || []).some(
+                (s) =>
+                  (s.output && s.output.state === currentId) ||
+                  s.produces === currentId
               );
               if (isState) {
                 unusedStates.add(currentId);
@@ -184,11 +186,18 @@ const calculateUnusedItems = (recipe, completedSteps) => {
 const extractToolsFromSteps = (recipe) => {
   const toolsSet = new Set();
 
+  // Also add recipe-level tools
+  if (recipe.tools && Array.isArray(recipe.tools)) {
+    recipe.tools.forEach((tool) => toolsSet.add(tool));
+  }
+
   // Parcourir toutes les sous-recettes
-  recipe.subRecipes.forEach((subRecipe) => {
+  (recipe.subRecipes || []).forEach((subRecipe) => {
     // Parcourir toutes les étapes de la sous-recette
     (subRecipe.steps || []).forEach((step) => {
-      // Ajouter chaque outil à l'ensemble
+      // requires[] contains tool names
+      (step.requires || []).forEach((tool) => toolsSet.add(tool));
+      // tools[] contains tool names
       (step.tools || []).forEach((tool) => toolsSet.add(tool));
     });
   });
@@ -200,272 +209,140 @@ const extractToolsFromSteps = (recipe) => {
   }));
 };
 
-// Fonction utilitaire pour transformer une recette du format steps vers le format subRecipes
-const transformStepsToSubRecipes = (recipe) => {
-  // Vérifier si la recette est déjà au format subRecipes
-  if (recipe.subRecipes) {
-    return recipe; // Déjà au bon format
-  }
+// Transforme une recette (uses/produces) en format subRecipes interne
+const transformToSubRecipes = (recipe) => {
 
-  // Vérifier si la recette contient des steps
-  if (!recipe.steps || !Array.isArray(recipe.steps)) {
-    console.error("La recette ne contient pas de steps à transformer");
-    return recipe;
-  }
-
-  // Trouver tous les ingrédients originaux avec leurs unités
   const ingredientsMap = {};
-  recipe.ingredients.forEach((ing) => {
+  (recipe.ingredients || []).forEach((ing) => {
     ingredientsMap[ing.id] = ing;
-    console.log(
-      `Ingrédient original ${ing.id}: ${ing.name} - unité: ${
-        ing.unit || "non spécifiée"
-      }`
-    );
   });
 
-  // Collecter et analyser les unités utilisées dans chaque input
-  const inputUnits = {};
+  // Build set of all produced state IDs for distinguishing ingredients vs states in "uses"
+  const producedStates = new Set();
+  (recipe.steps || []).forEach((step) => {
+    if (step.produces) {
+      producedStates.add(step.produces);
+    }
+  });
 
-  recipe.steps.forEach((step) => {
-    (step.inputs || []).forEach((input) => {
-      if (input.input_type === "ingredient" || input.type === "ingredient") {
-        const ingredientId = input.ref_id || input.ref;
-        if (!inputUnits[ingredientId]) {
-          inputUnits[ingredientId] = [];
-        }
-
-        if (input.unit) {
-          inputUnits[ingredientId].push(input.unit);
-          console.log(
-            `Unité trouvée dans un input: ${ingredientId} - ${input.unit}`
-          );
-        }
+  // Helper: transform a single step to internal format
+  const transformStep = (step) => {
+    const inputs = (step.uses || []).map((ref) => {
+      if (ingredientsMap[ref]) {
+        const ing = ingredientsMap[ref];
+        return {
+          inputType: "component",
+          ref: ref,
+          type: "ingredient",
+          amount: ing.quantity,
+          unit: ing.unit,
+          category: ing.category,
+        };
+      } else {
+        return {
+          inputType: "state",
+          ref: ref,
+          type: "state",
+          name: ref.replace(/_/g, " "),
+        };
       }
     });
-  });
 
-  // Regrouper les steps par subRecipe
-  const stepsBySubRecipe = {};
+    const output = step.produces
+      ? {
+          inputType: "state",
+          ref: step.produces,
+          type: "state",
+          state: step.produces,
+          name: step.produces.replace(/_/g, " "),
+        }
+      : null;
 
-  recipe.steps.forEach((step) => {
-    const subRecipeId = step.subRecipe || "main";
-    if (!stepsBySubRecipe[subRecipeId]) {
-      stepsBySubRecipe[subRecipeId] = [];
+    return {
+      id: step.id,
+      action: step.action,
+      time: step.duration || step.time,
+      stepType: step.stepType,
+      stepMode: step.isPassive ? "passive" : "active",
+      isPassive: step.isPassive || false,
+      inputs,
+      output,
+      uses: step.uses,
+      produces: step.produces,
+      requires: step.requires,
+      tools: step.requires || [],
+    };
+  };
+
+  // Group steps by subRecipe field
+  const stepsByGroup = {};
+  const groupOrder = [];
+  (recipe.steps || []).forEach((step) => {
+    const group = step.subRecipe || "main";
+    if (!stepsByGroup[group]) {
+      stepsByGroup[group] = [];
+      groupOrder.push(group);
     }
-    stepsBySubRecipe[subRecipeId].push(step);
+    stepsByGroup[group].push(step);
   });
 
-  // Créer les sous-recettes
-  const subRecipes = Object.entries(stepsBySubRecipe).map(
-    ([subRecipeId, steps]) => {
-      // Trouver tous les ingrédients utilisés dans cette sous-recette
-      const ingredientsByRef = {};
+  // Build subRecipes array, one per group
+  const subRecipes = groupOrder.map((groupName) => {
+    const groupSteps = stepsByGroup[groupName];
+    const transformedSteps = groupSteps.map(transformStep);
 
-      // Parcourir les étapes pour collecter les informations sur les ingrédients
-      steps.forEach((step) => {
-        (step.inputs || []).forEach((input) => {
-          if (
-            input.input_type === "ingredient" ||
-            input.type === "ingredient"
-          ) {
-            const ingredientId = input.ref_id || input.ref;
-            const originalIngredient = ingredientsMap[ingredientId];
-
-            if (!originalIngredient) return;
-
-            // Récupérer l'unité directement depuis l'input si disponible
-            let unit = input.unit;
-
-            // Si l'unité n'est pas dans cet input, chercher parmi les autres inputs
-            if (
-              !unit &&
-              inputUnits[ingredientId] &&
-              inputUnits[ingredientId].length > 0
-            ) {
-              unit = inputUnits[ingredientId][0]; // Prendre la première unité trouvée
-              console.log(
-                `Utilisation de l'unité trouvée précédemment pour ${ingredientId}: ${unit}`
-              );
-            }
-
-            // Si toujours pas d'unité, utiliser celle de l'ingrédient original
-            if (!unit) {
-              unit = originalIngredient.unit;
-            }
-
-            // Récupérer la catégorie
-            const category = originalIngredient.category;
-
-            if (!ingredientsByRef[ingredientId]) {
-              ingredientsByRef[ingredientId] = {
-                amount: 0,
-                ingredient: originalIngredient,
-                unit, // Utiliser l'unité trouvée dans l'input ou dans l'ingrédient original
-                category,
-                // Garder une trace des unités utilisées pour débogage
-                units: new Set(),
-                initialState: input.initialState || null, // Ajouter l'initialState
-              };
-            } else if (
-              input.initialState &&
-              !ingredientsByRef[ingredientId].initialState
-            ) {
-              // Si un initialState est défini dans cet input et pas encore dans l'ingrédient agrégé
-              ingredientsByRef[ingredientId].initialState = input.initialState;
-            }
-
-            // Ajouter l'unité au set pour débogage
-            if (input.unit) {
-              ingredientsByRef[ingredientId].units.add(input.unit);
-            }
-
-            // Additionner les quantités si le même ingrédient est utilisé plusieurs fois
-            ingredientsByRef[ingredientId].amount += input.amount || 0;
-
-            // Log pour débogage
-            console.log(
-              `Ingrédient ${ingredientId} dans step ${step.id}: ${
-                input.amount || 0
-              } ${input.unit || "unité non spécifiée"}`
-            );
-          }
-        });
-      });
-
-      // Préparer les ingrédients pour cette sous-recette
-      const ingredients = Object.entries(ingredientsByRef)
-        .map(([ingredientId, data]) => {
-          // Récupérer l'ingrédient original
-          const originalIngredient = data.ingredient;
-          if (!originalIngredient) return null;
-
-          // S'assurer que la quantité est numérique
-          let amount = parseFloat(data.amount);
-          if (isNaN(amount)) {
-            amount = 0;
-          }
-
-          // Log pour débogage
-          console.log(
-            `Ingrédient ${ingredientId} (${originalIngredient.name}):`
-          );
-          console.log(
-            `- Unités utilisées: ${
-              Array.from(data.units).join(", ") || "aucune"
-            }`
-          );
-          console.log(`- Unité choisie: ${data.unit || "non spécifiée"}`);
-          console.log(`- Quantité totale: ${amount}`);
-
-          // Créer un objet ingrédient complet pour cette sous-recette
-          const ingredient = {
+    // Collect ingredients used in this sub-recipe's steps
+    const groupIngredientsByRef = {};
+    groupSteps.forEach((step) => {
+      (step.uses || []).forEach((ref) => {
+        if (ingredientsMap[ref] && !groupIngredientsByRef[ref]) {
+          const ing = ingredientsMap[ref];
+          groupIngredientsByRef[ref] = {
             inputType: "component",
-            ref: ingredientId,
+            ref: ref,
             type: "ingredient",
-            amount: amount,
-            unit: data.unit, // Ajouter l'unité directement
-            category: data.category, // Ajouter la catégorie aussi
-            name: originalIngredient.name, // Conserver le nom pour faciliter le débogage
-            initialState: data.initialState, // Ajouter l'initialState
+            amount: ing.quantity,
+            unit: ing.unit,
+            category: ing.category,
+            name: ing.name,
+            initialState: ing.preparation || null,
           };
+        }
+      });
+    });
 
-          console.log(
-            `Ingrédient transformé pour ${subRecipeId} - ${ingredientId}: ${amount} ${
-              data.unit || "non spécifié"
-            }`
-          );
+    // Capitalize group name for display
+    const title =
+      groupName === "main"
+        ? recipe.metadata?.title || "Recipe"
+        : groupName.charAt(0).toUpperCase() + groupName.slice(1);
 
-          return ingredient;
-        })
-        .filter(Boolean);
-
-      console.log(`Ingredients for subRecipe ${subRecipeId}:`, ingredients);
-
-      return {
-        id: subRecipeId,
-        title:
-          subRecipeId === "main" ? recipe.metadata.title : `${subRecipeId}`,
-        ingredients,
-        steps: steps.map((step) => {
-          // Adapter le format des inputs
-          const inputs = (step.inputs || []).map((input) => {
-            if (input.input_type === "state") {
-              return {
-                inputType: "state",
-                ref: input.ref_id || input.ref,
-                preparation: input.name || "",
-                name: input.description || "",
-              };
-            } else if (
-              input.input_type === "ingredient" ||
-              input.type === "ingredient"
-            ) {
-              const ingredientId = input.ref_id || input.ref;
-              const originalIngredient = ingredientsMap[ingredientId];
-
-              if (!originalIngredient) {
-                return {
-                  inputType: "component",
-                  ref: ingredientId,
-                  type: "ingredient",
-                  amount: input.amount || 0,
-                };
-              }
-
-              // Utiliser l'unité de l'input si disponible, sinon celle de l'ingrédient original
-              const unit = input.unit || originalIngredient.unit;
-
-              return {
-                inputType: "component",
-                ref: ingredientId,
-                type: "ingredient",
-                amount: input.amount || 0,
-                unit,
-                category: originalIngredient.category,
-                initialState: input.initialState || null, // Ajouter l'initialState s'il existe
-              };
-            } else if (input.input_type === "tool") {
-              return {
-                inputType: "component",
-                ref: input.ref_id || input.ref,
-                type: "tool",
-                amount: 1,
-              };
-            }
-            return input;
-          });
-
-          // Adapter le format de l'output
-          const output = step.output_state
-            ? {
-                inputType: "state",
-                ref: step.output_state.id,
-                preparation: step.output_state.type || "",
-                name: step.output_state.name || "",
-              }
-            : step.output;
-
-          return {
-            id: step.id,
-            action: step.action,
-            time: step.time,
-            stepType: step.stepType,
-            stepMode: step.stepMode,
-            inputs,
-            output,
-          };
-        }),
-      };
-    }
-  );
-
-  console.log("Transformed recipe subRecipes:", subRecipes);
+    return {
+      id: groupName,
+      title,
+      ingredients: Object.values(groupIngredientsByRef),
+      steps: transformedSteps,
+    };
+  });
 
   return {
     ...recipe,
     subRecipes,
   };
+};
+
+// Transforme une recette du format steps vers le format subRecipes
+const transformStepsToSubRecipes = (recipe) => {
+  if (recipe.subRecipes) {
+    return recipe;
+  }
+
+  if (!recipe.steps || !Array.isArray(recipe.steps)) {
+    console.error("La recette ne contient pas de steps à transformer");
+    return recipe;
+  }
+
+  return transformToSubRecipes(recipe);
 };
 
 // Fonction pour vérifier et corriger les quantités des ingrédients
@@ -479,34 +356,6 @@ const correctIngredientAmounts = (recipe) => {
   recipe.ingredients.forEach((ing) => {
     ingredientsMap[ing.id] = ing;
   });
-
-  // Fonction pour déterminer l'unité par défaut en fonction de la catégorie
-  const getDefaultUnit = (category, name) => {
-    if (!category) return null;
-
-    // Unités par défaut en fonction de la catégorie
-    const defaultUnits = {
-      produce: "g", // Fruits et légumes en grammes par défaut
-      dairy: "g", // Produits laitiers en grammes
-      egg: "unit", // Œufs en unités
-      meat: "g", // Viande en grammes
-      spice: "tsp", // Épices en cuillère à café
-      condiment: "tbsp", // Condiments en cuillère à soupe
-      pantry: "g", // Ingrédients de garde-manger en grammes
-      other: "g", // Autres en grammes
-    };
-
-    // Cas spéciaux basés sur le nom de l'ingrédient
-    if (name) {
-      const nameLower = name.toLowerCase();
-      if (nameLower.includes("oil") || nameLower.includes("huile")) return "ml";
-      if (nameLower.includes("juice") || nameLower.includes("jus")) return "ml";
-      if (nameLower.includes("water") || nameLower.includes("eau")) return "ml";
-      if (nameLower.includes("milk") || nameLower.includes("lait")) return "ml";
-    }
-
-    return defaultUnits[category] || null;
-  };
 
   // Vérifier et corriger les ingrédients de chaque sous-recette
   const correctedSubRecipes = recipe.subRecipes.map((subRecipe) => {
@@ -527,28 +376,9 @@ const correctIngredientAmounts = (recipe) => {
         amount = 0;
       }
 
-      // Log pour débogage
-      console.log(
-        `Correction de l'ingrédient ${ing.ref} (${originalIngredient.name}) dans ${subRecipe.id}:`
-      );
-      console.log(
-        `- Quantité originale: ${ing.amount}, convertie en: ${amount}`
-      );
-      console.log(
-        `- Unité originale: ${originalIngredient.unit || "non spécifiée"}`
-      );
-
       // Déterminer l'unité à utiliser
-      let unit = ing.unit || originalIngredient.unit;
-
-      // Si toujours pas d'unité, essayer de déterminer une unité par défaut
-      if (!unit) {
-        unit = getDefaultUnit(
-          originalIngredient.category,
-          originalIngredient.name
-        );
-        console.log(`- Unité par défaut suggérée: ${unit || "aucune"}`);
-      }
+      // null = item comptable (2 échalotes, 1 feuille de laurier) — on ne devine PAS
+      let unit = ing.unit || originalIngredient.unit || null;
 
       // Créer un ingrédient corrigé avec toutes les informations nécessaires
       const correctedIngredient = {
@@ -561,13 +391,6 @@ const correctIngredientAmounts = (recipe) => {
         // Conserver le nom pour faciliter le débogage et l'identification
         name: originalIngredient.name,
       };
-
-      // Log du résultat
-      console.log(
-        `- Ingrédient corrigé: ${amount} ${
-          correctedIngredient.unit || "unité non spécifiée"
-        }`
-      );
 
       return correctedIngredient;
     });
@@ -595,10 +418,7 @@ const recipeReducer = (state, action) => {
           ? transformStepsToSubRecipes(action.payload)
           : action.payload;
 
-      // Assurons-nous que les subRecipes sont un tableau
-      const safeSubRecipes = Array.isArray(transformedRecipe.subRecipes)
-        ? transformedRecipe.subRecipes
-        : Object.values(transformedRecipe.subRecipes || {});
+      const safeSubRecipes = transformedRecipe.subRecipes || [];
 
       // Préfixer les IDs des steps avec leur subRecipeId et vérifier les quantités des ingrédients
       const modifiedRecipe = correctIngredientAmounts({
@@ -611,8 +431,6 @@ const recipeReducer = (state, action) => {
           })),
         })),
       });
-
-      console.log("Recipe ready for display:", modifiedRecipe);
 
       return {
         ...state,
@@ -640,7 +458,9 @@ const recipeReducer = (state, action) => {
       };
 
       const subRecipeId = action.payload.subRecipeId;
-      const subRecipe = state.recipe?.subRecipes?.[subRecipeId];
+      const subRecipe = (state.recipe?.subRecipes || []).find(
+        (sr) => sr.id === subRecipeId
+      );
 
       if (!subRecipe?.steps) {
         return {
@@ -655,7 +475,7 @@ const recipeReducer = (state, action) => {
         const reverseGraph = new Map(); // Map<nodeId, Set<nodeId>> (nodeId -> ses prédécesseurs)
 
         // Initialiser les ensembles pour chaque nœud
-        Object.values(subRecipe.steps || {}).forEach((step) => {
+        (subRecipe.steps || []).forEach((step) => {
           reverseGraph.set(step.id, new Set());
 
           // Ajouter les liens pour les inputs de type "state"
@@ -699,7 +519,7 @@ const recipeReducer = (state, action) => {
         calculateUnusedItems(state.recipe, newCompletedSteps);
 
       // Vérifier si toutes les étapes de la sous-recette sont complétées
-      const allStepsCompleted = Object.values(subRecipe.steps || {}).every(
+      const allStepsCompleted = (subRecipe.steps || []).every(
         (step) => newCompletedSteps[step.id]
       );
 
@@ -718,7 +538,9 @@ const recipeReducer = (state, action) => {
 
     case actions.TOGGLE_SUBRECIPE_COMPLETION: {
       const { subRecipeId, completed } = action.payload;
-      const subRecipe = state.recipe?.subRecipes?.[subRecipeId];
+      const subRecipe = (state.recipe?.subRecipes || []).find(
+        (sr) => sr.id === subRecipeId
+      );
 
       if (!subRecipe?.steps) {
         return state;
@@ -726,7 +548,7 @@ const recipeReducer = (state, action) => {
 
       // Mettre à jour toutes les étapes de la sous-recette
       const newCompletedSteps = { ...state.completedSteps };
-      Object.values(subRecipe.steps || {}).forEach((step) => {
+      (subRecipe.steps || []).forEach((step) => {
         newCompletedSteps[step.id] = completed;
       });
 
@@ -772,7 +594,6 @@ const recipeReducer = (state, action) => {
       };
 
     case actions.UPDATE_SERVINGS:
-      console.log(`Mise à jour des portions: multiplicateur ${action.payload}`);
       return {
         ...state,
         servingsMultiplier: action.payload,
@@ -790,7 +611,7 @@ const recipeReducer = (state, action) => {
         unusedTools: {},
         unusedStates: new Set(),
         servingsMultiplier: 1,
-        currentServings: state.recipe?.servings || 4,
+        currentServings: state.recipe?.metadata?.servings || 4,
       };
 
     case actions.RESET_STEPS:
@@ -801,7 +622,7 @@ const recipeReducer = (state, action) => {
       };
 
     case actions.RESET_SERVINGS:
-      const originalServings = state.recipe?.servings || 4;
+      const originalServings = state.recipe?.metadata?.servings || 4;
       return {
         ...state,
         servingsMultiplier: 1,
@@ -837,15 +658,9 @@ export const RecipeProvider = ({ children }) => {
     pinch: "pinch",
   };
 
-  // Log pour debug
-  console.log("Constants:", constants);
-  console.log("UNITS:", UNITS);
-
   const UNIT_CONVERSIONS = {
     // Ajouter vos conversions d'unités ici si nécessaire
   };
-
-  console.log("Constants loaded:", { UNITS, UNIT_CONVERSIONS });
 
   const FRACTION_UNITS = [
     ...(constants.units.volume?.spoons || []),
@@ -899,8 +714,9 @@ export const RecipeProvider = ({ children }) => {
 
   const getSubRecipeRemainingTime = useCallback(
     (subRecipeId) => {
-      if (!state.recipe || !state.recipe.subRecipes[subRecipeId]) return 0;
-      const subRecipe = state.recipe.subRecipes[subRecipeId];
+      if (!state.recipe || !state.recipe.subRecipes) return 0;
+      const subRecipe = state.recipe.subRecipes.find((sr) => sr.id === subRecipeId);
+      if (!subRecipe) return 0;
       return (
         subRecipe.steps.reduce((total, step) => {
           if (!step.time || state.completedSteps[step.id]) return total;
@@ -978,7 +794,6 @@ export const RecipeProvider = ({ children }) => {
         throw new Error("Failed to fetch recipe");
       }
       const recipe = await response.json();
-      console.log("Recipe received by client:", recipe);
       setCurrentRecipeSlug(slug); // Mettre à jour le slug de la recette actuelle
       dispatch({ type: actions.SET_RECIPE, payload: recipe });
       dispatch({ type: actions.SET_ERROR, payload: null });
@@ -996,8 +811,6 @@ export const RecipeProvider = ({ children }) => {
   const loadRecipeWithSteps = useCallback(async (recipeData) => {
     dispatch({ type: actions.SET_LOADING, payload: true });
     try {
-      console.log("Loading recipe with steps:", recipeData);
-
       if (!recipeData.steps) {
         throw new Error("La recette fournie ne contient pas de steps");
       }
@@ -1062,8 +875,10 @@ export const RecipeProvider = ({ children }) => {
   // Fonction utilitaire pour obtenir le nombre d'étapes complétées pour une sous-recette
   const getSubRecipeProgress = useCallback(
     (subRecipeId) => {
-      if (!state.recipe || !state.recipe.subRecipes[subRecipeId]) return 0;
-      const subRecipe = state.recipe.subRecipes[subRecipeId];
+      const subRecipe = (state.recipe?.subRecipes || []).find(
+        (sr) => sr.id === subRecipeId
+      );
+      if (!subRecipe) return 0;
       const totalSteps = subRecipe.steps.length;
       if (totalSteps === 0) return 0;
 
@@ -1091,12 +906,6 @@ export const RecipeProvider = ({ children }) => {
     (amount, unit, category) => {
       if (!state.recipe || !amount) return amount;
 
-      console.log(
-        `Ajustement de la quantité: ${amount} ${unit || ""} (${
-          category || "?"
-        }) avec multiplicateur: ${state.servingsMultiplier}`
-      );
-
       // Convertir en nombre si c'est une chaîne
       const numericAmount =
         typeof amount === "string" ? parseFloat(amount) : amount;
@@ -1115,8 +924,6 @@ export const RecipeProvider = ({ children }) => {
         constants
       );
 
-      console.log(`-> Quantité ajustée: ${scaledAmount} ${unit || ""}`);
-
       return scaledAmount;
     },
     [state.recipe, state.servingsMultiplier, constants]
@@ -1124,12 +931,11 @@ export const RecipeProvider = ({ children }) => {
 
   const formatAmount = useCallback(
     (amount, unit) => {
-      if (!amount && amount !== 0) return "-";
-      if (unit && amount === "") return "-";
+      // Null, undefined, empty string, or zero → dash (ingredient "to taste")
+      if (amount == null || amount === "" || amount === 0) return "-";
 
       // Si pas d'unité, essayer de faire au mieux
       if (!unit) {
-        console.log(`Formatage sans unité: ${amount}`);
         // Pour les nombres entiers ou très proches d'entiers, les afficher tels quels
         if (Math.abs(Math.round(amount) - amount) < 0.01) {
           return Math.round(amount).toString();
@@ -1137,8 +943,6 @@ export const RecipeProvider = ({ children }) => {
         // Pour les fractions, tenter de les formater comme telles
         return amount.toString();
       }
-
-      console.log(`Formatage avec unité: ${amount} ${unit}`);
 
       // Conversion impériale désactivée, toujours utiliser le système métrique
       // Formatage existant
@@ -1166,11 +970,7 @@ export const RecipeProvider = ({ children }) => {
       }
 
       // S'assurer que l'unité est bien jointe au montant avec un espace
-      const result = `${formattedAmount}${
-        translatedUnit ? " " + translatedUnit : ""
-      }`;
-      console.log(`Résultat formaté: ${result}`);
-      return result;
+      return `${formattedAmount}${translatedUnit ? " " + translatedUnit : ""}`;
     },
     [UNITS]
   );
@@ -1234,19 +1034,13 @@ export const RecipeProvider = ({ children }) => {
   // Fonction pour normaliser l'accès aux ingrédients des sous-recettes
   const getSubRecipeIngredients = useCallback(
     (subRecipeId) => {
-      if (!state.recipe || !state.recipe.subRecipes) return [];
+      if (!state.recipe?.subRecipes) return [];
 
-      // Trouver la sous-recette spécifiée
-      const subRecipe = Array.isArray(state.recipe.subRecipes)
-        ? state.recipe.subRecipes.find((sr) => sr.id === subRecipeId)
-        : state.recipe.subRecipes[subRecipeId];
+      const subRecipe = state.recipe.subRecipes.find(
+        (sr) => sr.id === subRecipeId
+      );
 
       if (!subRecipe) return [];
-
-      console.log(
-        `Extraction des ingrédients pour la sous-recette ${subRecipeId}:`,
-        subRecipe
-      );
 
       // Si la sous-recette a une propriété "ingredients"
       if (Array.isArray(subRecipe.ingredients)) {
@@ -1279,81 +1073,7 @@ export const RecipeProvider = ({ children }) => {
               unit = originalIngredient.unit;
             }
 
-            // 3. Si toujours pas d'unité, chercher dans les steps
-            if (!unit && state.recipe.steps) {
-              // Chercher dans les inputs des steps qui utilisent cet ingrédient
-              state.recipe.steps.forEach((step) => {
-                if (
-                  step.subRecipe === subRecipeId ||
-                  (!step.subRecipe && subRecipeId === "main")
-                ) {
-                  (step.inputs || []).forEach((input) => {
-                    if (
-                      (input.input_type === "ingredient" ||
-                        input.type === "ingredient") &&
-                      (input.ref_id === ingredient.ref ||
-                        input.ref === ingredient.ref) &&
-                      input.unit
-                    ) {
-                      unit = input.unit;
-                      console.log(
-                        `Unité trouvée dans le step pour ${ingredient.ref}: ${unit}`
-                      );
-                    }
-                  });
-                }
-              });
-            }
-
-            console.log(
-              `Unité pour l'ingrédient ${ingredient.ref} (${originalIngredient.name}):`,
-              {
-                ingredientUnit: ingredient.unit,
-                originalUnit: originalIngredient.unit,
-                unitTrouvée: unit,
-              }
-            );
-
-            // Si toujours pas d'unité, essayer de déterminer une unité par défaut
-            if (!unit) {
-              const getDefaultUnitFromCategory = (category, name) => {
-                const defaultUnits = {
-                  produce: "g", // Fruits et légumes
-                  dairy: "g", // Produits laitiers
-                  egg: "unit", // Œufs
-                  meat: "g", // Viande
-                  spice: "tsp", // Épices
-                  condiment: "tbsp", // Condiments
-                  pantry: "g", // Garde-manger
-                  other: "g", // Autres
-                };
-
-                // Cas spéciaux basés sur le nom
-                if (name) {
-                  const nameLower = name.toLowerCase();
-                  if (nameLower.includes("oil") || nameLower.includes("huile"))
-                    return "ml";
-                  if (nameLower.includes("juice") || nameLower.includes("jus"))
-                    return "ml";
-                  if (nameLower.includes("water") || nameLower.includes("eau"))
-                    return "ml";
-                  if (nameLower.includes("milk") || nameLower.includes("lait"))
-                    return "ml";
-                }
-
-                return defaultUnits[category] || null;
-              };
-
-              unit = getDefaultUnitFromCategory(
-                originalIngredient.category,
-                originalIngredient.name
-              );
-              if (unit) {
-                console.log(
-                  `Unité par défaut déterminée pour ${originalIngredient.name}: ${unit}`
-                );
-              }
-            }
+            // null = item comptable (2 échalotes, 1 feuille de laurier) — on ne devine PAS
 
             // Créer un objet ingrédient complet avec les informations des deux sources
             return {
@@ -1364,9 +1084,6 @@ export const RecipeProvider = ({ children }) => {
               unit: unit,
               category: ingredient.category || originalIngredient.category,
               subRecipeId,
-              // Pour le débogage
-              _srcIngredient: ingredient,
-              _originalIngredient: originalIngredient,
             };
           })
           .filter(Boolean);
@@ -1417,10 +1134,6 @@ export const RecipeProvider = ({ children }) => {
   const getFormattedSubRecipeIngredients = useCallback(
     (subRecipeId) => {
       const ingredients = getSubRecipeIngredients(subRecipeId);
-      console.log(
-        `Formatage des ingrédients pour la sous-recette ${subRecipeId}`,
-        { multiplicateur: state.servingsMultiplier, ingredients }
-      );
 
       return ingredients
         .map((ingredient) => {
@@ -1442,49 +1155,8 @@ export const RecipeProvider = ({ children }) => {
               amount = 0;
             }
 
-            // Vérifier que l'unité est définie
-            let unit = ingredient.unit;
-
-            // Si l'unité est manquante, essayer de deviner en fonction de la catégorie
-            if (!unit && ingredient.category) {
-              // Fonction qui détermine l'unité par défaut en fonction de la catégorie
-              const guessUnitFromCategory = (category, name) => {
-                // Unités par défaut en fonction de la catégorie
-                const defaultUnits = {
-                  produce: "g", // Fruits et légumes en grammes par défaut
-                  dairy: "g", // Produits laitiers en grammes
-                  egg: "unit", // Œufs en unités
-                  meat: "g", // Viande en grammes
-                  spice: "tsp", // Épices en cuillère à café
-                  condiment: "tbsp", // Condiments en cuillère à soupe
-                  pantry: "g", // Ingrédients de garde-manger en grammes
-                  other: "g", // Autres en grammes
-                };
-
-                // Cas spéciaux basés sur le nom
-                if (name) {
-                  const nameLower = name.toLowerCase();
-                  if (nameLower.includes("oil") || nameLower.includes("huile"))
-                    return "ml";
-                  if (nameLower.includes("juice") || nameLower.includes("jus"))
-                    return "ml";
-                  if (nameLower.includes("water") || nameLower.includes("eau"))
-                    return "ml";
-                  if (nameLower.includes("milk") || nameLower.includes("lait"))
-                    return "ml";
-                }
-
-                return defaultUnits[category] || null;
-              };
-
-              unit = guessUnitFromCategory(
-                ingredient.category,
-                ingredient.name
-              );
-              console.log(
-                `Unité devinée pour ${ingredient.name}: ${unit || "aucune"}`
-              );
-            }
+            // null = item comptable (2 échalotes, 1 feuille de laurier) — on ne devine PAS
+            let unit = ingredient.unit || null;
 
             // Calculer la quantité ajustée avec le multiplicateur de portions
             const adjustedAmount = getAdjustedAmount(
@@ -1495,16 +1167,6 @@ export const RecipeProvider = ({ children }) => {
 
             // Formater la quantité pour l'affichage avec l'unité
             const formattedAmount = formatAmount(adjustedAmount, unit);
-
-            console.log(
-              `Ingrédient ${ingredient.id} (${
-                ingredient.name
-              }): Original=${amount}${
-                unit ? " " + unit : ""
-              }, Ajusté=${adjustedAmount}${
-                unit ? " " + unit : ""
-              }, Formaté=${formattedAmount}`
-            );
 
             return {
               ...ingredient,
@@ -1542,112 +1204,6 @@ export const RecipeProvider = ({ children }) => {
     ]
   );
 
-  // Fonction de débogage pour vérifier les ingrédients d'une recette
-  const debugRecipeIngredients = useCallback(() => {
-    if (!state.recipe) {
-      console.warn("Pas de recette chargée");
-      return;
-    }
-
-    // Vérifier les ingrédients principaux
-    console.group("Ingrédients principaux de la recette");
-    state.recipe.ingredients.forEach((ing) => {
-      console.log(
-        `${ing.id}: ${ing.name} - unité: ${
-          ing.unit || "non spécifiée"
-        } - catégorie: ${ing.category || "non spécifiée"}`
-      );
-    });
-    console.groupEnd();
-
-    // Vérifier les ingrédients par sous-recette
-    console.group("Ingrédients par sous-recette");
-
-    if (Array.isArray(state.recipe.subRecipes)) {
-      state.recipe.subRecipes.forEach((subRecipe) => {
-        console.group(`Sous-recette: ${subRecipe.id}`);
-
-        // Récupérer les ingrédients de cette sous-recette
-        const ingredients = getSubRecipeIngredients(subRecipe.id);
-
-        // Vérifier si des unités manquent
-        const missingUnits = ingredients.filter((ing) => !ing.unit);
-        if (missingUnits.length > 0) {
-          console.warn("Ingrédients sans unité:", missingUnits);
-        }
-
-        // Vérifier si des quantités semblent incorrectes
-        const suspiciousAmounts = ingredients.filter((ing) => {
-          const amount = parseFloat(ing.amount);
-          return isNaN(amount) || amount === 0 || amount > 10000;
-        });
-        if (suspiciousAmounts.length > 0) {
-          console.warn(
-            "Ingrédients avec quantités suspectes:",
-            suspiciousAmounts
-          );
-        }
-
-        // Afficher les ingrédients bruts
-        console.log("Ingrédients bruts:", subRecipe.ingredients);
-
-        // Afficher les ingrédients traités
-        console.log("Ingrédients traités:");
-        ingredients.forEach((ing) => {
-          try {
-            const adjustedAmount = getAdjustedAmount(
-              ing.amount,
-              ing.unit,
-              ing.category
-            );
-
-            const formattedAmount = formatAmount(adjustedAmount, ing.unit);
-
-            console.log(
-              `${ing.id}: ${ing.name} - quantité: ${ing.amount} ${
-                ing.unit || ""
-              } - ` +
-                `ajustée (x${state.servingsMultiplier}): ${adjustedAmount} - formatée: ${formattedAmount} - ` +
-                `catégorie: ${ing.category || "non spécifiée"}`
-            );
-          } catch (error) {
-            console.error(
-              `Erreur lors du formatage de l'ingrédient ${ing.id}:`,
-              error,
-              ing
-            );
-          }
-        });
-
-        console.groupEnd();
-      });
-    } else {
-      console.log(
-        "Format de sous-recettes non standard:",
-        state.recipe.subRecipes
-      );
-    }
-
-    console.groupEnd();
-
-    return {
-      mainIngredients: state.recipe.ingredients,
-      subRecipeIngredients: Array.isArray(state.recipe.subRecipes)
-        ? state.recipe.subRecipes.map((sr) => ({
-            id: sr.id,
-            ingredients: getFormattedSubRecipeIngredients(sr.id),
-          }))
-        : [],
-    };
-  }, [
-    state.recipe,
-    state.servingsMultiplier,
-    getSubRecipeIngredients,
-    getAdjustedAmount,
-    formatAmount,
-    getFormattedSubRecipeIngredients,
-  ]);
-
   const value = {
     ...state,
     recipe: state.recipe,
@@ -1667,10 +1223,9 @@ export const RecipeProvider = ({ children }) => {
     getSubRecipeIngredients,
     formatStepIngredient,
     getFormattedSubRecipeIngredients,
-    debugRecipeIngredients,
     getSubRecipeStats: useCallback(
       (subRecipeId) => {
-        const subRecipe = state.recipe?.subRecipes?.[subRecipeId];
+        const subRecipe = state.recipe?.subRecipes?.find((sr) => sr.id === subRecipeId);
         if (!subRecipe) return null;
 
         const totalSteps = subRecipe.steps.length;
@@ -1693,10 +1248,6 @@ export const RecipeProvider = ({ children }) => {
         const originalServings = state.recipe.metadata.servings || 4;
         const multiplier = newServings / originalServings;
 
-        console.log(
-          `Mise à jour des portions de ${originalServings} à ${newServings} (multiplicateur: ${multiplier})`
-        );
-
         dispatch({
           type: actions.UPDATE_SERVINGS,
           payload: multiplier,
@@ -1712,8 +1263,9 @@ export const RecipeProvider = ({ children }) => {
     isToolUnused,
     getSubRecipeProgress: useCallback(
       (subRecipeId) => {
-        if (!state.recipe || !state.recipe.subRecipes[subRecipeId]) return 0;
-        const subRecipe = state.recipe.subRecipes[subRecipeId];
+        if (!state.recipe || !state.recipe.subRecipes) return 0;
+        const subRecipe = state.recipe.subRecipes.find((sr) => sr.id === subRecipeId);
+        if (!subRecipe) return 0;
         const totalSteps = subRecipe.steps.length;
         if (totalSteps === 0) return 0;
 

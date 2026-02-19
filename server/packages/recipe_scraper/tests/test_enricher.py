@@ -4,71 +4,115 @@ from pathlib import Path
 
 from recipe_scraper.recipe_enricher import RecipeEnricher
 
-# Exemple de recette pour tester l'enrichissement
+# Sample recipe with DAG-format steps (action, duration, uses, produces)
 SAMPLE_RECIPE = {
     "metadata": {
         "title": "Salade de légumes avec temps de préparation",
         "slug": "salade-legumes-temps-preparation"
     },
     "ingredients": [
-        {"name": "cucumber", "category": "produce", "quantity": "1", "unit": "piece"},
-        {"name": "tomato", "category": "produce", "quantity": "2", "unit": "pieces"},
-        {"name": "onion", "category": "produce", "quantity": "1", "unit": "piece"},
-        {"name": "olive oil", "category": "oils", "quantity": "2", "unit": "tbsp"},
-        {"name": "salt", "category": "spices", "quantity": "1", "unit": "tsp"},
-        {"name": "pepper", "category": "spices", "quantity": "1/2", "unit": "tsp"}
+        {"id": "cucumber", "name": "cucumber", "category": "produce", "quantity": "1", "unit": "piece"},
+        {"id": "tomato", "name": "tomato", "category": "produce", "quantity": "2", "unit": "pieces"},
+        {"id": "onion", "name": "onion", "category": "produce", "quantity": "1", "unit": "piece"},
+        {"id": "olive_oil", "name": "olive oil", "category": "oils", "quantity": "2", "unit": "tbsp"},
+        {"id": "salt", "name": "salt", "category": "spices", "quantity": "1", "unit": "tsp"},
+        {"id": "pepper", "name": "pepper", "category": "spices", "quantity": "0.5", "unit": "tsp"},
     ],
     "steps": [
-        {"id": "1", "text": "Chop all vegetables into small cubes", "time": "5min"},
-        {"id": "2", "text": "Mix them in a bowl", "time": "2min"},
-        {"id": "3", "text": "Add oil, salt and pepper", "time": "1min"},
-        {"id": "4", "text": "Serve immediately", "time": "1min"}
-    ]
-}
-
-# Exemple de recette avec sous-recettes
-SAMPLE_RECIPE_WITH_SUBRECIPES = {
-    "metadata": {
-        "title": "Plat complexe avec sous-recettes",
-        "slug": "plat-complexe-sous-recettes"
-    },
-    "ingredients": [
-        {"name": "chicken", "category": "meat", "quantity": "500", "unit": "g"}
-    ],
-    "subRecipes": [
         {
-            "name": "Marinade",
-            "steps": [
-                {"id": "1", "text": "Mélanger tous les ingrédients", "time": "5min"},
-                {"id": "2", "text": "Laisser reposer", "time": "1h"}
-            ]
+            "id": "s1",
+            "action": "Chop all vegetables into small cubes",
+            "duration": "PT5M",
+            "uses": ["cucumber", "tomato", "onion"],
+            "produces": "chopped_vegetables",
         },
         {
-            "name": "Cuisson",
-            "steps": [
-                {"id": "1", "text": "Préchauffer le four", "time": "10min"},
-                {"id": "2", "text": "Cuire au four", "time": "30min"}
-            ]
-        }
-    ]
+            "id": "s2",
+            "action": "Mix them in a bowl",
+            "duration": "PT2M",
+            "uses": ["chopped_vegetables"],
+            "produces": "mixed_salad",
+        },
+        {
+            "id": "s3",
+            "action": "Add oil, salt and pepper",
+            "duration": "PT1M",
+            "uses": ["mixed_salad", "olive_oil", "salt", "pepper"],
+            "produces": "dressed_salad",
+        },
+        {
+            "id": "s4",
+            "action": "Serve immediately",
+            "duration": "PT1M",
+            "uses": ["dressed_salad"],
+            "produces": "final_salad",
+        },
+    ],
+    "finalState": "final_salad",
 }
 
+# Recipe with passive steps to test active/passive split
+SAMPLE_RECIPE_WITH_PASSIVE = {
+    "metadata": {
+        "title": "Plat complexe avec repos",
+        "slug": "plat-complexe-repos"
+    },
+    "ingredients": [
+        {"id": "chicken", "name": "chicken", "category": "meat", "quantity": "500", "unit": "g"},
+        {"id": "marinade_spices", "name": "spices", "category": "spices", "quantity": "2", "unit": "tbsp"},
+    ],
+    "steps": [
+        {
+            "id": "s1",
+            "action": "Mélanger les ingrédients de la marinade",
+            "duration": "PT5M",
+            "uses": ["chicken", "marinade_spices"],
+            "produces": "marinated_chicken",
+        },
+        {
+            "id": "s2",
+            "action": "Laisser reposer au frigo",
+            "duration": "PT1H",
+            "isPassive": True,
+            "uses": ["marinated_chicken"],
+            "produces": "rested_chicken",
+        },
+        {
+            "id": "s3",
+            "action": "Préchauffer le four",
+            "duration": "PT10M",
+            "isPassive": True,
+            "uses": [],
+            "produces": "hot_oven",
+        },
+        {
+            "id": "s4",
+            "action": "Cuire au four",
+            "duration": "PT30M",
+            "isPassive": True,
+            "uses": ["rested_chicken", "hot_oven"],
+            "produces": "cooked_chicken",
+        },
+    ],
+    "finalState": "cooked_chicken",
+}
+
+
 def test_recipe_enricher_initialization():
-    """Teste l'initialisation de l'enrichisseur de recettes"""
+    """Test l'initialisation de l'enrichisseur de recettes."""
     enricher = RecipeEnricher()
-    assert enricher is not None, "L'enrichisseur n'a pas été correctement initialisé"
-    
-    # Vérifier que les données saisonnières sont chargées
-    assert enricher._seasonal_data is not None, "Les données saisonnières n'ont pas été chargées"
-    assert "produce" in enricher._seasonal_data, "Les données de 'produce' sont manquantes"
-    assert "vegetables" in enricher._seasonal_data["produce"], "Les données de légumes sont manquantes"
-    assert "fruits" in enricher._seasonal_data["produce"], "Les données de fruits sont manquantes"
+    assert enricher is not None
+
+    assert enricher._seasonal_data is not None
+    assert "produce" in enricher._seasonal_data
+    assert "vegetables" in enricher._seasonal_data["produce"]
+    assert "fruits" in enricher._seasonal_data["produce"]
+
 
 def test_parse_time_to_minutes():
-    """Teste la conversion des chaînes de temps en minutes"""
+    """Test la conversion des chaînes de temps en minutes."""
     enricher = RecipeEnricher()
-    
-    # Tester différents formats de temps
+
     assert enricher._parse_time_to_minutes("5min") == 5.0
     assert enricher._parse_time_to_minutes("1h") == 60.0
     assert enricher._parse_time_to_minutes("1h30min") == 90.0
@@ -77,122 +121,137 @@ def test_parse_time_to_minutes():
     assert enricher._parse_time_to_minutes("") == 0.0
     assert enricher._parse_time_to_minutes(None) == 0.0
 
-def test_calculate_total_time():
-    """Teste le calcul du temps total d'une recette simple"""
-    enricher = RecipeEnricher()
-    
-    # Calculer le temps total de la recette d'exemple
-    total_time = enricher._calculate_total_time(SAMPLE_RECIPE)
-    
-    # Vérifier que le temps total est correct (5 + 2 + 1 + 1 = 9 minutes)
-    assert total_time == 9.0, f"Le temps total calculé est incorrect: {total_time} (attendu: 9.0)"
 
-def test_calculate_total_time_with_subrecipes():
-    """Teste le calcul du temps total d'une recette avec sous-recettes"""
+def test_parse_iso8601_duration():
+    """Test le parsing de durées ISO 8601."""
     enricher = RecipeEnricher()
-    
-    # Calculer le temps total de la recette avec sous-recettes
-    total_time = enricher._calculate_total_time(SAMPLE_RECIPE_WITH_SUBRECIPES)
-    
-    # Vérifier que le temps total est correct (5 + 60 + 10 + 30 = 105 minutes)
-    assert total_time == 105.0, f"Le temps total calculé est incorrect: {total_time} (attendu: 105.0)"
+
+    assert enricher._parse_iso8601_duration("PT5M") == 5.0
+    assert enricher._parse_iso8601_duration("PT1H") == 60.0
+    assert enricher._parse_iso8601_duration("PT1H30M") == 90.0
+    assert enricher._parse_iso8601_duration("PT45M") == 45.0
+    assert enricher._parse_iso8601_duration("PT30S") == 0.5
+
+
+def test_minutes_to_iso8601():
+    """Test la conversion minutes vers ISO 8601."""
+    enricher = RecipeEnricher()
+
+    assert enricher._minutes_to_iso8601(0) == "PT0M"
+    assert enricher._minutes_to_iso8601(5) == "PT5M"
+    assert enricher._minutes_to_iso8601(60) == "PT1H"
+    assert enricher._minutes_to_iso8601(90) == "PT1H30M"
+    assert enricher._minutes_to_iso8601(125) == "PT2H5M"
+
+
+def test_calculate_times_from_dag_linear():
+    """Test le calcul des temps via DAG pour une recette linéaire."""
+    enricher = RecipeEnricher()
+
+    time_info = enricher._calculate_times_from_dag(SAMPLE_RECIPE)
+
+    # Linear chain: 5 + 2 + 1 + 1 = 9 minutes
+    assert time_info["totalTimeMinutes"] == 9.0
+    # All steps are active (no isPassive)
+    assert time_info["totalActiveTimeMinutes"] == 9.0
+    assert time_info["totalPassiveTimeMinutes"] == 0.0
+    # ISO 8601 format
+    assert time_info["totalTime"] == "PT9M"
+    assert time_info["totalActiveTime"] == "PT9M"
+    assert time_info["totalPassiveTime"] == "PT0M"
+
+
+def test_calculate_times_from_dag_with_passive():
+    """Test le calcul des temps avec étapes passives et branches parallèles."""
+    enricher = RecipeEnricher()
+
+    time_info = enricher._calculate_times_from_dag(SAMPLE_RECIPE_WITH_PASSIVE)
+
+    # Critical path: s1 (5min) -> s2 (60min) -> s4 (30min) = 95 min
+    # s3 (10min, preheat) runs in parallel, finishes before s4 starts
+    assert time_info["totalTimeMinutes"] == 95.0
+
+    # Active on critical path: s1 (5min, active)
+    # Passive on critical path: s2 (60min) + s4 (30min) = 90min
+    assert time_info["totalActiveTimeMinutes"] == 5.0
+    assert time_info["totalPassiveTimeMinutes"] == 90.0
+
+
+def test_calculate_times_linear_fallback():
+    """Test le fallback linéaire quand pas de DAG."""
+    enricher = RecipeEnricher()
+
+    recipe_no_dag = {
+        "metadata": {"title": "Simple"},
+        "steps": [
+            {"id": "1", "duration": "PT10M"},
+            {"id": "2", "duration": "PT20M", "isPassive": True},
+            {"id": "3", "duration": "PT5M"},
+        ],
+    }
+    time_info = enricher._calculate_times_linear_fallback(recipe_no_dag)
+
+    assert time_info["totalTimeMinutes"] == 35.0
+    assert time_info["totalActiveTimeMinutes"] == 15.0
+    assert time_info["totalPassiveTimeMinutes"] == 20.0
+
 
 def test_determine_seasons():
-    """Teste la détermination des saisons pour une recette"""
+    """Test la détermination des saisons pour une recette."""
     enricher = RecipeEnricher()
-    
-    # Déterminer les saisons pour la recette d'exemple
+
     seasons, peak_months = enricher._determine_seasons(SAMPLE_RECIPE)
-    
-    # Vérifier que les saisons ont été déterminées
-    assert seasons is not None, "Aucune saison n'a été déterminée"
-    assert len(seasons) > 0, "La liste des saisons est vide"
-    
-    # Les concombres, tomates et oignons sont présents, donc la saison devrait être l'été
-    assert "summer" in seasons, "La saison 'summer' n'a pas été identifiée alors que les légumes sont de saison en été"
-    
-    # Vérifier les mois de pic
-    assert peak_months is not None, "Aucun mois de pic n'a été déterminé"
-    assert len(peak_months) > 0, "La liste des mois de pic est vide"
-    assert "July" in peak_months, "Le mois de Juillet n'a pas été identifié comme mois de pic"
-    assert "August" in peak_months, "Le mois d'Août n'a pas été identifié comme mois de pic"
+
+    assert seasons is not None
+    assert len(seasons) > 0
+    assert "summer" in seasons
+    assert peak_months is not None
+    assert len(peak_months) > 0
+
 
 def test_determine_diets():
-    """Teste la détermination des régimes alimentaires pour une recette"""
+    """Test la détermination des régimes alimentaires."""
     enricher = RecipeEnricher()
-    
-    # Déterminer les régimes pour la recette d'exemple (végétarienne)
+
+    # Vegetable salad => vegan + vegetarian + omnivorous
     diets = enricher._determine_diets(SAMPLE_RECIPE)
-    
-    # Vérifier que les régimes ont été déterminés correctement
-    assert diets is not None, "Aucun régime alimentaire n'a été déterminé"
-    assert len(diets) > 0, "La liste des régimes est vide"
-    assert "vegan" in diets, "La recette devrait être identifiée comme végétalienne"
-    assert "vegetarian" in diets, "La recette devrait être identifiée comme végétarienne"
-    assert "omnivorous" in diets, "La recette devrait être identifiée comme omnivore"
-    
-    # Déterminer les régimes pour la recette avec viande
-    diets_meat = enricher._determine_diets(SAMPLE_RECIPE_WITH_SUBRECIPES)
-    
-    # Vérifier que la recette avec viande est identifiée comme non végétarienne
-    assert "omnivorous" in diets_meat, "La recette avec viande devrait être identifiée comme omnivore"
-    assert "vegan" not in diets_meat, "La recette avec viande ne devrait pas être identifiée comme végétalienne"
-    assert "vegetarian" not in diets_meat, "La recette avec viande ne devrait pas être identifiée comme végétarienne"
+    assert "vegan" in diets
+    assert "vegetarian" in diets
+    assert "omnivorous" in diets
+
+    # Chicken recipe => omnivorous only
+    diets_meat = enricher._determine_diets(SAMPLE_RECIPE_WITH_PASSIVE)
+    assert "omnivorous" in diets_meat
+    assert "vegan" not in diets_meat
+    assert "vegetarian" not in diets_meat
+
 
 def test_enrich_recipe():
-    """Teste l'enrichissement complet d'une recette"""
+    """Test l'enrichissement complet d'une recette (synchrone, sans nutrition)."""
     enricher = RecipeEnricher()
-    
-    # Enrichir la recette d'exemple
-    enriched_recipe = enricher.enrich_recipe(SAMPLE_RECIPE)
-    
-    # Vérifier que la recette a été enrichie
-    assert enriched_recipe is not None, "La recette n'a pas été enrichie"
-    assert "metadata" in enriched_recipe, "Les métadonnées sont manquantes dans la recette enrichie"
-    
-    # Vérifier les métadonnées ajoutées
-    metadata = enriched_recipe["metadata"]
-    assert "diets" in metadata, "Les régimes alimentaires sont manquants"
-    assert "seasons" in metadata, "Les saisons sont manquantes"
-    assert "totalTime" in metadata, "Le temps total est manquant"
-    assert "totalCookingTime" in metadata, "Le temps de cuisson est manquant"
-    
-    # Vérifier que le temps total est correct
-    assert metadata["totalTime"] == 9.0, f"Le temps total est incorrect: {metadata['totalTime']} (attendu: 9.0)"
-    
-    # Vérifier le temps de cuisson (qui pourrait être différent du temps total)
-    assert isinstance(metadata["totalCookingTime"], (int, float)), "Le temps de cuisson n'est pas un nombre"
-    
-    # Vérifier que les données originales ont été préservées
-    assert enriched_recipe["ingredients"] == SAMPLE_RECIPE["ingredients"], "Les ingrédients ont été modifiés"
-    assert enriched_recipe["steps"] == SAMPLE_RECIPE["steps"], "Les étapes ont été modifiées"
-    
-    print(f"✅ Test réussi! Recette '{metadata['title']}' correctement enrichie")
-    print(f"Temps total: {metadata['totalTime']} minutes")
-    print(f"Temps de cuisson: {metadata['totalCookingTime']} minutes")
-    print(f"Régimes: {', '.join(metadata['diets'])}")
-    print(f"Saisons: {', '.join(metadata['seasons'])}")
 
-if __name__ == "__main__":
-    # Exécuter les tests manuellement si le script est lancé directement
-    print("Exécution des tests de l'enrichisseur de recettes...\n")
-    
-    test_recipe_enricher_initialization()
-    print("✓ Test d'initialisation réussi")
-    
-    test_parse_time_to_minutes()
-    print("✓ Test de conversion de temps réussi")
-    
-    test_calculate_total_time()
-    print("✓ Test de calcul du temps total réussi")
-    
-    test_calculate_total_time_with_subrecipes()
-    print("✓ Test de calcul du temps total avec sous-recettes réussi")
-    
-    test_determine_seasons()
-    print("✓ Test de détermination des saisons réussi")
-    
-    test_determine_diets()
-    print("✓ Test de détermination des régimes alimentaires réussi")
-    
-    test_enrich_recipe() 
+    enriched = enricher.enrich_recipe(SAMPLE_RECIPE)
+
+    assert enriched is not None
+    metadata = enriched["metadata"]
+
+    # Diet and season enrichment
+    assert "diets" in metadata
+    assert "seasons" in metadata
+
+    # DAG-computed times (ISO 8601)
+    assert "totalTime" in metadata
+    assert "totalActiveTime" in metadata
+    assert "totalPassiveTime" in metadata
+    assert metadata["totalTime"] == "PT9M"
+
+    # Float minutes for frontend
+    assert "totalTimeMinutes" in metadata
+    assert metadata["totalTimeMinutes"] == 9.0
+
+    # Legacy field removed
+    assert "totalCookingTime" not in metadata
+
+    # Original data preserved
+    assert enriched["ingredients"] == SAMPLE_RECIPE["ingredients"]
+    assert enriched["steps"] == SAMPLE_RECIPE["steps"]

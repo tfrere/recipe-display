@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "title": "Moelleux au Chocolat sans Farine et sans Beurre",
+    "description": "Voici une recette de (super) moelleux au chocolat pour les gourmands ! Qu'ils soient petits ou grands ! Et surtout sans avoir besoin de farine ou de beurre 😉",
+    "servings": 10,
+    "prepTime": "PT20M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "gateau chocolat",
+      "gateau chocolat sans beurre",
+      "gateau chocolat sans farine",
+      "gateau sans gluten",
+      "sans gluten",
+      "automne",
+      "été",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Moelleux-choco-sans-farine-sans-gluten-1-of-6-scaled.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La pâte peut sembler un peu liquide, mais pas d'inquiétude, tout va bien se passer !",
+      "Laisser refroidir une dizaine de minutes avant de démouler le gâteau ! Puis attendez qu'il soit froid pour le découper, sinon il risque de ne pas bien tenir !",
+      "Pour la crème, on peut utiliser de la crème de coco ou une autre crème végétale (soja, amande…)."
+    ],
+    "slug": "moelleux-au-chocolat-sans-farine-et-sans-beurre",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Moelleux-choco-sans-farine-sans-gluten-1-of-6-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/04/moelleux-au-chocolat-sans-farine-et-sans-beurre/",
+    "image": "images/moelleux-au-chocolat-sans-farine-et-sans-beurre.webp",
+    "createdAt": "2026-02-09T19:48:17.738654",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 397.9,
+      "protein": 7.3,
+      "fat": 30.0,
+      "carbs": 26.8,
+      "fiber": 5.2,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "coconut_cream_cake",
+      "name": "crème de coco",
+      "quantity": 250.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "dark_chocolate_cake",
+      "name": "chocolat noir pâtissier",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark baking chocolate"
+    },
+    {
+      "id": "eggs",
+      "name": "œufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "vanilla_sugar",
+      "name": "sucre vanillé",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "almond_powder",
+      "name": "poudre d'amande",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond powder"
+    },
+    {
+      "id": "cornstarch",
+      "name": "fécule de maïs",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "sans gluten si nécessaire",
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "dark_chocolate_sauce",
+      "name": "chocolat noir",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "coconut_cream_sauce",
+      "name": "crème de coco",
+      "quantity": 130.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "powdered_sugar",
+      "name": "sucre glace",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    }
+  ],
+  "tools": [
+    "Moule à gâteau"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 175°C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_chocolate",
+      "action": "Faire chauffer la crème dans une petite casserole à feu moyen. Y faire fondre le chocolat. Remuer de temps en temps, jusqu'à ce que le mélange soit bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "coconut_cream_cake",
+        "dark_chocolate_cake"
+      ],
+      "produces": "melted_chocolate_cream",
+      "requires": [],
+      "visualCue": "bien lisse"
+    },
+    {
+      "id": "whisk_eggs",
+      "action": "Pendant ce temps, mettre les 3 œufs dans un bol et fouetter avec le sucre et le sucre vanillé jusqu'à ce que le mélange devienne un peu mousseux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "eggs",
+        "sugar",
+        "vanilla_sugar"
+      ],
+      "produces": "whisked_eggs",
+      "requires": [],
+      "visualCue": "un peu mousseux"
+    },
+    {
+      "id": "combine_chocolate_eggs",
+      "action": "Dans un plus grand bol, verser le chocolat fondu, puis le mélange d'œufs, et battre avec un fouet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "melted_chocolate_cream",
+        "whisked_eggs"
+      ],
+      "produces": "chocolate_egg_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_dry_ingredients",
+      "action": "Ajouter la poudre d'amande, la fécule, la levure et le sel, et mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "chocolate_egg_mixture",
+        "almond_powder",
+        "cornstarch",
+        "baking_powder",
+        "salt"
+      ],
+      "produces": "cake_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_pan",
+      "action": "Huiler un peu votre moule, puis versez-y la pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "cake_batter"
+      ],
+      "produces": "batter_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_cake",
+      "action": "Enfourner à mi-hauteur pour 20min. Vérifier la cuisson avec un couteau.",
+      "duration": "PT20M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "gateau",
+      "uses": [
+        "batter_in_pan"
+      ],
+      "produces": "baked_cake",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "cuit au couteau"
+    },
+    {
+      "id": "cool_cake",
+      "action": "Laisser refroidir 10min avant de démouler le gâteau.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "gateau",
+      "uses": [
+        "baked_cake"
+      ],
+      "produces": "cooled_cake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "Dans la même petite casserole, faire chauffer la crème avec le chocolat et le sucre glace. Bien remuer jusqu'à ce que le mélange soit bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "coulis",
+      "uses": [
+        "coconut_cream_sauce",
+        "dark_chocolate_sauce",
+        "powdered_sugar"
+      ],
+      "produces": "hot_chocolate_sauce",
+      "requires": [],
+      "visualCue": "bien lisse"
+    },
+    {
+      "id": "cool_sauce",
+      "action": "Sortir du feu et laisser refroidir 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "coulis",
+      "uses": [
+        "hot_chocolate_sauce"
+      ],
+      "produces": "cooled_chocolate_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "glaze_cake",
+      "action": "Nappez votre gâteau froid avec le coulis.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "coulis",
+      "uses": [
+        "cooled_cake",
+        "cooled_chocolate_sauce"
+      ],
+      "produces": "moelleux_au_chocolat_glace",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "moelleux_au_chocolat_glace",
+  "originalText": "Moelleux au Chocolat sans Farine et sans Beurre - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 avril 2020\nMoelleux au Chocolat sans Farine et sans Beurre\nAccéder directement à la recette\nVoici une recette de (super) moelleux au chocolat pour les gourmands ! Qu’ils soient petits ou grands ! Et surtout sans avoir besoin de farine ou de beurre 😉\nÇa ne vous échappera pas, habituellement, c’est ma chère Daniela qui vous propose des recettes de gâteaux et autres délices sucrés. Alors que moi, je me cantonne aux plats salés, ma « comfort zone » comme diraient les américains ! Hélas, confinement oblige, nous ne pouvons pas nous retrouver pour cuisiner ensemble comme d’habitude, alors je me suis retroussée les manches, j’ai appelé ma copine, pour collecter un max de conseils et d’astuces et je vous ai concocté ce moelleux au chocolat.\nOn a voulu vous proposer cette recette sans gluten, pas seulement pour les intolérants, mais aussi parce que, comme beaucoup d’entre vous, on commence à avoir du mal à trouver de farine ou de beurre autour de chez nous. Et, on ne va quand même pas se mettre au régime pour autant !\nDu coup, j’ai lu BEAUCOUP de recettes du blog incroyable de Rabia (\nLa ligne gourmande\n), qui est une mine d’or en ce qui concerne les gâteaux sans gluten, sans matière grasse, sans tout ce que vous voulez ! Et, évidemment, on en se refait pas, j’ai passé des heures sur pinterest. Je voulais comprendre quelles sont les alternatives simples (et moins simples) aux ingrédients « habituels ».\nEt finalement je me suis lancée ! Cette recette est très simple et ne comporte pas d’ingrédients « hors normes ». Mais qui sait, je vais peut-être tester des combo plus insolites la prochaine fois !\nMoelleux au Chocolat sans Farine et sans Beurre\n4.53\n/5 avec\n120\nvotes\nImprimer la recette\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nTemps total\n40\nminutes\nmin\nPortions\n10\nparts\nIngrédients\n1x\n2x\n3x\nPour le gâteau\n250\nml\nde crème de coco\n(ou une autre crème végétale ; soja, amande…)\n200\ng\nde chocolat noir pâtissier\n3\nœufs\n70\ng\nde sucre\n1\nsachet de sucre vanillé\n100\ng\nde poudre d'amande\n40\ng\nde fécule de maïs\n1\nsachet de levure chimique\n(sans gluten si nécessaire)\n1/2\nc-à-c\nde sel\nPour le coulis de chocolat\n120\ng\nde chocolat noir\n130\nml\nde crème de coco\n(ou autre)\n1\nc-à-s\nde sucre glace\nInstructions\nPour le gâteau\nPréchauffer le four à 175 degrés.\nFaire chauffer la crème dans une petite casserole à feu moyen. Y faire fondre le chocolat. Remuer de temps en temps, jusqu'à ce que le mélange soit bien lisse.\nPendant ce temps, mettre les 3 œufs dans un bol et fouetter avec le sucre et le sucre vanillé jusqu’à ce que le mélange devienne un peu mousseux.\nDans un plus grand bol, verser le chocolat, puis le mélange d’œufs, Et battre avec un fouet.\nAjouter la poudre d'amande, la fécule, la levure et le sel, et mélanger.\nLa pâte peut sembler un peu liquide, mais pas d'inquiétude, tout va bien se passer !\nHuiler un peu votre moule, puis versez-y la pâte.\nEnfourner à mi-hauteur pour 20/25min. Verifier la cuisson avec un couteau.\nLaisser refroidir une dizaine de minutes avant de démouler le gâteau ! Puis attendez qu'il soit froid pour le découper, sinon il risque de ne pas bien tenir !\nPour le coulis\nDans la même petite casserole, faire chauffer la crème avec le chocolat et le sucre glace. Bien remuer jusqu'à ce que le mélange soit bien lisse. Sortir du feu et laisser refroidir 15min. Puis nappez votre gâteau !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nÉté\n,\nGâteaux et Cakes\n,\nHiver\n,\nPrintemps\n,\nRecettes Sucrées\nTags:\ngateau chocolat\n,\ngateau chocolat sans beurre\n,\ngateau chocolat sans farine\n,\ngateau sans gluten\n,\nsans gluten\nRagoût à la Cacahuète, Pois Chiches et Epinards\nGalettes de Lentilles Corail et Carottes\n4 thoughts on “Moelleux au Chocolat sans Farine et sans Beurre”\nLadyMilonguera\ndit :\n4 avril 2020 à 17 h 01 min\nHummmm… terrible ce moelleux…\nchargement…\nRépondre\njoel marusic\ndit :\n27 juillet 2020 à 23 h 26 min\nUne tuerie !\nUn des meilleurs gâteaux au chocolat que j’ai pu faire !\nchargement…\nRépondre\nFree The Pickle\ndit :\n28 juillet 2020 à 11 h 51 min\nRavie qu’il te plaise 💕\nchargement…\nRépondre\nConstance\ndit :\n14 janvier 2023 à 17 h 15 min\nExquis\nchargement…\nRépondre\n4.53 from 120 votes (\n118 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

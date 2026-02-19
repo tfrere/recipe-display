@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "title": "Compote de pommes \u00e0 la vapeur : recette rapide, saine et sans sucre ajout\u00e9",
+    "description": "Une version ultra simple, rapide, et sans sucre ajout\u00e9, que je r\u00e9alise quasiment chaque semaine. Le principe est basique : des pommes, un peu de vapeur\u2026 et c'est tout.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pomme",
+      "automne",
+      "\u00e9t\u00e9",
+      "dessert",
+      "v\u00e9g\u00e9tarien",
+      "vegan",
+      "sans sucre ajout\u00e9",
+      "cuisson vapeur"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Compote-de-pomme-vapeur-1-of-6.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se conserve au frais ou au cong\u00e9lateur.",
+      "Pour une texture plus lisse, \u00e9plucher syst\u00e9matiquement. Mais avec un bon mixeur et des pommes bio, on peut garder la peau sans souci.",
+      "Je pr\u00e9f\u00e8re m\u00e9langer les vari\u00e9t\u00e9s : une base de Golden ou Gala pour la douceur, une touche de Granny Smith ou Canada pour l'acidit\u00e9.",
+      "Une fois cuite, on peut ajouter un soup\u00e7on de cannelle, quelques gouttes de jus de citron, une cuill\u00e8re de sirop d'\u00e9rable ou de miel, une touche de vanille ou de gingembre."
+    ],
+    "slug": "compote-de-pommes-a-la-vapeur-recette-rapide-saine-et-sans-sucre-ajoute",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Compote-de-pomme-vapeur-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/09/13/compote-pommes-vapeur/",
+    "image": "images/compote-de-pommes-a-la-vapeur-recette-rapide-saine-et-sans-sucre-ajoute.webp",
+    "createdAt": "2026-02-09T23:06:35.167447",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 770.0,
+      "protein": 20.0,
+      "fat": 0.9,
+      "carbs": 174.0,
+      "fiber": 17.0,
+      "confidence": "high",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "apples",
+      "name": "pommes",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    }
+  ],
+  "tools": [
+    "Casserole vapeur (ou cuiseur vapeur \u00e9lectrique, four vapeur)",
+    "\u00c9crase-pur\u00e9e ou mixeur"
+  ],
+  "steps": [
+    {
+      "id": "peel_and_core_apples",
+      "action": "Pelez et \u00e9p\u00e9pinez les pommes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "apples"
+      ],
+      "produces": "peeled_cored_apples",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_apples",
+      "action": "Coupez-les en gros morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_cored_apples"
+      ],
+      "produces": "apple_chunks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_apples",
+      "action": "Placez-les dans le panier de votre casserole vapeur et faites cuire jusqu'\u00e0 ce que les pommes soient tendres.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "apple_chunks"
+      ],
+      "produces": "steamed_apples",
+      "requires": [],
+      "visualCue": "pommes tendres"
+    },
+    {
+      "id": "mash_apples",
+      "action": "\u00c9crasez-les avec un \u00e9crase pur\u00e9e ou \u00e9ventuellement au mixeur pour un rendu compl\u00e8tement lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_apples"
+      ],
+      "produces": "apple_compote",
+      "requires": [],
+      "visualCue": "rendu compl\u00e8tement lisse"
+    },
+    {
+      "id": "optional_sweeten",
+      "action": "Vous pouvez ajouter du sucre ou le sucrant de votre choix (\u00e0 volont\u00e9).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "apple_compote"
+      ],
+      "produces": "sweetened_apple_compote",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sweetened_apple_compote",
+  "originalText": "Compote de pommes \u00e0 la vapeur : rapide, saine, sans sucre ajout\u00e9\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 septembre 2025\nCompote de pommes \u00e0 la vapeur : recette rapide, saine et sans sucre ajout\u00e9\nDepuis quelques ann\u00e9es, la compote de pommes \u00e0 la vapeur est devenu ma fa\u00e7on pr\u00e9f\u00e9r\u00e9e de la pr\u00e9parer. Une version ultra simple, rapide, et sans sucre ajout\u00e9, que je r\u00e9alise quasiment chaque semaine, par petites ou grandes quantit\u00e9s, selon ce que j\u2019ai sous la main.\nLe principe est basique : des pommes, un peu de vapeur\u2026 et c\u2019est tout. Mais c\u2019est justement ce minimalisme qui en fait, \u00e0 mes yeux, l\u2019une des pr\u00e9parations les plus efficaces \u00e0 avoir dans son frigo ou son cong\u00e9lateur.\nPas besoin d\u2019\u00e9plucher dix ingr\u00e9dients ni de surveiller une cuisson longue. En dix minutes \u00e0 peine, la compote est pr\u00eate, fondante, et pleine de go\u00fbt. Un classique de l\u2019enfance que je revisite aujourd\u2019hui sans sucre ajout\u00e9, avec une cuisson douce qui pr\u00e9serve les ar\u00f4mes et les nutriments.\nEt c\u2019est peut-\u00eatre \u00e7a que j\u2019aime le plus : cette simplicit\u00e9 qui laisse toute la place \u00e0 la saveur des pommes. Une sorte de retour \u00e0 l\u2019essentiel.\nTable des mati\u00e8res\n1\nUne cuisson douce qui change tout\n2\nUne base parfaite \u00e0 congeler et \u00e0 r\u00e9utiliser\n3\nAvec ou sans ajout : \u00e0 adapter selon les go\u00fbts\n4\nQuelques astuces si vous d\u00e9butez\n5\nUne recette \u00e0 garder sous la main\n6\nCompote de pommes \u00e0 la vapeur\n7\nPour aller plus loin\n8\nPour r\u00e9sumer, la compote de pommes \u00e0 la vapeur\nUne cuisson douce qui change tout\nCe qui distingue cette compote de pommes, c\u2019est sa m\u00e9thode de cuisson :\n\u00e0 la vapeur\n. Contrairement \u00e0 une cuisson \u00e0 l\u2019eau ou \u00e0 la casserole, ici les pommes ne sont pas noy\u00e9es. Elles cuisent doucement sans contact direct avec le liquide, ce qui permet de mieux pr\u00e9server leur go\u00fbt, mais aussi leurs nutriments.\nAutre avantage : on \u00e9vite que les pommes ne rendent trop d\u2019eau, ce qui donne une texture naturellement fondante, sans avoir \u00e0 les faire r\u00e9duire longtemps. En fonction du mixeur ou de l\u2019\u00e9crase-pur\u00e9e utilis\u00e9, on peut choisir une compote bien lisse ou un peu rustique, avec des morceaux.\nEt pas besoin d\u2019avoir un mat\u00e9riel professionnel ou sp\u00e9cifique : n\u2019importe quel cuiseur vapeur fait l\u2019affaire. Que ce soit un cuit-vapeur \u00e9lectrique,  une casserole vapeur, ou m\u00eame un four vapeur\u2026 le r\u00e9sultat sera le m\u00eame. Ce qui compte, c\u2019est de garder cette cuisson douce, ma\u00eetris\u00e9e, sans faire bouillir les fruits \u00e0 haute temp\u00e9rature.\nUne base parfaite \u00e0 congeler et \u00e0 r\u00e9utiliser\nL\u2019un des grands atouts de cette recette, c\u2019est sa polyvalence. Je pr\u00e9pare souvent 1 kg, voire plus, de compote d\u2019un coup, que je r\u00e9partis ensuite dans des petits bocaux pour la congeler.\nElle se conserve tr\u00e8s bien, sans perte de go\u00fbt ni de texture. Et une fois d\u00e9congel\u00e9e, elle peut \u00eatre utilis\u00e9e de mille fa\u00e7ons :\nEn fond de tarte (seule ou m\u00e9lang\u00e9e \u00e0 une cr\u00e8me d\u2019amande)\nDans des chaussons ou des feuillet\u00e9s\nPour remplacer une partie du sucre ou du gras dans un g\u00e2teau\nOu tout simplement\u2026 \u00e0 la cuill\u00e8re, telle quelle, bien fra\u00eeche\nC\u2019est aussi une excellente option pour les enfants : une compote douce, sans sucre ajout\u00e9, qui garde toute la saveur des pommes, sans exc\u00e8s de transformation.\nAvec ou sans ajout : \u00e0 adapter selon les go\u00fbts\nDe base, je la pr\u00e9pare nature, avec uniquement des pommes. Je trouve que la vari\u00e9t\u00e9 suffit \u00e0 elle-m\u00eame, surtout si on joue sur les contrastes : un m\u00e9lange de pommes acidul\u00e9es et de pommes plus sucr\u00e9es donne souvent un \u00e9quilibre parfait.\nMais rien n\u2019emp\u00eache d\u2019ajouter un peu de fantaisie une fois la cuisson termin\u00e9e :\nUn soup\u00e7on de cannelle, pour une version r\u00e9confortante en hiver\nQuelques gouttes de jus de citron, pour relever la fra\u00eecheur\nUne cuill\u00e8re de sirop d\u2019\u00e9rable ou de miel, si on la pr\u00e9f\u00e8re plus douce\nUne touche de vanille ou de gingembre pour varier les plaisirs\nL\u2019id\u00e9e, c\u2019est que cette base soit modulable \u00e0 souhait. Et comme on n\u2019ajoute rien avant la cuisson, on garde toujours la main sur le r\u00e9sultat final.\nQuelques astuces si vous d\u00e9butez\n\u00c9plucher ou pas ?\n\u00c0 vous de voir. Pour une texture plus lisse, j\u2019\u00e9pluche syst\u00e9matiquement. Mais avec un bon mixeur et des pommes bio, on peut garder la peau sans souci.\nQuelles pommes choisir ?\nJe pr\u00e9f\u00e8re m\u00e9langer les vari\u00e9t\u00e9s : une base de Golden ou Gala pour la douceur, une touche de Granny Smith ou Canada pour l\u2019acidit\u00e9.\nEt pour les b\u00e9b\u00e9s ?\nC\u2019est une super alternative maison aux compotes du commerce. Nature, sans sucre, sans conservateur. Il suffit de bien mixer pour obtenir une texture ultra lisse.\nUne recette \u00e0 garder sous la main\nCette compote de pommes \u00e0 la vapeur est devenue un indispensable de mes pr\u00e9parations maison. Un petit r\u00e9flexe facile, sain et \u00e9conomique, qui permet d\u2019avoir toujours une base pr\u00eate pour un go\u00fbter, un dessert, ou un ajout dans une autre recette.\nEn quelques minutes, on obtient une pr\u00e9paration douce, parfum\u00e9e, et naturellement sucr\u00e9e. De quoi faire le plein de fruits, sans se compliquer la vie. Et pour les plus curieux, elle se pr\u00eate \u00e0 toutes les variations imaginables, mais je vous avoue que moi, je la pr\u00e9f\u00e8re nature, telle quelle.\nCompote de pommes \u00e0 la vapeur\n4.55\n/5 avec\n60\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n1\nkg\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde pommes\nInstructions\nPelez et \u00e9p\u00e9pinez les pommes.\nCoupez-les en gros morceaux.\nPlacez-les dans le panier de votre casserole vapeur et faites cuire jusqu\u2019\u00e0 ce que les pommes soient tendres (entre 10 et 15min).\n\u00c9crasez-les avec un \u00e9crase pur\u00e9e ou \u00e9ventuellement au mixeur pour un rendu compl\u00e8tement liste.\nVous pouvez ajouter du sucre ou le sucrant de votre choix.\nSe conserve au frais ou au cong\u00e9lateur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin\nSi vous avez quelques pommes en plus sous la main, voici d\u2019autres id\u00e9es sucr\u00e9es pour les mettre \u00e0 l\u2019honneur.\nDes recettes simples, fruit\u00e9es et chaleureuses, parfaites pour toutes les saisons.\nChaussons pomme-fraise au miel\n: une p\u00e2te croustillante, une garniture fondante aux fruits, et une touche de miel pour relever le tout. Des chaussons aussi jolis que faciles \u00e0 faire.\nScones pommes cannelle\n: moelleux \u00e0 souhait, l\u00e9g\u00e8rement \u00e9pic\u00e9s, ces scones sont parfaits pour le go\u00fbter ou le petit d\u00e9jeuner. \u00c0 d\u00e9guster ti\u00e8des, avec un peu de beurre ou nature.\nClafoutis pommes caram\u00e9lis\u00e9es et lait de coco\n: une version fruit\u00e9e et gourmande du clafoutis, avec des pommes fondantes et une p\u00e2te l\u00e9g\u00e8re au lait v\u00e9g\u00e9tal.\nInvisible pomme cannelle\n: un g\u00e2teau ultra moelleux, presque fondant, dans lequel les lamelles de pommes se fondent dans la p\u00e2te. Un classique qu\u2019on refait volontiers.\nCake aux pommes sans mati\u00e8re grasse\n: un g\u00e2teau l\u00e9ger, mais plein de go\u00fbt, qui mise sur la compote de pomme pour apporter du moelleux. Parfait pour un dessert ou un go\u00fbter \u00e9quilibr\u00e9.\nPour r\u00e9sumer, la compote de pommes \u00e0 la vapeur\nCette compote de pomme \u00e0 la vapeur fait vraiment partie de ces recettes simples que l\u2019on adopte vite au quotidien. Elle ne demande presque rien : quelques pommes, un peu de temps, et le tour est jou\u00e9. En plus d\u2019\u00eatre rapide et sans sucre ajout\u00e9, la cuisson vapeur permet de pr\u00e9server un maximum de saveurs et de nutriments.\nQue vous l\u2019aimiez nature ou l\u00e9g\u00e8rement parfum\u00e9e, servie seule ou gliss\u00e9e dans une tarte ou un g\u00e2teau, cette compote se pr\u00eate \u00e0 toutes les envies. Et si vous aimez anticiper, n\u2019h\u00e9sitez pas \u00e0 en pr\u00e9parer de plus grandes quantit\u00e9s : elle se cong\u00e8le tr\u00e8s bien et se ressort en un clin d\u2019\u0153il au moment de pr\u00e9parer un dessert ou un go\u00fbter.\nUn petit geste simple, mais qui change tout en cuisine.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nPomme\nFleurs de courgettes farcies \u00e0 la grecque (yemista) : une recette estivale pleine de fra\u00eecheur\nGombos en sauce tomate \u00e0 la grecque (Bami\u00e8s giachn\u00ed \u2013 \u03bc\u03c0\u03ac\u03bc\u03b9\u03b5\u03c2 \u03b3\u03b9\u03b1\u03c7\u03bd\u03af)\n2 thoughts on \u201cCompote de pommes \u00e0 la vapeur : recette rapide, saine et sans sucre ajout\u00e9\u201d\nDavet\ndit\u00a0:\n17 septembre 2025 \u00e0 19 h 25 min\nC\u2019est super bon et sa donne trop envie\nchargement\u2026\nR\u00e9pondre\nMalo\ndit\u00a0:\n27 septembre 2025 \u00e0 13 h 12 min\nJe ne ferai plus de compote autrement, ultra rapide, facile, d\u00e9licieux, le go\u00fbt des pommes  est sublim\u00e9. Merci!\nchargement\u2026\nR\u00e9pondre\n4.55 from 60 votes (\n59 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

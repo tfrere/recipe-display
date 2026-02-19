@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "title": "Aubergines \u00e0 la sauce tomate \u00e0 la grecque",
+    "description": "Un plat grec traditionnel simple et savoureux, mettant \u00e0 l'honneur l'aubergine dans une sauce tomate parfum\u00e9e, \u00e0 servir avec du riz et de la feta.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT55M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergine",
+      "grecque",
+      "sauce tomate",
+      "v\u00e9g\u00e9tarien",
+      "mijot\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/07/Aubergines-sauce-tomate-a-la-grecque-yarni-2-of-2.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "On peut en faire en grande quantit\u00e9 pour congeler dans des bocaux en verre.",
+      "Ce plat est aussi appel\u00e9 \"yarni\".",
+      "Existe aussi en version courgettes ou haricots verts."
+    ],
+    "slug": "aubergines-a-la-sauce-tomate-a-la-grecque",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/07/Aubergines-sauce-tomate-a-la-grecque-yarni-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/07/04/aubergines-a-la-sauce-tomate-a-la-grecque/",
+    "image": "images/aubergines-a-la-sauce-tomate-a-la-grecque.jpg",
+    "createdAt": "2026-02-09T21:51:30.325604",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 15.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 336.3,
+      "protein": 5.1,
+      "fat": 23.4,
+      "carbs": 31.0,
+      "fiber": 10.3,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "eggplants",
+      "name": "aubergines",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 700g",
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "yellow_onions",
+      "name": "oignons jaunes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onions"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 6.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "dried_oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "tomato_sauce",
+      "name": "coulis de tomate",
+      "quantity": 700.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Cocotte en fonte (ou grande casserole)"
+  ],
+  "steps": [
+    {
+      "id": "cut_eggplants",
+      "action": "Couper les aubergines en gros d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggplants"
+      ],
+      "produces": "diced_eggplants",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onions",
+      "action": "\u00c9mincer les oignons en lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "yellow_onions"
+      ],
+      "produces": "sliced_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onions",
+      "action": "Faire chauffer l'huile dans une cocotte en fonte. Y faire revenir les oignons \u00e0 feu moyen.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil",
+        "sliced_onions"
+      ],
+      "produces": "sauteed_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_eggplants",
+      "action": "Ajouter les aubergines et faire revenir encore.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_eggplants",
+        "sauteed_onions"
+      ],
+      "produces": "sauteed_eggplant_onion_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomato_paste_seasonings",
+      "action": "Ajouter le concentr\u00e9 de tomate, le sucre, l'origan et le sel. Faire revenir.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_paste",
+        "sugar",
+        "dried_oregano",
+        "salt",
+        "sauteed_eggplant_onion_mix"
+      ],
+      "produces": "seasoned_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajouter le coulis de tomate et l'eau. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_sauce",
+        "water",
+        "seasoned_base"
+      ],
+      "produces": "tomato_sauce_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bring_to_boil",
+      "action": "Porter \u00e0 \u00e9bullition puis couvrir et baisser le feu \u00e0 doux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_sauce_mixture"
+      ],
+      "produces": "simmering_sauce",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "simmer",
+      "action": "Laisser mijoter en remuant de temps en temps, jusqu'\u00e0 ce que les aubergines soient compl\u00e8tement molles et tombent en morceaux.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "simmering_sauce"
+      ],
+      "produces": "cooked_eggplant_tomato_sauce",
+      "requires": [],
+      "visualCue": "aubergines compl\u00e8tement molles et tombent en morceaux"
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec du riz et de la feta.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_eggplant_tomato_sauce"
+      ],
+      "produces": "aubergines_sauce_tomate_grecque",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "aubergines_sauce_tomate_grecque",
+  "originalText": "Aubergines \u00e0 la Sauce Tomate \u00e0 la Grecque | Plat R\u00e9confortant\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 juillet 2023\nAubergines \u00e0 la sauce tomate \u00e0 la grecque : un classique\nLes\nAubergines \u00e0 la sauce tomate \u00e0 la grecque\n, c\u2019est clairement un basique chez nous. D\u00e8s que la\nsaison estivale\nd\u00e9marre, on en pr\u00e9pare presque chaque semaine ! On aime en faire en grande quantit\u00e9 pour en mettre au cong\u00e9lateur. Il suffit de r\u00e9partir le plat dans des bocaux en verre et hop, direction le cong\u00e9lo. \u00c7a se conserve parfaitement et c\u2019est un bonheur \u00e0 ressortir quand on a la flemme de\ncuisiner\n. C\u2019est vraiment le genre de\nrecette simple\net\nsavoureuse\nqu\u2019on adore. Et puis, c\u2019est un vrai classique de la\ncuisine grecque\n, riche en\nsoleil\net en\nparfums\n! On vous pr\u00e9vient : c\u2019est le genre de\nplat\nqui devient vite un indispensable \u00e0 la maison.\nTable des mati\u00e8res\n1\nLe \u201cyarni\u201d : un plat grec tout simple, plein de soleil\n2\nAubergines \u00e0 la sauce tomate \u00e0 la grecque\n3\nL\u2019aubergine, tr\u00e9sor m\u00e9diterran\u00e9en aux mille facettes\n4\nUn plat simple, rapide\u2026 et absolument d\u00e9licieux\n5\nUne sauce tomate maison parfum\u00e9e et g\u00e9n\u00e9reuse\n6\nFeta et riz, le combo gagnant\nLe \u201cyarni\u201d : un plat grec tout simple, plein de soleil\nChez nous, on appelle \u00e7a un \u201cyarni\u201d. C\u2019est un plat grec traditionnel, tr\u00e8s simple \u00e0 pr\u00e9parer, qu\u2019on cuisine avec un seul l\u00e9gume \u00e0 la fois. Contrairement \u00e0 la ratatouille o\u00f9 on m\u00e9lange tout, ici, on met vraiment \u00e0 l\u2019honneur un l\u00e9gume bien choisi. Aujourd\u2019hui, on vous propose la version \u00e0 l\u2019aubergine, mais il existe aussi une d\u00e9licieuse version aux courgettes d\u00e9j\u00e0 sur le blog\njuste ici\n! Et si vous tombez sur de bons haricots verts, on vous recommande vivement d\u2019essayer cette variante : c\u2019est tout simplement irr\u00e9sistible.\nAubergines \u00e0 la sauce tomate \u00e0 la grecque\n4.59\n/5 avec\n79\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\naubergines\nenv 700g\n2\noignons jaunes\n6\nc\u00e0s d\u2019huile d\u2019olive\n140\ng\nde concentr\u00e9 de tomate\n1\nc\u00e0c de sucre\n1\nc\u00e0c de sel\n1\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n700\nml\nde coulis de tomate\n400\nml\nd\u2019eau\nInstructions\nCouper les aubergines en gros d\u00e9s.\n\u00c9mincer les oignons en lamelles.\nFaire chauffer l\u2019huile dans une cocotte en fonte (ou une grande casserole). Y faire revenir les oignons \u00e0 feu moyen pendant 5min puis ajouter les aubergines et faire revenir encore 5min.\nAjouter le concentr\u00e9, le sucre, l\u2019origan et le sel et faire revenir 5min.\nEnfin, ajouter le coulis et l\u2019eau. Bien m\u00e9langer. Porter \u00e0 \u00e9bullition puis couvrir et baisser le feu \u00e0 doux.\nLaisser mijoter 45-50min en remuant de temps en temps. C\u2019est cuit quand les aubergines sont compl\u00e8tement molles et tombent en morceaux.\nServir avec du riz et de la feta.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nL\u2019aubergine, tr\u00e9sor m\u00e9diterran\u00e9en aux mille facettes\nL\u2019aubergine, avec sa peau lisse et brillante, est un pilier de la cuisine m\u00e9diterran\u00e9enne depuis des si\u00e8cles. Originaire d\u2019Inde, elle s\u2019est install\u00e9e autour du bassin m\u00e9diterran\u00e9en o\u00f9 elle est devenue incontournable, notamment en\nGr\u00e8ce\n. L\u00e0-bas, elle se cuisine de mille fa\u00e7ons : en gratin, en sauce, en pur\u00e9e\u2026 Elle est riche en fibres, pauvre en calories, et sa chair moelleuse en fait un ingr\u00e9dient ultra r\u00e9confortant. Nous, on l\u2019adore pan\u00e9e comme dans cette\naubergine pan\u00e9e crousti-fondante\n, ou en version fondante dans une bonne\nmoussaka v\u00e9g\u00e9tarienne\n. Et pour l\u2019ap\u00e9ro, rien ne vaut un\ncaviar d\u2019aubergine au tahini\nbien parfum\u00e9. L\u2019aubergine, c\u2019est vraiment un des l\u00e9gumes stars de l\u2019\u00e9t\u00e9 !\nUn plat simple, rapide\u2026 et absolument d\u00e9licieux\nCe qu\u2019on adore avec ce genre de recette, c\u2019est sa simplicit\u00e9. Pas besoin de passer des heures en cuisine : on fait revenir doucement des oignons, on ajoute les aubergines, un peu d\u2019ail, de tomate, quelques \u00e9pices\u2026 Et puis on laisse mijoter tranquillement, le temps que les aubergines deviennent bien fondantes. Un plat tout doux, facile \u00e0 pr\u00e9parer, qui sent bon l\u2019\u00e9t\u00e9 et qu\u2019on a toujours plaisir \u00e0 retrouver. Si vous aimez autant que nous cuisiner ce l\u00e9gume, d\u00e9couvrez\ntoutes nos recettes \u00e0 base d\u2019aubergine\n.\nUne sauce tomate maison parfum\u00e9e et g\u00e9n\u00e9reuse\nLe secret de ce plat r\u00e9side aussi dans sa sauce tomate riche et savoureuse. Elle se pr\u00e9pare avec des oignons fondants, du coulis de tomate, un peu de concentr\u00e9, de l\u2019origan, une touche de sucre pour \u00e9quilibrer l\u2019acidit\u00e9, et un filet d\u2019huile d\u2019olive pour le go\u00fbt. On laisse mijoter doucement jusqu\u2019\u00e0 ce que tout devienne fondant et plein de soleil. Si vous aimez ce genre de sauces simples et parfum\u00e9es, vous devez jeter un \u0153il \u00e0 notre\nsauce tomate pour p\u00e2tes, pizzas et lasagnes\nou encore \u00e0 notre\ngratin de macaronis \u00e0 la sauce tomate et aux PST\n.\nFeta et riz, le combo gagnant\nC\u2019est vraiment le plat magique pour nous ! Ces Aubergines \u00e0 la sauce tomate \u00e0 la grecque nous apportent un r\u00e9confort fou. Et pour en profiter pleinement, on adore les accompagner d\u2019un bon riz bien chaud\u2026 et de feta. Ce fromage grec, cr\u00e9meux et sal\u00e9, vient parfaitement \u00e9quilibrer la douceur de la tomate et le fondant de l\u2019aubergine. En version\ncr\u00e8me de feta au tahini et cumin\n, ou simplement \u00e9miett\u00e9e, elle sublime l\u2019assiette ! Si vous \u00eates aussi fans que nous, testez-la aussi dans nos\ncroquettes lentilles corail quinoa & feta\n, la\ntarte fine courgettes, olives et feta\nou encore cette\ncr\u00e8me de feta au tahini\n. Et pour encore plus d\u2019id\u00e9es, d\u00e9couvrez toutes nos\nrecettes \u00e0 base de feta\n.\nVous l\u2019aurez compris, ces aubergines \u00e0 la sauce tomate \u00e0 la grecque font partie de ces plats qui ne demandent presque rien\u2026 mais offrent tellement en retour. Go\u00fbteuses, fondantes, parfum\u00e9es, elles sont parfaites pour vos repas du quotidien. Et si, comme nous, vous aimez cuisiner l\u2019aubergine sous toutes ses formes, vous allez adorer d\u00e9couvrir toutes nos\nrecettes \u00e0 base d\u2019aubergines\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\nNon class\u00e9\n,\nPlats en Sauce\nTags:\naubergine\n,\naubergine \u00e0 la grecque\n,\naubergine \u00e0 la sauce tomate\n,\nrecette d'aubergine\n,\nrecette grecque\nTartines aux asperges feta et citron\nAubergine en omelette \u00e0 la Philippine\n10 thoughts on \u201cAubergines \u00e0 la sauce tomate \u00e0 la grecque : un classique\u201d\nKalinov Dumitru\ndit\u00a0:\n4 juillet 2023 \u00e0 15 h 54 min\nmoi j\u2019la go\u00fbt\u00e9 ! C\u2019est rudemint bon. L\u2019es dr\u00f4lement fortiche la natachouille.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 juillet 2023 \u00e0 14 h 54 min\nHehehe merci sombre inconnu !\nchargement\u2026\nR\u00e9pondre\nJulie\ndit\u00a0:\n18 janvier 2024 \u00e0 1 h 10 min\nUn d\u00e9lice\u2026fondant, plein de saveurs malgr\u00e9 finalement le peu d\u2019ingr\u00e9dients et d\u2019aromates. Rien \u00e0 rajouter \u00e0 la recette!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n22 janvier 2024 \u00e0 17 h 43 min\nOh merci bcp Julie !\nchargement\u2026\nR\u00e9pondre\nJean Pierre Kalinovski\ndit\u00a0:\n4 juillet 2023 \u00e0 15 h 55 min\nJe veux pas passer pour l\u2019\u00e9ternel positif mais c\u2019est vraiment ultra bon ce truc.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 juillet 2023 \u00e0 14 h 54 min\nHahaha merci !!\nchargement\u2026\nR\u00e9pondre\nViviane\ndit\u00a0:\n24 mars 2024 \u00e0 9 h 30 min\nAbsolument excellent.\nJe n\u2019ai pas mis toute l\u2019eau, cela me semblait trop, et moiti\u00e9 d\u2019huile (18 CS c\u2019est \u00e9norme !) et j\u2019ai laiss\u00e9 cuire 15 minutes de plus pour des aubergines bien moelleuses.\nC\u2019\u00e9tait parfait et le go\u00fbt vraiment agr\u00e9able.\nchargement\u2026\nR\u00e9pondre\nS\u00e9verine\ndit\u00a0:\n2 juin 2024 \u00e0 16 h 35 min\nTr\u00e8s belle d\u00e9couverte qui me rappelle la cr\u00eate\u2026 Juste rajout\u00e9 de la viande hach\u00e9e ( oui nous ne sommes pas v\u00e9g\u00e9 ) la recette est top\nchargement\u2026\nR\u00e9pondre\nMaud\ndit\u00a0:\n12 juin 2024 \u00e0 20 h 31 min\nMang\u00e9 en guise de salade froide c\u2019\u00e9tait super bon! Reste plus qu\u2019\u00e0 le tester comme indiqu\u00e9 avec du riz et de la feta mais je sais d\u2019avance que \u00e7a sera excellent\nchargement\u2026\nR\u00e9pondre\ndiane\ndit\u00a0:\n5 ao\u00fbt 2025 \u00e0 19 h 22 min\nJ\u2019ai test\u00e9 cette recette ce week-end et effectivement elle va devenir un must do it ! Simple, efficace et tellement d\u00e9licieuse, j\u2019ai rachet\u00e9 des aubergines pour la refaire dans la semaine !\nMerci beaucoup pour cette d\u00e9couverte pleine de saveurs !\nchargement\u2026\nR\u00e9pondre\n4.59 from 79 votes (\n72 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

@@ -6,6 +6,7 @@ class WebContent(BaseModel):
     title: str
     main_content: str
     image_urls: List[str]
+    structured_data: Optional[Dict[str, Any]] = None
 
 class AuthPreset(BaseModel):
     """Authentication preset for a website."""

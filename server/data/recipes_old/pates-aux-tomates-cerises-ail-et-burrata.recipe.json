@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "title": "P\u00e2tes aux tomates cerises ail et burrata",
+    "description": "Cette recette de p\u00e2tes aux tomates cerises ail et burrata est l'incarnation de l'\u00e9t\u00e9. Entre les l\u00e9gumes du soleil, j'ai nomm\u00e9 les tomates cerises et les courgettes. Et les parfums enivrants de l'ail et du basilic.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "basilic",
+      "burrata",
+      "courgette",
+      "p\u00e2tes",
+      "p\u00e2tes vegetariennes",
+      "tomates cerises",
+      "\u00e9t\u00e9",
+      "Plats en Sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Pates-tomate-ail-2-of-2.jpg",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si vous aimez vos courgettes plus fondantes, mettez-les \u00e0 cuire en premier, puis ajoutez les tomates cerises au bout d'une dizaine de minutes.",
+      "J'ajoute l'ail en fin de cuisson. La raison pour cela est que l'ail, surtout lorsqu'il est finement hach\u00e9 ou press\u00e9, peut br\u00fbler tr\u00e8s vite.",
+      "Adaptable avec les l\u00e9gumes de votre choix."
+    ],
+    "slug": "pates-aux-tomates-cerises-ail-et-burrata",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Pates-tomate-ail-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/08/08/pates-aux-tomates-cerises-ail-et-burrata/",
+    "image": "images/pates-aux-tomates-cerises-ail-et-burrata.webp",
+    "createdAt": "2026-02-09T21:28:08.677573",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 34.0,
+    "totalCookingTime": 34.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 495.6,
+      "protein": 15.4,
+      "fat": 34.0,
+      "carbs": 32.9,
+      "fiber": 6.3,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "courgette",
+      "name": "courgette",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9e en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "tomates_cerises",
+      "name": "tomates cerises",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "enti\u00e8res",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "pates",
+      "name": "p\u00e2tes",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pasta"
+    },
+    {
+      "id": "basilic",
+      "name": "feuilles de basilic",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": "cisel\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "basil leaves"
+    },
+    {
+      "id": "burrata",
+      "name": "burrata",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "boule",
+      "optional": false,
+      "name_en": "Burrata"
+    }
+  ],
+  "tools": [
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "cut_courgette",
+      "action": "Couper la courgette en d\u00e9s.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgette"
+      ],
+      "produces": "courgette_des",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter_oil",
+      "action": "Dans une po\u00eale \u00e0 feu moyen, verser l'huile et faire fondre le beurre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_dolive",
+        "beurre"
+      ],
+      "produces": "butter_oil_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Y faire revenir les tomates cerises enti\u00e8res et les d\u00e9s de courgette pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomates_cerises",
+        "courgette_des",
+        "butter_oil_mixture"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_pasta",
+      "action": "Faire cuire vos p\u00e2tes selon l'indication du paquet. \u00c9goutter et r\u00e9server avec un filet d'huile.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pates",
+      "uses": [
+        "pates",
+        "huile_dolive"
+      ],
+      "produces": "cooked_pasta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Ajouter les gousses d'ail press\u00e9es dans la po\u00eale et faire revenir encore quelques minutes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ail",
+        "sauteed_vegetables"
+      ],
+      "produces": "vegetables_with_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_pasta",
+      "action": "Verser les p\u00e2tes \u00e9goutt\u00e9es dans la po\u00eale.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_pasta",
+        "vegetables_with_garlic"
+      ],
+      "produces": "pasta_with_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec de la burrata et des feuilles de basilic cisel\u00e9es.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pasta_with_vegetables",
+        "burrata",
+        "basilic"
+      ],
+      "produces": "pates_tomates_cerises_ail_burrata",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pates_tomates_cerises_ail_burrata",
+  "originalText": "P\u00e2tes aux tomates cerises ail et burrata - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 ao\u00fbt 2022\nP\u00e2tes aux tomates cerises ail et burrata\nAller \u00e0 la recette\nCette recette de p\u00e2tes aux tomates cerises ail et burrata est l\u2019incarnation de l\u2019\u00e9t\u00e9. Entre les l\u00e9gumes du soleil, j\u2019ai nomm\u00e9 les tomates cerises et les courgettes. Et les parfums enivrants de l\u2019ail et du basilic. On se retrouve transport\u00e9 au sud de l\u2019Europe en un rien de temps ! Vous voil\u00e0 sur les c\u00f4tes italiennes, ou au bord de l\u2019Adriatique !\nC\u2019est une des raisons qui me fait tant aimer la cuisine ! Elle nous r\u00e9gale et nous transporte \u00e0 l\u2019autre bout des continents et des oc\u00e9ans ! Je suis d\u2019humeur po\u00e9tique comme vous pouvez le constater !\nEnfin, sinon, cette recette de p\u00e2tes aux tomates cerises ail et burrata est d\u2019une simplicit\u00e9 extr\u00eame !\nOn fait revenir les petits l\u00e9gumes d\u2019\u00e9t\u00e9 dans une bonne dose de beurre. J\u2019utilise un peu d\u2019huile d\u2019olive aussi car cela \u00e9vite que le beurre ne noircisse. Les tomates doivent commencer \u00e0 se fendre, et les courgettes doivent \u00eatre encore un peu croquantes. Si vous aimez vos courgettes plus fondantes, mettez-les \u00e0 cuire en premier, puis ajoutez les tomates cerises au bout d\u2019une dizaine de minutes.\nEnsuite, on ajoute une bonne quantit\u00e9 d\u2019ail. J\u2019ajoute l\u2019ail en fin de cuisson. La raison pour cela est que l\u2019ail, surtout lorsqu\u2019il est finement hach\u00e9 ou press\u00e9, peut br\u00fbler tr\u00e8s vite. Et on perd alors le d\u00e9licieux go\u00fbt de l\u2019ail tout juste revenu ! Une fois hors du feu, on ajoute les p\u00e2tes (cuites au pr\u00e9alable). Et les feuilles de basilic cisel\u00e9es ainsi que la burrata !\nVraiment, une recette toute en simplicit\u00e9. Adaptable avec les l\u00e9gumes de votre choix. Mais une recette super parfum\u00e9e ! Et pour d\u2019autres recettes de p\u00e2tes estivales, je vous conseille\nles p\u00e2tes \u00e0 la cr\u00e8me d\u2019aubergine\n,\nles p\u00e2tes aux poivrons rouges\n, ou l\nes p\u00e2tes \u00e0 la cr\u00e8me de l\u00e9gumes du soleil\n!\nP\u00e2tes aux tomates cerises, ail et burrata\n4.57\n/5 avec\n39\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\ncourgette\n2\nc\u00e0s d\u2019huile d\u2019olive\n20\ng\nde beurre\n250\ng\nde tomates cerises\n4\ngousses d\u2019ail\n300\ng\nde p\u00e2tes\n1\npoign\u00e9e de feuilles de basilic\n1\nboule de burrata\nInstructions\nCouper la courgette en d\u00e9s.\nDans une po\u00eale \u00e0 feu moyen, verser l\u2019huile et faire fondre le beurre.\nY faire revenir les tomates cerises enti\u00e8res et les d\u00e9s de courgette pendant 10min.\nFaire cuire vos p\u00e2tes selon l\u2019indication du paquet. \u00c9goutter et r\u00e9server avec un filet d\u2019huile.\nAjouter les gousses d\u2019ail press\u00e9es dans la po\u00eale et faire revenir encore quelques minutes.\nVerser les p\u00e2tes \u00e9goutt\u00e9es dans la po\u00eale.\nServir avec de la burrata et des feuilles de basilic cisel\u00e9es.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\n,\nTomate\nTags:\nbasilic\n,\nburrata\n,\ncourgette\n,\np\u00e2tes\n,\np\u00e2tes vegetariennes\n,\nque faire avec de la burrata\n,\ntomates cerises\nPizza arc-en-ciel v\u00e9g\u00e9tarienne\nSalsa de tomates au gingembre et coriandre\n4.57 from 39 votes (\n39 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 34.0
+}

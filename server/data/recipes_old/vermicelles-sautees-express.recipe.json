@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "title": "Vermicelles saut\u00e9es express",
+    "description": "Ces Vermicelles saut\u00e9es express sont un peu l'\u00e9quivalent de mon fameux chow mein ! Mais avec des vermicelles de riz \u00e0 la place des nouilles. Cette recette est super rapide, pr\u00eate en une dizaine de minutes seulement.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT8M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "recette asiatique",
+      "wok",
+      "chou",
+      "hiver",
+      "express"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Vermicelles-sautees-express-6-of-6.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les vermicelles, \u00e9tant tr\u00e8s fines, n'ont pas besoin d'\u00eatre pr\u00e9cuites. Il suffit de les faire tremper un peu dans un bol d'eau froide.",
+      "J'aime avoir toujours deux types de sauces soja chez moi. La shoyu que je trouve plus l\u00e9g\u00e8re et moins sal\u00e9e. Et la tamari, plus fonc\u00e9e et naturellement sans gluten.",
+      "Le vinaigre de riz est absolument indispensable pour tous ceux qui aiment cuisiner asiatique. Il en est de m\u00eame pour l'huile de s\u00e9same.",
+      "La sauce sriracha se conserve une \u00e9ternit\u00e9 au frigo."
+    ],
+    "slug": "vermicelles-sautees-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Vermicelles-sautees-express-6-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/03/15/vermicelles-sautees-express/",
+    "image": "images/vermicelles-sautees-express.webp",
+    "createdAt": "2026-02-09T22:05:31.287864",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 8.0,
+    "totalCookingTime": 8.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 594.0,
+      "protein": 16.3,
+      "fat": 28.5,
+      "carbs": 67.2,
+      "fiber": 2.9,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 11,
+      "totalIngredients": 12,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "rice_noodles",
+      "name": "vermicelles de riz",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rice vermicelli"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "chinese_cabbage",
+      "name": "chou chinois",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "napa cabbage"
+    },
+    {
+      "id": "spinach_sprouts",
+      "name": "pousses d'\u00e9pinards",
+      "quantity": 2.0,
+      "unit": "handful",
+      "category": "produce",
+      "preparation": null,
+      "notes": "poign\u00e9es",
+      "optional": false,
+      "name_en": "Spinach shoots"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "sriracha",
+      "name": "sriracha",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sriracha"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    }
+  ],
+  "tools": [
+    "Wok"
+  ],
+  "steps": [
+    {
+      "id": "soak_noodles",
+      "action": "Mettez les vermicelles \u00e0 tremper dans de l'eau froide. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rice_noodles"
+      ],
+      "produces": "soaked_noodles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la sauce (sauce soja, sirop d'\u00e9rable, vinaigre de riz, sriracha, huile de s\u00e9same). R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "soy_sauce",
+        "maple_syrup",
+        "rice_vinegar",
+        "sriracha",
+        "sesame_oil"
+      ],
+      "produces": "sauce_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_eggs",
+      "action": "Battez les \u0153ufs. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggs"
+      ],
+      "produces": "beaten_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_shallots_garlic",
+      "action": "Hachez les \u00e9chalotes et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots",
+        "garlic"
+      ],
+      "produces": "chopped_shallots_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_cabbage",
+      "action": "\u00c9mincez les feuilles de chou.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chinese_cabbage"
+      ],
+      "produces": "sliced_cabbage",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots_garlic",
+      "action": "Faites chauffer un wok ou une po\u00eale avec 2 c\u00e0s d'huile de tournesol \u00e0 medium-high heat. Faites-y revenir les \u00e9chalotes et l'ail pendant 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_shallots_garlic",
+        "sunflower_oil"
+      ],
+      "produces": "sauteed_shallots_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cabbage",
+      "action": "Ajoutez le chou et faites revenir encore 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_cabbage",
+        "sauteed_shallots_garlic"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "scramble_eggs",
+      "action": "Poussez les l\u00e9gumes sur le c\u00f4t\u00e9 et versez les \u0153ufs battus. Brouillez-les. Puis m\u00e9langez-les avec le reste.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beaten_eggs",
+        "sauteed_vegetables"
+      ],
+      "produces": "vegetables_with_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spinach",
+      "action": "Ajoutez les \u00e9pinards.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spinach_sprouts",
+        "vegetables_with_eggs"
+      ],
+      "produces": "vegetables_with_eggs_spinach",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_noodles_sauce",
+      "action": "Egouttez les vermicelles et ajoutez-les \u00e0 la po\u00eale avec la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "soaked_noodles",
+        "sauce_mix",
+        "vegetables_with_eggs_spinach"
+      ],
+      "produces": "noodles_with_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "final_saute",
+      "action": "Faites revenir encore 3min. C'est pr\u00eat !",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "noodles_with_sauce"
+      ],
+      "produces": "vermicelles_sautees",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "vermicelles_sautees",
+  "originalText": "Vermicelles saut\u00e9es express - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 mars 2024\nVermicelles saut\u00e9es express\nCes Vermicelles saut\u00e9es express sont un peu l\u2019\u00e9quivalent\nde mon fameux chow mein\n! Mais avec des vermicelles de riz \u00e0 la place des nouilles.\nCette recette est super rapide, pr\u00eate en une dizaine de minutes seulement. Et elle vous apporte tout ce dont vous avez besoin pour un bon repas v\u00e9g\u00e9tarien ! Je parle de f\u00e9culents avec les nouilles. De prot\u00e9ines gr\u00e2ce aux \u0153ufs. Et des indispensables l\u00e9gumes gr\u00e2ce au chou !\nJ\u2019adore ce genre de recettes, dans lesquelles toute la magie op\u00e8re dans la sauce ! Ici, on est sur une sauce tr\u00e8s simple. Avec des ingr\u00e9dients typiques des sauces asiatiques. Des ingr\u00e9dients que je vous conseille de toujours avoir dans vos placards d\u2019ailleurs. Il y a \u00e9videmment de la sauce soja. J\u2019aime avoir toujours deux types de sauces soja chez moi. La shoyu que je trouve plus l\u00e9g\u00e8re et moins sal\u00e9e. Et la tamari, plus fonc\u00e9e et naturellement sans gluten. Ensuite, je trouve que le vinaigre de riz est absolument indispensable pour tous ceux qui aiment cuisiner asiatique. Il en est de m\u00eame pour l\u2019huile de s\u00e9same. Et la sauce sriracha est peut-\u00eatre un peu moins indispensable. Mais elle se conserve une \u00e9ternit\u00e9 au frigo. Alors pourquoi se priver ?\nCe que j\u2019aime bien aussi avec cette recette, c\u2019est que les vermicelles, \u00e9tant tr\u00e8s fines, n\u2019ont pas besoin d\u2019\u00eatre pr\u00e9cuites. Il suffit de les faire tremper un peu dans un bol d\u2019eau froide et c\u2019est bon. Elles cuiront directement avec les l\u00e9gumes dans le wok.\nVoil\u00e0 toutes les raisons pour lesquelles j\u2019adore cette recette de Vermicelles saut\u00e9es express !\nVermicelles saut\u00e9es express\n4.53\n/5 avec\n104\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les vermicelles\n125\ng\nde vermicelles de riz\n2\noeufs\n2\n\u00e9chalotes\n3\ngousses d\u2019ail\n3\nfeuilles de chou chinois\n2\npoign\u00e9es de pousses d\u2019\u00e9pinards\nPour la sauce\n4\nc\u00e0s de sauce soja\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n1\nc\u00e0s de vinaigre de riz\n1\nc\u00e0s de sriracha\n1\nc\u00e0s d\u2019huile de s\u00e9same\nInstructions\nMettez les vermicelles \u00e0 tremper dans de l\u2019eau froide. R\u00e9servez.\nM\u00e9langez tous les ingr\u00e9dients de la sauce. R\u00e9servez.\nBattez les \u0153ufs. R\u00e9servez.\nHachez les \u00e9chalotes et l\u2019ail.\n\u00c9mincez les feuilles de chou.\nFaites chauffer un wok ou une po\u00eale avec 2 c\u00e0s d\u2019huile de tournesol. Faites-y revenir les \u00e9chalotes et l\u2019ail pendant quelques minutes.\nAjoutez le chou et faites revenir encore 1-2min. Poussez les l\u00e9gumes sur le c\u00f4t\u00e9 et versez les \u0153ufs battus. Brouillez-les. Puis m\u00e9langez-les avec le reste. Ajoutez les \u00e9pinards.\nEgouttez les vermicelles et ajoutez-les \u00e0 la po\u00eale avec la sauce.\nFaites revenir encore quelques minutes. C\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChoux\n,\nHiver\n,\nWok\nTags:\nrecette asiatique\nBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\nGratin de blettes haricots blancs et mozzarella\n1 thought on \u201cVermicelles saut\u00e9es express\u201d\nLou\ndit\u00a0:\n2 avril 2024 \u00e0 20 h 12 min\nExcellent ! La sauce est top et c\u2019est declinable \u00e0 l\u2019envi !\nMerci\nchargement\u2026\nR\u00e9pondre\n4.53 from 104 votes (\n103 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

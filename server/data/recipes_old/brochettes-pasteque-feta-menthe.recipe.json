@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "title": "Brochettes past\u00e8que, feta, menthe",
+    "description": "Envie d\u2019un ap\u00e9ro facile et fraicheur ? La brochette past\u00e8que, feta & menthe est \u00e0 tester absolument cet \u00e9t\u00e9 !",
+    "servings": 20,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "sans gluten",
+      "v\u00e9g\u00e9tarien",
+      "ap\u00e9ro",
+      "\u00e9t\u00e9",
+      "past\u00e8que",
+      "sans cuisson"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Brochettes-pasteque-feta-5-of-8.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfait pour un ap\u00e9ro improvis\u00e9, un pique-nique au parc ou un buffet estival.",
+      "Choisis la past\u00e8que bien m\u00fbre, bien rouge, et bien ferme.",
+      "Privil\u00e9gie une feta de qualit\u00e9, au lait de brebis, bien ferme mais fondante en bouche.",
+      "Pour pr\u00e9parer \u00e0 l'avance : coupe et monte les brochettes \u00e0 l'avance, mais conserve-les au frais et recouvertes pour que la past\u00e8que reste bien juteuse.",
+      "Variantes : remplacer la feta par du fromage de ch\u00e8vre frais ou de la mozzarella di bufala ; ajouter un filet de miel ou de vinaigre balsamique r\u00e9duit ; remplacer la menthe par du basilic tha\u00ef ou de la coriandre."
+    ],
+    "slug": "brochettes-pasteque-feta-menthe",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/Brochettes-pasteque-feta-5-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/08/15/brochettes-pasteque-feta-menthe/",
+    "image": "images/brochettes-pasteque-feta-menthe.webp",
+    "createdAt": "2026-02-09T23:02:11.282005",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 16.0,
+    "totalCookingTime": 16.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 26.5,
+      "protein": 1.4,
+      "fat": 2.1,
+      "carbs": 0.4,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 2,
+      "totalIngredients": 3,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "watermelon",
+      "name": "past\u00e8que",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Watermelon"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "en bloc",
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "mint",
+      "name": "menthe fra\u00eeche",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": "petit bouquet",
+      "optional": false,
+      "name_en": "Fresh mint"
+    },
+    {
+      "id": "skewers",
+      "name": "piques \u00e0 brochettes ou cure-dents",
+      "quantity": null,
+      "unit": null,
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Skewers or toothpicks"
+    }
+  ],
+  "tools": [
+    "Piques \u00e0 brochettes ou cure-dents"
+  ],
+  "steps": [
+    {
+      "id": "cut_watermelon_feta",
+      "action": "Coupez la past\u00e8que et la feta en cubes d'environ 2 cm.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "watermelon",
+        "feta"
+      ],
+      "produces": "cubed_watermelon_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wash_mint",
+      "action": "Lavez et effeuillez la menthe.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mint"
+      ],
+      "produces": "washed_mint_leaves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_skewers",
+      "action": "Sur chaque pique, alternez un cube de past\u00e8que, une feuille de menthe, un cube de feta, puis de nouveau un cube de past\u00e8que.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cubed_watermelon_feta",
+        "washed_mint_leaves",
+        "skewers"
+      ],
+      "produces": "assembled_skewers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez bien frais !",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_skewers"
+      ],
+      "produces": "brochettes_pasteque_feta_menthe",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "brochettes_pasteque_feta_menthe",
+  "originalText": "Brochettes past\u00e8que feta menthe, une recette fra\u00eeche et rapide\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 ao\u00fbt 2025\nBrochettes past\u00e8que, feta & menthe : l\u2019ap\u00e9ro fraicheur facile \u00e0 tester\nEnvie d\u2019un ap\u00e9ro facile et fraicheur ? La brochette past\u00e8que, feta & menthe est \u00e0 tester absolument cet \u00e9t\u00e9 !\nIl y a des associations qui fonctionnent \u00e0 tous les coups. Des mariages simples, mais toujours gagnants. Comme celui de la past\u00e8que et de la feta, deux ingr\u00e9dients que tout oppose\u2026 et qui, ensemble, se subliment. Le sucr\u00e9 juteux de l\u2019un, la douceur sal\u00e9e de l\u2019autre. Le croquant rafra\u00eechissant de la past\u00e8que, la texture friable de la feta. Et pour lier le tout, quelques feuilles de menthe fra\u00eeche, qui viennent ajouter une note aromatique, vive, presque citronn\u00e9e.\nR\u00e9sultat ? Une bouch\u00e9e aussi jolie que savoureuse, parfaite pour les ap\u00e9ros d\u2019\u00e9t\u00e9.\nTable des mati\u00e8res\n1\nUne version revisit\u00e9e d\u2019un classique estival\n2\n3 ingr\u00e9dients seulement\u2026 et tellement de go\u00fbt\n3\nUne bouch\u00e9e pleine de contraste\n4\nVariantes & astuces\n5\nUn ap\u00e9ritif plein de fra\u00eecheur, \u00e0 partager\n6\nBrochettes past\u00e8que, feta, menthe\n7\nPour aller plus loin avec la past\u00e8que\n8\nPour conclure, les brochettes past\u00e8que, feta et menthe\nUne version revisit\u00e9e d\u2019un classique estival\nTu connais peut-\u00eatre la salade past\u00e8que-feta-menthe, devenue un incontournable des tables estivales ces derni\u00e8res ann\u00e9es. On l\u2019aime pour sa fra\u00eecheur, sa simplicit\u00e9, et son petit effet waouh alors qu\u2019elle se pr\u00e9pare en quelques minutes \u00e0 peine. Mais aujourd\u2019hui, je te propose de la revisiter en version mini, ludique et color\u00e9e, pour en faire des brochettes faciles \u00e0 grignoter avec les doigts.\nParfait pour un ap\u00e9ro improvis\u00e9, un pique-nique au parc ou un buffet estival : ces brochettes demandent z\u00e9ro cuisson, tr\u00e8s peu d\u2019ingr\u00e9dients, et un timing imbattable. Le tout, pour un r\u00e9sultat aussi \u00e9l\u00e9gant que gourmand. Et avouons-le, elles font leur petit effet sur la table, ces jolies brochettes bicolores.\n3 ingr\u00e9dients seulement\u2026 et tellement de go\u00fbt\nCe que j\u2019aime dans cette recette, c\u2019est sa puret\u00e9. Trois ingr\u00e9dients bien choisis, quelques piques \u00e0 brochettes ou des cure-dents, et le tour est jou\u00e9.\nLa past\u00e8que, gorg\u00e9e d\u2019eau et de soleil, apporte une fra\u00eecheur in\u00e9gal\u00e9e. Choisis-la bien m\u00fbre, bien rouge, et bien ferme : elle doit se tenir sur les piques sans s\u2019\u00e9craser.\nLa feta, en bloc, \u00e0 couper en cubes. Son go\u00fbt sal\u00e9 rel\u00e8ve parfaitement la douceur de la past\u00e8que. Privil\u00e9gie une feta de qualit\u00e9, au lait de brebis, bien ferme mais fondante en bouche.\nLa menthe fra\u00eeche, pour le twist aromatique. Ses feuilles vert vif viennent \u00e9quilibrer le tout, en ajoutant une note v\u00e9g\u00e9tale et vivifiante.\nUne fois coup\u00e9s, les ingr\u00e9dients se montent simplement sur des piques : past\u00e8que \u2013 menthe \u2013 feta \u2013 past\u00e8que. En quelques minutes, les brochettes sont pr\u00eates \u00e0 \u00eatre d\u00e9gust\u00e9es\u2026 bien fra\u00eeches, id\u00e9alement sorties du frigo juste avant de servir.\nUne bouch\u00e9e pleine de contraste\nCe qui rend cette recette si s\u00e9duisante, c\u2019est le jeu des textures et des saveurs. En une bouch\u00e9e, on passe de la tendresse fondante de la feta \u00e0 la fra\u00eecheur croquante de la past\u00e8que, avec un petit frisson menthol\u00e9 qui traverse le tout. C\u2019est simple, mais \u00e9tonnamment complexe en bouche. Et surtout : c\u2019est addictif.\nCes brochettes ont aussi l\u2019avantage d\u2019\u00eatre :\nsans gluten,\nsans cuisson,\nv\u00e9g\u00e9tariennes,\net adaptables \u00e0 l\u2019envie (je t\u2019en dis plus juste apr\u00e8s).\nVariantes & astuces\nTu peux bien s\u00fbr adapter la recette selon tes envies ou ce que tu as sous la main :\nEnvie de remplacer la feta ? Essaie avec du fromage de ch\u00e8vre frais, ou m\u00eame de la mozzarella di bufala coup\u00e9e en morceaux (\u00e0 condition qu\u2019elle ne soit pas trop humide).\nTu peux ajouter un petit filet de miel ou un peu de vinaigre balsamique r\u00e9duit sur le dessus pour une note sucr\u00e9e-acide en plus.\nPour une version plus exotique, remplace la menthe par quelques feuilles de basilic tha\u00ef ou m\u00eame de coriandre.\nTu veux pr\u00e9parer \u00e0 l\u2019avance ? Coupe et monte les brochettes \u00e0 l\u2019avance, mais conserve-les au frais et recouvertes pour que la past\u00e8que reste bien juteuse.\nUn ap\u00e9ritif plein de fra\u00eecheur, \u00e0 partager\nCes brochettes, on les imagine d\u00e9j\u00e0 sur une table d\u2019\u00e9t\u00e9, entre un taboul\u00e9 maison et un pain aux olives. On les picore sans faim, on les pr\u00e9pare avec les enfants, on les refait encore et encore. Elles sont devenues l\u2019un de nos indispensables des beaux jours : faciles \u00e0 pr\u00e9parer, jolies \u00e0 servir, et toujours appr\u00e9ci\u00e9es.\nBrochettes past\u00e8que, feta, menthe\n4.58\n/5 avec\n91\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n20\nbrochettes\nIngr\u00e9dients\n1x\n2x\n3x\n1/4\nde past\u00e8que\n200\ng\nde feta\nen bloc\n1\npetit bouquet de menthe fra\u00eeche\npiques \u00e0 brochettes ou cure-dents\nInstructions\nCoupez la past\u00e8que et la feta en cubes d\u2019environ 2 cm.\nLavez et effeuillez la menthe.\nSur chaque pique, alternez un cube de past\u00e8que, une feuille de menthe, un cube de feta, puis de nouveau un cube de past\u00e8que.\nServez bien frais !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin avec la past\u00e8que\nEnvie de prolonger la fra\u00eecheur estivale ? Voici d\u2019autres id\u00e9es simples, savoureuses et rafra\u00eechissantes autour de la past\u00e8que, \u00e0 savourer en salade ou en boisson.\nSalade past\u00e8que, halloumi et melon\nUne salade sucr\u00e9e-sal\u00e9e pleine de contraste, o\u00f9 le croquant de la past\u00e8que et la douceur du melon rencontrent le halloumi dor\u00e9 \u00e0 la po\u00eale. Parfaite pour un d\u00e9jeuner d\u2019\u00e9t\u00e9 l\u00e9ger mais gourmand.\nSalade \u00e0 la past\u00e8que, roquette et feta\nUne version ultra fra\u00eeche et rapide de la salade past\u00e8que-feta, relev\u00e9e par la roquette et un filet de citron. Une alliance simple et toujours efficace.\nAgua fresca past\u00e8que-fraise\nUne boisson d\u00e9salt\u00e9rante inspir\u00e9e du Mexique, \u00e0 base de past\u00e8que, fraises et citron vert. Parfaite pour les jours de grande chaleur.\nPour conclure, les brochettes past\u00e8que, feta et menthe\nFra\u00eeches, color\u00e9es, faciles \u00e0 pr\u00e9parer\u2026 ces brochettes past\u00e8que-feta-menthe ont tout pour devenir un incontournable de l\u2019\u00e9t\u00e9.\nElles revisitent avec simplicit\u00e9 une association qui fonctionne \u00e0 tous les coups, en version ludique et \u00e9l\u00e9gante, id\u00e9ale pour surprendre sans se compliquer.\n\u00c0 servir \u00e0 l\u2019ap\u00e9ro, lors d\u2019un brunch estival ou en mise en bouche lors d\u2019un d\u00eener en terrasse, elles apportent une touche de fra\u00eecheur et d\u2019originalit\u00e9 qu\u2019on adore.\nEt il faut bien l\u2019avouer : entre le croquant de la past\u00e8que, la douceur de la feta et la fra\u00eecheur de la menthe, difficile de s\u2019arr\u00eater \u00e0 une seule brochette.\n\u00c0 garder sous le coude pour tous les jours o\u00f9 tu veux en faire un peu\u2026 sans en faire trop.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAp\u00e9ros\n,\n\u00c9t\u00e9\n,\nPast\u00e8que\nTags:\nsans gluten\n,\nv\u00e9g\u00e9tarien\nCroquettes ch\u00e8vre frais et miel pour un ap\u00e9ritif croustillant et express\nClafoutis aux mirabelles : la recette facile, rapide et inratable de l\u2019\u00e9t\u00e9\n4.58 from 91 votes (\n91 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 16.0
+}

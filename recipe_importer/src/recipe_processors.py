@@ -1,365 +1,323 @@
+"""Processeurs de recettes — URL et Texte.
+
+Unifié : la logique commune (sémaphore, progress polling, retry, stats)
+est dans la classe de base. Les sous-classes ne définissent que `_start_generation`.
+"""
+
 import asyncio
 import aiohttp
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Tuple, Optional
+from typing import Any
 
-from .models import RecipeProgress, RecipeError, ImportMetrics
-from .api_client import RecipeApiClient
+from .models import RecipeError, ImportMetrics
+from .api_client import RecipeApiClient, SSEConnectionError
+
+# Nombre max de tentatives par recette
+MAX_RETRIES = 2
+RETRY_DELAY_S = 5
 
 
-class RecipeProcessorBase:
-    """Classe de base pour les processeurs de recettes."""
-    
-    def __init__(self, api_client: RecipeApiClient, metrics: ImportMetrics, semaphore: asyncio.Semaphore):
+class RecipeProcessor:
+    """Processeur unifié pour URL et texte."""
+
+    def __init__(
+        self,
+        api_client: RecipeApiClient,
+        metrics: ImportMetrics,
+        session: aiohttp.ClientSession,
+    ):
         self.api_client = api_client
         self.metrics = metrics
-        self.semaphore = semaphore
-        self.processed_items = set()
-    
-    async def process(self, item, stats: Dict, updates_queue: asyncio.Queue) -> None:
-        """Méthode abstraite pour traiter une recette."""
-        raise NotImplementedError("Les sous-classes doivent implémenter cette méthode")
-    
-    async def check_progress_until_complete(
-        self, 
-        session: aiohttp.ClientSession, 
-        progress_id: str, 
-        item_id: str, 
-        stats: Dict,
-        updates_queue: asyncio.Queue,
-        max_stall_time: int = 3600
-    ) -> bool:
-        """Vérifie la progression jusqu'à la fin et met à jour les statistiques."""
-        # Mettre à jour l'heure du dernier progrès
-        last_progress_time = datetime.now()
-        last_step_message = ""
-        last_step = ""
-        
-        # Variable pour indiquer si la recette a été traitée avec succès
-        recipe_succeeded = False
-        
-        # Variables pour suivre si certaines étapes clés ont été atteintes
-        recipe_saved = False
-        
-        while True:
-            # Vérifier si la tâche est bloquée depuis trop longtemps
-            stall_time = (datetime.now() - last_progress_time).total_seconds()
-            if stall_time > max_stall_time:
-                raise Exception(f"Task stalled for {stall_time:.1f}s without progress")
-            
-            # Vérifier la progression
-            status = await self.api_client.check_progress(session, progress_id)
-            
-            # Si terminé avec succès
-            if status.get("status") == "completed":
-                self.metrics.success_count += 1
-                stats["success"] += 1
-                recipe_succeeded = True  # Marquer comme réussie
-                
-                # Obtenir le slug si disponible
-                slug_display = status.get("slug", "unknown")
-                if slug_display == "unknown":
-                    slug_display = "imported successfully"
-                    
-                await updates_queue.put((item_id, "success", f"Imported → {slug_display}"))
-                break
-                
-            # Si erreur
-            elif status.get("status") == "error":
-                error_message = status.get("error", "Unknown error")
-                # Vérifier si c'est une erreur de recette déjà existante
-                if "already exists" in error_message.lower():
+        self.session = session
+        self.processed_items: set[str] = set()
+
+    # ──────────────────────────────────────────────
+    # Public entry points
+    # ──────────────────────────────────────────────
+
+    async def process_url(
+        self, url: str, stats: dict, queue: asyncio.Queue
+    ) -> None:
+        """Traite une recette depuis une URL."""
+        credentials = self.api_client.get_auth_for_url(url)
+
+        async def start(session: aiohttp.ClientSession) -> str | None:
+            return await self.api_client.start_generation(
+                session, recipe_type="url", url=url, credentials=credentials
+            )
+
+        await self._process(item_id=url, stats=stats, queue=queue, start_fn=start)
+
+    async def process_text(
+        self,
+        recipe_files: tuple[Path, Path | None],
+        stats: dict,
+        queue: asyncio.Queue,
+    ) -> None:
+        """Traite une recette depuis un fichier texte + image optionnelle."""
+        text_file, image_file = recipe_files
+        item_id = str(text_file)
+
+        # Lire le texte
+        with open(text_file, "r", encoding="utf-8") as f:
+            recipe_text = f.read()
+
+        # Encoder l'image si présente
+        image_b64 = None
+        if image_file and image_file.exists():
+            image_b64, _ = RecipeApiClient.encode_image(image_file)
+
+        async def start(session: aiohttp.ClientSession) -> str | None:
+            return await self.api_client.start_generation(
+                session, recipe_type="text", text=recipe_text, image=image_b64
+            )
+
+        await self._process(item_id=item_id, stats=stats, queue=queue, start_fn=start)
+
+    # ──────────────────────────────────────────────
+    # Core processing pipeline (shared)
+    # ──────────────────────────────────────────────
+
+    async def _process(
+        self,
+        item_id: str,
+        stats: dict,
+        queue: asyncio.Queue,
+        start_fn,
+    ) -> None:
+        """Pipeline commun : start → poll → stats (concurrence limitée par le worker pool)."""
+        stats["in_progress"] += 1
+        start_time = datetime.now()
+        self.processed_items.add(item_id)
+        await queue.put((item_id, "started", "Démarrage…"))
+
+        try:
+            await self._process_with_retry(
+                item_id, stats, queue, start_fn
+            )
+        except Exception as e:
+            self._record_error(item_id, str(e), stats)
+            await queue.put((item_id, "error", f"Erreur: {e}"))
+        finally:
+            if stats["in_progress"] > 0:
+                stats["in_progress"] -= 1
+            self.metrics.total_duration += datetime.now() - start_time
+            stats["completed"] = stats.get("completed", 0) + 1
+            # Micro-pause pour laisser l'event loop se rafraîchir
+            await asyncio.sleep(0.01)
+
+    async def _process_with_retry(
+        self,
+        item_id: str,
+        stats: dict,
+        queue: asyncio.Queue,
+        start_fn,
+    ) -> None:
+        """Tente l'import avec retry uniquement sur erreur serveur.
+
+        Les timeouts de polling ne déclenchent PAS de retry car le
+        subprocess serveur continue probablement de tourner — relancer
+        créerait un doublon inutile.
+        """
+        last_error = None
+
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                if attempt > 1:
+                    await queue.put(
+                        (item_id, "info", f"Retry {attempt}/{MAX_RETRIES}…")
+                    )
+                    await asyncio.sleep(RETRY_DELAY_S * attempt)
+
+                # Lancer la génération
+                progress_id = await start_fn(self.session)
+
+                if progress_id is None:
+                    # Doublon détecté par HTTP 409
                     self.metrics.skip_count += 1
                     stats["skipped"] += 1
-                    await updates_queue.put((item_id, "skipped", "Skipped (already exists)"))
-                    return False
+                    await queue.put((item_id, "skipped", "Déjà existante"))
+                    return
+
+                # SSE streaming with polling fallback
+                try:
+                    success = await self._stream_until_done(
+                        progress_id, item_id, stats, queue
+                    )
+                except (SSEConnectionError, aiohttp.ClientError):
+                    success = await self._poll_until_done(
+                        progress_id, item_id, stats, queue
+                    )
+                if success:
+                    return
                 else:
-                    # Si l'étape de sauvegarde a été atteinte, considérer comme un succès partiel
-                    if recipe_saved:
-                        await updates_queue.put((item_id, "warning", f"Partial success (with error: {error_message})"))
-                        self.metrics.success_count += 1
-                        stats["success"] += 1
-                        return True
-                        
-                    # Si c'est une véritable erreur
-                    self.metrics.failure_count += 1
-                    stats["errors"] += 1
-                    self.metrics.errors.append(
-                        RecipeError(
-                            url=item_id,
-                            error=error_message,
-                            timestamp=datetime.now()
-                        )
-                    )
-                    await updates_queue.put((item_id, "error", f"Error: {error_message}"))
-                    return False
-            
-            # Mettre à jour la progression
-            current_progress = status.get("progress", 0)
-            current_step = status.get("current_step", "")
-            
-            # Vérifier si l'étape de sauvegarde est en cours ou complétée
-            if current_step == "save_recipe" or any(step for step in status.get("steps", []) 
-                    if step.get("step") == "save_recipe" and step.get("status") in ["in_progress", "completed"]):
-                recipe_saved = True
-            
-            # Enregistrer l'étape actuelle pour les messages d'attente
-            if current_step and current_step != last_step:
-                last_step = current_step
-                # Envoyer un message spécifique pour l'étape
-                await updates_queue.put((item_id, "step", f"step: {current_step}"))
-                # Réinitialiser le temps d'attente car nous avons changé d'étape
-                last_progress_time = datetime.now()
-            
-            # Si un nouveau message d'étape est disponible
-            step_message = status.get("step_message", "")
-            if step_message and step_message != last_step_message:
-                last_step_message = step_message
-                await updates_queue.put((item_id, "progress", step_message))
-                # Mettre à jour l'heure du dernier progrès
-                last_progress_time = datetime.now()
-                
-                # Vérifier les indices que la recette a été sauvegardée dans le message
-                if any(save_keyword in step_message.lower() for save_keyword in 
-                    ["saved", "saving", "created", "sauvegarde", "enregistrée"]):
-                    recipe_saved = True
-            
-            # Log pour debugging avec l'étape explicitement mentionnée
-            if stall_time > 10 and (datetime.now() - last_progress_time).total_seconds() % 5 < 0.1:
-                await updates_queue.put((item_id, "info", f"Still waiting... ({stall_time:.1f}s, step: {current_step})"))
-                
-            # Courte pause avant la prochaine vérification
-            await asyncio.sleep(1)
-        
-        # Si on arrive ici sans exception et avec recipe_succeeded, c'est un succès
-        return recipe_succeeded
+                    last_error = "Échec sans exception"
 
-
-class UrlRecipeProcessor(RecipeProcessorBase):
-    """Processeur pour les recettes basées sur des URLs."""
-    
-    async def process(self, url: str, stats: Dict, updates_queue: asyncio.Queue) -> None:
-        """Traite une recette à partir d'une URL."""
-        # Indiquer que la tâche est en attente au sémaphore
-        await updates_queue.put((url, "info", "Waiting for semaphore..."))
-        
-        # Timestamp pour détecter les blocages
-        waiting_start_time = datetime.now()
-        
-        # Incrémenter le compteur des tâches en attente de sémaphore
-        stats["waiting_for_semaphore"] = stats.get("waiting_for_semaphore", 0) + 1
-        
-        async with self.semaphore:
-            start_time = datetime.now()
-            waiting_duration = (start_time - waiting_start_time).total_seconds()
-            await updates_queue.put((url, "info", f"Got semaphore after {waiting_duration:.1f}s"))
-            
-            # Décrémenter le compteur des tâches en attente de sémaphore
-            stats["waiting_for_semaphore"] = max(0, stats.get("waiting_for_semaphore", 1) - 1)
-            
-            # Incrémenter le compteur de tâches en cours
-            stats["in_progress"] += 1
-            
-            # Signaler le début de l'importation
-            await updates_queue.put((url, "info", "Starting import"))
-            
-            try:
-                # Initialiser le suivi de progression
-                recipe_progress = RecipeProgress(
-                    url=url,
-                    status="pending",
-                    progress=0,
-                    current_step="initializing",
-                    progress_id="",
-                    start_time=start_time,
-                    last_update=start_time
-                )
-                
-                # Ajouter l'URL à la liste des URLs traitées
-                self.processed_items.add(url)
-                
-                # Récupérer les identifiants pour cette URL si disponibles
-                credentials = self.api_client.get_auth_for_url(url)
-                
-                # Créer une session avec timeout par défaut
-                timeout = aiohttp.ClientTimeout(total=30, sock_connect=10, sock_read=20)
-                async with aiohttp.ClientSession(timeout=timeout) as session:
-                    # Démarrer la génération de la recette
-                    await updates_queue.put((url, "info", "Calling API to start generation"))
-                    progress_id = await self.api_client.start_url_generation(session, url, credentials)
-                    await updates_queue.put((url, "info", f"Got progress ID: {progress_id if progress_id else 'None'}"))
-                    recipe_progress.progress_id = progress_id
-                    
-                    # Si l'URL existe déjà, la marquer comme ignorée
-                    if progress_id is None:
-                        self.metrics.skip_count += 1
-                        stats["skipped"] += 1
-                        stats["in_progress"] -= 1
-                        await updates_queue.put((url, "skipped", "Skipped (already exists)"))
-                        return
-                    
-                    # Vérifier la progression jusqu'à la fin
-                    recipe_succeeded = await self.check_progress_until_complete(
-                        session=session,
-                        progress_id=progress_id,
-                        item_id=url,
-                        stats=stats,
-                        updates_queue=updates_queue
-                    )
-                    
-                    # Log de débogage pour les recettes réussies
-                    if recipe_succeeded:
-                        await updates_queue.put((url, "debug", f"Recipe successfully imported (verified)"))
-            
             except Exception as e:
-                # Enregistrer l'erreur
-                self.metrics.errors.append(
-                    RecipeError(
-                        url=url,
-                        error=str(e),
-                        timestamp=datetime.now()
-                    )
-                )
-                self.metrics.failure_count += 1
-                stats["errors"] += 1
-                
-                # Notifier l'erreur
-                await updates_queue.put((url, "error", f"Error: {str(e)}"))
-                
-            finally:
-                # Décrémenter le compteur de tâches en cours seulement si on n'a pas déjà quitté la fonction
-                if stats["in_progress"] > 0:
-                    stats["in_progress"] -= 1
-                
-                # Mettre à jour la durée totale
-                duration = datetime.now() - start_time
-                self.metrics.total_duration += duration
-                
-                # Incrémenter le compteur de tâches terminées
-                stats["completed"] += 1
+                last_error = str(e)
+                is_stall_timeout = "Bloqué depuis" in str(e)
 
+                if is_stall_timeout:
+                    # Timeout de polling → le subprocess tourne encore côté
+                    # serveur. Retrier ne ferait que créer un doublon.
+                    # On sort directement en erreur sans retry.
+                    break
 
-class TextRecipeProcessor(RecipeProcessorBase):
-    """Processeur pour les recettes basées sur des fichiers texte."""
-    
-    async def process(self, recipe_files: Tuple[Path, Optional[Path]], stats: Dict, updates_queue: asyncio.Queue) -> None:
-        """Traite une recette à partir d'un fichier texte et éventuellement une image."""
-        text_file, image_file = recipe_files
-        recipe_id = text_file.stem  # L'identifiant unique de la recette
-        
-        # Indiquer que la tâche est en attente au sémaphore
-        await updates_queue.put((str(text_file), "info", "Waiting for semaphore..."))
-        
-        # Timestamp pour détecter les blocages
-        waiting_start_time = datetime.now()
-        
-        # Incrémenter le compteur des tâches en attente de sémaphore
-        stats["waiting_for_semaphore"] = stats.get("waiting_for_semaphore", 0) + 1
-        
-        async with self.semaphore:
-            start_time = datetime.now()
-            waiting_duration = (start_time - waiting_start_time).total_seconds()
-            await updates_queue.put((str(text_file), "info", f"Got semaphore after {waiting_duration:.1f}s"))
-            
-            # Décrémenter le compteur des tâches en attente de sémaphore
-            stats["waiting_for_semaphore"] = max(0, stats.get("waiting_for_semaphore", 1) - 1)
-            
-            # Incrémenter le compteur de tâches en cours
-            stats["in_progress"] += 1
-            
-            # Signaler le début de l'importation
-            await updates_queue.put((str(text_file), "info", f"Starting import for {recipe_id}"))
-            
-            try:
-                # Initialiser le suivi de progression
-                recipe_progress = RecipeProgress(
-                    url=str(text_file),  # Utiliser le chemin du fichier comme "url" pour la progression
-                    status="pending",
-                    progress=0,
-                    current_step="initializing",
-                    progress_id="",
-                    start_time=start_time,
-                    last_update=start_time
-                )
-                
-                # Ajouter l'URL à la liste des URLs traitées
-                self.processed_items.add(str(text_file))
-                
-                # Lire le contenu du fichier texte
-                await updates_queue.put((str(text_file), "info", "Reading text file"))
-                with open(text_file, 'r', encoding='utf-8') as f:
-                    recipe_text = f.read()
-                
-                # Lire et encoder l'image si elle existe
-                image_base64 = None
-                if image_file and image_file.exists():
-                    await updates_queue.put((str(text_file), "info", "Reading image file"))
-                    image_base64, mime_type = RecipeApiClient.encode_image(image_file)
-                    await updates_queue.put((str(text_file), "info", f"Image encoded as {mime_type}, size: {len(image_base64)} characters"))
-                
-                # Créer une session avec timeout par défaut
-                timeout = aiohttp.ClientTimeout(total=30, sock_connect=10, sock_read=20)
-                async with aiohttp.ClientSession(timeout=timeout) as session:
-                    # Démarrer la génération de la recette
-                    await updates_queue.put((str(text_file), "info", "Calling API to start generation"))
-                    
-                    # Ne pas modifier le texte pour inclure une référence à l'image (géré par recipe_scraper)
-                    # Utiliser directement le texte original
-                    progress_id = await self.api_client.start_text_generation(session, recipe_text, image_base64)
-                    await updates_queue.put((str(text_file), "info", f"Got progress ID: {progress_id if progress_id else 'None'}"))
-                    recipe_progress.progress_id = progress_id
-                    
-                    # Si l'URL existe déjà, la marquer comme ignorée
-                    if progress_id is None:
-                        self.metrics.skip_count += 1
-                        stats["skipped"] += 1
-                        stats["in_progress"] -= 1
-                        
-                        # Message plus clair pour l'utilisateur
-                        skip_message = f"Recette similaire déjà existante (détectée par analyse de similarité textuelle)"
-                        await updates_queue.put((str(text_file), "skipped", skip_message))
-                        
-                        # Journaliser avec plus de détails
-                        print(f"[DUPLICATE] Recette '{recipe_id}' ignorée car du contenu similaire existe déjà")
-                        return
-                    
-                    # Vérifier la progression jusqu'à la fin
-                    recipe_succeeded = await self.check_progress_until_complete(
-                        session=session,
-                        progress_id=progress_id,
-                        item_id=str(text_file),
-                        stats=stats,
-                        updates_queue=updates_queue
-                    )
-                    
-                    # Log de débogage pour les recettes réussies
-                    if recipe_succeeded:
-                        await updates_queue.put((str(text_file), "debug", f"Recipe {recipe_id} successfully imported (verified)"))
-            
-            except Exception as e:
-                # Enregistrer l'erreur
-                self.metrics.errors.append(
-                    RecipeError(
-                        url=str(text_file),
-                        error=str(e),
-                        timestamp=datetime.now()
-                    )
-                )
-                self.metrics.failure_count += 1
-                stats["errors"] += 1
-                
-                # Notifier l'erreur
-                await updates_queue.put((str(text_file), "error", f"Error: {str(e)}"))
-                
-            finally:
-                # Décrémenter le compteur de tâches en cours seulement si on n'a pas déjà quitté la fonction
-                if stats["in_progress"] > 0:
-                    stats["in_progress"] -= 1
-                
-                # Mettre à jour la durée totale
-                duration = datetime.now() - start_time
-                self.metrics.total_duration += duration
-                
-                # Incrémenter le compteur de tâches terminées
-                stats["completed"] += 1 
+                if attempt == MAX_RETRIES:
+                    break
+
+        # Toutes les tentatives échouées
+        self._record_error(item_id, last_error or "Unknown", stats)
+        await queue.put((item_id, "error", f"Erreur: {last_error}"))
+
+    async def _handle_status(
+        self,
+        status: dict,
+        item_id: str,
+        stats: dict,
+        queue: asyncio.Queue,
+        tracker: dict,
+    ) -> bool | None:
+        """Handle a single progress status event.
+
+        Returns True if terminal (success/skip), raises on error,
+        returns None if still in progress.
+        """
+        st = status.get("status")
+
+        if st == "completed":
+            self.metrics.success_count += 1
+            stats["success"] += 1
+            slug = status.get("slug", "ok")
+            await queue.put((item_id, "success", f"Importée → {slug}"))
+            return True
+
+        if st == "error":
+            error_msg = status.get("error") or "Unknown"
+            if "already exists" in error_msg.lower():
+                self.metrics.skip_count += 1
+                stats["skipped"] += 1
+                await queue.put((item_id, "skipped", "Déjà existante"))
+                return True
+            raise Exception(error_msg)
+
+        # In progress — detect changes and forward to TUI
+        current_step = status.get("current_step", "")
+        step_message = status.get("step_message", "")
+        fingerprint = f"{current_step}|{step_message}"
+
+        if fingerprint != tracker.get("fingerprint"):
+            tracker["fingerprint"] = fingerprint
+            tracker["last_progress_time"] = datetime.now()
+
+        if current_step and current_step != tracker.get("last_step"):
+            tracker["last_step"] = current_step
+            await queue.put((item_id, "step", f"step: {current_step}"))
+
+        if step_message and step_message != tracker.get("last_message"):
+            tracker["last_message"] = step_message
+            await queue.put((item_id, "progress", step_message))
+
+        return None
+
+    def _check_stall(self, tracker: dict, max_stall_s: int) -> None:
+        """Raise if no progress has been made for too long."""
+        stall = (datetime.now() - tracker["last_progress_time"]).total_seconds()
+        if stall > max_stall_s:
+            raise Exception(f"Bloqué depuis {stall:.0f}s sans progression")
+
+    def _new_tracker(self) -> dict:
+        """Create a fresh progress tracker dict."""
+        return {
+            "last_progress_time": datetime.now(),
+            "last_step": "",
+            "last_message": "",
+            "fingerprint": "",
+        }
+
+    async def _stream_until_done(
+        self,
+        progress_id: str,
+        item_id: str,
+        stats: dict,
+        queue: asyncio.Queue,
+        max_stall_s: int = 900,
+    ) -> bool:
+        """Suit la progression via SSE (Server-Sent Events).
+
+        Plus efficace que le polling : le serveur pousse les updates
+        sur une seule connexion HTTP au lieu de requêtes répétées.
+        """
+        tracker = self._new_tracker()
+
+        async for status in self.api_client.stream_progress(self.session, progress_id):
+            if status.get("status") == "keepalive":
+                self._check_stall(tracker, max_stall_s)
+                continue
+
+            result = await self._handle_status(status, item_id, stats, queue, tracker)
+            if result is not None:
+                return result
+
+        raise Exception("SSE stream ended unexpectedly")
+
+    async def _poll_until_done(
+        self,
+        progress_id: str,
+        item_id: str,
+        stats: dict,
+        queue: asyncio.Queue,
+        max_stall_s: int = 900,
+    ) -> bool:
+        """Polling de progression jusqu'à complétion.
+
+        Le timeout est réinitialisé dès qu'un changement est détecté
+        (step ou message). On ne timeout que si le serveur renvoie
+        des réponses identiques pendant > max_stall_s.
+        """
+        poll_start_time = datetime.now()
+        tracker = self._new_tracker()
+        consecutive_identical = 0
+
+        while True:
+            self._check_stall(tracker, max_stall_s)
+
+            status = await self.api_client.check_progress(self.session, progress_id)
+
+            result = await self._handle_status(status, item_id, stats, queue, tracker)
+            if result is not None:
+                return result
+
+            # Patience for long-running subprocesses: if the server keeps
+            # responding "in_progress" with the same fingerprint, the
+            # subprocess is still alive. Reset the stall timer periodically.
+            current_fp = f"{status.get('current_step', '')}|{status.get('step_message', '')}"
+            if current_fp == tracker.get("_prev_poll_fp"):
+                consecutive_identical += 1
+                if consecutive_identical % 20 == 0:
+                    tracker["last_progress_time"] = datetime.now()
+            else:
+                consecutive_identical = 0
+            tracker["_prev_poll_fp"] = current_fp
+
+            # Adaptive polling: fast at start, spaced out later
+            elapsed = (datetime.now() - poll_start_time).total_seconds()
+            if elapsed < 30:
+                await asyncio.sleep(1)
+            elif elapsed < 120:
+                await asyncio.sleep(3)
+            else:
+                await asyncio.sleep(5)
+
+    # ──────────────────────────────────────────────
+    # Helpers
+    # ──────────────────────────────────────────────
+
+    def _record_error(self, item_id: str, error: str, stats: dict) -> None:
+        """Enregistre une erreur dans les métriques."""
+        self.metrics.failure_count += 1
+        stats["errors"] += 1
+        self.metrics.errors.append(
+            RecipeError(url=item_id, error=error, timestamp=datetime.now())
+        )

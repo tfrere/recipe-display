@@ -1,192 +1,127 @@
+"""Point d'entrée CLI de l'importateur de recettes."""
+
 import asyncio
 import json
 import argparse
-import os
 import shutil
 from pathlib import Path
+
 from rich.console import Console
-import aiohttp
+
 from src.importer import RecipeImporter
 
-async def clear_output_directories(api_url: str, console: Console) -> None:
+
+async def clear_output(console: Console) -> None:
     """Nettoie les dossiers d'output (recipes et images) avant l'importation."""
-    # Extraire le hostname de l'URL de l'API pour déterminer le chemin du serveur
-    server_url = api_url.rstrip("/").split("://")[-1].split(":")[0]
-    
-    # Utiliser des chemins relatifs ou absolus selon que l'API est locale ou distante
-    if server_url in ["localhost", "127.0.0.1"]:
-        # Pour une API locale, trouver le répertoire du serveur (conventionnellement à côté du répertoire recipe_importer)
-        server_dir = Path(__file__).parent.parent.parent / "server"
-        if not server_dir.exists():
-            console.print("[yellow]Warning: Could not find local server directory, skipping cleanup[/yellow]")
-            return
-    else:
-        console.print(f"[yellow]Warning: Cannot clean output directories on remote server '{server_url}'[/yellow]")
+    server_dir = Path(__file__).parent.parent.parent / "server"
+    if not server_dir.exists():
+        console.print("[yellow]Dossier serveur introuvable, nettoyage ignoré[/yellow]")
         return
-    
-    # Définir les chemins des dossiers à nettoyer
+
     recipes_dir = server_dir / "data" / "recipes"
     images_dir = recipes_dir / "images"
-    
-    console.print("[bold cyan]Cleaning output directories...[/bold cyan]")
-    
-    # Supprimer et recréer le dossier d'images
+
+    console.print("[bold cyan]Nettoyage des dossiers…[/bold cyan]")
+
     if images_dir.exists():
-        console.print(f"[yellow]Removing images directory: {images_dir}[/yellow]")
         shutil.rmtree(images_dir)
-    
-    # Supprimer tous les fichiers JSON dans le dossier de recettes
     if recipes_dir.exists():
-        console.print(f"[yellow]Removing recipe files from: {recipes_dir}[/yellow]")
-        for recipe_file in recipes_dir.glob("*.json"):
-            recipe_file.unlink()
-        
-        # S'assurer que le dossier d'images existe
-        images_dir.mkdir(exist_ok=True, parents=True)
-    else:
-        console.print(f"[red]Warning: Recipes directory not found: {recipes_dir}[/red]")
-        
-    console.print("[green]Output directories cleaned successfully[/green]")
+        for f in recipes_dir.glob("*.json"):
+            f.unlink()
+
+    images_dir.mkdir(parents=True, exist_ok=True)
+    console.print("[green]Dossiers nettoyés[/green]")
+
 
 async def main():
     parser = argparse.ArgumentParser(description="Import recipes from URLs or text files")
-    
-    # Groupe de sous-commandes pour les différents modes
-    subparsers = parser.add_subparsers(dest="mode", help="Import mode", required=True)
-    
-    # Sous-commande pour le mode URL
-    url_parser = subparsers.add_parser("url", help="Import recipes from a list of URLs")
-    url_parser.add_argument(
-        "-f", 
-        "--file",
-        type=str,
-        required=True,
-        help="Path to JSON file containing URLs to import"
-    )
-    
-    # Sous-commande pour le mode texte
-    text_parser = subparsers.add_parser("text", help="Import recipes from text files")
-    text_parser.add_argument(
-        "-d",
-        "--directory",
-        type=str,
-        required=True,
-        help="Directory containing text files and corresponding images"
-    )
-    
-    # Arguments communs aux deux modes
-    parser.add_argument(
-        "-c",
-        "--concurrent",
-        type=int,
-        default=10,
-        help="Number of concurrent imports (default: 10)"
-    )
-    parser.add_argument(
-        "-a",
-        "--api-url",
-        type=str,
-        default="http://localhost:3001",
-        help="API server URL (default: http://localhost:3001)"
-    )
-    parser.add_argument(
-        "--auth",
-        type=str,
-        default="auth_presets.json",
-        help="Path to authentication presets JSON file (default: auth_presets.json)"
-    )
-    parser.add_argument(
-        "--list-recipes",
-        action="store_true",
-        help="List imported recipes after completion"
-    )
-    parser.add_argument(
-        "--clear",
-        action="store_true",
-        help="Clear output directories (server/data/recipes and images) before importing"
-    )
-    
+
+    # Arguments communs
+    parser.add_argument("-c", "--concurrent", type=int, default=10, help="Concurrent imports (default: 10)")
+    parser.add_argument("-a", "--api-url", type=str, default="http://localhost:3001", help="API URL")
+    parser.add_argument("--auth", type=str, default="auth_presets.json", help="Auth presets file")
+    parser.add_argument("--list-recipes", action="store_true", help="List recipes after import")
+    parser.add_argument("--clear", action="store_true", help="Clear recipes before import")
+    parser.add_argument("--headless", action="store_true", help="No TUI, console output only")
+    parser.add_argument("--max-per-domain", type=int, default=8, help="Max concurrent requests per domain (default: 8)")
+
+    # Sous-commandes
+    subparsers = parser.add_subparsers(dest="mode", required=True)
+
+    url_parser = subparsers.add_parser("url", help="Import from URLs")
+    url_parser.add_argument("-f", "--file", type=str, required=True, help="JSON file with URLs")
+
+    text_parser = subparsers.add_parser("text", help="Import from text files")
+    text_parser.add_argument("-d", "--directory", type=str, required=True, help="Directory with .txt + images")
+
     args = parser.parse_args()
     console = Console()
-    
+
     try:
-        # Nettoyer les dossiers d'output si demandé
         if args.clear:
-            await clear_output_directories(args.api_url, console)
-        
-        # Créer l'importateur
+            await clear_output(console)
+
         importer = RecipeImporter(
             concurrent_imports=args.concurrent,
             api_url=args.api_url,
             auth_presets_file=args.auth,
-            console=console
+            console=console,
+            headless=args.headless,
+            max_per_domain=args.max_per_domain,
         )
-        
+
         if args.mode == "url":
-            # Vérifier que le fichier d'URLs existe
             urls_file = Path(args.file)
             if not urls_file.exists():
-                console.print(f"[red]Error: File {args.file} not found[/red]")
+                console.print(f"[red]Fichier introuvable: {args.file}[/red]")
                 return
-                
-            # Charger les URLs depuis le fichier JSON
+
             with open(urls_file) as f:
-                data = json.load(f)
-                if not isinstance(data, list):
-                    console.print("[red]Error: JSON file must contain a list of URLs[/red]")
-                    return
-                urls = data
-                
-            # Lancer l'importation des URLs
-            await importer.import_recipes(urls)
-            
-        elif args.mode == "text":
-            # Vérifier que le dossier existe
-            text_dir = Path(args.directory)
-            if not text_dir.exists() or not text_dir.is_dir():
-                console.print(f"[red]Error: Directory {args.directory} not found or is not a directory[/red]")
+                urls = json.load(f)
+            if not isinstance(urls, list):
+                console.print("[red]Le fichier JSON doit contenir une liste d'URLs[/red]")
                 return
-                
-            # Trouver tous les fichiers texte
+
+            await importer.import_urls(urls)
+
+        elif args.mode == "text":
+            text_dir = Path(args.directory)
+            if not text_dir.is_dir():
+                console.print(f"[red]Dossier introuvable: {args.directory}[/red]")
+                return
+
             text_files = list(text_dir.glob("*.txt"))
             if not text_files:
-                console.print(f"[red]Error: No .txt files found in {args.directory}[/red]")
+                console.print(f"[red]Aucun .txt trouvé dans {args.directory}[/red]")
                 return
-                
-            # Préparer les données pour l'importation
+
+            # Associer chaque .txt à son image (même nom, extension image)
             recipe_files = []
-            for text_file in text_files:
-                base_name = text_file.stem
-                
-                # Rechercher une image dans différents formats possibles
-                image_file = None
-                for ext in [".jpg", ".jpeg", ".png", ".gif", ".webp"]:
-                    possible_image = text_dir / f"{base_name}{ext}"
-                    if possible_image.exists():
-                        image_file = possible_image
+            for tf in text_files:
+                image = None
+                for ext in (".jpg", ".jpeg", ".png", ".gif", ".webp"):
+                    candidate = tf.with_suffix(ext)
+                    if candidate.exists():
+                        image = candidate
                         break
-                        
-                if not image_file:
-                    console.print(f"[yellow]Warning: No image file found for {base_name}.txt, will import without image[/yellow]")
-                    
-                recipe_files.append((text_file, image_file))
-                
-            # Lancer l'importation des fichiers texte
+                if not image:
+                    console.print(f"[yellow]Pas d'image pour {tf.name}[/yellow]")
+                recipe_files.append((tf, image))
+
             await importer.import_text_recipes(recipe_files)
-        
-        # Lister les recettes importées si demandé
+
         if args.list_recipes:
-            console.print("\n[bold yellow]Listing imported recipes...[/bold yellow]")
-            async with aiohttp.ClientSession() as session:
-                await importer.list_imported_recipes(session)
-        
+            await importer.list_imported_recipes()
+
     except json.JSONDecodeError:
-        console.print("[red]Error: Invalid JSON file[/red]")
+        console.print("[red]Fichier JSON invalide[/red]")
     except Exception as e:
-        console.print(f"[red]Error: {str(e)}[/red]")
+        console.print(f"[red]Erreur: {e}[/red]")
+
 
 def run():
     asyncio.run(main())
+
 
 if __name__ == "__main__":
     run()

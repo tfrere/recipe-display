@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "title": "Galettes de petits pois \u00e0 la menthe et feta : une recette facile et gourmande",
+    "description": "Les galettes de petits pois \u00e0 la menthe et \u00e0 la feta sont aussi d\u00e9licieuses que faciles \u00e0 r\u00e9aliser. Cette recette l\u00e9g\u00e8re et pleine de fra\u00eecheur permet de cuisiner les petits pois autrement.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "petits pois",
+      "printemps",
+      "galettes"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/Galettes-petits-pois-YUKA-1-of-8.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaites pour un d\u00e9jeuner, un pique-nique, ou m\u00eame gliss\u00e9es dans un burger.",
+      "Simples \u00e0 pr\u00e9parer, elles se cong\u00e8lent \u00e9galement tr\u00e8s bien.",
+      "Pour congeler : disposer crues ou cuites sur une plaque avec papier cuisson, congeler jusqu'\u00e0 dur, puis transf\u00e9rer dans une bo\u00eete. Ou empiler avec un carr\u00e9 de papier cuisson entre chaque.",
+      "Pour r\u00e9chauffer : une dizaine de minutes au four \u00e0 120-150 \u00b0C."
+    ],
+    "slug": "galettes-de-petits-pois-a-la-menthe-et-feta-une-recette-facile-et-gourmande",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/Galettes-petits-pois-YUKA-1-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/04/24/galettes-petits-pois-menthe-feta/",
+    "image": "images/galettes-de-petits-pois-a-la-menthe-et-feta-une-recette-facile-et-gourmande.webp",
+    "createdAt": "2026-02-09T22:45:57.723860",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 24.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "July",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 153.5,
+      "protein": 9.3,
+      "fat": 7.7,
+      "carbs": 11.5,
+      "fiber": 2.9,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "petits_pois",
+      "name": "petits pois",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "frais ou surgel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Peas"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe",
+      "quantity": 5.0,
+      "unit": "branches",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "citron_zeste",
+      "name": "citron jaune bio",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "le zeste",
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon"
+    },
+    {
+      "id": "oeufs",
+      "name": "\u0153ufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "farine_pois_chiche",
+      "name": "farine de pois chiche",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chickpea flour"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "menthe_sauce",
+      "name": "menthe",
+      "quantity": 5.0,
+      "unit": "branches",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "ail_sauce",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cumin",
+      "name": "graines de cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "citron_jus",
+      "name": "citron",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "le jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "yaourt",
+      "name": "yaourt",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yogurt"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "cuire_petits_pois",
+      "action": "\u00c9cossez les petits pois s'ils sont frais, puis faites-les cuire \u00e0 la vapeur pendant 10min. Versez-les dans un saladier et \u00e9crasez-les tr\u00e8s grossi\u00e8rement \u00e0 la fourchette.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "petits_pois"
+      ],
+      "produces": "petits_pois_cuits_ecrases",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_aromatiques",
+      "action": "Pelez et pressez l'ail, hachez finement la menthe et ajoutez-les aux petits pois avec le zeste de citron. Ajoutez les \u0153ufs et m\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "petits_pois_cuits_ecrases",
+        "ail",
+        "menthe",
+        "citron_zeste",
+        "oeufs"
+      ],
+      "produces": "melange_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_farine",
+      "action": "Ajoutez la farine, m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "melange_base",
+        "farine_pois_chiche"
+      ],
+      "produces": "melange_farine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_feta",
+      "action": "Ajoutez la feta \u00e9miett\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "melange_farine",
+        "feta"
+      ],
+      "produces": "pate_galettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_galettes",
+      "action": "Faites chauffer une po\u00eale avec une g\u00e9n\u00e9reuse quantit\u00e9 d'huile d'olive. Mouillez vos mains, formez des galettes et d\u00e9posez-les dans la po\u00eale chaude. Faites-les cuire environ 6-7min de chaque c\u00f4t\u00e9 jusqu'\u00e0 ce qu'elles soient bien dor\u00e9es.",
+      "duration": "PT14M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "pate_galettes",
+        "huile_olive"
+      ],
+      "produces": "galettes_cuites",
+      "requires": [],
+      "visualCue": "bien dor\u00e9es"
+    },
+    {
+      "id": "preparer_sauce",
+      "action": "Hachez la menthe, pressez l'ail et m\u00e9langez-les avec le cumin, le jus de citron et le yaourt. Salez, poivrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "menthe_sauce",
+        "ail_sauce",
+        "cumin",
+        "citron_jus",
+        "yaourt"
+      ],
+      "produces": "sauce_yaourt",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez les galettes avec la sauce au yaourt et une salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "galettes_cuites",
+        "sauce_yaourt"
+      ],
+      "produces": "galettes_servies",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "galettes_servies",
+  "originalText": "Galettes de petits pois \u00e0 la menthe et feta : faciles et gourmandes\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 avril 2025\nGalettes de petits pois \u00e0 la menthe et feta : une recette facile et gourmande\nLes\ngalettes de petits pois \u00e0 la menthe et \u00e0 la feta\nsont aussi d\u00e9licieuses que faciles \u00e0 r\u00e9aliser. Cette recette l\u00e9g\u00e8re et pleine de fra\u00eecheur permet de cuisiner les petits pois autrement. La feta fondante et la menthe cisel\u00e9e, quant \u00e0 elles, apportent une touche gourmande.\nParfaites pour un d\u00e9jeuner, un pique-nique, ou m\u00eame gliss\u00e9es dans un burger, ces galettes sont une excellente fa\u00e7on de faire manger des l\u00e9gumes, m\u00eame aux plus r\u00e9ticents. Simples \u00e0 pr\u00e9parer, elles se cong\u00e8lent \u00e9galement tr\u00e8s bien. \u00c7a en fait aussi une option id\u00e9ale pour les repas \u00e0 l\u2019avance.\nTable des mati\u00e8res\n1\nPourquoi tester ces galettes aux petits pois, menthe et feta ?\n2\nVoici pourquoi j\u2019adore cette recette :\n3\nAstuces pour les congeler facilement\n4\nGalettes de petits pois, menthe et feta\n5\nEt si vous voulez varier les plaisirs\u2026\n6\nEn r\u00e9sum\u00e9 : les galettes de petits pois \u00e0 la menthe et \u00e0 la feta\nPourquoi tester ces galettes aux petits pois, menthe et feta ?\nLes galettes de l\u00e9gumes font partie de ces recettes simples, pratiques et toujours efficaces. Elles permettent de cuisiner les l\u00e9gumes autrement et s\u2019adaptent \u00e0 toutes les occasions : en plat, dans un burger, \u00e0 emporter\u2026 ou m\u00eame au cong\u00e9lateur pour les jours de flemme.\nCette version aux petits pois, \u00e0 la menthe et \u00e0 la feta a ce petit plus qui change tout. Les petits pois apportent une douceur l\u00e9g\u00e8rement sucr\u00e9e, la menthe une vraie fra\u00eecheur, et la feta une touche sal\u00e9e et fondante qui lie le tout.\nVoici pourquoi j\u2019adore cette recette :\nUltra simples \u00e0 faire\n. Pas besoin de mat\u00e9riel particulier ni d\u2019une longue liste d\u2019ingr\u00e9dients. Il suffit de mixer les petits pois avec quelques aromates, de former des galettes\u2026 et de les cuire. Une recette id\u00e9ale m\u00eame quand on manque d\u2019\u00e9nergie ou qu\u2019on cuisine avec les enfants.\nDes saveurs \u00e9quilibr\u00e9es\n. La douceur des petits pois se marie parfaitement \u00e0 la fra\u00eecheur de la menthe et au c\u00f4t\u00e9 sal\u00e9 de la feta. Une recette fra\u00eeche, savoureuse, l\u00e9g\u00e8re mais gourmande.\nUne belle mani\u00e8re de cuisiner les petits pois autrement\n: souvent rel\u00e9gu\u00e9s aux accompagnements, ici ils deviennent l\u2019\u00e9l\u00e9ment central. Une belle alternative aux galettes classiques \u00e0 base de pommes de terre ou de c\u00e9r\u00e9ales.\nParfaites dans un burger veggie\n. Elles tiennent bien \u00e0 la cuisson et se glissent facilement dans un pain burger avec salade et une bonne sauce (comme\ncette sauce burger maison\n).\nElles plaisent \u00e0 tout le mond\ne. Leur texture douce et leur go\u00fbt accessible en font un vrai passe-partout. Enfants, adultes, lunchbox, ap\u00e9ro ou d\u00eener l\u00e9ger\u2026 elles cochent toutes les cases.\nAstuces pour les congeler facilement\nLes galettes sont id\u00e9ales pour le batch cooking ou les repas express. Voici deux fa\u00e7ons simples de les congeler sans qu\u2019elles collent entre elles :\n\u00c0 plat\n: disposez-les crues ou cuites sur une plaque recouverte de papier cuisson. Placez-les au cong\u00e9lateur jusqu\u2019\u00e0 ce qu\u2019elles soient bien dures. Enfin, transf\u00e9rez-les dans une bo\u00eete herm\u00e9tique ou un sachet.\nEmpil\u00e9es\n. Si vous voulez gagner de la place, empilez-les directement avec un petit carr\u00e9 de papier cuisson entre chacune pour qu\u2019elles ne se collent pas.\nPour les r\u00e9chauffer : une dizaine de minutes au four \u00e0 120-150 \u00b0C suffit \u00e0 les d\u00e9congeler sans les dess\u00e9cher. Elles retrouvent leur texture croustillante \u00e0 l\u2019ext\u00e9rieur et moelleuse \u00e0 l\u2019int\u00e9rieur.\nCe petit geste d\u2019anticipation te permet de toujours avoir sous la main un repas \u00e9quilibr\u00e9. Vous pourrez accompagner de crudit\u00e9s, d\u2019une salade compos\u00e9e ou d\u2019un reste de c\u00e9r\u00e9ales.\nGalettes de petits pois, menthe et feta\n4.57\n/5 avec\n48\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n8\ngalettes\nIngr\u00e9dients\n1x\n2x\n3x\n300\ng\nde petits pois\nfrais ou surgel\u00e9s\n1\ngousse d\u2019ail\n5\nbranches de menthe\nZeste d\u2019un \u00bd citron jaune bio\n2\n\u0153ufs\n40\ng\nde farine de pois chiche\n200\ng\nde feta\nHuile d\u2019olive\nPour la sauce\n5\nbranches de menthe\n1\ngousse d\u2019ail\n\u00bd\nc\u00e0c de graines de cumin\nJus d\u2019un \u00bd citron\n100\ng\nde yaourt\nInstructions\n\u00c9cossez les petits pois s\u2019ils sont frais, puis faites-les cuire \u00e0 la vapeur pendant 10 min. Versez-les dans un saladier et \u00e9crasez-les tr\u00e8s grossi\u00e8rement \u00e0 la fourchette.\nPelez et pressez l\u2019ail, hachez finement la menthe et ajoutez-les aux petits pois avec le zeste de citron. Ajoutez les \u0153ufs et m\u00e9langez bien.\nAjoutez la farine, m\u00e9langez.\nPuis finalement la feta \u00e9miett\u00e9e.\nFaites chauffer une po\u00eale avec une g\u00e9n\u00e9reuse quantit\u00e9 d\u2019huile d\u2019olive. Mouillez vos mains pour \u00e9viter que la p\u00e2te ne colle, formez des galettes et d\u00e9posez-les dans la po\u00eale chaude. Faites-les cuire environ 6-7 min de chaque c\u00f4t\u00e9 jusqu\u2019\u00e0 ce qu\u2019elles soient bien dor\u00e9es.\nPour la sauce, hachez la menthe, pressez l\u2019ail et m\u00e9langez-les avec le cumin, le jus de citron et le yaourt. Salez, poivrez.\nServez les galettes avec la sauce au yaourt et une salade.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nEt si vous voulez varier les plaisirs\u2026\nSi vous aimez ce type de recette, voici d\u2019autres id\u00e9es de galettes v\u00e9g\u00e9tariennes \u00e0 tester :\nGalettes de brocoli au parmesan et mozzarella\nUne recette ultra populaire, parfaite pour faire aimer le brocoli (m\u00eame aux sceptiques).\nGalettes de petits pois \u00e0 l\u2019indienne\nUne version \u00e9pic\u00e9e et croustillante, pleine de caract\u00e8re, inspir\u00e9e des saveurs indiennes.\nGalettes de lentilles corail, cumin et blettes\nRiches en prot\u00e9ines v\u00e9g\u00e9tales, elles sont parfaites pour un d\u00eener nourrissant et \u00e9quilibr\u00e9.\nGalettes de chou-fleur au curry\nDouces, \u00e9pic\u00e9es, faciles \u00e0 faire \u2014 une excellente alternative pour cuisiner le chou-fleur.\nEn r\u00e9sum\u00e9 : les galettes de petits pois \u00e0 la menthe et \u00e0 la feta\nLes galettes de petits pois \u00e0 la menthe et \u00e0 la feta sont une belle mani\u00e8re de cuisiner les l\u00e9gumes autrement, avec une recette\nfacile, rapide et savoureuse\n. Que ce soit pour un d\u00eener improvis\u00e9, un batch cooking du dimanche ou pour garnir un burger veggie maison, elles s\u2019adaptent \u00e0 toutes les envies.\nEt avec leur bonne tenue \u00e0 la cuisson comme \u00e0 la cong\u00e9lation, elles deviendront vite un incontournable \u00e0 garder sous la main. Une recette qui coche toutes les cases, sans rien compliquer. \u00c0 tester, \u00e0 partager, et \u00e0 refaire encore et encore !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nGalettes\n,\nPetits Pois\n,\nPlats & Accompagnements\n,\nPrintemps\nTags:\nv\u00e9g\u00e9tarien\nCarrot cake \u00e0 la noix de coco : la recette irratable et facile\nTatin de carottes au miel, balsamique et burrata facile et fraiche\n1 thought on \u201cGalettes de petits pois \u00e0 la menthe et feta : une recette facile et gourmande\u201d\nMarie\ndit\u00a0:\n22 mai 2025 \u00e0 9 h 38 min\nJe l\u2019ai faite pendants les derni\u00e8res vacances de Paques, c\u2019\u00e9tait si bon\nchargement\u2026\nR\u00e9pondre\n4.57 from 48 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Tapenade d\u2019olives vertes vegan",
+    "description": "Une tapenade maison simple, sans anchois, \u00e0 base d'olives vertes, de c\u00e2pres, d'ail et d'herbes.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "olive",
+      "olives vertes",
+      "tapenade",
+      "tapenade maison",
+      "vegan",
+      "ap\u00e9ro"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/Tapenade-olives-vertes-2-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Beaucoup des tapenades du commerce contiennent des anchois.",
+      "Celle de chez Grand Frais, par exemple, ne contient pas d\u2019anchois.",
+      "J\u2019ai aromatis\u00e9 ma tapenade avec un peu de thym ce coup-ci. Mais je pense que la prochaine fois j\u2019y ajouterai un peu de romarin.",
+      "J\u2019ai mis 25g de c\u00e2pres pour 250g d'olives vertes d\u00e9noyaut\u00e9es. Je trouve ce ratio de 1 pour 10 pas mal. Mais si vous aimez votre tapenade plus ou moins relev\u00e9e, n'h\u00e9sitez pas \u00e0 adapter !",
+      "Et si malgr\u00e9 cette Tapenade d'olives vertes vegan, vous ne savez pas quoi faire de vos olives, vous pouvez toujours les mettre dans un cake !"
+    ],
+    "slug": "tapenade-dolives-vertes-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/Tapenade-olives-vertes-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/05/29/tapenade-dolives-vertes-vegan/",
+    "image": "images/tapenade-dolives-vertes-vegan.jpg",
+    "createdAt": "2026-02-09T21:49:50.207299",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 190.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 906.1,
+      "protein": 3.5,
+      "fat": 98.5,
+      "carbs": 12.5,
+      "fiber": 9.2,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "green_olives",
+      "name": "olives vertes",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "d\u00e9noyaut\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "green olives"
+    },
+    {
+      "id": "capers",
+      "name": "c\u00e2pres",
+      "quantity": 25.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "thyme_rosemary",
+      "name": "thym et/ou de romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "citron, jus",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "blend_ingredients",
+      "action": "Placer tous les ingr\u00e9dients dans un mixeur et mixer jusqu'\u00e0 obtenir une consistance satisfaisante.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "green_olives",
+        "capers",
+        "garlic",
+        "thyme_rosemary",
+        "olive_oil",
+        "lemon_juice",
+        "salt",
+        "pepper"
+      ],
+      "produces": "blended_tapenade",
+      "requires": [],
+      "visualCue": "consistance satisfaisante"
+    },
+    {
+      "id": "rest_tapenade",
+      "action": "Laisser reposer la tapenade quelques heures pour que les saveurs se d\u00e9veloppent.",
+      "duration": "PT3H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "blended_tapenade"
+      ],
+      "produces": "rested_tapenade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "store_tapenade",
+      "action": "Si vous souhaitez la conserver quelques semaines, la mettre dans un bocal, couvrir d'huile, fermer et placer au frigo.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rested_tapenade"
+      ],
+      "produces": "stored_tapenade",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "stored_tapenade",
+  "originalText": "Tapenade d\u2019olives vertes vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 mai 2023\nTapenade d\u2019olives vertes vegan\nAller \u00e0 la recette\nPourquoi faire sa propre Tapenade d\u2019olives vertes vegan ?\nLa r\u00e9ponse est simple : parce que beaucoup des tapenades du commerce contiennent des anchois. Pour beaucoup, \u00e7a ne pose pas de probl\u00e8me. Et dans ce cas, tant mieux. Mais pour ceux qui auraient envie de d\u00e9guster des petits toasts de tapenade sans anchois. Voici une solution !\nCela \u00e9tant dit, \u00e7a ne co\u00fbte rien de v\u00e9rifier la compo de votre tapenade du commerce. Celle de chez Grand Frais, par exemple, ne contient pas d\u2019anchois.\nL\u2019autre raison qui m\u2019a pouss\u00e9 \u00e0 faire ma tapenade maison, c\u2019est que j\u2019avais des tonnes d\u2019olives vertes. J\u2019avais ouvert un \u00e9norme bocal et je savais que je serai incapable de tout manger comme \u00e7a. Et ce, malgr\u00e9 mon amour pour les olives.\nJe me suis dit que c\u2019\u00e9tait l\u2019occasion id\u00e9ale de tenter de faire ma tapenade.\nEt c\u2019est tr\u00e8s simple.\nVraiment, aucune difficult\u00e9.\nIl suffit d\u2019avoir un petit mixeur de cuisine. Et quelques ingr\u00e9dients, somme toute, assez basiques.\nJ\u2019ai aromatis\u00e9 ma tapenade avec un peu de thym ce coup-ci. Mais je pense que la prochaine fois j\u2019y ajouterai un peu de romarin.\nJ\u2019ai mis 25g de c\u00e2pres pour 250g d\u2019olives vertes d\u00e9noyaut\u00e9es. Je trouve ce ratio de 1 pour 10 pas mal. Mais si vous aimez votre tapenade plus ou moins relev\u00e9e, n\u2019h\u00e9sitez pas \u00e0 adapter ! C\u2019est aussi \u00e7a la beaut\u00e9 du fait maison !\nEt si malgr\u00e9 cette Tapenade d\u2019olives vertes vegan, vous ne savez pas quoi faire de vos olives, vous pouvez toujours les mettre dans un cake !\nIci avec des poivrons\nou\nici avec des tomates cerises\n!\nTapenade d\u2019olives vertes vegan\n4.54\n/5 avec\n75\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nbocal\nIngr\u00e9dients\n1x\n2x\n3x\n250\ng\nd\u2019olives vertes d\u00e9noyaut\u00e9es\n25\ng\nde c\u00e2pres\n1\ngousse d\u2019ail\n1\nbranche de thym et/ ou de romarin\n60\nml\nd\u2019huile d\u2019olive\nle jus d\u2019\u00bd citron\nsel\npoivre\nInstructions\nPlacer tous les ingr\u00e9dients dans un mixeur et mixer jusqu\u2019\u00e0 obtenir une consistance satisfaisante.\nLaisser reposer la tapenade quelques heures pour que les saveurs se d\u00e9veloppent.\nSi vous souhaitez la conserver quelques semaines, la mettre dans un bocal, couvrir d\u2019huile, fermer et placer au frigo.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNon class\u00e9\n,\nPrintemps\nTags:\nolive\n,\nolives vertes\n,\ntapenade\n,\ntapenade maison\nTarte fine courgette et burrata : la recette facile et ultra fra\u00eeche\nTartines aux asperges feta et citron\n5 thoughts on \u201cTapenade d\u2019olives vertes vegan\u201d\nCarole\ndit\u00a0:\n29 mai 2023 \u00e0 12 h 18 min\nJ\u2019adoore cette recette,  je rajoute des noisettes \u00e9cras\u00e9es et ou des amandes !\nUn d\u00e9lice.\nUn grand merci pour tout votre travail\u2026vos recettes sont extras !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 mai 2023 \u00e0 10 h 55 min\nsuper id\u00e9e!\nchargement\u2026\nR\u00e9pondre\nR\u00e9s\u00e9\ndit\u00a0:\n29 mai 2023 \u00e0 19 h 14 min\nhello, coucou !\non peut mettre des algues si lego\u00fbt iod\u00e9 nous manque !\nce que je tenterai peut-\u00eatre  !!\nmerci et gros bisous les filles \u2665\u2665\u2665\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 mai 2023 \u00e0 10 h 55 min\ngrave trop bonne id\u00e9e !\nchargement\u2026\nR\u00e9pondre\nAlex\ndit\u00a0:\n6 d\u00e9cembre 2025 \u00e0 10 h 50 min\nJe teste de suite ! Pour ma part je vais rajouter un peu de piment ! Merci pour la recette !\nchargement\u2026\nR\u00e9pondre\n4.54 from 75 votes (\n73 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

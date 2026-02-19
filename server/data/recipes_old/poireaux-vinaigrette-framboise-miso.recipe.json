@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "Poireaux Vinaigrette Framboise Miso",
+    "description": "Une recette revisit\u00e9e du classique poireaux vinaigrette, avec une vinaigrette audacieuse au miso blanc et au vinaigre de framboise.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "vegan",
+      "poireau",
+      "vinaigrette",
+      "miso",
+      "framboise"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/poireaux-vinaigrette-framboise-miso.jpg",
+    "nationality": "French",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le vrai vinaigre de framboise (et non un vinaigre de vin aromatis\u00e9) fait toute la diff\u00e9rence.",
+      "Le miso blanc apporte un go\u00fbt umami et des probiotiques b\u00e9n\u00e9fiques.",
+      "Se d\u00e9guste ti\u00e8de ou froid.",
+      "Les fanes de poireau peuvent \u00eatre r\u00e9serv\u00e9es pour une autre recette."
+    ],
+    "slug": "poireaux-vinaigrette-framboise-miso",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/poireaux-vinaigrette-framboise-miso.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/03/31/poireaux-vinaigrette-framboise-miso/",
+    "image": "images/poireaux-vinaigrette-framboise-miso.jpg",
+    "createdAt": "2026-02-09T22:42:16.177995",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 15.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 332.8,
+      "protein": 7.3,
+      "fat": 23.6,
+      "carbs": 26.0,
+      "fiber": 8.9,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "leeks",
+      "name": "petits poireaux",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Baby leeks"
+    },
+    {
+      "id": "shallot",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "raspberry_vinegar",
+      "name": "vinaigre de framboise",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "raspberry vinegar"
+    },
+    {
+      "id": "nutritional_yeast",
+      "name": "levure malt\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "grain_mustard",
+      "name": "moutarde \u00e0 grains",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole grain mustard"
+    },
+    {
+      "id": "white_miso_paste",
+      "name": "p\u00e2te de miso blanc",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso paste"
+    },
+    {
+      "id": "sesame",
+      "name": "s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame"
+    }
+  ],
+  "tools": [
+    "Cuiseur vapeur"
+  ],
+  "steps": [
+    {
+      "id": "remove_green_parts",
+      "action": "\u00d4tez le vert (partie verte) des poireaux et r\u00e9servez-le pour une autre recette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leeks"
+      ],
+      "produces": "leeks_without_green",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rinse_leeks",
+      "action": "Rincez soigneusement les poireaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leeks_without_green"
+      ],
+      "produces": "cleaned_leeks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_leeks",
+      "action": "Coupez la partie blanche des poireaux en tron\u00e7ons de taille \u00e9gale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_leeks"
+      ],
+      "produces": "leek_pieces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_leeks",
+      "action": "Faites cuire les tron\u00e7ons de poireaux \u00e0 la vapeur pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "leek_pieces"
+      ],
+      "produces": "steamed_leeks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mince_shallot",
+      "action": "Pendant la cuisson des poireaux, \u00e9mincez finement l'\u00e9chalote.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "vinaigrette",
+      "uses": [
+        "shallot"
+      ],
+      "produces": "minced_shallot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_vinaigrette",
+      "action": "Dans un bol, m\u00e9langez tous les ingr\u00e9dients de la vinaigrette (huile d'olive, vinaigre de framboise, levure malt\u00e9e, moutarde \u00e0 grains, miso blanc, s\u00e9same).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "vinaigrette",
+      "uses": [
+        "olive_oil",
+        "raspberry_vinegar",
+        "nutritional_yeast",
+        "grain_mustard",
+        "white_miso_paste",
+        "sesame"
+      ],
+      "produces": "vinaigrette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_leeks_lengthwise",
+      "action": "Une fois cuits, coupez les poireaux en deux dans le sens de la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_leeks"
+      ],
+      "produces": "halved_leeks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble",
+      "action": "Disposez les poireaux dans un plat, versez la vinaigrette par-dessus et parsemez d'\u00e9chalote cisel\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "halved_leeks",
+        "vinaigrette",
+        "minced_shallot"
+      ],
+      "produces": "poireaux_vinaigrette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez ti\u00e8de ou froid.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "poireaux_vinaigrette"
+      ],
+      "produces": "poireaux_vinaigrette_framboise_miso",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "poireaux_vinaigrette_framboise_miso",
+  "originalText": "Poireaux Vinaigrette Framboise Miso : Recette V\u00e9g\u00e9 Surprenante\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 mars 2025\nPoireaux Vinaigrette Framboise Miso : Le twist inattendu qui change tout !\nLe\npoireau vinaigrette\n, un grand\nclassique\ndes repas de famille, mais qui a dit qu\u2019on ne pouvait pas lui donner un petit coup de neuf ? Cette\nrecette\nrevisit\u00e9e de\npoireaux vinaigrette framboise miso\nva \u00e9tonner vos\npapilles\n. Derri\u00e8re une\nvinaigrette\nqui semble classique, se cache un\nm\u00e9lange audacieux\net plein de surprises\u2026 Un mariage subtil de\nsaveurs inattendues\nqui fera toute la diff\u00e9rence. Alors, pr\u00eat \u00e0 d\u00e9couvrir le\nsecret de cette vinaigrette\n? Tout est dans la touche finale !\nTable des mati\u00e8res\n1\nLe poireau vinaigrette : la recette de grand-m\u00e8re qui traverse le temps\n2\nTout est dans la vinaigrette : un m\u00e9lange magique de miso et de vinaigre de framboise\n3\nPoireaux vinaigrette framboise miso\n4\nLe miso : l\u2019ingr\u00e9dient cl\u00e9 pour \u00e9picer votre vinaigrette et boostez votre sant\u00e9 !\n5\nLe Poireau : un l\u00e9gume plein de bienfaits\nLe poireau vinaigrette : la recette de grand-m\u00e8re qui traverse le temps\nLe poireau vinaigrette, c\u2019est un peu le plat r\u00e9confortant des repas de famille.  Celui qui nous rappelle les dimanches apr\u00e8s-midi pass\u00e9s autour de la table, les rires et les saveurs simples de l\u2019enfance. Cette recette, h\u00e9rit\u00e9e de la cuisine traditionnelle fran\u00e7aise, remonte au XIXe si\u00e8cle, une \u00e9poque o\u00f9 les l\u00e9gumes frais de saison \u00e9taient les stars des plats du quotidien. Le poireau, tendre et d\u00e9licat, \u00e9tait souvent accompagn\u00e9 d\u2019une vinaigrette \u00e0 la moutarde, un assaisonnement basique mais d\u00e9licieux, qui faisait la joie des repas l\u00e9gers. Au fil du temps, cette entr\u00e9e est devenue un incontournable des repas de f\u00eate, appr\u00e9ci\u00e9e pour sa simplicit\u00e9 et sa fra\u00eecheur. Aujourd\u2019hui, le poireau se pr\u00eate aussi \u00e0 des variations cr\u00e9atives, on peut red\u00e9couvrir ce tr\u00e9sor culinaire sous un jour nouveau\u2026 et c\u2019est exactement ce que nous allons faire !\nVous aimez les classiques de la cuisine fran\u00e7aise revisit\u00e9s en version v\u00e9g\u00e9 ?\nD\u00e9couvrez nos recettes gourmandes et cr\u00e9atives :\npaupiettes v\u00e9g\u00e9tales aux morilles, l\u2019alternative parfaite pour un No\u00ebl sans viande\n,\nparmentier de pleurotes et de tomme de Savoie\n, et\n\u0152ufs cocotte en courgette\n. \u00c0 tester sans attendre !\nTout est dans la vinaigrette : un m\u00e9lange magique de miso et de vinaigre de framboise\nAh, la vinaigrette ! C\u2019est elle qui fait toute la diff\u00e9rence, celle qui sublime le poireau et qui transforme une recette classique en un vrai coup de c\u0153ur. Et l\u00e0, attention, on ne parle pas de n\u2019importe quelle vinaigrette ! Non, non, cette fois-ci, on met le paquet avec une touche de miso et un vinaigre de framboise\u2026 mais pas n\u2019importe lequel ! Beaucoup de marques se disent \u00ab vinaigre de framboise \u00bb alors qu\u2019en r\u00e9alit\u00e9, c\u2019est souvent du vinaigre de vin avec un ar\u00f4me de framboise. Ne vous faites pas avoir ! Le vrai vinaigre de framboise, avec son go\u00fbt acidul\u00e9 et fruit\u00e9, est mille fois plus intense et d\u00e9licieux. Une fois que vous aurez go\u00fbt\u00e9 \u00e0 la vraie version, vous ne reviendrez plus jamais en arri\u00e8re. Alors, pr\u00eat.e \u00e0 relever le d\u00e9fi de la vinaigrette qui d\u00e9chire ?\nEnvie d\u2019ajouter un peu de peps \u00e0 vos plats ? D\u00e9couvrez notre\nTop de Vinaigrettes Originales\net sublimez vos recettes avec des m\u00e9langes surprenants qui feront toute la diff\u00e9rence !\nPoireaux vinaigrette framboise miso\n4.52\n/5 avec\n49\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n3\npetits poireaux\n1\n\u00e9chalote\nPour la vinaigrette\n3\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de vinaigre de framboise\n1\nc\u00e0s de levure malt\u00e9e\n\u00bd\nc\u00e0s de moutarde \u00e0 grains\n\u00bd\nc\u00e0s de p\u00e2te de miso blanc\n1\nc\u00e0c de s\u00e9same\nInstructions\n\u00d4tez le vert du poireau et r\u00e9server pour une autre recette.\nRincez les poireaux.\nCoupez la partie blanche en tron\u00e7ons \u00e9gaux.\nFaites les cuire \u00e0 la vapeur une quinzaine de minutes.\nPendant ce temps, \u00e9mincez finement l\u2019\u00e9chalote.\nM\u00e9langez les ingr\u00e9dients de la vinaigrette.\nCoupez les poireaux en deux dans la longueur pour qu\u2019ils se gorgent mieux de vinaigrette.\nVersez la vinaigrette par-dessus, puis les \u00e9chalotes cisel\u00e9es.\nMangez ti\u00e8de ou froid.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLe miso : l\u2019ingr\u00e9dient cl\u00e9 pour \u00e9picer votre vinaigrette et boostez votre sant\u00e9 !\nLe miso, c\u2019est un peu l\u2019ingr\u00e9dient secret qui fait tout le travail dans cette vinaigrette. D\u2019un go\u00fbt umami profond, \u00e0 la fois sal\u00e9, riche et l\u00e9g\u00e8rement sucr\u00e9, il apporte une dimension incroyable \u00e0 vos plats. Ce condiment traditionnel japonais, fait \u00e0 base de soja ferment\u00e9, n\u2019est pas seulement savoureux, il est aussi super b\u00e9n\u00e9fique pour la sant\u00e9 ! Il regorge de probiotiques gr\u00e2ce \u00e0 sa fermentation, ce qui est excellent pour votre flore intestinale et votre digestion. Et le mieux, c\u2019est qu\u2019en le consommant cru, vous pr\u00e9servez tous ses bienfaits. Un vrai petit boost pour votre bien-\u00eatre tout en r\u00e9galant vos papilles ! Envie de d\u00e9couvrir l\u2019effet \u00ab\u00a0wow\u00a0\u00bb du miso dans votre vinaigrette ?\nVous aimez le Miso ? D\u00e9couvrez encore plus de recettes savoureuses \u00e0 base de miso :\nCr\u00e8me de haricots blancs au miso\n,\nAubergines r\u00f4ties au miso et gingembre, vegan et sans gluten\n, et\nNouilles express sauce miso-cacahu\u00e8te\n. \u00c0 vos papilles !\nLe Poireau : un l\u00e9gume plein de bienfaits\nLe poireau, bien plus qu\u2019un simple accompagnement, est un v\u00e9ritable concentr\u00e9 de bienfaits ! Riche en fibres, en vitamines et en antioxydants, il aide \u00e0 am\u00e9liorer la digestion, booste votre syst\u00e8me immunitaire et prend soin de votre c\u0153ur. Non seulement il est d\u00e9licieux, mais il est aussi super nourrissant. Que vous le d\u00e9gustiez dans une\ntarte tatin \u00e0 la ch\u00e8vre\n, une\nquiche poireaux, patate douce et ch\u00e8vre frais\n, ou encore en\nsamoussas poireaux-feta\n, ce l\u00e9gume se pr\u00eate \u00e0 toutes les envies. D\u00e9couvrez toutes nos recettes \u00e0 base de poireaux pour varier les plaisirs et faire le plein de saveurs\nici\n. \u00c0 vos fourneaux !\nVoil\u00e0, vous avez maintenant la recette d\u2019un poireaux vinaigrette framboise-miso qui va transformer vos repas en v\u00e9ritables moments de plaisir. Entre l\u2019acidit\u00e9 fruit\u00e9e du vinaigre et la profondeur du miso, chaque bouch\u00e9e est une surprise pour les papilles. Une version moderne d\u2019un grand classique, qui ravira vos invit\u00e9s ou \u00e9gayera vos repas de tous les jours. Alors, \u00e0 vos fourchettes, et laissez-vous surprendre par cette alliance de saveurs !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nNos recettes V\u00e9ganes\n,\nPoireau\n,\nRecettes Sal\u00e9es\nSoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis : La recette qui va r\u00e9veiller vos papilles !\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne : Une explosion d\u2019\u00e9pices et de saveurs !\n4.52 from 49 votes (\n49 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

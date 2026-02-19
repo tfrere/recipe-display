@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "title": "Tartiflette V\u00e9g\u00e9tarienne aux Champignons",
+    "description": "Une recette de tartiflette v\u00e9g\u00e9tarienne aux champignons, recr\u00e9ant le go\u00fbt de la tartiflette sans viande gr\u00e2ce aux champignons et \u00e0 un assaisonnement avec \u00e9pices, tamari et miso.",
+    "servings": 5,
+    "prepTime": "PT30M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "automne",
+      "hiver",
+      "champignon",
+      "pomme de terre",
+      "v\u00e9g\u00e9tarien",
+      "plat au four",
+      "tartiflette"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Tartiflettes-lardons-de-champignons-3-of-6.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'aime les utiliser en \"substitut\" de la viande. \u00c7a fonctionne parfaitement dans les gyros v\u00e9g\u00e9, ou les tacos v\u00e9g\u00e9. Alors pourquoi pas dans une tartiflette ?",
+      "Tout est dans l'assaisonnement en fait ! Des \u00e9pices, des herbes, un peu de sauce tamari et de miso blanc pour le go\u00fbt. Et franchement, c'est super bon !"
+    ],
+    "slug": "tartiflette-vegetarienne-aux-champignons",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Tartiflettes-lardons-de-champignons-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/09/29/tartiflette-vegetarienne-aux-champignons/",
+    "image": "images/tartiflette-vegetarienne-aux-champignons.webp",
+    "createdAt": "2026-02-09T20:35:45.875499",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 68.0,
+    "totalCookingTime": 13.0,
+    "nutritionPerServing": {
+      "calories": 426.5,
+      "protein": 20.3,
+      "fat": 24.8,
+      "carbs": 33.8,
+      "fiber": 4.1,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 10,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 800.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons de paris",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "petite branche",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "tamari",
+      "name": "sauce soja tamari",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "white_miso",
+      "name": "miso blanc",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me fra\u00eeche \u00e9paisse",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thick heavy cream"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade r\u00e2p\u00e9e",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "reblochon",
+      "name": "reblochon",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Reblochon cheese"
+    }
+  ],
+  "tools": [
+    "Po\u00eale (de pr\u00e9f\u00e9rence une po\u00eale Olav, selon l'auteur)",
+    "Cuiseur vapeur"
+  ],
+  "steps": [
+    {
+      "id": "steam_potatoes",
+      "action": "Faites cuire les pommes de terre avec leur peau \u00e0 la vapeur jusqu'\u00e0 ce qu'elles soient tendres, mais pas trop cuites.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "steamed_potatoes",
+      "requires": [],
+      "visualCue": "tendres, mais pas trop cuites"
+    },
+    {
+      "id": "prep_vegetables",
+      "action": "\u00c9pluchez et \u00e9mincez l'oignon. Nettoyez et coupez les champignons en fines lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "mushrooms"
+      ],
+      "produces": "prepped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faites chauffer l'huile d'olive dans la po\u00eale \u00e0 feu moyen-fort et mettez les oignons et les champignons \u00e0 revenir. Ajoutez l'origan, le romarin et le paprika fum\u00e9. Faites revenir.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil",
+        "prepped_vegetables",
+        "oregano",
+        "rosemary",
+        "smoked_paprika"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tamari",
+      "action": "Ajoutez la sauce soja et faites revenir encore.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "tamari"
+      ],
+      "produces": "vegetables_with_tamari",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_miso",
+      "action": "\u00c9teignez le feu. Ajoutez le miso et m\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetables_with_tamari",
+        "white_miso"
+      ],
+      "produces": "seasoned_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_potatoes",
+      "action": "Quand vos pommes de terre sont cuites, \u00e9pluchez-les et coupez-les en rondelles d'environ 1 cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_potatoes"
+      ],
+      "produces": "sliced_potatoes",
+      "requires": [],
+      "visualCue": "rondelles d'environ 1 cm"
+    },
+    {
+      "id": "mix_base",
+      "action": "Versez les pommes de terre dans la po\u00eale avec les champignons. Ajoutez la cr\u00e8me, la muscade, l'ail press\u00e9, le sel et le poivre et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_potatoes",
+        "seasoned_vegetables",
+        "cream",
+        "nutmeg",
+        "garlic",
+        "salt",
+        "pepper"
+      ],
+      "produces": "tartiflette_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_cheese",
+      "action": "Coupez le reblochon en 2 dans l'\u00e9paisseur, puis en morceaux. Posez-les sur la po\u00eale, cro\u00fbte vers le haut.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "reblochon"
+      ],
+      "produces": "cheese_topping",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartiflette_base",
+        "cheese_topping"
+      ],
+      "produces": "assembled_tartiflette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez \u00e0 mi-hauteur.",
+      "duration": "PT35M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_tartiflette"
+      ],
+      "produces": "baked_tartiflette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_tartiflette",
+  "originalText": "Tartiflette V\u00e9g\u00e9tarienne aux Champignons - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 septembre 2021\nTartiflette V\u00e9g\u00e9tarienne aux Champignons\nIl est temps de vous d\u00e9voiler ma recette de tartiflette v\u00e9g\u00e9tarienne aux champignons ! Oui, on est un peu t\u00f4t dans la saison. Mais en vrai, est-ce que c\u2019est important ?\nAvec cette recette, j\u2019avais vraiment envie de recr\u00e9er le go\u00fbt de la tartiflette, mais sans viande. Du coup, je me suis tourn\u00e9e vers l\u2019un de mes ingr\u00e9dients pr\u00e9f\u00e9r\u00e9s : j\u2019ai nomm\u00e9 les champignons.\nJ\u2019aime les utiliser en \u201csubstitut\u201d de la viande. \u00c7a fonctionne parfaitement dans\nles gyros v\u00e9g\u00e9\n, ou\nles tacos v\u00e9g\u00e9\n. Alors pourquoi pas dans une tartiflette ?\nTout est dans l\u2019assaisonnement en fait ! Des \u00e9pices, des herbes, un peu de sauce tamari et de miso blanc pour le go\u00fbt. Et franchement, c\u2019est super bon !\nJ\u2019ai d\u2019ailleurs profit\u00e9 de cette envie de tartiflette pour tester\nma nouvelle po\u00eale Olav\n. Vous connaissez ? S\u00fbrement pas encore ! C\u2019est une toute jeune marque d\u2019ustensiles de cuisine qui fait notamment des po\u00eales et des couteaux. J\u2019ai eu la chance de tester leur po\u00eale et je trouve que la qualit\u00e9 est clairement au rendez-vous ! En plus, ils renouvellent le rev\u00eatement ab\u00eem\u00e9 des po\u00eales. Et vous renvoient donc une po\u00eale quasi neuve ! Moins de d\u00e9chets, des po\u00eales qui durent plus longtemps!\u00a0 Tout ce qu\u2019on aime !\nJ\u2019esp\u00e8re que cette recette de Tartiflette V\u00e9g\u00e9tarienne aux Champignons vous plaira !\nTartiflette V\u00e9g\u00e9tarienne aux Champignons\nNatacha\n4.62\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n800\ng\nde pommes de terre \u00e0 chair ferme\n1\noignon jaune\nenv 150g\n200\ng\nde champignons de paris\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0c d\u2019origan\n1\npetite branche de romarin\n\u00bc\nc\u00e0c de paprika fum\u00e9\n2\nc\u00e0s de sauce soja tamari\n1\nc\u00e0s de miso blanc\n3\nc\u00e0s de cr\u00e8me fra\u00eeche \u00e9paisse\n1\npinc\u00e9e de noix de muscade r\u00e2p\u00e9e\n1\ngousse d\u2019ail press\u00e9e\nsel\npoivre\n300\ng\nde reblochon\nInstructions\nFaites cuire les pommes de terre avec leur peau \u00e0 la vapeur jusqu\u2019\u00e0 ce qu\u2019elles soient tendres, mais pas trop cuites. Entre 20 et 30min en fonction de la taille.\nPendant ce temps, \u00e9pluchez et \u00e9mincez l\u2019oignon. Nettoyez et coupez les champignons en fines lamelles.\nFaites chauffer l\u2019huile d\u2019olive dans la po\u00eale et mettez les oignons et les champignons \u00e0 revenir \u00e0 feu moyen-fort. Ajoutez l\u2019origan,  le romarin et le paprika fum\u00e9. Faites revenir 10min. Ajoutez la sauce soja et faites revenir encore 2-3min. \u00c9teignez le feu. Ajoutez le miso et m\u00e9langez bien.\nQuand vos pommes de terre sont cuites, \u00e9pluchez les et coupez les en rondelles d\u2019environ 1 cm.\nPr\u00e9chauffez le four \u00e0 190\u00b0C.\nVersez les dans la po\u00eale avec le champignons. Ajoutez la cr\u00e8me, la muscade, l\u2019ail press\u00e9, le sel et le poivre et m\u00e9langez.\nCoupez le reblochon en 2 dans l\u2019\u00e9paisseur, puis en morceaux. Posez-les sur la po\u00eale, cro\u00fbte vers le haut.\nEnfournez \u00e0 mi-hauteur pour 35-40min.\nC\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChampignon\n,\nHiver\n,\nPlats au Four\n,\nPomme de terre\nTags:\nrecette tartiflette sans viande\n,\nrecette tartiflette v\u00e9g\u00e9tarienne\n,\ntartiflette\n,\ntartiflette champignons\n,\ntartiflette sans lardon\n,\ntartiflette sans porc\n,\ntartiflette v\u00e9g\u00e9\n,\ntartiflette v\u00e9g\u00e9tarienne\n,\ntartiflette v\u00e9g\u00e9tarienne champignons\n,\nv\u00e9g\u00e9tarienne\nMoelleux Vapeur Z\u00e9br\u00e9 M\u00fbres Myrtilles (Vegan)\nRiz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien)\n12 thoughts on \u201cTartiflette V\u00e9g\u00e9tarienne aux Champignons\u201d\nChristelle\ndit\u00a0:\n29 septembre 2021 \u00e0 16 h 37 min\nBonjour,\nVive l\u2019arriv\u00e9e des mauvais jours et des plats qui r\u00e9confortent !! En plus de me plaire cette tartiflette me tente terriblement !!!!\nUne recette \u00e0 tester prochainement !!\nBonne fin de semaine !!\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n29 septembre 2021 \u00e0 18 h 00 min\nPas mal du tout cette tartiflette !\nchargement\u2026\nR\u00e9pondre\nsofi\ndit\u00a0:\n6 octobre 2021 \u00e0 14 h 42 min\nh\u00e9 voila ! tarfiflette au four !!!\ntrop hate de la gouter miamiam et demain soir gaufre au reblochon potimarron pour finir le reste de reblochon de 150g lol Si c\u2019est pas tip top \u00e7a ^^\nmerci pour ces magnifiques recettes que vous nous partagez !! \u00e7a m\u2019aide bcp pour essayer de convertir carnivore de 5 et 39ans \ud83d\ude09\nun jour peut \u00eatre j\u2019oserais la pelure de banane \ud83d\ude42\nSof\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n6 octobre 2021 \u00e0 20 h 39 min\nOhh merci pour ton doux commentaire !! coeur avec les doigts !\nchargement\u2026\nR\u00e9pondre\nMarine\ndit\u00a0:\n12 f\u00e9vrier 2022 \u00e0 13 h 49 min\nPiouuuu une tuerie! Les lardons ne manquent pas, loin de l\u00e0 (m\u00eame pour des non v\u00e9g\u00e9tariens)! Quelle onctuosit\u00e9 et quelle gourmandise\u2026 Je sens que la \u00ab\u00a0traditionnelle\u00a0\u00bb va \u00eatre relay\u00e9e au placard suite \u00e0 cette jolie d\u00e9couverte\u2026 Merci!\nchargement\u2026\nR\u00e9pondre\nJoel\ndit\u00a0:\n22 novembre 2022 \u00e0 9 h 31 min\nLa recette a l\u2019air tr\u00e8s bonne, par contre, en mettant la cro\u00fbte du fromage en bas, on a un bien meilleur r\u00e9sultat car en fondant, le fromage viendra recouvrir le tout, \u00e9vitant \u00e0 la cro\u00fbte de d\u00e9secher.\nchargement\u2026\nR\u00e9pondre\nDiana\ndit\u00a0:\n21 janvier 2023 \u00e0 20 h 04 min\nUn d\u00e9lice! Toute la famille a ador\u00e9! J\u2019ai juste doubl\u00e9 les champignons parce qu\u2019on adore \u00e7a, d\u2019ailleurs \u00e0 quand la foosobsession champignons ?!\nchargement\u2026\nR\u00e9pondre\nChris\ndit\u00a0:\n15 f\u00e9vrier 2023 \u00e0 16 h 55 min\nBonjour,\nJe n ai que de la sauce soja sal\u00e9e kikoman, cela fera t il l\u2019affaire? La dose est elle la m\u00eame ?\nJe n ai pas non plus trouv\u00e9 de miso blanc, mais j ai du miso liquide Hikari. La dose change t elle? Merci\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 15 h 00 min\nBonjour Chris, oui tu peux utiliser n\u2019importe quelle sauce soja sal\u00e9e. Je ne connais pas le miso liquide\u2026 mais j\u2019imagine que c\u2019est similaire\nchargement\u2026\nR\u00e9pondre\nCarole\ndit\u00a0:\n21 mars 2023 \u00e0 11 h 00 min\nRecette test\u00e9e et approuv\u00e9e par toute la famille, vraiment excellent !\nMerci pour ce partage \ud83d\ude0a\nchargement\u2026\nR\u00e9pondre\nMag\ndit\u00a0:\n1 mars 2024 \u00e0 9 h 00 min\nJ\u2019adore vos recettes et celle-ci m\u2019a vraiment bluff\u00e9e!  C\u2019etait vraiment tres bon! Seul b\u00e9mol: le reblochon n\u2019est pas vegetarien car il contient de la pr\u00e9sure animale\u2026. Il en va de m\u00eame pour toutes les recettes avec du comt\u00e9, parmesan\u2026.\nchargement\u2026\nR\u00e9pondre\nC\u00e9line\ndit\u00a0:\n5 octobre 2025 \u00e0 21 h 35 min\nTest\u00e9e et grandement approuv\u00e9e ! On s\u2019est r\u00e9gal\u00e9.e.s !\nchargement\u2026\nR\u00e9pondre\n4.62 from 57 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 13.0
+}

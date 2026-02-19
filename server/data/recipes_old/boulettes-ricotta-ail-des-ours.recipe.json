@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "title": "Boulettes Ricotta Ail des Ours",
+    "description": "Recette facile et rapide de boulettes moelleuses \u00e0 la ricotta et \u00e0 l'ail des ours, accompagn\u00e9es d'une sauce cr\u00e9meuse. Parfaite pour les beaux jours.",
+    "servings": 15,
+    "prepTime": "PT20M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "printemps",
+      "v\u00e9g\u00e9tarien",
+      "ail des ours",
+      "ricotta",
+      "boulettes",
+      "italien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/boulettes-ricotta-ail-des-ours.jpg",
+    "nationality": "Italian-inspired",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ajoutez une touche v\u00e9gane en rempla\u00e7ant le parmesan traditionnel par notre parmesan v\u00e9g\u00e9tal maison.",
+      "Ne vous laissez pas impressionner par la p\u00e2te qui peut sembler un peu collante au d\u00e9but. C'est normal ! L'astuce pour \u00e9viter le chaos : mouillez l\u00e9g\u00e8rement vos mains avant de fa\u00e7onner les boulettes.",
+      "Servir avec du parmesan fra\u00eechement r\u00e2p\u00e9 et une salade verte."
+    ],
+    "slug": "boulettes-ricotta-ail-des-ours",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/boulettes-ricotta-ail-des-ours.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/04/28/boulettes-ricotta-ail-des-ours/",
+    "image": "images/boulettes-ricotta-ail-des-ours.webp",
+    "createdAt": "2026-02-09T22:47:07.689466",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 41.0,
+    "totalCookingTime": 35.0,
+    "nutritionPerServing": {
+      "calories": 203.5,
+      "protein": 8.6,
+      "fat": 12.8,
+      "carbs": 13.5,
+      "fiber": 0.4,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "ail_des_ours_frais_boulettes",
+      "name": "ail des ours frais",
+      "quantity": 2.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": "belles poign\u00e9es",
+      "optional": false,
+      "name_en": "Wild garlic"
+    },
+    {
+      "id": "beurre_boulettes",
+      "name": "beurre",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "farine_t80",
+      "name": "farine T80",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "type 80 flour"
+    },
+    {
+      "id": "parmesan_rape_boulettes",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "basilic_frais",
+      "name": "basilic frais",
+      "quantity": 10.0,
+      "unit": "feuille",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Basil"
+    },
+    {
+      "id": "noix_de_muscade",
+      "name": "noix de muscade moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "ail_des_ours_frais_sauce",
+      "name": "ail des ours frais",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Wild garlic"
+    },
+    {
+      "id": "beurre_sauce",
+      "name": "beurre",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "creme_liquide",
+      "name": "cr\u00e8me liquide",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "parmesan_rape_sauce",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    }
+  ],
+  "tools": [
+    "Po\u00eale",
+    "Grand saladier"
+  ],
+  "steps": [
+    {
+      "id": "hacher_et_revenir_ail_des_ours",
+      "action": "Hacher l'ail des ours et le faire revenir quelques minutes dans une po\u00eale avec le beurre. R\u00e9server.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "ail_des_ours_frais_boulettes",
+        "beurre_boulettes"
+      ],
+      "produces": "ail_des_ours_revenu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_ingredients_secs",
+      "action": "Dans un grand saladier, m\u00e9langer la farine, le parmesan, la muscade, le sel et le poivre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "farine_t80",
+        "parmesan_rape_boulettes",
+        "noix_de_muscade",
+        "sel",
+        "poivre"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_ricotta_oeufs",
+      "action": "Ajouter la ricotta et les \u0153ufs et incorporer doucement avec une fourchette.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "melange_sec",
+        "ricotta",
+        "oeufs"
+      ],
+      "produces": "pate_base",
+      "requires": [],
+      "visualCue": "relativement homog\u00e8ne, tr\u00e8s collante"
+    },
+    {
+      "id": "ajouter_ail_basilic",
+      "action": "Quand la p\u00e2te est relativement homog\u00e8ne (elle reste tr\u00e8s collante, c'est normal), ajouter l'ail des ours revenu et les feuilles de basilic grossi\u00e8rement hach\u00e9es. Bien m\u00e9langer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "pate_base",
+        "ail_des_ours_revenu",
+        "basilic_frais"
+      ],
+      "produces": "pate_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_boulettes",
+      "action": "Mouiller vos mains, pr\u00e9lever une petite portion de p\u00e2te et la rouler entre vos mains pour former une boulette. R\u00e9p\u00e9ter pour toutes les boulettes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "pate_complete"
+      ],
+      "produces": "boulettes_crues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_boulettes_eau",
+      "action": "Porter un grand volume d'eau sal\u00e9e \u00e0 \u00e9bullition et y plonger les boulettes.",
+      "duration": "PT5M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes",
+      "uses": [
+        "boulettes_crues",
+        "sel"
+      ],
+      "produces": "boulettes_cuites",
+      "requires": [],
+      "visualCue": "boulettes remontent \u00e0 la surface"
+    },
+    {
+      "id": "revenir_ail_sauce",
+      "action": "Dans la m\u00eame po\u00eale, faire revenir le reste de l'ail des ours hach\u00e9s dans le beurre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "ail_des_ours_frais_sauce",
+        "beurre_sauce"
+      ],
+      "produces": "ail_des_ours_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduire_creme",
+      "action": "Ajouter la cr\u00e8me et laisser r\u00e9duire \u00e0 petits bouillons.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce",
+      "uses": [
+        "ail_des_ours_sauce",
+        "creme_liquide"
+      ],
+      "produces": "creme_reduite",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "ajouter_parmesan_sauce",
+      "action": "Ajouter le parmesan r\u00e2p\u00e9, saler et poivrer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "creme_reduite",
+        "parmesan_rape_sauce",
+        "sel",
+        "poivre"
+      ],
+      "produces": "sauce_cremeuse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enrober_boulettes",
+      "action": "D\u00e9poser les boulettes dans la sauce et m\u00e9langer pour les enrober.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "boulettes_cuites",
+        "sauce_cremeuse"
+      ],
+      "produces": "boulettes_ricotta_ail_des_ours",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "boulettes_ricotta_ail_des_ours",
+  "originalText": "Boulettes Ricotta Ail des Ours | Recette Facile, Rapide Et V\u00e9g\u00e9\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 avril 2025\nBoulettes Ricotta Ail des Ours : faciles, rapides et irr\u00e9sistibles !\nNous vous proposons aujourd\u2019hui une\nrecette facile\net\nrapide\n, parfaite pour les\nbeaux jours\n! Ces\nboulettes ricotta ail des ours\nsont tr\u00e8s\nsimples \u00e0 r\u00e9aliser\n, m\u00eame si vous\nd\u00e9butez en cuisine\n. C\u2019est une super fa\u00e7on de\nd\u00e9guster l\u2019ail des ours\n, cette plante appr\u00e9ci\u00e9e au\nprintemps\n. Les\nboulettes\nont une\ntexture\nmoelleuse\net vraiment\nagr\u00e9able en bouche\n. Nous, on les pr\u00e9pare en mode\nrecette express\nd\u00e8s qu\u2019on a un\nbouquet d\u2019ail des ours\nsous la main. Et on vous assure qu\u2019elles disparaissent plus vite qu\u2019elles ne cuisent !\nTable des mati\u00e8res\n1\nL\u2019ail des ours, notre chouchou du printemps !\n2\nLes ingr\u00e9dients secrets de ces boulettes : un m\u00e9lange subtil \u00e0 d\u00e9couvrir\n3\nBoulettes Ricotta Ail des Ours\n4\nVoici le secret pour des boulettes r\u00e9ussies \u00e0 tous les coups !\n5\nLa sauce : une touche cr\u00e9meuse et parfum\u00e9e\n6\nLa Ricotta : l\u2019ingr\u00e9dient cr\u00e9meux qui sublime nos recettes v\u00e9g\u00e9tariennes\nL\u2019ail des ours, notre chouchou du printemps !\nL\u2019ail des ours (avec son nom trop mignon) est une plante sauvage qui pousse au printemps, surtout dans les sous-bois humides. Ses feuilles vert tendre ont un go\u00fbt d\u2019ail doux, sans piquer, hyper agr\u00e9able en bouche. On le r\u00e9colte entre mars et mai, quand il est bien frais et bien parfum\u00e9. Et en plus d\u2019\u00eatre d\u00e9licieux, il est riche en vitamines et bon pour le syst\u00e8me immunitaire. Ces boulettes v\u00e9g\u00e9tariennes sont une vraie p\u00e9pite \u00e0 pr\u00e9parer en quelques minutes. Tout le monde aime son go\u00fbt frais et subtilement aill\u00e9, parfait pour les recettes v\u00e9g\u00e9tariennes. Mais soyons honn\u00eates : nous ne savons pas toujours comment le cuisiner autrement qu\u2019en pesto. Avec ces boulettes, nous avons trouv\u00e9 une super fa\u00e7on de d\u00e9guster l\u2019ail des ours, sans se compliquer la vie. La recette qu\u2019on va vous d\u00e9voiler est simple, rapide et pleine de bonnes vibes !\nLes ingr\u00e9dients secrets de ces boulettes : un m\u00e9lange subtil \u00e0 d\u00e9couvrir\nImaginez une belle poign\u00e9e d\u2019ail des ours frais, qui apporte toute sa fra\u00eecheur et son parfum. Ajoutez une touche de beurre fondant, et laissez-le se marier \u00e0 la farine pour une base parfaite. Puis, un peu de\nparmesan\nr\u00e2p\u00e9 pour ce petit go\u00fbt qui fait la diff\u00e9rence. La ricotta arrive pour adoucir le tout, suivi par des \u0153ufs qui lient le tout. Un soup\u00e7on de basilic frais pour la fra\u00eecheur, et une pinc\u00e9e de noix de muscade pour la douceur \u00e9pic\u00e9e. Enfin, sel et poivre, pour relever et \u00e9quilibrer l\u2019ensemble. Ces ingr\u00e9dients fusionnent pour donner naissance \u00e0 des boulettes irr\u00e9sistibles !\nAjoutez une touche v\u00e9gane en rempla\u00e7ant le parmesan traditionnel par notre\nparmesan v\u00e9g\u00e9tal maison\n.\nBoulettes Ricotta Ail des Ours\n4.45\n/5 avec\n118\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n15\nBoulettes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les boulettes\n2\nbelles poign\u00e9es d\u2019ail des ours frais\n15\ng\nde beurre\n200\ng\nde farine T80\n180\ng\nde parmesan r\u00e2p\u00e9\n200\ng\nde ricotta\n2\noeufs\n10\nfeuilles de basilic frais\n\u00bd\nc\u00e0c de noix de muscade moulue\nsel\npoivre\nPour la sauce\n1\npoign\u00e9e d\u2019ail des ours frais\n15\ng\nde beurre\n20\ncl\nde cr\u00e8me liquide\n50\ng\nde parmesan r\u00e2p\u00e9\nInstructions\nPour les boulettes\nHacher l\u2019ail des ours et le faire revenir quelques minutes dans une po\u00eale avec le beurre. R\u00e9server.\nDans un grand saladier, m\u00e9langer la farine, le parmesan, la muscade, le sel et le poivre. Ajouter la ricotta et les \u0153ufs et incorporer doucement avec une fourchette.\nQuand la p\u00e2te est relativement homog\u00e8ne (elle reste tr\u00e8s collante, c\u2019est normal), ajouter l\u2019ail des ours et les feuilles de basilic grossi\u00e8rement hach\u00e9es. Bien m\u00e9langer.\nPour former les boulettes, commencez par mouiller vos mains puis pr\u00e9lever une petite portion de p\u00e2te et la rouler entre vos mains pour former une boulette.\nR\u00e9server sur une assiette propre et former toutes les boulettes. Porter un grand volume d\u2019eau sal\u00e9e \u00e0 \u00e9bullition et y plonger les boulettes.\nElles remontent lorsqu\u2019elles sont cuites (environ 5-6min). Les \u00e9goutter et r\u00e9server.\nPour la sauce\nDans la m\u00eame po\u00eale, faire revenir le reste de l\u2019ail des ours hach\u00e9s dans le beurre.\nAjouter la cr\u00e8me et laisser r\u00e9duire \u00e0 petits bouillons 6-7min.\nAjouter le parmesan r\u00e2p\u00e9, saler et poivrer.\nD\u00e9poser les boulettes dans la sauce et m\u00e9langer.\nServir avec du parmesan fra\u00eechement r\u00e2p\u00e9 et une salade verte.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nVoici le secret pour des boulettes r\u00e9ussies \u00e0 tous les coups !\nNe vous laissez pas impressionner par la p\u00e2te qui peut sembler un peu collante au d\u00e9but. C\u2019est normal ! L\u2019astuce pour \u00e9viter le chaos : mouillez l\u00e9g\u00e8rement vos mains avant de fa\u00e7onner les boulettes. Comme \u00e7a, la p\u00e2te glisse comme par magie, sans coller, et vous obtenez des boules parfaites \u00e0 chaque fois. C\u2019est un jeu d\u2019enfant, vraiment ! Vous allez voir, vous allez en faire des \u00ab\u00a0boulettes\u00a0\u00bb comme des pros, sans m\u00eame vous en rendre compte. La consistance est \u00e0 la fois moelleuse et l\u00e9g\u00e8rement \u00e9lastique, un peu comme des gnocchis, mais en encore plus souple et gouteuse. Un v\u00e9ritable r\u00e9gal pour les papilles ! Et cerise sur le g\u00e2teau : ces boulettes ne sont pas juste faciles \u00e0 faire, elles sont aussi irr\u00e9sistibles \u00e0 manger !\nFan de boulettes v\u00e9g\u00e9tariennes ? D\u00e9couvrez nos autres recettes \u00e0 base de l\u00e9gumes, l\u00e9gumineuses et prot\u00e9ines v\u00e9g\u00e9tales qui vont r\u00e9galer vos papilles ! Si vous adorez les boulettes, ne manquez pas nos\nboulettes de ricotta et blettes\n, une recette l\u00e9g\u00e8re et pleine de saveurs. Vous \u00eates plut\u00f4t lentilles ? Essayez nos\nboulettes de lentilles et champignons \u00e0 la sauce tomate vegan\npour un repas complet. Et pour une touche plus originale, pourquoi ne pas tester nos\nbrochettes de boulettes aux prot\u00e9ines de soja textur\u00e9es\n? De quoi varier les plaisirs !\nLa sauce : une touche cr\u00e9meuse et parfum\u00e9e\nPour accompagner vos boulettes ricotta ail des ours, pr\u00e9parez une sauce simple mais irr\u00e9sistible. Faites fondre l\u2019ail des ours frais dans un peu de beurre, puis ajoutez de la cr\u00e8me liquide. Laissez mijoter pour que les saveurs se m\u00e9langent, puis incorporez du parmesan r\u00e2p\u00e9 pour une texture onctueuse. Cette sauce cr\u00e9meuse et parfum\u00e9e viendra enrober vos boulettes \u00e0 la perfection, apportant une touche gourmande \u00e0 ce plat v\u00e9g\u00e9tarien !\nLa Ricotta : l\u2019ingr\u00e9dient cr\u00e9meux qui sublime nos recettes v\u00e9g\u00e9tariennes\nLa ricotta, ce fromage frais d\u2019origine italienne, est un v\u00e9ritable alli\u00e9 dans les recettes v\u00e9g\u00e9tariennes. Son go\u00fbt doux et sa texture cr\u00e9meuse en font l\u2019ingr\u00e9dient parfait pour ajouter de la l\u00e9g\u00e8ret\u00e9 et du moelleux \u00e0 nos plats. Si vous aimez les recettes qui mettent en valeur ce fromage, vous allez adorer les\nlasagnes aux courgettes, ricotta et parmesan\n, une combinaison l\u00e9g\u00e8re, ou les\naubergines roul\u00e9es ricotta et \u00e9pinards\n, sans oublier la d\u00e9licieuse\ntarte soleil aux \u00e9pinards et ricotta\n. \u00c0 chaque fois, la ricotta fait toute la diff\u00e9rence, apportant une touche cr\u00e9meuse et d\u00e9licate qui sublime toutes nos cr\u00e9ations !\nLes boulettes ricotta ail des ours sont d\u00e9finitivement notre recette f\u00e9tiche, \u00e0 refaire encore et encore. Moelleuses et ultra faciles \u00e0 pr\u00e9parer, elles trouvent toujours leur place \u00e0 notre table. Chaque bouch\u00e9e est un v\u00e9ritable r\u00e9gal, et la simplicit\u00e9 de la recette fait qu\u2019on n\u2019h\u00e9site jamais \u00e0 la ressortir. Une fois que vous les aurez test\u00e9es, vous aussi, vous ne pourrez plus vous en passer !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nBrunch Sal\u00e9\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Par Saison\nTatin de carottes au miel, balsamique et burrata facile et fraiche\nSteaks de chou-fleur au miso : recette rapide\n4.45 from 118 votes (\n118 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 35.0
+}

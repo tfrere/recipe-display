@@ -1,18 +1,149 @@
 """
-Recipe enricher module to add diet and seasonal information to recipes.
+Recipe enricher module to add diet, seasonal, and nutritional information to recipes.
+
+Enrichment pipeline:
+1. Diet classification (vegan, vegetarian, omnivorous, pescatarian)
+2. Seasonal availability based on produce ingredients
+3. Total time and active cooking time calculation
+4. Nutritional profile via OpenNutrition embeddings (async)
+   - Ingredient name translation to English (local dict + LLM fallback)
+   - BGE-small embedding match against OpenNutrition index (zero false positives)
+   - Per-serving macro computation with liquid retention heuristics
+   - Qualitative nutrition tags
 """
 
 import json
 import logging
+import math
+import os
 from pathlib import Path
 from typing import Dict, Any, List, Tuple, Set, Optional
-import sys
-import os
-import argparse
-import glob
+from .observability import observe, langfuse_context
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# Liquid retention heuristics for nutrition calculation
+# ---------------------------------------------------------------------------
+# Keywords in English ingredient names that identify cooking liquids
+_LIQUID_KEYWORDS = {
+    # Broths / stocks
+    "broth", "stock", "bouillon", "fond",
+    # Cooking alcohol
+    "wine", "white wine", "red wine", "beer", "cognac", "brandy", "marsala",
+    "rum", "port", "sherry", "vermouth",
+    # Discarded cooking water
+    "pasta water", "blanching water", "cooking water",
+}
+
+# Cooking-alcohol keywords (subset of _LIQUID_KEYWORDS)
+_ALCOHOL_KEYWORDS = {
+    "wine", "white wine", "red wine", "beer", "cognac", "brandy", "marsala",
+    "rum", "port", "sherry", "vermouth",
+}
+
+# Discarded-liquid keywords (0% retention)
+_DISCARD_KEYWORDS = {
+    "pasta water", "blanching water", "cooking water",
+}
+
+# Soup-type recipe keywords (checked against recipe title, lowercased)
+_SOUP_KEYWORDS = {
+    "soupe", "soup", "velouté", "veloute", "potage", "bisque",
+    "minestrone", "bouillon", "consommé", "consomme", "chowder",
+    "gazpacho", "harira", "chorba",
+}
+
+# Frying-oil keywords — large quantities of oil for deep/shallow frying.
+# Only ~10-15% of frying oil is absorbed by food (USDA retention factors).
+_FRYING_OIL_KEYWORDS = {
+    "peanut oil", "vegetable oil", "canola oil", "sunflower oil",
+    "corn oil", "soybean oil", "frying oil", "neutral oil",
+}
+# Confit/rendering fat keywords — fat used as a cooking medium,
+# mostly discarded after cooking. ~20% retained on the food surface.
+_CONFIT_FAT_KEYWORDS = {
+    "duck fat", "goose fat", "lard", "schmaltz", "tallow",
+    "rendered fat", "bacon fat", "beef dripping",
+}
+# Minimum volume of oil (in ml) to be considered frying oil.
+# Below this, the oil is likely used for sautéing and fully consumed.
+_FRYING_OIL_THRESHOLD_ML = 400.0
+
+# Retention factors by liquid category
+_LIQUID_RETENTION_FACTORS = {
+    "discard": 0.0,       # Liquid is thrown away (pasta water)
+    "alcohol": 0.20,      # Most evaporates during cooking
+    "soup_broth": 0.80,   # Broth IS the dish in soups
+    "braising": 0.30,     # Broth partly consumed, partly evaporated
+    "frying_oil": 0.15,   # ~15% oil absorption (USDA retention factors)
+    "confit_fat": 0.20,   # ~20% fat retained on food surface after confit
+}
+
+# Minimum volume (in ml) to trigger liquid retention heuristic.
+# Small quantities (a splash of wine, 2 tbsp broth) are fully absorbed.
+_LIQUID_VOLUME_THRESHOLD_ML = 250.0
+
+
+def _is_soup_recipe(metadata: Dict[str, Any]) -> bool:
+    """
+    Detect whether a recipe is a soup/broth-based dish where
+    the liquid is the main component and is fully consumed.
+
+    Args:
+        metadata: Recipe metadata dict (with 'title', 'type', etc.)
+
+    Returns:
+        True if the recipe looks like a soup.
+    """
+    title = (metadata.get("title") or "").lower()
+    recipe_type = (metadata.get("type") or "").lower()
+    combined = f"{title} {recipe_type}"
+    return any(kw in combined for kw in _SOUP_KEYWORDS)
+
+
+def _classify_liquid(name_en: str, is_soup: bool) -> Optional[str]:
+    """
+    Classify a liquid ingredient into a retention category.
+
+    Args:
+        name_en: English ingredient name (lowered).
+        is_soup: Whether the recipe is a soup.
+
+    Returns:
+        One of 'discard', 'alcohol', 'soup_broth', 'braising', or None.
+    """
+    # Check multi-word keywords first (e.g. "pasta water")
+    for kw in _DISCARD_KEYWORDS:
+        if kw in name_en:
+            return "discard"
+
+    for kw in _ALCOHOL_KEYWORDS:
+        if kw in name_en:
+            return "alcohol"
+
+    # Check broth/stock keywords
+    broth_keywords = {"broth", "stock", "bouillon", "fond"}
+    for kw in broth_keywords:
+        if kw in name_en:
+            return "soup_broth" if is_soup else "braising"
+
+    # Check confit/rendering fat
+    for kw in _CONFIT_FAT_KEYWORDS:
+        if kw in name_en:
+            return "confit_fat"
+
+    # Check frying oil (large volumes of neutral oil)
+    for kw in _FRYING_OIL_KEYWORDS:
+        if kw in name_en:
+            return "frying_oil"
+    # Generic "oil" or "olive oil" with large volume → likely frying
+    if "oil" in name_en:
+        return "frying_oil"
+
+    return None
+
 
 # Configurer le logger pour afficher les informations dans la console en mode main
 def configure_logger():
@@ -23,60 +154,66 @@ def configure_logger():
     root_logger.addHandler(handler)
     root_logger.setLevel(logging.INFO)
 
-# Inclure directement les données saisonnières comme constante dans le code
-SEASONAL_DATA = {
-    "produce": {
-        "vegetables": [
-            {"name": "Asparagus", "peak_months": ["April", "May", "June"]},
-            {"name": "Broccoli", "peak_months": ["September", "October", "November"]},
-            {"name": "Cabbage", "peak_months": ["January", "February", "October", "November", "December"]},
-            {"name": "Carrot", "peak_months": ["January", "February", "March", "September", "October", "November", "December"]},
-            {"name": "Cauliflower", "peak_months": ["January", "March", "April", "September", "October", "November", "December"]},
-            {"name": "Celery", "peak_months": ["July", "August", "September", "October", "November"]},
-            {"name": "Corn", "peak_months": ["July", "August", "September"]},
-            {"name": "Cucumber", "peak_months": ["May", "June", "July", "August", "September"]},
-            {"name": "Eggplant", "peak_months": ["June", "July", "August", "September", "October"]},
-            {"name": "Garlic", "peak_months": ["July", "August", "September", "October"]},
-            {"name": "Kale", "peak_months": ["January", "February", "September", "October", "November", "December"]},
-            {"name": "Leek", "peak_months": ["January", "February", "March", "September", "October", "November", "December"]},
-            {"name": "Lettuce", "peak_months": ["April", "May", "June", "July", "August", "September", "October"]},
-            {"name": "Mushroom", "peak_months": ["January", "February", "March", "April", "May", "September", "October", "November", "December"]},
-            {"name": "Onion", "peak_months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]},
-            {"name": "Pea", "peak_months": ["April", "May", "June", "July"]},
-            {"name": "Pepper", "peak_months": ["June", "July", "August", "September", "October"]},
-            {"name": "Potato", "peak_months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]},
-            {"name": "Pumpkin", "peak_months": ["September", "October", "November", "December"]},
-            {"name": "Radish", "peak_months": ["April", "May", "June", "July", "August", "September", "October"]},
-            {"name": "Spinach", "peak_months": ["March", "April", "May", "June", "September", "October"]},
-            {"name": "Squash", "peak_months": ["August", "September", "October", "November", "December"]},
-            {"name": "Sweet Potato", "peak_months": ["September", "October", "November", "December"]},
-            {"name": "Tomato", "peak_months": ["June", "July", "August", "September"]},
-            {"name": "Turnip", "peak_months": ["January", "February", "October", "November", "December"]},
-            {"name": "Zucchini", "peak_months": ["June", "July", "August", "September"]}
-        ],
-        "fruits": [
-            {"name": "Apple", "peak_months": ["September", "October", "November"]},
-            {"name": "Avocado", "peak_months": ["January", "February", "March", "April", "May", "June", "July", "August"]},
-            {"name": "Banana", "peak_months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]},
-            {"name": "Berry", "peak_months": ["May", "June", "July", "August"]},
-            {"name": "Cherry", "peak_months": ["May", "June", "July"]},
-            {"name": "Grapefruit", "peak_months": ["January", "February", "March", "April", "November", "December"]},
-            {"name": "Grape", "peak_months": ["August", "September", "October"]},
-            {"name": "Lemon", "peak_months": ["January", "February", "March", "April", "May", "December"]},
-            {"name": "Lime", "peak_months": ["May", "June", "July", "August", "September", "October"]},
-            {"name": "Mango", "peak_months": ["May", "June", "July", "August", "September"]},
-            {"name": "Melon", "peak_months": ["June", "July", "August", "September"]},
-            {"name": "Orange", "peak_months": ["January", "February", "March", "April", "December"]},
-            {"name": "Peach", "peak_months": ["June", "July", "August", "September"]},
-            {"name": "Pear", "peak_months": ["August", "September", "October", "November"]},
-            {"name": "Pineapple", "peak_months": ["March", "April", "May", "June", "July"]},
-            {"name": "Plum", "peak_months": ["July", "August", "September"]},
-            {"name": "Raspberry", "peak_months": ["June", "July", "August", "September"]},
-            {"name": "Strawberry", "peak_months": ["April", "May", "June", "July"]},
-            {"name": "Watermelon", "peak_months": ["June", "July", "August", "September"]}
-        ]
-    }
-}
+# Seasonal produce data from ADEME Impact CO2 (Licence Ouverte 2.0)
+# Source: https://impactco2.fr/api/v1/fruitsetlegumes
+_SEASONAL_DATA_PATH = Path(__file__).parent / "data" / "seasonal_produce.json"
+
+def _load_seasonal_data() -> dict:
+    """Load seasonal produce data from JSON file."""
+    try:
+        with open(_SEASONAL_DATA_PATH) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logger.warning(f"Seasonal data file not found: {_SEASONAL_DATA_PATH}")
+        return {"produce": {"vegetables": [], "fruits": []}}
+
+SEASONAL_DATA = _load_seasonal_data()
+
+# Ingredients that are available year-round in stores (imported/stored) and should
+# NOT influence recipe seasonality, even though ADEME marks them with limited months.
+# ADEME data reflects local French production only (e.g. Lemon = Jan-Feb = Menton).
+# Loaded from the data file for easy maintenance; falls back to a hardcoded set.
+YEAR_ROUND_STAPLES: Set[str] = set(
+    SEASONAL_DATA.get("year_round_staples", [
+        "lemon", "lime", "garlic", "onion", "potato", "ginger",
+        "shallot", "sweet potato",
+    ])
+)
+
+
+def _build_seasonal_index(data: dict) -> Dict[str, dict]:
+    """
+    Build a normalized lookup index from SEASONAL_DATA.
+    
+    Returns a dict mapping normalized names (lowercase, singular) to their
+    seasonal item data. Handles plurals and common aliases automatically.
+    
+    Example: {"pear": {...}, "pears": {...}, "zucchini": {...}, "courgette": {...}}
+    """
+    import re
+    index: Dict[str, dict] = {}
+    
+    for produce_type in ["vegetables", "fruits"]:
+        for item in data.get("produce", {}).get(produce_type, []):
+            name = item["name"].lower()
+            index[name] = item
+            
+            # Add common plural forms
+            if name.endswith("y") and not name.endswith(("ay", "ey", "oy", "uy")):
+                index[name[:-1] + "ies"] = item  # cherry -> cherries, blackberry -> blackberries
+            elif name.endswith("o"):
+                index[name + "es"] = item  # tomato -> tomatoes, potato -> potatoes
+                index[name + "s"] = item   # also "tomatos" just in case
+            elif name.endswith(("s", "sh", "ch", "x", "z")):
+                index[name + "es"] = item  # watercress -> watercresses
+            else:
+                index[name + "s"] = item   # pear -> pears, carrot -> carrots
+    
+    return index
+
+
+# Pre-built index for fast O(1) lookups instead of O(n) substring scanning
+_SEASONAL_INDEX = _build_seasonal_index(SEASONAL_DATA)
 
 class RecipeEnricher:
     """
@@ -103,6 +240,67 @@ class RecipeEnricher:
             self._seasonal_data = SEASONAL_DATA
             logger.debug(f"Using embedded seasonal data with {len(self._seasonal_data.get('produce', {}).get('vegetables', []))} vegetables and {len(self._seasonal_data.get('produce', {}).get('fruits', []))} fruits")
 
+    def _parse_iso8601_duration(self, duration_str: str) -> float:
+        """
+        Parse ISO 8601 duration format (e.g., PT30M, PT1H30M, PT1H, PT45S).
+        
+        Args:
+            duration_str: ISO 8601 duration string starting with PT
+            
+        Returns:
+            Duration in minutes (float)
+        """
+        import re
+        
+        total_minutes = 0.0
+        duration_str = duration_str.upper()
+        
+        # Remove the PT prefix
+        if duration_str.startswith("PT"):
+            duration_str = duration_str[2:]
+        
+        # Parse hours
+        hours_match = re.search(r'(\d+(?:\.\d+)?)H', duration_str)
+        if hours_match:
+            total_minutes += float(hours_match.group(1)) * 60
+        
+        # Parse minutes
+        minutes_match = re.search(r'(\d+(?:\.\d+)?)M', duration_str)
+        if minutes_match:
+            total_minutes += float(minutes_match.group(1))
+        
+        # Parse seconds
+        seconds_match = re.search(r'(\d+(?:\.\d+)?)S', duration_str)
+        if seconds_match:
+            total_minutes += float(seconds_match.group(1)) / 60
+        
+        logger.debug(f"Parsed ISO 8601 duration '{duration_str}' to {total_minutes} minutes")
+        return total_minutes
+
+    @staticmethod
+    def _match_seasonal_item(ingredient_name: str) -> Optional[dict]:
+        """
+        Match an ingredient name against the seasonal index using n-gram lookup.
+        
+        Tries all contiguous sub-phrases by decreasing length for best precision:
+          "red bell pepper"   -> "red bell pepper", "red bell", "bell pepper", "red", "bell", "pepper"
+          "pomegranate seeds" -> "pomegranate seeds", "pomegranate", "seeds"
+          "strawberries"      -> direct lookup (plural pre-indexed)
+        
+        Returns the matched seasonal item dict, or None.
+        """
+        words = ingredient_name.lower().split()
+        n = len(words)
+        # Try sub-phrases from longest to shortest.
+        # At equal length, try from the END first since the head noun
+        # is usually last in English ("cherry tomatoes" -> "tomatoes").
+        for length in range(n, 0, -1):
+            for start in range(n - length, -1, -1):
+                candidate = " ".join(words[start:start + length])
+                if candidate in _SEASONAL_INDEX:
+                    return _SEASONAL_INDEX[candidate]
+        return None
+
     def _determine_seasons_from_months(self, months: Set[str]) -> List[str]:
         """Convert months to seasons."""
         seasons = set()
@@ -119,117 +317,213 @@ class RecipeEnricher:
         
         return list(seasons) if seasons else ["all"]
 
-    def _calculate_total_time(self, recipe_data: Dict[str, Any]) -> float:
+    # ── DAG-based time calculation ─────────────────────────────────────
+
+    def _calculate_times_from_dag(
+        self, recipe_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
         """
-        Calcule le temps total de préparation d'une recette en additionnant les durées de chaque étape.
-        
-        Args:
-            recipe_data: Les données de la recette à analyser
-            
-        Returns:
-            Le temps total en minutes (float)
+        Calculate recipe times using the critical path through the step DAG.
+
+        Instead of naively summing all step durations, we:
+        1. Build a dependency graph from uses/produces/requires relationships.
+        2. Parse each step's duration to minutes.
+        3. Compute the critical path (longest path through the DAG) to get
+           the real wall-clock time (totalTime).
+        4. Separate active vs passive time along that critical path.
+        5. Sum all active durations regardless of path (activeTime).
+
+        Returns a dict with ISO 8601 strings:
+            totalTime        – wall-clock time (critical path)
+            totalActiveTime  – sum of non-passive durations on critical path
+            totalPassiveTime – sum of passive durations on critical path
+        """
+        steps = recipe_data.get("steps", [])
+        recipe_title = recipe_data.get("metadata", {}).get("title", "?")
+
+        if not steps or not isinstance(steps, list):
+            logger.warning(f"No steps list found for '{recipe_title}', falling back to linear sum")
+            return self._calculate_times_linear_fallback(recipe_data)
+
+        # ── 1. Parse durations & build lookup ──────────────────────────
+        step_by_id: Dict[str, Dict] = {}
+        duration_min: Dict[str, float] = {}
+        is_passive: Dict[str, bool] = {}
+
+        # Minimum duration fallback for steps without an explicit duration.
+        # Prep/combine/cook steps always take *some* time; 5min is a conservative
+        # floor that prevents the critical path from collapsing to near-zero
+        # when the LLM forgets to estimate durations on prep steps.
+        _FALLBACK_DURATION_MIN = 5.0
+        # Equipment-only steps (preheat oven) get a shorter fallback
+        _EQUIPMENT_KEYWORDS = {"preheat", "préchauffer", "allumer", "préparer le four"}
+
+        for step in steps:
+            sid = step.get("id", "")
+            step_by_id[sid] = step
+            dur_str = step.get("duration") or step.get("time")
+            if dur_str:
+                duration_min[sid] = self._parse_time_to_minutes(dur_str)
+            else:
+                # Apply fallback: equipment steps get 0, others get 5min
+                action_lower = step.get("action", "").lower()
+                is_equipment = any(kw in action_lower for kw in _EQUIPMENT_KEYWORDS)
+                duration_min[sid] = 0.0 if is_equipment else _FALLBACK_DURATION_MIN
+            is_passive[sid] = bool(step.get("isPassive", False))
+
+        # ── 2. Build adjacency: predecessor → successors ───────────────
+        # A step S depends on:
+        #   - the step that `produces` any state listed in S.uses
+        #   - the step that `produces` any state listed in S.requires
+        # Additionally, steps are implicitly ordered: step[i] depends on step[i-1]
+        # if it hasn't already been linked via produces/uses.
+
+        # Map produced state → step id
+        state_producer: Dict[str, str] = {}
+        for step in steps:
+            prod = step.get("produces", "")
+            if prod:
+                state_producer[prod] = step["id"]
+
+        # Ingredients are implicit sources (no predecessor step)
+        ingredient_ids = {ing.get("id", "") for ing in recipe_data.get("ingredients", [])}
+
+        # Build predecessors for each step
+        predecessors: Dict[str, set] = {s["id"]: set() for s in steps}
+        for step in steps:
+            sid = step["id"]
+            refs = list(step.get("uses", [])) + list(step.get("requires", []))
+            for ref in refs:
+                if ref in ingredient_ids:
+                    continue  # ingredients have no predecessor step
+                if ref in state_producer:
+                    pred_id = state_producer[ref]
+                    if pred_id != sid:
+                        predecessors[sid].add(pred_id)
+
+        # ── 3. Critical path via dynamic programming ───────────────────
+        # earliest_finish[sid] = max(earliest_finish[pred] for pred in preds) + duration[sid]
+        # Process in topological order (steps list is already topologically sorted by design)
+
+        earliest_finish: Dict[str, float] = {}
+        # Track the critical predecessor for path reconstruction
+        critical_pred: Dict[str, Optional[str]] = {}
+
+        for step in steps:
+            sid = step["id"]
+            # Find the latest finishing predecessor
+            max_pred_finish = 0.0
+            best_pred = None
+            for pred in predecessors[sid]:
+                pf = earliest_finish.get(pred, 0.0)
+                if pf > max_pred_finish:
+                    max_pred_finish = pf
+                    best_pred = pred
+
+            earliest_finish[sid] = max_pred_finish + duration_min[sid]
+            critical_pred[sid] = best_pred
+
+        # ── 4. Find the critical path end ──────────────────────────────
+        final_state = recipe_data.get("finalState", "")
+        if final_state and final_state in state_producer:
+            critical_end = state_producer[final_state]
+        else:
+            # Fallback: step with largest earliest_finish
+            critical_end = max(earliest_finish, key=earliest_finish.get) if earliest_finish else None
+
+        total_time_min = earliest_finish.get(critical_end, 0.0) if critical_end else 0.0
+
+        # ── 5. Walk back the critical path for active/passive split ────
+        critical_path_active = 0.0
+        critical_path_passive = 0.0
+        path_ids = []
+
+        current = critical_end
+        while current:
+            path_ids.append(current)
+            dur = duration_min.get(current, 0.0)
+            if is_passive.get(current, False):
+                critical_path_passive += dur
+            else:
+                critical_path_active += dur
+            current = critical_pred.get(current)
+
+        path_ids.reverse()
+
+        # ── 6. Log the result ──────────────────────────────────────────
+        # Also compute linear sum for comparison
+        linear_total = sum(duration_min.values())
+        linear_active = sum(d for sid, d in duration_min.items() if not is_passive.get(sid, False))
+
+        logger.info(
+            f"[{recipe_title}] DAG critical path: {total_time_min:.0f}min "
+            f"(active={critical_path_active:.0f}min + passive={critical_path_passive:.0f}min) | "
+            f"Linear sum would be: {linear_total:.0f}min | "
+            f"Path: {' → '.join(path_ids)}"
+        )
+
+        return {
+            "totalTime": self._minutes_to_iso8601(total_time_min),
+            "totalActiveTime": self._minutes_to_iso8601(critical_path_active),
+            "totalPassiveTime": self._minutes_to_iso8601(critical_path_passive),
+            # Keep float versions for backward compat / easy display
+            "totalTimeMinutes": round(total_time_min, 1),
+            "totalActiveTimeMinutes": round(critical_path_active, 1),
+            "totalPassiveTimeMinutes": round(critical_path_passive, 1),
+        }
+
+    def _minutes_to_iso8601(self, minutes: float) -> str:
+        """Convert minutes to ISO 8601 duration string (e.g. PT1H30M)."""
+        if minutes <= 0:
+            return "PT0M"
+        total_min = round(minutes)
+        hours = total_min // 60
+        mins = total_min % 60
+        if hours and mins:
+            return f"PT{hours}H{mins}M"
+        elif hours:
+            return f"PT{hours}H"
+        else:
+            return f"PT{mins}M"
+
+    def _calculate_times_linear_fallback(
+        self, recipe_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        Fallback for recipes without a proper DAG.
+        Simply sums all step durations linearly.
         """
         total_minutes = 0.0
-        recipe_title = recipe_data.get("metadata", {}).get("title", "Untitled recipe")
-        
-        # Vérifier si la recette a déjà un temps total défini et non nul
-        existing_time = recipe_data.get("metadata", {}).get("totalTime")
-        if existing_time and existing_time > 0:
-            logger.debug(f"Using existing total time for '{recipe_title}': {existing_time} minutes")
-            return existing_time
-        
-        # Cas 1: Les étapes sont directement dans la racine du document
-        if "steps" in recipe_data:
-            steps = recipe_data.get("steps", [])
-            logger.info(f"Found {len(steps)} steps directly in recipe '{recipe_title}'")
-            
-            # Si steps est une liste
-            if isinstance(steps, list):
-                for i, step in enumerate(steps):
-                    time_str = step.get("time")
-                    if time_str:
-                        minutes = self._parse_time_to_minutes(time_str)
-                        logger.debug(f"Step {i+1}: {time_str} = {minutes} minutes")
-                        total_minutes += minutes
-            # Si steps est un dictionnaire
-            else:
-                for step_id, step in steps.items():
-                    time_str = step.get("time")
-                    if time_str:
-                        minutes = self._parse_time_to_minutes(time_str)
-                        logger.debug(f"Step {step_id}: {time_str} = {minutes} minutes")
-                        total_minutes += minutes
-                        
-            logger.info(f"Calculated total time from direct steps for '{recipe_title}': {total_minutes} minutes")
-            return total_minutes
-        
-        # Cas 2: Les étapes sont dans des sous-recettes
-        sub_recipes = recipe_data.get("subRecipes", {})
-        
-        if not sub_recipes:
-            logger.warning(f"No steps or sub-recipes found in recipe '{recipe_title}'")
-            return total_minutes
-        
-        logger.debug(f"Found {len(sub_recipes)} sub-recipes in recipe '{recipe_title}'")
-        
-        # Si sub_recipes est une liste, adaptons notre code pour la traiter
-        if isinstance(sub_recipes, list):
-            for i, sub_recipe in enumerate(sub_recipes):
-                steps = sub_recipe.get("steps", [])
-                logger.debug(f"Sub-recipe {i+1} has {len(steps)} steps")
-                
-                if not steps:
-                    continue
-                
-                # Si steps est une liste
-                if isinstance(steps, list):
-                    for j, step in enumerate(steps):
-                        time_str = step.get("time")
-                        if time_str:
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.debug(f"Step {j+1}: {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                # Si steps est un dictionnaire
-                else:
-                    for step_id, step in steps.items():
-                        time_str = step.get("time")
-                        if time_str:
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.debug(f"Step {step_id}: {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-        # Si sub_recipes est un dictionnaire
-        else:
-            for sub_recipe_id, sub_recipe in sub_recipes.items():
-                steps = sub_recipe.get("steps", {})
-                logger.debug(f"Sub-recipe {sub_recipe_id} has {len(steps) if steps else 0} steps")
-                
-                if not steps:
-                    continue
-                    
-                # Si steps est une liste
-                if isinstance(steps, list):
-                    for j, step in enumerate(steps):
-                        time_str = step.get("time")
-                        if time_str:
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.debug(f"Step {j+1}: {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                # Si steps est un dictionnaire
-                else:
-                    for step_id, step in steps.items():
-                        time_str = step.get("time")
-                        if time_str:
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.debug(f"Step {step_id}: {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-        
-        logger.info(f"Calculated total time for recipe '{recipe_title}': {total_minutes} minutes")
-        return total_minutes
+        active_minutes = 0.0
+
+        steps = recipe_data.get("steps", [])
+        if isinstance(steps, list):
+            for step in steps:
+                time_str = step.get("duration") or step.get("time")
+                if time_str:
+                    mins = self._parse_time_to_minutes(time_str)
+                    total_minutes += mins
+                    is_pass = step.get("isPassive", False) or step.get("stepMode") == "passive"
+                    if not is_pass:
+                        active_minutes += mins
+
+        passive_minutes = total_minutes - active_minutes
+        return {
+            "totalTime": self._minutes_to_iso8601(total_minutes),
+            "totalActiveTime": self._minutes_to_iso8601(active_minutes),
+            "totalPassiveTime": self._minutes_to_iso8601(passive_minutes),
+            "totalTimeMinutes": round(total_minutes, 1),
+            "totalActiveTimeMinutes": round(active_minutes, 1),
+            "totalPassiveTimeMinutes": round(passive_minutes, 1),
+        }
         
     def _parse_time_to_minutes(self, time_str: str) -> float:
         """
-        Convertit une chaîne de temps (ex: "1h30min", "5min", "1hour", "30 minutes", "1 hour 15 minutes") en minutes.
-        Gère plusieurs formats de temps, y compris les formats complexes avec plusieurs unités.
+        Convertit une chaîne de temps en minutes.
+        
+        Supporte les formats:
+        - ISO 8601: "PT30M", "PT1H30M", "PT1H", "PT45S"
+        - Legacy: "1h30min", "5min", "1hour", "30 minutes"
         
         Args:
             time_str: La chaîne de temps à convertir
@@ -241,7 +535,15 @@ class RecipeEnricher:
             return 0.0
         
         # Convertir en chaîne et mettre en minuscules pour normaliser
-        time_str = str(time_str).lower().strip()
+        time_str = str(time_str).strip()
+        original_str = time_str
+        
+        # Check for ISO 8601 duration format (PT...)
+        if time_str.upper().startswith("PT"):
+            return self._parse_iso8601_duration(time_str)
+        
+        # Legacy format parsing
+        time_str = time_str.lower()
         logger.debug(f"Parsing time string: '{time_str}'")
             
         total_minutes = 0.0
@@ -359,143 +661,7 @@ class RecipeEnricher:
         logger.debug(f"Parsed time '{original_str}' to {total_minutes} minutes")
         return total_minutes
 
-    def _calculate_total_cooking_time(self, recipe_data: Dict[str, Any]) -> float:
-        """
-        Calcule le temps total de cuisson activetotalCookingTime d'une recette en additionnant 
-        les durées des étapes actives uniquement (où stepMode n'est pas 'passive').
-        
-        Args:
-            recipe_data: Les données de la recette à analyser
-            
-        Returns:
-            Le temps total de cuisson active en minutes (float)
-        """
-        total_minutes = 0.0
-        recipe_title = recipe_data.get("metadata", {}).get("title", "Untitled recipe")
-        
-        # Vérifier si la recette a déjà un temps de cuisson total défini et non nul
-        existing_cooking_time = recipe_data.get("metadata", {}).get("totalCookingTime")
-        if existing_cooking_time and existing_cooking_time > 0:
-            logger.info(f"Using existing total cooking time for '{recipe_title}': {existing_cooking_time} minutes")
-            return existing_cooking_time
-        
-        # Cas 1: Les étapes sont directement dans la racine du document
-        if "steps" in recipe_data:
-            steps = recipe_data.get("steps", [])
-            logger.info(f"Analyzing {len(steps)} steps for active cooking time in recipe '{recipe_title}'")
-            
-            # Si steps est une liste
-            if isinstance(steps, list):
-                for i, step in enumerate(steps):
-                    time_str = step.get("time")
-                    step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                    
-                    # Ne compter que les étapes actives
-                    if time_str and step_mode != "passive":
-                        minutes = self._parse_time_to_minutes(time_str)
-                        logger.info(f"Active step {i+1}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                        total_minutes += minutes
-                    elif time_str and step_mode == "passive":
-                        logger.info(f"Skipping passive step {i+1}: '{step.get('action', '')}' with time {time_str}")
-            # Si steps est un dictionnaire
-            else:
-                for step_id, step in steps.items():
-                    time_str = step.get("time")
-                    step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                    
-                    # Ne compter que les étapes actives
-                    if time_str and step_mode != "passive":
-                        minutes = self._parse_time_to_minutes(time_str)
-                        logger.info(f"Active step {step_id}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                        total_minutes += minutes
-                    elif time_str and step_mode == "passive":
-                        logger.info(f"Skipping passive step {step_id}: '{step.get('action', '')}' with time {time_str}")
-                        
-            logger.info(f"Calculated active cooking time from direct steps for '{recipe_title}': {total_minutes} minutes")
-            return total_minutes
-        
-        # Cas 2: Les étapes sont dans des sous-recettes
-        sub_recipes = recipe_data.get("subRecipes", {})
-        
-        if not sub_recipes:
-            logger.warning(f"No steps or sub-recipes found for active cooking time in recipe '{recipe_title}'")
-            return total_minutes
-        
-        logger.info(f"Found {len(sub_recipes)} sub-recipes for active cooking time in '{recipe_title}'")
-        
-        # Si sub_recipes est une liste
-        if isinstance(sub_recipes, list):
-            for i, sub_recipe in enumerate(sub_recipes):
-                steps = sub_recipe.get("steps", [])
-                logger.info(f"Sub-recipe {i+1} has {len(steps)} steps to analyze for active cooking time")
-                
-                if not steps:
-                    continue
-                
-                # Si steps est une liste
-                if isinstance(steps, list):
-                    for j, step in enumerate(steps):
-                        time_str = step.get("time")
-                        step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                        
-                        # Ne compter que les étapes actives
-                        if time_str and step_mode != "passive":
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.info(f"Active step {j+1}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                        elif time_str and step_mode == "passive":
-                            logger.info(f"Skipping passive step {j+1}: '{step.get('action', '')}' with time {time_str}")
-                # Si steps est un dictionnaire
-                else:
-                    for step_id, step in steps.items():
-                        time_str = step.get("time")
-                        step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                        
-                        # Ne compter que les étapes actives
-                        if time_str and step_mode != "passive":
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.info(f"Active step {step_id}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                        elif time_str and step_mode == "passive":
-                            logger.info(f"Skipping passive step {step_id}: '{step.get('action', '')}' with time {time_str}")
-        # Si sub_recipes est un dictionnaire
-        else:
-            for sub_recipe_id, sub_recipe in sub_recipes.items():
-                steps = sub_recipe.get("steps", {})
-                logger.info(f"Sub-recipe {sub_recipe_id} has {len(steps) if steps else 0} steps to analyze for active cooking time")
-                
-                if not steps:
-                    continue
-                    
-                # Si steps est une liste
-                if isinstance(steps, list):
-                    for j, step in enumerate(steps):
-                        time_str = step.get("time")
-                        step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                        
-                        # Ne compter que les étapes actives
-                        if time_str and step_mode != "passive":
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.info(f"Active step {j+1}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                        elif time_str and step_mode == "passive":
-                            logger.info(f"Skipping passive step {j+1}: '{step.get('action', '')}' with time {time_str}")
-                # Si steps est un dictionnaire
-                else:
-                    for step_id, step in steps.items():
-                        time_str = step.get("time")
-                        step_mode = step.get("stepMode", "active")  # Par défaut, on considère les étapes comme actives
-                        
-                        # Ne compter que les étapes actives
-                        if time_str and step_mode != "passive":
-                            minutes = self._parse_time_to_minutes(time_str)
-                            logger.info(f"Active step {step_id}: '{step.get('action', '')}' with time {time_str} = {minutes} minutes")
-                            total_minutes += minutes
-                        elif time_str and step_mode == "passive":
-                            logger.info(f"Skipping passive step {step_id}: '{step.get('action', '')}' with time {time_str}")
-        
-        logger.info(f"Calculated active cooking time for recipe '{recipe_title}': {total_minutes} minutes")
-        return total_minutes
+    # _calculate_total_cooking_time removed — replaced by _calculate_times_from_dag above
 
     def _determine_seasons(self, recipe_json: Dict[str, Any]) -> Tuple[List[str], List[str]]:
         """
@@ -527,40 +693,48 @@ class RecipeEnricher:
         
         # First, identify all produce ingredients and their seasons
         for ingredient in ingredients:
-            name = ingredient.get("name", "").lower()
+            # Prefer English name (name_en) for matching against SEASONAL_DATA
+            name_en = ingredient.get("name_en", "").lower()
+            name_fr = ingredient.get("name", "").lower()
+            name = name_en if name_en else name_fr
+            display_name = f"{name_fr} ({name_en})" if name_en and name_en != name_fr else name_fr
             category = ingredient.get("category", "").lower()
             
             # Skip if not a produce ingredient
             if not name or category != "produce":
                 continue
                 
-            # Look for matching produce in our seasonal data
-            found_match = False
+            # Look up ingredient in the seasonal index
+            # Strategy: try longest n-gram first (e.g. "green bell pepper")
+            # then shorter ones ("bell pepper", "pepper") for best match.
+            item = self._match_seasonal_item(name)
             
-            if self._seasonal_data and "produce" in self._seasonal_data:
-                for produce_type in ["vegetables", "fruits"]:
-                    for item in self._seasonal_data["produce"].get(produce_type, []):
-                        item_name = item["name"].lower()
-                        
-                        # Check if ingredient matches this produce item
-                        if name in item_name or item_name in name:
-                            # Get the peak months for this ingredient
-                            peak_months = set(item.get("peak_months", []))
-                            
-                            if peak_months:
-                                # Calculate the seasons for this ingredient
-                                seasons = set(self._determine_seasons_from_months(peak_months))
-                                
-                                # Store the info
-                                matched_ingredients.append(name)
-                                ingredient_seasons[name] = seasons
-                                all_peak_months.update(peak_months)
-                                found_match = True
-                                logger.debug(f"Matched ingredient '{name}' with seasonal item '{item_name}', seasons: {seasons}")
-                                break
-                    
-                    if found_match:
-                        break
+            if item is None:
+                continue
+            
+            item_name = item["name"].lower()
+            
+            # Skip year-round staples (available via import/storage)
+            if item_name in YEAR_ROUND_STAPLES:
+                logger.debug(f"Skipping year-round staple '{display_name}' ({item_name})")
+                continue
+            
+            peak_months = set(item.get("peak_months", []))
+            if not peak_months:
+                continue
+            
+            # Skip year-round ingredients (12 months)
+            if len(peak_months) >= 12:
+                logger.debug(f"Skipping year-round ingredient '{display_name}' ({item_name})")
+                continue
+            
+            # Calculate the seasons for this ingredient
+            seasons = set(self._determine_seasons_from_months(peak_months))
+            
+            matched_ingredients.append(display_name)
+            ingredient_seasons[display_name] = seasons
+            all_peak_months.update(peak_months)
+            logger.debug(f"Matched '{display_name}' -> '{item_name}', seasons: {seasons}")
         
         # If no ingredients were matched, return "all" seasons
         if not matched_ingredients:
@@ -577,110 +751,269 @@ class RecipeEnricher:
             else:
                 common_seasons = common_seasons.intersection(seasons)
                 
-        # If no common seasons (empty intersection), use the most restrictive season
+        # If no common seasons (empty intersection), use majority vote.
+        # Each ingredient "votes" for its seasons; we keep seasons that appear
+        # in at least half of the matched ingredients. This avoids a single
+        # off-season ingredient overriding five in-season ones.
         if not common_seasons:
-            logger.debug("No common seasons found across all ingredients, using most restrictive")
-            # Default to most restrictive (smallest set of seasons)
-            smallest_set_size = float('inf')
-            most_restrictive_seasons = set()
-            most_restrictive_ingredient = ""
-            
+            logger.debug("No common seasons found across all ingredients, using majority vote")
+            season_votes: Dict[str, int] = {}
             for name, seasons in ingredient_seasons.items():
-                if len(seasons) < smallest_set_size:
-                    smallest_set_size = len(seasons)
-                    most_restrictive_seasons = seasons
-                    most_restrictive_ingredient = name
-                    
-            common_seasons = most_restrictive_seasons
-            logger.info(f"Using most restrictive seasons from '{most_restrictive_ingredient}': {common_seasons}")
+                for s in seasons:
+                    season_votes[s] = season_votes.get(s, 0) + 1
+            
+            threshold = len(ingredient_seasons) / 2
+            common_seasons = {s for s, count in season_votes.items() if count >= threshold}
+            
+            # If still empty (very unlikely), fall back to all votes
+            if not common_seasons:
+                common_seasons = set(season_votes.keys())
+            
+            logger.info(
+                f"Majority vote results (threshold={threshold:.1f}): "
+                f"{', '.join(f'{s}={c}' for s, c in sorted(season_votes.items()))} "
+                f"-> selected: {common_seasons}"
+            )
         else:
             logger.info(f"Found common seasons across all ingredients: {common_seasons}")
         
         # Convert back to list and sort
-        seasons_list = sorted(list(common_seasons)) if common_seasons else ["all"]
-        peak_months_list = sorted(list(all_peak_months))
+        # If all 4 seasons are covered, simplify to "all"
+        if common_seasons and len(common_seasons) >= 4:
+            seasons_list = ["all"]
+        else:
+            seasons_list = sorted(list(common_seasons)) if common_seasons else ["all"]
+            
+        # Filter peak months to keep only those matching the determined seasons
+        # This prevents having "all year" peak months when the recipe is seasonally constrained
+        final_peak_months = set()
+        month_to_season = {
+            "December": "winter", "January": "winter", "February": "winter",
+            "March": "spring", "April": "spring", "May": "spring",
+            "June": "summer", "July": "summer", "August": "summer",
+            "September": "autumn", "October": "autumn", "November": "autumn"
+        }
+        
+        for month in all_peak_months:
+            season = month_to_season.get(month)
+            if season and (season in common_seasons or "all" in seasons_list):
+                final_peak_months.add(month)
+                
+        peak_months_list = sorted(list(final_peak_months))
         
         return seasons_list, peak_months_list
 
+    # Curated diet classification lists (lazy-loaded)
+    _diet_lists: Optional[Dict[str, List[str]]] = None
+    _DIET_CLASSIFICATION_PATH = Path(__file__).parent / "data" / "diet_classification.json"
+
+    @classmethod
+    def _get_diet_lists(cls) -> Dict[str, List[str]]:
+        """Lazy-load the curated diet classification lists."""
+        if cls._diet_lists is None:
+            if cls._DIET_CLASSIFICATION_PATH.exists():
+                with open(cls._DIET_CLASSIFICATION_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                cls._diet_lists = {
+                    k: v for k, v in data.items() if not k.startswith("_")
+                }
+                logger.info(
+                    f"Loaded diet classification lists: "
+                    f"{', '.join(f'{k}({len(v)})' for k, v in cls._diet_lists.items())}"
+                )
+            else:
+                cls._diet_lists = {}
+                logger.warning("diet_classification.json not found, using category fallback only")
+        return cls._diet_lists
+
     def _determine_diets(self, recipe_json: Dict[str, Any]) -> List[str]:
         """
-        Determine the diets based on recipe ingredients categories.
-        
+        Determine the diets based on ingredient names (curated lists)
+        with LLM category as fallback.
+
+        Strategy:
+        1. Match each ingredient's name_en against curated word lists
+           (meat, seafood, dairy, egg, non_vegan_other)
+        2. Fall back to the LLM-assigned category field only when
+           no curated match is found
+        3. Optional ingredients do not exclude a diet (they are noted separately)
+
         Args:
             recipe_json: The recipe data to analyze
-            
+
         Returns:
-            A list of applicable diets
+            A list of applicable diets (most restrictive first)
         """
-        diets = []
+        import re as _re
+
+        diet_lists = self._get_diet_lists()
+
         has_meat = False
         has_seafood = False
         has_dairy = False
         has_egg = False
-        
-        # Get ingredients
+        has_non_vegan_other = False
+
         ingredients = recipe_json.get("ingredients", [])
-        
         logger.debug(f"Analyzing {len(ingredients)} ingredients for diet determination")
-        
-        # Check all ingredients
+
         meat_ingredients = []
         seafood_ingredients = []
         dairy_ingredients = []
         egg_ingredients = []
-        
+        non_vegan_ingredients = []
+
+        def _matches_list(name_lower: str, items: List[str]) -> bool:
+            """Check if name matches any item via word-boundary matching."""
+            for item in sorted(items, key=len, reverse=True):
+                if _re.search(rf'\b{_re.escape(item)}\b', name_lower):
+                    return True
+            return False
+
         for ingredient in ingredients:
-            name = ingredient.get("name", "").lower()
-            # Utiliser la catégorie de l'ingrédient plutôt que l'analyse par mots-clés
-            category = ingredient.get("category", "").lower()
-            
-            if not name:
+            name_en = (ingredient.get("name_en") or "").lower().strip()
+            name = (ingredient.get("name") or "").lower().strip()
+            category = (ingredient.get("category") or "").lower()
+            is_optional = ingredient.get("optional", False)
+
+            if not name_en and not name:
                 continue
-                
-            # Utilisation des catégories pour la classification
-            if category == "meat":
-                has_meat = True
-                meat_ingredients.append(name)
-                
-            elif category == "seafood":
-                has_seafood = True
-                seafood_ingredients.append(name)
-                
-            elif category == "dairy":
-                has_dairy = True
-                dairy_ingredients.append(name)
-                
-            elif category == "egg":
-                has_egg = True
-                egg_ingredients.append(name)
-        
-        # Log what was found
+
+            # Try curated lists first (name_en is preferred)
+            check_name = name_en or name
+            matched = False
+
+            if diet_lists.get("meat") and _matches_list(check_name, diet_lists["meat"]):
+                if not is_optional:
+                    has_meat = True
+                meat_ingredients.append(check_name)
+                matched = True
+            elif diet_lists.get("seafood") and _matches_list(check_name, diet_lists["seafood"]):
+                if not is_optional:
+                    has_seafood = True
+                seafood_ingredients.append(check_name)
+                matched = True
+            elif diet_lists.get("dairy") and _matches_list(check_name, diet_lists["dairy"]):
+                if not is_optional:
+                    has_dairy = True
+                dairy_ingredients.append(check_name)
+                matched = True
+            elif diet_lists.get("egg") and _matches_list(check_name, diet_lists["egg"]):
+                if not is_optional:
+                    has_egg = True
+                egg_ingredients.append(check_name)
+                matched = True
+            elif diet_lists.get("non_vegan_other") and _matches_list(check_name, diet_lists["non_vegan_other"]):
+                if not is_optional:
+                    has_non_vegan_other = True
+                non_vegan_ingredients.append(check_name)
+                matched = True
+
+            # Fallback: use LLM-assigned category if curated list didn't match
+            if not matched and category:
+                if category in ("meat", "poultry"):
+                    if not is_optional:
+                        has_meat = True
+                    meat_ingredients.append(f"{check_name} (category:{category})")
+                elif category == "seafood":
+                    if not is_optional:
+                        has_seafood = True
+                    seafood_ingredients.append(f"{check_name} (category:{category})")
+                elif category == "dairy":
+                    if not is_optional:
+                        has_dairy = True
+                    dairy_ingredients.append(f"{check_name} (category:{category})")
+                elif category == "egg":
+                    if not is_optional:
+                        has_egg = True
+                    egg_ingredients.append(f"{check_name} (category:{category})")
+
+        # Log findings
         if meat_ingredients:
-            logger.debug(f"Found meat ingredients: {', '.join(meat_ingredients)}")
+            logger.debug(f"Meat ingredients: {', '.join(meat_ingredients)}")
         if seafood_ingredients:
-            logger.debug(f"Found seafood ingredients: {', '.join(seafood_ingredients)}")
+            logger.debug(f"Seafood ingredients: {', '.join(seafood_ingredients)}")
         if dairy_ingredients:
-            logger.debug(f"Found dairy ingredients: {', '.join(dairy_ingredients)}")
+            logger.debug(f"Dairy ingredients: {', '.join(dairy_ingredients)}")
         if egg_ingredients:
-            logger.debug(f"Found egg ingredients: {', '.join(egg_ingredients)}")
-            
-        # Determine diets based on ingredients
+            logger.debug(f"Egg ingredients: {', '.join(egg_ingredients)}")
+        if non_vegan_ingredients:
+            logger.debug(f"Non-vegan other: {', '.join(non_vegan_ingredients)}")
+
+        # Determine diets
+        diets: List[str] = []
         if has_meat or has_seafood:
             diets = ["omnivorous"]
             logger.info("Recipe classified as: omnivorous")
-        elif has_dairy or has_egg:
+        elif has_dairy or has_egg or has_non_vegan_other:
             diets = ["vegetarian", "omnivorous"]
             logger.info("Recipe classified as: vegetarian (and omnivorous)")
         else:
             diets = ["vegan", "vegetarian", "omnivorous"]
             logger.info("Recipe classified as: vegan (and vegetarian, omnivorous)")
-            
-        # Add pescatarian if applicable
+
+        # Pescatarian: seafood but no meat
         if not has_meat and has_seafood:
             diets.append("pescatarian")
             logger.info("Recipe also classified as: pescatarian")
-            
+
         return diets
+
+    @staticmethod
+    def _sanitize_types(recipe_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Coerce fields to their expected types.
+
+        Fixes common LLM output issues:
+        - servings as string ("30 cl", "null", "Not specified") -> int
+        - ingredient quantity as string ("1 to 2", "12 à 16") -> float (midpoint)
+        """
+        import re as _re
+
+        metadata = recipe_data.get("metadata", {})
+
+        # ── Fix servings ─────────────────────────────────────────────
+        servings = metadata.get("servings")
+        if servings is not None and not isinstance(servings, (int, float)):
+            original = servings
+            # Try to extract a number from the string
+            match = _re.search(r"(\d+)", str(servings))
+            if match:
+                metadata["servings"] = int(match.group(1))
+            else:
+                metadata["servings"] = 1
+            logger.warning(
+                f"[Sanitize] servings coerced: {repr(original)} -> {metadata['servings']}"
+            )
+
+        # ── Fix ingredient quantities ────────────────────────────────
+        for ing in recipe_data.get("ingredients", []):
+            qty = ing.get("quantity")
+            if qty is not None and not isinstance(qty, (int, float)):
+                original = qty
+                qty_str = str(qty)
+                # Handle range strings: "1 to 2", "12 à 16", "1-2"
+                range_match = _re.search(
+                    r"(\d+(?:[.,]\d+)?)\s*(?:to|à|a|-)\s*(\d+(?:[.,]\d+)?)",
+                    qty_str,
+                )
+                if range_match:
+                    lo = float(range_match.group(1).replace(",", "."))
+                    hi = float(range_match.group(2).replace(",", "."))
+                    ing["quantity"] = round((lo + hi) / 2, 1)
+                else:
+                    # Try plain number extraction
+                    num_match = _re.search(r"(\d+(?:[.,]\d+)?)", qty_str)
+                    if num_match:
+                        ing["quantity"] = float(num_match.group(1).replace(",", "."))
+                    else:
+                        ing["quantity"] = None
+                logger.warning(
+                    f"[Sanitize] ingredient '{ing.get('name', '?')}' quantity coerced: "
+                    f"{repr(original)} -> {ing['quantity']}"
+                )
+
+        return recipe_data
 
     def enrich_recipe(self, recipe_data: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -698,25 +1031,69 @@ class RecipeEnricher:
         # Make a copy to avoid modifying the original
         enriched_recipe = recipe_data.copy()
         
-        # Determine diets
-        logger.debug("Determining applicable diets...")
-        diets = self._determine_diets(recipe_data)
-        logger.debug(f"Diet analysis complete: {', '.join(diets)}")
+        # Sanitize types before any processing
+        self._sanitize_types(enriched_recipe)
         
-        # Determine seasons
-        logger.debug("Determining seasonal availability...")
-        seasons, peak_months = self._determine_seasons(recipe_data)
-        logger.debug(f"Season analysis complete: {', '.join(seasons)}")
+        # ── Diets (independent) ──────────────────────────────────────────
+        diets: List[str] = []
+        try:
+            logger.debug("Determining applicable diets...")
+            diets = self._determine_diets(recipe_data)
+            logger.debug(f"Diet analysis complete: {', '.join(diets)}")
+        except Exception as exc:
+            logger.error(f"[Enrichment] Diet detection failed: {exc}", exc_info=True)
         
-        # Calculer le temps total
-        logger.debug("Calculating total recipe time...")
-        total_time = self._calculate_total_time(recipe_data)
-        logger.debug(f"Total time calculation complete: {total_time} minutes")
+        # ── Seasons (independent) ────────────────────────────────────────
+        seasons: List[str] = ["all"]
+        peak_months: List[int] = []
+        try:
+            logger.debug("Determining seasonal availability...")
+            seasons, peak_months = self._determine_seasons(recipe_data)
+            logger.debug(f"Season analysis complete: {', '.join(seasons)}")
+        except Exception as exc:
+            logger.error(f"[Enrichment] Season detection failed: {exc}", exc_info=True)
         
-        # Calculer le temps de cuisson actif
-        logger.debug("Calculating active cooking time...")
-        total_cooking_time = self._calculate_total_cooking_time(recipe_data)
-        logger.debug(f"Active cooking time calculation complete: {total_cooking_time} minutes")
+        # ── DAG times (independent) ──────────────────────────────────────
+        _EMPTY_TIMES = {
+            "totalTime": "PT0M", "totalActiveTime": "PT0M", "totalPassiveTime": "PT0M",
+            "totalTimeMinutes": 0.0, "totalActiveTimeMinutes": 0.0, "totalPassiveTimeMinutes": 0.0,
+        }
+        time_info = _EMPTY_TIMES.copy()
+        try:
+            logger.debug("Calculating times from step DAG (critical path)...")
+            time_info = self._calculate_times_from_dag(recipe_data)
+            logger.debug(
+                f"DAG time calculation complete: total={time_info['totalTime']} "
+                f"active={time_info['totalActiveTime']} passive={time_info['totalPassiveTime']}"
+            )
+
+            # Cross-check with schema.org times if available
+            schema_data = recipe_data.get("metadata", {}).get("_schema_data")
+            if schema_data:
+                schema_total = schema_data.get("totalTime")
+                if schema_total:
+                    schema_minutes = self._parse_time_to_minutes(schema_total)
+                    dag_minutes = time_info.get("totalTimeMinutes", 0)
+                    if schema_minutes > 0 and dag_minutes > 0:
+                        divergence = abs(dag_minutes - schema_minutes) / schema_minutes
+                        if divergence > 0.3:
+                            logger.warning(
+                                f"[Time divergence] DAG={dag_minutes:.0f}min vs "
+                                f"schema.org={schema_minutes:.0f}min ({divergence:.0%} off). "
+                                f"Using schema.org totalTime as ground truth."
+                            )
+                            time_info["totalTime"] = schema_total
+                            time_info["totalTimeMinutes"] = schema_minutes
+                # Also use schema.org prepTime/cookTime if they exist and DAG lacks detail
+                for schema_field, meta_field in [
+                    ("prepTime", "prepTime"),
+                    ("cookTime", "cookTime"),
+                ]:
+                    val = schema_data.get(schema_field)
+                    if val:
+                        enriched_recipe["metadata"][meta_field] = val
+        except Exception as exc:
+            logger.error(f"[Enrichment] DAG time calculation failed: {exc}", exc_info=True)
         
         # Add the enrichment data to the recipe metadata
         if "metadata" not in enriched_recipe:
@@ -738,12 +1115,648 @@ class RecipeEnricher:
             
         enriched_recipe["metadata"]["diets"] = diets
         enriched_recipe["metadata"]["seasons"] = seasons
-        enriched_recipe["metadata"]["totalTime"] = total_time
-        enriched_recipe["metadata"]["totalCookingTime"] = total_cooking_time
+        # DAG-computed times (ISO 8601)
+        enriched_recipe["metadata"]["totalTime"] = time_info["totalTime"]
+        enriched_recipe["metadata"]["totalActiveTime"] = time_info["totalActiveTime"]
+        enriched_recipe["metadata"]["totalPassiveTime"] = time_info["totalPassiveTime"]
+        # Convenience: float minutes for easy frontend display
+        enriched_recipe["metadata"]["totalTimeMinutes"] = time_info["totalTimeMinutes"]
+        enriched_recipe["metadata"]["totalActiveTimeMinutes"] = time_info["totalActiveTimeMinutes"]
+        enriched_recipe["metadata"]["totalPassiveTimeMinutes"] = time_info["totalPassiveTimeMinutes"]
+        # Remove legacy field if present
+        enriched_recipe["metadata"].pop("totalCookingTime", None)
         
-        logger.info(f"Recipe \"{recipe_title}\" enriched with: {', '.join(diets)} diets, {', '.join(seasons)} seasons, total time: {total_time} minutes, active cooking time: {total_cooking_time} minutes")
+        logger.info(
+            f"Recipe \"{recipe_title}\" enriched with: {', '.join(diets)} diets, "
+            f"{', '.join(seasons)} seasons, DAG times: {time_info['totalTime']} total "
+            f"({time_info['totalActiveTime']} active + {time_info['totalPassiveTime']} passive)"
+        )
         
-        return enriched_recipe 
+        return enriched_recipe
+
+    # ── LLM weight estimation fallback ─────────────────────────────────
+
+    _WEIGHT_CACHE_PATH = Path(__file__).parent / "data" / "weight_estimates_cache.json"
+
+    def _load_weight_cache(self) -> Dict[str, float]:
+        """Load the LLM weight-estimate cache from disk."""
+        if not hasattr(self, '_weight_cache'):
+            if self._WEIGHT_CACHE_PATH.exists():
+                try:
+                    with open(self._WEIGHT_CACHE_PATH) as f:
+                        data = json.load(f)
+                    self._weight_cache = {
+                        k: v for k, v in data.items() if not k.startswith("_")
+                    }
+                    logger.debug(f"Loaded {len(self._weight_cache)} weight estimates from cache")
+                except (json.JSONDecodeError, OSError):
+                    self._weight_cache = {}
+            else:
+                self._weight_cache = {}
+        return self._weight_cache
+
+    def _save_weight_cache(self) -> None:
+        """Persist weight-estimate cache to disk."""
+        cache = self._load_weight_cache()
+        data = {
+            "_meta": {
+                "description": "LLM-estimated weight per unit for ingredients (grams).",
+                "format": "cache_key → grams_per_unit. Key = 'unit|ingredient_en' or 'none|ingredient_en'.",
+            }
+        }
+        data.update(dict(sorted(cache.items())))
+        self._WEIGHT_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(self._WEIGHT_CACHE_PATH, "w") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+    @staticmethod
+    def _weight_cache_key(unit: Optional[str], name_en: str) -> str:
+        """
+        Build a normalized cache key for weight estimation.
+
+        Uses the canonical unit form (via NutritionMatcher._normalize_unit)
+        so that 'packets|yeast' and 'packet|yeast' resolve to the same key.
+        """
+        from .services.nutrition_matcher import NutritionMatcher
+
+        if unit:
+            normalized = NutritionMatcher._normalize_unit(unit)
+        else:
+            normalized = "none"
+        return f"{normalized}|{name_en.lower().strip()}"
+
+    async def _fill_missing_weights_llm(
+        self,
+        ingredients: List[Dict[str, Any]],
+        nutrition_data: Dict[str, Any],
+    ) -> None:
+        """
+        For ingredients where estimate_grams returns None, ask an LLM to
+        estimate the weight per unit and cache the result.
+
+        Mutates ingredient dicts in place: adds 'estimatedWeightGrams' field.
+        """
+        from .services.nutrition_matcher import NutritionMatcher
+
+        cache = self._load_weight_cache()
+        to_ask: List[Dict[str, Any]] = []  # ingredients needing LLM
+
+        for ing in ingredients:
+            name_en = ing.get("name_en", "")
+            if not name_en:
+                continue
+
+            key = name_en.strip().lower()
+            nut = nutrition_data.get(key)
+            if not nut or nut.get("not_found"):
+                continue  # no nutrition data anyway
+
+            qty = ing.get("quantity")
+            unit = ing.get("unit")
+            grams = NutritionMatcher.estimate_grams(qty, unit, name_en)
+            if grams is not None:
+                continue  # static lookup worked
+
+            if qty is None:
+                continue  # nothing to estimate
+
+            # Check cache
+            ck = self._weight_cache_key(unit, name_en)
+            if ck in cache:
+                ing["estimatedWeightGrams"] = qty * cache[ck]
+                logger.debug(f"Weight cache hit: '{ck}' → {cache[ck]}g/unit")
+                continue
+
+            to_ask.append(ing)
+
+        if not to_ask:
+            return
+
+        # Batch LLM call
+        logger.info(f"Estimating weights via LLM for {len(to_ask)} unresolved ingredients...")
+        lines = []
+        for ing in to_ask:
+            q = ing.get("quantity", 1)
+            u = ing.get("unit") or "piece"
+            n = ing.get("name_en", "")
+            lines.append(f"{q} {u} {n}")
+
+        estimates = await self._batch_estimate_weights_llm(lines)
+
+        for ing, est_grams in zip(to_ask, estimates):
+            if est_grams is None or est_grams <= 0:
+                continue
+            # Sanity bounds: no single ingredient exceeds 2kg in a typical recipe
+            if est_grams > 2_000:
+                logger.warning(
+                    f"LLM weight estimate {est_grams}g for "
+                    f"'{ing.get('name_en')}' exceeds 2kg — ignoring"
+                )
+                continue
+
+            qty = ing.get("quantity", 1) or 1  # guard against qty=0
+            unit = ing.get("unit")
+            name_en = ing.get("name_en", "")
+
+            per_unit = est_grams / qty
+            ck = self._weight_cache_key(unit, name_en)
+            cache[ck] = round(per_unit, 1)
+
+            ing["estimatedWeightGrams"] = round(est_grams, 1)
+            logger.info(f"LLM weight: '{ck}' → {per_unit:.1f}g/unit (total {est_grams:.1f}g)")
+
+        self._save_weight_cache()
+
+    def _get_weight_llm_client(self):
+        """Lazy-initialize and cache the OpenRouter client for weight estimation."""
+        if not hasattr(self, '_weight_llm_client') or self._weight_llm_client is None:
+            api_key = os.environ.get("OPENROUTER_API_KEY")
+            if not api_key:
+                return None
+            from openai import AsyncOpenAI
+            self._weight_llm_client = AsyncOpenAI(
+                api_key=api_key,
+                base_url="https://openrouter.ai/api/v1",
+                default_headers={
+                    "HTTP-Referer": "https://github.com/recipe-display",
+                    "X-Title": "Weight Estimator",
+                },
+            )
+        return self._weight_llm_client
+
+    async def _batch_estimate_weights_llm(self, lines: List[str]) -> List[Optional[float]]:
+        """
+        Ask an LLM to estimate total weight in grams for each ingredient line.
+
+        Args:
+            lines: e.g. ["1 handful basil leaves", "2 small cloves garlic"]
+
+        Returns:
+            List of estimated grams (same order), or None for failures.
+        """
+        import re as _re
+
+        client = self._get_weight_llm_client()
+        if client is None:
+            logger.warning("No OpenRouter API key — skipping LLM weight estimation")
+            return [None] * len(lines)
+
+        numbered = "\n".join(f"{i+1}. {line}" for i, line in enumerate(lines))
+        prompt = f"""Estimate the total weight in grams for each ingredient line.
+Reply with ONLY one number per line (the weight in grams), in the same order.
+Use common culinary knowledge. No units, no text, just the number.
+
+{numbered}"""
+
+        try:
+            response = await client.chat.completions.create(
+                model="deepseek/deepseek-v3.2",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are a culinary expert. Estimate ingredient weights "
+                            "in grams. Reply with one number per line, nothing else."
+                        ),
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                max_tokens=256,
+                temperature=0.0,
+                extra_body={
+                    "provider": {
+                        "sort": "throughput",
+                        "allow_fallbacks": True,
+                    }
+                },
+            )
+
+            result_text = response.choices[0].message.content or ""
+            result_lines = [l.strip() for l in result_text.strip().split("\n") if l.strip()]
+
+            estimates: List[Optional[float]] = []
+            for line in result_lines:
+                # Extract first number from line (handles "30g", "30 grams", "30", etc.)
+                m = _re.search(r"[\d.]+", line)
+                estimates.append(float(m.group()) if m else None)
+
+            # Pad to match input length
+            while len(estimates) < len(lines):
+                estimates.append(None)
+            return estimates[:len(lines)]
+
+        except Exception as e:
+            logger.error(f"LLM weight estimation failed: {e}")
+            return [None] * len(lines)
+
+    @observe(name="enrich_recipe")
+    async def enrich_recipe_async(self, recipe_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Enrich a recipe with ALL information including nutrition (async).
+        
+        This extends enrich_recipe() by adding:
+        - Ingredient translation (name_en)
+        - Nutritional profile per serving (via OpenNutrition embeddings)
+        - Nutrition tags (high-protein, low-calorie, etc.)
+        
+        Args:
+            recipe_data: The recipe data to enrich
+            
+        Returns:
+            The enriched recipe data with nutrition info
+        """
+        # First, run the synchronous enrichment (diets, seasons, time)
+        # Each sub-step is already isolated inside enrich_recipe().
+        enriched = self.enrich_recipe(recipe_data)
+        
+        recipe_title = enriched.get("metadata", {}).get("title", "Untitled recipe")
+
+        ingredients = enriched.get("ingredients", [])
+        if not ingredients:
+            logger.warning(f"No ingredients to enrich for \"{recipe_title}\"")
+            return enriched
+
+        # ── Translation + Nutrition (independent from diets/seasons/times) ──
+        try:
+            logger.info(f"Starting async nutrition enrichment for \"{recipe_title}\"")
+
+            from .services.ingredient_translator import IngredientTranslator
+            from .services.nutrition_matcher import NutritionMatcher
+
+            translator = IngredientTranslator()
+
+            if not hasattr(self, '_nutrition_matcher'):
+                self._nutrition_matcher = NutritionMatcher()
+            matcher = self._nutrition_matcher
+
+            # Step 1: Translate ingredient names to English
+            logger.info(f"Translating {len(ingredients)} ingredients to English...")
+            translated = await translator.translate_ingredients(ingredients)
+
+            for i, (ing, name_en) in enumerate(translated):
+                enriched["ingredients"][i]["name_en"] = name_en
+
+            # Step 1b + Step 2: Run seasons re-analysis and nutrition matching in parallel
+            names_en = [name_en for _, name_en in translated if name_en]
+
+            import asyncio as _aio
+
+            async def _seasons_task():
+                return self._determine_seasons(enriched)
+
+            async def _nutrition_task():
+                loop = _aio.get_running_loop()
+                return await loop.run_in_executor(None, matcher.match_batch, names_en)
+
+            logger.info(f"Running seasons + nutrition matching in parallel ({len(names_en)} ingredients)...")
+            (seasons_peak, nutrition_data) = await _aio.gather(
+                _seasons_task(),
+                _nutrition_task(),
+            )
+            seasons, peak_months = seasons_peak
+
+            enriched["metadata"]["seasons"] = seasons
+            if peak_months:
+                enriched["metadata"]["peakMonths"] = peak_months
+            logger.info(f"Season re-analysis with English names: {', '.join(seasons)}")
+
+            # Step 2b: LLM weight estimation for ingredients the static lookup can't resolve
+            await self._fill_missing_weights_llm(enriched["ingredients"], nutrition_data)
+
+            # Step 3: Compute per-serving nutrition profile
+            servings = enriched.get("metadata", {}).get("servings", 1)
+            metadata = enriched.get("metadata", {})
+            profile = self._compute_nutrition_profile(
+                enriched["ingredients"], nutrition_data, servings, metadata
+            )
+
+            nutrition_issues = profile.pop("issues", [])
+            enriched["metadata"]["nutritionPerServing"] = profile
+            if nutrition_issues:
+                enriched["metadata"]["nutritionIssues"] = nutrition_issues
+
+            # Step 4: Derive nutrition tags
+            tags = self._derive_nutrition_tags(profile)
+            enriched["metadata"]["nutritionTags"] = tags
+
+            # Step 5: Sanity-check servings vs calories
+            # Two tiers: moderate threshold (triggers only for small servings)
+            # and extreme threshold (triggers regardless of servings count).
+            cal_per_serving = profile.get("calories", 0)
+            current_servings = enriched["metadata"].get("servings", 1)
+            recipe_type = enriched.get("metadata", {}).get("recipeType", "")
+            kcal_threshold = 2000 if recipe_type == "main_course" else 1500
+            _EXTREME_THRESHOLD = 3000
+            _MAX_MULTIPLIER = 4
+
+            needs_fix = (
+                isinstance(current_servings, (int, float))
+                and (
+                    (current_servings <= 2 and cal_per_serving > kcal_threshold)
+                    or cal_per_serving > _EXTREME_THRESHOLD
+                )
+            )
+
+            if needs_fix:
+                raw_estimate = round(cal_per_serving * current_servings / 500)
+                estimated_servings = min(
+                    max(4, raw_estimate),
+                    current_servings * _MAX_MULTIPLIER,
+                )
+                logger.warning(
+                    f"[Servings auto-fix] '{recipe_title}': {cal_per_serving:.0f} kcal/serving "
+                    f"with servings={current_servings} is suspicious (threshold={kcal_threshold}). "
+                    f"Auto-correcting to {estimated_servings} servings."
+                )
+                enriched["metadata"]["servingsOriginal"] = current_servings
+                enriched["metadata"]["servingsSuspect"] = True
+                enriched["metadata"]["servings"] = estimated_servings
+
+                ratio = current_servings / estimated_servings
+                for macro in ("calories", "protein", "fat", "carbs", "fiber"):
+                    if macro in profile:
+                        profile[macro] = round(profile[macro] * ratio, 1)
+                enriched["metadata"]["nutritionPerServing"] = profile
+
+                tags = self._derive_nutrition_tags(profile)
+                enriched["metadata"]["nutritionTags"] = tags
+
+            logger.info(
+                f"Nutrition enrichment complete for \"{recipe_title}\": "
+                f"{profile.get('calories', 0)} kcal/serving, "
+                f"confidence={profile.get('confidence', 'unknown')}, "
+                f"tags={tags}"
+            )
+
+        except Exception as exc:
+            logger.error(
+                f"[Enrichment] Nutrition pipeline failed for \"{recipe_title}\": {exc}. "
+                f"Recipe will be saved without nutrition data.",
+                exc_info=True,
+            )
+
+        return enriched
+
+    def _compute_nutrition_profile(
+        self,
+        ingredients: List[Dict[str, Any]],
+        nutrition_data: Dict[str, Optional[Dict[str, Any]]],
+        servings: int,
+        metadata: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, Any]:
+        """
+        Compute per-serving nutritional profile from ingredient nutrition data.
+
+        Applies liquid-retention heuristics for cooking liquids (broth, wine, etc.)
+        when their volume exceeds _LIQUID_VOLUME_THRESHOLD_ML.
+
+        Args:
+            ingredients: List of ingredient dicts (with name_en).
+            nutrition_data: Dict mapping normalized name_en to USDA macros per 100g.
+            servings: Number of servings the recipe yields.
+            metadata: Recipe metadata (used to detect soup-type recipes).
+
+        Returns:
+            Nutrition profile dict with macros per serving + confidence.
+        """
+        from .services.nutrition_matcher import NutritionMatcher
+
+        # Ingredients with negligible nutritional contribution
+        # These are skipped from both lookup and counting
+        _ALWAYS_NEGLIGIBLE = {
+            # Salt
+            "salt", "table salt", "sea salt", "fleur de sel", "coarse salt",
+            # Pepper
+            "black pepper", "white pepper", "pepper", "peppercorns",
+            # Water / ice
+            "water", "ice", "ice water", "cold water", "hot water",
+            "mineral water", "sparkling water",
+            # Leavening agents
+            "baking soda", "baking powder",
+            # Dried spices (always <5 kcal per typical use)
+            "cinnamon", "nutmeg", "paprika", "cumin", "turmeric",
+            "cayenne pepper", "chili powder", "curry powder",
+            "cloves", "allspice", "cardamom", "coriander seeds",
+            "saffron", "star anise", "anise seeds",
+            "ras el hanout", "espelette pepper", "hot pepper",
+            # Misc negligible
+            "food coloring", "vanilla extract",
+            "vanilla paste", "vanilla bean", "vanilla sugar",
+        }
+
+        # Herbs: negligible in small amounts but significant in cups/bunches
+        _HERB_INGREDIENTS = {
+            "basil", "basil leaves", "fresh basil",
+            "parsley", "fresh parsley", "flat-leaf parsley",
+            "cilantro", "fresh cilantro", "coriander leaves",
+            "oregano", "fresh oregano",
+            "thyme", "fresh thyme", "fresh thyme sprigs",
+            "rosemary", "fresh rosemary",
+            "chives", "fresh chives",
+            "dill", "fresh dill",
+            "mint", "fresh mint", "peppermint",
+            "tarragon", "fresh tarragon",
+            "bay leaf", "fresh bay leaf", "bay leaves",
+            "sage", "fresh sage",
+            "marjoram", "fresh marjoram",
+        }
+
+        # Units that indicate small herb quantities (always negligible)
+        _SMALL_HERB_UNITS = {
+            "sprig", "sprigs", "leaf", "leaves", "pinch",
+            "dash", "tsp", "teaspoon", None,
+        }
+
+        def _is_negligible(key: str, ing: dict) -> bool:
+            if key in _ALWAYS_NEGLIGIBLE:
+                return True
+            if key in _HERB_INGREDIENTS:
+                unit = (ing.get("unit") or "").strip().lower()
+                normalized_unit = NutritionMatcher._normalize_unit(unit) if unit else None
+                if normalized_unit in _SMALL_HERB_UNITS or not unit:
+                    return True
+                # cup, bunch, tbsp = substantial herb → count it
+                return False
+            return False
+
+        total = {
+            "calories": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+        }
+        resolved_count = 0
+        matched_count = 0
+        total_count = 0
+        negligible_count = 0
+        liquid_retention_applied = False
+        issues: List[Dict[str, str]] = []
+
+        is_soup = _is_soup_recipe(metadata or {})
+
+        for ing in ingredients:
+            name_en = ing.get("name_en", "")
+            name_orig = ing.get("name", "")
+
+            if not name_en:
+                total_count += 1
+                issues.append({
+                    "ingredient": name_orig or "?",
+                    "issue": "no_translation",
+                    "detail": "Missing English name (name_en) — cannot look up nutrition",
+                })
+                continue
+
+            key = name_en.strip().lower()
+
+            if _is_negligible(key, ing):
+                negligible_count += 1
+                continue
+
+            total_count += 1
+
+            nut = nutrition_data.get(key)
+            if not nut or nut.get("not_found"):
+                issues.append({
+                    "ingredient": key,
+                    "issue": "no_match",
+                    "detail": "Not found in OpenNutrition index",
+                })
+                continue
+
+            matched_count += 1
+
+            grams = ing.get("estimatedWeightGrams")
+            if grams is None:
+                quantity = ing.get("quantity")
+                unit = ing.get("unit")
+                grams = NutritionMatcher.estimate_grams(quantity, unit, name_en)
+
+            if grams is None or grams <= 0:
+                reason = "no quantity" if ing.get("quantity") is None else "weight estimation failed"
+                issues.append({
+                    "ingredient": key,
+                    "issue": "no_weight",
+                    "detail": f"Matched in DB but {reason} — excluded from calorie total",
+                })
+                continue
+
+            # --- Liquid retention heuristic ---
+            retention = 1.0
+            liquid_category = _classify_liquid(key, is_soup)
+            if liquid_category is not None:
+                volume_ml = grams
+                threshold = (
+                    _FRYING_OIL_THRESHOLD_ML
+                    if liquid_category in ("frying_oil", "confit_fat")
+                    else _LIQUID_VOLUME_THRESHOLD_ML
+                )
+                if volume_ml > threshold:
+                    retention = _LIQUID_RETENTION_FACTORS.get(liquid_category, 1.0)
+                    liquid_retention_applied = True
+                    logger.info(
+                        f"Liquid retention: '{name_en}' ({volume_ml:.0f}ml) "
+                        f"→ category='{liquid_category}', factor={retention:.0%}"
+                        f"{' (soup detected)' if is_soup else ''}"
+                    )
+
+            factor = (grams / 100.0) * retention
+            total["calories"] += (nut.get("energy_kcal", 0) or 0) * factor
+            total["protein"] += (nut.get("protein_g", 0) or 0) * factor
+            total["fat"] += (nut.get("fat_g", 0) or 0) * factor
+            total["carbs"] += (nut.get("carbs_g", 0) or 0) * factor
+            total["fiber"] += (nut.get("fiber_g", 0) or 0) * factor
+
+            resolved_count += 1
+
+        # Divide by servings
+        if servings and servings > 0:
+            for key in total:
+                total[key] = round(total[key] / servings, 1)
+
+        # Determine confidence based on resolved (actually computed) ratio
+        # "high" = 90%+ resolved → reliable enough for meal planning
+        # "medium" = 50-89% → displayed but flagged
+        # "low" = <50% → unreliable, not used in meal planner
+        if total_count == 0:
+            confidence = "none"
+        elif resolved_count / total_count >= 0.9:
+            confidence = "high"
+        elif resolved_count / total_count >= 0.5:
+            confidence = "medium"
+        else:
+            confidence = "low"
+
+        result = {
+            **total,
+            "confidence": confidence,
+            "resolvedIngredients": resolved_count,
+            "matchedIngredients": matched_count,
+            "totalIngredients": total_count,
+            "negligibleIngredients": negligible_count,
+            "source": "OpenNutrition",
+        }
+
+        if liquid_retention_applied:
+            result["liquidRetentionApplied"] = True
+
+        if issues:
+            result["issues"] = issues
+
+        return result
+
+    def _derive_nutrition_tags(self, profile: Dict[str, Any]) -> List[str]:
+        """
+        Derive qualitative nutrition tags from the nutrition profile.
+        
+        Args:
+            profile: Nutrition profile dict with macros per serving.
+            
+        Returns:
+            List of tag strings.
+        """
+        tags = []
+        
+        calories = profile.get("calories", 0)
+        protein = profile.get("protein", 0)
+        fat = profile.get("fat", 0)
+        carbs = profile.get("carbs", 0)
+        fiber = profile.get("fiber", 0)
+        confidence = profile.get("confidence", "none")
+        
+        # Only derive tags if we have reasonable confidence
+        if confidence in ("none", "low"):
+            return []
+        
+        # High protein: > 25g per serving
+        if protein > 25:
+            tags.append("high-protein")
+        
+        # Low calorie: < 400 kcal per serving
+        if calories > 0 and calories < 400:
+            tags.append("low-calorie")
+        
+        # High fiber: > 8g per serving
+        if fiber > 8:
+            tags.append("high-fiber")
+        
+        # Indulgent: > 700 kcal or > 40g fat per serving
+        if calories > 700 or fat > 40:
+            tags.append("indulgent")
+        
+        # Balanced: protein 15-35%, carbs 40-65%, fat 20-35% of calories
+        if calories > 0:
+            pct_protein = (protein * 4 / calories) * 100
+            pct_carbs = (carbs * 4 / calories) * 100
+            pct_fat = (fat * 9 / calories) * 100
+            
+            if (15 <= pct_protein <= 35 and
+                40 <= pct_carbs <= 65 and
+                20 <= pct_fat <= 35):
+                tags.append("balanced")
+        
+        return tags
 
 def re_enrich_all_recipes(recipes_dir: str, output_dir: Optional[str] = None, should_backup: bool = True) -> int:
     """

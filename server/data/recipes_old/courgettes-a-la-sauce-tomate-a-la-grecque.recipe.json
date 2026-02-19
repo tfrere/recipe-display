@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "title": "Courgettes \u00e0 la sauce tomate \u00e0 la grecque",
+    "description": "Cette recette de Courgettes \u00e0 la sauce tomate \u00e0 la grecque : mon plat f\u00e9tiche ! En gros, il s'agit d'une sorte de ratatouille grecque, o\u00f9 les courgettes cuisent longtemps pour s'imbiber de sauce et fondre dans la bouche.",
+    "servings": 5,
+    "prepTime": "PT15M",
+    "cookTime": "PT1H10M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "courgette",
+      "recette grecque",
+      "plat en sauce",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/yarni-courgettes-1-of-4.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se d\u00e9guste chaud ou froid, avec la c\u00e9r\u00e9ale de votre choix et de la feta.",
+      "C'est un plat id\u00e9al pour la cong\u00e9lation.",
+      "On peut le cuisiner avec d'autres l\u00e9gumes (aubergines, haricots verts, pommes de terre).",
+      "On peut ajouter d'autres herbes (thym, persil, menthe, aneth) ou un peu de cannelle."
+    ],
+    "slug": "courgettes-a-la-sauce-tomate-a-la-grecque",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/yarni-courgettes-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/04/courgettes-a-la-sauce-tomate-a-la-grecque/",
+    "image": "images/courgettes-a-la-sauce-tomate-a-la-grecque.webp",
+    "createdAt": "2026-02-09T21:34:00.802700",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 84.0,
+    "totalCookingTime": 24.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 217.8,
+      "protein": 4.8,
+      "fat": 13.2,
+      "carbs": 23.4,
+      "fiber": 7.6,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "onions",
+      "name": "oignons jaunes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onions"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgettes",
+      "quantity": 4.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "4-5 courgettes",
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "tomato_sauce",
+      "name": "coulis de tomate ou tomates concass\u00e9es",
+      "quantity": 1200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato coulis or crushed tomatoes"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "grosse cuill\u00e8re \u00e0 soupe",
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "feta cheese"
+    }
+  ],
+  "tools": [
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "slice_onions",
+      "action": "\u00c9mincer les oignons.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions"
+      ],
+      "produces": "sliced_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onions",
+      "action": "Les faire revenir dans une casserole avec de l'huile d'olive.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_onions",
+        "olive_oil"
+      ],
+      "produces": "sauteed_onions",
+      "requires": [],
+      "visualCue": "dor\u00e9s"
+    },
+    {
+      "id": "add_zucchini",
+      "action": "Quand ils dorent, ajouter les courgettes coup\u00e9es en grosses rondelles.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_onions",
+        "zucchini"
+      ],
+      "produces": "onions_zucchini_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_zucchini",
+      "action": "Faire revenir encore quelques minutes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions_zucchini_mix"
+      ],
+      "produces": "sauteed_zucchini_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_sauce_ingredients",
+      "action": "Verser le coulis de tomate, l'eau, l'origan, le sucre et le sel.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_zucchini_onions",
+        "tomato_sauce",
+        "water",
+        "oregano",
+        "sugar",
+        "salt"
+      ],
+      "produces": "raw_sauce_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer",
+      "action": "Couvrir et laisser mijoter \u00e0 petits bouillons en m\u00e9langeant de temps en temps.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "raw_sauce_mix"
+      ],
+      "produces": "cooked_greek_zucchini",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "serve_with_feta",
+      "action": "Servir avec la c\u00e9r\u00e9ale de votre choix et de la feta.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_greek_zucchini",
+        "feta"
+      ],
+      "produces": "courgettes_sauce_tomate_grecque",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "courgettes_sauce_tomate_grecque",
+  "originalText": "Courgettes \u00e0 la sauce tomate \u00e0 la grecque - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 octobre 2022\nCourgettes \u00e0 la sauce tomate \u00e0 la grecque\nAller \u00e0 la recette\nCette recette de Courgettes \u00e0 la sauce tomate \u00e0 la grecque : mon plat f\u00e9tiche ! Et avec l\u2019arriv\u00e9e de l\u2019automne et le d\u00e9part \u00e9minent des courgettes \u2026 J\u2019en mange quasiment tous les jours. Et surtout, j\u2019en fais en grande quantit\u00e9, que je cong\u00e8le pour les dures journ\u00e9es d\u2019hiver !\nHaha !\nEn vrai, ce plat, dans ma famille on l\u2019appelle yarni. La traduction phon\u00e9tique avec des lettres latines est inexacte. C\u2019est un plat grec. Typique. En gros, il s\u2019agit d\u2019une sorte de ratatouille. Mais en mieux \u00e9videmment ! Je ne suis pas une grande fan de ratatouille.\nOn peut le cuisiner avec le l\u00e9gume de son choix. Aubergines, haricots verts, pommes de terre etc\u2026 Normalement on ne m\u00e9lange pas les l\u00e9gumes ! Notre pr\u00e9f\u00e9r\u00e9 est celui \u00e0 la courgette. La recette varie en fonction de qui le cuisine dans la famille. Mais le concept reste le m\u00eame. A savoir, pas mal d\u2019huile d\u2019olive pour faire revenir un ou 2 beaux oignons jaunes.\nOn ajoute le l\u00e9gume. Ici des courgettes en grosses rondelles. De la sauce tomate et des herbes. Principalement de l\u2019origan mais on peut ajouter un peu de thym. Ou m\u00eame des herbes fra\u00eeches comme du persil, de la menthe ou de l\u2019aneth ! Certains ajoutent un peu de cannelle. Mais moi, je pr\u00e9f\u00e8re sans !\nOn va laisser les courgettes cuire longtemps pour qu\u2019elles s\u2019imbibent de sauce et fondent dans la bouche !\nEnsuite on sert le yarni avec la c\u00e9r\u00e9ale de son choix. Chez nous, on aime ces Courgettes \u00e0 la sauce tomate \u00e0 la grecque avec du boulgour, du bl\u00e9 ou du riz ! Et bien s\u00fbr, toujours l\u2019accompagner d\u2019un morceau de feta ! Et voil\u00e0, bienvenue au paradis les amis ! Pour les amoureux de cuisine grecque, je vous conseille\ncette recette d\u2019artichaut\ns !\nCourgettes \u00e0 la sauce tomate \u00e0 la grecque\n4.62\n/5 avec\n54\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n4\ncas d\u2019huile d\u2019olive\n2\noignons jaunes\n4-5\ncourgettes\n1200\nml\nde coulis de tomate ou tomates concass\u00e9es\n200\nml\nd\u2019eau\n1\ngrosse c\u00e0s d\u2019origan s\u00e9ch\u00e9\n1\nc\u00e0c de sucre\n1\npinc\u00e9e de sel\nInstructions\n\u00c9mincer les oignons.\nLes faire revenir dans une casserole avec de l\u2019huile d\u2019olive pendant 7-8min.\nQuand ils dorent, ajouter les courgettes coup\u00e9es en grosses rondelles.\nFaire revenir encore quelques minutes.\nVerser le coulis de tomate, l\u2019eau, l\u2019origan, le sucre et le sel.\nCouvrir et laisser mijoter \u00e0 petits bouillons pendant 1h en m\u00e9langeant de temps en temps.\nSe d\u00e9guste chaud ou froid, avec la c\u00e9r\u00e9ale de votre choix et de la feta.\nC\u2019est un plat id\u00e9al pour la cong\u00e9lation.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncourgette\n,\nque faire avec de la feta\n,\nrecette grecque\nSoupe Tha\u00ef aux 2 Currys\nSauce aux poivrons r\u00f4tis\n6 thoughts on \u201cCourgettes \u00e0 la sauce tomate \u00e0 la grecque\u201d\nElena\ndit\u00a0:\n11 octobre 2022 \u00e0 15 h 13 min\nSuper facile et d\u00e9licieux!!! Merci pour la recette\nchargement\u2026\nR\u00e9pondre\nCharlotte\ndit\u00a0:\n13 octobre 2022 \u00e0 9 h 19 min\nNous y avons rajout\u00e9 des olives noires en plus pour vider le frigo, rapide et d\u00e9licieux, un r\u00e9gale !!!\nchargement\u2026\nR\u00e9pondre\nEstelle\ndit\u00a0:\n14 octobre 2022 \u00e0 20 h 13 min\nHumm excellente recette pour terminer les courgettes du jardin ! Servi bien chaud avec des pates \u00e0 la farine de sarrasin. Un plat simple, gourmand et r\u00e9confortant !\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n18 mai 2024 \u00e0 20 h 11 min\nOh la la je viens de finir de manger mon plat, un v\u00e9ritable r\u00e9gal \ud83d\ude0d Merci beaucoup pour le partage de cette superbe recette \u2764\ufe0f\nchargement\u2026\nR\u00e9pondre\nMarine.R\ndit\u00a0:\n14 juin 2024 \u00e0 11 h 44 min\nRecette test\u00e9e hier soir. Encore un essais r\u00e9ussi \ud83d\udc4c. J\u2019ai d\u00e9couvert votre site \u00e0 la suite de la sortie de votre livre. J\u2019en suis \u00e0 la 6e et c\u2019est parfait \u00e0 chaque fois. Simple a ex\u00e9cuter et savoureux \u00e0 d\u00e9guster.\nchargement\u2026\nR\u00e9pondre\nJean-Charles\ndit\u00a0:\n3 septembre 2025 \u00e0 19 h 16 min\nJe n\u2019avais pas d\u2019origan, j\u2019ai utilis\u00e9 du cumin.\nC\u2019est \u00e9galement excellent.\nMerci pour cette recette.\nchargement\u2026\nR\u00e9pondre\n4.62 from 54 votes (\n49 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 24.0
+}

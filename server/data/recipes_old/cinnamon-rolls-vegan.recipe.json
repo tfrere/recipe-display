@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "title": "Cinnamon Rolls Vegan",
+    "description": "De délicieux cinnamons rolls véganes, ultra moelleux et super faciles à faire ! Pétrir, rouler, cuire et voilà ! Peut être quelques étapes intermédiaires comprenant du sucre et surtout beaucoup de cannelle.",
+    "servings": 12,
+    "prepTime": "PT30M",
+    "cookTime": "PT25M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "cannelle",
+      "Cinnamon rolls",
+      "roulés à la cannelle",
+      "vegan",
+      "végétalien",
+      "brioche",
+      "brunch"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Cinnamon-rolls-vegan.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "A déguster le jour même, mais au cas où les roulés se conservent 2 jours à température ambiante recouverts d'un torchon.",
+      "J'utilise 2 cuillères à café pour une douzaine de cinnamon roll. Bien sûr, libre à vous d'ajuster en fonction de votre amour pour cette épice.",
+      "Si votre four vous le permet, vous pouvez laisser reposer votre pâte dans le four à 30°/40°C.",
+      "La pâte peut sembler ultra collante et difficile à pétrir, ne vous découragez pas, au contraire persévérer ! Plus vous pétrirez, plus la pâte va s'assouplir."
+    ],
+    "slug": "cinnamon-rolls-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Cinnamon-rolls-vegan.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/01/18/cinnamon-rolls-vegan/",
+    "image": "images/cinnamon-rolls-vegan.webp",
+    "createdAt": "2026-02-09T20:12:44.144588",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 155.0,
+    "totalCookingTime": 25.0,
+    "nutritionPerServing": {
+      "calories": 255.3,
+      "protein": 3.8,
+      "fat": 7.2,
+      "carbs": 43.6,
+      "fiber": 1.2,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "brown_sugar",
+      "name": "sucre cassonade",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "2 pincées",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "almond_milk",
+      "name": "lait d'amande",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "margarine",
+      "name": "margarine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "margarine"
+    },
+    {
+      "id": "yeast",
+      "name": "levure de boulanger déshydratée",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Active dry yeast"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "margarine_filling",
+      "name": "margarine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la garniture",
+      "optional": false,
+      "name_en": "margarine"
+    },
+    {
+      "id": "brown_sugar_filling",
+      "name": "sucre cassonade",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la garniture",
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "almond_milk_brushing",
+      "name": "lait d'amande",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "pour badigeonner",
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "powdered_sugar",
+      "name": "sucre glace",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "almond_milk_icing",
+      "name": "lait d'amande",
+      "quantity": null,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "1 ou 2 càs, en fonction de la consistance souhaitée",
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale neutre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    }
+  ],
+  "tools": [
+    "Moule (20cmx20cm)",
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "melt_margarine_milk",
+      "action": "Dans une casserole, faire fondre 50g de margarine dans 200ml de lait d'amande à feu doux. Retirer du feu et laisser refroidir jusqu'à 45/50°C avant d'ajouter 1 càc de levure de boulanger. Réserver pendant 10min le temps de la réhydrater.",
+      "duration": "PT10M",
+      "temperature": 45,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pâte à brioche",
+      "uses": [
+        "margarine",
+        "almond_milk",
+        "yeast"
+      ],
+      "produces": "yeast_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand saladier, mélanger 400g de farine, 50g de sucre cassonade et 2 pincées de sel puis ajouter le mélange lait et levure. Ajouter 1 càc d'extrait de vanille et mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte à brioche",
+      "uses": [
+        "flour",
+        "brown_sugar",
+        "salt",
+        "yeast_mixture",
+        "vanilla_extract"
+      ],
+      "produces": "dough_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_dough",
+      "action": "Transférer la pâte sur une surface farinée et pétrir jusqu'à former une boule assez souple.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte à brioche",
+      "uses": [
+        "dough_mixture"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": "boule assez souple"
+    },
+    {
+      "id": "first_rise",
+      "action": "Déposer la boule de pâte dans un saladier graissé avec de l'huile végétale neutre. Couvrir et placer dans un endroit chaud (four à 30/40°C). Laisser lever la pâte pendant 1h ou jusqu'à ce qu'elle ait doublé de volume.",
+      "duration": "PT1H",
+      "temperature": 35,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pâte à brioche",
+      "uses": [
+        "kneaded_dough",
+        "vegetable_oil"
+      ],
+      "produces": "risen_dough",
+      "requires": [],
+      "visualCue": "doublé de volume"
+    },
+    {
+      "id": "roll_dough",
+      "action": "Placer la boule de pâte sur une surface légèrement farinée et étaler la pâte en rectangle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "risen_dough"
+      ],
+      "produces": "rolled_dough",
+      "requires": [],
+      "visualCue": "rectangle"
+    },
+    {
+      "id": "mix_cinnamon_sugar",
+      "action": "Mélanger 50g de sucre cassonade et 2 càc de cannelle. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "brown_sugar_filling",
+        "cinnamon"
+      ],
+      "produces": "cinnamon_sugar_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_filling",
+      "action": "Badigeonner la pâte de 50g de margarine et saupoudrer du mélange sucre cannelle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "rolled_dough",
+        "margarine_filling",
+        "cinnamon_sugar_mix"
+      ],
+      "produces": "filled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_up",
+      "action": "Rouler la pâte dans le sens de la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "filled_dough"
+      ],
+      "produces": "dough_log",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_rolls",
+      "action": "Découper le rouleau en 10 roulés de taille identique et les placer dans un moule (20cmx20cm) graissé avec de la margarine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "dough_log"
+      ],
+      "produces": "cut_rolls_in_pan",
+      "requires": [],
+      "visualCue": "10 roulés"
+    },
+    {
+      "id": "second_rise",
+      "action": "Couvrir et laisser reposer 1h, le temps de laisser lever la pâte.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "cut_rolls_in_pan"
+      ],
+      "produces": "proofed_rolls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 175°C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_rolls",
+      "action": "Badigeonner les roulés de 1 càs de lait d'amande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "proofed_rolls",
+        "almond_milk_brushing"
+      ],
+      "produces": "brushed_rolls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_rolls",
+      "action": "Enfourner et cuire 25min jusqu'à ce que les roulés soient légèrement dorés.",
+      "duration": "PT25M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture et assemblage",
+      "uses": [
+        "brushed_rolls"
+      ],
+      "produces": "baked_cinnamon_rolls",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "légèrement dorés"
+    },
+    {
+      "id": "make_icing",
+      "action": "Mélanger 1 ou 2 càs de lait d'amande avec 120g de sucre glace et étaler sur les cinnamons encore chauds.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "glaçage",
+      "uses": [
+        "almond_milk_icing",
+        "powdered_sugar",
+        "baked_cinnamon_rolls"
+      ],
+      "produces": "iced_cinnamon_rolls",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "iced_cinnamon_rolls",
+  "originalText": "Cinnamon Rolls Vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 janvier 2021\nCinnamon Rolls Vegan\nAccéder directement à la recette\nQuand je pense que ça fait presque un an que je dois vous partager cette recette de cinnamon rolls vegan, je me dis que c’est pas très sympa d’avoir gardé la recette pour moi aussi longtemps. Car non seulement ils sont délicieux mais surtout ils sont assez faciles à faire, promis ! Il suffit de se lancer, bon et d’avoir un peu de temps devant vous aussi. Typiquement le genre de recette à préparer le week end pour le brunch du dimanche.\nQue vous dire à propos de cette recette… Quelques conseils pour réussir vos cinnamon rolls vegan à tous les coups.\nDéjà la levure !\nJ’utilise souvent de la levure déshydratée car j’en ai tout le temps dans mon placard. Mais attention à la date de péremption, une levure périmée est souvent à l’origine d’une pâte qui ne lève pas. Si de petites bulles ne se forment pas à la surface du mélange lait tiède/levure c’est qu’il y a sûrement un souci…\nLa pâte à brioche\nElle peut sembler ultra collante et difficile à pétrir, ne vous découragez pas, au contraire persévérer ! Plus vous pétrirez, plus la pâte va s’assouplir.\nLe\ntemps de repos\net la\nlevée de la pâte\nJ’ai réalisé cette recette assez souvent pour vous dire ; qu’en plein été dans le coffre de ma voiture la pâte a carrément débordé du saladier en moins d’une heure et qu’en hiver il faut plus d’une heure pour faire levée une pâte dans une cuisine à 18°C. Bref, si votre four vous le permet, vous pouvez laisser reposer votre pâte dans le four à 30°/40°C, ça marche très bien pour moi !\nAutre chose, par rapport au dosage de la cannelle, j’utilise 2 cuillères à café pour une douzaine de cinnamon roll. Bien sûr, libre à vous d’ajuster en fonction de votre amour pour cette épice ;).\nVoici d’autres idées de recettes véganes pour le brunch :\nbrioche végane chocolatée\n,\nchunky granola chocolat banane\n,\nbanana bread aux pépites de chocolat\nou encore les\nbanana pancakes vegan\n!\nCinnamon rolls Vegan\nDaniela\nDe délicieux cinnamons rolls véganes, ultra moelleux et super faciles à faire ! Pétrir, rouler, cuire et voilà ! Peut être quelques étapes intermédiaires comprenant du sucre et surtout beaucoup de cannelle.\n4.47\n/5 avec\n107\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n30\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps de repos\n2\nheures\nh\nType de plat\nBreakfast, Brunch, Goûter, Petit déjeuner\nPortions\n12\nroulés\nIngrédients\n1x\n2x\n3x\nBrioche\n400\ng\nde farine\n50\ng\nde sucre cassonade\n2\npincées de sel\n200\nml\nde lait d’amande\n50\ng\nde margarine\n1\ncàc de levure de boulanger déshydratée\n1\ncàc d’extrait de vanille\nGarniture\n50\ng\nde margarine\n50\ng\nde sucre cassonade\n2\ncàc de cannelle\n1\ncàs de lait d’amande\nGlaçage\n120\ng\nde sucre glace\n1\nou 2 càs de lait d’amande\nen fonction de la consistance souhaitée\nInstructions\nLa pâte à brioche :\nDans une casserole, faire fondre la margarine dans le lait d’amande à feu doux. Retirer du feu et laisser refroidir jusqu’à 45/50°C avant d’ajouter la levure de boulanger. Réserver pendant 10 min le temps de la réhydrater.\nDans un grand saladier, mélanger la farine, le sucre et le sel puis ajouter le mélange lait et levure. Ajouter l’extrait de vanille et mélanger, la pâte sera assez collante.\nTransférer la pâte sur une surface farinée et pétrir la pâte jusqu’à former une boule assez souple.\nDéposer la boule de pâte dans un saladier graissé avec de l’huile végétale neutre. Couvrir et placer dans un endroit chaud (four à 30/40 degrés). Laisser lever la pâte pendant 1h ou jusqu’à ce qu’elle ait doublé de volume.\nLa garniture :\nPlacer la boule de pâte sur une surface légèrement farinée et étaler la pâte en rectangle.\nMélanger le sucre et la cannelle. Réserver.\nBadigeonner la pâte de margarine et saupoudrer du mélange sucre cannelle.\nRouler la pâte dans le sens de la longueur.\nDécouper le rouleau en 10 roulés de taille identique et les placer dans le moule (20cmx20cm) graissé avec la margarine.\nCouvrir et laisser reposer 1h, le temps de laisser lever la pâte.\nPréchauffer le four à 175°C.\nBadigeonner de lait d’amande.\nEnfourner et cuire 25 à 30 min jusqu’à ce que les roulés soient légèrement dorés.\nPour le glaçage, mélanger le lait d’amande avec le sucre glace et étaler sur les cinnamons encore chauds ! C’est prêt !\nA déguster le jour même, mais au cas où les roulés se conservent 2 jours à température ambiante recouverts d’un torchon.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrioches et Boulange\n,\nBrunch Sucré\n,\nDesserts & Snack\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\ncannelle\n,\nCinnamon rolls\n,\nroulés à la cannelle\n,\nvegan\n,\nvégétalien\nPâtes à la Sauce aux Champignons\nParmentier Végétarien aux Champignons\n7 thoughts on “Cinnamon Rolls Vegan”\nLadyMilonguera\ndit :\n19 janvier 2021 à 8 h 39 min\nHummmmmm… Comme tu me tentes !!!\nchargement…\nRépondre\nDaniela\ndit :\n19 janvier 2021 à 8 h 45 min\nHehe c’est le but :p\nchargement…\nRépondre\nKate\ndit :\n13 mars 2021 à 14 h 06 min\nBonjour !\nMerci pour toutes vos recettes et astuces cuisine, j’utilise votre site souvent 🙂\nÇa fait 2 fois que je tente les cinnamon rolls vegans et la pâte ne lève pas :/ Du coup les rolls ne sont pas moelleux mais plutôt compacts. J’utilise la levure boulangère sèche comme dans la recette. Auriez-vous des conseils ?\nD’avance merci !\nEt merci encore pour le super site 🙂\nKate\nchargement…\nRépondre\nDaniela\ndit :\n14 mars 2021 à 13 h 33 min\nBonjour Kate, j’ai déjà eu ce problème et souvent c’était ma levure sèche qui n’étaient pas active :/plusieurs raison à ça, soit la levure est périmée, ou alors de pas super top qualité ou encore le lait était trop chaud… Maintenant je fais systématiquement attention au moment où je verse ma levure dans le lait tiède, je vérifie qu’après les 5 min qu’il y ait bien eu une sorte de mousse qui se soit formée signée que la levure est bien vivante. Autres raisons : le temps de pousse et la température. Lors de la première pousse assurez-vous que la pâte ait bien doublé de volume, quand il fait chaud ça prend moins de temps souvent mais pas évident quand c’est l’hiver… Si vous avez l’option dans votre four, vous pouvez placer votre saladier/bol bien recouvert dans le four à 30 ou 40°C. Pour la deuxième pousse, idéalement, vos petits rouleaux ne se touchent pas au début mais après le deuxième temps de pousse, ils sont collés serrés les uns aux autres. Si vraiment rien n’y fait, vous pouvez aussi ajouter 1/2 càc de levure pour voir si ça change quelque chose dans votre cas ! Tenez-moi au courant 🙂\nchargement…\nRépondre\nRehoboth\ndit :\n6 août 2023 à 14 h 23 min\nNice post\nchargement…\nRépondre\nKiki32\ndit :\n15 novembre 2023 à 12 h 34 min\nBonjour, peut-on préparer la pâte ,la mettre au frigo et la cuire le lendemain ?  Merci.\nchargement…\nRépondre\nDaniela\ndit :\n15 novembre 2023 à 13 h 08 min\nBonjour, oui bien sûr il faut juste attendre qu’elle soit à température.\nchargement…\nRépondre\n4.47 from 107 votes (\n105 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 25.0
+}

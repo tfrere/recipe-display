@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "Parmesan Végétal",
+    "description": "Un parmesan végétal à base de noix et de levure de bière, parfait sur des pâtes ou une salade.",
+    "servings": 1,
+    "prepTime": "PT5M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "fromage vegetal",
+      "parmesan au noix",
+      "parmesan vegan",
+      "parmesan vegane",
+      "parmesan végétal",
+      "accompagnement"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Parmesan-végétal-1-of-3-scaled.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je l'ai conservé plus d'un mois dans un bocal bien fermé pour ma part et il est resté parfait jusqu'à sa disparition complète.",
+      "Tu peux absolument en mettre sur les gratins. Si tu le mets avant, la levure de bière va fondre, ce qui sera très bon, mais visuellement peut-être pas top. Donc je te conseille d'en mettre un peu avant et un peu après, comme ça tu as le goût et le visuel !"
+    ],
+    "slug": "parmesan-vegetal",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Parmesan-végétal-1-of-3-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/14/parmesan-vegetal/",
+    "image": "images/parmesan-vegetal.jpg",
+    "createdAt": "2026-02-09T19:48:25.879294",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 622.2,
+      "protein": 24.1,
+      "fat": 52.2,
+      "carbs": 28.0,
+      "fiber": 10.4,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "nuts",
+      "name": "noix au choix",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ex: 35g cajou, 20g amandes, 10g noix",
+      "optional": false,
+      "name_en": "walnuts"
+    },
+    {
+      "id": "nutritional_yeast",
+      "name": "levure de bière",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou levure maltée",
+      "optional": false,
+      "name_en": "brewer's yeast"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "combine_ingredients",
+      "action": "Mettre tous les ingrédients dans le mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "nuts",
+        "nutritional_yeast",
+        "fleur_de_sel",
+        "garlic_powder"
+      ],
+      "produces": "combined_ingredients",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_to_powder",
+      "action": "Mixer jusqu'à obtention d'une poudre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_ingredients"
+      ],
+      "produces": "parmesan_vegetal",
+      "requires": [],
+      "visualCue": "poudre"
+    }
+  ],
+  "finalState": "parmesan_vegetal",
+  "originalText": "Parmesan Végétal - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2020\nParmesan Végétal\nJe ne suis pas vegane, et je consomme régulièrement du fromage comme vous pouvez le constater dans nos recettes, mais le parmesan vegane m’a toujours intrigué et j’avais vraiment envie d’essayer.\nDéjà, parce que je suis un grande fan de la levure de bière, que je consomme depuis très longtemps ! Encore une passion qui me vient de mon père, qui en a toujours mis dans la salade. D’ailleurs, en découvrant la cuisine végétarienne/vegane, j’ai appris à l’utiliser de façon différente, comme par exemple, dans\nces muffins salés à la fêta et courge\n.\nMais aussi, parce que j’ai lu beaucoup d’avis super enthousiastes sur ce concept de parmesan végétal. Alors comme d’hab, la curiosité a pris le dessus et je me devais de tester et de vous dire ce que j’en pense.\nJ’ai fait un petit mix perso de noix en fonction de ce que j’avais dans les placards et hop le tout dans le mixeur. Franchement, ça prend à peine 5min. Et le résultat … c’est vrai que c’est assez bluffant !\nAlors, non, on ne le confond pas avec du vrai parmesan, mais on retrouve bien le goût salé/fromager du parmesan et surtout… c’est vraiment bon !\nJ’en ai un gros pot maintenant, et c’est parfait avec\nde bonnes tagliatelles fraîches\n, et un filet d’huile d’olive, ou intégré dans une recette de sauce pour les pâtes ou même sur une salade !\nUn vrai délice !\nParmesan végétal\nNatacha\n4.60\n/5 avec\n67\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nPortions\n1\npot de 300ml environ\nIngrédients\n1x\n2x\n3x\n75\ng\nde noix au choix\npour nous 35g de cajou, 20g d’amandes, 10g de noix\n30\ng\nde levure de bière\nou levure maltée, c’est la même chose\n1\npincée de fleur de sel\n1\nc-à-c d’ail en poudre\nInstructions\nMettre tous les ingrédients dans le mixeur. Mixer jusqu’à obtention d’une poudre.\nDéguster sur des pâtes ou sur une salade !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\nTags:\nfromage vegetal\n,\nparmesan au noix\n,\nparmesan vegan\n,\nparmesan vegane\n,\nparmesan végétal\nTagliatelles Maison sans machine\nTagliatelles à la Crème d’Asperges Citronnée\n9 thoughts on “Parmesan Végétal”\nSavouret\ndit :\n28 juin 2020 à 16 h 12 min\nMerci Pour la recette.\nJe vais la tester..!!!\nchargement…\nRépondre\nFree The Pickle\ndit :\n1 juillet 2020 à 11 h 50 min\n🙂 avec plaisir ! J’espère qu’elle te plaira !\nchargement…\nRépondre\nViry\ndit :\n3 octobre 2020 à 19 h 39 min\nBonjour. Je viens de réaliser la recette et goûter.  C’est vraiment excellent.\nchargement…\nRépondre\nDaniela\ndit :\n4 octobre 2020 à 23 h 39 min\nMerci 🙂\nchargement…\nRépondre\nMélanie\ndit :\n26 avril 2021 à 10 h 11 min\nCombien de temps peut on le conserver ? Merci pour cette recette en tout cas, je vais la tester rapidement !\nchargement…\nRépondre\nFree The Pickle\ndit :\n26 avril 2021 à 10 h 38 min\nBonjour Mélanie, je l’ai conservé plus d’un mois dans un bocal bien fermé pour ma part et il est resté parfait jusqu’à sa disparition complète. Je pense qu’il peut se garder encore plus longtemps car se ne sont que des ingrédients secs. Je pense qu’il suffit de le sentir et de le goûter pour se rendre compte s’il n’est plus bon.\nchargement…\nRépondre\njojo\ndit :\n16 février 2022 à 8 h 13 min\nbonjour\npeut-on le mettre sur des gratins chauds après ou pendant cuisson ?\nmerci\nchargement…\nRépondre\nFree The Pickle\ndit :\n16 février 2022 à 12 h 01 min\nHello Jojo ! Oui tu peux absolument en mettre sur les gratins. Si tu le mets avant, la levure de bière va fondre, ce qui sera très bon, mais visuellement peut-être pas top. Donc je te conseille d’en mettre un peu avant et un peu après, comme ça tu as le goût et le visuel !\nchargement…\nRépondre\njojo\ndit :\n17 février 2022 à 7 h 43 min\nmerci\nchargement…\nRépondre\n4.60 from 67 votes (\n66 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

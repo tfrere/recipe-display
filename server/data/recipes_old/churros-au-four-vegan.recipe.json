@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "title": "Churros au four (Vegan)",
+    "description": "Des churros faciles et croustillants dans une version plus saine et végane ! Seulement 4 ingrédients dans cette recette de churros : farine, sucre, eau et sel !",
+    "servings": 30,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "churros",
+      "churros au four",
+      "mardi gras",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/02/Churros-2-of-3.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ils sont très bons natures avec du sucre, vous pouvez aussi faire un mélange sucre/cannelle.",
+      "Mais surtout vous pouvez les tremper dans du chocolat fondu ou une bonne pâte à tartiner maison choco noisette… Oh ou alors du caramel au beurre salé…",
+      "Si vous avez une machine à churros, cela facilitera le pochage des churros. Sinon une poche à douille résistante (point important car la pâte est assez compacte) fera aussi l'affaire.",
+      "Avant d'enfourner vous pouvez ajouter un peu d'huile ou de lait au pinceau pour les faire dorer (optionnel)."
+    ],
+    "slug": "churros-au-four-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/02/Churros-2-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/02/16/churros-au-four/",
+    "image": "images/churros-au-four-vegan.jpg",
+    "createdAt": "2026-02-09T20:13:12.759849",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 35.7,
+      "protein": 0.8,
+      "fat": 0.1,
+      "carbs": 7.7,
+      "fiber": 0.2,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 3,
+      "totalIngredients": 3,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "huile_tournesol",
+      "name": "huile de tournesol",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": true,
+      "name_en": "sunflower oil"
+    }
+  ],
+  "tools": [
+    "Poche à douille résistante avec embout \"étoile\" ou \"cannelé\"",
+    "Machine/pistolet à churros/chichi (facultatif)"
+  ],
+  "steps": [
+    {
+      "id": "boil_water",
+      "action": "Dans une casserole, porter l'eau avec le sel à ébullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eau",
+        "sel"
+      ],
+      "produces": "boiling_salted_water",
+      "requires": [],
+      "visualCue": "ébullition"
+    },
+    {
+      "id": "make_dough",
+      "action": "Hors du feu, verser la farine et le sucre en poudre dans la casserole et mélanger avec une cuillère en bois jusqu'à obtenir une pâte homogène.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "boiling_salted_water",
+        "farine",
+        "sucre"
+      ],
+      "produces": "churros_dough",
+      "requires": [],
+      "visualCue": "pâte homogène"
+    },
+    {
+      "id": "fill_piping_bag",
+      "action": "Remplir une poche à douille préparée avec un embout \"étoile\" ou \"cannelé\" avec la pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "churros_dough"
+      ],
+      "produces": "filled_piping_bag",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_baking_sheet",
+      "action": "Préparer une plaque à pâtisserie recouverte de papier cuisson et légèrement huilée.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_tournesol"
+      ],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": "légèrement huilée"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 200°C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pipe_churros",
+      "action": "Former les churros sur la plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "filled_piping_bag",
+        "prepared_baking_sheet"
+      ],
+      "produces": "piped_churros",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_churros",
+      "action": "Enfourner et cuire pendant 30min à 200°C.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "piped_churros"
+      ],
+      "produces": "baked_churros",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "bien dorés"
+    },
+    {
+      "id": "sugar_and_serve",
+      "action": "Une fois que les churros sont bien dorés, les sortir du four. Saupoudrer de sucre et servir sans attendre !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_churros",
+        "sucre"
+      ],
+      "produces": "churros_au_four",
+      "requires": [],
+      "visualCue": "bien dorés"
+    }
+  ],
+  "finalState": "churros_au_four",
+  "originalText": "Churros au four vegan - Seulement 4 ingrédients - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 février 2021\nChurros au four (Vegan)\nAujourd’hui c’est Mardi Gras ! Et cette année je vous propose une recette moins « grasse » que l’année dernière : des churros au four ! Certes mes\nmini beignets de carnaval\nsont quand même assez incroyables (toujours important de se jeter des fleurs); mais je pense sincèrement que ces churros sont au même niveau. En fait la vraie question c’est : est-ce que vous êtes plutôt team moelleux ou team croustillant?\nSinon concernant cette recette, franchement je me répète : il n’y a rien de plus simple. Voici quand même quelques conseils pour réussir vos churros comme un vrai pro ! Tout d’abord, si vous avez une machine à churros, cela facilitera le pochage des churros. Sinon une poche à douille résistante (point important car la pâte est assez compacte) fera aussi l’affaire. Personnellement, j’ai utilisé une poche à douille avec un embout cannelé et ils sont plutôt mignons mes churros au four, non?\n« Et mes churros, je les mange comment? » Bah avec les doigts pardi (ah ah) ! Non mais sinon, ils sont très bons natures avec du sucre, vous pouvez aussi faire un mélange sucre/cannelle. Mais surtout vous pouvez les tremper dans du chocolat fondu ou une bonne\npâte à tartiner maison choco noisette\n… Oh ou alors du\ncaramel au beurre salé\n… C’est pas très sérieux tout ça, mais on s’en fiche c’est Mardi Gras !\nChurros au four\nDaniela\nDes churros faciles et croustillants dans une version plus saine et végane ! Seulement 4 ingrédients dans cette recette de churros : farine, sucre, eau et sel !\n4.62\n/5 avec\n134\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nType de plat\nDessert, Goûter, Snack\nPortions\n30\nmini churros\nIngrédients\n1x\n2x\n3x\n500\nml\nd’eau\n1\npincée de sel\n250\ng\nde farine\n40\ng\nde sucre\nhuile de tournesol\nInstructions\nDans une casserole, porter l’eau avec le sel à ébullition.\nHors du feu, verser la farine et le sucre en poudre dans la casserole et mélanger avec une cuillère en bois jusqu’à obtenir une pâte homogène.\nRemplir une poche à douille préparée avec un embout “étoile” ou “cannelé”  avec la pâte, attention la pâte est assez compacte alors si vous avez une machine/pistolet à churros/chichi c’est le moment de vous en servir !\nPréparer une plaque à pâtisserie recouverte de papier cuisson et légèrement huilée.\nPréchauffer le four à 200°C.\nFormer les churros sur la plaque, avant d’enfourner vous pouvez ajouter un peu d’huile ou de lait au pinceau pour les faire dorer (optionnel).\nEnfourner et cuire pendant 30 min à 200°C.\nUne fois que les churros sont bien dorés, les sortir du four. Saupoudrer de sucre et servir sans attendre !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCookies Biscuits et Mignardises\n,\nDesserts & Snack\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nchurros\n,\nchurros au four\n,\nmardi gras\nPâte à tartiner Choco Noisette Facile – Seulement 3 ingrédients\nBeignets aux Oignons et aux Carottes à l’Indienne (recette vegan et sans gluten)\n7 thoughts on “Churros au four (Vegan)”\nLadyMilonguera\ndit :\n16 février 2021 à 20 h 12 min\nSuper gourmands ces churros !\nchargement…\nRépondre\nVeggiesideoftheforce\ndit :\n24 février 2021 à 18 h 53 min\nOMG ! j’étais passée à côté de cette recette!\nJe vais direct aller la tester (dès que j’aurais un four sous la patte cela dit)\nchargement…\nRépondre\nArineange\ndit :\n8 mars 2021 à 1 h 57 min\nLa recette était très simple à réaliser. Cependant, notre poche à douille a un embout trop étroit et nous n’avons pas fait de churros dignes de ce nom. On a quand même bien rigolé en tentant de former les churros ! Au final, nos minces filets de pâte ont trop cuit sur le dessous. ça avait bon goût malgré tout et on retentera l’expérience prochainement 🙂\nchargement…\nRépondre\nGUILLEMIN--DUMONT\ndit :\n23 avril 2023 à 17 h 30 min\nTenté ce jour. Ce n’était pas une grande réussite. Nous avons suivi la recette à la lettre. Impossible de les faire à la poche à douille.\nNous allons regarder pour améliorer la recette pour que cela ressemble à de vrais churros.\nÇa valait le coup d’essayer.\nOn a bien rigolé\nchargement…\nRépondre\nDaniela\ndit :\n9 mai 2023 à 12 h 53 min\nAh oui ça m’étonne pas du tout… comme précisé dans la recette, c’est assez difficile avec une poche à douille, la mienne était de bonne qualité mais c’est vrai que c’est mieux avec un pistolet à churros ! Au moins vous avez bien rigolé, c’est déjà ça 😅\nchargement…\nRépondre\nAurore\ndit :\n16 août 2023 à 17 h 22 min\nBon goût mais cuisson à 200degres trop fort!  Beaucoup trop cuit et donc trop dur.\nMachine a churros fait facilement,  revoir juste ma cuisson en mettant à 180.\nchargement…\nRépondre\nDaniela\ndit :\n16 août 2023 à 18 h 13 min\nBonjour Aurore, merci beaucoup pour ton commentaire. Je vais re tester aussi à 180, parfois ça dépend du four mais je suis curieuse de voir si ça change la texture 😉😉\nchargement…\nRépondre\n4.62 from 134 votes (\n132 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

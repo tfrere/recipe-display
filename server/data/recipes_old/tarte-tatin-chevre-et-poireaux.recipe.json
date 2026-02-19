@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "title": "Tarte tatin Ch\u00e8vre et Poireaux",
+    "description": "Que diriez-vous d'une Tarte tatin Ch\u00e8vre et Poireaux ? Depuis que j'ai d\u00e9couvert les tatins sal\u00e9es, j'en fais super souvent !",
+    "servings": 4,
+    "prepTime": "PT1H20M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "tarte tatin",
+      "poireau",
+      "ch\u00e8vre",
+      "automne",
+      "hiver",
+      "plat au four",
+      "tarte sal\u00e9e"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Tatin-poireau-chevre-4-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "D\u00e9j\u00e0, pour commencer, \u00e7a impressionne toujours un peu. \u00ab Waaah t'as fait une tatin \u00bb. Alors qu'en vrai, c'est franchement pas compliqu\u00e9.",
+      "Ensuite, c'est d\u00e9clinable \u00e0 l'infini. Ou presque. Je tenterai bien la tatin de navets.",
+      "Et finalement, si on a une po\u00eale qui va au four, c'est tr\u00e8s peu de vaisselle.",
+      "La seule partie un peu stressante, c'est le retournage final. Mais bon, au pire, si des petits morceaux ne se d\u00e9collent pas, tu peux toujours y aller avec les mains."
+    ],
+    "slug": "tarte-tatin-chevre-et-poireaux",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Tatin-poireau-chevre-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/09/tarte-tatin-chevre-et-poireaux/",
+    "image": "images/tarte-tatin-chevre-et-poireaux.webp",
+    "createdAt": "2026-02-09T21:37:51.311282",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 120.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 680.8,
+      "protein": 18.7,
+      "fat": 42.6,
+      "carbs": 57.9,
+      "fiber": 5.7,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "belle pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre_froid",
+      "name": "beurre",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "poireaux",
+      "name": "blancs petits poireaux",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baby leeks"
+    },
+    {
+      "id": "beurre_garniture",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "chevre_buche",
+      "name": "ch\u00e8vre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "type b\u00fbche ou crottins",
+      "optional": false,
+      "name_en": "goat cheese"
+    },
+    {
+      "id": "chevre_frais",
+      "name": "ch\u00e8vre frais",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh goat cheese"
+    }
+  ],
+  "tools": [
+    "Po\u00eale en inox allant au four",
+    "Lave-vaisselle (optional mention)"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "M\u00e9langer la farine et le sel dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e",
+      "uses": [
+        "farine",
+        "sel"
+      ],
+      "produces": "farine_sel_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre_crumble",
+      "action": "Ajouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e",
+      "uses": [
+        "farine_sel_melange",
+        "beurre_froid"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": "comme un crumble"
+    },
+    {
+      "id": "ajouter_oeuf_eau",
+      "action": "Ajouter ensuite l'\u0153uf et l'eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu'\u00e0 ce qu'une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e",
+      "uses": [
+        "crumble_mix",
+        "oeuf",
+        "eau_froide"
+      ],
+      "produces": "pate_brisee_crue",
+      "requires": [],
+      "visualCue": "boule homog\u00e8ne non collante"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server au frais, au minimum 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te bris\u00e9e",
+      "uses": [
+        "pate_brisee_crue"
+      ],
+      "produces": "pate_brisee_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_poireaux",
+      "action": "D\u00e9tailler les blancs de poireaux en tron\u00e7ons d'environ 1,5cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "poireaux"
+      ],
+      "produces": "poireaux_troncons",
+      "requires": [],
+      "visualCue": "tron\u00e7ons d'environ 1,5cm"
+    },
+    {
+      "id": "chauffer_beurre_huile",
+      "action": "Dans une po\u00eale en inox qui va au four, faire chauffer le beurre avec l'huile (cela \u00e9vite que le beurre ne noircisse).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "beurre_garniture",
+        "huile_olive"
+      ],
+      "produces": "beurre_huile_chaud",
+      "requires": [],
+      "visualCue": "beurre fondu"
+    },
+    {
+      "id": "cuire_poireaux",
+      "action": "Y faire revenir les poireaux avec le thym \u00e0 couvert pendant 20min en m\u00e9langeant de temps en temps. Attention de ne pas trop abimer les tron\u00e7ons de poireau.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "poireaux_troncons",
+        "beurre_huile_chaud",
+        "thym"
+      ],
+      "produces": "poireaux_cuits",
+      "requires": [],
+      "visualCue": "poireaux tendres"
+    },
+    {
+      "id": "evaporer_eau",
+      "action": "En fin de cuisson, laisser l'eau s'\u00e9vaporer s'il y en a.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "poireaux_cuits"
+      ],
+      "produces": "poireaux_secs",
+      "requires": [],
+      "visualCue": "eau \u00e9vapor\u00e9e"
+    },
+    {
+      "id": "ajouter_miel",
+      "action": "Verser le miel et m\u00e9langer. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "poireaux_secs",
+        "miel"
+      ],
+      "produces": "poireaux_miel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_brisee_reposee"
+      ],
+      "produces": "pate_abaissee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arranger_poireaux",
+      "action": "Regrouper les tron\u00e7ons de poireaux sans qu'ils ne se chevauchent dans le centre de la po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "poireaux_miel"
+      ],
+      "produces": "poireaux_arranges",
+      "requires": [],
+      "visualCue": "sans chevauchement"
+    },
+    {
+      "id": "ajouter_chevre_rondelles",
+      "action": "D\u00e9poser des rondelles de ch\u00e8vre par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "poireaux_arranges",
+        "chevre_buche"
+      ],
+      "produces": "poireaux_chevre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "poser_pate",
+      "action": "D\u00e9poser la p\u00e2te \u00e0 tarte par-dessus et enfoncer les bords de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "poireaux_chevre",
+        "pate_abaissee"
+      ],
+      "produces": "tarte_non_cuite",
+      "requires": [],
+      "visualCue": "bords enfonc\u00e9s"
+    },
+    {
+      "id": "faire_croix",
+      "action": "A l'aide d'un couteau faire une croix dans le centre de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_non_cuite"
+      ],
+      "produces": "tarte_incisee",
+      "requires": [],
+      "visualCue": "croix dans le centre"
+    },
+    {
+      "id": "cuire_tarte",
+      "action": "Enfourner pour 35min.",
+      "duration": "PT35M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_incisee"
+      ],
+      "produces": "tarte_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_retourner",
+      "action": "Laisser refroidir 5min puis retourner la tatin sur une assiette.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_cuite"
+      ],
+      "produces": "tarte_retournee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_chevre_frais",
+      "action": "D\u00e9poser des petits morceaux de ch\u00e8vre frais par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_retournee",
+        "chevre_frais"
+      ],
+      "produces": "tarte_finie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servir ti\u00e8de.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_finie"
+      ],
+      "produces": "tarte_tatin_chevre_poireaux",
+      "requires": [],
+      "visualCue": "ti\u00e8de"
+    }
+  ],
+  "finalState": "tarte_tatin_chevre_poireaux",
+  "originalText": "Tarte tatin Ch\u00e8vre et Poireaux - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 novembre 2022\nTarte tatin Ch\u00e8vre et Poireaux\nAller \u00e0 la recette\nQue diriez-vous d\u2019une Tarte tatin Ch\u00e8vre et Poireaux ?\nDepuis que j\u2019ai d\u00e9couvert les tatins sal\u00e9es, j\u2019en fais super souvent ! Vous trouverez\ncelle aux oignons\net\ncelle aux \u00e9chalotes\nsur le blog. Et aussi\ncelle aux tomates cerises\n. Mais bon, c\u2019est vraiment plus la saison l\u00e0 !\nAu-del\u00e0 du fait que c\u2019est bon, il y a plusieurs avantages \u00e0 la tatin.\nD\u00e9j\u00e0, pour commencer, \u00e7a impressionne toujours un peu. \u00ab\u00a0Waaah t\u2019as fait une tatin\u00a0\u00bb. Alors qu\u2019en vrai, c\u2019est franchement pas compliqu\u00e9. La seule partie un peu stressante, c\u2019est le retournage final. Mais bon, au pire, si des petits morceaux ne se d\u00e9collent pas, tu peux toujours y aller avec les mains. Ni vu, ni connu. Chapeau pointu.\nEnsuite, c\u2019est d\u00e9clinable \u00e0 l\u2019infini. Ou presque. Je tenterai bien la tatin de navets. Ca vous tente vous ?\nEt finalement, si on a une po\u00eale qui va au four, c\u2019est tr\u00e8s peu de vaisselle. Et franchement, c\u2019est pas n\u00e9gligeable. S\u2019il y a bien un truc chiant en cuisine. C\u2019est de passer plus de temps \u00e0 ranger qu\u2019\u00e0 cuisiner. Non ?\nDu coup, j\u2019ai utilis\u00e9 ma po\u00eale en inox\nCristel France\n. Et les nouvelles poign\u00e9es amovibles Mutine Evolution. Comme \u00e7a, il n\u2019y a qu\u2019\u00e0 les retirer pour mettre la po\u00eale au four et ensuite au lave-vaisselle !\nJ\u2019ai cr\u00e9\u00e9e cette recette de Tarte tatin Ch\u00e8vre et Poireaux en collab avec eux.\nTarte tatin Ch\u00e8vre et Poireaux\n4.50\n/5 avec\n112\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la p\u00e2te bris\u00e9e\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n1\nc-\u00e0-s d\u2019eau froide\nPour la garniture\n4\nblancs de\npetits poireaux\n40\ng\nde beurre\n1\nc\u00e0c d\u2019huile d\u2019olive\n1\nc\u00e0c de thym\n2\nc\u00e0s de miel\n100\ng\nde ch\u00e8vre\ntype b\u00fbche ou crottins\n100\ng\nde ch\u00e8vre frais\nInstructions\nPr\u00e9paration de la p\u00e2te \u00e0 tarte\nM\u00e9langer la farine et le sel dans un saladier.\nAjouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019\u0153uf et l\u2019eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).\nR\u00e9server au frais, au minimum 1h.\nPour la garniture\nD\u00e9tailler les blancs de poireaux en tron\u00e7ons d\u2019environ 1,5cm.\nDans une po\u00eale en inox qui va au four, faire chauffer le beurre avec l\u2019huile (cela \u00e9vite que le beurre ne noircisse). Y faire revenir les poireaux avec le thym \u00e0 couvert pendant 20min en m\u00e9langeant de temps en temps. Attention de ne pas trop abimer les tron\u00e7ons de poireau.\nEn fin de cuisson, laisser l\u2019eau s\u2019\u00e9vaporer s\u2019il y en a.\nVerser le miel et m\u00e9langer\nR\u00e9server.\nPour faire la tatin\nAbaisser la p\u00e2te.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nRegrouper les tron\u00e7ons de poireaux sans qu\u2019ils ne se chevauchent dans le centre de la po\u00eale.\nD\u00e9poser des rondelles de ch\u00e8vre par-dessus.\nD\u00e9poser la p\u00e2te \u00e0 tarte par-dessus et enfoncer les bords de la p\u00e2te.\nA l\u2019aide d\u2019un couteau faire une croix dans le centre de la p\u00e2te.\nEnfourner pour 35min.\nLaisser refroidir 5min puis retourner la tatin sur une assiette.\nD\u00e9poser des petits morceaux de ch\u00e8vre frais par-dessus.\nServir ti\u00e8de.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nPlats au Four\n,\nPoireau\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nNouilles Saut\u00e9es au tofu croustillant\nSteak de Chou-Fleur pan\u00e9\n4.50 from 112 votes (\n112 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

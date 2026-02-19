@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "title": "Nice Cream Fruits Rouges (Rapide et Facile)",
+    "description": "Envie d'une douceur glac\u00e9e? Pr\u00e9parez un nice cream d\u00e9licieux en 5 min avec seulement 2 ingr\u00e9dients! Que ce soit au petit d\u00e9j, au gouter ou encore en dessert, faites le plein de fruits en version glac\u00e9e !",
+    "servings": 2,
+    "prepTime": "PT5M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "bananes glac\u00e9es",
+      "cr\u00e8me glac\u00e9e",
+      "id\u00e9e de dessert fruit",
+      "nice cream",
+      "vegan",
+      "v\u00e9gane",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/Nice-cream-fruits-rouge-banane-3.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette anti-gaspi utilisant des bananes trop m\u00fbres congel\u00e9es.",
+      "Les bananes peuvent \u00eatre congel\u00e9es enti\u00e8res (pour banana bread, muffins) ou en rondelles (pour smoothies, nice cream).",
+      "On peut varier les toppings : noix concass\u00e9es, pur\u00e9e d'ol\u00e9agineux, morceaux de chocolat, fruits, granola."
+    ],
+    "slug": "nice-cream-fruits-rouges-rapide-et-facile",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/Nice-cream-fruits-rouge-banane-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/05/02/nice-cream-fruits-rouges-rapide-et-facile/",
+    "image": "images/nice-cream-fruits-rouges-rapide-et-facile.webp",
+    "createdAt": "2026-02-09T20:16:58.035924",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 26.4,
+      "protein": 0.5,
+      "fat": 0.3,
+      "carbs": 6.2,
+      "fiber": 1.7,
+      "confidence": "low",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 2,
+      "totalIngredients": 4,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "frozen_bananas",
+      "name": "bananes glac\u00e9es",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pr\u00e9-d\u00e9coup\u00e9es en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "Glazed bananas"
+    },
+    {
+      "id": "frozen_red_fruits",
+      "name": "fruits rouges congel\u00e9s",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Frozen red berries"
+    },
+    {
+      "id": "fresh_fruits",
+      "name": "fruits",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "pour topping",
+      "optional": false,
+      "name_en": "Fruit"
+    },
+    {
+      "id": "sliced_almonds",
+      "name": "amandes effil\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour topping",
+      "optional": false,
+      "name_en": "slivered almonds"
+    }
+  ],
+  "tools": [
+    "Robot mixeur"
+  ],
+  "steps": [
+    {
+      "id": "add_frozen_ingredients",
+      "action": "D\u00e9poser les bananes glac\u00e9es coup\u00e9es en rondelles et les fruits rouges congel\u00e9s dans un robot mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "frozen_bananas",
+        "frozen_red_fruits"
+      ],
+      "produces": "frozen_mixture_in_blender",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_mixture",
+      "action": "Mixer jusqu'\u00e0 obtenir une consistance lisse et homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "frozen_mixture_in_blender"
+      ],
+      "produces": "nice_cream_base",
+      "requires": [],
+      "visualCue": "consistance lisse et homog\u00e8ne"
+    },
+    {
+      "id": "plate_with_toppings",
+      "action": "Transvaser dans un petit bol ou verrine et ajouter des toppings (par exemple, quelques fruits et des amandes effil\u00e9es).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "nice_cream_base",
+        "fresh_fruits",
+        "sliced_almonds"
+      ],
+      "produces": "nice_cream_fruits_rouges",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "nice_cream_fruits_rouges",
+  "originalText": "Nice Cream Fruits Rouges (Rapide et Facile) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 mai 2021\nNice Cream Fruits Rouges (Rapide et Facile)\nVous savez, parfois, on est pas forc\u00e9ment oblig\u00e9 de se prendre la t\u00eate pour faire quelque chose de bon et beau. Que ce soit pour le petit d\u00e9j, le dessert ou m\u00eame juste le go\u00fbter, ce nice cream fruits rouges est non seulement super bon mais aussi hyper photog\u00e9nique ! Cette recette a vraiment tout pour plaire, elle est simple, rapide et ici on est clairement dans l\u2019anti-gaspi.\nPourquoi anti-gaspi? Tout simplement car elle fait partie des recettes (g\u00e9niales) que l\u2019on peut faire \u00e0 partir de bananes glac\u00e9es. Mais qui cong\u00e8le des bananes? Bah moi, et vous aussi je l\u2019esp\u00e8re ! Bien souvent les bananes se retrouvent confront\u00e9es \u00e0 des moues opini\u00e2tres d\u00e8s les premi\u00e8res t\u00e2ches brunes . Ne soyez pas si durs avec les bananes jug\u00e9es trop m\u00fbres. Deux options g\u00e9nialissimes s\u2019offrent \u00e0 vous : les congeler enti\u00e8res (avec la peau) ou les coup\u00e9es en rondelles et les placer dans des sacs de cong\u00e9lation.\nAvec les bananes enti\u00e8res vous pourrez r\u00e9aliser des recettes de\nbanana bread\n. Mais aussi des\nmuffins \u00e0 la banane\nou tout autre recette n\u00e9cessitant de la pur\u00e9e de banane. Avec les bananes coup\u00e9es en rondelles \u00e0 vous les smoothies ou milkshakes mais surtout les nice creams ! Genre par exemple un nice cream fruits rouges \ud83d\ude09 ! Sinon ce qui est vraiment cool avec les nice cream, c\u2019est les toppings. Vous pouvez vraiment vous faire plaisir en gr\u00e9 de vos envies ; noix concass\u00e9es, pur\u00e9e d\u2019ol\u00e9agineux, morceaux de chocolat, fruits, granola et j\u2019en passe\u2026\nNice Cream Fruits Rouges (Rapide et Facile)\nDaniela\nEnvie d'une douceur glac\u00e9e? Pr\u00e9parez un nice cream d\u00e9licieux en 5 min avec seulement 2 ingr\u00e9dients!  Que ce soit au petit d\u00e9j, au gouter ou encore en dessert, faites le plein de fruits en version glac\u00e9e !\n4.61\n/5 avec\n74\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nType de plat\nBreakfast, Brunch, Dessert, Go\u00fbter, Snack\nPortions\n2\nportions\nIngr\u00e9dients\n1x\n2x\n3x\n2\nbananes glac\u00e9es\n(pr\u00e9 d\u00e9coup\u00e9es)\n100\ng\nde fruits rouges congel\u00e9s\nInstructions\nD\u00e9poser les bananes glac\u00e9es coup\u00e9es en rondelles et les fruits rouges glac\u00e9s dans un robot mixeur.\nMixer jusqu'\u00e0 obtenir une consistance lisse et homog\u00e8ne.\nTransvaser dans un petit bol ou verrine et ajouter des toppings (ici, quelques fruits et des amandes effil\u00e9es). C'est pr\u00eat  !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCr\u00e8mes et Entremets\n,\nDesserts & Snack\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nbananes glac\u00e9es\n,\ncr\u00e8me glac\u00e9e\n,\nid\u00e9e de dessert fruit\n,\nnice cream\n,\nvegan\n,\nv\u00e9gane\nQuiche aux Tomates Cerises, Fond d\u2019Artichauts et Parmesan (Fond de Quinoa)\nCookies Vegan Chocolat Noir et Huile d\u2019Olive\n1 thought on \u201cNice Cream Fruits Rouges (Rapide et Facile)\u201d\nLadyMilonguera\ndit\u00a0:\n2 mai 2021 \u00e0 18 h 15 min\nBelle id\u00e9e cette nice cream !\nchargement\u2026\nR\u00e9pondre\n4.61 from 74 votes (\n73 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

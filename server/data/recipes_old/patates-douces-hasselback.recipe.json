@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "title": "Patates douces hasselback",
+    "description": "Une fa\u00e7on de cuisiner les pommes de terre qui nous vient de Su\u00e8de. Il s'agit d'entailler de fines tranches dans le l\u00e9gume, sans le trancher compl\u00e8tement, puis de les faire cuire au four apr\u00e8s les avoir badigeonn\u00e9s d'une marinade.",
+    "servings": 3,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "hassalback",
+      "patate douce",
+      "hiver",
+      "accompagnements"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/patate-douce-hasselback-1-of-10.jpg",
+    "nationality": "Swedish",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Seul d\u00e9savantage : la cuisson est longue. Il faut compter entre 1h et 1h30 en fonction de la taille des l\u00e9gumes.",
+      "A la base, \u00e7a se fait surtout avec des pommes de terre. Mais en vrai, on peut utiliser cette m\u00e9thode avec la plupart des l\u00e9gumes racines.",
+      "J'ai bien envie de tester avec des navets et des carottes. Vous en pensez quoi ?",
+      "Pour finir, si vous testez cette recette de Patates douces hasselback, n'h\u00e9sitez pas \u00e0 nous dire ce que vous en avez pens\u00e9 en commentaire."
+    ],
+    "slug": "patates-douces-hasselback",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/patate-douce-hasselback-1-of-10.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/12/21/patates-douces-hasselback/",
+    "image": "images/patates-douces-hasselback.webp",
+    "createdAt": "2026-02-09T21:41:51.089051",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 137.0,
+    "totalCookingTime": 47.0,
+    "nutritionPerServing": {
+      "calories": 327.6,
+      "protein": 13.8,
+      "fat": 12.5,
+      "carbs": 38.6,
+      "fiber": 6.0,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sweet_potatoes",
+      "name": "patates douces",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9es",
+      "notes": "3 \u00e0 5 pi\u00e8ce",
+      "optional": false,
+      "name_en": "Sweet potatoes"
+    },
+    {
+      "id": "olive_oil_marinade",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9, pour badigeonner",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "paprika_marinade",
+      "name": "paprika",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "paprika"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "oregano_marinade",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 170.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "citron, jus",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "olive_oil_sauce",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "paprika_sauce",
+      "name": "paprika",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "paprika"
+    },
+    {
+      "id": "oregano_sauce",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    }
+  ],
+  "tools": [
+    "mixeur"
+  ],
+  "steps": [
+    {
+      "id": "peel_potatoes",
+      "action": "\u00c9plucher les patates.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "patates douces hasselback",
+      "uses": [
+        "sweet_potatoes"
+      ],
+      "produces": "peeled_sweet_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_potatoes",
+      "action": "Couper des tranches dans les patates douces sans les couper compl\u00e8tement. Pour cela, vous pouvez poser des cuill\u00e8res en bois de chaque c\u00f4t\u00e9 de la patate douce.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "patates douces hasselback",
+      "uses": [
+        "peeled_sweet_potatoes"
+      ],
+      "produces": "sliced_sweet_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "patates douces hasselback",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_with_oil",
+      "action": "D\u00e9poser les patates dans un plat et les badigeonner g\u00e9n\u00e9reusement d'huile, en en mettant dans les interstices.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "patates douces hasselback",
+      "uses": [
+        "sliced_sweet_potatoes",
+        "olive_oil_marinade"
+      ],
+      "produces": "oiled_sweet_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_potatoes",
+      "action": "Saler, poivrer. Ajouter les \u00e9pices et badigeonner. Il doit y avoir un fond d'huile dans le plat.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "patates douces hasselback",
+      "uses": [
+        "oiled_sweet_potatoes",
+        "salt",
+        "pepper",
+        "paprika_marinade",
+        "rosemary",
+        "oregano_marinade"
+      ],
+      "produces": "seasoned_sweet_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_potatoes",
+      "action": "Enfourner pour 1h30. Sortir 2 ou 3 fois du four en cours de cuisson pour badigeonner les patates avec l'huile au fond du plat.",
+      "duration": "PT1H30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "patates douces hasselback",
+      "uses": [
+        "seasoned_sweet_potatoes"
+      ],
+      "produces": "baked_hasselback_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "Placer tous les ingr\u00e9dients dans un mixeur et mixer jusqu'\u00e0 obtenir une consistance lisse.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "greek_yogurt",
+        "feta",
+        "garlic",
+        "lemon_juice",
+        "olive_oil_sauce",
+        "paprika_sauce",
+        "oregano_sauce"
+      ],
+      "produces": "yogurt_feta_sauce",
+      "requires": [],
+      "visualCue": "consistance lisse"
+    },
+    {
+      "id": "serve",
+      "action": "Servir les patates douces hasselback avec la sauce.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "baked_hasselback_potatoes",
+        "yogurt_feta_sauce"
+      ],
+      "produces": "patates_douces_hasselback_complete",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "patates_douces_hasselback_complete",
+  "originalText": "Patates douces hasselback - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 d\u00e9cembre 2022\nPatates douces hasselback\nAller \u00e0 la recette\nVoici des Patates douces hasselback ! Vous connaissez ?\nC\u2019est une fa\u00e7on de cuisiner les pommes de terre qui nous vient de Su\u00e8de. Je ne sais pas ce que hasselback signifie pr\u00e9cis\u00e9ment. S\u00fbrement quelque chose \u00e0 voir avec leur dos ? Back ?\nEn tout cas, il s\u2019agit d\u2019entailler de fines tranches dans le l\u00e9gume, sans le trancher compl\u00e8tement.\nPuis de les faire cuire au four apr\u00e8s les avoir badigeonn\u00e9s d\u2019une marinade. G\u00e9n\u00e9ralement avec de l\u2019huile ou du beurre fondu et des \u00e9pices.\nOn obtient alors de jolis l\u00e9gumes. Croustillants gr\u00e2ce aux multiples entailles et fondant\u00a0 l\u2019int\u00e9rieur. Seul d\u00e9savantage : la cuisson est longue. Il faut compter entre 1h et 1h30 en fonction de la taille des l\u00e9gumes.\nA la base, \u00e7a se fait surtout avec des pommes de terre. Mais en vrai, on peut utiliser cette m\u00e9thode avec la plupart des l\u00e9gumes racines. Et m\u00eame avec les courges butternut.\nJ\u2019ai bien envie de tester avec des navets et des carottes. Vous en pensez quoi ?\nEn attendant, si vous cherchez des id\u00e9es pour cuisiner vos patates douces, je vous conseille les recettes suivantes.\nPatate douce r\u00f4tie au sirop d\u2019\u00e9rable\n,\nfrites de patate douce\net\ntartines de patates douces\n.\nPour finir, si vous testez cette recette de Patates douces hasselback, n\u2019h\u00e9sitez pas \u00e0 nous dire ce que vous en avez pens\u00e9 en commentaire.\nPatates douces hasselback\n4.49\n/5 avec\n116\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\n30\nminutes\nmin\nIngr\u00e9dients\n3\n\u00e0 5 patates douces\n\u00e0 compl\u00e9ter \u00e9ventuellement avec des pommes de terre\nhuile d\u2019olive\nsel\npoivre\npaprika\nromarin et origan (ou autre \u00e9pice)\nPour la sauce\n170\ng\nde yaourt grec\n100\ng\nde feta\n1\ngousse d\u2019ail\nle jus d\u2019\u00bd citron\n1\nc\u00e0s d\u2019huile d\u2019olive\n\u00bd\nc\u00e0c de paprika\n1\nc\u00e0c d\u2019origan\nInstructions\nPour les patates douces\n\u00c9plucher les patates.\nCouper des tranches dans les patates douces sans les couper compl\u00e8tement. Pour cela, vous pouvez poser des cuill\u00e8res en bois de chaque c\u00f4t\u00e9 de la patate douce.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nD\u00e9poser les patates dans un plat et les badigeonner g\u00e9n\u00e9reusement d\u2019huile, en en mettant dans les interstices.\nSaler, poivrer. Ajouter les \u00e9pices et badigeonner.\nIl doit y avoir un fond d\u2019huile dans le plat.\nEnfourner pour 1h30. Sortir 2 ou 3 fois du four en cours de cuisson pour badigeonner les patates avec l\u2019huile au fond du plat.\nPour la sauce\nPlacer tous les ingr\u00e9dients dans un mixeur et mixer jusqu\u2019\u00e0 obtenir une consistance lisse.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nHiver\n,\nPatate Douce\n,\nRecettes Sal\u00e9es\nTags:\nhassalback\n,\npatate douce\nRoul\u00e9s sans saucisse (vegan) : l\u2019ap\u00e9ro malin qui bluffe tout le monde\nRillettes vegan\u00a0: la version v\u00e9g\u00e9tale filandreuse et ultra gourmande\n1 thought on \u201cPatates douces hasselback\u201d\nChristelle\ndit\u00a0:\n1 f\u00e9vrier 2025 \u00e0 13 h 26 min\nTest\u00e9e ce midi. La recette a \u00e9t\u00e9 un succ\u00e8s. Comme d\u2019habitude avec Free the Pickle \ud83e\udd70\nchargement\u2026\nR\u00e9pondre\n4.49 from 116 votes (\n115 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 47.0
+}

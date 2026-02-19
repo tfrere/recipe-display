@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "Ramen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d'inspiration Japonaise)",
+    "description": "Pour ma premi\u00e8re recette de Ramen sur le blog, je vous propose un Ramen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d'inspiration Japonaise) !",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "ramen",
+      "ramen miso",
+      "ramen v\u00e9g\u00e9tarien",
+      "recette asiatique",
+      "recette japonaise",
+      "soupe japonaise",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps",
+      "soupes"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Ramen-vegetarien-miso-et-tahini-3-of-3.jpg",
+    "nationality": "Japanese",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'ai cr\u00e9\u00e9 cette recette pour MonBento.",
+      "Pour d'autres id\u00e9es de repas \u00e0 emporter, voir la recette de nouilles chow mein et la soupe coco-citronnelle.",
+      "Vous pouvez pr\u00e9parer les garnitures pendant que le bouillon mijote.",
+      "A d\u00e9gagner chaud !"
+    ],
+    "slug": "ramen-vegetarien-au-miso-et-tahini-soupe-d-inspiration-japonaise",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Ramen-vegetarien-miso-et-tahini-3-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/07/30/ramen-vegetarien-au-miso-et-tahini/",
+    "image": "images/ramen-vegetarien-au-miso-et-tahini-soupe-d-inspiration-japonaise.webp",
+    "createdAt": "2026-02-09T20:28:57.418240",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 78.0,
+    "totalCookingTime": 53.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 462.1,
+      "protein": 20.1,
+      "fat": 17.6,
+      "carbs": 57.5,
+      "fiber": 5.5,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 15,
+      "totalIngredients": 17,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9 et hach\u00e9 finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9es finement",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "nori",
+      "name": "feuille de nori",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "cass\u00e9e en petits morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "nori sheet"
+    },
+    {
+      "id": "huile_vegetale",
+      "name": "huile v\u00e9g\u00e9tale",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "bouillon_cube_legumes",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "\u00e9miett\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.7,
+      "unit": "L",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini semi-complet",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "bomb\u00e9e",
+      "optional": false,
+      "name_en": "semi-whole tahini"
+    },
+    {
+      "id": "sauce_soja_tamari",
+      "name": "sauce soja tamari",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "miso_blanc",
+      "name": "miso blanc",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso"
+    },
+    {
+      "id": "vinaigre_de_riz",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "huile_de_sesame",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "nouilles_de_ble",
+      "name": "nouilles de bl\u00e9",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "wheat noodles"
+    },
+    {
+      "id": "oeufs_frais",
+      "name": "oeufs frais",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh eggs"
+    },
+    {
+      "id": "bicarbonate_de_soude",
+      "name": "bicarbonate de soude",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "champignons_shiitakes",
+      "name": "champignons shiitak\u00e9s",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "nettoy\u00e9s et coup\u00e9s en lamelles",
+      "notes": "ou champignons de paris bruns",
+      "optional": false,
+      "name_en": "shiitake mushrooms"
+    },
+    {
+      "id": "ail_presse",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cebettes",
+      "name": "c\u00e9bettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "d\u00e9taill\u00e9es en tron\u00e7ons de 4-5cm et coup\u00e9es en 4 dans la longueur",
+      "notes": null,
+      "optional": false,
+      "name_en": "scallions"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9es et coup\u00e9es en juliennes",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "huile",
+      "name": "huile",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Oil"
+    }
+  ],
+  "tools": [
+    "Mixeur (optionnel pour hacher)",
+    "Casserole",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "prep_aromatiques",
+      "action": "\u00c9plucher et hacher finement (dans un mixeur ou au couteau) le gingembre et l'ail. Casser la feuille de nori en petits morceaux.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "gingembre_frais",
+        "ail",
+        "nori"
+      ],
+      "produces": "aromatiques_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_aromatiques",
+      "action": "Faire chauffer l'huile v\u00e9g\u00e9tale dans une casserole \u00e0 feu moyen. Y faire revenir l'ail, le gingembre et la feuille de nori pendant 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "aromatiques_haches",
+        "huile_vegetale"
+      ],
+      "produces": "aromatiques_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_bouillon_base",
+      "action": "Ajouter le bouillon cube \u00e9miett\u00e9 et l'eau. Remuer et ajouter le tahini et la sauce soja. Laisser mijoter 25min.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "aromatiques_revenus",
+        "bouillon_cube_legumes",
+        "eau",
+        "tahini",
+        "sauce_soja_tamari"
+      ],
+      "produces": "bouillon_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "finir_bouillon",
+      "action": "A la fin de la cuisson, ajouter le miso, le vinaigre et l'huile de s\u00e9same. M\u00e9langer et retirer du feu.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "bouillon_base",
+        "miso_blanc",
+        "vinaigre_de_riz",
+        "huile_de_sesame"
+      ],
+      "produces": "bouillon_fini",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_nouilles",
+      "action": "Faire bouillir un grand volume d'eau et faire cuire les nouilles en suivant les indications du paquet. Quand elles sont cuites, les conserver dans de l'eau froide.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garnitures",
+      "uses": [
+        "nouilles_de_ble"
+      ],
+      "produces": "nouilles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_oeufs",
+      "action": "Faire bouillir de l'eau avec 1 c\u00e0s de bicarbonate de soude et mettre les \u0153ufs \u00e0 cuire 6 min (pour des \u0153ufs mollets coulants) ou 8 min (pour des \u0153ufs moins coulants). \u00c9plucher, couper en deux et r\u00e9server.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garnitures",
+      "uses": [
+        "oeufs_frais",
+        "bicarbonate_de_soude"
+      ],
+      "produces": "oeufs_mollets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shittakes",
+      "action": "Nettoyer et couper les shiitak\u00e9s en lamelles. Faire chauffer une po\u00eale \u00e0 feu moyen avec un filet d'huile. Presser la gousse d'ail dans la po\u00eale et ajouter les lamelles de shiitak\u00e9s. Faire revenir une dizaine de minutes en remuant r\u00e9guli\u00e8rement. R\u00e9server.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garnitures",
+      "uses": [
+        "champignons_shiitakes",
+        "ail_presse",
+        "huile"
+      ],
+      "produces": "shiitakes_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prep_cebettes",
+      "action": "D\u00e9tailler les c\u00e9bettes en tron\u00e7ons de 4-5cm et couper les tron\u00e7ons en 4 dans la longueur.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnitures",
+      "uses": [
+        "cebettes"
+      ],
+      "produces": "cebettes_pretees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prep_carottes",
+      "action": "\u00c9plucher et couper les carottes en juliennes. R\u00e9server.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnitures",
+      "uses": [
+        "carottes"
+      ],
+      "produces": "carottes_juliennes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler_ramen",
+      "action": "Verser du bouillon dans un grand bol. Ajouter \u00bc de chaque garniture.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "pour_servir",
+      "uses": [
+        "bouillon_fini",
+        "nouilles_cuites",
+        "oeufs_mollets",
+        "shiitakes_sautes",
+        "cebettes_pretees",
+        "carottes_juliennes"
+      ],
+      "produces": "ramen_vegetarien_miso_tahini",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "ramen_vegetarien_miso_tahini",
+  "originalText": "Ramen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d'inspiration Japonaise) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 juillet 2021\nRamen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d\u2019inspiration Japonaise)\nAcc\u00e9der directement \u00e0 la recette\nPour ma premi\u00e8re recette de Ramen sur le blog, je vous propose un Ramen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d\u2019inspiration Japonaise) !\nJ\u2019ai attendu 3 ans pour vous \u00e9crire une recette de ramen ! J\u2019ai un peu honte !\nPour tout vous dire, \u00e7a fait tr\u00e8s longtemps que le ramen figure dans la longue liste des id\u00e9es de recettes que j\u2019ai envie de faire et de photographier. J\u2019adore ce plat ! Et j\u2019\u00e9tais vraiment trop heureuse de trouver une version v\u00e9g\u00e9 qui me satisfasse !\nJ\u2019ai utilis\u00e9 une base de gingembre, ail et tahini pour apporter du go\u00fbt et de la richesse au bouillon. Bien s\u00fbr, de la feuille de nori et du miso blanc (\u00e0 ajouter en fin de cuisson).\nEt apr\u00e8s, une touche de vinaigre de riz et d\u2019huile de s\u00e9same pour perfectionner le go\u00fbt !\nPuis, de toute fa\u00e7on, au-del\u00e0 du bouillon, le kiffe est dans la garniture. Vous n\u2019\u00eates pas d\u2019accord ? Des \u0153ufs mollets, des shiitak\u00e9s grill\u00e9s \u00e0 l\u2019ail, de la c\u00e9bette ! Miam miam miam !\nJ\u2019ai cr\u00e9\u00e9 cette recette de Ramen V\u00e9g\u00e9tarien au Miso et Tahini pour\nMonBento\n, notre c\u00e9l\u00e8bre collab qu\u2019on ne pr\u00e9sente plus \ud83d\ude09\nEt pour d\u2019autres id\u00e9es de repas \u00e0 emporter de ce bento je vous conseille d\u2019aller checker la recette de\nnouilles chow mein\n, et la\nsoupe coco-citronnelle\n!\nRamen V\u00e9g\u00e9tarien au Miso et Tahini\nNatacha\n4.54\n/5 avec\n79\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le bouillon\n20\ng\nde gingembre frais\n3\ngousses d\u2019ail\n1\nfeuille de nori\n1\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale\n1\nbouillon cube de l\u00e9gumes\n1.7\nL\nd\u2019eau\n3\nc\u00e0s bomb\u00e9e de tahini semi-complet\n3\nc\u00e0s de sauce soja tamari\n2\nc\u00e0s de miso blanc\n1\nc\u00e0s de vinaigre de riz\n1\nc\u00e0s d\u2019huile de s\u00e9same\nPour la garniture\n250g de nouilles de bl\u00e9\n4\noeufs frais\n1\nc\u00e0s de bicarbonate de soude\n15\nchampignons shiitak\u00e9s\nou champignons de paris bruns \u00e0 d\u00e9faut\n1\ngousse d\u2019ail\n2\nc\u00e9bettes\n2\ncarottes\nInstructions\nPr\u00e9paration du bouillon\n\u00c9plucher et hacher finement (dans un mixeur ou au couteau) le gingembre et l\u2019ail. Casser la feuille de nori en petits morceaux.\nFaire chauffer l\u2019huile v\u00e9g\u00e9tale dans une casserole \u00e0 feu moyen. Y faire revenir l\u2019ail, le gingembre et la feuille de nori pendant 3min.\nAjouter le bouillon cube \u00e9miett\u00e9 et l\u2019eau. Remuer et ajouter le tahini et la sauce soja. Laisser mijoter 25min.\nVous pouvez pr\u00e9parer les garnitures pendant ce temps.\nA la fin de la cuisson, ajouter le miso, le vinaigre et l\u2019huile de s\u00e9same. M\u00e9langer et retirer du feu.\nPr\u00e9paration des garnitures\nFaire bouillir un grand volume d\u2019eau et faire cuire les nouilles en suivant les indications du paquet. Quand elles sont cuites, les conserver dans de l\u2019eau froide.\nFaire bouillir de l\u2019eau avec 1 c\u00e0s de bicarbonate de soude et mettre les \u0153ufs \u00e0 cuire 6 min (pour des \u0153ufs mollets coulants) ou 8 min (pour des \u0153ufs moins coulants). \u00c9plucher, couper en deux et r\u00e9server.\nNettoyer et couper les shiitak\u00e9s en lamelles. Faire chauffer une po\u00eale \u00e0 feu moyen avec un filet d\u2019huile. Presser la gousse d\u2019ail dans la po\u00eale et ajouter les lamelles de shiitak\u00e9s. Faire revenir une dizaine de minutes en remuant r\u00e9guli\u00e8rement. R\u00e9server.\nD\u00e9tailler les c\u00e9bettes en tron\u00e7ons de 4-5cm et couper les tron\u00e7ons en 4 dans la longueur.\n\u00c9plucher et couper les carottes en juliennes. R\u00e9server.\nPour servir\nVerser du bouillon dans un grand bol. Ajouter \u00bc de chaque garniture.\nA d\u00e9guster chaud !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nSoupes\nTags:\nramen\n,\nramen miso\n,\nramen v\u00e9g\u00e9tarien\n,\nrecette asiatique\n,\nrecette de ramen\n,\nrecette japonaise\n,\nsoupe japonaise\nBuddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous\nBrochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)\n7 thoughts on \u201cRamen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d\u2019inspiration Japonaise)\u201d\nCaptain Cavern\ndit\u00a0:\n30 juillet 2021 \u00e0 17 h 09 min\nC\u2019est g\u00e9nial de pouvoir choisir  le nombre de personnes pour qui on fait la recette!\nchargement\u2026\nR\u00e9pondre\nChristine Z?\ndit\u00a0:\n23 ao\u00fbt 2021 \u00e0 21 h 26 min\nEssay\u00e9 ce soir et approuv\u00e9 ! Miam. Et en plus pas compliqu\u00e9.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 ao\u00fbt 2021 \u00e0 16 h 17 min\nOh merciii !\nchargement\u2026\nR\u00e9pondre\nNa\ndit\u00a0:\n8 octobre 2022 \u00e0 12 h 14 min\nJ\u2019ai remplac\u00e9 les cebettes par du chou chinois coup\u00e9 en fines lamelles, je n\u2019avais pas de gingembre ni de nori sous la main mais c\u2019\u00e9tait quand m\u00eame d\u00e9licieux! J\u2019ai fait cuire les p\u00e2tes directement dans le bouillon pour ne pas multiplier les casseroles sur le feu puis je les ai rep\u00each\u00e9es \u00e0 l\u2019\u00e9cumoire pour les r\u00e9partir dans les bols. Merci pour la recette facile et rapide!\nchargement\u2026\nR\u00e9pondre\nPat\ndit\u00a0:\n12 novembre 2022 \u00e0 20 h 06 min\nTr\u00e8s bonne recette pour une premi\u00e8re.  Toute la famille a valid\u00e9\nchargement\u2026\nR\u00e9pondre\nS\u00e9verine T.\ndit\u00a0:\n18 octobre 2025 \u00e0 22 h 30 min\nMerci \ud83d\ude4f Je ne pensais plus appr\u00e9cier les talents depuis que je suis devenue v\u00e9g\u00e9tarienne, moi qui ne j\u2019aurais que pour le bouillon de tonkotsu. Mais quel r\u00e9gal!! Pour la garniture je me suis fait plaisir: champignons shiitakes et enoris, carottes, courgettes, bok choy.\nIl n\u2019y a rien \u00e0 changer aux quantit\u00e9s c\u2019est parfaitement dos\u00e9 et cela c\u2019est tellement appr\u00e9ciable.\nchargement\u2026\nR\u00e9pondre\nS\u00e9verine T.\ndit\u00a0:\n18 octobre 2025 \u00e0 22 h 32 min\nMerci \ud83d\ude4f Je ne pensais plus appr\u00e9cier les ramens depuis que je suis devenue v\u00e9g\u00e9tarienne, moi qui ne j\u2019aurais que pour le bouillon de tonkotsu. Mais quel r\u00e9gal!! Pour la garniture je me suis fait plaisir: champignons shiitakes et enoris, carottes, courgettes, bok choy et un oeuf ajimata. Il n\u2019y a rien \u00e0 changer aux quantit\u00e9s c\u2019est parfaitement dos\u00e9 et cela c\u2019est tellement appr\u00e9ciable.\nchargement\u2026\nR\u00e9pondre\n4.54 from 79 votes (\n74 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 53.0
+}

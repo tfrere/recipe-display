@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "title": "Soupe de nouilles au curry rouge et cacahu\u00e8te",
+    "description": "Une soupe r\u00e9confortante inspir\u00e9e des saveurs tha\u00ef, combinant le piquant du curry rouge et la douceur de la cacahu\u00e8te.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe",
+      "vegan",
+      "champignon",
+      "chou",
+      "nouilles",
+      "curry",
+      "cacahu\u00e8te"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/soupe-de-nouilles-curry-rouge-thai-cacahuete-1-of-4.jpg",
+    "nationality": "Thai",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le curry rouge varie en intensit\u00e9 en fonction des marques, ajustez la quantit\u00e9 en fonction de votre tol\u00e9rance au piquant.",
+      "Le gingembre frais peut se conserver tr\u00e8s bien au cong\u00e9lateur.",
+      "Pour une touche diff\u00e9rente, vous pouvez remplacer les cacahu\u00e8tes par des noix de cajou.",
+      "Facultatif : Saupoudrez de graines de s\u00e9same et ajoutez du piment selon vos go\u00fbts."
+    ],
+    "slug": "soupe-de-nouilles-au-curry-rouge-et-cacahuete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/soupe-de-nouilles-curry-rouge-thai-cacahuete-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/15/soupe-curry-rouge-cacahuete/",
+    "image": "images/soupe-de-nouilles-au-curry-rouge-et-cacahuete.webp",
+    "createdAt": "2026-02-09T22:34:25.085753",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 37.0,
+    "totalCookingTime": 17.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 711.5,
+      "protein": 21.0,
+      "fat": 36.6,
+      "carbs": 79.9,
+      "fiber": 8.2,
+      "confidence": "high",
+      "resolvedIngredients": 15,
+      "matchedIngredients": 16,
+      "totalIngredients": 17,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "gingembre",
+      "name": "gingembre frais",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "curcuma",
+      "name": "curcuma",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "zeste_citron_vert",
+      "name": "zeste d'un demi-citron vert bio",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lime zest"
+    },
+    {
+      "id": "pate_curry_rouge",
+      "name": "p\u00e2te de curry rouge",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 ajuster",
+      "optional": false,
+      "name_en": "red curry paste"
+    },
+    {
+      "id": "beurre_cacahuete",
+      "name": "beurre de cacahu\u00e8te",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "peanut butter"
+    },
+    {
+      "id": "creme_coco",
+      "name": "cr\u00e8me de coco",
+      "quantity": 250.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "jus_citron_vert",
+      "name": "jus d'un citron vert",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lime juice"
+    },
+    {
+      "id": "sauce_soja_1",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 750.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "750 ml \u00e0 1 litre",
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "huile_vegetale_1",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "champignons",
+      "name": "champignons de Paris",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "tofu",
+      "name": "tofu",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tofu"
+    },
+    {
+      "id": "sauce_soja_2",
+      "name": "sauce soja",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "chou_blanc",
+      "name": "chou blanc",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white cabbage"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre fra\u00eeche",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "fresh cilantro"
+    },
+    {
+      "id": "nouilles",
+      "name": "nouilles de b\u00e9l\u00e9 ou de riz",
+      "quantity": 280.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice noodles"
+    },
+    {
+      "id": "huile_vegetale_2",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Casserole",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "mixer_pate_aromates",
+      "action": "Mixez l'oignon, l'ail et le gingembre jusqu'\u00e0 obtenir une p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "onion",
+        "ail",
+        "gingembre"
+      ],
+      "produces": "pate_aromates",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_pate_aromates",
+      "action": "Chauffez 1 c\u00e0s d'huile v\u00e9g\u00e9tale neutre dans une casserole. Faites revenir la p\u00e2te pendant 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "pate_aromates",
+        "huile_vegetale_1"
+      ],
+      "produces": "pate_aromates_revenue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_curcuma_zeste",
+      "action": "Ajoutez le curcuma et le zeste de citron vert. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "pate_aromates_revenue",
+        "curcuma",
+        "zeste_citron_vert"
+      ],
+      "produces": "pate_epicee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_curry_beurre_cacahuete",
+      "action": "Incorporez la p\u00e2te de curry et le beurre de cacahu\u00e8te. M\u00e9langez et laissez revenir 2-3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "pate_epicee",
+        "pate_curry_rouge",
+        "beurre_cacahuete"
+      ],
+      "produces": "base_curry_cacahuete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_liquides_mijoter",
+      "action": "Versez la cr\u00e8me de coco, le jus de citron vert, la sauce soja et le sucre. M\u00e9langez bien, puis ajoutez l'eau. Laissez mijoter \u00e0 feu doux pendant 20min.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "base_curry_cacahuete",
+        "creme_coco",
+        "jus_citron_vert",
+        "sauce_soja_1",
+        "sucre",
+        "eau"
+      ],
+      "produces": "bouillon_curry_cacahuete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_champignons_tofu",
+      "action": "Hachez grossi\u00e8rement les champignons et \u00e9miettez le tofu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "champignons",
+        "tofu"
+      ],
+      "produces": "champignons_haches_tofu_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_champignons_tofu",
+      "action": "Faites chauffer 1 c\u00e0s d'huile v\u00e9g\u00e9tale dans une po\u00eale. Faites revenir les champignons et le tofu pendant environ 10min, jusqu'\u00e0 ce que les champignons aient rendu leur eau.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "champignons_haches_tofu_emiette",
+        "huile_vegetale_2"
+      ],
+      "produces": "champignons_tofu_revenus",
+      "requires": [],
+      "visualCue": "champignons ont rendu leur eau"
+    },
+    {
+      "id": "deglacer_soja",
+      "action": "D\u00e9glacez avec la sauce soja.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "champignons_tofu_revenus",
+        "sauce_soja_2"
+      ],
+      "produces": "champignons_tofu_glaces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_chou",
+      "action": "\u00c9mincez tr\u00e8s finement le chou.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "chou_blanc"
+      ],
+      "produces": "chou_emince",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_nouilles",
+      "action": "Faites cuire les nouilles dans un grand volume d'eau chaude, selon les instructions du paquet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "nouilles"
+      ],
+      "produces": "nouilles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "repartir_nouilles",
+      "action": "R\u00e9partissez les nouilles dans les bols.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "nouilles_cuites"
+      ],
+      "produces": "bols_avec_nouilles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_bouillon",
+      "action": "Versez le bouillon chaud par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "bols_avec_nouilles",
+        "bouillon_curry_cacahuete"
+      ],
+      "produces": "bols_avec_nouilles_et_bouillon",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_garnitures",
+      "action": "Ajoutez les champignons, le chou blanc et la coriandre fra\u00eeche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "bols_avec_nouilles_et_bouillon",
+        "champignons_tofu_glaces",
+        "chou_emince",
+        "coriandre"
+      ],
+      "produces": "soupe_nouilles_curry_rouge_cacahuete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez imm\u00e9diatement et d\u00e9gustez !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "soupe_nouilles_curry_rouge_cacahuete"
+      ],
+      "produces": "soupe_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_servie",
+  "originalText": "Soupe au curry rouge et cacahu\u00e8te : un voyage Tha\u00ef \u00e0 la maison\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 f\u00e9vrier 2025\nSoupe au curry rouge et cacahu\u00e8te : des saveurs qui nous rappellent la Tha\u00eflande\nEnvie d\u2019un plat r\u00e9confortant qui vous rappelle les plats que vous avez degust\u00e9 en Tha\u00eflande ? D\u00e9couvrez cette\nsoupe au curry rouge et \u00e0 la cacahu\u00e8te\n, une recette simple et savoureuse inspir\u00e9e des saveurs tha\u00ef. Facile \u00e0 r\u00e9aliser, elle combine le piquant du curry rouge et la douceur de la cacahu\u00e8te, pour un r\u00e9sultat \u00e0 la fois \u00e9pic\u00e9 et r\u00e9confortant. Et le meilleur dans tout \u00e7a ? Vous pouvez recr\u00e9er cette recette directement dans votre cuisine, sans besoin de faire un long voyage.\nTable des mati\u00e8res\n1\nUne soupe qui change pour un voyage culinaire \u00e0 la maison\n2\nPourquoi vous allez adorer cette soupe au curry rouge et cacahu\u00e8te ?\n3\nLes ingr\u00e9dients cl\u00e9s et leurs astuces\n4\nSoupe de nouilles au curry rouge et cacahu\u00e8te\n5\nLes bienfaits de cette soupe au curry rouge et \u00e0 la cacahu\u00e8te\n6\nLes recettes similaires \u00e0 essayer\nUne soupe qui change pour un voyage culinaire \u00e0 la maison\nL\u2019id\u00e9e de cette soupe m\u2019est venue en pensant aux saveurs d\u00e9licieuses que l\u2019on retrouve souvent dans les restaurants tha\u00ef. Le curry rouge et la cacahu\u00e8te se marient \u00e0 merveille pour offrir une combinaison de piquant, de douceur et de cr\u00e9meux. J\u2019ai voulu cr\u00e9er une version accessible de ces plats, que vous pouvez r\u00e9aliser facilement chez vous. La soupe au curry rouge est un classique dans les restaurants, et j\u2019ai d\u00e9cid\u00e9 de la revisiter pour qu\u2019elle soit accessible \u00e0 tous, avec des ingr\u00e9dients simples que l\u2019on peut facilement trouver en magasin.\nPourquoi vous allez adorer cette soupe au curry rouge et cacahu\u00e8te ?\nCette soupe au curry rouge et \u00e0 la cacahu\u00e8te vous s\u00e9duira pour plusieurs raisons :\nUn voyage culinaire sans bouger de chez vous\n: Oubliez les billets d\u2019avion, cette soupe transporte vos papilles directement en Tha\u00eflande. Gr\u00e2ce \u00e0 la combinaison unique du curry rouge \u00e9pic\u00e9 et de la douceur de la cacahu\u00e8te, chaque cuill\u00e8re est un d\u00e9paysement assur\u00e9.\nRapide et simple \u00e0 pr\u00e9parer\n: En seulement\n15 minutes de pr\u00e9paration\net\n30 minutes de cuisson\n, vous obtenez un plat r\u00e9confortant, parfait pour les soirs o\u00f9 vous manquez de temps mais ne voulez pas sacrifier la qualit\u00e9 de votre repas.\n\u00c0 personnaliser selon vos go\u00fbts\n: Que vous soyez fan de piquant ou que vous pr\u00e9f\u00e9riez une version plus douce, cette soupe s\u2019adapte \u00e0 vos envies. Ajustez la quantit\u00e9 de p\u00e2te de curry rouge en fonction de votre tol\u00e9rance au piquant. Vous avez aussi la possibilit\u00e9 de jouer avec les ingr\u00e9dients, par exemple en rempla\u00e7ant les cacahu\u00e8tes par des noix de cajou pour une touche diff\u00e9rente tout en conservant la texture cr\u00e9meuse.\nLes ingr\u00e9dients cl\u00e9s et leurs astuces\nPour r\u00e9aliser cette soupe, les principaux ingr\u00e9dients sont le\ncurry rouge\n, la\ncacahu\u00e8te\net le\ngingembre frais\n.\nCurry rouge\n: Vous pouvez trouver du curry rouge  en p\u00e2te dans les magasins bio, les \u00e9piceries asiatiques, et m\u00eame au rayon \u201cproduits du monde\u201d des grandes surfaces. Attention, le curry rouge varie en intensit\u00e9 en fonction des marques, alors ajustez la quantit\u00e9 en fonction de votre tol\u00e9rance au piquant.\nGingembre frais\n: Ce rhizome peut se conserver tr\u00e8s bien au cong\u00e9lateur. Vous n\u2019aurez plus \u00e0 vous inqui\u00e9ter de le gaspiller, et vous pourrez en avoir sous la main \u00e0 tout moment.\nLa\nsauce soja\net le\ncurry rouge\nse conservent longtemps (plusieurs mois) au frais, ce qui en fait des produits incontournables \u00e0 toujours avoir \u00e0 disposition.\nSoupe de nouilles au curry rouge et cacahu\u00e8te\n4.43\n/5 avec\n63\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le bouillon\n1\noignon\n15\ng\nde gingembre frais\n5\ngousses d\u2019ail\n1 \u00bd\nc\u00e0c de curcuma\nle zeste d\u2019un demi-citron vert bio\n3\nc\u00e0s de p\u00e2te de curry rouge\n\u00e0 ajuster\n2\nc\u00e0s de beurre de cacahu\u00e8te\n250\nml\nde cr\u00e8me de coco\nle jus d\u2019un citron vert\n4\nc\u00e0s de sauce soja\n1\nc\u00e0c de sucre\n750\nml\n\u00e0 1 litre d\u2019eau\nPour la garniture\n400\ng\nde champignons de Paris\n200\ng\nde tofu\n3\nc\u00e0s de sauce soja\n\u00bc\nde chou blanc\nCoriandre fra\u00eeche\n280\ng\nde nouilles de b\u00e9l\u00e9 ou de riz\n70g /pers\nInstructions\nPour le bouillon\nMixez l\u2019oignon, l\u2019ail et le gingembre jusqu\u2019\u00e0 obtenir une p\u00e2te.\nChauffez 1 c\u00e0s d\u2019huile v\u00e9g\u00e9tale neutre dans une casserole. Faites revenir la p\u00e2te pendant 3-4 minutes.\nAjoutez le curcuma et le zeste de citron vert. M\u00e9langez bien.\nIncorporez la p\u00e2te de curry et le beurre de cacahu\u00e8te. M\u00e9langez et laissez revenir 2-3 minutes.\nVersez la cr\u00e8me de coco, le jus de citron vert, la sauce soja et le sucre. M\u00e9langez bien, puis ajoutez l\u2019eau. Laissez mijoter \u00e0 feu doux pendant 20 minutes.\nPour la garniture\nHachez grossi\u00e8rement les champignons et \u00e9miettez le tofu.\nFaites chauffer 1 c\u00e0s d\u2019huile v\u00e9g\u00e9tale dans une po\u00eale. Faites revenir les champignons et le tofu pendant environ 10 minutes, jusqu\u2019\u00e0 ce que les champignons aient rendu leur eau.\nD\u00e9glacez avec la sauce soja.\n\u00c9mincez tr\u00e8s finement le chou.\nFaites cuire les nouilles dans un grand volume d\u2019eau chaude, selon les instructions du paquet.\nPour le service\nR\u00e9partissez les nouilles dans les bols.\nVersez le bouillon chaud par-dessus.\nAjoutez les champignons, le chou blanc et la coriandre fra\u00eeche.\nFacultatif : Saupoudrez de graines de s\u00e9same et ajoutez du piment selon vos go\u00fbts.\nServez imm\u00e9diatement et d\u00e9gustez !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes bienfaits de cette soupe au curry rouge et \u00e0 la cacahu\u00e8te\nCette soupe est non seulement savoureuse, mais aussi pleine de bienfaits pour la sant\u00e9 !\nCurry rouge\n: En plus de son go\u00fbt unique, le curry rouge est riche en antioxydants, vitamines et min\u00e9raux.\nCacahu\u00e8tes\n: Les cacahu\u00e8tes sont une excellente source de prot\u00e9ines et de graisses saines, parfaites pour vous donner de l\u2019\u00e9nergie. Elles contiennent aussi de la vitamine E, qui aide \u00e0 prot\u00e9ger vos cellules, et du magn\u00e9sium, bon pour vos muscles et votre syst\u00e8me nerveux.\nGingembre\n: Le gingembre ajoute une saveur piquante \u00e0 la soupe tout en apportant de nombreux avantages pour la sant\u00e9. Il est connu pour ses effets anti-inflammatoires et aide \u00e0 la digestion.\nLes recettes similaires \u00e0 essayer\nSi vous aimez cette soupe, vous pourriez \u00e9galement appr\u00e9cier ces recettes de\nplats d\u2019inspiration asiatique\ndisponibles sur le blog :\nSoupe de nouilles curry vert simplifi\u00e9\nNouilles express sauce miso cacahu\u00e8te\nBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\nCes recettes compl\u00e8tent parfaitement la soupe au curry rouge et vous feront voyager encore plus loin dans les saveurs d\u2019Asie.\nAvec sa combinaison de saveurs \u00e9pic\u00e9es et douces, cette\nsoupe au curry rouge et \u00e0 la cacahu\u00e8te\nvous offrira un v\u00e9ritable voyage culinaire sans quitter votre cuisine. Facile \u00e0 pr\u00e9parer et rapide, elle est id\u00e9ale pour un d\u00eener r\u00e9confortant ou un repas rapide entre amis. Alors, laissez-vous emporter par ces saveurs tha\u00ef et r\u00e9galez-vous !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChampignon\n,\nChoux\n,\nHiver\n,\nOignon\n,\nPlats & Accompagnements\n,\nSoupes\nTags:\nsoupe\n,\nvegan\nSoupe fa\u00e7on Pastina italienne : une recette r\u00e9gressive et r\u00e9confortante\nSoupe de Betteraves et petit \u00e9peautre fa\u00e7on Borscht\u00a0: la recette qui va vous r\u00e9concilier avec la betterave !\n1 thought on \u201cSoupe au curry rouge et cacahu\u00e8te : des saveurs qui nous rappellent la Tha\u00eflande\u201d\nvezo\ndit\u00a0:\n16 f\u00e9vrier 2025 \u00e0 8 h 34 min\nMerci pour cette recette, cette soupe est une de mes pr\u00e9f\u00e9r\u00e9es au restaurant !\nEst-ce que tu pourrais nous recommander une (ou des) marque de curry rouge, j\u2019ai des mauvais souvenirs de certaines trouv\u00e9es en grande surface :/\nchargement\u2026\nR\u00e9pondre\n4.43 from 63 votes (\n63 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 17.0
+}

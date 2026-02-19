@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "title": "Sabl\u00e9s Sal\u00e9s Olives noires et Thym",
+    "description": "Faciles et rapides \u00e0 r\u00e9aliser, ces petits sabl\u00e9s aux saveurs m\u00e9diterran\u00e9ennes sont parfaits en ap\u00e9ritif ou en accompagnement de vos dips.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "olives noires",
+      "sabl\u00e9s sal\u00e9s",
+      "thym",
+      "ap\u00e9ro",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/sables-olive-thym-1-of-2.jpg",
+    "nationality": "French/Mediterranean",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaits pour les ap\u00e9ros de l'\u00e9t\u00e9, \u00e0 tremper dans du houmous maison ou une tartinade.",
+      "Peuvent \u00eatre personnalis\u00e9s : version avec du fromage, des tomates s\u00e9ch\u00e9es, etc.",
+      "Se conservent jusqu'\u00e0 3 jours dans un contenant herm\u00e9tique."
+    ],
+    "slug": "sables-sales-olives-noires-et-thym",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/sables-olive-thym-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/18/sables-sales-olives-noires-et-thym/",
+    "image": "images/sables-sales-olives-noires-et-thym.webp",
+    "createdAt": "2026-02-09T20:30:49.526641",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 82.0,
+    "totalCookingTime": 2.0,
+    "nutritionPerServing": {
+      "calories": 1475.5,
+      "protein": 27.8,
+      "fat": 90.8,
+      "carbs": 135.2,
+      "fiber": 5.2,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 175.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "butter",
+      "name": "beurre doux",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "black_olives",
+      "name": "olives noires",
+      "quantity": 20.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "d\u00e9noyaut\u00e9es et \u00e9minc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Black olives"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "battu",
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "Fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    }
+  ],
+  "tools": [
+    "Robot muni du batteur plat \u00e0 bords flexible (optionnel)",
+    "Emporte-pi\u00e8ce d'environ 4 cm"
+  ],
+  "steps": [
+    {
+      "id": "prepare_olives",
+      "action": "D\u00e9noyauter les olives noires et les \u00e9mincer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "black_olives"
+      ],
+      "produces": "prepared_olives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un robot ou un grand saladier, m\u00e9langer la farine, le sel, le thym et les olives \u00e9minc\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "salt",
+        "thyme",
+        "prepared_olives"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter",
+      "action": "Couper le beurre en petits morceaux et l'ajouter au m\u00e9lange. Sabler du bout des doigts ou \u00e0 l'aide du robot pendant 1-2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "butter"
+      ],
+      "produces": "butter_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_egg",
+      "action": "Ajouter l'\u0153uf battu et m\u00e9langer jusqu'\u00e0 former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter_mix",
+        "egg"
+      ],
+      "produces": "dough_ball",
+      "requires": [],
+      "visualCue": "former une boule"
+    },
+    {
+      "id": "chill_dough",
+      "action": "Former une boule, l'aplatir l\u00e9g\u00e8rement, l'envelopper dans un torchon et r\u00e9server au frais pendant 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "dough_ball"
+      ],
+      "produces": "chilled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_and_cut",
+      "action": "Sur une feuille de papier cuisson l\u00e9g\u00e8rement farin\u00e9, abaisser la p\u00e2te jusqu'\u00e0 une \u00e9paisseur de 5 \u00e0 7 mm. \u00c0 l'aide d'un emporte-pi\u00e8ce, d\u00e9couper les sabl\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chilled_dough"
+      ],
+      "produces": "cut_cookies",
+      "requires": [],
+      "visualCue": "\u00e9paisseur de 5 \u00e0 7 mm"
+    },
+    {
+      "id": "bake",
+      "action": "Transf\u00e9rer les sabl\u00e9s sur une plaque et enfourner. Cuire pendant 20min ou jusqu'\u00e0 ce qu'ils soient l\u00e9g\u00e8rement dor\u00e9s.",
+      "duration": "PT20M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cut_cookies"
+      ],
+      "produces": "baked_cookies",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "l\u00e9g\u00e8rement dor\u00e9s"
+    },
+    {
+      "id": "cool",
+      "action": "Laisser refroidir avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_cookies"
+      ],
+      "produces": "cooled_cookies",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir les sabl\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_cookies",
+        "fleur_de_sel"
+      ],
+      "produces": "sables_sales_olives_thym",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sables_sales_olives_thym",
+  "originalText": "Sabl\u00e9s Sal\u00e9s Olives noires et Thym - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 ao\u00fbt 2021\nSabl\u00e9s Sal\u00e9s Olives noires et Thym\nBon c\u2019est vrai que j\u2019avais dit qu\u2019on prenait un peu de vacances pendant le mois d\u2019ao\u00fbt avec Nat\u2026 Mais quand on aime quelque chose comme nous aimons notre blog\u2026 Et bien c\u2019est difficile de s\u2019en d\u00e9tacher compl\u00e8tement. Me voil\u00e0 donc aujourd\u2019hui avec une nouvelle recette de petits sabl\u00e9s sal\u00e9s aux olives noires et thym!\nJe les adore, ils sont parfaits pour les ap\u00e9ros de l\u2019\u00e9t\u00e9. Vous savez ceux avec du ros\u00e9 bien frais ou une bonne bi\u00e8re (mes deux boissons de l\u2019\u00e9t\u00e9). Mais surtout \u00e0 tremper dans du\nHoumous maison\nou tout autre tartinade du blog (il faudra qu\u2019on vous pr\u00e9pare un article sp\u00e9cial ap\u00e9ro je pense). \u00c7a vous dit?\nCe que j\u2019aime avec ces petits sabl\u00e9s sal\u00e9s c\u2019est que vous pouvez les utiliser comme une base et les personnaliser en fonction de vos go\u00fbts! Pourquoi pas faire une version avec du fromage? Ou alors avec des tomates s\u00e9ch\u00e9es ou encore les deux? N\u2019h\u00e9sitez pas \u00e0 partager vos essais concluants (ou m\u00eame les moins concluants ahaha).\nSabl\u00e9s sal\u00e9s Olives noires et Thym\nDaniela\nFaciles et rapides \u00e0 r\u00e9aliser, ces petits sabl\u00e9s aux saveurs m\u00e9diterran\u00e9ennes sont parfaits en ap\u00e9ritif ou en accompagnement de vos dips.\n4.46\n/5 avec\n66\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nTemps de repos\n1\nheure\nh\nType de plat\nAppetizer, Snack\nIngr\u00e9dients\n175\ng\nde farine\n1\nc\u00e0c de sel\n90\ng\nde beurre doux\n20\nolives noires\n2\nbranches de thym\n1\noeuf\nFleur de sel\nInstructions\nD\u00e9noyauter les olives noires et les \u00e9mincer.\nDans le bol de votre robot muni du batteur plat \u00e0 bords flexible ou dans un grand saladier, m\u00e9langer la farine, le sel, le thym et les olives.\nCouper le beurre en petits morceaux et ajouter l\u2019ajouter au m\u00e9lange de farine. Sabler du bout des doigts ou l\u2019aide du robot pendant 1 ou 2 min.\nAjouter l\u2019\u0153uf battu de sel et m\u00e9langer jusqu\u2019\u00e0 former une boule.\nFormer une boule, l\u2019aplatir l\u00e9g\u00e8rement, l\u2019envelopper dans un torchon et r\u00e9server au frais environ 1h.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nSur une feuille de papier cuisson l\u00e9g\u00e8rement farin\u00e9, abaisser la p\u00e2te jusqu\u2019\u00e0 une \u00e9paisseur de 5 \u00e0 7 mm et \u00e0 l\u2019aide d\u2019un emporte pi\u00e8ce d\u2019environ 4 cm, d\u00e9couper les petits sabl\u00e9s dans la p\u00e2te.\nTransf\u00e9rer sur une plaque et enfourner, cuire pendant 20 min ou jusqu\u2019\u00e0 ce que les sabl\u00e9s soient l\u00e9g\u00e8rement dor\u00e9s.\nLaisser refroidir avant de servir. Vous pouvez les conserver jusqu\u2019\u00e0 3 jours dans un contenant herm\u00e9tique.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAp\u00e9ros\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sal\u00e9es\nTags:\nolives noires\n,\nsabl\u00e9s sal\u00e9s\n,\nthym\nBrochettes de Champignons\nRoul\u00e9s de Concombre au Fromage Frais\n3 thoughts on \u201cSabl\u00e9s Sal\u00e9s Olives noires et Thym\u201d\nLadyMilonguera\ndit\u00a0:\n18 ao\u00fbt 2021 \u00e0 11 h 32 min\nQuelle jolie id\u00e9e ces sabl\u00e9s\nchargement\u2026\nR\u00e9pondre\nMarilo\u00e9\ndit\u00a0:\n29 ao\u00fbt 2021 \u00e0 20 h 48 min\nJe les ai essay\u00e9 ce weekend : super r\u00e9sultat. Ils sont bien parfum\u00e9s \u00e0 l\u2019olive et bien sabl\u00e9s. Rapide \u00e0 faire en plus!\nchargement\u2026\nR\u00e9pondre\nJo\u00ebl Gissy\ndit\u00a0:\n21 octobre 2025 \u00e0 0 h 55 min\nJe les ai faits exactement d\u2019apr\u00e8s la recette, avec une l\u00e9g\u00e8re pinc\u00e9e de cumin moulu \u00e0 la place du thym et de petits morceaux de chorizo, en quantit\u00e9 \u00e9quivalente aux olives, mais j\u2019essaierai votre recette originelle. C\u2019est parfait. Il y en a pour toute la famille et un ami (boulanger) demain soir. Ah oui, avec une bi\u00e8re !\nchargement\u2026\nR\u00e9pondre\n4.46 from 66 votes (\n63 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 2.0
+}

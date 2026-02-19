@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "title": "Salsa de tomates au gingembre et coriandre",
+    "description": "J'adore cette Salsa de tomates au gingembre et coriandre ! Je me suis inspir\u00e9e de la salsa \"classique\" sud-am\u00e9ricaine. Avec de l'ail et de la coriandre. Et j'ai ajout\u00e9 le gingembre, qu'on trouve plut\u00f4t dans la cuisine cr\u00e9ole.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "salsa",
+      "tomate",
+      "\u00e9t\u00e9",
+      "accompagnement",
+      "ap\u00e9ro",
+      "salade"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Salsa-tomate-3-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se conserve plusieurs jours au frais dans un bocal ferm\u00e9, mais gagne en \"piquant\" avec le temps.",
+      "Se d\u00e9guste avec des chips tortillas, du riz, dans un sandwich ou un wrap.",
+      "Recette sans mati\u00e8re grasse."
+    ],
+    "slug": "salsa-de-tomates-au-gingembre-et-coriandre",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Salsa-tomate-3-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/08/09/salsa-de-tomates-au-gingembre-et-coriandre/",
+    "image": "images/salsa-de-tomates-au-gingembre-et-coriandre.jpg",
+    "createdAt": "2026-02-09T21:28:08.063868",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 201.1,
+      "protein": 6.1,
+      "fat": 1.3,
+      "carbs": 45.9,
+      "fiber": 10.5,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tomatoes",
+      "name": "tomates bien m\u00fbres",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coup\u00e9es en petits d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "finement hach\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "ginger"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "finement hach\u00e9es",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "finement \u00e9minc\u00e9",
+      "notes": "petit",
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "cilantro",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": "hach\u00e9e",
+      "notes": "tiges et feuilles",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "lime_juice",
+      "name": "jus de citron vert",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "jus d'\u00bd citron vert",
+      "optional": false,
+      "name_en": "lime juice"
+    },
+    {
+      "id": "vinegar",
+      "name": "vinaigre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vinegar"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    }
+  ],
+  "tools": [
+    "Grand bol"
+  ],
+  "steps": [
+    {
+      "id": "dice_tomatoes",
+      "action": "Couper les 500g de tomates en petits d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomatoes"
+      ],
+      "produces": "diced_tomatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_aromatics",
+      "action": "Hacher finement le 15g de gingembre, les 2 gousses d'ail, le 1 petit oignon rouge et la \u00bd botte de coriandre (tiges et feuilles).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ginger",
+        "garlic",
+        "red_onion",
+        "cilantro"
+      ],
+      "produces": "chopped_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_ingredients",
+      "action": "Combiner tous les ingr\u00e9dients hach\u00e9s dans un grand bol avec le jus d'\u00bd citron vert, la 1 c\u00e0s de vinaigre et la 1 c\u00e0c de sucre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_tomatoes",
+        "chopped_aromatics",
+        "lime_juice",
+        "vinegar",
+        "sugar"
+      ],
+      "produces": "combined_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_well",
+      "action": "Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_salsa"
+      ],
+      "produces": "mixed_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_salsa",
+      "action": "Laisser reposer 30min (ou plus) avant de d\u00e9guster.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_salsa"
+      ],
+      "produces": "rested_salsa",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "rested_salsa",
+  "originalText": "Salsa de tomates au gingembre et coriandre - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 ao\u00fbt 2022\nSalsa de tomates au gingembre et coriandre\nAller \u00e0 la recette\nJ\u2019adore cette Salsa de tomates au gingembre et coriandre ! Je me suis inspir\u00e9e de la salsa \u201cclassique\u201d sud-am\u00e9ricaine. Avec de l\u2019ail et de la coriandre. Et j\u2019ai ajout\u00e9 le gingembre, qu\u2019on trouve plut\u00f4t dans la cuisine cr\u00e9ole. Rien de tr\u00e8s innovant. Simplement la combinaison des go\u00fbts qui me plaisent.\nCe n\u2019est pas ma premi\u00e8re recette de salsa. Au tout d\u00e9but de notre aventure Free The Pickle, je vous avais propos\u00e9\nune recette plus \u201ctraditionnelle\u201d\n. Et un peu plus tard, j\u2019avais travaill\u00e9 avec Daniela sur cette\nrecette de aji\n. Ce n\u2019est pas vraiment une salsa mais plut\u00f4t une sauce/condiment qui accompagne les plats.\nJ\u2019aime manger la salsa avec des chips tortillas. Mais aussi en mode salade/sauce avec du riz. Ou n\u2019importe quelle c\u00e9r\u00e9ale. Un \u0153uf au plus, et voil\u00e0 un repas rapide et sain ! Surtout qu\u2019il n\u2019y a pas de mati\u00e8re grasse dans cette recette de Salsa de tomates au gingembre et coriandre !\nElle peut aussi se d\u00e9guster dans un sandwich ou dans un wrap.\nVous pouvez conserver cette Salsa de tomates au gingembre et coriandre plusieurs jours au frais. Dans un bocal ou un tupperware ferm\u00e9. Mais sachez tout de m\u00eame qu\u2019elle gagnera en \u201cpiquant\u201d. En effet, les go\u00fbts de l\u2019ail et du gingembre se d\u00e9veloppent avec le temps.\u00a0Et si ce genre de recettes bien fra\u00eeches vous plaisent. Je vous conseille de tester\nla salsa \u00e0 la p\u00eache\n! Ou\ncelle aux fraises\n!\nJe me demande bien avec quel fruit ou l\u00e9gume je vais bien pouvoir tester la prochaine fois ! Si vous avez des id\u00e9es en t\u00eate\u2026 Surtout, n\u2019h\u00e9sitez pas \u00e0 les partager en commentaire ! On est toujours heureuses de tester des nouvelles id\u00e9es et de nouvelles recettes ! D\u2019ailleurs, quelle est l\u2019association la plus improbable que vous ayez test\u00e9e ?\nSalsa de tomates au gingembre et coriandre\n4.51\n/5 avec\n67\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nPortions\n1\ngrand bol\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde tomates bien m\u00fbres\n15\ng\nde gingembre finement hach\u00e9\nenv 1 c\u00e0s\n2\ngousses d\u2019ail finement hach\u00e9es\n1\npetit oignon rouge finement \u00e9minc\u00e9\n\u00bd\nbotte de coriandre hach\u00e9e\ntiges et feuilles\nle jus d\u2019\u00bd citron vert\n1\nc\u00e0s de vinaigre\n1\nc\u00e0c de sucre\nInstructions\nCouper les tomates en petits d\u00e9s.\nHacher le gingembre, l\u2019ail, l\u2019oignon rouge et la coriandre (tiges et feuilles).\nCombiner dans un grand bol avec le jus de citron, le vinaigre et le sucre.\nBien m\u00e9langer.\nLaisser reposer une trentaine de minutes (ou plus) avant de d\u00e9guster avec des tortillas, des chips ou du riz !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\n\u00c9t\u00e9\n,\nSalades\n,\nTomate\nTags:\nsalsa\n,\nsalsa tomate\n,\ntomate\nP\u00e2tes aux tomates cerises ail et burrata\nCr\u00e8me de feta piment\u00e9e\n8 thoughts on \u201cSalsa de tomates au gingembre et coriandre\u201d\nma\u00eblle\ndit\u00a0:\n9 ao\u00fbt 2022 \u00e0 12 h 33 min\nLa combinaison la plus improbable que j\u2019ai test\u00e9 est sans doute une bruschetta thon en bo\u00eete et p\u00e9pite de chocolat en Italie ^^\nPas vraiment mauvais mais tr\u00e8s \u00e9trange et avouons-le \u00e7a n\u2019\u00e9tais pas vraiment une symbiose gustative, plut\u00f4t un go\u00fbt de thon et de chocolat\u2026\nMerci pour les recettes j\u2019adore recevoir la newseletter c\u2019est un peu comme recevoir une carte postale au milieu de pub et des factures dans la bo\u00eete aux lettres \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n22 ao\u00fbt 2022 \u00e0 12 h 57 min\nOhh merci Ma\u00eblle ! Tu mets un sourire sur mon visage !\nchargement\u2026\nR\u00e9pondre\nBosha\ndit\u00a0:\n10 ao\u00fbt 2022 \u00e0 13 h 26 min\nJ\u2019ai not\u00e9 vite fait les ingr\u00e9dients et la recette, pour la r\u00e9aliser de suite.\nVerdict : Fabuleux, j\u2019avoue \u00eatre \u00e9tonn\u00e9e par le r\u00e9sultat, car je n\u2019ai jamais eu l\u2019id\u00e9e d\u2019associ\u00e9 le gingembre et la tomate !!!\nEt pourtant, je consomme \u00e9norm\u00e9ment de gingembre : boisson froide et chaude,  repas indien, j\u2019ai m\u00eame invent\u00e9 une tartinade de gingembre, et j\u2019en fais pouss\u00e9 dans mon jardin !\nEt ta Salsa, va maintenant faire partie de mes addicts au gingembre\nMille mercis, c\u2019est de la Bombe !!!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n22 ao\u00fbt 2022 \u00e0 12 h 56 min\nHi Bosha !! Super, je suis ravie que la recette te plaise tant !\nchargement\u2026\nR\u00e9pondre\nL\u00e9a\ndit\u00a0:\n31 juillet 2024 \u00e0 19 h 08 min\nJ\u2019adore !! C\u2019est devenu une de mes incontournables de l\u2019\u00e9t\u00e9 !!\nchargement\u2026\nR\u00e9pondre\nkaren\ndit\u00a0:\n31 mai 2025 \u00e0 12 h 14 min\nJai ajout\u00e9 une piment rouge., et un peu de concombre. D\u00e9licieusement pinquante sans \u00eatre trop.\nchargement\u2026\nR\u00e9pondre\nDEMONCHEAUX\ndit\u00a0:\n8 septembre 2025 \u00e0 12 h 56 min\nJ\u2019ai d\u00e9couvert cette recette par hasard\nJe l\u2019ai test\u00e9 et j\u2019ai beaucoup appr\u00e9ci\u00e9 mes amis \u00e9galement. Une autre fa\u00e7on de manger de la tomate en cette p\u00e9riode estivale. Agr\u00e9able en bouche par l\u2019originalit\u00e9 et la fra\u00eecheur que l\u2019on appr\u00e9cie imm\u00e9diatement.\nJe la mets dans mon cahier de recettes\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n15 septembre 2025 \u00e0 9 h 58 min\nMerci !\nchargement\u2026\nR\u00e9pondre\n4.51 from 67 votes (\n63 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

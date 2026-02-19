@@ -1,0 +1,553 @@
+{
+  "metadata": {
+    "title": "Samoussas vegan \u00e0 l'indienne et aux PST",
+    "description": "Samoussas d'inspiration punjabi avec une garniture aux prot\u00e9ines de soja textur\u00e9es, pomme de terre et carotte, frits ou cuits au four.",
+    "servings": 20,
+    "prepTime": "PT45M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "vegan",
+      "indien",
+      "automne",
+      "hiver",
+      "printemps",
+      "\u00e9t\u00e9",
+      "prot\u00e9ines de soja textur\u00e9es",
+      "pomme de terre",
+      "friture",
+      "ap\u00e9ro"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Samoussas-punjabis-vegan-1-of-3.jpg",
+    "nationality": "Indian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La cuisson en friture n'est pas obligatoire. Vous pouvez aussi les cuire au four \u00e0 180\u00b0C pendant 25-30min. Pensez \u00e0 les enduire d'un peu d'huile tout de m\u00eame.",
+      "J'ai une pr\u00e9f\u00e9rence pour la friture. C'est vrai, c'est moins sain et votre logement en gardera l'odeur quelque temps ! Mais c'est tellement bon !",
+      "J'ai mang\u00e9 ces Samoussas avec un peu de p\u00e2te de piment. Mais vous pouvez innover !"
+    ],
+    "slug": "samoussas-vegan-a-l-indienne-et-aux-pst",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Samoussas-punjabis-vegan-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/30/samoussas-vegan-a-lindienne-et-aux-pst/",
+    "image": "images/samoussas-vegan-a-l-indienne-et-aux-pst.webp",
+    "createdAt": "2026-02-09T21:40:49.489962",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 71.0,
+    "totalCookingTime": 21.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 104.4,
+      "protein": 5.3,
+      "fat": 0.5,
+      "carbs": 19.5,
+      "fiber": 2.1,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 12,
+      "totalIngredients": 16,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "proteines_soja_texturees",
+      "name": "prot\u00e9ines de soja textur\u00e9es",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Textured soy protein"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "eau_bouillante",
+      "name": "eau bouillante",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Boiling water"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 375.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "graines_cumin",
+      "name": "graines de cumin",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "huile_neutre_pate",
+      "name": "huile neutre",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "eau_chaude",
+      "name": "eau chaude",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hot water"
+    },
+    {
+      "id": "oignon_jaune",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "pomme_de_terre",
+      "name": "pomme de terre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 150g",
+      "optional": false,
+      "name_en": "potato"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "belle",
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "huile_neutre_wok",
+      "name": "huile neutre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "graines_moutarde",
+      "name": "graines de moutarde",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mustard seeds"
+    },
+    {
+      "id": "graines_cumin_garniture",
+      "name": "graines de cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "curcuma",
+      "name": "curcuma",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "coriandre_moulee",
+      "name": "coriandre moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground coriander"
+    },
+    {
+      "id": "garam_massala",
+      "name": "garam massala",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garam masala"
+    },
+    {
+      "id": "huile_friture",
+      "name": "huile neutre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Neutral oil"
+    }
+  ],
+  "tools": [
+    "Wok",
+    "Rouleau \u00e0 p\u00e2tisserie"
+  ],
+  "steps": [
+    {
+      "id": "rehydrater_pst",
+      "action": "Placer les prot\u00e9ines de soja dans un bol et verser par-dessus l'eau bouillante et la sauce soja. Couvrir et laisser tremper au moins 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "pour r\u00e9hydrater les pst",
+      "uses": [
+        "proteines_soja_texturees",
+        "sauce_soja",
+        "eau_bouillante"
+      ],
+      "produces": "pst_rehydrates",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_pate",
+      "action": "Placer tous les ingr\u00e9dients dans un saladier et m\u00e9langer jusqu'\u00e0 obtenir un m\u00e9lange uniforme. Former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pour la p\u00e2te",
+      "uses": [
+        "farine",
+        "sel",
+        "graines_cumin",
+        "huile_neutre_pate",
+        "eau_chaude"
+      ],
+      "produces": "pate_melangee",
+      "requires": [],
+      "visualCue": "m\u00e9lange uniforme"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "Couvrir la boule d'un torchon propre et laisser reposer 15min \u00e0 temp\u00e9rature ambiante.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pour la p\u00e2te",
+      "uses": [
+        "pate_melangee"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_legumes",
+      "action": "\u00c9plucher et couper en petits d\u00e9s l'oignon, la pomme de terre et la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "oignon_jaune",
+        "pomme_de_terre",
+        "carotte"
+      ],
+      "produces": "legumes_coupes",
+      "requires": [],
+      "visualCue": "petits d\u00e9s"
+    },
+    {
+      "id": "hacher_gingembre",
+      "action": "Hacher finement le gingembre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "gingembre_frais"
+      ],
+      "produces": "gingembre_hache",
+      "requires": [],
+      "visualCue": "finement hach\u00e9"
+    },
+    {
+      "id": "revenir_epices",
+      "action": "Faire chauffer 2 c\u00e0s d'huile dans un wok \u00e0 feu moyen et y faire revenir toutes les \u00e9pices avec le gingembre pendant 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "huile_neutre_wok",
+        "graines_moutarde",
+        "graines_cumin_garniture",
+        "curcuma",
+        "coriandre_moulee",
+        "garam_massala",
+        "gingembre_hache"
+      ],
+      "produces": "epices_revenues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Ajouter les l\u00e9gumes coup\u00e9s en d\u00e9s et faire revenir 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "legumes_coupes",
+        "epices_revenues"
+      ],
+      "produces": "legumes_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_pst",
+      "action": "Verser les PST r\u00e9hydrat\u00e9s (avec le jus qui reste dans le bol) dans le wok. M\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "pst_rehydrates",
+        "legumes_revenus"
+      ],
+      "produces": "garniture_melangee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mijoter_garniture",
+      "action": "Couvrir et laisser mijoter une vingtaine de minutes ou jusqu'\u00e0 ce que les l\u00e9gumes soient tendres.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pour la garniture",
+      "uses": [
+        "garniture_melangee"
+      ],
+      "produces": "garniture_cuite",
+      "requires": [],
+      "visualCue": "l\u00e9gumes tendres"
+    },
+    {
+      "id": "etaler_pate",
+      "action": "\u00c9taler la p\u00e2te \u00e0 l'aide d'un rouleau \u00e0 p\u00e2tisserie sur 2-3mm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "2-3mm d'\u00e9paisseur"
+    },
+    {
+      "id": "decouper_cercles",
+      "action": "\u00c0 l'aide d'un bol, d\u00e9couper des cercles de 15cm de diam\u00e8tre. Vous devriez pouvoir en faire 10.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "cercles_pate",
+      "requires": [],
+      "visualCue": "cercles de 15cm"
+    },
+    {
+      "id": "couper_cercles",
+      "action": "Couper chaque cercle en 2.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "cercles_pate"
+      ],
+      "produces": "demi_cercles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_cones",
+      "action": "Mouiller la moiti\u00e9 de la longueur droite (pas le c\u00f4t\u00e9 arrondi) avec votre doigt tremp\u00e9 dans l'eau. Rabattre sur lui-m\u00eame pour former un c\u00f4ne et sceller en pin\u00e7ant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "demi_cercles"
+      ],
+      "produces": "cones_vides",
+      "requires": [],
+      "visualCue": "c\u00f4nes scell\u00e9s"
+    },
+    {
+      "id": "remplir_cones",
+      "action": "D\u00e9poser une grosse c\u00e0s de garniture dans le c\u00f4ne. Mouiller le haut du c\u00f4ne et le fermer en pin\u00e7ant avec vos doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "cones_vides",
+        "garniture_cuite"
+      ],
+      "produces": "samoussas_formes",
+      "requires": [],
+      "visualCue": "samoussas ferm\u00e9s"
+    },
+    {
+      "id": "chauffer_huile",
+      "action": "Faire chauffer l'huile de friture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "huile_friture"
+      ],
+      "produces": "huile_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "frire_samoussas",
+      "action": "D\u00e9poser les samoussas \u00e0 cuire dans l'huile chaude et les retourner pour une cuisson uniforme. Les cuire en plusieurs fois si n\u00e9cessaire.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pour former et cuire les samoussas",
+      "uses": [
+        "samoussas_formes",
+        "huile_chaude"
+      ],
+      "produces": "samoussas_frits",
+      "requires": [],
+      "visualCue": "belle couleur brune"
+    }
+  ],
+  "finalState": "samoussas_frits",
+  "originalText": "Samoussas vegan \u00e0 l\u2019indienne et aux PST - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 novembre 2022\nSamoussas vegan \u00e0 l\u2019indienne et aux PST\nAller \u00e0 la recette\nJe suis trop fi\u00e8re de cette recette de Samoussas vegan \u00e0 l\u2019indienne et aux PST !\nComme \u00e9voqu\u00e9 auparavant, je cuisine assez peu avec les similis carn\u00e9s. Globalement, j\u2019utilise parfois des prot\u00e9ines de soja textur\u00e9es et parfois du\ntofu\n. Pas grand chose de plus !\nMais l\u00e0, on parlait de PST sur\ninstagram\net j\u2019avais envie de les utiliser dans une recette vraiment diff\u00e9rente !\nEn g\u00e9n\u00e9ral, les PST finissent dans\nla bolo\net les lasagnes. Et \u00e7a leur va tr\u00e8s bien ! C\u2019est une super fa\u00e7on de les cuisiner. Mais j\u2019avais vraiment envie d\u2019originalit\u00e9.\nJ\u2019ai d\u00e9j\u00e0 cuisin\u00e9 des\nsamoussas indiens en c\u00f4ne\net j\u2019ai trouv\u00e9 \u00e7a super sympa. Du coup, cette fois-ci je me suis lourdement inspir\u00e9e des samoussas Punjabi. Ils sont g\u00e9n\u00e9ralement cuisin\u00e9s avec de la viande hach\u00e9e. Et des petits l\u00e9gumes. Notamment des pommes de terre et des petits pois.\nComme c\u2019est l\u2019hiver, j\u2019ai remplac\u00e9 les petits pois par des carottes. Et comme on est sur un blog v\u00e9g\u00e9tarien, j\u2019ai remplac\u00e9 la viande hach\u00e9e par des PST. Et mon dieu ! \u00c7a fonctionne \u00e0 merveille !\nLe r\u00e9sultat est fabuleux ! M\u00eame pas besoin de sauce pour relever le tout !\nLa cuisson en friture n\u2019est pas obligatoire. Vous pouvez aussi les cuire au four \u00e0 180\u00b0C pendant 25-30min. Pensez \u00e0 les enduire d\u2019un peu d\u2019huile tout de m\u00eame. Cela \u00e9tant dit, j\u2019ai une pr\u00e9f\u00e9rence pour la friture. C\u2019est vrai, c\u2019est moins sain et votre logement en gardera l\u2019odeur quelque temps ! Mais c\u2019est tellement bon ! Et la p\u00e2te forme des petites bulles et devient super croustillante !\nJ\u2019ai mang\u00e9 ces Samoussas vegan \u00e0 l\u2019indienne et aux PST avec un peu de p\u00e2te de piment. Mais vous pouvez innover ! N\u2019h\u00e9sitez pas \u00e0 me dire en commentaire avec quoi vous avez d\u00e9cid\u00e9 de les d\u00e9guster !\nSamoussas vegan \u00e0 l\u2019indienne et aux PST\n4.58\n/5 avec\n54\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n20\nsamoussas\nIngr\u00e9dients\n1x\n2x\n3x\nPour r\u00e9hydrater les PST\n100\ng\nde prot\u00e9ines de soja textur\u00e9es\n75\nml\nde sauce soja\n300\nml\nd\u2019eau bouillante\nPour la p\u00e2te\n375\ng\nde farine\n1\nc\u00e0c de sel\n1.5\nc\u00e0c de graines de cumin\n75\nml\nd\u2019huile neutre\n150\nml\nd\u2019eau chaude\nPour la garniture\n1\noignon jaune\n1\npomme de terre\nenv 150g\n1\nbelle carotte\n10\ng\nde gingembre frais\n2\nc\u00e0s d\u2019huile neutre\n\u00bd\nc\u00e0c de graines de moutarde\n\u00bd\nc\u00e0c de graines de cumin\n\u00bd\nc\u00e0c de curcuma\n\u00bd\nc\u00e0c de coriandre moulue\n1\nc\u00e0c de garam massala\nPour la friture\nHuile neutre\nInstructions\nCommencer par r\u00e9hydrater les prot\u00e9ines de soja en les pla\u00e7ant dans un bol et en versant par-dessus l\u2019eau bouillante et la sauce soja. Couvrir et laisser tremper au moins 15min.\nPr\u00e9parer la p\u00e2te\nPlacer tous les ingr\u00e9dients dans un saladier, et m\u00e9langer jusqu\u2019\u00e0 obtenir un m\u00e9lange uniforme. Former une boule et la couvrir d\u2019un torchon propre. Laisser reposer 15min \u00e0 temp\u00e9rature ambiante.\nPr\u00e9parer la garniture\n\u00c9plucher et couper en petits d\u00e9s l\u2019oignon, la patate et la carotte.\nHacher finement le gingembre.\nFaire chauffer l\u2019huile dans un wok \u00e0 feu moyen et y faire revenir toutes les \u00e9pices avec le gingembre pendant 3-4min.\nAjouter les l\u00e9gumes et faire revenir 10min.\nVerser les PST (avec le jus qui reste dans le bol) dans le wok. M\u00e9langer puis couvrir et laisser mijoter une vingtaine de minutes ou jusqu\u2019\u00e0 ce que les l\u00e9gumes soient tendres.\nPr\u00e9parer les samoussas\nEtaler la p\u00e2te \u00e0 l\u2019aide d\u2019un rouleau \u00e0 p\u00e2tisserie (2-3mm d\u2019\u00e9paisseur). A l\u2019aide d\u2019un bol d\u00e9couper des cercles de 15cm de diam\u00e8tre. Vous devriez pouvoir en faire 10, \u00e9ventuellement, en utilisant les chutes.\nCouper chaque cercle en 2.\nMouiller la moiti\u00e9 de la longueur droite (pas le c\u00f4t\u00e9 arrondi) avec votre doigt tremp\u00e9 dans l\u2019eau. Le rabattre sur lui-m\u00eame pour former un c\u00f4ne, et sceller en pin\u00e7ant l\u00e9g\u00e8rement.\nD\u00e9poser une grosse c\u00e0s de garniture dans le c\u00f4ne. Mouiller le haut du c\u00f4ne et le fermer en pin\u00e7ant avec vos doigts.\nFaire chauffer l\u2019huile et d\u00e9poser les samoussas \u00e0 cuire, les retourner pour une cuisson uniforme. Il faudra certainement le faire en plusieurs fois.\nLes samoussas sont cuits quand ils prennent une belle couleur brune (env 6-7min).\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPetits Pois\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nPomme de terre\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nWok\nRaviolis Poire Chocolat\nPavlova Bananes flamb\u00e9es et Miel de Bourdaine\n3 thoughts on \u201cSamoussas vegan \u00e0 l\u2019indienne et aux PST\u201d\nGirault-Daussan Josette\ndit\u00a0:\n1 d\u00e9cembre 2022 \u00e0 5 h 31 min\nBonjour,  mais c est quoi les PST ?   Je suis l\u00e0 seule ignorante ?  Merci !\nchargement\u2026\nR\u00e9pondre\nCaroline\ndit\u00a0:\n3 d\u00e9cembre 2022 \u00e0 20 h 03 min\nCe sont des Prot\u00e9ines de Soja Textur\u00e9es. On en trouve facilement dans les magasins bios.\nchargement\u2026\nR\u00e9pondre\nflo\ndit\u00a0:\n4 d\u00e9cembre 2022 \u00e0 11 h 42 min\nce sont des Prot\u00e9ines de Soja Textur\u00e9es \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.58 from 54 votes (\n54 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 21.0
+}

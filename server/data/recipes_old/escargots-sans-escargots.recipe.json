@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "title": "Escargots sans escargots",
+    "description": "Une revisite gourmande et v\u00e9g\u00e9tarienne d'un grand classique, o\u00f9 les pleurotes remplacent les escargots, servis dans des conchiglioni avec un beurre persill\u00e9 maison.",
+    "servings": 24,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "champignon",
+      "hiver",
+      "festif",
+      "ap\u00e9ritif",
+      "pleurote",
+      "fran\u00e7ais"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Escargot-pleurotes-1-of-8.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Id\u00e9al pour un ap\u00e9ritif festif ou une entr\u00e9e raffin\u00e9e pour les F\u00eates.",
+      "Permet d'inclure tous les convives, quel que soit leur r\u00e9gime alimentaire.",
+      "Recette facile, m\u00eame pour les cuisiniers d\u00e9butants.",
+      "Vid\u00e9o de la recette disponible sur le site.",
+      "Le beurre d'escargot maison est un v\u00e9ritable r\u00e9gal."
+    ],
+    "slug": "escargots-sans-escargots",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Escargot-pleurotes-1-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/12/19/escargots-sans-escargots-une-revisite-gourmande-et-vegetarienne/",
+    "image": "images/escargots-sans-escargots.webp",
+    "createdAt": "2026-02-09T22:30:32.686098",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 22.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 37.7,
+      "protein": 0.5,
+      "fat": 3.4,
+      "carbs": 1.1,
+      "fiber": 0.3,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "vin_blanc_sec",
+      "name": "vin blanc sec",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry white wine"
+    },
+    {
+      "id": "conchiglioni",
+      "name": "conchiglioni",
+      "quantity": 24.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\"coquilles\"",
+      "optional": false,
+      "name_en": "Conchiglie"
+    },
+    {
+      "id": "echalote",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "persil",
+      "name": "persil",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "parsley"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "petit mixeur",
+    "plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "cut_mushrooms",
+      "action": "Coupez les pleurotes en deux ou trois morceaux selon leur taille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pleurotes",
+      "uses": [
+        "pleurotes"
+      ],
+      "produces": "pleurotes_coupes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_mushrooms",
+      "action": "Faites-les revenir \u00e0 feu moyen-fort dans une po\u00eale avec un filet d'huile d'olive. Faites cuire environ 10min, jusqu'\u00e0 ce qu'elles soient dor\u00e9es et aient rendu leur eau.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pleurotes",
+      "uses": [
+        "pleurotes_coupes",
+        "huile_dolive"
+      ],
+      "produces": "pleurotes_sautees",
+      "requires": [],
+      "visualCue": "dor\u00e9es et aient rendu leur eau"
+    },
+    {
+      "id": "deglaze",
+      "action": "D\u00e9glacez avec le vin blanc et laissez \u00e9vaporer. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pleurotes",
+      "uses": [
+        "pleurotes_sautees",
+        "vin_blanc_sec"
+      ],
+      "produces": "pleurotes_deglacees",
+      "requires": [],
+      "visualCue": "vin \u00e9vapor\u00e9"
+    },
+    {
+      "id": "cook_pasta",
+      "action": "Faites cuire les conchiglioni dans un grand volume d'eau bouillante en suivant les indications du paquet. Optez pour une cuisson l\u00e9g\u00e8rement plus qu'al dente. \u00c9gouttez-les.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pasta",
+      "uses": [
+        "conchiglioni"
+      ],
+      "produces": "conchiglioni_cuits",
+      "requires": [],
+      "visualCue": "l\u00e9g\u00e8rement plus qu'al dente"
+    },
+    {
+      "id": "mix_herbs",
+      "action": "Pendant ce temps, pr\u00e9parez le beurre d'escargot : dans un petit mixeur, placez l'\u00e9chalote, l'ail et le persil. Mixez pour obtenir une consistance hach\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "beurre_escargot",
+      "uses": [
+        "echalote",
+        "ail",
+        "persil"
+      ],
+      "produces": "herbes_hachees",
+      "requires": [],
+      "visualCue": "consistance hach\u00e9e"
+    },
+    {
+      "id": "mix_butter",
+      "action": "Ajoutez le beurre mou, sel et poivre et mixez de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "beurre_escargot",
+      "uses": [
+        "herbes_hachees",
+        "beurre",
+        "sel",
+        "poivre"
+      ],
+      "produces": "beurre_escargot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "beurre_escargot"
+      ],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_pasta",
+      "action": "Remplissez chaque conchiglioni (\u00ab coquille \u00bb) avec une \u00e0 deux pleurotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "conchiglioni_cuits",
+        "pleurotes_deglacees"
+      ],
+      "produces": "conchiglioni_fourres",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter",
+      "action": "Disposez-les dans un plat allant au four, puis recouvrez g\u00e9n\u00e9reusement chaque \u00ab coquille \u00bb avec le beurre d'escargot.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "conchiglioni_fourres",
+        "beurre_escargot"
+      ],
+      "produces": "conchiglioni_beurres",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez pour 12min, jusqu'\u00e0 ce que le beurre fonde et impr\u00e8gne bien les pleurotes.",
+      "duration": "PT12M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "conchiglioni_beurres"
+      ],
+      "produces": "conchiglioni_cuits_au_four",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": "beurre fondu et impr\u00e8gne bien les pleurotes"
+    },
+    {
+      "id": "serve",
+      "action": "Servez rapidement apr\u00e8s cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "conchiglioni_cuits_au_four"
+      ],
+      "produces": "escargots_sans_escargots",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "escargots_sans_escargots",
+  "originalText": "Escargots sans escargots : une revisite gourmande et v\u00e9g\u00e9tarienne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 d\u00e9cembre 2024\nEscargots sans escargots : une revisite gourmande et v\u00e9g\u00e9tarienne\nVous cherchez une id\u00e9e festive, v\u00e9g\u00e9tarienne et originale pour vos repas de F\u00eates ? Ces escargots sans escargots, revisit\u00e9s avec des pleurotes et du beurre persill\u00e9 maison, vont faire sensation. D\u00e9couvrez cette recette facile qui marie tradition et modernit\u00e9.\nEt si on revisitait un grand classique de la cuisine fran\u00e7aise ? Avec cette recette d\u2019escargots sans escargots, les pleurotes remplacent les gast\u00e9ropodes. Pour une version tout aussi savoureuse et \u00e9l\u00e9gante. Une id\u00e9e originale qui s\u00e9duira les amateurs de plats traditionnels, permettra aux v\u00e9g\u00e9tariens de se r\u00e9galer et surprendra vos convives.\nTable des mati\u00e8res\n1\nPourquoi essayer cette recette d\u2019escargots sans escargots ?\n2\nLes ingr\u00e9dients cl\u00e9s pour des escargots v\u00e9g\u00e9tariens aux pleurotes\n3\nUne recette v\u00e9g\u00e9tarienne festive facile \u00e0 r\u00e9aliser\n4\nPourquoi ces escargots v\u00e9g\u00e9tariens feront sensation ?\n5\nEscargots sans escargots\nPourquoi essayer cette recette d\u2019escargots sans escargots ?\nOn sait tous que ce qu\u2019on aime dans les escargots c\u2019est surtout le beurre ! Alors autant laisser ces petites b\u00eates tranquilles !\nCette recette est id\u00e9ale pour ceux qui souhaitent s\u2019initier \u00e0 une cuisine v\u00e9g\u00e9tarienne cr\u00e9ative sans s\u2019aventurer en terrain trop inconnu. Les pleurotes, avec leur texture tendre et leur capacit\u00e9 \u00e0 absorber les ar\u00f4mes, sont parfaits pour cette recette.\nEn utilisant des conchiglioni (\u00ab\u00a0coquilles\u00a0\u00bb en italien), on retrouve le visuel des vrais escargots ! Et c\u2019est nickel pour un ap\u00e9ritif festif ou une entr\u00e9e raffin\u00e9e pour les F\u00eates !\nEn plus, le beurre d\u2019escargot maison au persil est un v\u00e9ritable r\u00e9gal !\nLes ingr\u00e9dients cl\u00e9s pour des escargots v\u00e9g\u00e9tariens aux pleurotes\nLes stars de cette revisite : les pleurotes. Avec leur texture et leur go\u00fbt subtil qui se pr\u00eatent \u00e0 merveille \u00e0 cette recette.\nConchiglioni (\u00ab\u00a0coquilles\u00a0\u00bb) : elles servent de r\u00e9ceptacle gourmand et apportent une touche d\u2019originalit\u00e9.\nBeurre d\u2019escargot maison : r\u00e9alis\u00e9 avec ail, \u00e9chalote et persil, il est la vraie star de cette recette.\nUne recette v\u00e9g\u00e9tarienne festive facile \u00e0 r\u00e9aliser\nCette recette est facile \u00e0 pr\u00e9parer, m\u00eame pour les cuisiniers d\u00e9butants.\nVous trouverez une vid\u00e9o ici.\nEn plus, en faisant le beurre d\u2019escargot directement dans votre mixeur, vous gagnez du temps !\nUne fois les \u00ab\u00a0coquilles\u00a0\u00bb garnies, il ne reste qu\u2019\u00e0 les passer au four pour obtenir un r\u00e9sultat fondant et savoureux.\nSi vous cherchez une recette v\u00e9g\u00e9tarienne cr\u00e9ative, ces coquilles pleurotes au beurre persill\u00e9 vont vous r\u00e9galer.\nPourquoi ces escargots v\u00e9g\u00e9tariens feront sensation ?\nCette revisite v\u00e9g\u00e9tarienne est une excellente fa\u00e7on d\u2019allier tradition et modernit\u00e9. Elle vous permet d\u2019inclure tous vos convives ! Quel que soit leur r\u00e9gime alimentaire !\nL\u2019utilisation des pleurotes dans un plat aussi embl\u00e9matique que les escargots prouve que la cuisine v\u00e9g\u00e9tarienne est inventive, accessible et d\u00e9licieuse.\nSi besoin, vous trouverez\n18 id\u00e9es pour un repas de F\u00eates sans viande\nici !\nEscargots sans escargots\n4.55\n/5 avec\n82\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n24\nescargots\nIngr\u00e9dients\n1x\n2x\n3x\n250\ng\nde pleurotes\n75\nml\nde vin blanc sec\n24\nconchiglioni\n\u00ab\u00a0coquilles\u00a0\u00bb\n1\n\u00e9chalote\n3\ngousses d\u2019ail\n10\nbranches de persil\n100\ng\nde beurre\nSel et poivre\nInstructions\nCoupez les pleurotes en deux ou trois morceaux selon leur taille. Faites-les revenir \u00e0 feu moyen-fort dans une po\u00eale avec un filet d\u2019huile d\u2019olive. Faites cuire environ 10 minutes, jusqu\u2019\u00e0 ce qu\u2019elles soient dor\u00e9es et aient rendu leur eau.\nD\u00e9glacez avec le vin blanc et laissez \u00e9vaporer. R\u00e9servez.\nFaites cuire les conchiglioni dans un grand volume d\u2019eau bouillante en suivant les indications du paquet. Optez pour une cuisson l\u00e9g\u00e8rement plus qu\u2019al dente. \u00c9gouttez-les.\nPendant ce temps, pr\u00e9parez le beurre d\u2019escargot : dans un petit mixeur, placez l\u2019\u00e9chalote, l\u2019ail et le persil. Mixez pour obtenir une consistance hach\u00e9e. Ajoutez le beurre mou, sel et poivre et mixez de nouveau.\nPr\u00e9chauffez le four \u00e0 190\u00b0C.\nRemplissez chaque conchiglioni (\u00ab\u00a0coquille\u00a0\u00bb) avec une \u00e0 deux pleurotes. Disposez-les dans un plat allant au four, puis recouvrez g\u00e9n\u00e9reusement chaque \u00ab\u00a0coquille\u00a0\u00bb avec le beurre d\u2019escargot.\nEnfournez pour 12 \u00e0 15 minutes, jusqu\u2019\u00e0 ce que le beurre fonde et impr\u00e8gne bien les pleurotes.\nServez rapidement apr\u00e8s cuisson.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChampignon\n,\nHiver\nPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\nSalade d\u2019hiver au halloumi et pamplemousse\n4.55 from 82 votes (\n82 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

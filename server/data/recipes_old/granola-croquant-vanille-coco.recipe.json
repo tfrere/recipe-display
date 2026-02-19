@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "title": "Granola Croquant Vanille Coco",
+    "description": "Pour bien d\u00e9marrer la journ\u00e9e, ce granola croquant vanille coco est la douceur incarn\u00e9e ! Avec son go\u00fbt tout doux, il se marie \u00e0 peu pr\u00e8s avec tout ce que vous voudrez.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "coco",
+      "granola",
+      "noix",
+      "petit d\u00e9jeuner",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps",
+      "brunch"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Granolas-facile-coco-vanille-1-of-3.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "D\u00e9guster avec du yaourt grec, du skyr, des billes de melon et des framboises.",
+      "Laisser refroidir compl\u00e8tement avant de stocker.",
+      "Recette r\u00e9alis\u00e9e en partenariat avec Melons Le Rouge Gorge."
+    ],
+    "slug": "granola-croquant-vanille-coco",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Granolas-facile-coco-vanille-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/31/granola-croquant-vanille-coco/",
+    "image": "images/granola-croquant-vanille-coco.webp",
+    "createdAt": "2026-02-09T20:31:24.607126",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 28.0,
+    "totalCookingTime": 28.0,
+    "nutritionPerServing": {
+      "calories": 1949.6,
+      "protein": 32.3,
+      "fat": 177.7,
+      "carbs": 81.0,
+      "fiber": 15.4,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "noix_macadamia",
+      "name": "noix de macadamia",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "concass\u00e9es grossi\u00e8rement",
+      "notes": null,
+      "optional": false,
+      "name_en": "macadamia nuts"
+    },
+    {
+      "id": "noix_cajou",
+      "name": "noix de cajou",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "concass\u00e9es grossi\u00e8rement",
+      "notes": null,
+      "optional": false,
+      "name_en": "cashew"
+    },
+    {
+      "id": "huile_coco",
+      "name": "huile de coco",
+      "quantity": 40.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Coconut oil"
+    },
+    {
+      "id": "sirop_erable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "vanille",
+      "name": "gousse de vanille",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": "les graines",
+      "notes": null,
+      "optional": false,
+      "name_en": "Vanilla bean"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "sesame",
+      "name": "s\u00e9same blond",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white sesame seeds"
+    },
+    {
+      "id": "noix_coco_rape",
+      "name": "noix de coco r\u00e2p\u00e9",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "en petits ou gros copeaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "shredded coconut"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson",
+    "Papier cuisson"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand saladier, m\u00e9langer les flocons d'avoine et les noix concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flocons_avoine",
+        "noix_macadamia",
+        "noix_cajou"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_wet_ingredients",
+      "action": "Dans une casserole, chauffer l'huile de coco, le sirop d'\u00e9rable, les graines de vanille et le sel pendant 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_coco",
+        "sirop_erable",
+        "vanille",
+        "sel"
+      ],
+      "produces": "wet_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_mixtures",
+      "action": "Verser la pr\u00e9paration liquide sur le m\u00e9lange de flocons et noix et bien m\u00e9langer jusqu'\u00e0 enrobage complet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "wet_mix"
+      ],
+      "produces": "coated_granola",
+      "requires": [],
+      "visualCue": "enrobage complet"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 160\u00b0C.",
+      "duration": null,
+      "temperature": 160,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_granola",
+      "action": "\u00c9taler le granola sur une plaque de cuisson recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "coated_granola"
+      ],
+      "produces": "spread_granola",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_first",
+      "action": "Enfourner et cuire pendant 20min en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT20M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spread_granola"
+      ],
+      "produces": "partially_baked_granola",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_coconut_sesame",
+      "action": "Ajouter les copeaux de noix de coco et le s\u00e9same blond, puis enfourner de nouveau pendant 5min.",
+      "duration": "PT5M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "partially_baked_granola",
+        "noix_coco_rape",
+        "sesame"
+      ],
+      "produces": "fully_baked_granola",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_granola",
+      "action": "Sortir du four et laisser refroidir compl\u00e8tement avant de transvaser dans un pot herm\u00e9tique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "fully_baked_granola"
+      ],
+      "produces": "cooled_granola",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    }
+  ],
+  "finalState": "cooled_granola",
+  "originalText": "Granola Croquant Vanille Coco - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 ao\u00fbt 2021\nGranola Croquant Vanille Coco\nAcc\u00e9der directement \u00e0 la recette\nCette semaine c\u2019\u00e9tait ma reprise apr\u00e8s 3 semaines de vacances vraiment g\u00e9niales. \u00c9tonnamment j\u2019\u00e9tais plut\u00f4t contente de reprendre le travail, je dirais presque que \u00e7a m\u2019avait manqu\u00e9! Vous savez ce que \u00e7a veut dire? Que j\u2019aime mon job! Ce qui est plut\u00f4t cool. Bon je consid\u00e8re que le blog fait aussi parti de mon job maintenant et je suis trop contente de reprendre. D\u2019ailleurs, pour f\u00eater cette rentr\u00e9e, je vous propose ce granola croquant vanille coco pour une reprise tout en douceur\u2026\nCe granola, nous l\u2019avons r\u00e9alis\u00e9 en partenariat avec les\nMelons Le Rouge Gorge\n. Nous avons ador\u00e9 le challenge qu\u2019ils nous ont donn\u00e9 : proposer une recette de petit d\u00e9jeuner avec du melon. Il ne nous aura pas fallu longtemps pour \u00eatre fix\u00e9es, ce serait un granola. Mais pas n\u2019importe quel granola, il fallait qu\u2019il se marie bien avec notre cucurbitac\u00e9e star de l\u2019\u00e9t\u00e9! Pour ce faire, nous sommes parties sur une association toute douce : vanille, sirop d\u2019\u00e9rable et coco. Le tout venant enrober des flocons d\u2019avoines et toutes sortes de noix. Et on obtient ce granola croquant vanille coco!\nPour la d\u00e9gustation, on vous propose de le servir avec du yaourt grec (la base) ou alors du skyr, et bien s\u00fbr des billes de melon bien sucr\u00e9es accompagn\u00e9es de quelques framboises acidul\u00e9es. Un vrai petit d\u00e9j\u2019 de r\u00eave id\u00e9al pour bien commencer la journ\u00e9e!\nRetrouvez \u00e9galement nos autres granolas chouchoux :\ngranola tout chocolat\n,\ngranola automnal\nou encore le\nchunky granola banane chocolat\n!\nGranola Croquant Vanille Coco\nDaniela\nPour bien d\u00e9marrer la journ\u00e9e, ce granola croquant vanille coco est la douceur incarn\u00e9e ! Avec son go\u00fbt tout doux, il se marie \u00e0 peu pr\u00e8s avec tout ce que vous voudrez.\n4.49\n/5 avec\n75\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nType de plat\nBreakfast, Brunch, Snack, Topping\nPortions\n1\ngros pot (500g)\nIngr\u00e9dients\n1x\n2x\n3x\n200\ng\nde flocons d\u2019avoine\n100\ng\nde noix de macadamia\n100\ng\nde noix de cajou\n40\nml\nd\u2019huile de coco\n50\nml\nde sirop d\u2019\u00e9rable\n1\ngousse de vanille\n1\npinc\u00e9e de sel\n2\ncas de s\u00e9same blond\n50\ng\nde noix de coco r\u00e2p\u00e9\nen petits ou gros copeaux\nInstructions\nDans un grand saladier, m\u00e9langer les flocons d\u2019avoine, les noix concass\u00e9es grossi\u00e8rement.\nDans une casserole, chauffer l\u2019huile de coco, le sirop d\u2019\u00e9rable, les graines de vanille et le sel pendant 3 minutes. Verser cette pr\u00e9paration au m\u00e9lange avec les flocons d\u2019avoine et m\u00e9langer bien jusqu\u2019\u00e0 ce que tous les ingr\u00e9dients soient compl\u00e8tement enrob\u00e9s.\nPr\u00e9chauffer le four \u00e0 160 degr\u00e9s.\n\u00c9taler le tout sur une plaque de cuisson pr\u00e9alablement recouverte de papier cuisson.\nEnfourner et cuire pendant 20 min en remuant r\u00e9guli\u00e8rement. Apr\u00e8s 20 min ajouter les copeaux de noix de coco et le s\u00e9same blond et enfourner de nouveau pendant 5 min.\nSortir du four et laisser refroidir compl\u00e8tement avant de transvaser dans un pot herm\u00e9tique.\nD\u00e9guster avec du yaourt ou du skyr et plein de fruits frais !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucr\u00e9\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNon class\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncoco\n,\ngranola\n,\nnoix\n,\npetit d\u00e9jeuner\nRoul\u00e9s de Concombre au Fromage Frais\nChaussons P\u00eache-Vanille\n4.49 from 75 votes (\n75 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 28.0
+}

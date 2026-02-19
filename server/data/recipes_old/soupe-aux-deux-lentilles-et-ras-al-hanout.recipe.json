@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "title": "Soupe aux deux lentilles et ras al hanout",
+    "description": "Une soupe vegan riche en prot\u00e9ines, inspir\u00e9e des soupes de lentilles marocaines et grecques.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT60M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe de lentilles",
+      "Carotte",
+      "Hiver",
+      "Soupes",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/soupe-lentilles-ras-al-hanout-4-of-6.jpg",
+    "nationality": "Moroccan, Greek inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette invent\u00e9e, inspir\u00e9e des soupes de lentilles marocaines et grecques.",
+      "La soupe est vegan et tr\u00e8s riche en prot\u00e9ines."
+    ],
+    "slug": "soupe-aux-deux-lentilles-et-ras-al-hanout",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/soupe-lentilles-ras-al-hanout-4-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/03/13/soupe-aux-deux-lentilles-et-ras-al-hanout/",
+    "image": "images/soupe-aux-deux-lentilles-et-ras-al-hanout.webp",
+    "createdAt": "2026-02-09T22:04:04.663123",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 70.0,
+    "totalCookingTime": 25.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 339.8,
+      "protein": 14.8,
+      "fat": 11.6,
+      "carbs": 49.0,
+      "fiber": 11.6,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 14,
+      "totalIngredients": 14,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9 finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "celery",
+      "name": "branches de c\u00e9leri",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "celery stalks"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ras_al_hanout",
+      "name": "ras al hanout",
+      "quantity": 4.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ras el hanout"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "cumin_seeds",
+      "name": "graines de cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "red_lentils",
+      "name": "lentilles corail",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "rinc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "red lentils"
+    },
+    {
+      "id": "green_lentils",
+      "name": "lentilles vertes",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "rinc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Green lentils"
+    },
+    {
+      "id": "canned_tomatoes",
+      "name": "tomate concass\u00e9e en conserve",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned crushed tomatoes"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "L",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "1 L \u00e0 1.5 L",
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "coriander",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "parsley",
+      "name": "persil plat",
+      "quantity": 0.5,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Casserole ou faitout"
+  ],
+  "steps": [
+    {
+      "id": "chop_vegetables",
+      "action": "\u00c9mincez finement l'oignon, les carottes, le c\u00e9leri et l'ail.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "carrots",
+        "celery",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables_spices",
+      "action": "Faites revenir les l\u00e9gumes \u00e9minc\u00e9s dans une casserole ou un faitout avec l'huile d'olive, la feuille de laurier et toutes les \u00e9pices (ras al hanout, paprika fum\u00e9, cumin, graines de cumin) pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_vegetables",
+        "olive_oil",
+        "bay_leaf",
+        "ras_al_hanout",
+        "smoked_paprika",
+        "cumin",
+        "cumin_seeds"
+      ],
+      "produces": "sauteed_vegetables_spices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomato_paste",
+      "action": "Ajoutez le concentr\u00e9 de tomate et faites revenir encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables_spices",
+        "tomato_paste"
+      ],
+      "produces": "tomato_paste_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_lentils",
+      "action": "Ajoutez les lentilles corail et vertes rinc\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_paste_mixture",
+        "red_lentils",
+        "green_lentils"
+      ],
+      "produces": "lentil_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids_simmer",
+      "action": "Versez la conserve de tomate concass\u00e9e, l'eau et le sucre. Laissez cuire \u00e0 couvert \u00e0 petits bouillons pendant 45min.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "lentil_mixture",
+        "canned_tomatoes",
+        "water",
+        "sugar"
+      ],
+      "produces": "simmered_soup",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "season_add_herbs",
+      "action": "Avant de servir, salez et ajoutez la coriandre et le persil hach\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "simmered_soup",
+        "salt",
+        "coriander",
+        "parsley"
+      ],
+      "produces": "soupe_lentilles_ras_al_hanout",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_lentilles_ras_al_hanout",
+  "originalText": "Soupe aux deux lentilles et ras al hanout - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 mars 2024\nSoupe aux deux lentilles et ras al hanout\nQuelle d\u00e9couverte cette Soupe aux deux lentilles et ras al hanout !\nCliquez sur \u201callez \u00e0 la recette\u201d pour aller directement sur le bloc recette avec la liste des ingr\u00e9dients et les \u00e9tapes.\nAlors, ce n\u2019est pas une recette traditionnelle. D\u00e9sol\u00e9e pour les puristes. C\u2019est une recette invent\u00e9e, inspir\u00e9e des soupes de lentilles marocaines et grecques.\nUn petit mix entre les deux.\nLa soupe est vegan et tr\u00e8s riche en prot\u00e9ines. Gr\u00e2ce \u00e0 la pr\u00e9sence des lentilles corail et lentilles vertes.\nJ\u2019adore le ras al hanout, et je trouve qu\u2019il met particuli\u00e8rement bien en valeur les soupes. Comme c\u2019est le cas pour\ncette soupe fa\u00e7on chorba v\u00e9g\u00e9 que j\u2019adore\n. Et si vous cherchez des id\u00e9es de recettes pour cuisiner les l\u00e9gumes,\nmon premier livre Obsessions V\u00e9g\u00e9tales est disponible en librairie\n.\nVoici les \u00e9tapes de pr\u00e9paration pour r\u00e9aliser cette Soupe aux deux lentilles et ras al hanout.\n\u00c9mincez finement l\u2019oignon, les carottes, le c\u00e9leri et l\u2019ail.\nLes faire revenir dans une casserole ou un faitout avec l\u2019huile, la feuille de laurier et toutes les \u00e9pices pendant 10min.\nAjoutez le concentr\u00e9 de tomate et faites revenir encore 5min.\nRincez les lentilles et ajoutez-les.\nVersez la conserve de tomate, l\u2019eau et le sucre et laissez cuire \u00e0 couvert \u00e0 petits bouillons pour 45min.\nAvant de servir, salez et ajoutez la coriandre et le persil hach\u00e9.\nSoupe aux deux lentilles et ras al hanout\n4.51\n/5 avec\n89\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon\n2\ncarottes\n2\nbranches de c\u00e9leri\n2\ngousses d\u2019ail\n1\nfeuille de laurier\n4\nc\u00e0s d\u2019huile d\u2019olive\n4\nc\u00e0c de ras al hanout\n1\nc\u00e0c de paprika fum\u00e9\n1\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de graines de cumin\n140\ng\nde concentr\u00e9 de tomate\n150\ng\nde lentilles corail\n100\ng\nde lentilles vertes\n400\ng\nde tomate concass\u00e9e en conserve\n1\nL\n\u00e0 1.5L d\u2019eau\n1\nc\u00e0c de sucre\n\u00bd\nbouquet de coriandre\n\u00bd\nbouquet de persil plat\nsel\nInstructions\n\u00c9mincez finement l\u2019oignon, les carottes, le c\u00e9leri et l\u2019ail.\nLes faire revenir dans une casserole ou un faitout avec l\u2019huile, la feuille de laurier et toutes les \u00e9pices pendant 10min.\nAjoutez le concentr\u00e9 de tomate et faites revenir encore 5min.\nRincez les lentilles et ajoutez-les.\nVersez la conserve de tomate, l\u2019eau et le sucre et laissez cuire \u00e0 couvert \u00e0 petits bouillons pour 45min.\nAvant de servir, salez et ajoutez la coriandre et le persil hach\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCarotte\n,\nHiver\n,\nSoupes\nTags:\nsoupe de lentilles\nBrocoli et quinoa croustillant sur cr\u00e8me de feta\nBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\n3 thoughts on \u201cSoupe aux deux lentilles et ras al hanout\u201d\nMarion\ndit\u00a0:\n13 mars 2024 \u00e0 15 h 19 min\nJe viens de faire l\u2019acquisition de votre ouvrage  OBSESSINS VEGETALES et il m\u2019inspire \u00e9norm\u00e9ment !!!! Je vais me mettre en cuisine avec grand plaisir.\nJe pensais que votre site \u00ab\u00a0Free the pickles\u00a0\u00bb se d\u00e9diait \u00e0 la fermentation, j\u2019y suis all\u00e9e me promener et je vous ai d\u00e9couverte dans un autre domaine. Tr\u00e8s bien !\nMerci\nchargement\u2026\nR\u00e9pondre\nNato\ndit\u00a0:\n25 octobre 2025 \u00e0 14 h 39 min\nD\u00e9licieuse !\nchargement\u2026\nR\u00e9pondre\ncaroline\ndit\u00a0:\n3 d\u00e9cembre 2025 \u00e0 10 h 56 min\nRecette inratable, facile et ultra gourmande. Son petit gout exotique est un d\u00e9lice. Merci pour ce partage!\nchargement\u2026\nR\u00e9pondre\n4.51 from 89 votes (\n88 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 25.0
+}

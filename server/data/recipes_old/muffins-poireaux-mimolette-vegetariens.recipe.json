@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "title": "Muffins Poireaux Mimolette (Végétariens)",
+    "description": "Que diriez-vous d'une recette de muffins végétariens et salés pour égayer un peu cette fin de semaine glacée ?",
+    "servings": 10,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "muffins mimolette",
+      "muffins poireaux",
+      "muffins salés",
+      "muffins végétariens",
+      "poireau",
+      "hiver",
+      "accompagnements",
+      "brunch salé"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Muffins-poireaux-mimolette-1-of-8-768x1024.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "A déguster tiède ou froid.",
+      "Accompagné d'une salade verte, ça fait un repas simple pour les soirs de grosse flemme !",
+      "Une bonne option pour plaire aux enfants, ou pour les apéros dinatoires."
+    ],
+    "slug": "muffins-poireaux-mimolette-vegetariens",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Muffins-poireaux-mimolette-1-of-8-768x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/23/muffins-poireaux-mimolette-vegetariens/",
+    "image": "images/muffins-poireaux-mimolette-vegetariens.webp",
+    "createdAt": "2026-02-09T19:42:11.115821",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 226.7,
+      "protein": 6.0,
+      "fat": 11.2,
+      "carbs": 23.3,
+      "fiber": 1.3,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 10,
+      "totalIngredients": 11,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "poireau",
+      "name": "beau poireau",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "lavé et émincé",
+      "notes": null,
+      "optional": false,
+      "name_en": "Leek"
+    },
+    {
+      "id": "echalotes",
+      "name": "échalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincées",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "noix",
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_olive_1",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure",
+      "name": "levure",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "vin_blanc",
+      "name": "vin blanc",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "huile_olive_2",
+      "name": "huile d'olive",
+      "quantity": 70.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "moutarde",
+      "name": "moutarde à l'ancienne",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole grain mustard"
+    },
+    {
+      "id": "mimolette",
+      "name": "mimolette",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "coupée en fines lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mimolette cheese"
+    }
+  ],
+  "tools": [
+    "moules à muffins",
+    "cure dent"
+  ],
+  "steps": [
+    {
+      "id": "heat_fat",
+      "action": "Faire chauffer le beurre et l'huile d'olive (1 c-à-s) dans une poêle à feu moyen.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre",
+        "huile_olive_1"
+      ],
+      "produces": "heated_fat",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_leeks",
+      "action": "Y faire revenir l'échalote et le poireau pendant 10min, jusqu'à ce que le poireau soit tendre. Réserver.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "heated_fat",
+        "echalotes",
+        "poireau",
+        "sel",
+        "poivre"
+      ],
+      "produces": "sauteed_leeks",
+      "requires": [],
+      "visualCue": "poireau tendre"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry",
+      "action": "Dans un grand bol, mélanger les ingrédients secs (farine, levure, une pincée de sel, poivre).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine",
+        "levure",
+        "sel",
+        "poivre"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet",
+      "action": "Ajouter les oeufs, le vin blanc et l'huile d'olive (70 ml) et mélanger avec un fouet pour obtenir une préparation bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "oeufs",
+        "vin_blanc",
+        "huile_olive_2"
+      ],
+      "produces": "batter_base",
+      "requires": [],
+      "visualCue": "préparation bien lisse"
+    },
+    {
+      "id": "add_flavorings",
+      "action": "Ajouter la moutarde, les poireaux réservés et la mimolette, bien mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_base",
+        "moutarde",
+        "sauteed_leeks",
+        "mimolette"
+      ],
+      "produces": "complete_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_molds",
+      "action": "Verser la préparation dans vos moules à muffins.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "complete_batter"
+      ],
+      "produces": "filled_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner à mi-hauteur pour 20min. Vérifiez la cuisson avec un cure dent.",
+      "duration": "PT20M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "filled_molds"
+      ],
+      "produces": "baked_muffins",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "cuisson vérifiée avec cure dent"
+    },
+    {
+      "id": "cool_unmold",
+      "action": "Sortir du four, laisser tiédir, puis démouler les muffins.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_muffins"
+      ],
+      "produces": "muffins_poireaux_mimolette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "muffins_poireaux_mimolette",
+  "originalText": "Muffins Poireaux Mimolette (Végétariens) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 janvier 2020\nMuffins Poireaux Mimolette (Végétariens)\nAccéder directement à la recette\nQue diriez-vous d’une recette de muffins végétariens et salés pour égayer un peu cette fin de semaine glacée ?\nLa semaine a été un peu dure pour tout le monde j’ai l’impression ! La détente des vacances de Noël comment à vraiment s’éloigner… Et ce froid… On en parle ?\nBref, j’avais besoin d’une petite recette réconfort pour finir cette semaine en douceur.\nJe n’ai pas toujours le réflexe de faire des muffins salés, j’ai plutôt tendance à me tourner vers les cakes comme\ncelui aux fanes de radis et à la fêta\nou\ncelui au cumin et courgettes.\nCela dit, les muffins salés sont une bonne option pour plaire aux enfants, ou pour les apéros dinatoires, et puis, accompagné d’une salade verte, ça fait un repas simple pour les soirs de grosse flemme !\nDu coup, après la recette\ndes muffins à la courge et à la fêta\n, voici la recette des muffins poireaux mimolette 🙂\nMuffins Poireaux Mimolette (Végétariens)\n4.69\n/5 avec\n47\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps total\n45\nminutes\nmin\nPortions\n10\nmuffins\nIngrédients\n1x\n2x\n3x\n1\nbeau poireau lavé et émincé\n2\néchalotes émincées\n1\nnoix de beurre\n1\nc-à-s d’huile d’olive\nsel\npoivre\n250\ng\nde farine\n1\nsachet de levure\nune pincée de sel\npoivre\n4\noeufs\n100\nml\nde vin blanc\n70\nml\nd’huile d’olive\n1\nc-à-s de moutarde à l’ancienne\n150\ng\nde mimolette coupée en fines lamelles\nInstructions\nFaire chauffer le beurre et l’huile dans une poêle à feu moyen. Y faire revenir l’échalote et le poireau pendant 10min, jusqu’à ce que le poireau soit tendre. Réserver.\nPréchauffer le four à 180 degrés.\nDans un grand bol, mélanger les ingrédients secs. Ajouter les oeufs, le vin et l’huile et mélanger avec un fouet pour obtenir un préparation bien lisse.\nAjouter la moutarde, les poireaux et la mimolette, bien mélanger.\nVerser la préparation dans vos moules à muffins, et enfourner à mi-hauteur pour 20-25min. Vérifiez la cuisson avec un cure dent.\nSortir du four, laisser tiédir, puis démouler les muffins. A déguster tiède ou froid.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nBrunch Salé\n,\nHiver\n,\nPoireau\n,\nQuiches et Tartes\n,\nRecettes Salées\nTags:\nmuffins mimolette\n,\nmuffins poireaux\n,\nmuffins salés\n,\nmuffins végétariens\nRisotto Vegan à la Courge Butternut et aux Noisettes\nFlan Pâtissier Vegan\n1 thought on “Muffins Poireaux Mimolette (Végétariens)”\nPing :\n20 Recettes à Congeler - Noble Veggies\n4.69 from 47 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

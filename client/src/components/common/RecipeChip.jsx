@@ -6,6 +6,7 @@ import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
 import GrassIcon from '@mui/icons-material/Grass';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
 
 // Types de chips possibles
 export const CHIP_TYPES = {
@@ -19,6 +20,7 @@ export const CHIP_TYPES = {
   DIET: "diet",
   SEASON: "season",
   RECIPE_TYPE: "recipe_type",
+  NUTRITION: "nutrition",
 };
 
 // Configuration des couleurs par type
@@ -78,6 +80,12 @@ const CHIP_COLORS = {
     baseColor: "#ba68c8",
     bgColor: "rgba(186, 104, 200, 0.08)",
     icon: RestaurantMenuIcon,
+  },
+  [CHIP_TYPES.NUTRITION]: {
+    color: "info",
+    baseColor: "#4fc3f7",
+    bgColor: "rgba(79, 195, 247, 0.08)",
+    icon: ScienceOutlinedIcon,
   },
 };
 

@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "title": "Muffins au Citron (Air Fryer)",
+    "description": "Des petits muffins au citron d\u00e9licieux et faciles \u00e0 faire. Cuits dans un Air Fryer, ils sont moelleux \u00e0 souhait. Parfait pour le go\u00fbter ou m\u00eame le petit d\u00e9jeuner ou juste pour un petit plaisir pas coupable du tout !",
+    "servings": 11,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "citron",
+      "citrons d\u00e9shydrat\u00e9s",
+      "cuisson air fryer",
+      "dessert air fryer",
+      "muffins",
+      "muffins air fryer",
+      "muffins au citron"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Muffins-citron-Pampered-4-of-8.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les muffins se conservent 2 jours \u00e0 temp\u00e9rature ambiante ou 4 jours au r\u00e9frig\u00e9rateur dans un contenant herm\u00e9tique dans les 2 cas.",
+      "Pour la petite histoire, Pampered Chef est une marque am\u00e9ricaine fra\u00eechement d\u00e9barqu\u00e9e en France.",
+      "Si les rondelles se chevauchent un peu, ce n'est pas un probl\u00e8me car elles vont r\u00e9tr\u00e9cir avec la cuisson.",
+      "J'ai cuit les muffins en 2 fourn\u00e9es.",
+      "A mi cuisson, inverser les plateaux de mani\u00e8re \u00e0 avoir une cuisson homog\u00e8ne."
+    ],
+    "slug": "muffins-au-citron-air-fryer",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Muffins-citron-Pampered-4-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/03/07/muffins-au-citron-air-fryer/",
+    "image": "images/muffins-au-citron-air-fryer.webp",
+    "createdAt": "2026-02-09T21:06:33.201564",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 501.0,
+    "totalCookingTime": 61.0,
+    "nutritionPerServing": {
+      "calories": 289.7,
+      "protein": 3.8,
+      "fat": 10.3,
+      "carbs": 44.9,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 115.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "citron_zeste",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "le zeste d'un petit",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "jus_citron",
+      "name": "jus de citron",
+      "quantity": 35.0,
+      "unit": "ml",
+      "category": "produce",
+      "preparation": "le jus d'un petit citron",
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "extrait_vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "bicarbonate",
+      "name": "bicarbonate",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "lait_ribot",
+      "name": "lait ribot/ lait ferment\u00e9",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Buttermilk"
+    },
+    {
+      "id": "sucre_glace",
+      "name": "sucre glace",
+      "quantity": 135.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "zeste_citron_gla\u00e7age",
+      "name": "zeste de citron",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon zest"
+    },
+    {
+      "id": "jus_citron_gla\u00e7age",
+      "name": "jus de citron",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "citrons_deshydratation",
+      "name": "citrons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "pour d\u00e9shydratation (optionnel)",
+      "optional": true,
+      "name_en": "Lemons"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Deluxe Air Fryer (ou Air Fryer avec fonction d\u00e9shydratation)",
+    "Petit moule \u00e0 muffin (6 muffins)",
+    "Grilles de cuisson pour Air Fryer",
+    "Grille de refroidissement"
+  ],
+  "steps": [
+    {
+      "id": "couper_citrons",
+      "action": "Couper en rondelles assez fines 2 ou 3 citrons. Puis r\u00e9partissez les rondelles sur les deux grilles de cuissons.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "citrons d\u00e9shydrat\u00e9s",
+      "uses": [
+        "citrons_deshydratation"
+      ],
+      "produces": "citrons_coupes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dehydrate_citrons",
+      "action": "Placer les deux grilles de cuissons dans le Deluxe Air Fryer. S\u00e9lectionner le programme 'dehydrate', 7h \u00e0 55\u00b0C.",
+      "duration": "PT7H",
+      "temperature": 55,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "citrons d\u00e9shydrat\u00e9s",
+      "uses": [
+        "citrons_coupes"
+      ],
+      "produces": "citrons_deshydrates",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "inverser_plateaux",
+      "action": "A mi cuisson, inverser les plateaux de mani\u00e8re \u00e0 avoir une cuisson homog\u00e8ne.",
+      "duration": "PT5M",
+      "temperature": 55,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "citrons d\u00e9shydrat\u00e9s",
+      "uses": [
+        "citrons_deshydrates"
+      ],
+      "produces": "citrons_deshydrates_tournes",
+      "requires": [],
+      "visualCue": "cuisson homog\u00e8ne"
+    },
+    {
+      "id": "conserver_citrons",
+      "action": "Une fois les citrons d\u00e9shydrat\u00e9s \u00e0 votre go\u00fbt, placez les dans un contenants herm\u00e9tiques.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "citrons d\u00e9shydrat\u00e9s",
+      "uses": [
+        "citrons_deshydrates_tournes"
+      ],
+      "produces": "citrons_deshydrates_conserves",
+      "requires": [],
+      "visualCue": "d\u00e9shydrat\u00e9s \u00e0 votre go\u00fbt"
+    },
+    {
+      "id": "preparer_moule",
+      "action": "Pr\u00e9parer un petit moule \u00e0 muffin (6 muffins) en \u00e9talant un peu d'huile d'olive dans le fond et les parois du moule.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "huile_olive"
+      ],
+      "produces": "moule_huile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_beurre_sucre",
+      "action": "Dans un grand saladier, m\u00e9langer le beurre et le sucre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "beurre",
+        "sucre"
+      ],
+      "produces": "melange_beurre_sucre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_ingredients",
+      "action": "Incorporer les \u0153ufs, le zeste de citron, le jus de citron, l'extrait de vanille, la farine, le sel, le bicarbonate de soude et le lait ribot. M\u00e9langer bien.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "melange_beurre_sucre",
+        "oeufs",
+        "citron_zeste",
+        "jus_citron",
+        "extrait_vanille",
+        "farine",
+        "sel",
+        "bicarbonate",
+        "lait_ribot"
+      ],
+      "produces": "pate_muffins",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "verser_pate",
+      "action": "Verser 2 cas de p\u00e2te dans chaque empreinte du moule.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "pate_muffins",
+        "moule_huile"
+      ],
+      "produces": "moules_remplis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_muffins",
+      "action": "Placer le moule sur une grille de cuisson et placer dans le Deluxe Air Fryer. Utiliser le programme 'Custom', r\u00e9gler le minuteur sur 20min et la temp\u00e9rature \u00e0 165\u00b0C.",
+      "duration": "PT20M",
+      "temperature": 165,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "moules_remplis"
+      ],
+      "produces": "muffins_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_muffins",
+      "action": "Sortir et laisser refroidir 10min avant de d\u00e9mouler. Placer sur une grille de refroidissement.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "muffins au citron",
+      "uses": [
+        "muffins_cuits"
+      ],
+      "produces": "muffins_refroidis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_gla\u00e7age",
+      "action": "Dans un petit bol, m\u00e9langez le sucre en poudre, le zeste de citron et le jus de citron.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "gla\u00e7age",
+      "uses": [
+        "sucre_glace",
+        "zeste_citron_gla\u00e7age",
+        "jus_citron_gla\u00e7age"
+      ],
+      "produces": "gla\u00e7age_citron",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "glacer_muffins",
+      "action": "Verser le gla\u00e7age au centre des muffins et le laisser se r\u00e9partir puis placer un petit quartier de citron d\u00e9shydrat\u00e9 sur le dessus !",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "gla\u00e7age",
+      "uses": [
+        "muffins_refroidis",
+        "gla\u00e7age_citron",
+        "citrons_deshydrates_conserves"
+      ],
+      "produces": "muffins_glaces_citron",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "muffins_glaces_citron",
+  "originalText": "Muffins au Citron (Air Fryer) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n7 mars 2022\nMuffins au Citron (Air Fryer)\nAcc\u00e9der directement \u00e0 la recette\nDepuis le temps que je voulais essayer de cuisiner avec un Air Fryer ! Il faut dire que ma maman a eu une p\u00e9riode o\u00f9 elle ne parlait que de \u00e7a\u2026 Les colombiens aiment bien la friture, surtout mon beau-p\u00e8re et mon fr\u00e8re en fait, l\u2019id\u00e9e de cuire plus sainement les aliments tout conservant ce croustillant tant appr\u00e9ci\u00e9 \u00e9tait une r\u00e9volution!! Bref, j\u2019\u00e9tais plus que ravie quand\nPampered Chef\nm\u2019a propos\u00e9 de tester leur\nDeluxe Air Fryer\n! Le d\u00e9fi \u00e9tait de tester plusieurs fonctionnalit\u00e9s pour r\u00e9aliser une recette sucr\u00e9e. Je vous pr\u00e9sente donc mes petits muffins au citron cuits au\nDeluxe Air Fryer\n!\nTable des mati\u00e8res\n1\n\u00ab\u00a0D\u00e9shydrater\u00a0\u00bb des rondelles de citron\n2\nCuisson \u00ab\u00a0personnalis\u00e9e\u00a0\u00bb des muffins au citron\n3\nQui? Quoi? Comment?\n4\nMuffins au Citron (Air Fryer)\n\u00ab\u00a0D\u00e9shydrater\u00a0\u00bb des rondelles de citron\nJ\u2019ai commenc\u00e9 par utiliser la fonctionnalit\u00e9 \u00ab d\u00e9shydrater \u00bb pour r\u00e9aliser des rondelles de citron d\u00e9shydrat\u00e9es. Mais pourquoi? Parce que l\u2019\u00e9t\u00e9 dernier, j\u2019ai go\u00fbt\u00e9 un cocktail servi avec une petite rondelle de citron vert d\u00e9shydrat\u00e9e et j\u2019ai trouv\u00e9 \u00e7a incroyable. C\u2019est litt\u00e9ralement un concentr\u00e9 de citron mais en version croustillante. Perso j\u2019adore les agrumes et j\u2019ai trouv\u00e9 si bon, limite addictif, j\u2019\u00e9tais ravie de pouvoir les reproduire aussi facilement.\nCuisson \u00ab\u00a0personnalis\u00e9e\u00a0\u00bb des muffins au citron\nEnsuite, pour la partie cuisson des muffins, j\u2019ai utilis\u00e9 un r\u00e9glage manuel pour obtenir un r\u00e9sultat optimal. Dans l\u2019ensemble, j\u2019ai trouv\u00e9 que le\nDeluxe Air Fryer Pampered Chef\n\u00e9tait tr\u00e8s simple d\u2019utilisation. Les diff\u00e9rents programmes propos\u00e9s permettent de r\u00e9aliser une vari\u00e9t\u00e9 de pr\u00e9parations avec une cuisson plus saine. L\u2019appareil en lui m\u00eame est assez imposant, si vous avez une grande cuisine avec beaucoup de rangement tant mieux. Sinon je pense que c\u2019est le compromis id\u00e9al pour les gens qui n\u2019ont pas de place pour avoir un four.\nQui? Quoi? Comment?\nPour la petite histoire,\nPampered Chef\nest une marque am\u00e9ricaine fra\u00eechement d\u00e9barqu\u00e9e en France. Ils proposent des ustensiles de cuisine de qualit\u00e9 et faciles \u00e0 utiliser, vendus principalement via des ateliers culinaires \u00e0 domicile. Ces derniers sont anim\u00e9s par tout un r\u00e9seau de conseillers-\u00e8res culinaires. Retrouvez plus d\u2019informations directement sur leur site internet!\nSi ces petits muffins au citron vous font envie, retrouvez toutes mes recettes pr\u00e9f\u00e9r\u00e9es sur le blog. Les\nmuffins \u00e0 la myrtille\nou encore\nceux fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner\n!\nMuffins au Citron (Air Fryer)\nDaniela\nDes petits muffins au citron d\u00e9licieux et faciles \u00e0 faire. Cuits dans un Air Fryer, ils sont moelleux \u00e0 souhait. Parfait pour le go\u00fbter ou m\u00eame le petit d\u00e9jeuner ou juste pour un petit plaisir pas coupable du tout !\n4.44\n/5 avec\n99\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nD\u00e9shydratation des citrons\n7\nheures\nh\nType de plat\nBrunch, Dessert, Go\u00fbter, Snack\nPortions\n11\nmuffins\nIngr\u00e9dients\n1x\n2x\n3x\nMuffins\n115\ng\nde beurre mou\n180\ng\nde sucre\n2\noeufs\n\u00e0 temp\u00e9rature ambiante\nLe zeste d\u2019un petit citron\n1 cac\nLe jus d\u2019un petit citron\n35ml\n1\ncac d\u2019extrait de vanille\n200\ng\nde farine\n\u00bd\ncac de sel\n\u00bc\ncac de bicarbonate\n120\nml\nde lait ribot/ lait ferment\u00e9\nGla\u00e7age\n135\ng\nde sucre glace\n2\ncac de zeste de citron\n2\ncas de jus de citron\nCitrons d\u00e9shydrat\u00e9s (optionnel)\n2\nou 3 citrons\nInstructions\nCitrons d\u00e9shydrat\u00e9s (\u00e0 faire la veille)\nCouper en rondelles assez fines 2 ou 3 citrons, en fonction de la taille de vos citrons. Puis r\u00e9partissez les rondelles sur les deux grilles de cuissons. Si les rondelles se chevauchent un peu, ce n\u2019est pas un probl\u00e8me car elles vont r\u00e9tr\u00e9cir avec la cuisson.\nPlacer les deux grilles de cuissons dans le Deluxe Air Fryer. S\u00e9lectionner le programme \u201cdehydrate\u201d, 7h \u00e0 55 degr\u00e9s. A mi cuisson, inverser les plateaux de mani\u00e8re \u00e0 avoir une cuisson homog\u00e8ne.\nUne fois les citrons d\u00e9shydrat\u00e9s \u00e0 votre go\u00fbt, placez les dans un contenants herm\u00e9tiques.\nMuffins au citron :\nPr\u00e9parer un petit moule \u00e0 muffin (6 muffins) en \u00e9talant un peu d\u2019huile d\u2019olive dans le fond et les parois du moule (si moule en m\u00e9tal).\nDans un grand saladier, m\u00e9langer le beurre et le sucre.\nIncorporer les \u0153ufs, le zeste de citron, le jus de citron, l\u2019extrait de vanille, la farine, le sel, le bicarbonate de soude et le lait ribot. M\u00e9langer bien.\nVerser 2 cas de p\u00e2te dans chaque empreinte du moule. J\u2019ai cuit les muffins en 2 fourn\u00e9es.\nPlacer le moule sur une grille de cuisson et placer dans le Deluxe Air Fryer. Utiliser le programme \u201cCustom\u201d, r\u00e9gler le minuteur sur 20min et la temp\u00e9rature \u00e0 165 degr\u00e9s.\nSortir et laisser refroidir 10min avant de d\u00e9mouler. Placer sur une grille de refroidissement.\nGla\u00e7age :\nDans un petit bol, m\u00e9langez le sucre en poudre, le zeste de citron et le jus de citron.\nVerser le gla\u00e7age au centre des muffins et le laisser se r\u00e9partir puis placer un petit quartier de citron d\u00e9shydrat\u00e9 sur le dessus !\nLes muffins se conservent 2 jours \u00e0 temp\u00e9rature ambiante ou 4 jours au r\u00e9frig\u00e9rateur dans un contenant herm\u00e9tique dans les 2 cas.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCitron\n,\n\u00c9t\u00e9\n,\nHiver\n,\nMuffins et Scones\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncitron\n,\ncitrons d\u00e9shydrat\u00e9s\n,\ncuisson air fryer\n,\ndessert air fryer\n,\nmuffins\n,\nmuffins air fryer\n,\nmuffins au citron\nMuffins au caramel\nGratin de P\u00e2tes Poireaux et Cheddar\n6 thoughts on \u201cMuffins au Citron (Air Fryer)\u201d\nLyne\ndit\u00a0:\n27 avril 2022 \u00e0 18 h 04 min\nCombien d\u2019\u0153ufs s.v.p. ?\nMerci pour la r\u00e9ponse rapide, Lyne \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n27 avril 2022 \u00e0 18 h 25 min\nBonjour, c\u2019est 2 oeufs ! Je mets \u00e0 jour de suite la recette, d\u00e9sol\u00e9e !\nchargement\u2026\nR\u00e9pondre\nLyne\ndit\u00a0:\n27 avril 2022 \u00e0 19 h 15 min\nUn gros merci, ils sortent du four \u2026 c\u2019est tellement bon, un d\u00e9lice !\nP.S. Je l\u2019ai fait au four traditionnel 350f pour 30 min. \u00e0 refaire \ud83d\ude0b\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n28 avril 2022 \u00e0 14 h 23 min\nTop !! Merci beaucoup pour ton retour \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nDecarlis\ndit\u00a0:\n30 novembre 2024 \u00e0 8 h 47 min\nBonjour\nPeut-on mettre de la levure \u00e0 la place du bicarbonate  et quelle quantit\u00e9\nMerci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n6 janvier 2025 \u00e0 10 h 28 min\nBonjour, oui c\u2019est possible, il faut mettre la m\u00eame quantit\u00e9 !\nchargement\u2026\nR\u00e9pondre\n4.44 from 99 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 61.0
+}

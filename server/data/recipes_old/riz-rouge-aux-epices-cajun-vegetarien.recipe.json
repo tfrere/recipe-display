@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "title": "Riz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien)",
+    "description": "Voil\u00e0 une petite recette que j'avais h\u00e2te de vous partager : le Riz rouge aux \u00e9pices Cajun ! Ce riz se pr\u00e9pare en \"style cajun\". C'est-\u00e0-dire, des petits l\u00e9gumes, des l\u00e9gumineuses, des \u00e9pices \u00e0 foison et une cuisson \"one pot\" qui assure un max de go\u00fbt !",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "\u00e9pices",
+      "\u00e9pices cajun",
+      "recette riz",
+      "recette riz v\u00e9g\u00e9tarien",
+      "riz",
+      "riz cajun",
+      "riz rouge",
+      "riz v\u00e9g\u00e9tarien",
+      "v\u00e9g\u00e9tarien",
+      "accompagnement",
+      "plat en sauce",
+      "automne",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Riz-saute-Cajun-1-of-8.jpg",
+    "nationality": "Cajun",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette recette a \u00e9t\u00e9 cr\u00e9\u00e9e pour MonBento.",
+      "Pour ceux qui en mangent, vous pouvez ajouter un \u0153uf au plat au-dessus du riz.",
+      "Si vous n'avez pas de m\u00e9lange cajun tout pr\u00eat, vous pouvez le faire maison (voir ingr\u00e9dients).",
+      "A servir avec un peu d'\u00e9pices cajun par-dessus."
+    ],
+    "slug": "riz-rouge-aux-epices-cajun-vegetarien",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Riz-saute-Cajun-1-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/05/riz-rouge-aux-epices-cajun-vegetarien/",
+    "createdAt": "2026-02-09T20:35:45.415592",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 104.0,
+    "totalCookingTime": 4.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 488.3,
+      "protein": 14.9,
+      "fat": 9.3,
+      "carbs": 86.5,
+      "fiber": 14.5,
+      "confidence": "high",
+      "resolvedIngredients": 13,
+      "matchedIngredients": 13,
+      "totalIngredients": 15,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "haricots_rouges_secs",
+      "name": "haricots rouges secs",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou 350g de haricots rouges en conserve",
+      "optional": false,
+      "name_en": "red kidney beans"
+    },
+    {
+      "id": "oignon_jaune",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "petites",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "celeri",
+      "name": "branche de c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "celery stalk"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "poivron_rouge",
+      "name": "poivron rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "epices_cajun",
+      "name": "\u00e9pices cajun",
+      "quantity": 4.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cajun seasoning"
+    },
+    {
+      "id": "bouillon_cube_legumes",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "riz_blanc",
+      "name": "riz blanc",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white rice"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 450.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "ail_en_poudre",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "origan_seche",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "poivre_moulu",
+      "name": "poivre moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground black pepper"
+    },
+    {
+      "id": "piment_de_cayenne",
+      "name": "piment de cayenne",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "plus ou moins au go\u00fbt",
+      "optional": false,
+      "name_en": "cayenne pepper"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    }
+  ],
+  "tools": [
+    "Faitout (ou grande po\u00eale avec couvercle)",
+    "Mixeur (optionnel pour les l\u00e9gumes)"
+  ],
+  "steps": [
+    {
+      "id": "make_cajun_spice_mix",
+      "action": "Tout m\u00e9langer. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "melange_epices_cajun_maison",
+      "uses": [
+        "paprika_fume",
+        "ail_en_poudre",
+        "origan_seche",
+        "fleur_de_sel",
+        "poivre_moulu",
+        "piment_de_cayenne",
+        "thym",
+        "cumin"
+      ],
+      "produces": "melange_epices_cajun",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "soak_beans",
+      "action": "Mettre les haricots rouges secs \u00e0 tremper dans un grand volume d'eau la veille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "haricots_rouges_secs"
+      ],
+      "produces": "haricots_trempes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_beans",
+      "action": "Jeter l'eau de trempage. Puis faire cuire les haricots dans un grand volume d'eau bouillante environ 1h. \u00c9goutter. R\u00e9server.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "haricots_trempes"
+      ],
+      "produces": "haricots_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "D\u00e9tailler l'oignon, le c\u00e9leri et les carottes en brunoise. (Vous pouvez les passer au mixeur pour aller plus vite).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "oignon_jaune",
+        "celeri",
+        "carottes"
+      ],
+      "produces": "legumes_brunoise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faire chauffer un faitout \u00e0 feu moyen-fort et y verser l'huile d'olive. Faire revenir les l\u00e9gumes d\u00e9coup\u00e9s pendant 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "huile_dolive",
+        "legumes_brunoise"
+      ],
+      "produces": "legumes_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Presser les gousses d'ail et les ajouter.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "ail",
+        "legumes_sautes"
+      ],
+      "produces": "legumes_ail",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_bell_pepper",
+      "action": "Couper le poivron rouge en cubes et l'ajouter \u00e0 la po\u00eale. Remuer r\u00e9guli\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "poivron_rouge",
+        "legumes_ail"
+      ],
+      "produces": "legumes_poivron",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cajun_spices",
+      "action": "Ajouter les \u00e9pices cajun (4 c\u00e0c). Faire revenir quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "epices_cajun",
+        "legumes_poivron"
+      ],
+      "produces": "legumes_epices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_rice_beans",
+      "action": "Ajouter le riz et les haricots rouges (cuits ou \u00e9goutt\u00e9s).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "riz_blanc",
+        "haricots_cuits",
+        "legumes_epices"
+      ],
+      "produces": "riz_haricots_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_bouillon",
+      "action": "\u00c9mietter le bouillon cube directement dans la po\u00eale avec vos doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "bouillon_cube_legumes",
+        "riz_haricots_melange"
+      ],
+      "produces": "riz_bouillon",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_water",
+      "action": "Verser l'eau et bien remuer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "eau",
+        "riz_bouillon"
+      ],
+      "produces": "riz_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_rice",
+      "action": "Couvrir et laisser cuire \u00e0 feu doux 35-40min. Ne plus remuer et \u00e9viter d'ouvrir le couvercle trop souvent.",
+      "duration": "PT40M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "riz_a_cuire"
+      ],
+      "produces": "riz_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "A servir avec un peu d'\u00e9pices cajun par-dessus et pourquoi pas un \u0153uf au plat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "riz_saute",
+      "uses": [
+        "riz_cuit",
+        "melange_epices_cajun"
+      ],
+      "produces": "riz_rouge_epices_cajun",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "riz_rouge_epices_cajun",
+  "originalText": "Riz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 octobre 2021\nRiz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien)\nVoil\u00e0 une petite recette que j\u2019avais h\u00e2te de vous partager : le Riz rouge aux \u00e9pices Cajun !\nD\u00e9j\u00e0 parce que, en r\u00e8gle g\u00e9n\u00e9rale, j\u2019adore le riz. J\u2019ai des phases riz blanc, des phases riz complet. Et des phases riz saut\u00e9 ou\nriz au kimchi\n(tellement bon) !\nJ\u2019ajoute donc le riz rouge aux \u00e9pices \u00e0 ma liste de riz styl\u00e9s !\nCe riz se pr\u00e9pare en \u201cstyle cajun\u201d. C\u2019est-\u00e0-dire, des petits l\u00e9gumes, des l\u00e9gumineuses, des \u00e9pices \u00e0 foison et une cuisson \u201cone pot\u201d qui assure un max de go\u00fbt !\nD\u2019ailleurs, concernant les \u00e9pices, si vous n\u2019avez pas de m\u00e9lange cajun tout pr\u00eat, je vous mets le mixte dans la recette. Si le plat vous plait, vous pouvez tout \u00e0 fait vous pr\u00e9parer un bocal de m\u00e9lange d\u2019\u00e9pices pour toujours en avoir pr\u00eat \u00e0 sortir de votre placard !\nEt pour ceux qui en mangent, vous pouvez ajouter un \u0153uf au plat au-dessus du riz. C\u2019est un combo que j\u2019ai d\u00e9couvert il y a quelques ann\u00e9es. Notamment en m\u2019inspirant des loklaks cambodgiens. Et je trouve que le mariage oeuf/riz fonctionne \u00e0 la perfection.\nMaintenant que je vous parle de loklak, \u00e7a me donne envie de travailler sur une version v\u00e9g\u00e9tarienne ! \u00c7a vous tente ?\nCette recette de Riz rouge aux \u00e9pices Cajun a \u00e9t\u00e9 cr\u00e9\u00e9e pour\nMonBento\n.\nRiz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien)\n4.54\n/5 avec\n107\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n50\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour le riz saut\u00e9\n150\ng\nde haricots rouges secs\nou 350g de haricots rouges en conserve\n1\noignon jaune\n2\npetites carottes\n1\nbranche de c\u00e9leri\n2\nc\u00e0s d\u2019huile d\u2019olive\n2\ngousses d\u2019ail\n1\npoivron rouge\n4\nc\u00e0c d\u2019\u00e9pices cajun\n1\nbouillon cube de l\u00e9gumes\n250\ng\nde riz blanc\n450\nml\nd\u2019eau\nIngr\u00e9dients pour faire votre m\u00e9lange d\u2019\u00e9pices cajun maison\n1\nc\u00e0c de paprika fum\u00e9\n1\nc\u00e0c d\u2019ail en poudre\n1\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n\u00bd\nc\u00e0c de fleur de sel\n\u00bd\nc\u00e0c de poivre moulu\n\u00bc\nc\u00e0c de piment de cayenne\nplus ou moins au go\u00fbt\n\u00bc\nc\u00e0c de thym\n\u00bc\nc\u00e0c de cumin\nInstructions\nPr\u00e9paration des \u00e9pices cajun\nTout m\u00e9langer. R\u00e9server.\nPr\u00e9paration du riz\nMettre les haricots rouges \u00e0 tremper dans un grand volume d\u2019eau la veille.\nJeter l\u2019eau de trempage. Puis faire cuire les haricots dans un grand volume d\u2019eau bouillante environ 1h. \u00c9goutter. R\u00e9server.\nOu utiliser des haricots en conserve.\nD\u00e9tailler l\u2019oignon, le c\u00e9leri et les carottes en brunoise. Vous pouvez les passer au mixeur pour aller plus vite.\nFaire chauffer un faitout \u00e0 feu moyen-fort et y verser l\u2019huile d\u2019olive. Faire revenir les l\u00e9gumes d\u00e9coup\u00e9s pendant 3-4min.\nPresser les gousses d\u2019ail et les ajouter.\nCouper le poivron rouge en cubes et l\u2019ajouter \u00e0 la po\u00eale. Remuer r\u00e9guli\u00e8rement.\nAjouter les \u00e9pices. Faire revenir quelques minutes et ajouter le riz et les haricots.\n\u00c9mietter le bouillon cube directement dans la po\u00eale avec vos doigts.\nVerser l\u2019eau et bien remuer.\nCouvrir et laisser cuire \u00e0 feu doux 35-40min. Ne plus remuer et \u00e9viter d\u2019ouvrir le couvercle trop souvent.\nA servir avec un peu d\u2019\u00e9pices cajun par-dessus et pourquoi pas un \u0153uf au plat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\n\u00e9pices\n,\n\u00e9pices cajun\n,\nrecette riz\n,\nrecette riz v\u00e9g\u00e9tarien\n,\nriz\n,\nriz cajun\n,\nriz rouge\n,\nriz v\u00e9g\u00e9tarien\nTartiflette V\u00e9g\u00e9tarienne aux Champignons\nBuddha Bowl de L\u00e9gumes r\u00f4tis aux \u00c9pices Indiennes\n8 thoughts on \u201cRiz rouge aux \u00e9pices Cajun (v\u00e9g\u00e9tarien)\u201d\nSt\u00e9phanie\ndit\u00a0:\n5 octobre 2021 \u00e0 11 h 18 min\nVous \u00eates extras.\nVos recettes sont magnifiques\nMerciiiii\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n6 octobre 2021 \u00e0 20 h 39 min\nOooh merci St\u00e9phanie !\nchargement\u2026\nR\u00e9pondre\nStephanie\ndit\u00a0:\n10 octobre 2021 \u00e0 13 h 08 min\nThis was delicious. The spice blend was perfect, love the heat. Will use this spice blend for other recipes. Happy Thanksgiving!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 octobre 2021 \u00e0 18 h 16 min\nThank you St\u00e9phanie ! We love you \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nChokomiel\ndit\u00a0:\n15 octobre 2021 \u00e0 22 h 21 min\nRecette test\u00e9 et approuv\u00e9.\nSimple et efficace, surtout si on adore le riz.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n17 octobre 2021 \u00e0 22 h 41 min\nCooooeeeeuuur !\nchargement\u2026\nR\u00e9pondre\nAlice\ndit\u00a0:\n23 f\u00e9vrier 2023 \u00e0 22 h 01 min\nBonjour, merci beaucoup pour vos recettes qui sont toutes plus d\u00e9licieuses les unes que les autres.\nJ\u2019avais une question sur cette recette-ci : \u00e0 quel moment doit-on int\u00e9grer les haricots rouges \u00e0 la pr\u00e9paration du fait-tout ? Merci beaucoup d\u2019avance !!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 15 h 02 min\nHello Alice ! Merci bcp ! Effectivement j\u2019avais oubli\u00e9 cette \u00e9tape !! En m\u00eame temps que le riz \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.54 from 107 votes (\n104 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 4.0
+}

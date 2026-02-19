@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "title": "Pommes de terre sauce yaourt cornichons",
+    "description": "Un plat sain, rapide et compl\u00e8tement addictif, \u00e0 tel point que tu vas vouloir en refaire tous les jours.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "pomme de terre",
+      "sauce yaourt",
+      "cornichons",
+      "plat en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/pommes-de-terre-sauce-yaourt-cornichons.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le yaourt grec, avec sa texture \u00e9paisse et cr\u00e9meuse, est id\u00e9al pour apporter de l'onctuosit\u00e9 et un go\u00fbt riche \u00e0 votre sauce.",
+      "Vous pouvez opter pour du yaourt nature ou du skyr, mais le yaourt grec reste le choix parfait pour une sauce savoureuse et velout\u00e9e.",
+      "Servez les pommes de terre ti\u00e8des sur la sauce."
+    ],
+    "slug": "pommes-de-terre-sauce-yaourt-cornichons",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/pommes-de-terre-sauce-yaourt-cornichons.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/04/02/pommes-de-terre-sauce-yaourt-cornichons/",
+    "image": "images/pommes-de-terre-sauce-yaourt-cornichons.webp",
+    "createdAt": "2026-02-09T22:42:39.590124",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 392.0,
+      "protein": 13.2,
+      "fat": 16.1,
+      "carbs": 50.2,
+      "fiber": 5.2,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "pickles",
+      "name": "cornichons",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "gherkins"
+    },
+    {
+      "id": "capers",
+      "name": "c\u00e2pres",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": "\u00e9goutt\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "mustard",
+      "name": "moutarde",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mustard"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "Mixeur (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pommes_de_terre_au_four",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_potatoes",
+      "action": "Coupez les pommes de terre en deux et d\u00e9posez-les sur une plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pommes_de_terre_au_four",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "halved_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_potatoes",
+      "action": "Versez l'huile d'olive et le sel par-dessus et m\u00e9langez un peu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pommes_de_terre_au_four",
+      "uses": [
+        "halved_potatoes",
+        "olive_oil",
+        "salt"
+      ],
+      "produces": "seasoned_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_potatoes",
+      "action": "Enfournez 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pommes_de_terre_au_four",
+      "uses": [
+        "seasoned_potatoes"
+      ],
+      "produces": "baked_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion_pickles_capers",
+      "action": "Pendant la cuisson des pommes de terre, hachez l'oignon, les cornichons et les c\u00e2pres (au mixeur ou au couteau).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "red_onion",
+        "pickles",
+        "capers"
+      ],
+      "produces": "chopped_onion_pickles_capers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_chives",
+      "action": "Hachez la ciboulette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "chives"
+      ],
+      "produces": "chopped_chives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la sauce (oignon, cornichons, c\u00e2pres, ciboulette, moutarde, yaourt grec).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "chopped_onion_pickles_capers",
+        "chopped_chives",
+        "mustard",
+        "greek_yogurt"
+      ],
+      "produces": "yogurt_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "plate",
+      "action": "Servez les pommes de terre ti\u00e8des sur la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "baked_potatoes",
+        "yogurt_sauce"
+      ],
+      "produces": "pommes_de_terre_sauce_yaourt_cornichons",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pommes_de_terre_sauce_yaourt_cornichons",
+  "originalText": "Pommes de terre sauce yaourt cornichons | 100% addictive\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 avril 2025\nPommes de terre sauce yaourt cornichons : une recette v\u00e9g\u00e9tarienne qui va changer ta vie !\nT\u2019as la flemme de te mettre aux\nfourneaux\n, mais tu veux quand m\u00eame \u00e9pater tes\npapilles\n? Pas de panique, on a la solution ! Les\npommes de terre sauce yaourt cornichons\n,\nfondantes\n\u00e0 souhait, vont totalement te r\u00e9concilier avec la\ncuisine\n. Un\nplat\nsain, rapide et compl\u00e8tement addictif, \u00e0 tel point que tu vas vouloir en refaire tous les jours. Et la\nsauce\n? Pr\u00e9pare-toi \u00e0 d\u00e9couvrir une\nbombe de saveurs\nqui pourrait bien devenir ta nouvelle obsession. \u00c0 tes fourneaux !\nTable des mati\u00e8res\n1\nLa sauce magique : un m\u00e9lange de fra\u00eecheur et de peps qui va te rendre accro !\n2\nLa patate de la flemme : il n\u2019y a rien \u00e0 faire, c\u2019est irr\u00e9sistible !\n3\nPommes de terre sauce yaourt cornichons\n4\nYaourt grec, nature ou skyr ? Voici la diff\u00e9rence qui changera tout dans votre recette !\nLa sauce magique : un m\u00e9lange de fra\u00eecheur et de peps qui va te rendre accro !\nCette sauce est tout simplement magique ! Un subtil m\u00e9lange d\u2019ingr\u00e9dients qui va r\u00e9veiller toutes tes papilles. On commence avec l\u2019oignon rouge, qui apporte une note douce et l\u00e9g\u00e8rement sucr\u00e9e. Ensuite, on ajoute des cornichons croquants pour un peu de piquant et de fra\u00eecheur, parfait pour contraster avec la douceur des pommes de terre. Les c\u00e2pres viennent donner un petit c\u00f4t\u00e9 sal\u00e9 et acidul\u00e9, tandis que la ciboulette, fra\u00eeche et herbac\u00e9e, ajoute une touche de l\u00e9g\u00e8ret\u00e9. Un peu de moutarde vient pimenter le tout avec un l\u00e9ger piquant, et le yaourt grec, cr\u00e9meux et onctueux, lie parfaitement l\u2019ensemble pour une sauce irr\u00e9sistible. Ce m\u00e9lange unique de saveurs transforme tes pommes de terre en un plat absolument d\u00e9licieux, frais, l\u00e9ger et plein de caract\u00e8re !\nLa patate de la flemme : il n\u2019y a rien \u00e0 faire, c\u2019est irr\u00e9sistible !\nOn conna\u00eet tous la patate de la flemme : simple, r\u00e9confortante, et toujours d\u00e9licieuse. Peu importe la recette, les pommes de terre, c\u2019est un peu comme un c\u00e2lin pour les papilles. Et si vous en voulez encore plus, on a ce qu\u2019il vous faut ! D\u00e9couvrez nos recettes v\u00e9g\u00e9tariennes \u00e0 base de pommes de terre, comme ces\nGalettes de pommes de terre au curry vegan sans gluten\n, ces\nPatates au four \u00e0 la grecque\n, ou encore cette\nTartiflette v\u00e9g\u00e9tarienne aux champignons\n. Vous allez craquer \u00e0 chaque bouch\u00e9e !\nPommes de terre sauce yaourt cornichons\n4.47\n/5 avec\n83\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les pommes de terre au four\n500\ng\nde pommes de terre\n2\nc\u00e0s d\u2019huile d\u2019olive\nsel\nPour la sauce\n\u00bd\noignon rouge\n4\ncornichons\n2\nc\u00e0c de c\u00e2pres \u00e9goutt\u00e9es\n15\nbranches de ciboulette\n2\nc\u00e0c de moutarde\n150\ng\nde yaourt grec\nInstructions\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nCoupez les pommes de terre en deux et d\u00e9posez-les sur une plaque de cuisson.\nVersez l\u2019huile d\u2019olive et le sel par-dessus et m\u00e9langez un peu.\nEnfournez 30min.\nPendant ce temps, hachez l\u2019oignon, les cornichons et les c\u00e2pres (au mixeur ou au couteau).\nHachez la ciboulette.\nM\u00e9langez tous les ingr\u00e9dients de la sauce.\nServez les pommes de terre ti\u00e8des sur la sauce.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nYaourt grec, nature ou skyr ? Voici la diff\u00e9rence qui changera tout dans votre recette !\nLorsque vous pr\u00e9parez votre sauce, il est essentiel de choisir le yaourt qui fera toute la diff\u00e9rence. Le yaourt grec, avec sa texture \u00e9paisse et cr\u00e9meuse, est id\u00e9al pour apporter de l\u2019onctuosit\u00e9 et un go\u00fbt riche \u00e0 votre sauce. Il se distingue par sa consistance dense et son go\u00fbt plus prononc\u00e9. Le yaourt nature, quant \u00e0 lui, est plus l\u00e9ger et plus subtil, mais il ne vous offrira pas la m\u00eame richesse. Enfin, le skyr, originaire d\u2019Islande, est encore plus \u00e9pais que le yaourt grec, avec une saveur plus acide. Selon l\u2019effet recherch\u00e9, vous pouvez opter pour l\u2019un ou l\u2019autre, mais le yaourt grec reste le choix parfait pour une sauce savoureuse et velout\u00e9e !\nVous aimez le yaourt pourquoi ne pas essayer notre\ntzatziki maison\npour un ap\u00e9ro frais et gourmand ? Ou peut-\u00eatre une\nglace au yaourt grec marbr\u00e9e au coulis de fraise\npour un dessert rafra\u00eechissant ? Et si vous cherchez un petit-d\u00e9jeuner croquant, notre\ngranola vanille coco\nest un must. Le yaourt, c\u2019est d\u00e9finitivement un alli\u00e9 indispensable dans votre cuisine !\nEt voil\u00e0, vous avez entre les mains une recette simple, rapide et pleine de saveurs avec ces pommes de terre sauce yaourt cornichons ! Un plat qui r\u00e9chauffe le c\u0153ur, tout en restant sain et addictif. Vous ne pourrez plus vous en passer ! Alors, laissez-vous tenter par cette association irr\u00e9sistible et faites de chaque repas un moment savoureux. Si vous aimez les pommes de terre autant que nous, n\u2019h\u00e9sitez pas \u00e0 explorer nos autres\nrecettes gourmandes \u00e0 base de patates\n. \u00c0 vos fourneaux !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nPlats en Sauce\n,\nPomme de terre\n,\nRecettes Par Saison\nL\u00e9gumes d\u2019hiver fa\u00e7on Maf\u00e9 : recette v\u00e9g\u00e9tarienne gourmande & r\u00e9confortante\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne : Une explosion d\u2019\u00e9pices et de saveurs !\n1 thought on \u201cPommes de terre sauce yaourt cornichons : une recette v\u00e9g\u00e9tarienne qui va changer ta vie !\u201d\nCorinne\ndit\u00a0:\n13 avril 2025 \u00e0 14 h 20 min\nRecette test\u00e9e aujourd\u2019hui, un r\u00e9gal\u2026 Le go\u00fbt neutre des pommes de terre au four est relev\u00e9 par la sauce pleine de saveurs, j\u2019adore !!!\nchargement\u2026\nR\u00e9pondre\n4.47 from 83 votes (\n82 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

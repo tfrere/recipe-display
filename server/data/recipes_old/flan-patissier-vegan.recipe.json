@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "title": "Flan Pâtissier Vegan",
+    "description": "Ce flan pâtissier végane n'a rien à envier à la version classique. Avec ses belles couleurs et sa tenue impeccable, sa texture parfaite et son goût merveilleusement vanillé, il a tout pour plaire !",
+    "servings": 8,
+    "prepTime": "PT40M",
+    "cookTime": "PT1H",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "flan pâtissier",
+      "flan vanille",
+      "flan végane",
+      "flan végétalien",
+      "végane",
+      "dessert",
+      "automne",
+      "été",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Flan-vegan-1-of-5-scaled.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le résultat est bluffant, le flan a une belle couleur, une tenue parfaite à la découpe avec son appareil bien ferme, dense et moelleux.",
+      "Habituellement, pas fan du lait de soja, ici ça passe nickel, on le sent à peine. Par ses propriétés, je pense que le résultat ne serait pas aussi bluffant en utilisant un autre lait végétal, mais n'hésitez pas à expérimenter !",
+      "Dégustez-le bien frais !",
+      "L'idéal étant de le réaliser la veille.",
+      "Pour un flan coco, on peut remplacer le lait de soja par du lait de coco.",
+      "On peut utiliser du lait de soja vanillé (faire attention à ce que ça ne soit pas trop sucré).",
+      "Taille du moule : 17 cm."
+    ],
+    "slug": "flan-patissier-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Flan-vegan-1-of-5-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/26/flan-patissier-vegan/",
+    "image": "images/flan-patissier-vegan.jpg",
+    "createdAt": "2026-02-09T19:49:53.200548",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 343.0,
+    "totalCookingTime": 13.0,
+    "nutritionPerServing": {
+      "calories": 213.4,
+      "protein": 6.9,
+      "fat": 2.2,
+      "carbs": 40.2,
+      "fiber": 1.6,
+      "confidence": "low",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 11,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "eau_ou_lait_vegetal",
+      "name": "eau ou lait végétal",
+      "quantity": 70.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water or plant-based milk"
+    },
+    {
+      "id": "margarine_vegetale_1",
+      "name": "margarine végétale",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable margarine"
+    },
+    {
+      "id": "agar_agar",
+      "name": "agar agar",
+      "quantity": 3.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "agar agar"
+    },
+    {
+      "id": "lait_de_soja",
+      "name": "lait de soja nature",
+      "quantity": 800.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "plain soy milk"
+    },
+    {
+      "id": "creme_de_soja",
+      "name": "crème de soja",
+      "quantity": 90.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soy cream"
+    },
+    {
+      "id": "vanille",
+      "name": "gousses vanille",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla pods"
+    },
+    {
+      "id": "maizena",
+      "name": "maïzena",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "sucre_de_canne",
+      "name": "sucre de canne blond",
+      "quantity": 170.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "blond cane sugar"
+    },
+    {
+      "id": "curcuma",
+      "name": "curcuma",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "facultatif",
+      "optional": true,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "margarine_vegetale_2",
+      "name": "margarine végétale",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable margarine"
+    }
+  ],
+  "tools": [
+    "Cercle à pâtisserie",
+    "Rouleau à pâtisserie"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sucre_sel",
+      "action": "Dans un grand saladier, mélanger la farine, le sucre, et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "farine",
+        "sucre",
+        "sel"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_margarine_crumble",
+      "action": "Ajouter la margarine et mélanger avec une fourchette ou le bout des doigts jusqu'à obtenir un crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "melange_sec",
+        "margarine_vegetale_1"
+      ],
+      "produces": "crumble",
+      "requires": [],
+      "visualCue": "obtention d'un crumble"
+    },
+    {
+      "id": "incorporer_eau_boule",
+      "action": "Incorporer l'eau ou le lait et mélanger jusqu'à l'obtention d'une boule de pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "crumble",
+        "eau_ou_lait_vegetal"
+      ],
+      "produces": "pate_boule",
+      "requires": [],
+      "visualCue": "obtention d'une boule de pâte"
+    },
+    {
+      "id": "reposer_pate_frigo",
+      "action": "Réserver la pâte au réfrigérateur pendant 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "pate_boule"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la pâte à l'aide d'un rouleau puis foncer le cercle à pâtisserie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_abaissee_dans_cercle",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "retirer_excedent_pate",
+      "action": "Passer le rouleau à pâtisserie sur les bords du cercle afin d'ôter l'excédent de pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "pate_abaissee_dans_cercle"
+      ],
+      "produces": "fond_de_tarte_prepare",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_fond_frigo",
+      "action": "Réserver le tout au réfrigérateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "pâte brisée",
+      "uses": [
+        "fond_de_tarte_prepare"
+      ],
+      "produces": "fond_de_tarte_frais",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_agar_agar_eau",
+      "action": "Dans un petit récipient, mélanger l'agar agar avec une petite quantité d'eau (10/15ml).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "agar_agar"
+      ],
+      "produces": "agar_agar_hydrate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "porter_lait_ebullition",
+      "action": "Dans une casserole, verser le lait de soja, la crème de soja, la préparation eau/agar agar et les deux gousses de vanilles fendues dans la longueur et grattées. Porter le tout à ébullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "lait_de_soja",
+        "creme_de_soja",
+        "agar_agar_hydrate",
+        "vanille"
+      ],
+      "produces": "lait_vanille_porte_ebullition",
+      "requires": [],
+      "visualCue": "ébullition"
+    },
+    {
+      "id": "melanger_maizena_sucre_curcuma",
+      "action": "Dans un grand saladier, mélanger la maïzena, le sucre et la pincée de curcuma, réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "maizena",
+        "sucre_de_canne",
+        "curcuma"
+      ],
+      "produces": "melange_maizena_sucre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "retirer_vanille",
+      "action": "Lorsque le lait arrive à ébullition, retirer la casserole du feu et retirer les gousses de vanille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "lait_vanille_porte_ebullition"
+      ],
+      "produces": "lait_sans_vanille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_lait_sur_maizena",
+      "action": "Verser le lait en deux fois (⅓ puis le reste) sur le mélange de maïzena tout en fouettant vivement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "lait_sans_vanille",
+        "melange_maizena_sucre"
+      ],
+      "produces": "appareil_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_appareil",
+      "action": "Reverser le tout dans la casserole et cuire l'appareil 2-3min sur feu moyen en fouettant énergiquement sans arrêt. Dès que l'appareil épaissit, retirer la casserole du feu et fouetter l'appareil jusqu'à ce qu'il soit lisse et homogène.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "appareil_melange"
+      ],
+      "produces": "appareil_cuit",
+      "requires": [],
+      "visualCue": "appareil épaissit, lisse et homogène"
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_margarine_appareil",
+      "action": "Ajouter la margarine et fouetter de nouveau jusqu'à ce qu'elle soit bien incorporée.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "appareil_cuit",
+        "margarine_vegetale_2"
+      ],
+      "produces": "appareil_final",
+      "requires": [],
+      "visualCue": "margarine bien incorporée"
+    },
+    {
+      "id": "verser_appareil_dans_fond",
+      "action": "Verser directement l'appareil à flan dans le cercle de pâte tout juste sorti du réfrigérateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "appareil_final",
+        "fond_de_tarte_frais"
+      ],
+      "produces": "flan_non_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "lisser_surface",
+      "action": "Lisser la surface avec une spatule ou en tapotant la plaque sur votre plan de travail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "flan_non_cuit"
+      ],
+      "produces": "flan_lisse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_flan",
+      "action": "Enfourner et cuire pendant 1h (la durée varie selon les fours) le flan est prêt lorsqu'il est très peu tremblotant, bien levé et que la surface est bien colorée (il va beaucoup gonfler durant la cuisson mais pas de panique c'est normal, il retombera à la sortie du four).",
+      "duration": "PT1H",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "flan_lisse"
+      ],
+      "produces": "flan_cuit",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "très peu tremblotant, bien levé, surface bien colorée"
+    },
+    {
+      "id": "refroidir_decercler",
+      "action": "Déposer délicatement le flan sur une grille afin qu'il refroidisse, décercler au bout de 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "flan_cuit"
+      ],
+      "produces": "flan_decercle",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_flan_frais",
+      "action": "Réserver le flan au frais pendant au moins 4h (l'idéal étant de le réaliser la veille).",
+      "duration": "PT4H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "appareil à flan",
+      "uses": [
+        "flan_decercle"
+      ],
+      "produces": "flan_patissier_vegan",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "flan_patissier_vegan",
+  "originalText": "Flan Pâtissier Vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 janvier 2020\nFlan Pâtissier Vegan\nAccéder directement à la recette\nDepuis que nous avons lancé le blog, très souvent quand j’adore une pâtisserie, je prends plaisir à essayer de la reproduire en version végane. Pour la recette d’aujourd’hui, le processus fut tout autre. Je déteste le flan pâtissier. Voilà c’est dit. Et bien oui, ça arrive… même aux meilleurs (hehehe). Alors l’idée de réaliser un flan pâtissier végane ne vient pas du tout de l’amour que je lui porte dans sa version classique mais plutôt de mon dégoût (on n’est pas du tout dans l’excès ahah). En vrai, c’est le goût de l’œuf que je n’aime pas, c’est plus fort que moi, je ne sens que ça…\nC’est donc grâce à cette recette que je me suis réconciliée avec le flan. Alors merci à Laurianne du blog\nPerle en Sucre\npour cette recette vraiment très simple à réaliser et surtout délicieuse ! Le résultat est bluffant, le flan a une belle couleur, une tenue parfaite à la découpe avec son appareil bien ferme, dense et moelleux. Au niveau du goût, le doux parfum de vanille est omniprésent, un vrai délice. Habituellement, pas fan du lait de soja, ici ça passe nickel, on le sent à peine. Par ses propriétés, je pense que le résultat ne serait pas aussi bluffant en utilisant un autre lait végétal, mais n’hésitez pas à expérimenter ! Je serais heureuse d’avoir vos retours.\nRetrouvez nos autres desserts véganes revisités : le c\nake au citron vegan\n, la\nmousse au chocolat véganes\nou encore le\nriz au lait vegan et sans gluten\n!\nFlan Pâtissier Vegan\nDaniela\nCe flan pâtissier végane n’a rien à envier à la version classique. Avec ses belles couleurs et sa tenue impeccable, sa texture parfaite et son goût merveilleusement vanillé, il a tout pour plaire !\n4.46\n/5 avec\n44\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n40\nminutes\nmin\nTemps de repos\n4\nheures\nh\n30\nminutes\nmin\nPortions\n8\npersonnes\nIngrédients\n1x\n2x\n3x\nPâte brisée\n300\ng\nde farine\n10\ng\nde sucre\n1\npincée de sel\n70\nml\nd’eau ou lait végétal\n125\ng\nde margarine végétale\nAppareil à flan\n3\ng\nd’agar agar\n800\nml\nde lait de soja nature\n90\nml\nde crème de soja\n2\ngousses de vanille\n75\ng\nde maïzena\n170\ng\nde sucre de canne blond\n1\npincée de curcuma\nfacultatif\n90\ng\nde margarine végétale\nInstructions\nPâte brisée :\nDans un grand saladier, mélanger la farine, le sucre, et le sel.\nAjoutez la margarine et mélanger avec une fourchette ou le bout des doigts jusqu’à obtenir un crumble.\nIncorporer l’eau ou le lait et mélanger jusqu’à l’obtention d’une boule de pâte.\nRéserver la pâte au réfrigérateur pendant 30 min.\nPréparer une plaque recouverte de papier cuisson et déposer le cercle à pâtisserie au milieu.\nAbaisser la pâte à l’aide d’un rouleau puis foncer le cercle à pâtisserie.\nPasser le rouleau à pâtisserie sur les bords du cercle afin d’ôter l’excédent de pâte.\nRéserver le tout au réfrigérateur.\nAppareil à flan :\nDans un petit récipient, mélanger l’agar agar avec une petit quantité d’eau (10/15ml).\nDans une casserole, verser le lait de soja, la crème de soja, la préparation eau/agar agar et les deux gousses de vanilles fendues dans la longueur et grattées. Porter le tout à ébullition.\nDans un grand saladier, mélanger la maïzena, le sucre et la pincée de curcuma, réserver.\nLorsque le lait arrive à ébullition, retirer la casserole du feu et retirer les gousses de vanille.\nVerser le lait en deux fois (⅓ puis le reste) sur le mélange de maïzena tout en fouettant vivement.\nPuis reverser le tout dans la casserole et cuire l’appareil ⅔ minutes sur feu moyen en fouettant énergiquement sans arrêt. Dès que l’appareil épaissit, retirer la casserole du feu et fouetter l’appareil jusqu’à ce qu’il soit lisse et homogène.\nPréchauffer le four à 180°C.\nAjouter la margarine et fouetter de nouveau jusqu’à ce qu’elle soit bien incorporé.\nVerser directement l’appareil à flan dans le cercle de pâte tout juste sorti du réfrigérateur.\nLisser la surface avec une spatule ou en tapotant la plaque sur votre plan de travail.\nEnfourner et cuire pendant 1h (la durée varie selon les fours) le flan est prêt lorsqu’il est très peu tremblotant, bien levé et que la surface est bien coloré (il va beaucoup gonfler durant la cuisson mais pas de panique c’est normal, il retombera à la sortie du four).\nDéposer délicatement le flan sur une grille afin qu’il refroidisse, décercler au bout de 10min.\nRéserver le flan au frais pendant au moins 4h (l’idéal étant de le réaliser la veille) et voilà ! Dégustez-le bien frais !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCrèmes et Entremets\n,\nDesserts & Snack\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nflan pâtissier\n,\nflan vanille\n,\nflan végane\n,\nflan végétalien\n,\nvégane\nMuffins Poireaux Mimolette (Végétariens)\nRiz au Kimchi (Vegan, Sans Gluten)\n9 thoughts on “Flan Pâtissier Vegan”\nLadyMilonguera\ndit :\n26 janvier 2020 à 20 h 22 min\nMagnifique ce flan pâtissier !\nchargement…\nRépondre\nJustine\ndit :\n16 avril 2023 à 19 h 21 min\nSuper recette. Et pour en faire un flan coco, je remplace le lait soja par coco ? Ou niveau goût ça ne suffira pas\nchargement…\nRépondre\nDaniela\ndit :\n18 avril 2023 à 19 h 57 min\nHello Justine, je pense que ça donnera bien le goût de noix de coco mais comme je n’ai jamais testé je ne sais pas trop si le goût sera assez prononcé pour les amateurs de coco :p si tu essayes n’hésites pas à nous faire un retour en tout cas 🙂 Merci !\nchargement…\nRépondre\nLiam\ndit :\n14 mai 2024 à 18 h 04 min\nBonsoir, cette recette m’a l’air vraiment délicieuse, par contre je n’ai plus d’extrait de vanille, seulement du lait de soja à la vanille. Pensez-vous que cela suffirait pour le goût ? Passez une bonne soirée 😊\nchargement…\nRépondre\nDaniela\ndit :\n1 juillet 2024 à 10 h 59 min\nOui sans problème ! Vraiment désolée pour la réponse tardive… j’imagine qu’entre temps vous vous êtes lancé sinon il est tjs temps d’essayer ! Bonne journée\nchargement…\nRépondre\nLiam\ndit :\n18 mai 2024 à 7 h 40 min\nBonjour, pensez-vous que du lait de soja vanillé pourrait convenir ? Je n’ai plus d’extrait de vanille pour le moment :/ Et pourrais je savoir quelle est la taille du moule s’il-vous-plaît ?\nchargement…\nRépondre\nDaniela\ndit :\n1 juillet 2024 à 10 h 58 min\nOui bien sûr pour le lait de soja vanillé (juste faire attention à ce que ça ne soit pas trop sucré) ! Pour le moule, c’est un petit moule de 17 cm.\nchargement…\nRépondre\nMallem\ndit :\n30 septembre 2024 à 13 h 18 min\nExcellente recette !\nchargement…\nRépondre\nHenri\ndit :\n10 mars 2025 à 6 h 36 min\nBonjour,\nRecette très facile et sympa à réaliser. J’ai utilisé du lait de soja vanillé et 1 gousse de vanille (au lieu des deux préconisées). La prochaine fois j’essaierai avec du lait d’amande. Par contre, j’ai juste fait un fond de tarte sans remonter sur les bords du moule. L’appareil à flan a une excellente tenue après refroidissement. Et bien plus savoureux encore le lendemain.\nMerci pour cette recette que j’adopte haut la main après beaucoup d’essais d’autres propositions moins abouties (à mon sens en tout cas).\nchargement…\nRépondre\n4.46 from 44 votes (\n42 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 13.0
+}

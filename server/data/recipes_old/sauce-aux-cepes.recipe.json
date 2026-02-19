@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "title": "Sauce aux c\u00e8pes",
+    "description": "Riche, parfum\u00e9e et pleine de caract\u00e8re, elle transforme le repas en vrai moment de f\u00eate. Une sauce simple \u00e0 pr\u00e9parer, mais qui a tout d'une grande.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "champignon",
+      "sauce",
+      "f\u00eates",
+      "automne",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-cepes-free-the-pickleSauce-cepes-1-of-3-819x1024.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": null,
+    "notes": [
+      "Astuce conservation : Cette sauce peut \u00eatre pr\u00e9par\u00e9e jusqu'\u00e0 2 jours \u00e0 l'avance. Conservez-la au frais : elle figera. Pour la r\u00e9chauffer, faites-la chauffer \u00e0 feu tr\u00e8s doux jusqu'\u00e0 ce qu'elle retrouve sa texture onctueuse."
+    ],
+    "slug": "sauce-aux-cepes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-cepes-free-the-pickleSauce-cepes-1-of-3-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/11/13/sauce-aux-cepes/",
+    "image": "images/sauce-aux-cepes.webp",
+    "createdAt": "2026-02-09T23:13:06.775192",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 41.0,
+    "totalCookingTime": 11.0,
+    "nutritionPerServing": {
+      "calories": 1985.8,
+      "protein": 54.6,
+      "fat": 133.9,
+      "carbs": 103.0,
+      "fiber": 27.4,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cepes_deshydrates",
+      "name": "c\u00e8pes d\u00e9shydrat\u00e9s",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried porcini mushrooms"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "vin_blanc",
+      "name": "vin blanc",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "eau_trempage_cepes",
+      "name": "eau de trempage des c\u00e8pes",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soaking water from porcini mushrooms"
+    },
+    {
+      "id": "cognac",
+      "name": "cognac",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "optionnel",
+      "optional": true,
+      "name_en": "Cognac"
+    },
+    {
+      "id": "bouillon_cube_legumes",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "creme",
+      "name": "cr\u00e8me",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Heavy cream"
+    },
+    {
+      "id": "miso_blanc",
+      "name": "miso blanc ou moutarde fine",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso or Dijon mustard"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "rehydrate_cepes",
+      "action": "Placez les c\u00e8pes dans un bol et versez de l'eau bouillante dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cepes_deshydrates"
+      ],
+      "produces": "cepes_in_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "soak_cepes",
+      "action": "Laissez-les se r\u00e9hydrater pendant 20min (ou selon les indications du paquet).",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cepes_in_water"
+      ],
+      "produces": "rehydrated_cepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_cepes",
+      "action": "\u00c9gouttez-les et conservez 100ml d'eau de trempage.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rehydrated_cepes"
+      ],
+      "produces": "drained_cepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_aromatics",
+      "action": "Hachez finement l'ail et les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ail",
+        "echalotes"
+      ],
+      "produces": "chopped_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Faites fondre le beurre dans une casserole, puis ajoutez l'ail et les \u00e9chalotes. Laissez revenir \u00e0 feu moyen jusqu'\u00e0 ce qu'ils deviennent translucides et commencent \u00e0 dorer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre",
+        "chopped_aromatics"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": "translucides et commencent \u00e0 dorer"
+    },
+    {
+      "id": "chop_cepes",
+      "action": "Si les c\u00e8pes sont en gros morceaux, hachez-les grossi\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "drained_cepes"
+      ],
+      "produces": "chopped_cepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_cepes",
+      "action": "Ajoutez les c\u00e8pes dans la casserole et faites revenir 6min en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_aromatics",
+        "chopped_cepes"
+      ],
+      "produces": "sauteed_cepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deglaze",
+      "action": "D\u00e9glacez avec le vin blanc, puis ajoutez 100 ml de l'eau de trempage des c\u00e8pes, le cognac (si utilis\u00e9) et le demi-bouillon cube.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_cepes",
+        "vin_blanc",
+        "eau_trempage_cepes",
+        "cognac",
+        "bouillon_cube_legumes"
+      ],
+      "produces": "deglazed_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_reduce",
+      "action": "Laissez mijoter \u00e0 feu doux jusqu'\u00e0 r\u00e9duction de moiti\u00e9 (env 10min).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "deglazed_mixture"
+      ],
+      "produces": "reduced_mixture",
+      "requires": [],
+      "visualCue": "r\u00e9duction de moiti\u00e9"
+    },
+    {
+      "id": "add_cream",
+      "action": "Versez ensuite la cr\u00e8me, salez l\u00e9g\u00e8rement, poivrez, et laissez cuire \u00e0 petit bouillon pendant 5min, en remuant de temps en temps.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "reduced_mixture",
+        "creme",
+        "sel",
+        "poivre"
+      ],
+      "produces": "cream_sauce",
+      "requires": [],
+      "visualCue": "petit bouillon"
+    },
+    {
+      "id": "finish_sauce",
+      "action": "En fin de cuisson, ajoutez le miso blanc (ou la moutarde), m\u00e9langez bien, et servez bien chaud.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cream_sauce",
+        "miso_blanc"
+      ],
+      "produces": "sauce_aux_cepes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sauce_aux_cepes",
+  "originalText": "Sauce Aux C\u00e8pes | La Recette Simple Et Parfum\u00e9e Pour Les F\u00eates\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 novembre 2025\nSauce aux c\u00e8pes : parfaite pour une table de f\u00eates\nLa\nsauce aux c\u00e8pes\n, c\u2019est la petite touche qui fait toute la diff\u00e9rence sur la\ntable de No\u00ebl\n. Riche,\nparfum\u00e9e\net\npleine de caract\u00e8re\n, elle transforme le\nrepas\nen vrai moment de\nf\u00eate\n. Son\nparfum bois\u00e9\net sa\ntexture onctueuse\nenrobe \u00e0 merveille les\nr\u00f4tis\n,\ngratins\nou\nl\u00e9gumes r\u00f4tis\n. Qu\u2019elle accompagne un\nplat v\u00e9g\u00e9tarien\nou non, elle apporte ce c\u00f4t\u00e9\nchaleureux\net\nr\u00e9confortant\nqu\u2019on aime tant pendant les\nf\u00eates\n. Une\nsauce simple \u00e0 pr\u00e9parer\n, mais qui a tout d\u2019une grande.\nTable des mati\u00e8res\n1\nLes c\u00e8pes, tr\u00e9sor de la for\u00eat et alli\u00e9s des plats de f\u00eate\n2\nLa sauce aux c\u00e8pes, l\u2019alli\u00e9e parfaite des r\u00f4tis de No\u00ebl\n3\nSauce aux c\u00e8pes\n4\nDes ingr\u00e9dients simples pour une sauce riche et parfum\u00e9e\n5\nUne sauce qui se pr\u00e9pare \u00e0 l\u2019avance (et se r\u00e9chauffe sans souci)\n6\nDes id\u00e9es pour un menu de f\u00eates fa\u00e7on Free the Pickle\nLes c\u00e8pes, tr\u00e9sor de la for\u00eat et alli\u00e9s des plats de f\u00eate\nLes c\u00e8pes, ce sont un peu les joyaux de l\u2019automne. Avec leur parfum intense et leur go\u00fbt bois\u00e9, ils rappellent les promenades en for\u00eat et les repas du dimanche. Pr\u00e9sents dans la cuisine europ\u00e9enne depuis des si\u00e8cles, ils \u00e9taient autrefois r\u00e9serv\u00e9s aux grandes occasions. Riches en fibres, en min\u00e9raux et en antioxydants, ils apportent du caract\u00e8re sans alourdir les plats. Dans cette sauce, on mise sur la simplicit\u00e9. On utilise des c\u00e8pes d\u00e9shydrat\u00e9s qu\u2019on r\u00e9hydrate doucement pour retrouver toute leur richesse et leur texture fondante. Pas besoin de panier de cueillette, juste un petit bol d\u2019eau chaude et quelques minutes de patience. R\u00e9sultat : une sauce pleine de profondeur, parfaite pour les repas de f\u00eate ou pour se faire plaisir, tout simplement.\nSi vous aimez les c\u00e8pes, allez aussi voir nos\nsapins feuillet\u00e9s aux c\u00e8pes\npour l\u2019ap\u00e9ro de No\u00ebl, nos\ntoasts vegans \u00e0 la cr\u00e8me de c\u00e8pes et marrons caram\u00e9lis\u00e9s\npour impressionner vos invit\u00e9s, ou notre\np\u00e2t\u00e9 vegan aux c\u00e8pes et noisettes sans gluten\npour un repas festif et v\u00e9g\u00e9tal.\nLa sauce aux c\u00e8pes, l\u2019alli\u00e9e parfaite des r\u00f4tis de No\u00ebl\nImpossible d\u2019imaginer un repas de f\u00eate sans une bonne sauce pour accompagner le plat principal. La sauce aux c\u00e8pes apporte tout ce qu\u2019on aime \u00e0 No\u00ebl : une texture onctueuse, un go\u00fbt profond et ce parfum de for\u00eat qui transforme un simple r\u00f4ti en plat de f\u00eate. Elle sublime aussi bien les r\u00f4tis v\u00e9g\u00e9tariens que les versions plus traditionnelles. Servez-la g\u00e9n\u00e9reusement sur un r\u00f4ti vegan maison ou un plat de l\u00e9gumes r\u00f4tis : succ\u00e8s garanti. Et si vous cherchez des id\u00e9es pour votre menu, laissez-vous tenter par notre\nr\u00f4ti vegan aux c\u00e8pes sans gluten\n, notre\nr\u00f4ti vegan \u00e0 la ch\u00e2taigne\nou le\nr\u00f4ti vegan de haricots blancs et farce de pomme et ch\u00e2taignes\n. Avec cette sauce, chaque bouch\u00e9e devient un vrai moment de f\u00eate.\nSauce aux c\u00e8pes\nNotez cette recette !\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps de trempage\n20\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n40\ng\nde c\u00e8pes d\u00e9shydrat\u00e9s\n1\ngousse d\u2019ail\n2\n\u00e9chalotes\n30\ng\nde beurre\n200\nml\nde vin blanc\n100\nml\nd\u2019eau de trempage des c\u00e8pes\n1\nc\u00e0s de cognac\noptionnel\n\u00bd\nbouillon cube de l\u00e9gumes\n300\nml\nde cr\u00e8me\n1\nc\u00e0c de miso blanc ou de moutarde fine\nsel\npoivre\nInstructions\nPlacez les c\u00e8pes dans un bol et versez de l\u2019eau bouillante dessus.\nLaissez-les se r\u00e9hydrater pendant 15 \u00e0 20 min (ou selon les indications du paquet).\n\u00c9gouttez-les et conservez 100ml d\u2019eau de trempage.\nHachez finement l\u2019ail et les \u00e9chalotes.\nFaites fondre le beurre dans une casserole, puis ajoutez-les. Laissez revenir \u00e0 feu moyen jusqu\u2019\u00e0 ce qu\u2019ils deviennent translucides et commencent \u00e0 dorer.\nSi les c\u00e8pes sont en gros morceaux, hachez-les grossi\u00e8rement.\nAjoutez-les dans la casserole et faites revenir 5 \u00e0 6 minutes en remuant r\u00e9guli\u00e8rement.\nD\u00e9glacez avec le vin blanc, puis ajoutez 100 ml de l\u2019eau de trempage des c\u00e8pes, le cognac (si utilis\u00e9) et le demi-bouillon cube.\nLaissez mijoter \u00e0 feu doux jusqu\u2019\u00e0 r\u00e9duction de moiti\u00e9 (env 10min).\nVersez ensuite la cr\u00e8me, salez l\u00e9g\u00e8rement, poivrez, et laissez cuire \u00e0 petit bouillon pendant 5 min, en remuant de temps en temps.\nEn fin de cuisson, ajoutez le miso blanc (ou la moutarde), m\u00e9langez bien, et servez bien chaud.\nNotes\nAstuce conservation :\nCette sauce peut \u00eatre pr\u00e9par\u00e9e jusqu\u2019\u00e0 2 jours \u00e0 l\u2019avance.\nConservez-la au frais : elle figera.\nPour la r\u00e9chauffer, faites-la chauffer \u00e0 feu tr\u00e8s doux jusqu\u2019\u00e0 ce qu\u2019elle retrouve sa texture onctueuse.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nDes ingr\u00e9dients simples pour une sauce riche et parfum\u00e9e\nCette sauce aux c\u00e8pes mise sur quelques ingr\u00e9dients bien choisis pour un maximum de go\u00fbt. Les c\u00e8pes d\u00e9shydrat\u00e9s en sont la base : leur eau de trempage donne toute la profondeur du plat. L\u2019ail et les \u00e9chalotes apportent la douceur, tandis qu\u2019un peu de beurre et de vin blanc cr\u00e9ent une base fondante et \u00e9quilibr\u00e9e. Le miso blanc (ou la moutarde fine) vient lier le tout avec une pointe d\u2019umami. Et pour ceux qui aiment les sauces au go\u00fbt plus cors\u00e9, un trait de cognac fait ressortir les ar\u00f4mes bois\u00e9s des c\u00e8pes \u00e0 merveille. Enfin, la cr\u00e8me apporte ce c\u00f4t\u00e9 onctueux et festif qu\u2019on aime tant pendant les f\u00eates.\nEt si vous aimez les plats aux parfums de sous-bois, d\u00e9couvrez\ntoutes nos recettes \u00e0 base de champignons\npour prolonger la saison toute l\u2019ann\u00e9es\nUne sauce qui se pr\u00e9pare \u00e0 l\u2019avance (et se r\u00e9chauffe sans souci)\nLa sauce aux c\u00e8pes, c\u2019est aussi le r\u00eave des cuisiniers organis\u00e9s. Vous pouvez la pr\u00e9parer jusqu\u2019\u00e0 deux jours avant le repas, la conserver au frais, puis la r\u00e9chauffer doucement \u00e0 feu doux juste avant de servir. Elle garde toute sa texture onctueuse et son parfum bois\u00e9, sans jamais \u00e9paissir ou s\u2019alt\u00e9rer. Parfaite pour \u00e9viter le stress du dernier moment et profiter pleinement du repas de No\u00ebl. Et si vous aimez avoir toujours une bonne sauce sous la main, d\u00e9couvrez aussi nos autres recettes : la\nsauce foresti\u00e8re, reine de l\u2019automne\n, la\nsauce au poivre inratable\n, la\nsauce b\u00e9arnaise facile au blender\nou encore\nla meilleure sauce burger vegan au monde\n.\nDes id\u00e9es pour un menu de f\u00eates fa\u00e7on Free the Pickle\nParce que les f\u00eates, c\u2019est avant tout le plaisir de partager, on vous a rassembl\u00e9 nos recettes pr\u00e9f\u00e9r\u00e9es pour composer un repas complet, du premier toast au dernier dessert. Pour l\u2019ap\u00e9ro, laissez-vous tenter par nos id\u00e9es festives et v\u00e9g\u00e9tales avec\nnotre s\u00e9lection sp\u00e9ciale ap\u00e9ro de No\u00ebl\n: bouch\u00e9es croustillantes, mini feuillet\u00e9s, tartinades maison\u2026 tout pour commencer la soir\u00e9e du bon pied. Le\nsapin de No\u00ebl aux fromages \u00e0 fondue\nfait toujours son petit effet.\nC\u00f4t\u00e9 plats, le v\u00e9g\u00e9tal se met sur son trente-et-un avec\nnos plats de No\u00ebl v\u00e9g\u00e9tariens et vegans\n. Mention sp\u00e9ciale pour les\npaupiettes v\u00e9g\u00e9tales aux morilles\nou encore le\nparmentier de No\u00ebl aux morilles, vegan et sans gluten\nqui met tout le monde d\u2019accord \u00e0 table. Et pour finir en douceur, impossible de passer \u00e0 c\u00f4t\u00e9 de\nnos desserts vegans pour No\u00ebl\n. Entre autres douceurs, on vous conseille les\npoires poch\u00e9es au vin chaud de No\u00ebl\n, parfum\u00e9es, fondantes et juste assez \u00e9pic\u00e9es pour clore le repas sur une note magique.\nCette sauce aux c\u00e8pes est la touche finale qui transforme un plat simple en vrai repas de f\u00eate. Facile \u00e0 pr\u00e9parer, pleine de caract\u00e8re et parfaite pour accompagner les r\u00f4tis, elle trouvera forc\u00e9ment sa place sur votre table de No\u00ebl. Pr\u00e9par\u00e9e \u00e0 l\u2019avance ou servie minute, elle fait toujours son petit effet. Et pour encore plus d\u2019id\u00e9es de sauces \u00e0 refaire toute l\u2019ann\u00e9e, d\u00e9couvrez\nune s\u00e9lection de 10 sauces maison simples et rapides\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChampignon\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nRecettes aux champignons : mes id\u00e9es simples et gourmandes de l\u2019automne\nQuiche butternut poireau ch\u00e8vre : recette pratique et r\u00e9confortante\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required",
+  "totalCookingTime": 11.0
+}

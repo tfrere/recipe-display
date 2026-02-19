@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "title": "Brochettes de Champignons \u00e0 la Sauce Soja (Brochettes Yakitoris V\u00e9g\u00e9taliennes)",
+    "description": "Des brochettes de champignons marin\u00e9s dans une sauce soja, vinaigre de riz et huile de s\u00e9same, cuites \u00e0 la po\u00eale ou au BBQ.",
+    "servings": 6,
+    "prepTime": "PT10M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "champignons",
+      "brochette vegan",
+      "yakitoris",
+      "recette bbq vege",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-4-of-6.jpg",
+    "nationality": "Japanese-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez cuire les champignons \u00e0 la po\u00eale ou au BBQ pour un go\u00fbt plus authentique.",
+      "Parfois en brochette, mais aussi parfois sans brochette, juste avec du riz et une petite verdure.",
+      "Accompagnez avec des brochettes aubergine-fromage et des brochettes de boulettes."
+    ],
+    "slug": "brochettes-de-champignons-a-la-sauce-soja-brochettes-yakitoris-vegetaliennes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-4-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/02/brochettes-de-champignons-a-la-sauce-soja/",
+    "image": "images/brochettes-de-champignons-a-la-sauce-soja-brochettes-yakitoris-vegetaliennes.webp",
+    "createdAt": "2026-02-09T20:30:46.940876",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 15.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 68.0,
+      "protein": 3.4,
+      "fat": 5.3,
+      "carbs": 3.0,
+      "fiber": 1.0,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "mushrooms",
+      "name": "petits champignons de paris",
+      "quantity": 18.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushrooms"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja sucr\u00e9e",
+      "quantity": 8.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet soy sauce"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "green_onions",
+      "name": "c\u00e9bettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9es en tron\u00e7ons d'environ 4cm",
+      "notes": null,
+      "optional": false,
+      "name_en": "scallions"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "pics \u00e0 brochettes"
+  ],
+  "steps": [
+    {
+      "id": "clean_mushrooms",
+      "action": "Nettoyer les champignons et enlever les pieds.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mushrooms"
+      ],
+      "produces": "cleaned_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_marinade",
+      "action": "Dans un plat, m\u00e9langer la sauce soja, l'huile de s\u00e9same et le vinaigre de riz.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "soy_sauce",
+        "sesame_oil",
+        "rice_vinegar"
+      ],
+      "produces": "marinade_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_mushrooms",
+      "action": "Verser les champignons dans le plat et m\u00e9langer pour qu'ils soient tous recouverts de sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_mushrooms",
+        "marinade_sauce"
+      ],
+      "produces": "mushrooms_in_marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate",
+      "action": "Laisser mariner quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mushrooms_in_marinade"
+      ],
+      "produces": "marinated_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_green_onions",
+      "action": "Pendant ce temps, couper les c\u00e9bettes en tron\u00e7ons d'environ 4cm. Les ajouter \u00e0 la marinade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "green_onions",
+        "marinated_mushrooms"
+      ],
+      "produces": "mushrooms_onions_in_marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_mushrooms",
+      "action": "Verser tout le contenu du plat dans la po\u00eale et faire revenir en remuant r\u00e9guli\u00e8rement pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mushrooms_onions_in_marinade"
+      ],
+      "produces": "cooked_mushrooms_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_skewers",
+      "action": "Faire les brochettes en alternant un champignon avec un tron\u00e7on de c\u00e9bette. Saupoudrer de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_mushrooms_onions",
+        "sesame_seeds"
+      ],
+      "produces": "brochettes_de_champignons",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir chaud.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "brochettes_de_champignons"
+      ],
+      "produces": "brochettes_servies",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "brochettes_servies",
+  "originalText": "Brochettes de Champignons - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 ao\u00fbt 2021\nBrochettes de Champignons\nAller \u00e0 la recette\nEt voici la derni\u00e8re de mes recettes de yakitoris v\u00e9g\u00e9 : les Brochettes de Champignons \u00e0 la Sauce Soja !\nC\u2019est la recette la plus simple, et celle que je fais le plus souvent. Parfois en brochette, mais aussi parfois sans brochette, juste avec du riz et une petite verdure.\nLe principe est super simple ! Des champignons et une marinade \u201ctypique\u201d. Par cela, j\u2019entends un m\u00e9lange de sauce soja, vinaigre de riz, et huile de s\u00e9same.\nCe sont vraiment les ingr\u00e9dients magiques qui apportent toutes leurs saveurs \u00e0 ces Brochettes de Champignons \u00e0 la Sauce Soja.\nVous pouvez cuire les champignons \u00e0 la po\u00eale au m\u00eame au BBQ pour un go\u00fbt plus authentique !\nPour accompagner ces Brochettes , je vous conseille deux autres recettes : les\nbrochettes aubergine- fromage\net\nles brochettes de boulettes\n!\nBrochettes de Champignons \u00e0 la Sauce Soja (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\n4.51\n/5 avec\n127\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n6\nbrochettes\nIngr\u00e9dients\n1x\n2x\n3x\n18\npetits champignons de paris\n8\nc\u00e0s de sauce soja sucr\u00e9e\n2\nc\u00e0s d\u2019huile de s\u00e9same\n1\nc\u00e0s de vinaigre de riz\n2\nc\u00e9bettes\nou un oignon nouveau \u00e0 d\u00e9faut\n6\npics \u00e0 brochettes\ngraines de s\u00e9same\nInstructions\nNettoyer les champignons et enlever les pieds.\nDans un plat, m\u00e9langer la sauce soja, l\u2019huile de s\u00e9same et le vinaigre de riz.\nVerser les champignons dans le plat et m\u00e9langer pour qu\u2019ils soient tous recouverts de sauce.\nLaisser mariner quelques minutes.\nPendant ce temps, couper les c\u00e9bettes en tron\u00e7ons d\u2019environ 4cm. Les ajouter \u00e0 la marinade.\nFaire chauffer une po\u00eale \u00e0 feu moyen.\nVerser tout le contenu du plat dans la po\u00eale et faire revenir en remuant r\u00e9guli\u00e8rement pendant 15min.\nFaire les brochettes en alternant un champignon avec un tron\u00e7on de c\u00e9bette. Saupoudrez de graines de s\u00e9same.\nServir chaud.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019ai cr\u00e9\u00e9e cette recette pour\nMonBento\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChampignon\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nbbq sans viande\n,\nbrochette sans viande\n,\nbrochette vegan\n,\nbrochette v\u00e9g\u00e9tarienne\n,\nbrochettes v\u00e9g\u00e9\n,\nchampignons\n,\nrecette bbq vege\n,\nrecette de brochette vegan\n,\nrecette de brochette v\u00e9g\u00e9tarienne\n,\nyakitoris\nBrochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\nSabl\u00e9s Sal\u00e9s Olives noires et Thym\n4.51 from 127 votes (\n127 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "title": "Wraps prot\u00e9in\u00e9s aux lentilles corail",
+    "description": "Des tortillas de lentilles corail, sans gluten et prot\u00e9in\u00e9es, utilis\u00e9es pour pr\u00e9parer des wraps garnis d'une omelette, de roquette, de betterave et de f\u00eata.",
+    "servings": 4,
+    "prepTime": "PT3H",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "lentilles corail",
+      "wrap",
+      "sans gluten",
+      "prot\u00e9in\u00e9",
+      "v\u00e9g\u00e9tarien",
+      "brunch"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/tortillas-lentilles-corail-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Il faut laisser tremper les lentilles au moins 3 heures avant de les mixer.",
+      "Remuez la pr\u00e9paration entre 2 tortillas pour \u00e9viter qu'elle ne d\u00e9phase !",
+      "Varier les garnitures en fonction de vos go\u00fbts et des saisons !",
+      "Tu peux les conserver 2 ou 3 jours dans une torchon puis dans un r\u00e9cipient ferm\u00e9.",
+      "Pour une meilleure digestion tu peux effectivement jeter l'eau de trempage et mettre de l'eau fraiche dans le blender."
+    ],
+    "slug": "wraps-proteines-aux-lentilles-corail",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/tortillas-lentilles-corail-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/24/wraps-proteines-aux-lentilles-corail/",
+    "image": "images/wraps-proteines-aux-lentilles-corail.webp",
+    "createdAt": "2026-02-09T21:20:39.833152",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 185.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 232.8,
+      "protein": 16.4,
+      "fat": 5.4,
+      "carbs": 29.2,
+      "fiber": 7.2,
+      "confidence": "low",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "lentilles_corail",
+      "name": "lentilles corail",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red lentils"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "huile_olive_cuisson",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la cuisson",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oeufs",
+      "name": "\u0153ufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "roquette",
+      "name": "roquette",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "arugula"
+    },
+    {
+      "id": "betterave",
+      "name": "betterave crue",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "raw beets"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "huile_olive_filet",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Blender ou mixeur plongeant"
+  ],
+  "steps": [
+    {
+      "id": "tremper_lentilles",
+      "action": "Faire tremper les lentilles corail dans l'eau pendant au moins 3h.",
+      "duration": "PT3H",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "lentilles_corail",
+        "eau"
+      ],
+      "produces": "lentilles_trempees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mixer_lentilles",
+      "action": "Mixer les lentilles et l'eau dans un blender jusqu'\u00e0 obtention d'une consistance bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "lentilles_trempees"
+      ],
+      "produces": "puree_lentilles",
+      "requires": [],
+      "visualCue": "consistance bien lisse"
+    },
+    {
+      "id": "assaisonner_puree",
+      "action": "Ajouter du sel et du poivre et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "puree_lentilles",
+        "sel",
+        "poivre"
+      ],
+      "produces": "puree_assaisonnee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_poele",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen-fort et y verser 1 c\u00e0s d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "huile_olive_cuisson"
+      ],
+      "produces": "poele_chaude_hullee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tortilla_1",
+      "action": "Verser \u00bc de la pr\u00e9paration dans la po\u00eale chaude. Etaler avec le dos d'une cuill\u00e8re pour former une tortilla ronde.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "puree_assaisonnee",
+        "poele_chaude_hullee"
+      ],
+      "produces": "tortilla_cru_1",
+      "requires": [],
+      "visualCue": "tortilla ronde"
+    },
+    {
+      "id": "cuire_cote_1",
+      "action": "Laisser cuire jusqu'\u00e0 ce que le dessus de la tortilla semble sec (environ 3min).",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "tortilla_cru_1"
+      ],
+      "produces": "tortilla_cuite_cote_1",
+      "requires": [],
+      "visualCue": "dessus de la tortilla semble sec"
+    },
+    {
+      "id": "cuire_cote_2",
+      "action": "Puis retourner et laisser cuire encore 1 \u00e0 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "tortilla_cuite_cote_1"
+      ],
+      "produces": "tortilla_cuite_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tortillas_restantes",
+      "action": "R\u00e9p\u00e9ter pour les autres tortillas en remuant la pr\u00e9paration entre chaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tortillas_de_lentilles",
+      "uses": [
+        "puree_assaisonnee",
+        "huile_olive_cuisson",
+        "tortilla_cuite_1"
+      ],
+      "produces": "tortillas_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "battre_oeufs",
+      "action": "Battre deux \u0153ufs puis les verser dans une po\u00eale bien chaude l\u00e9g\u00e8rement huil\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_et_assemblage",
+      "uses": [
+        "oeufs",
+        "huile_olive_cuisson"
+      ],
+      "produces": "oeufs_battus_poele",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_omelette_tortilla",
+      "action": "D\u00e9poser une tortilla de lentilles par-dessus et laisser cuire l'omelette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_et_assemblage",
+      "uses": [
+        "tortillas_cuites",
+        "oeufs_battus_poele"
+      ],
+      "produces": "omelette_tortilla_cote_1",
+      "requires": [],
+      "visualCue": "omelette cuite"
+    },
+    {
+      "id": "retourner_omelette",
+      "action": "Quand elle est cuite, retourner et laisser cuire encore quelques secondes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_et_assemblage",
+      "uses": [
+        "omelette_tortilla_cote_1"
+      ],
+      "produces": "omelette_tortilla_cuite",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnir_wrap",
+      "action": "Ajouter la roquette, la betterave r\u00e2p\u00e9e, la f\u00eata \u00e9miett\u00e9e et un filet d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_et_assemblage",
+      "uses": [
+        "omelette_tortilla_cuite",
+        "roquette",
+        "betterave",
+        "feta",
+        "huile_olive_filet"
+      ],
+      "produces": "wrap_garni",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rouler_wrap",
+      "action": "Rouler la tortilla en wrap.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garniture_et_assemblage",
+      "uses": [
+        "wrap_garni"
+      ],
+      "produces": "wraps_proteines_lentilles",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "wraps_proteines_lentilles",
+  "originalText": "Wraps prot\u00e9in\u00e9s aux lentilles corail - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 mai 2022\nWraps prot\u00e9in\u00e9s aux lentilles corail\nAller \u00e0 la recette\nJe suis trop heureuse de vous partager cette recette de Wraps prot\u00e9in\u00e9s aux lentilles corail !\nPour deux raisons ! Vous \u00eates pr\u00eats ? Je vous explique !\nTable des mati\u00e8res\n1\nLes tortillas de lentilles corail\n2\nLe blender Kitchenaid couleur Betterave\n3\nWraps prot\u00e9in\u00e9s aux lentilles corail\nLes tortillas de lentilles corail\nComme moi, j\u2019imagine que vous avez vu ses tortillas passer un peu partout sur les r\u00e9seaux sociaux. Je suis toujours curieuse de ces recettes qui \u201ctrendent\u201d. Est-ce que c\u2019est une grosse arnaque ? Ou vraiment une id\u00e9e styl\u00e9e qui a r\u00e9ussi \u00e0 remonter dans les algo.\nPour le coup, je pense qu\u2019on est sur la 2e option. A savoir, une id\u00e9e vraiment cool.\nLe principe, c\u2019est d\u2019utiliser des lentilles corail mix\u00e9es pour faire des tortillas. C\u2019est tellement simple que c\u2019est \u00e0 peine croyable. Il y a 3 ingr\u00e9dients, on ne peut plus basique. Des lentilles, de l\u2019eau et du sel. Point. Bon all\u00e9, un peu d\u2019huile pour la cuisson. Et c\u2019est tout.\nLe seul b\u00e9mol, c\u2019est qu\u2019il faut s\u2019y prendre un peu \u00e0 l\u2019avance. En effet, il faut laisser tremper les lentilles au moins 3 heures avant de les mixer.\nLe r\u00e9sultat est \u00e9tonnant. En effet, on se retrouve avec une tortilla (qui ressemble plus \u00e0 un pancake au moment de la cuire) qui a une consistance moelleuse. Et un go\u00fbt l\u00e9g\u00e8rement \u00e9pic\u00e9. La texture est juste parfaite pour en faire des wraps. Super souple.\nOutre la facilit\u00e9, l\u2019autre avantage ind\u00e9niable est la composition. Ce ne sont que des lentilles. Donc elles sont prot\u00e9in\u00e9es. Sans gluten. Et sans mati\u00e8re grasse.\nJe les ai pr\u00e9par\u00e9s en wraps de petit-d\u00e9jeuner avec une petite omelette, quelques l\u00e9gumes et de la f\u00eata. C\u2019\u00e9tait d\u00e9licieux !\nLe blender Kitchenaid couleur Betterave\nVous avez remarqu\u00e9 que j\u2019ai mis un peu de betterave r\u00e2p\u00e9e dans mes wraps ?\nC\u2019est pour le clin d\u2019oeil au\nnouveau colori sorti par KitchenAid\net qu\u2019on adore ! Ils se sont inspir\u00e9s de ce l\u00e9gumes banal pour cr\u00e9er cette couleur extraordinaire entre le violet et le magenta !\nJe suis tomb\u00e9e amoureuse de cette collection quand je l\u2019ai d\u00e9couverte. Et j\u2019\u00e9tais trop heureuse quand la marque m\u2019a propos\u00e9 de m\u2019en offrir un !\nJe suis en pleine r\u00e9flexion sur les recettes que je vais pouvoir faire avec ! Vous avez des id\u00e9es ? Ou des envies ? N\u2019h\u00e9sitez pas \u00e0 partager en commentaire !\nJ\u2019ai cr\u00e9\u00e9 cette recette de Wraps prot\u00e9in\u00e9s aux lentilles corail en partenariat avec KitchenAid.\nWraps prot\u00e9in\u00e9s aux lentilles corail\nNatacha\n4.50\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n5\nminutes\nmin\nTemps de trempage\n3\nheures\nh\nPortions\n4\ntortillas\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour les tortillas de lentilles\n200\ng\nde lentilles corail\n400\nml\nd\u2019eau\nsel\npoivre\nhuile d\u2019olive pour la cuisson\nId\u00e9es de garniture pour un wrap petit-d\u00e9jeuner prot\u00e9in\u00e9\n2\n\u0153ufs en omelette\n1\npoign\u00e9e de roquette\n\u00bd\nbetterave crue r\u00e2p\u00e9e\n30\ng\nde f\u00eata \u00e9miett\u00e9e\n1\nfilet d\u2019une huile d\u2019olive\nInstructions\nPr\u00e9paration\nFaire tremper les lentilles corail dans l\u2019eau pendant au moins 3h.\nMixer les lentilles et l\u2019eau dans un blender jusqu\u2019\u00e0 obtention d\u2019une consistance bien lisse (ou \u00e0 l\u2019aide d\u2019un mixeur plongeant).\nAjouter du sel et du poivre et m\u00e9langer\nFaire chauffer une po\u00eale \u00e0 feu moyen-fort et y verser 1 c\u00e0s d\u2019huile d\u2019olive.\nVerser \u00bc de la pr\u00e9paration dans la po\u00eale chaude. Etaler avec le dos d\u2019une cuill\u00e8re pour former une tortilla ronde.\nLaisser cuire jusqu\u2019\u00e0 ce que le dessus de la tortilla semble sec (environ 3min).\nPuis retourner (environ 3min). Laisser cuire encore 1 \u00e0 2min.\nR\u00e9server.\nRemuez la pr\u00e9paration entre 2 tortillas pour \u00e9viter qu'elle ne d\u00e9phase !\nId\u00e9es de garniture\nBattre deux \u0153ufs puis les verser dans une po\u00eale bien chaude l\u00e9g\u00e8rement huil\u00e9e. D\u00e9poser une tortilla de lentilles par-dessus et laisser cuire l\u2019omelette. Quand elle est cuite, retourner et laisser cuire encore quelques secondes.\nVous aurez une tortilla/omelette.\nAjouter le reste des garnitures et rouler la tortilla en wrap !\nVarier les garnitures en fonction de vos go\u00fbts et des saisons !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrunch Sal\u00e9\n,\nBurgers, sandwichs et wraps\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nQuiches et Tartes\nTags:\ngalette lentille\n,\nlentilles corail\n,\ntortilla lentille\n,\nwrap lentilles\n,\nwrap lentilles corail\n,\nwrap prot\u00e9in\u00e9\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\nTarte tatin de tomates au vinaigre balsamique : caram\u00e9lis\u00e9e, acidul\u00e9e et pleine de peps\n18 thoughts on \u201cWraps prot\u00e9in\u00e9s aux lentilles corail\u201d\nStephanie\ndit\u00a0:\n29 mai 2022 \u00e0 0 h 11 min\nOk, these were amazing. I made extra tortillas  and we used it for eating up your curry tonight, deeeelish!!\nchargement\u2026\nR\u00e9pondre\nthenaisy\ndit\u00a0:\n29 mai 2022 \u00e0 8 h 36 min\ncoucou\nmerci pour toutes les belles recettes hier mon brunch de ce jour j\u2019ai fait la superbe babka j\u2019ai utilis\u00e9 confiture  de mandarine au gruau de cacao !\npar contre hier soir j\u2019ai voulu faire les wraps, je n\u2019ai jamais obtenu un wrap  impossible de retourner le wrap de la pur\u00e9e, je ne comprends car sur la photo de beaux wraps\nune explication \u00e0 me donner ? merci beau dimanche\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n7 juin 2022 \u00e0 22 h 00 min\nHi ! Arf trop d\u00e9sol\u00e9e d\u2019entendre cette mauvaise exp\u00e9rience. Peut-\u00eatre qu\u2019il n\u2019\u00e9tait pas assez cuit ? Il faut \u00e9taler un peu la p\u00e2te sur la po\u00eale pour qu\u2019elle soit pas trop \u00e9paisse. Et retourner quand la face qui est contre la po\u00eale est cuite et solide.\nchargement\u2026\nR\u00e9pondre\nTisserand\ndit\u00a0:\n19 juillet 2022 \u00e0 20 h 32 min\nBonjour,\nJ\u2019ai eu le m\u00eame soucis pour retourner les wraps, mais j\u2019ai r\u00e9solu le probl\u00e8me ! La mati\u00e8re des lentilles qui permet de faire tenir la p\u00e2te tombe au fond de la pr\u00e9paration. Il suffit donc de remuer un coup \u00e0 chaque fois avant de commencer un nouveau wrap. Et ceux ci peuvent alors se retourner facilement.\nMerci beaucoup pour la recette, je me suis r\u00e9gal\u00e9e \u2728\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n20 juillet 2022 \u00e0 11 h 08 min\nHi Capucine merci bcp d\u2019avoir pris le temps de nous donner cette solution ! Je vais l\u2019ajouter \u00e0 la recette \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nthenaisy\ndit\u00a0:\n8 juin 2022 \u00e0 6 h 56 min\ncoucou\nmerci pour votre message, peut-\u00eatre je ne l\u2019ai pas assez  cuire, \u00e0 refaire \u00e0 l\u2019occasion et je vous dirai !\nbelle journ\u00e9e\nV\u00e9ronique\nchargement\u2026\nR\u00e9pondre\nMich\u00e8le\ndit\u00a0:\n28 novembre 2022 \u00e0 12 h 13 min\nJe ne suis ni b\u00e9gan, ni v\u00e9g\u00e9tarienne, mais je suis multiculturelle en cuisine et surtout\u2026 multicurieuse.\nCette recette m\u2019a beaucoup plu. J\u2019ai juste ajout\u00e9 des petits morceaux de chorizo dans l\u2019omelette et des morceaux plus gros dans la farce\u2026 excellent !\nchargement\u2026\nR\u00e9pondre\nAanor\ndit\u00a0:\n14 d\u00e9cembre 2022 \u00e0 12 h 43 min\nBonjour faut il faire cuire les lentilles ou on fait tremper dans l\u2019eau cru?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n19 d\u00e9cembre 2022 \u00e0 19 h 00 min\nBonjour, les lentilles sont crues\nchargement\u2026\nR\u00e9pondre\nMathilde\ndit\u00a0:\n2 mars 2023 \u00e0 14 h 42 min\nJe test la recette ce soir, mais je voudrais savoir si vous savez combien de temps les wraps se conserve? Vu les temps de pr\u00e9paration \u00e7a serait g\u00e9nial de pouvoir les faires quelques jours avant\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 14 h 55 min\nHello, tu peux les conserver 2 ou 3 jours dans une torchon puis dans un r\u00e9cipient ferm\u00e9.\nchargement\u2026\nR\u00e9pondre\npia\ndit\u00a0:\n9 mars 2023 \u00e0 15 h 48 min\nBonjour,\nFaut-il cuire les lentilles ?\nMerci\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n13 mars 2023 \u00e0 14 h 04 min\nBonjour Pia, non elles doivent \u00eatre crues\nchargement\u2026\nR\u00e9pondre\nHelene\ndit\u00a0:\n20 mars 2023 \u00e0 8 h 22 min\nBonjour une fois les lentilles tremp\u00e9es pendant 3 h ne devrait on pas jeter l\u2019eau de trempage et mettre de l\u2019eau fraiche ds le blender??\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n3 avril 2023 \u00e0 20 h 51 min\nBonjour H\u00e9l\u00e8ne, pour une meilleure digestion tu peux effectivement faire cela\nchargement\u2026\nR\u00e9pondre\nAriane\ndit\u00a0:\n6 mai 2023 \u00e0 15 h 51 min\nExcellent et nutritif ! Je les ai mang\u00e9s avec de la roquette, du thon, des carottes r\u00e2p\u00e9es et du houmous et des petits oignons, un vrai r\u00e9gal\nchargement\u2026\nR\u00e9pondre\nangelique\ndit\u00a0:\n4 juin 2024 \u00e0 11 h 18 min\nBonjour, est ce qu\u2019on peut les congeler sans soucis ?\nchargement\u2026\nR\u00e9pondre\nLau\ndit\u00a0:\n29 octobre 2024 \u00e0 20 h 05 min\nBon je n\u2019ai pas r\u00e9ussi \ud83d\ude29 Comme plusieurs autre s, j\u2019ai obtenu une esp\u00e8ce de pur\u00e9e \u00e9tal\u00e9e. Une id\u00e9e ? Merci!\nchargement\u2026\nR\u00e9pondre\n4.50 from 126 votes (\n121 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

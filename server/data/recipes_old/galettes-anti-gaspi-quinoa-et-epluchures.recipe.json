@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "title": "Galettes anti-gaspi quinoa et \u00e9pluchures",
+    "description": "Pour la journ\u00e9e mondiale de l'environnement je vous propose cette recette de galettes anti-gaspi quinoa et \u00e9pluchures de l\u00e9gumes !",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "galette",
+      "galettes de quinoa",
+      "zero dechet",
+      "comment faire des galette"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Galettes-quinoa-epluchures-1-of-5.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si vous n'avez pas d'\u00e9pluchures dans le coin. Ou si vos l\u00e9gumes ne sont pas bio. Vous pouvez tout \u00e0 fait utiliser des l\u00e9gumes r\u00e2p\u00e9s \u00e0 la place.",
+      "Vous pouvez mettre du ch\u00e8vre, de l'emmental. Ou vraiment ce que vous avez sous la main.",
+      "Servir avec une salade ou un l\u00e9gume !"
+    ],
+    "slug": "galettes-anti-gaspi-quinoa-et-epluchures",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Galettes-quinoa-epluchures-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/05/galettes-anti-gaspi-quinoa-et-epluchures/",
+    "image": "images/galettes-anti-gaspi-quinoa-et-epluchures.webp",
+    "createdAt": "2026-02-09T21:20:18.590561",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 20.0,
+    "nutritionPerServing": {
+      "calories": 479.9,
+      "protein": 22.3,
+      "fat": 15.0,
+      "carbs": 63.2,
+      "fiber": 6.3,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 8,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "vegetable_peels",
+      "name": "\u00e9pluchures de l\u00e9gumes bio, carottes, courgettes etc\u2026",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable peelings"
+    },
+    {
+      "id": "cooked_quinoa",
+      "name": "quinoa cuit",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuit",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cooked quinoa"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "green_onions",
+      "name": "tiges vertes d'oignons nouveaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "green onion tops"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": "chapelure ou pain sec r\u00e9duit en miettes",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "breadcrumbs"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "clean_peels",
+      "action": "Nettoyer les \u00e9pluchures si besoin.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_peels"
+      ],
+      "produces": "cleaned_peels",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_peels",
+      "action": "Hacher grossi\u00e8rement les \u00e9pluchures.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_peels"
+      ],
+      "produces": "chopped_peels",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_all_ingredients",
+      "action": "Dans un saladier, m\u00e9langer tous les ingr\u00e9dients.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_peels",
+        "cooked_quinoa",
+        "eggs",
+        "green_onions",
+        "feta",
+        "breadcrumbs",
+        "flour",
+        "salt",
+        "pepper"
+      ],
+      "produces": "galette_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "heated_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_oil",
+      "action": "Verser 2 c\u00e0s d'huile d'olive dans la po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "heated_pan"
+      ],
+      "produces": "oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_first_patty",
+      "action": "D\u00e9poser une grosse cuill\u00e8re \u00e0 soupe du m\u00e9lange sur la po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "galette_mixture",
+        "oiled_pan"
+      ],
+      "produces": "first_patty_raw",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flatten_patty",
+      "action": "A l'aide d'une spatule, aplatir le m\u00e9lange pour former une galette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "first_patty_raw"
+      ],
+      "produces": "first_patty_flattened",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_first_side",
+      "action": "Faire cuire 3min puis retourner d\u00e9licatement la galette \u00e0 l'aide de la spatule.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "first_patty_flattened"
+      ],
+      "produces": "first_patty_half_cooked",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_second_side",
+      "action": "Faire cuire encore 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "first_patty_half_cooked"
+      ],
+      "produces": "first_patty_cooked",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_remaining_patties",
+      "action": "R\u00e9p\u00e9ter les \u00e9tapes 6 \u00e0 9 pour les galettes restantes. Vous pouvez faire cuire plusieurs galettes en m\u00eame temps en fonction de la taille de votre po\u00eale.",
+      "duration": "PT14M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "galette_mixture",
+        "oiled_pan"
+      ],
+      "produces": "all_patties_cooked",
+      "requires": [
+        "first_patty_cooked"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "all_patties_cooked",
+  "originalText": "Galettes anti-gaspi quinoa et \u00e9pluchures - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 juin 2022\nGalettes anti-gaspi quinoa et \u00e9pluchures\nAller \u00e0 la recette\nPour la journ\u00e9e mondiale de l\u2019environnement je vous propose cette recette de galettes anti-gaspi quinoa et \u00e9pluchures de l\u00e9gumes !\nSi comme moi, vous avez un peu de mal \u00e0 doser la quantit\u00e9 de quinoa (ou de p\u00e2te, de riz etc\u2026) \u00e0 faire cuire. Vous vous retrouvez certainement assez souvent avec des bols de c\u00e9r\u00e9ales au frigo. Qu\u2019on finit trop souvent par jeter.\nScandale !\nOn peut faire plein de trucs avec ces restes ! Et si en plus, vous avez des \u00e9pluchures de l\u00e9gumes (bio) qui trainent. C\u2019est le moment de les utiliser !\nCela dit, si vous n\u2019avez pas d\u2019\u00e9pluchures dans le coin. Ou si vos l\u00e9gumes ne sont pas bio. Ou si vous avez des vers de compost \u00e0 nourrir etc etc. Vous pouvez tout \u00e0 fait utiliser des l\u00e9gumes r\u00e2p\u00e9s \u00e0 la place.\nSinon, le concept est assez simple. Il s\u2019agit de m\u00e9langer vos c\u00e9r\u00e9ales cuites avec des \u0153ufs et de la chapelure. Cela leur permet de tenir en \u201cgalettes\u201d. Et puis on y ajoute les \u00e9pluchures (ou l\u00e9gumes r\u00e2p\u00e9s). Et un peu de fromage pour le go\u00fbt.\nVous connaissez ma passion pour la f\u00eata. Donc, c\u2019est ce que j\u2019ai mis. Mais vous pouvez mettre du ch\u00e8vre, de l\u2019emmental. Ou vraiment ce que vous avez sous la main.\nPuis, il ne vous restera plus qu\u2019\u00e0 les faire cuire ! Simple comme bonjour. Non ? Et sinon, vous avez d\u00e9j\u00e0 test\u00e9\nle cake aux fanes de radis\n?\nJ\u2019ai cr\u00e9\u00e9 cette recette de galettes anti-gaspi quinoa et \u00e9pluchures de l\u00e9gumes pour\nMonBento.\nGalettes anti-gaspi quinoa et \u00e9pluchures de l\u00e9gumes\n4.45\n/5 avec\n98\nvotes\nImprimer la recette\nPin Recipe\nIngr\u00e9dients\n150\ng\nd\u2019\u00e9pluchures de l\u00e9gumes bio\ncarottes, courgettes etc\u2026\n350\ng\nde quinoa cuit\nou 150g cru\n3\noeufs\n2\ntiges vertes d\u2019oignons nouveaux\n100\ng\nde f\u00eata \u00e9miett\u00e9e\n4\nc\u00e0s de chapelure ou pain sec r\u00e9duit en miettes\n2\nc\u00e0s de farine\nsel\npoivre\nhuile d\u2019olive\nInstructions\nNettoyer les \u00e9pluchures si besoin.\nLes hacher grossi\u00e8rement.\nDans un saladier, m\u00e9langer tous les ingr\u00e9dients.\nFaire chauffer une po\u00eale \u00e0 feu moyen.\nY verser 2 c\u00e0s d\u2019huile d\u2019olive.\nD\u00e9poser une grosse cuill\u00e8re \u00e0 soupe du m\u00e9lange sur la po\u00eale.\nA l\u2019aide d\u2019une spatule, l\u2019aplatir.\nFaire cuire 3-4min puis la retourner d\u00e9licatement \u00e0 l\u2019aide de la spatule. Puis la faire cuire encore 3-4min.\nVous pouvez faire cuire plusieurs galettes en m\u00eame temps en fonction de la taille de votre po\u00eale.\nServir avec une salade ou un l\u00e9gume !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBurgers, sandwichs et wraps\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire des galette\n,\ngalette\n,\ngalettes de quinoa\n,\nzero dechet\nTarte tatin de tomates au vinaigre balsamique : caram\u00e9lis\u00e9e, acidul\u00e9e et pleine de peps\nBeignets asiatiques faciles et croustillants\n4.45 from 98 votes (\n98 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 20.0
+}

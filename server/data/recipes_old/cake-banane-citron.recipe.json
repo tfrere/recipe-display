@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "title": "Cake banane citron",
+    "description": "Un cake moelleux aux bananes et au citron, parfait pour le goûter ou le dessert.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "cake",
+      "banane",
+      "citron",
+      "dessert",
+      "gâteau",
+      "français"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054215-b25ce739.png",
+    "nationality": "French",
+    "author": null,
+    "source": "https://www.youtube.com/watch?v=Y0s1Sc4m6Pg&ab_channel=C%27estmeilleurquandc%27estbon",
+    "notes": [
+      "Servir tiède ou froid.",
+      "Se conserve plusieurs jours dans une boîte hermétique."
+    ],
+    "slug": "cake-banane-citron",
+    "sourceImageUrl": "cake-banane-citron.png",
+    "originalContent": "Cake banane citron\nRecette du cake bananes citron\n\nhttps://www.youtube.com/watch?v=Y0s1Sc4m6Pg&ab_channel=C%27estmeilleurquandc%27estbon\n\nIngrédients :\nPour 4 personnes\n3 bananes\n200g de farine\n100g de beurre\n200 g de sucre\n3 œufs\n1 sachet de sucre vanillé\n1 demi sachet de levure chimique\n1 citron\n\nPréparation :\nPrélever les zestes du citron puis le presser\nDans un saladier, mélanger le beurre pommade avec les zestes, le sucre et le sucre vanillé\nAjouter les œufs préalablement battus et mélanger\nCouper les bananes en tranches et les écraser à la fourchette avec le jus de citron\nAjouter le tout au mélange précédent puis ajouter la levure et la farine\nLorsque le mélange est bien homogène, beurrer un moule à cake et verser le mélange dedans\nCuire au four pendant 45 min à 180°C.\n\n\n\n\nMain recipe image: temp_image_recipe-gen-20260208054215-b25ce739.png",
+    "createdAt": "2026-02-08T05:43:53.743793",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 68.0,
+    "totalCookingTime": 23.0,
+    "image": "images/cake-banane-citron.png",
+    "nutritionPerServing": {
+      "calories": 714.6,
+      "protein": 12.0,
+      "fat": 25.6,
+      "carbs": 109.9,
+      "fiber": 4.1,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "bananes",
+      "name": "bananes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bananas"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "pommade",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeufs",
+      "name": "œufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "battus",
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanillé",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "levure_chimique",
+      "name": "levure chimique",
+      "quantity": 0.5,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "demi sachet",
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "citron",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    }
+  ],
+  "tools": [
+    "saladier",
+    "moule à cake",
+    "four"
+  ],
+  "steps": [
+    {
+      "id": "preparer_citron",
+      "action": "Prélever les zestes du citron puis le presser pour obtenir le jus.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "citron"
+      ],
+      "produces": "zestes_et_jus_citron",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_beurre_zestes",
+      "action": "Dans un saladier, mélanger le beurre pommade avec les zestes de citron, le sucre et le sucre vanillé.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "beurre",
+        "sucre",
+        "sucre_vanille",
+        "zestes_et_jus_citron"
+      ],
+      "produces": "melange_beurre_sucre",
+      "requires": [],
+      "visualCue": "mélange crémeux et homogène"
+    },
+    {
+      "id": "ajouter_oeufs",
+      "action": "Ajouter les œufs préalablement battus au mélange et bien mélanger.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "oeufs",
+        "melange_beurre_sucre"
+      ],
+      "produces": "melange_beurre_oeufs",
+      "requires": [],
+      "visualCue": "mélange lisse et homogène"
+    },
+    {
+      "id": "preparer_bananes",
+      "action": "Couper les bananes en tranches et les écraser à la fourchette avec le jus de citron.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "bananes",
+        "zestes_et_jus_citron"
+      ],
+      "produces": "puree_bananes_citron",
+      "requires": [],
+      "visualCue": "bananes écrasées en purée"
+    },
+    {
+      "id": "ajouter_bananes",
+      "action": "Ajouter la purée de bananes au citron au mélange précédent.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "puree_bananes_citron",
+        "melange_beurre_oeufs"
+      ],
+      "produces": "melange_avec_bananes",
+      "requires": [],
+      "visualCue": "mélange incorporé"
+    },
+    {
+      "id": "ajouter_farine_levure",
+      "action": "Ajouter la levure chimique et la farine au mélange et bien mélanger.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "levure_chimique",
+        "farine",
+        "melange_avec_bananes"
+      ],
+      "produces": "pate_a_cake",
+      "requires": [],
+      "visualCue": "mélange bien homogène"
+    },
+    {
+      "id": "preparer_moule",
+      "action": "Beurrer un moule à cake.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "moule_beurre",
+      "requires": [],
+      "visualCue": "moule bien beurré"
+    },
+    {
+      "id": "verser_pate",
+      "action": "Verser la pâte à cake dans le moule beurré.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "pate_a_cake",
+        "moule_beurre"
+      ],
+      "produces": "moule_rempli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_cake",
+      "action": "Cuire au four pendant 45 minutes à 180°C.",
+      "duration": "PT45M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "moule_rempli"
+      ],
+      "produces": "cake_cuit",
+      "requires": [],
+      "visualCue": "doré et cuit à cœur (test du couteau propre)"
+    }
+  ],
+  "finalState": "cake_cuit",
+  "originalText": "Cake banane citron\nRecette du cake bananes citron\n\nhttps://www.youtube.com/watch?v=Y0s1Sc4m6Pg&ab_channel=C%27estmeilleurquandc%27estbon\n\nIngrédients :\nPour 4 personnes\n3 bananes\n200g de farine\n100g de beurre\n200 g de sucre\n3 œufs\n1 sachet de sucre vanillé\n1 demi sachet de levure chimique\n1 citron\n\nPréparation :\nPrélever les zestes du citron puis le presser\nDans un saladier, mélanger le beurre pommade avec les zestes, le sucre et le sucre vanillé\nAjouter les œufs préalablement battus et mélanger\nCouper les bananes en tranches et les écraser à la fourchette avec le jus de citron\nAjouter le tout au mélange précédent puis ajouter la levure et la farine\nLorsque le mélange est bien homogène, beurrer un moule à cake et verser le mélange dedans\nCuire au four pendant 45 min à 180°C.\n\n\n\n\nMain recipe image: temp_image_recipe-gen-20260208054215-b25ce739.png",
+  "totalCookingTime": 23.0
+}

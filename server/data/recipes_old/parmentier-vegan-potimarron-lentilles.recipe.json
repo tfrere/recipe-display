@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "title": "Parmentier vegan Potimarron Lentilles",
+    "description": "Un parmentier automnal avec une pur\u00e9e de potimarron et une garniture de lentilles et l\u00e9gumes d'automne.",
+    "servings": 8,
+    "prepTime": "PT45M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "parmentier",
+      "vegan",
+      "automne",
+      "hiver",
+      "courge",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Hachis-potimarron-lentilles-2-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette inspir\u00e9e pour finir les restes et adapter au contenu des placards.",
+      "L'auteur sugg\u00e8re de s'inspirer d'une recette et de l'adapter \u00e0 ses go\u00fbts et ingr\u00e9dients disponibles."
+    ],
+    "slug": "parmentier-vegan-potimarron-lentilles",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Hachis-potimarron-lentilles-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/11/parmentier-vegan-potimarron-lentilles/",
+    "image": "images/parmentier-vegan-potimarron-lentilles.webp",
+    "createdAt": "2026-02-09T21:38:28.223073",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 62.0,
+    "totalCookingTime": 62.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 172.6,
+      "protein": 6.5,
+      "fat": 8.3,
+      "carbs": 19.7,
+      "fiber": 4.8,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potimarron",
+      "name": "potimarron",
+      "quantity": 800.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hokkaido pumpkin"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 pur\u00e9e",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mashing potatoes"
+    },
+    {
+      "id": "olive_oil_puree",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "plant_milk",
+      "name": "lait v\u00e9g\u00e9tal",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "salt_puree",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_puree",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "lentils",
+      "name": "lentilles vertes ou blondes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Green lentils"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "celery",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "olive_oil_filling",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons de paris",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "bay_leaves",
+      "name": "laurier",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "tomato_sauce",
+      "name": "coulis de tomate",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "salt_filling",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_filling",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Faitout",
+    "Plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "steam_vegetables",
+      "action": "\u00c9plucher et couper le potimarron et les pommes de terre. Les faire cuire \u00e0 la vapeur jusqu'\u00e0 tendres.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pur\u00e9e",
+      "uses": [
+        "potimarron",
+        "potatoes"
+      ],
+      "produces": "steamed_vegetables",
+      "requires": [],
+      "visualCue": "tendres"
+    },
+    {
+      "id": "make_puree",
+      "action": "Dans un saladier, ajouter le potimarron et les pommes de terre cuits avec l'huile d'olive, le lait v\u00e9g\u00e9tal, la noix de muscade, du sel et du poivre. R\u00e9duire le tout en pur\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pur\u00e9e",
+      "uses": [
+        "steamed_vegetables",
+        "olive_oil_puree",
+        "plant_milk",
+        "nutmeg",
+        "salt_puree",
+        "pepper_puree"
+      ],
+      "produces": "potimarron_puree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_lentils",
+      "action": "Rincer puis faire cuire les lentilles dans de l'eau bouillante selon les indications du paquet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "lentils"
+      ],
+      "produces": "cooked_lentils",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "\u00c9plucher et \u00e9mincer l'oignon, les carottes, le c\u00e9leri et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "onion",
+        "carrots",
+        "celery",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dice_mushrooms",
+      "action": "Couper les champignons en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "mushrooms"
+      ],
+      "produces": "diced_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_root_vegetables",
+      "action": "Dans un faitout, faire revenir l'oignon, les carottes et le c\u00e9leri avec le laurier et le romarin dans l'huile d'olive pendant 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "chopped_vegetables",
+        "bay_leaves",
+        "rosemary",
+        "olive_oil_filling"
+      ],
+      "produces": "sauteed_root_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_mushrooms",
+      "action": "Ajouter l'ail hach\u00e9 et les champignons. Faire revenir encore 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "sauteed_root_vegetables",
+        "diced_mushrooms"
+      ],
+      "produces": "sauteed_vegetables_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_lentils_tomato",
+      "action": "Ajouter les lentilles cuites et \u00e9goutt\u00e9es et le coulis de tomate. Saler et poivrer. Laisser revenir encore 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "sauteed_vegetables_mushrooms",
+        "cooked_lentils",
+        "tomato_sauce",
+        "salt_filling",
+        "pepper_filling"
+      ],
+      "produces": "lentil_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_lentils",
+      "action": "Dans un grand plat allant au four, verser le m\u00e9lange de lentilles et bien aplatir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "lentil_filling"
+      ],
+      "produces": "layered_lentils",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_puree_layer",
+      "action": "Verser la pur\u00e9e par-dessus le m\u00e9lange de lentilles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "layered_lentils",
+        "potimarron_puree"
+      ],
+      "produces": "assembled_parmentier",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_parmentier",
+      "action": "Enfourner pendant 30min.",
+      "duration": "PT30M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "assembled_parmentier"
+      ],
+      "produces": "baked_parmentier",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "grill_top",
+      "action": "Passer le four en mode grill pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "baked_parmentier"
+      ],
+      "produces": "grilled_parmentier",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_before_serving",
+      "action": "Laisser ti\u00e9dir avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "grilled_parmentier"
+      ],
+      "produces": "parmentier_vegan_potimarron_lentilles",
+      "requires": [],
+      "visualCue": "ti\u00e9di"
+    }
+  ],
+  "finalState": "parmentier_vegan_potimarron_lentilles",
+  "originalText": "Parmentier vegan Potimarron Lentilles - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 novembre 2022\nParmentier vegan Potimarron Lentilles\nAller \u00e0 la recette\nCe Parmentier vegan Potimarron Lentilles est ma troisi\u00e8me recette de parmentier sur le blog. Mais quand on aime, on ne compte pas ! N\u2019est-ce pas ?\nElle ressemble pas mal au\nparmentier \u00e0 la patate douce\n. Mais cette recette date des tout d\u00e9buts du blog. Et au fil du temps, mes envies changent. Donc j\u2019ai eu envie de revoir la recette un peu. L\u2019autre reste un de mes classiques. Et l\u2019une des recettes pr\u00e9f\u00e9r\u00e9es de mon p\u00e8re. Mais celle-ci est plus automnale. La pur\u00e9e est \u00e0 base de potimarron. Et la garniture est un m\u00e9lange de lentilles et de petits l\u00e9gumes d\u2019automne.\nL\u2019autre parmentier que vous trouverez sur le blog est plus classique !\nAu fond, le principe c\u2019est comme les hachis parmentiers de nos grands m\u00e8res. A savoir, finir les restes. Pas de viande dans ce cas. Mais pour ma part, il me restait quelques carottes et champignons. Donc boum, dans la garniture. J\u2019avais un potimarron mais pas de patate douce. Donc boum dans la pur\u00e9e. Vous voyez le concept quoi.\nJe trouve qu\u2019en cuisine c\u2019est hyper important de s\u2019inspirer d\u2019une recette mais de l\u2019adapter. A ses go\u00fbts pour commencer. Mais aussi au contenu de ses placards.\nSurtout que perso, je suis un peu un \u00e9cureuil. J\u2019aime bien faire des grosses courses. Pas trop souvent. Donc je dois trouver comment combiner et utiliser mes ingr\u00e9dients. Sans avoir \u00e0 passer par la case course.\nVoil\u00e0 la petite histoire de ce Parmentier vegan Potimarron Lentilles !\nParmentier vegan Potimarron Lentilles\n4.63\n/5 avec\n66\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n45\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la pur\u00e9e\n800\ng\nde potimarron\n500\ng\nde pommes de terre \u00e0 pur\u00e9e\n2\nc\u00e0s d\u2019huile d\u2019olive\n50\nml\nde lait v\u00e9g\u00e9tal\n1\npinc\u00e9e de noix de muscade\nsel\npoivre\nPour la garniture\n150\ng\nde lentilles vertes ou blondes\n1\noignon\n2\ncarottes\n1\nbranche de c\u00e9leri\n3\ngousses d\u2019ail\n2\nc\u00e0s d\u2019huile d\u2019olive\n180\ng\nde champignons de paris\n3\nfeuilles de laurier\n1\nbranche de romarin\n300\nml\nde coulis de tomate\nsel\npoivre\nInstructions\nCommencer par \u00e9plucher et couper le potimarron et les pommes de terre puis les faire cuire \u00e0 la vapeur jusqu\u2019\u00e0 ce qu\u2019ils soient tendres.\nRincer puis faire cuire les lentilles dans de l\u2019eau bouillante en suivant les indications du paquet.\n\u00c9plucher puis \u00e9mincer l\u2019oignon, les carottes, le c\u00e9leri et l\u2019ail.\nCouper les champignons en d\u00e9s.\nDans un faitout, faire revenir l\u2019oignon, les carottes et le c\u00e9leri avec le laurier et le romarin pendant 7-8min. Ajouter l\u2019ail hach\u00e9 et les champignons.\nFaire revenir encore 10min.\nAjouter les lentilles cuites et \u00e9goutt\u00e9es et le coulis de tomate. Saler et poivrer. Laisser revenir encore 10min.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nDans un saladier, ajouter le potimarron et les pommes de terre avec les autres ingr\u00e9dients de la pur\u00e9e et r\u00e9duire en pur\u00e9e.\nDans un grand plat verser le m\u00e9lange de lentilles, bien aplatir. Verser la pur\u00e9e par-dessus.\nEnfourner 30min. Puis passer en mode grill 5min.\nLaisser ti\u00e9dir avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourge\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\nparmentier\n,\nvegan\nSteak de Chou-Fleur pan\u00e9\nTofu de lentilles corail\n11 thoughts on \u201cParmentier vegan Potimarron Lentilles\u201d\nBosha\ndit\u00a0:\n11 novembre 2022 \u00e0 12 h 18 min\nFabuleuse recette, totalement en pleine saison !!!\nNous sommes nombreux ce soir, ce plat sera id\u00e9al pour notre tabl\u00e9,\nMerci pour ce parmentier, on va se r\u00e9galer !!!\nJ\u2019aime tes recettes de Parmentier, toujours un grand succ\u00e8s\nMerci pour VOTRE ebook   sur le chou-fleur, j\u2019ADORE\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n14 novembre 2022 \u00e0 10 h 48 min\nMerci \u00e0 toi !!!\nchargement\u2026\nR\u00e9pondre\nJulie\ndit\u00a0:\n11 novembre 2022 \u00e0 17 h 51 min\nCe parmentier a l\u2019air d\u00e9licieux et beaucoup plus l\u00e9ger que sa version traditionnelle !\nchargement\u2026\nR\u00e9pondre\nthenaisy\ndit\u00a0:\n12 novembre 2022 \u00e0 8 h 59 min\nmerci beaucoup pour cette recette , que je vais tester rapidement !!!\nchargement\u2026\nR\u00e9pondre\nKris\ndit\u00a0:\n13 novembre 2022 \u00e0 11 h 38 min\nUn r\u00e9gal!\nJ\u2019ai eu la bonne id\u00e9e de pr\u00e9voir de la compagnie en cuisine pour bavarder pendant la pr\u00e9paration \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nLucie\ndit\u00a0:\n23 novembre 2022 \u00e0 16 h 02 min\nFacile et extra !\nchargement\u2026\nR\u00e9pondre\nPoupie\ndit\u00a0:\n31 janvier 2023 \u00e0 13 h 48 min\nMerci pour cette excellente  recette !!!\nR\u00e9alis\u00e9e dimanche, tout le monde s\u2019est r\u00e9gal\u00e9, nul besoin de viande !\nJ\u2019ai juste remplac\u00e9 le c\u00e9leri-branche par du c\u00e9leri-rave du jardin \u2026\nchargement\u2026\nR\u00e9pondre\nKMI\ndit\u00a0:\n15 janvier 2024 \u00e0 11 h 39 min\nJe l\u2019ai fait pour les f\u00eates de no\u00ebl, tout le monde a ador\u00e9 ! Excellent\nchargement\u2026\nR\u00e9pondre\ncrossine0\ndit\u00a0:\n3 avril 2024 \u00e0 14 h 34 min\nExcellente id\u00e9e! Mais personnellement, je remplace les pommes de terre par du chou fleur , qui donne beaucoup d\u2019onctuosit\u00e9 et bien plus de l\u00e9g\u00e8ret\u00e9.\nchargement\u2026\nR\u00e9pondre\nAkira 28\ndit\u00a0:\n26 octobre 2024 \u00e0 13 h 53 min\nRecette facile qui donne un plat super bon !\nchargement\u2026\nR\u00e9pondre\nAur\u00e9lie\ndit\u00a0:\n21 octobre 2025 \u00e0 20 h 09 min\nRecette toute douce pour l\u2019automne et vraiment r\u00e9confortante.\nPour la pur\u00e9e j\u2019ai \u00e9chang\u00e9 le lait par de la creme de soja et un peu de beurre.\nEt j\u2019ai laiss\u00e9 la peau du potimarron qui se mixe tres bien une fois cuite (potimarron du jardin).\nMerci beaucoup pour cette recette originale!!!\nchargement\u2026\nR\u00e9pondre\n4.63 from 66 votes (\n58 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 62.0
+}

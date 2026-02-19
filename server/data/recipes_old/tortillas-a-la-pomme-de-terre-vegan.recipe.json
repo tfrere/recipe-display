@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "title": "Tortillas à la Pomme de Terre (Vegan)",
+    "description": "Une recette super simple et rapide pour réaliser des tortillas (vegan) hyper moelleuses avec seulement 4 ingrédients.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "tortillas",
+      "tortillas de pomme de terre",
+      "tortillas rapides",
+      "tortillas vegan",
+      "vegan",
+      "pomme de terre",
+      "accompagnement"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Tortillas-pommedeterre-2-of-5-1024x768.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les tortillas sont parfaites pour faire des tacos ou des quesadillas.",
+      "Elles ne demandent aucun temps de repos, pas de levure de boulanger.",
+      "Idéalement utiliser des pommes de terre riches en fécule.",
+      "Poids des pommes de terre indiqué avec la peau et crues."
+    ],
+    "slug": "tortillas-a-la-pomme-de-terre-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Tortillas-pommedeterre-2-of-5-1024x768.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/03/26/tortillas-a-la-pomme-de-terre-vegan/",
+    "image": "images/tortillas-a-la-pomme-de-terre-vegan.webp",
+    "createdAt": "2026-02-09T19:47:17.200666",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 38.0,
+    "totalCookingTime": 18.0,
+    "nutritionPerServing": {
+      "calories": 77.4,
+      "protein": 2.5,
+      "fat": 0.4,
+      "carbs": 16.3,
+      "fiber": 2.2,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 3,
+      "totalIngredients": 3,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pomme de terre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "potato"
+    },
+    {
+      "id": "wheat_flour",
+      "name": "farine de blé",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "80-100 g",
+      "optional": false,
+      "name_en": "wheat flour"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "1 pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "vegetable oil"
+    }
+  ],
+  "tools": [
+    "Rouleau à pâtisserie"
+  ],
+  "steps": [
+    {
+      "id": "cook_potatoes",
+      "action": "Éplucher et couper les pommes de terre en morceaux et les faire cuire à la vapeur (ou à l'eau bouillante) jusqu'à ce qu'elles soient tendres.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "cooked_potatoes",
+      "requires": [],
+      "visualCue": "tendres"
+    },
+    {
+      "id": "mash_potatoes",
+      "action": "Laisser refroidir, puis réduire les pommes de terre en purée bien fine, ajouter le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_potatoes",
+        "salt"
+      ],
+      "produces": "mashed_potatoes",
+      "requires": [],
+      "visualCue": "purée bien fine"
+    },
+    {
+      "id": "knead_dough",
+      "action": "Ajouter progressivement la farine et pétrir à la main jusqu'à ce qu'une boule se forme. La pâte ne doit plus coller. Ajuster la quantité de farine en fonction de la texture des pommes de terre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mashed_potatoes",
+        "wheat_flour"
+      ],
+      "produces": "dough_ball",
+      "requires": [],
+      "visualCue": "boule se forme, pâte ne colle plus"
+    },
+    {
+      "id": "divide_and_roll",
+      "action": "Former 6 boules de pâte de taille identique, puis les étaler (en forme de disque) à l'aide d'un rouleau à pâtisserie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dough_ball"
+      ],
+      "produces": "rolled_tortillas",
+      "requires": [],
+      "visualCue": "disques étalés"
+    },
+    {
+      "id": "cook_tortillas",
+      "action": "Faire chauffer une poêle à feu moyen fort (7/10), y verser un peu d'huile et y faire cuire la première tortilla, environ 3min de chaque côté. Recommencer pour les autres.",
+      "duration": "PT18M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rolled_tortillas",
+        "vegetable_oil"
+      ],
+      "produces": "cooked_tortillas",
+      "requires": [],
+      "visualCue": "dorées des deux côtés"
+    },
+    {
+      "id": "keep_warm",
+      "action": "Garder les tortillas ainsi cuites dans un torchon propre afin qu'elles ne sèchent pas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_tortillas"
+      ],
+      "produces": "tortillas_pomme_de_terre",
+      "requires": [],
+      "visualCue": "tortillas moelleuses dans torchon"
+    }
+  ],
+  "finalState": "tortillas_pomme_de_terre",
+  "originalText": "Tortillas à la Pomme de Terre (Vegan) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 mars 2020\nTortillas à la Pomme de Terre (Vegan)\nHello mes chers Pickles !\nVoici une recette super simple et rapide pour réaliser des tortillas (vegan) hyper moelleuses avec seulement 4 ingrédients.\nJe ne sais pas pour vous, mais dans cette période de confinement, mon humeur oscille souvent entre “grand désespoir, arrête d’écouter les nouvelles Natacha, éteint la radio tout de suite (oui, je n’ai pas la télé, et tant mieux en ce moment) et “ceci est une opportunité ! teste des recettes, passe du temps en cuisine, profite d’être à la maison avec ta famille” !\nDonc, je teste des recettes 🙂 et celle-ci me faisait de l’œil depuis un moment ! Je n’ai rien inventé, les tortillas à base de farine et de légumes réduits en purée sont assez populaires en ce moment et j’avais surtout envie de tester et :\n1. voir si elles étaient vraiment plus faciles à réaliser que\nma recette de pitas\n(par exemple… et la réponse est oui : elles sont surtout plus  rapides à faire car il n’y a pas de temps de repos à prendre en compte)\n2. tester le goût et le moelleux et vous confirmer que ça vaut le coup ou pas d’en faire !\nEh bien, la version avec de la pomme de terre est tout simplement délicieuse ! Les pitas sont super moelleuses et vraiment très faciles à faire. Elles ne demandent aucun temps de repos, pas de levure de boulanger. Vraiment, ces tortillas sont à la portée de tous, il suffit d’avoir des pommes de terre, un peu de farine, du sel et un peu d’huile …\nEt elles sont vraiment parfaites pour faire\ndes tacos (comme ceux-ci)\nou\ndes quesadillas comme celles-ci\n!\nTortillas à la Pomme de Terre (Vegan)\n4.46\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nTemps total\n35\nminutes\nmin\nPortions\n6\ntortillas\nIngrédients\n1x\n2x\n3x\n200\ng\nde pomme de terre\n80-100\ng\nde farine de blé\n1\npincée de sel\nun peu d’huile végétale pour la cuisson\nInstructions\nÉplucher et couper les pommes de terre en morceaux et les faire cuire à la vapeur (ou à l’eau bouillante) jusqu’à ce qu’elles soient tendres (environ 20min).\nLaisser refroidir, puis réduire les pommes de terre en purée bien fine, ajouter le sel.\nAjoutez progressivement la farine et pétrissez à la main jusqu’à ce qu’une boule se forme. La pâte ne doit plus coller. Nous avons utilisé environ 80g de farine, mais ajustez la quantité en fonction de la texture de vos pommes de terre.\nFormez 6 boules de pâtes de taille identique, puis étalez-les (en forme de disque) à l’aide d’un rouleau à pâtisserie.\nFaire chauffer une poêle à feu moyen fort (7/10), y verser un peu d’huile et y faire cuire votre première tortilla, environ 3min de chaque côté. Recommencer !\nGardez les tortillas ainsi cuites dans un torchon propre afin qu’elles ne sèchent pas.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nPlats & Accompagnements\n,\nPrintemps\n,\nRecettes Salées\nTags:\ntortillas\n,\ntortillas de pomme de terre\n,\ntortillas rapides\n,\ntortillas vegan\nOignons Doux Vinaigrés (Vegan, Sans Gluten)\nRagoût à la Cacahuète, Pois Chiches et Epinards\n12 thoughts on “Tortillas à la Pomme de Terre (Vegan)”\nlou\ndit :\n4 avril 2020 à 9 h 03 min\nBonjour,\nTout d’abord merci de partager vos recettes….\nPour celle des tortillas quand vous dites 200 gr. de pommes de terre c’est le poids avec leur peau ou sans ?\nMerci pour votre réponse,\nCldt,\nBonne journée confinée 😟😟\nchargement…\nRépondre\nFree The Pickle\ndit :\n4 avril 2020 à 13 h 21 min\nBonjour ! C’est le poids avec la peau et crue ! On a l’habitude de peser les ingrédients en tout début de recette (sauf si c’est précisé autrement) ! On espère que vous vous régalerez ! Bonne journée confinée à vous aussi 🙂\nchargement…\nRépondre\ndeborahlafont\ndit :\n6 avril 2020 à 12 h 30 min\nMerci pour cette super recette, il va falloir que je teste ça! 🙂\nchargement…\nRépondre\nFree The Pickle\ndit :\n7 avril 2020 à 10 h 37 min\nAvec plaisir 😉 tu verras c’est simplissime et ça donne des tortillas super moelleuses !\nchargement…\nRépondre\nAmanda\ndit :\n7 mai 2020 à 16 h 16 min\nBonjour!\nwaow! je me réjouis de tester cette recette!\nJe me demandais si, comme pour les pains pitas, les tortillas de pommes de terre peuvent se congeler?\nMerci pour ta réponse et belle journée!\nchargement…\nRépondre\nFree The Pickle\ndit :\n11 mai 2020 à 0 h 36 min\nHello ! Alors pour tout te dire, je n’ai pas testé mais j’ai un petit doute parce que généralement les pommes de terre ne supportent pas très bien la congélation. Elles deviennent souvent farineuses et aqueuses. Du coup, j’aurai tendance a dire non, mais si tu essaies je veux bien que tu me dises ce que ça a donné !\nchargement…\nRépondre\nMyset\ndit :\n6 septembre 2023 à 7 h 55 min\nBonjour,\nMerci pour cette recette. J’aimerais la faire en mode batch cooking pour anticiper mes repas de la semaine. Combien de temps puis-je les conserver au frigo et de quelle manière ? Cuites ? Pate en boule ? Cuites et couvertes d’un torchon humide ou dans un Tupperware ? Merci pour vos indications si vous les avez déjà conservées plusieurs jours !!\nchargement…\nRépondre\nChristina\ndit :\n7 février 2024 à 10 h 05 min\nBonjour,\nMerci pour cette recette! Intolérante au gluten, lactose et œufs , par quelle farine remplacer le blé sans modifier la texture de la galette svp? Farine de riz uniquement j’ai peur que lg pète le score avec la pomme de terre ou que ce soit trop granuleux…\nchargement…\nRépondre\nAicha\ndit :\n18 mars 2025 à 14 h 20 min\nBonjour je viens d’arriver, tu peux remplacer par la maïzena j’avais vu une dame mexicaine sur TikTok les faire de cette façon. Elle avait mis 4cu à soupe pour 3 grosse pomme de terre. 😉\nchargement…\nRépondre\nDomi\ndit :\n29 avril 2025 à 15 h 39 min\nVoilà une recette vraiment très simple qui me tarde de tester. Merci pour vos partages\nchargement…\nRépondre\nChrissie\ndit :\n6 juillet 2025 à 10 h 42 min\nBonjour\nQuelle variété de pommes de terre avez-vous utilisée pour cette recette de  galettes de tortillas aux pommes de terre ?\nMerci\nchargement…\nRépondre\nNatacha\ndit :\n7 juillet 2025 à 11 h 17 min\nBonjour, idéalement des pommes de terre riches en fécule !\nchargement…\nRépondre\n4.46 from 57 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 18.0
+}

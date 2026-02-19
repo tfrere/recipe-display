@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "title": "Quiche aux blettes et 2 ch\u00e8vres",
+    "description": "Cette Quiche aux blettes et 2 ch\u00e8vres est devenue un grand classique dans ma cuisine. Elle est rapide \u00e0 faire et permet de manger une bonne dose de l\u00e9gumes tout en se r\u00e9galant.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT55M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "quiche",
+      "blettes",
+      "ch\u00e8vre",
+      "automne",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Quiche-blettes-2-chevres-1-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous remarquerez d'ailleurs, que dans la majorit\u00e9 de mes recettes de blettes, j'utilise les c\u00f4tes et les feuilles ensemble.",
+      "Les c\u00f4tes mettent un peu plus de temps \u00e0 cuire que le vert. Parfois j'ajoute donc le vert en fin de cuisson.",
+      "Je vous conseille de tester cette Quiche aux blettes et 2 ch\u00e8vres. Elle utilise le vert et le blanc. Et elle est super bonne !"
+    ],
+    "slug": "quiche-aux-blettes-et-2-chevres",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Quiche-blettes-2-chevres-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/03/27/quiche-aux-blettes-et-2-chevres/",
+    "image": "images/quiche-aux-blettes-et-2-chevres.webp",
+    "createdAt": "2026-02-09T22:05:16.566166",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 105.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 842.5,
+      "protein": 36.1,
+      "fat": 57.0,
+      "carbs": 46.4,
+      "fiber": 3.6,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 10,
+      "totalIngredients": 10,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "belle pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeuf_pate",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "blettes",
+      "name": "blettes",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "c\u00f4tes et feuilles",
+      "notes": null,
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "oeufs_appareil",
+      "name": "\u0153ufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "chevre_frais",
+      "name": "ch\u00e8vre frais",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh goat cheese"
+    },
+    {
+      "id": "creme_liquide",
+      "name": "cr\u00e8me liquide",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "ciboulette",
+      "name": "ciboulette",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "botte",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "buche_chevre",
+      "name": "b\u00fbche de ch\u00e8vre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Goat cheese log"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "moule \u00e0 tarte"
+  ],
+  "steps": [
+    {
+      "id": "mix_farine_sel",
+      "action": "M\u00e9langer la farine et le sel dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "farine",
+        "sel"
+      ],
+      "produces": "farine_sel_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre",
+      "action": "Ajouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "farine_sel_melange",
+        "beurre"
+      ],
+      "produces": "crumble_melange",
+      "requires": [],
+      "visualCue": "comme un crumble"
+    },
+    {
+      "id": "ajouter_oeuf_eau",
+      "action": "Ajouter ensuite l'\u0153uf et l'eau et m\u00e9langer jusqu'\u00e0 ce qu'une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "crumble_melange",
+        "oeuf_pate",
+        "eau_froide"
+      ],
+      "produces": "pate_a_tarte",
+      "requires": [],
+      "visualCue": "boule homog\u00e8ne non collante"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server au frais, au minimum 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "pate_a_tarte"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_oignon",
+      "action": "\u00c9mincez l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "oignon"
+      ],
+      "produces": "oignon_emince",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_oignon",
+      "action": "Faites-le revenir dans une po\u00eale \u00e0 feu moyen avec un peu d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "oignon_emince",
+        "huile_olive"
+      ],
+      "produces": "oignon_revenu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_blettes",
+      "action": "Rincez et \u00e9mincez les blettes (c\u00f4tes et feuilles).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "blettes"
+      ],
+      "produces": "blettes_emincees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_blettes",
+      "action": "Ajoutez-les dans la po\u00eale et faites revenir une vingtaine de minutes jusqu'\u00e0 ce que les c\u00f4tes soient tendres.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "appareil",
+      "uses": [
+        "blettes_emincees",
+        "oignon_revenu"
+      ],
+      "produces": "blettes_cuites",
+      "requires": [],
+      "visualCue": "c\u00f4tes tendres"
+    },
+    {
+      "id": "melanger_appareil_base",
+      "action": "Dans un saladier, m\u00e9langez les oeufs, le ch\u00e8vre frais, la cr\u00e8me, la ciboulette hach\u00e9e, le sel et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "oeufs_appareil",
+        "chevre_frais",
+        "creme_liquide",
+        "ciboulette",
+        "sel",
+        "poivre"
+      ],
+      "produces": "appareil_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_blettes_appareil",
+      "action": "Ajoutez les blettes cuites et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "appareil_base",
+        "blettes_cuites"
+      ],
+      "produces": "appareil_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaissez la p\u00e2te et transf\u00e9rez-la dans un moule \u00e0 tarte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_chevre",
+      "action": "Coupez la b\u00fbche de ch\u00e8vre en rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "buche_chevre"
+      ],
+      "produces": "rondelles_chevre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler_quiche",
+      "action": "Versez l'appareil dans le moule puis d\u00e9posez les rondelles de ch\u00e8vre par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_etalee",
+        "appareil_complet",
+        "rondelles_chevre"
+      ],
+      "produces": "quiche_crue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_quiche",
+      "action": "Enfournez pour 55min.",
+      "duration": "PT55M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "quiche_crue"
+      ],
+      "produces": "quiche_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "quiche_cuite",
+  "originalText": "Quiche aux blettes et 2 ch\u00e8vres - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n27 mars 2024\nQuiche aux blettes et 2 ch\u00e8vres\nCette Quiche aux blettes et 2 ch\u00e8vres est devenue un grand classique dans ma cuisine.\nElle est rapide \u00e0 faire et permet de manger une bonne dose de l\u00e9gumes tout en se r\u00e9galant.\nVous remarquerez d\u2019ailleurs, que dans la majorit\u00e9 de mes recettes de blettes, j\u2019utilise les c\u00f4tes et les feuilles ensemble.\nComme dans ce\ngratin de blettes aux haricots\n. Ou\nce curry aux blettes et petits pois\n.\nQuand j\u2019\u00e9tais enfant, c\u2019\u00e9tait ma m\u00e8re qui cuisinait les blettes. Et elle les faisait toujours en gratin. D\u2019ailleurs, c\u2019est sa recette qui a inspir\u00e9\nmon gratin de blettes au comt\u00e9\n. Elle a toujours cuisin\u00e9 les c\u00f4tes et les feuilles ensemble. Et je n\u2019ai appris que bien plus tard que beaucoup de gens les s\u00e9parent pour les cuisiner.\nC\u2019est vrai que les c\u00f4tes mettent un peu plus de temps \u00e0 cuire que le vert. Parfois j\u2019ajoute donc le vert en fin de cuisson. Mais sinon, je dois avouer \u00eatre un peu dans la team flemme. Et je fais souvent tout cuire ensemble.\nPersonnellement, je trouve \u00e7a tr\u00e8s bon comme \u00e7a !\nMais cette nouvelle m\u2019a donn\u00e9 envie de trouver des recettes pour ne cuisiner que les c\u00f4tes. Je pense qu\u2019il y a mati\u00e8re \u00e0 \u00eatre cr\u00e9ative avec ces belles c\u00f4tes charnues !\nToujours est-il que je vous conseille de tester cette Quiche aux blettes et 2 ch\u00e8vres. Elle utilise le vert et le blanc. Et elle est super bonne !\nQuiche aux blettes et 2 ch\u00e8vres\n4.62\n/5 avec\n36\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n55\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la p\u00e2te \u00e0 tarte\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n1\nc-\u00e0-s d\u2019eau froide\nPour l\u2019appareil\n1\noignon\n350\ng\nde blettes\nc\u00f4tes et feuilles\n4\n\u0153ufs\n200\ng\nde ch\u00e8vre frais\n80\nml\nde cr\u00e8me liquide\n1\nbotte de ciboulette\nsel\npoivre\n200\ng\nde b\u00fbche de ch\u00e8vre\nInstructions\nPr\u00e9paration de la p\u00e2te\nM\u00e9langer la farine, le sel dans un saladier.\nAjouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019\u0153uf et l\u2019eau une et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).\nR\u00e9server au frais, au minimum 30min.\nPr\u00e9paration de l\u2019appareil\n\u00c9mincez l\u2019oignon. Faites-le revenir dans une po\u00eale \u00e0 feu moyen avec un peu d\u2019huile d\u2019olive.\nRincez et \u00e9mincez les blettes (c\u00f4tes et feuilles).\nAjoutez-les dans la po\u00eale et faites revenir une vingtaine de minutes jusqu\u2019\u00e0 ce que les c\u00f4tes soient tendres.\nDans un saladier, m\u00e9langez les oeufs, le ch\u00e8vre frais, la cr\u00e8me, la ciboulette hach\u00e9e, le sel et le poivre.\nAjoutez les blettes et m\u00e9langez.\nPr\u00e9paration de la quiche\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nAbaissez la p\u00e2te et transf\u00e9rez-la dans un moule \u00e0 tarte.\nCoupez la b\u00fbche en rondelles.\nVersez l\u2019appareil dedans puis d\u00e9posez les rondelles de ch\u00e8vre par-dessus.\nEnfournez 55min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBlettes\n,\nPrintemps\n,\nQuiches et Tartes\nTags:\nquiche\nGratin de blettes haricots blancs et mozzarella\nNuggets de chou-fleur au miel et \u00e0 l\u2019ail\n4 thoughts on \u201cQuiche aux blettes et 2 ch\u00e8vres\u201d\nAnne LEGRAND\ndit\u00a0:\n3 avril 2024 \u00e0 18 h 00 min\nD\u00e9licieuse fa\u00e7on de cuisiner les blettes, un vrai r\u00e9gal \ud83d\ude0b\nchargement\u2026\nR\u00e9pondre\nju_bilez\ndit\u00a0:\n4 septembre 2024 \u00e0 20 h 31 min\nUn r\u00e9gal ! Beaucoup plus savoureuse avec le fromage de ch\u00e8vre frais dans l\u2019appareil \u00e0 tarte \ud83d\ude0b\nchargement\u2026\nR\u00e9pondre\nMuriel\ndit\u00a0:\n24 janvier 2025 \u00e0 7 h 48 min\nJ\u2019avais des blettes et n\u2019avais pas trop d\u2019id\u00e9e, cette quiche est excellente, la p\u00e2te tr\u00e8s rapide et super bonne. Je referai sans h\u00e9sitation.\nchargement\u2026\nR\u00e9pondre\nMarit\u00e9\ndit\u00a0:\n10 juin 2025 \u00e0 12 h 16 min\nPremi\u00e8re fois que je pr\u00e9parais une p\u00e2te car je les ach\u00e8te au supermarch\u00e9 d\u2019habitude, mais on n\u2019en vend pas en Angleterre\u2026 Un d\u00e9lice ! On a accompagn\u00e9 la quiche d\u2019une petite salade vinaigr\u00e9e, et c\u2019\u00e9tait parfait. Je me r\u00e9jouis d\u2019en refaire une cette semaine ! Merci !\nchargement\u2026\nR\u00e9pondre\n4.62 from 36 votes (\n32 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

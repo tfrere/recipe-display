@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "title": "Tartelettes de printemps aux Asperges",
+    "description": "Des tartelettes l\u00e9g\u00e8res et gourmandes \u00e0 base d'asperges, de ricotta et de parmesan, servies dans des nids de p\u00e2te filo, garnies de fleurs comestibles et de pousses germ\u00e9es.",
+    "servings": 6,
+    "prepTime": "PT25M",
+    "cookTime": "PT31M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "asperge",
+      "printemps",
+      "quiche",
+      "tarte",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Tartelettes-nid-paques-asperge-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e pour MonBento.",
+      "Peut \u00eatre adapt\u00e9e en version tarte.",
+      "Pour plus de simplicit\u00e9, on peut superposer des feuilles de filo comme pour une spanakopita, ou utiliser une p\u00e2te feuillet\u00e9e classique.",
+      "Les tiges d'asperges sont utilis\u00e9es dans l'appareil pour ne rien jeter.",
+      "Le paquet de filo referm\u00e9 herm\u00e9tiquement se conserve au frigo quelques jours ou au cong\u00e9lateur quelques mois.",
+      "Les asperges en conserve peuvent \u00eatre utilis\u00e9es."
+    ],
+    "slug": "tartelettes-de-printemps-aux-asperges",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Tartelettes-nid-paques-asperge-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/04/18/tartelettes-de-printemps-aux-asperges/",
+    "image": "images/tartelettes-de-printemps-aux-asperges.jpg",
+    "createdAt": "2026-02-09T21:18:03.098882",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 26.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 100.6,
+      "protein": 7.8,
+      "fat": 6.5,
+      "carbs": 2.6,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "asperges_vertes",
+      "name": "asperges vertes",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "green asparagus"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles filo",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "fleurs_comestibles",
+      "name": "fleurs comestibles",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "pens\u00e9es et fleurs de bourrache par ex",
+      "optional": false,
+      "name_en": "edible flowers"
+    },
+    {
+      "id": "pousses_germees",
+      "name": "pousses germ\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sprouts"
+    },
+    {
+      "id": "gros_sel",
+      "name": "gros sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "fleurs_de_sel",
+      "name": "fleurs de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    }
+  ],
+  "tools": [
+    "6 moules \u00e0 tartelettes",
+    "mixeur",
+    "pinceau de cuisine",
+    "ciseaux"
+  ],
+  "steps": [
+    {
+      "id": "boil_water",
+      "action": "Faire bouillir un grand volume d'eau avec une belle pinc\u00e9e de gros sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "gros_sel"
+      ],
+      "produces": "salted_boiling_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "trim_asparagus",
+      "action": "Couper et jeter la tige dure des asperges (environ 4-5cm).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "asperges_vertes"
+      ],
+      "produces": "trimmed_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_asparagus",
+      "action": "S\u00e9parer la t\u00eate des asperges (environ 4cm), puis d\u00e9tailler la tige restante en petites rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "trimmed_asparagus"
+      ],
+      "produces": "asparagus_tips_and_rounds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_asparagus",
+      "action": "Mettre les rondelles \u00e0 cuire \u00e0 la vapeur pendant 10min. Ajouter les t\u00eates \u00e0 mi-cuisson (elles ne doivent pas cuire plus de 5min).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "asparagus_tips_and_rounds",
+        "salted_boiling_water"
+      ],
+      "produces": "steamed_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "remove_from_heat",
+      "action": "Retirer du feu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_asparagus"
+      ],
+      "produces": "cooked_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "take_filo",
+      "action": "Sortir 5 feuilles de filo du paquet. Refermer le paquet herm\u00e9tiquement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filo",
+      "uses": [
+        "feuilles_filo"
+      ],
+      "produces": "filo_sheets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_filo_strips",
+      "action": "D\u00e9couper des lani\u00e8res de filo \u00e0 l'aide de ciseaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filo",
+      "uses": [
+        "filo_sheets"
+      ],
+      "produces": "filo_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_nests",
+      "action": "Arranger les lani\u00e8res dans les moules pour former des nids. Tapisser le fond des moules avec les petits morceaux restants.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filo",
+      "uses": [
+        "filo_strips"
+      ],
+      "produces": "filo_nests_in_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_oil",
+      "action": "A l'aide d'un pinceau, passer de l'huile d'olive d\u00e9licatement mais g\u00e9n\u00e9reusement sur les nids.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filo",
+      "uses": [
+        "filo_nests_in_molds",
+        "huile_dolive"
+      ],
+      "produces": "oiled_filo_nests",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_filling",
+      "action": "Dans le bol de votre mixeur, mixer les rondelles de tiges d'asperge cuites, avec la ricotta, le parmesan et les \u0153ufs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "cooked_asparagus",
+        "ricotta",
+        "parmesan",
+        "oeufs"
+      ],
+      "produces": "asparagus_ricotta_mixture",
+      "requires": [],
+      "visualCue": "bien lisse"
+    },
+    {
+      "id": "fill_molds",
+      "action": "Quand le m\u00e9lange est bien lisse, le r\u00e9partir dans les 6 moules.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "asparagus_ricotta_mixture",
+        "oiled_filo_nests"
+      ],
+      "produces": "filled_tartlets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tartlets",
+      "action": "Enfourner pour 16min.",
+      "duration": "PT16M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "filled_tartlets"
+      ],
+      "produces": "baked_tartlets",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_tartlets",
+      "action": "Sortir du four et laisser ti\u00e9dir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_tartlets"
+      ],
+      "produces": "cooled_tartlets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnish_tartlets",
+      "action": "Garnir les nids avec les pointes d'asperge coup\u00e9es en 2, les fleurs comestibles et les pousses germ\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "cooled_tartlets",
+        "cooked_asparagus",
+        "fleurs_comestibles",
+        "pousses_germees"
+      ],
+      "produces": "garnished_tartlets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_salt",
+      "action": "Saupoudrer avec un peu de fleurs de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "garnished_tartlets",
+        "fleurs_de_sel"
+      ],
+      "produces": "tartelettes_printemps_asperges",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tartelettes_printemps_asperges",
+  "originalText": "Tartelettes de printemps aux Asperges - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 avril 2022\nTartelettes de printemps aux Asperges\nAller \u00e0 la recette\nLa recette du jour : des Tartelettes de printemps aux Asperges !\nC\u2019est la recette parfaite \u00e0 vous pr\u00e9senter pour ce Lundi de P\u00e2ques, avec son petit c\u00f4t\u00e9 \u201cnid fleuri \u201c !\nIl n\u2019y a vraiment rien de bien compliqu\u00e9 dans ces tartelettes. Que vous pouvez tout \u00e0 fait adapter en version tarte.\nJ\u2019ai utilis\u00e9 des bandes de p\u00e2te filo que j\u2019ai simplement d\u00e9coup\u00e9es dans de la filo classique. J\u2019avais envie d\u2019obtenir un effet brindilles. Mais pour plus de simplicit\u00e9, vous pouvez simplement superposer quelques feuilles comme pour le d\u00e9but d\u2019une\nspanakopita\n. Vous pouvez m\u00eame utiliser une p\u00e2te feuillet\u00e9e classique si vous n\u2019\u00eates pas \u00e0 la recherche du look \u201cnid de p\u00e2ques\u201d.\nConcernant la garniture, je me suis dirig\u00e9e vers des produits tr\u00e8s saisonniers. Avec les asperges comme grandes stars du show ! Quelques fleurs comestibles. Parce qu\u2019on les oublie trop souvent, mais qu\u2019on en trouve de plus en plus facilement dans le commerce. Et finalement quelques graines germ\u00e9es !\nLa base des tartelettes est une base fa\u00e7on quiche. J\u2019ai utilis\u00e9 les tiges d\u2019asperges mix\u00e9es. Je d\u00e9teste jeter ! Et je les ai m\u00e9lang\u00e9es avec de la ricotta et des \u0153ufs.\nLe r\u00e9sultat est \u00e0 la fois l\u00e9ger et gourmand !\nJ\u2019ai cr\u00e9\u00e9 cette recette de Tartelettes de printemps aux Asperges pour\nMonBento\n!\nTartelettes de printemps aux Asperges\n4.48\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n6\ntartelettes\nEquipment\n6  moules \u00e0 tartelettes\nIngr\u00e9dients\n1x\n2x\n3x\n6\nasperges vertes\n100\ng\nde ricotta\n70\ng\nde parmesan r\u00e2p\u00e9\n2\noeufs\n5\nfeuilles filo\nhuile d\u2019olive\n1\npoign\u00e9e de fleurs comestibles\npens\u00e9es et fleurs de bourrache par ex\n1\npoign\u00e9e de pousses germ\u00e9es\nInstructions\nFaire bouillir un grand volume d\u2019eau avec une belle pinc\u00e9e de gros sel.\nCouper et jeter la tige dure des asperges (environ 4-5cm).\nS\u00e9parer la t\u00eate des asperges (environ 4cm), puis d\u00e9tailler la tige restante en petites rondelles.\nMettre les rondelles \u00e0 cuire \u00e0 la vapeur pendant 10min. Ajouter les t\u00eates \u00e0 mi-cuisson (elles ne doivent pas cuire plus de 5min).\nRetirer du feu.\nSortir 5 feuilles de filo du paquet. Refermer le paquet herm\u00e9tiquement. Vous pouvez garder le paquet au frigo quelques jours, ou au cong\u00e9lateur quelques mois.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nD\u00e9couper des lani\u00e8res de filo \u00e0 l\u2019aide ciseaux. Attention, elles sont fragiles.\nArranger les lani\u00e8res dans les moules pour former des nids. Tapisser le fond des moules avec les petits morceaux restants.\nA l\u2019aide d\u2019un pinceau, passer de l\u2019huile d\u00e9licatement mais g\u00e9n\u00e9reusement sur les nids.\nDans le bol de votre mixeur, mixer les rondelles de tiges d\u2019asperge, avec la ricotta, le parmesan, les \u0153ufs.\nQuand le m\u00e9lange est bien lisse, le r\u00e9partir dans les 6 moules.\nEnfourner pour 16 \u00e0 17min.\nSortir du four et laisser ti\u00e9dier.\nGarnir les nids avec les pointes d\u2019asperge coup\u00e9es en 2, les fleurs et les pousses.\nSaupoudrer avec un peu de fleurs de sel.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAsperge\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nasperge recette\n,\nasperge verte\n,\nasperges\n,\nid\u00e9e asperge\n,\nquiche\nSandwich Pois Chiche Mayo\nTartinade d\u2019artichauts vegan\n2 thoughts on \u201cTartelettes de printemps aux Asperges\u201d\nTine\ndit\u00a0:\n3 juillet 2022 \u00e0 10 h 32 min\nD\u00e9licieux.\nPourrait-on utiliser des asperges en conserve?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n7 juillet 2022 \u00e0 15 h 27 min\nBonjour ! Oui, sans probl\u00e8me\nchargement\u2026\nR\u00e9pondre\n4.48 from 57 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

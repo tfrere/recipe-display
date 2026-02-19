@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "title": "Risotto Vegan à la Courge Butternut et aux Noisettes",
+    "description": "Le risotto est un plat génial, il est facile à faire, il se décline à l’infini, il est super réconfortant et c’est tellement simple de le faire végétarien ou même vegan, comme c’est le cas ici.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT50M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "courge butternut",
+      "noisette",
+      "risotto",
+      "vegan",
+      "automne",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Risotto-vegan-butternut-noisettes-8-of-8-scaled-300x300.jpg",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Et puis, entre nous, c’est le moyen idéal de finir une bouteille de vin blanc qui traine au frigo depuis quelques jours ! Team \"zero gachis\" for ever !",
+      "C'est ma troisième recette de risotto pour le blog ! Je vous ai déjà proposé une version printanière avec des asperges, et une version hivernale avec des champignons et des poireaux.",
+      "Cette fois-ci, les deux stars du plat sont la courge butternut et les noisettes. Ce sont mes deux ingrédients fétiches du moment, et ils se marient super bien !",
+      "Ajouter la courge restante et les noisettes au-dessus au moment de servir !"
+    ],
+    "slug": "risotto-vegan-a-la-courge-butternut-et-aux-noisettes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Risotto-vegan-butternut-noisettes-8-of-8-scaled-300x300.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/14/risotto-vegan-a-la-courge-butternut-et-aux-noisettes/",
+    "image": "images/risotto-vegan-a-la-courge-butternut-et-aux-noisettes.webp",
+    "createdAt": "2026-02-09T19:35:50.921449",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 59.0,
+    "totalCookingTime": 39.0,
+    "nutritionPerServing": {
+      "calories": 340.7,
+      "protein": 3.5,
+      "fat": 15.5,
+      "carbs": 13.9,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition",
+      "liquidRetentionApplied": true
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "butternut_squash",
+      "name": "courge butternut",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluchée et coupée en dés (env 350g)",
+      "notes": "petite",
+      "optional": false,
+      "name_en": "butternut squash"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "vegetable_broth",
+      "name": "bouillon de légumes",
+      "quantity": 1.0,
+      "unit": "L",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "1L d'eau et un bouillon cube de légumes",
+      "optional": false,
+      "name_en": "vegetable broth"
+    },
+    {
+      "id": "shallots",
+      "name": "échalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincées",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "celery",
+      "name": "céleri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincée",
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "sage",
+      "name": "sauge",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles, et un peu plus pour le service",
+      "optional": false,
+      "name_en": "sage"
+    },
+    {
+      "id": "arborio_rice",
+      "name": "riz arborio",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Arborio rice"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressées",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc sec",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry white wine"
+    },
+    {
+      "id": "hazelnuts",
+      "name": "noisettes",
+      "quantity": 25.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "concassées",
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnuts"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Poêle à bords hauts"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer votre four à 200°C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "courge_butternut_rotie",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_squash",
+      "action": "Dans un saladier, verser les dés de courge, 1 cuillère à soupe d'huile d'olive, du sel et du poivre. Bien mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "courge_butternut_rotie",
+      "uses": [
+        "butternut_squash",
+        "olive_oil",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_squash_cubes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_squash",
+      "action": "Couvrir une plaque de cuisson de papier cuisson, et disposer les dés de courges dessus. Enfourner à mi-hauteur pour 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "courge_butternut_rotie",
+      "uses": [
+        "seasoned_squash_cubes"
+      ],
+      "produces": "roasted_squash",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "la courge est bien tendre et commence à se colorer"
+    },
+    {
+      "id": "prepare_broth",
+      "action": "Pendant ce temps, préparer le bouillon en faisant fondre le bouillon cube dans l'eau bouillante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "vegetable_broth"
+      ],
+      "produces": "hot_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Dans une poêle à bords hauts, faire chauffer à feu moyen fort les 2 cuillères à soupe d'huile restante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Ajouter les échalotes, le céleri et la sauge. Faire revenir 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "hot_oil",
+        "shallots",
+        "celery",
+        "sage"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_rice",
+      "action": "Ajouter le riz et l'ail pressé. Faire revenir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "sauteed_aromatics",
+        "arborio_rice",
+        "garlic"
+      ],
+      "produces": "toasted_rice",
+      "requires": [],
+      "visualCue": "Les grains de riz doivent commencer à devenir transparents"
+    },
+    {
+      "id": "deglaze_wine",
+      "action": "Verser le vin blanc. Remuer constamment jusqu'à absorption complète du liquide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "toasted_rice",
+        "white_wine"
+      ],
+      "produces": "wine_absorbed_rice",
+      "requires": [],
+      "visualCue": "absorption complète du liquide"
+    },
+    {
+      "id": "cook_risotto",
+      "action": "Ajouter une ou deux louches de bouillon à la fois, tout en remuant en permanence. Recommencer quand le liquide est complètement absorbé jusqu'à ce qu'il n'y ait plus de bouillon.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "wine_absorbed_rice",
+        "hot_broth"
+      ],
+      "produces": "cooked_risotto",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_squash",
+      "action": "Réserver 1/3 de la courge rôtie, réduire le reste en purée bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "roasted_squash"
+      ],
+      "produces": "squash_puree_and_reserved",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_squash_puree",
+      "action": "Une fois que le risotto est cuit, retirer du feu et ajouter la purée de courge. Mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_risotto",
+        "squash_puree_and_reserved"
+      ],
+      "produces": "risotto_with_squash_puree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnish_and_serve",
+      "action": "Ajouter la courge restante et les noisettes concassées au-dessus au moment de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "risotto_with_squash_puree",
+        "squash_puree_and_reserved",
+        "hazelnuts"
+      ],
+      "produces": "risotto_vegan_butternut_hazelnuts",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "risotto_vegan_butternut_hazelnuts",
+  "originalText": "Risotto Vegan à la Courge Butternut et aux Noisettes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 janvier 2020\nRisotto Vegan à la Courge Butternut et aux Noisettes\nAccéder directement à la recette\nLe risotto est un plat génial, il est facile à faire, il se décline à l’infini, il est super réconfortant et c’est tellement simple de le faire végétarien ou même vegan, comme c’est le cas ici.\nEt puis, entre nous, c’est le moyen idéal de finir une bouteille de vin blanc qui traine au frigo depuis quelques jours ! Team “zero gachis” for ever !\nC’est ma troisième recette de risotto pour le blog ! Je vous ai déjà proposé\nune version printanière avec des asperges\n, et\nune version hivernale avec des champignons et des poireaux\n.\nCette fois-ci, les deux stars du plat sont la courge butternut et les noisettes. Ce sont mes deux ingrédients fétiches du moment, et ils se marient super bien !\nRisotto Vegan à la Courge Butternut et aux Noisettes\n4.49\n/5 avec\n39\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n25\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nTemps total\n1\nheure\nh\nPortions\n4\npersonnes\nIngrédients\n1x\n2x\n3x\n1\npetite courge butternut épluchée et coupée en dés\nenv 350g\n1\nc-à-s d’huile d’olive\nsel\npoivre\n1\nL\nde bouillon de légumes\n1L d’eau et un bouillon cube de légumes\n2\nc-à-s d’huile d’olive\n2\néchalotes émincées\n1\nbranche de céleri émincée\n4-5\nfeuilles de sauge\net un peu plus pour le service\n350\ng\nde riz arborio\n2\ngousses d’ails pressées\n150\nml\nde vin blanc sec\n25\ng\nde noisettes concassées\nInstructions\nPréchauffer votre four à 200 degrés.\nDans un saladier, verser les dés de courge, 1 c-à-s d’huile d’olive, du sel et du poivre. Bien mélanger. Couvrir une plaque de cuisson de papier cuisson, et disposer les dés de courges dessus.\nEnfourner à mi-hauteur pour une vingtaine de minutes. C’est cuit quand la courge est bien tendre et commenceà se colorer.\nPendant ce temps, préparer le bouillon en faisant fondre le bouillon cube dans l’eau bouillante.\nDans une poêle à bords hauts, faire chauffer à feu moyen fort les 2 c-à-s d’huile restante. Ajouter les échalotes, le céleri et la sauge. Faire revenir 3-4min, puis ajouter le riz et l’ail pressé. Faire revenir 5min. Les grains de riz doivent commencer à devenir transparent.\nPuis verser le vin blanc. Remuer constamment jusqu’à absorption complète du liquide.\nMaintenant, ajouter une ou deux louches de bouillon à la fois, tout en remuant en permanence. Recommencer quand le liquide est complètement absorbé jusqu’à ce qu’il n’y ait plus de bouillon. Cela va vous prendre entre 25 et 30min.\nRéserver 1/3 de la courge, réduire le reste en purée bien lisse.\nUne fois que le risotto est cuit, retirer du feu et ajouter la purée de courge. Mélanger.\nAjouter la courge restante et les noisettes au-dessus au moment de servir !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourge\n,\nHiver\n,\nNos recettes Véganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Salées\nTags:\ncourge butternut\n,\nnoisette\n,\nrisotto butternut\n,\nrisotto vegan\n,\nrisotto vegetarien\nScones aux Pépites de Chocolat\nMuffins Poireaux Mimolette (Végétariens)\n4.49 from 39 votes (\n39 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 39.0
+}

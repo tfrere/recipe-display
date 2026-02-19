@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "title": "Salade c\u00e9leri rave, pomme et miel",
+    "description": "Une recette d\u2019hiver pleine de fra\u00eecheur et de bienfaits, associant le croquant du c\u00e9leri rave, la douceur de la pomme et le go\u00fbt subtil du miel.",
+    "servings": 4,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "salade",
+      "hiver",
+      "c\u00e9leri rave",
+      "pomme",
+      "carotte"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/Salade-celeri-rave-miel-1-of-4.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Id\u00e9alement, attendre 30min avant de servir, pour que le c\u00e9leri rave devienne plus tendre et juteux."
+    ],
+    "slug": "salade-celeri-rave-pomme-et-miel",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/Salade-celeri-rave-miel-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/03/25/salade-celeri-rave-pomme-miel/",
+    "image": "images/salade-celeri-rave-pomme-et-miel.webp",
+    "createdAt": "2026-02-09T22:40:17.290171",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 138.9,
+      "protein": 0.5,
+      "fat": 12.0,
+      "carbs": 7.7,
+      "fiber": 1.3,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "celeri_rave",
+      "name": "c\u00e9leri rave",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Celeriac"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "pomme",
+      "name": "pomme",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple"
+    },
+    {
+      "id": "citron",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "moutarde",
+      "name": "moutarde \u00e0 l'ancienne",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole grain mustard"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    }
+  ],
+  "tools": [
+    "R\u00e2pe"
+  ],
+  "steps": [
+    {
+      "id": "rater_legumes",
+      "action": "R\u00e2per les l\u00e9gumes (c\u00e9leri rave et carottes) et la pomme.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "celeri_rave",
+        "carottes",
+        "pomme"
+      ],
+      "produces": "legumes_rapes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_vinaigrette",
+      "action": "M\u00e9langer tous les ingr\u00e9dients de la vinaigrette (jus de citron, moutarde, huile d'olive, sel, poivre, miel).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "vinaigrette",
+      "uses": [
+        "citron",
+        "moutarde",
+        "huile_olive",
+        "sel",
+        "poivre",
+        "miel"
+      ],
+      "produces": "vinaigrette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner_salade",
+      "action": "Verser la vinaigrette sur la salade r\u00e2p\u00e9e et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_rapes",
+        "vinaigrette"
+      ],
+      "produces": "salade_assaisonnee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer",
+      "action": "Laisser reposer pendant 30min avant de servir.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "salade_assaisonnee"
+      ],
+      "produces": "salade_reposee",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_reposee",
+  "originalText": "Salade c\u00e9leri rave, pomme & miel, bienfaits et saveurs d'hiver\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 mars 2025\nSalade c\u00e9leri rave, pomme & miel : une recette d\u2019hiver pleine de fra\u00eecheur et de bienfaits\nLa salade de c\u00e9leri rave, pomme et miel est une belle id\u00e9e de recette hivernale, rafra\u00eechissante et pleine de saveurs. Ce plat associe le croquant du c\u00e9leri rave, la douceur de la pomme et le go\u00fbt subtil du miel, offrant une combinaison parfaite entre douceur et l\u00e9g\u00e8ret\u00e9. Le c\u00e9leri rave, souvent n\u00e9glig\u00e9 au profit d\u2019autres l\u00e9gumes plus populaires, m\u00e9rite pourtant d\u2019\u00eatre mis en avant pour ses nombreuses qualit\u00e9s nutritionnelles et son go\u00fbt unique. Dans cet article, nous vous invitons \u00e0 d\u00e9couvrir les bienfaits du c\u00e9leri rave, son histoire, ainsi que des astuces pour r\u00e9ussir votre salade et des suggestions d\u2019autres salades d\u2019hiver.\nTable des mati\u00e8res\n1\nLe c\u00e9leri rave : un l\u00e9gume riche en bienfaits\n2\nUne salade hivernale fra\u00eeche et savoureuse\n3\nPourquoi laisser reposer le c\u00e9leri rave dans la vinaigrette ?\n4\nSalade c\u00e9leri rave, pomme et miel\n5\nD\u2019autres salades d\u2019hiver \u00e0 d\u00e9couvrir\n6\nConclusion\nLe c\u00e9leri rave : un l\u00e9gume riche en bienfaits\nLe c\u00e9leri rave, parfois appel\u00e9 c\u00e9leri boule, est une vari\u00e9t\u00e9 de c\u00e9leri cultiv\u00e9e pour sa grosse racine. C\u2019est un l\u00e9gume de saison, id\u00e9al pour les mois d\u2019hiver, lorsque les autres l\u00e9gumes frais se font plus rares. Non seulement le c\u00e9leri rave est d\u00e9licieux, mais il poss\u00e8de \u00e9galement une valeur nutritionnelle impressionnante. Il est riche en fibres, ce qui aide \u00e0 la digestion et favorise la sati\u00e9t\u00e9, tout en \u00e9tant faible en calories. Il est \u00e9galement une excellente source de vitamine C, qui soutient le syst\u00e8me immunitaire, surtout pendant la saison froide. Son apport en potassium aide \u00e0 r\u00e9guler la pression art\u00e9rielle, tandis que ses antioxydants participent \u00e0 la protection contre les maladies cardiovasculaires.\nOutre ses qualit\u00e9s nutritionnelles, le c\u00e9leri rave a un go\u00fbt d\u00e9licat, l\u00e9g\u00e8rement sucr\u00e9 et terreux, qui se pr\u00eate parfaitement \u00e0 la pr\u00e9paration de salades fra\u00eeches. Bien qu\u2019il puisse \u00eatre consomm\u00e9 cru ou cuit, il est souvent plus appr\u00e9ci\u00e9 cru dans les salades. Il y garde toute sa texture croquante. Lorsqu\u2019il est r\u00e2p\u00e9 et laiss\u00e9 mariner dans une vinaigrette, le c\u00e9leri rave s\u2019attendrit l\u00e9g\u00e8rement, tout en absorbant les saveurs pour un r\u00e9sultat encore plus savoureux.\nUne salade hivernale fra\u00eeche et savoureuse\nCette recette de salade de c\u00e9leri rave, pomme et miel met en valeur le croquant du c\u00e9leri rave tout en apportant de la douceur gr\u00e2ce \u00e0 la pomme et au miel. Pour pr\u00e9parer cette salade, commencez par r\u00e2per finement le c\u00e9leri rave. Laissez-le ensuite reposer dans une vinaigrette \u00e0 base de vinaigre de cidre, de moutarde et d\u2019huile d\u2019olive. Ce temps de repos permet au c\u00e9leri d\u2019absorber les saveurs de la vinaigrette tout en devenant plus tendre et juteux. Une fois ce processus effectu\u00e9, ajoutez des tranches de pomme pour la touche de fra\u00eecheur et de sucr\u00e9, ainsi que du miel pour renforcer la douceur. Un peu de noix ou de graines peut aussi apporter du croquant suppl\u00e9mentaire.\nL\u2019un des secrets de cette recette r\u00e9side dans l\u2019\u00e9quilibre entre les saveurs. Le c\u00e9leri rave l\u00e9g\u00e8rement vinaigr\u00e9 et sucr\u00e9 se marie \u00e0 la perfection avec la pomme, qui apporte de la fra\u00eecheur et une l\u00e9g\u00e8re acidit\u00e9. Le miel, quant \u00e0 lui, contrebalance les notes plus piquantes de la vinaigrette et apporte une touche douce et subtile. Cette salade est non seulement savoureuse, mais aussi riche en nutriments. Elle est id\u00e9ale pour un d\u00e9jeuner l\u00e9ger ou une entr\u00e9e lors de vos repas d\u2019hiver.\nPourquoi laisser reposer le c\u00e9leri rave dans la vinaigrette ?\nLaisser le c\u00e9leri rave r\u00e2p\u00e9 mariner dans la vinaigrette avant de le servir est essentiel pour plusieurs raisons. Tout d\u2019abord, cela permet au c\u00e9leri de s\u2019attendrir. Elle fait ainsi ressortir des ar\u00f4mes plus subtils et rend la texture plus agr\u00e9able en bouche. De plus, le c\u00e9leri rave a tendance \u00e0 \u00eatre un peu sec et fibreux lorsqu\u2019il est consomm\u00e9 cru. En le laissant mariner, il devient plus juteux et savoureux. Ce processus d\u2019attendrissement apporte une dimension suppl\u00e9mentaire \u00e0 la salade, tout en am\u00e9liorant l\u2019\u00e9quilibre des saveurs.\nSalade c\u00e9leri rave, pomme et miel\n4.70\n/5 avec\n55\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de repos\n29\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nSalade\n300\ng\nde c\u00e9leri rave\nenv 1/4 de boule\n150\ng\nde carottes\nenv 2\n150\ng\nde pomme\n1\nVinaigrette\nle jus d\u2019un citron\n1\nc\u00e0s de moutarde \u00e0 l\u2019ancienne\n3\nc\u00e0s d\u2019huile d\u2019olive\nsel\npoivre\n1\nc\u00e0s de miel\nInstructions\nR\u00e2per les l\u00e9gumes et la pomme.\nM\u00e9langer tous les ingr\u00e9dients de la vinaigrette.\nVerser la vinaigrette dans la salade et m\u00e9langez la salade.\nId\u00e9alement, attendre 30min avant de servir, pour que le c\u00e9leri rave devienne plus tendre et juteux\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nD\u2019autres salades d\u2019hiver \u00e0 d\u00e9couvrir\nSi vous aimez l\u2019id\u00e9e de salades d\u2019hiver fra\u00eeches et nourrissantes, voici quelques autres recettes \u00e0 tester :\nSalade d\u2019hiver au halloumi et pamplemousse\n. Une salade \u00e0 la fois douce et acidul\u00e9e, avec la richesse du halloumi grill\u00e9 et la fra\u00eecheur du pamplemousse.\nSalade d\u2019hiver noix de p\u00e9can, betterave et roquefort\n. Une combinaison parfaite de betterave sucr\u00e9e, de noix de p\u00e9can croquantes et de roquefort cr\u00e9meux pour un m\u00e9lange savoureux et raffin\u00e9.\nSalade \u00e9pinards, agrumes et fenouil\n. Une salade l\u00e9g\u00e8re et pleine de fra\u00eecheur, id\u00e9ale pour apporter un peu de l\u00e9g\u00e8ret\u00e9 pendant la saison froide.\nCes salades, tout comme celle \u00e0 base de c\u00e9leri rave, utilisent des produits de saison et apportent une touche de fra\u00eecheur aux repas hivernaux. Elles sont parfaites pour enrichir vos menus d\u2019hiver tout en maintenant une alimentation \u00e9quilibr\u00e9e et pleine de saveurs.\nConclusion\nLa salade de c\u00e9leri rave, pomme et miel est une recette simple et savoureuse. Elle met en valeur les bienfaits du c\u00e9leri rave tout en apportant de la fra\u00eecheur et de la douceur \u00e0 vos repas d\u2019hiver. Son c\u00f4t\u00e9 croquant et sa vinaigrette savoureuse en font un plat appr\u00e9ci\u00e9 de tous, et sa pr\u00e9paration rapide en fait une option pratique pour vos repas quotidiens. N\u2019h\u00e9sitez pas \u00e0 laisser mariner le c\u00e9leri rave pour obtenir une texture plus agr\u00e9able et une explosion de saveurs. Et si vous aimez les salades d\u2019hiver, explorez \u00e9galement d\u2019autres recettes comme celles \u00e0 base de halloumi, de betterave ou d\u2019\u00e9pinards pour varier les plaisirs tout au long de la saison.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nCarotte\n,\nC\u00e9leri Rave\n,\nHiver\n,\nPlats & Accompagnements\n,\nPomme\n,\nSalades\nTags:\nsalade\nSalade croquante de c\u00e9leri sauce gingembre : une recette fra\u00eeche et piquante !\nGalettes de brocoli au parmesan et mozzarella : croustillantes et irr\u00e9sistibles !\n4.70 from 55 votes (\n55 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

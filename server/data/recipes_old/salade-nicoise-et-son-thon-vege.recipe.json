@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Salade Ni\u00e7oise et son Thon V\u00e9g\u00e9",
+    "description": "Une revisite de la salade ni\u00e7oise avec une pr\u00e9paration aux pois chiches qui remplace le thon.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "salade ni\u00e7oise",
+      "thon v\u00e9g\u00e9",
+      "faux thon",
+      "pois chiche thon",
+      "salade ni\u00e7oise vege",
+      "sans thon",
+      "miso",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/salade-nicoise-1-of-1.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Esprit Veggie / Free The Pickle",
+    "notes": [
+      "Si certains produits ne sont plus en saison, n'h\u00e9sitez pas \u00e0 les remplacer. Les f\u00e8ves peuvent \u00eatre remplac\u00e9es par des haricots verts. Et les artichauts violets, tout simplement supprim\u00e9s !",
+      "Astuce anti-gapsi : utiliser l'aquafaba de votre bocal de pois chiche pour r\u00e9aliser une mayonnaise vegan."
+    ],
+    "slug": "salade-nicoise-et-son-thon-vege",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/salade-nicoise-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/25/salade-nicoise-et-son-thon-vege/",
+    "image": "images/salade-nicoise-et-son-thon-vege.webp",
+    "createdAt": "2026-02-09T21:22:57.827875",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 862.2,
+      "protein": 43.3,
+      "fat": 35.5,
+      "carbs": 98.9,
+      "fiber": 35.6,
+      "confidence": "medium",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 14,
+      "totalIngredients": 16,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pois_chiche_cuits",
+      "name": "pois chiche cuits",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "grossi\u00e8rement \u00e9cras\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "cooked chickpeas"
+    },
+    {
+      "id": "feuille_nori",
+      "name": "feuille nori",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Nori sheet"
+    },
+    {
+      "id": "oignon_nouveau",
+      "name": "oignon nouveau",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "finement \u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Spring onion"
+    },
+    {
+      "id": "capres",
+      "name": "c\u00e2pres",
+      "quantity": 5.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": "finement hach\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "mayonnaise",
+      "name": "mayonnaise",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mayonnaise"
+    },
+    {
+      "id": "jus_citron",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "oeufs_durs",
+      "name": "\u0153ufs durs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hard-boiled eggs"
+    },
+    {
+      "id": "tomates",
+      "name": "tomates",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9es en quartiers",
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "poivron_vert",
+      "name": "poivron vert",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en petits d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "green bell pepper"
+    },
+    {
+      "id": "concombre",
+      "name": "concombre",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en petits d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "jeunes_feves",
+      "name": "jeunes f\u00e8ves",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9coss\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Broad beans"
+    },
+    {
+      "id": "coeurs_artichauts_violets",
+      "name": "c\u0153urs artichauts violets",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Purple artichoke hearts"
+    },
+    {
+      "id": "feuilles_basilic",
+      "name": "feuilles basilic",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": "hach\u00e9es",
+      "notes": "7-8 feuilles",
+      "optional": false,
+      "name_en": "Basil leaves"
+    },
+    {
+      "id": "olives_noires",
+      "name": "olives noires",
+      "quantity": 1.0,
+      "unit": "handful",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "Black olives"
+    },
+    {
+      "id": "gousse_ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "fleur_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    }
+  ],
+  "tools": [
+    "Saladier",
+    "Mixeur (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "prep_nori",
+      "action": "Casser la feuille de nori en petits morceaux. Vous pouvez les passer rapidement au mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "thon_vege",
+      "uses": [
+        "feuille_nori"
+      ],
+      "produces": "nori_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ecraser_pois_chiches",
+      "action": "Dans un bol, \u00e9craser grossi\u00e8rement les pois chiches avec une fourchette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "thon_vege",
+      "uses": [
+        "pois_chiche_cuits"
+      ],
+      "produces": "pois_chiche_ecrases",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_thon_vege",
+      "action": "Ajouter tous les autres ingr\u00e9dients (nori, 1 oignon nouveau \u00e9minc\u00e9, c\u00e2pres, mayonnaise, jus de citron, sel, poivre) et m\u00e9langer bien. Go\u00fbter et ajuster l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "thon_vege",
+      "uses": [
+        "pois_chiche_ecrases",
+        "nori_emiette",
+        "oignon_nouveau",
+        "capres",
+        "mayonnaise",
+        "jus_citron",
+        "sel",
+        "poivre"
+      ],
+      "produces": "thon_vege_preparation",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_legumes",
+      "action": "Pr\u00e9parer tous les l\u00e9gumes (tomates, poivron, concombre, 1 oignon nouveau, f\u00e8ves, artichauts, basilic, olives) et les \u0153ufs durs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "tomates",
+        "poivron_vert",
+        "concombre",
+        "oignon_nouveau",
+        "jeunes_feves",
+        "coeurs_artichauts_violets",
+        "feuilles_basilic",
+        "olives_noires",
+        "oeufs_durs"
+      ],
+      "produces": "legumes_prepares",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "parfumer_saladier",
+      "action": "Frotter le saladier avec la gousse d'ail pour le parfumer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "gousse_ail"
+      ],
+      "produces": "saladier_parfume",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deposer_ingredients",
+      "action": "D\u00e9poser tous les ingr\u00e9dients pr\u00e9par\u00e9s de la salade dans le saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "legumes_prepares",
+        "saladier_parfume"
+      ],
+      "produces": "salade_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner_salade",
+      "action": "Verser un g\u00e9n\u00e9reux filet d'huile d'olive et saupoudrer de fleur de sel et de poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "salade_base",
+        "huile_olive",
+        "fleur_sel",
+        "poivre"
+      ],
+      "produces": "salade_assaisonnee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servir la salade accompagn\u00e9e du thon v\u00e9g\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "salade_assaisonnee",
+        "thon_vege_preparation"
+      ],
+      "produces": "salade_nicoise_thon_vege",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_nicoise_thon_vege",
+  "originalText": "Salade Ni\u00e7oise et son Thon V\u00e9g\u00e9 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 juin 2022\nSalade Ni\u00e7oise et son Thon V\u00e9g\u00e9\nAller \u00e0 la recette\nQui a vu cette recette de Salade Ni\u00e7oise et son Thon V\u00e9g\u00e9 dans\nle dernier num\u00e9ro d\u2019Esprit Veggie\n?\nCe n\u2019est plus un secret pour personne maintenant, j\u2019adore faire des thons v\u00e9g\u00e9 !\nEt, je sais, \u201cthon v\u00e9g\u00e9\u201d est un non-sens. Je devrais dire \u201cpois chiche imitation thon\u201d ou je ne sais quelle formule alambiqu\u00e9e. L\u2019id\u00e9e est l\u00e0. Faire une pr\u00e9paration qui remplace le thon. Et qu\u2019on peut utiliser dans nos plats !\nLe premier thon v\u00e9g\u00e9 (oui, j\u2019insiste) \u00e9tait en 2019.\nAvec un club sandwich qui avait rencontr\u00e9 beaucoup de succ\u00e8s\n. La recette tourne autour des pois chiches, c\u00e2pres, cornichons et aneth ! Un d\u00e9lice\nEt puis r\u00e9cemment,\nj\u2019ai refait un sandwich au thon-v\u00e9g\u00e9\n. Mais cette fois en ajoutant des algues nori \u00e0 la pr\u00e9paration. Cela permet d\u2019apporter un go\u00fbt iod\u00e9. Et pareil, la recette a rencontr\u00e9 beaucoup de succ\u00e8s !\nDu coup, cette fois-ci, j\u2019ai eu envie de revisiter la salade ni\u00e7oise. Alors voici la recette. Si certains produits ne sont plus en saison, nh\u00e9sitez pas \u00e0 les remplacer. Les fevettes peuvent \u00eatre remplac\u00e9es par des haricots verts. Et les artichauts violets, tout simplement supprim\u00e9s !\nVous pouvez retrouver la Salade Ni\u00e7oise et son Thon V\u00e9g\u00e9\ndans le dernier num\u00e9ro d\u2019Esprit Veggie\n. Un magazine que j\u2019adore. Et avec lequel je collabore depuis plusieurs ann\u00e9es maintenant !\nSalade Ni\u00e7oise et son Thon V\u00e9g\u00e9\n4.49\n/5 avec\n90\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le thon v\u00e9g\u00e9\n200\ng\nde pois chiche cuits grossi\u00e8rement \u00e9cras\u00e9s\n1\nfeuille de nori \u00e9miett\u00e9e\n1\noignon nouveau finement \u00e9minc\u00e9\n5\nc\u00e0c de c\u00e2pres finement hach\u00e9es\n50\ng\nde mayonnaise\n1\nc\u00e0s de jus de citron\nsel\npoivre\nPour la salade\n2\n\u0153ufs durs\n3 to\nmates coup\u00e9es en quartiers\n\u00bd\npoivron vert en petits d\u00e9s\n\u00bd\nconcombre en petits d\u00e9s\n1\noignon nouveau \u00e9minc\u00e9\n60\ng\nde jeunes f\u00e8ves \u00e9coss\u00e9es\n2\ncoeurs artichauts violets\n7-8\nfeuilles de basilic hach\u00e9es\n1\npoign\u00e9e d\u2019olives noires\n1\ngousse d\u2019ail\n1\nfilet d\u2019huile d\u2019olive\nfleur de sel\npoivre\nInstructions\nPour r\u00e9aliser le thon\nCommencer par casser les feuilles de nori en petits morceaux. Vous pouvez les passer rapidement au mixeur.\nDans un bol, \u00e9craser grossi\u00e8rement les pois chiches avec une fourchette. Puis ajoutez tous les autres ingr\u00e9dients et m\u00e9langez bien. Go\u00fbter et ajuster l\u2019assaisonnement.\nPour faire la salade\nPr\u00e9parer tous les l\u00e9gumes.\nFrotter le saladier avec la gousse d\u2019ail pour le parfumer, puis d\u00e9poser tous les ingr\u00e9dients dedans.\nVerser un g\u00e9n\u00e9reux filet d\u2019huile d\u2019olive et saupoudrer de fleur de sel.\nAstuce anti-gapsi : utiliser l\u2019aquafaba de votre bocal de pois chiche pour r\u00e9aliser une mayonnaise vegan.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nPrintemps\n,\nSalades\nTags:\nfaux thon\n,\nmiso\n,\npois chiche thon\n,\nsalade ni\u00e7oise\n,\nsalade ni\u00e7oise vege\n,\nsans thon\n,\nthon v\u00e9g\u00e9\nSalsa \u00e0 la Fraise et Coriandre\nClafoutis \u00e0 la coco et fruits rouges\n4.49 from 90 votes (\n90 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

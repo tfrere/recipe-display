@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "title": "Poires Feuilletées",
+    "description": "Ces poires feuilletées sont la définition même du dessert simple, rapide et délicieux (et super stylé aussi). Laissez vous séduire par le fondant des poires à la vanille et le croustillant de la pâte feuilletée sucrée.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "poire",
+      "feuilleté",
+      "vanille",
+      "dessert facile",
+      "dessert fruit"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Feuilleté-poires-1-of-1-scaled.jpg",
+    "nationality": null,
+    "author": "Daniela Bourey",
+    "source": "Free The Pickle",
+    "notes": [
+      "Utiliser des poires bio ni trop mûres ni trop dures.",
+      "On peut utiliser une pâte feuilletée maison ou industrielle.",
+      "Personne ne vous en voudra si les bords ne sont pas parfaitement réguliers."
+    ],
+    "slug": "poires-feuilletees",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Feuilleté-poires-1-of-1-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/03/08/poires-feuilletees/",
+    "image": "images/poires-feuilletees.webp",
+    "createdAt": "2026-02-09T19:49:01.537865",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 125.6,
+      "protein": 2.9,
+      "fat": 4.1,
+      "carbs": 20.6,
+      "fiber": 2.8,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pears",
+      "name": "poires bio",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pears"
+    },
+    {
+      "id": "puff_pastry",
+      "name": "pâte feuilletée",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "puff pastry"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "brown_sugar",
+      "name": "sucre cassonade",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "battu",
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "powdered_sugar",
+      "name": "sucre glace",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    }
+  ],
+  "tools": [
+    "Plaque de four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wash_cut_pears",
+      "action": "Laver et couper les poires en 2 puis en retirer le coeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pears"
+      ],
+      "produces": "halved_pears",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "score_pears",
+      "action": "Faire 5 incisions assez profondes sur chaque demi-poire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "halved_pears"
+      ],
+      "produces": "scored_pears",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_pastry",
+      "action": "Étaler la pâte feuilletée sur un plan de travail fariné.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "puff_pastry",
+        "flour"
+      ],
+      "produces": "rolled_pastry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_pears",
+      "action": "Déposer les demi-poires sur la pâte feuilletée, face bombée vers le haut.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "scored_pears",
+        "rolled_pastry"
+      ],
+      "produces": "pears_on_pastry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_pastry",
+      "action": "Découper la pâte tout autour de chaque fruit, en gardant un rebord entre 0,5 et 1cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pears_on_pastry"
+      ],
+      "produces": "cut_pastry_pears",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_baking_sheet",
+      "action": "Déposer les 4 feuilletés en forme de poires sur une plaque de four recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_pastry_pears"
+      ],
+      "produces": "pastries_on_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_leaves",
+      "action": "Avec le reste de pâte, découper des petites feuilles et dessiner les veines avec un couteau. Souder deux petites feuilles par feuilleté.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rolled_pastry"
+      ],
+      "produces": "pastry_leaves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "attach_leaves",
+      "action": "Attacher les feuilles de pâte aux feuilletés.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pastries_on_sheet",
+        "pastry_leaves"
+      ],
+      "produces": "pastries_with_leaves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_vanilla_egg",
+      "action": "Badigeonner chaque poire d'extrait de vanille et la pâte d'œuf battu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pastries_with_leaves",
+        "vanilla_extract",
+        "egg"
+      ],
+      "produces": "brushed_pastries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_brown_sugar",
+      "action": "Saupoudrer le tout (pâte et fruit) de sucre cassonade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "brushed_pastries",
+        "brown_sugar"
+      ],
+      "produces": "sugared_pastries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner et cuire environ 20min.",
+      "duration": "PT20M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sugared_pastries"
+      ],
+      "produces": "baked_pastries",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_powdered_sugar",
+      "action": "Saupoudrer de sucre glace à la sortie du four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_pastries",
+        "powdered_sugar"
+      ],
+      "produces": "poires_feuilletees",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "poires_feuilletees",
+  "originalText": "Poires Feuilletées - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 mars 2020\nPoires Feuilletées\nOn dit souvent que les meilleures choses sont les plus simples. Sachez qu’il n’y a pas plus simple que ces poires feuilletées. L’idée de cette recette vient tout droit de Pinterest, vous l’aurez devinez j’en suis sûre. J’adore cette application, c’est vraiment une mine d’or question inspiration, en plus il y en a vraiment pour tous les goûts. Et ça rend super bien, non? Bien sûr plus vous vous appliquerez plus ce sera réussi mais entre nous, personne ne vous en voudra si les bords ne sont pas parfaitement réguliers de la même largeur :p\nJe vous conseille d’utiliser des poires ni trop mûres ni trop dures, de façon à ce que les poires se tiennent bien tout en ayant la consistance parfaite. Pour la pâte feuilleté, idéalement vous pouvez utilisez une pâte feuilletée maison mais bon, je ne vais pas vous mentir pour cette recette j’ai utilisé de la pâte feuilletée industrielle (et oui je n’ai pas toujours des morceaux de pâte feuilletée dans mon congélo, ça part bien trop vite ces trucs là… à raison d’une quiche/tarte par semaine, j’ai du mal à tenir la cadence).\nDans le même esprit, retrouvez nos autres recettes de dessert faciles, simples et rapides à réaliser comme par exemple nos\nfondants au chocolat express\nou encore notre\ncrumble pomme miel et noix de pécan\n.\nDaniela Bourey\nDaniela\nCes poires feuilletées sont la définition même du dessert simple, rapide et délicieux (et super stylé aussi). Laissez vous séduire par le fondant des poires à la vanille et le croustillant de la pâte feuilletée sucrée.\n4.51\n/5 avec\n118\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\npersonnes\nIngrédients\n1x\n2x\n3x\n2\npoires bio ni trop mûre ni trop dures\nune pâte feuilletée\n1\nc-à-s d’extrait de vanille\n2\nc-à-s de sucre cassonade\n1\noeuf battu\ndu sucre glace pour la finition\nInstructions\nLaver et couper les poires en 2 puis en retirer le coeur.\nFaire 5 incisions assez profonde sur chaque demi-poire.\nÉtaler la pâte feuilletée sur votre plan de travail fariné.\nDéposer les poires sur la pâte feuilletée, face bombée vers le haut et découper la pâte tout autour du fruit (c’est là le moment où il faut s’appliquer), tout en gardant un rebord entre 0,5 et 1cm.\nDéposer les 4 feuilletés en forme de poires sur la plaque de votre four recouverte de papier cuisson.\nAvec le reste de pâte, découper des petites feuilles et dessiner les veines grâce à un couteau. Souder deux petites feuilles par feuilleté.\nPréchauffer le four à 180°.\nBadigeonner la poire d’extrait de vanille et la pâte d’œuf battu, et enfin saupoudrer le tout (pâte et fruit ) de sucre cassonade.\nEnfourner et cuire environ 20 minutes.\nSaupoudrer de sucre glace et c’est prêt !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nPoire\n,\nRecettes Sucrées\n,\nTartes et Galettes\nTags:\nfeuilletés\n,\ngateau poire facile\n,\nidée de dessert fruit\n,\nidée dessert poire\n,\nidée recette poire\n,\npoires\n,\npoires feuilletées\n,\nque faire avec des poires\n,\nvanille\nBarres Cajou Coco (Véganes et Sans gluten)\nMoelleux au Chocolat sans Farine et sans Beurre\n5 thoughts on “Poires Feuilletées”\nLadyMilonguera\ndit :\n9 mars 2020 à 14 h 33 min\nVraiment très sympa ces poires feuilletées !\nchargement…\nRépondre\nfraboros\ndit :\n16 mars 2020 à 16 h 27 min\nTrès sympa : je confirme . Elles sont faciles à faire et ce dessert léger a été très  apprécié .\nchargement…\nRépondre\nFree The Pickle\ndit :\n18 mars 2020 à 11 h 14 min\nMerci 🙂 on est super heureuses que la recette vous plaise 🙂\nchargement…\nRépondre\nCoutant annie\ndit :\n7 novembre 2020 à 13 h 43 min\nAvec des poires comice juste à point, c’est un vrai delice. Appetissant, léger, miam… Merci Daniela.\nchargement…\nRépondre\nFree The Pickle\ndit :\n10 novembre 2020 à 14 h 51 min\nTrop heureuse que la recette te plaise 🙂\nchargement…\nRépondre\n4.51 from 118 votes (\n117 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "title": "Feuillet\u00e9s de feta croustillants",
+    "description": "Voici ma derni\u00e8re petite merveilleuse trouvaille : les feuillet\u00e9s de feta croustillants ! Rien de plus simple \u00e0 pr\u00e9parer !",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "f\u00eata",
+      "filo",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Feta-croustillante-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ils se mangent aussi bien seule, en entr\u00e9e, ou pour agr\u00e9menter une salade.",
+      "Aucune technique de pliage n'est requise. Il faut juste savoir plier en carr\u00e9 !",
+      "Pour ceux qui aiment la feta grill\u00e9e, vous avez trouv\u00e9 votre nouvelle recette pr\u00e9f\u00e9r\u00e9e !",
+      "Et pour d'autres recettes dans le m\u00eame esprit que ces Feuillet\u00e9s de feta croustillants, je vous conseille : la feta r\u00f4tie au four ou les samoussas aux blettes et feta !"
+    ],
+    "slug": "feuilletes-de-feta-croustillants",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Feta-croustillante-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/21/feuilletes-de-feta-croustillants/",
+    "image": "images/feuilletes-de-feta-croustillants.webp",
+    "createdAt": "2026-02-09T21:32:40.436350",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 15.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 0,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "feta",
+      "name": "bloc de feta",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "200g",
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "filo",
+      "name": "feuilles de filo",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "honey",
+      "name": "miel",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_feta",
+      "action": "Couper le bloc de feta dans l'\u00e9paisseur, puis en deux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta"
+      ],
+      "produces": "feta_pieces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_filo",
+      "action": "\u00c9taler une feuille de filo et la badigeonner d'huile d'olive \u00e0 l'aide d'un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "filo",
+        "olive_oil"
+      ],
+      "produces": "oiled_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_filo",
+      "action": "Plier la feuille en deux et poser un bloc de feta dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oiled_filo",
+        "feta_pieces"
+      ],
+      "produces": "folded_filo_with_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wrap_feta",
+      "action": "Replier la feuille pour bien entourer le bloc de feta et former un carr\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "folded_filo_with_feta"
+      ],
+      "produces": "wrapped_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_wrapped",
+      "action": "D\u00e9poser les blocs sur une plaque de cuisson et les badigeonner d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "wrapped_feta",
+        "olive_oil"
+      ],
+      "produces": "oiled_wrapped_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_sesame",
+      "action": "Saupoudrer les feuillet\u00e9s de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oiled_wrapped_feta",
+        "sesame_seeds"
+      ],
+      "produces": "sesame_coated_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner pendant 15min.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sesame_coated_feta"
+      ],
+      "produces": "baked_feta",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_honey",
+      "action": "Ajouter un filet de miel sur les feuillet\u00e9s avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_feta",
+        "honey"
+      ],
+      "produces": "feuilletes_feta_croustillants",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "feuilletes_feta_croustillants",
+  "originalText": "Feuillet\u00e9s de feta croustillants - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 septembre 2022\nFeuillet\u00e9s de feta croustillants\nAller \u00e0 la recette\nVoici ma derni\u00e8re petite merveilleuse trouvaille : les feuillet\u00e9s de feta croustillants !\nRien de plus simple \u00e0 pr\u00e9parer !\nVous n\u2019aurez besoin que d\u2019une poign\u00e9e d\u2019ingr\u00e9dients. Pour vous en faire la liste, il vous faudra un bloc de feta, 4 feuilles de filo, de l\u2019huile, du s\u00e9same et du miel.\nPour ceux qui aiment la feta grill\u00e9e, vous avez trouv\u00e9 votre nouvelle recette pr\u00e9f\u00e9r\u00e9e !\nIls sont juste parfaits ces feuillet\u00e9s !\nCette recette est rapide et simple \u00e0 r\u00e9aliser. Ils se mangent aussi bien seule, en entr\u00e9e, ou pour agr\u00e9menter une salade.\nAucune technique de pliage n\u2019est requise. Il faut juste savoir plier en carr\u00e9 ! Normalement, on devrait tous s\u2019en sortir !\nEt cette recette est vraiment trop bonne.\nLes feuilles de filo au four sont juste magiques. Comme pour\nla spanakopita\n, elles apportent un croustillant in\u00e9galable. La feta, chauff\u00e9e au four, devient fondante et incroyablement r\u00e9confortante. Le s\u00e9same apporte ce petit parfum en plus. Et la touche de miel apporte une touche de gourmandise et de douceur qui rend heureux !\nPerso, c\u2019est ce que j\u2019appelle une recette parfaite ! Pas vous ? Et pour d\u2019autres recettes dans le m\u00eame esprit que ces Feuillet\u00e9s de feta croustillants, je vous conseille :\nla feta r\u00f4tie au four\nou\nles samoussas aux blettes et feta\n!\nFeuillet\u00e9s de feta croustillants\n4.47\n/5 avec\n98\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n4\nfeuillet\u00e9s\nIngr\u00e9dients\n1x\n2x\n3x\n1\nbloc de feta de 200g\n4\nfeuilles de filo\nhuile d\u2019olive\ngraines de s\u00e9same\nmiel\nInstructions\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nCouper le bloc de feta dans l\u2019\u00e9paisseur, puis en deux.\nEtaler une feuille de filo devant vous et la badigeonner d\u2019huile d\u2019olive \u00e0 l\u2019aide d\u2019un pinceau.\nPlier la feuille en 2 et poser un bloc de feta dessus.\nReplier la feuille pour bien entourer le bloc de feta et former un carr\u00e9.\nRecommencer pour les autres blocs.\nD\u00e9poser les blocs sur une plaque de cuisson et badigeonner d\u2019huile d\u2019olive. Saupoudrer de graines de s\u00e9same.\nEnfourner 15min.\nAjouter un filet de miel sur les feuillet\u00e9s avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nf\u00eata\n,\nfilo\nGalettes Boulgour Courgette Comt\u00e9\nPierogies Feta Epinards\n1 thought on \u201cFeuillet\u00e9s de feta croustillants\u201d\nALCAIDE\ndit\u00a0:\n11 juillet 2023 \u00e0 18 h 05 min\nSuper recette, tr\u00e8s simple, excellente avec une petite salade au vinaigre balsamique\nchargement\u2026\nR\u00e9pondre\n4.47 from 98 votes (\n97 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

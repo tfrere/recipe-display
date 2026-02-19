@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "title": "Mini yaourts glac\u00e9s au miel, fruits rouges et granola",
+    "description": "Des mini bouch\u00e9es de yaourts glac\u00e9s au miel reposant sur un lit de granola et avec quelques filets de confiture de fruits rouges gourmandes ! Un parfait m\u00e9lange frais et cr\u00e9meux avec une pointe de croustillant et de douceur fruit\u00e9e !",
+    "servings": 12,
+    "prepTime": "PT30M",
+    "cookTime": "PT23M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "granola",
+      "miel",
+      "mini bouch\u00e9es glac\u00e9es",
+      "snack",
+      "yaourt",
+      "yaourt glac\u00e9",
+      "fruits rouges",
+      "dessert glac\u00e9",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Mini-yaourt-miel-5-of-10.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez r\u00e9aliser votre propre confiture de fruits rouges comme dans la recette. Ou alors utiliser une confiture du commerce (aux fruits rouges ou autres). Idem pour le granola, vous \u00eates libres de suivre la recette ou bien d'utiliser un granola d\u00e9j\u00e0 tout pr\u00eat\u2026",
+      "Sortir du cong\u00e9lateur 5 \u00e0 10 min avant de les d\u00e9guster."
+    ],
+    "slug": "mini-yaourts-glaces-au-miel-fruits-rouges-et-granola",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Mini-yaourt-miel-5-of-10.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/20/mini-yaourts-glaces-au-miel-fruits-rouges-et-granola/",
+    "image": "images/mini-yaourts-glaces-au-miel-fruits-rouges-et-granola.jpg",
+    "createdAt": "2026-02-09T21:15:38.677923",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 203.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 163.3,
+      "protein": 5.1,
+      "fat": 8.0,
+      "carbs": 17.3,
+      "fiber": 2.9,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 10,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "mix_noix",
+      "name": "mix de noix",
+      "quantity": 85.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "noisettes, amandes et noix de p\u00e9can",
+      "optional": false,
+      "name_en": "mixed nuts"
+    },
+    {
+      "id": "cannelle",
+      "name": "cannelle",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "huile_coco",
+      "name": "huile de coco",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": "fondue",
+      "notes": null,
+      "optional": false,
+      "name_en": "Coconut oil"
+    },
+    {
+      "id": "miel_granola",
+      "name": "miel de la Champagne",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le granola",
+      "optional": false,
+      "name_en": "Champagne honey"
+    },
+    {
+      "id": "fruits_rouges",
+      "name": "fruits rouges",
+      "quantity": 225.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "framboises, myrtilles, m\u00fbres, groseilles",
+      "optional": false,
+      "name_en": "red berries"
+    },
+    {
+      "id": "miel_confiture",
+      "name": "miel de la Champagne",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la confiture",
+      "optional": false,
+      "name_en": "Champagne honey"
+    },
+    {
+      "id": "yaourt_grec",
+      "name": "yaourt grec",
+      "quantity": 360.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "miel_yaourt",
+      "name": "miel de la Champagne",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le yaourt glac\u00e9",
+      "optional": false,
+      "name_en": "Champagne honey"
+    },
+    {
+      "id": "miel_coeurs",
+      "name": "miel de la Champagne",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour les coeurs de miel",
+      "optional": false,
+      "name_en": "Champagne honey"
+    }
+  ],
+  "tools": [
+    "moule en silicone (pour mini yaourts glac\u00e9s)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_granola",
+      "action": "Dans un saladier, m\u00e9langer les flocons d'avoine, les noix, la cannelle et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "flocons_avoine",
+        "mix_noix",
+        "cannelle",
+        "sel"
+      ],
+      "produces": "dry_granola_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet_granola",
+      "action": "Incorporer l'huile de coco fondue et le miel jusqu'\u00e0 ce que tout soit bien m\u00e9lang\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "dry_granola_mix",
+        "huile_coco",
+        "miel_granola"
+      ],
+      "produces": "granola_mix",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "spread_granola",
+      "action": "R\u00e9partir le m\u00e9lange sur une plaque recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "granola_mix"
+      ],
+      "produces": "spread_granola",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_granola",
+      "action": "Enfourner et cuire pendant 15min jusqu'\u00e0 ce que le granola soit bien dor\u00e9, remuer \u00e0 mi-cuisson.",
+      "duration": "PT15M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "granola",
+      "uses": [
+        "spread_granola"
+      ],
+      "produces": "baked_granola",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "bien dor\u00e9"
+    },
+    {
+      "id": "cool_granola",
+      "action": "M\u00e9langer \u00e0 la sortie du four, laisser refroidir compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "granola",
+      "uses": [
+        "baked_granola"
+      ],
+      "produces": "cooled_granola",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "cook_jam",
+      "action": "Dans une casserole, verser les fruits rouges et le miel et porter \u00e0 \u00e9bullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "confiture",
+      "uses": [
+        "fruits_rouges",
+        "miel_confiture"
+      ],
+      "produces": "boiling_fruit_mix",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "simmer_jam",
+      "action": "R\u00e9duire le feu et laisser mijoter pendant 8min jusqu'\u00e0 ce que la pr\u00e9paration \u00e9paississe comme de la confiture.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "confiture",
+      "uses": [
+        "boiling_fruit_mix"
+      ],
+      "produces": "thickened_jam",
+      "requires": [],
+      "visualCue": "\u00e9paississe comme de la confiture"
+    },
+    {
+      "id": "cool_jam",
+      "action": "Verser dans un petit pot en verre et laisser refroidir \u00e0 temp\u00e9rature ambiante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "confiture",
+      "uses": [
+        "thickened_jam"
+      ],
+      "produces": "cooled_jam",
+      "requires": [],
+      "visualCue": "temp\u00e9rature ambiante"
+    },
+    {
+      "id": "mix_frozen_yogurt",
+      "action": "Dans un saladier, m\u00e9langer le yaourt grec, le lait et le miel jusqu'\u00e0 incorporation (\u00e9viter de trop m\u00e9langer).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "yaourt_grec",
+        "lait",
+        "miel_yaourt"
+      ],
+      "produces": "frozen_yogurt_mix",
+      "requires": [],
+      "visualCue": "incorporation"
+    },
+    {
+      "id": "layer_granola_base",
+      "action": "Dans des moules en silicone, tapisser le fond de granola.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "cooled_granola"
+      ],
+      "produces": "molds_with_granola_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pour_yogurt",
+      "action": "Verser le m\u00e9lange de yaourt dans les moules.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "frozen_yogurt_mix",
+        "molds_with_granola_base"
+      ],
+      "produces": "molds_with_yogurt",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_honey_centers",
+      "action": "D\u00e9poser une \u00bd cac de miel au centre de chaque moule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "miel_coeurs",
+        "molds_with_yogurt"
+      ],
+      "produces": "molds_with_honey_centers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_jam_swirls",
+      "action": "Verser quelques filets de confiture et dessiner des petits tourbillons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "cooled_jam",
+        "molds_with_honey_centers"
+      ],
+      "produces": "molds_with_jam_swirls",
+      "requires": [],
+      "visualCue": "petits tourbillons"
+    },
+    {
+      "id": "sprinkle_granola_top",
+      "action": "Saupoudrer de granola.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "cooled_granola",
+        "molds_with_jam_swirls"
+      ],
+      "produces": "assembled_mini_yogurts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze",
+      "action": "Placer au cong\u00e9lateur pendant au moins 3h.",
+      "duration": "PT3H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "assembled_mini_yogurts"
+      ],
+      "produces": "frozen_mini_yogurts",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "frozen_mini_yogurts",
+  "originalText": "Mini yaourts glac\u00e9s au miel, fruits rouges et granola - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 mai 2022\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\nAcc\u00e9der directement \u00e0 la recette\nL\u2019air est lourd, les temp\u00e9ratures limite caniculaires (je supporte mal la chaleur) et les premiers orages estivaux font leur apparition (par contre j\u2019adore l\u2019orage). Il est clairement temps de pr\u00e9parer les premiers go\u00fbters glac\u00e9s de l\u2019ann\u00e9e. Il y a quelques mois des petites barres glac\u00e9es avec une base de granola m\u2019avait fait de l\u2019\u0153il. De mon c\u00f4t\u00e9, \u00e9tant une fan de yaourt glac\u00e9, une petite id\u00e9e commen\u00e7ait doucement \u00e0 germer dans ma t\u00eate. Ma petite poulette adorant le miel, je savais que cet ingr\u00e9dient ferait une belle addition \u00e0 la recette. Et c\u2019est comme \u00e7a que petit \u00e0 petit sont n\u00e9s ces mini yaourts glac\u00e9s au miel, fruits rouges et granola !!!\nJ\u2019ai utilis\u00e9 le\nMiel de la Champagne\ndes\nCompagnons du miel\n.\u00a0Ce\u00a0miel \u00e0 la robe claire\u00a0restitue toute la richesse et les ar\u00f4mes de la flore champenoise. Il est fondant et d\u00e9licieusement velout\u00e9, le\u00a0miel de la Champagne\u00a0charmera par ses\u00a0saveurs l\u00e9g\u00e8res et ses notes discr\u00e8tement fruit\u00e9es.\nConcernant les \u00e9tapes de r\u00e9alisation, vous avez le choix. Vous pouvez r\u00e9aliser votre propre confiture de fruits rouges comme dans la recette. Ou alors utiliser une confiture du commerce (aux fruits rouges ou autres). Idem pour le granola, vous \u00eates libres de suivre la recette ou bien d\u2019utiliser un granola d\u00e9j\u00e0 tout pr\u00eat\u2026\nPour les amoureux du miel, retrouvez nos autres recettes r\u00e9alis\u00e9es pour les Compagnons du Miel. Les\nbrochettes de Halloumi au miel, herbes fra\u00eeches et citron\n, ou encore la\nsalade de vermicelles de riz \u00e0 la sauce miel gingembre cacahu\u00e8te\n.\nMinis yaourts glac\u00e9s au miel, fruits rouges et granola\nDaniela\nDes mini bouch\u00e9es de yaourts glac\u00e9s au miel reposant sur un lit de granola et avec quelques filets de confiture de fruits rouges gourmandes ! Un parfait m\u00e9lange frais et cr\u00e9meux avec une pointe de croustillant et de douceur fruit\u00e9e !\n4.62\n/5 avec\n52\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nTemps de repos\n3\nheures\nh\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n12\nportions\nIngr\u00e9dients\n1x\n2x\n3x\nGranola :\n180\ng\nde flocons d\u2019avoine\n85\ng\nde mix de noix\nnoisettes, amandes et noix de p\u00e9can\n\u00bd\ncac de cannelle\n1\npinc\u00e9e de sel\n3\ncas d\u2019huile de coco fondue\n3\ncas de miel de la Champagne\nConfiture :\n225\ng\nde fruits rouges\nframboises, myrtilles, m\u00fbres, groseilles\n50\ng\nde miel de la Champagne\nYaourt glac\u00e9 :\n360\ng\nde yaourt grec\n60\nml\nde lait\n3\ncas de miel de la Champagne + 50g pour les coeurs de miel\nInstructions\nPr\u00e9chauffer le four \u00e0 175\u00b0C. Dans un saladier, m\u00e9langer les flocons d'avoine, les noix, la cannelle et le sel. Incorporer l'huile de coco et le miel jusqu'\u00e0 ce que tout soit bien m\u00e9lang\u00e9. R\u00e9partir le m\u00e9lange sur une plaque recouverte de papier cuisson. Enfourner et cuire pendant 15 \u00e0 20 minutes jusqu'\u00e0 ce que le granola soit bien dor\u00e9, remuer \u00e0 mi-cuisson. M\u00e9langer \u00e0 la sortie du four, laisser refroidir compl\u00e8tement.\nDans une casserole, verser les fruits rouges et le miel et porter \u00e0 \u00e9bullition puis r\u00e9duire le feu et laisser mijoter pendant 8 \u00e0 10 minutes. La pr\u00e9paration va \u00e9paissir comme de la confiture. Verser dans un petit pot en verre et laisser refroidir \u00e0 temp\u00e9rature ambiante.\nDans un saladier, m\u00e9langer le yaourt grec, le lait et le miel jusqu\u2019\u00e0 incorporation (\u00e9viter de trop m\u00e9langer). Puis proc\u00e9der au montage : dans des moules en silicone, tapisser le fond de granola puis verser le m\u00e9lange de yaourt. D\u00e9poser une \u00bd cac de miel au centre, verser quelques filets de confitures et dessiner des petits tourbillons et saupoudrer de granola.\nPlacer au cong\u00e9lateur pendant au moins trois heures. Sortir du cong\u00e9lateur 5 \u00e0 10 min avant de les d\u00e9guster.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nCookies Biscuits et Mignardises\n,\n\u00c9t\u00e9\n,\nFraise\n,\nFramboise\n,\nMyrtille\n,\nNon class\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ngranola\n,\nmiel\n,\nmini bouch\u00e9es glac\u00e9es\n,\nsnack\n,\nyaourt\n,\nyaourt glac\u00e9\nMocktail rafra\u00eechissant Sober Rum Concombre\nWraps prot\u00e9in\u00e9s aux lentilles corail\n4.62 from 52 votes (\n52 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "title": "Poires au four comme des Pommes de Terre",
+    "description": "Poires fondantes, douces, et relev\u00e9es par l'oignon et les herbes, id\u00e9ales pour accompagner vos plats.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "poire",
+      "accompagnement",
+      "four",
+      "v\u00e9g\u00e9tarien",
+      "poire au four",
+      "poire romarin"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Poires-au-four-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e pour MonBento.",
+      "Id\u00e9ales pour accompagner vos plats, vos r\u00f4tis v\u00e9g\u00e9."
+    ],
+    "slug": "poires-au-four-comme-des-pommes-de-terre",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Poires-au-four-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/16/poires-au-four-comme-des-pommes-de-terre/",
+    "image": "images/poires-au-four-comme-des-pommes-de-terre.webp",
+    "createdAt": "2026-02-09T20:36:26.068861",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 189.3,
+      "protein": 3.2,
+      "fat": 7.7,
+      "carbs": 28.0,
+      "fiber": 2.9,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 4,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pears",
+      "name": "poires conf\u00e9rences",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Conference pears"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "bay_leaves",
+      "name": "laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_fruits",
+      "action": "\u00c9plucher les poires et les pommes de terre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pears",
+        "potatoes"
+      ],
+      "produces": "peeled_pears_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_pears",
+      "action": "Couper les poires en 4, puis les \u00e9p\u00e9piner.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_pears_potatoes"
+      ],
+      "produces": "quartered_pears",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_potatoes",
+      "action": "Couper les pommes de terre en assez grosses frites (un peu plus fines que les poires).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_pears_potatoes"
+      ],
+      "produces": "cut_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_ingredients",
+      "action": "D\u00e9poser les poires et les pommes de terre dans un plat allant au four. Verser l'huile, ajouter les herbes, saler et poivrer. M\u00e9langer pour enrober.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "quartered_pears",
+        "cut_potatoes",
+        "red_onion",
+        "olive_oil",
+        "bay_leaves",
+        "rosemary",
+        "salt",
+        "pepper"
+      ],
+      "produces": "mixed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner \u00e0 mi-hauteur pour 45min. Remuer \u00e0 mi-cuisson.",
+      "duration": "PT45M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_vegetables"
+      ],
+      "produces": "baked_pears_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_pears_potatoes",
+  "originalText": "Poires au four comme des Pommes de Terre - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 octobre 2021\nPoires au four comme des Pommes de Terre\nAcc\u00e9der directement \u00e0 la recette\nAlors, j\u2019avoue que pendant toute la pr\u00e9paration de ces Poires au four comme des Pommes de Terre, j\u2019\u00e9tais assez dubitative.\nPour ne rien vous cacher, je me disais : voil\u00e0 encore un truc qui sera pas bon. Et que je ne mettrais jamais sur le blog. Quel g\u00e2chis !\nParce que, oui, j\u2019en parle pas archi souvent, mais \u00e7a nous arrive d\u2019avoir des gros rat\u00e9s avec Daniela. Des trucs qui ne ressemblent \u00e0 rien, qui sont si moches qu\u2019on ne peut tout simplement pas les prendre en photo. Ou des trucs tout simplement pas bons. Pas cuits. Mal assaisonn\u00e9s. Avec des mariages de saveurs qui ne fonctionnent pas. Ou des textures d\u00e9gueu. Bref, les rat\u00e9s, on en a des pellet\u00e9es.\nMais mes petites Poires au four comme des Pommes de Terre ne font pas partie de cette famille de d\u00e9chus !\nAu contraire ! Je n\u2019avais aucune attente particuli\u00e8re pour elles. Et elles m\u2019ont \u00e9blouies ! Les poires sont fondantes, douces, et relev\u00e9es par l\u2019oignon et les herbes. Elles apportent un c\u00f4t\u00e9 tr\u00e8s gourmand aux \u201cvraies\u201d pommes de terre dans le plat. Bref, c\u2019est une belle r\u00e9ussite ! Id\u00e9ales pour accompagner vos plats, vos r\u00f4tis v\u00e9g\u00e9 ou ce qui vous tente \ud83d\ude42\nEt pour ceux qui pr\u00e9f\u00e8rent les pommes de terres toutes simples,\nje vous conseille cette recette \ud83d\ude42\nCette recette a \u00e9t\u00e9 cr\u00e9\u00e9e pour\nMonBento.\nPoires au four comme des Pommes de Terre\nNatacha\n4.51\n/5 avec\n120\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\npoires conf\u00e9rences\n3\npommes de terre \u00e0 chair ferme\n\u00bd\noignon rouge\n2\nc\u00e0s d\u2019huile d\u2019olive\n2\nfeuilles de laurier\n1\nbranches de romarin\nsel\npoivre\nInstructions\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\n\u00c9plucher les poires et les pommes de terre.\nCouper les poires en 4, puis les \u00e9p\u00e9piner.\nCouper les pommes de terre en assez grosses frites. Les pommes de terre doivent \u00eatre un peu plus fines que les poires, pour que la cuisson soit homog\u00e8ne.\nD\u00e9poser les poires et les pommes de terre dans un plat qui va au four. Verser l\u2019huile, les herbes puis saler et poivrer. M\u00e9langer pour que tous les l\u00e9gumes soient couverts d\u2019huile.\nEnfourner \u00e0 mi-hauteur pour 45min. Remuer \u00e0 mi-cuisson.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nPoire\n,\nRecettes Sal\u00e9es\nTags:\npoire au four\n,\npoire romarin\n,\nrecette poire\nColeslaw de Tronc de Brocolis (recette anti-gaspi)\nCake Poire Amande au sucre de palmier de Kampong Speu\n2 thoughts on \u201cPoires au four comme des Pommes de Terre\u201d\nLadyMilonguera\ndit\u00a0:\n16 octobre 2021 \u00e0 14 h 22 min\nMais quelle belle id\u00e9e ces poires au four !\nchargement\u2026\nR\u00e9pondre\nMOHAZE\ndit\u00a0:\n24 ao\u00fbt 2025 \u00e0 0 h 35 min\nCool\nchargement\u2026\nR\u00e9pondre\n4.51 from 120 votes (\n118 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

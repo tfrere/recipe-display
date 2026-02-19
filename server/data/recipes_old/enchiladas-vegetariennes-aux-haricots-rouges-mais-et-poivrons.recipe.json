@@ -1,0 +1,682 @@
+{
+  "metadata": {
+    "title": "Enchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons",
+    "description": "Je vous présente ma dernière petite découverte bien sympa ! Les enchiladas ! Une recette Tex-Mex avec une sauce épicée au concentré de tomate et une garniture de haricots rouges, maïs et poivrons.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "enchiladas végétariennes",
+      "Tex-Mex",
+      "haricots rouges",
+      "maïs",
+      "poivron",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/Enchiladas-4-of-5.jpg",
+    "nationality": "Tex-Mex",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La sauce risque de figer, mais ce n'est pas grave, il suffit de la mélanger un peu pour qu'elle retrouve son onctuosité.",
+      "Vous pouvez la préparer à l'avance et la conserver au frais jusqu'à 3 jours.",
+      "Les enchiladas ne se conservent pas bien, elles s'imbibent de sauce et se détrempent.",
+      "Si vous souhaitez les préparer à l'avance, il est préférable de tout préparer mais de ne faire la partie \"montage\" qu'au dernier moment.",
+      "*cuisson des haricots rouges secs : Pour obtenir 400g de haricots rouges cuits, il faut compter environ 130g de haricots secs. Cela dit, je fais toujours une quantité plus importante que je congèle ensuite ! 1/ les rincer à l'eau clair, puis les mettre à tremper (4h avec une c-à-s de bicarbonate, ou toute la nuit à l'eau claire). Il vaut mieux les faire tremper trop longtemps plutôt que pas assez car sinon ils seront difficiles à cuire et indigestes. 2/ jeter l'eau de trempage 3/ les rincer de nouveau 4/ les transférer dans une grande casserole et recouvrir de 2 ou 3cm d'eau. Porter à ébullition et laisser cuire 1h environ (25 à 30min à la cocotte devraient suffire)."
+    ],
+    "slug": "enchiladas-vegetariennes-aux-haricots-rouges-mais-et-poivrons",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/Enchiladas-4-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/09/06/enchiladas-vegetariennes-aux-haricots-rouges-mais-et-poivrons/",
+    "image": "images/enchiladas-vegetariennes-aux-haricots-rouges-mais-et-poivrons.jpg",
+    "createdAt": "2026-02-09T20:02:01.838973",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 42.0,
+    "totalCookingTime": 27.0,
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 844.1,
+      "protein": 31.4,
+      "fat": 37.7,
+      "carbs": 104.7,
+      "fiber": 38.0,
+      "confidence": "medium",
+      "resolvedIngredients": 17,
+      "matchedIngredients": 20,
+      "totalIngredients": 24,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "bouillon_cube_legumes",
+      "name": "bouillon cube de légumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "cumin_poudre",
+      "name": "cumin en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "chili_poudre",
+      "name": "chili en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili powder"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fumé",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "origan_seche",
+      "name": "origan séché",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "ail_poudre",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "concentre_tomate",
+      "name": "concentré de tomate",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "huile_vegetale",
+      "name": "huile végétale",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "vinaigre_cidre",
+      "name": "vinaigre de cidre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    },
+    {
+      "id": "haricots_rouges_cuits",
+      "name": "haricots rouges cuits",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cooked red beans"
+    },
+    {
+      "id": "huile_vegetale_2",
+      "name": "huile végétale",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "oignon_rouge",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en fines lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "paprika_fume_2",
+      "name": "paprika fumé",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "paprika_doux",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "cumin_poudre_2",
+      "name": "cumin en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "chili_poudre_2",
+      "name": "chili en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili powder"
+    },
+    {
+      "id": "poivron_rouge",
+      "name": "poivron rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épépiné et coupé en fines lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressées",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "mais",
+      "name": "maïs en conserve ou surgelés",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned or frozen corn"
+    },
+    {
+      "id": "epinards",
+      "name": "épinards frais ou surgelés",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "1 poignée",
+      "optional": false,
+      "name_en": "Spinach"
+    },
+    {
+      "id": "tortillas_ble",
+      "name": "tortillas de blé",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "wheat tortillas"
+    },
+    {
+      "id": "cheddar_rape",
+      "name": "cheddar râpé",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shredded cheddar"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachée (feuilles et tiges)",
+      "notes": "botte",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "avocats",
+      "name": "avocats",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupés en morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "avocados"
+    },
+    {
+      "id": "citron_vert",
+      "name": "citron vert",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé en morceau",
+      "notes": null,
+      "optional": false,
+      "name_en": "lime"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Poêle à bords hauts",
+    "Fouet",
+    "Plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "dissoudre_bouillon",
+      "action": "Faire bouillir l'eau avec le bouillon cube jusqu'à ce que ce dernier soit complètement dissout. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "eau",
+        "bouillon_cube_legumes"
+      ],
+      "produces": "bouillon_legumes",
+      "requires": [],
+      "visualCue": "bouillon cube complètement dissout"
+    },
+    {
+      "id": "preparer_melange_epices",
+      "action": "Dans une casserole, faire chauffer à feu moyen-fort l'huile végétale, puis y verser le mélange de farine/épices/sel et mélanger avec un fouet pour obtenir une pâte aromatique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "huile_vegetale",
+        "farine",
+        "cumin_poudre",
+        "chili_poudre",
+        "paprika_fume",
+        "origan_seche",
+        "ail_poudre",
+        "sel"
+      ],
+      "produces": "pate_aromatique",
+      "requires": [],
+      "visualCue": "pâte aromatique"
+    },
+    {
+      "id": "ajouter_concentre_tomate",
+      "action": "Ajouter le concentré de tomate, toujours à feu moyen-fort et battre avec le fouet pour obtenir une pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "pate_aromatique",
+        "concentre_tomate"
+      ],
+      "produces": "pate_tomate_epices",
+      "requires": [],
+      "visualCue": "pâte homogène"
+    },
+    {
+      "id": "ajouter_bouillon",
+      "action": "Ajouter ensuite petit à petit (en 5 ou 6 fois) le bouillon de légumes tout en fouettant. La sauce devrait épaissir rapidement.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "pate_tomate_epices",
+        "bouillon_legumes"
+      ],
+      "produces": "sauce_epaisse",
+      "requires": [],
+      "visualCue": "sauce épaissie"
+    },
+    {
+      "id": "finir_sauce",
+      "action": "Éteindre le feu après environ 5 à 7min. Ajouter le vinaigre et bien mélanger. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sauce_epaisse",
+        "vinaigre_cidre"
+      ],
+      "produces": "sauce_enchiladas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_oignons_epices",
+      "action": "Dans une poêle à bords hauts, faire chauffer l'huile à feu moyen. Ajouter l'oignon émincé et les épices et bien mélanger. Cuire environ 5min, jusqu'à ce que les oignons commencent à devenir translucides.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "huile_vegetale_2",
+        "oignon_rouge",
+        "paprika_fume_2",
+        "paprika_doux",
+        "cumin_poudre_2",
+        "chili_poudre_2"
+      ],
+      "produces": "oignons_epices_cuits",
+      "requires": [],
+      "visualCue": "oignons translucides"
+    },
+    {
+      "id": "ajouter_poivron",
+      "action": "Ajouter le poivron émincé et laisser cuire encore 10min en remuant régulièrement.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_epices_cuits",
+        "poivron_rouge"
+      ],
+      "produces": "oignons_poivrons_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_haricots_mais_epinards",
+      "action": "Ajouter les haricots, le maïs, les épinards et l'ail pressé. Laisser cuire encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_poivrons_cuits",
+        "haricots_rouges_cuits",
+        "mais",
+        "epinards",
+        "ail"
+      ],
+      "produces": "garniture_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_sauce_garniture",
+      "action": "Verser les 2/3 de la sauce à enchiladas, bien mélanger et éteindre le feu. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "garniture_base",
+        "sauce_enchiladas"
+      ],
+      "produces": "garniture_saucee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "remplir_tortillas",
+      "action": "Dans chaque tortilla, mettre environ 2 à 3 c-à-s de garniture et une c-à-s de cheddar râpé (en gardant environ la moitié du cheddar pour plus tard). Rouler la tortilla et la poser dans un plat allant au four (avec l'ouverture vers le bas).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "tortillas_ble",
+        "garniture_saucee",
+        "cheddar_rape"
+      ],
+      "produces": "tortillas_remplies",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "disposer_tortillas",
+      "action": "Disposer les 8 tortillas roulées les unes à côté des autres dans le plat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "tortillas_remplies"
+      ],
+      "produces": "tortillas_disposees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couvrir_sauce",
+      "action": "Couvrir avec le reste de la sauce en laissant les extrémités des enchiladas découvertes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "tortillas_disposees",
+        "sauce_enchiladas"
+      ],
+      "produces": "enchiladas_saucees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couvrir_cheddar",
+      "action": "Couvrir la sauce avec le reste du cheddar râpé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "enchiladas_saucees",
+        "cheddar_rape"
+      ],
+      "produces": "enchiladas_gratinees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_au_four",
+      "action": "Enfourner à mi-hauteur pour 15min.",
+      "duration": "PT15M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage",
+      "uses": [
+        "enchiladas_gratinees"
+      ],
+      "produces": "enchiladas_cuites",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_garniture_fraiche",
+      "action": "Pendant la cuisson, couper les avocats et le citron vert et hacher la coriandre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "avocats",
+        "citron_vert",
+        "coriandre"
+      ],
+      "produces": "garniture_fraiche",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnir_servir",
+      "action": "Sortir du four et garnir avec l'avocat, le citron vert et la coriandre hachée. Servir immédiatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "enchiladas_cuites",
+        "garniture_fraiche"
+      ],
+      "produces": "enchiladas_completes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "enchiladas_completes",
+  "originalText": "Enchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n6 septembre 2020\nEnchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons\nJe vous présente ma dernière petite découverte bien sympa !\nLes enchiladas !\nJ’adore la cuisine TexMex et la cuisine sud américaine ! Et même si je ne suis vraiment pas une spécialiste, j’adore m’inspirer des saveurs latinos 🙂 Et puis, j’ai toujours Daniela pour valider. Avec son sang colombien, elle a le pouvoir de validation absolu sur toutes mes tentatives culinaires sud américaines !\nJe suis assez fière d’ailleurs, parce qu’après de savants ajustements d’assaisonnement, elle a validé\nmon aji colombien\n(et même si les photos sont assez affreuses, c’est une grosse tuerie !). Elle a aussi validé\nmes quesadillas végétariennes,\net maintenant, elle a validé mes enchiladas !\nGrosse fierté !\nLa recette risque de vous paraître complexe, mais en vrai pas du tout !\nLe secret est dans la sauce. On n’utilise pas une sauce tomate simple (c’est-à-dire à base de tomates concassées) comme on le fait dans la cuisine méditerranéenne, mais à la place, c’est une sauce à base de concentré de tomate très chargée en épices. Au niveau de la préparation, ça ressemble plus aux étapes de la béchamel d’ailleurs.\nOn commence par faire une sorte de “roux” avec de l’huile, de la farine et les épices, et ensuite on ajoute le concentré de tomate et le bouillon jusqu’à obtenir un consistance presque crémeuse ! C’est vraiment très simple à réaliser ! Et surtout, il ne faut pas avoir peur d’y aller franchement avec les épices !\nEt une fois que cette sauce est faite, c’est dans la poche. On n’a plus qu’à préparer une garniture de haricots rouges, maïs et poivron, ajouter un peu de cheddar, rouler tout ça dans des tortillas et hop au four !\nEasy like one, two, three 🙂 !\nEnchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons\nNatacha\n4.59\n/5 avec\n105\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n1\nheure\nh\nTemps de cuisson\n20\nminutes\nmin\nTemps total\n1\nheure\nh\n20\nminutes\nmin\nPortions\n8\nenchiladad (2 par personne)\nIngrédients\n1x\n2x\n3x\nPour la sauce enchiladas\n500\nml\nd’eau\n1\nbouillon cube de légumes\n40\ng\nde farine\n1\nc-à-c de cumin en poudre\n½\nc-à-c de chili en poudre\n½\nc-à-c de paprika fumé\n¼\nc-à-c d’origan séché\n1\nc-à-c d’ail en poudre\nsel\n140\ng\nde concentré de tomate\nne pas utiliser de sauce tomate ou de tomates concassées\n3\nc-à-s d’huile végétale\n1\nc-à-c de vinaigre de cidre\nou de vinaigre blanc\nPour la garniture\n400\ng\nde haricots rouges cuits*\nou en conserve\n3\nc-à-s d’huile végétale\n1\noignon rouge en fines lamelles\n½\nc-à-c de paprika fumé\n½\nc-à-c de paprika doux\n2\nc-à-c de cumin en poudre\n½\nc-à-c de chili en poudre\nplus ou moins au goût\n1\npoivron rouge épépiné et coupé en fines lamelles\n3\ngousses d’ail pressées\n300\ng\nde maïs en conserve ou surgelés\n1\npoignée d’épinards frais ou surgelés\n2/3\nde la sauce préalablement préparée\nPour le montage\n8 to\nrtillas de blé\n300\ng\nde cheddar râpé\nun mix cheddar emmental et/ou mozza fait très bien l’affaire aussi\n1\nbotte de coriandre hachée\nfeuilles et tiges\n2\navocats coupés en morceaux\n1\ncitron vert coupé en morceau\nInstructions\nPour la sauce\nFaire bouillir l’eau avec le bouillon cube jusqu’à ce que ce dernier soit complètement dissout. Réserver.\nPréparer la farine, les épices et le sel dans un bol et réserver. C’est important de tout préparer en avance car ensuite la sauce est rapide à faire et vous n”aurez pas le temps de mesurer les quantités.\nOuvrir la (ou les) conserve(s) de concentré de tomate.\nDans une casserole, faire chauffer à feu moyen-fort l’huile végétale, puis y verser la mix de farine/épices et mélanger avec un fouet. Vous devriez obtenir un pâte très aromatique (qui fait un peu penser à un roux comme pour la béchamel).\nAjouter le concentré de tomate, toujours à feu moyen-fort et battre avec le fouet pour obtenir une pâte.\nAjouter ensuite petit à petit (en 5 ou 6 fois) le bouillon de légumes tout en fouettant.\nLa sauce devrait épaissir rapidement. Éteindre le feu lorsque la surface de la sauce offre un peu de résistance.\nTout ce processus dure environ 5 à 7 min.\nEteindre le feu et ajouter la vinaigre. Bien mélanger.\nRéserver.\nLa sauce risque  de figer, mais ce n’est pas grave, il suffit de la mélanger un peu pour qu’elle retrouve son onctuosité.\nVous pouvez la préparer à l’avance et la conserver au frais jusqu’à 3 jours.\nPour la garniture des enchiladas\nDans une poêle à bords hauts, faire chauffer l’huile à feu moyen. Ajouter l’oignon émincé, et les épices et bien mélanger. Cuire environ 5min, jusqu’à ce que les oignons commencent à devenir translucides.\nAjouter le poivron émincé et laisser cuire encore 10min en remuant régulièrement.\nAjouter les haricots, le maïs et les épinards et laisser cuire encore 5min, puis verser les 2/3 de la sauce à enchiladas et bien mélanger.\néteindre le feu et réserver.\nPour le montage\nPréchauffer le four à 180 degrés.\nPrévoir un plat qui va au four et qui est suffisamment grand pour accueillir 8 tortillas roulées.\nDans chaque tortillas :\nMettre environ 2 à 3 c-à-s de garniture, et une c-à-s de cheddar rapé (gardez environ la moitié du cheddar pour plus tard).\nRouler la tortilla et la poser dans le plat (avec l’ouverture vers le bas)\nDisposer les tortillas les unes à côté des autres.\nCouvrir avec la fin de la sauce en laisser les extrémités des enchiladas découvertes pour qu’elles grillent et croustillent.\nCouvrir la sauce avec la fin du cheddar.\nEnfourner à mi-hauteur pour 15-20min. Vous pouvez mettre le mode grill pour les dernières minutes pour faire griller le fromage.\nPendant ce temps, couper les avocats et le citron et hacher la coriandre.\nSortir du four et mettre l’avocat, le citron et la coriandre par dessus.\nServir immédiatement.\nLes enchiladas ne se conservent pas bien, elles s’imbibent de sauce et se détrempent.\nSi vous souhaitez les préparer à l’avance, il est préférable de tout préparer mais de ne faire la partie “montage” qu’au dernier moment.\nNotes\n*cuisson des haricots rouges secs :\nPour obtenir 400g de haricots rouges cuits, il faut compter environ 130g de haricots secs. Cela dit, je fais toujours une quantité plus importante que je congèle ensuite !\n1/ les rincer à l’eau clair, puis les mettre à tremper (4h avec une c-à-s de bicarbonate, ou toute la nuit à l’eau claire). Il vaut mieux les faire tremper trop longtemps plutôt que pas assez car sinon ils seront difficiles à cuire et indigestes.\n2/ jeter l’eau de trempage\n3/ les rincer de nouveau\n4/ les transférer dans une grande casserole et recouvrir de 2 ou 3cm d’eau. Porter à ébullition et laisser cuire 1h environ (25 à 30min à la cocotte devraient suffire).\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nÉté\n,\nPlats au Four\n,\nPoivron\n,\nPrintemps\n,\nRecettes Salées\nTags:\nenchiladas végétariennes\n,\nrecette pour enchiladas maison\nChili Sin Carne et Salsa à la Pêche (avec le nouveau Cook Processor avec Balance Intégrée de KitchenAid et mon avis sur le robot)\nCookies Chocolat fourrés au Beurre de Cacahuète\n15 thoughts on “Enchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons”\nninietre\ndit :\n7 septembre 2020 à 19 h 46 min\nBonjour,\nJ’ai commencé à préparer votre recette mais je ne sais pas à quel moment ajouter la cuillère à café de vinaigre dans la sauce.\nMerci pour vos recettes.\nchargement…\nRépondre\nFree The Pickle\ndit :\n8 septembre 2020 à 10 h 21 min\nOups ! Bien vu, je vais ajouter cette étape ! C’est à la toute fin, qd vous éteignez le feu sous la sauce ! Mes excuses !!!\nchargement…\nRépondre\nStephanie\ndit :\n9 septembre 2020 à 15 h 10 min\nThis is so good, and presents so nicely, the sauce is amazing.  I always wanted to know how it was prepared. Yours is better than the store bought/restaurant versions by far. This dish joins the clean plate club!\nchargement…\nRépondre\nFree The Pickle\ndit :\n14 septembre 2020 à 21 h 25 min\nYou always leave the best comments ❤️❤️❤️ and we’re so happy you enjoy the recipes you have no idea 😋\nchargement…\nRépondre\nChristelle\ndit :\n24 septembre 2020 à 18 h 05 min\nCe plat m’a l’air délicieux !! Je ne connais pas les enchiladas 🙁  je vais tester !\nchargement…\nRépondre\nBen\ndit :\n30 septembre 2020 à 8 h 30 min\nDélicieuse recette (comme beaucoup d’autres mais on laisse pas des commentaires à chaque fois, shame on us!!) !\nLa sauce est hyper onctueuse, les enchiladas super gourmandes : un régal !\n(vous indiquez la moitié de la sauce dans la liste d’ingrédients de la garniture, puis les 2/3 dans le détail. On a mis les 2/3 et c’était très bien :D)\nchargement…\nRépondre\nDaniela\ndit :\n4 octobre 2020 à 23 h 40 min\nHahaha merci de nous laisser un commentaier (ENFIN, shame shame 😉 )\nEffectivement, petite incohérence dans les quantités de sauce ! Je vais rectifier ça 🙂 Et surtout, mille mercis de nous lire 🙂\nchargement…\nRépondre\nSylvieke\ndit :\n9 mars 2022 à 17 h 19 min\nCette recette est excellente ! Je l’ai refaite plusieurs fois, c’était chaque fois un vrai régal. Même mon fils qui aime bien  la viande, il a adoré cette version végétarienne.  La sauce est également délicieuse. Merci pour  ce partage!\nchargement…\nRépondre\nNatacha\ndit :\n9 mars 2022 à 17 h 23 min\nOooh merci pour ton commentaire !\nchargement…\nRépondre\nCélia\ndit :\n6 novembre 2022 à 11 h 56 min\nCette recette est un vraie délice, comme à peu près toutes les recette sur le blog d’ailleurs, bravo les filles!\nOn a remplacé le cheddar par du fromage vegan, et on a rajouté du riz noir dans la farce, c’était parfait.\nMerci beaucoup pour cette recette et ce blog qui est ma bible en cuisine  🙂\nchargement…\nRépondre\nNatacha\ndit :\n9 novembre 2022 à 16 h 39 min\nMErciiiiiiiii\nchargement…\nRépondre\nQuentin\ndit :\n9 avril 2024 à 23 h 10 min\nDélicieux ! Merci pour cette recette\nJ’ai oublié d’ajouter l’ail avec les oignons émincés la première fois que je l’ai fait, peut-être mentionner l’ail explicitement dans la partie préparation ? 🙂\nchargement…\nRépondre\nGriet\ndit :\n17 juillet 2024 à 16 h 10 min\nDélicieux , un vrai régal !!!  Encore une fois une confirmation que le blog est simplement SUPER. Merci pour ces délicieuses recette !!!\nchargement…\nRépondre\nSarita\ndit :\n14 juillet 2025 à 10 h 46 min\nSuper travail, merci de végétaliser des recettes!\nPar contre, attention au racisme ordinaire. Le Mexique, c’est en Amérique du Nord. Ne pas confonde Amérique du Sud et Amérique Latine. De plus, une personne Colombienne n’est pas une caution pour toute l’Amérique latine. Chaque pays est très différent, avec des cultures culinaires qui n’ont rien à voir. C’est comme demander à un portugais de valider une recette française… Ce n’est pas la fin du monde, mais c’est important de faire attention à ces choses-là. Elles sont courantes et c’est chouette d’essayer de les endiguer. Merci encore pour votre travail !\nchargement…\nRépondre\nNatacha\ndit :\n15 juillet 2025 à 19 h 26 min\nTu as complètement raison, merci pour ces retours constructifs, je vais reprendre cet article quand j’aurai un moment !\nchargement…\nRépondre\n4.59 from 105 votes (\n98 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 27.0
+}

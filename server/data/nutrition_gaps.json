@@ -1,0 +1,595 @@
+{
+  "_meta": {
+    "generated_at": "2026-02-18T12:30:39.170650+00:00",
+    "total_recipes": 4691,
+    "description": "Aggregated nutrition gaps across all recipes. Use this to prioritize data improvements."
+  },
+  "summary": {
+    "total_recipes": 4691,
+    "confidence": {
+      "high": 2135,
+      "medium": 2356,
+      "low": 199,
+      "none": 1
+    },
+    "confidence_pct": {
+      "high": 45.5,
+      "medium": 50.2,
+      "low": 4.2,
+      "none": 0.0
+    },
+    "calories": {
+      "median": 388.2,
+      "mean": 438.1,
+      "p5": 92.0,
+      "p95": 998.6
+    },
+    "zero_kcal_count": 44,
+    "high_kcal_count": 13,
+    "ingredient_resolution": {
+      "resolved": 41776,
+      "total_non_negligible": 50814,
+      "rate_pct": 82.2
+    }
+  },
+  "gaps": {
+    "unmatched_in_nutrition_db": {
+      "description": "Ingredients with name_en that don't match any entry in OpenNutrition. Fix: add to nutrition_aliases_cache.json or improve embedding index.",
+      "count": 482,
+      "total_occurrences": 1142,
+      "top_50": [
+        {
+          "ingredient": "breadcrumbs",
+          "occurrences": 37
+        },
+        {
+          "ingredient": "panko breadcrumbs",
+          "occurrences": 34
+        },
+        {
+          "ingredient": "pizza dough",
+          "occurrences": 31
+        },
+        {
+          "ingredient": "milk of choice",
+          "occurrences": 28
+        },
+        {
+          "ingredient": "sweetener",
+          "occurrences": 26
+        },
+        {
+          "ingredient": "pepitas",
+          "occurrences": 26
+        },
+        {
+          "ingredient": "panko bread crumbs",
+          "occurrences": 26
+        },
+        {
+          "ingredient": "mirin",
+          "occurrences": 24
+        },
+        {
+          "ingredient": "broccolini",
+          "occurrences": 20
+        },
+        {
+          "ingredient": "lemongrass",
+          "occurrences": 19
+        },
+        {
+          "ingredient": "cooking spray",
+          "occurrences": 17
+        },
+        {
+          "ingredient": "vanilla pod",
+          "occurrences": 17
+        },
+        {
+          "ingredient": "rose petals",
+          "occurrences": 16
+        },
+        {
+          "ingredient": "burrata",
+          "occurrences": 15
+        },
+        {
+          "ingredient": "crusty bread",
+          "occurrences": 11
+        },
+        {
+          "ingredient": "whole wheat pizza dough",
+          "occurrences": 11
+        },
+        {
+          "ingredient": "soured cream",
+          "occurrences": 11
+        },
+        {
+          "ingredient": "dairy-free milk",
+          "occurrences": 10
+        },
+        {
+          "ingredient": "pizza sauce",
+          "occurrences": 10
+        },
+        {
+          "ingredient": "blood oranges",
+          "occurrences": 9
+        },
+        {
+          "ingredient": "dried red chilies",
+          "occurrences": 8
+        },
+        {
+          "ingredient": "halloumi",
+          "occurrences": 8
+        },
+        {
+          "ingredient": "ras el hanout",
+          "occurrences": 8
+        },
+        {
+          "ingredient": "aquafaba",
+          "occurrences": 8
+        },
+        {
+          "ingredient": "crème fraîche",
+          "occurrences": 7
+        },
+        {
+          "ingredient": "soy cream",
+          "occurrences": 7
+        },
+        {
+          "ingredient": "instant espresso powder",
+          "occurrences": 7
+        },
+        {
+          "ingredient": "tomatillos",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "triple sec",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "wheat berries",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "crostini",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "shoyu soy sauce",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "chipotle peppers in adobo sauce",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "dry sherry",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "coffee liqueur",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "port wine",
+          "occurrences": 6
+        },
+        {
+          "ingredient": "seasonal vegetables",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "fresh bread crumbs",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "sichuan peppercorns",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "hot pepper sauce",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "fresh fruit",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "angostura bitters",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "croutons",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "bouillon cube",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "chili oil",
+          "occurrences": 5
+        },
+        {
+          "ingredient": "campari",
+          "occurrences": 4
+        },
+        {
+          "ingredient": "parchment paper",
+          "occurrences": 4
+        },
+        {
+          "ingredient": "madeira wine",
+          "occurrences": 4
+        },
+        {
+          "ingredient": "skewers",
+          "occurrences": 4
+        },
+        {
+          "ingredient": "balsamic glaze",
+          "occurrences": 4
+        }
+      ]
+    },
+    "no_quantity": {
+      "description": "Ingredients with name_en + nutrition match, but no quantity parsed. Fix: improve LLM structuring prompts to always extract quantities.",
+      "count": 1786,
+      "total_occurrences": 7822,
+      "top_30": [
+        {
+          "ingredient": "black pepper",
+          "occurrences": 627
+        },
+        {
+          "ingredient": "freshly ground black pepper",
+          "occurrences": 535
+        },
+        {
+          "ingredient": "olive oil",
+          "occurrences": 301
+        },
+        {
+          "ingredient": "red pepper flakes",
+          "occurrences": 214
+        },
+        {
+          "ingredient": "extra-virgin olive oil",
+          "occurrences": 165
+        },
+        {
+          "ingredient": "cilantro",
+          "occurrences": 155
+        },
+        {
+          "ingredient": "sesame seeds",
+          "occurrences": 94
+        },
+        {
+          "ingredient": "fresh black pepper",
+          "occurrences": 82
+        },
+        {
+          "ingredient": "lemon",
+          "occurrences": 81
+        },
+        {
+          "ingredient": "maple syrup",
+          "occurrences": 74
+        },
+        {
+          "ingredient": "hot sauce",
+          "occurrences": 73
+        },
+        {
+          "ingredient": "chives",
+          "occurrences": 68
+        },
+        {
+          "ingredient": "powdered sugar",
+          "occurrences": 68
+        },
+        {
+          "ingredient": "avocado",
+          "occurrences": 66
+        },
+        {
+          "ingredient": "honey",
+          "occurrences": 61
+        },
+        {
+          "ingredient": "lime wedges",
+          "occurrences": 59
+        },
+        {
+          "ingredient": "butter",
+          "occurrences": 59
+        },
+        {
+          "ingredient": "parmesan cheese",
+          "occurrences": 54
+        },
+        {
+          "ingredient": "lemon juice",
+          "occurrences": 49
+        },
+        {
+          "ingredient": "coconut whipped cream",
+          "occurrences": 45
+        },
+        {
+          "ingredient": "lemon zest",
+          "occurrences": 44
+        },
+        {
+          "ingredient": "sriracha",
+          "occurrences": 41
+        },
+        {
+          "ingredient": "sour cream",
+          "occurrences": 40
+        },
+        {
+          "ingredient": "mint",
+          "occurrences": 39
+        },
+        {
+          "ingredient": "freshly ground pepper",
+          "occurrences": 38
+        },
+        {
+          "ingredient": "feta cheese",
+          "occurrences": 35
+        },
+        {
+          "ingredient": "nutmeg",
+          "occurrences": 33
+        },
+        {
+          "ingredient": "cinnamon",
+          "occurrences": 32
+        },
+        {
+          "ingredient": "lime juice",
+          "occurrences": 32
+        },
+        {
+          "ingredient": "lemon wedges",
+          "occurrences": 32
+        }
+      ]
+    },
+    "unweighted": {
+      "description": "Ingredients with name_en + quantity, but estimate_grams returned None. Fix: add to portion_weights.json or weight_estimates_cache.json.",
+      "count": 55,
+      "total_occurrences": 74,
+      "top_30": [
+        {
+          "ingredient": "vegetable bouillon cube",
+          "occurrences": 13
+        },
+        {
+          "ingredient": "vegan biscuits",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "chicken bouillon cubes",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "shrimp",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "morteau sausage",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "dried arbol chiles",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "bouquet garni",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "oreo cookies",
+          "occurrences": 2
+        },
+        {
+          "ingredient": "gala apples",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "pasta",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "empanada dough rounds",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "soft sub rolls",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "white cheddar",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "ladyfingers",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "brownie",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "egg whites",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "hazelnuts",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "vanilla extract",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "bittersweet chocolate",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "instant coffee or espresso granules",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "chilled heavy or whipping cream",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "granulated sugar",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "strasbourg sausage",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "unsliced white bread, brioche or rich bread",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "sandwich rolls",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "curry leaves",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "tart shells",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "beef, chicken, or vegetable stock",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "bagels",
+          "occurrences": 1
+        },
+        {
+          "ingredient": "flatbread pizza crust",
+          "occurrences": 1
+        }
+      ]
+    },
+    "untranslated": {
+      "description": "Ingredients without name_en (no English translation). Fix: add to ingredient_translations.json.",
+      "count": 0,
+      "total_occurrences": 0,
+      "top_30": []
+    }
+  },
+  "outliers": {
+    "zero_kcal": [
+      "5 recettes pour cuisiner des blettes",
+      "A non-traditional menu for Thanksgiving with friends (a.k.a Friendsgiving)",
+      "Almond and orange florentines",
+      "Avocado Chickpea Salad Sandwich",
+      "Baked Parsnip Fries",
+      "Baked Sweet Potato",
+      "blackberry & lemon zest crostini",
+      "Burnt Sugar Oranges with Yogurt and Mint",
+      "Butterbean mash with rosemary and garlic",
+      "Candied Grapefruit Peel",
+      "Cold Brew Coffee",
+      "Cold Brew Iced Tea",
+      "Cold-Brewed Ice Coffee",
+      "Danielle's sweet potato gratin",
+      "Desserts grecs d'hiver : entre traditions et douceurs à partager",
+      "fancy s'mores",
+      "Fish Tacos",
+      "Galettes Boulgour Courgette Comté",
+      "Grilled Veggie Sandwich with Romesco Sauce",
+      "Hard-Boiled Eggs"
+    ],
+    "high_kcal": [
+      {
+        "title": "Southern Style Dry Rub Ribs",
+        "kcal": 2376.8,
+        "servings": 6
+      },
+      {
+        "title": "Simple Whole Wheat Sugar Cookies",
+        "kcal": 2057.9,
+        "servings": 5
+      },
+      {
+        "title": "No-Bake Chocolate Cheesecakes",
+        "kcal": 1763.2,
+        "servings": 4
+      },
+      {
+        "title": "Braised Beef Short Ribs with Potato Purée, Swiss Chard and Horseradish Cream",
+        "kcal": 1684.9,
+        "servings": 4
+      },
+      {
+        "title": "Better Chicken Pot Pies",
+        "kcal": 1658.2,
+        "servings": 4
+      },
+      {
+        "title": "Chipotle Black Bean Tortilla Soup",
+        "kcal": 1627.7,
+        "servings": 4
+      },
+      {
+        "title": "spring kale panzanella",
+        "kcal": 1611.6,
+        "servings": 1
+      },
+      {
+        "title": "Chicken Pot Pie",
+        "kcal": 1606.7,
+        "servings": 4
+      },
+      {
+        "title": "Kohlrabi tonnato",
+        "kcal": 1559.3,
+        "servings": 4
+      },
+      {
+        "title": "Broken Pasta with Pork Ragu",
+        "kcal": 1542.0,
+        "servings": 4
+      },
+      {
+        "title": "Corn and Black Bean Weeknight Nachos",
+        "kcal": 1538.0,
+        "servings": 4
+      },
+      {
+        "title": "Tuna and potato croquettes with egg remoulade",
+        "kcal": 1525.1,
+        "servings": 4
+      },
+      {
+        "title": "Candy Pork",
+        "kcal": 1517.8,
+        "servings": 4
+      }
+    ]
+  }
+}

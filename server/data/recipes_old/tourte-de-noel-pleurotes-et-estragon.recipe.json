@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "title": "Tourte de No\u00ebl pleurotes et estragon",
+    "description": "Tourte vegan g\u00e9n\u00e9reuse et parfum\u00e9e, avec une farce aux pleurotes, tofu, pommes de terre et estragon, li\u00e9e par une b\u00e9chamel v\u00e9g\u00e9tale, le tout envelopp\u00e9 dans des feuilles de filo croustillantes.",
+    "servings": 6,
+    "prepTime": "PT45M",
+    "cookTime": "PT1H40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "No\u00ebl",
+      "champignon",
+      "hiver",
+      "tourte",
+      "tofu",
+      "pleurote",
+      "estragon"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Tourte-filo-estragon-pleurote-7-of-8.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Peut \u00eatre pr\u00e9par\u00e9e la veille et conserv\u00e9e au frais. Pour la r\u00e9chauffer, la mettre au four \u00e0 150\u00b0C pour 20-30min.",
+      "Tourti\u00e8re de 20cm de diam\u00e8tre."
+    ],
+    "slug": "tourte-de-noel-pleurotes-et-estragon",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Tourte-filo-estragon-pleurote-7-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/12/14/tourte-de-noel-pleurotes-et-estragon/",
+    "image": "images/tourte-de-noel-pleurotes-et-estragon.webp",
+    "createdAt": "2026-02-09T21:41:47.985418",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 125.0,
+    "totalCookingTime": 75.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 456.7,
+      "protein": 13.3,
+      "fat": 26.8,
+      "carbs": 39.2,
+      "fiber": 5.9,
+      "confidence": "high",
+      "resolvedIngredients": 14,
+      "matchedIngredients": 16,
+      "totalIngredients": 16,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "tofu_ferme",
+      "name": "tofu ferme",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "firm tofu"
+    },
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 7.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "celeri",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "laurier",
+      "name": "laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "vin_blanc",
+      "name": "vin blanc",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "pommes_de_terre",
+      "name": "pommes de terre",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "estragon",
+      "name": "estragon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "bouquet",
+      "optional": false,
+      "name_en": "tarragon"
+    },
+    {
+      "id": "margarine",
+      "name": "margarine ou beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "margarine or butter"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "lait_vegetal",
+      "name": "lait v\u00e9g\u00e9tal",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "noix_de_muscade",
+      "name": "noix de muscade",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles filo",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "10-12 feuilles",
+      "optional": false,
+      "name_en": "phyllo dough"
+    },
+    {
+      "id": "graines_de_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Tourti\u00e8re de 20cm de diam\u00e8tre",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "presser_tofu",
+      "action": "Envelopper le bloc de tofu dans un torchon propre et le presser sous quelque chose de lourd.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes_et_du_tofu",
+      "uses": [
+        "tofu_ferme"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four_180",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes_et_du_tofu",
+      "uses": [],
+      "produces": "four_prechauffe_180",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_melange_pleurotes_tofu",
+      "action": "Effilocher les pleurotes et \u00e9mietter le tofu dans un saladier. Ajouter la levure malt\u00e9e, 3 c\u00e0s d'huile d'olive et la sauce soja, puis m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes_et_du_tofu",
+      "uses": [
+        "pleurotes",
+        "tofu_presse",
+        "levure_maltee",
+        "huile_dolive",
+        "sauce_soja"
+      ],
+      "produces": "melange_pleurotes_tofu_cru",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_melange_pleurotes_tofu",
+      "action": "Mettre sur une plaque et enfourner.",
+      "duration": "PT35M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes_et_du_tofu",
+      "uses": [
+        "melange_pleurotes_tofu_cru"
+      ],
+      "produces": "melange_pleurotes_tofu_cuit",
+      "requires": [
+        "four_prechauffe_180"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "hacher_legumes",
+      "action": "Passer la carotte, l'oignon, le c\u00e9leri et l'ail dans un mixeur pour avoir des petits morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_legumes",
+      "uses": [
+        "carotte",
+        "oignon",
+        "celeri",
+        "ail"
+      ],
+      "produces": "legumes_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Les faire revenir dans 2 c\u00e0s d'huile d'olive avec le laurier pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_des_legumes",
+      "uses": [
+        "legumes_haches",
+        "huile_dolive",
+        "laurier"
+      ],
+      "produces": "legumes_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_estragon_pdt",
+      "action": "Hacher l'estragon. Couper les pommes de terre en tr\u00e8s fines rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_legumes",
+      "uses": [
+        "estragon",
+        "pommes_de_terre"
+      ],
+      "produces": "estragon_hache_pdt_coupees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mijoter_legumes",
+      "action": "Ajouter le vin blanc et l'estragon hach\u00e9 \u00e0 la po\u00eale. Ajouter ensuite les pommes de terre. Couvrir et laisser mijoter \u00e0 feu doux pendant 15min en remuant de temps en temps.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_des_legumes",
+      "uses": [
+        "legumes_revenus",
+        "vin_blanc",
+        "estragon_hache_pdt_coupees"
+      ],
+      "produces": "legumes_mijotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_roux",
+      "action": "Dans une petite casserole, faire fondre la margarine, ajouter la farine et m\u00e9langer pour obtenir un roux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_bechamel",
+      "uses": [
+        "margarine",
+        "farine"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_lait",
+      "action": "Ajouter le lait v\u00e9g\u00e9tal petit \u00e0 petit tout en fouettant le m\u00e9lange.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_bechamel",
+      "uses": [
+        "roux",
+        "lait_vegetal"
+      ],
+      "produces": "bechamel_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner_bechamel",
+      "action": "Une fois tout le lait incorpor\u00e9 et lorsque la texture est cr\u00e9meuse, retirer du feu, ajouter sel, poivre et la noix de muscade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_bechamel",
+      "uses": [
+        "bechamel_base",
+        "sel",
+        "poivre",
+        "noix_de_muscade"
+      ],
+      "produces": "bechamel_assaisonnee",
+      "requires": [],
+      "visualCue": "texture cr\u00e9meuse"
+    },
+    {
+      "id": "melanger_garniture",
+      "action": "M\u00e9langer les 3 pr\u00e9parations (pleurotes/tofu, l\u00e9gumes, b\u00e9chamel) et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "melange_pleurotes_tofu_cuit",
+        "legumes_mijotes",
+        "bechamel_assaisonnee"
+      ],
+      "produces": "garniture_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four_190",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [],
+      "produces": "four_prechauffe_190",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_fond_filo",
+      "action": "Huiler un moule \u00e0 tourte. Empiler 3 feuilles de filo dans le fond et sur les bords en les huilant \u00e0 chaque fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "huile_dolive",
+        "feuilles_filo"
+      ],
+      "produces": "fond_filo_hui",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_garniture",
+      "action": "Verser la garniture et bien tasser.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "garniture_complete",
+        "fond_filo_hui"
+      ],
+      "produces": "tourte_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_couvercle_filo",
+      "action": "Huiler \u2153 de feuille de filo et la plier en 3. La poser en accord\u00e9on sur la tourte. R\u00e9p\u00e9ter avec les autres feuilles jusqu'\u00e0 ce que la tourte soit couverte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "huile_dolive",
+        "feuilles_filo",
+        "tourte_avec_garniture"
+      ],
+      "produces": "tourte_couverte_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "parsemer_sesame",
+      "action": "Huiler le dessus de la tourte et parsemer de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "huile_dolive",
+        "graines_de_sesame",
+        "tourte_couverte_filo"
+      ],
+      "produces": "tourte_pret_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tourte",
+      "action": "Enfourner pendant 50min.",
+      "duration": "PT50M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "tourte_pret_a_cuire"
+      ],
+      "produces": "tourte_cuite",
+      "requires": [
+        "four_prechauffe_190"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tourte_cuite",
+  "originalText": "Tourte De No\u00ebl Pleurotes Et Estragon\u00a0| La Recette Festive Vegan\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 d\u00e9cembre 2022\nTourte de No\u00ebl pleurotes et estragon, le plat vegan qui fait sensation \u00e0 table\nLa\nTourte de No\u00ebl pleurotes et estragon\n, c\u2019est LE\nplat\nqui r\u00e9concilie tout le monde autour de la\ntable de f\u00eates\n.\nVegan\n,\ng\u00e9n\u00e9reuse\n, bien\nparfum\u00e9e\net surtout\nultra gourmande\n, elle a ce petit quelque chose qu\u2019on cherche chaque ann\u00e9e pour composer un\nmenu de No\u00ebl v\u00e9g\u00e9tarien\n(ou enti\u00e8rement\nv\u00e9g\u00e9tal\n) sans frustration. Cette\ntourte\nd\u00e9voile une\nfarce incroyable\n! Les\npleurotes\napportent ce c\u00f4t\u00e9 filandreux qu\u2019on adore, le\ntofu\net les\npommes de terre\ndonnent de la tenue, l\u2019\nestragon\nparfume l\u2019ensemble d\u2019une note franchement\nfestive\net la\nb\u00e9chamel\nlie tout avec une douceur incroyable. Le tout enferm\u00e9 dans des\nfeuilles de filo\nbien\ndor\u00e9es\net\nultra croustillantes\n. C\u2019est un\nplat\nqui sent\nNo\u00ebl\nqui r\u00e9chauffe les\nassiettes\net qui met tout le monde d\u2019accord ! Et cerise sur le\nsapin\n\u2026 elle peut m\u00eame \u00eatre pr\u00e9par\u00e9e la\nveille\n. Parfaite, vraiment.\nTable des mati\u00e8res\n1\nUne farce g\u00e9n\u00e9reuse, parfum\u00e9e et pleine de caract\u00e8re\n2\nUne b\u00e9chamel v\u00e9g\u00e9tale onctueuse qui fait toute la diff\u00e9rence\n3\nTourte de No\u00ebl pleurotes et estragon\n4\nLes feuilles de filo : croustillantes, l\u00e9g\u00e8res\u2026 et parfaites pour No\u00ebl\n5\nLe plat z\u00e9ro stress pour les repas de f\u00eate\nUne farce g\u00e9n\u00e9reuse, parfum\u00e9e et pleine de caract\u00e8re\nLa magie de cette tourte de No\u00ebl repose enti\u00e8rement sur sa farce. Une garniture riche, filandreuse, cr\u00e9meuse, qui rappelle les plats mijot\u00e9s des f\u00eates mais en version v\u00e9g\u00e9tale et l\u00e9g\u00e8re. Les pleurotes apportent cette texture \u00e9tonnante qui \u00e9voque presque une volaille effiloch\u00e9e. Le tofu \u00e9miett\u00e9 et les pommes de terre en fines rondelles donnent de la tenue et du corps. Ils transforment chaque part en vrai morceau de r\u00e9confort. Les l\u00e9gumes de base (carotte, oignon, c\u00e9leri, ail) cr\u00e9ent une fondation aromatique profonde, relev\u00e9e par le vin blanc et parfum\u00e9e par un beau bouquet d\u2019estragon frais. Un parfum d\u00e9licat, anis\u00e9, tr\u00e8s festif, qui donne \u00e0 l\u2019ensemble un caract\u00e8re unique.\nVous aimez ce genre de garniture g\u00e9n\u00e9reuse et parfum\u00e9e ? Vous devriez aussi jeter un \u0153il \u00e0 notre\ntourte v\u00e9g\u00e9tarienne de No\u00ebl\n, un autre grand classique maison pour les f\u00eates.\nUne b\u00e9chamel v\u00e9g\u00e9tale onctueuse qui fait toute la diff\u00e9rence\nDans cette tourte, la b\u00e9chamel joue un r\u00f4le essentiel. Elle enveloppe la farce, adoucit les saveurs, apporte de la rondeur et assure une tenue parfaite \u00e0 la d\u00e9coupe. Pr\u00e9par\u00e9e avec un lait v\u00e9g\u00e9tal, un bon roux \u00e0 la margarine pour une version vegan (ou au beurre si vous pr\u00e9f\u00e9rez) et une pointe de muscade, elle devient incroyablement soyeuse et lie tous les \u00e9l\u00e9ments.  Vous \u00eates du genre \u00e0 toujours vouloir une bonne b\u00e9chamel dans vos plats d\u2019hiver ? Allez aussi jeter un \u0153il \u00e0 notre\ngratin de brocoli \u00e0 l\u2019orzo et b\u00e9chamel au comt\u00e9\n, notre\ngratin de p\u00e2tes \u00e0 la courge et b\u00e9chamel au parmesan\nou encore le classique ind\u00e9tr\u00f4nable : le\ngratin de chou-fleur au comt\u00e9\n. La b\u00e9chamel, vraiment, rend tout meilleur.\nTourte de No\u00ebl pleurotes et estragon\n4.50\n/5 avec\n50\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n1\nheure\nh\nTemps de cuisson\n30\nminutes\nmin\nPortions\n6\npersonnes\nEquipment\nTourti\u00e8re de 20cm de diam\u00e8tre\nIngr\u00e9dients\n1x\n2x\n3x\nPour les pleurotes\n250\ng\nde tofu ferme\n200\ng\nde pleurotes\n2\nc\u00e0s de levure malt\u00e9e\n3\nc\u00e0s d\u2019huile d\u2019olive\n4\nc\u00e0s de sauce soja\nPour les l\u00e9gumes\n1\ncarotte\n1\noignon\n1\nbranche de c\u00e9leri\n2\ngousses d\u2019ail\n2\nc\u00e0s d\u2019huile d\u2019olive\n2\nfeuilles de laurier\n100\nml\nde vin blanc\n350\ng\nde pommes de terre\nenv 3\n1\nbouquet d\u2019estragon\nPour la b\u00e9chamel\n40\ng\nde margarine ou de beurre\n50\ng\nde farine\n400\nml\nde lait v\u00e9g\u00e9tal\nsel\npoivre\n1\npinc\u00e9e de noix de muscade\nPour le montage\n10-12\nfeuilles de filo\nhuile d\u2019olive\ngraines de s\u00e9same\nInstructions\nEnvelopper le bloc de tofu dans un torchon propre et le presser 15min sous qqch de lourd.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nEffilocher les pleurotes et \u00e9mietter le tofu dans un saladier. Ajouter les autres ingr\u00e9dients et m\u00e9langer. Mettre sur une plaque et enfourner 35min. R\u00e9server.\nPasser la carotte, l\u2019oignon, le c\u00e9leri et l\u2019ail dans un mixeur pour avoir des petits morceaux.\nLes faire revenir dans l\u2019huile avec le laurier 10min).\nHacher l\u2019estragon. Couper les pommes de terre en tr\u00e8s fines rondelles.\nAjouter le vin et l\u2019estragon \u00e0 la po\u00eale. Puis les pommes de terre. Couvrir et laisser mijoter \u00e0 feu doux 15min en remuant de temps en temps.\nPr\u00e9parer la b\u00e9chamel : dans une petite casserole faire fondre la margarine, ajouter la farine et m\u00e9langer pour obtenir un roux. Ajouter le lait petit \u00e0 petit tout en fouettant le m\u00e9lange. Une fois tout le lait incorpor\u00e9 et lorsque la texture est cr\u00e9meuse, retirer du feu, ajouter sel, poivre et muscade.\nM\u00e9langer les 3 pr\u00e9parations et r\u00e9server.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nHuiler un moule \u00e0 tourte. Empiler 3 feuilles de filo dans le fond et sur les bords en les huilant \u00e0 chaque fois.\nVerser la garniture et bien tasser.\nHuilant \u2153 de feuille de filo et la plier en 3. La poser en accord\u00e9on sur la tourte. R\u00e9p\u00e9ter avec les autres feuilles jusqu\u2019\u00e0 ce que la tourte soit couverte.\nHuiler le dessus de la tourte et parsemer de graines de s\u00e9same.\nEnfourner 50min.\nVous pouvez la pr\u00e9parer la veille et la conserver au frais. Pour la r\u00e9chauffer, la mettre au four \u00e0 150\u00b0C pour 20-30min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes feuilles de filo : croustillantes, l\u00e9g\u00e8res\u2026 et parfaites pour No\u00ebl\nSi cette tourte fait autant d\u2019effet, c\u2019est en grande partie gr\u00e2ce aux feuilles de filo. Ultra fines, presque translucides, elles deviennent incroyablement croustillantes une fois pass\u00e9es au four. C\u2019est ce contraste, un dessus dor\u00e9 et craquant qui cache une farce fondante, qui donne tout son charme au plat. La filo apporte aussi beaucoup de l\u00e9g\u00e8ret\u00e9. Contrairement \u00e0 une p\u00e2te feuillet\u00e9e ou bris\u00e9e, elle enveloppe la garniture sans jamais l\u2019alourdir, tout en cr\u00e9ant ces jolis plis irr\u00e9guliers qui dorent comme des p\u00e9tales. C\u2019est visuel, festif, et parfait pour un repas de No\u00ebl o\u00f9 l\u2019on veut un plat \u00e0 la fois g\u00e9n\u00e9reux et \u00e9l\u00e9gant.\nSi vous aimez travailler la filo, d\u00e9couvrez nos astuces et id\u00e9es dans notre guide d\u00e9di\u00e9 aux\nrecettes \u00e0 base de p\u00e2te filo\n. Et pour comprendre pourquoi elle est si unique, on vous explique tout dans notre article \u201c\nFeuilles filo vs feuilles de brick : les diff\u00e9rences\n\u201d.\nLe plat z\u00e9ro stress pour les repas de f\u00eate\nL\u2019un des grands avantages de cette Tourte de No\u00ebl pleurotes et estragon, c\u2019est sa capacit\u00e9 \u00e0 s\u2019organiser. Vous pouvez la pr\u00e9parer enti\u00e8rement la veille ! Vous la laissez reposer au frais, puis simplement la r\u00e9chauffer le jour J. Un passage au four \u00e0 basse temp\u00e9rature suffit pour raviver le croustillant des feuilles de filo et r\u00e9chauffer doucement la garniture. C\u2019est exactement le genre de plat qui vous lib\u00e8re du stress des f\u00eates et vous permet de profiter pleinement de la soir\u00e9e, sans courir en cuisine.\nVous cherchez encore plus d\u2019inspiration pour vos menus de f\u00eates ? Jetez un \u0153il \u00e0 notre\neBook sp\u00e9cial recettes de No\u00ebl\n. Il regroupe nos meilleures id\u00e9es v\u00e9g\u00e9tariennes et v\u00e9g\u00e9tales pour un r\u00e9veillon sans stress. D\u00e9couvrez aussi\nnos plats pour un No\u00ebl v\u00e9g\u00e9tarien ou vegan\n, parfaits pour composer un menu complet.\nCette Tourte de No\u00ebl pleurotes et estragon a vraiment tout pour devenir votre nouveau plat signature des f\u00eates : une farce parfum\u00e9e, une b\u00e9chamel soyeuse, des feuilles de filo croustillantes et un parfum d\u2019estragon qui sent No\u00ebl avant m\u00eame qu\u2019on la d\u00e9coupe. Vegan, \u00e9l\u00e9gante, g\u00e9n\u00e9reuse\u2026 et bluffante pour toute la table, v\u00e9g\u00e9 ou non.  Pour encore plus d\u2019inspirations croustillantes, d\u00e9couvrez\ntoutes nos recettes de tourtes, tartes et quiches\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChampignon\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\nrecette de tofu\n,\nTourte\n,\ntourte de noel\n,\ntourte vegan\n,\ntourte vegetarienne\nTruffes Coco Amande vegan : la douceur de No\u00ebl en trois ingr\u00e9dients\nSabl\u00e9s de No\u00ebl \u00e0 la cannelle\n5 thoughts on \u201cTourte de No\u00ebl pleurotes et estragon, le plat vegan qui fait sensation \u00e0 table\u00a0\u201d\nNATH\ndit\u00a0:\n15 d\u00e9cembre 2022 \u00e0 14 h 23 min\nBonjour, je ne vais certainement pas attendre No\u00ebl pour la tester mais auparavant j\u2019aimerais connaitre la dimension de votre tourti\u00e8re juste pour que j\u2019adapte les quantit\u00e9s de garniture. Merci pour tous vos partages. Nathalie\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n19 d\u00e9cembre 2022 \u00e0 18 h 53 min\nHello Nathalie, excellente question : 20cm de diam\u00e8tre\nchargement\u2026\nR\u00e9pondre\nSylvie M\ndit\u00a0:\n26 d\u00e9cembre 2023 \u00e0 18 h 06 min\nUne tuerie !! Toute la famille est tomb\u00e9e d\u2019accord  -v\u00e9g\u00e9tariens et mangeurs de viande- cette tourte est excellente, tr\u00e8s parfum\u00e9e et tr\u00e8s agr\u00e9able avec le croustillant des feuilles de brick (pas trouv\u00e9 de feuilles  de filo). Recette \u00e0 garder pr\u00e9cieusement. Merci beaucoup !\nchargement\u2026\nR\u00e9pondre\nKarine\ndit\u00a0:\n28 d\u00e9cembre 2024 \u00e0 11 h 24 min\nExcellente recette ! c\u2019est original et savoureux.  La pr\u00e9sentation est tr\u00e8s chic.  Ma seule petite remarque, mais c\u2019est une question de go\u00fbt : la prochaine fois, je ne mettrai que 2 ou 3 brins d\u2019estragon car c\u2019est une herbe au go\u00fbt puissant.\nchargement\u2026\nR\u00e9pondre\nBresson\ndit\u00a0:\n1 janvier 2025 \u00e0 13 h 47 min\nExcellent ! N\u2019aimant pas le c\u00e9leri je l\u2019ai  remplac\u00e9  par du poireau  et tout le monde s\u2019est r\u00e9gal\u00e9\nchargement\u2026\nR\u00e9pondre\n4.50 from 50 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 75.0
+}

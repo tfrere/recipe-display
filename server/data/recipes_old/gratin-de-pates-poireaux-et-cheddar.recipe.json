@@ -1,0 +1,440 @@
+{
+  "metadata": {
+    "title": "Gratin de P\u00e2tes Poireaux et Cheddar",
+    "description": "Un gratin de p\u00e2tes fondant et fromageux, r\u00e9alis\u00e9 avec des poireaux, du cheddar, de la mozzarella et de l'emmental.",
+    "servings": 5,
+    "prepTime": "PT30M",
+    "cookTime": "PT50M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "gratin",
+      "gratin de p\u00e2tes",
+      "gratin vegetarien",
+      "poireau",
+      "cheddar",
+      "automne",
+      "hiver",
+      "plat au four"
+    ],
+    "imageUrl": "https://i0.wp.com/freethepickle.fr/wp-content/uploads/2022/03/Gratin-de-poireaux-cheddar-7-of-7.jpg?ssl=1",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "R\u00e9alis\u00e9 avec une po\u00eale en inox compatible four (comme la Casteline de Cristel) pour \u00e9conomiser de la vaisselle.",
+      "L'inox peut aller au lave-vaisselle sans probl\u00e8me.",
+      "Pour une version vegan, adapter les ingr\u00e9dients (commentaire de La\u00ebtitia)."
+    ],
+    "slug": "gratin-de-pates-poireaux-et-cheddar",
+    "sourceImageUrl": "https://i0.wp.com/freethepickle.fr/wp-content/uploads/2022/03/Gratin-de-poireaux-cheddar-7-of-7.jpg?ssl=1",
+    "sourceUrl": "https://freethepickle.fr/2022/03/10/gratin-de-pates-poireaux-et-cheddar/",
+    "image": "images/gratin-de-pates-poireaux-et-cheddar.jpg",
+    "createdAt": "2026-02-09T21:07:58.929232",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 50.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 457.3,
+      "protein": 11.4,
+      "fat": 30.9,
+      "carbs": 35.8,
+      "fiber": 4.6,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 9,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "leeks",
+      "name": "poireaux",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "moyens",
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 20.0,
+      "unit": "cl",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "emmental",
+      "name": "emmental r\u00e2p\u00e9",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated emmental"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella r\u00e2p\u00e9e",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Grated mozzarella"
+    },
+    {
+      "id": "cheddar",
+      "name": "cheddar r\u00e2p\u00e9",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "shredded cheddar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "pasta",
+      "name": "p\u00e2tes",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "de votre choix",
+      "optional": false,
+      "name_en": "Pasta"
+    }
+  ],
+  "tools": [
+    "Po\u00eale compatible four (en inox de pr\u00e9f\u00e9rence)",
+    "Passoire"
+  ],
+  "steps": [
+    {
+      "id": "slice_shallots",
+      "action": "\u00c9mincer les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots"
+      ],
+      "produces": "sliced_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_slice_leeks",
+      "action": "Nettoyer et \u00e9mincer les poireaux (vert et blanc).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leeks"
+      ],
+      "produces": "sliced_leeks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faire chauffer l'huile dans une po\u00eale (en inox de pr\u00e9f\u00e9rence, qui pourra ensuite aller directement au four).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots_leeks",
+      "action": "Faire revenir les \u00e9chalotes et les poireaux pendant 10min puis ajouter les gousses d'ail press\u00e9es.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_shallots",
+        "sliced_leeks",
+        "hot_oil",
+        "garlic"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_vegetables",
+      "action": "Assaisonner les l\u00e9gumes avec du sel et du poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_leeks",
+      "action": "Baisser le feu, couvrir et laisser cuire en remuant de temps en temps pendant 20min. Les poireaux doivent \u00eatre bien fondants.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_vegetables"
+      ],
+      "produces": "tender_leeks",
+      "requires": [],
+      "visualCue": "poireaux bien fondants"
+    },
+    {
+      "id": "cook_pasta",
+      "action": "Pendant ce temps, faire cuire les p\u00e2tes al dente dans un grand volume d'eau bouillante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pasta",
+      "uses": [
+        "pasta"
+      ],
+      "produces": "cooked_pasta",
+      "requires": [],
+      "visualCue": "al dente"
+    },
+    {
+      "id": "reserve_pasta_water",
+      "action": "R\u00e9server 3 louches d'eau de cuisson des p\u00e2tes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pasta",
+      "uses": [
+        "cooked_pasta"
+      ],
+      "produces": "pasta_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_cheeses",
+      "action": "M\u00e9langer les fromages (emmental, mozzarella, cheddar) dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cheese",
+      "uses": [
+        "emmental",
+        "mozzarella",
+        "cheddar"
+      ],
+      "produces": "mixed_cheeses",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "Quand les poireaux sont cuits, retirer du feu et verser la cr\u00e8me, les 2/3 des fromages r\u00e2p\u00e9s et les 3 louches d'eau de cuisson des p\u00e2tes. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tender_leeks",
+        "cream",
+        "mixed_cheeses",
+        "pasta_water"
+      ],
+      "produces": "leek_cheese_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_pasta_to_sauce",
+      "action": "Si votre po\u00eale n'est pas compatible four, transvaser le m\u00e9lange dans un plat allant au four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leek_cheese_sauce",
+        "cooked_pasta"
+      ],
+      "produces": "pasta_in_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "top_with_cheese",
+      "action": "R\u00e9partir le fromage restant au-dessus du gratin.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pasta_in_sauce",
+        "mixed_cheeses"
+      ],
+      "produces": "topped_gratin",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_gratin",
+      "action": "Enfourner \u00e0 mi-hauteur pendant 20min.",
+      "duration": "PT20M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "topped_gratin"
+      ],
+      "produces": "baked_gratin",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_gratin"
+      ],
+      "produces": "gratin_pates_poireaux_cheddar",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "gratin_pates_poireaux_cheddar",
+  "originalText": "Gratin de P\u00e2tes Poireaux et Cheddar - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 mars 2022\nGratin de P\u00e2tes Poireaux et Cheddar\nAller \u00e0 la recette\nHello les amis ! On se retrouve aujourd\u2019hui pour un Gratin de P\u00e2tes Poireaux et Cheddar ! J\u2019ai r\u00e9alis\u00e9 ce plat dans le cadre de\nnotre collaboration avec Cristel\n! Notre marque de casseroles et po\u00eales pr\u00e9f\u00e9r\u00e9es !\nJ\u2019ai imagin\u00e9 ce gratin de p\u00e2te en ayant un mot en t\u00eate : CHEESY !\nJ\u2019adore les gratins de p\u00e2tes. C\u2019est toujours un succ\u00e8s \u00e0 la maison ! Et j\u2019adore pouvoir varier la composition en fonction des saisons ! Et de ce que j\u2019ai dans le frigo.\nEn l\u2019occurrence, j\u2019avais des poireaux au frigo. Et quoi de meilleur qu\u2019une bonne fondue de poireaux ? D\u2019ailleurs, c\u2019est une base que j\u2019utilise souvent. Notamment pour\ncette tarte aux poireaux sans gluten\n. Et aussi dans\ncette quiche d\u2019ailleurs\n!\nEt puis, je trouve qu\u2019un gratin de p\u00e2tes sans une bonne grosse dose de fromage\u2026 Quel int\u00e9r\u00eat !?\nDu coup, j\u2019ai utilis\u00e9 du cheddar comme fromage principal. Et j\u2019y ai ajout\u00e9 un peu de mozzarella pour assurer du fondant et du filant. Un peu d\u2019emmental r\u00e2p\u00e9 pour compl\u00e9ter le tout ! Et je dois bien vous dire qu\u2019on est sur une r\u00e9ussite !\nMais sinon, les gratins de p\u00e2tes, oui c\u2019est merveilleux. Mais il y a un inconv\u00e9nient majeur. En effet, \u00e7a salit beaucoup trop de po\u00eales, plats et casseroles. Car, si je compte, il faut une po\u00eale pour cuisiner les poireaux. Une casserole et une passoire pour les p\u00e2tes. Un plat pour gratiner au four. C\u2019est un peu relou. Perso, j\u2019adore cuisiner, mais moins je fais de vaisselle et mieux je me porte !\nDu coup, j\u2019ai utilis\u00e9\nla po\u00eale en inox Casteline\nde nos amis Cristel. Elle a l\u2019avantage ind\u00e9niable d\u2019\u00eatre compatible avec tout type de feu ET d\u2019aller au four. Comme la poign\u00e9e est amovible, il suffit de l\u2019enlever avant de refermer le four.\nEn gros, j\u2019ai \u00e9conomis\u00e9 le plat \u00e0 gratiner. Et en plus, j\u2019ai mis la po\u00eale au lave-vaisselle apr\u00e8s coup.\nVous saviez qu\u2019il est pr\u00e9f\u00e9rable d\u2019\u00e9viter de mettre du plastique et des ustensiles avec des rev\u00eatements antiadh\u00e9rents au lave-vaisselle ? C\u2019est un peu trop chaud et trop violent. Mais par contre, l\u2019inox, aucun probl\u00e8me ! Et je peux vous dire, que je ne m\u2019en prive pas !\nNos autres gratins de p\u00e2tes :\nGratin de Macaronis \u00e0 la Sauce Tomate et aux PST\n,\nGratin de P\u00e2tes V\u00e9g\u00e9tarien aux 3 Fromages, Artichauts et \u00c9pinards\n,\nGratin de P\u00e2tes V\u00e9g\u00e9tarien \u00e0 la Courge et sa B\u00e9chamel au Parmesan\n.\nGratin de P\u00e2tes Poireaux et Cheddar\nNatacha\n4.50\n/5 avec\n115\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\n\u00e9chalotes\n3\npoireaux moyens\n3\nc\u00e0s d\u2019huile d\u2019olive\n3\ngousses d\u2019ail\n20\ncl\nde cr\u00e8me liquide\n150\ng\nd\u2019emmental r\u00e2p\u00e9\n150\ng\nde mozzarella r\u00e2p\u00e9e\n300\ng\nde cheddar r\u00e2p\u00e9\nsel\npoivre\n500\ng\nde p\u00e2tes de votre choix\n3\nlouches d\u2019eau de cuisson des p\u00e2tes\nInstructions\nEmincer les \u00e9chalotes.\nNettoyer et \u00e9mincer les poireaux (vert et blanc).\nFaire chauffer l\u2019huile dans une po\u00eale (en inox de pr\u00e9f\u00e9rence, qui pourra ensuite aller directement au four).\nFaire revenir les \u00e9chalotes et les poireaux une dizaine de minutes puis ajouter les gousses d\u2019ail press\u00e9es.\nBaisser le feu et couvrir. Laisser cuire en remuant de temps en temps pendant encore 15 \u00e0 20min. Les poireaux doivent \u00eatre bien fondants.\nPendant ce temps, faire cuire les p\u00e2tes dans un grand volume d\u2019eau bouillante. Opter pour une cuisson al dente.\nPenser \u00e0 r\u00e9server 3 louches d\u2019eau de cuisson.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nM\u00e9langer les fromages dans un saladier.\nQuand les poireaux sont cuits, retirer du feu et verser la cr\u00e8me, les 2/3 fromages r\u00e2p\u00e9s et les 3 louches d\u2019eau de cuisson des p\u00e2tes.\nBien m\u00e9langer.\nSi votre po\u00eale est en inox, vous pouvez continuer dedans. Sinon transvaser dans un plat qui va au four.\nR\u00e9partir le fromage restant au-dessus de votre gratin.\nEnfourner \u00e0 mi-hauteur pour 20min.\nR\u00e9galez-vous !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nPlats au Four\n,\nPoireau\n,\nRecettes Sal\u00e9es\nTags:\ngratin\n,\ngratin de p\u00e2tes\n,\ngratin pate vegetarien\n,\ngratin vegetarien\n,\nid\u00e9e gratin\n,\nid\u00e9e recette cheddar\n,\nid\u00e9es recettes poireaux\n,\npoireau\n,\nque faire avec des poireaux\n,\nrecette avec des poireaux\n,\nrecette p\u00e2te\n,\nrecette poireau\nMuffins au Citron (Air Fryer)\nPizza rolls aux 3 fromages\n2 thoughts on \u201cGratin de P\u00e2tes Poireaux et Cheddar\u201d\nLa\u00ebtitia\ndit\u00a0:\n11 mars 2022 \u00e0 8 h 47 min\nJe vais faire cette recette en version vegan, cela me donne une id\u00e9e pour utiliser le poireau, moi qui adore \ud83d\ude0d\ud83e\udd70\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phane\ndit\u00a0:\n24 mars 2022 \u00e0 10 h 58 min\nExcellent !!\nchargement\u2026\nR\u00e9pondre\n4.50 from 115 votes (\n114 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

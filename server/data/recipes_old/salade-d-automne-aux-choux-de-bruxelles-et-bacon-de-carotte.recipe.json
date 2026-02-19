@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "title": "Salade d'Automne aux Choux de Bruxelles et Bacon de Carotte",
+    "description": "Salade automnale v\u00e9g\u00e9tarienne avec des choux de Bruxelles r\u00f4tis, du \"bacon\" de carotte, de la pomme, de la f\u00eata, des noix et des cranberries.",
+    "servings": 5,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "choux de bruxelles",
+      "salade automne",
+      "salade v\u00e9g\u00e9tarienne",
+      "automne",
+      "carotte"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Salade-Chou-de-Bruxelles-1-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les choux de Bruxelles r\u00f4tis au four avec une marinade simple (ail, huile, sel et poivre) r\u00e9v\u00e8lent leur go\u00fbt.",
+      "Recette inspir\u00e9e des salades am\u00e9ricaines de Thanksgiving.",
+      "Peut se servir ti\u00e8de ou froid."
+    ],
+    "slug": "salade-d-automne-aux-choux-de-bruxelles-et-bacon-de-carotte",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Salade-Chou-de-Bruxelles-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/18/salade-dautomne-aux-choux-de-bruxelles-et-bacon-de-carotte/",
+    "image": "images/salade-d-automne-aux-choux-de-bruxelles-et-bacon-de-carotte.webp",
+    "createdAt": "2026-02-09T20:45:26.523431",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 327.0,
+      "protein": 10.0,
+      "fat": 24.9,
+      "carbs": 21.2,
+      "fiber": 7.6,
+      "confidence": "high",
+      "resolvedIngredients": 14,
+      "matchedIngredients": 16,
+      "totalIngredients": 17,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "grosse",
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini complet",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "brussels_sprouts",
+      "name": "choux de bruxelles",
+      "quantity": 750.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Brussels sprouts"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "olive_oil_marinade",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "apple",
+      "name": "pomme chantecler",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chantecler apple"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "cranberries",
+      "name": "cranberries s\u00e9ch\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "dried cranberries"
+    },
+    {
+      "id": "walnuts",
+      "name": "noix",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "walnut"
+    },
+    {
+      "id": "mustard",
+      "name": "moutarde fine",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dijon mustard"
+    },
+    {
+      "id": "maple_syrup_dressing",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la vinaigrette",
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "olive_oil_dressing",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la vinaigrette",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "wine_vinegar",
+      "name": "vinaigre de vin",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Wine vinegar"
+    },
+    {
+      "id": "salt_dressing",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la vinaigrette",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_dressing",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la vinaigrette",
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Four",
+    "2 plaques de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "prepare_carrot_bacon",
+      "action": "Suivez la recette li\u00e9e pour pr\u00e9parer le bacon de carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bacon_de_carotte",
+      "uses": [
+        "carrot",
+        "tahini",
+        "maple_syrup",
+        "olive_oil",
+        "soy_sauce",
+        "smoked_paprika"
+      ],
+      "produces": "carrot_bacon_prepared",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_brussels_sprouts",
+      "action": "Nettoyer et couper en 2 les choux de Bruxelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "choux_de_bruxelles",
+      "uses": [
+        "brussels_sprouts"
+      ],
+      "produces": "cleaned_brussels_sprouts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate_brussels_sprouts",
+      "action": "Les transf\u00e9rer dans un saladier et ajouter les 2 gousses d'ail press\u00e9es, 3 c\u00e0s d'huile d'olive, le sel et le poivre. Bien m\u00e9langer pour que chaque chou soit enduit.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "choux_de_bruxelles",
+      "uses": [
+        "cleaned_brussels_sprouts",
+        "garlic",
+        "olive_oil_marinade",
+        "salt",
+        "pepper"
+      ],
+      "produces": "marinated_brussels_sprouts",
+      "requires": [],
+      "visualCue": "bien enduits"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_on_sheets",
+      "action": "D\u00e9poser les choux de Bruxelles sur la premi\u00e8re plaque. D\u00e9poser les tranches de carottes pr\u00e9par\u00e9es (bacon) sur la deuxi\u00e8me plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "marinated_brussels_sprouts",
+        "carrot_bacon_prepared"
+      ],
+      "produces": "arranged_on_sheets",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "bake_carrots",
+      "action": "Enfourner les 2 plaques. Laisser cuire les carottes 20min puis sortir du four et laisser refroidir.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "arranged_on_sheets"
+      ],
+      "produces": "baked_carrots_cooled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "finish_brussels_sprouts",
+      "action": "Remuer les choux de Bruxelles et laisser cuire encore 10min.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "baked_carrots_cooled"
+      ],
+      "produces": "roasted_brussels_sprouts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_apple",
+      "action": "Couper la \u00bd pomme en tranches fines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "apple"
+      ],
+      "produces": "sliced_apple",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crumble_feta",
+      "action": "\u00c9mietter la 100g de f\u00eata.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "feta"
+      ],
+      "produces": "crumbled_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_walnuts",
+      "action": "Concasser la poign\u00e9e de noix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "walnuts"
+      ],
+      "produces": "chopped_walnuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_salad",
+      "action": "Dans un grand saladier, m\u00e9langer tous les ingr\u00e9dients : choux de Bruxelles r\u00f4tis, carottes (bacon), pommes, noix, cranberries et f\u00eata.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "roasted_brussels_sprouts",
+        "baked_carrots_cooled",
+        "sliced_apple",
+        "chopped_walnuts",
+        "cranberries",
+        "crumbled_feta"
+      ],
+      "produces": "salad_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_dressing",
+      "action": "Dans un petit bol, m\u00e9langer tous les ingr\u00e9dients de la vinaigrette (moutarde, sirop d'\u00e9rable, huile d'olive, vinaigre, sel, poivre) et verser sur la salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "mustard",
+        "maple_syrup_dressing",
+        "olive_oil_dressing",
+        "wine_vinegar",
+        "salt_dressing",
+        "pepper_dressing"
+      ],
+      "produces": "dressing",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dress_salad",
+      "action": "Servir ti\u00e8de ou froid.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage_de_la_salade",
+      "uses": [
+        "salad_base",
+        "dressing"
+      ],
+      "produces": "salade_automne_choux_bruxelles_bacon_carotte",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_automne_choux_bruxelles_bacon_carotte",
+  "originalText": "Salade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 novembre 2021\nSalade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte\nAcc\u00e9der directement \u00e0 la recette\nAlors, je commence \u00e0 pr\u00e9ciser que je n\u2019aime habituellement pas les choux de Bruxelles, mais alors, cette Salade d\u2019Automne aux Choux de Bruxelles et\nBacon de Carotte\n\u2026 Tellement bonne. Que j\u2019en viens \u00e0 revoir compl\u00e8tement cette affirmation.\nLes choux de Bruxelles, sont, et restent, des petites boules au go\u00fbt tr\u00e8s prononc\u00e9.\nMais r\u00f4tis au four avec une petite marinade toute simple (ail, huile, sel et poivre), ils se r\u00e9v\u00e8lent compl\u00e8tement. Pour mes papilles en tout cas, \u00e7a a \u00e9t\u00e9 une vraie r\u00e9v\u00e9lation.\nEt ensuite, je les ai associ\u00e9s de fa\u00e7on assez classique avec de la pomme, des noix, de la f\u00eata et des cranberries. Bon, quand je dis classique, il faut que je pr\u00e9cise. Ce ne sont pas forc\u00e9ment des associations classiques pour nous en France. Mais allez savoir pourquoi, les am\u00e9ricains sont fans de Choux de Bruxelles. Comme ils le sont de brocolis d\u2019ailleurs. Ce qui m\u2019a toujours sembl\u00e9 \u00e9trange. Mais bref, je me perds. Ils sont donc fans de choux de Bruxelles et en mangent souvent en automne/hiver. C\u2019est un aliment qu\u2019on retrouve dans beaucoup de recettes de Thanksgiving. Et du coup, je me suis inspir\u00e9e de leur salade et je l\u2019ai un peu remix\u00e9 \u00e0 ma sauce. ET voil\u00e0 comme est n\u00e9e la  Salade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte  ! Fanchement, je dois dire que je donne un 10/10 aux am\u00e9ricains pour leur belle id\u00e9e !\nEt vous, vous aimez les choux de Bruxelles ? Quelle est votre recette pr\u00e9f\u00e9r\u00e9e ?\nEt pour d\u2019autres recettes automnales, vous pouvez consulter\nnotre article d\u00e9di\u00e9 aux recettes vegans d\u2019automne\n!\nSalade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte\nNatacha\n4.52\n/5 avec\n103\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour le bacon de carottes\n1\ngrosse carotte\n1\nc\u00e0s de tahini\ncomplet de pr\u00e9f\u00e9rence\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n1\nc\u00e0s d\u2019huile d\u2019olive\n1,5\nc\u00e0s de sauce soja\n1\nc\u00e0c de paprika fum\u00e9\nIngr\u00e9dients pour les choux de bruxelles\n750\ng\nde choux de bruxelles\n2\ngousses d\u2019ail\n3\nc\u00e0s d\u2019huile d\u2019olive\nsel\npoivre\nIngr\u00e9dients pour la salade\n\u00bd\npomme chantecler\n100\ng\nde f\u00eata \u00e9miett\u00e9e\n1\npoign\u00e9e de cranberries s\u00e9ch\u00e9es\n1\npoign\u00e9e de noix concass\u00e9es\nIngr\u00e9dients pour la vinaigrette\n1\nc\u00e0c de moutarde fine\n1\nc\u00e0c de sirop d\u2019\u00e9rable\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0s de vinaigre de vin\nsel\npoivre\nInstructions\nPr\u00e9paration du bacon de carotte\nSuivez cette recette pour pr\u00e9parer le bacon de carotte.\nPr\u00e9paration des choux de Bruxelles\nNettoyer et couper en 2 les choix de Bruxelles.\nLes transf\u00e9rer dans un saladier et ajouter 2 gousses d\u2019ail press\u00e9es, l\u2019huile, le sel et le poivre.\nBien m\u00e9langer pour que chaque chou soit enduit.\nCuisson\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPr\u00e9parer 2 plaques de cuisson en les couvrant de papier cuisson.\nD\u00e9posez les choux de Bruxelles sur la premi\u00e8re. Et d\u00e9poser les tranches de carottes les unes \u00e0 c\u00f4t\u00e9 des autres sur la deuxi\u00e8me.\nEnfourner les 2 plaques.\nLaisser cuire les carottes 20min puis sortir du four et laisser refroidir.\nRemuer les choux de Bruxelles et laisser cuire encore 10min.\nPr\u00e9paration du reste de la salade\nCouper la pomme en tranches fines.\n\u00c9mietter la f\u00eata.\nConcasser les noix.\nM\u00e9langer tous les ingr\u00e9dients : choux, carottes, pommes, noix, cranberries et f\u00eata.\nM\u00e9langer tous les ingr\u00e9dients de la vinaigrette et verser par dessus.\nServir ti\u00e8de ou froid !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChoux\n,\nNon class\u00e9\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nchoux de bruxelles\n,\ncomment cuisiner les choux de bruxelles\n,\nidee recette salade vegetarienne\n,\nrecette choux de bruxelles\n,\nsalade automne\n,\nsalade v\u00e9g\u00e9tarienne\nBacon de carotte (Vegan + Sans gluten)\nBarres fa\u00e7on Pecan Pie\n2 thoughts on \u201cSalade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte\u201d\nStephanie\ndit\u00a0:\n13 janvier 2022 \u00e0 14 h 16 min\nLoved this, was fiercely proud of my carrot bacon. The look and the taste was super!!\nchargement\u2026\nR\u00e9pondre\nClaire Lintos\ndit\u00a0:\n11 novembre 2025 \u00e0 20 h 21 min\nMerci pour cette d\u00e9licieuse recette ! J\u2019ai remplac\u00e9 la pomme par la betterave car j\u2019ai vu trop tard que je n\u2019avais plus de pomme.. et c\u2019\u00e9tait tout de m\u00eame un d\u00e9lice!\nchargement\u2026\nR\u00e9pondre\n4.52 from 103 votes (\n101 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

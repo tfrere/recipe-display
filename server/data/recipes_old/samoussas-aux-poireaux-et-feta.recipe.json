@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "title": "Samoussas aux poireaux et feta",
+    "description": "J'adore ces petits Samoussas aux poireaux et feta ! Ils sont tout simples \u00e0 r\u00e9aliser. Et ils permettent d'utiliser les verts de poireaux.",
+    "servings": 18,
+    "prepTime": "PT30M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "filo",
+      "poireau",
+      "feta",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Samoussas-poireau-feta-2-of-5.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Permet d'utiliser les verts de poireaux.",
+      "Inspiration de la spanakopita.",
+      "L'aneth s\u00e9ch\u00e9 et l'origan s\u00e9ch\u00e9 sont recommand\u00e9s, le persil et la coriandre s\u00e9ch\u00e9s sont d\u00e9conseill\u00e9s.",
+      "Peut \u00eatre congel\u00e9 avant cuisson (selon l'auteur)."
+    ],
+    "slug": "samoussas-aux-poireaux-et-feta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Samoussas-poireau-feta-2-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/10/samoussas-aux-poireaux-et-feta/",
+    "image": "images/samoussas-aux-poireaux-et-feta.webp",
+    "createdAt": "2026-02-09T21:35:33.850739",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 88.0,
+    "totalCookingTime": 43.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 79.4,
+      "protein": 2.7,
+      "fat": 6.4,
+      "carbs": 3.1,
+      "fiber": 0.4,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "poireaux",
+      "name": "poireaux",
+      "quantity": 280.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "persil_plat",
+      "name": "persil plat",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "aneth_seche",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "origan_seche",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles de filo",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "slice_leeks",
+      "action": "\u00c9mincer finement les poireaux.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "poireaux"
+      ],
+      "produces": "poireaux_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_leeks",
+      "action": "Les faire revenir dans une po\u00eale avec l'huile d'olive \u00e0 feu moyen pendant 20min \u00e0 couvert. Remuer de temps en temps.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "poireaux_eminces",
+        "huile_dolive"
+      ],
+      "produces": "poireaux_cuits",
+      "requires": [],
+      "visualCue": "fondants"
+    },
+    {
+      "id": "transfer_leeks",
+      "action": "Les transf\u00e9rer dans un bol.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "poireaux_cuits"
+      ],
+      "produces": "poireaux_dans_bol",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_parsley",
+      "action": "Hacher le persil.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "persil_plat"
+      ],
+      "produces": "persil_hache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_herbs_cheese",
+      "action": "L'ajouter au bol avec l'aneth, l'origan, le sel, le poivre et la feta \u00e9miett\u00e9e.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "poireaux_dans_bol",
+        "persil_hache",
+        "aneth_seche",
+        "origan_seche",
+        "sel",
+        "poivre",
+        "feta"
+      ],
+      "produces": "melange_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_eggs",
+      "action": "Ajouter les 2 \u0153ufs.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_base",
+        "oeufs"
+      ],
+      "produces": "melange_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_filling",
+      "action": "M\u00e9langer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_complet"
+      ],
+      "produces": "farce_samoussas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_filo",
+      "action": "Couper les feuilles de filo en deux dans la longueur.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feuilles_filo"
+      ],
+      "produces": "feuilles_filo_coupees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_filo",
+      "action": "Plier un rectangle en 2 dans la longueur pour obtenir une longue bande.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feuilles_filo_coupees"
+      ],
+      "produces": "bandes_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_oil",
+      "action": "Passer un pinceau imbib\u00e9 d'huile dessus.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bandes_filo",
+        "huile_dolive"
+      ],
+      "produces": "bandes_filo_huil\u00e9es",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_fold",
+      "action": "D\u00e9poser 1 grosse c\u00e0s de garniture et plier.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bandes_filo_huil\u00e9es",
+        "farce_samoussas"
+      ],
+      "produces": "samoussas_formes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_on_tray",
+      "action": "D\u00e9poser les samoussas sur une plaque de cuisson.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "samoussas_formes"
+      ],
+      "produces": "samoussas_sur_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Huiler le dessus des samoussas et enfourner pour 25min.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "samoussas_sur_plaque",
+        "huile_dolive"
+      ],
+      "produces": "samoussas_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "samoussas_cuits",
+  "originalText": "Samoussas aux poireaux et feta - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 octobre 2022\nSamoussas aux poireaux et feta\nAller \u00e0 la recette\nJ\u2019adore ces petits Samoussas aux poireaux et feta !\nIls sont tout simples \u00e0 r\u00e9aliser. Et ils permettent d\u2019utiliser les verts de poireaux.\nBon en vrai, en g\u00e9n\u00e9ral, j\u2019utilise le blanc et le vert ensemble. Mais l\u00e0, j\u2019avais besoin des blancs pour une recette sp\u00e9cifique. Et j\u2019avais des feuilles de filo au frigo. Du coup\u2026 On fait quoi avec des feuilles de filo ?? A priori, des trucs super croustillants !\nLes baklavas grecs\n\u00e9videmment. Mais aussi toutes sortes de samoussas, comme\nceux aux blettes\n. Ou des\nfeuillet\u00e9s \u00e0 la fet\na (tellement bon !!).\nDonc l\u00e0, j\u2019ai fait des samoussas au vert de poireau.\nJe suis rest\u00e9e assez classique. Avec une inspiration assez directe de la\nspanakopita\n!\nJe n\u2019avais pas d\u2019herbes fra\u00eeches. Et je trouve que toutes les herbes ne sont pas bonnes s\u00e9ch\u00e9es.\nTypiquement l\u2019aneth s\u00e9ch\u00e9 c\u2019est top. Idem pour l\u2019origan, le thym ou la menthe. Mais alors le persil. Non. La coriandre. JAMAIS !\nBref, l\u00e0 j\u2019ai mis de l\u2019aneth et de l\u2019origan. Ca parfume parfaitement ces petits Samoussas aux poireaux et feta ! Et les feuilles de filo, il n\u2019y a pas \u00e0 dire.  C\u2019est magique comme \u00e7a croustille !\nL\u2019\u0153uf apporte un peu de tenue et de moelleux. Et la feta\u2026 bin c\u2019est de la feta quoi ! Notre raison de vivre \u00e0 tous !\nSamoussas aux poireaux et feta\n4.67\n/5 avec\n74\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n18\nsamoussas\nIngr\u00e9dients\n1x\n2x\n3x\n280\ng\nde poireaux\nenv 2\n4\nc\u00e0s d\u2019huile d\u2019olive\n10\nbranches de persil plat\n1\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\n1\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\nsel\npoivre\n200\ng\nde feta\n2\noeufs\n10\nfeuilles de filo\nInstructions\n\u00c9mincer finement les poireaux.\nLes faire revenir dans une po\u00eale avec l\u2019huile d\u2019olive \u00e0 feu moyen pendant 20min \u00e0 couvert.\nRemuer de temps en temps. C\u2019est pr\u00eat lorsqu\u2019ils sont fondants.\nLes transf\u00e9rer dans un bol.\nHacher le persil.\nL\u2019ajouter au bol avec l\u2019aneth, l\u2019origan, le sel, le poivre et la feta \u00e9miett\u00e9e.\nAjouter les 2 \u0153ufs.\nM\u00e9langer.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nCouper les feuilles de filo en deux dans la longueur.\nPlier un rectangle en 2 dans la longueur pour obtenir une longue bande.\nPasser un pinceau imbib\u00e9 d\u2019huile dessus.\nD\u00e9poser 1 grosse c\u00e0s de garniture et plier.\nD\u00e9poser les samoussas sur une plaque de cuisson.\nHuiler le dessus des samoussas et enfourner pour 25min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nNon class\u00e9\n,\nPoireau\nTags:\nfilo\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\nTarte tatin Ch\u00e8vre et Poireaux\n3 thoughts on \u201cSamoussas aux poireaux et feta\u201d\nKarine\ndit\u00a0:\n11 d\u00e9cembre 2022 \u00e0 12 h 51 min\nJ\u2019en ai l\u2019eau \u00e0 la bouche ! Est ce que tu penses qu\u2019on peut les congeler ? Avant cuisson peut \u00eatre ?\nCar j\u2019ai bien envie d\u2019en faire en quantit\u00e9 pour en avoir pour No\u00ebl et pour le r\u00e9veillon du nouvel an .\nMerci pour cette recette et pour toutes les autres qui ne m\u2019ont jamais d\u00e9\u00e7u\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 d\u00e9cembre 2022 \u00e0 16 h 03 min\nHello Karine \ud83d\ude42 avec plaisir ! Je dois t\u2019avouer que je n\u2019ai jamais essay\u00e9 de les congeler. Je pense que si tu tentes il faudrait effectivement le faire avant cuisson.\nchargement\u2026\nR\u00e9pondre\nCamille\ndit\u00a0:\n30 octobre 2023 \u00e0 21 h 39 min\nPremi\u00e8re fois que je fais une recette sur votre site, c\u2019\u00e9tait une grande r\u00e9ussite ! Tout ce que j\u2019aime. Sain et go\u00fbteux. Merci !\nchargement\u2026\nR\u00e9pondre\n4.67 from 74 votes (\n73 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 43.0
+}

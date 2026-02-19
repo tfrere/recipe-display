@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "title": "Tofu aux Echalotes",
+    "description": "Cette recette de Tofu aux Echalotes est celle de ma s\u0153ur ! C'est une recette simple, mais d\u00e9licieuse.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "tofu",
+      "\u00e9chalote",
+      "vegan",
+      "sans gluten",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps",
+      "plat en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Tofu-echalotes-4-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha (recette de sa s\u0153ur L\u00e9na, inspir\u00e9e d'Ottolenghi)",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette adapt\u00e9e d'un livre d'Ottolenghi.",
+      "Pour un plat plus doux, ajouter un peu de sirop ou de sucre.",
+      "Pour une version sans gluten, utiliser de la sauce soja tamari.",
+      "Presser le tofu permet de le d\u00e9gorger de son eau, d'absorber plus de marinade et d'obtenir une texture plus ferme.",
+      "Certaines personnes cong\u00e8lent leur tofu avant de le cuisiner pour changer la texture (elle devient spongieuse).",
+      "Servir avec du riz.",
+      "Un bloc de tofu fait environ 200g. Pour 5 personnes, pr\u00e9voir 2 blocs."
+    ],
+    "slug": "tofu-aux-echalotes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Tofu-echalotes-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/27/tofu-aux-echalotes/",
+    "image": "images/tofu-aux-echalotes.webp",
+    "createdAt": "2026-02-09T21:32:13.493842",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 24.0,
+    "totalCookingTime": 24.0,
+    "nutritionPerServing": {
+      "calories": 215.1,
+      "protein": 4.8,
+      "fat": 7.8,
+      "carbs": 33.4,
+      "fiber": 3.0,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_ferme",
+      "name": "bloc de tofu ferme",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Firm tofu block"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "huile_tournesol",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sirop_erable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Torchon propre",
+    "Poids lourd (ex: casserole)",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "presser_tofu",
+      "action": "Presser le bloc de tofu pour en faire sortir l'eau. Pour cela, l'enrouler dans un torchon propre et placer quelque chose de lourd par-dessus (une casserole par exemple).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_ferme"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mincer_legumes",
+      "action": "Pendant ce temps, \u00e9mincer finement les \u00e9chalotes, l'ail et le gingembre. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "echalotes",
+        "ail",
+        "gingembre_frais"
+      ],
+      "produces": "legumes_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_tofu_fecule",
+      "action": "Couper le tofu en cubes et les couvrir de f\u00e9cule de ma\u00efs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_presse",
+        "fecule_mais"
+      ],
+      "produces": "cubes_tofu_fecule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dorer_tofu",
+      "action": "Faire chauffer une po\u00eale avec 1 c\u00e0s d'huile et y faire revenir les cubes de tofu \u00e0 feu moyen jusqu'\u00e0 ce qu'ils dorent.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cubes_tofu_fecule",
+        "huile_tournesol"
+      ],
+      "produces": "tofu_dore",
+      "requires": [],
+      "visualCue": "dor\u00e9s"
+    },
+    {
+      "id": "reserver_tofu",
+      "action": "R\u00e9server le tofu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_dore"
+      ],
+      "produces": "tofu_dore_reserve",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Dans la m\u00eame po\u00eale, verser 1 c\u00e0s d'huile et faire revenir les \u00e9chalotes, l'ail et le gingembre \u00e0 feu moyen-fort jusqu'\u00e0 ce que les \u00e9chalotes deviennent fondantes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_eminces",
+        "huile_tournesol"
+      ],
+      "produces": "legumes_fondants",
+      "requires": [],
+      "visualCue": "\u00e9chalotes fondantes"
+    },
+    {
+      "id": "faire_sauce",
+      "action": "Verser la sauce soja et le sirop d'\u00e9rable dans la po\u00eale et laisser \u00e9paissir.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_fondants",
+        "sauce_soja",
+        "sirop_erable"
+      ],
+      "produces": "sauce_epaisse",
+      "requires": [],
+      "visualCue": "\u00e9paissie"
+    },
+    {
+      "id": "ajouter_poivre",
+      "action": "Concasser grossi\u00e8rement des grains de poivre et les ajouter.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_epaisse",
+        "poivre"
+      ],
+      "produces": "sauce_poivree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_tofu",
+      "action": "Ajouter le tofu et bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_poivree",
+        "tofu_dore_reserve"
+      ],
+      "produces": "tofu_sauce_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servir avec du riz !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_sauce_melange"
+      ],
+      "produces": "tofu_aux_echalotes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tofu_aux_echalotes",
+  "originalText": "Tofu aux Echalotes\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n27 septembre 2022\nTofu aux Echalotes\nAller \u00e0 la recette\nCette recette de Tofu aux Echalotes\u00a0est celle de ma s\u0153ur !\nMa s\u0153ur est 100% v\u00e9g\u00e9 depuis plusieurs ann\u00e9es maintenant, et c\u2019est la recette qu\u2019elle fait \u00e0 chaque fois qu\u2019il y a un repas de famille !\nIl faut dire que c\u2019est super bon ! Il me semble que c\u2019est une recette qu\u2019elle a d\u2019abord trouv\u00e9 dans un livre d\u2019Ottolenghi puis qu\u2019elle a un peu adapt\u00e9 \u00e0 sa sauce !\nElle fait sa version avec plus de sucre que la recette que je vous donne l\u00e0. Si vous aimez vos plats plus doux, n\u2019h\u00e9sitez pas \u00e0 ajouter un peu de sirop ou de sucre.\nVous pouvez d\u2019ailleurs adapter les ingr\u00e9dients en fonction de vos go\u00fbts. Comme pour toutes les recettes quoi ! C\u2019est une excellente recette sans gluten si vous utilisez de la sauce soja tamari d\u2019ailleurs !\nLa recette est simple, mais d\u00e9licieuse.\nJe vous conseille de toujours presser votre tofu avant de le cuisiner. Cela permet de le d\u00e9gorger de son eau. Si vous le marinez comme dans\ncette recette de nouilles \u00e0 l\u2019indo\n, il absorbe ainsi plus de la marinade. Et si vous les passez dans la f\u00e9cule pour le rendre croustillant, sa texture sera plus ferme. Et donc plus agr\u00e9able en bouche. J\u2019ai d\u2019ailleurs vu que certaines personnes cong\u00e8lent leur tofu avant de le cuisiner. Apparemment, la texture change compl\u00e8tement. Elle devient spongieuse et absorbe les marinades encore plus ! Quelqu\u2019un a d\u00e9j\u00e0 test\u00e9 ?\nEn tout cas, j\u2019esp\u00e8re que vous allez vous r\u00e9galer avec cette recette de Tofu aux Echalotes\u00a0 ! Et merci L\u00e9na !\nTofu aux Echalotes\n4.54\n/5 avec\n76\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nbloc de tofu ferme\n10\n\u00e9chalotes\n10\ngousses d\u2019ail\n1,5\nc\u00e0s de gingembre frais\n2\nc\u00e0s d\u2019huile de tournesol\n2\nc\u00e0s de f\u00e9cule de ma\u00efs\n100\nml\nde sauce soja\n3\nc\u00e0s de sirop d\u2019\u00e9rable\n1\nc\u00e0c de poivre\nInstructions\nPresser le bloc de tofu pour en faire sortir l\u2019eau. Pour cela, l\u2019enrouler dans un torchon propre et placer quelque chose de lourd par-dessus (une casserole par exemple).\nPendant ce temps, \u00e9mincer finement les \u00e9chalotes, l\u2019ail et le gingembre. R\u00e9server.\nCouper le tofu en cubes et les couvrir de f\u00e9cule de ma\u00efs. Cela permet de le rendre croustillant en cuisant.\nFaire chauffer une po\u00eale avec 1 c\u00e0s d\u2019huile et y faire revenir les cubes de tofu \u00e0 feu moyen jusqu\u2019\u00e0 ce qu\u2019ils dorent (env 10min).\nR\u00e9server le tofu.\nDans la m\u00eame po\u00eale, verser 1 c\u00e0s d\u2019huile et faire revenir les \u00e9chalotes, l\u2019ail et le gingembre \u00e0 feu moyen-fort jusqu\u2019\u00e0 ce que les \u00e9chalotes deviennent fondantes (env 10min).\nVerser la sauce soja et le sirop d\u2019\u00e9rable dans la po\u00eale et laisser \u00e9paissir 3-4min.\nConcasser grossi\u00e8rement des grains de poivre et les ajouter.\nAjouter le tofu et bien m\u00e9langer.\nServir avec du riz !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncuisiner tofu\n,\nechalote\n,\nrecette de tofu\n,\nrecette tofu\n,\nrecette tofu echalote\n,\ntofu\n,\ntofu qui a du gout\n,\nvegan\nPierogies Feta Epinards\nCr\u00eapes au Potimarron\n8 thoughts on \u201cTofu aux Echalotes\u00a0\u201d\nJulie, des Petits Plats Faciles\ndit\u00a0:\n28 septembre 2022 \u00e0 10 h 30 min\nJ\u2019avoue que d\u2019habitude, je ne suis pas fan de tofu, mais l\u00e0\u2026 \u00c7a me donne vraiment envie de tester !\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n5 octobre 2022 \u00e0 11 h 29 min\nCombien p\u00e8se votre bloc de tofu et pour combien de personnes est ce \u00e0 peu pr\u00e8s? J\u2019ai une famille de 5 et la quantit\u00e9 d\u2019\u00e9chalotes et d\u2019ail \u00e0 \u00e9plucher me fait un peu peur!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n5 octobre 2022 \u00e0 12 h 29 min\nHello Marie, c\u2019est un bloc de 200g. Je pense que vous pouvez en pr\u00e9voir 2 pour une famille de 5. Pour \u00e9plucher l\u2019ail rapidement, vous pouvez \u00e9craser les gousses sous la lame du couteau (\u00e0 plat, pas c\u00f4t\u00e9 tranchant) et les gousses s\u2019\u00e9pluchent en un clin d\u2019oeil apr\u00e8s. Par contre, effectivement les \u00e9chalotes\u2026 C\u2019est un peu long. Mais \u00e7a vaut le coup (si vous avez le temps \u00e9videment) ! Je sais qu\u2019on peut trouver des oignons \u00e9minc\u00e9s surgel\u00e9s. Peut-\u00eatre trouve-t-on aussi des \u00e9chalotes ?\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n5 octobre 2022 \u00e0 14 h 19 min\nMerci beaucoup pour votre r\u00e9ponse rapide \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n6 octobre 2022 \u00e0 13 h 33 min\nJ\u2019ai fait la recette aujourd\u2019hui, c\u2019\u00e9tait tr\u00e8s bon mais nous l\u2019avons tous trouv\u00e9 un peu trop sal\u00e9e (j\u2019ai mis 150ml de tamari  pour 2 blocs de tofu et 3cas de sucre de coco car plus de sirop d\u2019\u00e9rable). Des tips pour un r\u00e9sultat peu moins sal\u00e9? Esssayer avec 100ml de tamari et 50ml d\u2019eau peut \u00eatre?\nchargement\u2026\nR\u00e9pondre\nAnne\ndit\u00a0:\n14 mars 2024 \u00e0 21 h 39 min\nCette recette est devenue un must chez moi, souvent servie \u00e0 mes invit\u00e9s qui disent d\u00e9guster enfin du tofu avec du go\u00fbt (c\u2019est eux qui commencent \u00e0 avoir du go\u00fbt surtout ;). Je ne mets pas de sirop d\u2019\u00e9rable, je reste sur une ligne sal\u00e9e. Et surtout, cette recette me sert de base : depuis je d\u00e9cline \u00e0 l\u2019envi mon tofu d\u00e8s lors qu\u2019il est bien press\u00e9 et roul\u00e9 dans de la f\u00e9cule. Ensuite, toutes les sauces, les accommodements sont possibles. Tamari, orange, citron, gingembre, coriandre, herbes \u00e0 foison., miso et autres condiments cor\u00e9ens \u2026  Sky is the limit et tofu is un petit nuage !\nchargement\u2026\nR\u00e9pondre\nSophie\ndit\u00a0:\n21 ao\u00fbt 2024 \u00e0 22 h 45 min\nD\u00e9-li-cieux!\nServi avec une pur\u00e8e de choufleur, extra!\nchargement\u2026\nR\u00e9pondre\nGuillaume G\u00e9gou\ndit\u00a0:\n6 d\u00e9cembre 2025 \u00e0 22 h 03 min\nMerci pour cette belle recette,\nElle rejoint le panth\u00e9on de mes compositions pr\u00e9f\u00e9r\u00e9es autour du tofu.\nSi vous n\u2019avez pas d\u2019\u00e9chalote, se mari parfaitement avec l\u2019oignon, la ciboule de chine\u2026\nBon app\u00e9tit\nchargement\u2026\nR\u00e9pondre\n4.54 from 76 votes (\n74 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 24.0
+}

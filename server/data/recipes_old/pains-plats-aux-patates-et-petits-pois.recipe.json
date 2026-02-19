@@ -1,0 +1,692 @@
+{
+  "metadata": {
+    "title": "Pains plats aux patates et petits pois",
+    "description": "Ces Pains plats aux patates et petits pois sont un vrai r\u00e9gal ! Inspir\u00e9s des Paratha indien, avec une garniture de l\u00e9gumes de printemps et une sauce au yaourt.",
+    "servings": 6,
+    "prepTime": "PT45M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "galette",
+      "naan",
+      "pain indien",
+      "pain paratha",
+      "pains plats",
+      "paratha",
+      "recette indienne",
+      "recette pain plat",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Pains-plats-indiens-aux-pommes-de-terre-et-petits-pois-5-of-5.jpg",
+    "nationality": "Indian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les graines de fenouil dans la p\u00e2te sont optionnelles. Vous pouvez les enlever, ou les remplacer par une autre graine ou \u00e9pice.",
+      "Pour la sauce, un yaourt grec, de soja, un fromage blanc ou skyr fonctionnent parfaitement bien.",
+      "Pour le fa\u00e7onnage, allez-y doucement pour ne pas rompre la p\u00e2te, surtout avec des \u00e9l\u00e9ments comme les petits pois.",
+      "La p\u00e2te peut se conserver 2-3 jours au frigo, bien couverte."
+    ],
+    "slug": "pains-plats-aux-patates-et-petits-pois",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Pains-plats-indiens-aux-pommes-de-terre-et-petits-pois-5-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/10/pains-plats-aux-patates-et-petits-pois/",
+    "image": "images/pains-plats-aux-patates-et-petits-pois.jpg",
+    "createdAt": "2026-02-09T21:20:22.188940",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "totalTime": 38.0,
+    "totalCookingTime": 38.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 279.1,
+      "protein": 10.8,
+      "fat": 1.2,
+      "carbs": 55.7,
+      "fiber": 5.2,
+      "confidence": "medium",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 11,
+      "totalIngredients": 17,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 340.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "yellow_onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "neutral_oil",
+      "name": "huile neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "garam_massala",
+      "name": "garam massala",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garam masala"
+    },
+    {
+      "id": "cumin_powder",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "peas",
+      "name": "petits pois",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Peas"
+    },
+    {
+      "id": "spinach",
+      "name": "\u00e9pinards",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "grossi\u00e8rement hach\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "spinach"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "chili",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili pepper"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "salt_dough",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "fennel_seeds",
+      "name": "graines de fenouil",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "optionnel",
+      "optional": true,
+      "name_en": "Fennel seeds"
+    },
+    {
+      "id": "hot_water",
+      "name": "eau chaude",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hot water"
+    },
+    {
+      "id": "neutral_oil_dough",
+      "name": "huile neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "coriander",
+      "name": "coriandres",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9es",
+      "notes": "branches",
+      "optional": false,
+      "name_en": "cilantro"
+    },
+    {
+      "id": "garlic_powder_sauce",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "cumin_sauce",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "salt_sauce",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "chili_sauce",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili pepper"
+    }
+  ],
+  "tools": [
+    "Robot p\u00e2tissier (optionnel)",
+    "Cr\u00eapi\u00e8re (ou po\u00eale \u00e0 bords plats)",
+    "Rouleau \u00e0 p\u00e2tisserie"
+  ],
+  "steps": [
+    {
+      "id": "steam_potatoes",
+      "action": "Faire cuire les pommes de terre \u00e0 la vapeur sans les \u00e9plucher.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "steamed_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_peel_potatoes",
+      "action": "Laisser refroidir les pommes de terre, puis retirer la peau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "steamed_potatoes"
+      ],
+      "produces": "peeled_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion",
+      "action": "Hacher l'oignon finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "yellow_onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_spices",
+      "action": "Le faire revenir dans une po\u00eale avec 1 c\u00e0s d'huile neutre et les \u00e9pices (garam massala, cumin, ail en poudre) pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "chopped_onion",
+        "neutral_oil",
+        "garam_massala",
+        "cumin_powder",
+        "garlic_powder",
+        "salt",
+        "pepper",
+        "chili"
+      ],
+      "produces": "sauteed_onion_spices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_peas_spinach",
+      "action": "Ajouter les petits pois et les \u00e9pinards grossi\u00e8rement hach\u00e9s. Laisser cuire encore 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "peas",
+        "spinach",
+        "sauteed_onion_spices"
+      ],
+      "produces": "vegetable_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mash_potatoes",
+      "action": "\u00c9craser grossi\u00e8rement les pommes de terre \u00e9pluch\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "peeled_potatoes"
+      ],
+      "produces": "mashed_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_filling",
+      "action": "Hors du feu, m\u00e9langer les pommes de terre \u00e9cras\u00e9es avec le m\u00e9lange d'oignon, petits pois et \u00e9pinards. Laisser refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "mashed_potatoes",
+        "vegetable_mixture"
+      ],
+      "produces": "potato_pea_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand bol, m\u00e9langer la farine, le sel et les graines de fenouil.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "flour",
+        "salt_dough",
+        "fennel_seeds"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet_ingredients",
+      "action": "Ajouter l'eau chaude et l'huile et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "dry_mix",
+        "hot_water",
+        "neutral_oil_dough"
+      ],
+      "produces": "dough_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_dough",
+      "action": "P\u00e9trir 10min \u00e0 la main (ou jusqu'\u00e0 ce qu'une boule se forme au robot p\u00e2tissier).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "dough_mixture"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": "une boule se forme"
+    },
+    {
+      "id": "rest_dough",
+      "action": "Former une boule, la replacer dans le saladier, couvrir avec un torchon humide et laisser reposer le temps de pr\u00e9parer la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "kneaded_dough"
+      ],
+      "produces": "rested_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_yogurt_sauce",
+      "action": "M\u00e9langer tous les ingr\u00e9dients (yaourt, jus de citron, coriandre hach\u00e9e, ail en poudre, cumin, paprika, sel, piment) dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "greek_yogurt",
+        "lemon_juice",
+        "coriander",
+        "garlic_powder_sauce",
+        "cumin_sauce",
+        "paprika",
+        "salt_sauce",
+        "chili_sauce"
+      ],
+      "produces": "yogurt_coriander_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_sauce",
+      "action": "R\u00e9server au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "yogurt_coriander_sauce"
+      ],
+      "produces": "chilled_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "divide_dough",
+      "action": "S\u00e9parer la p\u00e2te en 6 boules \u00e9gales (environ 80g).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "rested_dough"
+      ],
+      "produces": "dough_balls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flour_work_surface",
+      "action": "Fariner le plan de travail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "flour"
+      ],
+      "produces": "floured_surface",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_dough_balls",
+      "action": "Pour chaque boule : l'aplatir sous la paume, puis avec un rouleau, \u00e9taler les bords pour obtenir une galette d'environ 15cm de diam\u00e8tre, avec le centre plus \u00e9pais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "dough_balls",
+        "floured_surface"
+      ],
+      "produces": "rolled_dough_disks",
+      "requires": [],
+      "visualCue": "15cm de diam\u00e8tre, centre plus \u00e9pais"
+    },
+    {
+      "id": "fill_dough",
+      "action": "D\u00e9poser 1/6 de la garniture au centre, replier les bords pour former une boule scell\u00e9e (mouiller l\u00e9g\u00e8rement les bords si besoin).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "rolled_dough_disks",
+        "potato_pea_filling"
+      ],
+      "produces": "filled_dough_balls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flatten_filled_dough",
+      "action": "Aplatir d\u00e9licatement la boule sous la paume, puis l'\u00e9taler pour former un pain plat d'environ \u00bd cm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "filled_dough_balls"
+      ],
+      "produces": "flatbreads",
+      "requires": [],
+      "visualCue": "\u00bd cm d'\u00e9paisseur"
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une cr\u00eapi\u00e8re.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "neutral_oil"
+      ],
+      "produces": "hot_oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_flatbreads",
+      "action": "Verser un filet d'huile et cuire les galettes une par une jusqu'\u00e0 ce qu'elles soient dor\u00e9es des deux c\u00f4t\u00e9s, environ 6-7min par face.",
+      "duration": "PT13M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "flatbreads",
+        "hot_oiled_pan"
+      ],
+      "produces": "cooked_flatbreads",
+      "requires": [],
+      "visualCue": "dor\u00e9es des deux c\u00f4t\u00e9s"
+    },
+    {
+      "id": "serve_with_sauce",
+      "action": "Servir les pains plats avec la sauce au yaourt.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_flatbreads",
+        "chilled_sauce"
+      ],
+      "produces": "pains_plats_patates_petits_pois",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pains_plats_patates_petits_pois",
+  "originalText": "Pains plats aux patates et petits pois - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 mai 2022\nPains plats aux patates et petits pois\nAller \u00e0 la recette\nCes Pains plats aux patates et petits pois sont un vrai r\u00e9gal !\nVous aurez peut-\u00eatre remarqu\u00e9 que j\u2019aime bien le concept de fourrer une garniture dans quelque chose ! Comme avec ces\npains plats au fromage et herbes fra\u00eeches\n. Ou\nces brioches aux l\u00e9gumes\n.\nTable des mati\u00e8res\n1\nLes saveurs\n2\nLe fa\u00e7onnage\n3\nLa cuisson\n4\nPains plats aux patates et petits pois (Paratha)\nLes saveurs\nSouvent, je m\u2019inspire des saveurs du continent asiatique pour ce genre de plat. Peut-\u00eatre que je pourrai varier un peu pour un prochain plat !\nMais en attendant, cette recette de Pains plats aux patates et petits pois est clairement inspir\u00e9e des Paratha indien.\nLa garniture se compose de petits l\u00e9gumes de printemps. Pr\u00e9par\u00e9s avec des \u00e9pices et de l\u2019amour !\nJ\u2019ai mis quelques graines de fenouil dans la p\u00e2te. C\u2019est optionnel. Vous pouvez les enlever, ou les remplacer par une autre graine ou \u00e9pice.\nEt ensuite, j\u2019ai pr\u00e9par\u00e9 une de mes sauces pr\u00e9f\u00e9r\u00e9es ! J\u2019ai nomm\u00e9 la sauce au yaourt. J\u2019aime utiliser du yaourt grec. Mais un yaourt de soja, un fromage blanc ou skyr fonctionnent parfaitement bien aussi !\nLe fa\u00e7onnage\nOn peut se laisser un peu intimider par le concept de pain fourr\u00e9. Comment on fourre ces machins ?\nEn vrai, ce n\u2019est pas bien compliqu\u00e9.\nOn commence par s\u00e9parer la p\u00e2te en petites boules. Puis on les aplatit en disque pas trop fin. Id\u00e9alement, il faut laisser le centre du disque un peu plus \u00e9pais. On place la garniture au centre. On replie les bords. Et on scelle. Puis d\u00e9licatement, on aplatit de nouveau. Soit avec les doigts, soit avec un rouleau \u00e0 p\u00e2tisserie. Dans tous les cas, allez-y doucement. Surtout si votre garniture se compose de certains \u00e9l\u00e9ments un peu plus durs. Par exemple, les petits pois. Vous pourriez rompre la p\u00e2te.\nLa cuisson\nJ\u2019utilise toujours\nma cr\u00eapi\u00e8re (Cristel en l\u2019occurrence, dans la gamme Castel\u2019Pro\n) pour cuire ce type de galettes et de pain plats. Je trouve que les bords quasi plats rendent la manipulation bien plus facile. Que ce soit pour les cr\u00eapes (\u00e9videmment) mais aussi pour les quesadillas, les pains plats, les galettes etc\u2026\nEt puis, comme vous le savez, nous collaborons avec Cristel. Et il va s\u2019en dire que la qualit\u00e9 de cette cr\u00eapi\u00e8re est au rendez-vous !\nPains plats aux patates et petits pois (Paratha)\nNatacha\n4.55\n/5 avec\n48\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n6\npains plats\nIngr\u00e9dients\n1x\n2x\n3x\nPour la garniture\n340\ng\nde pommes de terre\n1\noignon jaune\n1\nc\u00e0s d\u2019huile neutre\n2\nc\u00e0c de garam massala\n\u00bd\nc\u00e0c de cumin en poudre\n\u00bd\nc\u00e0c d\u2019ail en poudre\n100\ng\nde petits pois\n100\ng\nd\u2019\u00e9pinards\nsel\npoivre\npiment au go\u00fbt\nPour la p\u00e2te\n300\ng\nde farine\n1\nc\u00e0c de sel\n1\nc\u00e0c de graines de fenouil\noptionnel\n150\nml\nd\u2019eau chaude\n1\nc\u00e0s d\u2019huile neutre\nPour la sauce yaourt coriandre\n150\ng\nde yaourt grec\n1\nc\u00e0s de jus de citron\n5\nbranches de coriandres hach\u00e9es\n\u00bd\nc\u00e0c d\u2019ail en poudre\n\u00bd\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de paprika doux\n\u00bd\nc\u00e0c de sel\npiment au go\u00fbt\nInstructions\nPr\u00e9paration des pommes de terre\nFaire cuire les pommes de terre \u00e0 la vapeur sans les \u00e9plucher. Une fois cuites, les laisser refroidir, puis retirer la peau.\nPr\u00e9paration de la p\u00e2te\nDans un grand bol, m\u00e9langer la farine, le sel et les graines de fenouil.\nAjouter l\u2019eau chaude et l\u2019huile et m\u00e9langer.\nP\u00e9trir une dizaine de minutes \u00e0 la main (ou jusqu\u2019\u00e0 ce qu\u2019une boule se forme au robot patissier).\nFormer une boule et la reposer dans le saladier. Couvrir avec un torchon propre humide et laisser reposer le temps de pr\u00e9parer le reste de la garniture.\nPr\u00e9paration de la garniture\nHacher l\u2019oignon finement.\nLe faire revenir dans une po\u00eale avec une c\u00e0s d\u2019huile neutre et les \u00e9pices pendant 5min. Ajouter les petits pois et les \u00e9pinards grossi\u00e8rement hach\u00e9s.\nLaisser cuire encore une dizaine de minutes.\n\u00c9plucher les pommes de terre et les \u00e9craser grossi\u00e8rement.\nHors du feu, m\u00e9langer les pommes de terre et le reste de la garniture. Laisser refroidir.\nPr\u00e9paration de la sauce au yaourt\nM\u00e9langer tous les ingr\u00e9dients dans un bol et r\u00e9server au frais.\nR\u00e9alisation des pains plats\nS\u00e9parer le p\u00e2ton en 6 boules \u00e9gales (environ 80g).\nFariner votre plan de travail.\nAplatir une boule sous votre paume. Puis, \u00e0 l\u2019aide d\u2019un rouleau p\u00e2tissier, \u00e9taler les bords. Le but est d\u2019avoir une \u201cgalette\u201d d\u2019environ 15cm de diam\u00e8tre, avec une circonf\u00e9rence assez fine, et le centre plus \u00e9pais.\nD\u00e9poser 1/6e de la garniture au milieu de la galette et replier les bords par-dessus pour former une boule. Si besoin, mouiller l\u00e9g\u00e8rement les bords de la galette pour sceller la boule.\nAplatir sous votre paume de nouveau. Puis d\u00e9licatement, \u00e9taler pour former un pain plat d\u2019environ \u00bd cm d\u2019\u00e9paisseur.\nRecommencer avec les 5 autres p\u00e2tons.\nFaire chauffer votre cr\u00eapi\u00e8re.\nVerser un g\u00e9n\u00e9reux filet d\u2019huile et mettre les galettes \u00e0 cuire une par une, jusqu\u2019\u00e0 ce qu\u2019elles soient dor\u00e9es des deux c\u00f4t\u00e9s (environ 6-7min par face).\nServir les pains plats avec la sauce au yaourt.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\ngalette\n,\nnaan\n,\npain indien\n,\npain paratha\n,\npains plats\n,\nparatha\n,\nrecette indienne\n,\nrecette pain plat\nFrites au four super croustillantes\nNouilles Saut\u00e9es \u00e0 l\u2019indon\u00e9sienne\n5 thoughts on \u201cPains plats aux patates et petits pois\u201d\nClaude b\u00e9n\u00e9dicte Smets\ndit\u00a0:\n10 mai 2022 \u00e0 12 h 24 min\nBonjour! Comme je suis seule peut-on garde la p\u00e2te au frigo?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n12 mai 2022 \u00e0 9 h 57 min\nBonjour, oui sans probl\u00e8me. Couvrez-la bien pour ne pas qu\u2019elle s\u00e8che. Je pense 2-3 jours au moins !\nchargement\u2026\nR\u00e9pondre\nBosha\ndit\u00a0:\n10 mai 2022 \u00e0 15 h 17 min\nJ\u2019ai une passion pour ces pains plats et fourr\u00e9s c\u2019est +++\nJ\u2019ai \u00e9t\u00e9 longtemps absente, me voil\u00e0 de retour pour appr\u00e9cier votre Grand talent\nP.S : Vos ebook sont additifs, un grand Merci pour votre travail, A quand le prochain ???\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n12 mai 2022 \u00e0 9 h 57 min\nOoooh merci Bosha, trop heureuse de te retrouver \ud83d\ude42\nOn n\u2019a pas encore pr\u00e9vu de nouvel ebook, mais on vous le fera savoir d\u00e8s que c\u2019est le cas ! Si tu as des id\u00e9es de th\u00e8mes, on t\u00e9coute !\nchargement\u2026\nR\u00e9pondre\nGhislaine\ndit\u00a0:\n18 mai 2022 \u00e0 11 h 32 min\nBonjour, peux-t-on utiliser une farine sans gluten? Si oui, laquelle?\nchargement\u2026\nR\u00e9pondre\n4.55 from 48 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 38.0
+}

@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "title": "Financiers aux fruits rouges",
+    "description": "Les financiers aux fruits rouges, c'est ce genre de petite douceur qu'on aime avoir sous la main. Gourmands, moelleux, faciles \u00e0 emporter, ils se glissent aussi bien dans un go\u00fbter d'\u00e9t\u00e9 que dans une assiette de caf\u00e9 gourmand.",
+    "servings": 12,
+    "prepTime": "PT20M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "financier",
+      "fruits rouges",
+      "framboise",
+      "myrtille",
+      "amande",
+      "v\u00e9g\u00e9tarien",
+      "g\u00e2teau",
+      "p\u00e2tisserie"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/Financiers-fruits-rouges-6-of-6.jpg",
+    "nationality": "French",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le nom \"financier\" viendrait d'un p\u00e2tissier parisien du XIXe si\u00e8cle qui aurait donn\u00e9 \u00e0 ces g\u00e2teaux une forme de lingot pour sa client\u00e8le d'hommes d'affaires.",
+      "On peut utiliser des fruits rouges surgel\u00e9s, il suffit de bien les \u00e9goutter avant de les int\u00e9grer.",
+      "Les jaunes d'\u0153ufs restants peuvent \u00eatre utilis\u00e9s pour une sauce b\u00e9arnaise, une p\u00e2te \u00e0 tarte sabl\u00e9e, etc.",
+      "Framboises, myrtilles, groseilles, m\u00fbres\u2026 toutes les combinaisons de fruits rouges sont possibles."
+    ],
+    "slug": "financiers-aux-fruits-rouges",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/Financiers-fruits-rouges-6-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/06/07/financiers-fruits-rouges/",
+    "image": "images/financiers-aux-fruits-rouges.webp",
+    "createdAt": "2026-02-09T22:54:03.626841",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 174.7,
+      "protein": 3.9,
+      "fat": 7.3,
+      "carbs": 23.0,
+      "fiber": 1.6,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine T45/55",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Flour"
+    },
+    {
+      "id": "almond_powder",
+      "name": "amande en poudre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond flour"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "butter",
+      "name": "beurre doux",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "egg_whites",
+      "name": "blancs d'\u0153uf",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg whites"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "red_fruits",
+      "name": "fruits rouges",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "framboises et myrtilles",
+      "optional": false,
+      "name_en": "red berries"
+    }
+  ],
+  "tools": [
+    "Moules \u00e0 financiers",
+    "Robot (facultatif pour monter les blancs)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "butter_molds",
+      "action": "Beurrer les moules \u00e0 financiers si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter"
+      ],
+      "produces": "buttered_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un saladier, m\u00e9langer la farine, la poudre d'amande, le sucre et l'extrait de vanille. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "almond_powder",
+        "sugar",
+        "vanilla_extract"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "whip_egg_whites",
+      "action": "Dans un autre saladier ou dans le bol d'un robot, monter les 4 blancs d'\u0153uf en neige avec une pinc\u00e9e de sel. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg_whites",
+        "salt"
+      ],
+      "produces": "whipped_egg_whites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre \u00e0 feu doux. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_egg_whites",
+      "action": "Incorporer d\u00e9licatement les blancs en neige au m\u00e9lange de farine et poudre d'amande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "whipped_egg_whites"
+      ],
+      "produces": "batter_with_whites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_melted_butter",
+      "action": "Ajouter en petits filets le beurre fondu tout en m\u00e9langeant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_with_whites",
+        "melted_butter"
+      ],
+      "produces": "complete_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_fruits",
+      "action": "Ajouter les fruits rouges d\u00e9licatement \u00e0 la pr\u00e9paration, ou les enfoncer dans la p\u00e2te une fois r\u00e9partie dans les moules.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "complete_batter",
+        "red_fruits"
+      ],
+      "produces": "batter_with_fruits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_molds",
+      "action": "R\u00e9partir la pr\u00e9paration dans les moules.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_with_fruits",
+        "buttered_molds"
+      ],
+      "produces": "filled_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner et cuire pendant 15min.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "filled_molds"
+      ],
+      "produces": "baked_financiers",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool",
+      "action": "Sortir du four et laisser refroidir pendant 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "baked_financiers"
+      ],
+      "produces": "cooled_financiers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "unmold",
+      "action": "D\u00e9mouler d\u00e9licatement et d\u00e9poser les financiers sur une grille de refroidissement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_financiers"
+      ],
+      "produces": "financiers_fruits_rouges",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "financiers_fruits_rouges",
+  "originalText": "Financiers aux fruits rouges : moelleux, fruit\u00e9s et simples \u00e0 cuisiner\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n7 juin 2025\nFinanciers aux fruits rouges : le g\u00e2teau qui fait toujours plaisir\nLes financiers aux fruits rouges, c\u2019est ce genre de petite douceur qu\u2019on aime avoir sous la main. Gourmands, moelleux, faciles \u00e0 emporter, ils se glissent aussi bien dans un go\u00fbter d\u2019\u00e9t\u00e9 que dans une assiette de caf\u00e9 gourmand. Et quand ils sont faits maison, avec une poign\u00e9e de fruits rouges l\u00e9g\u00e8rement acidul\u00e9s, ils prennent une tout autre dimension.\nLeur texture fondante, leur go\u00fbt subtil d\u2019amande, et ce petit contraste fruit\u00e9 sur le dessus\u2026 tout y est. C\u2019est une p\u00e2tisserie \u00e0 la fois simple et \u00e9l\u00e9gante, qu\u2019on peut pr\u00e9parer en grande quantit\u00e9, congeler, ou adapter selon les envies.\nTable des mati\u00e8res\n1\nD\u2019o\u00f9 vient le nom \u201cfinancier\u201d ?\n2\nQue faire des jaunes d\u2019\u0153ufs ?\n3\nFrais ou surgel\u00e9s : les deux fonctionnent\n4\nPourquoi des fruits rouges ?\n5\nFinanciers aux fruits rouges\n6\nD\u2019autres id\u00e9es aux fruits rouges\n7\nEn r\u00e9sum\u00e9, les financiers aux fruits rouges\nD\u2019o\u00f9 vient le nom \u201cfinancier\u201d ?\nLe nom peut surprendre, surtout pour un si petit g\u00e2teau. Et pourtant, il a bien une histoire.\n\u00c0 l\u2019origine, les financiers \u00e9taient appel\u00e9s \u201cvisitandines\u201d, du nom des s\u0153urs Visitandines qui les pr\u00e9paraient dans les couvents, \u00e0 base de blancs d\u2019\u0153ufs et de poudre d\u2019amande. Mais au XIXe si\u00e8cle, un p\u00e2tissier parisien aurait remis la recette au go\u00fbt du jour\u2026 en la remodelant pour qu\u2019elle plaise \u00e0 sa client\u00e8le d\u2019hommes d\u2019affaires press\u00e9s du quartier de la Bourse.\nIl aurait alors donn\u00e9 \u00e0 ces g\u00e2teaux une forme de lingot, pratique \u00e0 glisser dans la poche, et choisi un nom en clin d\u2019\u0153il \u00e0 cette client\u00e8le : financiers.\nDepuis, le nom est rest\u00e9 \u2014 m\u00eame si aujourd\u2019hui, on les trouve aussi bien en forme de lingots que de petits ronds ou d\u2019ovales dor\u00e9s.\nQue faire des jaunes d\u2019\u0153ufs ?\nParce que les financiers sont pr\u00e9par\u00e9s uniquement avec des blancs d\u2019\u0153ufs, on se retrouve souvent avec plusieurs jaunes \u00e0 utiliser rapidement. Et plut\u00f4t que de les laisser tra\u00eener au frigo, c\u2019est l\u2019occasion id\u00e9ale de cuisiner autre chose.\nVoici quelques id\u00e9es pour ne rien perdre :\nune\nsauce b\u00e9arnaise\npour accompagner des l\u00e9gumes r\u00f4tis\nune\nsauce hollandaise maison\n, \u00e0 servir ti\u00e8de avec des asperges ou des \u0153ufs poch\u00e9s\nune cr\u00e8me anglaise toute douce, \u00e0 verser sur un g\u00e2teau simple ou des fruits po\u00eal\u00e9s\nune\np\u00e2te \u00e0 tarte sabl\u00e9e\nenrichie au jaune d\u2019\u0153uf pour plus de fondant\nEt si vous n\u2019avez pas l\u2019envie de cuisiner tout de suite, sachez qu\u2019un jaune d\u2019\u0153uf se conserve jusqu\u2019\u00e0 2 jours au frigo. Vous pouvez le garder ans un petit r\u00e9cipient bien ferm\u00e9, avec une goutte d\u2019eau sur le dessus pour \u00e9viter qu\u2019il ne s\u00e8che.\nFrais ou surgel\u00e9s : les deux fonctionnent\nLes fruits rouges apportent un vrai contraste dans les financiers. Leur acidit\u00e9 naturelle vient \u00e9quilibrer la richesse du beurre et des amandes, et leur c\u00f4t\u00e9 juteux cr\u00e9e un joli jeu de textures \u00e0 la d\u00e9gustation.\nSi vous utilisez des fruits surgel\u00e9s, aucun souci : il suffit de les faire d\u00e9congeler au pr\u00e9alable (au frigo ou \u00e0 temp\u00e9rature ambiante), puis de bien les \u00e9goutter sur du papier absorbant avant de les int\u00e9grer. Cela \u00e9vite qu\u2019ils ne d\u00e9trempent la p\u00e2te \u00e0 la cuisson, tout en conservant leur go\u00fbt.\nFramboises, myrtilles, groseilles, m\u00fbres\u2026 toutes les combinaisons sont possibles. On peut m\u00eame m\u00e9langer plusieurs vari\u00e9t\u00e9s pour un effet plus visuel et plus complexe en bouche.\nPourquoi des fruits rouges ?\nLes financiers sont des g\u00e2teaux plut\u00f4t riches : entre le beurre noisette, la poudre d\u2019amande, et la texture dense, ils ont quelque chose de profond\u00e9ment r\u00e9confortant. Mais pour \u00e9viter qu\u2019ils ne deviennent trop lourds, l\u2019ajout de fruits rouges permet de cr\u00e9er un \u00e9quilibre.\nL\u2019acidit\u00e9 des fruits vient r\u00e9veiller l\u2019ensemble, apporte une touche de fra\u00eecheur, et rend chaque bouch\u00e9e plus vivante. On pourrait les faire nature \u2014 et c\u2019est d\u00e9licieux aussi \u2014 mais les fruits ajoutent vraiment une autre dimension \u00e0 ces petits g\u00e2teaux.\nC\u2019est cette combinaison de moelleux, croquant, fruit\u00e9 qui en fait une recette si appr\u00e9ci\u00e9e, ann\u00e9e apr\u00e8s ann\u00e9e.\nFinanciers aux fruits rouges\n4.48\n/5 avec\n117\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n12\nfinanciers\nIngr\u00e9dients\n1x\n2x\n3x\n50\ng\nde farine T45/55\n50\ng\nd\u2019amande en poudre\n150\ng\nde sucre\n75\ng\nde beurre doux fondu\n\u00bd\ncac d\u2019extrait de vanille\n4\nblancs d\u2019\u0153uf\n1\npinc\u00e9e de sel\n100\ng\nde fruits rouges\nici framboises et myrtilles\nInstructions\nPr\u00e9parer les moules \u00e0 financiers en les beurrant si n\u00e9cessaire.\nDans un saladier, m\u00e9langer la farine, la poudre d\u2019amande, le sucre et la vanille. R\u00e9server.\nDans un autre saladier ou dans le bol de votre robot, monter les 4 blancs en neige avec une pinc\u00e9e de sel. Avec les jaunes d\u2019\u0153uf vous pouvez faire une mayonnaise, des biscuits grecs ou des cr\u00e8mes aux \u0153ufs. R\u00e9server.\nFaire fondre le beurre \u00e0 feu doux. R\u00e9server.\nIncorporer d\u00e9licatement les blancs en neige au m\u00e9lange de farine et poudre d\u2019amande. Puis ajouter en petits filets le beurre fondu tout en m\u00e9langeant.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPour les fruits rouges, vous pouvez les ajouter directement \u00e0 la pr\u00e9paration et m\u00e9langer d\u00e9licatement. Sinon vous pouvez les enfoncer dans la pr\u00e9paration une fois r\u00e9partie dans les moules.\nUne fois la pr\u00e9paration r\u00e9partie, enfourner et cuire pendant 15 \u00e0 20min en fonction de la taille de vos financiers.\nSortir du four et laisser refroidir pendant 30 min, puis d\u00e9mouler d\u00e9licatement et d\u00e9poser sur une grille de refroidissement.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nD\u2019autres id\u00e9es aux fruits rouges\nVous avez des fruits rouges sous la main et l\u2019envie de prolonger le plaisir ? Voici quelques id\u00e9es simples et gourmandes pour les cuisiner autrement :\nTartelettes aux fruits rouges\n. Des tartelettes maison pleines de fra\u00eecheur, \u00e0 personnaliser selon les fruits du moment et les envies du jour.\nClafoutis \u00e0 la coco et fruits rouges\n. Un dessert fondant, entre douceur de la noix de coco et acidit\u00e9 des fruits, parfait \u00e0 servir ti\u00e8de ou froid.\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\n. Une id\u00e9e fra\u00eeche et ludique \u00e0 pr\u00e9parer \u00e0 l\u2019avance, id\u00e9ale pour un go\u00fbter d\u2019\u00e9t\u00e9 ou un brunch color\u00e9.\nCrumble \u00e0 l\u2019avoine et fruits rouges\n. Un classique revisit\u00e9 avec une p\u00e2te croustillante \u00e0 l\u2019avoine \u2014 simple, r\u00e9confortant et toujours efficace.\nEn r\u00e9sum\u00e9, les financiers aux fruits rouges\nLes financiers aux fruits rouges sont un concentr\u00e9 de simplicit\u00e9 et de plaisir. N\u00e9s d\u2019une recette monastique revisit\u00e9e pour les palais press\u00e9s, ils ont travers\u00e9 les \u00e9poques sans perdre leur charme.\n\u00c0 la fois pratiques \u00e0 r\u00e9aliser, faciles \u00e0 transporter et \u00e0 d\u00e9cliner, ils permettent aussi de valoriser ce qu\u2019on a sous la main \u2014 blancs d\u2019\u0153ufs oubli\u00e9s, fruits surgel\u00e9s, ou restes de poudre d\u2019amande. C\u2019est une p\u00e2tisserie qui coche toutes les cases du bon sens et du bon go\u00fbt.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nFramboise\n,\nG\u00e2teaux et Cakes\n,\nMyrtille\n,\nRecettes Sucr\u00e9es\nTags:\nv\u00e9g\u00e9tarien\nSandwich de cookies \u00e0 la pistache, fraises et cr\u00e8me fouett\u00e9e\u00a0: la recette facile qui fait fondre tout le monde\nLait de melon maison : recette facile et fra\u00eeche pour vos envies d\u2019\u00e9t\u00e9\n4.48 from 117 votes (\n117 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

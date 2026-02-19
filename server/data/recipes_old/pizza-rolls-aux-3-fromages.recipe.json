@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "title": "Pizza rolls aux 3 fromages",
+    "description": "Nouvelle recette aujourd'hui : Pizza rolls aux 3 fromages. Puis j'aime bien le principe de revisiter un plat sous plusieurs formes.",
+    "servings": 9,
+    "prepTime": "PT15M",
+    "cookTime": "PT1H",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "pizza",
+      "p\u00e2te \u00e0 pizza",
+      "fromage",
+      "plat au four",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/pizza-rolls-1-of-5.jpg",
+    "nationality": "Italian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e dans le cadre d'un partenariat avec la marque Monbento.",
+      "Pour une p\u00e2te \u00e0 pizza maison, voir le lien dans la recette.",
+      "Visuellement tr\u00e8s cool comme plat, doux et moelleux.",
+      "Particuli\u00e8rement satisfaisant de voir les rolls gonfler au four."
+    ],
+    "slug": "pizza-rolls-aux-3-fromages",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/pizza-rolls-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/03/14/pizza-rolls-aux-3-fromages/",
+    "image": "images/pizza-rolls-aux-3-fromages.webp",
+    "createdAt": "2026-02-09T21:08:31.177147",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 65.0,
+    "totalCookingTime": 5.0,
+    "nutritionPerServing": {
+      "calories": 47.2,
+      "protein": 3.4,
+      "fat": 3.1,
+      "carbs": 1.5,
+      "fiber": 0.3,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "filet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "tomato_coulis",
+      "name": "coulis de tomate",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "pizza_dough",
+      "name": "p\u00e2te \u00e0 pizza",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": "rectangulaire de pr\u00e9f\u00e9rence",
+      "notes": null,
+      "optional": false,
+      "name_en": "Pizza dough"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mozzarella"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "emmental",
+      "name": "emmental",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "emmental cheese"
+    }
+  ],
+  "tools": [
+    "Petite casserole",
+    "Plat pour le four d'environ 25cmx25cm"
+  ],
+  "steps": [
+    {
+      "id": "saute_garlic",
+      "action": "Faire chauffer l'huile d'olive dans une petite casserole, et y mettre l'ail press\u00e9 \u00e0 revenir \u00e0 feu moyen.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate",
+      "uses": [
+        "olive_oil",
+        "garlic"
+      ],
+      "produces": "sauteed_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_tomato_sauce",
+      "action": "Ajouter le coulis de tomate, le sucre, les herbes, le sel et le poivre. Remuer, couvrir et laisser mijoter.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_tomate",
+      "uses": [
+        "sauteed_garlic",
+        "tomato_coulis",
+        "sugar",
+        "oregano",
+        "thyme",
+        "salt",
+        "pepper"
+      ],
+      "produces": "tomato_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 230\u00b0C.",
+      "duration": null,
+      "temperature": 230,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_out_dough",
+      "action": "\u00c9taler le rouleau de p\u00e2te \u00e0 pizza devant vous, le bord le plus long vers vous.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pizza_dough"
+      ],
+      "produces": "rolled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_sauce",
+      "action": "R\u00e9partir la sauce sur toute la surface de la p\u00e2te, sauf sur 1cm sur le bord le plus \u00e9loign\u00e9 de vous.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "rolled_dough",
+        "tomato_sauce"
+      ],
+      "produces": "dough_with_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cheeses",
+      "action": "R\u00e9partir uniform\u00e9ment les fromages r\u00e2p\u00e9s (mozzarella, parmesan, emmental).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "dough_with_sauce",
+        "mozzarella",
+        "parmesan",
+        "emmental"
+      ],
+      "produces": "dough_with_sauce_and_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_and_cut",
+      "action": "Rouler la p\u00e2te sur elle-m\u00eame fermement pour former un boudin. Puis couper le rouleau en 9 \u00e0 12 morceaux \u00e9gaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "dough_with_sauce_and_cheese"
+      ],
+      "produces": "pizza_rolls_raw",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner \u00e0 mi-hauteur pour 30min, jusqu'\u00e0 ce qu'ils soient dor\u00e9s et gonfl\u00e9s.",
+      "duration": "PT30M",
+      "temperature": 230,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pizza_rolls_raw"
+      ],
+      "produces": "baked_pizza_rolls",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "dor\u00e9s et gonfl\u00e9s"
+    }
+  ],
+  "finalState": "baked_pizza_rolls",
+  "originalText": "Pizza rolls aux 3 fromages - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 mars 2022\nPizza rolls aux 3 fromages\nAller \u00e0 la recette\nNouvelle recette aujourd\u2019hui : Pizza rolls aux 3 fromages\nA-t-on d\u00e9j\u00e0 entendu quelqu\u2019un se plaindre de manger trop de pizzas ? Non. Alors voil\u00e0 la raison pour laquelle je vous poste plein de recettes autour de la pizza ces derniers temps ! Et j\u2019en ai encore en stock !\nSi vous voulez conna\u00eetre\nma recette de p\u00e2te \u00e0 pizza qui d\u00e9chire tout, c\u2019est\npar ici !\nEt ceux qui sont plus\npockets que rolls, c\u2019est par l\u00e0\n!\nPour tout vous dire, je me suis inspir\u00e9e\ndes cinnamon rolls de Daniela\n. Je trouve que c\u2019est visuellement tr\u00e8s cool comme plat. Et en plus, c\u2019est doux et moelleux.\nPuis j\u2019aime bien le principe de revisiter un plat sous plusieurs formes. Aussi, j\u2019avoue, je trouve \u00e7a particuli\u00e8rement satisfaisant de rouler un truc en gros boudin. Et de le d\u00e9couper apr\u00e8s. Donc je me suis fait plaisir !\nAutre point particuli\u00e8rement satisfaisant de cette recette : voir les rolls gonfler au four ! C\u2019est beau et apaisant !\nOui, je perds un peu la t\u00eate dans ma cuisine ces derniers temps ! J\u2019apprends \u00e0 voir la beaut\u00e9 partout \ud83d\ude42 M\u00eame dans mon four !\nJ\u2019ai cr\u00e9\u00e9 cette recette de Pizza rolls aux 3 fromages dans le cadre de notre partenariat de longue date la jolie marque fran\u00e7aise\nMonbento\n.\nPizza rolls aux 3 fromages\nNatacha\n4.46\n/5 avec\n110\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nIngr\u00e9dients\n1\nfilet d\u2019huile d\u2019olive\n1\ngousse d\u2019ail press\u00e9e\n200\ng\nde coulis de tomate\n\u00bd\nc\u00e0c de sucre\n\u00bd\nc\u00e0c d\u2019origan\n1\npinc\u00e9e de thym\nsel\npoivre\n1\nrouleau de p\u00e2te \u00e0 pizza\nrectangulaire de pr\u00e9f\u00e9rence\nou recette maison ici\n100\ng\nde mozzarella r\u00e2p\u00e9e\n20\ng\nde parmesan r\u00e2p\u00e9\n20\ng\nd\u2019emmental r\u00e2p\u00e9\nInstructions\nFaire chauffer l\u2019huile d\u2019olive dans une petite casserole, et y mettre l\u2019ail press\u00e9 \u00e0 revenir \u00e0 feu moyen quelques minutes.\nAjouter le coulis de tomate, le sucre, les herbes, le sel et le poivre. Remuer, couvrir et laisser mijoter 30min.\nPr\u00e9chauffer le four \u00e0 230\u00b0C.\nSortir un plat pour le four d\u2019environ 25cmx25cm.\n\u00c9taler le rouleau de p\u00e2te \u00e0 pizza devant vous, le bord le plus long vers vous.\nRepartir la sauce sur toute la surface de la p\u00e2te, sauf sur 1cm sur le bord le plus \u00e9loign\u00e9 de vous.\nR\u00e9partir les fromages.\nRouler la p\u00e2te sur elle-m\u00eame. Puis couper le rouleau en 9 \u00e0 12 morceaux.\nD\u00e9poser les rolls les uns \u00e0 c\u00f4t\u00e9 des autres dans le plat.\nEnfourner \u00e0 mi-hauteur pour 25 \u00e0 30min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire des pizzas roul\u00e9es\n,\ncomment faire une pizza\n,\np\u00e2te \u00e0 pizza\n,\npizza\n,\npizza rolls\n,\npizza roul\u00e9es\n,\npizzas buns\n,\nrecette pizza\n,\nvideo pizza roul\u00e9e\nGratin de P\u00e2tes Poireaux et Cheddar\nSalade d\u2019hiver au Pamplemousse, Sarrasin et Fris\u00e9e\n1 thought on \u201cPizza rolls aux 3 fromages\u201d\nLadyMilonguera\ndit\u00a0:\n17 mars 2022 \u00e0 19 h 43 min\nPlut\u00f4t sympathiques ces pizza rolls !\nchargement\u2026\nR\u00e9pondre\n4.46 from 110 votes (\n109 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

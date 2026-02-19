@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "title": "potage poireau pomme de terre",
+    "description": "Un potage simple et rapide de Paul Bocuse, idéal pour réchauffer lors des soirées d'hiver. Une soupe végétarienne aux poireaux et pommes de terre, enrichie de crème fraîche.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe",
+      "potage",
+      "poireau",
+      "pomme de terre",
+      "végétarien",
+      "français",
+      "hiver"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": "Paul Bocuse",
+    "source": null,
+    "notes": [
+      "Servir chaud, idéalement avec du pain frais."
+    ],
+    "slug": "potage-poireau-pomme-de-terre",
+    "originalContent": "potage poireau pomme de terre\n\n\nUne recette simple et rapide qui nous vient de notre masterchief Paul Bocuse qui pour une fois nous propose un plat végétarien. Ce potage saura idéalement réchauffer votre cœur lors des longues soirées d’hiver.\nIngrédients :\n\nQuelques poireaux\n200g pommes de terre\n100g de beurre\nSel, poivre\n1 L d’eau minérale\n100 de crème fraîche\n\nPréparation :\n\nLaver les pommes de terre avant de les éplucher\nNettoyer le poireau à l’eau chaude\nLes découper en cubes d’1cm d’épaisseur maximum\nCiseler le poireau finement\nDans une grosse casserole ou un faitout, faire suer le poireau dans le beurre mais sans le colorer\nUne fois que les poireaux ont bien sué, ajouter les pommes de terre\nAjouter deux pincées de sel et poivrer\nFaire suer puis ajouter 1 L d’eau\nPorter à ébullition puis laisser mijoter 15 minutes (pas une de plus)\nAjouter la crème et servir\n\nMain recipe image: temp_image_recipe-gen-20260208054329-712dfac6.png",
+    "createdAt": "2026-02-08T05:44:28.355407",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 49.0,
+    "totalCookingTime": 34.0,
+    "sourceImageUrl": "potage-poireau-pomme-de-terre.png",
+    "image": "images/potage-poireau-pomme-de-terre.png",
+    "nutritionPerServing": {
+      "calories": 303.0,
+      "protein": 1.8,
+      "fat": 29.4,
+      "carbs": 9.4,
+      "fiber": 0.8,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "poireaux",
+      "name": "poireaux",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "ciselés finement",
+      "notes": "quelques poireaux",
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "pommes_de_terre",
+      "name": "pommes de terre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coupées en cubes",
+      "notes": "épluchées",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "eau",
+      "name": "eau minérale",
+      "quantity": 1.0,
+      "unit": "L",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mineral water"
+    },
+    {
+      "id": "creme_fraiche",
+      "name": "crème fraîche",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    }
+  ],
+  "tools": [
+    "grosse casserole ou faitout"
+  ],
+  "steps": [
+    {
+      "id": "laver_pommes_de_terre",
+      "action": "Laver les pommes de terre avant de les éplucher.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "pommes_de_terre"
+      ],
+      "produces": "pommes_de_terre_lavees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "nettoyer_poireau",
+      "action": "Nettoyer le poireau à l'eau chaude.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "poireaux"
+      ],
+      "produces": "poireaux_nettoyes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_pommes_de_terre",
+      "action": "Couper les pommes de terre en cubes d'1cm d'épaisseur maximum.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "pommes_de_terre_lavees"
+      ],
+      "produces": "pommes_de_terre_cubes",
+      "requires": [],
+      "visualCue": "cubes de 1cm"
+    },
+    {
+      "id": "ciseler_poireau",
+      "action": "Ciseler le poireau finement.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "poireaux_nettoyes"
+      ],
+      "produces": "poireaux_ciseles",
+      "requires": [],
+      "visualCue": "finement ciselé"
+    },
+    {
+      "id": "suer_poireau",
+      "action": "Dans une grosse casserole ou un faitout, faire suer le poireau dans le beurre mais sans le colorer.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "poireaux_ciseles",
+        "beurre"
+      ],
+      "produces": "poireaux_sues",
+      "requires": [],
+      "visualCue": "poireaux translucides mais non colorés"
+    },
+    {
+      "id": "ajouter_pommes_de_terre",
+      "action": "Ajouter les pommes de terre coupées en cubes aux poireaux.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "poireaux_sues",
+        "pommes_de_terre_cubes"
+      ],
+      "produces": "legumes_melanges",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner",
+      "action": "Ajouter deux pincées de sel et poivrer.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "legumes_melanges",
+        "sel",
+        "poivre"
+      ],
+      "produces": "legumes_assaisonnees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_suer_legumes",
+      "action": "Faire suer les légumes assaisonnés.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "legumes_assaisonnees"
+      ],
+      "produces": "legumes_sues",
+      "requires": [],
+      "visualCue": "légumes légèrement fondants"
+    },
+    {
+      "id": "ajouter_eau",
+      "action": "Ajouter 1 L d'eau minérale.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "legumes_sues",
+        "eau"
+      ],
+      "produces": "potage_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "porter_ebullition",
+      "action": "Porter à ébullition.",
+      "duration": "PT5M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "potage_base"
+      ],
+      "produces": "potage_ebullition",
+      "requires": [],
+      "visualCue": "bouillonnement régulier"
+    },
+    {
+      "id": "mijoter",
+      "action": "Laisser mijoter 15 minutes.",
+      "duration": "PT15M",
+      "temperature": 90,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "potage_ebullition"
+      ],
+      "produces": "potage_cuit",
+      "requires": [],
+      "visualCue": "légumes tendres"
+    },
+    {
+      "id": "ajouter_creme",
+      "action": "Ajouter la crème fraîche.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "finition",
+      "uses": [
+        "potage_cuit",
+        "creme_fraiche"
+      ],
+      "produces": "potage_creme",
+      "requires": [],
+      "visualCue": "soupe crémeuse"
+    },
+    {
+      "id": "servir",
+      "action": "Servir le potage chaud.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "potage_creme"
+      ],
+      "produces": "potage_poireau_pomme_de_terre",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "potage_poireau_pomme_de_terre",
+  "originalText": "potage poireau pomme de terre\n\n\nUne recette simple et rapide qui nous vient de notre masterchief Paul Bocuse qui pour une fois nous propose un plat végétarien. Ce potage saura idéalement réchauffer votre cœur lors des longues soirées d’hiver.\nIngrédients :\n\nQuelques poireaux\n200g pommes de terre\n100g de beurre\nSel, poivre\n1 L d’eau minérale\n100 de crème fraîche\n\nPréparation :\n\nLaver les pommes de terre avant de les éplucher\nNettoyer le poireau à l’eau chaude\nLes découper en cubes d’1cm d’épaisseur maximum\nCiseler le poireau finement\nDans une grosse casserole ou un faitout, faire suer le poireau dans le beurre mais sans le colorer\nUne fois que les poireaux ont bien sué, ajouter les pommes de terre\nAjouter deux pincées de sel et poivrer\nFaire suer puis ajouter 1 L d’eau\nPorter à ébullition puis laisser mijoter 15 minutes (pas une de plus)\nAjouter la crème et servir\n\nMain recipe image: temp_image_recipe-gen-20260208054329-712dfac6.png",
+  "totalCookingTime": 34.0
+}

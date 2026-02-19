@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "title": "Cake aux pommes sans mati\u00e8re grasse",
+    "description": "Un cake moelleux et l\u00e9ger o\u00f9 la mati\u00e8re grasse est remplac\u00e9e par de la pomme r\u00e2p\u00e9e, parfait pour un petit-d\u00e9jeuner.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT50M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "cake amande",
+      "cake aux pommes",
+      "cake pomme",
+      "pomme",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Cake-pomme-amande-sans-MG-3-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La technique est la m\u00eame que pour le cake au matcha : remplacer la mati\u00e8re grasse par un fruit r\u00e2p\u00e9.",
+      "Le cake est moins doux et fondant qu'un cake classique, mais tr\u00e8s moelleux et l\u00e9ger.",
+      "Il se cong\u00e8le bien.",
+      "Variante possible : remplacer les pommes par des poires."
+    ],
+    "slug": "cake-aux-pommes-sans-matiere-grasse",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Cake-pomme-amande-sans-MG-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/08/cake-aux-pommes-sans-matiere-grasse/",
+    "image": "images/cake-aux-pommes-sans-matiere-grasse.webp",
+    "createdAt": "2026-02-09T21:36:06.864827",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 50.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 1724.3,
+      "protein": 56.5,
+      "fat": 13.9,
+      "carbs": 340.4,
+      "fiber": 17.8,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "poudre_amande",
+      "name": "poudre d'amande",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond powder"
+    },
+    {
+      "id": "levure_chimique",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "cannelle",
+      "name": "cannelle",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "m\u00e9lange de sucre roux et sucre de fleurs de palmier",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "yaourt_grec",
+      "name": "yaourt grec",
+      "quantity": 110.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "pommes",
+      "name": "pommes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 400g, 2 r\u00e2p\u00e9es et 2 en morceaux",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "amandes_effilees",
+      "name": "amandes effil\u00e9es",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "slivered almonds"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 cake"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un saladier, m\u00e9langer les ingr\u00e9dients secs : poudre d'amande, farine, levure, sel, cannelle, sucre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "poudre_amande",
+        "farine",
+        "levure_chimique",
+        "sel",
+        "cannelle",
+        "sucre"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet_ingredients",
+      "action": "Ajouter les ingr\u00e9dients humides : yaourt grec, oeufs, ainsi que les 2 pommes r\u00e2p\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "yaourt_grec",
+        "oeufs",
+        "pommes"
+      ],
+      "produces": "batter_with_grated_apples",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_batter",
+      "action": "M\u00e9langer jusqu'\u00e0 ce que la p\u00e2te soit homog\u00e8ne. Inutile de trop m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_with_grated_apples"
+      ],
+      "produces": "homogeneous_batter",
+      "requires": [],
+      "visualCue": "p\u00e2te homog\u00e8ne"
+    },
+    {
+      "id": "add_apple_chunks",
+      "action": "Ajouter les morceaux des 2 pommes restantes (en r\u00e9servant 3 quartiers pour la d\u00e9coration).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "homogeneous_batter",
+        "pommes"
+      ],
+      "produces": "batter_with_chunks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_pan",
+      "action": "M\u00e9langer et transf\u00e9rer la p\u00e2te dans un moule \u00e0 cake chemis\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_with_chunks"
+      ],
+      "produces": "batter_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_apple_slices",
+      "action": "Disposer les quartiers de pommes r\u00e9serv\u00e9s, coup\u00e9s en lamelles, par-dessus la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_in_pan",
+        "pommes"
+      ],
+      "produces": "batter_with_topping",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_almonds",
+      "action": "Saupoudrer d'amandes effil\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_with_topping",
+        "amandes_effilees"
+      ],
+      "produces": "ready_to_bake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_cake",
+      "action": "Enfourner pour 50min.",
+      "duration": "PT50M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "ready_to_bake"
+      ],
+      "produces": "baked_cake",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_cake",
+      "action": "Laisser refroidir avant de couper.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "baked_cake"
+      ],
+      "produces": "cooled_cake",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooled_cake",
+  "originalText": "Cake aux pommes sans mati\u00e8re grasse - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 octobre 2022\nCake aux pommes sans mati\u00e8re grasse\nAller \u00e0 la recette\nC\u2019est quoi le d\u00e9lire de ce Cake aux pommes sans mati\u00e8re grasse ?\nQui fait des cakes sans mati\u00e8re grasse ? C\u2019est un blog de fitness ici maintenant ? Nous on aime les g\u00e2teaux bien comme il faut !!\nC\u2019est vrai !\nMais d\u00e9j\u00e0, en ce moment, Daniela est un peu surcharg\u00e9e. Du coup, elle fait moins de g\u00e2teau. Snif. Du coup, je fais des g\u00e2teaux ! Et mon truc du moment, c\u2019est de trouver des petits-d\u00e9jeuners pour ma fille et mon mec.\nOui, c\u2019est old school de cuisiner pour son mec lol ! Mais en vrai, \u00e0 la maison, je passe tellement de temps derri\u00e8re les fourneaux\u2026 Que forc\u00e9ment \u2026 Vous voyez quoi !\nBref ! Ma fille a du mal \u00e0 manger le matin. Elle est un peu comme moi, je pense. L\u2019id\u00e9e d\u2019ingurgiter des trucs d\u00e8s le r\u00e9veil est un peu difficile. Du coup, j\u2019essaie de varier les plaisirs ! Je lui fais des gaufres (je les cong\u00e8le en batch). Et parfois des cakes. Ou des cr\u00eapes,\ncomme celles-ci au potimarron\n.\nEt mon mec et moi on essaie de faire un peu attention \u00e0 ce qu\u2019on mange en ce moment. Du coup, voil\u00e0. Tout ce racontage de vie pour vous expliquer que j\u2019essaie de cuisiner avec moins de mati\u00e8re grasse. Pour garder la ligne !\nDu coup, la technique est la m\u00eame que pour\nle cake au matcha\n. A savoir, remplacer la mati\u00e8re grasse par un fruit r\u00e2p\u00e9. Et \u00e7a marche bien ! \u00c9videmment le cake est moins doux et fondant. On ne peut pas reproduire exactement la m\u00eame texture. Mais il est tout de m\u00eame tr\u00e8s moelleux et l\u00e9ger. La texture est diff\u00e9rente mais tr\u00e8s agr\u00e9able ! Je vous le recommande les yeux ferm\u00e9s !\nAh, et il se cong\u00e8le aussi !\nCake aux pommes sans mati\u00e8re grasse\n4.57\n/5 avec\n41\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n50\nminutes\nmin\nIngr\u00e9dients\n140\ng\nde farine\n80\ng\nde poudre d\u2019amande\n1\nsachet de levure chimique\n1\npinc\u00e9e de sel\n1\nc\u00e0c de cannelle\n90\ng\nde sucre\nici m\u00e9lange de sucre roux et sucre de fleurs de palmier\n110\ng\nde yaourt grec\n2\noeufs\n4\npommes \u2013 env 400g\n2 r\u00e2p\u00e9es et 2 en morceaux\n1\nc\u00e0s d\u2019amandes effil\u00e9es\nInstructions\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nDans un saladier, m\u00e9langer les ingr\u00e9dients secs : poudre d\u2019amande, farine, levure, sel.\nAjouter les ingr\u00e9dients humides : yaourt, oeufs, ainsi que la pomme r\u00e2p\u00e9e.\nM\u00e9langer jusqu\u2019\u00e0 ce que la p\u00e2te soit homog\u00e8ne. Inutile de trop m\u00e9langer.\nAjouter les morceaux de pommes. Garder 3 quartiers pour la d\u00e9coration.\nM\u00e9langer et transf\u00e9rer dans votre moule \u00e0 cake (pr\u00e9alablement chemis\u00e9).\nDisposer les quartiers de pommes restants, coup\u00e9s en lamelles par-dessus.\nSaupoudrer d\u2019amandes effil\u00e9es.\nEnfourner 50 \u00e0 55min.\nLaisser refroidir avant de couper.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nG\u00e2teaux et Cakes\n,\nHiver\n,\nPomme\n,\nPrintemps\n,\nRecettes Sucr\u00e9es\nTags:\ncake amande\n,\ncake aux pommes\n,\ncake pomme\n,\npomme\nSauce aux poivrons r\u00f4tis\nSalade Express de Betterave C\u00e2pres et Feta\n2 thoughts on \u201cCake aux pommes sans mati\u00e8re grasse\u201d\nAnock\ndit\u00a0:\n25 ao\u00fbt 2025 \u00e0 16 h 18 min\nOui je viens de la r\u00e9aliser,  j\u2019ai juste remplac\u00e9 les pommes par des poires et ajouter 1 oeuf  de plus. Cette recette  est excellente  !\nchargement\u2026\nR\u00e9pondre\nMaroussia\ndit\u00a0:\n21 septembre 2025 \u00e0 22 h 11 min\nRecette parfaite !   Merci\nchargement\u2026\nR\u00e9pondre\n4.57 from 41 votes (\n40 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

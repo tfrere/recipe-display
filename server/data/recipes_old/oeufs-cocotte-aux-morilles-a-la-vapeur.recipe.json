@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "title": "\u0152ufs Cocotte aux Morilles \u00e0 la vapeur",
+    "description": "Une id\u00e9e d'entr\u00e9e toute simple pour les repas de f\u00eates, o\u00f9 les morilles apportent un c\u00f4t\u00e9 festif et gourmet. Les \u0153ufs sont cuits \u00e0 la vapeur pour pr\u00e9server les nutriments.",
+    "servings": 3,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "champignon",
+      "hiver",
+      "noel",
+      "v\u00e9g\u00e9tarien",
+      "vapeur"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Oeufs-cocotte-aux-morilles-1-of-5.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour faire cette recette, j'ai utilis\u00e9 des \u0153ufs bien frais et des morilles surgel\u00e9es. Mais vous pouvez tout \u00e0 fait utiliser des morilles fra\u00eeches, en bocal ou d\u00e9shydrat\u00e9es.",
+      "Le cuiseur Biome de Cristel, est particuli\u00e8rement top. Car il int\u00e8gre un thermom\u00e8tre qui permet de v\u00e9rifier qu'on ne d\u00e9passe pas la temp\u00e9rature id\u00e9ale de 90\u00b0C.",
+      "Si vous souhaitez des jaunes d'\u0153uf coulants, vous pouvez les s\u00e9parer et les ajouter aux ramequins en toute fin de cuisson."
+    ],
+    "slug": "oeufs-cocotte-aux-morilles-a-la-vapeur",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Oeufs-cocotte-aux-morilles-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/12/13/oeufs-cocotte-aux-morilles-a-la-vapeur/",
+    "image": "images/oeufs-cocotte-aux-morilles-a-la-vapeur.jpg",
+    "createdAt": "2026-02-09T20:56:13.468736",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 29.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 408.8,
+      "protein": 24.3,
+      "fat": 21.0,
+      "carbs": 30.1,
+      "fiber": 8.5,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 90g",
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "morels",
+      "name": "morilles",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "fra\u00eeches, surgel\u00e9es ou r\u00e9hydrat\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Morel mushrooms"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc",
+      "quantity": 30.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "eggs",
+      "name": "\u0153ufs frais",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh eggs"
+    },
+    {
+      "id": "parsley",
+      "name": "persil",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "quelques feuilles",
+      "optional": false,
+      "name_en": "parsley"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la cuisson vapeur",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "3 ramequins",
+    "casserole vapeur (comme le cuiseur Biome de Cristel)"
+  ],
+  "steps": [
+    {
+      "id": "slice_shallots",
+      "action": "\u00c9plucher et \u00e9mincer les \u00e9chalotes dans la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "shallots"
+      ],
+      "produces": "sliced_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots",
+      "action": "Faire revenir les \u00e9chalotes dans un filet d'huile d'olive, \u00e0 feu moyen-fort pendant 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "sliced_shallots",
+        "olive_oil"
+      ],
+      "produces": "sauteed_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_morels",
+      "action": "Ajouter les morilles, et laisser cuire jusqu'\u00e0 ce qu'elles aient rejet\u00e9 toute leur eau.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "sauteed_shallots",
+        "morels"
+      ],
+      "produces": "cooked_morels",
+      "requires": [],
+      "visualCue": "morilles ont rejet\u00e9 toute leur eau"
+    },
+    {
+      "id": "add_garlic_wine",
+      "action": "Presser l'ail et l'ajouter dans la po\u00eale avec le vin blanc. Faire revenir jusqu'\u00e0 \u00e9vaporation.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "cooked_morels",
+        "garlic",
+        "white_wine"
+      ],
+      "produces": "morels_garlic_wine",
+      "requires": [],
+      "visualCue": "vin blanc \u00e9vapor\u00e9"
+    },
+    {
+      "id": "add_cream",
+      "action": "Verser la cr\u00e8me et faire revenir encore 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "morels_garlic_wine",
+        "cream"
+      ],
+      "produces": "morel_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_some_morels",
+      "action": "Mettre quelques morilles de c\u00f4t\u00e9 pour la d\u00e9co.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "morel_sauce"
+      ],
+      "produces": "morel_sauce_with_reserved",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_steamer",
+      "action": "Verser de l'eau dans le bas du cuiseur vapeur et le mettre \u00e0 chauffer avec le panier vapeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "water"
+      ],
+      "produces": "heated_steamer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "distribute_morels",
+      "action": "R\u00e9partir les morilles (sauf celles r\u00e9serv\u00e9es) dans les 3 ramequins.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "morel_sauce_with_reserved"
+      ],
+      "produces": "ramekins_with_morels",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_eggs",
+      "action": "Casser un \u0153uf dans chaque ramequin.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "ramekins_with_morels",
+        "eggs"
+      ],
+      "produces": "ramekins_with_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_eggs",
+      "action": "Quand le thermom\u00e8tre indique 90\u00b0C, d\u00e9poser les ramequins dans le panier vapeur. Laisser cuire 12min \u00e0 couvert.",
+      "duration": "PT12M",
+      "temperature": 90,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "ramekins_with_eggs"
+      ],
+      "produces": "steamed_eggs",
+      "requires": [
+        "heated_steamer"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_yolks",
+      "action": "Ajouter les jaunes d'\u0153uf dans les ramequins en fin de cuisson (si vous les avez s\u00e9par\u00e9s).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "steamed_eggs"
+      ],
+      "produces": "eggs_with_yolks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnish",
+      "action": "Disposer les morilles restantes dans les ramequins avec quelques brins de persil hach\u00e9 et un peu de fleurs de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "oeufs_cocotte",
+      "uses": [
+        "eggs_with_yolks",
+        "parsley",
+        "salt",
+        "pepper"
+      ],
+      "produces": "oeufs_cocotte_morilles",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "oeufs_cocotte_morilles",
+  "originalText": "\u0152ufs Cocotte aux Morilles \u00e0 la vapeur - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 d\u00e9cembre 2021\n\u0152ufs Cocotte aux Morilles \u00e0 la vapeur\nAller \u00e0 la recette\nNo\u00ebl approche \u00e0 grand pas ! Et on se retrouve aujourd\u2019hui pour une recette d\u2019\u0152ufs Cocotte aux Morilles \u00e0 la vapeur \ud83d\ude42\nC\u2019est une id\u00e9e d\u2019entr\u00e9e toute simple pour les repas de f\u00eates. Et les morilles apportent toujours ce c\u00f4t\u00e9 festif et gourmet. Vous ne trouvez pas ?\nPour faire cette recette, j\u2019ai utilis\u00e9 des \u0153ufs bien frais et des morilles surgel\u00e9es. Mais vous pouvez tout \u00e0 fait utiliser des morilles fra\u00eeches, en bocal ou d\u00e9shydrat\u00e9es.\nEt j\u2019ai surtout cuit les \u0153ufs \u00e0 la vapeur. C\u2019est un mode de cuisson que j\u2019aime beaucoup ! Et que j\u2019utilise tr\u00e8s souvent, notamment pour faire cuire mes l\u00e9gumes.\nLe cuiseur Biome de Cristel\n, est particuli\u00e8rement top. Car il int\u00e8gre un thermom\u00e8tre qui permet de v\u00e9rifier qu\u2019on ne d\u00e9passe pas la temp\u00e9rature id\u00e9ale de 90\u00b0C. C\u2019est \u00e0 cette temp\u00e9rature qu\u2019on pr\u00e9serve les vitamines et nutriments des aliments.\nEnfin, revenons-en \u00e0 nos \u0153ufs cocottes aux morilles \u00e0 la vapeur.\nLa recette est simple, et la cuisson rapide. Ce qui est parfait pour une entr\u00e9e de menu de F\u00eates. Vous ne trouvez pas ?\nOn commence par faire une sauce aux morilles. Avec quelques \u00e9chalotes, des morilles, un peu de cr\u00e8me et du vin blanc. Parce que c\u2019est la f\u00eate quand m\u00eame non !?\nJe vous laisse d\u00e9couvrir cette recette. Et si vous avez besoin de plus d\u2019id\u00e9es pour No\u00ebl, on vous a concoct\u00e9 des petits recaps. Vous trouverez celui avec\nles ap\u00e9ros et entr\u00e9es ici\n!\nCelui avec les plats\n. Et finalement,\ncelui avec les desserts\n!\nJ\u2019ai cr\u00e9\u00e9 cette recette dans le cadre d\u2019une collaboration avec\nCristel\n.\n\u0152ufs Cocotte aux Morilles \u00e0 la vapeur\nNatacha\n4.52\n/5 avec\n43\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n12\nminutes\nmin\nPortions\n3\npersonnes\nEquipment\n3 ramequins\n1 casserole vapeur\nIngr\u00e9dients\n1x\n2x\n3x\n3\n\u00e9chalotes\nenviron 90g\n1\nfilet d\u2019huile d\u2019olive\n150\ng\nde morilles fra\u00eeches\nsurgel\u00e9es ou r\u00e9hydratez\n1\ngousse d\u2019ail\n30\nml\nde vin blanc\n100\nml\nde cr\u00e8me liquide\nsel\npoivre\n3\n\u0153ufs frais\nQuelques feuilles de persil\nInstructions\nCommencer par \u00e9plucher et \u00e9mincer les \u00e9chalotes dans la longueur.\nFaire revenir dans un filet d\u2019huile d\u2019olive, \u00e0 feu moyen-fort pendant 3min.\nAjouter les morilles, et laisser cuire jusqu\u2019\u00e0 ce qu\u2019elles aient rejet\u00e9 toute leur eau (environ 7min).\nPresser l\u2019ail et ajouter le dans la po\u00eale avec le vin blanc. Faire revenir jusqu\u2019\u00e0 \u00e9vaporation.\nVerser la cr\u00e8me et faire revenir encore 7-8min.\nMettre quelques morilles de c\u00f4t\u00e9 pour la d\u00e9co.\nVerser de l\u2019eau dans le bas du Biome. Et le mettre \u00e0 chauffer avec le panier vapeur.\nR\u00e9partir les morilles dans les 3 ramequins.\nCasser un \u0153uf dans chaque ramequin. Si vous souhaitez des jaunes d\u2019\u0153uf coulants, vous pouvez les s\u00e9parer et les ajouter aux ramequins en toute fin de cuisson.\nQuand le thermom\u00e8tre indique 90\u00b0C, d\u00e9poser les ramequins dans le panier vapeur.\nLaisser cuire 12min \u00e0 couvert.\nAjouter les jaunes en fin de cuisson (si vous les avez s\u00e9parer).\nDisposer les morilles restantes dans les ramequins avec quelques brins de persil hach\u00e9 et un peu de fleurs de sel.\nD\u00e9guster tout de suite !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nChampignon\n,\nHiver\nTags:\ncomment faire des oeufs cocotte\n,\noceufs cocotte a la vapeur\n,\noeufs cocotte\n,\noeufs cocotte noel\n,\noeufs cocotte vegetarien\n,\nrecette oeufs cocotte\nSucettes au Miel de Tilleul, Fleurs, Citron et Gingembre\nCrinkles Red Velvet\n4.52 from 43 votes (\n43 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

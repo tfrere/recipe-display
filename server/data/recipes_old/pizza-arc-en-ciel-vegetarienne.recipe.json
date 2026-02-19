@@ -1,0 +1,484 @@
+{
+  "metadata": {
+    "title": "Pizza arc-en-ciel v\u00e9g\u00e9tarienne",
+    "description": "Une pizza color\u00e9e et v\u00e9g\u00e9tarienne, parfaite pour faire le plein de l\u00e9gumes et \u00e9blouir invit\u00e9s et enfants.",
+    "servings": 1,
+    "prepTime": "PT25M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "pizza",
+      "pizzas maison",
+      "rainbow pizza",
+      "v\u00e9g\u00e9tarien",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/pizza-arc-en-ciel-6-of-7.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Surtout si vous utilisez une p\u00e2te \u00e0 pizza du commerce. Vous pouvez aussi faire votre propre p\u00e2te \u00e0 pizza.",
+      "Vous pouvez trouver toutes les \u00e9tapes de pr\u00e9paration de la p\u00e2te \u00e0 pizza dans cet article. Vous y trouverez aussi tous mes conseils pour faire des pizzas maison !",
+      "Vous pouvez la pr\u00e9parer en grande quantit\u00e9 et la congeler dans des bocaux. C'est ce que je fais toujours avec la sauce tomate.",
+      "Choisissez simplement des l\u00e9gumes avec des couleurs qui permettent de faire un d\u00e9grad\u00e9 ! Ici, j'ai utilis\u00e9 des poivrons verts, des courgettes, des tomates et des oignons. Mais sentez-vous libres d'adaptez les l\u00e9gumes en fonction de vos go\u00fbts et des saisons."
+    ],
+    "slug": "pizza-arc-en-ciel-vegetarienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/pizza-arc-en-ciel-6-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/08/05/pizza-arc-en-ciel-vegetarienne/",
+    "image": "images/pizza-arc-en-ciel-vegetarienne.webp",
+    "createdAt": "2026-02-09T21:29:04.964228",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 1049.7,
+      "protein": 42.3,
+      "fat": 0.8,
+      "carbs": 180.1,
+      "fiber": 78.5,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 12,
+      "totalIngredients": 14,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "yellow_onion",
+      "name": "oignon jaune",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9 tr\u00e8s finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9e tr\u00e8s finement",
+      "notes": "petite",
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tomato_coulis",
+      "name": "coulis de tomate",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "oregano_sauce",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": "petit",
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "red_cherry_tomatoes",
+      "name": "tomates cerises rouges",
+      "quantity": 20.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9es en deux",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "orange_bell_pepper",
+      "name": "poivron orange",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Orange bell pepper"
+    },
+    {
+      "id": "yellow_cherry_tomatoes",
+      "name": "tomates cerises jaunes",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9es en deux",
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow cherry tomatoes"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgette",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "green_bell_pepper",
+      "name": "poivron vert",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "green bell pepper"
+    },
+    {
+      "id": "pizza_dough",
+      "name": "p\u00e2te \u00e0 pizza",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pizza dough"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella r\u00e2p\u00e9e",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Grated mozzarella"
+    },
+    {
+      "id": "oregano_pizza",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "olive",
+      "name": "olive",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive"
+    },
+    {
+      "id": "basil",
+      "name": "feuilles basilic",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "quelques feuilles",
+      "optional": false,
+      "name_en": "Basil leaves"
+    }
+  ],
+  "tools": [
+    "Pierre \u00e0 pizza"
+  ],
+  "steps": [
+    {
+      "id": "mince_onion_garlic",
+      "action": "\u00c9mincer tr\u00e8s finement l'oignon et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "yellow_onion",
+        "garlic"
+      ],
+      "produces": "minced_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_garlic",
+      "action": "Faire revenir dans une casserole avec un filet d'huile d'olive \u00e0 feu moyen-fort.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "minced_onion_garlic",
+        "olive_oil"
+      ],
+      "produces": "sauteed_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Verser tous les autres ingr\u00e9dients de la sauce. Remuer, baisser le feu et couvrir. Laisser mijoter en remuant de temps en temps.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce",
+      "uses": [
+        "sauteed_onion_garlic",
+        "tomato_coulis",
+        "water",
+        "sugar",
+        "thyme",
+        "oregano_sauce",
+        "salt"
+      ],
+      "produces": "tomato_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 250\u00b0C. Si vous avez une pierre \u00e0 pizza, l'enfourner.",
+      "duration": null,
+      "temperature": 250,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "Couper les tomates cerises en deux et \u00e9mincer les autres l\u00e9gumes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "red_cherry_tomatoes",
+        "yellow_cherry_tomatoes",
+        "red_onion",
+        "orange_bell_pepper",
+        "zucchini",
+        "green_bell_pepper"
+      ],
+      "produces": "prepared_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_dough",
+      "action": "D\u00e9rouler la p\u00e2te \u00e0 pizza sur une plaque qui vous permettra de la d\u00e9placer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "pizza_dough"
+      ],
+      "produces": "rolled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_sauce_cheese",
+      "action": "\u00c9taler la sauce tomate, puis la mozzarella.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "rolled_dough",
+        "tomato_sauce",
+        "mozzarella"
+      ],
+      "produces": "sauced_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_vegetables",
+      "action": "Disposer les l\u00e9gumes en arc-en-ciel. Placer l'olive au centre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "sauced_dough",
+        "prepared_vegetables",
+        "olive"
+      ],
+      "produces": "arranged_pizza",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_oregano",
+      "action": "Saupoudrer d'origan.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "arranged_pizza",
+        "oregano_pizza"
+      ],
+      "produces": "seasoned_pizza",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_pizza",
+      "action": "Enfourner. La cuisson dure 5min si vous avez une pierre \u00e0 pizza et 15min sans pierre.",
+      "duration": "PT15M",
+      "temperature": 250,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pizza",
+      "uses": [
+        "seasoned_pizza"
+      ],
+      "produces": "baked_pizza",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_basil",
+      "action": "Ajouter les feuilles de basilic avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "pizza",
+      "uses": [
+        "baked_pizza",
+        "basil"
+      ],
+      "produces": "pizza_arc_en_ciel",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pizza_arc_en_ciel",
+  "originalText": "Pizza arc-en-ciel v\u00e9g\u00e9tarienne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 ao\u00fbt 2022\nPizza arc-en-ciel v\u00e9g\u00e9tarienne\nAller \u00e0 la recette\nVous avez d\u00e9j\u00e0 mang\u00e9 une pizza arc-en-ciel v\u00e9g\u00e9tarienne ? Et bien sachez que c\u2019est non seulement beau. Mais aussi tr\u00e8s bon !\nC\u2019est une merveilleuse recette pour faire le plein de l\u00e9gumes. Tout en \u00e9blouissant vos invit\u00e9s et vos enfants !\nEn fait, c\u2019est une recette tr\u00e8s simple. Surtout si vous utilisez une p\u00e2te \u00e0 pizza du commerce. Vous pouvez aussi faire votre propre p\u00e2te \u00e0 pizza. Votre pizza n\u2019en sera que meilleure. Mais cela demande un peu plus d\u2019anticipation. En effet, il faut laisser le temps \u00e0 la p\u00e2te de lever. Comptez quelques heures.\nVous pouvez trouver toutes les \u00e9tapes de pr\u00e9paration de la p\u00e2te \u00e0 pizza dans cet article\n. Vous y trouverez aussi tous mes conseils pour faire des pizzas maison !\nEnsuite, il vous faut juste une petite sauce tomate maison ! Je vous mets une recette ci-dessous. Vous pouvez la pr\u00e9parer en grande quantit\u00e9 et la congeler dans des bocaux. C\u2019est ce que je fais toujours avec la sauce tomate.\nJ\u2019utilise cette recette l\u00e0 en g\u00e9n\u00e9ral\n.\nFinalement, il vous fait les \u201ctoppings\u201d. A savoir, des l\u00e9gumes et un peu de mozzarella r\u00e2p\u00e9e.\nChoisissez simplement des l\u00e9gumes avec des couleurs qui permettent de faire un d\u00e9grad\u00e9 ! Ici, j\u2019ai utilis\u00e9 des poivrons verts, des courgettes, des tomates et des oignons. Mais sentez-vous libres d\u2019adapter les l\u00e9gumes en fonction de vos go\u00fbts et des saisons pour r\u00e9aliser votre Pizza arc-en-ciel v\u00e9g\u00e9tarienne !\nPizza arc-en-ciel v\u00e9g\u00e9tarienne\n4.53\n/5 avec\n91\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n1\npizza\nIngr\u00e9dients\n1x\n2x\n3x\nPour la sauce \u00e0 pizza\n\u00bc\noignon jaune\n1\npetite gousse d\u2019ail\n1\nfilet d\u2019huile d\u2019olive\n100\nml\nde coulis de tomate\n1\nc\u00e0s d\u2019eau\n1\npinc\u00e9e de sucre\n1\npinc\u00e9e de thym\n1\npinc\u00e9e d\u2019origan\nsel\nPour la pizza\n1\npetit oignon rouge\n15-20 to\nmates cerises rouges\n\u00bd\npoivron orange\n7-8 to\nmates cerises jaunes\n\u00bc\nde courgette\n\u00bc\nde poivron vert\n1\nrouleau de p\u00e2te \u00e0 pizza\nrecette maison ici\n130\ng\nde mozzarella r\u00e2p\u00e9e\n1\npinc\u00e9e d\u2019origan\n1\nolive\nquelques feuilles de basilic\nInstructions\nPr\u00e9chauffer le four \u00e0 250\u00b0C. Il doit \u00eatre tr\u00e8s chaud. Si vous avez une pierre \u00e0 pizza, enfournez-la.\nPour la sauce\n\u00c9mincer tr\u00e8s finement l\u2019oignon et l\u2019ail.\nFaire revenir dans une casserole avec un filet d\u2019huile d\u2019olive \u00e0 feu moyen-fort pendant 5min. Verser tous les autres ingr\u00e9dients de la sauce. Remuer, baisser le feu et couvrir. Laisser mijoter 20min en remuant de temps en temps.\nPour la pizza\nCouper les tomates cerises en deux et \u00e9mincer les autres l\u00e9gumes.\nD\u00e9rouler la p\u00e2te \u00e0 pizza sur une plaque qui vous permettra de la d\u00e9placer.\n\u00c9taler la sauce tomate, puis la mozzarella.\nDisposer les l\u00e9gumes en arc-en-ciel. Placer l\u2019olive au centre.\nSaupoudrer d\u2019origan.\nEnfourner.\nLa cuisson dure 5min si vous avez une pierre \u00e0 pizza et 15-20min sans pierre.\nAjouter les feuilles de basilic avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\npizza\n,\npizzas maison\n,\nrainbow pizza\nCake tomates cerises olives et feta\nP\u00e2tes aux tomates cerises ail et burrata\n4.53 from 91 votes (\n91 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

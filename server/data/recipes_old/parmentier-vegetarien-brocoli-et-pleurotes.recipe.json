@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "title": "Parmentier v\u00e9g\u00e9tarien brocoli et pleurotes",
+    "description": "Ce Parmentier v\u00e9g\u00e9tarien brocoli et pleurotes vient rejoindre la petite collection de parmentier du blog ! La pur\u00e9e au brocoli, quel r\u00e9gal ! Et la couche inf\u00e9rieure est pleine de saveurs.",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "parmentier",
+      "parmentier vegan",
+      "parmentier v\u00e9g\u00e9",
+      "Automne",
+      "Hiver",
+      "Brocoli",
+      "Champignon",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/Parmentier-vege-Staub-4-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ce plat tient encore mieux si vous le laissez compl\u00e8tement refroidir, puis le r\u00e9chauffez avant de servir.",
+      "Vous pouvez \u00e9ventuellement passer en mode grill pour les 5 derni\u00e8res minutes de cuisson."
+    ],
+    "slug": "parmentier-vegetarien-brocoli-et-pleurotes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/Parmentier-vege-Staub-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/02/15/parmentier-vegetarien-brocoli-et-pleurotes/",
+    "image": "images/parmentier-vegetarien-brocoli-et-pleurotes.webp",
+    "createdAt": "2026-02-09T22:01:55.234070",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 87.0,
+    "totalCookingTime": 7.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 187.3,
+      "protein": 6.5,
+      "fat": 11.6,
+      "carbs": 17.6,
+      "fiber": 5.2,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 14,
+      "totalIngredients": 18,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 pur\u00e9e",
+      "quantity": 750.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mashing potatoes"
+    },
+    {
+      "id": "broccoli",
+      "name": "brocoli",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "broccoli"
+    },
+    {
+      "id": "butter",
+      "name": "beurre ou de margarine",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter or margarine"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me animale ou v\u00e9g\u00e9tale",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cream (animal or vegetable)"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "nutmeg",
+      "name": "muscade moulue",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "milk",
+      "name": "lait animal ou v\u00e9g\u00e9tal",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "3-4 c\u00e0s",
+      "optional": false,
+      "name_en": "milk (animal or vegetable)"
+    },
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "celery",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "bay_leaves",
+      "name": "feuilles laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaves"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "button_mushrooms",
+      "name": "champignons de Paris",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "oyster_mushrooms",
+      "name": "pleurotes",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "bouillon_cube",
+      "name": "bouillon cube",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bouillon cube"
+    },
+    {
+      "id": "nutritional_yeast",
+      "name": "levure malt\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Cocotte",
+    "Cuiseur vapeur"
+  ],
+  "steps": [
+    {
+      "id": "cut_potatoes_broccoli",
+      "action": "\u00c9plucher et couper grossi\u00e8rement les pommes de terre. Couper le brocoli.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pur\u00e9e",
+      "uses": [
+        "potatoes",
+        "broccoli"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_vegetables",
+      "action": "Faire cuire les pommes de terre et le brocoli \u00e0 la vapeur pendant 25min ou jusqu'\u00e0 ce qu'ils soient fondants.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pur\u00e9e",
+      "uses": [
+        "cut_vegetables"
+      ],
+      "produces": "steamed_vegetables",
+      "requires": [],
+      "visualCue": "fondants"
+    },
+    {
+      "id": "mash_vegetables",
+      "action": "\u00c9craser les l\u00e9gumes cuits avec le beurre, la cr\u00e8me, le sel, le poivre, la muscade et le lait. Ajuster la quantit\u00e9 de lait en fonction de la consistance souhait\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pur\u00e9e",
+      "uses": [
+        "steamed_vegetables",
+        "butter",
+        "cream",
+        "salt",
+        "pepper",
+        "nutmeg",
+        "milk"
+      ],
+      "produces": "broccoli_potato_mash",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_vegetables",
+      "action": "\u00c9mincer finement les \u00e9chalotes, la carotte et le c\u00e9leri.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "shallots",
+        "carrot",
+        "celery"
+      ],
+      "produces": "sliced_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Les faire revenir pendant 6-7min dans la cocotte avec 3 c\u00e0s d'huile d'olive, le romarin, le laurier et le paprika fum\u00e9.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "sliced_vegetables",
+        "olive_oil",
+        "rosemary",
+        "bay_leaves",
+        "smoked_paprika"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_mushrooms",
+      "action": "Pendant ce temps, hacher les champignons de Paris et d\u00e9tailler les pleurotes en lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "button_mushrooms",
+        "oyster_mushrooms"
+      ],
+      "produces": "prepared_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_mushrooms_garlic",
+      "action": "Ajouter les champignons et les pleurotes \u00e0 la cocotte avec un bouillon cube de l\u00e9gumes et les gousses d'ail grossi\u00e8rement hach\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "sauteed_aromatics",
+        "prepared_mushrooms",
+        "bouillon_cube",
+        "garlic"
+      ],
+      "produces": "mushroom_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_mushrooms",
+      "action": "Couvrir et faire cuire pendant 25min en remuant de temps en temps.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "mushroom_mixture"
+      ],
+      "produces": "cooked_mushroom_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_thickeners",
+      "action": "En fin de cuisson, ajouter la levure malt\u00e9e et la farine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_inf\u00e9rieure",
+      "uses": [
+        "cooked_mushroom_mixture",
+        "nutritional_yeast",
+        "flour"
+      ],
+      "produces": "thickened_mushroom_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_in_dish",
+      "action": "Aplanir le contenu de la cocotte dans un plat et verser la pur\u00e9e par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "thickened_mushroom_layer",
+        "broccoli_potato_mash"
+      ],
+      "produces": "layered_parmentier",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pattern_and_bake",
+      "action": "Dessiner un motif \u00e0 l'aide d'une fourchette, puis enfourner pendant 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "layered_parmentier"
+      ],
+      "produces": "baked_parmentier",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "rest_before_serving",
+      "action": "Laisser ti\u00e9dir avant de d\u00e9guster.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "baked_parmentier"
+      ],
+      "produces": "parmentier_vegetarien_brocoli_pleurotes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "parmentier_vegetarien_brocoli_pleurotes",
+  "originalText": "Parmentier v\u00e9g\u00e9tarien brocoli et pleurotes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 f\u00e9vrier 2024\nParmentier v\u00e9g\u00e9tarien brocoli et pleurotes\nCe Parmentier v\u00e9g\u00e9tarien brocoli et pleurotes vient rejoindre la petite collection de parmentier du blog ! En effet, ceux qui sont l\u00e0 depuis un moment ont d\u00fb le remarquer !\nJ\u2019aime bien les parmentiers v\u00e9g\u00e9 ! Que dis-je ? J\u2019adore \u00e7a !\nIl y a mon classique pur\u00e9e de pommes de terre et champignons\n. C\u2019est celui qui se rapproche le plus de la version carn\u00e9e. Et qui me fait penser \u00e0 celui de ma grand-m\u00e8re !\nEt puis il y a celui au potimarron et aux lentilles\n. Un des plats pr\u00e9f\u00e9r\u00e9s de mon papa.\nComme quoi, la cuisine c\u2019est vraiment une histoire de famille.\nD\u2019ailleurs, j\u2019aime tellement les parmentiers v\u00e9g\u00e9tariens que vous en trouverez un dans mon premier livre.\nMon tout premier livre de recettes qui sort le 28 f\u00e9vrier\net qui est d\u00e9j\u00e0 disponible en pr\u00e9commande !\nAlors, oui, je vous vois venir, c\u2019est un plat un peu long \u00e0 pr\u00e9parer. Au final, on pr\u00e9pare presque deux plats en un ! Mais je vous le promets. \u00c7a vaut vraiment le coup !\nEt cette version est super. La pur\u00e9e au brocoli, quel r\u00e9gal ! Et la couche inf\u00e9rieure ! Je ne veux pas manquer d\u2019humilit\u00e9, mais j\u2019ai bien boss\u00e9 ! Elle est pleine de saveurs. Et j\u2019ai bien travaill\u00e9 sur les textures. Notamment avec les pleurotes effiloch\u00e9es. Qui apporte un c\u00f4t\u00e9 un peu filandreux que j\u2019adore !\nVoil\u00e0 ! J\u2019esp\u00e8re que vous allez vous r\u00e9galer autant que moi avec  ce Parmentier v\u00e9g\u00e9tarien brocoli et pleurotes !\nParmentier v\u00e9g\u00e9tarien brocoli et pleurotes\n4.50\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n50\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la couche de pur\u00e9e\n750\ng\nde pommes de terre \u00e0 pur\u00e9e\n350\ng\nde brocoli\n20\ng\nde beurre ou de margarine\n3\nc\u00e0s de cr\u00e8me\nanimale ou v\u00e9g\u00e9tale\nsel\npoivre\n1\npinc\u00e9e de muscade moulu\n3-4\nc\u00e0s de lait\nanimal ou v\u00e9g\u00e9tal\nPour la couche inf\u00e9rieure\n5\n\u00e9chalotes\n1\ncarotte\n1\nbranche de c\u00e9leri\n2\nfeuilles de laurier\n1\nbranche de romarin\n1\nc\u00e0c de paprika fum\u00e9\n200\ng\nde champignons de paris\n200\ng\nde pleurotes\n4\ngousses d\u2019ail\n1\nbouillon cube\n1\nc\u00e0s de levure malt\u00e9e\n1\nc\u00e0s de farine\nInstructions\nPr\u00e9parer la pur\u00e9e\n\u00c9plucher et couper grossi\u00e8rement les pommes de terre. Couper le brocoli.\nLes faire cuire \u00e0 la vapeur env 25min ou jusqu\u2019\u00e0 ce qu\u2019ils soient fondants.\nLes \u00e9craser avec le reste des ingr\u00e9dients. Ajuster la quantit\u00e9 de lait en fonction de la consistance souhait\u00e9e.\nPr\u00e9parer la couche inf\u00e9rieure\n\u00c9mincer finement les \u00e9chalotes, la carotte et le c\u00e9leri.\nLes faire revenir 6-7min dans la cocotte avec 3 c\u00e0s d\u2019huile d\u2019olive, le romarin, le laurier et le paprika fum\u00e9.\nPendant ce temps, hacher les champignons de Paris et d\u00e9tailler les pleurotes en lamelles.\nLes ajouter \u00e0 la cocotte avec un bouillon cube de l\u00e9gumes et les gousses d\u2019ail grossi\u00e8rement hach\u00e9es.\nCouvrir et faire cuire 25min en remuant de temps en temps.\nEn fin de cuisson, ajouter la levure malt\u00e9e et la farine.\nPr\u00e9parer le parmentier\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nAplanir le contenu de la cocotte et verser la pur\u00e9e par-dessus.\nVous pouvez dessiner un motif \u00e0 l\u2019aide d\u2019une fourchette, puis enfourner pour 30min. Vous pouvez \u00e9ventuellement passer en mode grill pour les 5 derni\u00e8res minutes.\nLaisser ti\u00e9dir avant de d\u00e9guster. Il tiendra encore mieux si vous le laissez compl\u00e8tement refroidir, puis le r\u00e9chauffez avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrocoli\n,\nChampignon\n,\nHiver\n,\nNon class\u00e9\n,\nPlats au Four\nTags:\nparmentier\n,\nparmentier vegan\n,\nparmentier v\u00e9g\u00e9\nColeslaw brocoli pomme carotte\nCr\u00e8me de feta \u00e0 la menthe et pistache\n1 thought on \u201cParmentier v\u00e9g\u00e9tarien brocoli et pleurotes\u201d\nMatt\ndit\u00a0:\n17 mars 2025 \u00e0 20 h 10 min\nIncroyable cette recette !\nJ\u2019ai remplac\u00e9 les pleurotes (que je n\u2019avais pas) par du poireaux et c\u2019\u00e9tait tout aussi bon ! Je recommande fortement\nchargement\u2026\nR\u00e9pondre\n4.50 from 57 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

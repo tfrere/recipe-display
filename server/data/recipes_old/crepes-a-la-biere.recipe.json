@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "title": "Crêpes à la bière",
+    "description": "Ma recette de crêpes d'amour c'est celle ci ! Quand je fais des crêpes, c'est cette recette que je fais systématiquement, je trouve que la bière leur donne un petit goût particulier très apprécié. Bien moelleuses, elles se dégustent natures ou garnies avec du caramel ou à peu près tout ce qui vous fait plaisir.",
+    "servings": 10,
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "bière",
+      "chandeleur",
+      "crêpes",
+      "crêpes à la bière",
+      "Automne",
+      "Brunch Sucré",
+      "Été",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Crepes-1-of-6.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "La bière donne une légèreté particulière au moelleux de la crêpe grâce au gaz carbonique.",
+      "Pour des crêpes plus fines, mettre moins de pâte par crêpe ou ajouter plus de lait.",
+      "La pâte peut être assez épaisse ; pour éviter les grumeaux, tamiser la farine ou utiliser un batteur plongeant.",
+      "Peut être garnie avec du caramel au beurre salé ou une pâte à tartiner maison.",
+      "La bière peut être remplacée par de l'eau gazeuse, mais les crêpes seront un peu moins moelleuses."
+    ],
+    "slug": "crepes-a-la-biere",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Crepes-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/02/01/crepes-a-la-biere/",
+    "image": "images/crepes-a-la-biere.webp",
+    "createdAt": "2026-02-09T20:13:02.765013",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 2.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 167.7,
+      "protein": 5.5,
+      "fat": 5.1,
+      "carbs": 23.4,
+      "fiber": 0.8,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salted_butter",
+      "name": "beurre salé",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "Salted butter"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "beer",
+      "name": "bière",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Beer"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "oil",
+      "name": "huile",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oil"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "Poêle anti-adhésive"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand saladier mélanger la farine, le sucre et le beurre fondu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "sugar",
+        "salted_butter"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_eggs",
+      "action": "Ajouter les oeufs un à un en mélangeant bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "eggs"
+      ],
+      "produces": "egg_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_beer",
+      "action": "Ajouter la bière en mélangeant bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg_batter",
+        "beer"
+      ],
+      "produces": "beer_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_milk",
+      "action": "Verser le lait petit à petit en mélangeant à chaque fois pour éviter les grumeaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beer_batter",
+        "milk"
+      ],
+      "produces": "crepe_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grease_pan",
+      "action": "Dans une poêle anti-adhésive bien chaude, verser un mini filet d'huile ou une mini noisette de beurre (ou rien) et étaler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oil",
+        "butter"
+      ],
+      "produces": "greased_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pour_batter",
+      "action": "Verser un peu moins d'une louche de pâte et bien répartir sur toute la surface.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "crepe_batter",
+        "greased_pan"
+      ],
+      "produces": "raw_crepe_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_crepe",
+      "action": "Baisser à feu moyen et laisser cuire environ 1min, puis retourner la crêpe et cuire encore 1min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "raw_crepe_in_pan"
+      ],
+      "produces": "cooked_crepe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "repeat_cooking",
+      "action": "Répéter l'opération jusqu'à ce qu'il n'y ait plus de pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "crepe_batter",
+        "greased_pan",
+        "cooked_crepe"
+      ],
+      "produces": "all_crepes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "all_crepes",
+  "originalText": "Crêpes à la bière - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 février 2021\nCrêpes à la bière\nAccéder directement à la recette\nDemain c’est la chandeleur, l’occasion idéale pour vous partager ma recette de crêpes à la bière, ma recette préférée! Cette recette, elle s’est façonnée avec le temps. Le début de cette épopée crêpesque remonte à l’époque où je vivais à Bordeaux pour mes études. C’est en fait ma colloc chérie, Mathilde, qui m’a appris la base de la recette, qu’elle même tenait de sa grand mère. Une recette où les proportions étaient calculées à la louche, au sens figuré comme au sens littéral !\nDans la recette, il y a avait aussi un petit ingrédient secret : de la bière. En fait, ce n’est pas un ingrédient si secret que ça, mais qui quand même, fait toute la différence. Ici, la bière joue un rôle dans la texture de la crêpe, elle donne une légèreté particulière au moelleux de la crêpe. En fait, grâce au gaz carbonique présent dans la bière, on aura une texture plus aérée et donc plus moelleuse.\nD’ailleurs, en parlant de moelleux, personnellement j’aime mes crêpes quand elles sont épaisses (c’est mon côté gourmand ça). Bien sûr, pour les amateurs de crêpes fines, il suffit tout simplement de mettre moins de pâte par crêpe. Ou alors vous pouvez aussi ajouter plus de lait, ainsi la pâte sera plus liquide et se répartira mieux.\nEnfin, dernier point super important : la garniture de ces crêpes à la bière. A ce sujet, je n’ai qu’une chose à vous dire : « faites vous plaisir ». Au niveau des plaisirs sur lesquelles on peut vous aider, il y a le fameux\ncaramel au beurre salé\n(en guest star sur la photo) ou encore une pâte à tartiner maison avec seulement 3 ingrédients (recette à venir) !\nCrêpes à la bière\nDaniela\nMa recette de crêpes d'amour c'est celle ci ! Quand je fais des crêpes, c'est cette recette que je fais systématiquement, je trouve que la bière leur donne un petit goût particulier très apprécié. Bien moelleuses, elles se dégustent natures ou garnies avec du caramel ou à peu près tout ce qui vous fait plaisir.\n4.51\n/5 avec\n121\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nTemps de cuisson\n2\nminutes\nmin\nType de plat\nBreakfast, Dessert, Goûter, Snack\nPortions\n10\ncrêpes\nIngrédients\n1x\n2x\n3x\n250\ng\nde farine\n2\ncàs de sucre\n30\ng\nde beurre salé fondu\n3\noeufs\n120\nml\nde bière\n200\nml\nde lait\nInstructions\nDans un grand saladier mélanger la farine, le sucre et le beurre.\nAjouter les oeufs un à un en mélangeant bien. Puis ajouter la bière toujours en mélangeant bien.\nEnfin verser le lait petit à petit en mélangeant à chaque fois pour éviter que des grumeaux se forment.\nDans une poêle anti adhésive bien chaude, verser un mini filet d’huile ou une mini noisette de beurre (ou rien) et étaler. Verser un peu moins d’une louche de pâte et bien répartir sur toute la surface.\nBaisser à feu moyen et laisser cuire environ 1 minute, puis retourner la crêpe et cuire encore 1 minute.\nEt de une ! Répéter l’opération jusqu’à ce qu’il n’y ait plus de pâte. Les crêpes sont prêtes !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucré\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nbière\n,\nchandeleur\n,\ncrêpes\n,\ncrêpes à la bière\nSoupe aux Pois Chiches et Légumes d’hiver façon Chorba\nCrêpes sucrées à la vanille\n10 thoughts on “Crêpes à la bière”\nLadyMilonguera\ndit :\n1 février 2021 à 19 h 51 min\nCes photos sont irrésistibles !\nchargement…\nRépondre\nDaniela\ndit :\n1 février 2021 à 20 h 32 min\nMerci beaucoup 🙂\nchargement…\nRépondre\nthenaisy\ndit :\n2 février 2021 à 6 h 56 min\ncoucou merci pour la recette, j’ai fait des crêpes ce week une normale et une sans gluten et sans lactose. petite question peut-on remplacer la bière par de l’eau gazeuse car je n’ai jamais de bière à la maison et je n’aime pas trop le gout ? magnifiques photos belle journée Véronique\nchargement…\nRépondre\nChantal\ndit :\n2 février 2021 à 8 h 49 min\nOui ça fonctionne aussi avec de l’eau gazeuse, je le fais quand je n’ai plus de bière mais elles seront quand même unpeu moins moelleuses… 🙂\nPar contre il ne reste aucun goût  de la bière dans la crêpe donc pas d’inquiétude !\nchargement…\nRépondre\nveronique\ndit :\n2 février 2021 à 17 h 29 min\nmerci pour la réponse\nchargement…\nRépondre\nDaniela\ndit :\n2 février 2021 à 12 h 18 min\nHehe merci Chantal d’avoir répondu 🙂 j’adore le fait que le blog soit aussi une belle communauté d’échange de petites astuces et de retour sur expérience. Du coup Véronique, je pense que je n’aurais pas donné de meilleure réponse que celle de Chantal. Je n’ai jms testé avec de l’eau gazeuse mais ça me donne trop envie d’essayer !\nchargement…\nRépondre\nveronique\ndit :\n2 février 2021 à 17 h 30 min\nmerci belle fin de journée\nVéronique\nchargement…\nRépondre\nStephanie\ndit :\n17 février 2021 à 1 h 17 min\nDelicious, if I ever find vanilla sugar(or make it), I will try the others!!\nchargement…\nRépondre\nNoemie\ndit :\n11 décembre 2021 à 20 h 50 min\nLes crêpes sont très pâteuses et malgré que j’aie suivi les instructions, il y a beaucoup de grumeaux. Je ne referai pas! Dommage! Mais contente d’avoir essayé.\nchargement…\nRépondre\nDaniela\ndit :\n11 décembre 2021 à 21 h 17 min\nHello Noémie! J’explique dans l’article que la pâte est assez épaisse et qu’il ne faut pas hésiter à ajouter du lait pour une pâte plus liquide et donc des crêpes plus fines. Pour les grumeaux, pensez à tamiser la farine ou à utiliser un batteur plongeant!\nchargement…\nRépondre\n4.51 from 121 votes (\n115 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

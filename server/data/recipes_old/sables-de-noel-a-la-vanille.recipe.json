@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "Sabl\u00e9s de No\u00ebl \u00e0 la Vanille",
+    "description": "Des sabl\u00e9s de No\u00ebl trop mignons et gourmands \u00e0 faire et \u00e0 d\u00e9vorer en famille ! Pour le go\u00fbter, avec le caf\u00e9 ou pour accompagner un th\u00e9, ces sabl\u00e9s mettent tout le monde d'accord en toute circonstance.",
+    "servings": 50,
+    "prepTime": "PT30M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "biscuits",
+      "enfants",
+      "no\u00ebl",
+      "sabl\u00e9s",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Sables-Noel-1-of-7.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Petite astuce antigaspi, apr\u00e8s avoir d\u00e9cor\u00e9 vos sabl\u00e9s de no\u00ebl, utilisez le surplus de chocolat fondu pour faire des mendiants !",
+      "Ce serait quand m\u00eame tr\u00e8s f\u00e2cheux de devoir jeter du chocolat blanc ou noir \u00e0 la poubelle, non? Alors qu'avec quelques noix, des fruits secs et/ou des bonbons, vous avez des mendiants en \u00e0 peu pr\u00e8s 20 sec. Bon, plus le temps de prise quand m\u00eame, faut pas d\u00e9c*nner !"
+    ],
+    "slug": "sables-de-noel-a-la-vanille",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Sables-Noel-1-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/12/11/sables-de-noel-a-la-vanille/",
+    "image": "images/sables-de-noel-a-la-vanille.webp",
+    "createdAt": "2026-02-09T20:51:02.666862",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 55.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 73.6,
+      "protein": 1.1,
+      "fat": 3.6,
+      "carbs": 9.0,
+      "fiber": 0.2,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "jaune_doeuf",
+      "name": "jaune d'oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "vanille",
+      "name": "vanille",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": "en poudre",
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "chocolat",
+      "name": "chocolat noir et/ou blanc patissier",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark and/or white chocolate"
+    },
+    {
+      "id": "decorations",
+      "name": "M&Ms ou Smarties ou des petits morceaux de cranberries",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "M&Ms or Smarties or small pieces of cranberries"
+    }
+  ],
+  "tools": [
+    "emporte-pi\u00e8ce",
+    "poche \u00e0 douille (ou sac de cong\u00e9lation)"
+  ],
+  "steps": [
+    {
+      "id": "cremer_beurre_sucre",
+      "action": "Dans un grand saladier, battre le beurre mou avec le sucre jusqu'\u00e0 obtenir un m\u00e9lange cr\u00e9meux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "beurre",
+        "sucre"
+      ],
+      "produces": "melange_cremeux",
+      "requires": [],
+      "visualCue": "m\u00e9lange cr\u00e9meux"
+    },
+    {
+      "id": "ajouter_ingredients",
+      "action": "Ajouter l'oeuf et le jaune d'oeuf puis la vanille et enfin la farine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "melange_cremeux",
+        "oeuf",
+        "jaune_doeuf",
+        "vanille",
+        "farine"
+      ],
+      "produces": "pate_a_sables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_boule",
+      "action": "Former une boule de p\u00e2te avec les doigts, aplatir la boule pour former un disque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "pate_a_sables"
+      ],
+      "produces": "disque_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_pate",
+      "action": "Emballer le disque avec du film alimentaire ou dans une feuille d'emballage \u00e0 la cire d'abeille. Placer au r\u00e9frig\u00e9rateur pendant minimum 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "disque_pate"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_decouper",
+      "action": "Abaisser la p\u00e2te sur un plan de travail farin\u00e9 et \u00e0 l'aide d'emportes-pi\u00e8ce de votre choix d\u00e9couper les sabl\u00e9s. R\u00e9p\u00e9ter l'op\u00e9ration autant de fois que n\u00e9cessaire, si la p\u00e2te devient difficile \u00e0 travailler vous pouvez la placer de nouveau au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "sables_crus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_sables",
+      "action": "D\u00e9poser les sabl\u00e9s sur une plaque de four recouverte de papier sulfuris\u00e9. Enfourner et cuire pendant 10min.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "sables_crus"
+      ],
+      "produces": "sables_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_sables",
+      "action": "A la sortie du four, les sabl\u00e9s sont fragiles, il faut attendre 15min avant de les manipuler.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "sabl\u00e9s",
+      "uses": [
+        "sables_cuits"
+      ],
+      "produces": "sables_refroidis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_chocolat",
+      "action": "Faire fondre le chocolat au bain-marie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "d\u00e9co",
+      "uses": [
+        "chocolat"
+      ],
+      "produces": "chocolat_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decorer_sables",
+      "action": "\u00c0 l'aide d'une poche \u00e0 douille avec un embout fin ou alors un sac de cong\u00e9lation dont on coupe la pointe, d\u00e9corer les sabl\u00e9s. Utiliser le chocolat pour coller les M&Ms ou les smarties. Vous pouvez aussi plonger les sabl\u00e9s dans le chocolat fondu et obtenir des sabl\u00e9s napp\u00e9s de chocolat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "d\u00e9co",
+      "uses": [
+        "sables_refroidis",
+        "chocolat_fondu",
+        "decorations"
+      ],
+      "produces": "sables_decores",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sables_decores",
+  "originalText": "Sabl\u00e9s de No\u00ebl \u00e0 la Vanille - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 d\u00e9cembre 2021\nSabl\u00e9s de No\u00ebl \u00e0 la Vanille\nParce qu\u2019il n\u2019y aura jamais assez de recettes de sabl\u00e9s de no\u00ebl sur le blog, en voici une toute nouvelle ! Ultra simple et facile \u00e0 r\u00e9aliser, c\u2019est le moment de vous amuser en famille. Sortez les emporte-pi\u00e8ces divers et vari\u00e9s. Avec ou sans poche \u00e0 douille, il vous suffit de d\u2019utiliser un petit sac de cong\u00e9lation et hop le tour est jou\u00e9. Des petites d\u00e9corations toutes simples avec un effet \u00ab\u00a0wahou trop mignon\u00a0\u00bb garanti !\nPetite astuce antigaspi, apr\u00e8s avoir d\u00e9cor\u00e9 vos sabl\u00e9s de no\u00ebl, utilisez le surplus de chocolat fondu pour faire des mendiants ! Ce serait quand m\u00eame tr\u00e8s f\u00e2cheux de devoir jeter du chocolat blanc ou noir \u00e0 la poubelle, non? Alors qu\u2019avec quelques noix, des fruits secs et/ou des bonbons, vous avez des mendiants en \u00e0 peu pr\u00e8s 20 sec. Bon, plus le temps de prise quand m\u00eame, faut pas d\u00e9c*nner !\nRetrouvez nos autres recettes de sabl\u00e9s sur blog : les\nsabl\u00e9s linzer vegan\n, les\nsabl\u00e9s fourr\u00e9s au chocolat/confiture\nou les\nbiscuits au citron\n.\nSabl\u00e9s de No\u00ebl \u00e0 la Vanille\nDaniela\nDes sabl\u00e9s de No\u00ebl trop mignons et gourmands \u00e0 faire et \u00e0 d\u00e9vorer en famille ! Pour le go\u00fbter, avec le caf\u00e9 ou pour accompagner un th\u00e9, ces sabl\u00e9s mettent tout le monde d\u2019accord en toute circonstance.\n4.49\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n50\nsabl\u00e9s\nIngr\u00e9dients\n1x\n2x\n3x\nSabl\u00e9s :\n180\ng\nde beurre mou\n180\ng\nde sucre\n1\noeuf\n1\njaune d\u2019oeuf\n\u00bd\nc\u00e0c de vanille en poudre\n350\ng\nde farine\nD\u00e9co :\nchocolat noir et/ou blanc patissier\ndes M&Ms ou Smarties ou des petits morceaux de cranberries\nInstructions\nDans un grand saladier, battre le beurre mou avec le sucre jusqu\u2019\u00e0 obtenir un m\u00e9lange cr\u00e9meux. Ajouter l\u2019oeuf et le jaune d\u2019oeuf puis la vanille et enfin la farine. Former une boule de p\u00e2te avec les doigts, aplatir la boule pour former un disque.\nEmballer le disque avec du film alimentaire ou dans une feuille d\u2019emballage \u00e0 la cire d\u2019abeille. Placer au r\u00e9frig\u00e9rateur pendant minimum 30 min.\nAbaisser la p\u00e2te sur un plan de travail farin\u00e9 et \u00e0 l\u2019aide d\u2019emportes-pi\u00e8ce de votre choix d\u00e9couper les sabl\u00e9s. R\u00e9p\u00e9ter l\u2019op\u00e9ration autant de fois que n\u00e9cessaire, si la p\u00e2te devient difficile \u00e0 travailler vous pouvez la placer de nouveau au frais.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nD\u00e9poser les sabl\u00e9s sur une plaque de four recouverte de papier sulfuris\u00e9. Enfourner et cuire pendant 10 min. A la sortie du four, les sabl\u00e9s sont fragiles, il faut attendre 15 min avant de les manipuler.\nPour la d\u00e9co :\nFaire fondre le chocolat au bain-marie et \u00e0 l\u2019aide d\u2019une poche \u00e0 douille avec un embout fin ou alors un sac de cong\u00e9lation dont on coupe la pointe, d\u00e9corer les sabl\u00e9s pour les rendre les plus mignons possibles. Utiliser le chocolat pour coller les M&Ms ou les smarties .Vous pouvez aussi plonger les sabl\u00e9s dans le chocolat fondu et obtenir des sabl\u00e9s napp\u00e9s de chocolat.\nS\u2019il vous reste du chocolat apr\u00e8s avoir d\u00e9corer vos sabl\u00e9s, vous pouvez faire des mendiants avec. Pour cela, rien de plus simple, d\u00e9poser une cuill\u00e8re \u00e0 caf\u00e9 de chocolat sur une assiette recouverte de papier sulfuris\u00e9 puis sur chaque petit disque de chocolat d\u00e9posez des noix, des fruits secs ou encore des bonbons. Placer l\u2019assiette au r\u00e9frig\u00e9rateur ou laisser le chocolat figer \u00e0 temp\u00e9rature ambiante.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nCookies Biscuits et Mignardises\n,\nHiver\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nbiscuits\n,\nenfants\n,\nno\u00ebl\n,\nsabl\u00e9s\nBaos Po\u00eal\u00e9s V\u00e9g\u00e9tariens Faciles\nSucettes au Miel de Tilleul, Fleurs, Citron et Gingembre\n4 thoughts on \u201cSabl\u00e9s de No\u00ebl \u00e0 la Vanille\u201d\nJulien\ndit\u00a0:\n11 d\u00e9cembre 2021 \u00e0 21 h 09 min\nUne coquille : \u00ab\u00a0S\u2019il vous reste du chocolat apr\u00e8s avoir d\u00e9corer vos sabl\u00e9s\u00a0\u00bb -> d\u00e9cor\u00e9\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n11 d\u00e9cembre 2021 \u00e0 21 h 18 min\nMerci Julien \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nPriscilla\ndit\u00a0:\n6 d\u00e9cembre 2022 \u00e0 16 h 06 min\nRecette test\u00e9 ce jour et juste d\u00e9licieuse. Chez nous pas de d\u00e9co juste nature a piocher dans le bo\u00eete \u00e0 g\u00e2teau p\u00e8re no\u00ebl qui nous r\u00e9gale tout le mois de d\u00e9cembre\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n7 d\u00e9cembre 2022 \u00e0 13 h 29 min\nMerci beaucoup pour ce retour, cette recette est justement dans ma to-do du weekend \u00e0 faire avec ma poulette <3\nchargement\u2026\nR\u00e9pondre\n4.49 from 126 votes (\n125 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

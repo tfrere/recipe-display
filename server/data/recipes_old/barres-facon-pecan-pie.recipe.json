@@ -1,0 +1,515 @@
+{
+  "metadata": {
+    "title": "Barres fa\u00e7on Pecan Pie",
+    "description": "Des mini parts de pecan pie \u00e0 emporter? On dit oui aux barres fa\u00e7on pecan pie ! Un biscuit gourmand aux zestes d'orange recouvert de noix de p\u00e9can enrob\u00e9es d'un m\u00e9lange exquis \u00e0 base de miel.",
+    "servings": 18,
+    "prepTime": "PT20M",
+    "cookTime": "PT50M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "miel",
+      "noix de p\u00e9can",
+      "pecan pie",
+      "pecan pie bars",
+      "Automne",
+      "Hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Pecan-Pie-bar-2-of-2.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Conservez les barres de p\u00e9can au r\u00e9frig\u00e9rateur dans un contenant avec couvercle jusqu'au moment de servir. Placer les barres \u00e0 temp\u00e9rature ambiante 30 minutes avant de servir !",
+      "Les barres seront plus faciles \u00e0 couper apr\u00e8s une nuit au frais."
+    ],
+    "slug": "barres-facon-pecan-pie",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Pecan-Pie-bar-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/19/barres-facon-pecan-pie/",
+    "image": "images/barres-facon-pecan-pie.webp",
+    "createdAt": "2026-02-09T20:44:43.606931",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "totalTime": 180.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "February",
+      "January",
+      "March"
+    ],
+    "nutritionPerServing": {
+      "calories": 356.4,
+      "protein": 3.9,
+      "fat": 27.0,
+      "carbs": 27.1,
+      "fiber": 2.4,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 10,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "beurre_biscuit",
+      "name": "beurre",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre_biscuit",
+      "name": "sucre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "extrait_vanille_biscuit",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "sel_biscuit",
+      "name": "sel",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "zeste_orange",
+      "name": "zeste d'orange",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": "les zestes d'une orange environ",
+      "optional": false,
+      "name_en": "orange zest"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 260.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "beurre_garniture",
+      "name": "beurre",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre_muscovado",
+      "name": "sucre muscovado",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Muscovado sugar"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "sel_garniture",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "creme_fraiche",
+      "name": "cr\u00e8me fra\u00eeche",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "extrait_vanille_garniture",
+      "name": "extrait de vanille",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "noix_pecan",
+      "name": "noix de p\u00e9can",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pecans"
+    }
+  ],
+  "tools": [
+    "batteur \u00e9lectrique ou robot",
+    "moule carr\u00e9 de 20cm",
+    "grande casserole"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "creamer_beurre_sucre",
+      "action": "A l'aide d'un batteur \u00e9lectrique ou d'un robot, battre le sucre et le beurre jusqu'\u00e0 ce qu'il soit bien cr\u00e9meux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "beurre_biscuit",
+        "sucre_biscuit"
+      ],
+      "produces": "beurre_sucre_cremeux",
+      "requires": [],
+      "visualCue": "bien cr\u00e9meux"
+    },
+    {
+      "id": "incorporer_oeuf_vanille",
+      "action": "Incorporer l'oeuf et l'extrait de vanille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "beurre_sucre_cremeux",
+        "oeuf",
+        "extrait_vanille_biscuit"
+      ],
+      "produces": "melange_oeuf_vanille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_sel_zestes",
+      "action": "Ajouter le sel et les zestes d'orange.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "melange_oeuf_vanille",
+        "sel_biscuit",
+        "zeste_orange"
+      ],
+      "produces": "melange_avec_zestes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_farine",
+      "action": "Ajouter la farine en 3 fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "melange_avec_zestes",
+        "farine"
+      ],
+      "produces": "pate_biscuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "Dans un moule carr\u00e9 de 20cm recouvert de papier cuisson, \u00e9taler la p\u00e2te \u00e0 biscuit avec les doigts (ajouter un peu de farine si besoin).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "pate_biscuit"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_biscuit",
+      "action": "Enfourner et cuire pendant 25min ou jusqu'\u00e0 ce que le biscuit soit l\u00e9g\u00e8rement dor\u00e9.",
+      "duration": "PT25M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "biscuit_orange",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "biscuit_cuit",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "l\u00e9g\u00e8rement dor\u00e9"
+    },
+    {
+      "id": "melanger_base_garniture",
+      "action": "Pendant que le biscuit cuit, m\u00e9langer dans une grande casserole le beurre, le sucre muscovado, le miel et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "beurre_garniture",
+        "sucre_muscovado",
+        "miel",
+        "sel_garniture"
+      ],
+      "produces": "base_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_base_garniture",
+      "action": "Cuire \u00e0 feu moyen, en m\u00e9langeant constamment jusqu'\u00e0 obtenir une pr\u00e9paration homog\u00e8ne. Retirer du feu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "base_garniture"
+      ],
+      "produces": "base_garniture_cuite",
+      "requires": [],
+      "visualCue": "pr\u00e9paration homog\u00e8ne"
+    },
+    {
+      "id": "incorporer_creme_vanille",
+      "action": "Incorporer la cr\u00e8me \u00e9paisse et la vanille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "base_garniture_cuite",
+        "creme_fraiche",
+        "extrait_vanille_garniture"
+      ],
+      "produces": "base_garniture_cremeuse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_noix_pecan",
+      "action": "Ajouter les noix de p\u00e9can et m\u00e9langer de mani\u00e8re \u00e0 ce que toutes les noix soient bien enrob\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "base_garniture_cremeuse",
+        "noix_pecan"
+      ],
+      "produces": "garniture_pecan_enrobes",
+      "requires": [],
+      "visualCue": "toutes les noix bien enrob\u00e9es"
+    },
+    {
+      "id": "refroidir_biscuit",
+      "action": "Une fois le biscuit cuit, le laisser refroidir l\u00e9g\u00e8rement pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "biscuit_cuit"
+      ],
+      "produces": "biscuit_refroidi",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_garniture",
+      "action": "Verser le m\u00e9lange de noix de p\u00e9can par-dessus le biscuit, \u00e9taler \u00e0 l'aide d'une spatule pour former une couche uniforme.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "biscuit_refroidi",
+        "garniture_pecan_enrobes"
+      ],
+      "produces": "biscuit_garniture_etalee",
+      "requires": [],
+      "visualCue": "couche uniforme"
+    },
+    {
+      "id": "cuire_barres",
+      "action": "Remettre au four et cuire pendant 25min \u00e0 175\u00b0C.",
+      "duration": "PT25M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "biscuit_garniture_etalee"
+      ],
+      "produces": "barres_cuites",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_temperature_ambiante",
+      "action": "Retirer du four et laisser refroidir compl\u00e8tement \u00e0 temp\u00e9rature ambiante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "barres_cuites"
+      ],
+      "produces": "barres_refroidies",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "refrigerer",
+      "action": "Placer le moule \u00e0 d\u00e9couvert dans le r\u00e9frig\u00e9rateur pendant au moins 2h, ou toute la nuit.",
+      "duration": "PT2H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "barres_refroidies"
+      ],
+      "produces": "barres_refrigerees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "retirer_moule",
+      "action": "Retirer du moule \u00e0 l'aide du papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "barres_refrigerees"
+      ],
+      "produces": "barres_demoulees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_barres",
+      "action": "Couper les barres aux noix de p\u00e9can en 9 carr\u00e9s, puis couper chaque carr\u00e9 en deux pour cr\u00e9er une barre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garniture_pecan",
+      "uses": [
+        "barres_demoulees"
+      ],
+      "produces": "barres_pecan_pie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "barres_pecan_pie",
+  "originalText": "Barres fa\u00e7on Pecan Pie - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 novembre 2021\nBarres fa\u00e7on Pecan Pie\nAcc\u00e9der directement \u00e0 la recette\nIl y a quelques semaines, on nous a demand\u00e9 de proposer une recette de dessert pour Thanksgiving\u2026 Assez naturellement, nous avons eu l\u2019id\u00e9e de pr\u00e9parer une p\u00e9can pie ! C\u2019est si bon (mioum). Le format \u00ab\u00a0en barre\u00a0\u00bb est un format qui nous plait beaucoup, nous n\u2019avons donc pas h\u00e9sit\u00e9 longtemps avant de nous fixer sur les barres fa\u00e7on pecan pie. Si vous aimez ce format, retrouvez d\u2019ailleurs nos\ncrumbars aux fruits rouges\n(elles sont cro cro bonnes). Nat aussi vous avez propos\u00e9 une recette de\nbarres au citron v\u00e9gane\n, j\u2019en referait bien tiens\u2026\nC\u2019est vrai qu\u2019en France, nous ne f\u00eatons pas Thanksgiving mais personnellement j\u2019adore tous les plats qui y sont associ\u00e9s. Tous les accompagnements sont incroyables, sans parlers des farces (OMG) et aussi tous les desserts\u2026 J\u2019ai eu l\u2019occasion de participer 2 Thanksgiving ici en France, organis\u00e9 par des copines am\u00e9ricaines\u2026 et comment vous dire que je me suis RE-GA-LEE. Un vrai bonheur\u2026 D\u2019ailleurs \u00e7a me rappelle toujours l\u2019\u00e9pisode de Friends o\u00f9 Joy met un pantalon de grossesse histoire de manger le plus possible tranquillou (ahaha). J\u2019adooore ! Je suis s\u00fbre qu\u2019il serait m\u00e9ga fan des barres fa\u00e7on Pecan Pie !\nSinon, c\u00f4t\u00e9 plats qui fonctionnent bien pour Thanksgiving, retrouvez notre\nsalade de choux de bruxelles\net\nbacon de carotte\n. Egalement, les\npatates douces au sirop d\u2019\u00e9rable\n\u2026 L\u2019ann\u00e9e prochaine, je ferais bien du pain de ma\u00efs\u2026 Vous en pensez quoi? Rien que l\u2019id\u00e9e d\u2019un petit pain de ma\u00efs bien chaud me met l\u2019eau \u00e0 la bouche\u2026 Oh avec du beurre sal\u00e9 bien s\u00fbr, sinon c\u2019est p\u00e9cher !\nBarres fa\u00e7on \u00ab\u00a0Pecan Pie\u00a0\u00bb\nDaniela\nDes mini parts de pecan pie \u00e0 emporter? On dit oui aux barres fa\u00e7on pecan pie ! Un biscuit gourmand aux zestes d\u2019orange recouvert de noix de p\u00e9can enrob\u00e9es d\u2019un m\u00e9lange exquis \u00e0 base de miel.\n4.49\n/5 avec\n84\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n50\nminutes\nmin\nTemps de repos\n2\nheures\nh\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n18\nbarres\nIngr\u00e9dients\n1x\n2x\n3x\nBiscuit \u00e0 l\u2019orange\n180\ng\nde beurre\n100\ng\nde sucre\n1\n\u0153uf\n1\ncac d\u2019extrait de vanille\n\u00bc\ncac de sel\n2\ncac de zeste d\u2019orange\nles zestes d\u2019une orange environ\n260\ng\nde farine\nGarniture \u00e0 la noix de p\u00e9can\n80\ng\nde beurre\n100\ng\nde sucre muscovado\n50\nml\nde miel\n1\npinc\u00e9e de sel\n1\ncas de cr\u00e8me fra\u00eeche\n\u00bd\ncac d\u2019extrait de vanille\n350\ng\nde noix de p\u00e9can\nInstructions\nPour le biscuit :\nA l\u2019aide d\u2019un batteur \u00e9lectrique ou d\u2019un robot, battre le sucre et le beurre jusqu\u2019\u00e0 ce qu\u2019il soit bien cr\u00e9meux. Incorporer l\u2019oeuf et l\u2019extrait de vanille. Puis ajouter le sel et les zestes d\u2019orange. Ajoutez la farine en 3 fois.\nPr\u00e9chauffer le four \u00e0 175 degr\u00e9s.\nDans un moule carr\u00e9 de 20cm recouvert de papier cuisson (important pour le d\u00e9moulage), \u00e9taler la p\u00e2te \u00e0 biscuit avec les doigts (ajouter un peu de farine si besoin).\nEnfourner et cuire pendant 25 \u00e0 30min ou jusqu\u2019\u00e0 ce que le biscuit soit l\u00e9g\u00e8rement dor\u00e9.\nPour la garniture ;\nPendant que le biscuit cuit, m\u00e9langer dans une grande casserole, le beurre, la sucre muscovado, le miel et le sel. Cuire \u00e0 feu moyen, en m\u00e9langeant constamment jusqu\u2019\u00e0 obtenir une pr\u00e9paration homog\u00e8ne. Retirer du feu.\nIncorporer la cr\u00e8me \u00e9paisse et la vanille. Ajouter les noix de p\u00e9can et m\u00e9langer de mani\u00e8re \u00e0 ce que toutes les noix soient bien enrob\u00e9es.\nUne fois le biscuit cuit et l\u00e9g\u00e8rement refroidi (10/15min). Verser le m\u00e9lange de noix de p\u00e9can par-dessus, \u00e9taler \u00e0 l\u2019aide d\u2019une spatule pour former une couche uniforme, en veillant \u00e0 ce que tous les coins du biscuit soient couverts de noix de p\u00e9can.\nRemettre au four et cuire pendant 25 min (toujours \u00e0 175 degr\u00e9s).\nRetirer du four et laisser refroidir compl\u00e8tement \u00e0 temp\u00e9rature ambiante. Ensuite, placer le moule \u00e0 d\u00e9couvert dans le r\u00e9frig\u00e9rateur pendant au moins 2 heures, ou toute la nuit si possible, la pr\u00e9paration va durcir compl\u00e8tement. Les barres seront plus faciles \u00e0 couper apr\u00e8s une nuit au frais.\nRetirer du moule \u00e0 l\u2019aide du papier cuisson. Couper les barres aux noix de p\u00e9can en 9 carr\u00e9s, puis coupez chaque carr\u00e9 en deux pour cr\u00e9er une barre.\nConservez les barres de p\u00e9can au r\u00e9frig\u00e9rateur dans un contenant avec couvercle jusqu\u2019au moment de servir. Placer les barres \u00e0 temp\u00e9rature ambiante 30 minutes avant de servir !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCookies Biscuits et Mignardises\n,\nHiver\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\n,\nTartes et Galettes\nTags:\nmiel\n,\nnoix de p\u00e9can\n,\npecan pie\n,\npecan pie bars\nSalade d\u2019Automne aux Choux de Bruxelles et Bacon de Carotte\nNos id\u00e9es de Desserts Vegans pour No\u00ebl\n2 thoughts on \u201cBarres fa\u00e7on Pecan Pie\u201d\nNinie\ndit\u00a0:\n7 d\u00e9cembre 2022 \u00e0 7 h 19 min\nBonjour, cette recette est tr\u00e8s app\u00e9tissante! Par quoi pourrait on remplacer le sucre muscovado?\nMerci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n7 d\u00e9cembre 2022 \u00e0 13 h 28 min\nBonjour, vous pouvez remplacer le sucre muscovado (qui est un sucre complet) par n\u2019importe quel autre sucre. J\u2019utilise souvent le sucre muscovado car j\u2019adore son petit go\u00fbt \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.49 from 84 votes (\n84 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

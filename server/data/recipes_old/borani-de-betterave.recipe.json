@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "title": "Borani de betterave",
+    "description": "Un dip simple, frais et haut en couleur, m\u00e9langeant la douceur de la betterave avec le cr\u00e9meux du yaourt grec, relev\u00e9 par une pointe d'ail et de citron.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "betterave",
+      "dip",
+      "iranien",
+      "v\u00e9g\u00e9tarien",
+      "ap\u00e9ro",
+      "yaourt"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/09/borani-de-betterave-recette.jpg",
+    "nationality": "Iranian",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez utiliser des betteraves crues, il faut compter environ 40min de cuisson vapeur. Faites-les cuire enti\u00e8res puis attendez qu'elles refroidissent un peu pour les peler.",
+      "Je vous conseille de le d\u00e9guster avec du pain plat ou des pitas grill\u00e9es !"
+    ],
+    "slug": "borani-de-betterave",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/09/borani-de-betterave-recette.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/10/03/borani-de-betterave/",
+    "image": "images/borani-de-betterave.webp",
+    "createdAt": "2026-02-09T23:08:17.514894",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 567.7,
+      "protein": 9.9,
+      "fat": 45.9,
+      "carbs": 33.3,
+      "fiber": 7.6,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "beets",
+      "name": "betteraves cuites",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "cuites",
+      "notes": null,
+      "optional": false,
+      "name_en": "beets"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "citron, jus",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "mint",
+      "name": "menthe fra\u00eeche",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Fresh mint"
+    },
+    {
+      "id": "pistachios",
+      "name": "pistaches concass\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": "concass\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped pistachios"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Blender"
+  ],
+  "steps": [
+    {
+      "id": "combine_ingredients",
+      "action": "Dans un blender, placez les betteraves, l'ail, le yaourt, le jus de citron, l'huile et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beets",
+        "garlic",
+        "greek_yogurt",
+        "lemon_juice",
+        "olive_oil",
+        "salt"
+      ],
+      "produces": "combined_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_smooth",
+      "action": "Mixez jusqu'\u00e0 obtenir une consistance parfaitement lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_mixture"
+      ],
+      "produces": "smooth_beet_dip",
+      "requires": [],
+      "visualCue": "consistance parfaitement lisse"
+    },
+    {
+      "id": "prepare_garnish",
+      "action": "Hachez la menthe fra\u00eeche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "mint"
+      ],
+      "produces": "chopped_mint",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez avec de la menthe fra\u00eeche hach\u00e9e, les pistaches et le s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "smooth_beet_dip",
+        "chopped_mint",
+        "pistachios",
+        "sesame_seeds"
+      ],
+      "produces": "borani_de_betterave",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "borani_de_betterave",
+  "originalText": "Borani de Betterave | Recette Facile et Color\u00e9e \u00e0 tester absolument\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 octobre 2025\nBorani de betterave : un dip simple, frais et haut en couleur\nVous n\u2019\u00eates pas vraiment fan de la\nbetterave\n? Attendez de go\u00fbter ce\nborani de betterave\net vous pourriez vite changer d\u2019avis. Cette\npr\u00e9paration iranienne\n, aussi\nsimple\nque\ncolor\u00e9e\n, m\u00e9lange la douceur l\u00e9g\u00e8rement sucr\u00e9e de la\nbetterave\navec le\ncr\u00e9meux du yaourt grec\n, relev\u00e9e par une\npointe d\u2019ail\net de\ncitron\n. En quelques minutes seulement, vous obtenez un\ndip frais\n,\nonctueux\net\nid\u00e9al \u00e0 partager\n. Ce qu\u2019on adore, c\u2019est sa\ncouleur\n\u00e9clatante qui met instantan\u00e9ment de la bonne humeur \u00e0\ntable\n. Bref, ce plat\na tout pour r\u00e9concilier m\u00eame les plus r\u00e9ticents avec ce\nl\u00e9gume\ntrop souvent boud\u00e9.\nTable des mati\u00e8res\n1\nLe borani : l\u2019invit\u00e9 d\u2019honneur des repas iraniens\n2\nLa betterave : un concentr\u00e9 de bienfaits dans nos assiettes\n3\nBorani de betterave\n4\nUn dip tr\u00e8s frais, tr\u00e8s bon et surtout tr\u00e8s simple \u00e0 faire\n5\nUn Borani polyvalent : dip, sandwich ou vinaigrette\nLe borani : l\u2019invit\u00e9 d\u2019honneur des repas iraniens\nLe borani, c\u2019est une pr\u00e9paration traditionnelle iranienne simplissime. On associe un l\u00e9gume cuit (betterave, \u00e9pinards, aubergines\u2026) \u00e0 du yaourt onctueux, relev\u00e9 de quelques aromates. R\u00e9sultat ? Un dip frais, color\u00e9 et nourrissant, qu\u2019on retrouve tr\u00e8s souvent sur les tables perses. Il est servi en accompagnement ou en mezze \u00e0 partager. Chaque famille a sa version pr\u00e9f\u00e9r\u00e9e. Le principe reste toujours le m\u00eame. Une base v\u00e9g\u00e9tale et une dose de yaourt qui apporte douceur et fra\u00eecheur. Dans cette recette, la betterave devient l\u2019ingr\u00e9dient star. Et croyez-nous, son go\u00fbt sucr\u00e9 s\u2019accorde \u00e0 merveille avec l\u2019acidit\u00e9 du yaourt et le parfum des aromates.\nSi, comme nous, vous aimez la betterave en version color\u00e9e. Ne passez pas \u00e0 c\u00f4t\u00e9 de la\ncr\u00e8me de feta \u00e0 la betterave\nou du\nhoumous \u00e0 la betterave\n. On vous promet que ces recettes vont mettre du peps dans vos assiettes et r\u00e9concilier tout le monde avec ce l\u00e9gume trop souvent boud\u00e9.\nLa betterave : un concentr\u00e9 de bienfaits dans nos assiettes\nLa betterave, ce n\u2019est pas seulement une jolie racine color\u00e9e. C\u2019est aussi un l\u00e9gume rempli de vertus. Riche en fibres, en antioxydants et en min\u00e9raux, elle contribue \u00e0 une bonne digestion et soutient la circulation sanguine. En plus, elle apporte de l\u2019\u00e9nergie tout en douceur. Et cerise sur le g\u00e2teau, elle met instantan\u00e9ment de la couleur dans nos plats !\nSi vous aimez la cuisiner, on a plein d\u2019id\u00e9es pour vous. Testez par exemple la\nsalade express de betterave, c\u00e2pres et feta\n, la\nsalade toute simple de betterave et pomme de terre\nou encore la\nsalade d\u2019\u00e9pinards, \u0153ufs et betterave\n. Et pour encore plus d\u2019inspiration, retrouvez\ntoutes nos recettes \u00e0 base de betterave\n.\nBorani de betterave\n4.51\n/5 avec\n63\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n2\nbetteraves cuites\n300g\n1\ngousse d\u2019ail\n3\nc\u00e0s de yaourt grec\nle jus d\u2019\u00bd citron\n3\nc\u00e0s d\u2019huile d\u2019olive\nsel\n2\nbranches de menthe fra\u00eeche\npistaches concass\u00e9es\ngraines de s\u00e9same\nInstructions\nVous pouvez utiliser des betteraves crues, il faut compter environ 40min de cuisson vapeur. Faites-les cuire enti\u00e8res puis attendez qu\u2019elles refroidissent un peu pour les peler.\nDans un blender, placez les betteraves, l\u2019ail, le yaourt, le jus de citron, l\u2019huile et le sel.\nMixez jusqu\u2019\u00e0 obtenir une consistance parfaitement lisse.\nServez avec de la menthe fra\u00eeche hach\u00e9e, les pistaches et le s\u00e9same.\nJe vous conseille de le d\u00e9guster avec du pain plat ou des pitas grill\u00e9es !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUn dip tr\u00e8s frais, tr\u00e8s bon et surtout tr\u00e8s simple \u00e0 faire\nCe qu\u2019on adore avec le Borani de betterave, c\u2019est qu\u2019il r\u00e9unit tout. Il est ultra frais, incroyablement bon et tellement simple \u00e0 pr\u00e9parer qu\u2019on peut le faire m\u00eame au dernier moment. En quelques minutes, vous avez un dip color\u00e9 et cr\u00e9meux, parfait pour l\u2019ap\u00e9ro ou en accompagnement l\u00e9ger. Et pour la d\u00e9gustation ? Rien de mieux que du pain plat ou des pitas encore ti\u00e8des pour y plonger g\u00e9n\u00e9reusement. On vous conseille d\u2019essayer nos\npains pitas maison version \u00e9paisses\nou notre recette classique de\npains pitas maison\n. Avec \u00e7a, impossible de r\u00e9sister !\nEt si, comme nous, vous adorez les dips \u00e0 partager, on a encore plein d\u2019id\u00e9es pour vous ! Craquez pour le\ndip courgette tahini\n, testez le\ndip poivron rouge et feta (Ktipiti)\nou laissez-vous tenter par le\ndip petits pois menthe\n. Des recettes simples, fra\u00eeches et color\u00e9es, parfaites pour vos ap\u00e9ros et vos repas d\u2019\u00e9t\u00e9.\nUn Borani polyvalent : dip, sandwich ou vinaigrette\nLe Borani de betterave, ce n\u2019est pas seulement un dip \u00e0 partager. On peut aussi l\u2019utiliser comme base gourmande dans un sandwich, pour remplacer une sauce et apporter fra\u00eecheur et couleur. Imaginez un sandwich veggie bien garni avec cette cr\u00e8me rose en fond\u2026 irr\u00e9sistible, non ? Et pour aller encore plus loin, on peut d\u00e9tourner le borani en vinaigrette originale pour twister une salade estivale.\nSi cette id\u00e9e vous tente, d\u00e9couvrez\nnotre top de vinaigrettes originales\net inspirez-vous aussi de nos sandwichs comme le\nsandwich pois chiche mayo\n, les\ngua bao vegan\nou encore le\ngyros vegan aux pleurotes\n. De quoi varier les plaisirs sans jamais se lasser.\nLe Borani de betterave, c\u2019est la recette qu\u2019on aime sortir \u00e0 toutes les occasions : ap\u00e9ro, accompagnement, sandwich ou m\u00eame vinaigrette originale. Frais, color\u00e9 et pr\u00eat en quelques minutes, il a tout pour plaire et surtout pour r\u00e9concilier tout le monde avec la betterave. \u00c0 d\u00e9guster avec des pitas maison ou \u00e0 d\u00e9cliner dans vos propres cr\u00e9ations, ce dip venu d\u2019Iran m\u00e9rite clairement une place dans vos classiques de l\u2019\u00e9t\u00e9.\nEt si vous voulez prolonger le voyage, venez d\u00e9couvrir\ntoutes nos recettes \u00e0 base de betterave\npour encore plus d\u2019inspiration color\u00e9e.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAp\u00e9ros\n,\nBetterave\n,\nBrunch Sal\u00e9\n,\nRecettes par L\u00e9gume\n,\nRecettes Sal\u00e9es\nCourgettes curry coco : le d\u00eener express r\u00e9confortant\nSauce tomate maison aux tomates fra\u00eeches : la recette simple qui prolonge l\u2019\u00e9t\u00e9\n4.51 from 63 votes (\n63 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

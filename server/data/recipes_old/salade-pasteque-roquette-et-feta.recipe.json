@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "title": "Salade Past\u00e8que Roquette et Feta",
+    "description": "Salade estivale simple et rafra\u00eechissante, un condens\u00e9 de saveurs avec de la feta, de la past\u00e8que et de la roquette.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "feta pasteque",
+      "idee recette salade vegetarienne",
+      "recette past\u00e8que",
+      "recette salade \u00e9t\u00e9",
+      "salade d'\u00e9t\u00e9",
+      "salade f\u00e9ta",
+      "\u00c9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Salade-pasteque-1-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette salade change des salades classiques de l'\u00e9t\u00e9 \u00e0 la tomate et au concombre.",
+      "Ajoutez la vinaigrette juste avant de servir."
+    ],
+    "slug": "salade-pasteque-roquette-et-feta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/Salade-pasteque-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/07/18/salade-a-la-pasteque-roquette-et-feta/",
+    "image": "images/salade-pasteque-roquette-et-feta.webp",
+    "createdAt": "2026-02-09T20:27:30.975301",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 12.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 234.2,
+      "protein": 6.2,
+      "fat": 18.0,
+      "carbs": 12.0,
+      "fiber": 1.0,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "watermelon",
+      "name": "past\u00e8que bien m\u00fbre",
+      "quantity": 700.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coup\u00e9e en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Watermelon"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "coup\u00e9e en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "arugula",
+      "name": "roquette",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "arugula"
+    },
+    {
+      "id": "sunflower_seeds",
+      "name": "graines de tournesol",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Sunflower seeds"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive extra vierge",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Extra virgin olive oil"
+    },
+    {
+      "id": "wine_vinegar",
+      "name": "vinaigre de vin",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Wine vinegar"
+    },
+    {
+      "id": "balsamic_vinegar",
+      "name": "vinaigre balsamique",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "balsamic vinegar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Saladier"
+  ],
+  "steps": [
+    {
+      "id": "cut_watermelon_feta",
+      "action": "Coupez la past\u00e8que et la f\u00eata en d\u00e9s.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "watermelon",
+        "feta"
+      ],
+      "produces": "diced_watermelon_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_salad_base",
+      "action": "Versez les d\u00e9s de past\u00e8que, les d\u00e9s de f\u00eata, les graines de tournesol et la roquette dans un saladier.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_watermelon_feta",
+        "sunflower_seeds",
+        "arugula"
+      ],
+      "produces": "salad_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_dressing",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la vinaigrette (huile d'olive, vinaigre de vin, vinaigre balsamique, sel, poivre) dans un r\u00e9cipient s\u00e9par\u00e9.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "dressing",
+      "uses": [
+        "olive_oil",
+        "wine_vinegar",
+        "balsamic_vinegar",
+        "salt",
+        "pepper"
+      ],
+      "produces": "dressing",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dress_and_serve",
+      "action": "Ajoutez la vinaigrette au saladier juste avant de servir et m\u00e9langez d\u00e9licatement.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "salad_base",
+        "dressing"
+      ],
+      "produces": "salade_pasteque_roquette_feta",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_pasteque_roquette_feta",
+  "originalText": "Salade Past\u00e8que Roquette et Feta - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 juillet 2021\nSalade Past\u00e8que Roquette et Feta\nQuel meilleur moment pour vous partager ma recette de salade past\u00e8que, roquette et feta ?\nLe soleil est ENFIN de sortie ! Et les nuages nous laissent un peu de r\u00e9pit. Bref, \u00e7a sent enfin l\u2019\u00e9t\u00e9 ! Et \u2026 mon dieu, que \u00e7a fait du bien !\nCette salade, Daniela vous dirait que c\u2019est un condens\u00e9 des trucs que j\u2019aime \ud83d\ude42 Et c\u2019est vrai. On y retrouve une grande partie des mes aliments pr\u00e9f\u00e9r\u00e9s ! En t\u00eate de file, on retrouve \u00e9videmment ma feta ador\u00e9e. Suivie de pr\u00e8s par la past\u00e8que. Qui est de loin, mon p\u00e9ch\u00e9 mignon de l\u2019\u00e9t\u00e9. J\u2019en mangerai \u00e0 n\u2019en plus finir et \u00e0 m\u2019en faire exploser le bidon. Puis vient la roquette (ma salade pr\u00e9f\u00e9r\u00e9e). J\u2019y ajoute quelques graines de tournesol pour la texture et une petite vinaigrette l\u00e9g\u00e8rement sucr\u00e9e gr\u00e2ce au vinaigre balsamique.\nCette salade \u00e0 la past\u00e8que, roquette et feta est vraiment toute simple \u00e0 faire. Mais elle change un peu\ndes salades classiques de l\u2019\u00e9t\u00e9 \u00e0 la tomate et au concombre\n!\nSalade \u00e0 la Past\u00e8que, Roquette et Feta\n4.51\n/5 avec\n51\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour la salade\n700\ng\nde past\u00e8que bien m\u00fbre\nenv \u00bd petite past\u00e8que\n200\ng\nde f\u00eata\n100\ng\nde roquette\n1\nc\u00e0s de graines de tournesol\nIngr\u00e9dients pour la vinaigrette\n4\nc\u00e0s d\u2019huile d\u2019olive extra vierge\n1\nc\u00e0s de vinaigre de vin\n1\nc\u00e0s de vinaigre balsamique\nsel\npoivre\nInstructions\nCoupez la past\u00e8que et la f\u00eata en d\u00e9s. Versez-les dans un saladier avec les graines de tournesol et la roquette.\nM\u00e9langez tous les ingr\u00e9dients de la vinaigrette et ajoutez la au saladier juste avant de servir !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nfeta pasteque\n,\nidee recette salade vegetarienne\n,\nque faire avec de la feta\n,\nrecette past\u00e8que\n,\nrecette salade \u00e9t\u00e9\n,\nsalade d'\u00e9t\u00e9\n,\nsalade f\u00e9ta\nCupcakes Vanille Vegan\nBuddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous\n1 thought on \u201cSalade Past\u00e8que Roquette et Feta\u201d\nElisabeth\ndit\u00a0:\n10 septembre 2023 \u00e0 19 h 46 min\nOn adore! Une vraie r\u00e9v\u00e9lation pour nous,\nchargement\u2026\nR\u00e9pondre\n4.51 from 51 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "title": "Salade de potimarron, betterave et lentilles : une assiette d'automne compl\u00e8te et color\u00e9e",
+    "description": "Une salade compl\u00e8te qui c\u00e9l\u00e8bre les saveurs d'automne avec des l\u00e9gumes r\u00f4tis, des lentilles, de la feta et une vinaigrette au miel et \u00e0 la levure malt\u00e9e.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "automne",
+      "betterave",
+      "courge",
+      "salade",
+      "v\u00e9g\u00e9tarien",
+      "lentilles",
+      "feta"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/Salade-potimarron-feta-lentilles-5-of-6.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se d\u00e9guste ti\u00e8de ou froide.",
+      "Se conserve tr\u00e8s bien au r\u00e9frig\u00e9rateur pendant deux jours.",
+      "Les l\u00e9gumes peuvent \u00eatre r\u00f4tis la veille.",
+      "Pour un repas complet, ajoutez du pain grill\u00e9 ou un \u0153uf mollet.",
+      "La menthe peut \u00eatre remplac\u00e9e par du persil plat ou de la coriandre.",
+      "La feta peut \u00eatre remplac\u00e9e par du ch\u00e8vre frais ou du tofu grill\u00e9.",
+      "Les lentilles peuvent \u00eatre remplac\u00e9es par d'autres l\u00e9gumineuses (pois chiches, haricots blancs).",
+      "On peut ajouter des graines de courge ou de tournesol pour plus de croquant."
+    ],
+    "slug": "salade-de-potimarron-betterave-et-lentilles-une-assiette-d-automne-complete-et-coloree",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/Salade-potimarron-feta-lentilles-5-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/11/04/salade-automne-potimarron-betterave-lentilles/",
+    "image": "images/salade-de-potimarron-betterave-et-lentilles-une-assiette-d-automne-complete-et-coloree.webp",
+    "createdAt": "2026-02-09T23:17:48.109524",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 55.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 499.8,
+      "protein": 18.4,
+      "fat": 34.0,
+      "carbs": 31.8,
+      "fiber": 5.8,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 10,
+      "totalIngredients": 11,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "potimarron",
+      "name": "potimarron",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hokkaido pumpkin"
+    },
+    {
+      "id": "betteraves",
+      "name": "betteraves",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "beets"
+    },
+    {
+      "id": "huile_olive_roti",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes r\u00f4tis",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "lentilles",
+      "name": "lentilles",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "poids cru",
+      "optional": false,
+      "name_en": "lentils"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "noix_pecan",
+      "name": "noix de p\u00e9can",
+      "quantity": 1.0,
+      "unit": "handful",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pecans"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "moutarde_grains",
+      "name": "moutarde \u00e0 grains",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole grain mustard"
+    },
+    {
+      "id": "huile_olive_vinaigrette",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la vinaigrette",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "vinaigre_vin",
+      "name": "vinaigre de vin",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Wine vinegar"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "Casserole",
+    "Saladier"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "l\u00e9gumes r\u00f4tis",
+      "uses": [
+        "huile_olive_roti"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_vegetables",
+      "action": "Pelez les betteraves. Pelez ou non le potimarron selon votre pr\u00e9f\u00e9rence, puis coupez-le en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "l\u00e9gumes r\u00f4tis",
+      "uses": [
+        "potimarron",
+        "betteraves"
+      ],
+      "produces": "prepared_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_vegetables",
+      "action": "Disposez les l\u00e9gumes sur une plaque, versez l'huile d'olive, ajoutez le sel, le poivre et le thym. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "l\u00e9gumes r\u00f4tis",
+      "uses": [
+        "prepared_vegetables",
+        "huile_olive_roti",
+        "sel",
+        "poivre",
+        "thym"
+      ],
+      "produces": "seasoned_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_vegetables",
+      "action": "Enfournez environ 40min, jusqu'\u00e0 ce que les l\u00e9gumes soient tendres et l\u00e9g\u00e8rement dor\u00e9s.",
+      "duration": "PT40M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "l\u00e9gumes r\u00f4tis",
+      "uses": [
+        "seasoned_vegetables"
+      ],
+      "produces": "roasted_vegetables",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "tendres et l\u00e9g\u00e8rement dor\u00e9s"
+    },
+    {
+      "id": "cook_lentils",
+      "action": "Pendant la cuisson des l\u00e9gumes, faites cuire les lentilles dans une casserole d'eau bouillante jusqu'\u00e0 ce qu'elles soient tendres sans se d\u00e9faire, environ 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "lentilles"
+      ],
+      "produces": "cooked_lentils",
+      "requires": [],
+      "visualCue": "tendres sans se d\u00e9faire"
+    },
+    {
+      "id": "drain_lentils",
+      "action": "\u00c9gouttez les lentilles et laissez ti\u00e9dir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "cooked_lentils"
+      ],
+      "produces": "drained_lentils",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_toppings",
+      "action": "Coupez la feta en d\u00e9s, hachez la menthe et concassez les noix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "feta",
+        "menthe",
+        "noix_pecan"
+      ],
+      "produces": "prepared_toppings",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_salad",
+      "action": "Dans un grand saladier, r\u00e9unissez les lentilles, le potimarron et les betteraves r\u00f4tis, la feta, la menthe et les noix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "drained_lentils",
+        "roasted_vegetables",
+        "prepared_toppings"
+      ],
+      "produces": "salad_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_vinaigrette",
+      "action": "Dans un bol, m\u00e9langez tous les ingr\u00e9dients de la vinaigrette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "miel",
+        "moutarde_grains",
+        "huile_olive_vinaigrette",
+        "vinaigre_vin",
+        "levure_maltee"
+      ],
+      "produces": "vinaigrette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dress_salad",
+      "action": "Versez la vinaigrette sur la salade, m\u00e9langez d\u00e9licatement et d\u00e9gustez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "lentilles et assemblage",
+      "uses": [
+        "salad_base",
+        "vinaigrette"
+      ],
+      "produces": "salade_potimarron_betterave_lentilles",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_potimarron_betterave_lentilles",
+  "originalText": "Salade de potimarron, betterave et lentilles, riche et color\u00e9e\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 novembre 2025\nSalade de potimarron, betterave et lentilles : une assiette d\u2019automne compl\u00e8te et color\u00e9e\nEnvie d\u2019une salade qui r\u00e9unit couleur, \u00e9quilibre et douceur ? La salade de potimarron, betterave et lentilles est un plat complet qui c\u00e9l\u00e8bre les saveurs d\u2019automne. Les l\u00e9gumes r\u00f4tis apportent une texture fondante, les lentilles un c\u00f4t\u00e9 rassasiant, et la feta une touche sal\u00e9e qui rel\u00e8ve l\u2019ensemble.\nMais la vraie surprise vient de la vinaigrette au miel et \u00e0 la levure malt\u00e9e, qui donne \u00e0 cette salade tout son caract\u00e8re. Une sauce l\u00e9g\u00e8rement sucr\u00e9e, pleine de go\u00fbt, qui se marie \u00e0 merveille avec la douceur du potimarron et la saveur de la betterave.\nC\u2019est le genre de salade que l\u2019on pr\u00e9pare quand on a envie de bien manger sans passer des heures en cuisine : color\u00e9e, nourrissante et facile \u00e0 adapter selon les l\u00e9gumes du moment. Une assiette qui coche toutes les cases : \u00e9quilibre, go\u00fbt et r\u00e9confort, tout en restant simple et de saison.\nTable des mati\u00e8res\n1\nUne salade de potimarron, betterave et lentilles, compl\u00e8te et riche en fibres\n2\nDes l\u00e9gumes d\u2019automne pleins de couleurs pour cette salade potimarron, betterave et lentilles\n3\nLa vinaigrette qui change tout\n4\nUne salade pratique et adaptable\n5\nQuelques astuces pour cette salade de potimarron, betterave et lentilles\n6\nSalade de potimarron, betterave et lentilles\n7\nPour aller plus loin avec le potimarron\n8\nPour r\u00e9sumer, la salade de potimarron, betterave et lentilles\nUne salade de potimarron, betterave et lentilles, compl\u00e8te et riche en fibres\nSous ses airs de simple salade, cette recette coche bien des cases : elle r\u00e9unit l\u00e9gumes, l\u00e9gumineuses, herbes et ol\u00e9agineux, pour un \u00e9quilibre parfait entre fibres, prot\u00e9ines et bons gras.\nLes lentilles sont une excellente source de fer, de fibres et de prot\u00e9ines v\u00e9g\u00e9tales. Associ\u00e9es \u00e0 la feta, elles cr\u00e9ent un \u00e9quilibre int\u00e9ressant, \u00e0 la fois nourrissant et digeste. Quant au potimarron et \u00e0 la betterave, ils apportent chacun leurs saveurs : l\u2019un doux et fondant, l\u2019autre terreux et l\u00e9g\u00e8rement sucr\u00e9.\nDes l\u00e9gumes d\u2019automne pleins de couleurs pour cette salade potimarron, betterave et lentilles\nLe potimarron et la betterave sont les deux piliers de cette salade. R\u00f4tis au four, ils r\u00e9v\u00e8lent leur douceur naturelle et prennent une belle teinte dor\u00e9e.\nLe thym, ajout\u00e9 avant la cuisson, vient doucement parfumer l\u2019ensemble sans prendre le dessus.\nVous pouvez aussi adapter cette base selon les l\u00e9gumes que vous avez sous la main : patate douce, carottes, panais ou m\u00eame courge butternut fonctionnent tr\u00e8s bien. L\u2019id\u00e9e est de garder ce jeu de textures et de couleurs, comme pour le potimarron et la betterave.\nLa vinaigrette qui change tout\nSi cette salade fonctionne si bien, c\u2019est surtout gr\u00e2ce \u00e0 la vinaigrette.\nUn m\u00e9lange de miel, de moutarde \u00e0 grains, de vinaigre de vin et d\u2019huile d\u2019olive, relev\u00e9 d\u2019une touche de levure malt\u00e9e.\nLe miel apporte une douceur qui \u00e9quilibre parfaitement la l\u00e9g\u00e8re amertume des lentilles et la salinit\u00e9 de la feta. La levure malt\u00e9e, elle, donne cette saveur l\u00e9g\u00e8rement fromag\u00e9e qui fait toute la diff\u00e9rence. Si vous ne la connaissez pas encore, c\u2019est un ingr\u00e9dient \u00e0 d\u00e9couvrir, plein de bienfaits et id\u00e9al pour relever vos assaisonnements. J\u2019en parle plus en d\u00e9tail dans un article d\u00e9di\u00e9 : \u00ab\nLevure malt\u00e9e : l\u2019ingr\u00e9dient magique \u00e0 adopter pour un r\u00e9gime v\u00e9g\u00e9tarien \u00e9quilibr\u00e9\n\u00ab\u00a0.\nC\u2019est une vinaigrette qu\u2019on a envie de refaire ailleurs : sur une salade de quinoa, des l\u00e9gumes grill\u00e9s, ou m\u00eame un simple bol de riz.\nUne salade pratique et adaptable\nCette salade se d\u00e9guste ti\u00e8de ou froide, selon l\u2019envie.\nPr\u00e9par\u00e9e \u00e0 l\u2019avance, elle se conserve tr\u00e8s bien au r\u00e9frig\u00e9rateur pendant deux jours. Vous pouvez m\u00eame r\u00f4tir les l\u00e9gumes la veille et assembler le tout au dernier moment, juste avant de servir.\nC\u2019est aussi une base id\u00e9ale \u00e0 d\u00e9cliner selon la saison ou ce qu\u2019il reste dans le frigo :\nRemplacez la feta par du ch\u00e8vre frais ou du tofu grill\u00e9\nVariez les l\u00e9gumineuses (pois chiches, haricots blancs)\nAjoutez des graines de courge ou de tournesol pour encore plus de croquant\nC\u2019est ce qui fait sa force : une recette qui s\u2019adapte sans perdre son \u00e9quilibre ni sa simplicit\u00e9.\nQuelques astuces pour cette salade de potimarron, betterave et lentilles\nCuisson des lentilles\n: surveillez bien la cuisson pour qu\u2019elles soient tendres, sans se d\u00e9faire.\nLes l\u00e9gumes r\u00f4tis\n: n\u2019h\u00e9sitez pas \u00e0 les laisser l\u00e9g\u00e8rement colorer, c\u2019est ce qui leur donne cette note caram\u00e9lis\u00e9e qui fait toute la diff\u00e9rence.\nLes herbes fra\u00eeches\n: la menthe apporte un vrai contraste. Si vous pr\u00e9f\u00e9rez quelque chose de plus doux, remplacez-la par du persil plat ou de la coriandre.\nPour un repas complet\n: ajoutez quelques tranches de pain grill\u00e9 ou un \u0153uf mollet, et vous obtenez une assiette parfaitement \u00e9quilibr\u00e9e.\nSalade de potimarron, betterave et lentilles\n4.52\n/5 avec\n108\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les l\u00e9gumes r\u00f4tis\n\u00bd\npotimarron\n400 g\n200\ng\nde betteraves\n2\nc\u00e0s d\u2019huile d\u2019olive\nsel\npoivre\n1\npinc\u00e9e de thym\nPour la salade\n130\ng\nde lentilles\npoids cru\n200\ng\nde feta\n3\nbranches de menthe\n1\npoign\u00e9e de noix de p\u00e9can\nPour la vinaigrette\n1\nc\u00e0s de miel\n1\nc\u00e0s de moutarde \u00e0 grains\n4\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de vinaigre de vin\n1\nc\u00e0s de levure malt\u00e9e\nsel\npoivre\nInstructions\nPr\u00e9chauffez le four \u00e0 190 \u00b0C.\nPelez les betteraves.\nPelez ou non le potimarron selon votre pr\u00e9f\u00e9rence, puis coupez-le en d\u00e9s. Disposez le tout sur une plaque, versez l\u2019huile d\u2019olive, ajoutez le sel, le poivre et le thym. M\u00e9langez bien.\nEnfournez environ 40 min, jusqu\u2019\u00e0 ce que les l\u00e9gumes soient tendres et l\u00e9g\u00e8rement dor\u00e9s.\nPendant ce temps, faites cuire les lentilles dans une casserole d\u2019eau bouillante jusqu\u2019\u00e0 ce qu\u2019elles soient tendres sans se d\u00e9faire, environ 10 \u00e0 15 min.\n\u00c9gouttez et laissez ti\u00e9dir.\nCoupez la feta en d\u00e9s, hachez la menthe et concassez les noix.\nDans un grand saladier, r\u00e9unissez les lentilles, le potimarron et les betteraves r\u00f4tis, la feta, la menthe et les noix.\nDans un bol, m\u00e9langez tous les ingr\u00e9dients de la vinaigrette. Versez sur la salade, m\u00e9langez d\u00e9licatement et d\u00e9gustez.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin avec le potimarron\nSi vous aimez cuisiner le potimarron sous toutes ses formes, voici quelques id\u00e9es pour continuer \u00e0 le savourer tout au long de la saison :\nGratin de potimarron au Saint-Nectaire\n.\nUn gratin fondant et g\u00e9n\u00e9reux, o\u00f9 la douceur du potimarron rencontre le caract\u00e8re du Saint-Nectaire. Parfait pour les soir\u00e9es d\u2019automne qui appellent un peu de r\u00e9confort.\nVelout\u00e9 de potimarron aux saveurs tha\u00ef\n.\nUn velout\u00e9 onctueux et l\u00e9g\u00e8rement \u00e9pic\u00e9, relev\u00e9 de curry rouge et de cr\u00e8me de coco. Une soupe parfum\u00e9e et chaleureuse pour les soirs d\u2019automne.\nSalade de potimarron, bl\u00e9 et feta\n.\nUne salade simple et \u00e9quilibr\u00e9e, o\u00f9 la feta et le bl\u00e9 se m\u00ealent \u00e0 la douceur du potimarron r\u00f4ti. Id\u00e9ale pour un d\u00e9jeuner de saison.\nParmentier vegan potimarron et lentilles\n.\nUn plat complet et r\u00e9confortant, riche en prot\u00e9ines v\u00e9g\u00e9tales. Le potimarron apporte une texture fondante et une jolie note sucr\u00e9e.\nCr\u00eapes au potimarron\n.\nUne fa\u00e7on originale de cuisiner la courge, pour des cr\u00eapes moelleuses et dor\u00e9es. D\u00e9licieuses en version sucr\u00e9e ou sal\u00e9e selon vos envies.\nPour r\u00e9sumer, la salade de potimarron, betterave et lentilles\nCette salade de potimarron, betterave et lentilles, c\u2019est un peu tout ce qu\u2019on aime en automne : de la couleur, de la douceur et du croquant. Un plat complet, simple \u00e0 pr\u00e9parer, qui se suffit \u00e0 lui-m\u00eame mais s\u2019adapte \u00e0 toutes les envies.\nEt si le secret tenait dans cette vinaigrette au miel et \u00e0 la levure malt\u00e9e ? Elle vient lier chaque ingr\u00e9dient, apportant cette touche qui rend le tout vraiment \u00e9quilibr\u00e9.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nBetterave\n,\nCourge\n,\nSalades\nMes recettes pr\u00e9f\u00e9r\u00e9es \u00e0 la courge : simples, r\u00e9confortantes et de saison\nRecettes aux champignons : mes id\u00e9es simples et gourmandes de l\u2019automne\n3 thoughts on \u201cSalade de potimarron, betterave et lentilles : une assiette d\u2019automne compl\u00e8te et color\u00e9e\u201d\nR\u00e9s\u00e9\ndit\u00a0:\n4 novembre 2025 \u00e0 18 h 24 min\nje ne savais pas que tu faisais des pdf pour les recettes \u2026 , bravoo \u2665\u2665\nchargement\u2026\nR\u00e9pondre\nTFS28\ndit\u00a0:\n1 d\u00e9cembre 2025 \u00e0 0 h 01 min\nExcellent !\nJe constate les ravages de la malbouffe tous les jours dans le cadre de mon m\u00e9tier. Merci d\u2019aussi bien promouvoir une alimentation saine . J\u2019ai presque envie d\u2019imprimer vos recettes et de les mettre en salle d\u2019attente !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n1 d\u00e9cembre 2025 \u00e0 11 h 15 min\nMerci bcp !!\nchargement\u2026\nR\u00e9pondre\n4.52 from 108 votes (\n106 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

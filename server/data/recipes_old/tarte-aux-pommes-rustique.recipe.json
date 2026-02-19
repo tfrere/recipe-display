@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "title": "Tarte aux Pommes Rustique",
+    "description": "Simple et délicieuse, voici notre définition de la tarte aux pommes rustique par excellence. Une pâte brisée sucrée, des pommes fondantes et légèrement caramélisées, un véritable bonheur !",
+    "servings": 8,
+    "prepTime": "PT45M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pomme",
+      "tarte",
+      "tarte aux pommes",
+      "tarte rustique",
+      "Automne",
+      "Été",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Tarte-pommes-rustique-4-of-7-scaled.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "La simplicité est parfois la clé d'une recette parfaitement parfaite !",
+      "Si la tarte dore un peu trop, ne pas hésiter à recouvrir de papier cuisson.",
+      "On peut placer la pâte à tarte dans un moule légèrement beurré ou tout simplement sur une plaque recouverte de papier cuisson."
+    ],
+    "slug": "tarte-aux-pommes-rustique",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Tarte-pommes-rustique-4-of-7-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/19/tarte-aux-pommes-rustique/",
+    "image": "images/tarte-aux-pommes-rustique.jpg",
+    "createdAt": "2026-02-09T19:50:26.437820",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 115.0,
+    "totalCookingTime": 45.0,
+    "nutritionPerServing": {
+      "calories": 259.2,
+      "protein": 1.9,
+      "fat": 12.0,
+      "carbs": 37.4,
+      "fiber": 2.6,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre_doux",
+      "name": "beurre doux",
+      "quantity": 85.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "juste ramolli, coupé en morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "pommes",
+      "name": "pommes bio",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pelées, évidées (conserver les peaux et les trognons) et tranchées",
+      "notes": null,
+      "optional": false,
+      "name_en": "Organic apples"
+    },
+    {
+      "id": "beurre_fondu",
+      "name": "beurre doux",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre_canne",
+      "name": "sucre de canne",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cane sugar"
+    },
+    {
+      "id": "sucre_sirop",
+      "name": "sucre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Pinceau",
+    "Chinois"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand saladier, mélanger la farine, le sucre et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "farine",
+        "sucre",
+        "sel"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sabler_beurre",
+      "action": "Ajouter le beurre en morceaux et sabler avec une fourchette ou le bout des doigts jusqu'à obtenir un crumble avec des morceaux de la taille d'un gros petit pois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "dry_mix",
+        "beurre_doux"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": "morceaux de la taille d'un gros petit pois"
+    },
+    {
+      "id": "ajouter_eau",
+      "action": "Ajouter les cuillères d'eau froide une par une, tout en mélangeant jusqu'à obtenir une pâte qui se tienne. Si la pâte est trop sèche, ajouter encore un peu d'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "crumble_mix",
+        "eau_froide"
+      ],
+      "produces": "pate_brisee",
+      "requires": [],
+      "visualCue": "pâte qui se tienne"
+    },
+    {
+      "id": "former_disque",
+      "action": "Former une boule avec la pâte, l'aplatir et former un disque d'environ 15cm de diamètre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "pate_brisee"
+      ],
+      "produces": "disque_pate",
+      "requires": [],
+      "visualCue": "disque d'environ 15cm de diamètre"
+    },
+    {
+      "id": "reposer_frais",
+      "action": "Réserver la pâte au frais pendant au moins 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pâte",
+      "uses": [
+        "disque_pate"
+      ],
+      "produces": "pate_reposee_froid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "temperer_pate",
+      "action": "Récupérer la pâte et la laisser reposer à température ambiante 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "pate_reposee_froid"
+      ],
+      "produces": "pate_temperature_ambiante",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la pâte sur une surface légèrement farinée jusqu'à 3 à 4 mm d'épaisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "pate_temperature_ambiante"
+      ],
+      "produces": "pate_abaissée",
+      "requires": [],
+      "visualCue": "3 à 4 mm d'épaisseur"
+    },
+    {
+      "id": "placer_pate",
+      "action": "Placer la pâte dans un moule légèrement beurré ou sur une plaque recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pâte",
+      "uses": [
+        "pate_abaissée"
+      ],
+      "produces": "pate_en_moule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Préchauffer le four à 200°C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "disposer_pommes",
+      "action": "Déposer les pommes tranchées sur la pâte en laissant environ 5 cm de bord.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [
+        "pate_en_moule",
+        "pommes"
+      ],
+      "produces": "pate_avec_pommes",
+      "requires": [],
+      "visualCue": "5 cm de bord"
+    },
+    {
+      "id": "replier_pate",
+      "action": "Replier la pâte sur les pommes pour former une galette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [
+        "pate_avec_pommes"
+      ],
+      "produces": "galette_formee",
+      "requires": [],
+      "visualCue": "galette formée"
+    },
+    {
+      "id": "beurrer_tarte",
+      "action": "À l'aide d'un pinceau, beurrer les pommes et la pâte repliée avec le beurre fondu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [
+        "galette_formee",
+        "beurre_fondu"
+      ],
+      "produces": "tarte_beurree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saupoudrer_sucre",
+      "action": "Saupoudrer de sucre de canne les pommes et la pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [
+        "tarte_beurree",
+        "sucre_canne"
+      ],
+      "produces": "tarte_prete_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tarte",
+      "action": "Enfourner et cuire environ 40min à mi-hauteur/basse, en surveillant la coloration.",
+      "duration": "PT40M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_et_cuisson",
+      "uses": [
+        "tarte_prete_a_cuire"
+      ],
+      "produces": "tarte_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "coloration dorée"
+    },
+    {
+      "id": "preparer_sirop",
+      "action": "Pendant la cuisson de la tarte, placer les épluchures et trognons de pommes dans une casserole avec 100g de sucre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "pommes",
+        "sucre_sirop"
+      ],
+      "produces": "melange_sirop",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_eau_sirop",
+      "action": "Verser de l'eau jusqu'à recouvrir les épluchures.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "melange_sirop",
+        "eau"
+      ],
+      "produces": "sirop_brut",
+      "requires": [],
+      "visualCue": "eau recouvre les épluchures"
+    },
+    {
+      "id": "mijoter_sirop",
+      "action": "Laisser mijoter à feu doux pendant 25min.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sirop",
+      "uses": [
+        "sirop_brut"
+      ],
+      "produces": "sirop_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "filtrer_sirop",
+      "action": "Récupérer le sirop en passant le contenu de la casserole au chinois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "sirop_cuit"
+      ],
+      "produces": "sirop_filtre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_tarte",
+      "action": "Retirer la tarte du four et laisser refroidir sur une grille pendant au moins 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "finitions",
+      "uses": [
+        "tarte_cuite"
+      ],
+      "produces": "tarte_refroidie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enduire_sirop",
+      "action": "À l'aide d'un pinceau, enduire la tarte du sirop préparé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "finitions",
+      "uses": [
+        "tarte_refroidie",
+        "sirop_filtre"
+      ],
+      "produces": "tarte_aux_pommes_rustique",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_aux_pommes_rustique",
+  "originalText": "Tarte aux Pommes Rustique - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 avril 2020\nTarte aux Pommes Rustique\nLa tarte aux pommes, un dessert simple mais tellement bon… encore plus lorsqu’il s’agit d’une tarte rustique, hyper facile à préparer ! Franchement, cette recette est la définition même de l’expression “sans prise de tête”. On a une pâte ultra simple, des pommes, du sucre et un peu de beurre et c’est TOUT ! Ah oui et une touche de sirop de pomme préparé avec les épluchures et les trognons, on est à la limite du zéro déchet ici hehe !\nNon vraiment les amis, cette tarte est vraiment géniale, que vous soyez super nul en pâtisserie ou bien la réincarnation de Cédric Grolet, personne et je dis bien personne ne sera jamais déçu en dégustant cette tarte aux pommes. La simplicité est parfois la clé d’une recette parfaitement parfaite !\nSi comme nous, vous aimez les recettes hyper simples, faîtes vous plaisir avec nos tartes rustiques\nrhubarbe et amande\nou encore\nnectarine framboise\n!\nTarte aux Pommes Rustique\nSimple et délicieuse, voici notre définition de la tarte aux pommes rustique par excellence. Une pâte brisée sucrée, des pommes fondantes et légèrement caramélisées, un véritable bonheur !\n4.60\n/5 avec\n60\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n40\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nPortions\n8\npersonnes\nIngrédients\n1x\n2x\n3x\nPâte :\n125\ng\nde farine\n1\nc-à-c de sucre\n1\npincée de sel\n85\ng\nde beurre doux\njuste ramolli, coupé en morceaux\n3\nc-à-s d’eau froide\nGarniture :\n4\npommes bio pelées\névidées (conserver les peaux et les trognons) et tranchées\n30\ng\nde beurre doux fondu\n3\nc-à-s de sucre de canne\nSirop :\n100\ng\nde sucre\neau\nInstructions\nDans un grand saladier, mélanger la farine, le sucre et le sel. Ajouter ensuite le beurre en morceaux et sabler avec une fourchette ou le bout des doigts jusqu’à obtenir un crumble avec des morceaux de la taille d’un gros petit pois !\nAjouter les cuillères d’eau froid une par une, tout en mélangeant jusqu’à obtenir une pâte qui se tienne. Si la pâte est un sèche, vous pouvez ajouter encore un peu d’eau. La pâte est prête quand vous pouvez former une boule avec.\nAplatir la boule de pâte et former un disque d’environ 15cm de diamètre. Réserver au frais au moins 30 min.\nRécupérer la pâte et la laisser reposer à température ambiante 5 minutes puis abaisser la pâte sur une surface légèrement farinée (la pâte doit avoir 3 à 4 mm d’épaisseur).\nVous pouvez placer la pâte à tarte dans un moule légèrement beurré ou tout simplement sur une plaque recouverte de papier cuisson.\nDéposer les pommes sur la pâte en laissant environ 5 cm de bord de pâte, replier ensuite la pâte sur les pommes en formant une jolie galette.\nPréchauffer le four à 200°C.\nA l’aide d’un pinceau, beurrer les pommes et la pâte qui recouvre les pommes. Saupoudrer de sucre de canne les pommes et la pâte.\nEnfourner et cuire environ 40 minutes à mi hauteur/basse. Surveiller la cuisson, si la tarte dore un peu trop, ne pas hésiter à recouvrir de papier cuisson.\nPendant la cuisson de la tarte, préparer le sirop à partir des épluchures et des trognons de pommes dans une casserole avec le sucre. Verser de l’eau jusqu’à ce que ça recouvrir les épluchures et laisser mijoter à feu doux pendant 25 min.\nRécupérer le sirop en passant le contenu de la casserole au chinois.\nRetirer la tarte du four et laisser refroidir sur une grille pendant au moins 15 min.\nA l’aide d’un pinceau, enduire la tarte de sirop et voilà c’est prêt !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nÉté\n,\nHiver\n,\nPomme\n,\nPrintemps\n,\nRecettes Sucrées\n,\nTartes et Galettes\nTags:\npomme\n,\ntarte\n,\ntarte aux pommes\n,\ntarte rustique\nTagliatelles à la Crème d’Asperges Citronnée\nGratin de Pâtes Végétarien aux 3 Fromages, Artichauts et Épinards\n8 thoughts on “Tarte aux Pommes Rustique”\ndeborahlafont\ndit :\n20 avril 2020 à 10 h 08 min\nJ’adore les photos ! Et la tarte a l’air succulente… 🤤\nchargement…\nRépondre\nFree The Pickle\ndit :\n20 avril 2020 à 10 h 38 min\nMerci 🙂 on aime beaucoup ce shooting aussi !\nchargement…\nRépondre\nchefkreso\ndit :\n22 avril 2020 à 22 h 04 min\nCette tarte a l’air si délicieuse, j’adore les pommes!\nchargement…\nRépondre\nFree The Pickle\ndit :\n22 avril 2020 à 22 h 14 min\nMerci ☺️\nchargement…\nRépondre\nPing :\nRecette Doré : Tarte aux pommes rustique – Les brunchs dorés\nCripet'\ndit :\n23 janvier 2025 à 7 h 35 min\nBonjour, cette tarte était très bonne.. je vous la recommande.\nchargement…\nRépondre\nCaroline\ndit :\n4 octobre 2025 à 20 h 37 min\nRecette très sympa et simple à faire. Très bonne également.\nPetit bémol, c’est qu’il y a une partie de la recette qui n’est pas indiqué et qui est : éplucher les pommes et les couper en tranches ou en morceaux. Cela  semble certes logique mais important dans une recette surtout pour des novices.\nchargement…\nRépondre\nRousseau\ndit :\n25 novembre 2025 à 18 h 55 min\nFaite et refaite et rerefaite\nOn adore\nJ ai juste diminué la quantité de sucre pour le sirop\nchargement…\nRépondre\n4.60 from 60 votes (\n57 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 45.0
+}

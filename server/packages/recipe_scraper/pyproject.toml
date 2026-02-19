@@ -17,6 +17,9 @@ argparse = "^1.4.0"
 python-dotenv = "^1.0.0"
 python-slugify = "^8.0.4"
 datasketch = "^1.6.5"
+sentence-transformers = ">=3.0.0"
+numpy = ">=1.26.0"
+langfuse = "^3.14.1"
 
 [tool.poetry.scripts]
 recipe-scraper = "recipe_scraper.cli:main"

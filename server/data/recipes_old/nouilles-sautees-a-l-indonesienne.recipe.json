@@ -1,0 +1,563 @@
+{
+  "metadata": {
+    "title": "Nouilles Saut\u00e9es \u00e0 l'Indon\u00e9sienne",
+    "description": "Recette de nouilles saut\u00e9es v\u00e9g\u00e9tariennes avec une sauce kecap manis maison, du tofu marin\u00e9 et des l\u00e9gumes de saison.",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "bali",
+      "indon\u00e9sie",
+      "recette asiatique",
+      "recette indon\u00e9sie",
+      "recette nouilles",
+      "nouilles saut\u00e9es v\u00e9g\u00e9tariennes",
+      "tofu"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Nouilles-sautees-indonesiennes-1-of-4.jpg",
+    "nationality": "Indonesian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfait \u00e0 emmener au bureau, id\u00e9alement dans un bento.",
+      "Les l\u00e9gumes peuvent \u00eatre modifi\u00e9s selon les go\u00fbts et la saison.",
+      "Pour une version sans gluten, utiliser des nouilles de riz.",
+      "Un bon tofu est un tofu marin\u00e9 et press\u00e9."
+    ],
+    "slug": "nouilles-sautees-a-l-indonesienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Nouilles-sautees-indonesiennes-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/16/nouilles-sautees-a-lindonesienne/",
+    "image": "images/nouilles-sautees-a-l-indonesienne.webp",
+    "createdAt": "2026-02-09T21:19:23.251249",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "totalTime": 47.0,
+    "totalCookingTime": 22.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 324.6,
+      "protein": 14.1,
+      "fat": 11.1,
+      "carbs": 45.3,
+      "fiber": 5.7,
+      "confidence": "high",
+      "resolvedIngredients": 16,
+      "matchedIngredients": 17,
+      "totalIngredients": 19,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_extra_ferme",
+      "name": "bloc de tofu extra ferme",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "250g",
+      "optional": false,
+      "name_en": "extra firm tofu block"
+    },
+    {
+      "id": "sauce_soja_tamari_marinade",
+      "name": "sauce soja tamari",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "huile_de_sesame",
+      "name": "huile de s\u00e9same",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "ail_presse_marinade",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "kecap_manis_marinade",
+      "name": "kecap manis",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet soy sauce"
+    },
+    {
+      "id": "sauce_soja_tamari_sauce",
+      "name": "sauce soja tamari",
+      "quantity": 240.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "sucre_fleurs_palmier",
+      "name": "sucre de fleurs de palmier",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou sucre complet",
+      "optional": false,
+      "name_en": "palm sugar"
+    },
+    {
+      "id": "badianes",
+      "name": "badianes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "anis \u00e9toil\u00e9",
+      "optional": false,
+      "name_en": "star anise"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "pel\u00e9 et coup\u00e9 en morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "ail_sauce",
+      "name": "gousses d'ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9es et coup\u00e9es en morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "poivre_noir",
+      "name": "poivre noir",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "ail_presse_saute",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en julienne",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "courgette",
+      "name": "courgette",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en b\u00e2tonnets",
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "petits_pois",
+      "name": "petits pois",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "frais ou surgel\u00e9s",
+      "optional": false,
+      "name_en": "Peas"
+    },
+    {
+      "id": "chou_chinois",
+      "name": "chou chinois",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "napa cabbage"
+    },
+    {
+      "id": "oignons_nouveaux",
+      "name": "oignons nouveaux",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "blanc et vert \u00e9minc\u00e9s",
+      "notes": "c\u00e9bettes",
+      "optional": false,
+      "name_en": "Spring onions"
+    },
+    {
+      "id": "nouilles_de_ble",
+      "name": "nouilles de bl\u00e9",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou de riz",
+      "optional": false,
+      "name_en": "wheat noodles"
+    },
+    {
+      "id": "huile_de_tournesol",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "piment",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "chili pepper"
+    }
+  ],
+  "tools": [
+    "Wok (ou po\u00eale)",
+    "Torchon propre et poids lourd (pour presser le tofu)"
+  ],
+  "steps": [
+    {
+      "id": "press_tofu",
+      "action": "Sortir le bloc de tofu de son emballage. L'envelopper dans un torchon propre et d\u00e9poser un poids lourd dessus pour le presser. Le laisser sous la presse au moins 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "tofu_marine",
+      "uses": [
+        "tofu_extra_ferme"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_kecap_manis_sauce",
+      "action": "M\u00e9langer tous les ingr\u00e9dients de la sauce (sauce soja, sucre, badianes, gingembre, ail, poivre) dans une petite casserole.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_kecap_manis",
+      "uses": [
+        "sauce_soja_tamari_sauce",
+        "sucre_fleurs_palmier",
+        "badianes",
+        "gingembre_frais",
+        "ail_sauce",
+        "poivre_noir"
+      ],
+      "produces": "sauce_kecap_manis_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_kecap_manis",
+      "action": "Faire chauffer et porter \u00e0 \u00e9bullition. Baisser imm\u00e9diatement le feu et laisser mijoter \u00e0 petits bouillons pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_kecap_manis",
+      "uses": [
+        "sauce_kecap_manis_melange"
+      ],
+      "produces": "sauce_kecap_manis_cuite",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "cool_kecap_manis",
+      "action": "Retirer du feu et r\u00e9server. La sauce va \u00e9paissir en refroidissant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "sauce_kecap_manis",
+      "uses": [
+        "sauce_kecap_manis_cuite"
+      ],
+      "produces": "sauce_kecap_manis_finale",
+      "requires": [],
+      "visualCue": "\u00e9paissie"
+    },
+    {
+      "id": "make_marinade",
+      "action": "Pr\u00e9parer la marinade en m\u00e9langeant la sauce soja, l'huile de s\u00e9same, l'ail press\u00e9 et 3 c\u00e0s de kecap manis dans un plat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "tofu_marine",
+      "uses": [
+        "sauce_soja_tamari_marinade",
+        "huile_de_sesame",
+        "ail_presse_marinade",
+        "kecap_manis_marinade"
+      ],
+      "produces": "marinade_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_and_marinate_tofu",
+      "action": "Une fois press\u00e9, couper le tofu en lamelles et le plonger dans la marinade. Le laisser reposer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tofu_marine",
+      "uses": [
+        "tofu_presse",
+        "marinade_tofu"
+      ],
+      "produces": "tofu_marine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_noodles",
+      "action": "Cuire les nouilles en suivant les indications du paquet. R\u00e9server dans un grand volume d'eau froide pour stopper la cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "nouilles_de_ble"
+      ],
+      "produces": "nouilles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_noodles",
+      "action": "R\u00e9server dans un grand volume d'eau froide pour stopper la cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "nouilles_cuites"
+      ],
+      "produces": "nouilles_egouttees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_tofu",
+      "action": "Faire chauffer un wok \u00e0 feu moyen-fort. Y verser le tofu et sa marinade et faire revenir 7min en retournant les lamelles \u00e0 mi-cuisson. R\u00e9server.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "tofu_marine"
+      ],
+      "produces": "tofu_saute",
+      "requires": [],
+      "visualCue": "retourn\u00e9 \u00e0 mi-cuisson"
+    },
+    {
+      "id": "saute_echalotes_ail",
+      "action": "Dans le wok chaud, toujours \u00e0 feu moyen-fort, verser l'huile de tournesol. Quand elle est chaude, y faire revenir les \u00e9chalotes et l'ail press\u00e9 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "huile_de_tournesol",
+        "echalotes",
+        "ail_presse_saute"
+      ],
+      "produces": "echalotes_ail_sautees",
+      "requires": [],
+      "visualCue": "huile chaude"
+    },
+    {
+      "id": "saute_carrots_courgette",
+      "action": "Ajouter les carottes et les courgettes et faire revenir encore 5min en remuant.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "echalotes_ail_sautees",
+        "carotte",
+        "courgette"
+      ],
+      "produces": "legumes_sautees_etape1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_cabbage_peas_scallions",
+      "action": "Ajouter le chou chinois, les petits pois et les oignons nouveaux, et faire revenir encore 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "legumes_sautees_etape1",
+        "chou_chinois",
+        "petits_pois",
+        "oignons_nouveaux"
+      ],
+      "produces": "legumes_sautees_complets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_noodles_tofu_sauce",
+      "action": "Verser les nouilles \u00e9goutt\u00e9es avec 6 c\u00e0s de kecap manis (ou plus) ainsi que le tofu r\u00e9serv\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "nouilles_egouttees",
+        "sauce_kecap_manis_finale",
+        "tofu_saute",
+        "legumes_sautees_complets"
+      ],
+      "produces": "nouilles_melangees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_final_mix",
+      "action": "Bien m\u00e9langer et laisser cuire encore 4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "nouilles_melangees"
+      ],
+      "produces": "nouilles_cuites_finales",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_chili",
+      "action": "Ajouter du piment en fonction des go\u00fbts. C'est pr\u00eat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "nouilles_sautees",
+      "uses": [
+        "nouilles_cuites_finales",
+        "piment"
+      ],
+      "produces": "nouilles_sautees_indonesiennes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "nouilles_sautees_indonesiennes",
+  "originalText": "Nouilles Saut\u00e9es \u00e0 l\u2019indon\u00e9sienne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 mai 2022\nNouilles Saut\u00e9es \u00e0 l\u2019indon\u00e9sienne\nAller \u00e0 la recette\nVous avez d\u00e9j\u00e0 go\u00fbt\u00e9 des nouilles saut\u00e9es \u00e0 l\u2019indon\u00e9sienne ?\nTable des mati\u00e8res\n1\nLa sauce Kecap Manis\n2\nLes l\u00e9gumes\n3\nLe tofu marin\u00e9\n4\nNouilles Saut\u00e9es \u00e0 l\u2019Indon\u00e9sienne\nLa sauce Kecap Manis\nCe qui fait toute la diff\u00e9rence avec ces nouilles, c\u2019est la sauce kecap manis. C\u2019est une sauce tr\u00e8s simple. Mais pleine de go\u00fbt. Elle se pr\u00e9pare avec des ingr\u00e9dients typiques de l\u2019Asie du Sud-Est. Mais qu\u2019on trouve assez facilement en magasin. De la sauce soja, du sucre, de l\u2019anis \u00e9toil\u00e9e (ou badiane), du gingembre et de l\u2019ail frais.\nJ\u2019ai d\u00e9couvert ces combinaisons de saveurs lors d\u2019un voyage \u00e0 Bali il y a plusieurs ann\u00e9es. Mais jusqu\u2019ici je n\u2019avais jamais essay\u00e9 de les retrouver dans ma cuisine. Parfois, on se met des barri\u00e8res tout seul. Et une fois qu\u2019on creuse un peu, on se rend compte que ce n\u2019\u00e9tait vraiment pas compliqu\u00e9 ! C\u2019est exactement ce qui m\u2019est arriv\u00e9 avec ces nouilles.\nLes l\u00e9gumes\nUne fois la sauce r\u00e9alis\u00e9e, j\u2019ai tout de suite reconnu ces odeurs typiques de l\u2019Indon\u00e9sie ! Ensuite, j\u2019ai simplement ajout\u00e9 les l\u00e9gumes qui me plaisaient \u00e0 ce moment-l\u00e0. Vous pouvez \u00e9videmment les modifier selon vos go\u00fbts et la saison. Il faut juste essayer de les mettre \u00e0 cuire dans le bon ordre. En premier les l\u00e9gumes plus durs et moins aqueux. Et en dernier les l\u00e9gumes qui cuisent tr\u00e8s vite ou qu\u2019on aime croquant.\nLe tofu marin\u00e9\nConcernant le tofu, j\u2019ai longtemps trouv\u00e9 cela fade et sans int\u00e9r\u00eat. Il faut savoir pr\u00e9parer le tofu pour pouvoir l\u2019appr\u00e9cier. Je suis encore au d\u00e9but de ma d\u00e9couverte de cet aliment. Mais l\u2019une des premi\u00e8res choses \u00e0 savoir, c\u2019est qu\u2019il faut le presser pour en extraire l\u2019eau. Cela permet de le rendre plus consistant \u00e0 la cuisson. Et surtout de bien absorber la marinade. Parce que globalement, un bon tofu est un tofu marin\u00e9 !\nCe que j\u2019aime beaucoup avec ce genre de plats (\nd\u00e9couvrez la recette des nouilles saut\u00e9es chow mein ici\n) c\u2019est que c\u2019est parfait \u00e0 emmener au bureau. Id\u00e9alement dans votre bento ! Encore mieux dans\nvotre bento chauffant\n!\nHaha ! J\u2019ai cr\u00e9\u00e9 cette recette de  nouilles saut\u00e9es \u00e0 l\u2019indon\u00e9sienne pour\nMon Bento\n\ud83d\ude09\nNouilles Saut\u00e9es \u00e0 l\u2019Indon\u00e9sienne\nNatacha\n4.48\n/5 avec\n124\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour le tofu marin\u00e9\n1\nbloc de tofu extra ferme 250g\n2\nc\u00e0s de sauce soja tamari\n2\nc\u00e0s de d\u2019huile de s\u00e9same\n1\ngousse d\u2019ail press\u00e9e\n3\nc\u00e0s de kecap manis\nrecette ci-dessous\nIngr\u00e9dients pour la sauce indon\u00e9sienne Kecap Manis\n240\nml\nde sauce soja tamari\n90\ng\nde sucre de fleurs de palmier ou \u00e0 d\u00e9faut de sucre complet\n2\nbadianes\nanis \u00e9toil\u00e9e\n10\ng\nde gingembre frais pel\u00e9 et coup\u00e9 en petits morceaux\n4\ngousses d\u2019ail \u00e9pluch\u00e9es et coup\u00e9es en petits morceaux\n\u00bd\nc\u00e0c de poivre noir\nIngr\u00e9dients pour les nouilles saut\u00e9es\n2\n\u00e9chalotes \u00e9minc\u00e9es\n2\ngousses d\u2019ail press\u00e9es\n1\ncarotte en julienne\n1\ncourgette en b\u00e2tonnets\n80\ng\nde petits pois frais ou surgel\u00e9s\n100\ng\nde chou chinois \u00e9minc\u00e9\n3\noignons nouveaux ou c\u00e9bettes\nblanc et vert \u00e9minc\u00e9s\n250\ng\nde nouilles de bl\u00e9\nou de riz pour une version sans gluten\n2\nc\u00e0s d\u2019huile de tournesol\nInstructions\nPr\u00e9paration du tofu\nCommencer par sortir le bloc de tofu de son emballage.\nL\u2019envelopper dans un torchon propre et d\u00e9poser un poids lourd dessus (par exemple une planche et une casserole) pour le presser et en faire sortir l\u2019eau. Le laisser sous la presse au moins 10min, voire plus si vous n\u2019\u00eates pas press\u00e9.\nRetirer l\u2019eau lui permettra de bien absorber la marinade, d\u2019\u00eatre plus ferme et plus go\u00fbtu.\nPr\u00e9paration de la sauce kecap manis\nPendant ce temps, m\u00e9langer tous les ingr\u00e9dients de la sauce dans une petite casserole.\nFaire chauffer et porter \u00e0 \u00e9bullition. Baisser tout de suite le feu et laisser mijoter \u00e0 petits bouillons pendant une quinzaine de minutes.\nRetirer du feu et r\u00e9server. La sauce va \u00e9paissir un peu en refroidissant.\nPr\u00e9paration du tofu marin\u00e9\nPr\u00e9parer la marinade en m\u00e9langeant tous les ingr\u00e9dients (sauce soja, huile de s\u00e9same, ail et 3 c\u00e0s de kecap manis) dans un plat.\nUne fois que le tofu est press\u00e9, le couper en lamelles.\nLe plonger dans la marinade et le laisser reposer.\nPr\u00e9paration des l\u00e9gumes\n\u00c9mincer les \u00e9chalotes.\nPresser les gousses d\u2019ail.\nD\u00e9tailler la carotte en julienne.\nD\u00e9tailler la courgette en b\u00e2tonnets.\n\u00c9cosser les petits pois ou les sortir du cong\u00e9lateur et les laisser \u00e0 temp\u00e9rature ambiante.\n\u00c9mincer le chou chinois et les oignons nouveaux (partie verte et blanche).\nCuisson des nouilles\nPendant ce temps, cuire les nouilles en suivant les indications du paquet.\nR\u00e9server dans un grand volume d\u2019eau froide pour stopper la cuisson et \u00e9viter qu\u2019elles ne collent.\nCuisson du tofu\nFaire chauffer un wok, ou \u00e0 d\u00e9faut une po\u00eale \u00e0 feu moyen-fort.\nY verser le tofu et sa marinade et faire revenir 7 \u00e0 8min en retournant les lamelles de tofu \u00e0 mi-cuisson.\nR\u00e9server,\nPr\u00e9paration des nouilles saut\u00e9es\nDans le wok chaud, toujours \u00e0 feu moyen-fort, verser l\u2019huile de tournesol.\nQuand elle est chaude, y faire revenir les \u00e9chalotes et l\u2019ail 2-3min.\nAjouter les carottes et les courgettes et faire revenir encore 4-5min en remuant.\nAjouter le chou, les petits pois et les oignons nouveaux, et faire revenir encore 2-3min.\nVerser les nouilles \u00e9goutt\u00e9es avec 6 c\u00e0s de kecap manis (ou plus, en fonction des go\u00fbts) ainsi que le tofu.\nBien m\u00e9langer et laisser cuire encore 3-4min.\nAjouter du piment en fonction des go\u00fbts.\nC\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nWok\nTags:\nbali\n,\ncomment faire nouilles saut\u00e9es\n,\nindon\u00e9sie\n,\nnouilles de riz\n,\nnouilles saut\u00e9es v\u00e9g\u00e9tariennes\n,\nnouilles v\u00e9g\u00e9\n,\nrecette asiatique\n,\nrecette indon\u00e9sie\n,\nrecette nouilles\nPains plats aux patates et petits pois\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\n4 thoughts on \u201cNouilles Saut\u00e9es \u00e0 l\u2019indon\u00e9sienne\u201d\nAnnhilde Quichaud\ndit\u00a0:\n24 mai 2022 \u00e0 22 h 35 min\ntr\u00e8s bon ! je n avais que des courgettes et des carottes, c\u2019\u00e9tait bien quand m\u00eame,  merci !\nchargement\u2026\nR\u00e9pondre\nStephanie\ndit\u00a0:\n29 mai 2022 \u00e0 0 h 22 min\nAlways looking for protein rich options, loved the flavour of the sauce, the star anise!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 mai 2022 \u00e0 11 h 15 min\nSo happy you liked it !\nchargement\u2026\nR\u00e9pondre\nGRIET\ndit\u00a0:\n2 juin 2025 \u00e0 12 h 04 min\nSuper bon. J\u2019ai utilis\u00e9 du tofu lacto ferment\u00e9 et diminu\u00e9 la quantit\u00e9 de kecap manis. Tout le monde a ador\u00e9\u2026et ils m\u2019ont dit :\u00e0 refaire !!!!\nchargement\u2026\nR\u00e9pondre\n4.48 from 124 votes (\n121 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 22.0
+}

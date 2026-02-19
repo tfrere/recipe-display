@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "title": "Tortilla Anti Gaspi au Poireau, Fanes de Radis et F\u00eata",
+    "description": "Une tortilla \u00e9paisse et moelleuse, parfaite pour utiliser les l\u00e9gumes et ne rien gaspiller, notamment les fanes de radis.",
+    "servings": 5,
+    "prepTime": "PT20M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "omelette",
+      "tortilla",
+      "tortilla antigaspi",
+      "zero dechet"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/Tortillas-antigaspi-2-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez refaire cette recette avec n'importe quel l\u00e9gume : poivrons, courgettes, fanes de carottes, \u00e9pinards etc\u2026",
+      "Pour une tortilla plus \u00e9paisse, utilisez une po\u00eale plus petite.",
+      "Servir chaud ou froid."
+    ],
+    "slug": "tortilla-anti-gaspi-au-poireau-fanes-de-radis-et-feta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/Tortillas-antigaspi-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/05/14/tortilla-anti-gaspi-au-poireau-fanes-de-radis-et-feta/",
+    "image": "images/tortilla-anti-gaspi-au-poireau-fanes-de-radis-et-feta.jpg",
+    "createdAt": "2026-02-09T20:18:03.528243",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 15.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 285.6,
+      "protein": 17.0,
+      "fat": 14.6,
+      "carbs": 21.4,
+      "fiber": 2.1,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "leek",
+      "name": "poireau",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "leek"
+    },
+    {
+      "id": "radish_greens",
+      "name": "fanes de radis",
+      "quantity": 1.0,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Radish greens"
+    },
+    {
+      "id": "eggs",
+      "name": "\u0153ufs",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Grande po\u00eale avec couvercle",
+    "Fouet"
+  ],
+  "steps": [
+    {
+      "id": "cut_potatoes",
+      "action": "\u00c9pluchez et coupez les pommes de terre en 2, puis en lamelles d'environ 3mm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "sliced_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_leek",
+      "action": "Nettoyez le poireau puis \u00e9mincez-le finement (vert et blanc).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leek"
+      ],
+      "produces": "sliced_leek",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_potatoes_leek",
+      "action": "Faites chauffer 2 c\u00e0s d'huile d'olive dans une grande po\u00eale et faites revenir les pommes de terre et le poireau \u00e0 feu moyen-fort pendant 15min \u00e0 couvert. Remuez de temps en temps.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_potatoes",
+        "sliced_leek",
+        "olive_oil"
+      ],
+      "produces": "partially_cooked_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "finish_cooking_vegetables",
+      "action": "Enlevez le couvercle et faites cuire encore 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "partially_cooked_vegetables"
+      ],
+      "produces": "cooked_potatoes_leek",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_radish_greens",
+      "action": "Nettoyez les fanes de radis et hachez-les grossi\u00e8rement. Ajoutez-les dans la po\u00eale et laissez cuire encore quelques minutes. Retirez du feu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "radish_greens",
+        "cooked_potatoes_leek"
+      ],
+      "produces": "cooked_vegetables_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_eggs",
+      "action": "Dans un saladier, battez les \u0153ufs avec un fouet jusqu'\u00e0 ce qu'ils moussent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "egg_mixture",
+      "uses": [
+        "eggs"
+      ],
+      "produces": "beaten_eggs",
+      "requires": [],
+      "visualCue": "moussent"
+    },
+    {
+      "id": "add_feta_salt",
+      "action": "Ajoutez la f\u00eata \u00e9miett\u00e9e et salez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "egg_mixture",
+      "uses": [
+        "beaten_eggs",
+        "feta",
+        "salt"
+      ],
+      "produces": "egg_feta_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_vegetables_eggs",
+      "action": "Versez les l\u00e9gumes dans le saladier avec les \u0153ufs. M\u00e9langez et couvrez. Laissez reposer quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_vegetables_mix",
+        "egg_feta_mixture"
+      ],
+      "produces": "tortilla_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faites chauffer une po\u00eale avec 2-3 c\u00e0s d'huile d'olive \u00e0 feu moyen-fort.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_first_side",
+      "action": "Une fois la po\u00eale bien chaude, versez la pr\u00e9paration dedans et couvrez. Laissez cuire 3-4min sans y toucher.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tortilla_batter",
+        "hot_oiled_pan"
+      ],
+      "produces": "half_cooked_tortilla",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flip_tortilla",
+      "action": "Retournez la tortilla : posez une assiette sur la po\u00eale, retournez-la puis reversez la tortilla dans la po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "half_cooked_tortilla"
+      ],
+      "produces": "flipped_tortilla",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_second_side",
+      "action": "Laissez cuire encore 1 min.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "flipped_tortilla"
+      ],
+      "produces": "cooked_tortilla",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooked_tortilla",
+  "originalText": "Tortilla Anti Gaspi au Poireau, Fanes de Radis et F\u00eata - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 mai 2021\nTortilla Anti Gaspi au Poireau, Fanes de Radis et F\u00eata\nLa Tortilla Anti Gaspi au Poireau, Fanes de Radis et F\u00eata : notre derni\u00e8re petite recette en date !\nC\u2019est une recette qui ne paie pas de mine, mais qui a deux gros avantages. Premi\u00e8rement, les tortillas c\u2019est bon ! Deuxi\u00e8mement, c\u2019est une recette parfaite pour faire de l\u2019anti gaspi ! On peut facilement mettre tout un tas de l\u00e9gumes dans une tortilla !\nYoan de\nToo Good To Go\n, nous a mises au d\u00e9fi de pr\u00e9parer des recettes \u00e0 partir d\u2019un panier de fruits et l\u00e9gumes surprise. Et l\u2019une des contraintes \u00e9tait de ne rien laisser de comestible de c\u00f4t\u00e9 ! sans laisser aucun d\u00e9chet. Pas de probl\u00e8me, Dan et moi, on mange tout !\nDu coup, Daniela a utilis\u00e9 les radis de la botte de radis, et moi les fanes. Parce que, vous le savez, j\u2019aime encore plus les fanes que les radis. Comme en t\u00e9moignent ces recettes :\ncake aux fanes\n,\npiperade aux fanes\n,\npesto au fanes\n!\nMais parlons un peu de la tortilla. Pourquoi une tortilla et pas une omelette ?\nJe vais vous donner ma compr\u00e9hension personnelle et arbitraire de la diff\u00e9rence entre les deux (il y a eu des discussions anim\u00e9es sur le sujet lors de la pr\u00e9paration de cette recette de\nTortilla Anti Gaspi\nau\nPoireau\n,\nFanes\nde\nRadis\net\nF\u00eata\n!).\nPour moi, une omelette est plut\u00f4t fine, pas forc\u00e9ment cuite des deux c\u00f4t\u00e9s, et plut\u00f4t coulante. A contrario, une tortilla est bien \u00e9paisse, bien cuite (pas d\u2019\u0153uf coulant, mais plut\u00f4t moelleux et l\u00e9g\u00e8rement humide) et elle est forc\u00e9ment retourn\u00e9e.\nEnsuite, en termes de pr\u00e9paration. Quand on fait l\u2019omelette, on verse les \u0153ufs battus directement sur les garnitures dans une po\u00eale d\u00e9j\u00e0 chaude. Tandis que la tortilla : on bat les \u0153ufs \u00e0 fond pour qu\u2019ils moussent, et c\u2019est la garniture qui vient rejoindre le saladier et y repose quelques minutes avant de retourner dans la po\u00eale. Cela permet de monter doucement la temp\u00e9rature des \u0153ufs et de les garder bien moelleux \u00e0 la cuisson.\nEt en termes de cuisson : on ne couvre pas l\u2019omelette, et on ram\u00e8ne les \u0153ufs cuits vers l\u2019int\u00e9rieur pour faire de la place et faire cuire les \u0153ufs. On la trifouille un peu quoi. Apr\u00e8s on la retourne ou pas, en fonction des go\u00fbts.\nLa tortilla : on la couvre et on la touche plus. Ensuite, on la retourne forc\u00e9ment et on la laisse cuire encore un peu.\nR\u00e9sultat : la texture est diff\u00e9rente, l\u2019\u00e9paisseur est diff\u00e9rente et donc le go\u00fbt est diff\u00e9rent. C\u2019est diff\u00e9rent. On ne peut pas appeler une omelette une tortilla et vice versa. Faut les respecter !\nTortilla Anti-Gaspi au Poireau, Fanes de Radis et F\u00eata\n4.52\n/5 avec\n54\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n7\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\npommes de terre \u00e0 chair ferme\n1\npoireau\n1\nbotte de fanes de radis\n7\n\u0153ufs\nsel\n150\ng\nde f\u00eata\nhuile d\u2019olive\nInstructions\n\u00c9pluchez et coupez les pommes de terre en 2, puis en lamelles d\u2019environ 3mm.\nNettoyez le poireau puis \u00e9mincez le finement (vert et blanc, pas de g\u00e2chis !).\nFaites chauffer 2 c\u00e0s d\u2019huile d\u2019olive dans une grande po\u00eale et faites revenir les pommes de terre et le poireau \u00e0 feu moyen-fort pendant 15min \u00e0 couvert. Remuez de temps en temps. Enlevez le couvercle et faites cuire encore 15min.\nNettoyez les fanes de radis et hachez-les grossi\u00e8rement. Ajoutez les dans la po\u00eale et laissez cuire encore quelques minutes. Retirez du feu.\nDans un saladier, battez les \u0153ufs avec un fouet jusqu\u2019\u00e0 ce qu\u2019ils moussent. Ajoutez la f\u00eata \u00e9miett\u00e9e et salez.\nVersez les l\u00e9gumes dans le saladier avec les \u0153ufs. M\u00e9langez et couvrez. Laissez reposer quelques minutes. Cette \u00e9tape permet d\u2019avoir une tortilla bien moelleuse \u00e0 l\u2019int\u00e9rieur.\nChoisissez une po\u00eale pour faire cuire votre tortilla. Plus elle sera petite, plus la tortilla sera \u00e9paisse (nous, on les pr\u00e9f\u00e8re \u00e9paisses).\nFaites chauffer la po\u00eale avec 2-3 c\u00e0s d\u2019huile d\u2019olive \u00e0 feu moyen-fort. Une fois qu\u2019elle est bien chaude, versez la pr\u00e9paration dedans et couvrez. Laissez la cuire 3-4min sans y toucher.\nRetournez la tortilla : posez une assiette sur la po\u00eale, retournez la puis reversez la tortilla dans la po\u00eale.\nLaissez cuire encore 1 min.\nServez chaud ou froid !\nVous pouvez refaire cette recette avec n\u2019importe quel l\u00e9gume : poivrons, courgettes, fanes de carottes, \u00e9pinards etc\u2026\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nomelette\n,\ntortilla\n,\ntortilla antigaspi\n,\nzero dechet\nGalettes de Pommes de Terre et Petits Pois \u00e0 l\u2019Indienne\nP\u00e2tes \u00e0 la Cr\u00e8me d\u2019Aubergine R\u00f4tie, Basilic et Parmesan\n2 thoughts on \u201cTortilla Anti Gaspi au Poireau, Fanes de Radis et F\u00eata\u201d\nlaplaze\ndit\u00a0:\n3 juin 2021 \u00e0 16 h 51 min\nBonjour\nJ\u2019ai des fanes de navet et de carotte a passer , lesquelles pensez vous le plus adapt\u00e9s pour cette recette ? ( Je d\u00e9but avec les fanes et a part en pesto je n\u2019en ai jamais consomm\u00e9 ni pr\u00e9par\u00e9 et j\u2019en ai pas mal sur les bras :s\nMerci par avance !\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n6 juin 2021 \u00e0 20 h 23 min\nBonjour Aurore, les 2 fonctionnent je pense. Il me semble que les fanes de navet sont un peu plus am\u00e8res, donc \u00e0 voir en fonction de vos go\u00fbts !\nchargement\u2026\nR\u00e9pondre\n4.52 from 54 votes (\n54 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

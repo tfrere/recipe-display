@@ -1,0 +1,486 @@
+{
+  "metadata": {
+    "title": "Tourte Rustique \u00c9pinards Feta",
+    "description": "Une recette simple, gourmande et polyvalente, inspir\u00e9e de la spanakopita grecque, avec une p\u00e2te classique et une garniture rapide sans cuisson pr\u00e9alable.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "\u00e9pinards",
+      "feta",
+      "tourte",
+      "v\u00e9g\u00e9tarien",
+      "m\u00e9diterran\u00e9en",
+      "pique-nique"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/tourte-rustique-epinards-et-feta-Galette-garnie-epinard-feta-1-of-10-300x300.jpg",
+    "nationality": "Greek-inspired",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaite pour un d\u00e9jeuner au bureau, un pique-nique ou un d\u00eener improvis\u00e9.",
+      "Se cong\u00e8le tr\u00e8s bien.",
+      "Les \u00e9pinards surgel\u00e9s d\u00e9congel\u00e9s peuvent \u00eatre remplac\u00e9s par 220g d'\u00e9pinards cuits."
+    ],
+    "slug": "tourte-rustique-epinards-feta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/tourte-rustique-epinards-et-feta-Galette-garnie-epinard-feta-1-of-10-300x300.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/03/tourte-rustique-epinards-feta/",
+    "image": "images/tourte-rustique-epinards-feta.webp",
+    "createdAt": "2026-02-09T22:31:18.939054",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 50.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 542.0,
+      "protein": 17.3,
+      "fat": 29.7,
+      "carbs": 51.6,
+      "fiber": 3.4,
+      "confidence": "high",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "bicarbonate_de_soude",
+      "name": "bicarbonate de soude",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 90.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "yaourt_grec_pate",
+      "name": "yaourt grec",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "yaourt_grec_garniture",
+      "name": "yaourt grec",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "epinards",
+      "name": "\u00e9pinards surgel\u00e9s d\u00e9congel\u00e9s",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "d\u00e9congel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Spinach"
+    },
+    {
+      "id": "semoule_fine",
+      "name": "semoule fine",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "semolina"
+    },
+    {
+      "id": "aneth",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe s\u00e9ch\u00e9e",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried mint"
+    },
+    {
+      "id": "sel_volonte",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "huile_dolive_badigeon",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "graines_de_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Saladier",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "melanger_ingredients_pate",
+      "action": "Dans un grand saladier, m\u00e9langer la farine, le sel et le bicarbonate de soude.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "farine",
+        "sel",
+        "bicarbonate_de_soude"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_liquides_pate",
+      "action": "Ajouter l'huile d'olive et le yaourt grec et p\u00e9trir jusqu'\u00e0 obtenir une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "melange_sec",
+        "huile_dolive",
+        "yaourt_grec_pate"
+      ],
+      "produces": "pate_boule",
+      "requires": [],
+      "visualCue": "obtenir une boule"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server la p\u00e2te au frais pendant 15min minimum.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "pate_boule"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emietter_feta",
+      "action": "\u00c9mietter la feta dans un grand bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "feta"
+      ],
+      "produces": "feta_emiettee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "hacher_epinards",
+      "action": "Hacher grossi\u00e8rement les \u00e9pinards d\u00e9congel\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "epinards"
+      ],
+      "produces": "epinards_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_garniture",
+      "action": "M\u00e9langer tous les ingr\u00e9dients de la garniture (feta, \u00e9pinards, yaourt grec, semoule fine, aneth, menthe, sel, poivre) et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "feta_emiettee",
+        "epinards_haches",
+        "yaourt_grec_garniture",
+        "semoule_fine",
+        "aneth",
+        "menthe",
+        "sel_volonte",
+        "poivre"
+      ],
+      "produces": "garniture_melangee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_et_abaisser_pate",
+      "action": "Couper le p\u00e2ton en 2 parts \u00e9gales et les abaisser en deux disques.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "deux_disques_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deposer_premier_disque",
+      "action": "D\u00e9poser un premier disque de p\u00e2te sur une plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "deux_disques_pate"
+      ],
+      "produces": "premier_disque_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deposer_garniture",
+      "action": "D\u00e9poser la garniture au centre du disque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "premier_disque_plaque",
+        "garniture_melangee"
+      ],
+      "produces": "disque_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deposer_second_disque",
+      "action": "D\u00e9poser le second disque de p\u00e2te par-dessus la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "disque_avec_garniture",
+        "deux_disques_pate"
+      ],
+      "produces": "tourte_ouverte",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sceller_bords",
+      "action": "Sceller les bords en les rabattant et en les pin\u00e7ant, puis sceller tout le tour \u00e0 l'aide d'une fourchette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tourte_ouverte"
+      ],
+      "produces": "tourte_scellee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_croix",
+      "action": "Couper une croix au centre de la tourte avec un couteau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tourte_scellee"
+      ],
+      "produces": "tourte_entaillee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "badigeonner_huile_sesame",
+      "action": "Badigeonner le dessus de la tourte d'huile d'olive puis saupoudrer de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tourte_entaillee",
+        "huile_dolive_badigeon",
+        "graines_de_sesame"
+      ],
+      "produces": "tourte_prete_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tourte",
+      "action": "Enfourner pour 35min environ, jusqu'\u00e0 ce qu'elle soit dor\u00e9e.",
+      "duration": "PT35M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tourte_prete_cuire"
+      ],
+      "produces": "tourte_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "dor\u00e9e"
+    }
+  ],
+  "finalState": "tourte_cuite",
+  "originalText": "Tourte Rustique \u00c9pinards Feta | Recette G\u00e9n\u00e9reuse et Savoureuse\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 f\u00e9vrier 2025\nTourte rustique \u00e9pinards feta : une recette simple, gourmande et polyvalente\nAvis aux fans de la fameuse\nspanakopita\ngrecque : cette\ntourte rustique \u00e9pinards feta\nva vous simplifier la vie ! Pas besoin de partir en qu\u00eate de\np\u00e2te\nfilo, cette\nrecette\nutilise une\np\u00e2te classique\nqui donne tout son charme rustique \u00e0 cette\ntourte\n. La garniture, quant \u00e0 elle, est ultrarapide \u00e0 pr\u00e9parer : pas de\ncuisson\npr\u00e9alable, juste des\n\u00e9pinards\nd\u00e9congel\u00e9s et quelques\ningr\u00e9dients\nsimples pour un maximum de go\u00fbt.\nPratique \u00e0 transporter, cette\ntourte\nest parfaite pour un d\u00e9jeuner au bureau, un pique-nique en plein air ou m\u00eame un d\u00eener improvis\u00e9. Elle se cong\u00e8le aussi tr\u00e8s bien, ce qui en fait une excellente option pour les\nrepas\n\u00e0 pr\u00e9parer \u00e0 l\u2019avance. G\u00e9n\u00e9reuse, savoureuse et facile \u00e0 r\u00e9aliser, cette\ntourte\nest le compromis parfait entre simplicit\u00e9 et gourmandise. Un vrai plaisir \u00e0 partager\u2026 ou \u00e0 savourer en solo !\nTable des mati\u00e8res\n1\nLa Spanakopita : une ic\u00f4ne de la cuisine grecque\n2\nTourte Rustique \u00c9pinards Feta\n3\nLa tourte : un plat r\u00e9confortant et versatile !\nLa Spanakopita : une ic\u00f4ne de la cuisine grecque\nLa spanakopita, c\u2019est un grand classique de la cuisine grecque qui fait fondre les amateurs de saveurs m\u00e9diterran\u00e9ennes. Cette d\u00e9licieuse tourte aux\n\u00e9pinards\net \u00e0 la feta est traditionnellement pr\u00e9par\u00e9e avec de la p\u00e2te filo, fine et croustillante, qui enveloppe une garniture fondante et parfum\u00e9e. Entre le croquant de la p\u00e2te et le moelleux de la farce, c\u2019est une v\u00e9ritable explosion de textures et de go\u00fbts.\nPopulaire en Gr\u00e8ce et au-del\u00e0, la spanakopita se d\u00e9cline aussi bien en plat principal qu\u2019en petits triangles parfaits pour l\u2019ap\u00e9ro. Si vous cherchez une version un peu plus simple et accessible, notre tourte rustique \u00e9pinards feta reprend l\u2019esprit de ce plat embl\u00e9matique, tout en \u00e9tant plus rapide et facile \u00e0 r\u00e9aliser. Une mani\u00e8re parfaite de voyager en M\u00e9diterran\u00e9e, sans quitter votre cuisine !\nVous vous demandez quelle est la diff\u00e9rence entre\nfeuilles filo\net feuilles de brick ? D\u00e9couvrez tout ce qu\u2019il faut savoir pour choisir la p\u00e2te parfaite pour vos recettes dans\nnotre article d\u00e9di\u00e9\n!\nTourte Rustique \u00c9pinards Feta\n4.55\n/5 avec\n61\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te\n350\ng\nde farine\n\u00bd\nc\u00e0c de sel\n\u00bd\nc\u00e0c de bicarbonate de soude\n90\nml\nd\u2019huile d\u2019olive\n160\ng\nde yaourt grec\nGarniture\n200\ng\nde feta\n90\ng\nde yaourt grec\n300\ng\nd\u2019\u00e9pinards surgel\u00e9s d\u00e9congel\u00e9s\nou 220g d\u2019\u00e9pinards cuits\n1\nc\u00e0s de semoule fine\n1\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\n1\nc\u00e0c de menthe s\u00e9ch\u00e9e\nsel\npoivre\nPour finir\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0s de graines de s\u00e9same\nInstructions\nPour la p\u00e2te\nDans un grand saladier, m\u00e9langer la farine, le sel et le bicarbonate. Ajouter l\u2019huile et le yaourt et p\u00e9trir jusqu\u2019\u00e0 obtenir une boule. R\u00e9server au frais 15min minimum.\nPour la garniture\n\u00c9mietter le feta dans un grand bol.\nHacher grossi\u00e8rement les \u00e9pinards cuits ou d\u00e9congel\u00e9s.\nM\u00e9langer tous les ingr\u00e9dients et r\u00e9server.\nPour la tourte\nCouper le p\u00e2ton en 2 parts \u00e9gales et abaisser.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nD\u00e9poser un premier disque de p\u00e2te sur une plaque de cuisson. D\u00e9poser la garniture au centre. D\u00e9poser le 2e disque par-dessus.\nSceller les bords en les rabattant et en les pin\u00e7ant. A l\u2019aide d\u2019une fourchette sceller tout le tour.\nCouper une croix au centre avec un couteau.\nBadigeonner le dessus de la tourte d\u2019huile d\u2019olive puis saupoudrer de graines de s\u00e9same.\nEnfourner pour 35min environ.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa tourte : un plat r\u00e9confortant et versatile !\nLa tourte, c\u2019est un peu comme un c\u00e2lin en cuisine : r\u00e9confortante, savoureuse et pleine de possibilit\u00e9s ! Que ce soit en version sal\u00e9e, comme ici, ou m\u00eame sucr\u00e9e pour une touche gourmande, elle a tout pour plaire. C\u2019est un vrai repas tout-en-un. Elle combine des l\u00e9gumes, des l\u00e9gumineuses, des c\u00e9r\u00e9ales et des fromages, cr\u00e9ant ainsi un \u00e9quilibre parfait entre prot\u00e9ines, fibres et bons nutriments.\nLa tourte est \u00e9galement facile \u00e0 pr\u00e9parer, pas besoin d\u2019\u00eatre un chef \u00e9toil\u00e9 pour r\u00e9ussir. Facile \u00e0 couper, elle se partage sans effort et ravit tout le monde, m\u00eame les plus r\u00e9ticents aux l\u00e9gumes. Un plat qui met tout le monde d\u2019accord que ce soit pour un\nbrunch\n, un pique-nique ou un d\u00eener cosy. Cette tourte a tout pour plaire, la combinaison d\u2019\u00e9pinards et de feta ravira tous les palais. Avec son aspect rustique, elle donne toujours l\u2019impression d\u2019avoir mis les petits plats dans les grands. Et si vous avez des restes, pas de souci. Elle se conserve tr\u00e8s bien et est encore meilleure r\u00e9chauff\u00e9e le lendemain !\nEnvie d\u2019autres recettes savoureuses ? Retrouvez toutes\nnos d\u00e9licieuses tourtes, quiches et tartes par ici\npour encore plus d\u2019inspiration gourmande !\nLa tourte rustique \u00e9pinards feta, c\u2019est la recette parfaite pour allier simplicit\u00e9 et gourmandise. Avec sa pr\u00e9paration rapide, ses saveurs m\u00e9diterran\u00e9ennes et sa praticit\u00e9 au quotidien, elle s\u2019adapte \u00e0 toutes les occasions, que ce soit un d\u00e9jeuner au boulot, un pique-nique entre amis ou un d\u00eener improvis\u00e9. Pratique, savoureuse et facile \u00e0 conserver, cette tourte a tout pour devenir un incontournable dans votre cuisine. Alors, \u00e0 vos fourneaux, et r\u00e9galez-vous avec cette d\u00e9licieuse recette rustique !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nEpinards\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\n8 Quiches et Tartes V\u00e9g\u00e9tariennes d\u2019automne pour un D\u00eener Simple et Sain\nVelout\u00e9 de carottes coco et gingembre : l\u2019instant r\u00e9confort que vous allez adorer !\n4.55 from 61 votes (\n61 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

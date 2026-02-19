@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "title": "Sauce Hollandaise m\u00e9thode facile et inratable",
+    "description": "Une recette de sauce hollandaise simplifi\u00e9e utilisant un blender et du beurre fondu chaud, pour une m\u00e9thode accessible et infaillible.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT5M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "sauce hollandaise",
+      "sauce hollandaise facile",
+      "sauce hollandise inratable",
+      "sauce citron",
+      "sauce oeuf citron",
+      "sauce asperge",
+      "asperge",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Sauce-hollandaise-1-of-6.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette sauce est \u00e0 consommer rapidement car elle utilise des \u0153ufs crus. Vous pouvez la conserver 24h au frais.",
+      "Elle aura alors durci. Vous pouvez retrouver une consistance agr\u00e9able en la faisant chauffer doucement au bain-marie.",
+      "Recette cr\u00e9\u00e9e dans le cadre d'un partenariat avec la marque Cristel."
+    ],
+    "slug": "sauce-hollandaise-methode-facile-et-inratable",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Sauce-hollandaise-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/04/11/sauce-hollandaise-methode-facile-et-inratable/",
+    "image": "images/sauce-hollandaise-methode-facile-et-inratable.jpg",
+    "createdAt": "2026-02-09T21:09:07.270555",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 1439.9,
+      "protein": 30.0,
+      "fat": 141.8,
+      "carbs": 10.6,
+      "fiber": 1.0,
+      "confidence": "high",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 3,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 115.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "egg_yolks",
+      "name": "jaunes d'\u0153ufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolks"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Blender",
+    "Petite casserole"
+  ],
+  "steps": [
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre \u00e0 feu doux dans une petite casserole.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "separate_eggs",
+      "action": "S\u00e9parer le blanc du jaune des \u0153ufs. Nous n'utiliserons que les jaunes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg_yolks"
+      ],
+      "produces": "separated_egg_yolks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_yolks_water_lemon",
+      "action": "Mettre les jaunes, avec l'eau et le jus de citron dans un blender.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "separated_egg_yolks",
+        "water",
+        "lemon"
+      ],
+      "produces": "yolk_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emulsify_sauce",
+      "action": "Allumer le blender sur vitesse moyenne et verser le beurre fondu tr\u00e8s chaud en fin filet dans le blender, sans l'arr\u00eater. La sauce va prendre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "yolk_mixture",
+        "melted_butter"
+      ],
+      "produces": "emulsified_sauce",
+      "requires": [],
+      "visualCue": "sauce prend"
+    },
+    {
+      "id": "season_sauce",
+      "action": "Arr\u00eater le blender. Assaisonner avec du sel et du poivre.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "emulsified_sauce",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_hollandaise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_or_serve",
+      "action": "Vous pouvez consommer la sauce imm\u00e9diatement ou la conserver au frais 24h.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_hollandaise"
+      ],
+      "produces": "hollandaise_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "hollandaise_sauce",
+  "originalText": "Sauce Hollandaise m\u00e9thode facile et inratable - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 avril 2022\nSauce Hollandaise m\u00e9thode facile et inratable\nAller \u00e0 la recette\nHello les amis !\nQue pensez-vous d\u2019un article d\u00e9di\u00e9 \u00e0 la sauce hollandaise avec une m\u00e9thode facile et inratable ?\nPlut\u00f4t cool comme sujet ! Non ?\nJe trouve qu\u2019il y a quelque chose d\u2019assez intimidant dans les sauces. Enfin dans leur r\u00e9alisation, pas dans le fait de les manger. Evidemment.\nMais, faire une sauce au poivre, une b\u00e9arnaise, ou m\u00eame juste une mayo peut faire un peu peur.\nD\u2019ailleurs, c\u2019est s\u00fbrement la raison pour laquelle vous ne trouverez pas beaucoup de sauce fran\u00e7aise sur le blog.\nJ\u2019ai fait\nune sauce bbq\n,\nune sauce burger\n,\nune sauce sweet chili\net m\u00eame\nune sauce ranch\n.\nMais, \u00e0 part la mayo, pas de sauce classique fran\u00e7aise. Et vous savez quoi, je ne saute toujours pas le pas !!\nPuisqu\u2019aujourd\u2019hui, c\u2019est une sauce hollandaise que je vous propose ! Mais quel rapport ? Juste, que \u00e7a me faisait un peu peur. Car la recette a l\u2019air un peu technique. Avec un bain-marie et compagnie.\nBref, du coup, j\u2019ai fait des recherches et j\u2019ai creus\u00e9 dans le web. Et j\u2019ai trouv\u00e9 une technique super facile et qui marche \u00e0 tous les coups !\nEn gros, vous avez besoin d\u2019un blender et d\u2019une petite casserole pour faire fondre votre beurre.\nJe m\u2019explique. Tout est dans la temp\u00e9rature. Pour obtenir cette texture cr\u00e9meuse,il faut que le m\u00e9lange soit chaud, mais pas trop, sinon l\u2019\u0153uf cuit. Bref, c\u2019est stressant.\nTandis qu\u2019en utilisant un blender et du beurre fondu bien chaud, on n\u2019a pas besoin de bain-marie. Et en fait c\u2019est trop simple.\nEn gros, il faut verser le beurre fondu en filet dans le blender en marche. Dans lequel vous aurez au pr\u00e9alable vers\u00e9 les jaunes d\u2019\u0153ufs, un peu d\u2019eau et de jus de citron. Et la magie op\u00e8re toute seule.\nComme on utilise des \u0153ufs crus, cette sauce est \u00e0 consommer rapidement. Vous pouvez la conserver 24h au frais. Elle aura alors durci. Vous pouvez retrouver une consistance agr\u00e9able en la faisant chauffer doucement.\nJ\u2019ai cr\u00e9\u00e9 cette recette de Sauce Hollandaise m\u00e9thode facile et inratable dans le cadre de notre partenariat avec la belle marque fran\u00e7aise\nCristel\n. J\u2019ai utilis\u00e9 cette petite casserole pour faire fondre mon beurre. Et pour r\u00e9chauffer ma sauce fig\u00e9e. Le format est parfait et la qualit\u00e9 impeccable. C\u2019est d\u2019ailleurs\nla gamme pro de Cristel\n, d\u00e9velopp\u00e9e pour les Chefs ! La classe, non ?\nSauce Hollandaise m\u00e9thode facile et inratable\nNatacha\n4.62\n/5 avec\n49\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n1\nbocal\nIngr\u00e9dients\n1x\n2x\n3x\n115\ng\nbeurre\n3\njaunes d\u2019\u0153ufs\n1\nc\u00e0s d\u2019eau\nLe jus d'un citron\nsel\npoivre\nInstructions\nFaire fondre le beurre \u00e0 feu doux dans une petite casserole.\nS\u00e9parer le blanc du jaune des \u0153ufs. Nous n\u2019utiliserons que les jaunes.\nMettre les jaunes, avec l\u2019eau et le jus de citron dans un blender.\nAllumer le blender sur vitesse moyenne et verser le beurre fondu tr\u00e8s chaud en fin filet dans le blender, sans l\u2019arr\u00eater.\nLa sauce va prendre.\nArr\u00eater le blender. Assaisonner.\nVous pouvez consommer la sauce imm\u00e9diatement ou la conserver au frais 24h.\nElle va s\u2019\u00e9paissir. Vous pouvez la chauffer au bain-marie pour retrouver une consistance fluide.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nasperge\n,\nsauce asperge\n,\nsauce citron\n,\nsauce hollandaise\n,\nsauce hollandaise facile\n,\nsauce hollandise inratable\n,\nsauce oeuf citron\n\u0152ufs cocottes aux Asperges blanches\nHoumous \u00e0 la betterave\n4.62 from 49 votes (\n49 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

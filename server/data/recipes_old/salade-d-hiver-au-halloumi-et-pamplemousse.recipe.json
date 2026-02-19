@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "title": "Salade d'hiver au halloumi et pamplemousse",
+    "description": "Laissez cette Salade d'hiver au halloumi et pamplemousse illuminer votre table de F\u00eates ! Avec des ingr\u00e9dients de saison comme le pamplemousse et la grenade, elle apporte fra\u00eecheur, gourmandise et couleurs.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "hiver",
+      "pamplemousse",
+      "salade",
+      "v\u00e9g\u00e9tarien",
+      "halloumi"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Salade-Noel-Halloumi-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour varier, vous pouvez \u00e9galement personnaliser cette recette en ajoutant des noix grill\u00e9es pour un peu plus de croquant, ou encore des l\u00e9gumes de saison comme des betteraves pour un suppl\u00e9ment de douceur.",
+      "J'ai d\u00e9coup\u00e9 le halloumi en \u00e9toiles gr\u00e2ce \u00e0 un emporte-pi\u00e8ce pour la rendre plus festive !"
+    ],
+    "slug": "salade-d-hiver-au-halloumi-et-pamplemousse",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Salade-Noel-Halloumi-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/12/20/salade-dhiver-au-halloumi-et-pamplemousse/",
+    "image": "images/salade-d-hiver-au-halloumi-et-pamplemousse.jpg",
+    "createdAt": "2026-02-09T22:24:35.921659",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 149.1,
+      "protein": 2.4,
+      "fat": 11.8,
+      "carbs": 8.6,
+      "fiber": 1.9,
+      "confidence": "low",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 9,
+      "totalIngredients": 13,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "mache",
+      "name": "m\u00e2che",
+      "quantity": 3.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": "belles poign\u00e9es",
+      "optional": false,
+      "name_en": "Corn salad"
+    },
+    {
+      "id": "radis",
+      "name": "radis roses",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "radish"
+    },
+    {
+      "id": "oignon_rouge",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "cerfeuil",
+      "name": "cerfeuil",
+      "quantity": 0.5,
+      "unit": "bot",
+      "category": "produce",
+      "preparation": null,
+      "notes": "\u00bd botte",
+      "optional": false,
+      "name_en": "chervil"
+    },
+    {
+      "id": "pamplemousse",
+      "name": "pamplemousse",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grapefruit"
+    },
+    {
+      "id": "grenade",
+      "name": "grenade",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pomegranate"
+    },
+    {
+      "id": "halloumi",
+      "name": "halloumi",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "halloumi"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "citron",
+      "name": "citron jaune",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon"
+    },
+    {
+      "id": "huile",
+      "name": "huile",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oil"
+    },
+    {
+      "id": "vinaigre_framboise",
+      "name": "vinaigre de framboise",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "raspberry vinegar"
+    },
+    {
+      "id": "moutarde",
+      "name": "moutarde",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mustard"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mandoline",
+    "Emporte-pi\u00e8ce (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "slice_radis_oignon",
+      "action": "\u00c0 l'aide d'une mandoline, coupez tr\u00e8s finement les radis et l'oignon rouge.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "radis",
+        "oignon_rouge"
+      ],
+      "produces": "radis_oignon_coupes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "hacher_cerfeuil",
+      "action": "Hachez grossi\u00e8rement le cerfeuil.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "cerfeuil"
+      ],
+      "produces": "cerfeuil_hache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_pamplemousse",
+      "action": "Pelez le pamplemousse \u00e0 vif pour pr\u00e9lever les supr\u00eames : retirez la peau en suivant la courbure du fruit pour exposer la chair. Ensuite, glissez la lame entre chaque membrane afin de r\u00e9cup\u00e9rer les quartiers sans peau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "pamplemousse"
+      ],
+      "produces": "supremes_pamplemousse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prelever_grenade",
+      "action": "Pr\u00e9levez les grains de la grenade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade",
+      "uses": [
+        "grenade"
+      ],
+      "produces": "grains_grenade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_halloumi",
+      "action": "Coupez le bloc de halloumi en deux dans l'\u00e9paisseur, puis en cubes. (Si vous avez la patience et le courage, vous pouvez utiliser des emporte-pi\u00e8ces pour cr\u00e9er des formes, comme des \u00e9toiles).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "halloumi",
+      "uses": [
+        "halloumi"
+      ],
+      "produces": "halloumi_cubes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_poele",
+      "action": "Faites chauffer une po\u00eale \u00e0 feu moyen-fort avec un filet d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "halloumi",
+      "uses": [
+        "huile"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "griller_halloumi",
+      "action": "Ajoutez le halloumi et faites-le griller 5min de chaque c\u00f4t\u00e9.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "halloumi",
+      "uses": [
+        "halloumi_cubes",
+        "poele_chaude"
+      ],
+      "produces": "halloumi_grille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "glacer_halloumi",
+      "action": "Versez une belle cuill\u00e8re \u00e0 soupe de miel et le jus d'un demi citron en fin de cuisson et m\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "halloumi",
+      "uses": [
+        "halloumi_grille",
+        "miel",
+        "citron"
+      ],
+      "produces": "halloumi_glace",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_vinaigrette",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la vinaigrette (huile, vinaigre de framboise, moutarde, levure malt\u00e9e, sel, poivre).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "vinaigrette",
+      "uses": [
+        "huile",
+        "vinaigre_framboise",
+        "moutarde",
+        "levure_maltee",
+        "sel",
+        "poivre"
+      ],
+      "produces": "vinaigrette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler_salade",
+      "action": "Assemblez tous les ingr\u00e9dients de la salade (m\u00e2che, radis, oignon, cerfeuil, pamplemousse, grenade, halloumi) et servez avec la vinaigrette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "mache",
+        "radis_oignon_coupes",
+        "cerfeuil_hache",
+        "supremes_pamplemousse",
+        "grains_grenade",
+        "halloumi_glace",
+        "vinaigrette"
+      ],
+      "produces": "salade_hiver_halloumi_pamplemousse",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_hiver_halloumi_pamplemousse",
+  "originalText": "Salade d\u2019hiver au halloumi et pamplemousse - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 d\u00e9cembre 2024\nSalade d\u2019hiver au halloumi et pamplemousse\nLaissez cette Salade d\u2019hiver au halloumi et pamplemousse illuminer votre table de F\u00eates !\nAvec des ingr\u00e9dients de saison comme le pamplemousse et la grenade, elle apporte fra\u00eecheur, gourmandise et couleurs. Ajoutez-y le halloumi grill\u00e9 et enrob\u00e9 de miel, et vous obtenez un plat r\u00e9confortant et original.\nTable des mati\u00e8res\n1\nLe m\u00e9lange parfait de textures et de saveurs\n2\nDes ingr\u00e9dients simples et de saison\n3\nUne recette facile et rapide pour toutes les occasions\n4\nSalade d\u2019hiver au halloumi et pamplemousse\nLe m\u00e9lange parfait de textures et de saveurs\nCette salade est une v\u00e9ritable f\u00eate pour les papilles. La m\u00e2che, salade embl\u00e9matique de l\u2019hiver est la base de ce plat. Tandis que les radis et l\u2019oignon rouge offrent une touche de piquant et de croquant. Le pamplemousse, avec son acidit\u00e9 d\u00e9licate, \u00e9quilibre la richesse du halloumi grill\u00e9. Les grains de grenade apportent douceur et acidit\u00e9, tandis que le cerfeuil apporte une petite touche anis\u00e9e. Chaque bouch\u00e9e est litt\u00e9ralement un mariage parfait de textures et de go\u00fbts !\nEnfin, le halloumi, ingr\u00e9dient phare de cette recette, est parfaitement mis en valeur gr\u00e2ce \u00e0 sa cuisson au miel et au citron.\nDes ingr\u00e9dients simples et de saison\nCette salade met \u00e0 l\u2019honneur des produits frais et accessibles, souvent disponibles pendant les mois d\u2019hiver. Le pamplemousse et la grenade sont riches en vitamines et apportent une touche de couleur \u00e0 votre assiette. La m\u00e2che, un classique de la saison froide, est id\u00e9ale pour une salade \u00e0 la fois l\u00e9g\u00e8re et nourrissante.\nLe halloumi, quant \u00e0 lui, est un fromage chypriote souvent utilis\u00e9 dans la cuisine v\u00e9g\u00e9tarienne. Sa texture ferme et sa capacit\u00e9 \u00e0 bien se tenir \u00e0 la cuisson et son go\u00fbt sal\u00e9 en font un choix parfait pour cette recette. En ajoutant un filet de miel et du citron, on sublime ses saveurs naturelles.\nUne recette facile et rapide pour toutes les occasions\nCette salade d\u2019hiver au halloumi et pamplemousse est aussi simple \u00e0 pr\u00e9parer qu\u2019elle est d\u00e9licieuse. Elle se pr\u00eate \u00e0 de nombreuses occasions : un d\u00e9jeuner l\u00e9ger, une entr\u00e9e \u00e9l\u00e9gante ou m\u00eame un accompagnement pour votre menu de F\u00eates de No\u00ebl. J\u2019ai d\u00e9coup\u00e9 le halloumi en \u00e9toiles gr\u00e2ce \u00e0 un emporte-pi\u00e8ce pour la rendre plus festive !\nLa vinaigrette est l\u00e9g\u00e8rement acidul\u00e9e et relev\u00e9e par la levure malt\u00e9e, chaque ingr\u00e9dient de la salade est parfaitement mis en valeur.\nPour varier, vous pouvez \u00e9galement personnaliser cette recette en ajoutant des noix grill\u00e9es pour un peu plus de croquant, ou encore des l\u00e9gumes de saison comme des betteraves pour un suppl\u00e9ment de douceur.\nDans le m\u00eame esprit, je vous conseille de tester cette\nSalade \u00e9pinards agrumes et fenouil\n!\nSalade d\u2019hiver au halloumi et pamplemousse\n4.50\n/5 avec\n40\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la salade\n3\nbelles poign\u00e9es de m\u00e2che\n10\nradis roses\n1\noignon rouge\n\u00bd\nbotte de cerfeuil\n1\npamplemousse\n\u00bd\ngrenade\n250\ng\nde halloumi\n1\nc\u00e0s de miel\n\u00bd\ncitron jaune\nPour la vinaigrette\n3\nc\u00e0s d\u2019huile\n2\nc\u00e0s de vinaigre de framboise\n1\nc\u00e0s de moutarde\n1\nc\u00e0s de levure malt\u00e9e\nSel\npoivre\nInstructions\n\u00c0 l\u2019aide d\u2019une mandoline, coupez tr\u00e8s finement les radis et l\u2019oignon rouge. Hachez grossi\u00e8rement le cerfeuil.\nPelez le pamplemousse \u00e0 vif pour pr\u00e9lever les supr\u00eames : retirez la peau en suivant la courbure du fruit pour exposer la chair. Ensuite, glissez la lame entre chaque membrane afin de r\u00e9cup\u00e9rer les quartiers sans peau.\nPr\u00e9levez les grains de la grenade.\nCoupez le bloc de halloumi en deux dans l\u2019\u00e9paisseur, puis en cubes. Si vous avez la patience et le courage, vous pouvez utiliser des emporte-pi\u00e8ces pour cr\u00e9er des formes, comme des \u00e9toiles.\nFaites chauffer une po\u00eale \u00e0 feu moyen-fort avec un filet d\u2019huile. Ajoutez le halloumi et faites-le griller 4-5min de chaque c\u00f4t\u00e9.Versez une belle cuill\u00e8re \u00e0 soupe de miel et le jus d\u2019un demi citron en fin de cuisson et m\u00e9langez bien. Attention, surveillez bien la cuisson du halloumi, on passe vite de grill\u00e9 \u00e0 br\u00fbl\u00e9.\nM\u00e9langez tous les ingr\u00e9dients de la vinaigrette\nAssemblez tous les ingr\u00e9dients de la salade et servez avec la vinaigrette.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nHiver\n,\nPamplemousse\n,\nSalades\n,\nSalades\nEscargots sans escargots : une revisite gourmande et v\u00e9g\u00e9tarienne\nParmentier de pleurotes et de Tomme de Savoie\n2 thoughts on \u201cSalade d\u2019hiver au halloumi et pamplemousse\u201d\nMarie-Laure\ndit\u00a0:\n19 janvier 2025 \u00e0 11 h 59 min\nUn d\u00e9lice.  J\u2019ai ador\u00e9\nchargement\u2026\nR\u00e9pondre\nL\u00e9a\ndit\u00a0:\n23 janvier 2025 \u00e0 17 h 59 min\nSimple et d\u00e9licieux !\nchargement\u2026\nR\u00e9pondre\n4.50 from 40 votes (\n38 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

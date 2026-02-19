@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "title": "Cr\u00e8me feta tahini et patates douces",
+    "description": "Ma derni\u00e8re d\u00e9couverte fabuleuse : le Cr\u00e8me feta tahini et patates douces ! C'est hyper bon !",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "creme de feta",
+      "feta",
+      "frite de patate douce",
+      "patate douce",
+      "Ap\u00e9ros",
+      "Automne",
+      "Hiver",
+      "Plats au Four",
+      "Recettes Sal\u00e9es"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Feta-au-tahini-frites-de-patates-douces-1-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Attention, le tahini peut \u00eatre amer. C'est tr\u00e8s souvent le cas des tahinis blanc. Je conseille de ne prendre que du tahini semi-complet.",
+      "Le principe est toujours le m\u00eame. Les associations de saveurs sont infinies !"
+    ],
+    "slug": "creme-feta-tahini-et-patates-douces",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Feta-au-tahini-frites-de-patates-douces-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/01/19/creme-feta-tahini-et-patates-douces/",
+    "image": "images/creme-feta-tahini-et-patates-douces.webp",
+    "createdAt": "2026-02-09T21:45:16.036556",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 998.1,
+      "protein": 30.4,
+      "fat": 70.1,
+      "carbs": 59.4,
+      "fiber": 13.2,
+      "confidence": "medium",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 11,
+      "totalIngredients": 14,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sweet_potato",
+      "name": "patate douce",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 300g",
+      "optional": false,
+      "name_en": "sweet potato"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cumin_powder",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail semoule",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "chili",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "chili pepper"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini semi complet",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    },
+    {
+      "id": "garlic_clove",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "v\u00e9g\u00e9tal ou pas",
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "dried_mint",
+      "name": "menthe s\u00e9ch\u00e9e",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried mint"
+    },
+    {
+      "id": "cumin_powder_cream",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    }
+  ],
+  "tools": [
+    "mixeur",
+    "four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "frites_de_patates_douces",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_cut_sweet_potato",
+      "action": "\u00c9plucher puis couper la patate douce en frites.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "frites_de_patates_douces",
+      "uses": [
+        "sweet_potato"
+      ],
+      "produces": "sweet_potato_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_fries_spices",
+      "action": "Dans un grand bol, m\u00e9langer les frites, l'huile d'olive et les \u00e9pices (cumin, graines de s\u00e9same, ail semoule, paprika fum\u00e9, piment, sel).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "frites_de_patates_douces",
+      "uses": [
+        "sweet_potato_fries",
+        "olive_oil",
+        "cumin_powder",
+        "sesame_seeds",
+        "garlic_powder",
+        "smoked_paprika",
+        "chili",
+        "salt"
+      ],
+      "produces": "seasoned_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_fries",
+      "action": "R\u00e9partir sur une plaque de cuisson recouverte de papier cuisson et cuire pendant 35min.",
+      "duration": "PT35M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "frites_de_patates_douces",
+      "uses": [
+        "seasoned_fries"
+      ],
+      "produces": "baked_fries",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "blend_feta_cream",
+      "action": "Mettre tous les ingr\u00e9dients (feta, tahini, gousse d'ail, jus de citron, lait, menthe s\u00e9ch\u00e9e, cumin) dans un mixeur et mixer jusqu'\u00e0 obtenir une consistance qui vous pla\u00eet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_de_feta_tahini",
+      "uses": [
+        "feta",
+        "tahini",
+        "garlic_clove",
+        "lemon",
+        "milk",
+        "dried_mint",
+        "cumin_powder_cream"
+      ],
+      "produces": "feta_tahini_cream",
+      "requires": [],
+      "visualCue": "consistance qui vous pla\u00eet"
+    },
+    {
+      "id": "taste_adjust",
+      "action": "Go\u00fbter et ajuster l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "creme_de_feta_tahini",
+      "uses": [
+        "feta_tahini_cream"
+      ],
+      "produces": "adjusted_feta_cream",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "plate_dish",
+      "action": "Mettre la cr\u00e8me sur une assiette puis d\u00e9poser les frites ti\u00e8des par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "adjusted_feta_cream",
+        "baked_fries"
+      ],
+      "produces": "creme_feta_tahini_patates_douces",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creme_feta_tahini_patates_douces",
+  "originalText": "Cr\u00e8me feta tahini et patates douces - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 janvier 2023\nCr\u00e8me feta tahini et patates douces\nAller \u00e0 la recette\nMa derni\u00e8re d\u00e9couverte fabuleuse : le Cr\u00e8me feta tahini et patates douces !\nC\u2019est hyper bon ! Bon en m\u00eame temps, je ne vous mets que des recettes hyper bonnes sur le blog ! Je vous rassure. Celles qui sont rat\u00e9es, je ne vous les partage pas !\nVous devez commencer \u00e0 avoir capt\u00e9 que j\u2019ai un amour immod\u00e9r\u00e9 pour la feta. Et depuis quelques mois, je d\u00e9veloppe une passion pour les cr\u00e8mes de feta.\nVous trouverez une premi\u00e8re recette de feta piment\u00e9e ici\n!\nL\u00e0, j\u2019ai d\u00e9clin\u00e9 ce concept en pr\u00e9parant une cr\u00e8me de feta au tahini. Attention, le tahini peut \u00eatre amer. C\u2019est tr\u00e8s souvent le cas des tahinis blanc. Je conseille de ne prendre que du tahini semi-complet. Il a une jolie couleur brune et un go\u00fbt riche. La texture est super onctueuse. Bref j\u2019adore ! Ensuite, on ajoute un peu d\u2019ail pour booster la feta. Du jus de citron, un peu de lait ou de yaourt et des \u00e9pices. Le principe est toujours le m\u00eame. Les associations de saveurs sont infinies ! Merveilleux, n\u2019est-ce pas ?\nJ\u2019ai accompagn\u00e9 cette cr\u00e8me de frites de patates douces.\nDirectement inspir\u00e9e de cette recette\n. Mais avec un m\u00e9lange d\u2019\u00e9pices qui se marie parfaitement \u00e0 ma cr\u00e8me de feta.\nEt le r\u00e9sultat est juste trop bon ! Je vous ce plat de Cr\u00e8me feta tahini et patates douces les yeux ferm\u00e9s !\nCr\u00e8me feta tahini et patates douces\n4.44\n/5 avec\n92\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n1\nassiette\nIngr\u00e9dients\n1x\n2x\n3x\nPour les frites\n1\npatate douce\nenv 300g\n1\nc\u00e0s d\u2019huile d\u2019olive\n\u00bd\nc\u00e0c de cumin en poudre\n\u00bd\nc\u00e0c de graines de s\u00e9same\n\u00bd\nc\u00e0c d\u2019ail semoule\n\u00bd\nc\u00e0c de paprika fum\u00e9\n1\npinc\u00e9e de piment\nsel\nPour la cr\u00e8me de feta tahini\n100\ng\nde feta\n50\ng\nde tahini semi complet\n1\ngousse d\u2019ail\nle jus d\u2019un citron\n50\nml\nde lait\nv\u00e9g\u00e9tal ou pas\n1\nc\u00e0c de menthe s\u00e9ch\u00e9e\n\u00bd\nc\u00e0c de cumin en poudre\nInstructions\nPour les frites\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\n\u00c9plucher puis couper la patate douce en frites.\nDans un grand bol, m\u00e9langer les frites, l\u2019huile et les \u00e9pices. R\u00e9partir sur une plaque de cuisson recouverte de papier cuisson, pendant 35min.\nPour la cr\u00e8me de feta\nMettre tous les ingr\u00e9dients dans un mixeur et mixer jusqu\u2019\u00e0 obtenir une consistance qui vous pla\u00eet. Go\u00fbter et ajuster l\u2019assaisonnement.\nService\nMettre la cr\u00e8me sur une assiette puis d\u00e9poser les frites ti\u00e8des par-dessus ! Tout simple !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nAutomne\n,\nHiver\n,\nPatate Douce\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\ncreme de feta\n,\nfeta\n,\nfrite de patate douce\n,\npatate douce\nL\u00e9gumes racines hasselback beurre d\u2019escargot\nSalade d\u2019\u00e9pinards \u0153ufs et betterave\n3 thoughts on \u201cCr\u00e8me feta tahini et patates douces\u201d\nCaroline\ndit\u00a0:\n19 janvier 2023 \u00e0 13 h 12 min\nToute la famille a ador\u00e9 ! Et la sauce est une tuerie!\nchargement\u2026\nR\u00e9pondre\nFlo de La Rochelle\ndit\u00a0:\n12 f\u00e9vrier 2023 \u00e0 21 h 05 min\nLa sauce \u00e0 la feta fut une r\u00e9v\u00e9lation. Tr\u00e8s tr\u00e8s onctueuse et succulente. Recette \u00e0 conserver absolument. J\u2019ai voulu la refaire quelques jours plus tard, de t\u00eate\u2026pfff  grossi\u00e8re erreur\u2026 j\u2019ai utilis\u00e9 de la cr\u00e8me d\u2019amande \u00e0 la place du tahini\u2026 beaucoup moins bon!!! snifff!! Merci, continuez \u00e0 nous inspirer. Je trouve que des supers sauces comme celle-ci permettent d\u2019agr\u00e9menter des l\u00e9gumes qui parfois nous lassent un peu. Pourriez-vous nous en trouver une \u00e0 base de beurre de cacahou\u00e8te? Bien cr\u00e9meuse sans \u00eatre \u00e9c\u0153urante? Ce serait top!!!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 14 h 59 min\nHello Flo ! Je suis ravie que cette sauce te plaise tant ! Je vais r\u00e9fl\u00e9chir \u00e0 qqch avec du beurre de cacahu\u00e8te qui ne soit pas \u00e9c\u0153urant ! Je suis d\u2019accord c\u2019est un peu le probl\u00e8me souvent !\nchargement\u2026\nR\u00e9pondre\n4.44 from 92 votes (\n90 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "title": "Galettes de Haricots Rouges toutes simples",
+    "description": "Une recette de galettes v\u00e9g\u00e9tariennes toute simple et vraiment facile, \u00e0 base de haricots rouges, carotte, oignon et flocons d'avoine.",
+    "servings": 8,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "galettes",
+      "haricot rouge",
+      "carotte",
+      "v\u00e9g\u00e9tarien",
+      "flocons d'avoine",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Galettes-haricots-rouges-carottes-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez tout \u00e0 fait pr\u00e9parer cette base la veille et faire cuire les galettes le lendemain.",
+      "Si la pr\u00e9paration est humide et collante, se mouiller les mains pour former les galettes.",
+      "On peut aussi laisser les galettes reposer au frais une trentaine de minutes pour les aider \u00e0 mieux tenir.",
+      "Pour congeler : les congeler \u00e0 plat sur une plaque puis les stocker empil\u00e9es ensuite pour \u00e9viter qu'elles ne se collent entre elles.",
+      "La cuisson \u00e0 la po\u00eale fonctionne aussi."
+    ],
+    "slug": "galettes-de-haricots-rouges-toutes-simples",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Galettes-haricots-rouges-carottes-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/03/galettes-de-haricots-rouges-toutes-simples/",
+    "image": "images/galettes-de-haricots-rouges-toutes-simples.jpg",
+    "createdAt": "2026-02-09T20:55:09.272437",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 95.0,
+    "totalCookingTime": 35.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 185.8,
+      "protein": 12.8,
+      "fat": 1.9,
+      "carbs": 30.0,
+      "fiber": 11.9,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9e et r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9 et r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "red_beans",
+      "name": "haricots rouges",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuits",
+      "notes": null,
+      "optional": false,
+      "name_en": "kidney beans"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "oat_flakes",
+      "name": "flocons d'avoine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "grate_vegetables",
+      "action": "\u00c9plucher et r\u00e2per la carotte et l'oignon rouge. Verser dans un saladier avec les haricots rouges cuits et r\u00e9duire en pur\u00e9e grossi\u00e8re \u00e0 l'aide d'une fourchette. Casser 2 \u0153ufs et m\u00e9langer.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrot",
+        "red_onion",
+        "red_beans",
+        "eggs"
+      ],
+      "produces": "vegetable_bean_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spices_oats",
+      "action": "Ajouter les \u00e9pices (origan, paprika fum\u00e9, ail en poudre, cumin, sel, poivre) et les flocons d'avoine et m\u00e9langer bien.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_bean_mixture",
+        "oregano",
+        "smoked_paprika",
+        "garlic_powder",
+        "cumin",
+        "salt",
+        "pepper",
+        "oat_flakes"
+      ],
+      "produces": "batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_batter",
+      "action": "Laisser reposer au moins 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "batter"
+      ],
+      "produces": "rested_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_patties",
+      "action": "Former des boules, puis des galettes assez \u00e9paisses en les \u00e9crasant entre vos mains (8 ou 10 en fonction de la taille souhait\u00e9e).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rested_batter"
+      ],
+      "produces": "formed_patties",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "brush_first_side",
+      "action": "A l'aide d'un pinceau, badigeonner g\u00e9n\u00e9reusement le dessus des galettes avec de l'huile d'olive.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "formed_patties",
+        "olive_oil"
+      ],
+      "produces": "patties_oiled_first_side",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_first_side",
+      "action": "Enfourner 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "patties_oiled_first_side"
+      ],
+      "produces": "half_baked_patties",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "flip_and_brush",
+      "action": "Sortir la plaque, retourner d\u00e9licatement les galettes, et badigeonner l'autre face d'huile d'olive.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "half_baked_patties",
+        "olive_oil"
+      ],
+      "produces": "patties_oiled_second_side",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_second_side",
+      "action": "Enfourner de nouveau pour 10min.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "patties_oiled_second_side"
+      ],
+      "produces": "cooked_galettes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooked_galettes",
+  "originalText": "Galettes de Haricots Rouges toutes simples - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 janvier 2022\nGalettes de Haricots Rouges toutes simples\nAcc\u00e9der directement \u00e0 la recette\nJe commence l\u2019ann\u00e9e 2022 avec cette recette de Galettes de Haricots Rouges toutes simples !\nPour tout vous dire, \u00e7a fait un moment que j\u2019ai cette recette dans les cartons. Mais avec la folie de No\u00ebl, et la fin de mon job salari\u00e9\u2026 Je trouve tout juste le temps de vous la mettre en ligne.\nJe me dis que c\u2019est parfait pour commencer l\u2019ann\u00e9e. C\u2019est une recette toute simple, et vraiment facile comme tout. Ce n\u2019est pas toujours le cas des galettes v\u00e9g\u00e9tariennes. Elle contient des flocons d\u2019avoine, ce que je trouve particuli\u00e8rement cool dans les galettes. J\u2019avais d\u00e9j\u00e0 utilis\u00e9 cet ingr\u00e9dient pour\nmes galettes aux lentilles corail d\u2019ailleurs\n.\nVous vous demandez certainement quel est l\u2019int\u00e9r\u00eat de mettre des flocons d\u2019avoine dans la pr\u00e9paration ?\nC\u2019est simplement parce que les galettes v\u00e9g\u00e9 peuvent \u00eatre un peu difficiles \u00e0 r\u00e9aliser car avant la cuisson, la pr\u00e9paration est souvent tr\u00e8s humide. Ce qui la rend difficile \u00e0 manipuler. D\u00e9j\u00e0 pour former les galettes, et ensuite pour les cuire. Pour parer \u00e0 ce d\u00e9sagr\u00e9ment, j\u2019utilise plusieurs techniques.\nD\u00e9j\u00e0, je mets un \u201cagent absorbant\u201d : de la chapelure par exemple. Ou alors de la farine ou f\u00e9cule. On encore, comme dans ces Galettes de Haricots Rouges toutes simples, des flocons d\u2019avoine !\nEnsuite, si la pr\u00e9paration est toujours humide et collante, je me mouille les mains pour la manipuler et former les galettes. Ca marche super bien ! On peut aussi laisser les galettes reposer au frais une trentaine de minutes. Ca les aide \u00e0 mieux tenir.\nEt pour la cuisson, rien de mieux que le four pour dess\u00e9cher une pr\u00e9paration un peu trop humide !\nVoil\u00e0, vous connaissez tous mes secrets !\nGalettes de Haricots Rouges toutes simples\nNatacha\n4.50\n/5 avec\n95\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nPortions\n8\n\u00e0 10 galettes\nIngr\u00e9dients\n1x\n2x\n3x\n1\ncarotte\nenv 100g\n1\noignon rouge\nenv 150g\n350\ng\nde haricots rouges cuits\nou en conserve\n2\noeufs\n1\nc\u00e0c d\u2019origan\n1\nc\u00e0c de paprika fum\u00e9\n1\nc\u00e0c d\u2019ail en poudre\n\u00bd\nc\u00e0c de cumin\nsel\npoivre\n50\ng\nde flocons d\u2019avoine\nhuile d\u2019olive\nInstructions\n\u00c9plucher et r\u00e2per la carotte et l\u2019oignon rouge. Verser dans un saladier avec les haricots rouges cuits et r\u00e9duire en pur\u00e9e grossi\u00e8re \u00e0 l\u2019aide d\u2019une fourchette. Casser 2 \u0153ufs et m\u00e9langer.\nAjouter les \u00e9pices et les flocons d\u2019avoine et m\u00e9langer bien. Laisser reposer au moins 30min. Vous pouvez tout \u00e0 fait pr\u00e9parer cette base la veille et faire cuire les galettes le lendemain.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPr\u00e9parer une plaque de cuisson en la couvrant de papier cuisson.\nFormer des boules, puis des galettes assez \u00e9paisses en les \u00e9crasant entre vos mains. (8 ou 10 en fonction de la taille souhait\u00e9e).\nA l\u2019aide d\u2019un pinceau, badigeonner g\u00e9n\u00e9reusement le dessus des galettes avec de l\u2019huile d\u2019olive. Enfourner 20min. Sortir la plaque, retourner d\u00e9licatement les galettes, et badigeonner l\u2019autre face d\u2019huile d\u2019olive. Enfourner de nouveau pour une dizaine de minutes.\nC\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nGalettes\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nfaire des galettes vegetariennes\n,\ngalette vegetarienne\n,\ngalettes de haricot rouge\n,\ngalettes vegetariennes faciles\n,\nharicot rouge\n,\nrecette avec des carottes\n,\nrecette avec des haricots rouges\n,\nrecette de galette\n,\nrecette de galettes vegetariennes\nSoupe de Chou Vert et Petit Epeautre\nMini-Galettes des Rois Pralin\u00e9 et Chocolat\n7 thoughts on \u201cGalettes de Haricots Rouges toutes simples\u201d\ncarole\ndit\u00a0:\n7 janvier 2022 \u00e0 16 h 40 min\ntr\u00e8s bon et rapide \u00e0 faire, en revanche apr\u00e8s 30 min seulement je trouve que les flocons d\u2019avoine restent trop durs, la prochaine fois je laisserai poser une nuit. merci!\nchargement\u2026\nR\u00e9pondre\nPatricia\ndit\u00a0:\n9 avril 2023 \u00e0 11 h 15 min\nMerci. Est-ce qu\u2019elles peuvent se congeler ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 avril 2023 \u00e0 16 h 30 min\nOui, sans probl\u00e8me. Je vous conseille de les congeler \u00e0 plat sur une plaque puis de les stocker empiler ensuite pour \u00e9viter qu\u2019elles ne se collent entre elles.\nchargement\u2026\nR\u00e9pondre\nTristan\ndit\u00a0:\n13 juillet 2024 \u00e0 15 h 36 min\nBonjour, la cuisson \u00e0 la po\u00eale pourra-t-elle fonctionner ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n16 ao\u00fbt 2024 \u00e0 14 h 43 min\nOui, sans prob !\nchargement\u2026\nR\u00e9pondre\nJohanne\ndit\u00a0:\n4 f\u00e9vrier 2025 \u00e0 16 h 14 min\nY a-t-il une sauce ou autres comme accompagnement de disponible pour cette recette\nchargement\u2026\nR\u00e9pondre\nRen\u00e9e Gingras\ndit\u00a0:\n19 novembre 2025 \u00e0 0 h 04 min\nTr\u00e8s bon! Quelle sauce  sugg\u00e9rez-vous en accompagnement?\nchargement\u2026\nR\u00e9pondre\n4.50 from 95 votes (\n93 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 35.0
+}

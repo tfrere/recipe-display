@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "title": "gateau au yaourt",
+    "description": "Le dessert facile par excellence. Rapide et efficace, ce gâteau utilise un pot de yaourt comme mesure pour tous les ingrédients.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "gâteau",
+      "yaourt",
+      "dessert",
+      "facile",
+      "français"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054434-853a3937.png",
+    "nationality": "French",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Utiliser le pot de yaourt vide comme mesure pour les autres ingrédients.",
+      "Vérifier la cuisson avec la pointe d'un couteau qui doit ressortir propre."
+    ],
+    "slug": "gateau-au-yaourt",
+    "sourceImageUrl": "gateau-au-yaourt.png",
+    "originalContent": "gateau au yaourt\n\nLe dessert facile par excellence. Rapide. Efficace.\n\nIngrédients :\n\n1 pot de yaourt nature\n2 pots de sucre\n1 sachet de sucre vanillé\n3 pots de farine\n1 sachet de levure\n50g de beurre\n3 œufs\n\nPréparation :\n- Préchauffer le four à 180°C\n- Battre les 3 oeufs et incorporer le yaourt\n- Ajouter le sucre et le sucre vanillé, mélanger\n- Ajouter la farine et la levure tout en mélangeant\n- Faire fondre le beurre et incorporer au mélange\n- Beurrer le moule\n- Faire cuire au four pendant 30 minutes\n\n\n\n\nMain recipe image: temp_image_recipe-gen-20260208054434-853a3937.png",
+    "createdAt": "2026-02-08T05:45:19.257780",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 52.0,
+    "totalCookingTime": 22.0,
+    "image": "images/gateau-au-yaourt.png",
+    "nutritionPerServing": {
+      "calories": 102.7,
+      "protein": 3.9,
+      "fat": 9.6,
+      "carbs": 0.2,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "yaourt_nature",
+      "name": "yaourt nature",
+      "quantity": 1.0,
+      "unit": "pot",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "utiliser le pot comme mesure",
+      "optional": false,
+      "name_en": "plain yogurt"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "pot",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "mesuré avec le pot de yaourt",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanillé",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 3.0,
+      "unit": "pot",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "mesurée avec le pot de yaourt",
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure",
+      "name": "levure",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "levure chimique",
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeufs",
+      "name": "œufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    }
+  ],
+  "tools": [
+    "moule à gâteau",
+    "four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_eggs_yogurt",
+      "action": "Battre les 3 œufs et incorporer le yaourt.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oeufs",
+        "yaourt_nature"
+      ],
+      "produces": "egg_yogurt_mixture",
+      "requires": [],
+      "visualCue": "mélange homogène"
+    },
+    {
+      "id": "add_sugars",
+      "action": "Ajouter le sucre et le sucre vanillé, mélanger.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg_yogurt_mixture",
+        "sucre",
+        "sucre_vanille"
+      ],
+      "produces": "sweetened_mixture",
+      "requires": [],
+      "visualCue": "sucre dissous"
+    },
+    {
+      "id": "add_flour_baking_powder",
+      "action": "Ajouter la farine et la levure tout en mélangeant.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweetened_mixture",
+        "farine",
+        "levure"
+      ],
+      "produces": "cake_batter_without_butter",
+      "requires": [],
+      "visualCue": "pâte lisse sans grumeaux"
+    },
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": "beurre liquide"
+    },
+    {
+      "id": "incorporate_butter",
+      "action": "Incorporer le beurre fondu au mélange.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cake_batter_without_butter",
+        "melted_butter"
+      ],
+      "produces": "complete_cake_batter",
+      "requires": [],
+      "visualCue": "batter homogène"
+    },
+    {
+      "id": "butter_mold",
+      "action": "Beurrer le moule.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "buttered_mold",
+      "requires": [],
+      "visualCue": "moule uniformément beurré"
+    },
+    {
+      "id": "bake_cake",
+      "action": "Faire cuire au four pendant 30 minutes.",
+      "duration": "PT30M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "complete_cake_batter"
+      ],
+      "produces": "baked_cake",
+      "requires": [
+        "preheated_oven",
+        "buttered_mold"
+      ],
+      "visualCue": "doré et la pointe d'un couteau ressort propre"
+    }
+  ],
+  "finalState": "baked_cake",
+  "originalText": "gateau au yaourt\n\nLe dessert facile par excellence. Rapide. Efficace.\n\nIngrédients :\n\n1 pot de yaourt nature\n2 pots de sucre\n1 sachet de sucre vanillé\n3 pots de farine\n1 sachet de levure\n50g de beurre\n3 œufs\n\nPréparation :\n- Préchauffer le four à 180°C\n- Battre les 3 oeufs et incorporer le yaourt\n- Ajouter le sucre et le sucre vanillé, mélanger\n- Ajouter la farine et la levure tout en mélangeant\n- Faire fondre le beurre et incorporer au mélange\n- Beurrer le moule\n- Faire cuire au four pendant 30 minutes\n\n\n\n\nMain recipe image: temp_image_recipe-gen-20260208054434-853a3937.png",
+  "totalCookingTime": 22.0
+}

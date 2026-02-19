@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "title": "Mini Beignets (de Carnaval)",
+    "description": "Des mini beignets de carnaval pour Mardi gras ultra moelleux ! Natures ou fourrés au chocolat, recouverts d'une fine couche de sucre, ils sont absolument délicieux et complètement addictifs !",
+    "servings": 50,
+    "prepTime": "PT2H",
+    "cookTime": "PT15M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "beignets",
+      "carnaval",
+      "chocolat",
+      "mardi gras",
+      "mini beignets",
+      "hiver",
+      "brioches et boulange"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/Beignets-5-of-6-scaled.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour la petite histoire, Mardi gras marque la fin de la \"semaine des septs jours gras\". Ainsi, on mange des beignets et des crêpes pour utiliser les aliments « gras » (comme le beurre) qu'on ne pourra plus consommer pendant la période de Carême.",
+      "Si vous souhaitez fourrer les beignets, vous pouvez emporte-piècer des ronds plus larges, y déposer un carré de chocolat au milieu et refermer la pâte autour pour former une boule.",
+      "Je recommande de les déguster le jour même car ils ont tendance à s'assécher."
+    ],
+    "slug": "mini-beignets-de-carnaval",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/Beignets-5-of-6-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/02/23/mini-beignet-de-carnaval/",
+    "image": "images/mini-beignets-de-carnaval.jpg",
+    "createdAt": "2026-02-09T19:44:52.108617",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 171.0,
+    "totalCookingTime": 11.0,
+    "nutritionPerServing": {
+      "calories": 61.5,
+      "protein": 1.5,
+      "fat": 2.1,
+      "carbs": 9.0,
+      "fiber": 0.3,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure_de_boulanger",
+      "name": "levure de boulanger",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Baker's yeast"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "ramolli",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": "tiède",
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "huile_neutre",
+      "name": "huile neutre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "sucre_en_poudre",
+      "name": "sucre en poudre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated sugar"
+    },
+    {
+      "id": "chocolat",
+      "name": "chocolat",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour fourrage optionnel",
+      "optional": true,
+      "name_en": "Chocolate"
+    }
+  ],
+  "tools": [
+    "wok ou poêle à bords hauts",
+    "emporte-pièce (5 ou 6 cm)"
+  ],
+  "steps": [
+    {
+      "id": "activate_yeast",
+      "action": "Mélanger la levure de boulanger dans le lait tiède et réserver pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "levure_de_boulanger",
+        "lait"
+      ],
+      "produces": "activated_yeast_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dough",
+      "action": "Dans un grand saladier, mélanger la farine, le sucre, le sel, les œufs, le beurre ramolli, et enfin le lait et la levure.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine",
+        "sucre",
+        "sel",
+        "oeufs",
+        "beurre",
+        "activated_yeast_mixture"
+      ],
+      "produces": "raw_dough_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_dough",
+      "action": "Former une boule et travailler la pâte en ajoutant un peu de farine si elle est trop collante. Pétrir la pâte pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "raw_dough_mixture"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_rise",
+      "action": "Former de nouveau une boule, la déposer dans un saladier huilé, couvrir d'un torchon et laisser reposer pendant 1h30.",
+      "duration": "PT1H30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "kneaded_dough"
+      ],
+      "produces": "risen_dough",
+      "requires": [],
+      "visualCue": "doublé de volume"
+    },
+    {
+      "id": "shape_dough",
+      "action": "Une fois que la pâte a doublé de volume, dégazer le pâton et l'abaisser en un rectangle de 1 à 2 cm d'épaisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "risen_dough"
+      ],
+      "produces": "rolled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_doughnuts",
+      "action": "Faire des ronds dans la pâte à l'aide d'un emporte-pièce (5 ou 6 cm). Pour les beignets fourrés, utiliser un emporte-pièce plus large, déposer un carré de chocolat au milieu et refermer la pâte pour former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rolled_dough",
+        "chocolat"
+      ],
+      "produces": "shaped_doughnuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_rise",
+      "action": "Déposer les beignets sur une plaque recouverte de papier cuisson et laisser reposer pendant 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "shaped_doughnuts"
+      ],
+      "produces": "proofed_doughnuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Chauffer de l'huile dans un wok ou une poêle à bords hauts à medium-high heat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_neutre"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fry_doughnuts",
+      "action": "Cuire les beignets pendant environ 1min, jusqu'à ce qu'ils soient dorés.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "proofed_doughnuts",
+        "hot_oil"
+      ],
+      "produces": "fried_doughnuts",
+      "requires": [],
+      "visualCue": "dorés"
+    },
+    {
+      "id": "sugar_coat",
+      "action": "Débarrasser les beignets sur un papier absorbant et saupoudrer immédiatement de sucre en poudre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fried_doughnuts",
+        "sucre_en_poudre"
+      ],
+      "produces": "mini_beignets",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "mini_beignets",
+  "originalText": "Mini Beignets (de Carnaval) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 février 2020\nMini Beignets (de Carnaval)\nAccéder directement à la recette\nParce que vous commencez à connaître ma passion pour le respect des traditions, c’est sans surprise que je vous propose aujourd’hui une recette spéciale pour… Mardi Gras ! Et oui, déjà ! C’est dingue, car il n’y a pas si longtemps, nous dégustions la\ngalette des rois\n, puis assez rapidement ce fut le tour des\ncrêpes\net maintenant place à ces magnifiques mini beignets ultra moelleux.\nPour la petite histoire, Mardi gras marque la fin de la “semaine des septs jours gras”. Ainsi, on mange des beignets et des crêpes pour utiliser les aliments « gras » (comme le beurre) qu’on ne pourra plus consommer pendant la période de Carême. Le Mardi gras est suivi par le mercredi des Cendres et le carême (merci wikipédia).\nBon alors par contre, heureusement que mardi gras n’a lieu qu’une seule fois par an, parce que ces beignets sont certes délicieux mais wow wow wow ils sont vraiment pas très diététiques voir particulièrement “gras”. Mais bon, certains diront que le gras c’est la vie et d’autres tout le contraire, en attendant, chacun est libre de trouver son juste milieu les amis. Et mon juste milieu à moi, c’est définitivement pas une seule fois par an (même si j’adore manger sain, il m’arrive aussi de faire quelques écarts…).\nMini Beignets (de Carnaval)\nDes mini beignets de carnaval pour Mardi gras ultra moelleux ! Natures ou fourrés au chocolat, recouverts d’une fine couche de sucre, ils sont absolument délicieux et complètement addictifs !\n4.61\n/5 avec\n96\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n30\nminutes\nmin\nTemps de cuisson\n1\nminute\nmin\nTemps de repos\n2\nheures\nh\n30\nminutes\nmin\nPortions\n50\nbeignets\nIngrédients\n1x\n2x\n3x\n500\ng\nde farine\n1\nsachet de levure de boulanger\n2\noeufs\n100\ng\nde beurre\n60\ng\nde sucre\n200\nml\nde lait\n1\npincée de sel\nhuile neutre\n(pour la cuisson)\nInstructions\nMélanger la levure de boulanger dans le lait tiède et réserver 10 min.\nDans un grand saladier mélanger la farine, le sucre, le sel, les œufs, le beurre ramolli, et enfin le lait et la levure.\nFormer une boule et travailler la pâte en ajoutant un peu de farine si la pâte est trop collante. Pétrir la pâte pendant 10 min.\nFormer de nouveau une boule et la déposer dans un saladier huilé et couvrir d’un torchon et laisser reposer pendant 1h, 1h30.\nUne fois que la pâte a doublé de volume, dégazer le pâton et abaisser en un rectangle de 1 à 2 cm d’épaisseur.\nFaire des ronds dans la pâte à l’aide d’un emporte pièce (5 ou 6 cm), les déposer sur une plaque recouverte de papier cuisson et laisser reposer 1 heure. Si vous souhaitez fourrer les beignets, vous pouvez emporte-piècer des ronds plus larges, y déposer un carré de chocolat au milieu et refermer la pâte autour pour former une boule.\nChauffer de l’huile dans un wok ou une poêle à bords hauts et cuire les beignets, la cuisson est assez rapide pour des mini beignets (environ 1 min).\nUne fois cuits, débarrasser les beignets sur un papier absorbant et saupoudrer de sucre en poudre. Et voilà, c’est prêt !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nBrioches et Boulange\n,\nHiver\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nbeignets\n,\ncarnaval\n,\nchocolat\n,\nmardi gras\n,\nmini beignets\nTartelettes Pistache Kiwi (Véganes et Sans Cuisson)\nSalade au Quinoa, Houmous et Cranberries\n16 thoughts on “Mini Beignets (de Carnaval)”\nLadyMilonguera\ndit :\n23 février 2020 à 21 h 45 min\nCes beignets aussi dodus que gourmands ont du avoir du succès !\nchargement…\nRépondre\nCoraline Vanghelle\ndit :\n27 juin 2020 à 22 h 15 min\nFranchement jai essayé ca aujourdhui jen ai fait la moitié nature et lautre moitié au chocolat. Ils sont bons tres moelleux. Tres bonne recette simple rapide. Suis très contente.\nchargement…\nRépondre\nFree The Pickle\ndit :\n1 juillet 2020 à 11 h 51 min\nMerci beaucoup !\nchargement…\nRépondre\nSéverine Chillon\ndit :\n14 février 2021 à 9 h 45 min\nSuper, bons et bien moelleux\nMerci pour cette recette\nJe recommande à tous les gourmands, petits et grands, qui souhaitent se regaller\nchargement…\nRépondre\nFree The Pickle\ndit :\n14 février 2021 à 18 h 55 min\nOh merci beaucoup ! Je suis ravie que cette recette vous plaise !\nchargement…\nRépondre\nElodie Bronte\ndit :\n21 février 2021 à 13 h 29 min\nBonjour ,\nPouvez vous me dire si je peu remplacer la levure par de la levure fraiche ?\nMerci pour votre réponse\nchargement…\nRépondre\nDaniela\ndit :\n21 février 2021 à 17 h 27 min\nBonjour Elodie, oui je pense qu’il n’y a pas de problème. Il faut mettre 2,5 fois plus de levure fraîche que de levure sèche, ici je dirais 20g de levure fraîche 😉\nchargement…\nRépondre\nPrys\ndit :\n4 mars 2021 à 17 h 09 min\nBonjour est ce qu’on peut remplacer la levure de boulanger par de la levure chimique ?\nchargement…\nRépondre\nDaniela\ndit :\n4 mars 2021 à 17 h 34 min\nBonjour, non malheureusement les deux n’ont pas la même action ! La levure de boulanger s’achète en grande surface sèche au même rayon que la levure ou fraîche au rayon frais ou chez votre boulanger !\nchargement…\nRépondre\nEmmanuel\ndit :\n19 mai 2021 à 21 h 24 min\nBonjour, combien de grammes pèse un sachet de levure de boulanger ? Merci !\nchargement…\nRépondre\nDaniela\ndit :\n20 mai 2021 à 15 h 44 min\nBonjour Emmanuel, j’utilise de mon côté des sachets de 11g, après cela dépend du fabriquant 😉\nchargement…\nRépondre\nEmmanuel\ndit :\n20 mai 2021 à 19 h 09 min\nJ’ai des sachet de 5,5 g j’en mettrai 2 alors merci ! 🙂 ( pas la levure chimique hein ?  ^^ )\nchargement…\nRépondre\nAdeline\ndit :\n12 février 2023 à 17 h 12 min\nBon ça m’apprendra à lire les commentaires avant de faire une recette… J’ai utilisé de la levure chimique… La pâte est en train de reposer mais je pense que c’est un échec… Je réessaierai avec de la levure fraîche, si j’ai bien compris c’est 20 g c’est ça?\nchargement…\nRépondre\nDaniela\ndit :\n3 mars 2023 à 15 h 03 min\nBonjour Adeline, oui c’est bien ça ☺️\nchargement…\nRépondre\nLiliava\ndit :\n1 avril 2023 à 13 h 07 min\nBonjour! Est ce que c’est possible de faire la recette aujourd’hui et de les dégustez demain? Est ce que ça ce conserve bien? Merci d’avance\nchargement…\nRépondre\nDaniela\ndit :\n3 avril 2023 à 20 h 35 min\nBonjour, je recommande de les déguster le jour même car ils ont tendance à s’assécher. Malheureusement je trouve qu’ils ne se conservent pas très bien ou alors je ne connais pas l’astuce !\nchargement…\nRépondre\n4.61 from 96 votes (\n95 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 11.0
+}

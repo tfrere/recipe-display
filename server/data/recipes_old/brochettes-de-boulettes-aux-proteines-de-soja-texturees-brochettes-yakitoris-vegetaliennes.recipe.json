@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "title": "Brochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)",
+    "description": "Les Brochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es. C'est la version vegan des c\u00e9l\u00e8bres yakitori : les brochettes de boulettes de poulet.",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "brochette",
+      "boulettes",
+      "prot\u00e9ines de soja textur\u00e9es",
+      "japonais",
+      "sans viande"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-1-of-6.jpg",
+    "nationality": "Japanese-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e pour MonBento.",
+      "Pour accompagner, retrouvez les brochettes aubergine-fromage et les brochettes de champignons grill\u00e9s.",
+      "Les prot\u00e9ines de soja textur\u00e9es sont de pr\u00e9f\u00e9rence en petits flocons.",
+      "En r\u00e9ponse \u00e0 un commentaire, l'auteur conseille une cuisson \u00e0 l'\u00e9touff\u00e9 \u00e0 la po\u00eale si pas de casserole vapeur, plut\u00f4t qu'au four pour \u00e9viter que ce soit sec."
+    ],
+    "slug": "brochettes-de-boulettes-aux-proteines-de-soja-texturees-brochettes-yakitoris-vegetaliennes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/02/brochettes-de-boulettes-aux-proteines-de-soja-texturees/",
+    "image": "images/brochettes-de-boulettes-aux-proteines-de-soja-texturees-brochettes-yakitoris-vegetaliennes.webp",
+    "createdAt": "2026-02-09T20:31:35.702114",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 95.0,
+    "totalCookingTime": 55.0,
+    "nutritionPerServing": {
+      "calories": 93.7,
+      "protein": 6.3,
+      "fat": 2.7,
+      "carbs": 11.2,
+      "fiber": 2.1,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 12,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "proteines_soja_texturees",
+      "name": "prot\u00e9ines de soja textur\u00e9es",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "de pr\u00e9f\u00e9rence en petits flocons",
+      "notes": null,
+      "optional": false,
+      "name_en": "Textured soy protein"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sauce_soja_tamari",
+      "name": "sauce soja tamari",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "bouillon_cube_legumes",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "\u00e9miett\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "echalote",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9e et coup\u00e9e grossi\u00e8rement",
+      "notes": "grosse (env 60g)",
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9e et coup\u00e9e grossi\u00e8rement",
+      "notes": "grosse gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "ciboulette",
+      "name": "ciboulette",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9e grossi\u00e8rement",
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "gingembre",
+      "name": "gingembre frais",
+      "quantity": 22.5,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9 et coup\u00e9 grossi\u00e8rement",
+      "notes": "20-25 g",
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "huile_vegetale",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "sauce_yakitori",
+      "name": "sauce yakitori",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "teriyaki sauce"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "pics_brochettes",
+      "name": "pics \u00e0 brochettes",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "other",
+      "preparation": null,
+      "notes": "petits",
+      "optional": false,
+      "name_en": "skewers"
+    }
+  ],
+  "tools": [
+    "robot mixeur",
+    "casserole vapeur"
+  ],
+  "steps": [
+    {
+      "id": "boil_water",
+      "action": "Faire bouillir l'eau.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "eau"
+      ],
+      "produces": "eau_bouillante",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rehydrate_soja",
+      "action": "Dans un grand bol, mettre les prot\u00e9ines de soja, l'eau bouillante, la sauce soja tamari et le bouillon cube \u00e9miett\u00e9. Couvrir et laisser reposer.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "proteines_soja_texturees",
+        "eau_bouillante",
+        "sauce_soja_tamari",
+        "bouillon_cube_legumes"
+      ],
+      "produces": "soja_rehydrate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "evaporate_water",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen-fort et verser tout le contenu du bol dans la po\u00eale. Faire revenir jusqu'\u00e0 \u00e9vaporation compl\u00e8te de l'eau.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "soja_rehydrate"
+      ],
+      "produces": "soja_evapore",
+      "requires": [],
+      "visualCue": "\u00e9vaporation compl\u00e8te de l'eau"
+    },
+    {
+      "id": "prepare_vegetables",
+      "action": "\u00c9plucher et couper grossi\u00e8rement l'\u00e9chalote, l'ail, le gingembre et la ciboulette.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "echalote",
+        "ail",
+        "gingembre",
+        "ciboulette"
+      ],
+      "produces": "legumes_coupes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_pate",
+      "action": "Mettre les l\u00e9gumes coup\u00e9s dans le bol d'un robot mixeur avec l'avoine et les prot\u00e9ines de soja r\u00e9hydrat\u00e9es. Mixer jusqu'\u00e0 obtention d'une texture l\u00e9g\u00e8rement granuleuse.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "legumes_coupes",
+        "flocons_avoine",
+        "soja_evapore"
+      ],
+      "produces": "pate_boulettes",
+      "requires": [],
+      "visualCue": "texture l\u00e9g\u00e8rement granuleuse"
+    },
+    {
+      "id": "former_boulettes",
+      "action": "Former 18 boulettes en pressant et en roulant la p\u00e2te entre vos mains.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "pate_boulettes"
+      ],
+      "produces": "boulettes_crues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rouler_fecule",
+      "action": "Verser la f\u00e9cule dans un bol et rouler les boulettes dedans.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "boulettes_crues",
+        "fecule_mais"
+      ],
+      "produces": "boulettes_feculees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_vapeur",
+      "action": "Faire cuire les boulettes \u00e0 la vapeur.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "boulettes_feculees"
+      ],
+      "produces": "boulettes_cuites_vapeur",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_revenir_boulettes",
+      "action": "R\u00e9chauffer la po\u00eale \u00e0 feu moyen-fort. Verser une c\u00e0s d'huile v\u00e9g\u00e9tale neutre et faire revenir les boulettes pendant 8min en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "boulettes_cuites_vapeur",
+        "huile_vegetale"
+      ],
+      "produces": "boulettes_dorees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_sauce_yakitori",
+      "action": "Ajouter la sauce yakitori dans la po\u00eale, faire revenir encore 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "boulettes_de_proteines_de_soja",
+      "uses": [
+        "boulettes_dorees",
+        "sauce_yakitori"
+      ],
+      "produces": "boulettes_saucees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler_brochettes",
+      "action": "Faire les brochettes en mettant 3 boulettes par pic, saupoudrer de s\u00e9same.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "boulettes_saucees",
+        "pics_brochettes",
+        "graines_sesame"
+      ],
+      "produces": "brochettes_boulettes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "brochettes_boulettes",
+  "originalText": "Brochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 ao\u00fbt 2021\nBrochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\nLes Brochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es. Vous connaissez ? C\u2019est la version vegan des c\u00e9l\u00e8bres yakitori : les brochettes de boulettes de poulet.\nC\u2019est une recette que j\u2019avais envie de tester depuis tr\u00e8s longtemps. Cette id\u00e9e me trotte dans la t\u00eate depuis environ 1 an. Et un jour Mon Bento m\u2019a demand\u00e9 de cr\u00e9er une recette d\u2019inspiration japonaise. C\u2019\u00e9tait l\u2019occasion r\u00eav\u00e9e et j\u2019ai saut\u00e9 le pas.\nIl y a eu beaucoup r\u00e9flexion autour de l\u2019ingr\u00e9dient qui m\u2019apporterait une bonne texture pour cette brochette. Et finalement, je me suis arr\u00eat\u00e9e sur un ingr\u00e9dient tr\u00e8s classique : les prot\u00e9ines de soja textur\u00e9es.\nJe les ai associ\u00e9es \u00e0 des flocons d\u2019avoine. Ces deux ingr\u00e9dients apportent une texture parfaite \u00e0 ces boulettes.\nEt le gingembre, les \u00e9chalotes et la sauce soja tamari apportent le parfum si particulier de ces boulettes !\nUn vrai bonheur gustatif !\nEt pour accompagner cette recette de Brochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es, retrouvez les 2 autres recettes de yakitoris v\u00e9g\u00e9. J\u2019ai nomm\u00e9\nles brochettes aubergine-fromage\net les\nbrochettes de champignons grill\u00e9s\n.\nBrochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\n4.48\n/5 avec\n133\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n6\nbrochettes\nIngr\u00e9dients\n1x\n2x\n3x\n60\ng\nde prot\u00e9ines de soja textur\u00e9es\nde pr\u00e9f\u00e9rence en petits flocons\n300\nml\nd\u2019eau\n1.5\nc\u00e0s de sauce soja tamari\n1\nbouillon cube de l\u00e9gumes\n1\ngrosse \u00e9chalote\nenv 60g\n1\ngrosse gousse d\u2019ail\n8\nbrins de ciboulette\n20-25\ng\nde gingembre frais\nen fonction des go\u00fbts\n60\ng\nde flocons d\u2019avoine\n2\nc\u00e0s de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale\n3\nc\u00e0s de sauce yakitori\ngraines de s\u00e9same\n6\npetits pics \u00e0 brochettes\nInstructions\nFaire bouillir l\u2019eau. Dans un grand bol, mettre les prot\u00e9ines de soja, l\u2019eau bouillante, la sauce soja tamari et le bouillon cube \u00e9miett\u00e9.\nCouvrir et laisser reposer au moins 15min.\nFaire chauffer une po\u00eale \u00e0 feu moyen-fort et verser tout le contenu du bol dans la po\u00eale. Faire revenir jusqu\u2019\u00e0 \u00e9vaporation compl\u00e8te de l\u2019eau (environ 5min).\nPendant ce temps, \u00e9plucher et couper grossi\u00e8rement l\u2019\u00e9chalote, l\u2019ail, le gingembre et la ciboulette. Les mettre dans le bol d\u2019un robot mixeur avec l\u2019avoine et les prot\u00e9ines de soja r\u00e9hydrat\u00e9es.\nMixer jusqu\u2019\u00e0 obtention d\u2019une texture l\u00e9g\u00e8rement granuleuse.\nFormer les boulettes en pressant et en roulant la p\u00e2te entre vos mains. Vous devriez pouvoir faire 18 boulettes.\nFaire chauffer une casserole vapeur.\nVerser la f\u00e9cule dans un bol et rouler les boulettes dedans. Cela \u00e9vitera qu\u2019elles ne collent lors de la cuisson.\nFaire cuire \u00e0 la vapeur 25min.\nR\u00e9chauffer la po\u00eale \u00e0 feu moyen-fort. Verser une c\u00e0s d\u2019huile v\u00e9g\u00e9tale neutre et faire revenir les boulettes pendant 8min en remuant r\u00e9guli\u00e8rement. Ajouter la sauce yakitori dans la po\u00eale, faire revenir encore 2min.\nFaire les brochettes en mettant 3 boulettes par pic, saupoudrer de s\u00e9same.\nServir chaud.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019ai cr\u00e9\u00e9 cette recette pour\nMonBento\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nbbq sans viande\n,\nbbq vegan\n,\nboulettes vegans\n,\nboulettes v\u00e9g\u00e9taliennes\n,\nbrochette sans viande\n,\nbrochette vegan\n,\nbrochette v\u00e9g\u00e9tarienne\n,\nbrochettes vegan\n,\nrecette de brochette vegan\n,\nrecette de brochette v\u00e9g\u00e9tarienne\n,\nrecette yakitori vegetarienne\n,\nyakitoris\nBrochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)\nBrochettes de Champignons\n6 thoughts on \u201cBrochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\u201d\nCECILE HERRAMHOF\ndit\u00a0:\n5 ao\u00fbt 2021 \u00e0 16 h 40 min\nBonjour, cette recette me tente vraiment ! Penses-tu qu\u2019on puisse les cuire au four ou directement \u00e0 la po\u00eale ? Car je n\u2019ai pas moyen de faire une cuisson vapeur. Merci !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n6 ao\u00fbt 2021 \u00e0 14 h 56 min\nBonjour C\u00e9cile ! J\u2019ai un peu peur que le r\u00e9sultat soit sec si tu les cuits au four. Je conseillerai plut\u00f4t une cuisson \u00e0 l\u2019\u00e9touff\u00e9 \u00e0 la po\u00eale. Mais en vrai, je te conseille vraiment de te prendre une casserole vapeur. Perso, depuis que j\u2019en ai une, je m\u2019en sers super souvent ! J\u2019ai un mod\u00e8le tout simple de ce type :\nhttps://www.lidl-shop.be/p/fr-BE/ernesto-cuit-vapeur-o-20-cm-acier-inoxydable/p100300971\nchargement\u2026\nR\u00e9pondre\nMarion\ndit\u00a0:\n14 f\u00e9vrier 2022 \u00e0 19 h 19 min\nOhhh cette recette \u00e0 l\u2019air trop bonne! Je suis en train de faire cuire les boulettes \u00e0 la vapeur la texture est vraiment top!!! Elle me donne pleins d\u2019id\u00e9es, pourquoi pas en faire pour des p\u00e2tes bolognaises\u2026\n\ud83e\udd24\nMerci beaucoup\nchargement\u2026\nR\u00e9pondre\nJulie Girardet\ndit\u00a0:\n12 mars 2024 \u00e0 8 h 48 min\nBonjour ! D\u00e9j\u00e0 merci pour tout le contenu que vous partagez, je me r\u00e9gale ! Par quoi pourrais je remplacer les flocons d\u2019avoine dans la recette svp ? Pour une version sans gluten. (PS : autre que les flocons d\u2019avoine sans gluten, je n\u2019en ai pas sous la main). Merci !\nchargement\u2026\nR\u00e9pondre\nLaurie\ndit\u00a0:\n26 janvier 2025 \u00e0 20 h 42 min\nD\u00e9licieux! Les 18 boulettes sont parties trop vite. On metrra un poil de gingembre en moins pour les plus sensibles mais sinon texture extra et recette vraiment explicite. Merci beaucoup pour cette recette fantastique.\nchargement\u2026\nR\u00e9pondre\nCoralie\ndit\u00a0:\n27 janvier 2026 \u00e0 23 h 33 min\nJe viens de les tester et j\u2019ai ador\u00e9 ! Bluffant.  Merci bcp !\nchargement\u2026\nR\u00e9pondre\n4.48 from 133 votes (\n130 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 55.0
+}

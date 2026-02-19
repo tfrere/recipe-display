@@ -1,5 +1,40 @@
 /**
- * Convertit une chaîne de temps (ex: "1h30min") en minutes
+ * Parse une durée ISO 8601 (ex: "PT1H30M", "PT45M", "PT30S") en minutes
+ * @param {string} isoStr - La chaîne ISO 8601 à parser
+ * @returns {number} Le nombre de minutes
+ */
+const parseISO8601Duration = (isoStr) => {
+  let totalMinutes = 0;
+  const upper = isoStr.toUpperCase();
+
+  // Extraire les heures
+  const hoursMatch = upper.match(/(\d+(?:\.\d+)?)H/);
+  if (hoursMatch) {
+    totalMinutes += parseFloat(hoursMatch[1]) * 60;
+  }
+
+  // Extraire les minutes
+  const minutesMatch = upper.match(/(\d+(?:\.\d+)?)M/);
+  if (minutesMatch) {
+    totalMinutes += parseFloat(minutesMatch[1]);
+  }
+
+  // Extraire les secondes
+  const secondsMatch = upper.match(/(\d+(?:\.\d+)?)S/);
+  if (secondsMatch) {
+    totalMinutes += parseFloat(secondsMatch[1]) / 60;
+  }
+
+  return totalMinutes;
+};
+
+/**
+ * Convertit une chaîne de temps en minutes.
+ * Supporte :
+ * - ISO 8601 : "PT30M", "PT1H30M", "PT1H", "PT45S"
+ * - Legacy : "1h30min", "5min", "30 sec"
+ * - Nombre : retourné directement
+ *
  * @param {string|number} timeStr - La chaîne de temps à convertir ou un nombre de minutes
  * @returns {number} Le nombre de minutes
  */
@@ -18,6 +53,12 @@ export const parseTimeToMinutes = (timeStr) => {
     return 0;
   }
 
+  // Format ISO 8601 : commence par "PT"
+  if (timeStr.toUpperCase().startsWith("PT")) {
+    return parseISO8601Duration(timeStr);
+  }
+
+  // Format legacy
   let totalMinutes = 0;
 
   // Format "Xh" ou "XhYmin"

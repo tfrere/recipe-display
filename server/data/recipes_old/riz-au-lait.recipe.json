@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "title": "riz au lait",
+    "description": "Un riz au lait crémeux parfumé à la vanille et à la cannelle, servi chaud avec de la compote de rhubarbe pour un contraste chaud-froid.",
+    "servings": 4,
+    "prepTime": "PT5M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "riz au lait",
+      "dessert",
+      "vanille",
+      "cannelle",
+      "français",
+      "compote de rhubarbe"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260207114331-26d629d5.png",
+    "nationality": "French",
+    "author": "Louise Bernard",
+    "source": null,
+    "notes": [
+      "Servir chaud avec de la compote de rhubarbe pour un mariage chaud-froid exquis.",
+      "Remuer régulièrement pendant la cuisson pour éviter que le riz n'attache au fond de la casserole."
+    ],
+    "slug": "riz-au-lait",
+    "sourceImageUrl": "riz-au-lait.png",
+    "originalContent": "riz au lait\nby Louise Bernard\n\nTemps total : 50 minutes\nTemps de préparation : 5 min\nTemps de cuisson : 45 minutes\n\nPour 2 à 4 personnes (c’est copieux)\n\nIngrédients :\n100 g de riz rond\n1L de lait entier frais\n1 gousse de vanille\n5 cuillères à soupe de sucre roux\n1 sachet de sucre vanillé\n1 cac de cannelle\ncompote de rhubarbe (optionnel)\n\nPréparation :\nRincer le riz à l’eau clair\nAvec un couteau, aplatir la gousse de vanille, la couper en deux et gratter l’intérieur pour en extraire les graines\nvoir ci-dessous\nTechnique de cuisine : Préparer une gousse de vanille\nVerser le lait dans une grande casserole (vous pouvez en garder un peu pour ajuster par la suite)\nIncorporez le sucre, les graines de vanille et le sucre vanillé\nPorter le lait à ébullition puis réduire le feu\nVerser le riz dans le lait et préparez-vous un bon podcast car il va falloir remuer régulièrement pendant minimum 45 minutes (à feux doux-moyen)\nLorsque le riz arrive à bonne consistance, couper le feu\nSaupoudrer avec la cannelle et servir chaud avec la compote pour un mariage chaud-froid exquis\n\nMain recipe image: temp_image_recipe-gen-20260207114331-26d629d5.png",
+    "createdAt": "2026-02-07T11:44:33.909770",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 60.0,
+    "image": "images/riz-au-lait.png",
+    "nutritionPerServing": {
+      "calories": 309.8,
+      "protein": 10.4,
+      "fat": 9.2,
+      "carbs": 46.1,
+      "fiber": 1.3,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "riz_rond",
+      "name": "riz rond",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Short-grain rice"
+    },
+    {
+      "id": "lait_entier",
+      "name": "lait entier frais",
+      "quantity": 1.0,
+      "unit": "L",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole milk"
+    },
+    {
+      "id": "vanille_gousse",
+      "name": "gousse de vanille",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Vanilla bean"
+    },
+    {
+      "id": "sucre_roux",
+      "name": "sucre roux",
+      "quantity": 5.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanillé",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "cannelle",
+      "name": "cannelle",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "compote_rhubarbe",
+      "name": "compote de rhubarbe",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "pour servir",
+      "optional": true,
+      "name_en": "Rhubarb compote"
+    }
+  ],
+  "tools": [
+    "grande casserole",
+    "couteau"
+  ],
+  "steps": [
+    {
+      "id": "rincer_riz",
+      "action": "Rincer le riz à l'eau claire.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "riz",
+      "uses": [
+        "riz_rond"
+      ],
+      "produces": "riz_rince",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_vanille",
+      "action": "Avec un couteau, aplatir la gousse de vanille, la couper en deux et gratter l'intérieur pour en extraire les graines.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "aromatiques",
+      "uses": [
+        "vanille_gousse"
+      ],
+      "produces": "graines_vanille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_lait",
+      "action": "Verser le lait dans une grande casserole (vous pouvez en garder un peu pour ajuster par la suite).",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "lait",
+      "uses": [
+        "lait_entier"
+      ],
+      "produces": "lait_dans_casserole",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_sucres",
+      "action": "Incorporer le sucre roux, les graines de vanille et le sucre vanillé dans le lait.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "lait",
+      "uses": [
+        "lait_dans_casserole",
+        "sucre_roux",
+        "graines_vanille",
+        "sucre_vanille"
+      ],
+      "produces": "lait_sucre_vanille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "porter_ebullition",
+      "action": "Porter le lait à ébullition puis réduire le feu.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "lait",
+      "uses": [
+        "lait_sucre_vanille"
+      ],
+      "produces": "lait_ebullition",
+      "requires": [],
+      "visualCue": "ébullition"
+    },
+    {
+      "id": "ajouter_riz",
+      "action": "Verser le riz rincé dans le lait et remuer régulièrement pendant minimum 45 minutes à feu doux-moyen.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz",
+      "uses": [
+        "riz_rince",
+        "lait_ebullition"
+      ],
+      "produces": "riz_cuit_lait",
+      "requires": [],
+      "visualCue": "riz à bonne consistance"
+    },
+    {
+      "id": "couper_feu",
+      "action": "Lorsque le riz arrive à bonne consistance, couper le feu.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "riz",
+      "uses": [
+        "riz_cuit_lait"
+      ],
+      "produces": "riz_au_lait_cuit",
+      "requires": [],
+      "visualCue": "consistance crémeuse"
+    },
+    {
+      "id": "saupoudrer_cannelle",
+      "action": "Saupoudrer avec la cannelle.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "finition",
+      "uses": [
+        "riz_au_lait_cuit",
+        "cannelle"
+      ],
+      "produces": "riz_au_lait_cannelle",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servir chaud avec la compote de rhubarbe pour un mariage chaud-froid exquis.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "riz_au_lait_cannelle",
+        "compote_rhubarbe"
+      ],
+      "produces": "riz_au_lait_servi",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "riz_au_lait_servi",
+  "originalText": "riz au lait\nby Louise Bernard\n\nTemps total : 50 minutes\nTemps de préparation : 5 min\nTemps de cuisson : 45 minutes\n\nPour 2 à 4 personnes (c’est copieux)\n\nIngrédients :\n100 g de riz rond\n1L de lait entier frais\n1 gousse de vanille\n5 cuillères à soupe de sucre roux\n1 sachet de sucre vanillé\n1 cac de cannelle\ncompote de rhubarbe (optionnel)\n\nPréparation :\nRincer le riz à l’eau clair\nAvec un couteau, aplatir la gousse de vanille, la couper en deux et gratter l’intérieur pour en extraire les graines\nvoir ci-dessous\nTechnique de cuisine : Préparer une gousse de vanille\nVerser le lait dans une grande casserole (vous pouvez en garder un peu pour ajuster par la suite)\nIncorporez le sucre, les graines de vanille et le sucre vanillé\nPorter le lait à ébullition puis réduire le feu\nVerser le riz dans le lait et préparez-vous un bon podcast car il va falloir remuer régulièrement pendant minimum 45 minutes (à feux doux-moyen)\nLorsque le riz arrive à bonne consistance, couper le feu\nSaupoudrer avec la cannelle et servir chaud avec la compote pour un mariage chaud-froid exquis\n\nMain recipe image: temp_image_recipe-gen-20260207114331-26d629d5.png",
+  "totalCookingTime": 60.0
+}

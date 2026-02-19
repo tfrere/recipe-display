@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "title": "Tartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue",
+    "description": "Des tartines rapides et équilibrées avec du fromage frais aux herbes, des légumes crus et un filet d'huile d'olive.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "tartine salée",
+      "végétarien",
+      "apéro",
+      "brunch",
+      "été",
+      "déjeuner rapide"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/09/Tartines-Fromage-Frais-Tomates-Cerises-pour-Soleou-3-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette créée dans le cadre d'un partenariat avec Soléou.",
+      "L'huile d'olive \"Caractère\" de Soléou est recommandée pour la finition.",
+      "On peut utiliser des légumes crus ou cuits en dés.",
+      "Déguster immédiatement."
+    ],
+    "slug": "tartines-de-chevre-a-la-ciboulette-tomates-cerises-et-rubans-de-courgette-crue",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/09/Tartines-Fromage-Frais-Tomates-Cerises-pour-Soleou-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/09/19/tartines-de-chevre-a-la-ciboulette-tomates-cerises-et-rubans-de-courgette-crue/",
+    "image": "images/tartines-de-chevre-a-la-ciboulette-tomates-cerises-et-rubans-de-courgette-crue.jpg",
+    "createdAt": "2026-02-09T20:01:42.954540",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 343.3,
+      "protein": 19.5,
+      "fat": 13.9,
+      "carbs": 28.2,
+      "fiber": 13.3,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "goat_cheese",
+      "name": "fromage de chèvre frais",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh goat cheese"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressée",
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachée finement",
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgette",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en rubans",
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "cherry_tomatoes",
+      "name": "tomates cerises",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "filet",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "country_bread",
+      "name": "pain de campagne",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "grandes tranches",
+      "optional": false,
+      "name_en": "Country bread"
+    }
+  ],
+  "tools": [
+    "Mandoline ou économe"
+  ],
+  "steps": [
+    {
+      "id": "mix_cheese_spread",
+      "action": "Dans un petit bol, mélanger le fromage frais de chèvre avec l'ail pressée et la ciboulette hachée. Réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "goat_cheese",
+        "garlic",
+        "chives"
+      ],
+      "produces": "cheese_spread",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_tomatoes",
+      "action": "Couper les tomates cerises en morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cherry_tomatoes"
+      ],
+      "produces": "cut_tomatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_zucchini_ribbons",
+      "action": "À l'aide d'une mandoline ou d'un économe, faire des rubans dans la demi-courgette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "zucchini"
+      ],
+      "produces": "zucchini_ribbons",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_cheese_on_bread",
+      "action": "Étaler le fromage préparé sur les tranches de pain.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cheese_spread",
+        "country_bread"
+      ],
+      "produces": "bread_with_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_toppings",
+      "action": "Disposer les morceaux de tomates cerises et les rubans de courgette sur les tartines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bread_with_cheese",
+        "cut_tomatoes",
+        "zucchini_ribbons"
+      ],
+      "produces": "tartines_with_toppings",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drizzle_olive_oil",
+      "action": "Verser un filet d'huile d'olive de qualité sur chaque tartine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartines_with_toppings",
+        "olive_oil"
+      ],
+      "produces": "tartines_with_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_salt",
+      "action": "Saupoudrer de fleur de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartines_with_oil",
+        "fleur_de_sel"
+      ],
+      "produces": "tartines_with_salt",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Déguster immédiatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartines_with_salt"
+      ],
+      "produces": "tartines_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tartines_final",
+  "originalText": "Tartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 septembre 2020\nTartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue\nHello les amis !\nQuoi de plus simple que des tartines pour un repas rapide et équilibré ?\nC’est une formule que j’utilise assez souvent quand je manque de temps, ou que j’ai un reste de légumes !\nLa recette de base pour moi c’est : une belle tranche de pain complet (ou de pain nordique pour que ce soit encore plus healthy !), une jolie couche de fromage frais aux herbes, et au-dessus des légumes crus (comme ici avec des tomates cerises et des rubans de courgette crue) ou cuits en dés.\nEt vous me connaissez 😉 j’ai un petit faible pour l’huile d’olive. J’aime beaucoup quand on sent le goût de l’huile d’olive “cru” et brut. Ça apporte un côté plus « authentique » 😉\nAlors j’avoue, en générale, j’ajoute un petit filet sur la tartine. C’est un peu ma petite touche de finition perso 😉\nCette recette a été créée dans le cadre d’un partenariat rémunéré avec Soléou (qui ne fait que des huiles bio). Et leur\nhuile d’olive “Caractère”\nest parfaite pour ma touche de finition.\nJ’ai découvert la marque il y a un peu plus d’un an, quand on a fait notre première recette pour eux (\nla fameuse salade de tagliatelles de courgettes crues\n). Et j’avoue être tombée amoureuse de leur huile (surtout la caractère), que j’achète régulièrement depuis (ils auront au moins gagné une cliente hahaha). On la trouve en grande surface assez facilement.\nSi vous vous cherchez d’autres idées de tartines sympa, je vous conseille\ncelle à la patate douce\n, ou\ncelle au brie et à la poire\n, et dans un registre plus classique\n, la tartine chèvre et figue\nou\ncelle à l’avocat et œuf mollet\n!\nRégalez-vous les amis !\nTartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue\nNatacha\n4.58\n/5 avec\n75\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nIngrédients\n130\ng\nde fromage de chèvre frais\n½\ngousse d’ail pressée\nou une petite gousse\n7-8\nbrins de ciboulette hachée finement\n½\ncourgette en rubans\n10 to\nmates cerises coupées\n1\nfilet d’huile d’olive\nfleur de sel\n2\ngrandes tranches de pain de campagne\nInstructions\nCommencez par préparer le fromage : dans un petit bol, mélanger le fromage frais avec l’ail et la ciboulette. Réservez.\nCoupez les tomates cerises en morceaux.\nA l’aide d’une mandoline ou d’un économe, faites des rubans dans la courgette.\nÉtalez le fromage sur les tartines, puis mettez les tomates et les rubans de courgettes.\nFinalement, versez un filet d’huile d’olive de qualité et saupoudrez de fleur de sel.\nDégustez immédiatement.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nApéros\n,\nBrunch Salé\n,\nÉté\n,\nRecettes Salées\nTags:\ndejeuner rapide\n,\nrepas végétarien rapide\n,\ntartine salée\n,\ntartine salée végé\n,\nveggie toast\nBrioche Vegan Chocolatée\nMuffins Banane Epinard (Vegan + Sans Sucré Raffiné)\n1 thought on “Tartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue”\nChristelle\ndit :\n24 septembre 2020 à 17 h 48 min\nDe belles tartines qui font envie et qui  ne demandent qu’à être testées 😉\nchargement…\nRépondre\n4.58 from 75 votes (\n75 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

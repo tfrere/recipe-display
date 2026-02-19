@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "title": "Blanquette de veau",
+    "description": "A classic French veal stew with a creamy white sauce, featuring tender veal cooked with vegetables and finished with a velouté sauce.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "french",
+      "stew",
+      "veal",
+      "comfort-food",
+      "cream-sauce"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": "Philippe Etchebest",
+    "source": null,
+    "notes": [
+      "Traditionally served with rice or boiled potatoes",
+      "The blanching step ensures a clear, light-colored sauce",
+      "Can be made a day ahead for better flavor development"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "veal",
+      "name": "veau (épaule, collier)",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "meat",
+      "preparation": "cut into chunks",
+      "notes": "shoulder or neck cuts work best",
+      "optional": false
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 3.0,
+      "unit": "L",
+      "category": "beverage",
+      "preparation": "cold",
+      "notes": "for blanching and cooking",
+      "optional": false
+    },
+    {
+      "id": "fresh_thyme",
+      "name": "branches de thym frais",
+      "quantity": 2.0,
+      "unit": "branches",
+      "category": "produce",
+      "preparation": "whole",
+      "notes": "or 1 tsp dried thyme",
+      "optional": false
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "peeled, cut into chunks",
+      "notes": "medium-sized",
+      "optional": false
+    },
+    {
+      "id": "onions",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "peeled, quartered",
+      "notes": "yellow or white onions",
+      "optional": false
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "unsalted recommended",
+      "optional": false
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "all-purpose flour",
+      "optional": false
+    },
+    {
+      "id": "liquid_cream",
+      "name": "crème liquide",
+      "quantity": 20.0,
+      "unit": "cl",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "heavy cream or whipping cream",
+      "optional": false
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "to taste",
+      "optional": false
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "to taste",
+      "optional": false
+    }
+  ],
+  "tools": [
+    "large dutch oven or faitout",
+    "whisk",
+    "slotted spoon",
+    "bowl for whipped cream"
+  ],
+  "steps": [
+    {
+      "id": "step_1",
+      "action": "In a large dutch oven, blanch the veal starting with cold water. Add the veal chunks to the pot with cold water.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "veal",
+        "water"
+      ],
+      "produces": "blanched_veal",
+      "requires": [],
+      "visualCue": "veal turns pale and impurities rise to surface"
+    },
+    {
+      "id": "step_2",
+      "action": "Drain the blanched veal and return it to the cleaned pot. Add the carrots, onions, fresh thyme, salt, and pepper.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blanched_veal",
+        "carrots",
+        "onions",
+        "fresh_thyme",
+        "salt",
+        "pepper"
+      ],
+      "produces": "veal_with_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "step_3",
+      "action": "Add enough fresh water to cover the ingredients (approximately 2-3 liters). Bring to a simmer, then reduce heat to low and cook for 1 hour 30 minutes.",
+      "duration": "PT1H30M",
+      "temperature": 85,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "water"
+      ],
+      "produces": "cooked_veal_stew",
+      "requires": [],
+      "visualCue": "veal is tender and vegetables are cooked through"
+    },
+    {
+      "id": "step_4",
+      "action": "While the stew is cooking, make a roux by melting the butter in a saucepan over medium heat. Add the flour and cook, stirring constantly, for 2-3 minutes until the mixture is pale golden.",
+      "duration": "PT3M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "butter",
+        "flour"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": "mixture is smooth and pale golden"
+    },
+    {
+      "id": "step_5",
+      "action": "Remove the cooked veal and vegetables from the pot using a slotted spoon, reserving the cooking liquid. Gradually whisk the hot cooking broth into the roux to create a smooth velouté sauce.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "roux"
+      ],
+      "produces": "veloute_sauce",
+      "requires": [
+        "cooked_veal_stew"
+      ],
+      "visualCue": "sauce thickens to coating consistency"
+    },
+    {
+      "id": "step_6",
+      "action": "Whip the liquid cream until it forms soft peaks.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "liquid_cream"
+      ],
+      "produces": "whipped_cream",
+      "requires": [],
+      "visualCue": "cream holds soft peaks"
+    },
+    {
+      "id": "step_7",
+      "action": "Gently fold the whipped cream into the velouté sauce. Return the cooked veal and vegetables to the sauce and heat through gently without boiling.",
+      "duration": "PT5M",
+      "temperature": 70,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "veloute_sauce",
+        "whipped_cream",
+        "cooked_veal_stew"
+      ],
+      "produces": "finished_blanquette",
+      "requires": [],
+      "visualCue": "sauce is creamy and veal is heated through"
+    }
+  ],
+  "finalState": "finished_blanquette",
+  "originalText": "Blanquette de veau\nPhilippe Etchebest\n\n1 kg de veau (épaule, collier)\n3 L d'eau\n2 branches de thym frais\n4 carottes\n2 oignons\n60 g de beurre\n60 g de farine\n20 cl de crème liquide\nSel, poivre\n\nPréparation :\nDans un faitout, blanchir le veau départ eau froide.\nAjouter les légumes, thym, sel et poivre.\nLaisser cuire 1h30 à feu doux.\nFaire un roux avec beurre et farine.\nIncorporer le bouillon pour lier la sauce.\nAjouter la crème fouettée."
+}

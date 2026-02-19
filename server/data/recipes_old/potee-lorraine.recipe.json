@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "title": "Potée lorraine",
+    "description": "Un plat traditionnel lorrain à base de saucisse de Morteau, lard fumé et légumes d'hiver, mijoté longuement pour un bouillon riche et parfumé.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT3H30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "potée",
+      "lorraine",
+      "hiver",
+      "mijoté",
+      "chou",
+      "saucisse"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Servir avec du gros sel et de la moutarde de Dijon."
+    ],
+    "slug": "potee-lorraine",
+    "originalContent": "potée lorraine\n\n\nIngrédients :\n\n1 saucisse de Morteau à cuire\n1 tranche de lard fumée\n1 oignon\n4 carottes\n1 ou 2 poireaux\n2 ou 3 navets\n1 gousse d’ail\n3 ou 4 pommes de terre\n1 panais\n1 demi ou quart de chou\nClous de girofle\nThym, laurier\nGros sel\nPoivre en grains\n\nPréparation :\nÉplucher l’oignon puis y planter les clous de girofle\nDans un faitout assez haut ou une marmite en fonte, départ eau froide (3 litres d’eau environ), plonger la saucisse et le lard, le bouquet garni (thym, laurier), l’oignon et la gousses d’ail dégermée\nAjouter le gros sel et les grains de poivre et laisser cuire 2h\nN.B. : il ne faut pas qu’il y ait une grosse ébullition, juste laisser frémir\nÉplucher et découper les navets en gros quartiers, éplucher les carottes\nAjouter les navets et les carottes au bouillon\nLaisser cuire encore 1h\nCouper l’extrémité des poireaux pour enlever la terre puis les ajouter au bouillon, le chou, le panais et les pommes de terre\nLaisser cuire encore 30 min\nServir avec du gros sel et de la moutarde de Dijon\n\nMain recipe image: temp_image_recipe-gen-20260208054215-12d57303.png",
+    "createdAt": "2026-02-08T05:43:09.918379",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 249.0,
+    "totalCookingTime": 39.0,
+    "sourceImageUrl": "potee-lorraine.png",
+    "image": "images/potee-lorraine.png",
+    "nutritionPerServing": {
+      "calories": 296.5,
+      "protein": 7.8,
+      "fat": 0.9,
+      "carbs": 68.0,
+      "fiber": 10.2,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ],
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "saucisse_morteau",
+      "name": "saucisse de Morteau à cuire",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Morteau sausage"
+    },
+    {
+      "id": "lard_fume",
+      "name": "tranche de lard fumée",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Smoked bacon slice"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "poireaux",
+      "name": "poireaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "1 ou 2",
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "navets",
+      "name": "navets",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "2 ou 3",
+      "optional": false,
+      "name_en": "turnips"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "dégermée",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "pommes_de_terre",
+      "name": "pommes de terre",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "3 ou 4",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "panais",
+      "name": "panais",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Parsnip"
+    },
+    {
+      "id": "chou",
+      "name": "chou",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "demi ou quart",
+      "optional": false,
+      "name_en": "cabbage"
+    },
+    {
+      "id": "clous_girofle",
+      "name": "clous de girofle",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "laurier",
+      "name": "laurier",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "gros_sel",
+      "name": "gros sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "poivre_grains",
+      "name": "poivre en grains",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "peppercorns"
+    }
+  ],
+  "tools": [
+    "faitout assez haut ou marmite en fonte"
+  ],
+  "steps": [
+    {
+      "id": "preparer_oignon",
+      "action": "Éplucher l'oignon puis y planter les clous de girofle.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "oignon",
+        "clous_girofle"
+      ],
+      "produces": "oignon_aux_clous",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "demarrer_bouillon",
+      "action": "Dans un faitout assez haut ou une marmite en fonte, départ eau froide (3 litres d'eau environ), plonger la saucisse et le lard, le bouquet garni (thym, laurier), l'oignon aux clous et la gousse d'ail dégermée.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "saucisse_morteau",
+        "lard_fume",
+        "thym",
+        "laurier",
+        "oignon_aux_clous",
+        "ail"
+      ],
+      "produces": "bouillon_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner_bouillon",
+      "action": "Ajouter le gros sel et les grains de poivre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "gros_sel",
+        "poivre_grains"
+      ],
+      "produces": "bouillon_assaisonne",
+      "requires": [
+        "bouillon_base"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_viandes",
+      "action": "Laisser cuire 2 heures à frémissement (pas de grosse ébullition).",
+      "duration": "PT2H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "bouillon_assaisonne"
+      ],
+      "produces": "bouillon_viandes_cuites",
+      "requires": [],
+      "visualCue": "frémissement léger"
+    },
+    {
+      "id": "preparer_navets_carottes",
+      "action": "Éplucher et découper les navets en gros quartiers, éplucher les carottes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "legumes",
+      "uses": [
+        "navets",
+        "carottes"
+      ],
+      "produces": "navets_carottes_prets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_navets_carottes",
+      "action": "Ajouter les navets et les carottes au bouillon.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "navets_carottes_prets"
+      ],
+      "produces": "bouillon_avec_navets_carottes",
+      "requires": [
+        "bouillon_viandes_cuites"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_navets_carottes",
+      "action": "Laisser cuire encore 1 heure.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "bouillon_avec_navets_carottes"
+      ],
+      "produces": "bouillon_navets_carottes_cuits",
+      "requires": [],
+      "visualCue": "légumes tendres"
+    },
+    {
+      "id": "preparer_autres_legumes",
+      "action": "Couper l'extrémité des poireaux pour enlever la terre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "legumes",
+      "uses": [
+        "poireaux"
+      ],
+      "produces": "poireaux_prets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_autres_legumes",
+      "action": "Ajouter les poireaux, le chou, le panais et les pommes de terre au bouillon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "poireaux_prets",
+        "chou",
+        "panais",
+        "pommes_de_terre"
+      ],
+      "produces": "bouillon_complet",
+      "requires": [
+        "bouillon_navets_carottes_cuits"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_final",
+      "action": "Laisser cuire encore 30 minutes.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "bouillon_complet"
+      ],
+      "produces": "potee_cuite",
+      "requires": [],
+      "visualCue": "tous les légumes tendres"
+    },
+    {
+      "id": "servir",
+      "action": "Servir avec du gros sel et de la moutarde de Dijon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "potee_cuite"
+      ],
+      "produces": "potee_lorraine_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "potee_lorraine_servie",
+  "originalText": "potée lorraine\n\n\nIngrédients :\n\n1 saucisse de Morteau à cuire\n1 tranche de lard fumée\n1 oignon\n4 carottes\n1 ou 2 poireaux\n2 ou 3 navets\n1 gousse d’ail\n3 ou 4 pommes de terre\n1 panais\n1 demi ou quart de chou\nClous de girofle\nThym, laurier\nGros sel\nPoivre en grains\n\nPréparation :\nÉplucher l’oignon puis y planter les clous de girofle\nDans un faitout assez haut ou une marmite en fonte, départ eau froide (3 litres d’eau environ), plonger la saucisse et le lard, le bouquet garni (thym, laurier), l’oignon et la gousses d’ail dégermée\nAjouter le gros sel et les grains de poivre et laisser cuire 2h\nN.B. : il ne faut pas qu’il y ait une grosse ébullition, juste laisser frémir\nÉplucher et découper les navets en gros quartiers, éplucher les carottes\nAjouter les navets et les carottes au bouillon\nLaisser cuire encore 1h\nCouper l’extrémité des poireaux pour enlever la terre puis les ajouter au bouillon, le chou, le panais et les pommes de terre\nLaisser cuire encore 30 min\nServir avec du gros sel et de la moutarde de Dijon\n\nMain recipe image: temp_image_recipe-gen-20260208054215-12d57303.png",
+  "totalCookingTime": 39.0
+}

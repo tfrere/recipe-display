@@ -1,0 +1,593 @@
+{
+  "metadata": {
+    "title": "Pierogies Feta Epinards",
+    "description": "Voici une recette que j'avais envie de faire depuis un long moment : les Pierogies Feta Epinards !",
+    "servings": 15,
+    "prepTime": "PT45M",
+    "cookTime": "PT20M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "dumpling",
+      "gyozas",
+      "petit chausson",
+      "pierogies",
+      "\u00e9pinards",
+      "feta"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Pierogies-feta-epinards-2-of-5.jpg",
+    "nationality": "polonaise (inspiration)",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "A servir chaud ou froid !",
+      "On peut les cuire \u00e0 la po\u00eale ou les faire bouillir."
+    ],
+    "slug": "pierogies-feta-epinards",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Pierogies-feta-epinards-2-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/22/pierogies-feta-epinards/",
+    "image": "images/pierogies-feta-epinards.webp",
+    "createdAt": "2026-02-09T21:38:49.779692",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 44.0,
+    "totalCookingTime": 29.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 119.9,
+      "protein": 3.2,
+      "fat": 6.8,
+      "carbs": 11.4,
+      "fiber": 0.6,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 12,
+      "totalIngredients": 14,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine_t80",
+      "name": "farine T80",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "type 80 flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "eau_chaude",
+      "name": "eau chaude",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hot water"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "huile_dolive_2",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "epinards_surgeles",
+      "name": "\u00e9pinards surgel\u00e9s",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "d\u00e9congel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "frozen spinach"
+    },
+    {
+      "id": "aneth_seche",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "menthe_sechee",
+      "name": "menthe s\u00e9ch\u00e9e",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried mint"
+    },
+    {
+      "id": "sel_2",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "yaourt",
+      "name": "yaourt",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yogurt"
+    },
+    {
+      "id": "aneth_seche_2",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "menthe_sechee_2",
+      "name": "menthe s\u00e9ch\u00e9e",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried mint"
+    },
+    {
+      "id": "ail_semoule",
+      "name": "ail semoule",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "jus_de_citron",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "sel_3",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_2",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "robot p\u00e2tissier (optionnel)",
+    "rouleau \u00e0 p\u00e2tisserie",
+    "emporte-pi\u00e8ce (ou bol) de 8.5cm de diam\u00e8tre"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "Dans un bol, m\u00e9langer la farine et le sel. Ajouter l'huile et l'eau chaude tout en p\u00e9trissant avec les mains (ou votre robot p\u00e2tissier). P\u00e9trir jusqu'\u00e0 obtenir une boule bien lisse et homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "farine_t80",
+        "sel",
+        "huile_dolive",
+        "eau_chaude"
+      ],
+      "produces": "pate_fraiche",
+      "requires": [],
+      "visualCue": "boule bien lisse et homog\u00e8ne"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server la p\u00e2te au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_fraiche"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sortir_pate",
+      "action": "Sortir la p\u00e2te une quinzaine de minutes avant de l'\u00e9taler.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_pret_a_etaler",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_oignon",
+      "action": "\u00c9mincer finement l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignon"
+      ],
+      "produces": "oignon_emince",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_oignon",
+      "action": "Le faire revenir \u00e0 feu moyen-fort dans l'huile d'olive pendant 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignon_emince",
+        "huile_dolive_2"
+      ],
+      "produces": "oignon_revenu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_epinards_epices",
+      "action": "Ajouter les \u00e9pinards d\u00e9congel\u00e9s, l'aneth, la menthe, le sel et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignon_revenu",
+        "epinards_surgeles",
+        "aneth_seche",
+        "menthe_sechee",
+        "sel_2",
+        "poivre"
+      ],
+      "produces": "melange_epinards",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_epinards",
+      "action": "Faire revenir encore 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "melange_epinards"
+      ],
+      "produces": "epinards_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transferer_bol",
+      "action": "Retirer du feu et transf\u00e9rer dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "epinards_cuits"
+      ],
+      "produces": "epinards_dans_bol",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_oeuf_feta",
+      "action": "Battre un \u0153uf et \u00e9mietter la feta. Les ajouter au bol et bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "epinards_dans_bol",
+        "oeuf",
+        "feta"
+      ],
+      "produces": "garniture_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "Etaler la p\u00e2te \u00e0 l'aide d'un rouleau \u00e0 p\u00e2tisserie. Elle doit faire 2-3mm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pate_pret_a_etaler"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "2-3mm d'\u00e9paisseur"
+    },
+    {
+      "id": "couper_cercles",
+      "action": "Couper des cercles d'environ 8.5cm de diam\u00e8tre (\u00e0 l'aide d'un bol ou d'un emporte pi\u00e8ce).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "cercles_de_pate",
+      "requires": [],
+      "visualCue": "8.5cm de diam\u00e8tre"
+    },
+    {
+      "id": "deposer_garniture",
+      "action": "D\u00e9poser une belle c\u00e0s de garniture au centre des cercles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cercles_de_pate",
+        "garniture_complete"
+      ],
+      "produces": "cercles_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "replier_sceller",
+      "action": "Replier en deux et sceller les bords en pin\u00e7ant avec vos doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cercles_avec_garniture"
+      ],
+      "produces": "pierogies_crus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_vagues",
+      "action": "Vous pouvez faire des petites vagues pour que ce soit plus joli en pin\u00e7ant les bords avec 2 doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pierogies_crus"
+      ],
+      "produces": "pierogies_formes",
+      "requires": [],
+      "visualCue": "petites vagues"
+    },
+    {
+      "id": "melanger_sauce",
+      "action": "M\u00e9langer tous les ingr\u00e9dients (yaourt, aneth, menthe, ail semoule, jus de citron, sel, poivre). Go\u00fbter et ajuster.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "yaourt",
+        "aneth_seche_2",
+        "menthe_sechee_2",
+        "ail_semoule",
+        "jus_de_citron",
+        "sel_3",
+        "poivre_2"
+      ],
+      "produces": "sauce_yaourt",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_poele",
+      "action": "Pour une cuisson \u00e0 la po\u00eale, faire chauffer une po\u00eale avec un peu d'huile \u00e0 feu moyen-fort. D\u00e9poser les pierogies et les retourner quand ils commencent \u00e0 dorer (environ 5min de chaque c\u00f4t\u00e9).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "pierogies_formes"
+      ],
+      "produces": "pierogies_cuits_poele",
+      "requires": [],
+      "visualCue": "dor\u00e9s"
+    },
+    {
+      "id": "cuire_eau",
+      "action": "Pour une cuisson \u00e0 l'eau bouillante, porter une casserole d'eau \u00e0 \u00e9bullition. Y d\u00e9poser les pierogies. Quand ils remontent \u00e0 la surface c'est qu'ils sont cuits (environ 5min).",
+      "duration": "PT5M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "pierogies_formes"
+      ],
+      "produces": "pierogies_cuits_eau",
+      "requires": [],
+      "visualCue": "remontent \u00e0 la surface"
+    },
+    {
+      "id": "servir_avec_sauce",
+      "action": "Servir les pierogies cuits avec la sauce yaourt.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "pierogies_cuits_poele",
+        "pierogies_cuits_eau",
+        "sauce_yaourt"
+      ],
+      "produces": "pierogies_avec_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pierogies_avec_sauce",
+  "originalText": "Pierogies Feta Epinards - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 septembre 2022\nPierogies Feta Epinards\nVoici une recette que j\u2019avais envie de faire depuis un long moment : les Pierogies Feta Epinards !\nPour tout vous raconter. Quand j\u2019\u00e9tais encore \u00e9tudiante, j\u2019\u00e9tais partie en Australie faire un stage de fin d\u2019ann\u00e9e. En l\u2019occurrence, nous \u00e9tions parties \u00e0 deux. Moi et Kristina. Une camarade de classe d\u2019origine Russe !\nNous vivions dans une grande coloc pleine de jeunes de toutes les nationalit\u00e9s. Et comme souvent, on se retrouvaient dans la cuisine. Pour partager des recettes. Et c\u2019est \u00e0 ce moment que Kristina m\u2019a fait d\u00e9couvrir les pelminis. Ce sont des petits dumplings russes, fourr\u00e9s g\u00e9n\u00e9ralement avec de la viande hach\u00e9e et des champignons.\nPelminis ? Rien \u00e0 voir avec Pierogies. A part que \u00e7a commence et finit pareil. Pas faux !\nJ\u2019avais ador\u00e9 les pr\u00e9parer avec elle. J\u2019en ai refait pendant quelque temps en rentrant en France. Puis ils sont sortis de ma t\u00eate.\nEt va savoir pourquoi, j\u2019y ai repens\u00e9 il y a quelque temps. Et impossible de me rappeler du nom de ces petites merveilles. En cherchant sur internet, je suis tomb\u00e9e sur les pierogies. Qui eux, sont d\u2019origine polonaise.\nEt j\u2019ai confondu !! Soyons honn\u00eates !\nJe me suis donc entra\u00een\u00e9e pour faire cette recette. J\u2019ai compl\u00e8tement chang\u00e9 la garniture traditionnelle des pierogies. Qui est plut\u00f4t compos\u00e9e de pomme de terre et de fromage normalement. Je me suis inspir\u00e9e de\nla spanakopita\npour la garniture. En la simplifiant un peu.\nEt puis l\u2019autre jour je discutais avec Kristina, et elle m\u2019a dit qu\u2019elle ne faisait pas de pierogies, mais des Pelminis\u2026 Du coup\u2026 Bin vous allez bient\u00f4t voir appara\u00eetre des pelminis sur le blog ! En attendant, voici les Pierogies Feta Epinards !\nPierogies Feta Epinards\n4.54\n/5 avec\n114\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n1\nheure\nh\nTemps de cuisson\n20\nminutes\nmin\nPortions\n15\npierogies\nIngr\u00e9dients\n1x\n2x\n3x\nPour la p\u00e2te\n160\ng\nde farine T80\n1\npinc\u00e9e de sel\n2\nc\u00e0s d\u2019huile d\u2019olive\n80\nml\nd\u2019eau chaude\nPour la garniture\n1\noignon\n2\nc\u00e0s d\u2019huile d\u2019olive\n200\ng\nd\u2019\u00e9pinards surgel\u00e9s ou 2 grosses poign\u00e9es d\u2019\u00e9pinards frais\n\u00bd\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\n\u00bd\nc\u00e0c de menthe s\u00e9ch\u00e9e\nsel\npoivre\n1\noeuf\n100\ng\nde feta\nPour la sauce\n150\ng\nde yaourt\n\u00bc\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\n\u00bc\nc\u00e0c de menthe s\u00e9ch\u00e9e\n\u00bc\nc\u00e0c d\u2019ail semoule\n1\nc\u00e0c de jus de citron\nsel\npoivre\nInstructions\nPour la p\u00e2te\nDans un bol, m\u00e9langer la farine et le sel. Ajouter l\u2019huile et l\u2019eau chaude tout en p\u00e9trissant avec les mains (ou votre robot p\u00e2tissier). P\u00e9trir jusqu\u2019\u00e0 obtenir une boule bien lisse et homog\u00e8ne.\nR\u00e9server au frais. Sortir la p\u00e2te une quinzaine de minutes avant de l\u2019\u00e9taler.\nPour la garniture\n\u00c9mincer finement l\u2019oignon.\nLe faire revenir \u00e0 feu moyen fort dans l\u2019huile d\u2019olive 7-8 minutes.\nAjouter les \u00e9pinards d\u00e9congel\u00e9s et les herbes, sel et poivre.\nFaire revenir encore 7-8min.\nRetirer du feu et transf\u00e9rer dans un bol\nBattre un \u0153uf et \u00e9mietter la feta. Les ajouter au bol et bien m\u00e9langer.\nPour faire les pierogies\nEtaler la p\u00e2te \u00e0 l\u2019aide d\u2019un rouleau \u00e0 p\u00e2tisserie. Elle doit faire 2-3mm d\u2019\u00e9paisseur.\nCouper des cercles d\u2019environ 8.5cm de diam\u00e8tre (\u00e0 l\u2019aide d\u2019un bol ou d\u2019un emporte pi\u00e8ce).\nD\u00e9poser une belle c\u00e0s de garniture au centre des cercles.\nReplier en deux et sceller les bords en pin\u00e7ant avec vos doigts.\nVous pouvez faire des petites vagues pour que ce soit plus joli en pin\u00e7ant les bords avec 2 doigts.\nCuisson des pierogies\nJ\u2019ai cuit ces pierogies \u00e0 la po\u00eale. On peut aussi les faire bouillir.\nPour une cuisson \u00e0 la po\u00eale, faire chauffer une po\u00eale avec un peu d\u2019huile \u00e0 feu moyen-fort.\nD\u00e9poser les pierogies et les retourner quand ils commencent \u00e0 dorer (env 5min de chaque c\u00f4t\u00e9).\nPour une cuisson \u00e0 l\u2019eau bouillante, porter une casserole d\u2019eau \u00e0 \u00e9bullition. Y d\u00e9poser les pierogies. Quand ils remontent \u00e0 la surface c\u2019est qu\u2019ils sont cuits.\nPour la sauce\nM\u00e9langer tous les ingr\u00e9dients. Go\u00fbter et ajuster.\nA servir chaud ou froid !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nEpinards\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\ndumpling\n,\ngyozas\n,\npetit chausson\n,\npierogies\nFeuillet\u00e9s de feta croustillants\nTofu aux Echalotes\n1 thought on \u201cPierogies Feta Epinards\u201d\nLadyMilonguera\ndit\u00a0:\n22 septembre 2022 \u00e0 12 h 04 min\nComme \u00e7a a l\u2019air sympathique\u2026\nchargement\u2026\nR\u00e9pondre\n4.54 from 114 votes (\n113 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 29.0
+}

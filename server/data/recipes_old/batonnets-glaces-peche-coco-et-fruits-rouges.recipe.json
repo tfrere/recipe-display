@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "title": "B\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges",
+    "description": "Ces b\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges sont la recette parfaite pour dire au revoir aux vacances ! Simples et bons ces petits B\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges !",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "glace",
+      "\u00e9t\u00e9",
+      "p\u00eache",
+      "fruits rouges",
+      "coco",
+      "v\u00e9g\u00e9talien",
+      "sans cuisson"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/popsicle-peche-fruit-rouge-6-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour les p\u00eaches, l'auteur utilise des p\u00eaches trop m\u00fbres congel\u00e9es.",
+      "Pour les fruits rouges, l'auteur utilise souvent des fruits surgel\u00e9s achet\u00e9s en supermarch\u00e9.",
+      "Passer \u00e9ventuellement le moule sous l'eau chaude si les b\u00e2tonnets sont difficiles \u00e0 d\u00e9mouler."
+    ],
+    "slug": "batonnets-glaces-peche-coco-et-fruits-rouges",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/popsicle-peche-fruit-rouge-6-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/01/batonnets-glaces-peche-coco-et-fruits-rouges/",
+    "image": "images/batonnets-glaces-peche-coco-et-fruits-rouges.webp",
+    "createdAt": "2026-02-09T21:29:33.385995",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 720.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 337.1,
+      "protein": 3.2,
+      "fat": 19.4,
+      "carbs": 39.2,
+      "fiber": 6.2,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "coconut_cream",
+      "name": "cr\u00e8me de coco",
+      "quantity": 330.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "utilis\u00e9e en trois portions de 110 ml",
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "peach",
+      "name": "p\u00eache",
+      "quantity": 240.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "congel\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "peach"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "utilis\u00e9 en trois portions de 1 c\u00e0s",
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "starch",
+      "name": "f\u00e9cule",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "utilis\u00e9e en trois portions de \u00bd c\u00e0c",
+      "optional": false,
+      "name_en": "Starch"
+    },
+    {
+      "id": "red_fruits",
+      "name": "fruits rouges",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "surgel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "red berries"
+    }
+  ],
+  "tools": [
+    "Blender",
+    "Moules \u00e0 glace (avec b\u00e2tonnets)",
+    "R\u00e9cipient avec bec verseur"
+  ],
+  "steps": [
+    {
+      "id": "mix_peach_part",
+      "action": "Verser 110 ml de cr\u00e8me de coco, 240 g de p\u00eache congel\u00e9e, 1 c\u00e0s de sirop d'\u00e9rable et \u00bd c\u00e0c de f\u00e9cule dans le blender et mixer jusqu'\u00e0 obtenir une consistance homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "partie_peche",
+      "uses": [
+        "coconut_cream",
+        "peach",
+        "maple_syrup",
+        "starch"
+      ],
+      "produces": "puree_peche",
+      "requires": [],
+      "visualCue": "consistance homog\u00e8ne"
+    },
+    {
+      "id": "reserve_peach",
+      "action": "R\u00e9server dans un r\u00e9cipient, id\u00e9alement avec un bec verseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "partie_peche",
+      "uses": [
+        "puree_peche"
+      ],
+      "produces": "puree_peche_reservee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_red_fruits_part",
+      "action": "Verser 110 ml de cr\u00e8me de coco, 200 g de fruits rouges surgel\u00e9s, 1 c\u00e0s de sirop d'\u00e9rable et \u00bd c\u00e0c de f\u00e9cule dans le blender et mixer jusqu'\u00e0 obtenir une consistance homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "partie_fruits_rouges",
+      "uses": [
+        "coconut_cream",
+        "red_fruits",
+        "maple_syrup",
+        "starch"
+      ],
+      "produces": "puree_fruits_rouges",
+      "requires": [],
+      "visualCue": "consistance homog\u00e8ne"
+    },
+    {
+      "id": "reserve_red_fruits",
+      "action": "R\u00e9server dans un r\u00e9cipient, id\u00e9alement avec un bec verseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "partie_fruits_rouges",
+      "uses": [
+        "puree_fruits_rouges"
+      ],
+      "produces": "puree_fruits_rouges_reservee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_coconut_part",
+      "action": "Verser 110 ml de cr\u00e8me de coco, 1 c\u00e0s de sirop d'\u00e9rable et \u00bd c\u00e0c de f\u00e9cule dans le blender et mixer jusqu'\u00e0 obtenir une consistance homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "partie_coco",
+      "uses": [
+        "coconut_cream",
+        "maple_syrup",
+        "starch"
+      ],
+      "produces": "puree_coco",
+      "requires": [],
+      "visualCue": "consistance homog\u00e8ne"
+    },
+    {
+      "id": "reserve_coconut",
+      "action": "R\u00e9server dans un r\u00e9cipient, id\u00e9alement avec un bec verseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "partie_coco",
+      "uses": [
+        "puree_coco"
+      ],
+      "produces": "puree_coco_reservee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pour_molds",
+      "action": "Verser dans les moules \u00e0 glace en alternant les couleurs des trois pr\u00e9parations.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_congelation",
+      "uses": [
+        "puree_peche_reservee",
+        "puree_fruits_rouges_reservee",
+        "puree_coco_reservee"
+      ],
+      "produces": "moules_remplis",
+      "requires": [],
+      "visualCue": "alternance des couleurs"
+    },
+    {
+      "id": "insert_sticks",
+      "action": "Enfoncer les b\u00e2tonnets dans les moules.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_congelation",
+      "uses": [
+        "moules_remplis"
+      ],
+      "produces": "moules_avec_batonnets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze",
+      "action": "Placer les moules au cong\u00e9lateur pendant 12h ou plus.",
+      "duration": "PT12H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage_congelation",
+      "uses": [
+        "moules_avec_batonnets"
+      ],
+      "produces": "batonnets_glaces",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "batonnets_glaces",
+  "originalText": "B\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 septembre 2022\nB\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges\nAller \u00e0 la recette\nCes b\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges sont la recette parfaite pour dire au revoir aux vacances !\nCet \u00e9t\u00e9, avec les canicules \u00e0 r\u00e9p\u00e9tition, je me suis d\u00e9couvert une passion pour tout ce qui est glac\u00e9 !\nTout a commenc\u00e9 avec\nle grand retour des caf\u00e9s frapp\u00e9s\ndans ma vie. Puis, l\u2019arriv\u00e9e des b\u00e2tonnets glac\u00e9s. A commencer par\nceux-ci aux fruits rouges et pur\u00e9e d\u2019amande\n.\nEt pour cette recette j\u2019ai eu envie d\u2019aller un peu plus loin. A la fois dans le visuel. Parce qu\u2019un des plaisirs de la cuisine, c\u2019est aussi de faire de jolies choses ! Donc ce marbr\u00e9 de couleurs me plait bien !\nEt aussi d\u2019un point de vue gustatif ! J\u2019avais envie de mettre en avant les rois de l\u2019\u00e9t\u00e9 ! Ces fruits qui nous r\u00e9galent pendant ces chaudes journ\u00e9es ! J\u2019ai nomm\u00e9 en premier lieu la p\u00eache ! Et en second lieu les fruits rouges !\nPour les p\u00eaches, j\u2019ai congel\u00e9 des p\u00eaches trop m\u00fbres, que j\u2019allais perdre. Je fais souvent cela avec les fruits. \u00c7a fonctionne \u00e0 merveille pour les bananes. Pour faire des\nnice creams\nou des\nbanana breads\n. Et pour les fruits rouges, j\u2019utilise souvent des fruits surgel\u00e9s achet\u00e9s en supermarch\u00e9. Je trouve cela pratique et je les utilise pour pas mal de pr\u00e9parations diff\u00e9rentes !\nBref, ensuite j\u2019ai utilis\u00e9 du lait de coco. Juste parce que j\u2019adore \u00e7a ! Et voil\u00e0 !\nSimples et bons ces petits B\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges !\nB\u00e2tonnets glac\u00e9s p\u00eache, coco et fruits rouges\n4.48\n/5 avec\n68\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nPortions\n6\nb\u00e2tonnets\nIngr\u00e9dients\n1x\n2x\n3x\nPour la partie \u00e0 la p\u00eache\n110\nml\nde cr\u00e8me de coco\n240\ng\nde p\u00eache congel\u00e9e\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n\u00bd\nc\u00e0c de f\u00e9cule\nPour la partie aux fruits rouges\n110\nml\nde cr\u00e8me de coco\n200\ng\nde fruits rouges surgel\u00e9s\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n\u00bd\nc\u00e0c de f\u00e9cule\nPour la partie \u00e0 la coco\n110\nml\nde cr\u00e8me de coco\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n\u00bd\nc\u00e0c de f\u00e9cule\nInstructions\nVerser les ingr\u00e9dients de la premi\u00e8re partie dans le blender et mixer jusqu\u2019\u00e0 obtenir une consistance homog\u00e8ne.\nR\u00e9server dans un r\u00e9cipient, id\u00e9alement avec un bec verseur.\nRecommencer pour les 2 autres parties.\nVerser dans vos moules \u00e0 glace en alternant les couches.\nEnfoncer les b\u00e2tonnets et placer au cong\u00e9lateur pendant une demi-journ\u00e9e ou plus.\nPasser \u00e9ventuellement le moule sous l\u2019eau chaude si les b\u00e2tonnets sont difficiles \u00e0 d\u00e9mouler.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nGlaces\n,\nRecettes Sucr\u00e9es\nTags:\nglace\nPain complet \u00e0 l\u2019avoine et graines de tournesol\nSauce b\u00e9arnaise facile au blender\n1 thought on \u201cB\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges\u201d\nLadyMilonguera\ndit\u00a0:\n1 septembre 2022 \u00e0 15 h 24 min\nSuperbes ces b\u00e2tonnets glac\u00e9s !\nchargement\u2026\nR\u00e9pondre\n4.48 from 68 votes (\n67 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

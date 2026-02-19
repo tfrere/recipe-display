@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "title": "Soupe froide Courgettes, Petits Pois et Granola",
+    "description": "Et si on se faisait une petite soupe froide de courgettes et petits pois avec son granola croustillant ce soir ? Cette soupe froide de saison est parfaite !",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "granola sal\u00e9",
+      "soupe froide",
+      "soupe petit pois",
+      "Courgette",
+      "Petits Pois",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Soupe-courgettes-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le granola de pain est id\u00e9al pour utiliser les restes de pain dur ! En plus, il se conserve plusieurs semaines dans un bocal ferm\u00e9.",
+      "Pour varier les plaisirs, je vous conseille notre soupe de concombre \u00e0 la f\u00eata !"
+    ],
+    "slug": "soupe-froide-courgettes-petits-pois-et-granola",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Soupe-courgettes-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/10/soupe-froide-de-courgettes-et-petits-pois-et-granola-croustillant/",
+    "image": "images/soupe-froide-courgettes-petits-pois-et-granola.webp",
+    "createdAt": "2026-02-09T20:25:20.564193",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 158.0,
+    "totalCookingTime": 3.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 268.9,
+      "protein": 8.7,
+      "fat": 14.4,
+      "carbs": 28.4,
+      "fiber": 8.3,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 11,
+      "totalIngredients": 12,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onions",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "peas",
+      "name": "petits pois",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Peas"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.1,
+      "unit": "L",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "mint",
+      "name": "branches de menthe fra\u00eeche",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh mint sprigs"
+    },
+    {
+      "id": "quinoa_bread",
+      "name": "pain au quinoa",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "3 tranches",
+      "optional": false,
+      "name_en": "Quinoa bread"
+    },
+    {
+      "id": "fennel_seeds",
+      "name": "graines de fenouil",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fennel seeds"
+    },
+    {
+      "id": "seed_mix",
+      "name": "m\u00e9lange de graines et/ou noix",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "tournesol, courge, pignons\u2026",
+      "optional": false,
+      "name_en": "Seed and/or nut mix"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "olive_oil_granola",
+      "name": "huile d'olive",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini complet",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Four",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "chop_vegetables",
+      "action": "\u00c9mincez les oignons, les gousses d'ail et les courgettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "onions",
+        "garlic",
+        "zucchini"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faites revenir les oignons, l'ail et les courgettes \u00e9minc\u00e9s dans une casserole avec l'huile d'olive.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "chopped_vegetables",
+        "olive_oil"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_peas_and_simmer",
+      "action": "Ajoutez les petits pois, le thym, le sel, l'eau puis couvrez et laissez cuire \u00e0 petits bouillons une vingtaine de minutes (ou jusqu'\u00e0 ce que les courgettes soient tendres).",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "soupe",
+      "uses": [
+        "sauteed_vegetables",
+        "peas",
+        "thyme",
+        "salt",
+        "water"
+      ],
+      "produces": "cooked_soup_base",
+      "requires": [],
+      "visualCue": "courgettes tendres"
+    },
+    {
+      "id": "crumble_bread",
+      "action": "Dans un saladier, \u00e9miettez le pain en petits morceaux in\u00e9gaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "quinoa_bread"
+      ],
+      "produces": "crumbled_bread",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_granola_dry",
+      "action": "Ajoutez toutes les graines et la fleur de sel et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "crumbled_bread",
+        "fennel_seeds",
+        "seed_mix",
+        "fleur_de_sel"
+      ],
+      "produces": "dry_granola_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet_to_granola",
+      "action": "Ajoutez l'huile d'olive et le tahini et m\u00e9langez bien (avec les doigts si besoin).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "dry_granola_mix",
+        "olive_oil_granola",
+        "tahini"
+      ],
+      "produces": "wet_granola_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 160\u00b0C.",
+      "duration": null,
+      "temperature": 160,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "wet_granola_mix"
+      ],
+      "produces": "preheated_oven_with_granola",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_granola",
+      "action": "Versez le m\u00e9lange sur une plaque de cuisson couverte d'un papier cuisson et aplatissez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "wet_granola_mix"
+      ],
+      "produces": "spread_granola",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_granola",
+      "action": "Enfournez \u00e0 mi-hauteur pendant 15min.",
+      "duration": "PT15M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "granola",
+      "uses": [
+        "spread_granola"
+      ],
+      "produces": "baked_granola",
+      "requires": [
+        "preheated_oven_with_granola"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_granola",
+      "action": "Laissez refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "baked_granola"
+      ],
+      "produces": "cooled_granola",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_and_blend_soup",
+      "action": "Laissez refroidir la soupe, puis ajoutez les feuilles de menthe et mixez jusqu'\u00e0 obtenir une texture bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "cooked_soup_base",
+        "mint"
+      ],
+      "produces": "blended_soup",
+      "requires": [],
+      "visualCue": "texture bien lisse"
+    },
+    {
+      "id": "chill_soup",
+      "action": "R\u00e9servez au frais quelques heures avant de servir.",
+      "duration": "PT2H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "soupe",
+      "uses": [
+        "blended_soup"
+      ],
+      "produces": "chilled_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez la soupe bien froide avec le granola et quelques feuilles de menthe fra\u00eeche !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "chilled_soup",
+        "cooled_granola",
+        "mint"
+      ],
+      "produces": "soupe_froide_courgettes_pois_granola",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_froide_courgettes_pois_granola",
+  "originalText": "Soupe froide Courgettes, Petits Pois et Granola - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 juin 2021\nSoupe froide Courgettes, Petits Pois et Granola\nAller \u00e0 la recette\nEt si on se faisait une petite soupe froide de courgettes et petits pois avec son granola croustillant ce soir ?\nAvec la chaleur de la semaine, perso, je n\u2019ai qu\u2019une envie : manger quelque chose de l\u00e9ger et de frais !\nCette soupe froide de saison est parfaite ! Je l\u2019ai cr\u00e9\u00e9e pour le dernier num\u00e9ro d\u2019\nEsprit Veggie\n, qui sort tout juste en kiosque.\nOn y retrouve tout un tas de bons l\u00e9gumes et d\u2019herbes fra\u00eeches. Et par-dessus, un granola sal\u00e9, fait maison !\nJ\u2019adore le granola de pain \ud83d\ude42 C\u2019est id\u00e9al pour utiliser les restes de pain dur ! En plus, il se conserve plusieurs semaines dans un bocal ferm\u00e9.\u00a0Il se marie parfaitement \u00e0 cette Soupe froide de Courgettes et Petits Pois et Granola croustillant !\nEt si vous avez envie de varier les plaisirs, je vous conseille notre\nsoupe de concombre \u00e0 la f\u00eata\n! So good !\nSoupe froide de Courgettes et Petits Pois et Granola croustillant\nNatacha\n4.51\n/5 avec\n100\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la soupe\n2\noignons\nenv 140g\n4\ngousses d\u2019ail\n2\ncourgettes\nenv 500g\n2\nc\u00e0s d\u2019huile d\u2019olive\n300\ng\nde petits pois\n1\nbelle pinc\u00e9e de thym\nsel\n1,1\nL\nd\u2019eau\nou un peu plus\n5\nbranches de menthe fra\u00eeche\nPour le granola sal\u00e9\n100\ng\nde pain au quinoa\n3 tranches\n1\nc\u00e0c de graines de fenouil\n2\nc\u00e0s de m\u00e9lange de graines et/ou noix\ntournesol, courge, pignons\u2026\n1\npinc\u00e9e de fleur de sel\n\u00bd\nc\u00e0s d\u2019huile d\u2019olive\n1,5\nc\u00e0s de tahini complet\nInstructions\nPour la soupe\n\u00c9mincez les oignons, les gousses d\u2019ail et les courgettes et faites-les revenir dans une casserole avec l\u2019huile d\u2019olive pendant 2-3min.\nAjoutez les petits pois, le thym, le sel, l\u2019eau puis couvrez et laissez cuire \u00e0 petits bouillons une vingtaine (ou jusqu\u2019\u00e0 ce que les courgettes soient tendres).\nLaissez refroidir la soupe, puis ajoutez les feuilles de menthe et mixez jusqu\u2019\u00e0 obtenir une texture bien lisse. R\u00e9servez au frais quelques heures avant de servir.\nPour le granola\nPendant que la soupe cuit, pr\u00e9chauffez le four \u00e0 160\u00b0C.\nDans un saladier, \u00e9miettez le pain en petits morceaux in\u00e9gaux. Ajoutez toutes les graines et la fleur de sel et m\u00e9langez. Ajoutez l\u2019huile d\u2019olive et le tahini et m\u00e9langez bien (avec les doigts si besoin).\nVersez le m\u00e9lange sur une plaque de cuisson couverte d\u2019un papier cuisson et aplatissez bien.\nEnfournez \u00e0 mi-hauteur pendant 15min.\nLaissez refroidir.\nServez la soupe bien froide avec le granola et quelques feuilles de menthe fra\u00eeche !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCourgette\n,\nPetits Pois\n,\nPrintemps\n,\nSoupes\nTags:\ngranola sal\u00e9\n,\nsoupe froide\n,\nsoupe petit pois\nCupcakes Citron Meringu\u00e9s\nNaked Cake Fraises Chantilly Mascarpone\n1 thought on \u201cSoupe froide Courgettes, Petits Pois et Granola\u201d\nAnne\ndit\u00a0:\n29 juin 2021 \u00e0 19 h 52 min\nHmmm tellement bon ce granola de pain, \u00e7a va super bien avec cette soupe froide et \u00e7a ram\u00e8ne un p\u2019tit c\u00f4t\u00e9 gourmand et consistant!!!  Recette d\u00e9j\u00e0 faite 4 fois en 15 jours \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.51 from 100 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 3.0
+}

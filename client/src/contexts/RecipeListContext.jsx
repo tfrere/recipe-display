@@ -10,8 +10,10 @@ import React, {
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "./ThemeContext";
 import { useConstants } from "./ConstantsContext";
+import { usePantry } from "./PantryContext";
 import { getRecipes } from "../services/recipeService";
 import useLongPress, { PRIVATE_ACCESS_CHANGED } from "../hooks/useLongPress";
+import { getCurrentSeason } from "../utils/seasonUtils";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_ENDPOINT || "http://localhost:3001";
@@ -44,7 +46,7 @@ export const RecipeListProvider = ({ children }) => {
   const { constants } = useConstants();
   const sortByCategory = true;
   const { hasPrivateAccess, onPrivateAccessChange } = useLongPress();
-  const DEBUG = false; // Flag pour activer/désactiver les logs de débogage
+  const { getPantryMatchRatio, pantrySize } = usePantry();
   const seasonalRecipesOrder = useRef(new Map());
 
   // Attendre que les constantes soient chargées
@@ -59,11 +61,12 @@ export const RecipeListProvider = ({ children }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDiet, setSelectedDiet] = useState(null);
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
-  const [selectedSeason, setSelectedSeason] = useState(null);
+  const [selectedSeason, setSelectedSeason] = useState([]);
   const [selectedType, setSelectedType] = useState(null);
   const [selectedDishType, setSelectedDishType] = useState(null);
   const [isQuickOnly, setIsQuickOnly] = useState(false);
   const [isLowIngredientsOnly, setIsLowIngredientsOnly] = useState(false);
+  const [isPantrySort, setIsPantrySort] = useState(false);
   const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -75,11 +78,12 @@ export const RecipeListProvider = ({ children }) => {
 
       // Ajouter le traitement pour définir la propriété quick en fonction du temps total
       const processedData = data.map((recipe) => {
-        // Convertir totalTime en nombre si ce n'est pas déjà le cas
+        // Prefer DAG-computed totalTimeMinutes, fall back to legacy totalTime
         const totalTimeInMinutes =
-          typeof recipe.totalTime === "number"
+          recipe.metadata?.totalTimeMinutes ||
+          (typeof recipe.totalTime === "number"
             ? recipe.totalTime
-            : parseFloat(recipe.totalTime) || 0;
+            : parseFloat(recipe.totalTime) || 0);
 
         // Une recette est considérée rapide si elle prend 46 minutes ou moins
         return {
@@ -101,21 +105,11 @@ export const RecipeListProvider = ({ children }) => {
 
   // Écouter les changements d'état d'accès privé
   useEffect(() => {
-    console.log("[RecipeListContext] Setting up privateAccess change listener");
-    // S'abonner aux changements d'état d'accès privé
     const unsubscribe = onPrivateAccessChange((newValue) => {
-      console.log(
-        `[RecipeListContext] Private access changed to: ${newValue}, reloading recipes`
-      );
-      // Recharger les recettes lorsque l'état d'accès privé change
       fetchRecipes();
     });
 
-    // Se désabonner lorsque le composant est démonté
     return () => {
-      console.log(
-        "[RecipeListContext] Cleaning up privateAccess change listener"
-      );
       unsubscribe();
     };
   }, [onPrivateAccessChange, fetchRecipes]);
@@ -128,15 +122,6 @@ export const RecipeListProvider = ({ children }) => {
   const isLoading = useMemo(() => {
     return loadingState.recipes;
   }, [loadingState]);
-
-  // Déterminer la saison actuelle
-  const getCurrentSeason = () => {
-    const month = new Date().getMonth();
-    if (month >= 2 && month <= 4) return "spring";
-    if (month >= 5 && month <= 7) return "summer";
-    if (month >= 8 && month <= 10) return "autumn";
-    return "winter";
-  };
 
   // Convertisseurs de labels en IDs avec gestion de la casse
   const createLabelToIdMap = useMemo(
@@ -166,38 +151,20 @@ export const RecipeListProvider = ({ children }) => {
       (recipes, filters, excludeFilter = null) => {
         if (!recipes) return [];
 
-        if (DEBUG) {
-          console.log("Filtering recipes with:", {
-            filters,
-            excludeFilter,
-            recipesCount: recipes.length,
-          });
-        }
-
         return recipes.filter((recipe) => {
           // Filtre par régime si actif et non exclu
           if (filters.selectedDiet && excludeFilter !== "diet") {
             if (!recipe.diets?.includes(filters.selectedDiet)) {
-              if (DEBUG) {
-                console.log("Recipe filtered out by diet:", recipe.title, {
-                  recipeDiets: recipe.diets,
-                  selectedDiet: filters.selectedDiet,
-                });
-              }
               return false;
             }
           }
 
           // Filtre par saison si active et non exclue
-          if (filters.selectedSeason && excludeFilter !== "season") {
-            // Si la saison sélectionnée est dans la liste des saisons de la recette
-            if (!recipe.seasons?.includes(filters.selectedSeason)) {
-              if (DEBUG) {
-                console.log("Recipe filtered out by season:", recipe.title, {
-                  recipeSeasons: recipe.seasons,
-                  selectedSeason: filters.selectedSeason,
-                });
-              }
+          if (filters.selectedSeason?.length > 0 && excludeFilter !== "season") {
+            const seasons = Array.isArray(filters.selectedSeason)
+              ? filters.selectedSeason
+              : [filters.selectedSeason];
+            if (!seasons.some((s) => recipe.seasons?.includes(s))) {
               return false;
             }
           }
@@ -205,12 +172,6 @@ export const RecipeListProvider = ({ children }) => {
           // Filtre par type si actif et non exclu
           if (filters.selectedType && excludeFilter !== "type") {
             if (recipe.recipeType !== filters.selectedType) {
-              if (DEBUG) {
-                console.log("Recipe filtered out by type:", recipe.title, {
-                  recipeType: recipe.recipeType,
-                  selectedType: filters.selectedType,
-                });
-              }
               return false;
             }
           }
@@ -222,12 +183,6 @@ export const RecipeListProvider = ({ children }) => {
             !filters.selectedType
           ) {
             if (recipe.recipeType !== filters.selectedDishType) {
-              if (DEBUG) {
-                console.log("Recipe filtered out by dish type:", recipe.title, {
-                  recipeType: recipe.recipeType,
-                  selectedDishType: filters.selectedDishType,
-                });
-              }
               return false;
             }
           }
@@ -235,9 +190,6 @@ export const RecipeListProvider = ({ children }) => {
           // Filtre rapide si actif et non exclu
           if (filters.isQuickOnly && excludeFilter !== "quick") {
             if (!recipe.quick) {
-              if (DEBUG) {
-                console.log("Recipe filtered out by quick:", recipe.title);
-              }
               return false;
             }
           }
@@ -253,15 +205,6 @@ export const RecipeListProvider = ({ children }) => {
               : Object.keys(recipe.ingredients || {}).length;
 
             if (ingredientsCount >= 6) {
-              if (DEBUG) {
-                console.log(
-                  "Recipe filtered out by low ingredients:",
-                  recipe.title,
-                  {
-                    ingredientsCount,
-                  }
-                );
-              }
               return false;
             }
           }
@@ -307,12 +250,6 @@ export const RecipeListProvider = ({ children }) => {
                 description.includes(normalizedSearchTerm) ||
                 hasIngredient ||
                 hasNoteMatch;
-
-              if (!matches) {
-                if (DEBUG) {
-                  console.log("Recipe filtered out by search:", recipe.title);
-                }
-              }
 
               return matches;
             });
@@ -366,7 +303,7 @@ export const RecipeListProvider = ({ children }) => {
         const countForSeason =
           filterRecipes(
             [recipe],
-            { ...currentFilters, selectedSeason: null },
+            { ...currentFilters, selectedSeason: [] },
             "season"
           ).length > 0;
         const countForType =
@@ -455,6 +392,7 @@ export const RecipeListProvider = ({ children }) => {
       selectedDishType,
       isQuickOnly,
       isLowIngredientsOnly,
+      isPantrySort,
     }),
     [
       searchQuery,
@@ -465,31 +403,20 @@ export const RecipeListProvider = ({ children }) => {
       selectedDishType,
       isQuickOnly,
       isLowIngredientsOnly,
+      isPantrySort,
     ]
   );
 
   // Mémoriser les recettes filtrées
   const filteredRecipes = useMemo(() => {
-    if (DEBUG) {
-      console.log("Filtering recipes with filters:", {
-        searchQuery,
-        selectedDiet,
-        selectedDifficulty,
-        selectedSeason,
-        selectedType,
-        selectedDishType,
-        isQuickOnly,
-        isLowIngredientsOnly,
-        totalRecipes: allRecipes.length,
-      });
-    }
+    let result;
 
-    // Si aucun filtre n'est actif, afficher toutes les recettes avec celles de la saison en cours en premier
+    // Si aucun filtre n'est actif (hors pantry), afficher toutes les recettes avec celles de la saison en cours en premier
     if (
       !searchQuery &&
       !selectedDiet &&
       !selectedDifficulty &&
-      !selectedSeason &&
+      (!selectedSeason || selectedSeason.length === 0) &&
       !selectedType &&
       !selectedDishType &&
       !isQuickOnly &&
@@ -530,32 +457,25 @@ export const RecipeListProvider = ({ children }) => {
       );
 
       // Combiner les deux listes: d'abord les recettes de saison, puis les autres
-      const combinedRecipes = [
+      result = [
         ...orderedSeasonalRecipes,
         ...orderedOtherRecipes,
       ];
-
-      if (DEBUG) {
-        console.log("Combined recipes:", {
-          currentSeason,
-          fromCurrentSeason: orderedSeasonalRecipes.length,
-          fromOtherSeasons: orderedOtherRecipes.length,
-          total: combinedRecipes.length,
-        });
-      }
-
-      return combinedRecipes;
+    } else {
+      // Sinon, appliquer les filtres normalement
+      result = filterRecipes(allRecipes, currentFilters);
     }
 
-    // Sinon, appliquer les filtres normalement
-    const filtered = filterRecipes(allRecipes, currentFilters);
-    if (DEBUG) {
-      console.log("Filtered recipes:", {
-        count: filtered.length,
-        titles: filtered.map((r) => r.title),
+    // Pantry sort: re-order by pantry match ratio (matched / pantry-type ingredients) descending
+    if (isPantrySort && pantrySize > 0) {
+      result = [...result].sort((a, b) => {
+        const ratioA = getPantryMatchRatio(a);
+        const ratioB = getPantryMatchRatio(b);
+        return ratioB - ratioA;
       });
     }
-    return filtered;
+
+    return result;
   }, [
     allRecipes,
     currentFilters,
@@ -568,7 +488,9 @@ export const RecipeListProvider = ({ children }) => {
     selectedDishType,
     isQuickOnly,
     isLowIngredientsOnly,
-    getCurrentSeason,
+    isPantrySort,
+    pantrySize,
+    getPantryMatchRatio,
   ]);
 
   // Calculer les stats
@@ -599,20 +521,24 @@ export const RecipeListProvider = ({ children }) => {
       setIsQuickOnly,
       isLowIngredientsOnly,
       setIsLowIngredientsOnly,
+      isPantrySort,
+      setIsPantrySort,
       isAddRecipeModalOpen,
       setIsAddRecipeModalOpen,
       fetchRecipes,
       getCurrentSeason,
       stats,
       resultsType:
-        !searchQuery &&
-        !selectedDiet &&
-        !selectedDifficulty &&
-        !selectedSeason &&
-        !selectedType &&
-        !selectedDishType &&
-        !isQuickOnly &&
-        !isLowIngredientsOnly
+        isPantrySort
+          ? "pantry_sorted"
+          : !searchQuery &&
+            !selectedDiet &&
+            !selectedDifficulty &&
+            (!selectedSeason || selectedSeason.length === 0) &&
+            !selectedType &&
+            !selectedDishType &&
+            !isQuickOnly &&
+            !isLowIngredientsOnly
           ? "random_seasonal"
           : "filtered",
       openAddRecipeModal: () => setIsAddRecipeModalOpen(true),
@@ -620,11 +546,12 @@ export const RecipeListProvider = ({ children }) => {
       resetFilters: () => {
         setSearchQuery("");
         setSelectedDiet(null);
-        setSelectedSeason(null);
+        setSelectedSeason([]);
         setSelectedType(null);
         setSelectedDishType(null);
         setIsQuickOnly(false);
         setIsLowIngredientsOnly(false);
+        setIsPantrySort(false);
       },
     }),
     [
@@ -639,6 +566,7 @@ export const RecipeListProvider = ({ children }) => {
       selectedDishType,
       isQuickOnly,
       isLowIngredientsOnly,
+      isPantrySort,
       isAddRecipeModalOpen,
       stats,
     ]

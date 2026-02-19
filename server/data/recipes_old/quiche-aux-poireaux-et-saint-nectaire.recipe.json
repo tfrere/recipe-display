@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "title": "Quiche aux Poireaux et Saint-Nectaire",
+    "description": "Je vous livre un de mes classiques avec cette Quiche aux Poireaux et Saint-Nectaire !",
+    "servings": 1,
+    "prepTime": "PT1H20M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "poireau",
+      "quiche",
+      "recette de quiche v\u00e9g\u00e9tarienne",
+      "recette quiche poireau",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Quiche-poireau-St-Nectaire-1-of-3-1.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le fromage est interchangeable (Saint-Nectaire, comt\u00e9, ou un m\u00e9lange).",
+      "C'est une recette classique et hivernale.",
+      "Les quiches permettent d'utiliser ce qu'il y a dans le frigo."
+    ],
+    "slug": "quiche-aux-poireaux-et-saint-nectaire",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Quiche-poireau-St-Nectaire-1-of-3-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/25/quiche-aux-poireaux-et-saint-nectaire/",
+    "image": "images/quiche-aux-poireaux-et-saint-nectaire.webp",
+    "createdAt": "2026-02-09T20:58:08.505769",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 125.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 4066.7,
+      "protein": 112.1,
+      "fat": 286.8,
+      "carbs": 259.7,
+      "fiber": 19.6,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 11,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "belle pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "beurre_froid",
+      "name": "beurre froid",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "cold butter"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "poireaux",
+      "name": "poireaux",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "oignon_jaune",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "creme_liquide",
+      "name": "cr\u00e8me liquide",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "emmental_rape",
+      "name": "emmental r\u00e2p\u00e9",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated emmental"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "saint_nectaire",
+      "name": "Saint-Nectaire",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint-Nectaire cheese"
+    }
+  ],
+  "tools": [
+    "Saladier",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel_thym",
+      "action": "M\u00e9langer la farine, le sel et le thym dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e au thym",
+      "uses": [
+        "farine",
+        "sel",
+        "thym"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre",
+      "action": "Ajouter le beurre et m\u00e9langer du bout des doigts pour obtenir une texture type crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e au thym",
+      "uses": [
+        "melange_sec",
+        "beurre_froid"
+      ],
+      "produces": "pate_crumble",
+      "requires": [],
+      "visualCue": "texture type crumble"
+    },
+    {
+      "id": "ajouter_oeuf_eau",
+      "action": "Ajouter l'oeuf et l'eau une cuill\u00e8re \u00e0 la fois, et m\u00e9langer jusqu'\u00e0 ce qu'une boule se forme.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te bris\u00e9e au thym",
+      "uses": [
+        "pate_crumble",
+        "oeuf",
+        "eau_froide"
+      ],
+      "produces": "pate_brisee_crue",
+      "requires": [],
+      "visualCue": "une boule se forme"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server la p\u00e2te au frais pendant minimum 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te bris\u00e9e au thym",
+      "uses": [
+        "pate_brisee_crue"
+      ],
+      "produces": "pate_brisee_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_poireaux_oignon",
+      "action": "\u00c9mincer les poireaux et l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "poireaux",
+        "oignon_jaune"
+      ],
+      "produces": "poireaux_oignon_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_chauffer_poele",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen avec le beurre et le filet d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "beurre",
+        "huile_dolive"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_revenir_poireaux",
+      "action": "Y faire revenir les poireaux et l'oignon \u00e0 couvert pendant 25min, en remuant de temps en temps.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "appareil",
+      "uses": [
+        "poele_chaude",
+        "poireaux_oignon_eminces"
+      ],
+      "produces": "poireaux_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_oeufs_creme_emmental",
+      "action": "Dans un bol, m\u00e9langer les oeufs, la cr\u00e8me et l'emmental r\u00e2p\u00e9. Saler et poivrer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "oeufs",
+        "creme_liquide",
+        "emmental_rape",
+        "sel",
+        "poivre"
+      ],
+      "produces": "preparation_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_saint_nectaire",
+      "action": "Couper le Saint-Nectaire en gros d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "saint_nectaire"
+      ],
+      "produces": "saint_nectaire_des",
+      "requires": [],
+      "visualCue": "gros d\u00e9s"
+    },
+    {
+      "id": "melanger_appareil",
+      "action": "Verser le Saint-Nectaire et les poireaux cuits dans la pr\u00e9paration aux \u0153ufs. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "preparation_oeufs",
+        "saint_nectaire_des",
+        "poireaux_cuits"
+      ],
+      "produces": "appareil_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la p\u00e2te et piquer le fond du moule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_brisee_reposee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_appareil",
+      "action": "Verser l'appareil sur la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_etalee",
+        "appareil_complet"
+      ],
+      "produces": "quiche_crue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enfourner",
+      "action": "Enfourner \u00e0 mi-hauteur pour 40min.",
+      "duration": "PT40M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "quiche_crue"
+      ],
+      "produces": "quiche_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "quiche_cuite",
+  "originalText": "Quiche aux Poireaux et Saint-Nectaire - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 janvier 2022\nQuiche aux Poireaux et Saint-Nectaire\nAller \u00e0 la recette\nJe vous livre un de mes classiques avec cette Quiche aux Poireaux et Saint-Nectaire !\nLes quiches et moi avons une longue mais discontinue histoire d\u2019amour ! Comme je vous en parlais r\u00e9cemment sur notre compte\ninsta\n. C\u2019est vraiment le type de plat que j\u2019adore pendant une p\u00e9riode de temps, puis qui sort compl\u00e8tement de ma t\u00eate et de mon alimentation pendant des mois. Avant que je re-re-d\u00e9couvre le bonheur des quiches. Et que je re-re-re-oublie les quiches. Et ainsi de suite. Un cycle sans fin !\nVous noterez qu\u2019il y a d\u00e9j\u00e0 pas mal de recettes de quiches sur le blog ! Des quiches d\u2019\u00e9t\u00e9 (comme\ncelle \u00e0 la courgette et comt\u00e9\n, ou\ncelle aux tomates cerises et artichauts\n. Et des quiches plus hivernales comme\ncelle \u00e0 la courge et champignons\nou\ncelle \u00e0 la patate douce et poireaux\n.\nBon, l\u00e0, vu qu\u2019on est le 24 janvier et donc en plein c\u0153ur de l\u2019hiver, vous l\u2019aurez devin\u00e9, je vous propose une recette bien hivernale. Avec des poireaux donc et du Saint-Nectaire.\nEn vrai, c\u2019est surtout une quiche au poireau car le fromage est compl\u00e8tement interchangeable. En fonction de ce qu\u2019il y a dans mon frigo. Parfois du Saint-Nectaire, parfois du comt\u00e9, ou un m\u00e9lange de fromage ! Tout fonctionne en vrai !\nEt puis, apr\u00e8s tout, c\u2019est bien \u00e7a la magie des quiches non ? Pouvoir y mettre ce qui tra\u00eene au frigo et parfois faire des d\u00e9couvertes sublimes d\u2019associations inattendues !\nQuiche aux Poireaux et Saint-Nectaire\n4.46\n/5 avec\n59\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nIngr\u00e9dients\nIngr\u00e9dients pour la p\u00e2te bris\u00e9e au thym\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n1\nc\u00e0c de thym\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n2\nc-\u00e0-s d\u2019eau froide\nIngr\u00e9dients pour l\u2019appareil\n3\npoireaux\n1\noignon jaune\n50\ng\nde beurre\n1\nc\u00e0s d\u2019huile d\u2019olive\n2\noeufs\n150\nml\nde cr\u00e8me liquide\n50\ng\nd\u2019emmental r\u00e2p\u00e9\nsel\npoivre\n250\ng\nde Saint-Nectaire\nInstructions\nPr\u00e9paration de la p\u00e2te\nM\u00e9langer la farine le sel et le thym dans un saladier et ajouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019oeuf et l\u2019eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule se forme . R\u00e9server au frais minimum 1h.\nPr\u00e9paration de l\u2019appareil\nEmincer les poireaux et l\u2019oignon.\nFaire chauffer une po\u00eale \u00e0 feu moyen avec le beurre et le filet d\u2019huile.\nY faire revenir les poireaux et l\u2019oignon \u00e0 couvert pendant 25min en remuant de temps en temps.\nDans un bol, m\u00e9langer les oeufs, la cr\u00e8me et l\u2019emmental r\u00e2p\u00e9. Saler et poivrer.\nCouper le Saint-Nectaire en gros d\u00e9s et le verser avec les poireaux dans la pr\u00e9paration. R\u00e9server.\nPr\u00e9paration de la tarte\nPr\u00e9chauffer le four \u00e0 190\u00b0.\nAbaisser la p\u00e2te et piquer le fond.\nVerser l\u2019appareil dessus.\nEnfourner \u00e0 mi-hauteur pour 40min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nPoireau\n,\nQuiches et Tartes\nTags:\npoireau\n,\nque faire avec du poireau\n,\nquiche\n,\nquiche au poireau\n,\nrecette de quiche v\u00e9g\u00e9tarienne\n,\nrecette quiche\n,\nrecette quiche poireau\n,\nrecette quiche v\u00e9g\u00e9tarienne\nPizza Sapin d\u2019Automne\nGratin de P\u00e2tes Poireaux et Cheddar\n1 thought on \u201cQuiche aux Poireaux et Saint-Nectaire\u201d\nKilianJ\ndit\u00a0:\n19 avril 2022 \u00e0 18 h 49 min\nTr\u00e8s bonne recette merci.\nJ\u2019ai cuit la quiche dans un four \u00e0 pizza vu ici :\nhttps://lapizzadigio.fr/fours/\nJe recommande.\nKilianJ\nchargement\u2026\nR\u00e9pondre\n4.46 from 59 votes (\n58 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "title": "Steak de Chou-Fleur pan\u00e9",
+    "description": "Ces tranches de chou-fleur sont pan\u00e9es et cuites au four. Elles deviennent croustillantes \u00e0 l'ext\u00e9rieur et fondantes \u00e0 souhait \u00e0 l'int\u00e9rieur.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT60M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "chou fleur",
+      "chou fleur au four",
+      "steak vegan",
+      "automne",
+      "hiver",
+      "printemps",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Steak-de-chou-fleur-pane-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La p\u00e2te est tr\u00e8s \u00e9paisse. C'est normal. N'h\u00e9sitez pas \u00e0 y mettre les mains pour bien badigeonner les steaks.",
+      "J'ai ajout\u00e9 de la levure malt\u00e9e dans la panure. Mais si ce n'est pas trop votre truc, vous pouvez juste la zapper !",
+      "Pour que les \"steaks\" tiennent, il faut les couper dans le tronc.",
+      "Servir avec l'accompagnement et la sauce de votre choix !",
+      "Si la p\u00e2te colle trop, ajouter un peu de lait pour qu'elle soit moins \u00e9paisse."
+    ],
+    "slug": "steak-de-chou-fleur-pane",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Steak-de-chou-fleur-pane-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/10/steak-de-chou-fleur-pane/",
+    "image": "images/steak-de-chou-fleur-pane.webp",
+    "createdAt": "2026-02-09T21:37:22.924230",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 316.8,
+      "protein": 16.0,
+      "fat": 2.6,
+      "carbs": 54.3,
+      "fiber": 6.9,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 10,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cauliflower_slices",
+      "name": "tranches de chou fleur",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "environ 1cm d'\u00e9paisseur",
+      "notes": null,
+      "optional": false,
+      "name_en": "cauliflower florets"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "v\u00e9g\u00e9tal ou animal",
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "onion_powder",
+      "name": "oignon en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion powder"
+    },
+    {
+      "id": "salt_pinch",
+      "name": "sel",
+      "quantity": 2.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": "chapelure",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "flour_tbsp",
+      "name": "farine",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "nutritional_yeast",
+      "name": "levure malt\u00e9e",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "salt_to_taste",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C et pr\u00e9parer une plaque de cuisson en la couvrant de papier cuisson.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_batter",
+      "action": "M\u00e9langer tous les ingr\u00e9dients de la p\u00e2te (farine, lait, paprika fum\u00e9, ail en poudre, oignon en poudre, sel) dans un petit saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "batter",
+      "uses": [
+        "flour",
+        "milk",
+        "smoked_paprika",
+        "garlic_powder",
+        "onion_powder",
+        "salt_pinch"
+      ],
+      "produces": "batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_breading",
+      "action": "M\u00e9langer les ingr\u00e9dients de la panure (chapelure, farine, levure malt\u00e9e, sel, poivre) dans un bol et transf\u00e9rer dans une assiette creuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "breading",
+      "uses": [
+        "breadcrumbs",
+        "flour_tbsp",
+        "nutritional_yeast",
+        "salt_to_taste",
+        "pepper"
+      ],
+      "produces": "breading_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_cauliflower",
+      "action": "Enlever les feuilles du chou-fleur, puis le retourner pour voir son tronc.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cauliflower_slices"
+      ],
+      "produces": "prepared_cauliflower",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_slices",
+      "action": "Couper 2 tranches d'environ 1cm d'\u00e9paisseur dans le centre du chou-fleur, en les coupant dans le tronc pour qu'elles tiennent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "prepared_cauliflower"
+      ],
+      "produces": "cauliflower_steaks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_steaks",
+      "action": "Recouvrir compl\u00e8tement les steaks de chou-fleur d'une grosse couche de p\u00e2te, puis les passer dans la panure pour qu'ils soient compl\u00e8tement recouverts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cauliflower_steaks",
+        "batter",
+        "breading_mix"
+      ],
+      "produces": "coated_cauliflower_steaks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_bake",
+      "action": "D\u00e9poser les steaks sur la plaque de cuisson et enfourner \u00e0 mi-hauteur pour 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "coated_cauliflower_steaks",
+        "prepared_baking_sheet"
+      ],
+      "produces": "partially_baked_steaks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_oil",
+      "action": "Sortir la plaque du four puis badigeonner les 2 faces des steaks d'huile d'olive \u00e0 l'aide d'un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "partially_baked_steaks",
+        "olive_oil"
+      ],
+      "produces": "oiled_steaks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_bake",
+      "action": "Retourner les steaks et enfourner \u00e0 nouveau pour 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "oiled_steaks"
+      ],
+      "produces": "fully_baked_cauliflower_steaks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fully_baked_cauliflower_steaks"
+      ],
+      "produces": "steak_de_chou_fleur_pane",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "steak_de_chou_fleur_pane",
+  "originalText": "Steak de Chou-Fleur pan\u00e9 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 novembre 2022\nSteak de Chou-Fleur pan\u00e9\nAller \u00e0 la recette\nCette recette de Steak de Chou-Fleur pan\u00e9 est si booooonne !!! Un r\u00e9gal !! J\u2019ai eu du mal \u00e0 m\u2019en remettre apr\u00e8s la premi\u00e8re bouch\u00e9e ! Je vous la conseille les yeux ferm\u00e9s, d\u2019autant qu\u2019elle ne pr\u00e9sente aucune difficult\u00e9 !\nAlors, pour commencer. Oui, c\u2019est du chou-fleur. Non, ce n\u2019est pas de la viande. Oui, j\u2019aime bien les appeler steaks. Et si vous pr\u00e9f\u00e9rez les appeler autrement, je vous en prie !\nSinon, hormis ce d\u00e9tail s\u00e9mantique, cette recette va clairement changer votre vie. Z\u00e9ro exag\u00e9ration ! Hahah !\nCes tranches de chou-fleur sont pan\u00e9es. Et cuites au four. Elles deviennent croustillantes \u00e0 l\u2019ext\u00e9rieur et fondantes \u00e0 souhait \u00e0 l\u2019int\u00e9rieur. Le chou-fleur a un go\u00fbt tr\u00e8s doux.\nEn g\u00e9n\u00e9ral, je ne suis pas tr\u00e8s tr\u00e8s fan du chou-fleur au four. Je trouve qu\u2019il devient trop fort. Et masque le reste des go\u00fbts. Mais cuit comme \u00e7a, dans cette panure. Une v\u00e9ritable merveille que je vous conseille ! Croyez-moi ! Testez cette recette !\nCes Steak de Chou-Fleur pan\u00e9 sont franchement simples \u00e0 r\u00e9aliser.\nLa p\u00e2te est tr\u00e8s \u00e9paisse. C\u2019est normal. N\u2019h\u00e9sitez pas \u00e0 y mettre les mains pour bien badigeonner les steaks.\nJ\u2019ai ajout\u00e9 de la levure malt\u00e9e dans la panure. C\u2019est une histoire de go\u00fbt. Et perso, j\u2019adore le go\u00fbt de la levure malt\u00e9e. J\u2019en mets partout.\nSurtout dans mes salades.\nMais si ce n\u2019est pas trop votre truc, vous pouvez juste la zapper !\nBon app les amis !\nSteak de Chou-Fleur pan\u00e9\n4.53\n/5 avec\n40\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\nbelles tranches de chou fleur\n1cm d\u2019\u00e9paisseur env\nPour la p\u00e2te\n100\ng\nde farine\n100\nml\nde lait\nv\u00e9g\u00e9tal ou animal\n1\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c d\u2019ail en poudre\n\u00bd\nc\u00e0c d\u2019oignon en poudre\n2\nbelles pinc\u00e9es de sel\nPour la panure\n70\ng\nde chapelure\n1\nc\u00e0s de farine\n2\nc\u00e0s de levure malt\u00e9e\nsel\npoivre\nInstructions\nPr\u00e9chauffer le four \u00e0 190\u00b0C et pr\u00e9parer une plaque de cuisson en la couvrant de papier cuisson.\nM\u00e9langer tous les ingr\u00e9dients de la p\u00e2te dans un petit saladier.\nM\u00e9langer les ingr\u00e9dients de la panure dans un bol et transf\u00e9rer dans une assiette creuse.\nEnlever les feuilles du chou-fleur, puis le retourner pour voir son tronc.\nCouper 2 tranches d\u2019environ 1cm d\u2019\u00e9paisseur (ou un peu plus) dans le centre du chou-fleur. Pour que les \u201csteaks\u201d tiennent, il faut les couper dans le tronc.\nRecouvrir compl\u00e8tement les steaks d\u2019une grosse couche de p\u00e2te, puis les passer dans la panure. Ils doivent \u00eatre compl\u00e8tement recouverts.\nLes d\u00e9poser sur la plaque de cuisson et enfourner \u00e0 mi-hauteur pour 30min.\nSortir la plaque du four puis badigeonner les 2 faces d\u2019huile d\u2019olive \u00e0 l\u2019aide d\u2019un pinceau. Retourner les steaks et enfourner \u00e0 nouveau pour 30min.\nServir avec l\u2019accompagnement et la sauce de votre choix !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChoux\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nchou fleur\n,\nchou fleur au four\n,\nsteak vegan\nTarte tatin Ch\u00e8vre et Poireaux\nParmentier vegan Potimarron Lentilles\n5 thoughts on \u201cSteak de Chou-Fleur pan\u00e9\u201d\nClaude-B\u00e9n\u00e9dicte Smets\ndit\u00a0:\n10 novembre 2022 \u00e0 12 h 31 min\nBonjour! Ce n\u2019est pan\u00e9 que sur une face? Merci\u2026.\nchargement\u2026\nR\u00e9pondre\nLaure\ndit\u00a0:\n2 d\u00e9cembre 2024 \u00e0 11 h 23 min\nBonjour ! J\u2019aime beaucoup cette recette, mon seule probl\u00e8me est que la p\u00e2te colle beaucoup et est du coup difficile \u00e0 \u00e9taler, comment faire ? Merci !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n3 d\u00e9cembre 2024 \u00e0 10 h 28 min\nHello ! Tu peux ajouter un peu de lait pour qu\u2019elle soit moins \u00e9paisse. Mais sinon, moi je ll\u2019\u00e9tale avec les doigts en g\u00e9n\u00e9ral !\nchargement\u2026\nR\u00e9pondre\nPatricia\ndit\u00a0:\n15 mai 2025 \u00e0 13 h 46 min\nBonjour je tente cette recette ce jour mais je ne vois pas comment couper le chou fleur ? Je l\u2019ai coupe dans le tronc comme indiqu\u00e9 mais du coup j\u2019ai une bonne partie du tronc dans la tranche, pour moi cette partie ne se mange pas? Merci pour votre aide.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n20 mai 2025 \u00e0 12 h 22 min\nBonjour Patricia, si le tronc se mange comme tout le reste !\nchargement\u2026\nR\u00e9pondre\n4.53 from 40 votes (\n40 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

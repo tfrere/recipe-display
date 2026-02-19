@@ -1,0 +1,586 @@
+{
+  "metadata": {
+    "title": "sauce bolognaise",
+    "description": "Une sauce bolognaise riche et savoureuse, plus proche d'un ragoût que d'une sauce, mijotée longuement pour développer ses saveurs. Parfaite avec des tagliatelles.",
+    "servings": 6,
+    "prepTime": "PT40M",
+    "cookTime": "PT3H30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "italien",
+      "pâtes",
+      "viande hachée",
+      "sauce tomate",
+      "ragoût"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054656-e3dea4f2.png",
+    "nationality": "Italian",
+    "author": null,
+    "source": null,
+    "notes": [
+      "La sauce doit être relativement liquide, entre une sauce et un ragoût.",
+      "On peut rallonger la sauce avec l'eau de cuisson des pâtes si nécessaire.",
+      "Plus la sauce mijote longtemps, meilleure elle est."
+    ],
+    "slug": "sauce-bolognaise",
+    "sourceImageUrl": "sauce-bolognaise.png",
+    "originalContent": "sauce bolognaise\n(c'est plus un ragoût qu'une sauce d'ailleurs)\n\nTemps total : minimum 4h10\nTemps de préparation : 40 min\nTemps de cuisson : au moins 3h30\n\nPour 6 personnes\n\nIngrédients :\n\n1 cuillère à soupe d’huile d’olive\nUn gros oignon\nUne branche de céleri\n3-4 carottes\n500g de viande hachée (les vrais mettent moitié porc mais seulement du bœuf c'est cool aussi)\n4-5 tomates\nCoulis de tomate (ou concentré)\n2 gousses d’ail\nCoulis de tomates\nThym, laurier, origan, romarin\nBasilic ou persil (optionnel)\n\nPréparation :\n- Émincer finement l'oignon\n- Couper les carottes et le céleri en très petits cubes (un demi centimètre d'épaisseur maximum)\n- Couper les gousses d’ail en deux, enlever les germes, écraser les gousses avec le plat d’un couteau et hacher finement \n- Faire bouillir de l’eau dans une grande casserole, plonger les tomates environ 30 secondes puis les passer à l’eau froide\n- Enlever la peau des tomates et les épépiner, puis les couper en morceaux\n- Faire chauffer l’huile d’olive dans un faitout ou une cocotte en fonte (perso je mets beaucoup d’huile)\n- Faire suer l’oignon puis ajouter les carottes et le céleri\n- Faire revenir quelques minutes et ajouter la viande hachée\n- Saler, poivrer\n- Lorsque la viande soit bien saisie, ajouter un verre de vin rouge\n- Laisser évaporer quelques minutes\n- Ajouter les morceaux de tomates, remuer puis ajouter le coulis de tomates\n- On peut ajouter un peu d'eau mais il ne faut pas que ce soit trop liquide\n- Ajouter le thym, le laurier et l’origan\n- Laisser mijoter pendant au moins une heure (plus ça mijote, meilleur c'est)\n- Faire la mantecatura\n- Servir avec des tagliatelles\n\n\nN.B. : Comme une bolognaise est plus proche du ragoût que de la sauce, l'idée c'est qu'elle soit relativement liquide. Personnellement j'essaie d'obtenir un entre-deux : une sauce bien rouge, plutôt liquide mais pas un jus. Éventuellement on peut rallonger la sauce avec l'eau de cuisson des pâtes, c'est pas mal.\n\nMain recipe image: temp_image_recipe-gen-20260208054656-e3dea4f2.png",
+    "createdAt": "2026-02-08T05:55:47.568354",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 144.0,
+    "totalCookingTime": 84.0,
+    "image": "images/sauce-bolognaise.png",
+    "nutritionPerServing": {
+      "calories": 287.7,
+      "protein": 16.3,
+      "fat": 19.3,
+      "carbs": 12.9,
+      "fiber": 3.6,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 8,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "l'auteur mentionne en mettre beaucoup",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé finement",
+      "notes": "gros",
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "celery",
+      "name": "céleri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé en très petits cubes",
+      "notes": "une branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 3.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées en très petits cubes",
+      "notes": "3-4 carottes, moyenne prise",
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "ground_meat",
+      "name": "viande hachée",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": null,
+      "notes": "idéalement moitié porc moitié bœuf, mais seulement du bœuf fonctionne aussi",
+      "optional": false,
+      "name_en": "Ground beef"
+    },
+    {
+      "id": "tomatoes",
+      "name": "tomates",
+      "quantity": 4.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pelées, épépinées, coupées en morceaux",
+      "notes": "4-5 tomates, moyenne prise",
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "tomato_puree",
+      "name": "coulis de tomate",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou concentré de tomate",
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "haché finement",
+      "notes": "gousses coupées en deux, germes enlevés, écrasées puis hachées",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "red_wine",
+      "name": "vin rouge",
+      "quantity": 1.0,
+      "unit": "glass",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "un verre",
+      "optional": false,
+      "name_en": "red wine"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "laurier",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "basil_or_parsley",
+      "name": "basilic ou persil",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "optionnel",
+      "optional": true,
+      "name_en": "Basil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour éventuellement rallonger la sauce",
+      "optional": true,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "faitout ou cocotte en fonte",
+    "grande casserole",
+    "couteau",
+    "planche à découper"
+  ],
+  "steps": [
+    {
+      "id": "chop_onion",
+      "action": "Émincer finement l'oignon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_carrots_celery",
+      "action": "Couper les carottes et le céleri en très petits cubes (un demi centimètre d'épaisseur maximum).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "carrots",
+        "celery"
+      ],
+      "produces": "diced_carrots_celery",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_garlic",
+      "action": "Couper les gousses d'ail en deux, enlever les germes, écraser les gousses avec le plat d'un couteau et hacher finement.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "garlic"
+      ],
+      "produces": "minced_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blanch_tomatoes",
+      "action": "Faire bouillir de l'eau dans une grande casserole, plonger les tomates environ 30 secondes puis les passer à l'eau froide.",
+      "duration": "PT5M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tomatoes",
+      "uses": [
+        "tomatoes",
+        "water"
+      ],
+      "produces": "blanched_tomatoes",
+      "requires": [],
+      "visualCue": "peau qui se détache"
+    },
+    {
+      "id": "peel_seed_chop_tomatoes",
+      "action": "Enlever la peau des tomates et les épépiner, puis les couper en morceaux.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tomatoes",
+      "uses": [
+        "blanched_tomatoes"
+      ],
+      "produces": "chopped_tomatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faire chauffer l'huile d'olive dans un faitout ou une cocotte en fonte.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": "huile frémissante"
+    },
+    {
+      "id": "sweat_onion",
+      "action": "Faire suer l'oignon émincé dans l'huile chaude.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "hot_oil",
+        "chopped_onion"
+      ],
+      "produces": "sweated_onion",
+      "requires": [],
+      "visualCue": "translucide et tendre"
+    },
+    {
+      "id": "add_vegetables",
+      "action": "Ajouter les carottes et le céleri coupés en cubes aux oignons.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sweated_onion",
+        "diced_carrots_celery"
+      ],
+      "produces": "sweated_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Ajouter l'ail haché et faire revenir quelques minutes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sweated_vegetables",
+        "minced_garlic"
+      ],
+      "produces": "aromatic_base",
+      "requires": [],
+      "visualCue": "parfumé"
+    },
+    {
+      "id": "add_ground_meat",
+      "action": "Ajouter la viande hachée à la base aromatique.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "aromatic_base",
+        "ground_meat"
+      ],
+      "produces": "meat_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_meat",
+      "action": "Saler et poivrer la viande.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "meat_mixture",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_meat",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brown_meat",
+      "action": "Faire revenir la viande jusqu'à ce qu'elle soit bien saisie.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "seasoned_meat"
+      ],
+      "produces": "browned_meat",
+      "requires": [],
+      "visualCue": "viande bien dorée"
+    },
+    {
+      "id": "deglaze_wine",
+      "action": "Ajouter un verre de vin rouge pour déglacer.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "browned_meat",
+        "red_wine"
+      ],
+      "produces": "deglazed_meat",
+      "requires": [],
+      "visualCue": "vin évaporé"
+    },
+    {
+      "id": "add_tomatoes",
+      "action": "Ajouter les morceaux de tomates, remuer puis ajouter le coulis de tomates.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "deglazed_meat",
+        "chopped_tomatoes",
+        "tomato_puree"
+      ],
+      "produces": "tomato_meat_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "adjust_consistency",
+      "action": "Ajouter un peu d'eau si nécessaire pour obtenir la consistance désirée (pas trop liquide).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "tomato_meat_base",
+        "water"
+      ],
+      "produces": "adjusted_sauce_base",
+      "requires": [],
+      "visualCue": "consistance entre sauce et ragoût"
+    },
+    {
+      "id": "add_herbs",
+      "action": "Ajouter le thym, le laurier, l'origan et le romarin.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "adjusted_sauce_base",
+        "thyme",
+        "bay_leaf",
+        "oregano",
+        "rosemary"
+      ],
+      "produces": "herbed_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Laisser mijoter pendant au moins une heure (plus ça mijote, meilleur c'est).",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce",
+      "uses": [
+        "herbed_sauce"
+      ],
+      "produces": "simmered_sauce",
+      "requires": [],
+      "visualCue": "sauce épaissie et parfumée"
+    },
+    {
+      "id": "mantecatura",
+      "action": "Faire la mantecatura (monter la sauce avec un peu de beurre ou d'huile d'olive pour la rendre onctueuse).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "finish",
+      "uses": [
+        "simmered_sauce"
+      ],
+      "produces": "finished_bolognese",
+      "requires": [],
+      "visualCue": "sauce onctueuse et brillante"
+    },
+    {
+      "id": "add_fresh_herbs",
+      "action": "Ajouter du basilic ou du persil frais haché (optionnel).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "finish",
+      "uses": [
+        "finished_bolognese",
+        "basil_or_parsley"
+      ],
+      "produces": "bolognese_with_herbs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_with_pasta",
+      "action": "Servir avec des tagliatelles.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "serving",
+      "uses": [
+        "bolognese_with_herbs"
+      ],
+      "produces": "bolognese_with_tagliatelle",
+      "requires": [],
+      "visualCue": "pâtes nappées de sauce"
+    }
+  ],
+  "finalState": "bolognese_with_tagliatelle",
+  "originalText": "sauce bolognaise\n(c'est plus un ragoût qu'une sauce d'ailleurs)\n\nTemps total : minimum 4h10\nTemps de préparation : 40 min\nTemps de cuisson : au moins 3h30\n\nPour 6 personnes\n\nIngrédients :\n\n1 cuillère à soupe d’huile d’olive\nUn gros oignon\nUne branche de céleri\n3-4 carottes\n500g de viande hachée (les vrais mettent moitié porc mais seulement du bœuf c'est cool aussi)\n4-5 tomates\nCoulis de tomate (ou concentré)\n2 gousses d’ail\nCoulis de tomates\nThym, laurier, origan, romarin\nBasilic ou persil (optionnel)\n\nPréparation :\n- Émincer finement l'oignon\n- Couper les carottes et le céleri en très petits cubes (un demi centimètre d'épaisseur maximum)\n- Couper les gousses d’ail en deux, enlever les germes, écraser les gousses avec le plat d’un couteau et hacher finement \n- Faire bouillir de l’eau dans une grande casserole, plonger les tomates environ 30 secondes puis les passer à l’eau froide\n- Enlever la peau des tomates et les épépiner, puis les couper en morceaux\n- Faire chauffer l’huile d’olive dans un faitout ou une cocotte en fonte (perso je mets beaucoup d’huile)\n- Faire suer l’oignon puis ajouter les carottes et le céleri\n- Faire revenir quelques minutes et ajouter la viande hachée\n- Saler, poivrer\n- Lorsque la viande soit bien saisie, ajouter un verre de vin rouge\n- Laisser évaporer quelques minutes\n- Ajouter les morceaux de tomates, remuer puis ajouter le coulis de tomates\n- On peut ajouter un peu d'eau mais il ne faut pas que ce soit trop liquide\n- Ajouter le thym, le laurier et l’origan\n- Laisser mijoter pendant au moins une heure (plus ça mijote, meilleur c'est)\n- Faire la mantecatura\n- Servir avec des tagliatelles\n\n\nN.B. : Comme une bolognaise est plus proche du ragoût que de la sauce, l'idée c'est qu'elle soit relativement liquide. Personnellement j'essaie d'obtenir un entre-deux : une sauce bien rouge, plutôt liquide mais pas un jus. Éventuellement on peut rallonger la sauce avec l'eau de cuisson des pâtes, c'est pas mal.\n\nMain recipe image: temp_image_recipe-gen-20260208054656-e3dea4f2.png",
+  "totalCookingTime": 84.0
+}

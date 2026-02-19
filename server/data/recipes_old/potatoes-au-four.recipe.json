@@ -1,0 +1,317 @@
+{
+  "metadata": {
+    "title": "Potatoes au four",
+    "description": "Parce qu'on ne mange jamais suffisamment de frites, aujourd'hui ce sera une recette de Potatoes au four ! Elles sont fondantes \u00e0 l'int\u00e9rieur et croustillantes \u00e0 l'ext\u00e9rieur.",
+    "servings": 5,
+    "prepTime": "PT15M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "pomme de terre",
+      "accompagnement",
+      "v\u00e9g\u00e9tarien",
+      "four",
+      "frites"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Potatoes-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Il faut les d\u00e9guster tout de suite, sans quoi elles ramollissent.",
+      "On peut les faire bouillir en anticipation, m\u00eame la veille.",
+      "Pour une recette de sauce BBQ maison, c'est par ici !",
+      "Utiliser des pommes de terre bio \u00e0 chair ferme, surtout si on garde la peau."
+    ],
+    "slug": "potatoes-au-four",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Potatoes-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/15/potatoes-au-four/",
+    "image": "images/potatoes-au-four.webp",
+    "createdAt": "2026-02-09T21:22:10.975449",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 41.0,
+    "totalCookingTime": 6.0,
+    "nutritionPerServing": {
+      "calories": 267.7,
+      "protein": 4.4,
+      "fat": 12.3,
+      "carbs": 36.4,
+      "fiber": 4.0,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre bio \u00e0 chair ferme",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "sweet_paprika",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "dried_oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Brosse pour l\u00e9gumes",
+    "Grande casserole avec couvercle",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "clean_potatoes",
+      "action": "Bien nettoyer les pommes de terre sous l'eau \u00e0 l'aide d'une brosse. Ne pas les \u00e9plucher.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "cleaned_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_potatoes",
+      "action": "Couper les pommes de terre en 2 dans la longueur. Puis couper les demi-pommes de terre en 4 (elles doivent avoir 3 faces).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_potatoes"
+      ],
+      "produces": "cut_potatoes",
+      "requires": [],
+      "visualCue": "3 faces"
+    },
+    {
+      "id": "boil_potatoes",
+      "action": "Porter une grande casserole d'eau \u00e0 \u00e9bullition. Faire bouillir les pommes de terre 6min.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_potatoes"
+      ],
+      "produces": "boiled_potatoes",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 210\u00b0C. Pr\u00e9parer une plaque de cuisson recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": 210,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_potatoes",
+      "action": "\u00c9goutter les pommes de terre puis les mettre dans la casserole vide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "boiled_potatoes"
+      ],
+      "produces": "drained_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shake_potatoes",
+      "action": "Fermer avec le couvercle et secouer la casserole pour casser un peu les pommes de terre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "drained_potatoes"
+      ],
+      "produces": "roughed_potatoes",
+      "requires": [],
+      "visualCue": "cass\u00e9es un peu"
+    },
+    {
+      "id": "season_potatoes",
+      "action": "Toujours dans la casserole, verser l'huile d'olive, l'ail en poudre, le paprika fum\u00e9, le paprika doux, l'origan s\u00e9ch\u00e9, le sel et le poivre. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roughed_potatoes",
+        "olive_oil",
+        "garlic_powder",
+        "smoked_paprika",
+        "sweet_paprika",
+        "dried_oregano",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_potatoes",
+      "action": "Bien \u00e9taler les frites sur toute la surface de la plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_potatoes"
+      ],
+      "produces": "spread_potatoes",
+      "requires": [],
+      "visualCue": "\u00e9tal\u00e9es sur toute la surface"
+    },
+    {
+      "id": "bake_potatoes",
+      "action": "Enfourner 35min.",
+      "duration": "PT35M",
+      "temperature": 210,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "spread_potatoes"
+      ],
+      "produces": "baked_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster avec une sauce barbecue !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_potatoes"
+      ],
+      "produces": "potatoes_au_four",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "potatoes_au_four",
+  "originalText": "Potatoes au four - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 juin 2022\nPotatoes au four\nAcc\u00e9der directement \u00e0 la recette\nParce qu\u2019on ne mange jamais suffisamment de frites, aujourd\u2019hui ce sera une recette de Potatoes au four !\nCe sera la 4e recette de frites au four du blog ! Il y a des\nfrites de pommes de terre\n, et\ndes frites de patates douces\n. Et vous trouverez m\u00eame une recette de\nfrites de pommes\n! Et \u00e7a, c\u2019est quand m\u00eame quelque chose non ?\nIci, j\u2019ai utilis\u00e9 des pommes de terre bio \u00e0 chair ferme. Quand je garde la peau des l\u00e9gumes, je ne fais vraiment pas l\u2019impasse sur la bio. En fait, en g\u00e9n\u00e9ral, je prends un max de bio. Et vous ?\nEnfin, ce n\u2019est pas le sujet. Le sujet, c\u2019est : mais qu\u2019est-ce qu\u2019elles ont de sp\u00e9ciale ces potatoes ?\nUne bonne potatoes doit avoir une forme particuli\u00e8re. En Gr\u00e8ce, on appelle \u00e7a la forme de \u201cbateau\u201d ou de \u201cbarque\u201d. Comme pour cette recette. En d\u2019autres termes, il s\u2019agit de les couper en triangle. Pour qu\u2019elles aient 3 faces et non pas 4 comme les frites \u201cclassiques\u201d.\nEnsuite, une bonne potatoes \u00e0 sa peau. D\u2019o\u00f9 ma petite apart\u00e9 sur la bio juste au-dessus.\nEt finalement, une bonne potatoes est archi fondante \u00e0 l\u2019int\u00e9rieur. Et archi croustillante \u00e0 l\u2019ext\u00e9rieur. Pour obtenir cette texture, on les fait bouillir rapidement avant de les passer au four. Et on les \u201ccasse\u201d un peu, pour faire qu\u2019elles absorbent mieux la marinade. Et qu\u2019elles aient une surface moins uniforme. Plus de texture \u00e9quivaut \u00e0 plus de croustillance.\nEnsuite, on les marine rapidement dans des \u00e9pices. Vous connaissez ma passion pour le paprika fum\u00e9 ! Et puis, hop au four.\nElles ressortent dor\u00e9es et croustillantes !\nPar contre, attention, comme toutes frites au four, il faut les d\u00e9guster tout de suite. Sans quoi, elles ramollissent et on aura fait tout ce boulot pour rien !\nVous pouvez, par contre, les faire bouillir en anticipation. M\u00eame la veille si besoin.\nEt pour une recette de sauce BBQ maison, c\u2019est par ici !\nPotatoes au four\nNatacha\n4.44\n/5 avec\n128\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde pommes de terre bio \u00e0 chair ferme\n4\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0c d\u2019ail en poudre\n\u00bd\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c de paprika doux\n\u00bd\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\nsel\npoivre\nInstructions\nBien nettoyer les pommes de terre sous l\u2019eau \u00e0 l\u2019aide d\u2019une brosse.\nNe pas les \u00e9plucher.\nPorter une grande casserole d\u2019eau \u00e0 \u00e9bullition.\nCouper les pommes de terre en 2 dans la longueur. Puis couper les demi-pommes de terre en 4 (elles doivent avoir 3 faces).\nFaire bouillir les pommes de terre 6-7min.\nPr\u00e9chauffer le four \u00e0 210\u00b0C. Pr\u00e9parer une plaque de cuisson recouverte de papier cuisson.\n\u00c9goutter les pommes de terre puis les mettre dans la casserole vide.\nFermer avec le couvercle et secouer la casserole pour casser un peu les pommes de terre. Cela leur permettra de mieux absorber la marinade.\nToujours dans la casserole, verser l\u2019huile et les \u00e9pices. Bien m\u00e9langer.\nBien \u00e9taler les frites sur toute la surface de la plaque.\nEnfourner 35min.\nD\u00e9guster avec une sauce barbecue !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPomme de terre\n,\nPrintemps\nNotre top 10 de recettes \u00e0 base de courgettes\nGlace au yaourt grec marbr\u00e9e au coulis de fraise\n9 thoughts on \u201cPotatoes au four\u201d\nthenaisy\ndit\u00a0:\n16 juin 2022 \u00e0 8 h 28 min\ncoucou\noh la la cela doit \u00eatre troooooooooop bon j\u2019en ai l\u2019eau \u00e0 la bouche de si bon matin !!!!!!! il est 8h27  !!!!!!!!!:) : )\nbelle journ\u00e9e\nV\u00e9ronique\nchargement\u2026\nR\u00e9pondre\nSandrine\ndit\u00a0:\n12 juillet 2022 \u00e0 17 h 43 min\nPotatoes on the way !  \ud83d\ude42 Mais c\u2019est 210\u00b0 chaleur tournante ou pas ? Merci!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n13 juillet 2022 \u00e0 12 h 49 min\nHello ! Oui chaleur tournante \ud83d\ude42 Bon app !\nchargement\u2026\nR\u00e9pondre\nSandrine\ndit\u00a0:\n13 juillet 2022 \u00e0 15 h 36 min\nMerci pour la r\u00e9ponse ! Mais 35 min \u00e0 210\u00b0  chaleur tournante, c\u2019\u00e9tait trop. Ou alors mes morceaux de potatoes \u00e9taient trop fins ?\nchargement\u2026\nR\u00e9pondre\nMoulard\ndit\u00a0:\n20 octobre 2022 \u00e0 19 h 19 min\nFait 2 fois la recette\nEnfin une recette de potatoes qui me convient \u00e0 1000%\nJe mets les \u00e9pices que j\u2019aime ce soir massall\u00e9 paprika doux origan\nFranchement super recette\nPour 4 personnes 700g de  potatoes sur l\u00e8che frite c le max pour ma plaque + haricots verts \u00e0 la poelle mmm\u2026\u2026.\nCuisson 25mn \u00e0 surveiller\nchargement\u2026\nR\u00e9pondre\nSam\ndit\u00a0:\n12 avril 2023 \u00e0 13 h 47 min\nBonjour\nThermostat combien pour le four?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mai 2023 \u00e0 12 h 43 min\nBonjour 210 comme indiqu\u00e9 dans la recette\nchargement\u2026\nR\u00e9pondre\nJerem\ndit\u00a0:\n9 mai 2023 \u00e0 23 h 15 min\nExcellent ! Je laisse jamais de commentaire d\u2019habitude sur les sites de recettes (shame on me) mais l\u00e0 je suis oblig\u00e9 ! J\u2019ai aussi d\u00e9couvert par cette occasion le paprika fum\u00e9, un tuerie. Merci encore !\nchargement\u2026\nR\u00e9pondre\nGILLES\ndit\u00a0:\n12 avril 2025 \u00e0 15 h 33 min\nTest\u00e9 ce midi, la cuisson est parfaite !! Je la garde pr\u00e9cieusement et je ferai varier les \u00e9pices !\nchargement\u2026\nR\u00e9pondre\n4.44 from 128 votes (\n124 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 6.0
+}

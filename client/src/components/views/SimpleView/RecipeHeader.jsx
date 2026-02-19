@@ -8,11 +8,15 @@ import {
   useTheme,
   Link,
   Collapse,
+  Dialog,
+  DialogTitle,
+  DialogContent,
 } from "@mui/material";
 import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
 import PrintOutlinedIcon from "@mui/icons-material/PrintOutlined";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
-import AccountTreeOutlinedIcon from "@mui/icons-material/AccountTreeOutlined";
+import ViewTimelineOutlinedIcon from "@mui/icons-material/ViewTimelineOutlined";
+import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
@@ -20,13 +24,17 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
+import CloseIcon from "@mui/icons-material/Close";
 import { useRecipe } from "../../../contexts/RecipeContext";
 import { useConstants } from "../../../contexts/ConstantsContext";
 import RecipeImage from "../../common/RecipeImage";
 import TimeDisplay from "../../common/TimeDisplay";
 import RecipeTimes from "../../common/RecipeTimes";
 import { copyRecipeToClipboard } from "../../../utils/recipeTextUtils";
-import GraphModal from "../../views/GraphView/GraphModal";
+import NutritionTooltip from "../../common/NutritionTooltip";
+import { GanttModal } from "../../views/GanttView";
+import { CookingModal } from "../../views/CookingMode";
 import PrintableRecipe from "./PrintableRecipe";
 import DeleteConfirmationDialog from "../../common/DeleteConfirmationDialog";
 import { useRecipeList } from "../../../contexts/RecipeListContext";
@@ -42,7 +50,8 @@ const HEADER_TEXTS = {
     INCREASE_SERVINGS: "Increase servings",
     DECREASE_SERVINGS: "Decrease servings",
     BACK: "Back to recipes",
-    SHOW_GRAPH: "Show recipe graph",
+    SHOW_TIMELINE: "Show cooking timeline",
+    SHOW_COOKING: "Start cooking mode",
     DELETE: "Delete recipe",
   },
   DELETE_DIALOG: {
@@ -90,13 +99,14 @@ const RecipeHeader = ({ recipe }) => {
     tools,
   } = useRecipe();
   const { fetchRecipes } = useRecipeList();
-  const { darkMode } = useTheme();
   const theme = useTheme();
   const { constants } = useConstants();
-  const [openGraph, setOpenGraph] = useState(false);
+  const [openGantt, setOpenGantt] = useState(false);
+  const [openCooking, setOpenCooking] = useState(false);
   const [imageRatio, setImageRatio] = useState(1);
   const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
   const [expandedNotes, setExpandedNotes] = useState(false);
+  const [openOriginalText, setOpenOriginalText] = useState(false);
 
   // Attendre que les constantes soient chargées
   if (!constants) {
@@ -318,9 +328,9 @@ const RecipeHeader = ({ recipe }) => {
                   <ContentCopyOutlinedIcon />
                 </IconButton>
                 <IconButton
-                  onClick={() => setOpenGraph(true)}
+                  onClick={() => setOpenGantt(true)}
                   size="medium"
-                  title={HEADER_TEXTS.ACTIONS.SHOW_GRAPH}
+                  title={HEADER_TEXTS.ACTIONS.SHOW_TIMELINE}
                   sx={{
                     color: "white",
                     padding: "12px",
@@ -331,7 +341,23 @@ const RecipeHeader = ({ recipe }) => {
                     display: { xs: "none", md: "flex" },
                   }}
                 >
-                  <AccountTreeOutlinedIcon />
+                  <ViewTimelineOutlinedIcon />
+                </IconButton>
+                <IconButton
+                  onClick={() => setOpenCooking(true)}
+                  size="medium"
+                  title={HEADER_TEXTS.ACTIONS.SHOW_COOKING}
+                  sx={{
+                    color: "white",
+                    padding: "12px",
+                    ...overlayStyle,
+                    "& .MuiSvgIcon-root": {
+                      fontSize: "1.3rem",
+                    },
+                    display: { xs: "none", md: "flex" },
+                  }}
+                >
+                  <RestaurantMenuIcon />
                 </IconButton>
                 <IconButton
                   onClick={handleDeleteClick}
@@ -350,8 +376,10 @@ const RecipeHeader = ({ recipe }) => {
                 </IconButton>
               </Box>
               {/* Time overlay */}
-              {(recipe.metadata?.totalTime ||
+              {(recipe.metadata?.totalTimeMinutes ||
+                recipe.metadata?.totalTime ||
                 recipe.totalTime ||
+                recipe.metadata?.totalActiveTimeMinutes ||
                 recipe.metadata?.totalCookingTime ||
                 recipe.totalCookingTime) && (
                 <Box
@@ -369,8 +397,9 @@ const RecipeHeader = ({ recipe }) => {
                 >
                   {/* Temps de cuisson */}
                   <RecipeTimes
-                    totalTime={recipe.metadata?.totalTime || recipe.totalTime}
+                    totalTime={recipe.metadata?.totalTimeMinutes || recipe.metadata?.totalTime || recipe.totalTime}
                     totalCookingTime={
+                      recipe.metadata?.totalActiveTimeMinutes ||
                       recipe.metadata?.totalCookingTime ||
                       recipe.totalCookingTime
                     }
@@ -458,6 +487,14 @@ const RecipeHeader = ({ recipe }) => {
                       "Main"}
                   </Typography>
 
+                  {/* Nutrition Tags */}
+                  {(metadata.nutritionTags?.length > 0 || metadata.nutritionPerServing) && (
+                    <NutritionTooltip
+                      nutritionTags={metadata.nutritionTags}
+                      nutritionPerServing={metadata.nutritionPerServing}
+                    />
+                  )}
+
                   {/* Source Info */}
                   {(metadata.nationality ||
                     metadata.author ||
@@ -507,6 +544,30 @@ const RecipeHeader = ({ recipe }) => {
                           </React.Fragment>
                         ))}
                     </Typography>
+                  )}
+
+                  {/* Original recipe text button */}
+                  {recipe.originalText && (
+                    <Button
+                      size="small"
+                      variant="text"
+                      startIcon={<DescriptionOutlinedIcon sx={{ fontSize: "0.9rem" }} />}
+                      onClick={() => setOpenOriginalText(true)}
+                      sx={{
+                        textTransform: "none",
+                        color: "text.secondary",
+                        fontSize: "0.8rem",
+                        fontWeight: 400,
+                        px: 1,
+                        py: 0.25,
+                        mt: 0.5,
+                        alignSelf: "flex-start",
+                        opacity: 0.6,
+                        "&:hover": { opacity: 1, bgcolor: "action.hover" },
+                      }}
+                    >
+                      View original recipe
+                    </Button>
                   )}
 
                   {/* Notes en accordéon */}
@@ -725,11 +786,61 @@ const RecipeHeader = ({ recipe }) => {
         recipeName={recipe?.title}
       />
 
-      <GraphModal
-        open={openGraph}
-        onClose={() => setOpenGraph(false)}
+      <GanttModal
+        open={openGantt}
+        onClose={() => setOpenGantt(false)}
         recipe={recipe}
       />
+
+      <CookingModal
+        open={openCooking}
+        onClose={() => setOpenCooking(false)}
+        recipe={recipe}
+      />
+
+      {/* Original recipe text modal */}
+      <Dialog
+        open={openOriginalText}
+        onClose={() => setOpenOriginalText(false)}
+        maxWidth="md"
+        fullWidth
+        PaperProps={{ sx: { borderRadius: 3 } }}
+      >
+        <DialogTitle
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            pb: 1,
+          }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: 600 }}>
+            Original Recipe
+          </Typography>
+          <IconButton
+            onClick={() => setOpenOriginalText(false)}
+            size="small"
+            sx={{ color: "text.secondary" }}
+          >
+            <CloseIcon fontSize="small" />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent dividers>
+          <Box
+            sx={{
+              whiteSpace: "pre-wrap",
+              fontFamily: "monospace",
+              fontSize: "0.85rem",
+              lineHeight: 1.7,
+              color: "text.secondary",
+              maxHeight: "60vh",
+              overflow: "auto",
+            }}
+          >
+            {recipe.originalText}
+          </Box>
+        </DialogContent>
+      </Dialog>
     </>
   );
 };

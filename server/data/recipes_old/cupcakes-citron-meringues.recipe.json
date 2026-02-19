@@ -1,0 +1,515 @@
+{
+  "metadata": {
+    "title": "Cupcakes Citron Meringu\u00e9s",
+    "description": "Ces cupcakes citron meringu\u00e9s, c'est vraiment le genre de cupcakes que j'adore. Avec cet \u00e9quilibre parfait entre le sucr\u00e9 et l'acidul\u00e9 et surtout un format tellement pratique.",
+    "servings": 16,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "citron",
+      "citron meringu\u00e9",
+      "cupcake",
+      "lemon curd",
+      "meringue suisse",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Cupcake-citron-meringue-1-of-7.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez utiliser du lemon curd d\u00e9j\u00e0 tout pr\u00eat.",
+      "C'est super facile de faire son propre lemon curd.",
+      "Pour \u00e9paissir un lait (v\u00e9g\u00e9tal ou animal), il faut ajouter du jus de citron et laisser reposer 10/15min !",
+      "Le lemon curd ne peut \u00eatre ajout\u00e9 qu'une fois le cupcake cuit.",
+      "Pour conserver plusieurs heures avant de servir, placer au r\u00e9frig\u00e9rateur.",
+      "Quantit\u00e9 de lemon curd : minimum 150g \u00e0 200g."
+    ],
+    "slug": "cupcakes-citron-meringues",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Cupcake-citron-meringue-1-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/08/cupcakes-citron-meringues/",
+    "image": "images/cupcakes-citron-meringues.webp",
+    "createdAt": "2026-02-09T20:24:07.990598",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 36.0,
+    "totalCookingTime": 14.0,
+    "nutritionPerServing": {
+      "calories": 304.4,
+      "protein": 5.6,
+      "fat": 12.9,
+      "carbs": 41.6,
+      "fiber": 3.7,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 225.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure",
+      "name": "levure",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "citron_zestes",
+      "name": "citron, zestes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "zestes",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon zest"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 220.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 220.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "extrait_vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "lait_ribot",
+      "name": "lait ribot/ferment\u00e9e",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "buttermilk"
+    },
+    {
+      "id": "citron_jus",
+      "name": "citron, jus",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "blancs_oeuf",
+      "name": "blancs d'oeuf",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg whites"
+    },
+    {
+      "id": "sucre_meringue",
+      "name": "sucre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel_meringue",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "lemon_curd",
+      "name": "lemon curd",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "lemon curd"
+    }
+  ],
+  "tools": [
+    "Chalumeau",
+    "Robot p\u00e2tissier ou batteur \u00e9lectrique",
+    "Poche \u00e0 douille (douille ronde ou \u00e9toil\u00e9e)",
+    "Casserole (pour bain-marie)",
+    "Bol en inox (pour bain-marie)",
+    "Moule \u00e0 muffins"
+  ],
+  "steps": [
+    {
+      "id": "melange_sec",
+      "action": "Dans un saladier, m\u00e9langer la farine, la levure, les zestes d'un citron et le sel. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "farine",
+        "levure",
+        "citron_zestes",
+        "sel"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cremer_beurre_sucre",
+      "action": "Dans le bol de votre robot ou dans un grand saladier, battre le beurre mou en cr\u00e8me puis ajouter progressivement le sucre et battre \u00e0 haute vitesse pendant 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "beurre",
+        "sucre"
+      ],
+      "produces": "beurre_sucre_creme",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_oeufs",
+      "action": "Ajouter les oeufs un par un et m\u00e9langer \u00e0 chaque ajout.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "beurre_sucre_creme",
+        "oeufs"
+      ],
+      "produces": "appareil_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_liquides",
+      "action": "Ajouter le lait ribot, l'extrait de vanille et le jus d'un citron.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "appareil_oeufs",
+        "lait_ribot",
+        "extrait_vanille",
+        "citron_jus"
+      ],
+      "produces": "appareil_liquide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_farine",
+      "action": "Ajouter progressivement le m\u00e9lange de farine tout en m\u00e9langeant doucement. D\u00e8s que la farine est incorpor\u00e9e, arr\u00eater de m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "appareil_liquide",
+        "melange_sec"
+      ],
+      "produces": "pate_cupcakes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_moules",
+      "action": "Pr\u00e9parer les moules \u00e0 muffins en d\u00e9posant des caissettes en papier dans chaque trou. R\u00e9partir l'appareil dans les caissettes, remplir chaque caissette au \u2154.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "pate_cupcakes"
+      ],
+      "produces": "moules_remplis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_cupcakes",
+      "action": "Enfourner et cuire pendant 20min, v\u00e9rifier la cuisson avec un cure-dent.",
+      "duration": "PT20M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "moules_remplis"
+      ],
+      "produces": "cupcakes_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "cuisson v\u00e9rifi\u00e9e avec cure-dent"
+    },
+    {
+      "id": "refroidir_cupcakes",
+      "action": "Sortir du four et laisser refroidir compl\u00e8tement sur une grille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "cupcakes vanille citron",
+      "uses": [
+        "cupcakes_cuits"
+      ],
+      "produces": "cupcakes_refroidis",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidis"
+    },
+    {
+      "id": "preparer_meringue_base",
+      "action": "Dans un bol en inox, ajouter les blancs d'oeufs, le sucre et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "meringue suisse",
+      "uses": [
+        "blancs_oeuf",
+        "sucre_meringue",
+        "sel_meringue"
+      ],
+      "produces": "melange_meringue_crue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_sucre_bain_marie",
+      "action": "Placer le bol au-dessus d'une casserole avec de l'eau fr\u00e9missante (bain-marie), en vous assurant que le bol ne touche pas l'eau. Tout en fouettant, laisser le sucre fondre pendant 4-6min (le m\u00e9lange ne doit PAS bouillir, temp\u00e9rature 50-60\u00b0C).",
+      "duration": "PT5M",
+      "temperature": 55,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "meringue suisse",
+      "uses": [
+        "melange_meringue_crue"
+      ],
+      "produces": "meringue_fondue",
+      "requires": [],
+      "visualCue": "sucre fondu, temp\u00e9rature 50-60\u00b0C"
+    },
+    {
+      "id": "battre_meringue_mousseuse",
+      "action": "Essuyer le bol et le remettre sur le socle du robot ou sur le plan de travail. Battre le m\u00e9lange \u00e0 vitesse moyenne/basse pendant 2min, jusqu'\u00e0 ce qu'il soit mousseux.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "meringue suisse",
+      "uses": [
+        "meringue_fondue"
+      ],
+      "produces": "meringue_mousseuse",
+      "requires": [],
+      "visualCue": "mousseux"
+    },
+    {
+      "id": "battre_meringue_finale",
+      "action": "Augmenter graduellement la vitesse jusqu'\u00e0 tr\u00e8s haute vitesse, pendant 5min, jusqu'\u00e0 ce que le bol soit froid et que la meringue forme des pics brillants et semi-rigides.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "meringue suisse",
+      "uses": [
+        "meringue_mousseuse"
+      ],
+      "produces": "meringue_suisse",
+      "requires": [],
+      "visualCue": "bol froid, pics brillants et semi-rigides"
+    },
+    {
+      "id": "transvaser_meringue",
+      "action": "Transvaser la meringue dans une poche \u00e0 douille munie d'une douille ronde ou \u00e9toil\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "meringue suisse",
+      "uses": [
+        "meringue_suisse"
+      ],
+      "produces": "meringue_en_poche",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_puits",
+      "action": "A l'aide d'un couteau ou d'une grosse douille, former un petit puits au centre des cupcakes refroidis.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage des cupcakes",
+      "uses": [
+        "cupcakes_refroidis"
+      ],
+      "produces": "cupcakes_avec_puits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_lemon_curd",
+      "action": "Ajouter 1 \u00e0 2 cuill\u00e8res \u00e0 caf\u00e9 de lemon curd dans chaque puits.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage des cupcakes",
+      "uses": [
+        "cupcakes_avec_puits",
+        "lemon_curd"
+      ],
+      "produces": "cupcakes_avec_curd",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pocher_meringue",
+      "action": "Pocher la meringue sur les cupcakes en spirale pour former un gla\u00e7age.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "montage des cupcakes",
+      "uses": [
+        "cupcakes_avec_curd",
+        "meringue_en_poche"
+      ],
+      "produces": "cupcakes_meringues_crus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "carameliser_meringue",
+      "action": "Pour caram\u00e9liser la meringue, passer rapidement un chalumeau sur la meringue. Alternative : cuire rapidement sous le grill du four \u00e0 200\u00b0C pendant 1-2min.",
+      "duration": "PT2M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage des cupcakes",
+      "uses": [
+        "cupcakes_meringues_crus"
+      ],
+      "produces": "cupcakes_citron_meringues",
+      "requires": [],
+      "visualCue": "meringue caram\u00e9lis\u00e9e"
+    }
+  ],
+  "finalState": "cupcakes_citron_meringues",
+  "originalText": "Cupcakes Citron Meringu\u00e9s (fourr\u00e9s au lemon curd) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 juin 2021\nCupcakes Citron Meringu\u00e9s\nAcc\u00e9der directement \u00e0 la recette\nCes cupcakes citron meringu\u00e9s, c\u2019est vraiment le genre de cupcakes que j\u2019adore. Avec cet \u00e9quilibre parfait entre le sucr\u00e9 et l\u2019acidul\u00e9 et surtout un format tellement pratique. Pratique car il s\u2019agit d\u2019une concentr\u00e9 de gourmandise mais au format r\u00e9duit, le r\u00eave. Surtout pour le summer body en construction de certains ou juste la retenue des autres. En gros vous prenez : des cupcakes \u00e0 la vanille bien moelleux, quelques cuill\u00e8res de lemon curd parfaitement acidul\u00e9 et une meringue suisse ultra facile \u00e0 faire et pouf vous avez des cupcakes citron meringu\u00e9s de folie !\nIci, vous pouvez utiliser du lemon curd d\u00e9j\u00e0 tout pr\u00eat. Mais, est-ce que vous saviez que c\u2019est super facile de faire son propre\nlemon curd\n? Tout ce dont vous avez besoin, c\u2019est d\u2019une poign\u00e9e d\u2019ingr\u00e9dients, d\u2019une casserole, de quelques ustensiles et de 10 minutes ! Vous devriez probablement avoir tous les ingr\u00e9dients \u00e0 port\u00e9e de main.\nAutre particularit\u00e9 de cette recette, la meringue suisse. Beaucoup sont intimid\u00e9s par la pr\u00e9paration de cette meringue. Et je vous comprends, \u00e7a me stressait \u00e0 mort avant. Mais plus maintenant avec cette petite technique que m\u2019a montr\u00e9 une copine. Et regardez moi juste cette consistance incroyable \u2013 un gla\u00e7age guimauve d\u00e9licieux et l\u00e9ger qui peut envoie du lourd (si je peux me permettre).\nCupcakes Citron Meringu\u00e9s\nDaniela\nVous \u00eates fan de citron meringu\u00e9? Vous allez adorer la version cupcake : un cupcake \u00e0 la vanille fourr\u00e9 au lemon curd onctueux et succulent, le tout recouvert d'un gla\u00e7age meringu\u00e9 . Une folie !\n4.52\n/5 avec\n78\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n16\ncupcakes\nEquipment\n*Chalumeau\nIngr\u00e9dients\n1x\n2x\n3x\nCupcakes vanille citron\n225\ng\nde farine\n2\nc\u00e0c de levure\n\u00bd\nc\u00e0c de sel\n220\ng\nde beurre \u00e0 temp\u00e9rature ambiante\n220\ng\nde sucre\n4\noeufs \u00e0 temp\u00e9rature ambiante\n1\nc-\u00e0-c d\u2019extrait de vanille\n60\nml\nde lait ribot/ferment\u00e9e \u00e0 temp\u00e9rature ambiante\n1\ncitron\nMeringue\n4\nblancs d\u2019oeuf\n200\ng\nde sucre\n1\npinc\u00e9e de sel\nLemon curd\nInstructions\nCupcakes vanille citron :\nDans un saladier, m\u00e9langer la farine, la levure, les zestes d\u2019un citron et le sel. R\u00e9server.\nDans le bol de votre robot ou dans un grand saladier \u00e0 l\u2019aide d\u2019un batteur \u00e9lectrique ou d\u2019un fouet, battre le beurre mou en cr\u00e8me puis ajouter progressivement le sucre et battre \u00e0 haute vitesse pendant 2 min.\nAjouter les oeufs (\u00e0 temp\u00e9rature sinon le beurre risque de trancher), un par un et m\u00e9langer \u00e0 chaque ajout. Ajouter le lait ribot ou ferment\u00e9 (\u00e0 temp\u00e9rature ambiante), l\u2019extrait de vanille, le jus d\u2019un citron.\nAjouter ensuite progressivement le m\u00e9lange de farine tout en m\u00e9langeant doucement. D\u00e8s que la farine est incorpor\u00e9e, arr\u00eatez de m\u00e9langer.\nPr\u00e9chauffer le four \u00e0 175\u00b0C.\nPr\u00e9parer les moules \u00e0 muffins en d\u00e9posant des caissettes en papier dans chaque trou du moule. R\u00e9partir l\u2019appareil dans les caissettes, remplir chaque caissette au \u2154.\nEnfourner et cuire pendant 20 minutes, v\u00e9rifier la cuisson avec un cure-dent ou la pointe d\u2019un couteau.\nSortir du four et laisser refroidir compl\u00e8tement sur une grille.\nMeringue suisse :\nDans le bol de votre robot ou dans un saladier en inox, ajouter les blancs d\u2019oeufs, le sucre et le sel.\nPlacer le bol au-dessus d\u2019une casserole avec de l\u2019eau fr\u00e9missante, en vous assurant que le bol ne touche pas l\u2019eau. Tout en fouettant, laisser le sucre fondre, le m\u00e9lange ne doit PAS bouillir, cela prend environ 4-6 minutes. Le m\u00e9lange sera chaud environ 50 \u00e0 60\u00b0C. Vous pouvez sentir entre le bout de vos doigts si les grains de sucre ont fondu. Une fois le m\u00e9lange compl\u00e8tement fondu, essuyer et remettre le bol sur son socle ou sur le plan de travail.\nBattre le m\u00e9lange \u00e0 vitesse moyenne/basse pendant environ 2 minutes, jusqu\u2019\u00e0 ce que le m\u00e9lange soit mousseux. Augmenter graduellement la vitesse jusqu\u2019\u00e0 tr\u00e8s haute vitesse, environ 5 minutes, jusqu\u2019\u00e0 ce que le bol soit froid. Vous devez obtenir une consistance bien lisse et glossy, et de jolis becs d\u2019oiseau sur votre fouet(en d\u2019autres termes : des pics brillants et semi-rigides qui ont un peu de courbure)\nTransvaser la meringue dans une poche \u00e0 douille munies d\u2019une douille ronde ou \u00e9toil\u00e9e.\nMontage des cupcakes :\nA l\u2019aide d\u2019un couteau ou d\u2019une grosse douille, former un petit puits au centre des cupcakes pour les garnir. Ajoutez 1 \u00e0 2 cuill\u00e8res \u00e0 caf\u00e9 de lemon curd dans le puits. Pocher la meringue sur les cupcakes en spirale pour former un joli gla\u00e7age.\nPour caram\u00e9liser la meringue, passer rapidement un chalumeau sur la meringue. Vous pouvez aussi cuire rapidement les cupcakes sous le grill du four \u00e0 200\u00b0C (mais gardez les yeux dessus, \u00e7a prend 1 ou 2 min!).\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nCitron\n,\nHiver\n,\nMuffins et Scones\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncitron\n,\ncitron meringu\u00e9\n,\ncupcake\n,\nlemon curd\n,\nmeringue suisse\n,\nque faire avec du lemon curd\n,\nrecette cupcake\n,\nrecette cupcake citron\n,\nrecette g\u00e2teau citron\n,\nrecette lemon curd\nLasagnes V\u00e9g\u00e9tariennes aux Aubergines et Mozzarella\nSoupe froide Courgettes, Petits Pois et Granola\n12 thoughts on \u201cCupcakes Citron Meringu\u00e9s\u201d\n\u00c9milie\ndit\u00a0:\n1 avril 2022 \u00e0 12 h 04 min\nBonjour,\nla liste des  ingr\u00e9dients du cup cake n\u2019a pas d\u2019\u0153uf, par contre dans les institutions on doit ajouter des \u0153ufs. Donc je me demande combien d\u2019\u0153ufs faut il merci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n1 avril 2022 \u00e0 12 h 35 min\nBonjour Emilie, il y a bien la quantit\u00e9 d\u2019\u0153ufs dans la liste des ingr\u00e9dients des cupcakes : 4 oeufs \u00e0 temp\u00e9ratures ambiantes. C\u2019est important pour \u00e9viter que la pr\u00e9paration ne tranche ! Bonne journ\u00e9e\nchargement\u2026\nR\u00e9pondre\nAmal\ndit\u00a0:\n2 avril 2022 \u00e0 17 h 12 min\nBonjour, merci pour votre recette \u00e7a a l\u2019air d\u00e9licieux !\nJ\u2019ai envie de la tester pour amener chez des amis, comment est-ce que je peux les conserver en attendant d\u2019y aller ? Au frigo ou plut\u00f4t \u00e0 temp\u00e9rature ambiante ?\nMerci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n11 avril 2022 \u00e0 10 h 13 min\nBonjour Amal, merci \u00e0 vous pour votre commentaire.\nPlut\u00f4t au r\u00e9frig\u00e9rateur s\u2019il s\u2019agit de plusieurs heures avant de vous rendre chez des amis.\nchargement\u2026\nR\u00e9pondre\nDOGIMONT\ndit\u00a0:\n28 avril 2022 \u00e0 15 h 15 min\nBonjour, le lait ribbo ou lait ferment\u00e9 est il obligatoire car par chez moi je trouve pas , merci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n4 mai 2022 \u00e0 9 h 12 min\nNon il n\u2019est pas obligatoire ! Mais j\u2019ai une astuce pour \u00e9paissir un lait (v\u00e9g\u00e9tal ou animal), il faut ajouter du jus de citron et laisser reposer 10/15min !\nchargement\u2026\nR\u00e9pondre\nSYLVIE kpi\ndit\u00a0:\n3 octobre 2022 \u00e0 8 h 58 min\nBonjour et merci cette recette m\u2019inspire un petit d\u00e9jeuner au avec mes coll\u00e8gues.  Puis-je les pr\u00e9parer la veille ou dois-je attendre le lendemain pour la meringue. Merci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n4 novembre 2022 \u00e0 10 h 04 min\nBonjour Sylvie, mille excuses je pensais vous avoir r\u00e9pondu. J\u2019imagine que vous avez improvis\u00e9 ou tout simplement pr\u00e9pare autre chose. Si c\u2019est pour un petit dej la veille, je pense qu\u2019il est possible de pr\u00e9parer les cupcake avec la meringue la veille et de les placer au r\u00e9frig\u00e9rateur. Encore d\u00e9sol\u00e9e :/\nchargement\u2026\nR\u00e9pondre\nChlo\u00e9\ndit\u00a0:\n1 novembre 2022 \u00e0 22 h 23 min\nBonjour,\nQuelle quantit\u00e9 de lemon curd faut-il faire pour 16 cupcakes svp?\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n4 novembre 2022 \u00e0 9 h 46 min\nBonjour Chlo\u00e9, je dirais minimum 150g \u00e0 200g pour les plus gourmands !\nchargement\u2026\nR\u00e9pondre\nChristine\ndit\u00a0:\n30 ao\u00fbt 2023 \u00e0 20 h 46 min\nBonjour est-ce qu\u2019on peut mettre le melon curd dans la p\u00e2te avant la cuisson  ? Si oui comment s\u2019y prendre svp. Merci\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n1 septembre 2023 \u00e0 14 h 33 min\nBonjour Christine, malheureusement dans cette recette, le lemon curd ne peut \u00eatre ajout\u00e9 qu\u2019une fois le cupcake cuit. La p\u00e2te crue du cupcake est trop liquide pour y ajouter directement le lemon curd. Si vous voulez vraiment essayer, vous pouvez congeler des petites boules de lemon curd (1 cac de lemon curd sur du papier sulfuris\u00e9) et dans le moule \u00e0 cupcake ajouter un peu de p\u00e2te, puis un la boule de lemon curd congel\u00e9e et recouvrir de p\u00e2te \u00e0 cupcake ! Tenez nous au courant si vous avez tent\u00e9 le coup \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.52 from 78 votes (\n76 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Salsa \u00e0 la Fraise et Coriandre",
+    "description": "Pour changer un peu de la salsa classique, j'ai eu envie de tester la Salsa \u00e0 la Fraise et Coriandre ! Elle est \u00e0 la fois fra\u00eeche et surprenante. Parfum\u00e9e et douce !",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "fraise",
+      "coriandre",
+      "salsa",
+      "printemps",
+      "\u00e9t\u00e9",
+      "sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Salsa-fraise-1-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Elle est pr\u00eate en 10min chrono.",
+      "Elle ne se conserve pas. Donc une fois que vous y avez ajout\u00e9 le jus de citron, il faut la servir dans l'heure. Sinon les fraises cuisent et deviennent un peu visqueuses.",
+      "Vous pouvez tout \u00e0 fait manger cette Salsa \u00e0 la Fraise et Coriandre sur des petits toasts. Ou en faisant vos tortillas vous-m\u00eame \u00e0 partir de wraps !"
+    ],
+    "slug": "salsa-a-la-fraise-et-coriandre",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Salsa-fraise-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/22/salsa-a-la-fraise-et-coriandre/",
+    "image": "images/salsa-a-la-fraise-et-coriandre.jpg",
+    "createdAt": "2026-02-09T21:22:06.567516",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 170.2,
+      "protein": 3.9,
+      "fat": 1.2,
+      "carbs": 40.4,
+      "fiber": 9.6,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 5,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "strawberries",
+      "name": "fraises",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "strawberries"
+    },
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9",
+      "notes": "env 120g",
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "cilantro",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": null,
+      "notes": "botte",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "lime_juice",
+      "name": "citron vert, jus",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lime juice"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [],
+  "steps": [
+    {
+      "id": "dice_ingredients",
+      "action": "Couper les fraises, le concombre \u00e9pluch\u00e9 et l'oignon en tout petits d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "strawberries",
+        "cucumber",
+        "red_onion"
+      ],
+      "produces": "diced_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_cilantro",
+      "action": "Hacher finement la coriandre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cilantro"
+      ],
+      "produces": "chopped_cilantro",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_lime",
+      "action": "Presser un citron vert.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lime_juice"
+      ],
+      "produces": "fresh_lime_juice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_salsa",
+      "action": "Assembler tous les ingr\u00e9dients dans un saladier et d\u00e9guster avec des tortillas !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_vegetables",
+        "chopped_cilantro",
+        "fresh_lime_juice",
+        "salt",
+        "pepper"
+      ],
+      "produces": "salsa_fraise_coriandre",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salsa_fraise_coriandre",
+  "originalText": "Salsa \u00e0 la Fraise et Coriandre\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 juin 2022\nSalsa \u00e0 la Fraise et Coriandre\nAller \u00e0 la recette\nPour changer un peu de la\nsalsa classique\n, j\u2019ai eu envie de tester la Salsa \u00e0 la Fraise et Coriandre\u00a0 !\nEh bien, sachez que le test est tr\u00e8s concluant !\nJe dois bien avouer que mon jugement est s\u00fbrement biais\u00e9. J\u2019adore les fraises. J\u2019adore la coriandre. Et j\u2019adore le citron vert. Du coup, il y avait peu de chances que cela ne me plaise pas.\nMais cette Salsa \u00e0 la Fraise et Coriandre est vraiment int\u00e9ressante.\nElle est \u00e0 la fois fra\u00eeche et surprenante. Parfum\u00e9e et douce !\nElle est pr\u00eate en 10min chrono.\nPar contre, elle ne se conserve pas. Donc une fois que vous y avez ajout\u00e9 le jus de citron, il faut la servir dans l\u2019heure.\nSinon les fraises cuisent et deviennent un peu visqueuses. Ce qui, tout \u00e0 coup, est beaucoup moins sympa. En tout cas pour moi !\nPour tout vous dire, un jour, j\u2019ai une\nsalsa classique\n. J\u2019adore en manger avec du riz blanc ! Et le lendemain, j\u2019avais encore envie de salsa. Mais je n\u2019avais plus de tomates. Mais j\u2019avais des fraises. Et voil\u00e0 comment les fraises ont termin\u00e9 dans ce saladier !\nEt si vous n\u2019avez pas de tortillas, vous pouvez tout \u00e0 fait manger cette Salsa \u00e0 la Fraise et Coriandre sur des petits toasts. Ou en faisant vos tortillas vous-m\u00eame \u00e0 partir de wraps !\nSalsa \u00e0 la Fraise et Coriandre\nNatacha\n4.52\n/5 avec\n124\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n1\ngrand bol\nIngr\u00e9dients\n1x\n2x\n3x\n300\ng\nde fraises\n\u00bc\nde concombre\nenv 120g\n1\noignon rouge\n\u00bd\nbotte de coriandre\nle jus d\u20191 citron vert\nsel\npoivre\nInstructions\nCouper les fraises, le concombre \u00e9pluch\u00e9 et l\u2019oignon en tout petits d\u00e9s.\nHacher finement la coriandre\nPresser un citron vert.\nAssembler tous les ingr\u00e9dients dans un saladier et d\u00e9guster avec des tortillas !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nFraise\n,\nPlats en Sauce\n,\nPrintemps\nTags:\nfraise\n,\nfraise coriandre\n,\nsalsa fraise\n,\nsalsa maison\n,\nsauce fraise\nSpaetzle aux tomates cerises ail et burrata\nSalade Ni\u00e7oise et son Thon V\u00e9g\u00e9\n1 thought on \u201cSalsa \u00e0 la Fraise et Coriandre\u00a0\u201d\nsylvie Deconninck\ndit\u00a0:\n7 juillet 2022 \u00e0 21 h 48 min\nRecette tr\u00e8s sympa. J\u2019ai test\u00e9 avec un filet de sirop d\u2019Agave et j\u2019ai tout mis dans la tortilla que j\u2019ai ensuite roul\u00e9e (avec un petit peu de cr\u00e8me fra\u00eeche \u00e9paisse). Trop bon!\nchargement\u2026\nR\u00e9pondre\n4.52 from 124 votes (\n123 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "title": "Artichauts r\u00f4tis \u00e0 l'ail et \u00e0 la feta",
+    "description": "Ces Artichauts r\u00f4tis \u00e0 l'ail et \u00e0 la feta sont un vrai r\u00e9gal ! C'est parfait pour un repas l\u00e9ger ou sur une table de plats \u00e0 partager.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "artichaut",
+      "printemps",
+      "plat au four",
+      "accompagnement",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Artichaus-rotis-ail-et-feta-8-of-8.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les artichauts, une fois r\u00f4tis, d\u00e9veloppent une saveur douce et l\u00e9g\u00e8rement noisette qui se marie parfaitement avec l'ail et la feta.",
+      "En plus, leur texture devient tendre avec des bords croustillants.",
+      "Pour d'autres id\u00e9es de recettes avec des artichauts, \u00e7a se passe par ici !"
+    ],
+    "slug": "artichauts-rotis-a-l-ail-et-a-la-feta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Artichaus-rotis-ail-et-feta-8-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/06/21/artichauts-rotis-a-lail-et-a-la-feta/",
+    "image": "images/artichauts-rotis-a-l-ail-et-a-la-feta.webp",
+    "createdAt": "2026-02-09T22:11:57.173560",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 193.6,
+      "protein": 13.8,
+      "fat": 0.9,
+      "carbs": 41.2,
+      "fiber": 20.6,
+      "confidence": "low",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "artichokes",
+      "name": "artichauts poivrade",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Artichoke"
+    },
+    {
+      "id": "garlic_head",
+      "name": "t\u00eate d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic head"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "dried_dill",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "feta",
+      "name": "feta \u00e9miett\u00e9e",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "crumbled feta"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge \u00e9minc\u00e9",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Red onion"
+    },
+    {
+      "id": "capers",
+      "name": "c\u00e2pres",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    }
+  ],
+  "tools": [
+    "cocotte (avec couvercle)"
+  ],
+  "steps": [
+    {
+      "id": "make_lemon_water",
+      "action": "Pressez un citron dans un saladier avec de l'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "artichauts_rotis",
+      "uses": [
+        "lemon"
+      ],
+      "produces": "lemon_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_artichokes",
+      "action": "Tournez les artichauts puis coupez-les en deux. \u00d4tez le foin au centre s'il y en a.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "artichauts_rotis",
+      "uses": [
+        "artichokes"
+      ],
+      "produces": "prepared_artichokes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "soak_artichokes",
+      "action": "D\u00e9posez les artichauts dans l'eau citronn\u00e9e au fur et \u00e0 mesure pour \u00e9viter qu'ils ne noircissent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "artichauts_rotis",
+      "uses": [
+        "prepared_artichokes",
+        "lemon_water"
+      ],
+      "produces": "soaked_artichokes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_garlic",
+      "action": "Placez-les dans une cocotte, avec la t\u00eate d'ail dont vous aurez coup\u00e9 le haut. Badigeonner d'huile, d'origan et de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "artichauts_rotis",
+      "uses": [
+        "soaked_artichokes",
+        "garlic_head",
+        "olive_oil",
+        "oregano",
+        "salt"
+      ],
+      "produces": "seasoned_artichokes_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_artichokes",
+      "action": "Refermez la cocotte et enfournez \u00e0 200\u00b0C pour 45min.",
+      "duration": "PT45M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "artichauts_rotis",
+      "uses": [
+        "seasoned_artichokes_garlic"
+      ],
+      "produces": "roasted_artichokes_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "extract_roasted_garlic",
+      "action": "Une fois que les artichauts sont cuits, pr\u00e9levez la t\u00eate d'ail et pressez-la pour en sortir l'ail cuit.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "roasted_artichokes_garlic"
+      ],
+      "produces": "roasted_garlic_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langez-le avec le yaourt grec, le jus d'un citron, l'aneth s\u00e9ch\u00e9, le sel et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "roasted_garlic_paste",
+        "greek_yogurt",
+        "lemon",
+        "dried_dill",
+        "salt",
+        "pepper"
+      ],
+      "produces": "yogurt_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_sauce",
+      "action": "\u00c9talez la sauce sur une assiette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "yogurt_sauce"
+      ],
+      "produces": "plated_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_dish",
+      "action": "D\u00e9posez les artichauts par-dessus avec la feta \u00e9miett\u00e9e, les c\u00e2pres et l'oignon rouge \u00e9minc\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "roasted_artichokes_garlic",
+        "feta",
+        "capers",
+        "red_onion",
+        "plated_sauce"
+      ],
+      "produces": "artichauts_rotis_ail_feta",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "artichauts_rotis_ail_feta",
+  "originalText": "Artichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 juin 2024\nArtichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\nCes Artichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta sont un vrai r\u00e9gal ! C\u2019est parfait pour un repas l\u00e9ger ou sur une table de plats \u00e0 partager.\nLes artichauts, une fois r\u00f4tis, d\u00e9veloppent une saveur douce et l\u00e9g\u00e8rement noisette qui se marie parfaitement avec l\u2019ail et la feta.\nEn plus, leur texture devient tendre avec des bords croustillants. C\u2019est tr\u00e8s int\u00e9ressant gustativement parlant !\nJe cuisine peu d\u2019artichauts frais pour \u00eatre honn\u00eate. Car je trouve qu\u2019ils sont longs \u00e0 pr\u00e9parer. Et souvent j\u2019estime que le jeu n\u2019en vaut pas la chandelle.\nCela \u00e9tant dit, j\u2019avais quand m\u00eame fait l\u2019effort d\u2019\u00e9crire un article expliquant comment tourner les artichauts\n.\nJ\u2019ai tendance \u00e0 plut\u00f4t acheter des c\u0153urs d\u2019artichauts surgel\u00e9s. Ou \u00e0 aller en manger chez mes parents. Mon p\u00e8re est un des seuls \u00eatres humains de cette plan\u00e8te qui semble appr\u00e9cier l\u2019exercice. Et vous, flemme ou pas flemme ?\nToujours est-il que pour cette recette, j\u2019ai fait l\u2019effort de tourner mes artichauts ! J\u2019esp\u00e8re que vous \u00eates fiers de moi ! J\u2019avais pas trop le choix en vrai. On ne trouve pas d\u2019artichauts poivrades surgel\u00e9s \u00e0 ma connaissance.\nDonc, je disais que j\u2019ai fait r\u00f4tir les artichauts. Et que la texture est super int\u00e9ressante.\nEt comme le nom de la recette l\u2019indique : Artichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta. J\u2019ai ajout\u00e9 de la feta.\nOn ne se refait pas !\nJ\u2019ai fait une sauce toute douce au yaourt et \u00e0 l\u2019aneth. J\u2019ai pos\u00e9 les artichauts par-dessus. Et pour finir en beaut\u00e9, j\u2019ai ajout\u00e9 de la feta \u00e9miett\u00e9e, des c\u00e2pres et des oignons rouges !\nVous allez vous r\u00e9galer !\nEt pour d\u2019autres id\u00e9es de recettes avec des artichauts, \u00e7a se passe par ici !\nArtichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\n4.55\n/5 avec\n81\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les artichauts r\u00f4tis\n1\ncitron\n5\nartichauts poivrade\n1\nt\u00eate d\u2019ail\nhuile d\u2019olive\norigan\nsel\nPour la sauce\n3\nc\u00e0s de yaourt grec\nle jus d\u2019un citron\n\u00bd\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\nsel\npoivre\nPour les toppings\nde la feta \u00e9miett\u00e9e\nde l\u2019oignon rouge \u00e9minc\u00e9\ndes c\u00e2pres\nInstructions\nPour les artichauts\nPressez un citron dans un saladier avec de l\u2019eau.\nTournez les artichauts puis coupez-les en deux. \u00d4tez le foin au centre s\u2019il y en a.\nD\u00e9posez les artichauts dans l\u2019eau citronn\u00e9e au fur et \u00e0 mesure pour \u00e9viter qu\u2019ils ne noircissent.\nPlacez-les dans une cocotte, avec la t\u00eate d\u2019ail dont vous aurez coup\u00e9 le haut. Badigeonner d\u2019huile, d\u2019origan et de sel.\nRefermez la cocotte et enfournez \u00e0 200\u00b0C pour 45min.\nPour la sauce\nUne fois que les artichauts sont cuits. Pr\u00e9levez la t\u00eate d\u2019ail et pressez-la pour en sortir l\u2019ail cuit.\nM\u00e9langez le avec le reste des ingr\u00e9dients de la sauce.\nPour le service\n\u00c9talez la sauce sur une assiette. D\u00e9posez les artichauts par-dessus avec la feta, les c\u00e2pres et l\u2019oignon rouge.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nArtichaut\n,\nPlats au Four\n,\nPrintemps\nGalettes de petits pois \u00e0 l\u2019indienne\nTarte soleil aux \u00e9pinards et ricotta\n1 thought on \u201cArtichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\u201d\ncoco\ndit\u00a0:\n22 avril 2025 \u00e0 16 h 49 min\nmais euh\u2026. \u00e0 la cocotte c\u2019est pas roti du coup ?\nchargement\u2026\nR\u00e9pondre\n4.55 from 81 votes (\n80 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "title": "F\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises",
+    "description": "J'adore cette recette de f\u00eata grill\u00e9e au four aux olives et tomates cerises ! Voici la recette \"traditionnelle\" de ma famille en Gr\u00e8ce.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "feta au four",
+      "que faire avec de la feta",
+      "recette feta",
+      "\u00c9t\u00e9",
+      "Tomate"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Feta-grillee-olives-2-of-3.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette que j'ai en stock depuis l'\u00e9t\u00e9 dernier.",
+      "Version de ma famille en Gr\u00e8ce.",
+      "Tr\u00e8s bon avec une salade ou un peu de riz.",
+      "Il ne faut pas h\u00e9siter \u00e0 mettre plein d'oignons, des tomates et des olives."
+    ],
+    "slug": "feta-grillee-au-four-aux-olives-et-tomates-cerises",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Feta-grillee-olives-2-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/28/feta-grillee-au-four-aux-olives-et-tomates-cerises/",
+    "image": "images/feta-grillee-au-four-aux-olives-et-tomates-cerises.jpg",
+    "createdAt": "2026-02-09T20:25:10.035960",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 553.0,
+      "protein": 20.4,
+      "fat": 36.4,
+      "carbs": 31.1,
+      "fiber": 12.1,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "bloc",
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "cherry_tomatoes",
+      "name": "tomates cerises",
+      "quantity": 8.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "m\u00fbres coup\u00e9es",
+      "notes": "7-10 tomates",
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en fines lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "black_olives",
+      "name": "olives noires",
+      "quantity": 11.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "10-12 petites olives",
+      "optional": false,
+      "name_en": "Black olives"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre du moulin",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "2 tours",
+      "optional": false,
+      "name_en": "Black pepper"
+    },
+    {
+      "id": "oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    }
+  ],
+  "tools": [
+    "Petit plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four en mode grill \u00e0 220\u00b0C.",
+      "duration": null,
+      "temperature": 220,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_feta",
+      "action": "Disposer la f\u00eata dans un petit plat qui va au four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta"
+      ],
+      "produces": "feta_in_dish",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "Couper les tomates et l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cherry_tomatoes",
+        "red_onion"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_toppings",
+      "action": "D\u00e9poser les tomates, l'oignon et les olives sur et autour de la f\u00eata.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta_in_dish",
+        "cut_vegetables",
+        "black_olives"
+      ],
+      "produces": "feta_with_toppings",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_seasonings",
+      "action": "Verser l'huile au dessus, puis le poivre et l'origan.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta_with_toppings",
+        "olive_oil",
+        "pepper",
+        "oregano"
+      ],
+      "produces": "seasoned_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner en haut du four pour 20min.",
+      "duration": "PT20M",
+      "temperature": 220,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_feta"
+      ],
+      "produces": "baked_feta",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "C'est pr\u00eat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_feta"
+      ],
+      "produces": "feta_grillee_olives_tomates",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "feta_grillee_olives_tomates",
+  "originalText": "F\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 juin 2021\nF\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises\nJ\u2019adore cette recette de f\u00eata grill\u00e9e au four aux olives et tomates cerises !\nPour tout vous dire, c\u2019est une recette que j\u2019ai en stock depuis l\u2019\u00e9t\u00e9 dernier et que je n\u2019avais pas eu le temps de vous partager ! Et depuis, il y a eu toute cette trend de folie sur\nTiktok\nsur la sauce pour les p\u00e2tes \u00e0 base de f\u00eata au four ! Vous l\u2019avez d\u00e9j\u00e0 test\u00e9 d\u2019ailleurs ?\nJe fais de la f\u00eata au four depuis longtemps, mais je n\u2019ai jamais test\u00e9 de la m\u00e9langer avec des p\u00e2tes ! C\u2019est sur ma todo list pour cet \u00e9t\u00e9 \ud83d\ude42\nVoici la recette que je fais habituellement\n, qui est la recette \u201ctraditionnelle\u201d de ma famille en Gr\u00e8ce !\nL\u00e0, j\u2019avais envie de faire un peu diff\u00e9rent. D\u2019o\u00f9 cette version de f\u00eata grill\u00e9e au four aux olives et tomates cerises ! Et les deux sont tr\u00e8s bonnes !\nF\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises\nNatacha\n4.54\n/5 avec\n130\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nbloc de f\u00eata de 200g\n7-10 to\nmates cerises m\u00fbres coup\u00e9es\n\u00bd\noignon rouge en fines lamelles\nenv 30g\n10-12\npetites olives noires\n2\nc-\u00e0-s d\u2019huile d\u2019olive\n2 to\nurs de poivre du moulin\n\u00bd\nc-\u00e0-c d\u2019origan s\u00e9ch\u00e9\nInstructions\nPr\u00e9chauffer le four en mode grill \u00e0 220 degr\u00e9s.\nDisposez la f\u00eata dans un petit plat qui va au four.\nCoupez les tomates et l\u2019oignon.\nD\u00e9posez les tomates, l\u2019oignon et les olives sur et autour de la f\u00eata.\nVersez l\u2019huile au dessus, puis le poivre et l\u2019origan.\nEnfournez en haut du four pour 20 \u00e0 25min.\nC\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\n,\nTomate\nTags:\nfeta au four\n,\nque faire avec de la feta\n,\nrecette feta\nMini Babkas au Pesto\nSamoussas V\u00e9g\u00e9tariens au Curry\n5 thoughts on \u201cF\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises\u201d\nLadyMilonguera\ndit\u00a0:\n28 juin 2021 \u00e0 11 h 41 min\nUne chouette id\u00e9e cette feta grill\u00e9e.\nchargement\u2026\nR\u00e9pondre\nBibi\ndit\u00a0:\n6 juillet 2021 \u00e0 13 h 08 min\nTrop bonne !\nBuen\u00edsima !\nIl ne faut pas h\u00e9siter \u00e0 mettre plein d\u2019oignons, des tomates et des olives.\nC\u2019est un r\u00e9gal pour les papilles \ud83d\ude0b et en toute simplicit\u00e9.\nchargement\u2026\nR\u00e9pondre\nMarilo\u00e9\ndit\u00a0:\n29 ao\u00fbt 2021 \u00e0 20 h 49 min\nTr\u00e8s bon, en faisant bien griller les tomates \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 ao\u00fbt 2021 \u00e0 16 h 15 min\nMerci !\nchargement\u2026\nR\u00e9pondre\nCl\u00e9mence\ndit\u00a0:\n30 octobre 2022 \u00e0 15 h 38 min\nExcellente recette ! C\u2019est tr\u00e8s bon avec une salade ou un peu de riz. Merci pour ces recettes toujours originales et savoureuses.\nchargement\u2026\nR\u00e9pondre\n4.54 from 130 votes (\n126 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

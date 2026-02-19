@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "title": "Cake aux poires poch\u00e9es aux \u00e9pices et rhum : un dessert facile et moelleux",
+    "description": "Le cake aux poires poch\u00e9es aux \u00e9pices et au rhum est un dessert moelleux qui a la classe ! Avec sa texture et ses poires fondantes d\u00e9licatement parfum\u00e9es, il a tout pour s\u00e9duire les amateurs de douceurs automnales.",
+    "servings": 1,
+    "prepTime": "PT30M",
+    "cookTime": "PT80M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "automne",
+      "poire",
+      "id\u00e9e de dessert fruit",
+      "\u00e9pices",
+      "rhum"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Cake-epices-poires-pochees-1-of-3.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le visuel original, avec les poires enti\u00e8res dress\u00e9es dans la p\u00e2te, le rend parfait pour une occasion sp\u00e9ciale.",
+      "Si vous pr\u00e9f\u00e9rez \u00e9viter l'alcool, il est tout \u00e0 fait possible de pocher les poires sans rhum tout en gardant un go\u00fbt riche et parfum\u00e9.",
+      "Plus vous les laissez pocher doucement, plus elles seront fondantes et bien impr\u00e9gn\u00e9es des ar\u00f4mes.",
+      "Laisser le cake refroidir compl\u00e8tement avant de le couper."
+    ],
+    "slug": "cake-aux-poires-pochees-aux-epices-et-rhum-un-dessert-facile-et-moelleux",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Cake-epices-poires-pochees-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/03/12/cake-poires-pochees-epices-rhum/",
+    "image": "images/cake-aux-poires-pochees-aux-epices-et-rhum-un-dessert-facile-et-moelleux.webp",
+    "createdAt": "2026-02-09T22:40:12.135271",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 80.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 4089.7,
+      "protein": 46.2,
+      "fat": 142.3,
+      "carbs": 610.5,
+      "fiber": 30.1,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 13,
+      "totalIngredients": 14,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sucre_poire",
+      "name": "sucre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "cannelle_baton",
+      "name": "b\u00e2ton de cannelle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon stick"
+    },
+    {
+      "id": "badianes",
+      "name": "badianes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Star anise"
+    },
+    {
+      "id": "cardamomes",
+      "name": "cardamomes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cardamom"
+    },
+    {
+      "id": "clous_girofle",
+      "name": "clous de girofle",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "rhum_poire",
+      "name": "rhum",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rum"
+    },
+    {
+      "id": "poires",
+      "name": "poires",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pears"
+    },
+    {
+      "id": "beurre_pommade",
+      "name": "beurre pommade",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "softened butter"
+    },
+    {
+      "id": "sucre_cake",
+      "name": "sucre",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 190.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "poudre_amande",
+      "name": "poudre d'amande",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond powder"
+    },
+    {
+      "id": "levure_chimique",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "extrait_vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "cannelle_moulue",
+      "name": "cannelle moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "gingembre_moulu",
+      "name": "gingembre moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground ginger"
+    },
+    {
+      "id": "noix_muscade_moulue",
+      "name": "noix de muscade moulue",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "clou_girofle_moulu",
+      "name": "clou de girofle moulu",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cloves"
+    },
+    {
+      "id": "rhum_cake",
+      "name": "rhum",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rum"
+    }
+  ],
+  "tools": [
+    "Casserole suffisamment grande pour 4 poires",
+    "Moule \u00e0 cake"
+  ],
+  "steps": [
+    {
+      "id": "prepare_poaching_liquid",
+      "action": "Dans une grande casserole, verser le sucre, le b\u00e2ton de cannelle, les badianes, les cardamomes, les clous de girofle, l'eau et le rhum.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "poires_poch\u00e9es",
+      "uses": [
+        "sucre_poire",
+        "cannelle_baton",
+        "badianes",
+        "cardamomes",
+        "clous_girofle",
+        "eau",
+        "rhum_poire"
+      ],
+      "produces": "poaching_liquid_raw",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dissolve_sugar",
+      "action": "Porter \u00e0 \u00e9bullition et laisser le sucre se dissoudre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "poires_poch\u00e9es",
+      "uses": [
+        "poaching_liquid_raw"
+      ],
+      "produces": "poaching_liquid_dissolved",
+      "requires": [],
+      "visualCue": "sucre dissous"
+    },
+    {
+      "id": "reduce_heat",
+      "action": "Baisser le feu pour avoir de petits bouillons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "poires_poch\u00e9es",
+      "uses": [
+        "poaching_liquid_dissolved"
+      ],
+      "produces": "poaching_liquid_simmering",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "peel_pears",
+      "action": "\u00c9plucher les poires et les plonger dans la casserole.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "poires_poch\u00e9es",
+      "uses": [
+        "poires",
+        "poaching_liquid_simmering"
+      ],
+      "produces": "pears_in_poaching_liquid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "poach_pears",
+      "action": "Pocher les poires 30min puis \u00e9goutter et r\u00e9server.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "poires_poch\u00e9es",
+      "uses": [
+        "pears_in_poaching_liquid"
+      ],
+      "produces": "poached_pears",
+      "requires": [],
+      "visualCue": "poires fondantes"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cake",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cream_butter_sugar",
+      "action": "Dans un grand bol, battre le sucre et le beurre pommade jusqu'\u00e0 obtenir une texture homog\u00e8ne et cr\u00e9meuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake",
+      "uses": [
+        "sucre_cake",
+        "beurre_pommade"
+      ],
+      "produces": "creamed_butter_sugar",
+      "requires": [],
+      "visualCue": "texture homog\u00e8ne et cr\u00e9meuse"
+    },
+    {
+      "id": "mix_batter",
+      "action": "Ajouter les \u0153ufs, la farine, la poudre d'amande, la levure, le sel, l'extrait de vanille, la cannelle, le gingembre, la noix de muscade, le clou de girofle moulu et le rhum en battant apr\u00e8s chaque ajout jusqu'\u00e0 obtenir un m\u00e9lange homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake",
+      "uses": [
+        "creamed_butter_sugar",
+        "oeufs",
+        "farine",
+        "poudre_amande",
+        "levure_chimique",
+        "sel",
+        "extrait_vanille",
+        "cannelle_moulue",
+        "gingembre_moulu",
+        "noix_muscade_moulue",
+        "clou_girofle_moulu",
+        "rhum_cake"
+      ],
+      "produces": "cake_batter",
+      "requires": [],
+      "visualCue": "m\u00e9lange homog\u00e8ne"
+    },
+    {
+      "id": "spread_base_batter",
+      "action": "D\u00e9poser 3-4 cuill\u00e8res \u00e0 soupe de p\u00e2te dans le fond du moule et l'\u00e9taler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cake",
+      "uses": [
+        "cake_batter"
+      ],
+      "produces": "pan_with_base_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_pears_in_batter",
+      "action": "Aligner les poires poch\u00e9es dans le moule et les tenir tout en d\u00e9posant le reste de la p\u00e2te de part et d'autre des poires.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cake",
+      "uses": [
+        "poached_pears",
+        "pan_with_base_batter",
+        "cake_batter"
+      ],
+      "produces": "unbaked_cake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_cake",
+      "action": "Enfourner \u00e0 mi-hauteur pendant 50min.",
+      "duration": "PT50M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cake",
+      "uses": [
+        "unbaked_cake"
+      ],
+      "produces": "baked_cake_in_pan",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_in_pan",
+      "action": "Laisser le cake ti\u00e9dir dans son moule puis le d\u00e9mouler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "cake",
+      "uses": [
+        "baked_cake_in_pan"
+      ],
+      "produces": "demolded_cake",
+      "requires": [],
+      "visualCue": "ti\u00e8de"
+    },
+    {
+      "id": "cool_completely",
+      "action": "Laisser refroidir compl\u00e8tement avant de le couper.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "cake",
+      "uses": [
+        "demolded_cake"
+      ],
+      "produces": "cake_aux_poires_poch\u00e9es",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    }
+  ],
+  "finalState": "cake_aux_poires_poch\u00e9es",
+  "originalText": "Cake aux poires poch\u00e9es aux \u00e9pices et rhum, facile et moelleux\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 mars 2025\nCake aux poires poch\u00e9es aux \u00e9pices et rhum : un dessert facile et moelleux\nLe cake aux poires poch\u00e9es aux \u00e9pices et au rhum est un dessert moelleux qui a la classe ! Avec sa texture et ses poires fondantes d\u00e9licatement parfum\u00e9es, il a tout pour s\u00e9duire les amateurs de douceurs automnales. Son visuel impressionnant, avec les poires enti\u00e8res dress\u00e9es dans le cake, en fait un choix parfait pour \u00e9pater vos convives sans trop d\u2019efforts.\nQue vous soyez un adepte des g\u00e2teaux \u00e9pic\u00e9s ou que vous cherchiez simplement une recette gourmande pour sublimer les poires, ce cake coche toutes les cases. Et bonne nouvelle : il est bien plus facile \u00e0 r\u00e9aliser qu\u2019il n\u2019y para\u00eet !\nTable des mati\u00e8res\n1\nPourquoi tester ce cake aux poires poch\u00e9es ?\n2\nLe secret des poires poch\u00e9es\n3\nCake poires poch\u00e9es aux \u00e9pices et rhum\n4\nPeut-on varier cette recette de cake aux poires poch\u00e9es ?\n5\nLes recettes similaires \u00e0 d\u00e9couvrir\nPourquoi tester ce cake aux poires poch\u00e9es ?\nCe cake r\u00e9unit simplicit\u00e9 et gourmandise. Son visuel original, avec les poires enti\u00e8res dress\u00e9es dans la p\u00e2te, le rend parfait pour une occasion sp\u00e9ciale, mais il est tout aussi adapt\u00e9 \u00e0 un go\u00fbter ou un dessert du quotidien. Il demande peu d\u2019ingr\u00e9dients et reste facile \u00e0 r\u00e9aliser, m\u00eame si on n\u2019a pas l\u2019habitude de pocher des fruits.\nCe cake a tout pour plaire :\nUne texture irr\u00e9sistiblement moelleuse\n: gr\u00e2ce aux poires poch\u00e9es et \u00e0 la p\u00e2te bien \u00e9quilibr\u00e9e, chaque bouch\u00e9e est douce et fondante.\nUn go\u00fbt d\u00e9licat et parfum\u00e9\n: les \u00e9pices comme la cannelle et la vanille se marient parfaitement aux poires et au rhum, pour un m\u00e9lange de saveurs.\nUn dessert qui en met plein la vue\n: avec ses poires enti\u00e8res dress\u00e9es dans le cake, il est aussi beau que bon. Id\u00e9al pour un dessert de f\u00eate ou un go\u00fbter gourmand !\nFacile \u00e0 adapter\n: si vous ne voulez pas utiliser de rhum, il est tout \u00e0 fait possible de pocher les poires uniquement dans un sirop \u00e9pic\u00e9.\nLe secret des poires poch\u00e9es\nL\u2019\u00e9tape du pochage est essentielle pour obtenir des poires fondantes et bien parfum\u00e9es. En les faisant mijoter dans un m\u00e9lange d\u2019eau, de sucre, de rhum et d\u2019\u00e9pices, elles absorbent ainsi toutes les saveurs et deviennent encore plus gourmandes.\nAstuce\n: Plus vous les laissez pocher doucement, plus elles seront fondantes et bien impr\u00e9gn\u00e9es des ar\u00f4mes.\nSi vous pr\u00e9f\u00e9rez \u00e9viter l\u2019alcool, il est tout \u00e0 fait possible de pocher les poires sans rhum tout en gardant un go\u00fbt riche et parfum\u00e9. Pour cela, vous pouvez simplement pocher les poires dans de l\u2019eau \u00e9pic\u00e9e.\nCake poires poch\u00e9es aux \u00e9pices et rhum\n4.50\n/5 avec\n93\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n50\nminutes\nmin\nIngr\u00e9dients\nPour les poires poch\u00e9es\n200\ng\nde sucre\n1\nb\u00e2ton de cannelle\n2\nbadianes\n2\ncardamomes\n4\nclous de girofle\n500\nml\nd\u2019eau\n100\nml\nde rhum\n4\npoires\nPour le cake\n150\ng\nde beurre pommade\n150\ng\nde sucre\n3\noeufs\n190\ng\nde farine\n60\ng\nde poudre d\u2019amande\n1\nsachet de levure chimique\n1\npinc\u00e9e de sel\n1\nc\u00e0c d\u2019extrait de vanille\n\u00bd\nc\u00e0c de cannelle moulue\n\u00bd\nc\u00e0c de gingembre moulu\n\u00bc\nc\u00e0c de noix de muscade moulue\n\u00bc\nc\u00e0c de clou de girofle moulu\n1\nc\u00e0c de rhum\nInstructions\nPr\u00e9paration des poires poch\u00e9es\nDans une casserole suffisamment grande pour y plonger les 4 poires, verser le sucre, les \u00e9pices, l\u2019eau et le rhum.\nPorter \u00e0 \u00e9bullition et laisser le sucre se dissoudre.\nBaisser le feu pour avoir de petits bouillons.\n\u00c9plucher les poires et les plonger dans la casserole. Pocher les poires 30min puis \u00e9goutter et r\u00e9server.\nPr\u00e9paration du cake\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nPr\u00e9parer un moule \u00e0 cake en le chemisant de papier cuisson.\nDans un grand bol, battre le sucre et le beurre pommade jusqu\u2019\u00e0 obtenir une texture homog\u00e8ne et cr\u00e9meuse.\nAjouter la farine, les \u0153ufs, la poudre d\u2019amande, le sel et les \u00e9pices en battant apr\u00e8s chaque ajout. Le m\u00e9lange doit \u00eatre homog\u00e8ne.\nD\u00e9poser 3-4 c\u00e0s de m\u00e9lange dans le fond du moule et l\u2019\u00e9taler.\nAligner les poires dans le moule et les tenir tout en d\u00e9posant la p\u00e2te de part et d\u2019autre des poires dans le moule.\nEnfourner \u00e0 mi-hauteur 50min.\nLaisser le cake ti\u00e9dir dans son moule puis le d\u00e9mouler et le laisser refroidir compl\u00e8tement avant de le couper.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPeut-on varier cette recette de cake aux poires poch\u00e9es ?\nSi vous avez envie de varier les plaisirs, il est tout \u00e0 fait possible d\u2019adapter cette recette selon vos go\u00fbts. Voici une id\u00e9e \u00e0 tester :\nVersion chocolat\u00e9e\n: si vous \u00eates amateur de chocolat, vous pouvez tester cette alternative ultra gourmande \ud83d\udc49\nCake chocolat poires poch\u00e9es\n.\nCette recette se d\u00e9cline en plusieurs variantes : \u00e0 la vanille, au caramel, au vin\u2026 De quoi satisfaire toutes les envies !\nLes recettes similaires \u00e0 d\u00e9couvrir\nPour finir, si vous aimez l\u2019id\u00e9e du cake \u00e0 la poire, voici quelques autres recettes fruit\u00e9es qui pourraient vous plaire :\nCake Poire Amande au sucre de palmier de Kampong Speu\n: un cake moelleux qui associe la douceur des poires \u00e0 la saveur subtile du sucre de palmier.\nPoires Poch\u00e9es au Vin Chaud de No\u00ebl\n: des poires parfum\u00e9es aux \u00e9pices et au vin chaud. Parfaites pour une touche festive.\nG\u00e2teau au Miel et ses Poires Fondantes\n: un g\u00e2teau simple et gourmand o\u00f9 le miel met en valeur le fondant des poires.\nEn r\u00e9sum\u00e9\nCe\ncake aux poires poch\u00e9es aux \u00e9pices et au rhum\nest un dessert aussi gourmand qu\u2019\u00e9l\u00e9gant. Avec son moelleux irr\u00e9sistible et ses poires d\u00e9licatement parfum\u00e9es, il offre une explosion de saveurs \u00e0 chaque bouch\u00e9e. Que vous choisissiez la version avec ou sans rhum, ce g\u00e2teau est une valeur s\u00fbre pour un go\u00fbter cosy ou un dessert de f\u00eate. \u00c0 tester sans h\u00e9siter !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nG\u00e2teaux et Cakes\n,\nPoire\nTags:\nid\u00e9e de dessert fruit\nClafoutis pommes caram\u00e9lis\u00e9es et lait de coco : une douceur r\u00e9confortante\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne : Une explosion d\u2019\u00e9pices et de saveurs !\n4.50 from 93 votes (\n93 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

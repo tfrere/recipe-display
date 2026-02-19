@@ -4,10 +4,8 @@ import { getFormattedSubRecipes } from "./recipeStructureUtils";
  * Formate une recette en texte pour l'impression ou la copie
  */
 export const formatRecipeText = (recipe) => {
-  console.log("Recipe in formatRecipeText:", recipe);
   const { metadata = {} } = recipe || {};
   const subRecipes = getFormattedSubRecipes(recipe);
-  console.log("Formatted subRecipes:", subRecipes);
 
   let text = `${metadata.title}
 

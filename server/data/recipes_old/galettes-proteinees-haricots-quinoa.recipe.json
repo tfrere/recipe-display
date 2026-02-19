@@ -1,0 +1,371 @@
+{
+  "metadata": {
+    "title": "Galettes prot\u00e9in\u00e9es haricots quinoa",
+    "description": "Galettes riches en prot\u00e9ines v\u00e9g\u00e9tales \u00e0 base de haricots rouges et de quinoa, parfaites pour un burger v\u00e9g\u00e9.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "burger vege",
+      "galettes",
+      "galettes prot\u00e9in\u00e9es",
+      "galettes vegetariennes",
+      "automne",
+      "\u00e9t\u00e9",
+      "poivron"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Galettes-haricots-rouges-quinoa-poivrons-3-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez les personnaliser selon vos go\u00fbts en ajoutant les \u00e9pices et herbes de votre choix.",
+      "Vous pouvez en faire un lot \u00e0 l'avance et les conserver au r\u00e9frig\u00e9rateur ou m\u00eame les congeler.",
+      "Parfaites dans un burger v\u00e9g\u00e9.",
+      "Pour un substitut d'oeuf : 1 cs de graines de chia, ajouter 3 cs d'eau ti\u00e8de, laisser reposer 1/4h."
+    ],
+    "slug": "galettes-proteinees-haricots-quinoa",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Galettes-haricots-rouges-quinoa-poivrons-3-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/09/23/galettes-proteinees-haricots-quinoa/",
+    "image": "images/galettes-proteinees-haricots-quinoa.jpg",
+    "createdAt": "2026-02-09T21:56:17.713464",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 360.4,
+      "protein": 17.2,
+      "fat": 13.0,
+      "carbs": 44.7,
+      "fiber": 14.5,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "petit oignon jaune ou rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "70g",
+      "optional": false,
+      "name_en": "Pearl onion"
+    },
+    {
+      "id": "bell_pepper",
+      "name": "poivron rouge",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "70g",
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "red_beans",
+      "name": "haricots rouges",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "poids cuit",
+      "notes": null,
+      "optional": false,
+      "name_en": "kidney beans"
+    },
+    {
+      "id": "quinoa",
+      "name": "quinoa",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "poids cru",
+      "notes": null,
+      "optional": false,
+      "name_en": "quinoa"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": "chapelure",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "cooking_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la cuisson",
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "blend_vegetables",
+      "action": "Passez l'oignon, le demi poivron et l'ail au mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "bell_pepper",
+        "garlic"
+      ],
+      "produces": "blended_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faire revenir le m\u00e9lange mix\u00e9 dans une po\u00eale \u00e0 feu moyen avec l'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blended_vegetables",
+        "olive_oil"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spices",
+      "action": "Ajouter les \u00e9pices (paprika fum\u00e9, cumin, sel, poivre) et faire revenir 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "smoked_paprika",
+        "cumin",
+        "salt",
+        "pepper"
+      ],
+      "produces": "spiced_vegetable_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_beans",
+      "action": "Ajouter les haricots rouges puis retirer du feu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spiced_vegetable_mixture",
+        "red_beans"
+      ],
+      "produces": "bean_vegetable_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_quinoa",
+      "action": "Faire cuire le quinoa en suivant les instructions du paquet. \u00c9goutter.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "quinoa",
+      "uses": [
+        "quinoa"
+      ],
+      "produces": "cooked_quinoa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_all_ingredients",
+      "action": "Dans un saladier, m\u00e9langer tous les ingr\u00e9dients (m\u00e9lange po\u00eal\u00e9, quinoa cuit, oeuf, chapelure).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bean_vegetable_mixture",
+        "cooked_quinoa",
+        "egg",
+        "breadcrumbs"
+      ],
+      "produces": "patty_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_patties",
+      "action": "Former 4 galettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "patty_mixture"
+      ],
+      "produces": "formed_patties",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une po\u00eale avec un g\u00e9n\u00e9reux fond d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooking_oil"
+      ],
+      "produces": "hot_oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_patties",
+      "action": "Faire cuire les galettes 5min de chaque c\u00f4t\u00e9.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "formed_patties",
+        "hot_oiled_pan"
+      ],
+      "produces": "cooked_patties",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooked_patties",
+  "originalText": "Galettes prot\u00e9in\u00e9es haricots quinoa - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 septembre 2023\nGalettes prot\u00e9in\u00e9es haricots quinoa\nHi les copains, on se retrouve pour une recette de Galettes prot\u00e9in\u00e9es haricots quinoa.\nVous cherchez un moyen d\u2019ajouter un peu de prot\u00e9ines v\u00e9g\u00e9tales dans votre assiette ?\nCes galettes sont peut-\u00eatre la r\u00e9ponse que vous attendiez ! Ces petites merveilles sont donc riches en prot\u00e9ines, et elles regorgent \u00e9galement de saveurs et de textures qui raviront vos papilles.\nLes haricots sont une source naturelle de prot\u00e9ines v\u00e9g\u00e9tales. Et dans ces galettes, ils se marient parfaitement avec le quinoa. Une pseudo-c\u00e9r\u00e9ale qui est \u00e9galement riche en prot\u00e9ines et en nutriments essentiels.\nL\u2019une des choses les plus sympas avec ces galettes prot\u00e9in\u00e9es est leur polyvalence. Vous pouvez les personnaliser selon vos go\u00fbts en ajoutant les \u00e9pices et herbes de votre choix.\nEn plus, les haricots et le quinoa fournissent une bonne dose de fibres. Parfait pour la sati\u00e9t\u00e9. Et je ne vous parle m\u00eame pas des vitamines et min\u00e9raux essentiels, parce que cet article va devenir barbant sinon !\nSachez que ces galettes prot\u00e9in\u00e9es aux haricots et au quinoa sont tr\u00e8s faciles \u00e0 pr\u00e9parer. Vous pouvez en faire un lot \u00e0 l\u2019avance et les conserver au r\u00e9frig\u00e9rateur ou m\u00eame les congeler. Et elles seront parfaites dans un\nburger v\u00e9g\u00e9\navec\nune sauce comme celle-ci\n!\nGalettes prot\u00e9in\u00e9es haricots quinoa\n4.50\n/5 avec\n122\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\ngalettes\nIngr\u00e9dients\n1x\n2x\n3x\n1\npetit oignon\njaune ou rouge 70g\n\u00bd\npoivron rouge 70g\n2\ngousses d\u2019ail\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c de cumin\nsel\npoivre\n200\ng\nde haricots rouges\npoids cuit\n50\ng\nde quinoa\npoids cru\n1\noeuf\n40\ng\nde chapelure\nInstructions\nPassez l\u2019oignon, le demi poivron et l\u2019ail au mixeur. Puis faire revenir dans une po\u00eale \u00e0 feu moyen avec l\u2019huile d\u2019olive.\nAjouter les \u00e9pices et faire revenir 10min. Ajouter les haricots rouges puis retirer du feu.\nFaire cuire le quinoa en suivant les instructions du paquet. \u00c9goutter.\nDans un saladier, m\u00e9langer tous les ingr\u00e9dients et former 4 galettes.\nFaire chauffer une po\u00eale avec un g\u00e9n\u00e9reux fond d\u2019huile et y faire cuire les galettes 5min de chaque c\u00f4t\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nGalettes\n,\nPoivron\nTags:\nburger vege\n,\ngalettes\n,\ngalettes prot\u00e9in\u00e9es\n,\ngalettes vegetariennes\n\u0152ufs cocotte en courgette\nGyros aux pleurotes sauce tahini et miel\n4 thoughts on \u201cGalettes prot\u00e9in\u00e9es haricots quinoa\u201d\nthenaisy\ndit\u00a0:\n23 septembre 2023 \u00e0 15 h 08 min\nCoucou\nsuper recette, mais je n\u2019aime le go\u00fbt de l\u2019oeuf dans les galettes, par quoi je peux remplacer ?\nmerci V\u00e9ronique\nchargement\u2026\nR\u00e9pondre\nD. Rochat\ndit\u00a0:\n24 septembre 2023 \u00e0 19 h 02 min\nOn peut remplacer l:meuf par des graines de chia.\n1 cs de graines de chia, ajouter 3 cs d\u2019eau ti\u00e8de., laisser reposer 1/4h\nchargement\u2026\nR\u00e9pondre\nthenaisy\ndit\u00a0:\n29 septembre 2023 \u00e0 6 h 58 min\nmerci pour la r\u00e9ponse, je ferai cela maintenant\nbelle journ\u00e9e\nchargement\u2026\nR\u00e9pondre\nGwen\ndit\u00a0:\n6 janvier 2024 \u00e0 21 h 50 min\nBonjour,\nSavez-vous combien vos galettes contiennent de glucides et prot\u00e9ines svp?\nElles ont l\u2019air tr\u00e8s bonnes, je vais tester votre recette bientot\nchargement\u2026\nR\u00e9pondre\n4.50 from 122 votes (\n120 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

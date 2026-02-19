@@ -1,12 +1,17 @@
-from typing import Optional, List
+from typing import Any, Dict, Optional, List
+import json
+import logging
 import httpx
 from bs4 import BeautifulSoup
+import trafilatura
 from urllib.parse import urlparse, urljoin
 import asyncio
 from pathlib import Path
 
 from .models import WebContent, AuthPreset
 from .auth import AuthManager
+
+logger = logging.getLogger(__name__)
 
 class WebScraper:
     """Service for scraping recipe content from websites."""
@@ -29,6 +34,52 @@ class WebScraper:
             timeout=30.0
         )
         self.auth_manager = AuthManager(self.client, auth_presets_path)
+
+    @staticmethod
+    def _extract_schema_recipe(soup: BeautifulSoup) -> Optional[Dict[str, Any]]:
+        """
+        Extract schema.org/Recipe structured data from JSON-LD script tags.
+
+        Most recipe websites include a <script type="application/ld+json"> block
+        containing structured recipe data (ingredients, steps, times, servings).
+        This data is more reliable than text extraction because it was authored
+        by the site developer, not inferred from prose.
+
+        Returns:
+            Parsed JSON-LD dict with @type=Recipe, or None if not found.
+        """
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                text = script.string
+                if not text:
+                    continue
+                data = json.loads(text)
+
+                # Direct Recipe object
+                if isinstance(data, dict) and data.get("@type") == "Recipe":
+                    return data
+
+                # Array of objects (some sites emit a list)
+                if isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict) and item.get("@type") == "Recipe":
+                            return item
+
+                # @graph array (common with Yoast SEO, WordPress recipe plugins)
+                if isinstance(data, dict) and "@graph" in data:
+                    for item in data["@graph"]:
+                        if isinstance(item, dict) and item.get("@type") == "Recipe":
+                            return item
+
+                # Handle list @type like ["Recipe", "Article"]
+                if isinstance(data, dict) and isinstance(data.get("@type"), list):
+                    if "Recipe" in data["@type"]:
+                        return data
+
+            except (json.JSONDecodeError, TypeError, KeyError):
+                continue
+
+        return None
 
     async def _extract_images(self, soup: BeautifulSoup, base_url: str) -> List[str]:
         """Extract image URLs from the page."""
@@ -88,29 +139,49 @@ class WebScraper:
         except httpx.HTTPError as e:
             raise ValueError(f"Failed to fetch URL: {str(e)}")
         
-        # Parse the page
-        soup = BeautifulSoup(response.text, "html.parser")
-        
-        # Extract title
-        title = soup.title.string if soup.title else ""
-        title = title.strip()
-        
-        # Extract ALL text content from the page, preserving structure
-        main_content = []
-        for text in soup.stripped_strings:
-            if text.strip():  # Only add non-empty strings
-                main_content.append(text.strip())
-        
-        # Join all text with newlines to preserve some structure
-        main_content = "\n".join(main_content)
-        
-        # Extract images en parallèle
+        html = response.text
+
+        # Parse with BeautifulSoup (needed for image extraction, JSON-LD, and title fallback)
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Extract structured data (schema.org/Recipe JSON-LD) — most reliable source
+        structured_data = self._extract_schema_recipe(soup)
+        if structured_data:
+            logger.info(
+                "Found schema.org/Recipe JSON-LD for %s (keys: %s)",
+                url, ", ".join(k for k in structured_data if not k.startswith("@"))
+            )
+
+        # Extract title (prefer structured data, fallback to <title> tag)
+        title = ""
+        if structured_data and structured_data.get("name"):
+            title = str(structured_data["name"]).strip()
+        elif soup.title and soup.title.string:
+            title = soup.title.string.strip()
+
+        # Extract main content with Trafilatura (removes boilerplate: nav, footer, ads, comments)
+        main_content = trafilatura.extract(
+            html,
+            include_comments=False,
+            include_tables=True,
+            include_links=False,
+            favor_recall=True,
+        )
+
+        # Fallback to BeautifulSoup if Trafilatura returns nothing
+        if not main_content:
+            logger.warning("Trafilatura returned empty content for %s, falling back to BeautifulSoup", url)
+            texts = [t.strip() for t in soup.stripped_strings if t.strip()]
+            main_content = "\n".join(texts)
+
+        # Extract images in parallel (still uses BeautifulSoup)
         image_urls = await self._extract_images(soup, url)
         
         return WebContent(
             title=title,
             main_content=main_content,
-            image_urls=image_urls
+            image_urls=image_urls,
+            structured_data=structured_data,
         )
     
     async def __aenter__(self):

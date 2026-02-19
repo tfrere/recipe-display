@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "title": "Riz Coco aux \u00c9pices",
+    "description": "Un riz blanc long, aromatis\u00e9 aux \u00e9pices \"indiennes\" qui cuit lentement dans de la cr\u00e8me de coco ! C'est tout doux et parfum\u00e9.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT1H",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "riz",
+      "riz \u00e0 la coco",
+      "riz aux \u00e9pices",
+      "accompagnement",
+      "automne",
+      "hiver",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Riz-coco-epices-1-of-3.jpg",
+    "nationality": "Indian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e en partenariat avec Bocoloco pour l'arriv\u00e9e de leurs \u00e9pices en vrac et de leurs premiers bocaux pr\u00e9par\u00e9s \"all-in-one\".",
+      "Le temps de cuisson d\u00e9pend de la casserole utilis\u00e9e.",
+      "Peut \u00eatre servi avec un yaourt parfum\u00e9 \u00e0 l'ail et \u00e0 la coriandre, ou avec des plats indiens."
+    ],
+    "slug": "riz-coco-aux-epices",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Riz-coco-epices-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/12/riz-coco-aux-epices/",
+    "image": "images/riz-coco-aux-epices.webp",
+    "createdAt": "2026-02-09T20:34:56.572200",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 88.0,
+    "totalCookingTime": 28.0,
+    "nutritionPerServing": {
+      "calories": 527.9,
+      "protein": 7.9,
+      "fat": 25.4,
+      "carbs": 68.2,
+      "fiber": 2.9,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9 et \u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "paprika"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ginger"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade r\u00e2p\u00e9e",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "coriander_powder",
+      "name": "coriandre moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground coriander"
+    },
+    {
+      "id": "rice",
+      "name": "riz blanc long",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "long-grain white rice"
+    },
+    {
+      "id": "coconut_cream",
+      "name": "cr\u00e8me de coco",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 220.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "almonds",
+      "name": "amandes effil\u00e9es",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "slivered almonds"
+    },
+    {
+      "id": "fresh_coriander",
+      "name": "coriandre fra\u00eeche",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": "hach\u00e9e",
+      "notes": "petit bouquet",
+      "optional": false,
+      "name_en": "fresh cilantro"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Cocotte en fonte ou faitout"
+  ],
+  "steps": [
+    {
+      "id": "prepare_onion",
+      "action": "\u00c9pluchez et \u00e9mincez l'oignon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Faites chauffer une cocotte en fonte ou un faitout \u00e0 feu moyen-fort et versez-y l'huile. Faites revenir les oignons.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_onion",
+        "vegetable_oil"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Pressez l'ail et ajoutez-le directement dans la cocotte. Faites revenir encore.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "garlic",
+        "sauteed_onion"
+      ],
+      "produces": "onion_garlic_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_spices",
+      "action": "Versez les \u00e9pices et faites revenir en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion_garlic_mixture",
+        "turmeric",
+        "paprika",
+        "cumin",
+        "ginger",
+        "nutmeg",
+        "coriander_powder"
+      ],
+      "produces": "spiced_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_rice",
+      "action": "Ajoutez le riz et faites revenir encore un peu.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rice",
+        "spiced_onion_garlic"
+      ],
+      "produces": "toasted_rice_spices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajoutez la cr\u00e8me de coco et l'eau. M\u00e9langez bien. Couvrez et baissez le feu \u00e0 moyen-doux (\u2154 de la puissance environ).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "coconut_cream",
+        "water",
+        "toasted_rice_spices"
+      ],
+      "produces": "rice_to_cook",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_rice",
+      "action": "Laissez cuire entre 50min et 1h (le temps de cuisson d\u00e9pend de la casserole que vous utilisez).",
+      "duration": "PT55M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "rice_to_cook"
+      ],
+      "produces": "cooked_rice",
+      "requires": [],
+      "visualCue": "riz cuit"
+    },
+    {
+      "id": "fluff_rice",
+      "action": "Quand le riz est cuit, m\u00e9langez avec une spatule pour d\u00e9coller le riz et l'a\u00e9rer. Couvrez de nouveau et laissez le riz reposer un peu.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_rice"
+      ],
+      "produces": "fluffed_rested_rice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_almonds",
+      "action": "Pendant ce temps, faites chauffer une po\u00eale et faites-y toaster les amandes effil\u00e9es.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "almonds"
+      ],
+      "produces": "toasted_almonds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_coriander",
+      "action": "Hachez la coriandre fra\u00eeche.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "fresh_coriander"
+      ],
+      "produces": "chopped_coriander",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble",
+      "action": "Ajoutez les amandes toast\u00e9es et la coriandre hach\u00e9e au riz. Salez si n\u00e9cessaire.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fluffed_rested_rice",
+        "toasted_almonds",
+        "chopped_coriander",
+        "salt"
+      ],
+      "produces": "riz_coco_epices",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "riz_coco_epices",
+  "originalText": "Riz Coco aux \u00c9pices - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 octobre 2021\nRiz Coco aux \u00c9pices\nAcc\u00e9der directement \u00e0 la recette\nAujourd\u2019hui, on parle de Riz Coco aux \u00c9pices ! What\u2019s that ?\nUn riz blanc long, aromatis\u00e9 aux \u00e9pices \u201cindiennes\u201d qui lentement dans de la cr\u00e8me de coco ! C\u2019est tout doux et parfum\u00e9 \ud83d\ude42 Ce riz se marie parfaitement avec vos plats indiens, ou juste une petite touche de yaourt parfum\u00e9 \u00e0 l\u2019ail et \u00e0 la coriandre. Un peu comme\nla sauce de ces beignets aux oignons\nque j\u2019adore !\nCette recette est un peu sp\u00e9ciale. En effet, je l\u2019ai cr\u00e9\u00e9e \u00e0 la demande de\nBocoloco\n. Bon, vous me direz, rien de tr\u00e8s \u00e9tonnant la dedans. Oui, on travaille avec cette belle start-up sp\u00e9cialis\u00e9e dans le vrac en ligne depuis plus d\u2019un an maintenant !\nMais ce qui est sp\u00e9cial c\u2019est qu\u2019elle marque l\u2019arriv\u00e9e de deux nouvelles \u00e9tapes pour Boco !\nPremi\u00e8rement, l\u2019arriv\u00e9e de\nleurs \u00e9pic\nes en vrac ! Et honn\u00eatement, parole de grande fanatique d\u2019\u00e9pices, leurs \u00e9pices sont tr\u00e8s bonnes ! On s\u2019en prend plein les narines en ouvrant les bocaux et c\u2019est magique !\nEt deuxi\u00e8mement, c\u2019est l\u2019arriv\u00e9e de leurs premiers bocaux pr\u00e9par\u00e9s \ud83d\ude42 Je suis pas peu fi\u00e8re qu\u2019ils inaugurent le concept avec moi \ud83d\ude42\nLe but : vous proposer des bocaux \u201call-in-one\u2019 avec tout ce dont vous avez besoin pour une recette (enfin tout le vrac au moins)\n. Ici, il faudra juste ajouter un oignon, quelques gousses d\u2019ail, un peu d\u2019huile et de la cr\u00e8me de coco !\nDans cette recette, je vous ai mis le d\u00e9tail du riz et des \u00e9pices, mais si vous commandez sur leur site, vous aurez une petite fiche recette sp\u00e9ciale \u201cone-pot\u201d.\nVous avez des id\u00e9es pour les prochains bocaux ? Qu\u2019est ce qui vous ferait plaisir (\u00e0 part ce riz coco aux \u00e9pices) ?\nRiz Coco aux \u00c9pices\nNatacha\n4.52\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon jaune\nenv 200g\n2\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale\n3\ngousses d\u2019ail\n1\nc\u00e0c de curcuma\n1\nc\u00e0c de paprika\n\u00bd\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de gingembre\n\u00bd\nc\u00e0c de noix de muscade r\u00e2p\u00e9e\n\u00bd\nc\u00e0c de coriandre\n300\ng\nde riz blanc long\n200\nml\nde cr\u00e8me de coco\n220\nml\nd\u2019eau\n1\npoign\u00e9e d\u2019amandes effil\u00e9es\n1\npetit bouquet de coriandre fra\u00eeche\nInstructions\n\u00c9pluchez et \u00e9mincez l\u2019oignon.\nFaites chauffer, \u00e0 feu moyen-fort,  une cocotte en fonte ou un faitout et versez-y l\u2019huile. Faites revenir les oignons 2-3min. Puis pressez l\u2019ail et ajoutez le directement dans la cocotte. Faites revenir encore 2min.\nVersez les \u00e9pices et faites revenir en remuant r\u00e9guli\u00e8rement encore 3-4min.\nAjoutez le riz et faites revenir encore un peu.\nAjoutez la cr\u00e8me de coco et l\u2019eau. M\u00e9langez bien. Couvrez et baissez le feu \u00e0 moyen-doux (\u2154 de la puissance environ).\nLaissez cuire entre 50min et 1h (le temps de cuisson d\u00e9pend de la casserole que vous utilisez).\nQuand le riz est cuit, m\u00e9langez avec une spatule pour d\u00e9coller le riz et l\u2019a\u00e9rer. Couvrez de nouveau et laissez le riz reposer un peu.\nPendant ce temps, faites chauffer une po\u00eale et faites-y toaster les amandes effil\u00e9es.\nHachez la coriandre.\nAjoutez les amandes et la coriandre au riz. C\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nHiver\nTags:\nriz\n,\nriz \u00e0 la coco\n,\nriz aux \u00e9pices\nBuddha Bowl de L\u00e9gumes r\u00f4tis aux \u00c9pices Indiennes\nBeignets Courge \u00c9pinards \u00e0 l\u2019Indienne\n4 thoughts on \u201cRiz Coco aux \u00c9pices\u201d\nCharlyne\ndit\u00a0:\n12 octobre 2021 \u00e0 14 h 02 min\nHello Natacha,\nMerci pour cette nouvelle recette, que j\u2019ai test\u00e9 ce midi (oui j\u2019ai \u00e9t\u00e9 rapide, elle donnait tr\u00e8s envie) et voici mon retour :\nExcellent d\u2019un point de vue gustatif et visuel. Le dosage des \u00e9pices est top, et c\u2019est rare (je force sur les quantit\u00e9s dans pas mal de recettes lorsqu\u2019elles sont \u00e0 mon go\u00fbt sous-dos\u00e9es).\nEn revanche, sur le d\u00e9roulement de la recette voici les diff\u00e9rences et difficult\u00e9s que j\u2019ai eues :\n\u2013 j\u2019ai du mettre 3 fois plus d\u2019huile pour ne pas que \u00e7a accroche m\u00eame \u00e0 feu moyen (faitout en inox pourtant). Les \u00e9pices se sont quand m\u00eame coll\u00e9es au fond de la casserole et l\u00e0, c\u2019est devenu compliqu\u00e9 de faire revenir le riz.\n\u2013 pour faire revenir le riz, j\u2019ai donc du mettre un peu d\u2019eau (5 ou 10 cl)  puis un peu plus au bout de 20-25 min de cuisson.\n\u2013 la cuisson n\u2019a dur\u00e9 que 30 min, c\u2019\u00e9tait cuit et \u00e7a commen\u00e7ait \u00e0 r\u00e9accrocher s\u00e9v\u00e8re. Pour moi la cuisson \u00ab\u00a0\u00e0 la chinoise\u00a0\u00bb (comme je fais d\u2019habitude, \u00e0 feu doux et couvert, mais ici avec du lait de coco et des \u00e9pices en plus) n\u2019a pas bien fonctionn\u00e9. Je recommanderais donc de remuer r\u00e9guli\u00e8rement et de mouiller au besoin, car j\u2019ai perdu l\u2019\u00e9quivalent d\u2019une petite part au fond de la casserole et c\u2019est dommage.\n\u2013 je ne sale jamais mon riz blanc, en revanche ici \u00e7a manquait \u00e0 notre go\u00fbt, donc je rajouterais cette \u00e9tape en milieu ou fin de cuisson.\nEn tous cas d\u00e9gust\u00e9 avec un steak de soja et des courgettes po\u00eal\u00e9es, \u00e7a a fait le bonheur de mon homme et moi. Il m\u2019a dit \u00ab\u00a0tu peux refaire \u00e7a tous les deux jours\u00a0\u00bb \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n13 octobre 2021 \u00e0 14 h 30 min\nHello Charlyne,\nMerci bcp pour ton commentaire. Je pense en effet que (comme toujours) la cuisson d\u00e9pend ENORMEMENT du riz utilis\u00e9. Et donc je ne suis pas \u00e9tonn\u00e9e que tu aies du adapter la recette. Et c\u2019est top d\u2019avoir pris le temps de commenter, \u00e7a aidera de futurs cuistots \ud83d\ude42\nJe te souhaite une excellente journ\u00e9e,\nNatacha\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n13 octobre 2021 \u00e0 6 h 08 min\nMais quelle chouette id\u00e9e ce riz coco !\nchargement\u2026\nR\u00e9pondre\nnad\u00e8ge\ndit\u00a0:\n1 novembre 2021 \u00e0 20 h 38 min\nJe viens de tester ce plat et franchement, un d\u00e9lice . le riz \u00e9tait cuit en 30minutes et je n\u2019ai pas eu \u00e0 rajouter d\u2019eau .Merci pour vos recettes vous me sauvez la vie !\nchargement\u2026\nR\u00e9pondre\n4.52 from 126 votes (\n123 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 28.0
+}

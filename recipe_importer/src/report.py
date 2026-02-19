@@ -65,24 +65,66 @@ class ReportGenerator:
         if not errors:
             return
             
-        self.console.print("\n[bold red]Last errors:[/bold red]")
+        self.console.print(f"\n[bold red]Errors ({len(errors)} total):[/bold red]")
         
         # Trier les erreurs par heure (plus récentes en premier)
         sorted_errors = sorted(errors, key=lambda x: x.timestamp, reverse=True)
         
-        # Afficher les 5 dernières erreurs maximum
-        for i, error in enumerate(sorted_errors[:5]):
+        # Regrouper par type d'erreur pour un résumé utile
+        error_types: dict[str, list[str]] = {}
+        for error in sorted_errors:
+            # Extraire le type d'erreur principal
+            error_key = self._classify_error(error.error)
+            if error_key not in error_types:
+                error_types[error_key] = []
+            error_types[error_key].append(error.url)
+        
+        # Afficher le résumé par type
+        for error_type, urls in error_types.items():
+            self.console.print(f"\n  [bold yellow]{error_type}[/bold yellow] ({len(urls)} recette{'s' if len(urls) > 1 else ''}):")
+            for url in urls[:5]:
+                short_url = url
+                if len(short_url) > 80:
+                    short_url = short_url[:40] + "..." + short_url[-35:]
+                self.console.print(f"    [dim]•[/dim] {short_url}")
+            if len(urls) > 5:
+                self.console.print(f"    [dim]... et {len(urls) - 5} autres[/dim]")
+        
+        # Afficher le détail des 3 dernières erreurs
+        self.console.print("\n[bold]Détails des dernières erreurs:[/bold]")
+        for i, error in enumerate(sorted_errors[:3]):
             short_url = error.url
-            # Tronquer l'URL pour l'affichage
-            if len(short_url) > 70:
-                short_url = short_url[:35] + "..." + short_url[-35:]
-                
-            # Afficher les détails de l'erreur
-            self.console.print(f"{i+1}. [bold]{short_url}[/bold]")
+            if len(short_url) > 80:
+                short_url = short_url[:40] + "..." + short_url[-35:]
+            self.console.print(f"\n  {i+1}. [bold]{short_url}[/bold]")
             
-            # Limiter les messages d'erreur très longs
+            # Afficher le message complet (jusqu'à 500 chars)
             error_message = error.error
-            if len(error_message) > 200:
-                error_message = error_message[:200] + "..."
-                
-            self.console.print(f"   [red]{error_message}[/red]\n") 
+            if len(error_message) > 500:
+                error_message = error_message[:500] + "..."
+            self.console.print(f"     [red]{error_message}[/red]")
+    
+    @staticmethod
+    def _classify_error(error_msg: str) -> str:
+        """Classifie une erreur en catégorie lisible."""
+        msg = error_msg.lower()
+        if "404" in msg or "not found" in msg:
+            return "404 Not Found (URL invalide)"
+        elif "401" in msg or "unauthorized" in msg or "authentication" in msg:
+            return "401 Unauthorized (clé API invalide)"
+        elif "timeout" in msg or "timed out" in msg:
+            return "Timeout (serveur LLM trop lent)"
+        elif "rate limit" in msg or "429" in msg:
+            return "Rate limit (trop de requêtes)"
+        elif "validation" in msg or "pydantic" in msg:
+            return "Erreur de validation (structure recette)"
+        elif "already exists" in msg:
+            return "Recette déjà existante"
+        elif "bloqué" in msg or "stall" in msg:
+            return "Import bloqué (pas de progression)"
+        elif "connection" in msg or "connect" in msg:
+            return "Erreur de connexion"
+        elif "scraper" in msg and "failed" in msg:
+            return "Échec du scraper"
+        else:
+            return "Autre erreur"

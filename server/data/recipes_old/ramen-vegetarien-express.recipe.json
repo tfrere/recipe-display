@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "title": "Ramen v\u00e9g\u00e9tarien express",
+    "description": "Une recette de ramen v\u00e9g\u00e9tarien rapide, pr\u00e9par\u00e9e en 10-15 minutes, avec une base riche au tahini et miso.",
+    "servings": 1,
+    "prepTime": "PT5M",
+    "cookTime": "PT5M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "ramen",
+      "ramen maison",
+      "ramen v\u00e9g\u00e9tarien",
+      "recette asiatique",
+      "soupe",
+      "express"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/04/Ramen-vege-express-2-of-2.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La diff\u00e9rence est dans le \"express\". Celle-ci se pr\u00e9pare en 10-15min top chrono.",
+      "Pour obtenir un bouillon suffisamment riche, j'utilise du tahini.",
+      "Je vous conseille de toujours prendre du tahini semi-complet. Il est plus fonc\u00e9, plus fort en go\u00fbt et moins amer.",
+      "Vous pouvez mettre des pousses d'\u00e9pinards, du brocolis, etc\u2026 pour les l\u00e9gumes.",
+      "Je r\u00e9serve mes nouilles pr\u00e9cuites dans de l'eau froide pour stopper la cuisson et \u00e9viter qu'elles ne collent."
+    ],
+    "slug": "ramen-vegetarien-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/04/Ramen-vege-express-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/04/12/ramen-vegetarien-express/",
+    "image": "images/ramen-vegetarien-express.webp",
+    "createdAt": "2026-02-09T21:47:34.437339",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 12.0,
+    "totalCookingTime": 7.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 465.8,
+      "protein": 20.4,
+      "fat": 20.9,
+      "carbs": 49.6,
+      "fiber": 3.0,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 9,
+      "totalIngredients": 12,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "tahini",
+      "name": "tahini semi complet",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tahini"
+    },
+    {
+      "id": "miso_paste",
+      "name": "p\u00e2te de miso blanc",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso paste"
+    },
+    {
+      "id": "tamari_sauce",
+      "name": "sauce soja tamari",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "chili_oil",
+      "name": "huile piment\u00e9e",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili oil"
+    },
+    {
+      "id": "garlic",
+      "name": "ail semoule",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "water",
+      "name": "eau bouillante",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": "bouillante",
+      "notes": null,
+      "optional": false,
+      "name_en": "Boiling water"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes r\u00e2p\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "r\u00e2p\u00e9es",
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "shredded carrots"
+    },
+    {
+      "id": "green_onions",
+      "name": "oignons nouveaux",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9s tr\u00e8s finement",
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "Spring onions"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf mollet",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "mollet",
+      "notes": null,
+      "optional": true,
+      "name_en": "soft-boiled egg"
+    },
+    {
+      "id": "noodles",
+      "name": "nouilles",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuites",
+      "notes": null,
+      "optional": false,
+      "name_en": "noodles"
+    },
+    {
+      "id": "cabbage",
+      "name": "chou",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9 tr\u00e8s finement",
+      "notes": "poign\u00e9e",
+      "optional": false,
+      "name_en": "cabbage"
+    }
+  ],
+  "tools": [
+    "Bol"
+  ],
+  "steps": [
+    {
+      "id": "mix_base",
+      "action": "Dans votre bol, m\u00e9langer tous les ingr\u00e9dients de la base (tahini, miso, sauce soja, huile de s\u00e9same, huile piment\u00e9e, ail semoule).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "tahini",
+        "miso_paste",
+        "tamari_sauce",
+        "sesame_oil",
+        "chili_oil",
+        "garlic"
+      ],
+      "produces": "base_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_vegetables",
+      "action": "Ajouter les l\u00e9gumes de votre choix (carottes r\u00e2p\u00e9es, chou \u00e9minc\u00e9, oignons nouveaux \u00e9minc\u00e9s).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "legumes",
+      "uses": [
+        "base_sauce",
+        "carrots",
+        "cabbage",
+        "green_onions"
+      ],
+      "produces": "base_with_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_boiling_water",
+      "action": "Verser l'eau bouillante par-dessus.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "base_with_vegetables",
+        "water"
+      ],
+      "produces": "ramen_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest",
+      "action": "Couvrir et laisser reposer 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "ramen_broth"
+      ],
+      "produces": "infused_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_noodles_egg",
+      "action": "Ajouter les nouilles cuites au pr\u00e9alable et, \u00e9ventuellement, un \u0153uf mollet.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "infused_broth",
+        "noodles",
+        "egg"
+      ],
+      "produces": "ramen_vegetarien_express",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "ramen_vegetarien_express",
+  "originalText": "Ramen v\u00e9g\u00e9tarien express - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 avril 2023\nRamen v\u00e9g\u00e9tarien express\nAller \u00e0 la recette\nCe n\u2019est pas\nma premi\u00e8re recette de ramen\nsur le blog, mais la premi\u00e8re de Ramen v\u00e9g\u00e9tarien express ! La diff\u00e9rence est dans le \u201cexpress\u201d. Celle-ci se pr\u00e9pare en 10-15min top chrono. Et elle est pleine de go\u00fbt.\nCe qui est important dans cette recette c\u2019est la \u201cbase\u201d. C\u2019est elle qui apporte tout le go\u00fbt. Bon comme dans la majorit\u00e9 des bouillons vous me direz. Et vous n\u2019aurez pas tort. Merci pour votre participation imagin\u00e9e \u00e0 cette conversation entre moi et moi.\nPour obtenir un bouillon suffisamment riche, j\u2019utilise du tahini. Si vous ne connaissez pas encore, j\u2019en utilise tr\u00e8s souvent. C\u2019est une p\u00e2te de graines de s\u00e9same. En g\u00e9n\u00e9ral plut\u00f4t utilis\u00e9e dans la cuisine m\u00e9diterran\u00e9enne. D\u2019ailleurs, je vous conseille de toujours prendre du tahini semi-complet. Il est plus fonc\u00e9, plus fort en go\u00fbt et moins amer.\nBref, j\u2019en reviens \u00e0 mon bouillon. J\u2019utilise une bonne dose de tahini pour l\u2019enrichir. De la p\u00e2te de miso blanc. Vous en trouverez en magasin bio, ou dans des \u00e9piceries asiatiques. Et en ligne. Ensuite, j\u2019utilise de la sauce soja, un peu d\u2019huile de s\u00e9same. Toast\u00e9 de pr\u00e9f\u00e9rence. De l\u2019huile piment\u00e9e et de l\u2019ail semoule.\nOn ajoute les l\u00e9gumes de notre choix. Carottes, chou blanc, brocolis, \u00e9pinards, pousses de soja. Et j\u2019en passe.\nEt voil\u00e0, de l\u2019eau bouillante. Des nouilles (cuites au pr\u00e9alable). Et le tour est jou\u00e9 ! Vous venez de pr\u00e9parer des Ramen v\u00e9g\u00e9tarien express !\nRamen v\u00e9g\u00e9tarien express\n4.52\n/5 avec\n43\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nPortions\n1\npersonne\nIngr\u00e9dients\n1x\n2x\n3x\nLa base\n1\nc\u00e0s de tahini semi complet\n1\nc\u00e0s de p\u00e2te de miso blanc\n3\nc\u00e0s de sauce soja tamari\n1\nc\u00e0c d\u2019huile de s\u00e9same\n1\nc\u00e0c d\u2019huile piment\u00e9e\n\u00bd\nc\u00e0c d\u2019ail semoule\nenv 500ml d\u2019eau bouillante\nLes garnitures\n1\npoign\u00e9e de carottes r\u00e2p\u00e9es\n1\npoign\u00e9e d\u2019oignons nouveaux \u00e9minc\u00e9s tr\u00e8s finement\n1\noeuf mollet\noptionnel\n60\ng\nde nouilles cuites\n1\npoign\u00e9e de chou \u00e9minc\u00e9 tr\u00e8s finement\nInstructions\nDans votre bol, m\u00e9langer tous les ingr\u00e9dients de la base. Ajouter les l\u00e9gumes de votre choix (ici carotte, chou blanc et oignons nouveaux, mais vous pouvez mettre des pousses d\u2019\u00e9pinards, du brocolis, etc\u2026).\nVerser l\u2019eau bouillante par-dessus. Couvrir et laisser reposer quelques minutes.\nAjouter les nouilles de votre choix cuites au pr\u00e9alable (je r\u00e9serve mes nouilles pr\u00e9cuites dans de l\u2019eau froide pour stopper la cuisson et \u00e9viter qu\u2019elles ne collent), et \u00e9ventuellement un \u0153uf mollet.\nEnjoy !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBrocoli\n,\nRecettes Sal\u00e9es\n,\nSoupes\nTags:\nramen\n,\nramen maison\n,\nramen v\u00e9g\u00e9tarien\n,\nrecette asiatique\nQuiche aux asperges ch\u00e8vre et miel\nVelout\u00e9 d\u2019asperges blanches super cr\u00e9meux\n5 thoughts on \u201cRamen v\u00e9g\u00e9tarien express\u201d\nAna\ndit\u00a0:\n18 avril 2023 \u00e0 8 h 07 min\nJe mange \u00e7a depuis 3 soirs d\u2019affil\u00e9\u2026. Est-il n\u00e9cessaire d\u2019en dire plus?\nMerci de nous r\u00e9galer les filles!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mai 2023 \u00e0 12 h 40 min\ncooooeuuur\nchargement\u2026\nR\u00e9pondre\nDiane\ndit\u00a0:\n15 f\u00e9vrier 2025 \u00e0 13 h 52 min\nBonjour, quelle type de nouilles utilisez vous pour cette recette ? Merci d\u2019avance !\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n17 f\u00e9vrier 2025 \u00e0 11 h 13 min\nHello, ici des nouilles aux oeufs mais vous pouvez utiliser les nouilles de votre choix\nchargement\u2026\nR\u00e9pondre\nAurore\ndit\u00a0:\n21 mars 2025 \u00e0 13 h 55 min\nSans doute moins aromatique qu\u2019un bouillon qui a bien mijot\u00e9 mais d\u00e9licieux pour une version express ! Merci pour cette recette !\nchargement\u2026\nR\u00e9pondre\n4.52 from 43 votes (\n41 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

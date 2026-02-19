@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "title": "Aubergine pan\u00e9e : notre crush crousti-moelleux de l'\u00e9t\u00e9",
+    "description": "Une recette facile et express qui va vous faire adorer l'aubergine autrement. Croustillante dehors, fondante dedans.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT52M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergine",
+      "vegan",
+      "\u00e9t\u00e9",
+      "printemps",
+      "friture",
+      "croustillant"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/05/Aubergine-panee-1-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Servir sur une sauce tomate aux herbes.",
+      "La levure malt\u00e9e donne un petit go\u00fbt fromager et umami.",
+      "Recette test\u00e9e et approuv\u00e9e, les quantit\u00e9s sont justes."
+    ],
+    "slug": "aubergine-panee-notre-crush-crousti-moelleux-de-l-ete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/05/Aubergine-panee-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/05/27/aubergine-panee/",
+    "image": "images/aubergine-panee-notre-crush-crousti-moelleux-de-l-ete.webp",
+    "createdAt": "2026-02-09T22:09:45.707887",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 52.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 560.3,
+      "protein": 29.5,
+      "fat": 4.1,
+      "carbs": 100.0,
+      "fiber": 22.4,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "aubergine",
+      "name": "aubergine",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "ail_semoule",
+      "name": "ail semoule",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "lait_vegetal",
+      "name": "lait v\u00e9g\u00e9tal",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk"
+    },
+    {
+      "id": "chapelure",
+      "name": "chapelure",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "huile_friture",
+      "name": "huile de friture",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Frying oil"
+    }
+  ],
+  "tools": [
+    "Fourchette",
+    "Po\u00eale \u00e0 bords hauts"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 210\u00b0C.",
+      "duration": null,
+      "temperature": 210,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_aubergine",
+      "action": "Piquez la peau de l'aubergine avec une fourchette et enfournez 40min.",
+      "duration": "PT40M",
+      "temperature": 210,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "aubergine"
+      ],
+      "produces": "baked_aubergine",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "peel_aubergine",
+      "action": "Laissez refroidir puis pelez l'aubergine avec les mains.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_aubergine"
+      ],
+      "produces": "peeled_aubergine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_batter",
+      "action": "Dans une assiette creuse, m\u00e9langez la farine, le paprika, l'ail, le sel et le lait.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "coating",
+      "uses": [
+        "farine",
+        "paprika_fume",
+        "ail_semoule",
+        "sel",
+        "lait_vegetal"
+      ],
+      "produces": "batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_breading",
+      "action": "Dans une autre assiette, m\u00e9langez la chapelure et la levure malt\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "coating",
+      "uses": [
+        "chapelure",
+        "levure_maltee"
+      ],
+      "produces": "breading_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flatten_aubergine",
+      "action": "A l'aide d'une fourchette, aplatissez l'aubergine, sans couper le p\u00e9doncule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_aubergine"
+      ],
+      "produces": "flattened_aubergine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffez 2cm d'huile dans une po\u00eale \u00e0 bords hauts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "frying",
+      "uses": [
+        "huile_friture"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_aubergine",
+      "action": "Enduisez l'aubergine de p\u00e2te sur les deux c\u00f4t\u00e9s. Puis passez-la dans la chapelure.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "coating",
+      "uses": [
+        "flattened_aubergine",
+        "batter",
+        "breading_mix"
+      ],
+      "produces": "coated_aubergine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fry_aubergine",
+      "action": "Faites-la frire des deux c\u00f4t\u00e9s jusqu'\u00e0 ce qu'elle soit dor\u00e9e, environ 6min de chaque c\u00f4t\u00e9.",
+      "duration": "PT12M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "frying",
+      "uses": [
+        "coated_aubergine",
+        "hot_oil"
+      ],
+      "produces": "fried_aubergine",
+      "requires": [],
+      "visualCue": "dor\u00e9e"
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9gustez sur une sauce tomate aux herbes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fried_aubergine"
+      ],
+      "produces": "aubergine_panee",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "aubergine_panee",
+  "originalText": "Aubergine pan\u00e9e : notre crush crousti-moelleux de l\u2019\u00e9t\u00e9 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n27 mai 2024\nAubergine pan\u00e9e : notre crush crousti-moelleux de l\u2019\u00e9t\u00e9\nAllez l\u00e0 !! On se retrouve pour une\nrecette\nqui croustille :\nl\u2019aubergine pan\u00e9e\n. Vous n\u2019avez pas id\u00e9e \u00e0 quel point le retour des\naubergines\nnous rend heureux ! C\u2019est simple : ce\nl\u00e9gume\nest dans notre top 3 sans h\u00e9siter. Et pourtant, il est souvent mal aim\u00e9\u2026 surtout en cuisine fran\u00e7aise. S\u00e9rieusement, vous avez une vraie bonne\nrecette fran\u00e7aise d\u2019aubergine\n? Nous, on a pr\u00e9f\u00e9r\u00e9 l\u2019\nenrober de chapelure\n. R\u00e9sultat ?\nCroustillante\ndehors, fondante dedans.\nUne\nrecette facile\net\nexpress\nqui va vous faire adorer l\u2019\naubergine\nautrement.\nTable des mati\u00e8res\n1\nL\u2019aubergine, star des cuisines du monde\n2\nUne explosion de saveurs crousti-fondantes\n3\nAubergine pan\u00e9e\n4\nLa chapelure, l\u2019ingr\u00e9dient croustillant et gourmand\n5\nPresque une escalope\u2026 mais 100 % v\u00e9g\u00e9 !\nL\u2019aubergine, star des cuisines du monde\nHeureusement, ailleurs, on sait la sublimer comme il faut ! La cuisine grecque, par exemple, la met toujours \u00e0 l\u2019honneur. Et l\u2019Italie\u2026 on en parle ? Des merveilles \u00e0 l\u2019infini ! Par ici, vous trouverez plein de recettes inspir\u00e9es de ces traditions. On va aussi piocher du c\u00f4t\u00e9 de l\u2019Asie, quand l\u2019envie nous prend. On conna\u00eet un peu moins, mais on adore explorer. Si vous avez des id\u00e9es asiatiques \u00e0 base d\u2019aubergine, dites-nous tout ! En ce qui concerne ce blog,\nvous trouverez des tas de recettes d\u2019aubergines ici.\nVous adorez l\u2019aubergine ? D\u00e9couvrez notre\nparmigiana, ce gratin italien fondant\n, un vrai r\u00e9gal ! Pour une touche fra\u00eeche et m\u00e9diterran\u00e9enne, laissez-vous tenter par le\ncaviar d\u2019aubergine au tahini, ou baba ganoush\n. Envie d\u2019un plat complet et convivial ? Notre\nmoussaka v\u00e9g\u00e9tarienne\nest l\u00e0 pour vous surprendre. Pour les soirs press\u00e9s, testez nos\ntranches d\u2019aubergines gratin\u00e9es express\n, pr\u00eates en un rien de temps !\nUne explosion de saveurs crousti-fondantes\nEn attendant, je peux vous assurer que vous allez vous r\u00e9galer avec cette Aubergine pan\u00e9e ! Je l\u2019ai servi sur une base de\ncette sauce tomate\n. Et c\u2019est juste dingue. Fondant \u00e0 l\u2019int\u00e9rieur et croustillant \u00e0 l\u2019ext\u00e9rieur. On peut se croire presque face \u00e0 une escalope milanaise si vous voyez ce que je veux dire !\nAubergine pan\u00e9e\n4.60\n/5 avec\n111\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n1\npersonne\nIngr\u00e9dients\n1x\n2x\n3x\n1\naubergine\n70\ng\nde farine\n1\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c d\u2019ail semoule\n\u00bd\nc\u00e0c de sel\n80\nml\nde lait v\u00e9g\u00e9tal\n70\ng\nde chapelure\n2\nc\u00e0s de levure malt\u00e9e\nde l\u2019huile de friture\nInstructions\nPr\u00e9chauffer le four \u00e0 210\u00b0C.\nPiquez la peau de l\u2019aubergine avec une fourchette et enfournez 40min.\nLaissez refroidir puis pelez l\u2019aubergine avec les mains.\nDans une assiette creuse, m\u00e9langez la farine, le paprika, l\u2019ail, le sel et le lait.\nDans une autre assiette, m\u00e9langez la chapelure et la levure malt\u00e9e.\nA l\u2019aide d\u2019une fourchette, aplatissez l\u2019aubergine, sans couper le p\u00e9doncule.\nFaites chauffez 2cm d\u2019huile dans une po\u00eale \u00e0 bords\nEnduisez-la de p\u00e2te sur les deux c\u00f4t\u00e9s. Puis passez-la dans la chapelure.\nFaites-la frire des deux c\u00f4t\u00e9s jusqu\u2019\u00e0 ce qu\u2019elle soit dor\u00e9e, environ 6min de chaque c\u00f4t\u00e9.\nD\u00e9gustez sur une sauce tomate aux herbes.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa chapelure, l\u2019ingr\u00e9dient croustillant et gourmand\nPour cette aubergine pan\u00e9e, la chapelure joue un r\u00f4le cl\u00e9. Elle apporte ce croustillant parfait qui fait toute la diff\u00e9rence ! Ici, on l\u2019enrichit avec de la levure malt\u00e9e, un super ingr\u00e9dient plein de go\u00fbt et de bienfaits. Elle donne un petit go\u00fbt fromager et umami, parfait pour relever la panure sans utiliser de fromage. Vous voulez en savoir plus sur la levure malt\u00e9e ? D\u00e9couvrez notre article d\u00e9di\u00e9 ici :\nla levure malt\u00e9e\n. La recette se fait simplement : on m\u00e9lange la chapelure avec la levure malt\u00e9e, on enduit l\u2019aubergine de p\u00e2te assaisonn\u00e9e, puis on la passe dans ce m\u00e9lange croustillant avant la cuisson. Le r\u00e9sultat ? Une aubergine dor\u00e9e, croustillante et pleine de saveurs, parfaite pour \u00eatre d\u00e9gust\u00e9e avec une sauce tomate aux herbes.\nVous avez craqu\u00e9 pour notre aubergine pan\u00e9e ? Parfait, car on a plein d\u2019autres recettes croustillantes \u00e0 vous faire d\u00e9couvrir ! Envie de gourmandise sans friture ? Testez nos\nrondelles d\u2019aubergines pan\u00e9es au four\n, ou la\nbutternut croustillante\n. Pour changer des l\u00e9gumes classiques, laissez-vous tenter par un\nsteak de chou-fleur pan\u00e9\n, ultra savoureux et l\u00e9ger. Vous adorez la feta ? Notre version\nfeta pan\u00e9e au s\u00e9same\nva vous faire fondre. Et pour une touche originale, essayez notre\nsalade C\u00e9sar avec shiitakes pan\u00e9s\n, un vrai r\u00e9gal !\nToutes ces recettes croustillantes et v\u00e9g\u00e9tariennes vous attendent, alors foncez les explorer.\nPresque une escalope\u2026 mais 100 % v\u00e9g\u00e9 !\nQuand on croque dans cette aubergine pan\u00e9e, on pense tout de suite \u00e0 une escalope bien croustillante. La chapelure dor\u00e9e et croustillante, le c\u0153ur tendre et fondant\u2026 un vrai d\u00e9lice !\nSauf que l\u00e0, pas une once de viande, que du v\u00e9g\u00e9tal. C\u2019est la preuve que la cuisine v\u00e9g\u00e9 peut \u00eatre gourmande et g\u00e9n\u00e9reuse. Vous allez adorer cette alternative pleine de go\u00fbt et de texture.\nCette recette d\u2019aubergine pan\u00e9e est un vrai bonheur \u00e0 d\u00e9guster. Simple, rapide et pleine de go\u00fbt, elle change la donne pour aimer l\u2019aubergine autrement. N\u2019h\u00e9sitez pas \u00e0 l\u2019essayer, vous verrez, elle s\u00e9duit tout le monde, m\u00eame les plus sceptiques !\nPour encore plus d\u2019id\u00e9es gourmandes autour de ce l\u00e9gume star, d\u00e9couvrez toutes nos\nrecettes \u00e0 base d\u2019aubergines\net r\u00e9galez-vous en mode v\u00e9g\u00e9tarien.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\n\u00c9t\u00e9\n,\nNos recettes V\u00e9ganes\n,\nPlats en Sauce\n,\nPrintemps\nSalade de haricots blancs et l\u00e9gumes r\u00f4tis\nCrinkle cake pistaches fraises\n5 thoughts on \u201cAubergine pan\u00e9e : notre crush crousti-moelleux de l\u2019\u00e9t\u00e9\u201d\nISCA\ndit\u00a0:\n17 juin 2024 \u00e0 21 h 17 min\nSi cette recette est tr\u00e8s app\u00e9tissante, le papeton d\u2019aubergines, recette bien fran\u00e7aise pourtant, n\u2019est pas mal non plus\u2026\nchargement\u2026\nR\u00e9pondre\nhelene\ndit\u00a0:\n8 juillet 2024 \u00e0 13 h 39 min\nVraiment tr\u00e8s bon, ici, toute la famille a aim\u00e9 ! Facile et assez rapide \u00e0 faire.\nchargement\u2026\nR\u00e9pondre\nAur\u00e9lia\ndit\u00a0:\n3 ao\u00fbt 2024 \u00e0 14 h 51 min\nRecette test\u00e9e et approuv\u00e9e! Je n\u2019ai pas rencontr\u00e9 de difficult\u00e9s, les quantit\u00e9s sont justes et on obtient en effet une aubergine fondante \u00e0 l\u2019int\u00e9rieur et bien croustillante \u00e0 l\u2019ext\u00e9rieur. Une r\u00e9ussite! Merci Natacha\nchargement\u2026\nR\u00e9pondre\nJason\ndit\u00a0:\n12 ao\u00fbt 2024 \u00e0 19 h 37 min\ncuisine francaise je dirais aubergine farcis un delice, tout comme les courgette poivron tomate champignon\nchargement\u2026\nR\u00e9pondre\nSandra\ndit\u00a0:\n28 mai 2025 \u00e0 21 h 17 min\nTest\u00e9 et approuv\u00e9 pour moi aussi, et cela m\u2019a fait manger de l\u2019aubergine alors que ce l\u00e9gume me rebutait un peu. Merci !\nJ\u2019ai d\u00e9j\u00e0 h\u00e2te de refaire cette recette.\nchargement\u2026\nR\u00e9pondre\n4.60 from 111 votes (\n108 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

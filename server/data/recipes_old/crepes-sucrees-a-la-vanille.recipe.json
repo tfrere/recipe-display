@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "title": "Cr\u00eapes sucr\u00e9es \u00e0 la vanille",
+    "description": "Des cr\u00eapes gourmandes l\u00e9g\u00e8rement vanill\u00e9es \u00e0 d\u00e9guster avec un peu de sucre ou garnies avec de la p\u00e2te \u00e0 tartiner, du caramel, de la confiture ou encore avec du sucre et du citron !",
+    "servings": 15,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "cr\u00eapes faciles",
+      "id\u00e9es chandeleur",
+      "recette de cr\u00eapes",
+      "recette facile cr\u00eapes",
+      "dessert",
+      "go\u00fbter",
+      "petit d\u00e9jeuner",
+      "snack"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/crepe-chandeleur-1-of-1.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour \u00e9viter que les cr\u00eapes ne s'ass\u00e8chent, vous pouvez poser une assiette retourn\u00e9e sur votre pile de cr\u00eapes, de cette mani\u00e8re les cr\u00eapes gardent leur humidit\u00e9 et donc leur moelleux!",
+      "Mon conseil pour une p\u00e2te \u00e0 cr\u00eape garantie sans grumeau : Pour une p\u00e2te \u00e0 cr\u00eape sans grumeaux, versez tous les liquides en premier (lait et \u0153uf) puis m\u00e9langez. Ajoutez ensuite la farine tout en m\u00e9langeant. Zero grumeau garanti !",
+      "Et si vous n'avez pas suivi ma m\u00e9thode et que vous d\u00e9sesp\u00e9rez avec les grumeaux, pas de panique ! Utilisez votre mixeur plongeant pour mixer la p\u00e2te et obtenir une texture parfaitement lisse !"
+    ],
+    "slug": "crepes-sucrees-a-la-vanille",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/crepe-chandeleur-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/31/idees-de-crepes-et-garnitures/",
+    "image": "images/crepes-sucrees-a-la-vanille.jpg",
+    "createdAt": "2026-02-09T21:00:58.324872",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 65.0,
+    "totalCookingTime": 35.0,
+    "nutritionPerServing": {
+      "calories": 126.7,
+      "protein": 4.3,
+      "fat": 5.1,
+      "carbs": 15.3,
+      "fiber": 0.5,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "Po\u00eale \u00e0 cr\u00eapes",
+    "Mixeur plongeant (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "mix_liquids",
+      "action": "Dans un saladier m\u00e9langer le lait et les oeufs.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lait",
+        "oeufs"
+      ],
+      "produces": "liquid_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_dry_ingredients",
+      "action": "Ajouter la farine, le sucre, le sucre vanill\u00e9 et le sel tout en m\u00e9langeant.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "liquid_mixture",
+        "farine",
+        "sucre",
+        "sucre_vanille",
+        "sel"
+      ],
+      "produces": "batter_without_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter",
+      "action": "Ajoutez le beurre fondu.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "batter_without_butter",
+        "beurre"
+      ],
+      "produces": "crepe_batter",
+      "requires": [],
+      "visualCue": "parfaitement lisse"
+    },
+    {
+      "id": "rest_batter",
+      "action": "Si possible, laissez la reposer 30min. Ou m\u00eame toute une nuit.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "crepe_batter"
+      ],
+      "produces": "rested_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_first_side",
+      "action": "Dans une po\u00eale \u00e0 cr\u00eapes bien chaude, l\u00e9g\u00e8rement beurr\u00e9e, verser une petite louche de p\u00e2te sur la po\u00eale. Effectuer un mouvement de rotation pour r\u00e9partir la p\u00e2te sur toute la surface. Poser la po\u00eale sur le feu (\u00e0 feu moyen), retourner la cr\u00eape apr\u00e8s environ 1min de cuisson.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rested_batter"
+      ],
+      "produces": "crepe_first_side_cooked",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_second_side",
+      "action": "Cuire de nouveau 1min de ce c\u00f4t\u00e9 l\u00e0 et voil\u00e0, la cr\u00eape est pr\u00eate !",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "crepe_first_side_cooked"
+      ],
+      "produces": "single_crepe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "repeat_cooking",
+      "action": "R\u00e9p\u00e9ter l'op\u00e9ration jusqu'\u00e0 ce qu'il n'y ait plus de p\u00e2te.",
+      "duration": "PT27M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rested_batter",
+        "single_crepe"
+      ],
+      "produces": "stack_of_crepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_crepes",
+      "action": "Les cr\u00eapes se d\u00e9gustent encore ti\u00e8des ou froides, natures ou garnies avec tout ce qui vous fera plaisir!",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "stack_of_crepes"
+      ],
+      "produces": "crepes_sucrees_vanille",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "crepes_sucrees_vanille",
+  "originalText": "Id\u00e9es de cr\u00eapes sucr\u00e9es et gourmandes pour la Chandeleur - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 janvier 2022\nId\u00e9es de cr\u00eapes sucr\u00e9es et gourmandes pour la Chandeleur\nLa\nChandeleur\napproche \u00e0 grands pas, et c\u2019est l\u2019occasion parfaite de se r\u00e9galer avec des cr\u00eapes maison ! Qu\u2019on soit petit ou grand, les cr\u00eapes sont synonymes de bonheur, de convivialit\u00e9 et d\u2019un brin de magie en cuisine. Que ce soit pour c\u00e9l\u00e9brer la Chandeleur, pour un go\u00fbter improvis\u00e9 ou comme dessert r\u00e9confortant, elles se pr\u00eatent \u00e0 toutes les envies sucr\u00e9es. Voici nos recettes de p\u00e2tes \u00e0 cr\u00eapes et nos id\u00e9es de garnitures pour faire de cette f\u00eate un moment inoubliable.\nTable des mati\u00e8res\n1\nLa p\u00e2te \u00e0 cr\u00eapes parfaite\n2\nCr\u00eapes sucr\u00e9es \u00e0 la vanille\n3\nNos autres recettes de p\u00e2tes \u00e0 cr\u00eapes\n4\nMon conseil pour une p\u00e2te \u00e0 cr\u00eape garantie sans grumeau\n5\nNos garnitures sucr\u00e9es classiques\n6\nCuire ses cr\u00eapes dans une po\u00eale en inox ?\n7\nConseils pour une Chandeleur r\u00e9ussie\n8\nConclusion\nLa p\u00e2te \u00e0 cr\u00eapes parfaite\nJe vous partage ici ma recette de p\u00e2te \u00e0 cr\u00eape pr\u00e9f\u00e9r\u00e9e ! Elle est toute simple et l\u00e9g\u00e8rement parfum\u00e9e \u00e0 la vanille. Et surtout, elle est compl\u00e8tement inratable !\nCr\u00eapes sucr\u00e9es \u00e0 la vanille\nDes cr\u00eapes gourmandes l\u00e9g\u00e8rement vanill\u00e9es \u00e0 d\u00e9guster avec un peu de sucre ou garnies avec de la p\u00e2te \u00e0 tartiner, du caramel, de la confiture ou encore avec du sucre et du citron ! Fa\u00eetes vous plaisir, toutes les garnitures sont permises !\n4.62\n/5 avec\n104\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n2\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Petit d\u00e9jeuner, Snack\nPortions\n15\ncr\u00eapes\nIngr\u00e9dients\n1x\n2x\n3x\n500\nml\nde lait\n3\noeufs\n250\ng\nde farine\n1\nsachet de sucre vanill\u00e9\n1\nc\u00e0s de sucre\n1\npinc\u00e9e de sel\n50\ng\nde beurre\nfondu\nInstructions\nDans un saladier m\u00e9langer le lait et les oeufs.\nAjouter la farine, le sucre, le sucre vanill\u00e9 et le sel tout en m\u00e9langeant\nAjoutez le beurre fondu.\nVotre p\u00e2te devrait \u00eatre parfaitement lisse. si possible, laissez la reposer 30min. Ou m\u00eame toute une nuit.\nDans une po\u00eale \u00e0 cr\u00eapes bien chaude, l\u00e9g\u00e8rement beurr\u00e9e, verser une petite louche de p\u00e2te sur la po\u00eale. Effectuer un mouvement de rotation pour r\u00e9partir la p\u00e2te sur toute la surface. Poser la po\u00eale sur le feu (\u00e0 feu moyen), retourner la cr\u00eape apr\u00e8s environ 1 min de cuisson. Cuire de nouveau 1 min de ce c\u00f4t\u00e9 l\u00e0 et voil\u00e0, la cr\u00eape est pr\u00eate ! R\u00e9p\u00e9ter l\u2019op\u00e9ration jusqu\u2019\u00e0 ce qu\u2019il n\u2019y ait plus de p\u00e2te.\nLes cr\u00eapes se d\u00e9gustent encore ti\u00e8des ou froides, natures ou garnies avec tout ce qui vous fera plaisir!\nNotes\nPour \u00e9viter que les cr\u00eapes ne s\u2019ass\u00e8chent, vous pouvez poser une assiette retourn\u00e9e sur votre pile de cr\u00eapes, de cette mani\u00e8re les cr\u00eapes gardent leur humidit\u00e9 et donc leur moelleux!\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nNos autres recettes de p\u00e2tes \u00e0 cr\u00eapes\nLa p\u00e2te \u00e0 cr\u00eape \u00e0 la bi\u00e8re\n: Pour des cr\u00eapes l\u00e9g\u00e8res et parfum\u00e9es.\nLa recette est ici.\nLes cr\u00eapes mille trous\n: Une option venue du Maghreb, parfaite avec de la fleur d\u2019oranger et du miel.\nVous trouverez la recette de Daniela ici.\nLa p\u00e2te \u00e0 cr\u00eape vegan \u00e0 la farine d\u2019\u00e9peautre\n: Une alternative saine et sans produits d\u2019origine animale.\nLa recette est ici.\nMon conseil pour une p\u00e2te \u00e0 cr\u00eape garantie sans grumeau\n\u00c7a va vous para\u00eetre contre-intuitif, mais \u00e7a marche ! Pour une p\u00e2te \u00e0 cr\u00eape sans grumeaux, versez tous les liquides en premier (lait et \u0153uf) puis m\u00e9langez. Ajoutez ensuite la farine tout en m\u00e9langeant. Zero grumeau garanti !\nEt si vous n\u2019avez pas suivi ma m\u00e9thode et que vous d\u00e9sesp\u00e9rez avec les grumeaux, pas de panique ! Utilisez votre mixeur plongeant pour mixer la p\u00e2te et obtenir une texture parfaitement lisse !\nNos garnitures sucr\u00e9es classiques\nSucre et citron (mon petit favori) : Simple, \u00e9l\u00e9gant et intemporel : saupoudrez une fine couche de sucre en poudre sur votre cr\u00eape, puis ajoutez un filet de jus de citron. C\u2019est toujours une valeur s\u00fbre !\nCaramel beurre sal\u00e9\n: Une garniture ultra-gourmande. Vous pouvez pr\u00e9parer votre caramel maison ou utiliser une version pr\u00eate \u00e0 l\u2019emploi. N\u2019h\u00e9sitez pas \u00e0 ajouter une boule de glace \u00e0 la vanille pour un effet encore plus irr\u00e9sistible.\nP\u00e2te \u00e0 tartiner chocolat-noisette\n: Un classique ind\u00e9modable. Pourquoi ne pas essayer de pr\u00e9parer votre propre p\u00e2te \u00e0 tartiner maison pour une touche personnelle ?\nDulce de leche\n: Ce caramel de lait, tr\u00e8s populaire en Am\u00e9rique Latine, est facile \u00e0 r\u00e9aliser et incroyablement savoureux. Une v\u00e9ritable invitation au voyage !\nLemon curd\n: Une cr\u00e8me de citron douce et acidul\u00e9e qui sublime vos cr\u00eapes. Essayez la recette peaufin\u00e9e par Daniela, elle est inratable !\nPoire Belle-H\u00e9l\u00e8ne\n: Pour une touche chic et gourmande, garnissez vos cr\u00eapes de poires poch\u00e9es, de chocolat fondu et d\u2019une boule de glace \u00e0 la vanille. Un dessert qui fait toujours son effet !\nCuire ses cr\u00eapes dans une po\u00eale en inox ?\nC\u2019est plus que possible, et vous pouvez d\u2019ailleurs retrouver\nma vid\u00e9o qui explique la technique en image sur instagram.\nSinon, c\u2019est simple :\nFaites chauffer la po\u00eale aux 2/3 de la puissance de vos plaques (ou de vos feux).\nFaites le test de la goutte d\u2019eau : versez quelques gouttes d\u2019eau sur la po\u00eale. Si elles s\u2019\u00e9vaporent tout de suite, la po\u00eale n\u2019est pas encore suffisamment chaude. Par contre, si elles forment des \u201cperles\u201d sur l\u2019inox qui roulent dans tous les sens, c\u2019est bon !\nEnlevez l\u2019eau de la po\u00eale s\u2019il en reste.\nBaissez le feu et laissez la po\u00eale refroidir un peu.\nAjoutez la mati\u00e8re grasse de votre choix.\nVersez la p\u00e2te \u00e0 cr\u00eape.\nQuand les bords de la cr\u00eape se d\u00e9collent, c\u2019est qu\u2019elle est pr\u00eate \u00e0 \u00eatre retourn\u00e9e !\nConseils pour une Chandeleur r\u00e9ussie\nPr\u00e9paration : Pr\u00e9parez votre p\u00e2te la veille pour une texture optimale.\nCuisson : Utilisez une po\u00eale bien chaude et l\u00e9g\u00e8rement huil\u00e9e pour des cr\u00eapes parfaitement dor\u00e9es.\nPr\u00e9sentation : Pliez vos cr\u00eapes en triangle ou roulez-les pour un rendu \u00e9l\u00e9gant. Ajoutez un filet de miel ou saupoudrez de sucre glace pour la touche finale.\nConclusion\nCes id\u00e9es de garnitures sucr\u00e9es transformeront vos cr\u00eapes en une exp\u00e9rience gourmande et inoubliable. Alors, pr\u00e9parez vos po\u00eales, faites sauter vos cr\u00eapes et laissez libre cours \u00e0 votre cr\u00e9ativit\u00e9 ! Quelle est votre garniture pr\u00e9f\u00e9r\u00e9e ? Partagez vos id\u00e9es en commentaire et inspirez d\u2019autres gourmands. Bon app\u00e9tit !\nEt vous, dites-nous quelles sont vos Id\u00e9es de Cr\u00eapes et Garnitures pour la Chandeleur pr\u00e9f\u00e9r\u00e9es ?\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nHiver\n,\nMuffins et Scones\n,\nRecettes Sucr\u00e9es\n,\nSaisons et inspirations\nTags:\ncr\u00eapes faciles\n,\nid\u00e9es chandeleur\n,\nrecette de cr\u00eapes\n,\nrecette facile cr\u00eapes\nCr\u00eapes Mille Trous (Baghrir) \u00e0 la fleur d\u2019oranger\nComment faire de l\u2019Aquafaba et comment l\u2019utiliser\n1 thought on \u201cId\u00e9es de cr\u00eapes sucr\u00e9es et gourmandes pour la Chandeleur\u201d\nVIRY\ndit\u00a0:\n31 janvier 2022 \u00e0 16 h 48 min\nBonjour,\nPar quoi peut-on remplacer la farine d\u2019\u00e9peautre pour avoir des cr\u00eapes sans gluten?\nMerci d\u2019avance.\nchargement\u2026\nR\u00e9pondre\n4.62 from 104 votes (\n103 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 35.0
+}

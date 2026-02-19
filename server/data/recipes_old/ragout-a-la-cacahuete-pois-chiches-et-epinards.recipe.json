@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "title": "Ragoût à la Cacahuète, Pois Chiches et Epinards",
+    "description": "Parfois, il faut savoir simple et bon avec peu ! Une recette « placard » qui ne demande pas de produits frais, seulement des ingrédients secs, en conserve ou surgelés.",
+    "servings": 4,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "beurre de cacahuete",
+      "curry végétarien",
+      "pois chiche epinard",
+      "ragout indien",
+      "recette placard",
+      "epinards",
+      "automne",
+      "hiver",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/IMG_0243-scaled.jpg",
+    "nationality": "Indian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette \"placard\" idéale pour les périodes de confinement, utilisant des ingrédients secs, en conserve ou surgelés.",
+      "Le gingembre frais peut être remplacé par du gingembre en poudre.",
+      "Servir avec du riz, ou tel quel !",
+      "Une lectrice conseille d'ajouter des carottes en dés et des cacahuètes entières pour le crunch."
+    ],
+    "slug": "ragout-a-la-cacahuete-pois-chiches-et-epinards",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/IMG_0243-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/03/30/ragout-a-la-cacahuete-pois-chiches-et-epinards/",
+    "image": "images/ragout-a-la-cacahuete-pois-chiches-et-epinards.webp",
+    "createdAt": "2026-02-09T19:47:45.336213",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 39.0,
+    "totalCookingTime": 19.0,
+    "nutritionPerServing": {
+      "calories": 559.2,
+      "protein": 26.6,
+      "fat": 19.7,
+      "carbs": 70.8,
+      "fiber": 24.7,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "balanced"
+    ],
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "garam_masala",
+      "name": "garam massala",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garam masala"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fumé",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "fenugreek",
+      "name": "fenugrec en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fenugreek powder"
+    },
+    {
+      "id": "chili_powder",
+      "name": "chili en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "optionnel",
+      "optional": true,
+      "name_en": "chili powder"
+    },
+    {
+      "id": "canned_tomatoes",
+      "name": "tomates en conserve",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned tomatoes"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentré de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "peanut_butter",
+      "name": "beurre de cacahuète",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "peanut butter"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "chickpeas",
+      "name": "pois chiche cuits",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cooked chickpeas"
+    },
+    {
+      "id": "spinach",
+      "name": "épinards surgelés",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "frozen spinach"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Poêle à bords hauts"
+  ],
+  "steps": [
+    {
+      "id": "blend_onion_garlic_ginger",
+      "action": "Épluchez puis mixez l'oignon, l'ail et le gingembre pour obtenir une sorte de pâte.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "garlic",
+        "ginger"
+      ],
+      "produces": "onion_garlic_ginger_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_paste",
+      "action": "Faire chauffer l'huile à feu moyen dans une poêle à bords hauts, et y faire revenir l'oignon, ail et gingembre 5min, jusqu'à ce que le mélange soit bien parfumé.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_oil",
+        "onion_garlic_ginger_paste"
+      ],
+      "produces": "sauteed_paste",
+      "requires": [],
+      "visualCue": "bien parfumé"
+    },
+    {
+      "id": "toast_spices",
+      "action": "Ajouter les épices, mélanger et laisser cuire encore 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_paste",
+        "cumin",
+        "garam_masala",
+        "turmeric",
+        "smoked_paprika",
+        "fenugreek",
+        "chili_powder"
+      ],
+      "produces": "spiced_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomato_base",
+      "action": "Verser la tomate, le concentré, le beurre de cacahuète et l'eau. Bien mélanger pour que le beurre de cacahuète se dilue bien. Monter le feu. Le mélange doit commencer à bouillonner.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spiced_paste",
+        "canned_tomatoes",
+        "tomato_paste",
+        "peanut_butter",
+        "water"
+      ],
+      "produces": "tomato_peanut_sauce",
+      "requires": [],
+      "visualCue": "commence à bouillonner"
+    },
+    {
+      "id": "add_chickpeas_spinach",
+      "action": "Ajouter les pois chiches et les épinards. Laisser cuire à feu doux encore 20min.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_peanut_sauce",
+        "chickpeas",
+        "spinach"
+      ],
+      "produces": "simmered_stew",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_to_taste",
+      "action": "Gouter et ajuster l'assaisonnement.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "simmered_stew",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_stew",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec du riz, ou tel quel !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_stew"
+      ],
+      "produces": "ragout_cacahuete_pois_chiches_epinards",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "ragout_cacahuete_pois_chiches_epinards",
+  "originalText": "Ragoût à la Cacahuète, Pois Chiches et Epinards - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 mars 2020\nRagoût à la Cacahuète, Pois Chiches et Epinards\nParfois, il faut savoir simple et bon avec peu ! Et surtout, par les temps qui courent, ça peut être utile d’avoir une recette « placard » sous le bras… N’oublions pas d’éviter de sortir autant que possible !\nMais c’est quoi une « recette placard » ? C’est une recette de gens confinés enfin ! Bien évidemment ! C’est une recette qui ne demande pas de produits frais, seulement des ingrédients secs, en conserve ou surgelés !\nIci, j’utilise des pois chiches (secs ou en conserve), des épinards surgelés, et des produits qui se conservent longtemps comme l’oignon et l’ail (mais que l’on peut aussi utiliser surgelés ou en granules).\nBon, dans les faits, je l’avoue, j’ai tout de même utilisé du gingembre frais, simplement parce que j’en ai toujours à la maison (ça aide aussi beaucoup en infusion pour les maux de gorge, et par les temps qui courent, un petit mal de gorge est bien vite arrivé !) Cela étant dit, du gingembre en poudre fera aussi l’affaire.\nD’ailleurs, est-ce que certains d’entre vous ont déjà essayé de congeler du gingembre frais ? Si oui, je suis super curieuse de savoir ce que ça donne, et sous quelle forme vous conseillez de le congeler (entier, râpé, pressé, etc… ?)\n4.50\n/5 avec\n34\nvotes\nImprimer la recette\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nTemps total\n50\nminutes\nmin\nIngrédients\n1\noignon\n4\ngousses d'ail\n1\nc-à-s\nde gingembre frais\n2\nc-à-s\nd'huile végétale\n1\nc-à-c\nde cumin\n1\nc-à-c\nde garam massala\n1/2\nc-à-c\nde curcuma\n1/2\nc-à-c\nde paprika fumé\n1/2\nc-à-c\nde fenugrec en poudre\n1\nc-à-c\nde chili en poudre\n(optionnel)\n1\nconserve de tomates\n(400g)\n1\npetite conserve de concentré de tomate\n(70g)\n2\nc-à-s\nde beurre de cacahuète\n150\nml\nd'eau\n400\ng\nde pois chiche cuits\n200\ng\nd'épinards surgelés\nsel, poivre\nInstructions\nÉpluchez puis mixez l'oignon, l'ail et le gingembre pour obtenir une sorte de pâte.\nFaire chauffer l'huile à feu moyen dans une poêle à bords hauts, et y faire revenir l'oignon, ail et gingembre quelques minutes, jusqu'à ce que le mélange soit bien parfumé.\nAjouter les épices, mélanger et laisser cuire encore quelques minutes.\nVerser la tomate, le concentré, le beurre de cacahuète et l'eau. Bien mélanger pour que le beurre de cacahuète se dilue bien. Monter le feu. Le mélange doit commencer à bouillonner.\nAjouter les pois chiches et les épinards. Laisser cuire à feu doux encore une vingtaine de minutes.\nGouter et ajuster l'assaisonnement.\nServir avec du riz, ou tel quel !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nEpinards\n,\nHiver\n,\nPlats en Sauce\n,\nRecettes Salées\nTags:\nbeurre de cacahuete\n,\ncurry végétarien\n,\npois chiche epinard\n,\nragout indien\n,\nrecette lait de coco\n,\nrecette lait de coco végétarien\nTortillas à la Pomme de Terre (Vegan)\nMoelleux au Chocolat sans Farine et sans Beurre\n7 thoughts on “Ragoût à la Cacahuète, Pois Chiches et Epinards”\nLadyMilonguera\ndit :\n30 mars 2020 à 17 h 38 min\nCe ragoût n’est pas pour me déplaire.\nchargement…\nRépondre\nPing :\nRagoût à la Cacahuète, Pois Chiches et Epinards – By PiouPiou\nChristine Z.\ndit :\n22 avril 2020 à 19 h 49 min\nNous l’avons testé ce midi : gros succès ! Mon fils de 25 ans m’a demandé la recette.\nchargement…\nRépondre\nFree The Pickle\ndit :\n22 avril 2020 à 20 h 29 min\nOh génial 🙂 je suis ravie, ça me fait trop plaisir de lire ça !\nchargement…\nRépondre\nGarance\ndit :\n19 septembre 2021 à 15 h 09 min\nUtilisez-vous des épinards surgelés en feuilles ou mixés pour cette recette ?\nchargement…\nRépondre\nNatacha\ndit :\n19 septembre 2021 à 23 h 57 min\nBonjour Garance, j’ai utilisé des feuilles. Mais ça peut très bien fonctionné avec des feuilles mixés aussi !\nchargement…\nRépondre\nEnelye\ndit :\n21 novembre 2021 à 21 h 59 min\nExcellent ! J’ai ajouté 2 carottes coupées en dés et des cacahuètes entières pour le crunch. C’est complet et bien relevé, à refaire ! Merci.\nchargement…\nRépondre\n4.50 from 34 votes (\n33 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 19.0
+}

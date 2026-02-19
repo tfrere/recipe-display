@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "title": "Quiche aux asperges ch\u00e8vre et miel",
+    "description": "Une quiche printani\u00e8re qui associe les asperges avec le fromage de ch\u00e8vre et une touche de miel, super bonne et vraiment facile \u00e0 faire.",
+    "servings": 4,
+    "prepTime": "PT40M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "asperge verte",
+      "asperges",
+      "quiche",
+      "quiche v\u00e9g\u00e9tarienne",
+      "recette asperges",
+      "recette de quiche",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/04/Quiche-asperge-miel-3-of-3.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Perso, je ne fais m\u00eame pas pr\u00e9cuire les asperges. Parce que je les aime l\u00e9g\u00e8rement croquantes dans la quiche. Mais si vous les pr\u00e9f\u00e9rez bien fondantes, alors n'h\u00e9sitez pas \u00e0 les cuire quelques minutes dans de l'eau bouillante. Ou \u00e0 la vapeur.",
+      "Servir ti\u00e8de avec un g\u00e9n\u00e9reux filet de miel de fleurs sauvages."
+    ],
+    "slug": "quiche-aux-asperges-chevre-et-miel",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/04/Quiche-asperge-miel-3-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/04/11/quiche-aux-asperges-chevre-et-miel/",
+    "image": "images/quiche-aux-asperges-chevre-et-miel.webp",
+    "createdAt": "2026-02-09T21:47:52.302876",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 75.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 633.7,
+      "protein": 26.1,
+      "fat": 40.0,
+      "carbs": 40.9,
+      "fiber": 1.5,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "belle pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeuf_pate",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "oeufs_appareil",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "moutarde",
+      "name": "moutarde",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mustard"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "chevre",
+      "name": "ch\u00e8vre en b\u00fbche",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "en petits morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "Goat cheese log"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "asperges_vertes",
+      "name": "asperges vertes",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "6 \u00e0 8",
+      "optional": false,
+      "name_en": "green asparagus"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 tarte"
+  ],
+  "steps": [
+    {
+      "id": "mix_flour_salt",
+      "action": "M\u00e9langer la farine et le sel dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "farine",
+        "sel"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter_crumble",
+      "action": "Ajouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "dry_mix",
+        "beurre"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": "comme un crumble"
+    },
+    {
+      "id": "add_egg_water_form_dough",
+      "action": "Ajouter ensuite l'\u0153uf et l'eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu'\u00e0 ce qu'une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "crumble_mix",
+        "oeuf_pate",
+        "eau_froide"
+      ],
+      "produces": "pate_a_tarte",
+      "requires": [],
+      "visualCue": "boule homog\u00e8ne non collante"
+    },
+    {
+      "id": "chill_dough",
+      "action": "R\u00e9server au frais, au minimum 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "pate_a_tarte"
+      ],
+      "produces": "pate_a_tarte_chilled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_filling",
+      "action": "Dans un grand bol, m\u00e9langer la ricotta, les \u0153ufs, la moutarde, le thym, la moiti\u00e9 du ch\u00e8vre \u00e9miett\u00e9 et le sel et poivre. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil et garniture",
+      "uses": [
+        "ricotta",
+        "oeufs_appareil",
+        "moutarde",
+        "thym",
+        "chevre",
+        "sel",
+        "poivre"
+      ],
+      "produces": "appareil_quiche",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_asparagus",
+      "action": "Rincer les asperges. Casser le pied puis les couper en deux dans la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil et garniture",
+      "uses": [
+        "asperges_vertes"
+      ],
+      "produces": "asperges_pretees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_remaining_chevre",
+      "action": "Couper le reste de la ch\u00e8vre en rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil et garniture",
+      "uses": [
+        "chevre"
+      ],
+      "produces": "chevre_rondelles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_out_dough",
+      "action": "Abaisser la p\u00e2te \u00e0 tarte sur un plan de travail farin\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_a_tarte_chilled"
+      ],
+      "produces": "pate_abaisee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "line_tart_pan",
+      "action": "La d\u00e9poser dans un moule \u00e0 tarte et la foncer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_abaisee"
+      ],
+      "produces": "moule_fonce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_quiche",
+      "action": "Verser l'appareil sur la p\u00e2te puis d\u00e9poser les rondelles de ch\u00e8vre et les asperges par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "moule_fonce",
+        "appareil_quiche",
+        "chevre_rondelles",
+        "asperges_pretees"
+      ],
+      "produces": "quiche_assembled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_quiche",
+      "action": "Enfourner 45min.",
+      "duration": "PT45M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "quiche_assembled"
+      ],
+      "produces": "quiche_cuite",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve_with_honey",
+      "action": "Servir ti\u00e8de avec un g\u00e9n\u00e9reux filet de miel de fleurs sauvages.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "quiche_cuite",
+        "miel"
+      ],
+      "produces": "quiche_asperges_chevre_miel",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "quiche_asperges_chevre_miel",
+  "originalText": "Quiche aux asperges ch\u00e8vre et miel - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 avril 2023\nQuiche aux asperges ch\u00e8vre et miel\nAller \u00e0 la recette\nNous voil\u00e0 de retour par ici avec cette Quiche aux asperges ch\u00e8vre et miel ! \u00c7a fait un petit moment qu\u2019on n\u2019a pas eu le temps de vous publier nos nouvelles recettes !\nSachez que vous pouvez toutes les retrouver aussi sur\nnotre instagram\n.\nOn fait de notre mieux pour poster ici aussi, mais on ne va pas se mentir\u2026 On n\u2019a pas \u00e9t\u00e9 super disciplin\u00e9es ces derniers mois.\nEnfin bref.\nLa saison des asperges bat son plein ! Et cette quiche printani\u00e8re vous permettra d\u2019en profiter \u00e0 fond ! Elle associe les asperges avec le fromage de ch\u00e8vre et une touche de miel !\nC\u2019est super bon. Et vraiment facile \u00e0 faire.\nPerso, je ne fais m\u00eame pas pr\u00e9cuire les asperges. Pourquoi ? Parce que je les aime l\u00e9g\u00e8rement croquantes dans la quiche. Mais si vous les pr\u00e9f\u00e9rez bien fondantes, alors n\u2019h\u00e9sitez pas \u00e0 les cuire quelques minutes dans de l\u2019eau bouillante. Ou \u00e0 la vapeur.\u00a0Comme vous le savez, j\u2019ai toujours une grosse pr\u00e9f\u00e9rence pour la cuisson vapeur. Qui est plus douce. Et qui permet de mieux conserver les go\u00fbts et les nutriments.\nSi vous testez cette recette de Quiche aux asperges ch\u00e8vre et miel, n\u2019h\u00e9sitez pas \u00e0 nous laisser un petit commentaire ! Et si vous cherchez d\u2019autres id\u00e9es avec des asperges, je vous conseille\ncet orzotto\net\ncette cr\u00e8me d\u2019asperges\n!\nQuiche aux asperges, ch\u00e8vre et miel\n4.64\n/5 avec\n38\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te \u00e0 tarte\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n1\nc-\u00e0-s d\u2019eau froide\nAppareil\n160\ng\nde ricotta\n3\noeufs\n1\nc\u00e0s de moutarde\n1\nc\u00e0c de thym\n180\ng\nde ch\u00e8vre en b\u00fbche en petits morceaux\nsel\npoivre\n6\n\u00e0 8 asperges vertes\nmiel\nInstructions\nPr\u00e9parer la p\u00e2te \u00e0 tarte\nM\u00e9langer la farine et le sel dans un saladier.\nAjouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019\u0153uf et l\u2019eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).\nR\u00e9server au frais, au minimum 30min.\nPr\u00e9parer l\u2019appareil\nDans un grand bol, m\u00e9langer la ricotta, les \u0153ufs, la moutarde, le thym, la moiti\u00e9 du ch\u00e8vre \u00e9miett\u00e9 et le sel et poivre. R\u00e9server.\nRincer les asperges. Casser le pied puis les couper en deux dans la longueur. Attention, elles sont fragiles, allez-y d\u00e9licatement.\nCouper le reste de la ch\u00e8vre en rondelles.\nPr\u00e9parer la quiche\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nAbaisser la p\u00e2te \u00e0 tarte sur un plan de travail farin\u00e9.\nLa d\u00e9poser dans un moule \u00e0 tarte et la foncer.\nVerser l\u2019appareil sur la p\u00e2te puis d\u00e9poser les rondelles de ch\u00e8vre et les asperges par-dessus.\nEnfourner 45min.\nServir ti\u00e8de avec un g\u00e9n\u00e9reux filet de miel de fleurs sauvages.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAsperge\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nasperge verte\n,\nasperges\n,\nquiche\n,\nquiche v\u00e9g\u00e9tarienne\n,\nrecette asperges\n,\nrecette de quiche\nOignons farcis au riz et herbes fra\u00eeches\nRamen v\u00e9g\u00e9tarien express\n4.64 from 38 votes (\n38 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

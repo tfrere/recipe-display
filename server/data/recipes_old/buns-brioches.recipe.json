@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "title": "Buns brioch\u00e9s",
+    "description": "Ces petits buns brioch\u00e9s maison ne sont pas seulement incroyablement moelleux, ils sont aussi super savoureux et parfaits pour n'importe quel type de burger. Ils sont faciles \u00e0 faire et vraiment d\u00e9licieux.",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT25M",
+    "difficulty": "medium",
+    "recipeType": "base",
+    "tags": [
+      "bun",
+      "buns brioch\u00e9s",
+      "burger",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Buns-brioches-2021-3-of-4.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Jernej Kitchen",
+    "notes": [
+      "D\u00e9finitivement ma recette pr\u00e9f\u00e9r\u00e9e de buns brioch\u00e9s pour des burgers maison de folie !",
+      "J'ai test\u00e9 la recette uniquement avec de la levure s\u00e8che de boulanger. Mais j'aimerai beaucoup essayer avec de la levure fra\u00eeche\u2026",
+      "Pour le lait, j'ai utilis\u00e9 du lait d'avoine, c'est mon lait v\u00e9g\u00e9tal pr\u00e9f\u00e9r\u00e9 et il n'est pas trop fort en go\u00fbt.",
+      "Ce serait pas mal de tester une version v\u00e9gane aussi en rempla\u00e7ant le beurre par de la margarine.",
+      "Vous pouvez les d\u00e9guster le jour m\u00eame ou les congeler dans un sac de cong\u00e9lation (jusqu'\u00e0 3 mois)."
+    ],
+    "slug": "buns-brioches",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Buns-brioches-2021-3-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/09/19/buns-brioches/",
+    "image": "images/buns-brioches.jpg",
+    "createdAt": "2026-02-09T20:32:53.770445",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 175.0,
+    "totalCookingTime": 55.0,
+    "nutritionPerServing": {
+      "calories": 317.0,
+      "protein": 7.0,
+      "fat": 10.2,
+      "carbs": 48.2,
+      "fiber": 1.8,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "dry_yeast",
+      "name": "levure s\u00e8che",
+      "quantity": 7.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry yeast"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "milk",
+      "name": "lait ti\u00e8de",
+      "quantity": 240.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": "ti\u00e8de (35-40\u00b0C)",
+      "notes": null,
+      "optional": false,
+      "name_en": "Warm milk"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "ramolli \u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "robot p\u00e2tissier avec crochet \u00e0 p\u00e9trin",
+    "pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "activate_yeast",
+      "action": "Dans un bol, m\u00e9langer le lait ti\u00e8de (35-40\u00b0C), l'eau, la levure s\u00e8che et le sucre. R\u00e9server pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "milk",
+        "water",
+        "dry_yeast",
+        "sugar"
+      ],
+      "produces": "activated_yeast_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand saladier (ou dans le bol d'un robot), m\u00e9langer la farine et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "salt"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_wet_dry",
+      "action": "Ajouter le m\u00e9lange de lait/levure et sucre et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "activated_yeast_mixture"
+      ],
+      "produces": "basic_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_first",
+      "action": "P\u00e9trir la p\u00e2te pendant environ 5min \u00e0 la main ou 2-3min dans un batteur sur socle.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "basic_dough"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter",
+      "action": "Ajouter progressivement des cubes de beurre ramolli tout en m\u00e9langeant, incorporer le beurre \u00e0 la p\u00e2te jusqu'\u00e0 ce qu'il n'y ait plus de morceaux visibles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "kneaded_dough",
+        "butter"
+      ],
+      "produces": "butter_dough",
+      "requires": [],
+      "visualCue": "plus de morceaux visibles"
+    },
+    {
+      "id": "knead_second",
+      "action": "P\u00e9trir encore pendant environ 5min \u00e0 la main ou 3-4min avec le robot.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter_dough"
+      ],
+      "produces": "well_kneaded_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_rise",
+      "action": "Former une boule dans le saladier et couvrir avec un torchon. Laisser la p\u00e2te lever \u00e0 temp\u00e9rature ambiante pendant 1h ou jusqu'\u00e0 ce qu'elle ait doubl\u00e9 de volume.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "well_kneaded_dough"
+      ],
+      "produces": "risen_dough",
+      "requires": [],
+      "visualCue": "doubl\u00e9 de volume"
+    },
+    {
+      "id": "divide_dough",
+      "action": "Fariner l\u00e9g\u00e8rement la p\u00e2te et la transf\u00e9rer sur un plan de travail propre. Diviser la p\u00e2te en 8 petits p\u00e2tons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "risen_dough"
+      ],
+      "produces": "divided_dough_pieces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shape_buns",
+      "action": "Rouler chaque p\u00e2ton avec les mains jusqu'\u00e0 obtenir une boule parfaitement ronde et les placer sur une grande plaque \u00e0 p\u00e2tisserie recouverte de papier sulfuris\u00e9 (veiller \u00e0 bien \u00e9carter les p\u00e2tons).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "divided_dough_pieces"
+      ],
+      "produces": "shaped_buns",
+      "requires": [],
+      "visualCue": "boules parfaitement rondes"
+    },
+    {
+      "id": "make_egg_wash",
+      "action": "Battre un \u0153uf et \u00e0 l'aide d'un pinceau, couvrir chaque p\u00e2ton de dorure puis les recouvrir d'un film plastique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg"
+      ],
+      "produces": "egg_wash",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "apply_first_egg_wash",
+      "action": "Couvrir chaque p\u00e2ton de dorure puis les recouvrir d'un film plastique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shaped_buns",
+        "egg_wash"
+      ],
+      "produces": "buns_with_first_wash",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_rise",
+      "action": "Laisser reposer \u00e0 temp\u00e9rature ambiante pendant 1h ou jusqu'\u00e0 ce que les p\u00e2tons aient doubl\u00e9 de volume.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "buns_with_first_wash"
+      ],
+      "produces": "proofed_buns",
+      "requires": [],
+      "visualCue": "doubl\u00e9 de volume"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Placer un bol rempli d'eau sur une plaque dans le bas du four et pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "apply_second_wash_sesame",
+      "action": "Retirer le film plastique et passer une deuxi\u00e8me couche de dorure toujours \u00e0 l'aide d'un pinceau puis saupoudrer de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "proofed_buns",
+        "egg_wash",
+        "sesame_seeds"
+      ],
+      "produces": "buns_ready_to_bake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_first_stage",
+      "action": "Enfourner les petits pains et baisser la temp\u00e9rature \u00e0 190\u00b0C. Cuire les buns environ 15min.",
+      "duration": "PT15M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "buns_ready_to_bake"
+      ],
+      "produces": "partially_baked_buns",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "remove_water",
+      "action": "Retirer la plaque avec le bol d'eau et continuer la cuisson encore 10min jusqu'\u00e0 ce qu'ils soient dor\u00e9s.",
+      "duration": "PT10M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "partially_baked_buns"
+      ],
+      "produces": "fully_baked_buns",
+      "requires": [],
+      "visualCue": "dor\u00e9s"
+    },
+    {
+      "id": "cool_buns",
+      "action": "Retirer du four et laisser refroidir 10min puis transf\u00e9rer les buns sur une grille de refroidissement.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fully_baked_buns"
+      ],
+      "produces": "cooled_brioche_buns",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cooled_brioche_buns",
+  "originalText": "Buns brioch\u00e9s - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 septembre 2021\nBuns brioch\u00e9s\nD\u00e9finitivement ma recette pr\u00e9f\u00e9r\u00e9e de buns brioch\u00e9s pour des burgers maison de folie ! J\u2019ai trouv\u00e9 cette recette un peu au hasard sur Pinterest. J\u2019ai d\u2019abord \u00e9t\u00e9 attir\u00e9 par la beaut\u00e9 de ces petits buns, ils brillent de mille feux (c\u0153ur avec les mains). Puis j\u2019ai regard\u00e9 la recette, j\u2019avais tous les ingr\u00e9dients \u00e0 la maison. Ils sont plut\u00f4t facile \u00e0 faire et franchement le r\u00e9sultat est fou ! Ils sont moelleux et vraiment d\u00e9licieux ! La recette vient du blog de\nJernej Kitchen\n.\nPour le moment, j\u2019ai test\u00e9 la recette uniquement avec de la levure s\u00e8che de boulanger. Mais j\u2019aimerai beaucoup essayer avec de la levure fra\u00eeche\u2026 Je vous ferai un update ! Pour le lait, j\u2019ai utilis\u00e9 du lait d\u2019avoine, c\u2019est mon lait v\u00e9g\u00e9tal pr\u00e9f\u00e9r\u00e9 et il n\u2019est pas trop fort en go\u00fbt. Ce serait pas mal de tester une version v\u00e9gane aussi en rempla\u00e7ant le beurre par de la margarine, idem je vous tiendrai au courant \ud83d\ude09 !\nA titre d\u2019exemple (et pour vous titiller les papilles), nous avons utilis\u00e9 ces buns brioch\u00e9s dans la recette du Burger Galette de Chou-fleur et sauce ranch dans notre\nebook d\u00e9di\u00e9 au chou-fleur\n! Ca a l\u2019air trop bon hein?! Vous pouvez aussi vous faire plaisir avec nos autres burgers veggie : aux\ngalettes aux haricots blancs, comt\u00e9 et oignons caram\u00e9lis\u00e9s \u00e0 la bi\u00e8re\n, aux\ngalettes shitak\u00e9 et pois chiche\nou encore aux\ngalettes aubergines et cheddar\n.\nBuns brioch\u00e9s\nCes petits buns brioch\u00e9s maison ne sont pas seulement incroyablement moelleux, ils sont aussi super savoureux et parfaits pour n\u2019importe quel type de burger. Ils sont faciles \u00e0 faire et vraiment d\u00e9licieux.\n4.48\n/5 avec\n85\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps de repos\n2\nheures\nh\nType de plat\nBoulange, Buns\nPortions\n8\nbuns\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2tes \u00e0 brioche :\n7\ng\nde levure s\u00e8che ou 14 g de levure fra\u00eeche\n40\ng\nde sucre\n240\nml\nde lait ti\u00e8de\n50\nml\nd\u2019eau\n75\ng\nde beurre\nramolli \u00e0 temp\u00e9rature ambiante\n450\ng\nde farine\n1\nc\u00e0c de sel\nDorure :\n1\noeuf\ngraines de s\u00e9same\nInstructions\nDans un bol, m\u00e9langer le lait, l\u2019eau, la levure s\u00e8che ou fra\u00eeche (\u00e9miett\u00e9e) et le sucre. R\u00e9server pendant 10 minutes. Attention le lait doit \u00eatre ti\u00e8de (entre 35 et 40\u00b0C) pour ne pas \u201ctuer\u201d la levure.\nDans un grand saladier (ou dans le bol d\u2019un robot, \u00e9quip\u00e9 du crochet \u00e0 p\u00e9trir), m\u00e9langer la farine et le sel. Ajouter le m\u00e9lange de lait/levure et sucre et m\u00e9langer.\nP\u00e9trir la p\u00e2te pendant environ 5 minutes \u00e0 la main ou 2 \u00e0 3 minutes dans un batteur sur socle. Ajouter progressivement des cubes de beurre ramolli tout en m\u00e9langeant, incorporer le beurre \u00e0 la p\u00e2te jusqu\u2019\u00e0 ce qu\u2019il n\u2019y ait plus de morceaux visibles. P\u00e9trir encore pendant environ 5 minutes \u00e0 la main ou 3 \u00e0 4 minutes avec le robot.\nFormer une boule dans le saladier et couvrir avec un torchon. Laisser la p\u00e2te lever \u00e0 temp\u00e9rature ambiante pendant environ 1 heure ou jusqu\u2019\u00e0 ce qu\u2019elle ait doubl\u00e9 de volume.\nFariner l\u00e9g\u00e8rement la p\u00e2te et la transf\u00e9rer sur un plan de travail propre. Diviser la p\u00e2te en 8 petits p\u00e2tons. Rouler chaque p\u00e2tons avec les mains jusqu\u2019\u00e0 obtenir une boule parfaitement ronde et les placer sur une grande plaque \u00e0 p\u00e2tisserie recouverte de papier sulfuris\u00e9 (veiller \u00e0 bien \u00e9carter les p\u00e2tons).\nBattre un \u0153uf et \u00e0 l\u2019aide d\u2019un pinceau, couvrir chaque p\u00e2ton de dorure puis les recouvrir d\u2019un film plastique. Laisser reposer \u00e0 temp\u00e9rature ambiante pendant 1 heure ou jusqu\u2019\u00e0 ce que les p\u00e2tons aient doubl\u00e9 de volume.\nPlacer un bol rempli d\u2019eau sur une plaque dans le bas du four et pr\u00e9chauffez le four \u00e0 200\u00b0C.\nRetirer le film plastique et passer une deuxi\u00e8me couche de dorure toujours \u00e0 l\u2019aide d\u2019un pinceau puis saupoudrer de graines de s\u00e9same.\nEnfourner les petits pains et baisser la temp\u00e9rature \u00e0 190\u00b0C. Cuire les buns environ 15 minutes puis retirer la plaque avec le bol d\u2019eau et continuer la cuisson encore 10 minutes jusqu\u2019\u00e0 ce qu\u2019ils soient dor\u00e9s. Retirer du four et laisser refroidir 10 minutes puis transf\u00e9rer les buns sur une grille de refroidissement.\nVous pouvez les d\u00e9guster le jour m\u00eame ou les congeler dans un sac de cong\u00e9lation (jusqu\u2019\u00e0 3 mois).\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrioches et Boulange\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nbun\n,\nbuns brioch\u00e9s\n,\nBurger\nLinguines \u00e0 la Cr\u00e8me de Brocoli\nPains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches\n3 thoughts on \u201cBuns brioch\u00e9s\u201d\nLadyMilonguera\ndit\u00a0:\n20 septembre 2021 \u00e0 10 h 37 min\nTes buns sont bien beaux !\nchargement\u2026\nR\u00e9pondre\nCeline\ndit\u00a0:\n4 janvier 2022 \u00e0 0 h 14 min\nMerci pour cette recette ! C\u2019\u00e9tait la premi\u00e8re fois que je r\u00e9ussissais des buns burger et c\u2019est devenu ma recette de r\u00e9f\u00e9rence, je suis accro ! Tellement simples \u00e0 r\u00e9aliser et d\u00e9licieux, je mange ces buns en burgers, mais aussi avec des pr\u00e9parations sucr\u00e9es comme la confiture ou la p\u00e2te \u00e0 tartiner.\nchargement\u2026\nR\u00e9pondre\nShaden\ndit\u00a0:\n10 mai 2025 \u00e0 17 h 41 min\nTres bonne !\nchargement\u2026\nR\u00e9pondre\n4.48 from 85 votes (\n82 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 55.0
+}

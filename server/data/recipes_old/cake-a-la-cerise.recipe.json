@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "title": "Cake \u00e0 la Cerise",
+    "description": "Retour en enfance avec ce cake ultra moelleux \u00e0 la cerise. Une recette simple pour un r\u00e9sultat incroyable avec ce fruit de saison qui change des clafoutis. Vous appr\u00e9cierez sa petite cro\u00fbte au sucre sur le dessus.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT55M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "cake \u00e0 la cerise",
+      "cake aux fruits",
+      "cake cerise",
+      "cake facile",
+      "cerises",
+      "fromage blanc",
+      "id\u00e9e de dessert fruit",
+      "recette de cake",
+      "recette de cake facile",
+      "\u00c9t\u00e9",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Cake-cerises-1-of-3.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les produits utilis\u00e9s sont issus d'un partenariat avec Alancienne, un service de livraison de produits bio et locaux.",
+      "Le temps de cuisson d\u00e9pend du four, v\u00e9rifier la cuisson \u00e0 partir de 50 \u00e0 55 min.",
+      "Utiliser des ingr\u00e9dients \u00e0 temp\u00e9rature ambiante pour ne pas faire trancher le beurre."
+    ],
+    "slug": "cake-a-la-cerise",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Cake-cerises-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/14/cake-a-la-cerise/",
+    "image": "images/cake-a-la-cerise.webp",
+    "createdAt": "2026-02-09T20:25:18.308461",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "totalTime": 70.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "July",
+      "June"
+    ],
+    "nutritionPerServing": {
+      "calories": 475.8,
+      "protein": 7.9,
+      "fat": 24.8,
+      "carbs": 55.9,
+      "fiber": 1.8,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "beurre_doux",
+      "name": "beurre doux",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "extrait_de_vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "fromage_blanc",
+      "name": "fromage blanc",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "cream cheese"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 260.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "T65",
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure_chimique",
+      "name": "levure chimique",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "cerises",
+      "name": "cerises",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "d\u00e9noyaut\u00e9es et coup\u00e9es en deux",
+      "notes": "environ 400/450g de cerises enti\u00e8res",
+      "optional": false,
+      "name_en": "cherries"
+    },
+    {
+      "id": "sucre_cassonade",
+      "name": "sucre cassonade",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 cake"
+  ],
+  "steps": [
+    {
+      "id": "prepare_cerises",
+      "action": "D\u00e9noyauter et couper les cerises en deux. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cerises"
+      ],
+      "produces": "cerises_preparees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cremer_beurre_sucre",
+      "action": "Battre le beurre mou et le sucre jusqu'\u00e0 ce que le m\u00e9lange devienne p\u00e2le.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre_doux",
+        "sucre"
+      ],
+      "produces": "beurre_sucre_creme",
+      "requires": [],
+      "visualCue": "m\u00e9lange p\u00e2le"
+    },
+    {
+      "id": "ajouter_liquides",
+      "action": "Ajouter l'extrait de vanille, les \u0153ufs et le fromage blanc. Battre pour incorporer le tout.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre_sucre_creme",
+        "extrait_de_vanille",
+        "oeufs",
+        "fromage_blanc"
+      ],
+      "produces": "melange_liquide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_farine_levure",
+      "action": "Dans un autre saladier, m\u00e9langer la farine et la levure chimique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine",
+        "levure_chimique"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_farine",
+      "action": "Verser le m\u00e9lange de farine progressivement sur le m\u00e9lange liquide en m\u00e9langeant pour incorporer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_liquide",
+        "melange_sec"
+      ],
+      "produces": "pate_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_cerises_pate",
+      "action": "Ajouter les 2/3 des cerises et m\u00e9langer doucement avec une maryse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_base",
+        "cerises_preparees"
+      ],
+      "produces": "pate_avec_cerises",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transf\u00e9rer_pate_moule",
+      "action": "Transf\u00e9rer la p\u00e2te dans le moule \u00e0 cake.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_avec_cerises"
+      ],
+      "produces": "pate_dans_moule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnir_surface",
+      "action": "R\u00e9partir le reste des cerises sur le dessus du g\u00e2teau et saupoudrer de cassonade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_dans_moule",
+        "cerises_preparees",
+        "sucre_cassonade"
+      ],
+      "produces": "cake_pret_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_cake",
+      "action": "Enfourner et cuire au four pendant 55min ou jusqu'\u00e0 ce qu'un cure-dent ins\u00e9r\u00e9 au centre du g\u00e2teau en ressorte propre.",
+      "duration": "PT55M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cake_pret_a_cuire"
+      ],
+      "produces": "cake_cuit",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "cure-dent propre"
+    },
+    {
+      "id": "refroidir_moule",
+      "action": "Sortir et laisser le cake refroidir dans le moule pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cake_cuit"
+      ],
+      "produces": "cake_tiede",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_completement",
+      "action": "Transf\u00e9rer le cake sur une grille pour qu'il refroidisse compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cake_tiede"
+      ],
+      "produces": "cake_a_la_cerise",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cake_a_la_cerise",
+  "originalText": "Cake \u00e0 la Cerise - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 juin 2021\nCake \u00e0 la Cerise\nPour d\u00e9marrer cette semaine, on vous propose une recette de cake \u00e0 la cerise ultra moelleux, d\u00e9licieux et surtout ultra facile. Mais pas que ! Cette recette est \u00e9galement issue d\u2019un partenariat avec\nAlancienne\n, un service de livraison \u00e0 domicile de produits ultra-frais, bio et locaux. Tout ce qu\u2019on aime quoi. Les produits propos\u00e9s sur leur site sont en compl\u00e8te ad\u00e9quation avec la philosophie de notre blog. Ce sont des produits de saison, en direct du producteur, produits en agro\u00e9cologie et \u00e0 moins de 200km.\nImplant\u00e9e \u00e0\nParis\net\nLyon\n, Alancienne a pour objectif de donner acc\u00e8s \u00e0 une alimentation la plus vertueuse possible. Leurs valeurs : travailler avec des producteurs rigoureusement choisis selon des crit\u00e8res sociaux et environnementaux, ne jamais n\u00e9gocier les prix des agriculteurs, leurs livreurs sont en r\u00e9insertion sociale et en emploi non pr\u00e9caires, etc.\nSur leur site, on trouve de tout : des fruits et l\u00e9gumes frais aux produits d\u2019entretien, en passant par le pain et les produits laitiers. \u00c0 terme, ils ont pour ambition d\u2019avoir un catalogue aussi fourni qu\u2019un supermarch\u00e9. En attendant, nous avons d\u00e9j\u00e0 pu tester une grande vari\u00e9t\u00e9 de produits propos\u00e9s en composant un grand panier sp\u00e9cial gros kiff freethepickle. Nous avons entre autre s\u00e9lectionn\u00e9 des produits pour l\u2019ap\u00e9ro (bi\u00e8res de folies, fromage frais herbes, tartinades\u2026) en plus de fruits et l\u00e9gumes frais. Au moment de la commande, les premi\u00e8res cerises de l\u2019ann\u00e9e d\u00e9barquaient sur leur \u00e9tals virtuels, je n\u2019ai pas h\u00e9sit\u00e9 une seconde. J\u2019ai pu compl\u00e9t\u00e9 les ingr\u00e9dients de ma recette en commandant de la farine, des \u0153ufs et du fromage blanc, que des produits de grande qualit\u00e9 !\nJe vous laisse d\u00e9couvrir la recette ci-dessous ! Retrouvez \u00e9galement d\u2019autres recettes avec des cerises : le\ncheesecake \u00e0 la cerise\n, les\nclafoutis vegan \u00e0 la cerise\n, la\ncompot\u00e9e de cerise\n, ou encore les\ntresses feuillet\u00e9es cerise chocolat\n.\nCake \u00e0 la Cerise\nDaniela\nRetour en enfance avec ce cake ultra moelleux \u00e0 la cerise. Une recette simple pour un r\u00e9sultat incroyable avec ce fruit de saison qui change des clafoutis. Vous appr\u00e9cierez sa petite cro\u00fbte au sucre sur le dessus.\n4.50\n/5 avec\n61\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nType de plat\nBreakfast, Dessert, Go\u00fbter, Snack\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n160\ng\nde beurre doux\n160\ng\nde sucre\n1\nc\u00e0c d\u2019extrait de vanille\n3\noeufs\n150\ng\nde fromage blanc\nici fermier\n260\ng\nde farine\nici T65\n2\nc\u00e0c de levure\n300\ng\nde cerises d\u00e9noyaut\u00e9es\nenviron 400/450g de cerises\n2\nc\u00e0s de sucre cassonade\nInstructions\nChemiser un moule \u00e0 cake avec du papier cuisson.\nD\u00e9noyauter et couper les cerises en deux. R\u00e9server.\nBattre le beurre mou et le sucre jusqu\u2019\u00e0 ce que le m\u00e9lange devienne p\u00e2le.\nAjouter l\u2019extrait de vanille, les \u0153ufs et le yaourt (le tout \u00e0 temp\u00e9rature ambiante pour ne pas faire trancher le beurre). Battre pour incorporer le tout.\nDans un autre saladier, m\u00e9langer la farine et la levure chimique.Verser le m\u00e9lange de farine progressivement sur le m\u00e9lange liquide en m\u00e9langeant pour incorporer.\nAjouter les 2/3 des cerises et m\u00e9langer doucement avec une maryse.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nTransf\u00e9rer la p\u00e2te dans le moule \u00e0 cake pr\u00e9par\u00e9.\nR\u00e9partir le reste des cerises sur le dessus du g\u00e2teau et saupoudrer de cassonade.\nEnfourner et cuire au four pendant 55 \u00e0 65 minutes ou jusqu\u2019\u00e0 ce qu\u2019un(e) cure-dent/pointe de couteau ins\u00e9r\u00e9(e) au centre du g\u00e2teau en ressorte propre (le temps de cuisson d\u00e9pend du four, alors assurez-vous de v\u00e9rifier la cuisson \u00e0 partir de 50 \u00e0 55 min).\nSortir et laisser le cake refroidir dans le moule pendant environ 15 \u00e0 20 minutes. Puis le transf\u00e9rer sur une grille pour qu\u2019il refroidisse compl\u00e8tement.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nCerise\n,\n\u00c9t\u00e9\n,\nG\u00e2teaux et Cakes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncake \u00e0 la cerise\n,\ncake aux fruits\n,\ncake cerise\n,\ncake facile\n,\ncerises\n,\nfromage blanc\n,\nid\u00e9e de dessert fruit\n,\nrecette de cake\n,\nrecette de cake facile\nNaked Cake Fraises Chantilly Mascarpone\nRoul\u00e9s de Courgettes aux 3 Fromages\n1 thought on \u201cCake \u00e0 la Cerise\u201d\nLadyMilonguera\ndit\u00a0:\n15 juin 2021 \u00e0 7 h 50 min\nHummmmmm\u2026 Il me tente bien ce cake !\nchargement\u2026\nR\u00e9pondre\n4.50 from 61 votes (\n60 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

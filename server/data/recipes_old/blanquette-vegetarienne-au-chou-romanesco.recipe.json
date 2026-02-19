@@ -1,0 +1,412 @@
+{
+  "metadata": {
+    "title": "Blanquette V\u00e9g\u00e9tarienne au Chou Romanesco",
+    "description": "Voici ma recette de Blanquette V\u00e9g\u00e9tarienne au Chou Romanesco. La recette est super simple et faite \u00e0 100% de l\u00e9gumes.",
+    "servings": 5,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "blanquette v\u00e9g\u00e9tarienne",
+      "chou romanesco",
+      "hiver",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/02/blanquette-de-chou-6-of-8.jpg?ssl=1",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je cherche toujours le substitut ad\u00e9quat \u00e0 la viande dans cette recette.",
+      "Servir avec un peu de persil hach\u00e9, du riz ou des pommes de terre vapeur !",
+      "Pour une version v\u00e9g\u00e9talienne, remplacer la cr\u00e8me fra\u00eeche par une cr\u00e8me v\u00e9g\u00e9tale (amande ou soja)."
+    ],
+    "slug": "blanquette-vegetarienne-au-chou-romanesco",
+    "sourceImageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/02/blanquette-de-chou-6-of-8.jpg?ssl=1",
+    "sourceUrl": "https://freethepickle.fr/2022/02/16/blanquette-vegetarienne-au-chou-romanesco/",
+    "image": "images/blanquette-vegetarienne-au-chou-romanesco.jpg",
+    "createdAt": "2026-02-09T21:02:55.640429",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 278.2,
+      "protein": 4.7,
+      "fat": 19.9,
+      "carbs": 20.7,
+      "fiber": 2.9,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "celery",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "leek",
+      "name": "poireau",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "leek"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "vegetable_bouillon_cube",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 600.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "romanesco_cabbage",
+      "name": "chou romanesco",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Romanesco broccoli"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons de Paris",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me fra\u00eeche",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    }
+  ],
+  "tools": [
+    "Casserole (de pr\u00e9f\u00e9rence \u00e0 fond \u00e9pais)"
+  ],
+  "steps": [
+    {
+      "id": "peel_shallots_carrot",
+      "action": "\u00c9plucher les \u00e9chalotes et la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots",
+        "carrot"
+      ],
+      "produces": "peeled_shallots_carrot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_shallots",
+      "action": "\u00c9mincer les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_shallots_carrot"
+      ],
+      "produces": "sliced_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_carrot_celery",
+      "action": "Couper la carotte et la branche de c\u00e9leri en grosses rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_shallots",
+        "celery"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_leek",
+      "action": "Nettoyer le poireau et le laisser entier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "leek"
+      ],
+      "produces": "cleaned_leek",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faire fondre le beurre dans une casserole et y faire revenir les l\u00e9gumes pendant 5min \u00e0 feu moyen-fort.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_vegetables",
+        "cleaned_leek",
+        "butter"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_flour",
+      "action": "Ajouter la farine et bien m\u00e9langer pour recouvrir les l\u00e9gumes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "flour"
+      ],
+      "produces": "floured_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids_simmer",
+      "action": "Verser l'eau, le bouillon cube, le vin blanc et l'ail et laisser mijoter \u00e0 couvert 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "floured_vegetables",
+        "water",
+        "vegetable_bouillon_cube",
+        "white_wine",
+        "garlic"
+      ],
+      "produces": "simmered_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "separate_romanesco",
+      "action": "Pendant ce temps, s\u00e9parer le chou romanesco en fleurets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "romanesco_cabbage"
+      ],
+      "produces": "romanesco_florets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_romanesco_simmer",
+      "action": "Ajouter le chou \u00e0 la casserole et laisser mijoter encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "simmered_broth",
+        "romanesco_florets"
+      ],
+      "produces": "broth_with_romanesco",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_cut_mushrooms",
+      "action": "Nettoyer et couper en 2 ou 4 les champignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mushrooms"
+      ],
+      "produces": "cut_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_mushrooms_cream_simmer",
+      "action": "Ajouter les champignons \u00e0 la casserole, avec la cr\u00e8me fra\u00eeche, bien m\u00e9langer et laisser mijoter encore 20min.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "broth_with_romanesco",
+        "cut_mushrooms",
+        "cream"
+      ],
+      "produces": "blanquette_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blanquette_complete"
+      ],
+      "produces": "blanquette_vegetarienne_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "blanquette_vegetarienne_servie",
+  "originalText": "Blanquette V\u00e9g\u00e9tarienne au Chou Romanesco - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 f\u00e9vrier 2022\nBlanquette V\u00e9g\u00e9tarienne au Chou Romanesco\nAller \u00e0 la recette\nVoici ma recette de Blanquette V\u00e9g\u00e9tarienne au Chou Romanesco.\nLa recette est super simple et faite \u00e0 100% de l\u00e9gumes.\nJe cherche toujours le substitut ad\u00e9quat \u00e0 la viande dans cette recette. Si vous avez trouv\u00e9 quelque chose qui fonctionne bien, dites-le moi en commentaire ! Pour l\u2019instant, ma plus grande r\u00e9ussite avec les substituts reste\ncette recette de bolo vegan\n.\nMais en attendant, quand j\u2019ai une envie de blanquette, voici la recette que je fais ! Et c\u2019est d\u00e9licieux ! Surtout avec du chou romanesco, qui est sans doute l\u2019un de mes choux favoris !\nJ\u2019ai cuisin\u00e9 et photographi\u00e9 cette blanquette dans une casserole de la marque Cristel.\nC\u2019est\nla gamme Casteline\n.\nJe pense que cette gamme est ma pr\u00e9f\u00e9r\u00e9e.\nLes casseroles sont belles (d\u00e9j\u00e0). Et la qualit\u00e9 est juste incroyable. Les parois et le fond sont \u00e9quip\u00e9s de mat\u00e9riaux thermodiffuseur qui assurent une cuisson incomparable. Et un maintien de la chaleur vraiment dingue !\nEn plus, les poign\u00e9es sont amovibles et interchangeables. Et je trouve \u00e7a tr\u00e8s cool. Parce qu\u2019on peut utiliser ces casseroles pour le service \u00e0 table tout en gardant du style ! Franchement, cette tabl\u00e9e a la classe avec cette casserole non ?\nJ\u2019ai cr\u00e9\u00e9 cette recette de Blanquette V\u00e9g\u00e9tarienne au Chou Romanesco dans le cadre de notre collaboration avec Cristel.\nBlanquette V\u00e9g\u00e9tarienne au Chou Romanesco\nNatacha\n4.54\n/5 avec\n93\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n3\n\u00e9chalotes\n1\ncarotte\n1\nbranche de c\u00e9leri\n1\npoireau\n30\ng\nde beurre\n40\ng\nde farine\n1\nbouillon cube de l\u00e9gumes\n600\nml\nd\u2019eau\n50\nml\nde vin blanc\n1\ngousse d\u2019ail\n500\ng\nde chou romanesco\n250\ng\nde champignons de Paris\n200\nml\nde cr\u00e8me fra\u00eeche\nInstructions\nEplucher les \u00e9chalotes et la carotte.\nEmincer les \u00e9chalotes.\nCouper la carotte et la branche de c\u00e9leri en grosses rondelles.\nNettoyer le poireau et le laisser entier.\nFaire fondre le beurre dans une casserole et y faire revenir les l\u00e9gumes pendant 5min \u00e0 feu moyen-fort.\nAjouter la farine et bien m\u00e9langer pour recouvrir les l\u00e9gumes.\nVerser l\u2019eau, le bouillon cube, le vin blanc et l\u2019ail et laissez mijoter \u00e0 couvert 15min.\nPendant ce temps s\u00e9parer le chou en fleurets.\nL\u2019ajouter \u00e0 la casserole et laisser mijoter encore 5min.\nNettoyer et couper en 2 ou 4 les champignons.\nAjouter les \u00e0 la casserole, avec la cr\u00e8me, bien m\u00e9langer et laisser mijoter encore 20min.\nServir avec un peu de persil hach\u00e9, du riz ou des pommes de terre vapeur !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChoux\n,\nHiver\n,\nPlats en Sauce\nTags:\nblanquette v\u00e9g\u00e9tarienne\n,\nchou romanesco\n,\nid\u00e9e de recette chou\n,\nid\u00e9e de recette chou romanesco\n,\nque faire avec un chou\n,\nrecette de blanquette\n,\nrecette de blanquette v\u00e9g\u00e9tarienne\nP\u00e2te \u00e0 Pizza et Pizza maison\nPatates au four \u00e0 la Grecque\n7 thoughts on \u201cBlanquette V\u00e9g\u00e9tarienne au Chou Romanesco\u201d\nepicurien\ndit\u00a0:\n16 f\u00e9vrier 2022 \u00e0 12 h 45 min\ntr\u00e8s belle id\u00e9e ce \u00ab\u00a0pot au feu\u00a0\u00bb avec du chou romanesco. J\u2019adore le romanesco, aussi bon que beau. Pour remplacer la viande, j\u2019essayerais bien du Manioc. J\u2019avais \u00e9galement mang\u00e9 un fruit / l\u00e9gume \u00e0 Bali qui vient de l\u2019arbre \u00e0 pin\u2026 servi pas mur ca donne une impression de viande blanche\nchargement\u2026\nR\u00e9pondre\nRaynal\ndit\u00a0:\n16 f\u00e9vrier 2022 \u00e0 23 h 20 min\nEt si  en fin de cuisson on rajoutait quelques ravioles ??\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n18 f\u00e9vrier 2022 \u00e0 14 h 27 min\nTr\u00e8s bonne id\u00e9e!\nchargement\u2026\nR\u00e9pondre\nElysabeth\ndit\u00a0:\n13 avril 2022 \u00e0 17 h 24 min\nPour  avoir une version v\u00e9g\u00e9talienne de cette recette, par quoi est-ce qu\u2019on pourrait remplacer la cr\u00e8me fra\u00eeche? Je voudrais tenter \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n18 avril 2022 \u00e0 15 h 24 min\nCoucou Elysabeth, tu peux utiliser une cr\u00e8me v\u00e9g\u00e9tale (amande ou soja) !\nchargement\u2026\nR\u00e9pondre\nElysabeth\ndit\u00a0:\n20 avril 2022 \u00e0 15 h 41 min\nSuper \ud83d\udc4c Merci!\nchargement\u2026\nR\u00e9pondre\nC\u00e9lestine\ndit\u00a0:\n3 novembre 2024 \u00e0 15 h 06 min\nJe viens de tester, ne sachant pas quoi faire du chou romanesco donn\u00e9 par l\u2019AMAP cette semaine. C\u2019\u00e9tait d\u00e9licieux, et j\u2019y penserai pour accommoder d\u2019autres l\u00e9gumes d\u2019hiver. J\u2019ai ajout\u00e9 du jus de citron, car j\u2019aime la blanquette citronn\u00e9e. Merci pour la recette !\nchargement\u2026\nR\u00e9pondre\n4.54 from 93 votes (\n92 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

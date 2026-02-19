@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "title": "Houmous de lentilles corail",
+    "description": "Ceci est un Houmous de lentilles corail ! Oui, je sais bien qu'un houmous c'est avec des pois chiches et pas avec des lentilles. Pour les puristes, on peut l'appeler un lentous si \u00e7a vous convient mieux !",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "houmous",
+      "lentilles corail",
+      "prot\u00e9ines v\u00e9g\u00e9tales",
+      "accompagnements",
+      "ap\u00e9ros"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/houmous-de-lentilles-corail-2-of-8.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les lentilles corail cuisent en une dizaine de minutes, ce qui est tr\u00e8s pratique.",
+      "Les lentilles corail sont une excellente source de prot\u00e9ines v\u00e9g\u00e9tales (26g/100g).",
+      "On peut l'appeler un \"lentous\".",
+      "Servir avec des b\u00e2tonnets de l\u00e9gumes, des pitas, du pain ou dans une salade.",
+      "Le tahini semi-complet a plus de go\u00fbt et est moins amer que le tahini blanc."
+    ],
+    "slug": "houmous-de-lentilles-corail",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/houmous-de-lentilles-corail-2-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/02/10/houmous-de-lentilles-corail/",
+    "image": "images/houmous-de-lentilles-corail.webp",
+    "createdAt": "2026-02-09T22:00:48.183870",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 694.5,
+      "protein": 46.9,
+      "fat": 4.3,
+      "carbs": 117.6,
+      "fiber": 29.6,
+      "confidence": "low",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "lentilles_corail",
+      "name": "lentilles corail",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red lentils"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini semi-complet",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "semi-whole tahini"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "citron",
+      "name": "citron, jus",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le service",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le service",
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Mixeur (bol ou plongeant)"
+  ],
+  "steps": [
+    {
+      "id": "rincer_lentilles",
+      "action": "Rincez les lentilles",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentilles_corail"
+      ],
+      "produces": "lentilles_rincees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_lentilles",
+      "action": "Faites cuire les lentilles dans un grand volume d'eau bouillante",
+      "duration": "PT10M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "lentilles_rincees"
+      ],
+      "produces": "lentilles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "egoutter_lentilles",
+      "action": "Egouttez bien les lentilles",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentilles_cuites"
+      ],
+      "produces": "lentilles_egouttees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mixer_houmous",
+      "action": "Passez tous les ingr\u00e9dients (lentilles cuites, tahini, ail, jus de citron, cumin, paprika, sel, poivre) au mixeur et mixez jusqu'\u00e0 obtenir une texture lisse. Ajoutez un peu d'eau si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentilles_egouttees",
+        "tahini",
+        "ail",
+        "citron",
+        "cumin",
+        "paprika",
+        "sel",
+        "poivre"
+      ],
+      "produces": "houmous_base",
+      "requires": [],
+      "visualCue": "texture lisse"
+    },
+    {
+      "id": "servir",
+      "action": "Servez avec un g\u00e9n\u00e9reux filet d'huile d'olive et des graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "houmous_base",
+        "huile_olive",
+        "graines_sesame"
+      ],
+      "produces": "houmous_lentilles_corail",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "houmous_lentilles_corail",
+  "originalText": "Houmous de lentilles corail - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 f\u00e9vrier 2024\nHoumous de lentilles corail\nCeci est un Houmous de lentilles corail ! Oui, je sais bien qu\u2019un houmous c\u2019est avec des pois chiches et pas avec des lentilles. Pour les puristes, on peut l\u2019appeler un lentous si \u00e7a vous convient mieux !\nAvant toute chose, je voulais vous parler de mon premier livre !\nQui est dispo d\u00e8s maintenant en pr\u00e9commande !!!\nToujours est-il qu\u2019hormis le fait que j\u2019ai remplac\u00e9 les pois chiches par des lentilles corail. Tout le reste des ingr\u00e9dients est parfaitement identique ! On y retrouve \u00e9videmment du tahini. Toujours semi complet pour moi. Je trouve qu\u2019il a plus de go\u00fbt et qu\u2019il est beaucoup moins amer que le tahini blanc.\nEnsuite, du citron, de l\u2019ail, du paprika et du cumin.\nComme toujours, on sert le houmous avec une bonne dose d\u2019huile d\u2019olive par-dessus. Et moi, j\u2019aime la simplicit\u00e9, donc je le saupoudre juste de quelques graines de s\u00e9same.\nVous pouvez le d\u00e9guster avec des b\u00e2tonnets de l\u00e9gumes, des pitas ou du pain. Et m\u00eame pourquoi pas dans\nune salade comme celle-ci\n! Une de mes salades d\u2019hiver pr\u00e9f\u00e9r\u00e9es !\nMais vous allez me demander pourquoi j\u2019ai remplac\u00e9 les pois chiches pour faire ce Houmous de lentilles corail ? Et bien pour plusieurs raisons.\nPour commencer, \u00e7a m\u2019arrive de ne pas avoir de pois chiche en conserve de dispo. Et de ne pas avoir le temps de laisser tremper puis de cuire des pois chiches secs. Les lentilles corail cuisent en une dizaine de minutes. Ce qui est tout de m\u00eame tr\u00e8s pratique.\nEnsuite, h\u00e9las, avec l\u2019\u00e2ge, je dig\u00e8re de moins en moins bien les pois chiches. Donc j\u2019essaie de ne pas en abuser !\nEt finalement, les lentilles corail sont une excellente source de prot\u00e9ines v\u00e9g\u00e9tales (26g/100g). Et je pense que personne ne dit non \u00e0 quelques grammes suppl\u00e9mentaires de prot\u00e9ines !\nSi vous pr\u00e9f\u00e9rez le\nhoumous classique, la recette est juste ici\n.\nEt si vous pr\u00e9f\u00e9rez le\nhoumous \u00e0 la betterave, \u00e7a se passe par l\u00e0\n!\nHoumous de lentilles corail\n4.40\n/5 avec\n110\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n200\ng\nde lentilles corail\n120\ng\nde tahini semi-complet\nenv 4 c\u00e0s\n1\ngousse d\u2019ail\nle jus d\u20191 citron\n\u00bd\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de paprika doux\nsel\npoivre\nInstructions\nRincez les lentilles puis faites les cuire dans un grand volume d\u2019eau bouillante. La cuisson dure environ 10min.\nEgouttez bien.\nPassez tous les ingr\u00e9dients au mixeur (bol ou plongeant, les deux fonctionnent) et mixez jusqu\u2019\u00e0 obtenir une texture lisse. Ajoutez un peu d\u2019eau si n\u00e9cessaire, pour ma part, je n\u2019en ai pas eu besoin.\nServez avec un g\u00e9n\u00e9reux filet d\u2019huile d\u2019olive et des graines de s\u00e9same.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\nTags:\nhoumous\n,\nlentilles corail\n,\nprot\u00e9ines v\u00e9g\u00e9tales\nSoupe de nouilles curry vert simplifi\u00e9\nColeslaw brocoli pomme carotte\n3 thoughts on \u201cHoumous de lentilles corail\u201d\nthenaisy\ndit\u00a0:\n13 f\u00e9vrier 2024 \u00e0 8 h 43 min\ncoucou\nmerci pour cette recette, je vais tester car comme toi difficult\u00e9 \u00e0 dig\u00e9rer les pois chiches.\nplusieurs mois en arri\u00e8re je faisais du houmous r\u00e9guli\u00e8rement mais j\u2019ai d\u00fb arr\u00eater car la digestion plus possible, j\u2019ai remplac\u00e9 les pois chiches par des haricots blancs je trouve cela trop bon mais idem digestion hyper compliqu\u00e9e !\nbelle journ\u00e9e\nV\u00e9ronique\nchargement\u2026\nR\u00e9pondre\nMarie-Gabrielle\ndit\u00a0:\n3 juin 2024 \u00e0 5 h 08 min\nHello,\nTr\u00e8s bonne recette! Facile \u00e0 faire et facile \u00e0 dig\u00e9rer! Je l\u2019ai pr\u00e9par\u00e9 pour un ap\u00e9ro avec des amis et j\u2019ai eu un succ\u00e8s fou, ils ont ador\u00e9. Je cherchais quelque chose un peu diff\u00e9rent, et sain et c\u2019\u00e9tait parfait.\nchargement\u2026\nR\u00e9pondre\nHelene\ndit\u00a0:\n28 avril 2025 \u00e0 19 h 24 min\nBonjour !\nPour les personnes qui ont du mal \u00e0 dig\u00e9rer les l\u00e9gumineuses il suffit juste de les faire germer avant cuisson et vous n\u2019aurez plus aucun souci.\nchargement\u2026\nR\u00e9pondre\n4.40 from 110 votes (\n107 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

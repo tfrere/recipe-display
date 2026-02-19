@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "title": "Samoussas aux Blettes, Cumin et F\u00eata (V\u00e9g\u00e9tarien)",
+    "description": "Si vous aimez les samoussas, vous allez adorer ceux-l\u00e0 : aux blettes, f\u00eata et cumin ! C\u2019est un vrai r\u00e9gal qui est en passe de devenir un classique \u00e0 la maison.",
+    "servings": 20,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "bettes",
+      "blette v\u00e9g\u00e9",
+      "blettes",
+      "cotes de bettes",
+      "que faire avec de la feta",
+      "recette blette",
+      "recette de blettes",
+      "samoussas",
+      "samoussas v\u00e9g\u00e9tariens",
+      "ap\u00e9ro",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/04/Samoussas-Blettes-2-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ne soyez pas intimid\u00e9 par le pliage. C\u2019est vraiment pas tr\u00e8s compliqu\u00e9 et en plus je vous ai fait une vid\u00e9o !",
+      "Vous pouvez remplacer les blettes par n'importe quel l\u00e9gumes \u00e0 feuilles ! Epinards par exemple, ou m\u00eame des poireaux.",
+      "Je mets les feuilles et les c\u00f4tes des blettes."
+    ],
+    "slug": "samoussas-aux-blettes-cumin-et-feta-vegetarien",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/04/Samoussas-Blettes-2-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/04/14/samoussas-aux-blettes-cumin-et-feta-vegetarien/",
+    "image": "images/samoussas-aux-blettes-cumin-et-feta-vegetarien.webp",
+    "createdAt": "2026-02-09T20:16:59.221759",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 20.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 41.4,
+      "protein": 2.2,
+      "fat": 3.0,
+      "carbs": 1.7,
+      "fiber": 0.4,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "blettes",
+      "name": "blettes",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "tiges et feuilles nettoy\u00e9es et \u00e9minc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9 finement",
+      "notes": "1 gros",
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "filo_dough",
+      "name": "feuilles filo",
+      "quantity": 1.0,
+      "unit": "paquet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou feuilles de brique",
+      "optional": false,
+      "name_en": "phyllo dough"
+    },
+    {
+      "id": "olive_oil_brushing",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "saute_onion_spices",
+      "action": "Faites chauffer 1 c\u00e0s d'huile d'olive dans une po\u00eale \u00e0 feu moyen et mettez les oignons \u00e0 revenir avec le cumin et le paprika pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce_aux_blettes_et_feta",
+      "uses": [
+        "olive_oil",
+        "onion",
+        "cumin",
+        "paprika"
+      ],
+      "produces": "sauteed_onion_spices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_blettes",
+      "action": "Ajoutez les blettes, le sel et l'origan et faites revenir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce_aux_blettes_et_feta",
+      "uses": [
+        "sauteed_onion_spices",
+        "blettes",
+        "salt",
+        "oregano"
+      ],
+      "produces": "blettes_sauteed",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_with_water",
+      "action": "Ajoutez l'eau et faites revenir encore une dizaine de minutes ou jusqu'\u00e0 \u00e9vaporation de l'eau. Les blettes doivent \u00eatre tendres. Retirer du feu.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce_aux_blettes_et_feta",
+      "uses": [
+        "blettes_sauteed",
+        "water"
+      ],
+      "produces": "cooked_blettes",
+      "requires": [],
+      "visualCue": "blettes tendres, eau \u00e9vapor\u00e9e"
+    },
+    {
+      "id": "prepare_eggs_feta",
+      "action": "Battez les \u0153ufs et \u00e9miettez la f\u00eata. M\u00e9langez-les avec les blettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "farce_aux_blettes_et_feta",
+      "uses": [
+        "cooked_blettes",
+        "eggs",
+        "feta"
+      ],
+      "produces": "blettes_feta_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C et pr\u00e9parez 2 grilles de cuisson en les couvrant de papier cuisson.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "olive_oil_brushing"
+      ],
+      "produces": "prepared_baking_sheets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_filo",
+      "action": "Coupez les feuilles filo en 2 dans le sens de la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "filo_dough"
+      ],
+      "produces": "filo_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_filo_strip",
+      "action": "Prenez une bande de filo, posez-la devant vous. Pliez-la en 2 dans le sens de la longueur pour avoir une longue bande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "filo_strips"
+      ],
+      "produces": "folded_filo_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_oil",
+      "action": "Passez le pinceau d'huile sur toute la surface de la bande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "folded_filo_strips",
+        "olive_oil_brushing"
+      ],
+      "produces": "oiled_filo_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_and_fold_triangles_first_batch",
+      "action": "Mettez une grosse c\u00e0s de farce sur le bord de la bande et pliez-la en triangle. D\u00e9posez-la sur la grille et r\u00e9p\u00e9tez l'op\u00e9ration.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "oiled_filo_strips",
+        "blettes_feta_filling",
+        "prepared_baking_sheets"
+      ],
+      "produces": "filled_samoussas_first_batch",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_first_batch",
+      "action": "Une fois que la premi\u00e8re grille est remplie, enfourner \u00e0 mi-hauteur pour 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "filled_samoussas_first_batch"
+      ],
+      "produces": "baked_samoussas_first_batch",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_and_fold_triangles_second_batch",
+      "action": "Continuez de plier les samoussas et enfournez la deuxi\u00e8me grille pour 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "oiled_filo_strips",
+        "blettes_feta_filling",
+        "prepared_baking_sheets"
+      ],
+      "produces": "baked_samoussas_second_batch",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_batches",
+      "action": "Combinez les deux fourn\u00e9es de samoussas cuits.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "baked_samoussas_first_batch",
+        "baked_samoussas_second_batch"
+      ],
+      "produces": "samoussas_blettes_feta_complete",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "samoussas_blettes_feta_complete",
+  "originalText": "Samoussas aux Blettes, Cumin et F\u00eata (V\u00e9g\u00e9tarien) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2021\nSamoussas aux Blettes, Cumin et F\u00eata (V\u00e9g\u00e9tarien)\nAcc\u00e9der directement \u00e0 la recette\nSi vous aimez les samoussas, vous allez adorer ceux-l\u00e0 : aux blettes, f\u00eata et cumin !\nJ\u2019ai toujours un peu de mal \u00e0 trouver de l\u2019inspiration pour les blettes, pas vous ? Traditionnellement, ma m\u00e8re les cuisine en gratin et j\u2019adore \u00e7a, mais au bout d\u2019un moment\u2026 C\u2019est un peu r\u00e9p\u00e9titif ! Du coup, une de mes missions de la saison : trouver plein de fa\u00e7ons de cuisiner les blettes !\nVous trouverez d\u2019ores et d\u00e9j\u00e0\nune recette de quiche blettes et ch\u00e8vre\nsur le blog.  Et une recette de\ngalettes de blettes au comt\u00e9\n.\nEt maintenant ces petits samoussas \u00e0 la f\u00eata, aux blettes et au cumin \ud83d\ude42 ! C\u2019est un vrai r\u00e9gal qui est en passe de devenir un classique \u00e0 la maison \ud83d\ude42\nNe soyez pas intimid\u00e9 par le pliage. C\u2019est vraiment pas tr\u00e8s compliqu\u00e9 et en plus je vous ai fait une vid\u00e9o !\nSamoussas aux Blettes, Cumin et F\u00eata (v\u00e9g\u00e9tarien)\nNatacha\n4.55\n/5 avec\n53\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n35\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n20\nsamoussas\nIngr\u00e9dients\n1x\n2x\n3x\n350\ng\nde blettes\ntiges et feuilles\n120\ng\nd\u2019oignon\n1 gros \u00e9minc\u00e9\n1\nc\u00e0s d\u2019huile d\u2019olive\n\u00bd\nc\u00e0c de cumin\n\u00bd\nc\u00e0c de paprika doux\nsel\n1\nc\u00e0c d\u2019origan\n120\nml\nd\u2019eau\n2\noeufs\n150\ng\nde f\u00eata\n1\npaquet de 10 feuilles filo\nou feuilles de brique\nde l\u2019huile d\u2019olive\nInstructions\nNettoyez puis \u00e9mincez les blettes. R\u00e9servez.\n\u00c9pluchez puis \u00e9mincez finement l\u2019oignon.\nFaites chauffer l\u2019huile dans une po\u00eale \u00e0 feu moyen et mettez les oignons \u00e0 revenir avec le cumin et le paprika pendant 5min.\nAjoutez les blettes, le sel et l\u2019origan et faites revenir 5min. Ajoutez l\u2019eau et faites revenir encore une dizaine de minutes ou jusqu\u2019\u00e0 \u00e9vaporation de l\u2019eau. Les blettes doivent \u00eatre tendres.\nRetirer du feu.\nBattez les \u0153ufs et \u00e9miettez la f\u00eata. M\u00e9langez les avec les blettes.\nPr\u00e9chauffez le four \u00e0 200\u00b0C et pr\u00e9parez 2 grilles de cuisson en les couvrant de papier cuisson.\nCoupez les feuilles filo en 2 dans le sens de la longueur.\nVersez un peu d\u2019huile dans un bol et munissez-vous d\u2019un pinceau.\nPrenez une bande de filo, posez-la devant vous. Pliez la en 2 dans le sens de la longueur pour avoir une longue bande.\nPassez le pinceau d\u2019huile sur toute la surface de la bande.\nMettez une grosse c\u00e0s de farce sur le bord de la bande et pliez-la en triangle. D\u00e9posez-la sur la grille et r\u00e9p\u00e9tez l\u2019op\u00e9ration. Une fois que la premi\u00e8re grille est remplie, enfourner \u00e0 mi-hauteur pour 20min. Continuez de plier les samoussas et enfournez la deuxi\u00e8me grille.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nBlettes\n,\nBrunch Sal\u00e9\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nbettes\n,\nblette v\u00e9g\u00e9\n,\nblettes\n,\ncotes de bettes\n,\nque faire avec de la feta\n,\nrecette blette\n,\nrecette de blettes\n,\nsamoussas\n,\nsamoussas v\u00e9g\u00e9tariens\nMuffins \u00e0 l\u2019Orange Vegan\nBrochettes de Halloumi au Miel, Herbes fra\u00eeches et Citron\n6 thoughts on \u201cSamoussas aux Blettes, Cumin et F\u00eata (V\u00e9g\u00e9tarien)\u201d\nPatrick\ndit\u00a0:\n15 avril 2021 \u00e0 2 h 03 min\nPar quoi remplacer les blettes Merci\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n17 avril 2021 \u00e0 17 h 14 min\nBonjour Patrick, vous pouvez remplacer les blettes par n\u2019importe quel l\u00e9gumes \u00e0 feuilles ! Epinards par exemple, ou m\u00eame des poireaux \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nCamille\ndit\u00a0:\n11 juin 2021 \u00e0 10 h 17 min\nBonjour,\nMettez-vous les feuilles des blettes ?\nJ\u2019ai h\u00e2te de faire go\u00fbter votre recette \u00e0 mes grands-m\u00e8res \ud83d\ude0a.\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n20 juin 2021 \u00e0 20 h 59 min\nHello ! Oui je mets les feuilles et les c\u00f4tes \ud83d\ude09\ud83d\ude01\nchargement\u2026\nR\u00e9pondre\nMarion\ndit\u00a0:\n16 novembre 2022 \u00e0 16 h 31 min\nRecette d\u00e9licieuse on s\u2019est r\u00e9gal\u00e9! Merci beaucoup!!\nchargement\u2026\nR\u00e9pondre\nOdile\ndit\u00a0:\n30 mars 2025 \u00e0 14 h 39 min\nToujours aussi bon !\nJ\u2019ai rajout\u00e9 des fanes de radis dans la po\u00eale avec les blettes.\nchargement\u2026\nR\u00e9pondre\n4.55 from 53 votes (\n51 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 20.0
+}

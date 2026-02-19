@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "title": "Tarte fine tomate halloumi : rapide, croustillante et gourmande",
+    "description": "La tarte fine tomate halloumi, c'est la recette facile qui sent bon l'\u00e9t\u00e9. Elle est rapide \u00e0 pr\u00e9parer, l\u00e9g\u00e8re et parfaite pour vos repas ensoleill\u00e9s.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "\u00e9t\u00e9",
+      "tomate",
+      "halloumi",
+      "tarte fine",
+      "m\u00e9diterran\u00e9en",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/07/Tarte-fine-tomate-halloumi-8-of-8.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "V\u00e9rifiez les \u00e9tiquettes de tapenade si vous \u00eates v\u00e9g\u00e9tariens, certaines contiennent des anchois.",
+      "On peut pr\u00e9parer sa tapenade maison.",
+      "Se sert ti\u00e8de ou froid.",
+      "Variante possible avec du pesto vert comme base."
+    ],
+    "slug": "tarte-fine-tomate-halloumi-rapide-croustillante-et-gourmande",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/07/Tarte-fine-tomate-halloumi-8-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/07/02/tarte-fine-tomate-halloumi/",
+    "image": "images/tarte-fine-tomate-halloumi-rapide-croustillante-et-gourmande.webp",
+    "createdAt": "2026-02-09T22:13:33.885461",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 25.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 23.5,
+      "protein": 1.0,
+      "fat": 0.2,
+      "carbs": 5.0,
+      "fiber": 1.8,
+      "confidence": "low",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 4,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "pate_feuilletee",
+      "name": "p\u00e2te feuillet\u00e9e",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "puff pastry"
+    },
+    {
+      "id": "tapenade",
+      "name": "tapenade d'olives noires",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black olive tapenade"
+    },
+    {
+      "id": "tomates",
+      "name": "tomates",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "halloumi",
+      "name": "halloumi",
+      "quantity": 225.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "halloumi"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "sesame",
+      "name": "s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame"
+    },
+    {
+      "id": "basilic",
+      "name": "basilic",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "basil"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_tomatoes_halloumi",
+      "action": "Coupez les tomates et le halloumi en fines rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomates",
+        "halloumi"
+      ],
+      "produces": "sliced_tomatoes_halloumi",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "unroll_pastry",
+      "action": "D\u00e9roulez la p\u00e2te feuillet\u00e9e sur une plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_feuilletee"
+      ],
+      "produces": "unrolled_pastry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_tapenade",
+      "action": "R\u00e9partissez la tapenade sur le fond de la p\u00e2te, en laissant environ 1cm de bords.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "unrolled_pastry",
+        "tapenade"
+      ],
+      "produces": "pastry_with_tapenade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_slices",
+      "action": "D\u00e9posez les rondelles de tomates et de halloumi par-dessus, en les alternant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pastry_with_tapenade",
+        "sliced_tomatoes_halloumi"
+      ],
+      "produces": "tarte_arranged",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drizzle_olive_oil",
+      "action": "Versez un filet d'huile d'olive sur le dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_arranged",
+        "huile_dolive"
+      ],
+      "produces": "tarte_oiled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_herbs",
+      "action": "Saupoudrez d'origan et de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_oiled",
+        "origan",
+        "sesame"
+      ],
+      "produces": "tarte_seasoned",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez pour 25min.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_seasoned"
+      ],
+      "produces": "baked_tarte",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool",
+      "action": "Laissez refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_tarte"
+      ],
+      "produces": "cooled_tarte",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez ti\u00e8de ou froid avec quelques feuilles de basilic.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_tarte",
+        "basilic"
+      ],
+      "produces": "tarte_fine_tomate_halloumi",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_fine_tomate_halloumi",
+  "originalText": "Tarte Fine Tomate Halloumi | Recette Facile, Rapide Et Estivale\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 juillet 2024\nTarte fine tomate halloumi : rapide, croustillante et gourmande\nLa\ntarte fine tomate halloumi\n, c\u2019est la\nrecette facile\nqui sent bon l\u2019\n\u00e9t\u00e9\n. Elle est\nrapide\n\u00e0 pr\u00e9parer,\nl\u00e9g\u00e8re\net\nparfaite\npour vos\nrepas ensoleill\u00e9\ns. Entre les\ntomates juteuses\net le\nhalloumi grill\u00e9\n, on croque dans une\nassiette pleine de couleurs\n. En\nvingt minutes\n, vous avez une\ntarte express\nqui fait voyager vos\npapilles\nvers la\nM\u00e9diterran\u00e9e\n. Et franchement, qui peut\nr\u00e9sister\n\u00e0 une tarte aussi simple ?\nTable des mati\u00e8res\n1\nPourquoi on adore les tartes fines\n2\nTapenade et astuces anti-anchois\n3\nLa tomate, star ensoleill\u00e9e de nos assiettes\n4\nTarte fine tomate halloumi\n5\nLe halloumi, le fromage qui aime le feu\n6\nTomate + halloumi = duo qui en jette\nPourquoi on adore les tartes fines\nLes tartes fines, c\u2019est le combo gagnant : rapides, jolies et su\np\ner pratiques. Un rouleau de p\u00e2te feuillet\u00e9e, un l\u00e9gume star, un fromage qui claque et le tour est jou\u00e9. Elles sauvent toujours nos repas improvis\u00e9s et se partagent sans prise de t\u00eate.\nSi comme nous, vous adorez les tartes fines, ne manquez pas la\ntarte fine courgette et burrata\net la\ntarte fine asperges burrata\n. De quoi varier les plaisirs tout l\u2019\u00e9t\u00e9 !\nTapenade et astuces anti-anchois\nIci, on a choisi la tapenade d\u2019olives noires comme base, et \u00e7a marche \u00e0 merveille. Petit rappel : si vous \u00eates v\u00e9g\u00e9tariens, v\u00e9rifiez bien les \u00e9tiquettes, certaines contiennent des anchois. Mais pas de panique, on trouve facilement des tapenades 100 % veggie. Et sinon, vous pouvez pr\u00e9parer la v\u00f4tre maison, comme notre\ntapenade d\u2019olives vertes\nd\u00e9j\u00e0 sur le blog.\nEt si vous \u00eates fans d\u2019olives, vous allez vous r\u00e9galer ! Testez notre\ncake courgette olive feta\n, craquez pour la\nfeta grill\u00e9e au four avec olives et tomates cerises\nou r\u00e9galez-vous avec nos\nsabl\u00e9s sal\u00e9s olives noires et thym\n.\nLa tomate, star ensoleill\u00e9e de nos assiettes\nOriginaire d\u2019Am\u00e9rique du Sud, la\ntomate\na parcouru un long chemin avant de devenir la star de nos \u00e9t\u00e9s. Juteuse, color\u00e9e et pleine de soleil, elle apporte fra\u00eecheur et vitalit\u00e9 \u00e0 nos repas. Riche en vitamine C et en antioxydants, elle soutient nos d\u00e9fenses et prot\u00e8ge notre peau pendant les beaux jours. Nous adorons la cuisiner sous toutes ses formes : en tarte comme dans notre\nquiche tomate comt\u00e9 moutarde\n, en assiette estivale avec les\ntomates feta et pitas au zaatar\nou encore en version grecque avec les\ngalettes de tomate fa\u00e7on tomatokeftedes\n. Impossible de s\u2019en lasser, la tomate fait toujours sensation !\nTarte fine tomate halloumi\n4.60\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde tomates\n2-3\n225\ng\nde halloumi\n1\nrouleau de p\u00e2te feuillet\u00e9e\n3\nc\u00e0s de tapenade\nhuile d\u2019olive\norigan\ns\u00e9same\nquelques feuilles de basilic\nInstructions\nCoupez les tomates et le halloumi en fines rondelles.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nD\u00e9roulez la p\u00e2te sur une plaque de cuisson.\nR\u00e9partissez la tapenade sur le fond, en laissant environ 1cm de bords.\nD\u00e9posez les tomates et le halloumi par-dessus.\nVersez un filet d\u2019huile d\u2019olive.\nSaupoudrez d\u2019origan et de s\u00e9same.\nEnfournez 25min.\nLaissez refroidir.\nServez ti\u00e8de ou froid avec quelques feuilles de basilic.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLe halloumi, le fromage qui aime le feu\nOriginaire de Chypre, le halloumi est ce fromage \u00e0 p\u00e2te ferme qui ne fond pas \u00e0 la cuisson. Sa particularit\u00e9 ? Il adore passer \u00e0 la po\u00eale, au grill ou au barbecue, o\u00f9 il d\u00e9voile une cro\u00fbte dor\u00e9e et un c\u0153ur moelleux. Riche en prot\u00e9ines et en calcium, il apporte de l\u2019\u00e9nergie et du caract\u00e8re \u00e0 vos repas v\u00e9g\u00e9tariens. Nous l\u2019aimons aussi bien en version estivale avec la\nsalade past\u00e8que halloumi melon\nqu\u2019en plat r\u00e9confortant comme la\nsalade d\u2019hiver au halloumi et pamplemousse\n. Il se glisse aussi dans des recettes pleines de soleil comme la\nsalade de boulgour et halloumi\nou les\nbrochettes de halloumi au miel, herbes fra\u00eeches et citron\n. Avec le halloumi, chaque bouch\u00e9e devient une explosion m\u00e9diterran\u00e9enne.\nTomate + halloumi = duo qui en jette\nEnsuite, rien de compliqu\u00e9. On alterne les tranches de tomates bien m\u00fbres et celles de halloumi. On enfourne, on attend une vingtaine de minutes\u2026 et c\u2019est pr\u00eat. R\u00e9sultat : une tarte fine rapide, color\u00e9e et id\u00e9ale pour un repas d\u2019\u00e9t\u00e9 sans stress.\nCette tarte fine tomate halloumi, c\u2019est la recette facile qui r\u00e9sume tout ce qu\u2019on aime en \u00e9t\u00e9. Rapide, color\u00e9e et pleine de soleil, elle se pr\u00e9pare en un clin d\u2019\u0153il et fait toujours son petit effet. Entre la douceur juteuse des tomates et le croustillant dor\u00e9 du halloumi, difficile d\u2019y r\u00e9sister. Alors, pr\u00eats \u00e0 craquer pour cette tarte fine tomate halloumi et \u00e0 en reprendre une part ?\nEnvie de varier les plaisirs ? D\u00e9couvrez\ntoutes nos recettes de quiches et tartes sal\u00e9es\npour encore plus d\u2019id\u00e9es simples, gourmandes et conviviales.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nQuiches et Tartes\n,\nTomate\nGalettes de tomate fa\u00e7on tomatokeftedes : la star des mezzes \u00e0 partager\nSauce au poivre inratable\n3 thoughts on \u201cTarte fine tomate halloumi : rapide, croustillante et gourmande\u201d\nHelene\ndit\u00a0:\n19 juillet 2024 \u00e0 9 h 36 min\nG\u00e9niale cette id\u00e9e ! Moi qui ne sais jamais comment accompagner l\u2019halloumi, l\u00e0, c\u2019est parfait ! Merci pour le partage \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n22 mai 2025 \u00e0 9 h 40 min\nRecette faite hier soir et valid\u00e9e \u00e0 1000%, j\u2019ai mis pesto vert comme base, c\u2019\u00e9tait \u00e0 se rouler par terre\nchargement\u2026\nR\u00e9pondre\nSylvie M.\ndit\u00a0:\n21 ao\u00fbt 2025 \u00e0 19 h 32 min\nUn r\u00e9gal. Je l\u2019ai d\u00e9j\u00e0 faite plusieurs fois, toujours avec la tapenade maison. La tarte fait l\u2019unanimit\u00e9 \u00e0 chaque fois.\nchargement\u2026\nR\u00e9pondre\n4.60 from 57 votes (\n55 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

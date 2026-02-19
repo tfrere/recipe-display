@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "title": "Linguines \u00e0 la Cr\u00e8me de Brocoli",
+    "description": "Des linguines avec une sauce cr\u00e9meuse au brocoli, une recette z\u00e9ro d\u00e9chet o\u00f9 tout le l\u00e9gume est utilis\u00e9.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "brocoli",
+      "recette zero dechet",
+      "sauce creme parmesan",
+      "automne",
+      "\u00e9t\u00e9",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Linguini-a-la-creme-de-brocoli-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette anti-gaspi, simple et bonne.",
+      "Pour des recettes similaires, je vous conseille la cr\u00e8me de courgettes, ou la cr\u00e8me de butternut !",
+      "Super bon! Bonne recette pour faire manger des l\u00e9gumes aux enfants \ud83d\ude01"
+    ],
+    "slug": "linguines-a-la-creme-de-brocoli",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Linguini-a-la-creme-de-brocoli-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/09/17/linguines-a-la-creme-de-brocoli/",
+    "image": "images/linguines-a-la-creme-de-brocoli.webp",
+    "createdAt": "2026-02-09T20:32:17.859940",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 36.0,
+    "totalCookingTime": 6.0,
+    "peakMonths": [
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 530.1,
+      "protein": 16.2,
+      "fat": 16.8,
+      "carbs": 81.8,
+      "fiber": 5.0,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "broccoli",
+      "name": "t\u00eate brocoli",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 450g",
+      "optional": false,
+      "name_en": "broccoli"
+    },
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 80g",
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me fra\u00eeche",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "linguine",
+      "name": "linguines",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "linguine"
+    },
+    {
+      "id": "walnuts",
+      "name": "noix",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "petite poign\u00e9e",
+      "optional": false,
+      "name_en": "walnut"
+    }
+  ],
+  "tools": [
+    "Cuit-vapeur",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "clean_broccoli",
+      "action": "Nettoyez le brocoli. D\u00e9taillez le tronc en cube. D\u00e9tachez les fleurets et s\u00e9parez-les avec les mains pour obtenir des petits morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "broccoli"
+      ],
+      "produces": "prepared_broccoli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_shallots",
+      "action": "\u00c9pluchez et coupez grossi\u00e8rement les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "shallots"
+      ],
+      "produces": "chopped_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_broccoli_shallots",
+      "action": "Mettez le brocoli et les \u00e9chalotes \u00e0 cuire \u00e0 la vapeur.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "prepared_broccoli",
+        "chopped_shallots"
+      ],
+      "produces": "steamed_broccoli_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_half_florets",
+      "action": "Au bout de 10min, retirez la moiti\u00e9 des fleurets et r\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "steamed_broccoli_shallots"
+      ],
+      "produces": "reserved_florets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "continue_steaming",
+      "action": "Laissez cuire le reste 20min de plus.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "steamed_broccoli_shallots"
+      ],
+      "produces": "fully_steamed_broccoli_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_broccoli_sauce",
+      "action": "Passez le brocoli restant et les \u00e9chalotes au mixeur avec la cr\u00e8me et le parmesan. Une fois que le m\u00e9lange est bien lisse, go\u00fbtez, salez et poivrez au go\u00fbt.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00e8me de brocoli",
+      "uses": [
+        "fully_steamed_broccoli_shallots",
+        "cream",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "produces": "broccoli_cream_sauce",
+      "requires": [],
+      "visualCue": "bien lisse"
+    },
+    {
+      "id": "cook_linguine",
+      "action": "Faites cuire vos linguines en suivant les instructions du paquet. R\u00e9servez 2 cuill\u00e8res \u00e0 soupe d'eau de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "linguine"
+      ],
+      "produces": "cooked_linguine_with_pasta_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_press_garlic",
+      "action": "\u00c9pluchez et pressez l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "garlic"
+      ],
+      "produces": "pressed_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_garlic",
+      "action": "Faites chauffer une po\u00eale \u00e0 feu moyen. Mettez l'ail press\u00e9 \u00e0 revenir dans l'huile d'olive.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "pressed_garlic",
+        "olive_oil"
+      ],
+      "produces": "sauteed_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_reserved_florets",
+      "action": "Au bout de 2min, ajoutez les fleurets de brocolis pr\u00e9cuits. Faites revenir 4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "sauteed_garlic",
+        "reserved_florets"
+      ],
+      "produces": "sauteed_florets_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_sauce_pasta",
+      "action": "Versez la cr\u00e8me de brocoli et les 2 cuill\u00e8res \u00e0 soupe d'eau de cuisson dans la po\u00eale. M\u00e9langez bien puis ajoutez les linguines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "sauteed_florets_garlic",
+        "broccoli_cream_sauce",
+        "cooked_linguine_with_pasta_water"
+      ],
+      "produces": "combined_pasta_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crush_walnuts",
+      "action": "Concassez les noix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "walnuts"
+      ],
+      "produces": "crushed_walnuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_pasta",
+      "action": "Servez vos linguines \u00e0 la cr\u00e8me de brocolis en les saupoudrant de noix concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage du plat",
+      "uses": [
+        "combined_pasta_sauce",
+        "crushed_walnuts"
+      ],
+      "produces": "linguines_creme_brocoli",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "linguines_creme_brocoli",
+  "originalText": "Linguines \u00e0 la Cr\u00e8me de Brocoli - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n17 septembre 2021\nLinguines \u00e0 la Cr\u00e8me de Brocoli\nAu menu aujourd\u2019hui : des linguines \u00e0 la cr\u00e8me de brocoli !\nBon, vous me connaissez maintenant \ud83d\ude42\nJ\u2019ai une petite obsession avec l\u2019optimisation en cuisine. Et le z\u00e9ro d\u00e9chet. Et les recettes faciles, \u00e0 faire tranquillement au quotidien !\nPuis aussi, j\u2019adore le brocoli.\nM\u00eame si j\u2019avoue qu\u2019il y a peu de recettes avec ce beau l\u00e9gume sur le blog.\nDu coup, quand\nAreco\nm\u2019a demand\u00e9 de mettre \u00e0 l\u2019honneur le brocoli, je me devais de trouver quelque chose d\u2019anti-gaspi, simple et bon !\nEn plus, \u00e7a correspond parfaitement \u00e0 leurs valeurs !\nVous ne les connaissez certainement pas. Areco est un acteur de l\u2019ombre du \u201cbien mang\u00e9\u201d. Leur m\u00e9tier ? Mettre en valeur et pr\u00e9server les produits frais en rayon. Comment ? avec la n\u00e9bulisation. What\u2019s that ? Vous en avez forc\u00e9ment d\u00e9j\u00e0 vu en faisant vos courses. Ce sont ces syst\u00e8mes qui envoient des mini gouttelettes d\u2019eau sur les \u00e9tals de fruits et de l\u00e9gumes pour les garder bien frais.\nL\u2019avantage, c\u2019est que les magasins n\u2019ont plus besoin d\u2019emballer les fruits et l\u00e9gumes dans des plastiques. Les produits restent frais et vitamin\u00e9s plus longtemps. Moins de d\u00e9chets plastiques, moins d\u2019aliments jet\u00e9s ! Tout le monde y gagne \ud83d\ude42\nRevenons-en \u00e0 cette petite recette de linguines \u00e0 la cr\u00e8me de brocoli. Pas de d\u00e9chet, tout y passe ! Les fleurets restent entiers pour apporter de la texture et le tronc est transform\u00e9 en sauce cr\u00e9meuse \ud83d\ude42\nPour des recettes similaires, je vous conseille\nla cr\u00e8me de courgettes\n, ou\nla cr\u00e8me de butternut\n!\nLinguines \u00e0 la Cr\u00e8me de Brocoli\nNatacha\n4.52\n/5 avec\n92\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour la cr\u00e8me\n1\nt\u00eate de brocoli\nenv 450g\n4\n\u00e9chalotes\nenv 80g\n100\ng\nde cr\u00e8me fra\u00eeche\n30\ng\nde parmesan\nsel\npoivre\nIngr\u00e9dients pour le plat\n1\nc\u00e0s d\u2019huile d\u2019olive\n2\ngousses d\u2019ail\n400\ng\nde linguines\n1\npetite poign\u00e9e de noix\nInstructions\nPr\u00e9paration de la cr\u00e8me\nNettoyez le brocoli. D\u00e9taillez le tronc en cube. D\u00e9tachez les fleurets et s\u00e9parez-les avec les mains pour obtenir des petits morceaux.\n\u00c9pluchez et coupez grossi\u00e8rement les \u00e9chalotes.\nMettez le brocoli et les \u00e9chalotes \u00e0 cuire \u00e0 la vapeur.\nAu bout de 10min, retirez la moiti\u00e9 des fleurets et r\u00e9servez.\nLaissez cuire le reste 20min de plus.\nPassez le brocoli restant et les \u00e9chalotes au mixeur avec la cr\u00e8me et le parmesan. Une fois que le m\u00e9lange est bien lisse, go\u00fbtez, salez et poivrez au go\u00fbt.\nPr\u00e9paration du plat\nFaites cuire vos linguines en suivant les instructions du paquet. R\u00e9servez 2 cuill\u00e8res \u00e0 soupe d\u2019eau de cuisson.\n\u00c9pluchez et pressez l\u2019ail.\nFaites chauffer une po\u00eale \u00e0 feu moyen. Mettez l\u2019ail press\u00e9 \u00e0 revenir dans l\u2019huile d\u2019olive. Au bout de 2min, ajoutez les fleurets de brocolis pr\u00e9cuits. Faites revenir 3-4min.\nVersez la cr\u00e8me de brocoli et les 2 cuill\u00e8res \u00e0 soupe d\u2019eau de cuisson dans la po\u00eale. M\u00e9langez bien puis ajoutez les linguines.\nConcassez les noix.\nServez vos linguines \u00e0 la cr\u00e8me de brocolis en les saupoudrant de noix concass\u00e9es.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrocoli\n,\nChoux\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\nbrocoli\n,\nid\u00e9e recette brocoli\n,\nrecette brocoli\n,\nrecette zero dechet\n,\nsauce creme parmesan\nCake Poivrons Olives et Feta\nBuns brioch\u00e9s\n2 thoughts on \u201cLinguines \u00e0 la Cr\u00e8me de Brocoli\u201d\nAurore\ndit\u00a0:\n19 novembre 2023 \u00e0 21 h 27 min\nCette recette est d\u00e9licieuse, merci !!\nchargement\u2026\nR\u00e9pondre\nCecile\ndit\u00a0:\n10 d\u00e9cembre 2023 \u00e0 19 h 21 min\nSuper bon! Bonne recette pour faire manger des l\u00e9gumes aux enfants \ud83d\ude01\nchargement\u2026\nR\u00e9pondre\n4.52 from 92 votes (\n90 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 6.0
+}

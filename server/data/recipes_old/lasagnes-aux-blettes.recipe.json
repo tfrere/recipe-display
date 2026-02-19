@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "title": "Lasagnes aux Blettes",
+    "description": "C'est le d\u00e9but de la saison des blettes ! Et donc l'occasion parfaite pour vous partager cette recette de lasagnes aux blettes !",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H15M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "bette",
+      "lasagne",
+      "lasagne v\u00e9g\u00e9tarienne",
+      "que faire avec des blettes",
+      "recette blette",
+      "\u00e9t\u00e9",
+      "printemps",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Lasagnes-blettes-3-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour une tenue id\u00e9ale, il est pr\u00e9f\u00e9rable de laisser les lasagnes refroidir compl\u00e8tement puis de les r\u00e9chauffer avant de d\u00e9guster !",
+      "Si n\u00e9cessaire, vous pouvez griller le dessus des lasagnes en mode grill pendant 5min pour obtenir un fromage bien croustillant.",
+      "Recette cr\u00e9\u00e9e en collaboration avec Monbento."
+    ],
+    "slug": "lasagnes-aux-blettes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/03/Lasagnes-blettes-3-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/03/28/lasagnes-aux-blettes/",
+    "image": "images/lasagnes-aux-blettes.jpg",
+    "createdAt": "2026-02-09T21:09:58.625694",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 78.0,
+    "totalCookingTime": 13.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 511.5,
+      "protein": 19.5,
+      "fat": 28.8,
+      "carbs": 47.2,
+      "fiber": 7.9,
+      "confidence": "high",
+      "resolvedIngredients": 13,
+      "matchedIngredients": 13,
+      "totalIngredients": 15,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "blettes",
+      "name": "blettes",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": "nettoy\u00e9es et \u00e9minc\u00e9es (c\u00f4tes et feuilles)",
+      "notes": null,
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9s et \u00e9minc\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "coulis_tomate",
+      "name": "coulis de tomate",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "origan",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "thym",
+      "name": "thym s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dried thyme"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 800.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "animal ou v\u00e9g\u00e9tal",
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "muscade",
+      "name": "noix de muscade moulue",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella r\u00e2p\u00e9e",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Grated mozzarella"
+    },
+    {
+      "id": "emmental",
+      "name": "emmental r\u00e2p\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated emmental"
+    },
+    {
+      "id": "feuilles_lasagne",
+      "name": "feuilles de lasagne crues",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lasagna noodles"
+    }
+  ],
+  "tools": [
+    "plat de 30cm x 23 cm ou \u00e9quivalent",
+    "faitout"
+  ],
+  "steps": [
+    {
+      "id": "saute_oignons_blettes",
+      "action": "Faire revenir les oignons et les blettes dans un faitout avec l'huile d'olive, \u00e0 feu moyen-fort pendant 7-8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_blettes",
+      "uses": [
+        "oignons",
+        "blettes",
+        "huile_dolive"
+      ],
+      "produces": "oignons_blettes_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_tomates_epices",
+      "action": "Quand les blettes ont rejet\u00e9 leur eau, ajouter le coulis de tomate, l'eau, l'origan, le thym, le sucre, le sel et le poivre. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_blettes",
+      "uses": [
+        "oignons_blettes_sautes",
+        "coulis_tomate",
+        "eau",
+        "origan",
+        "thym",
+        "sucre",
+        "sel",
+        "poivre"
+      ],
+      "produces": "sauce_tomate_base",
+      "requires": [],
+      "visualCue": "blettes ont rejet\u00e9 leur eau"
+    },
+    {
+      "id": "mijoter_sauce",
+      "action": "Baisser le feu pour avoir de petits bouillons, couvrir et laisser mijoter 35min en remuant de temps en temps.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_tomate_aux_blettes",
+      "uses": [
+        "sauce_tomate_base"
+      ],
+      "produces": "sauce_tomate_blettes_cuite",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "fondre_beurre",
+      "action": "Dans une casserole, faire fondre le beurre \u00e0 feu moyen.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "beurre_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_roux",
+      "action": "Verser la farine dans le beurre et m\u00e9langer pour obtenir un roux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "beurre_fondu",
+        "farine"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": "roux obtenu"
+    },
+    {
+      "id": "ajouter_lait",
+      "action": "Verser le lait petit \u00e0 petit tout en m\u00e9langeant avec un fouet. La b\u00e9chamel va \u00e9paissir petit \u00e0 petit.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "roux",
+        "lait"
+      ],
+      "produces": "bechamel_base",
+      "requires": [],
+      "visualCue": "\u00e9paississement"
+    },
+    {
+      "id": "epaissir_bechamel",
+      "action": "Une fois tout le lait incorpor\u00e9, laisser \u00e9paissir un peu si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "bechamel_base"
+      ],
+      "produces": "bechamel_epaisse",
+      "requires": [],
+      "visualCue": "\u00e9paissi"
+    },
+    {
+      "id": "ajouter_epices_parmesan",
+      "action": "Ajouter la muscade, le sel, le poivre et le parmesan. M\u00e9langer bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "bechamel_epaisse",
+        "muscade",
+        "sel",
+        "poivre",
+        "parmesan"
+      ],
+      "produces": "bechamel_parmesan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_fromages",
+      "action": "Dans un grand bol, m\u00e9langer la mozzarella et l'emmental.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "mozzarella",
+        "emmental"
+      ],
+      "produces": "melange_fromages",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "premiere_couche",
+      "action": "Verser une louche de sauce tomate au fond de votre plat, puis tapisser avec des feuilles de lasagnes non cuites.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "sauce_tomate_blettes_cuite",
+        "feuilles_lasagne"
+      ],
+      "produces": "premiere_couche_lasagnes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deuxieme_couche",
+      "action": "Verser de nouveau une g\u00e9n\u00e9reuse couche de sauce tomate, puis un tiers du fromage.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "premiere_couche_lasagnes",
+        "sauce_tomate_blettes_cuite",
+        "melange_fromages"
+      ],
+      "produces": "deuxieme_couche_lasagnes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "troisieme_couche",
+      "action": "Recommencer : une couche de lasagne, une couche de sauce, une couche de fromage.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "deuxieme_couche_lasagnes",
+        "feuilles_lasagne",
+        "sauce_tomate_blettes_cuite",
+        "melange_fromages"
+      ],
+      "produces": "troisieme_couche_lasagnes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "quatrieme_couche",
+      "action": "D\u00e9poser ensuite une derni\u00e8re couche de lasagne, de sauce tomate, puis de b\u00e9chamel et la fin du fromage.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "troisieme_couche_lasagnes",
+        "feuilles_lasagne",
+        "sauce_tomate_blettes_cuite",
+        "bechamel_parmesan",
+        "melange_fromages"
+      ],
+      "produces": "lasagnes_montes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_lasagnes",
+      "action": "Enfourner \u00e0 mi-hauteur pour 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "lasagnes_montes"
+      ],
+      "produces": "lasagnes_cuites",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "griller_dessus",
+      "action": "Si n\u00e9cessaire, griller le dessus en mode grill pendant 5min pour obtenir un fromage croustillant.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "lasagnes_cuites"
+      ],
+      "produces": "lasagnes_aux_blettes",
+      "requires": [],
+      "visualCue": "fromage croustillant"
+    }
+  ],
+  "finalState": "lasagnes_aux_blettes",
+  "originalText": "Lasagnes aux Blettes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 mars 2022\nLasagnes aux Blettes\nAller \u00e0 la recette\nC\u2019est le d\u00e9but de la saison des blettes ! Et donc l\u2019occasion parfaite pour vous partager cette recette de lasagnes aux blettes !\nJe trouve que ce l\u00e9gume souffre terriblement d\u2019une mauvaise r\u00e9putation. Que je trouve tout \u00e0 fait injuste.\nIl est trop souvent mal cuisin\u00e9. Ou alors, on le fait toujours pareil, et donc on s\u2019en lasse !\nPour accompagner cette recette, j\u2019ai donc d\u00e9cid\u00e9 de vous proposer\nnotre top des 5 recettes \u00e0 faire avec vos blettes\n. 5 recettes sympas, v\u00e9g\u00e9, et faciles. Qui vous permettront de red\u00e9couvrir ce beau l\u00e9gume !\nEt, j\u2019ai d\u2019ailleurs utilis\u00e9 des blettes dans l\u2019un des 3 menus de notre dernier ebook !\nC\u2019est un ebook d\u00e9di\u00e9 au batchcooking de printemps\n. Vous y trouverez 3 semaines de batchcooking v\u00e9g\u00e9tarien ! Et plusieurs recettes avec des blettes du coup !\nMais pour en revenir \u00e0 nos lasagnes aux blettes, vous allez voir, c\u2019est d\u00e9licieux. Comme souvent, c\u2019est un peu long, mais vraiment pas compliqu\u00e9.\nIl faut dire que le \u201cprobl\u00e8me\u201d des lasagnes, c\u2019est qu\u2019il y a plusieurs couches. Et donc, a priori, plusieurs pr\u00e9parations. Mais honn\u00eatement, \u00e7a vaut le coup ! C\u2019est clairement un des meilleurs comfort food ! Et si vous avez envie de varier les plaisirs, nous avons aussi une merveilleuse recette\nde lasagnes aux aubergines\n!\nNous avons cr\u00e9\u00e9 cette recette en collaboration avec\nMonbento\n.\nLasagnes aux Blettes\n4.47\n/5 avec\n60\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n1\nheure\nh\nTemps de cuisson\n30\nminutes\nmin\nPortions\n6\npersonnes\nEquipment\nplat de 30cm x 23 cm ou \u00e9quivalent\nIngr\u00e9dients\n1x\n2x\n3x\nPour la sauce tomate aux blettes\n1\nkg\nde blettes\n2\noignons\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nkg\nde coulis de tomate\n100\nml\nd\u2019eau\n2\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n1\nc\u00e0c de thym s\u00e9ch\u00e9\n2\nc\u00e0c de sucre\nsel poivre\nPour la b\u00e9chamel au parmesan\n80\ng\nde beurre\n100\ng\nde farine\n800\nml\nde lait\nanimal ou v\u00e9g\u00e9tal\n1\npinc\u00e9e de noix de muscade moulue\nsel\npoivre\n100\ng\nde parmesan r\u00e2p\u00e9\nPour le montage des lasagnes\n300\ng\nde mozzarella r\u00e2p\u00e9e\n100\ng\nd\u2019emmental r\u00e2p\u00e9\n200\ng\nde feuilles de lasagne crues\nInstructions\nPr\u00e9paration de la sauce tomate\nNettoyer et \u00e9mincer les blettes (c\u00f4tes et feuilles).\n\u00c9plucher et \u00e9mincer les oignons.\nFaire revenir les oignons et les blettes dans un faitout avec l\u2019huile d\u2019olive, \u00e0 feu moyen-fort pendant 7-8min.\nQuand les blettes ont rejet\u00e9 leur eau, ajouter le reste des ingr\u00e9dients. Bien m\u00e9langer.\nBaisser le feu pour avoir de petits bouillons et couvrir.\nLaisser mijoter 35 min en remuant de temps en temps.\nPr\u00e9paration de la b\u00e9chamel au parmesan\nDans une casserole, faire fondre le beurre \u00e0 feu moyen.\nVerser la farine dans le beurre et m\u00e9langer. Vous obtiendrez une p\u00e2te appel\u00e9e \u201croux\u201d.\nVerser le lait petit \u00e0 petit tout en m\u00e9langeant avec un fouet.\nLa b\u00e9chamel va \u00e9paissir petit \u00e0 petit.\nUne fois tout le lait incorpor\u00e9, laisser \u00e9paissir un peu si n\u00e9cessaire.\nAjouter la muscade, le sel, le poivre et le parmesan.\nM\u00e9langer bien.\nPr\u00e9paration des lasagnes\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nDans un grand bol, m\u00e9langer la mozzarella et l\u2019emmental.\nVerser une louche de sauce tomate au fond de votre plat, puis tapisser avec des feuilles de lasagnes non cuites.\nVerser de nouveau une g\u00e9n\u00e9reuse couche de sauce tomate, puis un tiers du fromage.\nRecommencer : une couche de lasagne, une couche de sauce, une couche de fromage.\nD\u00e9poser ensuite une derni\u00e8re couche de lasagne, de sauce tomate, puis de b\u00e9chamel et la fin du fromage.\nEnfourner \u00e0 mi-hauteur pour 30min.\nSi n\u00e9cessaire, vous pouvez griller le dessus des lasagnes en mode grill pendant 5min pour obtenir un fromage bien croustillant.\nPour une tenue id\u00e9ale, il est pr\u00e9f\u00e9rable de laisser les lasagnes refroidir compl\u00e8tement puis de les r\u00e9chauffer avant de d\u00e9guster !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBlettes\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nbette\n,\nlasagne\n,\nlasagne v\u00e9g\u00e9tarienne\n,\nque faire avec des blettes\n,\nrecette blette\nLayer Cake Chocolat et Cr\u00e8me au Beurre de Cacahu\u00e8te\n5 recettes pour cuisiner des blettes\n13 thoughts on \u201cLasagnes aux Blettes\u201d\nLadyMilonguera\ndit\u00a0:\n28 mars 2022 \u00e0 15 h 39 min\nCes lasagnes sont bien all\u00e9chantes.\nchargement\u2026\nR\u00e9pondre\nMamiemolette\ndit\u00a0:\n4 avril 2022 \u00e0 11 h 36 min\nTest\u00e9 et largement appr\u00e9ci\u00e9 !!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n4 avril 2022 \u00e0 12 h 22 min\naaaah !! voil\u00e0 qui me rend heureuse !\nchargement\u2026\nR\u00e9pondre\nCoralie\ndit\u00a0:\n25 mai 2022 \u00e0 17 h 34 min\nBonjour, j\u2019avoue ne pas souvent laisser de message mais l\u00e0 je dois dire que j\u2019\u00e9tais oblig\u00e9e de commenter cette recette : tellement bonne !!! Ca fait partie des plats que j\u2019ai envie de faire au moins 1 fois par mois parce que je sais que je vais me r\u00e9galer ! Entre la tomate et la b\u00e9chamel, le c\u00f4t\u00e9 rassasiant des lasagnes et le vert qu\u2019apportent les blettes font que cette recette est juste incroyable.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n26 mai 2022 \u00e0 12 h 42 min\nMerci Coralie !!! Ca me fait trop plaisir \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nPing\u00a0:\nRecette \u00e9labor\u00e9e pour un mal-aim\u00e9 : lasagnes aux feuilles de blettes - Les Jardins Croyables\nM\u00e9lanie\ndit\u00a0:\n24 janvier 2023 \u00e0 19 h 03 min\nMon conjoint m\u2019a dit apr\u00e8s la premi\u00e8re bouch\u00e9e : \u00a0\u00bb Je crois que c\u2019est une des meilleures choses que j\u2019aie mang\u00e9 de toute ma vie\u00a0\u00bb.\nEt c\u2019est vrai que c\u2019\u00e9tait excellent. Merci pour ces recettes\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n25 janvier 2023 \u00e0 10 h 14 min\nOh merciiiiiiiiii\nchargement\u2026\nR\u00e9pondre\nsimon\ndit\u00a0:\n30 janvier 2023 \u00e0 17 h 01 min\nC\u2019est en train de cuire\u2026et \u00e7a sent super bon! Je vois que vous recommandez de laisser refroidir et de r\u00e9chauffer avant de les manger. C\u2019est vrai que c\u2019est souvent meilleur le lendemain! quelle recommandation faites vous pour r\u00e9chauffer?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n31 janvier 2023 \u00e0 18 h 40 min\nHello Simon, souvent je fais chauffer 20min \u00e0 160-170\u00b0C au four ! Vous me direz !\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n24 avril 2023 \u00e0 20 h 10 min\nBonjour, je viens de r\u00e9aliser cette recette avec une botte de blettes arc en ciel achet\u00e9es hier au march\u00e9. C\u2019\u00e9tait la premi\u00e8re fois que j\u2019en cuisinais. J\u2019ai trouv\u00e9 votre recette vraiment excellente!\nchargement\u2026\nR\u00e9pondre\nYannik\ndit\u00a0:\n8 septembre 2023 \u00e0 17 h 28 min\nparfait !\nOn essaye de diminuer la viande et ce n\u2019est pas toujours facile de trouver des recettes qui ne disent pas \u00ab\u00a0elle est o\u00f9 la viande ?\u00a0\u00bb\nCette recette a fait l\u2019unanimit\u00e9 !\nTout le monde s\u2019est resservi !\n(Par contre, je n\u2019ai pas mis de sucre dans la sauce tomate \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nLenore\ndit\u00a0:\n9 mai 2024 \u00e0 14 h 08 min\nJ\u2019adore les blettes et l\u00e0, je me suis vraiment r\u00e9gal\u00e9e. Merci\nchargement\u2026\nR\u00e9pondre\n4.47 from 60 votes (\n54 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 13.0
+}

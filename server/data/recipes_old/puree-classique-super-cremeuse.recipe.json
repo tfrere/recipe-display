@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "title": "Pur\u00e9e classique super cr\u00e9meuse",
+    "description": "Une pur\u00e9e de pommes de terre cr\u00e9meuse, avec un peu d'ail et de muscade, \u00e0 tester et adapter selon ses go\u00fbts.",
+    "servings": 5,
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "comment faire de la pur\u00e9e",
+      "\u00e9cras\u00e9 de pommes de terre",
+      "pur\u00e9e cr\u00e9meuse",
+      "pur\u00e9e de patate",
+      "pur\u00e9e facile",
+      "pur\u00e9e maison",
+      "pur\u00e9e maison facile",
+      "recette pur\u00e9e",
+      "accompagnement",
+      "pomme de terre",
+      "automne",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Puree-pdt-classique-1-of-1.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Prenez cette recette plus comme de vagues indications \u00e0 tester et adapter.",
+      "Je fais tout \u00e7a au pif. Je go\u00fbte, et j'ajuste. Je go\u00fbte de nouveau, et j'ajuste de nouveau.",
+      "Accompagnez avec le bourguignon v\u00e9g\u00e9."
+    ],
+    "slug": "puree-classique-super-cremeuse",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Puree-pdt-classique-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/02/03/puree-classique-super-cremeuse/",
+    "image": "images/puree-classique-super-cremeuse.webp",
+    "createdAt": "2026-02-09T21:05:42.435251",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 25.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 249.1,
+      "protein": 1.5,
+      "fat": 26.7,
+      "carbs": 1.9,
+      "fiber": 0.0,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 4,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 pur\u00e9e",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": "entieres et non epluchees",
+      "notes": "pas \u00e0 chair tendre",
+      "optional": false,
+      "name_en": "mashing potatoes"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 30.0,
+      "unit": "cl",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade",
+      "quantity": 2.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Cuiseur vapeur"
+  ],
+  "steps": [
+    {
+      "id": "steam_potatoes",
+      "action": "Faire cuire les pommes de terre enti\u00e8res et non \u00e9pluch\u00e9es \u00e0 la vapeur pendant 25min.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "steamed_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "check_doneness",
+      "action": "V\u00e9rifier la cuisson en enfon\u00e7ant un couteau dans la plus grosse pomme de terre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_potatoes"
+      ],
+      "produces": "checked_potatoes",
+      "requires": [],
+      "visualCue": "couteau s'enfonce facilement"
+    },
+    {
+      "id": "peel_potatoes",
+      "action": "\u00c9plucher les pommes de terre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "checked_potatoes"
+      ],
+      "produces": "peeled_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mash_and_mix",
+      "action": "\u00c9craser les pommes de terre et ajouter le beurre, la cr\u00e8me liquide, l'ail hach\u00e9e, la noix de muscade, le sel et le poivre. M\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_potatoes",
+        "butter",
+        "cream",
+        "garlic",
+        "nutmeg",
+        "salt",
+        "pepper"
+      ],
+      "produces": "mashed_potato_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "taste_and_adjust",
+      "action": "Go\u00fbter et ajuster l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mashed_potato_mixture",
+        "salt",
+        "pepper"
+      ],
+      "produces": "creamy_mashed_potatoes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creamy_mashed_potatoes",
+  "originalText": "Pur\u00e9e classique super cr\u00e9meuse - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 f\u00e9vrier 2022\nPur\u00e9e classique super cr\u00e9meuse\nAller \u00e0 la recette\nJ\u2019ai pas mal h\u00e9sit\u00e9 avant de vous poster cette recette de Pur\u00e9e classique super cr\u00e9meuse.\nJe pense que vous ne serez pas tr\u00e8s nombreux \u00e0 en avoir besoin. Car apr\u00e8s tout, quoi de plus simple qu\u2019une pur\u00e9e de pommes de terre !\nMais apr\u00e8s, je me suis dit : il y a s\u00fbrement des petits jeunes (ou moins jeunes) qui se lancent courageusement dans la cuisine. Qui n\u2019ont jamais fait de pur\u00e9e. Et apr\u00e8s tout, \u00e0 part des patates, ou est sens\u00e9 mettre quoi dans une pur\u00e9e ?\nJe pense qu\u2019il doit y avoir autant de fa\u00e7ons de faire de la pur\u00e9e, que de familles en France ! Moi perso, je l\u2019aime bien avec un peu d\u2019ail et de muscade. Pas trop lisse. Et tr\u00e8s cr\u00e9meuse. Mais chacun son kiff. Alors, explorez un peu pourtrouver une version qui vous plait !\nDonc prenez cette recette plus comme de vagues indications \u00e0 tester et adapter.\nL\u00e0, j\u2019ai mesur\u00e9 et pes\u00e9 pour \u00eatre en mesure de vous \u00e9crire une recette. Mais dans la vraie vie, je fais tout \u00e7a au pif. Je go\u00fbte, et j\u2019ajuste. Je go\u00fbte de nouveau, et j\u2019ajuste de nouveau.\nEt si vous cherchez le plat v\u00e9g\u00e9 pour accompagner votre Pur\u00e9e classique super cr\u00e9meuse..\nJe vous conseille le bourguignon v\u00e9g\u00e9\n!\nPur\u00e9e classique super cr\u00e9meuse\n4.42\n/5 avec\n55\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde pommes de terre \u00e0 pur\u00e9e\npas \u00e0 chair tendre\n30\ng\nde beurre\n30\ncl\nde cr\u00e8me liquide\n1\nail hach\u00e9e\n2\npinc\u00e9es de noix de muscade\nsel\npoivre\nInstructions\nFaire cuire les pommes de terre enti\u00e8res et non \u00e9pluch\u00e9es \u00e0 la vapeur pendant 20 \u00e0 30min (en fonction de leur taille).\nV\u00e9rifier la cuisson en enfon\u00e7ant un couteau dans la plus grosse pomme de terre.\nQuand la cuisson est termin\u00e9e, \u00e9plucher les pommes de terre.\nEcraser les et ajouter tous les autres ingr\u00e9dients. M\u00e9langer. Go\u00fbter et ajuster l\u2019assaisonnement.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nHiver\n,\nPomme de terre\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire de la pur\u00e9e\n,\n\u00e9cras\u00e9 de pommes de terre\n,\npur\u00e9e cr\u00e9meuse\n,\npur\u00e9e de patate\n,\npur\u00e9e facile\n,\npur\u00e9e maison\n,\npur\u00e9e maison facile\n,\nrecette pur\u00e9e\nCr\u00eapes au Chocolat et Poires Belle H\u00e9l\u00e8ne\nCookies Chocolat Blanc et Pralines Roses\n2 thoughts on \u201cPur\u00e9e classique super cr\u00e9meuse\u201d\nLadyMilonguera\ndit\u00a0:\n3 f\u00e9vrier 2022 \u00e0 14 h 40 min\nTu me fais envie avec cette belle pur\u00e9e maison.\nchargement\u2026\nR\u00e9pondre\nepicurien\ndit\u00a0:\n3 f\u00e9vrier 2022 \u00e0 14 h 55 min\nC\u2019est tr\u00e8s important de ne pas cuire les pommes de terre \u00e0 l\u2019eau pour faire une pur\u00e9e. A d\u00e9faut d\u2019une cuisson vapeur, je les cuis au four en chemise pour avoir une pulpe bien s\u00e8che. Essayez la version de la pur\u00e9e classique Robuchon  o\u00f9 il y  a juste un peu plus de beurre que dans cette version \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\n4.42 from 55 votes (\n54 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "title": "Pain Perdu (Facile)",
+    "description": "Recette antigachi par excellence, le pain perdu c'est la solution la plus gourmande pour d\u00e9guster les restes de pain rassis. Avec seulement quelques ingr\u00e9dients, pr\u00e9parez un petit d\u00e9jeuner ou un brunch qui fera plaisir \u00e0 toute la famille.",
+    "servings": 8,
+    "prepTime": "PT10M",
+    "cookTime": "PT4M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pain perdu",
+      "antigaspi",
+      "brunch",
+      "petit d\u00e9jeuner"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/pain-perdu-2-of-4.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Du pain rassis qui tra\u00eene dans la cuisine\u2026 Du lait et des \u0153ufs au frigo\u2026 Faire du pain perdu, c'est LA bonne id\u00e9e du dimanche matin.",
+      "On peut le faire avec n'importe quel type de pain, un pain de campagne, un pain aux graines, du pain de mie, de la brioche, baguette\u2026",
+      "Pour bien r\u00e9ussir le pain perdu, il faut surtout prendre son temps. C'est important de bien les laisser tremper, absorber touuuute la pr\u00e9paration.",
+      "Un peu de cannelle pour les addicts."
+    ],
+    "slug": "pain-perdu-facile",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/07/pain-perdu-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/07/11/pain-perdu-facile/",
+    "image": "images/pain-perdu-facile.webp",
+    "createdAt": "2026-02-09T20:27:09.264438",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 59.0,
+    "totalCookingTime": 14.0,
+    "nutritionPerServing": {
+      "calories": 40.2,
+      "protein": 1.9,
+      "fat": 1.5,
+      "carbs": 4.5,
+      "fiber": 0.1,
+      "confidence": "low",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "pain",
+      "name": "tranches de pain",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bread slices"
+    },
+    {
+      "id": "lait_amande",
+      "name": "lait d'amande",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "cassonade",
+      "name": "cassonade",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "sirop_erable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "battre_preparation",
+      "action": "Battre le lait d'amande, les oeufs, le sucre et le sucre vanill\u00e9.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lait_amande",
+        "oeufs",
+        "sucre",
+        "sucre_vanille"
+      ],
+      "produces": "preparation_battue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "tremper_pain",
+      "action": "Dans un grand plat (ou plusieurs), d\u00e9poser les tranches de pain sans qu'elles se superposent puis r\u00e9partir la pr\u00e9paration par dessus.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain",
+        "preparation_battue"
+      ],
+      "produces": "pain_trempe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_pain",
+      "action": "Laisser reposer environ 30min \u00e0 1h, le pain doit avoir absorb\u00e9 toute la pr\u00e9paration.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pain_trempe"
+      ],
+      "produces": "pain_imbibe",
+      "requires": [],
+      "visualCue": "le pain doit avoir absorb\u00e9 toute la pr\u00e9paration"
+    },
+    {
+      "id": "saupoudrer_cassonade",
+      "action": "Saupoudrer de cassonade les tranches de pain.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain_imbibe",
+        "cassonade"
+      ],
+      "produces": "pain_cassonade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_premier_cote",
+      "action": "Dans une po\u00eale chaude \u00e0 moyen-fort avec un peu de beurre, d\u00e9poser les tranches de pain c\u00f4t\u00e9 saupoudr\u00e9 de cassonade. Saupoudrer \u00e0 nouveau de cassonade.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain_cassonade",
+        "beurre",
+        "cassonade"
+      ],
+      "produces": "pain_cuit_premier_cote",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "retourner_pain",
+      "action": "Cuire pendant 2min, puis retourner la tranche.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain_cuit_premier_cote"
+      ],
+      "produces": "pain_retourne",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_second_cote",
+      "action": "Laisser cuire encore 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain_retourne"
+      ],
+      "produces": "pain_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "C'est pr\u00eat, le pain perdu est \u00e0 d\u00e9guster encore ti\u00e8de avec du sirop d'\u00e9rable.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pain_cuit",
+        "sirop_erable"
+      ],
+      "produces": "pain_perdu_fini",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pain_perdu_fini",
+  "originalText": "Pain perdu facile (recette classique) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 juillet 2021\nPain Perdu (Facile)\nAcc\u00e9der directement \u00e0 la recette\nDu pain rassis qui tra\u00eene dans la cuisine\u2026 Du lait et des \u0153ufs au frigo\u2026 Faire du pain perdu, c\u2019est LA bonne id\u00e9e du dimanche matin. D\u00e9j\u00e0 parce que c\u2019est #antigaspi \u00e0 fond et surtout parce que c\u2019est trop trop bon ! En plus, on peut le faire avec n\u2019importe quel type de pain, un pain de campagne, un pain aux graines, du pain de mie, de la brioche, baguette\u2026 Alors ok la brioche perdue c\u2019est limite ind\u00e9cent tellement c\u2019est bon mais avec les autres types de pain, on explore \u00e0 chaque fois des textures et des go\u00fbts diff\u00e9rents avec les m\u00eames ingr\u00e9dients. Plut\u00f4t cool, non?\nPour bien r\u00e9ussir le pain perdu, il faut surtout prendre son temps. C\u2019est important de bien les laisser tremper, absorber touuuute la pr\u00e9paration. Votre patience sera toujours bien r\u00e9compens\u00e9e, promis ! Ensuite, une po\u00eale \u00e0 la bonne temp\u00e9rature, du beurre et un peu de cassonade saupoudr\u00e9e (voir un peu de cannelle pour les addicts) et voil\u00e0 le travail. Ah oui et pour finir en beaut\u00e9, (un peu) beaucoup de sirop d\u2019\u00e9rable et l\u00e0, c\u2019est le paradis !\nRetrouvez \u00e9galement les recettes sp\u00e9ciales brunch :\ntartines avocat oeuf mollet\n,\npancakes (faciles)\nou encore le\nbanana bread\n!\nPain perdu\nDaniela\nRecette antigachi par excellence, le pain perdu c\u2019est la solution la plus gourmande pour d\u00e9guster les restes de pain rassis. Avec seulement quelques ingr\u00e9dients, pr\u00e9parez un petit d\u00e9jeuner ou un brunch qui fera plaisir \u00e0 toute la famille\n4.57\n/5 avec\n64\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n2\nminutes\nmin\nType de plat\nBreakfast, Brunch, Petit d\u00e9jeuner\nPortions\n8\ntranches\nIngr\u00e9dients\n1x\n2x\n3x\nPain perdu\n8\ntranches de pain\n100\nml\nde lait d\u2019amande\n2\noeufs\n2\nc\u00e0s de sucre\n1\nsachet de sucre vanill\u00e9\nTopping\nCassonade\nSirop d\u2019\u00e9rable\nInstructions\nBattre le lait, les oeufs et les sucres.\nDans un grand plat (ou plusieurs), d\u00e9poser les tranches de pain toi sans qu\u2019elles se superposent puis r\u00e9partir la pr\u00e9paration par dessus.\nLaisser reposer environ 30min \u00e0 1h, le pain doit avoir absorb\u00e9 toute la pr\u00e9paration.\nSaupoudrer de cassonade les tranches de pain puis les d\u00e9poser sur le c\u00f4t\u00e9 avec de la cassonade dans une po\u00eale chaude (feu moyen \u00e0 fort) avec un peu de beurre, saupoudrer de nouveau de cassonade et retourner la tranche apr\u00e8s 2 minutes de cuisson. Laisser cuire encore 2 minutes.\nC\u2019est pr\u00eat, le pain perdu est \u00e0 d\u00e9guster encore ti\u00e8de avec pleeeiiiin de sirop d\u2019\u00e9rable !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucr\u00e9\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNon class\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\npain perdu\nF\u00eata Grill\u00e9e au Four aux Olives et Tomates Cerises\nCupcakes Vanille Vegan\n4.57 from 64 votes (\n64 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

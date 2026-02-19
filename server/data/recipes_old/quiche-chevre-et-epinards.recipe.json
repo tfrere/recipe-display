@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "title": "Quiche Ch\u00e8vre et \u00c9pinards",
+    "description": "La Quiche Ch\u00e8vre et \u00c9pinards : un grand classique ! Je vous donne ici ma recette. Elle est super simple. Et j'aime la pr\u00e9parer pour des invit\u00e9s. Ou juste pour les repas de la semaine.",
+    "servings": 1,
+    "prepTime": "PT60M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "\u00e9pinard",
+      "chevre",
+      "quiche",
+      "tarte sal\u00e9e",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Quiche-epinards-chevre-5-of-6.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "\u00c7a se conserve bien une quiche. Facilement 3 jours au frigo. Et on peut m\u00eame les congeler si besoin.",
+      "Je ne fais pas pr\u00e9cuire mes p\u00e2tes perso.",
+      "J'ai ajout\u00e9 un peu de thym cette fois-ci. Histoire de la pimper un peu !"
+    ],
+    "slug": "quiche-chevre-et-epinards",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Quiche-epinards-chevre-5-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/02/02/quiche-chevre-et-epinards/",
+    "image": "images/quiche-chevre-et-epinards.jpg",
+    "createdAt": "2026-02-09T21:49:47.908059",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 100.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 3460.3,
+      "protein": 104.7,
+      "fat": 250.7,
+      "carbs": 200.6,
+      "fiber": 20.1,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "belle pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeuf_pate",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": "froide",
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons jaune",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onions"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "epinards",
+      "name": "\u00e9pinards",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "surgel\u00e9s en branches",
+      "notes": null,
+      "optional": false,
+      "name_en": "spinach"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "oeufs_appareil",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "creme",
+      "name": "cr\u00e8me liquide",
+      "quantity": 20.0,
+      "unit": "cl",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "chevre",
+      "name": "b\u00fbche ch\u00e8vre",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Goat cheese log"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 tarte"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "M\u00e9langer la farine et le sel dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte au thym",
+      "uses": [
+        "farine",
+        "sel"
+      ],
+      "produces": "farine_sel_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre",
+      "action": "Ajouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte au thym",
+      "uses": [
+        "farine_sel_melange",
+        "beurre"
+      ],
+      "produces": "crumble_pate",
+      "requires": [],
+      "visualCue": "comme un crumble"
+    },
+    {
+      "id": "ajouter_oeuf_eau",
+      "action": "Ajouter ensuite l'\u0153uf et l'eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu'\u00e0 ce qu'une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte au thym",
+      "uses": [
+        "crumble_pate",
+        "oeuf_pate",
+        "eau"
+      ],
+      "produces": "pate_a_tarte",
+      "requires": [],
+      "visualCue": "boule homog\u00e8ne non collante"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "R\u00e9server au frais, au minimum 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 tarte au thym",
+      "uses": [
+        "pate_a_tarte"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_oignons",
+      "action": "\u00c9mincer les oignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons"
+      ],
+      "produces": "oignons_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_oignons",
+      "action": "Faire revenir les oignons dans une po\u00eale avec 2 c\u00e0s d'huile d'olive \u00e0 feu moyen pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_eminces",
+        "huile_dolive"
+      ],
+      "produces": "oignons_dores",
+      "requires": [],
+      "visualCue": "commencent \u00e0 dorer"
+    },
+    {
+      "id": "ajouter_epinards_thym",
+      "action": "Ajouter les \u00e9pinards surgel\u00e9s et le thym.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_dores",
+        "epinards",
+        "thym"
+      ],
+      "produces": "melange_epinards_cru",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decongeler_epinards",
+      "action": "Couvrir et laisser d\u00e9congeler dans la po\u00eale pendant 20min. Penser \u00e0 remuer de temps en temps. Retirer du feu quand les \u00e9pinards sont compl\u00e8tement d\u00e9congel\u00e9s.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "melange_epinards_cru"
+      ],
+      "produces": "epinards_decongeles",
+      "requires": [],
+      "visualCue": "\u00e9pinards compl\u00e8tement d\u00e9congel\u00e9s"
+    },
+    {
+      "id": "melanger_appareil_base",
+      "action": "M\u00e9langer les oeufs, la cr\u00e8me, le sel et le poivre dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "oeufs_appareil",
+        "creme",
+        "sel",
+        "poivre"
+      ],
+      "produces": "appareil_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_chevre_morceaux",
+      "action": "S\u00e9parer la b\u00fbche en 2. Couper la premi\u00e8re moiti\u00e9 en petits morceaux et l'ajouter \u00e0 l'appareil.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "chevre"
+      ],
+      "produces": "chevre_morceaux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_chevre_appareil",
+      "action": "Ajouter les morceaux de ch\u00e8vre \u00e0 l'appareil.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "appareil_base",
+        "chevre_morceaux"
+      ],
+      "produces": "appareil_avec_chevre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_chevre_rondelles",
+      "action": "Couper l'autre moiti\u00e9 en rondelles et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "chevre"
+      ],
+      "produces": "chevre_rondelles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_epinards_appareil",
+      "action": "Ajouter le m\u00e9lange d'\u00e9pinards dans l'appareil et bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil",
+      "uses": [
+        "appareil_avec_chevre",
+        "epinards_decongeles"
+      ],
+      "produces": "appareil_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la p\u00e2te \u00e0 tarte sur un plat de travail farin\u00e9, puis la transf\u00e9rer dans un moule \u00e0 tarte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_appareil",
+      "action": "Verser l'appareil sur la p\u00e2te et d\u00e9poser les rondelles de ch\u00e8vre par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_etalee",
+        "appareil_complet",
+        "chevre_rondelles"
+      ],
+      "produces": "quiche_crue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_quiche",
+      "action": "Enfourner pour 40min.",
+      "duration": "PT40M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "quiche_crue"
+      ],
+      "produces": "quiche_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "quiche_cuite",
+  "originalText": "Quiche Ch\u00e8vre et \u00c9pinards - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 f\u00e9vrier 2023\nQuiche Ch\u00e8vre et \u00c9pinards\nLa Quiche Ch\u00e8vre et \u00c9pinards : un grand classique ! Je vous donne ici ma recette. Elle est super simple. Et j\u2019aime la pr\u00e9parer pour des invit\u00e9s. Ou juste pour les repas de la semaine. \u00c7a se conserve bien une quiche. Facilement 3 jours au frigo. Et on peut m\u00eame les congeler si besoin.\nC\u2019est vraiment un de mes repas faciles \u00e0 pr\u00e9parer.\nVous trouverez pl\u00e9thores de recettes de quiches sur le blog. Et pour ne citer que celles qui sont actuellement de saison. Vous avez la\nquiche poireau Saint-Nectaire\n. La\nquiche healhty \u00e9pinards et carottes\n. Celle \u00e0 la\ncourge et aux champignons\n. Ou encore\ncelle aux oignons et ch\u00e8vre frais\n!\nBref, cette quiche est vraiment simple. Je fais mes p\u00e2tes maison. C\u2019est bien plus \u00e9conomique et si on a un peu de temps, c\u2019est franchement pas compliqu\u00e9.\nJ\u2019ai ajout\u00e9 un peu de thym cette fois-ci. Histoire de la pimper un peu !\nEt sinon, on a des oignons, des \u00e9pinards. Puis un appareil \u00e0 quiche classique. Avec de la cr\u00e8me et des \u0153ufs. Et finalement une bonne dose de ch\u00e8vre.\nJe ne fais pas pr\u00e9cuire mes p\u00e2tes perso. Et vous ?\nVous me direz ce que vous avez pens\u00e9 de cette Quiche Ch\u00e8vre et \u00c9pinards !\nQuiche Ch\u00e8vre et \u00c9pinards\n4.55\n/5 avec\n95\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n1\nquiche\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te \u00e0 tarte au thym\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n1\nc-\u00e0-s d\u2019eau froide\nGarniture\n2\noignons jaune\n400\ng\nd\u2019\u00e9pinards surgel\u00e9s en branches\n2\nbranches de thym\nAppareil\n3\noeufs\n20\ncl\nde cr\u00e8me liquide\nune briquette\nsel\npoivre\n1\nb\u00fbche de ch\u00e8vre\nenv 180g\nInstructions\nPr\u00e9parer la p\u00e2te\nM\u00e9langer la farine et le sel dans un saladier.\nAjouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019\u0153uf et l\u2019eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).\nR\u00e9server au frais, au minimum 30min.\nPr\u00e9parer les \u00e9pinards\n\u00c9mincer les oignons et les faire revenir dans une po\u00eale avec 2 c\u00e0s d\u2019huile d\u2019olive \u00e0 feu moyen pendant une dizaine de minutes.\nLorsqu\u2019ils commencent \u00e0 dorer, ajouter les \u00e9pinards surgel\u00e9s et le thym.\nCouvrir et laisser d\u00e9congeler dans la po\u00eale pendant env 20min. Penser \u00e0 remuer de temps en temps. Retirer du feu quand les \u00e9pinards sont compl\u00e8tement d\u00e9congel\u00e9s.\nPour l\u2019appareil\nM\u00e9langer les oeufs, la cr\u00e8me, le sel et le poivre dans un saladier.\nS\u00e9parer la b\u00fbche en 2. Couper la premi\u00e8re moiti\u00e9 en petits morceaux et l\u2019ajouter \u00e0 l\u2019appareil.\nCouper la moiti\u00e9 en rondelles et r\u00e9server.\nAjouter le m\u00e9lange d\u2019\u00e9pinards dans l\u2019appareil et bien m\u00e9langer\nPr\u00e9parer la quiche\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nAbaisser la p\u00e2te \u00e0 tarte sur un plat de travail farin\u00e9, puis la transf\u00e9rer dans un moule \u00e0 tarte.\nVerser l\u2019appareil sur la p\u00e2te et d\u00e9poser les rondelles de ch\u00e8vre par-dessus.\nEnfourner pour 35 \u00e0 40min.\nNotes\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nEpinards\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\n\u00e9pinard chevre\n,\nquiche\n,\ntarte sal\u00e9e\nSalade \u00e9pinards agrumes et fenouil\nPatates douces r\u00f4ties \u00e9pinards et reblochon\n2 thoughts on \u201cQuiche Ch\u00e8vre et \u00c9pinards\u201d\nDiagnofit\ndit\u00a0:\n9 f\u00e9vrier 2023 \u00e0 18 h 20 min\nUn grand classic ! Moi j\u2019aime bien la faire avec des poireaux aussi !\nchargement\u2026\nR\u00e9pondre\nLaure\ndit\u00a0:\n17 octobre 2024 \u00e0 15 h 43 min\nLa recette a l\u2019air super simple et d\u00e9licieuse.\nPeut-on la faire avec des \u00e9pinards frais?\nchargement\u2026\nR\u00e9pondre\n4.55 from 95 votes (\n95 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

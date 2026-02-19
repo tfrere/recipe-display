@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "title": "Banoffee Pie",
+    "description": "Le Banoffee est un dessert délicieux, riche et surtout très facile à préparer. Constitué d'une croûte de biscuits thé, de dulce de leche, de tranches de bananes, le tout garni de crème fouettée maison !",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "banane",
+      "banoffee",
+      "banoffee pie",
+      "chantilly",
+      "dulce de leche",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/banoffee-2-of-3-scaled.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Attention bombe calorique en vue !",
+      "Surtout à ne pas consommer J-1 avant une prise de sang pour contrôler votre glycémie ou votre cholestérol…",
+      "Vous pouvez préparer le dulce de leche à l'avance."
+    ],
+    "slug": "banoffee-pie",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/banoffee-2-of-3-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/26/banoffee-pie/",
+    "image": "images/banoffee-pie.jpg",
+    "createdAt": "2026-02-09T19:50:23.022655",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 195.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 463.1,
+      "protein": 2.4,
+      "fat": 41.5,
+      "carbs": 23.8,
+      "fiber": 1.6,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tea_biscuits",
+      "name": "biscuits thé",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tea biscuits"
+    },
+    {
+      "id": "brown_sugar",
+      "name": "cassonade",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "butter",
+      "name": "beurre doux",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre moulu",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground ginger"
+    },
+    {
+      "id": "dulce_de_leche",
+      "name": "dulce de leche",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dulce de leche"
+    },
+    {
+      "id": "bananas",
+      "name": "bananes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "tranchées",
+      "notes": null,
+      "optional": false,
+      "name_en": "bananas"
+    },
+    {
+      "id": "cream",
+      "name": "crème liquide entière",
+      "quantity": 460.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "minimum 30% MG",
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "powdered_sugar",
+      "name": "sucre glace",
+      "quantity": 25.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "dark_chocolate",
+      "name": "Chocolat noir",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    }
+  ],
+  "tools": [
+    "Moule à charnière (23 cm)",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "crush_biscuits_melt_butter",
+      "action": "Mixer les biscuits thé jusqu'à obtenir une poudre et faire fondre le beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tea_biscuits",
+        "butter"
+      ],
+      "produces": "biscuit_powder_melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_crust",
+      "action": "Dans un saladier, mélanger la poudre de biscuits, la cassonade, le beurre fondu, la cannelle et le gingembre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "biscuit_powder_melted_butter",
+        "brown_sugar",
+        "cinnamon",
+        "ginger"
+      ],
+      "produces": "biscuit_crust_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_crust",
+      "action": "Dans un moule à charnière (23 cm) tapissé de papier cuisson (le fond avec 1 cm sur les côtés), presser sur le fond et les côtés le mélange de biscuits et de beurre. Surtout bien presser !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "biscuit_crust_mix"
+      ],
+      "produces": "pressed_crust",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze_crust",
+      "action": "Placer le moule au congélateur pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pressed_crust"
+      ],
+      "produces": "frozen_crust",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_dulce_de_leche_bananas",
+      "action": "Après 15min, étaler soigneusement le dulce de leche sur la croûte et garnir délicatement de tranches de bananes. Réserver au réfrigérateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "frozen_crust",
+        "dulce_de_leche",
+        "bananas"
+      ],
+      "produces": "crust_with_dulce_bananas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_whipped_cream",
+      "action": "Fouetter la crème liquide avec le sucre glace jusqu'à obtenir une belle chantilly avec des pics fermes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cream",
+        "powdered_sugar"
+      ],
+      "produces": "whipped_cream",
+      "requires": [],
+      "visualCue": "pics fermes"
+    },
+    {
+      "id": "add_whipped_cream",
+      "action": "Sortir le moule du réfrigérateur et recouvrir doucement les bananes de crème fouettée.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "crust_with_dulce_bananas",
+        "whipped_cream"
+      ],
+      "produces": "pie_with_cream",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_pie",
+      "action": "Placer ensuite au frais pendant minimum 3h.",
+      "duration": "PT3H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pie_with_cream"
+      ],
+      "produces": "chilled_pie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_chocolate",
+      "action": "Au moment de servir, saupoudrer de chocolat noir râpé !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chilled_pie",
+        "dark_chocolate"
+      ],
+      "produces": "banoffee_pie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "banoffee_pie",
+  "originalText": "Banoffee Pie - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 avril 2020\nBanoffee Pie\nAccéder directement à la recette\nAttention bombe calorique en vue ! Je suis désolée pour tous ceux qui préparent leur summer body (j’en fait partie mais avec peu de succès pour le moment… merci confinement + apéros x 1000). Ce dessert est une véritable tuerie, au sens propre pour certaines personnes (ceux qui savent savent), et au figuré pour tous les autres… Surtout à ne pas consommer J-1 avant une prise de sang pour contrôler votre glycémie ou votre cholestérol…\nBon allez, j’arrête, en vrai un petit shot de gourmandises de temps en temps, c’est pas si grave… Au contraire, c’est bon pour le moral et ça motive à se bouger le popotin, pour ceux qui culpabilisent après (genre moi !). Avec ses 4 couches, donc 4 textures, c’est le genre de dessert qui ne laisse pas indifférent, c’est ça qui est bien, soit on adore, soit ça ne passe pas du tout ! Chacun sa team les p’tits pickles !\nCette recette, c’est aussi l’occasion de vous donner la recette ultra simple du\ndulce de leche\n! Franchement je n’aurais jamais imaginé que ça soit si simple à faire. Vous pouvez en préparer plusieurs à la fois et du coup en avoir toujours à portée de main pour préparer un banoffee pie (hehe), fourrer des muffins ou tout simplement en étaler sur des\ncrêpes\n, des\npancakes\nou des\ngaufres\n!\nBanoffee Pie\nDaniela\nLe Banoffee est un dessert délicieux, riche et surtout très facile à préparer. Constitué d’une croûte de biscuits thé, de dulce de leche, de tranches de bananes, le tout garni de crème fouettée maison ! Le mot que vous cherchez est : “MIAM” !\n4.52\n/5 avec\n66\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n25\nminutes\nmin\nTemps de repos\n3\nheures\nh\n15\nminutes\nmin\nPortions\n8\npersonnes\nIngrédients\n1x\n2x\n3x\n140\ng\nde biscuits thé\nenviron 20 biscuits\n50\ng\nde cassonade\n200\ng\nde beurre doux\n¼\nc-à-c de cannelle\n¼\nc-à-c de gingembre moulu\n400\ng\nde dulce de leche\nl’équivalent d’une conserve de lait concentré\n4\nbananes\n460\nml\nde crème liquide entière\nminimum 30%MG\n25\ng\nde sucre glace\nChocolat noir pour la déco\nInstructions\nMixer les biscuits thé jusqu’à obtenir une poudre et faire fondre le beurre.\nDans un saladier mélanger les biscuits en poudre, le sucre, le beurre fondu, la cannelle et le gingembre.\nDans un moule à charnière (23 cm) tapissé de papier cuisson (le fond avec 1 cm sur les côtés), presser sur le fond et les côtés le mélange de biscuits et de beurre. Surtout bien presser !\nPlacer le moule à charnière au congélateur pendant 15 minutes.\nAprès 15 min, étaler soigneusement le\ndulce de leche\nsur la croûte et garnir délicatement de tranches de bananes. Réserver au réfrigérateur.\nFouetter la crème liquide avec le sucre glace jusqu’à obtenir une belle chantilly avec des pics fermes.\nSortir le moule du réfrigérateur et recouvrir doucement les bananes de crème fouettée.\nPlacer ensuite au frais pendant minimum 3h.\nAu moment de servir, saupoudrer de chocolat noir râpé !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nBanane\n,\nCrèmes et Entremets\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nbanane\n,\nbanoffee\n,\nbanoffee pie\n,\nchantilly\n,\ndulce de leche\nGratin de Pâtes Végétarien aux 3 Fromages, Artichauts et Épinards\nNouilles Sobas aux Légumes et Sésame (Salade Vegane)\n4 thoughts on “Banoffee Pie”\nLadyMilonguera\ndit :\n26 avril 2020 à 18 h 08 min\nIl est beau comme tout dis donc, et il me fait terriblement envie !!!\nchargement…\nRépondre\nDaniela\ndit :\n26 avril 2020 à 18 h 17 min\nMerciii ☺️ C’est vrai qu’il fait envie 😜\nchargement…\nRépondre\nLespepitesdophelie\ndit :\n27 mai 2020 à 22 h 55 min\nIl a l’air délicieux, faut trop que je teste ! 😋 Merci pour la recette ! 😀👍\nchargement…\nRépondre\nFree The Pickle\ndit :\n28 mai 2020 à 0 h 36 min\nBonjour ! Vous pouvez utiliser du lait de vache sans problème si vous en consommez !\nchargement…\nRépondre\n4.52 from 66 votes (\n66 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "title": "F\u00e8ves enti\u00e8res fa\u00e7on chermoula",
+    "description": "Les f\u00e8ves enti\u00e8res fa\u00e7on chermoula, c'est une recette simple, v\u00e9g\u00e9tale, et pleine de bon gout. On y utilise les f\u00e8ves\u2026 dans leur int\u00e9gralit\u00e9. Cosse comprise. Assaisonn\u00e9es \u00e0 la chermoula, cette sauce d'inspiration maghr\u00e9bine, les f\u00e8ves deviennent \u00e0 la fois fondantes et parfum\u00e9es.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "f\u00e8ves",
+      "v\u00e9g\u00e9tarien",
+      "anti-gaspi",
+      "chermoula",
+      "plat en sauce",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/Feve-chermoula-2-of-4.jpg",
+    "nationality": "Maghr\u00e9bine",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les cosses de f\u00e8ves fra\u00eeches sont comestibles. Retirer les fils en cassant l'extr\u00e9mit\u00e9 et en tirant d\u00e9licatement.",
+      "Se d\u00e9guste ti\u00e8des ou \u00e0 temp\u00e9rature ambiante, avec du riz, du boulgour ou en salade.",
+      "Se conserve 2 \u00e0 3 jours au r\u00e9frig\u00e9rateur et se r\u00e9chauffe bien.",
+      "Le go\u00fbt se d\u00e9veloppe apr\u00e8s un repos."
+    ],
+    "slug": "feves-entieres-facon-chermoula",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/Feve-chermoula-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/06/04/feves-entieres-facon-chermoula/",
+    "image": "images/feves-entieres-facon-chermoula.webp",
+    "createdAt": "2026-02-09T22:53:41.596004",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 5.0,
+    "nutritionPerServing": {
+      "calories": 120.6,
+      "protein": 7.7,
+      "fat": 0.8,
+      "carbs": 22.0,
+      "fiber": 5.4,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "faves_fraiches",
+      "name": "f\u00e8ves fra\u00eeches avec leurs cosses",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fava beans in the pod"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "graines_cumin",
+      "name": "graines de cumin",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "coriandre",
+      "name": "bouquet coriandre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cilantro"
+    },
+    {
+      "id": "persil_plat",
+      "name": "bouquet persil plat",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "cumin_poudre",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "tomates_concassees",
+      "name": "tomates concass\u00e9es en conserve",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned diced tomatoes"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "citron_jaune",
+      "name": "citron jaune",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon"
+    }
+  ],
+  "tools": [
+    "Grande po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "preparer_faves",
+      "action": "Choisissez des f\u00e8ves pas trop vieilles. Retirez les fils des cosses, puis \u00e9mincez-les finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "faves_fraiches"
+      ],
+      "produces": "faves_emincees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_echalotes_ail",
+      "action": "\u00c9mincez les \u00e9chalotes et les gousses d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "echalotes",
+        "ail"
+      ],
+      "produces": "echalotes_ail_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_huile",
+      "action": "Faites chauffer g\u00e9n\u00e9reusement de l'huile d'olive (environ 4 \u00e0 5 c\u00e0s) dans une grande po\u00eale \u00e0 feu moyen.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_olive"
+      ],
+      "produces": "huile_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_graines_echalotes_ail",
+      "action": "Ajoutez les graines de cumin, les \u00e9chalotes et l'ail. Faites revenir pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_chaude",
+        "graines_cumin",
+        "echalotes_ail_eminces"
+      ],
+      "produces": "base_aromatique",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_faves",
+      "action": "Ajoutez les f\u00e8ves \u00e9minc\u00e9es et faites-les revenir quelques minutes suppl\u00e9mentaires.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "base_aromatique",
+        "faves_emincees"
+      ],
+      "produces": "faves_revenues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_tomates_eau",
+      "action": "Ajoutez le cumin en poudre, les tomates concass\u00e9es et l'eau. Salez et poivrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "faves_revenues",
+        "cumin_poudre",
+        "tomates_concassees",
+        "eau",
+        "sel",
+        "poivre"
+      ],
+      "produces": "faves_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mijoter",
+      "action": "M\u00e9langez bien, couvrez et laissez mijoter \u00e0 feu doux pendant 30min, jusqu'\u00e0 ce que les f\u00e8ves soient tendres.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "faves_sauce"
+      ],
+      "produces": "faves_cuites",
+      "requires": [],
+      "visualCue": "f\u00e8ves tendres"
+    },
+    {
+      "id": "ajouter_finitions",
+      "action": "Avant de servir, parsemez g\u00e9n\u00e9reusement d'huile d'olive, de jus de citron, et de coriandre et de persil hach\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "faves_cuites",
+        "huile_olive",
+        "citron_jaune",
+        "coriandre",
+        "persil_plat"
+      ],
+      "produces": "faves_chermoula",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "D\u00e9gustez avec du riz, du petit \u00e9peautre ou des pitas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "faves_chermoula"
+      ],
+      "produces": "faves_entieres_chermoula_servies",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "faves_entieres_chermoula_servies",
+  "originalText": "F\u00e8ves enti\u00e8res fa\u00e7on chermoula : une recette v\u00e9g\u00e9tale et anti-gaspi\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 juin 2025\nF\u00e8ves enti\u00e8res fa\u00e7on chermoula : une recette anti-gaspi, pleine de fra\u00eecheur\nLes f\u00e8ves enti\u00e8res fa\u00e7on chermoula, c\u2019est une recette simple, v\u00e9g\u00e9tale, et pleine de bon gout. On y utilise les f\u00e8ves\u2026 dans leur int\u00e9gralit\u00e9. Cosse comprise. Il suffit d\u2019un peu de pr\u00e9paration, d\u2019un bon assaisonnement, et on transforme ce l\u00e9gume parfois oubli\u00e9 en un plat savoureux et z\u00e9ro d\u00e9chet.\nAssaisonn\u00e9es \u00e0 la chermoula, cette sauce d\u2019inspiration maghr\u00e9bine \u00e0 base de citron, d\u2019ail, d\u2019\u00e9pices et d\u2019herbes fra\u00eeches, les f\u00e8ves deviennent \u00e0 la fois fondantes et parfum\u00e9es, parfaites \u00e0 servir en salade ti\u00e8de, en accompagnement ou en plat principal l\u00e9ger.\nTable des mati\u00e8res\n1\nOui, les cosses de f\u00e8ves se mangent !\n2\nUne sauce inspir\u00e9e de la chermoula\n3\nUne cuisine simple et engag\u00e9e\n4\nComment servir les f\u00e8ves \u00e0 la chermoula ?\n5\nUn plat qui a du sens\n6\nF\u00e8ves enti\u00e8res fa\u00e7on chermoula\n7\nD\u2019autres id\u00e9es pour cuisiner les fanes\n8\nPour r\u00e9sumer, les f\u00e8ves enti\u00e8res fa\u00e7on chermoula\nOui, les cosses de f\u00e8ves se mangent !\nOn ne le dit pas assez, mais les cosses des f\u00e8ves fra\u00eeches sont tout \u00e0 fait comestibles. Et leur go\u00fbt, une fois bien pr\u00e9par\u00e9es, est d\u00e9licieux \u2014 l\u00e9g\u00e8rement herbac\u00e9, tendre, mais avec un peu plus de caract\u00e8re que les petits pois.\nLa seule pr\u00e9caution \u00e0 prendre, c\u2019est de retirer les fils, comme on le ferait pour des haricots plats. Il suffit de casser l\u2019extr\u00e9mit\u00e9 de la cosse et de tirer d\u00e9licatement pour enlever les fibres dures sur les bords. Ensuite, on peut les cuire enti\u00e8res, ou les couper en tron\u00e7ons si elles sont longues.\nC\u2019est un geste simple, mais qui \u00e9vite un g\u00e2chis \u00e9norme, surtout quand on sait que la partie verte repr\u00e9sente plus de la moiti\u00e9 du poids total des f\u00e8ves.\nUne sauce inspir\u00e9e de la chermoula\nPour assaisonner les f\u00e8ves, on s\u2019inspire ici de la chermoula, une sauce embl\u00e9matique de la cuisine maghr\u00e9bine, utilis\u00e9e aussi bien pour les poissons que pour les l\u00e9gumes.\nElle m\u00eale g\u00e9n\u00e9ralement ail, citron, coriandre, cumin, paprika, huile d\u2019olive, parfois un peu de piment doux ou de harissa. C\u2019est une sauce vive, parfum\u00e9e, chaleureuse \u2014 parfaite pour relever des l\u00e9gumes verts comme les f\u00e8ves.\nEn version express, on peut simplement hacher de la coriandre et du persil, presser un citron, r\u00e2per un peu d\u2019ail, ajouter les \u00e9pices, et fouetter le tout avec une bonne huile d\u2019olive. Un assaisonnement qui fonctionne aussi tr\u00e8s bien avec des pommes de terre, du chou-fleur r\u00f4ti ou du poisson grill\u00e9.\nUne cuisine simple et engag\u00e9e\nCuisiner les f\u00e8ves enti\u00e8res, c\u2019est aussi faire un pas de plus vers une cuisine plus consciente, plus respectueuse du produit.\n\u00c0 l\u2019image des\nrecettes qui utilisent les fanes\nde carottes, de radis ou de betteraves, cette pr\u00e9paration permet de valoriser l\u2019ensemble du l\u00e9gume, sans sacrifier le go\u00fbt ni le plaisir. On red\u00e9couvre le geste, on prend le temps d\u2019\u00e9plucher \u00e0 la main, et on transforme ce qui aurait pu finir au compost en une assiette g\u00e9n\u00e9reuse et color\u00e9e.\nComment servir les f\u00e8ves \u00e0 la chermoula ?\nElles se d\u00e9gustent :\nti\u00e8des ou \u00e0 temp\u00e9rature ambiante, avec un filet de jus de citron en plus\navec du riz ou du boulgour pour un plat v\u00e9g\u00e9tarien complet\nou en salade, m\u00e9lang\u00e9es \u00e0 d\u2019autres l\u00e9gumes cuits et un peu de yaourt citronn\u00e9\nElles se conservent 2 \u00e0 3 jours au r\u00e9frig\u00e9rateur, et se r\u00e9chauffent tr\u00e8s bien \u00e0 la po\u00eale ou \u00e0 la vapeur douce. Le go\u00fbt se d\u00e9veloppe m\u00eame apr\u00e8s un petit repos.\nUn plat qui a du sens\nIl y a quelque chose de profond\u00e9ment satisfaisant dans cette fa\u00e7on de cuisiner les f\u00e8ves. On red\u00e9couvre un l\u00e9gume souvent rel\u00e9gu\u00e9 au second plan. On apprend \u00e0 en utiliser chaque partie, et on l\u2019associe \u00e0 une sauce pleine de caract\u00e8re, sans compliquer les choses.\nF\u00e8ves enti\u00e8res fa\u00e7on chermoula\n4.48\n/5 avec\n107\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n450\ng\nde f\u00e8ves fra\u00eeches avec leurs cosses\n3\n\u00e9chalotes ou 1 oignon\n7\ngousses d\u2019ail\n1 \u00bd\nc\u00e0c de graines de cumin\n1\nbouquet de coriandre\n1\nbouquet de persil plat\n\u00bd\nc\u00e0c de cumin en poudre\n1\nconserve de tomates concass\u00e9es\n400 g\n300\nml\nd\u2019eau\nhuile d\u2019olive\nsel\npoivre\n\u00bd\ncitron jaune\nInstructions\nChoisissez des f\u00e8ves pas trop vieilles !\nRetirez les fils, puis \u00e9mincez-les finement.\n\u00c9mincez les \u00e9chalotes et les gousses d\u2019ail. Faites chauffer g\u00e9n\u00e9reusement de l\u2019huile d\u2019olive dans une grande po\u00eale (environ 4 \u00e0 5 c\u00e0s).\nAjoutez les graines de cumin, les \u00e9chalotes et l\u2019ail.\nFaites revenir \u00e0 feu moyen 5 \u00e0 6 min. Ajoutez ensuite les f\u00e8ves et faites-les revenir quelques minutes suppl\u00e9mentaires.\nAjoutez le cumin en poudre, les tomates concass\u00e9es et l\u2019eau.\nSalez, poivrez, m\u00e9langez bien, couvrez et laissez mijoter \u00e0 feu doux pendant environ 30 minutes, jusqu\u2019\u00e0 ce que les f\u00e8ves soient tendres.\nParsemez g\u00e9n\u00e9reusement d\u2019huile d\u2019olive, de jus de citron, et de coriandre et de persil hach\u00e9s avant de servir.\nD\u00e9gustez avec du riz, du petit \u00e9peautre ou des pitas.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nD\u2019autres id\u00e9es pour cuisiner les fanes\nComme pour les cosses de f\u00e8ves, il existe mille fa\u00e7ons d\u2019utiliser ce qu\u2019on jette souvent par r\u00e9flexe. Voici quelques recettes qui invitent \u00e0 regarder autrement les fanes de l\u00e9gumes \u2014 avec simplicit\u00e9, et toujours beaucoup de go\u00fbt :\nCake z\u00e9ro d\u00e9chet aux fanes de radis et \u00e0 la feta\n. Un cake moelleux, parfum\u00e9, parfait \u00e0 glisser dans une lunchbox ou \u00e0 servir en tranches \u00e0 l\u2019ap\u00e9ro.\nCake sans gluten aux fanes de carottes\n. Une version sans gluten, nourrissante et originale, qui met \u00e0 l\u2019honneur les fanes de carottes dans une p\u00e2te savoureuse \u00e0 base de farines compl\u00e8tes.\nPiperade vegan aux fanes de radis\n. Un plat mijot\u00e9, doux et relev\u00e9 \u00e0 la fois, o\u00f9 les fanes remplacent les herbes et se fondent parfaitement dans la sauce.\nTortilla anti-gaspi au poireau, fanes de radis et feta\n. Une tortilla rustique et g\u00e9n\u00e9reuse, \u00e0 partager en toute saison, qui accueille avec souplesse ce que le frigo a \u00e0 offrir.\nPour r\u00e9sumer, les f\u00e8ves enti\u00e8res fa\u00e7on chermoula\nUne poign\u00e9e de f\u00e8ves, un peu de patience, une sauce bien relev\u00e9e. Il n\u2019en faut pas beaucoup plus pour faire une assiette simple et g\u00e9n\u00e9reuse.\nIci, pas de gaspillage : les cosses ont toute leur place. En plus, la chermoula vient leur apporter ce qu\u2019il faut de fra\u00eecheur, de caract\u00e8re, de soleil.\nUne recette sans pr\u00e9tention, \u00e0 servir ti\u00e8de, \u00e0 partager, ou \u00e0 glisser dans un bol du soir.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nF\u00e8ves\n,\nPlats & Accompagnements\n,\nPlats en Sauce\nTarte fine courgettes, olives et feta : la recette express qui r\u00e9gale en 10 minutes chrono\nRecettes avec de la feta : id\u00e9es simples, gourmandes et rapides\n4.48 from 107 votes (\n107 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

@@ -38,19 +38,11 @@ export const AuthorsProvider = ({ children }) => {
 
   // Écouter les changements d'état d'accès privé
   useEffect(() => {
-    console.log("[AuthorsContext] Setting up privateAccess change listener");
-    // S'abonner aux changements d'état d'accès privé
     const unsubscribe = onPrivateAccessChange((newValue) => {
-      console.log(
-        `[AuthorsContext] Private access changed to: ${newValue}, reloading authors`
-      );
-      // Recharger les auteurs lorsque l'état d'accès privé change
       fetchAuthors();
     });
 
-    // Se désabonner lorsque le composant est démonté
     return () => {
-      console.log("[AuthorsContext] Cleaning up privateAccess change listener");
       unsubscribe();
     };
   }, [onPrivateAccessChange, fetchAuthors]);

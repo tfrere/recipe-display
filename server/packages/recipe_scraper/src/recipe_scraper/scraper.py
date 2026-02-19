@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import Dict, Any, Optional, List, Callable, Tuple
 import uuid
 from dotenv import load_dotenv
-import unicodedata  # Added for handling accents
 from datetime import datetime
 import base64
 import difflib  # Added for text similarity comparison
@@ -26,6 +25,8 @@ from web_scraper import WebScraper
 from web_scraper.models import WebContent, AuthPreset
 from recipe_structurer import RecipeStructurer
 from .recipe_enricher import RecipeEnricher
+from .services.recipe_reviewer import RecipeReviewer
+from .observability import observe, langfuse_context
 
 logger = logging.getLogger(__name__)
 
@@ -37,10 +38,12 @@ class RecipeScraper:
     def __init__(self):
         """Initialize the RecipeScraper with web_scraper and recipe_structurer."""
         self.web_scraper = WebScraper()
-        self.recipe_structurer = RecipeStructurer("huggingface")  # Using deepseek as default provider
+        self.recipe_structurer = RecipeStructurer()
         self.recipe_enricher = RecipeEnricher()  # Initialize the recipe enricher
+        self.recipe_reviewer = RecipeReviewer()  # Pass 3: adversarial reviewer
         self._recipe_output_folder = Path("./data/recipes")  # Default recipe output folder
         self._image_output_folder = Path("./data/recipes/images")  # Default image output folder
+        self._debug_output_folder = Path("./data/recipes/debug")  # Debug traces folder
     
     def _check_slug_exists(self, slug: str) -> Optional[str]:
         """
@@ -112,6 +115,7 @@ class RecipeScraper:
                 
         return None
         
+    @observe(name="scrape_from_url")
     async def scrape_from_url(self, url: str, auth_values: Optional[Dict[str, Any]] = None, progress_callback: Optional[Callable[[str], None]] = None) -> Dict[str, Any]:
         """
         Scrape a recipe from a URL, structure it, and download one image.
@@ -124,6 +128,9 @@ class RecipeScraper:
         Returns:
             A dictionary containing the structured recipe data
         """
+        langfuse_context.update_current_trace(
+            metadata={"source_url": url},
+        )
         if progress_callback:
             await progress_callback("Starting recipe processing")
             
@@ -149,11 +156,34 @@ class RecipeScraper:
             await progress_callback("Fetching web content")
             
         logger.info("Fetching web content...")
-        async with self.web_scraper as scraper:
-            web_content = await scraper.scrape_url(url, auth_preset)
+        try:
+            async with self.web_scraper as scraper:
+                web_content = await scraper.scrape_url(url, auth_preset)
+        except Exception as exc:
+            import traceback as _tb
+            logger.error(f"Web scraping failed for {url}: {exc}")
+            self._save_error_trace(
+                url=url, title="(scraping failed)",
+                error=exc, traceback_str=_tb.format_exc(),
+                stage="scraping", raw_text=None,
+            )
+            langfuse_context.update_current_trace(
+                name="FAILED:scraping",
+                metadata={"error": True, "error_stage": "scraping", "error_message": str(exc)},
+            )
+            return {}
             
         if not web_content:
             logger.error("Failed to scrape web content: No content retrieved from URL")
+            self._save_error_trace(
+                url=url, title="(scraping failed)", 
+                error=RuntimeError("No content retrieved from URL"),
+                traceback_str="", stage="scraping", raw_text=None,
+            )
+            langfuse_context.update_current_trace(
+                name=f"FAILED:scraping",
+                metadata={"error": True, "error_stage": "scraping", "error_message": "No content retrieved"},
+            )
             return {}
         
         logger.debug(f"Web content successfully retrieved. Title: \"{web_content.title}\"")
@@ -305,9 +335,11 @@ class RecipeScraper:
         
         return similarity
     
+    @observe(name="structure_recipe")
     async def _structure_recipe(self, web_content: WebContent, progress_callback: Optional[Callable[[str], None]] = None, metadata: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Structure the web content into a recipe and download one image.
+        Uses DeepSeek V3.2.
         
         Args:
             web_content: The WebContent object containing the scraped data
@@ -333,27 +365,44 @@ class RecipeScraper:
                     await progress_callback(message)
                     logger.debug(f"Recipe structurer progress: {message}")
             
-            # Structure the recipe with progress updates if available
-            recipe_data = await self.recipe_structurer.structure(
+            recipe_obj = await self.recipe_structurer.structure(
                 web_content,
                 progress_callback=structurer_callback
             )
             
+            # Convert to dictionary
+            recipe_data = self.recipe_structurer.to_dict(recipe_obj)
+            
             logger.info("Recipe successfully structured")
             
-            # If the recipe doesn't have a slug, generate one
-            if not recipe_data.get("metadata", {}).get("slug"):
-                title = recipe_data.get("metadata", {}).get("title", "recipe")
-                slug = self._generate_slug(title)
-                if "metadata" not in recipe_data:
-                    recipe_data["metadata"] = {}
-                recipe_data["metadata"]["slug"] = slug
-                logger.debug(f"Generated slug for recipe: {slug}")
+            # Generate slug from title
+            title = recipe_data.get("metadata", {}).get("title", "recipe")
+            slug = self._generate_slug(title)
+            recipe_data["metadata"]["slug"] = slug
+            logger.debug(f"Generated slug for recipe: {slug}")
             
-            # Add any provided metadata
-            if metadata and "metadata" in recipe_data:
+            # Save debug traces (raw scraped text + preformatted text)
+            self._save_debug_traces(
+                slug=slug,
+                raw_text=web_content.main_content,
+                preformatted_text=recipe_data.pop("preformattedText", None),
+                source_url=metadata.get("sourceUrl") if metadata else None,
+            )
+            # Keep originalText in the saved recipe for UI display
+            # (also saved in debug traces as raw text)
+            
+            # Map imageUrl to sourceImageUrl for compatibility
+            if recipe_data["metadata"].get("imageUrl"):
+                recipe_data["metadata"]["sourceImageUrl"] = recipe_data["metadata"]["imageUrl"]
+            
+            # Add any provided metadata (sourceUrl, originalContent, etc.)
+            if metadata:
                 recipe_data["metadata"].update(metadata)
                 logger.debug(f"Added custom metadata: {metadata}")
+
+            # Pass schema.org structured data to enricher (for time cross-check)
+            if hasattr(web_content, "structured_data") and web_content.structured_data:
+                recipe_data["metadata"]["_schema_data"] = web_content.structured_data
             
             # Get the source image URL from the metadata if available
             source_image_url = recipe_data.get("metadata", {}).get("sourceImageUrl")
@@ -366,48 +415,278 @@ class RecipeScraper:
                 # Download the image
                 image_filename = await self._download_image(
                     source_image_url,
-                    recipe_data["metadata"]["slug"],
+                    slug,
                     auth_values=web_content.auth_values if hasattr(web_content, 'auth_values') else None
                 )
                 if image_filename:
-                    # Update the image path in the recipe data
-                    if "metadata" in recipe_data:
-                        recipe_data["metadata"]["image"] = image_filename
-                        logger.debug(f"Image successfully downloaded and saved as: {image_filename}")
+                    recipe_data["metadata"]["image"] = image_filename
+                    logger.debug(f"Image successfully downloaded and saved as: {image_filename}")
             else:
                 logger.warning("No source image URL found in metadata")
             
-            # Enrich the recipe with diet and season information
+            # Enrich the recipe with diet, season, and nutrition information
             if progress_callback:
-                await progress_callback("Enriching recipe data")
+                await progress_callback("Enriching recipe data (diet, season, nutrition)")
                 
-            recipe_data = self.recipe_enricher.enrich_recipe(recipe_data)
-            logger.info("Recipe enriched with diet and season information")
+            recipe_data = await self.recipe_enricher.enrich_recipe_async(recipe_data)
+            logger.info("Recipe enriched with diet, season, and nutrition information")
+
+            # Remove internal schema data (not needed in saved JSON)
+            recipe_data.get("metadata", {}).pop("_schema_data", None)
             
+            # ── Pass 3: Adversarial review ────────────────────────────
+            if self.recipe_reviewer.is_available and web_content.main_content:
+                if progress_callback:
+                    await progress_callback("Reviewing recipe quality (Pass 3)...")
+                
+                try:
+                    source_url = recipe_data.get("metadata", {}).get("sourceUrl")
+                    review = await self.recipe_reviewer.review(
+                        recipe_data=recipe_data,
+                        source_text=web_content.main_content,
+                        source_url=source_url,
+                    )
+                    if review:
+                        # Store summary in recipe metadata (lightweight)
+                        recipe_data["metadata"]["reviewScore"] = review.overall_score
+                        # Save full review as debug trace
+                        self._save_review_trace(slug, review.model_dump(), source_url)
+                        logger.info(
+                            f"[Pass 3] Score: {review.overall_score}/10 — "
+                            f"{len(review.ingredient_corrections)} ing corrections, "
+                            f"{len(review.step_corrections)} step corrections, "
+                            f"{len(review.culinary_issues)} culinary issues"
+                        )
+                        # Auto-apply corrections from the review
+                        recipe_data = self.recipe_reviewer.apply_corrections(
+                            recipe_data, review
+                        )
+                except Exception as e:
+                    logger.warning(f"[Pass 3] Review failed (non-blocking): {e}")
+
+            # ── Attach Langfuse metadata & scores ─────────────────────
+            title = recipe_data.get("metadata", {}).get("title", "?")
+            langfuse_context.update_current_trace(
+                name=f"import:{title[:60]}",
+                metadata={
+                    "recipe_title": title,
+                    "slug": slug,
+                    "ingredients_count": len(recipe_data.get("ingredients", [])),
+                    "steps_count": len(recipe_data.get("steps", [])),
+                    "total_time_min": recipe_data.get("metadata", {}).get("totalTimeMinutes", 0),
+                },
+            )
+            review_score = recipe_data.get("metadata", {}).get("reviewScore")
+            if review_score is not None:
+                langfuse_context.score_current_trace(
+                    name="review_score", value=float(review_score),
+                )
+
             return recipe_data
             
         except Exception as e:
+            import traceback
+            tb = traceback.format_exc()
             logger.error(f"Failed to structure recipe: {str(e)}")
+            logger.error(tb)
+
+            # ── Save error trace for debugging ────────────────────────
+            error_stage = self._classify_error(e, tb)
+            self._save_error_trace(
+                url=metadata.get("sourceUrl", "unknown") if metadata else "unknown",
+                title=web_content.title if web_content else "unknown",
+                error=e,
+                traceback_str=tb,
+                stage=error_stage,
+                raw_text=web_content.main_content if web_content else None,
+            )
+
+            # ── Tag Langfuse trace with error info ────────────────────
+            langfuse_context.update_current_trace(
+                name=f"FAILED:{web_content.title[:40] if web_content else 'unknown'}",
+                metadata={
+                    "error": True,
+                    "error_stage": error_stage,
+                    "error_type": type(e).__name__,
+                    "error_message": str(e)[:500],
+                },
+            )
+
             return {}
     
-    def _generate_slug(self, title: str) -> str:
+    def _save_debug_traces(
+        self,
+        slug: str,
+        raw_text: str,
+        preformatted_text: Optional[str] = None,
+        source_url: Optional[str] = None,
+    ) -> None:
         """
-        Generate a slug from a title using python-slugify.
+        Save intermediate pipeline data for debugging and quality improvement.
+        
+        Creates debug files alongside recipes:
+        - {slug}.raw.txt: Raw scraped content from the web page
+        - {slug}.preformat.txt: Output of Pass 1 (preformat LLM call)
         
         Args:
-            title: The title to generate a slug from
-            
-        Returns:
-            A URL-friendly slug
+            slug: Recipe slug for file naming
+            raw_text: Raw text from the web scraper
+            preformatted_text: Output of Pass 1 (preformat), if available
+            source_url: Source URL for reference header
         """
-        # Use python-slugify to handle accents and special characters
-        slug = slugify(title)
+        try:
+            self._debug_output_folder.mkdir(parents=True, exist_ok=True)
+            
+            timestamp = datetime.now().isoformat()
+            header = f"# Debug trace — {timestamp}\n"
+            if source_url:
+                header += f"# Source: {source_url}\n"
+            header += f"# Slug: {slug}\n"
+            header += "# " + "=" * 60 + "\n\n"
+            
+            # Save raw scraped text
+            raw_path = self._debug_output_folder / f"{slug}.raw.txt"
+            with open(raw_path, "w", encoding="utf-8") as f:
+                f.write(header)
+                f.write(raw_text)
+            logger.info(f"Debug trace saved: {raw_path} ({len(raw_text)} chars)")
+            
+            # Save preformatted text (Pass 1 output)
+            if preformatted_text:
+                preformat_path = self._debug_output_folder / f"{slug}.preformat.txt"
+                with open(preformat_path, "w", encoding="utf-8") as f:
+                    f.write(header)
+                    f.write(preformatted_text)
+                logger.info(f"Debug trace saved: {preformat_path} ({len(preformatted_text)} chars)")
+                
+        except Exception as e:
+            # Debug traces are non-critical — never fail the pipeline
+            logger.warning(f"Failed to save debug traces for '{slug}': {e}")
+
+    def _save_review_trace(
+        self,
+        slug: str,
+        review_data: dict,
+        source_url: Optional[str] = None,
+    ) -> None:
+        """
+        Save the Pass 3 adversarial review as a debug trace file.
         
-        # Ensure uniqueness by adding a UUID suffix if necessary
-        if not slug:
-            slug = f"recipe-{uuid.uuid4().hex[:8]}"
-        
-        return slug
+        Creates: {slug}.review.json in the debug output folder.
+        """
+        try:
+            self._debug_output_folder.mkdir(parents=True, exist_ok=True)
+            review_path = self._debug_output_folder / f"{slug}.review.json"
+            with open(review_path, "w", encoding="utf-8") as f:
+                json.dump(review_data, f, indent=2, ensure_ascii=False)
+            logger.info(f"Review trace saved: {review_path}")
+        except Exception as e:
+            logger.warning(f"Failed to save review trace for '{slug}': {e}")
+
+    @staticmethod
+    def _classify_error(error: Exception, traceback_str: str) -> str:
+        """Classify an error into a pipeline stage for easier triage."""
+        error_type = type(error).__name__
+        error_msg = str(error).lower()
+        tb_lower = traceback_str.lower()
+
+        # Pydantic / schema validation
+        if "ValidationError" in error_type or "validation" in error_msg:
+            return "pass2_validation"
+
+        # LLM API errors
+        if any(kw in error_msg for kw in ("rate limit", "429", "quota", "insufficient")):
+            return "llm_rate_limit"
+        if any(kw in error_msg for kw in ("timeout", "timed out", "connect")):
+            return "llm_timeout"
+        if any(kw in error_msg for kw in ("api", "openai", "openrouter", "500", "502", "503")):
+            return "llm_api_error"
+
+        # Recipe rejection
+        if "rejected" in error_msg or "not_a_recipe" in error_msg:
+            return "recipe_rejected"
+
+        # Preformat pass
+        if "preformat" in tb_lower:
+            return "pass1_preformat"
+
+        # DAG construction
+        if "pass 2" in tb_lower or "dag" in tb_lower or "instructor" in tb_lower:
+            return "pass2_dag"
+
+        # Enrichment
+        if "enrich" in tb_lower or "nutrition" in tb_lower:
+            return "enrichment"
+
+        # Web scraping
+        if "scrape" in tb_lower or "httpx" in tb_lower or "web_scraper" in tb_lower:
+            return "scraping"
+
+        return "unknown"
+
+    def _save_error_trace(
+        self,
+        url: str,
+        title: str,
+        error: Exception,
+        traceback_str: str,
+        stage: str,
+        raw_text: Optional[str] = None,
+    ) -> None:
+        """
+        Save a structured error trace for failed imports.
+
+        Creates: errors/{timestamp}_{slug}.error.json in the debug folder.
+        """
+        try:
+            errors_dir = self._debug_output_folder / "errors"
+            errors_dir.mkdir(parents=True, exist_ok=True)
+
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            safe_slug = slugify(title)[:60] if title else "unknown"
+            filename = f"{timestamp}_{safe_slug}.error.json"
+
+            error_data = {
+                "timestamp": datetime.now().isoformat(),
+                "url": url,
+                "title": title,
+                "stage": stage,
+                "error_type": type(error).__name__,
+                "error_message": str(error)[:2000],
+                "traceback": traceback_str[-3000:],  # Last 3000 chars of traceback
+            }
+
+            # Include raw text preview if available (for debugging prompts)
+            if raw_text:
+                error_data["raw_text_preview"] = raw_text[:1000]
+                error_data["raw_text_length"] = len(raw_text)
+
+            error_path = errors_dir / filename
+            with open(error_path, "w", encoding="utf-8") as f:
+                json.dump(error_data, f, indent=2, ensure_ascii=False)
+
+            logger.info(f"Error trace saved: {error_path} (stage={stage})")
+        except Exception as save_err:
+            logger.warning(f"Failed to save error trace: {save_err}")
+
+    def _generate_slug(self, title: str) -> str:
+        """Generate a unique slug from a title.
+
+        If a recipe file with the same slug already exists on disk,
+        a numeric suffix (-2, -3, ...) is appended to avoid silent
+        overwrites.
+        """
+        base = slugify(title) if title else ""
+        if not base:
+            base = f"recipe-{uuid.uuid4().hex[:8]}"
+
+        candidate = base
+        counter = 2
+        while (self._recipe_output_folder / f"{candidate}.recipe.json").exists():
+            candidate = f"{base}-{counter}"
+            counter += 1
+
+        return candidate
     
     async def _download_image(self, image_url: str, slug: str, auth_values: Optional[Dict[str, Any]] = None) -> Optional[str]:
         """

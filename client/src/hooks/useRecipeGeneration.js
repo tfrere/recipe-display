@@ -92,7 +92,6 @@ export function useRecipeGeneration(onRecipeAdded) {
         );
 
         if (response.data) {
-          console.log(`[Debug] Progress data:`, response.data);
           dispatch({ type: actions.UPDATE_PROGRESS, payload: response.data });
 
           // Vérifier si une erreur s'est produite durant la progression
@@ -120,32 +119,20 @@ export function useRecipeGeneration(onRecipeAdded) {
           }
 
           if (response.data.status === "completed") {
-            console.log(
-              `[Debug] Recipe generation completed. Full response:`,
-              JSON.stringify(response.data)
-            );
-
             // Essayer de récupérer le slug de plusieurs manières possibles
             let recipeSlug = null;
 
             // 1. Essayer de récupérer depuis la structure metadata standard
             if (response.data.recipe?.metadata?.slug) {
               recipeSlug = response.data.recipe.metadata.slug;
-              console.log(
-                `[Debug] Recipe slug found in metadata: ${recipeSlug}`
-              );
             }
             // 2. Essayer de récupérer depuis result.slug si disponible
             else if (response.data.result?.slug) {
               recipeSlug = response.data.result.slug;
-              console.log(`[Debug] Recipe slug found in result: ${recipeSlug}`);
             }
             // 3. Essayer d'extraire d'un autre endroit si nécessaire (custom)
             else if (response.data.recipe?.slug) {
               recipeSlug = response.data.recipe.slug;
-              console.log(
-                `[Debug] Recipe slug found directly in recipe: ${recipeSlug}`
-              );
             }
 
             if (recipeSlug) {
@@ -190,9 +177,6 @@ export function useRecipeGeneration(onRecipeAdded) {
               if (onRecipeAdded) {
                 onRecipeAdded();
               }
-
-              // Notification simple via console
-              console.log("Recette importée avec succès!");
 
               // Add a short delay before navigation
               setTimeout(() => {

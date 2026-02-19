@@ -1,307 +1,259 @@
-import asyncio
+"""Client HTTP pour l'API de recettes."""
+
 import base64
+import json
+import asyncio
 import aiohttp
-from datetime import datetime
 from pathlib import Path
+from typing import AsyncIterator
 from urllib.parse import urlparse
 from rich.console import Console
 
-from .models import RecipeError
-
-
 class RecipeApiClient:
-    """Classe responsable des interactions avec l'API de recettes."""
-    
-    def __init__(self, api_url: str, auth_presets: dict = None, console: Console = None):
-        self.api_url = api_url.rstrip('/')  # Enlever le slash à la fin si présent
+    """Interactions avec l'API de recettes."""
+
+    def __init__(
+        self,
+        api_url: str,
+        auth_presets: dict | None = None,
+        console: Console | None = None,
+    ):
+        self.api_url = api_url.rstrip("/")
         self.console = console or Console()
         self.auth_presets = auth_presets or {}
-    
-    def get_auth_for_url(self, url: str) -> dict:
-        """Récupère les credentials d'authentification pour une URL donnée."""
+
+    # ──────────────────────────────────────────────
+    # Auth helpers
+    # ──────────────────────────────────────────────
+
+    def get_auth_for_url(self, url: str) -> dict | None:
+        """Récupère les credentials pour une URL."""
         if not self.auth_presets:
             return None
-            
-        # Extraire le domaine de l'URL
         domain = urlparse(url).netloc
-        
-        # Chercher une correspondance dans les auth_presets
         for preset_domain, preset_config in self.auth_presets.items():
             if preset_domain in domain:
-                self.console.print(f"[blue]Using authentication for {domain} with preset {preset_domain}[/blue]")
                 return preset_config
-                
         return None
-    
-    async def start_url_generation(self, session: aiohttp.ClientSession, url: str, credentials: dict = None) -> str:
-        """Démarre la génération de recette à partir d'URL et retourne l'ID de progression."""
+
+    # ──────────────────────────────────────────────
+    # Core HTTP helper (redirect-aware)
+    # ──────────────────────────────────────────────
+
+    async def _post_json(
+        self,
+        session: aiohttp.ClientSession,
+        payload: dict,
+        timeout_s: int = 30,
+    ) -> dict:
+        """POST JSON vers /api/recipes avec gestion des redirections.
+
+        Returns:
+            dict with "progressId" on success.
+        Raises:
+            DuplicateRecipeError if 409.
+            Exception on other failures.
+        """
+        timeout = aiohttp.ClientTimeout(total=timeout_s)
+        url = f"{self.api_url}/api/recipes"
+
+        async with session.post(url, json=payload, timeout=timeout) as resp:
+            if resp.status == 409:
+                raise DuplicateRecipeError()
+            if resp.status in (301, 302, 307, 308):
+                redirect_url = resp.headers.get("Location")
+                if not redirect_url:
+                    raise Exception("Redirect sans header Location")
+                async with session.post(
+                    redirect_url, json=payload, timeout=timeout
+                ) as rr:
+                    if rr.status != 200:
+                        raise Exception(f"Échec après redirect: {await rr.text()}")
+                    return await rr.json()
+            if resp.status != 200:
+                body = await resp.text()
+                raise Exception(f"API {resp.status}: {body}")
+            return await resp.json()
+
+    # ──────────────────────────────────────────────
+    # Start generation (URL or Text)
+    # ──────────────────────────────────────────────
+
+    async def start_generation(
+        self,
+        session: aiohttp.ClientSession,
+        *,
+        recipe_type: str,
+        url: str | None = None,
+        text: str | None = None,
+        image: str | None = None,
+        credentials: dict | None = None,
+    ) -> str | None:
+        """Lance la génération et retourne le progressId (None si doublon)."""
+        payload = {
+            "type": recipe_type,
+            "url": url,
+            "text": text,
+            "image": image,
+            "credentials": credentials,
+        }
         try:
-            # Ajouter un timeout pour éviter les blocages
-            timeout = aiohttp.ClientTimeout(total=30)  # 30 secondes maximum
-            
-            async with session.post(
-                f"{self.api_url}/api/recipes",
-                json={
-                    "type": "url",
-                    "url": url,
-                    "text": None,
-                    "image": None,
-                    "credentials": credentials
-                },
-                timeout=timeout
-            ) as response:
-                if response.status == 409:
-                    return None
-                elif response.status == 301 or response.status == 302 or response.status == 307 or response.status == 308:
-                    # Gérer les redirections
-                    redirect_url = response.headers.get('Location')
-                    if redirect_url:
-                        self.console.print(f"[yellow]Redirecting to {redirect_url}[/yellow]")
-                        async with session.post(
-                            redirect_url,
-                            json={
-                                "type": "url",
-                                "url": url,
-                                "text": None,
-                                "image": None,
-                                "credentials": credentials
-                            },
-                            timeout=timeout
-                        ) as redirect_response:
-                            if redirect_response.status != 200:
-                                raise Exception(f"Failed to start generation after redirect: {await redirect_response.text()}")
-                            data = await redirect_response.json()
-                            return data["progressId"]
-                    else:
-                        raise Exception(f"Received redirect without Location header")
-                elif response.status != 200:
-                    raise Exception(f"Failed to start generation: {await response.text()}")
-                    
-                data = await response.json()
-                return data["progressId"]
-        except asyncio.TimeoutError:
-            raise Exception(f"API request timed out after 30 seconds")
-    
-    async def start_text_generation(self, session: aiohttp.ClientSession, recipe_text: str, image_base64: str = None) -> str:
-        """Démarre la génération de recette à partir de texte et retourne l'ID de progression."""
-        try:
-            # Ajouter un timeout pour éviter les blocages
-            timeout = aiohttp.ClientTimeout(total=30)  # 30 secondes maximum
-            
-            # Vérifier que l'image est valide si elle est fournie
-            if image_base64 and not image_base64.startswith("data:image/"):
-                self.console.print(f"[yellow]Warning: Image format incorrect, fixing...[/yellow]")
-                # Ajuster le format si nécessaire
-                image_base64 = f"data:image/jpeg;base64,{image_base64}" if "base64," not in image_base64 else image_base64
-            
-            # Log pour debugging
-            self.console.print(f"[blue]Sending text recipe ({len(recipe_text)} chars) with image: {bool(image_base64)}[/blue]")
-            
-            async with session.post(
-                f"{self.api_url}/api/recipes",
-                json={
-                    "type": "text",
-                    "url": None,
-                    "text": recipe_text,
-                    "image": image_base64,
-                    "credentials": None
-                },
-                timeout=timeout
-            ) as response:
-                if response.status == 409:
-                    self.console.print(f"[yellow]Recette déjà existante (statut 409): La recette existe déjà dans la base de données[/yellow]")
-                    return None
-                elif response.status == 301 or response.status == 302 or response.status == 307 or response.status == 308:
-                    # Gérer les redirections
-                    redirect_url = response.headers.get('Location')
-                    if redirect_url:
-                        self.console.print(f"[yellow]Redirecting to {redirect_url}[/yellow]")
-                        async with session.post(
-                            redirect_url,
-                            json={
-                                "type": "text",
-                                "url": None,
-                                "text": recipe_text,
-                                "image": image_base64,
-                                "credentials": None
-                            },
-                            timeout=timeout
-                        ) as redirect_response:
-                            if redirect_response.status != 200:
-                                raise Exception(f"Failed to start generation after redirect: {await redirect_response.text()}")
-                            data = await redirect_response.json()
-                            return data["progressId"]
-                    else:
-                        raise Exception(f"Received redirect without Location header")
-                elif response.status != 200:
-                    response_text = await response.text()
-                    self.console.print(f"[red]API Error: {response.status} - {response_text}[/red]")
-                    raise Exception(f"Failed to start generation: {response_text}")
-                    
-                data = await response.json()
-                return data["progressId"]
-        except asyncio.TimeoutError:
-            raise Exception(f"API request timed out after 30 seconds")
-        except Exception as e:
-            self.console.print(f"[red]Error in start_text_generation: {str(e)}[/red]")
-            raise
-    
-    async def check_progress(self, session: aiohttp.ClientSession, progress_id: str) -> dict:
-        """Vérifie la progression de la génération de recette."""
+            data = await self._post_json(session, payload)
+            return data["progressId"]
+        except DuplicateRecipeError:
+            return None
+
+    # ──────────────────────────────────────────────
+    # Progress polling
+    # ──────────────────────────────────────────────
+
+    async def check_progress(
+        self, session: aiohttp.ClientSession, progress_id: str
+    ) -> dict:
+        """Vérifie la progression d'une génération."""
         if not progress_id:
             return {"status": "completed", "progress": 100}
-        
+
+        timeout = aiohttp.ClientTimeout(total=30)
         try:
-            # Ajouter un timeout pour éviter les blocages
-            timeout = aiohttp.ClientTimeout(total=30)  # 30 secondes maximum
-            
             async with session.get(
                 f"{self.api_url}/api/recipes/progress/{progress_id}",
-                timeout=timeout
-            ) as response:
-                if response.status == 404:
-                    raise Exception("Progress not found")
-                if response.status != 200:
-                    raise Exception(f"Failed to check progress: {await response.text()}")
-                    
-                data = await response.json()
-                
-                # Map server status to importer status
-                if data["status"] == "error":
-                    error_message = data.get("error", "Unknown error")
-                    
-                    # Si l'erreur concerne le slug mais que le fichier a été créé, on le considère comme un succès
-                    if "Failed to extract recipe slug" in error_message or "Recipe successfully saved" in error_message:
-                        self.console.print(f"[yellow]Warning: {error_message}, but recipe may have been imported successfully[/yellow]")
-                        return {
-                            "status": "completed",
-                            "progress": 100,
-                            "slug": "unknown"
-                        }
-                    
-                    # Si l'erreur est liée à recipe_scraper.cli mais contient des éléments indiquant un succès partiel
-                    if "recipe_scraper.cli" in error_message and any(success_str in error_message for success_str in ["saved to", "created", "imported"]):
-                        self.console.print(f"[yellow]Warning: CLI error but recipe might have been partially imported: {error_message}[/yellow]")
-                        return {
-                            "status": "completed",
-                            "progress": 100,
-                            "slug": "unknown"
-                        }
-                    
-                    return {
-                        "status": "error",
-                        "error": error_message,
-                        "progress": 0
-                    }
-                elif data["status"] == "completed":
-                    # Get the recipe slug if available
-                    slug = None
-                    if data.get("recipe") and isinstance(data["recipe"], dict):
-                        slug = data["recipe"].get("slug")
-                    
-                    return {
-                        "status": "completed",
-                        "progress": 100,
-                        "slug": slug
-                    }
-                else:
-                    # Calculate overall progress based on steps
-                    total_progress = 0
-                    completed_steps = 0
-                    step_count = len(data["steps"])
-                    current_step_info = None
-                    
-                    for step in data["steps"]:
-                        if step["status"] == "completed":
-                            completed_steps += 1
-                            total_progress += 100
-                        elif step["status"] == "in_progress":
-                            total_progress += step["progress"]
-                            current_step_info = step
-                        
-                    # If no in_progress step was found but there's a currentStep
-                    if not current_step_info and data.get("currentStep"):
-                        # Find the step that matches currentStep
-                        for step in data["steps"]:
-                            if step["step"] == data["currentStep"]:
-                                current_step_info = step
-                                break
-                    
-                    # Calculate average progress
-                    avg_progress = total_progress / step_count if step_count > 0 else 0
-                    
-                    # Create detailed status
-                    result = {
-                        "status": "in_progress",
-                        "progress": avg_progress,
-                        "current_step": data.get("currentStep", ""),
-                    }
-                    
-                    # Add step details if available
-                    if current_step_info:
-                        result["step_message"] = current_step_info.get("message", "")
-                        result["step_progress"] = current_step_info.get("progress", 0)
-                    
-                    return result
+                timeout=timeout,
+            ) as resp:
+                if resp.status == 404:
+                    raise Exception("Progress introuvable")
+                if resp.status != 200:
+                    raise Exception(f"Erreur progress: {await resp.text()}")
+
+                data = await resp.json()
+                return self._parse_progress(data)
+
         except asyncio.TimeoutError:
-            self.console.print(f"[yellow]Warning: Timeout while checking progress for {progress_id}[/yellow]")
             return {
                 "status": "in_progress",
                 "progress": 0,
                 "current_step": "unknown",
-                "step_message": "Timeout lors de la vérification, mais le serveur continue probablement le traitement"
+                "step_message": "Timeout (le serveur continue probablement)",
             }
         except Exception as e:
-            self.console.print(f"[red]Error checking progress: {str(e)}[/red]")
-            return {
-                "status": "error",
-                "error": str(e)
-            }
-    
-    async def list_imported_recipes(self, session: aiohttp.ClientSession, processed_urls: set) -> None:
-        """Liste les recettes importées pendant cette session."""
+            return {"status": "error", "error": str(e)}
+
+    def _parse_progress(self, data: dict) -> dict:
+        """Parse la réponse brute du serveur en un format simplifié."""
+        if data["status"] == "error":
+            error_msg = data.get("error") or "Unknown error"
+            return {"status": "error", "error": error_msg, "progress": 0}
+
+        if data["status"] == "completed":
+            slug = None
+            recipe = data.get("recipe")
+            if isinstance(recipe, dict):
+                slug = recipe.get("metadata", {}).get("slug") or recipe.get("slug")
+            return {"status": "completed", "progress": 100, "slug": slug}
+
+        # In progress — calculer la progression moyenne
+        steps = data.get("steps", [])
+        total_progress = 0
+        current_step_info = None
+
+        for step in steps:
+            if step["status"] == "completed":
+                total_progress += 100
+            elif step["status"] == "in_progress":
+                total_progress += step.get("progress", 0)
+                current_step_info = step
+
+        avg = total_progress / len(steps) if steps else 0
+
+        result = {
+            "status": "in_progress",
+            "progress": avg,
+            "current_step": data.get("currentStep", ""),
+        }
+        if current_step_info:
+            result["step_message"] = current_step_info.get("message", "")
+        return result
+
+    # ──────────────────────────────────────────────
+    # SSE streaming
+    # ──────────────────────────────────────────────
+
+    async def stream_progress(
+        self, session: aiohttp.ClientSession, progress_id: str
+    ) -> AsyncIterator[dict]:
+        """Stream progress updates via SSE. Yields parsed dicts."""
+        url = f"{self.api_url}/api/recipes/progress/{progress_id}/stream"
+        timeout = aiohttp.ClientTimeout(total=None, sock_read=30)
+
+        async with session.get(url, timeout=timeout) as resp:
+            if resp.status != 200:
+                raise SSEConnectionError(f"SSE endpoint returned {resp.status}")
+
+            buffer = ""
+            async for chunk in resp.content.iter_any():
+                buffer += chunk.decode("utf-8", errors="replace")
+                while "\n\n" in buffer:
+                    message, buffer = buffer.split("\n\n", 1)
+                    for line in message.split("\n"):
+                        line = line.strip()
+                        if line.startswith("data: "):
+                            raw = line[6:]
+                            try:
+                                data = json.loads(raw)
+                                yield self._parse_sse_event(data)
+                            except json.JSONDecodeError:
+                                continue
+
+    def _parse_sse_event(self, data: dict) -> dict:
+        """Parse un event SSE brut en format simplifié (même format que _parse_progress)."""
+        if data.get("type") == "keepalive":
+            return {"status": "keepalive"}
+
+        if data.get("error") == "not_found":
+            return {"status": "error", "error": "Progress introuvable"}
+
+        return self._parse_progress(data)
+
+    # ──────────────────────────────────────────────
+    # List recipes
+    # ──────────────────────────────────────────────
+
+    async def list_recipes(self, session: aiohttp.ClientSession) -> list[dict]:
+        """Récupère toutes les recettes depuis l'API."""
         try:
-            async with session.get(f"{self.api_url}/api/recipes") as response:
-                if response.status != 200:
-                    self.console.print(f"[red]Failed to fetch recipes: {response.status}[/red]")
-                    return
-                
-                data = await response.json()
-                
-                if not data:
-                    self.console.print("[yellow]No recipes found[/yellow]")
-                    return
-                
-                self.console.print("\n[green]Successfully imported recipes:[/green]")
-                
-                for recipe in data:
-                    # Vérifier si la recette correspond à une URL que nous avons traitée
-                    source_url = recipe.get("metadata", {}).get("sourceUrl", "")
-                    if source_url in processed_urls:
-                        self.console.print(f"[green]- {recipe['title']} ({recipe['slug']})[/green]")
-        
-        except Exception as e:
-            self.console.print(f"[red]Error listing recipes: {str(e)}[/red]")
-    
+            async with session.get(f"{self.api_url}/api/recipes") as resp:
+                if resp.status != 200:
+                    self.console.print(f"[yellow]Warning: API returned status {resp.status} when listing recipes[/yellow]")
+                    return []
+                return await resp.json()
+        except (aiohttp.ClientError, TimeoutError) as e:
+            self.console.print(f"[yellow]Warning: Could not list recipes: {e}[/yellow]")
+            return []
+
+    # ──────────────────────────────────────────────
+    # Image encoding
+    # ──────────────────────────────────────────────
+
     @staticmethod
-    def encode_image(image_file: Path) -> tuple[str, str]:
-        """Encode une image en base64 avec le bon type MIME."""
+    def encode_image(image_file: Path) -> tuple[str | None, str]:
+        """Encode une image en base64 data URI."""
         if not image_file or not image_file.exists():
             return None, ""
-        
-        with open(image_file, 'rb') as f:
-            image_data = f.read()
-            
-        # Déterminer le type MIME en fonction de l'extension
-        mime_type = "image/jpeg"  # Par défaut
-        if image_file.suffix.lower() == ".png":
-            mime_type = "image/png"
-        elif image_file.suffix.lower() == ".gif":
-            mime_type = "image/gif"
-        elif image_file.suffix.lower() == ".webp":
-            mime_type = "image/webp"
-        
-        # Convertir en base64 avec le préfixe approprié incluant le bon type MIME
-        image_base64 = f"data:{mime_type};base64,{base64.b64encode(image_data).decode('utf-8')}"
-        
-        return image_base64, mime_type 
+
+        mime_map = {".png": "image/png", ".gif": "image/gif", ".webp": "image/webp"}
+        mime_type = mime_map.get(image_file.suffix.lower(), "image/jpeg")
+
+        with open(image_file, "rb") as f:
+            b64 = base64.b64encode(f.read()).decode("utf-8")
+
+        return f"data:{mime_type};base64,{b64}", mime_type
+
+
+class DuplicateRecipeError(Exception):
+    """La recette existe déjà (HTTP 409)."""
+    pass
+
+
+class SSEConnectionError(Exception):
+    """Impossible de se connecter au flux SSE."""
+    pass

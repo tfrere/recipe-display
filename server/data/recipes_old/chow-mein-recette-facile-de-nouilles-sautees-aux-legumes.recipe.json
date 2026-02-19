@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "title": "Chow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes)",
+    "description": "C'est tout simplement l'une des meilleures recettes de nouilles saut\u00e9es que je connaisse ! Et en plus, elle est super facile \u00e0 faire.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "chow mein",
+      "nouilles saut\u00e9es",
+      "recette asiatique",
+      "vegan",
+      "wok",
+      "carotte",
+      "chou",
+      "shiitak\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/chow-mein-vegetarien-3-of-3.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez varier les l\u00e9gumes : courgettes, d'autres choux, champignons de paris, mini ma\u00efs, haricots verts.",
+      "Il faut d\u00e9cider de l'ordre de cuisson en fonction de la \"duret\u00e9\" du l\u00e9gume.",
+      "Je conseille d'utiliser la tamari (sauce soja fonc\u00e9e).",
+      "Le poids des nouilles est indiqu\u00e9 cru.",
+      "La sauce n'est pas sens\u00e9e \u00e9paissir, plut\u00f4t \u00eatre absorb\u00e9e par les autres aliments."
+    ],
+    "slug": "chow-mein-recette-facile-de-nouilles-sautees-aux-legumes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/chow-mein-vegetarien-3-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/03/17/chow-mein-recette-facile-de-nouilles-sautees-aux-legumes/",
+    "image": "images/chow-mein-recette-facile-de-nouilles-sautees-aux-legumes.webp",
+    "createdAt": "2026-02-09T20:14:16.407324",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 13.0,
+    "totalCookingTime": 13.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 800.1,
+      "protein": 23.6,
+      "fat": 30.0,
+      "carbs": 115.4,
+      "fiber": 12.3,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 13,
+      "totalIngredients": 14,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "noodles",
+      "name": "nouilles aux oeufs ou nouilles de riz",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cru",
+      "optional": false,
+      "name_en": "Egg noodles or rice noodles"
+    },
+    {
+      "id": "shiitake_mushrooms",
+      "name": "champignons shiitak\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Shiitake mushrooms"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "white_cabbage",
+      "name": "chou blanc",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white cabbage"
+    },
+    {
+      "id": "bean_sprouts",
+      "name": "pousses de soja",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bean sprouts"
+    },
+    {
+      "id": "green_onions",
+      "name": "oignons nouveaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Spring onions"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "chili",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili pepper"
+    }
+  ],
+  "tools": [
+    "Wok"
+  ],
+  "steps": [
+    {
+      "id": "cook_noodles",
+      "action": "Faites cuire les nouilles en suivant les indications du paquet. Puis, r\u00e9servez dans de l'eau froide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "noodles"
+      ],
+      "produces": "cooked_noodles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_mushrooms",
+      "action": "Nettoyez puis \u00e9mincez les champignons en fines lamelles. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shiitake_mushrooms"
+      ],
+      "produces": "sliced_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_carrot_cabbage",
+      "action": "\u00c9pluchez puis coupez la carotte en julienne. Coupez le chou blanc en julienne. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrot",
+        "white_cabbage"
+      ],
+      "produces": "julienned_carrot_cabbage",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_green_onions",
+      "action": "\u00c9mincez les oignons nouveaux, tiges incluses. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "green_onions"
+      ],
+      "produces": "sliced_green_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la sauce dans un bol. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "soy_sauce",
+        "sesame_oil",
+        "sugar",
+        "rice_vinegar",
+        "chili"
+      ],
+      "produces": "chow_mein_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_garlic",
+      "action": "Faites chauffer un wok \u00e0 feu moyen-fort et versez-y l'huile. Faites revenir l'ail press\u00e9 pendant 1-2min, sans le faire br\u00fbler.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sunflower_oil",
+        "garlic"
+      ],
+      "produces": "sauteed_garlic",
+      "requires": [],
+      "visualCue": "sans br\u00fbler"
+    },
+    {
+      "id": "cook_mushrooms",
+      "action": "Ajoutez les champignons et faites-les revenir 3-4min en remuant constamment.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_garlic",
+        "sliced_mushrooms"
+      ],
+      "produces": "cooked_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_carrot_cabbage",
+      "action": "Ajoutez la carotte et le chou blanc et wokez encore 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_mushrooms",
+        "julienned_carrot_cabbage"
+      ],
+      "produces": "cooked_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_noodles_sauce",
+      "action": "Ajoutez les nouilles, les pousses de soja et la sauce en m\u00eame temps et wokez encore 4-5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_vegetables",
+        "cooked_noodles",
+        "bean_sprouts",
+        "chow_mein_sauce"
+      ],
+      "produces": "chow_mein_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "finish_garnish",
+      "action": "\u00c9teignez le feu et ajoutez les oignons nouveaux et les graines de s\u00e9same. C'est pr\u00eat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chow_mein_base",
+        "sliced_green_onions",
+        "sesame_seeds"
+      ],
+      "produces": "chow_mein_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chow_mein_final",
+  "originalText": "Chow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n17 mars 2021\nChow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes)\nAller \u00e0 la recette\nVous connaissez le Chow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes) ? C\u2019est tout simplement l\u2019une des meilleures recettes de nouilles saut\u00e9es que je connaisse ! Et en plus, elle est super facile \u00e0 faire.\nIl vous faudra tout de m\u00eame quelques incontournables (v\u00e9g\u00e9) de la cuisine asiatique, j\u2018ai nomm\u00e9 : la sauce soja, l\u2019huile de s\u00e9same (grill\u00e9 de pr\u00e9f\u00e9rence), et le vinaigre de riz !\nLe principe est simple, on prend des nouilles (aux oeufs, ou de riz, ou ce que vous voulez en fait !). Ensuite, on prend des l\u00e9gumes. J\u2019ai port\u00e9 mon choix sur des l\u00e9gumes de saison et qui ont un accent asiatique : shiitak\u00e9, pousses de soja, chou blanc (du chou chinois serait parfait aussi), de la carotte en julienne, et des oignons nouveaux. Mais vous pouvez varier les plaisirs, et utiliser des courgettes, d\u2019autres choux, des champignons de paris, des mini ma\u00efs, des haricots verts etc etc\u2026 Il faut d\u00e9cider de l\u2019ordre de cuisson en fonction de la \u201cduret\u00e9\u201d du l\u00e9gume si je puis dire. Et puis ensuite, on ajoute les nouilles, la sauce, on m\u00e9lange \u00e0 fond et le tour est jou\u00e9 ! Rapide et efficace !\nVous pouvez aussi jeter un coup d\u2019\u0153il \u00e0\nma recette de wok de nouilles sauce sat\u00e9\nsi vous \u00eates d\u2019humeur nouilles ! Ou \u00e0\nmon riz saut\u00e9 de chou fleur\nsi vous \u00eates d\u2019humeur chou \ud83d\ude42\nCette recette de Chow Mein recette facile de nouilles saut\u00e9es aux l\u00e9gumes est l\u2019un des plus gros succ\u00e8s du blog ! N\u2019h\u00e9sitez pas \u00e0 nous laisser un petit commentaire si vous l\u2019avez test\u00e9 ! On fait de notre mieux pour r\u00e9pondre \u00e0 vos questions le plus rapidement possible \ud83d\ude42\nChow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes)\n4.65\n/5 avec\n191\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les nouilles\n200\ng\nde nouilles aux oeufs ou nouilles de riz\n100\ng\nde champignons shiitak\u00e9\n1\ncarotte\nenv 100g\n100\ng\nde chou blanc\n100\ng\nde pousses de soja\n2\noignons nouveaux\n4\ngousses d\u2019ail press\u00e9es\n1\nc\u00e0s d\u2019huile de tournesol\ngraines de s\u00e9same\nPour la sauce\n4\nc\u00e0s de sauce soja\n2\nc\u00e0s d\u2019huile de s\u00e9same\n1\nc\u00e0s de sucre\n4\nc\u00e0s de vinaigre de riz\npiment au go\u00fbt\nInstructions\nFaites cuire les nouilles en suivant les indications du paquet. Puis, r\u00e9servez dans de l\u2019eau froide.\nPr\u00e9parez les l\u00e9gumes :\nNettoyez puis \u00e9mincez les champignons en fines lamelles. R\u00e9servez.\n\u00c9pluchez puis coupez la carotte en julienne. Coupez le chou blanc en julienne. R\u00e9servez.\n\u00c9mincez les oignons nouveaux, tiges incluses. R\u00e9servez.\nM\u00e9langez tous les ingr\u00e9dients de la sauce dans un bol. R\u00e9servez.\nFaites chauffer un wok \u00e0 feu moyen-fort et versez-y l\u2019huile. Faites revenir l\u2019ail press\u00e9 pendant 1 ou 2 min, sans le faire br\u00fbler. Ajoutez les champignons et faites-les revenir 3-4min en remuant constamment.\nAjoutez la carotte et le chou blanc et wokez encore 2min.\nAjoutez les nouilles, et la sauce en m\u00eame temps et wokez encore 4-5min.\n\u00c9teignez le feu et ajoutez les oignons et le s\u00e9same.\nC\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCarotte\n,\nChoux\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nWok\nTags:\nchou chinois\n,\nchow mein\n,\nnouilles de riz\n,\nnouilles saut\u00e9es\n,\nnouilles vegan\n,\nnouilles v\u00e9g\u00e9\n,\nrecette asiatique\n,\nrecette chou\n,\nrecette chou chinois v\u00e9g\u00e9tarien\n,\nrecette chou v\u00e9g\u00e9tarien\n,\nrecette de nouilles asiatiques recette chou chinois\nFrites de Patate Douce au Four\nCarrot Cake fa\u00e7on Bundt (Vegan et Sans Gluten)\n30 thoughts on \u201cChow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes)\u201d\nL\u00e9a\ndit\u00a0:\n17 mars 2021 \u00e0 12 h 16 min\nMiam ! La recette est pour 2 personnes ?\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n18 mars 2021 \u00e0 20 h 23 min\nHello L\u00e9a ! Oui pour deux, je vais l\u2019ajouter \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nChristine\ndit\u00a0:\n27 mai 2022 \u00e0 13 h 17 min\nBonjour\nQuel sauce soja faut-il mettre ? La clair ou la fonc\u00e9 ?\nEt au niveau des quantit\u00e9s c\u2019est bien des cuill\u00e8res a soupe ?\nMerci \u263a\ufe0f\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n27 mai 2022 \u00e0 15 h 28 min\nHello ! Je conseille d\u2019utiliser la tamari (fonc\u00e9e) et oui \u00ab\u00a0cas\u00a0\u00bb=cuill\u00e8re \u00e0 soupe !\nchargement\u2026\nR\u00e9pondre\nCatherine antunes\ndit\u00a0:\n29 juin 2022 \u00e0 12 h 52 min\nBonjour,  ma question repose sur kes pates. Spagetthis \u00e7a marche ? Et doit t on les cuire a l eau avant ?. Merci de votre reponse\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n1 juillet 2022 \u00e0 14 h 46 min\nBonjour Catherine, oui, vous pouvez utiliser des spaghettis ! Et oui, il faut les cuire al dente avant \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nSharon\ndit\u00a0:\n18 ao\u00fbt 2021 \u00e0 20 h 47 min\nApr\u00e8s avoir test\u00e9 beaucoup de recettes , c\u2019est celle l\u00e0 la meilleure surtout la sauce !!! Parfait \ud83d\udc4c\ud83d\udc96\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 ao\u00fbt 2021 \u00e0 16 h 17 min\nMErciiiii !\nchargement\u2026\nR\u00e9pondre\nnadege\ndit\u00a0:\n1 novembre 2021 \u00e0 20 h 32 min\nD\u00e9licieux ! je fais ce plat r\u00e9guli\u00e8rement .\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n6 janvier 2022 \u00e0 12 h 16 min\nBonjour J, pour les nouilles, c\u2019est la meilleure fa\u00e7on de les reserver en attendant de les utiliser. Sinon elles vont coller. Vous pouvez tout \u00e0 fait les cuire au dernier moment si vous pr\u00e9f\u00e9rez !\nchargement\u2026\nR\u00e9pondre\nChristine\ndit\u00a0:\n2 octobre 2022 \u00e0 22 h 41 min\nBonjour j\u2019ai suivi la recette \u00e0 la lettre mais les nouilles \u00e9taient acide , est-ce normal ?\nMerci\nchargement\u2026\nR\u00e9pondre\nWarem\ndit\u00a0:\n1 janvier 2025 \u00e0 22 h 23 min\nMoi aussi acide mais j\u2019ai rajout\u00e9 de la sauce poisson et plus de sauce soja. La prochaine fois je mettrai moins de vinaigre\nchargement\u2026\nR\u00e9pondre\nPauline\ndit\u00a0:\n7 f\u00e9vrier 2023 \u00e0 14 h 30 min\nMerci pour cette bonne recette . La sauce est d\u00e9licieuse !\nchargement\u2026\nR\u00e9pondre\nMezhoud\ndit\u00a0:\n28 mars 2023 \u00e0 9 h 03 min\nBonjour\nMerci pour la recette se serait mon premier essai pourriez vous me dire o\u00f9 je peux trouver la sauce dont vous parlez ( fonc\u00e9e)  et est ce qu\u2019elle est sucr\u00e9e ou sal\u00e9e ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n3 avril 2023 \u00e0 20 h 51 min\nBonjour ! Tu parles de la sauce soja ? Tu peux la trouver en supermarch\u00e9, au rayon \u00ab\u00a0aliment du monde\u00a0\u00bb ou en magasin bio ou encore dans des \u00e9piceries asiatiques. Je te conseille de prendre la tamari ou shoyu\nchargement\u2026\nR\u00e9pondre\nbobsicle\ndit\u00a0:\n24 juillet 2023 \u00e0 21 h 27 min\nAttention, si vous prenez une sauce soja 25% moins sal\u00e9e ou pire encore 50% moins sal\u00e9e il faut r\u00e9duire la dose de vinaigre de riz.\nchargement\u2026\nR\u00e9pondre\nLaurence\ndit\u00a0:\n31 d\u00e9cembre 2023 \u00e0 18 h 38 min\nCette recette est incroyable j\u2019ai re\u00e7u 16 personnes et j\u2019ai fait 1kg de nouilles en adaptant les proportions. J\u2019ai eu un succ\u00e8s fou, tout le monde s\u2019est resservi, il ne restait plus rien (pourtant il y avait plein d\u2019autres sur la table. Je ne ferai plus que celle l\u00e0, merci infiniment pour ce partage!\nchargement\u2026\nR\u00e9pondre\nSophie\ndit\u00a0:\n9 f\u00e9vrier 2024 \u00e0 2 h 51 min\nJ\u2019ai adapt\u00e9 la recette avec ce qui \u00e9tait dans mon frigo, 2 courgettes, \u00e0 la place de la carotte et des pousses de soja et comme je n\u2019avais pas d\u2019huile de s\u00e9same j\u2019ai ajout\u00e9 \u00e0 mon huile du Gomasio.\nToute la famille s\u2019est r\u00e9gal\u00e9e.\nMerci pour cette recette.\nchargement\u2026\nR\u00e9pondre\npalo\ndit\u00a0:\n22 avril 2024 \u00e0 19 h 05 min\nma sauce ne s\u2019\u00e9paississait pas estce normal??\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n23 avril 2024 \u00e0 17 h 06 min\nBonjour, la sauce n\u2019est pas sens\u00e9e \u00e9paissir en effet, plut\u00f4t etre absorb\u00e9e par les autres aliments\nchargement\u2026\nR\u00e9pondre\nZalewsky\ndit\u00a0:\n10 novembre 2024 \u00e0 17 h 12 min\nTrop de vinaigre, 2 cuill\u00e8res auraient largement suffit,sinon vraiment bien.\nchargement\u2026\nR\u00e9pondre\nLaure\ndit\u00a0:\n19 novembre 2024 \u00e0 19 h 26 min\nBonjour,\nA quel moment mettez-vous les pousses de soja car cela n\u2019appara\u00eet pas dans la recette?\nMerci\nchargement\u2026\nR\u00e9pondre\nJessica bourgeois\ndit\u00a0:\n6 juin 2025 \u00e0 14 h 46 min\nPiment au go\u00fbt\u2026.quel piment ??? Fort ou regulier ? En pur\u00e9e ou hach\u00e9?\nMerci\nchargement\u2026\nR\u00e9pondre\nJessica bourgeois\ndit\u00a0:\n6 juin 2025 \u00e0 14 h 46 min\nPiment au go\u00fbt\u2026.quel piment ??? Fort ou regulier ? En pur\u00e9e ou hach\u00e9?\nMerci\nchargement\u2026\nR\u00e9pondre\nClaudia\ndit\u00a0:\n24 juillet 2025 \u00e0 1 h 37 min\n200g c\u2019est pes\u00e9 au moment o\u00f9 la quantit\u00e9 de nouilles est s\u00e8che ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n24 juillet 2025 \u00e0 9 h 59 min\nBonjour, oui le poids est indiqu\u00e9 cru.\nchargement\u2026\nR\u00e9pondre\nClerveus aravna\ndit\u00a0:\n29 juillet 2025 \u00e0 16 h 54 min\nGood\nchargement\u2026\nR\u00e9pondre\nLucy\ndit\u00a0:\n24 septembre 2025 \u00e0 1 h 05 min\nJe r\u00e9duirais les quantit\u00e9s de vinaigre de riz, mais super bon et facile autrement !\nchargement\u2026\nR\u00e9pondre\nDeborah Mignot\ndit\u00a0:\n7 novembre 2025 \u00e0 15 h 27 min\nBonjour la soce soja sucr\u00e9e ou sal\u00e9e ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 novembre 2025 \u00e0 15 h 50 min\nBonjour, sal\u00e9e ! (toujours sal\u00e9e)\nchargement\u2026\nR\u00e9pondre\n4.65 from 191 votes (\n178 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 13.0
+}

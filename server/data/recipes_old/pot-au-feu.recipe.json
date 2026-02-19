@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "title": "Pot au feu",
+    "description": "Un plat traditionnel français de viande bouillie avec des légumes, servi avec son bouillon et accompagné de moutarde.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT3H",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pot_au_feu",
+      "viande",
+      "bouillon",
+      "légumes",
+      "traditionnel",
+      "français"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Servir avec du gros sel et de la moutarde de Dijon",
+      "Le bouillon peut être filtré pour un résultat plus clair"
+    ],
+    "slug": "pot-au-feu",
+    "originalContent": "pot au feu\n\n\nIngrédients :\nPaleron (1 kg)\nPlat-de-côtes (500 g)\n1 oignon\n4 carottes\n1 ou 2 poireaux\n2 ou 3 navets\n1 demi ou quart de chou\n2 gousses d’ail\n4 clous de girofle\nThym, laurier\nGros sel\nPoivre en grains\nOs à moelle (1 par personne)\n\nPréparation :\nCouper l’oignon en deux et y planter les clous de girofle\nDans une poêle bien chaude, placer les oignons à plat pour faire brûler la surface, de sorte à obtenir des demi oignons à la face carbonisée qui donneront du goût et de la couleur au bouillon\nDans un faitout assez haut, départ eau froide (3 litres d’eau environ), plonger la viande, le bouquet garni (thym, laurier), les demi oignons et deux gousses d’ail dégermées\nAjouter le gros sel et les grains de poivre et laisser cuire 1h30-2h\nIl ne faut pas qu’il y ait une grosse ébullition, juste laisser frémir\nÉcumer le bouillon régulièrement\nÉplucher et découper les navets en gros quartiers, éplucher les carottes\nAjouter les navets et les carottes au bouillon\nLaisser cuire encore 1h\nCouper l’extrémité des poireaux pour enlever la terre puis les ajouter au bouillon ainsi que les os à moelle et le chou\nLaisser cuire encore 20 min\nServir avec du gros sel et de la moutarde de Dijon\nFiltrer le bouillon à l’aide d’une épuisette ou un chinois\n\nMain recipe image: temp_image_recipe-gen-20260208054520-e9b41fc8.png",
+    "createdAt": "2026-02-08T05:46:31.659220",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 232.0,
+    "totalCookingTime": 47.0,
+    "sourceImageUrl": "pot-au-feu.png",
+    "image": "images/pot-au-feu.png",
+    "nutritionPerServing": {
+      "calories": 908.1,
+      "protein": 78.3,
+      "fat": 51.1,
+      "carbs": 33.6,
+      "fiber": 6.9,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ],
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "paleron",
+      "name": "paleron",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chuck steak"
+    },
+    {
+      "id": "plat_de_cotes",
+      "name": "plat-de-côtes",
+      "quantity": 0.5,
+      "unit": "kg",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "short ribs"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé en deux",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluchées",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "leeks",
+      "name": "poireaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "nettoyés",
+      "notes": "1 ou 2 selon préférence",
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "turnips",
+      "name": "navets",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluchés",
+      "notes": "2 ou 3 selon préférence",
+      "optional": false,
+      "name_en": "turnips"
+    },
+    {
+      "id": "cabbage",
+      "name": "chou",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "demi ou quart de chou",
+      "optional": false,
+      "name_en": "cabbage"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "dégermées",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cloves",
+      "name": "clous de girofle",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour bouquet garni",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "laurier",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour bouquet garni",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "coarse_salt",
+      "name": "gros sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "peppercorns",
+      "name": "poivre en grains",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "peppercorns"
+    },
+    {
+      "id": "marrow_bones",
+      "name": "os à moelle",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": "1 par personne",
+      "optional": false,
+      "name_en": "marrow bones"
+    }
+  ],
+  "tools": [
+    "faitout",
+    "poêle",
+    "épuisette ou chinois"
+  ],
+  "steps": [
+    {
+      "id": "prepare_onion",
+      "action": "Couper l'oignon en deux et y planter les clous de girofle.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "onion",
+        "cloves"
+      ],
+      "produces": "onion_with_cloves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "char_onion",
+      "action": "Dans une poêle bien chaude, placer les oignons à plat pour faire brûler la surface, de sorte à obtenir des demi oignons à la face carbonisée.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "onion_with_cloves"
+      ],
+      "produces": "charred_onion",
+      "requires": [],
+      "visualCue": "face carbonisée"
+    },
+    {
+      "id": "start_broth",
+      "action": "Dans un faitout assez haut, départ eau froide (3 litres d'eau environ), plonger la viande, le bouquet garni (thym, laurier), les demi oignons et deux gousses d'ail dégermées.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "paleron",
+        "plat_de_cotes",
+        "thyme",
+        "bay_leaf",
+        "charred_onion",
+        "garlic"
+      ],
+      "produces": "raw_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_broth",
+      "action": "Ajouter le gros sel et les grains de poivre au bouillon.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "raw_broth",
+        "coarse_salt",
+        "peppercorns"
+      ],
+      "produces": "seasoned_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_meat",
+      "action": "Laisser cuire la viande dans le bouillon pendant 1h30-2h à frémissement, sans grosse ébullition. Écumer le bouillon régulièrement.",
+      "duration": "PT1H45M",
+      "temperature": 95,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "seasoned_broth"
+      ],
+      "produces": "meat_broth",
+      "requires": [],
+      "visualCue": "frémissement léger"
+    },
+    {
+      "id": "prepare_root_vegetables",
+      "action": "Éplucher et découper les navets en gros quartiers, éplucher les carottes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "légumes",
+      "uses": [
+        "turnips",
+        "carrots"
+      ],
+      "produces": "prepared_root_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_root_vegetables",
+      "action": "Ajouter les navets et les carottes au bouillon.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "meat_broth",
+        "prepared_root_vegetables"
+      ],
+      "produces": "broth_with_root_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_root_vegetables",
+      "action": "Laisser cuire les légumes racines dans le bouillon pendant 1 heure.",
+      "duration": "PT1H",
+      "temperature": 95,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "broth_with_root_vegetables"
+      ],
+      "produces": "broth_with_cooked_root_vegetables",
+      "requires": [],
+      "visualCue": "légumes tendres"
+    },
+    {
+      "id": "prepare_green_vegetables",
+      "action": "Couper l'extrémité des poireaux pour enlever la terre, préparer le chou.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "légumes",
+      "uses": [
+        "leeks",
+        "cabbage"
+      ],
+      "produces": "prepared_green_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_green_vegetables",
+      "action": "Ajouter les poireaux, les os à moelle et le chou au bouillon.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "broth_with_cooked_root_vegetables",
+        "prepared_green_vegetables",
+        "marrow_bones"
+      ],
+      "produces": "complete_pot_au_feu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "final_cooking",
+      "action": "Laisser cuire encore 20 minutes.",
+      "duration": "PT20M",
+      "temperature": 95,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "complete_pot_au_feu"
+      ],
+      "produces": "cooked_pot_au_feu",
+      "requires": [],
+      "visualCue": "légumes verts tendres"
+    },
+    {
+      "id": "filter_broth",
+      "action": "Filtrer le bouillon à l'aide d'une épuisette ou un chinois.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "cooked_pot_au_feu"
+      ],
+      "produces": "filtered_pot_au_feu",
+      "requires": [],
+      "visualCue": "bouillon clair"
+    },
+    {
+      "id": "serve",
+      "action": "Servir le pot au feu avec du gros sel et de la moutarde de Dijon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "filtered_pot_au_feu"
+      ],
+      "produces": "served_pot_au_feu",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "served_pot_au_feu",
+  "originalText": "pot au feu\n\n\nIngrédients :\nPaleron (1 kg)\nPlat-de-côtes (500 g)\n1 oignon\n4 carottes\n1 ou 2 poireaux\n2 ou 3 navets\n1 demi ou quart de chou\n2 gousses d’ail\n4 clous de girofle\nThym, laurier\nGros sel\nPoivre en grains\nOs à moelle (1 par personne)\n\nPréparation :\nCouper l’oignon en deux et y planter les clous de girofle\nDans une poêle bien chaude, placer les oignons à plat pour faire brûler la surface, de sorte à obtenir des demi oignons à la face carbonisée qui donneront du goût et de la couleur au bouillon\nDans un faitout assez haut, départ eau froide (3 litres d’eau environ), plonger la viande, le bouquet garni (thym, laurier), les demi oignons et deux gousses d’ail dégermées\nAjouter le gros sel et les grains de poivre et laisser cuire 1h30-2h\nIl ne faut pas qu’il y ait une grosse ébullition, juste laisser frémir\nÉcumer le bouillon régulièrement\nÉplucher et découper les navets en gros quartiers, éplucher les carottes\nAjouter les navets et les carottes au bouillon\nLaisser cuire encore 1h\nCouper l’extrémité des poireaux pour enlever la terre puis les ajouter au bouillon ainsi que les os à moelle et le chou\nLaisser cuire encore 20 min\nServir avec du gros sel et de la moutarde de Dijon\nFiltrer le bouillon à l’aide d’une épuisette ou un chinois\n\nMain recipe image: temp_image_recipe-gen-20260208054520-e9b41fc8.png",
+  "totalCookingTime": 47.0
+}

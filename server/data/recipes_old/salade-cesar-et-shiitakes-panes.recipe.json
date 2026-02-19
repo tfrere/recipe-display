@@ -1,0 +1,527 @@
+{
+  "metadata": {
+    "title": "Salade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s",
+    "description": "Je suis une fan inv\u00e9t\u00e9r\u00e9e de cette recette de Salade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s. J'ai toujours beaucoup aim\u00e9 la salade C\u00e9sar. Et c'est vraiment facile de retrouver le go\u00fbt de la sauce c\u00e9sar en version v\u00e9g\u00e9tarienne. Tout r\u00e9side dans les c\u00e2pres !",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "salade c\u00e9sar",
+      "salade c\u00e9sar v\u00e9g\u00e9tarienne",
+      "sauce c\u00e9sar",
+      "sauce c\u00e9sar sans anchois",
+      "salade v\u00e9g\u00e9tarienne",
+      "recette sauce c\u00e9sar",
+      "idee recette salade vegetarienne",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/cesar-shitake-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez utiliser du tofu ou un steak de chou-fleur \u00e0 la place des shiitak\u00e9s pan\u00e9s.",
+      "Recette de c\u00e9sar au steak de chou-fleur disponible dans l'ebook d\u00e9di\u00e9 au chou-fleur."
+    ],
+    "slug": "salade-cesar-et-shiitakes-panes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/cesar-shitake-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/31/salade-cesar-et-shiitakes-panes/",
+    "image": "images/salade-cesar-et-shiitakes-panes.jpg",
+    "createdAt": "2026-02-09T20:41:05.541009",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 607.5,
+      "protein": 13.9,
+      "fat": 57.7,
+      "carbs": 11.4,
+      "fiber": 3.3,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 16,
+      "totalIngredients": 18,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shiitakes",
+      "name": "shiitak\u00e9s",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 75g",
+      "optional": false,
+      "name_en": "shiitake mushrooms"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": "chapelure",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "capers",
+      "name": "c\u00e2pres",
+      "quantity": 3.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "dijon_mustard",
+      "name": "moutarde de dijon",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dijon mustard"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "jus de citron",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "white_vinegar",
+      "name": "vinaigre blanc",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "White vinegar"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "bread",
+      "name": "pain",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": "tranche",
+      "notes": null,
+      "optional": false,
+      "name_en": "bread"
+    },
+    {
+      "id": "olive_oil_for_croutons",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic_clove",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "romaine_lettuce",
+      "name": "salade romaine",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "romaine lettuce"
+    },
+    {
+      "id": "parmesan_shavings",
+      "name": "copeaux de parmesan",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "parmesan cheese shavings"
+    },
+    {
+      "id": "extra_capers",
+      "name": "c\u00e2pres",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "Capers"
+    }
+  ],
+  "tools": [
+    "mixeur plongeant"
+  ],
+  "steps": [
+    {
+      "id": "clean_mushrooms",
+      "action": "Nettoyez les champignons avec un torchon sec.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "shiitakes"
+      ],
+      "produces": "cleaned_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_egg",
+      "action": "Battez l'\u0153uf dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "egg"
+      ],
+      "produces": "beaten_egg",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_breading",
+      "action": "Dans un autre bol, m\u00e9langez la chapelure avec les \u00e9pices (ail, origan, thym, sel, paprika fum\u00e9).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "breadcrumbs",
+        "garlic_powder",
+        "oregano",
+        "thyme",
+        "salt",
+        "smoked_paprika"
+      ],
+      "produces": "seasoned_breadcrumbs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bread_mushrooms",
+      "action": "Passez les champignons dans l'\u0153uf, puis dans la chapelure puis directement sur la plaque de cuisson. Evitez de trop les manipuler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "cleaned_mushrooms",
+        "beaten_egg",
+        "seasoned_breadcrumbs"
+      ],
+      "produces": "breaded_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C. Pr\u00e9parez une plaque de cuisson en la couvrant de papier cuisson.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "breaded_mushrooms"
+      ],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_mushrooms",
+      "action": "Enfournez \u00e0 mi-hauteur pendant 15min.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "shiitakes_panes",
+      "uses": [
+        "prepared_baking_sheet"
+      ],
+      "produces": "baked_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce_base",
+      "action": "Pendant la cuisson des champignons, mettez tous les ingr\u00e9dients de la sauce (c\u00e2pres, parmesan, moutarde, jus de citron, vinaigre blanc, huile d'olive) sauf le yaourt dans un bol et mixez avec un mixeur plongeant jusqu'\u00e0 ce que la sauce soit lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_cesar_vege",
+      "uses": [
+        "capers",
+        "parmesan",
+        "dijon_mustard",
+        "lemon_juice",
+        "white_vinegar",
+        "olive_oil"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": "sauce lisse"
+    },
+    {
+      "id": "finish_sauce",
+      "action": "Ajoutez le yaourt grec, m\u00e9langez et ajustez l'assaisonnement. R\u00e9servez au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_cesar_vege",
+      "uses": [
+        "sauce_base",
+        "greek_yogurt"
+      ],
+      "produces": "cesar_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_bread",
+      "action": "Coupez les tranches de pain en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade_et_assemblages",
+      "uses": [
+        "bread"
+      ],
+      "produces": "bread_cubes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_croutons",
+      "action": "Passez les \u00e0 la po\u00eale avec l'huile d'olive et la gousse d'ail press\u00e9e \u00e0 feu moyen fort. Retournez les r\u00e9guli\u00e8rement jusqu'\u00e0 ce qu'ils soient dor\u00e9s (environ 5min).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "salade_et_assemblages",
+      "uses": [
+        "bread_cubes",
+        "olive_oil_for_croutons",
+        "garlic_clove"
+      ],
+      "produces": "croutons",
+      "requires": [],
+      "visualCue": "dor\u00e9s"
+    },
+    {
+      "id": "prepare_lettuce",
+      "action": "Lavez la salade et coupez-la en tron\u00e7ons de 3cm environ.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salade_et_assemblages",
+      "uses": [
+        "romaine_lettuce"
+      ],
+      "produces": "prepared_lettuce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_salad",
+      "action": "Assemblez tous les ingr\u00e9dients de la salade (salade romaine, cro\u00fbtons) avec la vinaigrette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "salade_et_assemblages",
+      "uses": [
+        "prepared_lettuce",
+        "croutons",
+        "cesar_sauce"
+      ],
+      "produces": "dressed_salad",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_mushrooms",
+      "action": "Coupez les champignons cuits en lamelles et disposez-les par-dessus la salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "salade_et_assemblages",
+      "uses": [
+        "baked_mushrooms",
+        "dressed_salad",
+        "parmesan_shavings",
+        "extra_capers"
+      ],
+      "produces": "salade_cesar_shiitakes_panes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "salade_cesar_shiitakes_panes",
+  "originalText": "Salade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 octobre 2021\nSalade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s\nJe suis une fan inv\u00e9t\u00e9r\u00e9e de cette recette de Salade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s.\nJ\u2019ai toujours beaucoup aim\u00e9 la salade C\u00e9sar. Et c\u2019est vraiment facile de retrouver le go\u00fbt de la sauce c\u00e9sar en version v\u00e9g\u00e9tarienne. Tout r\u00e9side dans les c\u00e2pres !\nPour tout vous dire, j\u2019ai fait cette recette de Salade C\u00e9sar V\u00e9g\u00e9 et Champignons Shiitak\u00e9s Pan\u00e9s et son shooting il y a plusieurs mois d\u00e9j\u00e0. Au tout d\u00e9but de la saison de la salade romaine.\nOn arrive en fin de saison. Et je me rends compte que je n\u2019ai pas encore pris le temps de vous la partager. Me voici donc ! La recette de la salade est tout ce qu\u2019il y a de plus simple. Vous pouvez la pr\u00e9parer toute seule. Ou ajouter un peu plus en panant un ingr\u00e9dient.\nIci, j\u2019ai utilis\u00e9 des shiitak\u00e9s pan\u00e9s pour retrouver l\u2019effet poulet pan\u00e9. Mais vous pouvez utiliser ce qui vous pla\u00eet. Du tofu par exemple. Ou m\u00eame un steak de chou-fleur ! D\u2019ailleurs, vous pouvez retrouver ma recette de c\u00e9sar au steak de chou-fleur dans\nnotre ebook d\u00e9di\u00e9 au chou-fleur\n!\nVous y trouverez 13 recettes pour cuisiner le chou-fleur sous toutes ses formes !\nVous avez des id\u00e9es pour le th\u00e8me du prochain ebook ?\nSalade C\u00e9sar V\u00e9g\u00e9 et Champignons Shiitak\u00e9s Pan\u00e9s\nNatacha\n4.61\n/5 avec\n78\nvotes\nImprimer la recette\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les Shitak\u00e9s Pan\u00e9s\n10\nshitak\u00e9s\nenv 75g\n1\noeuf\n40\ng\nde chapelure\n\u00bd\nc\u00e0c d\u2019ail\n1\npinc\u00e9e d\u2019origan\n1\npinc\u00e9e de thym\n1\npinc\u00e9e de sel\n\u00bd\nc\u00e0c de paprika fum\u00e9\nPour la Sauce C\u00e9sar V\u00e9g\u00e9\n3\ngrosses c\u00e0c de c\u00e2pres\n30\ng\nde parmesan\n1\nc\u00e0c bomb\u00e9e de moutarde de dijon\n4\nc\u00e0s de jus de citron\n1\nc\u00e0s de vinaigre blanc\n4\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0s de yaourt grec\nPour la salade\n2\ntranches de pain\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\ngousse d\u2019ail\n1\ngrosse salade romaine\ndes copeaux de parmesan\nplus ou moins au go\u00fbt\nquelques c\u00e2pres\nInstructions\nPr\u00e9chauffez le four \u00e0 200\u00b0C. Pr\u00e9parez une plaque de cuisson en la couvrant de papier cuisson.\nNettoyez les champignons avec un torchon sec.\nBattez l\u2019\u0153uf dans un bol.\nDans un autre bol, m\u00e9langez la chapelure avec les \u00e9pices.\nPassez les champignons dans l\u2019\u0153uf, puis dans la chapelure puis directement sur la plaque de cuisson.Evitez de trop les manipuler, la panure se fixera \u00e0 la cuisson.\nEnfournez \u00e0 mi-hauteur pendant 15min.\nPendant ce temps, pr\u00e9parez la sauce c\u00e9sar : mettez tous les ingr\u00e9dients (sauf le yaourt) dans un bol et mixez avec un mixeur plongeant jusqu\u2019\u00e0 ce que la sauce soit lisse. Ajoutez le yaourt, m\u00e9langez et ajustez l\u2019assaisonnement. R\u00e9servez au frais.\nCoupez les tranches de pain en d\u00e9s. Passez les \u00e0 la po\u00eale avec l\u2019huile d\u2019olive et la gousse d\u2019ail press\u00e9e \u00e0 feu moyen fort. Retournez les r\u00e9guli\u00e8rement jusqu\u2019\u00e0 ce qu\u2019ils soient dor\u00e9s (environ 5-6min).\nLavez la salade et coupez-la en tron\u00e7ons de 3cm environ.\nAssemblez tous les ingr\u00e9dients de la salade avec la vinaigrette, puis coupez les champignons en lamelles et disposez-les par-dessus. C\u2019est pr\u00eat !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nidee recette salade vegetarienne\n,\nrecette sauce c\u00e9sar\n,\nsalade c\u00e9sar\n,\nsalade c\u00e9sar v\u00e9g\u00e9tarienne\n,\nsalade v\u00e9g\u00e9tarienne\n,\nsauce c\u00e9sar\n,\nsauce c\u00e9sar sans anchois\nPaupiettes v\u00e9g\u00e9tariennes Sauce au Cidre\nPizza Pockets \u00e0 la Mozzarella\n2 thoughts on \u201cSalade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s\u201d\nSammy Georges\ndit\u00a0:\n31 octobre 2021 \u00e0 12 h 52 min\nUn grand merci j\u2019adore la C\u00e9sar salade et du coup je vais me pr\u00e9parer votre recette veggie et je vous tiens au courant du r\u00e9sultat bient\u00f4t.\nCordialement\nSammy\nchargement\u2026\nR\u00e9pondre\nBosha\ndit\u00a0:\n1 novembre 2021 \u00e0 10 h 40 min\nJ\u2019ai ador\u00e9 votre ebook sur le Chou-Fleur, il est vraiment excellent !!! Bravo\nJ\u2019ai donc r\u00e9alis\u00e9e votre salade C\u00e9sar  au chou fleur pan\u00e9,, on a tous  trouv\u00e9 cette id\u00e9e g\u00e9niale, et le go\u00fbt est diabolique !!!\nIci on aime beaucoup le chou fleur, donc on profite de sa saison de sept \u00e0 mai pour en profiter un maximum\nJ\u2019ai don d\u00e9j\u00e0  r\u00e9alis\u00e9 quelques recettes de votre livre et Les filles c\u2019est  toujours sublime  :  le Gratin de Chou-Fleur Iod\u00e9 fa\u00e7on brandade, le Dhal de Lentilles Corail et Chou-Fleur  et  Brochettes de Chou-Fleur au Sat\u00e9, Fabuleux\u2026 Et ce n\u2019est pas fini ! Merci et Belle et Bonne journ\u00e9e\nchargement\u2026\nR\u00e9pondre\n4.61 from 78 votes (\n76 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

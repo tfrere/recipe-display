@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "title": "Soupe Tha\u00ef aux 2 Currys",
+    "description": "Cette Soupe Tha\u00ef aux 2 Currys est parfaite avec les temp\u00e9ratures qui baissent ! Elle est \u00e0 la fois r\u00e9confortante et parfum\u00e9e.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "recette asiatique",
+      "brocoli",
+      "soupe",
+      "curry"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Soupe-Thai-Cristel-2-of-4-2.jpg",
+    "nationality": "Thai",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si vous ne trouvez pas de shiitak\u00e9s, vous pouvez utiliser des champignons de paris.",
+      "J'aime utiliser des nouilles de riz dans cette soupe. Cela dit, des nouilles aux \u0153ufs, ou des vermicelles de riz feront parfaitement l'affaire.",
+      "Comme toujours, la cuisine est faite pour \u00eatre adapt\u00e9e.",
+      "Le faitout en inox est un parfait conducteur de chaleur, qui assure que le bouillon cuise bien et rapidement."
+    ],
+    "slug": "soupe-thai-aux-2-currys",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Soupe-Thai-Cristel-2-of-4-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/03/soupe-thai-aux-2-currys/",
+    "image": "images/soupe-thai-aux-2-currys.webp",
+    "createdAt": "2026-02-09T21:34:13.967788",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 86.0,
+    "totalCookingTime": 56.0,
+    "peakMonths": [
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 623.7,
+      "protein": 12.1,
+      "fat": 26.6,
+      "carbs": 86.9,
+      "fiber": 6.4,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 14,
+      "totalIngredients": 16,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "shiitake",
+      "name": "shitak\u00e9s",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Shiitake mushrooms"
+    },
+    {
+      "id": "red_curry_paste",
+      "name": "p\u00e2te de curry rouge",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red curry paste"
+    },
+    {
+      "id": "lime_zest",
+      "name": "citron vert bio, zeste",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "zeste",
+      "notes": "1/2 citron vert bio",
+      "optional": false,
+      "name_en": "Organic lime zest"
+    },
+    {
+      "id": "curry_powder",
+      "name": "curry en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Curry powder"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Turmeric powder"
+    },
+    {
+      "id": "coconut_cream",
+      "name": "cr\u00e8me de coco en conserve",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Canned coconut cream"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 800.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "lime_juice",
+      "name": "citron vert, jus",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": "1 citron vert",
+      "optional": false,
+      "name_en": "Lime juice"
+    },
+    {
+      "id": "broccoli",
+      "name": "brocoli",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "t\u00eate",
+      "optional": false,
+      "name_en": "broccoli"
+    },
+    {
+      "id": "rice_noodles",
+      "name": "nouilles de riz",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice noodles"
+    },
+    {
+      "id": "coriander",
+      "name": "coriandre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "bouquet",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "spring_onions",
+      "name": "oignons nouveaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Spring onions"
+    }
+  ],
+  "tools": [
+    "faitout (ou grande casserole)",
+    "mixeur"
+  ],
+  "steps": [
+    {
+      "id": "chop_aromatics",
+      "action": "Hacher tr\u00e8s finement l'oignon, le gingembre et l'ail. Le plus simple est de tout mettre dans un mixeur et de mixer jusqu'\u00e0 obtenir une sorte de p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion",
+        "ginger",
+        "garlic"
+      ],
+      "produces": "aromatic_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Verser 1 c\u00e0s d'huile dans votre faitout et y faire revenir ces condiments pendant 7-8min en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "aromatic_paste",
+        "vegetable_oil"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_mushrooms",
+      "action": "Emincer les shiitak\u00e9s.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "mushrooms",
+      "uses": [
+        "shiitake"
+      ],
+      "produces": "sliced_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_mushrooms",
+      "action": "Les ajouter dans le faitout et faire revenir encore quelques minutes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "mushrooms",
+      "uses": [
+        "sliced_mushrooms",
+        "sauteed_aromatics"
+      ],
+      "produces": "mushroom_aromatic_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spices",
+      "action": "Ajouter la p\u00e2te de curry, le zeste de citron vert et les \u00e9pices en poudre (curry et curcuma). Faire revenir encore 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "mushroom_aromatic_mix",
+        "red_curry_paste",
+        "lime_zest",
+        "curry_powder",
+        "turmeric"
+      ],
+      "produces": "spiced_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajouter la cr\u00e8me de coco, l'eau, la sauce soja, le sucre et le jus de citron vert. Bien remuer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "soup",
+      "uses": [
+        "spiced_base",
+        "coconut_cream",
+        "water",
+        "soy_sauce",
+        "sugar",
+        "lime_juice"
+      ],
+      "produces": "soup_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_soup",
+      "action": "Baisser le feu, couvrir et laisser mijoter pendant 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "soup",
+      "uses": [
+        "soup_base"
+      ],
+      "produces": "simmered_broth",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_broccoli",
+      "action": "D\u00e9tailler le brocoli en fleurets.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "broccoli",
+      "uses": [
+        "broccoli"
+      ],
+      "produces": "broccoli_florets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_broccoli",
+      "action": "10min avant la fin de la cuisson du bouillon, ajouter le brocoli d\u00e9taill\u00e9 en fleurets.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soup",
+      "uses": [
+        "simmered_broth",
+        "broccoli_florets"
+      ],
+      "produces": "broth_with_broccoli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_noodles",
+      "action": "Pendant ce temps, faire cuire les nouilles de riz en suivant les indications du paquet, en g\u00e9n\u00e9ral 5 \u00e0 10min dans une casserole d'eau bouillante. Les \u00e9goutter et les r\u00e9server dans un bol d'eau froide.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "noodles",
+      "uses": [
+        "rice_noodles"
+      ],
+      "produces": "cooked_noodles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_herbs",
+      "action": "Hacher la coriandre et les tiges des oignons nouveaux.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnish",
+      "uses": [
+        "coriander",
+        "spring_onions"
+      ],
+      "produces": "chopped_herbs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_soup",
+      "action": "Pour servir, vous pouvez assembler la soupe dans le faitout, ou pour un r\u00e9sultat plus esth\u00e9tique, ajouter les nouilles et les herbes hach\u00e9es directement dans les assiettes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "broth_with_broccoli",
+        "cooked_noodles",
+        "chopped_herbs"
+      ],
+      "produces": "soupe_thai_2_currys",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_thai_2_currys",
+  "originalText": "Soupe Tha\u00ef aux 2 Currys - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 octobre 2022\nSoupe Tha\u00ef aux 2 Currys\nAller \u00e0 la recette\nCette Soupe Tha\u00ef aux 2 Currys est parfaite avec les temp\u00e9ratures qui baissent !\nElle est \u00e0 la fois r\u00e9confortante et parfum\u00e9e. Elle vous emm\u00e8ne loin tout en vous r\u00e9chauffant ! C\u2019est bien \u00e7a qui est merveilleux avec la cuisine. Vous ne trouvez pas ?\nLa base de la soupe est une p\u00e2te d\u2019ail, oignon et gingembre. En gros, on hache tr\u00e8s finement ces 3 ingr\u00e9dients. Ou encore plus simple, on les passe au mixeur. \u00c7a fait gagner du temps ! Cette base permet de booster la soupe ! C\u2019est d\u2019ailleurs ce type de base que j\u2019utilise pour beaucoup de recettes asiatiques. Comme\nles dhals\n, les currys etc\u2026\nEnsuite, j\u2019ai ajout\u00e9 de la p\u00e2te de curry rouge. Vous la trouverez au rayon \u201cmonde\u201d des supermarch\u00e9s, dans les magasins bio ou les magasins asiatiques. C\u2019est elle qui vient donner la saveur si particuli\u00e8re de cette soupe tha\u00ef. Et puis j\u2019ai eu envie de booster encore plus la soupe en ajoutant du curry jaune ! Cette petite touche en plus assure le d\u00e9paysement !\nJ\u2019ai utilis\u00e9 des shiitak\u00e9s dans ce bouillon. Si vous n\u2019en trouvez pas, vous pouvez utiliser des champignons de paris.\nJ\u2019aime utiliser des nouilles de riz dans cette soupe. Cela dit, des nouilles aux \u0153ufs, ou des vermicelles de riz feront parfaitement l\u2019affaire.\nComme toujours, la cuisine est faite pour \u00eatre adapt\u00e9e. J\u2019adore savoir quand vous vous appropriez les recettes et les modifiez ! N\u2019h\u00e9sitez pas \u00e0 me dire en commentaire quels changements vous avez fait !\nLe faitout\nJ\u2019ai r\u00e9alis\u00e9 cette recette de Soupe Tha\u00ef aux 2 Currys dans\nle faitout de la gamme Castel\u2019pro\nde Cristel, avec qui nous collaborons.\nJ\u2019ai beaucoup cette gamme, tout en inox. Non seulement, le format du faitout se pr\u00eate parfaitement \u00e0 la pr\u00e9paration de ce bouillon. Mais en plus, l\u2019inox est un parfait conducteur de chaleur, qui assure que le bouillon cuise bien et rapidement. Et, cerise sur le g\u00e2teau, on peut tout mettre au lave-vaisselle derri\u00e8re ! Et pour moi, c\u2019est un plus incontestable \ud83d\ude42\nSoupe Tha\u00ef aux 2 Currys\n4.50\n/5 avec\n71\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon\n15\ng\nde gingembre frais\nenv 1 c\u00e0s\n6\ngousses d\u2019ail\n100\ng\nde shitak\u00e9s\n1\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale\n3\nc\u00e0s de p\u00e2te de curry rouge\nle zeste d\u2019\u00bd citron vert bio\n2\nc\u00e0c de curry en poudre\n1\nc\u00e0c de curcuma en poudre\n400\nml\nde cr\u00e8me de coco en conserve\n800\nml\nd\u2019eau\n4\nc\u00e0s de sauce soja\n1\nc\u00e0s de sucre\nle jus d\u2019un citron vert\n1\nt\u00eate de brocoli\n500\ng\nde nouilles de riz\n1\nbeau bouquet de coriandre\n2\noignons nouveaux\nInstructions\nHacher tr\u00e8s finement l\u2019oignon, le gingembre et l\u2019ail. Le plus simple est de tout mettre dans un mixeur et de mixer jusqu\u2019\u00e0 obtenir une sorte de p\u00e2te.\nVerser 1 c\u00e0s d\u2019huile dans votre faitout et y faire revenir ces condiments pendant 7-8min en remuant r\u00e9guli\u00e8rement.\nEmincer les shiitak\u00e9s.\nLes ajouter et faire revenir encore quelques minutes.\nAjouter la p\u00e2te de curry, le zeste et les \u00e9pices en poudre. Faire revenir encore 3-4min.\nAjouter la cr\u00e8me de coco, l\u2019eau, la sauce soja, le sucre et le jus de citron.\nBien remuer.\nBaisser le feu et laisser mijoter une trentaine de minutes \u00e0 couvert.\n10min avant la fin, ajouter le brocoli d\u00e9taill\u00e9 en fleurets.\nFaire cuire les nouilles en suivant les indications du paquet, en g\u00e9n\u00e9ral 5 \u00e0 10min dans une casserole d\u2019eau bouillante. R\u00e9server dans un bol d\u2019eau froide;\nHacher la coriandre et les tiges des oignons nouveaux.\nVous pouvez assembler la soupe dans le faitout, ou pour un r\u00e9sultat plus esth\u00e9tique, ajouter les nouilles et les herbes hach\u00e9es directement dans les assiettes.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBrocoli\n,\nRecettes Sal\u00e9es\n,\nSoupes\nTags:\nrecette asiatique\nCr\u00eapes au Potimarron\nCourgettes \u00e0 la sauce tomate \u00e0 la grecque\n3 thoughts on \u201cSoupe Tha\u00ef aux 2 Currys\u201d\nLadyMilonguera\ndit\u00a0:\n4 octobre 2022 \u00e0 9 h 15 min\nCette soupe tha\u00ef n\u2019est pas pour me d\u00e9plaire.\nchargement\u2026\nR\u00e9pondre\nvezo\ndit\u00a0:\n11 janvier 2023 \u00e0 16 h 14 min\nBonjour!\nCette soupe a l\u2019air d\u00e9licieuse!!\nPourrais-tu recommander une/des marques de p\u00e2te de curry? Je n\u2019aime pas toujours ceux du commerce, et il n\u2019y o pas vraiment d\u2019\u00e9picerie exotique vers chez moi\u2026 \ud83d\ude41\nmerci beaucoup!\nchargement\u2026\nR\u00e9pondre\nPatricia\ndit\u00a0:\n8 janvier 2025 \u00e0 19 h 36 min\nJ\u2019adore ! Comme c\u2019est dit c\u2019est r\u00e9confortant, pleins de saveurs, un d\u00e9lice  , j\u2019y ai ajout\u00e9 des aiguillettes de poulet , du nuoc mam, un petit piment ( pour ceux aiment encore plus relev\u00e9) , des carottes en rondelles avec le brocoli que j\u2019ajoutent 10 mn avant  les 30 mn de mijotage , je sers tout \u00e7a sur les nouilles de riz et la coriandre et tout le monde adore chez moi , \u00e7a fait trois fois que je fais la recette , merci pour les instructions \ud83d\udc4d\nchargement\u2026\nR\u00e9pondre\n4.50 from 71 votes (\n68 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 56.0
+}

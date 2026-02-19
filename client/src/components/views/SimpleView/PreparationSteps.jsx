@@ -47,12 +47,13 @@ const PreparationSteps = ({ recipe }) => {
     });
   };
 
-  const numSubRecipes = Object.keys(recipe.subRecipes || {}).length;
+  const subRecipes = recipe.subRecipes || [];
+  const numSubRecipes = subRecipes.length;
   const isSingleSubRecipe = numSubRecipes === 1;
 
   // Pour le cas d'une sous-recette unique, utiliser getSubRecipeStats
   const singleSubRecipeStats = isSingleSubRecipe
-    ? getSubRecipeStats(Object.keys(recipe.subRecipes)[0])
+    ? getSubRecipeStats(subRecipes[0]?.id)
     : null;
 
   // Vérifie si des étapes ont été complétées
@@ -104,8 +105,8 @@ const PreparationSteps = ({ recipe }) => {
       </Box>
 
       {/* Liste des sous-recettes */}
-      {Object.entries(recipe.subRecipes || {}).map(
-        ([subRecipeId, subRecipe], index) => {
+      {(recipe.subRecipes || []).map((subRecipe, index) => {
+          const subRecipeId = subRecipe.id;
           const steps = subRecipe.steps || [];
           const isCompleted = completedSubRecipes[subRecipeId];
           const stats = getSubRecipeStats(subRecipeId);
@@ -201,7 +202,6 @@ const PreparationSteps = ({ recipe }) => {
                       <Box
                         sx={{
                           display: "flex",
-                          alignItems: "center",
                           gap: 0,
                           width: "100%",
                           flexDirection: { xs: "column", md: "row" },
@@ -224,11 +224,13 @@ const PreparationSteps = ({ recipe }) => {
                         >
                           {highlightMatches(step.action, recipe, {
                             inputs: step.inputs || [],
-                            tools: step.tools || [],
+                            tools: step.tools || step.requires || [],
                             output: step.output,
+                            uses: step.uses,
+                            produces: step.produces,
                           })}
                         </Typography>
-                        {(step.time || step.stepType || step.stepMode) && (
+                        {(step.time || step.stepType || step.stepMode || step.isPassive) && (
                           <Box
                             sx={{
                               display: "flex",
@@ -241,7 +243,7 @@ const PreparationSteps = ({ recipe }) => {
                               mt: { xs: 0.5, md: 0 },
                             }}
                           >
-                            {step.stepMode === "passive" && (
+                            {(step.stepMode === "passive" || step.isPassive) && (
                               <Typography
                                 variant="body2"
                                 sx={{
@@ -253,7 +255,7 @@ const PreparationSteps = ({ recipe }) => {
                                 passive
                               </Typography>
                             )}
-                            {step.stepMode === "passive" &&
+                            {(step.stepMode === "passive" || step.isPassive) &&
                               (step.time || step.stepType) && (
                                 <Typography
                                   variant="body2"
@@ -266,7 +268,7 @@ const PreparationSteps = ({ recipe }) => {
                                 </Typography>
                               )}
                             {step.time &&
-                              (step.stepMode === "passive" ||
+                              (step.stepMode === "passive" || step.isPassive ||
                                 parseTimeToMinutes(step.time) > 10) && (
                                 <Typography
                                   variant="body2"
@@ -282,7 +284,7 @@ const PreparationSteps = ({ recipe }) => {
                               )}
                             {step.time &&
                               step.stepType &&
-                              (step.stepMode === "passive" ||
+                              (step.stepMode === "passive" || step.isPassive ||
                                 parseTimeToMinutes(step.time) > 10) && (
                                 <Typography
                                   variant="body2"

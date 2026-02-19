@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "title": "Pralines Amande Noisette Maison",
+    "description": "Gourmandes et super croquantes, ces pralines maison sont très simples à réaliser. Des fruits secs torréfiés, du sirop pour les enrober et boum le tour est joué !",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pralines",
+      "pralin",
+      "praliné",
+      "chouchou"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Pralines-maison-1-of-3-768x1024.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette super simple, réalisable sans thermomètre culinaire en comptant 5 minutes après l'ébullition.",
+      "Les pralines peuvent être dégustées telles quelles, mixées pour faire du pralin (topping pour glaces/yaourts, garniture de brioche) ou mixées encore plus pour faire du praliné (pour une tarte chocolat noisette par exemple).",
+      "Conserver dans un bocal/boîte hermétique une fois refroidies."
+    ],
+    "slug": "pralines-amande-noisette-maison",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Pralines-maison-1-of-3-768x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/11/pralines-maison/",
+    "image": "images/pralines-amande-noisette-maison.webp",
+    "createdAt": "2026-02-09T19:48:38.608938",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 90.0,
+    "totalCookingTime": 5.0,
+    "nutritionPerServing": {
+      "calories": 2654.0,
+      "protein": 54.0,
+      "fat": 164.4,
+      "carbs": 255.1,
+      "fiber": 31.2,
+      "confidence": "high",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 3,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "hazelnuts",
+      "name": "noisettes entières",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnuts"
+    },
+    {
+      "id": "almonds",
+      "name": "amandes entières",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almonds"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Thermomètre culinaire (optionnel)",
+    "Torchon"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 160°C.",
+      "duration": null,
+      "temperature": 160,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_nuts",
+      "action": "Déposer les noisettes et les amandes sur une plaque recouverte de papier cuisson et les torréfier pendant 25min.",
+      "duration": "PT25M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "hazelnuts",
+        "almonds"
+      ],
+      "produces": "roasted_nuts",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "remove_hazelnut_skins",
+      "action": "Attendre quelques minutes que les noisettes refroidissent, puis frotter leur peau avec un torchon pour l'enlever.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_nuts"
+      ],
+      "produces": "skinned_roasted_nuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_syrup",
+      "action": "Dans une casserole, verser le sucre et l'eau et porter à ébullition. Cuire jusqu'à ce que le sirop atteigne 116°C (ou compter 5min après l'ébullition).",
+      "duration": "PT5M",
+      "temperature": 116,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sugar",
+        "water"
+      ],
+      "produces": "sugar_syrup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_nuts",
+      "action": "Verser les noisettes et les amandes dans le sirop. Mélanger doucement pour les enrober et cuire sans cesser de remuer jusqu'à ce que le sucre caramélise et se colore.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "skinned_roasted_nuts",
+        "sugar_syrup"
+      ],
+      "produces": "caramelized_nuts",
+      "requires": [],
+      "visualCue": "sucre caramélise et se colore"
+    },
+    {
+      "id": "cool_pralines",
+      "action": "Verser le tout sur une feuille de papier cuisson, étaler les pralines et laisser refroidir pendant 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "caramelized_nuts"
+      ],
+      "produces": "cooled_pralines",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "break_pralines",
+      "action": "Une fois refroidies, casser les pralines en morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_pralines"
+      ],
+      "produces": "pralines_amande_noisette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pralines_amande_noisette",
+  "originalText": "Pralines Amande Noisette Maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 avril 2020\nPralines Amande Noisette Maison\nAccéder directement à la recette\nCette année, le weekend de Pâques est un peu particulier… Pour cause de confinement, il n’y aura pas de grand repas de famille. Bon, d’accord, c’est pas super réjouissant tout ça, mais il faut rester positif ! Certes les traditions sont un peu bousculées, et alors? Au lieu d’un grand repas avec beaucoup couverts, on peut aussi se faire un GRAND repas pour une, deux, trois personnes etc… Alors haut les coeurs, les p’tits cornichons ! Mangez un peu plus de chocolat que d’habitude (oui on a le droit) et surtout pourquoi pas essayer de préparer ces pralines maison !\nCette recette est su-per simple ! Bon alors, oui d’accord, tout le monde n’a pas forcément de thermomètre culinaire mais vous savez quoi? Et bien cette recette, je l’ai réalisé il y a un an. Oui oui, UN AN, elle attendait patiemment d’être publiée. Bref donc je disais… il y a un an, et à cette époque je ne disposais pas du tout d’un thermomètre de cuisine (bon maintenant j’en ai un, offert par ma Natacha doudou parce qu’elle est trop géniale) et je me suis débrouillée SANS ! Mon astuce, compter 5 minutes après l’ébullition et ça devrait le faire !\nVous pouvez déguster les pralines telles quelles, mais aussi les mixer pour en faire du pralin ou les mixer encore plus et en faire du praliné, n’est ce pas merveilleuuuuux? Le pralin peut être utilisé en topping sur les glaces/yaourts ou dans une garniture pour une brioche, comme dans la\nbrioche flocon\n. Pour ce qui est du praliné, vous pouvez l’utiliser dans la préparation de la\ntarte chocolat noisette\n(oh ça tombe bien, c’était ma recette pour Pâques de l’année dernière hehe) !\nPralines Maison\nGourmandes et super croquantes, ces pralines maison sont très simples à réaliser. Des fruits secs torréfiés, du sirop pour les enrober et boum le tour est joué ! A déguster, entières, ou réduites en pralin ou encore bien mixées en praliné… Gourmandise illimitée garantie !\n4.41\n/5 avec\n37\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n15\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nTemps de repos\n1\nheure\nh\nIngrédients\n150\ng\nde noisettes entières\n150\ng\nd’amandes entières\n200\ng\nde sucre\n50\nml\nd’eau\nInstructions\nDéposer les noisettes et les amandes sur une plaque recouverte de papier cuisson afin de les torréfier au four à 160°C pendant 20/25 minutes.\nAttendez quelques minutes puis frotter la peau des noisettes avec un torchon, la peau s’enlève très facilement.\nDans une casserole, verser le sucre et l'eau, porter le tout à ébullition, quand le sirop atteint 116 degrés verser les noisettes et les amandes.\nMélanger doucement afin d'enrober les fruits secs et cuire sans cesser de remuer jusqu’à ce que le sucre caramélise et se colore.\nVerser le tout sur une feuille de papier cuisson, étalez-les et laissez refroidir (environ 1h).\nUne fois les pralines refroidies, vous pouvez casser le tout en morceaux et conserver dans un bocal/boîte hermétique.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCookies Biscuits et Mignardises\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nchouchou\n,\npralin\n,\npraliné\n,\npralines\nGalettes de Lentilles Corail et Carottes\nTagliatelles Maison sans machine\n3 thoughts on “Pralines Amande Noisette Maison”\nLadyMilonguera\ndit :\n11 avril 2020 à 21 h 36 min\nHummmmm… Les pralines, je ne résiste pas !\nchargement…\nRépondre\nNicole\ndit :\n31 décembre 2022 à 9 h 41 min\nPensez-vous que je puisse faire la même recette avec des noix ?  J’en ai beaucoup !\nchargement…\nRépondre\nDaniela\ndit :\n31 décembre 2022 à 10 h 52 min\nOuiiii bien sûr !\nchargement…\nRépondre\n4.41 from 37 votes (\n37 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

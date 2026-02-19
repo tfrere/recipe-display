@@ -20,31 +20,53 @@ export const calculateNodeHeight = (node) => {
   return height;
 };
 
+/**
+ * Build graph data for a single sub-recipe.
+ * Each sub-recipe gets its own isolated graph.
+ */
 export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
+  return prepareGraphDataUnified([subRecipe], recipe, subRecipeId);
+};
+
+/**
+ * Build a unified graph across all sub-recipes.
+ * States produced in one sub-recipe are properly linked when consumed in another.
+ * This avoids duplicate state nodes and disconnected graphs.
+ */
+export const prepareGraphDataUnified = (subRecipes, recipe, graphId = "graph") => {
   const nodes = [];
   const links = [];
   const processedNodes = new Set();
-  const stateNodes = new Map();
+  const stateNodes = new Map(); // Global across all sub-recipes
+  const ingredientNodes = new Map(); // Global across all sub-recipes
 
-  console.log("Preparing graph data for subRecipe:", subRecipe);
-
-  // Créer un objet tools à partir de toolsList pour une recherche plus facile
+  // Build tools map (recipe.tools is an array of tool name strings)
   const toolsMap = {};
-  if (recipe.toolsList) {
-    recipe.toolsList.forEach((tool) => {
-      toolsMap[tool.id] = tool;
+  if (Array.isArray(recipe.tools)) {
+    recipe.tools.forEach((tool) => {
+      if (typeof tool === "object" && tool.id) {
+        toolsMap[tool.id] = tool;
+      } else if (typeof tool === "string") {
+        toolsMap[tool] = { id: tool, name: tool };
+      }
     });
   }
 
-  // Fonction utilitaire pour créer ou récupérer un nœud d'état
-  const getOrCreateStateNode = (stateRef, preparation, preparationName) => {
-    const stateId = `${subRecipeId}-${stateRef}`;
+  // Build ingredients map for quick lookup
+  const ingredientsMap = {};
+  (recipe.ingredients || []).forEach((ing) => {
+    ingredientsMap[ing.id] = ing;
+  });
+
+  // Global function to create or retrieve a state node (shared across sub-recipes)
+  const getOrCreateStateNode = (stateRef, label) => {
+    const stateId = `state-${stateRef}`;
     if (!stateNodes.has(stateId)) {
       const node = {
         id: stateId,
-        label: preparationName || preparation,
+        label: label || stateRef.replace(/_/g, " "),
         type: "state",
-        details: preparation,
+        details: stateRef,
       };
       nodes.push(node);
       stateNodes.set(stateId, node);
@@ -53,77 +75,23 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
     return stateNodes.get(stateId);
   };
 
-  // Fonction pour traiter une sous-recette
-  const processSubRecipe = (subRecipeRef) => {
-    const referencedSubRecipe = recipe.subRecipes.find(
-      (sr) => sr.id === subRecipeRef
-    );
-    if (!referencedSubRecipe) {
-      console.log("Sub-recipe not found:", subRecipeRef);
-      return null;
-    }
+  // First pass: add all ingredient nodes (deduplicated across sub-recipes)
+  subRecipes.forEach((subRecipe) => {
+    if (!subRecipe.ingredients) return;
 
-    // Récursivement préparer le graphe de la sous-recette
-    const subGraph = prepareGraphData(
-      referencedSubRecipe,
-      recipe,
-      `${subRecipeId}-sub-${subRecipeRef}`
-    );
-
-    if (!subGraph) {
-      console.log("Failed to prepare sub-recipe graph");
-      return null;
-    }
-
-    // Ajouter les nœuds de la sous-recette
-    subGraph.nodes?.forEach((node) => {
-      if (!processedNodes.has(node.id)) {
-        nodes.push(node);
-        processedNodes.add(node.id);
-      }
-    });
-
-    // Ajouter les liens de la sous-recette
-    subGraph.edges?.forEach((edge) => {
-      links.push({
-        source: edge.source,
-        target: edge.target,
-        type: edge.type,
-      });
-    });
-
-    // Trouver le nœud final de la sous-recette
-    const finalNode = subGraph.nodes?.find((node) => {
-      return node.isFinalNode;
-    });
-
-    return finalNode || null;
-  };
-
-  // Ajouter les ingrédients
-  const ingredientNodes = new Map();
-  if (subRecipe.ingredients) {
-    console.log("Processing ingredients:", subRecipe.ingredients);
-    console.log("Available ingredients in recipe:", recipe.ingredients);
     subRecipe.ingredients.forEach((data) => {
-      const ingredient = recipe.ingredients.find((ing) => ing.id === data.ref);
-      if (!ingredient) {
-        console.log("Ingredient not found for ref:", data.ref);
-        console.log(
-          "Available ingredient IDs:",
-          recipe.ingredients.map((ing) => ing.id)
-        );
-        return;
-      }
+      if (ingredientNodes.has(data.ref)) return; // Already added
 
-      const nodeId = `${subRecipeId}-${data.ref}`;
-      console.log("Adding ingredient node:", nodeId, ingredient.name);
+      const ingredient = recipe.ingredients.find((ing) => ing.id === data.ref);
+      if (!ingredient) return;
+
+      const nodeId = `ing-${data.ref}`;
       const node = {
         id: nodeId,
         originalId: data.ref,
         label: ingredient.name,
         type: "ingredient",
-        quantity: `${data.amount} ${ingredient.unit}`,
+        quantity: data.amount != null ? `${data.amount} ${ingredient.unit || ""}`.trim() : "",
         state: data.state,
         details: data.state
           ? `${ingredient.name}\n${data.state}`
@@ -147,74 +115,46 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
       ingredientNodes.set(data.ref, node);
       processedNodes.add(nodeId);
     });
-  }
+  });
 
-  // Ajouter les actions et leurs liens
-  if (subRecipe.steps) {
-    console.log("Processing steps:", JSON.stringify(subRecipe.steps, null, 2));
+  // Second pass: add all step nodes and links
+  subRecipes.forEach((subRecipe) => {
+    if (!subRecipe.steps) return;
+
     subRecipe.steps
       .filter((step) => step)
       .forEach((step) => {
-        const stepNodeId = `${subRecipeId}-${step.id}`;
-        console.log("\nProcessing step:", {
-          id: step.id,
-          action: step.action,
-          inputs: step.inputs,
-          output: step.output,
-        });
+        const stepNodeId = `step-${step.id}`;
 
-        // Ajouter l'action
+        // Determine tools to display
+        const stepTools = (step.requires || step.tools || []).map(
+          (toolId) => toolsMap[toolId]?.name || toolId
+        );
+
+        // Add action node
         nodes.push({
           id: stepNodeId,
           label: step.action,
           type: "action",
           time: step.time,
           temperature: step.temperature,
-          tools: step.tools?.map((toolId) => toolsMap[toolId]?.name || toolId),
+          tools: stepTools,
         });
         processedNodes.add(stepNodeId);
 
-        // Ajouter les liens d'entrée
-        if (step.inputs && step.inputs.length > 0) {
-          console.log("Step inputs:", JSON.stringify(step.inputs, null, 2));
-          step.inputs.forEach((input) => {
-            console.log("Processing input:", input);
-            // Vérifier si l'entrée fait référence à un ingrédient
-            if (
-              input.type === "ingredient" ||
-              (input.inputType === "component" && input.type === "ingredient")
-            ) {
-              const ingredientNode = ingredientNodes.get(input.ref);
-              if (ingredientNode) {
-                console.log(
-                  "Adding ingredient link:",
-                  ingredientNode.id,
-                  "->",
-                  stepNodeId
-                );
-                links.push({
-                  source: ingredientNode.id,
-                  target: stepNodeId,
-                  type: "ingredient",
-                });
-              }
-            } else if (input.ref && input.ref.startsWith("sub")) {
-              // C'est une sous-recette
-              const finalSubRecipeNode = processSubRecipe(input.ref);
-              if (finalSubRecipeNode) {
-                links.push({
-                  source: finalSubRecipeNode.id,
-                  target: stepNodeId,
-                  type: "subRecipe",
-                });
-              }
-            } else if (input.type === "state" || input.inputType === "state") {
-              // C'est un état
-              const stateNode = getOrCreateStateNode(
-                input.ref,
-                input.preparation,
-                input.name
-              );
+        // uses[] contains both ingredient refs and state refs
+        if (step.uses) {
+          step.uses.forEach((ref) => {
+            const ingredientNode = ingredientNodes.get(ref);
+            if (ingredientNode) {
+              links.push({
+                source: ingredientNode.id,
+                target: stepNodeId,
+                type: "ingredient",
+              });
+            } else {
+              // It's a state produced by a previous step (possibly in another sub-recipe)
+              const stateNode = getOrCreateStateNode(ref);
               links.push({
                 source: stateNode.id,
                 target: stepNodeId,
@@ -224,85 +164,19 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
           });
         }
 
-        // Ajouter les ingrédients manquants aux étapes
-        if (step.id === "sub1_step1") {
-          // Première étape du pesto : ajouter les noisettes
-          const hazelnutNode = ingredientNodes.get("ing13");
-          if (hazelnutNode) {
-            links.push({
-              source: hazelnutNode.id,
-              target: stepNodeId,
-              type: "ingredient",
-            });
-          }
-        } else if (step.id === "sub1_step2") {
-          // Deuxième étape : ajouter tous les autres ingrédients du pesto
-          [
-            "ing14",
-            "ing15",
-            "ing16",
-            "ing17",
-            "ing18",
-            "ing19",
-            "ing20",
-          ].forEach((ingRef) => {
-            const ingredientNode = ingredientNodes.get(ingRef);
-            if (ingredientNode) {
-              links.push({
-                source: ingredientNode.id,
-                target: stepNodeId,
-                type: "ingredient",
-              });
-            }
+        // produces is the output state
+        if (step.produces) {
+          const stateNode = getOrCreateStateNode(step.produces);
+          links.push({
+            source: stepNodeId,
+            target: stateNode.id,
+            type: "state",
           });
-        }
-
-        // Ajouter les liens pour les ingrédients utilisés dans cette étape
-        if (step.ingredients) {
-          step.ingredients.forEach((ingredientRef) => {
-            const ingredientNode = ingredientNodes.get(ingredientRef);
-            if (ingredientNode) {
-              console.log(
-                "Adding ingredient link from step ingredients:",
-                ingredientNode.id,
-                "->",
-                stepNodeId
-              );
-              links.push({
-                source: ingredientNode.id,
-                target: stepNodeId,
-                type: "ingredient",
-              });
-            }
-          });
-        }
-
-        // Ajouter les liens de sortie
-        if (step.output) {
-          console.log("Processing step output:", step.output);
-          if (
-            step.output.type === "state" ||
-            step.output.inputType === "state"
-          ) {
-            const stateNode = getOrCreateStateNode(
-              step.output.ref,
-              step.output.preparation,
-              step.output.name
-            );
-            links.push({
-              source: stepNodeId,
-              target: stateNode.id,
-              type: "state",
-            });
-          }
         }
       });
-  }
+  });
 
-  console.log("Final nodes:", nodes);
-  console.log("Final links:", links);
-
-  // Identifier le nœud final
+  // Identify final node(s)
   const allTargets = new Set(links.map((link) => link.target));
   const allSources = new Set(links.map((link) => link.source));
   nodes.forEach((node) => {
@@ -311,7 +185,7 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
     }
   });
 
-  // Conversion des liens pour React Flow
+  // Convert links to React Flow edges
   const edges = links.map((link) => ({
     id: `edge-${link.source}-${link.target}`,
     source: link.source,
@@ -344,20 +218,27 @@ export const prepareGraphData = (subRecipe, recipe, subRecipeId) => {
     animated: false,
   }));
 
-  return { nodes, edges };
-};
+  // Build sub-recipe membership map for compound nodes
+  // Maps node ID → subRecipe name
+  const nodeSubRecipeMap = {};
+  subRecipes.forEach((subRecipe) => {
+    const subRecipeName = subRecipe.title || subRecipe.id || "main";
+    if (subRecipe.steps) {
+      subRecipe.steps.filter(Boolean).forEach((step) => {
+        nodeSubRecipeMap[`step-${step.id}`] = subRecipeName;
+        // Also map the state this step produces
+        if (step.produces) {
+          nodeSubRecipeMap[`state-${step.produces}`] = subRecipeName;
+        }
+      });
+    }
+    // Map ingredients to a special "ingredients" group
+    if (subRecipe.ingredients) {
+      subRecipe.ingredients.forEach((data) => {
+        nodeSubRecipeMap[`ing-${data.ref}`] = "__ingredients__";
+      });
+    }
+  });
 
-const getEdgeType = (nodeId, subRecipe) => {
-  // Vérifier si le nodeId correspond à un ingrédient
-  const isIngredient = subRecipe.ingredients.some((ing) => ing.id === nodeId);
-  if (isIngredient) return "ingredient";
-
-  // Vérifier si le nodeId correspond à une sous-recette
-  const isSubRecipe =
-    subRecipe.subRecipes &&
-    subRecipe.subRecipes.some((sub) => sub.id === nodeId);
-  if (isSubRecipe) return "subRecipe";
-
-  // Par défaut, c'est un état
-  return "state";
+  return { nodes, edges, nodeSubRecipeMap };
 };

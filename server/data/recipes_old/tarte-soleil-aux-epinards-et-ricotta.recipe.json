@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "title": "Tarte soleil aux \u00e9pinards et ricotta",
+    "description": "Elle a pas la classe cette Tarte soleil aux \u00e9pinards et ricotta ? Je trouve qu'elle change agr\u00e9ablement des tartes et quiches classiques. Son format la rend particuli\u00e8rement pratique \u00e0 servir.",
+    "servings": 1,
+    "prepTime": "PT20M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "\u00e9pinards",
+      "ricotta",
+      "p\u00e2te feuillet\u00e9e",
+      "tarte",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tarte-couronne-epinards-ricotta-4-of-5.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Elle change agr\u00e9ablement des tartes et quiches classiques.",
+      "Son format la rend particuli\u00e8rement pratique \u00e0 servir. Que ce soit pour un buffet ou m\u00eame un ap\u00e9ro.",
+      "La pr\u00e9paration de cette tarte soleil est super simple.",
+      "Il vous faudra des \u00e9pinards crus ou surgel\u00e9s. Les deux fonctionnent sans probl\u00e8me.",
+      "Le secret de la r\u00e9ussite de cette tarte, c'est d'avoir un appareil assez \u00e9pais.",
+      "Apr\u00e8s cuisson, il va falloir presser les \u00e9pinards entre vos mains pour en extraire un maximum d'eau.",
+      "Et pour d'autres recettes avec des \u00e9pinards, c'est par ici !"
+    ],
+    "slug": "tarte-soleil-aux-epinards-et-ricotta",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tarte-couronne-epinards-ricotta-4-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/06/22/tarte-soleil-aux-epinards-et-ricotta/",
+    "image": "images/tarte-soleil-aux-epinards-et-ricotta.webp",
+    "createdAt": "2026-02-09T22:13:06.830563",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 25.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 641.6,
+      "protein": 57.9,
+      "fat": 33.5,
+      "carbs": 32.9,
+      "fiber": 10.6,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "epinards",
+      "name": "\u00e9pinards",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "spinach"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "basilic",
+      "name": "feuilles de basilic",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "basil leaves"
+    },
+    {
+      "id": "pate_feuilletee",
+      "name": "rouleau de p\u00e2te feuillet\u00e9e",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Puff pastry sheet"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "rinse_trim_spinach",
+      "action": "Rincez et \u00e9queutez les \u00e9pinards.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "epinards"
+      ],
+      "produces": "epinards_laves_equeutes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_spinach",
+      "action": "Faites-les cuire \u00e0 la vapeur et laissez-les refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "epinards_laves_equeutes"
+      ],
+      "produces": "epinards_cuits_refroidis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_spinach",
+      "action": "Pressez-les entre vos mains pour en extraire le plus d'eau possible. R\u00e9p\u00e9tez autant que n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "epinards_cuits_refroidis"
+      ],
+      "produces": "epinards_essores",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_spinach",
+      "action": "Hachez-les grossi\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "epinards_essores"
+      ],
+      "produces": "epinards_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_ricotta_eggs",
+      "action": "Dans un saladier, battez la ricotta et les \u0153ufs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ricotta",
+        "oeufs"
+      ],
+      "produces": "melange_ricotta_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_basil",
+      "action": "Ajoutez la gousse d'ail press\u00e9e et les feuilles de basilic cisel\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_ricotta_oeufs",
+        "ail",
+        "basilic"
+      ],
+      "produces": "melange_ricotta_oeufs_ail_basilic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spinach_mix",
+      "action": "Ajoutez les \u00e9pinards et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_ricotta_oeufs_ail_basilic",
+        "epinards_haches"
+      ],
+      "produces": "garniture_epinards_ricotta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_filling",
+      "action": "Assaisonnez avec le sel et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "garniture_epinards_ricotta",
+        "sel",
+        "poivre"
+      ],
+      "produces": "garniture_assaisonnee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_pastry",
+      "action": "D\u00e9roulez la p\u00e2te feuillet\u00e9e sur votre plaque de cuisson et d\u00e9posez un bol au centre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_feuilletee"
+      ],
+      "produces": "pate_etalee_avec_bol",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_filling",
+      "action": "R\u00e9partissez la garniture tout autour en laissant un bon centim\u00e8tre de marge sur les c\u00f4t\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_etalee_avec_bol",
+        "garniture_assaisonnee"
+      ],
+      "produces": "pate_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_sides",
+      "action": "Rabattez les c\u00f4t\u00e9s sur la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_avec_garniture"
+      ],
+      "produces": "pate_cotes_rabattus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "remove_bowl_cut",
+      "action": "Enlevez le bol et coupez le centre en \u00e9toile (vous devez obtenir 8 'triangles').",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_cotes_rabattus"
+      ],
+      "produces": "pate_decoupee_etoile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_triangles",
+      "action": "Rabattez les triangles sur la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_decoupee_etoile"
+      ],
+      "produces": "tarte_formee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez 25min.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_formee"
+      ],
+      "produces": "tarte_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_cuite",
+  "originalText": "Tarte soleil aux \u00e9pinards et ricotta - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 juin 2024\nTarte soleil aux \u00e9pinards et ricotta\nElle a pas la classe cette Tarte soleil aux \u00e9pinards et ricotta ? Je trouve qu\u2019elle change agr\u00e9ablement des tartes et quiches classiques.\nSon format la rend particuli\u00e8rement pratique \u00e0 servir. Que ce soit pour un buffet ou m\u00eame un ap\u00e9ro.\nLa pr\u00e9paration de cette tarte soleil est super simple.\nD\u00e9j\u00e0, la liste d\u2019ingr\u00e9dients est vraiment courte. Il vous faudra des \u00e9pinards crus ou surgel\u00e9s. Les deux fonctionnent sans probl\u00e8me. Le secret de la r\u00e9ussite de cette tarte, c\u2019est d\u2019avoir un appareil assez \u00e9pais. D\u00e9j\u00e0 pour qu\u2019il tienne dans la forme qu\u2019on lui donne. Et ensuite pour avoir une texture bien moelleuse apr\u00e8s cuisson. Et pour cela, rien de plus simple. Apr\u00e8s cuisson, il va falloir presser les \u00e9pinards entre vos mains pour en extraire un maximum d\u2019eau. Ensuite, vous n\u2019aurez plus qu\u2019\u00e0 les m\u00e9langer avec de la ricotta, des \u0153ufs, de l\u2019ail et un peu de basilic.\nLa suite, c\u2019est une question de dressage et de d\u00e9coupe.\nLa tarte soleil est vraiment facile \u00e0 faire.\nJe vous explique ! Vous d\u00e9roulez votre p\u00e2te \u00e0 tarte. Vous d\u00e9posez un bol au centre. Et vous r\u00e9partissez la garniture autour du bol, en laissant 1cm \u00e0 1,5cm sur les c\u00f4t\u00e9s. Vous rabattez les c\u00f4t\u00e9s. Vous \u00f4tez le bol. Et enfin vous coupez le centre de la p\u00e2te \u201cen \u00e9toile\u201d pour obtenir 8 petits \u201ctriangles\u201d. Que vous rabattez sur la tarte. Et voil\u00e0 !\nAlors cette Tarte soleil aux \u00e9pinards et ricotta ! Simple franchement ! Non ?\nEt pour d\u2019autres recettes avec des \u00e9pinards, c\u2019est par ici !\nTarte soleil aux \u00e9pinards et ricotta\n4.39\n/5 avec\n90\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n1\ntarte\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nd\u2019\u00e9pinards\n250\ng\nde ricotta\n2\noeufs\n1\ngousse d\u2019ail\nsel\npoivre\n1\npoign\u00e9e de feuille de basilic\n1\nrouleau de p\u00e2te feuillet\u00e9e\nInstructions\nRincez et \u00e9queutez les \u00e9pinards.\nFaites-les cuire \u00e0 la vapeur et laissez-les refroidir. Pressez-les entre vos mains pour en extraire le plus d\u2019eau possible. R\u00e9p\u00e9tez autant que n\u00e9cessaire. Hachez-les grossi\u00e8rement.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nDans un saladier, battez la ricotta et les \u0153ufs. Ajoutez la gousse d\u2019ail press\u00e9e et les feuilles de basilic cisel\u00e9es.\nAjoutez les \u00e9pinards et m\u00e9langez.\nD\u00e9roulez la p\u00e2te feuillet\u00e9e sur votre plaque de cuisson et d\u00e9posez un bol au centre.\nR\u00e9partissez la garniture tout autour en laissant un bon centim\u00e8tre de marge sur les c\u00f4t\u00e9s.\nRabattez les c\u00f4t\u00e9s sur la garniture.\nEnlevez le bol et coupez le centre en \u00e9toile (vous devez obtenir 8 \u201ctriangles\u201d). Rabattez les triangles sur la garniture.\nEnfournez 25min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nEpinards\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nQuiches et Tartes\nArtichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\nGalettes de tomate fa\u00e7on tomatokeftedes : la star des mezzes \u00e0 partager\n4.39 from 90 votes (\n90 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

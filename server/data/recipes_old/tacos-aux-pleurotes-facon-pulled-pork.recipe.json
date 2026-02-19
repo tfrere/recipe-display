@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "title": "Tacos aux pleurotes fa\u00e7on pulled pork",
+    "description": "Pour ces Tacos aux pleurotes fa\u00e7on pulled pork, j'ai encore utilis\u00e9 une de mes m\u00e9thodes pr\u00e9f\u00e9r\u00e9es ! A savoir : effilocher des pleurotes pour leur donner l'apparence de viande.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pleurotes",
+      "pulled pork",
+      "tacos",
+      "tacos vegan",
+      "tacos vegetarien",
+      "champignon",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Tacos-pleurotes-1-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'ai cr\u00e9\u00e9 cette recette de Tacos aux pleurotes fa\u00e7on pulled pork pour MonBento.",
+      "Je cuis ensuite syst\u00e9matiquement les pleurotes au four. J'ai cette m\u00e9thode de cuisson car elle permet de les ass\u00e9cher un peu. Tout raffermissant leur consistance. Et les bords deviennent m\u00eame croustillants.",
+      "Si vous n'avez que des grandes tortillas, vous pouvez couper des cercles d'environ 12cm de diam\u00e8tre dedans, ou simplement utiliser de grandes tortillas."
+    ],
+    "slug": "tacos-aux-pleurotes-facon-pulled-pork",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Tacos-pleurotes-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/19/tacos-aux-pleurotes-facon-pulled-pork/",
+    "image": "images/tacos-aux-pleurotes-facon-pulled-pork.jpg",
+    "createdAt": "2026-02-09T21:22:55.267203",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 29.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 99.2,
+      "protein": 2.6,
+      "fat": 5.5,
+      "carbs": 11.5,
+      "fiber": 3.0,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 17,
+      "totalIngredients": 19,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "oignon_jaune",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "sauce_soja_shoyu",
+      "name": "sauce soja shoyu",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Shoyu soy sauce"
+    },
+    {
+      "id": "huile_d_olive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "paprika_doux",
+      "name": "paprika doux",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "chili",
+      "name": "chili",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili"
+    },
+    {
+      "id": "origan_seche",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "sauce_barbecue",
+      "name": "sauce barbecue",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Barbecue sauce"
+    },
+    {
+      "id": "concombre",
+      "name": "concombre",
+      "quantity": 0.3333333333333333,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "tomate",
+      "name": "tomate",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato"
+    },
+    {
+      "id": "salade_iceberg",
+      "name": "salade iceberg",
+      "quantity": 2.0,
+      "unit": "handful",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Iceberg lettuce"
+    },
+    {
+      "id": "oignon_rouge",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "poivron_rouge",
+      "name": "poivron rouge",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "citrons_verts",
+      "name": "citrons verts, jus",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "Limes, juice"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "tortillas",
+      "name": "petites tortillas de 12cm",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Small tortillas"
+    },
+    {
+      "id": "huile_d_olive_filet",
+      "name": "filet huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Olive oil"
+    },
+    {
+      "id": "emmental_rape",
+      "name": "emmental r\u00e2p\u00e9",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated emmental"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "Po\u00eale avec couvercle"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C. Pr\u00e9parer une plaque de cuisson recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_pleurotes",
+      "action": "Nettoyer les pleurotes puis les casser dans la longueur pour obtenir de fines lani\u00e8res.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "pleurotes"
+      ],
+      "produces": "pleurotes_lanieres",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_yellow_onion",
+      "action": "\u00c9mincer l'oignon jaune en rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "oignon_jaune"
+      ],
+      "produces": "oignon_jaune_rondelles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate_pleurotes",
+      "action": "D\u00e9poser les pleurotes et l'oignon dans un saladier et ajouter les gousses d'ail press\u00e9es, la sauce soja, l'huile et toutes les \u00e9pices (sauf la sauce barbecue).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "pleurotes_lanieres",
+        "oignon_jaune_rondelles",
+        "ail",
+        "sauce_soja_shoyu",
+        "huile_d_olive",
+        "paprika_doux",
+        "cumin",
+        "chili",
+        "origan_seche"
+      ],
+      "produces": "pleurotes_marines",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_on_baking_sheet",
+      "action": "\u00c9taler les pleurotes et l'oignon sur la plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "pleurotes_marines"
+      ],
+      "produces": "pleurotes_sur_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_pleurotes",
+      "action": "Enfourner pour 25min. Remuer \u00e0 mi-cuisson.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "pleurotes_sur_plaque"
+      ],
+      "produces": "pleurotes_cuits",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_barbecue_sauce",
+      "action": "A la sortie du four, ajouter la sauce barbecue, m\u00e9langer et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pleurotes",
+      "uses": [
+        "pleurotes_cuits",
+        "sauce_barbecue"
+      ],
+      "produces": "pleurotes_barbecue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dice_vegetables",
+      "action": "Pendant la cuisson des pleurotes, d\u00e9tailler en petits d\u00e9s le concombre, la tomate, l'oignon rouge et le poivron rouge.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_crudites",
+      "uses": [
+        "concombre",
+        "tomate",
+        "oignon_rouge",
+        "poivron_rouge"
+      ],
+      "produces": "legumes_des",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_salad_coriander",
+      "action": "Hacher finement la salade iceberg et la coriandre (feuilles et tiges).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_crudites",
+      "uses": [
+        "salade_iceberg",
+        "coriandre"
+      ],
+      "produces": "salade_coriandre_hachee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_crudites",
+      "action": "Tout m\u00e9langer dans un saladier avec le jus de citron vert et du sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_crudites",
+      "uses": [
+        "legumes_des",
+        "salade_coriandre_hachee",
+        "citrons_verts",
+        "sel"
+      ],
+      "produces": "crudites_melangees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen-fort avec un filet d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_coquilles_de_tacos_au_fromage",
+      "uses": [
+        "huile_d_olive_filet"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_tortillas",
+      "action": "Quand la po\u00eale est chaude, y d\u00e9poser les tortillas (en plusieurs fois, elles ne doivent pas se toucher).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_des_coquilles_de_tacos_au_fromage",
+      "uses": [
+        "tortillas"
+      ],
+      "produces": "tortillas_dans_poele",
+      "requires": [
+        "poele_chaude"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "melt_cheese",
+      "action": "Saupoudrer chaque tortilla d'une petite poign\u00e9e d'emmental r\u00e2p\u00e9 et couvrir. Laisser le fromage fondre 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "preparation_des_coquilles_de_tacos_au_fromage",
+      "uses": [
+        "tortillas_dans_poele",
+        "emmental_rape"
+      ],
+      "produces": "tortillas_au_fromage",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "remove_tortillas",
+      "action": "Retirer la tortilla de la po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_coquilles_de_tacos_au_fromage",
+      "uses": [
+        "tortillas_au_fromage"
+      ],
+      "produces": "tortillas_au_fromage_prete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_tacos",
+      "action": "Dans chaque tortilla au fromage, d\u00e9poser un peu de crudit\u00e9s, et un peu de pleurotes fa\u00e7on barbecue.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnissage_des_tacos",
+      "uses": [
+        "tortillas_au_fromage_prete",
+        "crudites_melangees",
+        "pleurotes_barbecue"
+      ],
+      "produces": "tacos_garnis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_coriander",
+      "action": "Saupoudrer de coriandre fra\u00eeche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnissage_des_tacos",
+      "uses": [
+        "tacos_garnis",
+        "coriandre"
+      ],
+      "produces": "tacos_finis",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tacos_finis",
+  "originalText": "Tacos aux pleurotes fa\u00e7on pulled pork - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 juin 2022\nTacos aux pleurotes fa\u00e7on pulled pork\nAller \u00e0 la recette\nPour ces Tacos aux pleurotes fa\u00e7on pulled pork, j\u2019ai encore utilis\u00e9 une de mes m\u00e9thodes pr\u00e9f\u00e9r\u00e9es !\nA savoir : effilocher des pleurotes pour leur donner l\u2019apparence de viande. Et la consistance au passage.\nC\u2019est une m\u00e9thode que j\u2019ai d\u00e9couverte en faisant des tests\npour ma recette de gyros v\u00e9g\u00e9tariens\n. C\u2019\u00e9tait pendant le premier confinement et j\u2019avais besoin d\u2019\u00e9vasion. Et de r\u00e9confort. De retrouver les saveurs et les odeurs de la Gr\u00e8ce. Entre autres choses. Et le test des pleurotes effiloch\u00e9es m\u2019a convaincu direct ! Il m\u2019a fallu un peu de temps pour trouver une marinade qui fonctionne. Les marinades de l\u00e9gumes, et \u00e0 fortiori, celles qui cherchent \u00e0 \u201cimiter\u201d un plat carn\u00e9 doivent \u00eatre assez puissante. C\u2019est pourquoi vous retrouverez dans toutes mes recettes une base de sauce soja et une grosse dose d\u2019\u00e9pices et d\u2019herbes s\u00e9ch\u00e9es. Ces condiments apportent beaucoup de go\u00fbt !\nJe cuis ensuite syst\u00e9matiquement les pleurotes au four. J\u2019ai cette m\u00e9thode de cuisson car elle permet de les ass\u00e9cher un peu. Tout raffermissant leur consistance. Et les bords deviennent m\u00eame croustillants.\nBref, \u00e7a fonctionne \u00e0 merveille !\nDu coup, comme j\u2019avais envie de faire des tacos bien \u201cfatos\u201d. J\u2019ai utilis\u00e9 des pleurotes. Et une grosse dose de\nsauce bbq\n!\nIl ne reste plus qu\u2019\u00e0 gourmandiser encore plus les tacos en faisant fondre une couche de fromage contre la tortilla. On all\u00e8ge l\u00e9g\u00e8rement avec des crudit\u00e9s. Et on accompagne le tout de potatoes !\nTacos aux pleurotes fa\u00e7on pulled pork\nNatacha\n4.59\n/5 avec\n36\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n6\npetits tacos\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour les pleurotes\n200\ng\nde pleurotes\n1\noignon jaune\n2\ngousses d\u2019ail\n2\nc\u00e0s de sauce soja shoyu\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0c de paprika doux\n\u00bd\nc\u00e0c de cumin\nchili au go\u00fbt\n\u00bd\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n1\nc\u00e0s de sauce barbecue\nIngr\u00e9dients pour les crudit\u00e9s\n\u2153\nde concombre\n1\ngrosse tomate\n2\npoign\u00e9es de salade iceberg\n1\noignon rouge\n\u00bd\npoivron rouge\n\u00bd\nbotte de coriandre\nle jus de 2 citrons verts\nsel\nIngr\u00e9dients pour les coquilles de tacos\n6\npetites tortillas de 12cm ou 2-3 grandes tortillas\n1\nfilet d\u2019huile d\u2019olive\n150\ng\nd\u2019emmental r\u00e2p\u00e9\nInstructions\nPr\u00e9paration des pleurotes\nPr\u00e9chauffer le four \u00e0 190\u00b0C. Pr\u00e9parer une plaque de cuisson recouvert de papier cuisson.\nNettoyer les pleurotes puis les casser dans la longueur pour obtenir de fines lani\u00e8res.\n\u00c9mincer l\u2019oignon en rondelles.\nD\u00e9poser les pleurotes et l\u2019oignon dans un saladier et ajouter les gousses d\u2019ail press\u00e9es, la sauce soja, l\u2019huile et toutes les \u00e9pices (sauf la sauce barbecue).\nLes \u00e9taler sur la plaque de cuisson.\nEnfourner 25min. Remuer \u00e0 mi-cuisson.\nA la sortie du four, ajouter la sauce barbecue, m\u00e9langer et r\u00e9server.\nPr\u00e9paration des crudit\u00e9s\nPendant ce temps, d\u00e9tailler en petits d\u00e9s tous les l\u00e9gumes.\nHacher finement la salade et la coriandre (feuilles et tiges).\nTout m\u00e9langer dans un saladier avec le jus de citron et du sel.\nR\u00e9server au frais.\nPr\u00e9paration des coquilles de tacos au fromage\nSi vous n\u2019avez que des grandes tortillas, vous pouvez couper des cercles d\u2019environ 12cm de diam\u00e8tre dedans, ou simplement utiliser de grandes tortillas.\nFaire chauffer une po\u00eale \u00e0 feu moyen-fort avec un filet d\u2019huile d\u2019olive.\nQuand la po\u00eale est chaude, y d\u00e9poser les tortillas (\u00e0 faire en plusieurs fois, elles ne doivent pas se toucher).\nSaupoudrer d\u2019une petite poign\u00e9e d\u2019emmental r\u00e2p\u00e9 et couvrir. Laisser le fromage fondre 3-4min.\nRetirer la tortilla de la po\u00eale.\nGarnissage des tacos\nDans chaque tortilla au fromage, d\u00e9poser un peu de crudit\u00e9s, et un peu de pleurotes fa\u00e7on barbecue.\nSaupoudrer de coriandre fra\u00eeche.\nD\u00e9guster avec le reste des crudit\u00e9s !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019ai cr\u00e9\u00e9 cette recette de Tacos aux pleurotes fa\u00e7on pulled pork pour\nMonBento\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChampignon\n,\n\u00c9t\u00e9\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\npleurotes\n,\npulled pork\n,\ntacos\n,\ntacos vegan\n,\ntacos vegetarien\nGlace au yaourt grec marbr\u00e9e au coulis de fraise\nSpaetzle aux tomates cerises ail et burrata\n4.59 from 36 votes (\n36 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

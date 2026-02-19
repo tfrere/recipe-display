@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "title": "Comment faire de l'Aquafaba et comment l'utiliser",
+    "description": "De l'aquafaquoi ? Cet article est d\u00e9di\u00e9 \u00e0 ce liquide fabuleux, on y parlera de comment faire de l'Aquafaba et comment l'utiliser.",
+    "servings": 1,
+    "prepTime": "PT24H",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "aquafaba",
+      "pois chiches",
+      "vegan",
+      "base",
+      "sans oeuf",
+      "z\u00e9ro d\u00e9chet"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/aquafaba-1-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "L'aquafaba se monte en neige et remplace les blancs d'\u0153ufs.",
+      "3 c\u00e0s d'aquafaba remplacent 1 \u0153uf entier, 2 c\u00e0s d'aquafaba remplacent le blanc de l'\u0153uf.",
+      "Elle se conserve au frais dans un bocal ferm\u00e9 pendant une semaine.",
+      "La meilleure fa\u00e7on de la conserver est de la congeler, par exemple dans un bac \u00e0 gla\u00e7ons.",
+      "Si elle a tourn\u00e9, elle devient tr\u00e8s malodorante, comme du poisson pas frais.",
+      "L'aquafaba ne donne aucun arri\u00e8re-go\u00fbt \u00e0 vos pr\u00e9parations.",
+      "Pour une mayonnaise plus jaune, ajouter une pinc\u00e9e de curcuma."
+    ],
+    "slug": "comment-faire-de-l-aquafaba-et-comment-l-utiliser",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/aquafaba-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/31/comment-faire-de-laquafaba-et-comment-lutiliser/",
+    "image": "images/comment-faire-de-l-aquafaba-et-comment-l-utiliser.jpg",
+    "createdAt": "2026-02-09T21:00:43.928862",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 2915.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 675.9,
+      "protein": 37.6,
+      "fat": 12.0,
+      "carbs": 124.8,
+      "fiber": 42.0,
+      "confidence": "high",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "dried_chickpeas",
+      "name": "pois chiches secs",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chickpeas, dried"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 550.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Cocotte minute"
+  ],
+  "steps": [
+    {
+      "id": "soak_chickpeas",
+      "action": "Faire tremper vos pois chiches dans un grand volume d'eau pendant 24h.",
+      "duration": "PT24H",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "dried_chickpeas"
+      ],
+      "produces": "soaked_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_and_cook",
+      "action": "Jeter l'eau de trempage. Mettre les pois chiches dans une cocotte avec les 550ml d'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "soaked_chickpeas",
+        "water"
+      ],
+      "produces": "chickpeas_in_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pressure_cook",
+      "action": "Fermer le couvercle et faire cuire \u00e0 feu vif. D\u00e8s que la cocotte siffle, baisser le feu \u00e0 doux (3/10) et laisser cuire 35min.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "chickpeas_in_water"
+      ],
+      "produces": "cooked_chickpeas_with_liquid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_overnight",
+      "action": "Une fois cuits, transvaser les pois chiches avec l'eau dans un bocal ferm\u00e9 ou un bol couvert. R\u00e9server au frais toute la nuit minimum, id\u00e9alement 1 \u00e0 3 jours.",
+      "duration": "PT24H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "cooked_chickpeas_with_liquid"
+      ],
+      "produces": "cooled_chickpeas_with_liquid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "filter_aquafaba",
+      "action": "Filtrer l'eau (qui est maintenant devenue aquafaba) et utilisez les pois chiches dans une autre recette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "cooled_chickpeas_with_liquid"
+      ],
+      "produces": "aquafaba_liquid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "store_aquafaba",
+      "action": "L'aquafaba est pr\u00eate \u00e0 l'emploi ou peut se conserver au frais 1 semaine ou jusqu'\u00e0 2 mois au cong\u00e9lateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "aquafaba_maison",
+      "uses": [
+        "aquafaba_liquid"
+      ],
+      "produces": "aquafaba_ready",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "aquafaba_ready",
+  "originalText": "Comment faire de l\u2019Aquafaba et comment l\u2019utiliser - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 janvier 2022\nComment faire de l\u2019Aquafaba et comment l\u2019utiliser\nAller \u00e0 la recette\nDe l\u2019aquafaquoi ?\nCet article est d\u00e9di\u00e9 \u00e0 ce liquide fabuleux, on y parlera de comment faire de l\u2019Aquafaba et comment l\u2019utiliser.\nTable des mati\u00e8res\n1\nAquafaquoi ?\n2\nOn en fait quoi ?\n3\nComment la pr\u00e9parer\n3.1\nAquafaba maison\n4\nComment la conserver\n5\nDes id\u00e9es de recettes avec de l\u2019aquafaba\n6\nPourquoi l\u2019utiliser\n7\nEt je fais quoi de mes pois chiches ?\nAquafaquoi ?\nD\u00e9j\u00e0, pour commencer, l\u2019Aquafaba, c\u2019est quoi ? On penserait que ce nom est la contraction de Aqua (eau) et Faba (pour fabuleuse !). Mais non, Faba, c\u2019est \u201cf\u00e8ve\u201d en latin. C\u2019est donc l\u2019eau des f\u00e8ves. Et plus pr\u00e9cisemment, l\u2019eau issue de la cuisson des f\u00e8ves, et plus g\u00e9n\u00e9ralement des l\u00e9gumineuses (pois chiche, haricots secs etc\u2026).\nG\u00e9n\u00e9ralement, quand on parle d\u2019aquafaba, on parle de l\u2019eau de cuisson des pois chiches. Mais en r\u00e9alit\u00e9, on peut aussi utiliser l\u2019eau de cuisson des autres grosses l\u00e9gumineuses, comme les haricots rouges, ou les f\u00e8ves.\nJ\u2019ai, pour ma part, tester l\u2019aquafaba de pois chiches et de haricots rouges.\nA premi\u00e8re vue, on pourrait \u00eatre inquiet qu\u2019il y ait un go\u00fbt ou une odeur un peu \u00e9trange. Mais une fois int\u00e9gr\u00e9e \u00e0 une recette, elle ne donne aucun arri\u00e8re-go\u00fbt \u00e0 vos pr\u00e9parations.\nOn en fait quoi ?\nPour r\u00e9pondre simplement \u00e0 cette question : on remplace les \u0153ufs par de l\u2019aquafaba.\nCette eau de cuisson, dans laquelle on laisse ensuite tremper les pois chiches pendant 1 \u00e0 plusieurs jours se charge en prot\u00e9ine. C\u2019est ainsi qu\u2019elle permet de remplacer les \u0153ufs dans certaines pr\u00e9parations.\nPour moi, les pr\u00e9parations les plus r\u00e9ussies et impressionnantes \u00e0 base d\u2019aquafaba sont les mayonnaises vegans et les mousses au chocolat vegan.\nEn effet, elle remplace parfaitement le jaune d\u2019\u0153uf dans la mayo. Le r\u00e9sultat est identique en go\u00fbt. Visuellement, votre mayo sera plus blanche, car l\u2019aquafaba devient blanche quand on la bat. Vous pouvez ajouter une pinc\u00e9e de curcuma pour retrouver le jaune traditionnel de la mayo. En plus, votre mayo sera plus l\u00e9g\u00e8re.\nEt surtout, le plus impressionnant : l\u2019aquafaba se monte en neige. Elle remplace donc les blancs en neige dans les mousses ou les meringues par exemple.\nEn gros :\n3 c\u00e0s d\u2019aquafaba remplacent 1 \u0153uf entier,\n2 c\u00e0s d\u2019aquafaba remplacent le blanc de l\u2019\u0153uf.\nComment la pr\u00e9parer\nAquafaba maison\nNatacha\n4.48\n/5 avec\n106\nvotes\nImprimer la recette\nPin Recipe\nTemps de cuisson\n30\nminutes\nmin\nTemps de repos\n12\nheures\nh\nIngr\u00e9dients\n200\ng\nde pois chiches secs\n550\nml\nd\u2019eau\nInstructions\nFaire tremper vos pois chiches dans un grand volume d\u2019eau 24h avant.\nJeter l'eau de trempage. Mettre les pois chiches dans une cocotte avec les 550ml d'eau.\nFermer le couvercle et faire cuire \u00e0 feu vif, d\u00e8s que la cocotte siffle, baisser le feu \u00e0 doux (3/10 par ex) et laisser cuire 35min.\nUne fois cuits, transvaser les pois chiches avec l\u2019eau dans un bocal ferm\u00e9 ou un bol couvert. R\u00e9server au frais toute la nuit minimum, id\u00e9alement 1 \u00e0 3 jours. Plus ils tremperont longtemps, et mieux ce sera.\nL\u2019eau des pois chiches sera devenue aquafaba (elle sera un peu plus \u00e9paisse, et m\u00eame parfois un peu visqueuse, c'est normal).\nFiltrer l'eau et utilisez les pois chiches dans une autre recette.\nL'aquafaba est pr\u00eate \u00e0 l\u2019emploi ou peut se conserver au frais 1 semaine ou jusqu\u2019\u00e0 2 mois au cong\u00e9lateur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nComment la conserver\nElle se conserve au frais dans un bocal ferm\u00e9 pendant une semaine.\nMais la meilleure fa\u00e7on de la conserver est de la congeler. Vous pouvez la stocker en grosse quantit\u00e9 dans des bocaux. Ou encore plus pratique : en cubes gr\u00e2ce \u00e0 votre bac \u00e0 gla\u00e7ons.\nVous saurez facilement si elle a tourn\u00e9 : elle devient alors tr\u00e8s malodorante, comme du poisson pas frais !\nDes id\u00e9es de recettes avec de l\u2019aquafaba\nMayonnaise vegan\nSauce burger vegan\nMousse au chocolat vegan\nMousse de fruit vegan\nPourquoi l\u2019utiliser\nCuisiner sans \u0153ufs, en cas d\u2019allergies, ou intol\u00e9rance. Ou m\u00eame pour les femmes enceintes ou les personnes immunod\u00e9prim\u00e9es qui pr\u00e9f\u00e8rent \u00e9viter les \u0153ufs crus.\nCuisiner vegan, tout simplement\nCuisiner plus l\u00e9ger\nSe mettre en mode z\u00e9ro d\u00e9chet : quand vous ouvrez votre prochain bocal de pois chiche, r\u00e9cup\u00e9rez le jus !\nJ\u2019esp\u00e8re que ce petit article sur Comment faire de l\u2019Aquafaba et comment l\u2019utiliser vous aura convaincu de tester !\nN\u2019h\u00e9sitez pas si vous avez des questions ou commentaires !\nEt je fais quoi de mes pois chiches ?\nHoumous Classique Maison\nSoupe aux Pois Chiches et L\u00e9gumes d\u2019hiver fa\u00e7on Chorba\nRago\u00fbt \u00e0 la Cacahu\u00e8te, Pois Chiches et Epinards\nBuddha Bowl M\u00e9dit\u00e9rran\u00e9en au Houmous\nClub Sandwich Vegan fa\u00e7on thon mayo\nNuggets V\u00e9g\u00e9tariens aux Pois Chiches\nPatties Shitak\u00e9 Pois Chiches \u2013 Burger Vegan\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nRecettes Sucr\u00e9es\nTags:\nc'est quoi aquafaba\n,\ncomment faire de l'aquafaba\n,\ncuisson pois chiche\n,\neau de pois chiche\n,\njus de pois chiche\n,\njus de pois chiches\n,\nrecette aquafaba\n,\nrecette jus de pois chiche\nId\u00e9es de cr\u00eapes sucr\u00e9es et gourmandes pour la Chandeleur\nCr\u00eapes au Chocolat et Poires Belle H\u00e9l\u00e8ne\n10 thoughts on \u201cComment faire de l\u2019Aquafaba et comment l\u2019utiliser\u201d\nAudrey\ndit\u00a0:\n16 f\u00e9vrier 2022 \u00e0 19 h 47 min\nBonjour,\nmerci pour cette recette ! Seulement avant de la faire j\u2019ai besoin d\u2019une petite pr\u00e9cision: dans la cocotte, les pois chiche sont-ils directement dans l\u2019eau ou dans le panier (donc au dessus de l\u2019eau) ?\nD\u2019avance merci pour votre r\u00e9ponse !\nAudrey\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n18 f\u00e9vrier 2022 \u00e0 14 h 28 min\nBonjour Audrey, directement dans l\u2019eau !\nchargement\u2026\nR\u00e9pondre\nwilly schenk\ndit\u00a0:\n12 janvier 2023 \u00e0 10 h 54 min\nbonjour,\nest-il possible d\u2019utiliser l\u2019aquafaba dans une recette chaude?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n16 janvier 2023 \u00e0 20 h 41 min\nHello, pouvez vous m\u2019en dire plus ?\nchargement\u2026\nR\u00e9pondre\nHelly\ndit\u00a0:\n16 f\u00e9vrier 2023 \u00e0 10 h 47 min\nBonjour,\nJe me pose la m\u00eame question. Par exemple, peut on remplacer les \u0153ufs dans une quiche par de l\u2019aquafaba ?\nMerci !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 14 h 56 min\nHello, pour les quiches je ne conseille pas l\u2019aquafaba non. Plut\u00f4t du tofu soyeux pour une version sans oeuf\nchargement\u2026\nR\u00e9pondre\nSabrina\ndit\u00a0:\n15 mars 2023 \u00e0 19 h 32 min\nBonjour !\nMerci pour cette super recette toute simple gr\u00e2ce \u00e0 laquelle je vais pouvoir faire des mousses au chocolat !\nPetite question : je n\u2019ai pas de cocotte minute\u2026 combien de temps approx dois je faire cuire les pois chiches ?\nMerci d\u2019avance !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n3 avril 2023 \u00e0 20 h 56 min\nBonjour Sabrina, au moins 3x plus et ne pas trop ouvrir le couvercle pour \u00e9viter l\u2019\u00e9vaporation de l\u2019eau !\nchargement\u2026\nR\u00e9pondre\nPing\u00a0:\nMousse au chocolat saine : savourez sans culpabilit\u00e9\nMika\u00ebl\ndit\u00a0:\n15 novembre 2025 \u00e0 14 h 55 min\nBonjour. Merci pour la recette.\nQuelle consistance doit avoir l\u2019aquafaba pour r\u00e9ussir la mont\u00e9e en neige ?\nMa m\u00e8re a r\u00e9ussi par le pass\u00e9. Mais les trois derni\u00e8res tentatives se sont liqu\u00e9fi\u00e9es.\nEt l\u2019aquafaba avait tourn\u00e9 au r\u00e9frig\u00e9rateur apr\u00e8s trois jours. D\u00e9gueulasse\u2026\nL\u2019aquafaba change-t-il de texture et se conserve-t-il plus longtemps lorsque lon laisse les pois chiches dedans ?\nL\u2019aquafaba d\u2019une conserve m\u00e9tallique n\u2019est-il pas contamin\u00e9 par le vernis apr\u00e8s une exposition durant des semaines voire des mois ?\nJe n\u2019utilise que celui que je pr\u00e9pare moi-m\u00eame. Moins cher d\u2019ailleurs.\nchargement\u2026\nR\u00e9pondre\n4.48 from 106 votes (\n105 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

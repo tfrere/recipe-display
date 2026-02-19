@@ -220,9 +220,9 @@ export const CustomNode = ({ data }) => {
     <div style={style}>
       <Handle
         type="target"
-        position={Position.Left}
+        position={Position.Top}
         style={{
-          left: type === "action" ? -15 : -8,
+          top: type === "action" ? -6 : -5,
           width: type === "action" ? "8px" : "6px",
           height: type === "action" ? "8px" : "6px",
           background: "#fff",
@@ -232,9 +232,9 @@ export const CustomNode = ({ data }) => {
       {renderContent()}
       <Handle
         type="source"
-        position={Position.Right}
+        position={Position.Bottom}
         style={{
-          right: type === "action" ? -15 : -8,
+          bottom: type === "action" ? -6 : -5,
           width: type === "action" ? "8px" : "6px",
           height: type === "action" ? "8px" : "6px",
           background: "#fff",

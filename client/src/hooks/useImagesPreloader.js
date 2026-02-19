@@ -16,21 +16,26 @@ const useImagesPreloader = (slugs = [], size = "medium") => {
   const [errors, setErrors] = useState({});
   const loadedRef = useRef(new Set());
 
+  // Stabiliser la référence de slugs pour éviter les re-renders infinis
+  const slugsKey = slugs.join(",");
+
   // Réinitialiser le cache d'images lorsque slugs change complètement
   useEffect(() => {
+    const currentSlugs = slugsKey ? slugsKey.split(",") : [];
     // Si les slugs changent complètement (nouvelle recette), on réinitialise tout
     if (
-      slugs.length === 0 ||
-      (slugs.length === 1 && !loadedRef.current.has(slugs[0]))
+      currentSlugs.length === 0 ||
+      (currentSlugs.length === 1 && !loadedRef.current.has(currentSlugs[0]))
     ) {
       setLoadedImages(new Set());
       setErrors({});
       loadedRef.current = new Set();
     }
-  }, [slugs]);
+  }, [slugsKey]);
 
   useEffect(() => {
-    if (slugs.length === 0) {
+    const currentSlugs = slugsKey ? slugsKey.split(",") : [];
+    if (currentSlugs.length === 0) {
       return;
     }
 
@@ -54,7 +59,9 @@ const useImagesPreloader = (slugs = [], size = "medium") => {
     };
 
     // Charger uniquement les nouvelles images
-    const newSlugs = slugs.filter((slug) => !loadedRef.current.has(slug));
+    const newSlugs = currentSlugs.filter(
+      (slug) => !loadedRef.current.has(slug)
+    );
 
     if (newSlugs.length > 0) {
       // Réinitialiser les erreurs pour les nouvelles images uniquement
@@ -69,7 +76,7 @@ const useImagesPreloader = (slugs = [], size = "medium") => {
         setLoadedImages(new Set(loadedRef.current));
       });
     }
-  }, [slugs, size]);
+  }, [slugsKey, size]);
 
   return {
     isLoaded: (slug) => loadedRef.current.has(slug),

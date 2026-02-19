@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Coleslaw de Tronc de Brocolis (recette anti-gaspi)",
+    "description": "Un coleslaw anti-gaspi utilisant le tronc du brocoli, r\u00e2p\u00e9 ou spiralis\u00e9, avec une mayonnaise maison.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "coleslaw de brocoli",
+      "coleslaw maison",
+      "recette anti-gaspi",
+      "recette zero dechet",
+      "accompagnements",
+      "salades",
+      "brocoli"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Coleslaw-de-brocoli-1-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette anti-gaspi pour utiliser le tronc du brocoli.",
+      "La mayonnaise maison se conserve 24h au frais.",
+      "La recette de la mayo vegan est disponible sur le site."
+    ],
+    "slug": "coleslaw-de-tronc-de-brocolis-recette-anti-gaspi",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Coleslaw-de-brocoli-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/15/coleslaw-de-tronc-de-brocolis-recette-anti-gaspi/",
+    "image": "images/coleslaw-de-tronc-de-brocolis-recette-anti-gaspi.jpg",
+    "createdAt": "2026-02-09T20:36:06.951035",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 630.7,
+      "protein": 10.2,
+      "fat": 59.3,
+      "carbs": 18.2,
+      "fiber": 5.7,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "egg_yolk",
+      "name": "jaune d'\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "mustard",
+      "name": "moutarde fine",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dijon mustard"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "apple_cider_vinegar_mayo",
+      "name": "vinaigre de cidre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    },
+    {
+      "id": "salt_mayo",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_mayo",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "broccoli_stem",
+      "name": "tronc de brocoli",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 300g",
+      "optional": false,
+      "name_en": "broccoli stalk"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 100g",
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "apple_cider_vinegar_slaw",
+      "name": "vinaigre de cidre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    },
+    {
+      "id": "salt_slaw",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_slaw",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Spiralizer (ou r\u00e2pe)",
+    "Batteur \u00e9lectrique (ou fouet manuel)"
+  ],
+  "steps": [
+    {
+      "id": "start_mayo",
+      "action": "Dans un bol, mettre le jaune d'\u0153uf et la moutarde. Commencer \u00e0 fouetter tout en versant l'huile en fin filet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise",
+      "uses": [
+        "egg_yolk",
+        "mustard",
+        "sunflower_oil"
+      ],
+      "produces": "emulsifying_mayo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emulsify_mayo",
+      "action": "Fouetter constamment jusqu'\u00e0 incorporation compl\u00e8te de l'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise",
+      "uses": [
+        "emulsifying_mayo"
+      ],
+      "produces": "emulsified_mayo",
+      "requires": [],
+      "visualCue": "incorporation compl\u00e8te de l'huile"
+    },
+    {
+      "id": "season_mayo",
+      "action": "Ajouter le vinaigre, le sel et le poivre, et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise",
+      "uses": [
+        "emulsified_mayo",
+        "apple_cider_vinegar_mayo",
+        "salt_mayo",
+        "pepper_mayo"
+      ],
+      "produces": "homemade_mayonnaise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_mayo",
+      "action": "R\u00e9server au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "mayonnaise",
+      "uses": [
+        "homemade_mayonnaise"
+      ],
+      "produces": "chilled_mayonnaise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "clean_broccoli",
+      "action": "Passer le tronc de brocoli sous l'eau pour le nettoyer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "broccoli_stem"
+      ],
+      "produces": "cleaned_broccoli_stem",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_carrot",
+      "action": "\u00c9plucher la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "carrot"
+      ],
+      "produces": "peeled_carrot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_vegetables",
+      "action": "R\u00e2per ou spiralizer le tronc de brocoli et la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "cleaned_broccoli_stem",
+        "peeled_carrot"
+      ],
+      "produces": "grated_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onion",
+      "action": "\u00c9mincer tr\u00e8s finement l'oignon rouge.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "red_onion"
+      ],
+      "produces": "sliced_red_onion",
+      "requires": [],
+      "visualCue": "tr\u00e8s finement"
+    },
+    {
+      "id": "prepare_chives",
+      "action": "Pr\u00e9parer la ciboulette (non explicitement mentionn\u00e9e mais n\u00e9cessaire pour l'\u00e9tape suivante).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "chives"
+      ],
+      "produces": "prepared_chives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_coleslaw",
+      "action": "Mettre tous les l\u00e9gumes dans un saladier et ajouter environ 100g de mayonnaise et une cuill\u00e8re \u00e0 soupe de vinaigre de cidre. Bien m\u00e9langer. Go\u00fbter et ajuster l'assaisonnement si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "grated_vegetables",
+        "sliced_red_onion",
+        "prepared_chives",
+        "chilled_mayonnaise",
+        "apple_cider_vinegar_slaw",
+        "salt_slaw",
+        "pepper_slaw"
+      ],
+      "produces": "broccoli_coleslaw",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "broccoli_coleslaw",
+  "originalText": "Coleslaw de Tronc de Brocolis (recette anti-gaspi) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 octobre 2021\nColeslaw de Tronc de Brocolis (recette anti-gaspi)\nAcc\u00e9der directement \u00e0 la recette\nBon, me revoil\u00e0 avec mes id\u00e9es anti-gapsi ! Cette fois-ci c\u2019est un Coleslaw de Tronc de Brocolis \ud83d\ude42 Et j\u2019en suis bien fi\u00e8re, parce que c\u2019est bien bon !\nPour tout vous raconter, c\u2019est Capucine de chez MonBento avec qui on travaille depuis un bout de temps, qui m\u2019a donn\u00e9 l\u2019id\u00e9e. A l\u2019occasion de\nla semaine du go\u00fbt\n, elle avait envie qu\u2019on travaille sur des recettes un peu insolites. Quelque chose qui sorte vraiment de l\u2019ordinaire !\nEt moi, vous me connaissez. Il suffit de me pousser un petit peu et \u00e7a fait des \u00e9tincelles dans ma t\u00eate, les id\u00e9es d\u00e9bordent. Les notes sur mon t\u00e9l\u00e9phone aussi. Et en vrai, \u00e7a faisait longtemps que j\u2019avais mal au c\u0153ur en jetant ce pauvre tronc de brocolis. Alors oui, parfois je l\u2019utilise en soupe ou en pur\u00e9e. Ou m\u00eame juste \u00e0 la vapeur. J\u2019en ai m\u00eame fait\nune cr\u00e8me pour accompagner des p\u00e2tes.\nMais cette fois, j\u2019avais envie de lui montrer tout le respect qu\u2019il m\u00e9rite. Et d\u2019arr\u00eater de la mixer, de l\u2019\u00e9craser, de l\u2019\u00e9crabouiller, le r\u00e9duire en pur\u00e9e. Non, l\u00e0, j\u2019ai d\u00e9cid\u00e9 de lui faire honneur. Du coup, hop au spiralizer (oui, \u00e7a doit \u00eatre tout aussi douloureux). Ou \u00e0 la r\u00e2pe, \u00e7a marche tr\u00e8s bien aussi.\nEt hop, en mode coleslaw avec une bonne mayo maison (la recette de la mayo vegan est ici) quelques herbes fra\u00eeches. Un peu de carottes r\u00e2p\u00e9es. Easy. Vive le Brocolis !\nColeslaw de Tronc de Brocolis (recette anti-gaspi)\n4.50\n/5 avec\n111\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour la mayonnaise\n1\njaune d\u2019\u0153uf\n1\nc-\u00e0-s de moutarde fine\n100\nml\nd\u2019huile de tournesol\n1\nc-\u00e0-c de vinaigre de cidre\nsel\npoivre\nIngr\u00e9dients pour le coleslaw\nun tronc de brocoli\nenv 300g\n1\npetite carotte\nenv 100g\n\u00bc\noignon rouge\nune dizaine de brins de ciboulette\n1\nc\u00e0s de vinaigre de cidre\nsel\npoivre\nInstructions\nPr\u00e9paration de la mayonnaise\nDans un bol, mettre le jaune d\u2019\u0153uf et la moutarde. Commencer \u00e0 fouetter (\u00e7a marche tr\u00e8s bien avec un batteur \u00e9lectrique, ou un fouet manuel) tout en versant l\u2019huile en fin filet.\nFouetter constamment jusqu\u2019\u00e0 incorporation compl\u00e8te de l\u2019huile.\nAjouter le vinaigre, le sel et le poivre, et m\u00e9langer.\nR\u00e9server au frais, et consommez dans les 24h.\nPr\u00e9paration du coleslaw\nPasser le tronc de brocoli sous l\u2019eau pour le nettoyer.\n\u00c9plucher la carotte.\nR\u00e2per ou spiralizer le tronc de brocoli et la carotte\n\u00c9mincer tr\u00e8s finement l\u2019oignon rouge.\nMettre tous les l\u00e9gumes dans un saladier et ajouter environ 100g de mayonnaise et une cuill\u00e8re \u00e0 soupe de vinaigre de cidre. Bien m\u00e9langer. Go\u00fbter et ajuster l\u2019assaisonnement si n\u00e9cessaire.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nBrocoli\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nSalades\nTags:\ncoleslaw de brocoli\n,\ncoleslaw maison\n,\nrecette anti-gaspi\n,\nrecette zero dechet\nBeignets Courge \u00c9pinards \u00e0 l\u2019Indienne\nPoires au four comme des Pommes de Terre\n4.50 from 111 votes (\n111 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

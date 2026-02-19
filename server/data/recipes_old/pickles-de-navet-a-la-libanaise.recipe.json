@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "title": "Pickles de Navet \u00e0 la libanaise",
+    "description": "Recette simple de pickles de navet roses et acidul\u00e9s, typiques de la cuisine libanaise, \u00e0 base de navets, betterave, vinaigre, laurier et ail.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT3M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "betterave",
+      "navets",
+      "pickle libanais",
+      "pickles",
+      "recette libanaise"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Pickles-de-navet-libanais-4-of-6.jpg",
+    "nationality": "libanais",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez les consommer 48h apr\u00e8s.",
+      "Stocker au frigo 1 mois maximum.",
+      "D\u00e9couvrez nos autres pickles : \u00e0 l'asiatique avec du vinaigre de riz, \u00e0 la m\u00e9diterran\u00e9enne, et aux oignons doux."
+    ],
+    "slug": "pickles-de-navet-a-la-libanaise",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Pickles-de-navet-libanais-4-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/17/pickles-de-navet-a-la-libanaise/",
+    "image": "images/pickles-de-navet-a-la-libanaise.jpg",
+    "createdAt": "2026-02-09T20:58:46.791536",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 2883.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 159.2,
+      "protein": 5.0,
+      "fat": 0.6,
+      "carbs": 36.6,
+      "fiber": 8.7,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 700.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "salt",
+      "name": "gros sel",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "bay_leaves",
+      "name": "feuilles laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaves"
+    },
+    {
+      "id": "turnips",
+      "name": "navets",
+      "quantity": 750.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turnips"
+    },
+    {
+      "id": "beetroot",
+      "name": "betterave crue",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "raw beets"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic cloves"
+    },
+    {
+      "id": "vinegar",
+      "name": "vinaigre blanc",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "White vinegar"
+    }
+  ],
+  "tools": [
+    "Bocaux (2 grands)"
+  ],
+  "steps": [
+    {
+      "id": "boil_brine_base",
+      "action": "Verser l'eau, le sel et les feuilles de laurier dans une casserole et porter \u00e0 \u00e9bullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "brine",
+      "uses": [
+        "water",
+        "salt",
+        "bay_leaves"
+      ],
+      "produces": "boiling_brine_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dissolve_salt",
+      "action": "Baisser le feu et laisser le sel se dissoudre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "brine",
+      "uses": [
+        "boiling_brine_base"
+      ],
+      "produces": "dissolved_salt_brine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_brine",
+      "action": "Eteindre le feu et laisser refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "brine",
+      "uses": [
+        "dissolved_salt_brine"
+      ],
+      "produces": "cooled_brine_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_vegetables",
+      "action": "Eplucher et couper les navets et la betterave en b\u00e2tonnets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "vegetables",
+      "uses": [
+        "turnips",
+        "beetroot"
+      ],
+      "produces": "vegetable_batonnets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pack_jars",
+      "action": "Mettre les b\u00e2tonnets de navet et betterave dans des bocaux bien serr\u00e9s avec les gousses d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "vegetable_batonnets",
+        "garlic"
+      ],
+      "produces": "packed_jars_with_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_final_brine",
+      "action": "Retirer les feuilles de laurier de l'eau sal\u00e9e et verser le vinaigre dans cette eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "brine",
+      "uses": [
+        "cooled_brine_base",
+        "vinegar"
+      ],
+      "produces": "final_pickling_brine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_jars",
+      "action": "Verser le liquide dans les bocaux jusqu'\u00e0 recouvrir compl\u00e8tement les b\u00e2tonnets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "packed_jars_with_garlic",
+        "final_pickling_brine"
+      ],
+      "produces": "filled_pickle_jars",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate",
+      "action": "Laisser mariner pendant 48h avant consommation.",
+      "duration": "PT48H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assembly",
+      "uses": [
+        "filled_pickle_jars"
+      ],
+      "produces": "pickles_de_navet_libanaise",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pickles_de_navet_libanaise",
+  "originalText": "Pickles de Navet \u00e0 la libanaise - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n17 janvier 2022\nPickles de Navet \u00e0 la libanaise\nAcc\u00e9der directement \u00e0 la recette\nJ\u2019ai mang\u00e9 pour la premi\u00e8re fois des Pickles de Navet \u00e0 la libanaise quand j\u2019avais 14-15 ans.\nEt figurez-vous que c\u2019\u00e9tait avec Daniela !\nOn \u00e9tait du c\u00f4t\u00e9 de Saint-Michel \u00e0 Paris. Pour ceux qui ne connaissent pas c\u2019est \u00e0 la jonction entre le quartier des po\u00e8tes de Saint Germain, ambiance artsy/bobochic. Et du quartier de Saint-Michel, tr\u00e8s touristique. Bref, il y a pleiiiin de petits resto et fast foods de cuisine m\u00e9diterranenne. Cuisine libanaise, grecque, isra\u00eblienne etc. Et \u00e7a devait m\u00eame \u00eatre la premi\u00e8re fois que j\u2019ai mang\u00e9 des falafels, maintenant que j\u2019y pense.\nDaniela m\u2019emm\u00e8ne donc l\u00e0-bas, pour manger un sandwich de falafels. Je tombe instantan\u00e9ment folle amoureuse de la sauce tahini. Et je tombe ensuite sur un truc rose fluo chelou. Berk. C\u2019est quoi ce machin. Daaaaan c\u2019est quoi ce truc rose l\u00e0 ? Daniela : aucune id\u00e9e mais c\u2019est trop boooon. Faut savoir que Daniela a un gros faible pour tout ce qui se rapproche de pr\u00e8s ou de loin au vinaigre. De la vinaigrette, aux cornichons, \u00e0 tous les genres de pickles du monde.\nBref, je ne repense plus \u00e0 ces machins roses. Et puis assez r\u00e9cemment, je les ai red\u00e9couverts. Et j\u2019en suis tomb\u00e9e amoureuse aussi. Avec presque 20 ans de retard ! J\u2019ai tellement aim\u00e9 que j\u2019ai voulu savoir comment les faire. Et sachez que c\u2019est tr\u00e8s simple. Il vous faut, en gros des navets et une betterave. Du vinaigre, du laurier et de l\u2019ail. Et boom. Des Pickles de Navet \u00e0 la libanaise ! C\u2019est magique non ?\nD\u00e9couvrez nos autres pickles :\n\u00e0 l\u2019asiatique avec du vinaigre de riz\n,\n\u00e0 la m\u00e9diterran\u00e9enne\n,\net aux oignons doux.\nPickles de Navet \u00e0 la libanaise\nNatacha\n4.47\n/5 avec\n60\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n2\ngrands bocaux\nIngr\u00e9dients\n1x\n2x\n3x\n700\nml\nd\u2019eau\n\ufeff1\n\ufeffc\u00e0s\nde gros sel\n\ufeff\n2\nfeuilles de laurier\n750\ng\nde navets\nenv 3\n150\ng\nde betterave crue\nenv 1 petite\n2\ngousses d\u2019ail\n200\nml\nde vinaigre blanc\nInstructions\nVerser l\u2019eau, le sel et les feuilles de laurier dans une casserole et porter \u00e0 \u00e9bullition. Baisser le feu et laisser le sel se dissoudre. Cela prend 3-4min.\nEteindre le feu et laisser refroidir.\nEplucher et couper les navets et la betterave en b\u00e2tonnets.\nLes mettre dans des bocaux bien serr\u00e9s avec l'ail.\nRetirer les feuilles de laurier de l\u2019eau sal\u00e9e et verser le vinaigre.\nVerser le liquide dans les bocaux jusqu\u2019\u00e0 recouvrir compl\u00e8tement les b\u00e2tonnets.\nVous pouvez les consommer 48h apr\u00e8s.\nStocker au frigo 1 mois maximum.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBetterave\n,\nNavet\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nbetterave\n,\nnavets\n,\npickle libanais\n,\npickles\n,\nrecette libanaise\nSoupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)\nShawarma Bowl Vegan\n4 thoughts on \u201cPickles de Navet \u00e0 la libanaise\u201d\nS\u00e9bastien\ndit\u00a0:\n16 f\u00e9vrier 2023 \u00e0 12 h 22 min\nBonjour et merci pour cette recette. Vous ne parlez pas de l\u2019ail mentionn\u00e9 dans les ingr\u00e9dients lors de la recette. A quel moment l\u2019int\u00e8gre t on dans la recette?\nMerci\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 mars 2023 \u00e0 14 h 58 min\nHello ! En m\u00eame temps que les l\u00e9gumes !\nchargement\u2026\nR\u00e9pondre\nMarjorie\ndit\u00a0:\n30 octobre 2024 \u00e0 8 h 52 min\nBonjour, est-ce que les pickles ne se conservent qu\u2019un mois apr\u00e8s ouverture du pot ou un mois apr\u00e8s avoir r\u00e9alis\u00e9 la recette ? Je compte faire plusieurs pots et les conserver jusqu\u2019\u00e0 no\u00ebl.\nMerci pour votre r\u00e9ponse\nchargement\u2026\nR\u00e9pondre\nHajjar\ndit\u00a0:\n8 juin 2025 \u00e0 12 h 01 min\nJe laisse fait mais 8mois apr\u00e8s ils ont noircis pourquoi\nchargement\u2026\nR\u00e9pondre\n4.47 from 60 votes (\n59 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "title": "Kolokithopita (feuillet\u00e9 grec \u00e0 la courgette)",
+    "description": "Un feuillet\u00e9 grec \u00e0 la courgette, simple, rustique et ultra savoureux, parfum\u00e9 \u00e0 la menthe.",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H10M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "feuillet\u00e9",
+      "filo",
+      "recette grecque",
+      "courgette",
+      "\u00e9t\u00e9",
+      "plat au four",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Kolokithopita-4-of-6.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez la passer rapidement au four pour retrouver le croustillant des feuilles si besoin.",
+      "La menthe se marie \u00e0 merveille avec la courgette, lui apporte fra\u00eecheur, relief et un petit go\u00fbt de vacances au soleil."
+    ],
+    "slug": "kolokithopita-feuillete-grec-a-la-courgette",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Kolokithopita-4-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/09/26/kolokithopita-ou-feuillete-a-la-courgette/",
+    "image": "images/kolokithopita-feuillete-grec-a-la-courgette.webp",
+    "createdAt": "2026-02-09T21:58:49.458711",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 70.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 208.1,
+      "protein": 14.3,
+      "fat": 14.0,
+      "carbs": 6.9,
+      "fiber": 1.2,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "courgette",
+      "name": "courgette",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "yaourt_grec",
+      "name": "yaourt grec",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles de filo",
+      "quantity": 20.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Plat de cuisson (de la taille des feuilles de filo)"
+  ],
+  "steps": [
+    {
+      "id": "grate_courgettes",
+      "action": "R\u00e2pez les courgettes et placez-les dans une passoire avec une belle cuill\u00e8re \u00e0 caf\u00e9 de sel. Laissez-les d\u00e9gorger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "courgette",
+        "sel"
+      ],
+      "produces": "courgettes_rapees_salees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_mint",
+      "action": "Hachez les feuilles de menthe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "menthe"
+      ],
+      "produces": "menthe_hachee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_base",
+      "action": "Dans un grand saladier, cassez les oeufs, \u00e9miettez la feta, ajoutez la menthe hach\u00e9e et le yaourt grec, puis m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oeufs",
+        "feta",
+        "menthe_hachee",
+        "yaourt_grec"
+      ],
+      "produces": "base_melangee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_courgettes",
+      "action": "Pressez fortement les courgettes d\u00e9gorg\u00e9es entre vos mains pour en extraire autant d'eau que possible, puis ajoutez-les au saladier. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_rapees_salees",
+        "base_melangee"
+      ],
+      "produces": "garniture_courgette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_dolive"
+      ],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "oil_plate",
+      "action": "Huilez le fond de votre plat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "huile_dolive"
+      ],
+      "produces": "plat_huiile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_bottom_filo",
+      "action": "Empilez environ 6-7 feuilles de filo en huilant entre chaque feuille (ou toutes les 2 feuilles).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "feuilles_filo",
+        "huile_dolive",
+        "plat_huiile"
+      ],
+      "produces": "fond_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_filling",
+      "action": "Versez la garniture de courgette dans le plat et aplatissez-la.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "garniture_courgette",
+        "fond_filo"
+      ],
+      "produces": "plat_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_top_filo",
+      "action": "Empilez le reste des feuilles de filo par-dessus, en huilant entre chaque couche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "feuilles_filo",
+        "huile_dolive",
+        "plat_avec_garniture"
+      ],
+      "produces": "plat_recouvert_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "score_filo",
+      "action": "Quadrillez les couches sup\u00e9rieures de filo avec un couteau, sans aller jusqu'au fond du plat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "plat_recouvert_filo"
+      ],
+      "produces": "plat_quadrille",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_sesame",
+      "action": "Saupoudrez de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "graines_sesame",
+        "plat_quadrille"
+      ],
+      "produces": "plat_pret_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez pour 1h \u00e0 1h10min, jusqu'\u00e0 ce que le dessus soit bien dor\u00e9 et croustillant.",
+      "duration": "PT1H10M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "plat_pret_a_cuire"
+      ],
+      "produces": "kolokithopita_cuit",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": "dessus bien dor\u00e9 et croustillant"
+    },
+    {
+      "id": "cool",
+      "action": "Laissez ti\u00e9dir avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "kolokithopita_cuit"
+      ],
+      "produces": "kolokithopita_tiede",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "kolokithopita_tiede",
+  "originalText": "Kolokithopita (Feuillet\u00e9 Grec \u00c0 La Courgette) | Recette Facile\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 septembre 2023\nKolokithopita (feuillet\u00e9 grec \u00e0 la courgette)\nVous connaissez la\nKolokithopita\n? Ce\nfeuillet\u00e9 grec \u00e0 la courgette\n, c\u2019est un peu la cousine ensoleill\u00e9e (et un brin confidentielle) de la\nspanakopita\n. Moins c\u00e9l\u00e8bre, peut-\u00eatre. Mais tout aussi d\u00e9licieuse, voire plus, si vous aimez les courgettes autant que nous ! En France, on l\u2019a rarement au\nmenu\n. Et soyons honn\u00eates : la\nspanakopita\nelle-m\u00eame reste souvent un myst\u00e8re pour beaucoup (\u00ab la spana\u2026 quoi ? \u00bb). Mais en\nGr\u00e8ce\n, la\nKolokithopita\nest partout :\nfour\n,\nboulangerie\n,\npique-nique\n\u2026 Bref, une vraie r\necette du quotidien\n,\nsimple\n,\nrustique\n, et surtout\nultra savoureuse\n. On vous propose ici une\nversion maison\n, accessible et\nv\u00e9g\u00e9tarienne\n, avec des\ningr\u00e9dients faciles\n\u00e0 trouver et une bonne dose de soleil dans l\u2019\nassiette\n. Et si vous avez aim\u00e9 cette Kolokithopita, vous allez forc\u00e9ment craquer pour sa cousine tr\u00e8s connue : la\nspanakopita\n. Un feuillet\u00e9 aux \u00e9pinards et \u00e0 la feta, ultra r\u00e9confortant, toujours \u00e0 la grecque\u2026 et toujours un succ\u00e8s \u00e0 table !\nTable des mati\u00e8res\n1\nLa courgette, fra\u00eecheur d\u2019\u00e9t\u00e9 \u00e0 presser sans piti\u00e9\n2\nFeta & yaourt grec : duo de choc \u00e0 la grecque\n3\nKolokithopita (ou feuillet\u00e9 \u00e0 la courgette)\n4\nLa menthe, l\u2019herbe qui change tout\n5\nUltra fine, ultra croustillante : vive la p\u00e2te filo !\nLa courgette, fra\u00eecheur d\u2019\u00e9t\u00e9 \u00e0 presser sans piti\u00e9\nDans la Kolokithopita, la courgette est reine. R\u00e2p\u00e9e finement, elle apporte \u00e0 la fois fra\u00eecheur, douceur\u2026 et une texture ultra moelleuse. Mais attention : la courgette, c\u2019est aussi 95 % d\u2019eau. Et si on ne l\u2019\u00e9goutte pas soigneusement, c\u2019est la catastrophe annonc\u00e9e dans le feuillet\u00e9. Alors on la r\u00e2pe, on la sale l\u00e9g\u00e8rement, puis on la presse fort (vraiment fort !) pour en extraire tout ce qu\u2019elle a \u00e0 donner. Une fois bien essor\u00e9e, elle se m\u00e9lange \u00e0 de la feta et du yaourt grec, pour une farce onctueuse, sal\u00e9e, l\u00e9g\u00e8rement acidul\u00e9e\u2026 bref, pleine de caract\u00e8re. En Gr\u00e8ce, on ajoute parfois d\u2019autres fromages locaux introuvables ici, mais franchement, la feta fait tr\u00e8s bien le job !\nVous aimez la courgette autant que nous ? D\u00e9couvrez plein d\u2019id\u00e9es gourmandes et veggie dans notre\ncat\u00e9gorie d\u00e9di\u00e9e aux recettes de courgette\n! Et pour vous r\u00e9galer d\u00e8s maintenant, voici nos coups de c\u0153ur : les\n\u0153ufs cocotte en courgette\n, les\ncrinkle courgette, feta & menthe\npleins de fra\u00eecheur, et les\ngalettes boulgour, courgette & comt\u00e9\npour changer des classiques. Alors, on se lance ?\nFeta & yaourt grec : duo de choc \u00e0 la grecque\nDans la Kolokithopita, la feta joue le r\u00f4le de la star sal\u00e9e : elle apporte du caract\u00e8re, une texture friable et ce go\u00fbt unique, \u00e0 la fois lact\u00e9 et l\u00e9g\u00e8rement acidul\u00e9. On l\u2019\u00e9miette g\u00e9n\u00e9reusement, sans la r\u00e9duire en pur\u00e9e, pour garder des petits \u00e9clats fondants \u00e0 chaque bouch\u00e9e. \u00c0 ses c\u00f4t\u00e9s, le yaourt grec vient \u00e9quilibrer le tout : plus \u00e9pais, plus riche que le yaourt classique, il apporte de la douceur, de l\u2019onctuosit\u00e9, et aide \u00e0 lier la farce sans l\u2019alourdir. C\u2019est un vrai combo gagnant : la feta rel\u00e8ve, le yaourt adoucit, et ensemble, ils transforment une simple courgette r\u00e2p\u00e9e en farce ultra gourmande.\nFan de yaourt grec et de feta ? Vous allez adorer notre s\u00e9lection de recettes fra\u00eeches et gourmandes ! D\u00e9couvrez nos id\u00e9es \u00e0 base de yaourt\ngrec pour apporter douceur et fra\u00eecheur \u00e0 vos plats. Testez par exemple la\nsauce yaourt, cornichons et pommes de terre\nou le classique\ntzatziki maison\n. C\u00f4t\u00e9 feta, on vous r\u00e9serve aussi plein de bonnes id\u00e9es \u00e0 croquer\nici\n. De quoi jouer la carte de la fra\u00eecheur m\u00e9diterran\u00e9enne \u00e0 chaque repas ! Alors, pr\u00eat\u00b7es \u00e0 r\u00e9galer vos papilles ?\nKolokithopita (ou feuillet\u00e9 \u00e0 la courgette)\n4.56\n/5 avec\n118\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nplat de la taille de vos feuilles de filo ou un peu plus petit\n1\nkg\nde courgette\n1\nbouquet de menthe\n4\noeufs\n400\ng\nde feta\n150\ng\nde yaourt grec\nsel\nenv 20 feuilles de filo\nde l\u2019huile d\u2019olive\ndes graines de s\u00e9same\nInstructions\nR\u00e2pez les courgettes et placez-les dans une passoire avec une belle c\u00e0c de sel.\nLaissez-les d\u00e9gorger.\nHachez les feuilles de menthe\nDans un grand saladier, cassez les oeufs, \u00e9miettez la feta, ajoutez la menthe et le yaourt et m\u00e9langez.\nPressez les courgettes entre vos mains pour en extraire autant d\u2019eau que possible puis ajoutez les au saladier.\nM\u00e9langez bien.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nHuilez le fond de votre plat et empilez environ 6-7 feuilles de filo en huilant entre chaque feuille (ou chaque 2 feuilles)\nVersez la garniture et aplatissez.\nEmpilez le reste des feuilles de filo en huilant entre chaque couche.\nQuadriller les couches sup\u00e9rieures de filo avec un couteau sans aller jusqu\u2019au fond. Cela permet que les feuilles ne s\u2019envolent pas en cuisant et que ce soit plus facile \u00e0 couper une fois cuit.\nSaupoudrez de s\u00e9same et enfournez pour 1h \u00e0 1h10.\nLaissez ti\u00e9dir avant de servir.\nVous pouvez la passer rapidement au four pour retrouver le croustillant des feuilles si besoin.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa menthe, l\u2019herbe qui change tout\nPas besoin d\u2019un bouquet garni pour parfumer la Kolokithopita. Ici, c\u2019est la menthe qui m\u00e8ne la danse. Elle se marie \u00e0 merveille avec la courgette, lui apporte fra\u00eecheur, relief et un petit go\u00fbt de vacances au soleil. Contrairement \u00e0 la spanakopita (o\u00f9 l\u2019on m\u00eale persil, aneth et menthe), cette version se concentre sur une seule herbe. Et franchement, c\u2019est largement suffisant ! La menthe rel\u00e8ve sans \u00e9craser, parfume sans trop en faire. Elle donne \u00e0 ce feuillet\u00e9 ce petit quelque chose en plus\u2026 le go\u00fbt des beaux jours, tout simplement.\nLa menthe, c\u2019est la star qui apporte fra\u00eecheur et peps \u00e0 plein de recettes ! D\u00e9couvrez nos coups de c\u0153ur pour la mettre \u00e0 l\u2019honneur : les\ngalettes petits pois, menthe & feta\nultra gourmandes, les\nboreks blettes, menthe & feta\nqui font voyager, ou encore la d\u00e9licieuse\ntartinade de feta, menthe et ail\n\u00e0 tartiner sans mod\u00e9ration. Un souffle de fra\u00eecheur pour vos assiettes, \u00e7a vous dit ?\nUltra fine, ultra croustillante : vive la p\u00e2te filo !\nPas de Kolokithopita (feuillet\u00e9 grec \u00e0 la courgette) sans p\u00e2te filo ! C\u2019est elle qui donne ce feuillet\u00e9 si croustillant, si l\u00e9ger, presque a\u00e9rien \u00e0 chaque bouch\u00e9e. La filo, c\u2019est une p\u00e2te ultra fine, presque translucide, qu\u2019on superpose en plusieurs couches avec un peu d\u2019huile ou de beurre (v\u00e9g\u00e9tal, bien s\u00fbr). Elle cuit vite, elle dore bien, et elle apporte ce petit croquant irr\u00e9sistible. On ne la trouve pas partout, c\u2019est vrai\u2026 mais bonne nouvelle : elle se cache de moins en moins dans les rayons ! Jetez un \u0153il du c\u00f4t\u00e9 des p\u00e2tes \u00e0 tarte, souvent \u00e0 c\u00f4t\u00e9 des feuilles de brick. Et hop, vous \u00eates pr\u00eat\u00b7es \u00e0 faire croustiller la courgette comme jamais.\nVous adorez le croustillant de la p\u00e2te filo ? D\u00e9couvrez toutes nos recettes pour la sublimer, de l\u2019entr\u00e9e au dessert, dans notre s\u00e9lection d\u00e9di\u00e9e :\nRecettes p\u00e2te filo\n. Croustillez sans mod\u00e9ration !\nEnvie d\u2019un petit air de M\u00e9diterran\u00e9e dans l\u2019assiette ? La Kolokithopita (feuillet\u00e9 grec \u00e0 la courgette), c\u2019est la recette parfaite pour faire croustiller l\u2019\u00e9t\u00e9, m\u00eame quand il se fait la malle. Un plat simple, parfum\u00e9, g\u00e9n\u00e9reux, \u00e0 partager \u00e0 l\u2019ap\u00e9ro, en pique-nique ou au d\u00eener avec une belle salade. Courgette fondante, feta sal\u00e9e, menthe fra\u00eeche, filo croustillante\u2026 le soleil grec s\u2019invite dans votre cuisine sans escale. Et si vous tombez amoureux\u00b7se de cette sp\u00e9cialit\u00e9, on ne vous en voudra pas : \u00e7a nous a fait la m\u00eame chose !\nVous aimez les saveurs grecques et la fra\u00eecheur du printemps ? Ne partez pas sans jeter un \u0153il \u00e0 notre s\u00e9lection de\n10 recettes grecques pour le printemps\n. De quoi prolonger le voyage culinaire et ravir vos papilles \u00e0 chaque saison !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats au Four\nTags:\nfeuillet\u00e9\n,\nfilo\n,\nrecette grecque\nNouilles saut\u00e9es piment\u00e9es \u00e0 la courgette\nCookies \u00e0 la pistache\n4 thoughts on \u201cKolokithopita (feuillet\u00e9 grec \u00e0 la courgette)\u201d\nMarie\ndit\u00a0:\n1 octobre 2024 \u00e0 2 h 36 min\nBonjour encore merci pour le partage de ces d\u00e9licieuses recettes et l\u2019\u00e9criture de votre livre : un r\u00e9gal.\n\u00c0 quelle temp\u00e9rature doit on cuire le plat ci dessus ?\nJe vous remercie pour votre r\u00e9ponse, bonne continuation\nchargement\u2026\nR\u00e9pondre\nGatt\ndit\u00a0:\n8 juillet 2025 \u00e0 19 h 50 min\nTr\u00e8s bon mais difficult\u00e9 \u00e0 faire dorer les feuilles de filo dessus\nchargement\u2026\nR\u00e9pondre\nGwendoline\ndit\u00a0:\n30 septembre 2025 \u00e0 4 h 01 min\nBonjour,\nMerci pour ces recettes dans lesquelles je pioche tr\u00e8s souvent.\nJ\u2019habite dans un endroit o\u00f9 il est difficile de trouver\u2026 A peu pr\u00e8s tout\ud83d\ude05 c\u2019est une autre fa\u00e7on de cuisiner, pas de menus \u00e0 la semaine mais plut\u00f4t en fonction de ce qu\u2019on trouve au magasin. Bref pas de p\u00e2te filo ici j\u2019ai donc test\u00e9 avec des feuilles de brick et quand j\u2019ai voulu faire la recette il n\u2019y avait pas non plus de yaourt grec, j\u2019ai donc remplac\u00e9 par du fromage blanc,le r\u00e9sultat nous a plu et tout le monde a beaucoup aim\u00e9 .\nchargement\u2026\nR\u00e9pondre\nGwendoline\ndit\u00a0:\n30 septembre 2025 \u00e0 4 h 02 min\nBonjour,\nMerci pour ces recettes dans lesquelles je pioche tr\u00e8s souvent.\nJ\u2019habite dans un endroit o\u00f9 il est difficile de trouver\u2026 A peu pr\u00e8s tout\ud83d\ude05 c\u2019est une autre fa\u00e7on de cuisiner, pas de menus \u00e0 la semaine mais plut\u00f4t en fonction de ce qu\u2019on trouve au magasin. Bref pas de p\u00e2te filo ici j\u2019ai donc test\u00e9 avec des feuilles de brick et quand j\u2019ai voulu faire la recette il n\u2019y avait pas non plus de yaourt grec, j\u2019ai donc remplac\u00e9 par du fromage blanc,le r\u00e9sultat nous a plu et tout le monde a beaucoup aim\u00e9 .\nchargement\u2026\nR\u00e9pondre\n4.56 from 118 votes (\n116 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

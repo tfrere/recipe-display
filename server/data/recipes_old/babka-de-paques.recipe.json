@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "title": "Babka de P\u00e2ques",
+    "description": "Une babka de P\u00e2ques ultra gourmande en forme de jolie couronne. Elle d\u00e9corera avec go\u00fbt une belle table de brunch pasqual. La chasse aux \u0153ufs n'est jamais finie quand on sait quels tr\u00e9sors cette babka renferment\u2026",
+    "servings": 8,
+    "prepTime": "PT1H30M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "babka",
+      "babka au chocolat",
+      "babka couronne",
+      "brioche",
+      "chocolat",
+      "id\u00e9e recette p\u00e2ques",
+      "p\u00e2ques",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Babka-Paques-1-of-6.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Comme toute recette de brioche, le temps de pr\u00e9paration global est assez long. Par contre, les \u00e9tapes de r\u00e9alisation sont assez simples.",
+      "La recette n'est pas compliqu\u00e9e mais il faut s'armer de patience avant de pouvoir d\u00e9guster votre babka de P\u00e2ques.",
+      "Pour obtenir une forme bien ronde, j'ai cuit la babka dans un moule \u00e0 manquer (20cm de diam\u00e8tre).",
+      "J'ai gliss\u00e9 quelques petits \u0153ufs en chocolat dans la p\u00e2te, attention gourmandise extr\u00eame garantie !",
+      "Tester la cuisson \u00e0 partir de 40min et ne pas h\u00e9siter \u00e0 couvrir avec du papier cuisson si la brioche est un peu trop color\u00e9e sur la fin de la cuisson."
+    ],
+    "slug": "babka-de-paques",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Babka-Paques-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/04/13/babka-de-paques/",
+    "image": "images/babka-de-paques.webp",
+    "createdAt": "2026-02-09T21:11:32.347243",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 675.0,
+    "totalCookingTime": 75.0,
+    "nutritionPerServing": {
+      "calories": 519.7,
+      "protein": 10.0,
+      "fat": 26.6,
+      "carbs": 64.2,
+      "fiber": 3.1,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "levure_de_boulanger",
+      "name": "levure de boulanger d\u00e9shydrat\u00e9e",
+      "quantity": 8.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Active dry yeast"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "2 pinc\u00e9es",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "beurre_doux",
+      "name": "beurre doux",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oeufs_fourres_chocolat",
+      "name": "oeufs fourr\u00e9s au chocolat",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chocolate-filled eggs"
+    },
+    {
+      "id": "petits_morceaux_chocolat",
+      "name": "petits morceaux de chocolat",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chocolate chips"
+    },
+    {
+      "id": "pate_a_tartiner",
+      "name": "p\u00e2te \u00e0 tartiner",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chocolate spread"
+    }
+  ],
+  "tools": [
+    "Robot p\u00e2tissier (avec bol)",
+    "Moule \u00e0 manquer de 20cm de diam\u00e8tre (ou plaque de cuisson)",
+    "Rouleau \u00e0 p\u00e2tissier"
+  ],
+  "steps": [
+    {
+      "id": "activer_levure",
+      "action": "Dans une petite casserole, chauffer doucement le lait jusqu'\u00e0 50\u00b0C. Verser la levure s\u00e8che dedans et laisser reposer 10min pour la r\u00e9activer.",
+      "duration": "PT10M",
+      "temperature": 50,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "brioche",
+      "uses": [
+        "lait",
+        "levure_de_boulanger"
+      ],
+      "produces": "lait_levure_activee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_ingredients_secs",
+      "action": "Dans le bol de votre robot, m\u00e9langer la farine, le sel et le sucre. Ajouter les 2 oeufs et m\u00e9langer de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "brioche",
+      "uses": [
+        "farine",
+        "sel",
+        "sucre",
+        "oeufs"
+      ],
+      "produces": "melange_sec_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "petrir_pate_base",
+      "action": "Verser le m\u00e9lange lait et levure et p\u00e9trir pendant 5min pour homog\u00e9n\u00e9iser la p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "brioche",
+      "uses": [
+        "melange_sec_oeufs",
+        "lait_levure_activee"
+      ],
+      "produces": "pate_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre_petrir",
+      "action": "Ajouter progressivement le beurre mou en petits cubes et p\u00e9trir encore 15min jusqu'\u00e0 ce que la p\u00e2te soit lisse et \u00e9lastique.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "brioche",
+      "uses": [
+        "pate_base",
+        "beurre_doux"
+      ],
+      "produces": "pate_brioche_lisse",
+      "requires": [],
+      "visualCue": "lisse et \u00e9lastique"
+    },
+    {
+      "id": "premiere_levage",
+      "action": "R\u00e9unir la p\u00e2te au centre du bol, couvrir d'un torchon et placer dans un endroit chaud (25\u00b0C). Laisser reposer minimum 1h ou jusqu'\u00e0 ce que la p\u00e2te ait doubl\u00e9 de volume.",
+      "duration": "PT1H",
+      "temperature": 25,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "brioche",
+      "uses": [
+        "pate_brioche_lisse"
+      ],
+      "produces": "pate_levee",
+      "requires": [],
+      "visualCue": "doubl\u00e9 de volume"
+    },
+    {
+      "id": "degazer_refrigerer",
+      "action": "D\u00e9gazer la p\u00e2te en donnant un bon coup de poing puis former une boule. Filmer et placer au r\u00e9frig\u00e9rateur toute une nuit (ou 1h au frigo puis 20min au cong\u00e9lateur).",
+      "duration": "PT8H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "brioche",
+      "uses": [
+        "pate_levee"
+      ],
+      "produces": "pate_refroidie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "\u00c9taler la p\u00e2te pour former un rectangle de 30x40cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_refroidie"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "rectangle de 30x40cm"
+    },
+    {
+      "id": "garnir_pate",
+      "action": "\u00c9taler la p\u00e2te \u00e0 tartiner sur la p\u00e2te, puis parsemer de petits morceaux de chocolat et enfin placer les petits oeufs de P\u00e2ques fourr\u00e9s en \u00e9vitant qu'ils soient align\u00e9s dans la largeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_etalee",
+        "pate_a_tartiner",
+        "petits_morceaux_chocolat",
+        "oeufs_fourres_chocolat"
+      ],
+      "produces": "pate_garnie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rouler_cylindre",
+      "action": "Rouler la p\u00e2te sur la longueur pour former un cylindre bien serr\u00e9. Couper le cylindre en deux dans la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_garnie"
+      ],
+      "produces": "deux_brins_pate",
+      "requires": [],
+      "visualCue": "cylindre bien serr\u00e9"
+    },
+    {
+      "id": "tresser_pate",
+      "action": "Tresser les deux brins de p\u00e2te avec la partie interne du cylindre vers le haut.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "deux_brins_pate"
+      ],
+      "produces": "pate_tressee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_escargot",
+      "action": "Enrouler la p\u00e2te tress\u00e9e comme un escargot et placer dans un moule de 20cm chemis\u00e9 (ou sur une plaque avec papier cuisson).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_tressee"
+      ],
+      "produces": "babka_formee",
+      "requires": [],
+      "visualCue": "forme d'escargot"
+    },
+    {
+      "id": "deuxieme_levage",
+      "action": "R\u00e9server dans un endroit chaud et laisser pousser environ 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "babka_formee"
+      ],
+      "produces": "babka_levee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 170\u00b0C.",
+      "duration": null,
+      "temperature": 170,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "badigeonner_oeuf",
+      "action": "Badigeonner la babka avec 1 oeuf battu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "babka_levee",
+        "oeufs"
+      ],
+      "produces": "babka_badigeonnee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_babka",
+      "action": "Enfourner et cuire environ 45min. V\u00e9rifier la cuisson \u00e0 partir de 40min.",
+      "duration": "PT45M",
+      "temperature": 170,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "babka_badigeonnee"
+      ],
+      "produces": "babka_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "babka_cuite",
+  "originalText": "Babka de P\u00e2ques - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 avril 2022\nBabka de P\u00e2ques\nAcc\u00e9der directement \u00e0 la recette\nOn entendrait presque le tintement des cloches tant la date approche\u2026 Vous n\u2019imaginez pas \u00e0 quel point cette date est importante, pour ma fille tout du moins ! En effet, je dirais que tout comme No\u00ebl, ce sont ces dates qui servent aux enfants de rep\u00e8res spatiotemporels. Gr\u00e2ce \u00e0 elles, Olivia sait exactement combien de mois il reste avant son anniversaire ou si c\u2019est bient\u00f4t les grandes vacances ou la fin de l\u2019ann\u00e9e calendaire. Heureusement, sa maman aussi adore ces dates. Je les appelle mes dates jalons. Elles me servent aussi \u00e0 me rep\u00e9rer dans le temps. Est-ce que j\u2019ai bien pos\u00e9 tous mes cong\u00e9s? Combien de temps avant mon prochain week-end de 4 jours? Est-ce que c\u2019est bient\u00f4t mon anniversaire (ah bin ouiii, c\u2019est pas que les enfants :p :p). Bref, en tout cas P\u00e2ques c\u2019est le weekend prochain, mes vacances d\u2019\u00e9t\u00e9 sont book\u00e9es et je vous propose cette jolie Babka de P\u00e2ques \u00e0 partager en famille !\nComme toute recette de brioche, le temps de pr\u00e9paration global est assez long. Par contre, les \u00e9tapes de r\u00e9alisation sont assez simples. En r\u00e9sum\u00e9, la recette n\u2019est pas compliqu\u00e9e mais il faut s\u2019armer de patience avant de pouvoir d\u00e9guster votre babka de P\u00e2ques. La particularit\u00e9 de cette babka, c\u2019est qu\u2019elle est en forme de couronne ou d\u2019escargot (elle est ronde quoi). Pour obtenir une forme bien ronde, j\u2019ai cuit la babka dans un moule \u00e0 manquer (20cm de diam\u00e8tre). Autre particularit\u00e9, la garniture\u2026 J\u2019ai gliss\u00e9 quelques petits \u0153ufs en chocolat dans la p\u00e2te, attention gourmandise extr\u00eame garantie !\nRetrouvez nos autres babkas sur le blog : la\nbabka chocolat orange\nou encore la\nbabka framboise v\u00e9gane\n. Nous avons aussi une version sal\u00e9e : les\nmini babka au pesto\n!\nBabka de P\u00e2ques\nDaniela\nUne babka de P\u00e2ques ultra gourmande en forme de jolie couronne. Elle d\u00e9corera avec go\u00fbt une belle table de brunch pasqual. La chasse aux \u0153ufs n\u2019est jamais finie quand on sait quels tr\u00e9sors cette babka renferment\u2026\n4.59\n/5 avec\n48\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nTemps de repos\n3\nheures\nh\nType de plat\nBoulange, Brunch, Petit d\u00e9jeuner\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nBrioche :\n400\ng\nde farine\n8\ng\nde levure de boulanger d\u00e9shydrat\u00e9e\n100\nml\nde lait\n2\npinc\u00e9es de sel\n2\n\u0153ufs\n150\ng\nde beurre doux mou\n80\ng\nde sucre\nGarniture :\n60\ng\nd\u2019\u0153ufs fourr\u00e9s au chocolat\n40\ng\nde petits morceaux de chocolat\n100\ng\nde p\u00e2te \u00e0 tartiner\nDorure :\n1\n\u0153uf\nInstructions\nDans une petite casserole, chauffer doucement le lait. Veillez \u00e0 ne pas d\u00e9passer les 50 degr\u00e9s (la temp\u00e9rature est tr\u00e8s importante de mani\u00e8re \u00e0 ne pas \u00ab tuer \u00bb la levure). Verser la levure s\u00e8che et laiss\u00e9e reposer 10min le temps de la r\u00e9activer.\nDans le bol de votre robot, m\u00e9langer la farine, le sel, le sucre. Ajouter ensuite les \u0153ufs et m\u00e9langer de nouveau. Verser le m\u00e9lange lait et levure et p\u00e9trir pendant environ 5 min pour homog\u00e9n\u00e9iser la p\u00e2te.\nAjouter ensuite progressivement le beurre mou en petit cube et p\u00e9trir encore 15min jusqu\u2019\u00e0 ce que la p\u00e2te soit lisse et \u00e9lastique.\nR\u00e9unir la p\u00e2te au centre du bol et couvrir avec un torchon et placer le bol dans un endroit chaud (25 degr\u00e9s) et laisser reposer minimum 1h ou jusqu\u2019\u00e0 ce que la p\u00e2te ait doubl\u00e9 de volume. En fonction de la temp\u00e9rature cela peut prendre 1h30 ou 2h.\nD\u00e9gazer la p\u00e2te en donnant un bon coup de poing puis former une boule. Filmer et placer au r\u00e9frig\u00e9rateur toute une nuit ou alors 1h puis 20 min au cong\u00e9lateur.\n\u00c9taler la p\u00e2te de mani\u00e8re \u00e0 former un rectangle de 30x40cm.\nCommencer par \u00e9taler la p\u00e2te \u00e0 tartiner puis parsemer de petits morceaux de chocolat et enfin placer les petits \u0153ufs de P\u00e2ques fourr\u00e9s un \u0153uf partout en \u00e9vitant qu\u2019ils se retrouvent align\u00e9s dans la largeur.\nRouler la p\u00e2te sur la longueur de mani\u00e8re \u00e0 former un cylindre bien serr\u00e9. Couper en deux dans la longueur puis tresser les deux brins avec la partie interne du cylindre vers le haut.\nEnrouler la p\u00e2te comme un escargot et placer sur une plaque recouverte de papier cuisson (pour une forme libre) sinon placer dans un moule de 20cm chemis\u00e9 (pour une forme parfaitement ronde).\nR\u00e9server dans un endroit chaud et laisser pousser environ 1h.\nPr\u00e9chauffer le four \u00e0 170 degr\u00e9s.\nBadigeonner d\u2019\u0153uf battu et enfourner. Cuire environ 45min, tester la cuisson \u00e0 partir de 40min et ne pas h\u00e9siter \u00e0 couvrir avec du papier cuisson si la brioche est un peu trop color\u00e9e sur la fin de la cuisson.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nBrioches et Boulange\n,\nBrunch Sucr\u00e9\n,\nNon class\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nbabka\n,\nbabka au chocolat\n,\nbabka couronne\n,\nbrioche\n,\nchocolat\n,\nid\u00e9e recette p\u00e2ques\n,\np\u00e2ques\nHoumous \u00e0 la betterave\nSandwich Pois Chiche Mayo\n2 thoughts on \u201cBabka de P\u00e2ques\u201d\nLadyMilonguera\ndit\u00a0:\n13 avril 2022 \u00e0 17 h 22 min\nSuper belle ta babka !\nchargement\u2026\nR\u00e9pondre\nRehoboth\ndit\u00a0:\n20 juillet 2023 \u00e0 17 h 45 min\nNice post\nchargement\u2026\nR\u00e9pondre\n4.59 from 48 votes (\n46 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 75.0
+}

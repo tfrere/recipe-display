@@ -1,0 +1,435 @@
+{
+  "metadata": {
+    "title": "Pizza Pockets \u00e0 la Mozzarella",
+    "description": "Attention, voici une recette de folie ! J'ai nomm\u00e9 les Pizza Pockets \u00e0 la Mozzarella ! C'est vraiment une recette parfaite \u00e0 faire pour des enfants. Les pockets sont faciles \u00e0 manger, rigolotes et pleins de l\u00e9gumes cach\u00e9s !",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pizza enfant",
+      "recette pizza",
+      "recette pizza vege",
+      "id\u00e9e menu novembre",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Pizza-pockets-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'ai utilis\u00e9 de la p\u00e2te \u00e0 pizza du commerce, parce qu'on n'a parfois pas le temps. Mais vous pouvez tout \u00e0 fait pr\u00e9parer votre propre p\u00e2te \u00e0 pizza.",
+      "Vous pouvez tout \u00e0 fait changer la garniture en fonction de vos go\u00fbts et de ce que vous avez dans le frigo.",
+      "S'il vous reste de la sauce tomate, vous pouvez la congeler dans un bocal pour l'utiliser avec des p\u00e2tes plus tard.",
+      "J'ai cr\u00e9\u00e9 cette recette pour Mon Bento !"
+    ],
+    "slug": "pizza-pockets-a-la-mozzarella",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Pizza-pockets-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/01/pizza-pockets-a-la-mozzarella/",
+    "image": "images/pizza-pockets-a-la-mozzarella.jpg",
+    "createdAt": "2026-02-09T20:41:00.219251",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 59.0,
+    "totalCookingTime": 4.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 123.8,
+      "protein": 3.9,
+      "fat": 8.1,
+      "carbs": 9.7,
+      "fiber": 2.0,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "petit oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pearl onion"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "tomato_puree",
+      "name": "coulis de tomate (passata)",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 35.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "thyme",
+      "name": "thym s\u00e9ch\u00e9",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dried thyme"
+    },
+    {
+      "id": "spinach",
+      "name": "\u00e9pinards",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "poign\u00e9es",
+      "optional": true,
+      "name_en": "spinach"
+    },
+    {
+      "id": "pizza_dough",
+      "name": "p\u00e2te \u00e0 pizza du commerce",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": "carr\u00e9e de pr\u00e9f\u00e9rence",
+      "notes": null,
+      "optional": false,
+      "name_en": "store-bought pizza dough"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella r\u00e2p\u00e9e",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Grated mozzarella"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "chop_onion_garlic",
+      "action": "\u00c9pluchez puis \u00e9mincez finement l'oignon et l'ail. Vous pouvez aussi les passer au mixeur jusqu'\u00e0 obtenir des petits morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_maison",
+      "uses": [
+        "onion",
+        "garlic"
+      ],
+      "produces": "chopped_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_garlic",
+      "action": "Faites chauffer l'huile dans une casserole ou une po\u00eale \u00e0 bords hauts et faites-y revenir l'oignon, l'ail et la feuille de laurier \u00e0 feu moyen-fort.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_maison",
+      "uses": [
+        "olive_oil",
+        "chopped_onion_garlic",
+        "bay_leaf"
+      ],
+      "produces": "sauteed_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_tomato_sauce",
+      "action": "Ajoutez tous les autres ingr\u00e9dients (coulis de tomate, concentr\u00e9 de tomate, eau, sucre, origan, thym, \u00e9pinards) et m\u00e9langez bien. Couvrez, et laissez cuire \u00e0 tout petit bouillon, en remuant de temps en temps.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_tomate_maison",
+      "uses": [
+        "sauteed_onion_garlic",
+        "tomato_puree",
+        "tomato_paste",
+        "water",
+        "sugar",
+        "oregano",
+        "thyme",
+        "spinach"
+      ],
+      "produces": "tomato_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C et pr\u00e9parez une plaque de cuisson avec du papier cuisson.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "pizza_dough"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_dough",
+      "action": "Coupez la p\u00e2te \u00e0 pizza en 4 rectangles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "pizza_dough"
+      ],
+      "produces": "dough_rectangles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "score_dough",
+      "action": "Prenez un rectangle de p\u00e2te et posez le devant vous avec les bords les plus longs sur les c\u00f4t\u00e9s. En haut du rectangle, faites des lamelles d'un demi centim\u00e8tre \u00e0 l'aide d'un couteau sur environ \u2153 du carr\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "dough_rectangles"
+      ],
+      "produces": "scored_dough_rectangles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_pockets",
+      "action": "En bas du rectangle, disposez 2 c\u00e0s de sauce tomate et \u00bc de la mozzarella.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "scored_dough_rectangles",
+        "tomato_sauce",
+        "mozzarella"
+      ],
+      "produces": "filled_dough_rectangles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_and_roll",
+      "action": "Repliez les bords de longs sur environ 1 cm, puis roulez la p\u00e2te en partant du bas. Posez la pizza sur la plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "filled_dough_rectangles"
+      ],
+      "produces": "rolled_pizza_pockets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "repeat_filling",
+      "action": "R\u00e9p\u00e9tez l'op\u00e9ration pour les 3 autres rectangles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "rolled_pizza_pockets"
+      ],
+      "produces": "all_pizza_pockets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "separate_egg",
+      "action": "S\u00e9parez le blanc du jaune de l'oeuf. Battez le jaune dans un petit bol avec une c\u00e0s d'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "egg"
+      ],
+      "produces": "egg_wash",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_pockets",
+      "action": "Puis \u00e0 l'aide d'un pinceau, badigeonnez les pizzas pockets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "all_pizza_pockets",
+        "egg_wash"
+      ],
+      "produces": "brushed_pizza_pockets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_pockets",
+      "action": "Enfournez \u00e0 mi-hauteur.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pizza_pockets",
+      "uses": [
+        "brushed_pizza_pockets"
+      ],
+      "produces": "baked_pizza_pockets",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_pizza_pockets",
+  "originalText": "Pizza Pockets \u00e0 la Mozzarella - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 novembre 2021\nPizza Pockets \u00e0 la Mozzarella\nAttention, voici une recette de folie ! J\u2019ai nomm\u00e9 les Pizza Pockets \u00e0 la Mozzarella !\nC\u2019est vraiment une recette parfaite \u00e0 faire pour des enfants. Les pockets sont faciles \u00e0 manger, rigolotes et pleins de l\u00e9gumes cach\u00e9s !\nJ\u2019ai utilis\u00e9 de la p\u00e2te \u00e0 pizza du commerce, parce qu\u2019on n\u2019a parfois pas le temps. Si vous voyez ce que je veux dire !\nMais vous pouvez tout \u00e0 fait pr\u00e9parer votre propre p\u00e2te \u00e0 pizza en suivant\ncette recette\n(une tuerie !).\nPour le pliage de ces Pizza Pockets \u00e0 la Mozzarella, j\u2019ai fait une technique assez simple mais qui donne un rendu vraiment sympa.\nJe vous mets les \u00e9tapes du pliage pour vous montrer \ud83d\ude42\nVous pouvez tout \u00e0 fait changer la garniture en fonction de vos go\u00fbts et de ce que vous avez dans le frigo.\nD\u2019ailleurs, j\u2019ai bien envie de vous proposer une recette avec une garniture hivernale. \u00c7a vous tente ?\nJ\u2019ai cr\u00e9\u00e9 cette recette pour\nMon Bento\n!\nPizza Pockets \u00e0 la Mozzarella\nNatacha\n4.56\n/5 avec\n45\nvotes\nImprimer la recette\nTemps de pr\u00e9paration\n45\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n4\npizza pockets\nIngr\u00e9dients\n1x\n2x\n3x\nPour la sauce tomate maison\n1\npetit oignon\n1\ngousse d\u2019ail\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\nfeuille de laurier\n250\ng\nde coulis de tomate\npassata\n35\ng\nde concentr\u00e9 de tomate\n75\nml\nd\u2019eau\n\u00bd\nc\u00e0c de sucre\n\u00bd\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n\u00bc\nc\u00e0c de thym s\u00e9ch\u00e9\n1\npoign\u00e9es d\u2019\u00e9pinards\noptionnel\nPour les pizza pockets\n1\nrouleau de p\u00e2te \u00e0 pizza du commerce\ncarr\u00e9e de pr\u00e9f\u00e9rence\n70\ng\nde mozzarella r\u00e2p\u00e9e\n1\noeuf\nInstructions\nPr\u00e9paration de la sauce\n\u00c9pluchez puis \u00e9mincez finement l\u2019oignon et l\u2019ail. Vous pouvez aussi les passer au mixeur jusqu\u2019\u00e0 obtenir des petits morceaux.\nFaites chauffer l\u2019huile dans une casserole ou une po\u00eale \u00e0 bords hauts et faites-y revenir l\u2019oignon, l\u2019ail et la feuille de laurier \u00e0 feu moyen-fort pendant 3-4min.\nAjoutez tous les autres ingr\u00e9dients et m\u00e9langez bien. Couvrez, et laissez cuire \u00e0 tout petit bouillon pendant 35min, en remuant de temps en temps.\nPr\u00e9paration des pizzas\nPr\u00e9chauffez le four \u00e0 200\u00b0C et pr\u00e9parez une plaque de cuisson avec du papier cuisson.\nCoupez la p\u00e2te \u00e0 pizza en 4 rectangles.\nPrenez un rectangle de p\u00e2te et posez le devant vous avec les bords les plus longs sur les c\u00f4t\u00e9s. En haut du rectangle, faites des lamelles d\u2019un demi centim\u00e8tre \u00e0 l\u2019aide d\u2019un couteau sur environ \u2153 du carr\u00e9.\nEn bas du rectangle, disposez 2 c\u00e0s de sauce tomate et \u00bc de la mozzarella.\nRepliez les bords de longs sur environ 1 cm, puis roulez la p\u00e2te en partant du bas. Posez la pizza sur la plaque de cuisson.\nR\u00e9p\u00e9tez l\u2019op\u00e9ration pour les 3 autres rectangles.\nS\u2019il vous reste de la sauce tomate, vous pouvez la congeler dans un bocal pour l\u2019utiliser avec des p\u00e2tes plus tard.\nS\u00e9parez le blanc du jaune de l\u2019oeuf. Battez le jaune dans un petit bol avec une c\u00e0s d\u2019eau.\nPuis \u00e0 l\u2019aide d\u2019un pinceau, badigeonnez les pizzas pockets.\nEnfournez \u00e0 mi-hauteur pour 18 \u00e0 20min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nid\u00e9e menu novembre\n,\npizza enfant\n,\nrecette pizza\n,\nrecette pizza vege\nSalade C\u00e9sar et Shiitak\u00e9s Pan\u00e9s\nMuffins aux L\u00e9gumes d\u2019automne r\u00e2p\u00e9s\n1 thought on \u201cPizza Pockets \u00e0 la Mozzarella\u201d\nLadyMilonguera\ndit\u00a0:\n1 novembre 2021 \u00e0 16 h 47 min\nMais quelle chouette id\u00e9e ces pizza pockets !\nchargement\u2026\nR\u00e9pondre\n4.56 from 45 votes (\n44 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 4.0
+}

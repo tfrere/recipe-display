@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "title": "Huile d'olive au basilic",
+    "description": "Prête en 5 minutes, cette huile d'olive au basilic accompagnera avec succès vos plats !",
+    "servings": 30,
+    "prepTime": "PT5M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "basilic",
+      "huile d'olive",
+      "été",
+      "accompagnement"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2018/08/huile-basilic-1-of-11.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez la conserver quelques jours au réfrigérateur et l'utiliser à votre gré !",
+      "Quelques filets sur vos tomates/mozza, en vinaigrette dans vos salades, sur des viandes ou du poisson ou encore parsemé sur du risotto pour une explosion de saveurs…"
+    ],
+    "slug": "huile-d-olive-au-basilic",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2018/08/huile-basilic-1-of-11.jpg",
+    "sourceUrl": "https://freethepickle.fr/2018/06/04/huile-dolive-au-basilic/",
+    "image": "images/huile-d-olive-au-basilic.webp",
+    "createdAt": "2026-02-09T18:00:59.912515",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 88.4,
+      "protein": 0.0,
+      "fat": 10.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "high",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "huile_d_olive",
+      "name": "huile d'olive",
+      "quantity": 30.0,
+      "unit": "cl",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "feuilles_de_basilic",
+      "name": "feuilles de basilic",
+      "quantity": 1.0,
+      "unit": "poignée",
+      "category": "produce",
+      "preparation": "grossièrement coupées à la main (sans les tiges)",
+      "notes": null,
+      "optional": false,
+      "name_en": "basil leaves"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "porter_huile_ebullition",
+      "action": "Porter l'huile à ébullition et retirer du feu tout de suite.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_d_olive"
+      ],
+      "produces": "huile_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_basilic",
+      "action": "Ajouter les feuilles de basilic et remuer un peu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_chaude",
+        "feuilles_de_basilic"
+      ],
+      "produces": "huile_basilic_infuse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "laisser_refroidir",
+      "action": "Laisser refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "huile_basilic_infuse"
+      ],
+      "produces": "huile_basilic_froide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mixer",
+      "action": "Mixer. C'est prêt !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_basilic_froide"
+      ],
+      "produces": "huile_basilic_finale",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "huile_basilic_finale",
+  "originalText": "Huile d'olive au basilic - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 juin 2018\nHuile d’olive au basilic\nAller à la recette\nPrête en 5 minutes, cette huile d’olive au basilic accompagnera avec succès vos plats ! Quelques filets sur vos tomates/mozza, en vinaigrette dans vos salades, sur des viandes ou du poisson ou encore parsemé sur du risotto pour une explosion de saveurs… Il y a tellement de possibilités que vous risquez d’en manquer !\nHuile d’olive au basilic\n4.46\n/5 avec\n72\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nTemps total\n5\nminutes\nmin\nPortions\n30\ncl\nIngrédients\n1x\n2x\n3x\n30\ncl\nd’huile d’olive\n1\npoignée de feuilles de basilic (sans les tigegrossièrement coupées à la main\nInstructions\nPorter l’huile à ébullition et retirer du feu tout de suite.\nAjouter les feuilles de basilic et remuer un peu.\nLaisser refroidir. Mixer. C’est prêt !\nVous pouvez la conserver quelques jours au réfrigérateur et l’utiliser à votre gré !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nÉté\n,\nRecettes Par Saison\n,\nRecettes Salées\nTags:\nbasil\n,\nbasilic\n,\nhuile au basilic\n,\nhuile d'olive\n,\nolive oil\nRisotto Printanier aux Asperges\nTarte rustique à la Rhubarbe et aux Amandes\n4.46 from 72 votes (\n72 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

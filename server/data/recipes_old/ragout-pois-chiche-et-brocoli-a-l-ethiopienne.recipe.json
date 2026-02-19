@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "title": "Rago\u00fbt pois chiche et brocoli \u00e0 l'\u00c9thiopienne",
+    "description": "Un plat v\u00e9g\u00e9tarien complet, parfaitement \u00e9quilibr\u00e9 en nutriments, inspir\u00e9 des saveurs riches et \u00e9pic\u00e9es d'Afrique de l'Est, alliant la douceur des pois chiches \u00e0 la l\u00e9g\u00e8re amertume du brocoli.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "brocoli",
+      "pois chiches",
+      "carotte",
+      "\u00e9pices",
+      "rago\u00fbt",
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/ragout-pois-chiche-et-brocoli-a-lethiopienne.jpg",
+    "nationality": "Ethiopian",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le tronc du brocoli est tout aussi d\u00e9licieux et nutritif que les fleurs.",
+      "Id\u00e9al pour un repas 100 % v\u00e9g\u00e9tal, savoureux et complet.",
+      "Accompagner avec du riz, des pitas, des tortillas de lentilles ou de l'injera (pain traditionnel \u00e9thiopien)."
+    ],
+    "slug": "ragout-pois-chiche-et-brocoli-a-l-ethiopienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/ragout-pois-chiche-et-brocoli-a-lethiopienne.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/04/07/ragout-pois-chiche-et-brocoli-a-lethiopienne/",
+    "image": "images/ragout-pois-chiche-et-brocoli-a-l-ethiopienne.webp",
+    "createdAt": "2026-02-09T22:43:39.549514",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 61.0,
+    "totalCookingTime": 26.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 351.8,
+      "protein": 15.5,
+      "fat": 13.1,
+      "carbs": 45.1,
+      "fiber": 15.9,
+      "confidence": "medium",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 13,
+      "totalIngredients": 14,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "broccoli",
+      "name": "brocoli",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "tronc compris",
+      "optional": false,
+      "name_en": "broccoli"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "ground_coriander",
+      "name": "coriandre moulue",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground coriander"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma moulu",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "sweet_paprika",
+      "name": "paprika doux",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cumin"
+    },
+    {
+      "id": "fenugreek",
+      "name": "fenugrec moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground fenugreek"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground ginger"
+    },
+    {
+      "id": "clove",
+      "name": "clou de girofle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "clove"
+    },
+    {
+      "id": "vegetable_bouillon",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 600.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "chickpeas",
+      "name": "pois chiches cuits",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "\u00e9goutt\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "chickpeas"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "dice_carrots",
+      "action": "Coupez les 2 carottes en d\u00e9s.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrots"
+      ],
+      "produces": "diced_carrots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_broccoli",
+      "action": "D\u00e9taillez le 1 brocoli en fleurettes et son tronc en d\u00e9s.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "broccoli"
+      ],
+      "produces": "cut_broccoli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_onion_garlic_paste",
+      "action": "Passez le 1 oignon et les 2 gousses d'ail au mixeur pour obtenir une p\u00e2te.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "garlic"
+      ],
+      "produces": "onion_garlic_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_spice_paste",
+      "action": "Faites revenir la p\u00e2te d'oignon et d'ail dans 2 c\u00e0s d'huile de tournesol pendant 6-7min. Pendant ce temps, pr\u00e9parez toutes les \u00e9pices (coriandre, curcuma, paprikas, cumin, fenugrec, gingembre, clou de girofle). Ajoutez les \u00e9pices et m\u00e9langez.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion_garlic_paste",
+        "sunflower_oil",
+        "ground_coriander",
+        "turmeric",
+        "smoked_paprika",
+        "sweet_paprika",
+        "cumin",
+        "fenugreek",
+        "ginger",
+        "clove"
+      ],
+      "produces": "spiced_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_carrots_broth",
+      "action": "Ajoutez les carottes en d\u00e9s, les 600 ml d'eau et le \u00bd bouillon cube de l\u00e9gumes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_carrots",
+        "water",
+        "vegetable_bouillon",
+        "spiced_paste"
+      ],
+      "produces": "carrot_broth_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_carrots",
+      "action": "Laissez mijoter \u00e0 couvert 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "carrot_broth_mixture"
+      ],
+      "produces": "cooked_carrots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_broccoli_chickpeas",
+      "action": "Ajoutez le brocoli (fleurs et tronc) et les 250 g de pois chiches.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_broccoli",
+        "chickpeas",
+        "cooked_carrots"
+      ],
+      "produces": "complete_stew",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_final",
+      "action": "Laissez mijoter encore 20min.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "complete_stew"
+      ],
+      "produces": "finished_ragout",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez avec des tortillas de lentilles, du riz ou des pitas.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "finished_ragout"
+      ],
+      "produces": "ragout_pois_chiche_brocoli",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "ragout_pois_chiche_brocoli",
+  "originalText": "Rago\u00fbt Pois Chiche Et Brocoli \u00c0 l'\u00c9thiopienne\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n7 avril 2025\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne : Une explosion d\u2019\u00e9pices et de saveurs !\nEnvie de donner un coup de pep\u2019s \u00e0 votre\nbrocoli\n? Ce\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne\nest la\nrecette\nparfaite pour sortir des sentiers battus ! Inspir\u00e9 des\nsaveurs riches\net\n\u00e9pic\u00e9es\nd\u2019\nAfrique de l\u2019Est\n, ce\nplat v\u00e9g\u00e9tarien\nallie la douceur des\npois chiches\n\u00e0 la l\u00e9g\u00e8re amertume du\nbrocoli\n, le tout relev\u00e9 par un m\u00e9lange d\u2019\n\u00e9pices r\u00e9confortantes\n. Une alternative savoureuse aux\ndahls\net autres\nrago\u00fbts\nclassiques, id\u00e9ale pour un\nrepas complet\n,\nnutritif\net plein de caract\u00e8re.\nTable des mati\u00e8res\n1\nUn plat v\u00e9g\u00e9tarien complet et \u00e9quilibr\u00e9\n2\nRed\u00e9couvrez le brocoli : Une nouvelle fa\u00e7on de le sublimer !\n3\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne\n4\nLes \u00e9pices : le secret de ce rago\u00fbt r\u00e9confortant !\n5\nAvec quoi d\u00e9guster ce rago\u00fbt ? Trois options d\u00e9licieuses !\nUn plat v\u00e9g\u00e9tarien complet et \u00e9quilibr\u00e9\nCe rago\u00fbt \u00e9thiopien est bien plus qu\u2019un simple plat r\u00e9confortant : c\u2019est un repas v\u00e9g\u00e9tarien complet, parfaitement \u00e9quilibr\u00e9 en nutriments. Gr\u00e2ce aux pois chiches, riches en prot\u00e9ines v\u00e9g\u00e9tales et en fibres, il apporte l\u2019\u00e9nergie n\u00e9cessaire tout en favorisant la sati\u00e9t\u00e9. Associ\u00e9s aux carottes et au brocoli \u2013 bourr\u00e9s de vitamines, min\u00e9raux et antioxydants \u2013 ils forment un duo gagnant pour un plat nourrissant et gourmand. Les \u00e9pices, quant \u00e0 elles, ne se contentent pas d\u2019apporter du go\u00fbt : curcuma, gingembre et fenugrec sont reconnus pour leurs bienfaits digestifs et anti-inflammatoires. Une recette id\u00e9ale pour un repas 100 % v\u00e9g\u00e9tal, savoureux et complet !\nRed\u00e9couvrez le brocoli : Une nouvelle fa\u00e7on de le sublimer !\nSouvent cantonn\u00e9 \u00e0 la vapeur ou au gratin, le brocoli m\u00e9rite bien plus d\u2019audace en cuisine ! Avec ce rago\u00fbt \u00e9thiopien, il se pare d\u2019\u00e9pices chaleureuses et s\u2019impr\u00e8gne d\u2019une sauce riche et parfum\u00e9e. Son croquant naturel apporte une texture irr\u00e9sistible qui contraste \u00e0 merveille avec la douceur des pois chiches. En plus d\u2019\u00eatre d\u00e9licieux, le brocoli est un v\u00e9ritable alli\u00e9 sant\u00e9 : riche en fibres, en vitamines C et K, et en antioxydants. Il booste le syst\u00e8me immunitaire et favorise une digestion optimale. Ne jetez pas le tronc du brocoli ! Il est tout aussi d\u00e9licieux et nutritif que les fleurs, et dans ce rago\u00fbt, il apporte une texture croquante et un go\u00fbt l\u00e9ger qui compl\u00e8te parfaitement le plat.\nFan de Brocoli ? On a d\u2019autres recettes pour vous ! Si vous adorez le brocoli et cherchez encore plus d\u2019id\u00e9es gourmandes pour le cuisiner, ne passez pas \u00e0 c\u00f4t\u00e9 de ces recettes incontournables :\nbrocoli et quinoa croustillant sur cr\u00e8me de feta\n,\nsoupe de brocoli et cheddar gratin\u00e9e\net notre\nGratin de brocoli, orzo et b\u00e9chamel au comt\u00e9\n. Alors, quelle sera votre prochaine recette \u00e0 tester ?\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne\n4.50\n/5 avec\n93\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\ncarottes\n1\nbrocoli\ntronc compris\n1\noignon\n2\ngousses d\u2019ail\n1\nc\u00e0c de coriandre moulue\n1\nc\u00e0c de curcuma moulu\n\u00bd\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c de paprika doux\n\u00bd\nc\u00e0c de cumin moulu\n\u00bd\nc\u00e0c de fenugrec moulu\n\u00bd\nc\u00e0c de gingembre moulu\n1\nclou de girofle\n\u00bd\nbouillon cube de l\u00e9gumes\n600\nml\nd\u2019eau\n250\ng\nde pois chiches cuits\nou en conserve \u00e9goutt\u00e9s\nInstructions\nCoupez les carottes en d\u00e9s.\nD\u00e9taillez le brocoli en fleurettes et son tronc en d\u00e9s.\nPassez l\u2019oignon et l\u2019ail au mixeur pour obtenir une p\u00e2te.\nFaites-les revenir dans 2 c\u00e0s d\u2019huile de tournesol pendant 6-7min. Pendant ce temps, pr\u00e9parez les \u00e9pices. Ajoutez-les et m\u00e9langez.\nAjoutez les carottes, l\u2019eau et le demi bouillon cube.\nLaissez mijoter \u00e0 couvert 15min, puis ajoutez le brocoli et les pois chiches.\nLaissez mijoter encore 20min.\nServez avec des tortillas de lentilles, du riz ou des pitas.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes \u00e9pices : le secret de ce rago\u00fbt r\u00e9confortant !\nLe v\u00e9ritable atout de ce rago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00e9thiopienne r\u00e9side dans son m\u00e9lange d\u2019\u00e9pices qui r\u00e9chauffe le c\u0153ur et les papilles. L\u2019ail, subtilement pr\u00e9sent, donne une base savoureuse, tandis que la coriandre et le cumin apportent des notes fra\u00eeches et terreuses. Le curcuma et le gingembre, riches en antioxydants, apportent chaleur et couleur au plat. Les 2 paprikas fum\u00e9 et doux ajoutent de la profondeur et une touche de douceur. Le fenugrec, avec son go\u00fbt l\u00e9g\u00e8rement amer, \u00e9quilibre parfaitement les autres saveurs, et le clou de girofle offre une note subtile mais envo\u00fbtante. Enfin, le bouillon cube de l\u00e9gumes renforce l\u2019intensit\u00e9 du go\u00fbt. Il produit une harmonie parfaite entre toutes ces \u00e9pices. Chaque bouch\u00e9e devient ainsi un v\u00e9ritable voyage sensoriel !\nAvec quoi d\u00e9guster ce rago\u00fbt ? Trois options d\u00e9licieuses !\nCe rago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00e9thiopienne s\u2019accompagne \u00e0 merveille de riz bien moelleux ou de\npitas\nl\u00e9g\u00e8rement grill\u00e9es, parfaites pour saucer chaque bouch\u00e9e. Pour une exp\u00e9rience plus authentique, vous pouvez aussi le d\u00e9guster avec de l\u2019injera, le pain traditionnel \u00e9thiopien \u00e0 base de teff, au go\u00fbt l\u00e9g\u00e8rement acidul\u00e9 et \u00e0 la texture a\u00e9rienne. Toutefois, ce dernier peut \u00eatre difficile \u00e0 trouver en France et demande un temps de fermentation assez long pour \u00eatre pr\u00e9par\u00e9 maison. Quelle que soit l\u2019option choisie, ce rago\u00fbt vous promet un repas r\u00e9confortant et plein de saveurs !\nEnvie d\u2019accompagner votre rago\u00fbt avec des pitas maison ? Pourquoi ne pas pr\u00e9parer des\nPains Pitas Maison\npour saucer chaque bouch\u00e9e de votre d\u00e9licieux rago\u00fbt ? Ou encore, optez pour la\nversion \u00e9paisse des Pains Pitas Maison\npour un r\u00e9sultat encore plus moelleux et gourmand. Rien de tel qu\u2019un pain maison pour rendre votre repas encore plus savoureux !\nRago\u00fbt pois chiche et brocoli \u00e0 l\u2019\u00c9thiopienne : mission saveurs accomplie ! Qui a dit que le brocoli manquait de peps ? Avec ce rago\u00fbt aux \u00e9pices \u00e9thiopiennes, il se transforme en v\u00e9ritable star du d\u00eener ! Entre la douceur des pois chiches, le croquant du brocoli et le punch des \u00e9pices, chaque bouch\u00e9e est une explosion de saveurs. \u00c0 d\u00e9guster avec du riz, du pain pita ou (pour les aventuriers) de l\u2019injera, ce plat v\u00e9g\u00e9tarien complet a tout pour plaire. Alors, pr\u00eats \u00e0 pimenter votre cuisine et \u00e0 voir le brocoli sous un nouveau jour ?\nVous aimez les rago\u00fbts ? On a plus \u00e0 vous proposer ! Si ce Rago\u00fbt Pois Chiche et Brocoli \u00e0 l\u2019\u00c9thiopienne vous a conquis, vous allez adorer ces autres recettes de rago\u00fbts tout aussi savoureuses : le\nrago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque\net le\nrago\u00fbt \u00e0 la Cacahu\u00e8te, Pois Chiches et \u00c9pinards\n. Allez, \u00e0 vos fourneaux pour encore plus de gourmandise !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nBrocoli\n,\nCarotte\n,\nHiver\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nPommes de terre sauce yaourt cornichons : une recette v\u00e9g\u00e9tarienne qui va changer ta vie !\nPortokalopita : Un g\u00e2teau grec \u00e0 l\u2019orange et \u00e0 la p\u00e2te filo qui va r\u00e9chauffer votre c\u0153ur\n4.50 from 93 votes (\n93 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 26.0
+}

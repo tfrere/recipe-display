@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "title": "Raviolis Poire Chocolat",
+    "description": "Raviolis revisit\u00e9s en version sucr\u00e9e avec une p\u00e2te au cacao et une garniture de compot\u00e9e de poire \u00e0 la f\u00e8ve tonka et chocolat noir.",
+    "servings": 10,
+    "prepTime": "PT1H20M",
+    "cookTime": "PT32M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat",
+      "poire",
+      "automne",
+      "hiver",
+      "dessert"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Raviolis-poire-chocolat-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e en collaboration avec Microplane.",
+      "La p\u00e2te \u00e0 raviolis est inspir\u00e9e d'une recette de p\u00e2te maison.",
+      "L'ajout de cacao en poudre donne un effet marbr\u00e9.",
+      "La garniture est une compot\u00e9e de poire \u00e0 la f\u00e8ve tonka avec du chocolat noir r\u00e2p\u00e9 ajout\u00e9 en fin de cuisson."
+    ],
+    "slug": "raviolis-poire-chocolat",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Raviolis-poire-chocolat-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/28/raviolis-poire-chocolat/",
+    "image": "images/raviolis-poire-chocolat.webp",
+    "createdAt": "2026-02-09T21:41:18.033267",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 102.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 183.3,
+      "protein": 4.3,
+      "fat": 4.4,
+      "carbs": 31.8,
+      "fiber": 2.9,
+      "confidence": "high",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel_fin",
+      "name": "sel fin",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "Fine salt"
+    },
+    {
+      "id": "oeufs",
+      "name": "\u0153ufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "chocolat_rape",
+      "name": "chocolat",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": "finement r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chocolate"
+    },
+    {
+      "id": "poires",
+      "name": "poires",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 350g",
+      "optional": false,
+      "name_en": "pears"
+    },
+    {
+      "id": "cassonade",
+      "name": "cassonade",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "fecule_de_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "feve_tonka",
+      "name": "f\u00e8ve tonka",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "tonka bean"
+    },
+    {
+      "id": "chocolat_noir_rape",
+      "name": "chocolat noir",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "lait_d_amande",
+      "name": "lait d'amande",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Almond milk"
+    },
+    {
+      "id": "chocolat_noir",
+      "name": "chocolat noir",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    }
+  ],
+  "tools": [
+    "R\u00e2pe Microplane (ou fine)",
+    "Robot p\u00e2tissier (facultatif pour p\u00e9trir)"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "M\u00e9langer la farine et le sel dans un grand saladier, faire un trou au milieu et y d\u00e9poser les \u0153ufs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "farine",
+        "sel_fin",
+        "oeufs"
+      ],
+      "produces": "farine_sel_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_farine",
+      "action": "A l'aide d'une fourchette, casser les \u0153ufs et remuer en ramenant la farine des c\u00f4t\u00e9s. Int\u00e9grer toute la farine petit \u00e0 petit.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "farine_sel_oeufs"
+      ],
+      "produces": "pate_brute",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_eau",
+      "action": "Ajouter l'eau et p\u00e9trir la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "pate_brute",
+        "eau"
+      ],
+      "produces": "pate_humide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "petrir_pate",
+      "action": "P\u00e9trir \u00e0 la main une dizaine de minutes jusqu'\u00e0 ce que la p\u00e2te devienne \u00e9lastique.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "pate_humide"
+      ],
+      "produces": "pate_elastique",
+      "requires": [],
+      "visualCue": "\u00e9lastique"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "Former une boule et r\u00e9server au frais au moins 1h dans un bol sous un linge humide.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te",
+      "uses": [
+        "pate_elastique"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_poires",
+      "action": "\u00c9plucher les poires et les couper en petits d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "compot\u00e9e de poires au chocolat",
+      "uses": [
+        "poires"
+      ],
+      "produces": "poires_desees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "compoter_poires",
+      "action": "Les mettre dans une petite casserole \u00e0 feu doux avec le sucre. R\u00e2per une pinc\u00e9e de f\u00e8ve tonka dans la casserole.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "compot\u00e9e de poires au chocolat",
+      "uses": [
+        "poires_desees",
+        "cassonade",
+        "feve_tonka"
+      ],
+      "produces": "poires_sucrees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_compotee",
+      "action": "Laisser compoter env 30min en remuant de temps en temps.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "compot\u00e9e de poires au chocolat",
+      "uses": [
+        "poires_sucrees"
+      ],
+      "produces": "compotee_cuite",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_fecule",
+      "action": "En fin de cuisson, ajouter 1 c\u00e0s de f\u00e9cule et bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "compot\u00e9e de poires au chocolat",
+      "uses": [
+        "compotee_cuite",
+        "fecule_de_mais"
+      ],
+      "produces": "compotee_epaisse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_chocolat_compotee",
+      "action": "Laisser refroidir puis r\u00e2per le chocolat dans le m\u00e9lange. M\u00e9langer et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "compot\u00e9e de poires au chocolat",
+      "uses": [
+        "compotee_epaisse",
+        "chocolat_noir_rape"
+      ],
+      "produces": "compotee_poire_chocolat",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_lait",
+      "action": "Faire chauffer le lait d'amande.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce au chocolat",
+      "uses": [
+        "lait_d_amande"
+      ],
+      "produces": "lait_chaud",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_chocolat_sauce",
+      "action": "Faire fondre le chocolat noir dans le lait chaud. Battre avec un fouet jusqu'\u00e0 homog\u00e9n\u00e9it\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce au chocolat",
+      "uses": [
+        "lait_chaud",
+        "chocolat_noir"
+      ],
+      "produces": "sauce_chocolat",
+      "requires": [],
+      "visualCue": "homog\u00e8ne"
+    },
+    {
+      "id": "etaler_pate",
+      "action": "Couper le p\u00e2ton en 2 et \u00e9taler la p\u00e2te finement sur le plan de travail en forme de long rectangle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "finement \u00e9tal\u00e9e"
+    },
+    {
+      "id": "marbrer_pate",
+      "action": "Saupoudrer du chocolat r\u00e2p\u00e9 tr\u00e8s finement dessus puis replier la p\u00e2te et l'\u00e9taler de nouveau pour un effet marbr\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_etalee",
+        "chocolat_rape"
+      ],
+      "produces": "pate_marbree",
+      "requires": [],
+      "visualCue": "effet marbr\u00e9"
+    },
+    {
+      "id": "former_raviolis",
+      "action": "D\u00e9poser une c\u00e0c de compot\u00e9e \u00e0 intervalles r\u00e9guliers sur le rectangle, le plier sur lui-m\u00eame dans la longueur et couper vos raviolis.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_marbree",
+        "compotee_poire_chocolat"
+      ],
+      "produces": "raviolis_crus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_raviolis",
+      "action": "Faire bouillir un grand volume d'eau et y faire cuire les raviolis env 2min. Ils remontent \u00e0 la surface quand ils sont cuits.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "raviolis_crus"
+      ],
+      "produces": "raviolis_cuits",
+      "requires": [],
+      "visualCue": "remontent \u00e0 la surface"
+    },
+    {
+      "id": "servir",
+      "action": "Servir avec la sauce au chocolat et un peu de chocolat r\u00e2p\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "raviolis_cuits",
+        "sauce_chocolat"
+      ],
+      "produces": "raviolis_poire_chocolat",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "raviolis_poire_chocolat",
+  "originalText": "Raviolis Poire Chocolat - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 novembre 2022\nRaviolis Poire Chocolat\nAller \u00e0 la recette\nNous avons cr\u00e9\u00e9 ces Raviolis Poire Chocolat en collaboration avec Microplane !\nVous connaissez les r\u00e2pes\nMicroplane\n? C\u2019est une marque am\u00e9ricaine qui propose des r\u00e2pes de super qualit\u00e9 ! Nous sommes tr\u00e8s fans de leurs produits et de leur esth\u00e9tisme !\nCette nouvelle et jolie collection toute noire nous a donn\u00e9 envie de sortir des sentiers battus !\nA cette occasion, la marque nous a mis au d\u00e9fi de cr\u00e9er une recette aussi \u00e9l\u00e9gante, originale et rebelle que ces belles r\u00e2pes ! Voici donc notre recette de raviolis revisit\u00e9s en version sucr\u00e9e : poires et chocolats.\nLa p\u00e2te \u00e0 raviolis est une p\u00e2te \u00e0 p\u00e2te inspir\u00e9e de\ncette recette de p\u00e2te maison\n. Et dans laquelle j\u2019ai ajout\u00e9 du cacao en poudre. J\u2019aime beaucoup l\u2019effet marbr\u00e9 que cette petite touche leur donne !\nLa garniture de ces raviolis sucr\u00e9s est tr\u00e8s gourmande. On y retrouve une compot\u00e9e de poire \u00e0 la f\u00eave tonka. Dans laquelle on ajoute en fin de cuisson du chocolat noir r\u00e2p\u00e9.\nQui va tenter cette recette de Raviolis Poire Chocolat ?\nRaviolis Poire Chocolat\n4.44\n/5 avec\n57\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n45\nminutes\nmin\nTemps de cuisson\n5\nminutes\nmin\nRepos\n1\nheure\nh\nPortions\n10\nraviolis\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2tes\n200\ng\nde farine\n1\npinc\u00e9e de sel fin\n2\n\u0153ufs\n1\nc\u00e0s d\u2019eau\n1\nc\u00e0s de chocolat finement r\u00e2p\u00e9\nCompot\u00e9e de poires au chocolat\n3\npoires\nenv 350g\n30\ng\nde cassonade\n1\nc\u00e0s de f\u00e9cule de ma\u00efs\n1\npinc\u00e9e de f\u00e8ve tonka r\u00e2p\u00e9e\n30\ng\nde chocolat noir r\u00e2p\u00e9\nSauce au chocolat\n100\nml\nde lait d\u2019amande\n30\ng\nde chocolat noir\nInstructions\nM\u00e9langer la farine et le sel dans un grand saladier, faire un trou au milieu et y d\u00e9poser les \u0153ufs. A l\u2019aide d\u2019une fourchette, casser les \u0153ufs et remuer en ramenant la farine des c\u00f4t\u00e9s. Int\u00e9grer toute la farine petit \u00e0 petit puis p\u00e9trir \u00e0 la main une dizaine de minutes. La p\u00e2te doit devenir \u00e9lastique. Former une boule et r\u00e9server au frais au moins 1h dans un bol sous un linge humide.\n\u00c9plucher les poires et les couper en petits d\u00e9s. Les mettre dans une petite casserole \u00e0 feu doux avec le sucre. R\u00e2per une pinc\u00e9e de f\u00e8ve tonka. Laisser compoter env 30min en remuant de temps en temps.\nEn fin de cuisson, ajouter 1 c\u00e0s de f\u00e9cule et bien m\u00e9langer.\nLaisser refroidir puis r\u00e2per le chocolat dans le m\u00e9lange. M\u00e9langer. R\u00e9server.\nPr\u00e9parer la sauce au chocolat en faisant fondre le chocolat dans le lait chaud. Battre avec un fouet.\nCouper le p\u00e2ton en 2 et \u00e9taler la p\u00e2te finement sur votre plan de travail en forme de long rectangle. Vous pouvez saupoudrer du chocolat r\u00e2p\u00e9 tr\u00e8s finement dessus puis replier la p\u00e2te et l\u2019\u00e9taler de nouveau pour un effet marbr\u00e9.\nD\u00e9poser une c\u00e0c de compot\u00e9e \u00e0 intervalles r\u00e9guliers sur le rectangle, le plier sur lui m\u00eame dans la longueur et couper vos raviolis.\nFaire bouillir un grand volume d\u2019eau et y faire cuire les raviolis env 2 min. Ils remontent \u00e0 la surface quand ils sont cuits.\nServir avec la sauce au chocolat et un peu de chocolat r\u00e2p\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nRecettes Sucr\u00e9es\nTags:\nchocolat\nSalade Potimarron bl\u00e9 et feta\nSamoussas vegan \u00e0 l\u2019indienne et aux PST\n1 thought on \u201cRaviolis Poire Chocolat\u201d\nLadyMilonguera\ndit\u00a0:\n28 novembre 2022 \u00e0 18 h 25 min\nOriginaux ces raviolis sucr\u00e9s !\nchargement\u2026\nR\u00e9pondre\n4.44 from 57 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

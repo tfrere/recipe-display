@@ -1,0 +1,480 @@
+{
+  "metadata": {
+    "title": "Pizza Sapin d'Automne",
+    "description": "Elle est mignonne non, cette petite Pizza Sapin d'Automne ? Le r\u00e9sultat est super mignon et tr\u00e8s gourmand.",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pizza",
+      "pizza courge",
+      "pizza sapin",
+      "recette pizza",
+      "id\u00e9e menu novembre",
+      "Automne",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Pizza-Sapin-5-of-5.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette adapt\u00e9e du concept du sapin de No\u00ebl.",
+      "Id\u00e9e de recette o\u00f9 les enfants peuvent aider, notamment pour m\u00e9langer et former les boules.",
+      "On peut r\u00e9aliser des petits serpents ap\u00e9ritifs avec les restes de p\u00e2te.",
+      "\u00c0 servir encore chaud pour un fromage fondant.",
+      "Recette publi\u00e9e dans le num\u00e9ro d'automne d'Esprit Veggie."
+    ],
+    "slug": "pizza-sapin-d-automne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Pizza-Sapin-5-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/28/pizza-sapin-dautomne/",
+    "image": "images/pizza-sapin-d-automne.webp",
+    "createdAt": "2026-02-09T20:40:26.246193",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "January",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 172.9,
+      "protein": 9.0,
+      "fat": 12.4,
+      "carbs": 6.2,
+      "fiber": 1.2,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "butternut_squash",
+      "name": "courge butternut",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butternut squash"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me fra\u00eeche",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons de paris",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "saint_nectaire",
+      "name": "Saint-Nectaire",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint-Nectaire cheese"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "pizza_dough",
+      "name": "p\u00e2tes \u00e0 pizza Biobleud",
+      "quantity": 2.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou p\u00e2te faite maison",
+      "optional": false,
+      "name_en": "Pizza dough"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "steam_squash",
+      "action": "Faites cuire la courge \u00e0 la vapeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "courge",
+      "uses": [
+        "butternut_squash"
+      ],
+      "produces": "steamed_squash",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_squash_puree",
+      "action": "Une fois qu'elle est molle, r\u00e9duisez-la en pur\u00e9e, ajoutez la cr\u00e8me fra\u00eeche, salez et poivrez. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "courge",
+      "uses": [
+        "steamed_squash",
+        "cream",
+        "salt",
+        "pepper"
+      ],
+      "produces": "squash_puree",
+      "requires": [],
+      "visualCue": "molle"
+    },
+    {
+      "id": "reserve_mushroom",
+      "action": "Mettez un champignon de c\u00f4t\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "mushrooms"
+      ],
+      "produces": "reserved_mushroom",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dice_mushrooms",
+      "action": "Coupez les autres en brunoise.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "mushrooms"
+      ],
+      "produces": "diced_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_cheese",
+      "action": "R\u00e2pez le Saint-Nectaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "fromage",
+      "uses": [
+        "saint_nectaire"
+      ],
+      "produces": "grated_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_cheese",
+      "action": "Mettez-en \u00bc de c\u00f4t\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "fromage",
+      "uses": [
+        "grated_cheese"
+      ],
+      "produces": "reserved_grated_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_chives",
+      "action": "Hachez la ciboulette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "ciboulette",
+      "uses": [
+        "chives"
+      ],
+      "produces": "chopped_chives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_filling",
+      "action": "Pr\u00e9levez les \u2154 de la pur\u00e9e de courge, et m\u00e9langez-la avec les champignons en brunoise, les \u00be du Saint Nectaire et la ciboulette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "melange",
+      "uses": [
+        "squash_puree",
+        "diced_mushrooms",
+        "grated_cheese",
+        "chopped_chives"
+      ],
+      "produces": "squash_mushroom_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_baking_sheet",
+      "action": "Pr\u00e9parez une plaque de cuisson couverte d'un papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_dough",
+      "action": "\u00c9talez une p\u00e2te \u00e0 pizza et coupez-la en 16 rectangles (6\u00d74).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "pizza_dough"
+      ],
+      "produces": "dough_rectangles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_balls",
+      "action": "Placez une cuill\u00e8re \u00e0 soupe de m\u00e9lange sur un premier rectangle. Repliez les 4 coins et formez une boule. D\u00e9posez-la sur la plaque de cuisson (c\u00f4t\u00e9 repli\u00e9 vers le bas). Commencez par former la rang\u00e9e du bas du sapin (6 boules), puis montez progressivement. Il faudra 22 boules pour former le sapin. Vous devrez donc couper 6 rectangles suppl\u00e9mentaires dans la deuxi\u00e8me p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "dough_rectangles",
+        "squash_mushroom_filling",
+        "pizza_dough"
+      ],
+      "produces": "tree_shaped_balls",
+      "requires": [
+        "prepared_baking_sheet"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_oil",
+      "action": "Une fois que vous avez form\u00e9 le sapin, badigeonnez-le d'huile d'olive \u00e0 l'aide d'un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "tree_shaped_balls",
+        "olive_oil"
+      ],
+      "produces": "oiled_tree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_remaining_puree",
+      "action": "Puis \u00e9talez le reste de la pur\u00e9e de courge par dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "oiled_tree",
+        "squash_puree"
+      ],
+      "produces": "tree_with_puree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_mushroom",
+      "action": "Coupez le dernier champignon en lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "reserved_mushroom"
+      ],
+      "produces": "sliced_mushroom",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_mushroom_slices",
+      "action": "R\u00e9partissez les lamelles de champignon sur le sapin.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "tree_with_puree",
+        "sliced_mushroom"
+      ],
+      "produces": "tree_with_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_cheese",
+      "action": "Saupoudrez de Saint-Nectaire r\u00e2p\u00e9 mis de c\u00f4t\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "tree_with_mushrooms",
+        "reserved_grated_cheese"
+      ],
+      "produces": "assembled_tree",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez \u00e0 mi-hauteur pour 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "assembled_tree"
+      ],
+      "produces": "baked_tree",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez le sapin encore chaud pour un Saint-Nectaire fondant !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "service",
+      "uses": [
+        "baked_tree"
+      ],
+      "produces": "pizza_sapin_automne",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pizza_sapin_automne",
+  "originalText": "Pizza Sapin d\u2019Automne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 octobre 2021\nPizza Sapin d\u2019Automne\nAcc\u00e9der directement \u00e0 la recette\nElle est mignonne non, cette petite Pizza Sapin d\u2019Automne ?\nPlus ma fille grandit et plus elle a envie de m\u2019aider quand je cuisine. Elle a deux ans et demi.\nEt, je ne vous apprends s\u00fbrement rien en vous disant\u2026 que c\u2019est pas toujours \u00e9vident. Et que \u201caider\u201d se transforme vite en \u201ccata\u201d, \u201cnon, stop !\u201d, \u201cne mets pas tes 2 mains dans la sauce jusqu\u2019au coude\u201d. Bref. Vous voyez quoi ?\nDu coup, je me creuse pas mal la t\u00eate pour trouver des id\u00e9es de recette o\u00f9 elle peut vraiment m\u2019aider !\nCe qu\u2019elle pr\u00e9f\u00e8re c\u2019est m\u00e9langer. Et enfoncer ses petites mains dans la p\u00e2te. Ou \u00e9plucher les gousses d\u2019ail (je vous raconte pas l\u2019odeur des calins apr\u00e8s).\nEnfin, tout \u00e7a pour dire, que le concept de boule fourr\u00e9e fonctionne tr\u00e8s bien avec les petits.\nPour r\u00e9aliser cette recette de pizza sapin d\u2019automne, j\u2019ai repris le concept du\nsapin de No\u00ebl\nque vous trouverez ici.\nEt j\u2019ai adapt\u00e9 la garniture. Avec de la courge \u00e9videmment. Car qui peut vivre une vraie exp\u00e9rience automnale sans courge ? des champignons. Parce que (m\u00eame raison que pr\u00e9c\u00e9demment. Et du fromage parce que (encore pareil).\nLe r\u00e9sultat est super mignon et tr\u00e8s gourmand. Vous allez tenter ?\nPizza Sapin d\u2019Automne\nNatacha\n4.49\n/5 avec\n114\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n35\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n400\ng\nde courge butternut\n2\nc\u00e0s de cr\u00e8me fra\u00eeche\nsel\npoivre\n150\ng\nde champignons de paris\n300\ng\nde Saint-Nectaire\n15\nbrins de ciboulette\n2\nrouleaux de p\u00e2tes \u00e0 pizza Biobleud\nou p\u00e2te faite maison,\nrecette ici\nhuile d\u2019olive\nInstructions\nFaites cuire la courge \u00e0 la vapeur. Une fois qu\u2019elle est molle, r\u00e9duisez-la en pur\u00e9e, ajoutez la cr\u00e8me fra\u00eeche, salez et poivrez. R\u00e9servez.\nMettez un champignon de c\u00f4t\u00e9. Coupez les autres en brunoise.\nR\u00e2pez le Saint-Nectaire, et mettez-en \u00bc de c\u00f4t\u00e9.\nHachez la ciboulette.\nPr\u00e9levez les \u2154 de la pur\u00e9e de courge, et m\u00e9langez la avec les champignons en brunoise, les \u00be du Saint Nectaire et la ciboulette.\nPr\u00e9chauffez le four \u00e0 200\u00b0C. Pr\u00e9parez une plaque de cuisson couverte d\u2019un papier cuisson.\n\u00c9talez une p\u00e2te \u00e0 pizza et coupez-la en 16 rectangles (6\u00d74). Placez une cuill\u00e8re \u00e0 soupe de m\u00e9lange sur un premier rectangle. Repliez les 4 coins et formez une boule. D\u00e9posez-la sur la plaque de cuisson (c\u00f4t\u00e9 repli\u00e9 vers le bas). Commencez par former la rang\u00e9e du bas du sapin (6 boules), puis montez progressivement. Il faudra 22 boules pour former le sapin. Vous devrez donc couper 6 rectangles suppl\u00e9mentaires dans la deuxi\u00e8me p\u00e2te. Vous pouvez r\u00e9aliser des petits serpents ap\u00e9ritifs avec les restes de la deuxi\u00e8me p\u00e2te \u00e0 pizza ou simplement une petite pizza.\nUne fois que vous avez form\u00e9 le sapin, badigeonnez-le d\u2019huile d\u2019olive \u00e0 l\u2019aide d\u2019un pinceau. Puis \u00e9talez le reste de la pur\u00e9e de courge par dessus. Coupez le dernier champignon en lamelles et r\u00e9partissez-les sur le sapin. Saupoudrez de Saint-Nectaire r\u00e2p\u00e9.\nEnfournez \u00e0 mi-hauteur pour 20 min.\nServez le sapin encore chaud pour un Saint-Nectaire fondant !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nVous pouvez retrouver cette recette dans le num\u00e9ro d\u2019automne d\u2019\nEsprit Veggie\n\ud83d\ude42\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nPlats au Four\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nid\u00e9e menu novembre\n,\npizza\n,\npizza courge\n,\npizza sapin\n,\nrecette pizza\nGaufres Sal\u00e9es Butternut et Raclette\nPaupiettes v\u00e9g\u00e9tariennes Sauce au Cidre\n2 thoughts on \u201cPizza Sapin d\u2019Automne\u201d\nLadyMilonguera\ndit\u00a0:\n28 octobre 2021 \u00e0 16 h 58 min\nComme elle est sympathique cette pizza !\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n30 octobre 2021 \u00e0 14 h 51 min\nMerci beaucoup !\nchargement\u2026\nR\u00e9pondre\n4.49 from 114 votes (\n113 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

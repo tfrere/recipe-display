@@ -1,0 +1,544 @@
+{
+  "metadata": {
+    "title": "Burgers Végétariens aux Haricots Blancs, Comté et Oignons Caramélisés à la Bière",
+    "description": "Burgers végétariens avec des galettes à base de quinoa et haricots blancs, du comté, des oignons caramélisés à la bière et une sauce burger végétale.",
+    "servings": 8,
+    "prepTime": "PT45M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "burger végétarien",
+      "comté",
+      "galette de haricot blanc",
+      "recette de burger vegetarien",
+      "steack végétarien",
+      "automne",
+      "été",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/burger-patate-douce.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La recette prend plusieurs heures si on fait tout maison (buns, galettes, sauce, extras).",
+      "Pour une version vegan des galettes, remplacer l'oeuf par 1 càs de fécule de maïs.",
+      "Les galettes se congèlent en les séparant avec du papier cuisson.",
+      "La sauce burger est une recette séparée (lien non fourni dans le texte)."
+    ],
+    "slug": "burgers-vegetariens-aux-haricots-blancs-comte-et-oignons-caramelises-a-la-biere",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/burger-patate-douce.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/08/25/burgers-vegetariens-aux-haricots-blancs-comte-et-oignons-caramelises-a-la-biere/",
+    "image": "images/burgers-vegetariens-aux-haricots-blancs-comte-et-oignons-caramelises-a-la-biere.jpg",
+    "createdAt": "2026-02-09T20:01:25.646092",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 35.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 406.4,
+      "protein": 19.1,
+      "fat": 20.6,
+      "carbs": 37.1,
+      "fiber": 8.8,
+      "confidence": "medium",
+      "resolvedIngredients": 13,
+      "matchedIngredients": 15,
+      "totalIngredients": 18,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "quinoa_cuit",
+      "name": "quinoa cuit",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuit",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cooked quinoa"
+    },
+    {
+      "id": "haricots_blancs_cuits",
+      "name": "haricots blancs cuits",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuits",
+      "notes": null,
+      "optional": false,
+      "name_en": "Great Northern beans"
+    },
+    {
+      "id": "chapelure",
+      "name": "chapelure",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "battu",
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressée",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "ail_en_poudre",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fumé",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "poudre_de_chili",
+      "name": "poudre de chili",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili powder"
+    },
+    {
+      "id": "piment_concasse",
+      "name": "piment concassé",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "crushed chili pepper"
+    },
+    {
+      "id": "comte",
+      "name": "comté",
+      "quantity": 225.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "Comté cheese"
+    },
+    {
+      "id": "oignons_jaunes",
+      "name": "oignons jaunes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincés",
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onions"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 35.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_vegetale",
+      "name": "huile végétale",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "biere",
+      "name": "bière",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Beer"
+    },
+    {
+      "id": "sauce_burger",
+      "name": "sauce burger",
+      "quantity": 8.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Burger sauce"
+    },
+    {
+      "id": "buns",
+      "name": "buns",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Buns"
+    },
+    {
+      "id": "tomates",
+      "name": "tomates",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "salade",
+      "name": "salade",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lettuce"
+    },
+    {
+      "id": "huile_vegetale_cuisson",
+      "name": "huile végétale",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la cuisson",
+      "optional": false,
+      "name_en": "vegetable oil"
+    }
+  ],
+  "tools": [
+    "mixeur",
+    "grande poêle"
+  ],
+  "steps": [
+    {
+      "id": "cuire_quinoa",
+      "action": "Faire cuire le quinoa en suivant les indications du paquet, bien égoutter et laisser refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "quinoa_cuit"
+      ],
+      "produces": "quinoa_cuit_refroidi",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mixer_base_galettes",
+      "action": "Mettre les haricots blancs, la chapelure, l'oeuf battu, l'ail pressé, le sel, le poivre, l'ail en poudre, le paprika fumé, la poudre de chili et le piment concassé dans le mixeur. Mixer par à coup jusqu'à ce que le mélange soit collant mais pas lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "haricots_blancs_cuits",
+        "chapelure",
+        "oeuf",
+        "ail",
+        "sel",
+        "poivre",
+        "ail_en_poudre",
+        "paprika_fume",
+        "poudre_de_chili",
+        "piment_concasse"
+      ],
+      "produces": "base_galettes_mixee",
+      "requires": [],
+      "visualCue": "collant mais pas lisse"
+    },
+    {
+      "id": "ajouter_quinoa_comte",
+      "action": "Ajouter le quinoa cuit et 150g de comté râpé, puis bien mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "quinoa_cuit_refroidi",
+        "base_galettes_mixee",
+        "comte"
+      ],
+      "produces": "pate_galettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_galettes",
+      "action": "Former 8 galettes avec les mains mouillées si la pâte colle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "pate_galettes"
+      ],
+      "produces": "galettes_formees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserver_galettes",
+      "action": "Disposer les galettes sur un plat et réserver au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "galettes_formees"
+      ],
+      "produces": "galettes_refroidies",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emincer_oignons",
+      "action": "Émincer finement les oignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oignons_caramelises",
+      "uses": [
+        "oignons_jaunes"
+      ],
+      "produces": "oignons_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_beurre_huile",
+      "action": "Faire fondre le beurre dans une grande poêle à feu moyen, puis ajouter 1 c-à-c d'huile végétale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "oignons_caramelises",
+      "uses": [
+        "beurre",
+        "huile_vegetale"
+      ],
+      "produces": "beurre_huile_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_oignons",
+      "action": "Faire revenir les oignons à feu moyen en remuant régulièrement pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "oignons_caramelises",
+      "uses": [
+        "oignons_eminces",
+        "beurre_huile_fondu"
+      ],
+      "produces": "oignons_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_biere",
+      "action": "Ajouter la bière petit à petit (en 4 ou 5 fois) en remuant pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "oignons_caramelises",
+      "uses": [
+        "oignons_revenus",
+        "biere"
+      ],
+      "produces": "oignons_caramelises",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserver_oignons",
+      "action": "Transvaser les oignons dans un bol et réserver.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "oignons_caramelises",
+      "uses": [
+        "oignons_caramelises"
+      ],
+      "produces": "oignons_caramelises_reserves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_huile",
+      "action": "Faire chauffer 2 c-à-s d'huile végétale dans la même poêle à feu moyen-fort.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson_et_assemblage",
+      "uses": [
+        "huile_vegetale_cuisson"
+      ],
+      "produces": "huile_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_galettes_premiere_face",
+      "action": "Déposer les galettes et les faire cuire 5min ou jusqu'à ce qu'elles commencent à roussir.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson_et_assemblage",
+      "uses": [
+        "galettes_refroidies",
+        "huile_chaude"
+      ],
+      "produces": "galettes_cuites_premiere_face",
+      "requires": [],
+      "visualCue": "commencent à roussir"
+    },
+    {
+      "id": "retourner_ajouter_comte",
+      "action": "Retourner les galettes, ajouter le reste du comté râpé (75g) sur chacune et laisser cuire encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson_et_assemblage",
+      "uses": [
+        "galettes_cuites_premiere_face",
+        "comte"
+      ],
+      "produces": "galettes_cuites_avec_comte",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler_burgers",
+      "action": "Assembler les burgers : tartiner les buns de sauce burger, ajouter une galette, des oignons caramélisés, des rondelles de tomate et de la salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "cuisson_et_assemblage",
+      "uses": [
+        "galettes_cuites_avec_comte",
+        "oignons_caramelises_reserves",
+        "sauce_burger",
+        "buns",
+        "tomates",
+        "salade"
+      ],
+      "produces": "burgers_vegetariens_complets",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "burgers_vegetariens_complets",
+  "originalText": "Burgers Végétariens aux Haricots Blancs, Comté et Oignons Caramélisés à la Bière - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 août 2020\nBurgers Végétariens aux Haricots Blancs, Comté et Oignons Caramélisés à la Bière\nAccéder directement à la recette\nQu’est-ce que c’est bon les burgers végé ! Et alors ce Burgers Végétariens aux Haricots Blancs !\nEt qu’est-ce que c’est long à préparer ! On ne va pas se mentir, si vous décidez de tout faire maison, il faut compter plusieurs heures ! Entre les buns, les galettes, la sauce, et potentiellement les petits extras (genre oignons caramélisés, ou frites)… C’est une affaire sérieuse !\nMais une fois de temps en temps, ça vaut tellement le coup !\nJe dis bien une fois de temps en temps 😉 d’ailleurs, cette recette n’est que la 3e recette de burger, alors que ça fait plus de 2 ans qu’on a lancé le blog !\nCes burgers sont vraiment délicieux… j’ai utilisé des buns vegans à la patate douce\n(recette ici)\n, mais vous pouvez aussi faire des\nbuns classiques\nou des\nbuns vegans sans patate douce !\nLa galette est à base de quinoa et de haricots blancs. Elle est végétarienne mais pas végan ! Pour ceux qui cherchent une recette vegan, je vous conseille\nles galettes shitaké que vous trouverez ici\n.\nEt au-dessus de la galette, j’ai mis des oignons caramélisés à la bière, qui apportent tout le parfum rustique de la recette…\nEt après… il y a la sauce ! Mais quelle sauce ! C’est surement la\nMEILLEURE SAUCE A BURGER DU MONDE\n! Et en plus, elle est 100% végétale !\nJe suis impatiente que vous nous disiez ce que vous avez pensé de ce Burgers Végétariens aux Haricots Blancs !\nBurgers Végétariens aux Haricots Blancs, Comté et Oignons Caramélisés à la Bière\nNatacha\n4.52\n/5 avec\n140\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n30\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n8\nburgers\nIngrédients\n1x\n2x\n3x\nPour les galettes\n140\ng\nde quinoa cuit\nenviron 60g cru\n200\ng\nde haricots blancs cuits\nou en conserve\n75\ng\nde chapelure\n1\noeuf battu\n1\ngousse d’ail pressée\nsel\npoivre\n1\nc-à-c de d’ail en poudre\n1\nc-à-c de paprika fumé\n¼\nc-à-c de poudre de chili\noptionnel\n¼\nc-à-c de piment concassé\noptionnel\n150\ng\n+ 75g de comté râpé\nPour la sauce burger\n(suivre cette recette)\nPour les oignons caramélisés\n3\noignons jaunes émincés\nenv 250g\n35\ng\nde beurre\n1\nc-à-c d’huile végétale\n60\nml\nde bière\nPour le montage\n8 c-à-s de sauce burger (recette ici)\n8\nbuns\nici ce sont des buns à la patate douce\n2 to\nmates en rondelles\nde la salade\nInstructions\nPour les galettes\nFaire cuire le quinoa en suivant les indications du paquet, bien égoutter et laisser refroidir.\nMettre tous les ingrédients dans le mixeur, sauf le quinoa et les 75g de comté. Mixer par à coup. Il ne faut pas que la mixture soit lisse mais qu’elle soit tout de même collante.\nAjouter le quinoa, et bien mélanger.\nFormer les galettes avec vos mains. Si la pâte colle trop aux mains, vous pouvez les mouiller et ensuite former les galettes.\nDisposez le sur un plat et réserver au frais.\nFaire la sauce burger en suivant cette recette.\nPour les oignons caramélisés\nEmincer finement les oignons.\nFaire fondre le beurre dans une grande poêle à feu moyen, puis ajouter l’huile. Cela évitera que le beurre ne brûle.\nFaire revenir les oignons à feu moyen en remuant régulièrement pendant une quinzaine de minutes.\nAjouter la bière petit à petit (en 4 ou 5 fois) en remuant. Cela va prendre une dizaine de minutes. Transvaser dans un bol. Réserver.\nCuire les galettes dans la même poêle. Pour cela, faire chauffer 2 c-à-s d’huile à feu moyen-fort. Déposer les galettes et les faire cuire 5min ou jusqu’à ce qu’elles commencent à roussir. Les retourner et ajouter un peu de comté râpé sur chaque galette et laisser cuire encore 5min. Le comté va fondre.\nAssembler vos burgers !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBurgers, sandwichs et wraps\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Salées\nTags:\nburger vege\n,\nburger végétarien\n,\ncomté\n,\ngalette de haricot blanc\n,\nque faire avec des haricots blancs\n,\nrecette de burger vegetarien\n,\nrecette galette haricots\n,\nrecette galette végétarienne\n,\nrecette haricots blanc\n,\nsteack végétarien\nBuns Vegans à la Patate Douce\nLa meilleure Sauce Burger Vegan au monde !\n11 thoughts on “Burgers Végétariens aux Haricots Blancs, Comté et Oignons Caramélisés à la Bière”\nChristelle\ndit :\n25 août 2020 à 23 h 09 min\nCes burgers ont l’air terribles !! Je vais les tester rapidement !!\nJe me trompe ou il n’y a pas le lien pour la sauce ?\nBonne fin de soirée !\nchargement…\nRépondre\nFree The Pickle\ndit :\n26 août 2020 à 22 h 36 min\nBonsoir ! Merci 😊\nNon tu ne te trompes pas, je n’ai pas encore eu le temps de mettre la recette de la sauce en ligne … Je le fais demain 😉\nchargement…\nRépondre\nStephanie Marien\ndit :\n29 août 2020 à 14 h 31 min\nThese taste as good as they look!! The patties have a wonderful flavour and crisp up so well.\nchargement…\nRépondre\nFree The Pickle\ndit :\n31 août 2020 à 14 h 20 min\nThanks ! I love the crisp of theses patties ☺️ it’s really the first time I manage to have this much crisp in the patties !\nchargement…\nRépondre\nLISA\ndit :\n3 janvier 2021 à 15 h 40 min\nCette recette semble délicieuse, est-il possible de congeler les galettes?\nchargement…\nRépondre\nFree The Pickle\ndit :\n4 janvier 2021 à 13 h 58 min\nBonjour Lisa !\nOui sans problème pour la congélation. Pensez juste à séparer les galettes avec un papier cuisson sinon j’ai peur qu’elles ne se collent complètement.\nchargement…\nRépondre\nLisa\ndit :\n15 janvier 2021 à 18 h 11 min\nRecette testée et mille fois approuvée ! La texture des galettes est fondante, le comté apporte une touche gourmande à ne pas négliger. Elles se tiennent à la cuisson et se conservent quelques jours au frigo sans problème.\nchargement…\nRépondre\nFree The Pickle\ndit :\n15 janvier 2021 à 22 h 19 min\nMerci Lisa 💕\nchargement…\nRépondre\nRomain\ndit :\n28 mars 2021 à 22 h 32 min\nBonjour !\nUne idée pour une alternative à l’œuf ?\nchargement…\nRépondre\nFree The Pickle\ndit :\n30 mars 2021 à 14 h 33 min\nHello, tu peux essayer un càs de fécule de maïs !\nchargement…\nRépondre\nJuliette\ndit :\n11 novembre 2024 à 21 h 21 min\nFaite aujourd’hui à des amis et ils se sont extasiés. Mes premieres galettes végé et je ne suis pas déçue, je les referai !!!\nMerci pour la recette 🙂\nchargement…\nRépondre\n4.52 from 140 votes (\n137 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 35.0
+}

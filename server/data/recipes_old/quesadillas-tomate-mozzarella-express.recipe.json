@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "title": "Quesadillas tomate mozzarella express",
+    "description": "Ces Quesadillas tomate mozzarella express sont la solution de facilit\u00e9 pour vos repas d'\u00e9t\u00e9.",
+    "servings": 2,
+    "prepTime": "PT5M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "mozzarella",
+      "quesadillas",
+      "tomate",
+      "tomate mozzarella",
+      "\u00e9t\u00e9",
+      "accompagnements",
+      "brunch sal\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Quesadillas-tomate-mozza-2-of-2.jpg",
+    "nationality": "Mexican-Italian fusion",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez utiliser de la mozzarella d\u00e9j\u00e0 r\u00e2p\u00e9e ou la r\u00e2per vous-m\u00eame.",
+      "Pour la mozzarella en boule (dans l'eau), essayez de l'\u00e9goutter un peu avant pour \u00e9viter qu'elle ne rejette trop d'eau.",
+      "Vous pouvez utiliser n'importe quel type de tomate (petite et ronde, tomates cerises, etc.).",
+      "La taille des tortillas n'a pas d'importance ; pour des tortillas plus grandes, pr\u00e9voir un peu plus de fromage et de tomate.",
+      "Le basilic est essentiel pour la saveur.",
+      "D\u00e9guster imm\u00e9diatement."
+    ],
+    "slug": "quesadillas-tomate-mozzarella-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Quesadillas-tomate-mozza-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/08/22/quesadillas-tomate-mozzarella-express/",
+    "image": "images/quesadillas-tomate-mozzarella-express.webp",
+    "createdAt": "2026-02-09T21:54:39.252151",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 2.0,
+    "totalCookingTime": 2.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 240.8,
+      "protein": 17.8,
+      "fat": 17.7,
+      "carbs": 2.2,
+      "fiber": 0.1,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tomato",
+      "name": "petite tomate",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomato"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mozzarella"
+    },
+    {
+      "id": "basil",
+      "name": "feuilles de basilic",
+      "quantity": 1.0,
+      "unit": "poign\u00e9e",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "basil leaves"
+    },
+    {
+      "id": "tortillas",
+      "name": "tortillas",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "20cm de diam\u00e8tre",
+      "optional": false,
+      "name_en": "Tortilla"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    }
+  ],
+  "tools": [
+    "Cr\u00eapi\u00e8re ou po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "dice_tomato",
+      "action": "\u00c9p\u00e9pinez puis coupez la tomate en petits d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato"
+      ],
+      "produces": "diced_tomato",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer votre cr\u00eapi\u00e8re \u00e0 feu moyen et y d\u00e9poser une tortilla.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tortillas"
+      ],
+      "produces": "heated_tortilla",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cheese_tomato",
+      "action": "La couvrir de mozzarella r\u00e2p\u00e9e et de d\u00e9s de tomate.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "heated_tortilla",
+        "mozzarella",
+        "diced_tomato"
+      ],
+      "produces": "tortilla_with_cheese_tomato",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_basil_salt",
+      "action": "Ajouter quelques feuilles de basilic et un peu de fleur de sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tortilla_with_cheese_tomato",
+        "basil",
+        "fleur_de_sel"
+      ],
+      "produces": "filled_tortilla",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_cheese",
+      "action": "Quand la mozzarella a fondu, plier la tortilla en deux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "filled_tortilla"
+      ],
+      "produces": "folded_quesadilla",
+      "requires": [],
+      "visualCue": "mozzarella fondue"
+    },
+    {
+      "id": "cook_both_sides",
+      "action": "Laissez-la cuire encore 2min de chaque c\u00f4t\u00e9.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "folded_quesadilla"
+      ],
+      "produces": "cooked_quesadilla",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster imm\u00e9diatement !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_quesadilla"
+      ],
+      "produces": "quesadillas_tomate_mozzarella",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "quesadillas_tomate_mozzarella",
+  "originalText": "Quesadillas tomate mozzarella express - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 ao\u00fbt 2023\nQuesadillas tomate mozzarella express\nCes Quesadillas tomate mozzarella express sont la solution de facilit\u00e9 pour vos repas d\u2019\u00e9t\u00e9.\nQuand je vous dis express, c\u2019est qu\u2019il n\u2019y a quasiment rien \u00e0 faire. A pr\u00e9parer. Ou quoi.\nEn gros, il vous faudra de la mozzarella r\u00e2p\u00e9e. Vous pouvez l\u2019acheter d\u00e9j\u00e0 r\u00e2p\u00e9. Ou alors la r\u00e2per vous m\u00eame. Vous pouvez utiliser la mozzarella qui est dans les petits paquets avec de l\u2019eau. Mais \u00e0 ce moment, essayez de l\u2019\u00e9goutter un peu avant. Sinon elle risque de rejeter beaucoup d\u2019eau. Ou vous pouvez utiliser les \u201cbarres\u201d de mozzarella qu\u2019on trouve en supermarch\u00e9. Et qui sont d\u00e9j\u00e0 \u00e9goutt\u00e9es.\nVous pouvez utiliser le genre de tomates qui vous chante. Petite et ronde. Tomates cerises. Peu importe !\nIl vous faudra 2 tortillas. Pour cette recette j\u2019en ai utilis\u00e9 des petites (20cm de diam\u00e8tre). Mais en vrai, \u00e7a n\u2019a aucune importance. Si vous en utilisez des plus grandes, vous aurez juste besoin d\u2019un peu plus de fromage et de tomate.\nEt ensuite, \u00e0 ne surtout pas oublier : le basilic !!! C\u2019est lui qui vient apporter toute l\u2019Italie \u00e0 nos quesadillas !\nParce que, oui, ceci aurait pu \u00eatre un panini. Mais non, c\u2019est une quesadillas. C\u2019est-\u00e0-dire une tortilla pleine de fromage puis pli\u00e9e en 2. Tant de joie !\nEt si vous aimez les quesadillas, vous trouverez une recette de\nquesadillas pleines de l\u00e9gumes\nici. Et si vous aimez aussi\nles enchiladas, cette recette\n; c\u2019est la meilleure ! Voil\u00e0, les amis ! Enjoy ces Quesadillas tomate mozzarella express !\nQuesadillas tomate mozzarella express\n4.45\n/5 avec\n89\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n2\nquesadillas\nIngr\u00e9dients\n1x\n2x\n3x\n1\npetite tomate\n160\ng\nde mozzarella r\u00e2p\u00e9e\n1\npoign\u00e9e de feuilles de basilic\n2\ntortillas de 20cm\nInstructions\n\u00c9p\u00e9pinez puis coupez la tomate en petits d\u00e9s.\nFaire chauffer votre cr\u00eapi\u00e8re \u00e0 feu moyen et y d\u00e9poser une tortilla.\nLa couvrir de mozzarella r\u00e2p\u00e9 et de d\u00e9s de tomate.\nAjouter quelques feuilles de basilic et un peu de fleur de sel.\nQuand la mozzarella a fondu, plier la tortilla en deux. Laissez-la cuire encore 2-3min de chaque c\u00f4t\u00e9.\nD\u00e9guster imm\u00e9diatement !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nBrunch Sal\u00e9\n,\n\u00c9t\u00e9\n,\nQuiches et Tartes\n,\nTomate\nTags:\nmozzarella\n,\nquesadillas\n,\ntomate\n,\ntomate mozzarella\nCourgettes froides ail coriandre et cumin : recette fra\u00eecheur\nSalade roquette tomate burrata\n1 thought on \u201cQuesadillas tomate mozzarella express\u201d\nRehoboth\ndit\u00a0:\n3 septembre 2023 \u00e0 10 h 27 min\nNice post\nchargement\u2026\nR\u00e9pondre\n4.45 from 89 votes (\n88 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 2.0
+}

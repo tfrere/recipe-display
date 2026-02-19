@@ -1,0 +1,622 @@
+{
+  "metadata": {
+    "title": "Mini-Galettes des Rois Pralin\u00e9 et Chocolat",
+    "description": "Des mini galettes des rois ultra gourmandes avec une frangipane au pralin\u00e9 et p\u00e9pites de chocolat. Faciles \u00e0 r\u00e9aliser, le format individuel est ultra pratique car on peut le transporter facilement (go\u00fbter des enfants ou petit snack pour les adultes).",
+    "servings": 20,
+    "prepTime": "PT60M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat",
+      "galette",
+      "Galette des rois",
+      "mini galettes",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Mini-galettes-praline-1-of-5.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez utiliser du pralin\u00e9 du commerce.",
+      "Pour une version v\u00e9gane, il faudrait une p\u00e2te feuillet\u00e9e v\u00e9gane et une frangipane v\u00e9gane.",
+      "La d\u00e9co des galettes permet de tenter pleins de motifs diff\u00e9rents.",
+      "Retrouvez aussi sur le blog la recette de galette des rois pistache cerise et Galette des rois Noisettes Poires caram\u00e9lis\u00e9es."
+    ],
+    "slug": "mini-galettes-des-rois-praline-et-chocolat",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Mini-galettes-praline-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/06/mini-galettes-des-rois-praline-et-chocolat/",
+    "image": "images/mini-galettes-des-rois-praline-et-chocolat.webp",
+    "createdAt": "2026-02-09T20:59:07.602566",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 81.0,
+    "totalCookingTime": 21.0,
+    "nutritionPerServing": {
+      "calories": 80.7,
+      "protein": 1.1,
+      "fat": 4.3,
+      "carbs": 10.0,
+      "fiber": 0.2,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 12,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "mix_noisettes_amandes",
+      "name": "mix de noisettes et amandes",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnut and almond mix"
+    },
+    {
+      "id": "sucre_blanc",
+      "name": "sucre blanc",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white sugar"
+    },
+    {
+      "id": "beurre_mou",
+      "name": "beurre mou",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "Softened butter"
+    },
+    {
+      "id": "sucre_glace",
+      "name": "sucre glace",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "powdered sugar"
+    },
+    {
+      "id": "poudre_amande",
+      "name": "poudre d'amande",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond powder"
+    },
+    {
+      "id": "praline",
+      "name": "pralin\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "praline"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "pepites_chocolat",
+      "name": "p\u00e9pites de chocolat",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chocolate chips"
+    },
+    {
+      "id": "pates_feuilletees",
+      "name": "rouleaux p\u00e2tes feuillet\u00e9es",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "puff pastry sheets"
+    },
+    {
+      "id": "jaune_oeuf",
+      "name": "jaune d'\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "sucre_sirop",
+      "name": "sucre",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson",
+    "Papier cuisson",
+    "Casserole en inox \u00e0 fond \u00e9pais",
+    "Mixeur puissant",
+    "Emporte-pi\u00e8ce de 8cm",
+    "Pinceau",
+    "Cure-dent"
+  ],
+  "steps": [
+    {
+      "id": "torrefier_noix",
+      "action": "Torr\u00e9fier les noisettes et les amandes en les \u00e9talant sur une plaque couverte de papier cuisson et en les enfournant 10min \u00e0 180\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "mix_noisettes_amandes"
+      ],
+      "produces": "noix_torrefiees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enlever_peau_noisettes",
+      "action": "Enlever la peau des noisettes en les mettant dans un torchon et en frottant entre vos mains (\u00e9tape optionnelle). R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "noix_torrefiees"
+      ],
+      "produces": "noix_epluchees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_sucre",
+      "action": "Verser le sucre dans une casserole en inox. Faire chauffer \u00e0 feu moyen jusqu'\u00e0 ce que le sucre fonde. Ne pas remuer.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "sucre_blanc"
+      ],
+      "produces": "sucre_fondu",
+      "requires": [],
+      "visualCue": "sucre fondu"
+    },
+    {
+      "id": "verser_sucre_noix",
+      "action": "Une fois le sucre fondu, verser imm\u00e9diatement sur les noisettes et amandes sur la plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "sucre_fondu",
+        "noix_epluchees"
+      ],
+      "produces": "noix_caramelisees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_noix_caramel",
+      "action": "Laisser refroidir compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "noix_caramelisees"
+      ],
+      "produces": "noix_caramelisees_refroidies",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "mixer_praline",
+      "action": "Casser la plaque en morceaux et mettre les morceaux dans un mixeur puissant petit \u00e0 petit. Mixer jusqu'\u00e0 ce que la poudre se transforme en p\u00e2te.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pralin\u00e9",
+      "uses": [
+        "noix_caramelisees_refroidies"
+      ],
+      "produces": "praline_maison",
+      "requires": [],
+      "visualCue": "p\u00e2te homog\u00e8ne"
+    },
+    {
+      "id": "couper_beurre",
+      "action": "Couper le beurre mou en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "appareil_des_galettes",
+      "uses": [
+        "beurre_mou"
+      ],
+      "produces": "beurre_en_des",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "battre_beurre_sucre",
+      "action": "Dans un grand bol, battre le beurre avec le sucre glace, jusqu'\u00e0 obtenir une pr\u00e9paration cr\u00e9meuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil_des_galettes",
+      "uses": [
+        "beurre_en_des",
+        "sucre_glace"
+      ],
+      "produces": "beurre_sucre_cremeux",
+      "requires": [],
+      "visualCue": "pr\u00e9paration cr\u00e9meuse"
+    },
+    {
+      "id": "ajouter_ingredients_frangipane",
+      "action": "Ajouter la poudre d'amande, l'\u0153uf et le pralin\u00e9. M\u00e9langer jusqu'\u00e0 obtenir une pr\u00e9paration homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil_des_galettes",
+      "uses": [
+        "beurre_sucre_cremeux",
+        "poudre_amande",
+        "oeuf",
+        "praline",
+        "praline_maison"
+      ],
+      "produces": "frangipane_base",
+      "requires": [],
+      "visualCue": "pr\u00e9paration homog\u00e8ne"
+    },
+    {
+      "id": "ajouter_pepites_chocolat",
+      "action": "Ajouter les p\u00e9pites de chocolat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "appareil_des_galettes",
+      "uses": [
+        "frangipane_base",
+        "pepites_chocolat"
+      ],
+      "produces": "frangipane_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sortir_pates_feuilletees",
+      "action": "Sortir les p\u00e2tes feuillet\u00e9es du frigo une \u00e0 une.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "pates_feuilletees"
+      ],
+      "produces": "pates_feuilletees_sorties",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decouper_disques",
+      "action": "\u00c0 l'aide d'un emporte-pi\u00e8ce de 8cm, d\u00e9couper des disques dans les p\u00e2tes feuillet\u00e9es (10 disques par rouleau).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "pates_feuilletees_sorties"
+      ],
+      "produces": "disques_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "repartir_disques",
+      "action": "R\u00e9partir les 20 disques sur des plaques couvertes de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "disques_pate"
+      ],
+      "produces": "disques_sur_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deposer_garniture",
+      "action": "D\u00e9poser 1 c\u00e0s de garniture au centre de 10 disques, en laissant 1cm libre sur les bords.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "disques_sur_plaque",
+        "frangipane_complete"
+      ],
+      "produces": "disques_garnis",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mouiller_bords",
+      "action": "Mouiller les bords de ces 10 disques avec de l'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "disques_garnis",
+        "eau"
+      ],
+      "produces": "disques_bords_mouilles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sceller_galettes",
+      "action": "D\u00e9poser un disque de p\u00e2te au-dessus de chaque garniture et sceller le tour des galettes en appuyant l\u00e9g\u00e8rement avec les doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "disques_bords_mouilles"
+      ],
+      "produces": "galettes_scellees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_galettes",
+      "action": "Mettre les galettes au frais et laisser reposer 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "assemblage_des_mini_galettes",
+      "uses": [
+        "galettes_scellees"
+      ],
+      "produces": "galettes_reposees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_dorure",
+      "action": "Dans un petit bol, battre un jaune d'\u0153uf avec 1 c\u00e0s de lait.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [
+        "jaune_oeuf",
+        "lait"
+      ],
+      "produces": "dorure",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "appliquer_premiere_dorure",
+      "action": "Sortir les galettes du r\u00e9frig\u00e9rateur. \u00c0 l'aide d'un pinceau, appliquer la dorure sur chaque galette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [
+        "galettes_reposees",
+        "dorure"
+      ],
+      "produces": "galettes_dorees_une_fois",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 210\u00b0C.",
+      "duration": null,
+      "temperature": 210,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "appliquer_deuxieme_dorure",
+      "action": "Dorer une 2e fois chaque galette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [
+        "galettes_dorees_une_fois",
+        "dorure"
+      ],
+      "produces": "galettes_dorees_deux_fois",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "faire_motifs",
+      "action": "Faire des motifs sur les galettes \u00e0 l'aide du c\u00f4t\u00e9 non-tranchant d'un couteau. Faire un trou au centre de chaque galette avec un cure-dent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [
+        "galettes_dorees_deux_fois"
+      ],
+      "produces": "galettes_decorees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_galettes",
+      "action": "Baisser le four \u00e0 180\u00b0C et enfourner pour 20min.",
+      "duration": "PT20M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "dorure_et_cuisson",
+      "uses": [
+        "galettes_decorees"
+      ],
+      "produces": "galettes_cuites",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_sirop",
+      "action": "Verser le sucre et l'eau dans une petite casserole et porter \u00e0 \u00e9bullition 1min. Le sucre doit \u00eatre compl\u00e8tement dissous.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sirop_pour_faire_briller",
+      "uses": [
+        "sucre_sirop",
+        "eau"
+      ],
+      "produces": "sirop_brillant",
+      "requires": [],
+      "visualCue": "sucre compl\u00e8tement dissous"
+    },
+    {
+      "id": "badigeonner_sirop",
+      "action": "D\u00e8s la sortie du four, badigeonner les galettes de ce sirop \u00e0 l'aide d'un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "sirop_pour_faire_briller",
+      "uses": [
+        "galettes_cuites",
+        "sirop_brillant"
+      ],
+      "produces": "galettes_brillantes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_galettes",
+      "action": "Laisser refroidir avant de d\u00e9guster.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "sirop_pour_faire_briller",
+      "uses": [
+        "galettes_brillantes"
+      ],
+      "produces": "mini_galettes_finales",
+      "requires": [],
+      "visualCue": "refroidies"
+    }
+  ],
+  "finalState": "mini_galettes_finales",
+  "originalText": "Mini-Galettes des Rois Pralin\u00e9 et Chocolat - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n6 janvier 2022\nMini-Galettes des Rois Pralin\u00e9 et Chocolat\nAcc\u00e9der directement \u00e0 la recette\nAhhhh la galettes des rois, c\u2019est vraiment compl\u00e8tement le genre de gourmandise que l\u2019on consomme \u00e0 une p\u00e9riode de l\u2019ann\u00e9e bien pr\u00e9cise et qui n\u2019a jamais la m\u00eame saveur en dehors de la dite p\u00e9riode\u2026 Cette longue phrase pour vous dire \u00e0 quel point j\u2019aime la galette des rois. Je suis une graaaande fan de frangipane, il frauda d\u2019ailleurs que je m\u2019att\u00e8le \u00e0 vous proposer ma version. En attendant, je vous propose une garniture (tr\u00e8s gourmande) au pralin\u00e9 et au chocolat pour ces mini galettes des fois !\nIl y a pas mal d\u2019\u00e9tapes dans la recette mais \u00e7a c\u2019est parce qu\u2019on explique comment faire votre pralin\u00e9 maison ! Etant donn\u00e9 que dans notre recette on utilise de la p\u00e2te feuillet\u00e9e du commerce, faire son pralin\u00e9 maison \u00e7a compense. Bon vous pouvez aussi tout \u00e0 fait utiliser un p\u00e2te pralin\u00e9 du commerce (il en existe de tr\u00e8s bonnes sans trop de cochonneries en plus). Mais \u00e0 part \u00e7a, franchement la recette est uuuuultra simple \u00e0 r\u00e9aliser ! Ma partie pr\u00e9f\u00e9r\u00e9e c\u2019est la d\u00e9co des galettes. Ici, comme il s\u2019agit de mini galettes des rois, vous pouvez tenter pleins motifs diff\u00e9rents !\nSur le blog, vous pouvez aussi retrouver la recette de\ngalette des rois pistache cerise\n. J\u2019esp\u00e8re bient\u00f4t vous proposer une version v\u00e9gane (j\u2019avais trouv\u00e9 de la p\u00e2te feuillet\u00e9e v\u00e9gane, il me manque plus qu\u2019une frangipane v\u00e9gane \u00e0 concocter). Vous aussi retrouver une recette r\u00e9alis\u00e9e pour Cuisine AZ,\nGalette des rois Noisettes Poires caram\u00e9lis\u00e9es\n.\nMini-Galettes de Rois Pralin\u00e9 et Chocolat\nDaniela\nDes mini galettes des rois ultra gourmandes avec une frangipane au pralin\u00e9 et p\u00e9pites de chocolat. Faciles \u00e0 r\u00e9aliser, le format individuel est ultra pratique car on peut le transporter facilement (go\u00fbter des enfants ou petit snack pour les adultes).\n4.42\n/5 avec\n50\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nType de plat\nBoulange, Dessert, Go\u00fbter, Snack\nPortions\n20\nmini galettes ou 1 grosse galette\nIngr\u00e9dients\n1x\n2x\n3x\nPour le pralin\u00e9\n90\ng\nd\u2019un mix de noisettes et amandes\n90\ng\nde sucre blanc\nPour les galettes\n40\ng\nde beurre mou\n40\ng\nde sucre glace\n100\ng\nde poudre d\u2019amande\n100\ng\nde pralin\u00e9\nfait maison, ou du commerce\n1\n\u0153uf\n70\ng\nde p\u00e9pites de chocolat\n4\nrouleaux de p\u00e2tes feuillet\u00e9es\nPour la dorure\n1\njaune d\u2019\u0153uf\n1\nc\u00e0s de lait\nPour le sirop\n20\ng\nde sucre\n20\ng\nd\u2019eau\nInstructions\nPour le pralin\u00e9\nTorr\u00e9fier les noisettes et les amandes en les \u00e9talant sur une plaque couverte de papier cuisson et en les enfournant 10min \u00e0 180\u00b0C.\nVous pouvez enlever la peau des noisettes en les mettant dans un torchon et en frottant entre vos mains (\u00e9tape optionnelle). R\u00e9server\nFaire un caramel \u00e0 sec. Verser le sucre dans une casserole en inox (de pr\u00e9f\u00e9rence \u00e0 fond \u00e9pais). Bien r\u00e9partir le sucre en une couche homog\u00e8ne.\nFaire chauffer la casserole \u00e0 feu moyen jusqu\u2019\u00e0 ce que le sucre fonde. Ne pas remuer le sucre. \u00c9ventuellement, si des zones ne fondent pas, vous pouvez l\u00e9g\u00e8rement \u00e9taler le sucre.\nUne fois que le sucre est fondu, verser imm\u00e9diatement sur les noisettes et amandes sur la plaque de cuisson. Attention, c\u2019est br\u00fblant.\nLaisser refroidir compl\u00e8tement.\nCasser la plaque en morceaux et mettre les morceaux dans un mixeur puissant petit \u00e0 petit. Mixer jusqu\u2019\u00e0 ce que la poudre se transforme en p\u00e2te (une dizaine de minutes en fonction de votre mixeur).\nPour l\u2019appareil des galettes\nCouper le beurre mou en d\u00e9s.\nDans un grand bol, le battre avec le sucre glace, jusqu\u2019\u00e0 obtenir une pr\u00e9paration cr\u00e9meuse.\nAjouter la poudre d\u2019amande, l\u2019\u0153uf et le pralin\u00e9. M\u00e9langer jusqu\u2019\u00e0 obtenir une pr\u00e9paration homog\u00e8ne. Ajouter les p\u00e9pites.\nPour l\u2019assemblage des mini-galettes.\nSortir les p\u00e2tes feuillet\u00e9es du frigo une \u00e0 une. Plus elles seront froides et plus elles seront faciles \u00e0 travailler.\n\u00c0 l\u2019aide d\u2019un emporte-pi\u00e8ce (ou \u00e9quivalent) de 8cm, d\u00e9couper des disques dans les p\u00e2tes feuillet\u00e9es (normalement, vous pouvez faire 10 disques par rouleau de p\u00e2te).\nR\u00e9partir les 20 disques sur des plaques couvertes d\u2019un papier cuisson.\nD\u00e9poser 1 c\u00e0s de garniture au centre, en laissant 1cm libre sur les bords.\n\u00c0 l\u2019aide d\u2019un pinceau (ou de vos doigts) mouiller les bords des disques avec de l\u2019eau.\nD\u00e9poser un disque de p\u00e2te au-dessus et sceller le tour les galettes en appuyant l\u00e9g\u00e8rement avec les doigts, sans pincer.\nMettre les galettes au frais et laisser reposer 30min.\nPour la dorure et la cuisson\nDans un petit bol, battre un jaune d\u2019\u0153uf avec 1 c\u00e0s de lait.\nSortir les galettes du r\u00e9frig\u00e9rateur. \u00c0 l\u2019aide d\u2019un pinceau, appliquer la dorure sur chaque petite galette. Sans laisser la dorure couler sur les bords, ce qui emp\u00eacherait le feuilletage de gonfler.\nPr\u00e9chauffer le four \u00e0 210\u00b0C.\nDorer une 2e fois chaque galette. Puis Faire des motifs sur les galettes \u00e0 l\u2019aide du c\u00f4t\u00e9 non-tranchant d\u2019un couteau. Faire un trou au centre de chaque galette avec un cure-dent.\nBaisser le four \u00e0 180\u00b0C et enfourner pour 20 min.\nPour faire briller les galettes\nEn fin de cuisson, pr\u00e9parer le sirop qui permettra de faire briller la galette.\nVerser le sucre et l\u2019eau dans une petite casserole et porter \u00e0 \u00e9bullition 1 minute ou 2. Le sucre doit \u00eatre compl\u00e8tement dissous.\nD\u00e8s que vous sortez les galettes du four, les badigeonner de ce sirop \u00e0 l\u2019aide d\u2019un pinceau. Laisser refroidir avant de d\u00e9guster.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nHiver\n,\nNon class\u00e9\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\n,\nTartes et Galettes\nTags:\nchocolat\n,\ngalette\n,\nGalette des rois\n,\nmini galettes\nGalettes de Haricots Rouges toutes simples\nRago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque (Stifado)\n3 thoughts on \u201cMini-Galettes des Rois Pralin\u00e9 et Chocolat\u201d\nLadyMilonguera\ndit\u00a0:\n6 janvier 2022 \u00e0 20 h 40 min\nTrop mimies ces petites galettes.\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phane Davesne\ndit\u00a0:\n18 janvier 2022 \u00e0 10 h 36 min\nExcellentes !! L\u2019ann\u00e9e commence bien !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n18 janvier 2022 \u00e0 16 h 02 min\nHaha ! Merci St\u00e9phane \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.42 from 50 votes (\n48 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 21.0
+}

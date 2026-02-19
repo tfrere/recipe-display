@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "Cr\u00e8me de feta \u00e0 la betterave",
+    "description": "Une tartinade rose \u00e0 base de feta et de betterave cuite, parfum\u00e9e \u00e0 l'ail, au citron et aux herbes.",
+    "servings": 1,
+    "prepTime": "PT5M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "betterave",
+      "creme de betterave",
+      "creme de feta",
+      "feta",
+      "tartinable",
+      "tartinade",
+      "Ap\u00e9ros",
+      "Accompagnements",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/Creme-feta-betterave-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette opportuniste utilisant des restes de betterave cuite.",
+      "L'aneth est l'une des seules herbes aromatiques que j'utilise s\u00e8che aussi bien que fra\u00eeche.",
+      "Servir \u00e0 l'ap\u00e9ro avec un peu d'huile d'olive et de graines de s\u00e9same."
+    ],
+    "slug": "creme-de-feta-a-la-betterave",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/Creme-feta-betterave-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/06/01/creme-de-feta-a-la-betterave/",
+    "image": "images/creme-de-feta-a-la-betterave.jpg",
+    "createdAt": "2026-02-09T21:50:46.411281",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 1105.4,
+      "protein": 44.8,
+      "fat": 59.7,
+      "carbs": 107.7,
+      "fiber": 29.0,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cooked_beetroot",
+      "name": "betterave cuite",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "beetroot"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "garlic_clove",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "flat_parsley",
+      "name": "persil plat",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "dried_dill",
+      "name": "aneth s\u00e9ch\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "olive_oil_to_taste",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "blend_all_ingredients",
+      "action": "Mettre tous les ingr\u00e9dients dans un mixeur et mixer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_beetroot",
+        "feta",
+        "olive_oil",
+        "lemon_juice",
+        "garlic_clove",
+        "flat_parsley",
+        "dried_dill"
+      ],
+      "produces": "creme_feta_betterave",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_with_garnish",
+      "action": "Servir \u00e0 l'ap\u00e9ro avec un peu d'huile d'olive et de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "creme_feta_betterave",
+        "olive_oil_to_taste",
+        "sesame_seeds"
+      ],
+      "produces": "creme_feta_betterave_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creme_feta_betterave_servie",
+  "originalText": "Cr\u00e8me de feta \u00e0 la betterave - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 juin 2023\nCr\u00e8me de feta \u00e0 la betterave\nAller \u00e0 la recette\nCette cr\u00e8me de feta \u00e0 la betterave est une recette super opportuniste ! J\u2019avais fait\ncette salade aux pousses d\u2019\u00e9pinards et \u00e0 la betterave\n. Et il me restait quelques betteraves cuites. \u00c7a ne se conserve pas tr\u00e8s longtemps ces petites choses. Et du coup je me suis un peu creus\u00e9 la t\u00eate. Qu\u2019est ce que j\u2019allais bien pouvoir faire avec ?\nComme je suis \u00e0 fond dans les tartinades en ce moment, je me suis dis que la betterave allait devoir y passer aussi.\nEt bien entendu, qu\u2019est-ce qu\u2019il y a toujours dans mon frigo ? De la feta. Et quelle est ma tartinade pr\u00e9f\u00e9r\u00e9e ? La cr\u00e8me de feta. Voil\u00e0. Pas de myst\u00e8re !\nDu coup, j\u2019ai d\u00e9cid\u00e9 de tenter l\u2019exp\u00e9rience. Pour cela je suis partie de ma base habituelle. A savoir : de la feta, du yaourt grec, de l\u2019ail et du citron. C\u2019est la base de cette recette de\ncr\u00e8me de feta piment\u00e9e\nque j\u2019adore. L\u2019une des premi\u00e8res que j\u2019ai faite et qui a lanc\u00e9 ma passion !\nPour cette recette, j\u2019ai aussi ajout\u00e9 des herbes aromatiques. Du persil et de l\u2019aneth.\nJ\u2019en profite pour noter que l\u2019aneth est l\u2019une des seules herbes aromatiques que j\u2019utilise s\u00e8che aussi bien que fra\u00eeche. Contrairement au persil ou au basilic qui perd toute sa saveur une fois s\u00e9ch\u00e9. L\u2019aneth, l\u2019estragon et la menthe fonctionnent tr\u00e8s bien. C\u2019est un avis personnel, j\u2019en conviens volontiers ! Mais tout de m\u00eame.\nEt ensuite j\u2019ai ajout\u00e9 la betterave cuite. Voil\u00e0 comment obtenir une Cr\u00e8me de feta \u00e0 la betterave !\nLe r\u00e9sultat est une jolie cr\u00e8me toute rose. Au go\u00fbt tr\u00e8s prononc\u00e9 et parfum\u00e9. Et qui a d\u00e9j\u00e0 fait ses preuves aupr\u00e8s de la communaut\u00e9 instagram !\nCr\u00e8me de feta \u00e0 la betterave\n4.50\n/5 avec\n56\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n130\ng\nde betterave cuite\n200\ng\nde feta\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0s de jus de citron\n1\ngousse d\u2019ail\n3-4\nbranches de persil plat\n\u00bd\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9\nInstructions\nMettre tous les ingr\u00e9dients dans un mixeur et mixer.\nServir \u00e0 l\u2019ap\u00e9ro avec un peu d\u2019huile d\u2019olive et de graines de s\u00e9same !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nAutomne\n,\nBetterave\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\nTags:\nbetterave\n,\ncreme de betterave\n,\ncreme de feta\n,\nfeta\n,\ntartinable\n,\ntartinade\nTartines aux asperges feta et citron\nPanna Cotta compot\u00e9 de Brugnons et Miel\n1 thought on \u201cCr\u00e8me de feta \u00e0 la betterave\u201d\nJulien\ndit\u00a0:\n2 juin 2023 \u00e0 10 h 26 min\nL\u2019introduction parle de yaourt grec, mais on n\u2019en voit pas dans les ingr\u00e9dients ?\nchargement\u2026\nR\u00e9pondre\n4.50 from 56 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

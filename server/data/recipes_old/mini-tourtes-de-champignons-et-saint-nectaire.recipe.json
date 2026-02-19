@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "Mini tourtes de Champignons et Saint-Nectaire",
+    "description": "Ces Mini tourtes de Champignons et Saint-Nectaire sont hyper r\u00e9confortantes. J'adore cette recette parce qu'on y a tout ce qui fait un bon plat! Il y a un tr\u00e8s bel \u00e9quilibre dans les textures.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT47M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "champignon",
+      "automne",
+      "hiver",
+      "plats au four",
+      "filo",
+      "tourte"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Mini-tourtes-champignons-saint-nectaire-2-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si besoin, vous pouvez r\u00e9chauffer les cassolettes au four, cela permettra aux feuilles de filo de retrouver leur croustillant.",
+      "Il faut les plier 3-4 fois dans la longueur donc on obtient une longue bande puis on la plie en accord\u00e9on et on la \u00ab froisse \u00bb pour la poser sur la tourte !"
+    ],
+    "slug": "mini-tourtes-de-champignons-et-saint-nectaire",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Mini-tourtes-champignons-saint-nectaire-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/18/mini-tourtes-de-champignons-et-saint-nectaire/",
+    "image": "images/mini-tourtes-de-champignons-et-saint-nectaire.webp",
+    "createdAt": "2026-02-09T21:37:02.701969",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 47.0,
+    "totalCookingTime": 7.0,
+    "nutritionPerServing": {
+      "calories": 751.4,
+      "protein": 28.0,
+      "fat": 55.4,
+      "carbs": 26.9,
+      "fiber": 6.3,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "champignons",
+      "name": "champignons des bois et/ou de paris",
+      "quantity": 600.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "frais ou surgel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Wild mushrooms and/or button mushrooms"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "vin_blanc",
+      "name": "vin blanc sec",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry white wine"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "creme_fraiche",
+      "name": "cr\u00e8me fra\u00eeche \u00e9paisse",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thick heavy cream"
+    },
+    {
+      "id": "persil_plat",
+      "name": "persil plat",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "saint_nectaire",
+      "name": "Saint Nectaire",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint-Nectaire cheese"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles de filo",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    }
+  ],
+  "tools": [
+    "mini faitouts ou ramequins (allant au four)",
+    "pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "clean_mushrooms",
+      "action": "Nettoyer et couper les champignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "champignons"
+      ],
+      "produces": "cleaned_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_shallots",
+      "action": "\u00c9mincer les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "echalotes"
+      ],
+      "produces": "sliced_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots_mushrooms",
+      "action": "Faire chauffer une po\u00eale avec une cuill\u00e8re \u00e0 soupe d'huile d'olive et y faire revenir les \u00e9chalotes et les champignons pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_shallots",
+        "cleaned_mushrooms",
+        "huile_olive"
+      ],
+      "produces": "sauteed_shallots_mushrooms",
+      "requires": [],
+      "visualCue": "Toute l'eau des champignons doit s'\u00eatre \u00e9vapor\u00e9e"
+    },
+    {
+      "id": "chop_garlic",
+      "action": "Hacher les gousses d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ail"
+      ],
+      "produces": "chopped_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_wine",
+      "action": "Ajouter l'ail hach\u00e9 \u00e0 la po\u00eale avec le vin blanc.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_garlic",
+        "vin_blanc",
+        "sauteed_shallots_mushrooms"
+      ],
+      "produces": "mushroom_wine_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "evaporate_wine",
+      "action": "Laisser tout le vin s'\u00e9vaporer de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mushroom_wine_mixture"
+      ],
+      "produces": "reduced_mushroom_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cream_parsley",
+      "action": "Ajouter la cr\u00e8me et le persil plat et laisser cuire encore 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "reduced_mushroom_mixture",
+        "creme_fraiche",
+        "persil_plat"
+      ],
+      "produces": "creamy_mushroom_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_cheese",
+      "action": "Couper le Saint-Nectaire en morceaux et enlever la cro\u00fbte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "saint_nectaire"
+      ],
+      "produces": "prepared_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_tarts",
+      "action": "Disposer la moiti\u00e9 du fromage dans le fond des mini faitouts. R\u00e9partir les champignons et le reste du fromage par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "prepared_cheese",
+        "creamy_mushroom_filling"
+      ],
+      "produces": "assembled_tarts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_filo",
+      "action": "A l'aide d'un pinceau, enduire les feuilles de filo d'huile. Puis les plier et les disposer sur les cassolettes en accord\u00e9on.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feuilles_filo",
+        "huile_olive",
+        "assembled_tarts"
+      ],
+      "produces": "tarts_with_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tarts",
+      "action": "Enfourner pendant 25min.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tarts_with_filo"
+      ],
+      "produces": "baked_tarts",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir chaud.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_tarts"
+      ],
+      "produces": "mini_tourtes_champignons_saint_nectaire",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "mini_tourtes_champignons_saint_nectaire",
+  "originalText": "Mini tourtes de Champignons et Saint-Nectaire - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 octobre 2022\nMini tourtes de Champignons et Saint-Nectaire\nAller \u00e0 la recette\nCes Mini tourtes de Champignons et Saint-Nectaire sont hyper r\u00e9confortantes.\nJ\u2019adore cette recette parce qu\u2019on y a tout ce qui fait un bon plat! Il y a un tr\u00e8s bel \u00e9quilibre dans les textures. Avec le fondant du Saint-Nectaire, la m\u00e2che des champignons et le croustillant de feuilles de filo !\nBon, je l\u2019avoue, ce n\u2019est pas ce qu\u2019il y a de plus l\u00e9ger. Mais bon, il fait gris, on a besoin de plats r\u00e9confortants ! Non ?\nLa recette est tr\u00e8s simple. Aucune difficult\u00e9 dans la r\u00e9alisation.\nIl faut juste pr\u00e9parer une po\u00eal\u00e9e de champignons, avec des \u00e9chalotes. Du vin blanc. De la cr\u00e8me fra\u00eeche, ail et persil. Tr\u00e8s classique.\nEnsuite dans les mini-faitouts ou dans des ramequins, on assemble. A savoir : quelques tranches de Saint-Nectaire. Puis une couche de champignons. De nouveau du Saint-Nectaire. Et finalement les feuilles de filo.\nVous l\u2019aurez s\u00fbrement remarqu\u00e9. Je cuisine beaucoup avec les feuilles de filo. Ce sont des cousines des feuilles de bricks. Je les pr\u00e9f\u00e8re pour 2 raisons.\nLa premi\u00e8re est tr\u00e8s subjective. Les feuilles de filo sont celles qu\u2019on utilise en Gr\u00e8ce.\nLa seconde est que je les trouve plus croustillantes et d\u00e9licates.\nBref, pour en revenir \u00e0 nos moutons. Ici, plut\u00f4t qu\u2019une p\u00e2te \u00e0 tarte classique, j\u2019ai utilis\u00e9 des feuilles de filo. Comme elles sont tr\u00e8s fines, il faut soit les empiler soit les plier ou les froisser. Pour\nune spanakopita\n, je les empile. Ici, je les ai huil\u00e9es, puis pli\u00e9es en \u201caccord\u00e9on\u201d. Avant de les d\u00e9poser sur le dessus de mes mini-tourtes. Cela permet d\u2019avoir une couche super croustillante. Et trop jolie ! Non ?\nJ\u2019ai r\u00e9alis\u00e9 ces Mini tourtes de Champignons et Saint-Nectaire dans\ndes mini faitouts de la marque Cristel France\n. Ils sont mignons, non ? Et tellement polyvalents ! Four, plaque, feu et lave-vaisselle !\nMini tourtes de Champignons et Saint Nectaire\n4.48\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n35\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n2\nportions\nIngr\u00e9dients\n1x\n2x\n3x\n600\ng\nde champignons des bois et/ou de paris\nfrais ou surgel\u00e9s\n4\n\u00e9chalotes\nhuile d\u2019olive\n150\nml\nde vin blanc sec\n3\ngousses d\u2019ail\n130\ng\nde cr\u00e8me fra\u00eeche \u00e9paisse\n10\nbranches de persil plat\n150\ng\nde Saint Nectaire\n4\nfeuilles de filo\nInstructions\nNettoyer et couper les champignons.\n\u00c9mincer les \u00e9chalotes.\nFaire chauffer une po\u00eale avec une c\u00e0s d\u2019huile d\u2019olive et y faire revenir les \u00e9chalotes et les champignons une quinzaine de minutes. Toute l\u2019eau des champignons doit s\u2019\u00eatre \u00e9vapor\u00e9e.\nHacher les gousses d\u2019ail et les ajouter \u00e0 la po\u00eale avec le vin blanc.\nLaisser tout le vin s\u2019\u00e9vaporer de nouveau.\nAjouter la cr\u00e8me et le persil plat et laisser cuire encore 7-8min.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nCouper le Saint-Nectaire en morceaux et enlever la cro\u00fbte.\nDisposer la moiti\u00e9 du fromage dans le fond des mini faitouts. R\u00e9partir les champignons et la fin du fromage par-dessus.\nA l\u2019aide d\u2019un pinceau, enduire les feuilles de filo d\u2019huile. Puis les plier et les disposer sur les cassolettes en accord\u00e9on.\nEnfourner 25min.\nServir chaud.\nSi besoin, vous pouvez r\u00e9chauffer les cassolettes au four, cela permettra aux feuilles de filo de retrouver leur croustillant.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChampignon\n,\nHiver\n,\nPlats au Four\nTags:\nfilo\n,\nTourte\nSalade Express de Betterave C\u00e2pres et Feta\nNouilles Saut\u00e9es au tofu croustillant\n3 thoughts on \u201cMini tourtes de Champignons et Saint-Nectaire\u201d\nNoote\ndit\u00a0:\n12 novembre 2022 \u00e0 15 h 57 min\nExquis !!! A refaire absolument ! Je pense aussi refaire cette recette dans un grand plat familial quand je re\u00e7ois du monde ! Merci pour cette excellente recette !\nchargement\u2026\nR\u00e9pondre\nC\u00e9cile\ndit\u00a0:\n3 d\u00e9cembre 2025 \u00e0 17 h 10 min\nBonjour, j\u2019aimerais faire cette recette pour No\u00ebl mais je ne comprends pas bien comment disposer les feuilles filo, \u00ab\u00a0en accord\u00e9on\u00a0\u00bb ; je n\u2019arrive pas \u00e0 bien voir sur la photo ; si jamais vous pouvez m\u2019aider.. \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n4 d\u00e9cembre 2025 \u00e0 16 h 01 min\nHello ! Il faut les plier 3-4 fois dans la longueur donc on obtient une longue bande puis on la plie en accord\u00e9on et on la \u00ab\u00a0froisse\u00a0\u00bb pour la poser sur la tourte !\nchargement\u2026\nR\u00e9pondre\n4.48 from 126 votes (\n125 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

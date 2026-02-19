@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "title": "Feta pan\u00e9e au s\u00e9same",
+    "description": "Cette recette de feta pan\u00e9e au s\u00e9same est une belle fa\u00e7on de varier les plaisirs.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT8M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "f\u00eata",
+      "feta au sesame",
+      "ap\u00e9ro",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Feta-sesame-4-of-4.jpg",
+    "nationality": "Greek-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "L'auteur recommande de servir avec un filet de miel.",
+      "L'auteur mentionne sa pr\u00e9f\u00e9rence pour la feta grecque (comme Dodoni) conserv\u00e9e dans de l'eau saumur\u00e9e et pour l'origan de Gr\u00e8ce."
+    ],
+    "slug": "feta-panee-au-sesame",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Feta-sesame-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/03/feta-panee-au-sesame/",
+    "image": "images/feta-panee-au-sesame.webp",
+    "createdAt": "2026-02-09T21:29:59.210277",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 8.0,
+    "totalCookingTime": 8.0,
+    "nutritionPerServing": {
+      "calories": 701.6,
+      "protein": 43.5,
+      "fat": 54.0,
+      "carbs": 9.2,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "eggs",
+      "name": "\u0153ufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "honey",
+      "name": "miel",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    }
+  ],
+  "tools": [
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "cut_feta",
+      "action": "Couper la feta en b\u00e2tonnets de la taille de votre choix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta"
+      ],
+      "produces": "feta_batonnets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_eggs",
+      "action": "Battre 2 \u0153ufs dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggs"
+      ],
+      "produces": "beaten_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_coating_stations",
+      "action": "Verser de la farine dans une assiette creuse et des graines de s\u00e9same dans un autre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "sesame_seeds"
+      ],
+      "produces": "coating_stations",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_feta",
+      "action": "Tremper les b\u00e2tonnets dans la farine, puis l'\u0153uf battu puis finalement le s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "feta_batonnets",
+        "beaten_eggs",
+        "coating_stations"
+      ],
+      "produces": "coated_feta_batonnets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pan_fry",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen-fort. Quand elle est bien chaude, y verser un fond d'huile et faire revenir les b\u00e2tonnets environ 4min par face.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "coated_feta_batonnets",
+        "olive_oil"
+      ],
+      "produces": "fried_feta_batonnets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec un filet de miel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fried_feta_batonnets",
+        "honey"
+      ],
+      "produces": "feta_panee_sesame",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "feta_panee_sesame",
+  "originalText": "Feta pan\u00e9e au s\u00e9same - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 septembre 2022\nFeta pan\u00e9e au s\u00e9same\nAller \u00e0 la recette\nCette recette de feta pan\u00e9e au s\u00e9same est une belle fa\u00e7on de varier les plaisirs.\nJe pense que je n\u2019ai plus \u00e0 pr\u00e9senter mon amour pour la feta. Ou peut-\u00eatre que si ? Je dirai que la feta est mon indispensable. A tel point que j\u2019en ai toujours un stock dans mon frigo. Et quand je dis stock\u2026 c\u2019est pas 200 ou 300g. Non. C\u2019est entre un et deux kilos. Faut dire que j\u2019ai du mal \u00e0 trouver de la bonne feta. Quand je vivais en Belgique, je trouvais facilement des marques grecques. Comme Dodoni par exemple. Les vrais paquets, qui viennent dans des bo\u00eetes pleines d\u2019eau saumur\u00e9e. Dans laquelle la feta est parfaitement conserv\u00e9e. En France, \u00e0 mon plus grand d\u00e9sespoir, c\u2019est bien plus difficile \u00e0 trouver. Du coup, d\u00e8s que j\u2019en trouve qui me plait. J\u2019en fais un stock monstrueux. Qui fait toujours rire les invit\u00e9s qui ont le malheur de tomber dessus en ouvrant le frigo !\nJe la mange g\u00e9n\u00e9ralement toute seule. Avec un filet d\u2019huile d\u2019olive. Et un peu d\u2019origan. Origan de Gr\u00e8ce. Il va sans dire. L\u2019origan s\u00e9ch\u00e9 fran\u00e7ais n\u2019a tout simplement pas de go\u00fbt. Ou alors je la mets dans mes salades. Comme\ncette salade de past\u00e8que\n. Ou dans mes feuillet\u00e9s, comme\nla spanakopita\nou\nla kolokithopita\n. Et encore\nr\u00f4tie au four\n. Ou\nen cr\u00e8me\n.\nBref, vous l\u2019aurez compris, la feta, je la mange \u00e0 toutes les sauces.\nEt maintenant, je la mange en Feta pan\u00e9e au s\u00e9same. Avec du s\u00e9same ! Et c\u2019est bon !\nFeta pan\u00e9e au s\u00e9same\n4.49\n/5 avec\n33\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nIngr\u00e9dients\n200\ng\nde feta\n2\n\u0153ufs\nde la farine\ndes graines de s\u00e9same\nde l\u2019huile d\u2019olive\ndu miel\nInstructions\nCouper la feta en b\u00e2tonnets de la taille de votre choix.\nBattre 2 \u0153ufs dans un bol.\nVerser de la farine dans une assiette creuse et des graines de s\u00e9same dans un autre.\nTremper les b\u00e2tonnets dans la farine, puis l\u2019\u0153uf battu puis finalement le s\u00e9same.\nFaire chauffer une po\u00eale \u00e0 feu moyen-fort. Quand elle est bien chaude, y verser un fond d\u2019huile et faire revenir les b\u00e2tonnets environ 4min par face.\nServir avec un filet de miel.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nf\u00eata\n,\nfeta au sesame\nSauce b\u00e9arnaise facile au blender\nWok d\u2019aubergines et haricots verts au gingembre\n1 thought on \u201cFeta pan\u00e9e au s\u00e9same\u201d\nLadyMilonguera\ndit\u00a0:\n4 septembre 2022 \u00e0 18 h 22 min\nTerriblement sympathique cette feta pan\u00e9e.\nchargement\u2026\nR\u00e9pondre\n4.49 from 33 votes (\n32 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

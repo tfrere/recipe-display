@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "title": "Ramen",
+    "description": "Un ramen maison non-traditionnel avec bouillon de lard fumé, pak choi sauté, œufs marinés et nouilles udon, garni de divers toppings.",
+    "servings": 2,
+    "prepTime": "PT30M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "ramen",
+      "japonais",
+      "nouilles",
+      "bouillon",
+      "œufs_marinés"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054637-3d6c7d43.png",
+    "nationality": "Japanese",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Pas traditionnel du tout, c'est juste pour Léa",
+      "Les œufs marinés nécessitent 24-48h de préparation à l'avance"
+    ],
+    "slug": "ramen",
+    "sourceImageUrl": "ramen.png",
+    "originalContent": "\nTitre : Ramen\n\nNote : Pas traditionnel du tout, c’est juste pour Léa\n\nPour 2 personnes\nIngrédients :\n100g de lard fumé ( désossé, coupés en tranches assez fines )\n2 oignons nouveaux ( haché finement, séparer le vert des bulbes )\n3 petits pak choi ( séparer les feuilles des branches, couper les branches en deux dans la longueur )\n1 gousse d’ail ( haché finement )\n2 oeufs\nDashi ( ou poisson bonito )\nsauce soja\nnouilles udon ( grosses nouilles blanches )\n1 l d'eau \ngingembre frais ( finement haché )\nalgue nori ( en petit carrés de 3cm par 3cm, toppings optionnel )\noignons frits ( toppings optionnel )\ncoriandre fraiche ( hachée, toppings optionnel ) \n\nPréparation :\nOeufs marinés ( 24-48h ) : \nFaire cuire les oeufs pendant 6-8 minutes \nLes faire mariner dans un mélange sauce soja + dashi + eau \nLaisser mariner 24-48h \n           Pak choi :\nFaire blanchir le pak choi ( mettre les feuilles en dernier pour une cuisson uniforme )\nLe faire dorer qq minutes à la poêle avec l’ail dans de l’huile de sésame et réserver. \n\nBouillon :\nFaire cuire le lard jusqu'à coloration dans un tout petit peu d’huile de sésame\najouter oignons, gingembre et cuire 3 minutes en remuant\nAjouter l’eau, porter à ébullition puis faire mijoter pendant 30 minutes ( tu peux ecumer si necessaire, ca eclairci le bouillon )\nÀ convenance : Ajouter 1 càs de sauce soja et un petit peu de dashi si le goût du bouillon n’est pas assez prononcé\n\n\tNouilles : \nQuand tout est prêt :  porter le bouillon à ébullition et faire cuire les nouilles suivant les indications du paquet\n\nDressage : \nDans un grand bol\nRemplir de bouillon\nAjouter une poignée de nouilles\nAjouter le pak choi\nCouper l’oeuf en deux et disposer les deux parties ensemble sur le dessus du bouillon ( jaune vers le haut ) \nToppings :\ntige hachée de l’oignon nouveau\noignons frits\nalgue nori \ncoriandre hachée\n\n\nMain recipe image: temp_image_recipe-gen-20260208054637-3d6c7d43.png",
+    "createdAt": "2026-02-08T05:48:08.420558",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 1524.0,
+    "totalCookingTime": 54.0,
+    "image": "images/ramen.png",
+    "nutritionPerServing": {
+      "calories": 411.5,
+      "protein": 28.3,
+      "fat": 27.6,
+      "carbs": 12.9,
+      "fiber": 4.0,
+      "confidence": "low",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 11,
+      "totalIngredients": 12,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "lard_fume",
+      "name": "lard fumé",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": "désossé, coupé en tranches assez fines",
+      "notes": null,
+      "optional": false,
+      "name_en": "Smoked bacon"
+    },
+    {
+      "id": "oignons_nouveaux",
+      "name": "oignons nouveaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "haché finement, séparer le vert des bulbes",
+      "notes": null,
+      "optional": false,
+      "name_en": "Spring onions"
+    },
+    {
+      "id": "pak_choi",
+      "name": "pak choi",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "séparer les feuilles des branches, couper les branches en deux dans la longueur",
+      "notes": "petits",
+      "optional": false,
+      "name_en": "Bok choy"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "haché finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "dashi",
+      "name": "dashi",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou poisson bonito",
+      "optional": false,
+      "name_en": "Dashi"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "nouilles_udon",
+      "name": "nouilles udon",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "grosses nouilles blanches",
+      "optional": false,
+      "name_en": "Udon noodles"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "l",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "finement haché",
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "huile_sesame",
+      "name": "huile de sésame",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "algue_nori",
+      "name": "algue nori",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": "en petit carrés de 3cm par 3cm",
+      "notes": "toppings optionnel",
+      "optional": true,
+      "name_en": "Nori seaweed"
+    },
+    {
+      "id": "oignons_frits",
+      "name": "oignons frits",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "toppings optionnel",
+      "optional": true,
+      "name_en": "Fried onions"
+    },
+    {
+      "id": "coriandre_fraiche",
+      "name": "coriandre fraiche",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "hachée",
+      "notes": "toppings optionnel",
+      "optional": true,
+      "name_en": "Fresh cilantro"
+    }
+  ],
+  "tools": [
+    "casserole",
+    "poêle",
+    "grand bol"
+  ],
+  "steps": [
+    {
+      "id": "preparer_marinade_oeufs",
+      "action": "Préparer un mélange de sauce soja, dashi et eau pour la marinade des œufs.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_marinés",
+      "uses": [
+        "sauce_soja",
+        "dashi",
+        "eau"
+      ],
+      "produces": "marinade_oeufs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_oeufs",
+      "action": "Faire cuire les œufs pendant 6-8 minutes.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "oeufs_marinés",
+      "uses": [
+        "oeufs"
+      ],
+      "produces": "oeufs_cuits",
+      "requires": [],
+      "visualCue": "œufs cuits mais encore mous à l'intérieur"
+    },
+    {
+      "id": "mariner_oeufs",
+      "action": "Placer les œufs cuits dans la marinade et laisser mariner 24-48h.",
+      "duration": "PT24H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "oeufs_marinés",
+      "uses": [
+        "oeufs_cuits",
+        "marinade_oeufs"
+      ],
+      "produces": "oeufs_marines",
+      "requires": [],
+      "visualCue": "œufs colorés par la marinade"
+    },
+    {
+      "id": "blanchir_pak_choi",
+      "action": "Faire blanchir le pak choi en mettant les feuilles en dernier pour une cuisson uniforme.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pak_choi",
+      "uses": [
+        "pak_choi"
+      ],
+      "produces": "pak_choi_blanchi",
+      "requires": [],
+      "visualCue": "légèrement ramolli mais encore croquant"
+    },
+    {
+      "id": "sauter_pak_choi_ail",
+      "action": "Faire dorer le pak choi quelques minutes à la poêle avec l'ail dans de l'huile de sésame.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pak_choi",
+      "uses": [
+        "pak_choi_blanchi",
+        "ail",
+        "huile_sesame"
+      ],
+      "produces": "pak_choi_saute",
+      "requires": [],
+      "visualCue": "doré et parfumé"
+    },
+    {
+      "id": "cuire_lard",
+      "action": "Faire cuire le lard jusqu'à coloration dans un tout petit peu d'huile de sésame.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "lard_fume",
+        "huile_sesame"
+      ],
+      "produces": "lard_colore",
+      "requires": [],
+      "visualCue": "doré et croustillant"
+    },
+    {
+      "id": "ajouter_aromates",
+      "action": "Ajouter les bulbes d'oignons nouveaux et le gingembre au lard et cuire 3 minutes en remuant.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "lard_colore",
+        "oignons_nouveaux",
+        "gingembre_frais"
+      ],
+      "produces": "aromates_sautes",
+      "requires": [],
+      "visualCue": "oignons translucides"
+    },
+    {
+      "id": "faire_bouillon",
+      "action": "Ajouter l'eau, porter à ébullition puis faire mijoter pendant 30 minutes. Écumer si nécessaire.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "bouillon",
+      "uses": [
+        "aromates_sautes",
+        "eau"
+      ],
+      "produces": "bouillon_base",
+      "requires": [],
+      "visualCue": "bouillon clair et parfumé"
+    },
+    {
+      "id": "assaisonner_bouillon",
+      "action": "À convenance : ajouter 1 cuillère à soupe de sauce soja et un petit peu de dashi si le goût du bouillon n'est pas assez prononcé.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "bouillon_base",
+        "sauce_soja",
+        "dashi"
+      ],
+      "produces": "bouillon_assaisonne",
+      "requires": [],
+      "visualCue": "goût équilibré"
+    },
+    {
+      "id": "cuire_nouilles",
+      "action": "Porter le bouillon à ébullition et faire cuire les nouilles suivant les indications du paquet.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nouilles",
+      "uses": [
+        "bouillon_assaisonne",
+        "nouilles_udon"
+      ],
+      "produces": "nouilles_cuites_dans_bouillon",
+      "requires": [],
+      "visualCue": "nouilles tendres"
+    },
+    {
+      "id": "preparer_toppings",
+      "action": "Préparer les toppings : tige hachée de l'oignon nouveau, oignons frits, algue nori, coriandre hachée.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "toppings",
+      "uses": [
+        "oignons_nouveaux",
+        "oignons_frits",
+        "algue_nori",
+        "coriandre_fraiche"
+      ],
+      "produces": "toppings_prets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_oeufs",
+      "action": "Couper les œufs marinés en deux.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "oeufs_marinés",
+      "uses": [
+        "oeufs_marines"
+      ],
+      "produces": "oeufs_coupes",
+      "requires": [],
+      "visualCue": "jaune encore mœlleux"
+    },
+    {
+      "id": "dresser_bol",
+      "action": "Dans un grand bol, remplir de bouillon avec nouilles, ajouter le pak choi sauté.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "nouilles_cuites_dans_bouillon",
+        "pak_choi_saute"
+      ],
+      "produces": "bol_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_oeufs_toppings",
+      "action": "Disposer les deux moitiés d'œufs marinés sur le dessus du bouillon (jaune vers le haut) et ajouter les toppings.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "bol_base",
+        "oeufs_coupes",
+        "toppings_prets"
+      ],
+      "produces": "ramen_complet",
+      "requires": [],
+      "visualCue": "présentation harmonieuse"
+    }
+  ],
+  "finalState": "ramen_complet",
+  "originalText": "Titre : Ramen\n\nNote : Pas traditionnel du tout, c’est juste pour Léa\n\nPour 2 personnes\nIngrédients :\n100g de lard fumé ( désossé, coupés en tranches assez fines )\n2 oignons nouveaux ( haché finement, séparer le vert des bulbes )\n3 petits pak choi ( séparer les feuilles des branches, couper les branches en deux dans la longueur )\n1 gousse d’ail ( haché finement )\n2 oeufs\nDashi ( ou poisson bonito )\nsauce soja\nnouilles udon ( grosses nouilles blanches )\n1 l d'eau \ngingembre frais ( finement haché )\nalgue nori ( en petit carrés de 3cm par 3cm, toppings optionnel )\noignons frits ( toppings optionnel )\ncoriandre fraiche ( hachée, toppings optionnel ) \n\nPréparation :\nOeufs marinés ( 24-48h ) : \nFaire cuire les oeufs pendant 6-8 minutes \nLes faire mariner dans un mélange sauce soja + dashi + eau \nLaisser mariner 24-48h \n           Pak choi :\nFaire blanchir le pak choi ( mettre les feuilles en dernier pour une cuisson uniforme )\nLe faire dorer qq minutes à la poêle avec l’ail dans de l’huile de sésame et réserver. \n\nBouillon :\nFaire cuire le lard jusqu'à coloration dans un tout petit peu d’huile de sésame\najouter oignons, gingembre et cuire 3 minutes en remuant\nAjouter l’eau, porter à ébullition puis faire mijoter pendant 30 minutes ( tu peux ecumer si necessaire, ca eclairci le bouillon )\nÀ convenance : Ajouter 1 càs de sauce soja et un petit peu de dashi si le goût du bouillon n’est pas assez prononcé\n\n\tNouilles : \nQuand tout est prêt :  porter le bouillon à ébullition et faire cuire les nouilles suivant les indications du paquet\n\nDressage : \nDans un grand bol\nRemplir de bouillon\nAjouter une poignée de nouilles\nAjouter le pak choi\nCouper l’oeuf en deux et disposer les deux parties ensemble sur le dessus du bouillon ( jaune vers le haut ) \nToppings :\ntige hachée de l’oignon nouveau\noignons frits\nalgue nori \ncoriandre hachée\n\n\nMain recipe image: temp_image_recipe-gen-20260208054637-3d6c7d43.png",
+  "totalCookingTime": 54.0
+}

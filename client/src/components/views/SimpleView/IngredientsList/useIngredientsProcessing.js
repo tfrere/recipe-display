@@ -57,6 +57,7 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
         acc.push({
           id: data.ref,
           name: ingredient.name,
+          name_en: ingredient.name_en || "",
           amount: getAdjustedAmount(data.amount, unit, ingredient.category),
           unit: unit,
           state: data.state,
@@ -93,20 +94,22 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
     if (sortByCategory) {
       // SHOPPING LIST MODE
 
-      // 5.a. Aggregate identical ingredients
+      // 5.a. Aggregate identical ingredients (by name + category)
       const aggregatedIngredients = formattedIngredients.reduce(
         (acc, ingredient) => {
-          const key = `${ingredient.name}|${ingredient.unit || ""}|${
-            ingredient.category
-          }`;
+          const key = `${ingredient.name_en || ingredient.name}|${ingredient.category}`;
           if (!acc[key]) {
             acc[key] = { ...ingredient };
           } else {
-            acc[key].amount += ingredient.amount;
-            acc[key].displayAmount = formatAmount(
-              acc[key].amount,
-              acc[key].unit
-            );
+            const existing = acc[key];
+            if (existing.unit === ingredient.unit && existing.amount != null && ingredient.amount != null) {
+              existing.amount += ingredient.amount;
+              existing.displayAmount = formatAmount(existing.amount, existing.unit);
+            } else if (ingredient.amount != null && existing.amount == null) {
+              existing.amount = ingredient.amount;
+              existing.unit = ingredient.unit;
+              existing.displayAmount = formatAmount(existing.amount, existing.unit);
+            }
           }
           return acc;
         },

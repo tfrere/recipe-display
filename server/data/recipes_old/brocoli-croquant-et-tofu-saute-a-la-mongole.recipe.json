@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "title": "Brocoli croquant et tofu saut\u00e9 \u00e0 la mongole",
+    "description": "Cette recette de Brocoli croquant et tofu saut\u00e9 \u00e0 la mongole est devenue l'une de mes pr\u00e9f\u00e9r\u00e9es. Elle est vegan et compl\u00e8te, avec une bonne dose de prot\u00e9ines gr\u00e2ce au tofu.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "recette asiatique",
+      "recette de tofu",
+      "brocoli",
+      "automne",
+      "hiver",
+      "printemps",
+      "wok"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Brocoli-a-la-mongole-4-of-4.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je vous conseille de la manger avec du riz ou \u00e9ventuellement des nouilles.",
+      "J'aime manger le brocoli tr\u00e8s croquant dans ce plat. Mais si vous pr\u00e9f\u00e9rez le brocoli un peu plus fondant, il vous suffit de le faire cuire \u00e0 la vapeur une dizaine de minutes avant.",
+      "La recette qui m'a fait aimer le tofu, merci !"
+    ],
+    "slug": "brocoli-croquant-et-tofu-saute-a-la-mongole",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/03/Brocoli-a-la-mongole-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/03/14/brocoli-croquant-et-tofu-saute-a-la-mongole/",
+    "image": "images/brocoli-croquant-et-tofu-saute-a-la-mongole.webp",
+    "createdAt": "2026-02-09T22:05:48.112388",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 33.0,
+    "totalCookingTime": 13.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 297.7,
+      "protein": 14.1,
+      "fat": 16.4,
+      "carbs": 24.1,
+      "fiber": 2.0,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 11,
+      "totalIngredients": 13,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_fume",
+      "name": "tofu fum\u00e9",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "bloc",
+      "optional": false,
+      "name_en": "smoked tofu"
+    },
+    {
+      "id": "huile_tournesol",
+      "name": "huile de tournesol",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "mirin",
+      "name": "mirin",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mirin"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja shoyu ou claire",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soy sauce"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "flocons_piment",
+      "name": "flocons de piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili flakes"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sirop_erable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "brocoli",
+      "name": "brocoli",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "broccoli"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "sesame",
+      "name": "s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame"
+    }
+  ],
+  "tools": [
+    "Wok ou po\u00eale \u00e0 bords hauts"
+  ],
+  "steps": [
+    {
+      "id": "press_tofu",
+      "action": "Enveloppez le tofu dans un torchon propre et pressez-le.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_fume"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_marinade",
+      "action": "M\u00e9langez 1 c\u00e0s d'huile de tournesol, 1 c\u00e0s de mirin, 1 c\u00e0s de sauce soja et 1 c\u00e0s de f\u00e9cule de ma\u00efs dans un tupperware.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [
+        "huile_tournesol",
+        "mirin",
+        "sauce_soja",
+        "fecule_mais"
+      ],
+      "produces": "marinade_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "marinate_tofu",
+      "action": "Coupez le tofu en tranches et faites-le mariner dans le m\u00e9lange, au moins 20min, id\u00e9alement quelques heures.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_presse",
+        "marinade_tofu"
+      ],
+      "produces": "tofu_marine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sear_tofu",
+      "action": "Faites chauffer 1 c\u00e0s d'huile de tournesol dans un wok \u00e0 medium-high heat. D\u00e9posez les tranches de tofu et faites-les griller jusqu'\u00e0 ce qu'elles soient bien dor\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_marine",
+        "huile_tournesol"
+      ],
+      "produces": "tofu_dore",
+      "requires": [],
+      "visualCue": "bien dor\u00e9es"
+    },
+    {
+      "id": "glaze_tofu",
+      "action": "En fin de cuisson, ajoutez la marinade restante au wok, puis r\u00e9servez le tofu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tofu",
+      "uses": [
+        "tofu_dore",
+        "marinade_tofu"
+      ],
+      "produces": "tofu_glace",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_aromatics",
+      "action": "Hachez finement l'ail et le gingembre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "ail",
+        "gingembre_frais"
+      ],
+      "produces": "ail_gingembre_hache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langez l'ail, le gingembre, 80 ml d'eau, 2 c\u00e0s de sauce soja, 2 c\u00e0s de sirop d'\u00e9rable, 2 c\u00e0s de f\u00e9cule de ma\u00efs et les flocons de piment dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "ail_gingembre_hache",
+        "eau",
+        "sauce_soja",
+        "sirop_erable",
+        "fecule_mais",
+        "flocons_piment"
+      ],
+      "produces": "sauce_mongole",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_broccoli",
+      "action": "D\u00e9taillez le brocoli en petites fleurettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "brocoli"
+      ],
+      "produces": "brocoli_fleurettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "D\u00e9taillez la carotte et les \u00e9chalotes en julienne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "carotte",
+        "echalotes"
+      ],
+      "produces": "legumes_julienne",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faites chauffer 1 c\u00e0s d'huile de tournesol dans le wok \u00e0 medium-high heat. Faites-y revenir tous les l\u00e9gumes, en m\u00e9langeant souvent pendant 7-8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "brocoli_fleurettes",
+        "legumes_julienne",
+        "huile_tournesol"
+      ],
+      "produces": "legumes_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_sauce_tofu",
+      "action": "M\u00e9langez la sauce (la f\u00e9cule sera s\u00fbrement tomb\u00e9e au fond) et versez-la dans le wok. Ajoutez le tofu r\u00e9serv\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "legumes_sautes",
+        "sauce_mongole",
+        "tofu_glace"
+      ],
+      "produces": "plat_combine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "thicken_sauce",
+      "action": "Continuez \u00e0 remuer activement pendant 4-5min jusqu'\u00e0 ce que la sauce \u00e9paississe et recouvre bien tout.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "plat_combine"
+      ],
+      "produces": "plat_sauce_epaisse",
+      "requires": [],
+      "visualCue": "sauce \u00e9paississe et recouvre bien tout"
+    },
+    {
+      "id": "serve",
+      "action": "Servez avec du riz et un peu de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "wok",
+      "uses": [
+        "plat_sauce_epaisse",
+        "sesame"
+      ],
+      "produces": "brocoli_tofu_mongole",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "brocoli_tofu_mongole",
+  "originalText": "Brocoli croquant et tofu saut\u00e9 \u00e0 la mongole - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 mars 2024\nBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\nCette recette de Brocoli croquant et tofu saut\u00e9 \u00e0 la mongole est devenue l\u2019une de mes pr\u00e9f\u00e9r\u00e9es.\nD\u00e9j\u00e0 parce qu\u2019elle est tr\u00e8s rapide \u00e0 pr\u00e9parer. Elle est vegan et compl\u00e8te, avec une bonne dose de prot\u00e9ines gr\u00e2ce au tofu. Elle se pr\u00eate parfaitement \u00e0 un r\u00e9gime v\u00e9g\u00e9talien \u00e9quilibr\u00e9. En plus, elle est pleine de go\u00fbt ! Tout \u00e7a la rend vraiment assez dingue \u00e0 mes yeux ! Je vous conseille de la manger avec du riz ou \u00e9ventuellement des nouilles. Moi j\u2019adore le riz, alors j\u2019ai tendance \u00e0 toujours me diriger vers \u00e7a !\nJ\u2019aime manger le brocoli tr\u00e8s croquant dans ce plat. Mais si vous pr\u00e9f\u00e9rez le brocoli un peu plus fondant, il vous suffit de le faire cuire \u00e0 la vapeur une dizaine de minutes avant.\nAutrement, ne vous laissez surtout pas impressionner par les diff\u00e9rentes \u00e9tapes de pr\u00e9paration pour cette recette.\nIl suffit de faire mariner le tofu quelque temps. Puis de le faire griller et de le r\u00e9server. Ensuite, pr\u00e9parez la sauce. Qui est une sauce comportant des ingr\u00e9dients assez classiques en ce qui concerne les recettes d\u2019inspiration asiatique.\nEt enfin, il faut passer les l\u00e9gumes au wok, avant de tout assembler. Vraiment rien de compliqu\u00e9 pour r\u00e9aliser ce Brocoli croquant et tofu saut\u00e9 \u00e0 la mongole !\nEt si vous aimez le brocoli, je vous conseille\ncette recette de parmentier de brocoli\n. Vous trouverez aussi de l\u2019inspiration dans\nmon premier livre de recettes\n, sorti aux \u00e9ditions Hachette !\nBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\n4.56\n/5 avec\n49\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le tofu\n1\nbloc de tofu fum\u00e9 (250g)\nou ferme \u00e0 d\u00e9faut\n1\nc\u00e0s d\u2019huile de tournesol\n1\nc\u00e0s de mirin\noptionnel\n1\nc\u00e0s de sauce soja shoyu ou claire\n1\nc\u00e0s de f\u00e9cule de ma\u00efs\nflocons de piment\nPour la sauce\n3\ngousses d\u2019ail\n1\nc\u00e0s de gingembre frais\n80\nml\nd\u2019eau\n60\nml\nde sauce soja shoyu ou claire\n2\nc\u00e0s de sirop d\u2019\u00e9rable\n2\nc\u00e0s de f\u00e9cule de ma\u00efs\nflocons de piment\nLes l\u00e9gumes\n1\nbrocoli\n1\ncarotte\n2\n\u00e9chalotes\nInstructions\nPour le tofu\nEnveloppez-le dans un torchon propre et pressez-le.\nM\u00e9langez tous les ingr\u00e9dients de la marinade dans un tupperware.\nCoupez le tofu en tranches et faites-le mariner, au moins 20min, id\u00e9alement quelques heures.\nFaites chauffer 1 c\u00e0s d\u2019huile de tournesol dans un wok ou une po\u00eale \u00e0 bords hauts . D\u00e9posez les tranches de tofu dedans, et faites-les griller jusqu\u2019\u00e0 ce qu\u2019elles soient bien dor\u00e9es. En fin de cuisson, ajoutez la marinade. R\u00e9servez.\nPour la sauce\nHachez finement l\u2019ail et le gingembre.\nM\u00e9langez tous les ingr\u00e9dients de la sauce\nPour le wok\nD\u00e9taillez le brocoli en petites fleurettes.\nD\u00e9taillez la carotte et les \u00e9chalotes en julienne.\nFaites chauffer 1 c\u00e0s d\u2019huile de tournesol dans le wok. Faites-y revenir tous les l\u00e9gumes, en m\u00e9langeant souvent pendant 7-8min.\nM\u00e9langez la sauce (la f\u00e9cule sera s\u00fbrement tomb\u00e9e au fond) et versez toute la sauce dans le wok. Ajoutez le tofu. Continuez \u00e0 remuer activement pendant 4-5min jusqu\u2019\u00e0 ce que la sauce \u00e9paississe et recouvre bien tout.\nServez avec du riz et un peu de s\u00e9same.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrocoli\n,\nHiver\n,\nPrintemps\n,\nWok\nTags:\nrecette asiatique\n,\nrecette de tofu\nSoupe aux deux lentilles et ras al hanout\nVermicelles saut\u00e9es express\n4 thoughts on \u201cBrocoli croquant et tofu saut\u00e9 \u00e0 la mongole\u201d\nOdrade\ndit\u00a0:\n14 mars 2024 \u00e0 18 h 34 min\nMerci ! Ca a l\u2019air super-bon, je vais essayer (m\u00eame si mon mari fuit \u00e0 l\u2019\u00e9vocation du tofu\u2026).\nchargement\u2026\nR\u00e9pondre\nNath\ndit\u00a0:\n11 juillet 2024 \u00e0 11 h 50 min\nMerci pour la recette \ud83d\ude42 je vais essayer. Combien de gramme de tofu il faut dans cette recette pour 4 pers. ?\nMerci d\u2019avance !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n16 ao\u00fbt 2024 \u00e0 14 h 44 min\nCoucou ! 250g !\nchargement\u2026\nR\u00e9pondre\nElise\ndit\u00a0:\n14 novembre 2024 \u00e0 17 h 24 min\nLa recette qui m\u2019a fait aimer le tofu, merci !\nchargement\u2026\nR\u00e9pondre\n4.56 from 49 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 13.0
+}

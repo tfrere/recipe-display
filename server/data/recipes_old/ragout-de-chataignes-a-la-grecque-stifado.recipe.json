@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "Rago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque (Stifado)",
+    "description": "Un rago\u00fbt v\u00e9g\u00e9tarien grec \u00e0 base de ch\u00e2taignes et de petites \u00e9chalotes enti\u00e8res, cuit dans de l'huile d'olive et une sauce tomate \u00e9pic\u00e9e.",
+    "servings": 4,
+    "prepTime": "PT10M",
+    "cookTime": "PT33M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "cuisine grecque",
+      "chataignes",
+      "ragout vegetarien",
+      "automne",
+      "hiver",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Ragout-de-chataignes-1-of-2.jpg",
+    "nationality": "Grecque",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez servir le rago\u00fbt avec du riz, des pommes de terre vapeur ou de la pur\u00e9e !",
+      "Le secret de cette recette est dans l'association des \u00e9chalotes enti\u00e8res et des ch\u00e2taignes."
+    ],
+    "slug": "ragout-de-chataignes-a-la-grecque-stifado",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Ragout-de-chataignes-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/09/ragout-de-chataignes-a-la-grecque/",
+    "image": "images/ragout-de-chataignes-a-la-grecque-stifado.webp",
+    "createdAt": "2026-02-09T20:54:40.134506",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 33.0,
+    "totalCookingTime": 8.0,
+    "peakMonths": [
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 305.1,
+      "protein": 3.9,
+      "fat": 15.9,
+      "carbs": 37.7,
+      "fiber": 7.1,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "petites \u00e9chalotes",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "chestnuts",
+      "name": "ch\u00e2taignes cuites et \u00e9pluch\u00e9es",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "cuites et \u00e9pluch\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "chestnuts"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "tomato_puree",
+      "name": "coulis de tomate",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Faitout"
+  ],
+  "steps": [
+    {
+      "id": "peel_shallots",
+      "action": "\u00c9pluchez les \u00e9chalotes mais ne les coupez pas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots"
+      ],
+      "produces": "peeled_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_garlic",
+      "action": "\u00c9pluchez la gousse d'ail et coupez-la grossi\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "garlic"
+      ],
+      "produces": "chopped_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots_garlic",
+      "action": "Faites chauffer l'huile d'olive dans un faitout. Faites revenir les \u00e9chalotes enti\u00e8res et l'ail pendant 8min \u00e0 feu moyen-fort.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil",
+        "peeled_shallots",
+        "chopped_garlic"
+      ],
+      "produces": "sauteed_shallots_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_first_chestnuts",
+      "action": "Ajoutez 3 ou 4 ch\u00e2taignes dans le faitout (on utilisera le reste plus tard).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chestnuts",
+        "sauteed_shallots_garlic"
+      ],
+      "produces": "base_with_few_chestnuts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_seasonings_liquids",
+      "action": "Puis versez les herbes, la cannelle et le sel, ainsi que le coulis de tomate et l'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bay_leaf",
+        "thyme",
+        "cinnamon",
+        "salt",
+        "tomato_puree",
+        "water",
+        "base_with_few_chestnuts"
+      ],
+      "produces": "seasoned_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_first_stage",
+      "action": "Faire revenir \u00e0 feu moyen pendant 20min. Les ch\u00e2taignes vont se dissoudre et la sauce va \u00e9paissir.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_base"
+      ],
+      "produces": "thickened_sauce",
+      "requires": [],
+      "visualCue": "sauce \u00e9paissie, ch\u00e2taignes dissoutes"
+    },
+    {
+      "id": "add_remaining_chestnuts",
+      "action": "Ajoutez les ch\u00e2taignes restantes et laissez cuire encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "chestnuts",
+        "thickened_sauce"
+      ],
+      "produces": "ragout_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "C'est pr\u00eat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ragout_complet"
+      ],
+      "produces": "ragout_chataignes_grec",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "ragout_chataignes_grec",
+  "originalText": "Rago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque (Stifado) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 janvier 2022\nRago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque (Stifado)\nAller \u00e0 la recette\nVous avez d\u00e9j\u00e0 entendu parler de Rago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque ?\nPeut-\u00eatre dans nos stories\ninstagram\nil y a quelques mois ? Mais sinon ?\nJe vous raconte l\u2019histoire de cette recette ?\nJe suis (comme vous la savez maintenant) d\u2019origine franco-greque. La famille de ma m\u00e8re vit en majorit\u00e9 en Gr\u00e8ce.\nEt c\u2019est le cas de mon petit cousin Iannis (on a 1 an d\u2019\u00e9cart, ce qui fait de lui mon PETIT cousin) ! Iannis est venu passer une semaine \u00e0 Paris. En plein mois de Novembre. C\u2019est vraiment le meilleur moment pour passer du temps ici non ?\nBref. J\u2019ai profit\u00e9 de sa pr\u00e9sence pour qu\u2019il m\u2019apprenne plein de plats grecs ! En plus, mon cousin est v\u00e9g\u00e9tarien depuis plusieurs ann\u00e9es. Il a donc eu le temps de v\u00e9g\u00e9tariser pas mal de recettes. M\u00eame si, la cuisine grecque traditionnelle est bien plus v\u00e9g\u00e9 friendly que la cusine fran\u00e7aise \ud83d\ude42\nDonc voici la premi\u00e8re recette : le rago\u00fbt de ch\u00e2taignes !\nPerso, je n\u2019aurai jamais pens\u00e9 \u00e0 faire des ch\u00e2taignes en rago\u00fbt comme \u00e7a ! Le secret de cette recette est dans l\u2019association des \u00e9chalotes enti\u00e8res et des ch\u00e2taignes. Le tout dans pas mal d\u2019huile d\u2019olive. Parce que l\u2019huile est et restera une des plus BELLES bases de la cuisine grecque !\nEt je vous retrouve bient\u00f4t pour vous partager d\u2019autres recettes apprises aupr\u00e8s de mon cousin ! Et si vous aimez les rago\u00fbts, vous trouverez aussi sur le blog\nun rago\u00fbt aux pois chiches !\nRago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque\nNatacha\n4.52\n/5 avec\n85\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nCuisine\nGrecque\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n250\ng\nde petites \u00e9chalotes\n1\ngousse d\u2019ail\n4\nc\u00e0s d\u2019huile d\u2019olive\n250\ng\nde ch\u00e2taignes cuites et \u00e9pluch\u00e9es\n1\nfeuille de laurier\n1\npinc\u00e9e de thym\n\u00bd\nc\u00e0c de cannelle\nsel\n200\nml\nde coulis de tomate\n200\nml\nd\u2019eau\nInstructions\nEpluchez les \u00e9chalotes mais ne les coupez pas.\nEpluchez la gousse d\u2019ail et coupez-la grossi\u00e8rement.\nFaites chauffer l\u2019huile d\u2019olive dans un faitout. Faites revenir les \u00e9chalotes enti\u00e8res et l\u2019ail pendant 7-8 min \u00e0 feu moyen-fort.\nAjoutez 3 ou 4 ch\u00e2taignes dans le faitout (on utilisera le reste plus tard).\nPuis versez les herbes, la cannelle et les \u00e9pices, ainsi que le coulis de tomate et l\u2019eau.\nFaire revenir \u00e0 feu moyen une vingtaine de minutes. Les ch\u00e2taignes vont se dissoudre et la sauce va \u00e9paissir.\nAjoutez les ch\u00e2taignes restantes et laissez cuire encore 5min.\nC\u2019est pr\u00eat !\nVous pouvez servir le rago\u00fbt avec du riz, des pommes de terre vapeur ou de la pur\u00e9e !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\ncuisine grecque\n,\nque faire avec des chataignes\n,\nragout vegetarien\n,\nrecette chataigne\n,\nrecette chataigne grec\n,\nrecette grec\n,\nrecette grecque\n,\nrecette ragout vegetarien\n,\nstifado\nMini-Galettes des Rois Pralin\u00e9 et Chocolat\nSalade toute simple de Betterave et Pomme de Terre\n6 thoughts on \u201cRago\u00fbt de Ch\u00e2taignes \u00e0 la Grecque (Stifado)\u201d\nSImone\ndit\u00a0:\n27 janvier 2022 \u00e0 17 h 22 min\nQuel plaisir cette recette !\nchargement\u2026\nR\u00e9pondre\nLucie Leveque\ndit\u00a0:\n3 avril 2022 \u00e0 22 h 35 min\nJ\u2019\u00e9tais curieuse lorsque j\u2019ai essay\u00e9 cette recette mais je ne savais pas trop \u00e0 quoi m\u2019attendre, en particulier pour les \u00e9chalottes enti\u00e8res. Le r\u00e9sultat \u00e9tait tr\u00e8s savoureux, tout le monde a aim\u00e9.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n4 avril 2022 \u00e0 12 h 22 min\nHello Lucie ! Merci pour ton commentaire ! C\u2019est mon cousin qui va \u00eatre fier \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nKastrati\ndit\u00a0:\n8 janvier 2023 \u00e0 21 h 41 min\nTr\u00e8s satisfaite par cette recette \ud83e\udd29\n\u00c0 faire r\u00e9guli\u00e8rement\nQuelle plaisir\nchargement\u2026\nR\u00e9pondre\nGwendoline\ndit\u00a0:\n18 mars 2023 \u00e0 21 h 28 min\nAbsolument d\u00e9licieux et compatible avec un r\u00e9gime anti-inflammatoire \ud83e\udd70\nchargement\u2026\nR\u00e9pondre\nBrigitte BARDET\ndit\u00a0:\n28 septembre 2025 \u00e0 14 h 02 min\nexcellente recette, surprenante mais tr\u00e8s savoureuse. Tr\u00e8s  facile \u00e0 r\u00e9aliser. J\u2019ai respect\u00e9 \u00e0 la lettre les consignes. Un vrai r\u00e9gal pour tous les convives. J\u2019ai servi ce plat avec un riz basmati.\nchargement\u2026\nR\u00e9pondre\n4.52 from 85 votes (\n81 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

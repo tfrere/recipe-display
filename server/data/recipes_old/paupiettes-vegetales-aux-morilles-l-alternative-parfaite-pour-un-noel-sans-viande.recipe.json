@@ -1,0 +1,685 @@
+{
+  "metadata": {
+    "title": "Paupiettes v\u00e9g\u00e9tales aux morilles : l'alternative parfaite pour un No\u00ebl sans viande",
+    "description": "Laissez ces Paupiettes v\u00e9g\u00e9tales aux morilles voler la vedette sur votre table de No\u00ebl ! Ce plat festif, aussi gourmand qu'\u00e9l\u00e9gant, ravira vos convives et prouve que l'on peut se passer de viande sans faire de compromis sur la saveur ou la pr\u00e9sentation.",
+    "servings": 3,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H15M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "champignon",
+      "hiver",
+      "No\u00ebl",
+      "festif"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Paupiettes-aux-morilles-2-of-7.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez pr\u00e9parer la farce et l'enveloppe de haricots blancs jusqu'\u00e0 3 jours \u00e0 l'avance.",
+      "Pour une texture parfaite, je recommande de r\u00e9aliser le montage et la cuisson le jour m\u00eame.",
+      "Astuce : si vous souhaitez remplacer le tofu, vous pouvez opter pour des ch\u00e2taignes cuites, qui apportent une note l\u00e9g\u00e8rement sucr\u00e9e et une texture tout aussi agr\u00e9able.",
+      "Malgr\u00e9 leur apparence sophistiqu\u00e9e, le pliage est \u00e0 la port\u00e9e de tous. Vous pouvez m\u00eame consulter ma vid\u00e9o de pr\u00e9paration ici pour vous accompagner \u00e9tape par \u00e9tape."
+    ],
+    "slug": "paupiettes-vegetales-aux-morilles-l-alternative-parfaite-pour-un-noel-sans-viande",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/12/Paupiettes-aux-morilles-2-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/12/19/paupiettes-vegetales-aux-morilles-lalternative-parfaite-pour-un-noel-sans-viande/",
+    "image": "images/paupiettes-vegetales-aux-morilles-l-alternative-parfaite-pour-un-noel-sans-viande.webp",
+    "createdAt": "2026-02-09T22:31:58.280108",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 88.0,
+    "totalCookingTime": 28.0,
+    "nutritionPerServing": {
+      "calories": 610.7,
+      "protein": 28.3,
+      "fat": 18.2,
+      "carbs": 61.7,
+      "fiber": 10.0,
+      "confidence": "medium",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 13,
+      "totalIngredients": 19,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "morilles_surgelees_farce",
+      "name": "morilles surgel\u00e9es",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "frozen morels"
+    },
+    {
+      "id": "champignons_de_paris",
+      "name": "champignons de Paris",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "tofu_fume_farce",
+      "name": "tofu fum\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked tofu"
+    },
+    {
+      "id": "echalotes_farce",
+      "name": "\u00e9chalotes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 5 \u00e9chalotes",
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "cognac",
+      "name": "cognac",
+      "quantity": 20.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cognac"
+    },
+    {
+      "id": "creme_vegetale_farce",
+      "name": "cr\u00e8me v\u00e9g\u00e9tale",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Non-dairy cream"
+    },
+    {
+      "id": "sel_farce",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_farce",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "haricots_blancs",
+      "name": "haricots blancs en conserve",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "\u00e9goutt\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "canned white beans"
+    },
+    {
+      "id": "tofu_fume_enveloppe",
+      "name": "tofu fum\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked tofu"
+    },
+    {
+      "id": "pate_miso_blanc",
+      "name": "p\u00e2te de miso blanc",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso paste"
+    },
+    {
+      "id": "levure_maltee",
+      "name": "levure malt\u00e9e",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutritional yeast"
+    },
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "sel_enveloppe",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_enveloppe",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "feuilles_riz",
+      "name": "feuilles de riz",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice paper"
+    },
+    {
+      "id": "ficelle_cuisine",
+      "name": "ficelle de cuisine",
+      "quantity": null,
+      "unit": null,
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "kitchen twine"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "morilles_surgelees_sauce",
+      "name": "morilles surgel\u00e9es",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "frozen morels"
+    },
+    {
+      "id": "vin_blanc",
+      "name": "vin blanc",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "echalote_sauce",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "bouillon_poudre",
+      "name": "bouillon en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou \u00bd cube de bouillon de l\u00e9gumes",
+      "optional": false,
+      "name_en": "bouillon powder"
+    },
+    {
+      "id": "creme_vegetale_sauce",
+      "name": "cr\u00e8me v\u00e9g\u00e9tale",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Non-dairy cream"
+    }
+  ],
+  "tools": [
+    "mixeur",
+    "pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "hacher_ingredients_farce",
+      "action": "Hachez finement les \u00e9chalotes et \u00e9mincez les champignons de Paris et les morilles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "echalotes_farce",
+        "champignons_de_paris",
+        "morilles_surgelees_farce"
+      ],
+      "produces": "ingredients_haches_farce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_echalotes",
+      "action": "Faites revenir les \u00e9chalotes dans 1 c\u00e0s d'huile d'olive pendant 2-3 minutes dans une po\u00eale.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "ingredients_haches_farce",
+        "huile_olive"
+      ],
+      "produces": "echalotes_revenues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_champignons",
+      "action": "Ajoutez les champignons et les morilles, puis faites cuire 5-6 minutes, jusqu'\u00e0 ce que les champignons rendent leur eau.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "echalotes_revenues"
+      ],
+      "produces": "champignons_cuits",
+      "requires": [],
+      "visualCue": "champignons rendent leur eau"
+    },
+    {
+      "id": "ajouter_tofu",
+      "action": "Ajoutez le tofu \u00e9miett\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "champignons_cuits",
+        "tofu_fume_farce"
+      ],
+      "produces": "melange_tofu_champignons",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deglacer_cognac",
+      "action": "D\u00e9glacez avec le cognac et laissez-le s'\u00e9vaporer compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "melange_tofu_champignons",
+        "cognac"
+      ],
+      "produces": "melange_deglace",
+      "requires": [],
+      "visualCue": "cognac \u00e9vapor\u00e9 compl\u00e8tement"
+    },
+    {
+      "id": "ajouter_creme_mijoter",
+      "action": "Ajoutez la cr\u00e8me v\u00e9g\u00e9tale, salez, poivrez, et laissez mijoter encore 5-6 minutes.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "farce",
+      "uses": [
+        "melange_deglace",
+        "creme_vegetale_farce",
+        "sel_farce",
+        "poivre_farce"
+      ],
+      "produces": "farce_terminee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "egoutter_haricots",
+      "action": "\u00c9gouttez les haricots blancs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "enveloppe",
+      "uses": [
+        "haricots_blancs"
+      ],
+      "produces": "haricots_egouttes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mixer_enveloppe",
+      "action": "Placez tous les ingr\u00e9dients de cette section dans un mixeur. Mixez jusqu'\u00e0 obtenir une p\u00e2te homog\u00e8ne. La texture peut sembler \u00e9paisse, mais continuez \u00e0 mixer jusqu'\u00e0 ce qu'elle soit bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "enveloppe",
+      "uses": [
+        "haricots_egouttes",
+        "tofu_fume_enveloppe",
+        "pate_miso_blanc",
+        "levure_maltee",
+        "flocons_avoine",
+        "sel_enveloppe",
+        "poivre_enveloppe"
+      ],
+      "produces": "pate_haricots_blancs",
+      "requires": [],
+      "visualCue": "p\u00e2te homog\u00e8ne et lisse"
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffez le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "huile_olive"
+      ],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_plan_travail",
+      "action": "Pr\u00e9parez un plan de travail avec un plat contenant un fond d'eau et un torchon mouill\u00e9 bien essor\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "huile_olive"
+      ],
+      "produces": "plan_travail_prepare",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "tremper_feuille_riz",
+      "action": "Prenez une feuille de riz, trempez-la dans l'eau jusqu'\u00e0 ce qu'elle devienne molle, puis d\u00e9posez-la sur le torchon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "feuilles_riz"
+      ],
+      "produces": "feuille_riz_molle",
+      "requires": [
+        "plan_travail_prepare"
+      ],
+      "visualCue": "feuille de riz molle"
+    },
+    {
+      "id": "etaler_pate_haricots",
+      "action": "\u00c9talez un tiers de la p\u00e2te aux haricots blancs sur la feuille de riz avec les doigts l\u00e9g\u00e8rement mouill\u00e9s (pour \u00e9viter que la p\u00e2te colle). Laissez un centim\u00e8tre libre sur les bords.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "feuille_riz_molle",
+        "pate_haricots_blancs"
+      ],
+      "produces": "feuille_avec_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_farce_former_boule",
+      "action": "Ajoutez un tiers de la farce au centre, puis repliez la feuille de riz pour former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "feuille_avec_pate",
+        "farce_terminee"
+      ],
+      "produces": "paupiette_formee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "envelopper_deuxieme_feuille",
+      "action": "Mouillez une deuxi\u00e8me feuille de riz, enveloppez la paupiette avec.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "paupiette_formee",
+        "feuilles_riz"
+      ],
+      "produces": "paupiette_doublee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ficeler_paupiette",
+      "action": "Ficelez d\u00e9licatement avec de la ficelle de cuisine sans trop serrer pour \u00e9viter qu'elle ne casse les paupiettes \u00e0 la cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "paupiette_doublee",
+        "ficelle_cuisine"
+      ],
+      "produces": "paupiette_ficel\u00e9e",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_paupiettes",
+      "action": "D\u00e9posez les paupiettes sur une plaque de cuisson huil\u00e9e, badigeonnez-les d'un peu d'huile d'olive, saupoudrez de fleur de sel, et enfournez pour 1 heure.",
+      "duration": "PT1H",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "paupiette_ficel\u00e9e",
+        "huile_olive"
+      ],
+      "produces": "paupiettes_cuites",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "rehuiler_paupiettes",
+      "action": "Pendant la cuisson, sortez les paupiettes 2 ou 3 fois pour les rehuiler l\u00e9g\u00e8rement avec un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "paupiettes_cuites",
+        "huile_olive"
+      ],
+      "produces": "paupiettes_rehuilees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_ingredients_sauce",
+      "action": "Ciselez l'\u00e9chalote et hachez les morilles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "echalote_sauce",
+        "morilles_surgelees_sauce"
+      ],
+      "produces": "ingredients_haches_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_base_sauce",
+      "action": "Dans une petite casserole, versez le vin blanc, l'\u00e9chalote, les morilles et le bouillon en poudre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "ingredients_haches_sauce",
+        "vin_blanc",
+        "bouillon_poudre"
+      ],
+      "produces": "base_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduire_sauce",
+      "action": "Portez \u00e0 \u00e9bullition et laissez r\u00e9duire \u00e0 petit bouillon d'un tiers (environ 7-8 minutes).",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "base_sauce"
+      ],
+      "produces": "sauce_reduite",
+      "requires": [],
+      "visualCue": "r\u00e9duit d'un tiers"
+    },
+    {
+      "id": "ajouter_creme_sauce",
+      "action": "Une fois r\u00e9duit, ajoutez la cr\u00e8me v\u00e9g\u00e9tale et laissez mijoter encore 4-5 minutes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_aux_morilles",
+      "uses": [
+        "sauce_reduite",
+        "creme_vegetale_sauce"
+      ],
+      "produces": "sauce_morilles_terminee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir_paupiettes",
+      "action": "Servez les paupiettes bien chaudes avec la sauce aux morilles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "paupiettes_rehuilees",
+        "sauce_morilles_terminee"
+      ],
+      "produces": "paupiettes_vegetales_morilles",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "paupiettes_vegetales_morilles",
+  "originalText": "Paupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 d\u00e9cembre 2024\nPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\nLaissez ces Paupiettes v\u00e9g\u00e9tales aux morilles voler la vedette sur votre table de No\u00ebl ! Ce plat festif, aussi gourmand qu\u2019\u00e9l\u00e9gant, ravira vos convives et prouve que l\u2019on peut se passer de viande sans faire de compromis sur la saveur ou la pr\u00e9sentation.\nTable des mati\u00e8res\n1\nPourquoi opter pour des Paupiettes v\u00e9g\u00e9tales aux morilles ?\n2\nQuels ingr\u00e9dients pour des Paupiettes v\u00e9g\u00e9tales r\u00e9ussies ?\n3\nUne recette qui s\u2019adapte \u00e0 votre emploi du temps\n4\nPourquoi cette recette fera sensation ?\n5\nD\u2019autres recettes de No\u00ebl\n6\nPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\nPourquoi opter pour des Paupiettes v\u00e9g\u00e9tales aux morilles ?\nLa p\u00e9riode des f\u00eates peut \u00eatre un vrai casse-t\u00eate pour ceux qui souhaitent consommer moins de viande, voire plus du tout. Avec cette recette, je vous propose une revisite v\u00e9g\u00e9tale d\u2019un grand classique de la cuisine fran\u00e7aise. Le r\u00e9sultat est bluffant : des paupiettes belles, savoureuses et simples \u00e0 r\u00e9aliser.\nMalgr\u00e9 leur apparence sophistiqu\u00e9e, le pliage est \u00e0 la port\u00e9e de tous. Vous pouvez m\u00eame consulter\nma vid\u00e9o de pr\u00e9paration ici\npour vous accompagner \u00e9tape par \u00e9tape.\nQuels ingr\u00e9dients pour des Paupiettes v\u00e9g\u00e9tales r\u00e9ussies ?\nLa recette repose sur deux pr\u00e9parations principales :\nLa farce : compos\u00e9e de morilles, de champignons, de cognac et d\u2019un peu de cr\u00e8me v\u00e9g\u00e9tale, elle est parfum\u00e9e et fondante.\nL\u2019enveloppe ext\u00e9rieure : r\u00e9alis\u00e9e avec une p\u00e2te \u00e0 base de haricots blancs et de tofu fum\u00e9, elle est \u00e9tal\u00e9e sur une feuille de riz qui, en cuisant, d\u00e9veloppe une texture proche de celle de la viande.\nAstuce : si vous souhaitez remplacer le tofu, vous pouvez opter pour des ch\u00e2taignes cuites, qui apportent une note l\u00e9g\u00e8rement sucr\u00e9e et une texture tout aussi agr\u00e9able.\nUne recette qui s\u2019adapte \u00e0 votre emploi du temps\nL\u2019un des grands avantages de cette recette est sa flexibilit\u00e9. Vous pouvez pr\u00e9parer la farce et la p\u00e2te de l\u2019enveloppe jusqu\u2019\u00e0 trois jours \u00e0 l\u2019avance. Conservez-les dans des contenants herm\u00e9tiques au r\u00e9frig\u00e9rateur. Toutefois, pour une texture parfaite, je recommande de r\u00e9aliser le montage et la cuisson le jour m\u00eame.\nPourquoi cette recette fera sensation ?\nLes Paupiettes v\u00e9g\u00e9tales aux morilles allient l\u2019\u00e9l\u00e9gance d\u2019un plat de f\u00eate \u00e0 la simplicit\u00e9 d\u2019une pr\u00e9paration accessible. En plus d\u2019\u00eatre d\u00e9licieuses, elles mettent en valeur des ingr\u00e9dients sains et originaux, parfaits pour un menu de No\u00ebl qui sort de l\u2019ordinaire.\nEssayez cette recette et laissez-vous surprendre par le r\u00e9sultat !\nD\u2019autres recettes de No\u00ebl\nVous trouverez ici\nNos id\u00e9es pour un ap\u00e9ro de No\u00ebl V\u00e9g\u00e9tarien ou Vegan\nPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\n4.42\n/5 avec\n48\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n45\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n3\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la farce\n75\ng\nde morilles surgel\u00e9es\n100\ng\nde champignons de Paris\n100\ng\nde tofu fum\u00e9\n150\ng\nd\u2019\u00e9chalotes\nenviron 5 \u00e9chalotes\n20\nml\nde cognac\n100\nml\nde cr\u00e8me v\u00e9g\u00e9tale\nSel\npoivre\nPour l\u2019enveloppe\n200\ng\nde haricots blancs en conserve\n\u00e9goutt\u00e9s\n100\ng\nde tofu fum\u00e9\n30\ng\nde p\u00e2te de miso blanc\n2\nc\u00e0s de levure malt\u00e9e\n2\nc\u00e0s de flocons d\u2019avoine\nSel\npoivre\nPour le montage\n6\nfeuilles de riz\nFicelle de cuisine\nHuile d\u2019olive\nPour la sauce aux morilles\n75\ng\nde morilles surgel\u00e9es\n200\nml\nde vin blanc\n1\n\u00e9chalote\n1\nc\u00e0c de bouillon en poudre ou \u00bd cube de bouillon de l\u00e9gumes\n200\nml\nde cr\u00e8me v\u00e9g\u00e9tale\nInstructions\nPr\u00e9paration\nVous pouvez pr\u00e9parer la farce et l\u2019enveloppe de haricots blancs jusqu\u2019\u00e0 3 jours \u00e0 l\u2019avance.\nFarce\nHachez finement les \u00e9chalotes et \u00e9mincez les champignons de Paris et les morilles.\nFaites revenir les \u00e9chalotes dans 1 c\u00e0s d\u2019huile d\u2019olive pendant 2-3 minutes dans une po\u00eale.\nAjoutez les champignons et les morilles, puis faites cuire 5-6 minutes, jusqu\u2019\u00e0 ce que les champignons rendent leur eau.\nAjoutez le tofu \u00e9miett\u00e9.\nD\u00e9glacez avec le cognac et laissez-le s\u2019\u00e9vaporer compl\u00e8tement.\nAjoutez la cr\u00e8me v\u00e9g\u00e9tale, salez, poivrez, et laissez mijoter encore 5-6 minutes.\nR\u00e9servez la farce dans un tupperware si vous la pr\u00e9parez \u00e0 l\u2019avance.\nEnveloppe\n\u00c9gouttez les haricots blancs.\nPlacez tous les ingr\u00e9dients de cette section dans un mixeur.\nMixez jusqu\u2019\u00e0 obtenir une p\u00e2te homog\u00e8ne. La texture peut sembler \u00e9paisse, mais continuez \u00e0 mixer jusqu\u2019\u00e0 ce qu\u2019elle soit bien lisse.\nTransf\u00e9rez dans un tupperware si vous la pr\u00e9parez \u00e0 l\u2019avance.\nMontage et cuisson des paupiettes\nPr\u00e9chauffez le four \u00e0 190\u00b0C.\nPr\u00e9parez un plan de travail avec un plat contenant un fond d\u2019eau et un torchon mouill\u00e9 bien essor\u00e9.\nPrenez une feuille de riz, trempez-la dans l\u2019eau jusqu\u2019\u00e0 ce qu\u2019elle devienne molle, puis d\u00e9posez-la sur le torchon.\n\u00c9talez un tiers de la p\u00e2te aux haricots blancs sur la feuille de riz avec les doigts l\u00e9g\u00e8rement mouill\u00e9s (pour \u00e9viter que la p\u00e2te colle). Laissez un centim\u00e8tre libre sur les bords.\nAjoutez un tiers de la farce au centre, puis repliez la feuille de riz pour former une boule.\nMouillez une deuxi\u00e8me feuille de riz, enveloppez la paupiette avec.\nFicelez d\u00e9licatement avec de la ficelle de cuisine sans trop serrer pour \u00e9viter qu\u2019elle ne casse les paupiettes \u00e0 la cuisson.\nD\u00e9posez les paupiettes sur une plaque de cuisson huil\u00e9e, badigeonnez-les d\u2019un peu d\u2019huile d\u2019olive, saupoudrez de fleur de sel, et enfournez pour 1 heure.\nPendant la cuisson, sortez les paupiettes 2 ou 3 fois pour les rehuiler l\u00e9g\u00e8rement avec un pinceau.\nSauce aux morilles\nCiselez l\u2019\u00e9chalote et hachez les morilles.\nDans une petite casserole, versez le vin blanc, l\u2019\u00e9chalote, les morilles et le bouillon en poudre.\nPortez \u00e0 \u00e9bullition et laissez r\u00e9duire \u00e0 petit bouillon d\u2019un tiers (environ 7-8 minutes).\nUne fois r\u00e9duit, ajoutez la cr\u00e8me v\u00e9g\u00e9tale et laissez mijoter encore 4-5 minutes.\nServez les paupiettes bien chaudes avec la sauce aux morilles.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChampignon\n,\nHiver\nButternut et pois chiches fa\u00e7on Curry\nEscargots sans escargots : une revisite gourmande et v\u00e9g\u00e9tarienne\n3 thoughts on \u201cPaupiettes v\u00e9g\u00e9tales aux morilles : l\u2019alternative parfaite pour un No\u00ebl sans viande\u201d\nArabesque\ndit\u00a0:\n24 mars 2025 \u00e0 18 h 39 min\nSuper recette, je l\u2019ai test\u00e9e \u00e0 No\u00ebl et je l\u2019ai refaite pour des invit\u00e9s ce weekend et elle a fait son petit effet ! Merci !\nchargement\u2026\nR\u00e9pondre\nSyl\ndit\u00a0:\n4 octobre 2025 \u00e0 10 h 12 min\nC\u2019est une merveille. Je les sort \u00e0 chaque occasion festives et rends jaloux et jalouses les viandards\nchargement\u2026\nR\u00e9pondre\nJOCELYNE\ndit\u00a0:\n18 novembre 2025 \u00e0 20 h 15 min\nBonjour alors j\u2019ai test\u00e9 ce weekend mais j\u2019ai retrouv\u00e9 les feuilles de riz, cass\u00e9es, trop cuites, dures  et immangeable ! Je ne sais pas quelle b\u00eatise j\u2019ai fait ?  Une cuisson moins longue peut \u00eatre ?\nMerci de votre aide\nchargement\u2026\nR\u00e9pondre\n4.42 from 48 votes (\n45 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 28.0
+}

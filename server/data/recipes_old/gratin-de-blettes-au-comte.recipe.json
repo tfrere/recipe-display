@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "title": "Gratin de blettes au comt\u00e9",
+    "description": "Un gratin tr\u00e8s simple, avec des pommes de terre, de la sauce tomate et une b\u00e9chamel bien gourmande au comt\u00e9.",
+    "servings": 5,
+    "prepTime": "PT30M",
+    "cookTime": "PT60M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "b\u00e9chamel",
+      "bettes",
+      "blettes",
+      "comt\u00e9",
+      "cotes de bettes",
+      "gratin",
+      "gratin vegetarien",
+      "\u00c9t\u00e9",
+      "Printemps",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/gratin-blette-comte-2-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "L'auteur a l'habitude de toujours cuisiner les c\u00f4tes et les feuilles ensemble.",
+      "La b\u00e9chamel au comt\u00e9 est aussi utilis\u00e9e pour un gratin de chou-fleur.",
+      "Ce n'est s\u00fbrement pas ce qu'il y a de plus di\u00e9t\u00e9tique, mais c'est d\u00e9licieux.",
+      "Si votre po\u00eale ne passe pas au four, transvaser dans un plat adapt\u00e9."
+    ],
+    "slug": "gratin-de-blettes-au-comte",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/05/gratin-blette-comte-2-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/05/09/gratin-de-blettes-au-comte/",
+    "image": "images/gratin-de-blettes-au-comte.webp",
+    "createdAt": "2026-02-09T21:49:02.456655",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 61.0,
+    "totalCookingTime": 16.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 501.2,
+      "protein": 17.2,
+      "fat": 28.6,
+      "carbs": 46.8,
+      "fiber": 5.9,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 10,
+      "totalIngredients": 10,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "blettes",
+      "name": "blettes",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tomato_coulis",
+      "name": "coulis de tomate",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "milk",
+      "name": "lait v\u00e9g\u00e9tal ou animal",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant or animal milk"
+    },
+    {
+      "id": "nutmeg",
+      "name": "muscade",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "comte",
+      "name": "comt\u00e9 r\u00e2p\u00e9",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Comt\u00e9 cheese, grated"
+    }
+  ],
+  "tools": [
+    "Po\u00eale allant au four (id\u00e9alement)"
+  ],
+  "steps": [
+    {
+      "id": "slice_onion",
+      "action": "\u00c9mincer l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "onion"
+      ],
+      "produces": "sliced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_blettes",
+      "action": "\u00c9mincer les c\u00f4tes de blettes et hacher grossi\u00e8rement les feuilles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "blettes"
+      ],
+      "produces": "prepared_blettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Dans une po\u00eale (id\u00e9alement qui va au four), faire chauffer l'huile et y faire revenir le thym, l'oignon et les c\u00f4tes. Faire revenir quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "olive_oil",
+        "thyme",
+        "sliced_onion",
+        "prepared_blettes"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_tomato_sauce",
+      "action": "Ajouter le coulis de tomate, le sucre, sel et poivre. Couvrir et laisser mijoter 15min \u00e0 feu moyen.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "sauteed_aromatics",
+        "tomato_coulis",
+        "sugar",
+        "salt",
+        "pepper"
+      ],
+      "produces": "tomato_blette_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_potatoes",
+      "action": "Couper les pommes de terre en tr\u00e8s fines lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "sliced_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_potatoes_leaves",
+      "action": "Ajouter les pommes de terre et les feuilles de blettes et faire cuire encore 7-8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_blettes",
+      "uses": [
+        "tomato_blette_base",
+        "sliced_potatoes",
+        "prepared_blettes"
+      ],
+      "produces": "complete_blette_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre dans une petite casserole.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_comte",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_roux",
+      "action": "Ajouter la farine et m\u00e9langer pour obtenir un roux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_comte",
+      "uses": [
+        "melted_butter",
+        "flour"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_bechamel",
+      "action": "Verser le lait petit \u00e0 petit en m\u00e9langeant constamment avec un fouet jusqu'\u00e0 incorporation compl\u00e8te. La b\u00e9chamel doit \u00eatre \u00e9paisse et lisse.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_comte",
+      "uses": [
+        "roux",
+        "milk"
+      ],
+      "produces": "basic_bechamel",
+      "requires": [],
+      "visualCue": "\u00e9paisse et lisse"
+    },
+    {
+      "id": "season_bechamel",
+      "action": "Ajouter la muscade, sel, poivre et la moiti\u00e9 du comt\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_comte",
+      "uses": [
+        "basic_bechamel",
+        "nutmeg",
+        "salt",
+        "pepper",
+        "comte"
+      ],
+      "produces": "comte_bechamel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_bechamel_blettes",
+      "action": "Ajouter la b\u00e9chamel aux blettes et bien m\u00e9langer. Si votre po\u00eale ne passe pas au four, transvaser dans un plat adapt\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "complete_blette_mixture",
+        "comte_bechamel"
+      ],
+      "produces": "gratin_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_gratin",
+      "action": "R\u00e9partir la fin du comt\u00e9 sur le gratin et enfourner pour 30min.",
+      "duration": "PT30M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "gratin_mixture",
+        "comte"
+      ],
+      "produces": "gratin_de_blettes_au_comte",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "gratin_de_blettes_au_comte",
+  "originalText": "Gratin de blettes au comt\u00e9 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 mai 2023\nGratin de blettes au comt\u00e9\nAller \u00e0 la recette\nOn se retrouve aujourd\u2019hui pour une recette qui r\u00e9chauffe les c\u0153urs et les bidons : le Gratin de blettes au comt\u00e9.\nJe suis toujours si heureuse de revoir les blettes appara\u00eetre sur les \u00e9tals. C\u2019est un l\u00e9gume que j\u2019aime beaucoup. Et que je trouve tr\u00e8s polyvalent.\nJ\u2019ai d\u2019ailleurs l\u2019habitude de toujours cuisiner les c\u00f4tes et les feuilles ensemble. Mais il me semble que vous \u00eates nombreux \u00e0 les utiliser dans des plats diff\u00e9rents. Si vous faites partie de cette cat\u00e9gorie, dites-nous pourquoi en commentaire !\nToujours est-il que pour ce gratin, j\u2019ai utilis\u00e9 les c\u00f4tes et les feuilles.\nC\u2019est un gratin tr\u00e8s simple, avec des pommes de terre. Qui viennent ajouter de la consistance et du fondant. De la sauce tomate. Et une b\u00e9chamel bien gourmande au comt\u00e9 !\nJ\u2019adore la b\u00e9chamel au comt\u00e9. D\u2019ailleurs, c\u2019est ce que j\u2019utilise pour faire mon gratin de chou-fleur ador\u00e9 ! Je vous l\u2019accorde, ce n\u2019est s\u00fbrement pas ce qu\u2019il y a de plus di\u00e9t\u00e9tique. Mais c\u2019est d\u00e9licieux ! Et vu le temps qu\u2019il fait, je pense qu\u2019on peut se permettre ce genre de petit bonheur !\nJ\u2019esp\u00e8re que cette recette de Gratin de blettes au comt\u00e9 va vous plaire ! Et si vous cherchez d\u2019autres id\u00e9es de recettes avec des blettes,\nvous en trouverez 5 ici\n!\nBon app les amis \ud83d\ude42\nGratin de blettes au comt\u00e9\n4.56\n/5 avec\n68\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les blettes\n500\ng\nde blettes\n1\noignon\n2\nbranches de thym\n3\nc\u00e0s d\u2019huile d\u2019olive\n300\nml\nde coulis de tomate\n1\nc\u00e0c de sucre\nsel\npoivre\n400\ng\nde pommes de terre \u00e0 chair ferme\nPour la b\u00e9chamel au comt\u00e9\n40\ng\nde beurre\n50\ng\nde farine\n400\nml\nde lait\nv\u00e9g\u00e9tal ou animal\n1\npinc\u00e9e de muscade\nsel\npoivre\n160\ng\nde comt\u00e9 r\u00e2p\u00e9\nInstructions\nPr\u00e9paration de la pr\u00e9paration de blettes\n\u00c9mincer l\u2019oignon.\n\u00c9mincer les c\u00f4tes de blettes et hacher grossi\u00e8rement les feuilles.\nDans une po\u00eale (id\u00e9alement qui va au four), faire chauffer l\u2019huile et y faire revenir le thym, l\u2019oignon et les c\u00f4tes. Faire revenir quelques minutes puis ajouter le coulis de tomate, le sucre, sel et poivre.\nCouvrir et laisser mijoter une quinzaine de minutes \u00e0 feu moyen.\nCouper les pommes de terre en tr\u00e8s fines lamelles.\nAjouter les pommes de terre et les feuilles de blettes et faire cuire encore 7-8min.\nPr\u00e9paration de la b\u00e9chamel\nFaire fondre le beurre dans une petite casserole. Ajouter la farine et m\u00e9langer pour obtenir un roux. Verser le lait petit \u00e0 petit en m\u00e9langeant constamment avec un fouet jusqu\u2019\u00e0 incorporation compl\u00e8te. La b\u00e9chamel doit \u00eatre \u00e9paisse et lisse. Compter environ 7-8min.\nAjouter la muscade, sel, poivre et la moiti\u00e9 du comt\u00e9.\nPr\u00e9paration du gratin\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nAjouter la b\u00e9chamel aux blettes et bien m\u00e9langer. Si votre po\u00eale ne passe pas au four, transvaser dans un plat adapt\u00e9.\nR\u00e9partir la fin du comt\u00e9 sur le gratin et enfourner pour 30min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBlettes\n,\n\u00c9t\u00e9\n,\nNon class\u00e9\n,\nPlats au Four\n,\nPrintemps\nTags:\nb\u00e9chamel\n,\nbettes\n,\nblettes\n,\ncomt\u00e9\n,\ncotes de bettes\n,\ngratin\n,\ngratin vegetarien\nQuiche aux asperges ch\u00e8vre et miel\nSalade d\u2019asperges \u00e0 l\u2019estragon\n14 thoughts on \u201cGratin de blettes au comt\u00e9\u201d\nBosha\ndit\u00a0:\n9 mai 2023 \u00e0 13 h 46 min\nC\u2019est vrai que moi aussi, j\u2019ai tendance \u00e0 les cuisiner s\u00e9par\u00e9ment !!!\nJe pense que c\u2019est une question de go\u00fbt, Les feuilles ont un go\u00fbt plus vert h\u00e9 h\u00e9, j\u2019en fais des roul\u00e9s garnis, cuit en remplacement des \u00e9pinards, ou en une d\u00e9licieuse farce, et plein d\u2019autres fa\u00e7ons.\nJe trouve les tiges plus douces et plus sucr\u00e9s, je pr\u00e9f\u00e8re les faire en gratin, ou je les mixe pour faire une sauce.\nMais je vais tester \u00e0 ta mani\u00e8re, car apr\u00e8s tout, cela doit-\u00eatre d\u00e9licieux aussi.\nPar contre je ne mettrais pas de coulis de tomates, que je n\u2019appr\u00e9cie pas, j\u2019aime trop les tomates fra\u00eeches, j\u2019avoue que le concentr\u00e9 de tomates me perturbe grandement. Pourquoi pas des tranches de tomates fra\u00eeches en saisons, mais y-aura-il encore des blettes \u00e0 cette saison ??? Merci\nchargement\u2026\nR\u00e9pondre\nLadyMilonguera\ndit\u00a0:\n9 mai 2023 \u00e0 13 h 51 min\nVraiment tr\u00e8s app\u00e9tissant ce gratin.\nchargement\u2026\nR\u00e9pondre\nChristelle\ndit\u00a0:\n9 mai 2023 \u00e0 13 h 56 min\nBonjour,\nUn gratin bien app\u00e9tissant !!\nJ\u2019ai toujours cuisin\u00e9 les blettes feuilles et c\u00f4tes ensemble \u00e0 la b\u00e9chamel mais cette version avec du coulis de tomate (et des pommes de terre) me tente beaucoup !!\nSinon chez moi on adore aussi les blettes en version sucr\u00e9e :  la tourte aux blettes (uniquement les feuilles), sp\u00e9cialit\u00e9 de Nice !! Un r\u00e9gal !!\nBon apr\u00e8s-midi !\nchargement\u2026\nR\u00e9pondre\nSammy Georges\ndit\u00a0:\n9 mai 2023 \u00e0 17 h 09 min\nTrop content de recevoir votre mail et vos recettes merci  infiniment\nVous \u00eates mon site pr\u00e9f\u00e9r\u00e9 pour la cuisine\nCordialement\nSammy\nchargement\u2026\nR\u00e9pondre\nSylvieLia\ndit\u00a0:\n22 f\u00e9vrier 2024 \u00e0 21 h 24 min\nJe me suis r\u00e9gal\u00e9e ! J\u2019adore cette recette !\nC\u2019est bien mieux une recette qui utilise c\u00f4tes et feuilles\nchargement\u2026\nR\u00e9pondre\nCatherine\ndit\u00a0:\n4 avril 2024 \u00e0 2 h 08 min\nExcellent  ! Je n ai mis de fromage  que sur le dessus  pour all\u00e9ger un peu, j avais encore un petit bocal de coulis de tomates maison , nous nous sommes r\u00e9gal\u00e9s  !\nchargement\u2026\nR\u00e9pondre\nSylvia\ndit\u00a0:\n14 avril 2024 \u00e0 19 h 07 min\nTr\u00e8s bonne  recette.a refaire sans h\u00e9siter.jai accompagn\u00e9 avec du jambon blanc. Jai cuit les,cotes,avec les feuilles.\nchargement\u2026\nR\u00e9pondre\nFab4\ndit\u00a0:\n23 avril 2024 \u00e0 20 h 12 min\nC\u2019est long plus c\u2019est bon\nMerci beaucoup, je n\u2019ai pas de fromage, mais la b\u00e9chamel sur le job\nchargement\u2026\nR\u00e9pondre\nChris\ndit\u00a0:\n26 octobre 2024 \u00e0 13 h 36 min\nUen recette juste exceptionnelle.  A la fin du repas, mes enfants ont dit: tu le refais quand tu veux. Je multiplie le nombre de bons points grace \u00e0  Free the Pickle. Milles mercis.\nchargement\u2026\nR\u00e9pondre\nAska\ndit\u00a0:\n15 juillet 2025 \u00e0 15 h 09 min\nJai rajout\u00e9 de la F\u00eata! Franchement delicieux ce hartin, je l\u2019ai mang\u00e9 comme ca tellement il \u00e9tait gourmand! \u00c7a va devenir un classique chez moi!\nchargement\u2026\nR\u00e9pondre\nElenna\ndit\u00a0:\n23 octobre 2025 \u00e0 19 h 24 min\nJe l\u2019ai faite d\u00e9j\u00e0 3 fois et je r\u00e9cidive pour la 4\u00e8me fois .\nTout le monde petits et grand l\u2019appr\u00e9cie, trop bon\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n27 octobre 2025 \u00e0 14 h 37 min\nMerci !!\nchargement\u2026\nR\u00e9pondre\nCathy\ndit\u00a0:\n21 novembre 2025 \u00e0 13 h 36 min\nNous nous sommes r\u00e9gal\u00e9s, et les enfants aussi!  Je ne suis jamais d\u00e9\u00e7ue quand je cherche par ici de nouvelles fa\u00e7ons de cuisiner les blettes. Merci pour ces partages.\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phanie\ndit\u00a0:\n4 f\u00e9vrier 2026 \u00e0 10 h 56 min\nSimple et savoureuse. Le blette n\u2019est pas le l\u00e9gume le plus pl\u00e9biscit\u00e9 par les enfants et l\u00e0 c\u2019est banco.\nMerci pour cette recette qui plait aux petits et grands.\nchargement\u2026\nR\u00e9pondre\n4.56 from 68 votes (\n56 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 16.0
+}

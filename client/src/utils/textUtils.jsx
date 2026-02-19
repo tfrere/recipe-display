@@ -1,26 +1,28 @@
 export const highlightMatches = (text, recipe, step) => {
   if (!text || !recipe) return text;
 
-  // Create arrays of names to match
-  const ingredientNames =
-    step.inputs
-      ?.filter((input) => input.type === "ingredient")
-      .map((input) => {
-        const ingredient = recipe.ingredients?.find(
-          (ing) => ing.id === input.ref
-        );
-        return ingredient?.name;
-      })
-      .filter(Boolean) || [];
+  let ingredientNames = [];
+  let toolNames = (step.tools || step.requires || []).filter(Boolean);
+  let stateNames = [];
 
-  const toolNames = (step.tools || []).filter(Boolean);
+  // uses[] contains ingredient IDs and state IDs
+  ingredientNames = (step.uses || [])
+    .map((ref) => {
+      const ingredient = recipe.ingredients?.find((ing) => ing.id === ref);
+      return ingredient?.name;
+    })
+    .filter(Boolean);
 
-  const stateNames = [
-    ...(step.inputs || [])
-      .filter((input) => input.type === "state")
-      .map((input) => input.ref),
-    step.output ? step.output.state : null,
-  ].filter(Boolean);
+  // States referenced in uses (those not matching ingredients)
+  stateNames = (step.uses || [])
+    .filter(
+      (ref) => !recipe.ingredients?.find((ing) => ing.id === ref)
+    );
+
+  // Add produces as state name
+  if (step.produces) {
+    stateNames.push(step.produces);
+  }
 
   // Combine all terms to match
   const terms = [...ingredientNames, ...toolNames, ...stateNames]

@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "title": "Melomakarona : Les biscuits grecs au miel, huile d'olive et orange",
+    "description": "Les Melomakarona, ces biscuits grecs au miel sont des incontournables des f\u00eates de fin d'ann\u00e9e en Gr\u00e8ce. Mais en vrai, on en trouve toute l'ann\u00e9e !",
+    "servings": 20,
+    "prepTime": "PT30M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "Greek",
+      "biscuit",
+      "honey",
+      "olive oil",
+      "orange",
+      "Christmas",
+      "winter"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Melomakarona-3-of-6.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ces biscuits se conservent facilement 10 jours dans un tupperware ferm\u00e9 \u00e0 temp\u00e9rature ambiante.",
+      "Ils se bonifient avec le temps ! Ils deviennent encore plus savoureux apr\u00e8s quelques jours de repos.",
+      "Pr\u00e9f\u00e9rez des oranges bio pour le zeste."
+    ],
+    "slug": "melomakarona-les-biscuits-grecs-au-miel-huile-d-olive-et-orange",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Melomakarona-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/01/melomakarona-les-biscuits-grecs-au-miel-huile-dolive-et-orange/",
+    "image": "images/melomakarona-les-biscuits-grecs-au-miel-huile-d-olive-et-orange.webp",
+    "createdAt": "2026-02-09T22:32:38.053828",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "totalTime": 35.5,
+    "totalCookingTime": 0.5,
+    "peakMonths": [
+      "February",
+      "January",
+      "March"
+    ],
+    "nutritionPerServing": {
+      "calories": 255.4,
+      "protein": 4.8,
+      "fat": 11.9,
+      "carbs": 33.1,
+      "fiber": 1.9,
+      "confidence": "high",
+      "resolvedIngredients": 13,
+      "matchedIngredients": 14,
+      "totalIngredients": 14,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "orange_slice",
+      "name": "tranche d'orange",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Orange slice"
+    },
+    {
+      "id": "sugar_syrup",
+      "name": "sucre",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le sirop",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 180.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "cloves_whole",
+      "name": "clous de girofle",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "cinnamon_stick",
+      "name": "b\u00e2ton de cannelle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon stick"
+    },
+    {
+      "id": "honey",
+      "name": "miel",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": 125.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "type tournesol",
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "orange_juice",
+      "name": "jus d'orange frais",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh orange juice"
+    },
+    {
+      "id": "sugar_dough",
+      "name": "sucre",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la p\u00e2te",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "cloves_ground",
+      "name": "clous de girofle moulus",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Ground cloves"
+    },
+    {
+      "id": "cinnamon_ground",
+      "name": "cannelle moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "orange_zest",
+      "name": "zeste d'une demi-orange bio",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Zest of half an organic orange"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 240.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "semolina",
+      "name": "semoule fine",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "semolina"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure chimique",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "walnuts",
+      "name": "noix concass\u00e9es",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "concass\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped nuts"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Saladier",
+    "Maryse (spatule)",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "mix_syrup_base",
+      "action": "Mettez tous les ingr\u00e9dients du sirop, sauf le miel, dans une casserole. M\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "orange_slice",
+        "sugar_syrup",
+        "water",
+        "cloves_whole",
+        "cinnamon_stick"
+      ],
+      "produces": "syrup_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_syrup",
+      "action": "Portez \u00e0 \u00e9bullition, puis baissez le feu et laissez mijoter \u00e0 petits bouillons pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sirop",
+      "uses": [
+        "syrup_base"
+      ],
+      "produces": "simmered_syrup",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "add_honey_to_syrup",
+      "action": "Retirez du feu, laissez refroidir l\u00e9g\u00e8rement, puis ajoutez le miel et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "simmered_syrup",
+        "honey"
+      ],
+      "produces": "warm_syrup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_syrup",
+      "action": "Transf\u00e9rez le sirop dans un plat froid et placez-le au r\u00e9frig\u00e9rateur. Le sirop doit \u00eatre bien froid pour la suite.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "sirop",
+      "uses": [
+        "warm_syrup"
+      ],
+      "produces": "cold_syrup",
+      "requires": [],
+      "visualCue": "bien froid"
+    },
+    {
+      "id": "mix_liquids",
+      "action": "M\u00e9langez dans un saladier tous les liquides : huile d'olive, huile v\u00e9g\u00e9tale et jus d'orange.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "olive_oil",
+        "vegetable_oil",
+        "orange_juice"
+      ],
+      "produces": "liquid_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_sugar_spices",
+      "action": "Ajoutez le sucre, les \u00e9pices et le zeste et m\u00e9langez jusqu'\u00e0 ce qu'il soit dissous.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "liquid_mixture",
+        "sugar_dough",
+        "cloves_ground",
+        "cinnamon_ground",
+        "orange_zest"
+      ],
+      "produces": "flavored_liquid",
+      "requires": [],
+      "visualCue": "sucre dissous"
+    },
+    {
+      "id": "add_dry_ingredients",
+      "action": "Ajoutez la farine, la semoule et la levure chimique. M\u00e9langez avec une maryse jusqu'\u00e0 obtenir un m\u00e9lange homog\u00e8ne, ne pas trop travailler la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "flavored_liquid",
+        "flour",
+        "semolina",
+        "baking_powder"
+      ],
+      "produces": "dough",
+      "requires": [],
+      "visualCue": "m\u00e9lange homog\u00e8ne"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 170\u00b0C.",
+      "duration": null,
+      "temperature": 170,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "dough"
+      ],
+      "produces": "preheated_oven_with_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_baking_sheet",
+      "action": "Couvrez une plaque de cuisson avec du papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "dough"
+      ],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shape_biscuits",
+      "action": "Pr\u00e9levez l'\u00e9quivalent d'une grosse cuill\u00e8re \u00e0 soupe de p\u00e2te pour chaque biscuit et formez 20 biscuits en forme d'ovale l\u00e9g\u00e8rement aplati. Disposez-les sur la plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "dough",
+        "prepared_baking_sheet"
+      ],
+      "produces": "shaped_biscuits",
+      "requires": [],
+      "visualCue": "ovale l\u00e9g\u00e8rement aplati"
+    },
+    {
+      "id": "press_with_fork",
+      "action": "Pressez l\u00e9g\u00e8rement chaque biscuit avec une fourchette pour faire des traits sur le dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "biscuits",
+      "uses": [
+        "shaped_biscuits"
+      ],
+      "produces": "patterned_biscuits",
+      "requires": [],
+      "visualCue": "traits sur le dessus"
+    },
+    {
+      "id": "bake_biscuits",
+      "action": "Enfournez pour 25min, jusqu'\u00e0 ce que les biscuits soient l\u00e9g\u00e8rement dor\u00e9s.",
+      "duration": "PT25M",
+      "temperature": 170,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "biscuits",
+      "uses": [
+        "patterned_biscuits"
+      ],
+      "produces": "baked_biscuits",
+      "requires": [
+        "preheated_oven_with_dough"
+      ],
+      "visualCue": "l\u00e9g\u00e8rement dor\u00e9s"
+    },
+    {
+      "id": "get_cold_syrup",
+      "action": "Sortez le sirop du r\u00e9frig\u00e9rateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cold_syrup"
+      ],
+      "produces": "ready_syrup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dip_biscuits",
+      "action": "D\u00e8s la sortie du four, trempez chaque biscuit encore chaud dans le sirop froid pendant environ 30 secondes.",
+      "duration": "PT30S",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "baked_biscuits",
+        "ready_syrup"
+      ],
+      "produces": "syrup_dipped_biscuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_plate",
+      "action": "D\u00e9posez les biscuits dans un plat de service ou un tupperware au choix.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "syrup_dipped_biscuits"
+      ],
+      "produces": "plated_biscuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_walnuts",
+      "action": "Saupoudrez g\u00e9n\u00e9reusement de noix concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "plated_biscuits",
+        "walnuts"
+      ],
+      "produces": "melomakarona",
+      "requires": [],
+      "visualCue": "g\u00e9n\u00e9reusement"
+    }
+  ],
+  "finalState": "melomakarona",
+  "originalText": "Melomakarona : Les biscuits grecs au miel, huile d\u2019olive et orange - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 f\u00e9vrier 2025\nMelomakarona : Les biscuits grecs au miel, huile d\u2019olive et orange\nLes Melomakarona, ces biscuits grecs au miel sont des incontournables des f\u00eates de fin d\u2019ann\u00e9e en Gr\u00e8ce. Mais en vrai, on en trouve toute l\u2019ann\u00e9e !\nTable des mati\u00e8res\n1\nLes Melomakarona, un biscuit au miel typique des f\u00eates\n2\nUne tradition gourmande\n3\nUne recette simple et savoureuse\n4\nMelomakarona : Les biscuits grecs au miel, huile d\u2019olive et orange\n5\nLes Melomakarona tirent leur nom du grec ancien et moderne\n6\nId\u00e9al pour les f\u00eates\u2026 et toute l\u2019ann\u00e9e !\nLes Melomakarona, un biscuit au miel typique des f\u00eates\nCes biscuits au miel sont des g\u00e2teaux grecs typiques. Comme dans la majorit\u00e9 de ces derniers, on les parfume \u00e0 la cannelle et aux clous de girofle.\nVous trouverez la recette des baklavas grecs juste ici\n. Puis on les plonge dans un sirop au miel, \u00e0 l\u2019orange et aux \u00e9pices.\nFinalement, on les saupoudre g\u00e9n\u00e9reusement de noix grossi\u00e8rement concass\u00e9es. Leur texture est l\u00e9g\u00e8rement sableuse, mais rendue fondante par le sirop.\nSi vous aimez les douceurs grecques traditionnelles et gourmandes, cette recette est faite pour vous ! D\u2019autant qu\u2019ils sont tr\u00e8s faciles et plut\u00f4t rapides \u00e0 pr\u00e9parer !\nUne tradition gourmande\nLes Melomakarona sont \u00e9troitement li\u00e9s aux c\u00e9l\u00e9brations de fin d\u2019ann\u00e9e en Gr\u00e8ce. Ils font partie des douceurs que l\u2019on retrouve incontestablement sur toutes les tables pendant les f\u00eates de No\u00ebl. Le mariage du miel, des \u00e9pices et de l\u2019orange leur conf\u00e8re une saveur unique et r\u00e9confortante, rappelant les desserts de grand-m\u00e8re.\nUne recette simple et savoureuse\nCe qui rend ces biscuits grecs au miel si sp\u00e9ciaux, c\u2019est leur m\u00e9thode de pr\u00e9paration. Contrairement \u00e0 d\u2019autres biscuits secs, on les plonge dans un sirop au miel directement en sortant du four, ce qui leur apporte une texture fondante irr\u00e9sistible. Avec une p\u00e2te \u00e0 base d\u2019huile d\u2019olive et de jus d\u2019orange, ils sont vraiment diff\u00e9rents de ce qu\u2019on a l\u2019habitude de manger en France. Et la touche finale : des noix concass\u00e9es qui collent aux biscuits gr\u00e2ce au sirop. Vraiment c\u2019est impossible de leur r\u00e9sister !\nMelomakarona : Les biscuits grecs au miel, huile d\u2019olive et orange\n4.52\n/5 avec\n45\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n20\nbiscuits\nIngr\u00e9dients\n1x\n2x\n3x\nPour le sirop\n1\ntranche d\u2019orange\n150\ng\nde sucre\n180\nml\nd\u2019eau\n2\nclous de girofle\n1\nb\u00e2ton de cannelle\n120\ng\nde miel\nPour les biscuits\n75\nml\nd\u2019huile d\u2019olive\n125\nml\nd\u2019huile v\u00e9g\u00e9tale neutre\ntype tournesol\n100\nml\nde jus d\u2019orange frais\n70\ng\nde sucre\n\u00bd\nc\u00e0c de clous de girofle moulus\n\u00bd\nc\u00e0c de cannelle moulue\nZeste d\u2019une demi-orange bio\nde pr\u00e9f\u00e9rence\n240\ng\nde farine\n120\ng\nde semoule fine\n\u00bc\nc\u00e0c de levure chimique\nPour finir\n60\ng\nde noix concass\u00e9es\nInstructions\nPour le sirop\nMettez tous les ingr\u00e9dients du sirop, sauf le miel, dans une casserole. M\u00e9langez.\nPortez \u00e0 \u00e9bullition, puis baissez le feu et laissez mijoter \u00e0 petits bouillons pendant 10 minutes.\nRetirez du feu, laissez refroidir l\u00e9g\u00e8rement, puis ajoutez le miel et m\u00e9langez.\nTransf\u00e9rez le sirop dans un plat froid et placez-le au r\u00e9frig\u00e9rateur. Le sirop doit \u00eatre bien froid pour la suite.\nPour les biscuits\nM\u00e9langez dans un saladier tous les liquides : huile d\u2019olive, huile v\u00e9g\u00e9tale et jus d\u2019orange.\nAjoutez le sucre, les \u00e9pices et le zeste et m\u00e9langez  jusqu\u2019\u00e0 ce qu\u2019il soit dissous.\nAjoutez la farine, la semoule et la levure chimique. M\u00e9langez avec une maryse jusqu\u2019\u00e0 obtenir un m\u00e9lange homog\u00e8ne, ne pas trop travailler la p\u00e2te.\nPr\u00e9chauffez le four \u00e0 170\u00b0C.\nCouvrez une plaque de cuisson avec du papier cuisson.\nPr\u00e9levez l\u2019\u00e9quivalent d\u2019une grosse cuill\u00e8re \u00e0 soupe de p\u00e2te pour chaque biscuit et formez 20 biscuits en forme d\u2019ovale l\u00e9g\u00e8rement aplati. Disposez-les sur la plaque.\nPressez l\u00e9g\u00e8rement chaque biscuit avec une fourchette pour faire des traits sur le dessus.\nEnfournez pour 25 \u00e0 30 minutes, jusqu\u2019\u00e0 ce que les biscuits soient l\u00e9g\u00e8rement dor\u00e9s.\nPour l\u2019assemblage\nSortez le sirop du r\u00e9frig\u00e9rateur.\nD\u00e8s la sortie du four, trempez chaque biscuit encore chaud dans le sirop froid pendant environ 30 secondes.\nD\u00e9posez les biscuits dans un plat de service ou un tupperware au choix.\nSaupoudrez g\u00e9n\u00e9reusement de noix concass\u00e9es.\nConservation\nCes biscuits se conservent facilement 10 jours dans un tupperware ferm\u00e9 \u00e0 temp\u00e9rature ambiante.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes Melomakarona tirent leur nom du grec ancien et moderne\n\u00ab\u00a0M\u00e9li\u00a0\u00bb (\u03bc\u03ad\u03bb\u03b9) signifie miel, en r\u00e9f\u00e9rence au sirop sucr\u00e9 dans lequel ces biscuits sont tremp\u00e9s.\n\u00ab\u00a0Makaria\u00a0\u00bb (\u03bc\u03b1\u03ba\u03b1\u03c1\u03af\u03b1) vient du mot \u00ab\u00a0makaros\u00a0\u00bb, qui signifie bienheureux ou b\u00e9n\u00e9diction. Ce terme \u00e9tait utilis\u00e9 dans l\u2019Antiquit\u00e9 pour d\u00e9signer des offrandes fun\u00e9raires, souvent sous forme de pains ou de douceurs, symbolisant le passage vers l\u2019au-del\u00e0.\nAvec le temps, les Melomakarona ont \u00e9volu\u00e9 pour devenir des biscuits festifs, principalement associ\u00e9s aux c\u00e9l\u00e9brations de No\u00ebl en Gr\u00e8ce. Leur nom pourrait donc se traduire par \u00ab\u00a0biscuits b\u00e9nis au miel\u00a0\u00bb, symboles de douceur, prosp\u00e9rit\u00e9 et de chance pour la nouvelle ann\u00e9e.\nId\u00e9al pour les f\u00eates\u2026 et toute l\u2019ann\u00e9e !\nBien qu\u2019habituellement associ\u00e9s \u00e0 No\u00ebl, les Melomakarona se d\u00e9gustent volontiers toute l\u2019ann\u00e9e. Tant qu\u2019on trouve des oranges. D\u2019ailleurs, comme on utilise le jus et le zeste, pr\u00e9f\u00e9rez des oranges bio !\nCes biscuits sont faciles \u00e0 conserver, ils se bonifient avec le temps ! Ils deviennent encore plus savoureux apr\u00e8s quelques jours de repos. Ils accompagnent \u00e0 merveille un caf\u00e9 ou un th\u00e9, et sont parfaits \u00e0 offrir en cadeau gourmand. A bon entendeur !\nAlors, pr\u00eats \u00e0 vous laisser tenter par ces biscuits traditionnels grecs ? Une bouch\u00e9e, et vous comprendrez pourquoi ils sont tant appr\u00e9ci\u00e9s !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCookies Biscuits et Mignardises\n,\nHiver\n,\nOrange\nP\u00e2t\u00e9 aux champignons et noix : l\u2019alternative v\u00e9g\u00e9tarienne gourmande au p\u00e2t\u00e9 traditionnel\nSoupe de courge, lentilles corail & quinoa : Un voyage r\u00e9confortant aux saveurs \u00e9pic\u00e9es\n4.52 from 45 votes (\n45 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.5
+}

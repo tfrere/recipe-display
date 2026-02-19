@@ -1,0 +1,378 @@
+{
+  "metadata": {
+    "title": "Soupe fa\u00e7on Pastina italienne : une recette r\u00e9gressive et r\u00e9confortante",
+    "description": "La soupe fa\u00e7on pastina italienne est id\u00e9ale pour ces journ\u00e9es fra\u00eeches o\u00f9 l'on recherche un plat nourrissant et qui r\u00e9chauffe les c\u0153urs. Un d\u00e9lice simple, rassasiant et d\u00e9licieux, qui ravira toute la famille !",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT27M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe",
+      "v\u00e9g\u00e9tarien",
+      "hiver",
+      "r\u00e9confortant",
+      "italien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/soupe-pastina-1-of-4.jpg",
+    "nationality": "Italian",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Traditionnellement, elle est donn\u00e9e aux enfants lorsqu'ils sont enrhum\u00e9s, car elle est douce et facile \u00e0 dig\u00e9rer.",
+      "Pour une version v\u00e9g\u00e9talienne, vous pouvez remplacer le parmesan par de la levure malt\u00e9e, qui apportera un go\u00fbt l\u00e9g\u00e8rement fromager, ou opter pour du grana padano (n'oubliez pas de v\u00e9rifier qu'il ne contient pas de pr\u00e9sure animale).",
+      "Elle peut \u00eatre servie en entr\u00e9e ou comme plat principal, selon vos envies."
+    ],
+    "slug": "soupe-facon-pastina-italienne-une-recette-regressive-et-reconfortante",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/soupe-pastina-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/12/soupe-facon-pastina-italienne/",
+    "image": "images/soupe-facon-pastina-italienne-une-recette-regressive-et-reconfortante.webp",
+    "createdAt": "2026-02-09T22:33:48.047817",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 27.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 300.5,
+      "protein": 13.3,
+      "fat": 18.2,
+      "carbs": 22.7,
+      "fiber": 3.3,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 11,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "celery",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuille",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "pasta",
+      "name": "petites p\u00e2tes",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "piombis, perles ou \u00e9toiles",
+      "optional": false,
+      "name_en": "small pasta"
+    },
+    {
+      "id": "canned_tomatoes",
+      "name": "tomates concass\u00e9es en conserve",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned diced tomatoes"
+    },
+    {
+      "id": "parmesan_rind",
+      "name": "cro\u00fbte de parmesan",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": true,
+      "name_en": "parmesan rind"
+    },
+    {
+      "id": "bouillon_cube",
+      "name": "bouillon cube",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bouillon cube"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.5,
+      "unit": "l",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "grated_parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "plus ou moins",
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur (facultatif)",
+    "Grande casserole"
+  ],
+  "steps": [
+    {
+      "id": "chop_vegetables",
+      "action": "Hachez finement l'oignon, la carotte, le c\u00e9leri et l'ail \u00e0 l'aide d'un couteau ou d'un mixeur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "carrot",
+        "celery",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Dans une grande casserole, chauffez l'huile d'olive \u00e0 feu moyen. Ajoutez les l\u00e9gumes hach\u00e9s, la branche de thym et la feuille de laurier. Faites revenir jusqu'\u00e0 ce que les l\u00e9gumes commencent \u00e0 dorer.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil",
+        "chopped_vegetables",
+        "thyme",
+        "bay_leaf"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": "l\u00e9gumes commencent \u00e0 dorer"
+    },
+    {
+      "id": "cook_tomato_paste",
+      "action": "Incorporez le concentr\u00e9 de tomates et faites cuire encore.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "tomato_paste"
+      ],
+      "produces": "tomato_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids_and_pasta",
+      "action": "Versez les p\u00e2tes, les tomates en conserve, l'eau, le bouillon cube, et ajoutez la cro\u00fbte de parmesan si vous en avez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_base",
+        "pasta",
+        "canned_tomatoes",
+        "water",
+        "bouillon_cube",
+        "parmesan_rind"
+      ],
+      "produces": "soup_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_soup",
+      "action": "M\u00e9langez bien et laissez cuire \u00e0 petits bouillons jusqu'\u00e0 ce que les p\u00e2tes soient al dente.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "soup_base"
+      ],
+      "produces": "cooked_soup",
+      "requires": [],
+      "visualCue": "p\u00e2tes al dente"
+    },
+    {
+      "id": "add_cheese_and_season",
+      "action": "Ajoutez le parmesan r\u00e2p\u00e9, m\u00e9langez et ajustez l'assaisonnement avec du sel et du poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_soup",
+        "grated_parmesan",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_soup",
+      "action": "Servez la soupe bien chaude, avec un filet d'huile d'olive et une bonne dose de parmesan r\u00e2p\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_soup",
+        "olive_oil",
+        "grated_parmesan"
+      ],
+      "produces": "soupe_pastina_italienne",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_pastina_italienne",
+  "originalText": "Soupe fa\u00e7on Pastina : une recette r\u00e9gressive et r\u00e9confortante\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 f\u00e9vrier 2025\nSoupe fa\u00e7on Pastina italienne : une recette r\u00e9gressive et r\u00e9confortante\nLa\nsoupe fa\u00e7on pastina italienne\nest id\u00e9ale pour ces journ\u00e9es fra\u00eeches o\u00f9 l\u2019on recherche un plat nourrissant et qui r\u00e9chauffe les c\u0153urs. Vous avez envie d\u2019un plat chaud et facile \u00e0 pr\u00e9parer pour une soir\u00e9e cosy \u00e0 la maison ? D\u00e9couvrez cette recette r\u00e9gressive et r\u00e9confortante, inspir\u00e9e de la c\u00e9l\u00e8bre pastina italienne, souvent servie aux enfants enrhum\u00e9s. Un d\u00e9lice simple, rassasiant et d\u00e9licieux, qui ravira toute la famille !\nTable des mati\u00e8res\n1\nPourquoi je vous propose cette soupe fa\u00e7on Pastina ?\n2\nLes raisons pour lesquelles tester cette recette r\u00e9confortante\n3\nSoupe fa\u00e7on Pastina\n4\nLes ingr\u00e9dients cl\u00e9s : comment les adapter \u00e0 vos go\u00fbts ?\n5\nUne soupe parfaite pour toute la famille\n6\nLes recettes similaires \u00e0 d\u00e9couvrir\nPourquoi je vous propose cette soupe fa\u00e7on Pastina ?\nLa\nsoupe pastina\nest un classique en Italie. Traditionnellement, elle est donn\u00e9e aux enfants lorsqu\u2019ils sont enrhum\u00e9s, car elle est douce et facile \u00e0 dig\u00e9rer. J\u2019ai voulu revisiter cette recette pour apporter une touche personnelle tout en conservant la chaleur et la r\u00e9confort que ce plat procure. C\u2019est une recette id\u00e9ale pour les journ\u00e9es fra\u00eeches, ou m\u00eame lorsqu\u2019on a besoin de se sentir entour\u00e9 de chaleur.\nLes raisons pour lesquelles tester cette recette r\u00e9confortante\nCette soupe est plus qu\u2019un simple plat r\u00e9confortant, elle coche toutes les cases pour une recette facile, rapide et adaptable :\nR\u00e9confortante et nourrissante\n: Son bouillon chaud et parfum\u00e9 apaise instantan\u00e9ment, id\u00e9al pour un repas cocooning.\nFacile et rapide \u00e0 pr\u00e9parer\n: Quelques ingr\u00e9dients de base, une casserole, et en peu de temps, vous avez un plat d\u00e9licieux et fait maison.\nPersonnalisable selon vos ingr\u00e9dients\n: Vous pouvez utiliser diff\u00e9rentes sortes de petites p\u00e2tes et varier le bouillon. Il est aussi possible de choisir l\u2019option fromage qui vous convient (parmesan, grana padano sans pr\u00e9sure animale ou levure malt\u00e9e pour une version v\u00e9g\u00e9talienne).\nSoupe fa\u00e7on Pastina\n4.51\n/5 avec\n69\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon\n1\ncarotte\n1\nbranche de c\u00e9leri\n4\ngousses d\u2019ail\n1\nbranche de thym\n1\nfeuille de laurier\n70\ng\nde concentr\u00e9 de tomate\n200\ng\nde petites p\u00e2tes\npiombis, perles ou \u00e9toiles\n400\ng\nde tomates concass\u00e9es en conserve\n1\ncro\u00fbte de parmesan\nfacultatif\n1\nbouillon cube\n1,5\nl\nd\u2019eau environ\n100\ng\nde parmesan r\u00e2p\u00e9\nplus ou moins\n2\nc\u00e0s d\u2019huile d\u2019olive\nSel et poivre\nau go\u00fbt\nInstructions\nHachez finement l\u2019oignon, la carotte, le c\u00e9leri et l\u2019ail \u00e0 l\u2019aide d\u2019un couteau ou pour aller plus vite, d\u2019un mixeur.\nDans une grande casserole, chauffez l\u2019huile d\u2019olive \u00e0 feu moyen. Ajoutez les l\u00e9gumes hach\u00e9s, la branche de thym et la feuille de laurier. Faites revenir 7-8min, jusqu\u2019\u00e0 ce que les l\u00e9gumes commencent \u00e0 dorer.\nIncorporez le concentr\u00e9 de tomates et faites cuire encore 3 \u00e0 4 min.\nVersez les p\u00e2tes, les tomates en conserve, l\u2019eau, le bouillon cube, et ajoutez la cro\u00fbte de parmesan si vous en avez.\nM\u00e9langez bien et laissez cuire \u00e0 petits bouillons pendant 10-15 min, jusqu\u2019\u00e0 ce que les p\u00e2tes soient al dente. Elles vont continuer \u00e0 cuire dans la soupe chaude, donc pas la peine d\u2019attendre qu\u2019elles soient fondantes pour \u00e9teindre le feu.\nAjoutez le parmesan r\u00e2p\u00e9, m\u00e9langez et ajustez l\u2019assaisonnement avec du sel et du poivre.\nServez la soupe bien chaude, avec un filet d\u2019huile d\u2019olive et une bonne dose de parmesan r\u00e2p\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes ingr\u00e9dients cl\u00e9s : comment les adapter \u00e0 vos go\u00fbts ?\nLes ingr\u00e9dients de cette soupe pastina sont simples, mais chaque \u00e9l\u00e9ment joue un r\u00f4le essentiel pour cr\u00e9er ce d\u00e9licieux m\u00e9lange r\u00e9confortant. Prenons un moment pour d\u00e9tailler les ingr\u00e9dients cl\u00e9s et explorer comment vous pouvez les adapter pour personnaliser votre soupe selon vos go\u00fbts.\nLes ingr\u00e9dients principaux de cette soupe sont les petites p\u00e2tes\n, comme les fregolas, l\u2019orzo, ou les piombis (comme c\u2019est le cas ici). Elles sont petites et cuisent rapidement, ce qui les rend parfaites pour une soupe rapide. Si vous n\u2019avez pas ces p\u00e2tes sp\u00e9cifiques sous la main, ne vous inqui\u00e9tez pas ! Vous pouvez remplacer les piombis par d\u2019autres petites p\u00e2tes si vous le souhaitez.\nPour le\nparmesan\n, attention : il contient de la pr\u00e9sure animale, donc il n\u2019est pas v\u00e9g\u00e9tarien. Si vous cherchez une version v\u00e9g\u00e9talienne, vous pouvez remplacer le parmesan par de la\nlevure malt\u00e9e\n, qui apportera un go\u00fbt l\u00e9g\u00e8rement fromager, ou opter pour du\ngrana padano\n(n\u2019oubliez pas de v\u00e9rifier qu\u2019il ne contient pas de pr\u00e9sure animale).\nUne soupe parfaite pour toute la famille\nCette soupe fa\u00e7on pastina n\u2019est pas seulement r\u00e9confortante, elle est aussi id\u00e9ale pour toute la famille. Les enfants l\u2019adoreront pour sa douceur et sa simplicit\u00e9, tandis que les adultes appr\u00e9cieront sa chaleur et sa capacit\u00e9 \u00e0 r\u00e9chauffer les c\u0153urs lors de journ\u00e9es fra\u00eeches. C\u2019est un plat universel qui s\u2019adapte \u00e0 tous les go\u00fbts et qui peut facilement \u00eatre servi \u00e0 tout moment de la journ\u00e9e, que ce soit pour un d\u00e9jeuner rapide ou un d\u00eener en toute simplicit\u00e9.\nLes recettes similaires \u00e0 d\u00e9couvrir\nSi vous aimez cette soupe, pourquoi ne pas essayer d\u2019autres recettes r\u00e9confortantes sur le blog ? Voici quelques suggestions qui pourraient vous plaire :\n10 recettes de soupe maison pour r\u00e9chauffer votre hiver\nSoupe de butternut et haricots blancs, picada de noix\nSoupe de brocoli et cheddar gratin\u00e9e\nLa soupe fa\u00e7on pastina italienne est le genre de plat simple et r\u00e9confortant qui fait toute la diff\u00e9rence lors des journ\u00e9es fra\u00eeches. Facile \u00e0 pr\u00e9parer et adaptable \u00e0 vos envies, elle apporte chaleur et confort en un rien de temps. Cette soupe pastina est id\u00e9ale pour un d\u00eener rapide en semaine, mais elle convient \u00e9galement parfaitement aux repas du week-end en famille o\u00f9 l\u2019on souhaite se d\u00e9tendre autour d\u2019un plat simple, mais d\u00e9licieux. Elle peut \u00eatre servie en entr\u00e9e ou comme plat principal, selon vos envies.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nCarotte\n,\nHiver\n,\nOignon\n,\nSoupes\n,\nTomate\nTags:\nsoupe\n,\nv\u00e9g\u00e9tarien\nCubes Immunit\u00e9 Gingembre-Curcuma : Le shot anti-fatigue maison !\nSoupe au curry rouge et cacahu\u00e8te : des saveurs qui nous rappellent la Tha\u00eflande\n4.51 from 69 votes (\n69 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

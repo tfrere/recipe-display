@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "title": "Coleslaw maison",
+    "description": "Une recette facile de coleslaw maison, avec option pour mayonnaise maison (vegan ou aux œufs).",
+    "servings": 1,
+    "prepTime": "PT20M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "starter",
+    "tags": [
+      "coleslaw maison",
+      "coleslaw vegan",
+      "salade coleslaw",
+      "Automne",
+      "Hiver",
+      "Choux"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/11/Coleslaw.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ce n'est sûrement pas la recette la plus diététique du blog, mais elle a l'avantage indéniable d'être facile à réaliser et d'être trop bonne !",
+      "Consommez la mayonnaise maison dans les 24h."
+    ],
+    "slug": "coleslaw-maison",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/11/Coleslaw.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/11/19/coleslaw-maison/",
+    "image": "images/coleslaw-maison.jpg",
+    "createdAt": "2026-02-09T20:09:57.206723",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 1136.3,
+      "protein": 11.5,
+      "fat": 117.3,
+      "carbs": 11.3,
+      "fiber": 2.6,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 90g",
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "white_cabbage",
+      "name": "chou blanc",
+      "quantity": 0.25,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 250g",
+      "optional": false,
+      "name_en": "white cabbage"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "hachés",
+      "notes": "quelques brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "apple_cider_vinegar",
+      "name": "vinaigre de cidre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "egg_yolk",
+      "name": "jaune d'œuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "mustard",
+      "name": "moutarde fine",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dijon mustard"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "apple_cider_vinegar_mayo",
+      "name": "vinaigre de cidre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    }
+  ],
+  "tools": [
+    "Mandoline (optionnelle)",
+    "Batteur électrique ou fouet manuel"
+  ],
+  "steps": [
+    {
+      "id": "start_mayonnaise",
+      "action": "Dans un bol, mettez le jaune d'œuf et la moutarde. Commencez à fouetter tout en versant l'huile en fin filet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise_maison",
+      "uses": [
+        "egg_yolk",
+        "mustard",
+        "sunflower_oil"
+      ],
+      "produces": "emulsifying_mayo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "whip_mayonnaise",
+      "action": "Fouettez constamment jusqu'à incorporation complète de l'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise_maison",
+      "uses": [
+        "emulsifying_mayo"
+      ],
+      "produces": "thick_mayonnaise",
+      "requires": [],
+      "visualCue": "incorporation complète de l'huile"
+    },
+    {
+      "id": "season_mayonnaise",
+      "action": "Ajoutez le vinaigre, le sel et le poivre, et mélangez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "mayonnaise_maison",
+      "uses": [
+        "thick_mayonnaise",
+        "apple_cider_vinegar_mayo",
+        "salt",
+        "pepper"
+      ],
+      "produces": "finished_mayonnaise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_mayonnaise",
+      "action": "Réservez au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "mayonnaise_maison",
+      "uses": [
+        "finished_mayonnaise"
+      ],
+      "produces": "chilled_mayonnaise",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_carrot",
+      "action": "Râpez la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "carrot"
+      ],
+      "produces": "grated_carrot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_cabbage",
+      "action": "Émincez très finement le chou blanc (au couteau ou à la mandoline).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "white_cabbage"
+      ],
+      "produces": "sliced_cabbage",
+      "requires": [],
+      "visualCue": "très finement"
+    },
+    {
+      "id": "chop_chives",
+      "action": "Hachez la ciboulette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "chives"
+      ],
+      "produces": "chopped_chives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_coleslaw",
+      "action": "Mettez tout dans un saladier. Ajoutez la mayonnaise, le vinaigre, salez et poivrez et mélangez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "coleslaw",
+      "uses": [
+        "grated_carrot",
+        "sliced_cabbage",
+        "chopped_chives",
+        "chilled_mayonnaise",
+        "apple_cider_vinegar",
+        "salt",
+        "pepper"
+      ],
+      "produces": "coleslaw_maison",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "coleslaw_maison",
+  "originalText": "Coleslaw maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 novembre 2020\nColeslaw maison\nVous avez déjà tenté de faire votre coleslaw maison ?\nPour moi, c’était vraiment le type de salade que je ne mangeais qu’au restaurant, avec\nun burger\nou en accompagnement d’un plat “american style” !\nEt puis un jour j’ai décidé de regarder comment c’était fait, et en fait c’est tellement facile que c’en est presque ridicule !\nDu chou émincé très finement, de la carotte râpée … et de la mayonnaise ! Vegan ou pas !\nCe n’est sûrement pas la recette la plus diététique du blog, mais elle a l’avantage indéniable d’être facile à réaliser et d’être trop bonne ! Qui n’aime pas le coleslaw, quoi !\nColeslaw maison\nNatacha\n4.45\n/5 avec\n100\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps total\n10\nminutes\nmin\nIngrédients\npour 1 saladier de coleslaw\n1\ncarotte\nenv 90g\n¼\nde chou blanc\nenv 250g\nquelques brins de ciboulette\n100\ng\nde mayonnaise\n1\nc-à-s de vinaigre de cidre\nsel\npoivre\npour faire votre mayonnaise maison\n1\njaune d’œuf\n1\nc-à-s de moutarde fine\n100\nml\nd’huile de tournesol\n1\nc-à-c de vinaigre de cidre\nsel\npoivre\nInstructions\nSi vous faites la mayo vous-même, vous pouvez suivre cette recette pour une\nmayo vegan\n, sinon, pour une mayo aux œufs, voici les étapes :\nDans un bol, mettez le jaune d’œuf et la moutarde. Commencez à fouetter (ça marche très bien avec un batteur électrique, ou un fouet manuel) tout en versant l’huile en fin filet.\nFouettez constamment jusqu’à incorporation complète de l’huile.\nAjoutez le vinaigre, le sel et le poivre, et mélangez.\nRéservez au frais, et consommez dans les 24h.\nPour le coleslaw\nRâpez la carotte.\nÉmincez très finement le chou blanc (au couteau ou à la mandoline).\nHachez la ciboulette.\nMettez tout dans un saladier. Ajoutez la mayonnaise, le vinaigre, salez et poivrez et mélangez.\nEt voilà ! Rien de plus simple !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChoux\n,\nHiver\n,\nRecettes Salées\n,\nSalades\nTags:\ncoleslaw maison\n,\ncoleslaw vegan\n,\nsalade coleslaw\nCrumble aux Coings\nPetits Pains Briochés Vegan\n2 thoughts on “Coleslaw maison”\nDim\ndit :\n25 novembre 2020 à 8 h 11 min\ntrès bonne cette petite recette, comme d’hab soit dit en passant\nchargement…\nRépondre\nFree The Pickle\ndit :\n29 novembre 2020 à 16 h 58 min\nMerci Dimiglace 🙂\nchargement…\nRépondre\n4.45 from 100 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

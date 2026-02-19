@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "title": "\u00c9pinards sauce soja et s\u00e9same express : la recette minute pleine de go\u00fbt",
+    "description": "Une recette express aux saveurs asiatiques, pr\u00eate en moins de 10 minutes. Des \u00e9pinards saisis \u00e0 la po\u00eale, relev\u00e9s d'une sauce au soja et \u00e0 l'huile de s\u00e9same.",
+    "servings": 1,
+    "prepTime": "PT5M",
+    "cookTime": "PT7M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "v\u00e9g\u00e9tarien",
+      "wok",
+      "\u00e9pinards",
+      "express"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/epinards-sauce-soja-1-of-8.jpg",
+    "nationality": "asian",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Peut \u00eatre pr\u00e9par\u00e9e avec des \u00e9pinards frais ou surgel\u00e9s.",
+      "Pour adoucir l'amertume, blanchir les \u00e9pinards 1 minute dans l'eau bouillante, puis les plonger dans l'eau froide.",
+      "Se sert avec du riz et un \u0153uf au plat pour un repas complet.",
+      "Variantes possibles : ajouter du gingembre r\u00e2p\u00e9, utiliser des feuilles de blettes ou des fanes de radis."
+    ],
+    "slug": "epinards-sauce-soja-et-sesame-express-la-recette-minute-pleine-de-gout",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/epinards-sauce-soja-1-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/05/14/epinards-sauce-soja-sesame/",
+    "image": "images/epinards-sauce-soja-et-sesame-express-la-recette-minute-pleine-de-gout.webp",
+    "createdAt": "2026-02-09T22:50:50.814062",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 7.0,
+    "totalCookingTime": 7.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 708.3,
+      "protein": 36.1,
+      "fat": 52.2,
+      "carbs": 41.4,
+      "fiber": 21.2,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "spinach",
+      "name": "\u00e9pinards frais",
+      "quantity": 800.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "lav\u00e9s et \u00e9goutt\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Spinach"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "sesame_oil",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja tamari",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    }
+  ],
+  "tools": [
+    "Wok ou grande po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "toast_sesame_seeds",
+      "action": "Dans une grande po\u00eale ou un wok bien chaud, faites griller les graines de s\u00e9same \u00e0 sec pendant 2min. R\u00e9servez.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sesame_seeds"
+      ],
+      "produces": "toasted_sesame_seeds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_garlic",
+      "action": "Versez l'huile de tournesol dans la po\u00eale, ajoutez l'ail press\u00e9. Faites revenir \u00e0 feu moyen pendant 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sunflower_oil",
+        "garlic"
+      ],
+      "produces": "sauteed_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_spinach",
+      "action": "Ajoutez les \u00e9pinards. Faites-les sauter jusqu'\u00e0 ce qu'ils r\u00e9duisent, environ 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spinach",
+        "sauteed_garlic"
+      ],
+      "produces": "sauteed_spinach",
+      "requires": [],
+      "visualCue": "r\u00e9duits"
+    },
+    {
+      "id": "add_sauce",
+      "action": "Hors du feu, ajoutez l'huile de s\u00e9same et la sauce soja. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_spinach",
+        "sesame_oil",
+        "soy_sauce"
+      ],
+      "produces": "spinach_with_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnish_and_serve",
+      "action": "Parsemez des graines de s\u00e9same grill\u00e9es r\u00e9serv\u00e9es et servez chaud.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spinach_with_sauce",
+        "toasted_sesame_seeds"
+      ],
+      "produces": "epinards_sauce_soja_sesame",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "epinards_sauce_soja_sesame",
+  "originalText": "\u00c9pinards sauce soja et s\u00e9same, recette v\u00e9g\u00e9tarienne ultra rapide\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 mai 2025\n\u00c9pinards sauce soja et s\u00e9same express : la recette minute pleine de go\u00fbt\nVous cherchez une id\u00e9e simple et rapide pour cuisiner les \u00e9pinards ? Cette recette express aux saveurs asiatiques est l\u2019une de mes pr\u00e9f\u00e9r\u00e9es. Des feuilles juste tomb\u00e9es \u00e0 la po\u00eale, relev\u00e9es d\u2019une sauce au soja et \u00e0 l\u2019huile de s\u00e9same : c\u2019est pr\u00eat en moins de 10 minutes, et pourtant \u00e7a ne manque pas de caract\u00e8re.\nAvec un bol de riz bien chaud et un \u0153uf au plat, vous obtenez un repas du quotidien \u00e0 la fois nourrissant et r\u00e9confortant. Le genre de plat qui ne demande ni technique, ni planification, mais qui r\u00e9veille les papilles sans en faire trop. V\u00e9g\u00e9tal, rapide, savoureux \u2014 mais surtout accessible.\nTable des mati\u00e8res\n1\nPourquoi j\u2019adore ces \u00e9pinards sauce soja & s\u00e9same ?\n2\n\u00c9pinards sauce soja & s\u00e9same\n3\nCe qu\u2019il te faut, et ce que tu peux adapter\n4\nL\u2019astuce anti-amertume\n5\nComment les servir ?\n6\nPour un petit boost nutrition\n7\nD\u2019autres id\u00e9es express \u00e0 tester\n8\nEn r\u00e9sum\u00e9, les \u00e9pinards sauce soja & s\u00e9same express\nPourquoi j\u2019adore ces \u00e9pinards sauce soja & s\u00e9same ?\nLes \u00e9pinards, on les aime ou on les boude. Trop verts, trop mous, trop fades ? Peut-\u00eatre. Mais pr\u00e9par\u00e9s comme \u00e7a \u2014 juste saisis, bien assaisonn\u00e9s, et servis avec une base neutre comme le riz \u2014 ils deviennent carr\u00e9ment addictifs.\nCe que j\u2019aime dans cette version, c\u2019est sa simplicit\u00e9 :\nElle demande tr\u00e8s peu d\u2019ingr\u00e9dients\nElle est pr\u00eate en moins de 10 minutes\nElle fonctionne aussi bien avec des \u00e9pinards frais que surgel\u00e9s\nEt elle peut m\u00eame sauver un reste de riz froid ou accompagner un poisson grill\u00e9\nC\u2019est typiquement le genre de recette que je pr\u00e9pare sans r\u00e9fl\u00e9chir, quand je veux bien manger sans passer des heures en cuisine.\n\u00c9pinards sauce soja & s\u00e9same\n4.41\n/5 avec\n37\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n3\nminutes\nmin\nPortions\n1\npersonne\nIngr\u00e9dients\n1x\n2x\n3x\n2\nc\u00e0s de graines de s\u00e9same\n4\ngousses d\u2019ail\n800\ng\nd\u2019\u00e9pinards frais\n1\nc\u00e0s d\u2019huile de tournesol\n1\nc\u00e0s d\u2019huile de s\u00e9same\n4\nc\u00e0s de sauce soja tamari\nInstructions\nDans une grande po\u00eale ou un wok bien chaud, faites griller les graines de s\u00e9same quelques minutes \u00e0 sec. R\u00e9servez.\nVersez l\u2019huile de tournesol dans la po\u00eale, ajoutez l\u2019ail press\u00e9. Faites revenir 2 min \u00e0 feu moyen.\nAjoutez les \u00e9pinards lav\u00e9s et \u00e9goutt\u00e9s. Faites-les sauter jusqu\u2019\u00e0 ce qu\u2019ils r\u00e9duisent.\nHors du feu, ajoutez l\u2019huile de s\u00e9same et la sauce soja. M\u00e9langez bien.\nParsemez les graines de s\u00e9same grill\u00e9es et servez chaud.\nServez avec du riz et, si vous le souhaitez, un \u0153uf au plat par personne.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nCe qu\u2019il te faut, et ce que tu peux adapter\nTout repose ici sur quelques ingr\u00e9dients simples, mais bien choisis. Une poign\u00e9e d\u2019\u00e9pinards frais suffit \u00e0 cr\u00e9er la base. On les fait sauter \u00e0 feu vif avec un peu d\u2019ail (et si vous voulez, un peu de gingembre r\u00e2p\u00e9 pour relever le tout), puis on ajoute un trait de sauce soja et quelques gouttes d\u2019huile de s\u00e9same. Le tout est pr\u00eat en un clin d\u2019\u0153il, mais les saveurs sont bien l\u00e0.\nCe que j\u2019aime avec cette recette, c\u2019est qu\u2019elle accepte les d\u00e9tours :\nPas d\u2019\u00e9pinards sous la main ? Essayez avec des feuilles de blettes ou m\u00eame des fanes de radis.\nPour plus de croquant ? Ajoute une poign\u00e9e de graines de s\u00e9same grill\u00e9es juste avant de servir.\nEncore plus de saveur ? Vous pouvez ajoute du gingembre !\nPas besoin de vous prendre la t\u00eate avec les quantit\u00e9s : adaptez selon ce que vous avez dans votre frigo, votre bol, votre envie du jour.\nL\u2019astuce anti-amertume\nCertains trouvent que les \u00e9pinards ont un petit go\u00fbt terreux ou trop marqu\u00e9. Si c\u2019est votre cas, une astuce toute simple : les blanchir 1 minute dans de l\u2019eau bouillante, puis les plonger dans l\u2019eau froide. \u00c7a adoucit leur amertume tout en pr\u00e9servant leur belle couleur verte.\nJe le fais surtout quand les feuilles sont un peu grosses ou plus \u00e2g\u00e9es, mais ce n\u2019est pas obligatoire. \u00c0 vous de voir selon le go\u00fbt et le temps que vous avez devant vous.\nComment les servir ?\nCette po\u00eal\u00e9e d\u2019\u00e9pinards est un vrai cam\u00e9l\u00e9on du frigo. Elle se glisse partout, accompagne tout, et se transforme selon vos envies :\n\u00c0 c\u00f4t\u00e9 d\u2019un bol de riz blanc ou complet\nAvec un \u0153uf au plat ou un \u0153uf mollet, pour un plat v\u00e9g\u00e9tarien rapide\nEn accompagnement de tofu saut\u00e9\nGliss\u00e9e dans un wrap, une galette sal\u00e9e ou une assiette de nouilles\nC\u2019est un petit plat passe-partout, mais fait toujours son effet.\nPour un petit boost nutrition\nLes \u00e9pinards sont riches en fer, magn\u00e9sium, fibres et vitamine K. C\u2019est un l\u00e9gume feuillu souvent boud\u00e9, et pourtant tr\u00e8s int\u00e9ressant d\u2019un point de vue nutritionnel, surtout quand on \u00e9vite de trop le cuire.\nLe combo sauce soja + huile de s\u00e9same vient lui apporter du go\u00fbt et un peu de gras bon, sans alourdir. R\u00e9sultat : une po\u00eal\u00e9e ultra digeste, pleine de go\u00fbt et bonne pour le corps. C\u2019est simple, mais \u00e7a coche toutes les cases.\nD\u2019autres id\u00e9es express \u00e0 tester\nVous aimez ce genre de recettes simples, rapides et pleines de go\u00fbt ? Voici d\u2019autres plats du quotidien \u00e0 pr\u00e9parer en quelques minutes, sans sacrifier le plaisir :\nNouilles express sauce miso-cacahu\u00e8te\nDes nouilles r\u00e9confortantes pr\u00eates en 10 minutes, avec une sauce cr\u00e9meuse et pleine d\u2019umami. Parfait quand vous voulez manger chaud, bon et rapide.\nQuesadillas aux \u00e9pinards et haricots rouges\nUne version v\u00e9g\u00e9tarienne nourrissante, croustillante \u00e0 l\u2019ext\u00e9rieur, fondante \u00e0 l\u2019int\u00e9rieur. Id\u00e9ale pour un d\u00eener sans prise de t\u00eate.\nVermicelles saut\u00e9s express\nUn plat minute qui se pr\u00e9pare avec les fonds de frigo : quelques l\u00e9gumes, des vermicelles de riz et une sauce bien dos\u00e9e \u2014 rapide, adaptable, efficace.\nEn r\u00e9sum\u00e9, les \u00e9pinards sauce soja & s\u00e9same express\nUne recette toute simple, mais qui ne manque pas de charme : rapide, \u00e9conomique, v\u00e9g\u00e9tale et pleine de go\u00fbt. Elle prouve qu\u2019on peut cuisiner les l\u00e9gumes du quotidien autrement, sans passer des heures en cuisine, et sans compromis sur le plaisir.\nSi vous voulez cuisiner plus de vert sans vous compliquer la vie, cette po\u00eal\u00e9e d\u2019\u00e9pinards \u00e0 la sauce soja et au s\u00e9same est une valeur s\u00fbre. \u00c0 tester, puis \u00e0 refaire\u2026 encore et encore.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nEpinards\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nWok\nTags:\nvegan\n,\nv\u00e9g\u00e9tarien\nFrites de carotte au parmesan : la recette express qui croustille\nSeskoulopita : pita grecque aux blettes, croustillante et parfum\u00e9e\n3 thoughts on \u201c\u00c9pinards sauce soja et s\u00e9same express : la recette minute pleine de go\u00fbt\u201d\nSandra\ndit\u00a0:\n17 mai 2025 \u00e0 19 h 58 min\nJe vais certainement tester \u00e7a prochainement, avec le petit bout de gingembre qu\u2019il me reste. Merci pour toutes ces bonnes id\u00e9es !\nchargement\u2026\nR\u00e9pondre\nVictoire\ndit\u00a0:\n21 mai 2025 \u00e0 13 h 06 min\nD\u00e9licieux ! Ca marche aussi avec les fanes de radis juste blanchies pour une version anti-gaspi !\nchargement\u2026\nR\u00e9pondre\nRehoboth\ndit\u00a0:\n31 juillet 2025 \u00e0 18 h 18 min\nNice soja sesame\nchargement\u2026\nR\u00e9pondre\n4.41 from 37 votes (\n36 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

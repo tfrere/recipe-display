@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "title": "Cr\u00eapes au cl\u00e9mentine curd",
+    "description": "Une recette gourmande de cr\u00eapes accompagn\u00e9es d'une cr\u00e8me onctueuse \u00e0 la cl\u00e9mentine, une alternative douce et fruit\u00e9e au lemon curd.",
+    "servings": 10,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "id\u00e9e de dessert fruit",
+      "cr\u00eapes",
+      "cl\u00e9mentine",
+      "curd"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Crepes-au-clementine-curd.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le curd peut \u00eatre conserv\u00e9 au r\u00e9frig\u00e9rateur jusqu'\u00e0 2 semaines.",
+      "Pour une p\u00e2te bien lisse sans grumeaux, vous pouvez utiliser un mixeur plongeant."
+    ],
+    "slug": "crepes-au-clementine-curd",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Crepes-au-clementine-curd.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/23/crepes-clementine-curd/",
+    "image": "images/crepes-au-clementine-curd.webp",
+    "createdAt": "2026-02-09T22:35:42.661564",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 68.0,
+    "totalCookingTime": 8.0,
+    "nutritionPerServing": {
+      "calories": 258.7,
+      "protein": 8.4,
+      "fat": 10.9,
+      "carbs": 30.9,
+      "fiber": 0.8,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "clementine_juice",
+      "name": "jus de cl\u00e9mentines",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "clementine juice"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "egg_yolk",
+      "name": "jaune d'oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolk"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "vanilla_sugar",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "sugar_tbsp",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "eggs_crepes",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 500.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "melted_butter",
+      "name": "beurre fondu",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "melted butter"
+    },
+    {
+      "id": "butter_for_cooking",
+      "name": "beurre",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "chinois",
+    "casserole en acier inoxydable",
+    "maryse",
+    "fouet",
+    "po\u00eale \u00e0 cr\u00eapes",
+    "mixeur plongeant (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "juice_clementines",
+      "action": "Presser les cl\u00e9mentines pour obtenir 75 ml de jus. Passer le jus dans un chinois pour obtenir un jus bien lisse. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "clementine_juice"
+      ],
+      "produces": "strained_clementine_juice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "whisk_egg_sugar",
+      "action": "Dans un saladier, fouetter vigoureusement les \u0153ufs, les jaunes et le sucre pendant 3min, jusqu'\u00e0 ce que le m\u00e9lange soit \u00e9pais et p\u00e2le.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "egg",
+        "egg_yolk",
+        "sugar"
+      ],
+      "produces": "whisked_egg_sugar",
+      "requires": [],
+      "visualCue": "\u00e9pais et p\u00e2le"
+    },
+    {
+      "id": "combine_juice_egg",
+      "action": "Verser le m\u00e9lange dans une casserole en acier inoxydable, ajouter le jus de cl\u00e9mentine et fouetter pour homog\u00e9n\u00e9iser.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "whisked_egg_sugar",
+        "strained_clementine_juice"
+      ],
+      "produces": "curd_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_curd",
+      "action": "Cuire le curd \u00e0 feu moyen-doux, en m\u00e9langeant constamment avec une maryse pendant 5min, jusqu'\u00e0 ce qu'il \u00e9paississe et s'accroche au bord de la casserole. Retirer imm\u00e9diatement du feu.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "curd_base"
+      ],
+      "produces": "cooked_curd",
+      "requires": [],
+      "visualCue": "\u00e9paississe et s'accroche au bord de la casserole"
+    },
+    {
+      "id": "add_butter_curd",
+      "action": "Ajouter le beurre et m\u00e9langer au fouet jusqu'\u00e0 ce qu'il soit compl\u00e8tement fondu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "cooked_curd",
+        "butter"
+      ],
+      "produces": "buttered_curd",
+      "requires": [],
+      "visualCue": "beurre compl\u00e8tement fondu"
+    },
+    {
+      "id": "chill_curd",
+      "action": "Transf\u00e9rer le curd dans un bol, filmer au contact et laisser reposer au frais au moins 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "cl\u00e9mentine curd",
+      "uses": [
+        "buttered_curd"
+      ],
+      "produces": "chilled_clementine_curd",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un saladier, m\u00e9langer la farine avec les sucres, la levure et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00eapes",
+      "uses": [
+        "flour",
+        "vanilla_sugar",
+        "sugar_tbsp",
+        "baking_powder",
+        "salt"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_eggs",
+      "action": "Ajouter les \u0153ufs et m\u00e9langer doucement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00eapes",
+      "uses": [
+        "dry_mix",
+        "eggs_crepes"
+      ],
+      "produces": "egg_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_milk",
+      "action": "Verser le lait petit \u00e0 petit tout en m\u00e9langeant. Pour une p\u00e2te lisse, utiliser \u00e9ventuellement un mixeur plongeant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00eapes",
+      "uses": [
+        "egg_batter",
+        "milk"
+      ],
+      "produces": "milk_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_melted_butter",
+      "action": "Ajouter le beurre fondu et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cr\u00eapes",
+      "uses": [
+        "milk_batter",
+        "melted_butter"
+      ],
+      "produces": "crepe_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_crepes",
+      "action": "Dans une po\u00eale \u00e0 cr\u00eapes bien chaude et l\u00e9g\u00e8rement beurr\u00e9e, verser une louche de p\u00e2te et effectuer un mouvement de rotation pour la r\u00e9partir. Poser la po\u00eale sur un feu moyen et cuire la cr\u00eape pendant 1min. Retourner et cuire de nouveau 1min. R\u00e9p\u00e9ter avec le reste de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cr\u00eapes",
+      "uses": [
+        "crepe_batter",
+        "butter_for_cooking"
+      ],
+      "produces": "cooked_crepes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble",
+      "action": "Servir les cr\u00eapes avec le curd de cl\u00e9mentine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_crepes",
+        "chilled_clementine_curd"
+      ],
+      "produces": "crepes_clementine_curd",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "crepes_clementine_curd",
+  "originalText": "Cr\u00eapes au cl\u00e9mentine curd : une alternative simple et gourmande\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 f\u00e9vrier 2025\nCr\u00eapes au cl\u00e9mentine curd : une alternative gourmande du lemon curd\n\u00c0 la recherche d\u2019une alternative sucr\u00e9e pour d\u00e9couvrir de nouvelles saveurs ? Alors, vous \u00eates au bon endroit avec cette recette gourmande de cr\u00eapes au cl\u00e9mentine curd !\nOn conna\u00eet tous le c\u00e9l\u00e8bre\nlemon curd\n, cette cr\u00e8me onctueuse au citron qui ravit les papilles dans des tartes, sur des cr\u00eapes, ou encore en garniture de g\u00e2teaux. Vous pouvez d\u2019ailleurs retrouver ma recette ici : \u00ab\nlemon curd (facile et rapide)\n\u00ab\u00a0. Mais saviez-vous qu\u2019il existe une alternative toute aussi d\u00e9licieuse et peut-\u00eatre m\u00eame plus subtile : le\ncl\u00e9mentine curd\n? Plus doux, avec une belle couleur orange \u00e9clatante, le cl\u00e9mentine curd est une vraie gourmandise \u00e0 essayer.\nDans cet article, d\u00e9couvrez cette recette simple et inratable, ainsi que les diff\u00e9rentes mani\u00e8res de l\u2019utiliser pour sublimer vos desserts, notamment en accompagnement de cr\u00eapes.\nTable des mati\u00e8res\n1\nQu\u2019est-ce que le cl\u00e9mentine curd et pourquoi l\u2019essayer ?\n2\nLa simplicit\u00e9 du cl\u00e9mentine curd\n3\nLe cl\u00e9mentine curd : un compagnon id\u00e9al pour les cr\u00eapes\n4\nCr\u00eapes au cl\u00e9mentine curd\n5\nDes id\u00e9es suppl\u00e9mentaires pour utiliser le cl\u00e9mentine curd\n6\nLes recettes similaires \u00e0 d\u00e9couvrir\n7\nConclusion\nQu\u2019est-ce que le cl\u00e9mentine curd et pourquoi l\u2019essayer ?\nLe cl\u00e9mentine curd est une cr\u00e8me \u00e0 base de cl\u00e9mentines, similaire au lemon curd, mais avec un go\u00fbt plus doux et moins acide. Ce curd est parfait pour ceux qui aiment la fra\u00eecheur des agrumes sans la puissance du citron. Voici quelques raisons de l\u2019essayer :\nUn go\u00fbt d\u00e9licat et parfum\u00e9\n: la cl\u00e9mentine, moins acide que le citron, apporte une saveur douce, l\u00e9g\u00e8rement sucr\u00e9e, id\u00e9ale pour les desserts.\nUne belle couleur orange\n: cette cr\u00e8me ajoute une touche color\u00e9e \u00e0 vos desserts, rendant chaque plat plus app\u00e9tissant.\nFacile \u00e0 pr\u00e9parer\n: comme le lemon curd, la recette de cl\u00e9mentine curd est simple \u00e0 r\u00e9aliser, avec des ingr\u00e9dients de base que vous avez probablement d\u00e9j\u00e0 dans vos placards.\nLa simplicit\u00e9 du cl\u00e9mentine curd\nL\u2019une des grandes qualit\u00e9s du cl\u00e9mentine curd est sa\nfacilit\u00e9 de pr\u00e9paration\n. Avec quelques ingr\u00e9dients de base comme des cl\u00e9mentines fra\u00eeches, du sucre, des \u0153ufs et un peu de beurre, vous pouvez obtenir une cr\u00e8me onctueuse et savoureuse en un rien de temps. Pas de difficult\u00e9 ici, la recette fonctionne \u00e0 tous les coups, m\u00eame si vous \u00eates novice en cuisine ! Vous obtiendrez une consistance parfaite pour napper vos cr\u00eapes, tartes ou cupcakes.\nLe cl\u00e9mentine curd : un compagnon id\u00e9al pour les cr\u00eapes\nL\u2019association la plus \u00e9vidente du cl\u00e9mentine curd, c\u2019est sans aucun doute les\ncr\u00eapes\n. En cette p\u00e9riode de Chandeleur, pourquoi ne pas innover avec cette version fruit\u00e9e ? Le go\u00fbt doux et l\u00e9g\u00e8rement acidul\u00e9 du cl\u00e9mentine curd se marie \u00e0 merveille avec la texture l\u00e9g\u00e8re et a\u00e9r\u00e9e des cr\u00eapes. Pour un dessert rapide et d\u00e9licieux, il vous suffit de\ngarnir vos cr\u00eapes de cl\u00e9mentine curd\net de les rouler ou les plier. Vous pouvez aussi ajouter une touche de chantilly ou un peu de sucre glace pour plus de gourmandise.\nRetrouvez toutes mes astuces pour r\u00e9ussir vos cr\u00eapes dans cet article \u00ab\nid\u00e9es de cr\u00eapes sucr\u00e9es et gourmandes pour la Chandeleur\n\u00ab\u00a0.\nCr\u00eapes au cl\u00e9mentine curd\n4.56\n/5 avec\n72\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nTemps de repos\n1\nheure\nh\nTemps total\n1\nheure\nh\n50\nminutes\nmin\nPortions\n10\ncr\u00eapes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le cl\u00e9mentine curd\n75\nml\nde jus de cl\u00e9mentines\nenv 4\n75\ng\nde sucre\n1\noeuf\n1\njaune d\u2019oeuf\n50\ng\nde beurre\nPour les cr\u00eapes\n250\ng\nde farine\n1\nsachet de sucre vanill\u00e9\n1\nc\u00e0s de sucre\n1\nc\u00e0c de levure chimique\n1\npinc\u00e9e de sel\n3\noeufs\n500\nml\nde lait\n50\ng\nde beurre fondu\nInstructions\nPour le cl\u00e9mentine curd\nPresser les cl\u00e9mentines pour obtenir 75 ml de jus. Passer le jus dans un chinois pour obtenir un jus bien lisse sans pulpe ni p\u00e9pins. R\u00e9server.\nDans un saladier, mettre les \u0153ufs, les jaunes d\u2019\u0153ufs et le sucre. Fouetter vigoureusement pendant 3 \u00e0 4 minutes, jusqu\u2019\u00e0 ce que le m\u00e9lange soit \u00e9pais et de couleur plus p\u00e2le.\nVersez le m\u00e9lange dans une casserole en acier inoxydable et ajoutez le jus de cl\u00e9mentine et fouettez pour homog\u00e9n\u00e9iser le tout.\nCuire le curd \u00e0 feu moyen (doux), en m\u00e9langeant constamment et en raclant le fond de la casserole \u00e0 l\u2019aide d\u2019une maryse. Laisser cuire pendant 5 \u00e0 10 minutes, jusqu\u2019\u00e0 ce que le curd \u00e9paississe et s\u2019accroche au bord de la casserole. Retirer imm\u00e9diatement du feu.\nAjouter le beurre et m\u00e9langer au fouet jusqu\u2019\u00e0 ce que le beurre soit compl\u00e8tement fondu.\nTransf\u00e9rer le curd dans un bol ou un bocal en verre et filmer au contact. Attendre quelques minutes puis laisser reposer au frais au moins 1h pour qu\u2019il prenne. Le curd peut \u00eatre conserv\u00e9 au r\u00e9frig\u00e9rateur jusqu\u2019\u00e0 2 semaines.\nPour les cr\u00eapes\nDans un saladier m\u00e9langer la farine avec les sucres, la levure et le sel.\nAjouter les \u0153ufs et m\u00e9langer doucement.\nVerser le lait petit \u00e0 petit, tout en m\u00e9langeant. A ce stade, pour une p\u00e2te bien lisse sans grumeaux, vous pouvez utiliser un mixeur plongeant.\nEnfin, ajouter le beurre fondu et m\u00e9langer.\nDans une po\u00eale \u00e0 cr\u00eapes bien chaude, l\u00e9g\u00e8rement beurr\u00e9e, verser une petite louche de p\u00e2te sur la po\u00eale. Effectuer un mouvement de rotation pour r\u00e9partir la p\u00e2te sur toute la surface. Poser la po\u00eale sur le feu (\u00e0 feu moyen), retourner la cr\u00eape apr\u00e8s environ 1 min de cuisson. Cuire de nouveau 1 min et voil\u00e0, la cr\u00eape est pr\u00eate !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nDes id\u00e9es suppl\u00e9mentaires pour utiliser le cl\u00e9mentine curd\nLe cl\u00e9mentine curd ne se limite pas aux cr\u00eapes ! Voici quelques autres id\u00e9es pour l\u2019utiliser et varier les plaisirs :\nEn garniture de cheesecake\n: Le cl\u00e9mentine curd fait une garniture l\u00e9g\u00e8re et fruit\u00e9e pour un cheesecake. Son go\u00fbt doux compl\u00e8te \u00e0 merveille la base cr\u00e9meuse du fromage blanc.\nDans des cupcakes\n: Pour une touche fruit\u00e9e et originale, remplacez le gla\u00e7age classique par du cl\u00e9mentine curd. Ces\ncupcakes\n\u00e0 la cl\u00e9mentine curd seront un vrai d\u00e9lice !  D\u00e9couvrez ma recette de cupcakes au citron et meringue pour une inspiration proche : \u00ab\ncupcakes citron meringu\u00e9s\n\u00ab\u00a0.\nSur des tartines ou des brioches\n: Pour un petit d\u00e9jeuner gourmand, \u00e9talez simplement du cl\u00e9mentine curd sur des tranches de pain grill\u00e9 ou une brioche.\nLes recettes similaires \u00e0 d\u00e9couvrir\nSi vous aimez cette id\u00e9e, voici quelques autres recettes acidul\u00e9es qui pourraient vous plaire :\nLe cake au citron vegan\n: une recette gourmande \u00e0 base de citrons.\nBarre au citron et coco sans oeuf\n: pour un snack doux et acidul\u00e9, simple et rapide \u00e0 pr\u00e9parer.\nTarte aux oranges sanguines meringu\u00e9e\n: Pour les amateurs d\u2019oranges sanguines et de desserts \u00e9l\u00e9gants, cette tarte est un must.\nConclusion\nLe cl\u00e9mentine curd est une merveilleuse alternative au lemon curd, apportant douceur et d\u00e9licatesse avec son go\u00fbt parfum\u00e9. En plus d\u2019\u00eatre facile \u00e0 r\u00e9aliser, il se marie parfaitement avec des cr\u00eapes pour un dessert fruit\u00e9 et l\u00e9ger. Mais n\u2019h\u00e9sitez pas \u00e0 l\u2019utiliser dans d\u2019autres cr\u00e9ations sucr\u00e9es comme des cheesecakes ou des cupcakes. \u00c0 coup s\u00fbr, vous allez ajouter une touche de soleil \u00e0 vos plats gr\u00e2ce \u00e0 ce curd vitamin\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nCr\u00e8mes et Entremets\n,\nRecettes Sucr\u00e9es\nTags:\nid\u00e9e de dessert fruit\n,\nv\u00e9g\u00e9tarien\nTarte Chocolat Noisette\nClafoutis pommes caram\u00e9lis\u00e9es et lait de coco : une douceur r\u00e9confortante\n4.56 from 72 votes (\n72 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

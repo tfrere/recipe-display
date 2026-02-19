@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "title": "Granola aux amandes express",
+    "description": "Ce Granola aux amandes express est certainement mon granola pr\u00e9f\u00e9r\u00e9 ! Il est juste trop bon. Et cerise sur le g\u00e2teau, il est super simple \u00e0 faire.",
+    "servings": 8,
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "granola",
+      "granola amande",
+      "granola maison",
+      "granola rapide",
+      "petit d\u00e9jeuner",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps",
+      "Brunch Sucr\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/07/granola-amande-169-8-of-13.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez ajouter les fruits secs de votre choix dans le granola apr\u00e8s cuisson ! Cranberries, raisins secs \u2026",
+      "Il se garde facilement 1 mois.",
+      "Une fois refroidi, stockez-le dans un bocal."
+    ],
+    "slug": "granola-aux-amandes-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/07/granola-amande-169-8-of-13.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/07/11/granola-aux-amandes-express/",
+    "image": "images/granola-aux-amandes-express.jpg",
+    "createdAt": "2026-02-09T21:24:55.541400",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 117.0,
+      "protein": 3.9,
+      "fat": 8.6,
+      "carbs": 7.0,
+      "fiber": 1.6,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "amandes_concassees",
+      "name": "amandes concass\u00e9es",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped almonds"
+    },
+    {
+      "id": "puree_amandes",
+      "name": "pur\u00e9e d'amandes compl\u00e8te",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole almond butter"
+    },
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "huile_pecan",
+      "name": "huile de noix de p\u00e9can ou huile de noisettes",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pecan oil or hazelnut oil"
+    },
+    {
+      "id": "sirop_erable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "sucre_vanille",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "fruits_secs",
+      "name": "fruits secs",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "Dried fruit"
+    }
+  ],
+  "tools": [
+    "Mixeur (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 160\u00b0C.",
+      "duration": null,
+      "temperature": 160,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crush_almonds",
+      "action": "Concasser les amandes, au mixeur ou au couteau. Garder de gros morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "amandes_concassees"
+      ],
+      "produces": "amandes_concassees_grossieres",
+      "requires": [],
+      "visualCue": "gros morceaux"
+    },
+    {
+      "id": "mix_ingredients",
+      "action": "Dans un bol, verser tous les ingr\u00e9dients. M\u00e9langer bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "amandes_concassees_grossieres",
+        "puree_amandes",
+        "flocons_avoine",
+        "huile_pecan",
+        "sirop_erable",
+        "sucre_vanille",
+        "sel"
+      ],
+      "produces": "melange_granola",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "spread_mixture",
+      "action": "Bien \u00e9taler le m\u00e9lange sur la plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_granola"
+      ],
+      "produces": "melange_etale",
+      "requires": [],
+      "visualCue": "bien \u00e9tal\u00e9"
+    },
+    {
+      "id": "bake_granola",
+      "action": "Enfourner, et m\u00e9langer \u00e0 mi-cuisson.",
+      "duration": "PT20M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "melange_etale"
+      ],
+      "produces": "granola_cuit",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_granola",
+      "action": "Sortir la plaque du four et laisser le granola refroidir compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "granola_cuit"
+      ],
+      "produces": "granola_refroidi",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "break_and_add_fruits",
+      "action": "Si des petites plaques se sont form\u00e9es, les casser en chunks. Ajouter des fruits secs si souhait\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "granola_refroidi",
+        "fruits_secs"
+      ],
+      "produces": "granola_final",
+      "requires": [],
+      "visualCue": "chunks"
+    }
+  ],
+  "finalState": "granola_final",
+  "originalText": "Granola aux amandes express\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 juillet 2022\nGranola aux amandes express\nAller \u00e0 la recette\nCe Granola aux amandes express est certainement mon granola pr\u00e9f\u00e9r\u00e9 !\nIl est juste trop bon. Et cerise sur le g\u00e2teau, il est super simple \u00e0 faire. Avec une liste d\u2019ingr\u00e9dients toute simple.\nIl faut compter 5min en cuisine, et le tour est jou\u00e9. Puis, en vrai, ceux qui ont d\u00e9j\u00e0 go\u00fbter du granola maison\u2026 Il n\u2019y a pas photo ! C\u2019est impossible de revenir \u00e0 du granola industriel ! Je vous jure !\nComment faire un granola maison ?\nLe principe du granola est super simple. Il vous faut des flocons d\u2019avoine. Jusque l\u00e0 \u2026 Pas compliqu\u00e9. Ensuite vous choisissez un type d\u2019ol\u00e9agineux (de noix quoi) ou plusieurs.\nMacadamia et cajou pour le granola vanille de Daniela.\nOu noisettes et p\u00e9can pour celui au chocolat\n. Ici, vu que je suis sur un granola aux amandes\u2026 Bin j\u2019ai mis des amandes concass\u00e9es.\nApr\u00e8s, il faut un liant. En g\u00e9n\u00e9ral, \u00e7a va \u00eatre une mati\u00e8re grasse. De l\u2019huile. Et \u00e9ventuellement une p\u00e2te d\u2019ol\u00e9agineux. Ici, comme je cherche un go\u00fbt fort en amande. J\u2019ai ajout\u00e9 de la pur\u00e9e d\u2019amande compl\u00e8te. Et un peu d\u2019huile de p\u00e9can. Car j\u2019en ai. Mais de l\u2019huile de noisette fonctionne tr\u00e8s bien aussi.\nIl vous faut ensuite un agent sucrant. Avec Daniela on a une grosse passion pour le sirop d\u2019\u00e9rable. Du coup, sans surprise, il y a du sirop d\u2019\u00e9rable dans cette recette. Vous pouvez le remplacer par du miel, ou un autre sirop de votre choix. Et finalement, vous pouvez ajouter des petits plus. Ici, j\u2019ai ajout\u00e9 un sachet de sucre vanill\u00e9. Et une pinc\u00e9e de sel pour faire ressortir les saveurs.\nApr\u00e8s, il ne reste plus qu\u2019\u00e0 le passer au four rapidement pour le rendre croustillant. Et voil\u00e0 ! Le Granola aux amandes express est pr\u00eat ! Une fois refroidi, stockez-le dans un bocal. Il se garde facilement 1 mois. Si vous ne mangez pas tout avant quoi !\nGranola aux amandes express\nNatacha\n4.54\n/5 avec\n62\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n8\nportions\nIngr\u00e9dients\n1x\n2x\n3x\n70\ng\nd\u2019amandes concass\u00e9es\n60\ng\nde pur\u00e9e d\u2019amandes compl\u00e8te\n120\ng\nde flocons d\u2019avoine\n60\nml\nd\u2019huile de noix de p\u00e9can ou huile de noisettes\n50\nml\nde sirop d\u2019\u00e9rable\n1\nsachet de sucre vanill\u00e9\n1\npinc\u00e9e de sel\nInstructions\nPr\u00e9chauffer le four \u00e0 160\u00b0C.\nCommencer par concasser les amandes, au mixeur ou au couteau. Garder de gros morceaux pour plus de gourmandise.\nDans un bol, verser tous les ingr\u00e9dients. M\u00e9langer bien.\nPr\u00e9parer une plaque de cuisson en la couvrant de papier cuisson.\nBien \u00e9taler le m\u00e9lange sur la plaque.\nEnfourner, et m\u00e9langer \u00e0 mi-cuisson.\nSortir la plaque du four et laisser le granola refroidir compl\u00e8tement.\nSi des petites plaques se sont form\u00e9es, vous pouvez les casser, et les laisser en chunks. Vous pouvez ajouter des fruits secs au granola si vous le souhaitez (raisins secs, cranberries etc\u2026)\nVous pouvez conserver le granola plusieurs semaines dans un bocal ferm\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nVous pouvez ajouter les fruits secs de votre choix dans le granola apr\u00e8s cuisson ! Cranberries, raisins secs \u2026 Vous pouvez d\u2019ailleurs v\u00e9rifier les bienfaits et les compos des aliments et compl\u00e9ments alimentaires sur ce site tr\u00e8s bien fait :\nNutrascan\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrunch Sucr\u00e9\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sucr\u00e9es\nTags:\ngranola\n,\ngranola amande\n,\ngranola maison\n,\ngranola rapide\n,\npetit d\u00e9jeuner\nSalade aux Haricots \u00e0 \u0153il noir\nSalade de Fenouil et Pommes\n1 thought on \u201cGranola aux amandes express\u00a0\u201d\nMathilde\ndit\u00a0:\n5 juin 2023 \u00e0 12 h 36 min\nUne recette au top ! Facile \u00e0 faire et rapide, \u00e7a fait d\u00e9j\u00e0 plusieurs fois que je la fais et c\u2019est toujours un plaisir le matin de prendre ce granola au petit d\u00e9jeuner !\nchargement\u2026\nR\u00e9pondre\n4.54 from 62 votes (\n61 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

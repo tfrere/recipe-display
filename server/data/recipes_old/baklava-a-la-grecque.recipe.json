@@ -1,0 +1,515 @@
+{
+  "metadata": {
+    "title": "Baklava \u00e0 la Grecque",
+    "description": "Pour moi, il n'y a pas de comparaison possible avec les Baklava \u00e0 la Grecque. Ce sont tout simplement les meilleurs du monde ! En Gr\u00e8ce, on les fait principalement avec des noix et des amandes. Et un sirop de sucre aromatis\u00e9 \u00e0 la cannelle, clou de girofle et orange.",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT2H",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "baklava",
+      "grec",
+      "noix",
+      "amandes",
+      "sirop",
+      "dessert",
+      "Automne",
+      "Hiver",
+      "Orange"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Baklava-v2-3-of-4.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Laissez les baklavas s'imbiber 3h minimum, toute une nuit id\u00e9alement.",
+      "Les quantit\u00e9s de sirop peuvent paraitre impressionnantes mais c'est normal."
+    ],
+    "slug": "baklava-a-la-grecque",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Baklava-v2-3-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/15/baklava-a-la-grecque/",
+    "image": "images/baklava-a-la-grecque.webp",
+    "createdAt": "2026-02-09T20:56:57.829645",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "totalTime": 308.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "February",
+      "January",
+      "March"
+    ],
+    "nutritionPerServing": {
+      "calories": 800.4,
+      "protein": 10.6,
+      "fat": 54.3,
+      "carbs": 76.1,
+      "fiber": 6.3,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "noix",
+      "name": "noix",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "walnut"
+    },
+    {
+      "id": "amandes",
+      "name": "amande",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond"
+    },
+    {
+      "id": "chapelure",
+      "name": "chapelure",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "cannelle_moulee",
+      "name": "cannelle moulue",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "clou_girofle_moule",
+      "name": "clou de girofle moulu",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cloves"
+    },
+    {
+      "id": "feuilles_filo",
+      "name": "feuilles de filo",
+      "quantity": 12.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 340.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "clous_girofle",
+      "name": "clous de girofle",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cloves"
+    },
+    {
+      "id": "baton_cannelle",
+      "name": "b\u00e2ton de cannelle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon stick"
+    },
+    {
+      "id": "orange",
+      "name": "orange bio",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9e en quartier (non \u00e9pluch\u00e9e)",
+      "notes": null,
+      "optional": false,
+      "name_en": "organic orange"
+    }
+  ],
+  "tools": [
+    "Moule de 28cm de diam\u00e8tre ou \u00e9quivalent",
+    "Pinceau",
+    "Couteau",
+    "Chinois"
+  ],
+  "steps": [
+    {
+      "id": "mixer_noix_amandes",
+      "action": "Mixez les noix et les amandes jusqu'\u00e0 obtenir des morceaux de la taille de petits grains de poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "noix",
+        "amandes"
+      ],
+      "produces": "noix_amandes_mixees",
+      "requires": [],
+      "visualCue": "morceaux de la taille de petits grains de poivre"
+    },
+    {
+      "id": "melanger_garniture",
+      "action": "M\u00e9langez-les avec la chapelure, la cannelle moulue et le clou de girofle moulu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "noix_amandes_mixees",
+        "chapelure",
+        "cannelle_moulee",
+        "clou_girofle_moule"
+      ],
+      "produces": "garniture_noix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_beurre",
+      "action": "Faites fondre le beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "beurre_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enduire_moule",
+      "action": "A l'aide d'un pinceau, enduisez le fond du moule de beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "beurre_fondu"
+      ],
+      "produces": "moule_beurre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "premiere_feuille",
+      "action": "D\u00e9posez une premi\u00e8re feuille de filo dessus et beurrez-la de nouveau. Vous pouvez la froisser pour qu'elle entre bien dans la moule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "feuilles_filo",
+        "beurre_fondu",
+        "moule_beurre"
+      ],
+      "produces": "base_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "superposer_4_feuilles",
+      "action": "Superposez 4 feuilles de filo, en les beurrant \u00e0 chaque fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "feuilles_filo",
+        "beurre_fondu",
+        "base_filo"
+      ],
+      "produces": "base_5_feuilles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "alterner_garniture",
+      "action": "Versez \u00bc de la garniture aux noix, puis une feuille de filo, une couche de beurre, et ainsi de suite jusqu'\u00e0 ce que vous n'ayez plus de garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "garniture_noix",
+        "feuilles_filo",
+        "beurre_fondu",
+        "base_5_feuilles"
+      ],
+      "produces": "baklava_avec_garniture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "superposer_dernieres_feuilles",
+      "action": "Superposez les 4 feuilles restantes, en les enduisant g\u00e9n\u00e9reusement de beurre \u00e0 chaque fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "feuilles_filo",
+        "beurre_fondu",
+        "baklava_avec_garniture"
+      ],
+      "produces": "baklava_avant_repos",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reposer_beurre",
+      "action": "Laissez reposer pour que le beurre durcisse un peu.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "baklava",
+      "uses": [
+        "baklava_avant_repos"
+      ],
+      "produces": "baklava_repose",
+      "requires": [],
+      "visualCue": "beurre durci"
+    },
+    {
+      "id": "couper_baklava",
+      "action": "A l'aide d'un couteau, coupez les couches sup\u00e9rieures (jusqu'\u00e0 la garniture) des baklavas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "baklava_repose"
+      ],
+      "produces": "baklava_coupe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_sirop",
+      "action": "Dans une casserole, versez le sucre, l'eau, les clous de girofle, le b\u00e2ton de cannelle et l'orange bio coup\u00e9e en quartier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "sucre",
+        "eau",
+        "clous_girofle",
+        "baton_cannelle",
+        "orange"
+      ],
+      "produces": "sirop_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_sirop",
+      "action": "Portez \u00e0 \u00e9bullition puis baissez le feu et laissez cuire \u00e0 petits bouillons pendant 8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sirop",
+      "uses": [
+        "sirop_melange"
+      ],
+      "produces": "sirop_cuit",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "reserver_sirop",
+      "action": "Eteignez le feu et r\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "sirop_cuit"
+      ],
+      "produces": "sirop_reserve",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffez le four \u00e0 150\u00b0C.",
+      "duration": null,
+      "temperature": 150,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "baklava_coupe"
+      ],
+      "produces": "baklava_coupe_four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_baklava",
+      "action": "Enfournez \u00e0 mi-hauteur pour 2h.",
+      "duration": "PT2H",
+      "temperature": 150,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "baklava",
+      "uses": [
+        "baklava_coupe_four_prechauffe"
+      ],
+      "produces": "baklava_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "filtrer_sirop",
+      "action": "A la fin de la cuisson des baklavas, passez le sirop au chinois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "sirop_reserve"
+      ],
+      "produces": "sirop_filtre",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arroser_baklava",
+      "action": "D\u00e8s que vous sortez les baklavas du four, versez tout le sirop par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sirop",
+      "uses": [
+        "baklava_cuit",
+        "sirop_filtre"
+      ],
+      "produces": "baklava_arrose",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "imbiber_baklava",
+      "action": "Laissez les baklavas s'imbiber 3h minimum.",
+      "duration": "PT3H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "sirop",
+      "uses": [
+        "baklava_arrose"
+      ],
+      "produces": "baklava_imbibe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decouper_baklava",
+      "action": "D\u00e9coupez-les en suivant vos pr\u00e9d\u00e9coupes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "baklava_imbibe"
+      ],
+      "produces": "baklava_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baklava_final",
+  "originalText": "Baklava \u00e0 la Grecque - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 janvier 2022\nBaklava \u00e0 la Grecque\nAller \u00e0 la recette\nPour moi, il n\u2019y a pas de comparaison possible avec les Baklava \u00e0 la Grecque. Ce sont tout simplement les meilleurs du monde ! En toute objectivit\u00e9.\nLes baklavas, c\u2019est vraiment le go\u00fbt de mon enfance. Plus pr\u00e9cis\u00e9ment, des vacances dans les Cyclades quand j\u2019\u00e9tais petite.\nOn allait r\u00e9guli\u00e8rement en Gr\u00e8ce, dans les Cyclades avec mes parents. Pour rendre visite \u00e0 mon parrain et ma marraine et \u00e0 mon grand-p\u00e8re. Ils avaient tous des maisons \u00e0 Syros, la capitale des Cyclades.\nOn y passait plusieurs semaines. Plusieurs ann\u00e9es de suite. Et j\u2019en garde des souvenirs culinaires incroyables ! D\u00e9j\u00e0 parce que mon grand-p\u00e8re et ma marraine cuisinent tous les deux super bien. Ensuite, parce que je pouvais manger de la f\u00eata tous les jours, en quantit\u00e9 ! Il y avait la past\u00e8que \u00e0 profusion. Et \u2026 les g\u00e2teaux.\nNotamment, les kourabiedes, les loukoumades, et les g\u00e2teaux au sirop de sucre en tout genre. Les\nkataifs\n, les melomakarona, les baklavas etc\u2026\nLes baklavas font partie de mes pr\u00e9f\u00e9r\u00e9s. Clairement. Et je me souviens de cette p\u00e2tisserie incroyable. Avec des plats gigantesques de baklavas en tout genre. C\u2019\u00e9tait le paradis sur terre !\nBref, je vous ai assez racont\u00e9 ma vie. Ces baklavas sont donc des baklavas \u00e0 la grecque. On en trouve des diff\u00e9rents dans beaucoup de pays moyen-orientaux.\nEn Gr\u00e8ce, on les fait principalement avec des noix et des amandes. Et un sirop de sucre. Surtout pas de miel. Le sirop de sucre est aromatis\u00e9 \u00e0 la cannelle, clou de girofle et orange.\nUn d\u00e9lice je vous dis !\nBaklava \u00e0 la Grecque\nNatacha\n4.51\n/5 avec\n124\nvotes\nImprimer la recette\nPin Recipe\nPortions\n8\npersonnes\nEquipment\nMoule de 28cm de diam\u00e8tre ou \u00e9quivalent\nIngr\u00e9dients\n1x\n2x\n3x\n250\ng\nde noix\n200\ng\nd\u2019amande\n50\ng\nde chapelure\n1\nc\u00e0s de cannelle moulue\n\u00bd\nc\u00e0c de clou de girofle moulu\n12\nfeuilles de filo\n200\ng\nde beurre fondu\n500\ng\nde sucre\n340\nml\nd\u2019eau\n3\nclous de girofle\n1\nb\u00e2ton de cannelle\n1\norange bio\nInstructions\nMixez les noix et les amandes jusqu\u2019\u00e0 obtenir des morceaux de la taille de petits grains de poivre.\nM\u00e9langez les avec la chapelure, et les \u00e9pices moulues.\nFaites fondre le beurre.\nA l\u2019aide d\u2019un pinceau, enduisez le fond du moule de beurre.\nD\u00e9posez une premi\u00e8re feuille de filo dessus et beurrez la de nouveau. Vous pouvez la froisser pour qu\u2019elle entre bien dans la moule.\nSuperposez 4 feuilles de filo, en les beurrant \u00e0 chaque fois.\nVersez \u00bc de la garniture aux noix, une feuille de filo, une couche de beurre, et ainsi de suite jusqu\u2019\u00e0 ce que vous n\u2019ayez plus de garniture.\nSuperposez les 4 feuilles restantes, en les enduisant g\u00e9n\u00e9reusement de beurre \u00e0 chaque fois.\nLaissez reposer pour que le beurre durcisse un peu.\nPendant ce temps, pr\u00e9parez le sirop. Les quantit\u00e9s peuvent paraitre impressionnantes mais c\u2019est normal.\nDans une casserole, verser le sucre, l\u2019eau, les \u00e9pices et une orange bio coup\u00e9e en quartier (non \u00e9pluch\u00e9e).\nPortez \u00e0 \u00e9bullition puis baissez le feu et laissez cuire \u00e0 petits bouillons pendant 8 \u00e0 10min. Eteindre le feu et r\u00e9server.\nPr\u00e9chauffez le four \u00e0 150\u00b0C.\nA l\u2019aide d\u2019un couteau, coupez les couches sup\u00e9rieures (jusqu\u2019\u00e0 la garniture) des baklavas.\nEnfournez \u00e0 mi-hauteur pour 2h.\nA la fin de la cuisson, passez le sirop au chinois.\nD\u00e8s que vous sortez les baklavas du four, versez tout le sirop par-dessus.\nLaissez les baklavas s\u2019imbiber 3h minimum, toute une nuit id\u00e9alement.\nD\u00e9coupez les en suivant vos pr\u00e9d\u00e9coupes.\nEnjoy !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nEt sinon, Daniela vous a mis en ligne un petite recette revisit\u00e9e de cheesecake fa\u00e7on baklava !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nG\u00e2teaux et Cakes\n,\nHiver\n,\nNon class\u00e9\n,\nOrange\n,\nRecettes Sucr\u00e9es\nTags:\nbaklava\n,\nbaklava facile\n,\nbaklava grec\n,\ncomment faire des baklavas\n,\ngateau grec\n,\nrecette de baklava\n,\nrecette facile baklava\n,\nrecette grecque\nSalade toute simple de Betterave et Pomme de Terre\nSoupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)\n1 thought on \u201cBaklava \u00e0 la Grecque\u201d\nSt\u00e9phane Davesne\ndit\u00a0:\n18 janvier 2022 \u00e0 18 h 27 min\nBeaucoup trop bon \ud83d\ude05\nchargement\u2026\nR\u00e9pondre\n4.51 from 124 votes (\n123 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

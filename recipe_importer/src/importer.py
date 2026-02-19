@@ -1,181 +1,217 @@
+"""Coordonnateur d'import de recettes."""
+
 import asyncio
 import json
-import base64
+import random
 from datetime import datetime
 from pathlib import Path
-import aiohttp
 from urllib.parse import urlparse
-from rich.console import Console
-from rich.progress import Progress, TaskID
-from rich.table import Table
 
-from .models import ImportMetrics, RecipeError, RecipeProgress
+import aiohttp
+from rich.console import Console
+
+from .models import ImportMetrics
 from .api_client import RecipeApiClient
 from .progress_tracker import ProgressTracker
 from .report import ReportGenerator
-from .recipe_processors import UrlRecipeProcessor, TextRecipeProcessor
+from .recipe_processors import RecipeProcessor
 
 
 class RecipeImporter:
-    """Coordonne l'importation des recettes à partir d'URLs ou de fichiers texte."""
-    
+    """Coordonne l'importation de recettes (URL ou texte) en parallèle."""
+
     def __init__(
         self,
         concurrent_imports: int = 5,
         api_url: str = "http://localhost:3001",
         auth_presets_file: str = "auth_presets.json",
-        console: Console = None
+        console: Console | None = None,
+        headless: bool = False,
+        max_per_domain: int = 8,
     ):
         self.concurrent_imports = concurrent_imports
-        self.api_url = api_url.rstrip('/')  # Enlever le slash à la fin si présent
+        self.max_per_domain = max_per_domain
+        self.api_url = api_url.rstrip("/")
         self.console = console or Console()
+        self.headless = headless
         self.metrics = ImportMetrics()
-        self.semaphore = asyncio.Semaphore(concurrent_imports)
-        self.processed_urls = set()  # Pour suivre les URLs traitées
-        
-        # Charger les présets d'authentification
+
+        # Auth presets
         self.auth_presets = self._load_auth_presets(auth_presets_file)
-        
-        # Initialiser les composants
+
+        # Components
         self.api_client = RecipeApiClient(api_url, self.auth_presets, self.console)
-        self.progress_tracker = ProgressTracker(self.console)
+        self.progress_tracker = ProgressTracker()
         self.report_generator = ReportGenerator(self.console)
-        
-    def _load_auth_presets(self, auth_presets_file: str) -> dict:
-        """Charge les configurations d'authentification depuis un fichier JSON."""
-        try:
-            with open(auth_presets_file, 'r') as f:
-                return json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError) as e:
-            self.console.print(f"[yellow]Warning: Could not load auth presets: {str(e)}[/yellow]")
-            return {}
-        
-    def _get_auth_for_url(self, url: str) -> dict:
-        """Récupère les credentials d'authentification pour une URL donnée."""
-        if not self.auth_presets:
-            return None
-            
-        # Extraire le domaine de l'URL
-        domain = urlparse(url).netloc
-        
-        # Chercher une correspondance dans les auth_presets
-        for preset_domain, preset_config in self.auth_presets.items():
-            if preset_domain in domain:
-                self.console.print(f"[blue]Using authentication for {domain} with preset {preset_domain}[/blue]")
-                return preset_config
-                
-        return None
-        
-    async def import_recipes(self, urls: list[str]) -> None:
-        """Import multiple recipes concurrently."""
-        start_time = datetime.now()
-        
-        # Créer des compteurs pour suivre la progression
-        stats = {
-            "total": len(urls),
-            "success": 0,
-            "errors": 0,
-            "skipped": 0,
-            "in_progress": 0,
-            "waiting": 0,  # Nouveau compteur pour les tâches en attente
-            "waiting_for_semaphore": 0,  # Compteur pour les tâches en attente de sémaphore
-            "completed": 0,  # Compteur pour les tâches terminées
-            "concurrent_imports": self.concurrent_imports
-        }
-        
-        # Afficher les informations initiales
-        self.console.print("\n[bold cyan]Recipe Importer[/bold cyan]")
-        self.console.print("[dim]" + "═" * 50 + "[/dim]")
-        self.console.print(f"[cyan]Total URLs:[/cyan] [green]{len(urls)}[/green] [cyan]| Max Concurrent Imports:[/cyan] [yellow]{self.concurrent_imports}[/yellow]")
-        self.console.print("[dim]" + "═" * 50 + "[/dim]")
-        
-        # Créer un canal de communication simple
-        updates_queue = asyncio.Queue()
-        
-        # Créer et lancer la tâche d'affichage des statistiques
-        stats_task = asyncio.create_task(
-            self.progress_tracker.track_progress(stats, start_time, updates_queue)
+
+    # ──────────────────────────────────────────────
+    # Public API
+    # ──────────────────────────────────────────────
+
+    async def import_urls(self, urls: list[str]) -> None:
+        """Importe des recettes depuis une liste d'URLs.
+
+        Les URLs sont mélangées pour répartir la charge entre les domaines.
+        Un sémaphore par domaine limite la concurrence (max_per_domain)
+        afin d'éviter les 429 Too Many Requests.
+        """
+        # Shuffle pour répartir les domaines uniformément
+        shuffled = list(urls)
+        random.shuffle(shuffled)
+
+        stats = self._make_stats(len(shuffled))
+        queue: asyncio.Queue = asyncio.Queue()
+        session = aiohttp.ClientSession()
+
+        # Sémaphore par domaine : max N requêtes simultanées par site
+        max_per_domain = min(self.max_per_domain, self.concurrent_imports)
+        domain_semaphores: dict[str, asyncio.Semaphore] = {}
+
+        def get_domain_semaphore(url: str) -> asyncio.Semaphore:
+            domain = urlparse(url).netloc
+            if domain not in domain_semaphores:
+                domain_semaphores[domain] = asyncio.Semaphore(max_per_domain)
+            return domain_semaphores[domain]
+
+        processor = RecipeProcessor(
+            self.api_client, self.metrics, session
         )
-        
-        # Initialiser le processeur de recettes
-        url_processor = UrlRecipeProcessor(self.api_client, self.metrics, self.semaphore)
-        
-        # Créer et lancer les tâches d'importation
-        import_tasks = []
-        for url in urls:
-            import_tasks.append(url_processor.process(url, stats, updates_queue))
-            
-        # Ajouter les URLs traitées à notre ensemble
-        self.processed_urls.update(url_processor.processed_items)
-        
-        # Attendre que toutes les importations soient terminées
-        await asyncio.gather(*import_tasks, return_exceptions=True)
-        
-        # Arrêter proprement la tâche d'affichage
-        stats_task.cancel()
-        try:
-            await stats_task
-        except asyncio.CancelledError:
-            pass
-        
-        # Afficher le rapport final
+
+        work_queue: asyncio.Queue = asyncio.Queue()
+        for url in shuffled:
+            await work_queue.put(url)
+
+        async def worker():
+            while not work_queue.empty():
+                try:
+                    url = work_queue.get_nowait()
+                except asyncio.QueueEmpty:
+                    break
+                async with get_domain_semaphore(url):
+                    await processor.process_url(url, stats, queue)
+
+        async def _run_all():
+            try:
+                workers = [
+                    asyncio.create_task(worker())
+                    for _ in range(self.concurrent_imports)
+                ]
+                await asyncio.gather(*workers, return_exceptions=True)
+            finally:
+                await session.close()
+
+        await self._run_with_tracking(_run_all(), stats, queue)
+
+    async def import_text_recipes(
+        self, recipe_files: list[tuple[Path, Path | None]]
+    ) -> None:
+        """Importe des recettes depuis des fichiers texte."""
+        stats = self._make_stats(len(recipe_files))
+        queue: asyncio.Queue = asyncio.Queue()
+        session = aiohttp.ClientSession()
+
+        processor = RecipeProcessor(
+            self.api_client, self.metrics, session
+        )
+
+        work_queue: asyncio.Queue = asyncio.Queue()
+        for rf in recipe_files:
+            await work_queue.put(rf)
+
+        async def worker():
+            while not work_queue.empty():
+                try:
+                    rf = work_queue.get_nowait()
+                except asyncio.QueueEmpty:
+                    break
+                await processor.process_text(rf, stats, queue)
+
+        async def _run_all():
+            try:
+                workers = [
+                    asyncio.create_task(worker())
+                    for _ in range(self.concurrent_imports)
+                ]
+                await asyncio.gather(*workers, return_exceptions=True)
+            finally:
+                await session.close()
+
+        await self._run_with_tracking(_run_all(), stats, queue)
+
+    async def list_imported_recipes(self) -> None:
+        """Liste toutes les recettes importées sur le serveur."""
+        async with aiohttp.ClientSession() as session:
+            recipes = await self.api_client.list_recipes(session)
+            if not recipes:
+                self.console.print("[yellow]Aucune recette trouvée[/yellow]")
+                return
+
+            self.console.print(f"\n[green]Recettes sur le serveur ({len(recipes)}):[/green]")
+            for r in recipes:
+                title = r.get("title", r.get("metadata", {}).get("title", "?"))
+                slug = r.get("slug", "?")
+                self.console.print(f"  [green]•[/green] {title} [dim]({slug})[/dim]")
+
+    # ──────────────────────────────────────────────
+    # Internal
+    # ──────────────────────────────────────────────
+
+    async def _run_with_tracking(
+        self,
+        import_coro,
+        stats: dict,
+        queue: asyncio.Queue,
+    ) -> None:
+        """Lance le TUI ou le mode console selon la config."""
+        start_time = datetime.now()
+
+        if self.headless:
+            # Mode console simple — pas de TUI, juste les logs
+            async def _drain_and_log():
+                while True:
+                    try:
+                        url, status, message = queue.get_nowait()
+                        if status in ("success", "error", "skipped"):
+                            completed = stats["success"] + stats["errors"] + stats["skipped"]
+                            elapsed = int((datetime.now() - start_time).total_seconds())
+                            self.console.print(
+                                f"  [{elapsed}s] {status:>7} ({completed}/{stats['total']}) {message}"
+                            )
+                        queue.task_done()
+                    except asyncio.QueueEmpty:
+                        break
+
+            import_task = asyncio.create_task(import_coro)
+            while not import_task.done():
+                await asyncio.sleep(2)
+                await _drain_and_log()
+            await _drain_and_log()
+        else:
+            await self.progress_tracker.run_app(
+                stats=stats,
+                start_time=start_time,
+                queue=queue,
+                import_tasks=[import_coro],
+            )
+
         self.report_generator.show_final_report(self.metrics)
 
-    async def import_text_recipes(self, recipe_files: list[tuple[Path, Path]]) -> None:
-        """Import multiple text recipes concurrently."""
-        start_time = datetime.now()
-        
-        # Créer des compteurs pour suivre la progression
-        stats = {
-            "total": len(recipe_files),
+    def _make_stats(self, total: int) -> dict:
+        """Crée le dict de stats partagé."""
+        return {
+            "total": total,
             "success": 0,
             "errors": 0,
             "skipped": 0,
             "in_progress": 0,
-            "waiting": 0,  # Nouveau compteur pour les tâches en attente
-            "waiting_for_semaphore": 0,  # Compteur pour les tâches en attente de sémaphore
-            "completed": 0,  # Compteur pour les tâches terminées
-            "concurrent_imports": self.concurrent_imports
+            "completed": 0,
+            "concurrent_imports": self.concurrent_imports,
         }
-        
-        # Afficher les informations initiales
-        self.console.print("\n[bold cyan]Recipe Importer - Text Mode[/bold cyan]")
-        self.console.print("[dim]" + "═" * 50 + "[/dim]")
-        self.console.print(f"[cyan]Total Files:[/cyan] [green]{len(recipe_files)}[/green] [cyan]| Max Concurrent Imports:[/cyan] [yellow]{self.concurrent_imports}[/yellow]")
-        self.console.print("[dim]" + "═" * 50 + "[/dim]")
-        
-        # Créer un canal de communication simple
-        updates_queue = asyncio.Queue()
-        
-        # Créer et lancer la tâche d'affichage des statistiques
-        stats_task = asyncio.create_task(
-            self.progress_tracker.track_progress(stats, start_time, updates_queue)
-        )
-        
-        # Initialiser le processeur de recettes
-        text_processor = TextRecipeProcessor(self.api_client, self.metrics, self.semaphore)
-        
-        # Créer et lancer les tâches d'importation
-        import_tasks = []
-        for recipe_file in recipe_files:
-            import_tasks.append(text_processor.process(recipe_file, stats, updates_queue))
-            
-        # Ajouter les URLs traitées à notre ensemble
-        self.processed_urls.update(text_processor.processed_items)
-        
-        # Attendre que toutes les importations soient terminées
-        await asyncio.gather(*import_tasks, return_exceptions=True)
-        
-        # Arrêter proprement la tâche d'affichage
-        stats_task.cancel()
+
+    def _load_auth_presets(self, path: str) -> dict:
+        """Charge les presets d'auth depuis un fichier JSON."""
         try:
-            await stats_task
-        except asyncio.CancelledError:
-            pass
-        
-        # Afficher le rapport final
-        self.report_generator.show_final_report(self.metrics)
-    
-    async def list_imported_recipes(self, session: aiohttp.ClientSession) -> None:
-        """Liste les recettes importées pendant cette session."""
-        await self.api_client.list_imported_recipes(session, self.processed_urls)
+            with open(path, "r") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            return {}

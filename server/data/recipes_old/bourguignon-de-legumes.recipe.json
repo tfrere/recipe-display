@@ -1,0 +1,594 @@
+{
+  "metadata": {
+    "title": "Bourguignon de l\u00e9gumes",
+    "description": "Le B\u0153uf Bourguignon Vegan, voil\u00e0 encore un grand classique de la cuisine fran\u00e7aise qu'on a ador\u00e9 revisiter !",
+    "servings": 5,
+    "prepTime": "PT30M",
+    "cookTime": "PT70M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "automne",
+      "hiver",
+      "champignon",
+      "carotte",
+      "oignon",
+      "vin rouge",
+      "plat en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Bourguignon-3-champignons-1-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Servir avec des pommes de terre vapeur ou une pur\u00e9e et une salade verte.",
+      "Le persil frais est ajout\u00e9 en fin de cuisson pour pr\u00e9server son parfum.",
+      "Les champignons utilis\u00e9s (champignons de Paris, shiitak\u00e9s, pleurotes) apportent des textures vari\u00e9es.",
+      "On peut utiliser uniquement des champignons de Paris si les autres vari\u00e9t\u00e9s ne sont pas disponibles.",
+      "Le beurre peut \u00eatre remplac\u00e9 par de l'huile d'olive pour une version vegan stricte."
+    ],
+    "slug": "bourguignon-de-legumes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Bourguignon-3-champignons-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/22/boeuf-bourguignon-vegan/",
+    "image": "images/bourguignon-de-legumes.webp",
+    "createdAt": "2026-02-09T20:52:49.633775",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 110.0,
+    "totalCookingTime": 50.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 200.8,
+      "protein": 5.3,
+      "fat": 10.2,
+      "carbs": 25.2,
+      "fiber": 4.9,
+      "confidence": "medium",
+      "resolvedIngredients": 14,
+      "matchedIngredients": 18,
+      "totalIngredients": 20,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "trait",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "feuilles_laurier",
+      "name": "feuilles de laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Bay leaves"
+    },
+    {
+      "id": "branches_thym",
+      "name": "branches de thym",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme sprigs"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "bouillon_cube",
+      "name": "bouillon cube",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bouillon cube"
+    },
+    {
+      "id": "vin_rouge",
+      "name": "vin rouge de bourgogne",
+      "quantity": 350.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red Burgundy wine"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "concentre_tomate",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "persil_plat",
+      "name": "branches de persil plat",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "quelques branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley sprigs"
+    },
+    {
+      "id": "champignons_paris",
+      "name": "champignons de paris",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "shiitakes",
+      "name": "shiitak\u00e9s frais",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh shiitake mushrooms"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "thym_moulu",
+      "name": "thym",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fum\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "ail_poudre",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "huile_dolive_2",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja shoyu",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Shoyu soy sauce"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    }
+  ],
+  "tools": [
+    "Cocotte ou faitout",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "prep_carottes",
+      "action": "\u00c9pluchez et coupez les carottes en grosses rondelles.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "carottes"
+      ],
+      "produces": "carottes_coupees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prep_oignons",
+      "action": "\u00c9pluchez et \u00e9mincez les oignons grossi\u00e8rement.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "oignons"
+      ],
+      "produces": "oignons_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_beurre",
+      "action": "Faites chauffer une cocotte ou un faitout et faites-y fondre le beurre. Ajoutez un trait d'huile d'olive pour que le beurre ne br\u00fble pas.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "beurre",
+        "huile_dolive"
+      ],
+      "produces": "beurre_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Faites revenir les carottes, les oignons, le laurier et le thym, 10min \u00e0 feu moyen en remuant de temps en temps.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "carottes_coupees",
+        "oignons_eminces",
+        "feuilles_laurier",
+        "branches_thym",
+        "beurre_fondu"
+      ],
+      "produces": "legumes_revenus",
+      "requires": [],
+      "visualCue": "carottes tendres"
+    },
+    {
+      "id": "ajouter_farine",
+      "action": "Vos carottes devraient \u00eatre tendres maintenant. Ajoutez la farine dans la casserole et m\u00e9langez bien.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "legumes_revenus",
+        "farine"
+      ],
+      "produces": "legumes_farine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_liquides",
+      "action": "Ajoutez le bouillon cube, le vin, l'eau, l'ail press\u00e9 et le concentr\u00e9 de tomate et m\u00e9langez bien. Montez le feu et remuez jusqu'\u00e0 ce que la sauce commence \u00e0 faire des petits bouillons.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "legumes_farine",
+        "bouillon_cube",
+        "vin_rouge",
+        "eau",
+        "ail",
+        "concentre_tomate",
+        "sel",
+        "poivre"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "cuire_sauce",
+      "action": "Baissez le feu \u00e0 doux, et couvrez. Laissez cuire 30min en remuant de temps en temps.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce",
+      "uses": [
+        "sauce_base"
+      ],
+      "produces": "sauce_cuite",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "nettoyer_champignons",
+      "action": "Nettoyez les champignons.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "champignons_paris",
+        "pleurotes",
+        "shiitakes"
+      ],
+      "produces": "champignons_nettoyes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_pleurotes",
+      "action": "Coupez les pleurotes en lani\u00e8re avec vos mains.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "champignons_nettoyes"
+      ],
+      "produces": "champignons_coupes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_shiitakes",
+      "action": "Coupez les shiitak\u00e9s en 4.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "champignons_coupes"
+      ],
+      "produces": "champignons_prets",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assaisonner_champignons",
+      "action": "Mettez les champignons dans un saladier et ajoutez les herbes, les \u00e9pices, l'huile et la sauce soja. M\u00e9langez. Ajoutez la f\u00e9cule et m\u00e9langez de nouveau.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "champignons",
+      "uses": [
+        "champignons_prets",
+        "origan",
+        "thym_moulu",
+        "paprika_fume",
+        "ail_poudre",
+        "huile_dolive_2",
+        "sauce_soja",
+        "fecule_mais"
+      ],
+      "produces": "champignons_assaisones",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_champignons",
+      "action": "Versez les champignons sur la plaque de cuisson et \u00e9talez-les bien. Enfournez \u00e0 mi-hauteur pour 30min. Remuez \u00e0 mi-cuisson.",
+      "duration": "PT30M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "champignons",
+      "uses": [
+        "champignons_assaisones"
+      ],
+      "produces": "champignons_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_champignons_sauce",
+      "action": "Quand les champignons sont cuits, ajoutez-les \u00e0 la sauce et m\u00e9langez-les.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "sauce_cuite",
+        "champignons_cuits"
+      ],
+      "produces": "bourguignon_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_persil",
+      "action": "Hachez quelques branches de persil plat, ajoutez-les.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "persil_plat",
+        "bourguignon_base"
+      ],
+      "produces": "bourguignon_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "bourguignon_final",
+  "originalText": "Bourguignon de l\u00e9gumes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 novembre 2021\nBourguignon de l\u00e9gumes\nAcc\u00e9der directement \u00e0 la recette\nLe B\u0153uf Bourguignon Vegan, voil\u00e0 encore un grand classique de la cuisine fran\u00e7aise qu\u2019on a ador\u00e9 revisiter !\nOn n\u2019a pas r\u00e9invent\u00e9 la poudre. Et j\u2019ai d\u00e9cid\u00e9 d\u2019utiliser un des ingr\u00e9dients qu\u2019on utilise tr\u00e8s souvent pour \u201cremplacer\u201d la viande. J\u2019ai nomm\u00e9 : les champignons !\nEn m\u00eame temps, faut bien le dire. Les champignons, c\u2019est assez magique comme ingr\u00e9dient !\nIl en existe tout un tas avec des caract\u00e9ristiques de go\u00fbts et de textures diverses et vari\u00e9es.\nJ\u2019en utilise vraiment dans mes plats. Comme dans cette\ntartiflette v\u00e9g\u00e9\nou ce\nparmentier vegan\n, ou encore ces\ntagliatelles aux champignons et vin blanc\n!\nLes champignons que j\u2019utilise le plus souvent sont : les champignons de paris, les shiitak\u00e9s et les pleurotes.\nJe vous explique pourquoi ?\nAlors. Les champignons de Paris sont tr\u00e8s faciles \u00e0 trouver. Et tr\u00e8s polyvalent. Ils apportent une texture assez ferme quand ils sont cuits au four et un c\u00f4t\u00e9 plus \u00e9lastique quand ils sont cuits au four.\nLes shiitak\u00e9s sont de plus en plus facile \u00e0 trouver. Vous les trouverez frais ou s\u00e9ch\u00e9s. C\u2019est leur go\u00fbt assez fort et leur texture un peu \u201cviandeuse\u201d qui les rendent int\u00e9ressants.\nEt finalement, les pleurotes. Mes ch\u00e9ries. Je les fais presque toujours en lani\u00e8res, puis marin\u00e9es et cuites au four. Elles rendent alors leur eau et font parfaitement l\u2019illusion dans un gyros ou un tacos !\nBon et sinon, le petit plus qui fait la diff\u00e9rence pour ce  B\u0153uf Bourguignon Vegan : utiliser du persil frais \u00e0 la fin de la cuisson. En r\u00e8gle g\u00e9n\u00e9rale, \u00e7a ne sert \u00e0 rien de faire cuire les herbes fra\u00eeches. La grande majorit\u00e9 perdent leur go\u00fbt si elles cuisent trop longtemps. Raison pour laquelle, j\u2019ai ajout\u00e9 un peu de persil hach\u00e9 en fin de cuisson. Il apporte ainsi tout son parfum \u00e0 la sauce ! Et je n\u2019ai pas utilis\u00e9 n\u2019importe quel persil, puisque celui-ci a pouss\u00e9 aux portes de Paris.\nPlus pr\u00e9cis\u00e9ment, dans un conteneur \u00e0 La Courneuve ! C\u2019est la start-up\nAgricool\nqui y cultive herbes fra\u00eeches, salades et fraises ultra locales. Et sans pesticide \ud83d\ude42\nBoeuf Bourguignon Vegan\nNatacha\n4.60\n/5 avec\n85\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n5\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour la sauce\n2\ncarottes\nenv 250g\n2\noignons\nenv 200g\n40\ng\nde beurre et 1 trait d\u2019huile d\u2019olive\nou 4 c\u00e0s d\u2019huile d\u2019olive\n2\nfeuilles de laurier\n4\nbranches de thym\n2\nc\u00e0s de farine\n1\nbouillon cube\n350\nml\nde vin rouge de bourgogne\n400\nml\nd\u2019eau\n2\ngousses d\u2019ail\n70\ng\nde concentr\u00e9 de tomate\nsel\npoivre\nquelques branches de persil plat\nPour les champignons\n150\ng\nde champignons de paris\n150\ng\nde pleurotes\n150\ng\nde shiitak\u00e9s frais\n\u00bd\nc\u00e0c d\u2019origan\n\u00bd\nc\u00e0c de thym\n\u00bd\nc\u00e0c de paprika fum\u00e9\n\u00bd\nc\u00e0c d\u2019ail en poudre\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0s de sauce soja shoyu\n15\ng\nde f\u00e9cule de ma\u00efs\nInstructions\n\u00c9pluchez et coupez les carottes en grosses rondelles.\n\u00c9pluchez et \u00e9mincez les oignons grossi\u00e8rement.\nFaites chauffer une cocotte ou un faitout et faites-y fondre le beurre. Ajoutez un trait d\u2019huile d\u2019olive pour que le beurre ne br\u00fble pas.\nFaites revenir les carottes, les oignons, le laurier et le thym, une dizaine de minutes \u00e0 feu moyen en remuant de temps en temps.\nPendant ce temps, pr\u00e9chauffez le four \u00e0 180\u00b0C et pr\u00e9parez une plaque de cuisson en la couvrant d\u2019un papier cuisson\nNettoyez les champignons.\nCoupez les pleurotes en lani\u00e8re avec vos mains.\nCoupez les shiitak\u00e9s en 4.\nVous pouvez laisser les champignons de paris entiers s\u2019ils ne sont pas trop gros. Sinon, coupez-les en 2. Le but est d\u2019avoir des tailles diff\u00e9rentes pour accentuer les diff\u00e9rences de texture entre les champignons.\nMettez les champignons dans un saladier et ajoutez les herbes, les \u00e9pices, l\u2019huile et la sauce soja. M\u00e9langez. Ajoutez la f\u00e9cule et m\u00e9langez de nouveau.\nVersez les champignons sur la plaque de cuisson et \u00e9talez-les bien.\nEnfournez \u00e0 mi-hauteur pour 30min. Remuez \u00e0 mi-cuisson.\nVos carottes devraient \u00eatre tendres maintenant. Ajoutez la farine dans la casserole et m\u00e9langez bien.\nAjoutez le bouillon cube, le vin, l\u2019eau, l\u2019ail press\u00e9 et le concentr\u00e9 de tomate et m\u00e9langez bien. Montez le feu et remuez jusqu\u2019\u00e0 ce que la sauce commence \u00e0 faire des petits bouillons.\nBaissez le feu \u00e0 doux, et couvrez. Laissez cuire une trentaine de minutes en remuant de temps en temps.\nQuand les champignons sont cuits, ajoutez-les \u00e0 la sauce et m\u00e9langez-les.\nHachez quelques branches de persil plat, ajoutez-les.\nC\u2019est pr\u00eat ! Vous pouvez servir le bourguignon avec des pommes de terre vapeur ou une pur\u00e9e et une salade verte !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nNon class\u00e9\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\nboeuf bourgignon\n,\nboeuf bourguignon sans viande\n,\nboeuf bourguignon vegan\n,\nboeuf bourguignon vegetarien\n,\nbourguignon vegetalien\n,\nbourguignon vegetarien\n,\nid\u00e9e menu novembre\n,\nrecette bourguigon sans viande\nFoie Gras Vegan\nSauce Sweet Chili Maison\n11 thoughts on \u201cBourguignon de l\u00e9gumes\u201d\nPaul\ndit\u00a0:\n22 novembre 2021 \u00e0 17 h 51 min\nBonjour les filles\nJ\u2019ai ador\u00e9 r\u00e9aliser votre recette. Excellente, facile, gouteuse.\nAdopt\u00e9 pour le futur.\nCordialement\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n23 novembre 2021 \u00e0 15 h 31 min\nMerci Paul \ud83d\ude42 \ud83d\ude42 \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nDiana\ndit\u00a0:\n28 novembre 2021 \u00e0 17 h 10 min\nD\u00e9licieux ! Toute la famille a ador\u00e9. Je n\u2019ai utilis\u00e9 que des champignons de Paris (pas trouv\u00e9 les autres vari\u00e9t\u00e9s) mais c\u2019\u00e9tait quand m\u00eame d\u00e9licieux. Il m\u2019est rest\u00e9 pas mal de sauce que j\u2019ai congel\u00e9 pour la r\u00e9utiliser sur une po\u00eal\u00e9e carotte-champignons un soir de flemme. Servi avec une pur\u00e9e maison au top.\nchargement\u2026\nR\u00e9pondre\nJulie - forthemermaids\ndit\u00a0:\n2 janvier 2022 \u00e0 0 h 03 min\nJ\u2019ai fait la recette pour No\u00ebl en suivant les avis pr\u00e9c\u00e9dent et en faisant avec seulement des champignons de Paris car je n\u2019ai trouv\u00e9 que \u00e7a et c\u2019\u00e9tait vraiment extra !!! Tour le monde \u00e0 ador\u00e9, pour le c\u00f4t\u00e9 un peu plus festif j\u2019ai remplac\u00e9 la moiti\u00e9 des oignons par des oignons grelots\nMerci !! Je pense avoir trouv\u00e9 ma recette f\u00e9tiche des f\u00eates\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n3 janvier 2022 \u00e0 13 h 45 min\nOh merci pour ton commentaire Julie ! Trop heureuse que tu approuves cette recette !\nchargement\u2026\nR\u00e9pondre\nMarie\ndit\u00a0:\n22 f\u00e9vrier 2022 \u00e0 20 h 13 min\nSuperbe recette ! R\u00e9alis\u00e9e d\u00e9j\u00e0 plusieurs fois\u2026 gros succ\u00e8s. J\u2019ai \u00e0 peu pr\u00e8s suivi  la recette \u00e0 la lettre en augmentant la quantit\u00e9 de champignons car sinon c\u2019est un peu\u00a0\u00bbchiche\u00a0\u00bb je trouve\u2026.\nOn retrouve vraiment les saveurs d\u2019un bourguignon ! Appr\u00e9ci\u00e9 par des omnis\u2026.\nMerci !!\nchargement\u2026\nR\u00e9pondre\nPeggy\ndit\u00a0:\n9 avril 2023 \u00e0 18 h 25 min\nG\u00e9nial et super bon.\nMerci pour cette nouvelle recette familiale et que l on peut faire la veille\nchargement\u2026\nR\u00e9pondre\nmuse_88_\ndit\u00a0:\n24 janvier 2024 \u00e0 9 h 01 min\nBonjour,\nc\u2019est une tr\u00e8s bonne recette, tout le monde s\u2019est r\u00e9gal\u00e9. Les carottes n\u2019\u00e9taient pas assez cuites de mon c\u00f4t\u00e9 et il restait un peu trop de sauce.\nBonne continuation \u00e0 vous\nchargement\u2026\nR\u00e9pondre\nMarjolaine\ndit\u00a0:\n19 avril 2024 \u00e0 13 h 50 min\nJe n\u2019avais pas mang\u00e9 de bourguignon depuis des ann\u00e9es, et \u00e7a me faisait envie\u2026 Cette recette est vraiment super, mon conjoint (pourtant pas un public facile !) a ador\u00e9 \u00e9galement, et encore plus deux jours apr\u00e8s quand nous avons termin\u00e9 le restant avec des tagliatelles ! Je n\u2019a pas trouv\u00e9 de pleurotes ni de shiitake frais, mais j\u2019avais un mix de champignons s\u00e9ch\u00e9s dans lesquels il y en avait. Je les ai r\u00e9hydrat\u00e9s et utilis\u00e9s selon la recette, c\u2019\u00e9tait parfait. Pour la prochaine fois, je mettrai un tout petit peu moins de concentr\u00e9 de tomates (le vin que j\u2019ai utilis\u00e9 \u00e9tant ouvert depuis quelques temps, le cumul des deux donnait une point d\u2019acidit\u00e9 en trop) et j\u2019aimerais bien essayer avec des gros champignons portobello ! Merci beaucoup pour cette recette et ce blog, je crois que j\u2019ai imprim\u00e9 la moiti\u00e9 des recettes pour les tester \ud83d\ude00\nchargement\u2026\nR\u00e9pondre\nBernard\ndit\u00a0:\n15 mai 2024 \u00e0 21 h 16 min\nC\u2019est tr\u00e8s bon mais il faut Enlever le mot boeuf au nom de cette recette.\n\u00c7a ne vous choque pas vous !?\nBoeuf bourguignon vegan\nSANS BOEUF\nchargement\u2026\nR\u00e9pondre\nStefan p.\ndit\u00a0:\n23 novembre 2025 \u00e0 9 h 36 min\nMerci beaucoup pour cette recette ! Par contre il faut corriger vegan par v\u00e9g\u00e9 (car beurre (et vin rouge))\nchargement\u2026\nR\u00e9pondre\n4.60 from 85 votes (\n77 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 50.0
+}

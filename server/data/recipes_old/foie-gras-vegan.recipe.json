@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "title": "Foie Gras Vegan",
+    "description": "Une recette de faux gras v\u00e9g\u00e9tal \u00e0 base de shiitak\u00e9s, miso blanc et huile de coco, parfaite pour les f\u00eates de No\u00ebl.",
+    "servings": 10,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "faux gras",
+      "ap\u00e9ro",
+      "hiver",
+      "no\u00ebl",
+      "vegan",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Faux-Gras-Vegan-Naturalia-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Tu peux la pr\u00e9parer 2-3 jours \u00e0 l'avance. Je pense que tu peux la conserver une semaine au frais dans un bocal ferm\u00e9. J'ai peur qu'elle devienne acide apr\u00e8s.",
+      "Tu peux utiliser des shiitakes frais mais assure toi bien qu'ils aient bien rejet\u00e9 toute leur eau."
+    ],
+    "slug": "foie-gras-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Faux-Gras-Vegan-Naturalia-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/21/foie-gras-vegan/",
+    "image": "images/foie-gras-vegan.jpg",
+    "createdAt": "2026-02-09T20:44:38.595906",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 497.0,
+    "totalCookingTime": 2.0,
+    "nutritionPerServing": {
+      "calories": 57.3,
+      "protein": 2.0,
+      "fat": 2.1,
+      "carbs": 5.4,
+      "fiber": 1.0,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 10,
+      "totalIngredients": 14,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shiitakes_deshydrates",
+      "name": "shiitak\u00e9s d\u00e9shydrat\u00e9s",
+      "quantity": 25.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shiitake mushrooms"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "clou_de_girofle",
+      "name": "clou de girofle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "clove"
+    },
+    {
+      "id": "noix_de_muscade",
+      "name": "noix de muscade moulue",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "poivre_noir",
+      "name": "poivre noir",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "curcuma",
+      "name": "curcuma",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "baies_roses",
+      "name": "baies roses",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "quelques",
+      "optional": false,
+      "name_en": "pink peppercorns"
+    },
+    {
+      "id": "tofu_soyeux",
+      "name": "tofu soyeux",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "silken tofu"
+    },
+    {
+      "id": "pate_de_miso_blanc",
+      "name": "p\u00e2te de miso blanc",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso paste"
+    },
+    {
+      "id": "huile_de_coco_desodorisee_40g",
+      "name": "huile de coco d\u00e9sodoris\u00e9e",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "deodorized coconut oil"
+    },
+    {
+      "id": "haricots_blancs",
+      "name": "haricots blancs en conserve",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned white beans"
+    },
+    {
+      "id": "vin_blanc_sec",
+      "name": "vin blanc sec",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry white wine"
+    },
+    {
+      "id": "creme_de_soja",
+      "name": "cr\u00e8me de soja",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soy cream"
+    },
+    {
+      "id": "agar_agar",
+      "name": "agar-agar",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Agar-agar"
+    },
+    {
+      "id": "huile_de_coco_desodorisee_30g",
+      "name": "huile de coco d\u00e9sodoris\u00e9e",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "deodorized coconut oil"
+    },
+    {
+      "id": "curcuma_025",
+      "name": "curcuma",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    }
+  ],
+  "tools": [
+    "mixeur (ou mixeur plongeant)",
+    "petite casserole"
+  ],
+  "steps": [
+    {
+      "id": "rehydrate_shiitakes",
+      "action": "Mettez les shiitak\u00e9s dans un bol et couvrez-les d'eau bouillante. Mettez-en juste assez pour les couvrir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "shiitakes_deshydrates"
+      ],
+      "produces": "shiitakes_rehydrates",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_echalotes",
+      "action": "\u00c9mincez les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "echalotes"
+      ],
+      "produces": "echalotes_emincees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_echalotes_epices",
+      "action": "Faites chauffer \u00e0 feu moyen-fort une po\u00eale avec une c\u00e0s d'huile d'olive. Faites-y revenir les \u00e9chalotes avec les \u00e9pices pendant quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "echalotes_emincees",
+        "huile_dolive",
+        "clou_de_girofle",
+        "noix_de_muscade",
+        "poivre_noir",
+        "curcuma",
+        "sel",
+        "baies_roses"
+      ],
+      "produces": "echalotes_epices_sautees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_shiitakes",
+      "action": "Versez les shiitak\u00e9s et leur eau de trempage dans la casserole. Faites revenir une quinzaine de minutes, jusqu'\u00e0 \u00e9vaporation compl\u00e8te de l'eau.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "shiitakes_rehydrates",
+        "echalotes_epices_sautees"
+      ],
+      "produces": "shiitakes_cuits",
+      "requires": [],
+      "visualCue": "\u00e9chalotes et shiitak\u00e9s l\u00e9g\u00e8rement color\u00e9s, eau \u00e9vapor\u00e9e"
+    },
+    {
+      "id": "mix_base",
+      "action": "Dans le bol de votre mixeur, versez le tofu, le miso, l'huile de coco (40g) et les haricots blancs. Mixez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "tofu_soyeux",
+        "pate_de_miso_blanc",
+        "huile_de_coco_desodorisee_40g",
+        "haricots_blancs"
+      ],
+      "produces": "base_mixee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_shiitakes_mix",
+      "action": "Ajoutez les shiitak\u00e9s cuits et mixez jusqu'\u00e0 ce que la pr\u00e9paration soit bien lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "base_mixee",
+        "shiitakes_cuits"
+      ],
+      "produces": "pate_faux_gras",
+      "requires": [],
+      "visualCue": "pr\u00e9paration bien lisse"
+    },
+    {
+      "id": "prepare_agar_mixture",
+      "action": "Dans une petite casserole, versez le vin, la cr\u00e8me et l'agar-agar. M\u00e9langez. Portez \u00e0 \u00e9bullition et laissez bouillir 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "vin_blanc_sec",
+        "creme_de_soja",
+        "agar_agar"
+      ],
+      "produces": "gel_agar",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "combine_with_agar",
+      "action": "Versez cette pr\u00e9paration dans la pr\u00e9c\u00e9dente et mixez de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "pate_faux_gras",
+        "gel_agar"
+      ],
+      "produces": "pate_faux_gras_gelifiee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_jars",
+      "action": "Transvasez la pr\u00e9paration dans des bocaux. J'aime mettre un peu de poivre moulu entre les couches.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "faux_gras",
+      "uses": [
+        "pate_faux_gras_gelifiee",
+        "poivre_noir"
+      ],
+      "produces": "faux_gras_en_bocaux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_coconut_oil",
+      "action": "Faites fondre l'huile de coco (30g) avec le curcuma (0.25 c\u00e0c). M\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "couche_de_gras",
+      "uses": [
+        "huile_de_coco_desodorisee_30g",
+        "curcuma_025"
+      ],
+      "produces": "huile_coco_curcuma_fondue",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_fat_layer",
+      "action": "Puis versez cette pr\u00e9paration sur les bocaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_de_gras",
+      "uses": [
+        "faux_gras_en_bocaux",
+        "huile_coco_curcuma_fondue"
+      ],
+      "produces": "faux_gras_couche_gras",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_overnight",
+      "action": "Mettez les faux gras \u00e0 figer au frais. Laissez les figer toute une nuit!",
+      "duration": "PT8H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "couche_de_gras",
+      "uses": [
+        "faux_gras_couche_gras"
+      ],
+      "produces": "foie_gras_vegan",
+      "requires": [],
+      "visualCue": "fig\u00e9"
+    }
+  ],
+  "finalState": "foie_gras_vegan",
+  "originalText": "Foie Gras Vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 novembre 2021\nFoie Gras Vegan\nAcc\u00e9der directement \u00e0 la recette\nQuelle meilleure recette que ce Foie Gras Vegan pour lancer la saison des recettes de No\u00ebl ?\nC\u2019est toujours un peu compliqu\u00e9 de trouver son menu. Surtout quand on a d\u00e9cid\u00e9 de ne plus manger de viande. Ou m\u00eame juste de limiter sa conso. C\u2019est d\u2019ailleurs pour \u00e7a qu\u2019on vous a fait des articles recap sur des plats de f\u00eates :\nles ap\u00e9ros\n,\nles plats\net\nles desserts vegans\n!\nPour ma part, \u00e7a fait maintenant plusieurs ann\u00e9es que je refuse cat\u00e9goriquement de manger du foie gras. C\u2019est le premier aliment qui m\u2019a vraiment r\u00e9volt\u00e9. Et que j\u2019ai r\u00e9ussi \u00e0 supprimer compl\u00e8tement.\nJe m\u2019en suis tr\u00e8s bien pass\u00e9 toutes ces ann\u00e9es. Et puis, un jour j\u2019ai d\u00e9couvert les alternatives v\u00e9g\u00e9tales au foie gras : le faux gras.\nEt c\u2019est \u00e9tonnamment simple \u00e0 cuisiner maison. C\u2019est d\u2019ailleurs pour cela que\nNaturalia\net\nYoumiam\nm\u2019ont lanc\u00e9 comme d\u00e9fi de vous proposer une recette de faux gras.\nLes ingr\u00e9dients sont relativement basiques (du moins, pour ceux qui ont l\u2019habitude de cuisiner v\u00e9g\u00e9tarien ou vegan).\nOn retrouve des shiitak\u00e9s, pour leur go\u00fbt et texture qui rappellent un peu la viande. De la p\u00e2te de miso blanc. Parce que si vous go\u00fbtez de la p\u00e2te de miso blanc nature, vous verrez que le go\u00fbt se rapproche \u00e9trangement du foie gras. De l\u2019agar-agar, qui est une sorte de g\u00e9latine v\u00e9g\u00e9tale faite \u00e0 partir d\u2019algues. Elle a la particularit\u00e9 d\u2019\u00eatre 8 \u00e0 10 fois plus g\u00e9lifiante que la g\u00e9latine. Il faut donc y aller mollo quand on l\u2019utilise ! Finalement, on utilise de l\u2019huile de coco d\u00e9sodoris\u00e9e. attention, il faut absolument qu\u2019elle soit d\u00e9sodoris\u00e9e, sous peine de se retrouver avec un m\u00e9lange vraiment \u00e9trange. On l\u2019utilise pour apporter de la mati\u00e8re grasse et aussi parce qu\u2019elle fige \u00e0 temp\u00e9rature ambiante. Elle joue donc en faveur de la consistance recherch\u00e9e pour notre foie gras !\nEt ensuite, tous les ingr\u00e9dients classiques : les \u00e9chalotes et les \u00e9pices pour le go\u00fbt. Et le tofu soyeux et la cr\u00e8me de soja pour la consistance.\nEnsuite, on ajoute une petite couche de gras jaune pour mimiquer le foie gras. Pour cela, rien de plus simple. On fait fondre un peu de cette fameuse huile de coco et on ajoute une pointe de curcuma pour la couleur. On verse au-dessus du faux gras et on laisse figer. Le tour est jou\u00e9 !\nFoie Gras Vegan\nNatacha\n4.53\n/5 avec\n136\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n10\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le faux gras\n25\ng\nde shiitak\u00e9s d\u00e9shydrat\u00e9s\n100\ng\nd\u2019\u00e9chalotes\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\nclou de girofle\n1\npinc\u00e9e de noix de muscade moulue\n1\npinc\u00e9e de poivre noir\n1\npinc\u00e9e de curcuma\nsel\nquelques baies roses\n200\ng\nde tofu soyeux\n60\ng\nde p\u00e2te de miso blanc\n40\ng\nd\u2019huile de coco d\u00e9sodoris\u00e9e\n100\ng\nd\u2019haricots blancs en conserve\n150\nml\nde vin blanc sec\n50\nml\nde cr\u00e8me de soja\n1,5\nc\u00e0c d\u2019agar-ager\nPour la couche de gras\n30\ng\nd\u2019huile de coco d\u00e9sodoris\u00e9e\n\u00bc\nc\u00e0c de curcuma\nInstructions\nMettez les shiitak\u00e9s dans un bol et couvrez-les d\u2019eau bouillante. Mettez-en juste assez pour les couvrir.\n\u00c9mincez les \u00e9chalotes.\nFaites chauffer \u00e0 feu moyen-fort une po\u00eale avec une c\u00e0s d\u2019huile d\u2019olive. Faites-y revenir les \u00e9chalotes avec les \u00e9pices pendant quelques minutes. Versez les shiitak\u00e9s et leur eau de trempage dans la casserole. Faites revenir une quinzaine de minutes, jusqu\u2019\u00e0 \u00e9vaporation compl\u00e8te de l\u2019eau. Les \u00e9chalotes et les shiitak\u00e9s doivent \u00eatre l\u00e9g\u00e8rement color\u00e9s.\nDans le bol de votre mixeur (ou dans un saladier si vous avez un mixeur plongeant), versez le tofu, le miso, l\u2019huile de coco et les haricots blancs. Mixez. Ajoutez les shiitak\u00e9s et mixez jusqu\u2019\u00e0 ce que la pr\u00e9paration soit bien lisse.\nEnsuite, dans une petite casserole, versez le vin, la cr\u00e8me et l\u2019agar-agar. M\u00e9langez. Portez \u00e0 \u00e9bullition et laissez bouillir 2min.\nVersez cette pr\u00e9paration dans la pr\u00e9c\u00e9dente et mixez de nouveau.\nTransvasez la pr\u00e9paration dans des bocaux. J\u2019aime mettre un peu de poivre moulu entre les couches.\nFinalement, pour r\u00e9aliser la couche de gras, faites fondre l\u2019huile de coco avec le curcuma. M\u00e9langez. Puis versez cette pr\u00e9paration sur les bocaux.\nMettez les faux gras \u00e0 figer au frais. Laissez les figer toute une nuit !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire le faux gras\n,\nfaire son faux gras\n,\nfaux gras\n,\nfaux gras maison\n,\nidee recette noel\n,\nidee repas noel\n,\nplat noel vegetarien\n,\nrecette faux gras\n,\nrecette foie gras vegan\n,\nrecette noel\n,\nrecette noel vegetarien\n,\nrepas noel vegetarien\nNos plats pour un No\u00ebl V\u00e9g\u00e9tarien ou Vegan\nBourguignon de l\u00e9gumes\n6 thoughts on \u201cFoie Gras Vegan\u201d\nEmilie\ndit\u00a0:\n3 d\u00e9cembre 2021 \u00e0 16 h 40 min\nJe me demandais si cette recette pouvait se faire \u00e0 l\u2019avance. Est-ce qu\u2019elle se conserve au frais apr\u00e8s avoir \u00e9t\u00e9 fig\u00e9e ?\nEst-il aussi possible d\u2019utiliser des shitak\u00e9s frais ?\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n6 d\u00e9cembre 2021 \u00e0 21 h 50 min\nBonjour \u00c9milie ! Tu peux la pr\u00e9parer 2-3 jours \u00e0 l\u2019avance. Je pense que tu peux la conserver une semaine au frais dans un bocal ferm\u00e9. J\u2019ai peur qu\u2019elle devienne acide apr\u00e8s.\nTu peux utiliser des shiitakes frais mais assure toi bien qu\u2019ils aient bien rejet\u00e9 toute leur eau.\nchargement\u2026\nR\u00e9pondre\nJuliette\ndit\u00a0:\n12 d\u00e9cembre 2021 \u00e0 13 h 31 min\nBonjour, merci pour cette recette ! Savez vous si le fo gras peut se congeler ? \ud83d\ude42 merci !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n13 d\u00e9cembre 2021 \u00e0 14 h 19 min\nHello Juliette. Je n\u2019ai jamais essay\u00e9 de le congeler, d\u00e9sol\u00e9e, je ne suis pas en mesure de te r\u00e9pondre \ud83d\ude41\nchargement\u2026\nR\u00e9pondre\nSarah\ndit\u00a0:\n22 d\u00e9cembre 2023 \u00e0 18 h 22 min\nBonjour, Merci pour cette recette, je pense la tester ce No\u00ebl!! Peut on remplacer le miso blanc par du brun? Merci et joyeuses f\u00eates!\nchargement\u2026\nR\u00e9pondre\nDion\ndit\u00a0:\n10 d\u00e9cembre 2024 \u00e0 18 h 09 min\nBonjour,\nEst ce possible d\u2019avoir les quantit\u00e9s ?\nBonne soir\u00e9e\nchargement\u2026\nR\u00e9pondre\n4.53 from 136 votes (\n135 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 2.0
+}

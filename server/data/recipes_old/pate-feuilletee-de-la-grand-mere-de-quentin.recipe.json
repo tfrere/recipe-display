@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "title": "Pâte feuilletée de la grand-mère de Quentin",
+    "description": "Une pâte feuilletée traditionnelle réalisée avec de la margarine, nécessitant six tours de pliage et repos.",
+    "servings": 1,
+    "prepTime": "PT30M",
+    "cookTime": null,
+    "difficulty": "hard",
+    "recipeType": "base",
+    "tags": [
+      "pâte feuilletée",
+      "pâtisserie",
+      "français",
+      "traditionnel"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054438-30de3466.png",
+    "nationality": "French",
+    "author": "La grand-mère de Quentin",
+    "source": null,
+    "notes": [
+      "La margarine doit représenter exactement la moitié du poids de la farine.",
+      "La pâte doit reposer suffisamment entre chaque tour pour éviter que le beurre ne fonde."
+    ],
+    "slug": "pate-feuilletee-de-la-grand-mere-de-quentin",
+    "sourceImageUrl": "pate-feuilletee-de-la-grand-mere-de-quentin.png",
+    "originalContent": "Pate feuilletée\nde la grand mère de quentin\n\nIngrédients :\n- 500g de farine t45\n- 250g de margarine (toujours moitié de la farine)\n- Une pincée de sel\nPréparation :\n- Mettre le sel dans la farine\n- Mouiller la farine en plusieurs fois et pétrir jusqu'à avoir une pâte ferme\n- Laisser reposer une heure\n- Étaler la pâte\n- Bolosser la margarine pour l'aplatir\n- La mettre sur le carré de pâte et replier en quatre\n- Étaler la pâte, replier en trois et tourner dans le sens des aiguilles d'une montre, étaler de nouveau, replier en trois et laisser reposer 15 minutes\nRenouveler l'opération deux fois (en tout six tours)\n\nMain recipe image: temp_image_recipe-gen-20260208054438-30de3466.png",
+    "createdAt": "2026-02-08T05:45:38.935132",
+    "creationMode": "unknown",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 131.0,
+    "totalCookingTime": 41.0,
+    "image": "images/pate-feuilletee-de-la-grand-mere-de-quentin.png",
+    "nutritionPerServing": {
+      "calories": 3602.5,
+      "protein": 50.5,
+      "fat": 205.5,
+      "carbs": 381.9,
+      "fiber": 15.0,
+      "confidence": "high",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 2,
+      "totalIngredients": 2,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine_t45",
+      "name": "farine t45",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "flour"
+    },
+    {
+      "id": "margarine",
+      "name": "margarine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "toujours moitié de la farine",
+      "optional": false,
+      "name_en": "margarine"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "une pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour mouiller la farine",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "plan de travail",
+    "rouleau à pâtisserie"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "Mettre le sel dans la farine.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "farine_t45",
+        "sel"
+      ],
+      "produces": "farine_salee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mouiller_petrir",
+      "action": "Mouiller la farine en plusieurs fois et pétrir jusqu'à avoir une pâte ferme.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "farine_salee",
+        "eau"
+      ],
+      "produces": "pate_ferme",
+      "requires": [],
+      "visualCue": "pâte ferme et homogène"
+    },
+    {
+      "id": "reposer_premier",
+      "action": "Laisser reposer la pâte une heure.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_ferme"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "Étaler la pâte en un carré.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "carre_pate",
+      "requires": [],
+      "visualCue": "carré régulier"
+    },
+    {
+      "id": "bolosser_margarine",
+      "action": "Bolosser la margarine pour l'aplatir.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "margarine",
+      "uses": [
+        "margarine"
+      ],
+      "produces": "margarine_aplatie",
+      "requires": [],
+      "visualCue": "margarine aplatie en rectangle"
+    },
+    {
+      "id": "poser_margarine",
+      "action": "Poser la margarine aplatie sur le carré de pâte et replier en quatre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "carre_pate",
+        "margarine_aplatie"
+      ],
+      "produces": "pate_pliee_quatre",
+      "requires": [],
+      "visualCue": "pâte repliée en quatre"
+    },
+    {
+      "id": "premier_tour",
+      "action": "Étaler la pâte, replier en trois et tourner dans le sens des aiguilles d'une montre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_pliee_quatre"
+      ],
+      "produces": "pate_tournee_un",
+      "requires": [],
+      "visualCue": "pâte étalée et repliée en trois"
+    },
+    {
+      "id": "deuxieme_tour",
+      "action": "Étaler la pâte de nouveau, replier en trois et laisser reposer 15 minutes.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_tournee_un"
+      ],
+      "produces": "pate_reposee_un",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "troisieme_tour",
+      "action": "Étaler la pâte, replier en trois et tourner dans le sens des aiguilles d'une montre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_reposee_un"
+      ],
+      "produces": "pate_tournee_deux",
+      "requires": [],
+      "visualCue": "pâte étalée et repliée en trois"
+    },
+    {
+      "id": "quatrieme_tour",
+      "action": "Étaler la pâte, replier en trois et laisser reposer 15 minutes.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_tournee_deux"
+      ],
+      "produces": "pate_reposee_deux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cinquieme_tour",
+      "action": "Étaler la pâte, replier en trois et tourner dans le sens des aiguilles d'une montre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_reposee_deux"
+      ],
+      "produces": "pate_tournee_trois",
+      "requires": [],
+      "visualCue": "pâte étalée et repliée en trois"
+    },
+    {
+      "id": "sixieme_tour",
+      "action": "Étaler la pâte, replier en trois pour le dernier tour.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "feuilletage",
+      "uses": [
+        "pate_tournee_trois"
+      ],
+      "produces": "pate_feuilletee_finale",
+      "requires": [],
+      "visualCue": "pâte feuilletée prête à l'emploi"
+    }
+  ],
+  "finalState": "pate_feuilletee_finale",
+  "originalText": "Pate feuilletée\nde la grand mère de quentin\n\nIngrédients :\n- 500g de farine t45\n- 250g de margarine (toujours moitié de la farine)\n- Une pincée de sel\nPréparation :\n- Mettre le sel dans la farine\n- Mouiller la farine en plusieurs fois et pétrir jusqu'à avoir une pâte ferme\n- Laisser reposer une heure\n- Étaler la pâte\n- Bolosser la margarine pour l'aplatir\n- La mettre sur le carré de pâte et replier en quatre\n- Étaler la pâte, replier en trois et tourner dans le sens des aiguilles d'une montre, étaler de nouveau, replier en trois et laisser reposer 15 minutes\nRenouveler l'opération deux fois (en tout six tours)\n\nMain recipe image: temp_image_recipe-gen-20260208054438-30de3466.png",
+  "totalCookingTime": 41.0
+}

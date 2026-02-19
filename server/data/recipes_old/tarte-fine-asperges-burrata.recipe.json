@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "title": "Tarte fine asperges burrata",
+    "description": "Vous allez adopter cette recette de Tarte fine asperges burrata en deux temps, trois mouvements !",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "asperge",
+      "printemps",
+      "burrata",
+      "tarte fine"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tarte-fine-asperge-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'aime beaucoup les tartes fines. Notamment parce qu'elles sont faciles \u00e0 pr\u00e9parer. Et qu'elles font toujours leur effet quand vous avez des invit\u00e9s.",
+      "En g\u00e9n\u00e9ral, j'utilise une p\u00e2te feuillet\u00e9e du commerce pour mes tartes fines.",
+      "On peut tout \u00e0 fait utiliser une p\u00e2te bris\u00e9e faite maison. Cela dit, on n'obtiendra pas les bords qui gonflent.",
+      "Vous trouverez la version avec des courgettes juste ici.",
+      "Vous trouverez ma recette de p\u00e2te bris\u00e9e ici, si besoin.",
+      "Pour les asperges : Si vous les aimez bien croquantes, vous pouvez ne pas les pr\u00e9cuire. Moi je les pr\u00e9f\u00e8re un peu fondantes. Donc je les fais pr\u00e9cuire 5min \u00e0 la vapeur. Si vous les voulez tr\u00e8s fondantes, vous pouvez aller jusqu'\u00e0 7-8min."
+    ],
+    "slug": "tarte-fine-asperges-burrata",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tarte-fine-asperge-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/06/19/tarte-fine-asperges-burrata/",
+    "image": "images/tarte-fine-asperges-burrata.webp",
+    "createdAt": "2026-02-09T22:17:34.748425",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 63.0,
+    "totalCookingTime": 28.0,
+    "peakMonths": [
+      "April",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 119.5,
+      "protein": 9.6,
+      "fat": 5.2,
+      "carbs": 9.9,
+      "fiber": 2.5,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "asperges_vertes",
+      "name": "asperges vertes",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "green asparagus"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "ail",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "ciboulette",
+      "name": "brins de ciboulette",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "pate_feuilletee",
+      "name": "rouleau de p\u00e2te feuillet\u00e9e",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Puff pastry sheet"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "burrata",
+      "name": "burrata",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Burrata"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "trim_asparagus",
+      "action": "Coupez la partie dure des tiges des asperges.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "asperges_vertes"
+      ],
+      "produces": "trimmed_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_asparagus",
+      "action": "Coupez les asperges en tron\u00e7ons d'environ 10cm.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "trimmed_asparagus"
+      ],
+      "produces": "asparagus_pieces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_asparagus",
+      "action": "Faites-les cuire 5min \u00e0 la vapeur pour des asperges fondantes, ou vous pouvez aussi ne pas les faire pr\u00e9cuire pour des asperges croquantes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "asparagus_pieces"
+      ],
+      "produces": "cooked_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_dolive"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_ricotta",
+      "action": "M\u00e9langez la ricotta avec l'ail press\u00e9 et la ciboulette hach\u00e9e.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ricotta",
+        "ail",
+        "ciboulette",
+        "sel",
+        "poivre"
+      ],
+      "produces": "ricotta_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_pastry",
+      "action": "Etalez la p\u00e2te feuillet\u00e9e sur une plaque de cuisson.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_feuilletee"
+      ],
+      "produces": "rolled_pastry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_ricotta",
+      "action": "R\u00e9partissez la ricotta par-dessus, en laissant environ 1cm sur les bords.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "rolled_pastry",
+        "ricotta_mixture"
+      ],
+      "produces": "pastry_with_ricotta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_asparagus",
+      "action": "Coupez les plus grosses tiges d'asperges en deux dans la longueur puis r\u00e9partissez les asperges sur la ricotta.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pastry_with_ricotta",
+        "cooked_asparagus"
+      ],
+      "produces": "tarte_with_asparagus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drizzle_olive_oil",
+      "action": "Versez un filet d'huile d'olive par-dessus.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_with_asparagus",
+        "huile_dolive"
+      ],
+      "produces": "tarte_oiled",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tarte",
+      "action": "Enfournez 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_oiled"
+      ],
+      "produces": "baked_tarte",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "add_burrata",
+      "action": "D\u00e9posez la burrata au centre de la tarte, saupoudrez de ciboulette, de sel et versez un petit filet d'huile.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_tarte",
+        "burrata",
+        "ciboulette",
+        "sel",
+        "huile_dolive",
+        "poivre"
+      ],
+      "produces": "tarte_fine_asparges_burrata",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez ti\u00e8de ou froid.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tarte_fine_asparges_burrata"
+      ],
+      "produces": "served_tarte",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "served_tarte",
+  "originalText": "Tarte fine asperges burrata - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 juin 2024\nTarte fine asperges burrata\nVous allez adopter cette recette de Tarte fine asperges burrata en deux temps, trois mouvements !\nJ\u2019aime beaucoup les tartes fines. Notamment parce qu\u2019elles sont faciles \u00e0 pr\u00e9parer. Et qu\u2019elles font toujours leur effet quand vous avez des invit\u00e9s. Elles donnent un air raffin\u00e9 \u00e0 votre menu. Elles sont bonnes, variables \u00e0 l\u2019infini, rapide \u00e0 faire cuire !\nVous trouverez la version avec des courgettes juste ici\n!\nEn g\u00e9n\u00e9ral, j\u2019utilise une p\u00e2te feuillet\u00e9e du commerce pour mes tartes fines. Je n\u2019ai jamais fait de p\u00e2te feuillet\u00e9e maison ! \u00c7a me fait peur ! Et puis tout le monde sait que c\u2019est super long \u00e0 faire !\nMais je pense qu\u2019on peut tout \u00e0 fait utiliser une p\u00e2te bris\u00e9e faite maison. Cela dit, on n\u2019obtiendra pas les bords qui gonflent. Et le joli feuilletage sur le c\u00f4t\u00e9. C\u2019est un choix ! Libre \u00e0 vous de faire comme vous voulez.\nVous trouverez ma recette de p\u00e2te bris\u00e9e ici, si besoin\n.\nSinon, pour faire cette Tarte fine asperges burrata, vous avez deux options concernant les asperges. Si vous les aimez bien croquantes, vous pouvez ne pas les pr\u00e9cuire. Moi je les pr\u00e9f\u00e8re un peu fondantes. Donc je les fais pr\u00e9cuire 5min \u00e0 la vapeur. Si vous les voulez tr\u00e8s fondantes, vous pouvez aller jusqu\u2019\u00e0 7-8min.\nJ\u2019esp\u00e8re que cette petite recette vous plaira pour cette fin de saison des asperges !\nTarte fine asperges burrata\n4.49\n/5 avec\n107\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nd\u2019asperges vertes\n250\ng\nde ricotta\n1\ngousses d\u2019ail\n15\nbrins de ciboulette\nsel\npoivre\n1\nrouleau de p\u00e2te feuillet\u00e9e\nhuile d\u2019olive\n1\nburrata\nInstructions\nCoupez la partie dure des tiges des asperges.\nPuis coupez les asperges en tron\u00e7ons d\u2019environ 10cm.\nFaites-les cuire 5min \u00e0 la vapeur pour des asperges fondantes, ou vous pouvez aussi de ne pas les faire pr\u00e9cuire pour des asperges croquantes.\nPr\u00e9chauffez le four \u00e0 200\u00b0C.\nM\u00e9langez la ricotta avec l'ail press\u00e9 et la ciboulette hach\u00e9e.\nEtalez la p\u00e2te feuillet\u00e9e sur une plaque de cuisson.\nR\u00e9partissez la ricotta par-dessus, en laissant environ 1cm sur les bords.\nCoupez les plus grosses tiges d\u2019asperges en deux dans la longueur puis r\u00e9partissez les asperges sur la ricotta.\nVersez un filet d\u2019huile d\u2019olive par-dessus.\nEnfournez 30min.\nD\u00e9posez la burrata au centre de la tarte, saupoudrez de ciboulette, de sel et versez un petit filet d\u2019huile.\nServez ti\u00e8de ou froid.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAsperge\n,\nPrintemps\n,\nQuiches et Tartes\nTags:\nburrata\n,\ntarte fine\nSalade de concombre \u00e0 la cacahu\u00e8te\nGalettes de petits pois \u00e0 l\u2019indienne\n2 thoughts on \u201cTarte fine asperges burrata\u201d\nBonhomme\ndit\u00a0:\n23 juin 2024 \u00e0 10 h 01 min\nBonjour\nMerci pour cette recette.\nVous mettez la ricotta nature dans la tarte ?\nO\u00f9 utilisez vous l\u2019ail ?\nUn grand merci pour toutes vos recettes.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n25 juin 2024 \u00e0 15 h 52 min\nCoucou, j\u2019avais oubli\u00e9 une \u00e9tape de la recette merci !! Je viens de la mettre \u00e0 jour !\nchargement\u2026\nR\u00e9pondre\n4.49 from 107 votes (\n107 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 28.0
+}

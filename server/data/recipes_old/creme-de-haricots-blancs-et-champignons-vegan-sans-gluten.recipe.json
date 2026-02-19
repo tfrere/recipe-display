@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "title": "Crème de Haricots Blancs et Champignons (Vegan, Sans Gluten)",
+    "description": "Une tartinade super crémeuse à base de haricots blancs et de champignons de Paris, parfaite pour l'apéro ou en dip.",
+    "servings": 1,
+    "prepTime": null,
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "vegan",
+      "gluten_free",
+      "spread",
+      "dip",
+      "mushroom",
+      "white_beans",
+      "winter",
+      "autumn"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/Creme-champ-haricots-1-of-4-768x1024.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Variante agréable du houmous.",
+      "Parfaite pour les mois d'hiver.",
+      "Encore plus rapide avec des champignons surgelés et des haricots en bocal."
+    ],
+    "slug": "creme-de-haricots-blancs-et-champignons-vegan-sans-gluten",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/Creme-champ-haricots-1-of-4-768x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/02/10/creme-de-haricots-blancs-et-champignons-vegan-sans-gluten/",
+    "image": "images/creme-de-haricots-blancs-et-champignons-vegan-sans-gluten.webp",
+    "createdAt": "2026-02-09T19:41:21.841953",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 1165.3,
+      "protein": 68.4,
+      "fat": 27.0,
+      "carbs": 174.5,
+      "fiber": 57.8,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil_drizzle",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "filet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons de Paris",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coupés en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "white_beans",
+      "name": "haricots blancs cuits",
+      "quantity": 230.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou en conserve",
+      "optional": false,
+      "name_en": "Great Northern beans"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "saute_mushrooms",
+      "action": "Faire revenir les champignons dans une poêle avec 1 gousse d'ail pressée, les branches de thym et un filet d'huile d'olive, à feu moyen-fort. Laisser cuire 10min en remuant régulièrement, jusqu'à ce que toute l'eau des champignons se soit évaporée et qu'ils commencent à griller légèrement.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mushrooms",
+        "garlic",
+        "thyme",
+        "olive_oil_drizzle"
+      ],
+      "produces": "sauteed_mushrooms",
+      "requires": [],
+      "visualCue": "toute l'eau des champignons se soit évaporée et qu'ils commencent à griller légèrement"
+    },
+    {
+      "id": "reserve_mushrooms",
+      "action": "Réserver 1/3 des champignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_mushrooms"
+      ],
+      "produces": "reserved_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_cream",
+      "action": "Mixer le reste des champignons avec la gousse d'ail crue restante, les haricots blancs, l'huile d'olive et le citron, jusqu'à obtenir une consistance bien crémeuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_mushrooms",
+        "garlic",
+        "white_beans",
+        "olive_oil",
+        "lemon"
+      ],
+      "produces": "bean_mushroom_cream",
+      "requires": [],
+      "visualCue": "consistance bien crémeuse"
+    },
+    {
+      "id": "season",
+      "action": "Ajuster l'assaisonnement avec sel et poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "bean_mushroom_cream",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_cream",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir sur des toasts et décorer avec les champignons restants.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_cream",
+        "reserved_mushrooms"
+      ],
+      "produces": "creme_haricots_blancs_champignons",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creme_haricots_blancs_champignons",
+  "originalText": "Crème de Haricots Blancs et Champignons (Vegan, Sans Gluten) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 février 2020\nCrème de Haricots Blancs et Champignons (Vegan, Sans Gluten)\nAccéder directement à la recette\nCette fois-ci je vous propose de découvrir cette recette de tartinade super crémeuse à base de haricots blancs et de champignons de paris.\nQu’on se le dise :  j’aime\nle houmous\n! J’en mangerai à toutes les sauces et à tous les repas si on me laissait faire (recette de\nhoumous au potimarron par ici\n!) ! Cela dit, il faut varier les plaisirs 🙂\nÇa faisait un moment que je voyais passer des recettes de “houmous” aux haricots blancs et ça avait l’air plutôt sympa ! Alors j’ai décidé de tenter une recette en associant les haricots, pour le crémeux, et des champignons à l’ail pour relever un peu le goût !\nLa recette est super simple, il faut compter 6 ingrédients, et une vingtaine de minutes en cuisine (encore moins si vous utilisez des champignons surgelés et des haricots en bocal.. je ne vous jugerai pas… je plaide coupable ! parfois on a juste pas le temps !!)\ncette tartinade change agréablement du houmous, et constitue un dip/apéro parfait pour les mois d’hiver 🙂 avant de pouvoir repartir sur les dips d’été 🙂 genre …\nktipiti\n,\ncrème de courgette au tahini\nou\ncaviar d’aubergine\n!\nCrème de Haricots Blancs et Champignons (Vegan, Sans Gluten)\n4.54\n/5 avec\n98\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nTemps total\n20\nminutes\nmin\nPortions\n1\nbocal\nIngrédients\n1x\n2x\n3x\n1\nfilet d’huile d’olive\n400\ng\nde champignons de paris coupés en rondelles\n3\nbranches de thym\n2\ngousses d’ail\n230\ng\nde haricots blancs cuits\nou en conserve\n1,5\nc-à-s d’huile d’olive\n1\nc-à-s de citron\nsel\npoivre\nInstructions\nFaire revenir les champignons dans une poêle avec une gousse d’ail pressée, les branches de thym et un filet d’huile d’olive, à feu moyen fort. Laisser cuire une dizaine de minutes en remuant régulièrement. C’est cuit lorsque toute l’eau des champignons s’est évaporée et qu’ils commencent à griller légèrement.\nRéserver 1/3 des champignons.\nMixer le reste avec la gousse d’ail crue restante, les haricots blancs, l’huile et le citron, jusqu’à obtenir une consistance bien crémeuse. Ajuster l’assaisonnement.\nServir sur des toasts et décorer avec les champignons restants.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nApéros\n,\nAutomne\n,\nBrunch Salé\n,\nChampignon\n,\nHiver\n,\nNos recettes Véganes\n,\nPlats & Accompagnements\n,\nRecettes Salées\nTags:\ncreme de champignons\n,\ncreme de haricots\n,\ntartinade vegan\nSauce bolognaise aux Protéines de Soja Texturées\nTartelettes Pistache Kiwi (Véganes et Sans Cuisson)\n2 thoughts on “Crème de Haricots Blancs et Champignons (Vegan, Sans Gluten)”\nLadyMilonguera\ndit :\n10 février 2020 à 12 h 31 min\nPlutôt sympathique cette crème !\nchargement…\nRépondre\nthenaisy\ndit :\n11 février 2020 à 10 h 34 min\nmerci pour cette recette que je vais tester, ce samedi j’ai organisé un atelier yoga et naturo avec dégustation le thème s’était les huiles essentielles, j’ai fait du houmous à la betterave et justement j’ai remplacé les pois chiches par des haricots blancs un pur délice  et un autre avec des carottes rôties au four idem, recette du livre ma cuisine végan au thermomix mais que j’ai revisité ! avec les haricots plus digeste et plus doux pour les intestins\nbelle journée Véronique\nchargement…\nRépondre\n4.54 from 98 votes (\n98 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

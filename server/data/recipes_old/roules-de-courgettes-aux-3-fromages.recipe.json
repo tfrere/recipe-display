@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "title": "Roul\u00e9s de Courgettes aux 3 Fromages",
+    "description": "Pour changer un peu des recettes de courgettes, je vous propose ces roul\u00e9s de courgettes aux 3 fromages. Ces roul\u00e9s de courgettes aux 3 fromages sont d\u00e9pos\u00e9s sur une sauce tomate maison, super simple mais pleine de go\u00fbt !",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H10M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "courgette",
+      "v\u00e9g\u00e9tarien",
+      "involtini",
+      "fromage",
+      "plat au four",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Roules-de-courgettes-aux-3-fromages-5-of-5.jpg",
+    "nationality": "Italian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "C'est tr\u00e8s bon froid aussi !",
+      "J'ai utilis\u00e9 la fameuse huile d'olive Fossatolio."
+    ],
+    "slug": "roules-de-courgettes-aux-3-fromages",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/06/Roules-de-courgettes-aux-3-fromages-5-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/06/20/roules-de-courgettes-aux-3-fromages/",
+    "image": "images/roules-de-courgettes-aux-3-fromages.webp",
+    "createdAt": "2026-02-09T20:28:21.944637",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 75.0,
+    "totalCookingTime": 15.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 347.9,
+      "protein": 19.7,
+      "fat": 23.0,
+      "carbs": 17.3,
+      "fiber": 3.1,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 9,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "petit oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9 finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "Pearl onion"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tomato_sauce",
+      "name": "coulis de tomate",
+      "quantity": 350.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgettes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "olive_oil_brushing",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "mint",
+      "name": "menthe fra\u00eeche",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9e",
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Fresh mint"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "Mozzarella"
+    }
+  ],
+  "tools": [
+    "Mandoline (optionnelle)",
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "slice_zucchini",
+      "action": "Coupez des lamelles de courgettes dans le sens de la longueur (\u00e9paisseur de 2-3mm).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "zucchini"
+      ],
+      "produces": "zucchini_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "zucchini_strips"
+      ],
+      "produces": "preheated_oven_with_zucchini",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_zucchini_strips",
+      "action": "Disposez les rubans sur une plaque de cuisson recouverte de papier cuisson. Badigeonnez chaque ruban d'huile d'olive, puis enfournez pour 10min.",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "zucchini_strips",
+        "olive_oil_brushing"
+      ],
+      "produces": "baked_zucchini_strips",
+      "requires": [
+        "preheated_oven_with_zucchini"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_zucchini",
+      "action": "Sortez-les du four et laissez-les refroidir un peu. Laissez le four allum\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "baked_zucchini_strips"
+      ],
+      "produces": "cooled_zucchini_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_cheese_mixture",
+      "action": "Dans un bol, \u00e9miettez la f\u00eata et m\u00e9langez-la \u00e0 la ricotta. Ajoutez la menthe hach\u00e9e, salez et poivrez. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "feta",
+        "ricotta",
+        "mint",
+        "salt",
+        "pepper"
+      ],
+      "produces": "cheese_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mince_onion",
+      "action": "\u00c9mincez l'oignon finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate",
+      "uses": [
+        "onion"
+      ],
+      "produces": "minced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Faites chauffer l'huile d'olive dans une casserole, et faites-y revenir l'oignon pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate",
+      "uses": [
+        "minced_onion",
+        "olive_oil"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_tomato_sauce",
+      "action": "Ajoutez la sauce tomate, l'origan, le sucre et le sel et laissez mijoter \u00e0 feu doux pendant 30min. Pensez \u00e0 remuer de temps en temps.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_tomate",
+      "uses": [
+        "sauteed_onion",
+        "tomato_sauce",
+        "oregano",
+        "sugar",
+        "salt"
+      ],
+      "produces": "tomato_sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_sauce_in_dish",
+      "action": "Dans un petit plat pour le four, versez la sauce tomate.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "tomato_sauce_base"
+      ],
+      "produces": "sauced_baking_dish",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_rolls",
+      "action": "D\u00e9posez une cuill\u00e8re \u00e0 soupe de m\u00e9lange de fromage sur un ruban de courgette et roulez-le. D\u00e9posez-le dans le plat, sur la sauce tomate. R\u00e9p\u00e9tez avec tous les rubans.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "cooled_zucchini_strips",
+        "cheese_mixture",
+        "sauced_baking_dish"
+      ],
+      "produces": "assembled_rolls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "top_with_mozzarella",
+      "action": "Couvrez de mozzarella r\u00e2p\u00e9e et enfournez \u00e0 mi-hauteur pour 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "assembled_rolls",
+        "mozzarella"
+      ],
+      "produces": "baked_rolls",
+      "requires": [
+        "preheated_oven_with_zucchini"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "rest_before_serving",
+      "action": "Laissez ti\u00e9dir avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "roules_de_courgettes",
+      "uses": [
+        "baked_rolls"
+      ],
+      "produces": "roules_de_courgettes_aux_3_fromages",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "roules_de_courgettes_aux_3_fromages",
+  "originalText": "Roul\u00e9s de Courgettes aux 3 Fromages - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 juin 2021\nRoul\u00e9s de Courgettes aux 3 Fromages\nAcc\u00e9der directement \u00e0 la recette\nPour changer un peu des recettes de courgettes, je vous propose ces roul\u00e9s de courgettes aux 3 fromages.\nJe me suis inspir\u00e9e des involtinis italiens ! Le principe ? Utiliser un ruban de l\u00e9gume (ou d\u2019autre chose) et l\u2019enrouler autour d\u2019une garniture !\nIci, la garniture est un mix de 2 fromages : la ricotta et la f\u00eata ! Vous connaissez mon amour pour la f\u00eata. Et je l\u2019ai m\u00e9lang\u00e9 \u00e0 la ricotta pour lui donner plus de douceur et de cr\u00e9meux. Et j\u2019ai ajout\u00e9 de la menthe fra\u00eeche ! Par-dessus : de la mozzarella ! Un d\u00e9lice !\nCes roul\u00e9s de courgettes aux 3 fromages sont d\u00e9pos\u00e9s sur une sauce tomate maison, super simple mais pleine de go\u00fbt !\nJ\u2019ai utilis\u00e9 la fameuse huile d\u2019olive\nFossatolio\n. Nous vous en avions d\u00e9j\u00e0 parl\u00e9 dans nos articles sur les\ncookies vegan\net l\u2019\norzotto d\u2019asperges\n.\nIl s\u2019agit d\u2019une huile d\u2019olive vierge, en cours de labellisation bio. Elle est cultiv\u00e9e \u00e0 la main dans un petit village de Callabre ! Tout est expliqu\u00e9 dans\nce superbe film\n!\nEt si vous cherchez des recettes pleines de fromages, je vous conseille\nles lasagnes d\u2019aubergines \u00e0 la mozzarella et parmesan\n. Et aussi le\ngratin de p\u00e2tes aux 3 fromages\n!\nRoul\u00e9s de Courgettes aux 3 Fromages\nNatacha\n4.43\n/5 avec\n103\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour la sauce\n1\npetit oignon\nenv 70g\n1\nc\u00e0s d\u2019huile d\u2019olive Fossatolio\n350\nml\nde coulis de tomate\n\u00bd\nc\u00e0c d\u2019origan\n\u00bd\nc\u00e0c de sucre\nsel\nIngr\u00e9dients pour les roul\u00e9s\n3\ncourgettes\nenv 900g\nHuile d\u2019olive Fossatolio\n200\ng\nde ricotta\n200\ng\nde f\u00eata\nune dizaine de branches de menthe fra\u00eeche\nsel\npoivre\n70\ng\nde mozzarella r\u00e2p\u00e9e\nInstructions\nPour la sauce\n\u00c9mincez l\u2019oignon finement.\nFaites chauffer l\u2019huile d\u2019olive dans une casserole, et faites-y revenir l\u2019oignon 5min. Ajoutez la sauce tomate, l\u2019origan, le sucre et le sel et laissez mijoter \u00e0 feu doux 30min. Pensez \u00e0 remuer de temps en temps.\nPour les roul\u00e9s\nPr\u00e9chauffez le four \u00e0 200\u00b0C.\nCoupez des lamelles de courgettes dans le sens de la longueur. Si vous avez une mandoline, r\u00e9glez-la sur la plus grosse \u00e9paisseur, sinon utilisez un couteau bien aiguis\u00e9 et faites des lamelles de 2-3mm.\nDisposez les rubans sur une plaque de cuisson recouverte de papier cuisson (il m\u2019a fallu 3 batchs). A l\u2019aide d\u2019un pinceau, badigeonnez chaque ruban d\u2019huile d\u2019olive, puis enfournez pour 10min. Si vous avez 3 plaques, vous pouvez tout enfourner en m\u00eame temps.\nSortez-les du four et laissez-les refroidir un peu. Laissez le four allum\u00e9.\nPendant ce temps, \u00e9miettez la f\u00eata dans un bol, m\u00e9langez-la \u00e0 la ricotta. Hachez les feuilles de menthe et ajoutez-les dans le bol. Salez et poivrez. M\u00e9langez bien.\nDans un petit plat pour le four, versez la sauce tomate.\nD\u00e9posez une c\u00e0s de m\u00e9lange de fromage sur un ruban de courgette et roulez-le. D\u00e9posez le dans le plat, sur la sauce tomate. Recommencez avec tous les rubans de courgettes.\nCouvrez de mozzarella r\u00e2p\u00e9e et enfournez \u00e0 mi-hauteur pour 30min.\nLaissez ti\u00e9dir avant de servir ! C\u2019est tr\u00e8s bon froid aussi !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncourgette v\u00e9g\u00e9tarienne\n,\ninvoltini\n,\nque faire avec des courgettes\n,\nrecette de courgette\n,\nroul\u00e9s aux 3 fromages\n,\nroul\u00e9s de courgettes\nCake \u00e0 la Cerise\nPain \u00e0 l\u2019Ail et au Fromage sur une P\u00e2te \u00e0 Pizza Maison\n2 thoughts on \u201cRoul\u00e9s de Courgettes aux 3 Fromages\u201d\nLadyMilonguera\ndit\u00a0:\n20 juin 2021 \u00e0 18 h 47 min\nSympa ces roul\u00e9s de courgette\u2026\nchargement\u2026\nR\u00e9pondre\nmicky\ndit\u00a0:\n27 juin 2021 \u00e0 21 h 30 min\nsuper recette j\u2019ai m\u00e9lang\u00e9 les feuilles de menthe avec du persil et de la coriandre et c\u2019est super bon. J\u2019ai accompagn\u00e9 les roul\u00e9s avec du riz. Merci pour le partage ce n\u2019est pas la premi\u00e8re recette que j\u2019ai pu d\u00e9couvrir gr\u00e2ce \u00e0 votre site et \u00e0 chaque fois un vrai r\u00e9gal\u2026\nchargement\u2026\nR\u00e9pondre\n4.43 from 103 votes (\n102 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

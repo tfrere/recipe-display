@@ -1,0 +1,664 @@
+{
+  "metadata": {
+    "title": "Beignets asiatiques faciles et croustillants (avec des feuilles de riz)",
+    "description": "Recette de beignets aux saveurs asiatiques super facilement, sans p\u00e2te \u00e0 gyozas, utilisant des feuilles de riz et un pliage simple.",
+    "servings": 10,
+    "prepTime": "PT30M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "asiatique",
+      "dumplings",
+      "recette asiatique",
+      "recette dumplings faciles",
+      "tofu",
+      "feuilles de riz"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Beignets-facile-avec-des-feuilles-de-riz-5-of-5.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je vous conseille quand-m\u00eame d'utiliser une po\u00eale anti-adh\u00e9sive.",
+      "Attention, il faut \u00e9viter qu'ils ne se touchent entre eux, au risque qu'ils ne se collent.",
+      "D\u00e9guster imm\u00e9diatement avec la sauce !"
+    ],
+    "slug": "beignets-asiatiques-faciles-et-croustillants-avec-des-feuilles-de-riz",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Beignets-facile-avec-des-feuilles-de-riz-5-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/09/beignets-asiatiques-faciles-et-croustillants/",
+    "image": "images/beignets-asiatiques-faciles-et-croustillants-avec-des-feuilles-de-riz.jpg",
+    "createdAt": "2026-02-09T21:20:11.326244",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 40.5,
+    "totalCookingTime": 30.5,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 81.7,
+      "protein": 5.0,
+      "fat": 3.6,
+      "carbs": 9.2,
+      "fiber": 3.1,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 15,
+      "totalIngredients": 17,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_ferme",
+      "name": "tofu ferme",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "firm tofu"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "gingembre_frais",
+      "name": "gingembre frais",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "oignons_nouveaux",
+      "name": "oignons nouveaux",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "bulbes et tiges",
+      "optional": false,
+      "name_en": "Spring onions"
+    },
+    {
+      "id": "epinards_frais",
+      "name": "\u00e9pinards frais",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "2 grosses poign\u00e9es",
+      "optional": false,
+      "name_en": "fresh spinach"
+    },
+    {
+      "id": "huile_tournesol",
+      "name": "huile de tournesol",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "curcuma",
+      "name": "curcuma en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric powder"
+    },
+    {
+      "id": "huile_sesame_1",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "sauce_soja_1",
+      "name": "sauce soja tamari",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "feuilles_riz",
+      "name": "feuilles de riz",
+      "quantity": 20.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice paper"
+    },
+    {
+      "id": "sauce_soja_2",
+      "name": "sauce soja tamari",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vinaigre_riz",
+      "name": "vinaigre de riz",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "huile_sesame_2",
+      "name": "huile de s\u00e9same",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "ail_1_2",
+      "name": "ail",
+      "quantity": 0.5,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9sames",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "flocons_piment",
+      "name": "flocons de piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili flakes"
+    }
+  ],
+  "tools": [
+    "Po\u00eale anti-adh\u00e9sive",
+    "Mixeur (optionnel)",
+    "Torchon propre",
+    "Poids lourd (pour presser le tofu)"
+  ],
+  "steps": [
+    {
+      "id": "press_tofu",
+      "action": "Sortir le bloc de tofu de son emballage. L'envelopper dans un torchon propre et d\u00e9poser un poids lourd dessus pour le presser.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "preparation_du_tofu",
+      "uses": [
+        "tofu_ferme"
+      ],
+      "produces": "tofu_pressed",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_tofu",
+      "action": "Le laisser sous la presse au moins 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "preparation_du_tofu",
+      "uses": [
+        "tofu_pressed"
+      ],
+      "produces": "tofu_pressed_rested",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mince_ail_gingembre",
+      "action": "Hacher finement l'ail et le gingembre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "ail",
+        "gingembre_frais"
+      ],
+      "produces": "ail_gingembre_hache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_carrots",
+      "action": "R\u00e2per les carottes. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "carottes"
+      ],
+      "produces": "carottes_rapees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_scallions",
+      "action": "\u00c9mincer les oignons nouveaux (bulbes et tiges). R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_nouveaux"
+      ],
+      "produces": "oignons_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_spinach",
+      "action": "Nettoyer les \u00e9pinards et les hacher grossi\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "epinards_frais"
+      ],
+      "produces": "epinards_haches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crumble_tofu",
+      "action": "Retirer le tofu du torchon et l'\u00e9mietter grossi\u00e8rement avec les mains.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "tofu_pressed_rested"
+      ],
+      "produces": "tofu_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen-fort avec un filet d'huile de tournesol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "huile_tournesol"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_garlic_ginger",
+      "action": "Y faire revenir l'ail et le gingembre 2min.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "ail_gingembre_hache",
+        "poele_chaude"
+      ],
+      "produces": "ail_gingembre_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_tofu_turmeric",
+      "action": "Ajouter le tofu \u00e9miett\u00e9 et le curcuma et faire revenir encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "tofu_emiette",
+        "curcuma",
+        "ail_gingembre_revenus"
+      ],
+      "produces": "tofu_curcuma_revenu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_carrots_scallions",
+      "action": "Ajouter les carottes et les oignons et faire revenir encore 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "carottes_rapees",
+        "oignons_eminces",
+        "tofu_curcuma_revenu"
+      ],
+      "produces": "tofu_legumes_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "finish_filling",
+      "action": "Ajouter les \u00e9pinards, la sauce soja (3 c\u00e0s) et l'huile de s\u00e9same (1 c\u00e0s) et faire revenir encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "epinards_haches",
+        "sauce_soja_1",
+        "huile_sesame_1",
+        "tofu_legumes_revenus"
+      ],
+      "produces": "garniture_finale",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce",
+      "action": "M\u00e9langer tous les ingr\u00e9dients de la sauce (2 c\u00e0s sauce soja, 1 c\u00e0s eau, \u00bd c\u00e0s vinaigre de riz, \u00bd c\u00e0s huile de s\u00e9same, \u00bd gousse d'ail, graines de s\u00e9same, flocons de piment) dans un bol et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sauce_soja_2",
+        "eau",
+        "vinaigre_riz",
+        "huile_sesame_2",
+        "ail_1_2",
+        "graines_sesame",
+        "flocons_piment"
+      ],
+      "produces": "sauce_dip",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_assembly_station",
+      "action": "Pr\u00e9parer un torchon propre humide, un plat d'eau, une pile de 20 feuilles de riz et la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "feuilles_riz",
+        "garniture_finale"
+      ],
+      "produces": "station_assemblage",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "soak_rice_paper_1",
+      "action": "Plonger une feuille de riz dans l'eau pendant environ 15 sec.",
+      "duration": "PT15S",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "station_assemblage"
+      ],
+      "produces": "feuille_riz_humide_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_first_wrapper",
+      "action": "La poser \u00e0 plat et d\u00e9poser 2 c\u00e0s de garniture sur son centre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "feuille_riz_humide_1",
+        "garniture_finale"
+      ],
+      "produces": "feuille_remplie_1",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_first_wrapper",
+      "action": "Replier la feuille de riz pour former un carr\u00e9 (un bord, puis celui d'en face, puis les 2 bords restants).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "feuille_remplie_1"
+      ],
+      "produces": "beignet_premier_pli",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "soak_rice_paper_2",
+      "action": "Tremper une 2e feuille de riz, et la d\u00e9poser \u00e0 plat.",
+      "duration": "PT15S",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "station_assemblage"
+      ],
+      "produces": "feuille_riz_humide_2",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wrap_second_layer",
+      "action": "Y poser le beignet (face avec les bords repli\u00e9s vers le bas) et replier la feuille de riz par-dessus pour obtenir un carr\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "beignet_premier_pli",
+        "feuille_riz_humide_2"
+      ],
+      "produces": "beignet_double_couche",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "store_dumplings",
+      "action": "Stocker les beignets sur le torchon humide, sans qu'ils se touchent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_beignets",
+      "uses": [
+        "beignet_double_couche"
+      ],
+      "produces": "beignets_assembles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan_for_cooking",
+      "action": "Essuyer la po\u00eale et la faire chauffer \u00e0 feu moyen fort avec un filet d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "huile_tournesol"
+      ],
+      "produces": "poele_chaude_cuisson",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_dumplings",
+      "action": "Y d\u00e9poser les beignets, sans qu'ils ne se touchent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "beignets_assembles",
+        "poele_chaude_cuisson"
+      ],
+      "produces": "beignets_en_cuisson",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_dumplings",
+      "action": "Faire cuire environ 4min sur chaque face, jusqu'\u00e0 croustillants.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "beignets_en_cuisson"
+      ],
+      "produces": "beignets_cuits",
+      "requires": [],
+      "visualCue": "croustillants"
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster imm\u00e9diatement avec la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "beignets_cuits",
+        "sauce_dip"
+      ],
+      "produces": "beignets_asiatiques_servis",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "beignets_asiatiques_servis",
+  "originalText": "Beignets asiatiques faciles et croustillants - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 juin 2022\nBeignets asiatiques faciles et croustillants\nAller \u00e0 la recette\nBonjour les amis !\nJe suis trop contente de vous partager cette recette de beignets asiatiques faciles et croustillants. J\u2019ai pens\u00e9 \u00e0 cette recette pour tous ceux qui adorent la cuisine asiatique. Mais qui ont besoin de recettes rapides. Et faciles. Et d\u00e9licieuses, \u00e9videmment !\nJ\u2019ai d\u00e9couvert cette m\u00e9thode en surfant sur les r\u00e9seaux. Je ne sais plus si c\u2019\u00e9tait d\u2019abord sur instagram, tiktok ou pinterest. Mais vous l\u2019avez s\u00fbrement crois\u00e9 aussi. Car elle fait pas mal parler d\u2019elle !\nEt pour cause. Elle permet d\u2019obtenir des beignets aux saveurs asiatiques super facilement. Pas de p\u00e2tes \u00e0 gyozas ou \u00e0 dumplings. Plus ou moins difficiles \u00e0 trouver dans le commerce. Ou \u00e0 faire soi-m\u00eame. Et pas de pliage complexe ! Et mon dieu, \u00e7a m\u2019arrange bien parce que je ne suis pas une experte du pliage.\nL\u2019une de mes plus belles r\u00e9alisations est cette recette de chaussons aux p\u00eaches\n.\nDonc, pour ces beignets, il suffit d\u2019avoir des feuilles de riz. Les m\u00eames que pour les rouleaux de printemps. Ou celles que j\u2019utilise pour les\npaupiettes\nou les\nr\u00f4tis v\u00e9g\u00e9\n. Et ensuite, il suffit de savoir plier en 4 ! Je pense que tout le monde s\u2019en sortirait non ?\nJe vous ai quand m\u00eame pr\u00e9par\u00e9 une petite vid\u00e9o pour vous montrer. Sait-on jamais !\nUne fois pli\u00e9s, il ne reste plus qu\u2019\u00e0 les cuire.\nHyper simple !\nJe vous conseille quand-m\u00eame d\u2019utiliser une po\u00eale anti-adh\u00e9sive. Comme celle-ci de la\ncollection Casteline de Cristel\n, pour qui j\u2019ai cr\u00e9\u00e9 cette recette de Beignets asiatiques faciles et croustillants.\nBeignets asiatiques faciles et croustillants (avec des feuilles de riz)\n4.52\n/5 avec\n111\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n8\nminutes\nmin\nPortions\n10\nbeignets\nIngr\u00e9dients\n1x\n2x\n3x\nIngr\u00e9dients pour les beignets\n250\ng\nde tofu ferme\n4\ngousses d\u2019ail\n15\ng\nde gingembre frais\n2\ncarottes\nenv 250g\n6\noignons nouveaux\nbulbes et tiges\n2\ngrosses poign\u00e9es d\u2019\u00e9pinards frais\nhuile de tournesol\n\u00bd\nc\u00e0c de curcuma en poudre\n1\nc\u00e0s d\u2019huile de s\u00e9same\n3\nc\u00e0s de sauce soja tamari\n20\nfeuilles de riz\nIngr\u00e9dients pour la sauce\n2\nc\u00e0s de sauce soja tamari\n1\nc\u00e0s d\u2019eau\n\u00bd\nc\u00e0s de vinaigre de riz\n\u00bd\nc\u00e0s d\u2019huile de s\u00e9same\n\u00bd\ngousse d\u2019ail\ngraines de s\u00e9sames\nflocons de piment au go\u00fbt\nInstructions\nPr\u00e9paration du tofu\nCommencer par sortir le bloc de tofu de son emballage.\nL\u2019envelopper dans un torchon propre et d\u00e9poser un poids lourd dessus (par exemple une planche et une casserole) pour le presser et en faire sortir l\u2019eau. Le laisser sous la presse au moins 10min, voire plus si vous n\u2019\u00eates pas press\u00e9.\nCela permet d\u2019en retirer l\u2019exc\u00e8s d\u2019eau et d\u2019am\u00e9liorer la consistance \u00e0 la cuisson.\nPr\u00e9paration de la garniture\nHacher finement l\u2019ail et le gingembre. Vous pouvez utiliser un mixeur.\nR\u00e2per les carottes. R\u00e9server.\n\u00c9mincer les oignons nouveaux (bulbes et tiges). R\u00e9server.\nNettoyer les \u00e9pinards et les hacher grossi\u00e8rement.\nRetirer le bloc de tofu du torchon et l\u2019\u00e9mietter grossi\u00e8rement avec les mains.\nFaire chauffer une po\u00eale \u00e0 feu moyen-fort et y verser un filet d\u2019huile de tournesol.\nY faire revenir l\u2019ail et le gingembre 2min.\nAjouter le tofu \u00e9miett\u00e9 et le curcuma et faire revenir encore 5min.\nAjouter les carottes et les oignons et faire revenir encore 10min.\nAjouter les \u00e9pinards, la sauce soja et l\u2019huile de s\u00e9same et faire revenir encore 5min.\nRetirer du feu.\nPr\u00e9paration de la sauce\nM\u00e9langer tous les ingr\u00e9dients de la sauce dans un bol et r\u00e9server.\nPr\u00e9paration des beignets\nPr\u00e9parer votre plan de travail en disposant devant vous un torchon propre humide, un plat (suffisamment large pour y tremper les feuilles de riz) rempli d\u2019eau, une pile de 20 feuilles de riz et la garniture.\nPlonger une feuille de riz dans l\u2019eau pendant environ 15 sec. La feuille de riz doit avoir suffisamment ramollie pour \u00eatre pliable, mais pas non plus compl\u00e8tement molle.\nLa poser \u00e0 plat devant vous et d\u00e9poser 2 c\u00e0s de garniture sur son centre.\nReplier la feuille de riz pour former un carr\u00e9. Pour cela, replier un bord, puis celui d\u2019en face, et finalement les 2 bords restants.\nTremper une 2e feuille de riz, et la d\u00e9poser \u00e0 plat. Y poser le beignet (face avec les bords repli\u00e9s vers le bas) et replier la feuille de riz par-dessus pour obtenir un carr\u00e9.\nStocker les beignets sur le torchon humide. Attention, il faut \u00e9viter qu\u2019ils ne se touchent entre eux, au risque qu\u2019ils ne se collent.\nR\u00e9p\u00e9ter l\u2019op\u00e9ration pour tous les beignets.\nCuisson des beignets\nEssuyer la po\u00eale et la faire chauffer \u00e0 feu moyen fort avec un filet d\u2019huile.\nY d\u00e9poser les beignets, sans qu\u2019ils ne se touchent, sinon ils vont se coller.\nFaire cuire environ 4min sur chaque face.\nD\u00e9guster imm\u00e9diatement avec la sauce !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nRecettes Sal\u00e9es\n,\nWok\nTags:\nasiatiue\n,\ndumplings\n,\nrecette asiatique\n,\nrecette dumplings faciles\nGalettes anti-gaspi quinoa et \u00e9pluchures\nNotre top 10 de recettes \u00e0 base de courgettes\n1 thought on \u201cBeignets asiatiques faciles et croustillants\u201d\nLadyMilonguera\ndit\u00a0:\n10 juin 2022 \u00e0 9 h 36 min\nCes beignets asiatiques me plaisent bien\u2026\nchargement\u2026\nR\u00e9pondre\n4.52 from 111 votes (\n110 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 30.5
+}

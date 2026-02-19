@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "title": "Gratin de potimarron au St Nectaire : le plat r\u00e9confortant sans prise de t\u00eate !",
+    "description": "Un gratin ultra facile, sans pr\u00e9cuisson, avec une texture ultra cr\u00e9meuse. Le potimarron fond doucement au four pendant que le fromage coule et gratine.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "gratin",
+      "potimarron",
+      "fromage",
+      "hiver",
+      "automne",
+      "plat au four",
+      "v\u00e9g\u00e9tarien",
+      "r\u00e9confortant"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/gratin-de-potimarron-au-st-nectaire-freethepickel.jpg",
+    "nationality": "French",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pas de St Nectaire sous la main ? Pas de panique ! Remplacez-le par un fromage d'hiver bien fondant comme du reblochon, de la raclette ou m\u00eame du Mont d'Or. R\u00e9sultat toujours aussi gourmand garanti !",
+      "Pas besoin d'\u00e9plucher le potimarron, sa peau devient fondante \u00e0 la cuisson."
+    ],
+    "slug": "gratin-de-potimarron-au-st-nectaire-le-plat-reconfortant-sans-prise-de-tete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/gratin-de-potimarron-au-st-nectaire-freethepickel.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/26/gratin-de-potimarron-au-st-nectaire/",
+    "image": "images/gratin-de-potimarron-au-st-nectaire-le-plat-reconfortant-sans-prise-de-tete.webp",
+    "createdAt": "2026-02-09T22:36:00.551438",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 20.0,
+    "peakMonths": [
+      "December",
+      "January",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 543.2,
+      "protein": 21.0,
+      "fat": 43.6,
+      "carbs": 15.3,
+      "fiber": 1.3,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "potimarron",
+      "name": "potimarron",
+      "quantity": 600.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Hokkaido pumpkin"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 1.0,
+      "unit": "bot",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 20.0,
+      "unit": "cl",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "st_nectaire",
+      "name": "St-Nectaire",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint-Nectaire"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mandoline",
+    "Plat \u00e0 gratin"
+  ],
+  "steps": [
+    {
+      "id": "slice_vegetables",
+      "action": "Pelez et passez la courge et les pommes de terre \u00e0 la mandoline.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potimarron",
+        "potatoes"
+      ],
+      "produces": "sliced_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_vegetables_cheese",
+      "action": "Mettez les l\u00e9gumes dans un saladier avec la ciboulette hach\u00e9e, l'ail press\u00e9 et les 2 tiers du St-Nectaire en morceaux.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_vegetables",
+        "chives",
+        "garlic",
+        "st_nectaire"
+      ],
+      "produces": "vegetable_cheese_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cream_season",
+      "action": "Ajoutez la cr\u00e8me, le sel et le poivre et m\u00e9langez.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_cheese_mix",
+        "cream",
+        "salt",
+        "pepper"
+      ],
+      "produces": "gratin_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_top_cheese",
+      "action": "Transvaser dans un plat pour le four. Coupez la fin du St-Nectaire en tranches et mettez-les sur le plat.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "gratin_mixture",
+        "st_nectaire"
+      ],
+      "produces": "assembled_gratin",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez 40min.",
+      "duration": "PT40M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_gratin"
+      ],
+      "produces": "baked_gratin",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_gratin",
+  "originalText": "Gratin de Potimarron au St Nectaire : gourmand et simplissime !\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n26 f\u00e9vrier 2025\nGratin de potimarron au St Nectaire : le plat r\u00e9confortant sans prise de t\u00eate !\nSi vous cherchez un\ngratin ultra facile\n\u00e0 pr\u00e9parer, ne bougez plus, vous \u00eates au bon endroit ! Ce\nGratin de potimarron au St Nectaire\ncoche toutes les cases du\nplat r\u00e9confortant\nparfait :\nz\u00e9ro pr\u00e9cuisson\net surtout une texture\nultra cr\u00e9meuse\nqui r\u00e9chauffe l\u2019\u00e2me. Le\npotimarron\nfond doucement au\nfour\npendant que le\nfromage\ncoule\net\ngratine\njuste comme il faut\u2026 Un vrai bonheur ! Et si vous n\u2019avez pas de\nSt Nectaire\n, pas de souci : un\nreblochon\n, une bonne\nraclette\nou tout autre\nfromage d\u2019hiver bien fondant\nferont aussi merveille. Cerise sur le\ngratin\n: presque pas de vaisselle \u00e0 faire apr\u00e8s, et \u00e7a, c\u2019est la vraie victoire ! Allez, on sort le\nplat \u00e0 gratin\net on se met aux\nfourneaux\n!\nTable des mati\u00e8res\n1\nLe potimarron, une p\u00e9pite de l\u2019automne et de l\u2019hiver\n2\nGratin de potimarron au St Nectaire\n3\nLe Saint-Nectaire, un fromage au caract\u00e8re fondant\nLe potimarron, une p\u00e9pite de l\u2019automne et de l\u2019hiver\nAvec sa chair douce et l\u00e9g\u00e8rement sucr\u00e9e, le\npotimarron\nest une v\u00e9ritable star des plats r\u00e9confortants. Contrairement au potiron, il a une texture plus ferme et une saveur rappelant la ch\u00e2taigne. C\u2019est un ingr\u00e9dient id\u00e9al pour les gratins. Riche en b\u00eata-carot\u00e8ne, en fibres et en vitamines, il apporte de l\u2019\u00e9nergie et du r\u00e9confort tout en \u00e9tant facile \u00e0 dig\u00e9rer. Autre avantage : pas besoin de l\u2019\u00e9plucher, sa peau devient fondante \u00e0 la cuisson. On le trouve sur les \u00e9tals d\u00e8s septembre et tout au long de l\u2019automne et l\u2019hiver. Il est parfait pour les plats r\u00e9confortants de saison. Dans ce gratin, le\npotimarron\net le St Nectaire se marient \u00e0 merveille pour un r\u00e9sultat fondant et savoureux.\nEnvie de cuisiner encore plus de potimarron ? D\u00e9couvrez notre\nVelout\u00e9 de potimarron aux saveurs tha\u00ef\npour une touche exotique ou optez pour une\nSalade de potimarron, bl\u00e9 et feta ultra gourmande\n.\nGratin de potimarron au St Nectaire\n4.46\n/5 avec\n109\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n600\ng\nde potimarron\n300\ng\nde pommes de terre\n1\nbotte de ciboulette\n1\ngousse d\u2019ail\n20\ncl\nde cr\u00e8me liquide\n350\ng\nde St-Nectaire\nsel\npoivre\nInstructions\nPelez et passez la courge et les pommes de terre \u00e0 la mandoline.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nMettez les l\u00e9gumes dans un saladier avec la ciboulette hach\u00e9e, l\u2019ail press\u00e9 et les 2 tiers du St-Nectaire en morceaux.\nAjoutez la cr\u00e8me, le sel et le poivre et m\u00e9langez.\nTransvaser dans un plat pour le four. Coupez la fin du St-Nectaire en tranches et mettez-les sur le plat.\nEnfournez 40min.\nNotes\nPas de St Nectaire sous la main ? Pas de panique ! Remplacez-le par un fromage d\u2019hiver bien fondant comme du reblochon, de la raclette ou m\u00eame du Mont d\u2019Or. R\u00e9sultat toujours aussi gourmand garanti !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nEnvie de plats r\u00e9confortants et dor\u00e9s \u00e0 souhait ? Retrouvez toutes nos recettes au four juste ici : d\u00e9couvrir les\nrecettes de plat au four\n!\nLe Saint-Nectaire, un fromage au caract\u00e8re fondant\nOriginaire d\u2019Auvergne, le\nSaint-Nectaire\nest un fromage au lait de vache, \u00e0 la cro\u00fbte l\u00e9g\u00e8rement fleurie et au c\u0153ur fondant. Son go\u00fbt \u00e0 la fois doux et parfum\u00e9, avec des notes de noisette et de sous-bois, en fait un alli\u00e9 parfait pour des plats r\u00e9confortants. En gratin, il fond divinement bien. Il enrobe les l\u00e9gumes d\u2019une texture ultra cr\u00e9meuse et d\u2019un parfum authentique. Si vous aimez les fromages de caract\u00e8re sans qu\u2019ils ne soient trop forts, le\nSaint-Nectaire\nest un excellent choix pour apporter du go\u00fbt et du fondant \u00e0 vos recettes d\u2019hiver !\nAmateurs de St Nectaire ? R\u00e9galez-vous avec ces recettes ultra gourmandes : des\nChampignons farcis au St Nectaire\nou un\nPudding sal\u00e9 de pain sec au St Nectaire\n, parfait pour une cuisine z\u00e9ro d\u00e9chet.\nQue demander de plus qu\u2019un Gratin de potimarron au St Nectaire pour se r\u00e9galer sans effort ? Fondant, cr\u00e9meux et ultra r\u00e9confortant, il r\u00e9chauffe les c\u0153urs et les assiettes en un rien de temps. Pas de pr\u00e9cuisson, peu de vaisselle, mais un max de gourmandise\u2026 Bref, une recette \u00e0 tester d\u2019urgence ! Alors, pr\u00eat(e) \u00e0 enfourner ce petit d\u00e9lice ?\nFan de courge sous toutes ses formes ? Retrouvez nos\n10 recettes v\u00e9g\u00e9tariennes pr\u00e9f\u00e9r\u00e9es \u00e0 base de courge\n!\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nCourge\n,\nHiver\n,\nPlats & Accompagnements\n,\nPlats au Four\nFanes de chou-fleur \u00e0 la sauce soja : une recette anti-gaspi savoureuse\nVelout\u00e9 de carottes coco et gingembre : l\u2019instant r\u00e9confort que vous allez adorer !\n2 thoughts on \u201cGratin de potimarron au St Nectaire : le plat r\u00e9confortant sans prise de t\u00eate !\u201d\nCristina\ndit\u00a0:\n26 f\u00e9vrier 2025 \u00e0 16 h 27 min\nC est vraiment d\u00e9licieux !  Un peu long l \u00e9pluchage du potimarron, mais \u00e7a vaut vraiment l effort !\nchargement\u2026\nR\u00e9pondre\nMich\u00e8le\ndit\u00a0:\n5 mars 2025 \u00e0 13 h 21 min\nGratin original et savoureux. qui remplace facilement une viande ou un poisson.\nJ\u2019ai  quelque peu modifier en coupant le potimarron et les pommes de terre en gros d\u00e9s . j\u2019ai fait pr\u00e9cuire les d\u00e9s de potimarron dans le varoma de mon Thermomix.\nIls \u00e9taient adoucis, la prochaine fois je le ferai \u00e9galement avec les d\u00e9s de pommes de terre.\nJ\u2019ai mis le tout dans un plat en posant des touches de la cr\u00e8me aromatis\u00e9e \u00e0 l\u2019ail puis j\u2019ai dispers\u00e9 les brins de ciboulette et recouvert des lamelles de fromage.\nMerci pour cette bonne recette\nchargement\u2026\nR\u00e9pondre\n4.46 from 109 votes (\n107 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 20.0
+}

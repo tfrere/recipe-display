@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Frites de Patate Douce au Four",
+    "description": "Des frites de patates douces cuites au four avec quelques \u00e9pices, une recette simplissime.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "frites",
+      "frites au four",
+      "frites de patate douce",
+      "patate douce",
+      "Accompagnements",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Hiver",
+      "Printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/Frites-de-patate-douce-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si les patates douces sont bio, vous n'avez m\u00eame pas besoin de les \u00e9plucher avant \ud83d\ude42",
+      "Elles accompagneront \u00e0 merveille vos burgers v\u00e9g\u00e9tariens, vos sauces au yaourt, vos gyros\u2026 ou en fait absolument tout !"
+    ],
+    "slug": "frites-de-patate-douce-au-four",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/Frites-de-patate-douce-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/03/16/frites-de-patate-douce-au-four/",
+    "image": "images/frites-de-patate-douce-au-four.webp",
+    "createdAt": "2026-02-09T20:14:32.883667",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 871.8,
+      "protein": 9.4,
+      "fat": 45.6,
+      "carbs": 103.8,
+      "fiber": 18.0,
+      "confidence": "medium",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 2,
+      "totalIngredients": 3,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sweet_potato",
+      "name": "patate douce",
+      "quantity": 600.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet potato"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "doux ou fum\u00e9 en fonction des go\u00fbts",
+      "optional": false,
+      "name_en": "paprika"
+    },
+    {
+      "id": "chili",
+      "name": "piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "chili pepper"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "oil",
+      "name": "huile",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oil"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oil"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_and_cut",
+      "action": "\u00c9pluchez la patate douce et coupez-la en frites de taille \u00e9gale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweet_potato"
+      ],
+      "produces": "sweet_potato_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_fries",
+      "action": "Dans un saladier, mettez les frites, les \u00e9pices et l'huile. M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweet_potato_fries",
+        "paprika",
+        "chili",
+        "salt",
+        "pepper",
+        "oil"
+      ],
+      "produces": "seasoned_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_baking_sheet",
+      "action": "Couvrez une plaque de cuisson avec du papier cuisson et disposez les frites dessus en essayant qu'elles ne se chevauchent pas.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_fries"
+      ],
+      "produces": "arranged_fries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_fries",
+      "action": "Enfournez \u00e0 mi-hauteur pour 30min (en fonction de la taille de vos frites). Retournez les \u00e0 mi-cuisson !",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_fries"
+      ],
+      "produces": "baked_sweet_potato_fries",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_sweet_potato_fries",
+  "originalText": "Frites de Patate Douce au Four - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 mars 2021\nFrites de Patate Douce au Four\nAcc\u00e9der directement \u00e0 la recette\nParlons peu mais parlons bien les amis ! Qu\u2019y a-t-il de meilleur que des frites de patates douces cuites au four avec quelques \u00e9pices ? Pas grand chose, hein ?\nCette recette est SIMPLISSIME. Aucune comp\u00e9tence culinaire particuli\u00e8re n\u2019est requise. A part, peut-\u00eatre celle qui consiste \u00e0 manier un couteau !\nSi les patates douces sont bio, vous n\u2019avez m\u00eame pas besoin de les \u00e9plucher avant \ud83d\ude42\nElles accompagneront \u00e0 merveille vos burgers v\u00e9g\u00e9tariens, vos sauces au yaourt, vos gyros\u2026 ou en fait absolument tout !\nD\u2019ailleurs, j\u2019en profite pour vous mettre ici ma petite s\u00e9lection de plats qui se marient particuli\u00e8rement bien \u00e0 ces frites :\nburger de haricots blancs\n,\ngyros vegan\n,\ntzatziki\n,\ngalettes de lentilles corail\n,\ngalettes de blette\ns !\nFrites de Patate Douce au Four\nNatacha\n4.49\n/5 avec\n43\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nIngr\u00e9dients\n600\ng\nde patate douce\nune grosse ou 2 petites\n1\nc\u00e0c de paprika\ndoux ou fum\u00e9 en fonction des go\u00fbts\nune pinc\u00e9e de piment\nsel\npoivre\n3\nc\u00e0s d\u2019huile\nInstructions\nPr\u00e9chauffez le four \u00e0 200*C.\n\u00c9pluchez la patate douce et coupez-la en frites de taille \u00e9gale.\nDans un saladier, mettez les frites, les \u00e9pices et l\u2019huile. M\u00e9langez bien.\nCouvrez une plaque de cuisson avec du papier cuisson et disposez les frites dessus en essayant qu\u2019elles ne se chevauchent pas.\nEnfournez \u00e0 mi-hauteur pour 30 \u00e0 40min (en fonction de la taille de vos frites). Retournez les \u00e0 mi-cuisson !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPatate Douce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nfrites\n,\nfrites au four\n,\nfrites de patate douce\n,\npatate douce\nSalade de Vermicelles de Riz \u00e0 la Sauce Miel-Gingembre-Cacahu\u00e8tes (inspiration Tha\u00ef)\nChow Mein (recette facile de nouilles saut\u00e9es aux l\u00e9gumes)\n1 thought on \u201cFrites de Patate Douce au Four\u201d\nLouise Boullanger\ndit\u00a0:\n23 ao\u00fbt 2021 \u00e0 21 h 51 min\nEncore une super recette  ultra bonne & ultra simple \ud83d\ude0b ! Un r\u00e9gale !\nchargement\u2026\nR\u00e9pondre\n4.49 from 43 votes (\n42 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "title": "5 recettes aux mirabelles : id\u00e9es simples et z\u00e9ro gaspillage",
+    "description": "Des id\u00e9es gourmandes pour transformer vos mirabelles en recettes de saison, avec des astuces pour les congeler et un rappel de leurs bienfaits nutritionnels.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "mirabelle",
+      "fruit",
+      "\u00e9t\u00e9",
+      "conservation",
+      "anti-gaspi"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/MIRABELLES-7-of-8.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "La mirabelle est un fruit fragile qui m\u00fbrit vite et s'ab\u00eeme en 2-3 jours.",
+      "Elle est riche en fibres, antioxydants, potassium et b\u00eata-carot\u00e8ne.",
+      "Pour congeler les mirabelles : laver, essuyer, d\u00e9noyauter, disposer sur une plaque sans qu'elles se touchent, congeler \u00e0 plat **3 \u00e0 4 heures**, puis transf\u00e9rer dans des sacs ou bocaux herm\u00e9tiques."
+    ],
+    "slug": "5-recettes-aux-mirabelles-idees-simples-et-zero-gaspillage",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/08/MIRABELLES-7-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/08/31/recettes-mirabelles/",
+    "image": "images/5-recettes-aux-mirabelles-idees-simples-et-zero-gaspillage.webp",
+    "createdAt": "2026-02-09T23:06:13.174800",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 240.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 0,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "mirabelles",
+      "name": "mirabelles",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mirabelle plums"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson (pour cong\u00e9lation)",
+    "Sacs de cong\u00e9lation ou bocaux herm\u00e9tiques"
+  ],
+  "steps": [
+    {
+      "id": "laver_mirabelles",
+      "action": "Lavez les mirabelles soigneusement, puis essuyez-les avec un torchon propre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "congelation_des_mirabelles",
+      "uses": [
+        "mirabelles"
+      ],
+      "produces": "mirabelles_lavees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "denoyauter_mirabelles",
+      "action": "D\u00e9noyautez les mirabelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "congelation_des_mirabelles",
+      "uses": [
+        "mirabelles_lavees"
+      ],
+      "produces": "mirabelles_denoyautees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "disposer_sur_plaque",
+      "action": "Disposez les mirabelles sur une plaque, sans les faire se toucher.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "congelation_des_mirabelles",
+      "uses": [
+        "mirabelles_denoyautees"
+      ],
+      "produces": "mirabelles_sur_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "congeler_a_plat",
+      "action": "Congelez-les \u00e0 plat pendant 3 \u00e0 4 heures.",
+      "duration": "PT4H",
+      "temperature": -18,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "congelation_des_mirabelles",
+      "uses": [
+        "mirabelles_sur_plaque"
+      ],
+      "produces": "mirabelles_congelees",
+      "requires": [],
+      "visualCue": "bien dures"
+    },
+    {
+      "id": "transf\u00e9rer_sacs",
+      "action": "Une fois bien dures, transf\u00e9rez-les dans des sacs de cong\u00e9lation ou bocaux herm\u00e9tiques. Notez la date.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "congelation_des_mirabelles",
+      "uses": [
+        "mirabelles_congelees"
+      ],
+      "produces": "mirabelles_congelees_conservees",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "mirabelles_congelees_conservees",
+  "originalText": "Recettes aux mirabelles : id\u00e9es simples et astuces z\u00e9ro g\u00e2chis\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n31 ao\u00fbt 2025\n5 recettes aux mirabelles : id\u00e9es simples et z\u00e9ro gaspillage\nVous avez trop de mirabelles et vous ne savez plus quoi en faire ? Ici, vous allez retrouver mes recettes pr\u00e9f\u00e9r\u00e9es \u00e0 base de mirabelles !\nSi vous avez un mirabellier dans le jardin (ou une voisine g\u00e9n\u00e9reuse), vous savez ce que c\u2019est : la saison des mirabelles ne pr\u00e9vient pas. Elle arrive, d\u2019un coup, et vous vous retrouvez \u00e0 r\u00e9colter des kilos de fruits dor\u00e9s tous m\u00fbrs en m\u00eame temps.\nEt cette ann\u00e9e 2025, il faut bien le dire : c\u2019est une ann\u00e9e \u00e0 mirabelles. On en voit partout, en abondance, et les arbres plient sous le poids. Un vrai bonheur pour les papilles, mais un petit d\u00e9fi en cuisine.\nJ\u2019ai donc eu envie de vous partager quelques id\u00e9es simples pour \u00e9couler les stocks, profiter au maximum de ce fruit de saison, sans rien gaspiller, et m\u00eame en garder un peu pour plus tard.\nDans cet article, je vous propose :\ndes id\u00e9es gourmandes pour transformer vos mirabelles en recettes de saison\nquelques astuces pour les congeler proprement et les utiliser plus tard\nun rappel de leurs bienfaits nutritionnels\net surtout : une bonne dose d\u2019inspiration pour cuisiner ces petits soleils jaunes avec plaisi\nTable des mati\u00e8res\n1\nQuelles recettes faire avec beaucoup de mirabelles ?\n2\nUne ann\u00e9e parfaite pour les recettes de mirabelles\n3\nLes bienfaits des mirabelles\n4\nPeut-on congeler les mirabelles ?\n5\nPour r\u00e9sumer, mes recettes pr\u00e9f\u00e9r\u00e9es aux mirabelles\nQuelles recettes faire avec beaucoup de mirabelles ?\nLa mirabelle, c\u2019est le genre de fruit qui arrive en masse, m\u00fbrit en m\u00eame temps, et s\u2019ab\u00eeme en deux jours si on ne fait rien.\nElle est d\u00e9licieuse, oui, mais fragile, juteuse, et un peu capricieuse.\nAlors que faire quand on a une cagette pleine de petites boules dor\u00e9es qui commencent d\u00e9j\u00e0 \u00e0 se tacher ?\nVoici mes recettes pr\u00e9f\u00e9r\u00e9es \u00e0 base de mirabelles :\nCompot\u00e9e de mirabelles \u00e0 la verveine\nUne compot\u00e9e toute douce et parfum\u00e9e, o\u00f9 la mirabelle rencontre la fra\u00eecheur subtile de la verveine. \u00c0 savourer ti\u00e8de ou froide, sur un granola, un yaourt\u2026 ou juste \u00e0 la cuill\u00e8re.\nRhum arrang\u00e9 aux mirabelles\nUne recette parfaite pour faire durer l\u2019\u00e9t\u00e9 : du rhum, des mirabelles m\u00fbres, un peu de patience\u2026 et beaucoup de plaisir. \u00c0 offrir, \u00e0 partager, ou \u00e0 garder jalousement pour les soir\u00e9es d\u2019hiver.\nCrumble pommes et mirabelles\nUn dessert doux, croustillant et fondant comme on les aime avec l\u2019acidit\u00e9 des pommes et la douceur des mirabelles. \u00c0 d\u00e9guster encore ti\u00e8de avec une cuill\u00e8re de cr\u00e8me ou de yaourt nature.\nClafoutis aux mirabelles\nUn grand classique d\u2019\u00e9t\u00e9, simple et moelleux, parfait pour \u00e9couler un exc\u00e9dent de mirabelles. Ici, pas de chichi : des fruits, une p\u00e2te minute, et hop, au four.\nTartelettes mirabelles et verveine citronn\u00e9e\nDes tartelettes raffin\u00e9es et l\u00e9g\u00e8rement acidul\u00e9es, o\u00f9 la verveine citronn\u00e9e r\u00e9veille la douceur de la mirabelle. Un dessert d\u00e9licat, parfait pour un go\u00fbter d\u2019\u00e9t\u00e9 un peu chic.\nUne ann\u00e9e parfaite pour les recettes de mirabelles\nChaque \u00e9t\u00e9, la production varie et 2025 semble \u00eatre une ann\u00e9e particuli\u00e8rement g\u00e9n\u00e9reuse.\nLes arbres sont charg\u00e9s, les march\u00e9s d\u00e9bordent, et on en r\u00e9cup\u00e8re un peu partout : voisins, familles, producteurs locaux\u2026\nMais cette abondance a un effet secondaire : on ne sait plus quoi en faire.\nEt comme elles ne se conservent pas longtemps, l\u2019enjeu devient de transformer et de pr\u00e9server le plus rapidement possible.\nLe probl\u00e8me ? La mirabelle est un fruit tr\u00e8s fragile :\nelle m\u00fbrit vite, souvent toutes en m\u00eame temps\nelle s\u2019\u00e9crase facilement, et ne supporte pas bien d\u2019\u00eatre conserv\u00e9e en vrac\nelle s\u2019ab\u00eeme en 2-3 jours si on ne la consomme pas ou si on ne la cuisine pas\nC\u2019est donc le moment id\u00e9al pour en profiter, oui\u2026 Mais aussi pour s\u2019organiser un peu, et \u00e9viter le gaspillage.\nLes bienfaits des mirabelles\nOn pense souvent \u00e0 la mirabelle comme un fruit plaisir, sucr\u00e9, presque r\u00e9gressif.\nMais au-del\u00e0 de son go\u00fbt de bonbon, elle cache quelques tr\u00e9sors nutritionnels :\nRiche en fibres\n: elle aide \u00e0 la digestion et au transit, surtout si vous la consommez avec la peau.\nSource naturelle d\u2019antioxydants\n(dont des polyph\u00e9nols) : parfait pour lutter contre le vieillissement cellulaire.\nBonne teneur en potassium\n: int\u00e9ressant pour la r\u00e9gulation de la pression art\u00e9rielle.\nContient du b\u00eata-carot\u00e8ne\n: pour la peau, les yeux et l\u2019\u00e9clat du teint.\nNaturellement sucr\u00e9e et hydratante\n, sans \u00eatre trop calorique.\nBref, elle coche toutes les cases : gourmande, color\u00e9e et bonne pour la sant\u00e9.\nPeut-on congeler les mirabelles ?\nQuand je n\u2019ai plus le temps ni l\u2019\u00e9nergie de tout cuisiner, la cong\u00e9lation devient mon meilleur alli\u00e9 anti-gaspi.\nEt bonne nouvelle : la mirabelle se cong\u00e8le tr\u00e8s bien, \u00e0 condition de la pr\u00e9parer correctement.\nMa m\u00e9thode maison :\nLavez-les soigneusement, puis essuyez-les avec un torchon propre\nD\u00e9noyautez-les\nDisposez-les sur une plaque, sans les faire se toucher\nCongelez-les \u00e0 plat pendant 3 \u00e0 4 heures\nUne fois bien dures, transf\u00e9rez dans des sacs de cong\u00e9lation ou bocaux herm\u00e9tiques\nNotez la date, et hop au cong\u00e9lateur !\nVous pouvez ensuite les utiliser dans toutes vos pr\u00e9parations cuites : compotes, clafoutis, g\u00e2teaux, confitures express, porridges, yaourts, sauces sucr\u00e9es-sal\u00e9es\u2026\nConseil : \u00e9vitez de les congeler enti\u00e8res avec noyau, elles risquent de rendre trop d\u2019eau et de mal se tenir \u00e0 la cuisson.\nPour r\u00e9sumer, mes recettes pr\u00e9f\u00e9r\u00e9es aux mirabelles\nCette ann\u00e9e, les mirabelles sont partout et si c\u2019est un d\u00e9fi logistique, c\u2019est aussi une merveilleuse opportunit\u00e9 de cuisiner autrement, de conserver, de partager\u2026\nAvec quelques astuces simples, un peu d\u2019organisation (et un bon cong\u00e9lo), vous pouvez transformer l\u2019exc\u00e8s en r\u00e9gal !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nZoom sur un l\u00e9gume\nTop recettes \u00e0 la tomate : id\u00e9es originales, bienfaits et astuces de saison\nMes recettes pr\u00e9f\u00e9r\u00e9es \u00e0 la courge : simples, r\u00e9confortantes et de saison\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d",
+  "totalCookingTime": 0.0
+}

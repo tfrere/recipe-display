@@ -3,8 +3,6 @@ import { Box, Typography, CircularProgress, Alert } from "@mui/material";
 import RecipeGenerationStep from "./RecipeGenerationStep";
 
 const ProgressTracker = ({ progress, loadingMessage }) => {
-  console.log("ProgressTracker:", { progress, loadingMessage });
-
   // Identify the current step
   const currentStepId = progress?.currentStep;
 
@@ -28,8 +26,6 @@ const ProgressTracker = ({ progress, loadingMessage }) => {
       )}
 
       {progress?.steps?.map((step, index, stepsArray) => {
-        console.log("Rendering step:", step);
-
         // Determine if this step should display details
         const shouldShowDetails =
           step.step === currentStepId && step.status === "in_progress";

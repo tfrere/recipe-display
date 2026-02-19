@@ -1,0 +1,726 @@
+{
+  "metadata": {
+    "title": "Shawarma Bowl Vegan",
+    "description": "Un buddha bowl complet avec des pois chiches grill\u00e9s au tahini, des pleurotes aux \u00e9pices shawarma, une sauce tahini cr\u00e9meuse et des garnitures fra\u00eeches.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "buddha bowl",
+      "libanaise",
+      "vegan",
+      "salade compos\u00e9e",
+      "pois chiches",
+      "pleurotes",
+      "tahini"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Shawarma-Bowl-Jean-Herve-8-of-8.jpg",
+    "nationality": "libanaise",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ne soyez pas impressionn\u00e9 par la longue liste d'ingr\u00e9dients ! C'est comme dans tous les buddha bowls, on y retrouve une multitude de petites pr\u00e9parations.",
+      "Les garnitures sont \u00e0 adapter en fonction de la saison. En \u00e9t\u00e9, vous pouvez mettre des tomates et du concombre !",
+      "Pour un go\u00fbt authentique, utilisez des pickles de navet \u00e0 la libanaise (recette li\u00e9e dans l'article).",
+      "La sauce tahini peut \u00eatre pr\u00e9par\u00e9e en avance pour que les ar\u00f4mes se d\u00e9veloppent.",
+      "Le paprika fum\u00e9 est conseill\u00e9 pour cette recette."
+    ],
+    "slug": "shawarma-bowl-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Shawarma-Bowl-Jean-Herve-8-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/18/shawarma-bowl-vegan/",
+    "image": "images/shawarma-bowl-vegan.jpg",
+    "createdAt": "2026-02-09T21:04:33.668540",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 75.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 501.8,
+      "protein": 10.5,
+      "fat": 32.4,
+      "carbs": 46.9,
+      "fiber": 8.3,
+      "confidence": "medium",
+      "resolvedIngredients": 15,
+      "matchedIngredients": 18,
+      "totalIngredients": 21,
+      "negligibleIngredients": 11,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pois_chiche",
+      "name": "pois chiche en conserve ou cuits",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned or cooked chickpeas"
+    },
+    {
+      "id": "huile_olive_pois",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cumin_pois",
+      "name": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "origan_pois",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "piment_cayenne_pois",
+      "name": "piment de cayenne",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cayenne pepper"
+    },
+    {
+      "id": "sel_pois",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "puree_sesame_pois",
+      "name": "pur\u00e9e s\u00e9same semi-complet Jean Herv\u00e9",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "semi-whole sesame paste"
+    },
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "ail_pleurotes",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9es",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "sel_pleurotes",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_pleurotes",
+      "name": "poivre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "cumin_pleurotes",
+      "name": "cumin moulu",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cumin"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre moulue",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground coriander"
+    },
+    {
+      "id": "cannelle",
+      "name": "cannelle moulue",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "origan_pleurotes",
+      "name": "origan",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "piment_cayenne_pleurotes",
+      "name": "piment de cayenne",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cayenne pepper"
+    },
+    {
+      "id": "jus_citron_pleurotes",
+      "name": "jus de citron",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "huile_olive_pleurotes",
+      "name": "huile d'olive",
+      "quantity": 5.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "puree_sesame_sauce",
+      "name": "pur\u00e9e s\u00e9same semi-complet Jean Herv\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "semi-whole sesame paste"
+    },
+    {
+      "id": "jus_citron_sauce",
+      "name": "jus de citron",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "ail_sauce",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "cumin_sauce",
+      "name": "cumin moulu",
+      "quantity": 0.75,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cumin"
+    },
+    {
+      "id": "sel_sauce",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "boulgour",
+      "name": "boulgour cru",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "uncooked bulgur"
+    },
+    {
+      "id": "salade_verte",
+      "name": "salade verte",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "green salad"
+    },
+    {
+      "id": "oignon_rouge",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "chou_rouge",
+      "name": "chou rouge",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red cabbage"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "pickles_navet",
+      "name": "pickles de navet \u00e0 la libanaise",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Lebanese pickled turnips"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Plaque de cuisson",
+    "Papier cuisson",
+    "Mandoline (optionnel, pour le chou)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pois_chiches_grilles_au_tahini",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rinse_chickpeas",
+      "action": "Egoutter et rincer les pois chiches. Les verser dans un petit plat allant au four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pois_chiches_grilles_au_tahini",
+      "uses": [
+        "pois_chiche"
+      ],
+      "produces": "rinsed_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_chickpea_marinade",
+      "action": "Dans un bol, m\u00e9langer l'huile d'olive, le cumin, l'origan, le piment de cayenne, le sel et la pur\u00e9e de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pois_chiches_grilles_au_tahini",
+      "uses": [
+        "huile_olive_pois",
+        "cumin_pois",
+        "origan_pois",
+        "piment_cayenne_pois",
+        "sel_pois",
+        "puree_sesame_pois"
+      ],
+      "produces": "chickpea_marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_chickpeas",
+      "action": "Verser la marinade sur les pois chiches et bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pois_chiches_grilles_au_tahini",
+      "uses": [
+        "rinsed_chickpeas",
+        "chickpea_marinade"
+      ],
+      "produces": "marinated_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_chickpeas",
+      "action": "Enfourner pour 40min. Remuer \u00e0 mi-cuisson.",
+      "duration": "PT40M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pois_chiches_grilles_au_tahini",
+      "uses": [
+        "marinated_chickpeas"
+      ],
+      "produces": "roasted_chickpeas",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_oyster_mushrooms",
+      "action": "Rincer et effilocher les pleurotes en lani\u00e8res avec les mains.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pleurotes_shawarma",
+      "uses": [
+        "pleurotes"
+      ],
+      "produces": "shredded_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_shawarma_marinade",
+      "action": "Dans un bol, m\u00e9langer l'ail press\u00e9, le sel, le poivre, le cumin, le paprika fum\u00e9, la coriandre, la cannelle, l'origan, le piment de cayenne, le jus de citron et l'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pleurotes_shawarma",
+      "uses": [
+        "ail_pleurotes",
+        "sel_pleurotes",
+        "poivre_pleurotes",
+        "cumin_pleurotes",
+        "paprika_fume",
+        "coriandre",
+        "cannelle",
+        "origan_pleurotes",
+        "piment_cayenne_pleurotes",
+        "jus_citron_pleurotes",
+        "huile_olive_pleurotes"
+      ],
+      "produces": "shawarma_marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_mushrooms",
+      "action": "Verser la marinade sur les pleurotes et m\u00e9langer avec les mains pour bien les enrober.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pleurotes_shawarma",
+      "uses": [
+        "shredded_mushrooms",
+        "shawarma_marinade"
+      ],
+      "produces": "marinated_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_mushrooms",
+      "action": "\u00c9taler les pleurotes pour qu'elles se chevauchent le moins possible.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pleurotes_shawarma",
+      "uses": [
+        "marinated_mushrooms"
+      ],
+      "produces": "spread_marinated_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_mushrooms",
+      "action": "Enfourner avec les pois chiches pour 35min. Remuer \u00e0 mi-cuisson.",
+      "duration": "PT35M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pleurotes_shawarma",
+      "uses": [
+        "spread_marinated_mushrooms"
+      ],
+      "produces": "roasted_shawarma_mushrooms",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "make_tahini_sauce",
+      "action": "M\u00e9langer la pur\u00e9e de s\u00e9same, le jus de citron, l'eau, l'ail press\u00e9, le cumin et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_au_tahini",
+      "uses": [
+        "puree_sesame_sauce",
+        "jus_citron_sauce",
+        "eau",
+        "ail_sauce",
+        "cumin_sauce",
+        "sel_sauce"
+      ],
+      "produces": "tahini_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_bulgur",
+      "action": "Faire cuire le boulgour selon les instructions du paquet. Bien \u00e9goutter.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "boulgour"
+      ],
+      "produces": "cooked_bulgur",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_salad",
+      "action": "Couper la salade et le chou rouge finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "salade_verte",
+        "chou_rouge"
+      ],
+      "produces": "chopped_salad_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_mint",
+      "action": "\u00c9mincer les feuilles de menthe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "menthe"
+      ],
+      "produces": "chopped_mint",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_red_onion",
+      "action": "\u00c9mincer l'oignon rouge.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "oignon_rouge"
+      ],
+      "produces": "sliced_red_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_bowls",
+      "action": "Assembler les bols en r\u00e9partissant le boulgour, la salade, le chou, l'oignon, les pois chiches, les pleurotes, la menthe et les pickles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "cooked_bulgur",
+        "chopped_salad_mix",
+        "sliced_red_onion",
+        "roasted_chickpeas",
+        "roasted_shawarma_mushrooms",
+        "chopped_mint",
+        "pickles_navet"
+      ],
+      "produces": "assembled_bowls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_sauce_and_seeds",
+      "action": "Verser g\u00e9n\u00e9reusement la sauce tahini par dessus et parsemer de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garnitures_et_assemblage",
+      "uses": [
+        "assembled_bowls",
+        "tahini_sauce",
+        "graines_sesame"
+      ],
+      "produces": "shawarma_bowl_vegan",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "shawarma_bowl_vegan",
+  "originalText": "Shawarma Bowl Vegan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 janvier 2022\nShawarma Bowl Vegan\nAcc\u00e9der directement \u00e0 la recette\nNe soyez pas impressionn\u00e9 par la longue liste d\u2019ingr\u00e9dients de ce Shawarma Bowl Vegan !\nC\u2019est comme dans tous les buddha bowls, on y retrouve une multitude de petites pr\u00e9parations. Le but \u00e9tant d\u2019avoir un peu de tout, pour cr\u00e9er une salade saine et compl\u00e8te !\nComme dans\nma version m\u00e9diterran\u00e9enne\nou ma\nversion indienne\n, on y retrouve des pois chiches. A croire que c\u2019est une de mes l\u00e9gumineuses pr\u00e9f\u00e9r\u00e9es ! Sauf que l\u00e0, les pois chiches sont grill\u00e9s au four avec une marinade \u00e0 base de tahini. Et les pleurotes aux \u00e9pices sont cuisin\u00e9s pour imiter la viande shawarma. C\u2019est une m\u00e9thode que j\u2019ai d\u00e9couverte avec\nles gyros v\u00e9g\u00e9\net que je r\u00e9utilise assez souvent. Tout simplement parce que \u00e7a fonctionne parfaitement bien visuellement et gustativement !\nTable des mati\u00e8res\n1\nLes ingr\u00e9dients\n2\nLa sauce tahini\n3\nShawarma Bowl Vegan\nLes ingr\u00e9dients\nLes ingr\u00e9dients dans la liste sont donc principalement des herbes et des \u00e9pices. Rien d\u2019extraordinaire : du cumin, de l\u2019origan, de la coriandre moulue, de la cannelle. Et du paprika fum\u00e9. Si vous n\u2019en avez pas encore dans votre cuisine, je vous conseille vraiment d\u2019investir. Ca change la vie !\nLe reste, ce sont les garnitures !\nDe la salade, du boulgour, du chou rouge, de l\u2019oignon rouge. Toutes ces derni\u00e8res sont \u00e0 adapter en fonction de la saison. En \u00e9t\u00e9, vous pouvez mettre des tomates et du concombre !\nJ\u2019ai aussi utilis\u00e9\ndes pickles de navet \u00e0 la libanaise\n. C\u2019est hyper simple \u00e0 faire \u00e0 la maison et \u00e7a apporte un go\u00fbt authentique !\nLa sauce tahini\nMais en vrai, la magie de cette recette r\u00e9side dans la sauce ! J\u2019ai cr\u00e9\u00e9 cette recette de bowl en collaboration avec\nJean Herv\u00e9\n. Vous connaissez ? Je consomme leur tahini semi-complet depuis des ann\u00e9es. Et il fait clairement partie de mon top3 de tahini au monde. Je conseille de tester le semi-complet. En effet, il a l\u2019avantage d\u2019avoir beaucoup plus de go\u00fbt et moins d\u2019amertume que les tahinis blancs ! Jean Herv\u00e9 est une marque qui est devenue v\u00e9ritable r\u00e9f\u00e9rence en mati\u00e8re de fruits secs biologiques depuis plus de 40 !\nDonc, cette sauce ! Rien de plus simple : une grosse dose de tahini, du citron, de l\u2019ail et du cumin. Et boum ! En route pour le Liban ! Je vous promets, ce Shawarma Bowl Vegan est dingue !\nShawarma Bowl Vegan\nNatacha\n4.49\n/5 avec\n131\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\n\u00e0 5 personnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les pois chiches grill\u00e9s au tahini\n200\ng\nde pois chiche en conserve ou cuits\n2\nc\u00e0s d\u2019huile d\u2019olive\n\u00bd\nc\u00e0c de cumin\n1\nc\u00e0c d\u2019origan\n\u00bd\nc\u00e0c de piment de cayenne\noptionnel\nune pinc\u00e9e de sel\n1\nc\u00e0s de pur\u00e9e s\u00e9same semi-complet Jean Herv\u00e9\nPour les pleurotes Shawarma\n300\ng\nde pleurotes\n3\ngousses d\u2019ail press\u00e9es\n1\nc\u00e0c de sel\n\u00bd\nc\u00e0c de poivre\n1,5\nc\u00e0c de cumin moulu\n1\nc\u00e0c de paprika fum\u00e9\n1\nc\u00e0c de coriandre moulue\n\u00bd\nc\u00e0c de canelle moulue\n2\nc\u00e0c d\u2019origan\n\u00bd\nc\u00e0c de piment de cayenne\noptionnel\n3\nc\u00e0s de jus de citron\n5\nc\u00e0s d\u2019huile d\u2019olive\nPour la sauce au tahini\n100\ng\nde pur\u00e9e s\u00e9same semi-complet Jean Herv\u00e9\n4\nc\u00e0s de jus de citron\n4\nc\u00e0s d\u2019eau\n1\ngousse d\u2019ail press\u00e9e\n\u00be\nc\u00e0c de cumin moulu\nsel\nPour les garnitures (\u00e0 adapter en fonction des go\u00fbts et des saisons)\n200\ng\nde boulgour cru\n\u00bd\nsalade verte\n1\noignon rouge\n150\ng\nde chou rouge\n4\nbranches de menthe\ndes pickles de navet \u00e0 la libanaise\nrecette ici\ndes graines de s\u00e9same\nInstructions\nPour les pois chiches\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nEgoutter et rincer les pois chiches. Les verser dans un petit plat qui va au four.\nDans un bol, m\u00e9langer les ingr\u00e9dients de la marinade et verser sur les pois chiche. Bien m\u00e9langer et enfourner.\nPour les pleurotes\nPr\u00e9parer une plaque de cuisson en la couvrant de papier cuisson.\nRincer et effilocher les pleurotes en lani\u00e8res avec les mains. D\u00e9poser les sur la plaque.\nDans un bol; m\u00e9langer tous les ingr\u00e9dients de la marinade.\nVerser sur le pleurotes et m\u00e9langer avec les mains pour que toutes les lani\u00e8res soient bien couvertes.\nEtaler bien les pleurotes pour qu\u2019elles se chevauchent le moins possible.\nEnfourner avec les pois chiche.\nLes pois chiches cuisent environ 40min et les pleurotes 35min.\nRemuer \u00e0 mi-cuisson.\nPour la sauce au tahini\nM\u00e9langer tous les ingr\u00e9dients de la sauce et r\u00e9server.\nNe pas h\u00e9siter \u00e0 pr\u00e9parer la sauce en avance pour que les ar\u00f4mes se d\u00e9veloppent.\nPour les garnitures\nFaire cuire le boulgour en suivant les instructions du paquet. Bien \u00e9goutter.\nCouper la salade et le chou finement. Vous pouvez utiliser une mandoline pour le chou, mais attention aux doigts !\nEmincer les feuilles de menthe.\nAssembler les bols en r\u00e9partissant toutes les pr\u00e9parations.\nVerser g\u00e9n\u00e9reusement la sauce par dessus.\nEnjoy !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBetterave\n,\nChampignon\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNavet\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nSalades\nTags:\nbuddha bowl\n,\nchawarma\n,\nchawarma sans viande\n,\nrecette libanaise\n,\nsalade compos\u00e9e\n,\nsalade v\u00e9g\u00e9tarienne\n,\nshawarma\n,\nshawarma vege\n,\nvegan shawarma\nPickles de Navet \u00e0 la libanaise\nKourabiedes (Sabl\u00e9s Grecs aux Amandes)\n4 thoughts on \u201cShawarma Bowl Vegan\u201d\ncapu yao\ndit\u00a0:\n19 janvier 2022 \u00e0 6 h 57 min\nil faut absolument que j\u2019essaye \u00e7a a l\u2019air tellement bon !!\nchargement\u2026\nR\u00e9pondre\nBosha\ndit\u00a0:\n20 janvier 2022 \u00e0 12 h 43 min\nJ\u2019adore les Pickles !!! et  les Buddha Bowl, donc l\u00e0, c\u2019est le Graal \u2026\nMerci Natacha, pour ta cuisine  de r\u00eave, tu as embellie  notre fin d\u2019ann\u00e9e, (je vais te rendre compte \u00e0 chaque recettes r\u00e9alis\u00e9es)\nJe vais faire ce shawarma bowl vegan, d\u00e8s que les pickles seront \u00e0 notre go\u00fbt.\nJ\u2019aime l\u2019esprit de tes r\u00e9alisations, en plus c\u2019est toujours Sublime\nchargement\u2026\nR\u00e9pondre\nDiana\ndit\u00a0:\n31 janvier 2022 \u00e0 21 h 04 min\nEnorme d\u00e9couverte les pleurotes fa\u00e7on shawarma! Bluffant! J\u2019ai modifi\u00e9 un peu les garnitures mais c\u2019\u00e9tait quand m\u00eame un d\u00e9lice, merci\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n1 f\u00e9vrier 2022 \u00e0 17 h 50 min\nOh merci ! ravie que tu aimes !\nchargement\u2026\nR\u00e9pondre\n4.49 from 131 votes (\n129 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

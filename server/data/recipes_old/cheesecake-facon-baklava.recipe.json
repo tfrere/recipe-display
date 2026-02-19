@@ -1,0 +1,807 @@
+{
+  "metadata": {
+    "title": "Cheesecake fa\u00e7on Baklava",
+    "description": "Un cheesecake ultra sexy d\u00e9licatement parfum\u00e9 au miel de ch\u00e2taignier\u2026 D\u00e9gustez trois textures en une seule bouch\u00e9e : un baklava en guise de biscuit, un appareil fondant au miel et un croustillant compos\u00e9 de feuilles de briques et de pistaches.",
+    "servings": 8,
+    "prepTime": "PT45M",
+    "cookTime": "PT1H45M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "cheesecake",
+      "miel",
+      "miel de ch\u00e2taignier",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Cheesecake-baklava-1-of-5.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "A faire la veille",
+      "Niveau de difficult\u00e9 : moyen",
+      "Moule \u00e0 charni\u00e8re de 20cm",
+      "Astuce : vous pouvez finir au grill \u00e0 200\u00b0C, 2 min pour obtenir une d\u00e9co bien dor\u00e9e, attention \u00e7a dore tr\u00e8s tr\u00e8s vite."
+    ],
+    "slug": "cheesecake-facon-baklava",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/10/Cheesecake-baklava-1-of-5.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/10/19/cheesecake-facon-baklava/",
+    "image": "images/cheesecake-facon-baklava.jpg",
+    "createdAt": "2026-02-09T20:47:22.244110",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 588.0,
+    "totalCookingTime": 18.0,
+    "nutritionPerServing": {
+      "calories": 562.6,
+      "protein": 9.0,
+      "fat": 39.4,
+      "carbs": 48.0,
+      "fiber": 8.3,
+      "confidence": "high",
+      "resolvedIngredients": 13,
+      "matchedIngredients": 15,
+      "totalIngredients": 16,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pistaches",
+      "name": "pistache grill\u00e9es sans sel",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "roasted unsalted pistachios"
+    },
+    {
+      "id": "noix",
+      "name": "noix",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "walnut"
+    },
+    {
+      "id": "noix_de_pecan",
+      "name": "noix de p\u00e9can",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "pecans"
+    },
+    {
+      "id": "cannelle",
+      "name": "cannelle",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "cardamome",
+      "name": "cardamome moulue",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cardamom"
+    },
+    {
+      "id": "gingembre",
+      "name": "gingembre en poudre",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Ground ginger"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "pate_filo",
+      "name": "feuilles p\u00e2te filo",
+      "quantity": 12.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "phyllo dough sheets"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 85.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "miel_sirop",
+      "name": "miel",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "jus_citron",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "cream_cheese",
+      "name": "cream cheese ou fromage frais",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cream cheese ou fromage frais"
+    },
+    {
+      "id": "vanille",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "zeste_citron",
+      "name": "citron bio, le zeste",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "organic lemon zest"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "miel_creme",
+      "name": "miel",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "fecule_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "pistaches_decoration",
+      "name": "pistache grill\u00e9es concass\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "crushed roasted pistachios"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 charni\u00e8re de 20cm",
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven_baklava",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": null,
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_nuts_spices",
+      "action": "Concasser ou mixer l\u00e9g\u00e8rement les noix et les pistaches. Ajouter la cannelle, la cardamome et le gingembre, m\u00e9langer et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "pistaches",
+        "noix",
+        "noix_de_pecan",
+        "cannelle",
+        "cardamome",
+        "gingembre"
+      ],
+      "produces": "nut_spice_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "beurre"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_filo_circles",
+      "action": "D\u00e9rouler les feuilles de p\u00e2te filo. Placer le moule sur la pile de feuilles et \u00e0 l'aide d'un couteau bien aiguis\u00e9, d\u00e9couper la p\u00e2te pour former des cercles. Enrouler les restes de p\u00e2te filo et la remettre dans son sachet, refermer herm\u00e9tiquement et conserver au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "pate_filo"
+      ],
+      "produces": "cut_filo_circles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grease_pan",
+      "action": "A l'aide d'un pinceau, badigeonner le fond du moule avec du beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "melted_butter"
+      ],
+      "produces": "greased_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_filo_butter",
+      "action": "Badigeonner de beurre un cercle de p\u00e2te filo et le placer dans le moule. R\u00e9p\u00e9ter l'op\u00e9ration 3 fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "cut_filo_circles",
+        "melted_butter",
+        "greased_pan"
+      ],
+      "produces": "first_filo_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_first_nut_layer",
+      "action": "Saupoudrer de 50g du m\u00e9lange de noix aux \u00e9pices et les r\u00e9partir uniform\u00e9ment.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "first_filo_layer",
+        "nut_spice_mix"
+      ],
+      "produces": "first_nut_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "build_baklava_layers",
+      "action": "R\u00e9p\u00e9ter le processus de superposition et de beurrage de la p\u00e2te filo jusqu'\u00e0 obtenir trois couches de noix en suivant le sch\u00e9ma suivant : 4 couches de p\u00e2te, 50g de noix, 2 couches de p\u00e2te, 50g de noix, 2 couches de p\u00e2te, 50g de noix et 4 couches de p\u00e2tes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "first_nut_layer",
+        "cut_filo_circles",
+        "melted_butter",
+        "nut_spice_mix"
+      ],
+      "produces": "layered_baklava",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_top_layer",
+      "action": "Badigeonner la couche sup\u00e9rieure de p\u00e2te de beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "layered_baklava",
+        "melted_butter"
+      ],
+      "produces": "buttered_baklava",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "score_baklava",
+      "action": "Presser le baklava sur toute la surface du moule puis utiliser un couteau aiguis\u00e9 pour quadriller le baklava en forme de losange.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "baklava",
+      "uses": [
+        "buttered_baklava"
+      ],
+      "produces": "scored_baklava",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_baklava",
+      "action": "Enfourner le baklava et cuire 25min, ou jusqu'\u00e0 ce qu'il soit dor\u00e9.",
+      "duration": "PT25M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "baklava",
+      "uses": [
+        "scored_baklava"
+      ],
+      "produces": "baked_baklava",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "dor\u00e9"
+    },
+    {
+      "id": "make_syrup_base",
+      "action": "Pendant la cuisson du baklava, dans une casserole, m\u00e9langer le sucre et l'eau. Porter le m\u00e9lange \u00e0 \u00e9bullition en remuant constamment pour que le sucre se dissolve.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sirop_de_miel",
+      "uses": [
+        "sucre",
+        "eau"
+      ],
+      "produces": "sugar_syrup",
+      "requires": [],
+      "visualCue": "sucre dissous"
+    },
+    {
+      "id": "add_honey_lemon",
+      "action": "Une fois le sucre dissous, r\u00e9duire \u00e0 feu doux et incorporer le miel et le jus de citron.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sirop_de_miel",
+      "uses": [
+        "sugar_syrup",
+        "miel_sirop",
+        "jus_citron"
+      ],
+      "produces": "honey_syrup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_syrup",
+      "action": "Laisser le sirop mijoter, en remuant de temps en temps, pendant 20min. Le sirop va s'\u00e9paissir l\u00e9g\u00e8rement. R\u00e9server.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sirop_de_miel",
+      "uses": [
+        "honey_syrup"
+      ],
+      "produces": "thickened_syrup",
+      "requires": [],
+      "visualCue": "\u00e9paissi l\u00e9g\u00e8rement"
+    },
+    {
+      "id": "pour_syrup_on_baklava",
+      "action": "Une fois la cuisson du baklava termin\u00e9e, le retirer du four et verser imm\u00e9diatement environ 150ml de sirop sur le baklava chaud. Garder le reste du sirop pour le service.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sirop_de_miel",
+      "uses": [
+        "baked_baklava",
+        "thickened_syrup"
+      ],
+      "produces": "syrup_soaked_baklava",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wrap_pan",
+      "action": "Laisser le moule refroidir, puis envelopper les bords du moule dans deux couches de papier d'aluminium pour le rendre herm\u00e9tique. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sirop_de_miel",
+      "uses": [
+        "syrup_soaked_baklava"
+      ],
+      "produces": "wrapped_baklava_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "boil_water_bain_marie",
+      "action": "Porter une casserole d'eau \u00e0 \u00e9bullition pour le bain-marie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "eau"
+      ],
+      "produces": "boiling_water",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "mix_cream_cheese_base",
+      "action": "Dans un saladier, m\u00e9langer le cream cheese, la vanille et le zeste de citron \u00e0 vitesse moyenne jusqu'\u00e0 ce que le m\u00e9lange soit homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "cream_cheese",
+        "vanille",
+        "zeste_citron"
+      ],
+      "produces": "cream_cheese_mix",
+      "requires": [],
+      "visualCue": "homog\u00e8ne"
+    },
+    {
+      "id": "add_eggs",
+      "action": "Ajouter les \u0153ufs, un par un, au m\u00e9lange, en raclant le bol apr\u00e8s chaque \u0153uf.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "cream_cheese_mix",
+        "oeufs"
+      ],
+      "produces": "egg_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_batter",
+      "action": "M\u00e9langer la p\u00e2te pendant 3min \u00e0 vitesse moyenne-basse.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "egg_mixture"
+      ],
+      "produces": "mixed_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_honey",
+      "action": "Verser le miel dans la p\u00e2te et m\u00e9langer jusqu'\u00e0 ce qu'il soit compl\u00e8tement incorpor\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "mixed_batter",
+        "miel_creme"
+      ],
+      "produces": "honey_batter",
+      "requires": [],
+      "visualCue": "compl\u00e8tement incorpor\u00e9"
+    },
+    {
+      "id": "add_cornstarch",
+      "action": "Racler le bol une derni\u00e8re fois, puis ajouter la f\u00e9cule de ma\u00efs. M\u00e9langer doucement jusqu'\u00e0 ce qu'elle soit bien incorpor\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "honey_batter",
+        "fecule_mais"
+      ],
+      "produces": "complete_batter",
+      "requires": [],
+      "visualCue": "bien incorpor\u00e9e"
+    },
+    {
+      "id": "pour_batter_on_baklava",
+      "action": "Verser la pr\u00e9paration sur le baklava.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "complete_batter",
+        "wrapped_baklava_pan"
+      ],
+      "produces": "filled_cheesecake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "setup_bain_marie",
+      "action": "Placer le moule envelopp\u00e9 de papier d'aluminium dans le grand moule, puis verser l'eau bouillante dans le moule ext\u00e9rieur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "filled_cheesecake",
+        "boiling_water"
+      ],
+      "produces": "bain_marie_setup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_cheesecake",
+      "action": "Placer d\u00e9licatement le moule dans le four \u00e0 175\u00b0C et cuire pendant 45min.",
+      "duration": "PT45M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "creme_au_miel",
+      "uses": [
+        "bain_marie_setup"
+      ],
+      "produces": "partially_baked_cheesecake",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "make_filo_strips",
+      "action": "Au bout de 30min de cuisson, ressortir les restes de p\u00e2te filo et d\u00e9couper des bandes. Badigeonner de beurre les bandes de p\u00e2te et empiler 3/4 bandes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "cut_filo_circles",
+        "melted_butter"
+      ],
+      "produces": "buttered_filo_strips",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_accordion",
+      "action": "Former un accord\u00e9on avec la bande \u00e0 3/4 couches et r\u00e9server. R\u00e9p\u00e9ter jusqu'\u00e0 \u00e9puisement de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "buttered_filo_strips"
+      ],
+      "produces": "filo_accordions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_filo_decorations",
+      "action": "Apr\u00e8s 45min de cuisson, d\u00e9poser les bandes de p\u00e2te sur toute la surface du cheesecake.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "partially_baked_cheesecake",
+        "filo_accordions"
+      ],
+      "produces": "decorated_cheesecake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_with_decorations",
+      "action": "R\u00e9-enfourner et continuer \u00e0 cuire le cheesecake pendant encore 15min, ou jusqu'\u00e0 ce que la p\u00e2te filo soit dor\u00e9e.",
+      "duration": "PT15M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "decorated_cheesecake"
+      ],
+      "produces": "fully_baked_cheesecake",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "p\u00e2te filo dor\u00e9e"
+    },
+    {
+      "id": "cool_in_oven",
+      "action": "Laisser refroidir pendant 1h le cheesecake dans le four \u00e9teint avec la porte ouverte.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "decoration",
+      "uses": [
+        "fully_baked_cheesecake"
+      ],
+      "produces": "oven_cooled_cheesecake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_at_room_temp",
+      "action": "Retirer les moules du four, retirer d\u00e9licatement le moule \u00e0 cheesecake du bain marie et laisser le cheesecake refroidir pendant encore 1h \u00e0 temp\u00e9rature ambiante.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "decoration",
+      "uses": [
+        "oven_cooled_cheesecake"
+      ],
+      "produces": "room_temp_cooled_cheesecake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chill_overnight",
+      "action": "Retirer l'aluminium et r\u00e9server au frais pendant minimum 6h (de pr\u00e9f\u00e9rence toute la nuit).",
+      "duration": "PT6H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "decoration",
+      "uses": [
+        "room_temp_cooled_cheesecake"
+      ],
+      "produces": "chilled_cheesecake",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_cheesecake",
+      "action": "Une fois compl\u00e8tement refroidi, servir en utilisant un couteau tr\u00e8s aiguis\u00e9 pour couper. Verser un peu de sirop de miel et saupoudrer de pistache grill\u00e9es concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "decoration",
+      "uses": [
+        "chilled_cheesecake",
+        "thickened_syrup",
+        "pistaches_decoration"
+      ],
+      "produces": "cheesecake_facon_baklava",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "cheesecake_facon_baklava",
+  "originalText": "Cheesecake fa\u00e7on Baklava - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 octobre 2021\nCheesecake fa\u00e7on Baklava\nAcc\u00e9der directement \u00e0 la recette\nC\u2019est avec une immense joie que je vous partage aujourd\u2019hui la recette de notre cheesecake fa\u00e7on baklava ! Cela fait des mois que nous avons cr\u00e9\u00e9 cette recette mais nous attendions le bon moment pour vous la partager. J\u2019\u00e9tais si impatiente ! Il s\u2019agit d\u2019une recette cr\u00e9\u00e9e pour nos amis apiculteurs : les\nCompagnons du miel\n. Cette ann\u00e9e, nous avons cr\u00e9\u00e9 plusieurs recettes pour eux comme ces\nbrochettes de halloumi au miel, herbes fra\u00eeches et citron\nou encore cette\nsalade d\u2019inspiration tha\u00ef avec des vermicelles de riz et une sauce miel-gingembre-cacahu\u00e8te\n(oui je confirme le nom claque et la sauce aussi).\nIci, c\u2019est le\nmiel de Ch\u00e2taignier\nque nous avons mis en valeur. Miel aux nombreuses vertus, le miel de ch\u00e2taignier est \u00e9galement un miel de caract\u00e8re. Son amertume, sa saveur cors\u00e9e et ses notes bois\u00e9es feront le bonheur des amateurs de miel au go\u00fbt puissant! Je trouve qu\u2019il est id\u00e9al pour ceux qui ne sont pas hyper fan du go\u00fbt sucr\u00e9, il parfume les pr\u00e9parations juste ce qu\u2019il faut. Notamment, ici il permet \u00e0 ce cheesecake fa\u00e7on baklava de ne pas \u00eatre trop \u00ab\u00a0\u00e9c\u0153urant\u00a0\u00bb. Bon personnellement, j\u2019adooore le sucre donc j\u2019ai d\u00e9j\u00e0 r\u00e9alis\u00e9 ce cheesecake avec d\u2019autres miels au pouvoir sucrant sup\u00e9rieur et c\u2019\u00e9tait tout aussi d\u00e9liciiiieux.\nSinon, quelques mots sur cette petite beaut\u00e9 gourmande. Ce cheesecake fa\u00e7on baklava est vraiment ultra sexy. D\u00e9licatement parfum\u00e9 au miel de ch\u00e2taignier, d\u00e9gustez trois textures en une seule bouch\u00e9e : un baklava en guise de biscuit, un appareil fondant au miel et un croustillant compos\u00e9 de feuilles de briques et de pistaches\u2026\nCheesecake fa\u00e7on Baklava\nDaniela\nUn cheesecake ultra sexy d\u00e9licatement parfum\u00e9 au miel de ch\u00e2taignier\u2026 D\u00e9gustez trois textures en une seule bouch\u00e9e : un baklava en guise de biscuit, un appareil fondant au miel et un croustillant compos\u00e9 de feuilles de briques et de pistaches.\n4.43\n/5 avec\n38\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n45\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\n30\nminutes\nmin\nTemps de repos\n8\nheures\nh\nType de plat\nDessert, Go\u00fbter\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nBaklava :\n150\ng\nde noix\nici 50g de pistache grill\u00e9es sans sel, 50g de noix, 50g de noix de p\u00e9can\n\u00bd\nc\u00e0c de cannelle\n\u00bc\nc\u00e0c de cardamome moulue\n\u00bc\nc\u00e0c de gingembre en poudre\n80\ng\nde beurre fondu\n12\nfeuilles de p\u00e2te filo\nSirop de Miel :\n100\nml\nd\u2019eau\n85\ng\nde sucre\n70\ng\nde miel\n1\nc\u00e0s de jus de citron\nCr\u00e8me au miel :\n450\ng\nde cream cheese ou fromage frais\n1\nc\u00e0c d\u2019extrait de vanille\nle zeste d\u2019un citron bio\n2\noeufs\n100\ng\nde miel\n20\ng\nde f\u00e9cule de ma\u00efs\nInstructions\nPr\u00e9paration du Baklava :\nPr\u00e9chauffer le four \u00e0  175\u00b0C.\nConcasser ou mixer l\u00e9g\u00e8rement les noix et ajouter les \u00e9pices, m\u00e9langer et r\u00e9server.\nFaire fondre le beurre.\nD\u00e9rouler les feuilles de p\u00e2te filo et placer le moule sur la pile de feuilles et \u00e0 l\u2019aide d\u2019un couteau (bien aiguis\u00e9) d\u00e9couper la p\u00e2te pour former des cercles. Enrouler les restes de p\u00e2te filo et la remettre dans son sachet, refermer herm\u00e9tiquement (sinon elles vont s\u00e9cher), conservez-les au frais pour les utiliser plus tard.\nA l\u2019aide d\u2019un pinceau, badigeonner le fond du moule avec du beurre.\nBadigeonner de beurre un cercle de p\u00e2te filo et le placer dans le moule, r\u00e9p\u00e9ter l\u2019op\u00e9ration 3 fois.\nSaupoudrer de 50g du m\u00e9lange de noix aux \u00e9pices et les r\u00e9partir uniform\u00e9ment sur la surface du disque de filo.\nR\u00e9p\u00e9ter le processus de superposition et de beurrage de la p\u00e2te filo jusqu\u2019\u00e0 obtenir trois couches de noix en suivant le sch\u00e9ma suivant : 4 couches de p\u00e2te, 50g de noix, 2 couches de p\u00e2te, 50g de noix, 2 couches de p\u00e2te, 50g de p\u00e2te et 4 couches de p\u00e2tes.\nBadigeonnez la couche sup\u00e9rieure de p\u00e2te de beurre.\nPresser le baklava sur toute la surface du moule puis utiliser un couteau aiguis\u00e9 pour quadriller le baklava en forme de losange, cela permettra au sirop de bien l\u2019imbiber apr\u00e8s cuisson.\nEnfourner le baklava et cuire 25 \u00e0 30 minutes, ou jusqu\u2019\u00e0 ce qu\u2019il soit dor\u00e9.\nPr\u00e9paration du Sirop de miel :\nPr\u00e9parer le sirop pendant que le baklava cuit. Dans une casserole, m\u00e9langer le sucre et l\u2019eau, porter le m\u00e9lange \u00e0 \u00e9bullition en remuant constamment pour que le sucre se dissolve.\nUne fois le sucre dissous, r\u00e9duire \u00e0 feu doux et incorporer le miel et le jus de citron.\nLaisser le sirop mijoter, en remuant de temps en temps, pendant 20 minutes. Le sirop va s\u2019\u00e9paissir l\u00e9g\u00e8rement et il ne doit plus rester de sucre visible. R\u00e9server.\nUne fois la cuisson du baklava termin\u00e9e, le retirer du four et verser imm\u00e9diatement environ 150ml de sirop sur le baklava chaud. Gardez le reste du sirop pour le service du cheesecake.\nLaisser le moule refroidir, puis envelopper les bords du moule dans deux couches de papier d\u2019aluminium pour le rendre herm\u00e9tique (sa base sera plong\u00e9e dans un bain marie plus tard). R\u00e9server.\nPr\u00e9paration du cheesecake :\nPorter une casserole d\u2019eau \u00e0 \u00e9bullition pour le bain-marie dans lequel vous ferez cuire le g\u00e2teau au fromage.\nPr\u00e9parer un moule suffisamment grand pour contenir le moule \u00e0 charni\u00e8re, en laissant un espace d\u2019au moins 1,5 cm entre les deux moules.\nDans un saladier, m\u00e9langer le cream cheese ou le fromage frais, la vanille et le zeste de citron \u00e0 vitesse moyenne jusqu\u2019\u00e0 ce que le m\u00e9lange soit homog\u00e8ne.\nAjouter les \u0153ufs, un par un, au m\u00e9lange, en raclant le bol et les batteurs apr\u00e8s chaque \u0153uf.\nM\u00e9langer la p\u00e2te pendant 3 minutes \u00e0 vitesse moyenne-basse.\nVerser le miel dans la p\u00e2te et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019il soit compl\u00e8tement incorpor\u00e9.\nRacler le bol et les batteurs/fouet une derni\u00e8re fois, puis ajouter la f\u00e9cule de ma\u00efs \u00e0 la p\u00e2te. M\u00e9langer doucement jusqu\u2019\u00e0 ce qu\u2019elle soit bien incorpor\u00e9e (ne m\u00e9langez pas trop la p\u00e2te une fois que la f\u00e9cule de ma\u00efs a \u00e9t\u00e9 ajout\u00e9e).\nCuisson du cheesecake :\nVerser la pr\u00e9paration sur le baklava.\nPlacer le moule envelopp\u00e9 de papier d\u2019aluminium dans le grand moule, puis verser l\u2019eau bouillante dans le moule ext\u00e9rieur (le plus grand).\nPlacer d\u00e9licatement le moule dans le four \u00e0 175\u00b0C et cuire pendant 45 min.\nD\u00e9coration \u00e0 la p\u00e2te filo facultative :\nAu bout de 30min de cuisson, ressortir les restes de p\u00e2te filo et d\u00e9couper des bandes de p\u00e2tes. A l\u2019aide d\u2019un pinceau, badigeonner de beurre les bandes de p\u00e2te et empiler 3/4 bandes. Former un accord\u00e9on (comme un ruban) avec la bande \u00e0 3/4 couches et r\u00e9server. R\u00e9p\u00e9ter l\u2019op\u00e9ration jusqu\u2019\u00e0 \u00e9puisement de la p\u00e2te.\nApr\u00e8s 45 min de cuisson, d\u00e9poser les bandes de p\u00e2te sur toute la surface du cheesecake.\nR\u00e9-enfourner et continuer \u00e0 cuire le cheesecake pendant encore 15 \u00e0 20 minutes, ou jusqu\u2019\u00e0 ce que la p\u00e2te filo soit dor\u00e9e. Astuce : vous pouvez finir au grill \u00e0 200\u00b0C, 2 min pour obtenir une d\u00e9co bien dor\u00e9e, attention \u00e7a dore tr\u00e8s tr\u00e8s vite.\nLaisser refroidir pendant 1h le cheesecake dans le four \u00e9teint avec la porte ouverte.\nRetirer les moules du four, retirer d\u00e9licatement le moule \u00e0 cheesecake du bain marie et laisser le cheesecake refroidir pendant encore 1 heure \u00e0 temp\u00e9rature ambiante. Retirer l\u2019aluminium et r\u00e9server au frais pendant minimum 6h (de pr\u00e9f\u00e9rence toute la nuit).\nUne fois compl\u00e8tement refroidi, servir en utilisant un couteau tr\u00e8s aiguis\u00e9 pour couper \u00e0 travers la couche d\u00e9corative de p\u00e2te filo et \u00e0 travers la cro\u00fbte de baklava. Verser un peu de sirop de miel et saupoudrer de pistache grill\u00e9es concass\u00e9es.\nNotes\nA faire la veille\nNiveau de difficult\u00e9 : moyen\nMoule \u00e0 charni\u00e8re de 20cm\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCr\u00e8mes et Entremets\n,\n\u00c9t\u00e9\n,\nHiver\n,\nNon class\u00e9\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\ncheesecake\n,\nmiel\n,\nmiel de ch\u00e2taignier\nColeslaw de Tronc de Brocolis (recette anti-gaspi)\nCake Poire Amande au sucre de palmier de Kampong Speu\n1 thought on \u201cCheesecake fa\u00e7on Baklava\u201d\nPierre2fontaine\ndit\u00a0:\n19 octobre 2021 \u00e0 20 h 00 min\n\u00e7a  a l\u2019air de d\u00e9chirer grave ce g\u00e2teaux !!\nchargement\u2026\nR\u00e9pondre\n4.43 from 38 votes (\n37 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 18.0
+}

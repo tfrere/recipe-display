@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "title": "Caramel au beurre salé",
+    "description": "L'incontournable caramel au beurre salé fait maison ! Le topping idéal qui se tartine, s'étale, se garnit et plus si affinité… Avec en bonus, une technique de préparation sans passage par la case : réalisation d'un caramel à sec (qui fait peur).",
+    "servings": 1,
+    "prepTime": null,
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "caramel",
+      "caramel au beurre salé",
+      "salidou",
+      "topping",
+      "Automne",
+      "Été",
+      "Hiver",
+      "Printemps",
+      "Brunch Sucré"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Caramel-Beurre-Sale-2-of-8.jpg",
+    "nationality": "French",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Que faire de mon caramel? L'étaler sur des pancakes, ou encore des crêpes, fourrer des petits beignets et tellement plus encore…",
+      "L'astuce : c'est de toujours mélanger et de bien racler les bords. Aussi bien pendant la cuisson du caramel que pendant l'étape où l'on ajoute la crème !"
+    ],
+    "slug": "caramel-au-beurre-sale",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/01/Caramel-Beurre-Sale-2-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/01/28/caramel-au-beurre-sale/",
+    "image": "images/caramel-au-beurre-sale.webp",
+    "createdAt": "2026-02-09T20:12:33.518102",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 5.0,
+    "totalCookingTime": 5.0,
+    "nutritionPerServing": {
+      "calories": 1438.8,
+      "protein": 3.0,
+      "fat": 97.2,
+      "carbs": 142.7,
+      "fiber": 0.0,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "salted_butter",
+      "name": "beurre salé",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Salted butter"
+    },
+    {
+      "id": "cream",
+      "name": "crème liquide entière",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "Fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "2 pincées",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Passoire à maille fine"
+  ],
+  "steps": [
+    {
+      "id": "melt_sugar_butter",
+      "action": "Dans une casserole, à feu moyen, faire fondre le sucre avec le beurre. Remuer sans arrêt. Bien racler les bords à l'aide d'une marise.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sugar",
+        "salted_butter"
+      ],
+      "produces": "melted_sugar_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_cream",
+      "action": "En parallèle, chauffer la crème liquide à feu doux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cream"
+      ],
+      "produces": "warm_cream",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_to_amber",
+      "action": "Au bout de 5min, le sucre et le beurre vont prendre une jolie couleur ambrée (un peu plus claire que le résultat final). Retirer du feu.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melted_sugar_butter"
+      ],
+      "produces": "amber_caramel_base",
+      "requires": [],
+      "visualCue": "jolie couleur ambrée (un peu plus claire que le résultat final)"
+    },
+    {
+      "id": "add_cream",
+      "action": "Verser la crème liquide chaude tout doucement en mélangeant bien et en raclant les bords. Vous allez obtenir un joli caramel avec une belle couleur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "amber_caramel_base",
+        "warm_cream"
+      ],
+      "produces": "caramel_mixture",
+      "requires": [],
+      "visualCue": "joli caramel avec une belle couleur"
+    },
+    {
+      "id": "strain_caramel",
+      "action": "Passer le caramel à la passoire à maille fine avant de le transvaser dans un petit pot.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "caramel_mixture"
+      ],
+      "produces": "strained_caramel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_salt",
+      "action": "Ajouter 2 pincées de fleur de sel au caramel lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "strained_caramel",
+        "fleur_de_sel"
+      ],
+      "produces": "caramel_au_beurre_sale",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "caramel_au_beurre_sale",
+  "originalText": "Caramel au beurre salé rapide et facile - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 janvier 2021\nCaramel au beurre salé\nAller à la recette\nUn jour, il y a quelques années de cela, j’ai décrété que je n’aimais pas le caramel au beurre salé. Quelle drôle d’idée, vous ne trouvez pas? En fait, ce n’est pas tellement que je n’aimais pas ça.  Mais je trouvais que c’était surfait, surcoté, qu’on en faisait vraiment des tonnes. Et j’avoue que j’aimais bien créer un peu le débat en répondant toujours : « non merci, je n’aime pas ça » ou « ça ira, je ne suis pas fan ». La réaction des gens est toujours assez intéressante. Comme quoi les lobbies du caramel au beurre salé font bien leur job !\nMais ça c’était avant ! Avant que Natacha m’oblige à faire un caramel au beurre salé. Oui, oui, elle a tendance à me forcer à faire beaucoup de chose. Et je la remercie d’ailleurs pour ça. Bref, sans elle, je serais sûrement encore campée sur mes positions. Alors que « alloooo, t’es humain et t’aime pas le caramel? ». C’est juste pas possible les gars, le caramel en fait, c’est hyper bon! Donc en fait, la vérité, la vraie, c’est que j’aime le caramel.\nBon voilà, ça c’était pour la partie racontage de life. Maintenant passons aux choses sérieuses. Ce caramel, je le voulais facile à faire ! C’est-à-dire sans étape de caramel à sec, oui je l’avoue, je suis une traumatisée du caramel à sec. Donc ici, c’est un caramel au beurre que l’on fait dans un premier temps. C’est plus long mais il y a moins de risques. L’astuce : c’est de toujours mélanger et de bien racler les bords. Aussi bien pendant la cuisson du caramel que pendant l’étape où l’on ajoute la crème !\nQue faire de mon caramel?\nLa question que personne ne se pose mais à laquelle je vous réponds volontiers! L’étaler sur des\npancakes\n, ou encore des crêpes, fourrer des\npetits beignets\net tellement plus encore…\nCaramel au beurre salé\nDaniela\nL’incontournable caramel au beurre salé fait maison ! Le topping idéal qui se tartine, s’étale, se garnit et plus si affinité… Avec en bonus, une technique de préparation sans passage par la case : réalisation d’un caramel à sec (qui fait peur).\n4.51\n/5 avec\n99\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nType de plat\nDessert, Goûter, Petit déjeuner, Topping\nPortions\n1\npetit pot de confiture\nIngrédients\n1x\n2x\n3x\n140\ng\nde sucre\n75\ng\nde beurre salé\n100\ng\nde crème liquide entière\n2\npincées Fleur de sel\nInstructions\nDans une casserole, à feu moyen, faire fondre le sucre avec le beurre. Remuer sans arrêt. N’hésitez pas à bien racler les bords à l’aide d’une marise (pour éviter que le sucre s’agglomère).\nEn parallèle, chauffer à feu doux la crème liquide.\nAu bout de 5 grosses minutes, le sucre et le beurre vont prendre une jolie couleur ambrée (n’attendez pas que ça soit aussi foncé que le résultat final, le mélange doit être un peu plus clair).\nRetirer du feu et verser la crème liquide chaude tout doucement en mélangeant bien et en raclant les bords. Vous allez obtenir un joli caramel avec une belle couleur.\nPersonnellement, j’ai toujours des petits agglomérats de sucre alors je passe toujours mon caramel à la passoire à maille fine avant de le transvaser dans un petit pot. J’obtiens un caramel bien lisse auquel j’ajoute 2 pincées de fleur de sel et là… C’est que du bonheur !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucré\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\ncaramel\n,\ncaramel aubeurre salé\n,\nsalidou\n,\ntopping\nMadeleines Vegan Chocolat noir et Fleur de sel\nSoupe aux Pois Chiches et Légumes d’hiver façon Chorba\n4.51 from 99 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

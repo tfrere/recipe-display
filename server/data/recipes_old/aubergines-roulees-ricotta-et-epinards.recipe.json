@@ -1,0 +1,611 @@
+{
+  "metadata": {
+    "title": "Aubergines roul\u00e9es Ricotta et \u00c9pinards",
+    "description": "Un plat m\u00e9diterran\u00e9en avec des tranches d'aubergines roul\u00e9es autour d'une garniture \u00e0 la ricotta et aux \u00e9pinards, le tout napp\u00e9 d'une sauce tomate maison.",
+    "servings": 6,
+    "prepTime": "PT45M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergine",
+      "ricotta",
+      "\u00e9pinards",
+      "involtini",
+      "v\u00e9g\u00e9tarien",
+      "plat au four",
+      "m\u00e9diterran\u00e9en"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Aubergines-roulees-1-of-11.jpg",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La pr\u00e9paration est un peu longue. Car il faut rouler chaque tranche individuellement. Mais la t\u00e2che n'est pas non plus titanesque et vaut vraiment le coup !",
+      "J'ai cr\u00e9\u00e9 cette recette pour MonBento. Elle est id\u00e9ale \u00e0 emporter dans le nouveau MB Warmer !",
+      "Se conserve 4 \u00e0 5 jours au frais.",
+      "Vous pouvez d\u00e9guster ces roul\u00e9s chauds ou ti\u00e8des."
+    ],
+    "slug": "aubergines-roulees-ricotta-et-epinards",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Aubergines-roulees-1-of-11.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/05/aubergines-roulees-ricotta-et-epinards/",
+    "image": "images/aubergines-roulees-ricotta-et-epinards.jpg",
+    "createdAt": "2026-02-09T21:14:14.433563",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 77.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 243.6,
+      "protein": 13.1,
+      "fat": 14.4,
+      "carbs": 18.1,
+      "fiber": 5.9,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "aubergines",
+      "name": "aubergines",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "huile_olive_volonte",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "feuille_laurier",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "ail",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "coulis_tomate",
+      "name": "coulis de tomate",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "epinards",
+      "name": "\u00e9pinards frais ou surgel\u00e9s",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Spinach"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "muscade",
+      "name": "noix de muscade r\u00e2p\u00e9",
+      "quantity": 1.0,
+      "unit": "pinc\u00e9e",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Nutmeg"
+    },
+    {
+      "id": "basilic",
+      "name": "feuilles de basilic frais",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Basil leaves"
+    }
+  ],
+  "tools": [
+    "mandoline ou couteau bien aiguis\u00e9",
+    "casserole",
+    "plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven_first",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_aubergines",
+      "uses": [],
+      "produces": "oven_preheated_first",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_aubergines",
+      "action": "Couper des fines tranches d'aubergines dans le sens de la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_aubergines",
+      "uses": [
+        "aubergines"
+      ],
+      "produces": "aubergine_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_slices",
+      "action": "D\u00e9poser les tranches sur les plaques, sans qu'elles se chevauchent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_aubergines",
+      "uses": [
+        "aubergine_slices"
+      ],
+      "produces": "arranged_aubergine_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_aubergines",
+      "action": "Verser un filet d'huile d'olive sur les tranches, et saupoudrer d'origan, sel et poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_aubergines",
+      "uses": [
+        "arranged_aubergine_slices",
+        "huile_olive_volonte",
+        "origan",
+        "sel",
+        "poivre"
+      ],
+      "produces": "seasoned_aubergine_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_aubergines",
+      "action": "Enfourner les 2 plaques en m\u00eame temps pour 20min.",
+      "duration": "PT20M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "preparation_des_aubergines",
+      "uses": [
+        "seasoned_aubergine_slices"
+      ],
+      "produces": "baked_aubergine_slices",
+      "requires": [
+        "oven_preheated_first"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "mince_echalotes",
+      "action": "Emincer 2 \u00e9chalottes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_sauce_tomate",
+      "uses": [
+        "echalotes"
+      ],
+      "produces": "minced_echalotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_echalotes",
+      "action": "Faire chauffer l'huile dans une casserole \u00e0 feu moyen-fort et y faire revenir les \u00e9chalotes et le laurier quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_sauce_tomate",
+      "uses": [
+        "huile_olive",
+        "minced_echalotes",
+        "feuille_laurier"
+      ],
+      "produces": "sauteed_echalotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Presser l'ail. Le faire revenir avec les \u00e9chalotes 2 minutes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_sauce_tomate",
+      "uses": [
+        "ail",
+        "sauteed_echalotes"
+      ],
+      "produces": "garlic_echalote_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomato_base",
+      "action": "Verser le coulis de tomate, l'origan, le sucre et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_sauce_tomate",
+      "uses": [
+        "coulis_tomate",
+        "origan",
+        "sucre",
+        "sel",
+        "garlic_echalote_mixture"
+      ],
+      "produces": "tomato_sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Baisser le feu et laisser mijoter \u00e0 couvert une trentaine de minutes.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "preparation_de_la_sauce_tomate",
+      "uses": [
+        "tomato_sauce_base"
+      ],
+      "produces": "simmered_tomato_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_spinach",
+      "action": "Nettoyer et cuire \u00e0 la vapeur vos \u00e9pinards 5min. S'ils sont surgel\u00e9s, les faire cuire directement \u00e0 la vapeur 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_ricotta_aux_epinards",
+      "uses": [
+        "epinards"
+      ],
+      "produces": "cooked_spinach",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_spinach",
+      "action": "Laisser refroidir les \u00e9pinards, puis les presser avec les mains pour retirer un maximum d'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_ricotta_aux_epinards",
+      "uses": [
+        "cooked_spinach"
+      ],
+      "produces": "drained_spinach",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_cheese_base",
+      "action": "Dans un grand bol, verser la ricotta, le parmesan, l'oeuf, la muscade et les feuilles de basilic hach\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_ricotta_aux_epinards",
+      "uses": [
+        "ricotta",
+        "parmesan",
+        "oeuf",
+        "muscade",
+        "basilic"
+      ],
+      "produces": "cheese_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spinach_to_filling",
+      "action": "Ajouter les \u00e9pinards, sel et poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_ricotta_aux_epinards",
+      "uses": [
+        "drained_spinach",
+        "sel",
+        "poivre",
+        "cheese_mixture"
+      ],
+      "produces": "spinach_ricotta_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_filling",
+      "action": "Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_de_la_ricotta_aux_epinards",
+      "uses": [
+        "spinach_ricotta_filling"
+      ],
+      "produces": "mixed_spinach_ricotta_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven_second",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [],
+      "produces": "oven_preheated_second",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_baking_dish",
+      "action": "Pr\u00e9parer un plat allant au four et y verser les \u2154 de la sauce tomate.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [
+        "simmered_tomato_sauce"
+      ],
+      "produces": "baking_dish_with_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_and_roll",
+      "action": "D\u00e9poser une tranche d'aubergine devant vous et y d\u00e9poser 1 grosse cuill\u00e8re \u00e0 caf\u00e9 de garniture \u00e0 la ricotta. Rouler la tranche sur elle-m\u00eame.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [
+        "baked_aubergine_slices",
+        "mixed_spinach_ricotta_filling"
+      ],
+      "produces": "rolled_aubergines",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_in_dish",
+      "action": "La d\u00e9poser dans le plat, sur la sauce tomate. Recommencer avec toutes les tranches d'aubergines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [
+        "rolled_aubergines",
+        "baking_dish_with_sauce"
+      ],
+      "produces": "arranged_rolled_aubergines",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_final",
+      "action": "Enfourner \u00e0 mi-hauteur pour 15min.",
+      "duration": "PT15M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [
+        "arranged_rolled_aubergines"
+      ],
+      "produces": "baked_rolled_aubergines",
+      "requires": [
+        "oven_preheated_second"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "garnish",
+      "action": "A la sortie du four, saupoudrer un peu de parmesan et des feuilles de basilic par dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson_finale",
+      "uses": [
+        "baked_rolled_aubergines",
+        "parmesan",
+        "basilic"
+      ],
+      "produces": "aubergines_roulees_ricotta_epinards",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "aubergines_roulees_ricotta_epinards",
+  "originalText": "Aubergines roul\u00e9es Ricotta et \u00c9pinards - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 mai 2022\nAubergines roul\u00e9es Ricotta et \u00c9pinards\nAller \u00e0 la recette\nJe suis de retour apr\u00e8s une absence de quelques jours avec cette recette d\u2019Aubergines roul\u00e9es Ricotta et \u00c9pinards !\nCe plat est parfait pour c\u00e9l\u00e9brer l\u2019arriv\u00e9e des aubergines ! C\u2019est d\u2019ailleurs l\u2019un de mes l\u00e9gumes pr\u00e9f\u00e9r\u00e9s ! Vous aimez ?\nIl est souvent mal aim\u00e9, car mal cuisin\u00e9. Pourtant, son secret est simple : le cuire longtemps. Et ne pas h\u00e9siter sur l\u2019huile (d\u2019olive) !\nJ\u2019adore les recettes m\u00e9diterran\u00e9ennes \u00e0 base d\u2019aubergines. Comme\nces lasagnes \u00e0 la mozza et au parmesan\n, ou\nces aubergines farcies\n. Mais c\u2019est un l\u00e9gume tr\u00e8s polyvalent. On le retrouve dans la cuisine indienne (\ncomme dans ce plat\n) et dans la cuisine de l\u2019Asie du sud-est, de la Chine ou m\u00eame du Japon.\nPour cette recette, je suis all\u00e9e puiser l\u2019inspiration du c\u00f4t\u00e9 de l\u2019Italie. On y retrouve une d\u00e9licieuse sauce tomate maison. De belles tranches d\u2019aubergines. Et une garniture de ricotta et d\u2019\u00e9pinards. Des associations classiques qui fonctionnent toujours bien. Et qui ravissent les palais des plus gourmands !\nLa pr\u00e9paration est un peu longue. Car il faut rouler chaque tranche individuellement. Mais la t\u00e2che n\u2019est pas non plus titanesque et vaut vraiment le coup !\nQui va tenter ?\nJ\u2019ai cr\u00e9\u00e9 cette recette d\u2019Aubergines roul\u00e9es Ricotta et \u00c9pinards pour\nMonBento\n. Elle est id\u00e9ale \u00e0 emporter dans le\nnouveau MB Warmer\n!\nAubergines roul\u00e9es Ricotta et \u00c9pinards\n4.45\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les aubergines\n2\naubergines\nhuile d\u2019olive\norigan\nsel\npoivre\nPour la sauce\n2\nc\u00e0s d\u2019huile d\u2019olive\n2\n\u00e9chalotes\n1\nfeuille de laurier\n2\ngousses d\u2019ail\n500\ng\nde coulis de tomate\n1\nc\u00e0c d\u2019origan\n\u00bd\nc\u00e0c de sucre\nsel\nPour la ricotta aux \u00e9pinards\n400\ng\nd\u2019\u00e9pinards frais ou surgel\u00e9s\n250\ng\nde ricotta\n60\ng\nde parmesan r\u00e2p\u00e9\n1\noeuf\n1\npinc\u00e9e de noix de muscade r\u00e2p\u00e9\n5\nfeuilles de basilic frais\nsel\npoivre\nInstructions\nPr\u00e9paration des aubergines\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPr\u00e9parer 2 plaques de cuisson en les couvrant de papier cuisson.\nA l\u2019aide d\u2019une mandoline ou d\u2019un couteau bien aiguis\u00e9, couper des fines tranches d\u2019aubergines dans le sens de la longueur.\nD\u00e9poser les tranches sur les plaques, sans qu\u2019elles se chevauchent.\nVerser un filet d\u2019huile d\u2019olive sur les tranches, et saupoudrer d\u2019origan, sel et poivre.\nEnfourner les 2 plaques en m\u00eame temps pour 20min.\nPr\u00e9paration de la sauce tomate\nEmincer 2 \u00e9chalottes.\nFaire chauffer l\u2019huile dans une casserole \u00e0 feu moyen-fort et y faire revenir les \u00e9chalotes et le laurier quelques minutes.\nPresser l\u2019ail. Le faire revenir avec les \u00e9chalotes 2 minutes.\nVerser le coulis de tomate, l\u2019origan, le sucre et le sel.\nBaisser le feu et laisser mijoter \u00e0 couvert une treintaine de minutes.\nP\u00e9paration de la ricotta aux \u00e9pinards\nNettoyer et cuire \u00e0 la vapeur vos \u00e9pinards 5min. S\u2019ils sont surgel\u00e9s, les faire cuire directement \u00e0 la vapeur 10min.\nUne fois cuits, les laisser refroidir, puis les presser avec les mains pour retirer un maximum d\u2019eau.\nDans un grand bol, verser la ricotta, le parmesan, l\u2019oeuf, la muscade et les feuilles de basilic hach\u00e9es.\nAjouter les \u00e9pinards, sel et poivre.\nBien m\u00e9langer.\nPr\u00e9paration des roul\u00e9s\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nPr\u00e9parer un plat allant au four et y verser le \u2154 de la sauce tomate.\nD\u00e9poser une tranche d\u2019aubergine devant vous et y d\u00e9poser 1 grosse c\u00e0c de garniture \u00e0 la ricotta.\nRouler la tranche sur elle-m\u00eame.\nLa d\u00e9poser dans le plat, sur la sauce tomate.\nRecommencer avec toutes les tranches d\u2019aubergines.\nEnfourner \u00e0 mi-hauteur pour 15min.\nA la sortie du four, saupoudrer un peu de parmesan et des feuilles de basilic par dessus.\nVous pouvez d\u00e9guster ces roul\u00e9s chauds ou ti\u00e8des.\nSe conserve 4 \u00e0 5 jours au frais.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\naubergine\n,\naubergine farcies\n,\naubergine roul\u00e9es\n,\naubergine vegetarienne\n,\ninvoltini\n,\nrecette aubergine\n,\nricotta\nArtichauts au citron \u00e0 la grecque\nFrites au four super croustillantes\n4 thoughts on \u201cAubergines roul\u00e9es Ricotta et \u00c9pinards\u201d\nLadyMilonguera\ndit\u00a0:\n5 mai 2022 \u00e0 13 h 52 min\nVraiment tr\u00e8s sympa ces aubergines roul\u00e9es\u2026\nchargement\u2026\nR\u00e9pondre\nElodie\ndit\u00a0:\n9 juillet 2022 \u00e0 11 h 51 min\nD\u00e9licieux et tr\u00e8s joli sur la table !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 juillet 2022 \u00e0 13 h 52 min\nMerci !!\nchargement\u2026\nR\u00e9pondre\nika\ndit\u00a0:\n10 mai 2023 \u00e0 10 h 42 min\nje viens de pr\u00e9parer ce plat pour aller chez une amie, j\u2019ai go\u00fbt\u00e9, semble d\u00e9licieux \u2013 juste que la prochaine fois je laisserai moins longtemps et moins chaud le four pour cuire les tranches d\u2019aubergines \u2013 merci pour cette bonne recette r\u00e9alis\u00e9e avec des \u00e9pinards frais !\nchargement\u2026\nR\u00e9pondre\n4.45 from 126 votes (\n123 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

@@ -114,6 +114,52 @@ def parse_quantity(qty_str: str) -> Optional[float]:
         return None
 
 
+# Normalisation des unités NER → formes canoniques courtes
+UNIT_NORMALIZE = {
+    # Volumes
+    "tablespoons": "tbsp",
+    "tablespoon": "tbsp",
+    "teaspoons": "tsp",
+    "teaspoon": "tsp",
+    "cups": "cup",
+    "liters": "l",
+    "liter": "l",
+    "litres": "l",
+    "litre": "l",
+    "milliliters": "ml",
+    "milliliter": "ml",
+    "centiliters": "cl",
+    "centiliter": "cl",
+    # Poids
+    "grams": "g",
+    "gram": "g",
+    "kilograms": "kg",
+    "kilogram": "kg",
+    "pounds": "lb",
+    "pound": "lb",
+    "ounces": "oz",
+    "ounce": "oz",
+    # Comptables
+    "cloves": "clove",
+    "sprigs": "sprig",
+    "leaves": "leaf",
+    "slices": "slice",
+    "pieces": "piece",
+    "bunches": "bunch",
+    "pinches": "pinch",
+    "stalks": "stalk",
+    "heads": "head",
+}
+
+
+def normalize_unit(raw_unit: str) -> Optional[str]:
+    """Normalise une unité NER vers sa forme canonique courte."""
+    if not raw_unit:
+        return None
+    clean = raw_unit.strip().lower()
+    return UNIT_NORMALIZE.get(clean, clean)
+
+
 def ner_parse_ingredient(ner_pipeline, english_text: str) -> dict:
     """Parse une ligne d'ingrédient anglaise avec le NER."""
     results = ner_pipeline(english_text)
@@ -160,15 +206,28 @@ def parse_pass1_ingredient_line(
     notes_match = re.search(r"\(([^)]+)\)", line)
     notes = notes_match.group(1) if notes_match and not optional else None
 
-    # Nettoyer la ligne pour extraire le nom original
-    # Retirer les annotations
+    # Nettoyer la ligne pour extraire le texte brut (sans annotations)
     clean_line = re.sub(r"\{[^}]+\}", "", line)
     clean_line = re.sub(r"\[[^\]]+\]", "", clean_line)
     clean_line = re.sub(r"\([^)]+\)", "", clean_line)
     clean_line = clean_line.strip().rstrip(",").strip()
 
-    # Le nom original c'est la ligne nettoyée (sans qty/unit — on laisse ça au NER)
-    name_original = clean_line
+    # Extraire le nom original (sans qty/unit) pour le champ `name`
+    # On retire la quantité et l'unité du début pour garder juste le nom FR
+    name_line = re.sub(
+        r"^[\d½¼¾⅓⅔/.,\-\s]+\s*"
+        r"(?:cuillères?\s+à\s+(?:soupe|café)|"
+        r"gousses?|branches?|brins?|feuilles?|tranches?|"
+        r"tablespoons?|teaspoons?|pounds?|ounces?|cloves?|"
+        r"cups?|pieces?|pinch|bunch|sprigs?|"
+        r"kg\b|ml\b|cl\b|lb\b|oz\b|tbsp\b|tsp\b|g\b|l\b)?\s*",
+        "",
+        clean_line,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    # Si le regex a tout mangé (ex: "sel"), on garde clean_line
+    name_original = name_line.strip().rstrip(",").strip() if name_line.strip() else clean_line
 
     # ─── NER sur la version anglaise ───
     # Construire la chaîne anglaise à parser
@@ -179,16 +238,34 @@ def parse_pass1_ingredient_line(
         # Mais on garde les quantités/unités originales car le NER les comprend
 
         # Extraire qty+unit du début de la ligne originale
+        # IMPORTANT: les unités longues/composées DOIVENT être testées AVANT les courtes
+        # pour éviter les faux positifs ("cloves" matché comme "cl", "gousse" comme "g")
+        # On utilise \b (word boundary) pour les unités courtes.
         qty_unit_match = re.match(
-            r"^([\d½¼¾⅓⅔/.,\-\s]+)\s*(g|kg|ml|cl|l|lb|oz|tsp|tbsp|cup|cups|"
+            r"^([\d½¼¾⅓⅔/.,\-\s]+)\s*("
+            # --- Unités composées FR (les plus longues en premier) ---
             r"cuillères?\s+à\s+(?:soupe|café)|"
-            r"pieces?|piece|"
-            r"branches?|brins?|gousses?|feuilles?|tranches?|"
-            r"tablespoons?|teaspoons?|pounds?|ounces?|"
-            r"pinch|bunch)\s*",
+            # --- Unités comptables FR (avant les unités courtes !) ---
+            r"gousses?|branches?|brins?|feuilles?|tranches?|"
+            # --- Unités EN longues (avant les courtes !) ---
+            r"tablespoons?|teaspoons?|pounds?|ounces?|cloves?|"
+            r"cups?|pieces?|pinch|bunch|sprigs?|"
+            # --- Unités courtes avec word boundary ---
+            r"kg\b|ml\b|cl\b|lb\b|oz\b|tbsp\b|tsp\b|"
+            r"g\b|l\b"
+            r")\s+",
             clean_line,
             re.IGNORECASE,
         )
+
+        # Cas spécial : quantité SANS unité (ingrédients comptables : "4 carottes", "2 eggs")
+        qty_only_match = None
+        if not qty_unit_match:
+            qty_only_match = re.match(
+                r"^([\d½¼¾⅓⅔/.,\-]+)\s+",
+                clean_line,
+                re.IGNORECASE,
+            )
 
         if qty_unit_match:
             qty_str = qty_unit_match.group(1).strip()
@@ -212,6 +289,10 @@ def parse_pass1_ingredient_line(
             }
             unit_en = unit_map.get(unit_str.lower(), unit_str)
             en_text_for_ner = f"{qty_str} {unit_en} {name_en}"
+        elif qty_only_match:
+            # Quantité sans unité : "4 carottes" → "4 carrots"
+            qty_str = qty_only_match.group(1).strip()
+            en_text_for_ner = f"{qty_str} {name_en}"
         else:
             en_text_for_ner = name_en
 
@@ -236,7 +317,7 @@ def parse_pass1_ingredient_line(
 
     # Construire l'ingrédient parsé
     quantity = parse_quantity(ner_qty_raw)
-    unit = ner_unit if ner_unit else None
+    unit = normalize_unit(ner_unit)
     preparation = preparation_en or (ner_state if ner_state else None)
     final_name_en = name_en if name_en else ner_name
 
@@ -564,7 +645,7 @@ def main():
         ner,
         "Blanquette de Veau (FR → EN)",
         BLANQUETTE_PASS1_INGREDIENTS,
-        existing_json="example_recipe_v2.json",
+        existing_json="example_recipe.json",
     )
 
     # ─── Test 2 : Houmous à la betterave ───

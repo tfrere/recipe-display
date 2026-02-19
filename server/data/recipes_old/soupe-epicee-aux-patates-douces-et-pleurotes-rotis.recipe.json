@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "title": "Soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis",
+    "description": "Une soupe douce et onctueuse aux patates douces, avec une chaleur \u00e9pic\u00e9e profonde et des pleurotes r\u00f4tis pour une texture caram\u00e9lis\u00e9e.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe",
+      "patate douce",
+      "pleurote",
+      "\u00e9pic\u00e9",
+      "vegan",
+      "hiver",
+      "champignon"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/soupe-epicee-aux-patates-douces-et-pleurotes-rotis.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le gochujang est l'ingr\u00e9dient secret qui apporte profondeur et caract\u00e8re.",
+      "Les pleurotes peuvent \u00eatre remplac\u00e9s par des shiitak\u00e9s ou des champignons de Paris.",
+      "Les \u00e9pinards congel\u00e9s peuvent \u00eatre incorpor\u00e9s directement, ils d\u00e9cong\u00e8leront dans la soupe.",
+      "Une soupe riche en b\u00eata-carot\u00e8ne, prot\u00e9ines, fibres et antioxydants."
+    ],
+    "slug": "soupe-epicee-aux-patates-douces-et-pleurotes-rotis",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/03/soupe-epicee-aux-patates-douces-et-pleurotes-rotis.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/03/30/soupe-epicee-aux-patates-douces-et-pleurotes-rotis/",
+    "image": "images/soupe-epicee-aux-patates-douces-et-pleurotes-rotis.webp",
+    "createdAt": "2026-02-09T22:43:23.118061",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 574.2,
+      "protein": 16.8,
+      "fat": 21.1,
+      "carbs": 83.7,
+      "fiber": 13.9,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 13,
+      "totalIngredients": 13,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pleurotes",
+      "name": "pleurotes",
+      "quantity": 600.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oyster mushrooms"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ail_en_poudre",
+      "name": "ail en poudre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "sauce_soja_3",
+      "name": "sauce soja",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "pour les pleurotes",
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "patates_douces",
+      "name": "patates douces",
+      "quantity": 700.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "pel\u00e9es et coup\u00e9es en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "Sweet potatoes"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9 grossi\u00e8rement",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "gochujang",
+      "name": "gochujang",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "ajuster selon le piquant souhait\u00e9",
+      "optional": false,
+      "name_en": "gochujang"
+    },
+    {
+      "id": "lait_vegetal",
+      "name": "lait v\u00e9g\u00e9tal au choix",
+      "quantity": 700.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "plant-based milk"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sauce_soja_2",
+      "name": "sauce soja",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "pour la soupe",
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "epinards",
+      "name": "\u00e9pinards",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "spinach"
+    },
+    {
+      "id": "graines_de_sesame",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Faitout",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "prepare_pleurotes",
+      "action": "D\u00e9posez les pleurotes sur une plaque de cuisson. Coupez les plus grosses en deux si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pleurotes_rotis",
+      "uses": [
+        "pleurotes"
+      ],
+      "produces": "prepared_pleurotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_pleurotes",
+      "action": "Ajoutez l'huile d'olive, l'ail en poudre, la sauce soja (3 c\u00e0s) et le paprika fum\u00e9. M\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pleurotes_rotis",
+      "uses": [
+        "prepared_pleurotes",
+        "huile_dolive",
+        "ail_en_poudre",
+        "sauce_soja_3",
+        "paprika_fume"
+      ],
+      "produces": "seasoned_pleurotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pleurotes_rotis",
+      "uses": [
+        "seasoned_pleurotes"
+      ],
+      "produces": "preheated_oven_with_pleurotes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_pleurotes",
+      "action": "Enfournez pour 25min.",
+      "duration": "PT25M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pleurotes_rotis",
+      "uses": [
+        "seasoned_pleurotes"
+      ],
+      "produces": "roasted_pleurotes",
+      "requires": [
+        "preheated_oven_with_pleurotes"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion_garlic",
+      "action": "Pendant la cuisson des pleurotes, \u00e9mincez l'oignon et hachez grossi\u00e8rement l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "oignon",
+        "ail"
+      ],
+      "produces": "chopped_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_garlic",
+      "action": "Faites-les revenir dans un faitout avec 3 c\u00e0s d'huile et le gochujang pendant quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "chopped_onion_garlic",
+        "huile_dolive",
+        "gochujang"
+      ],
+      "produces": "sauteed_onion_garlic_gochujang",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_sweet_potatoes",
+      "action": "Ajoutez les patates douces pel\u00e9es et coup\u00e9es en rondelles (coupez-les en deux si elles sont grosses). Faites revenir quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "sauteed_onion_garlic_gochujang",
+        "patates_douces"
+      ],
+      "produces": "sweet_potatoes_sauteed",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_soup",
+      "action": "Ajoutez le lait v\u00e9g\u00e9tal, l'eau et la sauce soja (2 c\u00e0s). Laissez mijoter \u00e0 couvert pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "soupe",
+      "uses": [
+        "sweet_potatoes_sauteed",
+        "lait_vegetal",
+        "eau",
+        "sauce_soja_2"
+      ],
+      "produces": "simmered_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spinach",
+      "action": "En fin de cuisson, ajoutez les \u00e9pinards.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "simmered_soup",
+        "epinards"
+      ],
+      "produces": "soup_with_spinach",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_soup",
+      "action": "Servez la soupe bien chaude avec les pleurotes r\u00f4tis par-dessus et parsemez de graines de s\u00e9same.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "soup_with_spinach",
+        "roasted_pleurotes",
+        "graines_de_sesame"
+      ],
+      "produces": "soupe_epicee_patates_douces_pleurotes_rotis",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_epicee_patates_douces_pleurotes_rotis",
+  "originalText": "Soupe \u00c9pic\u00e9e Aux Patates Douces Et Pleurotes R\u00f4tis | Cocooning\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 mars 2025\nSoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis : La recette qui va r\u00e9veiller vos papilles !\nEnvie d\u2019une\nsoupe\nqui change un peu des classiques ? La\nsoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis\na tout pour surprendre !\nDouce\net\nonctueuse\ngr\u00e2ce aux\npatates douce\ns, elle cache pourtant une touche de caract\u00e8re qui la rend irr\u00e9sistible\u2026 Une\nchaleur \u00e9pic\u00e9e\n, profonde et enveloppante, qui titille le palais juste ce qu\u2019il faut. Et pour parfaire cette\nexp\u00e9rience gustative\n, des\npleurotes r\u00f4tis\nviennent ajouter une m\u00e2che gourmande et l\u00e9g\u00e8rement caram\u00e9lis\u00e9e. Bref, une\nsoupe\npleine de contrastes, parfaite pour une soir\u00e9e cocooning\u2026 mais pas trop sage !\nTable des mati\u00e8res\n1\nL\u2019ingr\u00e9dient myst\u00e8re qui change tout !\n2\nLe gochujang : l\u2019ingr\u00e9dient secret de cette soupe \u00e9pic\u00e9e\n3\nLes pleurotes, ces petits g\u00e9nies de la texture !\n4\nSoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis\n5\nUne soupe originale aux saveurs surprenantes (et pleines de bienfaits !)\n6\nUmami\u2026 K\u00e9zako ?\nL\u2019ingr\u00e9dient myst\u00e8re qui change tout !\nCe petit quelque chose qui fait toute la diff\u00e9rence dans cette soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis, c\u2019est lui. Une p\u00e2te ferment\u00e9e venue d\u2019ailleurs, \u00e0 la fois relev\u00e9e, umami et subtilement sucr\u00e9e, qui apporte une profondeur incroyable au bouillon. Pas juste du piquant, mais une vraie complexit\u00e9 de saveurs qui r\u00e9chauffe sans \u00e9craser. Une seule cuill\u00e8re suffit pour transformer une soupe douce en une explosion de go\u00fbt, \u00e9quilibr\u00e9e et addictive. Vous l\u2019avez devin\u00e9 ? On vous dit tout un peu plus bas !\nL\ne gochujang : l\u2019ingr\u00e9dient secret de cette soupe \u00e9pic\u00e9e\nVous l\u2019aurez devin\u00e9, c\u2019est le gochujang qui donne \u00e0 cette soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis toute sa profondeur et son caract\u00e8re unique ! Cette p\u00e2te de piment ferment\u00e9e, embl\u00e9matique de la cuisine cor\u00e9enne, est bien plus qu\u2019un simple condiment piquant. Elle apporte une chaleur progressive, m\u00eal\u00e9e \u00e0 des notes l\u00e9g\u00e8rement sucr\u00e9es et umami, qui viennent sublimer le velout\u00e9 des patates douces. Gr\u00e2ce \u00e0 la fermentation, son go\u00fbt est riche, presque caram\u00e9lis\u00e9, avec une complexit\u00e9 qui se marie \u00e0 merveille avec le c\u00f4t\u00e9 fondant de la soupe et la texture des pleurotes r\u00f4tis. Un twist audacieux qui fait toute la diff\u00e9rence !\nLes pleurotes, ces petits g\u00e9nies de la texture !\nAhhh, les pleurotes r\u00f4tis\u2026 Ces petits bijoux apportent une m\u00e2che irr\u00e9sistible \u00e0 notre soupe \u00e9pic\u00e9e aux patates douces. Un peu fermes, l\u00e9g\u00e8rement caram\u00e9lis\u00e9s \u00e0 la cuisson, ils contrastent \u00e0 merveille avec le velout\u00e9 des patates douces. Mais pas de panique si votre \u00e9picerie bio du coin fait gr\u00e8ve des pleurotes ! Vous pouvez tr\u00e8s bien les remplacer par des shiitak\u00e9s pour un c\u00f4t\u00e9 plus bois\u00e9, ou m\u00eame des champignons de Paris (ils passent partout, ceux-l\u00e0). Bref, tant que \u00e7a reste un champi qui a un peu de tenue et qui ne fond pas dans l\u2019anonymat, \u00e7a fera l\u2019affaire !\nSi vous \u00eates tomb\u00e9.e sous le charme des pleurotes dans cette soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis, vous allez adorer ces trois recettes qui les mettent \u00e0 l\u2019honneur ! D\u00e9couvrez notre\nParmentier de pleurotes et de Tomme de Savoie\n, nos irr\u00e9sistibles\nEscargots sans escargots\n, et une\nrevisite veggie du classique B\u0153uf bourguignon\n. \u00c0 chaque bouch\u00e9e, c\u2019est le retour de l\u2019amour pour les pleurotes, promis !\nSoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis\n4.53\n/5 avec\n34\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les pleurotes\n600\ng\nde pleurotes\n4\nc\u00e0s d\u2019huile d\u2019olive\n1\nc\u00e0c d\u2019ail en poudre\n3\nc\u00e0s de sauce soja\n1,5\nc\u00e0c de paprika fum\u00e9\nPour la soupe\n700\ng\nde patates douces\n1\noignon\n3\ngousses d\u2019ail\n2\nc\u00e0s de gochujang\najuster selon le piquant souhait\u00e9\n700\nml\nde lait v\u00e9g\u00e9tal au choix\n300\nml\nd\u2019eau\n2\nc\u00e0s de sauce soja\nGraines de s\u00e9same\n100\ng\nd\u2019\u00e9pinards\nInstructions\nPr\u00e9chauffez le four \u00e0 180\u00b0C. D\u00e9posez les pleurotes sur une plaque de cuisson. Coupez les plus grosses en deux si n\u00e9cessaire. Ajoutez tous les ingr\u00e9dients de la marinade. M\u00e9langez et enfournez 25 min.\nPendant ce temps, \u00e9mincez l\u2019oignon et hachez grossi\u00e8rement l\u2019ail. Faites-les revenir dans un faitout avec 3 c\u00e0s d\u2019huile et le gochujang. Ajoutez les patates douces pel\u00e9es et coup\u00e9es en rondelles (si elles sont grosses, coupez-les en deux avant). Faites revenir quelques minutes.\nAjoutez le lait v\u00e9g\u00e9tal, l\u2019eau et la sauce soja. Laissez mijoter \u00e0 couvert pendant 15 min. En fin de cuisson, ajoutez les \u00e9pinards. S\u2019ils sont congel\u00e9s, incorporez-les directement, ils d\u00e9cong\u00e8leront dans la soupe.\nServez la soupe bien chaude avec les pleurotes r\u00f4tis par-dessus et parsemez de graines de s\u00e9same.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUne soupe originale aux saveurs surprenantes (et pleines de bienfaits !)\nSi vous cherchez une soupe qui sort des sentiers battus, vous \u00eates au bon endroit ! Cette soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis, marie des ingr\u00e9dients aux saveurs intenses et aux bienfaits insoup\u00e7onn\u00e9s. D\u2019abord, les pleurotes, stars de la garniture, ne se contentent pas d\u2019apporter une texture de r\u00eave. Ils sont aussi riches en prot\u00e9ines, en fibres et en antioxydants. En bonus ? Ils sont excellents pour le microbiote intestinal. Bref, les champis de comp\u00e9tition ! C\u00f4t\u00e9 soupe, on joue avec les contrastes : la patate douce apporte une bonne dose de b\u00eata-carot\u00e8ne pour une peau \u00e9clatante. Le gochujang vient r\u00e9veiller le tout, tandis que la sauce soja et le paprika fum\u00e9 donnent un petit go\u00fbt umami irr\u00e9sistible. Les \u00e9pinards frais ajoutent une touche de verdure et un shot de fer.\nR\u00e9sultat ? Une soupe ultra gourmande, l\u00e9g\u00e8rement relev\u00e9e, avec des notes fum\u00e9es et umami, qui fait voyager les papilles tout en faisant du bien au corps. Alors, pr\u00eat.e \u00e0 troquer votre soupe de l\u00e9gumes classique contre cette p\u00e9pite pleine de pep\u2019s ?\nSi vous ne pouvez pas r\u00e9sister \u00e0 la douceur des patates douces, laissez-vous tenter par ces deux recettes qui vont faire fondre votre c\u0153ur ! En ap\u00e9ro, notre\nCr\u00e8me de feta, tahini et patates douces\nvous s\u00e9duira \u00e0 coup s\u00fbr, et pour une salade vitamin\u00e9e, d\u00e9couvrez notre\nSalade de patate douce avec sauce au tahini\n. La patate douce n\u2019a jamais \u00e9t\u00e9 aussi gourmande !\nUmami\u2026 K\u00e9zako ?\nL\u2019umami, c\u2019est ce cinqui\u00e8me go\u00fbt myst\u00e9rieux dont tout le monde parle, mais que personne ne sait vraiment expliquer. En gros, c\u2019est le go\u00fbt qui fait dire \u00ab\nMmmmh\u2026 mais c\u2019est trop bon, pourquoi ?!\n\u00ab\u00a0. Ni sucr\u00e9, ni sal\u00e9, ni acide, ni amer, c\u2019est cette saveur profonde et r\u00e9confortante qu\u2019on retrouve dans un bon bouillon, du fromage affin\u00e9, ou encore\u2026 une grosse dose de sauce soja bien dos\u00e9e. En bref, l\u2019umami, c\u2019est la magie qui transforme un simple plat en une exp\u00e9rience qui fait dire \u00ab\nOk, encore une louche !\n\u00ab\u00a0.\nUne soupe douce, mais avec du caract\u00e8re, des pleurotes r\u00f4tis pour la touche gourmande, une pointe d\u2019\u00e9pices qui r\u00e9chauffe juste ce qu\u2019il faut\u2026 Cette soupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis coche toutes les cases : originale, r\u00e9confortante et pleine de saveurs inattendues. Un vrai c\u00e2lin pour les papilles, mais avec une petite tape dans le dos pour les r\u00e9veiller ! Alors, pr\u00eat.e \u00e0 transformer votre prochaine pause soupe en voyage gustatif ?\nEnvie de plus de soupes surprenantes ? Ne vous arr\u00eatez pas en si bon chemin ! D\u00e9couvrez d\u2019autres recettes sal\u00e9es tout aussi savoureuses et r\u00e9confortantes sur le\nblog\n. Chaque cuill\u00e8re est une aventure, alors \u00e0 vos casseroles !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChampignon\n,\nHiver\n,\nPatate Douce\n,\nPlats & Accompagnements\n,\nRecettes Sal\u00e9es\n,\nSoupes\nRecettes aux asperges : 10 fa\u00e7ons de les cuisiner (et de les aimer) ce printemps\nPoireaux Vinaigrette Framboise Miso : Le twist inattendu qui change tout !\n1 thought on \u201cSoupe \u00e9pic\u00e9e aux patates douces et pleurotes r\u00f4tis : La recette qui va r\u00e9veiller vos papilles !\u201d\nBosha\ndit\u00a0:\n30 mars 2025 \u00e0 20 h 09 min\nVoil\u00e0 une soupe que je vais vite r\u00e9aliser, pour la d\u00e9couvrir !!!\nJ\u2019aimerai juste une pr\u00e9cision : tu emploi du gochujang en flocons ou en p\u00e2te ?\nJe ne sais pas si c\u2019est vraiment diff\u00e9rent de l\u2019un \u00e0 l\u2019autre. Perso, j\u2019emploi les flocons pour mes fermentations de Kimchi\nJ\u2019ai h\u00e2te de go\u00fbt\u00e9 cette merveille, Mille Mercis\nchargement\u2026\nR\u00e9pondre\n4.53 from 34 votes (\n33 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

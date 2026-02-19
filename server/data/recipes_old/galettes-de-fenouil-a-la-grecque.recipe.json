@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "title": "Galettes de fenouil \u00e0 la grecque",
+    "description": "Une nouvelle petite p\u00e9pite, rien que pour vous : les Galettes de fenouil \u00e0 la grecque !",
+    "servings": 12,
+    "prepTime": "PT15M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "fenouil",
+      "galettes de fenouil",
+      "recette grecque",
+      "automne",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/galettes-de-fenouil-1-of-3.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le citron s'utilise au moment de servir, en trait de jus.",
+      "Servir avec du tzatziki.",
+      "L'aneth est aussi bonne fra\u00eeche que s\u00e9ch\u00e9e.",
+      "Couper le fenouil le plus finement possible pour des lamelles souples et pour couper les fibres."
+    ],
+    "slug": "galettes-de-fenouil-a-la-grecque",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/galettes-de-fenouil-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/08/19/galettes-de-fenouil-a-la-grecque/",
+    "image": "images/galettes-de-fenouil-a-la-grecque.webp",
+    "createdAt": "2026-02-09T21:54:12.273375",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 6.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "April",
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 53.3,
+      "protein": 1.7,
+      "fat": 0.3,
+      "carbs": 11.3,
+      "fiber": 2.0,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "fennel",
+      "name": "fenouils",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "petits, environ 450g",
+      "optional": false,
+      "name_en": "Fennel"
+    },
+    {
+      "id": "spring_onion",
+      "name": "oignon nouveau",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "tige et bulbe",
+      "optional": false,
+      "name_en": "Spring onion"
+    },
+    {
+      "id": "parsley",
+      "name": "persil plat",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "dill",
+      "name": "aneth",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "dill"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 110.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon",
+      "name": "citron jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon"
+    }
+  ],
+  "tools": [
+    "mandoline (ou couteau bien aiguis\u00e9)"
+  ],
+  "steps": [
+    {
+      "id": "clean_fennel",
+      "action": "\u00d4tez la couche ext\u00e9rieure des bulbes de fenouil, puis rincez-les.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fennel"
+      ],
+      "produces": "cleaned_fennel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_fennel",
+      "action": "\u00c0 l'aide d'une mandoline, ou d'un couteau bien aiguis\u00e9, \u00e9mincez-les tr\u00e8s finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_fennel"
+      ],
+      "produces": "sliced_fennel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion_herbs",
+      "action": "\u00c9mincez l'oignon nouveau (tige et bulbe) puis hachez finement le persil et l'aneth.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spring_onion",
+        "parsley",
+        "dill"
+      ],
+      "produces": "chopped_onion_herbs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_ingredients",
+      "action": "D\u00e9posez tous les l\u00e9gumes dans un grand bol avec les herbes, la farine, l'eau, le sel et le poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_fennel",
+        "chopped_onion_herbs",
+        "flour",
+        "water",
+        "salt",
+        "pepper"
+      ],
+      "produces": "mixed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_batter",
+      "action": "M\u00e9langez (avec les mains c'est plus simple) pour bien combiner tous les ingr\u00e9dients.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_vegetables"
+      ],
+      "produces": "fennel_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffer un fond d'huile d'olive dans une po\u00eale \u00e0 feu moyen-fort.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_patties",
+      "action": "Quand elle est bien chaude, d\u00e9posez-y 2 c\u00e0s de la pr\u00e9paration et aplatissez avec le dos de la cuill\u00e8re pour former une galette. Vous pouvez faire cuire 4-5 galettes en m\u00eame temps en fonction de la taille de votre po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fennel_batter",
+        "hot_oil"
+      ],
+      "produces": "raw_patties_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_patties",
+      "action": "Laissez cuire 3min de chaque c\u00f4t\u00e9, la galette doit \u00eatre dor\u00e9e.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "raw_patties_in_pan"
+      ],
+      "produces": "cooked_patties",
+      "requires": [],
+      "visualCue": "dor\u00e9e"
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec un trait de citron, de la fleur de sel et du tzatziki.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_patties",
+        "lemon"
+      ],
+      "produces": "galettes_fenouil_grecque",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "galettes_fenouil_grecque",
+  "originalText": "Galettes de fenouil \u00e0 la grecque\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 ao\u00fbt 2023\nGalettes de fenouil \u00e0 la grecque\nUne nouvelle petite p\u00e9pite, rien que pour vous : les Galettes de fenouil \u00e0 la grecque\u00a0 !\nJe trouve que le fenouil fait partie de ces l\u00e9gumes qui ne sont pas si \u00e9vidents \u00e0 cuisiner. Ou \u00e0 faire appr\u00e9cier.\nLe go\u00fbt l\u00e9g\u00e8rement anis\u00e9 en a rebut\u00e9 plus d\u2019un ! Et la texture fibreuse en a rebut\u00e9 plus de 12. Para\u00eet-il !\nPour ma part, c\u2019est un l\u00e9gume que j\u2019ai toujours aim\u00e9 ! On en mange pas mal dans la cuisine grecque. Cuit ou cru. Mais j\u2019aime aussi le cuisiner en m\u2019inspirant d\u2019autres types de cuisine. J\u2019ai notamment eu un coup de c\u0153ur sans fin pour\ncette salade de fenouil aux agrumes\n!\nMais parlons un peu de ces petites Galettes de fenouil \u00e0 la grecque !\nElles ne repr\u00e9sentent aucune difficult\u00e9 particuli\u00e8re en ce qui concerne leur pr\u00e9paration. Les ingr\u00e9dients sont tout \u00e0 fait basiques. Pas de farine \u00e9trange et difficile \u00e0 trouver !\nIl faut couper le fenouil le plus finement possible. Pour que les lamelles soient souples. Et cela permet aussi de couper les fibres. Et donc de ne plus avoir cette sensation en bouche.\nEnsuite on les m\u00e9lange avec des herbes fra\u00eeches. Comme tr\u00e8s souvent dans la cuisine grecque. On retrouve du persil plat et de l\u2019aneth. D\u2019ailleurs, l\u2019aneth est l\u2019une des seules herbes fra\u00eeches qui soit, d\u2019apr\u00e8s moi, aussi bonne fra\u00eeche que s\u00e9ch\u00e9e.\nEt le secret pour faire ressortir tout le go\u00fbt, c\u2019est de les faire cuire pour qu\u2019elles soient bien croustillantes. Puis de les manger imm\u00e9diatement avec un bon trait de jus de citron et une bonne dose de fleur de sel ! Et j\u2019adore y ajouter un peu de\ntzatziki\n\ud83d\ude42\nGalettes de fenouil \u00e0 la grecque\n4.61\n/5 avec\n43\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n12\ngalettes\nIngr\u00e9dients\n1x\n2x\n3x\n2\npetits fenouils\nenviron 450g\n1\noignon nouveau\n10\nbranches de persil plat\n10\nbranches d\u2019aneth\n110\ng\nde farine\n120\nml\nd\u2019eau\nsel\npoivre\nhuile d\u2019olive\n1\ncitron jaune\nInstructions\n\u00d4tez la couche ext\u00e9rieure des bulbes de fenouil, puis rincez-les.\nA l\u2019aide d\u2019une mandoline, ou d\u2019un couteau bien aiguis\u00e9, \u00e9mincez-les tr\u00e8s finement.\n\u00c9mincez l\u2019oignon nouveau (tige et bulbe) puis hachez finement le persil et l\u2019aneth.\nD\u00e9posez tous les l\u00e9gumes dans un grand bol avec les herbes, la farine, l\u2019eau, le sel et le poivre.\nM\u00e9langez (avec les mains c\u2019est plus simple) pour bien combiner tous les ingr\u00e9dients.\nFaites chauffer un fond d\u2019huile d\u2019olive dans une po\u00eale \u00e0 feu moyen-fort.\nQuand elle est bien chaude, d\u00e9posez-y 2 c\u00e0s de la pr\u00e9paration et aplatissez avec le dos de la cuill\u00e8re pour former une galette.\nVous pouvez faire cuire 4-5 galettes en m\u00eame temps en fonction de la taille de votre po\u00eale.\nLaissez cuire 3-4min de chaque c\u00f4t\u00e9, la galette doit \u00eatre dor\u00e9e.\nServir avec un trait de citron, de la fleur de sel et du\ntzatziki\n!\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nFenouil\n,\nGalettes\n,\nPrintemps\nTags:\nfenouil\n,\ngalettes de fenouil\n,\nmanger du fenouil\n,\nrecette fenouil\n,\nrecette grecque\nCaviar d\u2019aubergine au tahini (baba ganoush)\nCourgettes froides ail coriandre et cumin : recette fra\u00eecheur\n3 thoughts on \u201cGalettes de fenouil \u00e0 la grecque\u00a0\u201d\nHirondelle\ndit\u00a0:\n9 septembre 2023 \u00e0 8 h 50 min\nBonjour,\nUne nouvelle fa\u00e7on de cuisiner du fenouil, l\u00e9gume que je ne sais pas comment pr\u00e9parer. Mais que fait-on du citron ? utilise-t-on le jus et le zeste par exemple ?\nMerci pour vos d\u00e9licieuses recettes.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n10 septembre 2023 \u00e0 17 h 12 min\nBonjour Marie ! Le citron c\u2019est juste au moment de les manger, j\u2019ajoute un petit trait de jus de citron ! Merci \u00e0 toi !\nchargement\u2026\nR\u00e9pondre\nCaroline\ndit\u00a0:\n4 avril 2024 \u00e0 20 h 16 min\nD\u00e9licieux !\nchargement\u2026\nR\u00e9pondre\n4.61 from 43 votes (\n42 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

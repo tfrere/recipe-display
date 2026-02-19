@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "title": "Sauce aux \u00e9chalotes toute simple : le grand classique qu'on adore",
+    "description": "Une sauce classique, ultra rapide, qui transforme instantan\u00e9ment un plat du quotidien en assiette pleine de caract\u00e8re. L\u00e9g\u00e8rement douce, un peu acidul\u00e9e, toujours parfum\u00e9e.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "sauce",
+      "\u00e9chalote",
+      "v\u00e9g\u00e9tarien",
+      "classique",
+      "rapide"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-echalotes-toute-simple-free-the-pickleSauce-echalotes-1-of-1-819x1024.jpg",
+    "nationality": "French",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez pr\u00e9parer la sauce quelques jours en avance et la r\u00e9chauffer \u00e0 feu doux avant de servir."
+    ],
+    "slug": "sauce-aux-echalotes-toute-simple-le-grand-classique-qu-on-adore",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-echalotes-toute-simple-free-the-pickleSauce-echalotes-1-of-1-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/11/15/sauce-aux-echalotes-toute-simple/",
+    "image": "images/sauce-aux-echalotes-toute-simple-le-grand-classique-qu-on-adore.webp",
+    "createdAt": "2026-02-09T23:13:57.840349",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 718.8,
+      "protein": 5.7,
+      "fat": 40.8,
+      "carbs": 42.2,
+      "fiber": 6.4,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "cognac",
+      "name": "cognac",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cognac"
+    },
+    {
+      "id": "red_wine",
+      "name": "vin rouge",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red wine"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vegetable_broth_cube",
+      "name": "bouillon de l\u00e9gumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "cube",
+      "optional": false,
+      "name_en": "vegetable broth"
+    },
+    {
+      "id": "cornstarch",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "water_for_slurry",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [],
+  "steps": [
+    {
+      "id": "slice_shallots",
+      "action": "\u00c9mincez les \u00e9chalotes finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots"
+      ],
+      "produces": "sliced_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallots",
+      "action": "Faites-les revenir dans le beurre avec le thym jusqu'\u00e0 ce qu'elles commencent tout juste \u00e0 dorer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_shallots",
+        "butter",
+        "thyme"
+      ],
+      "produces": "sauteed_shallots",
+      "requires": [],
+      "visualCue": "commencent tout juste \u00e0 dorer"
+    },
+    {
+      "id": "deglaze_cognac",
+      "action": "D\u00e9glacez avec le cognac.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_shallots",
+        "cognac"
+      ],
+      "produces": "deglazed_shallots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajoutez le vin rouge, l'eau et le bouillon cube.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "deglazed_shallots",
+        "red_wine",
+        "water",
+        "vegetable_broth_cube"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Laissez cuire \u00e0 petits bouillons jusqu'\u00e0 ce que la sauce r\u00e9duise de moiti\u00e9.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_base"
+      ],
+      "produces": "reduced_sauce",
+      "requires": [],
+      "visualCue": "sauce r\u00e9duise de moiti\u00e9"
+    },
+    {
+      "id": "make_slurry",
+      "action": "Dans un petit bol, m\u00e9langez la f\u00e9cule de ma\u00efs et l'eau (1 c\u00e0s) et versez dans la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cornstarch",
+        "water_for_slurry",
+        "reduced_sauce"
+      ],
+      "produces": "sauce_with_slurry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "thicken_sauce",
+      "action": "Laissez cuire encore 5min. Et c'est pr\u00eat !",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_with_slurry"
+      ],
+      "produces": "shallot_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "shallot_sauce",
+  "originalText": "Sauce Aux \u00c9chalotes Toute Simple | La Recette Facile Et Parfum\u00e9e\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 novembre 2025\nSauce aux \u00e9chalotes toute simple : le grand classique qu\u2019on adore\nLa\nsauce aux \u00e9chalotes toute simple\n, c\u2019est le genre de\nrecette\nqu\u2019on pr\u00e9pare les yeux ferm\u00e9s. Une\nsauce classique\n,\nultra rapide\n, qui transforme instantan\u00e9ment un\nplat du quotidien\nen\nassiette pleine de caract\u00e8re\n. L\u00e9g\u00e8rement\ndouce\n, un peu\nacidul\u00e9e\n, toujours\nparfum\u00e9e\n\u2026 elle a ce petit\ngo\u00fbt\nde \u201c\nfait maison\n\u201d qui change tout. C\u2019est une\nsauce\nqu\u2019on ressort quand on veut faire bien sans se compliquer la vie. Des\n\u00e9chalotes\nfondues, des\naromates\n, et on obtient une base parfaite pour\nnapper d\nes\nl\u00e9gumes\nou un\nr\u00f4ti v\u00e9g\u00e9tarien\n.\nSimple\n,\nefficace\n,\nintemporelle\n, et surtout\nd\u00e9licieuse\n.\nTable des mati\u00e8res\n1\nL\u2019\u00e9chalote, petite mais pleine de caract\u00e8re\n2\nUne sauce simple, \u00e9conomique\u2026 et pleine de caract\u00e8re\n3\nSauce aux \u00e9chalotes toute simple\n4\nUne sauce qui accompagne absolument tout\n5\nUne sauce \u00e0 pr\u00e9parer \u00e0 l\u2019avance, pour un repas sans stress\nL\u2019\u00e9chalote, petite mais pleine de caract\u00e8re\nL\u2019\u00e9chalote, c\u2019est le genre d\u2019ingr\u00e9dient qu\u2019on sous-estime souvent\u2026 jusqu\u2019\u00e0 ce qu\u2019on la fasse revenir dans une noisette de beurre. Douce, l\u00e9g\u00e8rement sucr\u00e9e, avec ce parfum fin qui ne prend jamais le dessus ! Elle donne imm\u00e9diatement du relief \u00e0 n\u2019importe quelle sauce. C\u2019est elle qui apporte cette profondeur discr\u00e8te mais essentielle aux plats du quotidien. Dans une sauce, elle fond doucement. Elle caram\u00e9lise juste ce qu\u2019il faut et cr\u00e9e cette base parfum\u00e9e qu\u2019on reconna\u00eet tout de suite. Pas \u00e9tonnant qu\u2019on l\u2019utilise aussi bien pour rehausser les l\u00e9gumes, les r\u00f4tis v\u00e9g\u00e9tariens ou un simple bol de p\u00e2tes.\nSi vous aimez l\u2019\u00e9chalote autant que nous, essayez aussi notre\ntarte tatin aux \u00e9chalotes et au miel\npour une entr\u00e9e chic et fondante, notre\ntofu aux \u00e9chalotes\npour un plat rapide du quotidien, ou encore le\nchou rouge brais\u00e9 aux \u00e9chalotes et fava\npour une assiette r\u00e9confortante et parfum\u00e9e.\nUne sauce simple, \u00e9conomique\u2026 et pleine de caract\u00e8re\nCe qui rend cette sauce aux \u00e9chalotes toute simple si irr\u00e9sistible, c\u2019est son m\u00e9lange d\u2019ingr\u00e9dients du quotidien. Les \u00e9chalotes finement \u00e9minc\u00e9es fondent doucement dans le beurre. Le thym apporte une note aromatique discr\u00e8te, et un trait de cognac vient r\u00e9chauffer l\u2019ensemble. Le vin rouge, l\u2019eau et le bouillon de l\u00e9gumes forment ensuite une base riche qui r\u00e9duit tranquillement. Un peu de f\u00e9cule de ma\u00efs pour donner de la tenue, encore quelques minutes de cuisson\u2026 Et la sauce est pr\u00eate. Vous pouvez m\u00eame la pr\u00e9parer quelques jours \u00e0 l\u2019avance et la r\u00e9chauffer tout doucement : elle n\u2019en sera que meilleure.\nEt si vous aimez les sauces qui font toute la diff\u00e9rence, allez jeter un \u0153il \u00e0 notre\nsauce foresti\u00e8re\n, \u00e0 notre\nsauce aux c\u00e8pes\n, \u00e0 la tr\u00e8s pratique\nb\u00e9arnaise au blender\nou encore \u00e0 notre\nsauce au poivre inratable\n.\nSauce aux \u00e9chalotes toute simple\n4.60\n/5 avec\n110\nvotes\nImprimer la recette\nPin Recipe\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n200\ng\nd\u2019\u00e9chalotes\n50\ng\nde beurre\n1\nbranche de thym\n1\nc\u00e0s de cognac\n200\nml\nde vin rouge\n300\nml\nd\u2019eau\n1\nbouillon cube de l\u00e9gumes\n1\nc\u00e0c de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019eau\nInstructions\n\u00c9mincez les \u00e9chalotes finement.\nFaites-les revenir dans le beurre avec le thym jusqu\u2019\u00e0 ce qu\u2019elles commencent tout juste \u00e0 dorer.\nD\u00e9glacez avec le cognac.\nAjoutez le vin rouge, l\u2019eau et le bouillon cube.\nLaissez cuire \u00e0 petits bouillons 10-15min, jusqu\u2019\u00e0 ce que la sauce r\u00e9duise de moiti\u00e9.\nDans un petit bol, m\u00e9langez la f\u00e9cule et l\u2019eau et versez dans la sauce.\nLaissez cuire encore 5min. Et c\u2019est pr\u00eat !\nNotes\nVous pouvez pr\u00e9parer la sauce quelques jours en avance et la r\u00e9chauffer \u00e0 feu doux avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUne sauce qui accompagne absolument tout\nCe qu\u2019on adore avec cette sauce aux \u00e9chalotes toute simple, c\u2019est qu\u2019elle s\u2019accorde avec presque tout. Elle rel\u00e8ve un steak v\u00e9g\u00e9tal, donne du caract\u00e8re \u00e0 un r\u00f4ti (qu\u2019il soit v\u00e9g\u00e9 ou non) et apporte une touche r\u00e9confortante m\u00eame aux plats les plus simples. C\u2019est la sauce que l\u2019on pose au centre de la table en sachant qu\u2019elle va sublimer chaque assiette. Servez-la sur des steaks de chou-fleur comme nos\nsteaks de chou-fleur au miso\nou notre\nsteak de chou-fleur pan\u00e9\n. Elle fait aussi merveille avec les r\u00f4tis v\u00e9g\u00e9taux de f\u00eate : le\nr\u00f4ti vegan \u00e0 la ch\u00e2taigne\n, le\nr\u00f4ti de haricots blancs et farce pomme-ch\u00e2taignes\nou encore le\nr\u00f4ti vegan aux c\u00e8pes sans gluten\n. Et si vous misez sur un repas simple et r\u00e9gressif, essayez-la avec nos\nnuggets v\u00e9g\u00e9tariens aux pois chiches\n: un duo parfait pour un d\u00eener express et plein de go\u00fbt.\nUne sauce \u00e0 pr\u00e9parer \u00e0 l\u2019avance, pour un repas sans stress\nCe qu\u2019on aime avec cette sauce aux \u00e9chalotes toute simple, c\u2019est qu\u2019elle ne demande ni technique ni surveillance. Elle mijote tranquillement, se conserve parfaitement et devient m\u00eame meilleure apr\u00e8s une nuit au frigo. Vous pouvez la pr\u00e9parer deux ou trois jours avant un d\u00eener un peu sp\u00e9cial, puis la r\u00e9chauffer \u00e0 feu doux juste avant de servir. Elle retrouve sa texture onctueuse et son parfum profond en quelques minutes. C\u2019est exactement le genre de sauce qui vous sauve un repas quand vous recevez. Une petite casserole pr\u00eate \u00e0 l\u2019avance, et vous avez sous la main un accompagnement maison qui sublime n\u2019importe quel plat : du steak v\u00e9g\u00e9tal au r\u00f4ti du dimanche.\nCette sauce aux \u00e9chalotes toute simple a vraiment tout pour elle : rapide, \u00e9conomique, parfum\u00e9e et capable de transformer le plat le plus basique en un vrai petit bonheur maison. C\u2019est la sauce qu\u2019on pr\u00e9pare sans r\u00e9fl\u00e9chir. On la sert sur un steak v\u00e9g\u00e9tal, un r\u00f4ti ou des l\u00e9gumes r\u00f4tis, et soudain tout le monde r\u00e9alise : \u201cok, l\u00e0, c\u2019est autre chose\u201d.\nEt si vous aimez les plats bien r\u00e9confortants accompagn\u00e9s de sauces maison, d\u00e9couvrez aussi\ntoutes nos recettes de plats en sauce\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nQuiche butternut poireau ch\u00e8vre : recette pratique et r\u00e9confortante\nSauce aux airelles rapide : l\u2019incontournable des tables de fin d\u2019ann\u00e9e\n1 thought on \u201cSauce aux \u00e9chalotes toute simple : le grand classique qu\u2019on adore\u201d\nweyland\ndit\u00a0:\n15 novembre 2025 \u00e0 15 h 00 min\nSauce vraiment TOP. Merci\nchargement\u2026\nR\u00e9pondre\n4.60 from 110 votes (\n109 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

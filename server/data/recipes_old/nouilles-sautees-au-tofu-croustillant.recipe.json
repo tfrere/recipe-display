@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "title": "Nouilles Saut\u00e9es au tofu croustillant",
+    "description": "Ca faisait un moment que j'avais cette recette de Nouilles Saut\u00e9es au tofu croustillant en t\u00eate ! C'est gourmand \u00e0 souhait. Comfort food \u00e0 100%. Et franchement pas bien compliqu\u00e9.",
+    "servings": 4,
+    "prepTime": "PT25M",
+    "cookTime": "PT25M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "nouilles saut\u00e9es",
+      "recette asiatique",
+      "recette de tofu",
+      "recette vegan",
+      "tofu",
+      "dan dan",
+      "automne",
+      "hiver",
+      "wok"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Nouilles-Dan-Dan-2-of-4.jpg",
+    "nationality": "asiatique",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Ajuster le piment en fonction de vos go\u00fbts.",
+      "La m\u00e9thode d'\u00e9miettage du tofu permet d'avoir un tofu croustillant et de bien l'incorporer aux nouilles.",
+      "On peut faire cette recette avec du tofu fum\u00e9.",
+      "On peut ajouter des cacahu\u00e8tes concass\u00e9es.",
+      "On peut rajouter un filet de jus de citron pour apporter un peu d'acidit\u00e9."
+    ],
+    "slug": "nouilles-sautees-au-tofu-croustillant",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/10/Nouilles-Dan-Dan-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/10/19/nouilles-sautees-au-tofu-croustillant/",
+    "image": "images/nouilles-sautees-au-tofu-croustillant.jpg",
+    "createdAt": "2026-02-09T21:37:41.601323",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 30.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 438.7,
+      "protein": 19.0,
+      "fat": 10.4,
+      "carbs": 68.7,
+      "fiber": 5.9,
+      "confidence": "medium",
+      "resolvedIngredients": 11,
+      "matchedIngredients": 15,
+      "totalIngredients": 18,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_ferme",
+      "name": "tofu ferme",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "firm tofu"
+    },
+    {
+      "id": "fecule_de_mais",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "huile_pimentee_1",
+      "name": "huile piment\u00e9e",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "ou huile de tournesol",
+      "optional": false,
+      "name_en": "chili oil"
+    },
+    {
+      "id": "huile_de_sesame",
+      "name": "huile de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "sauce_soja_tamari",
+      "name": "sauce soja tamari",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "tahini",
+      "name": "tahini",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tahini"
+    },
+    {
+      "id": "huile_pimentee_2",
+      "name": "huile piment\u00e9e",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chili oil"
+    },
+    {
+      "id": "gingembre_rape",
+      "name": "gingembre r\u00e2p\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "grated ginger"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "sirop_derable",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "clou_de_girofle_moulu",
+      "name": "clou de girofle moulu",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": "moulu",
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "ground cloves"
+    },
+    {
+      "id": "cannelle_moulue",
+      "name": "cannelle moulue",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": "moulue",
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "ground cinnamon"
+    },
+    {
+      "id": "graines_de_fenouil",
+      "name": "graines de fenouil",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "Fennel seeds"
+    },
+    {
+      "id": "chou_chinois",
+      "name": "chou chinois",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "feuilles, ou napa",
+      "optional": false,
+      "name_en": "napa cabbage"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "oignons_verts",
+      "name": "oignons verts",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "tiges",
+      "optional": false,
+      "name_en": "green onions"
+    },
+    {
+      "id": "nouilles_aux_oeufs",
+      "name": "nouilles aux oeufs",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou nouilles de riz",
+      "optional": false,
+      "name_en": "egg noodles"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    }
+  ],
+  "tools": [
+    "Wok",
+    "Torchon"
+  ],
+  "steps": [
+    {
+      "id": "presser_tofu",
+      "action": "Envelopper le tofu dans un torchon et le presser sous quelque chose de lourd (une grosse casserole par ex). Le laisser au moins 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "tofu_ferme"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emietter_tofu",
+      "action": "Une fois press\u00e9, l'\u00e9mietter entre vos doigts pour lui donner une consistance hach\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "tofu_presse"
+      ],
+      "produces": "tofu_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enrober_tofu_fecule",
+      "action": "Le mettre dans un bol avec la f\u00e9cule et m\u00e9langer pour bien r\u00e9partir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "tofu_emiette",
+        "fecule_de_mais"
+      ],
+      "produces": "tofu_enrobe_fecule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_wok",
+      "action": "Faire chauffer un wok et y verser l'huile piment\u00e9e (ou de tournesol).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "huile_pimentee_1"
+      ],
+      "produces": "wok_chaud_huile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_tofu",
+      "action": "Verser le tofu hach\u00e9 et le faire revenir une dizaine de minutes en remuant r\u00e9guli\u00e8rement. Le tofu doit dorer.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "tofu_enrobe_fecule",
+        "wok_chaud_huile"
+      ],
+      "produces": "tofu_dore",
+      "requires": [],
+      "visualCue": "dor\u00e9"
+    },
+    {
+      "id": "arroser_sauce_sesame",
+      "action": "Verser la sauce soja tamari et l'huile de s\u00e9same. Laisser dorer encore quelques minutes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tofu_hache",
+      "uses": [
+        "tofu_dore",
+        "sauce_soja_tamari",
+        "huile_de_sesame"
+      ],
+      "produces": "tofu_croustillant",
+      "requires": [],
+      "visualCue": "dor\u00e9"
+    },
+    {
+      "id": "preparer_sauce",
+      "action": "Pr\u00e9parer la sauce en m\u00e9langeant tous les ingr\u00e9dients (tahini, 1 c\u00e0c huile piment\u00e9e, gingembre, 2 c\u00e0s sauce soja, sirop d'\u00e9rable, poivre, clou de girofle, cannelle, graines de fenouil). R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "tahini",
+        "huile_pimentee_2",
+        "gingembre_rape",
+        "sauce_soja",
+        "sirop_derable",
+        "poivre",
+        "clou_de_girofle_moulu",
+        "cannelle_moulue",
+        "graines_de_fenouil"
+      ],
+      "produces": "sauce_epicee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_legumes",
+      "action": "Pr\u00e9parer les l\u00e9gumes : \u00e9mincer les feuilles de chou et les tiges d'oignon, r\u00e2per la carotte. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "legumes_et_nouilles",
+      "uses": [
+        "chou_chinois",
+        "oignons_verts",
+        "carotte"
+      ],
+      "produces": "legumes_prepares",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_nouilles",
+      "action": "Faire cuire les nouilles en suivant les indications du paquet et r\u00e9server dans de l'eau froide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "legumes_et_nouilles",
+      "uses": [
+        "nouilles_aux_oeufs"
+      ],
+      "produces": "nouilles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_ail_legumes",
+      "action": "Si besoin, rincer le wok. Faire revenir l'ail press\u00e9e, la carotte et le chou une dizaine de minutes dans un fond d'huile \u00e0 feu vif.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "legumes_prepares",
+        "ail"
+      ],
+      "produces": "legumes_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_nouilles_sauce",
+      "action": "Ajouter les nouilles cuites et \u00e9goutt\u00e9es et la sauce. Faire revenir encore 3-4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "legumes_sautes",
+        "nouilles_cuites",
+        "sauce_epicee"
+      ],
+      "produces": "nouilles_saucees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_tofu",
+      "action": "Ajouter le tofu r\u00e9serv\u00e9. Faire revenir encore quelques minutes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "nouilles_saucees",
+        "tofu_croustillant"
+      ],
+      "produces": "nouilles_tofu_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir_oignon_vert",
+      "action": "Servir avec l'oignon vert \u00e9minc\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "nouilles_tofu_melange",
+        "oignons_verts"
+      ],
+      "produces": "nouilles_sautees_tofu_croustillant",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "nouilles_sautees_tofu_croustillant",
+  "originalText": "Nouilles Saut\u00e9es au tofu croustillant - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 octobre 2022\nNouilles Saut\u00e9es au tofu croustillant\nAller \u00e0 la recette\nCa faisait un moment que j\u2019avais cette recette de Nouilles Saut\u00e9es au tofu croustillant en t\u00eate !\nAvec le succ\u00e8s\ndes nouilles saut\u00e9es Chow Mein\n, je savais que ce type de recettes vous plaisent !\nFaut dire que les nouilles saut\u00e9es ont tendance \u00e0 mettre tout le monde d\u2019accord !\nC\u2019est gourmand \u00e0 souhait. Comfort food \u00e0 100%. Et franchement pas bien compliqu\u00e9.\nGlobalement, comme souvent, tout est dans la sauce.\nC\u2019est elle qui va donner tout le ton du plat. Ici les \u00e9pices et le tahini donnent de la richesse \u00e0 la sauce. On a une sauce assez \u00e9paisse et tr\u00e8s parfum\u00e9e. Un peu piment\u00e9e aussi je dois dire ! Mais comme toujours, il faut ajuster le piment en fonction de vos go\u00fbts. Et tout le reste de la recette d\u2019ailleurs !\nParlons du tofu maintenant ! Car, apr\u00e8s tout, c\u2019est une recette de Nouilles Saut\u00e9es au tofu croustillant !\nSi vous suivez le blog depuis un moment, vous savez que je ne cuisine pas beaucoup de tofu. Je pense que c\u2019est un aliment qu\u2019il faut vraiment apprendre \u00e0 cuisiner. Pour moi,\ncette recette de tofu aux \u00e9chalotes\na \u00e9t\u00e9 une r\u00e9v\u00e9lation. Et \u00e7a m\u2019a donn\u00e9 envie de tenter de nouvelles exp\u00e9riences.\nJ\u2019ai vu cette m\u00e9thode d\u2019\u00e9miettage de tofu en me promenant sur insta et j\u2019ai voulu essayer ! Et bien, verdict, c\u2019est top ! Ca permet d\u2019avoir un tofu croustillant et de bien l\u2019incorporer aux nouilles ! Je recommande \ud83d\ude42\nNouilles Saut\u00e9es au tofu croustillant\n4.46\n/5 avec\n50\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nTofu hach\u00e9\n250\ng\nde tofu ferme\n2\nc\u00e0s de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019huile piment\u00e9e\nou d\u2019huile de tournesol\n1\nc\u00e0c d\u2019huile de s\u00e9same\n3\nc\u00e0s de sauce soja tamari\nSauce\n1\nc\u00e0s de tahini\n1\nc\u00e0c d\u2019huile piment\u00e9e\n1\nc\u00e0c de gingembre r\u00e2p\u00e9\n2\nc\u00e0s de sauce soja\n1\nc\u00e0s de sirop d\u2019\u00e9rable\n1\npinc\u00e9e de poivre\n1\npinc\u00e9e de clou de girofle moulu\n1\npinc\u00e9e de cannelle moulue\n1\npinc\u00e9e de graines de fenouil\nLe reste\n4\nfeuilles de chou chinois\nou napa\n1\ncarotte\n2\ntiges d\u2019oignons verts\n250\ng\nde nouilles\naux oeufs ou de riz\n1\ngousse d\u2019ail\nInstructions\nEnvelopper le tofu dans un torchon et le presser sous quelque chose de lourd (une grosse casserole par ex). Le laisser au moins 15min, voir plus si possible.\nPendant ce temps pr\u00e9parer la sauce en m\u00e9langeant tous les ingr\u00e9dients. R\u00e9server.\nPr\u00e9parer les l\u00e9gumes : \u00e9mincer les feuilles de chou et les tiges d\u2019oignon, r\u00e2per la carotte. R\u00e9server.\nFaire cuire les nouilles en suivant les indications du paquet et r\u00e9server dans de l\u2019eau froide.\nUne fois que le tofu est press\u00e9, l\u2019\u00e9mietter entre vos doigts pour lui donner une consistance hach\u00e9e.\nLe mettre dans un bol avec la f\u00e9cule et m\u00e9langer pour bien r\u00e9partir.\nFaire chauffer un wok et y verser l\u2019huile piment\u00e9e (ou de tournesol).\nVerser le tofu hach\u00e9 et le faire revenir une dizaine de minutes en remuant r\u00e9guli\u00e8rement. Le tofu doit dorer. Verser la sauce soja et l\u2019huile de s\u00e9same. Laisser dorer encore quelques minutes.\nR\u00e9server le tofu dans un bol.\nSi besoin, rincer le wok.\nFaire revenir l\u2019ail gousse d\u2019ail press\u00e9e, la carotte et le chou une dizaine de minutes dans un fond d\u2019huile \u00e0 feu vif.\nAjouter les nouilles cuites et \u00e9goutt\u00e9es et la sauce. Faire revenir encore 3-4min puis ajouter le tofu. Faire revenir encore quelques minutes.\nServir avec l\u2019oignon vert.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nView this post on Instagram\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nRecettes Sal\u00e9es\n,\nWok\nTags:\ndan dan\n,\nnouilles saut\u00e9es\n,\nrecette asiatique\n,\nrecette de tofu\n,\nrecette vegan\n,\ntofu\nMini tourtes de Champignons et Saint-Nectaire\nTarte tatin Ch\u00e8vre et Poireaux\n5 thoughts on \u201cNouilles Saut\u00e9es au tofu croustillant\u201d\nPiermatt\u00e9o Marie\ndit\u00a0:\n21 octobre 2022 \u00e0 16 h 39 min\nPeut on faire cette recette avec du tofu fum\u00e9 ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n9 novembre 2022 \u00e0 16 h 40 min\nOui sans prob !\nchargement\u2026\nR\u00e9pondre\nClem\ndit\u00a0:\n23 octobre 2022 \u00e0 0 h 20 min\nSuper recette c\u2019\u00e9tait exactement ce qu\u2019il nous fallait pour ce soir on s\u2019est r\u00e9gal\u00e9s !\nchargement\u2026\nR\u00e9pondre\nFloriane\ndit\u00a0:\n29 janvier 2024 \u00e0 14 h 10 min\nD\u00e9licieux, mais j\u2019ai mis deux carottes (j\u2019aurais m\u00eame pu en mettre trois) et le quart d\u2019un chou chinois pour que cela soit un peu plus riche en l\u00e9gumes \ud83d\ude42\nLa prochaine j\u2019ajouterai des cacahu\u00e8tes concass\u00e9es !\nchargement\u2026\nR\u00e9pondre\nBenedicte\ndit\u00a0:\n31 octobre 2024 \u00e0 9 h 17 min\nD\u00e9licieuse recette, pleine de saveurs.\nJ\u2019ai rajout\u00e9 un filet de jus de citron pour apporter un peu d\u2019acidit\u00e9.\nchargement\u2026\nR\u00e9pondre\n4.46 from 50 votes (\n47 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 30.0
+}

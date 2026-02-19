@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "title": "Galettes de Lentilles Corail et Carottes",
+    "description": "Recette simple de galettes saines et gourmandes sans farine ni œufs, avec une sauce au yaourt fraîche. Idéale pour les enfants et tous ceux qui cherchent un plat végétalien et sans gluten.",
+    "servings": 6,
+    "prepTime": "PT30M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "galettes de légumes",
+      "galettes sans gluten",
+      "galettes vegan",
+      "légume enfant",
+      "recette enfant",
+      "recette sans farine",
+      "steak végétarien carotte",
+      "lentilles corail",
+      "carotte"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/galettes-lentilles-corail-carottes-3-of-4-scaled.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La recette est simple à réaliser, et ne comporte ni farine ni oeufs.",
+      "Vous pouvez remplacer le chia et l'oeuf par un oeuf battu si vous le souhaitez ! Ou même par une cuillère à soupe de graines de lins moulus dans 4 c-à-s d'eau.",
+      "La touche de sauce au yaourt apporte de la fraîcheur et du crémeux aux galettes ! Je vous la conseille vivement.",
+      "Si vous n'arrivez pas à former de boules car la pâte est trop humide, ajoutez un peu de fécule.",
+      "Servir avec la sauce au yaourt et l'accompagnement de votre choix (crudités, légumes, riz etc…)."
+    ],
+    "slug": "galettes-de-lentilles-corail-et-carottes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/galettes-lentilles-corail-carottes-3-of-4-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/08/galettes-de-lentilles-corail-et-carottes-vegan-et-sans-gluten/",
+    "image": "images/galettes-de-lentilles-corail-et-carottes.jpg",
+    "createdAt": "2026-02-09T19:48:53.345049",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 65.0,
+    "totalCookingTime": 35.0,
+    "nutritionPerServing": {
+      "calories": 255.8,
+      "protein": 7.9,
+      "fat": 12.1,
+      "carbs": 29.7,
+      "fiber": 6.0,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 12,
+      "totalIngredients": 13,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "soy_yogurt",
+      "name": "yaourt de soja",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "soy yogurt"
+    },
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": "ou plus au goût",
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "garlic_clove",
+      "name": "gousse d'ail",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressée",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "dried_mint",
+      "name": "menthe séchée",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried mint"
+    },
+    {
+      "id": "salt_sauce",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_sauce",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "chia_seeds",
+      "name": "graines de chia",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chia seeds"
+    },
+    {
+      "id": "water_chia",
+      "name": "eau",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "red_lentils",
+      "name": "lentilles corail",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "poids avant cuisson",
+      "optional": false,
+      "name_en": "red lentils"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "râpées",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "râpé",
+      "notes": "petit",
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail semoule",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated garlic"
+    },
+    {
+      "id": "oat_flakes",
+      "name": "flocons d'avoine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "sans gluten si nécessaire",
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "cornstarch",
+      "name": "fécule de maïs",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin",
+      "quantity": 0.333,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin"
+    },
+    {
+      "id": "sweet_paprika",
+      "name": "paprika doux",
+      "quantity": 0.333,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet paprika"
+    },
+    {
+      "id": "salt_patties",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_patties",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    }
+  ],
+  "tools": [],
+  "steps": [
+    {
+      "id": "make_yogurt_sauce",
+      "action": "Mélanger tous les ingrédients dans un bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "soy_yogurt",
+        "lemon",
+        "garlic_clove",
+        "dried_mint",
+        "salt_sauce",
+        "pepper_sauce"
+      ],
+      "produces": "yogurt_sauce_unseasoned",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_sauce",
+      "action": "Goûter pour rectifier l'assaisonnement puis réserver au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "yogurt_sauce_unseasoned"
+      ],
+      "produces": "yogurt_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "hydrate_chia",
+      "action": "Mettre le chia et l'eau dans un petit bol, remuer et laisser reposer.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "chia_seeds",
+        "water_chia"
+      ],
+      "produces": "hydrated_chia",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_lentils",
+      "action": "Mettre les lentilles à cuire dans un grand volume d'eau bouillante. Laisser cuire en remuant de temps en temps, jusqu'à ce qu'elles soient bien molles.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "red_lentils"
+      ],
+      "produces": "cooked_lentils",
+      "requires": [],
+      "visualCue": "bien molles"
+    },
+    {
+      "id": "grate_vegetables",
+      "action": "Pendant ce temps, râper les carottes et l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "carrots",
+        "onion"
+      ],
+      "produces": "grated_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Mettre tous les ingrédients (carottes, oignon, ail semoule, flocons d'avoine, fécule, cumin, paprika, sel, poivre) dans un grand bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "grated_vegetables",
+        "garlic_powder",
+        "oat_flakes",
+        "cornstarch",
+        "cumin",
+        "sweet_paprika",
+        "salt_patties",
+        "pepper_patties"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_lentils_chia",
+      "action": "Une fois les lentilles cuites, bien les égoutter et les ajouter au bol, avec les graines de chia. Bien mélanger et ajuster l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "cooked_lentils",
+        "hydrated_chia",
+        "dry_mix"
+      ],
+      "produces": "patty_mixture_unrested",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_mixture",
+      "action": "Laisser reposer pour que les flocons d'avoine absorbent l'humidité.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "patty_mixture_unrested"
+      ],
+      "produces": "patty_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faire chauffer l'huile dans une poêle à feu moyen-fort.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "vegetable_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_patties",
+      "action": "Former 6 boules avec la pâte, les aplatir pour former des galettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "patty_mixture"
+      ],
+      "produces": "formed_patties",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_patties",
+      "action": "Faire cuire de chaque côté, jusqu'à ce qu'elles soient dorées.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "formed_patties",
+        "hot_oil"
+      ],
+      "produces": "cooked_patties",
+      "requires": [],
+      "visualCue": "dorées"
+    },
+    {
+      "id": "serve_with_sauce",
+      "action": "Servir avec la sauce au yaourt.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "cooked_patties",
+        "yogurt_sauce"
+      ],
+      "produces": "galettes_lentilles_carottes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "galettes_lentilles_carottes",
+  "originalText": "Galettes de Lentilles Corail et Carottes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 avril 2020\nGalettes de Lentilles Corail et Carottes\nHello les pickles, on se retrouve aujourd’hui pour cette recette de Galettes de Lentilles Corail !\nRécemment, une copine me disait, je cite “j’ai hâte que ta fille te crache ses légumes à la figure pour que vous mettiez des recettes kids friendly avec des légumes cachés”. Hahaha !\nOn sent la détresse parentale de la maman confinée avec deux petits monstres ! Et qui doit non seulement faire à manger 2 à 3 fois par jour (le bol de céréales du matin, je ne suis pas sûre de le compter comme “préparer un repas”, mais bon…), mais en plus, s’assurer que la nourriture atterrisse bien dans l’estomac de l’enfant et non pas en nuage de morceaux mi-mâchés mi-crachés sur le sol !\nBref !\nCette recette s’adresse donc aux parents de jeunes enfants, ou de plus vieux enfants. Mais aussi à tous ceux qui veulent manger de bonnes petites galettes saines et gourmandes !\nLa recette est simple à réaliser, et ne comporte ni farine ni oeufs (je sais que c’est difficile d’en trouver en ce moment par endroit). Cela dit, vous pouvez remplacer le chia et l’oeuf par un oeuf battu si vous le souhaitez ! Ou même par une cuillère à soupe de graines de lins moulus dans 4 c-à-s d’eau.\nLa touche de sauce au yaourt apporte de la fraîcheur et du crémeux aux galettes ! Je vous la conseille vivement 🙂\nDans la même veine, je vous conseille\nnos galettes de pomme de terre au curry\net\nnos croquettes végétariennes aux carottes et à la fêta\n!\nGalettes de Lentilles Corail et Carottes (Vegan et Sans Gluten)\nNatacha\n4.58\n/5 avec\n107\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nTemps de repos\n15\nminutes\nmin\nTemps total\n40\nminutes\nmin\nPortions\n6\ngalettes\nIngrédients\n1x\n2x\n3x\nPour la sauce\n150\ng\nde yaourt de soja (ou yaourt grec pour une option végétarienne)\n1\nc-à-s de citron\nou plus au goüt\n½\ngousse d’ail pressée\n1\nc-à-c de menthe séchée\nsel\npoivre\nPour les galettes\n1\nc-à-s de graines de chia\non peut remplacer le chia et les 4 c-à-s d’eau par un oeuf battu pour une option végétarienne\n4\nc-à-s d’eau\n150\ng\nde lentilles corail\npoids avant cuisson\n130\ng\nde carottes râpées\n2-3 carottes\n1\npetit oignon râpé\nenv 50g\n½\nc-à-c d’ail semoule\n50\ng\nde flocons d’avoine\nsans gluten si nécessaire\n2\nc-à-s de fécule de maïs\n⅓\nc-à-c de cumin\n⅓\nc-à-c de paprika doux\nsel\npoivre\n4\nc-à-s d’huile végétale\nInstructions\nLa sauce\nCommencer par préparer la sauce pour que les saveurs se développent pendant que vous faites le reste de la recette !\nPour cela, mélanger tous les ingrédients dans un bol. Goûter pour rectifier l’assaisonnement puis réserver au frais.\nLes galettes\nPour faire les galettes, commencez par mettre le chia et l’eau dans un petit bol, remuer pour que les grains n’accrochent pas trop en “grappe” en laisser reposer. Le mélange va épaissir et devenir un peu gluant, c’est ce qu’on cherche !\nEnsuite, mettre les lentilles à cuire dans un grand volume d’eau bouillante. Attention, ça a tendance à déborder (oui, ça sent le vécu !). Laisser cuire 15-20min en remuant de temps en temps. C’est cuit une fois que les lentilles sont bien molles.\nPendant ce temps, râper les carottes et l’oignon.\nMettre tous les ingrédients dans un grand bol.\nUne fois que les lentilles sont cuites, bien les égoutter et les ajouter au bol, sans oublier les graines de chia. Bien mélanger. Ajuster l’assaisonnement.\nLaisser reposer 15min pour que les flocons d’avoine absorbent l’humidité du mélange.\nFaire chauffer l’huile dans une poêle à feu moyen fort (6/9). Former 6 boules avec la pâtes et les aplatir avec la paume de la main pour former des galettes. Si vous n’arrivez pas à former de boules car la pâte est trop humide, ajoutez un peu de fécule.\nFaire cuire une dizaine de minutes de chaque côté.\nServir avec la sauce au yaourt et l’accompagnement de votre choix (crudités, légumes, riz etc…)\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nCarotte\n,\nÉté\n,\nGalettes\n,\nHiver\n,\nPrintemps\n,\nRecettes Salées\nTags:\ngalettes de légumes\n,\ngalettes sans gluten\n,\ngalettes vegan\n,\nlégume enfant\n,\nrecette enfant\n,\nrecette sans farine\n,\nsteak végétarien carotte\nMoelleux au Chocolat sans Farine et sans Beurre\nPralines Amande Noisette Maison\n16 thoughts on “Galettes de Lentilles Corail et Carottes”\nArineange\ndit :\n18 novembre 2020 à 18 h 19 min\nMerci pour cette recette ! J’avais peur que les galettes ne tiennent pas bien en place, mais ça a très bien marché. Elles étaient un peu fragiles, mais c’était gérable. J’ai remplacé les graines de chia par des graines de lin comme suggéré. Un délice ! Je recommande un peu de piment séché dans la galette pour les amateurs de plats relevés. 🙂 La crème de yaourt allait vraiment très bien avec. Super !\nchargement…\nRépondre\nFree The Pickle\ndit :\n19 novembre 2020 à 18 h 56 min\n🙂 🙂 merci pour ces retours ! Oui, c’est la difficulté avec les galettes, trouver la bonne proportion pour les faire tenir !\nchargement…\nRépondre\nArineange\ndit :\n6 mars 2021 à 20 h 27 min\nRecette réalisée une seconde fois, cette fois sans graines de lin ou équivalent, juste un brin plus de fécule de mais… Et bien la tenue des galettes était très bien, même mieux que la première fois ! 🙂 On adore cette recette (et bien d’autres sur votre site) !\nchargement…\nRépondre\nStephanie\ndit :\n24 novembre 2020 à 19 h 45 min\nI bought my first bag of red lentils, what have I been missing?? These were so delicious, they cooked up perfectly and everyone loved them. Good thing I bought a large bag!\nchargement…\nRépondre\nFree The Pickle\ndit :\n29 novembre 2020 à 17 h 00 min\nI’m so happy you discovered them ! I love them ! Mostly in Dhals !\nchargement…\nRépondre\nnadine\ndit :\n19 janvier 2021 à 10 h 33 min\nBonjour,\nAvez vous essayer une cuisson au four? Nous adorons les galettes mais le problème c’est qu’elles sont souvent frites. et déconseiller pour les enfants jeunes moins de  3ans\nchargement…\nRépondre\nFree The Pickle\ndit :\n20 janvier 2021 à 10 h 56 min\nBonjour Nadine, je n’ai pas essayé la cuisson au four pour ces galettes. Elles ne sont pas frites, mais effectivement cuites à la poêle avec un fond d’huile. Je pense que vous pouvez les cuire au four sans pb, sur un papier cuisson à 190 degrés. Surveillez la cuisson, je dirai peut etre 20-30min.\nJe cuis certaines de mes galettes au four, surtout quand la pâte est humide. La cuisson au four dessèche en général, donc tout dépend de la consistance de ma pâte de base !\nchargement…\nRépondre\nOuahiba\ndit :\n27 avril 2021 à 9 h 53 min\nBonjour, je confirme pour la cuisson au four ! Personnellement je les ai fait cuire 25 minutes à 190 degrés, tout juste bien dorées, un pur délice !\nMerci pour cette recette très simple et healthy\nchargement…\nRépondre\nOlivia\ndit :\n17 avril 2021 à 22 h 52 min\nBonsoir, j’ai lu votre commentaire et ayant moi-même un enfant en bas-âge, vous pouvez sans autre cuire vos galettes out tout autres mets à la poêle avec un peu d’huile d’olive. Dès 12 mois, un enfant est censé adopter le régime des parents et même si une fois, il devait manger qqch de frit, du moment que c’est occasionnel, il n’y a aucun souci. 😉\nBonne continuation…\nchargement…\nRépondre\nOlivia\ndit :\n17 avril 2021 à 22 h 47 min\nMerci pour cette super recette adaptée pour petits et grands. Mon fils de 3 ans a beaucoup aimé. Je cherchais une recette de galette sur Google lorsque par hasard, je suis arrivée sur votre site et j’adore… Bravo!\nN’ayant plus de lentilles corail en stock, j’ai donc opté pour des lentilles jaunes et ça a été une réussite, de plus, pas de cumin et donc remplacé par de la cardamome.\nchargement…\nRépondre\nFree The Pickle\ndit :\n21 avril 2021 à 9 h 17 min\nBonjour Olivia et merci infiniment pour ce commentaire qui nous fait super plaisir ! Nous sommes trop contentes que vous et votre petit ayez aimé la recette 😘😘\nchargement…\nRépondre\nLaureane\ndit :\n9 janvier 2022 à 15 h 40 min\nBonjour! Est-ce possible de congeler ces galettes une fois cuites? Merci beaucoup!\nchargement…\nRépondre\nNatacha\ndit :\n10 janvier 2022 à 11 h 27 min\nBonjour Laureane, oui vous pouvez tout à fait les congéler et les décongeler au four ensuite !\nchargement…\nRépondre\nIrina\ndit :\n1 janvier 2023 à 0 h 46 min\nBonjour, merci pour cette recette.\nJ’ai bien aimé et la sauce est super bonne.\nPar contre, je n’avais pas lu attentivement la recette avant et j’ai mis l’huile dans ma préparation, je n’avais pas vu que c’était pour la cuisson (ça me fait bizarre que l’huile de cuisson soit précisée dans les ingrédients). :]\nEn tout cas c’était bon.\nchargement…\nRépondre\nSarah\ndit :\n13 juin 2023 à 22 h 19 min\nBonsoir\nMerci pour la recette !\nPar quel ingrédient je pourrais remplacer le flocon d’avoine ?\nMerci pour la suggestion !\nchargement…\nRépondre\nNatacha\ndit :\n4 juillet 2023 à 10 h 28 min\nHello ! Tu peux essayer avec de la chapelure mais je ne saurais te dire dans quelle proportion\nchargement…\nRépondre\n4.58 from 107 votes (\n102 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 35.0
+}

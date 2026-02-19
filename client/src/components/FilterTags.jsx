@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, Collapse, IconButton } from "@mui/material";
 import { useRecipeList } from "../contexts/RecipeListContext";
 import { useConstants } from "../contexts/ConstantsContext";
+import { usePantry } from "../contexts/PantryContext";
 import FilterTag from "./common/FilterTag";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
@@ -12,6 +13,7 @@ const FILTER_TEXTS = {
   FILTER_BY: "Filter",
   QUICK_RECIPES: "Quick recipes",
   LOW_INGREDIENTS: "Few ingr.",
+  PANTRY_FRIENDLY: "Pantry-friendly",
   ALL: "All seasons",
   SHOW_FILTERS: "Show filters",
   HIDE_FILTERS: "Hide filters",
@@ -99,7 +101,6 @@ const FilterSection = ({
             count={count}
             checked={isSelected}
             onChange={handleSelect}
-            showCheckbox={true}
           />
         );
       })}
@@ -120,8 +121,11 @@ const FilterTags = () => {
     setIsQuickOnly,
     isLowIngredientsOnly,
     setIsLowIngredientsOnly,
+    isPantrySort,
+    setIsPantrySort,
     stats,
   } = useRecipeList();
+  const { pantrySize } = usePantry();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
@@ -134,6 +138,7 @@ const FilterTags = () => {
     selectedDishType,
     isQuickOnly,
     isLowIngredientsOnly,
+    isPantrySort,
   ].filter((filter) => {
     if (Array.isArray(filter)) {
       return filter.length > 0;
@@ -167,21 +172,27 @@ const FilterTags = () => {
           type="dishType"
           constants={constants}
         />
-        <Box sx={{ display: "flex", gap: 1 }}>
+        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
           <FilterTag
             label={FILTER_TEXTS.QUICK_RECIPES}
             count={stats.quick?.count}
             checked={isQuickOnly}
             onChange={() => setIsQuickOnly(!isQuickOnly)}
-            showCheckbox={true}
           />
           <FilterTag
             label={FILTER_TEXTS.LOW_INGREDIENTS}
             count={stats.lowIngredients?.count}
             checked={isLowIngredientsOnly}
             onChange={() => setIsLowIngredientsOnly(!isLowIngredientsOnly)}
-            showCheckbox={true}
           />
+          {pantrySize > 0 && (
+            <FilterTag
+              label={FILTER_TEXTS.PANTRY_FRIENDLY}
+              count={pantrySize}
+              checked={isPantrySort}
+              onChange={() => setIsPantrySort(!isPantrySort)}
+            />
+          )}
         </Box>
       </Box>
       <Box

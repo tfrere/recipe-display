@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "title": "Truffes Coco Amande vegan",
+    "description": "Une gourmandise simple, \u00e9l\u00e9gante et 100 % v\u00e9g\u00e9tale pour les f\u00eates. Une recette rapide, cr\u00e9meuse, pleine de saveurs, qui fait toujours son petit effet sur la table de No\u00ebl.",
+    "servings": 1,
+    "prepTime": "PT15M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat",
+      "truffe",
+      "vegan",
+      "no\u00ebl",
+      "dessert",
+      "coco",
+      "amande"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Truffes-coco-amande-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "On aime rouler ces truffes dans deux enrobages diff\u00e9rents, cela rend le plateau plus \u00e9l\u00e9gant.",
+      "On met un tiers des truffes dans le cacao en poudre, ce qui apporte un go\u00fbt plus intense. Les deux tiers restants vont dans la noix de coco r\u00e2p\u00e9e, pour un r\u00e9sultat plus lumineux.",
+      "Conserver au frais !"
+    ],
+    "slug": "truffes-coco-amande-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Truffes-coco-amande-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/12/13/truffes-coco-amande-vegan/",
+    "image": "images/truffes-coco-amande-vegan.webp",
+    "createdAt": "2026-02-09T21:40:37.354744",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 128.0,
+    "totalCookingTime": 8.0,
+    "nutritionPerServing": {
+      "calories": 1556.4,
+      "protein": 21.8,
+      "fat": 115.4,
+      "carbs": 128.8,
+      "fiber": 29.3,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 5,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "amandes_effilees",
+      "name": "amandes effil\u00e9es",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "slivered almonds"
+    },
+    {
+      "id": "creme_de_coco",
+      "name": "cr\u00e8me de coco",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "chocolat_noir",
+      "name": "chocolat noir",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "coup\u00e9 en morceaux",
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "noix_de_coco_rapee",
+      "name": "noix de coco r\u00e2p\u00e9e",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shredded coconut"
+    },
+    {
+      "id": "cacao_en_poudre",
+      "name": "cacao en poudre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cocoa powder"
+    }
+  ],
+  "tools": [
+    "Tupperware (ou r\u00e9cipient herm\u00e9tique)"
+  ],
+  "steps": [
+    {
+      "id": "hacher_amandes",
+      "action": "Hacher grossi\u00e8rement les amandes effil\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "amandes_effilees"
+      ],
+      "produces": "amandes_hachees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dorer_amandes",
+      "action": "Les faire chauffer quelques minutes dans une petite casserole pour les faire dorer. R\u00e9server.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "amandes_hachees"
+      ],
+      "produces": "amandes_dorees",
+      "requires": [],
+      "visualCue": "dor\u00e9es"
+    },
+    {
+      "id": "melanger_creme_chocolat",
+      "action": "Dans la m\u00eame casserole, \u00e0 feu moyen, verser la cr\u00e8me de coco. Ajouter le chocolat coup\u00e9 en morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "creme_de_coco",
+        "chocolat_noir"
+      ],
+      "produces": "melange_creme_chocolat",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_chocolat",
+      "action": "Faire fondre le chocolat, sans porter \u00e0 \u00e9bullition, en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_creme_chocolat"
+      ],
+      "produces": "ganache_liquide",
+      "requires": [],
+      "visualCue": "m\u00e9lange homog\u00e8ne"
+    },
+    {
+      "id": "ajouter_amandes",
+      "action": "Une fois que le m\u00e9lange est homog\u00e8ne, ajouter les amandes. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ganache_liquide",
+        "amandes_dorees"
+      ],
+      "produces": "ganache_aux_amandes",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "refrigerer",
+      "action": "Transvaser dans un tupperware, couvrir et r\u00e9server au frais au moins 2h.",
+      "duration": "PT2H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "ganache_aux_amandes"
+      ],
+      "produces": "ganache_froide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_boules",
+      "action": "Pr\u00e9lever une c\u00e0c de ganache et la rouler dans vos mains pour former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ganache_froide"
+      ],
+      "produces": "boules_de_ganache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enrober",
+      "action": "Passer les boules dans la noix de coco r\u00e2p\u00e9e et/ou le cacao en poudre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "boules_de_ganache",
+        "noix_de_coco_rapee",
+        "cacao_en_poudre"
+      ],
+      "produces": "truffes_coco_amande",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "truffes_coco_amande",
+  "originalText": "Truffes Coco Amande Vegan | Recette Facile et 100 % Gourmande\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n13 d\u00e9cembre 2022\nTruffes Coco Amande vegan : la douceur de No\u00ebl en trois ingr\u00e9dients\nSi vous cherchez une\ngourmandise simple\n,\n\u00e9l\u00e9gante\net\n100 % v\u00e9g\u00e9tale pour les f\u00eates\n, nos\ntruffes coco amande vegan\nvont vous plaire. Chez nous, c\u2019est un incontournable de d\u00e9cembre ! Une\nrecette rapide\n,\ncr\u00e9meuse\n, pleine de\nsaveurs\n, qui fait toujours son petit effet sur la\ntable de No\u00ebl\n. Nous avons revisit\u00e9 la\ntruffe classique\nen rempla\u00e7ant la\ncr\u00e8me traditionnelle\npar de la\ncr\u00e8me de coco\n. \u00c7a apporte une\ntexture fondante\net une\ntouche\nexotique\nque vous allez adorer. Le tout est relev\u00e9 par des\namandes effil\u00e9es toast\u00e9es\n, pour ajouter ce\ncroquant addictif\nqui fait la diff\u00e9rence. Ces\ntruffes coco amande vegan\nsont parfaites si vous voulez offrir des\ndouceurs maison\n, pr\u00e9parer un\nplateau festif\nou simplement vous faire plaisir sans passer des heures en\ncuisine\n. Elles sont\nfaciles\n,\nrapides\n, et surtout\nd\u00e9licieuses\n, exactement comme on les aime !\nTable des mati\u00e8res\n1\nUne cr\u00e8me adapt\u00e9e et 100 % vegan : vive la cr\u00e8me de coco !\n2\nUne ganache simple avec seulement trois ingr\u00e9dients\n3\nTruffes Coco Amande vegan\n4\nUn enrobage double pour un plateau de truffes \u00e9l\u00e9gant\n5\nUne douceur de No\u00ebl pr\u00eate en quelques minutes\n6\nUne recette vegan qui s\u00e9duit tout le monde\nUne cr\u00e8me adapt\u00e9e et 100 % vegan : vive la cr\u00e8me de coco !\nDans nos truffes coco amande vegan, nous avons choisi d\u2019adapter la recette traditionnelle en rempla\u00e7ant la cr\u00e8me classique par de la cr\u00e8me de coco. Ce simple changement transforme totalement la ganache ! Elle devient plus onctueuse, plus parfum\u00e9e, et surtout parfaitement adapt\u00e9e \u00e0 une version vegan. La cr\u00e8me de coco est un ingr\u00e9dient que nous adorons utiliser dans nos desserts. D\u00e9couvrez notre\nPanna Cotta Vegan Coco Mangue Passion\n, nos\nCupcakes Vanille Vegan\nou encore le\nMoelleux au Chocolat Sans Farine et Sans Beurre\n.\nUne ganache simple avec seulement trois ingr\u00e9dients\nNos truffes coco amande vegan sont tr\u00e8s simples \u00e0 pr\u00e9parer. La ganache ne demande que trois ingr\u00e9dients. Vous aurez besoin de chocolat noir, de cr\u00e8me de coco et des amandes effil\u00e9es toast\u00e9es pour un l\u00e9ger croquant. Si vous aimez ce type de recette rapide, d\u00e9couvrez aussi nos\ntruffes Veganes \u00e0 la Noix de Coco\n. Elles sont tout aussi faciles et d\u00e9licieuses. Cette base simple assure une ganache fondante, riche et parfaitement parfum\u00e9e. Parfaite pour les f\u00eates ou un go\u00fbter improvis\u00e9.\nTruffes Coco Amande vegan\n4.49\n/5 avec\n37\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nRepos\n2\nheures\nh\nIngr\u00e9dients\n10\ng\nd\u2019amandes effil\u00e9es\n100\ng\nde cr\u00e8me de coco\n200\ng\nde chocolat noir\n2\nc\u00e0s de noix de coco r\u00e2p\u00e9e\n2\nc\u00e0s de cacao en poudre\nInstructions\nHacher grossi\u00e8rement les amandes effil\u00e9es.\nLes faire chauffer quelques minutes dans une petite casserole pour les faire dorer. R\u00e9server.\nDans la m\u00eame casserole, \u00e0 feu moyen, verser la cr\u00e8me de coco. Ajouter le chocolat coup\u00e9 en morceaux.\nFaire fondre le chocolat, sans porter \u00e0 \u00e9bullition, en remuant r\u00e9guli\u00e8rement.\nUne fois que le m\u00e9lange est homog\u00e8ne, ajouter les amandes. Bien m\u00e9langer.\nTransvaser dans un tupperware, couvrir et r\u00e9server au frais au moins 2h. Voir plus.\nPr\u00e9lever une c\u00e0c de ganache et la rouler dans vos mains pour former une boule.\nPasser les boules dans la noix de coco r\u00e2p\u00e9e et/ou le cacao en poudre.\nConserver au frais !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUn enrobage double pour un plateau de truffes \u00e9l\u00e9gant\nOn aime rouler ces truffes dans deux enrobages diff\u00e9rents, cela rend le plateau plus \u00e9l\u00e9gant. C\u2019est une m\u00e9thode simple et tr\u00e8s efficace pour varier les textures. On met un tiers des truffes dans le cacao en poudre, ce qui apporte un go\u00fbt plus intense. Les deux tiers restants vont dans la noix de coco r\u00e2p\u00e9e, pour un r\u00e9sultat plus lumineux. On l\u2019avoue, on pr\u00e9f\u00e8re celles enrob\u00e9es de noix de coco ! Leur texture est fondante et leur parfum tr\u00e8s agr\u00e9able. Ce double enrobage cr\u00e9e un joli contraste visuel et rend la d\u00e9gustation plus vari\u00e9e. C\u2019est parfait pour un plateau festif.\nSi vous cherchez des id\u00e9es de desserts de No\u00ebl trop sympa, on vous conseille\nle cheesecake fa\u00e7on baklava\n.\nUne douceur de No\u00ebl pr\u00eate en quelques minutes\nLa pr\u00e9paration de ces truffes coco amande vegan est \u00e9tonnamment rapide. C\u2019est parfait pour les p\u00e9riodes charg\u00e9es en cuisine ! Le temps de repos fait tout, mais la r\u00e9alisation en elle-m\u00eame prend \u00e0 peine quelques minutes. En moins de dix minutes, la ganache est pr\u00eate \u00e0 refroidir, sans techniques compliqu\u00e9es ni mat\u00e9riel particulier. C\u2019est id\u00e9al lorsque vous manquez de temps en d\u00e9cembre, mais que vous souhaitez tout de m\u00eame pr\u00e9parer une gourmandise maison, simple et festive.\nVous aimez les desserts vegan gourmands ? Ne manquez pas nos\nCupcakes Vegan Chocolat Noisette\n, une autre recette ultra moelleuse et parfaite pour compl\u00e9ter votre plateau de douceurs. Et ici, vous avez un recap de\ntous nos desserts et douceurs vegan pour les f\u00eates de fin d\u2019ann\u00e9e\n!\nUne recette vegan qui s\u00e9duit tout le monde\nM\u00eame si la recette est vegan, elle ne perd rien en gourmandise. La ganache reste riche, fondante et parfaitement \u00e9quilibr\u00e9e. Le go\u00fbt est intense, la texture est luxueuse, et c\u2019est ce qui surprend souvent les personnes habitu\u00e9es aux truffes traditionnelles. M\u00eame les puristes les adorent, car la diff\u00e9rence se sent \u00e0 peine : seule la l\u00e9g\u00e8ret\u00e9 en bouche change, et c\u2019est souvent pour le mieux. Ces truffes prouvent qu\u2019une version vegan peut \u00eatre tout aussi irr\u00e9sistible, voire plus.\nCes truffes coco amande vegan sont la preuve qu\u2019une douceur simple peut devenir un v\u00e9ritable petit luxe maison. Avec seulement quelques ingr\u00e9dients, une ganache fondante et un double enrobage \u00e9l\u00e9gant, vous obtenez une gourmandise qui fait toujours son effet. Que ce soit pour offrir, pour accompagner un caf\u00e9 ou pour compl\u00e9ter votre plateau de f\u00eates, ces truffes sont une valeur s\u00fbre : rapides, parfum\u00e9es, irr\u00e9sistibles\u2026 Et compl\u00e8tement vegan. Ces truffes coco amande vegan sont pr\u00eates \u00e0 devenir votre nouvelle tradition de d\u00e9cembre.\nPour continuer \u00e0 pr\u00e9parer un No\u00ebl gourmand et v\u00e9g\u00e9tal, d\u00e9couvrez aussi nos\n14 id\u00e9es de plats pour un No\u00ebl v\u00e9g\u00e9tarien ou vegan\n. Et si vous souhaitez aller encore plus loin, notre\nebook sp\u00e9cial recettes de No\u00ebl\nest l\u00e0 pour vous inspirer et vous accompagner dans vos menus de f\u00eate.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCr\u00e8mes et Entremets\n,\nDesserts & Snack\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nRecettes Sucr\u00e9es\nTags:\nchocolat\n,\ntruffe\n,\ntruffe au chocoalt\n,\ntruffe au chocolat\n,\nvegan\nAum\u00f4ni\u00e8res Butternut Noix et Bleu\nTourte de No\u00ebl pleurotes et estragon, le plat vegan qui fait sensation \u00e0 table\n4.49 from 37 votes (\n37 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

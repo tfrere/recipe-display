@@ -1,0 +1,500 @@
+{
+  "metadata": {
+    "title": "Tarte tatin de tomates au vinaigre balsamique",
+    "description": "La tarte tatin de tomates au vinaigre balsamique, c'est la recette qui apporte du soleil \u00e0 vos repas d'\u00e9t\u00e9. Simple \u00e0 pr\u00e9parer, elle ne demande que quelques ingr\u00e9dients et un peu de cuisson au four.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "tarte tatin",
+      "tomate cerise",
+      "vinaigre balsamique",
+      "\u00e9t\u00e9",
+      "v\u00e9g\u00e9tarien",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Tatin-tomate-balsamique-casa-rinaldi-4-5-1-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Id\u00e9ale pour un d\u00eener l\u00e9ger, un ap\u00e9ro original ou un repas entre amis.",
+      "Servir ti\u00e8de ou froid.",
+      "On a cr\u00e9\u00e9 cette recette pour Casa Rinaldi, une marque d'\u00e9picerie fine italienne."
+    ],
+    "slug": "tarte-tatin-de-tomates-au-vinaigre-balsamique",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Tatin-tomate-balsamique-casa-rinaldi-4-5-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/01/tarte-tatin-de-tomates-au-vinaigre-balsamique/",
+    "image": "images/tarte-tatin-de-tomates-au-vinaigre-balsamique.webp",
+    "createdAt": "2026-02-09T21:19:05.084579",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 95.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 456.5,
+      "protein": 8.7,
+      "fat": 25.9,
+      "carbs": 46.0,
+      "fiber": 3.7,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "thym_seche",
+      "name": "thym s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dried thyme"
+    },
+    {
+      "id": "beurre_froid",
+      "name": "beurre froid",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "coup\u00e9 en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "cold butter"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "eau_froide",
+      "name": "eau froide",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    },
+    {
+      "id": "tomates_cerises",
+      "name": "tomates cerises",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cherry tomatoes"
+    },
+    {
+      "id": "beurre_cuisson",
+      "name": "beurre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "vinaigre_balsamique",
+      "name": "vinaigre balsamique",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "balsamic vinegar"
+    },
+    {
+      "id": "sucre_roux",
+      "name": "sucre roux",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "brown sugar"
+    },
+    {
+      "id": "thym_frais",
+      "name": "thym frais",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "fresh thyme"
+    },
+    {
+      "id": "basilic_frais",
+      "name": "basilic frais",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "Basil"
+    },
+    {
+      "id": "fromage_frais",
+      "name": "fromage frais",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "fresh cheese"
+    }
+  ],
+  "tools": [
+    "Po\u00eale allant au four ou casserole + moule \u00e0 tarte de 20cm de diam\u00e8tre"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "M\u00e9langer la farine, le sel et le thym s\u00e9ch\u00e9 dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "farine",
+        "sel",
+        "thym_seche"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_butter",
+      "action": "Ajouter le beurre froid et m\u00e9langer du bout des doigts pour obtenir une texture de crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "dry_mix",
+        "beurre_froid"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": "texture de crumble"
+    },
+    {
+      "id": "add_wet_ingredients",
+      "action": "Ajouter l'\u0153uf et l'eau froide une cuill\u00e8re \u00e0 la fois, et m\u00e9langer jusqu'\u00e0 former une boule homog\u00e8ne et non collante (ajouter de la farine si besoin).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "crumble_mix",
+        "oeuf",
+        "eau_froide"
+      ],
+      "produces": "pate_brisee",
+      "requires": [],
+      "visualCue": "boule homog\u00e8ne et non collante"
+    },
+    {
+      "id": "chill_dough",
+      "action": "R\u00e9server la p\u00e2te au frais.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 tarte",
+      "uses": [
+        "pate_brisee"
+      ],
+      "produces": "pate_brisee_refroidie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_tomatoes",
+      "action": "Couper toutes les tomates cerises en deux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tomates_cerises"
+      ],
+      "produces": "tomates_coupees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Dans une po\u00eale allant au four (ou une casserole), faire fondre 1 c\u00e0s de beurre \u00e0 feu doux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "beurre_cuisson"
+      ],
+      "produces": "beurre_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_caramel",
+      "action": "Ajouter 2 c\u00e0s de vinaigre balsamique et 1 c\u00e0s de sucre roux. Laisser cuire jusqu'\u00e0 ce que le m\u00e9lange fasse des bulles et \u00e9paississe.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "beurre_fondu",
+        "vinaigre_balsamique",
+        "sucre_roux"
+      ],
+      "produces": "caramel_balsamique",
+      "requires": [],
+      "visualCue": "bulles et \u00e9paissi"
+    },
+    {
+      "id": "arrange_tomatoes",
+      "action": "Retirer du feu. Disposer les tomates cerises coup\u00e9es, faces coup\u00e9es vers le haut, en les serrant le plus possible.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tomates_coupees",
+        "caramel_balsamique"
+      ],
+      "produces": "tomates_dans_caramel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_thyme",
+      "action": "Saupoudrer avec les branches de thym frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tomates_dans_caramel",
+        "thym_frais"
+      ],
+      "produces": "tomates_thyme",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_more_balsamic",
+      "action": "Verser un petit filet additionnel de vinaigre balsamique par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tomates_thyme",
+        "vinaigre_balsamique"
+      ],
+      "produces": "tomates_preparees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_dough",
+      "action": "Abaisser la p\u00e2te \u00e0 tarte et d\u00e9couper un cercle un peu plus large que le moule/po\u00eale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "pate_brisee_refroidie"
+      ],
+      "produces": "cercle_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cover_tomatoes",
+      "action": "D\u00e9poser le cercle de p\u00e2te sur les tomates et enfoncer l\u00e9g\u00e8rement les bords.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "cercle_pate",
+        "tomates_preparees"
+      ],
+      "produces": "tarte_couverte",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prick_dough",
+      "action": "Piquer la p\u00e2te avec une fourchette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tarte_couverte"
+      ],
+      "produces": "tarte_piquee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner \u00e0 mi-hauteur.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tarte_piquee"
+      ],
+      "produces": "tarte_cuite",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": "p\u00e2te dor\u00e9e"
+    },
+    {
+      "id": "cool_slightly",
+      "action": "Sortir du four et laisser refroidir.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tarte_cuite"
+      ],
+      "produces": "tarte_tiede",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "unmold",
+      "action": "Poser une assiette sur le moule et retourner d'un seul coup pour d\u00e9mouler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tarte_tiede"
+      ],
+      "produces": "tarte_demoulee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "garnish",
+      "action": "Laisser refroidir un peu, puis ajouter les feuilles de basilic frais et des petites touches de fromage frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "tatin de tomates",
+      "uses": [
+        "tarte_demoulee",
+        "basilic_frais",
+        "fromage_frais"
+      ],
+      "produces": "tarte_tatin_tomates_balsamique",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_tatin_tomates_balsamique",
+  "originalText": "Tarte Tatin De Tomates Au Vinaigre Balsamique | Recette Facile\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 juin 2022\nTarte tatin de tomates au vinaigre balsamique : caram\u00e9lis\u00e9e, acidul\u00e9e et pleine de peps\nLa\ntarte tatin de tomates au vinaigre balsamique\n, c\u2019est la\nrecette\nqui apporte du soleil \u00e0 vos\nrepas d\u2019\u00e9t\u00e9\n.\nSimple\n\u00e0 pr\u00e9parer, elle ne demande que\nquelques ingr\u00e9dients\net un peu de cuisson au four. Les\ntomates cerises\nfondantes se marient parfaitement au\nvinaigre balsamique caram\u00e9lis\u00e9\npour un r\u00e9sultat \u00e0 la fois\ndoux\net\nacidul\u00e9\n. Avec sa\np\u00e2te croustillante\net son go\u00fbt unique, cette\ntarte tatin\nest id\u00e9ale pour un\nd\u00eener l\u00e9ger\n, un\nap\u00e9ro original\nou un\nrepas entre amis\n. Alors, pr\u00eats \u00e0 craquer pour la\ntarte tatin de tomates au vinaigre balsamique\net \u00e0 l\u2019ajouter \u00e0 vos classiques de l\u2019\u00e9t\u00e9 ?\nTable des mati\u00e8res\n1\nLa tatin sal\u00e9e qui change tout\n2\nLe duo parfait : tomates et vinaigre balsamique\n3\nTarte tatin de tomates au vinaigre balsamique\n4\nLe vinaigre balsamique, l\u2019or noir de la cuisine\n5\nUne finition pleine de peps\nLa tatin sal\u00e9e qui change tout\nNe soyez pas intimid\u00e9s par cette tarte tatin de tomates au vinaigre balsamique ! C\u2019est vraiment la recette simple par excellence : une p\u00e2te, un caramel express et des tomates cerises bien serr\u00e9es. Depuis que nous avons compris que les tatins n\u2019\u00e9taient pas r\u00e9serv\u00e9es aux pros, on s\u2019amuse \u00e0 en d\u00e9cliner plein de versions. Sur le blog, vous trouverez d\u00e9j\u00e0 la\ntatin d\u2019oignons nouveaux\n, celle aux\n\u00e9chalotes et miel\nou encore les\ntartelettes tatins aux poivrons vegan\n. Et si vous aimez varier les plaisirs, laissez-vous tenter par la\ntarte tatin ch\u00e8vre et poireaux\n, ou m\u00eame les\nmini tatins express de tomates cerises\n. Aujourd\u2019hui, c\u2019est la tomate qui se pr\u00eate au jeu, et croyez-nous, le r\u00e9sultat est canon.\nLe duo parfait : tomates et vinaigre balsamique\nPour cette tarte tatin, on a utilis\u00e9 des tomates cerises rondes. Elles sont parfaites pour se disposer joliment et se caram\u00e9liser en douceur. Leur douceur sucr\u00e9e contraste \u00e0 merveille avec un caramel maison r\u00e9alis\u00e9 \u00e0 base de beurre, sucre roux et vinaigre balsamique. Ce m\u00e9lange devient magique en cuisson : \u00e0 la fois fondant, acidul\u00e9, et absolument savoureux. Et si comme nous vous adorez les tomates cerises, vous allez aussi adorer les d\u00e9cliner dans d\u2019autres recettes estivales. Essayez par exemple les\np\u00e2tes aux tomates cerises, ail et burrata\n, les\nsp\u00e4tzle aux tomates cerises, ail et burrata\n, le\ncake tomates cerises, olives et feta\n, ou la\nfeta grill\u00e9e au four avec olives et tomates cerises\n. Ces recettes apportent toutes leur dose de fra\u00eecheur et de gourmandise, parfaites pour prolonger le plaisir de l\u2019\u00e9t\u00e9 au-del\u00e0 de la tarte tatin.\nTarte tatin de tomates au vinaigre balsamique\nNatacha\n4.57\n/5 avec\n55\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nIngr\u00e9dients\nIngr\u00e9dients pour la p\u00e2te\n200\ng\nde farine\n1\nbelle pinc\u00e9e de sel\n1\nc\u00e0c de thym\n90\ng\nde beurre froid coup\u00e9 en d\u00e9s\n1\n\u0153uf\n2\nc-\u00e0-s d\u2019eau froide\nIngr\u00e9dients pour la tatin\n400\ng\nde tomates cerises\n1\nc\u00e0s de beurre\n2\nc\u00e0s de vinaigre balsamique\n1\nc\u00e0s de sucre roux\n5\nbranches de thym frais\nquelques feuilles de basilic\nun peu de fromage frais\nInstructions\nPr\u00e9paration de la p\u00e2te \u00e0 tarte\nM\u00e9langer la farine, le sel et le thym dans un saladier.\nAjouter le beurre et m\u00e9langer du bout des doigts pour faire comme un crumble.\nAjouter ensuite l\u2019\u0153uf et l\u2019eau une cuill\u00e8re \u00e0 la fois et m\u00e9langer jusqu\u2019\u00e0 ce qu\u2019une boule homog\u00e8ne non collante se forme (si besoin ajouter de la farine).\nR\u00e9server au frais, au minimum 1h.\nPr\u00e9paration de la tatin\nCouper toutes les tomates cerises en 2. R\u00e9server.\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nSi vous avez une po\u00eale qui peut aller au four, utilisez-la. Sinon, faites le caramel dans une casserole, puis versez-le dans un moule \u00e0 tarte de 20cm de diam\u00e8tre environ.\nFaire fondre le beurre \u00e0 feu doux, puis ajouter le vinaigre et le sucre. Laisser cuire quelques minutes, le m\u00e9lange va faire des bulles et \u00e9paissir.\nRetirer du feu et disposer les tomates cerises, faces coup\u00e9es vers le haut. Les serrer le plus possible. Elles vont ramollir et r\u00e9tr\u00e9cir en cuisant.\nSaupoudrer le thym par-dessus.\nVerser un petit filet additionnel de vinaigre balsamique par-dessus pour les grands fans comme nous.\nAbaisser la p\u00e2te \u00e0 tarte et couper un cercle un peu plus large que le moule \u00e0 tarte.\nLe d\u00e9poser sur le moule \u00e0 tarte et enfoncer l\u00e9g\u00e8rement les bords.\nPiquer la p\u00e2te avec une fourchette.\nEnfourner \u00e0 mi-hauteur pour 25-30min. Quand la p\u00e2te est dor\u00e9e, c\u2019est cuit.\nSortir du four et laisser refroidir 5min avant de d\u00e9mouler.\nPour cela, poser une assiette sur le moule, et retourner d\u2019un seul coup.\nLaisser refroidir un peu, puis ajouter le basilic et des petites touches de fromage frais.\nServir ti\u00e8de ou froid.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLe vinaigre balsamique, l\u2019or noir de la cuisine\nOriginaire de Mod\u00e8ne en Italie, le vinaigre balsamique est un v\u00e9ritable tr\u00e9sor de la gastronomie. Vieilli en f\u00fbt de bois, il d\u00e9veloppe des ar\u00f4mes \u00e0 la fois doux, fruit\u00e9s et l\u00e9g\u00e8rement acidul\u00e9s, qui subliment aussi bien les l\u00e9gumes que les fromages ou les fruits. Dans cette tarte tatin de tomates au vinaigre balsamique, il apporte ce petit twist caram\u00e9lis\u00e9 et acidul\u00e9 qui \u00e9quilibre parfaitement la douceur des tomates cerises. Et si vous aimez son parfum unique, laissez-vous tenter aussi par notre\ntatin de carottes au miel, balsamique et burrata\n, un autre duo gagnant sucr\u00e9-sal\u00e9.\nUne finition pleine de peps\n\u00c0 la sortie du four, vos tomates auront l\u00e9g\u00e8rement r\u00e9duit : c\u2019est normal. S\u2019il reste quelques trous, rien de grave : il suffit de combler avec des feuilles de basilic frais ou un peu de fromage frais \u00e9miett\u00e9. R\u00e9sultat ? Une tarte tatin de tomates au vinaigre balsamique color\u00e9e, parfum\u00e9e et id\u00e9ale pour les beaux jours. C\u2019est le genre de recette rapide et conviviale qui r\u00e9gale \u00e0 coup s\u00fbr, que ce soit en repas l\u00e9ger ou \u00e0 partager entre amis.\nOn a cr\u00e9\u00e9 cette recette de tarte tatin de tomates au vinaigre balsamique pour\nCasa Rinaldi\n. Une marque d\u2019\u00e9picerie fine italienne, sp\u00e9cialis\u00e9e dans le vinaigre balsamique.\nLa tarte tatin de tomates au vinaigre balsamique, c\u2019est la recette simple et estivale qui fait toujours son effet. Entre le fondant des tomates cerises caram\u00e9lis\u00e9es et la petite pointe acidul\u00e9e du balsamique, chaque bouch\u00e9e est un r\u00e9gal. Que vous la pr\u00e9pariez pour un d\u00eener l\u00e9ger, un ap\u00e9ro ou un repas entre amis, elle trouvera toujours sa place sur la table. Alors, pr\u00eats \u00e0 craquer pour cette tarte tatin de tomates au vinaigre balsamique et \u00e0 en faire un classique de vos \u00e9t\u00e9s ?\nEt pour encore plus d\u2019id\u00e9es, d\u00e9couvrez\ntoutes nos recettes de tartes sal\u00e9es et sucr\u00e9es\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\n,\nTomate\nTags:\ncomment faire une tatin\n,\nrecette tatin sal\u00e9e\n,\nrecette tatin tomate\n,\ntarte tatin\n,\ntatin\n,\ntatin de tomate\n,\ntomate cerise\n,\nvinaigre balsamique\nWraps prot\u00e9in\u00e9s aux lentilles corail\nGaufres toutes Roses\n7 thoughts on \u201cTarte tatin de tomates au vinaigre balsamique : caram\u00e9lis\u00e9e, acidul\u00e9e et pleine de peps\u201d\nLadyMilonguera\ndit\u00a0:\n3 juin 2022 \u00e0 6 h 32 min\nTr\u00e8s belle cette tatin de tomate.\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phanie\ndit\u00a0:\n21 ao\u00fbt 2022 \u00e0 20 h 48 min\nTr\u00e8s bon et tr\u00e8s beau !!\nSimple \u00e0 r\u00e9aliser et d\u00e9licieuse.\nParfaite.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n22 ao\u00fbt 2022 \u00e0 12 h 55 min\nMerci !!\nchargement\u2026\nR\u00e9pondre\nYsa\ndit\u00a0:\n2 juin 2023 \u00e0 12 h 53 min\nSuper recette mais combien de temps la cuisson du caramel,?\nchargement\u2026\nR\u00e9pondre\nStef\ndit\u00a0:\n8 septembre 2023 \u00e0 22 h 06 min\nCe n\u2019est vraiment pas un caramel,  le m\u00e9lange doit  bouillir et juste \u00e9paissir un peu  avant de le mettre dans la plat a tarte.\nLa cuisson au four fera le reste.\nchargement\u2026\nR\u00e9pondre\nStef\ndit\u00a0:\n8 septembre 2023 \u00e0 22 h 04 min\nMon dieu que c\u2019est bon!!! Merci pour cette recette\nchargement\u2026\nR\u00e9pondre\nMich\u00e8le Adam\ndit\u00a0:\n14 septembre 2024 \u00e0 20 h 13 min\nFacile et delicieuse\nchargement\u2026\nR\u00e9pondre\n4.57 from 55 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

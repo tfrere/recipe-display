@@ -1,0 +1,412 @@
+{
+  "metadata": {
+    "title": "Brioche Vegan Chocolatée",
+    "description": "Une jolie brioche végane chocolatée tout en douceur, parfaite pour se la péter lors de vos brunch entre amis ou tout simplement rien que pour vous au petit déjeuner ou encore au goûter avec de la confiture ou de la pâte à tartiner !",
+    "servings": 10,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "brioche",
+      "chocolat",
+      "vegan",
+      "automne",
+      "été",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/09/Brioche-degradee-15.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour remplacer 7g de levure sèche, il faut environ 20g de levure fraîche.",
+      "La pâte est assez collante, c'est normal.",
+      "En hiver, on peut faire pousser la pâte dans un four à 30°C.",
+      "Pour le façonnage, bien replier les extrémités sous la torsade pour qu'elle tienne."
+    ],
+    "slug": "brioche-vegan-chocolatee",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/09/Brioche-degradee-15.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/09/11/brioche-vegan-chocolatee/",
+    "image": "images/brioche-vegan-chocolatee.webp",
+    "createdAt": "2026-02-09T20:02:53.998336",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 300.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 286.4,
+      "protein": 6.2,
+      "fat": 8.6,
+      "carbs": 47.0,
+      "fiber": 3.1,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "plant_milk",
+      "name": "lait végétal",
+      "quantity": 260.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Plant-based milk"
+    },
+    {
+      "id": "yeast",
+      "name": "levure de boulanger déshydratée",
+      "quantity": 7.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Active dry yeast"
+    },
+    {
+      "id": "flour",
+      "name": "farine T55 ou T45",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "All-purpose flour"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre en poudre",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel fin",
+      "quantity": 5.0,
+      "unit": "g",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fine salt"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 70.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cocoa_powder",
+      "name": "poudre de cacao non sucrée",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Unsweetened cocoa powder"
+    }
+  ],
+  "tools": [
+    "robot pâtissier (optionnel)",
+    "moule à cake ou plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "activate_yeast",
+      "action": "Chauffer le lait jusqu'à ce qu'il soit à peine tiède et y délayer la levure, laisser ensuite reposer 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "plant_milk",
+        "yeast"
+      ],
+      "produces": "activated_yeast_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un récipient, mélanger la farine, le sucre et le sel puis ajouter l'huile et mélanger de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "sugar",
+        "salt",
+        "olive_oil"
+      ],
+      "produces": "dry_mix_with_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_first_stage",
+      "action": "Pétrir la pâte à l'aide d'une grande cuillère ou au robot à vitesse moyenne durant 5min en y incorporant petit à petit le mélange lait+levure.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix_with_oil",
+        "activated_yeast_mixture"
+      ],
+      "produces": "initial_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_second_stage",
+      "action": "Pétrir encore 5min supplémentaires à vitesse rapide (la pâte est collante, c'est normal).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "initial_dough"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": "pâte collante"
+    },
+    {
+      "id": "first_proof",
+      "action": "Rassembler la pâte pour former une boule dans un grand saladier, couvrir avec un torchon et laisser pousser à température ambiante jusqu'à ce qu'elle double de volume, environ 1h30min.",
+      "duration": "PT1H30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "kneaded_dough"
+      ],
+      "produces": "proofed_dough",
+      "requires": [],
+      "visualCue": "double de volume"
+    },
+    {
+      "id": "deflate_dough",
+      "action": "Dégazer la pâte pour qu'elle revienne à son volume initial.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "proofed_dough"
+      ],
+      "produces": "deflated_dough",
+      "requires": [],
+      "visualCue": "volume initial"
+    },
+    {
+      "id": "divide_dough",
+      "action": "Diviser la pâte en 4 boules de taille égale (environ 200 g chacune).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "deflated_dough"
+      ],
+      "produces": "four_dough_balls",
+      "requires": [],
+      "visualCue": "4 boules égales"
+    },
+    {
+      "id": "add_cocoa_to_balls",
+      "action": "Sur un plan de travail fariné, incorporer le cacao en poudre dans trois des boules comme suit : 1 boule avec 1 càc de cacao, 1 boule avec 1 càs de cacao, 1 boule avec 2 càs de cacao (la quatrième boule reste nature). Pour chaque boule, étaler légèrement le pâton, verser le cacao au centre, rabattre la pâte par dessus et pétrir jusqu'à bonne répartition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "four_dough_balls",
+        "cocoa_powder"
+      ],
+      "produces": "four_colored_dough_balls",
+      "requires": [],
+      "visualCue": "bonne répartition du cacao"
+    },
+    {
+      "id": "second_proof",
+      "action": "Déposer chaque pâton dans des bols séparés, couvrir et laisser pousser pendant 1h30min.",
+      "duration": "PT1H30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "four_colored_dough_balls"
+      ],
+      "produces": "proofed_colored_balls",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shape_logs",
+      "action": "Dégazer les pâtons. Pour chaque pâton, l'aplatir légèrement, plier une extrémité au centre, faire de même pour l'autre, rabattre les deux extrémités l'une sur l'autre et souder avec la paume de la main. Rouler avec les mains pour obtenir un boudin régulier et long de 20cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "proofed_colored_balls"
+      ],
+      "produces": "four_dough_logs",
+      "requires": [],
+      "visualCue": "boudins de 20cm"
+    },
+    {
+      "id": "prepare_pan",
+      "action": "Chemiser un moule ou une plaque avec du papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "four_dough_logs"
+      ],
+      "produces": "prepared_pan_with_logs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "braid_dough",
+      "action": "Disposer 2 boudins l'un à côté de l'autre puis déposer les deux autres boudins par dessus. Torsader les 4 boudins ensemble, faire 3 à 4 tours. Déposer soigneusement la torsade dans le moule et replier les extrémités légèrement vers l'intérieur sous la torsade pour faire tenir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "prepared_pan_with_logs"
+      ],
+      "produces": "braided_dough_in_pan",
+      "requires": [],
+      "visualCue": "3 à 4 tours de torsade"
+    },
+    {
+      "id": "third_proof",
+      "action": "Couvrir la torsade et laisser encore pousser 45min.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "braided_dough_in_pan"
+      ],
+      "produces": "proofed_braided_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 160°C.",
+      "duration": null,
+      "temperature": 160,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_milk",
+      "action": "Badigeonner la brioche de lait végétal à l'aide d'un pinceau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "proofed_braided_dough",
+        "plant_milk"
+      ],
+      "produces": "brushed_braided_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner et cuire pendant 30min.",
+      "duration": "PT30M",
+      "temperature": 160,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "brushed_braided_dough"
+      ],
+      "produces": "baked_brioche",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_and_unmold",
+      "action": "Sortir du four et laisser refroidir 20min, puis démouler délicatement la brioche et la déposer sur une grille jusqu'à refroidissement complet.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "baked_brioche"
+      ],
+      "produces": "cooled_brioche",
+      "requires": [],
+      "visualCue": "refroidissement complet"
+    }
+  ],
+  "finalState": "cooled_brioche",
+  "originalText": "Brioche Vegan Chocolatée - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 septembre 2020\nBrioche Vegan Chocolatée\nAccéder directement à la recette\nPour son numéro d’automne, le magazine Esprit Veggie m’a lancé un défi sur le thème des dégradés de couleur ! Ce défi m’a beaucoup inspiré mais une des difficultés que j’ai rencontré c’était l’utilisation des fruits et légumes de saison… Pour être tout à fait honnête nous avons dû travailler sur ces recettes pendant l’été alors pour respecter nos valeurs d’utilisation de produits saisonniers, je suis restée assez simple en terme d’ingrédients. Comme par exemple, avec cette sublime brioche végane chocolatée !\nPour la réalisation de cette recette, j’ai adoré passer du temps à débattre avec Nat sur comment je devais twister, enrouler, tresser ma brioche ! On essayait de se projeter visuellement sur le résultat final avec parfois, pas mal de difficulté. C’est vraiment un des aspects de notre duo que j’adore, on peut toujours compter l’une sur l’autre pour discuter de nos recettes et parfois canaliser l’autre quand elle part un peu en cacahuète (ce qui arrive beaucoup à Nat ahaha mais c’est pour ça qu’on l’aime).\nSinon, cette brioche, franchement rien de plus simple ! Ah ah, non je déconne. Tout le monde peut y arriver mais il faut s’armer de patience comme pour toute recette de brioche maison. Ici, j’ai utilisé la recette de la\nbrioche végane\nqui est déjà sur le blog que j’ai adapté pour obtenir mes 4 pâtons aux couleurs différentes. Ensuite pour ce qui est du “montage” de la brioche, les 4 pâtons sont devenus 4 bâtons ou boudins (je vais pas vous mentir on a beaucoup  beaucoup ri au moment du façonnage de ces boudins…). L’étape d’après consiste à réunir ces 4 boudins et de les entortiller (je vous recommande de faire le plus de tours possible genre 2/3), sachant qu’une fois entortillée, la brioche va se relâcher au moment de la déposer dans le moule. Pour éviter que l’entortillage ne se défasse, bien rabattre les extrémités sous la brioches dans le moule.\nDans le même thème, vous pourrez très bientôt retrouver les Roses feuilletées à la cannelle ou encore le cheesecake façon pumpkin pie !\nBrioche Vegan Chocolatée\nDaniela\nUne jolie brioche végane chocolatée tout en douceur, parfaite pour se la péter lors de vos brunch entre amis ou tout simplement rien que pour vous au petit déjeuner ou encore au goûter avec de la confiture ou de la pâte à tartiner !\n4.47\n/5 avec\n58\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n50\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nTemps de repos\n3\nheures\nh\n45\nminutes\nmin\nPortions\n10\ntranches\nIngrédients\n1x\n2x\n3x\n260\nml\nde lait végétal\n7\ng\nde levure de boulanger déshydratée\n450\ng\nde farine T55 ou T45\n60\ng\nde sucre en poudre\n5\ng\nde sel fin\n70\nml\nd’huile d’olive\n30\ng\nde poudre de cacao\nnon sucrée\nInstructions\nChauffer le lait jusqu’à ce qu’il soit à peine tiède et y délayer la levure, laisser ensuite reposer 10/15 min.\nDans le bol de votre robot ou dans un récipient (si vous réaliser cette recette à la main), mélanger la farine, le sucre et le sel puis ajouter l’huile et mélanger de nouveau.\nPétrir la pâte à l’aide d’une grande cuillère (car la pâte est assez collante) ou au robot à vitesse moyenne durant 5 min en y incorporant petit à petit le mélange lait+levure, une fois les 5 premières minutes de pétrissage écoulées, laisser encore pétrir 5 min supplémentaires à vitesse rapide (à la fin du pétrissage la pâte est assez collante, c’est normal).\nRassembler la pâte pour former une boule dans le bol du robot ou un grand saladier puis couvrir avec un torchon proche.\nLaisser pousser la pâte à température ambiante jusqu’à ce qu’elle double de volume environ 1h30 (en hiver si n’hésitez pas à faire pousser la pâte dans votre four à 30°C).\nLorsque le temps de pousse est écoulé, dégazer la pâte de sorte à ce qu’elle revienne à son volume initiale. Pour façonner la brioche en torsade à 4 branches dégradées alors commencez par diviser votre pâte en 4 boules de taille égale (environ 200 g chacune).\nDéposer les 4 boules sur le plan de travail légèrement fariné et incorporer le cacao en poudre comme il suit : 1 boule sans chocolat, 1 boule avec 1 càc de cacao en poudre, 1 càs de cacao en poudre et 2 càs de cacao en poudre. Pour incorporer le cacao en poudre, étaler légèrement le pâton et verser le cacao en poudre en milieu et rabattre la pâte par dessus puis pétrir jusqu’à obtenir un bonne répartition du chocolat. Déposer chaque pâton dans des grands bols séparés, couvrir et laisser pousser pendant 1h30 de nouveau.\nLorsque les pâtons ont doublés de taille, dégazer les pâtons et former les 4 branches de la torsade. Les aplatir légèrement au rouleau (ou avec la paume des mains). Plier une extrémité au centre et faites de même pour l’autre. Rabattre les deux extrémités l’une sur l’autre et souder avec la paule de la main. Rouler ensuite avec les mains pour obtenir un boudin régulier et long de 20cm.\nChemiser le moule ou préparer une plaque avec du papier cuisson\nUne fois vos 4 boudins façonnés, disposer 2 boudins l’un à côté de l’autre puis déposer les deux autres boudins par dessus. Puis commencer à les torsader, vous pouvez faire 3 ou 4 tours mais attention les tours ont tendance à se défaire alors après avoir torsadé à votre convenance, déposer soignement la torsade et replier les extrémités légèrement vers l’intérieur sous la torsade pour faire tenir le tout.\nCouvrir la torsade et laisser encore pousser 45 min.\nPréchauffer le four à 160°C.\nA l’aide d’un pinceau, badigeonner la brioche de lait végétal.\nEnfourner et cuire pendant 30 à 35 min.\nSortir du four et laisser refroidir 20 min puis démouler délicatement la brioche et la déposer sur une grille jusqu’à refroidissement complet.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrioches et Boulange\n,\nBrunch Sucré\n,\nDesserts & Snack\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nbrioche\n,\nchocolat\nCookies Chocolat fourrés au Beurre de Cacahuète\nTartines de Chèvre à la Ciboulette, Tomates Cerises et Rubans de Courgette Crue\n7 thoughts on “Brioche Vegan Chocolatée”\nLadyMilonguera\ndit :\n11 septembre 2020 à 20 h 34 min\nMagnifique ta brioche !\nchargement…\nRépondre\nFree The Pickle\ndit :\n14 septembre 2020 à 21 h 24 min\nMerci 🙏❤️\nchargement…\nRépondre\nMJ\ndit :\n13 septembre 2020 à 12 h 56 min\nCette recette a l’air top, j’ai hâte de l’essayer. Si je veux la réaliser avec de la levure fraîche de boulangerie, combien il m’en faudra pour remplacer la déshydratée ? Merci d’avance !\nchargement…\nRépondre\nFree The Pickle\ndit :\n14 septembre 2020 à 21 h 23 min\nBonsoir ! Il faut compter env 20g de levure fraîche pour remplacer 7g de levure sèche ! On espère quelle vous plaira autant qu’à nous ☺️\nchargement…\nRépondre\nMJ\ndit :\n20 septembre 2020 à 12 h 17 min\nMerci beaucoup ! Je ne manquerai pas de vous faire part de mes retours 🙂\nchargement…\nRépondre\nMJ\ndit :\n11 octobre 2020 à 17 h 27 min\nVoilà, recette testée et approuvée, elle est parfaite !\nchargement…\nRépondre\nChristelle\ndit :\n24 septembre 2020 à 17 h 59 min\nBravo pour cette brioche 4 couleurs, elle est superbe !! Et terriblement tentante !!\nchargement…\nRépondre\n4.47 from 58 votes (\n55 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

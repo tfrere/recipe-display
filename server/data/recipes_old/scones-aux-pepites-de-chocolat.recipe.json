@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Scones aux Pépites de Chocolat",
+    "description": "Ces scones au chocolat au bon goût de beurre sont si tendres qu'ils fondent presque en bouche (mi-sablés, mi-moelleux). Ils sont légèrement sucrés mais avec plein de pépites de chocolat pour compenser !",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT16M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "brunch",
+      "pépites de chocolat",
+      "scones",
+      "tea time",
+      "automne",
+      "été",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Scones-pepites-choco-5-of-5-819x1024.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les scones se mangent de préférence le jour même de leur préparation, mais ils peuvent être congelés pendant un à deux mois. Si vous voulez les servir chauds, réchauffer au four avant de les servir.",
+      "Pour une version végane, l'auteur suggère d'essayer avec de la margarine végétale pour le beurre et du yaourt de soja ou de coco pour la crème."
+    ],
+    "slug": "scones-aux-pepites-de-chocolat",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Scones-pepites-choco-5-of-5-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/12/scones-aux-pepites-de-chocolat/",
+    "image": "images/scones-aux-pepites-de-chocolat.jpg",
+    "createdAt": "2026-02-09T19:34:02.504285",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 26.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 392.5,
+      "protein": 5.9,
+      "fat": 22.6,
+      "carbs": 43.7,
+      "fiber": 2.0,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 280.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "tamisée",
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure chimique",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre en poudre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "granulated sugar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "froid coupé en petits cubes",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "chocolate_chips",
+      "name": "pépites de chocolat",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chocolate chips"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "cream",
+      "name": "crème épaisse",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Heavy cream"
+    },
+    {
+      "id": "cream_for_brushing",
+      "name": "crème épaisse",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "pour brosser le dessus des scones",
+      "optional": false,
+      "name_en": "Heavy cream"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    }
+  ],
+  "tools": [
+    "Emporte-pièce (environ 6,5 cm)",
+    "Tapis de cuisson en silicone (ou papier cuisson)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 200°C. Tapisser une plaque de cuisson de papier cuisson ou d'un tapis de cuisson en silicone. Réserver.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "prepared_baking_sheet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un grand bol, mélanger la farine, la levure, le sucre et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "baking_powder",
+        "sugar",
+        "salt"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporate_butter",
+      "action": "Incorporer le beurre au mélange de farine et mélanger avec les doigts (ou un coupe-pâte) jusqu'à obtenir un crumble et qu'il y ait de petits morceaux de beurre inégaux partout.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "butter"
+      ],
+      "produces": "butter_crumble",
+      "requires": [],
+      "visualCue": "petits morceaux de beurre inégaux partout"
+    },
+    {
+      "id": "add_chocolate_chips",
+      "action": "Incorporer les pépites de chocolat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter_crumble",
+        "chocolate_chips"
+      ],
+      "produces": "dry_mix_with_chocolate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_wet_ingredients",
+      "action": "Dans un petit bol, mélanger l'œuf, les 160 g de crème épaisse et l'extrait de vanille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg",
+        "cream",
+        "vanilla_extract"
+      ],
+      "produces": "wet_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_wet_and_dry",
+      "action": "Verser le mélange liquide sur le mélange de farine. Mélanger à l'aide d'une spatule ou d'une fourchette jusqu'à ce que la pâte commence à se former. Ne pas trop mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix_with_chocolate",
+        "wet_mix"
+      ],
+      "produces": "dough_forming",
+      "requires": [],
+      "visualCue": "pâte commence à se former"
+    },
+    {
+      "id": "knead_dough",
+      "action": "Transférer la pâte sur une surface enfarinée et pétrir doucement jusqu'à ce qu'une boule se forme.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dough_forming"
+      ],
+      "produces": "dough_ball",
+      "requires": [],
+      "visualCue": "boule se forme"
+    },
+    {
+      "id": "shape_triangular_scones",
+      "action": "Tapoter la pâte pour former un cercle d'environ 23 cm de diamètre. Couper le cercle en 8 parts égales.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dough_ball"
+      ],
+      "produces": "triangular_scones",
+      "requires": [],
+      "visualCue": "cercle de 23 cm de diamètre"
+    },
+    {
+      "id": "shape_round_scones",
+      "action": "Tapoter la pâte et former un rectangle de 3 cm d'épaisseur. À l'aide d'un emporte-pièce (environ 6,5 cm), découper 6 ronds. Presser le reste de la pâte dans un autre morceau et répéter le processus pour obtenir 2 ou 3 autres biscuits.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dough_ball"
+      ],
+      "produces": "round_scones",
+      "requires": [],
+      "visualCue": "rectangle de 3 cm d'épaisseur"
+    },
+    {
+      "id": "place_and_brush_scones",
+      "action": "Placer les scones sur la plaque à pâtisserie préparée. Badigeonner le dessus des scones avec la 1 c-à-s de crème épaisse réservée.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "triangular_scones",
+        "round_scones",
+        "prepared_baking_sheet",
+        "cream_for_brushing"
+      ],
+      "produces": "brushed_scones",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_scones",
+      "action": "Cuire au four de 12 à 16 minutes ou jusqu'à ce que les scones soient dorés.",
+      "duration": "PT16M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "brushed_scones"
+      ],
+      "produces": "baked_scones",
+      "requires": [],
+      "visualCue": "scones dorés"
+    },
+    {
+      "id": "cool_scones",
+      "action": "Transférer les scones sur une grille et laisser refroidir pendant 10 minutes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "baked_scones"
+      ],
+      "produces": "cooled_scones",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_scones",
+      "action": "Servir chaud ou à température ambiante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_scones"
+      ],
+      "produces": "scones_aux_pepites_de_chocolat",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "scones_aux_pepites_de_chocolat",
+  "originalText": "Scones aux Pépites de Chocolat - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 janvier 2020\nScones aux Pépites de Chocolat\nAccéder directement à la recette\nDepuis fin 2019, je suis sur une mission où toute l’équipe est composée de femmes. Au début, un peu sceptique sur le manque de parité dans notre team. Je me suis vite rendue compte que nous pouvions toutes travailler en parfait équilibre, ça doit être ce qu’on appelle le “girl power” ! Un de nos rituels instaurés pendant les périodes de forte charge : le petit déj’ gourmand. C’est ainsi qu’un matin, je me suis retrouvée à dévorer un scone tellement incroyable que ça m’a donné envie de vous proposer une nouvelle recette.\nEffectivement sur le blog, vous pouvez déjà retrouver les recettes des\nscones pommes cannelle\net des\nscones framboises chocolat\n. Même si ces recettes sont vraiment délicieuses, il y a des étapes de la recette un peu “relou” qui peuvent décourager certaines personnes pas habituées à manipuler de la pâte, surtout quand celle-ci est biiiien collante. Bref, je voulais vous proposer une recette ultra simple de scones qui soit accessible à tout le monde, sans nécessité de prédisposition d’apprenti boulanger.\nC’est ainsi qu’en toute simplicité, je vous invite à réaliser cette recette de scones aux pépites de chocolat. Mi-sablés,mi-moelleux, cette texture unique qui les caractérise est juste incroyable. Ici, pas de pâte collante ou nécessité de congeler la pâte. Après avoir mélangé tous les ingrédients, vous obtiendrez une pâte qui ressemble beaucoup à de la pâte à cookie. Formez les scopes, enfournez et voilà ! Un pur délice à déguster encore chaud !\nScones aux Pépites de Chocolat\nDaniela\nCes scones au chocolat au bon goût de beurre sont si tendres qu’ils fondent presque en bouche (mi-sablés, mi-moelleux). Ils sont légèrement sucrés mais avec plein de pépites de chocolat pour compenser !\n4.56\n/5 avec\n99\nvotes\nImprimer la recette\nTemps de préparation\n20\nminutes\nmin\nTemps de cuisson\n16\nminutes\nmin\nPortions\n8\nscones\nIngrédients\n1x\n2x\n3x\n280\ng\nde farine\ntamisée\n1\nsachet de levure chimique\n50\ng\nde sucre en poudre\n½\nc-à-c de sel\n75\ng\nde beurre froid\ncoupé en petits cubes\n125\ng\nde pépites de chocolat\n1\noeuf\n160\ng +1 c-à-s\nde crème épaisse\npour brosser le dessus des scones\n½\nc-à-c d’extrait de vanille\nInstructions\nDans un grand bol, mélanger la farine, la levure, le sucre et le sel.\nIncorporer le beurre au mélange de farine et mélanger avec les doigts (ou un coupe-pâte) jusqu’à obtenir un crumble et qu’il y ait de petits morceaux de beurre inégaux partout.\nIncorporer les pépites de chocolat.\nDans un petit bol, mélangez l’œuf, la crème épaisse et l’extrait de vanille. Verser sur le mélange de farine. Mélanger à l’aide d’une spatule ou d’une fourchette jusqu’à ce que la pâte commence à se former. Ne pas trop mélanger.\nTransférer la pâte sur une surface enfarinée et pétrir doucement jusqu’à ce qu’une boule se forme.\nPour les scones triangulaires (les plus simples et sans gâchis) :\nTapoter la pâte pour former un cercle d’environ 23 cm de diamètre. Couper le cercle en 8 parts égales.\nPour les scones ronds :\nTapoter la pâte et former un rectangle de 3 cm d’épaisseur, à l'aide d'un emporte-pièce (environ 6,5 cm), découper 6 ronds. Presser le reste de la pâte dans un autre morceau et répéter le processus pour obtenir 2 ou 3 autres biscuits.\nCuisson :\nPréchauffer le four à 200°C. Tapisser une plaque de cuisson de papier cuisson ou d’un tapis de cuisson en silicone. Réserver.\nPlacer les scones sur la plaque à pâtisserie préparée. Badigeonner le dessus des scones avec de la crème épaisse.\nCuire au four de 12 à 16 minutes ou jusqu’à ce que les scones soient dorés. Transférer les scones sur une grille et laisser refroidir pendant 10 minutes. Servir chaud ou à température ambiante.\nLes scones se mangent de préférence le jour même de leur préparation, mais ils peuvent être congelés pendant un à deux mois. Si vous voulez les servir chauds, réchauffer au four avant de les servir.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucré\n,\nÉté\n,\nHiver\n,\nMuffins et Scones\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nbrunch\n,\npépites de chocolat\n,\nscones\n,\ntea time\nGranola tout Chocolat\nRisotto Vegan à la Courge Butternut et aux Noisettes\n4 thoughts on “Scones aux Pépites de Chocolat”\nthenaisy\ndit :\n13 janvier 2020 à 9 h 40 min\nbonjour merci pour cette belle recette mais j’ai un souci intolérante aux produits laitiers donc j’ai des questions, serait il possible de remplacer le beurre par de la margarine végétale ou purée de noix de cajou et pour la crème de la crème végétale (yaourt de soja, huile de coco, citron et noix de cajou) ?merci belle journée véronique\nchargement…\nRépondre\nDaniela\ndit :\n14 janvier 2020 à 2 h 32 min\nBonjour Véronique,\nJe pense que ça vaut le coup d’essayer avec de la margarine végétale pour le beurre et du yaourt de soja ou de coco pour la crème. Sinon j’ai peur que le dosage soit trop différent avec les autres produits. Si jamais tu testes, fais nous un retour 😉\nJe vais commencer à réfléchir à une recette végane de Scones 🙂\nchargement…\nRépondre\nLadyMilonguera\ndit :\n13 janvier 2020 à 16 h 23 min\nTes scones me font bien envie !\nchargement…\nRépondre\nDaniela\ndit :\n14 janvier 2020 à 2 h 33 min\nMerci beaucoup ! ☺️\nchargement…\nRépondre\n4.56 from 99 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

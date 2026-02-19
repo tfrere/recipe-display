@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "title": "Granola tout Chocolat",
+    "description": "Ce granola, ultra facile à réaliser, est parfait pour un petit déjeuner rapide, en topping sur une glace ou du yaourt, ou bien encore tout seul en snack ! Il est végane, sans gluten et absolument délicieux !",
+    "servings": 8,
+    "prepTime": "PT15M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat",
+      "granola",
+      "sans gluten",
+      "vegan",
+      "automne",
+      "hiver",
+      "brunch sucré"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Granolas-chocolat-5-of-5-768x1024.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Personnellement, j'ai opté pour 40g de noisettes, 40g d'amande et 40g de noix de pécan.",
+      "Le sirop d'érable peut être réduit.",
+      "Il se conserve pendant plusieurs jours dans un récipient bien hermétique (je pense qu'il se conserve bien plus longtemps mais je n'ai jamais le temps de le conserver plus de quelques jours tellement c'est bon)."
+    ],
+    "slug": "granola-tout-chocolat",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/01/Granolas-chocolat-5-of-5-768x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/01/06/granola-tout-chocolat/",
+    "image": "images/granola-tout-chocolat.jpg",
+    "createdAt": "2026-02-09T19:29:45.890149",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 25.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 323.2,
+      "protein": 4.9,
+      "fat": 25.9,
+      "carbs": 21.4,
+      "fiber": 3.2,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "oat_flakes",
+      "name": "flocons d'avoine",
+      "quantity": 270.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "sans gluten",
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "nuts",
+      "name": "noix concassées",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped nuts"
+    },
+    {
+      "id": "coconut_oil",
+      "name": "huile de coco",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Coconut oil"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'érable",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "cocoa_powder",
+      "name": "cacao en poudre",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "sans sucre",
+      "notes": null,
+      "optional": false,
+      "name_en": "Cocoa powder"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "chocolate",
+      "name": "chocolat",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "grossièrement concassé",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chocolate"
+    }
+  ],
+  "tools": [
+    "Grand saladier",
+    "Casserole",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "mix_oats_nuts",
+      "action": "Dans un grand saladier, mélanger les flocons d'avoine et les noix concassées.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oat_flakes",
+        "nuts"
+      ],
+      "produces": "oat_nut_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_coconut_oil",
+      "action": "Dans une casserole, faire fondre l'huile de coco.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "coconut_oil"
+      ],
+      "produces": "melted_coconut_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_chocolate_paste",
+      "action": "Ajouter le sirop d'érable, l'extrait de vanille, le cacao en poudre et le sel à la casserole. Mélanger jusqu'à obtenir une pâte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "melted_coconut_oil",
+        "maple_syrup",
+        "vanilla_extract",
+        "cocoa_powder",
+        "salt"
+      ],
+      "produces": "chocolate_paste",
+      "requires": [],
+      "visualCue": "obtenir une pâte"
+    },
+    {
+      "id": "coat_oats",
+      "action": "Verser la pâte chocolatée sur les flocons d'avoines et bien mélanger jusqu'à ce que la pâte soit répartie sur tous les flocons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oat_nut_mix",
+        "chocolate_paste"
+      ],
+      "produces": "coated_oats",
+      "requires": [],
+      "visualCue": "pâte répartie sur tous les flocons"
+    },
+    {
+      "id": "spread_on_tray",
+      "action": "Sur une plaque recouverte de papier cuisson, répartir le mélange sur toute la surface.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "coated_oats"
+      ],
+      "produces": "spread_oats",
+      "requires": [],
+      "visualCue": "réparti sur toute la surface"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 170°C.",
+      "duration": null,
+      "temperature": 170,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_granola",
+      "action": "Enfourner le mélange pendant 25min en mélangeant à mi-cuisson.",
+      "duration": "PT25M",
+      "temperature": 170,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "spread_oats"
+      ],
+      "produces": "baked_granola",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_granola",
+      "action": "Sortir du four et laisser refroidir complètement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "baked_granola"
+      ],
+      "produces": "cooled_granola",
+      "requires": [],
+      "visualCue": "refroidi complètement"
+    },
+    {
+      "id": "add_chocolate",
+      "action": "Ajouter les morceaux de chocolat et mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_granola",
+        "chocolate"
+      ],
+      "produces": "chocolate_granola",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chocolate_granola",
+  "originalText": "Granola tout Chocolat - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n6 janvier 2020\nGranola tout Chocolat\nAccéder directement à la recette\nAh le mois de janvier et ses bonnes résolutions… Personnellement, les miennes de résolutions ne durent jamais bien longtemps. C’est pour vous dire, je ne me souviens même plus de mes résolutions de l’année dernière. Ce qui est sûr, c’est que des bonnes résolutions j’en prends suffisamment souvent pour ne pas devoir me soucier de celles prises en janvier. Je vous assure, c’est beaucoup plus facile à vivre 😉\nBon parlons maintenant de ce merveilleux granola. Il correspond parfaitement à ce que devrait être une de vos bonnes résolutions de cette nouvelle année : privilégier le fait maison ! Facile à réaliser, à conserver et surtout à déguster (hehe). En préparant votre granola vous pouvez contrôler les quantités, les ingrédients et notamment la quantité de sucre, il suffit de se lancer pour réaliser à quel point c’est facile. En plus, c’est plutôt cool de commencer la journée en vous disant : “hey, mais il est trop bon ce granola, eh ouais et c’est bibi qui l’a fait” (oui c’est important de s’auto-congratuler dès le matin, très important).\nRetrouvez nos autres recettes ultra faciles de granola pour vous lancer dans le fait maison : nos\nbarres granola maison\net notre\ngranola automnal\n!\nGranola tout Chocolat\nDaniela\nCe granola, ultra facile à réaliser, est parfait pour un petit déjeuner rapide, en topping sur une glace ou du yaourt, ou bien encore tout seul en snack ! Il est végane, sans gluten et absolument délicieux !\n4.53\n/5 avec\n67\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n8\nportions\nIngrédients\n1x\n2x\n3x\n270\ng\nde flocons d’avoine\nsans gluten\n120\ng\nde noix concassées\npersonnellement j’ai opté pour 40g de noisettes, 40g d’amande et 40g de noix de pécan\n100\ng\nde d’huile de coco\n120\nml\nde sirop d’érable\npeut être réduit\n1\nc-à-c d’extrait de vanille\n30\ng\nde cacao en poudre\nsans sucre\n1\npincée de sel\n100\ng\nde chocolat grossièrement concassé\nInstructions\nDans un grand saladier, mélanger les flocons d’avoine et les noix concassées.\nDans une casserole, faire fondre l’huile de coco. Ajouter le sirop d’érable, l’extrait de vanille, le cacao en poudre et le sel. Mélanger jusqu’à obtenir une pâte.\nVerser la pâte chocolatée sur les flocons d’avoines et bien mélanger jusqu’à ce que la pâte soit répartie sur tous les flocons.\nSur une plaque recouverte de papier cuisson, répartir le mélange sur toute la surface.\nEnfourner à 170°C pendant 25 minutes en mélangeant à mi-cuisson.\nSortir du four et laisser refroidir complètement.\nAjouter les morceaux de chocolat et mélanger. Voilà, votre granola maison est prêt. Il se conserve pendant plusieurs jours dans un récipient bien hermétique (je pense qu’il se conserve bien plus longtemps mais je n’ai jamais le temps de le conserver plus de quelques jours tellement c’est bon).\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nBrunch Sucré\n,\nHiver\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nchocolat\n,\ngranola\n,\nsans gluten\n,\nvegan\nSalade d’hiver de Mâche et Topinambours Rôtis (Vegan et Sans Gluten)\nScones aux Pépites de Chocolat\n6 thoughts on “Granola tout Chocolat”\nLadyMilonguera\ndit :\n6 janvier 2020 à 11 h 09 min\nComme il est gourmand ce granola !\nchargement…\nRépondre\nDaniela\ndit :\n12 janvier 2020 à 13 h 15 min\nMerci beaucoup !\nchargement…\nRépondre\nCaroline\ndit :\n8 janvier 2020 à 14 h 47 min\nTrès bon mais pour ma part, temps de cuisson trop long ! C’était tout brûlé !\nchargement…\nRépondre\nDaniela\ndit :\n12 janvier 2020 à 13 h 17 min\nOh mince, parfois les fours ne sont pas tous réglés de la même façon. Je réalise ce granola très souvent et je n’ai jamais eu de souci. J’espère que vous pourrez trouver le temps cuisson qui fonctionne pour vous. Merci pour ce retour !\nchargement…\nRépondre\nStephanie Marien\ndit :\n16 juillet 2020 à 0 h 01 min\nThe smell will get everyone out of bed!\nchargement…\nRépondre\nArize\ndit :\n21 juin 2025 à 14 h 58 min\nAprès avoir essayé plusieurs recettes, c’est la recette préférée que nous avons pu réaliser avec mon compagnon. Merci !\nchargement…\nRépondre\n4.53 from 67 votes (\n65 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

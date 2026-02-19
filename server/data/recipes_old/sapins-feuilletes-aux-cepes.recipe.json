@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "title": "Sapins feuillet\u00e9s aux C\u00e8pes",
+    "description": "Avec ces Sapins feuillet\u00e9s aux C\u00e8pes, je fais dans le classico-kitsch ! Ce que j'aime bien avec des petits Sapins feuillet\u00e9s aux C\u00e8pes, c'est qu'ils sont ludiques.",
+    "servings": 15,
+    "prepTime": "PT30M",
+    "cookTime": "PT30M",
+    "difficulty": "medium",
+    "recipeType": "appetizer",
+    "tags": [
+      "cepes",
+      "id\u00e9e apero noel",
+      "id\u00e9e ap\u00e9ro v\u00e9g\u00e9tarien",
+      "idee recette noel",
+      "recette enfant noel",
+      "recette sapin de noel",
+      "sapin noel",
+      "sapins feuillet\u00e9es",
+      "Ap\u00e9ros",
+      "Automne",
+      "Champignon",
+      "Hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Sapins-feuilletes-aux-cepes-1-of-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Il faut que votre p\u00e2te feuillet\u00e9e soit SUPER FROIDE. Sinon, \u00e7a va vite se transformer en film d'horreur.",
+      "Vous pouvez faire ces sapins avec n'importe quelle garniture (pesto, cr\u00e8me de tomate s\u00e9ch\u00e9e...).",
+      "Saupoudrez du persil hach\u00e9 et des graines de baies roses (apr\u00e8s cuisson) !"
+    ],
+    "slug": "sapins-feuilletes-aux-cepes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/12/Sapins-feuilletes-aux-cepes-1-of-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/12/22/sapins-feuilletes-aux-cepes/",
+    "image": "images/sapins-feuilletes-aux-cepes.jpg",
+    "createdAt": "2026-02-09T20:55:41.550535",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 70.1,
+      "protein": 1.7,
+      "fat": 3.4,
+      "carbs": 7.8,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cepes_deshydrates",
+      "name": "c\u00e8pes d\u00e9shydrat\u00e9s",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dried porcini mushrooms"
+    },
+    {
+      "id": "pate_feuilletee",
+      "name": "p\u00e2te feuillet\u00e9e",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "puff pastry"
+    },
+    {
+      "id": "celeri",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "branche",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "oignon",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "chataignes_cuites",
+      "name": "ch\u00e2taignes cuites",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chestnuts"
+    },
+    {
+      "id": "creme_vegetale",
+      "name": "cr\u00e8me v\u00e9g\u00e9tale",
+      "quantity": 130.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Non-dairy cream"
+    },
+    {
+      "id": "noisettes_concasees",
+      "name": "noisettes concass\u00e9es",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped hazelnuts"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "persil_hache",
+      "name": "persil hach\u00e9",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Chopped parsley"
+    },
+    {
+      "id": "graines_baies_roses",
+      "name": "graines de baies roses",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pink peppercorns"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Pics \u00e0 brochettes ou longs cure-dents"
+  ],
+  "steps": [
+    {
+      "id": "rehydrate_cepes",
+      "action": "R\u00e9hydratez les 40g de c\u00e8pes d\u00e9shydrat\u00e9s en suivant les instructions du paquet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "cepes_deshydrates"
+      ],
+      "produces": "cepes_rehydrates",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_celery_onion",
+      "action": "\u00c9mincez 1 branche de c\u00e9leri et 1 oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "celeri",
+        "oignon"
+      ],
+      "produces": "celeri_oignon_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_celery_onion",
+      "action": "Faites-les revenir dans une po\u00eale \u00e0 feu moyen avec 1 c\u00e0s d'huile d'olive pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "celeri_oignon_eminces",
+        "huile_olive"
+      ],
+      "produces": "celeri_oignon_sautes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_cepes",
+      "action": "Ajoutez les c\u00e8pes r\u00e9hydrat\u00e9s avec l'eau de trempage et laissez cuire jusqu'\u00e0 ce que l'eau soit compl\u00e8tement \u00e9vapor\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "cepes_rehydrates",
+        "celeri_oignon_sautes"
+      ],
+      "produces": "cepes_cuits",
+      "requires": [],
+      "visualCue": "eau compl\u00e8tement \u00e9vapor\u00e9e"
+    },
+    {
+      "id": "add_garlic_thym",
+      "action": "Ajoutez 1 gousse d'ail press\u00e9e et 1 pinc\u00e9e de thym. Salez et poivrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "cepes_cuits",
+        "ail",
+        "thym",
+        "sel",
+        "poivre"
+      ],
+      "produces": "cepes_assaisones",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_blender",
+      "action": "Transvasez dans un mixeur et ajoutez 100g de ch\u00e2taignes cuites et 130ml de cr\u00e8me v\u00e9g\u00e9tale.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "cepes_assaisones",
+        "chataignes_cuites",
+        "creme_vegetale"
+      ],
+      "produces": "melange_a_mixer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_smooth",
+      "action": "Mixez jusqu'\u00e0 obtenir une cr\u00e8me lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "melange_a_mixer"
+      ],
+      "produces": "creme_lisse",
+      "requires": [],
+      "visualCue": "cr\u00e8me lisse"
+    },
+    {
+      "id": "add_hazelnuts",
+      "action": "Ajoutez 30g de noisettes concass\u00e9es.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "creme_lisse",
+        "noisettes_concasees"
+      ],
+      "produces": "creme_cepes_noisettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "taste_adjust",
+      "action": "Go\u00fbtez et rectifiez l'assaisonnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture_aux_cepes",
+      "uses": [
+        "creme_cepes_noisettes",
+        "sel",
+        "poivre"
+      ],
+      "produces": "garniture_finale",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze_pastry",
+      "action": "Mettez votre 1 rouleau de p\u00e2te feuillet\u00e9e au cong\u00e9lateur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_feuilletee"
+      ],
+      "produces": "pate_feuilletee_froide",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 180\u00b0C et pr\u00e9parez une plaque de cuisson couverte de papier cuisson.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_feuilletee_froide"
+      ],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_pastry",
+      "action": "Sortez la p\u00e2te du cong\u00e9lateur et \u00e9talez-la.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_feuilletee_froide"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_filling",
+      "action": "\u00c9talez la cr\u00e8me aux c\u00e8pes sur toute la surface de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_etalee",
+        "garniture_finale"
+      ],
+      "produces": "pate_garnie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_shape_trees",
+      "action": "Coupez des bandes d'environ 1.5cm et repliez-les pour leur donner une forme de sapin (en combinant plusieurs morceaux si n\u00e9cessaire). Utilisez des pics \u00e0 brochettes pour maintenir la forme si besoin.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "pate_garnie"
+      ],
+      "produces": "sapins_formes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_trees",
+      "action": "D\u00e9posez les sapins sur la plaque de cuisson et enfournez pour 25min.",
+      "duration": "PT25M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "sapins_formes"
+      ],
+      "produces": "sapins_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "garnish_serve",
+      "action": "Saupoudrez de persil hach\u00e9 et de graines de baies roses avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage_et_cuisson",
+      "uses": [
+        "sapins_cuits",
+        "persil_hache",
+        "graines_baies_roses"
+      ],
+      "produces": "sapins_feuilletes_cepes",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sapins_feuilletes_cepes",
+  "originalText": "Sapins feuillet\u00e9s aux C\u00e8pes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 d\u00e9cembre 2021\nSapins feuillet\u00e9s aux C\u00e8pes\nAller \u00e0 la recette\nAvec ces Sapins feuillet\u00e9s aux C\u00e8pes, je fais dans le classico-kitsch !\nMais quel meilleur moment dans l\u2019ann\u00e9e que celui-ci pour se laisser aller au kitsch ?\nJe suis \u00e0 fond dans les sapins ces derniers temps. Comme le prouve c\ne sapin aux fromages \u00e0 fondue\net\nces tourtes de No\u00ebl avec des petits sapins\n.\nCe que j\u2019aime bien avec des petits Sapins feuillet\u00e9s aux C\u00e8pes, c\u2019est qu\u2019ils sont ludiques. Et au final, le but, en cuisine, c\u2019est bien de s\u2019amuser non ?\nAlors par contre, pour que \u00e7a reste ludique, je vous donne un conseil hyper important. Il faut que votre p\u00e2te feuillet\u00e9e soit SUPER FROIDE. Sinon, \u00e7a va vite se transformer en film d\u2019horreur. Et vous risquez de vous retrouver avec une grosse masse marron immonde !\nJ\u2019en ai fait l\u2019exp\u00e9rience !\nCe qui est cool aussi, c\u2019est que vous pouvez faire ces sapins avec n\u2019importe quelle garniture. On peut en trouver un peu partout en ligne avec du pesto. Ou de la cr\u00e8me de tomate s\u00e9ch\u00e9e.\nJ\u2019avoue \u00eatre assez attach\u00e9e aux saveurs de saison. Et je trouve que le pesto ou les tomates s\u00e9ch\u00e9es ne sont pas super adapt\u00e9s \u00e0 l\u2019hiver. Mais, \u00e7a vient en bocal. Donc en vrai, vous faites bien ce qui vous chante !\nEt si vous cherchez d\u2019autres id\u00e9es pour votre menu de F\u00eates, on a \u00e9crit 3 articles d\u00e9di\u00e9s :\nles plats\n,\nles ap\u00e9ros\net\nles desserts\n!\nJoyeux No\u00ebl les amis !\nSapins feuillet\u00e9s aux C\u00e8pes\nNatacha\n4.51\n/5 avec\n83\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n35\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nType de plat\nAppetizer\nPortions\n15\nsapins (environ)\nIngr\u00e9dients\n1x\n2x\n3x\n40\ng\nde c\u00e8pes d\u00e9shydrat\u00e9s\n1\nrouleau de p\u00e2te feuillet\u00e9e\n1\nbranche de c\u00e9leri\n1\noignon\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\ngousse d\u2019ail\n1\npinc\u00e9e de thym\n100\ng\nde ch\u00e2taignes cuites\n130\nml\nde cr\u00e8me v\u00e9g\u00e9tale\n30\ng\nde noisettes concass\u00e9es\n15\npics \u00e0 brochettes ou longs cure-dents\nInstructions\nR\u00e9hydratez les c\u00e8pes en suivant les instructions du paquet.\nMettez votre p\u00e2te feuillet\u00e9e au cong\u00e9lateur. Plus elle sera froide et plus elle sera facile \u00e0 travailler.\nEmincez le c\u00e9leri et l\u2019oignon.\nFaites les revenir dans une po\u00eale \u00e0 feu moyen avec l\u2019huile pendant 5min.\nAjoutez les c\u00e8pes avec l\u2019eau de trempage et laissez cuire jusqu\u2019\u00e0 ce que l\u2019eau soit compl\u00e8tement \u00e9vapor\u00e9e.\nAjoutez la gousse d\u2019ail press\u00e9e et le thym. Salez et poivrez.\nTransvasez dans votre mixeur et ajoutez les ch\u00e2taignes cuites, ainsi que la cr\u00e8me.\nMixez jusqu\u2019\u00e0 obtenir une cr\u00e8me lisse.\nAjoutez les noisettes concass\u00e9es.\nGo\u00fbtez et rectifiez l\u2019assaisonnement.\nPr\u00e9chauffez le four \u00e0 180\u00b0C et pr\u00e9parez une plaque de cuisson couverte de papier cuisson.\nSortez la p\u00e2te du cong\u00e9lateur et \u00e9talez-la devant vous.\nEtalez la cr\u00e8me sur toute la surface de la p\u00e2te.\nCoupez des bandes d\u2019environ 1.5cm et repliez-les pour leur donner une forme de sapin (en combinant plusieurs morceaux si n\u00e9cessaires).\nD\u00e9posez-les sur la plaque de cuisson et enfournez pour 25min.\nSaupoudrez du persil hach\u00e9 et des graines de baies roses !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAp\u00e9ros\n,\nAutomne\n,\nChampignon\n,\nHiver\n,\nRecettes Sal\u00e9es\nTags:\ncepes\n,\nid\u00e9e apero noel\n,\nid\u00e9e ap\u00e9ro v\u00e9g\u00e9tarien\n,\nidee recette noel\n,\nrecette enfant noel\n,\nrecette sapin de noel\n,\nsapin noel\n,\nsapins feuillet\u00e9es\nAum\u00f4ni\u00e8res vegan de la mer\nSoupe de Chou Vert et Petit Epeautre\n2 thoughts on \u201cSapins feuillet\u00e9s aux C\u00e8pes\u201d\nLadyMilonguera\ndit\u00a0:\n23 d\u00e9cembre 2021 \u00e0 17 h 07 min\nSympa ces sapins feuillet\u00e9s !\nchargement\u2026\nR\u00e9pondre\nflokiwill\ndit\u00a0:\n25 d\u00e9cembre 2022 \u00e0 13 h 37 min\nEXCELLENTE recette !\nNous nous sommes tous r\u00e9gal\u00e9s. Et puis \u00e7\u00e0 a eu son petit effet Waouh cette joile forme !\nchargement\u2026\nR\u00e9pondre\n4.51 from 83 votes (\n81 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

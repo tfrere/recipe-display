@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "title": "Lait de melon maison : recette facile et fra\u00eeche pour vos envies d'\u00e9t\u00e9",
+    "description": "Une boisson fruit\u00e9e et v\u00e9g\u00e9tarienne, ultra simple \u00e0 pr\u00e9parer, parfaite pour une pause fra\u00eecheur pleine de douceur.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "drink",
+    "tags": [
+      "melon",
+      "boisson",
+      "v\u00e9g\u00e9tarien",
+      "\u00e9t\u00e9",
+      "express",
+      "anti-gaspi"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/07/lait-de-melon-freethepickle.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "\u00c0 consommer bien frais dans les 2 jours.",
+      "Secouez avant de servir.",
+      "Sirop d'\u00e9rable : ou plus selon votre go\u00fbt."
+    ],
+    "slug": "lait-de-melon-maison-recette-facile-et-fraiche-pour-vos-envies-d-ete",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/07/lait-de-melon-freethepickle.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/07/16/lait-de-melon/",
+    "image": "images/lait-de-melon-maison-recette-facile-et-fraiche-pour-vos-envies-d-ete.webp",
+    "createdAt": "2026-02-09T22:58:37.490735",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 0,
+      "matchedIngredients": 1,
+      "totalIngredients": 2,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "melon_seeds_pulp",
+      "name": "Les p\u00e9pins et la pulpe centrale d'un ou 2 melons",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Melon seeds and pulp"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "maple syrup"
+    }
+  ],
+  "tools": [
+    "Blender",
+    "Sac \u00e0 lait v\u00e9g\u00e9tal, tissu fin ou passoire tr\u00e8s fine"
+  ],
+  "steps": [
+    {
+      "id": "add_to_blender",
+      "action": "Mettez les p\u00e9pins de melon et la pulpe centrale dans le bol d'un blender.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melon_seeds_pulp"
+      ],
+      "produces": "melon_in_blender",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajoutez l'eau et le sirop d'\u00e9rable.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melon_in_blender",
+        "water",
+        "maple_syrup"
+      ],
+      "produces": "unblended_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend",
+      "action": "Mixez longuement jusqu'\u00e0 obtenir un m\u00e9lange homog\u00e8ne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "unblended_mixture"
+      ],
+      "produces": "blended_mixture",
+      "requires": [],
+      "visualCue": "m\u00e9lange homog\u00e8ne"
+    },
+    {
+      "id": "filter",
+      "action": "Filtrez \u00e0 l'aide d'un sac \u00e0 lait v\u00e9g\u00e9tal, d'un tissu fin ou d'une passoire tr\u00e8s fine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blended_mixture"
+      ],
+      "produces": "filtering_in_progress",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press",
+      "action": "Pressez bien pour extraire tout le liquide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "filtering_in_progress"
+      ],
+      "produces": "strained_melon_milk",
+      "requires": [],
+      "visualCue": "tout le liquide extrait"
+    },
+    {
+      "id": "chill",
+      "action": "Versez dans une bouteille herm\u00e9tique et r\u00e9servez au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "strained_melon_milk"
+      ],
+      "produces": "chilled_melon_milk",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shake_before_serving",
+      "action": "Secouez avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chilled_melon_milk"
+      ],
+      "produces": "lait_de_melon_maison",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "lait_de_melon_maison",
+  "originalText": "Lait de Melon | Recette Facile Et Rapide \u00c0 Tester D\u2019Urgence\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 juillet 2025\nLait de melon maison : recette facile et fra\u00eeche pour vos envies d\u2019\u00e9t\u00e9\nVous cherchez une\nrecette express\nde\nboisson\navec du\nmelon\n? Nous allons vous r\u00e9galer avec cette\nboisson fruit\u00e9e\net\nv\u00e9g\u00e9tarienne\n. Ce\nlait de melon maison\n, c\u2019est la\nboisson rapide parfaite\npour une\npause fra\u00eecheur\npleine de douceur\n. En plus, c\u2019est\nultra simple \u00e0 pr\u00e9parer\n, m\u00eame quand on manque de temps ! Pr\u00eats \u00e0 d\u00e9couvrir notre\nrecette facile et rapide\n? Alors, c\u2019est parti !\nTable des mati\u00e8res\n1\nMelon : le fruit gourmand aux super-pouvoirs sant\u00e9\n2\nLes ingr\u00e9dients du lait de melon : simple et naturel\n3\nLait de melon\n4\nNe jetez plus les p\u00e9pins : faites-en des merveilles !\n5\nLa pr\u00e9paration express : mixez, filtrez, c\u2019est pr\u00eat !\n6\nLa touche finale : fra\u00eecheur et conservation\nMelon : le fruit gourmand aux super-pouvoirs sant\u00e9\nLe melon, c\u2019est le h\u00e9ros sucr\u00e9 de nos \u00e9t\u00e9s depuis des mill\u00e9naires ! Originaire d\u2019Afrique et d\u2019Asie, il voyageait d\u00e9j\u00e0 avec les anciens \u00c9gyptiens. Ce fruit juteux est surtout compos\u00e9 d\u2019eau \u00e0 plus de 90 %, parfait pour bien s\u2019hydrater. En plus, il regorge de vitamines A, C et de potassium, ce qui aide \u00e0 garder la p\u00eache et la peau lumineuse. Le melon, c\u2019est aussi un alli\u00e9 minceur gr\u00e2ce \u00e0 ses fibres douces et sa faible calorie. Bref, il est d\u00e9licieux, frais et bon pour notre corps. Pas \u00e9tonnant qu\u2019on veuille en faire un lait v\u00e9g\u00e9tal express, non ? Envie de boire autre chose que de l\u2019eau (mais en mieux et surtout bon pour la sant\u00e9) ? D\u00e9couvrez toutes nos\nrecettes de boissons fra\u00eeches et originales\n.\nLes ingr\u00e9dients du lait de melon : simple et naturel\nPour pr\u00e9parer notre lait de melon, on ne laisse rien de c\u00f4t\u00e9 ! On r\u00e9cup\u00e8re les p\u00e9pins et la pulpe centrale, souvent oubli\u00e9s, mais qui apportent du go\u00fbt et de la texture. Ensuite, on ajoute de l\u2019eau pour obtenir une belle consistance l\u00e9g\u00e8re, et un filet de sirop d\u2019\u00e9rable pour une touche douce et naturelle. Simple, naturel, et z\u00e9ro g\u00e2chis : c\u2019est la recette id\u00e9ale pour une boisson fra\u00eeche et responsable !\nLait de melon\n4.53\n/5 avec\n108\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n2\ngrands verres\nIngr\u00e9dients\n1x\n2x\n3x\nLes p\u00e9pins et la pulpe centrale d\u2019un ou 2 melons\n400\nml\nd\u2019eau\n1\nc\u00e0s de sirop d\u2019\u00e9rable\nou plus selon votre go\u00fbt\nInstructions\nMettez les p\u00e9pins de melon et la pulpe centrale dans le bol d\u2019un blender.\nAjoutez l\u2019eau et le sirop d\u2019\u00e9rable.\nMixez longuement jusqu\u2019\u00e0 obtenir un m\u00e9lange homog\u00e8ne.\nFiltrez \u00e0 l\u2019aide d\u2019un sac \u00e0 lait v\u00e9g\u00e9tal, d\u2019un tissu fin ou d\u2019une passoire tr\u00e8s fine.\nPressez bien pour extraire tout le liquide.\nVersez dans une bouteille herm\u00e9tique et r\u00e9servez au frais.\nSecouez avant de servir. \u00c0 consommer bien frais dans les 2 jours.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nNe jetez plus les p\u00e9pins : faites-en des merveilles !\nEn cuisine, tout se transforme\u2026 m\u00eame les p\u00e9pins ! Trop souvent jet\u00e9s \u00e0 la va-vite, ils sont pourtant pleins de ressources. Dans cette recette de lait de melon, on les utilise pour cr\u00e9er une boisson onctueuse et parfum\u00e9e. Anti-gaspi et fut\u00e9, non ? Les p\u00e9pins apportent texture et richesse \u00e0 vos pr\u00e9parations. Il suffit de les mixer puis de filtrer. Alors, la prochaine fois que vous coupez un melon, pensez-y : les p\u00e9pins aussi m\u00e9ritent leur moment de gloire !\nLa pr\u00e9paration express : mixez, filtrez, c\u2019est pr\u00eat !\nLa pr\u00e9paration, c\u2019est un jeu d\u2019enfant ! On balance les p\u00e9pins, la pulpe, l\u2019eau et le sirop d\u2019\u00e9rable dans le blender, puis on mixe longuement jusqu\u2019\u00e0 obtenir une texture bien lisse. Apr\u00e8s \u00e7a, on filtre le tout avec un sac \u00e0 lait v\u00e9g\u00e9tal ou un tissu fin pour \u00e9liminer les morceaux et garder un lait de melon tout doux et velout\u00e9. Et voil\u00e0, votre boisson express est pr\u00eate en un clin d\u2019\u0153il !\nBesoin de fra\u00eecheur saine et v\u00e9g\u00e9tale cet \u00e9t\u00e9 ? Laissez-vous tenter par notre\nagua fresca past\u00e8que-fraise\nou un\nfrapp\u00e9 citron-menthe\nultra rafra\u00eechissant. Deux recettes naturelles, hydratantes et pleines de pep\u2019s \u00e0 siroter sans mod\u00e9ration !\nLa touche finale : fra\u00eecheur et conservation\nUne fois filtr\u00e9, on verse notre lait de melon dans une bouteille bien propre et herm\u00e9tique. Hop, au frigo pour qu\u2019il soit bien frais \u00e0 la d\u00e9gustation ! Avant de servir, secouez un peu pour bien r\u00e9veiller les saveurs. Ce petit tr\u00e9sor fruit\u00e9 se garde deux jours max, alors on en profite vite\u2026 et bien frais, \u00e9videmment !\nEnvie de continuer \u00e0 vous r\u00e9galer avec le melon ?\nTestez aussi notre\nsoupe froide de melon et ciboulette\n, ultra fra\u00eeche et pleine de peps !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nBoissons\n,\n\u00c9t\u00e9\n,\nRecettes Sucr\u00e9es\nCroquettes lentilles corail, quinoa et feta : croustillantes et gourmandes\nSalade de melon, feta et concombre : la recette express ultra fra\u00eeche de l\u2019\u00e9t\u00e9\n4.53 from 108 votes (\n108 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

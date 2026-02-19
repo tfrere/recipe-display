@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "title": "Chou rouge brais\u00e9 aux \u00e9chalotes et fava, fondant et savoureux",
+    "description": "Le chou rouge brais\u00e9 aux \u00e9chalotes et sa fava est une recette simple et savoureuse qui change des pr\u00e9parations habituelles du chou. Associ\u00e9 \u00e0 une pur\u00e9e de pois cass\u00e9s, ce plat v\u00e9g\u00e9tarien allie douceur, fondant et richesse nutritionnelle.",
+    "servings": 2,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "recette grecque",
+      "v\u00e9g\u00e9tarien",
+      "chou",
+      "hiver",
+      "brais\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Chou-rouge-braise-sur-fava-1-of-4.jpg",
+    "nationality": "Greek",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le chou blanc peut remplacer le chou rouge.",
+      "Le cognac peut \u00eatre remplac\u00e9 par un autre alcool ou supprim\u00e9.",
+      "Pour un service plus sec, terminer la cuisson \u00e0 d\u00e9couvert.",
+      "Etalez la fava sur un plat de service. Disposez les quartiers de chou brais\u00e9s par-dessus. Arrosez le tout avec un peu de sauce de cuisson pour encore plus de saveur."
+    ],
+    "slug": "chou-rouge-braise-aux-echalotes-et-fava-fondant-et-savoureux",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Chou-rouge-braise-sur-fava-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/03/08/chou-rouge-braise-echalotes-fava/",
+    "image": "images/chou-rouge-braise-aux-echalotes-et-fava-fondant-et-savoureux.webp",
+    "createdAt": "2026-02-09T22:39:20.367074",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 109.0,
+    "totalCookingTime": 19.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 757.0,
+      "protein": 34.8,
+      "fat": 18.9,
+      "carbs": 113.3,
+      "fiber": 18.6,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "red_cabbage",
+      "name": "chou rouge",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "coup\u00e9 en 3 quartiers (en gardant le tronc)",
+      "notes": null,
+      "optional": false,
+      "name_en": "red cabbage"
+    },
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "olive_oil",
+      "name": "Huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cognac",
+      "name": "cognac",
+      "quantity": 20.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cognac"
+    },
+    {
+      "id": "bouillon_powder",
+      "name": "bouillon en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou 1 cube bouillon de l\u00e9gumes",
+      "optional": false,
+      "name_en": "bouillon powder"
+    },
+    {
+      "id": "water_200ml",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "pepper",
+      "name": "Poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "split_peas",
+      "name": "pois cass\u00e9s",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "tremp\u00e9s la veille",
+      "notes": null,
+      "optional": false,
+      "name_en": "split peas"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "grossi\u00e8rement coup\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "water_700ml",
+      "name": "eau",
+      "quantity": 700.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Po\u00eale ou casserole en fonte",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "soak_peas",
+      "action": "Faites tremper les pois cass\u00e9s dans un grand bol d'eau la veille. \u00c9gouttez et rincez-les.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "fava",
+      "uses": [
+        "split_peas"
+      ],
+      "produces": "soaked_peas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Dans une casserole, faites chauffer un filet d'huile d'olive et faites revenir l'oignon grossi\u00e8rement coup\u00e9 pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "fava",
+      "uses": [
+        "olive_oil",
+        "onion"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_peas_water",
+      "action": "Ajoutez les pois cass\u00e9s rinc\u00e9s, le thym et les 700 ml d'eau. Portez \u00e0 \u00e9bullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "fava",
+      "uses": [
+        "soaked_peas",
+        "thyme",
+        "water_700ml",
+        "sauteed_onion"
+      ],
+      "produces": "peas_mixture",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "simmer_peas",
+      "action": "Retirez l'\u00e9cume qui se forme \u00e0 la surface, r\u00e9duisez le feu et laissez cuire \u00e0 petit bouillon \u00e0 couvert pendant 45min, jusqu'\u00e0 ce que les pois cass\u00e9s soient compl\u00e8tement d\u00e9faits.",
+      "duration": "PT45M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "fava",
+      "uses": [
+        "peas_mixture"
+      ],
+      "produces": "cooked_peas",
+      "requires": [],
+      "visualCue": "pois cass\u00e9s compl\u00e8tement d\u00e9faits"
+    },
+    {
+      "id": "puree_peas",
+      "action": "Retirez les branches de thym, puis mixez la pr\u00e9paration pour obtenir une consistance lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "fava",
+      "uses": [
+        "cooked_peas"
+      ],
+      "produces": "fava_puree",
+      "requires": [],
+      "visualCue": "consistance lisse"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_cabbage",
+      "action": "Coupez le chou rouge en 3 quartiers, en gardant une partie du tronc pour que les feuilles restent ensemble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "red_cabbage"
+      ],
+      "produces": "cabbage_quarters",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sear_cabbage",
+      "action": "Faites chauffer une casserole ou une po\u00eale en fonte avec un filet d'huile d'olive. D\u00e9posez les quartiers de chou et faites-les griller \u00e0 feu moyen pendant 7min de chaque c\u00f4t\u00e9.",
+      "duration": "PT14M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "olive_oil",
+        "cabbage_quarters"
+      ],
+      "produces": "seared_cabbage",
+      "requires": [],
+      "visualCue": "grill\u00e9"
+    },
+    {
+      "id": "saute_shallots",
+      "action": "Dans la m\u00eame casserole, faites fondre le beurre. Ajoutez les \u00e9chalotes \u00e9minc\u00e9es et faites-les dorer l\u00e9g\u00e8rement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "butter",
+        "shallots"
+      ],
+      "produces": "sauteed_shallots",
+      "requires": [],
+      "visualCue": "dor\u00e9 l\u00e9g\u00e8rement"
+    },
+    {
+      "id": "deglaze_cognac",
+      "action": "D\u00e9glacez avec le cognac et laissez r\u00e9duire jusqu'\u00e0 \u00e9vaporation.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "cognac",
+        "sauteed_shallots"
+      ],
+      "produces": "deglazed_mixture",
+      "requires": [],
+      "visualCue": "\u00e9vaporation"
+    },
+    {
+      "id": "add_broth",
+      "action": "Ajoutez l'eau, le bouillon et le poivre, puis portez \u00e0 \u00e9bullition \u00e0 feu moyen-doux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "water_200ml",
+        "bouillon_powder",
+        "pepper",
+        "deglazed_mixture"
+      ],
+      "produces": "braising_liquid",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "braise_cabbage",
+      "action": "Remettez les quartiers de chou dans la casserole. Aspergez-les de sauce, couvrez et enfournez pour 45min.",
+      "duration": "PT45M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "chou_rouge",
+      "uses": [
+        "seared_cabbage",
+        "braising_liquid"
+      ],
+      "produces": "braised_cabbage",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_plate",
+      "action": "Etalez la fava sur un plat de service. Disposez les quartiers de chou brais\u00e9s par-dessus. Arrosez le tout avec un peu de sauce de cuisson pour encore plus de saveur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "fava_puree",
+        "braised_cabbage"
+      ],
+      "produces": "chou_rouge_braise_fava",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chou_rouge_braise_fava",
+  "originalText": "Chou rouge brais\u00e9 aux \u00e9chalotes et fava, fondant et savoureux\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n8 mars 2025\nChou rouge brais\u00e9 aux \u00e9chalotes et fava, fondant et savoureux\nLe chou rouge brais\u00e9 aux \u00e9chalotes et sa fava est une recette simple et savoureuse qui change des pr\u00e9parations habituelles du chou. Souvent cantonn\u00e9 aux salades croquantes ou \u00e0 la choucroute, ce l\u00e9gume aux multiples facettes m\u00e9rite d\u2019\u00eatre explor\u00e9 sous d\u2019autres formes. Une fois brais\u00e9, il devient incroyablement tendre et absorbe \u00e0 merveille les saveurs des aromates et des \u00e9pices, rendant chaque bouch\u00e9e parfum\u00e9e et fondante.\nSi vous cherchez une id\u00e9e originale pour cuisiner le chou rouge, cette recette est id\u00e9ale. Associ\u00e9 \u00e0 une pur\u00e9e de pois cass\u00e9s, appel\u00e9e fava en Gr\u00e8ce, ce plat v\u00e9g\u00e9tarien allie douceur, fondant et richesse nutritionnelle. Il est parfait pour un repas d\u2019hiver r\u00e9confortant, mais peut aussi se d\u00e9cliner en accompagnement pour un menu plus complet. Que vous soyez adepte des plats mijot\u00e9s ou simplement curieux de tester de nouvelles saveurs, cette recette apporte une belle alternative aux pr\u00e9parations classiques du chou rouge.\nTable des mati\u00e8res\n1\nPourquoi tester le chou rouge brais\u00e9 ?\n2\nQu\u2019est-ce que le braisage ?\n3\nLa fava : une pur\u00e9e simple et onctueuse\n4\nChou rouge brais\u00e9 aux \u00e9chalotes et fava\n5\nLes recettes similaires \u00e0 d\u00e9couvrir\n6\nPour conclure cette recette de chou rouge brais\u00e9\nPourquoi tester le chou rouge brais\u00e9 ?\nSi vous cherchez une mani\u00e8re originale de cuisiner le chou rouge, cette recette est id\u00e9ale. Elle a plusieurs atouts :\nUn chou fondant et parfum\u00e9\n. Le braisage permet d\u2019obtenir une texture tendre et un go\u00fbt d\u00e9licat, sublim\u00e9 par les \u00e9chalotes et les \u00e9pices.\nUn plat r\u00e9confortant et nourrissant\n. L\u2019association du chou brais\u00e9 et de la pur\u00e9e de pois cass\u00e9s cr\u00e9e un m\u00e9lange de textures doux et gourmand, id\u00e9al pour un repas \u00e9quilibr\u00e9.\nFacile \u00e0 adapter\n. Cette recette fonctionne aussi tr\u00e8s bien avec du chou blanc, si vous n\u2019avez pas de chou rouge sous la main. Les saveurs resteront tout aussi agr\u00e9ables.\nSimple \u00e0 r\u00e9aliser\n. Malgr\u00e9 son apparence sophistiqu\u00e9e, cette pr\u00e9paration ne demande aucune technique compliqu\u00e9e. Il suffit de respecter les \u00e9tapes de cuisson pour obtenir un r\u00e9sultat savoureux et bien \u00e9quilibr\u00e9.\nQu\u2019est-ce que le braisage ?\nLe terme \u00ab\u00a0brais\u00e9\u00a0\u00bb d\u00e9signe une m\u00e9thode de cuisson lente \u00e0 feu doux, dans une petite quantit\u00e9 de liquide. Cette technique permet aux aliments de s\u2019impr\u00e9gner des saveurs tout en devenant fondants. Elle est souvent utilis\u00e9e pour les viandes, mais s\u2019adapte aussi tr\u00e8s bien aux l\u00e9gumes comme le chou, leur donnant une texture tendre et moelleuse.\nDans cette recette, le chou rouge est d\u2019abord l\u00e9g\u00e8rement grill\u00e9 pour d\u00e9velopper ses ar\u00f4mes avant de mijoter doucement avec des \u00e9chalotes, des \u00e9pices et une sauce parfum\u00e9e. La cuisson se termine au four, sous couvert, afin que le chou absorbe parfaitement le bouillon et gagne en tendret\u00e9. R\u00e9sultat : un l\u00e9gume fondant, bien parfum\u00e9, et qui accompagne \u00e0 merveille d\u2019autres plats.\nLa fava : une pur\u00e9e simple et onctueuse\nLe chou rouge brais\u00e9 s\u2019accompagne parfaitement de la fava, une pur\u00e9e de pois cass\u00e9s d\u2019origine grecque. Elle est douce, l\u00e9g\u00e8rement sucr\u00e9e et apporte une texture cr\u00e9meuse qui \u00e9quilibre le fondant du chou. Riche en prot\u00e9ines v\u00e9g\u00e9tales et en fibres, elle rend le plat plus complet et rassasiant, id\u00e9al pour un repas \u00e9quilibr\u00e9. Facile \u00e0 pr\u00e9parer, elle demande peu d\u2019ingr\u00e9dients et se marie tr\u00e8s bien avec d\u2019autres l\u00e9gumes r\u00f4tis ou brais\u00e9s.\nChou rouge brais\u00e9 aux \u00e9chalotes et fava\n4.50\n/5 avec\n108\nvotes\nImprimer la recette\nPin Recipe\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le chou brais\u00e9\n500\ng\nde chou rouge\n\u00bd chou, coup\u00e9 en 3 quartiers (en gardant le tronc pour maintenir les feuilles)\n4\n\u00e9chalotes \u00e9minc\u00e9es\n40\ng\nde beurre\nHuile d\u2019olive\n20\nml\nde cognac\n2\nc\u00e0c de bouillon en poudre ou 1 cube de bouillon de l\u00e9gumes\n200\nml\nd\u2019eau\nPoivre\nPour la pur\u00e9e de pois cass\u00e9s\n250\ng\nde pois cass\u00e9s\ntremp\u00e9s la veille\n1\noignon grossi\u00e8rement coup\u00e9\n700\nml\nd\u2019eau\nHuile d\u2019olive\n2\nbranches de thym\nInstructions\nPur\u00e9e de pois cass\u00e9s (Fava)\nFaites tremper les pois cass\u00e9s dans un grand bol d\u2019eau la veille. \u00c9gouttez et rincez-les.\nDans une casserole, faites chauffer un filet d\u2019huile d\u2019olive et faites revenir l\u2019oignon grossi\u00e8rement coup\u00e9 pendant 5 minutes.\nAjoutez les pois cass\u00e9s rinc\u00e9s, le thym et les 700 ml d\u2019eau. Portez \u00e0 \u00e9bullition.\nRetirez l\u2019\u00e9cume qui se forme \u00e0 la surface, r\u00e9duisez le feu et laissez cuire \u00e0 petit bouillon \u00e0 couvert pendant 45 minutes \u00e0 1 heure, jusqu\u2019\u00e0 ce que les pois cass\u00e9s soient compl\u00e8tement d\u00e9faits.\nRetirez les branches de thym, puis mixez la pr\u00e9paration pour obtenir une consistance lisse.\nChou rouge brais\u00e9\nPr\u00e9chauffez le four \u00e0 190\u00b0C.\nCoupez le chou rouge en 3 quartiers, en gardant une partie du tronc pour que les feuilles restent ensemble.\nFaites chauffer une casserole ou une po\u00eale en fonte avec un filet d\u2019huile d\u2019olive. D\u00e9posez les quartiers de chou et faites-les griller \u00e0 feu moyen pendant 7-8 minutes de chaque c\u00f4t\u00e9.\nRetirez les quartiers de chou et r\u00e9servez.\nDans la m\u00eame casserole, faites fondre le beurre. Ajoutez les \u00e9chalotes \u00e9minc\u00e9es et faites-les dorer l\u00e9g\u00e8rement.\nD\u00e9glacez avec le cognac et laissez r\u00e9duire jusqu\u2019\u00e0 \u00e9vaporation.\nAjoutez l\u2019eau, le bouillon et le poivre, puis portez \u00e0 \u00e9bullition \u00e0 feu moyen-doux.\nRemettez les quartiers de chou dans la casserole. Aspergez-les de sauce, couvrez et enfournez pour 45 min.\nNotes\nService\nEtalez la fava sur un plat de service.\nDisposez les quartiers de chou brais\u00e9s par-dessus.\nArrosez le tout avec un peu de sauce de cuisson pour encore plus de saveur.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLes recettes similaires \u00e0 d\u00e9couvrir\nSi vous aimez l\u2019id\u00e9e de cuisiner autrement vos choux, voici quelques autres recettes qui pourraient vous plaire :\nSoupe de Chou Vert et Petit Epeautre\n: une soupe nourrissante et r\u00e9confortante, parfaite pour les journ\u00e9es fra\u00eeches.\nSalade Croquante de Chou au S\u00e9same\n: une salade pleine de fra\u00eecheur et de saveurs, id\u00e9ale pour un repas l\u00e9ger.\nSoupe au curry rouge et cacahu\u00e8te : des saveurs qui nous rappellent la Tha\u00eflande\n: une recette parfum\u00e9e et \u00e9pic\u00e9e qui nous transporte directement en Tha\u00eflande.\nPour conclure cette recette de chou rouge brais\u00e9\nLe chou rouge brais\u00e9 aux \u00e9chalotes et sa fava est une recette \u00e0 la fois\nsimple et originale\n, qui permet de red\u00e9couvrir le chou sous une texture fondante et parfum\u00e9e. Facile \u00e0 pr\u00e9parer, elle s\u2019adapte selon les envies et les ingr\u00e9dients disponibles. Que vous soyez en qu\u00eate d\u2019un\nplat v\u00e9g\u00e9tarien r\u00e9confortant\nou d\u2019une nouvelle fa\u00e7on d\u2019appr\u00e9cier le chou, cette recette saura vous s\u00e9duire. \u00c0 tester sans h\u00e9sitation pour une cuisine de saison pleine de saveurs !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChoux\n,\nHiver\n,\nPlats & Accompagnements\n,\nPlats au Four\nTags:\nrecette grecque\n,\nv\u00e9g\u00e9tarien\nSalade de patate douce sauce au tahini : gourmandise \u00e0 chaque bouch\u00e9e !\nDumplings vapeur super faciles avec des feuilles de riz : sans pliage\n4 thoughts on \u201cChou rouge brais\u00e9 aux \u00e9chalotes et fava, fondant et savoureux\u201d\ndelgery\ndit\u00a0:\n12 mars 2025 \u00e0 13 h 12 min\nBonjour,\nQue peut on mettre pour remplacer le cognac?\nMerci pour toutes vos bonnes recettes!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n14 mars 2025 \u00e0 9 h 07 min\nHello, n\u2019importe quel autre alcool qui te plais plus ou tu peux aussi le supprimer !\nchargement\u2026\nR\u00e9pondre\nAnne-Laure Brunet\ndit\u00a0:\n29 novembre 2025 \u00e0 9 h 01 min\nMerci pour vos recettes originales et d\u00e9licieuses, celle ci en particulier. J\u2019ai termin\u00e9 la cuisson \u00e0 d\u00e9couvert pour s\u00e9cher un peu le chou, toute la famille s\u2019est r\u00e9gal\u00e9e. Je suppose quand m\u00eame que le cognac apporte beaucoup, par l\u2019ar\u00f4me et une petite touche sucr\u00e9e. Encore merci !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n1 d\u00e9cembre 2025 \u00e0 11 h 15 min\nMerci \u00e0 vous !\nchargement\u2026\nR\u00e9pondre\n4.50 from 108 votes (\n106 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 19.0
+}

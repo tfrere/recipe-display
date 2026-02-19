@@ -1,0 +1,283 @@
+{
+  "metadata": {
+    "title": "\u0152ufs cocotte en courgette",
+    "description": "Voici une fa\u00e7on originale de cuisiner vos \u0153ufs (ou vos courgettes) : les \u0152ufs cocotte en courgette ! C\u2019est parfait pour un d\u00e9jeuner ou un d\u00eener l\u00e9ger.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "courgette ronde",
+      "oeufs",
+      "oeufs cocotte",
+      "recette courgette ronde",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Courgette-ronde-oeuf-cocotte-2-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Je conseille de les accompagner de petites mouillettes beurr\u00e9es !",
+      "Les courgettes rejettent de l'eau \u00e0 la cuisson. Les \u0153ufs, malgr\u00e9 la cuisson, resteront forc\u00e9ment tr\u00e8s coulants. Si vous n'aimez pas les \u0153ufs coulants, cette recette d'\u0152ufs cocotte en courgette n'est pas pour vous !",
+      "Gardez l'int\u00e9rieur des courgettes au cong\u00e9lateur pour une soupe ou une sauce."
+    ],
+    "slug": "oeufs-cocotte-en-courgette",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Courgette-ronde-oeuf-cocotte-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/09/22/oeufs-cocotte-en-courgette/",
+    "image": "images/oeufs-cocotte-en-courgette.webp",
+    "createdAt": "2026-02-09T21:56:09.574808",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 157.8,
+      "protein": 10.6,
+      "fat": 9.4,
+      "carbs": 8.6,
+      "fiber": 2.1,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "courgettes_rondes",
+      "name": "courgettes rondes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "creme_fraiche",
+      "name": "cr\u00e8me fra\u00eeche",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "fromage_frais",
+      "name": "fromage frais",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh cheese"
+    },
+    {
+      "id": "ciboulette",
+      "name": "ciboulette",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": "hach\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "pain",
+      "name": "pain",
+      "quantity": 2.0,
+      "unit": "tranche",
+      "category": "pantry",
+      "preparation": "grill\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "bread"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_courgettes",
+      "action": "Coupez les capuchons des courgettes et videz-les en ne laissant qu'environ 1cm de chair.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_rondes"
+      ],
+      "produces": "courgettes_videes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_courgettes",
+      "action": "Placez les courgettes \u00e9vid\u00e9es dans un plat et salez. Enfournez 15min.",
+      "duration": "PT15M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_videes",
+        "sel"
+      ],
+      "produces": "courgettes_precuites",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "remove_from_oven",
+      "action": "Sortez-les du four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_precuites"
+      ],
+      "produces": "courgettes_precuites_retirees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_courgettes",
+      "action": "D\u00e9posez dans chaque courgette une c\u00e0c de cr\u00e8me, une c\u00e0c de fromage frais et une c\u00e0c de ciboulette. Puis un \u0153uf par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_precuites_retirees",
+        "creme_fraiche",
+        "fromage_frais",
+        "ciboulette",
+        "oeufs"
+      ],
+      "produces": "courgettes_remplies",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_and_bake",
+      "action": "Salez, poivrez, enfournez 15min.",
+      "duration": "PT15M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes_remplies",
+        "sel",
+        "poivre"
+      ],
+      "produces": "oeufs_cocotte_cuits",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9gustez avec du pain grill\u00e9 !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "oeufs_cocotte_cuits",
+        "pain"
+      ],
+      "produces": "oeufs_cocotte_en_courgette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "oeufs_cocotte_en_courgette",
+  "originalText": "\u0152ufs cocotte en courgette - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 septembre 2023\n\u0152ufs cocotte en courgette\nVoici une fa\u00e7on originale de cuisiner vos \u0153ufs (ou vos courgettes) : les \u0152ufs cocotte en courgette !\nJe dois bien avouer que je ne cuisine pas tr\u00e8s souvent de courgettes rondes. C\u2019est d\u2019ailleurs la premi\u00e8re recette que vous trouverez sur ce blog.\nApr\u00e8s quelques h\u00e9sitations, j\u2019ai d\u00e9cid\u00e9 de partir sur une recette tr\u00e8s simple pour cette grande premi\u00e8re. J\u2019aurai pu vous proposer une recette de courgette farcie. Mais \u00e7a aurait \u00e9t\u00e9 trop t\u00e9l\u00e9phon\u00e9.\nDonc nous voil\u00e0 partis sur des \u0153ufs en cocottes. Les courgettes rondes servant de cocotte. Vous l\u2019aurez compris ! Alors, oui, il faut \u00e9vider les courgettes. Et je vous conseille de garder cette chaire pour une utilisation ult\u00e9rieure. Dans une soupe par exemple, ou un velout\u00e9. Pour ma part, j\u2019ai mis la chaire centrale au cong\u00e9lateur pour l\u2019instant. O\u00f9 elle attend sagement de finir sa vie dans un futur velout\u00e9. Pas de g\u00e2chis les amis !\nEnsuite, il faut faire pr\u00e9cuire vos courgettes. On\u00a0 ajoute les oeufs, de la cr\u00e8me, du fromage frais et de la ciboulette. Retour au four. Et voil\u00e0 ! Le tour est jou\u00e9. C\u2019est vraiment tr\u00e8s simple. Et c\u2019est parfait pour un d\u00e9jeuner ou un d\u00eener l\u00e9ger. Je conseille de les accompagner de petites mouillettes beurr\u00e9es !\nAlors, par contre, je pr\u00e9f\u00e8re vous pr\u00e9venir : les courgettes rejettent de l\u2019eau \u00e0 la cuisson. Les \u0153ufs, malgr\u00e9 la cuisson, resteront forc\u00e9ment tr\u00e8s coulants. Si vous n\u2019aimez pas les \u0153ufs coulants, cette recette d\u2019 \u0152ufs cocotte en courgette n\u2019est pas pour vous ! Mais vous pouvez tester\nles \u0153ufs cocotte aux morilles\nou\nceux aux girolles\n!\n\u0152ufs cocotte en courgette\n4.44\n/5 avec\n91\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\ncourgettes rondes\n2\nc\u00e0c de cr\u00e8me fra\u00eeche\n2\nc\u00e0c de fromage frais\n2\nc\u00e0c de ciboulette hach\u00e9e\n2\noeufs\nsel\npoivre\n2\ntranches de pain grill\u00e9\nInstructions\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nCoupez les capuchons des courgettes et videz-les en ne laissant qu\u2019environ 1cm de chair.\nGardez l\u2019int\u00e9rieur des courgettes au cong\u00e9lateur pour une soupe ou une sauce.\nPlacez les courgettes \u00e9vid\u00e9es dans un plat et salez. Enfournez 15min.\nSortez-les du four.\nD\u00e9posez dans chaque courgette une c\u00e0c de cr\u00e8me, une c\u00e0c de fromage frais et une c\u00e0c de ciboulette. Puis un \u0153uf par-dessus.\nSalez, poivrez, enfournez 15min.\nD\u00e9gustez avec du pain grill\u00e9 !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\ncourgette ronde\n,\noeufs\n,\noeufs cocotte\n,\nrecette courgette ronde\nMoussaka v\u00e9g\u00e9tarienne\nGalettes prot\u00e9in\u00e9es haricots quinoa\n1 thought on \u201c\u0152ufs cocotte en courgette\u201d\nemmanuelle\ndit\u00a0:\n7 ao\u00fbt 2024 \u00e0 21 h 58 min\nQuel r\u00e9gal ! On refera cela fr\u00e9quemment. La ciboulette fait toute la diff\u00e9rence. J\u2019ai juste remplac\u00e9 le fromage frais par du gruy\u00e8re.\nchargement\u2026\nR\u00e9pondre\n4.44 from 91 votes (\n90 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

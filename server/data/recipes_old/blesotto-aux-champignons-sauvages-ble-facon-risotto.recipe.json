@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "Blesotto aux Champignons Sauvages (blé façon risotto)",
+    "description": "Voici ma recette de Blesotto aux champignons sauvages. J'adore les risottos, j'en fais assez souvent.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "recette blé",
+      "recette ebly",
+      "risotto de blé",
+      "Automne",
+      "Hiver",
+      "Champignon",
+      "Plats en Sauce",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/12/Ble-Risotto-Champignons_.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La cuisson du blé est un peu plus rapide que celle du riz, et un peu plus gourmand en eau.",
+      "Si vous utilisez des champignons surgelés, le temps de cuisson sera un peu plus long.",
+      "Si vous les trouvez encore un peu durs, vous pouvez ajouter de l'eau."
+    ],
+    "slug": "blesotto-aux-champignons-sauvages-ble-facon-risotto",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/12/Ble-Risotto-Champignons_.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/12/02/blesotto-aux-champignons-sauvages-vegan-ble-facon-risotto/",
+    "image": "images/blesotto-aux-champignons-sauvages-ble-facon-risotto.webp",
+    "createdAt": "2026-02-09T20:09:02.466417",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 47.0,
+    "totalCookingTime": 7.0,
+    "nutritionPerServing": {
+      "calories": 323.3,
+      "protein": 18.0,
+      "fat": 11.3,
+      "carbs": 60.2,
+      "fiber": 35.1,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "shallot",
+      "name": "échalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincée",
+      "notes": "grosse",
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "wild_mushrooms",
+      "name": "champignons sauvages",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "émincés",
+      "notes": "frais ou surgelés",
+      "optional": false,
+      "name_en": "wild mushrooms"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 600.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vegetable_bouillon_cube",
+      "name": "bouillon cube de légumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachées",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "wheat",
+      "name": "blé",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "type ebly",
+      "optional": false,
+      "name_en": "wheat"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "soy_cream",
+      "name": "crème de soja",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou 3",
+      "optional": false,
+      "name_en": "soy cream"
+    }
+  ],
+  "tools": [
+    "Poêle à bords hauts"
+  ],
+  "steps": [
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffer l'huile d'olive dans une poêle à bords hauts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallot",
+      "action": "Ajoutez l'échalote émincée, et faites la revenir à feu moyen-fort pendant 4min.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "hot_oil",
+        "shallot"
+      ],
+      "produces": "sauteed_shallot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_mushrooms",
+      "action": "Ajoutez les champignons et faites les cuire environ 15min jusqu'à ce qu'ils ne rendent plus d'eau.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_shallot",
+        "wild_mushrooms"
+      ],
+      "produces": "cooked_mushrooms",
+      "requires": [],
+      "visualCue": "ne rendent plus d'eau"
+    },
+    {
+      "id": "prepare_broth",
+      "action": "Mettez l'eau à chauffer dans une casserole et y ajoutez le bouillon cube, s'assurez qu'il soit bien dissous et réservez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "broth",
+      "uses": [
+        "water",
+        "vegetable_bouillon_cube"
+      ],
+      "produces": "vegetable_broth",
+      "requires": [],
+      "visualCue": "bouillon dissous"
+    },
+    {
+      "id": "add_garlic",
+      "action": "Ajoutez les 2 gousses d'ail hachées dans la poêle et faites revenir encore 3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_mushrooms",
+        "garlic"
+      ],
+      "produces": "mushroom_garlic_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wheat",
+      "action": "Baissez le feu sur moyen. Ajoutez le blé et mélangez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mushroom_garlic_mixture",
+        "wheat"
+      ],
+      "produces": "wheat_mushroom_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deglaze_with_wine",
+      "action": "Versez le vin blanc et mélangez jusqu'à ce qu'il soit complètement absorbé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "wheat_mushroom_mixture",
+        "white_wine"
+      ],
+      "produces": "deglazed_wheat",
+      "requires": [],
+      "visualCue": "vin complètement absorbé"
+    },
+    {
+      "id": "add_broth_gradually",
+      "action": "Ajoutez le bouillon, une louche à la fois, en mélangeant constamment. Attendez que le bouillon soit complètement absorbé pour verser une nouvelle louche.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "deglazed_wheat",
+        "vegetable_broth"
+      ],
+      "produces": "cooked_blesotto",
+      "requires": [],
+      "visualCue": "grains de blé cuits"
+    },
+    {
+      "id": "add_soy_cream",
+      "action": "Éteignez le feu et ajoutez la crème de soja.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_blesotto",
+        "soy_cream"
+      ],
+      "produces": "blesotto_aux_champignons",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "blesotto_aux_champignons",
+  "originalText": "Blesotto aux Champignons Sauvages (blé façon risotto) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 décembre 2020\nBlesotto aux Champignons Sauvages (blé façon risotto)\nAccéder directement à la recette\nVoici ma recette de Blesotto aux champignons sauvages.\nJ’adore les risottos, j’en fais assez souvent. Enfin, par période ! Une des choses que j’adore avec les risottos c’est qu’on peut vraiment les décliner à toutes les sauces et c’est toujours bon !\nMais cette fois-ci j’avais envie de remplacer le fameux riz arborio par autre chose, surtout par curiosité en fait.\nJe me demandais si le blé pouvait se cuisiner en risotto (ou blesotto hihihi). Il fallait donc que je tente l’expérience. Comme on ne trouve pas beaucoup de recettes de blesotto sur internet j’ai décidé de m’inspirer d’une de mes recettes préférées (\nle risotto champignon poireau\n) et de l’adapter.\nAu final, c’est très similaire en termes d’étapes. La cuisson du blé est un peu plus rapide que celle du riz, et un peu plus gourmand en eau.\nSinon, aucune difficulté particulière et c’est super bon ! Vous allez essayer ce blesotto aux champignons sauvages ?\nBlesotto aux Champignons Sauvages Vegan (blé façon risotto)\n4.52\n/5 avec\n108\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n2\npersonnes\nIngrédients\n1x\n2x\n3x\n1\nc-à-s d’huile d’olive\n1\ngrosse échalote\n100g émincés\n400\ng\nde champignons sauvages\nfrais ou surgelés\n600\nml\nd’eau\n1\nbouillon cube de légumes\n2\ngousses d’ail\n150\ng\nde blé\ntype ebly\n80\nml\nde vin blanc\n2\nou 3 c-à-s de crème de soja\nInstructions\nFaites chauffer l’huile d’olive dans une poêle à bords hauts. Ajoutez l’échalote émincée, et faites la revenir à feu moyen-fort 3-4min.\nAjoutez les champignons et faites les cuire environ 15 min jusqu’à ce qu’ils ne rendent plus d’eau. Si vous utilisez des champignons surgelés, le temps de cuisson sera un peu plus long.\nMettre l’eau à chauffer dans une casserole et y ajouter le bouillon cube, s’assurer qu’il soit bien dissous et réserver.\nAjoutez les 2 gousses d’ail hachées dans la poêle et faites revenir encore 2-3min.\nBaissez le feu sur moyen. Ajoutez le blé et mélangez bien.\nVersez le vin blanc et mélangez jusqu’à ce qu’il soit complètement absorbé.\nEnsuite, ajoutez le bouillon, une louche à la fois, en mélangeant constamment. Attendez que le bouillon soit complètement absorbé pour verser une nouvelle louche.\nContinuez jusqu’à avoir épuisé tout le bouillon, les grains de blé devraient être cuits. Si vous les trouvez encore un peu durs, vous pouvez ajouter de l’eau. La cuisson dure environ 25min.\nÉteignez le feu et ajoutez la crème de soja.\nRégalez vous !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChampignon\n,\nHiver\n,\nPlats en Sauce\nTags:\nrecette blé\n,\nrecette ebly\n,\nrisotto de blé\nPoires Pochées au Vin Chaud de Noël\nPain d’épices Vegan\n4.52 from 108 votes (\n108 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

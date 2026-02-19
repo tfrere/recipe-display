@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "title": "Nouilles saut\u00e9es piment\u00e9es \u00e0 la courgette",
+    "description": "All\u00e9, encore une petite recette avec de la courgette avant que la saison ne se termine : les Nouilles saut\u00e9es piment\u00e9es \u00e0 la courgette. Si vous \u00eates un amateur de saveurs asiatiques et de piment, ces nouilles saut\u00e9es devraient vous plaire !",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT14M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "courgette",
+      "nouilles piment\u00e9es",
+      "nouilles saut\u00e9es",
+      "recette asiatique",
+      "\u00e9t\u00e9",
+      "wok"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Nouilles-sautees-courgette-cristel-1-of-3.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez personnaliser la recette en ajoutant d'autres l\u00e9gumes de saison ou en ajustant la quantit\u00e9 de piment.",
+      "Vous pouvez utiliser les nouilles de votre choix (ex: nouilles de riz). Cuisez-les selon les instructions du paquet.",
+      "La sauce yakitori utilis\u00e9e est vegan."
+    ],
+    "slug": "nouilles-sautees-pimentees-a-la-courgette",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Nouilles-sautees-courgette-cristel-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/09/25/nouilles-sautees-pimentees-a-la-courgette/",
+    "image": "images/nouilles-sautees-pimentees-a-la-courgette.webp",
+    "createdAt": "2026-02-09T21:57:54.585689",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 14.0,
+    "totalCookingTime": 14.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 437.4,
+      "protein": 12.9,
+      "fat": 19.2,
+      "carbs": 54.9,
+      "fiber": 3.9,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "shallot",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgette",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "scallions",
+      "name": "c\u00e9bettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "scallions"
+    },
+    {
+      "id": "noodles",
+      "name": "nouilles aux oeufs ou nouilles de riz",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg noodles or rice noodles"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "tamari_soy_sauce",
+      "name": "sauce soja tamari",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "yakitori_sauce",
+      "name": "sauce yakitori",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "teriyaki sauce"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "chili_flakes",
+      "name": "flocons de piment",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Chili flakes"
+    }
+  ],
+  "tools": [
+    "Wok"
+  ],
+  "steps": [
+    {
+      "id": "slice_shallot",
+      "action": "\u00c9mincez l'\u00e9chalote dans la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallot"
+      ],
+      "produces": "sliced_shallot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "Coupez la courgette et les c\u00e9bettes en petits b\u00e2tonnets.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "zucchini",
+        "scallions"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_noodles",
+      "action": "Faites cuire les nouilles en suivant les instructions du paquet et r\u00e9servez-les dans de l'eau froide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "noodles"
+      ],
+      "produces": "cooked_noodles_in_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_sauce",
+      "action": "Dans un bol, m\u00e9langez les ingr\u00e9dients de la sauce (sauce soja tamari, sauce yakitori, vinaigre de riz, flocons de piment). R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "tamari_soy_sauce",
+        "yakitori_sauce",
+        "rice_vinegar",
+        "chili_flakes"
+      ],
+      "produces": "sauce_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_wok",
+      "action": "Faites chauffer votre wok et versez-y l'huile de tournesol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sunflower_oil"
+      ],
+      "produces": "hot_oiled_wok",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallot",
+      "action": "Faites revenir les \u00e9chalotes pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_shallot",
+        "hot_oiled_wok"
+      ],
+      "produces": "sauteed_shallot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_zucchini_scallions",
+      "action": "Ajoutez les courgettes et la partie blanche des c\u00e9bettes. Faites revenir en remuant constamment pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_vegetables",
+        "sauteed_shallot"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_noodles_sauce",
+      "action": "Egouttez bien les nouilles et ajoutez-les au wok avec la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_noodles_in_water",
+        "sauce_mix",
+        "sauteed_vegetables"
+      ],
+      "produces": "noodles_with_sauce_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "stir_fry_noodles",
+      "action": "Faites revenir encore 4min en remuant constamment.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "noodles_with_sauce_vegetables"
+      ],
+      "produces": "stir_fried_noodles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_scallion_greens",
+      "action": "Ajoutez le vert des c\u00e9bettes. Servez imm\u00e9diatement !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "stir_fried_noodles",
+        "cut_vegetables"
+      ],
+      "produces": "nouilles_sautees_courgette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "nouilles_sautees_courgette",
+  "originalText": "Nouilles saut\u00e9es piment\u00e9es \u00e0 la courgette - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 septembre 2023\nNouilles saut\u00e9es piment\u00e9es \u00e0 la courgette\nAll\u00e9, encore une petite recette avec de la courgette avant que la saison ne se termine : les Nouilles saut\u00e9es piment\u00e9es \u00e0 la courgette.\nSi vous \u00eates un amateur de saveurs asiatiques et de piment, ces nouilles saut\u00e9es devraient vous plaire ! Cette recette combine la chaleur du piment avec la fra\u00eecheur de la courgette. Et c\u2019est pas mal du tout !\nCe que j\u2019aime particuli\u00e8rement avec cette recette, c\u2019est sa simplicit\u00e9. Elle peut \u00eatre pr\u00e9par\u00e9e en un rien de temps, ce qui en fait une option id\u00e9ale pour un d\u00eener en semaine rapide et d\u00e9licieux. Vous pouvez \u00e9galement personnaliser la recette en ajoutant d\u2019autres l\u00e9gumes de saison ou en ajustant la quantit\u00e9 de piment selon votre pr\u00e9f\u00e9rence en mati\u00e8re de piquant.\nEn l\u2019occurrence, ici, j\u2019ai utilis\u00e9 des courgettes, de l\u2019\u00e9chalote et des c\u00e9bettes. Et des nouilles aux \u0153ufs. Mais vous pouvez utiliser les nouilles de votre choix. Au riz par exemple. De toute fa\u00e7on, elles doivent cuire s\u00e9par\u00e9ment. Et \u00eatre r\u00e9serv\u00e9es dans de l\u2019eau froide jusqu\u2019\u00e0 ce que vous les incorporiez dans votre wok. Vous pouvez donc utiliser celles qui vous plaisent le plus et les cuire en suivant les instructions du paquet.\nConcernant la sauce, j\u2019ai eu envie de changer un peu de mon\nChow Mein classique\n. J\u2019ai utilis\u00e9 de la sauce yakitori dans cette recette. Cette sauce a l\u2019avantage d\u2019\u00eatre vegan. Contrairement \u00e0 beaucoup de sauces g\u00e9n\u00e9ralement utilis\u00e9es dans la cuisine asiatique. Comme la sauce d\u2019hu\u00eetre ou la sauce poisson, etc.. Voil\u00e0, maintenant vous savez tout sur ces Nouilles saut\u00e9es piment\u00e9es \u00e0 la courgette.\nEt si vous voulez d\u2019autres id\u00e9es pour utiliser votre sauce yakitori, je vous conseille\nces brochettes\n!\nNouilles saut\u00e9es piment\u00e9es \u00e0 la courgette\n4.44\n/5 avec\n97\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les nouilles\n1\n\u00e9chalote\n1\ncourgette\n2\nc\u00e9bettes\n120\ng\nde nouilles aux oeufs ou de nouilles de riz\n2\nc\u00e0s huile de tournesol\nPour la sauce\n3\nc\u00e0s de sauce soja tamari\n1\nc\u00e0s de sauce yakitori\n1\nc\u00e0s de vinaigre de riz\n\u00bd\nc\u00e0c de flocons de piment\nInstructions\n\u00c9mincez l\u2019\u00e9chalote dans la longueur.\nCoupez la courgette et les c\u00e9bettes en petits b\u00e2tonnets.\nFaites cuire les nouilles en suivant les instructions du paquet et r\u00e9servez-les dans de l\u2019eau froide.\nDans un bol, m\u00e9langez les ingr\u00e9dients de la sauce. R\u00e9servez.\nFaites chauffer votre wok et versez-y l\u2019huile.\nFaites d\u2019abord revenir les \u00e9chalotes, 4-5min. Puis ajoutez les courgettes et la partie blanche des c\u00e9bettes. Faites revenir en remuant constamment 4-5min.\nEgouttez bien les nouilles et ajoutez-les au wok avec la sauce.\nFaites revenir encore 3-4min en remuant constamment.\nAjoutez le vert des c\u00e9bettes. Servez imm\u00e9diatement !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nTags:\ncourgette\n,\nnouilles piment\u00e9es\n,\nnouilles saut\u00e9es\n,\nrecette asiatique\nGyros aux pleurotes sauce tahini et miel\nKolokithopita (feuillet\u00e9 grec \u00e0 la courgette)\n2 thoughts on \u201cNouilles saut\u00e9es piment\u00e9es \u00e0 la courgette\u201d\nManu\ndit\u00a0:\n25 septembre 2023 \u00e0 17 h 06 min\nSalut !\nvous avez une marque de sauces chinoises \u00e0 recommander ? Sauvent je rechigne un peu \u00e0 me rendre dans des magasins sp\u00e9s pour acheter des produits import\u00e9s du bout du monde \ud83d\ude41\nMerci !\nManu\nchargement\u2026\nR\u00e9pondre\nElodie F\ndit\u00a0:\n27 septembre 2023 \u00e0 13 h 49 min\nMerci pour cette recette. Simple, rapide, efficace. Nous nous sommes r\u00e9gal\u00e9s !!\nchargement\u2026\nR\u00e9pondre\n4.44 from 97 votes (\n96 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

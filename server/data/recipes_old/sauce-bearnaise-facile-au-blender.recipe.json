@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "title": "Sauce b\u00e9arnaise facile au blender",
+    "description": "Cette sauce b\u00e9arnaise facile au blender a chang\u00e9 ma vie ! Rien que \u00e7a ! Bon j'exag\u00e8re un peu. Mais j'adore cette sauce et je suis trop heureuse d'avoir trouv\u00e9 une fa\u00e7on de la pr\u00e9parer facilement.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "b\u00e9arnaise facile",
+      "b\u00e9arnaise mixeur",
+      "estragon",
+      "sauce b\u00e9arnaise",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Bearnaise-2-of-2.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Consommer la tout de suite, ou dans les 24h (\u00e0 conserver au frigo).",
+      "Si elle devient trop dure, faites-la r\u00e9chauffer au bain-marie."
+    ],
+    "slug": "sauce-bearnaise-facile-au-blender",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/09/Bearnaise-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/09/02/sauce-bearnaise-facile-au-blender/",
+    "image": "images/sauce-bearnaise-facile-au-blender.webp",
+    "createdAt": "2026-02-09T21:30:46.406275",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 4.166666666666667,
+    "totalCookingTime": 0.16666666666666666,
+    "nutritionPerServing": {
+      "calories": 1530.7,
+      "protein": 31.2,
+      "fat": 145.1,
+      "carbs": 19.6,
+      "fiber": 1.9,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallots",
+      "name": "\u00e9chalotes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9es finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "tarragon",
+      "name": "estragon",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "tarragon"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc sec",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dry white wine"
+    },
+    {
+      "id": "white_vinegar",
+      "name": "vinaigre blanc",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "White vinegar"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "egg_yolks",
+      "name": "jaunes d'\u0153uf",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg yolks"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Blender ou mixeur (avec ouverture pour verser en filet)",
+    "Petite casserole",
+    "Chinois"
+  ],
+  "steps": [
+    {
+      "id": "mince_shallots_tarragon",
+      "action": "\u00c9mincer finement les 2 \u00e9chalotes et la moiti\u00e9 de l'estragon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallots",
+        "tarragon"
+      ],
+      "produces": "minced_shallots_tarragon",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduce_wine_vinegar_mixture",
+      "action": "Mettre les \u00e9chalotes et l'estragon \u00e9minc\u00e9s dans une petite casserole avec le vin et le vinaigre. Porter \u00e0 \u00e9bullition et baisser le feu. Laisser r\u00e9duire de moiti\u00e9, voire un peu plus.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "minced_shallots_tarragon",
+        "white_wine",
+        "white_vinegar"
+      ],
+      "produces": "reduced_wine_vinegar_mixture",
+      "requires": [],
+      "visualCue": "r\u00e9duit de moiti\u00e9"
+    },
+    {
+      "id": "melt_butter",
+      "action": "Faire fondre le beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "strain_mixture",
+      "action": "Passer le m\u00e9lange d'\u00e9chalote au chinois en pressant bien pour r\u00e9cup\u00e9rer un maximum de liquide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "reduced_wine_vinegar_mixture"
+      ],
+      "produces": "strained_liquid",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_liquid_egg_yolks",
+      "action": "Verser le liquide dans le mixeur ou blender avec les jaunes d'\u0153ufs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "strained_liquid",
+        "egg_yolks"
+      ],
+      "produces": "liquid_egg_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emulsify_with_butter",
+      "action": "Mettre le blender en marche \u00e0 puissance forte pendant une dizaine de secondes. En laissant le blender en marche, verser petit \u00e0 petit le beurre fondu.",
+      "duration": "PT10S",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "liquid_egg_mixture",
+        "melted_butter",
+        "salt",
+        "pepper"
+      ],
+      "produces": "emulsified_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_remaining_tarragon",
+      "action": "Ajouter le reste des feuilles d'estragon et mixer une derni\u00e8re fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "emulsified_sauce",
+        "tarragon"
+      ],
+      "produces": "sauce_with_tarragon",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "thicken_sauce",
+      "action": "Laisser la sauce \u00e9paissir en refroidissant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_with_tarragon"
+      ],
+      "produces": "thickened_bearnaise_sauce",
+      "requires": [],
+      "visualCue": "\u00e9paissie"
+    }
+  ],
+  "finalState": "thickened_bearnaise_sauce",
+  "originalText": "Sauce b\u00e9arnaise facile au blender - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 septembre 2022\nSauce b\u00e9arnaise facile au blender\nAller \u00e0 la recette\nCette sauce b\u00e9arnaise facile au blender a chang\u00e9 ma vie ! Rien que \u00e7a ! Bon j\u2019exag\u00e8re un peu. Mais j\u2019adore cette sauce et je suis trop heureuse d\u2019avoir trouv\u00e9 une fa\u00e7on de la pr\u00e9parer facilement.\nUn peu comme pour\nla sauce hollandaise\n.\nC\u2019est le type de sauce que je ne mange habituellement qu\u2019au resto. Et en g\u00e9n\u00e9ral, elle est plut\u00f4t propos\u00e9e avec des plats carn\u00e9s. Mais elle est aussi tr\u00e8s bien avec des l\u00e9gumes vapeur ! J\u2019adore !\nEnfin bon, comme toutes ces sauces qu\u2019on est cens\u00e9 faire au bain-marie, j\u2019avais la flemme. Et peur de rater. D\u2019avoir perdu mon temps. D\u2019\u00eatre d\u00e9\u00e7ue. Tout \u00e7a.\nMais avec cette technique, honn\u00eatement c\u2019est magique !\nIl suffit de pr\u00e9parer la base. A savoir, une r\u00e9duction d\u2019\u00e9chalotte, estragon, vin blanc et vinaigre. Des jaunes d\u2019oeuf. Et ensuite, litt\u00e9ralement, on ne peut pas faire plus simple. On met le blender en marche. Et on verse le beurre fondu chaud. En un rien de temps, la sauce va commencer \u00e0 \u00e9paissir. Il suffit ensuite d\u2019ajouter encore un peu d\u2019estragon. De laisser cette petite sauce b\u00e9arnaise facile au blender refroidir. Et voil\u00e0. Aucun besoin de ma\u00eetriser des gestes techniques. Ou d\u2019avoir du mat\u00e9riel de folie. Juste un blender, ou un mixeur. Il faut seulement pouvoir verser le beurre fondu en filet continu. Donc un mixeur avec une ouverture !\nQui a envie de tester ?\nSauce b\u00e9arnaise facile au blender\n4.60\n/5 avec\n40\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n5\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n2\n\u00e9chalotes\n3\nbranches d\u2019estragon\n50\nml\nde vin blanc sec\n50\nml\nde vinaigre blanc\n120\ng\nde beurre\n3\njaunes d\u2019\u0153uf\nsel\npoivre\nInstructions\n\u00c9mincer finement les 2 \u00e9chalotes et la moiti\u00e9 de l\u2019estragon.\nLes mettre dans une petite casserole avec le vin et le vinaigre. Porter \u00e0 \u00e9bullition et baisser le feu. Laisser r\u00e9duire de moiti\u00e9, voire un peu plus, env 3-4 min.\nFaire fondre le beurre.\nPasser le m\u00e9lange d\u2019\u00e9chalote au chinois en pressant bien pour r\u00e9cup\u00e9rer un maximum de liquide.\nLe verser dans votre mixeur ou blender avec les jaunes d\u2019\u0153ufs.\nLe mettre en marche \u00e0 puissance forte pendant une dizaine de secondes. En laissant le blender en marche, verser petit \u00e0 petit le beurre fondu.\nAjouter la fin des feuilles d\u2019estragon et mixer une derni\u00e8re fois.\nLa sauce va \u00e9paissir en refroidissant. Consommer la tout de suite, ou dans les 24h (\u00e0 conserver au frigo).\nSi elle devient trop dure, faites-la r\u00e9chauffer au bain-marie.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nb\u00e9arnaise facile\n,\nb\u00e9arnaise mixeur\n,\nestragon\n,\nsauce b\u00e9arnaise\nB\u00e2tonnets glac\u00e9s p\u00eache coco et fruits rouges\nFeta pan\u00e9e au s\u00e9same\n4.60 from 40 votes (\n40 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.16666666666666666
+}

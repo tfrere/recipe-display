@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "title": "Mocktail rafra\u00eechissant Sober Rum Concombre",
+    "description": "Un mocktail frais et hydratant \u00e0 base de concombre et de Sober Rum, parfait pour l'ap\u00e9ro sans alcool.",
+    "servings": 3,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "drink",
+    "tags": [
+      "mocktail",
+      "sans alcool",
+      "concombre",
+      "rafra\u00eechissant",
+      "ap\u00e9ritif",
+      "boisson"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Mocktail-concombre-Sober-Rhum-2-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le Sober Rum peut \u00eatre remplac\u00e9 par du rhum brun classique.",
+      "D\u00e9guster bien frais !"
+    ],
+    "slug": "mocktail-rafraichissant-sober-rum-concombre",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Mocktail-concombre-Sober-Rhum-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/17/mocktail-rafraichissant-sober-rum-concombre/",
+    "image": "images/mocktail-rafraichissant-sober-rum-concombre.jpg",
+    "createdAt": "2026-02-09T21:15:36.819195",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 86.5,
+      "protein": 0.8,
+      "fat": 0.1,
+      "carbs": 4.9,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 5,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 350g",
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "lime",
+      "name": "citron vert",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lime"
+    },
+    {
+      "id": "orgeat_syrup",
+      "name": "sirop d'orgeat",
+      "quantity": 6.0,
+      "unit": "cl",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "orgeat syrup"
+    },
+    {
+      "id": "sober_rum",
+      "name": "sober rum",
+      "quantity": 9.0,
+      "unit": "cl",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rum"
+    },
+    {
+      "id": "sparkling_water",
+      "name": "eau p\u00e9tillante",
+      "quantity": null,
+      "unit": null,
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sparkling water"
+    },
+    {
+      "id": "ice_cubes",
+      "name": "gla\u00e7ons",
+      "quantity": null,
+      "unit": null,
+      "category": "other",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ice cubes"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Torchon propre",
+    "\u00c9conome ou mandoline (pour la d\u00e9coration)"
+  ],
+  "steps": [
+    {
+      "id": "peel_cucumber",
+      "action": "Peler le concombre. Garder \u00e9ventuellement quelques rubans de concombre pour la d\u00e9coration.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber"
+      ],
+      "produces": "peeled_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dice_cucumber",
+      "action": "Couper le reste du concombre en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_cucumber"
+      ],
+      "produces": "diced_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_cucumber",
+      "action": "Bien mixer le concombre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_cucumber"
+      ],
+      "produces": "cucumber_pulp",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "strain_cucumber",
+      "action": "Passer la bouillie de concombre dans un torchon propre pour s\u00e9parer le jus et la pulpe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber_pulp"
+      ],
+      "produces": "cucumber_juice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "juice_lime",
+      "action": "Presser le citron vert.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lime"
+      ],
+      "produces": "lime_juice",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_syrup_rum",
+      "action": "M\u00e9langer le sirop d'orgeat et le sober rhum.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "orgeat_syrup",
+        "sober_rum"
+      ],
+      "produces": "syrup_rum_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "divide_mix",
+      "action": "R\u00e9partir le m\u00e9lange dans 3 verres.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "syrup_rum_mix"
+      ],
+      "produces": "divided_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_ice",
+      "action": "Ajouter beaucoup de gla\u00e7ons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ice_cubes",
+        "divided_mix"
+      ],
+      "produces": "iced_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_juices_and_water",
+      "action": "R\u00e9partir le jus de citron et le jus de concombre puis compl\u00e9ter avec de l'eau p\u00e9tillante.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "iced_mix",
+        "lime_juice",
+        "cucumber_juice",
+        "sparkling_water"
+      ],
+      "produces": "assembled_mocktail",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster bien frais !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_mocktail"
+      ],
+      "produces": "mocktail_sober_rum_concombre",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "mocktail_sober_rum_concombre",
+  "originalText": "Mocktail rafra\u00eechissant Sober Rum Concombre - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n17 mai 2022\nMocktail rafra\u00eechissant Sober Rum Concombre\nHello, avec la chaleur du jour, je vous propose ce Mocktail rafra\u00eechissant Sober Rum Concombre !\nTable des mati\u00e8res\n1\nLes \u00ab\u00a0alcools sans alcool\u00a0\u00bb\n2\nSober Spirits\n3\nMocktail rafra\u00eechissant Sober Rum Concombre\nLes \u00ab\u00a0alcools sans alcool\u00a0\u00bb\nVous connaissez les alcools sans alcool ? J\u2019ai d\u00e9couvert le concept lors de ma grossesse. Vous savez, ce moment tout le monde prend l\u2019ap\u00e9ro, et on vous propose un jus de fruit, ou une eau gazeuse. C\u2019est sympa. Mais \u00e7a peut \u00eatre frustrant de temps en temps. On a envie de retrouver le go\u00fbt. Mais sans l\u2019alcool.\nDu coup, je trouve le concept pas mal du tout ! Pour les femmes enceintes. Mais aussi pour ceux qui souhaitent arr\u00eater ou limiter leur consommation d\u2019alcool. Tout en gardant le go\u00fbt de leur cocktail ou ap\u00e9ro pr\u00e9f\u00e9r\u00e9 !\u00a0En plus, sachez que ces spiritueux sont bien plus faibles en calorie !\nSober Spirits\nAlors, quand\nSober Spirit\nm\u2019a propos\u00e9 de collaborer avec eux. Et de d\u00e9couvrir leur Sober Rum et leur Sober Gin, je dois avouer que j\u2019ai \u00e9t\u00e9 tr\u00e8s curieuse.\nMa principale question : est-ce que leurs spiritueux sans alcool allaient vraiment faire l\u2019illusion ?\nEt bien, la r\u00e9ponse est oui ! Ils utilisent une m\u00e9thode de fabrication super \u00e9labor\u00e9e, qui leur permet d\u2019extraire le go\u00fbt de l\u2019alcool. Sans l\u2019alcool. Et c\u2019est vraiment bluffant. En effet, il suffit de d\u00e9boucher une bouteille de Sober Rum pour s\u2019en rendre compte. L\u2019odeur est caract\u00e9ristique du rhum. Et appelle aux cocktails !\nVous pouvez d\u00e9couvrir\nleurs techniques de fabrication ici.\nComme je suis plus Rhum que Gin, j\u2019ai d\u00e9cid\u00e9 de cr\u00e9er une recette de Mocktail rafra\u00eechissant Sober Rum Concombre. Avec, en t\u00eate, avant tout, LA FRA\u00ceCHEUR. Parce qu\u2019on en a bien besoin en ce moment. En plus, le concombre dans un cocktail, perso, j\u2019adore ! C\u2019est frais et hydratant. Avec un go\u00fbt v\u00e9g\u00e9tal et d\u00e9licat.\nEt si vous cherchez d\u2019autres inspirations, vous pouvez d\u00e9couvrir\ntoutes les recettes de cocktails sans alcool de Sober Spirits ici.\nVous pouvez retrouver leur boutique en ligne ici.\nQui tente le Mocktail rafra\u00eechissant Sober Rum Concombre ?\nBon ap\u00e9ro les amis !\nMocktail rafra\u00eechissant Sober Rum Concombre\nNatacha\n4.53\n/5 avec\n119\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nPortions\n3\nverres\nIngr\u00e9dients\n1x\n2x\n3x\n1\nconcombre\nenv 350g\nle jus d\u2019un citron vert\n6\ncl\nde sirop d\u2019orgeat\n9\ncl\nde sober rum\nou rhum brun classique\nde l\u2019eau p\u00e9tillante\ndes gla\u00e7ons\nInstructions\nPeler le concombre. Garder \u00e9ventuellement quelques rubans de concombre pour la d\u00e9coration. Vous pouvez utiliser un \u00e9conome ou une mandoline.\nCouper le reste du concombre en d\u00e9s. Bien mixer le concombre. Passer la bouillie de concombre dans un torchon propre pour s\u00e9parer le jus et la pulpe.\nPresser le citron vert.\nM\u00e9langer le sirop d\u2019orgeat et le sober rhum.\nR\u00e9partir dans 3 verres.\nAjouter beaucoup de gla\u00e7ons.\nR\u00e9partir le jus de citron et le jus de concombre puis compl\u00e9ter avec de l\u2019eau p\u00e9tillante.\nD\u00e9guster bien frais !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nNon class\u00e9\nBabka de P\u00e2ques\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\n1 thought on \u201cMocktail rafra\u00eechissant Sober Rum Concombre\u201d\nMarie-Laure\ndit\u00a0:\n17 mai 2022 \u00e0 16 h 32 min\nBonjour,\nCe cocktail a l\u2019air d\u00e9licieux et ultra rafra\u00eechissant ! Je vais commander le sober rum de suite.\nJe sui une adepte de votre site depuis plusieurs ann\u00e9es, j\u2019en profite d\u2019ailleurs pour vous dire que j\u2019ai fait hier la tarte aux oignons et ch\u00e8vre et c\u2019est un vrai r\u00e9gal.\nDe m\u00eame que la brioche vegan en hiver\u2026.\nUn grand merci \u00e0 vous pour nous faire partager toutes ces merveilleuses recettes.\nchargement\u2026\nR\u00e9pondre\n4.53 from 119 votes (\n118 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

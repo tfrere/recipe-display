@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "title": "Champignons farcis au Saint-Nectaire",
+    "description": "Ces petits champignons farcis au Saint-Nectaire sont une id\u00e9e originale. Parfait pour un ap\u00e9ro d'hiver. Ils rappellent un peu le go\u00fbt des escargots au beurre persill\u00e9.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "champignon",
+      "saint nectaire",
+      "automne",
+      "hiver",
+      "\u00e9t\u00e9",
+      "printemps",
+      "ap\u00e9ro",
+      "accompagnement"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Champignons-farcis-St-Nectaire-3-of-4.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfait pour un ap\u00e9ro d'hiver.",
+      "Ils rappellent un peu le go\u00fbt des escargots au beurre persill\u00e9.",
+      "La chapelure permet d'absorber l'eau tout en participant \u00e0 la texture.",
+      "Servir imm\u00e9diatement !",
+      "Pour ceux qui aiment cette association, je vous conseille ces mini tourtes !"
+    ],
+    "slug": "champignons-farcis-au-saint-nectaire",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/01/Champignons-farcis-St-Nectaire-3-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/01/07/champignons-farcis-au-saint-nectaire/",
+    "image": "images/champignons-farcis-au-saint-nectaire.jpg",
+    "createdAt": "2026-02-09T21:44:30.204855",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 75.0,
+    "totalCookingTime": 30.0,
+    "nutritionPerServing": {
+      "calories": 135.3,
+      "protein": 7.9,
+      "fat": 10.1,
+      "carbs": 4.1,
+      "fiber": 1.3,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "champignons_de_paris",
+      "name": "champignons de Paris",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "pas trop petits de pr\u00e9f\u00e9rence",
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "echalote",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9e",
+      "notes": "grosse",
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "persil",
+      "name": "persil",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": "branches",
+      "optional": false,
+      "name_en": "parsley"
+    },
+    {
+      "id": "chapelure",
+      "name": "chapelure",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "chapelure_saupoudrer",
+      "name": "chapelure",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 saupoudrer",
+      "optional": false,
+      "name_en": "Breadcrumbs"
+    },
+    {
+      "id": "saint_nectaire",
+      "name": "Saint-Nectaire",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Saint-Nectaire cheese"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Petite po\u00eale",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "remove_stems",
+      "action": "\u00d4ter le pied des champignons.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "champignons_de_paris"
+      ],
+      "produces": "champignon_caps_and_stems",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mince_ingredients",
+      "action": "\u00c9mincer l'\u00e9chalote et les pieds de champignons.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "echalote",
+        "champignon_caps_and_stems"
+      ],
+      "produces": "minced_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Les faire revenir \u00e0 feu moyen dans une petite po\u00eale avec l'huile d'olive.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "minced_vegetables",
+        "huile_dolive"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic",
+      "action": "Ajouter l'ail press\u00e9 et laisser revenir une dizaine de minutes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "ail"
+      ],
+      "produces": "garlic_vegetable_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_stuffing",
+      "action": "Hors du feu, ajouter le persil hach\u00e9 et la chapelure. Saler et poivrer. Bien m\u00e9langer.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "garlic_vegetable_mixture",
+        "persil",
+        "chapelure",
+        "sel",
+        "poivre"
+      ],
+      "produces": "persil_stuffing",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 175\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 175,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_mushrooms",
+      "action": "D\u00e9poser les champignons sur une plaque de cuisson et les remplir de m\u00e9lange persill\u00e9.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "champignon_caps_and_stems",
+        "persil_stuffing"
+      ],
+      "produces": "filled_mushrooms",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cheese_and_breadcrumbs",
+      "action": "D\u00e9poser un carr\u00e9 de Saint-Nectaire sur chaque champignon et saupoudrer un peu de chapelure.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "filled_mushrooms",
+        "saint_nectaire",
+        "chapelure_saupoudrer"
+      ],
+      "produces": "cheese_topped_mushrooms",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfourner 25min.",
+      "duration": "PT25M",
+      "temperature": 175,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cheese_topped_mushrooms"
+      ],
+      "produces": "baked_stuffed_mushrooms",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir imm\u00e9diatement !",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_stuffed_mushrooms"
+      ],
+      "produces": "champignons_farcis_saint_nectaire",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "champignons_farcis_saint_nectaire",
+  "originalText": "Champignons farcis au Saint-Nectaire - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n7 janvier 2023\nChampignons farcis au Saint-Nectaire\nAller \u00e0 la recette\nCes petits champignons farcis au Saint-Nectaire sont une id\u00e9e originale. Parfait pour un ap\u00e9ro d\u2019hiver. Ils rappellent un peu le go\u00fbt des escargots au beurre persill\u00e9.\nJ\u2019aime bien ce genre de recette. Assez simple. Avec une liste d\u2019ingr\u00e9dients r\u00e9duite et accessible.\nJe n\u2019ai jamais compris les gens qui ne mangent pas les pieds des champignons. Et encore moins ceux qui les \u00e9pluchent. Si vous connaissez les raisons qui se cachent derri\u00e8re ces comportements je suis curieuse !\nToujours est-il que j\u2019ai enlev\u00e9 les pieds des champignons pour pouvoir les farcir. Mais pas de g\u00e2chis. Je les ai utilis\u00e9s pour la farce. Avec de l\u2019ail et du persil. M\u00e9lange tr\u00e8s simple mais qui fait toujours son effet !\nEt ensuite, j\u2019ai ajout\u00e9 un peu de chapelure. La raison ? C\u2019est que les champignons sont gorg\u00e9s d\u2019eau. Et en cuisant au four, ils risquent de rejeter de l\u2019eau. Et on peut alors se retrouver avec une garniture d\u00e9tremp\u00e9e. La chapelure permet d\u2019absorber l\u2019eau tout en participant \u00e0 la texture.\nEt finalement. Touche finale. Et pas des moindres. Un joli morceau de Saint-Nectaire qui est gratin\u00e9 avec un peu de chapelure.\nTrop bon ces petits champignons farcis au Saint-Nectaire ! Et pour ceux qui aiment cette association, je vous conseille\nces mini tourtes\n!\nChampignons farcis au Saint-Nectaire\n4.48\n/5 avec\n120\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde champignons de Paris\npas trop petits de pr\u00e9f\u00e9rence\n1\ngrosse \u00e9chalote \u00e9minc\u00e9e\n1\nc\u00e0s d\u2019huile d\u2019olive\n1\ngousse d\u2019ail press\u00e9e\n4\nbranches de persil hach\u00e9\n1\nc\u00e0s de chapelure\net un peu plus \u00e0 saupoudrer\n150\ng\nde Saint-Nectaire\nInstructions\n\u00d4ter le pied des champignons.\n\u00c9mincer l\u2019\u00e9chalote et les pieds de champignons.\nLes faire revenir \u00e0 feu moyen dans une petite po\u00eale avec l\u2019huile d\u2019olive.\nAjouter l\u2019ail press\u00e9 et laisser revenir une dizaine de minutes.\nHors du feu, ajouter le persil hach\u00e9 et la chapelure. Saler et poivrer. Bien m\u00e9langer.\nPr\u00e9chauffer le four \u00e0 175\u00b0C.\nD\u00e9poser les champignons sur une plaque de cuisson et les remplir de m\u00e9lange persill\u00e9.\nD\u00e9poser un carr\u00e9 de Saint-Nectaire sur chaque champignons et saupoudrer un peu de chapelure.\nEnfourner 25min.\nServir imm\u00e9diatement !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nAutomne\n,\nChampignon\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nchampignon\n,\nsaint nectaire\nPancakes Cor\u00e9ens aux l\u00e9gumes\nPur\u00e9e de c\u00e9leri rave et fricass\u00e9 de champignons\n2 thoughts on \u201cChampignons farcis au Saint-Nectaire\u201d\nLadyMilonguera\ndit\u00a0:\n7 janvier 2023 \u00e0 19 h 21 min\nTr\u00e8s sympathiques ces champignons farcis !\nchargement\u2026\nR\u00e9pondre\nPatricia\ndit\u00a0:\n29 mars 2025 \u00e0 23 h 43 min\nC\u2019est beau, c\u2019est bon, et si vite fait  !\nMerci pour cette chouette recette que j\u2019ai servie en accompagnement d\u2019un \u00e9minc\u00e9 de poulet\u2026\nchargement\u2026\nR\u00e9pondre\n4.48 from 120 votes (\n118 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 30.0
+}

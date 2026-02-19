@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "title": "minestrone",
+    "description": "Une soupe italienne traditionnelle aux légumes, haricots blancs et pâtes, mijotée longuement pour développer les saveurs.",
+    "servings": 5,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H30M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe",
+      "italien",
+      "légumes",
+      "haricots",
+      "pâtes",
+      "minestrone"
+    ],
+    "imageUrl": "temp_image_recipe-gen-20260208054702-b1e7c0a6.png",
+    "nationality": "Italian",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Servir avec du parmesan râpé sur le dessus.",
+      "Le minestrone se conserve bien plusieurs jours au réfrigérateur."
+    ],
+    "slug": "minestrone",
+    "sourceImageUrl": "minestrone.png",
+    "originalContent": "minestrone\n\n\nTemps total : minimum 2h\nTemps de préparation : 30 min\nTemps de cuisson : 1h30\n\nPour 4-6 personnes\n\nIngrédients :\n\n- 1 oignon\n- 2 carottes\n- 1 gros navet\n- 2 courgettes\n- 250g d’haricots blancs\n- 2 pommes de terre\n- 1 branche de céleri\n- Pâtes ditali ou coquillettes\n- (Parmesan)\n- Un peu de ras el-hanout\n\nPréparation :\n\n- Faire tremper les haricots la veille\n- Émincer très finement l'oignon\n- Couper tous les légumes en petits cubes\n- Dans une grande casserole faire revenir les oignons dans de l'huile d'olive\n- Ajouter les légumes un par un dans cet ordre : carottes, navets, céleri, pommes de terre, courgettes\n- Couvrir d'eau si besoin et ajouter les haricots\n- Ajouter le talon du parmesan\n- Laisser mijoter à feu doux (2 heures)\n- Lorsque tout est cuit et suivant le nombre de convives, mettre une partie de la soupe dans une casserole et ajouter les pâtes afin qu'elles cuisent dedans, garder le reste pour les autres jours\n\n\nMain recipe image: temp_image_recipe-gen-20260208054702-b1e7c0a6.png",
+    "createdAt": "2026-02-08T05:47:58.438042",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring"
+    ],
+    "totalTime": 899.0,
+    "totalCookingTime": 59.0,
+    "image": "images/minestrone.png",
+    "nutritionPerServing": {
+      "calories": 280.6,
+      "protein": 15.5,
+      "fat": 0.9,
+      "carbs": 55.4,
+      "fiber": 16.9,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 10,
+      "totalIngredients": 10,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ],
+    "peakMonths": [
+      "April",
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé très finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupés en petits cubes",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "turnip",
+      "name": "navet",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé en petits cubes",
+      "notes": "gros",
+      "optional": false,
+      "name_en": "turnip"
+    },
+    {
+      "id": "zucchini",
+      "name": "courgettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées en petits cubes",
+      "notes": null,
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "white_beans",
+      "name": "haricots blancs",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "trempés la veille",
+      "notes": null,
+      "optional": false,
+      "name_en": "White beans"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupées en petits cubes",
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "celery",
+      "name": "céleri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coupé en petits cubes",
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "pasta",
+      "name": "pâtes ditali ou coquillettes",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "quantité selon le nombre de convives",
+      "optional": false,
+      "name_en": "Ditalini or small shell pasta"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "talon ou râpé",
+      "optional": true,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "ras_el_hanout",
+      "name": "ras el-hanout",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "un peu",
+      "optional": false,
+      "name_en": "Ras el hanout"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour faire revenir",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour couvrir les légumes",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "grande casserole"
+  ],
+  "steps": [
+    {
+      "id": "soak_beans",
+      "action": "Faire tremper les haricots blancs la veille.",
+      "duration": "PT12H",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "haricots",
+      "uses": [
+        "white_beans"
+      ],
+      "produces": "soaked_beans",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion",
+      "action": "Émincer très finement l'oignon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "légumes",
+      "uses": [
+        "onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "Couper tous les légumes (carottes, navet, courgettes, pommes de terre, céleri) en petits cubes.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "légumes",
+      "uses": [
+        "carrots",
+        "turnip",
+        "zucchini",
+        "potatoes",
+        "celery"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Dans une grande casserole, faire revenir les oignons émincés dans de l'huile d'olive.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "chopped_onion",
+        "olive_oil"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": "translucides"
+    },
+    {
+      "id": "add_vegetables",
+      "action": "Ajouter les légumes coupés un par un dans cet ordre : carottes, navets, céleri, pommes de terre, courgettes. Mélanger après chaque ajout.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "sauteed_onion",
+        "chopped_vegetables"
+      ],
+      "produces": "vegetable_base",
+      "requires": [],
+      "visualCue": "légumes légèrement dorés"
+    },
+    {
+      "id": "add_beans_water",
+      "action": "Couvrir d'eau si besoin et ajouter les haricots blancs trempés.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "vegetable_base",
+        "soaked_beans",
+        "water"
+      ],
+      "produces": "soup_base",
+      "requires": [],
+      "visualCue": "légumes couverts d'eau"
+    },
+    {
+      "id": "add_parmesan_spices",
+      "action": "Ajouter le talon du parmesan et un peu de ras el-hanout.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "soupe",
+      "uses": [
+        "soup_base",
+        "parmesan",
+        "ras_el_hanout"
+      ],
+      "produces": "seasoned_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_soup",
+      "action": "Laisser mijoter à feu doux pendant 2 heures.",
+      "duration": "PT2H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "soupe",
+      "uses": [
+        "seasoned_soup"
+      ],
+      "produces": "cooked_minestrone",
+      "requires": [],
+      "visualCue": "légumes tendres, soupe épaissie"
+    },
+    {
+      "id": "cook_pasta",
+      "action": "Lorsque tout est cuit, mettre une partie de la soupe dans une casserole et ajouter les pâtes afin qu'elles cuisent dedans.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pâtes",
+      "uses": [
+        "cooked_minestrone",
+        "pasta"
+      ],
+      "produces": "minestrone_with_pasta",
+      "requires": [],
+      "visualCue": "pâtes al dente"
+    },
+    {
+      "id": "serve",
+      "action": "Servir le minestrone avec les pâtes, garder le reste pour les autres jours.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "minestrone_with_pasta"
+      ],
+      "produces": "minestrone_final",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "minestrone_final",
+  "originalText": "minestrone\n\n\nTemps total : minimum 2h\nTemps de préparation : 30 min\nTemps de cuisson : 1h30\n\nPour 4-6 personnes\n\nIngrédients :\n\n- 1 oignon\n- 2 carottes\n- 1 gros navet\n- 2 courgettes\n- 250g d’haricots blancs\n- 2 pommes de terre\n- 1 branche de céleri\n- Pâtes ditali ou coquillettes\n- (Parmesan)\n- Un peu de ras el-hanout\n\nPréparation :\n\n- Faire tremper les haricots la veille\n- Émincer très finement l'oignon\n- Couper tous les légumes en petits cubes\n- Dans une grande casserole faire revenir les oignons dans de l'huile d'olive\n- Ajouter les légumes un par un dans cet ordre : carottes, navets, céleri, pommes de terre, courgettes\n- Couvrir d'eau si besoin et ajouter les haricots\n- Ajouter le talon du parmesan\n- Laisser mijoter à feu doux (2 heures)\n- Lorsque tout est cuit et suivant le nombre de convives, mettre une partie de la soupe dans une casserole et ajouter les pâtes afin qu'elles cuisent dedans, garder le reste pour les autres jours\n\n\nMain recipe image: temp_image_recipe-gen-20260208054702-b1e7c0a6.png",
+  "totalCookingTime": 59.0
+}

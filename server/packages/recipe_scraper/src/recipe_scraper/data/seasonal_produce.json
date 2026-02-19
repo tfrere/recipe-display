@@ -1,0 +1,1009 @@
+{
+  "_meta": {
+    "source": "ADEME Impact CO2 (https://impactco2.fr/api/v1/fruitsetlegumes)",
+    "description": "Seasonal availability of fruits and vegetables in France",
+    "license": "Licence Ouverte 2.0 (Etalab)",
+    "last_updated": "2026-02-09"
+  },
+  "year_round_staples": [
+    "lemon", "lime", "orange", "garlic", "onion", "potato", "ginger",
+    "shallot", "sweet potato", "carrot", "celery", "mushroom", "banana"
+  ],
+  "produce": {
+    "vegetables": [
+      {
+        "name": "Artichoke",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Asparagus",
+        "peak_months": [
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      {
+        "name": "Beet",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Beetroot",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Bell Pepper",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Broccoli",
+        "peak_months": [
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Brussels Sprout",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Butternut",
+        "peak_months": [
+          "January",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Cabbage",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Carrot",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Cauliflower",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Celery",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Chard",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Corn",
+        "peak_months": [
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Corn Salad",
+        "peak_months": [
+          "January",
+          "February",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Courgette",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Cucumber",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Eggplant",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Endive",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "October"
+        ]
+      },
+      {
+        "name": "Fennel",
+        "peak_months": [
+          "April",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Garlic",
+        "peak_months": [
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Green Bean",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Jerusalem Artichoke",
+        "peak_months": [
+          "January",
+          "February",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Lamb's Lettuce",
+        "peak_months": [
+          "January",
+          "February",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Leek",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Lettuce",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Mache",
+        "peak_months": [
+          "January",
+          "February",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Mushroom",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Onion",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Parsnip",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Pea",
+        "peak_months": [
+          "May",
+          "June",
+          "July"
+        ]
+      },
+      {
+        "name": "Pepper",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Pumpkin",
+        "peak_months": [
+          "January",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Radish",
+        "peak_months": [
+          "March",
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      {
+        "name": "Rutabaga",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Salsify",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Shallot",
+        "peak_months": [
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Spinach",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Squash",
+        "peak_months": [
+          "January",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Sweet Potato",
+        "peak_months": [
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Tomato",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Turnip",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Watercress",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Zucchini",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Porcini",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Chanterelle",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Morel",
+        "peak_months": [
+          "March",
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      {
+        "name": "Trumpet Mushroom",
+        "peak_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Oyster Mushroom",
+        "peak_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Basil",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Cilantro",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Chive",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Tarragon",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Sorrel",
+        "peak_months": [
+          "April",
+          "May",
+          "June",
+          "July"
+        ]
+      },
+      {
+        "name": "Wild Garlic",
+        "peak_months": [
+          "March",
+          "April",
+          "May"
+        ]
+      },
+      {
+        "name": "Broad Bean",
+        "peak_months": [
+          "May",
+          "June",
+          "July"
+        ]
+      },
+      {
+        "name": "Kohlrabi",
+        "peak_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Celeriac",
+        "peak_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Black Radish",
+        "peak_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Swiss Chard",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Okra",
+        "peak_months": [
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "fruits": [
+      {
+        "name": "Apple",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Apricot",
+        "peak_months": [
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Avocado",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Banana",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Blackberry",
+        "peak_months": [
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Blackcurrant",
+        "peak_months": [
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Blueberry",
+        "peak_months": [
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Cherry",
+        "peak_months": [
+          "June",
+          "July"
+        ]
+      },
+      {
+        "name": "Chestnut",
+        "peak_months": [
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Clementine",
+        "peak_months": [
+          "January",
+          "February",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Coconut",
+        "peak_months": [
+          "January",
+          "February",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Date",
+        "peak_months": [
+          "January",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Fig",
+        "peak_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Grape",
+        "peak_months": [
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Grapefruit",
+        "peak_months": [
+          "February",
+          "March",
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      {
+        "name": "Greengage",
+        "peak_months": [
+          "September"
+        ]
+      },
+      {
+        "name": "Hazelnut",
+        "peak_months": [
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Kiwi",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Lemon",
+        "peak_months": [
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Mandarin",
+        "peak_months": [
+          "January",
+          "February",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Melon",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Nectarine",
+        "peak_months": [
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Orange",
+        "peak_months": [
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Passion Fruit",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Peach",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Pear",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Persimmon",
+        "peak_months": [
+          "January",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Pineapple",
+        "peak_months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Plum",
+        "peak_months": [
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Pomegranate",
+        "peak_months": [
+          "January",
+          "February",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Quince",
+        "peak_months": [
+          "October"
+        ]
+      },
+      {
+        "name": "Raspberry",
+        "peak_months": [
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Redcurrant",
+        "peak_months": [
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Rhubarb",
+        "peak_months": [
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      {
+        "name": "Star Fruit",
+        "peak_months": [
+          "January",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Strawberry",
+        "peak_months": [
+          "May",
+          "June",
+          "July"
+        ]
+      },
+      {
+        "name": "Walnut",
+        "peak_months": [
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Watermelon",
+        "peak_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ]
+  }
+}

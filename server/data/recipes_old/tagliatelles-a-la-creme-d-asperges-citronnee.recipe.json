@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "Tagliatelles à la Crème d'Asperges Citronnée",
+    "description": "Une sauce crémeuse aux asperges vertes et citron pour accompagner des tagliatelles fraîches. Recette simple avec une option végane.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "asperges",
+      "pate aux asperges",
+      "recette asperge végétarienne",
+      "printemps",
+      "citron",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Tagliatelles-creme-asperge-3-of-6-scaled.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La recette peut être veganisée en utilisant de la crème végétale et du parmesan végétal.",
+      "Ne salit qu'une poêle et une casserole.",
+      "Les asperges vertes ont une consistance plus ferme que les blanches."
+    ],
+    "slug": "tagliatelles-a-la-creme-d-asperges-citronnee",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/Tagliatelles-creme-asperge-3-of-6-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/14/tagliatelles-a-la-creme-dasperges-citronnee-avec-option-vegane/",
+    "image": "images/tagliatelles-a-la-creme-d-asperges-citronnee.jpg",
+    "createdAt": "2026-02-09T19:49:53.203677",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 53.0,
+    "totalCookingTime": 38.0,
+    "nutritionPerServing": {
+      "calories": 704.9,
+      "protein": 21.9,
+      "fat": 25.6,
+      "carbs": 98.8,
+      "fiber": 6.3,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ],
+    "peakMonths": [
+      "April",
+      "June",
+      "May"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "asperges_vertes",
+      "name": "asperges vertes",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "une botte",
+      "notes": null,
+      "optional": false,
+      "name_en": "green asparagus"
+    },
+    {
+      "id": "gros_sel",
+      "name": "gros sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "jus_de_citron",
+      "name": "jus de citron",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "creme",
+      "name": "crème",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "végétale ou animale",
+      "optional": false,
+      "name_en": "Heavy cream"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "végétal ou véritable",
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressées",
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "tagliatelles",
+      "name": "tagliatelles fraîches",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fresh tagliatelle"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "preparer_asperges",
+      "action": "Préparer les asperges : les rincer, puis couper la tige dure (environ 4-5cm). Couper les pointes (environ 4cm), et détailler la tige restante en tronçons d'1cm environ. Réserver les pointes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "asperges",
+      "uses": [
+        "asperges_vertes",
+        "gros_sel"
+      ],
+      "produces": "asperges_preparees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_troncons",
+      "action": "Cuire les tronçons à la vapeur jusqu'à ce qu'ils soient bien tendres, environ 10-15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "asperges",
+      "uses": [
+        "asperges_preparees"
+      ],
+      "produces": "troncons_cuits",
+      "requires": [],
+      "visualCue": "bien tendres"
+    },
+    {
+      "id": "mixer_sauce",
+      "action": "Mixer le jus de citron, la crème, le parmesan et les tronçons cuits pour obtenir une sauce crémeuse. Ajuster l'assaisonnement (sel, poivre). Réserver.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "jus_de_citron",
+        "creme",
+        "parmesan",
+        "troncons_cuits",
+        "sel",
+        "poivre"
+      ],
+      "produces": "creme_dasperges",
+      "requires": [],
+      "visualCue": "sauce crémeuse"
+    },
+    {
+      "id": "revenir_pointes",
+      "action": "Faire chauffer l'huile d'olive dans une grande poêle à feu moyen. Faire revenir les pointes d'asperges à couvert pendant environ 10min, jusqu'à ce qu'elles commencent à être tendres.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "asperges",
+      "uses": [
+        "huile_dolive",
+        "asperges_preparees"
+      ],
+      "produces": "pointes_revenues",
+      "requires": [],
+      "visualCue": "commencent à être tendres"
+    },
+    {
+      "id": "ajouter_ail",
+      "action": "Ajouter l'ail grossièrement émincé et laisser cuire encore 2min. Réserver les pointes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "asperges",
+      "uses": [
+        "pointes_revenues",
+        "ail"
+      ],
+      "produces": "pointes_ail",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_creme",
+      "action": "Dans la même poêle, verser la crème d'asperges et la chauffer à feu moyen pour la faire légèrement réduire et récupérer les résidus d'ail.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "creme_dasperges"
+      ],
+      "produces": "creme_reduite",
+      "requires": [],
+      "visualCue": "légèrement réduite"
+    },
+    {
+      "id": "cuire_pates",
+      "action": "Cuire les tagliatelles dans l'eau bouillante, puis les égoutter rapidement (en conservant un peu d'eau de cuisson).",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "pates",
+      "uses": [
+        "tagliatelles"
+      ],
+      "produces": "tagliatelles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assembler",
+      "action": "Verser les tagliatelles dans la poêle avec la crème et les pointes d'asperges, mélanger et servir chaud.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "tagliatelles_cuites",
+        "creme_reduite",
+        "pointes_ail"
+      ],
+      "produces": "tagliatelles_creme_dasperges",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tagliatelles_creme_dasperges",
+  "originalText": "Tagliatelles à la Crème d’Asperges Citronnée - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2020\nTagliatelles à la Crème d’Asperges Citronnée\nLa saison des asperges commence et je dois bien dire que je suis ravie ! J’adore ça !\nJe les aime à toutes les sauces ! Autant cuites simplement à la vapeur avec de la vinaigrette ou en risotto (\ncomme ici\n) ou en sauce crémeuse pour les pâtes comme la recette d’aujourd’hui !\nJ’ai un petit faible pour les asperges vertes. J’apprécie particulièrement la consistance plus ferme que les asperges blanches (même si j’adore les blanches aussi !)\nEnfin, ici, elles sont préparées en sauce bien crémeuse pour accompagner des tagliatelles fraîches. Et\nque vous pouvez même faire maison si vous avez le temps\n!\nLa recette est vraiment simple et ne demande pas beaucoup d’ingrédients ! Un peu de citron, d’ail, de crème et de parmesan ! En plus, c’est très simple de la “veganiser”. En utilisant de la crème végétale et du parmesan végétal (\nrecette ici pour les curieux\n). Autre avantage de cette recette : ne salir d’une poêle et une casserole. Alors je ne sais pas pur vous, mais perso, faire la vaisselle… Me gave, et donc je suis plutôt contente quand j’arrive à la limiter !\nTagliatelles à la Crème d’Asperges Citronnée (avec option végane)\n4.47\n/5 avec\n103\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n30\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps total\n55\nminutes\nmin\nPortions\n4\npersonnes\nIngrédients\n1x\n2x\n3x\n500\ng\nd’asperges vertes\nune botte\n1\npincée de gros sel\njus d’½ citron\n150\nml\nde crème\nvégétale ou animale, soja pour nous\n30\ng\nde parmesan végétal ou véritable\n2\nc-à-s d’huile d’olive\n2\ngousses d’ail pressées\nsel\npoivre\n500\ng\nde tagliatelles fraîches\nInstructions\nCommencez par préparer vos asperges : rincez les puis couper la tige dure des asperges (environ 4-5cm). Ensuite, coupez les pointes des asperges (environ 4cm), et détailler la tige restante en tronçons d’un cm environ.\nRéservez les pointes.\nMettez les tronçons à cuire à la vapeur, jusqu’à ce qu’ils soient bien tendres (environ 10-15min).\nMixez le jus de citron, la crème, le parmesan et les tronçons pour obtenir une sauce bien crémeuse. Ajustez l’assaisonnement (sel, poivre). Réserver.\nRemettre de l’eau à bouillir dans votre casserole, on l’utilisera pour cuire les tagliatelles.\nFaire chauffer l’huile d’olive dans une grande poêle, à feu moyen. Faire revenir les pointes d’asperges une bonne dizaine de minutes à couvert, jusqu’à ce qu’elles commencent à être tendres. Ajouter l'ail grossièrement émincé, et laisser cuire encore 2min. Réserver les pointes.\nDans cette même poêle, verser la crème d’asperge et faites la chauffer à feu moyen pour la faire légèrement réduire et surtout récupérer les petits morceaux d’ail restants ! Ca va délicieusement relever le goût de votre crème !\nMettez les tagliatelles à cuire dans l’eau bouillante et égouttez les rapidement (c’est bien s’il reste un peu d’eau de cuisson).\nVersez-les dans la poêle avec la crème et les pointes, mélanger et servir chaud !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAsperge\n,\nCitron\n,\nNos recettes Véganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Salées\nTags:\nasperges\n,\npate aux asperges\n,\nrecette asperge végétarienne\nParmesan Végétal\nTarte aux Pommes Rustique\n7 thoughts on “Tagliatelles à la Crème d’Asperges Citronnée”\nLg\ndit :\n30 avril 2020 à 19 h 06 min\nExcellente recette ! 3eme fois que nous la réalisons, c’est un délice ! Une belle façon de manger des asperges ! Merci\nchargement…\nRépondre\nFree The Pickle\ndit :\n2 mai 2020 à 9 h 46 min\nMerci d’avoir pris le temps de nous faire un retour ❤️❤️❤️ ça nous fait super plaisir !\nchargement…\nRépondre\nPing :\nPâtes aux asperges vertes – By PiouPiou\nStef\ndit :\n3 mai 2023 à 20 h 24 min\nExcellent, nous nous sommes régalés\nchargement…\nRépondre\nGriet\ndit :\n20 mars 2024 à 20 h 35 min\nSuper bon et simple.  Un vrai délice qui met les asperges en valeur. Nous nous sommes régales. Merci beaucoup\nchargement…\nRépondre\nPaulette\ndit :\n9 juin 2024 à 22 h 11 min\nTesté et approuvé! Recette facile et rapide,  avec des pâtes fraîches faites maison pour accompagner le tout. On s’est tous régalé!\nJe recommande ++\nchargement…\nRépondre\nGabrielle\ndit :\n31 mars 2025 à 14 h 03 min\nSuper recette ! Facile à réalisée, bien expliquée et surtout un délice ! Merci\nchargement…\nRépondre\n4.47 from 103 votes (\n99 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 38.0
+}

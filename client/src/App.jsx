@@ -11,11 +11,13 @@ import HomePage from "./pages/HomePage";
 import RecipePage from "./pages/RecipePage";
 import PairingsPage from "./pages/PairingsPage";
 import WinePage from "./pages/WinePage";
+import MealPlannerPage from "./pages/MealPlannerPage";
 import { RecipeProvider } from "./contexts/RecipeContext";
 import { RecipeListProvider } from "./contexts/RecipeListContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ConstantsProvider } from "./contexts/ConstantsContext";
 import { AuthorsProvider } from "./contexts/AuthorsContext";
+import { PantryProvider } from "./contexts/PantryContext";
 import Navigation from "./components/common/Navigation";
 import AppTransition from "./components/common/AppTransition";
 
@@ -31,6 +33,7 @@ const AnimatedRoutes = () => {
           <Route path="/recipe/:slug" element={<RecipePage />} />
           <Route path="/ingredients" element={<PairingsPage />} />
           <Route path="/wines" element={<WinePage />} />
+          <Route path="/meal-planner" element={<MealPlannerPage />} />
         </Routes>
       </AppTransition>
     </AnimatePresence>
@@ -40,15 +43,15 @@ const AnimatedRoutes = () => {
 const AppContent = () => {
   return (
     <RecipeProvider>
-      <RecipeListProvider>
-        <CssBaseline />
-        <Router>
+      <CssBaseline />
+      <Router>
+        <RecipeListProvider>
           <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
             <Navigation />
             <AnimatedRoutes />
           </Box>
-        </Router>
-      </RecipeListProvider>
+        </RecipeListProvider>
+      </Router>
     </RecipeProvider>
   );
 };
@@ -58,9 +61,9 @@ function App() {
     <ThemeProvider>
       <ConstantsProvider>
         <AuthorsProvider>
-          <RecipeListProvider>
+          <PantryProvider>
             <AppContent />
-          </RecipeListProvider>
+          </PantryProvider>
         </AuthorsProvider>
       </ConstantsProvider>
     </ThemeProvider>

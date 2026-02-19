@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Oignons au sumac",
+    "description": "Une recette super simple mais polyvalente : les oignons au sumac. Une \"salade\" ou un condiment assaisonn\u00e9 au sumac, d\u00e9licieux pour accompagner des salades, des gyros, ou un simple sandwich.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "oignon",
+      "sumac",
+      "condiment",
+      "turque",
+      "moyen-orient",
+      "v\u00e9g\u00e9tarien",
+      "vegan",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/09/Oignons-au-sumac-1-of-6.jpg",
+    "nationality": "turque",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le sumac provient des baies du sumacier, s\u00e9ch\u00e9es et r\u00e9duites en poudre. Il est rouge profond, presque noir. Et apporte une l\u00e9g\u00e8re acidit\u00e9.",
+      "Elle a une saveur citronn\u00e9e et acidul\u00e9e qui rehausse n'importe quel plat !",
+      "Les oignons marin\u00e9s au sumac sont d\u00e9licieux, et ils ajoutent aussi une touche de couleur et d'acidit\u00e9 aux plats.",
+      "Parfaite pour accompagner des salades, des gyros, ou m\u00eame un simple sandwich."
+    ],
+    "slug": "oignons-au-sumac",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/09/Oignons-au-sumac-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/09/16/oignons-au-sumac/",
+    "image": "images/oignons-au-sumac.webp",
+    "createdAt": "2026-02-09T22:15:47.915171",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 544.0,
+      "protein": 3.5,
+      "fat": 46.9,
+      "carbs": 29.2,
+      "fiber": 5.4,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onions",
+      "name": "oignons doux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "rouges ou blancs",
+      "optional": false,
+      "name_en": "Sweet onions"
+    },
+    {
+      "id": "parsley",
+      "name": "persil plat",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": "qq branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "sumac",
+      "name": "sumac",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Sumac"
+    },
+    {
+      "id": "lemon",
+      "name": "citron",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "jus",
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "mandoline"
+  ],
+  "steps": [
+    {
+      "id": "slice_onions",
+      "action": "A l'aide d'une mandoline, \u00e9mincez tr\u00e8s finement les oignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions"
+      ],
+      "produces": "sliced_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_parsley",
+      "action": "Hachez le persil.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "parsley"
+      ],
+      "produces": "chopped_parsley",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_ingredients",
+      "action": "M\u00e9langez tous les ingr\u00e9dients.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_onions",
+        "chopped_parsley",
+        "sumac",
+        "lemon",
+        "olive_oil",
+        "salt"
+      ],
+      "produces": "mixed_onion_salad",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest",
+      "action": "Laissez reposer au moins 30min avant de servir.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_onion_salad"
+      ],
+      "produces": "marinated_onions_sumac",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "marinated_onions_sumac",
+  "originalText": "Oignons au sumac - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 septembre 2024\nOignons au sumac\nAujourd\u2019hui on part sur une recette super simple mais polyvalente : les oignons au sumac.\nOn trouve les oignons dans presque toutes les cuisines du monde. C\u2019est pas loin d\u2019\u00eatre la base de la grande majorit\u00e9 des plats. Surtout ceux que je cuisine. Mais ils sont souvent relegu\u00e9s au second plan. Leur r\u00f4le est souvent de faire briller un autre ingr\u00e9dient. Les pauvres. Aussi, ils sont la star du show.\nOn en fait une \u201csalade\u201d ou un condiment assaisonn\u00e9 au sumac. C\u2019est une recette moyen orientale, et pus pr\u00e9cisement turque \u00e0 ma connaissance.\nCette \u00e9pice, venue du Moyen-Orient, est assez peu connue en France. Elle est l\u2019une des composantes du zaatar\n(cf cette recette de pita au zaatar)\n.\nElle a une saveur citronn\u00e9e et acidul\u00e9e qui rehausse n\u2019importe quel plat !\nLes oignons marin\u00e9s au sumac sont d\u00e9licieux, et ils ajoutent aussi une touche de couleur et d\u2019acidit\u00e9 aux plats.\nTable des mati\u00e8res\n1\nLe sumac, c\u2019est quoi ?\n2\nOignons au sumac\n3\nIngr\u00e9dients\n4\nInstructions\nLe sumac, c\u2019est quoi ?\nLe sumac provient des baies du sumacier, s\u00e9ch\u00e9es et r\u00e9duites en poudre. Il est rouge profond, presque noir. Et apporte une l\u00e9g\u00e8re acidit\u00e9. En plus d\u2019\u00eatre beau visuellement, il donne une saveur unique, subtilement citronn\u00e9e et l\u00e9g\u00e8rement astringente.\nVoici la recette des oignons au sumac. Elle est parfaite pour accompagner des salades, des\ngyros\n, ou m\u00eame un simple sandwich.\nOignons au sumac\n4.55\n/5 avec\n111\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n2\noignons doux\nrouges ou blancs\nqq branches de persil plat\n1\nc\u00e0c de sumac\nle jus d\u2019un citron\n3\nc\u00e0s d\u2019huile d\u2019olive\nsel\nInstructions\nA l\u2019aide d\u2019une mandoline, \u00e9mincez tr\u00e8s finement vos oignons.\nHachez le persil.\nM\u00e9langez tous les ingr\u00e9dients.\nLaissez reposer au moins 30min avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nIngr\u00e9dients\n2 oignons doux (rouges ou blancs)\nqq branches de persil plat\n1 c\u00e0c de sumac\nle jus d\u2019un citron\n3 c\u00e0s d\u2019huile d\u2019olive\nsel\nInstructions\nA l\u2019aide d\u2019une mandoline, \u00e9mincez tr\u00e8s finement vos oignons.\nHachez le persil.\nM\u00e9langez tous les ingr\u00e9dients.\nLaissez reposer au moins 30min avant de servir.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nOignon\n,\nPrintemps\nCrinkle cake nectarine myrtilles miel\n12 recettes de saison avec des l\u00e9gumes d\u2019automne \u00e0 cuisiner d\u00e8s maintenant\n4.55 from 111 votes (\n111 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

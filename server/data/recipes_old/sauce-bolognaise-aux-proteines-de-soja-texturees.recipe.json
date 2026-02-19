@@ -1,0 +1,433 @@
+{
+  "metadata": {
+    "title": "Sauce bolognaise aux Protéines de Soja Texturées",
+    "description": "Ma première recette à base de protéines de soja texturées, cuisinée de façon hyper classique : en sauce bolognaise. Idéale à préparer en grande quantité et à stocker.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT60M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "sans gluten",
+      "bolognaise",
+      "protéines de soja texturées",
+      "pst",
+      "automne",
+      "hiver",
+      "printemps",
+      "été",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/bolo-pst-1-of-1-scaled.jpg",
+    "nationality": "Italian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La sauce se conserve parfaitement au congélateur pour une utilisation ultérieure !",
+      "Servir avec les pâtes de votre choix (ici nous avons choisi des spaghettis plats)."
+    ],
+    "slug": "sauce-bolognaise-aux-proteines-de-soja-texturees",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/02/bolo-pst-1-of-1-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/02/02/sauce-bolognaise-aux-proteines-de-soja-texturees-vegan-sans-gluten/",
+    "image": "images/sauce-bolognaise-aux-proteines-de-soja-texturees.jpg",
+    "createdAt": "2026-02-09T19:43:36.321627",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 72.0,
+    "totalCookingTime": 27.0,
+    "nutritionPerServing": {
+      "calories": 258.2,
+      "protein": 14.4,
+      "fat": 11.9,
+      "carbs": 20.8,
+      "fiber": 7.2,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 13,
+      "totalIngredients": 14,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "proteines_de_soja_texturees",
+      "name": "protéines de soja texturées",
+      "quantity": 175.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "en petits flocons, ou flocons moyens",
+      "notes": null,
+      "optional": false,
+      "name_en": "Textured soy protein"
+    },
+    {
+      "id": "eau_bouillante",
+      "name": "eau bouillante",
+      "quantity": 40.0,
+      "unit": "cl",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Boiling water"
+    },
+    {
+      "id": "sauce_soja_tamari",
+      "name": "sauce soja tamari",
+      "quantity": 6.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "carottes",
+      "name": "carottes",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 3",
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "celeri_branches",
+      "name": "céleri branches",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 3 branches",
+      "optional": false,
+      "name_en": "Celery stalks"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "2",
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "gousses",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 6.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "vin_rouge",
+      "name": "vin rouge",
+      "quantity": 20.0,
+      "unit": "cl",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red wine"
+    },
+    {
+      "id": "feuilles_de_laurier",
+      "name": "feuilles de laurier",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Bay leaves"
+    },
+    {
+      "id": "thym",
+      "name": "thym",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "tomates_conservees",
+      "name": "tomates",
+      "quantity": 800.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "conserves de 400g x2",
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "concentre_de_tomate",
+      "name": "concentré de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "conserve",
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 5.0,
+      "unit": "tbsp",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "ail_restant",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "gousse pressée",
+      "notes": "restante",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Grande poêle"
+  ],
+  "steps": [
+    {
+      "id": "hydrate_pst",
+      "action": "Mettre les protéines de soja texturées (PST) dans un bol avec l'eau bouillante et la sauce soja et couvrir. Il faut les laisser gonfler au minimum 15min, voir plus. Pensez à les remuer de temps en temps.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "proteines_de_soja_texturees",
+        "eau_bouillante",
+        "sauce_soja_tamari"
+      ],
+      "produces": "pst_hydratees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_legumes",
+      "action": "Pendant ce temps, préparer les légumes (carottes, oignon, 2 gousses d'ail, céleri) : épluchez-les, et passez les au mixeur pour obtenir l'équivalent de petits dés (pour les flemmards comme moi, pour les autres vous pouvez les débiter en petits morceaux au couteau !).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carottes",
+        "celeri_branches",
+        "oignons",
+        "ail"
+      ],
+      "produces": "legumes_haches",
+      "requires": [],
+      "visualCue": "petits dés"
+    },
+    {
+      "id": "revenir_legumes",
+      "action": "Faites chauffer l'huile d'olive dans une grande poêle à feu moyen et faire revenir les légumes une dizaine de minutes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "huile_dolive",
+        "legumes_haches"
+      ],
+      "produces": "legumes_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deglacer_vin",
+      "action": "Ajoutez le vin rouge et laisser cuire 3-4min jusqu'à absorption/évaporation complète.",
+      "duration": "PT4M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_revenus",
+        "vin_rouge"
+      ],
+      "produces": "legumes_deglaces",
+      "requires": [],
+      "visualCue": "absorption/évaporation complète"
+    },
+    {
+      "id": "ajouter_herbes",
+      "action": "Ajoutez les herbes et faire revenir encore 2-3min.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_deglaces",
+        "feuilles_de_laurier",
+        "thym",
+        "origan"
+      ],
+      "produces": "legumes_aux_herbes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_pst",
+      "action": "Ajouter les PST AVEC l'eau et la sauce soja qui restent et faire revenir jusqu'à absorption/évaporation complète (environ 10min).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "legumes_aux_herbes",
+        "pst_hydratees"
+      ],
+      "produces": "pst_et_legumes",
+      "requires": [],
+      "visualCue": "absorption/évaporation complète"
+    },
+    {
+      "id": "ajouter_tomates",
+      "action": "Ajouter ensuite la sauce tomate et le concentré de tomate, ainsi que l'eau, la gousse d'ail pressée restante et le sucre, bien mélanger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pst_et_legumes",
+        "tomates_conservees",
+        "concentre_de_tomate",
+        "eau",
+        "ail_restant",
+        "sucre"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mijoter_sauce",
+      "action": "Laisser mijoter 30min en remuant de temps en temps.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_base",
+        "sel",
+        "poivre"
+      ],
+      "produces": "sauce_bolognaise_finale",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sauce_bolognaise_finale",
+  "originalText": "Sauce bolognaise aux Protéines de Soja Texturées - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 février 2020\nSauce bolognaise aux Protéines de Soja Texturées\nLa Sauce bolognaise aux Protéines de Soja Texturées, il fallait que j’y passe !\nJe vous présente ma première recette à base de protéines de soja texturées. Que j’ai cuisiné de façon hyper classique : en sauce bolognaise.\nTable des matières\n1\nPourquoi les PST\n2\nComment faire\n3\nSauce bolognaise aux Protéines de Soja Texturées (Vegan, Sans Gluten)\nPourquoi les PST\nJusqu’ici j’ai toujours “résisté” à l’utilisation des PST et des autres “similis” viande en me disant qu’on avait pas besoin de ça pour faire de la bonne cuisine végétarienne (chose que je pense toujours d’ailleurs).\nCela étant dit, n’ayant pas envie de mourir bête, il fallait bien que j’essaie au moins une fois. Et puis ma petite sœur, Léna, m’en a tellement parlé, que j’ai fini par céder. En passant dans mon magasin bio l’autre jour, j’en ai pris un petit paquet au rayon vrac… Et puis mon courage m’a quitté. Voilà 3 semaines qu’elles trônaient dans ma cuisine et que je n’osais pas y toucher. J’ai entendu dire que c’est souvent insipide, caoutchouteux etc..\nEt puis, j’ai fini par me lancer ! Ma sœur m’a donné tous les conseils nécessaires. En gros ils se résument à : “fais les tremper dans de l’eau ET de la sauce soja pour leur donner du goût” et “moi j’aime pas jeter le jus dans lequel elles ont trempé, c’est trop de gâchis alors je les fais cuire dedans”.\nComment faire\nEt j’ai trouvé une recette simple et bien détaillée\nici\n. J’ai décidé de reproduire plus ou moins à la lettre (pour ceux qui me connaissent maintenant, vous savez que je suis absolument INCAPABLE de suivre une recette à la lettre).\nEt voilà, ma 2ème bolognaise vegan (après\nma bolognaise aux champignons de paris\nque j’adore toujours autant soit dit en passant !) Franchement, c’est une grande réussite ! C’est très bon, très goûteux, très bonne consistance. Aucune critique à émettre. Et cette recette de Sauce bolognaise aux Protéines de Soja Texturées est vraiment idéale à préparer en grande quantité et à stocker au frigo. Ou congélateur pour être tranquille les soirs de semaine ! Du coup, il ne me reste plus qu’à remercier ma sœur (pour sa patience et pour m’avoir ré-expliquer environ 12 fois comment faire tremper les PST). Et à vous souhaitez un bon appétit !\nSauce bolognaise aux Protéines de Soja Texturées (Vegan, Sans Gluten)\nNatacha\n4.57\n/5 avec\n138\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n30\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nTemps total\n1\nheure\nh\n15\nminutes\nmin\nPortions\n8\npersonnes\nIngrédients\n1x\n2x\n3x\n175\ng\nde protéines de soja texturées\nen petits flocons, ou flocons moyens\n40\ncl\nd’eau bouillante\n6\nc-à-s de sauce soja tamari\n250\ng\nde carottes\nenv 3\n80\ng\nde céleri branches\nenv 3 branches\n150\ng\nd’oignons\n2\ngousses d’ail\n6\nc-à-s d’huile d’olive\n20\ncl\nde vin rouge\n3\nfeuilles de laurier\n10\nbranches de thym\n1\nc-à-s d’origan\n2\nconserves de tomates\n400gx2\n1\nconserve de concentré de tomate\n70g\n5\nc-à-s d’eau\n1\nc-à-c de sucre\n1\ngousse d’ail\nsel\npoivre\nInstructions\nMettre les protéines de soja texturées (PST) dans un bol avec l’eau bouillante et la sauce soja et couvrir. Il faut les laisser gonfler au minimum 15min, voir plus. Pensez à les remuer de temps en temps.\nPendant ce temps, préparer les légumes (carottes, oignon, 2 gousses d’ail, céleri) : épluchez-les, et passez les au mixeur pour obtenir l’équivalent de petits dés (pour les flemmards comme moi, pour les autres vous pouvez les débiter en petits morceaux au couteau !)\nFaites chauffer l’huile d’olive dans une grande poêle à feu moyen et faire revenir les légumes une dizaine de minutes.\nAjoutez le vin rouge et laisser cuire 3-4min jusqu’à absorption/évaporation complète.\nAjoutez les herbes et faire revenir encore 2-3min.\nAjouter les PST AVEC l’eau et la sauce soja qui restent et faire revenir jusqu’à absorption/évaporation complète (environ 10min)\nAjouter ensuite la sauce tomate et le concentré de tomate, ainsi que l’eau, la gousse d’ail pressée restante et le sucre, bien mélanger. Laisser mijoter 30min en remuant de temps en temps.\nServir avec les pâtes de votre choix (ici nous avons choisi des spaghettis plats).\nLa sauce se conserve parfaitement au congélateur pour une utilisation ultérieure !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nÉté\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Salées\nTags:\nbolognaise aux pst\n,\nbolognaise vegan\n,\nbolognaise végétarienne\n,\nprotéine de soja texturée\n,\npst\nRiz au Kimchi (Vegan, Sans Gluten)\nCrème de Haricots Blancs et Champignons (Vegan, Sans Gluten)\n19 thoughts on “Sauce bolognaise aux Protéines de Soja Texturées”\nEloynn\ndit :\n30 janvier 2021 à 17 h 37 min\nBonjour , merci pour votre recette , je fais un peu comme vous , sauf que j’achète directement le haché de soja (  le boucher végétarien) , je trouve que le soja est plus petit et c’est plus agréable en bouche , je mets également plusieurs gouttes de fumée liquide …et un petit bloc de tofu fumé , un cube de bouillon de légumes ( sarriette , basilic en feuilles du congélateur ,  poivres 5 baies , et le reste comme vous mais pas de carottes 🙂  )\nhttps://www.devegetarischeslager.be/products/le-gehackt-super-hache.html\nchargement…\nRépondre\nEloynn\ndit :\n30 janvier 2021 à 17 h 40 min\nJe varie aussi en ajoutant un poivron rouge et un vert ou jaune coupés tout petits 😉 bonne continuation\nchargement…\nRépondre\nChristelle\ndit :\n9 mars 2021 à 20 h 29 min\nBonjour, J’ai testé à midi avec mes filles. Sceptique au départ et on a adoré !! Très envie de tester d’autres recettes avec des protéines de soja !\nchargement…\nRépondre\nFree The Pickle\ndit :\n10 mars 2021 à 11 h 16 min\nAah je suis ravie que vous ayez été convaincu !\nchargement…\nRépondre\nMaëlle\ndit :\n1 juin 2021 à 8 h 31 min\nSo good! Loved it, so easy and quick to make. I ate it with fresh tagliatelles!\nchargement…\nRépondre\nFree The Pickle\ndit :\n1 juin 2021 à 21 h 21 min\nThanks ❤️\nchargement…\nRépondre\nGwenaelle\ndit :\n28 février 2022 à 16 h 23 min\nMerci pour la recette, mon fils adore la bolo aux protéines de pois, mais pour le coup je n’ai plus que des protéines de soja donc on ne s’est jamais servi, on va tester ça 🙂\nchargement…\nRépondre\nCyrielle\ndit :\n30 mai 2022 à 13 h 02 min\nMeilleure recette de bolognaise vegane ! J’ai fait mijoter un peu plus longtemps (environ 1h) et j’ai mis du vin blanc car je n’avais pas de vin rouge.\nchargement…\nRépondre\nOdile\ndit :\n18 juin 2022 à 14 h 13 min\nBonjour, j’ai acheté ces protéines de pois pour voir et avec votre recette c’était top je suis enchantée de trouver une alternative au soja et moi aussi j’ai mis du vin blanc super. Merci beaucoup.\nchargement…\nRépondre\nAmy\ndit :\n24 août 2022 à 19 h 48 min\nMerci pour cette superbe recette. J’ai eu un doute en voyant « vin rouge » et finalement je comprends mieux…un gout de bolognaise classique mais vegan. Je me régale actuellement en commentant tant je suis ravis de ce plat. Merci vraiment ! Je la referai.\nPS : famille non vegan à gouter et aimer, ma mère m’a dit « ah oui, c’est bon » haha, en effet oui.\nMerci 🙂\nchargement…\nRépondre\nNatacha\ndit :\n31 août 2022 à 12 h 18 min\nTrop contente que la recette te plaise ! Et que tu aies pu convaincre ta mère ! C’est tjs une petite victoire !\nchargement…\nRépondre\nLorena\ndit :\n16 novembre 2022 à 20 h 31 min\nMerci pour la recette.  Une petite question :  Le point 6 est à feu vif ? moyen ?  bas?  Je n’ai jamais réussi une recette de bolognaise  aux PST  et j’aimerais bien essayer votre recette . Merci d’avance.  😊\nchargement…\nRépondre\nNatacha\ndit :\n28 novembre 2022 à 17 h 18 min\nHello, feu moyen fort plutôt !\nchargement…\nRépondre\nAlix\ndit :\n4 janvier 2023 à 18 h 41 min\nTrès bonne recette ! Testée et validée avec des amis omnis qui n’y ont vu que du feu, merci beaucoup ! J’ai seulement rajouté plus de sauce tomate.\nchargement…\nRépondre\nPaul\ndit :\n15 mars 2023 à 12 h 06 min\nUn délice tout simplement, ma compagne et moi sommes végétariens depuis quelques mois et c’est exactement le genre de recettes dont on a besoin. Je vais en refaire et en refaire encore !\nchargement…\nRépondre\nJean Sébastien FRANTZ\ndit :\n15 mai 2023 à 20 h 38 min\nRecette merveilleuse ! le goût est savoureux puissant et je me régale. Mon entourage est sous le charme ! Merci\nchargement…\nRépondre\nClaire\ndit :\n23 mai 2023 à 19 h 53 min\nJe l’ai faite ce soir et c’était vraiment pas mal !\nchargement…\nRépondre\nRomane\ndit :\n28 décembre 2023 à 1 h 59 min\nVraiment un délice. C’est facile, pas difficile du tout, et on y voit que du feu. Je n’ai même pas mis de vin (remplacé par un bouillon type volaille vegan) et c’était super bon. En quantité ça fait beaucoup mais c’est bien, ça fait des réserves ! J’ai hâte de servir ça à ma famille de sceptiques ahaha\nchargement…\nRépondre\nLarry\ndit :\n3 août 2025 à 15 h 01 min\nAprès avoir récemment acheté une sauce bolognaise au soja, j’ai décidé d’en faire une à mon grès et j’ai ensuite trouvé votre recette. C’est en cours de finition et c’est sûr et certain que je vais me régaler avec mon déjeuner de dimanche. J’ai que changé un peu des herbes en rajoutant de la sarriette du jardin et de l’origan séché. Je vais congeler tous qui rest après (ou bien faire un lasagne au légumes !) Merci pour cette recette.\nchargement…\nRépondre\n4.57 from 138 votes (\n129 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 27.0
+}

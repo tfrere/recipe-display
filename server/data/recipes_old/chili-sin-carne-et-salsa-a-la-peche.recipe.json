@@ -1,0 +1,615 @@
+{
+  "metadata": {
+    "title": "Chili Sin Carne et Salsa à la Pêche",
+    "description": "Un chili végétarien accompagné d'une salsa fraîche à la pêche. Recette réalisable avec un robot cuiseur ou de manière traditionnelle.",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "chili sin carne",
+      "recette au cookprocessor",
+      "recette de chili sans viande",
+      "végétarien",
+      "automne",
+      "été",
+      "plat en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/Chili-Sin-Carne-6-of-81.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Il est préférable de laisser la salsa reposer au moins 30min avant de la servir. Elle se conserve très bien 2 jours dans un récipient hermétique.",
+      "Les étapes de la recette sans robot : Hacher finement l'oignon, le céleri et la carotte. Pressez l'ail. Dans une casserole, faire chauffer l'huile à feu moyen-fort. Ajouter les légumes que vous venez de préparer ainsi que les épices et faire revenir 5min en remuant souvent. Baisser le feu à moyen. Ajouter tous les autres ingrédients, bien mélanger et couvrir. Laisser cuire 40-45min en remuant de temps en temps."
+    ],
+    "slug": "chili-sin-carne-et-salsa-a-la-peche",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/08/Chili-Sin-Carne-6-of-81.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/09/01/chili-sin-carne-et-salsa-a-la-peche-avec-le-nouveau-cook-processor-avec-balance-integree-de-kitchenaid-et-mon-avis-sur-le-robot/",
+    "image": "images/chili-sin-carne-et-salsa-a-la-peche.webp",
+    "createdAt": "2026-02-09T20:01:29.383300",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 111.0,
+    "totalCookingTime": 41.0,
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 434.7,
+      "protein": 23.4,
+      "fat": 6.4,
+      "carbs": 74.7,
+      "fiber": 26.0,
+      "confidence": "medium",
+      "resolvedIngredients": 18,
+      "matchedIngredients": 21,
+      "totalIngredients": 25,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluché",
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "celery",
+      "name": "branche de céleri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "avec les feuilles",
+      "notes": null,
+      "optional": false,
+      "name_en": "celery stalk"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluchée",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épluchées",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "red_bell_pepper",
+      "name": "poivron rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "épépiné et coupé en lamelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile végétale",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable oil"
+    },
+    {
+      "id": "cumin_powder",
+      "name": "cumin en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "ou un peu plus au goût",
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fumé",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "chili_powder",
+      "name": "chili en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "plus ou moins au goût",
+      "optional": false,
+      "name_en": "chili powder"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 150.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vegetable_broth_cube",
+      "name": "bouillon cube de légumes",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "crushed_tomatoes",
+      "name": "tomate concassée",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "1 conserve",
+      "optional": false,
+      "name_en": "crushed tomatoes"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentré de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "1 petite conserve",
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "red_beans",
+      "name": "haricots rouges",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuits",
+      "notes": null,
+      "optional": false,
+      "name_en": "kidney beans"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "peaches",
+      "name": "pêches",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "bien mûres",
+      "notes": null,
+      "optional": false,
+      "name_en": "peaches"
+    },
+    {
+      "id": "tomato",
+      "name": "tomate",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "bien mûre",
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato"
+    },
+    {
+      "id": "sweet_onion",
+      "name": "oignon doux",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "blanc ou rouge",
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet onion"
+    },
+    {
+      "id": "garlic_clove",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressée",
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "cilantro",
+      "name": "botte de coriandre",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachée, tiges comprises",
+      "notes": null,
+      "optional": false,
+      "name_en": "bunch of cilantro"
+    },
+    {
+      "id": "crushed_chili",
+      "name": "piment concassé",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "ou en poudre, ou frais",
+      "optional": false,
+      "name_en": "crushed chili pepper"
+    },
+    {
+      "id": "cumin_powder_salsa",
+      "name": "cumin en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cumin powder"
+    },
+    {
+      "id": "lime_juice",
+      "name": "citron vert",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lime"
+    },
+    {
+      "id": "alcohol_vinegar",
+      "name": "vinaigre d'alcool",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white vinegar"
+    },
+    {
+      "id": "corn_tortillas",
+      "name": "tortillas de maïs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour accompagner",
+      "optional": false,
+      "name_en": "corn tortillas"
+    },
+    {
+      "id": "rice",
+      "name": "riz",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour accompagner",
+      "optional": false,
+      "name_en": "rice"
+    }
+  ],
+  "tools": [
+    "Cook Processor (ou robot cuiseur avec lame et mélangeur)",
+    "Casserole (pour version sans robot)"
+  ],
+  "steps": [
+    {
+      "id": "cut_salsa_ingredients",
+      "action": "Couper les pêches, la tomate et l'oignon en tout petits dés.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "salsa_à_la_pêche",
+      "uses": [
+        "peaches",
+        "tomato",
+        "sweet_onion"
+      ],
+      "produces": "diced_salsa_ingredients",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_salsa",
+      "action": "Les mettre dans un bol avec la gousse d'ail pressée, la coriandre hachée et tous les autres ingrédients (piment, cumin, jus de citron vert, vinaigre, sel). Bien mélanger et rectifier l'assaisonnement si nécessaire.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "salsa_à_la_pêche",
+      "uses": [
+        "diced_salsa_ingredients",
+        "garlic_clove",
+        "cilantro",
+        "crushed_chili",
+        "cumin_powder_salsa",
+        "lime_juice",
+        "alcohol_vinegar",
+        "salt"
+      ],
+      "produces": "mixed_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_salsa",
+      "action": "Laisser reposer au moins 30min avant de servir.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "salsa_à_la_pêche",
+      "uses": [
+        "mixed_salsa"
+      ],
+      "produces": "rested_salsa",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "Équiper la cuve du robot avec la lame. Y mettre l'oignon coupé en 4, le céleri et la carotte coupés en gros tronçons et les gousses d'ail. Fermer le couvercle et presser le bouton PULSE pendant 6 sec pour hacher finement. A l'aide de la spatule, racler les bords.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "chili_sin_carne",
+      "uses": [
+        "onion",
+        "celery",
+        "carrot",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_pepper_spices",
+      "action": "Enlever la lame et mettre le mélangeur (stir assist). Ajouter le poivron, l'huile et les épices (cumin, ail en poudre, paprika, chili) dans la cuve. Fermer le couvercle.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "chili_sin_carne",
+      "uses": [
+        "chopped_vegetables",
+        "red_bell_pepper",
+        "vegetable_oil",
+        "cumin_powder",
+        "garlic_powder",
+        "smoked_paprika",
+        "chili_powder"
+      ],
+      "produces": "vegetable_spice_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Dans le mode manuel, régler la température à 120°C pour 5min, en mélange intermittent (INT).",
+      "duration": "PT5M",
+      "temperature": 120,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chili_sin_carne",
+      "uses": [
+        "vegetable_spice_mix"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_chili_ingredients",
+      "action": "Ajouter tous les autres ingrédients (eau, bouillon cube, tomate concassée, concentré de tomate, sucre, haricots rouges, sel) dans la cuve. Fermer le couvercle.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "chili_sin_carne",
+      "uses": [
+        "sauteed_vegetables",
+        "water",
+        "vegetable_broth_cube",
+        "crushed_tomatoes",
+        "tomato_paste",
+        "sugar",
+        "red_beans",
+        "salt"
+      ],
+      "produces": "chili_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_chili",
+      "action": "Dans le mode manuel, régler la température à 100°C pour 30min, en mélange 1.",
+      "duration": "PT30M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "chili_sin_carne",
+      "uses": [
+        "chili_mix"
+      ],
+      "produces": "cooked_chili",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Préchauffer le four à 180°C.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour_accompagner",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "oil_tortillas",
+      "action": "Badigeonner légèrement les tortillas avec de l'huile sur les 2 faces.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour_accompagner",
+      "uses": [
+        "corn_tortillas",
+        "vegetable_oil"
+      ],
+      "produces": "oiled_tortillas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tortillas",
+      "action": "Enfourner les tortillas dans le four chaud pour une dizaine de minutes, jusqu'à ce qu'elles soient grillées.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "pour_accompagner",
+      "uses": [
+        "oiled_tortillas"
+      ],
+      "produces": "baked_tortillas",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "grillées"
+    },
+    {
+      "id": "break_tortillas",
+      "action": "Casser les tortillas grillées en morceaux.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pour_accompagner",
+      "uses": [
+        "baked_tortillas"
+      ],
+      "produces": "tortilla_pieces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_meal",
+      "action": "Servir le chili avec la salsa, les morceaux de tortilla et du riz.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_chili",
+        "rested_salsa",
+        "tortilla_pieces",
+        "rice"
+      ],
+      "produces": "chili_sin_carne_complet",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chili_sin_carne_complet",
+  "originalText": "Chili Sin Carne et Salsa à la Pêche (avec le nouveau Cook Processor avec Balance Intégrée de KitchenAid et mon avis sur le robot) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 septembre 2020\nChili Sin Carne et Salsa à la Pêche (avec le nouveau Cook Processor avec Balance Intégrée de KitchenAid et mon avis sur le robot)\nHello mes petits cornichons !\nÇa y est, ce moment tant redouté (ou attendu) est arrivé ! Nous voilà au 1er septeeeembre !!\nCette année, cette date est encore plus spéciale pour moi car ma petite poulette rentre à la crèche pour la première fois !!! Daniela m’assure que je ne réussirai pas à retenir quelques larmes, et je pense qu’elle a tout à fait raison hahaha !\nMais assez parlé de moi !\nCet article et cette recette sont en partenariat avec KitchenAid ! Si vous nous suivez depuis un moment, vous savez qu’on a un petit faible pour cette marque et pour leurs robots. On a testé 2 accessoires du Robot Pâtissier (\nle spiralizer, et réalisé une recette de Churripoms\net le robot ménager,\nvoir ma recette des Gua Baos vegan\n).\nCette fois-ci, ils nous ont offert un\nCook Processor\n!!! Can you believe it ??\nJe ne connaissais pas du tout ce robot, et même si j’avais déjà entendu parler des robots qui cuisinent tout seul, je ne m’y étais pas trop intéressée jusqu’ici.\nMais j’adore les nouvelles aventures culinaires et j’avais hâte de recevoir le robot, de le tester, de voir si ça me plaisait de cuisiner avec ou si il allait finir par prendre la poussière dans un coin de ma cuisine.\nBon, je ne vous fais pas trop de suspens : je l’ai adopté assez vite !\nJe vais vous faire une petite liste des aspects qui me plaisent et de ceux que j’aime moins, histoire de vous donner mon point de vue objectif :\nLes + :\n. Il a beau être un peu intimidant au premier abord, il est finalement assez simple d’utilisation. Pour l’apprivoiser, j’ai fait défiler des recettes (il y en a plein de pré-enregistrées sur la machine,100 au total, et même quelques recettes végétariennes ! ) et ça m’a permis de comprendre comment l’utiliser : quels accessoires servent à quoi, quelle température de cuisson, quelle rotation du bras mélangeur etc…\n. Le robot permet de gagner pas mal de temps, et surtout de faire vraiment autre chose pendant qu’un plat cuit tranquillement  vu qu’il mélange, qu’il chronomètre …\n. Il remplace d’autres robots ménagers, notamment le mixeur, le rice cooker, le batteur et sûrement d’autres robots encore ! Et grande nouveauté de ce modèle : il a une balance intégrée !\nLes – :\n. Le gros “moins” pour moi, c’est que les accessoires pour la cuisson vapeur sont tous en plastique. Et même s’il s’agit de plastique de bonne qualité et sans BPA, je préfère continuer à utiliser ma casserole vapeur en inox.\n. L’autre aspect qui me dérange un peu, c’est que j’ai tendance à beaucoup goûter mes plats pendant que je les prépare et qu’ils cuisent. Cela me permet d’ajuster l’assaisonnement, d’ajouter des ingrédients si une inspiration fulgurante me frappe etc… et comme le robot fait pas mal de choses tout seul, j’oublie de goûter et du coup je perds un peu ce côté “spontanée” de la cuisine.\nCela dit, le robot est équipé d’un bouton “pause” ce qui permet de stopper la cuisson, de goûter, puis de le relancer sans avoir à refaire les réglages.\nGlobalement, je pense que pour les soirs de semaine, et pour cuisiner les plats que je connais par cœur, ce robot va me faire gagner un temps très très appréciable !\nEst-ce que ça vous tente que je vous propose de temps en temps des recettes réalisées avec ce robot, en vous donnant les étapes et les settings que j’ai utilisé ?\nEn tout cas, c’est ce que j’ai fait pour cette recette de chili sin carne accompagné d’une salsa à la pêche (vous trouverez les étapes de réalisation du chili dans les notes tout en bas de la recette, et vous trouverez la recette de salsa à la pêche ici).\nD’ailleurs, ça me fait penser à un autre avantage indéniable du robot : moins de vaisselle !  J’ai tout fait directement dans la cuve. J’ai mixé les légumes, puis j’ai fait revenir les légumes avec les épices et ensuite mijotés dans la sauce, le tout en ne salissant qu’un seul récipient !\nEn terme de goût, le chili était nickel, aucune différence notable avec un chili cuit à la casserole. Et je pense même que j’ai gagné un peu de temps de cuisson. Comme le robot chauffe très vite et de façon uniforme, j’ai réduit le temps de cuisson de 40min à 30min !\nEt sinon, si vous vous posiez la question: le combo chili et salsa de pêche fonctionne super bien !\nDites-nous ce que vous en avez pensé !\nEt si vous cherchez d’autres idées de recette avec le cook processor, je vous conseille d’aller jeter un coup d’œil sur les blogs de ces merveilleuses jeunes femmes, qui elles aussi, ont eu la chance de tester le robot !\nDeliacious (une recette de banh bao)\nSophie\n(une recette de tartelettes aux oignons et tomates cerises)\nChloé\n(une recette de tarte aux figues)\nChili Sin Carne et Salsa à la Pêche\nNatacha\n4.54\n/5 avec\n129\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n15\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n6\npersonnes\nIngrédients\n1x\n2x\n3x\nIngrédients pour le Chili\n1\noignon épluché\nenv 100g\n1\nbranche de céleri\navec les feuilles, env 40g\n1\ncarotte épluchée\nenv 80g\n3\ngousses d’ail épluchées\n1\npoivron rouge épépiné et coupé en lamelles\n2\nc-à-s d’huile végétale\n2\nc-à-c de cumin en poudre\nou un peu plus au goût\n2\nc-à-c d’ail en poudre\n1\nc-à-c de paprika fumé\n½\nc-à-c de chili en poudre\nplus ou moins au goût\n150\nml\nd’eau\n1\nbouillon cube de légumes\n1\nconserve de tomate concassée\nenv 400g\n1\npetite conserve de concentré de tomate\n70g\n1\nc-à-c de sucre\n500\ng\nde haricots rouges cuits\nou en conserve\nsel\nIngrédients pour la salsa\n3\npêches bien mûres\nenv 400g\n1 to\nmate bien mûre\nenv 150g\n1\npetit oignon doux\nblanc ou rouge, env 80g\n1\ngousse d’ail pressée\n½\nbotte de coriandre hachée\nenv 20g, tiges comprises\n¼\nc-à-c de piment concassé\nou en poudre, ou frais\n½\nc-à-c de cumin en poudre\nle jus d’½ citron vert\n1\nc-à-c de vinaigre d’alcool\nsel\nPour accompagner\nsalsa à la pêche\n3 to\nrtillas de maïs grillée au four\nbadigeonner légèrement les tortillas avec de l’huile sur les 2 faces, enfourner à 180 degrés dans un four chaud pour une dizaine de minute, casser les tortillas en morceaux.\ndu riz !\nInstructions\nPour la salsa\nCouper les pêches, la tomate et l’oignon en tout petits dés.\nLes mettre dans un bol avec la gousse d’ail pressée, la coriandre hachée (n’hésitez pas à hacher les tiges aussi, elles se mangent et ont autant de goût que les feuilles) et tous les autres ingrédients.\nBien mélanger et rectifier l’assaisonnement si nécessaire.\nIl est préférable de laisser la salsa reposer au moins 30min avant de la servir. Elle se conserve très bien 2 jours dans un récipient hermétique.\nPour le chili\nEquiper la cuve du cook processor avec la lame (blade). Y mettre l’oignon coupé en 4, le céleri et la carotte coupés en gros tronçons et les gousses d’ail.\nFermer le couvercle et presser le bouton PULSE pendant 6 sec pour les hacher finement.\nA l’aide de la spatule, racler les bords.\nEnlever la lame et mettre le mélangeur (stir assist).\nAjouter le poivron, l’huile et les épices dans la cuve.\nFermer le couvercle.\nDans le mode manuel, réglez la température à 120 degrés, pour 5min, en mélange intermittent (INT).\nAjouter tous les autres ingrédients dans la cuve.\nFermer le couvercle.\nDans le mode manuel, réglez la température à 100 degrés, pour 30min, en mélange 1.\nEt voilà ! C’est prêt !\nNotes\nLes étapes de la recette sans robot :\nHacher finement l’oignon, le céleri et la carotte. Pressez l’ail.\nDans une casserole, faire chauffer l’huile à feu moyen-fort. Ajouter les légumes que vous venez de préparer ainsi que les épices et faire revenir 5min en remuant souvent.\nBaisser le feu à moyen. Ajouter tous les autres ingrédients, bien mélanger et couvrir. Laisser cuire 40-45min en remuant de temps en temps.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nÉté\n,\nPlats en Sauce\n,\nRecettes Salées\nTags:\nchili si carne\n,\nrecette au cookprocessor\n,\nrecette de chili sans viande\nChunky Granola Banane Chocolat (Vegan + Sans Gluten)\nEnchiladas Végétariennes aux Haricots Rouges, Maïs et Poivrons\n4.54 from 129 votes (\n129 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 41.0
+}

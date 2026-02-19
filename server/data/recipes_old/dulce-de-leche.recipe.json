@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "title": "Dulce de leche",
+    "description": "Le dulce de leche ou confiture de lait est une préparation super crémeuse à base de lait et de sucre cuits à feu doux jusqu'à épaississement et obtention de cette jolie couleur caramel !",
+    "servings": 1,
+    "prepTime": "PT5M",
+    "cookTime": "PT3H30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "confiture de lait",
+      "dulce de leche",
+      "lait concentré"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/dulce-de-leche-1-of-5-819x1024.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Si votre cocotte ou casserole n'est pas assez profonde, il faudra vérifier constamment le niveau de l'eau et en ajouter si vous voyez qu'il diminue de trop. La cuisson est longue certes, mais clairement ce n'est pas le moment de quitter la maison, il faudra surveiller souvent car le risque c'est que la conserve explose dans la casserole et attention les dégâts ! Je vous rassure ça ne m'est jamais arrivé mais il faut être prudent !",
+      "Une fois refroidies, les conserves peuvent être rangées telles quelles (sans les ouvrir) pour les consommer plus tard."
+    ],
+    "slug": "dulce-de-leche",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/04/dulce-de-leche-1-of-5-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/04/28/dulce-de-leche/",
+    "image": "images/dulce-de-leche.jpg",
+    "createdAt": "2026-02-09T19:50:49.470933",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 210.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 0,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "sweetened_condensed_milk",
+      "name": "lait concentré sucré",
+      "quantity": 1.0,
+      "unit": "pot",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "environ 400g",
+      "optional": false,
+      "name_en": "sweetened condensed milk"
+    }
+  ],
+  "tools": [
+    "Cocotte ou casserole à bords très hauts",
+    "Pinces"
+  ],
+  "steps": [
+    {
+      "id": "remove_label",
+      "action": "Retirer l'étiquette de la conserve de lait concentré.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweetened_condensed_milk"
+      ],
+      "produces": "unlabeled_can",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_in_pot",
+      "action": "Dans une cocotte ou une casserole à bords très hauts, déposer la conserve fermée. Verser de l'eau jusqu'à recouvrir la conserve d'au moins 4/5 cm (la conserve doit être complètement immergée).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "unlabeled_can"
+      ],
+      "produces": "can_in_water",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "boil_and_simmer",
+      "action": "Couvrir la cocotte ou la casserole et porter à ébullition, puis cuire à feu doux pendant 3h30 toujours à couvert.",
+      "duration": "PT3H30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "can_in_water"
+      ],
+      "produces": "cooked_can",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_can",
+      "action": "Retirer du feu et à l'aide de pinces retirer la conserve de l'eau et la laisser complètement refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_can"
+      ],
+      "produces": "cooled_can",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "transfer_to_jar",
+      "action": "Une fois refroidie, ouvrir la conserve et transvaser dans un pot avec couvercle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooled_can"
+      ],
+      "produces": "dulce_de_leche",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "dulce_de_leche",
+  "originalText": "Dulce de leche - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 avril 2020\nDulce de leche\nAccéder directement à la recette\nQui ne connaît pas le dulce de leche?\nAlors pour faire simple : c’est essentiellement un lait sucré caramélisé ! Son nom est espagnol et signifie littéralement « bonbon au lait ». C’est en fait tout simplement notre Confiture de lait ! En Colombie, on appelle ça “Arequipe”, ce mot me rappelle tellement des souvenirs gourmands de mon enfance…\nBon assez parlé de termes techniques, la seule chose à retenir c’est que le dulce de leche est un or liquide (ou presque). Il est délicieusement crémeux et sucré avec un bon goût de caramel. Il y a mille de façons de le consommer et notamment dans notre\nBanoffe Pie\n, mais aussi étaler sur des tartines de pain ou de\nbrioche\n, ou encore sur des\ncrêpes\nou des\npancakes\n…\nDulce de Leche\nDaniela\nLe dulce de leche ou confiture de lait est une préparation super crémeuse à base de lait et de sucre cuits à feu doux jusqu’à épaississement et obtention de cette jolie couleur caramel ! Cette friandise étalable porte vraiment bien son nom !\n4.46\n/5 avec\n79\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n1\nminute\nmin\nTemps de cuisson\n3\nheures\nh\n30\nminutes\nmin\nIngrédients\n1\npot de lait concentré sucré\nenviron 400g\nInstructions\nRetirer l’étiquette de la conserve de lait concentré (si possible, car certaines étiquettes sont imprimées directement sur la conserve).\nDans une cocotte ou une casserole à bords très hauts, déposer la conserve fermée (ou plusieurs, moi je les fais par 2 ou 3). Verser de l’eau jusqu’à recouvrir la conserve d’au moins 4/5 cm (la conserve doit être complètement immergée et il doit y avoir 4/5 cm entre le haut de la conserve et la surface, dans la mesure du possible car pendant la cuisson il faut que la/les conserve(s) reste(nt) tout le temps immergée(s)).\nCouvrir la cocotte ou la casserole et porter à ébullition, puis cuire à feu doux pendant 3 à 3h30 toujours à couvert.\nRetirer du feu et à l’aide de pinces retirer la/les conserve(s) de l’eau et les laisser complètement refroidir.\nUne fois refroidies, les conserves peuvent être rangées telles quelles (sans les ouvrir) pour les consommer plus tard, ou vous pouvez ouvrir la conserve et transvaser dans un pot avec couvercle pour le consommer au quotidien !\nNotes\nSi votre cocotte ou casserole n’est pas assez profonde, il faudra vérifier constamment le niveau de l’eau et en ajouter si vous voyez qu’il diminue de trop. La cuisson est longue certes, mais clairement ce n’est pas le moment de quitter la maison, il faudra surveiller souvent car le risque c’est que la conserve explose dans la casserole et attention les dégâts ! Je vous rassure ça ne m’est jamais arrivé mais il faut être prudent !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucrées\nTags:\nconfiture de lait\n,\ndulce de leche\n,\nlait concentré\nNouilles Sobas aux Légumes et Sésame (Salade Vegane)\nShortcakes aux Fraises\n5 thoughts on “Dulce de leche”\nLadyMilonguera\ndit :\n28 avril 2020 à 15 h 10 min\nHummmmmmm… je ne résiste pas !\nchargement…\nRépondre\nKenza\ndit :\n24 janvier 2021 à 13 h 51 min\nMerci ! J’ai suivi la recette et c’est top 👌🏽\nchargement…\nRépondre\nDaniela\ndit :\n24 janvier 2021 à 21 h 03 min\nAh génial ! C’est tellement bon le dulce de leche !\nchargement…\nRépondre\nsonia moretto\ndit :\n16 février 2021 à 14 h 37 min\nbonjour,\npensez-vous qu’il soit possible de faire ce Dulce Leche\nen plaçant les boites de lait concentré sucré dans un stérilisateur  électrique ?\net si oui, à quelle température faut-il les faire cuire?\nchargement…\nRépondre\nDaniela\ndit :\n21 février 2021 à 17 h 23 min\nBonjour Sonia, j’ai bien peur de ne pas pouvoir vous répondre… Avez-vous trouver la réponse sur le net depuis!? Si oui, je serais super intéressée de le savoir (même si je n’ai pas de stérilisateur électrique) mais pour d’autres personnes qui se poserait la question 😉\nchargement…\nRépondre\n4.46 from 79 votes (\n78 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "title": "Sauce aux airelles rapide",
+    "description": "Une sauce acidul\u00e9e, simple et rapide, parfaite pour accompagner les plats de f\u00eate comme les r\u00f4tis, apportant un \u00e9quilibre sucr\u00e9-sal\u00e9.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "sauce",
+      "airelles",
+      "No\u00ebl",
+      "f\u00eates",
+      "v\u00e9g\u00e9tarien",
+      "rapide",
+      "accompagnement"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-airelles-rapide-free-the-pickleSauce-airelles-1-of-3-819x1024.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez pr\u00e9parer la sauce quelques jours en avance et la r\u00e9chauffer \u00e0 feu doux avant de servir."
+    ],
+    "slug": "sauce-aux-airelles-rapide",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/11/sauce-aux-airelles-rapide-free-the-pickleSauce-airelles-1-of-3-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/11/18/sauce-aux-airelles-rapide/",
+    "image": "images/sauce-aux-airelles-rapide.webp",
+    "createdAt": "2026-02-09T23:14:04.478028",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 5.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 367.4,
+      "protein": 2.0,
+      "fat": 32.6,
+      "carbs": 19.1,
+      "fiber": 2.7,
+      "confidence": "low",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "lingonberries",
+      "name": "airelles en bocal",
+      "quantity": 290.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lingonberries in a jar"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "redcurrant_jam",
+      "name": "confiture de groseille",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "redcurrant jam"
+    },
+    {
+      "id": "port",
+      "name": "porto",
+      "quantity": 6.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "port wine"
+    },
+    {
+      "id": "bouillon_cube",
+      "name": "bouillon cube",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bouillon cube"
+    },
+    {
+      "id": "cornstarch",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "cold_water",
+      "name": "eau froide",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cold water"
+    }
+  ],
+  "tools": [],
+  "steps": [
+    {
+      "id": "drain_lingonberries",
+      "action": "\u00c9gouttez les airelles et conservez le jus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lingonberries"
+      ],
+      "produces": "drained_lingonberries",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion",
+      "action": "Hachez l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Faites revenir l'oignon dans le beurre jusqu'\u00e0 ce qu'il soit translucide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_onion",
+        "butter"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": "translucide"
+    },
+    {
+      "id": "add_lingonberries",
+      "action": "Ajoutez les airelles et faites revenir quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_onion",
+        "drained_lingonberries"
+      ],
+      "produces": "lingonberry_onion_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_jam_port",
+      "action": "Ajoutez la confiture de groseille et le porto, puis m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lingonberry_onion_mix",
+        "redcurrant_jam",
+        "port"
+      ],
+      "produces": "lingonberry_jam_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_juice_bouillon",
+      "action": "Ajoutez le jus des airelles et le demi-bouillon cube.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lingonberry_jam_mix",
+        "bouillon_cube"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduce_sauce",
+      "action": "Laissez cuire \u00e0 petits bouillons jusqu'\u00e0 ce que la sauce ait r\u00e9duit de moiti\u00e9 et soit sirupeuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_base"
+      ],
+      "produces": "reduced_sauce",
+      "requires": [],
+      "visualCue": "r\u00e9duite de moiti\u00e9 et sirupeuse"
+    },
+    {
+      "id": "make_slurry",
+      "action": "Dans un petit bol, m\u00e9langez la f\u00e9cule de ma\u00efs et l'eau froide, puis versez ce m\u00e9lange dans la sauce pour l'\u00e9paissir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cornstarch",
+        "cold_water",
+        "reduced_sauce"
+      ],
+      "produces": "thickened_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_final",
+      "action": "Laissez mijoter encore 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "thickened_sauce"
+      ],
+      "produces": "finished_lingonberry_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "finished_lingonberry_sauce",
+  "originalText": "Sauce Aux Airelles Rapide | La Recette Simple et Festive pour No\u00ebl\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 novembre 2025\nSauce aux airelles rapide : l\u2019incontournable des tables de fin d\u2019ann\u00e9e\nLa\nsauce aux airelles rapide\n, c\u2019est le petit secret qui fait briller les\nrepas de fin d\u2019ann\u00e9e\nsans y passer des heures.\nAcidul\u00e9e\njuste comme il faut, elle apporte ce parfait\n\u00e9quilibre sucr\u00e9-sal\u00e9\nqu\u2019on adore avec les\nplats de f\u00eate\n. Que vous serviez un\nr\u00f4ti v\u00e9g\u00e9tarien\nun\nplat mijot\u00e9\n, elle vient relever chaque\nbouch\u00e9e\nd\u2019une\nnote fruit\u00e9e\net\nfestive\n. En plus, elle se pr\u00e9pare en\nquelques minutes\navec des\nairelles en bocal\n. Une\nsauce\nqui coche toutes les cases :\nsimple, rapide et pleine de caract\u00e8re\n! C\u2019est la petite touche\nmaison\nqui fait toute la diff\u00e9rence sur la\ntable de No\u00ebl\n.\nTable des mati\u00e8res\n1\nSauce aux airelles rapide : la petite touche acidul\u00e9e qu\u2019on adore\n2\nLa sauce parfaite pour accompagner vos r\u00f4tis de f\u00eate\n3\nSauce aux airelles rapide\n4\nConfiture de groseille et porto, le duo qui fait toute la diff\u00e9rence\n5\nUn petit c\u00f4t\u00e9 festif\u2026 sans se compliquer la vie\n6\nUne sauce facile et rapide, parfaite pour les soirs de f\u00eate\nSauce aux airelles rapide : la petite touche acidul\u00e9e qu\u2019on adore\nLes airelles, c\u2019est un peu la p\u00e9pite nordique qu\u2019on red\u00e9couvre chaque hiver. Ce petit fruit rouge, tr\u00e8s pr\u00e9sent en Scandinavie et dans les cuisines d\u2019Europe de l\u2019Est, accompagne traditionnellement les plats mijot\u00e9s et les r\u00f4tis des grandes occasions. Leur go\u00fbt l\u00e9g\u00e8rement acidul\u00e9 fait toute la diff\u00e9rence ! Elles offrent une touche sucr\u00e9e-sal\u00e9e qui r\u00e9veille l\u2019assiette. Riches en antioxydants et en vitamine C, les airelles \u00e9taient autrefois utilis\u00e9es pour tonifier le corps et relever les plats d\u2019hiver. En sauce, elles offrent cet \u00e9quilibre rare entre douceur fruit\u00e9e et fra\u00eecheur acidul\u00e9e. Une petite note festive, parfaite pour sublimer un r\u00f4ti et donner \u00e0 votre repas un vrai go\u00fbt de f\u00eate. Si vous aimez les airelles en version sucr\u00e9e-sal\u00e9e, testez aussi nos\nchaussons brie et airelles au porto\n, un classique de nos ap\u00e9ros d\u2019hiver.\nLa sauce parfaite pour accompagner vos r\u00f4tis de f\u00eate\nCette sauce aux airelles rapide est l\u2019accompagnement id\u00e9al pour sublimer un r\u00f4ti, v\u00e9g\u00e9tarien ou non. Son acidit\u00e9 douce \u00e9quilibre \u00e0 merveille les plats riches, et son c\u00f4t\u00e9 fruit\u00e9 apporte imm\u00e9diatement une note festive \u00e0 l\u2019assiette. Elle enveloppe les morceaux, rel\u00e8ve les saveurs et apporte ce petit quelque chose qui transforme un repas simple en vrai d\u00eener de f\u00eate. Cette sauce est parfaite avec un\nr\u00f4ti vegan \u00e0 la ch\u00e2taigne\n. Elle se marie aussi tr\u00e8s bien avec notre\nr\u00f4ti vegan de haricots blancs et farce de pomme et ch\u00e2taignes\n, plus doux et l\u00e9g\u00e8rement sucr\u00e9. Et si vous aimez les saveurs bois\u00e9es, testez-la avec le\nr\u00f4ti vegan aux c\u00e8pes sans gluten\n: c\u2019est un mariage absolument parfait. Une sauce simple, rapide et pleine de peps, pr\u00eate \u00e0 accompagner tous vos plats de No\u00ebl.\nSauce aux airelles rapide\n4.41\n/5 avec\n50\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n290\ng\nd\u2019airelles en bocal\n40\ng\nde beurre\n1\noignon\n2\nc\u00e0s de confiture de groseille\n6\nml\nde porto\n\u00bd\nbouillon cube\n1\nc\u00e0c de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019eau froide\nInstructions\n\u00c9gouttez les airelles, conservez le jus.\nHachez l\u2019oignon.\nFaites revenir l\u2019oignon dans le beurre jusqu\u2019\u00e0 ce qu\u2019il soit translucide.\nAjoutez les airelles et faites revenir quelques minutes.\nAjoutez la confiture et le porto et m\u00e9langez.\nAjoutez le jus des airelles et le bouillon cube.\nLaissez cuire \u00e0 petits bouillons jusqu\u2019\u00e0 ce que la sauce ait r\u00e9duit de moiti\u00e9 et soit sirupeuse.\nM\u00e9langez la f\u00e9cule et l\u2019eau froide dans un petit bol et versez dans la sauce pour l\u2019\u00e9paissir.\nLaissez mijoter encore 5min.\nC\u2019est pr\u00eat !\nNotes\nVous pouvez pr\u00e9parer la sauce quelques jours en avance et la r\u00e9chauffer \u00e0 feu doux avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nConfiture de groseille et porto, le duo qui fait toute la diff\u00e9rence\nDans cette sauce aux airelles rapide, la confiture de groseille et le porto jouent un r\u00f4le essentiel. La groseille apporte une acidit\u00e9 douce et un c\u00f4t\u00e9 fruit\u00e9 qui renforce naturellement celui des airelles. Le porto, lui, apporte de la profondeur et une rondeur l\u00e9g\u00e8rement sucr\u00e9e qui \u00e9quilibre parfaitement la sauce. Ensemble, ils cr\u00e9ent un m\u00e9lange subtil : brillant, l\u00e9g\u00e8rement sirupeux, avec ce petit twist festif qu\u2019on adore pendant les f\u00eates. Vous aimez la groseille ? Laissez-vous tenter par notre\npanna cotta vegan \u00e0 la groseille\n, fra\u00eeche, l\u00e9g\u00e8re et pleine de peps.\nUn petit c\u00f4t\u00e9 festif\u2026 sans se compliquer la vie\nCe qu\u2019on aime avec cette sauce aux airelles, c\u2019est qu\u2019elle apporte imm\u00e9diatement une touche de f\u00eate, m\u00eame aux plats les plus simples. Les airelles sont un fruit de saison, avec ce c\u00f4t\u00e9 acidul\u00e9 qui rappelle les repas de fin d\u2019ann\u00e9e, mais sans jamais alourdir le menu. Et surtout, pas besoin de courir partout pour en trouver ! Les airelles en bocal sont tr\u00e8s abordables. Elles sont faciles \u00e0 stocker et parfaites pour improviser une sauce maison en quelques minutes. Vous pouvez m\u00eame pr\u00e9parer la sauce quelques jours en avance et la r\u00e9chauffer \u00e0 feu doux juste avant de servir. C\u2019est exactement le genre d\u2019ingr\u00e9dient malin qu\u2019on adore en d\u00e9cembre : peu co\u00fbteux, pr\u00eat \u00e0 l\u2019emploi, et capable de transformer un r\u00f4ti ou un plat mijot\u00e9 en assiette digne des grandes tabl\u00e9es de No\u00ebl.\nUne sauce facile et rapide, parfaite pour les soirs de f\u00eate\nCette sauce aux airelles fait partie de ces recettes qu\u2019on adore pr\u00e9parer en pleine effervescence des f\u00eates : trois ingr\u00e9dients du placard, quelques minutes de cuisson, et vous avez une sauce pr\u00eate \u00e0 napper n\u2019importe quel plat. Pas de technique compliqu\u00e9e, pas de longue r\u00e9duction \u00e0 surveiller. Tout se fait tout seul, et le r\u00e9sultat est toujours au rendez-vous. Si vous aimez ce genre de sauces express qui changent tout, vous allez adorer notre\nsauce aux c\u00e8pes\n, ultra parfum\u00e9e, ou la\nsauce foresti\u00e8re\n, parfaite en automne. Pour les amateurs de sauces qui en imposent, tentez la\nsauce au poivre inratable\nou la\nB\u00e9arnaise facile au blender\n. Et si vous \u00eates plut\u00f4t team comfort food, ne manquez pas notre indispensable :\nla meilleure sauce burger vegan au monde\n.\nCette sauce aux airelles rapide est exactement le genre de recette qu\u2019on aime ressortir pendant les f\u00eates ! Elle est simple, acidul\u00e9e, pr\u00eate en quelques minutes et capable de r\u00e9veiller n\u2019importe quel r\u00f4ti ou plat mijot\u00e9. Elle apporte une touche fruit\u00e9e qui fait toute la diff\u00e9rence autour d\u2019une belle table de fin d\u2019ann\u00e9e. Et si vous aimez les plats bien r\u00e9confortants \u00e0 napper g\u00e9n\u00e9reusement, d\u00e9couvrez aussi\ntoutes nos recettes de plats en sauce\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nSauce aux \u00e9chalotes toute simple : le grand classique qu\u2019on adore\nScarpaccia de butternut\n4.41 from 50 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

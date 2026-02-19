@@ -1,0 +1,553 @@
+{
+  "metadata": {
+    "title": "Pains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches",
+    "description": "Pains plats moelleux et a\u00e9r\u00e9s, inspir\u00e9s des naans, fourr\u00e9s d'un m\u00e9lange de fromage frais et d'herbes fra\u00eeches, puis badigeonn\u00e9s de beurre \u00e0 l'ail.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT20M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "naan fromage",
+      "naans",
+      "naans maison",
+      "pains fourr\u00e9s",
+      "pains maison",
+      "accompagnements",
+      "ap\u00e9ros",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Pains-plats-aux-herbes-1-of-5-1.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette inspir\u00e9e des naans traditionnels.",
+      "Pour une version vegan : remplacer le yaourt grec par du yaourt de soja \u00e9goutt\u00e9 et le fromage frais par un fromage vegan \u00e0 la noix de cajou, ou supprimer le fromage.",
+      "Les pains peuvent \u00eatre pr\u00e9par\u00e9s la veille et conserv\u00e9s enroul\u00e9s dans un torchon dans un contenant ferm\u00e9.",
+      "Si le m\u00e9lange eau/levure/sucre ne fait pas de bulles apr\u00e8s 5min, la levure n'est plus active."
+    ],
+    "slug": "pains-plats-fourres-au-fromage-et-herbes-fraiches",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/09/Pains-plats-aux-herbes-1-of-5-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/09/21/pains-plats-fourres-au-fromage-et-herbes-fraiches/",
+    "image": "images/pains-plats-fourres-au-fromage-et-herbes-fraiches.webp",
+    "createdAt": "2026-02-09T20:35:28.217557",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 107.0,
+    "totalCookingTime": 47.0,
+    "nutritionPerServing": {
+      "calories": 620.8,
+      "protein": 12.2,
+      "fat": 35.7,
+      "carbs": 61.8,
+      "fiber": 2.2,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 10,
+      "totalIngredients": 12,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "eau_tiede",
+      "name": "eau ti\u00e8de",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Warm water"
+    },
+    {
+      "id": "levure_boulanger",
+      "name": "levure de boulanger",
+      "quantity": 0.5,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Baker's yeast"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "yaourt_grec",
+      "name": "yaourt grec",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "farine_t55",
+      "name": "farine T55",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "All-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "fromage_frais",
+      "name": "fromage frais au lait de vache",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cream cheese"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "persil_plat",
+      "name": "persil plat",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "ciboulette",
+      "name": "ciboulette",
+      "quantity": 1.0,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "sel_volonte",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 40.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "huile_olive_cuisson",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "robot p\u00e2tissier (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "activate_yeast",
+      "action": "Dans un bol, m\u00e9langez la levure et le sucre dans l'eau ti\u00e8de. Laissez reposer 5min jusqu'\u00e0 ce que le m\u00e9lange fasse des bulles.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "eau_tiede",
+        "levure_boulanger",
+        "sucre"
+      ],
+      "produces": "activated_yeast_mixture",
+      "requires": [],
+      "visualCue": "fait des bulles"
+    },
+    {
+      "id": "add_yogurt",
+      "action": "Versez le yaourt dans le bol et m\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "activated_yeast_mixture",
+        "yaourt_grec"
+      ],
+      "produces": "yeast_yogurt_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "oil_bowl",
+      "action": "Versez 1 c\u00e0s d'huile d'olive dans un saladier propre et badigeonnez l'int\u00e9rieur. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "huile_olive"
+      ],
+      "produces": "oiled_bowl",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un autre saladier (ou le bol d'un robot), versez la farine et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "farine_t55",
+        "sel"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "knead_dough",
+      "action": "Versez le liquide (levure/yaourt) petit \u00e0 petit dans la farine tout en m\u00e9langeant. Une fois incorpor\u00e9, p\u00e9trissez \u00e9nergiquement pendant 10min (ou 5min \u00e0 vitesse moyenne au robot).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "yeast_yogurt_mixture",
+        "dry_mix"
+      ],
+      "produces": "kneaded_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_dough_ball",
+      "action": "Formez une boule et d\u00e9posez-la dans le saladier huil\u00e9. Retournez-la pour qu'elle soit enti\u00e8rement huil\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "kneaded_dough",
+        "oiled_bowl"
+      ],
+      "produces": "oiled_dough_ball",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_rise",
+      "action": "Couvrez le saladier avec un torchon humide. Laissez pousser 1h \u00e0 2h (ou utilisez la fonction 'pousse' du four \u00e0 30-35\u00b0C) jusqu'\u00e0 ce que la p\u00e2te double de volume.",
+      "duration": "PT1H",
+      "temperature": 30,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "oiled_dough_ball"
+      ],
+      "produces": "risen_dough",
+      "requires": [],
+      "visualCue": "double de volume"
+    },
+    {
+      "id": "divide_dough",
+      "action": "D\u00e9gazez l\u00e9g\u00e8rement la p\u00e2te et formez une boule. S\u00e9parez-la en 4 morceaux \u00e9gaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pain",
+      "uses": [
+        "risen_dough"
+      ],
+      "produces": "dough_portions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_herbs",
+      "action": "Hachez finement toutes les herbes (coriandre, persil, ciboulette).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "coriandre",
+        "persil_plat",
+        "ciboulette"
+      ],
+      "produces": "chopped_herbs",
+      "requires": [],
+      "visualCue": "finement hach\u00e9es"
+    },
+    {
+      "id": "mix_filling",
+      "action": "M\u00e9langez les herbes hach\u00e9es avec le fromage frais. Salez et poivrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "chopped_herbs",
+        "fromage_frais",
+        "sel_volonte",
+        "poivre"
+      ],
+      "produces": "herb_cheese_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flour_work_surface",
+      "action": "Saupoudrez un plan de travail de farine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "farine_t55"
+      ],
+      "produces": "floured_surface",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_first_dough",
+      "action": "Prenez un p\u00e2ton et \u00e9talez-le en un disque ou ovale avec vos doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "dough_portions",
+        "floured_surface"
+      ],
+      "produces": "first_rolled_dough",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_filling_first",
+      "action": "D\u00e9posez une grosse c\u00e0s de garniture au centre et repliez les bords pour former une boule scell\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "first_rolled_dough",
+        "herb_cheese_filling"
+      ],
+      "produces": "first_filled_dough",
+      "requires": [],
+      "visualCue": "scell\u00e9e"
+    },
+    {
+      "id": "flatten_first_dough",
+      "action": "\u00c9talez d\u00e9licatement la boule en un disque ou ovale d'environ 1cm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "first_filled_dough"
+      ],
+      "produces": "first_flattened_bread",
+      "requires": [],
+      "visualCue": "1cm d'\u00e9paisseur"
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faites chauffer une po\u00eale \u00e0 feu moyen-fort. Versez 1 c\u00e0s d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "huile_olive_cuisson"
+      ],
+      "produces": "hot_oiled_pan",
+      "requires": [],
+      "visualCue": "bien chaude"
+    },
+    {
+      "id": "cook_first_bread",
+      "action": "Quand la po\u00eale est bien chaude, d\u00e9posez un pain et faites cuire 4min de chaque c\u00f4t\u00e9.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "first_flattened_bread",
+        "hot_oiled_pan"
+      ],
+      "produces": "first_cooked_bread",
+      "requires": [],
+      "visualCue": "dor\u00e9 des deux c\u00f4t\u00e9s"
+    },
+    {
+      "id": "cook_remaining_breads",
+      "action": "R\u00e9p\u00e9tez les \u00e9tapes 2 \u00e0 6 pour les 3 p\u00e2tons restants.",
+      "duration": "PT24M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "dough_portions",
+        "herb_cheese_filling",
+        "huile_olive_cuisson",
+        "first_cooked_bread"
+      ],
+      "produces": "all_cooked_breads",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_garlic_butter",
+      "action": "Dans une petite casserole, faites fondre le beurre et ajoutez l'ail press\u00e9. M\u00e9langez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "beurre",
+        "ail"
+      ],
+      "produces": "garlic_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_garlic_butter",
+      "action": "Une fois les pains cuits, enduisez-les g\u00e9n\u00e9reusement du m\u00e9lange beurre-ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "cuisson et finition",
+      "uses": [
+        "all_cooked_breads",
+        "garlic_butter"
+      ],
+      "produces": "finished_flatbreads",
+      "requires": [],
+      "visualCue": "g\u00e9n\u00e9reusement enduits"
+    }
+  ],
+  "finalState": "finished_flatbreads",
+  "originalText": "Pains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 septembre 2021\nPains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches\nAcc\u00e9der directement \u00e0 la recette\nJe vous pr\u00e9viens : tr\u00e8s gros kiffe ce ces pains plats fourr\u00e9s au fromage et herbes fra\u00eeches !\nA la base quand\nAgricool\nnous a demand\u00e9 de cr\u00e9er une recette pour eux\u2026 j\u2019avais mille id\u00e9es en t\u00eate. C\u2019est un peu un probl\u00e8me dans ma vie d\u2019ailleurs. Mais ce n\u2019est pas le sujet. Le sujet, c\u2019est que, Agricool c\u2019est cool ! (hahaha je suis all\u00e9e la chercher tr\u00e8s loin). Ils proposent des produits ultra-locaux (pour les parisiens). Ils produisent des herbes fra\u00eeches, des salades et des fraises \u00e0 la Courneuve. Genre c\u2019est nos voisins quoi ! En plus ils ont de nouveaux emballages en plastique recycl\u00e9 et recyclable \ud83d\ude42\nBref tout \u00e7a pour dire, j\u2019avais envie de faire une recette dans laquelle les herbes \u00e9taient l\u2019\u00e9l\u00e9ment central. Donc, j\u2019ai appliqu\u00e9 l\u2019id\u00e9e de fa\u00e7on tr\u00e8s litt\u00e9rale et j\u2019ai mis les herbes au centre des petits pains.\nLa recette est inspir\u00e9e des naans traditionnels, avec du yaourt dans la p\u00e2te. Mais j\u2019avais envie de plus de moelleux et de gourmand. Du coup, j\u2019ai un peu modifi\u00e9 le processus. Ils sont \u00e9pais, moelleux et fourr\u00e9s. Un peu de fromage. Beaucoup d\u2019herbes fra\u00eeches. Une p\u00e2te moelleuse et a\u00e9r\u00e9e. Couverte de beurre fondu \u00e0 l\u2019ail \u2026 Bref, trop bons quoi !\nEt pour varier de ces Pains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches, je vous conseille les\npitas maiso\nns !\nPains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches\n4.58\n/5 avec\n52\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n4\npains\nIngr\u00e9dients\n1x\n2x\n3x\nPour la p\u00e2te \u00e0 pain\n100\nml\nd\u2019eau ti\u00e8de\n\u00bd\nsachet de levure de boulanger\n1 c\u00e0c\n1\nc\u00e0c de sucre\n120\ng\nde yaourt grec\n1\nc\u00e0s d\u2019huile d\u2019olive\n300\ng\nde farine T55\n\u00bd\nc\u00e0c de sel\nPour la garniture\n100\ng\nde fromage frais au lait de vache\n1\nbouquet de coriandre\n1\nbouquet de persil plat\n1\nbouquet de ciboulette\nsel\npoivre\nPour la cuisson\n40\ng\nde beurre\n1\ngousse d\u2019ail\n4\nc\u00e0s d\u2019huile d\u2019olive\nInstructions\nPour la p\u00e2te \u00e0 pain\nDans un bol, versez la levure et le sucre dans l\u2019eau ti\u00e8de (pas trop chaude), et m\u00e9langez bien. Laissez reposer 5min. Le m\u00e9lange doit faire des bulles. Si ce n\u2019est pas le cas, la levure n\u2019est plus active et la p\u00e2te ne l\u00e8vera pas.\nVersez le yaourt dans le bol et m\u00e9langez le.\nVersez l\u2019huile dans un saladier propre et badigeonnez le compl\u00e9ment d\u2019huile. On mettra la p\u00e2te \u00e0 pousser dedans.\nDans un autre saladier (ou dans le bol de votre robot p\u00e2tissier), versez la farine et le sel.\nVersez le liquide petit \u00e0 petit dedans tout en m\u00e9langeant. Une fois que tout le liquide est incorpor\u00e9, p\u00e9trissez (10min \u00e9nergiquement \u00e0 la main, ou 5 min \u00e0 vitesse moyenne dans le robot).\nFormez une boule et d\u00e9posez-la dans le saladier huil\u00e9. Retournez la sur elle-m\u00eame pour que l\u2019huile recouvre toute sa surface.\nCouvrez le saladier avec un torchon propre et humide. Laissez pousser 1 \u00e0 2h en fonction de la temp\u00e9rature. Si votre four \u00e0 une fonction \u201cpousse\u201d (30-35\u00b0C), c\u2019est le moment d\u2019en profiter !\nLa p\u00e2te va doubler de volume.\nUne fois la pousse termin\u00e9e, d\u00e9gazer l\u00e9g\u00e8rement la p\u00e2te en la retirant du saladier et en formant une boule. S\u00e9parez-la en 4 morceaux \u00e9gaux.\nPour la garniture\nHachez toutes les herbes finement. M\u00e9langez-les dans le fromage. Salez, poivrez.\nPour former les pains et les cuire\nSaupoudrez votre plan de travail avec de la farine.\nPrenez un p\u00e2ton et \u00e9talez le en forme de disque ou de ovale avec vos doigts.\nD\u00e9poser une grosse c\u00e0s de garniture au centre et repliez le bords pour former une boule. Scellez bien la boule. Puis d\u00e9licatement, \u00e9talez la boule de nouveau en forme de disque ou de ovale d\u2019environ 1cm d\u2019\u00e9paisseur.\nFaites chauffer une po\u00eale \u00e0 feu moyen-fort. Versez une c\u00e0s d\u2019huile d\u2019olive dedans. Quand la po\u00eale est bien chaude, d\u00e9posez le pain dessus. Faites cuire 4-5min de chaque c\u00f4t\u00e9.\nR\u00e9p\u00e9tez l\u2019op\u00e9ration pour les 3 p\u00e2tons restants !\nDans une petite casserole, faites fondre le beurre et ajoutez l'ail press\u00e9. M\u00e9langez.\nUne fois que les pains sont cuits, enduisez les de la pr\u00e9paration au beurre et \u00e0 l'ail pour ajouter une touche de gourmand !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nnaan fromage\n,\nnaans\n,\nnaans maison\n,\npains fourr\u00e9s\n,\npains maison\nBuns brioch\u00e9s\nMoelleux Vapeur Z\u00e9br\u00e9 M\u00fbres Myrtilles (Vegan)\n7 thoughts on \u201cPains plats fourr\u00e9s au Fromage et Herbes Fra\u00eeches\u201d\nLadyMilonguera\ndit\u00a0:\n22 septembre 2021 \u00e0 5 h 53 min\nQuelle chouette id\u00e9e ces pains fourr\u00e9s !\nchargement\u2026\nR\u00e9pondre\nthenaisy\ndit\u00a0:\n22 septembre 2021 \u00e0 6 h 52 min\ncoucou super cette recette  j\u2019imagine bien cette recette avec le persil du jardin de mon papa mais j\u2019ai un souci pas de fromage ! 1ere question puis-je mettre un yaourt de soja pour les petits pains ? et pour la garniture par quoi je pourrais remplacer ?\nmerci bisous\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n22 septembre 2021 \u00e0 7 h 49 min\nHello ! Oui pour le yaourt de soja, fais le \u00e9goutter quelques heures avant quand m\u00eame, ou r\u00e9duit la quantit\u00e9 d\u2019eau. Pour le fromage, tu peux tout simplement le supprimer ou utiliser un fromage vegan a la noix de cajou !\nchargement\u2026\nR\u00e9pondre\nLa\u00ebtitia\ndit\u00a0:\n19 novembre 2021 \u00e0 21 h 52 min\nAutres questions. Dans vos ingr\u00e9dients vous parlez de beurre et d\u2019ail mais vous ne pr\u00e9cisez pas quand et comment les utiliser lors de la cuisson?\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n21 novembre 2021 \u00e0 12 h 51 min\nBonjour La\u00ebtitia, oui vous pouvez tout \u00e0 fait les faire la veille pour le lendemain. Conservez-les dans enroul\u00e9s dans un torchon puis dans un tupp ferm\u00e9 pour conserver le moelleux. J\u2019ai ajout\u00e9 la petite \u00e9tape finale avec le beurre et l\u2019ail ! D\u00e9sol\u00e9e pour cet oubli !\nchargement\u2026\nR\u00e9pondre\nLaetitia\ndit\u00a0:\n19 novembre 2021 \u00e0 14 h 59 min\nBonjour! J\u2019ai envie d\u2019essayer cette recette mais est ce que vous pensez qu\u2019on peut les manger froid le lendemain ?\nchargement\u2026\nR\u00e9pondre\nLa\u00ebtitia\ndit\u00a0:\n19 novembre 2021 \u00e0 21 h 44 min\nBonjour! J\u2019aimerai essayer cette recette  mais pensez-vous qu\u2019il est possible de les faire la veille et de les manger pour le coup froid?\nchargement\u2026\nR\u00e9pondre\n4.58 from 52 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 47.0
+}

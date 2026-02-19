@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "title": "Velout\u00e9 de Champignons Express",
+    "description": "Ce velout\u00e9 de Champignons Express est la recette confort d'automne par excellence ! Sa texture est douce et son go\u00fbt riche en umami. Il est tr\u00e8s simple \u00e0 pr\u00e9parer.",
+    "servings": 3,
+    "prepTime": "PT10M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "automne",
+      "champignon",
+      "hiver",
+      "soupes",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/09/Veloute-champignons-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfait pour un repas rapide.",
+      "Id\u00e9al pour un d\u00eener l\u00e9ger apr\u00e8s une longue journ\u00e9e.",
+      "Vous pouvez l'accompagner de cro\u00fbtons maison ou d'une simple tranche de pain complet.",
+      "N'h\u00e9sitez pas \u00e0 ajuster les proportions ou \u00e0 ajouter un peu de thym frais ou de persil pour encore plus de saveur !",
+      "Excellent moyen de profiter des bienfaits des champignons, riches en antioxydants et faibles en calories."
+    ],
+    "slug": "veloute-de-champignons-express",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/09/Veloute-champignons-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/09/25/veloute-de-champignons-express/",
+    "image": "images/veloute-de-champignons-express.webp",
+    "createdAt": "2026-02-09T22:16:25.296185",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 398.1,
+      "protein": 9.3,
+      "fat": 23.0,
+      "carbs": 43.1,
+      "fiber": 7.0,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onions",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "celery",
+      "name": "c\u00e9leri",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "celery"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "mushrooms",
+      "name": "champignons",
+      "quantity": 450.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "paris et portobello",
+      "optional": false,
+      "name_en": "Mushrooms"
+    },
+    {
+      "id": "bouillon_cube",
+      "name": "bouillon cube",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bouillon cube"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Heavy cream"
+    }
+  ],
+  "tools": [
+    "Casserole",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "peel_and_chop_vegetables",
+      "action": "\u00c9pluchez les oignons, carottes et pommes de terre puis coupez grossi\u00e8rement tous les l\u00e9gumes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions",
+        "carrot",
+        "potatoes",
+        "celery",
+        "mushrooms"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faites revenir les l\u00e9gumes dans une casserole avec l'huile d'olive.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_vegetables",
+        "olive_oil"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_broth_and_simmer",
+      "action": "Ajoutez le bouillon cube et versez de l'eau pour couvrir les l\u00e9gumes. Portez \u00e0 \u00e9bullition et couvrez. Laissez mijoter.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_vegetables",
+        "bouillon_cube",
+        "water"
+      ],
+      "produces": "simmered_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_soup",
+      "action": "Mixez la soupe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "simmered_soup"
+      ],
+      "produces": "blended_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cream",
+      "action": "Ajoutez la cr\u00e8me.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blended_soup",
+        "cream"
+      ],
+      "produces": "veloute_champignons",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "veloute_champignons",
+  "originalText": "Velout\u00e9 de Champignons Express - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 septembre 2024\nVelout\u00e9 de Champignons Express\nCe velout\u00e9 de Champignons Express est la recette confort d\u2019automne par excellence ! Quand les journ\u00e9es commencent \u00e0 raccourcir (help !) et que l\u2019automne s\u2019installe, rien de mieux qu\u2019un velout\u00e9 cr\u00e9meux pour r\u00e9chauffer les c\u0153urs !\nCe velout\u00e9 de champignons express est parfait pour un repas rapide. Sa texture est douce et son go\u00fbt riche en umami. Il est tr\u00e8s simple \u00e0 pr\u00e9parer. Il combine des l\u00e9gumes classiques comme les oignons, les carottes et les pommes de terre, pour un r\u00e9sultat sain, nourrissant et r\u00e9confortant.\nLa base de ce velout\u00e9 est classique. Vous faites revenir les l\u00e9gumes dans un peu d\u2019huile d\u2019olive pour lib\u00e9rer toutes leurs saveurs. Ensuite vous les laisser mijoter doucement avec un bouillon. Les champignons, eux, apportent ce c\u00f4t\u00e9 automnal et une belle onctuosit\u00e9 une fois mix\u00e9s. L\u2019ajout de cr\u00e8me fra\u00eeche en fin de cuisson est le petit plus qui rend la soupe encore plus velout\u00e9e, et cr\u00e9meuse. Ce plat est d\u2019ailleurs un excellent moyen de profiter des bienfaits des champignons, riches en antioxydants et faibles en calories.\nEn moins de 10min derri\u00e8re les fourneaux (la cuisson \u00e7a compte pas), vous obtenez une soupe r\u00e9confortante, id\u00e9ale pour un d\u00eener l\u00e9ger apr\u00e8s une longue journ\u00e9e. Vous pouvez l\u2019accompagner de cro\u00fbtons maison ou d\u2019une simple tranche de pain complet. Ce velout\u00e9 est vraiment un plat d\u2019automne incontournable. Comme toujours, n\u2019h\u00e9sitez pas \u00e0 ajuster les proportions ou \u00e0 ajouter un peu de thym frais ou de persil pour encore plus de saveur !\nVelout\u00e9 de champignon express\n4.46\n/5 avec\n77\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n3\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\noignons\n1\ncarotte\n1\nbranche de c\u00e9leri\n2\npommes de terre\n2\nc\u00e0s d\u2019huile d\u2019olive\n450\ng\nde champignons\nici paris et portobello\n1\nbouillon cube\nde l\u2019eau\n100\nml\nde cr\u00e8me\nInstructions\nEpluchez les oignons, carottes et pommes de terre puis coupez grossi\u00e8rement tous les l\u00e9gumes.\nLes faire revenir 5min dans une casserole avec l\u2019huile.\nAjoutez le bouillon cube et versez de l\u2019eau pour couvrir les l\u00e9gumes. Portez \u00e0 \u00e9bullition et couvrez. Laissez mijoter 30min.\nMixez la soupe. Ajoutez la cr\u00e8me. Enjoy !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChampignon\n,\nHiver\n,\nSoupes\nCourge Butternut Hasselback \u00e0 la Feta\nQuiche aux oignons et comt\u00e9\n2 thoughts on \u201cVelout\u00e9 de Champignons Express\u201d\nNato\ndit\u00a0:\n25 septembre 2024 \u00e0 11 h 30 min\nOups y\u2019a pas les champignons !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n25 septembre 2024 \u00e0 22 h 41 min\nComment \u00e7a ?\nchargement\u2026\nR\u00e9pondre\n4.46 from 77 votes (\n77 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

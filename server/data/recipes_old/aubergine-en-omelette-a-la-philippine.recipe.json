@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "title": "Aubergine en omelette \u00e0 la Philippine",
+    "description": "Une recette revisit\u00e9e de Tortang Talong, une omelette aux aubergines typique des Philippines, pr\u00e9par\u00e9e ici avec de la tomate et de la ciboulette.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT40M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergine",
+      "aubergine philippine",
+      "omelette",
+      "tortang talong",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/07/Tortang-Talong-Aubergine-omeltte-2-of-2.jpg",
+    "nationality": "Filipino",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Normalement, il faut faire cuire l'aubergine sur une flamme. Pour fumer la peau et obtenir le go\u00fbt caract\u00e9ristique de ce plat.",
+      "Normalement, il faut utiliser des aubergines chinoises (tout en longueur).",
+      "Normalement la garniture de l'omelette comporte de l'oignon nouveau et de l'ail.",
+      "Servir avec du riz, du ketchup et/ou de la p\u00e2te de piment."
+    ],
+    "slug": "aubergine-en-omelette-a-la-philippine",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/07/Tortang-Talong-Aubergine-omeltte-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/07/11/aubergine-en-omelette-a-la-philippine/",
+    "image": "images/aubergine-en-omelette-a-la-philippine.webp",
+    "createdAt": "2026-02-09T21:50:53.979207",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 10.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 290.2,
+      "protein": 14.3,
+      "fat": 16.7,
+      "carbs": 23.6,
+      "fiber": 10.2,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 5,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "aubergine",
+      "name": "aubergine",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "petite (ou une aubergine allong\u00e9e id\u00e9alement)",
+      "notes": null,
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "egg",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "tomato",
+      "name": "tomate",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "neutral_oil",
+      "name": "huile neutre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    }
+  ],
+  "tools": [
+    "Four",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_aubergine",
+      "action": "Faire cuire l'aubergine enti\u00e8re dans le four pendant 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "aubergine"
+      ],
+      "produces": "roasted_aubergine",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "molle, chair se d\u00e9tachant de la peau"
+    },
+    {
+      "id": "chop_vegetables",
+      "action": "Pendant ce temps, hacher la ciboulette et couper la demi tomate en petits d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chives",
+        "tomato"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_egg_mixture",
+      "action": "Battre l'oeuf dans un plat et y ajouter la ciboulette, la tomate et la sauce soja.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg",
+        "chopped_vegetables",
+        "soy_sauce"
+      ],
+      "produces": "egg_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_aubergine",
+      "action": "Une fois l'aubergine cuite, l'\u00e9plucher avec les mains.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_aubergine"
+      ],
+      "produces": "peeled_aubergine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_aubergine_egg",
+      "action": "D\u00e9poser l'aubergine \u00e9pluch\u00e9e dans le m\u00e9lange d'oeuf et l'\u00e9craser avec une fourchette pour aplatir la chair et y faire entrer l'oeuf au maximum.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_aubergine",
+        "egg_mixture"
+      ],
+      "produces": "aubergine_egg_combination",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faire chauffer un fond d'huile neutre dans une po\u00eale \u00e0 feu moyen-fort.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "neutral_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_omelette_first_side",
+      "action": "Quand l'huile est bien chaude, y d\u00e9poser l'aubergine aplatie et verser le reste de m\u00e9lange d'oeuf par-dessus.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "aubergine_egg_combination",
+        "hot_oil"
+      ],
+      "produces": "half_cooked_omelette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "flip_and_cook",
+      "action": "Retourner l'omelette au bout de 4-5min et faire cuire de l'autre c\u00f4t\u00e9.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "half_cooked_omelette"
+      ],
+      "produces": "aubergine_omelette",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "aubergine_omelette",
+  "originalText": "Aubergine en omelette \u00e0 la Philippine\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 juillet 2023\nAubergine en omelette \u00e0 la Philippine\nVous connaissez ce plat d\u2019Aubergine en omelette \u00e0 la Philippine ? Ou peut-\u00eatre pour les connaisseurs, de son vrai nom : Tortang Talong ?\nBon l\u00e0, c\u2019est une version pas mal revisit\u00e9e par mes soins.\nNormalement, il faut faire cuire l\u2019aubergine sur une flamme. Pour fumer la peau et obtenir le go\u00fbt caract\u00e9ristique de ce plat.\nN\u2019ayant que des plaques \u00e0 induction, je n\u2019ai pas pu cuire mon aubergine de cette fa\u00e7on. Je l\u2019ai donc cuite au four. C\u2019est plus une technique de cuisson qui vient de la cuisine m\u00e9diterran\u00e9enne mais tant pis !\nEt puis, normalement, il faut utiliser des aubergines chinoises. Vous savez les aubergines tout en longueur. Perso, je n\u2019en trouve pas facilement par ici, donc j\u2019ai laiss\u00e9 tomber !\nEt enfin, normalement la garniture de l\u2019omelette comporte de l\u2019oignon nouveau et de l\u2019ail.\nL\u00e0, j\u2019avais envie de tester avec de la tomate et de la ciboulette.\nBref, j\u2019ai pas mal adapt\u00e9 ces Aubergine en omelette \u00e0 la Philippine\u00a0\ud83d\ude42\nMais c\u2019est TROP BON !\nLe r\u00e9sultat donne une sorte d\u2019omelette dans une aubergine. Ou plut\u00f4t une aubergine dans une omelette ? Ou quelque chose entre les 2 ?\nEnfin bref ! C\u2019est d\u00e9licieux !\u00a0C\u2019est plut\u00f4t rapide \u00e0 pr\u00e9parer et c\u2019est vraiment une fa\u00e7on originale de d\u00e9guster vos aubergines !\nEt n\u2019h\u00e9sitez pas \u00e0 tester\nma derni\u00e8re recette d\u2019aubergine au passage\n!\nAubergine en omelette \u00e0 la Philippine\n4.55\n/5 avec\n70\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n1\npersonne\nIngr\u00e9dients\n1x\n2x\n3x\n1\npetite aubergine\nou une aubergine allong\u00e9e id\u00e9alement\n1\noeuf\n\u00bd\ntomate\n15\nbrins de ciboulette\n1\nc\u00e0s de sauce soja\nInstructions\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nY faire cuire l\u2019aubergine enti\u00e8re pendant 30min (dans un petit plat ou sur une plaque de cuisson).\nPendant ce temps, hacher la ciboulette et couper la demi tomate en petits d\u00e9s.\nBattre l\u2019oeuf dans un plat et y ajouter la ciboulette, la tomate et la sauce soja.\nUne fois que l\u2019aubergine est cuite (elle doit \u00eatre molle et la chair doit se d\u00e9tacher de la peau), l\u2019\u00e9plucher avec les mains.\nLa d\u00e9poser dans le m\u00e9lange d\u2019oeuf et l\u2019\u00e9craser avec une fourchette pour aplatir la chair et y faire entrer l\u2019oeuf au maximum.\nFaire chauffer un fond d\u2019huile neutre dans une po\u00eale \u00e0 feu moyen-fort. Quand l\u2019huile est bien chaude, y d\u00e9poser l\u2019aubergine aplatie et verser le reste de m\u00e9lange d\u2019oeuf par-dessus.\nLa retourner au bout de 4-5min et faire cuire de l\u2019autre c\u00f4t\u00e9.\nServir avec du riz, du ketchup et/ou de la p\u00e2te de piment.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\n\u00c9t\u00e9\n,\nNon class\u00e9\n,\nPlats en Sauce\nTags:\naubergine\n,\naubergine philippine\n,\nomelette\n,\ntortang talong\nPanna Cotta compot\u00e9 de Brugnons et Miel\nSalade concombre \u00e9cras\u00e9 feta et aneth\n2 thoughts on \u201cAubergine en omelette \u00e0 la Philippine\u00a0\u201d\nLicoeurne\ndit\u00a0:\n1 ao\u00fbt 2023 \u00e0 13 h 02 min\nQuelle belle d\u00e9couverte! Une recette d\u00e9licieuse alors que je ne suis pas fan des aubergines ( c\u2019est pourquoi je cherche toujours de nouvelles fa\u00e7ons de les consommer). Je referrai cette recette, c\u2019est certain. Merci!\nchargement\u2026\nR\u00e9pondre\nRehoboth\ndit\u00a0:\n6 ao\u00fbt 2023 \u00e0 17 h 24 min\nNice recipe\nchargement\u2026\nR\u00e9pondre\n4.55 from 70 votes (\n68 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

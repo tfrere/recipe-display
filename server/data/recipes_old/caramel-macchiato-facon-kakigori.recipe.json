@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "title": "Caramel Macchiato fa\u00e7on Kakigori",
+    "description": "Inspir\u00e9s par les kakigoris japonais, je vous pr\u00e9sente le Caramel Macchiato dans une version glac\u00e9e, avec une texture d\u00e9licate et l\u00e9g\u00e8re! Id\u00e9al pour se rafra\u00eechir quand les temp\u00e9ratures grimpent\u2026",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "caf\u00e9",
+      "caramel",
+      "caramel macchiato",
+      "glace r\u00e2p\u00e9e",
+      "kakigori",
+      "kitchenaid",
+      "boisson glac\u00e9e",
+      "dessert glac\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/07/Macchiato-glace-kitchenaid-1-of-7.jpg",
+    "nationality": "Japanese-inspired",
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Derni\u00e8rement, nous avons \u00e9t\u00e9 plus que g\u00e2t\u00e9es par KitchenAid\u2026 Apr\u00e8s la sorbeti\u00e8re, c'est l'accessoire \u00e0 r\u00e2per la glace qu'on nous a propos\u00e9 de tester.",
+      "L'accessoire est livr\u00e9 avec 4 petits moules. Ce qui permet d'essayer plusieurs variantes en m\u00eame temps.",
+      "Je vous conseille d'attendre 10 min apr\u00e8s avoir sorti un des moules du cong\u00e9lateur avant de commencer \u00e0 r\u00e2per.",
+      "Soyez cr\u00e9atif et amusez vous \u00e0 inventer des go\u00fbters, desserts, boissons ou encore des m/coktails de folie !"
+    ],
+    "slug": "caramel-macchiato-facon-kakigori",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/07/Macchiato-glace-kitchenaid-1-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/07/04/caramel-macchiato-facon-kakigori/",
+    "image": "images/caramel-macchiato-facon-kakigori.webp",
+    "createdAt": "2026-02-09T21:23:15.710398",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 730.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 100.8,
+      "protein": 5.3,
+      "fat": 5.4,
+      "carbs": 7.5,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 1,
+      "matchedIngredients": 2,
+      "totalIngredients": 4,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 640.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "vanilla_extract",
+      "name": "extrait de vanille",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla extract"
+    },
+    {
+      "id": "strong_coffee",
+      "name": "caf\u00e9 fort",
+      "quantity": 240.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "ou 6 espressos",
+      "optional": false,
+      "name_en": "strong coffee"
+    },
+    {
+      "id": "salted_caramel",
+      "name": "caramel au beurre sal\u00e9",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Salted butter caramel"
+    },
+    {
+      "id": "chocolate_chips",
+      "name": "p\u00e9pites de chocolat",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "optionnel",
+      "optional": true,
+      "name_en": "Chocolate chips"
+    }
+  ],
+  "tools": [
+    "Robot p\u00e2tissier multifonctions (KitchenAid)",
+    "Accessoire \u00e0 r\u00e2per la glace (avec lame fine \"neige\")",
+    "4 petits moules \u00e0 glace (fournis avec l'accessoire)"
+  ],
+  "steps": [
+    {
+      "id": "mix_vanilla_milk",
+      "action": "M\u00e9langer 360ml de lait avec l'extrait de vanille et r\u00e9partir dans 2 des moules \u00e0 glace.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "glace_vanille_cafe",
+      "uses": [
+        "milk",
+        "vanilla_extract"
+      ],
+      "produces": "vanilla_milk_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_coffee_milk",
+      "action": "M\u00e9langer 280ml de lait avec 2 espressos ou 80ml de caf\u00e9 fort et r\u00e9partir dans les 2 moules \u00e0 glace restant.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "glace_vanille_cafe",
+      "uses": [
+        "milk",
+        "strong_coffee"
+      ],
+      "produces": "coffee_milk_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze_ice_creams",
+      "action": "Placer les 4 moules au cong\u00e9lateur minimum 12h.",
+      "duration": "PT12H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "glace_vanille_cafe",
+      "uses": [
+        "vanilla_milk_mixture",
+        "coffee_milk_mixture"
+      ],
+      "produces": "frozen_ice_creams",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_ice_creams",
+      "action": "Sortir les moules \u00e0 glace du cong\u00e9lateur et r\u00e9server pendant 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "frozen_ice_creams"
+      ],
+      "produces": "rested_ice_creams",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shred_vanilla_ice",
+      "action": "Monter l'accessoire \u00e0 r\u00e2per \u00e0 glace sur votre robot avec la lame fine (neige) et placer une apr\u00e8s l'autre les glaces de lait \u00e0 vanille, r\u00e2per les glaces en les r\u00e9partissant dans les 4 coupes (jusqu'\u00e0 mi hauteur/basse des coupes).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "rested_ice_creams"
+      ],
+      "produces": "shredded_vanilla_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "shred_coffee_ice",
+      "action": "R\u00e9p\u00e9ter l'op\u00e9ration avec les glaces \"latte\" ou caf\u00e9 au lait, en les r\u00e9partissant dans les 4 coupes (jusqu'au bord des coupes).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "rested_ice_creams"
+      ],
+      "produces": "shredded_coffee_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_dessert",
+      "action": "Verser sur chaque coupe un espresso froid, puis verser du caramel au beurre sal\u00e9 en essayant de former un quadrillage (si possible) et si vous le souhaitez ajouter quelques p\u00e9pites de chocolat.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "shredded_vanilla_base",
+        "shredded_coffee_layer",
+        "strong_coffee",
+        "salted_caramel",
+        "chocolate_chips"
+      ],
+      "produces": "caramel_macchiato_kakigori",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "caramel_macchiato_kakigori",
+  "originalText": "Caramel Macchiato fa\u00e7on Kakigori - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n4 juillet 2022\nCaramel Macchiato fa\u00e7on Kakigori\nAcc\u00e9der directement \u00e0 la recette\nDerni\u00e8rement, nous avons \u00e9t\u00e9 plus que g\u00e2t\u00e9es par\nKitchenAid\n\u2026 Apr\u00e8s la sorbeti\u00e8re, c\u2019est l\u2019\naccessoire \u00e0 r\u00e2per la glace\nqu\u2019on nous a propos\u00e9 de tester. \u201cMais avec plaisiiiir !\u201d. L\u2019\u00e9t\u00e9 approchant, c\u2019est toujours une bonne id\u00e9e de d\u00e9guster des petites douceurs glac\u00e9es ! Apr\u00e8s quelques recherches, je me suis rendue compte que les possibilit\u00e9s de recettes \u00e9taient nombreuses. Des granit\u00e9s italiens (granita) ou hawa\u00efens (shace ice), en passant par les \u201cpiraguas portoricaines\u201d ou encore les c\u00e9l\u00e8bres kakigori japonais, le choix est large ! Pour mon premier essai, j\u2019avais envie de revisiter une de mes boissons au caf\u00e9 pr\u00e9f\u00e9r\u00e9e : kon\u2019nichiwa Caramel Macchiato fa\u00e7on kakigori !\nPour se lancer, c\u2019est simple. Premi\u00e8rement, il suffit de congeler \u00e0 l\u2019avance (compter bien 12h) du jus de fruit, du caf\u00e9, du th\u00e9 ou infusion, du lait ou tout simplement de l\u2019eau. Alors ce qui est pratique, c\u2019est que l\u2019accessoire est livr\u00e9 avec 4 petits moules. Ce qui permet d\u2019essayer plusieurs variantes en m\u00eame temps. Ensuite, apr\u00e8s avoir choisi la lame de votre choix, fine ou \u00e9paisse, il suffit de fixer l\u2019accessoire sur le robot p\u00e2tissier multifonctions. Je vous conseille d\u2019attendre 10 min apr\u00e8s avoir sorti un des moules du cong\u00e9lateur avant de commencer \u00e0 r\u00e2per. Enfin, vous n\u2019avez plus qu\u2019\u00e0 r\u00e2per et surtout garnir votre glace r\u00e2p\u00e9e ! Sirops, fruits, nappages\u2026 Soyez cr\u00e9atif et amusez vous \u00e0 inventer des go\u00fbters, desserts, boissons ou encore des m/coktails de folie !\nD\u00e9couvrez nos autres recettes de douceurs glac\u00e9es :\nglace au yaourt grec et son coulis de fraise\nou encore le\nnice cream aux fruits rouges\n. Sinon, il vous tente ce Caramel Macchiato fa\u00e7on kakigori?!\nCaramel Macchiato fa\u00e7on Kakigori\nDaniela\nInspir\u00e9s par les kakigoris japonais, je vous pr\u00e9sente le Caramel Macchiato dans une version glac\u00e9e, avec une texture d\u00e9licate et l\u00e9g\u00e8re! Id\u00e9al pour se rafra\u00eechir quand les temp\u00e9ratures grimpent\u2026\n4.68\n/5 avec\n37\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de repos\n12\nheures\nh\nType de plat\nDessert, Drinks, Go\u00fbter\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n640\nml\nlait\n1\ncac d\u2019extrait de vanille\n240\nml\ncaf\u00e9 fort ou 6 espressos\n20\ng\nde caramel au beurre sal\u00e9\nQuelques p\u00e9pites de chocolat\noptionnel\nInstructions\nA faire la veille :\nM\u00e9langer 360ml de lait avec l\u2019extrait de vanille et r\u00e9partir dans 2 des moules \u00e0 glace.\nM\u00e9langer 280ml de lait avec 2 espressos ou 80ml de caf\u00e9 fort et r\u00e9partir dans les 2 moules \u00e0 glace restant.\nPlacer les 4 moules au cong\u00e9lateur minimum 12h.\nR\u00e9alisation des glaces :\nSortir les moules \u00e0 glace du cong\u00e9lateur et r\u00e9server pendant 10 min.\nMonter l\u2019accessoire \u00e0 r\u00e2per \u00e0 glace sur votre robot avec la lame fine (neige) et placer une apr\u00e8s l\u2019autre les glaces de lait \u00e0 vanille, r\u00e2per les glaces en les r\u00e9partissant dans les 4 coupes (jusqu\u2019\u00e0 mi hauteur/basse des coupes)\nR\u00e9p\u00e9ter l\u2019op\u00e9ration avec les glaces \u201clatte\u201d ou caf\u00e9 au lait, en les r\u00e9partissant dans les 4 coupes (jusqu\u2019au bord des coupes).\nVerser sur chaque coupe un espresso froid, puis verser du caramel au beurre sal\u00e9 en essayant de former un quadrillage (si possible) et si vous le souhaitez ajouter quelques p\u00e9pites de chocolat. C\u2019est pr\u00eat ! Bonne d\u00e9gustation !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nBoissons\n,\nGlaces\n,\nRecettes Sucr\u00e9es\nTags:\ncaf\u00e9\n,\ncaramel\n,\ncaramel macchiato\n,\nglace r\u00e2p\u00e9e\n,\nkakigori\n,\nkitchenaid\nClafoutis \u00e0 la coco et fruits rouges\nGranola aux amandes express\n4.68 from 37 votes (\n37 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

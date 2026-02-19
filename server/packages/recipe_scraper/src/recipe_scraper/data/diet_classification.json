@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "description": "Curated lists for diet classification based on ingredient name_en. Used as primary source; LLM-assigned category is fallback only.",
+    "last_updated": "2026-02-18"
+  },
+  "meat": [
+    "chicken", "beef", "pork", "lamb", "veal", "duck", "turkey", "goose",
+    "rabbit", "venison", "bison", "quail", "pheasant", "ostrich",
+    "bacon", "ham", "prosciutto", "pancetta", "sausage", "chorizo",
+    "salami", "pepperoni", "mortadella", "bresaola", "coppa",
+    "ground beef", "ground pork", "ground turkey", "ground lamb",
+    "steak", "roast beef", "pork chop", "lamb chop", "rack of lamb",
+    "chicken breast", "chicken thigh", "chicken leg", "chicken wing",
+    "chicken drumstick", "chicken liver", "duck breast", "duck leg",
+    "foie gras", "pâté", "rillettes", "confit",
+    "beef broth", "chicken broth", "bone broth", "beef stock", "chicken stock",
+    "lardons", "guanciale", "speck",
+    "lard", "manteca", "chicharrón", "suet", "tallow", "schmaltz"
+  ],
+  "seafood": [
+    "salmon", "tuna", "cod", "halibut", "sea bass", "trout", "mackerel",
+    "sardine", "sardines", "anchovy", "anchovies", "herring", "swordfish",
+    "tilapia", "catfish", "snapper", "grouper", "mahi mahi", "sole",
+    "haddock", "pollock", "monkfish", "skate", "pike", "perch", "carp",
+    "shrimp", "prawn", "prawns", "crab", "lobster", "crayfish", "langoustine",
+    "mussel", "mussels", "clam", "clams", "oyster", "oysters",
+    "scallop", "scallops", "squid", "calamari", "octopus",
+    "fish sauce", "oyster sauce", "fish stock",
+    "smoked salmon", "gravlax", "lox", "surimi",
+    "shrimp paste", "belacan", "bagoong", "fermented shrimp",
+    "dried shrimp", "bonito flakes", "katsuobushi", "dashi",
+    "kimchi", "nuoc mam", "nam pla"
+  ],
+  "dairy": [
+    "milk", "whole milk", "skim milk", "buttermilk",
+    "cream", "heavy cream", "whipping cream", "light cream", "half and half",
+    "sour cream", "crème fraîche", "clotted cream",
+    "butter", "salted butter", "unsalted butter", "clarified butter",
+    "cheese", "cheddar", "parmesan", "parmigiano reggiano", "mozzarella",
+    "gruyère", "gruyere", "emmental", "gouda", "brie", "camembert",
+    "blue cheese", "roquefort", "gorgonzola", "stilton", "feta",
+    "goat cheese", "ricotta", "mascarpone", "cream cheese", "cottage cheese",
+    "halloumi", "paneer", "burrata", "pecorino", "manchego",
+    "comté", "raclette", "reblochon", "fontina", "provolone",
+    "yogurt", "greek yogurt", "kefir", "labneh",
+    "whey", "whey protein", "casein",
+    "ghee", "condensed milk", "evaporated milk"
+  ],
+  "egg": [
+    "egg", "eggs", "egg white", "egg whites", "egg yolk", "egg yolks",
+    "meringue", "mayonnaise"
+  ],
+  "non_vegan_other": [
+    "honey", "beeswax", "royal jelly", "propolis",
+    "gelatin", "gelatine", "isinglass",
+    "carmine", "cochineal",
+    "lanolin", "shellac",
+    "worcestershire sauce", "caesar dressing",
+    "marshmallow",
+    "pesto", "basil pesto"
+  ]
+}

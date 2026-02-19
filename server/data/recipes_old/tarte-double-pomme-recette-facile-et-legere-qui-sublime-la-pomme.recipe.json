@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "title": "Tarte double pomme : recette facile et l\u00e9g\u00e8re qui sublime la pomme",
+    "description": "Une tarte simple, r\u00e9confortante et pleine de naturel, avec une p\u00e2te sabl\u00e9e, une couche de compote de pommes fondante et des lamelles de pommes dor\u00e9es au four.",
+    "servings": 1,
+    "prepTime": "PT45M",
+    "cookTime": "PT50M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "pomme",
+      "automne",
+      "hiver",
+      "tarte",
+      "dessert",
+      "v\u00e9g\u00e9tarien",
+      "facile"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/tarte-double-pomme-free-the-pickleTarte-double-pomme-7-of-8-819x1024.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Une excellente fa\u00e7on d'utiliser un gros panier de pommes.",
+      "La compote vapeur permet de pr\u00e9server les vitamines et les fibres.",
+      "\u00c0 d\u00e9guster ti\u00e8de, avec un th\u00e9 fumant ou une boule de glace \u00e0 la vanille."
+    ],
+    "slug": "tarte-double-pomme-recette-facile-et-legere-qui-sublime-la-pomme",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/10/tarte-double-pomme-free-the-pickleTarte-double-pomme-7-of-8-819x1024.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/10/12/tarte-double-pomme/",
+    "image": "images/tarte-double-pomme-recette-facile-et-legere-qui-sublime-la-pomme.webp",
+    "createdAt": "2026-02-09T23:11:12.634309",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 80.0,
+    "totalCookingTime": 10.0,
+    "nutritionPerServing": {
+      "calories": 3143.8,
+      "protein": 58.5,
+      "fat": 112.4,
+      "carbs": 477.8,
+      "fiber": 29.8,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "pommes",
+      "name": "pommes",
+      "quantity": 7.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "7-8 pommes au total",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "sucre_supplementaire",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour saupoudrer",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "beurre_supplementaire",
+      "name": "beurre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "pour r\u00e9partir sur les pommes",
+      "optional": false,
+      "name_en": "butter"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 tarte",
+    "Cuiseur vapeur"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "Dans un saladier, versez la farine, le sucre et le sel, puis ajoutez le beurre en petits morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sabl\u00e9e",
+      "uses": [
+        "farine",
+        "sucre",
+        "sel",
+        "beurre"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_crumble",
+      "action": "M\u00e9langez jusqu'\u00e0 avoir incorpor\u00e9 le beurre et obtenir une consistance de crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sabl\u00e9e",
+      "uses": [
+        "crumble_mix"
+      ],
+      "produces": "beurre_incorpore",
+      "requires": [],
+      "visualCue": "consistance de crumble"
+    },
+    {
+      "id": "add_egg_knead",
+      "action": "Ajoutez l'\u0153uf et p\u00e9trissez jusqu'\u00e0 obtenir une boule lisse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sabl\u00e9e",
+      "uses": [
+        "beurre_incorpore",
+        "oeuf"
+      ],
+      "produces": "pate_sablee_brute",
+      "requires": [],
+      "visualCue": "boule lisse"
+    },
+    {
+      "id": "chill_dough",
+      "action": "Placez la boule dans un bol, couvrez et r\u00e9servez au frais pendant au moins 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te sabl\u00e9e",
+      "uses": [
+        "pate_sablee_brute"
+      ],
+      "produces": "pate_sablee_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_core_apples",
+      "action": "Pelez puis \u00e9p\u00e9pinez 4-5 pommes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "compote vapeur",
+      "uses": [
+        "pommes"
+      ],
+      "produces": "pommes_pelees_ep\u00e9pinees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "steam_apples",
+      "action": "Coupez-les en gros morceaux et faites-les cuire \u00e0 la vapeur pendant environ 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "compote vapeur",
+      "uses": [
+        "pommes_pelees_ep\u00e9pinees"
+      ],
+      "produces": "pommes_cuites_vapeur",
+      "requires": [],
+      "visualCue": "pommes tendres"
+    },
+    {
+      "id": "puree_apples",
+      "action": "Une fois que les pommes sont tendres, r\u00e9duisez-les en pur\u00e9e.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "compote vapeur",
+      "uses": [
+        "pommes_cuites_vapeur"
+      ],
+      "produces": "compote_pommes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_dough",
+      "action": "Abaissez la p\u00e2te sabl\u00e9e et placez-la dans un moule \u00e0 tarte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_sablee_reposee"
+      ],
+      "produces": "pate_etalee_moule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_apples",
+      "action": "Pelez, \u00e9p\u00e9pinez et coupez 3 pommes en lamelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pommes"
+      ],
+      "produces": "pommes_lamelles",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_tart",
+      "action": "\u00c9talez la compote de pommes sur la p\u00e2te, puis disposez les lamelles de pommes par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "pate_etalee_moule",
+        "compote_pommes",
+        "pommes_lamelles"
+      ],
+      "produces": "tarte_assemblee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_toppings",
+      "action": "Saupoudrez de 2 cuill\u00e8res \u00e0 soupe de sucre et r\u00e9partissez 1 cuill\u00e8re \u00e0 soupe de beurre en petits morceaux sur les pommes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_assemblee",
+        "sucre_supplementaire",
+        "beurre_supplementaire"
+      ],
+      "produces": "tarte_garnie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tart",
+      "action": "Enfournez pendant 40min.",
+      "duration": "PT40M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assemblage et cuisson",
+      "uses": [
+        "tarte_garnie"
+      ],
+      "produces": "tarte_double_pomme_cuite",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_double_pomme_cuite",
+  "originalText": "Tarte Double Pomme | Recette Facile et Gourmande pour le Go\u00fbter\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n12 octobre 2025\nTarte double pomme : recette facile et l\u00e9g\u00e8re qui sublime la pomme\nAh, la\ntarte double pomme\n! C\u2019est le genre de\ndessert\nqu\u2019on pr\u00e9pare sans se prendre la t\u00eate, mais qui\nembaume toute la maison\n. Ici, pas de chichi ni d\u2019exc\u00e8s de\nsucre\n. Juste\nle go\u00fbt franc et doux des pommes\n, travaill\u00e9es deux fois : en\ncompote fondante\net en\nlamelles dor\u00e9es au four\n. Une\ntarte simple\n,\nr\u00e9confortante\net pleine de\nnaturel\n, qui met \u00e0 l\u2019honneur\nle fruit star de l\u2019automne\n. En plus, c\u2019est une excellente fa\u00e7on d\u2019utiliser un\ngros panier de pommes\ntout en profitant d\u2019une\ncompote maison riche en nutriments\n. Une\np\u00e2te sabl\u00e9e\n, une couche g\u00e9n\u00e9reuse de\npur\u00e9e de pommes\n, quelques\ntranches fines\npar-dessus\u2026 et au\nfour\n! Le r\u00e9sultat ? Une\ntarte double texture\nqui fond,\ncroustille\net fait\ncraquer\n\u00e0 chaque\nbouch\u00e9e\n.\nTable des mati\u00e8res\n1\nLa pomme, fruit star de l\u2019automne et alli\u00e9e du quotidien\n2\nUne tarte douce, pas trop sucr\u00e9e, juste ce qu\u2019il faut\n3\nTarte double pomme\n4\nLa meilleure fa\u00e7on d\u2019utiliser toutes vos pommes d\u2019automne\n5\nLa compote vapeur : simple, rapide et pleine de bons nutriments\nLa pomme, fruit star de l\u2019automne et alli\u00e9e du quotidien\nCroquante, juteuse, douce ou acidul\u00e9e, la pomme fait partie de ces fruits qu\u2019on aime retrouver d\u00e8s les premiers jours d\u2019automne. Riche en fibres, en antioxydants et en vitamine C, elle aide \u00e0 booster l\u2019\u00e9nergie tout en favorisant une digestion l\u00e9g\u00e8re. Bref, une alli\u00e9e parfaite pour nos desserts maison ! Et son c\u00f4t\u00e9 ultra polyvalent en cuisine en fait une base id\u00e9ale pour tartes, g\u00e2teaux ou compotes. Si, comme nous, vous aimez la retrouver sous toutes ses formes, d\u00e9couvrez toutes nos\nrecettes \u00e0 base de pommes\n. On vous conseille particuli\u00e8rement le\nclafoutis pommes caram\u00e9lis\u00e9es et lait de coco\n, l\u2019\ninvisible pomme cannelle\ntout en l\u00e9g\u00e8ret\u00e9, ou encore les\nchurripom \u00e0 la cannelle\n, un petit plaisir croustillant et r\u00e9gressif \u00e0 souhait !\nUne tarte douce, pas trop sucr\u00e9e, juste ce qu\u2019il faut\nCe qu\u2019on aime dans cette tarte double pomme, c\u2019est sa simplicit\u00e9. Avec seulement un peu de sucre ajout\u00e9, on laisse toute la place \u00e0 la saveur authentique des pommes. Pas besoin d\u2019en faire trop : leur c\u00f4t\u00e9 acidul\u00e9 et juteux suffit \u00e0 cr\u00e9er l\u2019\u00e9quilibre parfait entre fra\u00eecheur et gourmandise. C\u2019est le genre de dessert qu\u2019on peut savourer sans culpabilit\u00e9, au petit-d\u00e9jeuner comme au go\u00fbter. Et si, comme nous, vous aimez les desserts l\u00e9gers \u00e0 base de pommes, testez aussi notre\ncake aux pommes sans mati\u00e8re grasse\n: moelleux et fondant.\nTarte double pomme\n4.45\n/5 avec\n98\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n1\ntarte\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te sabl\u00e9e\n200\ng\nde farine\n50\ng\nde sucre\n1\npinc\u00e9e de sel\n100\ng\nde beurre \u00e0 temp\u00e9rature ambiante\n1\noeuf\nPour la compote vapeur\n4-5\npommes\nPour la garniture\n3\npommes\n2\nc\u00e0s de scure\n1\nc\u00e0s de beurre\nInstructions\nPour la p\u00e2te\nDans un saladier, versez la farine, le sucre et le sel, puis le beurre en petits morceaux.\nM\u00e9langez jusqu\u2019\u00e0 avoir incorpor\u00e9 le beurre et obtenir une consistance de crumble.\nAjoutez l\u2019\u0153uf et p\u00e9trissez jusqu\u2019\u00e0 obtenir une boule lisse.\nPlacez dans un bol, couvrez et r\u00e9servez au frais au moins 30min.\nPour la compote vapeur\nPelez puis \u00e9p\u00e9pinez les pommes.\nCoupez-les en gros morceaux et faites-les cuire \u00e0 la vapeur environ 10-15min.\nUne fois que les pommes sont tendres, reduisez-les en pur\u00e9e.\nPour la tarte\nAbaissez la p\u00e2te et placez-la dans un moule.\nPr\u00e9chauffez le four \u00e0 200\u00b0C.\nPelez, \u00e9p\u00e9pinez et coupez les pommes en lamelles.\n\u00c9talez la compote sur la p\u00e2te, puis placez les lamelles de pommes.\nSaupoudrez de sucre et r\u00e9partissez des petits morceaux de beurre sur les pommes.\nEnfournez 40min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa meilleure fa\u00e7on d\u2019utiliser toutes vos pommes d\u2019automne\nOn a tous connu ce moment o\u00f9 le panier \u00e0 fruits d\u00e9borde de pommes un peu trop m\u00fbres. Cette tarte double pomme est la solution parfaite pour leur donner une seconde vie ! Entre la compote maison et les fines lamelles dor\u00e9es au four, c\u2019est un vrai concentr\u00e9 de douceur automnale. En plus, elle embaume toute la cuisine d\u2019un parfum irr\u00e9sistible. Et si vous \u00eates aussi fan que nous des desserts \u00e0 la pomme, laissez-vous tenter par nos autres versions gourmandes : la\ntarte aux pommes rustique\nau charme brut et la\nDutch Apple Pie\nultra g\u00e9n\u00e9reuse fa\u00e7on crumble am\u00e9ricain.\nLa compote vapeur : simple, rapide et pleine de bons nutriments\nPr\u00e9parer une compote maison, c\u2019est d\u00e9j\u00e0 un plaisir. Mais en version cuisson vapeur, c\u2019est encore mieux ! Cette m\u00e9thode permet de garder la texture fondante des pommes tout en pr\u00e9servant leurs vitamines et leurs fibres. Pas besoin de sucre ajout\u00e9. La pomme se suffit \u00e0 elle-m\u00eame pour offrir un go\u00fbt naturellement doux et \u00e9quilibr\u00e9. Et en bonus, c\u2019est rapide, sans surveillance et parfait pour vos desserts, tartes ou go\u00fbters improvis\u00e9s. On vous en parle plus en d\u00e9tail dans notre recette d\u00e9di\u00e9e \u00e0 la\ncompote de pommes vapeur\n. Une base saine et maligne qu\u2019on adore pr\u00e9parer toute l\u2019ann\u00e9e.\nLa tarte double pomme, c\u2019est la douceur incarn\u00e9e : une p\u00e2te sabl\u00e9e croustillante, une compote fondante et des lamelles dor\u00e9es \u00e0 souhait. Simple, peu sucr\u00e9e et pleine de saveurs naturelles, elle c\u00e9l\u00e8bre tout ce qu\u2019on aime dans la pomme : son parfum, sa tendresse et son esprit r\u00e9confortant. \u00c0 d\u00e9guster ti\u00e8de, avec un th\u00e9 fumant ou une boule de glace \u00e0 la vanille, pour prolonger un peu la magie de l\u2019automne. Envie d\u2019encore plus d\u2019inspirations fruit\u00e9es et gourmandes ?  Retrouvez toutes nos\nrecettes \u00e0 base de pommes\npour continuer \u00e0 croquer la saison \u00e0 pleines dents. Alors, envie de prolonger la gourmandise ?\nSi cette tarte double pomme vous a r\u00e9gal\u00e9s, attendez de d\u00e9couvrir nos autres cr\u00e9ations fruit\u00e9es et croustillantes ! Des tartes rustiques aux galettes dor\u00e9es, il y en a pour toutes les envies sucr\u00e9es. Toujours simples, de saison et pleines de charme maison. Explorez toutes nos\nrecettes de tartes et galettes\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nHiver\n,\nPomme\n,\nRecettes par Fruit\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\n,\nTartes et Galettes\nFocaccia figue brousse miel : la recette facile qui sent bon la fin de l\u2019\u00e9t\u00e9\nRago\u00fbt de lentilles \u00e0 la betterave : simple, rustique et absolument d\u00e9licieux\n5 thoughts on \u201cTarte double pomme : recette facile et l\u00e9g\u00e8re qui sublime la pomme\u201d\nViviane / Quoi qu'on mange ?\ndit\u00a0:\n12 octobre 2025 \u00e0 10 h 56 min\nD\u00e9licieux souvenir de l\u2019enfance gourmande, maman la pr\u00e9parait plus ou moins comme cela, toujours les pommes couch\u00e9es sur de la compote de pommes. Un r\u00e9gal que vos photos mettent si joliment en valeur.\nBon dimanche \u00e0 vous. Viviane\nchargement\u2026\nR\u00e9pondre\njulia\ndit\u00a0:\n19 octobre 2025 \u00e0 16 h 33 min\nUn r\u00e9gal! Tout est parfait et mention sp\u00e9ciale \u00e0 la compote de pomme vapeur.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n20 octobre 2025 \u00e0 17 h 36 min\nMerci !!\nchargement\u2026\nR\u00e9pondre\nB\u00e9atrice\ndit\u00a0:\n11 novembre 2025 \u00e0 20 h 21 min\nBonjour, j\u2019ai fait cette tarte pour un th\u00e9\u00e2tre appart chez des amis. \u00c7a faisait des ann\u00e9es que je n\u2019avais pas  fait de pate. Elle est tr\u00e8s bonne. Au fond, j\u2019ai mis compote pommes et framboises. Elle a eu beaucoup de succ\u00e8s. Je  garde votre recette. Je  vais visiter r\u00e9guli\u00e8rement votre site.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 novembre 2025 \u00e0 23 h 12 min\nMerci pour votre retour ! Je suis ravie !\nchargement\u2026\nR\u00e9pondre\n4.45 from 98 votes (\n95 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 10.0
+}

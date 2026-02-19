@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "title": "Lentilles et kale au garam masala",
+    "description": "Un mijot\u00e9 de lentilles et kale au garam masala, un plat d'hiver nourrissant, parfum\u00e9 et simple \u00e0 pr\u00e9parer, qui se conserve et se cong\u00e8le tr\u00e8s bien.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "lentilles",
+      "kale",
+      "garam masala",
+      "hiver",
+      "v\u00e9g\u00e9tarien",
+      "vegan",
+      "mijot\u00e9",
+      "coco",
+      "plat en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/12/Lentilles-kale-au-garam-massala-1-of-4.jpg",
+    "nationality": "Indian-inspired",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se conserve 3 jours au r\u00e9frig\u00e9rateur.",
+      "Se cong\u00e8le tr\u00e8s bien.",
+      "Pour r\u00e9chauffer, ajouter un trait d'eau ou de lait v\u00e9g\u00e9tal si la sauce a \u00e9paissi.",
+      "Id\u00e9al pour le meal prep.",
+      "Accompagnements sugg\u00e9r\u00e9s : riz, quinoa, naan, pita, coriandre fra\u00eeche, chutney."
+    ],
+    "slug": "lentilles-et-kale-au-garam-masala",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/12/Lentilles-kale-au-garam-massala-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/12/11/lentilles-kale-garam-masala/",
+    "image": "images/lentilles-et-kale-au-garam-masala.webp",
+    "createdAt": "2026-02-09T23:19:19.370826",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 64.0,
+    "totalCookingTime": 29.0,
+    "nutritionPerServing": {
+      "calories": 584.6,
+      "protein": 16.1,
+      "fat": 44.1,
+      "carbs": 39.9,
+      "fiber": 11.8,
+      "confidence": "high",
+      "resolvedIngredients": 10,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 15.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "star_anise",
+      "name": "anis \u00e9toil\u00e9",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "star anise"
+    },
+    {
+      "id": "fennel_seeds",
+      "name": "graines de fenouil",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fennel seeds"
+    },
+    {
+      "id": "clove",
+      "name": "clou de girofle",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "clove"
+    },
+    {
+      "id": "garam_masala",
+      "name": "garam masala",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garam masala"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "coconut_cream",
+      "name": "cr\u00e8me de coco",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coconut cream"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "green_lentils",
+      "name": "lentilles vertes",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "rinc\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Green lentils"
+    },
+    {
+      "id": "kale",
+      "name": "chou kale",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Kale"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "arachide par ex",
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "make_onion_paste",
+      "action": "Pelez l'oignon, l'ail et le gingembre. Placez-les dans un mixeur et mixez jusqu'\u00e0 obtenir une p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion",
+        "garlic",
+        "ginger"
+      ],
+      "produces": "onion_garlic_ginger_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffer l'huile dans une casserole.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_paste_and_spices",
+      "action": "Ajoutez la p\u00e2te d'oignon, d'ail et de gingembre, l'anis \u00e9toil\u00e9, les graines de fenouil et le clou de girofle.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion_garlic_ginger_paste",
+        "star_anise",
+        "fennel_seeds",
+        "clove"
+      ],
+      "produces": "spiced_paste_mixture",
+      "requires": [
+        "hot_oil"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "saute_until_fragrant",
+      "action": "Faites revenir \u00e0 feu moyen jusqu'\u00e0 ce que le m\u00e9lange commence \u00e0 colorer et \u00e0 sentir bon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "spiced_paste_mixture"
+      ],
+      "produces": "fragrant_spiced_paste",
+      "requires": [],
+      "visualCue": "commence \u00e0 colorer et \u00e0 sentir bon"
+    },
+    {
+      "id": "add_garam_masala_and_tomato",
+      "action": "Ajoutez le garam masala et le concentr\u00e9 de tomate. M\u00e9langez bien, puis ajoutez les lentilles rinc\u00e9es.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "fragrant_spiced_paste",
+        "garam_masala",
+        "tomato_paste",
+        "green_lentils"
+      ],
+      "produces": "lentil_spice_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Versez la cr\u00e8me de coco et l'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentil_spice_mixture",
+        "coconut_cream",
+        "water"
+      ],
+      "produces": "lentil_stew_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_lentils",
+      "action": "M\u00e9langez, portez \u00e0 \u00e9bullition, puis baissez le feu et laissez mijoter environ 35min \u00e0 couvert, jusqu'\u00e0 ce que les lentilles soient tendres. Remuez de temps en temps et ajoutez un peu d'eau si n\u00e9cessaire : le plat doit rester bien en sauce.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "lentil_stew_base"
+      ],
+      "produces": "cooked_lentils",
+      "requires": [],
+      "visualCue": "lentilles tendres, plat bien en sauce"
+    },
+    {
+      "id": "prepare_kale",
+      "action": "\u00d4tez la tige centrale des feuilles de kale et hachez-les.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "kale"
+      ],
+      "produces": "chopped_kale",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_kale",
+      "action": "En fin de cuisson, ajoutez le kale. Laissez cuire encore 10min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_lentils",
+        "chopped_kale"
+      ],
+      "produces": "lentilles_kale_stew",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_and_serve",
+      "action": "Servez chaud, accompagn\u00e9 de riz, de pains plats type naan ou pita, de coriandre et \u00e9ventuellement d'un chutney.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentilles_kale_stew",
+        "salt",
+        "pepper"
+      ],
+      "produces": "lentilles_et_kale_au_garam_masala",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "lentilles_et_kale_au_garam_masala",
+  "originalText": "Lentilles et kale au garam masala, un plat d\u2019hiver r\u00e9confortant\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n11 d\u00e9cembre 2025\nLentilles et kale au garam masala : un plat d\u2019hiver nourrissant et parfum\u00e9\nVous cherchez un plat d\u2019hiver \u00e0 la fois nourrissant, parfum\u00e9 et simple \u00e0 pr\u00e9parer ? Ce mijot\u00e9 de lentilles et kale au garam masala coche toutes les cases ! Entre les \u00e9pices, la douceur de la cr\u00e8me de coco et deux ingr\u00e9dients phares, les lentilles et le kale, cette recette a tout pour devenir un incontournable de vos repas d\u2019hiver.\nC\u2019est un plat qui mijote tranquillement, se conserve tr\u00e8s bien, et surtout, se cong\u00e8le sans perdre sa texture ni son go\u00fbt. Un vrai alli\u00e9 pour les semaines charg\u00e9es o\u00f9 l\u2019on aime retrouver un repas chaud et complet sans avoir \u00e0 cuisiner chaque soir.\nLe garam masala, m\u00e9lange d\u2019\u00e9pices originaire d\u2019Inde, apporte une chaleur aromatique douce et ronde, sans piquant. Associ\u00e9 \u00e0 l\u2019anis \u00e9toil\u00e9, aux graines de fenouil et au clou de girofle, il donne \u00e0 ce plat une profondeur tr\u00e8s agr\u00e9able, parfaite pour la saison froide.\nEntre la richesse des lentilles, la douceur de la coco et la vitalit\u00e9 du kale, on obtient un plat simple et plein de caract\u00e8re.\nTable des mati\u00e8res\n1\nPourquoi associer les lentilles et le kale ?\n2\nLe garam masala : c\u2019est quoi exactement ?\n3\nUn plat d\u2019hiver qui mijote tranquillement\n4\nId\u00e9al pour les repas \u00e0 pr\u00e9parer en avance\n5\nComment servir ces lentilles et kale au garam masala ?\n6\nLentilles et kale au garam masala\n7\nPour aller plus loin\n8\nPour r\u00e9sumer, les lentilles et kale au garam masala\nPourquoi associer les lentilles et le kale ?\nCe duo form\u00e9 par les lentilles et le kale est particuli\u00e8rement int\u00e9ressant, autant d\u2019un point de vue culinaire que nutritionnel.\nLes lentilles : un essentiel de l\u2019hiver\nLes lentilles comptent parmi les l\u00e9gumineuses les plus int\u00e9ressantes d\u2019un point de vue nutritionnel. Elles offrent :\ndes prot\u00e9ines v\u00e9g\u00e9tales, pour des repas complets sans viande ;\ndes fibres, essentielles pour une digestion confortable ;\ndu fer et du magn\u00e9sium, deux min\u00e9raux cl\u00e9s pour soutenir l\u2019\u00e9nergie, la concentration et la r\u00e9cup\u00e9ration ;\ndes vitamines du groupe B, qui participent au m\u00e9tabolisme et \u00e0 la vitalit\u00e9.\nUn ensemble qui les rend particuli\u00e8rement adapt\u00e9es aux plats mijot\u00e9s d\u2019hiver, \u00e9quilibr\u00e9s et nourrissants. De plus, leur capacit\u00e9 \u00e0 absorber les saveurs en fait un support parfait pour les \u00e9pices.\nLe kale : un l\u00e9gume \u00e0 red\u00e9couvrir\nLe kale (ou chou fris\u00e9) s\u2019est impos\u00e9 dans nos cuisines pour une bonne raison : c\u2019est aussi l\u2019un des l\u00e9gumes les plus riches sur le plan nutritionnel. Il apporte naturellement :\nde la vitamine K et de la vitamine C, essentielles pour l\u2019immunit\u00e9 et la sant\u00e9 des os ;\ndu calcium v\u00e9g\u00e9tal, bien assimil\u00e9 ;\ndes fibres, b\u00e9n\u00e9fiques pour la digestion ;\ndes antioxydants puissants, qui prot\u00e8gent les cellules du stress oxydatif.\nLorsqu\u2019il mijote doucement dans une sauce aromatique, il devient tendre, fondant et agr\u00e9able, tout en perdant l\u2019amertume qu\u2019on lui conna\u00eet parfois.\nAssoci\u00e9 aux lentilles, le kale permet d\u2019obtenir un plat complet, v\u00e9g\u00e9tal et rassasiant, riche en nutriments essentiels tout en restant simple \u00e0 pr\u00e9parer.\nLe garam masala : c\u2019est quoi exactement ?\nLe garam masala est un m\u00e9lange d\u2019\u00e9pices traditionnel originaire d\u2019Inde. Il ne s\u2019agit pas d\u2019une \u00e9pice unique, mais d\u2019une combinaison soigneusement \u00e9quilibr\u00e9e, g\u00e9n\u00e9ralement compos\u00e9e de :\ncoriandre,\ncumin,\ncardamome,\ncannelle,\ngirofle,\npoivre,\nmuscade.\nIl existe autant de versions que de r\u00e9gions, de familles et de cuisines, mais l\u2019id\u00e9e reste la m\u00eame : apporter de la chaleur aromatique, sans piquant, avec des notes enveloppantes.\nDans ce plat, le garam masala fait toute la diff\u00e9rence. Il donne de la profondeur et se marie tr\u00e8s bien avec l\u2019onctuosit\u00e9 de la cr\u00e8me de coco.\nCe n\u2019est pas un curry, ni un m\u00e9lange \u00e9pic\u00e9 fort. C\u2019est une \u00e9pice douce, id\u00e9ale pour ceux qui aiment les parfums chauds.\nUn plat d\u2019hiver qui mijote tranquillement\nLa pr\u00e9paration de ce plat est simple et repose surtout sur une cuisson douce.\nUne fois les lentilles et la sauce r\u00e9unies dans la casserole, il suffit de laisser mijoter. Les lentilles absorbent les saveurs, la sauce s\u2019\u00e9paissit l\u00e9g\u00e8rement, et les \u00e9pices se r\u00e9v\u00e8lent au fil de la cuisson.\nEn fin de cuisson, l\u2019ajout du kale apporte une touche v\u00e9g\u00e9tale, une couleur vive et un contraste tr\u00e8s agr\u00e9able.\nId\u00e9al pour les repas \u00e0 pr\u00e9parer en avance\nGr\u00e2ce \u00e0 sa texture onctueuse et \u00e0 la tenue des lentilles, ce mijot\u00e9 se conserve tr\u00e8s bien.\nVous pouvez le garder 3 jours au r\u00e9frig\u00e9rateur dans une bo\u00eete herm\u00e9tique, sans qu\u2019il ne perde en saveur.\nIl se cong\u00e8le aussi tr\u00e8s bien, et supporte la d\u00e9cong\u00e9lation : la texture reste intacte et les \u00e9pices continuent m\u00eame \u00e0 se d\u00e9velopper.\nPour le r\u00e9chauffer, il suffit de le remettre doucement \u00e0 la casserole ou au micro-ondes.\nSi la sauce a un peu \u00e9paissi, ce qui est normal avec la cr\u00e8me de coco, ajoutez un trait d\u2019eau ou de lait v\u00e9g\u00e9tal pour retrouver la consistance d\u2019origine.\nC\u2019est un plat tr\u00e8s pratique \u00e0 int\u00e9grer dans une routine de meal prep d\u2019hiver : il se pr\u00e9pare en quantit\u00e9, se conserve bien et reste d\u00e9licieux sur plusieurs jours.\nComment servir ces lentilles et kale au garam masala ?\nIl peut se d\u00e9guster tel quel, mais s\u2019accorde aussi tr\u00e8s bien avec :\ndu riz (basmati ou complet),\ndu quinoa,\ndes pains plats type naan ou pita,\nun peu de coriandre fra\u00eeche,\net, pour ceux qui aiment les touches sucr\u00e9es-acidul\u00e9es, un chutney maison.\nSa texture et ses \u00e9pices douces en font un plat qui se marie facilement avec de nombreuses garnitures, selon vos envies et ce que vous avez sous la main.\nPour accompagner encore mieux ce mijot\u00e9, voici ici mes recettes pour pr\u00e9parer\ndes pitas maison\nou un\nchutney de menthe et coriandre\n.\nLentilles et kale au garam masala\n4.46\n/5 avec\n81\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon\n3\ngousses d\u2019ail\n15\ng\nde gingembre frais\n1\nanis \u00e9toil\u00e9\n\u00bd\nc\u00e0c de graines de fenouil\n1\nclou de girofle\n2\nc\u00e0c de garam masala\n1\nc\u00e0s de concentr\u00e9 de tomate\n400\nml\nde cr\u00e8me de coco\n200\nml\nd\u2019eau\n150\ng\nde lentilles vertes\n200\ng\nde chou kale\n2\nc\u00e0s d\u2019huile v\u00e9g\u00e9tale neutre\narachide par ex\nSel\npoivre\nInstructions\nPelez l\u2019oignon, l\u2019ail et le gingembre. Placez-les dans un mixeur et mixez jusqu\u2019\u00e0 obtenir une p\u00e2te.\nFaites chauffer l\u2019huile dans une casserole. Ajoutez la p\u00e2te d\u2019oignon, d\u2019ail et de gingembre, l\u2019anis \u00e9toil\u00e9, les graines de fenouil et le clou de girofle.\nFaites revenir \u00e0 feu moyen jusqu\u2019\u00e0 ce que le m\u00e9lange commence \u00e0 colorer et \u00e0 sentir bon.\nAjoutez le garam masala et le concentr\u00e9 de tomate. M\u00e9langez bien, puis ajoutez les lentilles rinc\u00e9es.\nVersez la cr\u00e8me de coco et l\u2019eau.\nM\u00e9langez, portez \u00e0 \u00e9bullition, puis baissez le feu et laissez mijoter environ 35 minutes \u00e0 couvert, jusqu\u2019\u00e0 ce que les lentilles soient tendres.\nRemuez de temps en temps et ajoutez un peu d\u2019eau si n\u00e9cessaire : le plat doit rester bien en sauce.\n\u00d4tez la tige centrale de feuilles de kale et hachez-les.\nEn fin de cuisson, ajoutez le kale. Laissez cuire encore 10 minutes.\nServez chaud, accompagn\u00e9 de riz, de pains plats type naan ou pita, de coriandre et \u00e9ventuellement d\u2019un chutney !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nPour aller plus loin\nEnvie d\u2019explorer d\u2019autres fa\u00e7ons de cuisiner le kale ou les lentilles cet hiver ? Voici quelques id\u00e9es qui prolongent l\u2019esprit chaleureux et nourrissant de cette recette.\nSalade de chou kale, miel et cacahu\u00e8tes\nUne salade croquante et fra\u00eeche qui marie la douceur du miel au c\u00f4t\u00e9 grill\u00e9 des cacahu\u00e8tes. Parfaite pour ajouter une touche plus l\u00e9g\u00e8re \u00e0 vos repas d\u2019hiver tout en profitant des bienfaits du kale.\nRago\u00fbt de lentilles \u00e0 la betterave\nUn plat color\u00e9 et r\u00e9confortant o\u00f9 la betterave apporte une note douce et l\u00e9g\u00e8re. Id\u00e9al pour varier les plaisirs tout en restant sur une base v\u00e9g\u00e9 simple.\nSoupe de courge, lentilles corail et quinoa au dukkah\nUne soupe compl\u00e8te et parfum\u00e9e, riche en textures et en prot\u00e9ines v\u00e9g\u00e9tales. Le dukkah vient ajouter une touche croquante et \u00e9pic\u00e9e qui transforme un bol de soupe en v\u00e9ritable repas.\nPour r\u00e9sumer, les lentilles et kale au garam masala\nCe plat de lentilles et kale au garam masala r\u00e9unit tout ce qui fait un repas d\u2019hiver r\u00e9confortant : des \u00e9pices, une sauce cr\u00e9meuse et deux ingr\u00e9dients nutritifs et rassasiants.\nIl est simple \u00e0 pr\u00e9parer, agr\u00e9able \u00e0 d\u00e9guster et se conserve tr\u00e8s bien, ce qui en fait un parfait compagnon des journ\u00e9es froides et charg\u00e9es.\nUne recette v\u00e9g\u00e9tale, \u00e9quilibr\u00e9e et chaleureuse, qui montre \u00e0 quel point les plats d\u2019hiver peuvent \u00eatre nourrissants et parfum\u00e9s avec des ingr\u00e9dients simples.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChoux\n,\nHiver\n,\nOignon\n,\nPlats en Sauce\nL\u00e9gumes d\u2019hiver fa\u00e7on couscous : un plat complet, simple et \u00e9conomique\nChoux de Bruxelles caram\u00e9lis\u00e9s au sirop d\u2019\u00e9rable et aux noix\n4.46 from 81 votes (\n81 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 29.0
+}

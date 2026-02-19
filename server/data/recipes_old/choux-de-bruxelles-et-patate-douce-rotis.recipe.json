@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "title": "Choux de Bruxelles et patate douce r\u00f4tis \ud83c\udf42",
+    "description": "Une recette simple et gourmande qui r\u00e9unit deux l\u00e9gumes d'automne, les choux de Bruxelles et la patate douce, r\u00f4tis avec du tofu fum\u00e9 et une marinade au miso et sirop d'\u00e9rable.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT35M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "automne",
+      "hiver",
+      "choux",
+      "patate douce",
+      "plats au four",
+      "v\u00e9g\u00e9tarien",
+      "vegan (optionnel)",
+      "tofu"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/11/Choux-de-bruxelles-rotis-au-miso-1-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La feta est optionnelle ; sans elle, la recette est vegan.",
+      "Le tofu fum\u00e9 amande s\u00e9same de la marque Taifun est recommand\u00e9.",
+      "Les choux de Bruxelles r\u00f4tis perdent leur amertume."
+    ],
+    "slug": "choux-de-bruxelles-et-patate-douce-rotis",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/11/Choux-de-bruxelles-rotis-au-miso-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/11/29/choux-de-bruxelles-et-patate-douce-rotis-%f0%9f%8d%82/",
+    "image": "images/choux-de-bruxelles-et-patate-douce-rotis.webp",
+    "createdAt": "2026-02-09T22:27:14.340676",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ],
+    "nutritionPerServing": {
+      "calories": 579.8,
+      "protein": 29.9,
+      "fat": 32.9,
+      "carbs": 47.1,
+      "fiber": 13.0,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 12,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "brussels_sprouts",
+      "name": "choux de Bruxelles",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Brussels sprouts"
+    },
+    {
+      "id": "sweet_potato",
+      "name": "patate douce",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 300 g",
+      "optional": false,
+      "name_en": "sweet potato"
+    },
+    {
+      "id": "smoked_tofu",
+      "name": "tofu fum\u00e9",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked tofu"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "chili_flakes",
+      "name": "flocons de piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Chili flakes"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "vinegar",
+      "name": "vinaigre",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vinegar"
+    },
+    {
+      "id": "white_miso_paste",
+      "name": "p\u00e2te de miso blanc",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso paste"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "balsamic_vinegar",
+      "name": "vinaigre balsamique",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": true,
+      "name_en": "balsamic vinegar"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "clean_brussels_sprouts",
+      "action": "Nettoyez les choux de Bruxelles en retirant les feuilles ext\u00e9rieures ab\u00eem\u00e9es et en coupant la base dure. Coupez-les en deux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "brussels_sprouts"
+      ],
+      "produces": "cleaned_brussels_sprouts",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_sweet_potato",
+      "action": "Pelez la patate douce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweet_potato"
+      ],
+      "produces": "peeled_sweet_potato",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dice_sweet_potato_tofu",
+      "action": "Coupez la patate douce et le tofu en d\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peeled_sweet_potato",
+        "smoked_tofu"
+      ],
+      "produces": "diced_sweet_potato_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_on_baking_sheet",
+      "action": "\u00c9talez les patates douces, les choux de Bruxelles et le tofu sur une plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "diced_sweet_potato_tofu",
+        "cleaned_brussels_sprouts"
+      ],
+      "produces": "arranged_vegetables_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_marinade",
+      "action": "Dans un bol, m\u00e9langez tous les ingr\u00e9dients de la marinade (ail en poudre, flocons de piment, graines de s\u00e9same, huile d'olive, vinaigre, p\u00e2te de miso, sirop d'\u00e9rable).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "marinade",
+      "uses": [
+        "garlic_powder",
+        "chili_flakes",
+        "sesame_seeds",
+        "olive_oil",
+        "vinegar",
+        "white_miso_paste",
+        "maple_syrup"
+      ],
+      "produces": "marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "coat_vegetables",
+      "action": "Versez la marinade sur la plaque. M\u00e9langez, puis r\u00e9partissez les ingr\u00e9dients uniform\u00e9ment sur la plaque.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_vegetables_tofu",
+        "marinade"
+      ],
+      "produces": "marinated_vegetables_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "marinated_vegetables_tofu"
+      ],
+      "produces": "preheated_oven_with_marinated_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_vegetables",
+      "action": "Enfournez pour 35min. Remuez \u00e0 mi-cuisson.",
+      "duration": "PT35M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "preheated_oven_with_marinated_vegetables"
+      ],
+      "produces": "roasted_vegetables_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve_with_feta_balsamic",
+      "action": "Servez avec la feta \u00e9miett\u00e9e et un filet de vinaigre balsamique.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_vegetables_tofu",
+        "feta",
+        "balsamic_vinegar"
+      ],
+      "produces": "choux_bruxelles_patate_douce_rotis",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "choux_bruxelles_patate_douce_rotis",
+  "originalText": "Choux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 novembre 2024\nChoux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42\nAujourd\u2019hui, je vous partage une recette qui r\u00e9unit deux stars des l\u00e9gumes d\u2019automne : Choux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42. Avec un invit\u00e9 surprise, le tofu fum\u00e9. Je vous parle de mon nouveau tofu pr\u00e9f\u00e9r\u00e9 un peu plus bas.\nLes l\u00e9gumes r\u00f4tis, c\u2019est un peu mon obsession quand les temp\u00e9ratures baissent. Pourquoi ? Parce que c\u2019est simple \u00e0 pr\u00e9parer et c\u2019est gourmand. En plus, \u00e7a fait toujours son petit effet. Et bien s\u00fbr, on n\u2019oublie pas ma reine : la feta ! Qui vient parfaire le tout, parce qu\u2019on ne change pas une \u00e9quipe qui gagne ! Cela dit, hormis la feta, cette recette est vegan, donc vous pouvez simplement la supprimer.\nTable des mati\u00e8res\n1\nPourquoi j\u2019adore cette recette\n2\nChoux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42 : Un plat complet, sain et savoureux \ud83c\udf31\n3\nChoux de Bruxelles et patate douce r\u00f4tis \ud83c\udf42\nPourquoi j\u2019adore cette recette\nCommen\u00e7ons par parler des choux de Bruxelles. Je sais qu\u2019ils ne font pas l\u2019unanimit\u00e9. Je dirais m\u00eame qu\u2019ils sont clivants. Mais r\u00f4tis au four, ils se transforment. C\u2019est promis. Vous devez absolument tester avant de prendre une d\u00e9cision d\u00e9finitive. En effet, fini l\u2019amertume et les mauvais souvenirs de cantine. Place \u00e0 une texture fondante et \u00e0 un go\u00fbt certes puissant, mais l\u00e9g\u00e8rement sucr\u00e9 et compl\u00e8tement addictif.\nLa patate douce, elle, vient \u00e9quilibrer tout \u00e7a avec sa douceur naturelle.\nSi vous cherchez d\u2019autres recettes de patate douce, vous en trouverez ici.\nEt le tofu ! Je vous conseille d\u2019utiliser un tofu fum\u00e9 de qualit\u00e9. Perso, j\u2019ai d\u00e9velopp\u00e9 un amour infini pour le tofu amande s\u00e9same de la marque Taifun. On m\u2019a aussi parl\u00e9 du tofu fum\u00e9 black forest de la m\u00eame marque. Que j\u2019ai h\u00e2te de go\u00fbter. En plus, il ajoute une bonne dose de prot\u00e9ines et un petit c\u00f4t\u00e9 \u00ab comfort food \u00bb. En r\u00f4tissant au four la texture devient juste dingue !\nEt comme toujours, la magie s\u2019op\u00e8re dans la marinade ! Ici elle est sucr\u00e9e-sal\u00e9e au miso et au sirop d\u2019\u00e9rable, qui sublime vraiment chaque bouch\u00e9e.\nChoux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42 : Un plat complet, sain et savoureux \ud83c\udf31\nCe que j\u2019aime avec cette recette, c\u2019est qu\u2019elle est simple. Mais qu\u2019elle coche toutes les cases !\nSain : des l\u00e9gumes de saison et des ingr\u00e9dients non transform\u00e9s.\nV\u00e9g\u00e9tarien/vegan : parfait pour un repas sans viande, mais riche en prot\u00e9ines gr\u00e2ce au tofu.\nGourmand : la feta \u00e9miett\u00e9e (optionnelle) et le filet de vinaigre balsamique ajoutent une touche irr\u00e9sistible.\nEt surtout, c\u2019est hyper facile \u00e0 pr\u00e9parer. Pas besoin d\u2019\u00eatre un chef pour r\u00e9ussir ces Choux de Bruxelles et\u00a0 patate douce r\u00f4tis \ud83c\udf42 !\nChoux de Bruxelles et patate douce r\u00f4tis \ud83c\udf42\n4.57\n/5 avec\n62\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nA r\u00f4tir\n400\ng\nde choux de Bruxelles\n1\npatate douce\nenviron 300 g\n200\ng\nde tofu fum\u00e9\nPour la marinade\n\u00bd\nc\u00e0c d\u2019ail en poudre\n\u00bd\nc\u00e0c de flocons de piment\nplus ou moins au go\u00fbt\n1\nc\u00e0c de graines de s\u00e9same\n3\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de vinaigre\n1\nc\u00e0s de p\u00e2te de miso blanc\n1\nc\u00e0s de sirop d\u2019\u00e9rable\nPour le service\n100\ng\nde feta\ndu vinaigre balsamique\nInstructions\nPr\u00e9chauffez le four \u00e0 200\u00b0C.\nNettoyez les choux de Bruxelles en retirant les feuilles ext\u00e9rieures ab\u00eem\u00e9es et en coupant la base dure. Coupez-les en deux.\nPelez la patate douce.\nCoupez la patate douce et le tofu en d\u00e9s.\n\u00c9talez les patates douces, les choux de Bruxelles et le tofu sur une plaque de cuisson.\nDans un bol, m\u00e9langez tous les ingr\u00e9dients de la marinade puis versez-la sur la plaque. M\u00e9langez, puis r\u00e9partissez-les uniform\u00e9ment sur la plaque.\nEnfournez 35 minutes. Remuez \u00e0 mi-cuisson.\nServez avec la feta \u00e9miett\u00e9e et un filet de vinaigre balsamique.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChoux\n,\nHiver\n,\nPatate Douce\n,\nPlats au Four\nGratin de brocoli orzo et b\u00e9chamel au comt\u00e9\nButternut et pois chiches fa\u00e7on Curry\n4.57 from 62 votes (\n62 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "title": "Barres de granolas au brass\u00e9 glac\u00e9 (vegan)",
+    "description": "Une recette id\u00e9ale pour les journ\u00e9es chaudes, un encas parfait pour les petits et les grands, 100% vegan et sain.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "vegan",
+      "granola",
+      "frozen yogurt",
+      "snack",
+      "no-bake",
+      "summer"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Barres-de-granolas-brasse-vegetal-andros-1-of-7.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour une d\u00e9gustation id\u00e9ale, sortir les barres quelques minutes avant de servir pour que le brass\u00e9 retrouve son cr\u00e9meux.",
+      "Le sirop d'\u00e9rable peut \u00eatre remplac\u00e9 par du miel ou un autre sucrant.",
+      "La pur\u00e9e d'amande compl\u00e8te peut \u00eatre remplac\u00e9e par n'importe quelle autre pur\u00e9e d'ol\u00e9agineux.",
+      "Les parfums de brass\u00e9 v\u00e9g\u00e9tal (vanille, fraise, cerise) peuvent \u00eatre adapt\u00e9s en fonction des go\u00fbts.",
+      "Anticiper la pr\u00e9paration : le granola doit refroidir compl\u00e8tement et le brass\u00e9 doit prendre au cong\u00e9lateur au moins 6h."
+    ],
+    "slug": "barres-de-granolas-au-brasse-glace-vegan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/05/Barres-de-granolas-brasse-vegetal-andros-1-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/05/30/barres-de-granolas-au-brasse-glace-vegan/",
+    "image": "images/barres-de-granolas-au-brasse-glace-vegan.jpg",
+    "createdAt": "2026-02-09T21:23:00.405933",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 385.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "July",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 197.0,
+      "protein": 6.2,
+      "fat": 9.0,
+      "carbs": 24.5,
+      "fiber": 1.3,
+      "confidence": "low",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 10,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "oat_flakes",
+      "name": "flocons d'avoine",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "flax_seeds",
+      "name": "graines de lin",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "flax seeds"
+    },
+    {
+      "id": "almond_slivers",
+      "name": "amandes effil\u00e9es",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "slivered almonds"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'\u00e9rable",
+      "quantity": 6.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "almond_butter",
+      "name": "beurre d'amande complet",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "almond butter"
+    },
+    {
+      "id": "hazelnut_oil",
+      "name": "huile de noisettes",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnut oil"
+    },
+    {
+      "id": "vanilla_yogurt",
+      "name": "brass\u00e9 v\u00e9g\u00e9tal vanille",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla plant-based yogurt"
+    },
+    {
+      "id": "strawberry_yogurt",
+      "name": "brass\u00e9 v\u00e9g\u00e9tal fraise",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "2 pots de 100g",
+      "optional": false,
+      "name_en": "strawberry plant-based yogurt"
+    },
+    {
+      "id": "cherry_yogurt",
+      "name": "brass\u00e9 v\u00e9g\u00e9tal cerise",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cherry plant-based yogurt"
+    },
+    {
+      "id": "strawberries",
+      "name": "fraises",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "en d\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "strawberries"
+    }
+  ],
+  "tools": [
+    "Moule rectangulaire",
+    "Cure-dent"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 170\u00b0C.",
+      "duration": null,
+      "temperature": 170,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_granola_dry",
+      "action": "Dans un gros bol, m\u00e9langer les flocons d'avoine, les graines de lin, les amandes effil\u00e9es et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "oat_flakes",
+        "flax_seeds",
+        "almond_slivers",
+        "salt"
+      ],
+      "produces": "dry_granola_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_wet_to_granola",
+      "action": "Ajouter le sirop d'\u00e9rable, la pur\u00e9e d'amande et l'huile de noisettes au m\u00e9lange de granola. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "dry_granola_mix",
+        "maple_syrup",
+        "almond_butter",
+        "hazelnut_oil"
+      ],
+      "produces": "granola_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_granola_into_pan",
+      "action": "Tapisser un moule rectangulaire avec du papier cuisson. Verser le m\u00e9lange de granola dans le moule et bien le presser et l'aplatir avec le fond d'un verre ou le dos d'une cuill\u00e8re.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "granola",
+      "uses": [
+        "granola_batter"
+      ],
+      "produces": "pressed_granola_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_granola",
+      "action": "Enfourner pendant 25min.",
+      "duration": "PT25M",
+      "temperature": 170,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "granola",
+      "uses": [
+        "pressed_granola_in_pan"
+      ],
+      "produces": "baked_granola",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_granola",
+      "action": "Laisser compl\u00e8tement refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "granola",
+      "uses": [
+        "baked_granola"
+      ],
+      "produces": "cooled_granola",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    },
+    {
+      "id": "add_vanilla_yogurt",
+      "action": "Verser le brass\u00e9 \u00e0 la vanille sur le granola refroidi.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "cooled_granola",
+        "vanilla_yogurt"
+      ],
+      "produces": "granola_with_vanilla_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_fruit_yogurts",
+      "action": "D\u00e9poser des cuiller\u00e9es de brass\u00e9s aux fruits (fraise et cerise) par-dessus. \u00c0 l'aide d'un cure-dent, former des motifs.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "granola_with_vanilla_layer",
+        "strawberry_yogurt",
+        "cherry_yogurt"
+      ],
+      "produces": "granola_with_patterned_yogurt",
+      "requires": [],
+      "visualCue": "motifs form\u00e9s"
+    },
+    {
+      "id": "add_strawberries",
+      "action": "D\u00e9poser les d\u00e9s de fraises par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "granola_with_patterned_yogurt",
+        "strawberries"
+      ],
+      "produces": "assembled_bars",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "freeze",
+      "action": "Placer au cong\u00e9lateur pendant au moins 6h (une nuit).",
+      "duration": "PT6H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "assembled_bars"
+      ],
+      "produces": "frozen_bars",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_bars",
+      "action": "D\u00e9couper en 8 barres.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "frozen_bars"
+      ],
+      "produces": "cut_frozen_bars",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster au petit-d\u00e9jeuner ou au go\u00fbter !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "yaourt_glace_et_assemblage",
+      "uses": [
+        "cut_frozen_bars"
+      ],
+      "produces": "barres_granolas_brasse_glace",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "barres_granolas_brasse_glace",
+  "originalText": "Barres de granolas au brass\u00e9 glac\u00e9 (vegan) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 mai 2022\nBarres de granolas au brass\u00e9 glac\u00e9 (vegan)\nAller \u00e0 la recette\nOn se retrouve pour cette recette toute simple de Barres de granolas au brass\u00e9 glac\u00e9 (vegan) !\nC\u2019est une recette id\u00e9ale pour ces journ\u00e9es o\u00f9 il fait juste trop chaud. Et qu\u2019on a une petite faim mais surtout envie de fra\u00eecheur ! C\u2019est l\u2019encas parfait pour les journ\u00e9es ensoleill\u00e9es quoi ! Pour les petits et les grands d\u2019ailleurs.\nLa couche inf\u00e9rieure de ces barres est un granola maison. R\u00e9alis\u00e9 \u00e0 partir de flocons d\u2019avoine et de graines de lin, il est peu sucr\u00e9. On y retrouve du sirop d\u2019\u00e9rable, que vous pouvez remplacer par du miel. Ou le sucrant de votre choix. Et on y retrouve de la pur\u00e9e d\u2019amande. Ma petite favorite du moment. Je la prends toujours compl\u00e8te, je trouve le go\u00fbt plus doux. Vous pouvez la remplacer par n\u2019importe quelle autre pur\u00e9e d\u2019ol\u00e9agineux.\nLa couche sup\u00e9rieure n\u2019est autre que du brass\u00e9 v\u00e9g\u00e9tal. J\u2019ai utilis\u00e9 les produits de cette grande marque que nous connaissons tous ! J\u2019ai choisi un trio :\nbrass\u00e9 v\u00e9g\u00e9tal vanille\n,\nbrass\u00e9 v\u00e9g\u00e9tal fraise\net\nbrass\u00e9 v\u00e9g\u00e9tal cerise\n. Mais vous pouvez, \u00e0 nouveau, adapter en fonction de vos go\u00fbts. Et pour plus de gourmandise, j\u2019ai ajout\u00e9 des petits morceaux de fraises.\nLe r\u00e9sultat est trop gourmand. 100% vegan. Et sain !\nSi vous vous lancez dans cette recette toute simple, anticipez un peu. En effet, il faut laisser le granola refroidir compl\u00e8tement. Et surtout, il est imp\u00e9ratif de laisser\nle brass\u00e9 au lait de coco\nprendre au cong\u00e9lateur. Il faut compter au moins 6h.\nEt pour une d\u00e9gustation id\u00e9ale, je conseille de sortir les barres quelques minutes avant. Cela permet\nau brass\u00e9\nde retrouver son cr\u00e9meux ! Et de ne pas se frigorifier les dents en croquant !\nAlors qui va tenter cette recette Barres de granolas au brass\u00e9 glac\u00e9 (vegan) ?\nBarres de granolas au brass\u00e9 glac\u00e9 (vegan)\nNatacha\n4.48\n/5 avec\n38\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nTemps de cong\u00e9lation\n6\nheures\nh\nPortions\n8\nbarres\nIngr\u00e9dients\n1x\n2x\n3x\nPour le granola\n150\ng\nde flocons d\u2019avoine\n60\ng\nde graines de lin\n60\ng\nd\u2019amandes effil\u00e9es\n1\npinc\u00e9e de sel\n6\nc\u00e0s de sirop d\u2019\u00e9rable\n80\ng\nde beurre d\u2019amande complet\n2\nc\u00e0s d\u2019huile de noisettes\nPour le yaourt glac\u00e9\n1\npot de brass\u00e9 vanille 400g\n2\npots de brass\u00e9 fraise\n2x100g\n1\npot de brass\u00e9 cerise\n100g\n3\nfraises en d\u00e9s\nInstructions\nPr\u00e9chauffer le four \u00e0 170\u00b0C.\nM\u00e9langer tous les ingr\u00e9dients secs dans un gros bol. Ajouter le sirop d\u2019\u00e9rable, la pur\u00e9e d\u2019amande et l\u2019huile. Bien m\u00e9langer.\nTapisser un moule rectangulaire avec du papier cuisson.\nVerser le granola dedans et bien le presser et l\u2019aplatir avec le fond d\u2019un verre ou le dos d\u2019une cuill\u00e8re.\nEnfourner 25min.\nLaisser compl\u00e8tement refroidir.\nVerser le brass\u00e9 \u00e0 la vanille sur le granola. Puis d\u00e9poser des cuiller\u00e9es de brass\u00e9s aux fruits par dessus. A l\u2019aide d\u2019un cure-dent former des motifs. D\u00e9poser les d\u00e9s de fraises par-dessus.\nPlacer au cong\u00e9lateur une nuit.\nD\u00e9couper en barres.\nD\u00e9guster au petit-d\u00e9jeuner ou au go\u00fbter !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBrunch Sucr\u00e9\n,\nCr\u00e8mes et Entremets\n,\nDesserts & Snack\n,\nNos recettes V\u00e9ganes\n,\nRecettes Sucr\u00e9es\nMini yaourts glac\u00e9s au miel, fruits rouges et granola\nGaufres toutes Roses\n4.48 from 38 votes (\n38 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

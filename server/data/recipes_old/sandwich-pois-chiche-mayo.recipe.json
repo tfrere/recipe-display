@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "title": "Sandwich Pois Chiche Mayo",
+    "description": "Ce sandwich Pois Chiche Mayo est une petite merveille ! C'est vraiment parfait pour un repas v\u00e9g\u00e9 sur le pouce.",
+    "servings": 3,
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "sandwich",
+      "pois chiche",
+      "mayo",
+      "vegan",
+      "v\u00e9g\u00e9tarien",
+      "zero dechet",
+      "recette anti gaspi"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Sandwich-au-thon-de-pois-chiche-1-of-2.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfait pour un pique-nique, \u00e0 emporter au bureau ou dans le train.",
+      "L'avantage des pois chiches, c'est que \u00e7a ne sent pas mauvais ! Contrairement au thon !",
+      "Recette z\u00e9ro d\u00e9chet : utilisez l'aquafaba des pois chiches pour faire la mayo vegan.",
+      "On peut utiliser des pois chiches d\u00e9j\u00e0 cuits en bocal ou en conserve."
+    ],
+    "slug": "sandwich-pois-chiche-mayo",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/04/Sandwich-au-thon-de-pois-chiche-1-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/04/14/sandwich-pois-chiche-mayo/",
+    "image": "images/sandwich-pois-chiche-mayo.webp",
+    "createdAt": "2026-02-09T21:19:36.090732",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 10.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 648.6,
+      "protein": 27.4,
+      "fat": 36.8,
+      "carbs": 53.5,
+      "fiber": 19.1,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 11,
+      "totalIngredients": 13,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "nori",
+      "name": "feuilles de nori",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nori sheets"
+    },
+    {
+      "id": "chickpeas",
+      "name": "pois chiches cuits",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "cuits",
+      "notes": null,
+      "optional": false,
+      "name_en": "chickpeas"
+    },
+    {
+      "id": "capers",
+      "name": "c\u00e2pres",
+      "quantity": 5.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "mayonnaise_1",
+      "name": "mayonnaise",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "pour la pr\u00e9paration des pois chiches",
+      "optional": false,
+      "name_en": "mayonnaise"
+    },
+    {
+      "id": "white_miso",
+      "name": "miso blanc",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso"
+    },
+    {
+      "id": "mustard",
+      "name": "moutarde fine",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Dijon mustard"
+    },
+    {
+      "id": "caper_water",
+      "name": "eau des c\u00e2pres",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "caper brine"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "eggs",
+      "name": "\u0153ufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "romaine_lettuce",
+      "name": "feuilles de salade romaine",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "romaine lettuce leaves"
+    },
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 0.3333333333333333,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "mayonnaise_2",
+      "name": "mayonnaise",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "pour l'assemblage",
+      "optional": false,
+      "name_en": "mayonnaise"
+    },
+    {
+      "id": "country_bread",
+      "name": "pain de campagne",
+      "quantity": 6.0,
+      "unit": "slice",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Country bread"
+    },
+    {
+      "id": "baking_soda",
+      "name": "bicarbonate de soude",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Mandoline"
+  ],
+  "steps": [
+    {
+      "id": "boil_water",
+      "action": "Portez de l'eau \u00e0 \u00e9bullition avec un peu de bicarbonate de soude.",
+      "duration": null,
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson_des_\u0153ufs_durs",
+      "uses": [
+        "baking_soda"
+      ],
+      "produces": "boiling_water_with_soda",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_hard_boiled_eggs",
+      "action": "Plongez-y les \u0153ufs et les faire cuire pendant 10min.",
+      "duration": "PT10M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson_des_\u0153ufs_durs",
+      "uses": [
+        "eggs",
+        "boiling_water_with_soda"
+      ],
+      "produces": "cooked_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_eggs",
+      "action": "Plongez-les dans l'eau froide pour les refroidir avant d'\u00f4ter la coquille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "cuisson_des_\u0153ufs_durs",
+      "uses": [
+        "cooked_eggs"
+      ],
+      "produces": "cooled_hard_boiled_eggs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "crush_nori",
+      "action": "Casser les feuilles de nori en petits morceaux et les mettre dans le bol de votre mixeur. Mixer jusqu'\u00e0 obtenir des grosses paillettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "nori"
+      ],
+      "produces": "crushed_nori_flakes",
+      "requires": [],
+      "visualCue": "grosses paillettes"
+    },
+    {
+      "id": "drain_chickpeas",
+      "action": "\u00c9goutter les pois chiches (vous pouvez garder le jus, appel\u00e9 aquafaba).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "chickpeas"
+      ],
+      "produces": "drained_chickpeas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mash_chickpeas",
+      "action": "\u00c9craser grossi\u00e8rement les pois chiches dans un grand bol \u00e0 l'aide d'une fourchette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "drained_chickpeas"
+      ],
+      "produces": "mashed_chickpeas",
+      "requires": [],
+      "visualCue": "grossi\u00e8rement \u00e9cras\u00e9s"
+    },
+    {
+      "id": "chop_capers_onion",
+      "action": "Hachez finement les c\u00e2pres et la moiti\u00e9 de l'oignon rouge. Conservez l'autre moiti\u00e9 pour la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "capers",
+        "red_onion"
+      ],
+      "produces": "chopped_capers_onion",
+      "requires": [],
+      "visualCue": "finement hach\u00e9s"
+    },
+    {
+      "id": "mix_chickpea_salad",
+      "action": "Ajoutez-les aux pois chiches avec la mayo, le miso, la moutarde, l'eau des c\u00e2pres et un peu de sel, poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "mashed_chickpeas",
+        "chopped_capers_onion",
+        "crushed_nori_flakes",
+        "mayonnaise_1",
+        "white_miso",
+        "mustard",
+        "caper_water",
+        "salt",
+        "pepper"
+      ],
+      "produces": "chickpea_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "taste_adjust",
+      "action": "M\u00e9langez, go\u00fbtez et ajustez l'assaisonnement si n\u00e9cessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "preparation_des_pois_chiches",
+      "uses": [
+        "chickpea_mixture"
+      ],
+      "produces": "seasoned_chickpea_salad",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onion_cucumber",
+      "action": "Coupez finement le demi oignon restant et le concombre (\u00e0 la mandoline ou avec un couteau bien aiguis\u00e9).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_sandwichs",
+      "uses": [
+        "red_onion",
+        "cucumber"
+      ],
+      "produces": "sliced_onion_cucumber",
+      "requires": [],
+      "visualCue": "finement coup\u00e9s"
+    },
+    {
+      "id": "slice_hard_boiled_eggs",
+      "action": "Coupez les \u0153ufs durs en rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_sandwichs",
+      "uses": [
+        "cooled_hard_boiled_eggs"
+      ],
+      "produces": "sliced_hard_boiled_eggs",
+      "requires": [],
+      "visualCue": "en rondelles"
+    },
+    {
+      "id": "assemble_sandwiches",
+      "action": "\u00c9talez la mayonnaise sur 3 tranches de pain puis garnissez les avec les l\u00e9gumes, \u0153ufs et pois chiche.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_sandwichs",
+      "uses": [
+        "mayonnaise_2",
+        "country_bread",
+        "sliced_onion_cucumber",
+        "romaine_lettuce",
+        "sliced_hard_boiled_eggs",
+        "seasoned_chickpea_salad"
+      ],
+      "produces": "assembled_sandwiches",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "close_sandwiches",
+      "action": "Refermez et d\u00e9gustez !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage_des_sandwichs",
+      "uses": [
+        "assembled_sandwiches"
+      ],
+      "produces": "sandwich_pois_chiche_mayo",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sandwich_pois_chiche_mayo",
+  "originalText": "Sandwich Pois Chiche Mayo - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2022\nSandwich Pois Chiche Mayo\nAller \u00e0 la recette\nCe sandwich Pois Chiche Mayo est une petite merveille !\nJe dis pas \u00e7a parce que c\u2019est ma cr\u00e9ation. Quoi que\u2026 Mais surtout parce que c\u2019est trop bon ! Et en plus c\u2019est facile \u00e0 faire. Surtout si vous utilisez des pois chiches d\u00e9j\u00e0 cuits. C\u2019est vraiment parfait pour un repas v\u00e9g\u00e9 sur le pouce.\nC\u2019est aussi id\u00e9al pour un pique-nique. A emporter au bureau. Ou dans le train ! Et l\u2019avantage des pois chiches, c\u2019est que \u00e7a ne sent pas mauvais ! Contrairement au thon ! Puis accessoirement, les pois chiches ne sont pas du poisson.\nMais pour revenir \u00e0 mon Sandwich Pois Chiche Mayo. Je cherchais \u00e0 me rapprocher du go\u00fbt du sandwich thon mayo. J\u2019avais d\u00e9j\u00e0 r\u00e9alis\u00e9\nune recette dans ce genre il y a quelques ann\u00e9es\n. Et l\u00e0 c\u2019\u00e9tait l\u2019occasion de perfectionner ma recette. J\u2019ai notamment ajout\u00e9 des algues. J\u2019utilise souvent des algues nori. Ce sont celles qu\u2019on trouve le plus facilement dans le commerce je trouve. Et elles sont plut\u00f4t bon march\u00e9. Ce qui n\u2019est pas pour me d\u00e9plaire.\nCe que j\u2019aime beaucoup dans cette recette, c\u2019est son aspect z\u00e9ro d\u00e9chet. En effet, j\u2019utilise des pois chiches d\u00e9j\u00e0 cuits. En bocal ou en conserve. Et je r\u00e9cup\u00e8re l\u2019\naquafaba\npour en faire la\nmayo vegan\n. Le fait qu\u2019elle soit vegan va int\u00e9resser les vegans. Et les femmes enceintes, ou toutes les personnes qui ne peuvent/veulent pas manger d\u2019\u0153uf cru. Mais surtout, l\u2019int\u00e9r\u00eat dans cette recette, c\u2019est que \u00e7a \u00e9vite d\u2019utiliser un jaune d\u2019\u0153uf. Et du coup, de se retrouver avec deux d\u00e9chets : de l\u2019aquafaba et un blanc d\u2019\u0153uf ! Malin hein !\nSandwich Pois Chiche Mayo\n4.45\n/5 avec\n40\nvotes\nImprimer la recette\nPin Recipe\nIngr\u00e9dients\nPour les pois chiches fa\u00e7on thon mayo\n2\nfeuilles de nori\n250\ng\nde pois chiches cuits\n5\nc\u00e0c de c\u00e2pres\n1\noignon rouge\n3\nc\u00e0s de mayonnaise\n1\nc\u00e0c de miso blanc\n1\nc\u00e0c de moutarde fine\n2\nc\u00e0c d\u2019eau des c\u00e2pres\nsel\nGarniture\n3\n\u0153ufs\n2\nfeuilles de salade romaine\n\u2153\nde concombre\n3\nc\u00e0s de mayonnaise\n6\nbelles tranches de pain de campagne\nInstructions\nCuisson des \u0153ufs durs\nPortez de l\u2019eau \u00e0 \u00e9bullition avec un peu de bicarbonate de soude. Plongez-y les \u0153ufs et les faire cuire 8 \u00e0 10min.\nPlongez-les dans l\u2019eau froide pour les refroidir avant d\u2019\u00f4ter la coquille.\nPr\u00e9paration des pois chiches\nCasser les feuilles de nori en petits morceaux et les mettre dans le bol de votre mixeur. Mixer jusqu\u2019\u00e0 obtenir des grosses paillettes.\n\u00c9goutter les pois chiches (vous pouvez garder le jus, appel\u00e9 aquafaba) pour r\u00e9aliser une mayo vegan et z\u00e9ro d\u00e9chet. Suivez cette recette.\n\u00c9craser grossi\u00e8rement les pois chiches dans un grand bol \u00e0 l\u2019aide d\u2019une fourchette.\nHachez finement les c\u00e2pres et la moiti\u00e9 de l\u2019oignon rouge. Conservez l\u2019autre moiti\u00e9 pour la garniture des sandwichs.\nAjoutez-les aux pois chiches avec la mayo, le miso, la moutarde, l\u2019eau des c\u00e2pres et un peu de sel, poivre.\nM\u00e9langez, go\u00fbtez et ajustez l\u2019assaisonnement si n\u00e9cessaire.\nPr\u00e9paration des sandwichs\nCoupez finement le demi oignon restant et le concombre (\u00e0 la mandoline ou avec un couteau bien aiguis\u00e9).\nCoupez les \u0153ufs durs en rondelles.\n\u00c9talez la mayonnaise sur 3 tranches de pain puis garnissez les avec les l\u00e9gumes, \u0153ufs et pois chiche.\nRefermez et d\u00e9gustez !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBurgers, sandwichs et wraps\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nmayo\n,\npois chiche\n,\nrecette anti gaspi\n,\nsandwich\n,\nsandwich vegan\n,\nsandwich v\u00e9g\u00e9tarien\n,\nzero dechet\nBabka de P\u00e2ques\nTartelettes de printemps aux Asperges\n4.45 from 40 votes (\n40 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

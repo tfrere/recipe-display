@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "title": "Cookies Chocolat Blanc et Pralines Roses",
+    "description": "Des cookies au chocolat blanc et pralines roses tout doux pour f\u00eater la Saint Valentin ! A partager avec sa moiti\u00e9 d'amour ou d'amiti\u00e9 ou d'amiti\u00e9 ou les deux (ou avec personne en fait) :p",
+    "servings": 12,
+    "prepTime": "PT40M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat blanc",
+      "cookies",
+      "pralines roses",
+      "saint valentin",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/02/Cookies-Roses-4-of-4.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les cookies se conservent 3 jours dans un contenant herm\u00e9tique \u00e0 temp\u00e9rature ambiante.",
+      "L'ar\u00f4me de rose est optionnel pour des saveurs plus \u00e9volu\u00e9es et complexes.",
+      "Le nappage au chocolat blanc est optionnel."
+    ],
+    "slug": "cookies-chocolat-blanc-et-pralines-roses",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/02/Cookies-Roses-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/02/14/cookies-chocolat-blanc-et-pralines-roses/",
+    "image": "images/cookies-chocolat-blanc-et-pralines-roses.webp",
+    "createdAt": "2026-02-09T21:01:26.742276",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 40.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 284.6,
+      "protein": 3.8,
+      "fat": 17.1,
+      "carbs": 29.6,
+      "fiber": 0.5,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "chocolat_blanc_hache",
+      "name": "chocolat blanc",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "hach\u00e9 grossi\u00e8rement",
+      "notes": null,
+      "optional": false,
+      "name_en": "white chocolate"
+    },
+    {
+      "id": "chocolat_blanc_nappage",
+      "name": "chocolat blanc",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour le nappage",
+      "optional": true,
+      "name_en": "white chocolate"
+    },
+    {
+      "id": "pralines_roses",
+      "name": "pralines roses",
+      "quantity": 75.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": "concass\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Pink pralines"
+    },
+    {
+      "id": "beurre_doux",
+      "name": "beurre doux",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "mou",
+      "notes": null,
+      "optional": false,
+      "name_en": "unsalted butter"
+    },
+    {
+      "id": "sucre_muscovado",
+      "name": "sucre complet muscovado",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Muscovado sugar"
+    },
+    {
+      "id": "oeuf",
+      "name": "\u0153uf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": "\u00e0 temp\u00e9rature",
+      "notes": null,
+      "optional": false,
+      "name_en": "Egg"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "levure",
+      "name": "levure",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yeast"
+    },
+    {
+      "id": "arome_rose",
+      "name": "ar\u00f4me de rose",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": true,
+      "name_en": "Rose flavoring"
+    }
+  ],
+  "tools": [
+    "Mortier (ou rouleau \u00e0 p\u00e2tisserie)",
+    "Cuill\u00e8re \u00e0 glace"
+  ],
+  "steps": [
+    {
+      "id": "hacher_chocolat",
+      "action": "Hacher grossi\u00e8rement le chocolat blanc (120g). Concasser les pralines roses \u00e0 l'aide d'un mortier pour obtenir des brisures.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chocolat_blanc_hache",
+        "pralines_roses"
+      ],
+      "produces": "chocolat_pralines_hachees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cremer_beurre_sucre",
+      "action": "Dans un grand saladier, m\u00e9langer le beurre mou avec le sucre jusqu'\u00e0 obtenir un m\u00e9lange cr\u00e9meux. Ajouter l'\u0153uf et m\u00e9langer de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beurre_doux",
+        "sucre_muscovado",
+        "oeuf"
+      ],
+      "produces": "melange_cremeux",
+      "requires": [],
+      "visualCue": "m\u00e9lange cr\u00e9meux"
+    },
+    {
+      "id": "ajouter_farine",
+      "action": "Verser la farine, le sel et la levure et m\u00e9langer jusqu'\u00e0 incorporation. Ajouter l'ar\u00f4me de rose si souhait\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_cremeux",
+        "farine",
+        "sel",
+        "levure",
+        "arome_rose"
+      ],
+      "produces": "pate_base",
+      "requires": [],
+      "visualCue": "incorporation compl\u00e8te"
+    },
+    {
+      "id": "ajouter_chocolat_pralines",
+      "action": "Ajouter le chocolat blanc hach\u00e9 et les brisures de pralines roses, m\u00e9langer. Couvrir le saladier et r\u00e9server au frais pendant 30min minimum.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pate_base",
+        "chocolat_pralines_hachees"
+      ],
+      "produces": "pate_repos\u00e9e",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_boules",
+      "action": "\u00c0 l'aide d'une cuill\u00e8re \u00e0 glace, former des boules de p\u00e2te et les d\u00e9poser suffisamment espac\u00e9es sur une plaque recouverte de papier cuisson (6 boules pour grands cookies, 8 pour petits).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_repos\u00e9e"
+      ],
+      "produces": "boules_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_cookies",
+      "action": "Enfourner et cuire 10min pour les grands cookies ou 8min pour les plus petits.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "boules_pate"
+      ],
+      "produces": "cookies_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir_cookies",
+      "action": "Retirer du four et laisser compl\u00e8tement refroidir avant de manipuler.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cookies_cuits"
+      ],
+      "produces": "cookies_refroidis",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidis"
+    },
+    {
+      "id": "fondre_chocolat_nappage",
+      "action": "Faire fondre le chocolat blanc (100g) au bain-marie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "nappage",
+      "uses": [
+        "chocolat_blanc_nappage"
+      ],
+      "produces": "chocolat_fondu",
+      "requires": [],
+      "visualCue": "chocolat fondu"
+    },
+    {
+      "id": "tremper_cookies",
+      "action": "Tremper un quart, un tiers ou la moiti\u00e9 de chaque cookie dans le chocolat fondu, puis les d\u00e9poser sur une grille.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "nappage",
+      "uses": [
+        "cookies_refroidis",
+        "chocolat_fondu"
+      ],
+      "produces": "cookies_nappes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saupoudrer_pralines",
+      "action": "Saupoudrer de brisures de pralines roses et attendre que le chocolat ait pris avant de les ranger.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "nappage",
+      "uses": [
+        "cookies_nappes",
+        "pralines_roses"
+      ],
+      "produces": "cookies_finis",
+      "requires": [],
+      "visualCue": "chocolat pris"
+    }
+  ],
+  "finalState": "cookies_finis",
+  "originalText": "Cookies Chocolat Blanc et Pralines Roses - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 f\u00e9vrier 2022\nCookies Chocolat Blanc et Pralines Roses\nAcc\u00e9der directement \u00e0 la recette\nAaaah la Saint-Valentin, qu\u2019on la f\u00eate ou pas, c\u2019est toujours sympa de voir tous ces petits c\u0153urs un peu partout. Personnellement, j\u2019adooooore les c\u0153urs, m\u00eame encore aujourd\u2019hui \u00e0 33 ans, j\u2019ai tendance \u00e0 en dessiner partout\u2026 J\u2019aime aussi beaucoup le rouge et le rose (aussi bien les couleurs que le vin mais \u00e7a c\u2019est une autre histoire). Bref, tout \u00e7a pour vous dire que la Saint-Valentin, bin moi j\u2019aime bien cette f\u00eate ! Et cette ann\u00e9e, je vous propose de la f\u00eater avec ces cookies chocolat blanc et pralines rose.\nConcernant ces petits cookies ultra girly, je suis partie du visuel que je voulais obtenir pour choisir mes ingr\u00e9dients. Le chocolat blanc pour la gourmandise (et aussi parce que je voulais des cookies avec des notes assez claires et puis surtout \u00e7a fait ressortir le rose). Des pralines roses pour\u2026 LE ROSE et aussi pour le croustillant bien s\u00fbr! L\u2019ar\u00f4me de rose en option pour des cookies aux saveurs plus \u00e9volu\u00e9es et complexes. Oui, je me la p\u00e8te carr\u00e9ment sur cette derni\u00e8re phrase.\nJuste pour le fun je me suis amus\u00e9e \u00e0 parcourir tous les desserts qui puent le love en plus de ces cookies chocolat blanc et pralines roses\u2026 Voici ma petite s\u00e9lection : le\nlayer cake sexy chocolat et chantilly \u00e0 la framboise\n, les\npetits biscuits trop mignons au citron en forme de c\u0153ur\nou encore pour les press\u00e9s les\nfondants au chocolat express\n!\nCookies Chocolat Blanc et Pralines Roses\nDes cookies au chocolat blanc et pralines roses tout doux pour f\u00eater la Saint Valentin ! A partager avec sa moiti\u00e9 d'amour ou d'amiti\u00e9 ou d'amiti\u00e9 ou les deux (ou avec personne en fait) :p\n4.55\n/5 avec\n83\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n12\ngrands cookies ou 24 petits\nIngr\u00e9dients\n1x\n2x\n3x\n120\ng\nde chocolat blanc + 100g pour le nappage\noptionnel\n75\ng\nde pralines roses\n140\ng\nde beurre doux mou\n80\ng\nde sucre complet muscovado\n1\n\u0153uf \u00e0 temp\u00e9rature\n200\ng\nde farine\n\u00bc\ncac de sel\n1\nsachet de levure\n1\ncac d\u2019ar\u00f4me de rose\noptionnel\nInstructions\nHacher grossi\u00e8rement le chocolat et \u00e0 l\u2019aide d\u2019un mortier (ou le bout de votre rouleau \u00e0 p\u00e2tisserie par exemple) concasser les pralines roses pour obtenir des brisures plus ou moins grosses.\nDans un grand saladier, m\u00e9langer le beurre mou avec le sucre jusqu\u2019\u00e0 obtenir un m\u00e9lange cr\u00e9meux. Ajouter l\u2019\u0153uf et m\u00e9langer de nouveau.\nVerser la farine, le sel et la levure et m\u00e9langer jusqu\u2019\u00e0 incorporation. Puis ajouter l\u2019ar\u00f4me de rose si vous le souhaitez.\nAjouter le chocolat blanc et les brisures de pralines roses, m\u00e9langer. Couvrir le saladier et r\u00e9server au frais pendant 30 min minimum.\nPr\u00e9chauffer le four \u00e0 180 degr\u00e9s.\nA l\u2019aide d\u2019une cuill\u00e8re \u00e0 glace, former des boules de p\u00e2te \u00e0 cookie et d\u00e9poser les suffisamment espac\u00e9es les unes des autres sur une plaque recouverte de papier cuisson (6 boules par plaque pour les grands cookies ou 8 pour les plus petits).\nEnfourner et cuire 10 min pour les grands cookies ou 8 \u00e0 9 min pour les plus petits.\nRetirer du four et laisser compl\u00e8tement refroidir avant de manipuler les cookies.\nSi vous souhaitez napper vos cookies, faire fondre le chocolat blanc au bain marie. Tremper un quart, un tiers ou la moiti\u00e9 du cookies puis les d\u00e9poser sur une grille. Saupoudrer de brisures de pralines roses et attendre que le chocolat ait pris avant de les ranger. Les cookies se conservent 3 jours dans un contenant herm\u00e9tique \u00e0 temp\u00e9rature ambiante.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\nCookies Biscuits et Mignardises\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nchocolat blanc\n,\ncookies\n,\npralines roses\n,\nsaint valentin\nPur\u00e9e classique super cr\u00e9meuse\nP\u00e2te \u00e0 Pizza et Pizza maison\n4.55 from 83 votes (\n83 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

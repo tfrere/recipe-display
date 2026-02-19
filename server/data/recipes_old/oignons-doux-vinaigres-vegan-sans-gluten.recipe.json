@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "Oignons Doux Vinaigrés (Vegan, Sans Gluten)",
+    "description": "Une recette super simple et super rapide qui vous permettra de sublimer vos salades, sandwichs, tacos et tout autre préparation.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT5M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "oignons au vinaigre",
+      "oignons doux",
+      "oignons vinaigrés",
+      "vegan",
+      "sans gluten",
+      "accompagnement",
+      "salade"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Oignons-vinaigrés-1-of-8-scaled.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez les manger très rapidement (après une demi-heure de repos), ou les conserver 4-5 jours au frigo.",
+      "Ces petits oignons se marient parfaitement dans une salade de saison (quinoa/cranberries ou lentilles et carottes rôties par exemple) ou dans des petits tacos végé."
+    ],
+    "slug": "oignons-doux-vinaigres-vegan-sans-gluten",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/03/Oignons-vinaigrés-1-of-8-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/03/05/oignons-doux-vinaigres-vegan-sans-gluten/",
+    "image": "images/oignons-doux-vinaigres-vegan-sans-gluten.webp",
+    "createdAt": "2026-02-09T19:47:02.349868",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 35.0,
+    "totalCookingTime": 5.0,
+    "nutritionPerServing": {
+      "calories": 85.9,
+      "protein": 1.0,
+      "fat": 0.1,
+      "carbs": 18.3,
+      "fiber": 1.1,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon doux (blanc ou rouge)",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sweet onion (white or red)"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "alcohol_vinegar",
+      "name": "vinaigre d'alcool",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white vinegar"
+    },
+    {
+      "id": "cider_vinegar",
+      "name": "vinaigre de cidre",
+      "quantity": 60.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "apple cider vinegar"
+    },
+    {
+      "id": "maple_syrup",
+      "name": "sirop d'érable",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "maple syrup"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Bocal de 300ml",
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "slice_onions",
+      "action": "Émincer les oignons en lamelles (plus ou moins suivant que vous les aimiez plutôt tendres ou croquants).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion"
+      ],
+      "produces": "sliced_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_in_jar",
+      "action": "Les mettre dans un bocal de 300ml.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sliced_onions"
+      ],
+      "produces": "onions_in_jar",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_brine",
+      "action": "Dans une casserole, porter à ébullition tous les autres ingrédients. Éteindre le feu dès que le mélange commence à bouillir et verser immédiatement dans le pot.",
+      "duration": "PT5M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "water",
+        "alcohol_vinegar",
+        "cider_vinegar",
+        "maple_syrup",
+        "salt"
+      ],
+      "produces": "hot_brine",
+      "requires": [],
+      "visualCue": "bouillant"
+    },
+    {
+      "id": "pour_brine",
+      "action": "Verser le mélange chaud dans le pot avec les oignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions_in_jar",
+        "hot_brine"
+      ],
+      "produces": "onions_in_brine",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool",
+      "action": "Laisser refroidir avant de fermer le pot.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "onions_in_brine"
+      ],
+      "produces": "cooled_pickled_onions",
+      "requires": [],
+      "visualCue": "refroidi"
+    }
+  ],
+  "finalState": "cooled_pickled_onions",
+  "originalText": "Oignons Doux Vinaigrés (Vegan, Sans Gluten) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 mars 2020\nOignons Doux Vinaigrés (Vegan, Sans Gluten)\nAccéder directement à la recette\nUne recette super simple et super rapide qui vous permettra de sublimer vos salades, sandwichs, tacos et tout autre préparation, ça vous dit ? Je vous propose de découvrir cette recette d’oignons vinaigrés.\nVous vous rappelez de la recette\nde petits légumes au vinaigre\n? Je suis partie de la même base, mais comme je voulais une préparation plus douce, j’ai mis un peu moins de vinaigre blanc, et j’ai ajouté du vinaigre de cidre, que je trouve plus parfumé et moins fort !\nBon, et j’ai mis du sirop d’érable, plutôt que du sucre, parce que … j’aime le sirop d’érable ..; Faut-il une autre raison ?\nEn tout cas, ces petits oignons se marient parfaitement dans une salade de saison (\nquinoa/cranberries\nou\nlentilles et carottes rôties\npar exemple) ou dans des\npetits tacos végé\n🙂\nOignons Doux Vinaigrés (Vegan, Sans Gluten)\n4.56\n/5 avec\n74\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nTemps total\n5\nminutes\nmin\nPortions\n1\nbocal de 300ml\nIngrédients\n1x\n2x\n3x\n120\ng\nd’oignon doux\nblanc ou rouge (soit un bel oignon)\n120\nml\nd’eau\n60\nml\nde vinaigre d’alcool\n60\nml\nde vinaigre de cidre\n2\nc-à-c de sirop d’érable\n1,5\nc-à-c de sel\nInstructions\nÉmincer les oignons en lamelles (plus ou moins suivant que vous les aimiez plutôt tendres ou croquants).\nLes mettre dans un bocal de 300ml.\nDans une casserole, porter à ébullition tous les autres ingrédients. Éteindre le feu dès que le mélange commence à bouillir et verser immédiatement dans le pot.\nLaisser refroidir avant de fermer le pot.\nVous pouvez les manger très rapidement (après une demi-heure de repos), ou les conserver 4-5 jours au frigo.\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nÉté\n,\nHiver\n,\nNos recettes Véganes\n,\nOignon\n,\nPlats & Accompagnements\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Salées\n,\nSalades\nTags:\noignons au vinaigre\n,\noignons doux\n,\noignons vinaigrés\nBarres Cajou Coco (Véganes et Sans gluten)\nTortillas à la Pomme de Terre (Vegan)\n1 thought on “Oignons Doux Vinaigrés (Vegan, Sans Gluten)”\nPing :\nOignon Cuisse de Poulet – Châteaufer\n4.56 from 74 votes (\n74 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

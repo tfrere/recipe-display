@@ -88,15 +88,21 @@
   },
   "ingredients": {
     "categories": [
-      { "id": "meat", "label": "Meat" },
       { "id": "produce", "label": "Fruits & Vegetables" },
-      { "id": "egg", "label": "Eggs" },
+      { "id": "herb", "label": "Fresh Herbs" },
+      { "id": "meat", "label": "Meat" },
+      { "id": "poultry", "label": "Poultry" },
+      { "id": "seafood", "label": "Seafood" },
       { "id": "dairy", "label": "Dairy" },
+      { "id": "egg", "label": "Eggs" },
+      { "id": "grain", "label": "Grains & Pasta" },
+      { "id": "legume", "label": "Legumes" },
+      { "id": "nuts_seeds", "label": "Nuts & Seeds" },
       { "id": "pantry", "label": "Pantry" },
-      { "id": "spice", "label": "Spices & Herbs" },
+      { "id": "oil", "label": "Oils" },
+      { "id": "spice", "label": "Spices" },
       { "id": "condiment", "label": "Condiments" },
       { "id": "beverage", "label": "Beverages" },
-      { "id": "seafood", "label": "Seafood" },
       { "id": "other", "label": "Other" }
     ]
   }

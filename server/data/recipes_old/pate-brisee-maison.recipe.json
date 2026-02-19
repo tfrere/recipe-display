@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "title": "Pâte brisée maison",
+    "description": "On a toujours besoin d'une pâte à tarte simple pour nos quiches ou tartes salées. Celle-ci ne nécessite que du beurre, de la farine et un œuf. En plus, elle ne vous prendra que 10min top chrono !",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "pâte",
+      "pâte brisée",
+      "pâte maison"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2018/08/tarte-c3a9pinards-4-of-61-scaled.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Rien ne vaut une bonne pâte faîte maison, on vous le promet, on sent VRAIMENT la différence."
+    ],
+    "slug": "pate-brisee-maison",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2018/08/tarte-c3a9pinards-4-of-61-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2018/05/23/pate-brisee-maison/",
+    "image": "images/pate-brisee-maison.jpg",
+    "createdAt": "2026-02-09T17:59:56.076291",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 1999.5,
+      "protein": 35.6,
+      "fat": 119.8,
+      "carbs": 192.2,
+      "fiber": 7.5,
+      "confidence": "high",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 3,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "ramolli coupé en cube",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 30.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": "fraîche",
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "film plastique ou torchon propre",
+    "rouleau à patisserie"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_beurre",
+      "action": "Mélanger la farine et le beurre dans un saladier du bout des doigts jusqu'à obtenir une texture de crumble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine",
+        "beurre"
+      ],
+      "produces": "crumble_mix",
+      "requires": [],
+      "visualCue": "texture de crumble"
+    },
+    {
+      "id": "ajouter_oeuf_sel_eau",
+      "action": "Faire un puits et y mettre l'oeuf, le sel et l'eau puis continuer à malaxer avec les mains.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "crumble_mix",
+        "oeuf",
+        "sel",
+        "eau"
+      ],
+      "produces": "pate_homogene",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etirer_pate",
+      "action": "Une fois que la consistance est homogène et qu'une boule commence à se former, étirer la pate avec la paume de la main 4 ou 5 fois.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_homogene"
+      ],
+      "produces": "pate_etiree",
+      "requires": [],
+      "visualCue": "consistance homogène, boule commence à se former"
+    },
+    {
+      "id": "reposer_frigo",
+      "action": "Former une boule, la mettre dans un film plastique ou un torchon propre et réserver au réfrigérateur au moins 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pate_etiree"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "abaisser_pate",
+      "action": "Abaisser la pâte (l'étaler avec un rouleau à patisserie) et le tour est joué !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_reposee"
+      ],
+      "produces": "pate_brisee_maison",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pate_brisee_maison",
+  "originalText": "Pâte brisée maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 mai 2018\nPâte brisée maison\nAller à la recette\nOn a toujours besoin d’une pâte à tarte simple pour nos quiches ou tartes salées. Celle-ci ne nécessite que du beurre, de la farine et un œuf. En plus, elle ne vous prendra que 10min top chrono !\nRien ne vaut une bonne pâte faîte maison, on vous le promet, on sent VRAIMENT la différence.\nPâte brisée maison\n4.55\n/5 avec\n113\nvotes\nImprimer la recette\nTemps de préparation\n10\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nTemps total\n10\nminutes\nmin\nIngrédients\n125\ng\nde beurre ramolli coupé en cube\n250\ng\nde farine\n1\noeuf\n1\npincée de sel\n30\nml\nd’eau fraîche\nInstructions\nMélanger la farine et le beurre dans un saladier du bout des doigts jusqu’à obtenir une texture de crumble.\nFaire un puits et y mettre l’oeuf, le sel et l’eau puis continuer à malaxer avec les mains. Une fois que la consistance est homogène et qu’une boule commence à se former, étirer la pate avec la paume de la main 4 ou 5 fois.\nFormer une boule, la mettre dans un film plastique ou un torchon propre et réserver au réfrigérateur au moins 30 min pendant que vous préparez la garniture de votre tarte ou quiche.\nVous n’aurez plus qu’à abaisser la pâte (l’étaler avec un rouleau à patisseriet le tour est joué !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nBrioches et Boulange\nTags:\npâte\n,\npâte brisée\n,\npâte maison\nBuns Maison pour Burger\n4.55 from 113 votes (\n113 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "title": "Patates douces r\u00f4ties \u00e9pinards et reblochon",
+    "description": "Cette recette de Patates douces r\u00f4ties \u00e9pinards et reblochon va vous ravir les papilles ! C'est une recette tr\u00e8s simple. Un peu longue en cuisson.",
+    "servings": 2,
+    "prepTime": "PT15M",
+    "cookTime": "PT60M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "patate douce",
+      "patate douce au four",
+      "patate douce recette",
+      "reblochon",
+      "Epinards",
+      "Hiver",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/03/Patate-douce-reblochon-4-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le but \u00e9tant d'obtenir une chaire fondante. Et de pouvoir les farcir ensuite.",
+      "J'ai ajout\u00e9 un peu de miso blanc en fin de cuisson pour le petit go\u00fbt umami qui fait plaisir !",
+      "On r\u00e9cup\u00e8re la chair des patates douces, sans ab\u00eemer la peau.",
+      "Si besoin, mettez votre four en mode grill.",
+      "D\u00e9guster chaud !"
+    ],
+    "slug": "patates-douces-roties-epinards-et-reblochon",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/03/Patate-douce-reblochon-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/03/09/patates-douces-roties-epinards-et-reblochon/",
+    "image": "images/patates-douces-roties-epinards-et-reblochon.webp",
+    "createdAt": "2026-02-09T21:47:12.660565",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 70.0,
+    "totalCookingTime": 20.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 595.6,
+      "protein": 19.7,
+      "fat": 38.5,
+      "carbs": 44.6,
+      "fiber": 7.5,
+      "confidence": "high",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "sweet_potatoes",
+      "name": "patates douces moyennes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Sweet potatoes"
+    },
+    {
+      "id": "spinach",
+      "name": "\u00e9pinards surgel\u00e9s",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "frozen spinach"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 75.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade moulue",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "white_miso",
+      "name": "miso blanc",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "white miso"
+    },
+    {
+      "id": "reblochon",
+      "name": "reblochon",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Reblochon cheese"
+    },
+    {
+      "id": "oil",
+      "name": "huile",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oil"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rinse_prick_potatoes",
+      "action": "Rincer les patates douces puis les piquer plusieurs fois avec une fourchette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sweet_potatoes"
+      ],
+      "produces": "prepared_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_potatoes",
+      "action": "Les enfourner sur une plaque de cuisson pour 50min, ou jusqu'\u00e0 ce qu'elles soient molles.",
+      "duration": "PT50M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "prepared_potatoes"
+      ],
+      "produces": "roasted_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "molles"
+    },
+    {
+      "id": "thaw_spinach",
+      "action": "Pendant ce temps, faire d\u00e9congeler les \u00e9pinards (id\u00e9alement \u00e0 la vapeur).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "spinach"
+      ],
+      "produces": "thawed_spinach",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_onion",
+      "action": "\u00c9mincer l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "onion"
+      ],
+      "produces": "sliced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Le faire revenir dans une po\u00eale avec 1 c\u00e0s d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "sliced_onion",
+        "oil"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": "tendres"
+    },
+    {
+      "id": "add_spinach",
+      "action": "Quand ils sont tendres, ajouter les \u00e9pinards d\u00e9congel\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "sauteed_onion",
+        "thawed_spinach"
+      ],
+      "produces": "onion_spinach_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cream_garlic_nutmeg",
+      "action": "Faire revenir 3-4min puis ajouter la gousse d'ail press\u00e9e, la cr\u00e8me et la muscade. Laisser revenir encore 5-7min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "onion_spinach_mix",
+        "garlic",
+        "cream",
+        "nutmeg"
+      ],
+      "produces": "creamy_spinach_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_miso_season",
+      "action": "Retirer du feu et ajouter le miso. Saler, poivrer. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "creamy_spinach_mix",
+        "white_miso",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_potatoes",
+      "action": "Sortir les patates douces du four. Quand elles ont suffisamment refroidies pour ne pas vous br\u00fbler, les ouvrir avec un couteau, sans les couper compl\u00e8tement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "roasted_potatoes"
+      ],
+      "produces": "cooled_opened_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "scoop_mix_fill",
+      "action": "Retirer la chaire (en laissant un petit cm de chair sur les c\u00f4t\u00e9s). M\u00e9langer la chair avec les \u00e9pinards, puis farcir les patates douces.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "cooled_opened_potatoes",
+        "seasoned_filling"
+      ],
+      "produces": "stuffed_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cheese_bake",
+      "action": "Disposer des tranches de reblochon sur les patates douces puis enfourner pour 10min (si besoin, mettez votre four en mode grill).",
+      "duration": "PT10M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "stuffed_potatoes",
+        "reblochon"
+      ],
+      "produces": "cheesy_stuffed_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "D\u00e9guster chaud !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "cheesy_stuffed_potatoes"
+      ],
+      "produces": "patates_douces_roties_epinards_reblochon",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "patates_douces_roties_epinards_reblochon",
+  "originalText": "Patates douces r\u00f4ties \u00e9pinards et reblochon - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n9 mars 2023\nPatates douces r\u00f4ties \u00e9pinards et reblochon\nAller \u00e0 la recette\nCette recette de Patates douces r\u00f4ties \u00e9pinards et reblochon va vous ravir les papilles !\nEt ne me croyez pas sur parole ! Testez-la !\nC\u2019est une recette tr\u00e8s simple. Un peu longue en cuisson. Comme souvent, quand on fait r\u00f4tir un gros l\u00e9gume entier au four, c\u2019est long\u2026\nEnfin, l\u00e0, je les ai faites cuire quasi 1h au four. Enti\u00e8re, avec la peau. Le but \u00e9tant d\u2019obtenir une chaire fondante. Et de pouvoir les farcir ensuite.\nPour la farce, j\u2019ai fait assez classique. J\u2019aime bien les \u00e9pinards. Donc j\u2019ai fait une farce aux \u00e9pinards. Parfois plus c\u2019est simple et plus on aime hein !\nDonc, \u00e9pinards, oignons, ail, cr\u00e8me et muscade. J\u2019ai ajout\u00e9 un peu de miso blanc en fin de cuisson pour le petit go\u00fbt umami qui fait plaisir !\nEnsuite, on r\u00e9cup\u00e8re la chair des patates douces, sans ab\u00eemer la peau. Puis on la m\u00e9lange \u00e0 la farce aux \u00e9pinards. On met quelques g\u00e9n\u00e9reuses tranches de reblochon par-dessus. On fait gratiner au four. Et voil\u00e0 ! C\u2019est pr\u00eat !\nCette recette de\u00a0 Patates douces r\u00f4ties \u00e9pinards et reblochon est vraiment trop sympa !\nEt si vous aimez les patates douces, je vous conseille aussi\nles patates douces au sirop d\u2019\u00e9rable\n. Et\nen frites ; quel bonheur\n!\nPatates douces r\u00f4ties \u00e9pinards et reblochon\n4.43\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\npatates douces moyennes\n140\ng\nd\u2019\u00e9pinards surgel\u00e9s\n1\noignon\n75\nml\nde cr\u00e8me liquide\n1\ngousse d\u2019ail\n1\npinc\u00e9e de noix de muscade moulue\n1\nc\u00e0c de miso blanc\n120\ng\nde reblochon\nInstructions\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nRincer les patates douces puis les piquer plusieurs fois avec une fourchette.\nLes enfourner sur une plaque de cuisson pour 50min, ou jusqu\u2019\u00e0 ce qu\u2019elles soient molles.\nPendant ce temps, faire d\u00e9congeler les \u00e9pinards (id\u00e9alement \u00e0 la vapeur).\n\u00c9mincer l\u2019oignon, le faire revenir dans une po\u00eale avec 1 c\u00e0s d\u2019huile.\nQuand ils sont tendres, ajouter les \u00e9pinards d\u00e9congel\u00e9s.\nFaire revenir 3-4min puis ajouter la gousse d\u2019ail press\u00e9e, la cr\u00e8me et la muscade. Laisser revenir encore 5-7min.\nRetirer du feu et ajouter le miso. Saler, poivrer. Bien m\u00e9langer.\nSortir les patates douces du four. Quand elles ont suffisamment refroidies pour ne pas vous br\u00fbler, les ouvrir avec un couteau, sans les couper compl\u00e8tement.\nRetirer la chaire (en laissant un petit cm de chair sur les c\u00f4t\u00e9s). M\u00e9langer la chair avec les \u00e9pinards, puis farcir les patates douces.\nDisposer des tranches de reblochon sur les patates douces puis enfourner pour 10min (si besoin, mettez votre four en mode grill).\nD\u00e9guster chaud !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nEpinards\n,\nHiver\n,\nPatate Douce\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\npatate douce\n,\npatate douce au four\n,\npatate douce recette\n,\nreblochon\nQuiche Ch\u00e8vre et \u00c9pinards\nOignons farcis au riz et herbes fra\u00eeches\n1 thought on \u201cPatates douces r\u00f4ties \u00e9pinards et reblochon\u201d\ncarole\ndit\u00a0:\n3 novembre 2025 \u00e0 18 h 09 min\nje vais tester demain, quel poids pour 2 patates douces?\nchargement\u2026\nR\u00e9pondre\n4.43 from 126 votes (\n126 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 20.0
+}

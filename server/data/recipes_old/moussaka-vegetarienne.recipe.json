@@ -1,0 +1,801 @@
+{
+  "metadata": {
+    "title": "Moussaka v\u00e9g\u00e9tarienne",
+    "description": "La Moussaka v\u00e9g\u00e9tarienne, un classique de la cuisine grecque, revisit\u00e9 sans viande. Ce plat m\u00e9diterran\u00e9en qui allie aubergines, viande hach\u00e9e et b\u00e9chamel, est maintenant r\u00e9alisable sans viande !",
+    "servings": 10,
+    "prepTime": "PT45M",
+    "cookTime": "PT75M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergines",
+      "courgette",
+      "moussaka",
+      "moussaka v\u00e9g\u00e9tarienne",
+      "recette grecque",
+      "v\u00e9g\u00e9tarien",
+      "quinoa",
+      "champignons"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Moussaka-quinoa-5-of-8.jpg",
+    "nationality": "grecque",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez congeler cette Moussaka v\u00e9g\u00e9tarienne sans probl\u00e8me. Il vous suffira de la laisser d\u00e9congeler 24h au frigo. Ou de la passer au four \u00e0 100\u00b0C le temps qu'elle soit ti\u00e8de.",
+      "Laissez compl\u00e8tement refroidir, cela permet aux saveurs de se d\u00e9velopper et \u00e0 la moussaka de tenir \u00e0 la d\u00e9coupe.",
+      "Vous pouvez la d\u00e9guster froide ou la faire r\u00e9chauffer au four."
+    ],
+    "slug": "moussaka-vegetarienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/09/Moussaka-quinoa-5-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/09/21/moussaka-vegetarienne/",
+    "image": "images/moussaka-vegetarienne.webp",
+    "createdAt": "2026-02-09T21:57:28.886880",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 110.0,
+    "totalCookingTime": 15.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 475.9,
+      "protein": 14.4,
+      "fat": 23.3,
+      "carbs": 55.3,
+      "fiber": 8.1,
+      "confidence": "high",
+      "resolvedIngredients": 15,
+      "matchedIngredients": 17,
+      "totalIngredients": 17,
+      "negligibleIngredients": 11,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "aubergines",
+      "name": "aubergines",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 1kg",
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "courgettes",
+      "name": "courgettes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "environ 600g",
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "pommes_de_terre",
+      "name": "pommes de terre",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9es",
+      "notes": "environ 800g",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "huile_dolive_legumes",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "sel_legumes",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_legumes",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "oignons",
+      "name": "oignons jaunes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onions"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "huile_dolive_sauteuse",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "laurier",
+      "name": "laurier",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "concentre_tomate",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 140.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "champignons",
+      "name": "champignons de paris",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "quinoa",
+      "name": "quinoa",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "quinoa"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 200.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "cannelle_couche",
+      "name": "cannelle",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "sel_couche",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour la couche",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "persil",
+      "name": "persil plat",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hach\u00e9",
+      "notes": "petit bouquet",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "lait",
+      "name": "lait",
+      "quantity": 1000.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "1 L",
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "huile_dolive_bechamel",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 110.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "cannelle_bechamel",
+      "name": "cannelle",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "muscade",
+      "name": "noix de muscade",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "sel_bechamel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour la b\u00e9chamel",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "poivre_bechamel",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9 pour la b\u00e9chamel",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Sauteuse",
+    "Casserole",
+    "Plat de cuisson (environ 35cmx25cm)"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "legumes",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "Couper dans la longueur les aubergines, les courgettes et les pommes de terre (\u00e9pluch\u00e9es) en lamelles d'\u00bd cm d'\u00e9paisseur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "legumes",
+      "uses": [
+        "aubergines",
+        "courgettes",
+        "pommes_de_terre"
+      ],
+      "produces": "vegetable_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roast_vegetables",
+      "action": "Les d\u00e9poser sur des plaques de cuisson, enduisez-les d'huile d'olive, d'origan, de sel et poivre et enfourner 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "legumes",
+      "uses": [
+        "vegetable_slices",
+        "huile_dolive_legumes",
+        "origan",
+        "sel_legumes",
+        "poivre_legumes"
+      ],
+      "produces": "roasted_vegetables",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onion_garlic",
+      "action": "Hachez l'oignon et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "oignons",
+        "ail"
+      ],
+      "produces": "chopped_onion_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion_garlic",
+      "action": "Faites-les revenir dans une sauteuse avec l'huile d'olive et le laurier jusqu'\u00e0 ce que l'oignon devienne translucide.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "chopped_onion_garlic",
+        "huile_dolive_sauteuse",
+        "laurier"
+      ],
+      "produces": "sauteed_onion_garlic",
+      "requires": [],
+      "visualCue": "oignon translucide"
+    },
+    {
+      "id": "add_tomato_paste",
+      "action": "Ajoutez le concentr\u00e9 de tomate et faites-le revenir quelques minutes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "sauteed_onion_garlic",
+        "concentre_tomate"
+      ],
+      "produces": "tomato_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_mushrooms",
+      "action": "Passez les champignons au mixeur pour obtenir des morceaux de tailles in\u00e9gales.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "champignons"
+      ],
+      "produces": "chopped_mushrooms",
+      "requires": [],
+      "visualCue": "morceaux de tailles in\u00e9gales"
+    },
+    {
+      "id": "add_mushrooms",
+      "action": "Ajoutez-les \u00e0 la sauteuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "tomato_base",
+        "chopped_mushrooms"
+      ],
+      "produces": "mushroom_tomato_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_quinoa_ingredients",
+      "action": "Rincez le quinoa et l'ajoutez en m\u00eame temps que l'eau, la cannelle, le persil hach\u00e9 et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "mushroom_tomato_mix",
+        "quinoa",
+        "eau",
+        "cannelle_couche",
+        "persil",
+        "sel_couche"
+      ],
+      "produces": "quinoa_mushroom_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_quinoa_mix",
+      "action": "Faites revenir 20min en remuant r\u00e9guli\u00e8rement.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "couche_milieu",
+      "uses": [
+        "quinoa_mushroom_mix"
+      ],
+      "produces": "cooked_quinoa_mushroom_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_egg_milk",
+      "action": "Battez l'\u0153uf dans un bol de lait. R\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "bechamel",
+      "uses": [
+        "oeuf",
+        "lait"
+      ],
+      "produces": "egg_milk_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil_butter",
+      "action": "Dans une casserole, faites chauffer l'huile d'olive avec le beurre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel",
+      "uses": [
+        "huile_dolive_bechamel",
+        "beurre"
+      ],
+      "produces": "hot_oil_butter",
+      "requires": [],
+      "visualCue": "beurre fondu"
+    },
+    {
+      "id": "add_flour",
+      "action": "Quand il a fondu, ajoutez la farine et faire revenir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel",
+      "uses": [
+        "hot_oil_butter",
+        "farine"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_egg_milk",
+      "action": "Ajouter le m\u00e9lange oeuf lait, puis le lait restant petit \u00e0 petit dans la casserole tout en fouettant constamment pour que la b\u00e9chamel prenne.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel",
+      "uses": [
+        "roux",
+        "egg_milk_mixture",
+        "lait"
+      ],
+      "produces": "thickening_bechamel",
+      "requires": [],
+      "visualCue": "b\u00e9chamel qui prend"
+    },
+    {
+      "id": "finish_bechamel",
+      "action": "Ajoutez la cannelle, la muscade, le sel et le poivre. Ainsi que le parmesan r\u00e2p\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel",
+      "uses": [
+        "thickening_bechamel",
+        "cannelle_bechamel",
+        "muscade",
+        "sel_bechamel",
+        "poivre_bechamel",
+        "parmesan"
+      ],
+      "produces": "finished_bechamel",
+      "requires": [],
+      "visualCue": "consistance souhait\u00e9e"
+    },
+    {
+      "id": "oil_baking_dish",
+      "action": "Huilez le fond d'un plat d'environ 35cmx25cm.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "huile_dolive_legumes"
+      ],
+      "produces": "oiled_baking_dish",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_layer_vegetables",
+      "action": "Tapissez-le d'une couche de pomme de terre, puis d'une couche d'aubergines, puis d'une couche de courgette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "oiled_baking_dish",
+        "roasted_vegetables"
+      ],
+      "produces": "first_vegetable_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_bechamel_layer",
+      "action": "Versez une couche d'environ 1cm de b\u00e9chamel par-dessus, aplatissez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "first_vegetable_layer",
+        "finished_bechamel"
+      ],
+      "produces": "first_bechamel_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_layer_vegetables",
+      "action": "Refaites les 3 couches de l\u00e9gumes. Vous devriez utiliser toutes les pommes de terre et courgettes, mais il devrait vous rester des aubergines ensuite.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "first_bechamel_layer",
+        "roasted_vegetables"
+      ],
+      "produces": "second_vegetable_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_mushroom_filling",
+      "action": "Versez la pr\u00e9paration de champignons par-dessus.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "second_vegetable_layer",
+        "cooked_quinoa_mushroom_filling"
+      ],
+      "produces": "mushroom_filling_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "final_aubergine_layer",
+      "action": "Faites une derni\u00e8re couche d'aubergines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "mushroom_filling_layer",
+        "roasted_vegetables"
+      ],
+      "produces": "final_aubergine_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "top_with_bechamel",
+      "action": "Versez la fin de la b\u00e9chamel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "final_aubergine_layer",
+        "finished_bechamel"
+      ],
+      "produces": "bechamel_topped_moussaka",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_parmesan",
+      "action": "Saupoudrez \u00e9ventuellement de parmesan.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage",
+      "uses": [
+        "bechamel_topped_moussaka",
+        "parmesan"
+      ],
+      "produces": "parmesan_sprinkled_moussaka",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_moussaka",
+      "action": "Enfournez \u00e0 200\u00b0C pour 45min.",
+      "duration": "PT45M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage",
+      "uses": [
+        "parmesan_sprinkled_moussaka"
+      ],
+      "produces": "baked_moussaka",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cool_completely",
+      "action": "Laissez compl\u00e8tement refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "montage",
+      "uses": [
+        "baked_moussaka"
+      ],
+      "produces": "cooled_moussaka",
+      "requires": [],
+      "visualCue": "compl\u00e8tement refroidi"
+    }
+  ],
+  "finalState": "cooled_moussaka",
+  "originalText": "Moussaka v\u00e9g\u00e9tarienne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n21 septembre 2023\nMoussaka v\u00e9g\u00e9tarienne\nLa Moussaka v\u00e9g\u00e9tarienne, un classique de la cuisine grecque, revisit\u00e9 sans viande.\nCe plat m\u00e9diterran\u00e9en qui allie aubergines, viande hach\u00e9e et b\u00e9chamel, est maintenant r\u00e9alisable sans viande ! Alors que vous soyez v\u00e9g\u00e9tariens ou que vous souhaitiez simplement r\u00e9duire votre consommation de viande voici la recette qu\u2019il vous faut !\nLa grande question est : par quoi remplacer la viande hach\u00e9e ? Qui est quand m\u00eame assez central dans cette recette.\nEt bien, apr\u00e8s pas mal de r\u00e9flexion, j\u2019ai d\u00e9cid\u00e9 de la remplacer par un mix un peu atypique. J\u2019ai longuement h\u00e9sit\u00e9 a simplement utiliser des prot\u00e9ines de soja textur\u00e9es, comme dans\ncette recette de bolo\n. Ou des lentilles, comme je le fais en g\u00e9n\u00e9ral pour\nles hachis parmentier\n. Mais j\u2019ai finalement d\u00e9cid\u00e9 d\u2019innover. Et j\u2019ai r\u00e9alis\u00e9 une \u201cfausse viande\u201d \u00e0 partir d\u2019un m\u00e9lange de champignons et de quinoa. Le r\u00e9sultat est tr\u00e8s sympa. La texture des champignons compl\u00e8te bien celle du quinoa. Et le quinoa apporte une belle dose de prot\u00e9ines \u00e0 ce plat. Et on ne va pas s\u2019en plaindre !\nAutrement, on retrouve les saveurs de la moussaka gr\u00e2ce aux \u00e9pices utilis\u00e9es. Les plats de viandes comportent souvent de la cannelle. Et la b\u00e9chamel \u00e0 la grecque est bien plus \u00e9paisse que sa version fran\u00e7aise.Notamment gr\u00e2ce \u00e0 l\u2019ajout d\u2019un \u0153uf entier. Et parfum\u00e9e \u00e0 la noix de muscade et \u00e0 la cannelle.\nSachez que vous pouvez congeler cette Moussaka v\u00e9g\u00e9tarienne sans probl\u00e8me. Il vous suffira de la laisser d\u00e9congeler 24h au frigo. Ou de la passer au four \u00e0 100\u00b0C le temps qu\u2019elle soit ti\u00e8de.\nMoussaka v\u00e9g\u00e9tarienne\n4.44\n/5 avec\n87\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n1\nheure\nh\n15\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n10\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les l\u00e9gumes\n3\naubergines\n1kg\n3\ncourgettes\n600g\n6\npommes de terre\n800g\nhuile d\u2019olive\norigan\nsel\npoivre\nPour la partie centrale\n2\noignons jaunes\n2\ngousses d\u2019ail\n3\nc\u00e0s d\u2019huile d\u2019olive\n2\nfeuilles de laurier\n140\ng\nde concentr\u00e9 de tomate\n400\ng\nde champignons de paris\n100\ng\nde quinoa\n200\nml\nd\u2019eau\n1\nc\u00e0c de cannelle\nsel\n1\npetit bouquet de persil plat\nPour la b\u00e9chamel\n1\noeuf\n1\nL\nde lait\n3\nc\u00e0s d\u2019huile d\u2019olive\n80\ng\nde beurre\n110\ng\nde farine\n\u00bd\nc\u00e0c de cannelle\n\u00bd\nc\u00e0c de noix de muscade\nsel\npoivre\n50\ng\nde parmesan r\u00e2p\u00e9\noptionnel\nInstructions\nPour les l\u00e9gumes\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nCouper dans la longueur les aubergines, les courgettes et les pommes de terre (\u00e9pluch\u00e9es) en lamelles d\u2019\u00bd cm d\u2019\u00e9paisseur.\nLes d\u00e9poser sur des plaques de cuisson (il vous en faudra 3 ou 4), enduisez-les d\u2019huile d\u2019olive, d\u2019origan, de sel et poivre et enfourner 30min.\nSi besoin, proc\u00e9dez par batch.\nPour la couche du milieu\nHachez l\u2019oignon et l\u2019ail.\nFaites-les revenir dans une sauteuse avec l\u2019huile d\u2019olive et le laurier jusqu\u2019\u00e0 ce que l\u2019oignon devienne translucide (env 10min).\nAjoutez le concentr\u00e9 de tomate et faites-le revenir quelques minutes.\nPassez les champignons au mixeur pour obtenir des morceaux de tailles in\u00e9gales (allant du grain de riz au gros haricots secs env). Ajoutez-les \u00e0 la sauteuse.\nRincez le quinoa et l\u2019ajoutez en m\u00eame temps que l\u2019eau, la cannelle, le persil hach\u00e9 et le sel.\nFaites revenir 20min en remuant r\u00e9guli\u00e8rement.\nR\u00e9servez.\nPour la b\u00e9chamel\nBattez l\u2019\u0153uf dans un bol de lait. R\u00e9servez.\nDans une casserole, faites chauffer l\u2019huile d\u2019olive avec le beurre.\nQuand il a fondu, ajoutez la farine et faire revenir 5min.\nAjouter le m\u00e9lange oeuf lait, puis le lait restant petit \u00e0 petit dans la casserole tout en fouettant constamment pour que la b\u00e9chamel prenne.\nContinuez \u00e0 fouetter jusqu\u2019\u00e0 obtenir la consistance souhait\u00e9e.\nAjoutez la cannelle, la muscade, le sel et le poivre. Ainsi que le parmesan r\u00e2p\u00e9.\nMonter la moussaka\nHuilez le fond d\u2019un plat d\u2019environ 35cmx25cm.\nTapissez-le d\u2019une couche de pomme de terre, puis d\u2019une couche d\u2019aubergines, puis d\u2019une couche de courgette.\nVersez une couche d\u2019environ 1cm de b\u00e9chamel par-dessus, aplatissez.\nRefaites les 3 couches de l\u00e9gumes. Vous devriez utiliser toutes les pommes de terre et courgettes, mais il devrait vous rester des aubergines ensuite.\nVersez la pr\u00e9paration de champignons par-dessus.\nFaites une derni\u00e8re couche d\u2019aubergines.\nVersez la fin de la b\u00e9chamel.\nSaupoudrez \u00e9ventuellement de parmesan.\nEnfournez \u00e0 200\u00b0C pour 45min.\nLaissez compl\u00e8tement refroidir, cela permet aux saveurs de se d\u00e9velopper et \u00e0 la moussaka de tenir \u00e0 la d\u00e9coupe.\nVous pouvez la d\u00e9guster froide ou la faire r\u00e9chauffer au four.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\naubergines\n,\ncourgette\n,\nmoussaka\n,\nmoussaka v\u00e9g\u00e9tarienne\n,\nrecette grecque\nSalade de courgette crue et burrata\n\u0152ufs cocotte en courgette\n3 thoughts on \u201cMoussaka v\u00e9g\u00e9tarienne\u201d\nLa Couturi\u00e8re\ndit\u00a0:\n5 janvier 2025 \u00e0 14 h 34 min\nUne merveille !\nchargement\u2026\nR\u00e9pondre\nIsa\ndit\u00a0:\n7 juin 2025 \u00e0 20 h 22 min\nMerci Natacha  pour ces recettes\nJ\u2019ai vos deux livres  et je les adore , ce soir je tente les oignons farcis . Le plus compliqu\u00e9 pour moi c\u2019est l\u2019assemblage mais je manque d\u2019entra\u00eenement\nLa moussaka est une tuerie , je l\u2019ai d\u00e9j\u00e0 fait deux fois\nIsabelle\nchargement\u2026\nR\u00e9pondre\nMERIT\ndit\u00a0:\n4 septembre 2025 \u00e0 13 h 35 min\nRecette d\u00e9licieuse qui a des saveurs surprenantes en cette saison o\u00f9 on cuisine beaucoup de ratatouille et autres tomates farcies. Merci pour cette recette.\nchargement\u2026\nR\u00e9pondre\n4.44 from 87 votes (\n84 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

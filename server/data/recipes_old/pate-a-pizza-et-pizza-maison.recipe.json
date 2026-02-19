@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "title": "P\u00e2te \u00e0 Pizza et Pizza maison",
+    "description": "Faire sa P\u00e2te \u00e0 Pizza et Pizza maison peut \u00eatre intimidant. Dans cet article, je vous donne ma technique, peaufin\u00e9e avec le temps, qui fonctionne \u00e0 chaque fois.",
+    "servings": 2,
+    "prepTime": "PT30M",
+    "cookTime": "PT10M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pizza",
+      "p\u00e2te \u00e0 pizza",
+      "v\u00e9g\u00e9tarien",
+      "italien",
+      "fromage",
+      "tomate"
+    ],
+    "imageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/02/pizza-1-of-8.jpg?ssl=1",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La p\u00e2te \u00e0 pizza est une p\u00e2te tr\u00e8s humide et collante, c'est normal.",
+      "Il est imp\u00e9ratif d'avoir de la levure active.",
+      "Pour une cuisson r\u00e9ussie, votre four doit \u00eatre TRES CHAUD.",
+      "Vous pouvez conserver la p\u00e2te \u00e0 pizza quelques jours au frais dans un r\u00e9cipient ferm\u00e9 et assez grand.",
+      "Si vous avez un robot p\u00e2tissier, ce sera plus simple, mais la recette est r\u00e9alisable \u00e0 la main."
+    ],
+    "slug": "pate-a-pizza-et-pizza-maison",
+    "sourceImageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/02/pizza-1-of-8.jpg?ssl=1",
+    "sourceUrl": "https://freethepickle.fr/2022/02/15/pate-a-pizza-et-pizza-maison/",
+    "image": "images/pate-a-pizza-et-pizza-maison.jpg",
+    "createdAt": "2026-02-09T21:06:18.170209",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 116.5,
+    "totalCookingTime": 26.5,
+    "nutritionPerServing": {
+      "calories": 1361.9,
+      "protein": 56.9,
+      "fat": 33.4,
+      "carbs": 208.8,
+      "fiber": 7.4,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "eau_tiede",
+      "name": "eau ti\u00e8de",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Warm water"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "levure",
+      "name": "levure de boulanger s\u00e8che",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Active dry yeast"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 24.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "farine_t65",
+      "name": "farine T65",
+      "quantity": 540.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Bread flour"
+    },
+    {
+      "id": "sauce_tomate",
+      "name": "sauce tomate \u00e0 pizza",
+      "quantity": 110.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pizza sauce"
+    },
+    {
+      "id": "champignon",
+      "name": "champignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "coup\u00e9 en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "mushroom"
+    },
+    {
+      "id": "olives",
+      "name": "olives",
+      "quantity": 6.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "6-7 olives",
+      "optional": false,
+      "name_en": "Olives"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella",
+      "quantity": 130.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mozzarella"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 20.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "origan",
+      "name": "origan",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "1 pinc\u00e9e",
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "roquette",
+      "name": "roquette",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "1 poign\u00e9e",
+      "optional": false,
+      "name_en": "arugula"
+    }
+  ],
+  "tools": [
+    "Robot p\u00e2tissier (optionnel)",
+    "Pierre \u00e0 pizza (optionnel)",
+    "Planche de transfert (optionnel)",
+    "Rouleau \u00e0 p\u00e2tisserie (optionnel)"
+  ],
+  "steps": [
+    {
+      "id": "activer_levure",
+      "action": "Dans un bol, verser l'eau ti\u00e8de, le sucre et la levure. M\u00e9langer et laisser reposer.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "eau_tiede",
+        "sucre",
+        "levure"
+      ],
+      "produces": "levure_activee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_huile",
+      "action": "Ajouter l'huile d'olive au m\u00e9lange.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "levure_activee",
+        "huile_olive"
+      ],
+      "produces": "liquide_levure_huile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_farine_sel",
+      "action": "Dans un autre saladier, peser et m\u00e9langer la farine et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "farine_t65",
+        "sel"
+      ],
+      "produces": "farine_sel_melange",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "petrir_pate",
+      "action": "Mettre le robot en marche et verser petit \u00e0 petit la farine dans le liquide. P\u00e9trir 5 \u00e0 10min. \u00c0 la main: Incorporer la farine petit \u00e0 petit et p\u00e9trir \u00e9nergiquement pendant 10-15min.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "liquide_levure_huile",
+        "farine_sel_melange"
+      ],
+      "produces": "pate_crue",
+      "requires": [],
+      "visualCue": "La p\u00e2te doit \u00eatre collante et filer quand on l'\u00e9tire"
+    },
+    {
+      "id": "lever_pate",
+      "action": "Huiler un saladier, y verser la p\u00e2te et la retourner pour huiler sa surface. Couvrir d'un torchon humide et laisser lever.",
+      "duration": "PT1H30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "pate_crue",
+        "huile_olive"
+      ],
+      "produces": "pate_levee",
+      "requires": [],
+      "visualCue": "jusqu'\u00e0 ce qu'elle double de volume"
+    },
+    {
+      "id": "degazer_pate",
+      "action": "D\u00e9gazer la p\u00e2te en enfon\u00e7ant le poing dedans.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "pate_levee"
+      ],
+      "produces": "pate_degazee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_boule",
+      "action": "Sur un plan de travail farin\u00e9, verser la p\u00e2te, former une boule et la saupoudrer de farine.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "pate_degazee",
+        "farine_t65"
+      ],
+      "produces": "boule_pate",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "\u00c9taler la p\u00e2te avec les mains ou un rouleau \u00e0 p\u00e2tisserie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te \u00e0 pizza",
+      "uses": [
+        "boule_pate"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 250\u00b0C. Si vous avez une pierre \u00e0 pizza, l'enfourner maintenant.",
+      "duration": null,
+      "temperature": 250,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_sur_planche",
+      "action": "\u00c9taler la p\u00e2te sur une planche de transfert ou une plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "pate_sur_support",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_sauce",
+      "action": "\u00c9taler la sauce tomate sur la pizza.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pate_sur_support",
+        "sauce_tomate"
+      ],
+      "produces": "pate_saucee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "disposer_garnitures",
+      "action": "Disposer les champignons, les olives et les fromages.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pate_saucee",
+        "champignon",
+        "olives",
+        "mozzarella",
+        "parmesan"
+      ],
+      "produces": "pizza_garnie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saupoudrer_origan",
+      "action": "Saupoudrer d'origan.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pizza_garnie",
+        "origan"
+      ],
+      "produces": "pizza_avec_origan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_pizza",
+      "action": "Enfourner dans le four tr\u00e8s chaud et cuire.",
+      "duration": "PT6M30S",
+      "temperature": 250,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pizza_avec_origan"
+      ],
+      "produces": "pizza_cuite",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": "3min \u00e0 10min (selon votre four et la pr\u00e9sence d'une pierre)"
+    },
+    {
+      "id": "servir_pizza",
+      "action": "Sortir la pizza du four et servir imm\u00e9diatement avec la roquette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "garniture et cuisson",
+      "uses": [
+        "pizza_cuite",
+        "roquette"
+      ],
+      "produces": "pizza_maison",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "pizza_maison",
+  "originalText": "P\u00e2te \u00e0 Pizza et Pizza maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n15 f\u00e9vrier 2022\nP\u00e2te \u00e0 Pizza et Pizza maison\nAller \u00e0 la recette\nFaire sa P\u00e2te \u00e0 Pizza et Pizza maison peut \u00eatre intimidant.\nVous avez d\u00e9j\u00e0 os\u00e9 ? Test\u00e9 ?\nPersonnellement, il m\u2019a fallu pas mal de temps pour sauter le pas !\nDans cet article, je vous donne ma technique. Celle que j\u2019ai peaufin\u00e9e avec le temps et qui fonctionne \u00e0 chaque fois pour moi.\nAttention, je ne suis pas une pizza\u00efolo ! Je vous dis juste comment, moi je fais, avec le mat\u00e9riel que j\u2019ai !\nTable des mati\u00e8res\n1\nV\u00e9rifier que votre levure est active\n2\nPr\u00e9parer la p\u00e2te\n3\n\u00c9taler la p\u00e2te \u00e0 pizza\n4\nGarnir la pizza\n5\nLa sauce tomate\n6\nCuire la pizza maison\n7\nConserver la p\u00e2te \u00e0 pizza\n8\nLa vid\u00e9o pas \u00e0 pas\n9\nD\u2019autres id\u00e9es avec de la p\u00e2te \u00e0 pizza\n10\nP\u00e2te \u00e0 Pizza et Pizza maison\nV\u00e9rifier que votre levure est active\nDepuis que j\u2019ai trouv\u00e9 cette recette de p\u00e2te \u00e0 pizza, je ne fais plus que celle-ci ! Vous aurez de quoi faire 2 petites pizzas avec ces quantit\u00e9s.\nJe ne vais pas vous mentir, si vous avez un robot p\u00e2tissier, ce sera plus simple, plus rapide et moins salissant ! Mais cette recette est tout \u00e0 fait r\u00e9alisable \u00e0 la main. A la force de vos biscotos !\nIl faut commencer par activer la levure de boulanger. Pour cela, vous devez la mettre dans de l\u2019eau ti\u00e8de. Pas trop chaude, ni trop froide. Il faut que vous puissiez mettre cotre doigt dans l\u2019eau sans vous br\u00fbler, mais que vous sentiez tout de m\u00eame la chaleur.\nLe m\u00e9lange levure/eau/sucre doit commencer \u00e0 buller au bout de 5 \u00e0 10min. Cela vous permet de v\u00e9rifier que la levure est bien active. En effet, si votre levure est trop ancienne, ou si l\u2019eau \u00e9tait trop chaude, il se peut qu\u2019elle ne soit plus active. Auquel cas, la p\u00e2te ne montera pas. Il est donc vraiment imp\u00e9ratif d\u2019avoir de la levure active.\nPr\u00e9parer la p\u00e2te\nLa p\u00e2te \u00e0 pizza est une p\u00e2te tr\u00e8s humide et collante.\nJe commence par assembler les liquides (eau, levure, sucre et huile d\u2019olive), puis j\u2019ajoute les poudres (farine, sel).\nSi vous n\u2019avez pas de robot, commencez \u00e0 int\u00e9grer la farine petit \u00e0 petit en m\u00e9langeant avec une spatule. Puis quand la p\u00e2te \u00e9paissit, vous pouvez passer aux mains.\nSi vous avez un robot, vous pouvez utiliser le crochet ou la feuille, les 2 fonctionnent aussi bien.\nLa p\u00e2te doit \u00eatre p\u00e9trie 5 \u00e0 10min pour d\u00e9velopper les liaisons glut\u00e9iques. Ce sont ces liaisons qui permettent d\u2019avoir de l\u2019\u00e9lasticit\u00e9 dans la p\u00e2te \u00e0 pizza.\nVous saurez que vous avez suffisamment p\u00e9tri quand la p\u00e2te s\u2019agglom\u00e8re en boule. Quand vous \u00e9tirez un morceau de p\u00e2te entre deux doigts, la p\u00e2te doit filer.\nLa p\u00e2te va vous para\u00eetre tr\u00e8s molle/humide/collante. C\u2019est normal.\nIl faudra laisser pousser la p\u00e2te dans un grand bol tapiss\u00e9 d\u2019huile d\u2019olive pendant 1h \u00e0 3h. Tout d\u00e9pend de la chaleur ambiante.\nC\u2019est important de bien huiler le saladier et le dessus de la p\u00e2te. Cela lui \u00e9vite de coller et de s\u2019ass\u00e9cher.\nPensez \u00e0 la couvrir d\u2019un torchon propre humide.\nLa p\u00e2te doit au moins doubler de volume.\n\u00c9taler la p\u00e2te \u00e0 pizza\nPour pouvoir travailler la p\u00e2te, vous allez avoir besoin de beaucoup de farine. C\u2019est normal.\nCommencez par tapisser votre plan de travail propre avec une bonne dose de farine.\nD\u00e9gazer puis verser la p\u00e2te sur votre plant de travail.\nSaupoudrez de la farine par-dessus et formez doucement une boule.\nLa p\u00e2te doit \u00eatre compl\u00e8tement farin\u00e9e.\nVous pouvez ensuite la s\u00e9parer en deux.\nPour \u00e9taler la p\u00e2te, vous avez 2 options :\nSoit vous l\u2019\u00e9talez \u00e0 la main, en poussant sur la p\u00e2te avec vos paumes et vos doigts. Vous pourrez ensuite former un disque pour une pizza classique. C\u2019est ma m\u00e9thode pr\u00e9f\u00e9r\u00e9e.\nSoit vous l\u2019\u00e9talez avec un rouleau \u00e0 p\u00e2tisserie. Cela vous permettra de l\u2019\u00e9taler plus finement et surtout de l\u2019\u00e9taler en rectangle par exemple.\nGarnir la pizza\nAvant de garnir votre pizza, je vous conseille de r\u00e9fl\u00e9chir \u00e0 comment vous allez la mettre dans votre four ensuite.\nPersonnellement, j\u2019ai investi dans une pierre \u00e0 pizza et une planche de transfert.\nC\u2019est tr\u00e8s pratique, et si vous pensez faire des pizzas souvent, je vous conseille de vous \u00e9quiper !\nDu coup, pour ma part, je vois deux fa\u00e7ons de proc\u00e9der :\nSi vous avez une planche de transfert, d\u00e9poser votre disque de p\u00e2te directement dessus avant de le garnir.\nSinon, d\u00e9poser votre disque sur une plaque de cuisson.\nEnsuite vous n\u2019aurez plus qu\u2019\u00e0 d\u00e9poser vos garnitures et \u00e0 enfourner.\nLa sauce tomate\nVous pouvez utiliser la sauce de votre choix.\nPersonnellement,\nj\u2019utilise toujours celle-ci.\nC\u2019est ma recette pr\u00e9f\u00e9r\u00e9e.\nMais vous pouvez aussi utiliser un simple coulis de tomate ou de la sauce en bocal. Ou la sauce tomate que vous aimez !\nCuire la pizza maison\nPour une cuisson r\u00e9ussie, votre four doit \u00eatre\nTRES CHAUD\n.\nJe le pr\u00e9chauffe \u00e0 250\u00b0C avant m\u00eame de commencer \u00e0 \u00e9taler ma p\u00e2te.\nSi vous avez une pierre \u00e0 pizza, mettez-la tout de suite dans votre four. Plus elle est chaude et mieux ce sera.\nSi votre four est vraiment chaud et que vous avez une pierre, la cuisson va durer quelques minutes.\nAutrement, il faut compter une dizaine, voir une quinzaine de minutes.\nConserver la p\u00e2te \u00e0 pizza\nVous pouvez conserver la p\u00e2te \u00e0 pizza quelques jours. Mais attention, elle va continuer \u00e0 gonfler.\nIl faut donc imp\u00e9rativement la conserver au frais pour limiter sa croissance. Et surtout, pr\u00e9voir un r\u00e9cipient assez grand, et qui se ferme. Sinon, vous risquez de vous retrouver avec un monstre dans votre frigo. Et ce n\u2019est pas super sympa \u00e0 nettoyer !\nLa vid\u00e9o pas \u00e0 pas\nD\u2019autres id\u00e9es avec de la p\u00e2te \u00e0 pizza\nles pizza pockets\nle pain \u00e0 l\u2019ail et au fromage\nle\nSapin de No\u00ebl aux Fromages \u00e0 Fondue\nle sapin \u00e0 la courge\nles pizza rolls\nJ\u2019esp\u00e8re que cet article sur la P\u00e2te \u00e0 Pizza et Pizza maison vous a plu !\nP\u00e2te \u00e0 Pizza et Pizza maison\n4.60\n/5 avec\n85\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n50\nminutes\nmin\nTemps de cuisson\n5\nminutes\nmin\nTemps de repos\n2\nheures\nh\nPortions\n2\npizzas\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te \u00e0 pizza\n400\nml\nd\u2019eau ti\u00e8de\n20\ng\nde sucre\n1\nsachet de levure de boulanger s\u00e8che 4g\n24\ng\nd\u2019huile d\u2019olive\n1\nc-\u00e0-c de sel\n540\ng\nde farine T65\nGarniture pour 1 pizza\n110\ng\nde sauce tomate \u00e0 pizza\nrecette ici\n1\nchampignon coup\u00e9 en rondelles\n6-7\nolives\n130\ng\nde mozzarella\n20\ng\nde parmesan\nune pinc\u00e9e d\u2019origan\nune poign\u00e9e de roquette\nInstructions\nPr\u00e9paration de la p\u00e2te\nDans le bol de votre robot p\u00e2tissier (ou dans un saladier), verser l\u2019eau ti\u00e8de, le sucre et la levure. M\u00e9langer pour diluer le sucre et la levure et laissez reposer 10 min.\nLe m\u00e9lange doit commencer \u00e0 mousser, cela permet de v\u00e9rifier que votre levure est bien active.\nAjoutez ensuite l\u2019huile d\u2019olive.\nDans un autre saladier, peser et m\u00e9langer la farine et le sel.\nSi vous utilisez un robot p\u00e2tissier\nMettre le robot en marche sur une vitesse moyen-fort (\u00e9quip\u00e9 du crochet ou de la feuille) et verser petit \u00e0 petit la farine dans le liquide. P\u00e9trissez 5 \u00e0 10 min.\nLa p\u00e2te doit rester collante. Elle est pr\u00eate quand elle commence \u00e0 se d\u00e9tacher des bords du bol, mais qu\u2019elle file encore quand vous l\u2019\u00e9tiez entre deux doigts.\nSi vous p\u00e9trissez \u00e0 la main\nIncorporer la farine petit \u00e0 petit au liquide.\nContinuer de p\u00e9trir \u00e9nergiquement pendant au moins 10-15 min.\nLa p\u00e2te est collante et humide c\u2019est normal. P\u00e9trir jusqu\u2019\u00e0 ce qu\u2019elle commence \u00e0 se d\u00e9tacher de vos mains, mais qu\u2019elle file encore lorsque vous l\u2019\u00e9tirez entre deux doigts.\nFaire reposer la p\u00e2te\nHuiler un saladier et y verser la p\u00e2te \u00e0 l\u2019aide d\u2019une spatule ou d\u2019une maryse.\nRetourner la sur elle-m\u00eame pour que la surface sup\u00e9rieure de la p\u00e2te soit huil\u00e9e aussi, cela \u00e9vitera qu\u2019elle ne s\u00e8che.\nCouvrir le saladier avec un torchon humide et laissez la monter au moins 1h, voire plut\u00f4t 2h. Elle doit doubler de volume.\nSi vous la laissez gonfler plus longtemps, attention, elle risque de d\u00e9border. Vous pouvez la conserver au frais pour ralentir sa pousse.\nEtaler la p\u00e2te\nD\u00e9gazer la p\u00e2te en enfon\u00e7ant votre poing dedans.\nVerser une g\u00e9n\u00e9reuse couche de farine sur le plan de travail et verser la p\u00e2te par dessus.\nFormer une boule et saupoudrer de la farine dessus pour pouvoir la travailler.\nEtaler la p\u00e2te avec vos mains (ou un rouleau \u00e0 p\u00e2tisserie).\nGarnir et cuire la pizza\nPr\u00e9chauffer le four \u00e0 250\u00b0C.\nSi vous avez une pierre \u00e0 pizza enfournez la, plus elle est chaude et mieux ce sera\nEtalez la p\u00e2te sur votre planche de transfert, ou sur une plaque de cuisson. Ce n\u2019est pas \u00e9vident de d\u00e9placer la pizza une fois qu\u2019elle est garnie, alors, sauf si vous avez une technique infaillible, je vous conseille de vous arranger pour qu\u2019elle soit facile \u00e0 d\u00e9placer !\nEtaler la sauce tomate sur la pizza.\nDisposer les champignons, les olives et les fromages.\nSaupoudrer d\u2019origan.\nEnfourner dans le four tr\u00e8s chaud.\nLe temps de cuisson d\u00e9pend de la chaleur de votre four et de la pr\u00e9sence ou non d\u2019une pierre \u00e0 pizza. Il faut compter entre 3min et 10min.\nSortez la pizza du four et servez iumm\u00e9diatement avec la roquette.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBrioches et Boulange\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\ncomment faire la p\u00e2te \u00e0 pizza\n,\nconseils pate \u00e0 pizza\n,\nm\u00e9thode pour pate \u00e0 pizza\n,\np\u00e2te \u00e0 pizza\n,\npizza\n,\npizza v\u00e9g\u00e9\n,\npizza v\u00e9g\u00e9tarienne\n,\nrecette p\u00e2te\n,\nrecette p\u00e2te \u00e0 pizza\n,\nrecette pizza\n,\nr\u00e9ussir sa p\u00e2te \u00e0 pizza\nCookies Chocolat Blanc et Pralines Roses\nBlanquette V\u00e9g\u00e9tarienne au Chou Romanesco\n1 thought on \u201cP\u00e2te \u00e0 Pizza et Pizza maison\u201d\nEstelle\ndit\u00a0:\n15 f\u00e9vrier 2022 \u00e0 22 h 33 min\nBonjour\nPourriez vous partager votre mod\u00e8le de planche de transfert ? Je n\u2019en ai pas trouv\u00e9\nchargement\u2026\nR\u00e9pondre\n4.60 from 85 votes (\n85 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 26.5
+}

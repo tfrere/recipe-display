@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "title": "Choucroute",
+    "description": "Une choucroute traditionnelle mijotée longuement avec des viandes fumées, des saucisses et du Riesling, servie avec des pommes de terre.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT4H",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "choucroute",
+      "alsacien",
+      "chou",
+      "viandes fumées",
+      "Riesling",
+      "hiver"
+    ],
+    "imageUrl": null,
+    "nationality": "French",
+    "author": null,
+    "source": "Contes et Légendes des Vosges",
+    "notes": [
+      "La choucroute faite à la nouvelle lune est toujours de qualité inférieure ; si l'on veut qu'elle soit excellente, il faut en remettre la préparation au déclin de la lune.",
+      "On peut rallonger avec de l'eau si nécessaire pour que tout soit couvert.",
+      "Les saucisses de Strasbourg peuvent être cuites à l'eau s'il n'y a plus de place dans le faitout."
+    ],
+    "slug": "choucroute",
+    "originalContent": "Choucroute\n\n« La choucroute faite à la nouvelle lune est toujours de qualité inférieure ; si l’on veut qu’elle soit excellente, il faut en remettre la préparation au déclin de la lune. »\nContes et Légendes des Vosges \n\nIngrédients :\n2 kg de chou cru\n1 oignon jaune\nBaies de Genièvre\n1 Saucisse de Morteau crue\n1 Palette fumée crue\n1 Poitrine fumée crue (je dirais 300g)\n1 citron jaune\nPommes de terre (2 par personne)\nSaucisse de Strasbourg (1 par personne)\n2 bouteille de Riesling\nBeurre/saindoux\nCouenne\n\nPréparation :\n- Blanchir le chou : faire bouillir de l'eau dans une casserole et plonger le chou pendant 5 minutes puis bien essorer à l'eau froide.\n- Dans un grand faitout, faire revenir à feu vif un oignon détaillé en rondelles dans le beurre/saindoux\n- Lorsque l’oignon commence à colorer, éteindre le feu et jeter l’oignon\n- Attendre que le faitout refroidisse puis remettre des lamelles de beurre ou du saindoux\n- Disposer la couenne au fond de la casserole\n- Découper le citron jaune en deux\n- Mettre la moitié du chou sur la couenne et ajouter quelques baies de genièvre et arroser le chou d’un demi jus de citron\n- Par-dessus le chou, disposer la palette, le lard et la saucisse de Morteau\n- Recouvrir de chou puis y ajouter de nouveau les baies de genièvre et l’autre demi de jus de citron\n- Faire chauffer la casserole à feu moyen jusqu'à sentir le beurre fondu puis verser l'entièreté des deux bouteilles de Riesling (rallonger avec de l’eau au besoin pour que tout soit couvert à hauteur)\n- Couvrir puis lorsque ça arrive à ébullition réduire le feu (il ne faut pas que ça bout à grosses bulles mais plutôt que ça frémisse)\n- Laisser mijoter à feu doux pendant minimum 4h (personnellement je conseillerais même 6h) au bout d’un moment le liquide de la choucroute va brunir et on ne doit plus sentir les vapeurs d’alcool\n- Une heure avant de servir, éplucher les pommes de terre et les disposer au-dessus (elles peuvent-être à moitié immergées ce n’est pas grave)\n- 20 minutes avant disposer les saucisses de Strasbourg  par dessus s'il reste de la place sinon on peut les cuire à l'eau\n- Vérifier que les pommes de terre soient cuites puis servir\n\nMain recipe image: temp_image_recipe-gen-20260208054525-8935d028.png",
+    "createdAt": "2026-02-08T05:46:51.021045",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 320.0,
+    "totalCookingTime": 75.0,
+    "sourceImageUrl": "choucroute.png",
+    "image": "images/choucroute.png",
+    "nutritionPerServing": {
+      "calories": 929.2,
+      "protein": 21.5,
+      "fat": 46.7,
+      "carbs": 106.0,
+      "fiber": 20.3,
+      "confidence": "low",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 9,
+      "totalIngredients": 12,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [],
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cabbage",
+      "name": "chou cru",
+      "quantity": 2.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cabbage"
+    },
+    {
+      "id": "yellow_onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "détaillé en rondelles",
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "juniper_berries",
+      "name": "baies de Genièvre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "quelques baies",
+      "optional": false,
+      "name_en": "Juniper berries"
+    },
+    {
+      "id": "morteau_sausage",
+      "name": "saucisse de Morteau crue",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Morteau sausage"
+    },
+    {
+      "id": "smoked_shoulder",
+      "name": "palette fumée crue",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Smoked pork shoulder"
+    },
+    {
+      "id": "smoked_belly",
+      "name": "poitrine fumée crue",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Smoked pork belly"
+    },
+    {
+      "id": "lemon",
+      "name": "citron jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 8.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "2 par personne pour 4 personnes",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "strasbourg_sausages",
+      "name": "saucisse de Strasbourg",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "meat",
+      "preparation": null,
+      "notes": "1 par personne pour 4 personnes",
+      "optional": false,
+      "name_en": "Strasbourg sausage"
+    },
+    {
+      "id": "riesling",
+      "name": "Riesling",
+      "quantity": 2.0,
+      "unit": "bottle",
+      "category": "beverage",
+      "preparation": null,
+      "notes": "environ 1.5L total",
+      "optional": false,
+      "name_en": "Riesling"
+    },
+    {
+      "id": "butter_lard",
+      "name": "beurre/saindoux",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "pour faire revenir",
+      "optional": false,
+      "name_en": "Butter/lard"
+    },
+    {
+      "id": "pork_rind",
+      "name": "couenne",
+      "quantity": null,
+      "unit": null,
+      "category": "meat",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Pork rind"
+    }
+  ],
+  "tools": [
+    "grand faitout",
+    "casserole"
+  ],
+  "steps": [
+    {
+      "id": "blanch_cabbage",
+      "action": "Faire bouillir de l'eau dans une casserole et plonger le chou pendant 5 minutes puis bien essorer à l'eau froide.",
+      "duration": "PT10M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "chou",
+      "uses": [
+        "cabbage"
+      ],
+      "produces": "blanched_cabbage",
+      "requires": [],
+      "visualCue": "chou ramolli"
+    },
+    {
+      "id": "saute_onion",
+      "action": "Dans un grand faitout, faire revenir à feu vif un oignon détaillé en rondelles dans le beurre/saindoux.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "yellow_onion",
+        "butter_lard"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": "oignon commence à colorer"
+    },
+    {
+      "id": "remove_onion",
+      "action": "Lorsque l'oignon commence à colorer, éteindre le feu et jeter l'oignon.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "sauteed_onion"
+      ],
+      "produces": "empty_pot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cool_pot",
+      "action": "Attendre que le faitout refroidisse.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "base",
+      "uses": [
+        "empty_pot"
+      ],
+      "produces": "cooled_pot",
+      "requires": [],
+      "visualCue": "faitout refroidi"
+    },
+    {
+      "id": "add_fat",
+      "action": "Remettre des lamelles de beurre ou du saindoux dans le faitout refroidi.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "butter_lard",
+        "cooled_pot"
+      ],
+      "produces": "prepared_pot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_pork_rind",
+      "action": "Disposer la couenne au fond de la casserole.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pork_rind",
+        "prepared_pot"
+      ],
+      "produces": "pot_with_rind",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_lemon",
+      "action": "Découper le citron jaune en deux.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "prep",
+      "uses": [
+        "lemon"
+      ],
+      "produces": "halved_lemon",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_layer",
+      "action": "Mettre la moitié du chou sur la couenne et ajouter quelques baies de genièvre et arroser le chou d'un demi jus de citron.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "blanched_cabbage",
+        "juniper_berries",
+        "halved_lemon",
+        "pot_with_rind"
+      ],
+      "produces": "first_layer_choucroute",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_meats",
+      "action": "Par-dessus le chou, disposer la palette, le lard et la saucisse de Morteau.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "smoked_shoulder",
+        "smoked_belly",
+        "morteau_sausage",
+        "first_layer_choucroute"
+      ],
+      "produces": "choucroute_with_meats",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "second_layer",
+      "action": "Recouvrir de chou puis y ajouter de nouveau les baies de genièvre et l'autre demi de jus de citron.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "blanched_cabbage",
+        "juniper_berries",
+        "halved_lemon",
+        "choucroute_with_meats"
+      ],
+      "produces": "layered_choucroute",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pot",
+      "action": "Faire chauffer la casserole à feu moyen jusqu'à sentir le beurre fondu.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "layered_choucroute"
+      ],
+      "produces": "heated_choucroute",
+      "requires": [],
+      "visualCue": "beurre fondu"
+    },
+    {
+      "id": "add_wine",
+      "action": "Verser l'entièreté des deux bouteilles de Riesling (rallonger avec de l'eau au besoin pour que tout soit couvert à hauteur).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "riesling",
+        "heated_choucroute"
+      ],
+      "produces": "choucroute_in_liquid",
+      "requires": [],
+      "visualCue": "tout couvert à hauteur"
+    },
+    {
+      "id": "simmer_choucroute",
+      "action": "Couvrir puis lorsque ça arrive à ébullition réduire le feu (il ne faut pas que ça bout à grosses bulles mais plutôt que ça frémisse). Laisser mijoter à feu doux pendant minimum 4h.",
+      "duration": "PT4H",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "choucroute_in_liquid"
+      ],
+      "produces": "simmered_choucroute",
+      "requires": [],
+      "visualCue": "liquide brun, plus de vapeurs d'alcool"
+    },
+    {
+      "id": "peel_potatoes",
+      "action": "Éplucher les pommes de terre.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pommes_de_terre",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "peeled_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_potatoes",
+      "action": "Disposer les pommes de terre épluchées au-dessus (elles peuvent être à moitié immergées ce n'est pas grave).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "peeled_potatoes",
+        "simmered_choucroute"
+      ],
+      "produces": "choucroute_with_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_strasbourg_sausages",
+      "action": "Disposer les saucisses de Strasbourg par dessus s'il reste de la place sinon on peut les cuire à l'eau.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "strasbourg_sausages",
+        "choucroute_with_potatoes"
+      ],
+      "produces": "complete_choucroute",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_final",
+      "action": "Laisser cuire encore 20 minutes pour que les saucisses de Strasbourg soient cuites et vérifier que les pommes de terre soient cuites.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "complete_choucroute"
+      ],
+      "produces": "cooked_choucroute",
+      "requires": [],
+      "visualCue": "pommes de terre cuites"
+    },
+    {
+      "id": "serve",
+      "action": "Servir la choucroute avec les viandes, saucisses et pommes de terre.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_choucroute"
+      ],
+      "produces": "choucroute_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "choucroute_servie",
+  "originalText": "Choucroute\n\n« La choucroute faite à la nouvelle lune est toujours de qualité inférieure ; si l’on veut qu’elle soit excellente, il faut en remettre la préparation au déclin de la lune. »\nContes et Légendes des Vosges \n\nIngrédients :\n2 kg de chou cru\n1 oignon jaune\nBaies de Genièvre\n1 Saucisse de Morteau crue\n1 Palette fumée crue\n1 Poitrine fumée crue (je dirais 300g)\n1 citron jaune\nPommes de terre (2 par personne)\nSaucisse de Strasbourg (1 par personne)\n2 bouteille de Riesling\nBeurre/saindoux\nCouenne\n\nPréparation :\n- Blanchir le chou : faire bouillir de l'eau dans une casserole et plonger le chou pendant 5 minutes puis bien essorer à l'eau froide.\n- Dans un grand faitout, faire revenir à feu vif un oignon détaillé en rondelles dans le beurre/saindoux\n- Lorsque l’oignon commence à colorer, éteindre le feu et jeter l’oignon\n- Attendre que le faitout refroidisse puis remettre des lamelles de beurre ou du saindoux\n- Disposer la couenne au fond de la casserole\n- Découper le citron jaune en deux\n- Mettre la moitié du chou sur la couenne et ajouter quelques baies de genièvre et arroser le chou d’un demi jus de citron\n- Par-dessus le chou, disposer la palette, le lard et la saucisse de Morteau\n- Recouvrir de chou puis y ajouter de nouveau les baies de genièvre et l’autre demi de jus de citron\n- Faire chauffer la casserole à feu moyen jusqu'à sentir le beurre fondu puis verser l'entièreté des deux bouteilles de Riesling (rallonger avec de l’eau au besoin pour que tout soit couvert à hauteur)\n- Couvrir puis lorsque ça arrive à ébullition réduire le feu (il ne faut pas que ça bout à grosses bulles mais plutôt que ça frémisse)\n- Laisser mijoter à feu doux pendant minimum 4h (personnellement je conseillerais même 6h) au bout d’un moment le liquide de la choucroute va brunir et on ne doit plus sentir les vapeurs d’alcool\n- Une heure avant de servir, éplucher les pommes de terre et les disposer au-dessus (elles peuvent-être à moitié immergées ce n’est pas grave)\n- 20 minutes avant disposer les saucisses de Strasbourg  par dessus s'il reste de la place sinon on peut les cuire à l'eau\n- Vérifier que les pommes de terre soient cuites puis servir\n\nMain recipe image: temp_image_recipe-gen-20260208054525-8935d028.png",
+  "totalCookingTime": 75.0
+}

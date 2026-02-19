@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "Chou-Fleur au four tout simple",
+    "description": "Ce Chou-Fleur au four tout simple est inspir\u00e9 de la cuisine de ma m\u00e8re ! J'ai eu envie de la cuisiner en reprenant sa fa\u00e7on de faire le poulet.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT1H6M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "chou fleur",
+      "chou fleur roti",
+      "Automne",
+      "Hiver",
+      "Plats au Four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Chou-fleur-roti-cocotte-1-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Inspir\u00e9 de la fa\u00e7on grecque de faire le poulet, avec huile d'olive, citron, thym et origan.",
+      "Cuisson \u00e0 l'\u00e9touff\u00e9e dans une cocotte pour un chou-fleur moelleux.",
+      "Principe one-pot : tout cuit ensemble dans la cocotte."
+    ],
+    "slug": "chou-fleur-au-four-tout-simple",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/12/Chou-fleur-roti-cocotte-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/01/03/chou-fleur-au-four-tout-simple/",
+    "image": "images/chou-fleur-au-four-tout-simple.jpg",
+    "createdAt": "2026-02-09T21:45:15.671198",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 66.0,
+    "totalCookingTime": 6.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 497.1,
+      "protein": 7.2,
+      "fat": 27.3,
+      "carbs": 60.9,
+      "fiber": 11.5,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 9,
+      "totalIngredients": 11,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cauliflower",
+      "name": "chou-fleur",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cauliflower"
+    },
+    {
+      "id": "olive_oil_marinade",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice_marinade",
+      "name": "jus de citron",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "oregano_marinade",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "smoked_paprika",
+      "name": "paprika fum\u00e9",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    },
+    {
+      "id": "salt_marinade",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_marinade",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la marinade",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "turnips",
+      "name": "navets",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turnips"
+    },
+    {
+      "id": "olive_oil_vegetables",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice_vegetables",
+      "name": "jus de citron",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "salt_vegetables",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper_vegetables",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "oregano_vegetables",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour les l\u00e9gumes",
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "rosemary",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "rosemary"
+    }
+  ],
+  "tools": [
+    "Grande cocotte en fonte",
+    "Grande casserole"
+  ],
+  "steps": [
+    {
+      "id": "clean_cauliflower",
+      "action": "Passer le chou-fleur sous l'eau et \u00f4ter les fanes ab\u00eem\u00e9es. Vous pouvez conserver les autres.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cauliflower"
+      ],
+      "produces": "cleaned_cauliflower",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blanch_cauliflower",
+      "action": "Porter une grande casserole d'eau sal\u00e9e \u00e0 \u00e9bullition et y pocher le chou-fleur, t\u00eate en bas pendant 6min.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cleaned_cauliflower"
+      ],
+      "produces": "blanched_cauliflower",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reserve_cauliflower",
+      "action": "Retirer le chou-fleur de l'eau et r\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blanched_cauliflower"
+      ],
+      "produces": "reserved_cauliflower",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_vegetables",
+      "action": "\u00c9plucher et couper les pommes de terre, carottes et navets en gros morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes",
+        "carrots",
+        "turnips"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_vegetables_in_pot",
+      "action": "Mettre les l\u00e9gumes coup\u00e9s dans une grande cocotte en fonte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_vegetables"
+      ],
+      "produces": "vegetables_in_pot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_vegetables",
+      "action": "Ajouter 4 c\u00e0s d'huile d'olive, 2 c\u00e0s de jus de citron, le thym, 2 c\u00e0s d'origan s\u00e9ch\u00e9 et le romarin. Bien m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetables_in_pot",
+        "olive_oil_vegetables",
+        "lemon_juice_vegetables",
+        "thyme",
+        "oregano_vegetables",
+        "rosemary",
+        "salt_vegetables",
+        "pepper_vegetables"
+      ],
+      "produces": "seasoned_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_marinade",
+      "action": "Dans un petit bol, m\u00e9langer 3 c\u00e0s d'huile d'olive, 2 c\u00e0s de jus de citron, 1 c\u00e0c d'origan s\u00e9ch\u00e9, le paprika fum\u00e9, du sel et du poivre pour former la marinade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil_marinade",
+        "lemon_juice_marinade",
+        "oregano_marinade",
+        "smoked_paprika",
+        "salt_marinade",
+        "pepper_marinade"
+      ],
+      "produces": "cauliflower_marinade",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_in_pot",
+      "action": "D\u00e9poser le chou-fleur au milieu des l\u00e9gumes dans la cocotte et le badigeonner g\u00e9n\u00e9reusement de marinade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "reserved_cauliflower",
+        "seasoned_vegetables",
+        "cauliflower_marinade"
+      ],
+      "produces": "assembled_casserole",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_casserole",
+      "action": "Fermer la cocotte et enfourner pour 1h.",
+      "duration": "PT1H",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_casserole"
+      ],
+      "produces": "baked_cauliflower_casserole",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "chou-fleur fondant"
+    },
+    {
+      "id": "serve",
+      "action": "Servir chaud !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_cauliflower_casserole"
+      ],
+      "produces": "chou_fleur_au_four",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chou_fleur_au_four",
+  "originalText": "Chou-Fleur au four tout simple - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n3 janvier 2023\nChou-Fleur au four tout simple\nAller \u00e0 la recette\nCe Chou-Fleur au four tout simple est inspir\u00e9 de la cuisine de ma m\u00e8re ! J\u2019ai eu envie de la cuisiner en reprenant sa fa\u00e7on de faire le poulet. Alors \u00e9videmment, \u00e7a reste un chou-fleur ! Ce n\u2019est pas un tour de magie qui transforme un l\u00e9gume en volaille ! Mais c\u2019est tr\u00e8s bon. Ma m\u00e8re fait le poulet en le badigeonnant d\u2019huile d\u2019olive et de jus de citron. Avec plein d\u2019herbes, notamment du thym et de l\u2019origan. C\u2019est la fa\u00e7on grecque de faire. Et du coup, j\u2019ai eu envie de m\u2019inspirer un peu de cette m\u00e9thode.\nEt je me suis dit, que pour obtenir un chou-fleur entier bien moelleux, ce serait sympa de le cuisiner au four dans une cocotte en fonte !\nJe trouve que \u00e7a rend super bien. On a un chou-fleur qui reste tr\u00e8s moelleux car il a cuit \u00e0 l\u2019\u00e9touff\u00e9e. Et en plus, il cuit un peu plus vite. J\u2019ai ajout\u00e9 quelques l\u00e9gumes au fond du plat. Je trouve \u00e7a sympa, sur le principe one-pot. On met tout dans la cocotte et ensuite il ne reste plus qu\u2019\u00e0 enfourner. Et pendant ce temps, on peut vaquer \u00e0 d\u2019autres occupations pendant une heure !\nAlors, qu\u2019est ce que vous pensez de ce Chou-Fleur au four tout simple ?\nQui va tenter la recette ?\nVous trouverez une autre recette de\nchou-fleur r\u00f4ti au four sauce tahini juste ici\n!\nChou-Fleur au four tout simple\n4.52\n/5 avec\n78\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n1\nheure\nh\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour le chou-fleur\n1\nchou-fleur\n3\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de jus de citron\n1\nc\u00e0c d\u2019origan s\u00e9ch\u00e9\n1\nc\u00e0c de paprika fum\u00e9\nsel\npoivre\nPour les l\u00e9gumes\n5\npommes de terre\n3\ncarottes\n2\nnavets\n4\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de jus de citron\nsel\npoivre\n3-4\nbranches de thym\n2\nc\u00e0s d\u2019origan s\u00e9ch\u00e9\n1\nbranche de romarin\nInstructions\nPasser le chou-fleur sous l\u2019eau et \u00f4ter les fanes ab\u00eem\u00e9es. Vous pouvez conserver les autres.\nPorter une grande casserole d\u2019eau sal\u00e9e \u00e0 \u00e9bullition et y pocher le chou-fleur, t\u00eate en bas pendant 6min.\nRetirer de l\u2019eau et r\u00e9server.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\n\u00c9plucher et couper les autres l\u00e9gumes en gros morceaux.\nLes mettre dans une grande cocotte en fonte.\nAjouter l\u2019huile, le citron et les herbes. Bien m\u00e9langer.\nM\u00e9langer tous les ingr\u00e9dients de la marinade du chou-fleur dans un petit bol et m\u00e9langer.\nD\u00e9poser le chou-fleur au milieu des l\u00e9gumes dans la cocotte et le badigeonner g\u00e9n\u00e9reusement de marinade.\nFermer la cocotte et enfourner pour 1h. C\u2019est pr\u00eat quand le chou-fleur est fondant.\nServir chaud !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nChou-fleur\n,\nHiver\n,\nPlats au Four\n,\nRecettes Sal\u00e9es\nTags:\nchou fleur\n,\nchou fleur roti\nVelout\u00e9 de chou-fleur super cr\u00e9meux\nPancakes Cor\u00e9ens aux l\u00e9gumes\n3 thoughts on \u201cChou-Fleur au four tout simple\u201d\nthenaisy\ndit\u00a0:\n4 janvier 2023 \u00e0 7 h 11 min\ncoucou merci pour cette belle recette, juste une question le go\u00fbt du choux fleur n\u2019est pas trop fort ? car j\u2019ai d\u00e9j\u00e0 tester le choux fleur r\u00f4ti au four et je n\u2019aime pas.\ndouce ann\u00e9e 2023, qu\u2019elle vous apporte joie, bonheur, amour et sant\u00e9\nbelle journ\u00e9e\nbisous\nV\u00e9ronique\nchargement\u2026\nR\u00e9pondre\nL\u00e9a\ndit\u00a0:\n23 janvier 2023 \u00e0 20 h 41 min\nJ\u2019adore! J\u2019ai test\u00e9 hier soir et c\u2019\u00e9tait d\u00e9licieux ! La cuisson est vraiment parfaite et les textures et les go\u00fbts des l\u00e9gumes sont comme r\u00e9v\u00e9l\u00e9s.\nMerci pour cette d\u00e9couverte !!\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n25 janvier 2023 \u00e0 10 h 14 min\nAvec plaisir !\nchargement\u2026\nR\u00e9pondre\n4.52 from 78 votes (\n76 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 6.0
+}

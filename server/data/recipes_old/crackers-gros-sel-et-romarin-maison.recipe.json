@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "title": "Crackers Gros Sel et Romarin maison",
+    "description": "R\u00e9aliser des Crackers Gros Sel et Romarin maison ? Rien de plus simple ! Et \u00e7a d\u00e9panne quand on se rend compte au dernier moment qu'on n'en a plus !",
+    "servings": 1,
+    "prepTime": "PT20M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "crackers",
+      "farine compl\u00e8te",
+      "romarin",
+      "accompagnements",
+      "ap\u00e9ros"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Crackers-au-romarin-2-of-4.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'aime utiliser de la farine semi-compl\u00e8te pour ces crackers. Mais vous pouvez la remplacer par de la farine plus fine. Il vous faudra cependant ajuster la quantit\u00e9 d'eau.",
+      "Pour faire tr\u00e8s simple, plus une farine est compl\u00e8te et plus elle aura besoin d'une grande quantit\u00e9 d'eau.",
+      "Je trouve que le gros sel et le romarin vont particuli\u00e8rement bien ensemble. Mais vous pouvez tout \u00e0 fait les r\u00e9aliser avec une autre herbe. Du thym, de l'origan, des herbes de provence ! Peu importe. Fra\u00eeches ou s\u00e8ches d'ailleurs. Tout fonctionne ! Ou m\u00eame des graines ! S\u00e9same, pavots.",
+      "Ces Crackers Gros Sel et Romarin maison sont d\u00e9licieux avec des tartinades maison !"
+    ],
+    "slug": "crackers-gros-sel-et-romarin-maison",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/08/Crackers-au-romarin-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/08/23/crackers-gros-sel-et-romarin-maison/",
+    "image": "images/crackers-gros-sel-et-romarin-maison.webp",
+    "createdAt": "2026-02-09T21:28:49.675160",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 75.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 884.0,
+      "protein": 17.0,
+      "fat": 31.7,
+      "carbs": 129.2,
+      "fiber": 5.1,
+      "confidence": "high",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 2,
+      "totalIngredients": 2,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "farine_t80",
+      "name": "farine T80",
+      "quantity": 170.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "type 80 flour"
+    },
+    {
+      "id": "gros_sel",
+      "name": "gros sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "coarse salt"
+    },
+    {
+      "id": "romarin_frais",
+      "name": "romarin frais",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": "hach\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 120.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "robot p\u00e2tissier",
+    "pinceau"
+  ],
+  "steps": [
+    {
+      "id": "melanger_ingredients_secs",
+      "action": "M\u00e9langer la farine avec le sel et le romarin hach\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "farine_t80",
+        "gros_sel",
+        "romarin_frais"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_liquides_petrir",
+      "action": "Ajouter l'huile et l'eau et p\u00e9trir avec les mains jusqu'\u00e0 formation d'une boule uniforme. Ajouter \u00e9ventuellement 1 \u00e0 2 c\u00e0s d'eau si la p\u00e2te est s\u00e8che. Elle doit \u00eatre souple mais ne pas coller.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_sec",
+        "huile_dolive",
+        "eau"
+      ],
+      "produces": "pate_crackers",
+      "requires": [],
+      "visualCue": "souple mais ne colle pas"
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 220\u00b0C.",
+      "duration": null,
+      "temperature": 220,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate",
+      "action": "Etaler la p\u00e2te en un grand carr\u00e9 d'une taille l\u00e9g\u00e8rement inf\u00e9rieure \u00e0 votre plaque de cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_crackers"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "grand carr\u00e9"
+    },
+    {
+      "id": "deposer_sur_plaque",
+      "action": "D\u00e9poser la p\u00e2te sur une plaque de cuisson couverte d'un papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "pate_sur_plaque",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_en_carres",
+      "action": "Couper d\u00e9licatement la p\u00e2te en bandes horizontales et verticales pour obtenir des carr\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_sur_plaque"
+      ],
+      "produces": "pate_decoupee",
+      "requires": [],
+      "visualCue": "carr\u00e9s"
+    },
+    {
+      "id": "humidifier_et_saler",
+      "action": "A l'aide d'un pinceau, humidifier la p\u00e2te avec un peu d'eau et saupoudrer de gros sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_decoupee",
+        "gros_sel",
+        "eau"
+      ],
+      "produces": "pate_salee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "enfourner",
+      "action": "Enfourner 15min.",
+      "duration": "PT15M",
+      "temperature": 220,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "pate_salee"
+      ],
+      "produces": "crackers_cuits",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "laisser_refroidir",
+      "action": "Laisser refroidir. Attendre 1h avant de d\u00e9guster pour que les crackers durcissent et craquent bien !",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "crackers_cuits"
+      ],
+      "produces": "crackers_finis",
+      "requires": [],
+      "visualCue": "durcis et craquants"
+    }
+  ],
+  "finalState": "crackers_finis",
+  "originalText": "Crackers Gros Sel et Romarin maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n23 ao\u00fbt 2022\nCrackers Gros Sel et Romarin maison\nAller \u00e0 la recette\nR\u00e9aliser des Crackers Gros Sel et Romarin maison ? Rien de plus simple ! Et \u00e7a d\u00e9panne quand on se rend compte au dernier moment qu\u2019on n\u2019en a plus !\nLa pr\u00e9paration est tr\u00e8s rapide. Surtout si vous avez un robot p\u00e2tissier ! Sinon, il faudrait p\u00e9trir \u00e0 la main ! Mais rien de plus compliqu\u00e9 qu\u2019une p\u00e2te \u00e0 tarte.\nLa liste des ingr\u00e9dients est d\u2019une simplicit\u00e9 d\u00e9concertante.\nJ\u2019aime utiliser de la farine semi-compl\u00e8te pour ces crackers. Mais vous pouvez la remplacer par de la farine plus fine. Il vous faudra cependant ajuster la quantit\u00e9 d\u2019eau. Les capacit\u00e9s d\u2019absorption des farines d\u00e9pendent (entre autres) de leur finesse. Pour faire tr\u00e8s simple, plus une farine est compl\u00e8te et plus elle aura besoin d\u2019une grande quantit\u00e9 d\u2019eau.\nEnsuite, j\u2019ai choisi de faire ces crackers avec du romarin. Je trouve que le gros sel et le romarin vont particuli\u00e8rement bien ensemble. Mais vous pouvez tout \u00e0 fait les r\u00e9aliser avec une autre herbe. Du thym, de l\u2019origan, des herbes de provence ! Peu importe. Fra\u00eeches ou s\u00e8ches d\u2019ailleurs. Tout fonctionne ! Ou m\u00eame des graines ! S\u00e9same, pavots. Ce qui vous fait plaisir quoi !\nEnsuite, on ajoute un peu d\u2019huile et d\u2019eau.\nOn \u00e9tale pour obtenir une p\u00e2te fine, qui pourra s\u00e9cher \u00e0 la cuisson. Et donner des crackers craquants !\nCes Crackers Gros Sel et Romarin maison sont d\u00e9licieux avec des tartinades maison ! Comme\ncelle-ci \u00e0 la feta\npar exemple.\nOu du houmous\n!\nCrackers Gros Sel et Romarin maison\n4.47\n/5 avec\n81\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nIngr\u00e9dients\n170\ng\nde farine T80\n1\nc\u00e0c de gros sel\n1\nc\u00e0s de romarin frais hach\u00e9\n2\nc\u00e0s d\u2019huile d\u2019olive\n120\nml\nd\u2019eau\nInstructions\nM\u00e9langer la farine avec le sel et le romarin hach\u00e9.\nAjouter l\u2019huile et l\u2019eau et p\u00e9trir avec les mains jusqu\u2019\u00e0 formation d\u2019une boule uniforme. Ajouter \u00e9ventuellement 1 \u00e0 2 c\u00e0s d\u2019eau si la p\u00e2te est s\u00e8che. Elle doit \u00eatre souple mais ne pas coller.\nPr\u00e9chauffer le four \u00e0 220\u00b0C.\nEtaler la p\u00e2te en un grand carr\u00e9 d\u2019une taille l\u00e9g\u00e8rement inf\u00e9rieure \u00e0 votre plaque de cuisson.\nD\u00e9poser la p\u00e2te sur une plaque de cuisson couverte d\u2019un papier cuisson.\nCouper d\u00e9licatement la p\u00e2te en bandes horizontales et verticales pour obtenir des carr\u00e9s.\nA l\u2019aide d\u2019un pinceau, humidifier la p\u00e2te avec un peu d\u2019eau et saupoudrer de gros sel.\nEnfourner 15min.\nLaisser refroidir. Attendre 1 ou 2h avant de d\u00e9guster pour que les crackers durcissent et craquent bien !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nRecettes Sal\u00e9es\nTags:\ncrackers\n,\nfarine compl\u00e8te\n,\nromarin\nCr\u00e8me de feta piment\u00e9e\nPain complet \u00e0 l\u2019avoine et graines de tournesol\n4.47 from 81 votes (\n81 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Curry de blettes et petits pois",
+    "description": "Cette recette de Curry de blettes et petits pois est une superbe d\u00e9couverte ! J'utilise des petits pois surgel\u00e9s en g\u00e9n\u00e9ral. Sauf quand c'est la saison des frais.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "blettes",
+      "c\u00f4tes de blettes",
+      "curry",
+      "curry de blettes",
+      "petits pois",
+      "recette de blettes",
+      "Automne",
+      "\u00c9t\u00e9",
+      "Printemps",
+      "Plats en Sauce",
+      "v\u00e9g\u00e9tarien",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Curry-blettes-petits-pois-2-of-4.jpg",
+    "nationality": "Indian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "J'ai g\u00e9n\u00e9ralement tendance \u00e0 cuisiner les c\u00f4tes et les feuilles ensemble. Mais pour cette recette, on peut tout \u00e0 fait se contenter des c\u00f4tes. Et utiliser les feuilles dans un autre plat.",
+      "Servir avec du riz ou des naans !"
+    ],
+    "slug": "curry-de-blettes-et-petits-pois",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2023/08/Curry-blettes-petits-pois-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2023/08/16/curry-de-blettes-et-petits-pois/",
+    "image": "images/curry-de-blettes-et-petits-pois.jpg",
+    "createdAt": "2026-02-09T21:52:59.667841",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "totalTime": 55.0,
+    "totalCookingTime": 30.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 738.2,
+      "protein": 12.6,
+      "fat": 65.0,
+      "carbs": 37.6,
+      "fiber": 10.0,
+      "confidence": "high",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 12,
+      "totalIngredients": 12,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "huile de tournesol",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "star_anise",
+      "name": "badiane",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "star anise"
+    },
+    {
+      "id": "yellow_curry",
+      "name": "curry jaune",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yellow curry"
+    },
+    {
+      "id": "cumin",
+      "name": "cumin moulu",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground cumin"
+    },
+    {
+      "id": "turmeric",
+      "name": "curcuma",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "turmeric"
+    },
+    {
+      "id": "fenugreek",
+      "name": "fenugrec",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fenugreek"
+    },
+    {
+      "id": "coconut_cream",
+      "name": "cr\u00e8me de coco en conserve",
+      "quantity": 650.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Canned coconut cream"
+    },
+    {
+      "id": "tomato_paste",
+      "name": "concentr\u00e9 de tomate",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomato paste"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "chard",
+      "name": "blettes",
+      "quantity": 350.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "au choix, uniquement les c\u00f4tes ou les feuilles avec",
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "potatoes",
+      "name": "pommes de terre",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "env 2",
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "peas",
+      "name": "petits pois",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "frais ou surgel\u00e9s",
+      "optional": false,
+      "name_en": "Peas"
+    }
+  ],
+  "tools": [
+    "Cocotte",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "make_paste",
+      "action": "\u00c9pluchez l'oignon, le gingembre et l'ail et mixez-les jusqu'\u00e0 obtenir une p\u00e2te.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion",
+        "ginger",
+        "garlic"
+      ],
+      "produces": "onion_ginger_garlic_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_paste",
+      "action": "Faites-la revenir \u00e0 feu moyen quelques minutes dans une cocotte avec 2 c\u00e0s d'huile.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion_ginger_garlic_paste",
+        "sunflower_oil"
+      ],
+      "produces": "sauteed_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_spices",
+      "action": "Ajoutez toutes les \u00e9pices et faites revenir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "sauteed_paste",
+        "star_anise",
+        "yellow_curry",
+        "cumin",
+        "turmeric",
+        "fenugreek"
+      ],
+      "produces": "spiced_paste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_sauce_base",
+      "action": "Versez la cr\u00e8me de coco et le concentr\u00e9 de tomate. Salez. M\u00e9langez et laissez mijoter \u00e0 petits bouillons le temps de pr\u00e9parer les l\u00e9gumes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "spiced_paste",
+        "coconut_cream",
+        "tomato_paste",
+        "salt"
+      ],
+      "produces": "curry_sauce_base",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "prepare_chard",
+      "action": "Coupez les c\u00f4tes de blettes en 2 ou 3 dans la longueur puis d\u00e9taillez en cubes. Hachez grossi\u00e8rement les feuilles.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "vegetables",
+      "uses": [
+        "chard"
+      ],
+      "produces": "prepared_chard",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_potatoes",
+      "action": "\u00c9plucher et couper les pommes de terre en d\u00e9s.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "vegetables",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "diced_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prepare_peas",
+      "action": "Ecossez les petits pois. S'ils sont surgel\u00e9s, il est inutile de les d\u00e9congeler.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "vegetables",
+      "uses": [
+        "peas"
+      ],
+      "produces": "shelled_peas",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_vegetables",
+      "action": "Ajoutez tous les l\u00e9gumes \u00e0 la sauce, baissez le feu, couvrez et laissez cuire environ 25min en remuant de temps en temps. Les blettes et les pommes de terre doivent \u00eatre tendres.",
+      "duration": "PT25M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "curry_sauce_base",
+        "prepared_chard",
+        "diced_potatoes",
+        "shelled_peas"
+      ],
+      "produces": "curry_blettes_petits_pois",
+      "requires": [],
+      "visualCue": "blettes et pommes de terre tendres"
+    }
+  ],
+  "finalState": "curry_blettes_petits_pois",
+  "originalText": "Curry de blettes et petits pois\u00a0 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 ao\u00fbt 2023\nCurry de blettes et petits pois\nCette recette de Curry de blettes et petits pois est une superbe d\u00e9couverte ! J\u2019utilise des petits pois surgel\u00e9s en g\u00e9n\u00e9ral. Sauf quand c\u2019est la saison des frais.\nCela dit, pour moi, la v\u00e9ritable star de cette recette, ce sont les blettes.\nJe trouve qu\u2019on n\u2019aime pas assez les blettes. Alors que c\u2019est un l\u00e9gume g\u00e9nial ! En toute objectivit\u00e9 !\nIl est super facile \u00e0 faire pousser dans son potager. Je dis \u00e7a, mais j\u2019ai pas de potager. Mais mes parents se retrouvent souvent avec des blettes \u00e0 ne plus savoir qu\u2019en faire. Et ils sont loin d\u2019\u00eatre des rois de la culture mara\u00eech\u00e8re (pardon, je vous aime p\u00e8re et m\u00e8re). Ce qui me fait penser que c\u2019est un l\u00e9gume facile \u00e0 faire pousser. Mais passons.\nJ\u2019aime aussi ce l\u00e9gume car il est digeste. Et compatible avec un r\u00e9gime bas en Fodmap. Et pour avoir une amie tr\u00e8s proche qui suit ce r\u00e9gime pour des raisons de sant\u00e9, je peux vous assurer que des recettes de blettes, il n\u2019y en a jamais assez !\nJe cuisine mes blettes de plusieurs fa\u00e7ons diff\u00e9rentes. Avec des recettes plus \u201cfran\u00e7aises\u201d comme\nce gratin\n. Ou plus orientales avec ces\nsamoussas au cumin\n. Ou plus \u201cindiennes\u201d comme avec ce curry.\nJ\u2019ai g\u00e9n\u00e9ralement tendance \u00e0 cuisiner les c\u00f4tes et les feuilles ensemble. Mais pour cette recette, on peut tout \u00e0 fait se contenter des c\u00f4tes. Et utiliser les feuilles dans un autre plat.\nVoil\u00e0. Je vous conseille ce Curry de blettes et petits pois les yeux ferm\u00e9s ! Je l\u2019adore !\nCurry de blettes et petits pois\n4.64\n/5 avec\n77\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon jaune\n10\ng\nde gingembre frais\n4\ngousses d\u2019ail\n2\nc\u00e0s d\u2019huile de tournesol\n1\nbadiane\n2\nc\u00e0c de curry jaune\n1\nc\u00e0c de cumin moulu\n1\nc\u00e0c de curcuma\n1\nc\u00e0c de fenugrec\n650\nml\nde cr\u00e8me de coco en conserve\n70\ng\nde concentr\u00e9 de tomate\n350\ng\nde blettes\nau choix, uniquement les c\u00f4tes ou les feuilles avec\n200\ng\nde pommes de terre\nenv 2\n150\ng\nde petits pois frais ou surgel\u00e9s\nInstructions\n\u00c9pluchez l\u2019oignon, le gingembre et l\u2019ail et mixez-les jusqu\u2019\u00e0 obtenir une p\u00e2te.\nFaites-la revenir \u00e0 feu moyen quelques minutes dans une cocotte avec 2 c\u00e0s d\u2019huile.\nAjoutez toutes les \u00e9pices et faites revenir 5min.\nVersez la cr\u00e8me de coco et le concentr\u00e9 de tomate. Salez. M\u00e9langez et laissez mijoter \u00e0 petits bouillons le temps de pr\u00e9parer les l\u00e9gumes.\nCoupez les c\u00f4tes de blettes en 2 ou 3 dans la longueur puis d\u00e9taillez en cubes. Hachez grossi\u00e8rement les feuilles.\n\u00c9plucher et couper les pommes de terre en d\u00e9s.\nEcossez les petits pois. S\u2019ils sont surgel\u00e9s, il est inutile de les d\u00e9congeler.\nAjoutez tous les l\u00e9gumes \u00e0 la sauce, baissez le feu, couvrez et laissez cuire environ 25min en remuant de temps en temps. Les blettes et les pommes de terre doivent \u00eatre tendres.\nServir avec du riz ou des naans !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nBlettes\n,\n\u00c9t\u00e9\n,\nPetits Pois\n,\nPlats en Sauce\n,\nPrintemps\nTags:\nblettes\n,\nc\u00f4tes de blettes\n,\ncurry\n,\ncurry de blettes\n,\npetits pois\n,\nrecette de blettes\nCake courgette olive feta : la recette express pour vos pique-niques\nAubergines farcies \u00e0 l\u2019Ottomane\n11 thoughts on \u201cCurry de blettes et petits pois\u00a0\u201d\nGriet\ndit\u00a0:\n2 avril 2024 \u00e0 12 h 02 min\nSublime, un vrai d\u00e9lice. J\u2019ai cuisin\u00e9 les l\u00e9gumes au vapeur, remplac\u00e9 la cr\u00e8me de coco par le lait de coco, l\u2019huile de tournesol par l\u2019huile vierge de coco, ajout\u00e9 un peu de coco frais r\u00e2p\u00e9 \u2026.et un peu de piments\u2026.en nous voil\u00e0 en Inde\nMerci beaucoup!!!\nchargement\u2026\nR\u00e9pondre\nAnthony\ndit\u00a0:\n1 mai 2025 \u00e0 17 h 49 min\nVous avez chang\u00e9 la recette du coup \u2026\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n5 mai 2025 \u00e0 12 h 44 min\nC\u2019est \u00e0 dire ?\nchargement\u2026\nR\u00e9pondre\nAline\ndit\u00a0:\n26 octobre 2024 \u00e0 20 h 40 min\nUn r\u00e9gal, toute la famille a ador\u00e9!\nJ\u2019ai juste remplac\u00e9 les petits pois par des haricots blancs (\u00e0 \u00e9cosser) et le r\u00e9sultat \u00e9tait super.\nchargement\u2026\nR\u00e9pondre\nCaroline\ndit\u00a0:\n16 avril 2025 \u00e0 0 h 54 min\nMerci pour ce partage !Recette essay\u00e9e vavec du poisson ( filet de merlan) et des lentilles corail D\u00e9licieux !  J\u2019avais mis moins  de cr\u00e8me de coco ( 400ml) et c\u2019\u00e9tait suffisant pour parfumer\nchargement\u2026\nR\u00e9pondre\nBabelou\ndit\u00a0:\n25 avril 2025 \u00e0 20 h 09 min\nIncroyable \ud83e\udd29 h\u00e9las pas de blettes chez mon primeur ce matin, j\u2019ai pris des \u00e9pinards \u00e0 la place, sinon j\u2019ai suivi la recette, petits pois frais, et j\u2019ai accompagn\u00e9 avec du riz blanc. On se r\u00e9gale !\nchargement\u2026\nR\u00e9pondre\nanouk\ndit\u00a0:\n26 avril 2025 \u00e0 0 h 09 min\nSuper ! D\u00e9licieux et vegan quoi de mieux !!\nchargement\u2026\nR\u00e9pondre\nLaurence\ndit\u00a0:\n3 mai 2025 \u00e0 13 h 41 min\nD\u00e9licieux. C\u2019est devenu ma recette f\u00e9tiche de blettes. merci!\nchargement\u2026\nR\u00e9pondre\nLurette\ndit\u00a0:\n4 juin 2025 \u00e0 0 h 48 min\nBonjour,\nJ\u2019ai une interrogation sur le curry jaune de la recette. S\u2019agit-il de p\u00e2te de curry jaune ou d\u2019autre chose ?\nC\u2019est en tout cas ce que j\u2019ai mis, pas de badiane, je n\u2019en avais h\u00e9las pas et c\u2019\u00e9tait d\u00e9licieux  (alors qu\u2019en temps ordinaire, je n\u2019appr\u00e9cie pas outre mesure les currys) !\nJ\u2019ai \u00ab\u00a0d\u00e9couvert\u00a0\u00bb cette ann\u00e9e les blettes, un peu beaucoup gr\u00e2ce \u00e0 vous et j\u2019adore \u00e7a !\nProchaine recette, la tarte \u00e0 la mimolette de votre livre ou les gnudis, toujours avec des blettes, bien s\u00fbr !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n4 juin 2025 \u00e0 10 h 28 min\nCoucou merci!! Il s\u2019agit de poudre de curry\nchargement\u2026\nR\u00e9pondre\nEmilie\ndit\u00a0:\n3 novembre 2025 \u00e0 21 h 58 min\nQuel d\u00e9lice ! J\u2019ai respect\u00e9 \u00e0 la lettre la recette et on s\u2019est tous r\u00e9gal\u00e9s, m\u00eame mon petit bonhomme qui a du mal avec les l\u00e9gumes. Merci \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\n4.64 from 77 votes (\n69 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 30.0
+}

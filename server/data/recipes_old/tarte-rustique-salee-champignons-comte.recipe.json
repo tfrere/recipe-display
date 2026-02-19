@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "title": "Tarte Rustique Sal\u00e9e Champignons Comt\u00e9",
+    "description": "Une petite merveille cette Tarte Rustique Sal\u00e9e Champignons Comt\u00e9 ! Une garniture simple mais efficace avec des champignons, des oignons et du romarin.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT60M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "champignon",
+      "comt\u00e9",
+      "hiver",
+      "tarte",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Tarte-champi-comte-2-of-3.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Vous pouvez varier les champignons en fonction de ce que vous avez.",
+      "Vous pouvez aussi utiliser des champignons surgel\u00e9s sans probl\u00e8me.",
+      "Si vous avez la flemme de faire votre p\u00e2te maison, une p\u00e2te du commerce fera tr\u00e8s bien l'affaire !",
+      "J'ai utilis\u00e9 des champignons de paris dans cette recette.",
+      "J'ai fait ma p\u00e2te bris\u00e9e habituelle que vous pouvez trouver ici."
+    ],
+    "slug": "tarte-rustique-salee-champignons-comte",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/11/Tarte-champi-comte-2-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/11/16/tarte-rustique-salee-champignons-comte/",
+    "image": "images/tarte-rustique-salee-champignons-comte.webp",
+    "createdAt": "2026-02-09T21:38:38.324293",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 228.6,
+      "protein": 11.0,
+      "fat": 16.8,
+      "carbs": 10.2,
+      "fiber": 2.8,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 6,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pate_brisee",
+      "name": "p\u00e2te bris\u00e9e",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Shortcrust pastry"
+    },
+    {
+      "id": "oignons_jaunes",
+      "name": "oignons jaunes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onions"
+    },
+    {
+      "id": "champignons_de_paris",
+      "name": "champignons de Paris",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "button mushroom"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "romarin",
+      "name": "romarin",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "branche",
+      "optional": false,
+      "name_en": "rosemary"
+    },
+    {
+      "id": "moutarde_ancienne",
+      "name": "moutarde \u00e0 l'ancienne",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whole grain mustard"
+    },
+    {
+      "id": "comte_rape",
+      "name": "comt\u00e9 r\u00e2p\u00e9",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "r\u00e2p\u00e9",
+      "notes": null,
+      "optional": false,
+      "name_en": "Comt\u00e9 cheese, grated"
+    }
+  ],
+  "tools": [
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "slice_onions_mushrooms",
+      "action": "\u00c9mincer les oignons et les champignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_jaunes",
+        "champignons_de_paris"
+      ],
+      "produces": "oignons_champignons_eminces",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onions_mushrooms",
+      "action": "Les faire revenir dans une po\u00eale avec l'huile d'olive et la branche de romarin pendant environ 15min. Les champignons doivent avoir rendu toute leur eau.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "oignons_champignons_eminces",
+        "huile_dolive",
+        "romarin"
+      ],
+      "produces": "champignons_onions_sautes",
+      "requires": [],
+      "visualCue": "champignons doivent avoir rendu toute leur eau"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [],
+      "produces": "oven_preheated",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_out_dough",
+      "action": "\u00c9taler la p\u00e2te \u00e0 tarte sur une plaque de cuisson recouverte de papier cuisson.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_brisee"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_mustard",
+      "action": "\u00c9taler la moutarde sur le fond de la p\u00e2te, en laissant 2-3cm de bords.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pate_etalee",
+        "moutarde_ancienne"
+      ],
+      "produces": "pate_moutardee",
+      "requires": [],
+      "visualCue": "laissant 2-3cm de bords"
+    },
+    {
+      "id": "add_filling",
+      "action": "Verser les champignons par-dessus puis le comt\u00e9 r\u00e2p\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "pate_moutardee",
+        "champignons_onions_sautes",
+        "comte_rape"
+      ],
+      "produces": "tarte_garnie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fold_edges",
+      "action": "Replier les bords de la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "tarte_garnie"
+      ],
+      "produces": "tarte_pliee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tart",
+      "action": "Enfourner 45min.",
+      "duration": "PT45M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "tarte_pliee"
+      ],
+      "produces": "tarte_cuite",
+      "requires": [
+        "oven_preheated"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_cuite",
+  "originalText": "Tarte Rustique Sal\u00e9e Champignons Comt\u00e9 - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 novembre 2022\nTarte Rustique Sal\u00e9e Champignons Comt\u00e9\nUne petite merveille cette Tarte Rustique Sal\u00e9e Champignons Comt\u00e9 !\nJ\u2019aime trop ce genre de recette. Vous savez le genre qui vous vient en t\u00eate pendant que vous r\u00eavassez \u00e0 moiti\u00e9 devant votre frigo ouvert !\nBon l\u00e0, j\u2019avais plein de champignons et un gros morceau de comt\u00e9. Et j\u2019adore le combo champignons fromage ! Du coup, voil\u00e0.\u00a0J\u2019ai utilis\u00e9 des champignons de paris dans cette recette mais vous pouvez varier en fonction de ce que vous avez.\nVous pouvez aussi utiliser des champignons surgel\u00e9s sans probl\u00e8me.\nJ\u2019ai fait\nma p\u00e2te bris\u00e9e habituelle\nque vous pouvez trouver ici.\nEt ensuite une garniture simple mais efficace. Avec des champignons, des oignons et du romarin.\nUne g\u00e9n\u00e9reuse couche de moutarde \u00e0 grains. Pour le c\u00f4t\u00e9 rustique c\u2019est niquel. Et comme la garniture n\u2019est pas du tout liquide, c\u2019\u00e9tait l\u2019occasion de faire cette tarte en format rustique.\nJe trouve cette fa\u00e7on de faire super gourmande. J\u2019adore manger la partie qui est couverte de p\u00e2te sur le c\u00f4t\u00e9 !\nUn peu de comt\u00e9 r\u00e2p\u00e9 par-dessus. Hop, au four. Franchement on fait pas plus simple !\nEt si vous avez la flemme de faire votre p\u00e2te maison, une p\u00e2te du commerce fera tr\u00e8s bien l\u2019affaire !\nJ\u2019esp\u00e8re que cette Tarte Rustique Sal\u00e9e Champignons Comt\u00e9 vous plaira autant qu\u2019\u00e0 nous !\nTarte Rustique Champignons Comt\u00e9\n4.54\n/5 avec\n126\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n25\nminutes\nmin\nTemps de cuisson\n45\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\np\u00e2te bris\u00e9e\n2\noignons jaunes\n400\ng\nde champignons de Paris\n2\nc\u00e0s d\u2019huile d\u2019olive\n1\nbranche de romarin\n2\nc\u00e0s de moutarde \u00e0 l\u2019ancienne\n100\ng\nde comt\u00e9 r\u00e2p\u00e9\nInstructions\n\u00c9mincer les oignons et les champignons.\nLes faire revenir dans une po\u00eale avec l\u2019huile d\u2019olive et la branche de romarin pendant environ 15min. Les champignons doivent avoir rendu toute leur eau.\nPr\u00e9chauffer le four \u00e0 190 degr\u00e9s.\n\u00c9taler la p\u00e2te \u00e0 tarte sur une plaque de cuisson recouverte de papier cuisson.\n\u00c9taler la moutarde sur le fond de la p\u00e2te, en laissant 2-3cm de bords.\nVerser les champignons par-dessus puis le comt\u00e9 r\u00e2p\u00e9.\nReplier les bords de la p\u00e2te.\nEnfourner 45min.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nChampignon\n,\nHiver\n,\nNon class\u00e9\n,\nQuiches et Tartes\nTags:\ncomt\u00e9\nNos meilleures recettes de Chou-Fleur\nSalade Potimarron bl\u00e9 et feta\n5 thoughts on \u201cTarte Rustique Sal\u00e9e Champignons Comt\u00e9\u201d\nLadyMilonguera\ndit\u00a0:\n17 novembre 2022 \u00e0 8 h 25 min\nUne tarte bien sympathique\u2026\nchargement\u2026\nR\u00e9pondre\nGirault-Daussan Josette\ndit\u00a0:\n17 novembre 2022 \u00e0 12 h 32 min\nSit\u00f4t vu\u2026  Sit\u00f4t cuisin\u00e9e avec une salade de mache !  Un r\u00e9gal pour les yeux et les papilles !!  MERCI\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n18 novembre 2022 \u00e0 12 h 57 min\nMerci \u00e0 vous !\nchargement\u2026\nR\u00e9pondre\nLucie\ndit\u00a0:\n28 novembre 2022 \u00e0 18 h 54 min\nJ\u2019ai mis un plus d\u2019oignon et de champignons que ce qui \u00e9taient indiqu\u00e9 sur la recette. C\u2019\u00e9tait tr\u00e8s simple \u00e0 faire et tr\u00e8s bon. Je la ferai de nouveau!\nchargement\u2026\nR\u00e9pondre\nPing\u00a0:\nTarte rustique champignons oignons comt\u00e9 | J'esp\u00e8re que ce sera bon\n4.54 from 126 votes (\n124 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

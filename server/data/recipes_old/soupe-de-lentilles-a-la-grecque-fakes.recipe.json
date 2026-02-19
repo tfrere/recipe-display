@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "title": "Soupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)",
+    "description": "Une soupe de lentilles grecque, populaire et simple, \u00e0 d\u00e9guster \u00e9paisse comme un rago\u00fbt avec du riz ou plus liquide, accompagn\u00e9e de f\u00eata, d'olives et de pain.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT45M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "soupe de lentilles",
+      "fakes",
+      "recette grecque",
+      "soupe hiver",
+      "soupe vegetarienne",
+      "lentilles",
+      "automne",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Soupe-lentilles-Fakes-4-of-4.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "On peut la faire tr\u00e8s \u00e9paisse, plut\u00f4t fa\u00e7on rago\u00fbt, et l'accompagner de riz. Ou la manger plus liquide, faon v\u00e9ritable soupe.",
+      "Dans tous les cas, on l'accompagne g\u00e9n\u00e9ralement de f\u00eata. La base. Et d'olives vertes (ou noires d'ailleurs). Ainsi que de pain.",
+      "La cuisson peut durer entre 40min et 1h en fonction de vos lentilles.",
+      "Vous pouvez \u00e9ventuellement ajouter un peu d'eau en fonction de la consistance souhait\u00e9e pour votre soupe."
+    ],
+    "slug": "soupe-de-lentilles-a-la-grecque-fakes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/01/Soupe-lentilles-Fakes-4-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/01/16/soupe-de-lentilles-a-la-grecque-fakes/",
+    "image": "images/soupe-de-lentilles-a-la-grecque-fakes.jpg",
+    "createdAt": "2026-02-09T21:03:31.562036",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 45.0,
+    "totalCookingTime": 5.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 360.6,
+      "protein": 17.8,
+      "fat": 11.4,
+      "carbs": 48.9,
+      "fiber": 12.2,
+      "confidence": "medium",
+      "resolvedIngredients": 8,
+      "matchedIngredients": 11,
+      "totalIngredients": 11,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "high-fiber",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lentils",
+      "name": "lentilles vertes ou jaunes",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Green lentils or yellow lentils"
+    },
+    {
+      "id": "tomato_puree",
+      "name": "coulis de tomate",
+      "quantity": 400.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "ou de tomates concass\u00e9es",
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 1.2,
+      "unit": "L",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "wine_vinegar",
+      "name": "vinaigre de vin",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Wine vinegar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "feta",
+      "name": "f\u00eata",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "pour servir",
+      "optional": false,
+      "name_en": "Feta cheese"
+    },
+    {
+      "id": "olives",
+      "name": "olives",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour servir",
+      "optional": false,
+      "name_en": "Olives"
+    },
+    {
+      "id": "bread",
+      "name": "pain",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour servir",
+      "optional": false,
+      "name_en": "bread"
+    }
+  ],
+  "tools": [
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "chop_onion",
+      "action": "\u00c9mincez l'oignon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onion"
+      ],
+      "produces": "chopped_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_garlic",
+      "action": "Hachez grossi\u00e8rement les gousses d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "garlic"
+      ],
+      "produces": "chopped_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_carrots",
+      "action": "Coupez les carottes en rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "carrots"
+      ],
+      "produces": "sliced_carrots",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faites chauffer l'huile d'olive dans une casserole et faites-y revenir les l\u00e9gumes avec la feuille de laurier pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil",
+        "chopped_onion",
+        "chopped_garlic",
+        "sliced_carrots",
+        "bay_leaf"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_lentils",
+      "action": "Rincez les lentilles puis ajoutez-les.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "lentils",
+        "sauteed_vegetables"
+      ],
+      "produces": "vegetables_with_lentils",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_liquids",
+      "action": "Ajoutez le coulis de tomate, l'eau et le sucre. Ne salez pas tout de suite.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomato_puree",
+        "water",
+        "sugar",
+        "vegetables_with_lentils"
+      ],
+      "produces": "soup_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bring_to_boil",
+      "action": "Bien m\u00e9langez et portez \u00e0 \u00e9bullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "soup_base"
+      ],
+      "produces": "boiling_soup",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "reduce_heat",
+      "action": "Quand la soupe boue, baissez le feu et couvrez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "boiling_soup"
+      ],
+      "produces": "covered_soup",
+      "requires": [],
+      "visualCue": "bouillante"
+    },
+    {
+      "id": "simmer",
+      "action": "Laissez mijoter \u00e0 petits bouillons jusqu'\u00e0 ce que les lentilles soient tendres, environ 40min.",
+      "duration": "PT40M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "covered_soup"
+      ],
+      "produces": "cooked_lentil_soup",
+      "requires": [],
+      "visualCue": "lentilles tendres"
+    },
+    {
+      "id": "season",
+      "action": "Quand la soupe est cuite, salez et ajoutez le vinaigre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_lentil_soup",
+        "salt",
+        "wine_vinegar",
+        "pepper"
+      ],
+      "produces": "seasoned_lentil_soup",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez la soupe avec de la f\u00eata, des olives et du pain !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_lentil_soup",
+        "feta",
+        "olives",
+        "bread"
+      ],
+      "produces": "soupe_lentilles_grecque",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soupe_lentilles_grecque",
+  "originalText": "Soupe de Lentilles \u00e0 la Grecque (Fak\u00e8s) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 janvier 2022\nSoupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)\nAcc\u00e9der directement \u00e0 la recette\nVoici une nouvelle recette de Soupe de Lentilles \u00e0 la Grecque (Fak\u00e8s) !\nLa pr\u00e9c\u00e9dente \u00e9tait\nune recette de soupe de lentilles plus \u201cclassique\u201d\n.\nCelle-ci est la version grecque. C\u2019est un plat tr\u00e8s populaire en Gr\u00eace, on en mange r\u00e9guli\u00e8rement. On en sert \u00e0 la cantine aux enfants, pour les apports de fer des lentilles. Souvent avec du riz, histoire de bien caler ces petits estomacs !\nEt mon cousin en mange m\u00eame toutes les semaines ! C\u2019est vraiment un classique quoi !\nLa recette est super simple, et diff\u00e8re vraiment peu de la version fran\u00e7aise. Si ce n\u2019est pour l\u2019ajout de coulis de tomate. C\u2019est la diff\u00e9rence principale.\nEt ensuite, l\u00e0 o\u00f9 \u00e7a change, c\u2019est surtout la fa\u00e7on de la d\u00e9guster !\nOn peut la faire tr\u00e8s \u00e9paisse, plut\u00f4t fa\u00e7on rago\u00fbt, et l\u2019accompagner de riz. Ou la manger plus liquide, faon v\u00e9ritable soupe. Dans tous les cas, on l\u2019accompagne g\u00e9n\u00e9ralement de f\u00eata. La base. Et d\u2019olives vertes (ou noires d\u2019ailleurs). Ainsi que de pain.\nBon comme vous aurez pu le remarquer avec cette Soupe de Lentilles \u00e0 la Grecque, je suis dans une p\u00e9riode tr\u00e8s soupe en ce moment !\nVous pouvez aussi consulter nos autres recettes de soupes hivernales :\nsoupe de chou vert et petit \u00e9peautre\n,\nchorba d\u2019hiver\n,\nvelout\u00e9 de potimarron\n.\nSoupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)\n4.55\n/5 avec\n77\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n6\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\noignon\n2\ngousses d\u2019ail\n2\ncarottes\n130g\n1\nfeuille de laurier\n4\nc\u00e0s d\u2019huile d\u2019olive\n400\ng\nde lentilles vertes ou jaunes\n400\nml\nde coulis de tomate\nou de tomates concass\u00e9es\n1.2\nL\nd\u2019eau\n\u00bd\nc\u00e0c de sucre\n3\nc\u00e0s de vinaigre de vin\nsel\npoivre\nInstructions\nEmincez l\u2019oignon.\nHachez grossi\u00e8rement les gousses d\u2019ail.\nCoupez les carottes en rondelles.\nFaites chauffer l\u2019huile d\u2019olive dans une casserole et faites-y revenir les l\u00e9gumes pendant 4-5min avec la feuille de laurier.\nRincez les lentilles puis ajoutez-les.\nAjoutez le coulis de tomate, l\u2019eau et le sucre. Ne salez pas tout de suite.\nBien m\u00e9langez et portez \u00e0 \u00e9bullition.\nQuand la soupe boue, baissez le feu et couvrez.\nLaissez mijoter \u00e0 petits bouillons jusqu\u2019\u00e0 ce que les lentilles soient tendres. La cuisson peut durer entre 40min et 1h en fonction de vos lentilles.\nVous pouvez \u00e9ventuellement ajouter un peu d\u2019eau en fonction de la consistance souhait\u00e9e pour votre soupe. Ici, on l\u2019aime assez \u00e9paisse.\nQuand la soupe est cuite, salez et ajoutez le vinaigre.\nServez la soupe avec de la f\u00eata, des olives et du pain !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\nHiver\n,\nRecettes Sal\u00e9es\n,\nSoupes\nTags:\ncomment cuisiner lentilles\n,\nfakes\n,\nrecette de soupe\n,\nrecette de soupe de lentilles\n,\nrecette fakes grec\n,\nrecette grecque\n,\nsoupe de lentilles\n,\nsoupe grecque\n,\nsoupe hiver\n,\nsoupe vegetarienne\nBaklava \u00e0 la Grecque\nPickles de Navet \u00e0 la libanaise\n6 thoughts on \u201cSoupe de Lentilles \u00e0 la Grecque (Fak\u00e8s)\u201d\nAnna Bergman\ndit\u00a0:\n24 janvier 2022 \u00e0 18 h 10 min\nC\u2019est excellent !!! On s\u2019est r\u00e9gal\u00e9s ! Merci pour un site fantastique et tr\u00e8s inspirant \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nRichard\ndit\u00a0:\n23 octobre 2022 \u00e0 17 h 18 min\nUne superbe recette, je me suis r\u00e9gal\u00e9, rien \u00e0 changer, c\u2019est parfait.\nM\u00eame une amie un peu difficile a ador\u00e9.\nMerci\nchargement\u2026\nR\u00e9pondre\nPilar\ndit\u00a0:\n9 mai 2023 \u00e0 19 h 17 min\nUn des basiques hebdomadaires \u00e0 la maison. Tout le monde adore. Merci !\nchargement\u2026\nR\u00e9pondre\nCarole\ndit\u00a0:\n14 octobre 2023 \u00e0 12 h 51 min\nJuste excellent,  je fais r\u00e9guli\u00e8rement cette recette. Merci \u263a\nchargement\u2026\nR\u00e9pondre\nnico\ndit\u00a0:\n2 avril 2024 \u00e0 18 h 30 min\nSuper bon, et comme votre cousin j\u2019en fais toute les semaines maintenant \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nBONNET B\u00e9n\u00e9dicte et Gilles\ndit\u00a0:\n10 novembre 2025 \u00e0 20 h 05 min\nNous avons suivi  scrupuleusement la recette et nous nous sommes r\u00e9gal\u00e9s ! Merci pour cette belle d\u00e9couverte.\nchargement\u2026\nR\u00e9pondre\n4.55 from 77 votes (\n71 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 5.0
+}

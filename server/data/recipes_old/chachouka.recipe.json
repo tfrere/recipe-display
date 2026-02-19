@@ -1,0 +1,585 @@
+{
+  "metadata": {
+    "title": "Chachouka",
+    "description": "Un plat nord-africain de compotée de tomates aux œufs pochés, parfumé d'épices et servi avec des merguez ou en version végétarienne.",
+    "servings": 4,
+    "prepTime": "PT20M",
+    "cookTime": "PT35M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "nord-africain",
+      "tomates",
+      "œufs",
+      "épices",
+      "merguez",
+      "végétarien"
+    ],
+    "imageUrl": null,
+    "nationality": "Nord-africain",
+    "author": null,
+    "source": "https://www.youtube.com/watch?v=uDFIk3XE8aU",
+    "notes": [
+      "La version végétarienne remplace les merguez par de l'huile d'olive.",
+      "Servir avec du pain pour tremper dans la sauce."
+    ],
+    "slug": "chachouka",
+    "originalContent": "Chachouka\n\nhttps://www.youtube.com/watch?v=uDFIk3XE8aU&list=PLtmt2IJAROToiVL3X1ojbmGikIteD3AH_&index=35&t=180s&ab_channel=FoodisLove\n\nIngrédients :\nPour 4 ou 5 personnes\n1 gros oignon jaune\n1 poivron rouge\n1 carotte\n800gr de tomates concassées (fraîche ou boite)\n3 gousses d'ail\nCoriandre fraîche\n2 CAC de paprika\n1 CAC de piment fort\n1/4 CAC de poivre\n1 CAC de ras el hanout\n1/4 CAC de cannelle\nSel\n1 CAS d'huile d'olive\nMerguez ou huile d'olive\nFeta et miel (facultatif)\nPréparation :\nÉmincer l’oignon\nDétailler assez finement le poivron rouge\nRâper la carotte\nHacher les gousses d’ail\nDans une grosse poêle, faire revenir les merguez à feu moyen 5 min\nRetirer les merguez et faire revenir l’oignon dans la graisse des merguez (ou dans de l’huile d’olive si on opte pour la version végé)\nFaire dorer 5 min puis ajouter le poivron\nSaler, poivrer et ajouter le paprika, le ras el hanout et la cannelle\nAjouter l’ail et arroser avec une cas d’huile d’olive\nMélanger non stop pendant une minute pour torréfier les épices\nAjouter les tomates concassées puis la carotte râpée et la coriandre\nAjouter le piment\nFaire cuire 20 minutes à feu moyen et à découvert pour que l'humidité puisse s’évaporer et obtenir une compotée et pas une sauce\nFaire pocher les œufs dans la compotée (casser les œufs dans un verre et creuser un trou avec une spatule et verser l’œuf)\nCouvrir et faire cuire 6 à 8 minutes à feu moyen\nOn peut ajouter de la féta et du miel pour plus de douceur\nAjouter un peu de coriandre fraîche\n\nMain recipe image: temp_image_recipe-gen-20260208054359-5f4f4029.png",
+    "createdAt": "2026-02-08T05:46:57.540804",
+    "creationMode": "unknown",
+    "diets": [
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn"
+    ],
+    "totalTime": 68.0,
+    "totalCookingTime": 41.0,
+    "sourceImageUrl": "chachouka.png",
+    "image": "images/chachouka.png",
+    "nutritionPerServing": {
+      "calories": 197.0,
+      "protein": 10.2,
+      "fat": 10.1,
+      "carbs": 17.3,
+      "fiber": 4.8,
+      "confidence": "medium",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 9,
+      "totalIngredients": 10,
+      "negligibleIngredients": 7,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ],
+    "peakMonths": [
+      "August",
+      "December",
+      "February",
+      "January",
+      "July",
+      "June",
+      "March",
+      "November",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "oignon jaune",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé",
+      "notes": "gros",
+      "optional": false,
+      "name_en": "yellow onion"
+    },
+    {
+      "id": "red_bell_pepper",
+      "name": "poivron rouge",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "détaillé finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "red bell pepper"
+    },
+    {
+      "id": "carrot",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "crushed_tomatoes",
+      "name": "tomates concassées",
+      "quantity": 800.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "fraîches ou en boîte",
+      "optional": false,
+      "name_en": "crushed tomatoes"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "haché",
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "fresh_cilantro",
+      "name": "coriandre fraîche",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": "haché",
+      "notes": "pour la cuisson et la garniture",
+      "optional": false,
+      "name_en": "fresh cilantro"
+    },
+    {
+      "id": "paprika",
+      "name": "paprika",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "paprika"
+    },
+    {
+      "id": "hot_chili",
+      "name": "piment fort",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hot pepper"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "ras_el_hanout",
+      "name": "ras el hanout",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ras el hanout"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "merguez",
+      "name": "merguez",
+      "quantity": null,
+      "unit": null,
+      "category": "meat",
+      "preparation": null,
+      "notes": "ou huile d'olive pour version végé",
+      "optional": true,
+      "name_en": "merguez"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": null,
+      "unit": null,
+      "category": "dairy",
+      "preparation": null,
+      "notes": "facultatif",
+      "optional": true,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "honey",
+      "name": "miel",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "facultatif",
+      "optional": true,
+      "name_en": "honey"
+    },
+    {
+      "id": "eggs",
+      "name": "œufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": "pour pocher",
+      "optional": false,
+      "name_en": "eggs"
+    }
+  ],
+  "tools": [
+    "grosse poêle",
+    "spatule"
+  ],
+  "steps": [
+    {
+      "id": "slice_onion",
+      "action": "Émincer l'oignon jaune.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "onion"
+      ],
+      "produces": "sliced_onion",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_pepper",
+      "action": "Détailler assez finement le poivron rouge.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "red_bell_pepper"
+      ],
+      "produces": "sliced_pepper",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "grate_carrot",
+      "action": "Râper la carotte.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "carrot"
+      ],
+      "produces": "grated_carrot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_garlic",
+      "action": "Hacher les gousses d'ail.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "garlic"
+      ],
+      "produces": "chopped_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_cilantro",
+      "action": "Hacher la coriandre fraîche.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "preparation",
+      "uses": [
+        "fresh_cilantro"
+      ],
+      "produces": "chopped_cilantro",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_merguez",
+      "action": "Dans une grosse poêle, faire revenir les merguez à feu moyen pendant 5 minutes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "merguez"
+      ],
+      "produces": "cooked_merguez",
+      "requires": [],
+      "visualCue": "merguez dorées"
+    },
+    {
+      "id": "remove_merguez",
+      "action": "Retirer les merguez de la poêle et réserver.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "cooked_merguez"
+      ],
+      "produces": "reserved_merguez",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Faire revenir l'oignon émincé dans la graisse des merguez (ou dans de l'huile d'olive si on opte pour la version végétarienne).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "sliced_onion",
+        "olive_oil"
+      ],
+      "produces": "sauteed_onion",
+      "requires": [],
+      "visualCue": "doré"
+    },
+    {
+      "id": "add_pepper",
+      "action": "Ajouter le poivron détaillé finement et continuer à faire dorer pendant 5 minutes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "sauteed_onion",
+        "sliced_pepper"
+      ],
+      "produces": "onion_pepper_mix",
+      "requires": [],
+      "visualCue": "poivron légèrement doré"
+    },
+    {
+      "id": "season_spices",
+      "action": "Saler, poivrer et ajouter le paprika, le ras el hanout et la cannelle.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion_pepper_mix",
+        "salt",
+        "pepper",
+        "paprika",
+        "ras_el_hanout",
+        "cinnamon"
+      ],
+      "produces": "spiced_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_oil",
+      "action": "Ajouter l'ail haché et arroser avec une cuillère à soupe d'huile d'olive.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "spiced_base",
+        "chopped_garlic",
+        "olive_oil"
+      ],
+      "produces": "garlic_spiced_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "toast_spices",
+      "action": "Mélanger non stop pendant une minute pour torréfier les épices.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "garlic_spiced_base"
+      ],
+      "produces": "toasted_spice_base",
+      "requires": [],
+      "visualCue": "épices parfumées"
+    },
+    {
+      "id": "add_tomatoes_carrot",
+      "action": "Ajouter les tomates concassées puis la carotte râpée et la coriandre hachée.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "compotee",
+      "uses": [
+        "toasted_spice_base",
+        "crushed_tomatoes",
+        "grated_carrot",
+        "chopped_cilantro"
+      ],
+      "produces": "tomato_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_hot_chili",
+      "action": "Ajouter le piment fort.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "compotee",
+      "uses": [
+        "tomato_mixture",
+        "hot_chili"
+      ],
+      "produces": "spicy_tomato_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_compotee",
+      "action": "Faire cuire 20 minutes à feu moyen et à découvert pour que l'humidité puisse s'évaporer et obtenir une compotée et pas une sauce.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "compotee",
+      "uses": [
+        "spicy_tomato_mixture"
+      ],
+      "produces": "tomato_compotee",
+      "requires": [],
+      "visualCue": "compotée épaisse"
+    },
+    {
+      "id": "poach_eggs",
+      "action": "Faire pocher les œufs dans la compotée : casser les œufs dans un verre et creuser un trou avec une spatule et verser l'œuf.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "eggs",
+      "uses": [
+        "tomato_compotee",
+        "eggs"
+      ],
+      "produces": "eggs_in_compotee",
+      "requires": [],
+      "visualCue": "œufs déposés dans les trous"
+    },
+    {
+      "id": "cook_eggs",
+      "action": "Couvrir et faire cuire 6 à 8 minutes à feu moyen.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "eggs",
+      "uses": [
+        "eggs_in_compotee"
+      ],
+      "produces": "poached_eggs_in_compotee",
+      "requires": [],
+      "visualCue": "blancs cuits, jaunes encore coulants"
+    },
+    {
+      "id": "add_feta_honey",
+      "action": "Ajouter de la feta et du miel pour plus de douceur (facultatif).",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "finishing",
+      "uses": [
+        "poached_eggs_in_compotee",
+        "feta",
+        "honey"
+      ],
+      "produces": "chachouka_with_feta",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_fresh_cilantro",
+      "action": "Ajouter un peu de coriandre fraîche hachée.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "finishing",
+      "uses": [
+        "chachouka_with_feta",
+        "fresh_cilantro"
+      ],
+      "produces": "chachouka_garnished",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_merguez_back",
+      "action": "Ajouter les merguez réservées (si utilisées).",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "finishing",
+      "uses": [
+        "chachouka_garnished",
+        "reserved_merguez"
+      ],
+      "produces": "chachouka_complete",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "chachouka_complete",
+  "originalText": "Chachouka\n\nhttps://www.youtube.com/watch?v=uDFIk3XE8aU&list=PLtmt2IJAROToiVL3X1ojbmGikIteD3AH_&index=35&t=180s&ab_channel=FoodisLove\n\nIngrédients :\nPour 4 ou 5 personnes\n1 gros oignon jaune\n1 poivron rouge\n1 carotte\n800gr de tomates concassées (fraîche ou boite)\n3 gousses d'ail\nCoriandre fraîche\n2 CAC de paprika\n1 CAC de piment fort\n1/4 CAC de poivre\n1 CAC de ras el hanout\n1/4 CAC de cannelle\nSel\n1 CAS d'huile d'olive\nMerguez ou huile d'olive\nFeta et miel (facultatif)\nPréparation :\nÉmincer l’oignon\nDétailler assez finement le poivron rouge\nRâper la carotte\nHacher les gousses d’ail\nDans une grosse poêle, faire revenir les merguez à feu moyen 5 min\nRetirer les merguez et faire revenir l’oignon dans la graisse des merguez (ou dans de l’huile d’olive si on opte pour la version végé)\nFaire dorer 5 min puis ajouter le poivron\nSaler, poivrer et ajouter le paprika, le ras el hanout et la cannelle\nAjouter l’ail et arroser avec une cas d’huile d’olive\nMélanger non stop pendant une minute pour torréfier les épices\nAjouter les tomates concassées puis la carotte râpée et la coriandre\nAjouter le piment\nFaire cuire 20 minutes à feu moyen et à découvert pour que l'humidité puisse s’évaporer et obtenir une compotée et pas une sauce\nFaire pocher les œufs dans la compotée (casser les œufs dans un verre et creuser un trou avec une spatule et verser l’œuf)\nCouvrir et faire cuire 6 à 8 minutes à feu moyen\nOn peut ajouter de la féta et du miel pour plus de douceur\nAjouter un peu de coriandre fraîche\n\nMain recipe image: temp_image_recipe-gen-20260208054359-5f4f4029.png",
+  "totalCookingTime": 41.0
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 import TimeDisplay from "./TimeDisplay";
 import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
 import AlarmIcon from "@mui/icons-material/Alarm";
@@ -23,21 +23,25 @@ const RecipeTimes = ({
     <>
       {/* Temps total */}
       {totalTime && (
-        <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-          <AlarmIcon fontSize={iconSize} sx={{ color: sx.color }} />
-          <TimeDisplay minutes={totalTime} variant="body2" sx={sx} />
-        </Box>
+        <Tooltip title="Total time" arrow>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+            <AlarmIcon fontSize={iconSize} sx={{ color: sx.color }} />
+            <TimeDisplay minutes={totalTime} variant="body2" sx={sx} />
+          </Box>
+        </Tooltip>
       )}
 
       {/* Temps de cuisson actif */}
       {totalCookingTime && (
-        <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-          <LocalFireDepartmentOutlinedIcon
-            fontSize={iconSize}
-            sx={{ color: sx.color }}
-          />
-          <TimeDisplay minutes={totalCookingTime} variant="body2" sx={sx} />
-        </Box>
+        <Tooltip title="Active cooking time" arrow>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+            <LocalFireDepartmentOutlinedIcon
+              fontSize={iconSize}
+              sx={{ color: sx.color }}
+            />
+            <TimeDisplay minutes={totalCookingTime} variant="body2" sx={sx} />
+          </Box>
+        </Tooltip>
       )}
     </>
   );

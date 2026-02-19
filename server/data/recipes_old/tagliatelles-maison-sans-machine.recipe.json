@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "title": "Tagliatelles Maison sans machine",
+    "description": "Les tagliatelles maison … C'est quelque chose que je n'avais jamais osé jusqu'à aujourd'hui ! Une recette super simple, qui ne comporte que 4 ingrédients.",
+    "servings": 4,
+    "prepTime": "PT1H20M",
+    "cookTime": "PT5M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "pate maison",
+      "pate sans machine",
+      "tagliatelles aux oeufs",
+      "tagliatelles maison",
+      "tagliatelles sans machine",
+      "accompagnement",
+      "végétarien"
+    ],
+    "imageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2020/04/Tagliatelles-maison-4-of-5-2-scaled.jpg?fit=819%2C1024&ssl=1",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "La règle de base c'est : 1 oeuf pour 100g de farine.",
+      "Je vous conseille vivement d'aller jeter un coup d'œil à la recette du parmesan vegane et à celle de la crème d'asperge citronnée pour accompagner vos petites créations !",
+      "Pour conserver vos pâtes fraiches, laissez les sécher pendant 24h avant de les mettre dans un récipient hermétique. Pour ma part, j'accélère le processus en les séchant 2h a l'air libre et 2h dans un four à 60° avec la porte légèrement ouverte.",
+      "Je déconseille de les faire sécher en nid, car effectivement, elles se collent entre elles."
+    ],
+    "slug": "tagliatelles-maison-sans-machine",
+    "sourceImageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2020/04/Tagliatelles-maison-4-of-5-2-scaled.jpg?fit=819%2C1024&ssl=1",
+    "sourceUrl": "https://freethepickle.fr/2020/04/14/tagliatelles-maison-sans-machine/",
+    "image": "images/tagliatelles-maison-sans-machine.jpg",
+    "createdAt": "2026-02-09T19:50:25.349347",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 105.0,
+    "totalCookingTime": 15.0,
+    "nutritionPerServing": {
+      "calories": 516.1,
+      "protein": 17.6,
+      "fat": 14.2,
+      "carbs": 76.4,
+      "fiber": 3.0,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "oeufs",
+      "name": "oeufs",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "huile_d_olive",
+      "name": "huile d'olive",
+      "quantity": 30.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "à volonté",
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Rouleau à pâtisserie"
+  ],
+  "steps": [
+    {
+      "id": "melanger_farine_sel",
+      "action": "Mélanger la farine et le sel dans un grand saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "farine",
+        "fleur_de_sel"
+      ],
+      "produces": "farine_salee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_trou_ajouter_oeufs_huile",
+      "action": "Former un trou au milieu de la farine et y casser les oeufs, puis verser l'huile d'olive. Avec une fourchette, remuez un peu les oeufs pour casser les jaunes et les mélanger à l'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "farine_salee",
+        "oeufs",
+        "huile_d_olive"
+      ],
+      "produces": "melange_oeufs_huile",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "incorporer_farine_former_pate",
+      "action": "Toujours en vous servant de la fourchette, ramener un peu de farine qui est sur les bords dans les oeufs et mélanger. Incorporez comme ça doucement la farine jusqu'à ce que le mélange commence à devenir de la pâte, puis finir d'incorporer avec les mains. Si vous avez du mal à incorporer toute la farine, ajoutez un tout petit peu d'eau et continuez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "melange_oeufs_huile",
+        "eau"
+      ],
+      "produces": "pate_brute",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "petrir_pate",
+      "action": "Une fois que la pâte forme une belle boule, pétrissez la avec vos mains pendant 10min non-stop. La pâte va commencer à devenir élastique sous vos doigts, c'est parfait !",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_brute"
+      ],
+      "produces": "pate_petrie",
+      "requires": [],
+      "visualCue": "pâte élastique"
+    },
+    {
+      "id": "reposer_pate",
+      "action": "Mettez la pâte dans un bol propre, recouverte d'un linge propre et humide, et laissez la reposer 1h au frigo.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "pate",
+      "uses": [
+        "pate_petrie"
+      ],
+      "produces": "pate_reposee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_pate_etaler",
+      "action": "Couper la boule de pâte en 2. Farinez légèrement votre plan de travail et étalez la pâte très finement à l'aide d'un rouleau à pâtisserie. Normalement la pâte doit être bien élastique. Si possible, essayer de former un ovale bien allongé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tagliatelles",
+      "uses": [
+        "pate_reposee",
+        "farine"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": "pâte bien fine, ovale allongé"
+    },
+    {
+      "id": "plier_pate",
+      "action": "Une fois que la pâte est bien fine (ce sera l'épaisseur de vos tagliatelles), pliez la en 'éventail' en commençant par un des petits côté du oval.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tagliatelles",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "pate_pliee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_tagliatelles",
+      "action": "À l'aide d'un couteau couper des lamelles (de la largeur souhaitée pour vos tagliatelles). Défaites les rubans de tagliatelles, et mettez les à sécher sur le torchon. Attention, elle sèchent relativement vite, donc elle garderont la forme que vous leur donnez à ce moment.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "tagliatelles",
+      "uses": [
+        "pate_pliee"
+      ],
+      "produces": "tagliatelles_crues",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "secher_tagliatelles",
+      "action": "Laissez les tagliatelles sécher une bonne 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "tagliatelles",
+      "uses": [
+        "tagliatelles_crues"
+      ],
+      "produces": "tagliatelles_sechees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_tagliatelles",
+      "action": "Pour les faire cuire, faites bouillir un grand volume d'eau avec un peu de sel et mettez-y les tagliatelles. La cuisson est rapide. Une fois que les tagliatelles remontent à la surface, sortez en une pour tester la cuisson. Quand vous êtes satisfaits, égouttez les !",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "tagliatelles_sechees",
+        "fleur_de_sel",
+        "eau"
+      ],
+      "produces": "tagliatelles_cuites",
+      "requires": [],
+      "visualCue": "tagliatelles remontent à la surface"
+    }
+  ],
+  "finalState": "tagliatelles_cuites",
+  "originalText": "Tagliatelles Maison sans machine - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n14 avril 2020\nTagliatelles Maison sans machine\nAccéder directement à la recette\nLes tagliatelles maison … C’est quelque chose que je n’avais jamais osé jusqu’à aujourd’hui ! J’avais l’impression que c’était un processus très long et technique qui demandait, non seulement le savoir-faire d’une madone italienne, mais en plus un équipement sophistiqué en machine et étendoir à pâtes.\nEt étrangement, c’est cette crise sanitaire, qui m’a, indirectement, fait revoir ma position.\nJe n’ai pas la télé, j’écoute donc les nouvelles à la radio. Et sur France Info (pour ne pas citer la station), tous les jours, la\nChef étoilée Hélène Darroze\n, propose une recette aux auditeurs. Oui, je sais, moi aussi j’ai l’impression d’être une mémé quand je vous raconte ça !\nBref ! Récemment, elle a donné la recette de pâtes maison, sans machine, que lui avait donné une mama italienne il y a bien longtemps. Je n’ai pas reproduit cette recette, parce qu’elle comporte du vin blanc et que je n’en bois pas, je n’avais pas envie d’ouvrir une bouteille pour en jeter une grande partie, ni de partir faire des courses seulement pour ça. Mais cette interview m’a rassuré quant au processus de fabrication des pâtes et j’ai donc fini, après pas mal de négociation cérébrale par aller me renseigner et réaliser, qu’effectivement, il n’y a rien de sorcier !\nAlors, cette recette est super simple, et ne comporte que 4 ingrédients. Je n’ai pas la prétention de penser qu’elle arrivera à la cheville de la recette de la mama italienne d’Hélène Darroze, mais, pour moi c’est une belle victoire et une superbe réussite qui m’a donné envie de retenter l’expérience ! Alors ne soyez pas étonné si je vous reposte une recette de pâtes maison bientôt !\nJe vous conseille vivement d’aller jeter un coup d’œil à la recette du parmesan vegane et à celle de la crème d’asperge citronnée pour accompagner vos petites créations !\nTagliatelles Maison sans machine\nNatacha\n4.59\n/5 avec\n85\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n40\nminutes\nmin\nTemps de cuisson\n3\nminutes\nmin\nTemps de repos\n1\nheure\nh\n30\nminutes\nmin\nTemps total\n43\nminutes\nmin\nIngrédients\n400\ng\nde farine\n½\nc-à-c de fleur de sel\n4\noeufs\n30\nml\nd’huile d’olive\nun peu d’eau\nInstructions\nLa règle de base c’est : 1 oeuf pour 100g de farine.\nMélanger la farine et le sel dans un grand saladier.\nFormer un trou au milieu de la farine et y casser les oeufs, puis verser l’huile d’olive. Avec une fourchette, remuez un peu les oeufs pour casser les jaunes et les mélanger à l’huile. Ensuite, toujours en vous servant de la fourchette, ramener un peu de farine qui est sur les bords dans les oeufs et mélanger. Incorporez comme ça doucement la farine jusqu’à ce que le mélange commence à devenir de la pâte, puis finir d’incorporer avec les mains. Si vous avez du mal à incorporer toute la farine, ajoutez un tout petit peu d’eau et continuez.\nUne fois que la pâte forme une belle boule, pétrissez la avec vos mains pendant 10min non-stop.\nLa pâte va commencer à devenir élastique sous vos doigts, c’est parfait ! Ensuite, mettez la dans un bol propre, recouverte d’un linge propre et humide, et laissez la reposer 1h au frigo.\nDisposer un torchon propre et sec sur une surface plane. Cela servira pour faire sécher les tagliatelles. Ensuite, couper la boule de pâte en 2. Farinez légèrement votre plan de travail et étalez la pâte très finement à l’aide d’un rouleau à pâtisserie. Normalement la pâte doit être bien élastique. Si possible, essayer de former un ovale bien allongé. Ce sera plus simple pour la prochaine étape.\nUne fois que la pâte est bien fine (ce sera l’épaisseur de vos tagliatelles), pliez la en “éventail” en commençant par un des petits côté du oval.\nPuis, à l’aide d’un couteau couper des lamelles (de la largeur souhaitée pour vos tagliatelles). Défaites les rubans de tagliatelles, et mettez les à sécher sur le torchon. Attention, elle sèchent relativement vite, donc elle garderont la forme que vous leur donnez à ce moment (pensez à quand vous les mettrez à cuire !).\nRéitérez toutes ces étapes avec le 2e paton.\nLaissez les tagliatelles sécher une bonne demi-heure.\nFinalement, pour les faire cuire, faites bouillir un grand volume d’eau avec un peu de sel et mettez-y les tagliatelles. La cuisson est rapide. Une fois que les tagliatelles remontent à la surface, sortez en une pour tester la cuisson. Quand vous êtes satisfaits, égouttez les ! Et voilà !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Salées\nTags:\npate maison\n,\npate sans machine\n,\ntagliatelles aux oeufs\n,\ntagliatelles maison\n,\ntagliatelles sans machine\nPralines Amande Noisette Maison\nParmesan Végétal\n11 thoughts on “Tagliatelles Maison sans machine”\nPellé\ndit :\n14 octobre 2020 à 8 h 55 min\nBonjour ,est il possible une fois seche de les conserver comme des pâtes en sachet ?\nchargement…\nRépondre\nFree The Pickle\ndit :\n20 octobre 2020 à 20 h 09 min\nHello ! Oui ça ne devrait pas poser de pb!\nchargement…\nRépondre\nGreg\ndit :\n9 mai 2021 à 10 h 06 min\nBonjour,\nPour conserver vos pâtes fraiches,  laissez les sécher pendant 24h avant de les mettre dans un récipient hermétique.\nPour ma part, j’accélère le processus en les séchant 2h a l’air libre et 2h dans un four à 60° avec la porte légèrement ouverte. Bon app… 🙂\nchargement…\nRépondre\nKamelia Saraiva\ndit :\n16 février 2021 à 16 h 25 min\nIl est possible de savoir pour combien de personnes cette recette\nchargement…\nRépondre\nFree The Pickle\ndit :\n19 février 2021 à 14 h 01 min\nBonjour Kamelia, cette recette est pour 4-5 personnes. Bonne journée à vous\nchargement…\nRépondre\nArlette MORISSE\ndit :\n27 mai 2021 à 11 h 25 min\nMerci merci merci!!!! très réussi et tellement bon !\nchargement…\nRépondre\nsohava jocy\ndit :\n22 juin 2021 à 7 h 03 min\nsuper\nchargement…\nRépondre\nLeonie\ndit :\n22 mai 2022 à 10 h 56 min\nBonjour, j’ai laissé sécher mes pâtes pendant la nuit en nid  pour pouvoir les conserver et ce matin elles étaient dur, donc impossible de les démêler ou autre. Si je les mets dans l’eau en forme de nid et dures, cela cuira ou se cassera ?\nchargement…\nRépondre\nNatacha\ndit :\n23 mai 2022 à 13 h 09 min\nBonjour Léonie, comme écrit dans mon article, je déconseille de les faire sécher en nid, car effectivement, elles se collent entre elles. Vous pouvez tout à fait les faire cuire, mais elles garderont cette forme.\nchargement…\nRépondre\nSissi\ndit :\n11 juillet 2023 à 13 h 22 min\nBonjour, peut-on utiliser de la farine semi complète ?\nchargement…\nRépondre\nNatacha\ndit :\n11 juillet 2023 à 14 h 54 min\nHello ! Oui je pense !\nchargement…\nRépondre\n4.59 from 85 votes (\n82 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

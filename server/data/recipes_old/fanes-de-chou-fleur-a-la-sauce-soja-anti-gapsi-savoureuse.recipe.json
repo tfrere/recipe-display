@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "title": "Fanes de chou-fleur \u00e0 la sauce soja : anti-gapsi & savoureuse",
+    "description": "Une recette anti-gaspi et savoureuse pour cuisiner les fanes et feuilles du chou-fleur, blanchies puis saut\u00e9es \u00e0 la sauce soja.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT14M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "vegan",
+      "v\u00e9g\u00e9talien",
+      "v\u00e9g\u00e9tarien",
+      "anti-gaspi",
+      "chou-fleur",
+      "choux",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Fanes-de-chou-fleur-sauce-soja-2-of-2-1.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les fanes de chou-fleur sont riches en fibres, vitamines C et K.",
+      "Le blanchiment avec du bicarbonate de soude attendrit les fibres, facilite la digestion, limite les odeurs et conserve la couleur verte.",
+      "Peut \u00eatre accompagn\u00e9 de riz, de tofu ou d'un \u0153uf au plat."
+    ],
+    "slug": "fanes-de-chou-fleur-a-la-sauce-soja-anti-gapsi-savoureuse",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/02/Fanes-de-chou-fleur-sauce-soja-2-of-2-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/20/fane-chou-fleur-sauce-soja/",
+    "image": "images/fanes-de-chou-fleur-a-la-sauce-soja-anti-gapsi-savoureuse.webp",
+    "createdAt": "2026-02-09T22:35:11.843487",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 14.0,
+    "totalCookingTime": 14.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 27.4,
+      "protein": 2.9,
+      "fat": 0.2,
+      "carbs": 4.0,
+      "fiber": 0.4,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cauliflower_greens",
+      "name": "Les fanes d'un petit chou fleur",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cauliflower greens"
+    },
+    {
+      "id": "baking_soda",
+      "name": "bicarbonate de soude",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "ginger",
+      "name": "gingembre frais",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh ginger"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "neutral_oil",
+      "name": "huile neutre",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Neutral oil"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "sauce soja",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    }
+  ],
+  "tools": [
+    "Wok"
+  ],
+  "steps": [
+    {
+      "id": "cut_greens",
+      "action": "Couper grossi\u00e8rement les fanes",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cauliflower_greens"
+      ],
+      "produces": "chopped_greens",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blanch_greens",
+      "action": "Faire blanchir les fanes dans de l'eau bouillante avec le bicarbonate de soude.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_greens",
+        "baking_soda"
+      ],
+      "produces": "blanched_greens",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "drain_greens",
+      "action": "\u00c9goutter les fanes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blanched_greens"
+      ],
+      "produces": "drained_greens",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mince_greens",
+      "action": "\u00c9mincer les fanes en petits morceaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "drained_greens"
+      ],
+      "produces": "minced_greens",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_ginger_garlic",
+      "action": "Hacher finement le gingembre et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "ginger",
+        "garlic"
+      ],
+      "produces": "chopped_ginger_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_aromatics",
+      "action": "Dans un wok, faire chauffer l'huile \u00e0 medium-high heat et y faire revenir l'ail et le gingembre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "neutral_oil",
+        "chopped_ginger_garlic"
+      ],
+      "produces": "sauteed_aromatics",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_greens",
+      "action": "Ajouter les fanes et faire revenir \u00e0 feu medium-fort.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "minced_greens",
+        "sauteed_aromatics"
+      ],
+      "produces": "sauteed_greens",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_sauce",
+      "action": "Ajouter la sauce soja et le vinaigre de riz et faire revenir encore.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_greens",
+        "soy_sauce",
+        "rice_vinegar"
+      ],
+      "produces": "soy_sauce_greens",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "soy_sauce_greens",
+  "originalText": "Fanes de chou-fleur \u00e0 la sauce soja : anti-gapsi & savoureuse\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 f\u00e9vrier 2025\nFanes de chou-fleur \u00e0 la sauce soja : une recette anti-gaspi savoureuse\nEnvie de tester une recette anti-gaspi et savoureuse ? Cette recette de fanes de chou-fleur \u00e0 la sauce soja est faite pour vous !\nQuand on cuisine un chou-fleur, on utilise g\u00e9n\u00e9ralement ses bouquets, mais que fait-on des fanes et des feuilles ? Trop souvent jet\u00e9es, elles sont pourtant d\u00e9licieuses et pleines de nutriments. Si vous cherchez une fa\u00e7on simple et savoureuse de les cuisiner, cette recette \u00e0 la sauce soja est parfaite pour les mettre en valeur tout en adoptant une approche anti-gaspi.\nApprendre \u00e0 cuisiner les parties souvent oubli\u00e9es des l\u00e9gumes permet non seulement d\u2019\u00e9viter le gaspillage, mais aussi de d\u00e9couvrir de nouvelles saveurs et textures. Les fanes de chou-fleur, une fois bien pr\u00e9par\u00e9es, offrent un go\u00fbt d\u00e9licat et une texture tendre, qui s\u2019int\u00e8grent parfaitement dans de nombreux plats.\nDans cet article, d\u00e9couvrez pourquoi et comment cuisiner les fanes de chou-fleur \u00e0 la sauce soja, ainsi que quelques conseils pour les rendre encore plus digestes et savoureuses.\nTable des mati\u00e8res\n1\nPourquoi cuisiner les fanes de chou-fleur ?\n2\nPr\u00e9parer correctement les fanes : une \u00e9tape cl\u00e9 pour une meilleure digestion\n3\nFane de chou-fleur \u00e0 la sauce soja\n4\nComment accompagner les fanes de chou-fleur \u00e0 la sauce soja ?\n5\nD\u2019autres recettes anti-gaspi \u00e0 d\u00e9couvrir\n6\nConclusion\nPourquoi cuisiner les fanes de chou-fleur ?\nSi vous avez l\u2019habitude de jeter les fanes et les grandes feuilles de votre chou-fleur, il est temps de leur donner une seconde vie ! Voici pourquoi elles m\u00e9ritent une place dans votre assiette :\nUne saveur douce et agr\u00e9able\n: contrairement \u00e0 ce que l\u2019on pourrait penser, les fanes ne sont pas am\u00e8res si on les pr\u00e9pare correctement. Leur go\u00fbt rappelle celui du brocoli ou du chou vert, avec une texture tendre apr\u00e8s cuisson.\nUn geste anti-gaspi\n: en utilisant les fanes, vous profitez pleinement du l\u00e9gume et r\u00e9duisez les d\u00e9chets alimentaires.\nUn concentr\u00e9 de bienfaits\n: Riches en fibres, elles favorisent une bonne digestion et apportent une sensation de sati\u00e9t\u00e9 durable. Elles sont aussi une source int\u00e9ressante de vitamines C et K, essentielles pour le syst\u00e8me immunitaire et la sant\u00e9 des os.\nPr\u00e9parer correctement les fanes : une \u00e9tape cl\u00e9 pour une meilleure digestion\nLes feuilles du chou-fleur, bien que d\u00e9licieuses, peuvent \u00eatre parfois difficiles \u00e0 dig\u00e9rer. Pour am\u00e9liorer leur texture et les rendre plus l\u00e9g\u00e8res, il est recommand\u00e9 de\nles blanchir\navant de les cuisiner.\nPourquoi blanchir les fanes ?\nBlanchir consiste \u00e0 plonger les feuilles quelques minutes dans de l\u2019eau bouillante, puis \u00e0 les refroidir imm\u00e9diatement dans de l\u2019eau glac\u00e9e. Cette technique permet :\nD\u2019attendrir les fibres\net de rendre les fanes plus fondantes en bouche.\nDe faciliter la digestion\n, en r\u00e9duisant les compos\u00e9s soufr\u00e9s responsables des ballonnements.\nL\u2019action du bicarbonate de soude\nAjout\u00e9 dans l\u2019eau de blanchiment, le bicarbonate de soude offre plusieurs avantages :\nIl\nramollit encore plus les fibres\nv\u00e9g\u00e9tales, rendant les fanes plus tendres.\nIl\nlimite les odeurs fortes\nli\u00e9es aux l\u00e9gumes crucif\u00e8res (comme le chou et le brocoli).\nIl\npermet de conserver une belle couleur verte\n, donnant un aspect plus app\u00e9tissant au plat final.\nIl permet \u00e9galement de\nfaciliter la digestion\n.\nFane de chou-fleur \u00e0 la sauce soja\n4.47\n/5 avec\n88\nvotes\nImprimer la recette\nPin Recipe\nIngr\u00e9dients\nLes fanes d\u2019un petit chou fleur\n1\nc\u00e0c de bicarbonate de soude\n1\nc\u00e0c de gingembre frais\n1\ngousse d\u2019ail\n1\nc\u00e0s d\u2019huile neutre\n2\nc\u00e0s de sauce soja\n1\nc\u00e0s de vinaigre de riz\nInstructions\nCouper grossi\u00e8rement les fanes et les faire blanchir 4-5min dans de l\u2019eau bouillante avec le bicarbonate de soude.\n\u00c9goutter.\n\u00c9mincer en petits morceaux.\nHacher finement le gingembre et l\u2019ail.\nDans un wok, faire chauffer l\u2019huile et y faire revenir l\u2019ail et le gingembre quelques minutes.\nAjouter les fanes et faire revenir \u00e0 feu moyen-fort 5min.\nAjouter la sauce soja et le vinaigre de riz et faire revenir encore 2 minutes.\nD\u00e9guster avec du riz !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nComment accompagner les fanes de chou-fleur \u00e0 la sauce soja ?\nUne fois saut\u00e9es avec un peu d\u2019ail et de sauce soja, les fanes de chou-fleur deviennent un accompagnement savoureux et rapide \u00e0 pr\u00e9parer. Voici quelques id\u00e9es pour les int\u00e9grer \u00e0 un repas complet :\nAvec du riz\n: Un bol de riz blanc ou complet compl\u00e9tera ce plat de mani\u00e8re \u00e9quilibr\u00e9e.\nAvec du tofu\n: Pour une version v\u00e9g\u00e9tale riche en prot\u00e9ines, ajoutez du tofu saut\u00e9 ou marin\u00e9. Vous pouvez, par exemple, l\u2019accompagner de ma recette \u00ab\ntofu aux \u00e9chalotes\n\u00ab\u00a0.\nAvec un \u0153uf au plat\n: L\u2019\u0153uf se marie parfaitement avec la texture fondante des fanes de chou-fleur \u00e0 la sauce soja.\nD\u2019autres recettes anti-gaspi \u00e0 d\u00e9couvrir\nSi vous aimez l\u2019id\u00e9e de cuisiner les parties souvent oubli\u00e9es des l\u00e9gumes, voici d\u2019autres suggestions pour aller plus loin dans votre d\u00e9marche anti-gaspi :\nLes\ngalettes anti-gaspi quinoa et \u00e9pluchures\n: une recette d\u00e9licieuse pour r\u00e9utiliser les restes de quinoa et d\u2019\u00e9pluchures de l\u00e9gumes.\nLa tortilla anti-gaspi au poireau, fanes de radis et \u00e0 la f\u00eata\nLe coleslaw de tronc de brocolis\n: pour faire honneur au brocolis !\nConclusion\nInt\u00e9grer les fanes de chou-fleur dans votre cuisine, c\u2019est adopter une approche plus responsable et d\u00e9couvrir une nouvelle mani\u00e8re de savourer ce l\u00e9gume dans son int\u00e9gralit\u00e9. Avec quelques astuces simples, comme le blanchiment et l\u2019ajout de sauce soja, vous pouvez transformer ces feuilles souvent n\u00e9glig\u00e9es en un plat gourmand et nutritif.\nLa prochaine fois que vous achetez un chou-fleur, ne jetez plus ses fanes ! Essayez cette recette et profitez de toutes les saveurs que ce l\u00e9gume peut offrir.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nChou-fleur\n,\nChoux\n,\nPlats & Accompagnements\n,\nPlats en Sauce\nTags:\nvegan\n,\nv\u00e9g\u00e9talien\n,\nv\u00e9g\u00e9tarien\nSoupe de Betteraves et petit \u00e9peautre fa\u00e7on Borscht\u00a0: la recette qui va vous r\u00e9concilier avec la betterave !\nGratin de potimarron au St Nectaire : le plat r\u00e9confortant sans prise de t\u00eate !\n4.47 from 88 votes (\n88 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "risotto au safran",
+    "description": "Un risotto crémeux parfumé au safran, également connu sous le nom de \"risotto pour pécho\".",
+    "servings": 2,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "risotto",
+      "safran",
+      "italien",
+      "riz",
+      "parmesan"
+    ],
+    "imageUrl": null,
+    "nationality": "Italian",
+    "author": null,
+    "source": null,
+    "notes": [
+      "Servir avec du parmesan supplémentaire."
+    ],
+    "slug": "risotto-au-safran",
+    "originalContent": "\nrisotto au safran\naka risotto pour pécho\n\nTemps total : minimum 1h30\nTemps de préparation : 30 min\nTemps de cuisson : 1h\n\nPour 2 personnes\n\nIngrédients :\n\n1 gros oignon\nRiz arborio (environ 100g par personne)\nVin blanc\nSafran (2 x 0,1g)\n1 feuille de laurier ou de sauge\n2L de bouillon de poulet\n150 g de parmesan\n\nPréparation :\n- Porter à ébullition un litre de bouillon (volaille ou bœuf)\n- Émincer très finement l'oignon\n- Dans une casserole ou un wok, faire revenir l'oignon avec un filet d'huile d'olive\n- Quand l'oignon est bien translucide (mais pas cramé), ajouter le riz\n- Remuer quelques minutes et déglacer au vin blanc\n- Laisser s'évaporer le vin blanc puis diminuer le feu et ajouter un peu de bouillon avec une louche afin de couvrir le riz\n- Ajouter le safran puis le laurier\n- Laisser cuire tranquillement à feu doux en remuant régulièrement afin que le riz ne colle pas à la casserole\n- Rajouter régulièrement du bouillon mais pas trop\n- Quand le riz commence à être al dente, ajouter le parmesan et remuer\n- Servir avec du parmesan\n\nMain recipe image: temp_image_recipe-gen-20260208054345-b2d8af6b.png",
+    "createdAt": "2026-02-08T05:45:29.764707",
+    "creationMode": "unknown",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 60.0,
+    "totalCookingTime": 60.0,
+    "sourceImageUrl": "risotto-au-safran.png",
+    "image": "images/risotto-au-safran.png",
+    "nutritionPerServing": {
+      "calories": 384.0,
+      "protein": 38.6,
+      "fat": 20.0,
+      "carbs": 10.4,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition",
+      "liquidRetentionApplied": true
+    },
+    "nutritionTags": [
+      "high-protein",
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onion",
+      "name": "gros oignon",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincé très finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "Yellow onion"
+    },
+    {
+      "id": "arborio_rice",
+      "name": "riz arborio",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "environ 100g par personne",
+      "optional": false,
+      "name_en": "Arborio rice"
+    },
+    {
+      "id": "white_wine",
+      "name": "vin blanc",
+      "quantity": null,
+      "unit": null,
+      "category": "beverage",
+      "preparation": null,
+      "notes": "pour déglacer",
+      "optional": false,
+      "name_en": "white wine"
+    },
+    {
+      "id": "saffron",
+      "name": "safran",
+      "quantity": 0.2,
+      "unit": "g",
+      "category": "spice",
+      "preparation": null,
+      "notes": "2 x 0,1g",
+      "optional": false,
+      "name_en": "saffron"
+    },
+    {
+      "id": "bay_leaf",
+      "name": "feuille de laurier",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "spice",
+      "preparation": null,
+      "notes": "ou de sauge",
+      "optional": false,
+      "name_en": "bay leaf"
+    },
+    {
+      "id": "chicken_broth",
+      "name": "bouillon de poulet",
+      "quantity": 2000.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "2L au total, mais on utilise environ 1L pour la cuisson",
+      "optional": false,
+      "name_en": "Chicken broth"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "parmesan cheese"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "un filet",
+      "optional": false,
+      "name_en": "olive oil"
+    }
+  ],
+  "tools": [
+    "casserole ou wok",
+    "louche"
+  ],
+  "steps": [
+    {
+      "id": "boil_broth",
+      "action": "Porter à ébullition un litre de bouillon (volaille ou bœuf).",
+      "duration": "PT10M",
+      "temperature": 100,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bouillon",
+      "uses": [
+        "chicken_broth"
+      ],
+      "produces": "bouillon_ebullition",
+      "requires": [],
+      "visualCue": "bouillon frémissant"
+    },
+    {
+      "id": "chop_onion",
+      "action": "Émincer très finement l'oignon.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "onion"
+      ],
+      "produces": "oignon_emince",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onion",
+      "action": "Dans une casserole ou un wok, faire revenir l'oignon avec un filet d'huile d'olive.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "base",
+      "uses": [
+        "oignon_emince",
+        "olive_oil"
+      ],
+      "produces": "oignon_translucide",
+      "requires": [],
+      "visualCue": "translucide mais pas cramé"
+    },
+    {
+      "id": "add_rice",
+      "action": "Quand l'oignon est bien translucide (mais pas cramé), ajouter le riz.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "oignon_translucide",
+        "arborio_rice"
+      ],
+      "produces": "riz_toaste",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "deglaze_wine",
+      "action": "Remuer quelques minutes et déglacer au vin blanc.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "riz_toaste",
+        "white_wine"
+      ],
+      "produces": "riz_deglace",
+      "requires": [],
+      "visualCue": "vin blanc évaporé"
+    },
+    {
+      "id": "add_first_broth",
+      "action": "Laisser s'évaporer le vin blanc puis diminuer le feu et ajouter un peu de bouillon avec une louche afin de couvrir le riz.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "riz_deglace",
+        "bouillon_ebullition"
+      ],
+      "produces": "riz_premier_bouillon",
+      "requires": [],
+      "visualCue": "riz couvert de bouillon"
+    },
+    {
+      "id": "add_saffron_bay",
+      "action": "Ajouter le safran puis le laurier.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "riz_premier_bouillon",
+        "saffron",
+        "bay_leaf"
+      ],
+      "produces": "riz_safran",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_risotto",
+      "action": "Laisser cuire tranquillement à feu doux en remuant régulièrement afin que le riz ne colle pas à la casserole. Rajouter régulièrement du bouillon mais pas trop.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "riz_safran",
+        "bouillon_ebullition"
+      ],
+      "produces": "riz_al_dente",
+      "requires": [],
+      "visualCue": "riz al dente"
+    },
+    {
+      "id": "add_parmesan",
+      "action": "Quand le riz commence à être al dente, ajouter le parmesan et remuer.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "risotto",
+      "uses": [
+        "riz_al_dente",
+        "parmesan"
+      ],
+      "produces": "risotto_cremeux",
+      "requires": [],
+      "visualCue": "risotto crémeux"
+    },
+    {
+      "id": "serve",
+      "action": "Servir avec du parmesan.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "risotto_cremeux"
+      ],
+      "produces": "risotto_au_safran_fini",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "risotto_au_safran_fini",
+  "originalText": "risotto au safran\naka risotto pour pécho\n\nTemps total : minimum 1h30\nTemps de préparation : 30 min\nTemps de cuisson : 1h\n\nPour 2 personnes\n\nIngrédients :\n\n1 gros oignon\nRiz arborio (environ 100g par personne)\nVin blanc\nSafran (2 x 0,1g)\n1 feuille de laurier ou de sauge\n2L de bouillon de poulet\n150 g de parmesan\n\nPréparation :\n- Porter à ébullition un litre de bouillon (volaille ou bœuf)\n- Émincer très finement l'oignon\n- Dans une casserole ou un wok, faire revenir l'oignon avec un filet d'huile d'olive\n- Quand l'oignon est bien translucide (mais pas cramé), ajouter le riz\n- Remuer quelques minutes et déglacer au vin blanc\n- Laisser s'évaporer le vin blanc puis diminuer le feu et ajouter un peu de bouillon avec une louche afin de couvrir le riz\n- Ajouter le safran puis le laurier\n- Laisser cuire tranquillement à feu doux en remuant régulièrement afin que le riz ne colle pas à la casserole\n- Rajouter régulièrement du bouillon mais pas trop\n- Quand le riz commence à être al dente, ajouter le parmesan et remuer\n- Servir avec du parmesan\n\nMain recipe image: temp_image_recipe-gen-20260208054345-b2d8af6b.png",
+  "totalCookingTime": 60.0
+}

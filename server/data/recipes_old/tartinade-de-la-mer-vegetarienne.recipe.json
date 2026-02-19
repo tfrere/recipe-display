@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "title": "Tartinade de la mer (végétarienne)",
+    "description": "Une tartinade végétarienne au goût de la mer, parfaite pour l'apéritif ou les fêtes, à base de tofu fumé et d'algues nori.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "algue",
+      "tofu",
+      "noel",
+      "apéro",
+      "tartinade",
+      "végétarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/11/tartinade-de-la-mer.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaite pour les fêtes de Noël comme alternative végétarienne aux plats de poisson.",
+      "Servir sur des toasts ou des blinis.",
+      "Peut être décorée avec une rondelle de citron ou des baies roses."
+    ],
+    "slug": "tartinade-de-la-mer-vegetarienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/11/tartinade-de-la-mer.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/11/29/tartinade-de-la-mer-vegetarienne/",
+    "image": "images/tartinade-de-la-mer-vegetarienne.jpg",
+    "createdAt": "2026-02-09T20:08:37.572522",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 138.8,
+      "protein": 4.7,
+      "fat": 11.0,
+      "carbs": 5.6,
+      "fiber": 0.8,
+      "confidence": "high",
+      "resolvedIngredients": 7,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu_fume",
+      "name": "tofu fumé bien ferme",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked firm tofu"
+    },
+    {
+      "id": "nori",
+      "name": "feuilles nori",
+      "quantity": 1.5,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nori sheets"
+    },
+    {
+      "id": "fromage_frais",
+      "name": "fromage frais, type carré frais ou madame loïc",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cream cheese"
+    },
+    {
+      "id": "echalote",
+      "name": "échalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "émincée finement",
+      "notes": "petite",
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "capres",
+      "name": "câpres",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "condiment",
+      "preparation": "hachées",
+      "notes": null,
+      "optional": false,
+      "name_en": "Capers"
+    },
+    {
+      "id": "citron",
+      "name": "citron",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "le jus",
+      "optional": false,
+      "name_en": "lemon"
+    },
+    {
+      "id": "aneth",
+      "name": "aneth séchée",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried dill"
+    },
+    {
+      "id": "paprika_fume",
+      "name": "paprika fumé",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "smoked paprika"
+    }
+  ],
+  "tools": [
+    "Mixeur (optionnel pour les algues)"
+  ],
+  "steps": [
+    {
+      "id": "emietter_tofu",
+      "action": "Émiettez le tofu fumé entre vos doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_fume"
+      ],
+      "produces": "tofu_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "couper_nori",
+      "action": "Coupez les feuilles de nori en petits morceaux (à la main ou en les passant rapidement au mixeur).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "nori"
+      ],
+      "produces": "nori_coupe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combiner_base",
+      "action": "Dans un bol, mettez le tofu émietté et les morceaux d'algue nori.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tofu_emiette",
+        "nori_coupe"
+      ],
+      "produces": "base_tofu_nori",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_ingredients",
+      "action": "Ajoutez le fromage frais, l'échalote émincée, les câpres hachées, le jus de citron, l'aneth séchée et le paprika fumé.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "base_tofu_nori",
+        "fromage_frais",
+        "echalote",
+        "capres",
+        "citron",
+        "aneth",
+        "paprika_fume"
+      ],
+      "produces": "melange_complet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger",
+      "action": "Mélangez bien tous les ingrédients.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "melange_complet"
+      ],
+      "produces": "tartinade_melangee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "gouter_ajuster",
+      "action": "Goûtez et ajustez l'assaisonnement si nécessaire.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartinade_melangee"
+      ],
+      "produces": "tartinade_ajustee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez la tartinade sur des toasts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tartinade_ajustee"
+      ],
+      "produces": "tartinade_servie",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tartinade_servie",
+  "originalText": "Tartinade de la mer (végétarienne) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 novembre 2020\nTartinade de la mer (végétarienne)\nAller à la recette\nAujourd’hui, je vous parle de cette recette de tartinade de la mer végétarienne 🙂\nJe trouve que Noël est l’un des moments les plus compliqués pour les végétariens ou ceux qui veulent limiter leur consommation de viande.\nTous nos plats traditionnels sont à base de viande, de poissons et de crustacés. De l’apéro, en passant par les entrées et les plats principaux… Il n’y a finalement que le dessert qui y échappe.\nPour ma part, je continue à manger un peu de viande pendant les fêtes. Mais je trouve que c’est sympa de proposer des plats un peu différents. Et c’est l’occasion idéale de faire découvrir la cuisine végé à nos proches.\nJe ne cuisine plus de viande depuis de nombreuses années mais j’en mange à certaines occasions. Ma petite sœur et mon petit frère sont complètement végétariens.\nMême si les alternatives végé sont peu connues, elles existent et peuvent être tout aussi délicieuses et festives !\nSur le blog, vous trouverez des toasts végé,\ndes petites bouchées de polenta aux champignons caramélisés\n,\ndu pâté vegan\n(tout est regroupé dans\ncet article\n), et maintenant, vous y trouverez aussi cette tartinade de la mer !\nCette tartinade de la mer végétarienne est un pur délice ! Et tous ceux qui y ont goûté ont été conquis !\nJ’ai hâte de savoir ce que vous en avez pensé\n!\nTartinade de la mer (végétarienne)\nNatacha\n4.50\n/5 avec\n125\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n5\nminutes\nmin\nIngrédients\n100\ng\nde tofu fumé bien ferme\n1,5\nfeuilles de nori\n120\ng\nde fromage frais\ntype carré frais ou madame loïc\n1\npetite échalote émincée finement\n1\nc-à-c de câpres hachées\nle jus d’½ citron\n¼\nc-à-c d’aneth séchée\n¼\nc-à-c de paprika fumé\nInstructions\nÉmiettez le tofu entre vos doigts.\nCoupez les feuilles de nori en petits morceaux (à la main ou en les passant rapidement au mixeur).\nMettez le tofu et les algues dans un bol. Ajoutez tous les autre ingrédients et mélangez bien.\nGoûtez et ajustez l’assaisonnement.\nServir sur des toasts !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nApéros\n,\nAutomne\n,\nÉté\n,\nHiver\n,\nPrintemps\n,\nRecettes Salées\nTags:\ncomment cuisiner des algues\n,\nidee recette noel\n,\nidee repas noel\n,\nrecette algue\n,\nrecette algue vegetarien\n,\nrecette de tofu\n,\nrecette mer vegetarien\n,\nrecette noel\n,\nrecette poisson vegetarien\n,\nrecette tartinade vegetarienne\n,\nrillette de la mer vegetarienne\n,\ntartinade végétarienne\n,\ntoast vegetarien\nSapin de Noël aux Fromages à Fondue : l’apéro qui fait fondre tout le monde\nTarte Rustique Poire Pécan\n7 thoughts on “Tartinade de la mer (végétarienne)”\nMarine\ndit :\n9 novembre 2021 à 11 h 43 min\nVégétarienne depuis environ un an et demi, j’ai découvert cette recette l’année dernière à l’approche des fêtes de Noël. J’étais à la recherche d’idées qui me permettraient de rester dans l’esprit « poisson », pour ne pas être totalement à contre-courant du reste de ma famille qui allait manger du saumon. Au final, j’ai tellement aimé cette recette que je l’ai refaite au moins 10 fois depuis décembre 2020, et il était donc grand temps que je laisse un commentaire pour partager ma gratitude.\nMille mercis !\nchargement…\nRépondre\nFree The Pickle\ndit :\n11 novembre 2021 à 10 h 56 min\nOooh merci beaucoup Marine, je suis trop contente que la recette te plaise !!\nchargement…\nRépondre\nChristine\ndit :\n27 décembre 2022 à 21 h 26 min\nFacile à faire, cette recette est un pur délice, un très grand merci !\nchargement…\nRépondre\nAnaïs\ndit :\n3 janvier 2023 à 9 h 16 min\nUn grand merci pour cette délicieuse recette. Le goût est bleufant avec la touche iodée c’est parfait. On s’est régalé !!\nchargement…\nRépondre\nLecomte\ndit :\n28 décembre 2023 à 18 h 29 min\nJe les ai mises en entrée pour Noël, avec des blinis, une rondelle de citron ou des baies roses en deco. C’était délicieux et ça a bluffé ma famille (pas très veggie en général). Merci !\nchargement…\nRépondre\nPauline\ndit :\n29 décembre 2023 à 22 h 27 min\nÀ tomber! C’est exactement ça ! Fait ce Noël et le goût est totalement bleuffant, cela ressemble à un toast saumon fumé) crème/ citron!\nValidé par tous et particulièrement les non végé.\nMerci!!!!\nchargement…\nRépondre\nRodolphe\ndit :\n2 janvier 2024 à 11 h 54 min\nvégétarien depuis 30 ans. Recette délicieuse et facile à faire. Mes invités du Réveillon ont adoré. Une  belle découverte. Je la referai certainement.\nchargement…\nRépondre\n4.50 from 125 votes (\n120 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "recipe_title": "1-Pot Golden Curry Lentil Soup",
+    "overall_score": 8,
+    "summary": "Good overall transcription with minor discrepancies in prep time and ingredient specifications.",
+    "ingredient_corrections": [
+      {
+        "ingredient_id": "serrano_pepper",
+        "field": "unit",
+        "current_value": null,
+        "suggested_value": "small",
+        "reason": "Source specifies '1 small serrano pepper' but JSON has no unit"
+      },
+      {
+        "ingredient_id": "canned_light_coconut_milk",
+        "field": "name",
+        "current_value": "coconut milk",
+        "suggested_value": "canned light coconut milk",
+        "reason": "Source specifically mentions 'canned light coconut milk' but JSON just says 'coconut milk'"
+      },
+      {
+        "ingredient_id": "red_lentils",
+        "field": "preparation",
+        "current_value": "uncooked rinsed",
+        "suggested_value": "uncooked rinsed red or golden",
+        "reason": "Source specifies 'uncooked rinsed red or golden lentils' but JSON only mentions 'uncooked rinsed'"
+      },
+      {
+        "ingredient_id": "carrots",
+        "field": "notes",
+        "current_value": null,
+        "suggested_value": "or sub other sturdy seasonal vegetable",
+        "reason": "Source includes note about substituting other seasonal vegetables like sweet potatoes, parsnips, or pumpkin"
+      }
+    ],
+    "step_corrections": [],
+    "missing_items": [],
+    "metadata_corrections": [
+      {
+        "field": "prepTime",
+        "current_value": "PT10M",
+        "suggested_value": "PT5M",
+        "reason": "Source clearly states 'Prep Time 5 minutes' but JSON has 10 minutes"
+      }
+    ],
+    "culinary_issues": []
+  },
+  {
+    "recipe_title": "Caviar d'Aubergine à la grecque (Vegan et Sans Gluten)",
+    "overall_score": 8,
+    "summary": "Good transcription overall with accurate ingredients and steps, but has timing discrepancies and one missing unit specification.",
+    "ingredient_corrections": [
+      {
+        "ingredient_id": "olive_oil",
+        "field": "unit",
+        "current_value": "tbsp",
+        "suggested_value": "c-à-s",
+        "reason": "Source uses French abbreviation 'c-à-s' (cuillère à soupe) not 'tbsp'"
+      },
+      {
+        "ingredient_id": "lemon_juice",
+        "field": "unit",
+        "current_value": "tbsp",
+        "suggested_value": "c-à-s",
+        "reason": "Source uses French abbreviation 'c-à-s' (cuillère à soupe) not 'tbsp'"
+      },
+      {
+        "ingredient_id": "garlic",
+        "field": "unit",
+        "current_value": "clove",
+        "suggested_value": "gousse",
+        "reason": "Source says '1 gousse d'ail' (French for clove)"
+      },
+      {
+        "ingredient_id": "flatleaf_parsley",
+        "field": "unit",
+        "current_value": "sprig",
+        "suggested_value": "branches",
+        "reason": "Source says '2 branches de persil plat' not 'sprig'"
+      },
+      {
+        "ingredient_id": "dill",
+        "field": "unit",
+        "current_value": "sprig",
+        "suggested_value": "branches",
+        "reason": "Source says '2 branches d'aneth' not 'sprig'"
+      }
+    ],
+    "step_corrections": [
+      {
+        "step_id": "roast_eggplants",
+        "field": "action",
+        "current_value": "35min",
+        "suggested_value": "35-40min",
+        "reason": "Source specifies '35-40min' cooking time range, not just '35min'"
+      }
+    ],
+    "missing_items": [],
+    "metadata_corrections": [
+      {
+        "field": "cookTime",
+        "current_value": "PT35M",
+        "suggested_value": "PT45M",
+        "reason": "Source shows 'Temps de cuisson: 45 minutes' in the recipe card"
+      },
+      {
+        "field": "totalTime",
+        "current_value": "35.0",
+        "suggested_value": "55.0",
+        "reason": "Source shows 'Temps total: 55 minutes' (10 min prep + 45 min cook)"
+      },
+      {
+        "field": "servings",
+        "current_value": "1",
+        "suggested_value": "1 bol",
+        "reason": "Source specifies 'Portions: 1 bol' indicating it makes one bowl of caviar"
+      }
+    ],
+    "culinary_issues": []
+  },
+  {
+    "recipe_title": "One Pot Creamy Cajun Chicken Pasta",
+    "overall_score": 6,
+    "summary": "Good recipe structure but several issues found: incorrect prep time, incomplete final step, and extra optional ingredients not mentioned in source.",
+    "ingredient_corrections": [],
+    "step_corrections": [
+      {
+        "step_id": "simmer_pasta",
+        "field": "action",
+        "current_value": "Once boiling, turn the heat down to medium-low and let the pasta simmer for about 10 minutes, stirring every couple of minutes, until the pasta is tender and the liquid is thick and saucy.",
+        "suggested_value": "Once boiling, turn the heat down to medium-low and let the pasta simmer for about ten minutes, stirring every couple of minutes,",
+        "reason": "Source text cuts off mid-sentence and doesn't include the completion about pasta being tender and liquid being thick and saucy"
+      }
+    ],
+    "missing_items": [
+      {
+        "item_type": "step",
+        "description": "Complete instructions for adding cream cheese and final cooking",
+        "where_in_source": "The source text appears to be cut off after 'Once boiling, turn the heat down to medium-low and let the pasta simmer for about ten minutes, stirring every couple of minutes,'"
+      }
+    ],
+    "metadata_corrections": [
+      {
+        "field": "prepTime",
+        "current_value": "PT15M",
+        "suggested_value": "PT10M",
+        "reason": "Source clearly states 'Prep 10 minutes' not 15 minutes"
+      }
+    ],
+    "culinary_issues": [
+      "The JSON includes optional ingredients (bacon, Parmesan cheese, shrimp) that are mentioned in the source as suggestions but not as actual recipe ingredients. These should either be removed or clearly marked as variations rather than optional ingredients in the main recipe."
+    ]
+  },
+  {
+    "recipe_title": "Risotto Printanier aux Asperges",
+    "overall_score": 1,
+    "summary": "Critical issue: The source text contains no actual recipe content - only a comment 'Délicieux !' and a loading indicator. The entire structured recipe appears to be fabricated or sourced from elsewhere.",
+    "ingredient_corrections": [],
+    "step_corrections": [],
+    "missing_items": [],
+    "metadata_corrections": [
+      {
+        "field": "source_content",
+        "current_value": "Complete recipe with ingredients and instructions",
+        "suggested_value": "Only contains 'Délicieux !' comment",
+        "reason": "The source text provided contains no recipe content whatsoever - just a comment and loading text"
+      }
+    ],
+    "culinary_issues": [
+      "The entire recipe cannot be validated against the source as the source contains no recipe information - only a comment saying 'Délicieux !' and 'chargement…' (loading)"
+    ]
+  },
+  {
+    "recipe_title": "Rouleaux de Printemps Vegan, Sauce Cacahuète-Gingembre (Sans Gluten)",
+    "overall_score": 1,
+    "summary": "Critical issue: The provided source text contains only a comment about honey not being vegan and a loading message. No actual recipe content is available to compare against the structured JSON recipe.",
+    "ingredient_corrections": [],
+    "step_corrections": [],
+    "missing_items": [],
+    "metadata_corrections": [],
+    "culinary_issues": [
+      "Cannot verify recipe accuracy - source text appears to be incomplete or corrupted, containing only 'Le miel n'est pas vegan' (Honey is not vegan) and 'chargement…' (loading...). The entire structured recipe cannot be validated against the source."
+    ]
+  },
+  {
+    "recipe_title": "Tartines Figues Chèvre Miel",
+    "overall_score": 8,
+    "summary": "Very good transcription with only minor issues. The main problems are a missing thyme option in ingredients and incorrect total time calculation.",
+    "ingredient_corrections": [
+      {
+        "ingredient_id": "fresh_thyme",
+        "field": "notes",
+        "current_value": null,
+        "suggested_value": "ou quelques pincées de thym sec",
+        "reason": "Source specifies '2-3 branches de thym frais ou quelques pincées de thym sec' - the dried thyme alternative is missing"
+      }
+    ],
+    "step_corrections": [],
+    "missing_items": [],
+    "metadata_corrections": [
+      {
+        "field": "totalTime",
+        "current_value": "12.0",
+        "suggested_value": "20.0",
+        "reason": "Source clearly states 'Temps total 20 minutes' but JSON shows 12.0 minutes"
+      }
+    ],
+    "culinary_issues": []
+  }
+]

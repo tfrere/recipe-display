@@ -22,12 +22,15 @@ const IngredientItem = ({
         alignItems: "start",
         py: 0.25,
         mb: 0.75,
-        opacity: sortByCategory ? 1 : ingredient.isUnused ? 0.5 : 1,
+        opacity: sortByCategory
+          ? isChecked ? 0.5 : 1
+          : ingredient.isUnused ? 0.5 : 1,
         textDecoration: sortByCategory
-          ? "none"
+          ? isChecked ? "line-through" : "none"
           : ingredient.isUnused
           ? "line-through"
           : "none",
+        transition: "opacity 0.15s, text-decoration 0.15s",
       }}
     >
       {/* Amount with unit */}

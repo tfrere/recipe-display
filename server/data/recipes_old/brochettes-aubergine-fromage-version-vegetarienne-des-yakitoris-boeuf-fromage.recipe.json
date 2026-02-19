@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "title": "Brochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)",
+    "description": "Une version v\u00e9g\u00e9tarienne des yakitoris b\u0153uf-fromage, o\u00f9 l'aubergine remplace la viande pour enrouler des b\u00e2tonnets d'emmental, le tout badigeonn\u00e9 de sauce yakitori.",
+    "servings": 6,
+    "prepTime": "PT15M",
+    "cookTime": "PT19M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "aubergine",
+      "fromage",
+      "brochette",
+      "v\u00e9g\u00e9tarien",
+      "yakitori",
+      "japonais",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-3-of-6.jpg",
+    "nationality": "French-Japanese",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette recette a \u00e9t\u00e9 cr\u00e9\u00e9e pour MonBento.",
+      "Pour compl\u00e9ter le plat, l'auteur conseille de tester les brochettes de boulettes et les brochettes de champignons.",
+      "Ce n'est pas une recette japonaise traditionnelle, on ne la trouverait qu'en France."
+    ],
+    "slug": "brochettes-aubergine-fromage-version-vegetarienne-des-yakitoris-boeuf-fromage",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Yakitoris-Vege-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/02/brochettes-aubergine-fromage/",
+    "image": "images/brochettes-aubergine-fromage-version-vegetarienne-des-yakitoris-boeuf-fromage.webp",
+    "createdAt": "2026-02-09T20:30:06.822731",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 19.0,
+    "totalCookingTime": 7.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 12.9,
+      "protein": 0.7,
+      "fat": 0.0,
+      "carbs": 2.6,
+      "fiber": 0.8,
+      "confidence": "low",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 4,
+      "totalIngredients": 6,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "aubergine",
+      "name": "aubergine",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggplant"
+    },
+    {
+      "id": "emmental",
+      "name": "emmental",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "emmental cheese"
+    },
+    {
+      "id": "sauce_yakitori",
+      "name": "sauce yakitori",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "teriyaki sauce"
+    },
+    {
+      "id": "skewers",
+      "name": "pics \u00e0 brochettes",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "other",
+      "preparation": null,
+      "notes": "petits",
+      "optional": false,
+      "name_en": "skewers"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "vegetable_oil",
+      "name": "huile v\u00e9g\u00e9tale neutre",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "neutral vegetable oil"
+    }
+  ],
+  "tools": [
+    "Mandoline ou couteau bien aiguis\u00e9",
+    "Pinceau de cuisine",
+    "Plaque de cuisson"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": null,
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "slice_eggplant",
+      "action": "A l'aide d'une mandoline ou d'un couteau bien aiguis\u00e9, couper 6 tranches fines dans l'aubergine dans le sens de la longueur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "aubergine"
+      ],
+      "produces": "eggplant_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_slices",
+      "action": "D\u00e9poser les tranches d'aubergines sur une plaque de cuisson recouverte de papier cuisson, sans qu'elles se chevauchent.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggplant_slices"
+      ],
+      "produces": "arranged_eggplant_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "brush_with_sauce",
+      "action": "Verser la sauce yakitori dans un petit bol et, \u00e0 l'aide d'un pinceau, badigeonner les tranches de sauce, sur les deux faces.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_eggplant_slices",
+        "sauce_yakitori"
+      ],
+      "produces": "sauced_eggplant_slices",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_eggplant",
+      "action": "Enfourner \u00e0 mi-hauteur pendant 12min.",
+      "duration": "PT12M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauced_eggplant_slices"
+      ],
+      "produces": "baked_eggplant_slices",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cut_cheese",
+      "action": "Pendant ce temps, couper l'emmental en 6 b\u00e2tonnets \u00e9gaux.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "emmental"
+      ],
+      "produces": "cheese_sticks",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "skewer_cheese",
+      "action": "Piquer chaque b\u00e2tonnet de fromage dans le sens de la longueur avec les pics \u00e0 brochettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cheese_sticks",
+        "skewers"
+      ],
+      "produces": "skewered_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wrap_eggplant",
+      "action": "Sortir les aubergines du four et enrouler une tranche d'aubergine autour de chaque b\u00e2tonnet.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_eggplant_slices",
+        "skewered_cheese"
+      ],
+      "produces": "wrapped_skewers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faire chauffer une po\u00eale \u00e0 feu moyen fort. Verser un filet d'huile v\u00e9g\u00e9tale neutre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "vegetable_oil"
+      ],
+      "produces": "heated_oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "pan_fry_skewers",
+      "action": "Faire revenir les brochettes. Retourner r\u00e9guli\u00e8rement.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "wrapped_skewers",
+        "heated_oiled_pan"
+      ],
+      "produces": "pan_fried_skewers",
+      "requires": [],
+      "visualCue": "fromage commence \u00e0 fondre"
+    },
+    {
+      "id": "brush_with_more_sauce",
+      "action": "Badigeonner les brochettes d'une g\u00e9n\u00e9reuse couche de sauce yakitori.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pan_fried_skewers",
+        "sauce_yakitori"
+      ],
+      "produces": "glazed_skewers",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sprinkle_sesame",
+      "action": "Saupoudrer de graines de s\u00e9same et servir chaud.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "glazed_skewers",
+        "sesame_seeds"
+      ],
+      "produces": "finished_skewers",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "finished_skewers",
+  "originalText": "Brochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n2 ao\u00fbt 2021\nBrochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)\nAll\u00e9, aujourd\u2019hui grosse folie : les yakitoris v\u00e9g\u00e9tariens, et plus pr\u00e9cis\u00e9ment les Brochettes Aubergine-Fromage !\nEt je ne vous publie pas une recette, ni deux recettes, mais bien trois recettes de yakitoris !\nDu coup, je commence par ma recette de brochettes \u00ab\u00a0b\u0153uf-fromage, sans b\u0153uf, avec de l\u2019aubergine \u00e0 la place\u201d.\nJ\u2019ai longuement et longtemps r\u00e9fl\u00e9chi \u00e0 la meilleure fa\u00e7on de remplacer le b\u0153uf dans cette brochette.\nD\u2019ailleurs, vous saviez que ce n\u2019est pas du tout une recette japonaise traditionnelle. Apparemment, on ne la trouve qu\u2019en France. Ce qui para\u00eet assez logique au final. Qui d\u2019autres que les fran\u00e7ais pour mettre de l\u2019emmental \u00e0 toutes les sauces. P\u2019t\u2019\u00eatre les Suisses. Et\u00a0 encore !\nEnfin, tout \u00e7a pour dire, apr\u00e8s beaucoup de r\u00e9flexion, j\u2019ai d\u00e9cid\u00e9 d\u2019utiliser une fine tranche d\u2019aubergine pour enrouler le b\u00e2tonnet de fromage.\nMais avant, je les ai enduites de sauce yakitori. Ensuite un passage au four d\u2019une bonne dizaine de minutes.\nPuis j\u2019ai form\u00e9 les brochettes, et hop \u00e0 la po\u00eale pour une session grillage. Et de nouveau un petit coup de sauce yakitori !\nEt voil\u00e0, le tour est jou\u00e9 ! C\u2019est fait carr\u00e9ment le boulot !\nEt pour compl\u00e9ter votre plat de Brochettes Aubergine-Fromage, je vous conseille de tester les\nbrochettes de boulettes\net les\nbrochettes de champignons\n! Et pour rester dans le th\u00e8me Japonais,\nvoici la recette du Ramen V\u00e9g\u00e9\n\ud83d\ude42\nBrochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)\n4.56\n/5 avec\n38\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n6\nbrochettes\nIngr\u00e9dients\n1x\n2x\n3x\n\u00bd\naubergine\n120\ng\nd\u2019emmental\n3\nc\u00e0s yakitori\n6\npetits pics \u00e0 brochettes\ngraines de s\u00e9same\nInstructions\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nCouvrir une plaque de cuisson avec du papier cuisson.\nA l\u2019aide d\u2019une mandoline ou d\u2019un couteau bien aiguis\u00e9, couper 6 tranches fines dans l\u2019aubergine dans le sens de la longueur.\nD\u00e9poser les tranches d\u2019aubergines sur la plaque, sans qu\u2019elles se chevauchent.\nVerser la sauce yakitori dans un petit bol et, \u00e0 l\u2019aide d\u2019un pinceau, badigeonner les tranches de sauce, sur les deux faces.\nEnfourner \u00e0 mi-hauteur 12min.\nPendant ce temps, couper l\u2019emmental en 6 b\u00e2tonnets \u00e9gaux.\nPiquer chaque b\u00e2tonnet de fromage dans le sens de la longueur avec les pics \u00e0 brochettes.\nSortir les aubergines du four.\nEnrouler une tranche d\u2019aubergine autour de chaque b\u00e2tonnet.\nFaire chauffer une po\u00eale \u00e0 feu moyen fort. Verser un filet d\u2019huile v\u00e9g\u00e9tale neutre et faire revenir les brochettes. Retourner r\u00e9guli\u00e8rement. Quand le fromage commence \u00e0 fondre, badigeonner les brochettes d\u2019une g\u00e9n\u00e9reuse couche de sauce yakitori. La cuisson dure environ 7min.\nSaupoudrer de graines de s\u00e9same et servir chaud.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nCette recette a \u00e9t\u00e9 cr\u00e9\u00e9e pour\nMonBento.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAubergine\n,\n\u00c9t\u00e9\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\naubergine fromage\n,\nbbq sans viande\n,\nbbq v\u00e9g\u00e9\n,\nboeuf fromage\n,\nbrochette sans viande\n,\nbrochette vegetareinne\n,\nbrochette v\u00e9g\u00e9tarienne\n,\nrecette de brochette v\u00e9g\u00e9tarienne\n,\nrecette yakitori\n,\nrecette yakitori vegetarienne\n,\nyakitori\nRamen V\u00e9g\u00e9tarien au Miso et Tahini (Soupe d\u2019inspiration Japonaise)\nBrochettes de Boulettes aux Prot\u00e9ines de Soja Textur\u00e9es (Brochettes Yakitoris V\u00e9g\u00e9taliennes)\n6 thoughts on \u201cBrochettes Aubergine-Fromage (version v\u00e9g\u00e9tarienne des Yakitoris b\u0153uf-fromage)\u201d\nSt\u00e9phane Hoareau\ndit\u00a0:\n9 ao\u00fbt 2021 \u00e0 18 h 59 min\nBonjour, je souhaite vous remercier pour ce blog tr\u00e8s int\u00e9ressant ! Je suis depuis longtemps v\u00e9g\u00e9tarien et j\u2019appr\u00e9cie cette petite recette bien sympathique.\nSi je peux me permettre, voici un petit guide qui m\u2019a permis de m\u2019y mettre s\u00e9rieusement :\nhttps://bit.ly/MonGuideV\u00e9g\u00e9tarien\n.\nJ\u2019esp\u00e8re qu\u2019en vous le partageant je vous aiderais \u00e0 vous y mettre !\nSt\u00e9phane H.\nchargement\u2026\nR\u00e9pondre\ncalinhorely\ndit\u00a0:\n11 ao\u00fbt 2021 \u00e0 16 h 21 min\nG\u00e9nial ! Je vais tester en version v\u00e9gane ! J\u2019adore l\u2019id\u00e9e ! Merci du partage !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n16 ao\u00fbt 2021 \u00e0 15 h 09 min\navec plaisir !\nchargement\u2026\nR\u00e9pondre\nNeva\ndit\u00a0:\n28 ao\u00fbt 2021 \u00e0 23 h 05 min\nCette recette est g\u00e9niale ! Merci merci !!! On s\u2019est r\u00e9gal\u00e9s !\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 ao\u00fbt 2021 \u00e0 16 h 15 min\nOooh merci pour ce commentaire !\nchargement\u2026\nR\u00e9pondre\nSandrine\ndit\u00a0:\n17 avril 2023 \u00e0 19 h 50 min\nJuste d\u00e9licieux. J\u2019adore les Yakitoris classiques, depuis que ma fille est v\u00e9g\u00e9tarienne on s\u2019adapte et nous aussi diminuons notre consommation de viande . Cette recette mets tout le monde d\u2019accord \ud83d\udc4d\nchargement\u2026\nR\u00e9pondre\n4.56 from 38 votes (\n36 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

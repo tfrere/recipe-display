@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Tarte fine courgettes, olives et feta : la recette express qui r\u00e9gale en 10 minutes chrono",
+    "description": "Une tarte fine, croustillante, pr\u00e9par\u00e9e en 10 minutes avec 4 ingr\u00e9dients, parfaite pour un repas l\u00e9ger et ensoleill\u00e9.",
+    "servings": 4,
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "tarte",
+      "courgette",
+      "olive",
+      "feta",
+      "express",
+      "v\u00e9g\u00e9tarien",
+      "p\u00e2te feuillet\u00e9e",
+      "four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/tarte-fine-courgettes-olives-et-feta-free-the-pickle.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Servez chaud ou ti\u00e8de avec une salade.",
+      "Le secret pour d\u00e9cliner cette tarte \u00e0 l'infini : remplacer la tapenade par du pesto, du houmous, une tartinade de poivrons rouges, ou un caviar d'aubergines."
+    ],
+    "slug": "tarte-fine-courgettes-olives-et-feta-la-recette-express-qui-regale-en-10-minutes-chrono",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/tarte-fine-courgettes-olives-et-feta-free-the-pickle.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/05/30/tarte-fine-courgettes-olives-et-feta/",
+    "image": "images/tarte-fine-courgettes-olives-et-feta-la-recette-express-qui-regale-en-10-minutes-chrono.webp",
+    "createdAt": "2026-02-09T22:53:00.790666",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 25.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 63.4,
+      "protein": 3.7,
+      "fat": 4.0,
+      "carbs": 3.8,
+      "fiber": 1.0,
+      "confidence": "low",
+      "resolvedIngredients": 2,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "courgettes",
+      "name": "courgettes",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Zucchini"
+    },
+    {
+      "id": "pate_feuilletee",
+      "name": "p\u00e2te feuillet\u00e9e",
+      "quantity": 1.0,
+      "unit": "rouleau",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "puff pastry"
+    },
+    {
+      "id": "tapenade",
+      "name": "tapenade",
+      "quantity": 150.0,
+      "unit": "g",
+      "category": "condiment",
+      "preparation": null,
+      "notes": "verte ou noire",
+      "optional": false,
+      "name_en": "olive spread"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "huile_dolive",
+      "name": "Huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "origan",
+      "name": "Origan s\u00e9ch\u00e9",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    }
+  ],
+  "tools": [
+    "Mandoline",
+    "Plaque allant au four"
+  ],
+  "steps": [
+    {
+      "id": "slice_courgettes",
+      "action": "\u00c0 l'aide d'une mandoline, d\u00e9coupez les courgettes en fines rondelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "courgettes"
+      ],
+      "produces": "sliced_courgettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_tapenade",
+      "action": "D\u00e9roulez la p\u00e2te feuillet\u00e9e sur une plaque allant au four. Tartinez-la de tapenade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_feuilletee",
+        "tapenade"
+      ],
+      "produces": "tapenade_spread_pastry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "assemble_tart",
+      "action": "Disposez les rondelles de courgettes sur la tapenade, en les chevauchant l\u00e9g\u00e8rement. \u00c9miettez la feta sur le dessus, saupoudrez d'un peu d'origan, puis arrosez d'un filet d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tapenade_spread_pastry",
+        "sliced_courgettes",
+        "feta",
+        "origan",
+        "huile_dolive"
+      ],
+      "produces": "assembled_tart",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_tart",
+      "action": "Enfournez pour 25min.",
+      "duration": "PT25M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "assembled_tart"
+      ],
+      "produces": "baked_tart",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez chaud ou ti\u00e8de avec une salade.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_tart"
+      ],
+      "produces": "tarte_fine_courgettes_olives_feta",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_fine_courgettes_olives_feta",
+  "originalText": "Tarte fine Courgettes Olives et Feta | Recette Express 4 Ingr\u00e9dients\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n30 mai 2025\nTarte fine courgettes, olives et feta : la recette express qui r\u00e9gale en 10 minutes chrono\nEnvie d\u2019une\nrecette rapide\navec\n4 ingr\u00e9dients\n? Notre\ntarte fine courgettes, olives et feta\nest un vrai petit bonheur du quotidien. On la pr\u00e9pare en\n10 minutes\n, elle part direct au\nfour\n, et hop, \u00e0\ntable\n! C\u2019est\nLA recette facile\npour les soirs press\u00e9s.\nFine\n,\ncroustillante\n, elle coche toutes les cases d\u2019un\nrepas l\u00e9ger\net\nensoleill\u00e9\n. Vous allez l\u2019adopter pour vos\nmenus express\nde la semaine, promis. Et restez bien jusqu\u2019au bout, on va m\u00eame vous d\u00e9voiler une\nastuce\npour la varier \u00e0 l\u2019infini !\nTable des mati\u00e8res\n1\nLa tarte fine qui r\u00e9gale sans prise de t\u00eate\n2\nComment accompagner votre tarte fine pour un repas complet\n3\nTarte fine courgettes, olives et feta (4 ingr\u00e9dients)\n4\nDes ingr\u00e9dients simples, bons pour vous et votre assiette\n5\nLe secret pour d\u00e9cliner cette tarte \u00e0 l\u2019infini\nLa tarte fine qui r\u00e9gale sans prise de t\u00eate\nVous avez 10 minutes ? Parfait. Cette tarte fine courgettes, olives et feta ne vous demandera pas plus. On d\u00e9roule la p\u00e2te, on tartine, on d\u00e9pose les rondelles de courgette, quelques olives, de la feta \u00e9miett\u00e9e\u2026 et zou, au four pour 25 minutes. Pas besoin de robot, pas besoin de se prendre la t\u00eate : c\u2019est la recette express par excellence. En entr\u00e9e styl\u00e9e ou en plat principal accompagn\u00e9 d\u2019une salade compos\u00e9e, elle fait toujours son petit effet. Le genre de recette facile qu\u2019on refait sans m\u00eame y penser, encore et encore.\nVous avez aim\u00e9 les tartes ? (Les gourmandes, bien s\u00fbr \ud83d\ude09 !) Alors, avant de filer, d\u00e9couvrez d\u2019autres recettes qui vont vous faire fondre. Essayez la\ntarte fine tomate halloumi\n, pour un instant frais et gourmand. Envie d\u2019un classique revisit\u00e9 ? La\ntarte soleil aux \u00e9pinards et ricotta\nest un vrai coup de c\u0153ur. Et pour un twist printanier, laissez-vous tenter par la\ntarte fine asperges burrata\n, l\u00e9g\u00e8re et pleine de pep\u2019s.\nComment accompagner votre tarte fine pour un repas complet\nCette tarte fine courgettes, olives et feta se pr\u00eate \u00e0 tous les plaisirs ! Servez-la en entr\u00e9e l\u00e9g\u00e8re ou en plat principal pour un repas \u00e9quilibr\u00e9. Pour compl\u00e9ter, rien de mieux qu\u2019une salade compos\u00e9e pleine de fra\u00eecheur et de pep\u2019s. On vous recommande la\nsalade de fenouil, roquette et parmesan\n, parfaite pour r\u00e9veiller les papilles. Ou bien, craquez pour la\nsalade de chou kale, miel et cacahu\u00e8tes\npour une touche sucr\u00e9e-sal\u00e9e irr\u00e9sistible. Et pour un combo tout en douceur, la\nsalade c\u00e9leri-rave, pomme et miel\nsera votre alli\u00e9e parfaite. Avec \u00e7a, vos repas deviennent un vrai festival de saveurs et de couleurs !\nTarte fine courgettes, olives et feta (4 ingr\u00e9dients)\n4.51\n/5 avec\n67\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n25\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\ncourgettes\n1\nrouleau de p\u00e2te feuillet\u00e9e\n150\ng\nde tapenade\nverte ou noire\n70\ng\nde feta\nHuile d\u2019olive\nOrigan s\u00e9ch\u00e9\nInstructions\nPr\u00e9chauffez le four \u00e0 190\u00b0C.\n\u00c0 l\u2019aide d\u2019une mandoline, d\u00e9coupez les courgettes en fines rondelles.\nD\u00e9roulez la p\u00e2te feuillet\u00e9e sur une plaque allant au four. Tartinez-la de tapenade.\nDisposez les rondelles de courgettes sur la tapenade, en les chevauchant l\u00e9g\u00e8rement. \u00c9miettez la feta sur le dessus, saupoudrez d\u2019un peu d\u2019origan, puis arrosez d\u2019un filet d\u2019huile d\u2019olive.\nEnfournez pour 25 minutes.\nServez chaud ou ti\u00e8de avec une salade.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nDes ingr\u00e9dients simples, bons pour vous et votre assiette\nOn joue la simplicit\u00e9 avec des ingr\u00e9dients qui ont du go\u00fbt et du caract\u00e8re. Les courgettes, l\u00e9g\u00e8res et pleines de fibres, apportent fra\u00eecheur et douceur \u00e0 la tarte. La p\u00e2te feuillet\u00e9e, c\u2019est le croustillant r\u00e9confortant qu\u2019on adore (et qui fait tout le boulot). La tapenade, verte ou noire, donne ce petit coup de pep\u2019s m\u00e9diterran\u00e9en, riche en bons gras gr\u00e2ce aux olives. La feta, sal\u00e9e et cr\u00e9meuse, ajoute une belle touche de caract\u00e8re tout en apportant calcium et prot\u00e9ines. Enfin, un filet d\u2019huile d\u2019olive et un peu d\u2019origan s\u00e9ch\u00e9 compl\u00e8tent le tout pour une explosion de saveurs ensoleill\u00e9es.\nComme nous, vous \u00eates des fans inconditionnels de feta (on ne vous juge pas, on est pareils) ?\nAlors, foncez d\u00e9couvrir ces p\u00e9pites :\nLes\ngalettes petits pois menthe feta\npour une explosion de fra\u00eecheur.\nLa\ncourge butternut hasselback \u00e0 la feta\n, parfaite pour \u00e9pater en douceur.\nLes\nartichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\npour un go\u00fbt d\u2019\u00e9t\u00e9 en bouche.\nEt parce qu\u2019une obsession ne suffit jamais, d\u00e9couvrez vite notre deuxi\u00e8me livre de recettes v\u00e9g\u00e9tariennes rempli de recettes \u00e0 la feta et bien plus encore :\nObsessions feta\n!\nLe secret pour d\u00e9cliner cette tarte \u00e0 l\u2019infini\nLe vrai secret de cette tarte fine courgettes, olives et feta ? C\u2019est votre cr\u00e9ativit\u00e9 ! Avec cette recette simple, vous pouvez la personnaliser \u00e0 l\u2019envie et recycler vos restes. Remplacez la tapenade par du\npesto\n, du\nhoumous\n, une\ntartinade de poivrons rouges\n, ou m\u00eame un\ncaviar d\u2019aubergines\n. Chaque variante offre une nouvelle explosion de saveurs, toujours facile et rapide \u00e0 r\u00e9aliser. Alors, pr\u00eats \u00e0 transformer cette tarte en un vrai cam\u00e9l\u00e9on gourmand ?\nEnvie d\u2019ajouter encore plus de pep\u2019s \u00e0 votre tarte fine ? D\u00e9couvrez nos recettes de tartinades maison pour varier les plaisirs : le\npesto aux fanes de radis\n, la\ntartinade d\u2019artichauts vegan\n, et bien s\u00fbr, notre incontournable\ntapenade d\u2019olives vertes vegan\n! Ces petites merveilles feront de votre tarte un v\u00e9ritable festival de saveurs.\nAlors, vous aussi vous craquez pour cette tarte fine courgettes, olives et feta ? Rapide, simple et pleine de peps, elle devient vite un r\u00e9flexe du quotidien. Et avec notre astuce tartinade, vous ne vous en lasserez jamais. Suivez notre blog pour ne rien manquer et inscrivez-vous \u00e0 notre newsletter pour recevoir toutes nos recettes faciles directement dans votre bo\u00eete mail ! On se retrouve tr\u00e8s vite pour une nouvelle recette facile\u2026 toujours sans prise de chou !\nVous adorez les tartes, quiches et tourtes ? Explorez toutes nos recettes gourmandes, faciles et v\u00e9g\u00e9tariennes pour r\u00e9galer toute la famille ! D\u00e9couvrez-les vite ici :\nQuiches, tartes et tourtes\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nBrunch Sal\u00e9\n,\nCourgette\n,\nPlats & Accompagnements\n,\nPlats au Four\n,\nQuiches et Tartes\n,\nRecettes par L\u00e9gume\n,\nRecettes Sal\u00e9es\nBrochettes de pleurotes \u00e0 la plancha : recette rapide pour pimper vos barbecues vegan\nF\u00e8ves enti\u00e8res fa\u00e7on chermoula : une recette anti-gaspi, pleine de fra\u00eecheur\n2 thoughts on \u201cTarte fine courgettes, olives et feta : la recette express qui r\u00e9gale en 10 minutes chrono\u201d\nFradom\ndit\u00a0:\n30 mai 2025 \u00e0 12 h 44 min\nMerci pour cette recette qui fait l\u2019unanimit\u00e9 \u00e0 la maison. Top !\nchargement\u2026\nR\u00e9pondre\nBosha\ndit\u00a0:\n2 juin 2025 \u00e0 17 h 29 min\nR\u00e9aliser ce week-end, Extra, l\u00e9ger et d\u00e9licieux, j\u2019ai juste mis du houmous \u00e0 la place de la tapenade d\u2019olive verte, car je venais d\u2019en faire et puis cela apporte un peu de prot\u00e9ines \u2026  Simple et rapide \u00e0 faire, la prochaine fois, je la ferai plus grande, pour avoir des restes, je suis s\u00fbre qu\u2019au petit-d\u00e9jeuner cela doit \u00eatre fameux \u2026\nEncore une belle recette \u00e0 conserver, Bravo et Merci\nchargement\u2026\nR\u00e9pondre\n4.51 from 67 votes (\n65 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

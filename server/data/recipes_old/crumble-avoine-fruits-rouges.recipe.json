@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "title": "Crumble Avoine Fruits Rouges",
+    "description": "Le crumble est un dessert simple et gourmand \u00e0 d\u00e9cliner \u00e0 l'infini ! Ici, il est r\u00e9alis\u00e9 avec des fruits rouges de saison et avec un crumble agr\u00e9ment\u00e9 d'avoine qui fonctionne tr\u00e8s bien.",
+    "servings": 8,
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "avoine",
+      "fraises",
+      "framboise",
+      "myrtille",
+      "dessert fruit\u00e9",
+      "tapioca",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/crumble-fruits-rouge-1-of-3-1.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "A servir accompagn\u00e9 d'une belle boule de glace ou une quenelle de fromage blanc/yaourt grec.",
+      "Vous pouvez le d\u00e9guster ti\u00e8de ou froid.",
+      "Recette inspir\u00e9e de Linda Lomelino, adapt\u00e9e."
+    ],
+    "slug": "crumble-avoine-fruits-rouges",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/05/crumble-fruits-rouge-1-of-3-1.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/05/24/crumble-avoine-fruits-rouges/",
+    "image": "images/crumble-avoine-fruits-rouges.webp",
+    "createdAt": "2026-02-09T20:20:56.540566",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 440.2,
+      "protein": 3.1,
+      "fat": 13.3,
+      "carbs": 72.7,
+      "fiber": 10.1,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 8,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flocons_avoine",
+      "name": "flocons d'avoine",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oat flakes"
+    },
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 90.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "sucre_non_raffine",
+      "name": "sucre non raffin\u00e9",
+      "quantity": 60.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "unrefined sugar"
+    },
+    {
+      "id": "bicarbonate_soude",
+      "name": "bicarbonate de soude",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking soda"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "beurre",
+      "name": "beurre",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e0 temp\u00e9rature ambiante",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "fruits_rouges",
+      "name": "fruits rouges",
+      "quantity": 600.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": "fraises, framboises, myrtilles",
+      "optional": false,
+      "name_en": "red berries"
+    },
+    {
+      "id": "sucre",
+      "name": "sucre",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 ajuster en fonction des fruits utilis\u00e9s",
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "tapioca",
+      "name": "tapioca express",
+      "quantity": 4.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "instant tapioca"
+    },
+    {
+      "id": "vanille_poudre",
+      "name": "vanille en poudre",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla powder"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 gratin ou plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "melanger_ingredients_secs",
+      "action": "M\u00e9langer les flocons d'avoine, la farine, le sucre non raffin\u00e9, le bicarbonate et le sel dans un saladier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "crumble",
+      "uses": [
+        "flocons_avoine",
+        "farine",
+        "sucre_non_raffine",
+        "bicarbonate_soude",
+        "sel"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "sabler_beurre",
+      "action": "Ajouter le beurre en morceaux et sabler jusqu'\u00e0 obtenir une p\u00e2te friable. R\u00e9server au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "crumble",
+      "uses": [
+        "melange_sec",
+        "beurre"
+      ],
+      "produces": "pate_crumble",
+      "requires": [],
+      "visualCue": "p\u00e2te friable"
+    },
+    {
+      "id": "preparer_fruits",
+      "action": "Laver et couper les fruits (si n\u00e9cessaire) et les mettre dans un saladier. Ajouter le sucre, le tapioca et la vanille en poudre, m\u00e9langer d\u00e9licatement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "fruits_rouges",
+        "sucre",
+        "tapioca",
+        "vanille_poudre"
+      ],
+      "produces": "fruits_assaisones",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "prechauffer_four",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [],
+      "produces": "four_prechauffe",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_fruits_moule",
+      "action": "Verser les fruits dans le moule et r\u00e9partir le crumble sur toute la garniture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "fruits_assaisones",
+        "pate_crumble"
+      ],
+      "produces": "crumble_assemblage",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_four",
+      "action": "Enfourner et cuire pendant 30min.",
+      "duration": "PT30M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "crumble_assemblage"
+      ],
+      "produces": "crumble_cuit",
+      "requires": [
+        "four_prechauffe"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "refroidir",
+      "action": "Retirer du four et laisser refroidir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "crumble_cuit"
+      ],
+      "produces": "crumble_refroidi",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "crumble_refroidi",
+  "originalText": "Crumble Avoine Fruits Rouges (Simple et Gourmand) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n24 mai 2021\nCrumble Avoine Fruits Rouges\nAcc\u00e9der directement \u00e0 la recette\nParmi mes desserts pr\u00e9f\u00e9r\u00e9s \u00e0 faire avec des fruits rouges il y a les crumbles et les\npies\n. Les crumbles pour le c\u00f4t\u00e9 pratique et gourmand. Les pies pour leur c\u00f4t\u00e9 graphique et encore plus gourmand (ahah). Pour ce crumble avoine fruits rouges, je me suis inspir\u00e9e d\u2019une recette de\nLinda Lomelino\nque j\u2019ai l\u00e9g\u00e8rement adapt\u00e9e \u00e0 mon go\u00fbt. J\u2019adore l\u2019id\u00e9e d\u2019agr\u00e9menter le crumble avec de l\u2019avoine, \u00e7a lui donne un petit c\u00f4t\u00e9 granola. Ici, j\u2019utilise du tapioca \u00e0 la place de la f\u00e9cule de ma\u00efs. Avec le tapioca, on obtient une garniture bien agglom\u00e9r\u00e9e presque comme une confiture (miiouuum).\nSur ces photos, vous pouvez apercevoir les petites assiettes en forme de fleur de\nJasmine Ceramics\n. Elles \u00e9taient parfaites pour accueillir ce crumble avoine fruits rouges. C\u2019est mon gros coup de c\u0153ur du mois dernier. Ses cr\u00e9ations sont originales, esth\u00e9tiques, de vraies petites \u0153uvres d\u2019art, le tout \u00e0 utiliser au quotidien. Ses mugs sont trop canons, bon apr\u00e8s j\u2019ai des petits soucis d\u2019addiction aux mugs. J\u2019en ai tellement que je ne sais plus ou les mettre\u2026 Peu importe, je sais d\u00e9j\u00e0 quel mug je veux lors de la prochaine vente (hehe).\nSi cette recette vous plait, vous devriez aimer la recette des\ncrumbars aux fruits rouges\n, ainsi que le\ncrumble pomme miel et noix de p\u00e9can\n, ou encore le\ncrumble aux coings\n(plus saisonnier).\nCrumble Avoine Fruits Rouges\nDaniela\nLe crumble est un dessert simple et gourmand \u00e0 d\u00e9cliner \u00e0 l\u2019infini ! Ici, il est r\u00e9alis\u00e9 avec des fruits rouges de saison et avec un crumble agr\u00e9ment\u00e9 d\u2019avoine qui fonctionne tr\u00e8s bien. A servir accompagner d\u2019une belle boule de glace ou une quenelle de fromage blanc/yaourt grec.\n4.48\n/5 avec\n61\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nCrumble\n70\ng\nde flocons d\u2019avoine\n90\ng\nde farine\n60\ng\nde sucre non raffin\u00e9\n\u00bc\nc\u00e0c de bicarbonate de soude\n\u00bc\nc\u00e0c de sel\n125\ng\nde beurre \u00e0 temp\u00e9rature ambiante\nGarniture\n600\ng\nde fruits rouges\nici fraises, framboises et myrtilles\n50\ng\nde sucre\n\u00e0 ajuster en fonction des fruits utilis\u00e9s\n4\nc\u00e0s de tapioca\nexpress\n\u00bc\nc\u00e0c de vanille en poudre\nInstructions\nM\u00e9langer les flocons d\u2019avoine, la farine, le sucre, le bicarbonate et le sel dans un saladier.\nAjouter le beurre en morceaux et sabler jusqu\u2019\u00e0 obtenir une p\u00e2te friable. R\u00e9server au frais.\nLaver et couper les fruits (si n\u00e9cessaire) et les mettre dans un saladier. Ajouter le sucre, le tapioca et la vanille en poudre, m\u00e9langer d\u00e9licatement.\nPr\u00e9chauffer le four \u00e0 200\u00b0C.\nVerser les fruits dans le moule et r\u00e9partir le crumble sur toute la garniture.\nEnfourner et cuire pendant 30 min. Retirer du four et laisser refroidir. Vous pouvez le d\u00e9guster ti\u00e8de ou froid, seul ou accompagn\u00e9 d\u2019une belle boule de glace vanille.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\n\u00c9t\u00e9\n,\nFraise\n,\nFramboise\n,\nMyrtille\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\n,\nTartes et Galettes\nTags:\navoine\n,\nfraises\n,\nid\u00e9e de dessert fruit\n,\ntapioca\nOrzotto aux Asperges Vertes, Courgettes et Citron\nKinder D\u00e9lice Sans Gluten\n4.48 from 61 votes (\n61 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

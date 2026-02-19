@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "title": "Gombos en sauce tomate \u00e0 la grecque (Bami\u00e8s giachn\u00ed \u2013 \u03bc\u03c0\u03ac\u03bc\u03b9\u03b5\u03c2 \u03b3\u03b9\u03b1\u03c7\u03bd\u03af)",
+    "description": "Les gombos en sauce tomate \u00e0 la grecque, c'est pour nous bien plus qu'une simple recette. C'est un souvenir de famille. C'est une recette simple, v\u00e9g\u00e9tale et pleine de soleil, parfaite \u00e0 partager.",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT42M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "greek",
+      "okra",
+      "tomato",
+      "stew",
+      "summer",
+      "vegetarian",
+      "vegan"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/09/gombos-en-sauce-tomate-a-la-grecque-recette-freethepickle-.jpg",
+    "nationality": "Greek",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "C'est encore meilleur le lendemain !",
+      "D\u00e9gustez ti\u00e8de avec de la f\u00eata, du pain ou du riz.",
+      "Le secret, c'est de les cuisiner entiers et de ne pas trop les manipuler."
+    ],
+    "slug": "gombos-en-sauce-tomate-a-la-grecque-bamies-giachni-mpamies-giakhni",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/09/gombos-en-sauce-tomate-a-la-grecque-recette-freethepickle-.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/09/17/gombos-en-sauce-tomate-a-la-grecque/",
+    "image": "images/gombos-en-sauce-tomate-a-la-grecque-bamies-giachni-mpamies-giakhni.webp",
+    "createdAt": "2026-02-09T23:07:05.712119",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 42.0,
+    "totalCookingTime": 12.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 112.2,
+      "protein": 8.8,
+      "fat": 1.1,
+      "carbs": 21.3,
+      "fiber": 6.1,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "okra",
+      "name": "gombos",
+      "quantity": 1.0,
+      "unit": "kg",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "mushrooms"
+    },
+    {
+      "id": "onions",
+      "name": "oignons",
+      "quantity": 2.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "2-3 oignons",
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "tomatoes",
+      "name": "tomate en conserve ou fra\u00eeches",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned or fresh tomatoes"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "cinnamon",
+      "name": "cannelle",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cinnamon"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "trim_okra",
+      "action": "\u00c9queutez les gombos.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "okra"
+      ],
+      "produces": "trimmed_okra",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chop_onions",
+      "action": "Hachez tr\u00e8s finement les oignons.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "onions"
+      ],
+      "produces": "chopped_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_pan",
+      "action": "Faites chauffer une casserole avec un fond g\u00e9n\u00e9reux d'huile d'olive.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "heated_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onions",
+      "action": "Faites y revenir les oignons pendant 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_onions",
+        "heated_oil"
+      ],
+      "produces": "sauteed_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_okra",
+      "action": "Ajoutez les gombos et faites revenir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "trimmed_okra",
+        "sauteed_onions"
+      ],
+      "produces": "sauteed_okra_onions",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomatoes_water",
+      "action": "Ajoutez les tomates et versez de l'eau \u00e0 hauteur.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "tomatoes",
+        "water",
+        "sauteed_okra_onions"
+      ],
+      "produces": "okra_tomato_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_spices",
+      "action": "Ajoutez la cannelle, l'origan et le sel.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cinnamon",
+        "oregano",
+        "salt",
+        "okra_tomato_mixture"
+      ],
+      "produces": "seasoned_stew",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer",
+      "action": "Remuez et laissez mijoter \u00e0 couvert pendant 30min.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_stew"
+      ],
+      "produces": "gombos_sauce_tomate_grecque",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "gombos_sauce_tomate_grecque",
+  "originalText": "Gombos en Sauce Tomate \u00e0 la Grecque | Recette Facile Parfum\u00e9e\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n17 septembre 2025\nGombos en sauce tomate \u00e0 la grecque (Bami\u00e8s giachn\u00ed \u2013 \u03bc\u03c0\u03ac\u03bc\u03b9\u03b5\u03c2 \u03b3\u03b9\u03b1\u03c7\u03bd\u03af)\nLes\ngombos en sauce tomate \u00e0 la grecque\n, c\u2019est pour nous bien plus qu\u2019une\nsimple recette\n. C\u2019est un\nsouvenir de famille\n. Natacha la tient de sa m\u00e8re, qui pr\u00e9parait souvent ce\nplat\n\u00e0 la maison,\nmijot\u00e9\ndoucement dans une\nsauce tomate parfum\u00e9e\net g\u00e9n\u00e9reusement arros\u00e9e d\u2019\nhuile d\u2019olive\n. C\u2019est une\nrecette simple,\nv\u00e9g\u00e9tale\net pleine de soleil, parfaite \u00e0 partager. Avec du\npain\n, du\nriz\nou un peu de\nfeta\n, les\ngombos en sauce tomate \u00e0 la grecque\ndeviennent un\nplat complet\net\nr\u00e9confortant\n, encore meilleur le lendemain.\nTable des mati\u00e8res\n1\nUne recette de famille \u00e0 la grecque\n2\nOkra, gombos, bami\u00e8s\u2026 mais toujours le m\u00eame l\u00e9gume !\n3\nGombos en sauce tomate \u00e0 la grecque (Bami\u00e8s giachn\u00ed \u2013 \u03bc\u03c0\u03ac\u03bc\u03b9\u03b5\u03c2 \u03b3\u03b9\u03b1\u03c7\u03bd\u03af)\n4\nUn l\u00e9gume voyageur au fil des saisons\n5\nLa fameuse texture des gombos : gluante ou fondante ?\n6\nComment d\u00e9guster les gombos en sauce tomate ?\nUne recette de famille \u00e0 la grecque\nCette recette de gombos mijot\u00e9s en sauce tomate \u00e0 l\u2019huile d\u2019olive, Natacha la tient de sa m\u00e8re. En Gr\u00e8ce, on appelle \u00e7a le\ngiachn\u00ed\n, une m\u00e9thode de cuisson tr\u00e8s populaire qui consiste \u00e0 faire mijoter les l\u00e9gumes doucement dans une sauce tomate parfum\u00e9e et g\u00e9n\u00e9reusement arros\u00e9e d\u2019huile d\u2019olive. C\u2019est une cuisine simple, familiale et pleine de chaleur, qui met vraiment en valeur les l\u00e9gumes de saison.\nSi, comme nous, vous adorez ces plats mijot\u00e9s \u00e0 la grecque, laissez-vous tenter aussi par nos\ncourgettes \u00e0 la sauce tomate \u00e0 la grecque\nou encore nos\naubergines \u00e0 la sauce tomate \u00e0 la grecque\n. Des recettes simples, parfum\u00e9es et pleines de soleil, \u00e0 partager sans mod\u00e9ration !\nOkra, gombos, bami\u00e8s\u2026 mais toujours le m\u00eame l\u00e9gume !\nCe l\u00e9gume tendre et allong\u00e9, on l\u2019appelle diff\u00e9remment selon les r\u00e9gions :\nokra\nen anglais,\nbamya\nen Turquie,\nladies\u2019 fingers\nen Inde,\ngombos\nen Afrique francophone ou encore\nbami\u00e8s\nen Gr\u00e8ce. Mais derri\u00e8re tous ces noms se cache bien le m\u00eame l\u00e9gume ! Facilement reconnaissable \u00e0 sa petite forme effil\u00e9e et pointue, il est utilis\u00e9 dans de nombreuses cuisines du monde, de la M\u00e9diterran\u00e9e jusqu\u2019\u00e0 l\u2019Asie et l\u2019Afrique. Le combo a un c\u00f4t\u00e9 universel avec des dizaines de mani\u00e8res de le cuisiner.\nGombos en sauce tomate \u00e0 la grecque (Bami\u00e8s giachn\u00ed \u2013 \u03bc\u03c0\u03ac\u03bc\u03b9\u03b5\u03c2 \u03b3\u03b9\u03b1\u03c7\u03bd\u03af)\n4.55\n/5 avec\n73\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n1\nkg\nde gombos\naussi appel\u00e9s okras ou bami\u00e8s\n2-3\noignons\nhuile d\u2019olive\n400\ng\nde tomate en conserve ou fra\u00eeches\neau\nune pinc\u00e9e de cannelle\n1\ncac d\u2019origan\nSel\nInstructions\n\u00c9queutez les gombos.\nHachez tr\u00e8s finement les oignons (vous pouvez les passer au mixeur pour aller plus vite).\nFaites chauffer une casserole avec un fond g\u00e9n\u00e9reux d\u2019huile d\u2019olive.\nFaites y revenir les oignons pendant 7-8min puis ajoutez les gombos.\nFaites revenir 5min.\nAjoutez les tomates et versez de l\u2019eau \u00e0 hauteur.\nAjoutez la cannelle, l\u2019origan et le sel.\nRemuez et laissez mijoter \u00e0 couvert pendant env 30min.\nD\u00e9gustez ti\u00e8de avec de la f\u00eata, du pain ou du riz.\nC\u2019est encore meilleur le lendemain !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nUn l\u00e9gume voyageur au fil des saisons\nLes gombos poussent surtout sous les climats chauds. On les retrouve en Gr\u00e8ce, mais aussi en Turquie, au Moyen-Orient, en Inde, en Afrique et jusqu\u2019aux Cara\u00efbes. C\u2019est un l\u00e9gume estival par excellence, qui adore la chaleur et le soleil. En France, on peut parfois en trouver frais sur les march\u00e9s en \u00e9t\u00e9, et chez certains primeurs. Vous pouvez aussi les acheter en surgel\u00e9s ou en conserve pour en profiter toute l\u2019ann\u00e9e.\nSi, comme nous, vous aimez explorer la cuisine grecque, ne manquez pas nos autres recettes comme les\nfleurs de courgettes farcies (yemista)\n, la\npita grecque aux blettes\nou encore les\ngalettes de courgettes \u00e0 la grecque\n.\nLa fameuse texture des gombos : gluante ou fondante ?\nOn ne va pas se mentir\u2026 Les gombos ont une r\u00e9putation un peu particuli\u00e8re \u00e0 cause de leur texture l\u00e9g\u00e8rement gluante. C\u2019est surtout vrai si on les coupe en morceaux ou si on les cuit trop longtemps. Cette substance visqueuse, qu\u2019on appelle \u201cmucilage\u201d, est en r\u00e9alit\u00e9 naturelle et m\u00eame riche en fibres solubles. Elle peut surprendre, mais c\u2019est aussi ce qui rend les plats aux gombos si onctueux et r\u00e9confortants. Le secret, c\u2019est de les cuisiner entiers et de ne pas trop les manipuler. Ainsi, ils gardent leur forme, deviennent tendres, et se marient parfaitement avec la sauce tomate et les herbes. R\u00e9sultat : un plat fondant et parfum\u00e9, sans exc\u00e8s de \u201cgluant\u201d.\nComment d\u00e9guster les gombos en sauce tomate ?\nLes gombos en sauce tomate \u00e0 la grecque se savourent g\u00e9n\u00e9ralement ti\u00e8des, bien impr\u00e9gn\u00e9s de leur sauce parfum\u00e9e. Le combo gagnant ? Les accompagner d\u2019un morceau de feta bien sal\u00e9e, d\u2019un pain croustillant ou d\u2019un bol de riz pour en faire un plat complet. On peut aussi les servir en mezze, aux c\u00f4t\u00e9s d\u2019autres pr\u00e9parations grecques. Et comme souvent avec les plats mijot\u00e9s, c\u2019est encore meilleur le lendemain.\nSi vous aimez les repas \u00e0 partager. Servez vos gombos en sauce tomate \u00e0 la grecque dans un grand assortiment de mezz\u00e9s ! On vous conseille les\ngalettes de tomate fa\u00e7on tomatokeftedes\n, la\nfeta grill\u00e9e au four\nou encore le\ncaviar d\u2019aubergine\npour une table conviviale comme en Gr\u00e8ce.\nLes gombos en sauce tomate \u00e0 la grecque, c\u2019est l\u2019exemple parfait d\u2019une cuisine simple, familiale et pleine de soleil. Cette recette montre \u00e0 quel point un plat mijot\u00e9 peut sublimer des ingr\u00e9dients du quotidien comme l\u2019huile d\u2019olive, la tomate et les herbes. Servis avec du pain, du riz ou un peu de feta, les gombos deviennent un plat complet et convivial, encore meilleur le lendemain.\nEt si vous voulez prolonger le voyage en Gr\u00e8ce, venez piocher parmi nos\nrecettes grecques.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\n\u00c9t\u00e9\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nRecettes Sal\u00e9es\nCompote de pommes \u00e0 la vapeur : recette rapide, saine et sans sucre ajout\u00e9\nGigantes plaki : haricots blancs g\u00e9ants cuits au four \u00e0 la grecque (\u0393\u03af\u03b3\u03b1\u03bd\u03c4\u03b5\u03c2 \u03c0\u03bb\u03b1\u03ba\u03af)\n4.55 from 73 votes (\n73 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 12.0
+}

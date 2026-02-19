@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "title": "Cr\u00e8me de feta \u00e0 la menthe et pistache",
+    "description": "Une cr\u00e8me de feta cr\u00e9meuse, rafra\u00eechie par la menthe et la pistache, parfaite en dip \u00e0 l'ap\u00e9ro ou avec des l\u00e9gumes r\u00f4tis.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "creme de feta",
+      "feta",
+      "pistache",
+      "accompagnement",
+      "ap\u00e9ro",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/Creme-feta-pistache-2-of-7.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaite \u00e0 d\u00e9guster en dip \u00e0 l'ap\u00e9ro ou avec des l\u00e9gumes r\u00f4tis.",
+      "Super rapide \u00e0 pr\u00e9parer, il n'y a pas de cuisson \u00e0 pr\u00e9voir.",
+      "D\u00e9guster avec un peu d'huile d'olive et des pistaches concass\u00e9es."
+    ],
+    "slug": "creme-de-feta-a-la-menthe-et-pistache",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/02/Creme-feta-pistache-2-of-7.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/02/16/creme-de-feta-a-la-menthe-et-pistache/",
+    "image": "images/creme-de-feta-a-la-menthe-et-pistache.webp",
+    "createdAt": "2026-02-09T22:01:56.848176",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 700.1,
+      "protein": 29.9,
+      "fat": 58.2,
+      "carbs": 15.2,
+      "fiber": 0.3,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 8,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-protein",
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "pistaches_emondees",
+      "name": "pistaches \u00e9mond\u00e9es",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shelled pistachios"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "menthe",
+      "name": "menthe",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "feuilles",
+      "notes": "branches",
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "jus_citron",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "huile_olive",
+      "name": "huile d'olive",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "yaourt",
+      "name": "yaourt",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "yogurt"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "huile_olive_volonte",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "pistaches_concassees",
+      "name": "pistaches concass\u00e9es",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": "concass\u00e9es",
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Chopped pistachios"
+    }
+  ],
+  "tools": [
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "mixer_pistaches",
+      "action": "Placez les pistaches \u00e9mond\u00e9es dans le mixeur et mixez longuement jusqu'\u00e0 ce qu'elles se transforment en p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pistaches_emondees"
+      ],
+      "produces": "pate_pistache",
+      "requires": [],
+      "visualCue": "transform\u00e9es en p\u00e2te"
+    },
+    {
+      "id": "creer_creme_feta",
+      "action": "Ajoutez la feta, les feuilles de menthe, le jus de citron, l'huile d'olive, le yaourt et la gousse d'ail. Mixez jusqu'\u00e0 obtenir une consistance cr\u00e9meuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pate_pistache",
+        "feta",
+        "menthe",
+        "jus_citron",
+        "huile_olive",
+        "yaourt",
+        "ail"
+      ],
+      "produces": "creme_feta_base",
+      "requires": [],
+      "visualCue": "consistance cr\u00e9meuse"
+    },
+    {
+      "id": "ajuster_texture",
+      "action": "Au besoin, ajoutez un peu de yaourt pour ajuster la texture.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "creme_feta_base",
+        "yaourt"
+      ],
+      "produces": "creme_feta_ajustee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez avec un filet d'huile d'olive et des pistaches concass\u00e9es, \u00e0 l'ap\u00e9ro ou avec des l\u00e9gumes grill\u00e9s.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "creme_feta_ajustee",
+        "huile_olive_volonte",
+        "pistaches_concassees"
+      ],
+      "produces": "creme_feta_menthe_pistache",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "creme_feta_menthe_pistache",
+  "originalText": "Cr\u00e8me de feta \u00e0 la menthe et pistache - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 f\u00e9vrier 2024\nCr\u00e8me de feta \u00e0 la menthe et pistache\nQuelle joie de vous partager cette recette de cr\u00e8me de feta \u00e0 la menthe et pistache !\nElle est la symbiose de deux de mes aliments pr\u00e9f\u00e9r\u00e9s : la feta et la pistache.\nBon la feta, rien de nouveau sous les tropiques. J\u2019ai toujours aim\u00e9 \u00e7a. J\u2019en mange presque tous les jours. Il n\u2019y a rien de meilleur. Rien ne surpasse la feta. D\u2019ailleurs, il y a \u201cquelques\u201d recettes avec de la feta sur le blog. Pas beaucoup. Genre environ 50 % ! Les plus r\u00e9centes qui se pr\u00eatent \u00e0 la saison :\ncr\u00e8me de feta \u00e0 la betterave\n(\nque vous retrouverez aussi dans mon premier livre d\u2019ailleurs !\n). Mais aussi\nla salade de betterave aux c\u00e2pres\n. Et\nla feta pan\u00e9e au s\u00e9same\n!\nLa passion pour les pistaches, c\u2019est assez r\u00e9cent. Surtout dans les plats sal\u00e9s. Je crois que \u00e7a a commenc\u00e9 avec cette\nsalade de fenouil aux agrumes et pistaches\n.\nToujours est-il que cette cr\u00e8me de feta \u00e0 la menthe et pistache est super bonne. Parfaitement cr\u00e9meuse. La menthe la rafra\u00eechit et l\u2019all\u00e8ge. Elle est parfaite \u00e0 d\u00e9guster en dip \u00e0 l\u2019ap\u00e9ro. Ou avec des l\u00e9gumes r\u00f4tis ! Comme ici avec de la butternut ! En plus, c\u2019est super rapide \u00e0 pr\u00e9parer. Il n\u2019y pas de cuisson \u00e0 pr\u00e9voir !\nJ\u2019esp\u00e8re que cette recette va vous plaire ! Dites-moi en commentaire !\nCr\u00e8me de feta \u00e0 la menthe et pistache\n4.59\n/5 avec\n89\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nPortions\n1\nbol\nIngr\u00e9dients\n1x\n2x\n3x\n50\ng\nde pistaches \u00e9mond\u00e9es\n200\ng\nde feta\n5\nbranches de menthe\n1\nc\u00e0s de jus de citron\n1\nc\u00e0s d\u2019huile d\u2019olive\n2\nc\u00e0s de yaourt\n1\ngousse d\u2019ail\nInstructions\nPlacez les pistaches dans le mixeur et mixez longuement jusqu\u2019\u00e0 ce qu\u2019elles se transforment en p\u00e2te.\nAjoutez la feta, les feuilles de menthe et le reste des ingr\u00e9dients. Mixez jusqu\u2019\u00e0 obtenir une consistance cr\u00e9meuse. Au besoin, ajoutez un peu de yaourt.\nA d\u00e9guster avec un peu d\u2019huile d\u2019olive et des pistaches concass\u00e9es, \u00e0 l\u2019ap\u00e9ro ou avec des l\u00e9gumes grill\u00e9s par-dessus !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\nTags:\ncreme de feta\n,\nfeta\n,\npistache\nParmentier v\u00e9g\u00e9tarien brocoli et pleurotes\nMisir Wat lentilles corail \u00e0 l\u2019\u00c9thiopienne\n4 thoughts on \u201cCr\u00e8me de feta \u00e0 la menthe et pistache\u201d\nAnej\ndit\u00a0:\n17 f\u00e9vrier 2024 \u00e0 11 h 19 min\nJe trouve souvent la pistache d\u00e9cevante dans les plats car elle est belle mais son go\u00fbt est souvent trop discret. Sachant qu\u2019elle co\u00fbte (tr\u00e8s) cher j\u2019aimerais pouvoir la sentir quand je la mange\u2026 Qu\u2019en est-il dans cette recette?\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n18 f\u00e9vrier 2024 \u00e0 21 h 54 min\nCoucou Anej ! C\u2019est une question \u00e0 laquelle il est difficile de r\u00e9pondre car c\u2019est tr\u00e8s subjectif \u2026 Moi je trouve qu\u2019on la sent mais comment savoir si tu auras le m\u00eame avis. Cela dit, il y a d\u2019autres recettes de cr\u00e8me de feta sur le site donc tu peux en tester une autre si tu es plus \u00e0 l\u2019aise !\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n14 novembre 2024 \u00e0 10 h 40 min\nOui je vois ce que tu veux dire. On la sent mais elle est effectivement assez discr\u00e8te malgr\u00e9 tout car la feta a un go\u00fbt puissant. Il y a d\u2019autres cr\u00e8mes de feta sur le site qui pourraient plus te convenir je pense !\nchargement\u2026\nR\u00e9pondre\nId\u00e9es Repas\ndit\u00a0:\n9 mars 2024 \u00e0 23 h 22 min\nSuperbe cette recette. Bravo!\nchargement\u2026\nR\u00e9pondre\n4.59 from 89 votes (\n88 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

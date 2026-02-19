@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "title": "Galettes de tomate fa\u00e7on tomatokeftedes",
+    "description": "Galettes de tomates inspir\u00e9es de la cuisine grecque, originaires de l'\u00eele de Santorin, servies en mezze. Une recette facile et estivale.",
+    "servings": 10,
+    "prepTime": "PT15M",
+    "cookTime": "PT15M",
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "galettes",
+      "mezze",
+      "tomate",
+      "grecque",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tomatokeftedes-aneth-1-of-4.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Traditionnellement pr\u00e9par\u00e9es avec du basilic, cette version utilise de l'aneth et du persil.",
+      "Parfaites pour un repas d'\u00e9t\u00e9 \u00e0 partager.",
+      "Peut \u00eatre accompagn\u00e9e d'une sauce \u00e0 la feta.",
+      "La quantit\u00e9 de farine doit \u00eatre ajust\u00e9e en fonction de la consistance de la pr\u00e9paration (elle doit \u00eatre \u00e9paisse et collante, pas liquide)."
+    ],
+    "slug": "galettes-de-tomate-facon-tomatokeftedes",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Tomatokeftedes-aneth-1-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/06/25/galettes-de-tomate-facon-tomatokeftedes/",
+    "image": "images/galettes-de-tomate-facon-tomatokeftedes.webp",
+    "createdAt": "2026-02-09T22:13:03.558961",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 33.0,
+    "totalCookingTime": 27.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 75.8,
+      "protein": 4.2,
+      "fat": 2.4,
+      "carbs": 9.5,
+      "fiber": 1.0,
+      "confidence": "medium",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 8,
+      "totalIngredients": 9,
+      "negligibleIngredients": 5,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tomatoes",
+      "name": "tomates",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Tomatoes"
+    },
+    {
+      "id": "red_onion",
+      "name": "oignon rouge",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "red onion"
+    },
+    {
+      "id": "chili",
+      "name": "piment",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "petit",
+      "optional": true,
+      "name_en": "chili pepper"
+    },
+    {
+      "id": "dill_galettes",
+      "name": "aneth",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "dill"
+    },
+    {
+      "id": "parsley",
+      "name": "persil plat",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "flat-leaf parsley"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 5.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 ajuster",
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "salt_galettes",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "oil",
+      "name": "huile",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "pour la friture",
+      "optional": false,
+      "name_en": "Oil"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 160.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "dill_sauce",
+      "name": "aneth",
+      "quantity": 5.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "branches",
+      "optional": false,
+      "name_en": "dill"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "salt_sauce",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "chop_vegetables",
+      "action": "D\u00e9taillez les tomates, l'oignon et le piment (optionnel) en petits d\u00e9s. Hachez finement les herbes (aneth et persil).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "tomatoes",
+        "red_onion",
+        "chili",
+        "dill_galettes",
+        "parsley"
+      ],
+      "produces": "chopped_vegetables_herbs",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_batter",
+      "action": "Dans un saladier, m\u00e9langez tous les ingr\u00e9dients des galettes (tomates, oignon, piment, herbes, origan, farine, sel). Ajustez la quantit\u00e9 de farine pour obtenir une consistance suffisamment collante.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "chopped_vegetables_herbs",
+        "oregano",
+        "flour",
+        "salt_galettes"
+      ],
+      "produces": "tomato_batter",
+      "requires": [],
+      "visualCue": "consistance \u00e9paisse et collante"
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffer \u00bd cm d'huile dans une po\u00eale \u00e0 medium-high heat.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "form_patties",
+      "action": "D\u00e9posez une grosse cuill\u00e8re \u00e0 soupe de pr\u00e9paration dans la po\u00eale et aplatissez-la avec le dos de la cuill\u00e8re. R\u00e9p\u00e9tez selon la taille de la po\u00eale.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "tomato_batter",
+        "hot_oil"
+      ],
+      "produces": "raw_patties_in_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_first_side",
+      "action": "Faites cuire les galettes pendant 5-6min jusqu'\u00e0 ce qu'elles soient bien dor\u00e9es, puis retournez-les.",
+      "duration": "PT6M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "raw_patties_in_pan"
+      ],
+      "produces": "half_cooked_patties",
+      "requires": [],
+      "visualCue": "bien dor\u00e9es"
+    },
+    {
+      "id": "cook_second_side",
+      "action": "Faites cuire l'autre c\u00f4t\u00e9 jusqu'\u00e0 ce qu'il soit dor\u00e9.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "half_cooked_patties"
+      ],
+      "produces": "cooked_tomato_patties",
+      "requires": [],
+      "visualCue": "dor\u00e9"
+    },
+    {
+      "id": "make_sauce",
+      "action": "Pr\u00e9parez la sauce en m\u00e9langeant le yaourt grec, la feta \u00e9miett\u00e9e, l'ail press\u00e9 et l'aneth hach\u00e9. Salez si n\u00e9cessaire.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "greek_yogurt",
+        "feta",
+        "garlic",
+        "dill_sauce",
+        "salt_sauce"
+      ],
+      "produces": "feta_yogurt_sauce",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servez les galettes imm\u00e9diatement avec la sauce.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "cooked_tomato_patties",
+        "feta_yogurt_sauce"
+      ],
+      "produces": "galettes_tomate_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "galettes_tomate_sauce",
+  "originalText": "Galettes de tomate fa\u00e7on Tomatokeftedes | Recette Grecque Facile\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n25 juin 2024\nGalettes de tomate fa\u00e7on tomatokeftedes : la star des mezzes \u00e0 partager\nVoici nos\ngalettes de tomate fa\u00e7on tomatokeftedes\n, tout droit inspir\u00e9es de la\ncuisine grecque\n. Elles viennent plus particuli\u00e8rement de l\u2019\n\u00eele de Santorin\n, o\u00f9 elles sont servies en\nmezze\n. Vous connaissez les\nmezzes\n? Ce sont ces\npetits plats\nqu\u2019on\npartage\n, \u00e0\npicorer\nentre amis ou en famille.\nGalettes\n,\nsalades\n,\ncr\u00e8mes\nou encore\nl\u00e9gumes marin\u00e9s\n\u2026 tout le monde go\u00fbte \u00e0 tout, et l\u2019ambiance est toujours au rendez-vous. Ces\ngalettes de tomate fa\u00e7on tomatokeftedes\n, c\u2019est la\nrecette facile et estivale\nqui vous transporte directement en\nM\u00e9diterran\u00e9e\n.\nTable des mati\u00e8res\n1\nTomatokeftedes, kesako ?\n2\nLe mezze : l\u2019art de partager\n3\nLa petite touche qui fait toute la diff\u00e9rence\n4\nGalettes de tomate fa\u00e7on tomatokeftedes\n5\nDes galettes rapides et conviviales\n6\nLa touche finale : la sauce \u00e0 la feta\nTomatokeftedes, kesako ?\nLes tomatokeftedes, ce sont de d\u00e9licieuses galettes de tomates originaires de l\u2019\u00eele de Santorin en Gr\u00e8ce. Pr\u00e9par\u00e9es traditionnellement avec des tomates bien m\u00fbres, des herbes fra\u00eeches comme le basilic et des oignons, elles sont ensuite l\u00e9g\u00e8rement frites pour devenir croustillantes \u00e0 l\u2019ext\u00e9rieur et moelleuses \u00e0 l\u2019int\u00e9rieur. Servies comme mezze, elles font partie de ces petits plats qu\u2019on partage autour de la table, avec un peu de pain, de la\nfeta\net des olives. Une recette simple, ensoleill\u00e9e et typiquement grecque qui a travers\u00e9 le temps sans rien perdre de son charme.\nLe mezze : l\u2019art de partager\nLe mezze, c\u2019est bien plus qu\u2019un repas : c\u2019est une tradition de partage autour de petites assiettes pleines de saveurs. Originaire du bassin m\u00e9diterran\u00e9en et du Moyen-Orient, il r\u00e9unit galettes, salades, cr\u00e8mes et l\u00e9gumes marin\u00e9s que tout le monde picore \u00e0 table. C\u2019est ce qui rend les soir\u00e9es si conviviales dans les tavernes grecques, o\u00f9 chacun go\u00fbte \u00e0 tout sans se poser de questions. Sur le blog, nous aimons perp\u00e9tuer cet esprit avec nos\ngalettes de courgettes grecques\n, le\nbaba ganoush\n, la\nfava aux lentilles corail\n,\nle caviar d\u2019aubergines\n,\nla fameuse salade grecque\nou encore la\ncr\u00e8me de feta piment\u00e9e\n. De quoi composer un assortiment digne des meilleurs mezzes grecs \u00e0 partager sans mod\u00e9ration.\nLa petite touche qui fait toute la diff\u00e9rence\nTraditionnellement, les tomatokeftedes se pr\u00e9parent avec du basilic. Mais on avait envie d\u2019y mettre notre patte. On a remplac\u00e9 le basilic par un m\u00e9lange d\u2019aneth et de persil. Deux herbes qui rappellent fortement les saveurs grecques. Parfois m\u00eame, on y ajoute un peu de menthe, et hop, on est t\u00e9l\u00e9port\u00e9es au bord de la mer \u00c9g\u00e9e.\nVous aimez l\u2019aneth autant que nous ? Alors d\u00e9couvrez aussi notre\nfenouil et petits pois \u00e0 l\u2019aneth\nou encore notre\nsalade concombre \u00e9cras\u00e9, feta et aneth\n. De quoi donner un parfum frais et m\u00e9diterran\u00e9en \u00e0 vos repas !\nGalettes de tomate fa\u00e7on tomatokeftedes\n4.61\n/5 avec\n88\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n10\ngalettes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les galettes\n400\ng\nde tomates\nenv 2-3\n100\ng\nd\u2019oignon rouge\n1\n1\npetit piment\noptionnel\n10\nbranches d\u2019aneth\n10\nbranches de persil plat\n1\nc\u00e0c d\u2019origan\n5\nc\u00e0s de farine\n\u00e0 ajuster\n1\nc\u00e0c de sel\nPour la sauce\n160\ng\nde yaourt grec\n100\ng\nde feta\n5\nbranches d\u2019aneth\n1\ngousse d\u2019ail\nsel\nInstructions\nD\u00e9taillez les tomates, l\u2019oignon et le piment en petits d\u00e9s. Hachez finement les herbes.\nDans un saladier, m\u00e9langez tous les ingr\u00e9dients des galettes. Ajustez la quantit\u00e9 de farine en fonction de la consistance de votre m\u00e9lange. Il doit \u00eatre suffisamment collant pour ne pas se d\u00e9faire quand vous en pr\u00e9l\u00e8vez une grosse cuill\u00e8re \u00e0 soupe.\nPr\u00e9parez la sauce : m\u00e9langez le yaourt, la feta \u00e9miett\u00e9e, l\u2019ail press\u00e9 et l\u2019aneth hach\u00e9.\nFaites chauffer \u00bd cm d\u2019huile dans une po\u00eale. Y d\u00e9poser une grosse cuill\u00e8re \u00e0 soupe de pr\u00e9paration et aplatissez-la avec le dos de la cuill\u00e8re. R\u00e9p\u00e9tez l\u2019op\u00e9ration en fonction de la taille de votre po\u00eale. Retournez les galettes quand elles sont bien dor\u00e9es (comptez env 5-6min).\nServez imm\u00e9diatement avec la sauce.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nDes galettes rapides et conviviales\nCe qu\u2019 on adore avec ces galettes, c\u2019est qu\u2019elles sont rapides \u00e0 pr\u00e9parer et vraiment conviviales. Vous pouvez rester fid\u00e8les \u00e0 la recette traditionnelle avec le basilic, ou tenter notre version revisit\u00e9e. Dans tous les cas, le r\u00e9sultat est d\u00e9licieux et parfait pour vos repas d\u2019\u00e9t\u00e9. On vous propose m\u00eame de les accompagner de notre\ncr\u00e8me \u00e0 la feta\npour encore plus de gourmandise.\nEt si vous aimez les galettes autant que nous, vous allez vous r\u00e9galer avec nos\ngalettes petits pois menthe feta\n, nos\ngalettes brocoli parmesan mozzarella\n, ou encore nos\ngalettes de petits pois \u00e0 l\u2019indienne\n. Pour varier les plaisirs, testez aussi les\ngalettes de lentilles corail cumin et blettes\n, les\ngalettes prot\u00e9in\u00e9es haricots quinoa\nou les\ngalettes de chou-fleur au curry\n.\nLa touche finale : la sauce \u00e0 la feta\nBref, cette recette est incroyablement bonne. Que vous choisissiez le basilic ou que vous tentiez notre version revisit\u00e9e \u00e0 l\u2019aneth et au persil, les deux fonctionnent parfaitement. Et pour sublimer ces galettes de tomate fa\u00e7on tomatokeftedes, rien de tel qu\u2019une sauce \u00e0 la feta bien cr\u00e9meuse. On adore pr\u00e9parer la notre maison, mais vous pouvez aussi varier les plaisirs : testez la\ncr\u00e8me de feta au tahini et cumin\n, la\ncr\u00e8me de feta piment\u00e9e\nou encore la\ncr\u00e8me de feta \u00e0 la betterave\n. Avec \u00e7a, vos galettes prendront encore plus de peps et de gourmandise.\nCes galettes de tomate fa\u00e7on tomatokeftedes sont un vrai voyage culinaire vers la Gr\u00e8ce. Elles sont simples \u00e0 pr\u00e9parer, pleines de soleil et parfaites pour un repas d\u2019\u00e9t\u00e9 \u00e0 partager. Avec du basilic ou ma version \u00e0 l\u2019aneth et au persil, elles fonctionnent toujours \u00e0 merveille. Et si vous les accompagnez d\u2019une sauce \u00e0 la feta, vous atteignez la perfection en toute simplicit\u00e9. Alors, est-ce que vous allez tester ces galettes de tomate fa\u00e7on tomatokeftedes d\u00e8s votre prochain d\u00eener estival ?\nEt si vous voulez encore plus d\u2019inspiration, retrouvez\ntoutes nos recettes de galettes sal\u00e9es\n.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\n\u00c9t\u00e9\n,\nGalettes\n,\nTomate\nTags:\ngalettes\n,\nmezze\nTarte soleil aux \u00e9pinards et ricotta\nTarte fine tomate halloumi : rapide, croustillante et gourmande\n6 thoughts on \u201cGalettes de tomate fa\u00e7on tomatokeftedes : la star des mezzes \u00e0 partager\u201d\nhelene\ndit\u00a0:\n8 juillet 2024 \u00e0 13 h 33 min\n\u00e7a m\u2019a l\u2019air d\u00e9licieux. A votre avis, peut-on r\u00e9aliser cette recette avec des tomates en boite ?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n8 juillet 2024 \u00e0 20 h 36 min\nCoucou, non je ne conseille pas\nchargement\u2026\nR\u00e9pondre\nManon\ndit\u00a0:\n7 septembre 2024 \u00e0 18 h 23 min\nPeut on les congel\u00e9es?\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 septembre 2024 \u00e0 21 h 07 min\nHello, non je ne conseille pas\nchargement\u2026\nR\u00e9pondre\nKummer Alban\ndit\u00a0:\n14 septembre 2025 \u00e0 19 h 46 min\nManque-t-il un ingr\u00e9dient ? \u00c7a ne tient absolument pas dans la po\u00eale \ud83d\ude41\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n15 septembre 2025 \u00e0 9 h 57 min\nBonjour, non il ne manque pas d\u2019ingr\u00e9dient. Par contre, il faut adapter la quantit\u00e9 de farine en fonction de la quantit\u00e9 d\u2019eau dans les tomateS. La p\u00e2te doit \u00eatre \u00e9paisse et collante, pas liquide.\nchargement\u2026\nR\u00e9pondre\n4.61 from 88 votes (\n87 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 27.0
+}

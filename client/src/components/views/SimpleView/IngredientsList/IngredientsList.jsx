@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Box,
   Typography,
@@ -12,6 +12,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IngredientsGroup from "./IngredientsGroup";
 import { useIngredientsProcessing } from "./useIngredientsProcessing";
 import { INGREDIENTS_TEXTS, switchStyle } from "./constants";
+import { usePantry } from "../../../../contexts/PantryContext";
 
 /**
  * Main component for displaying recipe ingredients
@@ -19,6 +20,8 @@ import { INGREDIENTS_TEXTS, switchStyle } from "./constants";
 const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
   const [checkedIngredients, setCheckedIngredients] = useState(new Set());
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const { hasItem, pantrySize } = usePantry();
+  const pantryInitialized = useRef(false);
 
   // Get processed ingredients data from custom hook
   const {
@@ -28,6 +31,25 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
     hasCompletedSteps,
     remainingIngredients,
   } = useIngredientsProcessing(recipe, shoppingMode);
+
+  // Pre-check pantry items when switching to shopping mode
+  useEffect(() => {
+    if (shoppingMode && pantrySize > 0 && !pantryInitialized.current) {
+      const pantryChecked = new Set();
+      for (const ingredient of allIngredients) {
+        if (ingredient.name_en && hasItem(ingredient.name_en)) {
+          pantryChecked.add(`${ingredient.subRecipeId}-${ingredient.name}`);
+        }
+      }
+      if (pantryChecked.size > 0) {
+        setCheckedIngredients(pantryChecked);
+      }
+      pantryInitialized.current = true;
+    }
+    if (!shoppingMode) {
+      pantryInitialized.current = false;
+    }
+  }, [shoppingMode, pantrySize, allIngredients, hasItem]);
 
   // Handle ingredient checkbox state
   const handleIngredientCheck = (ingredient, checked) => {

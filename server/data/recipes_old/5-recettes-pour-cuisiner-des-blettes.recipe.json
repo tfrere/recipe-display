@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "title": "5 recettes pour cuisiner des blettes",
+    "description": "Des recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses. Cinq id\u00e9es pour cuisiner les blettes.",
+    "servings": 5,
+    "prepTime": null,
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "bette",
+      "blette",
+      "blette v\u00e9g\u00e9",
+      "cote de blette",
+      "recette blette",
+      "v\u00e9g\u00e9tarien",
+      "printemps",
+      "\u00e9t\u00e9"
+    ],
+    "imageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/03/blettes-3-569x1024.png?ssl=1",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les blettes sont un l\u00e9gume super polyvalent, et vraiment pas si compliqu\u00e9 \u00e0 pr\u00e9parer.",
+      "Ces recettes sont toutes v\u00e9g\u00e9, et toutes d\u00e9licieuses !",
+      "Les blettes se marient super bien avec le cumin et le feta.",
+      "La quiche blette ch\u00e8vre sans p\u00e2te est juste sublime.",
+      "Les lasagnes aux blettes sont un pur bonheur, r\u00e9confortant et d\u00e9cadent \u00e0 souhait."
+    ],
+    "slug": "5-recettes-pour-cuisiner-des-blettes",
+    "sourceImageUrl": "https://i2.wp.com/freethepickle.fr/wp-content/uploads/2022/03/blettes-3-569x1024.png?ssl=1",
+    "sourceUrl": "https://freethepickle.fr/2022/03/28/5-recettes-pour-cuisiner-des-blettes/",
+    "image": "images/5-recettes-pour-cuisiner-des-blettes.jpg",
+    "createdAt": "2026-02-09T21:08:17.397899",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 0.0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbs": 0.0,
+      "fiber": 0.0,
+      "confidence": "low",
+      "resolvedIngredients": 0,
+      "matchedIngredients": 1,
+      "totalIngredients": 1,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "blettes",
+      "name": "blettes",
+      "quantity": null,
+      "unit": null,
+      "category": "produce",
+      "preparation": null,
+      "notes": "L\u00e9gume principal pour toutes les recettes",
+      "optional": false,
+      "name_en": "Swiss chard"
+    }
+  ],
+  "tools": [
+    "Four"
+  ],
+  "steps": [
+    {
+      "id": "prepare_blettes",
+      "action": "Pr\u00e9parer les blettes selon la recette choisie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blettes"
+      ],
+      "produces": "blettes_preparees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "choose_recipe",
+      "action": "Choisir une des cinq recettes: Galettes V\u00e9g\u00e9tariennes de Blettes, Samoussas aux Blettes, Cumin et F\u00eata, Cake aux Blettes, F\u00eata, Pignons, Quiche Blette Ch\u00e8vre Sans P\u00e2te, ou Lasagnes aux Blettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blettes_preparees"
+      ],
+      "produces": "recette_choisie",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cook_recipe",
+      "action": "Suivre les instructions de la recette choisie pour cuisiner les blettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "recette_choisie"
+      ],
+      "produces": "plat_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Servir le plat de blettes chaud ou froid selon la recette.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "plat_cuit"
+      ],
+      "produces": "blettes_cuisinees",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "blettes_cuisinees",
+  "originalText": "5 recettes pour cuisiner des blettes - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 mars 2022\n5 recettes pour cuisiner des blettes\nDes passionn\u00e9s de blettes par ici ? Ou des novices qui d\u00e9couvrent ce l\u00e9gume ?\nJe vous l\u2019accorde, il est un peu intimidant \u00e0 premi\u00e8re vue. Que faire de ces grosses c\u00f4tes blanches ? Et ces feuilles vertes ? Est-ce que \u00e7a cuit pareil, est-ce qu\u2019on mange tout ?\nOu alors, vous \u00eates de ceux qui connaissent une seule recette avec des blettes. Parfois d\u00e9licieuse. Du coup, vous ne faites que celle-ci et vous finissez par vous lasser. Ou alors, une recette pas top. Et du coup, vous pensez que vous n\u2019aimez pas les blettes ? Mais en fait, c\u2019est un l\u00e9gume super polyvalent, et vraiment pas si compliqu\u00e9 \u00e0 pr\u00e9parer.\nD\u2019ailleurs, il faut l\u2019objet de l\u2019un des 3 menus de\nnotre dernier ebook de batchcooking d\u00e9di\u00e9 au printemps\n!\nEt voici, nos 5 recettes pour cuisiner des blettes, toutes v\u00e9g\u00e9, et toutes d\u00e9licieuses !\nGalettes V\u00e9g\u00e9tariennes de Blettes\nComment ne pas inclure ces galettes dans cet article sur nos 5 recettes pour cuisiner des blettes ! D\u00e9licieuses et faciles \u00e0 faire !\nSamoussas aux Blettes, Cumin et F\u00eata (V\u00e9g\u00e9tarien)\nUne de mes recette pr\u00e9f\u00e9r\u00e9es ! Les blettes se marient super bien avec le cumin et le feta !\nCake aux Blettes, F\u00eata, Pignons\nCe cake est sans gluten, on y retrouve de la feta (ingr\u00e9dient f\u00e9tiche dans ma cuisine) et des pignons ! Un r\u00e9gal \ud83d\ude42\nQuiche Blette Ch\u00e8vre Sans P\u00e2te (Sans Gluten)\nCes petites quiches sont juste sublimes. Et je n\u2019exag\u00e8re m\u00eame pas !\nLasagnes aux Blettes\nEt la petite derni\u00e8re de cet article, les lasagnes aux blettes ! Un pur bonheur, r\u00e9confortant et d\u00e9cadent \u00e0 souhait !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBlettes\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nPlats en Sauce\n,\nPrintemps\n,\nQuiches et Tartes\n,\nRecettes Sal\u00e9es\nTags:\nbette\n,\nblette\n,\nblette v\u00e9g\u00e9\n,\ncomment faire des blettes\n,\ncote de blette\n,\ncuisiner des blettes\n,\nid\u00e9e blette\n,\nrecette blette\nLasagnes aux Blettes\n\u0152ufs cocottes aux Asperges blanches\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d",
+  "totalCookingTime": 0.0
+}

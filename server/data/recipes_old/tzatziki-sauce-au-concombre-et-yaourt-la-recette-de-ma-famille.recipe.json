@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "title": "Tzatziki – Sauce au Concombre et Yaourt (la recette de ma famille)",
+    "description": "Une recette familiale grecque de sauce tzatziki, simple et rapide à préparer, parfaite en accompagnement.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "grecque",
+      "concombre",
+      "tzatziki",
+      "sauce",
+      "accompagnement",
+      "été",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2020/05/tzatziki-4-of-4-1-scaled.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se marie à la perfection avec des gyros végans aux pleurotes et des pitas à gyros.",
+      "Le liquide pressé du concombre peut être récupéré pour le boire ou mettre dans un smoothie.",
+      "Pour une version vegan, utiliser un yaourt de soja à la grecque.",
+      "La peau du concombre peut être gardée ou enlevée selon les préférences.",
+      "Astuce pour essorer : mettre le concombre râpé dans un torchon, rouler et essorer."
+    ],
+    "slug": "tzatziki-sauce-au-concombre-et-yaourt-la-recette-de-ma-famille",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2020/05/tzatziki-4-of-4-1-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2020/05/05/tzatziki-sauce-au-concombre-et-yaourt-la-recette-de-ma-famille/",
+    "image": "images/tzatziki-sauce-au-concombre-et-yaourt-la-recette-de-ma-famille.jpg",
+    "createdAt": "2026-02-09T19:52:37.807547",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 30.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 523.5,
+      "protein": 14.8,
+      "fat": 45.8,
+      "carbs": 14.4,
+      "fiber": 2.5,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 6,
+      "totalIngredients": 7,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ],
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "râpé",
+      "notes": null,
+      "optional": false,
+      "name_en": "cucumber"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "yaourt grec",
+      "quantity": 120.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "jus de citron",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "garlic",
+      "name": "gousse d'ail",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "pressée",
+      "notes": "grosse",
+      "optional": false,
+      "name_en": "Garlic clove"
+    },
+    {
+      "id": "salt",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pincée",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "dill",
+      "name": "aneth",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": "séchée",
+      "notes": null,
+      "optional": false,
+      "name_en": "dill"
+    },
+    {
+      "id": "mint",
+      "name": "feuilles de menthe fraîche",
+      "quantity": 10.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "hachées",
+      "notes": null,
+      "optional": false,
+      "name_en": "Fresh mint leaves"
+    }
+  ],
+  "tools": [
+    "Râpe (grosse)"
+  ],
+  "steps": [
+    {
+      "id": "grate_cucumber",
+      "action": "Râpez le concombre avec une grosse râpe.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber"
+      ],
+      "produces": "grated_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "press_cucumber",
+      "action": "Pressez le concombre râpé entre vos mains pour enlever un maximum de liquide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "grated_cucumber"
+      ],
+      "produces": "pressed_cucumber",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_tzatziki",
+      "action": "Dans un petit saladier, mettez le concombre pressé avec tous les autres ingrédients. Mélangez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "pressed_cucumber",
+        "greek_yogurt",
+        "olive_oil",
+        "lemon_juice",
+        "garlic",
+        "salt",
+        "dill",
+        "mint"
+      ],
+      "produces": "mixed_tzatziki",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "rest_tzatziki",
+      "action": "Laissez le tzatziki reposer au frais pendant au moins 30min pour que les saveurs se développent.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_tzatziki"
+      ],
+      "produces": "rested_tzatziki",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "rested_tzatziki",
+  "originalText": "Tzatziki - Sauce au Concombre et Yaourt (la recette de ma famille) - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, végétariennes, parfois vegan, toujours délicieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\nÉté\nAutomne\nHiver\nPrintemps\nRecettes par Légume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nCéleri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nFèves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPastèque\nPamplemousse\nPêche\nPoire\nPomme\nPrune\nRhubarbe\nÀ la une du végétal\nIngrédients à découvrir\nZoom sur un légume\nSaisons et inspirations\nMatériel de cuisine et conseils pratiques\nRecettes Salées\nAccompagnements\nApéros\nBrunch Salé\nBurgers, sandwichs et wraps\nCakes salés\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucrées\nBoissons\nBrioches et Boulange\nBrunch Sucré\nCookies Biscuits et Mignardises\nCrèmes et Entremets\nGâteaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n5 mai 2020\nTzatziki – Sauce au Concombre et Yaourt (la recette de ma famille)\nComme vous le savez certainement maintenant, je suis mi-grecque (par ma maman), mi-française (par mon papa).\nA la maison, on a toujours mangé un mélange de cuisine française et grecque, et je considérais comme commun (et parfois un peu ennuyeux, je l’avoue) tout un tas de plats, que mes amis trouvaient très exotiques. On mangeait souvent des yarnis, des ajem pilafs, des fassolavas, des pastitsios, kefetedes et autres petites merveilles gustatives. Évidemment, la fêta est une deuxième mère pour moi (hahaha !! pardon maman !!) et accompagne facilement et sans exagération environ de 50% de mes repas.\nBref, je vous raconte toute ma vie là, mais je voulais en venir à ceci : mes parents préparent souvent du tzatziki, j’ai toujours mangé du tzatziki, et j’ai un peu honte, mais j’ai toujours pensé que c’était une recette un peu nulle et banale que tu fais quand t’as un concombre mourant au frigo et qu’il faut en faire quelque chose.\nEt puis un jour, Daniela, m’a dit “Nat. Tu devrais trop faire une recette de tzatziki pour le blog’, et j’ai dit, “non, c’est nul, tout le monde sait faire un tzatziki”, et visiblement Daniela ne sait pas faire de tzatziki (horreur).\nDonc, voilà ! Je vous ai préparé cette recette de tzatziki.\nComment j’ai fait ? Simple. J’ai appelé mes parents. Mon père a répondu, il m’a donné la recette précise de la famille (parce que en tant que bon mari/père, mon père sait cuisiner presque tous les plats). Je l’ai faite. C’était très bon (hahaha, oui une recette nulle et banale peut être très bonne dans mon monde).\nEt surtout ça se marie à la perfection absolue avec ces gyros végans aux pleurotes qui sont littéralement à tomber par terre ! Et c\nes grosses pitas à gyros\naussi 😉\nTzatziki – Sauce au Concombre et Yaourt (la recette de ma famille)\nNatacha\n4.64\n/5 avec\n131\nvotes\nImprimer la recette\nPin Recipe\nTemps de préparation\n10\nminutes\nmin\nTemps de repos\n30\nminutes\nmin\nTemps total\n10\nminutes\nmin\nIngrédients\n1\nconcombre\nenv 250g\n120 à 150g\nde yaourt grec\n(1 petit pot)\n3\nc-à-s d’huile d’olive\n2\nc-à-s de jus de citron\n1\ngrosse gousse d’ail pressée\nou 2 petites\n1\npincée de fleur de sel\n1\nc-à-c d’aneth séchée\nou fraîche si vous en avez\n10\nfeuilles de menthe fraîchefraîche hachées\nou 1 c-à-c de menthe séchée\nInstructions\nCommencez par râper le concombre (grosse rape), puis pressez le entre vos mains pour enlever un maximum de liquide.\nJe vous conseille de recueillir le liquide pour le boire, le mettre dans un smoothie par exemple !\nEnsuite, une fois que vous avez pressé au maximum le concombre, mettez le dans un petit saladier, avec tous les autres ingrédients. Mélangez bien.\nLaisser le tzatziki reposer au frais au moins 30 min pour que les saveurs se développent.\nEt voilà, c’est fini !\nTried this recipe?\nDites-nous\nsi vous avez aimé !\nJ’aime ça :\nJ’aime\nchargement…\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nConcombre\n,\nÉté\n,\nPrintemps\n,\nRecettes Salées\n,\nSalades\nTags:\nconcombe\n,\nrecette grecque\n,\ntzatziki\nPains Pitas Maison (version épaisse)\nMuffins Vegan Chocolat Courgette\n18 thoughts on “Tzatziki – Sauce au Concombre et Yaourt (la recette de ma famille)”\nChristine Z.\ndit :\n6 mai 2020 à 19 h 27 min\nEst-ce qu’il faut un seul yaourt nature pour 1 concombre ? Il n’apparaît pas dans les ingrédients? 🙂\nchargement…\nRépondre\nFree The Pickle\ndit :\n7 mai 2020 à 11 h 51 min\nAh !!! Bien vu merci ! Oui évidemment il faut un pot de yaourt grec (environ 120g) !!\nJe dois vraiment arrêter d’écrire des articles trop tard le soir !\nchargement…\nRépondre\nChristine Z.\ndit :\n7 mai 2020 à 14 h 51 min\nMerci pour votre réponse. J’adore votre blog, il est source d’inspiration.\nchargement…\nRépondre\nLadyMilonguera\ndit :\n6 mai 2020 à 20 h 49 min\nHummmmmm… Comme c’est bon ça !\nchargement…\nRépondre\nFree The Pickle\ndit :\n7 mai 2020 à 11 h 51 min\n🙂\nchargement…\nRépondre\nMAUD\ndit :\n4 juillet 2020 à 16 h 26 min\nSimple, facile et tellement délicieux !!!\nchargement…\nRépondre\nFree The Pickle\ndit :\n4 juillet 2020 à 16 h 38 min\nMerci Madi 🙂\nchargement…\nRépondre\nFree The Pickle\ndit :\n5 juillet 2020 à 18 h 33 min\n😉 merci !\nchargement…\nRépondre\nAn\ndit :\n6 juillet 2020 à 20 h 15 min\nComment dire ?  …. Ce TZATZIKI a changé MA VIE, si si si !! Je le fais en version vegan (avec un pot de yaourt de soja à la grecque de la marque Sojade), c’est un délice absolu.\nJe l’ai déjà refait 4 fois et un nouveau m’attend dans le frigo 😀\nchargement…\nRépondre\nFree The Pickle\ndit :\n9 juillet 2020 à 9 h 16 min\nMerciiiii ❤️❤️❤️❤️ ça me fait trop plaisir ☺️☺️\nchargement…\nRépondre\nerrabih\ndit :\n19 mars 2023 à 12 h 05 min\nMerci\nchargement…\nRépondre\nYolanda\ndit :\n1 août 2023 à 10 h 49 min\nMerci beaucoup pour cette recette de famille. Même si elle te paraît banale elle est excellente !\nJe ne l’ai découverte que récemment. et je l’ai déjà  faite 4 ou 5 fois. Je la recommande vivement.\nchargement…\nRépondre\nNatacha\ndit :\n9 août 2023 à 10 h 50 min\nMerciiii !\nchargement…\nRépondre\nDelphine\ndit :\n19 avril 2024 à 19 h 52 min\nHello,\nQuestion sûrement idiote !\nEst-ce que tu épluches le concombre 🥒 avant de le râper ?\nJe trouve que la peau su concombre est bonne…\nMerci d’avance,\nDelphine\nchargement…\nRépondre\nNatacha\ndit :\n21 avril 2024 à 15 h 14 min\nCoucou ! C’est comme tu veux, tu peux complètement la garder !\nchargement…\nRépondre\nMaryFo\ndit :\n8 mai 2024 à 0 h 01 min\nMerci cette recette- une touche de soleil  – j’y ai mis seulement 1/2 concombre ( reste de concombre ) et. pas d’aneth . Pour autant les saveurs étaient au rdv . Je recommencerai la prochaine fois avec de l’aneth .\nchargement…\nRépondre\nLidurin Mikélig\ndit :\n28 juin 2025 à 11 h 59 min\nExcellente recette je l ai inscrite dans mon cahier de recettes pour ne pas la perdre merci vraiment les recettes familiales sont les meilleur merci à votre papa\nchargement…\nRépondre\nMagikelly\ndit :\n5 septembre 2025 à 20 h 30 min\nSuper recette,  merci beaucoup  !\nPetite astuce pour essorer parfaitement le concombre râpé,  je l’ai mis dans un torchon sous forme d’une bande de 20 cm de long, j’ai roulé le torchon et je l’ai essoré : ça fonctionne !\nchargement…\nRépondre\n4.64 from 131 votes (\n124 ratings without comment\n)\nLaisser un commentaire\nAnnuler la réponse\nVotre adresse e-mail ne sera pas publiée.\nLes champs obligatoires sont indiqués avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPrévenez-moi de tous les nouveaux commentaires par e-mail.\nPrévenez-moi de tous les nouveaux articles par e-mail.\nΔ\nCe site utilise Akismet pour réduire les indésirables.\nEn savoir plus sur la façon dont les données de vos commentaires sont traitées\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nDécouvrez nos ebooks\nEbook - 40 recettes spécial Noël végé\n€\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n€\n8,50\nEbook - Free the Chou-fleur\n€\n8,50\nObsessions Végétales : mon premier livre de recettes !\nAbonnez-vous à Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner à ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1 726 autres abonnés\nMentions Légales\nPolitique de confidentialité\nConditions générales de vente\nCopyright Free The Pickle © 2026\nChargement des commentaires…\nÉcrire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

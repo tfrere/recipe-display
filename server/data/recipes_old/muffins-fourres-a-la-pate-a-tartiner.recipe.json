@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "title": "Muffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner",
+    "description": "Des muffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner ultra gourmands ! Un grand classique facile \u00e0 faire avec un r\u00e9sultat toujours parfait (ou presque, les d\u00e9bordements de chocolat \u00e7a arrive). Effet garanti \u00e0 la d\u00e9gustation !",
+    "servings": 12,
+    "prepTime": "PT20M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "dessert",
+    "tags": [
+      "muffins",
+      "muffins fourr\u00e9s",
+      "p\u00e2te \u00e0 tartiner",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/muffins-pate-a-tatiner.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette originale, mais version v\u00e9gane possible : remplacer \u0153ufs par 100g de compote, beurre par margarine ou 5 c\u00e0s d'huile v\u00e9g\u00e9tale, lait et yaourt par versions v\u00e9g\u00e9tales.",
+      "Pour la p\u00e2te \u00e0 tartiner, utiliser une recette v\u00e9gane.",
+      "Si la p\u00e2te \u00e0 tartiner est peu \"fig\u00e9e\", cela facilite la formation de la noix et \u00e0 la cuisson, elle retrouvera sa texture onctueuse.",
+      "Pour une p\u00e2te \u00e0 tartiner liquide, la placer au frigo 30min avant.",
+      "Servir tels quels, ou recouvrir de p\u00e2te \u00e0 tartiner et saupoudrer de noisettes concass\u00e9es pour plus de gourmandise."
+    ],
+    "slug": "muffins-fourres-a-la-pate-a-tartiner",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/03/muffins-pate-a-tatiner.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/03/10/muffins-fourres-a-la-pate-a-tartiner/",
+    "image": "images/muffins-fourres-a-la-pate-a-tartiner.webp",
+    "createdAt": "2026-02-09T20:13:58.206575",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 202.8,
+      "protein": 4.4,
+      "fat": 8.2,
+      "carbs": 27.4,
+      "fiber": 0.7,
+      "confidence": "high",
+      "resolvedIngredients": 6,
+      "matchedIngredients": 7,
+      "totalIngredients": 7,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 280.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "baking_powder",
+      "name": "levure chimique",
+      "quantity": 0.5,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "baking powder"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "fondu",
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "vanilla_sugar",
+      "name": "sucre vanill\u00e9",
+      "quantity": 1.0,
+      "unit": "sachet",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "vanilla sugar"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "yogurt",
+      "name": "yaourt nature",
+      "quantity": 125.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": "grec ou brass\u00e9",
+      "optional": false,
+      "name_en": "plain yogurt"
+    },
+    {
+      "id": "chocolate_spread",
+      "name": "p\u00e2te \u00e0 tartiner",
+      "quantity": null,
+      "unit": null,
+      "category": "condiment",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Chocolate spread"
+    }
+  ],
+  "tools": [
+    "Moule \u00e0 muffins (12 cavit\u00e9s)",
+    "2 saladiers"
+  ],
+  "steps": [
+    {
+      "id": "mix_dry_ingredients",
+      "action": "M\u00e9langer dans un saladier la farine, le sel et la levure. R\u00e9server.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "flour",
+        "salt",
+        "baking_powder"
+      ],
+      "produces": "dry_mix",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "beat_eggs_sugar",
+      "action": "Dans un autre saladier, battre les \u0153ufs avec le sucre et le sucre vanill\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "eggs",
+        "sugar",
+        "vanilla_sugar"
+      ],
+      "produces": "beaten_eggs_sugar",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_melted_butter",
+      "action": "Dans le m\u00eame saladier que les \u0153ufs battus, verser le beurre fondu et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "beaten_eggs_sugar",
+        "butter"
+      ],
+      "produces": "egg_butter_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_milk_yogurt",
+      "action": "Ajouter le lait et le yaourt au m\u00e9lange liquide et m\u00e9langer de nouveau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "egg_butter_mixture",
+        "milk",
+        "yogurt"
+      ],
+      "produces": "wet_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_dry_wet",
+      "action": "Verser les ingr\u00e9dients secs (farine, sel, levure) sur les ingr\u00e9dients liquides et m\u00e9langer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "dry_mix",
+        "wet_mixture"
+      ],
+      "produces": "muffin_batter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 180\u00b0C.",
+      "duration": null,
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fill_molds_partial",
+      "action": "Remplir les moules \u00e0 muffins au tiers avec la p\u00e2te.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "muffin_batter"
+      ],
+      "produces": "partially_filled_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_chocolate_spread",
+      "action": "D\u00e9poser une (grosse) noix de p\u00e2te \u00e0 tartiner au centre de chaque moule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "partially_filled_molds",
+        "chocolate_spread"
+      ],
+      "produces": "molds_with_chocolate_center",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cover_chocolate",
+      "action": "Recouvrir la noix de p\u00e2te \u00e0 tartiner avec de la p\u00e2te \u00e0 muffins jusqu'\u00e0 5/7mm du bord du moule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "molds_with_chocolate_center",
+        "muffin_batter"
+      ],
+      "produces": "filled_muffin_molds",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_muffins",
+      "action": "Enfourner et cuire 20min.",
+      "duration": "PT20M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "filled_muffin_molds"
+      ],
+      "produces": "baked_muffins",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    },
+    {
+      "id": "serve",
+      "action": "Tadaaam c'est pr\u00eat !",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_muffins"
+      ],
+      "produces": "muffins_fourres_pate_tartiner",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "muffins_fourres_pate_tartiner",
+  "originalText": "Muffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n10 mars 2021\nMuffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner\nAcc\u00e9der directement \u00e0 la recette\nLes fameux muffins fourr\u00e9s \u00e0 la\np\u00e2te \u00e0 tartiner\nde mon adolescence\u2026 Ce fut la premi\u00e8re recette que je connaissais sur le bout des doigts et surtout qui m\u2019a donn\u00e9 envie de d\u00e9cliner la recette de base avec d\u2019autres associations (ex : pommes cannelle). C\u2019\u00e9tait le tout d\u00e9but de ma passion pour les g\u00e2teaux et autres gourmandises faites maison !\nDerri\u00e8re ces muffins, il y a une vraie histoire. C\u2019est la cousine de Natacha, Camille, qui m\u2019a initi\u00e9 dans la r\u00e9alisation de ces muffins. A l\u2019\u00e9poque (en 2006 je crois), elle m\u2019avait m\u00eame offert un moule \u00e0 muffins en forme de c\u0153ur et vous savez quoi, je l\u2019ai encore ! Et je m\u2019en sers encore ! La folie ce moule ! Du coup, Camille,\nmon Gourou ch\u00e9ri,\nc\u2019est avec beaucoup de tendresse que je te d\u00e9dicace cet article. Miss you.\nSinon, quelques petites suggestions pour la r\u00e9alisation de ces muffins. Ici, il s\u2019agit de la version originale de la recette, mais vous pouvez tout \u00e0 fait pr\u00e9parer une version v\u00e9gane. Les \u0153ufs peuvent \u00eatre remplac\u00e9s par 100g de compote. Le beurre par de la margarine ou alors 5 c\u00e0s d\u2019huile v\u00e9g\u00e9tale. Concernant le lait et le yaourt, vous pouvez prendre des versions v\u00e9g\u00e9tales, \u00e7a fonctionne tr\u00e8s bien aussi ! Pour la\np\u00e2te \u00e0 tartiner\n, notre recette est v\u00e9gane alors vous pouvez l\u2019utiliser en toute circonstance \ud83d\ude09 Pour la formation des \u201cnoix\u201d de p\u00e2te \u00e0 tartiner, si la texture est peu \u201cfig\u00e9e\u201d. Ne vous inqui\u00e9tez pas ! Au contraire, cela facilitera la formation de la noix et surtout \u00e0 la cuisson, la p\u00e2te \u00e0 tartiner va retrouver sa texture bien onctueuse.\nPour les fans de muffins, retrouvez mes recettes pr\u00e9f\u00e9r\u00e9es : les\nmuffins \u00e0 la myrtille\n, les\nmuffins v\u00e9gane chocolat courgette\nou encore les\nmuffins au citron et fleurs de sureau\n.\nMuffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner\nDaniela\nDes muffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner ultra gourmands ! Un grand classique facile \u00e0 faire avec un r\u00e9sultat toujours parfait (ou presque, les d\u00e9bordements de chocolat \u00e7a arrive). Effet garanti \u00e0 la d\u00e9gustation !\n4.54\n/5 avec\n63\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n15\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nType de plat\nDessert, Go\u00fbter, Snack\nPortions\n12\nmuffins\nIngr\u00e9dients\n1x\n2x\n3x\n280\ng\nde farine\n\u00bd\nsachet de levure chimique\n1\npinc\u00e9e de sel\n2\noeufs\n100\ng\nde beurre\n100\ng\nde sucre\n100\nml\nde lait\n125\ng\nde yaourt nature\ngrec ou brass\u00e9 comme vous voulez\n1\nsachet de sucre vanill\u00e9\np\u00e2te \u00e0 tartiner\nInstructions\nM\u00e9langer dans un saladier la farine, le sel et la levure. R\u00e9server.\nDans un autre saladier, battre les \u0153ufs avec le sucre et le sucre vanill\u00e9.\nDans le m\u00eame saladier que les \u0153ufs battus avec le sucre, verser le beurre fondu et m\u00e9langer. Puis ajouter le lait et le yaourt et m\u00e9langer de nouveau.\nEnfin verser les ingr\u00e9dients secs sur les ingr\u00e9dients liquides.\nPr\u00e9chauffer le four \u00e0 180\u00b0C.\nRemplir les moules au tiers avec la p\u00e2te, d\u00e9poser une (grosse) noix de p\u00e2te \u00e0 tartiner au centre puis recouvrir de p\u00e2te \u00e0 5/7mm du bord.\nEnfourner et cuire 20 min.\nTadaaam c\u2019est pr\u00eat ! Les muffins sont d\u00e9licieux tels quels mais libre \u00e0 vous de les recouvrir de p\u00e2te \u00e0 tartiner et de les saupoudrer de noisettes concass\u00e9es pour les rendre encore plus gourmands !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nMuffins et Scones\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\nTags:\nmuffins\n,\nmuffins fourr\u00e9s\n,\np\u00e2te \u00e0 tartiner\nCake Marbr\u00e9 Vegan, Gla\u00e7age Rocher\nSalade de Vermicelles de Riz \u00e0 la Sauce Miel-Gingembre-Cacahu\u00e8tes (inspiration Tha\u00ef)\n6 thoughts on \u201cMuffins fourr\u00e9s \u00e0 la p\u00e2te \u00e0 tartiner\u201d\nLadyMilonguera\ndit\u00a0:\n11 mars 2021 \u00e0 8 h 12 min\nGourmands ces muffins !\nchargement\u2026\nR\u00e9pondre\ncynthia\ndit\u00a0:\n14 avril 2021 \u00e0 10 h 05 min\nPas de chance pour ma premi\u00e8re! Ma p\u00e2te \u00e0 tartiner \u00e9tait trop liquide du coup elle s\u2019est m\u00e9lang\u00e9e \u00e0 la p\u00e2te et le dessus \u00e0 gonfl\u00e9 que d\u2019un c\u00f4t\u00e9 bref ils ne ressemblent \u00e0 rien mais par contre ils sont super bons \ud83d\ude0b\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n14 avril 2021 \u00e0 19 h 18 min\nBon l\u2019essentiel c\u2019est que vous vous soyez r\u00e9gal\u00e9 \ud83d\ude42 petite astuce pour la p\u00e2te \u00e0 tartiner quand elle est un peu liquide (l\u2019\u00e9t\u00e9 par exemple) on peut la placer au frigo 30min avant de faire les muffins \ud83d\ude09 !!\nchargement\u2026\nR\u00e9pondre\nLLABRES\ndit\u00a0:\n23 f\u00e9vrier 2025 \u00e0 7 h 51 min\nMes muffins \u00e9taient d\u00e9licieux\u2026 j ai remplac\u00e9 le beurre par de l huile  et  j ai mis bcp moins de sucre\nmerci pour cette recette .\nchargement\u2026\nR\u00e9pondre\nV\u00e9ronique JOFFRE\ndit\u00a0:\n21 septembre 2025 \u00e0 14 h 35 min\nSuper recette ! J\u2019ai fait une version sans gluten avec de la farine de riz et de ch\u00e2taigne, et remplac\u00e9 le beurre par de l\u2019huile d\u2019olive et le sucre par du sucre de coco, au top !\nchargement\u2026\nR\u00e9pondre\nV\u00e9ronique JOFFRE\ndit\u00a0:\n21 septembre 2025 \u00e0 14 h 36 min\n(et lait d\u2019amande + yaourt de coco, pour une version sans lactose ;-))\nchargement\u2026\nR\u00e9pondre\n4.54 from 63 votes (\n61 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

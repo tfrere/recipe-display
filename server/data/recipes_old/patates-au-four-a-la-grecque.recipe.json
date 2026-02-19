@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "title": "Patates au four \u00e0 la Grecque",
+    "description": "Cette recette de patates au four \u00e0 la grecque a berc\u00e9 mon enfance. Toute simple, hyper savoureuse, elle est parfaite en accompagnement de tout !",
+    "servings": 4,
+    "prepTime": "PT15M",
+    "cookTime": "PT50M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "citron",
+      "origan",
+      "patate",
+      "pomme de terre au four",
+      "recette grecque",
+      "accompagnement",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/02/Patates-au-four-a-la-grecque-2-of-2.jpg",
+    "nationality": "Greek",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Parfaite en accompagnement de tout.",
+      "Servir ti\u00e8de, avec ou sans f\u00eata.",
+      "Le secret r\u00e9side dans le jus de citron, l'huile d'olive g\u00e9n\u00e9reuse et l'utilisation d'un bon origan s\u00e9ch\u00e9 (grec ou italien).",
+      "M\u00e9langer toutes les 10 \u00e0 15 min au cours de la cuisson."
+    ],
+    "slug": "patates-au-four-a-la-grecque",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/02/Patates-au-four-a-la-grecque-2-of-2.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/02/28/patates-au-four-a-la-grecque/",
+    "image": "images/patates-au-four-a-la-grecque.jpg",
+    "createdAt": "2026-02-09T21:04:02.535175",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 50.0,
+    "totalCookingTime": 0.0,
+    "nutritionPerServing": {
+      "calories": 547.3,
+      "protein": 7.8,
+      "fat": 28.6,
+      "carbs": 67.8,
+      "fiber": 8.0,
+      "confidence": "medium",
+      "resolvedIngredients": 3,
+      "matchedIngredients": 3,
+      "totalIngredients": 4,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "potatoes",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 7.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9pluch\u00e9es",
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 7.5,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "lemon_juice",
+      "name": "citron, jus",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "jus",
+      "notes": null,
+      "optional": false,
+      "name_en": "lemon juice"
+    },
+    {
+      "id": "dried_oregano",
+      "name": "origan s\u00e9ch\u00e9",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dried oregano"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Plat allant au four"
+  ],
+  "steps": [
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 200\u00b0C.",
+      "duration": null,
+      "temperature": 200,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cut_potatoes",
+      "action": "Couper les pommes de terre en deux, puis en 4 quartiers (ou plus si les pommes de terre sont tr\u00e8s grosses). Les rincer.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "potatoes"
+      ],
+      "produces": "cut_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "arrange_potatoes",
+      "action": "Disposer les pommes de terre dans un plat allant au four.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cut_potatoes"
+      ],
+      "produces": "arranged_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "season_potatoes",
+      "action": "Ajouter l'huile d'olive, le jus de citron, l'origan, le sel et le poivre. M\u00e9langer pour que toutes les pommes de terre soient bien enduites.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "arranged_potatoes",
+        "olive_oil",
+        "lemon_juice",
+        "dried_oregano",
+        "salt",
+        "pepper"
+      ],
+      "produces": "seasoned_potatoes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_potatoes",
+      "action": "Enfourner le plat \u00e0 mi-hauteur. Cuire pendant 40min \u00e0 50min, en m\u00e9langeant toutes les 10min \u00e0 15min.",
+      "duration": "PT50M",
+      "temperature": 200,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "seasoned_potatoes"
+      ],
+      "produces": "baked_potatoes",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "pommes de terre tendres"
+    },
+    {
+      "id": "cool_potatoes",
+      "action": "Laisser refroidir et servir ti\u00e8de.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "baked_potatoes"
+      ],
+      "produces": "patates_grecques",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "patates_grecques",
+  "originalText": "Patates au four \u00e0 la Grecque - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n28 f\u00e9vrier 2022\nPatates au four \u00e0 la Grecque\nAller \u00e0 la recette\nCette recette de patates au four \u00e0 la grecque a berc\u00e9 mon enfance. Et mon \u00e2ge adulte aussi d\u2019ailleurs. Ma vie quoi !\nChez moi, les patates au four se cuisinent comme \u00e7a. C\u2019est la recette de base de patates au four !\nToute simple, hyper savoureuse.\nElle est parfaite en accompagnement de tout ! Haha !\nSon secret r\u00e9side principalement dans l\u2019ajout de jus de citron dans les pommes de terre avant de les enfourner. Mais aussi dans la quantit\u00e9 assez g\u00e9n\u00e9reuse d\u2019huile d\u2019olive. Et finalement dans l\u2019utilisation d\u2019origan.\nJe vous parle de vrai origan. Pas de ces herbes s\u00e9ch\u00e9es sans go\u00fbt qu\u2019on trouve dans les supermarch\u00e9s ! Je trouve qu\u2019il y a des herbes s\u00e9ch\u00e9es qui, peu importent o\u00f9 on les ach\u00e8te, sont bonnes. C\u2019est le cas de l\u2019aneth s\u00e9ch\u00e9 et du thym par exemple.\nMais alors pour l\u2019origan\u2026 Je ne sais pas pourquoi mais celui qu\u2019on trouve en supermarch\u00e9 en France n\u2019a tout simplement pas de go\u00fbt. Si vous allez en Gr\u00e8ce, et que vous sentez un sachet d\u2019origan s\u00e9ch\u00e9\u2026 Ca n\u2019a rien \u00e0 voir ! Le parfum est fort et enivrant. On sent le soleil et la s\u00e9cheresse de la montagne dans le sachet !!\nDu coup, comme tout le monde ne peut pas se permettre d\u2019aller en Gr\u00e8ce pour acheter de l\u2019origan. Je vous conseille de vous en procurer de gros paquets dans les \u00e9piceries Grecques ou m\u00e9diterran\u00e9ennes. L\u2019origan italien est bon aussi !\nJe me t\u00e2te \u00e0 ouvrir une entreprise d\u2019import d\u2019origan d\u2019ailleurs !\nBref, voici la recette de ces patates au four \u00e0 la grecque ! Et si vous cherchez d\u2019autres recettes grecques, je vous conseille\nla fassolada\net\nla soupe de lentilles \u00e0 la grecque\n!\nPatates au four \u00e0 la grecque\n4.49\n/5 avec\n89\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nTemps total\n50\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n7-8\nbelles pommes de terre \u00e0 chair ferme \u00e9pluch\u00e9es\n7-8\nc-\u00e0-s d\u2019huile d\u2019olive\nle jus d\u2019\u00bd citron\n1\nc-\u00e0-s d\u2019origan\nsel\npoivre\nInstructions\nCouper les pommes de terre en deux, puis en 4 quartiers (ou plus si les pommes de terre sont tr\u00e8s grosses). Les rincer puis les disposer dans un plat allant four.\nAjouter les autres ingr\u00e9dients et m\u00e9langer pour que toutes les pommes de terre soient bien enduites.\nEnfourner \u00e0 mi-hauteur \u00e0 200 degr\u00e9s. M\u00e9langer toutes les 10 \u00e0 15 min au cours de la cuisson. Laisser cuire entre 40min et 50min. Quand les pommes de terre sont tendres, c\u2019est cuit !\nLaisser refroidir, et servir ti\u00e8de, avec ou sans f\u00eata \ud83d\ude42\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPomme de terre\n,\nPrintemps\nTags:\ncitron\n,\norigan\n,\npatate\n,\npatate \u00e0 la grecque\n,\npomme de terre \u00e0 la grecque\n,\npomme de terre au four\n,\nrecette de pomme de terre\n,\nrecette grecque\n,\nrecette patate\nBlanquette V\u00e9g\u00e9tarienne au Chou Romanesco\nMuffins au caramel\n3 thoughts on \u201cPatates au four \u00e0 la Grecque\u201d\nLadyMilonguera\ndit\u00a0:\n28 f\u00e9vrier 2022 \u00e0 15 h 53 min\nSympa ces patates au four.\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phane\ndit\u00a0:\n24 mars 2022 \u00e0 10 h 56 min\nTrop bon merci !!\nchargement\u2026\nR\u00e9pondre\nDiana\ndit\u00a0:\n10 juillet 2022 \u00e0 16 h 10 min\nSuper bonnes ! J\u2019ai \u00e9miett\u00e9 un peu de feta dessus avant de servir. J\u2019ai servi en accompagnement de courgettes grill\u00e9es sauce yaourt tahini.\nchargement\u2026\nR\u00e9pondre\n4.49 from 89 votes (\n86 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

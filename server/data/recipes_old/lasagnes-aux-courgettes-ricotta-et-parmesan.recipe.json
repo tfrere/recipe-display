@@ -1,0 +1,641 @@
+{
+  "metadata": {
+    "title": "Lasagnes aux Courgettes Ricotta et Parmesan",
+    "description": "Les Lasagnes aux Courgettes, Ricotta et Parmesan rejoignent le blog ! Une recette v\u00e9g\u00e9tarienne avec une sauce tomate simple, une couche de fromages et une b\u00e9chamel au parmesan.",
+    "servings": 8,
+    "prepTime": "PT30M",
+    "cookTime": "PT1H10M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "lasagne",
+      "courgette",
+      "v\u00e9g\u00e9tarien",
+      "printemps",
+      "\u00e9t\u00e9",
+      "plat au four"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Lasagnes-courgettes-1-of-6.jpg",
+    "nationality": "Italian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pour une tenue id\u00e9ale, il est pr\u00e9f\u00e9rable de laisser les lasagnes refroidir compl\u00e8tement puis de les r\u00e9chauffer avant de les d\u00e9guster !",
+      "Il n'est pas n\u00e9cessaire de pr\u00e9cuire les feuilles de lasagnes si la sauce tomate est suffisamment liquide.",
+      "Une astuce : d\u00e9poser les feuilles de lasagnes dans un grand plat avec de l'eau chaude (pas bouillante) pour les ramollir et faciliter le montage."
+    ],
+    "slug": "lasagnes-aux-courgettes-ricotta-et-parmesan",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2022/06/Lasagnes-courgettes-1-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2022/06/27/lasagnes-aux-courgettes-ricotta-et-parmesan/",
+    "image": "images/lasagnes-aux-courgettes-ricotta-et-parmesan.webp",
+    "createdAt": "2026-02-09T21:24:11.225699",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 145.0,
+    "totalCookingTime": 75.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 446.0,
+      "protein": 23.6,
+      "fat": 26.8,
+      "carbs": 29.5,
+      "fiber": 3.9,
+      "confidence": "high",
+      "resolvedIngredients": 14,
+      "matchedIngredients": 14,
+      "totalIngredients": 14,
+      "negligibleIngredients": 6,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "courgette",
+      "name": "courgette",
+      "quantity": 650.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "zucchini"
+    },
+    {
+      "id": "onion",
+      "name": "oignon",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "onion"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 4.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "tomato_coulis",
+      "name": "coulis de tomate",
+      "quantity": 1000.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tomato coulis"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 300.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "sugar",
+      "name": "sucre",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sugar"
+    },
+    {
+      "id": "oregano",
+      "name": "origan",
+      "quantity": 2.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "oregano"
+    },
+    {
+      "id": "thyme",
+      "name": "thym",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "thyme"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    },
+    {
+      "id": "ricotta",
+      "name": "ricotta",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ricotta"
+    },
+    {
+      "id": "mozzarella",
+      "name": "mozzarella",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Mozzarella"
+    },
+    {
+      "id": "parmesan",
+      "name": "parmesan r\u00e2p\u00e9",
+      "quantity": 170.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "grated parmesan"
+    },
+    {
+      "id": "basil",
+      "name": "basilic",
+      "quantity": 15.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "feuilles",
+      "optional": false,
+      "name_en": "basil"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 35.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "flour",
+      "name": "farine",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "milk",
+      "name": "lait",
+      "quantity": 350.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "whole milk"
+    },
+    {
+      "id": "nutmeg",
+      "name": "noix de muscade moulue",
+      "quantity": 1.0,
+      "unit": "pinch",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ground nutmeg"
+    },
+    {
+      "id": "lasagna_sheets",
+      "name": "feuilles de lasagne",
+      "quantity": 240.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "lasagna noodles"
+    }
+  ],
+  "tools": [
+    "Faitout",
+    "Plat \u00e0 gratin"
+  ],
+  "steps": [
+    {
+      "id": "cut_vegetables",
+      "action": "Couper les courgettes en deux dans la longueur puis en rondelles d'environ 1/2cm. \u00c9plucher et \u00e9mincer les oignons.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_courgettes",
+      "uses": [
+        "courgette",
+        "onion"
+      ],
+      "produces": "cut_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_vegetables",
+      "action": "Faire revenir les oignons et les courgettes dans un faitout avec l'huile d'olive, \u00e0 feu moyen-fort pendant 7-8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_courgettes",
+      "uses": [
+        "cut_vegetables",
+        "olive_oil"
+      ],
+      "produces": "sauteed_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_to_sauce",
+      "action": "Presser 2 gousses d'ail et les ajouter.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_courgettes",
+      "uses": [
+        "garlic",
+        "sauteed_vegetables"
+      ],
+      "produces": "vegetables_with_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_tomato_base",
+      "action": "Ajouter le coulis de tomate, l'eau, le sucre, l'origan, le thym, le sel et le poivre.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce_tomate_aux_courgettes",
+      "uses": [
+        "vegetables_with_garlic",
+        "tomato_coulis",
+        "water",
+        "sugar",
+        "oregano",
+        "thyme",
+        "salt",
+        "pepper"
+      ],
+      "produces": "tomato_sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_sauce",
+      "action": "Baisser le feu pour avoir de petits bouillons, couvrir et laisser mijoter 35min en remuant de temps en temps.",
+      "duration": "PT35M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "sauce_tomate_aux_courgettes",
+      "uses": [
+        "tomato_sauce_base"
+      ],
+      "produces": "zucchini_tomato_sauce",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "mix_cheeses",
+      "action": "Dans un saladier, m\u00e9langer la ricotta, la mozzarella et 70g de parmesan r\u00e2p\u00e9.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_de_fromages",
+      "uses": [
+        "ricotta",
+        "mozzarella",
+        "parmesan"
+      ],
+      "produces": "cheese_mixture_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_basil_to_cheese",
+      "action": "Presser 2 gousses d'ail et hacher grossi\u00e8rement les feuilles de basilic. Les ajouter au m\u00e9lange de fromages et bien m\u00e9langer.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "couche_de_fromages",
+      "uses": [
+        "cheese_mixture_base",
+        "garlic",
+        "basil"
+      ],
+      "produces": "cheese_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melt_butter",
+      "action": "Dans une casserole, faire fondre le beurre \u00e0 feu moyen.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "butter"
+      ],
+      "produces": "melted_butter",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "make_roux",
+      "action": "Verser la farine dans le beurre et m\u00e9langer pour obtenir un roux.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "melted_butter",
+        "flour"
+      ],
+      "produces": "roux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_milk_to_roux",
+      "action": "Verser le lait petit \u00e0 petit tout en m\u00e9langeant avec un fouet. La b\u00e9chamel va \u00e9paissir petit \u00e0 petit.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "roux",
+        "milk"
+      ],
+      "produces": "bechamel_base",
+      "requires": [],
+      "visualCue": "\u00e9paississement"
+    },
+    {
+      "id": "thicken_bechamel",
+      "action": "Une fois tout le lait incorpor\u00e9, laisser \u00e9paissir un peu si n\u00e9cessaire.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "bechamel_base"
+      ],
+      "produces": "thickened_bechamel",
+      "requires": [],
+      "visualCue": "\u00e9paissi"
+    },
+    {
+      "id": "season_bechamel",
+      "action": "Ajouter la muscade, le sel, le poivre et 100g de parmesan r\u00e2p\u00e9. M\u00e9langer bien.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "bechamel_au_parmesan",
+      "uses": [
+        "thickened_bechamel",
+        "nutmeg",
+        "salt",
+        "pepper",
+        "parmesan"
+      ],
+      "produces": "parmesan_bechamel",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffer le four \u00e0 190\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 190,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "first_layer_sauce",
+      "action": "Verser une louche de sauce tomate aux courgettes au fond du plat, puis tapisser avec des feuilles de lasagnes non cuites.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "zucchini_tomato_sauce",
+        "lasagna_sheets"
+      ],
+      "produces": "first_lasagna_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_half_sauce",
+      "action": "Verser la moiti\u00e9 de la sauce tomate aux courgettes restante.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "first_lasagna_layer",
+        "zucchini_tomato_sauce"
+      ],
+      "produces": "sauce_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_lasagna_sheets",
+      "action": "D\u00e9poser une couche de feuilles de lasagnes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "sauce_layer",
+        "lasagna_sheets"
+      ],
+      "produces": "second_lasagna_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cheese_filling",
+      "action": "R\u00e9partir uniform\u00e9ment tout le m\u00e9lange de fromages par-dessus.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "second_lasagna_layer",
+        "cheese_filling"
+      ],
+      "produces": "cheese_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_third_lasagna_layer",
+      "action": "D\u00e9poser une nouvelle couche de feuilles de lasagnes.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "cheese_layer",
+        "lasagna_sheets"
+      ],
+      "produces": "third_lasagna_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_remaining_sauce",
+      "action": "Verser le reste de la sauce aux courgettes, puis une couche de feuilles de lasagnes.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "third_lasagna_layer",
+        "zucchini_tomato_sauce",
+        "lasagna_sheets"
+      ],
+      "produces": "final_sauce_layer",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_bechamel_top",
+      "action": "Enfin, verser toute la b\u00e9chamel au parmesan sur le dessus.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "final_sauce_layer",
+        "parmesan_bechamel"
+      ],
+      "produces": "assembled_lasagna",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake_lasagna",
+      "action": "Enfourner \u00e0 mi-hauteur pour 35min.",
+      "duration": "PT35M",
+      "temperature": 190,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "montage_et_cuisson",
+      "uses": [
+        "assembled_lasagna"
+      ],
+      "produces": "baked_lasagna",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": null
+    }
+  ],
+  "finalState": "baked_lasagna",
+  "originalText": "Lasagnes aux Courgettes Ricotta et Parmesan - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n27 juin 2022\nLasagnes aux Courgettes Ricotta et Parmesan\nAller \u00e0 la recette\nLes Lasagnes aux Courgettes, Ricotta et Parmesan rejoignent le blog !\nC\u2019est la troisi\u00e8me recette de lasagnes, et je ne compte pas m\u2019arr\u00eater de si t\u00f4t ! Vous pouvez trouver\nles lasagnes d\u2019aubergines ici\n, et\nles lasagnes aux blettes ici\n.\nJe ne sais pas pourquoi mais beaucoup d\u2019entre nous sont intimid\u00e9s par les lasagnes. Est-ce \u00e0 cause des multiples couches ? Ou parce qu\u2019on se demande : \u201cmais, faut cuire les feuilles de lasagnes avant, non ?\u201d. Ou juste parce qu\u2019il faut le dire, un beau plat de lasagnes\u2026 C\u2019est un peu intimidant ?\nToujours est-il, qu\u2019en vrai, ce n\u2019est pas compliqu\u00e9. \u00c7a peut \u00eatre un peu long. Je vous l\u2019accorde. Surtout parce qu\u2019il y a les diff\u00e9rentes couches \u00e0 pr\u00e9parer.\nDans cette recette, j\u2019ai fait une sauce tomate tr\u00e8s simple. Et j\u2019y ai fait cuire les courgettes.\nDe plus, je ne pr\u00e9cuis pas mes feuilles de lasagnes. Par exp\u00e9rience, si la sauce tomate est suffisamment liquide. Ce n\u2019est pas n\u00e9cessaire de faire cuire les feuilles. Et \u00e7a \u00e9vite une bonne gal\u00e8re quand m\u00eame. Une fois cuites, elles collent. Il faut donc les poser en rang d\u2019oignons sur un torchon. J\u2019ai une grande cuisine\u2026 Mais bon.\nSinon, il y a une technique que j\u2019ai d\u00e9couverte il y a peu. D\u00e9poser les feuilles dans un grand plat avec de l\u2019eau chaude. Pas bouillante, juste chaude. Ca ramollit les feuilles, elles sont plus facile \u00e0 r\u00e9partir. Et comme elles ne sont pas compl\u00e8tement cuites, elles collent moins, et on peut les d\u00e9tacher.\nMais honn\u00eatement, je pr\u00e9f\u00e8re laisser mes lasagnes au four 5min de plus. Et ajouter un peu plus d\u2019eau \u00e0 ma sauce tomate. C\u2019est moins laborieux. Je salis moins de plat. Et \u00e7a fonctionne parfaitement !\nAlors elles vous tentes ces Lasagnes aux Courgettes, Ricotta et Parmesan ?\nLasagnes aux Courgettes, Ricotta et Parmesan\nNatacha\n4.50\n/5 avec\n90\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n35\nminutes\nmin\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les courgettes \u00e0 la sauce tomate\n650\ng\nde courgette\n2-3\n2\noignons\n2\nc\u00e0s d\u2019huile d\u2019olive\n2\ngousses d\u2019ail\n1\nkg\nde coulis de tomate\n300\nml\nd\u2019eau\n2\nc\u00e0c de sucre\n2\nc\u00e0c d\u2019origan\n1\nc\u00e0c de thym\nsel\npoivre\nPour la couche de fromages\n200\ng\nde ricotta\n250\ng\nde mozzarella\n70\ng\nde parmesan r\u00e2p\u00e9\n2\ngousses d\u2019ail\n15\nfeuilles de basilic\nPour la b\u00e9chamel au parmesan\n35\ng\nde beurre\n50\ng\nde farine\n350\nml\nde lait\n100\ng\nde parmesan r\u00e2p\u00e9\n1\npinc\u00e9e de noix de muscade moulue\nsel\npoivre\nPour le montage des lasagnes\n240\ng\nde feuilles de lasagne\nInstructions\nPr\u00e9paration de la sauce tomate\nCouper les courgettes en deux dans la longueur puis en rondelles d\u2019environ 1/2cm.\n\u00c9plucher et \u00e9mincer les oignons.\nFaire revenir les oignons et les courgettes dans un faitout avec l\u2019huile d\u2019olive, \u00e0 feu moyen-fort pendant 7-8min\nPresser les gousses d\u2019ail et les ajouter.\nAjouter tous les autres ingr\u00e9dients de la sauce.\nBaisser le feu pour avoir de petits bouillons et couvrir.\nLaisser mijoter 35 min en remuant de temps en temps.\nPr\u00e9paration du fromage\nDans un saladier, m\u00e9langer les 3 fromages.\nAjouter les gousses d\u2019ail press\u00e9es et les feuilles de basilic grossi\u00e8rement hach\u00e9es.\nM\u00e9langer et r\u00e9server.\nPr\u00e9paration de la b\u00e9chamel au parmesan\nDans une casserole, faire fondre le beurre \u00e0 feu moyen.\nVerser la farine dans le beurre et m\u00e9langer. Vous obtiendrez une p\u00e2te appel\u00e9e \u201croux\u201d.\nVerser le lait petit \u00e0 petit tout en m\u00e9langeant avec un fouet.\nLa b\u00e9chamel va \u00e9paissir petit \u00e0 petit.\nUne fois tout le lait incorpor\u00e9, laisser \u00e9paissir un peu si n\u00e9cessaire.\nAjouter la muscade, le sel, le poivre et le parmesan.\nM\u00e9langer bien.\nPr\u00e9paration des lasagnes\nPr\u00e9chauffer le four \u00e0 190\u00b0C.\nVerser une louche de sauce tomate aux courgettes au fond de votre plat, puis tapisser avec des feuilles de lasagnes non cuites.\nVerser la moiti\u00e9 de la sauce tomate aux courgettes.\nD\u00e9poser une couche de feuilles de lasagnes.\nR\u00e9partir le fromage par-dessus.\nD\u00e9poser une nouvelle couche de feuilles de lasagnes.\nVerser le reste de la sauce aux courgettes, puis une couche de feuilles de lasagnes.\nEnfin, verser la b\u00e9chamel.\nEnfourner \u00e0 mi-hauteur pour 35min.\nPour une tenue id\u00e9ale, il est pr\u00e9f\u00e9rable de laisser les lasagnes refroidir compl\u00e8tement puis de les r\u00e9chauffer avant de les d\u00e9guster !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCourgette\n,\n\u00c9t\u00e9\n,\nPlats au Four\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nlasagne\n,\nlasagne parmesan\n,\nlasagnes\n,\nlasagnes aux courgettes\n,\nlasagnes maison\n,\nlasagnes v\u00e9g\u00e9tariennes\nClafoutis \u00e0 la coco et fruits rouges\nSalade aux Haricots \u00e0 \u0153il noir\n5 thoughts on \u201cLasagnes aux Courgettes Ricotta et Parmesan\u201d\nPascal\ndit\u00a0:\n9 juillet 2022 \u00e0 13 h 46 min\nR\u00e9alis\u00e9es hier, des lasagnes hyper fondantes, avec beaucoup de go\u00fbt. J\u2019ai juste rajout\u00e9 un peu de chorizo pour ramener du piquant. Les cuire et les laisser refroidir avant de les r\u00e9chauffer pour le service est une tr\u00e8s bonne id\u00e9e. Merci pour cette recette et cette astuce.\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n11 juillet 2022 \u00e0 13 h 52 min\nAvec plaisir ! Merci pour ton commentaire !\nchargement\u2026\nR\u00e9pondre\nAur\u00e9lie\ndit\u00a0:\n8 ao\u00fbt 2023 \u00e0 12 h 46 min\nJ\u2019ai suivi la recette \u00e0 la lettre, c\u2019\u00e9tait tellement bon !\nchargement\u2026\nR\u00e9pondre\nSandra\ndit\u00a0:\n11 juin 2025 \u00e0 17 h 13 min\nLa pr\u00e9paration m\u2019a pris beaucoup de temps mais c\u2019est d\u00e9licieux ! Merci pour cette recette.\nchargement\u2026\nR\u00e9pondre\nSt\u00e9phanie\ndit\u00a0:\n4 f\u00e9vrier 2026 \u00e0 17 h 04 min\nEncore une recette qui nous permets de r\u00e9galer tout le monde avec des blettes. Ce sui n\u2019est pas \u00e9vident.\nTrop bon\nchargement\u2026\nR\u00e9pondre\n4.50 from 90 votes (\n87 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 75.0
+}

@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "title": "Galettes de petits pois \u00e0 l'indienne",
+    "description": "Que diriez-vous de petites Galettes de petits pois \u00e0 l'indienne ? C'est une fa\u00e7on originale et d\u00e9licieuse de d\u00e9guster ce l\u00e9gume de saison !",
+    "servings": 6,
+    "prepTime": "PT20M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "galettes",
+      "petits pois",
+      "printemps",
+      "v\u00e9g\u00e9tarien"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Galettes-petits-pois-a-lindienne-2-of-4.jpg",
+    "nationality": "Indian-inspired",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Pensez \u00e0 choisir des pommes de terre \u00e0 chair ferme. \u00e7a fera toute la diff\u00e9rence pour la tenue des galettes. Le cas \u00e9ch\u00e9ant, vous aurez peut-\u00eatre besoin d'ajouter un peu de f\u00e9cule ou de farine \u00e0 votre pr\u00e9paration.",
+      "La sauce sera meilleure si vous la pr\u00e9parez un peu en avance."
+    ],
+    "slug": "galettes-de-petits-pois-a-l-indienne",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/06/Galettes-petits-pois-a-lindienne-2-of-4.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/06/20/galettes-de-petits-pois-a-lindienne/",
+    "image": "images/galettes-de-petits-pois-a-l-indienne.webp",
+    "createdAt": "2026-02-09T22:11:34.487625",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "totalTime": 27.0,
+    "totalCookingTime": 7.0,
+    "peakMonths": [
+      "July",
+      "June",
+      "May"
+    ],
+    "nutritionPerServing": {
+      "calories": 91.4,
+      "protein": 3.8,
+      "fat": 0.3,
+      "carbs": 19.1,
+      "fiber": 3.7,
+      "confidence": "medium",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 7,
+      "totalIngredients": 9,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "petits_pois",
+      "name": "petits pois",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": "frais ou surgel\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "Peas"
+    },
+    {
+      "id": "pommes_de_terre",
+      "name": "pommes de terre \u00e0 chair ferme",
+      "quantity": 400.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Potatoes"
+    },
+    {
+      "id": "echalotes",
+      "name": "\u00e9chalotes",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "shallots"
+    },
+    {
+      "id": "curry_poudre_galettes",
+      "name": "curry en poudre",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour les galettes",
+      "optional": false,
+      "name_en": "Curry powder"
+    },
+    {
+      "id": "fenugrec",
+      "name": "fenugrec",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "fenugreek"
+    },
+    {
+      "id": "huile",
+      "name": "huile",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Oil"
+    },
+    {
+      "id": "coriandre",
+      "name": "coriandre",
+      "quantity": 0.5,
+      "unit": "bouquet",
+      "category": "produce",
+      "preparation": null,
+      "notes": "feuilles et tiges",
+      "optional": false,
+      "name_en": "coriander"
+    },
+    {
+      "id": "yaourt",
+      "name": "yaourt grec ou soja",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Greek yogurt or soy"
+    },
+    {
+      "id": "curry_poudre_sauce",
+      "name": "curry en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "pour la sauce",
+      "optional": false,
+      "name_en": "Curry powder"
+    },
+    {
+      "id": "ail_en_poudre",
+      "name": "ail en poudre",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic powder"
+    },
+    {
+      "id": "jus_de_citron",
+      "name": "jus de citron",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lemon juice"
+    },
+    {
+      "id": "sel",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    }
+  ],
+  "tools": [
+    "Cuiseur vapeur",
+    "Po\u00eale"
+  ],
+  "steps": [
+    {
+      "id": "preparer_legumes",
+      "action": "Ecossez les petits pois et d\u00e9taillez les pommes de terre en gros cubes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "petits_pois",
+        "pommes_de_terre"
+      ],
+      "produces": "legumes_prets_a_cuire",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_vapeur",
+      "action": "Faites-les cuire \u00e0 la vapeur jusqu'\u00e0 ce qu'ils soient tendres.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "galettes",
+      "uses": [
+        "legumes_prets_a_cuire"
+      ],
+      "produces": "legumes_cuits",
+      "requires": [],
+      "visualCue": "tendres"
+    },
+    {
+      "id": "emincer_echalotes",
+      "action": "Pendant ce temps, \u00e9mincez les \u00e9chalotes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "echalotes"
+      ],
+      "produces": "echalotes_emincees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_echalotes_epices",
+      "action": "Faites les revenir dans un fond d'huile avec les \u00e9pices pendant 6-7min, jusqu'\u00e0 ce qu'elles soient dor\u00e9es.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "echalotes_emincees",
+        "curry_poudre_galettes",
+        "fenugrec",
+        "huile"
+      ],
+      "produces": "echalotes_epicees_dorees",
+      "requires": [],
+      "visualCue": "dor\u00e9es"
+    },
+    {
+      "id": "ecraser_melanger",
+      "action": "Ecrasez grossi\u00e8rement les pommes de terre, petits pois et \u00e9chalotes. Salez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "legumes_cuits",
+        "echalotes_epicees_dorees",
+        "sel"
+      ],
+      "produces": "melange_galettes",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "former_galettes",
+      "action": "Formez 6 galettes.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "melange_galettes"
+      ],
+      "produces": "galettes_formees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_poele",
+      "action": "Faites chauffer votre po\u00eale \u00e0 feu moyen avec un fond d'huile.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "huile"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_galettes",
+      "action": "D\u00e9posez-y les galettes et faites-les dorer de chaque c\u00f4t\u00e9.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "galettes",
+      "uses": [
+        "galettes_formees",
+        "poele_chaude"
+      ],
+      "produces": "galettes_dorees",
+      "requires": [],
+      "visualCue": "dor\u00e9es de chaque c\u00f4t\u00e9"
+    },
+    {
+      "id": "hacher_coriandre",
+      "action": "Hachez finement la coriandre (feuilles et tiges).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "coriandre"
+      ],
+      "produces": "coriandre_hachee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "coriandre_hachee",
+        "yaourt",
+        "curry_poudre_sauce",
+        "ail_en_poudre",
+        "jus_de_citron"
+      ],
+      "produces": "sauce_indienne",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez les galettes avec la sauce.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "galettes_dorees",
+        "sauce_indienne"
+      ],
+      "produces": "galettes_petits_pois_indienne",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "galettes_petits_pois_indienne",
+  "originalText": "Galettes de petits pois \u00e0 l\u2019indienne - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 juin 2024\nGalettes de petits pois \u00e0 l\u2019indienne\nQue diriez-vous de petites Galettes de petits pois \u00e0 l\u2019indienne ? C\u2019est une fa\u00e7on originale et d\u00e9licieuse de d\u00e9guster ce l\u00e9gume de saison !\nVous savez comme il est important de manger de saison pour moi. Et on est en plein dans la saison des petits pois. J\u2019ai souvent du mal \u00e0 trouver des id\u00e9es de recettes sympa avec ce l\u00e9gume. J\u2019adorais \u00e7a quand j\u2019\u00e9tais petite mais \u00e9trangement en vieillissant je le trouve moins int\u00e9ressant.\nJ\u2019esp\u00e8re r\u00e9ussir \u00e0 me faire changer d\u2019avis \u00e0 moi-m\u00eame ! En ce moment, j\u2019aime le cuisiner\n\u00e0 la grecque\navec de l\u2019aneth, ou\nen curry\n!\nEn effet, j\u2019ai tendance \u00e0 le cuisiner avec pas mal d\u2019\u00e9pices. Je trouve que \u00e7a le rend plus int\u00e9ressant. Du coup, cette recette de Galettes de petits pois \u00e0 l\u2019indienne est une revisite d\u2019une ancienne recette du blog. Ma fa\u00e7on de cuisiner \u00e9volue avec le temps. Et j\u2019aime mettre \u00e0 jour certaines de mes recettes de temps en temps.\nLes galettes sont simples. Et la liste d\u2019ingr\u00e9dients assez courte. Je me suis inspir\u00e9e de la garniture de\ncette recette de samoussas\n.\nPensez \u00e0 choisir des pommes de terre \u00e0 chair ferme. \u00e7a fera toute la diff\u00e9rence pour la tenue des galettes. Le cas \u00e9ch\u00e9ant, vous aurez peut-\u00eatre besoin d\u2019ajouter un peu de f\u00e9cule ou de farine \u00e0 votre pr\u00e9paration.\nEt, comme souvent, pour moi, l\u2019un des secrets de ce plat est dans la sauce !\nUne belle sauce au yaourt bien onctueuse. Riche en herbes fra\u00eeches et en \u00e9pices. Qui vient apporter de la fra\u00eecheur et du go\u00fbt \u00e0 ces galettes !\nGalettes de petits pois \u00e0 l\u2019indienne\n4.52\n/5 avec\n77\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nTemps de cuisson\n30\nminutes\nmin\nPortions\n6\ngalettes\nIngr\u00e9dients\n1x\n2x\n3x\nPour les galettes\n200\ng\nde petits pois\nfrais ou surgel\u00e9s\n400\ng\nde pommes de terre \u00e0 chair ferme\n3\n\u00e9chalotes\n1,5\nc\u00e0c de curry en poudre\n1\nc\u00e0c de fenugrec\nhuile\nPour la sauce\n\u00bd\nbouquet de coriandre\n180\ng\nde yaourt grec ou soja\n\u00bd\nc\u00e0c de curry en poudre\n\u00bd\nc\u00e0c d\u2019ail en poudre\n1\nc\u00e0s de jus de citron\nsel\nInstructions\nPour les galettes\nEcossez les petits pois et d\u00e9taillez les pommes de terre en gros cubes. Faites-les cuire \u00e0 la vapeur jusqu\u2019\u00e0 ce qu\u2019ils soient tendres (env 20min).\nPendant ce temps, \u00e9mincez les \u00e9chalotes. Faites les revenir dans un fond d\u2019huile avec les \u00e9pices pendant 6-7min, jusqu\u2019\u00e0 ce qu\u2019elles soient dor\u00e9es.\nEcrasez grossi\u00e8rement les pommes de terre, petits pois et \u00e9chalotes. Salez. Formez 6 galettes.\nFaites chauffer votre po\u00eale \u00e0 feu moyen avec un fond d\u2019huile et d\u00e9posez-y les galettes.\nFaites-les dorer de chaque c\u00f4t\u00e9.\nPour la sauce\nHachez finement la coriandre (feuilles et tiges). M\u00e9langez tous les ingr\u00e9dients. La sauce sera meilleure si vous la pr\u00e9parez un peu en avance.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nBurgers, sandwichs et wraps\n,\nGalettes\n,\nPetits Pois\n,\nPrintemps\nTags:\ngalettes\nTarte fine asperges burrata\nArtichauts r\u00f4tis \u00e0 l\u2019ail et \u00e0 la feta\n2 thoughts on \u201cGalettes de petits pois \u00e0 l\u2019indienne\u201d\nSanita\ndit\u00a0:\n20 juin 2024 \u00e0 13 h 16 min\nBonjour ! C\u2019est la personne non-voyante. C\u2019est rigolo. C\u2019est gr\u00e2ce a une recette de galette l\u00e9gumes que j\u2019ai connu votre blog et c\u2019est galette partie de mes tables tr\u00e8s souvent donc je testerai celle-l\u00e0 d\u2019ici peu. Merci\nchargement\u2026\nR\u00e9pondre\nhelene\ndit\u00a0:\n8 juillet 2024 \u00e0 13 h 37 min\nExcellente recette! J\u2019ai voulu faire une seule grande galette pour toute la famille, mal m\u2019en a pris, mais en petites parts, c\u2019est parfait.\nchargement\u2026\nR\u00e9pondre\n4.52 from 77 votes (\n76 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 7.0
+}

@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "title": "Tarte Chocolat Noisette",
+    "description": "Cette tarte est compos\u00e9e de 3 parties compl\u00e9mentaires : une p\u00e2te sucr\u00e9e cacao noisette, un croustillant pralin\u00e9 feuilletine et une ganache au chocolat noir.",
+    "servings": 8,
+    "prepTime": "PT1H30M",
+    "cookTime": "PT15M",
+    "difficulty": "medium",
+    "recipeType": "dessert",
+    "tags": [
+      "chocolat",
+      "noisette",
+      "pralin",
+      "feuilletine",
+      "tarte",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2019/04/Tarte-choco-2-of-10-scaled.jpg",
+    "nationality": null,
+    "author": "Daniela",
+    "source": "Free The Pickle (inspir\u00e9e du blog \"Les yeux grognons\")",
+    "notes": [
+      "Recette inspir\u00e9e du blog \"Les yeux grognons\".",
+      "Peut \u00eatre pr\u00e9par\u00e9e la veille et conserv\u00e9e au r\u00e9frig\u00e9rateur sous cloche. Sortir 30min avant d\u00e9gustation.",
+      "Transport possible en glaci\u00e8re avec pain de glace si la temp\u00e9rature n'est pas trop \u00e9lev\u00e9e.",
+      "Pour la ganache : verser la cr\u00e8me et le miel chaud sur le chocolat, m\u00e9langer avec une maryse jusqu'\u00e0 ce qu'il fonde.",
+      "Le sucre de canne complet peut \u00eatre remplac\u00e9 par de la cassonade.",
+      "Diam\u00e8tre du cercle \u00e0 tarte : 20 cm."
+    ],
+    "slug": "tarte-chocolat-noisette",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2019/04/Tarte-choco-2-of-10-scaled.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/02/16/tarte-chocolat-noisette/",
+    "image": "images/tarte-chocolat-noisette.webp",
+    "createdAt": "2026-02-09T22:35:01.548941",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 135.0,
+    "totalCookingTime": 15.0,
+    "nutritionPerServing": {
+      "calories": 429.7,
+      "protein": 5.7,
+      "fat": 33.8,
+      "carbs": 28.4,
+      "fiber": 4.0,
+      "confidence": "medium",
+      "resolvedIngredients": 9,
+      "matchedIngredients": 11,
+      "totalIngredients": 15,
+      "negligibleIngredients": 0,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": []
+  },
+  "ingredients": [
+    {
+      "id": "farine",
+      "name": "farine",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "all-purpose flour"
+    },
+    {
+      "id": "poudre_de_noisette",
+      "name": "poudre de noisette",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "hazelnut powder"
+    },
+    {
+      "id": "fleur_de_sel",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "cacao_en_poudre",
+      "name": "cacao en poudre non sucr\u00e9",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "unsweetened cocoa powder"
+    },
+    {
+      "id": "sucre_de_canne",
+      "name": "sucre de canne complet",
+      "quantity": 100.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cane sugar"
+    },
+    {
+      "id": "beurre_pommade",
+      "name": "beurre pommade",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "softened butter"
+    },
+    {
+      "id": "oeuf",
+      "name": "oeuf",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "egg"
+    },
+    {
+      "id": "chocolat_noir_croustillant",
+      "name": "chocolat noir",
+      "quantity": 45.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "crepes_dentelles",
+      "name": "cr\u00eapes dentelles",
+      "quantity": 45.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Lace crepes"
+    },
+    {
+      "id": "pralines",
+      "name": "pralines mix\u00e9s/broy\u00e9",
+      "quantity": 45.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Crushed pralines"
+    },
+    {
+      "id": "fleur_de_sel_croustillant",
+      "name": "fleur de sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "sea salt flakes"
+    },
+    {
+      "id": "creme_fleurette",
+      "name": "cr\u00e8me fleurette",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Whipping cream"
+    },
+    {
+      "id": "chocolat_noir_ganache",
+      "name": "chocolat noir",
+      "quantity": 180.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "dark chocolate"
+    },
+    {
+      "id": "miel",
+      "name": "miel",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "honey"
+    },
+    {
+      "id": "beurre_mou",
+      "name": "beurre mou",
+      "quantity": 30.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Softened butter"
+    }
+  ],
+  "tools": [
+    "Cercle \u00e0 tarte (20 cm de diam\u00e8tre)",
+    "Maryse (spatule souple)"
+  ],
+  "steps": [
+    {
+      "id": "melanger_ingredients_secs",
+      "action": "Dans un saladier, m\u00e9langer la farine, la poudre de noisette, la fleur de sel, le cacao et le sucre ensemble.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sucr\u00e9e cacao noisette",
+      "uses": [
+        "farine",
+        "poudre_de_noisette",
+        "fleur_de_sel",
+        "cacao_en_poudre",
+        "sucre_de_canne"
+      ],
+      "produces": "melange_sec",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_beurre_oeuf",
+      "action": "Ajouter le beurre mou en m\u00e9langeant \u00e0 la main, puis ajouter l'oeuf, p\u00e9trir \u00e0 la fourchette et former une boule.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sucr\u00e9e cacao noisette",
+      "uses": [
+        "melange_sec",
+        "beurre_pommade",
+        "oeuf"
+      ],
+      "produces": "pate_boule",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_pate_repos",
+      "action": "Etaler votre p\u00e2te au rouleau entre deux feuilles de papier cuisson sur 3 mm d'\u00e9paisseur. R\u00e9server au frais pendant 1h.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "p\u00e2te sucr\u00e9e cacao noisette",
+      "uses": [
+        "pate_boule"
+      ],
+      "produces": "pate_etalee",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "foncer_cuire_pate",
+      "action": "Foncer la p\u00e2te dans un cercle \u00e0 tarte de 20 cm de diam\u00e8tre, piquer-la avec une fourchette et enfourner votre fond de tarte \u00e0 180\u00b0C durant 15min. R\u00e9server.",
+      "duration": "PT15M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "p\u00e2te sucr\u00e9e cacao noisette",
+      "uses": [
+        "pate_etalee"
+      ],
+      "produces": "fond_de_tarte_cuit",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "fondre_chocolat",
+      "action": "Faire fondre le chocolat au bain marie.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "croustillant pralin\u00e9 feuilletine",
+      "uses": [
+        "chocolat_noir_croustillant"
+      ],
+      "produces": "chocolat_fondu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ecraser_crepes",
+      "action": "Ecraser les cr\u00eapes dentelles.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "croustillant pralin\u00e9 feuilletine",
+      "uses": [
+        "crepes_dentelles"
+      ],
+      "produces": "crepes_ecrasees",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_croustillant",
+      "action": "Verser le chocolat fondu sur les pralines mix\u00e9s, ajouter la fleur de sel, les cr\u00eapes \u00e9cras\u00e9es et m\u00e9langer le tout.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "croustillant pralin\u00e9 feuilletine",
+      "uses": [
+        "chocolat_fondu",
+        "pralines",
+        "fleur_de_sel_croustillant",
+        "crepes_ecrasees"
+      ],
+      "produces": "melange_croustillant",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "etaler_croustillant",
+      "action": "Etaler le croustillant sur le fond de tarte refroidi. R\u00e9server au frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "croustillant pralin\u00e9 feuilletine",
+      "uses": [
+        "melange_croustillant",
+        "fond_de_tarte_cuit"
+      ],
+      "produces": "tarte_avec_croustillant",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_chocolat_ganache",
+      "action": "Couper le chocolat en morceaux et le placer dans un grand bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "chocolat_noir_ganache"
+      ],
+      "produces": "chocolat_morceaux",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "porter_creme_miel",
+      "action": "Dans une casserole, porter la cr\u00e8me et le miel \u00e0 \u00e9bullition.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "creme_fleurette",
+        "miel"
+      ],
+      "produces": "creme_miel_chaude",
+      "requires": [],
+      "visualCue": "\u00e9bullition"
+    },
+    {
+      "id": "emulsionner_ganache",
+      "action": "Verser un premier tiers de cr\u00e8me chaude sur le chocolat et r\u00e9aliser une \u00e9mulsion \u00e0 l'aide d'une maryse (le chocolat va fondre progressivement). R\u00e9p\u00e9ter l'op\u00e9ration pour les deux autres tiers de cr\u00e8me.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "chocolat_morceaux",
+        "creme_miel_chaude"
+      ],
+      "produces": "ganache_base",
+      "requires": [],
+      "visualCue": "chocolat fondu"
+    },
+    {
+      "id": "ajouter_beurre_ganache",
+      "action": "Ajouter le beurre coup\u00e9 en petits morceaux et m\u00e9langer d\u00e9licatement sans incorporer d'air.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "ganache_base",
+        "beurre_mou"
+      ],
+      "produces": "ganache_finale",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "verser_ganache_repos",
+      "action": "Verser la ganache sur le fond de tarte garni du croustillant et laisser prendre 1h au frais.",
+      "duration": "PT1H",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "ganache_finale",
+        "tarte_avec_croustillant"
+      ],
+      "produces": "tarte_avec_ganache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "decorer_tarte",
+      "action": "D\u00e9corer la tarte avec des petites noisettes et/ou quelques pralines.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "ganache chocolat noir",
+      "uses": [
+        "tarte_avec_ganache"
+      ],
+      "produces": "tarte_chocolat_noisette_finale",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "tarte_chocolat_noisette_finale",
+  "originalText": "Tarte Chocolat Noisette - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n16 f\u00e9vrier 2025\nTarte Chocolat Noisette\nCette ann\u00e9e, nous avons le droit \u00e0 un magnifique week-end de P\u00e2ques ensoleill\u00e9, un temps id\u00e9al pour une chasse aux \u0153ufs de folie ! Et apr\u00e8s le passage des cloches, pour continuer sur le th\u00e8me du chocolat, que diriez-vous d\u2019un superbe dessert au chocolat ? Aujourd\u2019hui, je vous propose une recette dont je suis tomb\u00e9e amoureuse, un d\u00e9lice de gourmandise chocolat\u00e9e avec un rendu visuel trop canon !\nCette recette, c\u2019est celle du blog de C\u00e9line \u201c\nLes yeux grognons\n\u201d, ici je l\u2019ai \u00e0 peine modifi\u00e9e. Au premier abord, la recette peut impressionner mais en suivant la recette pas \u00e0 pas, on se rend compte tr\u00e8s vite que ce n\u2019est vraiment pas si difficile que \u00e7a. Avec ce dessert, vous ne prenez aucun risque, famille et amis vous en redemanderont !\nCette tarte est compos\u00e9e de 3 parties, toutes compl\u00e9mentaires qui ensemble font de ce dessert une exp\u00e9rience \u00e0 part enti\u00e8re. Tout d\u2019abord, la p\u00e2te sucr\u00e9e cacao noisette, qui nous sert ici de base, est parfaitement \u00e9quilibr\u00e9e aussi bien au niveau du sucre que de l\u2019association des poudres de noisettes et de cacao. Ensuite, le croustillant, je dirais l\u2019\u00e9l\u00e9ment phare du dessert, cach\u00e9 sous la ganache, il surprend non seulement par la texture qu\u2019il apporte mais surtout par son go\u00fbt pralin\u00e9 (trop trop bon). Enfin, la ganache au chocolat, \u00e0 peine sucr\u00e9e, elle r\u00e9v\u00e8le toute l\u2019intensit\u00e9 du chocolat, un bonheur pour tous les amoureux de l\u2019or noir des gourmands\u2026\nRetrouvez \u00e9galement, nos autres recettes au chocolat comme les\nmuffins double chocolat\n,\nle g\u00e2teau au chocolat (et sa ganache au chocolat)\nou encore les\nfondants au chocolat express\n\u2026\nTarte Chocolat Noisette\nDaniela\n4.59\n/5 avec\n53\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n17\nminutes\nmin\nTemps de repos\n2\nheures\nh\nTemps total\n47\nminutes\nmin\nPortions\n8\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\nP\u00e2te sucr\u00e9e cacao noisette:\n100\ng\nfarine\n100\ng\nde poudre de noisette\n1\npinc\u00e9e de fleur de sel\n30\ng\nde cacao en poudre non sucr\u00e9\n100\ng\nde sucre de canne complet\n80\ng\nbeurre pommade\n1\noeuf\nCroustillant pralin\u00e9 feuilletine:\n45\ng\nde chocolat noir\n45\ng\nde cr\u00eapes dentelles\n45\ng\nde pralines mix\u00e9s/broy\u00e9\n1\npinc\u00e9e de fleur de sel\nGanache chocolat noir:\n200\ng\nde cr\u00e8me fleurette\n180\ng\nde chocolat noir\n10\ng\nde miel\n30\ng\nde beurre mou\nInstructions\nLa P\u00e2te sucr\u00e9e Cacao Noisette :\nDans un saladier, m\u00e9langer la farine, la poudre de noisette, la fleur de sel, le cacao et le sucre ensemble.\nAjouter le beurre mou en m\u00e9langeant \u00e0 la main, puis ajouter l\u2019oeuf, p\u00e9trir \u00e0 la fourchette et former une boule.\nEtaler votre p\u00e2te au rouleau entre deux feuilles de papier cuisson sur 3 mm d\u2019\u00e9paisseur. R\u00e9server au frais pendant 1h.\nEnsuite, foncer la p\u00e2te dans un cercle \u00e0 tarte de 20 cm de diam\u00e8tre, piquer-la avec une fourchette et enfourner votre fond de tarte \u00e0 180 degr\u00e9s durant 15 minutes, R\u00e9server.\nLe Croustillant :\nFaire fondre le chocolat au bain marie.\nEcraser les cr\u00eapes dentelles.\nVerser le chocolat sur les pralines mix\u00e9, ajouter la fleur de sel, les cr\u00eapes \u00e9cras\u00e9es et m\u00e9langer le tout.\nEtaler le croustillant sur le fond de tarte refroidi. R\u00e9servez au frais.\nLa ganache :\nCouper le chocolat en morceau et le placer dans un grand bol.\nDans une casserole, porter la cr\u00e8me et le miel \u00e0 \u00e9bullition.\nVersez un premier tiers de cr\u00e8me sur votre chocolat et r\u00e9aliser une \u00e9mulsion \u00e0 l\u2019aide d\u2019une maryse (le chocolat va fondre progressivement), r\u00e9p\u00e9tez l\u2019op\u00e9ration pour les deux autres tiers de cr\u00e8me.\nEnfin, ajouter le beurre coup\u00e9 en petit morceaux et m\u00e9langer d\u00e9licatement sans incorporer d\u2019air.\nVersez la ganache sur votre fond de tarte et laissez prendre 1h au frais.\nD\u00e9corer la tarte avec des petites noisettes et/ou quelques pralines\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nDaniela\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPrintemps\n,\nRecettes Par Saison\n,\nRecettes Sucr\u00e9es\n,\nTartes et Galettes\nTags:\nchocolat\n,\nfeuilletine\n,\nnoisette\n,\npralin\n,\ntarte\nSoupe de Betteraves et petit \u00e9peautre fa\u00e7on Borscht\u00a0: la recette qui va vous r\u00e9concilier avec la betterave !\nCr\u00eapes au cl\u00e9mentine curd : une alternative gourmande du lemon curd\n7 thoughts on \u201cTarte Chocolat Noisette\u201d\nAmbre\ndit\u00a0:\n16 avril 2020 \u00e0 15 h 54 min\nIncroyablement bonne cette tarte ! Et beaucoup plus simple qu\u2019il n\u2019y parait.\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n18 avril 2020 \u00e0 13 h 28 min\nMerci beaucoup pour votre retour, ouiiii la recette n\u2019est pas si compliqu\u00e9e, il suffit de se laisser guider \ud83d\ude09\nchargement\u2026\nR\u00e9pondre\nMargot\ndit\u00a0:\n20 octobre 2020 \u00e0 17 h 20 min\nBonjour, pouvons nous faire cette tarte la veille pour le lendemain ?\nMerci d\u2019avance pour votre r\u00e9ponse.\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n20 octobre 2020 \u00e0 19 h 54 min\nOui, bien s\u00fbr. Vous pouvez la conserver au r\u00e9frig\u00e9rateur sous cloche et la sortir 30min avant de la d\u00e9guster !\nchargement\u2026\nR\u00e9pondre\nLydie\ndit\u00a0:\n10 juillet 2024 \u00e0 12 h 51 min\nBonjour,\nJe souhaite faire cette tarte pour un repas o\u00f9 nous sommes invit\u00e9s mais nous avons 3h de route. Pensez-vous que la tarte puisse \u00eatre transport\u00e9e en glaci\u00e8re avec pain de glace ?\nL\u2019\u00e9tape 3 de la ganache me parait compliqu\u00e9e. Pourriez-vous donner plus de d\u00e9tails techniques sur la r\u00e9alisation ?\nPour la pate, peut-on remplacer le sucre de canne complet par de la cassonade ?\nMerci d\u2019avance !\nLydie\nchargement\u2026\nR\u00e9pondre\nDaniela\ndit\u00a0:\n7 ao\u00fbt 2024 \u00e0 15 h 33 min\nBonjour Lydie, je suis d\u00e9sol\u00e9e de r\u00e9pondre si tard. Bon soit vous vous \u00eates lanc\u00e9es et j\u2019esp\u00e8re que tout s\u2019est bien pass\u00e9 ou alors vous avez chang\u00e9 de recette. Dans les deux cas, voici quelques r\u00e9ponses \u00e0 vos questions.\nTransport : s\u2019il ne fait pas trop chaud et que la tarte est bien cal\u00e9e dans la glaci\u00e8re avec le pain de glace, \u00e7a se tente m\u00eame si un peu risqu\u00e9 !\nLa Ganache : j\u2019ai modifi\u00e9 la recette pour que \u00e7a soit plus clair, il suffit de verser la cr\u00e8me et le miel chaud sur le chocolat, celui va fondre doucement pendant que vous m\u00e9langer avec la maryse.\nSucre de canne/cassonade : bien s\u00fbr ce n\u2019est pas un probl\u00e8me !\nEncore d\u00e9sol\u00e9e pour le d\u00e9lai de r\u00e9ponse !\nchargement\u2026\nR\u00e9pondre\nCHLOE DECHAUMONT\ndit\u00a0:\n11 septembre 2025 \u00e0 13 h 33 min\nBonjour,\nC\u2019est pour une tarte de combien de diam\u00e8tre ?\nchargement\u2026\nR\u00e9pondre\n4.59 from 53 votes (\n53 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

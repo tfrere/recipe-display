@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "title": "Seskoulopita : pita grecque aux blettes, croustillante et parfum\u00e9e",
+    "description": "Une pita croustillante garnie de blettes fondantes, de feta, d'herbes fra\u00eeches, le tout envelopp\u00e9 dans des feuilles filo dor\u00e9es \u00e0 souhait. C'est une recette simple, rustique, profond\u00e9ment v\u00e9g\u00e9tale \u2014 et pourtant pleine de caract\u00e8re.",
+    "servings": 4,
+    "prepTime": "PT30M",
+    "cookTime": "PT55M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "Greek",
+      "chard",
+      "feta",
+      "filo pastry",
+      "vegetarian",
+      "baked"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/pita-aux-blettes-5-of-8.jpg",
+    "nationality": "Greek",
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Elle se mange aussi bien ti\u00e8de que froide, ce qui la rend parfaite \u00e0 pr\u00e9parer \u00e0 l'avance.",
+      "Servez-la en plat principal avec une salade de concombre et yaourt, en entr\u00e9e \u00e0 partager, pour un pique-nique ou un brunch m\u00e9diterran\u00e9en.",
+      "Elle se conserve tr\u00e8s bien, se r\u00e9chauffe au four et peut m\u00eame se congeler."
+    ],
+    "slug": "seskoulopita-pita-grecque-aux-blettes-croustillante-et-parfumee",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/05/pita-aux-blettes-5-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/05/20/pita-grecque-blettes/",
+    "image": "images/seskoulopita-pita-grecque-aux-blettes-croustillante-et-parfumee.webp",
+    "createdAt": "2026-02-09T22:52:58.493219",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 118.0,
+    "totalCookingTime": 63.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 296.2,
+      "protein": 17.3,
+      "fat": 20.5,
+      "carbs": 11.0,
+      "fiber": 1.4,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 8,
+      "totalIngredients": 8,
+      "negligibleIngredients": 2,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "onions",
+      "name": "oignons",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9s",
+      "notes": null,
+      "optional": false,
+      "name_en": "onions"
+    },
+    {
+      "id": "chard",
+      "name": "blettes",
+      "quantity": 1.0,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": "c\u00f4tes (partie blanche) \u00e9minc\u00e9es et feuilles \u00e9minc\u00e9es",
+      "notes": "botte",
+      "optional": false,
+      "name_en": "Swiss chard"
+    },
+    {
+      "id": "olive_oil",
+      "name": "huile d'olive",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "olive oil"
+    },
+    {
+      "id": "cumin_seeds",
+      "name": "graines de cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cumin seeds"
+    },
+    {
+      "id": "mint",
+      "name": "menthe",
+      "quantity": 1.0,
+      "unit": "bunch",
+      "category": "produce",
+      "preparation": "cisel\u00e9",
+      "notes": "bouquet",
+      "optional": false,
+      "name_en": "Mint"
+    },
+    {
+      "id": "dill",
+      "name": "aneth",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "s\u00e9ch\u00e9 ou 1 bouquet d'aneth frais",
+      "optional": false,
+      "name_en": "dill"
+    },
+    {
+      "id": "eggs",
+      "name": "oeufs",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "egg",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "eggs"
+    },
+    {
+      "id": "feta",
+      "name": "feta",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": "\u00e9miett\u00e9e",
+      "notes": null,
+      "optional": false,
+      "name_en": "feta cheese"
+    },
+    {
+      "id": "filo_pastry",
+      "name": "feuilles filo",
+      "quantity": 1.0,
+      "unit": "package",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "env 10 feuilles",
+      "optional": false,
+      "name_en": "phyllo dough"
+    },
+    {
+      "id": "sesame_seeds",
+      "name": "graines de s\u00e9same",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame seeds"
+    }
+  ],
+  "tools": [
+    "Grande po\u00eale",
+    "Moule carr\u00e9 de 23 \u00d7 23 cm",
+    "Pinceau de cuisine"
+  ],
+  "steps": [
+    {
+      "id": "prepare_onions_chard_stems",
+      "action": "\u00c9mincez les oignons et les c\u00f4tes (la partie blanche) de la botte de blettes.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "onions",
+        "chard"
+      ],
+      "produces": "chopped_onions_chard_stems",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "heat_oil",
+      "action": "Faites chauffer 6 \u00e0 7 c\u00e0s d'huile d'olive dans une grande po\u00eale \u00e0 feu moyen.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "hot_oil",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_onions_chard_stems",
+      "action": "Ajoutez les graines de cumin, les oignons et les c\u00f4tes de blettes. Faites revenir jusqu'\u00e0 ce qu'ils soient fondants.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "filling",
+      "uses": [
+        "hot_oil",
+        "cumin_seeds",
+        "chopped_onions_chard_stems"
+      ],
+      "produces": "sauteed_onions_chard_stems",
+      "requires": [],
+      "visualCue": "fondants"
+    },
+    {
+      "id": "prepare_chard_leaves",
+      "action": "Pendant ce temps, \u00e9mincez les feuilles des blettes.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "chard"
+      ],
+      "produces": "chopped_chard_leaves",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "wilt_chard_leaves",
+      "action": "Ajoutez les feuilles des blettes dans la po\u00eale et faites-les tomber pendant quelques minutes, puis retirez du feu. Laissez ti\u00e9dir.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "sauteed_onions_chard_stems",
+        "chopped_chard_leaves"
+      ],
+      "produces": "chard_mixture",
+      "requires": [],
+      "visualCue": "feuilles tomb\u00e9es"
+    },
+    {
+      "id": "add_eggs_cheese_herbs",
+      "action": "Dans la po\u00eale, hors du feu, ajoutez les oeufs, la feta \u00e9miett\u00e9e, la menthe cisel\u00e9e et l'aneth. M\u00e9langez bien.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "filling",
+      "uses": [
+        "chard_mixture",
+        "eggs",
+        "feta",
+        "mint",
+        "dill"
+      ],
+      "produces": "chard_filling",
+      "requires": [],
+      "visualCue": "bien m\u00e9lang\u00e9"
+    },
+    {
+      "id": "preheat_oven",
+      "action": "Pr\u00e9chauffez le four \u00e0 180\u00b0C.",
+      "duration": "PT10M",
+      "temperature": 180,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "preheated_oven",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "oil_pan",
+      "action": "Huilez l\u00e9g\u00e8rement un moule carr\u00e9.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "olive_oil"
+      ],
+      "produces": "oiled_pan",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "place_first_filo",
+      "action": "D\u00e9posez une premi\u00e8re feuille de filo en la laissant d\u00e9passer des bords. Badigeonnez-la d'un peu d'huile d'olive.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "filo_pastry",
+        "olive_oil",
+        "oiled_pan"
+      ],
+      "produces": "first_oiled_filo",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "layer_filo_sheets",
+      "action": "Superposez le tiers des feuilles de filo restantes en les huilant \u00e0 chaque fois, en les alternant dans les angles pour couvrir tout le moule.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "filo_pastry",
+        "olive_oil",
+        "first_oiled_filo"
+      ],
+      "produces": "layered_filo_base",
+      "requires": [],
+      "visualCue": "tout le moule couvert"
+    },
+    {
+      "id": "add_filling",
+      "action": "Versez la garniture aux blettes dans le moule et lissez la surface.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "chard_filling",
+        "layered_filo_base"
+      ],
+      "produces": "filled_pita",
+      "requires": [],
+      "visualCue": "surface liss\u00e9e"
+    },
+    {
+      "id": "fold_edges",
+      "action": "Rabattez les bords des feuilles qui d\u00e9passent vers le centre.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "filled_pita"
+      ],
+      "produces": "folded_pita",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cover_with_remaining_filo",
+      "action": "Recouvrez avec les feuilles de filo restantes, mais sans les huiler entre elles.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "filo_pastry",
+        "folded_pita"
+      ],
+      "produces": "covered_pita",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "score_top",
+      "action": "Entaillez la couche sup\u00e9rieure de filo pour pr\u00e9-d\u00e9couper les parts.",
+      "duration": "PT1M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "covered_pita"
+      ],
+      "produces": "scored_pita",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_oil_sesame",
+      "action": "Versez de l'huile d'olive par-dessus et saupoudrez de graines de s\u00e9same.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "olive_oil",
+        "sesame_seeds",
+        "scored_pita"
+      ],
+      "produces": "seasoned_pita",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "bake",
+      "action": "Enfournez pour 40min, jusqu'\u00e0 ce que la pita soit bien dor\u00e9e et croustillante.",
+      "duration": "PT40M",
+      "temperature": 180,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "assembly",
+      "uses": [
+        "seasoned_pita"
+      ],
+      "produces": "baked_pita",
+      "requires": [
+        "preheated_oven"
+      ],
+      "visualCue": "bien dor\u00e9e et croustillante"
+    },
+    {
+      "id": "cool",
+      "action": "Laissez ti\u00e9dir avant de servir.",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": false,
+      "subRecipe": "assembly",
+      "uses": [
+        "baked_pita"
+      ],
+      "produces": "seskoulopita",
+      "requires": [],
+      "visualCue": "ti\u00e8de"
+    }
+  ],
+  "finalState": "seskoulopita",
+  "originalText": "Seskoulopita : pita grecque aux blettes, feta et herbes fra\u00eeches\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n20 mai 2025\nSeskoulopita : pita grecque aux blettes, croustillante et parfum\u00e9e\nSeskoulopita : ce nom ne vous dit peut-\u00eatre rien, mais il cache une merveille tout droit venue de Gr\u00e8ce. Une pita croustillante garnie de blettes fondantes, de feta, d\u2019herbes fra\u00eeches, le tout envelopp\u00e9 dans des feuilles filo dor\u00e9es \u00e0 souhait. C\u2019est une recette simple, rustique, profond\u00e9ment v\u00e9g\u00e9tale \u2014 et pourtant pleine de caract\u00e8re.\nCousine directe de la plus connue\nspanakopita\n(r\u00e9alis\u00e9e \u00e0 base d\u2019\u00e9pinards), la seskoulopita lui vole presque la vedette avec ses saveurs plus douces, sa texture g\u00e9n\u00e9reuse, et ce go\u00fbt un peu oubli\u00e9 des blettes bien cuisin\u00e9es. Elle a ce petit quelque chose de r\u00e9confortant, comme une recette de famille qu\u2019on red\u00e9couvre avec plaisir.\nTable des mati\u00e8res\n1\nUne pita pas comme les autres\n2\nPita grecque aux blettes (Seskoulopita)\n3\nLa blette, ce l\u00e9gume qu\u2019on oublie trop vite\n4\nFeta, herbes fra\u00eeches et filo croustillant\n5\nComment servir la pita grecque aux blettes ?\n6\nLa pita grecque aux blettes : un go\u00fbt d\u2019ailleurs, mais tr\u00e8s accessible\n7\nPour aller plus loin dans les saveurs grecques\n8\nPour r\u00e9sumer, la pita grecque aux blettes\nUne pita pas comme les autres\nEn grec,\npita\nne d\u00e9signe pas seulement le pain plat que l\u2019on garnit \u2014 c\u2019est un mot plus large, qui signifie aussi tarte, g\u00e2teau, tourte. La cuisine grecque est riche en ces recettes feuillet\u00e9es qu\u2019on appelle\npites\n, et qui changent selon les saisons, les r\u00e9gions, ou les herbes disponibles.\nLa seskoulopita tire son nom de\nseskoula\n, qui signifie blette en grec. Elle est la cousine directe de la plus connue\nspanakopita\n, r\u00e9alis\u00e9e \u00e0 base d\u2019\u00e9pinards. Mais ici, ce sont les blettes qui tiennent le premier r\u00f4le. Et elles s\u2019y pr\u00eatent merveilleusement bien.\nPita grecque aux blettes (Seskoulopita)\n4.44\n/5 avec\n51\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n30\nminutes\nmin\nTemps de cuisson\n40\nminutes\nmin\nPortions\n4\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n2\noignons\n1\nbotte de blettes\nhuile d\u2019olive\n\u00bd\nc\u00e0c de graines de cumin\n1\nbouquet de menthe\n1\nc\u00e0c d\u2019aneth s\u00e9ch\u00e9 ou 1 bouquet d\u2019aneth frais\n3\noeufs\n300\ng\nde feta\n1\npaquet de feuilles filo\nenv 10 feuilles\ngraines de s\u00e9same\nInstructions\n\u00c9mincez deux oignons et les c\u00f4tes (la partie blanche) d\u2019une belle botte de blettes.\nFaites chauffer 6 \u00e0 7 c\u00e0s d\u2019huile d\u2019olive dans une grande po\u00eale.\nAjoutez \u00bd c\u00e0c de graines de cumin, avec les oignons et les c\u00f4tes de blettes. Faites revenir \u00e0 feu moyen jusqu\u2019\u00e0 ce qu\u2019ils soient fondants, env 15min.\nPendant ce temps, \u00e9mincez les feuilles des blettes. Ajoutez-les dans la po\u00eale, faites-les tomber quelques minutes, puis retirez du feu. Laissez ti\u00e9dir.\nDans la po\u00eale, hors du feu, ajoutez les oeufs, la \u00e9miett\u00e9e, la menthe cisel\u00e9e, et l\u2019aneth s\u00e9ch\u00e9. M\u00e9langez bien.\nPr\u00e9chauffez le four \u00e0 180\u00b0C.\nHuilez l\u00e9g\u00e8rement un moule carr\u00e9 de 23 \u00d7 23 cm. D\u00e9posez-y une premi\u00e8re feuille de filo en la laissant d\u00e9passer des bords. Badigeonnez-la d\u2019un peu d\u2019huile d\u2019olive, puis superposez le tiers des feuilles en les huilant \u00e0 chaque fois, en les alternant dans les angles pour couvrir tout le moule.\nVersez la garniture, lissez la surface. Rabattez les bords des feuilles vers le centre. Recouvrez avec les feuilles restantes, mais sans huiler entre.\nEntaillez la couche sup\u00e9rieure de filo pour pr\u00e9-d\u00e9couper les parts, versez de l\u2019huile d\u2019olive par-dessus et saupoudrez de graines de s\u00e9same.\nEnfournez pour 40 min, jusqu\u2019\u00e0 ce que la pita soit bien dor\u00e9e et croustillante.\nLaissez ti\u00e9dir avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nLa blette, ce l\u00e9gume qu\u2019on oublie trop vite\nOn l\u2019a parfois rel\u00e9gu\u00e9e \u00e0 un coin de souvenir d\u2019enfance, mal cuite, trop fade, trop fibreuse. Et pourtant. La blette m\u00e9rite qu\u2019on lui rende justice.\nRiche en fibres, en fer, en potassium, et en vitamines A et K, elle a tout pour plaire c\u00f4t\u00e9 nutrition. Sa tige (la c\u00f4te) apporte une texture douce et l\u00e9g\u00e8rement sucr\u00e9e, tandis que ses feuilles offrent un go\u00fbt plus vert, plus herbac\u00e9. Une belle dualit\u00e9 qu\u2019on exploite parfaitement dans cette recette, en les cuisant s\u00e9par\u00e9ment avant de tout r\u00e9unir dans une farce moelleuse.\nEt comme souvent dans les cuisines paysannes, on utilise ici le l\u00e9gume dans sa totalit\u00e9 \u2014 rien ne se perd, tout est go\u00fbt\u00e9.\nFeta, herbes fra\u00eeches et filo croustillant\nCe qui fait la magie de la seskoulopita, c\u2019est aussi ce m\u00e9lange de saveurs m\u00e9diterran\u00e9ennes si typique :\nla feta, sal\u00e9e et fondante\nla menthe, qui apporte une vraie fra\u00eecheur\nl\u2019aneth, avec son ar\u00f4me anis\u00e9, discret mais essentiel\net une touche de cumin, qui vient r\u00e9chauffer subtilement l\u2019ensemble\nLe tout est envelopp\u00e9 dans des feuilles filo, badigeonn\u00e9es d\u2019huile d\u2019olive pour cr\u00e9er ce feuilletage fin, dor\u00e9, ultra croustillant. C\u2019est simple, mais cela demande un peu de patience et de d\u00e9licatesse. Et c\u2019est ce qui rend cette pita si sp\u00e9ciale : un \u00e9quilibre entre rusticit\u00e9 et pr\u00e9cision.\nComment servir la pita grecque aux blettes ?\nElle se mange aussi bien ti\u00e8de que froide, ce qui la rend parfaite \u00e0 pr\u00e9parer \u00e0 l\u2019avance.\nServez-la en :\nplat principal avec une salade de concombre et yaourt\nentr\u00e9e \u00e0 partager, coup\u00e9e en petits carr\u00e9s\npique-nique ou d\u00e9jeuner sur le pouce\nbrunch m\u00e9diterran\u00e9en, avec olives, tomates, pain frais et un peu de miel\nElle se conserve tr\u00e8s bien, se r\u00e9chauffe au four et peut m\u00eame se congeler.\nLa pita grecque aux blettes : un go\u00fbt d\u2019ailleurs, mais tr\u00e8s accessible\nCe que j\u2019aime dans cette recette, c\u2019est qu\u2019elle fait voyager sans exotisme forc\u00e9. Elle repose sur des ingr\u00e9dients simples, sur un geste ancien, et sur un go\u00fbt de cuisine transmise. Elle \u00e9voque les tabl\u00e9es familiales, les parfums d\u2019herbes fra\u00eeches, la g\u00e9n\u00e9rosit\u00e9 d\u2019un plat qu\u2019on d\u00e9coupe \u00e0 la main.\nC\u2019est une recette ancr\u00e9e, nourrissante, et profond\u00e9ment vivante. Une pita comme on aimerait en voir plus souvent.\nPour aller plus loin dans les saveurs grecques\nVous avez aim\u00e9 cette pita aux blettes ? Voici d\u2019autres recettes grecques \u00e0 explorer, entre douceur, v\u00e9g\u00e9tal et croquant :\nCarottes et f\u00e8ves \u00e0 la polita\nUne recette v\u00e9g\u00e9tarienne mijot\u00e9e au citron et \u00e0 l\u2019aneth, inspir\u00e9e de la cuisine urbaine grecque.\nPortokalopita : g\u00e2teau grec \u00e0 l\u2019orange\nUn dessert moelleux \u00e0 base de feuilles filo et de sirop d\u2019orange \u2014 surprenant et irr\u00e9sistible.\n10 recettes grecques de printemps\nUn floril\u00e8ge de recettes ensoleill\u00e9es pour cuisiner grec au fil de la saison.\nPour r\u00e9sumer, la pita grecque aux blettes\nLa seskoulopita est bien plus qu\u2019une simple tourte aux blettes. C\u2019est une fa\u00e7on de red\u00e9couvrir un l\u00e9gume oubli\u00e9, de jouer avec les textures, et d\u2019inviter la Gr\u00e8ce \u00e0 votre table sans pr\u00e9tention. Entre croustillant, fondant et fra\u00eecheur, elle a tout pour s\u00e9duire.\nNous esp\u00e9rons que cette recette vous donnera envie d\u2019explorer d\u2019autres\npites\n, d\u2019autres herbes, d\u2019autres fa\u00e7ons de c\u00e9l\u00e9brer les l\u00e9gumes \u2014 avec simplicit\u00e9, patience et beaucoup d\u2019huile d\u2019olive.\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAutomne\n,\nBlettes\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats au Four\n,\nPrintemps\n\u00c9pinards sauce soja et s\u00e9same express : la recette minute pleine de go\u00fbt\nTartelettes asperges, feta, menthe & pistaches : simples, express et pleines de go\u00fbt\n1 thought on \u201cSeskoulopita : pita grecque aux blettes, croustillante et parfum\u00e9e\u201d\nAnik\ndit\u00a0:\n26 mai 2025 \u00e0 22 h 32 min\nAvec les blettes de l\u2019Amap et plein de bonnes herbes (j\u2019ai ajout\u00e9 du basilic) c\u2019est carr\u00e9ment excellent !!!\nchargement\u2026\nR\u00e9pondre\n4.44 from 51 votes (\n50 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 63.0
+}

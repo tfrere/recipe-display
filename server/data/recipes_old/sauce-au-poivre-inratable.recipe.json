@@ -1,0 +1,324 @@
+{
+  "metadata": {
+    "title": "Sauce au poivre inratable",
+    "description": "La Sauce au poivre inratable est une des sauces de base de la cuisine fran\u00e7aise. Bon l\u00e0, elle est inratable parce qu\u2019elle est super facile \u00e0 faire !",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "sauce",
+      "automne",
+      "\u00e9t\u00e9",
+      "hiver",
+      "printemps",
+      "plats en sauce"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/08/Sauce-au-poivre-1-of-3.jpg",
+    "nationality": "French",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Cette sauce se marie \u00e0 la perfection avec la recette de steak de chou-fleur.",
+      "Le cognac n'est pas rempla\u00e7able, c'est lui qui vient donner son go\u00fbt si caract\u00e9ristique \u00e0 la sauce. Il est bien entendu cuit.",
+      "Dites-moi en commentaire si vous avez des questions !"
+    ],
+    "slug": "sauce-au-poivre-inratable",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/08/Sauce-au-poivre-1-of-3.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/08/18/sauce-au-poivre-inratable/",
+    "image": "images/sauce-au-poivre-inratable.webp",
+    "createdAt": "2026-02-09T22:14:41.843859",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "all"
+    ],
+    "totalTime": 23.0,
+    "totalCookingTime": 8.0,
+    "nutritionPerServing": {
+      "calories": 671.8,
+      "protein": 3.3,
+      "fat": 56.7,
+      "carbs": 12.3,
+      "fiber": 1.0,
+      "confidence": "high",
+      "resolvedIngredients": 5,
+      "matchedIngredients": 5,
+      "totalIngredients": 6,
+      "negligibleIngredients": 4,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "indulgent"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "shallot",
+      "name": "\u00e9chalote",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "\u00e9minc\u00e9e tr\u00e8s finement",
+      "notes": null,
+      "optional": false,
+      "name_en": "shallot"
+    },
+    {
+      "id": "butter",
+      "name": "beurre",
+      "quantity": 25.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "butter"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "pinc\u00e9e",
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "water",
+      "name": "eau",
+      "quantity": 170.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vegetable_bouillon_cube",
+      "name": "bouillon cube de l\u00e9gumes",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": "demi cube",
+      "optional": false,
+      "name_en": "vegetable bouillon cube"
+    },
+    {
+      "id": "cognac",
+      "name": "cognac",
+      "quantity": 50.0,
+      "unit": "ml",
+      "category": "beverage",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cognac"
+    },
+    {
+      "id": "peppercorns",
+      "name": "poivre en grains",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "spice",
+      "preparation": "concass\u00e9s grossi\u00e8rement",
+      "notes": null,
+      "optional": false,
+      "name_en": "peppercorns"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "cornstarch",
+      "name": "f\u00e9cule de ma\u00efs",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cornstarch"
+    },
+    {
+      "id": "water_for_slurry",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Petite casserole",
+    "Pilon"
+  ],
+  "steps": [
+    {
+      "id": "mince_shallot",
+      "action": "\u00c9mincer l'\u00e9chalote tr\u00e8s finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "shallot"
+      ],
+      "produces": "minced_shallot",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "saute_shallot",
+      "action": "Faire fondre le beurre dans une petite casserole et y faire revenir l'\u00e9chalote avec le sel \u00e0 feu moyen.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "minced_shallot",
+        "butter",
+        "salt"
+      ],
+      "produces": "sauteed_shallot",
+      "requires": [],
+      "visualCue": "fondante"
+    },
+    {
+      "id": "make_broth",
+      "action": "Faire bouillir les 170ml d'eau et y dissoudre le demi bouillon cube.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "water",
+        "vegetable_bouillon_cube"
+      ],
+      "produces": "vegetable_broth",
+      "requires": [],
+      "visualCue": "bouillon dissous"
+    },
+    {
+      "id": "add_liquids",
+      "action": "Quand l'\u00e9chalote est fondante, verser le bouillon et le cognac.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "sauteed_shallot",
+        "vegetable_broth",
+        "cognac"
+      ],
+      "produces": "sauce_base",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "reduce_sauce",
+      "action": "M\u00e9langer et laisser r\u00e9duire de moiti\u00e9 environ (\u00e0 petits bouillons).",
+      "duration": "PT10M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "sauce_base"
+      ],
+      "produces": "reduced_sauce",
+      "requires": [],
+      "visualCue": "r\u00e9duit de moiti\u00e9"
+    },
+    {
+      "id": "crush_peppercorns",
+      "action": "Concasser grossi\u00e8rement les grains de poivre \u00e0 l'aide d'un pilon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "peppercorns"
+      ],
+      "produces": "crushed_peppercorns",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_cream_pepper",
+      "action": "Les verser dans la casserole avec la cr\u00e8me et laisser fr\u00e9mir 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "reduced_sauce",
+        "crushed_peppercorns",
+        "cream"
+      ],
+      "produces": "cream_pepper_sauce",
+      "requires": [],
+      "visualCue": "fr\u00e9mir"
+    },
+    {
+      "id": "make_slurry",
+      "action": "M\u00e9langer la f\u00e9cule dans une c\u00e0s d'eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cornstarch",
+        "water_for_slurry"
+      ],
+      "produces": "cornstarch_slurry",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "thicken_sauce",
+      "action": "L'ajouter \u00e0 la casserole. Remuer jusqu'\u00e0 ce que la sauce \u00e9paississe.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cream_pepper_sauce",
+        "cornstarch_slurry"
+      ],
+      "produces": "pepper_sauce",
+      "requires": [],
+      "visualCue": "sauce \u00e9paissie"
+    }
+  ],
+  "finalState": "pepper_sauce",
+  "originalText": "Sauce au poivre inratable - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n18 ao\u00fbt 2024\nSauce au poivre inratable\nLa Sauce au poivre inratable est une des sauces de base de la cuisine fran\u00e7aise. Bon l\u00e0, elle est inratable parce qu\u2019elle est super facile \u00e0 faire ! Tout comme\nla b\u00e9arnaise\nou la sauce \u00e0 l\u2019\u00e9chalote ! Ou encore la sauce roquefort. Je les aime toutes. Mais je pense que mes deux pr\u00e9f\u00e9r\u00e9es sont les 2 que vous trouverez sur le blog pour l\u2019instant ! A savoir la b\u00e9arnaise et la sauce au poivre.\nJe vous vois venir avec votre question tr\u00e8s l\u00e9gitime ! Ce sont des sauces qu\u2019on mange habituellement avec de la viande. En effet. Mais, elles peuvent aussi venir sublimer vos plats v\u00e9g\u00e9tariens.\nPar exemple, cette sauce au poivre inratable se marie \u00e0 la perfection avec ma recette de\nsteak de chou-fleur\n!\nElle vient relever le go\u00fbt de ce steak v\u00e9g\u00e9tarien.\nQuand j\u2019ai d\u00e9cid\u00e9 de me lancer de la confection de cette sauce au poivre, j\u2019\u00e9tais un peu intimid\u00e9e. Mais en fait, c\u2019est d\u2019une grande simplicit\u00e9 !\nIl n\u2019y a vraiment pas de difficult\u00e9 particuli\u00e8re. Et elle est vraiment inratable !\nJe me doute que certains d\u2019entre vous ne souhaitent pas cuisiner avec de l\u2019alcool. Cependant, pour cette recette en particulier, le cognac n\u2019est pas rempla\u00e7able. C\u2019est lui qui vient donner son go\u00fbt si caract\u00e9ristique \u00e0 la sauce. Il est bien entendu cuit. Donc ne contient plus d\u2019alcool. Dites-moi en commentaire si vous avez des questions !\nSauce au poivre inratable\n4.48\n/5 avec\n48\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n15\nminutes\nmin\nPortions\n1\nbocal\nIngr\u00e9dients\n1x\n2x\n3x\n1\n\u00e9chalote\nenv 20g\n25\ng\nde beurre\n1\npinc\u00e9e de sel\n170\nml\nd\u2019eau\n\u00bd\nbouillon cube de l\u00e9gumes\n50\nml\nde cognac\n10\ng\nde poivre en grains\nune grosse c\u00e0s\n100\nml\nde cr\u00e8me liquide\n1\nc\u00e0c de f\u00e9cule de ma\u00efs\n1\nc\u00e0s d\u2019eau\nInstructions\n\u00c9mincer l\u2019\u00e9chalote tr\u00e8s finement.\nFaire fondre le beurre dans une petite casserole et y faire revenir l\u2019\u00e9chalote avec le sel \u00e0 feu moyen.\nFaire bouillir les 170lm d\u2019eau et y dissoudre le demi bouillon cube.\nQuand l'\u00e9chalote est fondante (env 5min), verser le bouillon et le cognac.\nM\u00e9langer et laisser r\u00e9duire de moiti\u00e9 environ (\u00e0 petits bouillons). \u00c7a prend environ 10min.\nConcasser grossi\u00e8rement les grains de poivre \u00e0 l\u2019aide d\u2019un pilon.\nLes verser dans la casserole avec la cr\u00e8me et laisser fr\u00e9mir 5 min.\nM\u00e9langer la f\u00e9cule dans une c\u00e0s d\u2019eau et l\u2019ajouter \u00e0 la casserole.\nRemuer jusqu'\u00e0 ce que la sauce \u00e9paississe (env 2-3min).\nEt voil\u00e0 !\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nHiver\n,\nPlats en Sauce\n,\nPrintemps\nTags:\nsauce\nTarte fine tomate halloumi : rapide, croustillante et gourmande\nTomates feta et pitas au zaatar\n3 thoughts on \u201cSauce au poivre inratable\u201d\nSt\u00e8ve\ndit\u00a0:\n24 d\u00e9cembre 2024 \u00e0 12 h 58 min\nMagnifique recette pour un rendu excellent ! Fait avec un superbe poivre de la reunion ;\nchargement\u2026\nR\u00e9pondre\nLucie\ndit\u00a0:\n26 mars 2025 \u00e0 11 h 29 min\nL\u2019alcool ne s\u2019\u00e9vapore jamais compl\u00e8tement \u00e0 la cuisson. C\u2019est une croyance populaire.\nchargement\u2026\nR\u00e9pondre\nZANNI Christine\ndit\u00a0:\n16 ao\u00fbt 2025 \u00e0 13 h 46 min\nMeilleure recette de sauce au poivre que j\u2019ai faite ! Vraiment excellente! Je vous la recommande !\nchargement\u2026\nR\u00e9pondre\n4.48 from 48 votes (\n46 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 8.0
+}

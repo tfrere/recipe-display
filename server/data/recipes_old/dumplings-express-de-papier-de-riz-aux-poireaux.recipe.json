@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "title": "Dumplings express de papier de riz aux poireaux",
+    "description": "Ces dumplings express de papier de riz aux poireaux sont parfaits pour les petites envies de beignets coupl\u00e9es de grosse flemme. Ils sont tr\u00e8s complets aussi.",
+    "servings": 8,
+    "prepTime": "PT40M",
+    "cookTime": "PT25M",
+    "difficulty": "medium",
+    "recipeType": "main_course",
+    "tags": [
+      "dumpling",
+      "poireau",
+      "recette asiatique",
+      "recette de tofu",
+      "carotte",
+      "hiver"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2024/01/beignet-papier-de-riz-poireau-8-of-10.jpg",
+    "nationality": "asian",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Le papier de riz, une fois mouill\u00e9, \u00e7a colle. Il est donc imp\u00e9ratif de les r\u00e9server sur un torchon mouill\u00e9 en attendant de les cuire.",
+      "Pour r\u00e9ussir le pliage de ces petits b\u00e9b\u00e9s, il suffit de savoir plier en quatre."
+    ],
+    "slug": "dumplings-express-de-papier-de-riz-aux-poireaux",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2024/01/beignet-papier-de-riz-poireau-8-of-10.jpg",
+    "sourceUrl": "https://freethepickle.fr/2024/01/22/dumplings-de-papier-de-riz-aux-poireaux/",
+    "image": "images/dumplings-express-de-papier-de-riz-aux-poireaux.webp",
+    "createdAt": "2026-02-09T22:01:21.321390",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "winter"
+    ],
+    "totalTime": 55.0,
+    "totalCookingTime": 15.0,
+    "peakMonths": [
+      "April",
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 114.6,
+      "protein": 4.9,
+      "fat": 3.3,
+      "carbs": 17.0,
+      "fiber": 1.7,
+      "confidence": "medium",
+      "resolvedIngredients": 12,
+      "matchedIngredients": 15,
+      "totalIngredients": 16,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie",
+      "balanced"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "tofu",
+      "name": "tofu",
+      "quantity": 200.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tofu"
+    },
+    {
+      "id": "gingembre",
+      "name": "gingembre",
+      "quantity": 10.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "ginger"
+    },
+    {
+      "id": "ail",
+      "name": "ail",
+      "quantity": 3.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "poireaux",
+      "name": "poireaux",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "leeks"
+    },
+    {
+      "id": "carotte",
+      "name": "carotte",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrot"
+    },
+    {
+      "id": "vermicelles_riz",
+      "name": "vermicelles de riz",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rice vermicelli"
+    },
+    {
+      "id": "sauce_soja",
+      "name": "sauce soja",
+      "quantity": 3.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Soy sauce"
+    },
+    {
+      "id": "huile_sesame",
+      "name": "huile de s\u00e9same",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "papier_riz",
+      "name": "feuilles de papier de riz",
+      "quantity": 16.0,
+      "unit": "piece",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "rice paper wrappers"
+    },
+    {
+      "id": "huile_tournesol",
+      "name": "huile de tournesol",
+      "quantity": null,
+      "unit": null,
+      "category": "pantry",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "sunflower oil"
+    },
+    {
+      "id": "sauce_soja_tamari",
+      "name": "sauce soja tamari",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "tamari soy sauce"
+    },
+    {
+      "id": "eau",
+      "name": "eau",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "vinaigre_riz",
+      "name": "vinaigre de riz",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "huile_sesame_sauce",
+      "name": "huile de s\u00e9same",
+      "quantity": 0.5,
+      "unit": "tbsp",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "sesame oil"
+    },
+    {
+      "id": "ail_pressee",
+      "name": "ail press\u00e9e",
+      "quantity": 0.5,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "press\u00e9e",
+      "notes": "gousse",
+      "optional": false,
+      "name_en": "garlic, minced"
+    },
+    {
+      "id": "graines_sesame",
+      "name": "graines de s\u00e9sames",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "sesame seeds"
+    },
+    {
+      "id": "flocons_piment",
+      "name": "flocons de piment",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": "\u00e0 volont\u00e9",
+      "optional": false,
+      "name_en": "Chili flakes"
+    }
+  ],
+  "tools": [
+    "Mixeur (optionnel pour hacher)"
+  ],
+  "steps": [
+    {
+      "id": "presser_tofu",
+      "action": "Sortez le tofu de son emballage et enveloppez-le dans un torchon propre. Pressez-le en d\u00e9posant quelque chose de lourd par-dessus pendant 15min.",
+      "duration": "PT15M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "tofu"
+      ],
+      "produces": "tofu_presse",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "hacher_gingembre_ail",
+      "action": "Hachez finement le gingembre et l'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "gingembre",
+        "ail"
+      ],
+      "produces": "gingembre_ail_hache",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_legumes",
+      "action": "\u00c9mincez les poireaux et r\u00e2pez la carotte.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "poireaux",
+        "carotte"
+      ],
+      "produces": "legumes_prepares",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_vermicelles",
+      "action": "Faites cuire les vermicelles de riz en suivant les instructions du paquet (environ 5min).",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "garniture",
+      "uses": [
+        "vermicelles_riz"
+      ],
+      "produces": "vermicelles_cuites",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "emietter_tofu",
+      "action": "\u00c9miettez le tofu du bout des doigts.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "tofu_presse"
+      ],
+      "produces": "tofu_emiette",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "revenir_tofu_ail_gingembre",
+      "action": "Faites revenir l'ail, le gingembre et le tofu dans une po\u00eale chaude avec un fond d'huile de tournesol pendant 7min.",
+      "duration": "PT7M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "gingembre_ail_hache",
+        "tofu_emiette",
+        "huile_tournesol"
+      ],
+      "produces": "tofu_ail_gingembre_revenus",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "ajouter_legumes",
+      "action": "Ajoutez les poireaux et la carotte et faites revenir encore 8min.",
+      "duration": "PT8M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "tofu_ail_gingembre_revenus",
+        "legumes_prepares"
+      ],
+      "produces": "melange_legumes_tofu",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "melanger_garniture",
+      "action": "Hors du feu, ajoutez les vermicelles \u00e9goutt\u00e9es, la sauce soja (3 c\u00e0s) et l'huile de s\u00e9same (\u00bd c\u00e0s). M\u00e9langez et r\u00e9servez.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "garniture",
+      "uses": [
+        "melange_legumes_tofu",
+        "vermicelles_cuites",
+        "sauce_soja",
+        "huile_sesame"
+      ],
+      "produces": "garniture_complete",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "tremper_feuille_riz",
+      "action": "Trempez une 1\u00e8re feuille de riz dans l'eau jusqu'\u00e0 ce qu'elle soit suffisamment ramollie pour se plier.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "beignets",
+      "uses": [
+        "papier_riz"
+      ],
+      "produces": "feuille_riz_ramollie",
+      "requires": [],
+      "visualCue": "suffisamment ramollie pour se plier"
+    },
+    {
+      "id": "former_beignet",
+      "action": "D\u00e9posez-la sur un torchon humide et d\u00e9posez 2 c\u00e0s de garniture au centre. Repliez les bords pour obtenir un beignet 'carr\u00e9'.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "beignets",
+      "uses": [
+        "feuille_riz_ramollie",
+        "garniture_complete"
+      ],
+      "produces": "beignet_simple",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "envelopper_deuxieme_feuille",
+      "action": "Enveloppez dans une 2\u00e8me feuille de riz et r\u00e9servez sur le c\u00f4t\u00e9 du torchon humide.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "beignets",
+      "uses": [
+        "beignet_simple",
+        "papier_riz"
+      ],
+      "produces": "beignet_double",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "preparer_sauce",
+      "action": "M\u00e9langez tous les ingr\u00e9dients de la sauce (sauce soja tamari, eau, vinaigre de riz, huile de s\u00e9same, ail press\u00e9, graines de s\u00e9same, flocons de piment).",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "sauce",
+      "uses": [
+        "sauce_soja_tamari",
+        "eau",
+        "vinaigre_riz",
+        "huile_sesame_sauce",
+        "ail_pressee",
+        "graines_sesame",
+        "flocons_piment"
+      ],
+      "produces": "sauce_accompagnement",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "chauffer_poele",
+      "action": "Faites chauffer une po\u00eale anti-adh\u00e9sive avec un g\u00e9n\u00e9reux fond d'huile de tournesol \u00e0 feu moyen.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "cuisson",
+      "uses": [
+        "huile_tournesol"
+      ],
+      "produces": "poele_chaude",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "cuire_beignets",
+      "action": "Faites cuire les beignets pendant 10min de chaque c\u00f4t\u00e9.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "cuisson",
+      "uses": [
+        "beignet_double",
+        "poele_chaude"
+      ],
+      "produces": "beignets_cuits",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "servir",
+      "action": "Servez les beignets cuits avec la sauce d'accompagnement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "assemblage",
+      "uses": [
+        "beignets_cuits",
+        "sauce_accompagnement"
+      ],
+      "produces": "dumplings_servis",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "dumplings_servis",
+  "originalText": "Dumplings express de papier de riz aux poireaux - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n22 janvier 2024\nDumplings express de papier de riz aux poireaux\nCes dumplings express de papier de riz aux poireaux sont parfaits pour les petites envies de beignets coupl\u00e9es de grosse flemme.\nJe m\u2019explique parce que je vous sens perplexe.\nLes beignets asiatiques, ou dumplings ; c\u2019est trop bon. Mais c\u2019est aussi souvent assez compliqu\u00e9 \u00e0 plier.\nDu coup, je vous propose la solution qui va bien : les dumplings pli\u00e9s en 4. Pas besoin de master en pliage ou de 78h d\u2019exp\u00e9rience et de doigts de f\u00e9e. Pour r\u00e9ussir le pliage de ces petits b\u00e9b\u00e9s, il suffit de savoir plier en quatre. Et sauf erreur de ma part, si vous \u00eates en \u00e2ge d\u2019utiliser une po\u00eale, vous savez plier en quatre.\nVoil\u00e0. Je me reconvertis dans le marketing de dumplings ? Je fais \u00e7a bien, non ?\nBon pliage mis \u00e0 part. Ces Dumplings express de papier de riz aux poireaux sont super bons et satisfaisants. Ils sont tr\u00e8s complets aussi. On y retrouve du tofu \u00e9miett\u00e9 pour une belle source de prot\u00e9ines. Du poireau et de la carotte pour l\u2019apport v\u00e9g\u00e9tal. Et des vermicelles de riz pour la consistance. Le tout emmaillot\u00e9 dans 2 couches de papiers de riz. Pli\u00e9s en quatre donc, j\u2019esp\u00e8re que vous suivez.\nPar contre attention, le papier de riz, une fois mouill\u00e9, \u00e7a colle. Il est donc imp\u00e9ratif de les r\u00e9server sur un torchon mouill\u00e9 en attendant de les cuire. Sinon, vous pouvez \u00eatre s\u00fbrs qu\u2019ils colleront \u00e0 la surface sur laquelle ils sont pos\u00e9s. Et que vous les casserez en les lib\u00e9rant. Et si vous aimez le poireau, je vous conseille\ncette quiche\n!\nDumplings de papier de riz aux poireaux\n4.51\n/5 avec\n65\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n40\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n8\ndumplings\nIngr\u00e9dients\n1x\n2x\n3x\nPour la garniture\n200\ng\nde tofu\n10\ng\nde gingembre\n3\ngousses d\u2019ail\n2\npoireaux\n1\ncarotte\n70\ng\nde vermicelles de riz\n3\nc\u00e0s de sauce soja\n\u00bd\ncas d\u2019huile de s\u00e9same\nPour les beignets\n16\nfeuilles de papier de riz\nhuile de tournesol\nPour la sauce\n2\nc\u00e0s de sauce soja tamari\n1\nc\u00e0s d\u2019eau\n\u00bd\nc\u00e0s de vinaigre de riz\n\u00bd\nc\u00e0s d\u2019huile de s\u00e9same\n\u00bd\ngousse d\u2019ail press\u00e9e\ngraines de s\u00e9sames\nflocons de piment au go\u00fbt\nInstructions\nPr\u00e9paration de la garniture\nSortez le tofu de son emballage et enveloppez le dans un torchon propre. Pressez-le en d\u00e9posant quelque chose de lourd par-dessus. Le but est d\u2019en extraire un maximum d\u2019eau.\nHachez finement le gingembre et l\u2019ail (en les passant au mixeur par exemple).\n\u00c9mincez les poireaux et r\u00e2pez la carotte.\nFaites cuire les vermicelles de riz en suivant les instructions du paquet.\n\u00c9miettez le tofu du bout des doigts.\nFaites revenir l\u2019ail, le gingembre et le tofu dans une po\u00eale chaude avec un fond d\u2019huile de tournesol pendant 6-7min.\nAjoutez les poireaux et la carotte et faites revenir encore 7-8min.\nHors du feu, ajoutez les vermicelles \u00e9goutt\u00e9es, la sauce soja et l\u2019huile de s\u00e9same. M\u00e9langez et r\u00e9servez.\nPr\u00e9paration des beignets\nD\u00e9posez un plat rempli d\u2019eau et un torchon propre humide sur le plan de travail.\nTrempez un 1e feuille de riz dans l\u2019eau jusqu\u2019\u00e0 ce qu\u2019elle soit suffisamment ramollie pour se plier.\nD\u00e9posez la sur le torchon humide et d\u00e9posez 2 c\u00e0s de garniture au centre. Repliez les bords pour obtenir un beignets \u201ccarr\u00e9\u201d.\nEnveloppez dans une 2e feuille de riz et r\u00e9servez sur le c\u00f4t\u00e9 du torchon humide (attention, \u00e7a va coller si vous les r\u00e9servez sur une surface s\u00e8che.\nRecommencez avec le reste des feuilles de riz.\nPr\u00e9paration de la sauce\nM\u00e9langez tous les ingr\u00e9dients de la sauce.\nCuisson des beignets\nFaites chauffer une po\u00eale anti-adh\u00e9sive avec un g\u00e9n\u00e9reux fond d\u2019huile de tournesol. Faites cuire les beignets \u00e0 feu moyen pendant 8-10min de chaque c\u00f4t\u00e9.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nCarotte\n,\nHiver\n,\nPoireau\n,\nRecettes Sal\u00e9es\nTags:\ndumpling\n,\npoireau\n,\nrecette asiatique\n,\nrecette de tofu\nQuiche poireaux patate douce et ch\u00e8vre frais\nSoupe de nouilles curry vert simplifi\u00e9\n8 thoughts on \u201cDumplings express de papier de riz aux poireaux\u201d\nGeraldine\ndit\u00a0:\n22 janvier 2024 \u00e0 18 h 19 min\nJ\u2019ai trop envie de tester cette recette mais je n\u2019aime pas le poireau, par quoi puis je remplacer ? Une id\u00e9e / suggestion ?\nchargement\u2026\nR\u00e9pondre\nJulie\ndit\u00a0:\n16 juin 2024 \u00e0 9 h 38 min\nJ\u2019ai d\u00e9j\u00e0 ce genre de dumplings avec du chou chinois: on a ador\u00e9 !\nchargement\u2026\nR\u00e9pondre\nPatrick\ndit\u00a0:\n22 janvier 2024 \u00e0 19 h 09 min\nJe pr\u00e9sume que l\u2019on peut remplacer tofu par poulet. Merci\nchargement\u2026\nR\u00e9pondre\nHelene\ndit\u00a0:\n12 f\u00e9vrier 2024 \u00e0 21 h 17 min\nCoup\u00e9 en petits morceaux probablement ! Ici test\u00e9 et approuv\u00e9 avec de la viande hach\u00e9e 15% MG.\nchargement\u2026\nR\u00e9pondre\nGeraldine\ndit\u00a0:\n13 f\u00e9vrier 2024 \u00e0 21 h 29 min\nMa question \u00e9tait pour remplacer le poireau \ud83d\ude42\nchargement\u2026\nR\u00e9pondre\nClem\ndit\u00a0:\n5 f\u00e9vrier 2024 \u00e0 19 h 58 min\nOn s\u2019est R\u00c9GAL\u00c9S !\nJ\u2019ai juste eu une petite gal\u00e8re, je pense que mon huile n\u2019\u00e9tait pas assez chaude pour la premi\u00e8re tourn\u00e9e, le papier de riz a compl\u00e8tement coll\u00e9 au fond de la po\u00eale mais je n\u2019ai pas eu de souci pour la suite.\nMerci beaucoup pour cette recette d\u00e9licieuse,  tr\u00e8s simple et pas si longue que j\u2019imaginais.\nchargement\u2026\nR\u00e9pondre\nHelene\ndit\u00a0:\n12 f\u00e9vrier 2024 \u00e0 21 h 16 min\nOhlala mais c\u2019\u00e9tait d\u00e9licieux !\nBon la notion de \u2018express\u2019 est un peu trompeuse mais vu que c\u2019est cette notion qui a convaincu mon mari que je fasse \u00e7a, je vais pas trop me plaindre. \u00c7a faisait tr\u00e8s tr\u00e8s longtemps que je n\u2019avais pas cuisin\u00e9 mais cette recette m\u2019a motiv\u00e9e d\u00e8s que je l\u2019ai vue ! J\u2019ai juste remplac\u00e9 le tofu par de la viande hach\u00e9e (ne me lapidez pas svp) et rajout\u00e9 un peu de sel \u00e0 la \u2018farce\u2019.\nEn tout cas une recette de plus valid\u00e9e sur votre formidable site ! H\u00e2te de recevoir le livre !\nchargement\u2026\nR\u00e9pondre\nFree The Pickle\ndit\u00a0:\n13 f\u00e9vrier 2024 \u00e0 21 h 18 min\nHaha oui le \u00ab\u00a0express\u00a0\u00bb cocnerne surtout le pliage c\u2019est vrai ! Mea culpa !\nchargement\u2026\nR\u00e9pondre\n4.51 from 65 votes (\n63 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 15.0
+}

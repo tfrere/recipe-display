@@ -20,7 +20,7 @@ const SearchBarWithResults = () => {
   const hasActiveFilters = Boolean(
     searchQuery ||
       selectedDiet ||
-      selectedSeason ||
+      (selectedSeason?.length > 0) ||
       selectedType ||
       selectedDishType ||
       isQuickOnly ||

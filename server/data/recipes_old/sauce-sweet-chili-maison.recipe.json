@@ -1,0 +1,292 @@
+{
+  "metadata": {
+    "title": "Sauce Sweet Chili Maison",
+    "description": "Une recette de sauce asiatique maison, plus fonc\u00e9e et parfum\u00e9e gr\u00e2ce \u00e0 l'utilisation de sucre de fleur de palmier de Kampong Speu.",
+    "servings": 1,
+    "prepTime": "PT10M",
+    "cookTime": "PT10M",
+    "difficulty": "easy",
+    "recipeType": "base",
+    "tags": [
+      "recette sauce asiatique",
+      "recette sauce v\u00e9g\u00e9tarienne",
+      "sauce maison",
+      "sauce nem maison",
+      "sauce sweet chili",
+      "sauce thai maison",
+      "sauce vegan",
+      "sweet chili maison"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Sweet-Chili-Sauce-1-of-8.jpg",
+    "nationality": "Thai",
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Se conserve plusieurs semaines dans un bocal ferm\u00e9 herm\u00e9tiquement au frais.",
+      "Cette sauce sweet chili peut accompagner vos fritures, nems, onions rings, riz etc\u2026",
+      "Le sucre de fleur de palmier de Kampong Speu peut \u00eatre remplac\u00e9 par du sucre de canne ou du sucre blanc."
+    ],
+    "slug": "sauce-sweet-chili-maison",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/11/Sweet-Chili-Sauce-1-of-8.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/11/29/sauce-sweet-chili-maison/",
+    "image": "images/sauce-sweet-chili-maison.jpg",
+    "createdAt": "2026-02-09T20:46:53.066416",
+    "creationMode": "url",
+    "diets": [
+      "vegan",
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "summer"
+    ],
+    "totalTime": 49.0,
+    "totalCookingTime": 14.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 126.7,
+      "protein": 2.7,
+      "fat": 0.4,
+      "carbs": 28.9,
+      "fiber": 2.0,
+      "confidence": "medium",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 6,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "red_pepper",
+      "name": "poivron rouge ou piment rouge doux",
+      "quantity": 80.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Red bell pepper"
+    },
+    {
+      "id": "garlic",
+      "name": "gousses d'ail",
+      "quantity": 6.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic cloves"
+    },
+    {
+      "id": "crushed_chili",
+      "name": "piment concass\u00e9",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": "plus ou moins au go\u00fbt",
+      "optional": false,
+      "name_en": "crushed chili pepper"
+    },
+    {
+      "id": "water_30ml",
+      "name": "eau",
+      "quantity": 30.0,
+      "unit": "ml",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    },
+    {
+      "id": "rice_vinegar",
+      "name": "vinaigre de riz",
+      "quantity": 80.0,
+      "unit": "ml",
+      "category": "condiment",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Rice vinegar"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": 1.0,
+      "unit": "tsp",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "palm_sugar",
+      "name": "sucre de fleur de palmier de Kampong Speu",
+      "quantity": 70.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Palm sugar"
+    },
+    {
+      "id": "cornstarch",
+      "name": "f\u00e9cule de ma\u00efs ou de tapioca",
+      "quantity": 1.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "Cornstarch or tapioca starch"
+    },
+    {
+      "id": "water_2tbsp",
+      "name": "eau",
+      "quantity": 2.0,
+      "unit": "tbsp",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "water"
+    }
+  ],
+  "tools": [
+    "Mixeur",
+    "Casserole"
+  ],
+  "steps": [
+    {
+      "id": "chop_vegetables",
+      "action": "Coupez le poivron grossi\u00e8rement. \u00c9pluchez et coupez grossi\u00e8rement les gousses d'ail.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "red_pepper",
+        "garlic"
+      ],
+      "produces": "chopped_vegetables",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_ingredients",
+      "action": "Mixez le poivron, l'ail, le piment et l'eau (30 ml) par \u00e0-coups. Arr\u00eatez avant d'avoir une texture lisse, pour obtenir des morceaux de la taille d'une graine de poivron.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_vegetables",
+        "crushed_chili",
+        "water_30ml"
+      ],
+      "produces": "blended_mixture",
+      "requires": [],
+      "visualCue": "morceaux de la taille d'une graine de poivron"
+    },
+    {
+      "id": "heat_and_add",
+      "action": "Transf\u00e9rez la pr\u00e9paration dans une casserole. Faites chauffer jusqu'\u00e0 l'apparition de petits bouillons, puis versez le vinaigre de riz, le sel et le sucre de fleurs de palmier.",
+      "duration": "PT3M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "blended_mixture",
+        "rice_vinegar",
+        "salt",
+        "palm_sugar"
+      ],
+      "produces": "heated_mixture",
+      "requires": [],
+      "visualCue": "apparition de petits bouillons"
+    },
+    {
+      "id": "simmer_first",
+      "action": "Laissez cuire \u00e0 petits bouillons pendant 5min.",
+      "duration": "PT5M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "heated_mixture"
+      ],
+      "produces": "simmered_mixture",
+      "requires": [],
+      "visualCue": "petits bouillons"
+    },
+    {
+      "id": "mix_cornstarch",
+      "action": "M\u00e9langez la f\u00e9cule avec 2 c\u00e0s d'eau froide. Versez dans la casserole et m\u00e9langez.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cornstarch",
+        "water_2tbsp",
+        "simmered_mixture"
+      ],
+      "produces": "thickened_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "simmer_second",
+      "action": "Laissez encore cuire \u00e0 petits bouillons pendant 1 \u00e0 2min. Quand la pr\u00e9paration commence \u00e0 \u00e9paissir, retirez du feu.",
+      "duration": "PT2M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "thickened_mixture"
+      ],
+      "produces": "cooked_sauce",
+      "requires": [],
+      "visualCue": "la pr\u00e9paration commence \u00e0 \u00e9paissir"
+    },
+    {
+      "id": "cool_and_jar",
+      "action": "Laissez refroidir et versez dans un bocal.",
+      "duration": "PT30M",
+      "temperature": null,
+      "stepType": "rest",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "cooked_sauce"
+      ],
+      "produces": "sweet_chili_sauce",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "sweet_chili_sauce",
+  "originalText": "Sauce Sweet Chili Maison - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n29 novembre 2021\nSauce Sweet Chili Maison\nAller \u00e0 la recette\nHello les cornis !\nJe suis trop heureuse de vous partager cette recette de Sauce Sweet Chili Maison.\nC\u2019est une recette que j\u2019ai en t\u00eate depuis longtemps. Et comme vous avez d\u00fb le remarquer, j\u2019aime faire mes sauces maison. Parce que je les trouve meilleures (hahaha). Et surtout, plus saines, car je contr\u00f4le ce qui s\u2019y trouve.\nD\u2019ailleurs, je pense que je ne vais pas tarder \u00e0 vous \u00e9crire un article sp\u00e9cialement d\u00e9di\u00e9 aux sauces v\u00e9g\u00e9taliennes maison. Mais en attendant, vous pouvez retrouver\nla sauce ranch\n,\nla sauce BBQ\n,\nla sauce burger\net\nla sauce gravy\n!\nCette fois-ci, je me suis dirig\u00e9e vers l\u2019Asie du Sud-Est, et j\u2019ai d\u00e9cid\u00e9 de faire ma sauce Sweet Chili Maison.\nNous avons d\u00e9couvert le sucre de palmier de Kampong Speu gr\u00e2ce \u00e0\nCaf\u00e9 Michel Terra Etica\n. Le sucre nous a s\u00e9duit tout de suite pour plusieurs raisons.\nD\u00e9j\u00e0, le sucre de palmier de Kampong Speu est issu de la fili\u00e8re \u00e9quitable et bio. Ce qui garantit un revenu juste pour les paysans tout au long de la cha\u00eene de production. Ensuite, on r\u00e9colte ce sucre \u00e0 partir de la fleur du palmier \u00e0 sucre Thnot. A ne pas confondre avec la palme qu\u2019on cultive pour l\u2019huile de palme. Au Cambodge, la r\u00e9colte de sucre est une activit\u00e9 de contre-saison pour les producteurs de riz. Il pousse naturellement autour des rizi\u00e8res et assure ainsi un revenu compl\u00e9mentaire aux producteurs. Le sucre de palmier de Kampong Speu poss\u00e8de d\u2019ailleurs une indication g\u00e9ographique prot\u00e9g\u00e9e. Cette IGP garantit au consommateur la qualit\u00e9 et l\u2019origine du produit.\nVous trouverez tous les d\u00e9tails ici\n.\nDaniela a r\u00e9alis\u00e9 une recette de\nCake Poire Amande au sucre de palmier de Kampong Speu\navec, que vous pouvez retrouver ici. Elle vous explique tous les d\u00e9tails de la r\u00e9colte dans son article !\nAu-del\u00e0 de sa production \u00e9quitable, nous avons \u00e9t\u00e9 conquises par les qualit\u00e9s gustatives de ce sucre de Kampong Speu. D\u00e9j\u00e0 cette couleur : on en parle ? Une profonde couleur caramel qui laisse anticiper son go\u00fbt si parfum\u00e9 ! Un go\u00fbt l\u00e9g\u00e8rement \u00e9pic\u00e9, avec un parfum entre le miel et le caramel ! Et en plus, il a un indice glyc\u00e9mique bas (30 au lieu de 65 pour le sucre de canne par exemple). Ce qui le rend encore plus int\u00e9ressant \ud83d\ude42\nLa sauce Sweet Chili Maison est plus fonc\u00e9e que celles que vous trouverez dans le commerce. Et c\u2019est simplement parce que j\u2019ai utilis\u00e9 le sucre de fleurs de palmier de Kampong Speu. Qui est plus fonc\u00e9 que le sucre raffin\u00e9 industriel habituellement utilis\u00e9. Il apporte tout son parfum et toute sa richesse \u00e0 la sauce !\nSauce Sweet Chili Maison\n4.62\n/5 avec\n75\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n5\nminutes\nmin\nTemps de cuisson\n10\nminutes\nmin\nPortions\n1\npot de 350ml\nIngr\u00e9dients\n1x\n2x\n3x\n80\ng\nde poivron rouge ou de piment rouge doux\n6\ngousses d\u2019ail\n\u00bd\nc\u00e0c de piment concass\u00e9\nplus ou moins au go\u00fbt\n30\nml\nd\u2019eau\n80\nml\nde vinaigre de riz\n1\nc\u00e0c de sel\n70\ng\nde sucre de fleur de palmier de Kampong Speu\n1\nc\u00e0s de f\u00e9cule de ma\u00efs ou de tapioca\n2\nc\u00e0s d\u2019eau\nInstructions\nCoupez le poivron grossi\u00e8rement. Epluchez et coupez grossi\u00e8rement les gousses d\u2019ail.\nMixez le poivron, l\u2019ail, le piment et l\u2019eau par \u00e0-coups. Vous devez vous arr\u00eater avant d\u2019avoir une texture lisse. On cherche plut\u00f4t \u00e0 avoir des morceaux de la taille d\u2019une graine de poivron.\nTransf\u00e9rez la pr\u00e9paration dans une casserole. Faites chauffer jusqu\u2019\u00e0 avoir des petits bouillons, puis versez le vinaigre, le sel et le sucre de fleurs de palmier.\nLaissez cuire \u00e0 petits bouillons 5 min.\nM\u00e9langez la f\u00e9cule avec 2 c\u00e0s d\u2019eau froide. Versez dans la casserole et m\u00e9langez.\nLaissez encore cuire \u00e0 petits bouillons pendant une \u00e0 2min. Quand la pr\u00e9paration commence \u00e0 \u00e9paissir, retirer du feu.\nLaissez refroidir et versez dans un bocal.\nSe conserve plusieurs semaines dans un bocal ferm\u00e9 herm\u00e9tiquement au frais.\nCette sauce sweet chili peut accompagner vos fritures, nems, onions rings, riz etc\u2026\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAutomne\n,\n\u00c9t\u00e9\n,\nNos recettes V\u00e9ganes\n,\nPlats & Accompagnements\n,\nPlats en Sauce\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nrecette sauce asiatique\n,\nrecette sauce v\u00e9g\u00e9tarienne\n,\nsauce maison\n,\nsauce nem maison\n,\nsauce sweet chili\n,\nsauce thai maison\n,\nsauce vegan\n,\nsweet chili maison\nBourguignon de l\u00e9gumes\nP\u00e2t\u00e9 V\u00e9g\u00e9tal \u00e0 la Ch\u00e2taigne\n2 thoughts on \u201cSauce Sweet Chili Maison\u201d\nPatrick MERTES\ndit\u00a0:\n29 novembre 2021 \u00e0 13 h 39 min\nPeut on remplacer le sucre de fleur de palmier par un autre\nO\u00f9 peut on se le procurer ?\nMerci \u00e0 vous\nchargement\u2026\nR\u00e9pondre\nNatacha\ndit\u00a0:\n30 novembre 2021 \u00e0 18 h 25 min\nBonjour Patrick, oui vous pouvez la remplacer pour du sucre de canne ou m\u00eame du sucre blanc. Vous pouvez trouver le sucre de fleurs de palmier chez\nhttps://www.cafemichel.fr/\nchargement\u2026\nR\u00e9pondre\n4.62 from 75 votes (\n75 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 14.0
+}

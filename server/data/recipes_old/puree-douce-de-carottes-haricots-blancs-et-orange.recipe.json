@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "title": "Pur\u00e9e douce de carottes, haricots blancs et orange",
+    "description": "Une pur\u00e9e cr\u00e9meuse et r\u00e9confortante aux carottes, enrichie de haricots blancs pour les prot\u00e9ines et relev\u00e9e par une touche fra\u00eeche de jus d'orange.",
+    "servings": 2,
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "difficulty": "easy",
+    "recipeType": "main_course",
+    "tags": [
+      "v\u00e9g\u00e9tarien",
+      "carotte",
+      "haricots blancs",
+      "orange",
+      "hiver",
+      "accompagnement",
+      "vegan (possible)",
+      "express"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/puree-douce-carottes-haricots-blancs-et-orange.jpg",
+    "nationality": null,
+    "author": "Free The Pickle",
+    "source": "Free The Pickle",
+    "notes": [
+      "Les haricots blancs apportent une texture cr\u00e9meuse sans ajout de cr\u00e8me ou de beurre et enrichissent la pur\u00e9e en prot\u00e9ines v\u00e9g\u00e9tales.",
+      "Le jus d'orange r\u00e9veille la douceur des carottes et sublime les haricots blancs avec une fine acidit\u00e9.",
+      "Peut \u00eatre servie avec un steak de chou-fleur au miso pour un repas complet.",
+      "Si besoin, la pur\u00e9e peut \u00eatre r\u00e9chauff\u00e9e dans une po\u00eale \u00e0 feu doux avant de servir."
+    ],
+    "slug": "puree-douce-de-carottes-haricots-blancs-et-orange",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2025/04/puree-douce-carottes-haricots-blancs-et-orange.jpg",
+    "sourceUrl": "https://freethepickle.fr/2025/05/01/puree-douce-carottes-haricots-blancs-et-orange/",
+    "image": "images/puree-douce-de-carottes-haricots-blancs-et-orange.webp",
+    "createdAt": "2026-02-09T22:48:22.975019",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "spring",
+      "winter"
+    ],
+    "totalTime": 20.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "December",
+      "February",
+      "January",
+      "March",
+      "November",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 457.4,
+      "protein": 13.2,
+      "fat": 19.4,
+      "carbs": 61.9,
+      "fiber": 13.5,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 5,
+      "totalIngredients": 5,
+      "negligibleIngredients": 3,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "high-fiber"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "carrots",
+      "name": "carottes",
+      "quantity": 500.0,
+      "unit": "g",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "carrots"
+    },
+    {
+      "id": "white_beans",
+      "name": "haricots blancs en conserve",
+      "quantity": 250.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "canned white beans"
+    },
+    {
+      "id": "orange_juice",
+      "name": "jus d'orange",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": "frais",
+      "notes": null,
+      "optional": false,
+      "name_en": "orange juice"
+    },
+    {
+      "id": "cream",
+      "name": "cr\u00e8me liquide",
+      "quantity": 100.0,
+      "unit": "ml",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "heavy cream"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "gousse",
+      "category": "produce",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "nutmeg",
+      "name": "muscade",
+      "quantity": 1.0,
+      "unit": "pinc\u00e9e",
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "nutmeg"
+    },
+    {
+      "id": "salt",
+      "name": "sel",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "salt"
+    },
+    {
+      "id": "pepper",
+      "name": "poivre",
+      "quantity": null,
+      "unit": null,
+      "category": "spice",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "black pepper"
+    }
+  ],
+  "tools": [
+    "Cuit-vapeur",
+    "Mixeur"
+  ],
+  "steps": [
+    {
+      "id": "steam_carrots",
+      "action": "Faites cuire les carottes \u00e0 la vapeur pendant 20min jusqu'\u00e0 ce qu'elles soient bien tendres.",
+      "duration": "PT20M",
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": true,
+      "subRecipe": "main",
+      "uses": [
+        "carrots"
+      ],
+      "produces": "steamed_carrots",
+      "requires": [],
+      "visualCue": "bien tendres"
+    },
+    {
+      "id": "drain_beans_peel_garlic",
+      "action": "\u00c9gouttez les haricots blancs et \u00e9pluchez les gousses d'ail.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "white_beans",
+        "garlic"
+      ],
+      "produces": "drained_beans_peeled_garlic",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_ingredients",
+      "action": "Dans un mixeur, ajoutez les carottes cuites, les haricots blancs \u00e9goutt\u00e9s, le jus d'orange, la cr\u00e8me liquide, l'ail \u00e9pluch\u00e9, la muscade, du sel et du poivre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "steamed_carrots",
+        "drained_beans_peeled_garlic",
+        "orange_juice",
+        "cream",
+        "nutmeg",
+        "salt",
+        "pepper"
+      ],
+      "produces": "combined_puree_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "blend_puree",
+      "action": "Mixez longuement jusqu'\u00e0 obtenir une texture parfaitement lisse et cr\u00e9meuse.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "combined_puree_mixture"
+      ],
+      "produces": "smooth_puree",
+      "requires": [],
+      "visualCue": "texture parfaitement lisse et cr\u00e9meuse"
+    },
+    {
+      "id": "reheat_if_needed",
+      "action": "Si besoin, faites r\u00e9chauffer la pur\u00e9e dans une po\u00eale \u00e0 feu doux avant de servir.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "cook",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "smooth_puree"
+      ],
+      "produces": "warmed_puree",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "warmed_puree",
+  "originalText": "Pur\u00e9e Douce Carottes Haricots Blancs Et Orange | Recette Facile\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n1 mai 2025\nPur\u00e9e de carottes, haricots blancs et orange | Recette Express\nLa\npur\u00e9e de carottes\n, c\u2019est un classique qu\u2019on adore\u2026 mais on s\u2019est dit : et si on lui donnait un\npetit twist\n? On y a gliss\u00e9 un\ningr\u00e9dient\nqu\u2019on ne voit pas souvent dans une\npur\u00e9e\n. R\u00e9sultat ? Une\ntexture ultra cr\u00e9meuse\n, une t\nouche douce\net\nd\u00e9licate\n, et un vrai\ncoup de boost\npour faire le plein de bonnes choses ! C\u2019est clairement notre\nrecette express\nchouchou du moment :\nfacile\n,\nrapide\n,\nv\u00e9g\u00e9tarienne\n\u2026 et pleine de surprises. On ne va pas tout vous r\u00e9v\u00e9ler tout de suite, mais ce\npetit twist vitamin\u00e9\nrisque bien de devenir votre\ningr\u00e9dient f\u00e9tiche\n. Alors, pr\u00eats \u00e0 tester cette\npur\u00e9e douce de carottes, haricots blancs et orange\n?\nTable des mati\u00e8res\n1\nUne pur\u00e9e sans patate\u2026 mais pleine de caract\u00e8re !\n2\nLes haricots blancs, nos alli\u00e9s veggie au quotidien\n3\nPur\u00e9e douce de carottes, haricots blancs et orange\n4\nQuand un agrume s\u2019invite dans la pur\u00e9e\u2026 et la transforme\nUne pur\u00e9e sans patate\u2026 mais pleine de caract\u00e8re !\nEt si on vous disait que les\nharicots blancs\npeuvent faire des merveilles dans une pur\u00e9e ? On les a gliss\u00e9s \u00e0 la place des pommes de terre\u2026 et l\u00e0, r\u00e9v\u00e9lation ! Plus riches en prot\u00e9ines, ultra doux en bouche, ils apportent une texture incroyablement cr\u00e9meuse sans ajout de cr\u00e8me ou de beurre. C\u2019est la petite astuce veggie qui transforme une simple pur\u00e9e en plat complet, r\u00e9confortant et nourrissant. Bonus : ils se marient \u00e0 merveille avec la douceur des carottes et la fra\u00eecheur de l\u2019orange. Vous allez adorer. Envie de cuisiner encore plus avec les haricots blancs ? On vous comprend, on est carr\u00e9ment fans nous aussi. Vous allez adorer ces autres recettes ultra gourmandes et 100 % v\u00e9g\u00e9tariennes : notre\ncr\u00e8me de haricots blancs au miso\n, notre\ngratin de blettes, haricots blancs et mozzarella\n, nos\nburgers v\u00e9g\u00e9tariens aux haricots blancs, comt\u00e9 et oignons caram\u00e9lis\u00e9s \u00e0 la bi\u00e8re\n!\nLes haricots blancs, nos alli\u00e9s veggie au quotidien\nQuand on mange sans viande, pas question de faire l\u2019impasse sur les prot\u00e9ines ! Et l\u00e0, les haricots blancs sont de v\u00e9ritables superstars. Riches en prot\u00e9ines v\u00e9g\u00e9tales, en fibres, en fer et en min\u00e9raux, ils aident \u00e0 garder une alimentation \u00e9quilibr\u00e9e et rassasiante. En plus, ils sont super versatiles : en pur\u00e9e, en gratin, en burgers\u2026 ils se glissent partout et font toujours le job. Bref, les haricots blancs, c\u2019est un peu le couteau suisse des assiettes veggie. Allez, on vous a convaincu ? Les haricots blancs sont d\u00e9finitivement un ingr\u00e9dient cl\u00e9 dans nos recettes veggie ! Si vous \u00eates pr\u00eats \u00e0 les adopter un peu plus souvent, voici encore quelques recettes coup de c\u0153ur \u00e0 ne pas manquer : notre\nsalade de haricots blancs et l\u00e9gumes r\u00f4tis\n, notre\nsoupe de butternut et haricots blancs, picada de noix\net notre\ncr\u00e8me de haricots blancs et champignons, vegan et sans gluten\n.\nPur\u00e9e douce de carottes, haricots blancs et orange\n4.48\n/5 avec\n87\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n10\nminutes\nmin\nTemps de cuisson\n20\nminutes\nmin\nPortions\n2\npersonnes\nIngr\u00e9dients\n1x\n2x\n3x\n500\ng\nde carottes\n250\ng\nde haricots blancs en conserve\nLe jus d\u2019une orange\n100\nml\nde cr\u00e8me liquide\n2\ngousses d\u2019ail\n1\npinc\u00e9e de muscade\nSel\npoivre\nInstructions\nFaites cuire les carottes \u00e0 la vapeur pendant une vingtaine de minutes jusqu\u2019\u00e0 ce qu\u2019elles soient bien tendres.\n\u00c9gouttez les haricots blancs et \u00e9pluchez les gousses d\u2019ail.\nDans un mixeur, ajoutez les carottes cuites, les haricots blancs, le jus d\u2019orange, la cr\u00e8me liquide, l\u2019ail, la muscade, du sel et du poivre.\nMixez longuement jusqu\u2019\u00e0 obtenir une texture parfaitement lisse et cr\u00e9meuse.\nSi besoin, faites r\u00e9chauffer la pur\u00e9e dans une po\u00eale \u00e0 feu doux avant de servir.\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nQuand un agrume s\u2019invite dans la pur\u00e9e\u2026 et la transforme\nOn vous en parlait un peu plus haut\u2026 ce petit twist qui change tout, c\u2019est le jus d\u2019orange ! Oui, oui. Le jus frais d\u2019une orange dans la\npur\u00e9e\n, et hop : la douceur des carottes est r\u00e9veill\u00e9e, les haricots blancs sont sublim\u00e9s, et une fine acidit\u00e9 vient \u00e9quilibrer le tout. C\u2019est discret, mais \u00e7a fait toute la diff\u00e9rence. En bonus ? Un vrai coup de boost en vitamines, parfait pour affronter l\u2019hiver (ou juste les journ\u00e9es un peu molles). Franchement, vous ne verrez plus jamais la pur\u00e9e de la m\u00eame fa\u00e7on. \u00c0 d\u00e9guster avec notre\nsteak de chou-fleur au miso\npour un combo veggie ultra r\u00e9confortant et plein de caract\u00e8re !\nFan de pur\u00e9e ? Nous aussi ! Si cette pur\u00e9e douce carottes, haricots blancs et orange vous a plu, vous allez fondre pour nos autres recettes du genre. Laissez-vous tenter par la\npur\u00e9e de c\u00e9leri-rave et sa fricass\u00e9e de champignons\n, voyagez en M\u00e9diterran\u00e9e avec la\nfava grecque aux pois cass\u00e9s\n, red\u00e9couvrez les basiques avec notre\npur\u00e9e classique super cr\u00e9meuse\nou craquez pour la\npur\u00e9e de courge et ses champignons \u00e0 la sauce soja\n, vegan et pleine de caract\u00e8re.\nCette pur\u00e9e douce carottes, haricots blancs et orange, c\u2019est un peu le doudou des assiettes veggie : simple, r\u00e9confortante, pleine de bonnes vibes et de bonnes choses. Avec sa texture onctueuse, son petit twist fruit\u00e9 et ses prot\u00e9ines v\u00e9g\u00e9tales, elle coche toutes les cases. On parie que vous allez la refaire (et la refaire encore). Alors, on sort les cuill\u00e8res ?\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nFree The Pickle\nFiled Under:\nAccompagnements\n,\nCarotte\n,\nHiver\n,\nNos recettes V\u00e9ganes\n,\nOrange\n,\nRecettes Sal\u00e9es\nCarottes et f\u00e8ves \u00e0 la polita : recette grecque v\u00e9g\u00e9tarienne & simple\nCarottes glac\u00e9es au sirop d\u2019\u00e9rable et ricotta fouett\u00e9e au citron : la recette facile qui change tout !\n4.48 from 87 votes (\n87 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}

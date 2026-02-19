@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "title": "Roul\u00e9s de Concombre au Fromage Frais",
+    "description": "Ces roul\u00e9s de concombre au fromage frais sont tout simplement g\u00e9niaux ! Une recette fra\u00eeche et simple qui plaise aux grands et aux petits.",
+    "servings": 16,
+    "prepTime": "PT20M",
+    "cookTime": null,
+    "difficulty": "easy",
+    "recipeType": "appetizer",
+    "tags": [
+      "fromage frais",
+      "maki v\u00e9g\u00e9",
+      "roul\u00e9s",
+      "concombre",
+      "ap\u00e9ro",
+      "\u00e9t\u00e9",
+      "printemps"
+    ],
+    "imageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Roules-concombre-fromage-3-of-6.jpg",
+    "nationality": null,
+    "author": "Natacha",
+    "source": "Free The Pickle",
+    "notes": [
+      "Recette cr\u00e9\u00e9e pour MonBento.",
+      "Parfait et ludique pour des mains d'enfant. Facile et pratique pour un ap\u00e9ro.",
+      "Pour d'autres id\u00e9es d'ap\u00e9ro : les petits sabl\u00e9s aux olives ou les bouch\u00e9es \u00e0 la courgette."
+    ],
+    "slug": "roules-de-concombre-au-fromage-frais",
+    "sourceImageUrl": "https://freethepickle.fr/wp-content/uploads/2021/08/Roules-concombre-fromage-3-of-6.jpg",
+    "sourceUrl": "https://freethepickle.fr/2021/08/19/roules-de-concombre-au-fromage-frais/",
+    "image": "images/roules-de-concombre-au-fromage-frais.jpg",
+    "createdAt": "2026-02-09T20:30:26.029173",
+    "creationMode": "url",
+    "diets": [
+      "vegetarian",
+      "omnivorous"
+    ],
+    "seasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "totalTime": 0.0,
+    "totalCookingTime": 0.0,
+    "peakMonths": [
+      "August",
+      "July",
+      "June",
+      "May",
+      "October",
+      "September"
+    ],
+    "nutritionPerServing": {
+      "calories": 89.4,
+      "protein": 1.8,
+      "fat": 8.1,
+      "carbs": 3.0,
+      "fiber": 0.4,
+      "confidence": "high",
+      "resolvedIngredients": 4,
+      "matchedIngredients": 4,
+      "totalIngredients": 4,
+      "negligibleIngredients": 1,
+      "source": "OpenNutrition"
+    },
+    "nutritionTags": [
+      "low-calorie"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "walnuts",
+      "name": "noix",
+      "quantity": 50.0,
+      "unit": "g",
+      "category": "pantry",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "walnut"
+    },
+    {
+      "id": "chives",
+      "name": "ciboulette",
+      "quantity": 20.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "brins",
+      "optional": false,
+      "name_en": "chives"
+    },
+    {
+      "id": "garlic",
+      "name": "ail",
+      "quantity": 2.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "petites gousses",
+      "optional": false,
+      "name_en": "garlic"
+    },
+    {
+      "id": "fresh_cheese",
+      "name": "fromage frais au lait de vache",
+      "quantity": 300.0,
+      "unit": "g",
+      "category": "dairy",
+      "preparation": null,
+      "notes": null,
+      "optional": false,
+      "name_en": "cream cheese"
+    },
+    {
+      "id": "cucumber",
+      "name": "concombre",
+      "quantity": 1.0,
+      "unit": "piece",
+      "category": "produce",
+      "preparation": null,
+      "notes": "grand",
+      "optional": false,
+      "name_en": "cucumber"
+    }
+  ],
+  "tools": [
+    "\u00c9conome",
+    "Torchon propre"
+  ],
+  "steps": [
+    {
+      "id": "chop_nuts_chives",
+      "action": "Hachez les noix et la ciboulette finement.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "walnuts",
+        "chives"
+      ],
+      "produces": "chopped_nuts_chives",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "combine_in_bowl",
+      "action": "Mettez les noix et la ciboulette hach\u00e9es dans un grand bol.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "chopped_nuts_chives"
+      ],
+      "produces": "nuts_chives_in_bowl",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "add_garlic_cheese",
+      "action": "Pressez l'ail et ajoutez-le au bol avec le fromage frais.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "nuts_chives_in_bowl",
+        "garlic",
+        "fresh_cheese"
+      ],
+      "produces": "cheese_mixture",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "mix_well",
+      "action": "M\u00e9langez bien.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cheese_mixture"
+      ],
+      "produces": "mixed_cheese_filling",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "peel_cucumber_ribbons",
+      "action": "\u00c0 l'aide d'un \u00e9conome, \"pelez\" des rubans de concombre. Posez-les au fur et \u00e0 mesure sur un torchon propre pour qu'il imbibe leur eau.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber"
+      ],
+      "produces": "cucumber_ribbons_wet",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "dry_cucumber_ribbons",
+      "action": "S\u00e9chez bien les rubans avec le torchon.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "prep",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber_ribbons_wet"
+      ],
+      "produces": "dried_cucumber_ribbons",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "spread_cheese_on_cucumber",
+      "action": "\u00c9talez un peu de fromage sur chaque lani\u00e8re de concombre.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "combine",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "mixed_cheese_filling",
+        "dried_cucumber_ribbons"
+      ],
+      "produces": "cucumber_with_cheese",
+      "requires": [],
+      "visualCue": null
+    },
+    {
+      "id": "roll_cucumber",
+      "action": "Roulez chaque lani\u00e8re, un peu comme un maki.",
+      "duration": null,
+      "temperature": null,
+      "stepType": "serve",
+      "isPassive": false,
+      "subRecipe": "main",
+      "uses": [
+        "cucumber_with_cheese"
+      ],
+      "produces": "roules_concombre_fromage",
+      "requires": [],
+      "visualCue": null
+    }
+  ],
+  "finalState": "roules_concombre_fromage",
+  "originalText": "Roul\u00e9s de Concombre au Fromage Frais - Free The Pickle\nSkip to content\nToggle header\ndes recettes de saison sans viande, v\u00e9g\u00e9tariennes, parfois vegan, toujours d\u00e9licieuses\nToggle Navigation\nAccueil\nRecettes Par Saison\n\u00c9t\u00e9\nAutomne\nHiver\nPrintemps\nRecettes par L\u00e9gume\nAubergine\nArtichaut\nAsperge\nBetterave\nBlettes\nBrocoli\nCarotte\nC\u00e9leri Rave\nChampignon\nChoux\nConcombre\nCourgette\nCourge\nEndive\nEpinards\nFenouil\nF\u00e8ves\nHaricots verts\nNavet\nOignon\nPatate Douce\nPetits Pois\nPoireau\nPoivron\nPomme de terre\nTomate\nRecettes par Fruit\nAbricot\nBanane\nCerise\nCitron\nCoing\nFigue\nFraise\nFramboise\nMelon\nMyrtille\nOrange\nPast\u00e8que\nPamplemousse\nP\u00eache\nPoire\nPomme\nPrune\nRhubarbe\n\u00c0 la une du v\u00e9g\u00e9tal\nIngr\u00e9dients \u00e0 d\u00e9couvrir\nZoom sur un l\u00e9gume\nSaisons et inspirations\nMat\u00e9riel de cuisine et conseils pratiques\nRecettes Sal\u00e9es\nAccompagnements\nAp\u00e9ros\nBrunch Sal\u00e9\nBurgers, sandwichs et wraps\nCakes sal\u00e9s\nGalettes\nPlats au Four\nPlats en Sauce\nQuiches et Tartes\nSalades\nSoupes\nWok\nRecettes Sucr\u00e9es\nBoissons\nBrioches et Boulange\nBrunch Sucr\u00e9\nCookies Biscuits et Mignardises\nCr\u00e8mes et Entremets\nG\u00e2teaux et Cakes\nGlaces et Sorbets\nMuffins et Scones\nTartes et Galettes\nA propos\nMes Livres\nEbooks\nPanier\n19 ao\u00fbt 2021\nRoul\u00e9s de Concombre au Fromage Frais\nCes roul\u00e9s de concombre au fromage frais sont tout simplement g\u00e9niaux !\nJ\u2019avais envie d\u2019une recette fra\u00eeche et simple qui plaise aux grands et aux petits. Et franchement je suis ravie du r\u00e9sultat !\nJ\u2019ai toujours pr\u00e9f\u00e9r\u00e9 faire mes fromages frais \u201caromatis\u00e9s\u201d toute seule.\nD\u00e9j\u00e0 parce que comme \u00e7a je contr\u00f4le la composition. Et ensuite, j\u2019adapte en fonction de mes envies et des associations que j\u2019ai envie de faire.\nIci, avec le concombre, j\u2019avais envie de la puissance de l\u2019ail cru, pour donner un gros coup de peps. De la m\u00e2che des noix et du c\u00f4t\u00e9 plus \u00e9l\u00e9gant de la ciboulette. Le mariage avec le go\u00fbt tr\u00e8s doux et frais du concombre fonctionne \u00e0 merveille.\nEt le fait de les rouler comme des petits makis plait beaucoup ! Ils sont mignons, on les attrape \u00e0 la main sans probl\u00e8me. C\u2019est parfait et ludique pour des mains d\u2019enfant. Et facile et pratique pour des mains d\u2019adulte lors d\u2019un ap\u00e9ro !\nJ\u2019ai cr\u00e9\u00e9e cette recette de roul\u00e9s de concombre au fromage frais pour\nMonBento\n.\nPour d\u2019autres id\u00e9es sympas d\u2019ap\u00e9ro je vous conseille\nles petits sabl\u00e9s aux olives\nou\nles bouch\u00e9es \u00e0 la courgette\n!\nRoul\u00e9s de Concombre et Fromage Frais\nNatacha\n4.54\n/5 avec\n49\nvotes\nImprimer la recette\nPin Recipe\nTemps de pr\u00e9paration\n20\nminutes\nmin\nPortions\n16\nroul\u00e9s\nIngr\u00e9dients\n1x\n2x\n3x\n50\ng\nde noix\n20\nbrins de ciboulette\n2\npetites gousses d\u2019ail\n300\ng\nde fromage frais\nau lait de vache\n1\ngrand concombre\nInstructions\nHachez les noix et la ciboulette finement. Mettez les dans un grand bol. Pressez l\u2019ail et ajoutez le fromage frais. M\u00e9langez bien.\nA l\u2019aide d\u2019un \u00e9conome, \u201cpelez\u201d des rubans de concombre. Posez-les au fur et \u00e0 mesure sur un torchon propre pour qu\u2019il imbibe leur eau. Une fois arriv\u00e9 aux p\u00e9pins du concombre, retournez le et recommencez. Vous devriez obtenir environ 15-20 rubans.\nS\u00e9chez bien les rubans avec le torchon.\n\u00c9talez un peu de fromage sur chaque lani\u00e8re puis roulez-la, un peu comme un maki.\nEt voil\u00e0, c\u2019est pr\u00eat ! Et c\u2019est frais \ud83d\ude42\nTried this recipe?\nDites-nous\nsi vous avez aim\u00e9 !\nJ\u2019aime \u00e7a\u00a0:\nJ\u2019aime\nchargement\u2026\nArticles similaires\nAuthor:\nNatacha\nFiled Under:\nAccompagnements\n,\nAp\u00e9ros\n,\nConcombre\n,\n\u00c9t\u00e9\n,\nPrintemps\n,\nRecettes Sal\u00e9es\nTags:\nfromage frais\n,\nmaki v\u00e9g\u00e9\n,\nroul\u00e9s\nSabl\u00e9s Sal\u00e9s Olives noires et Thym\nGranola Croquant Vanille Coco\n4.54 from 49 votes (\n49 ratings without comment\n)\nLaisser un commentaire\nAnnuler la r\u00e9ponse\nVotre adresse e-mail ne sera pas publi\u00e9e.\nLes champs obligatoires sont indiqu\u00e9s avec\n*\nName\n*\nEmail Address\n*\nWebsite\nNote de la recette\nNote de la recette\nComment\nSave my name, email, and website in this browser for the next time I comment.\nPr\u00e9venez-moi de tous les nouveaux commentaires par e-mail.\nPr\u00e9venez-moi de tous les nouveaux articles par e-mail.\n\u0394\nCe site utilise Akismet pour r\u00e9duire les ind\u00e9sirables.\nEn savoir plus sur la fa\u00e7on dont les donn\u00e9es de vos commentaires sont trait\u00e9es\n.\nRecherchez des recettes\nSearch\nSearching is in progress\nD\u00e9couvrez nos ebooks\nEbook - 40 recettes sp\u00e9cial No\u00ebl v\u00e9g\u00e9\n\u20ac\n11,90\nEbook - 3 semaines de Batch Cooking - Recettes de printemps\nNote\n5.00\nsur 5\n\u20ac\n8,50\nEbook - Free the Chou-fleur\n\u20ac\n8,50\nObsessions V\u00e9g\u00e9tales : mon premier livre de recettes !\nAbonnez-vous \u00e0 Free The Pickle\nSaisissez votre adresse e-mail pour vous abonner \u00e0 ce blog et recevoir une notification de chaque nouvel article par email.\nAdresse e-mail\nAbonnez-vous\nRejoignez les 1\u00a0726 autres abonn\u00e9s\nMentions L\u00e9gales\nPolitique de confidentialit\u00e9\nConditions g\u00e9n\u00e9rales de vente\nCopyright Free The Pickle \u00a9 2026\nChargement des commentaires\u2026\n\u00c9crire un commentaire...\nE-mail (requis)\nNom (requis)\nSite web\n%d\nNotez cette recette\nYour vote:\nNom *\nE-mail *\nJe note et commente cette recette\nA rating is required\nA name is required\nAn email is required\nRecipe Ratings without Comment\nSomething went wrong. Please try again.",
+  "totalCookingTime": 0.0
+}
