@@ -174,29 +174,33 @@ class RecipeService:
                 detail=f"Error reading auth presets: {str(e)}"
             )
 
-    def _load_private_authors(self) -> List[str]:
-        """Load the list of private author identifiers from authors.json."""
+    def _load_access_config(self) -> Dict[str, Any]:
+        """Load the access config (public_domains whitelist) from authors.json."""
         authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
         try:
             if os.path.exists(authors_file):
                 with open(authors_file, "r") as f:
-                    return json.load(f).get("private", [])
+                    return json.load(f)
         except (json.JSONDecodeError, OSError) as e:
-            logger.warning(f"Could not load private authors from {authors_file}: {e}")
-        return []
+            logger.warning(f"Could not load access config from {authors_file}: {e}")
+        return {}
 
     def is_recipe_private(self, recipe: Dict[str, Any]) -> bool:
-        """Check if a recipe belongs to a private author/source."""
-        private_authors = self._load_private_authors()
-        if not private_authors:
+        """A recipe is private unless its source domain is whitelisted."""
+        config = self._load_access_config()
+        public_domains = [d.lower() for d in config.get("public_domains", [])]
+        allow_no_url = config.get("allow_no_source_url", False)
+
+        if not public_domains and not allow_no_url:
             return False
+
         metadata = recipe.get("metadata", {})
-        author = (metadata.get("author") or "").lower()
         source_url = (metadata.get("sourceUrl") or "").lower()
-        return any(
-            pa.lower() in author or pa.lower() in source_url
-            for pa in private_authors
-        )
+
+        if not source_url:
+            return not allow_no_url
+
+        return not any(domain in source_url for domain in public_domains)
 
     async def get_recipe(self, slug: str) -> Dict[str, Any]:
         """Get a recipe by its slug."""
@@ -241,28 +245,15 @@ class RecipeService:
 
             recipes = []
 
-            # Get list of private authors
-            private_authors = []
-            authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
-            try:
-                if os.path.exists(authors_file):
-                    with open(authors_file, "r") as f:
-                        authors_data = json.load(f)
-                        private_authors = authors_data.get("private", [])
-                        logger.debug(f" Private authors: {private_authors}")
-                else:
-                    logger.warning(f" authors.json not found at {authors_file}")
-            except Exception as e:
-                logger.error(f"Error reading authors file: {str(e)}")
-                # Continue with empty private_authors list
+            config = self._load_access_config()
+            public_domains = [d.lower() for d in config.get("public_domains", [])]
+            allow_no_url = config.get("allow_no_source_url", False)
 
-            # Read each recipe file
             total_read = 0
             total_private = 0
             total_included = 0
             
             for recipe_file in recipe_files:
-                # Skip auth presets file
                 if os.path.basename(recipe_file) == "auth_presets.json":
                     continue
 
@@ -272,16 +263,13 @@ class RecipeService:
                         recipe_data = json.load(f)
                         metadata = recipe_data.get("metadata", {})
                         
-                        # Check if recipe is private (author or sourceUrl contains any private author name)
-                        author = (metadata.get("author") or "").lower()
-                        source_url = metadata.get("sourceUrl") or ""
-                        source_url_lower = source_url.lower() if source_url else ""
-                        
-                        is_private = any(
-                            private_author.lower() in author or 
-                            private_author.lower() in source_url_lower 
-                            for private_author in private_authors
-                        )
+                        source_url = (metadata.get("sourceUrl") or "").lower()
+                        if not source_url:
+                            is_private = not allow_no_url
+                        elif public_domains:
+                            is_private = not any(domain in source_url for domain in public_domains)
+                        else:
+                            is_private = False
                         
                         if is_private:
                             total_private += 1
