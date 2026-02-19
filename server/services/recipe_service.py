@@ -290,21 +290,29 @@ class RecipeService:
                         # Include recipe if it's public or if private access is granted
                         if not is_private or include_private:
                             total_included += 1
+                            total_time_raw = metadata.get("totalTime")
+                            if isinstance(total_time_raw, (int, float)):
+                                hours, mins = divmod(int(total_time_raw), 60)
+                                total_time_raw = f"PT{hours}H{mins}M" if hours else f"PT{mins}M"
+
                             recipes.append({
                                 "title": metadata.get("title", "Untitled"),
                                 "sourceImageUrl": metadata.get("sourceImageUrl", ""),
                                 "description": metadata.get("description", ""),
                                 "bookTitle": metadata.get("bookTitle", ""),
                                 "author": metadata.get("author", ""),
-                                "diets": metadata.get("diets", []),
-                                "seasons": metadata.get("seasons", []),
-                                "peakMonths": metadata.get("peakMonths", []),
+                                "diets": metadata.get("diets") or [],
+                                "seasons": metadata.get("seasons") or [],
+                                "peakMonths": metadata.get("peakMonths") or [],
                                 "recipeType": metadata.get("recipeType", ""),
                                 "ingredients": [
-                                    {"name": ing.get("name", ""), "name_en": ing.get("name_en", "")}
+                                    {
+                                        "name": ing.get("name") or "",
+                                        "name_en": ing.get("name_en") or "",
+                                    }
                                     for ing in recipe_data.get("ingredients", [])
                                 ],
-                                "totalTime": metadata.get("totalTime"),
+                                "totalTime": total_time_raw,
                                 "totalTimeMinutes": metadata.get("totalTimeMinutes", 0.0),
                                 "totalActiveTime": metadata.get("totalActiveTime"),
                                 "totalActiveTimeMinutes": metadata.get("totalActiveTimeMinutes", 0.0),
@@ -314,7 +322,7 @@ class RecipeService:
                                 "quick": metadata.get("quick", False),
                                 "difficulty": metadata.get("difficulty", ""),
                                 "slug": metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", "")),
-                                "nutritionTags": metadata.get("nutritionTags", []),
+                                "nutritionTags": metadata.get("nutritionTags") or [],
                                 "nutritionPerServing": metadata.get("nutritionPerServing", None),
                             })
                 except json.JSONDecodeError as e:

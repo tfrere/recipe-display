@@ -42,29 +42,6 @@ app.include_router(constants_router)
 app.include_router(authors_router)
 app.include_router(recipe_files_router)
 
-@app.get("/api/debug-paths")
-async def debug_paths():
-    import glob as g
-    from api.dependencies import get_recipe_service
-    try:
-        service = get_recipe_service()
-        return {
-            "cwd": os.getcwd(),
-            "base_path": str(service.base_path),
-            "base_path_abs": str(service.base_path.absolute()),
-            "recipes_path": str(service.recipes_path),
-            "recipes_path_abs": str(service.recipes_path.absolute()),
-            "recipes_path_exists": service.recipes_path.exists(),
-            "recipe_count": len(g.glob(os.path.join(service.recipes_path, "*.recipe.json"))),
-            "has_url_index": hasattr(service, '_url_index'),
-            "app_exists": os.path.exists('/app'),
-            "app_data_recipes_exists": os.path.exists('/app/data/recipes'),
-            "app_data_recipes_count": len(g.glob('/app/data/recipes/*.recipe.json')),
-        }
-    except Exception as e:
-        return {"error": f"{type(e).__name__}: {str(e)}"}
-
-
 if __name__ == "__main__":
     import uvicorn
     
