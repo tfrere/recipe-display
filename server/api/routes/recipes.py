@@ -76,25 +76,6 @@ async def stream_generation_progress(task_id: str, service: RecipeService = Depe
         },
     )
 
-@router.get("/debug")
-async def debug_info(service: RecipeService = Depends(get_recipe_service)):
-    """Diagnostic endpoint to debug path resolution."""
-    import glob as g
-    return {
-        "cwd": os.getcwd(),
-        "base_path": str(service.base_path),
-        "base_path_abs": str(service.base_path.absolute()),
-        "recipes_path": str(service.recipes_path),
-        "recipes_path_abs": str(service.recipes_path.absolute()),
-        "recipes_path_exists": service.recipes_path.exists(),
-        "recipe_count": len(g.glob(os.path.join(service.recipes_path, "*.recipe.json"))),
-        "has_url_index": hasattr(service, '_url_index'),
-        "app_exists": os.path.exists('/app'),
-        "app_data_recipes_exists": os.path.exists('/app/data/recipes'),
-        "app_data_recipes_count": len(g.glob('/app/data/recipes/*.recipe.json')),
-    }
-
-
 @router.get("", response_model=List[RecipeListItem])
 async def list_recipes(
     include_private: bool = False,
