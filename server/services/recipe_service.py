@@ -186,21 +186,16 @@ class RecipeService:
         return {}
 
     def is_recipe_private(self, recipe: Dict[str, Any]) -> bool:
-        """A recipe is private unless its source domain is whitelisted."""
+        """A recipe is private unless its slug is in the public_slugs whitelist."""
         config = self._load_access_config()
-        public_domains = [d.lower() for d in config.get("public_domains", [])]
-        allow_no_url = config.get("allow_no_source_url", False)
+        public_slugs = set(config.get("public_slugs", []))
 
-        if not public_domains and not allow_no_url:
+        if not public_slugs:
             return False
 
         metadata = recipe.get("metadata", {})
-        source_url = (metadata.get("sourceUrl") or "").lower()
-
-        if not source_url:
-            return not allow_no_url
-
-        return not any(domain in source_url for domain in public_domains)
+        slug = metadata.get("slug", "")
+        return slug not in public_slugs
 
     async def get_recipe(self, slug: str) -> Dict[str, Any]:
         """Get a recipe by its slug."""
@@ -246,8 +241,7 @@ class RecipeService:
             recipes = []
 
             config = self._load_access_config()
-            public_domains = [d.lower() for d in config.get("public_domains", [])]
-            allow_no_url = config.get("allow_no_source_url", False)
+            public_slugs = set(config.get("public_slugs", []))
 
             total_read = 0
             total_private = 0
@@ -263,13 +257,8 @@ class RecipeService:
                         recipe_data = json.load(f)
                         metadata = recipe_data.get("metadata", {})
                         
-                        source_url = (metadata.get("sourceUrl") or "").lower()
-                        if not source_url:
-                            is_private = not allow_no_url
-                        elif public_domains:
-                            is_private = not any(domain in source_url for domain in public_domains)
-                        else:
-                            is_private = False
+                        slug = metadata.get("slug", os.path.basename(recipe_file).replace(".recipe.json", ""))
+                        is_private = slug not in public_slugs if public_slugs else False
                         
                         if is_private:
                             total_private += 1
