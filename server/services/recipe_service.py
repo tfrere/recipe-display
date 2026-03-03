@@ -78,11 +78,16 @@ class RecipeService:
             summaries = await self.repo.list_summaries()
 
             if not include_private:
-                private_authors = self._load_private_authors()
-                if private_authors:
+                config = self._load_authors_config()
+                if "public" in config and config["public"]:
                     summaries = [
                         r for r in summaries
-                        if not self._is_author_private(r.get("author", ""), private_authors)
+                        if self._author_matches(r.get("author", ""), config["public"])
+                    ]
+                elif "private" in config and config["private"]:
+                    summaries = [
+                        r for r in summaries
+                        if not self._author_matches(r.get("author", ""), config["private"])
                     ]
 
             return summaries
@@ -108,33 +113,46 @@ class RecipeService:
 
     # ── Access control ────────────────────────────────────────────────
 
-    def _load_private_authors(self) -> list[str]:
-        """Load the list of private author keywords from authors.json.
+    def _load_authors_config(self) -> Dict[str, list[str]]:
+        """Load authors.json and return normalised config.
 
-        Returns lowercased keywords. A recipe is private if its author
-        field contains any of these keywords (substring match).
-        Returns empty list if file is missing (= everything public).
+        Supports two modes (determined by which keys are present):
+          • "public"  → whitelist: only recipes from these authors are visible
+          • "private" → blacklist: recipes from these authors are hidden
+
+        All keywords are lowercased for case-insensitive substring matching.
+        Returns empty dict if file is missing (= everything public).
         """
         authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
         try:
             if os.path.exists(authors_file):
                 with open(authors_file, "r") as f:
                     data = json.load(f)
-                    return [a.lower() for a in data.get("private", [])]
+                    config: Dict[str, list[str]] = {}
+                    if "public" in data:
+                        config["public"] = [a.lower() for a in data["public"]]
+                    if "private" in data:
+                        config["private"] = [a.lower() for a in data["private"]]
+                    return config
         except (json.JSONDecodeError, OSError) as e:
             logger.warning(f"Could not load access config from {authors_file}: {e}")
-        return []
+        return {}
 
-    def _is_author_private(self, author: str, private_authors: list[str]) -> bool:
-        if not author or not private_authors:
+    @staticmethod
+    def _author_matches(author: str, keywords: list[str]) -> bool:
+        if not author or not keywords:
             return False
         author_lower = author.lower()
-        return any(pa in author_lower for pa in private_authors)
+        return any(kw in author_lower for kw in keywords)
 
     def is_recipe_private(self, recipe: Dict[str, Any]) -> bool:
-        private_authors = self._load_private_authors()
+        config = self._load_authors_config()
         author = recipe.get("metadata", {}).get("author", "")
-        return self._is_author_private(author, private_authors)
+        if "public" in config:
+            return not self._author_matches(author, config["public"])
+        if "private" in config:
+            return self._author_matches(author, config["private"])
+        return False
 
     async def get_auth_presets(self) -> Dict[str, Any]:
         try:
