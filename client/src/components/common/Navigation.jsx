@@ -28,8 +28,10 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import { alpha } from "@mui/material/styles";
 import PantryDrawer from "./PantryDrawer";
+import LoginDialog from "./LoginDialog";
 import useLongPress from "../../hooks/useLongPress";
 
 const Navigation = () => {
@@ -40,7 +42,8 @@ const Navigation = () => {
   const { pantrySize } = usePantry();
   const [isPantryOpen, setIsPantryOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const { pressing, longPressProps, hasPrivateAccess, disablePrivateAccess } = useLongPress();
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const { hasPrivateAccess, login, disablePrivateAccess } = useLongPress();
   const {
     setSelectedDiet,
     setSelectedDifficulty,
@@ -96,13 +99,11 @@ const Navigation = () => {
                 navigate("/");
                 resetFilters();
               }}
-              {...longPressProps}
             >
               <AutoStoriesOutlinedIcon
                 sx={{
                   mr: 1,
-                  color: pressing ? "primary.main" : "text.secondary",
-                  transition: "color 0.2s ease-in-out",
+                  color: "text.secondary",
                 }}
               />
               <Typography
@@ -242,7 +243,7 @@ const Navigation = () => {
                 <SettingsOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
               </Box>
             </Tooltip>
-            {hasPrivateAccess && (
+            {hasPrivateAccess ? (
               <Tooltip title={t("nav.logout", { defaultValue: "Logout" })}>
                 <Box
                   sx={{
@@ -262,6 +263,26 @@ const Navigation = () => {
                   <LogoutOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
                 </Box>
               </Tooltip>
+            ) : (
+              <Tooltip title={t("auth.login", { defaultValue: "Login" })}>
+                <Box
+                  sx={{
+                    p: 0.75,
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    borderRadius: 1,
+                    border: "1px solid",
+                    borderColor: "divider",
+                    "&:hover": {
+                      bgcolor: "action.hover",
+                    },
+                  }}
+                  onClick={() => setIsLoginOpen(true)}
+                >
+                  <LoginOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
+                </Box>
+              </Tooltip>
             )}
           </Box>
         </Toolbar>
@@ -275,6 +296,12 @@ const Navigation = () => {
       <SettingsDialog
         open={isSettingsOpen}
         onClose={() => setIsSettingsOpen(false)}
+      />
+
+      <LoginDialog
+        open={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+        onLogin={login}
       />
     </>
   );

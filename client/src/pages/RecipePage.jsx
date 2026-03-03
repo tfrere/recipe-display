@@ -20,8 +20,10 @@ const RecipePage = () => {
   const goToRandomRecipe = useCallback(async () => {
     try {
       const headers = {};
-      const token = import.meta.env.VITE_PRIVATE_TOKEN;
-      if (token) headers["X-Private-Token"] = token;
+      try {
+        const token = JSON.parse(localStorage.getItem("privateToken") || "null");
+        if (token) headers["X-Private-Token"] = token;
+      } catch { /* no token */ }
 
       const res = await fetch(`${API_BASE_URL}/api/recipes/random`, { headers });
       if (!res.ok) return;

@@ -1,12 +1,20 @@
 import axios from "axios";
 
 const API_URL = `${import.meta.env.VITE_API_ENDPOINT}/api`;
-const PRIVATE_TOKEN = import.meta.env.VITE_PRIVATE_TOKEN || "";
+
+function getPrivateToken() {
+  try {
+    return JSON.parse(localStorage.getItem("privateToken") || "null");
+  } catch {
+    return null;
+  }
+}
 
 function getPrivateHeaders() {
   const hasAccess = JSON.parse(localStorage.getItem("hasPrivateAccess") || "false");
-  if (hasAccess && PRIVATE_TOKEN) {
-    return { "X-Private-Token": PRIVATE_TOKEN };
+  const token = getPrivateToken();
+  if (hasAccess && token) {
+    return { "X-Private-Token": token };
   }
   return {};
 }
@@ -26,7 +34,7 @@ export const getRecipe = async (slug) => {
 export const getRecipes = async (hasPrivateAccess = false) => {
   try {
     const params = hasPrivateAccess ? { include_private: true } : {};
-    const headers = hasPrivateAccess ? { "X-Private-Token": PRIVATE_TOKEN } : {};
+    const headers = hasPrivateAccess ? getPrivateHeaders() : {};
     const response = await axios.get(`${API_URL}/recipes`, { params, headers });
     return response.data;
   } catch (error) {

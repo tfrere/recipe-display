@@ -43,7 +43,13 @@ export const RecipeProvider = ({ children }) => {
 
   const API_BASE_URL =
     import.meta.env.VITE_API_ENDPOINT || "http://localhost:3001";
-  const PRIVATE_TOKEN = import.meta.env.VITE_PRIVATE_TOKEN || "";
+  const getPrivateToken = () => {
+    try {
+      return JSON.parse(localStorage.getItem("privateToken") || "null");
+    } catch {
+      return null;
+    }
+  };
 
   const [currentRecipeSlug, setCurrentRecipeSlug] = useState(null);
 
@@ -129,8 +135,9 @@ export const RecipeProvider = ({ children }) => {
     try {
       const headers = {};
       const hasAccess = JSON.parse(localStorage.getItem("hasPrivateAccess") || "false");
-      if (hasAccess && PRIVATE_TOKEN) {
-        headers["X-Private-Token"] = PRIVATE_TOKEN;
+      const token = getPrivateToken();
+      if (hasAccess && token) {
+        headers["X-Private-Token"] = token;
       }
       const response = await fetch(`${API_BASE_URL}/api/recipes/${slug}`, { headers });
       if (!response.ok) throw new Error("Failed to fetch recipe");
