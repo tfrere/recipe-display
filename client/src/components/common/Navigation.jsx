@@ -28,7 +28,7 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
-import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { alpha } from "@mui/material/styles";
 import PantryDrawer from "./PantryDrawer";
 import LoginDialog from "./LoginDialog";
@@ -280,7 +280,7 @@ const Navigation = () => {
                   }}
                   onClick={() => setIsLoginOpen(true)}
                 >
-                  <LoginOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
+                  <PersonOutlineOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
                 </Box>
               </Tooltip>
             )}
