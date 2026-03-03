@@ -149,7 +149,8 @@ export const RecipeListProvider = ({ children }) => {
 
   // Écouter les changements d'état d'accès privé
   useEffect(() => {
-    const unsubscribe = onPrivateAccessChange((newValue) => {
+    const unsubscribe = onPrivateAccessChange(() => {
+      setAllRecipes([]);
       fetchRecipes();
     });
 
