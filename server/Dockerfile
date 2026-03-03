@@ -32,9 +32,6 @@ RUN mkdir -p /app/data/recipes/images && \
     chown -R nobody:nogroup /app/data && \
     chmod -R 755 /app/data
 
-# Copy constants to a location outside the volume mount so they survive volume overlay
-RUN cp -r /app/data/constants /app/constants_bundled 2>/dev/null || true
-
 # Install dependencies
 RUN poetry config virtualenvs.create false && \
     poetry lock && \

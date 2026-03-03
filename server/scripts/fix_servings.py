@@ -39,7 +39,7 @@ logger = logging.getLogger(__name__)
 
 RECIPES_DIR = SERVER_ROOT / "data" / "recipes"
 RECIPES_OLD_DIR = SERVER_ROOT / "data" / "recipes_old"
-CACHE_FILE = SERVER_ROOT / "data" / "constants" / "servings_fixes.json"
+CACHE_FILE = SERVER_ROOT / "constants" / "servings_fixes.json"
 
 PROMPT = """\
 You are a professional chef and food editor. Given a recipe, determine the \
