@@ -147,17 +147,16 @@ export const RecipeListProvider = ({ children }) => {
     }
   }, [hasPrivateAccess]);
 
-  // Écouter les changements d'état d'accès privé
+  // Écouter les changements d'état d'accès privé :
+  // On vide les recettes immédiatement (spinner), et le useEffect
+  // sur fetchRecipes se chargera du re-fetch avec la bonne valeur
+  // de hasPrivateAccess une fois le state React mis à jour.
   useEffect(() => {
     const unsubscribe = onPrivateAccessChange(() => {
       setAllRecipes([]);
-      fetchRecipes();
     });
-
-    return () => {
-      unsubscribe();
-    };
-  }, [onPrivateAccessChange, fetchRecipes]);
+    return () => unsubscribe();
+  }, [onPrivateAccessChange]);
 
   useEffect(() => {
     fetchRecipes();
