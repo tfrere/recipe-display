@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Dialog,
-  DialogTitle,
   DialogContent,
   TextField,
-  Button,
-  Typography,
   IconButton,
   Box,
+  CircularProgress,
+  InputAdornment,
+  Fade,
+  Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useTranslation } from "react-i18next";
 
 const LoginDialog = ({ open, onClose, onLogin }) => {
@@ -17,10 +22,20 @@ const LoginDialog = ({ open, onClose, onLogin }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (open) {
+      setPassword("");
+      setError("");
+      setShowPassword(false);
+    }
+  }, [open]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!password.trim()) return;
+    if (!password.trim() || loading) return;
 
     setLoading(true);
     setError("");
@@ -32,53 +47,62 @@ const LoginDialog = ({ open, onClose, onLogin }) => {
     } catch (err) {
       setError(
         err?.response?.status === 401
-          ? t("auth.invalidPassword", { defaultValue: "Invalid password" })
+          ? t("auth.invalidPassword", { defaultValue: "Wrong password" })
           : t("auth.error", { defaultValue: "Connection error" })
       );
+      setTimeout(() => inputRef.current?.focus(), 50);
     } finally {
       setLoading(false);
     }
   };
 
-  const handleClose = () => {
-    setPassword("");
-    setError("");
-    onClose();
-  };
-
   return (
     <Dialog
       open={open}
-      onClose={handleClose}
+      onClose={loading ? undefined : onClose}
       maxWidth="xs"
       fullWidth
-      PaperProps={{ sx: { borderRadius: 3 } }}
+      PaperProps={{
+        sx: {
+          borderRadius: 3,
+          overflow: "hidden",
+        },
+      }}
     >
-      <DialogTitle
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          pb: 0.5,
-        }}
-      >
-        <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "1rem" }}>
-          {t("auth.login", { defaultValue: "Login" })}
-        </Typography>
-        <IconButton
-          onClick={handleClose}
-          size="small"
-          sx={{ color: "text.secondary" }}
+      <DialogContent sx={{ p: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mb: 2.5,
+          }}
         >
-          <CloseIcon fontSize="small" />
-        </IconButton>
-      </DialogTitle>
-      <DialogContent>
-        <Box component="form" onSubmit={handleSubmit} sx={{ pt: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <LockOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.1rem" }} />
+            <Typography
+              variant="body1"
+              sx={{ fontWeight: 600, fontSize: "0.95rem" }}
+            >
+              {t("auth.login", { defaultValue: "Login" })}
+            </Typography>
+          </Box>
+          <IconButton
+            onClick={onClose}
+            size="small"
+            disabled={loading}
+            sx={{ color: "text.secondary", mr: -0.5 }}
+          >
+            <CloseIcon fontSize="small" />
+          </IconButton>
+        </Box>
+
+        <Box component="form" onSubmit={handleSubmit}>
           <TextField
+            inputRef={inputRef}
             autoFocus
             fullWidth
-            type="password"
+            type={showPassword ? "text" : "password"}
             size="small"
             placeholder={t("auth.passwordPlaceholder", {
               defaultValue: "Password",
@@ -86,24 +110,59 @@ const LoginDialog = ({ open, onClose, onLogin }) => {
             value={password}
             onChange={(e) => {
               setPassword(e.target.value);
-              setError("");
+              if (error) setError("");
             }}
             error={!!error}
             helperText={error}
-            sx={{ mb: 2 }}
+            disabled={loading}
+            slotProps={{
+              input: {
+                endAdornment: (
+                  <InputAdornment position="end" sx={{ gap: 0.25 }}>
+                    {password && (
+                      <Fade in>
+                        <IconButton
+                          size="small"
+                          onClick={() => setShowPassword((v) => !v)}
+                          edge="end"
+                          tabIndex={-1}
+                          sx={{ color: "text.secondary" }}
+                        >
+                          {showPassword ? (
+                            <VisibilityOffOutlinedIcon sx={{ fontSize: "1.1rem" }} />
+                          ) : (
+                            <VisibilityOutlinedIcon sx={{ fontSize: "1.1rem" }} />
+                          )}
+                        </IconButton>
+                      </Fade>
+                    )}
+                    <IconButton
+                      size="small"
+                      type="submit"
+                      disabled={loading || !password.trim()}
+                      edge="end"
+                      sx={{
+                        color: password.trim() ? "primary.main" : "text.disabled",
+                        transition: "color 0.15s",
+                      }}
+                    >
+                      {loading ? (
+                        <CircularProgress size={18} color="inherit" />
+                      ) : (
+                        <ArrowForwardIcon sx={{ fontSize: "1.2rem" }} />
+                      )}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              },
+            }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 2,
+                pr: 0.5,
+              },
+            }}
           />
-          <Button
-            type="submit"
-            variant="contained"
-            fullWidth
-            disabled={loading || !password.trim()}
-            disableElevation
-            sx={{ textTransform: "none", fontWeight: 600 }}
-          >
-            {loading
-              ? t("auth.loggingIn", { defaultValue: "Logging in..." })
-              : t("auth.login", { defaultValue: "Login" })}
-          </Button>
         </Box>
       </DialogContent>
     </Dialog>
