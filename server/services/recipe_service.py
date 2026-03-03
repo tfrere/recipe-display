@@ -123,7 +123,7 @@ class RecipeService:
         All keywords are lowercased for case-insensitive substring matching.
         Returns empty dict if file is missing (= everything public).
         """
-        authors_file = os.path.join(os.path.dirname(self.recipes_path), "authors.json")
+        authors_file = os.path.join(str(self.recipes_path), "authors.json")
         try:
             if os.path.exists(authors_file):
                 with open(authors_file, "r") as f:

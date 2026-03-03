@@ -8,7 +8,7 @@ import glob
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/authors", tags=["authors"])
 
-_AUTHORS_FILE = os.path.join(os.path.dirname(__file__), "../../data/authors.json")
+_AUTHORS_FILE = os.path.join(os.path.dirname(__file__), "../../data/recipes/authors.json")
 
 
 def _load_authors_config() -> dict[str, list[str]]:
