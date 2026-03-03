@@ -27,6 +27,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import CloseIcon from "@mui/icons-material/Close";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import { alpha } from "@mui/material/styles";
 import PantryDrawer from "./PantryDrawer";
 import useLongPress from "../../hooks/useLongPress";
@@ -39,7 +40,7 @@ const Navigation = () => {
   const { pantrySize } = usePantry();
   const [isPantryOpen, setIsPantryOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const { pressing, longPressProps } = useLongPress();
+  const { pressing, longPressProps, hasPrivateAccess, disablePrivateAccess } = useLongPress();
   const {
     setSelectedDiet,
     setSelectedDifficulty,
@@ -241,6 +242,27 @@ const Navigation = () => {
                 <SettingsOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
               </Box>
             </Tooltip>
+            {hasPrivateAccess && (
+              <Tooltip title={t("nav.logout", { defaultValue: "Logout" })}>
+                <Box
+                  sx={{
+                    p: 0.75,
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    borderRadius: 1,
+                    border: "1px solid",
+                    borderColor: "divider",
+                    "&:hover": {
+                      bgcolor: "action.hover",
+                    },
+                  }}
+                  onClick={disablePrivateAccess}
+                >
+                  <LogoutOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
+                </Box>
+              </Tooltip>
+            )}
           </Box>
         </Toolbar>
       </AppBar>

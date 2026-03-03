@@ -1,19 +1,31 @@
 """Authors routes module."""
 from fastapi import APIRouter, Query
 import json
+import logging
 import os
 import glob
 
+logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/authors", tags=["authors"])
+
+_AUTHORS_FILE = os.path.join(os.path.dirname(__file__), "../../data/authors.json")
+
+
+def _load_private_authors() -> list[str]:
+    """Load private author list. Returns empty list if file is missing."""
+    try:
+        with open(_AUTHORS_FILE, "r") as f:
+            data = json.load(f)
+            return [a.lower() for a in data.get("private", [])]
+    except (FileNotFoundError, json.JSONDecodeError):
+        logger.warning("authors.json not found or invalid — no private filtering applied")
+        return []
+
 
 @router.get("")
 async def get_authors(include_private: bool = Query(default=False)):
     """Get the list of recipe authors."""
-    # Read private authors from JSON file
-    authors_file = os.path.join(os.path.dirname(__file__), "../../data/authors.json")
-    with open(authors_file, "r") as f:
-        authors_data = json.load(f)
-        private_authors = [author.lower() for author in authors_data.get("private", [])]
+    private_authors = _load_private_authors()
 
     # Get list of all recipe files
     recipes_path = os.path.join(os.path.dirname(__file__), "../../data/recipes")
