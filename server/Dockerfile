@@ -17,6 +17,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
