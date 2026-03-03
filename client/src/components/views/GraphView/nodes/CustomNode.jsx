@@ -225,8 +225,8 @@ export const CustomNode = ({ data }) => {
           top: type === "action" ? -6 : -5,
           width: type === "action" ? "8px" : "6px",
           height: type === "action" ? "8px" : "6px",
-          background: "#fff",
-          border: "1px solid #666",
+          background: theme.palette.background.paper,
+          border: `1px solid ${theme.palette.text.secondary}`,
         }}
       />
       {renderContent()}
@@ -237,8 +237,8 @@ export const CustomNode = ({ data }) => {
           bottom: type === "action" ? -6 : -5,
           width: type === "action" ? "8px" : "6px",
           height: type === "action" ? "8px" : "6px",
-          background: "#fff",
-          border: "1px solid #666",
+          background: theme.palette.background.paper,
+          border: `1px solid ${theme.palette.text.secondary}`,
         }}
       />
     </div>

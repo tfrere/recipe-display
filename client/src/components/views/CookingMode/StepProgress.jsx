@@ -1,37 +1,32 @@
 import React, { useMemo } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { groupStepsBySubRecipe } from "./utils";
 
-/**
- * Stories-style progress bar with sub-recipe labels.
- * Labels give orientation ("Sauce", "Assemblage"), segments show progress.
- */
-const StepProgress = ({
-  steps,
-  currentIdx,
-  completedSteps,
-  isDark,
-  onStepClick,
-}) => {
+const StepProgress = ({ steps, currentIdx, completedSteps, onStepClick }) => {
+  const theme = useTheme();
   const groups = useMemo(() => groupStepsBySubRecipe(steps), [steps]);
+  const isDark = theme.palette.mode === "dark";
+
+  const barColor = {
+    active: isDark ? "#fff" : theme.palette.text.primary,
+    done: theme.palette.text.secondary,
+    idle: theme.palette.divider,
+    hoverIdle: isDark ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.16)",
+    hoverDone: isDark ? "rgba(255,255,255,0.6)" : "rgba(0,0,0,0.42)",
+    glow: isDark ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.08)",
+  };
 
   return (
     <Box
       sx={{
         display: "flex",
-        gap: 2,
+        gap: 1.5,
         width: "100%",
-        px: 2.5,
-        pt: 1,
-        pb: 0.5,
         alignItems: "flex-end",
       }}
     >
       {groups.map((group, gi) => {
         const hasCurrent = group.steps.some((s) => s.globalIdx === currentIdx);
-        const allDone = group.steps.every((s) =>
-          completedSteps.has(s.globalIdx)
-        );
 
         return (
           <Box
@@ -46,15 +41,11 @@ const StepProgress = ({
           >
             <Typography
               sx={{
-                fontSize: "0.6rem",
-                fontWeight: hasCurrent ? 700 : 500,
-                color: allDone
-                  ? "#4caf50"
-                  : hasCurrent
-                  ? "text.secondary"
-                  : "text.disabled",
+                fontSize: "0.58rem",
+                fontWeight: 500,
+                color: hasCurrent ? "text.secondary" : "text.disabled",
                 textTransform: "uppercase",
-                letterSpacing: "0.06em",
+                letterSpacing: "0.08em",
                 lineHeight: 1,
                 whiteSpace: "nowrap",
                 overflow: "hidden",
@@ -77,35 +68,25 @@ const StepProgress = ({
                     onClick={() => onStepClick(i)}
                     sx={{
                       flex: 1,
-                      height: active ? 7 : 4,
-                      borderRadius: active ? 3.5 : 2,
+                      height: active ? 3 : 2,
+                      borderRadius: 2,
                       cursor: "pointer",
                       transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                       bgcolor: done
-                        ? "#4caf50"
+                        ? barColor.done
                         : active
-                        ? isDark
-                          ? "#fff"
-                          : "rgba(0,0,0,0.75)"
-                        : isDark
-                        ? "rgba(255,255,255,0.12)"
-                        : "rgba(0,0,0,0.1)",
+                        ? barColor.active
+                        : barColor.idle,
                       boxShadow: active
-                        ? isDark
-                          ? "0 0 8px rgba(255,255,255,0.25)"
-                          : "0 0 8px rgba(0,0,0,0.15)"
+                        ? `0 0 6px ${barColor.glow}`
                         : "none",
                       "&:hover": {
-                        transform: active ? "none" : "scaleY(1.8)",
+                        transform: active ? "none" : "scaleY(2)",
                         bgcolor: done
-                          ? "#66bb6a"
+                          ? barColor.hoverDone
                           : active
-                          ? isDark
-                            ? "#fff"
-                            : "rgba(0,0,0,0.85)"
-                          : isDark
-                          ? "rgba(255,255,255,0.25)"
-                          : "rgba(0,0,0,0.2)",
+                          ? barColor.active
+                          : barColor.hoverIdle,
                       },
                     }}
                   />

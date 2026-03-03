@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Dialog,
@@ -10,27 +11,27 @@ import CloseIcon from "@mui/icons-material/Close";
 import GanttContent from "./GanttContent";
 
 const GanttModal = ({ open, onClose, recipe }) => {
+  const { t } = useTranslation();
   if (!recipe) return null;
 
   return (
     <Dialog
       open={open}
       onClose={onClose}
-      maxWidth={false}
-      fullScreen
+      maxWidth="md"
+      fullWidth
       PaperProps={{
         sx: {
           bgcolor: "background.default",
-          mx: "20px",
-          my: "20px",
-          height: "calc(100% - 40px)",
-          maxHeight: "calc(100% - 40px)",
+          borderRadius: 3,
+          maxHeight: "85vh",
         },
       }}
     >
       <DialogTitle
         sx={{
           p: 2,
+          pb: 1.5,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -38,8 +39,12 @@ const GanttModal = ({ open, onClose, recipe }) => {
           borderColor: "divider",
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <Typography component="div" variant="h6">
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+          <Typography
+            component="div"
+            variant="h6"
+            sx={{ fontWeight: 700, fontSize: "1.05rem" }}
+          >
             {recipe.metadata?.title || recipe.title}
           </Typography>
           <Typography
@@ -50,9 +55,12 @@ const GanttModal = ({ open, onClose, recipe }) => {
               py: 0.25,
               borderRadius: 1,
               fontWeight: 600,
+              fontSize: "0.62rem",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
             }}
           >
-            Timeline
+            {t("gantt.timeline")}
           </Typography>
         </Box>
         <IconButton
@@ -63,13 +71,13 @@ const GanttModal = ({ open, onClose, recipe }) => {
             "&:hover": { color: "text.primary" },
           }}
         >
-          <CloseIcon />
+          <CloseIcon fontSize="small" />
         </IconButton>
       </DialogTitle>
       <Box
         sx={{
           flexGrow: 1,
-          height: "calc(100vh - 64px)",
+          overflow: "auto",
           bgcolor: "background.default",
         }}
       >

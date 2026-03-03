@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useMemo, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Container, CircularProgress, Typography } from "@mui/material";
 import { AnimatePresence } from "framer-motion";
 import { useRecipeList } from "../contexts/RecipeListContext";
@@ -13,6 +14,7 @@ import {
 } from "../components/views/MealPlanner/utils/mealPlannerUtils";
 
 const MealPlannerPage = () => {
+  const { t } = useTranslation();
   const { allRecipes } = useRecipeList();
   const { pantryItems } = usePantry();
 
@@ -31,6 +33,7 @@ const MealPlannerPage = () => {
       servingsPerMeal: 4,
       dietPreference: null,
       prioritizeSeasonal: true,
+      mealsOnly: true,
       nutritionGoals: [],
       excludedIngredients: savedExcluded,
     };
@@ -94,7 +97,8 @@ const MealPlannerPage = () => {
       .filter((item) => lockedSlugs.has(item.recipe.slug))
       .map((item) => item.recipe);
 
-    const newPlan = generateMealPlan(allRecipes, config, lockedRecipes, pantryItems);
+    const effectivePantry = config.usePantry !== false ? pantryItems : [];
+    const newPlan = generateMealPlan(allRecipes, config, lockedRecipes, effectivePantry);
     setPlan(newPlan);
 
     // Load full recipe data in background for shopping list
@@ -109,7 +113,8 @@ const MealPlannerPage = () => {
       .filter((item) => lockedSlugs.has(item.recipe.slug))
       .map((item) => item.recipe);
 
-    const newPlan = generateMealPlan(allRecipes, config, lockedRecipes, pantryItems);
+    const effectivePantry = config.usePantry !== false ? pantryItems : [];
+    const newPlan = generateMealPlan(allRecipes, config, lockedRecipes, effectivePantry);
     setPlan(newPlan);
     loadFullRecipes(newPlan);
   }, [allRecipes, config, plan, lockedSlugs, loadFullRecipes, pantryItems]);
@@ -117,7 +122,8 @@ const MealPlannerPage = () => {
   // ─── Swap a single recipe ───────────────────────────────────
   const handleSwap = useCallback(
     (index) => {
-      const newPlan = swapRecipe(allRecipes, config, plan, index, pantryItems);
+      const effectivePantry = config.usePantry !== false ? pantryItems : [];
+      const newPlan = swapRecipe(allRecipes, config, plan, index, effectivePantry);
       setPlan(newPlan);
       loadFullRecipes(newPlan);
     },
@@ -180,7 +186,7 @@ const MealPlannerPage = () => {
             >
               <CircularProgress size={40} />
               <Typography variant="body2" color="text.secondary">
-                Generating your meal plan...
+                {t("mealPlanner.generating")}
               </Typography>
             </Box>
           )}

@@ -1,4 +1,4 @@
-"""Tests for DAG-based time calculation in RecipeEnricher.
+"""Tests for DAG-based time calculation (enrichment.times module).
 
 These tests validate the critical path algorithm that computes
 totalTime, totalActiveTime, and totalPassiveTime from the recipe
@@ -7,16 +7,14 @@ step graph.
 
 import pytest
 
-from recipe_scraper.recipe_enricher import RecipeEnricher
-
-
-@pytest.fixture
-def enricher():
-    return RecipeEnricher()
+from recipe_scraper.enrichment.times import (
+    _parse_time_to_minutes,
+    _minutes_to_iso8601,
+    calculate_times_from_dag,
+)
 
 
 # ── Fixture recipes ──────────────────────────────────────────────────
-
 
 LINEAR_RECIPE = {
     "metadata": {"title": "Linear recipe"},
@@ -43,19 +41,16 @@ PARALLEL_RECIPE = {
         {"id": "cream", "name": "cream", "quantity": 200, "unit": "ml"},
     ],
     "steps": [
-        # Branch A: cook chicken (5 + 20 = 25 min)
         {"id": "season", "action": "Season chicken", "stepType": "prep",
          "duration": "PT5M", "uses": ["chicken"], "produces": "seasoned_chicken"},
         {"id": "cook_chicken", "action": "Cook chicken", "stepType": "cook",
          "duration": "PT20M", "isPassive": True, "uses": ["seasoned_chicken"],
          "produces": "cooked_chicken"},
-        # Branch B: make sauce (10 + 15 = 25 min)
         {"id": "chop_onion", "action": "Chop onion", "stepType": "prep",
          "duration": "PT10M", "uses": ["onion"], "produces": "chopped_onion"},
         {"id": "make_sauce", "action": "Make sauce", "stepType": "cook",
          "duration": "PT15M", "uses": ["chopped_onion", "cream"],
          "produces": "sauce"},
-        # Merge: assemble (5 min)
         {"id": "assemble", "action": "Assemble", "stepType": "serve",
          "duration": "PT5M", "uses": ["cooked_chicken", "sauce"],
          "produces": "plated_dish"},
@@ -117,119 +112,99 @@ PASSIVE_HEAVY_RECIPE = {
 
 
 class TestMinutesToISO8601:
-    """Test the ISO 8601 conversion helper."""
 
-    def test_zero(self, enricher):
-        assert enricher._minutes_to_iso8601(0) == "PT0M"
+    def test_zero(self):
+        assert _minutes_to_iso8601(0) == "PT0M"
 
-    def test_minutes_only(self, enricher):
-        assert enricher._minutes_to_iso8601(45) == "PT45M"
+    def test_minutes_only(self):
+        assert _minutes_to_iso8601(45) == "PT45M"
 
-    def test_hours_only(self, enricher):
-        assert enricher._minutes_to_iso8601(120) == "PT2H"
+    def test_hours_only(self):
+        assert _minutes_to_iso8601(120) == "PT2H"
 
-    def test_hours_and_minutes(self, enricher):
-        assert enricher._minutes_to_iso8601(90) == "PT1H30M"
+    def test_hours_and_minutes(self):
+        assert _minutes_to_iso8601(90) == "PT1H30M"
 
-    def test_large_value(self, enricher):
-        assert enricher._minutes_to_iso8601(1440) == "PT24H"
+    def test_large_value(self):
+        assert _minutes_to_iso8601(1440) == "PT24H"
 
 
 class TestDAGLinearPath:
-    """Test critical path on a simple linear chain of steps."""
 
-    def test_total_time(self, enricher):
-        result = enricher._calculate_times_from_dag(LINEAR_RECIPE)
-        # 5 + 30 + 10 = 45 min
+    def test_total_time(self):
+        result = calculate_times_from_dag(LINEAR_RECIPE)
         assert result["totalTimeMinutes"] == 45.0
 
-    def test_active_time(self, enricher):
-        result = enricher._calculate_times_from_dag(LINEAR_RECIPE)
-        # Only mix (5min) is active
+    def test_active_time(self):
+        result = calculate_times_from_dag(LINEAR_RECIPE)
         assert result["totalActiveTimeMinutes"] == 5.0
 
-    def test_passive_time(self, enricher):
-        result = enricher._calculate_times_from_dag(LINEAR_RECIPE)
-        # bake (30) + cool (10) = 40 min passive
+    def test_passive_time(self):
+        result = calculate_times_from_dag(LINEAR_RECIPE)
         assert result["totalPassiveTimeMinutes"] == 40.0
 
-    def test_active_plus_passive_equals_total(self, enricher):
-        result = enricher._calculate_times_from_dag(LINEAR_RECIPE)
+    def test_active_plus_passive_equals_total(self):
+        result = calculate_times_from_dag(LINEAR_RECIPE)
         assert (
             result["totalActiveTimeMinutes"] + result["totalPassiveTimeMinutes"]
             == result["totalTimeMinutes"]
         )
 
-    def test_iso_format(self, enricher):
-        result = enricher._calculate_times_from_dag(LINEAR_RECIPE)
+    def test_iso_format(self):
+        result = calculate_times_from_dag(LINEAR_RECIPE)
         assert result["totalTime"] == "PT45M"
 
 
 class TestDAGParallelBranches:
-    """Test critical path when steps can run in parallel."""
 
-    def test_total_time_is_critical_path(self, enricher):
-        result = enricher._calculate_times_from_dag(PARALLEL_RECIPE)
-        # Branch A: season(5) + cook(20) = 25
-        # Branch B: chop(10) + sauce(15) = 25
-        # Merge: assemble(5)
-        # Critical path = max(25, 25) + 5 = 30 (NOT 55)
+    def test_total_time_is_critical_path(self):
+        result = calculate_times_from_dag(PARALLEL_RECIPE)
         assert result["totalTimeMinutes"] == 30.0
 
-    def test_total_is_less_than_linear_sum(self, enricher):
-        result = enricher._calculate_times_from_dag(PARALLEL_RECIPE)
-        linear_sum = 5 + 20 + 10 + 15 + 5  # 55
-        assert result["totalTimeMinutes"] < linear_sum
+    def test_total_is_less_than_linear_sum(self):
+        result = calculate_times_from_dag(PARALLEL_RECIPE)
+        assert result["totalTimeMinutes"] < 55
 
 
 class TestDAGFallbackDuration:
-    """Test fallback 5min for steps without explicit duration."""
 
-    def test_steps_get_5min_fallback(self, enricher):
-        result = enricher._calculate_times_from_dag(NO_DURATION_RECIPE)
-        # chop (5 fallback) + serve (5 fallback) = 10
+    def test_steps_get_5min_fallback(self):
+        result = calculate_times_from_dag(NO_DURATION_RECIPE)
         assert result["totalTimeMinutes"] == 10.0
 
-    def test_preheat_gets_zero_fallback(self, enricher):
-        result = enricher._calculate_times_from_dag(PREHEAT_RECIPE)
-        # preheat (0 fallback) runs in parallel with shape (10)
-        # Critical path: shape(10) + bake(25) = 35
+    def test_preheat_gets_zero_fallback(self):
+        result = calculate_times_from_dag(PREHEAT_RECIPE)
         assert result["totalTimeMinutes"] == 35.0
 
 
 class TestDAGPassiveHeavy:
-    """Test recipes with very long passive steps (e.g. fridge rest)."""
 
-    def test_long_passive_dominates(self, enricher):
-        result = enricher._calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
-        # mix(10) + bake(45) + cool(1440) = 1495 min
+    def test_long_passive_dominates(self):
+        result = calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
         assert result["totalTimeMinutes"] == 1495.0
 
-    def test_active_time_is_small(self, enricher):
-        result = enricher._calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
-        # Only mix (10 min) is active
+    def test_active_time_is_small(self):
+        result = calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
         assert result["totalActiveTimeMinutes"] == 10.0
 
-    def test_passive_time_is_large(self, enricher):
-        result = enricher._calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
-        # bake(45) + cool(1440) = 1485 min passive
+    def test_passive_time_is_large(self):
+        result = calculate_times_from_dag(PASSIVE_HEAVY_RECIPE)
         assert result["totalPassiveTimeMinutes"] == 1485.0
 
 
 class TestDAGEdgeCases:
-    """Test edge cases."""
 
-    def test_empty_steps_returns_fallback(self, enricher):
+    def test_empty_steps_returns_fallback(self):
         recipe = {"metadata": {"title": "Empty"}, "steps": []}
-        result = enricher._calculate_times_from_dag(recipe)
+        result = calculate_times_from_dag(recipe)
         assert result["totalTimeMinutes"] == 0.0
 
-    def test_no_steps_key_returns_fallback(self, enricher):
+    def test_no_steps_key_returns_fallback(self):
         recipe = {"metadata": {"title": "No steps"}}
-        result = enricher._calculate_times_from_dag(recipe)
+        result = calculate_times_from_dag(recipe)
         assert result["totalTimeMinutes"] == 0.0
 
-    def test_single_step(self, enricher):
+    def test_single_step(self):
         recipe = {
             "metadata": {"title": "Single step"},
             "ingredients": [{"id": "egg", "name": "egg"}],
@@ -239,12 +214,11 @@ class TestDAGEdgeCases:
             ],
             "finalState": "boiled_egg",
         }
-        result = enricher._calculate_times_from_dag(recipe)
+        result = calculate_times_from_dag(recipe)
         assert result["totalTimeMinutes"] == 10.0
 
 
 class TestParseTimeFormats:
-    """Test _parse_time_to_minutes with various formats."""
 
     @pytest.mark.parametrize("input_str, expected", [
         ("PT30M", 30.0),
@@ -258,5 +232,5 @@ class TestParseTimeFormats:
         ("", 0.0),
         (None, 0.0),
     ])
-    def test_parse_formats(self, enricher, input_str, expected):
-        assert enricher._parse_time_to_minutes(input_str) == expected
+    def test_parse_formats(self, input_str, expected):
+        assert _parse_time_to_minutes(input_str) == expected

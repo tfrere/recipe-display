@@ -109,20 +109,20 @@ describe("roundToNearestFive", () => {
 });
 
 describe("formatTimeCompact", () => {
-  it("should format 90 minutes as '1h 30m'", () => {
-    expect(formatTimeCompact(90)).toBe("1h 30m");
+  it("should format 90 minutes as '1 hour 30 min'", () => {
+    expect(formatTimeCompact(90)).toBe("1 hour 30 min");
   });
 
-  it("should format 60 minutes as '1h'", () => {
-    expect(formatTimeCompact(60)).toBe("1h");
+  it("should format 60 minutes as '1 hour'", () => {
+    expect(formatTimeCompact(60)).toBe("1 hour");
   });
 
-  it("should format 30 minutes as '30m'", () => {
-    expect(formatTimeCompact(30)).toBe("30m");
+  it("should format 30 minutes as '30 min'", () => {
+    expect(formatTimeCompact(30)).toBe("30 min");
   });
 
-  it("should format 0 as '0m'", () => {
-    expect(formatTimeCompact(0)).toBe("0m");
+  it("should format 0 as '0 min'", () => {
+    expect(formatTimeCompact(0)).toBe("0 min");
   });
 
   it("should format 1500 minutes (25h) with days", () => {

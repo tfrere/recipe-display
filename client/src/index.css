@@ -8,3 +8,29 @@
     transform: rotate(0);
   }
 }
+
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: auto;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .MuiAppBar-root,
+  .MuiTooltip-popper,
+  .MuiDialog-root,
+  .MuiDrawer-root,
+  .MuiPopover-root {
+    display: none !important;
+  }
+}

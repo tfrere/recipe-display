@@ -17,13 +17,13 @@ class AuthPreset(BaseModel):
 
 # Format du fichier auth_presets.json :
 # {
-#     "books.ottolenghi.co.uk": {
+#     "recipes.example.com": {
 #         "type": "cookie",
-#         "domain": ".books.ottolenghi.co.uk",
+#         "domain": ".recipes.example.com",
 #         "values": {
 #             "cookie_name": "cookie_value"
 #         },
-#         "description": "Ottolenghi Books"
+#         "description": "Example Recipe Site"
 #     },
 #     "example.com": {
 #         "type": "basic",

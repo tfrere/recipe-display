@@ -9,8 +9,10 @@ This format uses a graph-implicit approach where:
 The frontend can reconstruct the DAG automatically from these relationships.
 """
 
-from typing import List, Literal, Optional
+from typing import List, Literal, Optional, get_args
 from pydantic import BaseModel, Field, model_validator
+
+from ..shared import EQUIPMENT_KEYWORDS, INGREDIENT_CATEGORIES
 
 
 class Metadata(BaseModel):
@@ -76,6 +78,14 @@ class Metadata(BaseModel):
         default=[],
         description="Additional tips, variations, or serving suggestions"
     )
+    language: str = Field(
+        default="en",
+        description="ISO 639-1 language code (fr, en, es, etc.). Extracted from preformatted text."
+    )
+    ingredientSource: Optional[Literal["ner", "llm"]] = Field(
+        default=None,
+        description="Whether ingredients come from CRF parser (ner) or LLM fallback (llm). Set at post-processing."
+    )
 
 
 class Ingredient(BaseModel):
@@ -118,6 +128,24 @@ class Ingredient(BaseModel):
         default=False,
         description="Whether this ingredient is optional"
     )
+    quantitySource: Optional[Literal["exact", "inferred", "estimated"]] = Field(
+        default=None,
+        description=(
+            "Provenance of the quantity value. "
+            "exact = explicitly stated in source text. "
+            "inferred = derived by deterministic rules (e.g. 'a pinch' → qty=1). "
+            "estimated = estimated by LLM with recipe context. "
+            "null = quantity comes from the original parse (assumed exact)."
+        ),
+    )
+
+
+_LITERAL_CATEGORIES = set(get_args(Ingredient.model_fields["category"].annotation))
+assert _LITERAL_CATEGORIES == set(INGREDIENT_CATEGORIES), (
+    f"Ingredient.category Literal is out of sync with INGREDIENT_CATEGORIES.\n"
+    f"  Literal:  {sorted(_LITERAL_CATEGORIES)}\n"
+    f"  shared.py: {sorted(INGREDIENT_CATEGORIES)}"
+)
 
 
 class Step(BaseModel):
@@ -169,10 +197,6 @@ class Step(BaseModel):
     )
 
 
-# Keywords for equipment-only steps (allowed to have empty `uses`)
-_EQUIPMENT_KEYWORDS = {"preheat", "préchauffer", "allumer", "préparer le four"}
-
-
 class Recipe(BaseModel):
     """
     Complete recipe.
@@ -220,7 +244,7 @@ class Recipe(BaseModel):
             if not step.uses:
                 is_equipment = any(
                     kw in step.action.lower()
-                    for kw in _EQUIPMENT_KEYWORDS
+                    for kw in EQUIPMENT_KEYWORDS
                 )
                 if not is_equipment:
                     errors.append(

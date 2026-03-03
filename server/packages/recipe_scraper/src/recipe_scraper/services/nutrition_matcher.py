@@ -1,11 +1,17 @@
 """
-Nutrition matcher using BGE-small embeddings + OpenNutrition local index.
+Nutrition matcher using BGE-small embeddings + unified nutrition index.
 
-Matches English ingredient names to nutritional data using:
+Matches English ingredient names to nutritional data from multiple sources:
+- OpenNutrition (USDA-derived baseline)
+- CIQUAL 2025 (French government food composition database)
+- MEXT Japan 7th ed (Japanese government food composition database)
+
+Uses:
 - BAAI/bge-small-en-v1.5 embeddings for semantic similarity
 - Heuristic keyword validation to prevent false positives
 - Local caching of match results
 
+Priority on duplicate English names: CIQUAL > OpenNutrition > MEXT.
 Zero false positives design: every match is validated by requiring
 that key food-identifying words from the query appear in the matched
 entry's name.
@@ -27,7 +33,9 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 _DATA_DIR = Path(__file__).parent.parent / "data"
 _INDEX_FILE = _DATA_DIR / "opennutrition_index.json"
-_EMBEDDINGS_FILE = _DATA_DIR / "opennutrition_embeddings.npy"
+_CIQUAL_INDEX_FILE = _DATA_DIR / "ciqual_index.json"
+_MEXT_INDEX_FILE = _DATA_DIR / "mext_index.json"
+_EMBEDDINGS_FILE = _DATA_DIR / "nutrition_embeddings.npy"
 _CACHE_FILE = _DATA_DIR / "nutrition_cache.json"
 
 # ---------------------------------------------------------------------------
@@ -213,17 +221,71 @@ def _preprocess_query(text: str) -> str:
     return text
 
 
-def _validate_match(query: str, matched_name: str) -> bool:
+# Foods whose raw caloric density is well below 400 kcal/100g.
+# If a match for one of these exceeds _DENSITY_CEILING, it's suspect.
+_LOW_CALORIE_FOODS = frozenset({
+    "broth", "stock", "water",
+    "berry", "cherry", "strawberry", "blueberry", "raspberry",
+    "apple", "pear", "peach", "plum", "grape", "melon", "watermelon",
+    "orange", "lemon", "lime", "grapefruit", "mango", "kiwi",
+    "tomato", "potato", "carrot", "onion", "celery", "cucumber",
+    "zucchini", "squash", "spinach", "lettuce", "cabbage",
+    "broccoli", "cauliflower", "mushroom", "eggplant",
+    "milk", "yogurt", "yoghurt",
+    "fish", "shrimp", "prawn", "crab",
+})
+
+_DENSITY_CEILING = 400  # kcal/100g — above this for a _LOW_CALORIE_FOOD is suspect
+
+# Words in a matched entry name (but absent from the query) that indicate
+# a *prepared dish* rather than a raw ingredient.  When any of these appear
+# as extra words the match is rejected — the embedding found a similar name
+# but the food category is fundamentally different.
+#
+# Unified with the `category_changers` list in NutritionLookup heuristic.
+_CATEGORY_CHANGERS = frozenset({
+    # Baked / pastry
+    "turnover", "pie", "cake", "cookie", "muffin", "wafer",
+    "cracker", "pancake", "loaf", "croissant", "biscuit",
+    # Prepared dishes
+    "soup", "stew", "casserole", "lasagna", "pizza", "burger",
+    "sandwich", "dinner", "entree", "meal",
+    # Drinks / desserts
+    "coffee", "shake", "smoothie", "pudding", "fudge",
+    "candy", "ice", "gelato", "sorbet",
+    # Snacks / cereals
+    "chip", "cereal", "granola", "bar", "snack",
+    # Processed forms that change caloric density drastically
+    "jam", "jelly", "marmalade", "spread", "syrup",
+    "jerky", "pate", "terrine", "sausage",
+    # Beverages containing the ingredient
+    "latte", "cappuccino", "frappuccino", "mocha",
+    # Oatmeal / porridge (e.g. "oatmeal with plant-based milk")
+    "oatmeal", "porridge",
+})
+
+
+def _validate_match(
+    query: str, matched_name: str, kcal_per_100g: Optional[float] = None,
+) -> bool:
     """
     Validate that a semantic match is a true positive.
 
-    Requires min(len(query_keys), 2) key food words from the query
-    to appear in the matched entry's name. This prevents matches like
-    "chicken bouillon cubes" -> "Chicken Enchiladas".
+    Three checks:
+    1. **Keyword overlap** — min(len(query_keys), 2) key food words from
+       the query must appear in the matched entry's name.
+    2. **Category-changer guard** — extra words in the match that indicate
+       a *prepared dish* rather than a raw ingredient cause rejection.
+       This prevents "berries" → "Mixed Berry Turnover" or
+       "vegetable broth" → "Instant Vegetable Broth Soup".
+    3. **Density guard** — if the query contains a low-calorie food word
+       (fruit, vegetable, broth…) but the match reports > 400 kcal/100g,
+       the match is likely wrong.
 
     Args:
         query: English ingredient name from the recipe.
         matched_name: Name of the matched OpenNutrition entry.
+        kcal_per_100g: Caloric density of the matched entry (optional).
 
     Returns:
         True if the match is valid, False if it should be rejected.
@@ -237,7 +299,19 @@ def _validate_match(query: str, matched_name: str) -> bool:
     overlap = sum(1 for k in query_keys if k in match_keys)
 
     required = min(len(query_keys), 2)
-    return overlap >= required
+    if overlap < required:
+        return False
+
+    extra_words = match_keys - set(query_keys)
+    if extra_words & _CATEGORY_CHANGERS:
+        return False
+
+    if kcal_per_100g is not None and kcal_per_100g > _DENSITY_CEILING:
+        query_lower = set(query_keys)
+        if query_lower & _LOW_CALORIE_FOODS:
+            return False
+
+    return True
 
 
 class NutritionMatcher:
@@ -343,15 +417,23 @@ class NutritionMatcher:
         logger.info(f"Saved {len(self._cache)} nutrition entries to cache")
 
     def _normalize_key(self, name_en: str) -> str:
-        """Normalize an English name for cache key."""
-        return name_en.strip().lower()
+        """Normalize an English name for cache key.
+
+        Strips whitespace, lowercases, and removes punctuation that causes
+        cache misses (e.g. "boneless, skinless" vs "boneless skinless").
+        """
+        import re
+        key = name_en.strip().lower()
+        key = re.sub(r"[,;.()]+", " ", key)
+        key = re.sub(r"\s+", " ", key).strip()
+        return key
 
     # ------------------------------------------------------------------
     # Index & model loading (lazy)
     # ------------------------------------------------------------------
 
     def _load_index(self) -> None:
-        """Load the OpenNutrition slim index and build search texts."""
+        """Load and merge nutrition indexes (OpenNutrition + CIQUAL + MEXT)."""
         if self._index is not None:
             return
 
@@ -362,9 +444,42 @@ class NutritionMatcher:
             )
 
         with open(self._index_path, "r", encoding="utf-8") as f:
-            self._index = json.load(f)
+            base_index = json.load(f)
 
-        # Build search texts: name + top 3 alternates
+        for entry in base_index:
+            entry.setdefault("source", "opennutrition")
+
+        seen_names: dict[str, int] = {}
+        for i, entry in enumerate(base_index):
+            seen_names[entry["name"].lower()] = i
+
+        merged = list(base_index)
+        source_counts = {"opennutrition": len(base_index), "ciqual": 0, "mext": 0}
+
+        for source_file, source_name, priority_over_base in [
+            (_CIQUAL_INDEX_FILE, "ciqual", True),
+            (_MEXT_INDEX_FILE, "mext", False),
+        ]:
+            if not source_file.exists():
+                logger.info(f"{source_name} index not found at {source_file}, skipping")
+                continue
+            with open(source_file, "r", encoding="utf-8") as f:
+                entries = json.load(f)
+            added = 0
+            for entry in entries:
+                key = entry["name"].lower()
+                if key in seen_names:
+                    if priority_over_base:
+                        merged[seen_names[key]] = entry
+                    continue
+                seen_names[key] = len(merged)
+                merged.append(entry)
+                added += 1
+            source_counts[source_name] = added
+            logger.info(f"Merged {source_name}: +{added} new entries")
+
+        self._index = merged
+
         self._db_texts = []
         for entry in self._index:
             text = entry["name"]
@@ -373,7 +488,12 @@ class NutritionMatcher:
                 text += ", " + ", ".join(alts[:3])
             self._db_texts.append(text)
 
-        logger.info(f"Loaded OpenNutrition index: {len(self._index)} entries")
+        logger.info(
+            f"Loaded unified nutrition index: {len(self._index)} entries "
+            f"(ON={source_counts['opennutrition']}, "
+            f"CIQUAL=+{source_counts['ciqual']}, "
+            f"MEXT=+{source_counts['mext']})"
+        )
 
     def _load_model(self):
         """Lazy-load the sentence-transformers model."""
@@ -435,7 +555,11 @@ class NutritionMatcher:
     # ------------------------------------------------------------------
 
     def _build_exact_index(self) -> None:
-        """Build a lowercased name -> entry dict for O(1) exact lookup."""
+        """Build a lowercased name -> entry dict for O(1) exact lookup.
+
+        Loads both the OpenNutrition index and any auto-resolved entries
+        from resolved_ingredients.json.
+        """
         if hasattr(self, "_exact_index") and self._exact_index is not None:
             return
         self._load_index()
@@ -449,7 +573,62 @@ class NutritionMatcher:
                 if alt_lower and alt_lower not in self._exact_index:
                     self._exact_index[alt_lower] = entry
 
-        logger.info(f"Built exact lookup index: {len(self._exact_index)} entries")
+        resolved_count = self._load_resolved_into_index()
+
+        logger.info(
+            f"Built exact lookup index: {len(self._exact_index)} entries "
+            f"(incl. {resolved_count} auto-resolved)"
+        )
+
+    def _load_resolved_into_index(self) -> int:
+        """Load resolved_ingredients.json into the exact index.
+
+        Maps the resolved format (kcal, protein, fat, ...) to the
+        OpenNutrition format (kcal, protein, fat, ...) expected by _build_result.
+        """
+        resolved_file = _DATA_DIR / "resolved_ingredients.json"
+        if not resolved_file.exists():
+            return 0
+
+        with open(resolved_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        count = 0
+        for key, entry in data.items():
+            if key.startswith("_"):
+                continue
+
+            on_entry = {
+                "id": f"resolved_{key}",
+                "name": entry.get("name", key),
+                "alt": entry.get("alt", []),
+                "kcal": entry.get("kcal", 0),
+                "protein": entry.get("protein", 0),
+                "fat": entry.get("fat", 0),
+                "carbs": entry.get("carbs", 0),
+                "fiber": entry.get("fiber", 0),
+                "sugar": entry.get("sugar", 0),
+                "sat_fat": entry.get("sat_fat", 0),
+                "calcium_mg": entry.get("calcium_mg"),
+                "iron_mg": entry.get("iron_mg"),
+                "magnesium_mg": entry.get("magnesium_mg"),
+                "potassium_mg": entry.get("potassium_mg"),
+                "sodium_mg": entry.get("sodium_mg"),
+                "zinc_mg": entry.get("zinc_mg"),
+                "source": entry.get("source", "resolved"),
+            }
+
+            name_lower = key.lower().strip()
+            if name_lower and name_lower not in self._exact_index:
+                self._exact_index[name_lower] = on_entry
+                count += 1
+
+            for alt in on_entry.get("alt", []):
+                alt_lower = alt.lower().strip()
+                if alt_lower and alt_lower not in self._exact_index:
+                    self._exact_index[alt_lower] = on_entry
+
+        return count
 
     def _exact_match(self, name_en: str) -> Optional[Dict[str, Any]]:
         """Try an exact name match (case-insensitive) before using embeddings.
@@ -458,7 +637,8 @@ class NutritionMatcher:
         (e.g. "fresh green beans" -> "green beans" -> "beans").
         """
         self._build_exact_index()
-        query = name_en.lower().strip()
+        query = re.sub(r"[,;.()]+", " ", name_en.lower().strip())
+        query = re.sub(r"\s+", " ", query).strip()
 
         # Direct lookup
         if query in self._exact_index:
@@ -544,7 +724,8 @@ class NutritionMatcher:
                 break
 
             entry = self._index[idx]
-            if _validate_match(name_en, entry["name"]):
+            entry_kcal = entry.get("kcal") or entry.get("energy_kcal")
+            if _validate_match(name_en, entry["name"], kcal_per_100g=entry_kcal):
                 result = self._build_result(entry, score)
                 self._cache[key] = result
                 self._dirty = True
@@ -554,7 +735,6 @@ class NutritionMatcher:
                 )
                 return result
 
-        # No valid match found
         self._cache[key] = {
             "not_found": True,
             "cached_at": datetime.now().isoformat(),
@@ -657,7 +837,8 @@ class NutritionMatcher:
                     break
 
                 entry = self._index[idx]
-                if _validate_match(name, entry["name"]):
+                entry_kcal = entry.get("kcal") or entry.get("energy_kcal")
+                if _validate_match(name, entry["name"], kcal_per_100g=entry_kcal):
                     result = self._build_result(entry, score)
                     self._cache[key] = result
                     self._dirty = True
@@ -708,6 +889,12 @@ class NutritionMatcher:
             "fiber_g": entry.get("fiber", 0),
             "sugar_g": entry.get("sugar", 0),
             "saturated_fat_g": entry.get("sat_fat", 0),
+            "calcium_mg": entry.get("calcium_mg"),
+            "iron_mg": entry.get("iron_mg"),
+            "magnesium_mg": entry.get("magnesium_mg"),
+            "potassium_mg": entry.get("potassium_mg"),
+            "sodium_mg": entry.get("sodium_mg"),
+            "zinc_mg": entry.get("zinc_mg"),
             "on_id": entry.get("id", ""),
             "on_description": entry.get("name", ""),
             "similarity_score": round(score, 3),
@@ -762,6 +949,21 @@ class NutritionMatcher:
         "drop": "drop", "drops": "drop",
         "square": "square", "squares": "square",
         "cube": "cube", "cubes": "cube",
+        # French units
+        "gousse": "clove", "gousses": "clove",
+        "poignée": "handful", "poignee": "handful",
+        "botte": "bunch", "bottes": "bunch",
+        "brin": "sprig", "brins": "sprig",
+        "branche": "sprig", "branches": "sprig",
+        "sachet": "packet", "sachets": "packet",
+        "rouleau": "sheet", "rouleaux": "sheet",
+        "tranche": "slice", "tranches": "slice",
+        "morceau": "piece", "morceaux": "piece",
+        "pincée": "pinch", "pincee": "pinch",
+        "trait": "dash",
+        "tige": "stalk", "tiges": "stalk",
+        "feuille": "leaf", "feuilles": "leaf",
+        "barquette": "packet", "barquettes": "packet",
     }
 
     # Ingredient-specific portion weights (lazy-loaded from JSON)
@@ -885,10 +1087,23 @@ class NutritionMatcher:
             Estimated weight in grams, or None if can't determine.
         """
         import re as _re
-        from .nutrition_lookup import UNIT_TO_GRAMS, PIECE_WEIGHTS
+        from .nutrition_lookup import UNIT_TO_GRAMS, PIECE_WEIGHTS, LIQUID_DENSITIES, _VOLUME_UNITS
+
+        def _lookup_liquid_density(en_name: str) -> float:
+            """Return density (g/ml) for a liquid ingredient, default 1.0."""
+            name_lower = en_name.lower().strip()
+            for key in sorted(LIQUID_DENSITIES, key=len, reverse=True):
+                if key in name_lower:
+                    return LIQUID_DENSITIES[key]
+            return 1.0
 
         if quantity is None:
             return None
+        if not isinstance(quantity, (int, float)):
+            try:
+                quantity = float(quantity)
+            except (ValueError, TypeError):
+                return None
 
         # Pre-sort keys longest-first so "cherry tomato" matches before "tomato"
         _PIECE_KEYS_SORTED = sorted(PIECE_WEIGHTS, key=len, reverse=True)
@@ -898,11 +1113,59 @@ class NutritionMatcher:
             # 1. Exact match (fast path)
             if name_lower in PIECE_WEIGHTS:
                 return quantity * PIECE_WEIGHTS[name_lower]
+            # 1b. Try depluralized (shallots → shallot, tomatoes → tomato)
+            dep = name_lower
+            if dep.endswith("ies") and len(dep) > 4:
+                dep = dep[:-3] + "y"
+            elif dep.endswith("oes") and len(dep) > 4:
+                dep = dep[:-2]
+            elif dep.endswith("ves") and len(dep) > 4:
+                dep = dep[:-1]
+            elif dep.endswith("s") and not dep.endswith("ss") and len(dep) > 3:
+                dep = dep[:-1]
+            if dep != name_lower and dep in PIECE_WEIGHTS:
+                return quantity * PIECE_WEIGHTS[dep]
             # 2. Word-boundary match (longest key first to prefer specific matches)
-            #    Prevents "egg" matching "eggplant" or "egg white"
             for key in _PIECE_KEYS_SORTED:
                 if _re.search(rf'\b{_re.escape(key)}\b', name_lower):
                     return quantity * PIECE_WEIGHTS[key]
+            return None
+
+        def _depluralize_name(name: str) -> str:
+            if name.endswith("ies") and len(name) > 4:
+                return name[:-3] + "y"
+            if name.endswith("oes") and len(name) > 4:
+                return name[:-2]
+            if name.endswith("ves") and len(name) > 4:
+                return name[:-1]
+            if name.endswith("s") and not name.endswith("ss") and len(name) > 3:
+                return name[:-1]
+            return name
+
+        def _lookup_common_portion_weight(en_name: str, unit_key: str) -> Optional[float]:
+            """Look up from hand-curated COMMON_PORTION_WEIGHTS (USDA values)."""
+            from .nutrition_lookup import COMMON_PORTION_WEIGHTS
+            name_lower = en_name.lower().strip()
+            # Exact match
+            entry = COMMON_PORTION_WEIGHTS.get(name_lower)
+            if entry and unit_key in entry:
+                return quantity * entry[unit_key]
+            dep = _depluralize_name(name_lower)
+            if dep != name_lower:
+                entry = COMMON_PORTION_WEIGHTS.get(dep)
+                if entry and unit_key in entry:
+                    return quantity * entry[unit_key]
+            # Word-by-word (last word first: "fresh lemon juice" → "juice" then "lemon")
+            for word in reversed(name_lower.split()):
+                entry = COMMON_PORTION_WEIGHTS.get(word)
+                if entry and unit_key in entry:
+                    return quantity * entry[unit_key]
+            # Substring match (longest key first) for compound names
+            for key in sorted(COMMON_PORTION_WEIGHTS, key=len, reverse=True):
+                if key in name_lower:
+                    entry = COMMON_PORTION_WEIGHTS[key]
+                    if unit_key in entry:
+                        return quantity * entry[unit_key]
             return None
 
         def _lookup_portion_weight(en_name: str, unit_key: str) -> Optional[float]:
@@ -910,25 +1173,38 @@ class NutritionMatcher:
             portion_data = NutritionMatcher._get_portion_weights()
             name_lower = en_name.lower().strip()
 
-            # 1) Exact match
-            entry = portion_data.get(name_lower)
-            if entry and unit_key in entry:
-                return quantity * entry[unit_key]
-
-            # 2) Try each word of the ingredient name (e.g. "fresh cilantro" → "cilantro")
-            words = name_lower.split()
-            for word in reversed(words):
-                entry = portion_data.get(word)
+            # Try both original and depluralized forms at each step
+            def _try(key: str) -> Optional[float]:
+                entry = portion_data.get(key)
                 if entry and unit_key in entry:
                     return quantity * entry[unit_key]
-
-            # 3) Check if ingredient name contains a known portion key
-            #    Only match keys >= 4 chars to avoid false positives
-            for key in portion_data:
-                if len(key) >= 4 and key in name_lower:
-                    entry = portion_data[key]
-                    if unit_key in entry:
+                dep = _depluralize_name(key)
+                if dep != key:
+                    entry = portion_data.get(dep)
+                    if entry and unit_key in entry:
                         return quantity * entry[unit_key]
+                return None
+
+            # 1) Exact match
+            result = _try(name_lower)
+            if result is not None:
+                return result
+
+            # 2) Try each word (e.g. "fresh cilantro" → "cilantro")
+            words = name_lower.split()
+            for word in reversed(words):
+                result = _try(word)
+                if result is not None:
+                    return result
+
+            # 3) Multi-word sub-phrases
+            for length in range(len(words) - 1, 0, -1):
+                for start in range(len(words) - length + 1):
+                    candidate = " ".join(words[start:start + length])
+                    if len(candidate) >= 4:
+                        result = _try(candidate)
+                        if result is not None:
+                            return result
 
             return None
 
@@ -938,22 +1214,47 @@ class NutritionMatcher:
         # Normalize unit: strip adjectives, resolve aliases, depluralize
         normalized = NutritionMatcher._normalize_unit(unit)
 
-        # 0. Ingredient-specific unit conversion (USDA portion measures)
-        #    e.g., "1 cup flour" = 125g, not 240g
-        portion_result = _lookup_portion_weight(name_en, normalized)
-        if portion_result is not None:
-            return portion_result
-
-        # 1. Generic unit conversion (fallback)
-        if normalized in UNIT_TO_GRAMS and UNIT_TO_GRAMS[normalized] is not None:
+        # ── Mass units: fixed physical constants, never ingredient-specific ──
+        # oz/lb/g/kg are absolute weight measurements. Portion weights must
+        # NOT override them (USDA data mislabels package weights as "oz").
+        _MASS_UNITS = {"g", "kg", "oz", "lb"}
+        if normalized in _MASS_UNITS and normalized in UNIT_TO_GRAMS:
             return quantity * UNIT_TO_GRAMS[normalized]
 
-        # 2. Piece-like unit → ingredient-specific weight lookup
+        # 0. For piece-like units, prefer curated PIECE_WEIGHTS over auto-generated
+        #    USDA portion data (avoids "cherry tomato" → 182g instead of 15g)
         if normalized in NutritionMatcher._PIECE_LIKE_UNITS:
             pw = _lookup_piece_weight(name_en)
             if pw is not None:
                 return pw
-            # 3. Default weight per unit type (e.g. leaf=2g, stalk=40g)
+
+        # 0b. Ingredient-specific unit conversion (USDA portion measures)
+        #     e.g., "1 cup flour" = 125g, not 240g
+        portion_result = _lookup_portion_weight(name_en, normalized)
+        if portion_result is not None:
+            return portion_result
+
+        # 0b2. Common ingredient portion weights (USDA, hand-curated fallback)
+        #      Covers frequent misses from portion_weights.json (olive oil, honey, etc.)
+        _common_result = _lookup_common_portion_weight(name_en, normalized)
+        if _common_result is not None:
+            return _common_result
+
+        # 0c. Density-corrected volume conversion (FAO/INFOODS)
+        #     For volume units, apply ingredient-specific density before
+        #     falling through to the generic 1ml=1g approximation.
+        if normalized in _VOLUME_UNITS:
+            density = _lookup_liquid_density(name_en)
+            if density != 1.0:
+                volume_ml = quantity * UNIT_TO_GRAMS[normalized]
+                return volume_ml * density
+
+        # 1. Generic unit conversion (fallback — uses density=1.0 for volume)
+        if normalized in UNIT_TO_GRAMS and UNIT_TO_GRAMS[normalized] is not None:
+            return quantity * UNIT_TO_GRAMS[normalized]
+
+        # 2. Piece-like unit fallback → default weight per unit type
+        if normalized in NutritionMatcher._PIECE_LIKE_UNITS:
             if normalized in NutritionMatcher._DEFAULT_UNIT_GRAMS:
                 return quantity * NutritionMatcher._DEFAULT_UNIT_GRAMS[normalized]
 

@@ -36,9 +36,22 @@ export const flattenSteps = (recipe) => {
   const steps = [];
   subRecipes.forEach((sr) => {
     (sr.steps || []).forEach((step) => {
-      const ingredients = (sr.ingredients || []).filter((ing) =>
-        (step.uses || []).includes(ing.ref)
-      );
+      const ingredientMap = {};
+      (recipe.ingredients || []).forEach((ing) => { ingredientMap[ing.id] = ing; });
+
+      const ingredients = (sr.ingredients || [])
+        .filter((ing) => (step.uses || []).includes(ing.ref))
+        .map((ing) => {
+          const full = ingredientMap[ing.ref];
+          return {
+            ...ing,
+            name: full?.name || ing.ref,
+            name_en: full?.name_en || "",
+            category: ing.category || full?.category || "other",
+            estimatedWeightGrams: full?.estimatedWeightGrams,
+            quantity: full?.quantity,
+          };
+        });
 
       const stateInputs = (step.uses || [])
         .filter((ref) => producesMap[ref] && !allIngredientRefs.has(ref))
@@ -134,8 +147,7 @@ export const hasExplicitTimeMention = (actionText, isPassive) => {
 export const getActionFontSize = (textLength) => {
   if (textLength < 50) return { xs: "1.55rem", md: "2.15rem" };
   if (textLength < 100) return { xs: "1.35rem", md: "1.75rem" };
-  if (textLength < 180) return { xs: "1.15rem", md: "1.45rem" };
-  return { xs: "1.05rem", md: "1.25rem" };
+  return { xs: "1.15rem", md: "1.45rem" };
 };
 
 /** Check if recipe has multiple distinct sub-recipes. */

@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import random
 import traceback
 from typing import List, Optional
 
@@ -96,6 +97,26 @@ async def list_recipes(
         raise
 
 
+@router.get("/imported-urls")
+async def get_imported_urls(service: RecipeService = Depends(get_recipe_service)):
+    """Return the list of source URLs already imported (used by batch importer to skip duplicates)."""
+    return service.get_imported_urls()
+
+
+@router.get("/random")
+async def get_random_recipe(
+    service: RecipeService = Depends(get_recipe_service),
+    x_private_token: Optional[str] = Header(None),
+):
+    """Return the slug of a random recipe."""
+    allow_private = _has_valid_private_token(x_private_token)
+    recipes = await service.list_recipes(allow_private)
+    if not recipes:
+        raise HTTPException(status_code=404, detail="No recipes available")
+    chosen = random.choice(recipes)
+    return {"slug": chosen["slug"]}
+
+
 @router.options("")
 async def options_recipes():
     """Handle OPTIONS request for CORS."""
@@ -154,15 +175,30 @@ async def get_recipe_by_slug(
 
     return recipe
 
+def _require_private_token(token: Optional[str]) -> None:
+    """Raise 403 if the private access token is missing or invalid."""
+    if not _has_valid_private_token(token):
+        raise HTTPException(status_code=403, detail="Valid private token required")
+
+
 @router.delete("/{slug}")
-async def delete_recipe(slug: str, service: RecipeService = Depends(get_recipe_service)):
-    """Delete a recipe by its slug."""
+async def delete_recipe(
+    slug: str,
+    service: RecipeService = Depends(get_recipe_service),
+    x_private_token: Optional[str] = Header(None),
+):
+    """Delete a recipe by its slug. Requires private token."""
+    _require_private_token(x_private_token)
     await service.delete_recipe(slug)
     return {"detail": "Recipe deleted successfully"}
 
 @router.delete("")
-async def delete_all_recipes(service: RecipeService = Depends(get_recipe_service)):
-    """Delete all recipes and their associated images."""
+async def delete_all_recipes(
+    service: RecipeService = Depends(get_recipe_service),
+    x_private_token: Optional[str] = Header(None),
+):
+    """Delete all recipes and their associated images. Requires private token."""
+    _require_private_token(x_private_token)
     try:
         await service.delete_all_recipes()
         return {"detail": "All recipes have been deleted successfully"}

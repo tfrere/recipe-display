@@ -1,17 +1,19 @@
 import React, { memo, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent, Typography, Tooltip } from "@mui/material";
 import { Link } from "react-router-dom";
 import RecipeImage from "./common/RecipeImage";
 import BoltIcon from "@mui/icons-material/Bolt";
 import KitchenOutlinedIcon from "@mui/icons-material/KitchenOutlined";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import TimeDisplay from "./common/TimeDisplay";
 import { parseTimeToMinutes } from "../utils/timeUtils";
 import { usePantry } from "../contexts/PantryContext";
 
 // Extraire les composants qui ne changent pas pour éviter les re-rendus
-const QuickRecipeBadge = memo(() => (
-  <Tooltip title="Quick recipe" arrow>
+const QuickRecipeBadge = memo(() => {
+  const { t } = useTranslation();
+  return (
+  <Tooltip title={t("recipeCard.quickRecipe")} arrow>
     <Box
       sx={{
         position: "absolute",
@@ -29,10 +31,12 @@ const QuickRecipeBadge = memo(() => (
       <BoltIcon sx={{ fontSize: "1.2rem", color: "white" }} />
     </Box>
   </Tooltip>
-));
+  );
+});
 
 const RecipeCard = memo(
   ({ recipe, style }) => {
+    const { t } = useTranslation();
     const { getPantryStats, pantrySize } = usePantry();
 
     const ingredientsCount = useMemo(() => {
@@ -50,9 +54,9 @@ const RecipeCard = memo(
 
     const seasonText = useMemo(() => {
       return Array.isArray(recipe.seasons) && recipe.seasons.length > 0
-        ? recipe.seasons.join(", ")
-        : "All Seasons";
-    }, [recipe.seasons]);
+        ? recipe.seasons.map((s) => t(`seasons.${s}`, { defaultValue: s })).join(", ")
+        : t("seasons.all");
+    }, [recipe.seasons, t]);
 
     return (
       <Card
@@ -120,7 +124,7 @@ const RecipeCard = memo(
               }}
             >
               {/* Complexité de la recette */}
-              <Tooltip title="Complexity" arrow>
+              <Tooltip title={t("recipeCard.complexity")} arrow>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                   <BoltIcon fontSize="small" sx={{ color: "white" }} />
                   <Typography
@@ -171,9 +175,7 @@ const RecipeCard = memo(
               mb: 0.5,
             }}
           >
-            {recipe.recipeType == "main_course"
-              ? "main course"
-              : recipe.recipeType}
+            {t(`types.${recipe.recipeType}`, { defaultValue: recipe.recipeType })}
           </Typography>
           <Box
             sx={{
@@ -194,37 +196,17 @@ const RecipeCard = memo(
             >
               {seasonText}
             </Typography>
-            {pantryStats.matched > 0 && (
-              <Tooltip title={`${pantryStats.matched}/${pantryStats.pantryTypeTotal} pantry ingredients covered`} arrow>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 0.3,
-                  }}
-                >
-                  <CheckCircleOutlineIcon
-                    sx={{
-                      fontSize: "0.85rem",
-                      color: "success.main",
-                      opacity: 0.8,
-                    }}
-                  />
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "success.main",
-                      fontSize: "0.75rem",
-                      fontWeight: 600,
-                      opacity: 0.8,
-                    }}
-                  >
-                    {pantryStats.matched}/{pantryStats.pantryTypeTotal}
-                  </Typography>
-                </Box>
-              </Tooltip>
-            )}
-            <Tooltip title="Ingredients" arrow>
+            <Tooltip
+              title={
+                pantryStats.matched > 0
+                  ? t("recipeCard.pantryCovered", {
+                      matched: pantryStats.matched,
+                      total: ingredientsCount,
+                    })
+                  : t("recipeCard.ingredients")
+              }
+              arrow
+            >
               <Box
                 sx={{
                   display: "flex",
@@ -234,20 +216,37 @@ const RecipeCard = memo(
                 }}
               >
                 <KitchenOutlinedIcon
-                  sx={{
-                    fontSize: "0.9rem",
-                    color: "text.secondary",
-                  }}
+                  sx={{ fontSize: "0.9rem", color: "text.secondary" }}
                 />
-                <Typography
-                  variant="body2"
-                  sx={{
-                    color: "text.secondary",
-                    fontSize: "0.8rem",
-                  }}
-                >
-                  {ingredientsCount}
-                </Typography>
+                {pantryStats.matched > 0 ? (
+                  <Typography
+                    variant="body2"
+                    sx={{ fontSize: "0.8rem", lineHeight: 1 }}
+                  >
+                    <Box
+                      component="span"
+                      sx={{ color: "success.main", fontWeight: 700 }}
+                    >
+                      {pantryStats.matched}
+                    </Box>
+                    <Box
+                      component="span"
+                      sx={{ color: "text.disabled", mx: "1px" }}
+                    >
+                      /
+                    </Box>
+                    <Box component="span" sx={{ color: "text.secondary" }}>
+                      {ingredientsCount}
+                    </Box>
+                  </Typography>
+                ) : (
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "text.secondary", fontSize: "0.8rem" }}
+                  >
+                    {ingredientsCount}
+                  </Typography>
+                )}
               </Box>
             </Tooltip>
           </Box>

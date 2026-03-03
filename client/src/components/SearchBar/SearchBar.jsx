@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   TextField,
@@ -11,12 +12,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import { useRecipeList } from "../../contexts/RecipeListContext";
 
-const SEARCH_TEXTS = {
-  PLACEHOLDER:
-    "Search recipes by title, ingredients, author or book (min. 3 chars)",
-  RESET_FILTERS: "Reset all filters",
-};
-
 const SearchBar = ({
   value,
   onChange,
@@ -24,6 +19,7 @@ const SearchBar = ({
   totalCount,
   hasActiveFilters,
 }) => {
+  const { t } = useTranslation();
   const { resetFilters } = useRecipeList();
   const showCount =
     typeof filteredCount === "number" && typeof totalCount === "number";
@@ -45,7 +41,7 @@ const SearchBar = ({
         fullWidth
         value={value}
         onChange={handleInputChange}
-        placeholder={SEARCH_TEXTS.PLACEHOLDER}
+        placeholder={t("search.placeholder")}
         variant="outlined"
         size="large"
         InputProps={{
@@ -76,7 +72,7 @@ const SearchBar = ({
               )}
               {showRefresh && (
                 <InputAdornment position="end">
-                  <Tooltip title={SEARCH_TEXTS.RESET_FILTERS} placement="top">
+                  <Tooltip title={t("search.resetFilters")} placement="top">
                     <IconButton
                       aria-label="reset filters"
                       onClick={handleReset}

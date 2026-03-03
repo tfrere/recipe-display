@@ -1,8 +1,7 @@
 """
 Tests for the nutrition enrichment pipeline.
 
-Tests the ingredient translation, USDA FDC lookup, and nutrition
-profile computation.
+Tests USDA FDC lookup and nutrition profile computation.
 """
 
 import asyncio
@@ -69,37 +68,6 @@ SAMPLE_RECIPE_EN = {
     "steps": [],
     "finalState": "cookies",
 }
-
-
-async def test_ingredient_translator():
-    """Test the ingredient translator with French ingredients."""
-    from recipe_scraper.services.ingredient_translator import IngredientTranslator
-
-    print("\n" + "=" * 60)
-    print("TEST 1: Ingredient Translation")
-    print("=" * 60)
-
-    translator = IngredientTranslator()
-
-    # Test dictionary lookup
-    print("\n--- Dictionary lookups ---")
-    for name in ["beurre", "oignon", "crème liquide", "thym frais", "veau"]:
-        result = translator.lookup(name)
-        status = "OK" if result else "MISS"
-        print(f"  [{status}] '{name}' -> '{result}'")
-
-    # Test batch translation (includes LLM fallback for unknowns)
-    print("\n--- Batch translation (FR recipe) ---")
-    translated = await translator.translate_ingredients(SAMPLE_RECIPE_FR["ingredients"])
-    for ing, name_en in translated:
-        print(f"  '{ing['name']}' -> '{name_en}'")
-
-    print("\n--- Batch translation (EN recipe) ---")
-    translated_en = await translator.translate_ingredients(SAMPLE_RECIPE_EN["ingredients"])
-    for ing, name_en in translated_en:
-        print(f"  '{ing['name']}' -> '{name_en}'")
-
-    return True
 
 
 async def test_nutrition_lookup():
@@ -207,10 +175,7 @@ async def main():
     print("\nNutrition Enrichment Pipeline Tests")
     print("=" * 60)
 
-    # Test 1: Translation
-    await test_ingredient_translator()
-
-    # Test 2: USDA Lookup
+    # Test 1: USDA Lookup
     await test_nutrition_lookup()
 
     # Test 3: Full enrichment

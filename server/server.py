@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from api.routes.recipes import router as recipes_router
 from api.routes.auth import router as auth_router
 from api.routes.images import router as images_router
@@ -17,15 +18,18 @@ port = int(os.getenv("PORT", "3001"))
 
 app = FastAPI(title="Recipe API")
 
+app.add_middleware(GZipMiddleware, minimum_size=1000)
+
 # Configuration CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "https://recipes.tfrere.com",
-        "http://recipes.tfrere.com",
-        "https://recipes-api.tfrere.com",
-        "http://recipes-api.tfrere.com",
+        origin.strip()
+        for origin in os.getenv(
+            "CORS_ORIGINS",
+            "http://localhost:3000,http://localhost:5173",
+        ).split(",")
+        if origin.strip()
     ],
     allow_credentials=True,
     allow_methods=["*"],

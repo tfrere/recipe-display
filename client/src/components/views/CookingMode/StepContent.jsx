@@ -1,5 +1,9 @@
 import React from "react";
-import { Box, Typography, Fade } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { Box, Typography, Fade, useTheme } from "@mui/material";
+import { useGlossary } from "../../../hooks/useGlossary";
+import { segmentGlossaryOnly } from "../../../utils/textUtils";
+import GlossaryTerm from "../../common/GlossaryTerm";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
@@ -7,9 +11,27 @@ import SubdirectoryArrowRightIcon from "@mui/icons-material/SubdirectoryArrowRig
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CircularTimer from "./CircularTimer";
 import { formatTemperature, getActionFontSize } from "./utils";
+import { useRecipe } from "../../../contexts/RecipeContext";
 
-/* ── Context badge ── */
-const ContextBadge = ({ icon, text, color, isDark }) => (
+const renderGlossarySegments = (segments, glossary) =>
+  segments.map((seg, i) => {
+    if (seg.type === "glossary" && seg.glossaryEntry) {
+      return (
+        <GlossaryTerm
+          key={i}
+          entry={seg.glossaryEntry}
+          allTerms={glossary.terms}
+          categoryMap={glossary.categoryMap}
+          language={glossary.language}
+        >
+          {seg.text}
+        </GlossaryTerm>
+      );
+    }
+    return <React.Fragment key={i}>{seg.text}</React.Fragment>;
+  });
+
+const ContextBadge = ({ icon, text, color }) => (
   <Box
     sx={{
       display: "inline-flex",
@@ -18,7 +40,7 @@ const ContextBadge = ({ icon, text, color, isDark }) => (
       px: 1.5,
       py: 0.625,
       borderRadius: "20px",
-      bgcolor: isDark ? `${color}15` : `${color}0A`,
+      bgcolor: `${color}15`,
     }}
   >
     {icon}
@@ -35,8 +57,10 @@ const ContextBadge = ({ icon, text, color, isDark }) => (
   </Box>
 );
 
-/* ── Ingredient pill — big enough to read from 1m ── */
-const IngredientPill = ({ ingredient, isDark }) => {
+const IngredientPill = ({ ingredient, formatAmount, getAdjustedAmount }) => {
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
+
   if (ingredient.isProducedState) {
     const displayName = ingredient.name
       .split(" ")
@@ -47,26 +71,25 @@ const IngredientPill = ({ ingredient, isDark }) => {
       <Box
         sx={{
           display: "inline-flex",
+          flexDirection: "column",
           alignItems: "center",
-          gap: 0.75,
-          px: 2,
-          py: 1,
-          borderRadius: "12px",
-          bgcolor: isDark
-            ? "rgba(33,150,243,0.08)"
-            : "rgba(33,150,243,0.05)",
+          gap: 0.25,
+          px: 1.25,
+          py: 0.5,
+          borderRadius: "8px",
+          bgcolor: "rgba(100, 180, 255, 0.06)",
+          border: "1px solid rgba(100, 180, 255, 0.1)",
+          minWidth: 48,
         }}
       >
-        <SubdirectoryArrowRightIcon
-          sx={{ fontSize: 16, color: "#42a5f5", opacity: 0.8 }}
-        />
         <Typography
           sx={{
-            fontSize: "1rem",
+            fontSize: "0.72rem",
             fontWeight: 500,
-            color: isDark ? "rgba(100,180,255,0.85)" : "#1565c0",
-            lineHeight: 1.3,
+            color: "rgba(100,180,255,0.7)",
+            lineHeight: 1.2,
             fontStyle: "italic",
+            textAlign: "center",
           }}
         >
           {displayName}
@@ -75,113 +98,130 @@ const IngredientPill = ({ ingredient, isDark }) => {
     );
   }
 
-  const qty = `${ingredient.amount || ""} ${ingredient.unit || ""}`.trim();
+  const unit = ingredient.unit;
+  const adjusted =
+    ingredient.amount != null && getAdjustedAmount
+      ? getAdjustedAmount(ingredient.amount, unit, ingredient.category)
+      : ingredient.amount;
+  const qty =
+    adjusted != null && formatAmount
+      ? formatAmount(adjusted, unit, ingredient)
+      : `${ingredient.amount || ""} ${unit || ""}`.trim();
   const name = (ingredient.name || ingredient.ref || "").trim();
 
   return (
     <Box
       sx={{
         display: "inline-flex",
-        alignItems: "baseline",
-        gap: 0.75,
-        px: 2,
-        py: 1,
-        borderRadius: "12px",
+        alignItems: "center",
+        gap: 1,
+        px: 1.25,
+        py: 0.5,
+        borderRadius: "8px",
         bgcolor: isDark
-          ? "rgba(255,255,255,0.06)"
-          : "rgba(0,0,0,0.04)",
+          ? "rgba(255, 255, 255, 0.05)"
+          : "rgba(0, 0, 0, 0.04)",
+        border: "1px solid",
+        borderColor: "divider",
       }}
     >
-      {qty && (
-        <Typography
-          sx={{
-            fontSize: "1rem",
-            fontWeight: 700,
-            color: "text.primary",
-            lineHeight: 1.3,
-            fontVariantNumeric: "tabular-nums",
-          }}
-        >
-          {qty}
-        </Typography>
-      )}
       <Typography
         sx={{
-          fontSize: "1rem",
-          fontWeight: 400,
-          color: "text.secondary",
-          lineHeight: 1.3,
+          fontSize: "0.82rem",
+          fontWeight: 600,
+          color: "text.primary",
+          lineHeight: 1.25,
         }}
       >
         {name}
       </Typography>
+      {qty && (
+        <>
+          <Box
+            sx={{
+              width: "1px",
+              alignSelf: "stretch",
+              my: 0.125,
+              bgcolor: "divider",
+            }}
+          />
+          <Typography
+            sx={{
+              fontSize: "0.68rem",
+              fontWeight: 400,
+              color: "text.disabled",
+              lineHeight: 1.2,
+              fontVariantNumeric: "tabular-nums",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {qty}
+          </Typography>
+        </>
+      )}
     </Box>
   );
 };
 
-/* ── Completion screen ── */
-const CompletionScreen = ({ isDark }) => (
-  <Fade in timeout={500}>
-    <Box
-      sx={{
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 2,
-      }}
-    >
+const CompletionScreen = () => {
+  const { t } = useTranslation();
+  return (
+    <Fade in timeout={500}>
       <Box
         sx={{
-          width: 80,
-          height: 80,
-          borderRadius: "50%",
-          bgcolor: isDark
-            ? "rgba(76,175,80,0.1)"
-            : "rgba(76,175,80,0.07)",
+          textAlign: "center",
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
+          gap: 2,
         }}
       >
-        <CheckCircleOutlineIcon sx={{ fontSize: 40, color: "#4caf50" }} />
+        <Box
+          sx={{
+            width: 80,
+            height: 80,
+            borderRadius: "50%",
+            bgcolor: "rgba(76,175,80,0.1)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <CheckCircleOutlineIcon sx={{ fontSize: 40, color: "#4caf50" }} />
+        </Box>
+        <Typography
+          sx={{
+            fontWeight: 700,
+            fontSize: "1.6rem",
+            letterSpacing: "-0.02em",
+            lineHeight: 1.2,
+            color: "text.primary",
+          }}
+        >
+          {t("cooking.bonAppetit")}
+        </Typography>
+        <Typography sx={{ color: "text.secondary", fontSize: "0.95rem", maxWidth: 320 }}>
+          {t("cooking.allStepsDone")}
+        </Typography>
       </Box>
-      <Typography
-        sx={{
-          fontWeight: 700,
-          fontSize: "1.6rem",
-          letterSpacing: "-0.02em",
-          lineHeight: 1.2,
-        }}
-      >
-        Bon appétit !
-      </Typography>
-      <Typography
-        sx={{ color: "text.secondary", fontSize: "0.95rem", maxWidth: 320 }}
-      >
-        Toutes les étapes sont terminées.
-      </Typography>
-    </Box>
-  </Fade>
-);
-
-/* ═══════════════════════════════════════════════════════════════════
-   StepContent — the hero of the cooking mode.
-
-   Design principle: the instruction IS the screen.
-   Everything else supports it. Think flashcard, not dashboard.
-   ═══════════════════════════════════════════════════════════════════ */
+    </Fade>
+  );
+};
 
 const StepContent = ({
   step,
   timer,
   hasDuration,
-  isDark,
   slideKey,
   isCompleted,
   showSubRecipeTitle,
+  language,
 }) => {
-  if (isCompleted) return <CompletionScreen isDark={isDark} />;
+  const { t } = useTranslation();
+  const glossary = useGlossary(language);
+  const { formatAmount, getAdjustedAmount } = useRecipe();
+
+  if (isCompleted) return <CompletionScreen />;
 
   const actionFontSize = getActionFontSize(step.action.length);
   const tempDisplay = formatTemperature(step.temperature);
@@ -194,6 +234,8 @@ const StepContent = ({
     ? step.ingredients.filter((i) => i.isProducedState)
     : [];
 
+  const segments = segmentGlossaryOnly(step.action, glossary.matchTerms);
+
   return (
     <Fade in key={slideKey} timeout={200}>
       <Box
@@ -202,42 +244,42 @@ const StepContent = ({
           flexDirection: "column",
           alignItems: "center",
           width: "100%",
-          maxWidth: 640,
-          gap: 3,
+          maxWidth: 600,
+          gap: 2.5,
         }}
       >
-        {/* Sub-recipe context — only when there are multiple */}
         {showSubRecipeTitle && (
           <Typography
             sx={{
-              fontSize: "0.78rem",
-              fontWeight: 600,
+              fontSize: "0.68rem",
+              fontWeight: 500,
               color: "text.disabled",
               textTransform: "uppercase",
-              letterSpacing: "0.1em",
+              letterSpacing: "0.12em",
             }}
           >
             {step.subRecipeTitle}
           </Typography>
         )}
 
-        {/* ════ HERO: the instruction ════ */}
         <Typography
+          component="div"
           sx={{
-            fontWeight: 500,
+            fontWeight: 400,
             textAlign: "center",
-            lineHeight: 1.65,
+            lineHeight: 1.7,
             fontSize: actionFontSize,
             letterSpacing: "-0.01em",
             color: "text.primary",
-            maxWidth: 580,
-            px: { xs: 1, md: 2 },
+            maxWidth: 540,
+            maxHeight: { xs: "40vh", md: "35vh" },
+            overflowY: "auto",
+            px: { xs: 0.5, md: 1 },
           }}
         >
-          {step.action}
+          {renderGlossarySegments(segments, glossary)}
         </Typography>
 
-        {/* Context badges: temperature, visual cue, passive */}
         {(tempDisplay || step.visualCue || step.isPassive) && (
           <Box
             sx={{
@@ -256,7 +298,6 @@ const StepContent = ({
                 }
                 text={tempDisplay}
                 color="#ef5350"
-                isDark={isDark}
               />
             )}
             {step.visualCue && (
@@ -266,7 +307,6 @@ const StepContent = ({
                 }
                 text={step.visualCue}
                 color="#ffa726"
-                isDark={isDark}
               />
             )}
             {step.isPassive && (
@@ -276,40 +316,38 @@ const StepContent = ({
                     sx={{ fontSize: 16, color: "#42a5f5" }}
                   />
                 }
-                text="Hands-free"
+                text={t("cooking.handsFree")}
                 color="#42a5f5"
-                isDark={isDark}
               />
             )}
           </Box>
         )}
 
-        {/* Timer */}
-        {hasDuration && <CircularTimer timer={timer} isDark={isDark} />}
+        {hasDuration && <CircularTimer timer={timer} />}
 
-        {/* Ingredients */}
         {hasIngredients && (
           <Box
             sx={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 1,
+              gap: 0.75,
               justifyContent: "center",
-              px: 1,
             }}
           >
             {rawIngredients.map((ing, i) => (
               <IngredientPill
                 key={`raw-${i}`}
                 ingredient={ing}
-                isDark={isDark}
+                formatAmount={formatAmount}
+                getAdjustedAmount={getAdjustedAmount}
               />
             ))}
             {stateIngredients.map((ing, i) => (
               <IngredientPill
                 key={`state-${i}`}
                 ingredient={ing}
-                isDark={isDark}
+                formatAmount={formatAmount}
+                getAdjustedAmount={getAdjustedAmount}
               />
             ))}
           </Box>

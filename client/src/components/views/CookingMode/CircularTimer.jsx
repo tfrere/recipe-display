@@ -1,11 +1,15 @@
 import React from "react";
-import { Box, Typography, IconButton, CircularProgress } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { Box, Typography, IconButton, CircularProgress, useTheme } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { formatTimerDisplay } from "./utils";
 
-const CircularTimer = ({ timer, isDark }) => {
+const CircularTimer = ({ timer }) => {
+  const { t } = useTranslation();
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
   const size = 140;
   const thickness = 2.5;
 
@@ -13,9 +17,11 @@ const CircularTimer = ({ timer, isDark }) => {
     ? "#4caf50"
     : timer.isRunning
     ? "#2196f3"
-    : isDark
-    ? "rgba(255,255,255,0.3)"
-    : "rgba(0,0,0,0.18)";
+    : theme.palette.text.disabled;
+
+  const trackColor = isDark
+    ? "rgba(255,255,255,0.04)"
+    : "rgba(0,0,0,0.05)";
 
   return (
     <Box
@@ -27,18 +33,13 @@ const CircularTimer = ({ timer, isDark }) => {
       }}
     >
       <Box sx={{ position: "relative", width: size, height: size }}>
-        {/* Background track */}
         <CircularProgress
           variant="determinate"
           value={100}
           size={size}
           thickness={thickness}
-          sx={{
-            position: "absolute",
-            color: isDark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.04)",
-          }}
+          sx={{ position: "absolute", color: trackColor }}
         />
-        {/* Progress arc */}
         <CircularProgress
           variant="determinate"
           value={timer.progress}
@@ -54,7 +55,6 @@ const CircularTimer = ({ timer, isDark }) => {
             },
           }}
         />
-        {/* Time display */}
         <Box
           sx={{
             position: "absolute",
@@ -88,13 +88,12 @@ const CircularTimer = ({ timer, isDark }) => {
                 textTransform: "uppercase",
               }}
             >
-              Done
+              {t("cooking.timerDone")}
             </Typography>
           )}
         </Box>
       </Box>
 
-      {/* Controls */}
       <Box sx={{ display: "flex", gap: 0.75 }}>
         <IconButton
           onClick={timer.toggle}
@@ -102,21 +101,13 @@ const CircularTimer = ({ timer, isDark }) => {
             width: 38,
             height: 38,
             bgcolor: timer.isRunning
-              ? isDark
-                ? "rgba(244,67,54,0.12)"
-                : "rgba(244,67,54,0.07)"
-              : isDark
-              ? "rgba(33,150,243,0.12)"
-              : "rgba(33,150,243,0.07)",
+              ? "rgba(244,67,54,0.12)"
+              : "rgba(33,150,243,0.12)",
             color: timer.isRunning ? "#f44336" : "#2196f3",
             "&:hover": {
               bgcolor: timer.isRunning
-                ? isDark
-                  ? "rgba(244,67,54,0.2)"
-                  : "rgba(244,67,54,0.12)"
-                : isDark
-                ? "rgba(33,150,243,0.2)"
-                : "rgba(33,150,243,0.12)",
+                ? "rgba(244,67,54,0.2)"
+                : "rgba(33,150,243,0.2)",
             },
           }}
         >
@@ -133,12 +124,12 @@ const CircularTimer = ({ timer, isDark }) => {
             height: 38,
             bgcolor: isDark
               ? "rgba(255,255,255,0.04)"
-              : "rgba(0,0,0,0.03)",
+              : "rgba(0,0,0,0.04)",
             color: "text.disabled",
             "&:hover": {
               bgcolor: isDark
                 ? "rgba(255,255,255,0.08)"
-                : "rgba(0,0,0,0.06)",
+                : "rgba(0,0,0,0.08)",
               color: "text.secondary",
             },
           }}

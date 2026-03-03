@@ -11,6 +11,7 @@ const IngredientsGroup = ({
   sortByCategory,
   checkedIngredients,
   onIngredientCheck,
+  glossary,
 }) => {
   // En mode normal, on affiche toujours le titre du groupe si showTitle est true
   // En mode liste de courses, on affiche toujours le titre de la catégorie
@@ -20,7 +21,7 @@ const IngredientsGroup = ({
   const marginBottom = shouldShowTitle ? 3 : 1;
 
   return (
-    <Box key={group.key} sx={{ mb: marginBottom }}>
+    <Box key={group.key} sx={{ mb: marginBottom, "@media print": { breakInside: "avoid", pageBreakInside: "avoid" } }}>
       {/* Group title (category or sub-recipe) */}
       {shouldShowTitle && (
         <Typography
@@ -48,6 +49,7 @@ const IngredientsGroup = ({
               `${ingredient.subRecipeId}-${ingredient.name}`
             )}
             onCheckChange={onIngredientCheck}
+            glossary={glossary}
           />
         ))}
       </Box>

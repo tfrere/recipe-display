@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -21,12 +22,15 @@ import {
   shoppingListToText,
 } from "./utils/mealPlannerUtils";
 import { usePantry } from "../../../contexts/PantryContext";
+import useLocalStorage from "../../../hooks/useLocalStorage";
 
 const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
+  const { t } = useTranslation();
   const [checkedItems, setCheckedItems] = useState(new Set());
   const [copySnackbar, setCopySnackbar] = useState(false);
   const [hidePantryItems, setHidePantryItems] = useState(false);
   const { hasItem, pantrySize } = usePantry();
+  const [unitSystem] = useLocalStorage("unit_system", "metric");
 
   const shoppingGroups = useMemo(
     () => buildShoppingList(planItems, servingsPerMeal),
@@ -49,8 +53,11 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
     return count;
   }, [shoppingGroups, hasItem, pantrySize]);
 
-  const checkedCount = checkedItems.size + (hidePantryItems ? 0 : pantryItemCount);
-  const progressPct = totalItems > 0 ? (checkedCount / totalItems) * 100 : 0;
+  const visibleTotal = hidePantryItems ? totalItems - pantryItemCount : totalItems;
+  const checkedCount = hidePantryItems
+    ? checkedItems.size
+    : checkedItems.size + pantryItemCount;
+  const progressPct = visibleTotal > 0 ? Math.min((checkedCount / visibleTotal) * 100, 100) : 0;
 
   const toggleItem = useCallback((itemName) => {
     setCheckedItems((prev) => {
@@ -80,7 +87,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
   }, []);
 
   const handleCopy = useCallback(async () => {
-    const text = shoppingListToText(shoppingGroups);
+    const text = shoppingListToText(shoppingGroups, unitSystem);
     try {
       await navigator.clipboard.writeText(text);
       setCopySnackbar(true);
@@ -132,7 +139,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: 800 }}>
-              Shopping List
+              {t("mealPlanner.shoppingList")}
             </Typography>
             <IconButton size="small" onClick={onClose}>
               <CloseIcon sx={{ fontSize: "1.2rem" }} />
@@ -143,13 +150,18 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
           <Box sx={{ mb: 1 }}>
             <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.5 }}>
               <Typography variant="caption" color="text.secondary" sx={{ fontSize: "0.75rem" }}>
-                {checkedCount} of {totalItems} items
+                {t("mealPlanner.itemsProgress", { checked: checkedCount, total: visibleTotal })}
+                {hidePantryItems && pantryItemCount > 0 && (
+                  <Typography component="span" variant="caption" sx={{ color: "text.disabled", fontSize: "0.7rem" }}>
+                    {" "}{t("mealPlanner.pantryHidden", { count: pantryItemCount })}
+                  </Typography>
+                )}
               </Typography>
-              {checkedCount === totalItems && totalItems > 0 && (
+              {checkedCount === visibleTotal && visibleTotal > 0 && (
                 <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                   <CheckCircleOutlineIcon sx={{ fontSize: "0.85rem", color: "success.main" }} />
                   <Typography variant="caption" sx={{ color: "success.main", fontWeight: 600, fontSize: "0.75rem" }}>
-                    All done
+                    {t("mealPlanner.allDone")}
                   </Typography>
                 </Box>
               )}
@@ -184,7 +196,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <KitchenOutlinedIcon sx={{ fontSize: "0.9rem", color: "text.secondary" }} />
                 <Typography variant="caption" color="text.secondary" sx={{ fontSize: "0.75rem" }}>
-                  {pantryItemCount} in your pantry
+                  {t("mealPlanner.inPantry", { count: pantryItemCount })}
                 </Typography>
               </Box>
               <FormControlLabel
@@ -197,7 +209,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
                 }
                 label={
                   <Typography variant="caption" sx={{ fontSize: "0.7rem" }}>
-                    Hide
+                    {t("mealPlanner.hide")}
                   </Typography>
                 }
                 labelPlacement="start"
@@ -212,7 +224,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
           {shoppingGroups.length === 0 ? (
             <Box sx={{ py: 4, textAlign: "center" }}>
               <Typography color="text.secondary">
-                No ingredients to display. Recipe details may not be loaded.
+                {t("mealPlanner.noIngredients")}
               </Typography>
             </Box>
           ) : (
@@ -272,7 +284,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
                   {visibleItems.map((item) => {
                     const isChecked = checkedItems.has(item.name);
                     const isInPantry = pantrySize > 0 && hasItem(item.name_en);
-                    const qty = formatQuantity(item.quantity, item.unit);
+                    const qty = formatQuantity(item.quantity, item.unit, unitSystem);
                     const isDone = isChecked || isInPantry;
 
                     return (
@@ -313,7 +325,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
                         </Typography>
                         {isInPantry && (
                           <Chip
-                            label="pantry"
+                            label={t("nav.pantry")}
                             size="small"
                             variant="outlined"
                             sx={{
@@ -363,13 +375,18 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
           }}
         >
           <Typography variant="body2" color="text.secondary" sx={{ fontSize: "0.85rem" }}>
-            {totalItems} item{totalItems !== 1 ? "s" : ""}
-            {pantryItemCount > 0 && ` · ${pantryItemCount} in pantry`}
+            {t("mealPlanner.itemsToBuy", { count: visibleTotal })}
+            {pantryItemCount > 0 && !hidePantryItems && ` ${t("mealPlanner.inPantryShort", { count: pantryItemCount })}`}
+            {pantryItemCount > 0 && hidePantryItems && (
+              <Typography component="span" variant="caption" sx={{ color: "text.disabled", fontSize: "0.75rem" }}>
+                {" "}+ {t("mealPlanner.inPantry", { count: pantryItemCount })}
+              </Typography>
+            )}
           </Typography>
           <IconButton
             size="small"
             onClick={handleCopy}
-            title="Copy to clipboard"
+            title={t("mealPlanner.copyToClipboard")}
             sx={{
               border: "1px solid",
               borderColor: "divider",
@@ -380,7 +397,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
           >
             <ContentCopyIcon sx={{ fontSize: "0.9rem" }} />
             <Typography variant="caption" sx={{ fontWeight: 600, fontSize: "0.75rem" }}>
-              Copy
+              {t("mealPlanner.copy")}
             </Typography>
           </IconButton>
         </Box>
@@ -390,7 +407,7 @@ const ShoppingListDrawer = ({ open, onClose, planItems, servingsPerMeal }) => {
         open={copySnackbar}
         autoHideDuration={2000}
         onClose={() => setCopySnackbar(false)}
-        message="Shopping list copied to clipboard"
+        message={t("mealPlanner.copySuccess")}
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       />
     </>

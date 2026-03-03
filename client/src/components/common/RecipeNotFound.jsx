@@ -1,6 +1,7 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Box, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -15,13 +16,14 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 
 const RecipeNotFound = () => {
+  const { t } = useTranslation();
   return (
     <StyledBox>
       <Typography variant="h4" component="h1" gutterBottom>
-        Recipe Not Found
+        {t("common.recipeNotFound")}
       </Typography>
       <Typography variant="body1" color="text.secondary">
-        Sorry, we couldn't find the recipe you're looking for.
+        {t("common.recipeNotFoundDescription")}
       </Typography>
     </StyledBox>
   );

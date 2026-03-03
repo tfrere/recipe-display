@@ -1,7 +1,7 @@
 """
 OCR Service — Extract recipe text from images using OpenRouter Vision API.
 
-Uses google/gemini-2.0-flash-001 for fast, cheap, and accurate OCR.
+Uses deepseek/deepseek-v3.2 via OpenRouter for OCR.
 Cost: ~$0.0002 per image (~0.02 cents).
 """
 
@@ -16,7 +16,7 @@ import httpx
 logger = logging.getLogger(__name__)
 
 # Vision model config
-VISION_MODEL = "google/gemini-2.0-flash-001"
+VISION_MODEL = "deepseek/deepseek-v3.2"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 MAX_TOKENS = 4096
 

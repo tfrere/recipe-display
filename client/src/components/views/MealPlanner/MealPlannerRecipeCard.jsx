@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Card, CardContent, Typography, IconButton, Tooltip } from "@mui/material";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,19 +12,19 @@ import RecipeImage from "../../common/RecipeImage";
 import { formatTimeCompact } from "../../../utils/timeUtils";
 
 const REASON_CONFIG = {
-  seasonal: { label: "Seasonal", color: "#4caf50" },
-  variety: { label: "Variety", color: "#ff9800" },
-  balanced: { label: "Balanced", color: "#7e57c2" },
-  "high-protein": { label: "Protein", color: "#66bb6a" },
-  "low-calorie": { label: "Light", color: "#26a69a" },
-  "high-fiber": { label: "Fiber", color: "#8d6e63" },
+  seasonal: { labelKey: "mealPlanner.seasonal", color: "#4caf50" },
+  variety: { labelKey: "mealPlanner.variety", color: "#ff9800" },
+  balanced: { labelKey: "nutrition.balanced", color: "#7e57c2" },
+  "high-protein": { labelKey: "mealPlanner.macroProtein", color: "#66bb6a" },
+  "low-calorie": { labelKey: "mealPlanner.goalLight", color: "#26a69a" },
+  "high-fiber": { labelKey: "mealPlanner.macroFiber", color: "#8d6e63" },
 };
 
-const ReasonDot = ({ reason, sharedCount }) => {
+const ReasonDot = ({ reason, sharedCount, t }) => {
   if (reason.includes("_shared")) {
     const count = sharedCount || parseInt(reason);
     return (
-      <Tooltip title={`${count} shared ingredients`} arrow>
+      <Tooltip title={t("mealPlanner.sharedCount", { count })} arrow>
         <Box
           sx={{
             display: "flex",
@@ -44,7 +45,7 @@ const ReasonDot = ({ reason, sharedCount }) => {
             variant="caption"
             sx={{ fontSize: "0.7rem", color: "text.secondary", fontWeight: 500 }}
           >
-            {count} shared
+            {t("mealPlanner.sharedCount", { count })}
           </Typography>
         </Box>
       </Tooltip>
@@ -55,7 +56,7 @@ const ReasonDot = ({ reason, sharedCount }) => {
   if (!cfg) return null;
 
   return (
-    <Tooltip title={cfg.label} arrow>
+    <Tooltip title={t(cfg.labelKey)} arrow>
       <Box
         sx={{
           display: "flex",
@@ -76,7 +77,7 @@ const ReasonDot = ({ reason, sharedCount }) => {
           variant="caption"
           sx={{ fontSize: "0.7rem", color: "text.secondary", fontWeight: 500 }}
         >
-          {cfg.label}
+          {t(cfg.labelKey)}
         </Typography>
       </Box>
     </Tooltip>
@@ -84,6 +85,7 @@ const ReasonDot = ({ reason, sharedCount }) => {
 };
 
 const MealPlannerRecipeCard = memo(({ item, isLocked, onToggleLock, onSwap }) => {
+  const { t } = useTranslation();
   const { recipe, reasons, sharedCount } = item;
   const totalTime = recipe.totalTimeMinutes || recipe.totalTime || recipe.totalCookingTime || 0;
   const nutrition = recipe.nutritionPerServing;
@@ -250,7 +252,7 @@ const MealPlannerRecipeCard = memo(({ item, isLocked, onToggleLock, onSwap }) =>
             {displayReasons.length > 0 && (
               <Box sx={{ display: "flex", gap: 1.5, mb: 0.5 }}>
                 {displayReasons.map((reason, i) => (
-                  <ReasonDot key={i} reason={reason} sharedCount={sharedCount} />
+                  <ReasonDot key={i} reason={reason} sharedCount={sharedCount} t={t} />
                 ))}
               </Box>
             )}
@@ -285,7 +287,7 @@ const MealPlannerRecipeCard = memo(({ item, isLocked, onToggleLock, onSwap }) =>
                     variant="body2"
                     sx={{ color: "text.secondary", fontSize: "0.75rem", fontWeight: 500 }}
                   >
-                    {Math.round(nutrition.calories)} kcal
+                    ~{Math.round(nutrition.calories)} kcal
                   </Typography>
                 </Box>
               )}

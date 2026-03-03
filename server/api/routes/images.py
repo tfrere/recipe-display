@@ -116,15 +116,15 @@ async def ensure_resized_version(filename: str, size: str) -> Optional[Path]:
     if size == "original":
         return get_original_image_path(filename)
 
-    # Vérifier si l'image est déjà dans le cache
-    cached_path = get_cached_image_path(filename, size)
-    if cached_path:
-        return cached_path
-
     # Trouver l'original
     original_path = get_original_image_path(filename)
     if not original_path:
         return None
+
+    # Vérifier si l'image est déjà dans le cache ET toujours à jour
+    cached_path = get_cached_image_path(filename, size)
+    if cached_path and cached_path.stat().st_mtime >= original_path.stat().st_mtime:
+        return cached_path
 
     # Si c'est un SVG, le retourner tel quel
     if original_path.suffix.lower() == ".svg":

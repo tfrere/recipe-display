@@ -132,12 +132,31 @@ class WebScraper:
         # Set up authentication if needed
         await self.auth_manager.setup_authentication(url, auth_preset)
         
-        # Fetch the page
-        try:
-            response = await self.client.get(url)
-            response.raise_for_status()
-        except httpx.HTTPError as e:
-            raise ValueError(f"Failed to fetch URL: {str(e)}")
+        # Fetch the page with retry on 429 / 5xx
+        max_retries = 3
+        response = None
+        for attempt in range(max_retries + 1):
+            try:
+                response = await self.client.get(url)
+                if response.status_code == 429 or response.status_code >= 500:
+                    if attempt == max_retries:
+                        response.raise_for_status()
+                    retry_after = int(response.headers.get("Retry-After", 0))
+                    delay = max(retry_after, 2 ** (attempt + 1))
+                    logger.warning(
+                        "HTTP %d for %s — retrying in %ds (attempt %d/%d)",
+                        response.status_code, url, delay, attempt + 1, max_retries,
+                    )
+                    await asyncio.sleep(delay)
+                    continue
+                response.raise_for_status()
+                break
+            except httpx.HTTPError as e:
+                if attempt == max_retries:
+                    raise ValueError(f"Failed to fetch URL after {max_retries} retries: {e}")
+                delay = 2 ** (attempt + 1)
+                logger.warning("HTTP error for %s: %s — retrying in %ds", url, e, delay)
+                await asyncio.sleep(delay)
         
         html = response.text
 

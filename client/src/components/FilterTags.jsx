@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Typography, Collapse, IconButton } from "@mui/material";
 import { useRecipeList } from "../contexts/RecipeListContext";
 import { useConstants } from "../contexts/ConstantsContext";
@@ -9,36 +10,16 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import TuneIcon from "@mui/icons-material/Tune";
 import { useTheme, useMediaQuery } from "@mui/material";
 
-const FILTER_TEXTS = {
-  FILTER_BY: "Filter",
-  QUICK_RECIPES: "Quick recipes",
-  LOW_INGREDIENTS: "Few ingr.",
-  PANTRY_FRIENDLY: "Pantry-friendly",
-  ALL: "All seasons",
-  SHOW_FILTERS: "Show filters",
-  HIDE_FILTERS: "Hide filters",
-};
-
-const getTranslation = (prefix, key, constants) => {
+const getTranslation = (prefix, key, _constants, t) => {
   if (!key) return "";
-
-  const RECIPE_TYPE_LABELS = Object.fromEntries(
-    constants.recipe_types.map((type) => [type.id, type.label])
-  );
-  const DIET_LABELS = Object.fromEntries(
-    constants.diets.map((diet) => [diet.id, diet.label])
-  );
-  const SEASON_LABELS = Object.fromEntries(
-    constants.seasons.map((season) => [season.id, season.label])
-  );
 
   switch (prefix) {
     case "recipe.dishType":
-      return RECIPE_TYPE_LABELS[key] || key;
+      return t(`types.${key}`, { defaultValue: key });
     case "recipe.diet":
-      return DIET_LABELS[key] || key;
+      return t(`diets.${key}`, { defaultValue: key });
     case "recipe.season":
-      return SEASON_LABELS[key] || key;
+      return t(`seasons.${key}`, { defaultValue: key });
     default:
       return key;
   }
@@ -51,6 +32,7 @@ const FilterSection = ({
   translatePrefix,
   type,
   constants,
+  t,
 }) => {
   // Ne pas afficher la section uniquement si c'est la saison et qu'il n'y a pas d'items
   if (type === "season" && items.length === 0) return null;
@@ -97,7 +79,7 @@ const FilterSection = ({
         return (
           <FilterTag
             key={key}
-            label={getTranslation(translatePrefix, key, constants)}
+            label={getTranslation(translatePrefix, key, constants, t)}
             count={count}
             checked={isSelected}
             onChange={handleSelect}
@@ -109,6 +91,7 @@ const FilterSection = ({
 };
 
 const FilterTags = () => {
+  const { t } = useTranslation();
   const { constants } = useConstants();
   const {
     selectedDiet,
@@ -121,6 +104,8 @@ const FilterTags = () => {
     setIsQuickOnly,
     isLowIngredientsOnly,
     setIsLowIngredientsOnly,
+    isLowCalorie,
+    setIsLowCalorie,
     isPantrySort,
     setIsPantrySort,
     stats,
@@ -138,6 +123,7 @@ const FilterTags = () => {
     selectedDishType,
     isQuickOnly,
     isLowIngredientsOnly,
+    isLowCalorie,
     isPantrySort,
   ].filter((filter) => {
     if (Array.isArray(filter)) {
@@ -171,24 +157,25 @@ const FilterTags = () => {
           translatePrefix="recipe.dishType"
           type="dishType"
           constants={constants}
+          t={t}
         />
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
           <FilterTag
-            label={FILTER_TEXTS.QUICK_RECIPES}
+            label={t("filters.quickRecipes")}
             count={stats.quick?.count}
             checked={isQuickOnly}
             onChange={() => setIsQuickOnly(!isQuickOnly)}
           />
           <FilterTag
-            label={FILTER_TEXTS.LOW_INGREDIENTS}
+            label={t("filters.lowIngredients")}
             count={stats.lowIngredients?.count}
             checked={isLowIngredientsOnly}
             onChange={() => setIsLowIngredientsOnly(!isLowIngredientsOnly)}
           />
           {pantrySize > 0 && (
             <FilterTag
-              label={FILTER_TEXTS.PANTRY_FRIENDLY}
-              count={pantrySize}
+              label={t("filters.pantryFriendly")}
+              count={stats.pantry?.count ?? 0}
               checked={isPantrySort}
               onChange={() => setIsPantrySort(!isPantrySort)}
             />
@@ -211,6 +198,7 @@ const FilterTags = () => {
           translatePrefix="recipe.diet"
           type="diet"
           constants={constants}
+          t={t}
         />
         <FilterSection
           items={stats.season}
@@ -219,7 +207,16 @@ const FilterTags = () => {
           translatePrefix="recipe.season"
           type="season"
           constants={constants}
+          t={t}
         />
+        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+          <FilterTag
+            label={t("filters.lowCalorie")}
+            count={stats.lowCalorie?.count}
+            checked={isLowCalorie}
+            onChange={() => setIsLowCalorie(!isLowCalorie)}
+          />
+        </Box>
       </Box>
     </Box>
   );
@@ -259,8 +256,8 @@ const FilterTags = () => {
               <TuneIcon sx={{ mr: 1, color: "text.primary", opacity: 0.5 }} />
               <Typography variant="button" color="text.primary">
                 {filtersExpanded
-                  ? FILTER_TEXTS.HIDE_FILTERS
-                  : FILTER_TEXTS.SHOW_FILTERS}
+                  ? t("filters.hideFilters")
+                  : t("filters.showFilters")}
               </Typography>
               {activeFiltersCount > 0 && (
                 <Box

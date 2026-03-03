@@ -67,6 +67,10 @@ flavor-graph/
 foodb/**/*
 foodb
 server/data/old-recipes/**/*
+server/data/recipes_old/
+server/data/recipes_gemini_run/
+server/data/recipes_pre_v3/
+server/data/recipes_backup_legacy_feb2026/
 server/data/recipes/
 server/data/images/
 server/data/images/**/* */
@@ -79,7 +83,38 @@ server/data/errors
 server/data/auth_presets.json
 recipe_importer/auth_presets.json
 
-# OpenNutrition embeddings (binary, auto-generated at first run)
+# Personal scraping data
+recipe_importer/urls*.json
+recipe_importer/data/
+
+# Access control config (contains private source list)
+server/data/authors.json
+
+# Auto-generated reports
+server/data/nutrition_gaps.json
+
+# Personal test input files
+server/data/input/
+
+# Source-specific scripts (personal scraping configs)
+scripts/audit_ottolenghi.py
+scripts/crawl_sitemaps.py
+
+# Structurer test fixtures (may contain copyrighted recipe text)
+server/packages/recipe_structurer/data/
+
+# Scraper auth presets and test recipe data
+server/packages/recipe_scraper/data/auth_presets.json
+server/packages/recipe_scraper/data/recipes/
+
+# Internal experiments and reports
+experiments/
+
+# Cursor IDE internal files
+.cursor/audits/
+.cursor/plans/
+
+# Nutrition embeddings (binary, auto-generated at first run from unified index)
 *.npy
 
 # OpenNutrition raw data

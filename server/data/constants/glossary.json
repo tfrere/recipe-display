@@ -1,0 +1,1913 @@
+{
+  "categories": [
+    {
+      "id": "cooking_method",
+      "label": "Cooking Methods",
+      "localized": {
+        "fr": {
+          "label": "Méthodes de cuisson"
+        }
+      }
+    },
+    {
+      "id": "knife_cut",
+      "label": "Knife Cuts",
+      "localized": {
+        "fr": {
+          "label": "Découpes"
+        }
+      }
+    },
+    {
+      "id": "sauce_technique",
+      "label": "Sauce Techniques",
+      "localized": {
+        "fr": {
+          "label": "Techniques de sauce"
+        }
+      }
+    },
+    {
+      "id": "preparation",
+      "label": "Preparation",
+      "localized": {
+        "fr": {
+          "label": "Préparation"
+        }
+      }
+    },
+    {
+      "id": "baking",
+      "label": "Baking",
+      "localized": {
+        "fr": {
+          "label": "Pâtisserie & boulangerie"
+        }
+      }
+    },
+    {
+      "id": "texture_state",
+      "label": "Texture & State",
+      "localized": {
+        "fr": {
+          "label": "Textures & états"
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia - List of cooking techniques",
+      "url": "https://en.wikipedia.org/wiki/List_of_cooking_techniques",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "corpora",
+      "name": "dariusk/corpora - Food Verbs",
+      "url": "https://github.com/dariusk/corpora/blob/master/data/foods/verbs.json",
+      "license": "CC0"
+    }
+  ],
+  "terms": [
+    {
+      "id": "saute",
+      "term": "sauté",
+      "aliases": [
+        "saute",
+        "sauteing",
+        "sautéing",
+        "sauteed",
+        "sautéed"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food quickly in a small amount of fat over moderately high heat, tossing or stirring frequently to ensure even browning.",
+      "related": [
+        "deglaze",
+        "pan_fry",
+        "stir_fry"
+      ],
+      "localized": {
+        "fr": {
+          "term": "faire sauter",
+          "aliases": [
+            "sauter",
+            "sauté",
+            "sautée",
+            "sautés",
+            "sautées",
+            "faire revenir",
+            "revenir"
+          ],
+          "definition": "Cuire rapidement des aliments dans un peu de matière grasse à feu vif, en remuant fréquemment pour assurer une coloration uniforme."
+        }
+      }
+    },
+    {
+      "id": "braise",
+      "term": "braise",
+      "aliases": [
+        "braising",
+        "braised"
+      ],
+      "category": "cooking_method",
+      "definition": "A combination-cooking method using both wet and dry heat: the food is first seared at high temperature, then finished in a covered pot with a small amount of liquid at low heat for an extended period.",
+      "related": [
+        "sear"
+      ],
+      "localized": {
+        "fr": {
+          "term": "braiser",
+          "aliases": [
+            "braisé",
+            "braisée",
+            "braisés",
+            "braisées"
+          ],
+          "definition": "Méthode de cuisson mixte combinant chaleur sèche et humide : les aliments sont d'abord saisis à haute température, puis cuits longuement dans un récipient couvert avec un peu de liquide à feu doux."
+        }
+      }
+    },
+    {
+      "id": "poach",
+      "term": "poach",
+      "aliases": [
+        "poaching",
+        "poached"
+      ],
+      "category": "cooking_method",
+      "definition": "Gently cooking food submerged in liquid kept at a temperature just below the boiling point (140–180°F / 60–82°C), producing a delicate texture.",
+      "related": [
+        "blanch"
+      ],
+      "localized": {
+        "fr": {
+          "term": "pocher",
+          "aliases": [
+            "poché",
+            "pochée",
+            "pochés",
+            "pochées"
+          ],
+          "definition": "Cuire délicatement des aliments immergés dans un liquide maintenu juste en dessous du point d'ébullition (60–82 °C), pour obtenir une texture tendre."
+        }
+      }
+    },
+    {
+      "id": "blanch",
+      "term": "blanch",
+      "aliases": [
+        "blanching",
+        "blanched"
+      ],
+      "category": "cooking_method",
+      "definition": "Briefly immersing food in boiling water, then immediately plunging it into ice water (shocking) to halt the cooking. Used to soften vegetables, loosen skins, or preserve color.",
+      "related": [
+        "shock",
+        "parboil"
+      ],
+      "localized": {
+        "fr": {
+          "term": "blanchir",
+          "aliases": [
+            "blanchi",
+            "blanchie",
+            "blanchis",
+            "blanchies"
+          ],
+          "definition": "Plonger brièvement des aliments dans l'eau bouillante, puis immédiatement dans l'eau glacée pour stopper la cuisson. Permet d'attendrir les légumes, de faciliter l'épluchage ou de préserver la couleur."
+        }
+      }
+    },
+    {
+      "id": "deep_fry",
+      "term": "deep fry",
+      "aliases": [
+        "deep-fry",
+        "deep frying",
+        "deep-frying",
+        "deep fried",
+        "deep-fried"
+      ],
+      "category": "cooking_method",
+      "definition": "Completely submerging food in hot oil or fat (typically 325–375°F / 163–191°C), producing a crispy exterior while cooking the interior through.",
+      "related": [
+        "dredge",
+        "batter"
+      ],
+      "localized": {
+        "fr": {
+          "term": "frire",
+          "aliases": [
+            "friture",
+            "frit",
+            "frite",
+            "frits",
+            "frites",
+            "faire frire"
+          ],
+          "definition": "Immerger complètement des aliments dans de l'huile chaude (163–191 °C), produisant un extérieur croustillant tout en cuisant l'intérieur."
+        }
+      }
+    },
+    {
+      "id": "broil",
+      "term": "broil",
+      "aliases": [
+        "broiling",
+        "broiled"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food with intense direct radiant heat from above, typically in an oven's broiler. The high-heat equivalent of grilling, but heat comes from above.",
+      "related": [
+        "au_gratin"
+      ],
+      "localized": {
+        "fr": {
+          "term": "griller",
+          "aliases": [
+            "grillé",
+            "grillée",
+            "grillés",
+            "grillées",
+            "passer au gril"
+          ],
+          "definition": "Cuire des aliments par rayonnement direct intense venant du dessus, typiquement sous le gril du four. Équivalent du grillage, mais la chaleur vient d'en haut."
+        }
+      }
+    },
+    {
+      "id": "confit",
+      "term": "confit",
+      "aliases": [],
+      "category": "cooking_method",
+      "definition": "Slowly cooking food submerged in fat (traditionally duck or goose fat) at a low temperature. Originally a preservation technique, now valued for the tender, rich result.",
+      "related": [
+        "braise",
+        "render"
+      ],
+      "localized": {
+        "fr": {
+          "term": "confit",
+          "aliases": [
+            "confite",
+            "confits",
+            "confites",
+            "confire"
+          ],
+          "definition": "Cuire lentement des aliments immergés dans de la graisse (traditionnellement de canard ou d'oie) à basse température. Technique de conservation à l'origine, prisée pour son résultat tendre et riche."
+        }
+      }
+    },
+    {
+      "id": "flambe",
+      "term": "flambé",
+      "aliases": [
+        "flambe",
+        "flambéed",
+        "flambeed",
+        "flambéing"
+      ],
+      "category": "cooking_method",
+      "definition": "Pouring alcohol over food and igniting it, which burns off the alcohol while caramelizing sugars and adding a complex, slightly smoky flavor.",
+      "related": [
+        "deglaze",
+        "caramelize"
+      ],
+      "localized": {
+        "fr": {
+          "term": "flamber",
+          "aliases": [
+            "flambé",
+            "flambée",
+            "flambés",
+            "flambées",
+            "flambage"
+          ],
+          "definition": "Verser de l'alcool sur les aliments et l'enflammer, ce qui brûle l'alcool tout en caramélisant les sucres et ajoutant une saveur complexe, légèrement fumée."
+        }
+      }
+    },
+    {
+      "id": "sear",
+      "term": "sear",
+      "aliases": [
+        "searing",
+        "seared"
+      ],
+      "category": "cooking_method",
+      "definition": "Browning the surface of food (typically meat) at very high temperature to create a flavorful caramelized crust through the Maillard reaction.",
+      "related": [
+        "brown",
+        "saute",
+        "braise"
+      ],
+      "localized": {
+        "fr": {
+          "term": "saisir",
+          "aliases": [
+            "saisi",
+            "saisie",
+            "saisis",
+            "saisies",
+            "faire saisir"
+          ],
+          "definition": "Saisir la surface des aliments (généralement de la viande) à très haute température pour créer une croûte caramélisée savoureuse grâce à la réaction de Maillard."
+        }
+      }
+    },
+    {
+      "id": "parboil",
+      "term": "parboil",
+      "aliases": [
+        "parboiling",
+        "parboiled"
+      ],
+      "category": "cooking_method",
+      "definition": "Partially cooking food by boiling it briefly, before finishing with another cooking method such as roasting, grilling, or braising.",
+      "related": [
+        "blanch"
+      ],
+      "localized": {
+        "fr": {
+          "term": "précuire",
+          "aliases": [
+            "précuit",
+            "précuite",
+            "précuits",
+            "précuites"
+          ],
+          "definition": "Précuire partiellement des aliments en les faisant bouillir brièvement, avant de terminer la cuisson par une autre méthode comme le rôtissage, le grillage ou le braisage."
+        }
+      }
+    },
+    {
+      "id": "pan_fry",
+      "term": "pan fry",
+      "aliases": [
+        "pan-fry",
+        "pan frying",
+        "pan-frying",
+        "pan fried",
+        "pan-fried"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food in a moderate amount of oil in a flat pan over medium to medium-high heat. Uses more oil than sautéing but less than deep frying.",
+      "related": [
+        "saute",
+        "deep_fry"
+      ],
+      "localized": {
+        "fr": {
+          "term": "poêler",
+          "aliases": [
+            "poêlé",
+            "poêlée",
+            "poêlés",
+            "poêlées",
+            "faire poêler"
+          ],
+          "definition": "Cuire des aliments dans une quantité modérée d'huile dans une poêle à feu moyen à moyen-vif. Plus d'huile que pour sauter, moins que pour la friture."
+        }
+      }
+    },
+    {
+      "id": "stir_fry",
+      "term": "stir fry",
+      "aliases": [
+        "stir-fry",
+        "stir frying",
+        "stir-frying",
+        "stir fried",
+        "stir-fried"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking small, uniform pieces of food rapidly in a wok or large pan over very high heat with continuous tossing and stirring. Originated in Chinese cuisine.",
+      "related": [
+        "saute",
+        "wok"
+      ],
+      "localized": {
+        "fr": {
+          "term": "faire sauter au wok",
+          "aliases": [
+            "sauté au wok",
+            "sautée au wok"
+          ],
+          "definition": "Cuire rapidement de petits morceaux d'aliments dans un wok ou une grande poêle à feu très vif en remuant constamment. Technique originaire de la cuisine chinoise."
+        }
+      }
+    },
+    {
+      "id": "barbecue",
+      "term": "barbecue",
+      "aliases": [
+        "barbecuing",
+        "barbecued",
+        "bbq"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking meat or fish slowly over indirect heat and smoke at low temperatures for an extended period, producing tender, smoky results.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "barbecue",
+          "aliases": [
+            "griller au barbecue",
+            "bbq"
+          ],
+          "definition": "Cuire de la viande ou du poisson lentement à chaleur indirecte et en fumée, à basse température pendant une longue durée, pour un résultat tendre et fumé."
+        }
+      }
+    },
+    {
+      "id": "pressure_cook",
+      "term": "pressure cook",
+      "aliases": [
+        "pressure cooking",
+        "pressure cooked"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food in a sealed vessel (pressure cooker) that traps steam to raise the internal pressure and temperature above the normal boiling point, significantly reducing cooking time.",
+      "related": [
+        "braise"
+      ],
+      "localized": {
+        "fr": {
+          "term": "cuire sous pression",
+          "aliases": [
+            "cocotte-minute",
+            "autocuiseur",
+            "cuit sous pression"
+          ],
+          "definition": "Cuire des aliments dans un récipient hermétique (autocuiseur) qui emprisonne la vapeur pour augmenter la pression et la température au-delà du point d'ébullition, réduisant considérablement le temps de cuisson."
+        }
+      }
+    },
+    {
+      "id": "en_papillote",
+      "term": "en papillote",
+      "aliases": [],
+      "category": "cooking_method",
+      "definition": "Cooking food enclosed in a folded pouch of parchment paper (or aluminum foil), which steams the food in its own juices as the pouch puffs up in the oven.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "en papillote",
+          "aliases": [
+            "papillote"
+          ],
+          "definition": "Cuire des aliments enfermés dans une papillote de papier sulfurisé (ou d'aluminium), qui les fait cuire à la vapeur dans leurs propres jus lorsque la papillote gonfle au four."
+        }
+      }
+    },
+    {
+      "id": "bain_marie",
+      "term": "bain-marie",
+      "aliases": [
+        "bain marie",
+        "water bath",
+        "double boiler"
+      ],
+      "category": "cooking_method",
+      "definition": "A method of gentle, indirect heating where a container of food is placed in or above simmering water. Used for melting chocolate, making custards, and holding delicate sauces.",
+      "related": [
+        "temper"
+      ],
+      "localized": {
+        "fr": {
+          "term": "bain-marie",
+          "aliases": [
+            "bain marie",
+            "au bain-marie"
+          ],
+          "definition": "Méthode de cuisson douce et indirecte où un récipient contenant les aliments est placé dans ou au-dessus d'eau frémissante. Utilisé pour fondre le chocolat, préparer des crèmes et maintenir des sauces délicates."
+        }
+      }
+    },
+    {
+      "id": "sous_vide",
+      "term": "sous vide",
+      "aliases": [],
+      "category": "cooking_method",
+      "definition": "Cooking vacuum-sealed food in a precisely temperature-controlled water bath for an extended period, achieving exact doneness throughout with no gradient from edge to center.",
+      "related": [
+        "poach",
+        "bain_marie"
+      ],
+      "localized": {
+        "fr": {
+          "term": "sous vide",
+          "aliases": [
+            "cuisson sous vide"
+          ],
+          "definition": "Cuire des aliments sous vide dans un bain d'eau à température précisément contrôlée pendant une durée prolongée, pour obtenir une cuisson parfaitement uniforme du bord au centre."
+        }
+      }
+    },
+    {
+      "id": "julienne",
+      "term": "julienne",
+      "aliases": [
+        "julienned",
+        "julienning"
+      ],
+      "category": "knife_cut",
+      "definition": "A knife cut producing long, thin strips about 1/8 inch × 1/8 inch × 2–3 inches (3mm × 3mm × 5–7cm), resembling matchsticks.",
+      "related": [
+        "brunoise",
+        "chiffonade"
+      ],
+      "localized": {
+        "fr": {
+          "term": "julienne",
+          "aliases": [
+            "en julienne",
+            "couper en julienne"
+          ],
+          "definition": "Découpe en longues bandes fines d'environ 3 mm × 3 mm × 5–7 cm, ressemblant à des allumettes."
+        }
+      }
+    },
+    {
+      "id": "emincer",
+      "term": "mince",
+      "aliases": [
+        "mincing",
+        "minced",
+        "thinly sliced",
+        "thinly slice"
+      ],
+      "category": "knife_cut",
+      "definition": "Cutting food into very thin, uniform slices or shreds using a sharp knife or mandoline. Commonly used for onions, garlic, mushrooms, and other vegetables to ensure quick, even cooking.",
+      "related": [
+        "julienne",
+        "chiffonade"
+      ],
+      "localized": {
+        "fr": {
+          "term": "émincer",
+          "aliases": [
+            "émincé",
+            "émincée",
+            "émincés",
+            "émincées",
+            "émincer finement"
+          ],
+          "definition": "Couper les aliments en tranches ou lamelles très fines et uniformes avec un couteau bien aiguisé ou une mandoline. Couramment utilisé pour les oignons, l'ail, les champignons et autres légumes."
+        }
+      }
+    },
+    {
+      "id": "chop",
+      "term": "chop",
+      "aliases": [
+        "chopping",
+        "chopped",
+        "roughly chopped",
+        "finely chopped"
+      ],
+      "category": "knife_cut",
+      "definition": "Cutting food into irregular or regular pieces with a sharp knife, using a rocking motion. Ranges from rough chop (large, uneven pieces) to fine chop (very small, uniform pieces).",
+      "related": [
+        "emincer",
+        "brunoise"
+      ],
+      "localized": {
+        "fr": {
+          "term": "hacher",
+          "aliases": [
+            "haché",
+            "hachée",
+            "hachés",
+            "hachées",
+            "hacher finement",
+            "hacher grossièrement"
+          ],
+          "definition": "Couper les aliments en morceaux irréguliers ou réguliers avec un couteau bien aiguisé, en utilisant un mouvement de balancier. Va de la découpe grossière à la découpe fine."
+        }
+      }
+    },
+    {
+      "id": "ciseler",
+      "term": "fine dice",
+      "aliases": [
+        "finely diced",
+        "finely dicing"
+      ],
+      "category": "knife_cut",
+      "definition": "Cutting food (typically shallots, onions, or herbs) into very small, even pieces by making thin parallel cuts in two directions. In classic French technique, specifically refers to cutting onions or shallots through the root end to produce a fine, uniform dice.",
+      "related": [
+        "brunoise",
+        "chop",
+        "emincer"
+      ],
+      "localized": {
+        "fr": {
+          "term": "ciseler",
+          "aliases": [
+            "ciselé",
+            "ciselée",
+            "ciselés",
+            "ciselées"
+          ],
+          "definition": "Couper finement les aliments (typiquement des échalotes, oignons ou herbes) en petits morceaux réguliers en faisant des incisions parallèles dans deux directions. En technique classique française, désigne la découpe d'oignons à travers la racine pour un hachage fin et uniforme."
+        }
+      }
+    },
+    {
+      "id": "brunoise",
+      "term": "brunoise",
+      "aliases": [],
+      "category": "knife_cut",
+      "definition": "A very fine dice of about 1/8 inch (3mm) cubes, produced by first cutting julienne strips then dicing them crosswise. Used as a garnish or aromatic base.",
+      "related": [
+        "julienne",
+        "mirepoix"
+      ],
+      "localized": {
+        "fr": {
+          "term": "brunoise",
+          "aliases": [
+            "en brunoise",
+            "couper en brunoise"
+          ],
+          "definition": "Découpe en très petits cubes d'environ 3 mm de côté, obtenue en coupant d'abord en julienne puis en tronçons. Utilisée comme garniture ou base aromatique."
+        }
+      }
+    },
+    {
+      "id": "chiffonade",
+      "term": "chiffonade",
+      "aliases": [
+        "chiffonaded"
+      ],
+      "category": "knife_cut",
+      "definition": "Stacking and tightly rolling leafy greens or herbs, then slicing them crosswise into very thin ribbons. Commonly used for basil and mint.",
+      "related": [
+        "julienne"
+      ],
+      "localized": {
+        "fr": {
+          "term": "chiffonnade",
+          "aliases": [
+            "en chiffonnade"
+          ],
+          "definition": "Empiler et rouler serré des feuilles de salade ou d'herbes, puis les trancher finement en rubans très fins. Couramment utilisé pour le basilic et la menthe."
+        }
+      }
+    },
+    {
+      "id": "concasse",
+      "term": "concassé",
+      "aliases": [
+        "concasse",
+        "concassed"
+      ],
+      "category": "knife_cut",
+      "definition": "Peeling, seeding, and roughly chopping a tomato. The tomato is typically blanched first to loosen the skin. Used as a garnish or sauce base.",
+      "related": [
+        "blanch"
+      ],
+      "localized": {
+        "fr": {
+          "term": "concasser",
+          "aliases": [
+            "concassé",
+            "concassée",
+            "concassés",
+            "concassées"
+          ],
+          "definition": "Peler, épépiner et hacher grossièrement une tomate. La tomate est généralement blanchie d'abord pour faciliter l'épluchage. Utilisé comme garniture ou base de sauce."
+        }
+      }
+    },
+    {
+      "id": "batonnet",
+      "term": "bâtonnet",
+      "aliases": [
+        "batonnet"
+      ],
+      "category": "knife_cut",
+      "definition": "A knife cut producing sticks about 1/4 inch × 1/4 inch × 2–3 inches (6mm × 6mm × 5–7cm). Thicker than julienne, this is the classic French fry cut.",
+      "related": [
+        "julienne"
+      ],
+      "localized": {
+        "fr": {
+          "term": "bâtonnet",
+          "aliases": [
+            "bâtonnets",
+            "en bâtonnets",
+            "couper en bâtonnets"
+          ],
+          "definition": "Découpe en bâtonnets d'environ 6 mm × 6 mm × 5–7 cm. Plus épais que la julienne, c'est la coupe classique de la frite."
+        }
+      }
+    },
+    {
+      "id": "supreme",
+      "term": "suprême",
+      "aliases": [
+        "supreme"
+      ],
+      "category": "knife_cut",
+      "definition": "Cutting citrus fruit segments free from the membrane and pith using a paring knife, producing clean, membrane-free wedges.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "suprême",
+          "aliases": [
+            "suprêmes",
+            "peler à vif"
+          ],
+          "definition": "Prélever les segments d'agrumes en les séparant des membranes et de la peau blanche à l'aide d'un couteau d'office, pour obtenir des quartiers nets sans membrane."
+        }
+      }
+    },
+    {
+      "id": "reduction",
+      "term": "reduction",
+      "aliases": [
+        "reducing",
+        "reduction"
+      ],
+      "category": "sauce_technique",
+      "definition": "Simmering or boiling a liquid until its volume decreases through evaporation, concentrating flavors and thickening the consistency.",
+      "related": [
+        "deglaze",
+        "glaze"
+      ],
+      "localized": {
+        "fr": {
+          "term": "réduction",
+          "aliases": [
+            "réduire",
+            "réduit",
+            "réduite"
+          ],
+          "definition": "Faire frémir ou bouillir un liquide jusqu'à ce que son volume diminue par évaporation, concentrant les saveurs et épaississant la consistance."
+        }
+      }
+    },
+    {
+      "id": "roux",
+      "term": "roux",
+      "aliases": [],
+      "category": "sauce_technique",
+      "definition": "A cooked paste of equal parts flour and fat (usually butter) used as a thickening agent for sauces, soups, and gravies. Can be white, blond, or brown depending on cooking time.",
+      "related": [
+        "beurre_manie",
+        "bechamel"
+      ],
+      "localized": {
+        "fr": {
+          "term": "roux",
+          "aliases": [
+            "faire un roux"
+          ],
+          "definition": "Mélange cuit à parts égales de farine et de matière grasse (généralement du beurre), utilisé comme épaississant pour les sauces, soupes et veloutés. Peut être blanc, blond ou brun selon le temps de cuisson."
+        }
+      }
+    },
+    {
+      "id": "deglaze",
+      "term": "deglaze",
+      "aliases": [
+        "deglazing",
+        "deglazed"
+      ],
+      "category": "sauce_technique",
+      "definition": "Adding liquid (wine, stock, or spirits) to a hot pan to dissolve the caramelized food residue (fond) stuck to the bottom, creating a flavorful base for a sauce.",
+      "related": [
+        "saute",
+        "reduction",
+        "fond"
+      ],
+      "localized": {
+        "fr": {
+          "term": "déglacer",
+          "aliases": [
+            "déglacé",
+            "déglacée",
+            "déglaçage"
+          ],
+          "definition": "Ajouter un liquide (vin, fond ou alcool) dans une poêle chaude pour dissoudre les sucs de cuisson caramélisés collés au fond, créant une base savoureuse pour une sauce."
+        }
+      }
+    },
+    {
+      "id": "emulsify",
+      "term": "emulsify",
+      "aliases": [
+        "emulsifying",
+        "emulsified",
+        "emulsion"
+      ],
+      "category": "sauce_technique",
+      "definition": "Combining two liquids that normally don't mix (such as oil and vinegar) into a stable, homogeneous mixture by vigorous whisking or blending, often with the help of an emulsifier like egg yolk or mustard.",
+      "related": [
+        "mount",
+        "vinaigrette"
+      ],
+      "localized": {
+        "fr": {
+          "term": "émulsionner",
+          "aliases": [
+            "émulsionné",
+            "émulsionnée",
+            "émulsion"
+          ],
+          "definition": "Combiner deux liquides qui ne se mélangent normalement pas (comme l'huile et le vinaigre) en un mélange stable et homogène par un fouettage vigoureux, souvent à l'aide d'un émulsifiant comme le jaune d'œuf ou la moutarde."
+        }
+      }
+    },
+    {
+      "id": "mount",
+      "term": "mount",
+      "aliases": [
+        "mounting",
+        "mounted",
+        "monter au beurre"
+      ],
+      "category": "sauce_technique",
+      "definition": "Whisking cold butter into a warm sauce just before serving to add richness, body, and a glossy sheen. The French term is 'monter au beurre'.",
+      "related": [
+        "emulsify",
+        "reduction"
+      ],
+      "localized": {
+        "fr": {
+          "term": "monter au beurre",
+          "aliases": [
+            "monté au beurre",
+            "montée au beurre"
+          ],
+          "definition": "Incorporer au fouet du beurre froid dans une sauce chaude juste avant le service, pour ajouter de l'onctuosité, du corps et un aspect brillant."
+        }
+      }
+    },
+    {
+      "id": "beurre_manie",
+      "term": "beurre manié",
+      "aliases": [
+        "beurre manie"
+      ],
+      "category": "sauce_technique",
+      "definition": "A paste of equal parts softened butter and flour, kneaded together and whisked into a simmering liquid to thicken it. Unlike a roux, it is not pre-cooked.",
+      "related": [
+        "roux",
+        "reduction"
+      ],
+      "localized": {
+        "fr": {
+          "term": "beurre manié",
+          "aliases": [],
+          "definition": "Pâte composée à parts égales de beurre ramolli et de farine, pétris ensemble et incorporés au fouet dans un liquide frémissant pour l'épaissir. Contrairement au roux, il n'est pas précuit."
+        }
+      }
+    },
+    {
+      "id": "glaze",
+      "term": "glaze",
+      "aliases": [
+        "glazing",
+        "glazed"
+      ],
+      "category": "sauce_technique",
+      "definition": "Coating food with a thin, glossy layer of sauce, aspic, or reduced stock. Also refers to reducing a liquid until it becomes syrupy and coats the back of a spoon.",
+      "related": [
+        "reduction"
+      ],
+      "localized": {
+        "fr": {
+          "term": "glacer",
+          "aliases": [
+            "glacé",
+            "glacée",
+            "glacés",
+            "glacées",
+            "glaçage"
+          ],
+          "definition": "Enrober les aliments d'une fine couche brillante de sauce, de gelée ou de fond réduit. Désigne également la réduction d'un liquide jusqu'à consistance sirupeuse nappant le dos d'une cuillère."
+        }
+      }
+    },
+    {
+      "id": "liaison",
+      "term": "liaison",
+      "aliases": [],
+      "category": "sauce_technique",
+      "definition": "A mixture of egg yolks and cream used to thicken and enrich a sauce or soup at the end of cooking. Must be tempered to avoid curdling.",
+      "related": [
+        "temper",
+        "roux"
+      ],
+      "localized": {
+        "fr": {
+          "term": "liaison",
+          "aliases": [
+            "faire une liaison"
+          ],
+          "definition": "Mélange de jaunes d'œuf et de crème utilisé pour épaissir et enrichir une sauce ou un potage en fin de cuisson. Doit être tempéré pour éviter la coagulation."
+        }
+      }
+    },
+    {
+      "id": "nappe",
+      "term": "nappé",
+      "aliases": [
+        "nappe",
+        "napper"
+      ],
+      "category": "sauce_technique",
+      "definition": "The consistency at which a sauce is thick enough to coat the back of a spoon, and a line drawn through it holds its shape. Also means to coat food with sauce.",
+      "related": [
+        "reduction",
+        "glaze"
+      ],
+      "localized": {
+        "fr": {
+          "term": "napper",
+          "aliases": [
+            "nappé",
+            "nappée",
+            "nappés",
+            "nappées",
+            "nappage"
+          ],
+          "definition": "Consistance à laquelle une sauce est suffisamment épaisse pour napper le dos d'une cuillère, et où un trait tracé dessus garde sa forme. Désigne aussi l'action d'enrober un aliment de sauce."
+        }
+      }
+    },
+    {
+      "id": "marinate",
+      "term": "marinate",
+      "aliases": [
+        "marinating",
+        "marinated",
+        "marinade"
+      ],
+      "category": "preparation",
+      "definition": "Soaking food in a seasoned liquid (typically containing acid, oil, and aromatics) for a period of time to add flavor and tenderize. Common marinades include combinations of citrus, vinegar, soy sauce, herbs, and spices.",
+      "related": [
+        "brine",
+        "cure"
+      ],
+      "localized": {
+        "fr": {
+          "term": "mariner",
+          "aliases": [
+            "mariné",
+            "marinée",
+            "marinés",
+            "marinées",
+            "marinade",
+            "faire mariner",
+            "laisser mariner"
+          ],
+          "definition": "Faire tremper des aliments dans un liquide assaisonné (contenant typiquement un acide, de l'huile et des aromates) pendant un certain temps pour ajouter de la saveur et attendrir."
+        }
+      }
+    },
+    {
+      "id": "brine",
+      "term": "brine",
+      "aliases": [
+        "brining",
+        "brined"
+      ],
+      "category": "preparation",
+      "definition": "Soaking food in a solution of salt and water (often with sugar and aromatics) to season it throughout and improve moisture retention during cooking.",
+      "related": [
+        "cure"
+      ],
+      "localized": {
+        "fr": {
+          "term": "saumurer",
+          "aliases": [
+            "saumure",
+            "saumuré",
+            "saumurée"
+          ],
+          "definition": "Faire tremper des aliments dans une solution d'eau salée (souvent avec du sucre et des aromates) pour les assaisonner en profondeur et améliorer la rétention d'humidité à la cuisson."
+        }
+      }
+    },
+    {
+      "id": "cure",
+      "term": "cure",
+      "aliases": [
+        "curing",
+        "cured"
+      ],
+      "category": "preparation",
+      "definition": "Preserving and flavoring food (typically meat or fish) by applying salt, sugar, nitrates, or a combination, sometimes followed by smoking or air-drying.",
+      "related": [
+        "brine"
+      ],
+      "localized": {
+        "fr": {
+          "term": "salaison",
+          "aliases": [
+            "saler",
+            "salé",
+            "salée",
+            "sécher",
+            "affiner"
+          ],
+          "definition": "Conserver et aromatiser des aliments (typiquement viande ou poisson) en appliquant du sel, du sucre, des nitrates ou une combinaison, parfois suivi d'un fumage ou d'un séchage à l'air."
+        }
+      }
+    },
+    {
+      "id": "dredge",
+      "term": "dredge",
+      "aliases": [
+        "dredging",
+        "dredged"
+      ],
+      "category": "preparation",
+      "definition": "Coating food lightly with a dry ingredient such as flour, cornmeal, or breadcrumbs before cooking, creating a crisp outer layer.",
+      "related": [
+        "deep_fry"
+      ],
+      "localized": {
+        "fr": {
+          "term": "fariner",
+          "aliases": [
+            "fariné",
+            "farinée",
+            "enrober",
+            "paner",
+            "pané",
+            "panée"
+          ],
+          "definition": "Enrober légèrement les aliments d'un ingrédient sec comme la farine, la semoule de maïs ou la chapelure avant la cuisson, créant une couche extérieure croustillante."
+        }
+      }
+    },
+    {
+      "id": "baste",
+      "term": "baste",
+      "aliases": [
+        "basting",
+        "basted"
+      ],
+      "category": "preparation",
+      "definition": "Periodically spooning or brushing pan drippings, melted butter, or other liquid over food as it cooks to keep it moist and add flavor.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "arroser",
+          "aliases": [
+            "arrosé",
+            "arrosée",
+            "arrosage"
+          ],
+          "definition": "Arroser périodiquement les aliments en cuisson avec le jus de cuisson, du beurre fondu ou un autre liquide à l'aide d'une cuillère ou d'un pinceau, pour les garder humides et ajouter de la saveur."
+        }
+      }
+    },
+    {
+      "id": "lard",
+      "term": "lard",
+      "aliases": [
+        "larding",
+        "larded"
+      ],
+      "category": "preparation",
+      "definition": "Threading strips of fat through the interior of a lean cut of meat using a larding needle, to add moisture and flavor from within during cooking.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "larder",
+          "aliases": [
+            "lardé",
+            "lardée",
+            "lardons"
+          ],
+          "definition": "Traverser l'intérieur d'une pièce de viande maigre de lanières de lard à l'aide d'une aiguille à larder, pour ajouter de l'humidité et de la saveur de l'intérieur pendant la cuisson."
+        }
+      }
+    },
+    {
+      "id": "truss",
+      "term": "truss",
+      "aliases": [
+        "trussing",
+        "trussed"
+      ],
+      "category": "preparation",
+      "definition": "Tying meat or poultry with kitchen twine into a compact shape before cooking, ensuring even cooking and an attractive presentation.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "brider",
+          "aliases": [
+            "bridé",
+            "bridée",
+            "ficeler",
+            "ficelé",
+            "ficelée"
+          ],
+          "definition": "Ficeler de la viande ou de la volaille avec de la ficelle de cuisine en une forme compacte avant la cuisson, pour assurer une cuisson uniforme et une belle présentation."
+        }
+      }
+    },
+    {
+      "id": "score",
+      "term": "score",
+      "aliases": [
+        "scoring",
+        "scored"
+      ],
+      "category": "preparation",
+      "definition": "Cutting shallow slashes, often in a diamond or crosshatch pattern, into the surface of food. Helps marinades penetrate, fat render, and bread expand during baking.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "inciser",
+          "aliases": [
+            "incisé",
+            "incisée",
+            "entailler",
+            "entaillé",
+            "entaillée"
+          ],
+          "definition": "Pratiquer des incisions peu profondes, souvent en losange ou en quadrillage, à la surface des aliments. Permet aux marinades de pénétrer, à la graisse de fondre et au pain de se développer à la cuisson."
+        }
+      }
+    },
+    {
+      "id": "temper",
+      "term": "temper",
+      "aliases": [
+        "tempering",
+        "tempered"
+      ],
+      "category": "preparation",
+      "definition": "Gradually adjusting the temperature of a sensitive ingredient. For eggs: slowly adding hot liquid to prevent curdling. For chocolate: carefully heating and cooling to achieve a glossy, snappy finish.",
+      "related": [
+        "bain_marie",
+        "liaison"
+      ],
+      "localized": {
+        "fr": {
+          "term": "tempérer",
+          "aliases": [
+            "tempéré",
+            "tempérée",
+            "tempérage"
+          ],
+          "definition": "Ajuster progressivement la température d'un ingrédient sensible. Pour les œufs : ajouter lentement du liquide chaud pour éviter la coagulation. Pour le chocolat : chauffer et refroidir soigneusement pour un résultat brillant et croquant."
+        }
+      }
+    },
+    {
+      "id": "macerate",
+      "term": "macerate",
+      "aliases": [
+        "macerating",
+        "macerated"
+      ],
+      "category": "preparation",
+      "definition": "Soaking fruit in sugar, alcohol, or other liquid to soften it and draw out its natural juices, creating both tender fruit and a flavored syrup.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "macérer",
+          "aliases": [
+            "macéré",
+            "macérée",
+            "macération"
+          ],
+          "definition": "Faire tremper des fruits dans du sucre, de l'alcool ou un autre liquide pour les ramollir et en extraire les jus naturels, produisant à la fois des fruits tendres et un sirop parfumé."
+        }
+      }
+    },
+    {
+      "id": "bloom",
+      "term": "bloom",
+      "aliases": [
+        "blooming",
+        "bloomed"
+      ],
+      "category": "preparation",
+      "definition": "Activating an ingredient by briefly soaking or heating it. For gelatin: softening in cold water before dissolving. For spices: heating in oil to release essential oils and intensify flavor.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "faire gonfler",
+          "aliases": [
+            "gonfler",
+            "réhydrater",
+            "faire bloomer"
+          ],
+          "definition": "Activer un ingrédient en le trempant brièvement ou en le chauffant. Pour la gélatine : ramollir dans l'eau froide avant de dissoudre. Pour les épices : chauffer dans de l'huile pour libérer les huiles essentielles et intensifier la saveur."
+        }
+      }
+    },
+    {
+      "id": "ferment",
+      "term": "ferment",
+      "aliases": [
+        "fermenting",
+        "fermented",
+        "fermentation"
+      ],
+      "category": "preparation",
+      "definition": "Allowing controlled microbial activity (bacteria, yeast) to transform food, developing complex flavors and preserving it. Used for bread, cheese, yogurt, kimchi, and more.",
+      "related": [
+        "proof"
+      ],
+      "localized": {
+        "fr": {
+          "term": "fermenter",
+          "aliases": [
+            "fermenté",
+            "fermentée",
+            "fermentés",
+            "fermentées",
+            "fermentation"
+          ],
+          "definition": "Permettre une activité microbienne contrôlée (bactéries, levures) pour transformer les aliments, développant des saveurs complexes et les préservant. Utilisé pour le pain, le fromage, le yaourt, le kimchi, etc."
+        }
+      }
+    },
+    {
+      "id": "dry_rub",
+      "term": "dry rub",
+      "aliases": [
+        "rub",
+        "rubbed"
+      ],
+      "category": "preparation",
+      "definition": "Coating food (typically meat) with a mixture of dried spices and herbs, massaged into the surface before cooking to build a flavorful crust.",
+      "related": [
+        "cure"
+      ],
+      "localized": {
+        "fr": {
+          "term": "frotter aux épices",
+          "aliases": [
+            "frictionner",
+            "frotter"
+          ],
+          "definition": "Enrober les aliments (typiquement de la viande) d'un mélange d'épices et d'herbes séchées, massé sur la surface avant la cuisson pour former une croûte savoureuse."
+        }
+      }
+    },
+    {
+      "id": "butterfly",
+      "term": "butterfly",
+      "aliases": [
+        "butterflying",
+        "butterflied"
+      ],
+      "category": "preparation",
+      "definition": "Cutting meat, poultry, or shrimp almost in half and opening it like a book to create a thinner, more uniform piece that cooks faster and more evenly.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "ouvrir en papillon",
+          "aliases": [
+            "papillon",
+            "ouvert en papillon"
+          ],
+          "definition": "Ouvrir de la viande, de la volaille ou des crevettes presque en deux et les déplier comme un livre pour obtenir une pièce plus fine et uniforme qui cuit plus vite et plus régulièrement."
+        }
+      }
+    },
+    {
+      "id": "whisk",
+      "term": "whisk",
+      "aliases": [
+        "whisking",
+        "whisked",
+        "whip",
+        "whipping",
+        "whipped"
+      ],
+      "category": "preparation",
+      "definition": "Rapidly beating a mixture with a whisk or fork in a circular motion to incorporate air, blend ingredients, or create a smooth, uniform texture. Essential for emulsions, meringues, and batters.",
+      "related": [
+        "emulsify",
+        "fold"
+      ],
+      "localized": {
+        "fr": {
+          "term": "fouetter",
+          "aliases": [
+            "fouetté",
+            "fouettée",
+            "fouettés",
+            "fouettées"
+          ],
+          "definition": "Battre rapidement un mélange avec un fouet en mouvement circulaire pour incorporer de l'air, mélanger les ingrédients ou créer une texture lisse et homogène. Essentiel pour les émulsions, les meringues et les pâtes."
+        }
+      }
+    },
+    {
+      "id": "infuse",
+      "term": "infuse",
+      "aliases": [
+        "infusing",
+        "infused",
+        "steep",
+        "steeping",
+        "steeped"
+      ],
+      "category": "preparation",
+      "definition": "Soaking an aromatic ingredient (herbs, spices, tea, vanilla) in a hot liquid to extract its flavor, aroma, and color. The liquid is usually heated but not boiled, then left to sit.",
+      "related": [
+        "macerate",
+        "bloom"
+      ],
+      "localized": {
+        "fr": {
+          "term": "infuser",
+          "aliases": [
+            "infusé",
+            "infusée",
+            "infusion",
+            "faire infuser",
+            "laisser infuser"
+          ],
+          "definition": "Faire tremper un ingrédient aromatique (herbes, épices, thé, vanille) dans un liquide chaud pour en extraire la saveur, l'arôme et la couleur. Le liquide est chauffé sans bouillir, puis laissé à reposer."
+        }
+      }
+    },
+    {
+      "id": "fold",
+      "term": "fold",
+      "aliases": [
+        "folding",
+        "folded"
+      ],
+      "category": "baking",
+      "definition": "Gently combining a lighter mixture (like whipped egg whites or cream) into a heavier one using a sweeping, circular motion to maintain as much air as possible.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "incorporer délicatement",
+          "aliases": [
+            "incorporer",
+            "plier"
+          ],
+          "definition": "Incorporer délicatement un mélange léger (comme des blancs d'œufs montés ou de la crème) dans un mélange plus lourd, en effectuant un mouvement circulaire enveloppant pour conserver le maximum d'air."
+        }
+      }
+    },
+    {
+      "id": "knead",
+      "term": "knead",
+      "aliases": [
+        "kneading",
+        "kneaded"
+      ],
+      "category": "baking",
+      "definition": "Working dough by hand or with a stand mixer to develop the gluten network, creating elasticity and structure. Involves repeatedly pressing, folding, and stretching the dough until it becomes smooth and springs back when poked.",
+      "related": [
+        "proof",
+        "fold"
+      ],
+      "localized": {
+        "fr": {
+          "term": "pétrir",
+          "aliases": [
+            "pétri",
+            "pétrie",
+            "pétris",
+            "pétries",
+            "pétrissage"
+          ],
+          "definition": "Travailler la pâte à la main ou au robot pour développer le réseau de gluten, créant élasticité et structure. Consiste à presser, plier et étirer la pâte de façon répétée jusqu'à ce qu'elle devienne lisse et rebondisse au toucher."
+        }
+      }
+    },
+    {
+      "id": "proof",
+      "term": "proof",
+      "aliases": [
+        "proofing",
+        "proofed",
+        "prove",
+        "proving"
+      ],
+      "category": "baking",
+      "definition": "Allowing yeast dough to rise before baking, giving the yeast time to produce carbon dioxide that makes the dough expand and develop flavor.",
+      "related": [
+        "ferment"
+      ],
+      "localized": {
+        "fr": {
+          "term": "faire lever",
+          "aliases": [
+            "lever",
+            "levée",
+            "pousser",
+            "pousse",
+            "pointage"
+          ],
+          "definition": "Laisser une pâte levée reposer et gonfler avant la cuisson, donnant à la levure le temps de produire du gaz carbonique qui fait lever la pâte et développer les arômes."
+        }
+      }
+    },
+    {
+      "id": "dock",
+      "term": "dock",
+      "aliases": [
+        "docking",
+        "docked"
+      ],
+      "category": "baking",
+      "definition": "Pricking small holes in pastry dough with a fork or docking tool before baking to prevent it from puffing up unevenly.",
+      "related": [
+        "blind_bake"
+      ],
+      "localized": {
+        "fr": {
+          "term": "piquer",
+          "aliases": [
+            "piqué",
+            "piquée",
+            "piquer à la fourchette"
+          ],
+          "definition": "Piquer de petits trous dans une pâte à l'aide d'une fourchette ou d'un rouleau pique-pâte avant la cuisson, pour l'empêcher de gonfler de manière irrégulière."
+        }
+      }
+    },
+    {
+      "id": "blind_bake",
+      "term": "blind bake",
+      "aliases": [
+        "blind baking",
+        "blind-bake",
+        "blind-baking"
+      ],
+      "category": "baking",
+      "definition": "Pre-baking a pie or tart crust without the filling, using pie weights or dried beans to prevent the dough from puffing or shrinking.",
+      "related": [
+        "dock"
+      ],
+      "localized": {
+        "fr": {
+          "term": "cuire à blanc",
+          "aliases": [
+            "cuit à blanc",
+            "cuite à blanc",
+            "cuisson à blanc"
+          ],
+          "definition": "Précuire un fond de tarte sans sa garniture, en utilisant des poids de cuisson ou des légumes secs pour empêcher la pâte de gonfler ou de rétrécir."
+        }
+      }
+    },
+    {
+      "id": "crimp",
+      "term": "crimp",
+      "aliases": [
+        "crimping",
+        "crimped"
+      ],
+      "category": "baking",
+      "definition": "Pressing or pinching the edges of a pie crust to seal it and create a decorative pattern, preventing filling from leaking during baking.",
+      "related": [
+        "blind_bake"
+      ],
+      "localized": {
+        "fr": {
+          "term": "chiqueter",
+          "aliases": [
+            "chiqueté",
+            "chiquetée",
+            "pincer les bords"
+          ],
+          "definition": "Presser ou pincer les bords d'une pâte à tarte pour la sceller et créer un motif décoratif, empêchant la garniture de fuir pendant la cuisson."
+        }
+      }
+    },
+    {
+      "id": "al_dente",
+      "term": "al dente",
+      "aliases": [],
+      "category": "texture_state",
+      "definition": "Italian for 'to the tooth.' Describes pasta or vegetables cooked until tender but still firm when bitten, offering slight resistance at the center.",
+      "related": [
+        "blanch"
+      ],
+      "localized": {
+        "fr": {
+          "term": "al dente",
+          "aliases": [],
+          "definition": "De l'italien « à la dent ». Décrit des pâtes ou des légumes cuits jusqu'à être tendres mais encore fermes sous la dent, offrant une légère résistance au centre."
+        }
+      }
+    },
+    {
+      "id": "au_gratin",
+      "term": "au gratin",
+      "aliases": [
+        "gratin",
+        "gratinée",
+        "gratinee"
+      ],
+      "category": "texture_state",
+      "definition": "Topped with breadcrumbs or cheese (or both) and browned under a broiler or in a hot oven until a crispy, golden crust forms on top.",
+      "related": [
+        "broil"
+      ],
+      "localized": {
+        "fr": {
+          "term": "gratiner",
+          "aliases": [
+            "gratin",
+            "gratiné",
+            "gratinée",
+            "gratinés",
+            "gratinées"
+          ],
+          "definition": "Recouvert de chapelure ou de fromage (ou les deux) et doré sous le gril ou au four chaud jusqu'à former une croûte croustillante et dorée sur le dessus."
+        }
+      }
+    },
+    {
+      "id": "caramelize",
+      "term": "caramelize",
+      "aliases": [
+        "caramelizing",
+        "caramelized",
+        "caramelisation",
+        "caramelization"
+      ],
+      "category": "texture_state",
+      "definition": "Heating sugar (or foods containing natural sugars) until it melts and turns golden brown, developing complex, nutty, bittersweet flavors.",
+      "related": [
+        "brown",
+        "sear",
+        "deglaze"
+      ],
+      "localized": {
+        "fr": {
+          "term": "caraméliser",
+          "aliases": [
+            "caramélisé",
+            "caramélisée",
+            "caramélisés",
+            "caramélisées",
+            "caramélisation"
+          ],
+          "definition": "Chauffer du sucre (ou des aliments contenant des sucres naturels) jusqu'à ce qu'il fonde et prenne une couleur dorée, développant des saveurs complexes, noisettées et légèrement amères."
+        }
+      }
+    },
+    {
+      "id": "render",
+      "term": "render",
+      "aliases": [
+        "rendering",
+        "rendered"
+      ],
+      "category": "texture_state",
+      "definition": "Slowly melting solid animal fat by cooking it over low heat, extracting the liquid fat and leaving behind crispy solids (cracklings).",
+      "related": [
+        "confit"
+      ],
+      "localized": {
+        "fr": {
+          "term": "faire fondre la graisse",
+          "aliases": [
+            "fondre",
+            "rendu",
+            "rendre"
+          ],
+          "definition": "Faire fondre lentement de la graisse animale solide en la cuisant à feu doux, extrayant la graisse liquide et laissant des résidus croustillants (grattons)."
+        }
+      }
+    },
+    {
+      "id": "brown",
+      "term": "brown",
+      "aliases": [
+        "browning",
+        "browned"
+      ],
+      "category": "texture_state",
+      "definition": "Cooking the surface of food at high heat until it turns brown, through caramelization and the Maillard reaction, developing deep, complex flavors.",
+      "related": [
+        "sear",
+        "caramelize"
+      ],
+      "localized": {
+        "fr": {
+          "term": "dorer",
+          "aliases": [
+            "doré",
+            "dorée",
+            "dorés",
+            "dorées",
+            "faire dorer",
+            "rissoler"
+          ],
+          "definition": "Cuire la surface des aliments à feu vif jusqu'à ce qu'elle brunisse, par caramélisation et réaction de Maillard, développant des saveurs profondes et complexes."
+        }
+      }
+    },
+    {
+      "id": "clarify",
+      "term": "clarify",
+      "aliases": [
+        "clarifying",
+        "clarified"
+      ],
+      "category": "texture_state",
+      "definition": "Removing impurities from a liquid (stock, butter, or consommé) to make it clear. For butter: gently melting to separate and remove milk solids and water.",
+      "related": [
+        "skim",
+        "consomme"
+      ],
+      "localized": {
+        "fr": {
+          "term": "clarifier",
+          "aliases": [
+            "clarifié",
+            "clarifiée",
+            "clarifiés",
+            "clarifiées"
+          ],
+          "definition": "Éliminer les impuretés d'un liquide (fond, beurre ou consommé) pour le rendre limpide. Pour le beurre : faire fondre doucement pour séparer et retirer les solides du lait et l'eau."
+        }
+      }
+    },
+    {
+      "id": "shock",
+      "term": "shock",
+      "aliases": [
+        "shocking",
+        "shocked",
+        "refresh",
+        "refreshing"
+      ],
+      "category": "texture_state",
+      "definition": "Plunging hot food immediately into ice water to halt the cooking process. Typically follows blanching to preserve color, texture, and nutrients.",
+      "related": [
+        "blanch"
+      ],
+      "localized": {
+        "fr": {
+          "term": "rafraîchir",
+          "aliases": [
+            "rafraîchi",
+            "rafraîchie",
+            "refroidir dans la glace"
+          ],
+          "definition": "Plonger immédiatement les aliments chauds dans de l'eau glacée pour arrêter la cuisson. Suit généralement le blanchiment pour préserver la couleur, la texture et les nutriments."
+        }
+      }
+    },
+    {
+      "id": "rest",
+      "term": "rest",
+      "aliases": [
+        "resting",
+        "rested"
+      ],
+      "category": "texture_state",
+      "definition": "Allowing cooked meat to sit undisturbed for several minutes after cooking, letting internal juices redistribute evenly for a juicier result when sliced.",
+      "related": [
+        "sear"
+      ],
+      "localized": {
+        "fr": {
+          "term": "laisser reposer",
+          "aliases": [
+            "reposer",
+            "repos"
+          ],
+          "definition": "Laisser la viande cuite reposer sans la toucher pendant plusieurs minutes après la cuisson, permettant aux jus internes de se redistribuer uniformément pour un résultat plus juteux à la découpe."
+        }
+      }
+    },
+    {
+      "id": "maillard_reaction",
+      "term": "Maillard reaction",
+      "aliases": [
+        "maillard"
+      ],
+      "category": "texture_state",
+      "definition": "A chemical reaction between amino acids and reducing sugars that occurs at high temperatures (above 280°F / 140°C), responsible for the flavor and brown color of seared meat, toasted bread, and roasted coffee.",
+      "related": [
+        "sear",
+        "brown",
+        "caramelize"
+      ],
+      "localized": {
+        "fr": {
+          "term": "réaction de Maillard",
+          "aliases": [
+            "maillard"
+          ],
+          "definition": "Réaction chimique entre les acides aminés et les sucres réducteurs à haute température (au-dessus de 140 °C), responsable de la saveur et de la couleur brune de la viande saisie, du pain grillé et du café torréfié."
+        }
+      }
+    },
+    {
+      "id": "skim",
+      "term": "skim",
+      "aliases": [
+        "skimming",
+        "skimmed"
+      ],
+      "category": "texture_state",
+      "definition": "Removing fat, foam, or impurities from the surface of a simmering liquid using a spoon or ladle, resulting in a cleaner, clearer stock or sauce.",
+      "related": [
+        "clarify"
+      ],
+      "localized": {
+        "fr": {
+          "term": "écumer",
+          "aliases": [
+            "écumé",
+            "écumée",
+            "écumage"
+          ],
+          "definition": "Retirer la graisse, la mousse ou les impuretés de la surface d'un liquide frémissant à l'aide d'une cuillère ou d'une louche, pour obtenir un fond ou une sauce plus propre et plus clair."
+        }
+      }
+    },
+    {
+      "id": "zest",
+      "term": "zest",
+      "aliases": [
+        "zesting",
+        "zested"
+      ],
+      "category": "preparation",
+      "definition": "Removing the thin, outermost colored layer of citrus peel using a grater or zester, capturing the aromatic essential oils without the bitter white pith beneath.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "zester",
+          "aliases": [
+            "zeste",
+            "zesté",
+            "zestée"
+          ],
+          "definition": "Prélever la fine couche colorée extérieure de l'écorce d'agrume à l'aide d'une râpe ou d'un zesteur, capturant les huiles essentielles aromatiques sans le ziste blanc et amer en dessous."
+        }
+      }
+    },
+    {
+      "id": "debone",
+      "term": "debone",
+      "aliases": [
+        "deboning",
+        "deboned",
+        "bone",
+        "boning"
+      ],
+      "category": "preparation",
+      "definition": "Removing bones from meat, poultry, or fish before or after cooking, using a sharp boning knife to separate flesh from the skeletal structure.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "désosser",
+          "aliases": [
+            "désossé",
+            "désossée",
+            "désossés",
+            "désossées"
+          ],
+          "definition": "Retirer les os de la viande, de la volaille ou du poisson avant ou après la cuisson, en utilisant un couteau à désosser pour séparer la chair de la structure osseuse."
+        }
+      }
+    },
+    {
+      "id": "devein",
+      "term": "devein",
+      "aliases": [
+        "deveining",
+        "deveined"
+      ],
+      "category": "preparation",
+      "definition": "Removing the dark digestive tract (vein) that runs along the back of a shrimp, using a knife or deveining tool, for both aesthetic and textural reasons.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "déveiner",
+          "aliases": [
+            "déveiné",
+            "déveinée",
+            "retirer la veine"
+          ],
+          "definition": "Retirer le tractus digestif sombre (veine) qui parcourt le dos d'une crevette, à l'aide d'un couteau ou d'un outil à déveiner, pour des raisons esthétiques et de texture."
+        }
+      }
+    },
+    {
+      "id": "simmer",
+      "term": "simmer",
+      "aliases": [
+        "simmering",
+        "simmered"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food in liquid held just below the boiling point (around 185–205°F / 85–96°C), with small bubbles gently breaking at the surface. Used for soups, stews, sauces, and braises to develop flavor while keeping food tender.",
+      "related": [
+        "braise",
+        "poach",
+        "reduction"
+      ],
+      "localized": {
+        "fr": {
+          "term": "mijoter",
+          "aliases": [
+            "mijoté",
+            "mijotée",
+            "mijotés",
+            "mijotées",
+            "faire mijoter",
+            "laisser mijoter"
+          ],
+          "definition": "Cuire des aliments dans un liquide maintenu juste en dessous du point d'ébullition (85–96 °C), avec de petites bulles qui éclatent doucement en surface. Utilisé pour les soupes, ragoûts, sauces et braisés."
+        }
+      }
+    },
+    {
+      "id": "roast",
+      "term": "roast",
+      "aliases": [
+        "roasting",
+        "roasted"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking food uncovered in an oven using dry, indirect heat, typically at temperatures of 300–450°F (150–230°C). Produces caramelized surfaces and concentrated flavors through the Maillard reaction and evaporation.",
+      "related": [
+        "brown",
+        "sear",
+        "caramelize"
+      ],
+      "localized": {
+        "fr": {
+          "term": "rôtir",
+          "aliases": [
+            "rôti",
+            "rôtie",
+            "rôtis",
+            "rôties",
+            "faire rôtir"
+          ],
+          "definition": "Cuire des aliments à découvert au four par chaleur sèche indirecte, typiquement entre 150 et 230 °C. Produit des surfaces caramélisées et des saveurs concentrées grâce à la réaction de Maillard et à l'évaporation."
+        }
+      }
+    },
+    {
+      "id": "sweat",
+      "term": "sweat",
+      "aliases": [
+        "sweating",
+        "sweated"
+      ],
+      "category": "cooking_method",
+      "definition": "Cooking vegetables (typically aromatics like onions and garlic) gently over low to medium heat with a small amount of fat, softening them without browning.",
+      "related": [
+        "saute"
+      ],
+      "localized": {
+        "fr": {
+          "term": "faire suer",
+          "aliases": [
+            "suer",
+            "sué",
+            "suée"
+          ],
+          "definition": "Cuire des légumes (typiquement des aromates comme les oignons et l'ail) doucement à feu doux à moyen avec un peu de matière grasse, en les ramollissant sans les colorer."
+        }
+      }
+    },
+    {
+      "id": "scald",
+      "term": "scald",
+      "aliases": [
+        "scalding",
+        "scalded"
+      ],
+      "category": "cooking_method",
+      "definition": "Heating a liquid (usually milk or cream) to just below its boiling point, when tiny bubbles appear at the edges. Used to dissolve sugar, infuse flavors, or activate yeast.",
+      "related": [],
+      "localized": {
+        "fr": {
+          "term": "ébouillanter",
+          "aliases": [
+            "échauder",
+            "ébouillantée",
+            "ébouillanté",
+            "échaudé",
+            "échaudée"
+          ],
+          "definition": "Chauffer un liquide (généralement du lait ou de la crème) juste en dessous de son point d'ébullition, lorsque de petites bulles apparaissent sur les bords. Utilisé pour dissoudre le sucre, infuser des saveurs ou activer la levure."
+        }
+      }
+    }
+  ]
+}

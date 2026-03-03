@@ -1,10 +1,12 @@
 import React, { useState, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Button, Typography, IconButton } from "@mui/material";
 import { useDropzone } from "react-dropzone";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const ImageRecipeForm = ({ onSubmit, error }) => {
+  const { t } = useTranslation();
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState("");
 
@@ -52,8 +54,7 @@ const ImageRecipeForm = ({ onSubmit, error }) => {
   return (
     <Box>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        Upload a photo of a recipe (cookbook page, handwritten recipe, screenshot…). 
-        The text will be automatically extracted via OCR.
+        {t("addRecipe.imageDescription")}
       </Typography>
 
       <Box
@@ -110,11 +111,11 @@ const ImageRecipeForm = ({ onSubmit, error }) => {
             <PhotoCameraIcon sx={{ fontSize: 48, color: "grey.500", mb: 1 }} />
             <Typography variant="body1" color="text.secondary">
               {isDragActive
-                ? "Drop the image here"
-                : "Click or drop a recipe image here"}
+                ? t("addRecipe.dropImage")
+                : t("addRecipe.clickOrDropRecipeImage")}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              JPG, PNG or WebP
+              {t("addRecipe.imageFormats")}
             </Typography>
           </Box>
         )}
@@ -126,7 +127,7 @@ const ImageRecipeForm = ({ onSubmit, error }) => {
           disabled={!image}
           variant="contained"
         >
-          Extract & Add
+          {t("addRecipe.extractAdd")}
         </Button>
       </Box>
     </Box>

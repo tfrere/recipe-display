@@ -1,5 +1,5 @@
 """
-Service for preformatting raw recipe text (Pass 1 of 2-pass pipeline).
+Service for preformatting raw recipe text (Pass 1 of 3-pass pipeline).
 
 Takes raw, potentially messy recipe text and outputs a clean structured
 text format that Pass 2 (DAG construction) can easily consume.
@@ -32,7 +32,7 @@ async def preformat_recipe(
     """
     Preformat raw recipe text into a clean structured text format.
 
-    This is Pass 1 of the 2-pass pipeline. It does NOT produce JSON —
+    This is Pass 1 of the 3-pass pipeline. It does NOT produce JSON —
     it outputs structured plain text that Pass 2 will convert to Recipe.
 
     Retries up to MAX_RETRIES times on transient errors (network, 5xx).
@@ -80,8 +80,16 @@ async def preformat_recipe(
 
             result = result.strip()
 
-            if result.startswith("REJECT:"):
-                reason = result.replace("REJECT:", "", 1).strip()
+            finish_reason = response.choices[0].finish_reason
+            if finish_reason == "length":
+                logger.warning(
+                    f"[Pass 1] Response truncated (finish_reason=length, "
+                    f"max_tokens={max_tokens}, output={len(result)} chars). "
+                    "Output may be incomplete."
+                )
+
+            if result.strip().upper().startswith("REJECT"):
+                reason = result.split(":", 1)[1].strip() if ":" in result else result
                 logger.info(f"Recipe rejected during preformat: {reason}")
                 raise RecipeRejectedError(reason)
 

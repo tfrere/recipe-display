@@ -1,0 +1,26 @@
+---
+description: How the project handles language and internationalization — recipe content is NOT translated
+alwaysApply: true
+---
+
+# Language & Internationalization
+
+## Recipe content stays in original language
+
+- Recipe titles, descriptions, step actions, notes, tools, ingredient names → kept in the **source language** (French for FR sources, English for EN sources)
+- The ONLY English translation is `ingredient.name_en` — used exclusively for nutrition matching and pantry lookup
+- `metadata.language` stores the ISO 639-1 code (e.g. `fr`, `en`) for glossary selection
+- There is NO runtime translation of recipe content
+
+## UI labels are localized (en/fr)
+
+- i18next with `react-i18next`, locale files in `client/src/locales/`
+- UI labels, filters, buttons, navigation → translated via `t()` keys
+- App language stored in `localStorage` under `app-language`
+
+## Rules for new code
+
+- **Never assume recipe content is in a specific language** — always use `metadata.language` when language matters
+- **Technical metadata fields** (rationale, status, source, etc.) should be in **English**
+- **User-facing recipe content** stays in original language — don't translate it
+- Any new hardcoded strings in UI components must go through i18n `t()` keys

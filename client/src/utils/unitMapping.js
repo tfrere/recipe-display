@@ -1,5 +1,5 @@
 // Mapping entre les unités stockées en français et les clés de traduction
-export const UNIT_MAPPING = {
+const UNIT_MAPPING = {
   // Unités de base
   'g': 'g',
   'gramme': 'gram',

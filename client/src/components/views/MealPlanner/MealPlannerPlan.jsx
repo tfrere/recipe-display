@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -12,6 +13,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import GrassOutlinedIcon from "@mui/icons-material/GrassOutlined";
 import LinkIcon from "@mui/icons-material/Link";
+import KitchenOutlinedIcon from "@mui/icons-material/KitchenOutlined";
 import MealPlannerRecipeCard from "./MealPlannerRecipeCard";
 import { formatTimeCompact } from "../../../utils/timeUtils";
 import {
@@ -21,8 +23,9 @@ import {
   computePlanNutrition,
 } from "./utils/mealPlannerUtils";
 import MacroBalanceBar from "./MacroBalanceBar";
+import { usePantry } from "../../../contexts/PantryContext";
 
-const DAY_LABELS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const DAY_KEYS = ["mealPlanner.dayMonday", "mealPlanner.dayTuesday", "mealPlanner.dayWednesday", "mealPlanner.dayThursday", "mealPlanner.dayFriday", "mealPlanner.daySaturday", "mealPlanner.daySunday"];
 
 const StatPill = ({ icon, value, label }) => (
   <Box
@@ -58,6 +61,8 @@ const MealPlannerPlan = ({
   onNewPlan,
   onOpenShoppingList,
 }) => {
+  const { t } = useTranslation();
+  const { hasItem, pantrySize } = usePantry();
   const currentSeason = getCurrentSeason();
   const seasonEmoji = SEASON_EMOJI[currentSeason];
 
@@ -71,6 +76,24 @@ const MealPlannerPlan = ({
   const sharedIngredientsCount = countTotalSharedIngredients(
     plan.map((item) => item.recipe)
   );
+
+  const { inPantry, totalIngredients } = React.useMemo(() => {
+    const seen = new Map();
+    for (const { recipe } of plan) {
+      if (!Array.isArray(recipe.ingredients)) continue;
+      for (const ing of recipe.ingredients) {
+        const nameEn = typeof ing === "object" ? ing.name_en : null;
+        if (!nameEn) continue;
+        if (seen.has(nameEn)) continue;
+        seen.set(nameEn, hasItem(nameEn));
+      }
+    }
+    let matched = 0;
+    for (const inStock of seen.values()) {
+      if (inStock) matched++;
+    }
+    return { inPantry: matched, totalIngredients: seen.size };
+  }, [plan, hasItem]);
 
   const nutrition = computePlanNutrition(plan.map((item) => item.recipe));
   const hasNutrition = nutrition.recipesWithData > 0;
@@ -108,10 +131,10 @@ const MealPlannerPlan = ({
           </IconButton>
           <Box>
             <Typography variant="h5" sx={{ fontWeight: 800, lineHeight: 1.2, letterSpacing: "-0.02em" }}>
-              Your meal plan
+              {t("mealPlanner.yourMealPlan")}
             </Typography>
             <Typography variant="caption" color="text.secondary">
-              {plan.length} meals · {config.servingsPerMeal} servings each
+              {t("mealPlanner.planSummary", { count: plan.length, servings: config.servingsPerMeal })}
             </Typography>
           </Box>
         </Box>
@@ -130,7 +153,7 @@ const MealPlannerPlan = ({
               "&:hover": { borderColor: "text.secondary" },
             }}
           >
-            Shuffle
+            {t("mealPlanner.shuffle")}
           </Button>
           <Button
             variant="contained"
@@ -145,7 +168,7 @@ const MealPlannerPlan = ({
               "&:hover": { bgcolor: "text.primary", opacity: 0.9 },
             }}
           >
-            Shopping list
+            {t("mealPlanner.shoppingList")}
           </Button>
         </Box>
       </Box>
@@ -155,18 +178,25 @@ const MealPlannerPlan = ({
         <StatPill
           icon={<AccessTimeOutlinedIcon sx={{ fontSize: "1rem", color: "text.secondary" }} />}
           value={formatTimeCompact(totalTime)}
-          label="total cook time"
+          label={t("mealPlanner.totalCookTime")}
         />
         <StatPill
           icon={<Typography sx={{ fontSize: "0.9rem", lineHeight: 1 }}>{seasonEmoji}</Typography>}
           value={`${seasonalCount}/${plan.length}`}
-          label="seasonal"
+          label={t("mealPlanner.seasonal")}
         />
         <StatPill
           icon={<LinkIcon sx={{ fontSize: "1rem", color: "text.secondary" }} />}
           value={sharedIngredientsCount}
-          label="shared ingredients"
+          label={t("mealPlanner.sharedIngredients")}
         />
+        {pantrySize > 0 && (
+          <StatPill
+            icon={<KitchenOutlinedIcon sx={{ fontSize: "1rem", color: "text.secondary" }} />}
+            value={`${inPantry}/${totalIngredients}`}
+            label={t("mealPlanner.inPantry", { defaultValue: "{{count}} in your pantry", count: inPantry })}
+          />
+        )}
       </Box>
 
       {/* ── Nutrition ── */}
@@ -200,7 +230,7 @@ const MealPlannerPlan = ({
                 pl: 0.5,
               }}
             >
-              {useDayLabels ? DAY_LABELS[index] : `Meal ${index + 1}`}
+              {useDayLabels ? t(DAY_KEYS[index]) : t("mealPlanner.mealLabel", { index: index + 1 })}
             </Typography>
             <Box sx={{ flex: 1 }}>
               <MealPlannerRecipeCard

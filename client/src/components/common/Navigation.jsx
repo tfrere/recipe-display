@@ -8,37 +8,38 @@ import {
   Tooltip,
   Button,
   Badge,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  IconButton,
+  ToggleButtonGroup,
+  ToggleButton,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
 import { useRecipeList } from "../../contexts/RecipeListContext";
+import useLocalStorage from "../../hooks/useLocalStorage";
 import { usePantry } from "../../contexts/PantryContext";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
-import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import NoAccountsOutlinedIcon from "@mui/icons-material/NoAccountsOutlined";
 import KitchenOutlinedIcon from "@mui/icons-material/KitchenOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
+import CloseIcon from "@mui/icons-material/Close";
 import { alpha } from "@mui/material/styles";
-import AddRecipeModal from "./AddRecipe/AddRecipeModal";
 import PantryDrawer from "./PantryDrawer";
 import useLongPress from "../../hooks/useLongPress";
 
-const NAVIGATION_TEXTS = {
-  COOKBOOK: "Cookbook",
-  ACTIONS: {
-    ADD_RECIPE: "Add recipe",
-    TOGGLE_GRAPH: "Toggle graph view",
-    LOGOUT: "Logout",
-  },
-};
-
 const Navigation = () => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const { darkMode } = useTheme();
   const { pantrySize } = usePantry();
-  const [isAddRecipeModalOpen, setIsAddRecipeModalOpen] = useState(false);
   const [isPantryOpen, setIsPantryOpen] = useState(false);
-  const { disablePrivateAccess, hasPrivateAccess, pressing, longPressProps } =
-    useLongPress();
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const { pressing, longPressProps } = useLongPress();
   const {
     setSelectedDiet,
     setSelectedDifficulty,
@@ -59,22 +60,26 @@ const Navigation = () => {
     setSearchQuery("");
   };
 
-  const handleDisablePrivateAccess = () => {
-    disablePrivateAccess();
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
   };
+
+  const routes = [
+    { path: "/", label: t("nav.recipes") },
+    { path: "/meal-planner", label: t("nav.mealPlanner") },
+  ];
 
   return (
     <>
       <AppBar
         position="relative"
         elevation={0}
+        className="no-print"
         sx={{
           backgroundColor: "background.default",
           borderBottom: "none",
           color: "text.primary",
-          "@media print": {
-            display: "none",
-          },
+          "@media print": { display: "none !important" },
         }}
       >
         <Toolbar>
@@ -107,21 +112,18 @@ const Navigation = () => {
                   display: { xs: "none", sm: "block" },
                 }}
               >
-                {NAVIGATION_TEXTS.COOKBOOK}
+                {t("nav.cookbook")}
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", ml: 3 }}>
-              {[
-                { path: "/", label: "Recipes" },
-                { path: "/meal-planner", label: "Meal Planner" },
-              ].map((route, index) => (
+              {routes.map((route, index) => (
                 <React.Fragment key={route.path}>
                   {index > 0 && (
                     <Typography
                       variant="body2"
                       component="div"
                       color="text.secondary"
-                      sx={{ mx: 1.5, display: { xs: "none", sm: "block" } }}
+                      sx={{ mx: 1.5 }}
                     >
                       ·
                     </Typography>
@@ -169,17 +171,17 @@ const Navigation = () => {
           </Box>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <Tooltip title="My Pantry">
+            <Tooltip title={t("nav.myPantry")}>
               <Box
                 sx={{
-                  p: 1,
+                  p: 0.75,
                   display: "flex",
                   alignItems: "center",
                   gap: 1,
                   cursor: "pointer",
                   borderRadius: 1,
                   border: "1px solid",
-                  borderColor: pantrySize > 0 ? "text.primary" : "divider",
+                  borderColor: "divider",
                   "&:hover": {
                     bgcolor: "action.hover",
                   },
@@ -194,14 +196,17 @@ const Navigation = () => {
                       fontSize: "0.65rem",
                       height: 18,
                       minWidth: 18,
-                      bgcolor: "text.primary",
-                      color: "background.paper",
+                      bgcolor: "background.paper",
+                      color: "text.primary",
+                      border: "1px solid",
+                      borderColor: "text.primary",
                     },
                   }}
                 >
                   <KitchenOutlinedIcon
                     sx={{
                       color: pantrySize > 0 ? "text.primary" : "text.secondary",
+                      fontSize: "1.2rem",
                     }}
                   />
                 </Badge>
@@ -213,77 +218,179 @@ const Navigation = () => {
                     display: { xs: "none", sm: "block" },
                   }}
                 >
-                  Pantry
+                  {t("nav.pantry")}
                 </Typography>
               </Box>
             </Tooltip>
-            {hasPrivateAccess && (
-              <>
-                <Tooltip title={NAVIGATION_TEXTS.ACTIONS.ADD_RECIPE}>
-                  <Box
-                    sx={{
-                      p: 1,
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1,
-                      cursor: "pointer",
-                      borderRadius: 1,
-                      border: "1px solid",
-                      borderColor: "divider",
-                      "&:hover": {
-                        bgcolor: "action.hover",
-                      },
-                    }}
-                    onClick={() => setIsAddRecipeModalOpen(true)}
-                  >
-                    <AddOutlinedIcon sx={{ color: "text.secondary" }} />
-                    <Typography
-                      variant="body2"
-                      sx={{
-                        color: "text.secondary",
-                        fontWeight: 500,
-                        display: { xs: "none", sm: "block" },
-                      }}
-                    >
-                      {NAVIGATION_TEXTS.ACTIONS.ADD_RECIPE}
-                    </Typography>
-                  </Box>
-                </Tooltip>
-                <Tooltip title={NAVIGATION_TEXTS.ACTIONS.LOGOUT}>
-                  <Box
-                    sx={{
-                      p: 1,
-                      display: "flex",
-                      alignItems: "center",
-                      cursor: "pointer",
-                      borderRadius: 1,
-                      border: "1px solid",
-                      borderColor: "divider",
-                      "&:hover": {
-                        bgcolor: "action.hover",
-                      },
-                    }}
-                    onClick={handleDisablePrivateAccess}
-                  >
-                    <NoAccountsOutlinedIcon sx={{ color: "text.secondary" }} />
-                  </Box>
-                </Tooltip>
-              </>
-            )}
+            <Tooltip title={t("nav.settings", { defaultValue: "Settings" })}>
+              <Box
+                sx={{
+                  p: 0.75,
+                  display: "flex",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  borderRadius: 1,
+                  border: "1px solid",
+                  borderColor: "divider",
+                  "&:hover": {
+                    bgcolor: "action.hover",
+                  },
+                }}
+                onClick={() => setIsSettingsOpen(true)}
+              >
+                <SettingsOutlinedIcon sx={{ color: "text.secondary", fontSize: "1.2rem" }} />
+              </Box>
+            </Tooltip>
           </Box>
         </Toolbar>
       </AppBar>
-
-      <AddRecipeModal
-        open={isAddRecipeModalOpen}
-        onClose={() => setIsAddRecipeModalOpen(false)}
-      />
 
       <PantryDrawer
         open={isPantryOpen}
         onClose={() => setIsPantryOpen(false)}
       />
+
+      <SettingsDialog
+        open={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+      />
     </>
+  );
+};
+
+// ---------------------------------------------------------------------------
+// Settings Dialog
+// ---------------------------------------------------------------------------
+
+const SettingsDialog = ({ open, onClose }) => {
+  const { t, i18n } = useTranslation();
+  const { themeMode, setThemeMode } = useTheme();
+  const [unitSystem, setUnitSystem] = useLocalStorage("unit_system", "metric");
+
+  const settingRow = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    py: 1.5,
+    borderBottom: "1px solid",
+    borderColor: "divider",
+    "&:last-child": { borderBottom: "none" },
+  };
+
+  return (
+    <Dialog
+      open={open}
+      onClose={onClose}
+      maxWidth="xs"
+      fullWidth
+      PaperProps={{ sx: { borderRadius: 3 } }}
+    >
+      <DialogTitle
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          pb: 0.5,
+        }}
+      >
+        <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "1rem" }}>
+          {t("nav.settings", { defaultValue: "Settings" })}
+        </Typography>
+        <IconButton onClick={onClose} size="small" sx={{ color: "text.secondary" }}>
+          <CloseIcon fontSize="small" />
+        </IconButton>
+      </DialogTitle>
+      <DialogContent sx={{ pt: 1 }}>
+        {/* Language */}
+        <Box sx={settingRow}>
+          <Typography variant="body2" color="text.secondary">
+            {t("nav.language", { defaultValue: "Language" })}
+          </Typography>
+          <ToggleButtonGroup
+            value={i18n.language}
+            exclusive
+            onChange={(_, val) => val && i18n.changeLanguage(val)}
+            size="small"
+            sx={{
+              "& .MuiToggleButton-root": {
+                textTransform: "none",
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                px: 1.5,
+                py: 0.3,
+              },
+            }}
+          >
+            <ToggleButton value="fr">FR</ToggleButton>
+            <ToggleButton value="en">EN</ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+
+        {/* Theme */}
+        <Box sx={settingRow}>
+          <Typography variant="body2" color="text.secondary">
+            {t("settings.theme", { defaultValue: "Theme" })}
+          </Typography>
+          <ToggleButtonGroup
+            value={themeMode}
+            exclusive
+            onChange={(_, val) => val && setThemeMode(val)}
+            size="small"
+            sx={{
+              "& .MuiToggleButton-root": {
+                textTransform: "none",
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                px: 1.5,
+                py: 0.3,
+              },
+            }}
+          >
+            <ToggleButton value="light">
+              <LightModeOutlinedIcon sx={{ fontSize: "0.9rem", mr: 0.5 }} />
+              {t("settings.light", { defaultValue: "Light" })}
+            </ToggleButton>
+            <ToggleButton value="dark">
+              <DarkModeOutlinedIcon sx={{ fontSize: "0.9rem", mr: 0.5 }} />
+              {t("settings.dark", { defaultValue: "Dark" })}
+            </ToggleButton>
+            <ToggleButton value="system">
+              <SettingsBrightnessOutlinedIcon sx={{ fontSize: "0.9rem", mr: 0.5 }} />
+              {t("settings.system", { defaultValue: "System" })}
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+
+        {/* Unit system */}
+        <Box sx={settingRow}>
+          <Typography variant="body2" color="text.secondary">
+            {t("settings.units", { defaultValue: "Units" })}
+          </Typography>
+          <ToggleButtonGroup
+            value={unitSystem}
+            exclusive
+            onChange={(_, val) => val && setUnitSystem(val)}
+            size="small"
+            sx={{
+              "& .MuiToggleButton-root": {
+                textTransform: "none",
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                px: 1.5,
+                py: 0.3,
+              },
+            }}
+          >
+            <ToggleButton value="metric">
+              {t("settings.metric", { defaultValue: "Metric" })}
+            </ToggleButton>
+            <ToggleButton value="imperial">
+              {t("settings.imperial", { defaultValue: "Imperial" })}
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+      </DialogContent>
+    </Dialog>
   );
 };
 

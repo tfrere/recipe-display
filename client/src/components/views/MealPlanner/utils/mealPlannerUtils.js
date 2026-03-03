@@ -17,6 +17,7 @@
 
 // ─── Season detection (from shared utility) ────────────────────────
 import { getCurrentSeason, SEASON_EMOJI } from "../../../../utils/seasonUtils";
+import { convertIngredient, formatConvertedQuantity } from "../../../../utils/unitConversion";
 export { getCurrentSeason, SEASON_EMOJI };
 
 // ─── Nutrition tag definitions ───────────────────────────────────────
@@ -140,6 +141,8 @@ const getNutrition = (recipe) => {
     fat: n.fat || 0,
     carbs: n.carbs || 0,
     fiber: n.fiber || 0,
+    sugar: n.sugar || 0,
+    saturatedFat: n.saturatedFat || 0,
     confidence: n.confidence || "low",
   };
 };
@@ -289,8 +292,7 @@ const filterCandidates = (allRecipes, config) => {
   ).filter(Boolean);
 
   return allRecipes.filter((recipe) => {
-    // Exclude non-meal recipe types (bases, desserts, drinks)
-    if (EXCLUDED_RECIPE_TYPES.includes(recipe.recipeType)) return false;
+    if (config.mealsOnly !== false && EXCLUDED_RECIPE_TYPES.includes(recipe.recipeType)) return false;
 
     // Only keep recipes with high nutrition confidence
     const confidence = recipe.nutritionPerServing?.confidence;
@@ -742,20 +744,28 @@ export const buildShoppingList = (planItems, servingsPerMeal) => {
   return result;
 };
 
-export const formatQuantity = (quantity, unit) => {
+export const formatQuantity = (quantity, unit, unitSystem) => {
   if (quantity == null) return "";
+
+  if (unitSystem && unit) {
+    const result = convertIngredient({ unit }, unitSystem, quantity);
+    if (result.converted) {
+      return formatConvertedQuantity(result.quantity, result.unit);
+    }
+  }
+
   const rounded = Math.round(quantity * 10) / 10;
   const formatted = rounded % 1 === 0 ? rounded.toString() : rounded.toFixed(1);
   if (!unit) return formatted;
   return `${formatted} ${unit}`;
 };
 
-export const shoppingListToText = (groups) => {
+export const shoppingListToText = (groups, unitSystem) => {
   const lines = [];
   for (const group of groups) {
     lines.push(`\n${group.emoji} ${group.category.toUpperCase()}`);
     for (const item of group.items) {
-      const qty = formatQuantity(item.quantity, item.unit);
+      const qty = formatQuantity(item.quantity, item.unit, unitSystem);
       lines.push(qty ? `- ${item.name}: ${qty}` : `- ${item.name}`);
     }
   }

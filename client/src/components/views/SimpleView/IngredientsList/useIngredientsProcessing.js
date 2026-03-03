@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { useRecipe } from "../../../../contexts/RecipeContext";
 import { useConstants } from "../../../../contexts/ConstantsContext";
 
@@ -6,6 +7,7 @@ import { useConstants } from "../../../../contexts/ConstantsContext";
  * Custom hook for processing ingredients data
  */
 export const useIngredientsProcessing = (recipe, sortByCategory) => {
+  const { t } = useTranslation();
   const { constants } = useConstants();
   const {
     getAdjustedAmount,
@@ -27,7 +29,7 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
   // Extract constants needed for ingredient processing
   const CATEGORY_ORDER = constants.ingredients.categories.map((cat) => cat.id);
   const CATEGORY_LABELS = Object.fromEntries(
-    constants.ingredients.categories.map((cat) => [cat.id, cat.label])
+    constants.ingredients.categories.map((cat) => [cat.id, t(`categories.${cat.id}`, { defaultValue: cat.label })])
   );
 
   // 1. Get sub-recipe order as defined in the recipe
@@ -59,12 +61,14 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
           name: ingredient.name,
           name_en: ingredient.name_en || "",
           amount: getAdjustedAmount(data.amount, unit, ingredient.category),
+          quantity: ingredient.quantity,
           unit: unit,
           state: data.state,
           subRecipeId: subRecipe.id,
           subRecipeTitle: subRecipe.title,
           category: ingredient.category || "other",
           initialState: data.initialState,
+          estimatedWeightGrams: ingredient.estimatedWeightGrams,
         });
       });
       return acc;
@@ -75,7 +79,7 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
   const formattedIngredients = useMemo(() => {
     return allIngredients.map((ingredient) => {
       // Format amount with appropriate unit
-      const displayAmount = formatAmount(ingredient.amount, ingredient.unit);
+      const displayAmount = formatAmount(ingredient.amount, ingredient.unit, ingredient);
 
       return {
         ...ingredient,
@@ -104,11 +108,11 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
             const existing = acc[key];
             if (existing.unit === ingredient.unit && existing.amount != null && ingredient.amount != null) {
               existing.amount += ingredient.amount;
-              existing.displayAmount = formatAmount(existing.amount, existing.unit);
+              existing.displayAmount = formatAmount(existing.amount, existing.unit, existing);
             } else if (ingredient.amount != null && existing.amount == null) {
               existing.amount = ingredient.amount;
               existing.unit = ingredient.unit;
-              existing.displayAmount = formatAmount(existing.amount, existing.unit);
+              existing.displayAmount = formatAmount(existing.amount, existing.unit, existing);
             }
           }
           return acc;
@@ -324,7 +328,7 @@ export const useIngredientsProcessing = (recipe, sortByCategory) => {
 
   // Statistics for display
   const hasCompletedSteps = Object.keys(completedSteps || {}).length > 0;
-  const remainingIngredients = allIngredients.filter(
+  const remainingIngredients = formattedIngredients.filter(
     (ing) => !ing.isUnused
   ).length;
 

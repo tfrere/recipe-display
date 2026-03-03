@@ -39,6 +39,12 @@ _NUTRIENT_MAP = {
     1079: "fiber_g",        # Fiber, total dietary (g)
     1063: "sugar_g",        # Sugars, total (g)
     1258: "saturated_fat_g", # Fatty acids, total saturated (g)
+    1087: "calcium_mg",     # Calcium, Ca (mg)
+    1089: "iron_mg",        # Iron, Fe (mg)
+    1090: "magnesium_mg",   # Magnesium, Mg (mg)
+    1092: "potassium_mg",   # Potassium, K (mg)
+    1093: "sodium_mg",      # Sodium, Na (mg)
+    1095: "zinc_mg",        # Zinc, Zn (mg)
 }
 
 # Unit conversion table (to grams) for common recipe units
@@ -182,7 +188,220 @@ PIECE_WEIGHTS = {
     "tahini": 15,
     "butter": 15,
     "salted butter": 15,
+    "bouillon cube": 10,
+    "vegetable bouillon cube": 10,
+    "chicken bouillon cube": 10,
+    "beef bouillon cube": 10,
+    "stock cube": 10,
+    "yeast": 7,           # 1 sachet instant yeast
+    "dry yeast": 7,
+    "active dry yeast": 7,
+    "instant yeast": 7,
+    "fresh yeast": 21,    # 1 cube
+    "baker's yeast": 7,
+    "rice paper": 8,      # per sheet
+    "wonton wrapper": 8,
+    "spring roll wrapper": 8,
+    "nori": 3,            # per sheet
+    "nori sheet": 3,
+    "pearl onion": 12,
+    "pearl onions": 12,
+    "cipollini onion": 30,
+    "cipollini": 30,
+    "cocktail onion": 8,
+    "butternut squash": 900,
+    "cinnamon stick": 3,
+    "cinnamon sticks": 3,
 }
+
+
+# ---------------------------------------------------------------------------
+# Ingredient-specific unit-to-gram conversions for common ingredients
+# that are frequently missing from the auto-generated portion_weights.json.
+# Source: USDA FoodData Central (fdc.nal.usda.gov)
+# ---------------------------------------------------------------------------
+
+COMMON_PORTION_WEIGHTS: Dict[str, Dict[str, float]] = {
+    "olive oil":              {"tbsp": 13.5, "tsp": 4.5, "cup": 216.0},
+    "extra-virgin olive oil": {"tbsp": 13.5, "tsp": 4.5, "cup": 216.0},
+    "extra virgin olive oil": {"tbsp": 13.5, "tsp": 4.5, "cup": 216.0},
+    "vegetable oil":          {"tbsp": 13.5, "tsp": 4.5, "cup": 218.0},
+    "canola oil":             {"tbsp": 14.0, "tsp": 4.7, "cup": 224.0},
+    "coconut oil":            {"tbsp": 13.6, "tsp": 4.5, "cup": 218.0},
+    "sesame oil":             {"tbsp": 13.6, "tsp": 4.5, "cup": 218.0},
+    "avocado oil":            {"tbsp": 14.0, "tsp": 4.7},
+    "lemon juice":            {"tbsp": 15.2, "tsp": 5.1, "cup": 244.0},
+    "fresh lemon juice":      {"tbsp": 15.2, "tsp": 5.1, "cup": 244.0},
+    "lime juice":             {"tbsp": 15.4, "tsp": 5.1, "cup": 246.0},
+    "fresh lime juice":       {"tbsp": 15.4, "tsp": 5.1, "cup": 246.0},
+    "orange juice":           {"tbsp": 15.6, "tsp": 5.2, "cup": 248.0},
+    "honey":                  {"tbsp": 21.0, "tsp": 7.0, "cup": 339.0},
+    "sugar":                  {"tbsp": 12.5, "tsp": 4.2, "cup": 200.0},
+    "granulated sugar":       {"tbsp": 12.5, "tsp": 4.2, "cup": 200.0},
+    "brown sugar":            {"tbsp": 13.8, "tsp": 4.6, "cup": 220.0},
+    "powdered sugar":         {"tbsp": 8.0,  "tsp": 2.7, "cup": 120.0},
+    "maple syrup":            {"tbsp": 20.0, "tsp": 6.7, "cup": 322.0},
+    "soy sauce":              {"tbsp": 16.0, "tsp": 5.3},
+    "fish sauce":             {"tbsp": 18.0, "tsp": 6.0},
+    "tomato paste":           {"tbsp": 16.3, "tsp": 5.4},
+    "dijon mustard":          {"tbsp": 15.0, "tsp": 5.0},
+    "whole grain mustard":    {"tbsp": 15.0, "tsp": 5.0},
+    "lemon zest":             {"tbsp": 6.0,  "tsp": 2.0},
+    "orange zest":            {"tbsp": 6.0,  "tsp": 2.0},
+    "lime zest":              {"tbsp": 6.0,  "tsp": 2.0},
+    "chilli flakes":          {"tbsp": 5.4,  "tsp": 1.8},
+    "red pepper flakes":      {"tbsp": 5.4,  "tsp": 1.8},
+    "balsamic vinegar":       {"tbsp": 16.0, "tsp": 5.3},
+    "rice vinegar":           {"tbsp": 15.0, "tsp": 5.0},
+    "apple cider vinegar":    {"tbsp": 15.0, "tsp": 5.0},
+    "worcestershire sauce":   {"tbsp": 17.0, "tsp": 5.7},
+    "hot sauce":              {"tbsp": 15.0, "tsp": 5.0},
+    "sriracha":               {"tbsp": 17.0, "tsp": 5.7},
+    "miso paste":             {"tbsp": 17.0, "tsp": 5.7},
+    "tahini":                 {"tbsp": 15.0, "tsp": 5.0},
+    "peanut butter":          {"tbsp": 16.0, "tsp": 5.3},
+    "almond butter":          {"tbsp": 16.0, "tsp": 5.3},
+    "vanilla extract":        {"tbsp": 13.0, "tsp": 4.2},
+    "cornstarch":             {"tbsp": 8.0,  "tsp": 2.7, "cup": 128.0},
+    "cocoa powder":           {"tbsp": 5.4,  "tsp": 1.8, "cup": 86.0},
+    "baking powder":          {"tbsp": 13.8, "tsp": 4.6},
+    "baking soda":            {"tbsp": 13.8, "tsp": 4.6},
+}
+
+
+# ---------------------------------------------------------------------------
+# Liquid density table (g/ml) — Source: FAO/INFOODS Density Database v2.0
+# Used as fallback when USDA portion data is unavailable for volume units.
+# Keys are matched against name_en (lowercased, substring).
+# ---------------------------------------------------------------------------
+
+LIQUID_DENSITIES: Dict[str, float] = {
+    # Oils (FAO/INFOODS: 0.88–0.93 depending on type)
+    "olive oil": 0.92,
+    "vegetable oil": 0.92,
+    "canola oil": 0.92,
+    "rapeseed oil": 0.92,
+    "sunflower oil": 0.92,
+    "peanut oil": 0.92,
+    "corn oil": 0.92,
+    "soybean oil": 0.93,
+    "coconut oil": 0.92,
+    "sesame oil": 0.92,
+    "avocado oil": 0.92,
+    "grapeseed oil": 0.92,
+    "walnut oil": 0.92,
+    "hazelnut oil": 0.92,
+    "truffle oil": 0.92,
+    "neutral oil": 0.92,
+    "frying oil": 0.92,
+    "oil": 0.92,
+    # Fats (FAO/INFOODS)
+    "lard": 0.92,
+    "duck fat": 0.92,
+    "goose fat": 0.92,
+    "bacon fat": 0.92,
+    "rendered fat": 0.92,
+    "ghee": 0.92,
+    "clarified butter": 0.92,
+    # Dairy liquids (FAO/INFOODS: milk ~1.03, cream varies by fat%)
+    "whole milk": 1.03,
+    "milk": 1.03,
+    "skim milk": 1.04,
+    "buttermilk": 1.02,
+    "evaporated milk": 1.07,
+    "coconut milk": 1.01,
+    "oat milk": 1.03,
+    "almond milk": 1.02,
+    "soy milk": 1.03,
+    "heavy cream": 0.99,
+    "whipping cream": 0.96,
+    "double cream": 0.94,
+    "light cream": 1.01,
+    "single cream": 1.00,
+    "cream": 1.00,
+    "creme fraiche": 1.00,
+    "sour cream": 1.00,
+    "yogurt": 1.04,
+    "yoghurt": 1.04,
+    # Honey & syrups (FAO/INFOODS: honey ~1.42, maple syrup ~1.32)
+    "honey": 1.42,
+    "maple syrup": 1.32,
+    "corn syrup": 1.38,
+    "agave syrup": 1.36,
+    "agave nectar": 1.36,
+    "golden syrup": 1.38,
+    "treacle": 1.38,
+    "molasses": 1.42,
+    "grenadine": 1.18,
+    "simple syrup": 1.26,
+    "syrup": 1.32,
+    # Alcoholic beverages (FAO/INFOODS)
+    "red wine": 0.99,
+    "white wine": 0.99,
+    "wine": 0.99,
+    "beer": 1.01,
+    "cider": 1.01,
+    "cognac": 0.95,
+    "brandy": 0.95,
+    "rum": 0.95,
+    "vodka": 0.95,
+    "whiskey": 0.94,
+    "whisky": 0.94,
+    "gin": 0.95,
+    "tequila": 0.95,
+    "marsala": 1.01,
+    "port": 1.03,
+    "sherry": 1.00,
+    "vermouth": 1.03,
+    "amaretto": 1.08,
+    "kahlua": 1.13,
+    "cointreau": 1.04,
+    "grand marnier": 1.04,
+    "limoncello": 1.05,
+    "mirin": 1.08,
+    "sake": 1.00,
+    "rice wine": 1.00,
+    # Vinegars (~1.01–1.05)
+    "vinegar": 1.01,
+    "balsamic vinegar": 1.05,
+    "apple cider vinegar": 1.01,
+    "red wine vinegar": 1.01,
+    "white wine vinegar": 1.01,
+    "rice vinegar": 1.01,
+    "sherry vinegar": 1.01,
+    # Sauces & condiments (FAO/INFOODS misc)
+    "soy sauce": 1.12,
+    "fish sauce": 1.10,
+    "oyster sauce": 1.20,
+    "worcestershire sauce": 1.13,
+    "hot sauce": 1.05,
+    "sriracha": 1.10,
+    "tabasco": 1.05,
+    "tomato paste": 1.10,
+    "tomato sauce": 1.03,
+    "ketchup": 1.15,
+    "mayonnaise": 0.91,
+    "mustard": 1.05,
+    "tahini": 1.08,
+    # Juices (FAO/INFOODS: ~1.04–1.06)
+    "lemon juice": 1.04,
+    "lime juice": 1.04,
+    "orange juice": 1.04,
+    "apple juice": 1.04,
+    "grape juice": 1.05,
+    "pomegranate juice": 1.05,
+    "cranberry juice": 1.05,
+    "juice": 1.04,
+    # Other liquids
+    "broth": 1.01,
+    "stock": 1.01,
+    "bouillon": 1.01,
+    "coconut cream": 1.02,
+    "condensed milk": 1.28,
+}
+
+# Volume units that need density correction
+_VOLUME_UNITS = {"ml", "l", "cl", "dl", "cup", "tbsp", "tsp", "cs", "cc"}
 
 
 class NutritionLookup:

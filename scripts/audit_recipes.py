@@ -243,7 +243,7 @@ def audit_recipe(filepath: Path) -> list[dict]:
     if title and meta.get("source"):
         source = meta.get("source", "")
         fr_sources = {"Free The Pickle", "Papilles et Pupilles", "Marmiton"}
-        en_sources = {"Minimalist Baker", "Cookie and Kate", "Love and Lemons", "101 Cookbooks", "Smitten Kitchen"}
+        en_sources = {"Minimalist Baker", "Cookie and Kate", "101 Cookbooks", "Smitten Kitchen"}
         is_french_source = any(s.lower() in source.lower() for s in fr_sources)
         is_english_source = any(s.lower() in source.lower() for s in en_sources)
 

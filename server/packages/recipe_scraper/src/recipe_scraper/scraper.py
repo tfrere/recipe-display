@@ -7,12 +7,11 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Dict, Any, Optional, List, Callable, Tuple
+from typing import Dict, Any, Optional, List, Callable
 import uuid
 from dotenv import load_dotenv
 from datetime import datetime
 import base64
-import difflib  # Added for text similarity comparison
 
 # Load environment variables
 load_dotenv()
@@ -30,6 +29,8 @@ from .observability import observe, langfuse_context
 
 logger = logging.getLogger(__name__)
 
+MAX_INPUT_CHARS = 50_000
+
 class RecipeScraper:
     """
     A class that combines web scraping and recipe structuring to extract and save recipes.
@@ -45,74 +46,71 @@ class RecipeScraper:
         self._image_output_folder = Path("./data/recipes/images")  # Default image output folder
         self._debug_output_folder = Path("./data/recipes/debug")  # Debug traces folder
     
+    def _load_index(self) -> Dict[str, Any]:
+        """Load the persistent _index.json (maintained by RecipeService).
+
+        Returns ``{"url_index": {url: slug, ...}, "recipes": [...]}``
+        or empty containers when the file is absent / corrupt.
+        """
+        index_path = self._recipe_output_folder / "_index.json"
+        if not index_path.exists():
+            return {"url_index": {}, "recipes": []}
+        try:
+            with open(index_path, "r") as f:
+                data = json.load(f)
+            return {
+                "url_index": data.get("url_index", {}),
+                "recipes": data.get("recipes", []),
+            }
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning(f"Could not load _index.json, falling back to empty: {exc}")
+            return {"url_index": {}, "recipes": []}
+
     def _check_slug_exists(self, slug: str) -> Optional[str]:
-        """
-        Check if a recipe with the given slug already exists.
-        
-        Args:
-            slug: The slug to check
-            
-        Returns:
-            The path to the existing recipe file if found, None otherwise
-        """
+        """Check if a recipe file with *slug* already exists on disk."""
         if not self._recipe_output_folder.exists():
             return None
-            
-        # Check for exact slug match
         recipe_file = self._recipe_output_folder / f"{slug}.recipe.json"
         if recipe_file.exists():
             logger.info(f"Recipe with slug '{slug}' already exists: {recipe_file}")
             return str(recipe_file)
-            
         return None
-        
+
     def _recipe_exists(self, url: str) -> Optional[str]:
-        """
-        Check if a recipe from the given URL already exists in the output folder.
-        
-        Args:
-            url: The URL of the recipe to check
-            
-        Returns:
-            The path to the existing recipe file if found, None otherwise
-        """
-        if not self._recipe_output_folder.exists():
-            return None
-            
-        # Look for recipe files in the output folder
-        recipe_files = list(self._recipe_output_folder.glob("*.recipe.json"))
-        
-        # If there are no recipe files, return None
-        if not recipe_files:
-            return None
-            
-        # Check each recipe file for the sourceUrl first (priority check)
-        for recipe_file in recipe_files:
-            try:
-                with open(recipe_file, "r") as f:
-                    recipe_data = json.load(f)
-                    
-                # Check if the sourceUrl matches (exact match)
-                source_url = recipe_data.get("metadata", {}).get("sourceUrl")
-                if source_url and source_url == url:
-                    logger.info(f"Recipe from URL {url} already exists: {recipe_file}")
-                    return str(recipe_file)
-            except (json.JSONDecodeError, FileNotFoundError):
-                continue
-        
-        # Now check slug only as a fallback if we didn't find an exact URL match
-        # Extract potential title from URL to check slug
-        url_parts = url.rstrip('/').split('/')
+        """Check for an existing recipe — O(1) URL lookup via _index.json,
+        then slug-based fallback from the URL path."""
+        index = self._load_index()
+
+        slug = index["url_index"].get(url)
+        if slug:
+            path = self._recipe_output_folder / f"{slug}.recipe.json"
+            if path.exists():
+                logger.info(f"Recipe from URL {url} already exists (index hit): {path}")
+                return str(path)
+
+        url_parts = url.rstrip("/").split("/")
         if url_parts:
-            potential_title = url_parts[-1].replace('-', ' ').replace('_', ' ')
+            potential_title = url_parts[-1].replace("-", " ").replace("_", " ")
             potential_slug = self._generate_slug(potential_title)
-            
-            # Check if a recipe with this slug already exists
             slug_match = self._check_slug_exists(potential_slug)
             if slug_match:
                 logger.info(f"Recipe with similar slug from URL {url} might exist: {slug_match}")
                 return slug_match
-                
+
+        return None
+
+    def _find_duplicate_by_title(self, title: str) -> Optional[str]:
+        """Check if a recipe with a matching title exists in the index."""
+        index = self._load_index()
+        title_lower = title.strip().lower()
+        for entry in index["recipes"]:
+            if entry.get("title", "").strip().lower() == title_lower:
+                slug = entry.get("slug")
+                if slug:
+                    path = self._recipe_output_folder / f"{slug}.recipe.json"
+                    if path.exists():
+                        logger.info(f"Recipe with title '{title}' already exists (index): {path}")
+                        return str(path)
         return None
         
     @observe(name="scrape_from_url")
@@ -200,140 +198,48 @@ class RecipeScraper:
         return recipe_data
     
     async def scrape_from_text(self, text: str, file_name: Optional[str] = None, progress_callback: Optional[Callable[[str], None]] = None) -> Dict[str, Any]:
-        """
-        Structure a recipe from plain text.
-        
-        Args:
-            text: The recipe text to structure
-            file_name: Optional name of the text file for slug checking
-            progress_callback: Optional callback for streaming progress updates
-            
+        """Structure a recipe from plain text.
+
         Returns:
-            A dictionary containing the structured recipe data
+            A dictionary containing the structured recipe data, or ``{}``
+            when the input is rejected / duplicate.
         """
         if progress_callback:
             await progress_callback("Starting recipe processing")
-            
+
         logger.info("Processing recipe from text input")
-        
-        # Check for similar recipes using text similarity
-        similar_recipe_path, similarity = self._find_similar_recipe(text.strip())
-        if similar_recipe_path and similarity >= 0.85:  # 85% similarity threshold
-            logger.warning(f"Recipe with similar content (similarity: {similarity:.2%}) already exists: {similar_recipe_path}")
-            # Return None to match behavior of scrape_from_url when a duplicate is found
-            return None
-        
-        # If file_name is provided, check if a recipe with a similar slug already exists
+
+        # ── Guard: reject oversized input ────────────────────────────
+        if len(text) > MAX_INPUT_CHARS:
+            logger.warning(
+                f"Input text too long ({len(text)} chars > {MAX_INPUT_CHARS}). "
+                "Rejecting to avoid excessive LLM cost / truncation."
+            )
+            return {}
+
+        # ── Dedup: slug from file name ───────────────────────────────
         if file_name:
-            # Extract the file name without extension
             base_name = Path(file_name).stem
             potential_slug = self._generate_slug(base_name)
-            
-            # Check if a recipe with this slug already exists
             slug_match = self._check_slug_exists(potential_slug)
             if slug_match:
                 logger.warning(f"Recipe with similar title from file {file_name} already exists: {slug_match}")
-                return None
-        
+                return {}
+
         # Create a WebContent object with the provided text
         web_content = WebContent(
             title="Recipe from Text",
             main_content=text,
-            image_urls=[]  # No images from text mode
+            image_urls=[]
         )
-        
-        # Créer un dictionnaire de métadonnées avec le texte original
+
         metadata = {
-            "originalContent": text  # Store the original text for similarity comparison
+            "originalContent": text,
         }
-        
-        # Structure the recipe
+
         recipe_data = await self._structure_recipe(web_content, progress_callback, metadata=metadata)
-        
+
         return recipe_data
-    
-    def _find_similar_recipe(self, text: str) -> Tuple[Optional[str], float]:
-        """
-        Find the most similar recipe based on text content.
-        
-        Args:
-            text: The recipe text to compare
-            
-        Returns:
-            A tuple containing the path to the most similar recipe and its similarity score (0-1)
-        """
-        if not self._recipe_output_folder.exists():
-            logger.warning(f"Recipe output folder does not exist: {self._recipe_output_folder}")
-            return None, 0.0
-        
-        logger.info(f"Checking for similar recipes in {self._recipe_output_folder}")
-        
-        # Look for recipe files in the output folder
-        recipe_files = list(self._recipe_output_folder.glob("*.recipe.json"))
-        
-        # If there are no recipe files, return None
-        if not recipe_files:
-            logger.warning(f"No recipe files found in {self._recipe_output_folder}")
-            return None, 0.0
-        
-        logger.info(f"Found {len(recipe_files)} recipe files to check for similarity")
-        
-        # Track the most similar recipe and its score
-        most_similar_recipe = None
-        highest_similarity = 0.0
-        
-        # Check each recipe file for originalContent to compare
-        for recipe_file in recipe_files:
-            try:
-                with open(recipe_file, "r") as f:
-                    recipe_data = json.load(f)
-                    
-                # Get the original content for comparison
-                original_content = recipe_data.get("metadata", {}).get("originalContent")
-                if not original_content:
-                    logger.debug(f"Recipe {recipe_file.name} has no original content to compare")
-                    continue
-                    
-                # Compare the text with the original content
-                similarity = self._calculate_similarity(text, original_content)
-                logger.debug(f"Recipe {recipe_file.name} similarity: {similarity:.2%}")
-                
-                # Update if this is the most similar recipe so far
-                if similarity > highest_similarity:
-                    highest_similarity = similarity
-                    most_similar_recipe = str(recipe_file)
-                    
-            except (json.JSONDecodeError, FileNotFoundError) as e:
-                logger.error(f"Error reading {recipe_file}: {str(e)}")
-                continue
-        
-        if highest_similarity > 0:
-            logger.info(f"Most similar recipe found: {most_similar_recipe} with similarity {highest_similarity:.2%}")
-        else:
-            logger.info("No similar recipes found")
-            
-        return most_similar_recipe, highest_similarity
-    
-    def _calculate_similarity(self, text1: str, text2: str) -> float:
-        """
-        Calculate the similarity between two texts.
-        
-        Args:
-            text1: First text to compare
-            text2: Second text to compare
-            
-        Returns:
-            A similarity score between 0 and 1
-        """
-        # Normalize texts by removing extra spaces and converting to lowercase
-        text1 = " ".join(text1.lower().split())
-        text2 = " ".join(text2.lower().split())
-        
-        # Use difflib's SequenceMatcher to calculate similarity
-        matcher = difflib.SequenceMatcher(None, text1, text2)
-        similarity = matcher.ratio()
-        
-        return similarity
     
     @observe(name="structure_recipe")
     async def _structure_recipe(self, web_content: WebContent, progress_callback: Optional[Callable[[str], None]] = None, metadata: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
@@ -372,6 +278,8 @@ class RecipeScraper:
             
             # Convert to dictionary
             recipe_data = self.recipe_structurer.to_dict(recipe_obj)
+            recipe_data["metadata"]["structurerModel"] = self.recipe_structurer.model
+            recipe_data["metadata"]["pipelineVersion"] = self.recipe_structurer.pipeline_version
             
             logger.info("Recipe successfully structured")
             
@@ -404,65 +312,69 @@ class RecipeScraper:
             if hasattr(web_content, "structured_data") and web_content.structured_data:
                 recipe_data["metadata"]["_schema_data"] = web_content.structured_data
             
-            # Get the source image URL from the metadata if available
-            source_image_url = recipe_data.get("metadata", {}).get("sourceImageUrl")
-            
-            if source_image_url:
-                if progress_callback:
-                    await progress_callback("Downloading recipe image")
-                    
-                logger.info(f"Using source image URL from metadata: {source_image_url}")
-                # Download the image
-                image_filename = await self._download_image(
-                    source_image_url,
-                    slug,
-                    auth_values=web_content.auth_values if hasattr(web_content, 'auth_values') else None
-                )
-                if image_filename:
-                    recipe_data["metadata"]["image"] = image_filename
-                    logger.debug(f"Image successfully downloaded and saved as: {image_filename}")
-            else:
-                logger.warning("No source image URL found in metadata")
-            
-            # Enrich the recipe with diet, season, and nutrition information
+            # ── Parallel post-processing: image + enrichment + review ──
             if progress_callback:
-                await progress_callback("Enriching recipe data (diet, season, nutrition)")
-                
-            recipe_data = await self.recipe_enricher.enrich_recipe_async(recipe_data)
-            logger.info("Recipe enriched with diet, season, and nutrition information")
+                await progress_callback("Downloading image, enriching & reviewing (parallel)...")
 
-            # Remove internal schema data (not needed in saved JSON)
-            recipe_data.get("metadata", {}).pop("_schema_data", None)
-            
-            # ── Pass 3: Adversarial review ────────────────────────────
-            if self.recipe_reviewer.is_available and web_content.main_content:
-                if progress_callback:
-                    await progress_callback("Reviewing recipe quality (Pass 3)...")
-                
+            source_image_url = recipe_data.get("metadata", {}).get("sourceImageUrl")
+            source_url = recipe_data.get("metadata", {}).get("sourceUrl")
+            source_text = web_content.main_content if web_content else None
+
+            async def _image_task():
+                if not source_image_url:
+                    logger.warning("No source image URL found in metadata")
+                    return None
+                logger.info(f"Downloading image: {source_image_url}")
+                return await self._download_image(
+                    source_image_url, slug,
+                    auth_values=web_content.auth_values if hasattr(web_content, 'auth_values') else None,
+                )
+
+            async def _enrich_task():
+                return await self.recipe_enricher.enrich_recipe_async(recipe_data)
+
+            async def _review_task():
+                from .services.recipe_reviewer import run_deterministic_assertions
                 try:
-                    source_url = recipe_data.get("metadata", {}).get("sourceUrl")
-                    review = await self.recipe_reviewer.review(
-                        recipe_data=recipe_data,
-                        source_text=web_content.main_content,
-                        source_url=source_url,
-                    )
-                    if review:
-                        # Store summary in recipe metadata (lightweight)
-                        recipe_data["metadata"]["reviewScore"] = review.overall_score
-                        # Save full review as debug trace
-                        self._save_review_trace(slug, review.model_dump(), source_url)
-                        logger.info(
-                            f"[Pass 3] Score: {review.overall_score}/10 — "
-                            f"{len(review.ingredient_corrections)} ing corrections, "
-                            f"{len(review.step_corrections)} step corrections, "
-                            f"{len(review.culinary_issues)} culinary issues"
+                    if self.recipe_reviewer.is_available and source_text:
+                        return await self.recipe_reviewer.review(
+                            recipe_data=recipe_data,
+                            source_text=source_text,
+                            source_url=source_url,
                         )
-                        # Auto-apply corrections from the review
-                        recipe_data = self.recipe_reviewer.apply_corrections(
-                            recipe_data, review
-                        )
+                    else:
+                        return None, run_deterministic_assertions(recipe_data)
                 except Exception as e:
                     logger.warning(f"[Pass 3] Review failed (non-blocking): {e}")
+                    return None, run_deterministic_assertions(recipe_data)
+
+            image_filename, enriched_data, (review, assertions) = await asyncio.gather(
+                _image_task(), _enrich_task(), _review_task(),
+            )
+
+            recipe_data = enriched_data
+            recipe_data.get("metadata", {}).pop("_schema_data", None)
+
+            if image_filename:
+                recipe_data["metadata"]["image"] = image_filename
+
+            if assertions and assertions.failures:
+                recipe_data["metadata"]["assertionErrors"] = assertions.error_count
+                recipe_data["metadata"]["assertionWarnings"] = assertions.warning_count
+
+            if review:
+                recipe_data["metadata"]["reviewScore"] = review.overall_score
+                self._save_review_trace(slug, review.model_dump(), source_url)
+                logger.info(
+                    f"[Pass 3] Score: {review.overall_score}/10 — "
+                    f"{len(review.ingredient_corrections)} ing corrections, "
+                    f"{len(review.step_corrections)} step corrections, "
+                    f"{len(review.culinary_issues)} culinary issues "
+                    f"(consensus-filtered)"
+                )
+                recipe_data = self.recipe_reviewer.apply_corrections(
+                    recipe_data, review
+                )
 
             # ── Attach Langfuse metadata & scores ─────────────────────
             title = recipe_data.get("metadata", {}).get("title", "?")
@@ -474,6 +386,8 @@ class RecipeScraper:
                     "ingredients_count": len(recipe_data.get("ingredients", [])),
                     "steps_count": len(recipe_data.get("steps", [])),
                     "total_time_min": recipe_data.get("metadata", {}).get("totalTimeMinutes", 0),
+                    "assertion_errors": recipe_data.get("metadata", {}).get("assertionErrors", 0),
+                    "assertion_warnings": recipe_data.get("metadata", {}).get("assertionWarnings", 0),
                 },
             )
             review_score = recipe_data.get("metadata", {}).get("reviewScore")

@@ -1,0 +1,55 @@
+NOTICE — Third-Party Data Sources and Licenses
+================================================
+
+This project includes or derives data from the following sources.
+The application code is licensed under MIT (see LICENSE).
+The data files carry their own licenses as listed below.
+
+
+1. OpenNutrition
+   Source:   https://www.opennutrition.app/
+   License:  ODbL 1.0 (Open Database License)
+   File:     server/packages/recipe_scraper/src/recipe_scraper/data/opennutrition_index.json
+   Content:  ~5,300 food items with macros per 100 g, aggregated from USDA, CNF, FRIDA, AUSNUT.
+   Note:     ODbL requires attribution ("OpenNutrition", link to source) and Share-Alike
+             for derivative databases. OpenNutrition incorporates data from Open Food Facts
+             (see item 7 below).
+
+2. CIQUAL 2025 (ANSES — French Food Composition Database)
+   Source:   https://ciqual.anses.fr/
+   Data DOI: https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/RDMHWY
+   License:  Licence Ouverte 2.0 (Etalab)
+   File:     server/packages/recipe_scraper/src/recipe_scraper/data/ciqual_index.json
+   Content:  ~3,500 food items with macros and minerals per 100 g.
+
+3. MEXT Japan — Standard Tables of Food Composition in Japan, 2015 (7th Revised Edition)
+   Source:   https://www.mext.go.jp/en/policy/science_technology/policy/title01/detail01/1374030.htm
+   License:  Government of Japan Standard Terms of Use (open data)
+   File:     server/packages/recipe_scraper/src/recipe_scraper/data/mext_index.json
+   Content:  ~2,200 food items with macros and minerals per 100 g.
+   Note:     The 7th edition (2015) has been superseded by the 8th edition (2021).
+             This project uses 7th edition data.
+
+4. USDA FoodData Central
+   Source:   https://fdc.nal.usda.gov/
+   License:  CC0 1.0 Universal (Public Domain)
+   Usage:    Portion weight references (SR Legacy + Foundation Foods) stored in
+             portion_weights.json. Mineral data via FDC API stored in
+             resolved_ingredients.json (~596 entries).
+
+5. ADEME Impact CO2 — Seasonal Produce
+   Source:   https://impactco2.fr/api/v1/fruitsetlegumes
+   License:  Licence Ouverte 2.0 (Etalab)
+   File:     server/packages/recipe_scraper/src/recipe_scraper/data/seasonal_produce.json
+   Content:  99 fruits and vegetables with monthly availability in France.
+
+6. BGE-small-en-v1.5 (Embedding Model)
+   Source:   https://huggingface.co/BAAI/bge-small-en-v1.5
+   License:  MIT
+   Usage:    Ingredient-to-nutrition semantic matching (sentence-transformers).
+
+7. Open Food Facts
+   Source:   https://world.openfoodfacts.org/
+   License:  ODbL 1.0 (Open Database License)
+   Usage:    Incorporated into the OpenNutrition dataset (item 1).
+             Attribution: © Open Food Facts contributors.

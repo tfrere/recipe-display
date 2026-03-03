@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -85,7 +86,14 @@ const TimeChip = ({ elapsedTime, status, theme }) => (
   />
 );
 
+const stepIdToKey = (stepId) => {
+  if (!stepId) return null;
+  const camel = stepId.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+  return `progress.${camel}`;
+};
+
 const RecipeGenerationStep = ({ step, startTime, isLastStep = false }) => {
+  const { t } = useTranslation();
   const [elapsedTime, setElapsedTime] = useState(0);
   const theme = useTheme();
   const { autoScroll, elementRef, handleScroll } = useAutoScroll(step.details);
@@ -160,7 +168,7 @@ const RecipeGenerationStep = ({ step, startTime, isLastStep = false }) => {
               fontWeight: isActive ? 500 : 400,
             }}
           >
-            {step.message}
+            {step.step ? t(stepIdToKey(step.step), { defaultValue: step.message }) : step.message}
           </Typography>
           {(isActive || isCompleted) && startTime && (
             <TimeChip

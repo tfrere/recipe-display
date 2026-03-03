@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   TextField,
@@ -39,65 +40,51 @@ import {
 // ─── Constants ───────────────────────────────────────────────
 
 const UNITS = [
-  { value: "g", label: "g" },
-  { value: "kg", label: "kg" },
-  { value: "ml", label: "ml" },
-  { value: "cl", label: "cl" },
-  { value: "L", label: "L" },
-  { value: "tbsp", label: "tbsp" },
-  { value: "tsp", label: "tsp" },
-  { value: "piece", label: "piece(s)" },
-  { value: "pinch", label: "pinch(es)" },
-  { value: "", label: "—" },
+  { value: "g", labelKey: null },
+  { value: "kg", labelKey: null },
+  { value: "ml", labelKey: null },
+  { value: "cl", labelKey: null },
+  { value: "L", labelKey: null },
+  { value: "tbsp", labelKey: null },
+  { value: "tsp", labelKey: null },
+  { value: "piece", labelKey: "addRecipe.unitPiece" },
+  { value: "pinch", labelKey: "addRecipe.unitPinch" },
+  { value: "", labelKey: null },
 ];
 
-const CATEGORIES = [
-  { value: "produce", label: "Produce" },
-  { value: "herb", label: "Fresh Herbs" },
-  { value: "meat", label: "Meat" },
-  { value: "poultry", label: "Poultry" },
-  { value: "seafood", label: "Seafood" },
-  { value: "dairy", label: "Dairy" },
-  { value: "egg", label: "Eggs" },
-  { value: "grain", label: "Grains & Pasta" },
-  { value: "legume", label: "Legumes" },
-  { value: "nuts_seeds", label: "Nuts & Seeds" },
-  { value: "pantry", label: "Pantry" },
-  { value: "oil", label: "Oils" },
-  { value: "spice", label: "Spices" },
-  { value: "condiment", label: "Condiments" },
-  { value: "beverage", label: "Beverages" },
-  { value: "other", label: "Other" },
-];
+const CATEGORY_KEYS = {
+  produce: "categories.produce", herb: "categories.herb", meat: "categories.meat",
+  poultry: "categories.poultry", seafood: "categories.seafood", dairy: "categories.dairy",
+  egg: "categories.egg", grain: "categories.grain", legume: "categories.legume",
+  nuts_seeds: "categories.nuts_seeds", pantry: "categories.pantry", oil: "categories.oil",
+  spice: "categories.spice", condiment: "categories.condiment", beverage: "categories.beverage",
+  other: "categories.other",
+};
 
-const RECIPE_TYPES = [
-  { value: "appetizer", label: "Appetizer" },
-  { value: "starter", label: "Starter" },
-  { value: "main_course", label: "Main Course" },
-  { value: "dessert", label: "Dessert" },
-  { value: "drink", label: "Drink" },
-  { value: "base", label: "Base" },
-];
+const RECIPE_TYPE_KEYS = {
+  appetizer: "types.appetizer", starter: "types.starter", main_course: "types.main_course",
+  dessert: "types.dessert", drink: "types.drink", base: "types.base",
+};
 
 const DIFFICULTIES = [
-  { value: "easy", label: "Easy", color: "#4caf50" },
-  { value: "medium", label: "Medium", color: "#ff9800" },
-  { value: "hard", label: "Hard", color: "#f44336" },
+  { value: "easy", labelKey: "difficulty.easy", color: "#4caf50" },
+  { value: "medium", labelKey: "difficulty.medium", color: "#ff9800" },
+  { value: "hard", labelKey: "difficulty.hard", color: "#f44336" },
 ];
 
 const STEP_TYPES = [
-  { value: "prep", label: "Prep" },
-  { value: "combine", label: "Combine" },
-  { value: "cook", label: "Cook" },
-  { value: "rest", label: "Rest" },
-  { value: "serve", label: "Serve" },
+  { value: "prep", labelKey: "addRecipe.stepTypePrep" },
+  { value: "combine", labelKey: "addRecipe.stepTypeCombine" },
+  { value: "cook", labelKey: "addRecipe.stepTypeCook" },
+  { value: "rest", labelKey: "addRecipe.stepTypeRest" },
+  { value: "serve", labelKey: "addRecipe.stepTypeServe" },
 ];
 
 const WIZARD_STEPS = [
-  { label: "Info", Icon: MenuBookIcon },
-  { label: "Ingredients", Icon: EggIcon },
-  { label: "Steps", Icon: BlenderIcon },
-  { label: "Finalize", Icon: DoneAllIcon },
+  { labelKey: "addRecipe.stepInfo", Icon: MenuBookIcon },
+  { labelKey: "addRecipe.stepIngredients", Icon: EggIcon },
+  { labelKey: "addRecipe.stepSteps", Icon: BlenderIcon },
+  { labelKey: "addRecipe.stepFinalize", Icon: DoneAllIcon },
 ];
 
 const INITIAL_FORM_DATA = {
@@ -166,7 +153,7 @@ function createEmptyStep() {
 
 // ─── Custom Stepper ──────────────────────────────────────────
 
-const WizardStepper = ({ activeStep, onStepClick }) => {
+const WizardStepper = ({ activeStep, onStepClick, t }) => {
   const progressPercent = (activeStep / (WIZARD_STEPS.length - 1)) * 100;
 
   return (
@@ -187,7 +174,7 @@ const WizardStepper = ({ activeStep, onStepClick }) => {
 
           return (
             <Box
-              key={step.label}
+              key={step.labelKey}
               onClick={() => isClickable && onStepClick(index)}
               sx={{
                 display: "flex",
@@ -236,7 +223,7 @@ const WizardStepper = ({ activeStep, onStepClick }) => {
                   textAlign: "center",
                 }}
               >
-                {step.label}
+                {t(step.labelKey)}
               </Typography>
             </Box>
           );
@@ -306,7 +293,7 @@ const ServingsInput = ({ value, onChange }) => (
   </Box>
 );
 
-const TimeInput = ({ label, icon, value, onChange }) => {
+const TimeInput = ({ label, icon, value, onChange, t }) => {
   const hours = Math.floor(value / 60);
   const minutes = value % 60;
 
@@ -333,7 +320,7 @@ const TimeInput = ({ label, icon, value, onChange }) => {
           inputProps={{ min: 0, max: 23, style: { textAlign: "center" } }}
           sx={{ width: 52 }}
         />
-        <Typography variant="caption" color="text.secondary">h</Typography>
+        <Typography variant="caption" color="text.secondary">{t("addRecipe.hoursShort")}</Typography>
         <TextField
           type="number"
           size="small"
@@ -343,13 +330,13 @@ const TimeInput = ({ label, icon, value, onChange }) => {
           inputProps={{ min: 0, max: 59, style: { textAlign: "center" } }}
           sx={{ width: 52 }}
         />
-        <Typography variant="caption" color="text.secondary">min</Typography>
+        <Typography variant="caption" color="text.secondary">{t("addRecipe.minutesShort")}</Typography>
       </Box>
     </Box>
   );
 };
 
-const TagInput = ({ tags, onChange }) => {
+const TagInput = ({ tags, onChange, t }) => {
   const [inputValue, setInputValue] = useState("");
 
   const addTag = () => {
@@ -391,7 +378,7 @@ const TagInput = ({ tags, onChange }) => {
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={handleKeyDown}
         onBlur={addTag}
-        placeholder="Type a tag and press Enter..."
+        placeholder={t("addRecipe.tagPlaceholder")}
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
@@ -406,60 +393,62 @@ const TagInput = ({ tags, onChange }) => {
 
 // ─── Step 1: Basic Info ──────────────────────────────────────
 
-const BasicInfoStep = ({ data, onChange }) => {
+const BasicInfoStep = ({ data, onChange, t }) => {
   const update = (field, value) => onChange({ ...data, [field]: value });
 
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
       <TextField
         fullWidth
-        label="Recipe Name"
+        label={t("addRecipe.recipeName")}
         value={data.title}
         onChange={(e) => update("title", e.target.value)}
         required
         autoFocus
-        placeholder="E.g. Lemon Meringue Pie"
+        placeholder={t("addRecipe.recipeNamePlaceholder")}
         sx={{ "& .MuiInputBase-input": { fontSize: "1.05rem", fontWeight: 500 } }}
       />
 
       <TextField
         fullWidth
-        label="Description"
+        label={t("addRecipe.description")}
         value={data.description}
         onChange={(e) => update("description", e.target.value)}
         multiline
         rows={2}
-        placeholder="A short description of your recipe..."
+        placeholder={t("addRecipe.descriptionPlaceholder")}
       />
 
       <Box sx={{ display: "flex", gap: 3, flexWrap: "wrap", alignItems: "flex-end" }}>
         <Box>
           <Typography variant="caption" color="text.secondary" sx={{ mb: 0.5 }}>
-            Servings
+            {t("addRecipe.servings")}
           </Typography>
           <ServingsInput value={data.servings} onChange={(v) => update("servings", v)} />
         </Box>
         <TimeInput
-          label="Prep Time"
+          label={t("addRecipe.prepTime")}
           icon={<TimerIcon sx={{ fontSize: 13 }} />}
           value={data.prepTimeMinutes}
           onChange={(v) => update("prepTimeMinutes", v)}
+          t={t}
         />
         <TimeInput
-          label="Cook Time"
+          label={t("addRecipe.cookTime")}
           icon={<ThermostatIcon sx={{ fontSize: 13 }} />}
           value={data.cookTimeMinutes}
           onChange={(v) => update("cookTimeMinutes", v)}
+          t={t}
         />
       </Box>
 
       <Box>
-        <Typography variant="caption" color="text.secondary">Difficulty</Typography>
+        <Typography variant="caption" color="text.secondary">{t("addRecipe.difficulty")}</Typography>
         <Box sx={{ display: "flex", gap: 1, mt: 0.5 }}>
           {DIFFICULTIES.map((d) => (
             <Chip
               key={d.value}
-              label={d.label}
+              label={t(d.labelKey)}
               onClick={() => update("difficulty", d.value)}
               variant={data.difficulty === d.value ? "filled" : "outlined"}
               sx={{
@@ -476,15 +465,15 @@ const BasicInfoStep = ({ data, onChange }) => {
       </Box>
 
       <Box>
-        <Typography variant="caption" color="text.secondary">Recipe Type</Typography>
+        <Typography variant="caption" color="text.secondary">{t("addRecipe.recipeType")}</Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mt: 0.5 }}>
-          {RECIPE_TYPES.map((t) => (
+          {Object.entries(RECIPE_TYPE_KEYS).map(([value, labelKey]) => (
             <Chip
-              key={t.value}
-              label={t.label}
-              onClick={() => update("recipeType", t.value)}
-              variant={data.recipeType === t.value ? "filled" : "outlined"}
-              color={data.recipeType === t.value ? "primary" : "default"}
+              key={value}
+              label={t(labelKey)}
+              onClick={() => update("recipeType", value)}
+              variant={data.recipeType === value ? "filled" : "outlined"}
+              color={data.recipeType === value ? "primary" : "default"}
               sx={{ cursor: "pointer" }}
             />
           ))}
@@ -496,7 +485,7 @@ const BasicInfoStep = ({ data, onChange }) => {
 
 // ─── Step 2: Ingredients ─────────────────────────────────────
 
-const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
+const IngredientCard = ({ ingredient, index, onUpdate, onRemove, t }) => {
   const update = (field, value) => onUpdate(ingredient._id, field, value);
 
   return (
@@ -540,7 +529,7 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
             size="small"
             value={ingredient.name}
             onChange={(e) => update("name", e.target.value)}
-            placeholder="Ingredient name"
+            placeholder={t("addRecipe.ingredientName")}
             autoFocus={!ingredient.name}
             sx={{ "& .MuiInputBase-input": { fontWeight: 500 } }}
           />
@@ -551,7 +540,7 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
               type="number"
               value={ingredient.quantity}
               onChange={(e) => update("quantity", e.target.value)}
-              placeholder="Qty"
+              placeholder={t("addRecipe.quantity")}
               inputProps={{ min: 0, step: "any" }}
               sx={{ width: 76 }}
             />
@@ -562,7 +551,9 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
                 displayEmpty
               >
                 {UNITS.map((u) => (
-                  <MenuItem key={u.value} value={u.value}>{u.label}</MenuItem>
+                  <MenuItem key={u.value} value={u.value}>
+                    {u.labelKey ? t(u.labelKey) : (u.value || "—")}
+                  </MenuItem>
                 ))}
               </Select>
             </FormControl>
@@ -584,10 +575,10 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
               fullWidth
               value={ingredient.preparation}
               onChange={(e) => update("preparation", e.target.value)}
-              placeholder="Preparation (e.g. diced, melted...)"
+              placeholder={t("addRecipe.preparationPlaceholder")}
               sx={{ "& .MuiInputBase-input": { fontSize: "0.85rem" } }}
             />
-            <Tooltip title="Optional ingredient" arrow>
+            <Tooltip title={t("addRecipe.optionalIngredient")} arrow>
               <FormControlLabel
                 control={
                   <Switch
@@ -597,7 +588,7 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
                   />
                 }
                 label={
-                  <Typography variant="caption" color="text.secondary">Opt.</Typography>
+                  <Typography variant="caption" color="text.secondary">{t("addRecipe.optionalShort")}</Typography>
                 }
                 sx={{ ml: 0, mr: 0, flexShrink: 0 }}
               />
@@ -617,7 +608,7 @@ const IngredientCard = ({ ingredient, index, onUpdate, onRemove }) => {
   );
 };
 
-const IngredientsStep = ({ ingredients, onChange }) => {
+const IngredientsStep = ({ ingredients, onChange, t }) => {
   const addIngredient = () => onChange([...ingredients, createEmptyIngredient()]);
   const removeIngredient = (id) => onChange(ingredients.filter((i) => i._id !== id));
   const updateIngredient = (id, field, value) =>
@@ -626,7 +617,7 @@ const IngredientsStep = ({ ingredients, onChange }) => {
   return (
     <Box>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        Add the ingredients needed for your recipe.
+        {t("addRecipe.ingredientsHelp")}
       </Typography>
 
       {ingredients.length === 0 ? (
@@ -673,7 +664,7 @@ const IngredientsStep = ({ ingredients, onChange }) => {
         variant="outlined"
         size="small"
       >
-        Add Ingredient
+        {t("addRecipe.addIngredient")}
       </Button>
     </Box>
   );
@@ -681,7 +672,7 @@ const IngredientsStep = ({ ingredients, onChange }) => {
 
 // ─── Step 3: Preparation ─────────────────────────────────────
 
-const StepCard = ({ step, index, total, onUpdate, onRemove, onMove }) => {
+const StepCard = ({ step, index, total, onUpdate, onRemove, onMove, t }) => {
   const update = (field, value) => onUpdate(step._id, field, value);
 
   return (
@@ -740,7 +731,7 @@ const StepCard = ({ step, index, total, onUpdate, onRemove, onMove }) => {
             {STEP_TYPES.map((st) => (
               <Chip
                 key={st.value}
-                label={st.label}
+                label={t(st.labelKey)}
                 size="small"
                 onClick={() => update("stepType", st.value)}
                 variant={step.stepType === st.value ? "filled" : "outlined"}
@@ -758,7 +749,7 @@ const StepCard = ({ step, index, total, onUpdate, onRemove, onMove }) => {
             size="small"
             value={step.action}
             onChange={(e) => update("action", e.target.value)}
-            placeholder="Describe this preparation step..."
+            placeholder={t("addRecipe.stepPlaceholder")}
             autoFocus={!step.action}
           />
 
@@ -774,7 +765,7 @@ const StepCard = ({ step, index, total, onUpdate, onRemove, onMove }) => {
                 inputProps={{ min: 0, style: { textAlign: "center" } }}
                 sx={{ width: 56 }}
               />
-              <Typography variant="caption" color="text.secondary">min</Typography>
+              <Typography variant="caption" color="text.secondary">{t("addRecipe.minutesShort")}</Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
               <ThermostatIcon sx={{ fontSize: 15, color: "text.secondary" }} />
@@ -804,7 +795,7 @@ const StepCard = ({ step, index, total, onUpdate, onRemove, onMove }) => {
   );
 };
 
-const PreparationStep = ({ steps, onChange }) => {
+const PreparationStep = ({ steps, onChange, t }) => {
   const addStep = () => onChange([...steps, createEmptyStep()]);
   const removeStep = (id) => onChange(steps.filter((s) => s._id !== id));
   const updateStep = (id, field, value) =>
@@ -819,7 +810,7 @@ const PreparationStep = ({ steps, onChange }) => {
   return (
     <Box>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        Detail the preparation steps in order.
+        {t("addRecipe.stepsHelp")}
       </Typography>
 
       {steps.length === 0 ? (
@@ -839,10 +830,10 @@ const PreparationStep = ({ steps, onChange }) => {
         >
           <RestaurantIcon sx={{ fontSize: 36, color: "text.disabled", mb: 0.5 }} />
           <Typography variant="body2" color="text.secondary">
-            No steps added
+            {t("addRecipe.noSteps")}
           </Typography>
           <Typography variant="caption" color="text.disabled">
-            Click to add your first step
+            {t("addRecipe.clickAddFirstStep")}
           </Typography>
         </Paper>
       ) : (
@@ -856,6 +847,7 @@ const PreparationStep = ({ steps, onChange }) => {
               onUpdate={updateStep}
               onRemove={removeStep}
               onMove={moveStep}
+              t={t}
             />
           ))}
         </Box>
@@ -868,7 +860,7 @@ const PreparationStep = ({ steps, onChange }) => {
         variant="outlined"
         size="small"
       >
-        Add Step
+        {t("addRecipe.addStep")}
       </Button>
     </Box>
   );
@@ -876,7 +868,7 @@ const PreparationStep = ({ steps, onChange }) => {
 
 // ─── Step 4: Finalize ────────────────────────────────────────
 
-const FinishStep = ({ data, onChange }) => {
+const FinishStep = ({ data, onChange, t }) => {
   const update = (field, value) => onChange({ ...data, [field]: value });
 
   const addNote = () => update("notes", [...data.notes, ""]);
@@ -901,10 +893,10 @@ const FinishStep = ({ data, onChange }) => {
         }}
       >
         <Typography variant="overline" color="text.secondary" sx={{ fontSize: "0.65rem", letterSpacing: 1.5 }}>
-          Summary
+          {t("addRecipe.summary")}
         </Typography>
         <Typography variant="h6" sx={{ fontWeight: 700, mt: 0.5, mb: 0.5 }}>
-          {data.title || "Untitled"}
+          {data.title || t("addRecipe.untitled")}
         </Typography>
         {data.description && (
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>
@@ -912,23 +904,23 @@ const FinishStep = ({ data, onChange }) => {
           </Typography>
         )}
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-          <Chip size="small" icon={<RestaurantIcon />} label={`${data.servings} servings`} variant="outlined" />
+          <Chip size="small" icon={<RestaurantIcon />} label={`${data.servings} ${t("addRecipe.servingsLabel")}`} variant="outlined" />
           {data.prepTimeMinutes > 0 && (
-            <Chip size="small" icon={<TimerIcon />} label={`Prep ${formatMinutes(data.prepTimeMinutes)}`} variant="outlined" />
+            <Chip size="small" icon={<TimerIcon />} label={t("addRecipe.prepLabel", { time: formatMinutes(data.prepTimeMinutes) })} variant="outlined" />
           )}
           {data.cookTimeMinutes > 0 && (
-            <Chip size="small" icon={<ThermostatIcon />} label={`Cook ${formatMinutes(data.cookTimeMinutes)}`} variant="outlined" />
+            <Chip size="small" icon={<ThermostatIcon />} label={t("addRecipe.cookLabel", { time: formatMinutes(data.cookTimeMinutes) })} variant="outlined" />
           )}
           <Chip
             size="small"
-            label={DIFFICULTIES.find((d) => d.value === data.difficulty)?.label}
+            label={DIFFICULTIES.find((d) => d.value === data.difficulty) ? t(DIFFICULTIES.find((d) => d.value === data.difficulty).labelKey) : ""}
             sx={{
               bgcolor: `${DIFFICULTIES.find((d) => d.value === data.difficulty)?.color}18`,
               color: DIFFICULTIES.find((d) => d.value === data.difficulty)?.color,
               fontWeight: 600,
             }}
           />
-          <Chip size="small" label={RECIPE_TYPES.find((t) => t.value === data.recipeType)?.label} variant="outlined" />
+          <Chip size="small" label={data.recipeType ? t(RECIPE_TYPE_KEYS[data.recipeType]) : ""} variant="outlined" />
         </Box>
         <Box sx={{ display: "flex", gap: 2, mt: 1.5 }}>
           <Typography variant="caption" color="text.secondary">
@@ -942,13 +934,13 @@ const FinishStep = ({ data, onChange }) => {
 
       {/* Tags */}
       <Box>
-        <Typography variant="subtitle2" sx={{ mb: 1 }}>Tags</Typography>
-        <TagInput tags={data.tags} onChange={(v) => update("tags", v)} />
+        <Typography variant="subtitle2" sx={{ mb: 1 }}>{t("addRecipe.tags")}</Typography>
+        <TagInput tags={data.tags} onChange={(v) => update("tags", v)} t={t} />
       </Box>
 
       {/* Notes */}
       <Box>
-        <Typography variant="subtitle2" sx={{ mb: 1 }}>Notes & Tips</Typography>
+        <Typography variant="subtitle2" sx={{ mb: 1 }}>{t("addRecipe.notesTips")}</Typography>
         {data.notes.map((note, index) => (
           <Box key={index} sx={{ display: "flex", gap: 1, mb: 1, alignItems: "flex-start" }}>
             <TextField
@@ -957,7 +949,7 @@ const FinishStep = ({ data, onChange }) => {
               multiline
               value={note}
               onChange={(e) => updateNote(index, e.target.value)}
-              placeholder="Add a note or tip..."
+              placeholder={t("addRecipe.notePlaceholder")}
             />
             <IconButton
               size="small"
@@ -969,38 +961,38 @@ const FinishStep = ({ data, onChange }) => {
           </Box>
         ))}
         <Button size="small" startIcon={<AddIcon />} onClick={addNote} variant="text">
-          Add Note
+          {t("addRecipe.addNote")}
         </Button>
       </Box>
 
       {/* Optional info */}
       <Box>
         <Typography variant="subtitle2" sx={{ mb: 1 }}>
-          Additional Information{" "}
-          <Typography component="span" variant="caption" color="text.secondary">(optional)</Typography>
+          {t("addRecipe.additionalInfo")}{" "}
+          <Typography component="span" variant="caption" color="text.secondary">{t("addRecipe.optional")}</Typography>
         </Typography>
         <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
           <TextField
             size="small"
-            label="Author"
+            label={t("addRecipe.author")}
             value={data.author}
             onChange={(e) => update("author", e.target.value)}
             sx={{ flex: 1, minWidth: 130 }}
           />
           <TextField
             size="small"
-            label="Source"
+            label={t("addRecipe.source")}
             value={data.source}
             onChange={(e) => update("source", e.target.value)}
-            placeholder="Book, website..."
+            placeholder={t("addRecipe.sourcePlaceholder")}
             sx={{ flex: 1, minWidth: 130 }}
           />
           <TextField
             size="small"
-            label="Nationality"
+            label={t("addRecipe.nationality")}
             value={data.nationality}
             onChange={(e) => update("nationality", e.target.value)}
-            placeholder="French, Italian..."
+            placeholder={t("addRecipe.nationalityPlaceholder")}
             sx={{ flex: 1, minWidth: 130 }}
           />
         </Box>
@@ -1012,6 +1004,7 @@ const FinishStep = ({ data, onChange }) => {
 // ─── Main Wizard ─────────────────────────────────────────────
 
 const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
   const [formData, setFormData] = useState(INITIAL_FORM_DATA);
   const [validationError, setValidationError] = useState(null);
@@ -1029,15 +1022,15 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
   const getStepError = () => {
     switch (activeStep) {
       case 0:
-        if (!formData.title.trim()) return "Recipe name is required";
+        if (!formData.title.trim()) return t("addRecipe.validationRecipeName");
         return null;
       case 1:
-        if (formData.ingredients.length === 0) return "Add at least one ingredient";
-        if (formData.ingredients.some((i) => !i.name.trim())) return "All ingredients must have a name";
+        if (formData.ingredients.length === 0) return t("addRecipe.validationIngredients");
+        if (formData.ingredients.some((i) => !i.name.trim())) return t("addRecipe.validationIngredientNames");
         return null;
       case 2:
-        if (formData.steps.length === 0) return "Add at least one step";
-        if (formData.steps.some((s) => !s.action.trim())) return "All steps must have a description";
+        if (formData.steps.length === 0) return t("addRecipe.validationSteps");
+        if (formData.steps.some((s) => !s.action.trim())) return t("addRecipe.validationStepDescription");
         return null;
       default: return null;
     }
@@ -1097,7 +1090,7 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
 
   return (
     <Box>
-      <WizardStepper activeStep={activeStep} onStepClick={handleStepClick} />
+      <WizardStepper activeStep={activeStep} onStepClick={handleStepClick} t={t} />
 
       <Collapse in={!!validationError}>
         <Alert severity="warning" sx={{ mb: 2, borderRadius: 2 }} onClose={() => setValidationError(null)}>
@@ -1112,10 +1105,10 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
       )}
 
       <Box sx={{ minHeight: 280 }}>
-        {activeStep === 0 && <BasicInfoStep data={formData} onChange={updateFormData} />}
-        {activeStep === 1 && <IngredientsStep ingredients={formData.ingredients} onChange={(v) => updateFormData({ ingredients: v })} />}
-        {activeStep === 2 && <PreparationStep steps={formData.steps} onChange={(v) => updateFormData({ steps: v })} />}
-        {activeStep === 3 && <FinishStep data={formData} onChange={updateFormData} />}
+        {activeStep === 0 && <BasicInfoStep data={formData} onChange={updateFormData} t={t} />}
+        {activeStep === 1 && <IngredientsStep ingredients={formData.ingredients} onChange={(v) => updateFormData({ ingredients: v })} t={t} />}
+        {activeStep === 2 && <PreparationStep steps={formData.steps} onChange={(v) => updateFormData({ steps: v })} t={t} />}
+        {activeStep === 3 && <FinishStep data={formData} onChange={updateFormData} t={t} />}
       </Box>
 
       {/* Navigation */}
@@ -1135,7 +1128,7 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
           disabled={activeStep === 0 || isSubmitting}
           sx={{ visibility: activeStep === 0 ? "hidden" : "visible" }}
         >
-          Previous
+          {t("addRecipe.previous")}
         </Button>
 
         {activeStep === WIZARD_STEPS.length - 1 ? (
@@ -1154,7 +1147,7 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
               fontSize: "0.95rem",
             }}
           >
-            {isSubmitting ? "Creating..." : "Create Recipe"}
+            {isSubmitting ? t("addRecipe.creating") : t("addRecipe.createRecipe")}
           </Button>
         ) : (
           <Button
@@ -1164,7 +1157,7 @@ const ManualRecipeForm = ({ onSubmit, error, isSubmitting }) => {
             disableElevation
             sx={{ px: 3, borderRadius: 2, textTransform: "none" }}
           >
-            Next
+            {t("addRecipe.next")}
           </Button>
         )}
       </Box>

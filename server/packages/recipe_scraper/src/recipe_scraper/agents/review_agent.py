@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # ── Configuration ────────────────────────────────────────────────────
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-REVIEWER_MODEL = "google/gemini-2.5-flash"
+REVIEWER_MODEL = "deepseek/deepseek-v3.2"
 
 # ── System prompt ────────────────────────────────────────────────────
 

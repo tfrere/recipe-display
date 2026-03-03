@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -22,17 +23,10 @@ import {
 import StepProgress from "./StepProgress";
 import StepContent from "./StepContent";
 
-/* ═══════════════════════════════════════════════════════════════════
-   CookingMode — step-by-step cooking guide.
-
-   Design: the instruction dominates. Everything else supports it.
-   Progress is ambient, navigation is effortless.
-   ═══════════════════════════════════════════════════════════════════ */
-
-const CookingMode = () => {
+const CookingMode = ({ title }) => {
+  const { t } = useTranslation();
   const { recipe } = useRecipe();
   const theme = useTheme();
-  const isDark = theme.palette.mode === "dark";
 
   const allSteps = useMemo(() => flattenSteps(recipe), [recipe]);
   const multiSub = useMemo(
@@ -45,7 +39,6 @@ const CookingMode = () => {
 
   const step = allSteps[currentIdx] || null;
 
-  /* ── Timer ── */
   const actionText = step?.action || "";
   const hasTime = hasExplicitTimeMention(actionText, step?.isPassive);
   const rawDuration = step?.time || step?.duration || null;
@@ -53,14 +46,12 @@ const CookingMode = () => {
   const hasDuration = hasTime && parsedMin > 0;
   const timer = useTimer(hasDuration ? parsedMin : 0);
 
-  /* ── Remaining time ── */
   const remainingTime = useMemo(
     () => estimateRemainingTime(allSteps, currentIdx),
     [allSteps, currentIdx]
   );
   const remainingLabel = formatRemainingTime(remainingTime);
 
-  /* ── Navigation ── */
   const navigateTo = useCallback((idx) => {
     setSlideKey((p) => p + 1);
     setCurrentIdx(idx);
@@ -75,7 +66,6 @@ const CookingMode = () => {
     if (currentIdx > 0) navigateTo(currentIdx - 1);
   }, [currentIdx, navigateTo]);
 
-  /* ── Keyboard ── */
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "ArrowRight" || e.key === " ") {
@@ -90,11 +80,10 @@ const CookingMode = () => {
     return () => window.removeEventListener("keydown", onKey);
   }, [handleNext, handlePrev]);
 
-  /* ── Empty ── */
   if (!step) {
     return (
       <Box sx={{ p: 4, textAlign: "center" }}>
-        <Typography color="text.secondary">No steps available.</Typography>
+        <Typography color="text.secondary">{t("cooking.noSteps")}</Typography>
       </Box>
     );
   }
@@ -112,16 +101,33 @@ const CookingMode = () => {
         overflow: "hidden",
       }}
     >
-      {/* ── Stories-style progress ── */}
-      <StepProgress
-        steps={allSteps}
-        currentIdx={currentIdx}
-        completedSteps={completedSteps}
-        isDark={isDark}
-        onStepClick={navigateTo}
-      />
+      <Box sx={{ flexShrink: 0, pt: 1.5, px: { xs: 2, md: 3 } }}>
+        {title && (
+          <Typography
+            sx={{
+              fontSize: "0.72rem",
+              fontWeight: 500,
+              color: "text.disabled",
+              letterSpacing: "0.04em",
+              textTransform: "uppercase",
+              mb: 1,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+              pr: 5,
+            }}
+          >
+            {title}
+          </Typography>
+        )}
+        <StepProgress
+          steps={allSteps}
+          currentIdx={currentIdx}
+          completedSteps={completedSteps}
+          onStepClick={navigateTo}
+        />
+      </Box>
 
-      {/* ── Content (the entire middle is the instruction) ── */}
       <Box
         sx={{
           flex: 1,
@@ -129,109 +135,100 @@ const CookingMode = () => {
           alignItems: "center",
           justifyContent: "center",
           overflow: "auto",
-          px: { xs: 2, md: 4 },
-          py: 1,
+          px: { xs: 2.5, md: 5 },
+          py: 2,
         }}
       >
         <StepContent
           step={step}
           timer={timer}
           hasDuration={hasDuration}
-          isDark={isDark}
           slideKey={slideKey}
           isCompleted={isCompleted}
           showSubRecipeTitle={multiSub}
+          language={recipe?.metadata?.language}
         />
       </Box>
 
-      {/* ── Navigation ── */}
       <Box
         sx={{
           px: { xs: 2, md: 3 },
-          py: { xs: 1.5, md: 2 },
+          pb: { xs: 2, md: 2.5 },
+          pt: 1,
           display: "flex",
           alignItems: "center",
-          gap: 1.5,
+          justifyContent: "center",
+          gap: 2,
         }}
       >
-        {/* Previous: small icon button */}
         <IconButton
           onClick={handlePrev}
           disabled={currentIdx === 0}
           sx={{
-            width: 44,
-            height: 44,
+            width: 40,
+            height: 40,
             flexShrink: 0,
-            bgcolor: isDark
-              ? "rgba(255,255,255,0.05)"
-              : "rgba(0,0,0,0.04)",
-            color: "text.secondary",
-            "&:hover": {
-              bgcolor: isDark
-                ? "rgba(255,255,255,0.1)"
-                : "rgba(0,0,0,0.08)",
-            },
-            "&.Mui-disabled": { opacity: 0.15 },
+            color: "text.disabled",
+            "&:hover": { color: "text.secondary", bgcolor: "action.hover" },
+            "&.Mui-disabled": { opacity: 0.2 },
+            transition: "all 0.2s ease",
           }}
         >
-          <ArrowBackIcon sx={{ fontSize: 20 }} />
+          <ArrowBackIcon sx={{ fontSize: 18 }} />
         </IconButton>
 
-        {/* Center: step counter + remaining */}
-        <Box sx={{ flex: 1, textAlign: "center", minWidth: 0 }}>
-          <Typography
-            sx={{
-              fontSize: "0.75rem",
-              fontWeight: 500,
-              color: "text.disabled",
-              letterSpacing: "0.02em",
-            }}
-          >
-            {currentIdx + 1} / {allSteps.length}
-            {remainingLabel ? ` \u00B7 ${remainingLabel}` : ""}
-          </Typography>
-        </Box>
+        <Typography
+          sx={{
+            fontSize: "0.7rem",
+            fontWeight: 500,
+            color: "text.disabled",
+            letterSpacing: "0.06em",
+            fontVariantNumeric: "tabular-nums",
+            minWidth: 80,
+            textAlign: "center",
+          }}
+        >
+          {currentIdx + 1} / {allSteps.length}
+          {remainingLabel ? ` · ${remainingLabel}` : ""}
+        </Typography>
 
-        {/* Next: big primary CTA */}
         <Button
           endIcon={
             isLastStep ? (
-              <CheckCircleOutlineIcon sx={{ fontSize: 18 }} />
+              <CheckCircleOutlineIcon sx={{ fontSize: 16 }} />
             ) : (
-              <ArrowForwardIcon sx={{ fontSize: 18 }} />
+              <ArrowForwardIcon sx={{ fontSize: 16 }} />
             )
           }
           onClick={handleNext}
           sx={{
             textTransform: "none",
             fontWeight: 600,
-            fontSize: "0.88rem",
-            px: 3,
-            py: 1.25,
-            minWidth: { xs: 130, md: 160 },
-            borderRadius: "12px",
+            fontSize: "0.82rem",
+            px: 2.5,
+            py: 1,
+            minWidth: 120,
+            borderRadius: "10px",
             flexShrink: 0,
-            color: isLastStep
-              ? "white"
-              : isDark
-              ? "rgba(255,255,255,0.9)"
-              : "rgba(0,0,0,0.85)",
+            color: isLastStep ? "#fff" : "text.primary",
             bgcolor: isLastStep
-              ? "#4caf50"
-              : isDark
-              ? "rgba(255,255,255,0.08)"
-              : "rgba(0,0,0,0.06)",
+              ? "rgba(76, 175, 80, 0.9)"
+              : (t) =>
+                  t.palette.mode === "light"
+                    ? "rgba(0, 0, 0, 0.06)"
+                    : "rgba(255, 255, 255, 0.07)",
             "&:hover": {
               bgcolor: isLastStep
-                ? "#43a047"
-                : isDark
-                ? "rgba(255,255,255,0.14)"
-                : "rgba(0,0,0,0.1)",
+                ? "rgba(76, 175, 80, 1)"
+                : (t) =>
+                    t.palette.mode === "light"
+                      ? "rgba(0, 0, 0, 0.10)"
+                      : "rgba(255, 255, 255, 0.12)",
             },
             transition: "all 0.2s ease",
           }}
         >
-          {isLastStep ? "Terminer" : "Suivant"}
+          {isLastStep ? t("cooking.finish") : t("cooking.next")}
         </Button>
       </Box>
     </Box>

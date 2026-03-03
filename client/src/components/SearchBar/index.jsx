@@ -15,6 +15,8 @@ const SearchBarWithResults = () => {
     selectedDishType,
     isQuickOnly,
     isLowIngredientsOnly,
+    isLowCalorie,
+    isPantrySort,
   } = useRecipeList();
 
   const hasActiveFilters = Boolean(
@@ -24,7 +26,9 @@ const SearchBarWithResults = () => {
       selectedType ||
       selectedDishType ||
       isQuickOnly ||
-      isLowIngredientsOnly
+      isLowIngredientsOnly ||
+      isLowCalorie ||
+      isPantrySort
   );
 
   return (

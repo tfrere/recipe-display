@@ -1,5 +1,5 @@
 """
-Unified Prompt — Pass 2 of the 2-pass pipeline (DAG construction).
+Unified Prompt — Pass 2 of the 3-pass pipeline (DAG construction).
 
 This prompt receives PREFORMATTED structured text from Pass 1 and builds
 the complete Recipe JSON graph (DAG). It no longer needs to parse raw
@@ -12,6 +12,10 @@ demonstrating parallel sub-recipes and cross-sub-recipe state flows.
 
 import json
 from typing import Optional
+
+from ..shared import INGREDIENT_CATEGORIES
+
+_CATEGORIES_CSV = ", ".join(INGREDIENT_CATEGORIES)
 
 # ---------------------------------------------------------------------------
 # Few-shot example: a complex recipe with parallel flows + separation step
@@ -100,7 +104,7 @@ FEW_SHOT_EXPECTED_OUTPUT = {
         {"id": "white_wine", "name": "vin blanc sec", "name_en": "dry white wine", "quantity": 100, "unit": "ml", "category": "beverage", "preparation": None, "notes": None, "optional": False},
         {"id": "chicken_broth", "name": "bouillon de volaille", "name_en": "chicken broth", "quantity": 200, "unit": "ml", "category": "pantry", "preparation": None, "notes": None, "optional": False},
         {"id": "flour", "name": "farine", "name_en": "flour", "quantity": 1, "unit": "tbsp", "category": "grain", "preparation": None, "notes": None, "optional": False},
-        {"id": "thyme", "name": "thym frais", "name_en": "fresh thyme", "quantity": 2, "unit": "piece", "category": "spice", "preparation": None, "notes": "branches", "optional": False},
+        {"id": "thyme", "name": "thym frais", "name_en": "fresh thyme", "quantity": 2, "unit": "sprig", "category": "herb", "preparation": None, "notes": None, "optional": False},
         {"id": "salt", "name": "sel", "name_en": "salt", "quantity": None, "unit": None, "category": "spice", "preparation": None, "notes": None, "optional": False},
         {"id": "pepper", "name": "poivre", "name_en": "pepper", "quantity": None, "unit": None, "category": "spice", "preparation": None, "notes": None, "optional": False}
     ],
@@ -268,7 +272,7 @@ Focus entirely on building a correct graph.
 - Step IDs: semantic action name → "sear_chicken", "make_roux", "deglaze"
 
 ## 5. Ingredient categorization
-Assign each ingredient a category from: meat, poultry, seafood, produce, dairy, egg, pantry, spice, condiment, beverage, other.
+Assign each ingredient a category from: """ + _CATEGORIES_CSV + """.
 
 ## 6. Ingredient preparation state
 - The `preparation` field describes HOW the ingredient should be prepared BEFORE cooking starts.
@@ -282,7 +286,19 @@ Assign each ingredient a category from: meat, poultry, seafood, produce, dairy, 
 - Unit: null when quantity is null
 - Canned/packaged ingredients: if the input provides a weight (e.g., "800ml coconut milk"), use that weight as quantity+unit (quantity=800, unit="ml"), NOT "2 cans"
 - Use the metadata from the input (SERVINGS, DIFFICULTY, TYPE, etc.) directly
+- `servings` MUST be a positive integer (≥1). If the input has a non-numeric value, estimate a reasonable number from the ingredients and recipe type
 - DO NOT generate `prepTime`, `cookTime`, `totalTime` in metadata — these are computed automatically from the step DAG after generation. Only generate `duration` on individual steps.
+
+## 7b. Step durations — CRITICAL
+- EVERY step MUST have a `duration` in ISO 8601 format. NEVER leave `duration` as null or empty.
+- If the source text gives an explicit time (e.g., "cook 10 minutes"), use it.
+- If no time is mentioned, ESTIMATE a realistic duration based on the cooking technique:
+  - Quick actions (seasoning, combining, plating): PT1M to PT3M
+  - Chopping, slicing, prep work: PT3M to PT10M
+  - Sautéing, frying, quick cooking: PT5M to PT15M
+  - Simmering, braising, baking: PT15M to PT60M
+  - Long resting, rising, marinating: PT30M to PT12H
+- Use your culinary expertise. A professional cook should find each duration plausible.
 
 ## 8. isPassive
 - Steps marked with [PASSIVE] in the input should have `isPassive: true`
@@ -370,41 +386,3 @@ DO NOT modify ingredient IDs, names, quantities, or units.
 Now generate the complete structured recipe JSON."""
 
 
-# Keep backward compatibility — the old single-pass function signature
-def get_user_prompt_raw(recipe_text: str, image_urls: list[str] | None = None) -> str:
-    """Generate user prompt from raw text (backward compat, used if pipeline falls back)."""
-
-    image_section = ""
-    if image_urls:
-        image_section = f"""
-## Available Images
-The following image URLs are available for this recipe. Select the most appropriate one for `imageUrl`:
-{chr(10).join(f'- {url}' for url in image_urls)}
-"""
-
-    return f"""Structure the following recipe into the JSON format defined in your instructions.
-
-{image_section}
-
-## Recipe Content
-
-{recipe_text}
-
----
-
-## Checklist before generating
-
-1. If this is NOT a valid recipe (login page, error, empty content, recipe compilation/roundup listing multiple independent recipes), respond with:
-   {{"error": "NOT_A_RECIPE", "reason": "explanation"}}
-
-2. Language: write description, actions, and ingredient names in the SAME language as the recipe above.
-
-3. Graph completeness:
-   - Every ingredient appears in at least one step's `uses`
-   - Every step has a non-empty `uses` (except equipment-only steps like "preheat oven")
-   - Every produced state is consumed by a later step or is the `finalState`
-   - The graph is fully connected from ingredients → finalState
-
-4. Quantities: use null (not 0) for "to taste" / "à volonté" ingredients.
-
-Now generate the complete structured recipe JSON."""

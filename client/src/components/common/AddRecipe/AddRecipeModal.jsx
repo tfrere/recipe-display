@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Dialog,
   DialogContent,
@@ -32,40 +33,16 @@ const API_BASE_URL =
 // ─── Mode Definitions ────────────────────────────────────────
 
 const MODE_OPTIONS = [
-  {
-    id: "url",
-    title: "From URL",
-    description: "Paste a recipe website URL to import it automatically",
-    Icon: LinkIcon,
-    color: "#2196f3",
-  },
-  {
-    id: "text",
-    title: "From Text",
-    description: "Paste raw text and let AI structure your recipe",
-    Icon: TextSnippetIcon,
-    color: "#4caf50",
-  },
-  {
-    id: "image",
-    title: "From Image",
-    description: "Upload a recipe photo to extract its content",
-    Icon: PhotoCameraIcon,
-    color: "#9c27b0",
-  },
-  {
-    id: "manual",
-    title: "Manual Entry",
-    description: "Create your recipe step by step with a guided form",
-    Icon: EditIcon,
-    color: "#ff9800",
-  },
+  { id: "url", titleKey: "addRecipe.modeUrl", descKey: "addRecipe.modeUrlDescription", Icon: LinkIcon, color: "#2196f3" },
+  { id: "text", titleKey: "addRecipe.modeText", descKey: "addRecipe.modeTextDescription", Icon: TextSnippetIcon, color: "#4caf50" },
+  { id: "image", titleKey: "addRecipe.modeImage", descKey: "addRecipe.modeImageDescription", Icon: PhotoCameraIcon, color: "#9c27b0" },
+  { id: "manual", titleKey: "addRecipe.modeManual", descKey: "addRecipe.modeManualDescription", Icon: EditIcon, color: "#ff9800" },
 ];
 
 // ─── Mode Card Component ─────────────────────────────────────
 
-const ModeCard = ({ option, onClick }) => {
-  const { Icon, color, title, description } = option;
+const ModeCard = ({ option, onClick, t }) => {
+  const { Icon, color, titleKey, descKey } = option;
 
   return (
     <Paper
@@ -112,14 +89,14 @@ const ModeCard = ({ option, onClick }) => {
           variant="subtitle1"
           sx={{ fontWeight: 650, lineHeight: 1.3, mb: 0.3 }}
         >
-          {title}
+          {t(titleKey)}
         </Typography>
         <Typography
           variant="body2"
           color="text.secondary"
           sx={{ lineHeight: 1.45, fontSize: "0.82rem" }}
         >
-          {description}
+          {t(descKey)}
         </Typography>
       </Box>
     </Paper>
@@ -128,14 +105,14 @@ const ModeCard = ({ option, onClick }) => {
 
 // ─── Mode Selector Screen ────────────────────────────────────
 
-const ModeSelector = ({ onSelect }) => (
+const ModeSelector = ({ onSelect, t }) => (
   <Box>
     <Box sx={{ textAlign: "center", mb: 3, mt: 1 }}>
       <Typography variant="h5" sx={{ fontWeight: 700, mb: 0.5 }}>
-        Add a Recipe
+        {t("addRecipe.title")}
       </Typography>
       <Typography variant="body2" color="text.secondary">
-        Choose how you'd like to add your recipe
+        {t("addRecipe.subtitle")}
       </Typography>
     </Box>
 
@@ -148,7 +125,7 @@ const ModeSelector = ({ onSelect }) => (
       }}
     >
       {MODE_OPTIONS.map((option) => (
-        <ModeCard key={option.id} option={option} onClick={onSelect} />
+        <ModeCard key={option.id} option={option} onClick={onSelect} t={t} />
       ))}
     </Box>
   </Box>
@@ -199,7 +176,7 @@ const FormHeader = ({ mode, onBack, isBusy }) => {
         <modeInfo.Icon sx={{ fontSize: 18, color: modeInfo.color }} />
       </Box>
       <Typography variant="subtitle1" sx={{ fontWeight: 600, flex: 1 }}>
-        {modeInfo.title}
+        {t(modeInfo.titleKey)}
       </Typography>
     </Box>
   );
@@ -234,6 +211,7 @@ const LoadingScreen = ({ progress, loadingMessage, label }) => {
 // ─── Main Modal Component ────────────────────────────────────
 
 const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   // Navigation state — null = mode selector, otherwise form mode
@@ -308,7 +286,7 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
       const detail =
         err.response?.data?.detail ||
         err.message ||
-        "Error creating recipe";
+        t("addRecipe.errorCreating");
       setManualError(detail);
     }
   };
@@ -381,7 +359,7 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
         }}
       >
         {/* ─── Screen 1: Mode Selection ─── */}
-        {!showForm && <ModeSelector onSelect={handleSelectMode} />}
+        {!showForm && <ModeSelector onSelect={handleSelectMode} t={t} />}
 
         {/* ─── Screen 2: Active Form ─── */}
         {showForm && (
@@ -390,16 +368,18 @@ const AddRecipeModal = ({ open, onClose, onRecipeAdded }) => {
               mode={selectedMode}
               onBack={handleBack}
               isBusy={isBusy}
+              t={t}
             />
 
             {isLoading ? (
               <LoadingScreen
                 progress={progress}
                 loadingMessage={loadingMessage}
-                label="Generating recipe..."
+                label={t("addRecipe.generating")}
+                t={t}
               />
             ) : manualSubmitting ? (
-              <LoadingScreen label="Creating recipe..." />
+              <LoadingScreen label={t("addRecipe.creating")} t={t} />
             ) : (
               <>
                 {error && !isManual && (

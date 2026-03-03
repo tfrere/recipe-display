@@ -1,5 +1,5 @@
 // Fonction pour arrondir les grammes de façon adaptative
-const roundGrams = (value) => {
+export const roundGrams = (value) => {
   if (value < 20) {
     // Pour les petites quantités, on arrondit à l'unité
     return Math.round(value);
@@ -13,7 +13,7 @@ const roundGrams = (value) => {
 };
 
 // Fonction pour arrondir à la fraction pratique la plus proche
-const roundToFraction = (value) => {
+export const roundToFraction = (value) => {
   const fractions = [0.25, 0.33, 0.5, 0.66, 0.75];
   const wholePart = Math.floor(value);
   const fractionalPart = value - wholePart;
@@ -62,20 +62,6 @@ export const getFractionDisplay = (value) => {
   )[1];
 
   return wholePart === 0 ? closestFraction : `${wholePart}${closestFraction}`;
-};
-
-// Fonction pour normaliser l'affichage des grammes
-export const normalizeGramsDisplay = (amount, constants) => {
-  const { display } = constants?.units?.weight || {
-    display: { kilogram: "{count}kg", gram: "{count}g" },
-  };
-  if (amount >= 1600) {
-    return display.kilogram.replace(
-      "{count}",
-      (amount / 1000).toFixed(1).replace(".", ",")
-    );
-  }
-  return display.gram.replace("{count}", Math.round(amount));
 };
 
 export const scaleIngredientAmount = (

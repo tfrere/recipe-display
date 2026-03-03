@@ -4,6 +4,7 @@ import React, {
   useRef,
   memo,
 } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -27,39 +28,19 @@ import { useVirtualizer } from "@tanstack/react-virtual";
 import RecipeCard from "../components/RecipeCard";
 import useLongPress from "../hooks/useLongPress";
 import ScrollShadow from "../components/ScrollShadow";
-import { getCurrentSeason, SEASON_EMOJI, SEASON_LABELS } from "../utils/seasonUtils";
-
-const HOME_TEXTS = {
-  NO_RECIPES: {
-    TITLE: "No recipes found",
-    DESCRIPTION:
-      "Try adding a new recipe by clicking the + button in the top right corner",
-  },
-  NO_RECIPES_UNAUTHORIZED: {
-    TITLE: "No recipes found",
-    DESCRIPTION:
-      "You need access rights to add new recipes. Try entering the right combination of keys for access.",
-  },
-  NO_RESULTS: {
-    TITLE: "No recipes found for your search",
-    DESCRIPTION: "Try adjusting your filters or search criteria",
-  },
-  COMMON: {
-    LOADING: "Loading...",
-    ERROR: "An error occurred while loading recipes",
-  },
-};
+import { getCurrentSeason, SEASON_EMOJI } from "../utils/seasonUtils";
 
 const ResultsLabel = memo(({ resultsType, count }) => {
+  const { t } = useTranslation();
   const season = getCurrentSeason();
   const emoji = SEASON_EMOJI[season] || "";
-  const seasonLabel = SEASON_LABELS[season] || season;
+  const seasonLabel = t(`seasons.${season}`);
 
   let text;
   if (resultsType === "pantry_sorted") {
-    text = `Sorted by pantry match \u2022 ${count} recipe${count !== 1 ? "s" : ""}`;
+    text = `${t("home.resultsPantrySorted")} \u2022 ${count} recipe${count !== 1 ? "s" : ""}`;
   } else if (resultsType === "random_seasonal") {
-    text = `${emoji} ${seasonLabel} recipes`;
+    text = `${emoji} ${t("home.seasonalRecipes", { season: seasonLabel })}`;
   } else {
     text = `${count} recipe${count !== 1 ? "s" : ""} found`;
   }
@@ -81,6 +62,7 @@ const ResultsLabel = memo(({ resultsType, count }) => {
 });
 
 const NoRecipes = memo(({ hasActiveFilters }) => {
+  const { t } = useTranslation();
   const { openAddRecipeModal } = useRecipeList();
   const { hasPrivateAccess } = useLongPress();
 
@@ -101,15 +83,15 @@ const NoRecipes = memo(({ hasActiveFilters }) => {
       <RestaurantIcon sx={{ fontSize: 64, color: "text.secondary", mb: 2 }} />
       <Typography variant="h4" component="h2" gutterBottom>
         {hasActiveFilters
-          ? HOME_TEXTS.NO_RESULTS.TITLE
-          : HOME_TEXTS.NO_RECIPES.TITLE}
+          ? t("home.noResultsTitle")
+          : t("home.noRecipesTitle")}
       </Typography>
       <Typography variant="body1" color="text.secondary">
         {hasActiveFilters
-          ? HOME_TEXTS.NO_RESULTS.DESCRIPTION
+          ? t("home.noResultsDescription")
           : hasPrivateAccess
-          ? HOME_TEXTS.NO_RECIPES.DESCRIPTION
-          : HOME_TEXTS.NO_RECIPES_UNAUTHORIZED.DESCRIPTION}
+          ? t("home.noRecipesDescription")
+          : t("home.noRecipesUnauthorized")}
       </Typography>
       {!hasActiveFilters && hasPrivateAccess && (
         <Box sx={{ mt: 2 }}>
@@ -119,7 +101,7 @@ const NoRecipes = memo(({ hasActiveFilters }) => {
             startIcon={<AddIcon />}
             onClick={openAddRecipeModal}
           >
-            Add Recipe
+            {t("home.addRecipe")}
           </Button>
         </Box>
       )}
@@ -286,24 +268,13 @@ const VirtualizedRecipeGrid = memo(
 );
 
 const HomePage = () => {
+  const { t } = useTranslation();
   const { constants } = useConstants();
 
   // Attendre que les constantes soient chargées
   if (!constants) {
     return null;
   }
-
-  // Convert arrays to lookup objects for easy access
-  const RECIPE_TYPE_LABELS = Object.freeze(
-    Object.fromEntries(
-      constants.recipe_types.map((type) => [type.id, type.label])
-    )
-  );
-  const SEASON_LABELS = Object.freeze(
-    Object.fromEntries(
-      constants.seasons.map((season) => [season.id, season.label])
-    )
-  );
 
   const {
     allRecipes,
@@ -320,9 +291,15 @@ const HomePage = () => {
     selectedDishType,
     isQuickOnly,
     isLowIngredientsOnly,
+    isLowCalorie,
     isPantrySort,
     resultsType,
+    shuffleSeasonalRecipes,
   } = useRecipeList();
+
+  useEffect(() => {
+    shuffleSeasonalRecipes();
+  }, [shuffleSeasonalRecipes]);
 
   // Vérifier si des filtres sont actifs
   const hasActiveFilters = Boolean(
@@ -333,6 +310,7 @@ const HomePage = () => {
       selectedDishType ||
       isQuickOnly ||
       isLowIngredientsOnly ||
+      isLowCalorie ||
       isPantrySort
   );
 
@@ -407,7 +385,7 @@ const HomePage = () => {
           <Container maxWidth="lg" sx={{ pb: 0, height: "100%", display: "flex", flexDirection: "column" }}>
             {error ? (
               <Alert severity="error" sx={{ m: 4 }}>
-                Une erreur est survenue lors du chargement des recettes.
+                {t("home.error")}
               </Alert>
             ) : filteredRecipes?.length === 0 ? (
               <NoRecipes hasActiveFilters={hasActiveFilters} />

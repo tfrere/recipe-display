@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Typography,
@@ -11,13 +12,16 @@ import {
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IngredientsGroup from "./IngredientsGroup";
 import { useIngredientsProcessing } from "./useIngredientsProcessing";
-import { INGREDIENTS_TEXTS, switchStyle } from "./constants";
+import { useGlossary } from "../../../../hooks/useGlossary";
+import { switchStyle } from "./constants";
 import { usePantry } from "../../../../contexts/PantryContext";
 
 /**
  * Main component for displaying recipe ingredients
  */
 const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
+  const { t } = useTranslation();
+  const glossary = useGlossary(recipe?.metadata?.language);
   const [checkedIngredients, setCheckedIngredients] = useState(new Set());
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const { hasItem, pantrySize } = usePantry();
@@ -91,13 +95,14 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
           alignItems: "center",
           mb: 3,
           gap: 1.5,
+          "@media print": { mb: 1.5 },
         }}
       >
         <Box
           sx={{ display: "flex", alignItems: "center", gap: 1, flexGrow: 1 }}
         >
-          <Typography variant="h5" component="span">
-            {INGREDIENTS_TEXTS.TITLE}
+          <Typography variant="h5" component="span" sx={{ "@media print": { fontSize: "1.1rem" } }}>
+            {t("recipe.ingredients")}
           </Typography>
           <Typography
             variant="body2"
@@ -106,10 +111,15 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
               display: "flex",
               alignItems: "center",
               gap: 0.5,
+              "@media print": { display: "none" },
             }}
           >
-            • {hasCompletedSteps ? `${remainingIngredients}/` : ""}
-            {allIngredients.length}
+            • {shoppingMode
+              ? `${checkedIngredients.size}/${sortedIngredients.length}`
+              : hasCompletedSteps
+                ? `${remainingIngredients}/${allIngredients.length}`
+                : allIngredients.length
+            }
           </Typography>
         </Box>
 
@@ -129,9 +139,10 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
                 borderColor: "action.hover",
                 backgroundColor: "action.hover",
               },
+              "@media print": { display: "none" },
             }}
           >
-            {INGREDIENTS_TEXTS.COPY_BUTTON}
+            {t("recipe.copyList")}
           </Button>
         )}
 
@@ -147,7 +158,7 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
           }
           label={
             <Typography variant="body2" color="text.secondary">
-              {INGREDIENTS_TEXTS.SHOPPING_MODE}
+              {t("recipe.shoppingList")}
             </Typography>
           }
           labelPlacement="start"
@@ -155,6 +166,7 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
             ml: 1,
             mr: 0,
             gap: 1,
+            "@media print": { display: "none" },
           }}
         />
       </Box>
@@ -205,6 +217,18 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
               display: "block",
             },
           },
+          "@media print": {
+            gridTemplateColumns: "1fr 1fr 1fr !important",
+            gap: 0.5,
+            "&::before": {
+              left: "calc(33.33% - 1px)",
+              display: "block !important",
+            },
+            "&::after": {
+              left: "calc(66.66% - 1px)",
+              display: "block !important",
+            },
+          },
         }}
       >
         {columns.map((columnGroups, columnIndex) => (
@@ -228,6 +252,7 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
                 sortByCategory={shoppingMode}
                 checkedIngredients={checkedIngredients}
                 onIngredientCheck={handleIngredientCheck}
+                glossary={glossary}
               />
             ))}
           </Box>
@@ -263,7 +288,7 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
             },
           }}
         >
-          {INGREDIENTS_TEXTS.COPY_SUCCESS}
+          {t("recipe.ingredientsCopied")}
         </Alert>
       </Snackbar>
     </>

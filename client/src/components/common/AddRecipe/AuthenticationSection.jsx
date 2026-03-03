@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   FormControl,
@@ -29,6 +30,7 @@ const AuthenticationSection = ({
   onAuthValuesChange,
   disabled,
 }) => {
+  const { t } = useTranslation();
   const [presets, setPresets] = useState([]);
 
   // Load presets on mount
@@ -110,7 +112,7 @@ const AuthenticationSection = ({
           variant="body2"
           color={disabled ? "text.disabled" : "text.primary"}
         >
-          Authentication options
+          {t("addRecipe.authOptions")}
         </Typography>
       </Box>
 
@@ -119,11 +121,11 @@ const AuthenticationSection = ({
           {/* Presets section */}
           <Box sx={{ mb: 2 }}>
             <Typography variant="body2" sx={{ mb: 1 }}>
-              Saved authentications
+              {t("addRecipe.savedAuth")}
             </Typography>
             {presets.length === 0 ? (
               <Typography variant="body2" color="text.secondary">
-                No saved authentications yet
+                {t("addRecipe.noSavedAuth")}
               </Typography>
             ) : (
               <Box>
@@ -145,16 +147,16 @@ const AuthenticationSection = ({
 
           {/* Authentication form */}
           <FormControl fullWidth sx={{ mb: 2 }}>
-            <InputLabel>Authentication type</InputLabel>
+            <InputLabel>{t("addRecipe.authType")}</InputLabel>
             <Select
               value={authType}
               onChange={(e) => onAuthTypeChange(e.target.value)}
               disabled={disabled}
             >
-              <MenuItem value="cookie">Cookie</MenuItem>
-              <MenuItem value="basic">Basic Auth</MenuItem>
-              <MenuItem value="bearer">Bearer Token</MenuItem>
-              <MenuItem value="apikey">API Key</MenuItem>
+              <MenuItem value="cookie">{t("addRecipe.authCookie")}</MenuItem>
+              <MenuItem value="basic">{t("addRecipe.authBasic")}</MenuItem>
+              <MenuItem value="bearer">{t("addRecipe.authBearer")}</MenuItem>
+              <MenuItem value="apikey">{t("addRecipe.authApikey")}</MenuItem>
             </Select>
           </FormControl>
 
@@ -162,7 +164,7 @@ const AuthenticationSection = ({
             <>
               <TextField
                 fullWidth
-                label="Cookie name"
+                label={t("addRecipe.cookieName")}
                 value={authValues.cookieName}
                 onChange={(e) =>
                   onAuthValuesChange({
@@ -175,7 +177,7 @@ const AuthenticationSection = ({
               />
               <TextField
                 fullWidth
-                label="Cookie value"
+                label={t("addRecipe.cookieValue")}
                 value={authValues.cookieValue}
                 onChange={(e) =>
                   onAuthValuesChange({
@@ -188,7 +190,7 @@ const AuthenticationSection = ({
               />
               <TextField
                 fullWidth
-                label="Cookie domain"
+                label={t("addRecipe.cookieDomain")}
                 value={authValues.cookieDomain}
                 onChange={(e) =>
                   onAuthValuesChange({
@@ -205,7 +207,7 @@ const AuthenticationSection = ({
             <>
               <TextField
                 fullWidth
-                label="Username"
+                label={t("addRecipe.username")}
                 value={authValues.username}
                 onChange={(e) =>
                   onAuthValuesChange({
@@ -219,7 +221,7 @@ const AuthenticationSection = ({
               <TextField
                 fullWidth
                 type="password"
-                label="Password"
+                label={t("addRecipe.password")}
                 value={authValues.password}
                 onChange={(e) =>
                   onAuthValuesChange({
@@ -235,7 +237,7 @@ const AuthenticationSection = ({
           {authType === "bearer" && (
             <TextField
               fullWidth
-              label="Token"
+              label={t("addRecipe.token")}
               value={authValues.token}
               onChange={(e) =>
                 onAuthValuesChange({ ...authValues, token: e.target.value })
@@ -247,7 +249,7 @@ const AuthenticationSection = ({
           {authType === "apikey" && (
             <TextField
               fullWidth
-              label="API Key"
+              label={t("addRecipe.apiKey")}
               value={authValues.apiKey}
               onChange={(e) =>
                 onAuthValuesChange({ ...authValues, apiKey: e.target.value })

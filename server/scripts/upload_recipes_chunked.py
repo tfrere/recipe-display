@@ -71,7 +71,7 @@ def main():
     args = parser.parse_args()
 
     load_dotenv()
-    api_base = os.getenv("RECIPE_SERVER_URL", "https://recipes-api.tfrere.com")
+    api_base = os.getenv("RECIPE_SERVER_URL", "http://localhost:3001")
     base_url = f"{api_base}/api/recipe-files"
     recipes_path = Path("data/recipes")
     images_path = recipes_path / "images"

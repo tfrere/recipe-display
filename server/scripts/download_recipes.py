@@ -12,7 +12,7 @@ def download_recipes():
     """Download all recipes and images from the server."""
     load_dotenv()
     # Build base URL with correct API path
-    api_base = os.getenv("RECIPE_SERVER_URL", "https://recipes-api.tfrere.com")
+    api_base = os.getenv("RECIPE_SERVER_URL", "http://localhost:3001")
     base_url = f"{api_base}/api/recipe-files"
     
     if not api_base:

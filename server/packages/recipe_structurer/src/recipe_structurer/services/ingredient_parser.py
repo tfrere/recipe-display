@@ -5,7 +5,7 @@ Parses ingredient lines from Pass 1 preformatted output into Ingredient objects.
 Uses a combination of:
   - Regex to extract annotations («clean_name», [full english line], {category}, (optionnel))
   - strangetom/ingredient-parser (CRF model) to parse qty/unit/name from the English translation
-  - Fuzzy matching for ID correction (Levenshtein distance)
+  - Deterministic ID correction: suffix strip + original-name lookup (replaces Levenshtein)
 
 The LLM (Pass 1) translates each ingredient line to English.
 The CRF parser deterministically extracts structured data from that English line.
@@ -17,7 +17,10 @@ import re
 from fractions import Fraction
 from typing import Optional
 
+from unidecode import unidecode
+
 from ..models.recipe import Ingredient
+from ..shared import INGREDIENT_CATEGORIES
 
 logger = logging.getLogger(__name__)
 
@@ -78,54 +81,212 @@ def normalize_unit(raw_unit) -> Optional[str]:
 
 
 # ═══════════════════════════════════════════════════════════════════
+# POST-CRF QUANTITY NORMALIZATION (deterministic layer)
+# ═══════════════════════════════════════════════════════════════════
+
+_KNOWN_UNITS = {
+    "pinch", "handful", "dash", "splash", "sprig", "bunch", "slice",
+    "piece", "clove", "leaf", "stalk", "head", "drop", "dollop",
+    "knob", "strip", "sheet", "stick", "wedge", "ear", "bulb",
+    "grating", "segment", "scoop",
+    "cup", "tbsp", "tsp", "g", "kg", "ml", "l", "cl", "dl",
+    "oz", "lb", "can",
+}
+
+_PLURAL_UNITS = {
+    "drops": "drop", "dollops": "dollop", "splashes": "splash",
+    "dashes": "dash", "gratings": "grating", "grinds": "grind",
+    "segments": "segment", "scoops": "scoop",
+    "thin slices": "slice", "thin slice": "slice",
+}
+
+_MODIFIERS = {
+    "scant", "heaping", "heaped", "generous", "big", "small", "large",
+    "level", "rounded", "tiny", "good",
+}
+
+_BARE_MODIFIER_DEFAULTS = {
+    "scant": (0.85, "tsp"),
+    "heaping": (1.25, "tbsp"),
+    "heaped": (1.25, "tbsp"),
+    "generous": (1.25, "tbsp"),
+    "tiny": (0.5, "tsp"),
+    "good": (1.25, "tbsp"),
+}
+
+_MODIFIER_MULTIPLIERS = {
+    "scant": 0.85,
+    "tiny": 0.5,
+    "small": 0.75,
+    "level": 1.0,
+    "good": 1.15,
+    "rounded": 1.15,
+    "heaping": 1.25,
+    "generous": 1.25,
+    "big": 1.5,
+    "large": 1.5,
+}
+
+
+def normalize_quantity_post_crf(
+    quantity: Optional[float],
+    unit: Optional[str],
+) -> tuple[Optional[float], Optional[str], Optional[str], Optional[str]]:
+    """
+    Fix known CRF failure modes after parsing.
+
+    Returns (quantity, unit, quantitySource, modifier_note).
+    - quantitySource is "inferred" when we applied a deterministic rule.
+    - modifier_note captures stripped modifiers (e.g. "scant", "heaping").
+    """
+    if unit is None:
+        return quantity, unit, None, None
+
+    unit_lower = unit.strip().lower()
+
+    # Resolve plural forms first: "drops" → "drop", "thin slices" → "slice"
+    if unit_lower in _PLURAL_UNITS:
+        unit_lower = _PLURAL_UNITS[unit_lower]
+
+    # Handle compound modifier+unit: "scant teaspoon", "big handful", "heaping tablespoon"
+    words = unit_lower.split()
+    if len(words) >= 2 and words[0] in _MODIFIERS:
+        modifier = words[0]
+        real_unit_raw = " ".join(words[1:])
+        real_unit = normalize_unit(real_unit_raw) or _PLURAL_UNITS.get(real_unit_raw, real_unit_raw)
+
+        if real_unit in _KNOWN_UNITS or real_unit_raw in UNIT_NORMALIZE:
+            resolved_qty = quantity if quantity is not None else 1.0
+            multiplier = _MODIFIER_MULTIPLIERS.get(modifier, 1.0)
+            resolved_qty = round(resolved_qty * multiplier, 2)
+            logger.debug(
+                f"Modifier fix: unit='{unit}' → qty={resolved_qty}, "
+                f"unit='{real_unit}', modifier='{modifier}'"
+            )
+            return resolved_qty, real_unit, "inferred", modifier
+
+    # Handle bare modifier without base unit (legacy): "scant", "heaping"
+    if unit_lower in _BARE_MODIFIER_DEFAULTS and quantity is None:
+        mult, default_unit = _BARE_MODIFIER_DEFAULTS[unit_lower]
+        logger.debug(
+            f"Bare modifier fix: unit='{unit}' → qty={mult}, "
+            f"unit='{default_unit}', modifier='{unit_lower}'"
+        )
+        return mult, default_unit, "inferred", unit_lower
+
+    # Normalize the unit for subsequent checks
+    normalized = normalize_unit(unit_lower) or unit_lower
+
+    # Handle implicit qty=1 for recognized units when CRF returns qty=None
+    if quantity is None and normalized in _KNOWN_UNITS:
+        logger.debug(f"Implicit qty: unit='{normalized}' → qty=1")
+        return 1.0, normalized, "inferred", None
+
+    return quantity, normalized if normalized != unit_lower else unit, None, None
+
+
+# ═══════════════════════════════════════════════════════════════════
 # ID GENERATION
 # ═══════════════════════════════════════════════════════════════════
 
 def make_ingredient_id(name_en: str) -> str:
-    """Convert an English name to a snake_case ID."""
-    clean = re.sub(r"[^a-zA-Z0-9\s]", "", name_en.lower().strip())
+    """Convert an English name to a snake_case ID.
+
+    Uses unidecode to transliterate accented characters so that
+    ``"crème fraîche"`` becomes ``"creme_fraiche"`` instead of
+    ``"crme_frache"``.
+    """
+    transliterated = unidecode(name_en)
+    clean = re.sub(r"[^a-zA-Z0-9\s]", "", transliterated.lower().strip())
     return re.sub(r"\s+", "_", clean)
 
 
 # ═══════════════════════════════════════════════════════════════════
-# FUZZY MATCHING (for post-Pass 2 ID correction)
+# DETERMINISTIC ID CORRECTION (replaces Levenshtein fuzzy matching)
 # ═══════════════════════════════════════════════════════════════════
 
-def levenshtein_distance(s1: str, s2: str) -> int:
-    """Compute the Levenshtein distance between two strings."""
-    if len(s1) < len(s2):
-        return levenshtein_distance(s2, s1)
-    if len(s2) == 0:
-        return len(s1)
-    prev_row = range(len(s2) + 1)
-    for i, c1 in enumerate(s1):
-        curr_row = [i + 1]
-        for j, c2 in enumerate(s2):
-            curr_row.append(min(
-                prev_row[j + 1] + 1,
-                curr_row[j] + 1,
-                prev_row[j] + (c1 != c2),
-            ))
-        prev_row = curr_row
-    return prev_row[-1]
+_SUFFIX_RE = re.compile(r"^(.+?)_(\d+)$")
 
 
-def fuzzy_match_id(
+def _suffix_strip_match(ref: str, valid_ids: set[str]) -> Optional[str]:
+    """Try stripping or varying the _N dedup suffix to find an exact match."""
+    m = _SUFFIX_RE.match(ref)
+    if not m:
+        return None
+    base = m.group(1)
+    if base in valid_ids:
+        return base
+    for n in range(1, 6):
+        candidate = f"{base}_{n}"
+        if candidate in valid_ids:
+            return candidate
+    return None
+
+
+def _name_lookup_match(
+    ref: str,
+    name_to_id: dict[str, str],
+) -> Optional[str]:
+    """Try matching a ref against ingredient original-language names.
+
+    Resolution order:
+      1. Exact match (case-insensitive, underscore-tolerant)
+      2. Word-boundary substring match — picks the shortest name that
+         contains the ref (or vice-versa) to avoid "egg" matching
+         "eggplant" when "egg" also exists.
+    """
+    ref_normalized = ref.lower().replace("_", " ").strip()
+    if not ref_normalized:
+        return None
+
+    for name, ing_id in name_to_id.items():
+        name_normalized = name.lower().strip()
+        if ref_normalized == name_normalized:
+            return ing_id
+        if ref_normalized == name_normalized.replace(" ", "_"):
+            return ing_id
+
+    ref_re = re.compile(rf"\b{re.escape(ref_normalized)}\b")
+    best_id: Optional[str] = None
+    best_len = float("inf")
+
+    for name, ing_id in name_to_id.items():
+        name_normalized = name.lower().strip()
+        if not name_normalized:
+            continue
+        name_re = re.compile(rf"\b{re.escape(name_normalized)}\b")
+        if ref_re.search(name_normalized) or name_re.search(ref_normalized):
+            if len(name_normalized) < best_len:
+                best_len = len(name_normalized)
+                best_id = ing_id
+
+    return best_id
+
+
+def resolve_ref(
     ref: str,
     valid_ids: set[str],
-    max_distance: int = 3,
+    name_to_id: dict[str, str],
 ) -> Optional[str]:
-    """Find the closest valid ID by Levenshtein distance."""
+    """
+    Deterministic ref resolution chain:
+      1. Exact match against valid IDs
+      2. Suffix strip (_N) then exact match
+      3. Lookup against ingredient original-language names
+    Returns the resolved ID or None.
+    """
     if ref in valid_ids:
         return ref
-    best_match = None
-    best_dist = max_distance + 1
-    for valid_id in valid_ids:
-        dist = levenshtein_distance(ref, valid_id)
-        if dist < best_dist:
-            best_dist = dist
-            best_match = valid_id
-    return best_match if best_dist <= max_distance else None
+
+    match = _suffix_strip_match(ref, valid_ids)
+    if match:
+        return match
+
+    match = _name_lookup_match(ref, name_to_id)
+    if match:
+        return match
+
+    return None
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -154,16 +315,21 @@ def parse_ingredient_line(line: str) -> Optional[Ingredient]:
     if line.startswith("- "):
         line = line[2:]
 
+    # ── Require «» annotations — reject lines without them ─────
+    name_guillemets = re.search(r"«([^»]+)»", line)
+    if not name_guillemets:
+        logger.debug(f"Skipping line without «» annotation: {line[:80]}")
+        return None
+
+    name_original = name_guillemets.group(1).strip()
+
     # ── Extract annotations ────────────────────────────────────
-    # Category {category}
     category_match = re.search(r"\{(\w+)\}", line)
     category = category_match.group(1) if category_match else "other"
 
-    # Full English translation [full english line]
     en_matches = re.findall(r"\[([^\]]+)\]", line)
     en_full_line = en_matches[0] if en_matches else ""
 
-    # Optional flag
     line_lower = line.lower()
     optional = (
         "(optionnel)" in line_lower
@@ -171,27 +337,12 @@ def parse_ingredient_line(line: str) -> Optional[Ingredient]:
         or "(à volonté)" in line_lower
     )
 
-    # Notes (parenthetical text that is NOT an optional marker)
     notes = None
     for m in re.finditer(r"\(([^)]+)\)", line):
         text = m.group(1)
         if text.lower() not in ("optionnel", "optional", "à volonté"):
             notes = text
             break
-
-    # ── Extract original-language name from «» annotation ──────
-    name_guillemets = re.search(r"«([^»]+)»", line)
-    if name_guillemets:
-        name_original = name_guillemets.group(1).strip()
-    else:
-        # Fallback: use the first part before any annotation
-        first_bracket = line.find("[")
-        raw_part = line[:first_bracket].strip() if first_bracket > 0 else line
-        raw_part = raw_part.split(",")[0].strip()
-        name_original = re.sub(r"^[\d½¼¾⅓⅔/.,\-\s]+", "", raw_part).strip()
-        if not name_original:
-            name_original = raw_part
-        logger.warning(f"No «» annotation found, falling back to raw: '{name_original}'")
 
     # ── Extract original-language preparation (after annotations + comma) ──
     preparation_original = None
@@ -213,58 +364,63 @@ def parse_ingredient_line(line: str) -> Optional[Ingredient]:
     preparation_en = None
 
     if en_full_line:
-        _ensure_parser()
-        from ingredient_parser import parse_ingredient
-
+        crf_available = False
         try:
-            result = parse_ingredient(en_full_line)
-
-            # Extract name
-            if result.name:
-                name_en = result.name[0].text if isinstance(result.name, list) else result.name.text
-
-            # Extract quantity
-            if result.amount:
-                amt = result.amount[0]
-                try:
-                    quantity = float(amt.quantity) if amt.quantity is not None else None
-                except (ValueError, TypeError):
-                    # Fraction objects
-                    if isinstance(amt.quantity, Fraction):
-                        quantity = float(amt.quantity)
-
-                unit = normalize_unit(amt.unit)
-
-            # Extract preparation
-            if result.preparation:
-                if isinstance(result.preparation, list):
-                    preparation_en = result.preparation[0].text if result.preparation else None
-                else:
-                    preparation_en = result.preparation.text
-
-        except Exception as e:
-            logger.error(f"CRF parser failed on '{en_full_line}': {e}")
-            # Fallback: use the English line as name_en
+            _ensure_parser()
+            from ingredient_parser import parse_ingredient
+            crf_available = True
+        except (ImportError, ModuleNotFoundError):
+            logger.debug("CRF parser not available, using English line as fallback")
             name_en = en_full_line
+
+        if crf_available:
+            try:
+                result = parse_ingredient(en_full_line)
+
+                if result.name:
+                    name_en = result.name[0].text if isinstance(result.name, list) else result.name.text
+
+                if result.amount:
+                    amt = result.amount[0]
+                    try:
+                        quantity = float(amt.quantity) if amt.quantity is not None else None
+                    except (ValueError, TypeError):
+                        if isinstance(amt.quantity, Fraction):
+                            quantity = float(amt.quantity)
+
+                    unit = normalize_unit(amt.unit)
+
+                if result.preparation:
+                    if isinstance(result.preparation, list):
+                        preparation_en = result.preparation[0].text if result.preparation else None
+                    else:
+                        preparation_en = result.preparation.text
+
+            except Exception as e:
+                logger.error(f"CRF parser failed on '{en_full_line}': {e}")
+                name_en = en_full_line
+
+    # ── Post-CRF quantity normalization ──────────────────────
+    quantity_source: Optional[str] = None
+    quantity, unit, quantity_source, modifier_note = normalize_quantity_post_crf(quantity, unit)
+
+    if modifier_note:
+        existing_notes = notes or ""
+        notes = f"{modifier_note}; {existing_notes}" if existing_notes else modifier_note
 
     # ── Build Ingredient ─────────────────────────────────────
     preparation = preparation_original or preparation_en
     final_name_en = name_en or en_full_line or name_original
     ingredient_id = make_ingredient_id(final_name_en)
 
-    # Validate category
-    valid_categories = {
-        "meat", "poultry", "seafood", "produce", "dairy", "egg",
-        "grain", "legume", "nuts_seeds", "oil", "herb",
-        "pantry", "spice", "condiment", "beverage", "other",
-    }
-    if category not in valid_categories:
+    if category not in INGREDIENT_CATEGORIES:
         logger.warning(f"Unknown category '{category}' for '{final_name_en}', defaulting to 'other'")
         category = "other"
 
     logger.debug(
         f"Parsed: «{name_original}» → name_en='{final_name_en}' "
-        f"qty={quantity} unit={unit} prep='{preparation}'"
+        f"qty={quantity} unit={unit} prep='{preparation}' "
+        f"quantitySource={quantity_source}"
     )
 
     return Ingredient(
@@ -277,6 +433,7 @@ def parse_ingredient_line(line: str) -> Optional[Ingredient]:
         preparation=preparation,
         notes=notes,
         optional=optional,
+        quantitySource=quantity_source,
     )
 
 
@@ -285,9 +442,9 @@ def parse_ingredients_from_preformat(preformatted_text: str) -> list[Ingredient]
     Extract and parse all ingredient lines from a Pass 1 preformatted output.
 
     Finds the INGREDIENTS section and parses each line using the CRF parser.
-    Returns a list of Ingredient objects with deduplicated IDs.
+    Returns a list of Ingredient objects with deduplicated IDs (suffix _2, _3, etc.).
+    Duplicate ingredients are kept separate to preserve preparation context for the DAG.
     """
-    # Find the INGREDIENTS section
     ingredients_match = re.search(
         r"^INGREDIENTS:\s*\n(.*?)(?=\n(?:INSTRUCTIONS|TOOLS|NOTES):|\Z)",
         preformatted_text,
@@ -301,15 +458,18 @@ def parse_ingredients_from_preformat(preformatted_text: str) -> list[Ingredient]
     ingredients_text = ingredients_match.group(1)
     lines = [l.strip() for l in ingredients_text.split("\n") if l.strip()]
 
-    # Filter lines that look like section headers (sub-recipe headers like "**Toppings:**")
-    ingredient_lines = [
-        l for l in lines
-        if l.startswith("- ") or (l and l[0].isdigit()) or (l and not l.startswith("**"))
-    ]
+    ingredient_lines = []
+    for l in lines:
+        if l.startswith("**"):
+            continue
+        if "«" in l and "»" in l:
+            ingredient_lines.append(l)
+        elif l.startswith("- ") or (l and l[0].isdigit()):
+            logger.debug(f"Ingredient line without «» annotations, keeping: {l[:80]}")
+            ingredient_lines.append(l)
 
     logger.info(f"Found {len(ingredient_lines)} ingredient lines to parse")
 
-    # Parse each line
     parsed: list[Ingredient] = []
     seen_ids: dict[str, int] = {}
 
@@ -319,7 +479,6 @@ def parse_ingredients_from_preformat(preformatted_text: str) -> list[Ingredient]
             if ingredient is None:
                 continue
 
-            # Deduplicate IDs by appending a suffix
             base_id = ingredient.id
             if base_id in seen_ids:
                 seen_ids[base_id] += 1
@@ -345,61 +504,72 @@ def correct_step_references(
     steps: list,
     ingredient_ids: set[str],
     produced_states: set[str],
+    ingredients: list[Ingredient] | None = None,
 ) -> list:
     """
-    Post-process step references to fix LLM ID mismatches using fuzzy matching.
+    Post-process step references using deterministic ID resolution.
 
-    If a step references an ingredient ID that doesn't exist, try to find the
-    closest valid ID. Log corrections and errors.
+    Resolution chain per ref:
+      1. Exact match against ingredient IDs or produced states
+      2. Suffix strip (_N) then exact match
+      3. Lookup against ingredient original-language names
+
+    Args:
+        steps: list of Step objects from Pass 2
+        ingredient_ids: set of valid ingredient IDs
+        produced_states: set of valid produced state IDs
+        ingredients: list of Ingredient objects (needed for name lookup)
     """
     all_valid = ingredient_ids | produced_states
+
+    name_to_id: dict[str, str] = {}
+    if ingredients:
+        for ing in ingredients:
+            if ing.name:
+                name_to_id[ing.name] = ing.id
+            if ing.name_en:
+                name_to_id[ing.name_en] = ing.id
+
     corrections = 0
 
     for step in steps:
         corrected_uses = []
         for ref in step.uses:
-            if ref in all_valid:
-                corrected_uses.append(ref)
-            else:
-                match = fuzzy_match_id(ref, all_valid)
-                if match:
+            resolved = resolve_ref(ref, all_valid, name_to_id)
+            if resolved:
+                if resolved != ref:
                     logger.warning(
-                        f"Auto-corrected step '{step.id}' ref: '{ref}' → '{match}'"
+                        f"Auto-corrected step '{step.id}' ref: '{ref}' → '{resolved}'"
                     )
-                    corrected_uses.append(match)
                     corrections += 1
-                else:
-                    logger.error(
-                        f"Step '{step.id}' references unknown ID '{ref}', "
-                        f"no close match found — dropping reference"
-                    )
-                    # Do NOT keep the invalid ref; re-validation will catch
-                    # any resulting graph inconsistencies
+                corrected_uses.append(resolved)
+            else:
+                logger.error(
+                    f"Step '{step.id}' references unknown ID '{ref}', "
+                    f"no match found — dropping reference"
+                )
 
         step.uses = corrected_uses
 
-        # Also check requires
         corrected_requires = []
         for ref in step.requires:
-            if ref in produced_states:
-                corrected_requires.append(ref)
-            else:
-                match = fuzzy_match_id(ref, produced_states)
-                if match:
+            resolved = resolve_ref(ref, produced_states, name_to_id)
+            if resolved:
+                if resolved != ref:
                     logger.warning(
-                        f"Auto-corrected step '{step.id}' requires: '{ref}' → '{match}'"
+                        f"Auto-corrected step '{step.id}' requires: '{ref}' → '{resolved}'"
                     )
-                    corrected_requires.append(match)
                     corrections += 1
-                else:
-                    logger.error(
-                        f"Step '{step.id}' requires unknown state '{ref}', "
-                        f"no close match found — dropping reference"
-                    )
+                corrected_requires.append(resolved)
+            else:
+                logger.error(
+                    f"Step '{step.id}' requires unknown state '{ref}', "
+                    f"no match found — dropping reference"
+                )
 
         step.requires = corrected_requires
 
     if corrections:
-        logger.info(f"Fuzzy matching corrected {corrections} ID references")
+        logger.info(f"Deterministic correction resolved {corrections} ID references")
 
     return steps

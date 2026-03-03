@@ -21,23 +21,11 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 # Set working directory
 WORKDIR /app
 
-# Copy dependency files - en assumant que la commande est exécutée depuis le répertoire server/
+# Copy dependency files
 COPY pyproject.toml poetry.lock ./
 
-# Copy all server files - assumant le build depuis le répertoire server/
+# Copy all server files
 COPY . .
-
-# Débogage: Vérifier les fichiers après la copie
-RUN echo "===== Vérification des fichiers après COPY =====" && \
-    echo "Structure du répertoire de travail:" && \
-    ls -la /app/ && \
-    echo "Contenu de data (s'il existe):" && \
-    ls -la /app/data/ || echo "Le répertoire data n'existe pas" && \
-    echo "Contenu de data/recipes (s'il existe):" && \
-    ls -la /app/data/recipes/ || echo "Le répertoire data/recipes n'existe pas" && \
-    echo "Taille des fichiers JSON (s'ils existent):" && \
-    find /app/data/recipes -name "*.recipe.json" -type f -exec ls -lh {} \; | head -n 3 || echo "Pas de fichiers JSON trouvés" && \
-    echo "==== Fin de la vérification ===="
 
 # Create data directory with correct permissions
 RUN mkdir -p /app/data/recipes/images && \
@@ -52,5 +40,5 @@ RUN poetry config virtualenvs.create false && \
 # Expose port
 EXPOSE $PORT
 
-# Start the application avec des paramètres de timeout augmentés
+# Start the application
 CMD ["sh", "-c", "poetry run uvicorn server:app --host 0.0.0.0 --port ${PORT:-3001} --timeout-keep-alive 120 --limit-concurrency 100"]

@@ -98,7 +98,7 @@ export const roundToNearestFive = (minutes) => {
  * @returns {string} La chaîne de temps formatée de manière compacte (ex: "1h 30m")
  */
 export const formatTimeCompact = (minutes) => {
-  if (!minutes) return "0m";
+  if (!minutes) return "0 min";
 
   // Arrondir à 5 minutes près
   const roundedMinutes = roundToNearestFive(minutes);
@@ -115,10 +115,10 @@ export const formatTimeCompact = (minutes) => {
 
     let result = `${days}j`;
     if (remainingHours > 0) {
-      result += ` ${remainingHours}h`;
+      result += ` ${remainingHours} ${remainingHours === 1 ? "hour" : "hours"}`;
     }
     if (remainingMinutes > 0) {
-      result += ` ${remainingMinutes}m`;
+      result += ` ${remainingMinutes} min`;
     }
     return result;
   }
@@ -128,14 +128,15 @@ export const formatTimeCompact = (minutes) => {
   const remainingMinutes = Math.floor((totalSeconds % 3600) / 60);
 
   if (hours > 0) {
+    const hourLabel = hours === 1 ? "hour" : "hours";
     if (remainingMinutes === 0) {
-      return `${hours}h`;
+      return `${hours} ${hourLabel}`;
     }
-    return `${hours}h ${remainingMinutes}m`;
+    return `${hours} ${hourLabel} ${remainingMinutes} min`;
   }
 
   // Moins d'une heure
-  return `${remainingMinutes}m`;
+  return `${remainingMinutes} min`;
 };
 
 /**

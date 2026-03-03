@@ -1,14 +1,36 @@
 import React from "react";
 import { Box, Typography, Checkbox } from "@mui/material";
+import { segmentGlossaryOnly } from "../../../../utils/textUtils";
+import GlossaryTerm from "../../../common/GlossaryTerm";
 
-/**
- * Component for rendering a single ingredient item
- */
+const renderGlossarySegments = (text, glossary) => {
+  if (!glossary?.matchTerms?.length) return text;
+
+  const segments = segmentGlossaryOnly(text, glossary.matchTerms);
+  return segments.map((seg, i) => {
+    if (seg.type === "glossary" && seg.glossaryEntry) {
+      return (
+        <GlossaryTerm
+          key={i}
+          entry={seg.glossaryEntry}
+          allTerms={glossary.terms}
+          categoryMap={glossary.categoryMap}
+          language={glossary.language}
+        >
+          {seg.text}
+        </GlossaryTerm>
+      );
+    }
+    return <React.Fragment key={i}>{seg.text}</React.Fragment>;
+  });
+};
+
 const IngredientItem = ({
   ingredient,
   sortByCategory,
   isChecked,
   onCheckChange,
+  glossary,
 }) => {
   return (
     <Box
@@ -16,8 +38,8 @@ const IngredientItem = ({
       sx={{
         display: "grid",
         gridTemplateColumns: sortByCategory
-          ? "0.3fr 0.7fr auto" // With checkbox
-          : "0.3fr 0.7fr", // Without checkbox
+          ? "0.3fr 0.7fr auto"
+          : "0.3fr 0.7fr",
         gap: 2,
         alignItems: "start",
         py: 0.25,
@@ -33,7 +55,6 @@ const IngredientItem = ({
         transition: "opacity 0.15s, text-decoration 0.15s",
       }}
     >
-      {/* Amount with unit */}
       <Typography
         variant="body1"
         sx={{
@@ -44,13 +65,12 @@ const IngredientItem = ({
         {ingredient.displayAmount}
       </Typography>
 
-      {/* Ingredient name and state */}
       <Box sx={{ textAlign: "right" }}>
         <Typography variant="body1" component="span">
           {ingredient.name}
           {ingredient.displayState && (
             <span style={{ fontStyle: "italic", marginLeft: "4px" }}>
-              ({ingredient.displayState})
+              ({renderGlossarySegments(ingredient.displayState, glossary)})
             </span>
           )}
         </Typography>
@@ -66,14 +86,13 @@ const IngredientItem = ({
               opacity: 0.8,
             }}
           >
-            {ingredient.initialState}
+            {renderGlossarySegments(ingredient.initialState, glossary)}
           </Typography>
         )}
       </Box>
 
-      {/* Checkbox (only in shopping list mode) */}
       {sortByCategory && (
-        <Box sx={{ textAlign: "right" }}>
+        <Box sx={{ textAlign: "right", "@media print": { display: "none" } }}>
           <Checkbox
             checked={isChecked}
             onChange={(e) => onCheckChange(ingredient, e.target.checked)}

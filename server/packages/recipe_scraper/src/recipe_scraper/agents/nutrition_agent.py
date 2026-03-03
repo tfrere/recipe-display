@@ -171,7 +171,7 @@ class NutritionAgent:
         try:
             from recipe_scraper.recipe_enricher import RecipeEnricher
             RecipeEnricher._sanitize_types(recipe_data)
-        except ImportError:
+        except (ImportError, AttributeError):
             pass
 
         ingredients = recipe_data.get("ingredients", [])

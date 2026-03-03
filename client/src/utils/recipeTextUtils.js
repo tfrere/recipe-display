@@ -2,10 +2,12 @@ import { getFormattedSubRecipes } from "./recipeStructureUtils";
 
 /**
  * Formate une recette en texte pour l'impression ou la copie
+ * @param {object} recipe
+ * @param {function} [amountFormatter] - optional (amount, unit, ingredient) => string
  */
-export const formatRecipeText = (recipe) => {
+export const formatRecipeText = (recipe, amountFormatter) => {
   const { metadata = {} } = recipe || {};
-  const subRecipes = getFormattedSubRecipes(recipe);
+  const subRecipes = getFormattedSubRecipes(recipe, amountFormatter);
 
   let text = `${metadata.title}
 
@@ -40,17 +42,19 @@ Pour ${metadata.servings} personnes${
 
 /**
  * Copie le texte de la recette dans le presse-papier
+ * @param {object} recipe
+ * @param {function} [amountFormatter] - optional (amount, unit, ingredient) => string
  */
-export const copyRecipeToClipboard = (recipe) => {
-  const recipeText = formatRecipeText(recipe);
+export const copyRecipeToClipboard = (recipe, amountFormatter) => {
+  const recipeText = formatRecipeText(recipe, amountFormatter);
   return navigator.clipboard.writeText(recipeText);
 };
 
 /**
  * Ouvre une fenêtre d'impression pour la recette
  */
-export const printRecipe = (recipe) => {
-  const recipeText = formatRecipeText(recipe);
+export const printRecipe = (recipe, amountFormatter) => {
+  const recipeText = formatRecipeText(recipe, amountFormatter);
 
   const printWindow = window.open("", "_blank");
   printWindow.document.write(`

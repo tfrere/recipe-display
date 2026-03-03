@@ -6,11 +6,12 @@ Pass 1.5 (NER):        Ingredient lines → Ingredient objects via NER model + u
 Pass 2   (DAG):        Structured text + pre-parsed ingredients → Recipe JSON with validated graph
 
 Pass 1 uses the raw OpenAI client (text output).
-Pass 1.5 uses edwardjross/xlm-roberta-base-finetuned-recipe-all (token classification).
+Pass 1.5 uses strangetom/ingredient-parser (CRF v2.5.0, deterministic parsing).
 Pass 2 uses Instructor (structured JSON output with Pydantic validation).
 """
 
 import os
+import re
 import logging
 from typing import Optional, Callable, Awaitable, Literal
 
@@ -32,8 +33,19 @@ from .services.ingredient_parser import (
     correct_step_references,
 )
 from .exceptions import RecipeRejectedError
+from .shared import clean_title
 
 logger = logging.getLogger(__name__)
+
+_LANG_RE = re.compile(r"^LANGUAGE:\s*(\w+)", re.MULTILINE)
+
+
+def _extract_language(preformatted: str) -> str:
+    """Extract ISO 639-1 language code from Pass 1 preformatted output."""
+    match = _LANG_RE.search(preformatted)
+    if match:
+        return match.group(1).strip().lower()[:2]
+    return "en"
 
 # Provider configurations
 PROVIDERS = {
@@ -50,6 +62,7 @@ PROVIDERS = {
 }
 
 DEFAULT_PROVIDER = "openrouter"  # OpenRouter by default for convenience
+PIPELINE_VERSION = "3.0.0"
 MAX_RETRIES = 3
 MAX_TOKENS_PREFORMAT = 4096
 MAX_TOKENS_DAG = 8192
@@ -65,11 +78,9 @@ class RecipeGenerator:
 
     Features:
     - 3-pass architecture: LLM preformat → NER ingredient parsing → LLM DAG construction
-    - NER model (edwardjross/xlm-roberta-base-finetuned-recipe-all) for deterministic ingredient extraction
-    - Unit normalization and fuzzy matching for robust ID correction
+    - CRF parser (strangetom/ingredient-parser v2.5.0) for deterministic ingredient extraction
+    - Deterministic ID resolution (suffix strip + name lookup) for robust reference correction
     - Automatic Pydantic validation with retries on Pass 2
-    - Streaming progress updates
-    - Robust error handling
     - Supports DeepSeek direct or OpenRouter
     """
 
@@ -136,7 +147,7 @@ class RecipeGenerator:
         progress_callback: Optional[Callable[[str], Awaitable[None]]] = None
     ) -> Recipe:
         """
-        Generate a structured recipe from raw text using the 2-pass pipeline.
+        Generate a structured recipe from raw text using the 3-pass pipeline.
 
         Pass 1: Preformat raw text into clean structured text.
         Pass 2: Build Recipe JSON graph from structured text.
@@ -159,12 +170,18 @@ class RecipeGenerator:
 
         logger.info(f"[Pass 1] Preformatting recipe ({len(recipe_text)} chars)")
 
+        preformat_max_tokens = MAX_TOKENS_PREFORMAT
+        if len(recipe_text) > 30_000:
+            preformat_max_tokens = 8192
+        elif len(recipe_text) > 15_000:
+            preformat_max_tokens = 6144
+
         preformatted = await preformat_recipe(
             client=self._base_client,
             model=self.model,
             recipe_text=recipe_text,
             image_urls=image_urls,
-            max_tokens=MAX_TOKENS_PREFORMAT,
+            max_tokens=preformat_max_tokens,
             extra_body=self._provider_routing or None,
         )
 
@@ -230,11 +247,15 @@ class RecipeGenerator:
             # (only if CRF produced results; otherwise keep LLM ingredients)
             if use_ner_ingredients:
                 recipe.ingredients = ner_ingredients
+                recipe.metadata.ingredientSource = "ner"
 
-                # Correct step references using fuzzy matching
+                # Correct step references using deterministic resolution
                 ingredient_ids = {ing.id for ing in ner_ingredients}
                 produced_states = {step.produces for step in recipe.steps}
-                correct_step_references(recipe.steps, ingredient_ids, produced_states)
+                correct_step_references(
+                    recipe.steps, ingredient_ids, produced_states,
+                    ingredients=ner_ingredients,
+                )
 
                 # Re-validate graph integrity after post-processing
                 try:
@@ -243,13 +264,18 @@ class RecipeGenerator:
                     logger.error(f"[Post-processing] Graph invalid after corrections: {e}")
                     raise
             else:
+                recipe.metadata.ingredientSource = "llm"
                 logger.warning("[Post-processing] Using LLM ingredients (CRF was empty)")
 
-            # Store original text and preformatted text for debugging
+            # Store original text, preformatted text, and detected language
             recipe.originalText = recipe_text.strip()
             recipe.preformattedText = preformatted
+            recipe.metadata.language = _extract_language(preformatted)
 
-            logger.info(f"[Pass 2] Recipe generated: {recipe.metadata.title}")
+            # Strip trailing parentheticals from title (e.g. "(Vegan + GF)")
+            recipe.metadata.title = clean_title(recipe.metadata.title)
+
+            logger.info(f"[Pass 2] Recipe generated: {recipe.metadata.title} (lang={recipe.metadata.language})")
 
             if progress_callback:
                 await progress_callback("Recipe structured successfully!")
@@ -268,147 +294,6 @@ class RecipeGenerator:
             logger.error(f"[Pass 2] DAG generation failed: {e}")
             raise
 
-    async def generate_with_streaming(
-        self,
-        recipe_text: str,
-        image_urls: Optional[list[str]] = None,
-        progress_callback: Optional[Callable[[str], Awaitable[None]]] = None,
-    ) -> Recipe:
-        """
-        Generate recipe with streaming partial results on Pass 2.
-
-        Pass 1 runs fully first, then Pass 2 streams partial results
-        for more granular progress updates.
-
-        Args:
-            recipe_text: Raw recipe content
-            image_urls: Optional list of image URLs
-            progress_callback: Optional async callback for progress updates
-
-        Returns:
-            Recipe: Validated and structured recipe
-        """
-        # ── Pass 1: Preformat (non-streaming) ─────────────────────────────
-        if progress_callback:
-            await progress_callback("Cleaning and preformatting recipe...")
-
-        logger.info(f"[Pass 1] Preformatting recipe ({len(recipe_text)} chars)")
-
-        preformatted = await preformat_recipe(
-            client=self._base_client,
-            model=self.model,
-            recipe_text=recipe_text,
-            image_urls=image_urls,
-            max_tokens=MAX_TOKENS_PREFORMAT,
-            extra_body=self._provider_routing or None,
-        )
-
-        logger.info(f"[Pass 1] Complete — {len(preformatted)} chars output")
-
-        # ── Pass 1.5: NER ingredient parsing ──────────────────────────────
-        if progress_callback:
-            await progress_callback("Parsing ingredients...")
-
-        logger.info("[Pass 1.5] Parsing ingredients from preformatted text (streaming)")
-
-        try:
-            ner_ingredients = parse_ingredients_from_preformat(preformatted)
-        except Exception as e:
-            logger.error(f"[Pass 1.5] CRF parsing failed: {e}", exc_info=True)
-            ner_ingredients = []
-
-        use_ner_ingredients = len(ner_ingredients) > 0
-        if not use_ner_ingredients:
-            logger.warning(
-                "[Pass 1.5] No CRF ingredients parsed — "
-                "LLM ingredients will be kept after Pass 2"
-            )
-        else:
-            logger.info(f"[Pass 1.5] Parsed {len(ner_ingredients)} ingredients")
-
-        import json
-        ingredients_json = json.dumps(
-            [ing.model_dump(exclude_none=True) for ing in ner_ingredients],
-            indent=2,
-            ensure_ascii=False,
-        )
-
-        # ── Pass 2: DAG construction (streaming) ──────────────────────────
-        if progress_callback:
-            await progress_callback("Building recipe graph...")
-
-        logger.info("[Pass 2] Streaming DAG construction")
-
-        messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": get_user_prompt(preformatted, ingredients_json)},
-        ]
-
-        partial_recipe = None
-        current_section = ""
-
-        try:
-            async for partial in self.client.chat.completions.create_partial(
-                model=self.model,
-                messages=messages,
-                response_model=Recipe,
-                max_tokens=MAX_TOKENS_DAG,
-                temperature=0.1,
-                **({"extra_body": self._provider_routing} if self._provider_routing else {}),
-            ):
-                partial_recipe = partial
-
-                # Progress updates based on streaming sections
-                if partial.metadata and partial.metadata.title and current_section != "metadata":
-                    current_section = "metadata"
-                    if progress_callback:
-                        await progress_callback(f"Processing: {partial.metadata.title}")
-
-                elif partial.ingredients and len(partial.ingredients) > 0 and current_section != "ingredients":
-                    current_section = "ingredients"
-                    if progress_callback:
-                        await progress_callback(f"Found {len(partial.ingredients)} ingredients...")
-
-                elif partial.steps and len(partial.steps) > 0 and current_section != "steps":
-                    current_section = "steps"
-                    if progress_callback:
-                        await progress_callback(f"Generating steps ({len(partial.steps)})...")
-
-            if partial_recipe is None:
-                raise ValueError("No recipe generated")
-
-            # Replace LLM-generated ingredients with CRF-parsed ones
-            # (only if CRF produced results; otherwise keep LLM ingredients)
-            if use_ner_ingredients:
-                partial_recipe.ingredients = ner_ingredients
-
-                # Correct step references using fuzzy matching
-                ingredient_ids = {ing.id for ing in ner_ingredients}
-                produced_states = {step.produces for step in partial_recipe.steps}
-                correct_step_references(partial_recipe.steps, ingredient_ids, produced_states)
-
-                # Re-validate graph integrity after post-processing
-                try:
-                    Recipe.model_validate(partial_recipe.model_dump())
-                except ValidationError as e:
-                    logger.error(f"[Post-processing] Graph invalid after corrections: {e}")
-                    raise
-            else:
-                logger.warning("[Post-processing] Using LLM ingredients (CRF was empty)")
-
-            partial_recipe.originalText = recipe_text.strip()
-            partial_recipe.preformattedText = preformatted
-
-            logger.info(f"[Pass 2] Recipe streamed: {partial_recipe.metadata.title}")
-
-            if progress_callback:
-                await progress_callback("Recipe completed!")
-
-            return partial_recipe
-
-        except Exception as e:
-            logger.error(f"[Pass 2] Streaming generation failed: {e}")
-            raise
 
 
 # Convenience function for backwards compatibility
@@ -427,90 +312,3 @@ async def generate_recipe(
     """
     generator = RecipeGenerator(api_key=api_key, provider=provider)
     return await generator.generate(recipe_text, image_urls, progress_callback)
-
-
-# Test function
-async def test_generator():
-    """Test the generator with a sample recipe."""
-    import sys
-    from dotenv import load_dotenv
-
-    # Load env from parent server folder
-    load_dotenv()
-    load_dotenv('../../.env')
-
-    # Check which provider to use
-    provider = "openrouter"  # Default
-    if os.getenv("DEEPSEEK_API_KEY") and os.getenv("DEEPSEEK_API_KEY") != "your-deepseek-api-key-here":
-        provider = "deepseek"
-    elif os.getenv("OPENROUTER_API_KEY"):
-        provider = "openrouter"
-    else:
-        print("No API key found!")
-        print("   Set OPENROUTER_API_KEY or DEEPSEEK_API_KEY in your .env file")
-        sys.exit(1)
-
-    print(f"Using provider: {provider}")
-    print(f"   Model: {PROVIDERS[provider]['model']}")
-    print()
-
-    sample_recipe = """
-    Classic Chocolate Chip Cookies
-
-    Prep time: 15 minutes
-    Cook time: 10-12 minutes
-    Makes: 24 cookies
-
-    Ingredients:
-    - 2 1/4 cups all-purpose flour
-    - 1 tsp baking soda
-    - 1 tsp salt
-    - 1 cup (2 sticks) butter, softened
-    - 3/4 cup granulated sugar
-    - 3/4 cup packed brown sugar
-    - 2 large eggs
-    - 1 tsp vanilla extract
-    - 2 cups chocolate chips
-
-    Instructions:
-    1. Preheat oven to 375°F (190°C).
-    2. Combine flour, baking soda and salt in small bowl.
-    3. Beat butter, granulated sugar, brown sugar and vanilla extract in large mixer bowl until creamy.
-    4. Add eggs, one at a time, beating well after each addition.
-    5. Gradually beat in flour mixture.
-    6. Stir in chocolate chips.
-    7. Drop rounded tablespoon of dough onto ungreased baking sheets.
-    8. Bake for 9 to 11 minutes or until golden brown.
-    9. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.
-    """
-
-    async def progress(msg: str):
-        print(f"   {msg}")
-
-    try:
-        generator = RecipeGenerator(provider=provider)
-        recipe = await generator.generate(sample_recipe, progress_callback=progress)
-
-        print(f"\nRecipe generated successfully!")
-        print(f"Title: {recipe.metadata.title}")
-        print(f"Servings: {recipe.metadata.servings}")
-        print(f"Difficulty: {recipe.metadata.difficulty}")
-        print(f"Ingredients: {len(recipe.ingredients)}")
-        print(f"Steps: {len(recipe.steps)}")
-        print(f"Final state: {recipe.finalState}")
-
-        # Print full JSON
-        import json
-        print(f"\nFull recipe JSON:")
-        print(json.dumps(recipe.model_dump(), indent=2, ensure_ascii=False))
-        
-    except Exception as e:
-        print(f"Error: {e}")
-        import traceback
-        traceback.print_exc()
-        sys.exit(1)
-
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(test_generator())

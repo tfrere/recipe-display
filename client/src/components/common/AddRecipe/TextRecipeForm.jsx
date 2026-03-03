@@ -1,10 +1,12 @@
 import React, { useState, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, TextField, Button, Typography, IconButton } from "@mui/material";
 import { useDropzone } from "react-dropzone";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const TextRecipeForm = ({ onSubmit, error }) => {
+  const { t } = useTranslation();
   const [recipeText, setRecipeText] = useState("");
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState("");
@@ -61,7 +63,7 @@ const TextRecipeForm = ({ onSubmit, error }) => {
         fullWidth
         multiline
         rows={6}
-        label="Recipe text"
+        label={t("addRecipe.recipeText")}
         value={recipeText}
         onChange={(e) => setRecipeText(e.target.value)}
         error={!!error}
@@ -119,11 +121,11 @@ const TextRecipeForm = ({ onSubmit, error }) => {
             <CloudUploadIcon sx={{ fontSize: 48, color: "grey.500", mb: 1 }} />
             <Typography variant="body1" color="text.secondary">
               {isDragActive
-                ? "Drop the image here"
-                : "Click or drop an image here"}
+                ? t("addRecipe.dropImage")
+                : t("addRecipe.clickOrDropImage")}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              JPG, PNG or WebP
+              {t("addRecipe.imageFormats")}
             </Typography>
           </Box>
         )}
@@ -135,7 +137,7 @@ const TextRecipeForm = ({ onSubmit, error }) => {
           disabled={!recipeText}
           variant="contained"
         >
-          Add
+          {t("addRecipe.add")}
         </Button>
       </Box>
     </Box>

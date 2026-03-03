@@ -31,7 +31,7 @@ def upload_recipes():
     """Upload all recipes and images to the server."""
     load_dotenv()
     # Construire l'URL de base avec le bon chemin d'API
-    api_base = os.getenv("RECIPE_SERVER_URL", "https://recipes-api.tfrere.com")
+    api_base = os.getenv("RECIPE_SERVER_URL", "http://localhost:3001")
     base_url = f"{api_base}/api/recipe-files"
     
     if not api_base:

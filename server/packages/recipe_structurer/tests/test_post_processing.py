@@ -7,15 +7,19 @@ These tests validate that:
 - Invalid references are dropped (not kept)
 - Re-validation catches broken graphs after post-processing
 - Deduplicated IDs (flour, flour_1) are handled
+- Suffix strip resolves _N mismatches
+- Name lookup resolves original-language refs to English IDs
 """
 
 import pytest
 from recipe_structurer.models.recipe import Recipe, Metadata, Ingredient, Step
 from recipe_structurer.services.ingredient_parser import (
     correct_step_references,
-    fuzzy_match_id,
+    resolve_ref,
     make_ingredient_id,
     normalize_unit,
+    parse_ingredient_line,
+    parse_ingredients_from_preformat,
 )
 
 
@@ -72,10 +76,14 @@ def _make_recipe(
 # ═══════════════════════════════════════════════════════════════════
 
 class TestCorrectStepReferences:
-    """Tests for the fuzzy reference correction function."""
+    """Tests for the deterministic reference correction function."""
 
     def test_valid_references_unchanged(self):
         """References that already exist should be left as-is."""
+        ingredients = [
+            _make_ingredient("flour", "Farine"),
+            _make_ingredient("sugar", "Sucre"),
+        ]
         steps = [
             _make_step("s1", uses=["flour", "sugar"], produces="dry_mix"),
             _make_step("s2", uses=["dry_mix"], produces="dough"),
@@ -83,38 +91,79 @@ class TestCorrectStepReferences:
         ingredient_ids = {"flour", "sugar"}
         produced_states = {"dry_mix", "dough"}
 
-        correct_step_references(steps, ingredient_ids, produced_states)
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
 
         assert steps[0].uses == ["flour", "sugar"]
         assert steps[1].uses == ["dry_mix"]
 
-    def test_fuzzy_match_corrects_typos(self):
-        """Close typos should be auto-corrected via Levenshtein distance."""
+    def test_suffix_strip_corrects_dedup_mismatch(self):
+        """salt_1 should resolve to salt when salt exists but salt_1 doesn't."""
+        ingredients = [
+            _make_ingredient("salt", "Sel"),
+            _make_ingredient("flour", "Farine"),
+        ]
         steps = [
-            _make_step("s1", uses=["flor"], produces="dry_mix"),  # typo: flor → flour
+            _make_step("s1", uses=["flour", "salt_1"], produces="dry_mix"),
+        ]
+        ingredient_ids = {"salt", "flour"}
+        produced_states = {"dry_mix"}
+
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
+
+        assert steps[0].uses == ["flour", "salt"]
+
+    def test_name_lookup_resolves_french_ref(self):
+        """A French ref like 'oignon' should resolve to 'onions' via name lookup."""
+        ingredients = [
+            _make_ingredient("onions", "oignon", name_en="onions"),
+            _make_ingredient("garlic", "ail", name_en="garlic"),
+        ]
+        steps = [
+            _make_step("s1", uses=["oignon", "garlic"], produces="base"),
+        ]
+        ingredient_ids = {"onions", "garlic"}
+        produced_states = {"base"}
+
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
+
+        assert steps[0].uses == ["onions", "garlic"]
+
+    def test_typo_not_corrected_without_name_match(self):
+        """Pure typos (flor → flour) are NOT corrected — no more Levenshtein."""
+        ingredients = [
+            _make_ingredient("flour", "Farine"),
+            _make_ingredient("sugar", "Sucre"),
+        ]
+        steps = [
+            _make_step("s1", uses=["flor"], produces="dry_mix"),
         ]
         ingredient_ids = {"flour", "sugar"}
         produced_states = {"dry_mix"}
 
-        correct_step_references(steps, ingredient_ids, produced_states)
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
 
-        assert steps[0].uses == ["flour"]
+        assert steps[0].uses == []  # dropped, not fuzzy-matched
 
     def test_invalid_ref_dropped_when_no_match(self):
-        """References with no close match should be dropped, not kept."""
+        """References with no match should be dropped, not kept."""
+        ingredients = [
+            _make_ingredient("flour", "Farine"),
+            _make_ingredient("sugar", "Sucre"),
+        ]
         steps = [
             _make_step("s1", uses=["flour", "completely_invented_id"], produces="dry_mix"),
         ]
         ingredient_ids = {"flour", "sugar"}
         produced_states = {"dry_mix"}
 
-        correct_step_references(steps, ingredient_ids, produced_states)
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
 
         assert steps[0].uses == ["flour"]
         assert "completely_invented_id" not in steps[0].uses
 
     def test_invalid_requires_dropped_when_no_match(self):
         """Invalid requires references should also be dropped."""
+        ingredients = [_make_ingredient("flour", "Farine")]
         steps = [
             _make_step(
                 "s1",
@@ -126,12 +175,16 @@ class TestCorrectStepReferences:
         ingredient_ids = {"flour"}
         produced_states = {"dry_mix"}
 
-        correct_step_references(steps, ingredient_ids, produced_states)
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
 
         assert steps[0].requires == []
 
     def test_mixed_valid_and_invalid(self):
         """Only invalid refs are dropped; valid ones are preserved."""
+        ingredients = [
+            _make_ingredient("flour", "Farine"),
+            _make_ingredient("sugar", "Sucre"),
+        ]
         steps = [
             _make_step(
                 "s1",
@@ -142,9 +195,26 @@ class TestCorrectStepReferences:
         ingredient_ids = {"flour", "sugar"}
         produced_states = {"dry_mix"}
 
-        correct_step_references(steps, ingredient_ids, produced_states)
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
 
         assert steps[0].uses == ["flour", "sugar"]
+
+    def test_no_lemon_to_onion(self):
+        """The old fuzzy matching would map lemon→onion (d=3). This must NOT happen."""
+        ingredients = [
+            _make_ingredient("onion", "Oignon"),
+            _make_ingredient("garlic", "Ail"),
+        ]
+        steps = [
+            _make_step("s1", uses=["lemon", "garlic"], produces="base"),
+        ]
+        ingredient_ids = {"onion", "garlic"}
+        produced_states = {"base"}
+
+        correct_step_references(steps, ingredient_ids, produced_states, ingredients=ingredients)
+
+        assert "onion" not in steps[0].uses  # lemon must NOT become onion
+        assert steps[0].uses == ["garlic"]
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -294,7 +364,10 @@ class TestUtilityFunctions:
     def test_make_ingredient_id(self):
         assert make_ingredient_id("All-Purpose Flour") == "allpurpose_flour"
         assert make_ingredient_id("egg") == "egg"
-        assert make_ingredient_id("crème fraîche") == "crme_frache"
+        assert make_ingredient_id("crème fraîche") == "creme_fraiche"
+        assert make_ingredient_id("börek") == "borek"
+        assert make_ingredient_id("jalapeño") == "jalapeno"
+        assert make_ingredient_id("pâte brisée") == "pate_brisee"
 
     def test_normalize_unit(self):
         assert normalize_unit("tablespoons") == "tbsp"
@@ -304,21 +377,250 @@ class TestUtilityFunctions:
         assert normalize_unit("") is None
         assert normalize_unit("kg") == "kg"
 
-    def test_fuzzy_match_exact(self):
-        valid = {"flour", "sugar", "butter"}
-        assert fuzzy_match_id("flour", valid) == "flour"
 
-    def test_fuzzy_match_close(self):
-        valid = {"flour", "sugar", "butter"}
-        assert fuzzy_match_id("flor", valid) == "flour"
+class TestResolveRef:
+    """Tests for the deterministic resolve_ref function."""
 
-    def test_fuzzy_match_no_match(self):
+    def test_exact_match(self):
         valid = {"flour", "sugar", "butter"}
-        assert fuzzy_match_id("completely_different_thing", valid) is None
+        assert resolve_ref("flour", valid, {}) == "flour"
+
+    def test_suffix_strip(self):
+        valid = {"salt", "flour"}
+        assert resolve_ref("salt_1", valid, {}) == "salt"
+
+    def test_suffix_strip_to_sibling(self):
+        valid = {"salt_1", "flour"}
+        assert resolve_ref("salt_2", valid, {}) == "salt_1"
+
+    def test_name_lookup_french(self):
+        valid = {"onions", "garlic"}
+        name_to_id = {"oignon": "onions", "ail": "garlic"}
+        assert resolve_ref("oignon", valid, name_to_id) == "onions"
+
+    def test_name_lookup_partial(self):
+        valid = {"grana_padano_cheese"}
+        name_to_id = {"grana padano": "grana_padano_cheese"}
+        assert resolve_ref("grana_padano", valid, name_to_id) == "grana_padano_cheese"
+
+    def test_no_match_returns_none(self):
+        valid = {"flour", "sugar"}
+        assert resolve_ref("completely_different_thing", valid, {}) is None
+
+    def test_lemon_does_not_match_onion(self):
+        valid = {"onion", "garlic"}
+        name_to_id = {"oignon": "onion", "ail": "garlic"}
+        assert resolve_ref("lemon", valid, name_to_id) is None
 
 
 # ═══════════════════════════════════════════════════════════════════
-# NOTE: Translation validation tests are in the recipe_scraper package
-# (server/packages/recipe_scraper/tests/test_translation_validation.py)
-# because IngredientTranslator lives there, not in recipe_structurer.
+# shared.py — ISO 8601 parsing and utilities
 # ═══════════════════════════════════════════════════════════════════
+
+from recipe_structurer.shared import (
+    parse_iso8601_minutes,
+    minutes_to_iso8601,
+    is_valid_iso8601_duration,
+    EQUIPMENT_KEYWORDS,
+)
+
+
+class TestParseISO8601:
+    def test_minutes_only(self):
+        assert parse_iso8601_minutes("PT5M") == 5.0
+
+    def test_hours_only(self):
+        assert parse_iso8601_minutes("PT2H") == 120.0
+
+    def test_hours_and_minutes(self):
+        assert parse_iso8601_minutes("PT1H30M") == 90.0
+
+    def test_seconds(self):
+        assert parse_iso8601_minutes("PT45S") == 0.75
+
+    def test_full_hms(self):
+        assert parse_iso8601_minutes("PT1H15M30S") == 75.5
+
+    def test_none_returns_none(self):
+        assert parse_iso8601_minutes(None) is None
+
+    def test_empty_returns_none(self):
+        assert parse_iso8601_minutes("") is None
+
+    def test_invalid_returns_none(self):
+        assert parse_iso8601_minutes("5 minutes") is None
+
+    def test_case_insensitive(self):
+        assert parse_iso8601_minutes("pt30m") == 30.0
+
+
+class TestMinutesToISO8601:
+    def test_minutes_only(self):
+        assert minutes_to_iso8601(5) == "PT5M"
+
+    def test_hours_and_minutes(self):
+        assert minutes_to_iso8601(90) == "PT1H30M"
+
+    def test_hours_only(self):
+        assert minutes_to_iso8601(120) == "PT2H"
+
+    def test_zero(self):
+        assert minutes_to_iso8601(0) == "PT0M"
+
+
+class TestIsValidISO8601:
+    def test_valid(self):
+        assert is_valid_iso8601_duration("PT30M") is True
+
+    def test_invalid(self):
+        assert is_valid_iso8601_duration("30 minutes") is False
+
+    def test_none(self):
+        assert is_valid_iso8601_duration(None) is False
+
+
+class TestEquipmentKeywords:
+    def test_contains_preheat(self):
+        assert "preheat" in EQUIPMENT_KEYWORDS
+
+    def test_contains_prechauffer(self):
+        assert "préchauffer" in EQUIPMENT_KEYWORDS
+
+    def test_is_frozenset(self):
+        assert isinstance(EQUIPMENT_KEYWORDS, frozenset)
+
+
+# ═══════════════════════════════════════════════════════════════════
+# TESTS: parse_ingredient_line (Pass 1.5 CRF parsing)
+# ═══════════════════════════════════════════════════════════════════
+
+class TestParseIngredientLine:
+    """Tests for parsing individual ingredient lines from preformatted text."""
+
+    def test_french_with_all_annotations(self):
+        line = '- 250g «champignons de Paris» [250g mushrooms, sliced] {produce}, émincés'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.name == "champignons de Paris"
+        assert ing.category == "produce"
+        assert ing.name_en is not None
+        assert "mushroom" in ing.name_en.lower()
+
+    def test_english_basic(self):
+        line = '- 2 tbsp «olive oil» [2 tablespoons olive oil] {oil}'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.name == "olive oil"
+        assert ing.category == "oil"
+
+    def test_french_dairy(self):
+        line = '- 200ml «crème fraîche» [200ml heavy cream] {dairy}'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.name == "crème fraîche"
+        assert ing.category == "dairy"
+        assert ing.id == "creme_fraiche" or "cream" in ing.id
+
+    def test_optional_ingredient(self):
+        line = '- «coriandre fraîche» [fresh cilantro] {herb} (optional)'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.optional is True
+
+    def test_no_quantity_spice(self):
+        line = '- «sel» [salt, to taste] {spice}'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.category == "spice"
+
+    def test_english_with_preparation(self):
+        line = '- 6 cloves «garlic» [6 cloves garlic, minced] {produce}, minced'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.name == "garlic"
+        assert ing.category == "produce"
+
+    def test_grain_category(self):
+        line = '- 200g «riz basmati» [200g basmati rice] {grain}'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.category == "grain"
+
+    def test_legume_category(self):
+        line = '- 400g «pois chiches» [400g chickpeas, drained] {legume}, égouttés'
+        ing = parse_ingredient_line(line)
+        assert ing is not None
+        assert ing.category == "legume"
+
+    def test_line_without_annotations_returns_none(self):
+        line = 'Vous pouvez substituer le beurre par de la margarine'
+        ing = parse_ingredient_line(line)
+        assert ing is None
+
+    def test_empty_line_returns_none(self):
+        ing = parse_ingredient_line("")
+        assert ing is None
+
+
+class TestParseIngredientsFromPreformat:
+    """Tests for extracting all ingredients from a preformatted block."""
+
+    SAMPLE_PREFORMAT = """TITLE: Salade César
+DESCRIPTION: Une salade classique
+
+INGREDIENTS:
+**Salade:**
+- 1 «laitue romaine» [1 romaine lettuce] {produce}
+- 100g «parmesan» [100g parmesan cheese] {dairy}, râpé
+- 50g «croûtons» [50g croutons] {grain}
+
+**Sauce:**
+- 2 c-à-s «huile d'olive» [2 tablespoons olive oil] {oil}
+- 1 «ail» [1 clove garlic] {produce}
+- «sel» [salt, to taste] {spice}
+
+INSTRUCTIONS:
+1. Laver la laitue
+"""
+
+    def test_extracts_all_ingredients(self):
+        result = parse_ingredients_from_preformat(self.SAMPLE_PREFORMAT)
+        assert len(result) == 6
+
+    def test_skips_sub_recipe_headers(self):
+        result = parse_ingredients_from_preformat(self.SAMPLE_PREFORMAT)
+        names = [ing.name for ing in result]
+        assert "Salade:" not in names
+        assert "Sauce:" not in names
+
+    def test_no_ingredients_section(self):
+        text = "TITLE: Test\nINSTRUCTIONS:\n1. Do something"
+        result = parse_ingredients_from_preformat(text)
+        assert result == []
+
+    def test_rejects_lines_without_annotations(self):
+        text = """INGREDIENTS:
+- 100g «farine» [100g flour] {pantry}
+Note: vous pouvez utiliser de la farine complète
+- 50g «sucre» [50g sugar] {pantry}
+
+INSTRUCTIONS:
+1. Mélanger
+"""
+        result = parse_ingredients_from_preformat(text)
+        assert len(result) == 2
+        names = [ing.name for ing in result]
+        assert "farine" in names
+        assert "sucre" in names
+
+    def test_dedup_ids(self):
+        text = """INGREDIENTS:
+- 100g «farine» [100g all-purpose flour] {pantry}
+- 50g «farine» [50g bread flour] {pantry}
+
+INSTRUCTIONS:
+1. Mélanger
+"""
+        result = parse_ingredients_from_preformat(text)
+        ids = [ing.id for ing in result]
+        assert len(set(ids)) == 2

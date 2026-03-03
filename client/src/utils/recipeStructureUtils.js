@@ -1,10 +1,19 @@
 /**
- * Formate un ingrédient avec sa quantité et son état
+ * Formate un ingrédient avec sa quantité et son état.
+ * @param {object} ingredient - ingredient from recipe.ingredients
+ * @param {object} data - ingredient reference from subRecipe.ingredients
+ * @param {function} [amountFormatter] - optional (amount, unit, ingredient) => string
  */
-const formatIngredient = (ingredient, data) => {
+const formatIngredient = (ingredient, data, amountFormatter) => {
   const amount = data.amount;
-  const unit = ingredient.unit;
+  const unit = data.unit || ingredient.unit;
   const state = data.state ? `, ${data.state}` : "";
+
+  if (amountFormatter && amount != null) {
+    const formatted = amountFormatter(amount, unit, ingredient);
+    return `- ${formatted} ${ingredient.name}${state}`;
+  }
+
   return `- ${amount != null ? amount + " " : ""}${unit || ""}${
     unit ? " " : ""
   }${ingredient.name}${state}`;
@@ -22,12 +31,11 @@ const formatStep = (step, index) => {
 /**
  * Formate les ingrédients d'une sous-recette
  */
-export const formatSubRecipeIngredients = (subRecipe, recipe) => {
+export const formatSubRecipeIngredients = (subRecipe, recipe, amountFormatter) => {
   if (!subRecipe.ingredients || !recipe.ingredients) {
     return [];
   }
 
-  // Build ingredients map for quick lookup
   const ingredientsMap = {};
   recipe.ingredients.forEach((ing) => {
     ingredientsMap[ing.id] = ing;
@@ -39,7 +47,7 @@ export const formatSubRecipeIngredients = (subRecipe, recipe) => {
       if (!ingredient) {
         return null;
       }
-      return formatIngredient(ingredient, data);
+      return formatIngredient(ingredient, data, amountFormatter);
     })
     .filter(Boolean);
 };
@@ -58,8 +66,8 @@ export const formatSubRecipeSteps = (subRecipe) => {
 /**
  * Formate une sous-recette complète
  */
-export const formatSubRecipe = (subRecipe, recipe) => {
-  const ingredients = formatSubRecipeIngredients(subRecipe, recipe);
+export const formatSubRecipe = (subRecipe, recipe, amountFormatter) => {
+  const ingredients = formatSubRecipeIngredients(subRecipe, recipe, amountFormatter);
   const steps = formatSubRecipeSteps(subRecipe);
 
   return {
@@ -71,11 +79,13 @@ export const formatSubRecipe = (subRecipe, recipe) => {
 
 /**
  * Obtient toutes les sous-recettes formatées
+ * @param {object} recipe
+ * @param {function} [amountFormatter] - optional (amount, unit, ingredient) => string
  */
-export const getFormattedSubRecipes = (recipe) => {
+export const getFormattedSubRecipes = (recipe, amountFormatter) => {
   if (!recipe?.subRecipes) return [];
 
   return recipe.subRecipes.map((subRecipe) =>
-    formatSubRecipe(subRecipe, recipe)
+    formatSubRecipe(subRecipe, recipe, amountFormatter)
   );
 };

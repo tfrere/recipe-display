@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Drawer,
   Box,
@@ -19,7 +20,7 @@ import { usePantry } from "../../contexts/PantryContext";
 const PANTRY_CATEGORIES = [
   {
     id: "spices",
-    label: "Spices",
+    labelKey: "pantry.categorySpices",
     items: [
       "salt",
       "pepper",
@@ -52,7 +53,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "herbs",
-    label: "Dried herbs",
+    labelKey: "pantry.categoryDriedHerbs",
     items: [
       "thyme",
       "rosemary",
@@ -64,7 +65,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "oils",
-    label: "Oils & fats",
+    labelKey: "pantry.categoryOilsFats",
     items: [
       "olive oil",
       "sunflower oil",
@@ -82,7 +83,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "condiments",
-    label: "Condiments & sauces",
+    labelKey: "pantry.categoryCondiments",
     items: [
       "mustard",
       "Dijon mustard",
@@ -109,7 +110,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "dry-goods",
-    label: "Dry goods & baking",
+    labelKey: "pantry.categoryDryGoods",
     items: [
       "all-purpose flour",
       "whole wheat flour",
@@ -142,7 +143,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "pasta-rice",
-    label: "Pasta, rice & grains",
+    labelKey: "pantry.categoryPastaRice",
     items: [
       "spaghetti",
       "penne",
@@ -169,7 +170,7 @@ const PANTRY_CATEGORIES = [
   },
   {
     id: "canned",
-    label: "Canned & jarred",
+    labelKey: "pantry.categoryCanned",
     items: [
       "coconut milk",
       "peeled tomatoes",
@@ -190,7 +191,7 @@ const PANTRY_CATEGORIES = [
 
 const DRAWER_WIDTH = 420;
 
-const CategorySection = ({ category, hasExactItem, toggleItem }) => {
+const CategorySection = ({ category, hasExactItem, toggleItem, t }) => {
   return (
     <Box sx={{ mb: 2.5 }}>
       <Typography
@@ -204,7 +205,7 @@ const CategorySection = ({ category, hasExactItem, toggleItem }) => {
           mb: 1,
         }}
       >
-        {category.label}
+        {t(category.labelKey)}
       </Typography>
       <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
         {category.items.map((item) => {
@@ -254,6 +255,7 @@ const CategorySection = ({ category, hasExactItem, toggleItem }) => {
 };
 
 const PantryDrawer = ({ open, onClose }) => {
+  const { t } = useTranslation();
   const { pantryItems, pantrySize, hasExactItem, toggleItem, addItem, removeItem } =
     usePantry();
   const [customInput, setCustomInput] = useState("");
@@ -328,12 +330,12 @@ const PantryDrawer = ({ open, onClose }) => {
             <KitchenOutlinedIcon sx={{ color: "text.primary" }} />
             <Box>
               <Typography variant="h6" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
-                My Pantry
+                {t("pantry.title")}
               </Typography>
               <Typography variant="caption" color="text.secondary">
                 {pantrySize === 0
-                  ? "Add items you always have at home"
-                  : `${pantrySize} item${pantrySize !== 1 ? "s" : ""} in your pantry`}
+                  ? t("pantry.emptyHint")
+                  : t("pantry.itemCount", { count: pantrySize })}
               </Typography>
             </Box>
           </Box>
@@ -347,7 +349,7 @@ const PantryDrawer = ({ open, onClose }) => {
           <TextField
             size="small"
             fullWidth
-            placeholder="Add a custom item..."
+            placeholder={t("pantry.customPlaceholder")}
             value={customInput}
             onChange={(e) => setCustomInput(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -371,7 +373,7 @@ const PantryDrawer = ({ open, onClose }) => {
                       px: 1.5,
                     }}
                   >
-                    Add
+                    {t("pantry.add")}
                   </Button>
                 </InputAdornment>
               ),
@@ -392,16 +394,6 @@ const PantryDrawer = ({ open, onClose }) => {
             py: 2,
           }}
         >
-          {PANTRY_CATEGORIES.map((category) => (
-            <CategorySection
-              key={category.id}
-              category={category}
-              hasExactItem={hasExactItem}
-              toggleItem={toggleItem}
-            />
-          ))}
-
-          {/* Custom items section */}
           {customItems.length > 0 && (
             <Box sx={{ mb: 2.5 }}>
               <Typography
@@ -415,7 +407,7 @@ const PantryDrawer = ({ open, onClose }) => {
                   mb: 1,
                 }}
               >
-                Custom items
+                {t("pantry.customItems")}
               </Typography>
               <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
                 {customItems.map((item) => (
@@ -445,6 +437,16 @@ const PantryDrawer = ({ open, onClose }) => {
               </Box>
             </Box>
           )}
+
+          {PANTRY_CATEGORIES.map((category) => (
+            <CategorySection
+              key={category.id}
+              category={category}
+              hasExactItem={hasExactItem}
+              toggleItem={toggleItem}
+              t={t}
+            />
+          ))}
         </Box>
 
         {/* Footer */}
@@ -470,7 +472,7 @@ const PantryDrawer = ({ open, onClose }) => {
                 fontWeight: 500,
               }}
             >
-              Clear all
+              {t("pantry.clearAll")}
             </Button>
           </Box>
         )}

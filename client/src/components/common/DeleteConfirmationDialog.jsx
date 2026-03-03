@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   Dialog,
   DialogTitle,
@@ -9,15 +10,8 @@ import {
   Typography,
 } from "@mui/material";
 
-const TEXTS = {
-  TITLE: "Delete Recipe",
-  CONTENT:
-    "Are you sure you want to delete this recipe? This action cannot be undone.",
-  CANCEL: "Cancel",
-  CONFIRM: "Delete",
-};
-
 const DeleteConfirmationDialog = ({ open, onClose, onConfirm, recipeName }) => {
+  const { t } = useTranslation();
   return (
     <Dialog
       open={open}
@@ -39,7 +33,7 @@ const DeleteConfirmationDialog = ({ open, onClose, onConfirm, recipeName }) => {
         }}
       >
         <Typography variant="h6" component="span" sx={{ fontWeight: 600 }}>
-          {TEXTS.TITLE}
+          {t("common.deleteTitle")}
         </Typography>
       </DialogTitle>
       <DialogContent>
@@ -50,7 +44,7 @@ const DeleteConfirmationDialog = ({ open, onClose, onConfirm, recipeName }) => {
             mb: 1,
           }}
         >
-          {TEXTS.CONTENT}
+          {t("common.deleteContent")}
         </DialogContentText>
         {recipeName && (
           <Typography
@@ -78,7 +72,7 @@ const DeleteConfirmationDialog = ({ open, onClose, onConfirm, recipeName }) => {
             },
           }}
         >
-          {TEXTS.CANCEL}
+          {t("common.cancel")}
         </Button>
         <Button
           onClick={onConfirm}
@@ -92,7 +86,7 @@ const DeleteConfirmationDialog = ({ open, onClose, onConfirm, recipeName }) => {
             },
           }}
         >
-          {TEXTS.CONFIRM}
+          {t("common.delete")}
         </Button>
       </DialogActions>
     </Dialog>

@@ -20,7 +20,7 @@ import logging
 from typing import Optional, Callable, Awaitable
 
 from .exceptions import RecipeRejectedError
-from .generator import RecipeGenerator, generate_recipe
+from .generator import RecipeGenerator, generate_recipe, PIPELINE_VERSION
 from .models.recipe import Recipe, Metadata, Ingredient, Step
 
 logger = logging.getLogger(__name__)
@@ -50,6 +50,14 @@ class RecipeStructurer:
             api_key: DeepSeek API key. Defaults to DEEPSEEK_API_KEY env var.
         """
         self._generator = RecipeGenerator(api_key=api_key)
+
+    @property
+    def model(self) -> str:
+        return self._generator.model
+
+    @property
+    def pipeline_version(self) -> str:
+        return PIPELINE_VERSION
 
     async def structure(
         self,
@@ -230,6 +238,7 @@ __all__ = [
     "RecipeStructurer",
     "RecipeGenerator",
     "generate_recipe",
+    "PIPELINE_VERSION",
     "Recipe",
     "Metadata",
     "Ingredient",

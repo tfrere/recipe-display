@@ -51,11 +51,25 @@ class RecipeImporter:
     async def import_urls(self, urls: list[str]) -> None:
         """Importe des recettes depuis une liste d'URLs.
 
-        Les URLs sont mélangées pour répartir la charge entre les domaines.
-        Un sémaphore par domaine limite la concurrence (max_per_domain)
-        afin d'éviter les 429 Too Many Requests.
+        Pre-filters against already-imported URLs on the server to avoid
+        spawning processes that would just return 409.
+        URLs are shuffled to spread load across domains.
+        A per-domain semaphore limits concurrency (max_per_domain)
+        to avoid 429 Too Many Requests.
         """
-        # Shuffle pour répartir les domaines uniformément
+        async with aiohttp.ClientSession() as preflight_session:
+            imported = await self.api_client.fetch_imported_urls(preflight_session)
+
+        if imported:
+            before = len(urls)
+            urls = [u for u in urls if u not in imported]
+            skipped = before - len(urls)
+            if skipped:
+                self.console.print(
+                    f"[cyan]Pré-filtrage: {skipped} URLs déjà importées ignorées, "
+                    f"{len(urls)} restantes à traiter[/cyan]"
+                )
+
         shuffled = list(urls)
         random.shuffle(shuffled)
 

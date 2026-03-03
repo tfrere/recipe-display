@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useCallback, useMemo } from "react";
+import React, { createContext, useContext, useCallback, useMemo, useRef } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 const PantryContext = createContext();
@@ -54,6 +54,25 @@ const PANTRY_TYPE_KEYWORDS = [
 const pantryTypeSet = new Set(PANTRY_TYPE_KEYWORDS.map(normalizeText));
 
 /**
+ * Word-boundary aware substring match.
+ * Returns true when `word` appears in `text` surrounded by non-word chars
+ * (or string edges). Avoids false positives like "rice" in "licorice".
+ */
+const containsWholeWord = (text, word) => {
+  if (!text || !word) return false;
+  if (text === word) return true;
+  let idx = text.indexOf(word);
+  while (idx !== -1) {
+    const before = idx === 0 || /\W/.test(text[idx - 1]);
+    const after =
+      idx + word.length === text.length || /\W/.test(text[idx + word.length]);
+    if (before && after) return true;
+    idx = text.indexOf(word, idx + 1);
+  }
+  return false;
+};
+
+/**
  * Check if an ingredient (by its English name) is a pantry-type ingredient.
  */
 const isPantryTypeIngredient = (nameEn) => {
@@ -61,7 +80,7 @@ const isPantryTypeIngredient = (nameEn) => {
   const normalized = normalizeText(nameEn);
   if (!normalized) return false;
   for (const keyword of pantryTypeSet) {
-    if (normalized.includes(keyword) || keyword.includes(normalized)) {
+    if (containsWholeWord(normalized, keyword) || containsWholeWord(keyword, normalized)) {
       return true;
     }
   }
@@ -119,7 +138,7 @@ export const PantryProvider = ({ children }) => {
       const normalized = normalizeText(nameEn);
       if (!normalized) return false;
       for (const pantryItem of pantrySet) {
-        if (normalized.includes(pantryItem) || pantryItem.includes(normalized)) {
+        if (containsWholeWord(normalized, pantryItem) || containsWholeWord(pantryItem, normalized)) {
           return true;
         }
       }
@@ -152,7 +171,7 @@ export const PantryProvider = ({ children }) => {
     (nameEn) => {
       if (!nameEn) return false;
       for (const pantryItem of pantrySet) {
-        if (nameEn.includes(pantryItem) || pantryItem.includes(nameEn)) {
+        if (containsWholeWord(nameEn, pantryItem) || containsWholeWord(pantryItem, nameEn)) {
           return true;
         }
       }
@@ -181,29 +200,45 @@ export const PantryProvider = ({ children }) => {
 
   /**
    * Get detailed pantry stats for a recipe: matched count, pantry-type total, and ratio.
+   * Uses a WeakMap cache keyed by recipe object reference, invalidated when pantrySet changes.
    */
+  const statsCacheRef = useRef({ pantrySet: null, cache: new WeakMap() });
+
   const getPantryStats = useCallback(
     (recipe) => {
-      if (!recipe?.ingredients || pantrySet.size === 0) {
-        return { matched: 0, pantryTypeTotal: 0, ratio: 0 };
+      const EMPTY = { matched: 0, pantryTypeTotal: 0, ratio: 0 };
+      if (!recipe?.ingredients || pantrySet.size === 0) return EMPTY;
+
+      if (statsCacheRef.current.pantrySet !== pantrySet) {
+        statsCacheRef.current = { pantrySet, cache: new WeakMap() };
       }
-      const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+      const cache = statsCacheRef.current.cache;
+      const cached = cache.get(recipe);
+      if (cached) return cached;
+
+      const ingredients = Array.isArray(recipe.ingredients)
+        ? recipe.ingredients
+        : [];
 
       let pantryTypeCount = 0;
       let matchCount = 0;
       for (const ingredient of ingredients) {
         const nameEn = getIngredientNameEn(ingredient);
         if (!nameEn) continue;
-        if (isPantryTypeIngredient(nameEn)) {
+        const isKnownPantryType = isPantryTypeIngredient(nameEn);
+        const matchesPantry = ingredientMatchesPantry(nameEn);
+        if (isKnownPantryType || matchesPantry) {
           pantryTypeCount++;
-          if (ingredientMatchesPantry(nameEn)) matchCount++;
+          if (matchesPantry) matchCount++;
         }
       }
-      return {
+      const result = {
         matched: matchCount,
         pantryTypeTotal: pantryTypeCount,
         ratio: pantryTypeCount === 0 ? 0 : matchCount / pantryTypeCount,
       };
+      cache.set(recipe, result);
+      return result;
     },
     [pantrySet, ingredientMatchesPantry]
   );

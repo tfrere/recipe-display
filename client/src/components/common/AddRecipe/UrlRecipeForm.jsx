@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Box, TextField, Button, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { Box, TextField, Button } from "@mui/material";
 import AuthenticationSection from "./AuthenticationSection";
 
 const getCredentialsForUrl = (url, authType, authValues) => {
@@ -33,6 +34,7 @@ const getCredentialsForUrl = (url, authType, authValues) => {
 };
 
 const UrlRecipeForm = ({ onSubmit, error }) => {
+  const { t } = useTranslation();
   const [recipeSource, setRecipeSource] = useState("");
   const [showAuth, setShowAuth] = useState(false);
   const [authType, setAuthType] = useState("cookie");
@@ -63,7 +65,7 @@ const UrlRecipeForm = ({ onSubmit, error }) => {
     <Box>
       <TextField
         fullWidth
-        label="Recipe URL"
+        label={t("addRecipe.recipeUrl")}
         value={recipeSource}
         onChange={(e) => setRecipeSource(e.target.value)}
         error={!!error}
@@ -85,7 +87,7 @@ const UrlRecipeForm = ({ onSubmit, error }) => {
           disabled={!recipeSource}
           variant="contained"
         >
-          Add
+          {t("addRecipe.add")}
         </Button>
       </Box>
     </Box>

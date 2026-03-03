@@ -230,6 +230,22 @@ class RecipeApiClient:
             self.console.print(f"[yellow]Warning: Could not list recipes: {e}[/yellow]")
             return []
 
+    async def fetch_imported_urls(self, session: aiohttp.ClientSession) -> set[str]:
+        """Fetch URLs already imported on the server (for pre-filtering)."""
+        try:
+            timeout = aiohttp.ClientTimeout(total=30)
+            async with session.get(
+                f"{self.api_url}/api/recipes/imported-urls", timeout=timeout
+            ) as resp:
+                if resp.status != 200:
+                    self.console.print("[yellow]Warning: impossible de récupérer les URLs importées, skip désactivé[/yellow]")
+                    return set()
+                urls = await resp.json()
+                return set(urls)
+        except (aiohttp.ClientError, TimeoutError, asyncio.TimeoutError) as e:
+            self.console.print(f"[yellow]Warning: pré-filtrage indisponible ({e}), toutes les URLs seront envoyées[/yellow]")
+            return set()
+
     # ──────────────────────────────────────────────
     # Image encoding
     # ──────────────────────────────────────────────
