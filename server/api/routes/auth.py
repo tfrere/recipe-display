@@ -8,7 +8,7 @@ from services.recipe_service import RecipeService
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
-PRIVATE_ACCESS_SECRET = os.getenv("PRIVATE_ACCESS_SECRET", "")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 
 
 class LoginRequest(BaseModel):
@@ -18,11 +18,11 @@ class LoginRequest(BaseModel):
 @router.post("/login")
 async def login(request: LoginRequest):
     """Validate password and return access token."""
-    if not PRIVATE_ACCESS_SECRET:
+    if not ADMIN_PASSWORD:
         raise HTTPException(status_code=503, detail="Authentication not configured")
-    if request.password != PRIVATE_ACCESS_SECRET:
+    if request.password != ADMIN_PASSWORD:
         raise HTTPException(status_code=401, detail="Invalid password")
-    return {"token": PRIVATE_ACCESS_SECRET}
+    return {"token": ADMIN_PASSWORD}
 
 
 @router.get("/presets")

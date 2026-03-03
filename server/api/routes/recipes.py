@@ -19,13 +19,13 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/recipes", tags=["recipes"])
 
-PRIVATE_ACCESS_SECRET = os.getenv("PRIVATE_ACCESS_SECRET", "")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 
 def _has_valid_private_token(token: Optional[str]) -> bool:
-    """Check if the provided token matches the private access secret."""
-    if not PRIVATE_ACCESS_SECRET:
+    """Check if the provided token matches the admin password."""
+    if not ADMIN_PASSWORD:
         return False
-    return token == PRIVATE_ACCESS_SECRET
+    return token == ADMIN_PASSWORD
 
 
 @router.get("/progress/{task_id}", response_model=GenerationProgress)

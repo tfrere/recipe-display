@@ -117,7 +117,7 @@ yarn test:watch    # watch mode
 |----------|----------|-------------|
 | `OPENROUTER_API_KEY` | Yes | LLM provider for structuring & enrichment |
 | `DEEPSEEK_API_KEY` | Optional | Alternative LLM provider |
-| `PRIVATE_ACCESS_SECRET` | Optional | Token for private recipe access |
+| `ADMIN_PASSWORD` | Optional | Password for admin login |
 | `LANGFUSE_PUBLIC_KEY` | Optional | Observability (Langfuse) |
 | `LANGFUSE_SECRET_KEY` | Optional | Observability (Langfuse) |
 

@@ -732,7 +732,7 @@ The reviewer intentionally uses a **different model family** (Gemini vs. DeepSee
 |----------|----------|---------|
 | `OPENROUTER_API_KEY` | Yes (one of two) | Structurer, Enricher, Reviewer |
 | `DEEPSEEK_API_KEY` | Yes (one of two) | Structurer (direct API, preferred if set) |
-| `PRIVATE_ACCESS_SECRET` | Optional | Server (private recipe access) |
+| `ADMIN_PASSWORD` | Optional | Server (admin login password) |
 
 If both API keys are set, DeepSeek direct API is used for structuring (lower latency), and OpenRouter is used for everything else.
 
