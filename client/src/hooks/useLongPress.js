@@ -39,11 +39,7 @@ export default function useLongPress() {
   const updatePrivateAccess = useCallback(
     (value) => {
       setHasPrivateAccess(value);
-
-      setTimeout(() => {
-        eventBus.emit(PRIVATE_ACCESS_CHANGED, value);
-        window.location.reload();
-      }, 100);
+      eventBus.emit(PRIVATE_ACCESS_CHANGED, value);
     },
     [setHasPrivateAccess]
   );
