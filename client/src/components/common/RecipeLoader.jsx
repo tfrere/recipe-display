@@ -65,8 +65,8 @@ export default function RecipeLoader() {
           px: 2.5,
           py: 1.5,
           borderRadius: 2,
-          bgcolor: (theme) => alpha(theme.palette.text.primary, 0.03),
-          border: (theme) => `1px solid ${alpha(theme.palette.divider, 0.06)}`,
+          bgcolor: "background.paper",
+          border: (theme) => `1px solid ${alpha(theme.palette.divider, 0.15)}`,
           textAlign: "center",
           maxWidth: 340,
         }}

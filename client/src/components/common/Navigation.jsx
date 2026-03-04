@@ -70,7 +70,7 @@ const Navigation = () => {
 
   const routes = [
     { path: "/", label: t("nav.recipes") },
-    { path: "/meal-planner", label: t("nav.mealPlanner") },
+    { path: "/meal-planner", label: t("nav.mealPlanner"), shortLabel: t("nav.mealPlannerShort") },
   ];
 
   return (
@@ -90,7 +90,7 @@ const Navigation = () => {
           <Box sx={{ display: "flex", alignItems: "center", flex: 1 }}>
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", sm: "flex" },
                 alignItems: "center",
                 cursor: "pointer",
                 position: "relative",
@@ -111,7 +111,6 @@ const Navigation = () => {
                 sx={{
                   color: "text.primary",
                   fontWeight: 500,
-                  display: { xs: "none", sm: "block" },
                 }}
               >
                 {t("nav.cookbook")}
@@ -165,7 +164,18 @@ const Navigation = () => {
                       navigate(route.path);
                     }}
                   >
-                    {route.label}
+                    {route.shortLabel ? (
+                      <>
+                        <Box component="span" sx={{ display: { xs: "none", sm: "inline" } }}>
+                          {route.label}
+                        </Box>
+                        <Box component="span" sx={{ display: { xs: "inline", sm: "none" } }}>
+                          {route.shortLabel}
+                        </Box>
+                      </>
+                    ) : (
+                      route.label
+                    )}
                   </Button>
                 </React.Fragment>
               ))}

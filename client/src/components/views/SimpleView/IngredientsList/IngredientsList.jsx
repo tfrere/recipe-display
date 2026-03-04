@@ -157,7 +157,11 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
             />
           }
           label={
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               {t("recipe.shoppingList")}
             </Typography>
           }
@@ -197,6 +201,12 @@ const IngredientsList = ({ recipe, shoppingMode, setShoppingMode }) => {
             display: {
               xs: "none",
               sm: "block",
+            },
+          },
+          "&::after": {
+            display: {
+              xs: "none",
+              sm: "none",
             },
           },
           "&::before": {
